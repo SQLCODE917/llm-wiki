@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-counterspell-c0af7e9b@c8a0c3d02b9965721b2db45db81d61f0
+projection_coverage: section-sword-world-rpg-complete-edition-section-counterspell-c0af7e9b@022ad22fa667f224ab7070f2d2050c32
 ---
 
 # **[ Counterspell ]**
@@ -21,14 +21,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If you apply it to a projectile such as a bow, everything fired from it will gain +5 to strike power, which makes it effective against monsters that normal weapons cannot affect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01589))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01589))_
+
+> If you apply it to a projectile such as a bow, everything fired from it will gain +5 to strike power, which makes it effective against monsters that normal weapons cannot affect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01591))_
 
 > Base Mental Power Cost=3 Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01591))_
 
-> Context: If you apply it to a projectile such as a bow, everything fired from it will gain +5 to strike power, which makes it effective against monsters that normal weapons cannot affect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01589))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01589))_
+
+> If you apply it to a projectile such as a bow, everything fired from it will gain +5 to strike power, which makes it effective against monsters that normal weapons cannot affect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01592))_
 
 > Area=One Duration=18 rounds Effect=+2 to mental power resistance Type=Expansion=Duration, distance, targets Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01592))_

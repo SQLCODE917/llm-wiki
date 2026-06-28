@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-4-c530d401@ed66813f80ff5379cb8ee07593869fd7
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-4-c530d401@4f4ed474d5ce1b47674f262147dc5a28
 ---
 
 # Monster Level=4
@@ -47,38 +47,69 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05118))_
+
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05118))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05119))_
 
 > Agility=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05119))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05120))_
 
 > Movement Speed=6/10 (water) Number=Solo to several Frequency=Rare Intellect=Human Reaction=Violent Attack Points=Strike Points=Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05120))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05121))_
 
 > Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6, undine only)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05121))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05124))_
 
 > Languages=Silent spirit Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05124))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05125))_
 
 > They can stick to their opponent and make them uncomfortable, or they can wrap around their face and make them feel pain for a while, but if the opponent has the will to resist, they can easily escape.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05125))_
 
-> Context: If a character fails the check, that means they've swallowed the undine. However, the victim can attempt to spit the undine out once swallowed. To do so, you must make a successful life force resistance roll. The target score is still 12. This check may be attempted once per round, but you cannot take any other actions while swallowing the undine. Also, you cannot spit out the undine while underwater.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05129))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05129))_
+
+> If a character fails the check, that means they've swallowed the undine. However, the victim can attempt to spit the undine out once swallowed. To do so, you must make a successful life force resistance roll. The target score is still 12. This check may be attempted once per round, but you cannot take any other actions while swallowing the undine. Also, you cannot spit out the undine while underwater.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05127))_
 
 > Undine can cast magic sourced from the power of undine without consuming its own mental points (the spells cannot be expanded).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05127))_
 
-> Context: If a target drinks even a little of an undine's body, this water spirit will enter directly into their lungs. A check for whether or not you’ve taken a drink is made via success roll using " _adventurer level + agility bonus_ " as the baseline score. The target score in this case is 12. This check must be made every round until you escape from the spring or river containing the undine. However, in this case, you can obviously hold your breath. As long as you hold your breath, you don't have to w
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05128))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05128))_
+
+> If a target drinks even a little of an undine's body, this water spirit will enter directly into their lungs. A check for whether or not you’ve taken a drink is made via success roll using " _adventurer level + agility bonus_ " as the baseline score. The target score in this case is 12. This check must be made every round until you escape from the spring or river containing the undine. However, in this case, you can obviously hold your breath. As long as you hold your breath, you don't have to w
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05129))_
 
 > To do so, you must make a successful life force resistance roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05129))_
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 
 | Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
 | --- | --- | --- | --- | --- | --- |
@@ -94,7 +125,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_
 
 | Level 1-2 | It's no big deal. Just a small problem in a small village |
 | --- | --- |
@@ -120,4 +154,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_

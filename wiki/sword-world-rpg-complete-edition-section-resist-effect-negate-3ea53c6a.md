@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-resist-effect-negate-3ea53c6a@f5d378fa27aed00031333b2c17027ead
+projection_coverage: section-sword-world-rpg-complete-edition-section-resist-effect-negate-3ea53c6a@4521d689bbfcb569ab33c1eb240a56f1
 ---
 
 # Resist=Effect negate
@@ -29,5 +29,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04281))_
+
 > Due to the nature of the spell, this spell _cannot_ be used in situations where you cannot make sound (even if you use it, it’ll be useless as the opponent will not be able to hear you).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04281))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-gems-and-precious-metals-79c3e00b@6d96060737a5d3c91173c54112a4fdbb
+projection_coverage: section-sword-world-rpg-complete-edition-section-gems-and-precious-metals-79c3e00b@99b95c3f3905f7c14dede6977dc62d9f
 ---
 
 # **Gems and Precious Metals**
@@ -25,8 +25,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: These items can be discerned as treasure and their specific value can be determined by using the thief skill and sage skill’s _treasure appraisal_ ability.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06958))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06958))_
+
+> These items can be discerned as treasure and their specific value can be determined by using the thief skill and sage skill’s _treasure appraisal_ ability.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06960))_
 
 > If you spend enough time, you can determine a specific price.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06960))_

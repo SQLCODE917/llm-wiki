@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-python-6a5289fc@25862d0eb378ff02157f5c4ccaea7694
+projection_coverage: section-sword-world-rpg-complete-edition-section-python-6a5289fc@2e7e6c52cdd675e01fa15fefdddd1443
 ---
 
 # **Python**
@@ -21,8 +21,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05970))_
+
 > Monster Level=4 Rarity=8 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Strangle: 12 (5) Strike Points=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05970))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05971))_
 
 > Evasion Points=9 (2) Defense Points=8 Life Points/Resistance=20/13 (6) Mental Points/Resistance=8/11 (4) Special Abilities=Strangling Habitat=Forests, meadows Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05971))_

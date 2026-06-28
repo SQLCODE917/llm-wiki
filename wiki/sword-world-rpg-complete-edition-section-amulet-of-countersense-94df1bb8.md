@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-amulet-of-countersense-94df1bb8@cf928d5ee19b4ce0fe1c52676f551d4c
+projection_coverage: section-sword-world-rpg-complete-edition-section-amulet-of-countersense-94df1bb8@70314f20e87fc1275618b0a5c4395fd9
 ---
 
 # **[ Amulet of Countersense ]**
@@ -20,14 +20,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07275))_
+
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07275))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07276))_
 
 > Enchanter=Many Form=Amulet
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07276))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07277))_
 
 > Base Trade Price=190,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07277))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07278))_
 
 > Powers=Know who is detecting
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07278))_

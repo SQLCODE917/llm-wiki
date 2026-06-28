@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-distance-caster-8a925711@2040237063919be6045a84771529d80f
+projection_coverage: section-sword-world-rpg-complete-edition-section-distance-caster-8a925711@5fd967bd474d779b0d3ff30c26134f02
 ---
 
 # Distance=Caster
@@ -29,17 +29,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04163))_
+
 > Area=Anyone within the caster's view Duration=12 hours + until focus and dancing ends
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04163))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04164))_
 
 > Effect=Causes 12 hours of madness to anyone who watches the dance
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04164))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04165))_
 
 > Type=Focus, mind Expansion=Final score, effect time (see description) Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04165))_
 
-> Context: **Kardis Special Dark Magic List [ Death ] (Spell Level=9)**
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04169))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04169))_
+
+> **Kardis Special Dark Magic List [ Death ] (Spell Level=9)**
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04170))_
 
 > Base Mental Power Cost=45 Distance=10 meters Area=One Duration=Instant Effect=Instantly kill the target Type=Expansion=Final score, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04170))_

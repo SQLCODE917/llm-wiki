@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-how-to-read-poison-12-2-1-3-details-5353f062@6e47c4dd69dab637a55d1b90d0a41380
+projection_coverage: section-sword-world-rpg-complete-edition-section-how-to-read-poison-12-2-1-3-details-5353f062@20e1107d621f4cb5950915cbbaf6369a
 ---
 
 # **How to Read Poison 12.2.1.3 Details**
@@ -26,14 +26,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Poison details are expressed as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04524))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04524))_
+
+> Poison details are expressed as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04526))_
 
 > Effect=Euphoria, drunkenness, in rare cases headache and vomiting, very rarely death Toxicity Score =10 Rarity=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04526))_
 
-> Context: Poison details are expressed as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04524))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04524))_
+
+> Poison details are expressed as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04527))_
 
 > Effect Start Time=30 minutes later Effect Duration=2 days
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04527))_

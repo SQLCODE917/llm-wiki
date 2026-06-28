@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-cotton-weaver-4912d4a6@39c0e03d8b5379acda2da1593d8f5d13
+projection_coverage: section-sword-world-rpg-complete-edition-section-cotton-weaver-4912d4a6@b8113547158aae904bdb3663fb234bd8
 ---
 
 # **[ Cotton Weaver ]**
@@ -26,11 +26,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04677))_
+
 > Symptoms=Cotton-like tissue peels off from the wound
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04677))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04678))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04678))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04680))_
 
 > Infection Power=Weak
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04680))_

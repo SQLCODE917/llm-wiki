@@ -198,6 +198,66 @@ class TestWikiLayer:
         assert "draft-page" not in store.list_pages()
         assert "[[draft-page]]" not in store.read_index()
 
+    def test_delete_source_pages_not_in_removes_page_range_source_pages(
+        self, store: WikiStore
+    ) -> None:
+        store.write_page(
+            WikiPage.from_metadata(
+                PageMetadata(
+                    page_id="book-stale-range",
+                    page_kind="source",
+                    summary="Old chunk page.",
+                    sources=("raw/book.pdf p.1-10",),
+                    updated="2026-06-10",
+                ),
+                "Old chunk page.",
+            )
+        )
+        store.write_page(
+            WikiPage.from_metadata(
+                PageMetadata(
+                    page_id="book-stale-source-id",
+                    page_kind="source",
+                    summary="Old source page.",
+                    sources=("raw/book.pdf p.11-20",),
+                    updated="2026-06-10",
+                    source_id="book.pdf",
+                ),
+                "Old source page.",
+            )
+        )
+        store.write_page(
+            WikiPage.from_metadata(
+                PageMetadata(
+                    page_id="book-keep",
+                    page_kind="source",
+                    summary="Current source page.",
+                    sources=("raw/book.pdf",),
+                    updated="2026-06-11",
+                ),
+                "Current source page.",
+            )
+        )
+        store.write_page(
+            WikiPage.from_metadata(
+                PageMetadata(
+                    page_id="book-cross-source",
+                    page_kind="synthesis",
+                    summary="Cross-source page.",
+                    sources=("raw/book.pdf", "raw/other.pdf"),
+                    updated="2026-06-11",
+                ),
+                "Cross-source page.",
+            )
+        )
+
+        removed = store.delete_source_pages_not_in("book.pdf", {"book-keep"})
+
+        assert removed == ("book-stale-range", "book-stale-source-id")
+        assert store.list_pages() == ["book-cross-source", "book-keep"]
+        assert "[[book-stale-range]]" not in store.read_index()
+        assert "[[book-stale-source-id]]" not in store.read_index()
+
     def test_replace_page_link_preserves_alias_and_rewrites_index(self, store: WikiStore) -> None:
         store.write_page(_page(name="new-target"))
         store.write_page(

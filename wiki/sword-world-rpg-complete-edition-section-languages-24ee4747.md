@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-languages-24ee4747@0e2da580547927940d22ccf11bb4611d
+projection_coverage: section-sword-world-rpg-complete-edition-section-languages-24ee4747@ddf73421938c2f2d2eb4408a956d26cc
 ---
 
 # 《 **Languages** 》
@@ -23,5 +23,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04948))_
+
 > If it says _none_ , then the monster does not use language (those with _obeys commands_ intellect may not speak themselves, but may understand what others are saying).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04948))_

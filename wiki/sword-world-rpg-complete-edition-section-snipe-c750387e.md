@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-snipe-c750387e@9244287dbac0fa29449d2a7ff0ccaeb9
+projection_coverage: section-sword-world-rpg-complete-edition-section-snipe-c750387e@d08c110064a0a2e0b897849ab506bf6f
 ---
 
 # **Snipe**
@@ -25,11 +25,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: An opponent who’s struck by a charge can take a counterattack action in response. _Regardless_ of whether the charge was a hit or a failure, the opponent _can_ attack at the _end of the round_ . If you charged, you’ll suffer a -4 penalty to your evasion when dodging this attack. Of course, this is _not_ possible if you’re taking a different action, such as casting magic, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07786))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07786))_
+
+> An opponent who’s struck by a charge can take a counterattack action in response. _Regardless_ of whether the charge was a hit or a failure, the opponent _can_ attack at the _end of the round_ . If you charged, you’ll suffer a -4 penalty to your evasion when dodging this attack. Of course, this is _not_ possible if you’re taking a different action, such as casting magic, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07789))_
 
 > Bows and crossbows can be **aimed and fired at a vital point** if the target is completely unaware and not moving around much (they _cannot_ be aimed and fired if the target is aware of the sniper's presence and is alert to their surroundings, or if they're fervently moving around).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07789))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07790))_
 
 > In this case, if you spend one round aiming, you can reduce the _critical target_ by 1 if the shot hits.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07790))_

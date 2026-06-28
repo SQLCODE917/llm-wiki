@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-and-armor-restrictions-77ccda2b@05a87952481c9398e9548e0714c99b36
+projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-and-armor-restrictions-77ccda2b@5c25130d2c31bc64e4aac50a20e270a7
 ---
 
 # **Weapon and Armor Restrictions**
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+
+> The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
 
 | **Table 1-9: Armor** |
 | --- |
@@ -37,4 +42,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_

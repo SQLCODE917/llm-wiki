@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fire-immunity-3548e9bc@338303a53f12dd43bc2ed34c9552cf6f
+projection_coverage: section-sword-world-rpg-complete-edition-section-fire-immunity-3548e9bc@8bc03f7e4a29b6ea7c81eeb2189409dc
 ---
 
 # 《 **Fire Immunity** 》
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06883))_
+
 > If one of these monsters also has the ability _normal weapon immunity_ , it cannot be wounded by a weapon that had _Fire Weapon_ cast on it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06883))_

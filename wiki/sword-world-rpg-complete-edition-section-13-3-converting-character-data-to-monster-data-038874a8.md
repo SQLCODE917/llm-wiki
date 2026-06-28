@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-3-converting-character-data-to-monster-data-038874a8@f4d1d5d15d55c60c174771f55f29b237
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-3-converting-character-data-to-monster-data-038874a8@db7537c63ba62a8f3471749bc8f6733c
 ---
 
 # 13.3 Converting Character Data to Monster Data
@@ -39,29 +39,55 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06713))_
+
 > Evasion Points=13 (6) Defense Points=9 Life Points/Resistance=26/15 (8) Mental Points/Resistance=14/13 (6) Special Abilities=Normal weapon immunity after shifting into bear
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06713))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06714))_
 
 > Infect (Intensity 7) Habitat=Human villages, forests Languages=Regional
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06714))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06718))_
 
 > Monster Level=5 Rarity=11 Agility=21 Movement Speed=25 Number=One to several Frequency=Rare Intellect=Animal/Human Reaction=Adversarial
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06718))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06720))_
 
 > Infect (Intensity 7) Habitat=Human villages, forests Languages=Regional Perception=Five senses (Illumination)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06720))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06723))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06723))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06733))_
 
 > If an enemy's strike roll is a critical, resulting in heavy damage or even death, the player may feel frustrated that they've been _killed by a roll of the dice_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06733))_
 
-> Context: _Agility_ and _movement speed_ use the character's _agility_ ability score as it is.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06737))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06737))_
+
+> _Agility_ and _movement speed_ use the character's _agility_ ability score as it is.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06740))_
 
 > **Table 13-1: Key Number = Expected Equivalents**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06740))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06741))_
 
 | Critical Target 9 | 0-1 | 2-5 | 6-9 | 10-13 | 14-18 | 19-22 | 23-26 | 27-31 | 32-35 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -85,4 +111,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06740))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06741))_

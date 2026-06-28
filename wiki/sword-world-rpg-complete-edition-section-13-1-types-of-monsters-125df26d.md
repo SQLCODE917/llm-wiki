@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-1-types-of-monsters-125df26d@97792a6b6a7daaf4b91bc075a9e8f3e1
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-1-types-of-monsters-125df26d@10c1df5775a2fa2d7f15267255c694ea
 ---
 
 # 13.1 Types of Monsters
@@ -106,23 +106,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Fae are a demi-human race that originally lived in the fairy world, but for various reasons they came to live in this world and were unable to return to their original world. However, some races, such as high elves and fairies, still have the ability to travel between the two worlds. They are relatively friendly towards humans, but do not actively try to connect with them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04804))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04804))_
+
+> Fae are a demi-human race that originally lived in the fairy world, but for various reasons they came to live in this world and were unable to return to their original world. However, some races, such as high elves and fairies, still have the ability to travel between the two worlds. They are relatively friendly towards humans, but do not actively try to connect with them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04805))_
 
 > Spirits can use an unlimited amount of spirit magic depending on their power.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04805))_
 
-> Context: Spirits can use an unlimited amount of spirit magic depending on their power. No matter how much they use it, it will not consume their mental points. However, they cannot expand the power of their spells.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04805))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04805))_
+
+> Spirits can use an unlimited amount of spirit magic depending on their power. No matter how much they use it, it will not consume their mental points. However, they cannot expand the power of their spells.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04807))_
 
 > When encountering a spirit, a shaman can recognize a spirit without the need for a success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04807))_
 
-> Context: Regardless of a spirit's rarity (a score related to how well-known the monster is, which will be explained later), a shaman knows all spirits. When encountering a spirit, a shaman can recognize a spirit without the need for a success roll.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04807))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04807))_
+
+> Regardless of a spirit's rarity (a score related to how well-known the monster is, which will be explained later), a shaman knows all spirits. When encountering a spirit, a shaman can recognize a spirit without the need for a success roll.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04809))_
 
 > They may also use spirit magic or dark magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04809))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04834))_
 
 > If the source of our life is called _positive_ life force, then the undead's source can be called _negative_ life force.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04834))_

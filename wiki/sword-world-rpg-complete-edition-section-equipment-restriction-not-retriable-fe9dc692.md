@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-not-retriable-fe9dc692@f265f440a3178de5b74f293d0ec38731
+projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-not-retriable-fe9dc692@99c1fc82c22e3795261d7de7367881de
 ---
 
 # **(Equipment restriction, not retriable)**
@@ -25,8 +25,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: You can attempt to **remove** traps discovered through _find_ . Removal also involves attempting a success roll against the trap's difficulty.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03366))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03366))_
+
+> You can attempt to **remove** traps discovered through _find_ . Removal also involves attempting a success roll against the trap's difficulty.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03367))_
 
 > If you fail, the trap will be activated if the dice roll was 6 or more beneath the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03367))_

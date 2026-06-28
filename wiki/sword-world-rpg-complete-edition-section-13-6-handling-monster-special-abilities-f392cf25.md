@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-f392cf25@23f5dc057b9f7d03fdbe8385610396c9
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-f392cf25@9977972afe8c6bdf422465d6a2439554
 ---
 
 # 13.6 Handling Monster Special Abilities
@@ -184,128 +184,222 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Monsters with this ability can use magic at the indicated level and magic intensity (magic power). Those with this ability often have an intellect equal to or greater than that of a human, and although they have their own preferences for which magic they use, they do _not_ use it foolishly.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06778))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06778))_
+
+> Monsters with this ability can use magic at the indicated level and magic intensity (magic power). Those with this ability often have an intellect equal to or greater than that of a human, and although they have their own preferences for which magic they use, they do _not_ use it foolishly.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06780))_
 
 > The targeted character must make a mental power resistance roll against the indicated target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06780))_
 
-> Context: This is the ability to hypnotize opponents. The targeted character must make a mental power resistance roll against the indicated target score. If you fail, you’ll be manipulated at your opponent’s will.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06780))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06780))_
+
+> This is the ability to hypnotize opponents. The targeted character must make a mental power resistance roll against the indicated target score. If you fail, you’ll be manipulated at your opponent’s will.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06782))_
 
 > The targeted character must make a mental power resistance roll against the indicated target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06782))_
 
-> Context: This attacks opponents with a gaze or a ray. The targeted character must make a mental power resistance roll against the indicated target score. If you fail, you’ll suffer the effects as indicated.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06782))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06782))_
+
+> This attacks opponents with a gaze or a ray. The targeted character must make a mental power resistance roll against the indicated target score. If you fail, you’ll suffer the effects as indicated.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06783))_
 
 > but if this is not specified, it cannot be reflected.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06783))_
 
-> Context: In some cases, the gaze or ray can be reflected off a mirror, etc. but if this is not specified, it cannot be reflected.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06783))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06783))_
+
+> In some cases, the gaze or ray can be reflected off a mirror, etc. but if this is not specified, it cannot be reflected.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06785))_
 
 > The targeted character must make a mental power resistance roll
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06785))_
 
-> Context: This is an ability that is used by undead monsters collectively referred to as haunts. The targeted character must make a mental power resistance roll
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06785))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06785))_
+
+> This is an ability that is used by undead monsters collectively referred to as haunts. The targeted character must make a mental power resistance roll
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06786))_
 
 > A haunt who has possessed a body can also use that character's abilities.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06786))_
 
-> Context: This is an attack method that brings disaster to those involved. There are several processes by which a curse can be brought about (such as normal physical attacks, by gaze, etc.), but in all cases you must ultimately make a mental power resistance roll against a set target score. If you fail, you will be affected by the curse. There are various types of curses. A typical mummy's curse prevents the recovery of all ability score reductions, including life force and mental power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06788))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06788))_
+
+> This is an attack method that brings disaster to those involved. There are several processes by which a curse can be brought about (such as normal physical attacks, by gaze, etc.), but in all cases you must ultimately make a mental power resistance roll against a set target score. If you fail, you will be affected by the curse. There are various types of curses. A typical mummy's curse prevents the recovery of all ability score reductions, including life force and mental power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06790))_
 
 > A character who hears this at point-blank range without first wearing earplugs must make a mental power resistance roll against the indicated target score, and will suffer the effects on a failure.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06790))_
 
-> Context: This lets out a ghastly scream, dealing damage to those who hear it. A character who hears this at point-blank range without first wearing earplugs must make a mental power resistance roll against the indicated target score, and will suffer the effects on a failure.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06790))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06790))_
+
+> This lets out a ghastly scream, dealing damage to those who hear it. A character who hears this at point-blank range without first wearing earplugs must make a mental power resistance roll against the indicated target score, and will suffer the effects on a failure.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06791))_
 
 > In the case of mandrake and alraune, you cannot attack or cast spells for one full round, and you will suffer a -4 penalty to evasion.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06791))_
 
-> Context: This is the dragon's special ability, to let out a roar that trembles the souls of those who hear it. It has no effect unless you hear it, but everyone who does hear it must make a mental power resistance roll. If you fail, you will suffer the effects specified on Table 5-5: Fears (see p. 89).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06793))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06793))_
+
+> This is the dragon's special ability, to let out a roar that trembles the souls of those who hear it. It has no effect unless you hear it, but everyone who does hear it must make a mental power resistance roll. If you fail, you will suffer the effects specified on Table 5-5: Fears (see p. 89).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06795))_
 
 > You must also make a mental power resistance roll against the indicated target score, which if successful will result in a smaller amount of damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06795))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06805))_
 
 > When attacked by these monsters, you must make a life force resistance roll, using the indicated toxicity score as the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06805))_
 
-> Context: Among monsters, there are some that carry a variety of poisons. When attacked by these monsters, you must make a life force resistance roll, using the indicated toxicity score as the target score. If you fail, you’ll suffer an effect depending on the poison. Unless it's a poison that applies immediately (mainly damage), it can be treated with the holy magic _Cure Poison_ or _Refresh_ , or the spirit magic _Restore Health_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06805))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06805))_
+
+> Among monsters, there are some that carry a variety of poisons. When attacked by these monsters, you must make a life force resistance roll, using the indicated toxicity score as the target score. If you fail, you’ll suffer an effect depending on the poison. Unless it's a poison that applies immediately (mainly damage), it can be treated with the holy magic _Cure Poison_ or _Refresh_ , or the spirit magic _Restore Health_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06807))_
 
 > In the case of a poison that deals damage, if the resist is successful, then unless it's specified that no damage will be dealt, the effect will _not_ be completely removed, it will merely reduce the strike power by 10 (and prevent criticals).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06807))_
 
-> Context: In the case of a poison that deals damage, if the resist is successful, then unless it's specified that no damage will be dealt, the effect will _not_ be completely removed, it will merely reduce the strike power by 10 (and prevent criticals).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06807))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06807))_
+
+> In the case of a poison that deals damage, if the resist is successful, then unless it's specified that no damage will be dealt, the effect will _not_ be completely removed, it will merely reduce the strike power by 10 (and prevent criticals).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06809))_
 
 > If you’re attacked by a monster with this ability, you must make a life force resistance roll against the indicated target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06809))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06814))_
 
 > When you’re dealt damage by a monster with this ability, roll 2D and compare it with the _progression intensity_ of each illness.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06814))_
 
-> Context: This is an ability that many monsters have. If an attack with this ability is successful, then in subsequent rounds, the character will remain strangled, and the only thing he or she can do is try to escape.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06817))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06817))_
+
+> This is an ability that many monsters have. If an attack with this ability is successful, then in subsequent rounds, the character will remain strangled, and the only thing he or she can do is try to escape.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06818))_
 
 > If you succeed, you can break free, but if you fail, you’ll automatically suffer damage at the end of the round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06818))_
 
-> Context: While being strangled, a character suffers a -4 penalty to evasion and is normally unable to make sound. Depending on the monster, the penalty may be smaller, or it might be possible to still make sound, but if this is the case it'll be specified in the _description_ . Unless otherwise noted, the evasion penalty is - 4 and magic is also considered not possible.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06819))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06819))_
+
+> While being strangled, a character suffers a -4 penalty to evasion and is normally unable to make sound. Depending on the monster, the penalty may be smaller, or it might be possible to still make sound, but if this is the case it'll be specified in the _description_ . Unless otherwise noted, the evasion penalty is - 4 and magic is also considered not possible.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06822))_
 
 > To escape, you must make the same check as for _strangling_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06822))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06826))_
 
 > The character must make a success roll using _adventurer level + strength bonus_ as the baseline score in order to escape.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06826))_
 
-> Context: Sprays an adhesive, high-strength thread, etc. that binds a character. The character must make a success roll using _adventurer level + strength bonus_ as the baseline score in order to escape. Each time you fail, you’ll normally become more and more entangled, and the target score will increase each time. If the difference between the baseline score and the target score reaches 13 or greater, the character will be unable to escape on his or her own, and will eventually suffocate to death. Wheth
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06826))_
+### Technical atom 16
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06826))_
+
+> Sprays an adhesive, high-strength thread, etc. that binds a character. The character must make a success roll using _adventurer level + strength bonus_ as the baseline score in order to escape. Each time you fail, you’ll normally become more and more entangled, and the target score will increase each time. If the difference between the baseline score and the target score reaches 13 or greater, the character will be unable to escape on his or her own, and will eventually suffocate to death. Wheth
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06828))_
 
 > A swallowed character can also attack from inside, if he or she has a dagger, shortsword, or similar small bladed weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06828))_
 
-> Context: Sprays an adhesive, high-strength thread, etc. that binds a character. The character must make a success roll using _adventurer level + strength bonus_ as the baseline score in order to escape. Each time you fail, you’ll normally become more and more entangled, and the target score will increase each time. If the difference between the baseline score and the target score reaches 13 or greater, the character will be unable to escape on his or her own, and will eventually suffocate to death. Wheth
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06826))_
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06826))_
+
+> Sprays an adhesive, high-strength thread, etc. that binds a character. The character must make a success roll using _adventurer level + strength bonus_ as the baseline score in order to escape. Each time you fail, you’ll normally become more and more entangled, and the target score will increase each time. If the difference between the baseline score and the target score reaches 13 or greater, the character will be unable to escape on his or her own, and will eventually suffocate to death. Wheth
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06829))_
 
 > If you make an attack from outside to rescue a character inside, and kill the monster, (the same amount of) damage will be dealt to the character inside.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06829))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06834))_
 
 > If it hits, you _cannot_ make a resistance roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06834))_
 
-> Context: Attacks with weapons, no matter how powerful they are, or even if they’re magical weapons, will have no effect at all. Even in combat between monsters, it’s not possible for monsters that only have attack methods similar to weapons, such as fangs or claws, etc. to fight against them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06849))_
+### Technical atom 19
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06849))_
+
+> Attacks with weapons, no matter how powerful they are, or even if they’re magical weapons, will have no effect at all. Even in combat between monsters, it’s not possible for monsters that only have attack methods similar to weapons, such as fangs or claws, etc. to fight against them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06851))_
 
 > Normal weapons, no matter how powerful, cannot deal damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06851))_
+
+### Technical atom 20
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06854))_
 
 > Even in combat between monsters, if an opponent monster's attack method is equivalent to an ineffective weapon, it will not deal damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06854))_
 
-> Context: They do not require rest or sleep in the usual sense. Therefore, they can never be put to sleep by magic, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06877))_
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06877))_
+
+> They do not require rest or sleep in the usual sense. Therefore, they can never be put to sleep by magic, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06875))_
 
 > If they do not have mental points (expressed as -), magic that deals damage to mental points ( _Shade_ , etc.) is likewise ineffective.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06875))_
+
+### Technical atom 22
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06883))_
 
 > If one of these monsters also has the ability _normal weapon immunity_ , it cannot be wounded by a weapon that had _Fire Weapon_ cast on it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06883))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06885))_
 
 > Even if one of these monsters has the ability _normal weapon immunity_ , it can still be wounded by a weapon that had _Fire Weapon_ cast on it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06885))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06902))_
 
 > If you fail, you’ll suffer a _surprise attack_ , with a -4 penalty to your evasion speed for one round, and you cannot counterattack or use magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06902))_
+
+### Technical atom 25
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06911))_
 
 > If a character inadvertently steps into it, he or she must make a resistance roll using _adventurer level + agility bonus_ as the baseline score, and if he or she fails they’ll be caught in the web.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06911))_
+
+### Technical atom 26
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06925))_
 
 > In the case of _Fire Bolt_ , make a strike power 20 damage check (10 if the monster successfully resists), and in the case of _Fire Weapon_ , add a +20 strike power bonus to the weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06925))_

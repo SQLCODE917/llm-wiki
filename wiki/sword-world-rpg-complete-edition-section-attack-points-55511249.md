@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-attack-points-55511249@6e86e87dec2892ac5127102721190062
+projection_coverage: section-sword-world-rpg-complete-edition-section-attack-points-55511249@bb885a83a8a79d1c0a0766d3f40dac44
 ---
 
 # 《 **Attack Points** 》
@@ -29,20 +29,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: _Command-based_ is often seen in magical creatures and lower grade undead that move according to the commands of others. They follow the instructions of their commander. Whether they consider adventurers to be enemies or not depends on the commands given to them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04903))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04903))_
+
+> _Command-based_ is often seen in magical creatures and lower grade undead that move according to the commands of others. They follow the instructions of their commander. Whether they consider adventurers to be enemies or not depends on the commands given to them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04906))_
 
 > A character must make a success roll using their evasion speed as the baseline score and these attack points as the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04906))_
 
-> Context: This represents the monster's attack method and its accuracy. The higher this score, the more likely the monster will be able to hit you with an attack. A character must make a success roll using their evasion speed as the baseline score and these attack points as the target score. If you fail, you will suffer damage (refer to _Chapter 4: Weapon Combat_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04906))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04906))_
+
+> This represents the monster's attack method and its accuracy. The higher this score, the more likely the monster will be able to hit you with an attack. A character must make a success roll using their evasion speed as the baseline score and these attack points as the target score. If you fail, you will suffer damage (refer to _Chapter 4: Weapon Combat_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04907))_
 
 > In this case, if they're written on _one_ line separated by a slash (/), it means that they can attack that number of times in one round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04907))_
 
-> Context: Some monsters have multiple attack methods. Multiple attack points are also listed for these cases. In this case, if they're written on _one_ line separated by a slash (/), it means that they can attack that number of times in one round. For
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04907))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04907))_
+
+> Some monsters have multiple attack methods. Multiple attack points are also listed for these cases. In this case, if they're written on _one_ line separated by a slash (/), it means that they can attack that number of times in one round. For
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04908))_
 
 > Each targeted character must make a success roll to determine whether they're able to avoid the attack.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04908))_

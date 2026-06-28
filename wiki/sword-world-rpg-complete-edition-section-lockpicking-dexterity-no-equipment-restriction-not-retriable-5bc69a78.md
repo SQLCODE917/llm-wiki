@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lockpicking-dexterity-no-equipment-restriction-not-retriable-5bc69a78@789034244238b62eaed47591e97a969d
+projection_coverage: section-sword-world-rpg-complete-edition-section-lockpicking-dexterity-no-equipment-restriction-not-retriable-5bc69a78@6fb07c2d4a98d5c66277979bb9c0b0bb
 ---
 
 # **[** ② **Lockpicking [Dexterity]] (No equipment restriction, not retriable)**
@@ -22,14 +22,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: These can be attempted again if the baseline score for a success roll increases (that is, if the skill level increases or the ability bonus of the relevant ability score increases).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03303))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03303))_
+
+> These can be attempted again if the baseline score for a success roll increases (that is, if the skill level increases or the ability bonus of the relevant ability score increases).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03305))_
 
 > Even if you don't have these tools, you can try using wire, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03305))_
 
-> Context: The ability to open locks on doors, treasure chests, etc. The thieves' guild sells lockpicking tools (sold under the name _thieves' tools_ ) to guild members for 100 silver coins. Even if you don't have these tools, you can try using wire, etc. if you have it. However, the probability of success will be lower (impose a -2 modifier on success rolls). The game
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03305))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03305))_
+
+> The ability to open locks on doors, treasure chests, etc. The thieves' guild sells lockpicking tools (sold under the name _thieves' tools_ ) to guild members for 100 silver coins. Even if you don't have these tools, you can try using wire, etc. if you have it. However, the probability of success will be lower (impose a -2 modifier on success rolls). The game
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03308))_
 
 > master should set the lock's target score depending on the difficulty.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03308))_

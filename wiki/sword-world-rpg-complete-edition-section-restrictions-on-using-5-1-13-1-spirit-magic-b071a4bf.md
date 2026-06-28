@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-restrictions-on-using-5-1-13-1-spirit-magic-b071a4bf@bb0288bd3e184686738d2cffb63e8089
+projection_coverage: section-sword-world-rpg-complete-edition-section-restrictions-on-using-5-1-13-1-spirit-magic-b071a4bf@d4323edb187894605adce4e9ae3aa772
 ---
 
 # **Restrictions on Using 5.1.13.1 Spirit Magic**
@@ -23,11 +23,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Therefore, you must not wear clothing or armor that severely restricts movement of your arms, and your
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02246))_
+### Technical atom 1
 
-> Context: #2 is because the procedure for casting spells requires the use of one hand. Therefore, you must not wear clothing or armor that severely restricts movement of your arms, and your
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02246))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02246))_
+
+> Therefore, you must not wear clothing or armor that severely restricts movement of your arms, and your
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02246))_
+
+> #2 is because the procedure for casting spells requires the use of one hand. Therefore, you must not wear clothing or armor that severely restricts movement of your arms, and your
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02247))_
 
 > You can use either your left or right arm to cast a spell.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02247))_

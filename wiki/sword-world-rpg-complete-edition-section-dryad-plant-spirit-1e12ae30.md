@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dryad-plant-spirit-1e12ae30@053a906a2b17fd0696e245afb422f50a
+projection_coverage: section-sword-world-rpg-complete-edition-section-dryad-plant-spirit-1e12ae30@760c9e9ab0cae43c7b0197029313e38d
 ---
 
 # (Dryad/Plant Spirit)
@@ -24,11 +24,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: By borrowing the power of the wind spirit, you can create a wall of surging storms. When you chant the spell, a wild gust of wind comes out of nowhere and begins swirling in the same place. The storm wall is transparent, so it won't block your gaze, but all projectile attacks, including those from _Shoot Arrow_ , will be deflected in front of you by the sylphs lurking in the wind. Those that touch the wall or try to pass through it must attempt to resist. If you succeed, you will be able to pass
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02607))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02607))_
+
+> By borrowing the power of the wind spirit, you can create a wall of surging storms. When you chant the spell, a wild gust of wind comes out of nowhere and begins swirling in the same place. The storm wall is transparent, so it won't block your gaze, but all projectile attacks, including those from _Shoot Arrow_ , will be deflected in front of you by the sylphs lurking in the wind. Those that touch the wall or try to pass through it must attempt to resist. If you succeed, you will be able to pass
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02610))_
 
 > Type=Target score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02610))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02611))_
 
 > Expansion=Final score, duration, distance, target volume Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02611))_

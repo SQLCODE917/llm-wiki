@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-obsidian-dog-a0e4de36@b9c8aee51fbb1fffd4117f2172ed4325
+projection_coverage: section-sword-world-rpg-complete-edition-section-obsidian-dog-a0e4de36@f039f059823443ea803d7aac7f93636d
 ---
 
 # **[ Obsidian Dog ]**
@@ -24,8 +24,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: During combat, a thing can attack up to 6 times by transforming its body so as to produce numerous arms and tentacles. The game master must roll the dice to randomly determine how many attacks are made in a round.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06449))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06449))_
+
+> During combat, a thing can attack up to 6 times by transforming its body so as to produce numerous arms and tentacles. The game master must roll the dice to randomly determine how many attacks are made in a round.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06451))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06451))_

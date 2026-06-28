@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-4-mithril-silver-weapons-and-armor-99cf2474@c7a08c74019c32c3269450cc6c4a7cb9
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-4-mithril-silver-weapons-and-armor-99cf2474@8fe9d975ef063ce9c598e4b9ff18a1f2
 ---
 
 # **4.10.4 Mithril Silver Weapons and Armor**
@@ -39,11 +39,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Mithril silver is itself a mineral imbued with magic, and when processed, it gains power.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01154))_
+### Technical atom 1
 
-> Context: Mithril silver, like regular silver, is a metal that exists in the spirit world. Therefore, a shaman can wear mithril silver armor and _still_ use spirit magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01160))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01154))_
+
+> Mithril silver is itself a mineral imbued with magic, and when processed, it gains power.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01160))_
+
+> Mithril silver, like regular silver, is a metal that exists in the spirit world. Therefore, a shaman can wear mithril silver armor and _still_ use spirit magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01159))_
 
 > Mithril silver weapons can deal damage to monsters that normal weapons cannot harm.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01159))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-geas-aa69af90@300c7ab3024af2949093096befcfe05f
+projection_coverage: section-sword-world-rpg-complete-edition-section-geas-aa69af90@282733accc594442cc79e585f64ddbee
 ---
 
 # **[ Geas ]**
@@ -24,20 +24,36 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is a spell that identifies the type of magic being cast on a target and specifies its effect. If it's a regular magical item, you can almost certainly identify the magic. However, some items are safe from the effect of this spell due to the _lost spell_ , _Seal Enchantment_ . When you use this spell on an object that had _Seal Enchantment_ cast on it, its effect cannot be inferred if your final score does not exceed the target score determined by _Seal Enchantment_ . If they fail, the same 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01947))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01947))_
+
+> This is a spell that identifies the type of magic being cast on a target and specifies its effect. If it's a regular magical item, you can almost certainly identify the magic. However, some items are safe from the effect of this spell due to the _lost spell_ , _Seal Enchantment_ . When you use this spell on an object that had _Seal Enchantment_ cast on it, its effect cannot be inferred if your final score does not exceed the target score determined by _Seal Enchantment_ . If they fail, the same
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01950))_
 
 > Base Mental Power Cost=30 Distance=Touch Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01950))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01951))_
 
 > Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01951))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01952))_
 
 > Effect=Give a target a prohibition command Type=Curse, target score Expansion=Final score Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01952))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01954))_
 
 > The caster can cancel this spell at will, but the spell will not be removed even if the caster dies.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01954))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01955))_
 
 > At least, if you're not intelligent enough to use language, this spell cannot be cast on you.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01955))_

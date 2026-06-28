@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-9-undead-7bab43fc@3d277e35f02ec00543912a848c4deae3
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-9-undead-7bab43fc@66fe81e34831b8eacd05e9c60855c08f
 ---
 
 # 13.2.9 Undead
@@ -313,419 +313,780 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This plant can grow up to about 10 meters in height. The stem has 2 to 5 bud-shaped flowers about 1 meter in diameter. When a creature such as a human, etc. approaches, the folded flower stalks extend out and the buds open to envelop their prey. The flower stalks grow to about 10 meters long.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06090))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06090))_
+
+> This plant can grow up to about 10 meters in height. The stem has 2 to 5 bud-shaped flowers about 1 meter in diameter. When a creature such as a human, etc. approaches, the folded flower stalks extend out and the buds open to envelop their prey. The flower stalks grow to about 10 meters long.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06092))_
 
 > Monster Level=6 Rarity=11 Agility=10 Movement Speed=0 Number=One Frequency=Very Rare Intellect=None Reaction=Adversarial Attack Points=Flower:11 (4) Strike Points=7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06092))_
 
-> Context: This plant can grow up to about 10 meters in height. The stem has 2 to 5 bud-shaped flowers about 1 meter in diameter. When a creature such as a human, etc. approaches, the folded flower stalks extend out and the buds open to envelop their prey. The flower stalks grow to about 10 meters long.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06090))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06090))_
+
+> This plant can grow up to about 10 meters in height. The stem has 2 to 5 bud-shaped flowers about 1 meter in diameter. When a creature such as a human, etc. approaches, the folded flower stalks extend out and the buds open to envelop their prey. The flower stalks grow to about 10 meters long.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06093))_
 
 > Evasion Points=13 (6) Defense Points=8 Life Points/Resistance=1/12 (5) Mental Points/Resistance=-/14 (7) Special Abilities=Strangling
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06093))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06095))_
 
 > Habitat=Forests
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06095))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06096))_
 
 > Languages=None Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06096))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06099))_
 
 > Monster Level=6 Rarity=11 Agility=10 Movement Speed=0
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06099))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06101))_
 
 > Habitat=Forests Languages=None Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06101))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06102))_
 
 > Adventurers can also attack the body.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06102))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06104))_
 
 > Monster Level=8 Rarity=15 Agility=7 Movement Speed=7 Number=One to several Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Barehanded:15 (8) Strike Points=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06104))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06107))_
 
 > After combat, they must make a life force resistance roll against target score 16, and those who fail will then have mushrooms growing all over their bodies after 24 hours.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06107))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06112))_
 
 > Monster Level=Based on previous Rarity=16 Agility=Half of previous Movement Speed=Half of previous Number=Several to dozens Frequency=Rare Intellect=Low Reaction=Command-based
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06112))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06115))_
 
 > Therefore, they will do their best to obey even abstract commands (for example, sneak into a house and steal something, etc.). They can also use tools such as weapons, armor, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06115))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06121))_
 
 > Monster Level=1
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06121))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06122))_
 
 > Rarity=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06122))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06123))_
 
 > Agility=14 Movement Speed=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06123))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06124))_
 
 > Number=Several to dozens
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06124))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06125))_
 
 > Frequency=Frequent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06125))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06126))_
 
 > Intellect=Obeys commands Reaction=Command-based Attack Points=Weapon:8 (1) Strike Points=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06126))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06127))_
 
 > Evasion Points=9 (2) Defense Points=3 Life Points/Resistance=7/8 (1)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06127))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06128))_
 
 > Mental Points/Resistance=-/9 (2)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06128))_
+
+### Technical atom 20
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06129))_
 
 > Special Abilities=Bladed weapons cannot critical
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06129))_
+
+### Technical atom 21
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06131))_
 
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06131))_
+
+### Technical atom 22
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06132))_
 
 > Due to their characteristic lack of flesh, bladed weapons cannot deal additional critical damage to skeletons.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06132))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06134))_
 
 > Monster Level=1
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06134))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06135))_
 
 > Rarity=9 Agility=7 Movement Speed=7 Number=Several to dozens Frequency=Frequent Intellect=Obeys commands Reaction=Command-based Attack Points=Barehanded:8 (1) Strike Points=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06135))_
+
+### Technical atom 25
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06137))_
 
 > Habitat=Ruins Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06137))_
 
-> Context: Zombies, along with skeletons, are representative undead, and are created from corpses by ancient magic and dark magic. However, unlike skeletons, they do not use weapons or armor. Since they have no intelligence, mental attacks have no effect at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06138))_
+### Technical atom 26
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06138))_
+
+> Zombies, along with skeletons, are representative undead, and are created from corpses by ancient magic and dark magic. However, unlike skeletons, they do not use weapons or armor. Since they have no intelligence, mental attacks have no effect at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06140))_
 
 > Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06140))_
 
-> Context: Zombies, along with skeletons, are representative undead, and are created from corpses by ancient magic and dark magic. However, unlike skeletons, they do not use weapons or armor. Since they have no intelligence, mental attacks have no effect at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06138))_
+### Technical atom 27
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06138))_
+
+> Zombies, along with skeletons, are representative undead, and are created from corpses by ancient magic and dark magic. However, unlike skeletons, they do not use weapons or armor. Since they have no intelligence, mental attacks have no effect at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06141))_
 
 > Rarity=11 Agility=9 Movement Speed=8 Number=Several Frequency=Moderate Intellect=Almost none Reaction=Violent Attack Points=- Strike Points=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06141))_
+
+### Technical atom 28
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06142))_
 
 > Evasion Points=- Defense Points=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06142))_
+
+### Technical atom 29
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06143))_
 
 > Life Points/Resistance=7/9 (2) Mental Points/Resistance=-/10 (3) Special Abilities=Wrap (Evasion target score=10, strike power 10, bonus damage 2)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06143))_
+
+### Technical atom 30
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06146))_
 
 > Habitat=Ruins
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06146))_
+
+### Technical atom 31
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06147))_
 
 > Languages=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06147))_
+
+### Technical atom 32
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06148))_
 
 > Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06148))_
+
+### Technical atom 33
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06149))_
 
 > It’s usually spread out on the ground like sand, but if something living approaches it, it will suddenly fly up as if blown by the wind, take the form of a human, and attack.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06149))_
 
-> Context: An ash is an undead created from the ashes of a burned corpse using ancient magic and dark magic. It’s usually spread out on the ground like sand, but if something living approaches it, it will suddenly fly up as if blown by the wind, take the form of a human, and attack. Due to the ash's physical characteristics, attacks with weapons, etc. cannot be used at all. Also, since it's already been burned once, fire has no effect on it at all. It‘s possible to damage an ash's life points with damage m
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06149, source-range-870a16bc-06152))_
+### Technical atom 34
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06149, source-range-870a16bc-06152))_
+
+> An ash is an undead created from the ashes of a burned corpse using ancient magic and dark magic. It’s usually spread out on the ground like sand, but if something living approaches it, it will suddenly fly up as if blown by the wind, take the form of a human, and attack. Due to the ash's physical characteristics, attacks with weapons, etc. cannot be used at all. Also, since it's already been burned once, fire has no effect on it at all. It‘s possible to damage an ash's life points with damage m
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06151))_
 
 > The target of the attack must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they will inhale a portion of the ash.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06151))_
 
-> Context: around the target creature and attacks it. The target of the attack must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they will inhale a portion of the ash. Every round thereafter, they must make a life force resistance roll against target score 10. As long as you continue to fail, you will suffer strike power 10 damage and 2 plus bonus damage 2 every round. This damage can only be reduced by adventurer level.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06151))_
+### Technical atom 35
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06151))_
+
+> around the target creature and attacks it. The target of the attack must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they will inhale a portion of the ash. Every round thereafter, they must make a life force resistance roll against target score 10. As long as you continue to fail, you will suffer strike power 10 damage and 2 plus bonus damage 2 every round. This damage can only be reduced by adventurer level.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06152))_
 
 > If you cast the spirit magic _Missile Protection_ , you can protect yourself from being enwrapped by the ash.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06152))_
 
-> Context: around the target creature and attacks it. The target of the attack must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they will inhale a portion of the ash. Every round thereafter, they must make a life force resistance roll against target score 10. As long as you continue to fail, you will suffer strike power 10 damage and 2 plus bonus damage 2 every round. This damage can only be reduced by adventurer level.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06151))_
+### Technical atom 36
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06151))_
+
+> around the target creature and attacks it. The target of the attack must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they will inhale a portion of the ash. Every round thereafter, they must make a life force resistance roll against target score 10. As long as you continue to fail, you will suffer strike power 10 damage and 2 plus bonus damage 2 every round. This damage can only be reduced by adventurer level.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06154))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06154))_
+
+### Technical atom 37
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06155))_
 
 > Rarity=10 Agility=14 Movement Speed=14 Number=Several to dozens Frequency=Moderate Intellect=Low Reaction=Adversarial Attack Points=Fangs:10 (3)/Claw:11 (4)/ Claw:11 (4)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06155))_
+
+### Technical atom 38
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06156))_
 
 > Strike Points=9+poison/8+poison/8+poison Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=14/11 (4) Mental Points/Resistance=10/10 (3) Special Abilities=Poison (Toxicity score 10, paralysis, lasts 1 day)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06156))_
 
-> Context: Ghouls are undead who scavenge and eat corpses. However, perhaps because _killing and eating are the same thing_ , they often attack living things as well. Ghouls have paralyzing poison in their claws and fangs, and a character who suffers damage must succeed on a life force resistance roll against target score 10 or they will be paralyzed at the end of the next round. This paralysis lasts for one day.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06159))_
+### Technical atom 39
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06159))_
+
+> Ghouls are undead who scavenge and eat corpses. However, perhaps because _killing and eating are the same thing_ , they often attack living things as well. Ghouls have paralyzing poison in their claws and fangs, and a character who suffers damage must succeed on a life force resistance roll against target score 10 or they will be paralyzed at the end of the next round. This paralysis lasts for one day.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06158))_
 
 > Damage from healing magic Habitat=Ruins, graveyards Languages=Those previous Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06158))_
+
+### Technical atom 40
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06163))_
 
 > Rarity=14 Agility=14 Movement Speed=14 Number=One to several
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06163))_
+
+### Technical atom 41
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06164))_
 
 > Frequency=Very Rare Intellect=Low Reaction=Adversarial Attack Points=Weapon:11 (4) Strike Points=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06164))_
+
+### Technical atom 42
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06165))_
 
 > Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=16/12 (5) Mental Points/Resistance=20/13 (6) Special Abilities=Life point regenerate (3 points per round)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06165))_
+
+### Technical atom 43
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06167))_
 
 > Habitat=Various
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06167))_
+
+### Technical atom 44
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06168))_
 
 > Languages=Those previous Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06168))_
+
+### Technical atom 45
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06173))_
 
 > Rarity=12 Agility=14 Movement Speed=14 Number=One to several Frequency=Moderate
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06173))_
 
-> Context: Wights are undead that possess people and feed on the energy of others. Normal weapons have no effect against this monster. To wound a wight, you need a silver or magical weapon. A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. If a wight's attack hits, your life force will suffer damage as well as your mental power. The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4. 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06177))_
+### Technical atom 46
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06177))_
+
+> Wights are undead that possess people and feed on the energy of others. Normal weapons have no effect against this monster. To wound a wight, you need a silver or magical weapon. A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. If a wight's attack hits, your life force will suffer damage as well as your mental power. The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06176))_
 
 > Damage from healing magic Habitat=Ruins, graveyards Languages=Those previous Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06176))_
+
+### Technical atom 47
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06177))_
 
 > For this, you can only reduce the damage with your character's adventurer level.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06177))_
 
-> Context: Wights are undead that possess people and feed on the energy of others. Normal weapons have no effect against this monster. To wound a wight, you need a silver or magical weapon. A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. If a wight's attack hits, your life force will suffer damage as well as your mental power. The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4. 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06177))_
+### Technical atom 48
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06177))_
+
+> Wights are undead that possess people and feed on the energy of others. Normal weapons have no effect against this monster. To wound a wight, you need a silver or magical weapon. A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. If a wight's attack hits, your life force will suffer damage as well as your mental power. The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06180))_
 
 > If you can clear up those lingering regrets and grudges, they will cease to exist.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06180))_
+
+### Technical atom 49
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06183))_
 
 > If a haunt finds that a creature it comes into contact with does not sympathize with its feelings, it may attempt to possess them.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06183))_
+
+### Technical atom 50
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06188))_
 
 > Languages=Those previous Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06188))_
 
-> Context: A ghost is a moving being whose corpse still holds a lingering grudge. Depending on how long ago they died, they can look like zombies (rotting corpses) or skeletons (moving skeletons). Their strength varies considerably depending on which abilities they had in life. The scores listed here are averages. All ability scores will be the same as previous, except for mental power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06189))_
+### Technical atom 51
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06189))_
+
+> A ghost is a moving being whose corpse still holds a lingering grudge. Depending on how long ago they died, they can look like zombies (rotting corpses) or skeletons (moving skeletons). Their strength varies considerably depending on which abilities they had in life. The scores listed here are averages. All ability scores will be the same as previous, except for mental power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
 
 > Those who had rune master skills can use magic of that level and magic power.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
 
-> Context: Mental power is the only one that’s _previous + 6_ . They have all the skills they had previously. Those who had rune master skills can use magic of that level and magic power. However, they cannot use holy magic (but they _can_ use dark magic). Also, to use ancient magic, they will still need a magical catalyst (such as a magic wand).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
+### Technical atom 52
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
+
+> Mental power is the only one that’s _previous + 6_ . They have all the skills they had previously. Those who had rune master skills can use magic of that level and magic power. However, they cannot use holy magic (but they _can_ use dark magic). Also, to use ancient magic, they will still need a magical catalyst (such as a magic wand).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06192))_
 
 > If a ghost's corpse is destroyed, it will always attempt to _possess_ someone nearby.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06192))_
 
-> Context: Mental power is the only one that’s _previous + 6_ . They have all the skills they had previously. Those who had rune master skills can use magic of that level and magic power. However, they cannot use holy magic (but they _can_ use dark magic). Also, to use ancient magic, they will still need a magical catalyst (such as a magic wand).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
+### Technical atom 53
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
+
+> Mental power is the only one that’s _previous + 6_ . They have all the skills they had previously. Those who had rune master skills can use magic of that level and magic power. However, they cannot use holy magic (but they _can_ use dark magic). Also, to use ancient magic, they will still need a magical catalyst (such as a magic wand).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06193))_
 
 > When its lingering regrets and grudges are cleared, or when its mental points are reduced to 0 or less due to a _Shade_ , etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06193))_
 
-> Context: Mental power is the only one that’s _previous + 6_ . They have all the skills they had previously. Those who had rune master skills can use magic of that level and magic power. However, they cannot use holy magic (but they _can_ use dark magic). Also, to use ancient magic, they will still need a magical catalyst (such as a magic wand).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
+### Technical atom 54
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
+
+> Mental power is the only one that’s _previous + 6_ . They have all the skills they had previously. Those who had rune master skills can use magic of that level and magic power. However, they cannot use holy magic (but they _can_ use dark magic). Also, to use ancient magic, they will still need a magical catalyst (such as a magic wand).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06194))_
 
 > When attacking a ghost in the form of a skeleton with a weapon, you cannot deal additional critical damage with a bladed weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06194))_
+
+### Technical atom 55
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06196))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06196))_
+
+### Technical atom 56
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06197))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06197))_
+
+### Technical atom 57
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06198))_
 
 > Agility=24 Movement Speed=24 (air) Number=One, rarely multiple depending on the situation
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06198))_
+
+### Technical atom 58
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06199))_
 
 > Frequency=Rare Intellect=Human Reaction=Friendly, however, some are extremely adversarial Attack Points=- Strike Points=Evasion Points=Defense Points=Life Points/Resistance=-/Mental Points/Resistance=20/14 (7) Special Abilities=Possess (Resist target score=12)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06199))_
 
-> Context: A specter is a very troublesome entity, a grudge that has lost its physical body and remains in this world. The faint, transparent appearance it had in life takes on the form of a hazy shadow. Since it does not have a physical body, attacks such as weapons and damage magic are ineffective, and the only effective
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06204))_
+### Technical atom 59
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06204))_
+
+> A specter is a very troublesome entity, a grudge that has lost its physical body and remains in this world. The faint, transparent appearance it had in life takes on the form of a hazy shadow. Since it does not have a physical body, attacks such as weapons and damage magic are ineffective, and the only effective
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06205))_
 
 > Those who had rune master skills previously can use magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06205))_
 
-> Context: countermeasure is magic that has a mental effect. Those who had rune master skills previously can use magic. However, holy magic cannot be used. A magical catalyst is not required when using ancient magic. Also, after performing _possession_ , they can freely use the skills they had previously.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06205))_
+### Technical atom 60
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06205))_
+
+> countermeasure is magic that has a mental effect. Those who had rune master skills previously can use magic. However, holy magic cannot be used. A magical catalyst is not required when using ancient magic. Also, after performing _possession_ , they can freely use the skills they had previously.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06206))_
 
 > When a specter's regrets or grudges are cleared, or when its mental points are reduced to 0 or less due to _Shade_ , etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06206))_
 
-> Context: countermeasure is magic that has a mental effect. Those who had rune master skills previously can use magic. However, holy magic cannot be used. A magical catalyst is not required when using ancient magic. Also, after performing _possession_ , they can freely use the skills they had previously.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06205))_
+### Technical atom 61
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06205))_
+
+> countermeasure is magic that has a mental effect. Those who had rune master skills previously can use magic. However, holy magic cannot be used. A magical catalyst is not required when using ancient magic. Also, after performing _possession_ , they can freely use the skills they had previously.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06208))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06208))_
+
+### Technical atom 62
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06209))_
 
 > Rarity=14 Agility=24 Movement Speed=0 Number=One, rarely multiple depending on the situation
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06209))_
+
+### Technical atom 63
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06210))_
 
 > Frequency=Rare Intellect=Human Reaction=Friendly, however, some are extremely adversarial Attack Points=- Strike Points=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06210))_
+
+### Technical atom 64
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06211))_
 
 > Evasion Points=- Defense Points=Life Points/Resistance=-/Mental Points/Resistance=-/13 (6) Special Abilities=Possess (Resist target score=12)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06211))_
+
+### Technical atom 65
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06214))_
 
 > Languages=Those previous Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06214))_
 
-> Context: A phantom has lost all of the skills it had previously. After _possessing_ , it can only use the abilities of that body.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06217))_
+### Technical atom 66
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06217))_
+
+> A phantom has lost all of the skills it had previously. After _possessing_ , it can only use the abilities of that body.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06220))_
 
 > Monster Level=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06220))_
 
-> Context: Not affected by poison and illness Sleepless Damage from healing magic Habitat=Above swamps or ponds Languages=Regional Perception=Pseudo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06223))_
+### Technical atom 67
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06223))_
+
+> Not affected by poison and illness Sleepless Damage from healing magic Habitat=Above swamps or ponds Languages=Regional Perception=Pseudo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06221))_
 
 > Rarity=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06221))_
+
+### Technical atom 68
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06233))_
 
 > The dullahan will always appear at the place you moved to (or to one of the places moved to, if the residents have split up and moved to different places), even if it's on the sea, or in a room that's been walled off on all sides.......
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06233))_
 
-> Context: You can avoid a death prophesied by a dullahan by killing it the first or second time it appears. It’s no use for those who have received the prophecy of death to move away. The dullahan will always appear at the place you moved to (or to one of the places moved to, if the residents have split up and moved to different places), even if it's on the sea, or in a room that's been walled off on all sides.......
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06233))_
+### Technical atom 69
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06233))_
+
+> You can avoid a death prophesied by a dullahan by killing it the first or second time it appears. It’s no use for those who have received the prophecy of death to move away. The dullahan will always appear at the place you moved to (or to one of the places moved to, if the residents have split up and moved to different places), even if it's on the sea, or in a room that's been walled off on all sides.......
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06236))_
 
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06236))_
+
+### Technical atom 70
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06240))_
 
 > The chariot can also attack while moving up to a maximum of 90 meters in one round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06240))_
+
+### Technical atom 71
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06242))_
 
 > Also, healing magic cannot deal damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06242))_
+
+### Technical atom 72
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06243))_
 
 > You can attack a headless horse that is pulling a chariot normally.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06243))_
+
+### Technical atom 73
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06247))_
 
 > Damage from healing magic Habitat=Unknown, appears with (or summoned by) dullahan Languages=None Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06247))_
+
+### Technical atom 74
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06248))_
 
 > They act faithfully to their master's commands and may also attack enemies.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06248))_
+
+### Technical atom 75
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06249))_
 
 > When a headless horse's master dullahan is defeated, it loses its ability to act.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06249))_
+
+### Technical atom 76
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06251))_
 
 > Monster Level=8
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06251))_
+
+### Technical atom 77
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06252))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06252))_
+
+### Technical atom 78
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06254))_
 
 > Gaze (Resist target score=15, mental damage, strike power 10, bonus damage 8)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06254))_
+
+### Technical atom 79
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06256))_
 
 > Damage from healing magic Habitat=Ruins, deep in the woods Languages=Regional Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06256))_
 
-> Context: An undead knight can similarly drain the mental power of its enemies with its gaze. As a result, anyone struck by an undead knight's gaze (even from behind) will suffer damage to their mental power. Those whose mental power is reduced to 0 due to damage from an undead knight's weapons or gaze will die instantly and will be resurrected as a wight 24 hours later. For this reason, an undead knight may be accompanied by multiple wights. These wights are sometimes specifically called _squire wights_ 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06262))_
+### Technical atom 80
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06262))_
+
+> An undead knight can similarly drain the mental power of its enemies with its gaze. As a result, anyone struck by an undead knight's gaze (even from behind) will suffer damage to their mental power. Those whose mental power is reduced to 0 due to damage from an undead knight's weapons or gaze will die instantly and will be resurrected as a wight 24 hours later. For this reason, an undead knight may be accompanied by multiple wights. These wights are sometimes specifically called _squire wights_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06261))_
 
 > Also, if an undead knight's attack hits, the character will suffer damage to their mental power in addition to normal damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06261))_
+
+### Technical atom 81
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06266))_
 
 > Agility=24 Movement Speed=24 (air) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=- Strike Points=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06266))_
+
+### Technical atom 82
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06267))_
 
 > Evasion Points=Defense Points=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06267))_
+
+### Technical atom 83
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06269))_
 
 > Mental Points/Resistance=16/16 (9) Special Abilities=8th level ancient magic (Magic Intensity/Magic Power=18/11) Retains previous skills Physical attack immunity Sleepless Instantly killed by sunlight
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06269))_
 
-> Context: A wraith is a being whose ethereal body was separated from its physical body by the ancient magic spell _Wraith Form_ and became undead because it did not return within the spell's duration. It resembles a specter, with a vaguely transparent image of when it was alive. The scores given here are for an average wraith, and can vary considerably depending on its previous knowledge, mental power, sorcerer skill level, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06273))_
+### Technical atom 84
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06273))_
+
+> A wraith is a being whose ethereal body was separated from its physical body by the ancient magic spell _Wraith Form_ and became undead because it did not return within the spell's duration. It resembles a specter, with a vaguely transparent image of when it was alive. The scores given here are for an average wraith, and can vary considerably depending on its previous knowledge, mental power, sorcerer skill level, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06271))_
 
 > Languages=Those previous (always includes low ancient)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06271))_
 
-> Context: Attacks using weapons or damaging spells have no effect at all on wraiths, which do not have a physical body, so the only effective countermeasure is magic that has a mental effect. Although a wraith has lost all of its physical abilities, its knowledge-related abilities and rune master skills are still effective, and it can use magic. However, holy magic cannot be used (dark magic is allowed). Unlike specters, wraiths do not have the ability to _possess_ . If its mental points become 0 due to a
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06274))_
+### Technical atom 85
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06274))_
+
+> Attacks using weapons or damaging spells have no effect at all on wraiths, which do not have a physical body, so the only effective countermeasure is magic that has a mental effect. Although a wraith has lost all of its physical abilities, its knowledge-related abilities and rune master skills are still effective, and it can use magic. However, holy magic cannot be used (dark magic is allowed). Unlike specters, wraiths do not have the ability to _possess_ . If its mental points become 0 due to a
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06277))_
 
 > Monster Level=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06277))_
+
+### Technical atom 86
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06278))_
 
 > Rarity=14 Agility=10 Movement Speed=14 Number=One to several Frequency=Rare Intellect=Obeys commands Reaction=Violent Attack Points=Arms:14 (7)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06278))_
+
+### Technical atom 87
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06279))_
 
 > Strike Points=8+curse Evasion Points=13 (6) Defense Points=8 Life Points/Resistance=7/13 (6) Mental Points/Resistance=-/14 (7) Special Abilities=Curse (Resist target score=13)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06279))_
+
+### Technical atom 88
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06282))_
 
 > Habitat=Tombs
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06282))_
+
+### Technical atom 89
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06283))_
 
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06283))_
+
+### Technical atom 90
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06285))_
 
 > If a mummy's attack hits, in addition to physical damage, a _curse_ will befall you.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06285))_
+
+### Technical atom 91
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06290))_
 
 > Habitat=Tombs
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06290))_
+
+### Technical atom 92
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06291))_
 
 > Languages=Low ancient Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06291))_
+
+### Technical atom 93
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06295))_
 
 > If a master mummy's attack hits, in addition to physical damage, a _curse_ will befall you.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06295))_
 
-> Context: red eyes cause intense fear in those who see them. Anyone who makes eye contact with a vampire must first make a mental power resistance roll. The target score varies depending on the type of vampire, but in any case, if you fail to resist, you will be paralyzed with fear and unable to act. Even if the vampire removes its gaze, this paralysis continues until it disappears.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06301))_
+### Technical atom 94
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06301))_
+
+> red eyes cause intense fear in those who see them. Anyone who makes eye contact with a vampire must first make a mental power resistance roll. The target score varies depending on the type of vampire, but in any case, if you fail to resist, you will be paralyzed with fear and unable to act. Even if the vampire removes its gaze, this paralysis continues until it disappears.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06302))_
 
 > Also, if a vampire's attack hits a character, in addition to normal damage, mental power will also be damaged.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06302))_
 
-> Context: red eyes cause intense fear in those who see them. Anyone who makes eye contact with a vampire must first make a mental power resistance roll. The target score varies depending on the type of vampire, but in any case, if you fail to resist, you will be paralyzed with fear and unable to act. Even if the vampire removes its gaze, this paralysis continues until it disappears.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06301))_
+### Technical atom 95
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06301))_
+
+> red eyes cause intense fear in those who see them. Anyone who makes eye contact with a vampire must first make a mental power resistance roll. The target score varies depending on the type of vampire, but in any case, if you fail to resist, you will be paralyzed with fear and unable to act. Even if the vampire removes its gaze, this paralysis continues until it disappears.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06304))_
 
 > If they cannot steal mental power for one full day, they will automatically lose 1 mental point.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06304))_
+
+### Technical atom 96
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06308))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06308))_
+
+### Technical atom 97
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06309))_
 
 > Rarity=13 Agility=14 Movement Speed=14 Number=Several to dozens
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06309))_
+
+### Technical atom 98
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06310))_
 
 > Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Barehanded:10 (3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06310))_
+
+### Technical atom 99
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06311))_
 
 > Strike Points=5+mental damage Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=14/11 (4) Mental Points/Resistance=14/11 (4)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06311))_
+
+### Technical atom 100
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06312))_
 
 > Special Abilities=Steal mental power (Strike power 10, bonus damage 3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06312))_
+
+### Technical atom 101
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06313))_
 
 > Gaze (Resist target score=10, paralysis by fear)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06313))_
+
+### Technical atom 102
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06319))_
 
 > Monster Level=10 Rarity=13 Agility=20 Movement Speed=20/20 (air) Number=One to several Frequency=Very rare
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06319))_
+
+### Technical atom 103
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06322))_
 
 > Attack Points=Barehanded:17 (10) Strike Points=14+mental damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06322))_
+
+### Technical atom 104
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06323))_
 
 > Evasion Points=19 (12) Defense Points=12 Life Points/Resistance=26/20 (13) Mental Points/Resistance=26/20 (13)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06323))_
+
+### Technical atom 105
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06324))_
 
 > Special Abilities=8th level dark magic (Magic intensity/magic power=18/11) Steal mental power (Strike power 10, bonus damage 10)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06324))_
+
+### Technical atom 106
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06325))_
 
 > Gaze (Resist target score=17, paralysis by fear)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06325))_
 
-> Context: regenerate in its _soil_ location. Vampires can also turn into mist at their own will before their life points reach 0, and regenerate in a place with _soil_ . Even if their movement is blocked by magic such as _Paralyze_ , etc. they can still turn into a mist.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06331))_
+### Technical atom 107
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06331))_
+
+> regenerate in its _soil_ location. Vampires can also turn into mist at their own will before their life points reach 0, and regenerate in a place with _soil_ . Even if their movement is blocked by magic such as _Paralyze_ , etc. they can still turn into a mist.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06334))_
 
 > You cannot attempt this success roll if you do not know about vampires.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06334))_
 
-> Context: Many vampires preserve this "soil" by preparing a coffin and lining it inside, while others simply keep it in a mound inside their room. A sage who has knowledge of vampires can look at the _soil_ and completely find out its true identity through their _knowledge_ ability. To do so, you must know about vampires and must also make a success roll against target score 16. You cannot attempt this success roll if you do not know about vampires.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06334))_
+### Technical atom 108
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06334))_
+
+> Many vampires preserve this "soil" by preparing a coffin and lining it inside, while others simply keep it in a mound inside their room. A sage who has knowledge of vampires can look at the _soil_ and completely find out its true identity through their _knowledge_ ability. To do so, you must know about vampires and must also make a success roll against target score 16. You cannot attempt this success roll if you do not know about vampires.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06335))_
 
 > If someone with the shaman skill looks at the _soil_ , they can immediately tell that it's something out of the ordinary.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06335))_
+
+### Technical atom 109
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06340))_
 
 > Special Abilities=10th level ancient magic (Magic intensity/magic power=22/15)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06340))_
+
+### Technical atom 110
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06343))_
 
 > Gaze (Resist target score=22, paralysis by fear)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06343))_
 
-> Context: Above all, the most frightening thing about the undead king is that it has great magical power. An undead king uses both ancient magic and dark magic up to at least 10th level.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06348))_
+### Technical atom 111
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06348))_
+
+> Above all, the most frightening thing about the undead king is that it has great magical power. An undead king uses both ancient magic and dark magic up to at least 10th level.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06346))_
 
 > Damage from healing magic Habitat=Places with _unholy soil_ Languages=Low ancient Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06346))_

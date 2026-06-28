@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-17-3-808a812f@edacd5332b60104207d6146954e15c61
+projection_coverage: section-sword-world-rpg-complete-edition-section-17-3-808a812f@6c0ccded343c01b7a8030c6492a9bd01
 ---
 
 # **17.3**
@@ -22,5 +22,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08012))_
+
 > Basically, a mage's staff is used as a magic catalyst, but if the game master approves, you may use another object as a magic catalyst.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08012))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-strangle-continue-to-strangle-escape-65691db8@6434730c9730e76caf0875b8a74e32ba
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-strangle-continue-to-strangle-escape-65691db8@3acc3ae3491348f12a0136c65b89665b
 ---
 
 # **2. Strangle/Continue to Strangle/Escape**
@@ -29,17 +29,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Only _adventurer level_ can reduce strangling damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07815))_
+### Technical atom 1
 
-> Context: **Strangle** your opponent barehanded or with a garrote. Opponents have a -2 penalty to evasion. Once strangling, the strangler can automatically deal damage every round. If you’re barehanded, strike power is 0 (critical target 12), and if you’re using a garrote, strike power is 10 (critical target 10). Only _adventurer level_ can reduce strangling damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07815))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07815))_
+
+> Only _adventurer level_ can reduce strangling damage.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07815))_
+
+> **Strangle** your opponent barehanded or with a garrote. Opponents have a -2 penalty to evasion. Once strangling, the strangler can automatically deal damage every round. If you’re barehanded, strike power is 0 (critical target 12), and if you’re using a garrote, strike power is 10 (critical target 10). Only _adventurer level_ can reduce strangling damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07816))_
 
 > If you’re being strangled, the _only_ thing you can do in the rounds onward is attempt to break free.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07816))_
 
-> Context: If you’re being strangled, the _only_ thing you can do in the rounds onward is attempt to break free. To resolve breaking free, the one being strangled must make a success roll using _adventurer level + strength bonus_ as the baseline score, while the strangler must make one using _fighter/thief skill level + strength bonus_ . If the final score of the one trying to break free is greater, or if there’s a tie, he or she will escape. While being strangled, you cannot make any sound at all, so you 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07816))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07816))_
+
+> If you’re being strangled, the _only_ thing you can do in the rounds onward is attempt to break free. To resolve breaking free, the one being strangled must make a success roll using _adventurer level + strength bonus_ as the baseline score, while the strangler must make one using _fighter/thief skill level + strength bonus_ . If the final score of the one trying to break free is greater, or if there’s a tie, he or she will escape. While being strangled, you cannot make any sound at all, so you
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07819))_
 
 > You cannot deal damage to these, nor can you suffocate them.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07819))_

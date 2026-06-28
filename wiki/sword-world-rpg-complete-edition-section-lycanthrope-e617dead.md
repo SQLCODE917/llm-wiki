@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lycanthrope-e617dead@518546c8bb89d815aba5dcb99c271b0b
+projection_coverage: section-sword-world-rpg-complete-edition-section-lycanthrope-e617dead@400a6db576e207fd4da9784f57148d46
 ---
 
 # **[ Lycanthrope ]**
@@ -29,17 +29,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> When in human form, they may acquire and use various skills, including magic, just like an adventurer.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06698))_
+### Technical atom 1
 
-> Context: have acquired skills up to its monster level), or use the fixed scores for a normal man as given at page 230 (please set the life points high).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06699))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06698))_
+
+> When in human form, they may acquire and use various skills, including magic, just like an adventurer.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06699))_
+
+> have acquired skills up to its monster level), or use the fixed scores for a normal man as given at page 230 (please set the life points high).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06700))_
 
 > When the score is equal to or less than this, the lycanthrope will always enter beast form (the lycanthrope will always enter beast form on nights when the moon is full = 15 days).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06700))_
 
-> Context: have acquired skills up to its monster level), or use the fixed scores for a normal man as given at page 230 (please set the life points high).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06699))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06699))_
+
+> have acquired skills up to its monster level), or use the fixed scores for a normal man as given at page 230 (please set the life points high).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06701))_
 
 > Even when it's not, a lycanthrope can transform into a beast at their own will.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06701))_

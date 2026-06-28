@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-6-b9df4616@c582c2c2fe49b6415f6e6ccc65d61b5d
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-6-b9df4616@f313700283dd1719fa3185c77f57a533
 ---
 
 # **4.6**
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+
+> Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
 | **Table 1-8: Weapons-1** |
 | --- |
@@ -45,4 +50,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_

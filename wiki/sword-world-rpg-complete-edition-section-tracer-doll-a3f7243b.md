@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-tracer-doll-a3f7243b@745b3894b1b4de1fb27dc426dc2523b0
+projection_coverage: section-sword-world-rpg-complete-edition-section-tracer-doll-a3f7243b@c0d3d5f88400f800d4646d8051bf1bb1
 ---
 
 # **[ Tracer Doll ]**
@@ -16,5 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07561))_
+
 > Rarity=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07561))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-decrease-water-pressure-undine-water-spirit-5ea840a1@c646ae798dc2ed23888974862e2b411a
+projection_coverage: section-sword-world-rpg-complete-edition-section-decrease-water-pressure-undine-water-spirit-5ea840a1@2fce672e41631fa598b689305618f31b
 ---
 
 # **[ Decrease Water Pressure ] (Undine/Water Spirit)**
@@ -22,23 +22,44 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02627))_
+
 > Base Mental Power Cost=24
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02627))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02628))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02628))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02629))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02629))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02630))_
 
 > Duration=1 hour Effect=Relieves water pressure when diving Type=Target score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02630))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02631))_
 
 > Expansion=Final score, duration, distance, targets
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02631))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02632))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02632))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02633))_
 
 > If you cast this spell, you can fight underwater without any penalties at all.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02633))_

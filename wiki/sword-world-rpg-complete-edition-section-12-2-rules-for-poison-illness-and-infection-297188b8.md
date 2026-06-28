@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-rules-for-poison-illness-and-infection-297188b8@692e190a757623a7c2e8db62778076bf
+projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-rules-for-poison-illness-and-infection-297188b8@a14f237d3324f6bf9fd034b8b8139550
 ---
 
 # 12.2 Rules for Poison, Illness and Infection
@@ -21,6 +21,10 @@ From [[sword-world-rpg-complete-edition]].
 - This poison has its normal effect only on women. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04636))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_
 
 | **Table 12-1: Languages** |
 | --- |
@@ -38,4 +42,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_

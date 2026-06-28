@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-4-scores-used-in-weapon-combat-b82ad0ba@913db37366227b89ea25e9bf10ba8dd9
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-4-scores-used-in-weapon-combat-b82ad0ba@7c55c134bdb449cca76befbed913f990
 ---
 
 # 4.4 Scores Used in Weapon Combat
@@ -71,50 +71,86 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Bonus damage is calculated with the following formula:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00859))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00859))_
+
+> Bonus damage is calculated with the following formula:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00861))_
 
 > **bonus damage** = fighter (thief/ranger) skill level + strength bonus
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00861))_
 
-> Context: Attack power is calculated with the following formula:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00866))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00866))_
+
+> Attack power is calculated with the following formula:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00867))_
 
 > If a weapon hits, it’ll sometimes deal more damage than normal.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00867))_
 
-> Context: If a weapon hits, it’ll sometimes deal more damage than normal. For example, when you successfully exploit a gap in your opponent’s armor, or when you successfully damage an opponent’s vital point, such as an eye.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00867))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00867))_
+
+> If a weapon hits, it’ll sometimes deal more damage than normal. For example, when you successfully exploit a gap in your opponent’s armor, or when you successfully damage an opponent’s vital point, such as an eye.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00868))_
 
 > **attack power** = fighter (thief/ranger) skill level + dexterity bonus
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00868))_
 
-> Context: The critical target is a _lower is better_ score, which is rare in _Sword World RPG_ . Therefore, an attack using the thief skill is _more_ likely to result in a critical than an attack using the regular fighter skill.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00874))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00874))_
+
+> The critical target is a _lower is better_ score, which is rare in _Sword World RPG_ . Therefore, an attack using the thief skill is _more_ likely to result in a critical than an attack using the regular fighter skill.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00876))_
 
 > **critical target** = 10 (9 if using thief skill)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00876))_
 
-> Context: **critical target** = 10 (9 if using thief skill)
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00876))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00876))_
+
+> **critical target** = 10 (9 if using thief skill)
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00877))_
 
 > **strike power** = required strength of weapon (+5 if a two-handed weapon)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00877))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00883))_
 
 > These characters can deal more damage to their foes, even when
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00883))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00884))_
 
 > **evasion speed** = fighter (thief) skill level + agility bonus
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00884))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00889))_
 
 > If by a stroke of bad luck, an opponent’s attack hits, a character can still reduce the damage by means of armor.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00889))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_
 
 > **defense power** = required strength of armor
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_
 
-> Context: Those who are called heroes do not die from just a few injuries. In _Sword World RPG_ , a character with a high adventurer level, that is, a character who has a high level in any adventurer skill, is considered a _hero_ . Therefore, we determine a hero's resistance to death by their _adventurer level_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00894))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00894))_
+
+> Those who are called heroes do not die from just a few injuries. In _Sword World RPG_ , a character with a high adventurer level, that is, a character who has a high level in any adventurer skill, is considered a _hero_ . Therefore, we determine a hero's resistance to death by their _adventurer level_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00896))_
 
 > **damage reduction** = adventurer level
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00896))_

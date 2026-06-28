@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-adventure-treasure-and-reward-amounts-f0098594@c02790999da126bd8707f0e78df3e35b
+projection_coverage: section-sword-world-rpg-complete-edition-section-adventure-treasure-and-reward-amounts-f0098594@dc804e683ba6b5d28026cd501a3442e4
 ---
 
 # **Adventure Treasure and Reward Amounts**
@@ -27,5 +27,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06942))_
+
 > If you could obtain a large amount of treasure through an easy adventure, that would take the fun out of the game.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06942))_

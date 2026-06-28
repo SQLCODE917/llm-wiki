@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-geography-cc954da7@5ebf44b22e0e2b66e17e3bf4981f1c0b
+projection_coverage: section-sword-world-rpg-complete-edition-section-geography-cc954da7@a18bacd7e7349f78405a45c695e56ce2
 ---
 
 # **Geography**
@@ -46,8 +46,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08251))_
+
 > **Far East Region (Language = Eastern/ Mārdan)** At the eastern end of the Alecrast continent lie three countries: Mudeel, Milargo, and Anoth.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08251))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08265))_
 
 > **Northeast Region (Language = Eastern/Mārdan)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08265))_

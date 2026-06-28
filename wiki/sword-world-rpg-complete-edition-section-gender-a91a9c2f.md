@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-gender-a91a9c2f@925e6ac595e739e374228abd8901f1cf
+projection_coverage: section-sword-world-rpg-complete-edition-section-gender-a91a9c2f@882c31f1dcb0564a139564e7a972917a
 ---
 
 # 《 **Gender** 》
@@ -23,8 +23,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Use this as a guide when deciding on the age of a character of another race.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00380))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00380))_
+
+> Use this as a guide when deciding on the age of a character of another race.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00383))_
 
 > Even races other than humans have two genders, male and female, exactly the same as humans. Also consider the differences in appearance between men and women, as well as the differences in the division of roles in society, to be equivalent to those of humans.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00383))_

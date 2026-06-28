@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-many-b04d3100@f5ba3fba30cfcc207fa7f53304b957fb
+projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-many-b04d3100@38f7552ef89d2aa34eee3b968ed09e23
 ---
 
 # Enchanter=Many
@@ -21,17 +21,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07563))_
+
 > Form=A doll about 30 cm long
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07563))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07564))_
 
 > Base Trade Price=260,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07564))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
 
 > Powers=Indicates direction of a specific object or person
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
 
-> Context: Powers=Indicates direction of a specific object or person
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
+
+> Powers=Indicates direction of a specific object or person
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07566))_
 
 > What the doll _remembers_ is displayed on its pedestal, so you can know this if you read low ancient.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07566))_

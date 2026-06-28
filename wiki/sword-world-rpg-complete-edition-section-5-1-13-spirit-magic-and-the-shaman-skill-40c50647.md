@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-13-spirit-magic-and-the-shaman-skill-40c50647@3a82d74ec4b7b0ec44470cb31d95e19d
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-13-spirit-magic-and-the-shaman-skill-40c50647@5903b865b0dafd9fc694bdbd56cd30e1
 ---
 
 # 5.1.13 Spirit Magic and the Shaman Skill
@@ -54,17 +54,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02235))_
+
 > Please note that this spell cannot be used unless you can see the sky (it has no effect if used inside a cave or dungeon).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02235))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02246))_
 
 > Therefore, you must not wear clothing or armor that severely restricts movement of your arms, and your
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02246))_
 
-> Context: #2 is because the procedure for casting spells requires the use of one hand. Therefore, you must not wear clothing or armor that severely restricts movement of your arms, and your
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02246))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02246))_
+
+> #2 is because the procedure for casting spells requires the use of one hand. Therefore, you must not wear clothing or armor that severely restricts movement of your arms, and your
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02247))_
 
 > You can use either your left or right arm to cast a spell.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02247))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02271))_
 
 > You cannot use spells that belong to a specific spirit in places where that spirit power is not at work.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02271))_

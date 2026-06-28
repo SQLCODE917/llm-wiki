@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-apport-2e33ceca@b00a90dc3d513ad51def6521ce1640ec
+projection_coverage: section-sword-world-rpg-complete-edition-section-apport-2e33ceca@e2aa2e629b95b3e6c1d14a8d2182c6b2
 ---
 
 # **[ Apport ]**
@@ -24,14 +24,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: such as _a sword_ or _a goblin_ cannot be detected (it's not possible if it's _my favorite sword_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01876))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01876))_
+
+> such as _a sword_ or _a goblin_ cannot be detected (it's not possible if it's _my favorite sword_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01879))_
 
 > Base Mental Power Cost=25 Distance=Infinite Area=Caster's property Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01879))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01880))_
 
 > Effect=Teleports the caster's possessions into the palm of their hand
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01880))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01881))_
 
 > Type=Target score Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01881))_

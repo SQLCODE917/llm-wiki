@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-senior-soldier-b2524de4@a2d0ad33bef9f4d10ca9dd119d0cf466
+projection_coverage: section-sword-world-rpg-complete-edition-section-senior-soldier-b2524de4@9385f96cd6d81af452472ffa14bba6b6
 ---
 
 # **Senior Soldier**
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06668))_
+
 > Monster Level=3 Rarity=5 Agility=13 Movement Speed=13 Number=One to several
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06668))_

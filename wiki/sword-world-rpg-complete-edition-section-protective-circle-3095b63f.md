@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-protective-circle-3095b63f@a7a4ebe0e9bb9fad629962b8ea2dfe4f
+projection_coverage: section-sword-world-rpg-complete-edition-section-protective-circle-3095b63f@2af86a38093fb06a8ed7399897391dbf
 ---
 
 # **[ Protective Circle ]**
@@ -22,14 +22,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02931))_
+
 > Base Mental Power Cost=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02931))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02932))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02932))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02933))_
 
 > Area=A space within a 5 meter radius from the caster Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02933))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02934))_
 
 > Effect=Protects those within range from abnormally high or low temperatures
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02934))_

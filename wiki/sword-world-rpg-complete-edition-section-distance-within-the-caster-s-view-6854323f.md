@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-distance-within-the-caster-s-view-6854323f@43ef8d5d914753b3ca47305e7725d785
+projection_coverage: section-sword-world-rpg-complete-edition-section-distance-within-the-caster-s-view-6854323f@f8c6b4f0d56e653d3db13ac095ae79fe
 ---
 
 # Distance=Within the caster's view
@@ -27,11 +27,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02036))_
+
 > Area=One person or object up to 1 cubic meter in volume
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02036))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02037))_
 
 > Duration=Until focus ends
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02037))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02038))_
 
 > Effect=Move the target without touching it Type=Focus Expansion=Final score, target volume Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02038))_

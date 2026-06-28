@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-armor-modifiers-3f4fb532@e01145d268593d24dfce96a724d0be52
+projection_coverage: section-sword-world-rpg-complete-edition-section-armor-modifiers-3f4fb532@f815a596a8a8a950a26e422641961d91
 ---
 
 # **Armor Modifiers**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-armor-modi
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_
 
 | Type | Attack Power Mod. | Strike Power Mod. | Critical Target |
 | --- | --- | --- | --- |
@@ -96,10 +100,13 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_
 
-> Context: Throwing weapons can be thrown _every_ round if they're kept ready in a place that's _easy to reach_ (such as on a belt, etc.). But if _not_ , they’ll take _one_ round to prepare and can only be thrown every _other_ round.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07729))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07729))_
+
+> Throwing weapons can be thrown _every_ round if they're kept ready in a place that's _easy to reach_ (such as on a belt, etc.). But if _not_ , they’ll take _one_ round to prepare and can only be thrown every _other_ round.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07732))_
 
 > " _Table 16-3 Armor Optional Rules_ " is a table of numerical armor modifications.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07732))_

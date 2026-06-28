@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-transfer-mental-power-aa37e3b0@ae89e2413c4856114c27bf146de82d5a
+projection_coverage: section-sword-world-rpg-complete-edition-section-transfer-mental-power-aa37e3b0@d5f3c771f84baac423e00f64b4da8ae8
 ---
 
 # **[ Transfer Mental Power ]**
@@ -24,26 +24,44 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: 2D Result 2[The undead go berserk from a state of panic. Attack points +2, evasion points -4. Even those with intelligence can no longer act rationally and ] cannot use magic, etc. 3 Same as above 4 Undead are struck by panic and are prevented from taking action. Suffer a -1 penalty to attack points, evasion points, and magic intensity. 5 Same as above, but penalty is -2 6 Same as above, but penalty is -3 7 Undead run away. They go berserk if that’s not possible. 8 Undead run away. If that's not
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02873))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02873))_
+
+> 2D Result 2[The undead go berserk from a state of panic. Attack points +2, evasion points -4. Even those with intelligence can no longer act rationally and ] cannot use magic, etc. 3 Same as above 4 Undead are struck by panic and are prevented from taking action. Suffer a -1 penalty to attack points, evasion points, and magic intensity. 5 Same as above, but penalty is -2 6 Same as above, but penalty is -3 7 Undead run away. They go berserk if that’s not possible. 8 Undead run away. If that's not
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02875))_
 
 > Base Mental Power Cost=1 Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02875))_
 
-> Context: 2D Result 2[The undead go berserk from a state of panic. Attack points +2, evasion points -4. Even those with intelligence can no longer act rationally and ] cannot use magic, etc. 3 Same as above 4 Undead are struck by panic and are prevented from taking action. Suffer a -1 penalty to attack points, evasion points, and magic intensity. 5 Same as above, but penalty is -2 6 Same as above, but penalty is -3 7 Undead run away. They go berserk if that’s not possible. 8 Undead run away. If that's not
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02873))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02873))_
+
+> 2D Result 2[The undead go berserk from a state of panic. Attack points +2, evasion points -4. Even those with intelligence can no longer act rationally and ] cannot use magic, etc. 3 Same as above 4 Undead are struck by panic and are prevented from taking action. Suffer a -1 penalty to attack points, evasion points, and magic intensity. 5 Same as above, but penalty is -2 6 Same as above, but penalty is -3 7 Undead run away. They go berserk if that’s not possible. 8 Undead run away. If that's not
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02876))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02876))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02877))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02877))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02878))_
 
 > Effect=Transfer the caster's mental power (points) to another person Type=Expansion=Effect Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02878))_
 
-> Context: This spell is a spell that transfers the caster's mental power (points) to another person as it is. For example, if the caster spends 10 points of mental power with this spell, 9 points will be added to the target's mental power, excluding the base mental power cost of 1 point. Even those who have lost their consciousness with 0 mental power can be recovered with this spell.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02879))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02879))_
+
+> This spell is a spell that transfers the caster's mental power (points) to another person as it is. For example, if the caster spends 10 points of mental power with this spell, 9 points will be added to the target's mental power, excluding the base mental power cost of 1 point. Even those who have lost their consciousness with 0 mental power can be recovered with this spell.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02880))_
 
 > Even if you are a 10th level priest, if you want to give _10_ points of mental power (points) to a target, you must spend _11_ points of mental power (points).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02880))_

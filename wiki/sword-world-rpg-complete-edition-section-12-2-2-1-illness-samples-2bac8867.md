@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-2-1-illness-samples-2bac8867@49c9c25ce8f0602ebef54703143b2fcd
+projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-2-1-illness-samples-2bac8867@682afbcf1f605261065a403b69cedfef
 ---
 
 # **12.2.2.1 Illness Samples**
@@ -28,14 +28,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> The game master may also create any other illnesses they desire.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04670))_
+### Technical atom 1
 
-> Context: Here are some examples of illnesses seen in _Sword World_ . Most of the illnesses listed here are incurable diseases that are difficult to heal and have a high mortality rate. The game master may also create any other illnesses they desire.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04670))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04670))_
+
+> The game master may also create any other illnesses they desire.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04670))_
+
+> Here are some examples of illnesses seen in _Sword World_ . Most of the illnesses listed here are incurable diseases that are difficult to heal and have a high mortality rate. The game master may also create any other illnesses they desire.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04672))_
 
 > Symptoms=Green spots appear on the body, which eventually rots away from there Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04672))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04674))_
 
 > Infection Power=Moderate
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04674))_

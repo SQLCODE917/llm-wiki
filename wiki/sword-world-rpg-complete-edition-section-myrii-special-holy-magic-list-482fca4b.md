@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-myrii-special-holy-magic-list-482fca4b@e1ec07055f5d27e1e06b7933105d22be
+projection_coverage: section-sword-world-rpg-complete-edition-section-myrii-special-holy-magic-list-482fca4b@3bc56793cf03ed4271b4ed82a9fc738f
 ---
 
 # **Myrii Special Holy Magic List**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-myrii-spec
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_
 
 | Final Score | Time to regain memories |
 | --- | --- |
@@ -38,4 +42,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_

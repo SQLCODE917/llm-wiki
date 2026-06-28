@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sandman-mind-spirit-07f8eb49@48b7edcd1de16238029128a86925842f
+projection_coverage: section-sword-world-rpg-complete-edition-section-sandman-mind-spirit-07f8eb49@dedc79abfce6169becb31fe57fdc36de
 ---
 
 # **(Sandman/Mind Spirit)**
@@ -23,14 +23,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02468))_
+
 > Base Mental Power Cost=20 Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02468))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02469))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02469))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02470))_
 
 > Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02470))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02471))_
 
 > Effect=Put an opponent into eternal sleep Type=Mind, target score Expansion=Final score, distance Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02471))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-satyr-4de226b7@51fc87c3b6744210bd4cbaaceadc955c
+projection_coverage: section-sword-world-rpg-complete-edition-section-satyr-4de226b7@0f5928418e97c847366f17f297228e2d
 ---
 
 # **[ Satyr ]**
@@ -26,5 +26,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05306))_
+
 > Monster Level=3 Rarity=14 Agility=15 Movement Speed=15 Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Horns: 9 (2)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05306))_

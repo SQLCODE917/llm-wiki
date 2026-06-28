@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-type-damage-fire-type-dbbd4fa9@2a2db93e13d0caec6e9f9c12255931a8
+projection_coverage: section-sword-world-rpg-complete-edition-section-type-damage-fire-type-dbbd4fa9@6e835a677a689bc3d36e777389a72a11
 ---
 
 # Type=Damage (Fire-type)
@@ -23,8 +23,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02321))_
+
 > Expansion=Final score, distance, targets, damage certainty
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02321))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02322))_
 
 > Resist=Reduced effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02322))_

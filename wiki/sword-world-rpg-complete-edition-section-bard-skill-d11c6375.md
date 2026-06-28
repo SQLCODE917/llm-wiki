@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bard-skill-d11c6375@59c03dffdcb008db0eb6c296399e5acc
+projection_coverage: section-sword-world-rpg-complete-edition-section-bard-skill-d11c6375@c881d25e1d27cfb7b2f8d721011497ec
 ---
 
 # **Bard Skill**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-bard-skill
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08371))_
 
 | **Bard Skill Abilities Table** |
 | --- |
@@ -40,4 +44,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08371))_

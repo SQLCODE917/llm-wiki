@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-table-5-10-requiem-6f459201@126f2330fdbd35a33150dc2cb7dec5b6
+projection_coverage: section-sword-world-rpg-complete-edition-section-table-5-10-requiem-6f459201@67bedf2ec57e504ff96dee22f6adbabd
 ---
 
 # **Table 5-10: Requiem**
@@ -20,8 +20,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))_
+
+> With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03244))_
 
 | 2D | Result |
 | --- | --- |
@@ -51,13 +56,19 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03244))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03246))_
 
 > a resistance roll again If the resist is successful, not only does this save you from having to take the action, but _also_ breaks you free from the spellsong's charm effect completely.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03246))_
 
-> Context: a resistance roll again If the resist is successful, not only does this save you from having to take the action, but _also_ breaks you free from the spellsong's charm effect completely. This spellsong has the effect of making the listener act in accordance with the rhythm. All those who fail to resist will act simultaneously as long as the song continues. Regardless of their original agility, everyone's action order will be the same. You _cannot_ intentionally delay your action. The bard can fre
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03246, source-range-870a16bc-03250))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03246, source-range-870a16bc-03250))_
+
+> a resistance roll again If the resist is successful, not only does this save you from having to take the action, but _also_ breaks you free from the spellsong's charm effect completely. This spellsong has the effect of making the listener act in accordance with the rhythm. All those who fail to resist will act simultaneously as long as the song continues. Regardless of their original agility, everyone's action order will be the same. You _cannot_ intentionally delay your action. The bard can fre
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03248))_
 
 > If you are using a flute as your instrument, you can use this spellsong, but you _cannot_ make anyone take any actions.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03248))_

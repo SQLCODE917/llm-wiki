@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-imp-1b254977@584cd337bd553aae94fd42ba765bff3b
+projection_coverage: section-sword-world-rpg-complete-edition-section-imp-1b254977@4e9dfe4636367f3814207588673477c0
 ---
 
 # **[ Imp ]**
@@ -29,17 +29,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05004))_
+
 > Monster Level=1
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05004))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05005))_
 
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05005))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05007))_
 
 > Poison (Toxicity Score 10, Paralysis, Duration=1 Hour)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05007))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05008))_
 
 > Habitat=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05008))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05009))_
 
 > Languages=Impish Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05009))_

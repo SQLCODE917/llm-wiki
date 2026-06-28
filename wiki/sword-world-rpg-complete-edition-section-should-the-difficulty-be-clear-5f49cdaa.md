@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-should-the-difficulty-be-clear-5f49cdaa@cbdca5d6030f86e55976b576c7f7b1af
+projection_coverage: section-sword-world-rpg-complete-edition-section-should-the-difficulty-be-clear-5f49cdaa@7b197aa4385539f37e2d49a893a80ef8
 ---
 
 # **Should the Difficulty Be Clear?**
@@ -31,8 +31,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: That alone will make players wary. In such cases, it is better to keep the difficulty low. A technique for creating scenarios is to keep the difficulty consistent for success rolls that are likely to be made frequently in one scenario, such as finding traps.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03810))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03810))_
+
+> That alone will make players wary. In such cases, it is better to keep the difficulty low. A technique for creating scenarios is to keep the difficulty consistent for success rolls that are likely to be made frequently in one scenario, such as finding traps.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03811))_
 
 > If the difficulty is clear, let's say it's 3, players can infer that they can only fail when the game master rolls an 11 or 12.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03811))_

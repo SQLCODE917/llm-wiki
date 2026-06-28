@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rules-for-poison-illness-and-infection-71744cad@eaf6a9d431b5dd33d972cd41c17314fb
+projection_coverage: section-sword-world-rpg-complete-edition-section-rules-for-poison-illness-and-infection-71744cad@97bb01fb8b4e03b3c84b22489c2e5416
 ---
 
 # **Rules for Poison, Illness and Infection**
@@ -36,6 +36,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_
+
 | **Table 12-1: Languages** |
 | --- |
 | Written<br>Characters |
@@ -52,4 +56,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_

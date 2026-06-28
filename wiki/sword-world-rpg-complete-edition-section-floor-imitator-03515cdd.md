@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-floor-imitator-03515cdd@49c0721515f466b9cb80226e1f86c2fc
+projection_coverage: section-sword-world-rpg-complete-edition-section-floor-imitator-03515cdd@10b631dd547a3853c82e205f0e18a6c5
 ---
 
 # **Floor Imitator**
@@ -25,14 +25,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is an imitator in the shape of a door. As soon as you touch the knob, it’ll attack. Anyone hit by a door imitator's attack on the first round will have one arm grabbed and will suffer a -4 penalty to evasion on subsequent rounds. You can only use your other arm in combat, and your movement is restricted, so you cannot use ancient magic. The method of shaking your arm free is the same as strangling (see p. 236), but you will not suffer any damage from being grabbed, and you’ll still be able 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06432))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06432))_
+
+> This is an imitator in the shape of a door. As soon as you touch the knob, it’ll attack. Anyone hit by a door imitator's attack on the first round will have one arm grabbed and will suffer a -4 penalty to evasion on subsequent rounds. You can only use your other arm in combat, and your movement is restricted, so you cannot use ancient magic. The method of shaking your arm free is the same as strangling (see p. 236), but you will not suffer any damage from being grabbed, and you’ll still be able
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06436))_
 
 > Special Abilities=Camouflage (Sense target score=16)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06436))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06439))_
 
 > A floor imitator can attack anyone standing on top of it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06439))_

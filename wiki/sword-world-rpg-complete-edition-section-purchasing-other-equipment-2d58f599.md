@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-purchasing-other-equipment-2d58f599@0749a2d6c0ed62268fa72c5cd9e171d4
+projection_coverage: section-sword-world-rpg-complete-edition-section-purchasing-other-equipment-2d58f599@3090522e18a81200e6ab5067e7853322
 ---
 
 # **Purchasing Other Equipment**
@@ -22,5 +22,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00484))_
+
 > For equipment other than weapons and armor, see Table 1-11: Equipment.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00484))_

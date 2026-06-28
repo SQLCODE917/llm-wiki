@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-servant-1e03b2ee@0d2fe70b84d1dfc5fb86ece1addd373b
+projection_coverage: section-sword-world-rpg-complete-edition-section-servant-1e03b2ee@20a5cc796591f01196c7866005c4b1bc
 ---
 
 # **Servant**
@@ -28,23 +28,42 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Attacks using weapons or damaging spells have no effect at all on wraiths, which do not have a physical body, so the only effective countermeasure is magic that has a mental effect. Although a wraith has lost all of its physical abilities, its knowledge-related abilities and rune master skills are still effective, and it can use magic. However, holy magic cannot be used (dark magic is allowed). Unlike specters, wraiths do not have the ability to _possess_ . If its mental points become 0 due to a
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06274))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06274))_
+
+> Attacks using weapons or damaging spells have no effect at all on wraiths, which do not have a physical body, so the only effective countermeasure is magic that has a mental effect. Although a wraith has lost all of its physical abilities, its knowledge-related abilities and rune master skills are still effective, and it can use magic. However, holy magic cannot be used (dark magic is allowed). Unlike specters, wraiths do not have the ability to _possess_ . If its mental points become 0 due to a
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06277))_
 
 > Monster Level=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06277))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06278))_
 
 > Rarity=14 Agility=10 Movement Speed=14 Number=One to several Frequency=Rare Intellect=Obeys commands Reaction=Violent Attack Points=Arms:14 (7)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06278))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06279))_
 
 > Strike Points=8+curse Evasion Points=13 (6) Defense Points=8 Life Points/Resistance=7/13 (6) Mental Points/Resistance=-/14 (7) Special Abilities=Curse (Resist target score=13)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06279))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06282))_
 
 > Habitat=Tombs
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06282))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06283))_
 
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06283))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06285))_
 
 > If a mummy's attack hits, in addition to physical damage, a _curse_ will befall you.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06285))_

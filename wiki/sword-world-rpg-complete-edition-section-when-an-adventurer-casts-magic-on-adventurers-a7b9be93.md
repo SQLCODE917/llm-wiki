@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-when-an-adventurer-casts-magic-on-adventurers-a7b9be93@2d9ad405c90b392de56ff4f5aeaec14c
+projection_coverage: section-sword-world-rpg-complete-edition-section-when-an-adventurer-casts-magic-on-adventurers-a7b9be93@6155b72e2ea4b2a30894519d19d2fbff
 ---
 
 # **When an Adventurer Casts Magic on Adventurers**
@@ -23,8 +23,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The following procedure is used to make a check when data created for a character casts magic on adventurers, and vice versa.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01317))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01317))_
+
+> The following procedure is used to make a check when data created for a character casts magic on adventurers, and vice versa.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01318))_
 
 > Each resisting side must then make a mental power resistance roll, using that determined final score as the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01318))_

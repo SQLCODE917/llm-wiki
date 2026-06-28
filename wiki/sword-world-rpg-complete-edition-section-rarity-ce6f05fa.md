@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-ce6f05fa@88ff708df495f496b95a40bc82717fd0
+projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-ce6f05fa@f0096e99f50623ebc72ece47fd68764b
 ---
 
 # 《 **Rarity** 》
@@ -21,8 +21,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This score is used when making a check to see if you know the illness. If an owner of the sage skill or healer skill succeeds on a success roll using _skill level + intelligence bonus_ as the baseline score and **rarity** as the target score, they can look at a sick patient and identify which illness they have. This means not only
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04651))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04651))_
+
+> This score is used when making a check to see if you know the illness. If an owner of the sage skill or healer skill succeeds on a success roll using _skill level + intelligence bonus_ as the baseline score and **rarity** as the target score, they can look at a sick patient and identify which illness they have. This means not only
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04652))_
 
 > If a disease can be identified, owners of the healer skill can provide appropriate treatment.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04652))_

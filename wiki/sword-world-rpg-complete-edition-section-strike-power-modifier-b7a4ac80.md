@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-strike-power-modifier-b7a4ac80@9f686112ba0140d59ef18639ee935481
+projection_coverage: section-sword-world-rpg-complete-edition-section-strike-power-modifier-b7a4ac80@c32676b2a6935520a810d8d80eec8011
 ---
 
 # **Strike Power Modifier**
@@ -21,8 +21,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: **Attack power modifier** indicates the modifier added to an adventurer's attack power when using that weapon. Weapons with higher numbers are more likely to hit an opponent, while weapons with smaller numbers are less likely to hit.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07709))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07709))_
+
+> **Attack power modifier** indicates the modifier added to an adventurer's attack power when using that weapon. Weapons with higher numbers are more likely to hit an opponent, while weapons with smaller numbers are less likely to hit.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07711))_
 
 > In other words, even if the required strength is the _same_ , one can say a weapon with a _higher_ strike power modifier will deal _greater_ damage to an opponent.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07711))_

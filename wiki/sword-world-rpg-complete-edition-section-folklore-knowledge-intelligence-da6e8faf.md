@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-folklore-knowledge-intelligence-da6e8faf@67d93f96d7fb147264a8a44204f1add4
+projection_coverage: section-sword-world-rpg-complete-edition-section-folklore-knowledge-intelligence-da6e8faf@07844f7776c630ed5c088e4d51ab1581
 ---
 
 # **[** ⑤ **Folklore Knowledge [Intelligence] ]**
@@ -20,5 +20,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03500))_
+
 > By the nature of their business, a bard is familiar with myths and folklore passed down in various regions, as well as ancient poetry. This is because telling these stories is an important part of their job. Also, some of these legends include things that can serve as clues for your adventures. For example, a saga that tells of a battle between a monster and a hero may contain information about the monster's weakness. Legends about the ancient kingdom can sometimes lead adventurers to ancient ruins.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03500))_

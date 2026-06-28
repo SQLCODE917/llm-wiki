@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-polymorph-10302789@424825ccc2599b8d6b7cc41fe853ef47
+projection_coverage: section-sword-world-rpg-complete-edition-section-polymorph-10302789@4443df75496414694f5b2075b428d6c3
 ---
 
 # **[ Polymorph ]**
@@ -28,17 +28,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02081))_
+
 > Base Mental Power Cost=35
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02081))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02082))_
 
 > Distance=Touch Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02082))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02083))_
 
 > Duration=Permanent (caster's option) Effect=Change the target into another creature
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02083))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02084))_
 
 > Type=Target score Expansion=Final score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02084))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02085))_
 
 > Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02085))_

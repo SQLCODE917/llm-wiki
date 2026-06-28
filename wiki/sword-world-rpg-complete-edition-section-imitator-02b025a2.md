@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-imitator-02b025a2@9954c4f8d910e015c1ea691191c21004
+projection_coverage: section-sword-world-rpg-complete-edition-section-imitator-02b025a2@b4de267335886bcaf499e7445aeaca77
 ---
 
 # **[ Imitator ]**
@@ -39,5 +39,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06418))_
+
 > To avoid being surprised, a character must make a success roll against target score 16 using _ranger skill level + intelligence bonus_ as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06418))_

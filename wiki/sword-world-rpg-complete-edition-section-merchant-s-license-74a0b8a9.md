@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-merchant-s-license-74a0b8a9@629dd4a29a858d7887ec25acd543b4a6
+projection_coverage: section-sword-world-rpg-complete-edition-section-merchant-s-license-74a0b8a9@d69916b625adc7dd307b6507b4a10604
 ---
 
 # **Merchant's License**
@@ -24,5 +24,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08239))_
+
 > Of course, a Merchant's License issued in one country isn't valid everywhere, but if you wish to trade in another country, having a license typically means you can bypass strict
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08239))_

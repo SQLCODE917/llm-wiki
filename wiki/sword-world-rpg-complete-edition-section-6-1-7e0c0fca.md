@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-6-1-7e0c0fca@9836e9bbfe8853a0ad4ab585269285f3
+projection_coverage: section-sword-world-rpg-complete-edition-section-6-1-7e0c0fca@7eca9cc759c0a10ab2ac7c81a3ffb5f5
 ---
 
 # **6.1**
@@ -22,5 +22,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03289))_
+
 > If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03289))_

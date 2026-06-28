@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-usage-9e20aab2@8f259362fbea9c2e6abf72ebb6f99906
+projection_coverage: section-sword-world-rpg-complete-edition-section-usage-9e20aab2@004bfab17b9b353ed7b0b7fdaa58b72b
 ---
 
 # 《 **Usage** 》
@@ -39,11 +39,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> This type of poison only takes effect if you lose 1 or more
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04530))_
+### Technical atom 1
 
-> Context: _Inhaled_ poisons are in gas or powder form and take effect when inhaled through the respiratory tract. This is also often used as a trap, but another method is to store it in a breakable bottle and use it by slamming it into your opponent. In rare cases, some creatures use poison gas as a weapon.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04532))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04530))_
+
+> This type of poison only takes effect if you lose 1 or more
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04532))_
+
+> _Inhaled_ poisons are in gas or powder form and take effect when inhaled through the respiratory tract. This is also often used as a trap, but another method is to store it in a breakable bottle and use it by slamming it into your opponent. In rare cases, some creatures use poison gas as a weapon.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04533))_
 
 > If you’re trapped in a room filled with poison gas, you must make a resistance roll every round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04533))_

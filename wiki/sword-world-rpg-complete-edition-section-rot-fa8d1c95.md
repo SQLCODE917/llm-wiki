@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rot-fa8d1c95@7fb5992fbe5c535c4597f7a1cb09cf75
+projection_coverage: section-sword-world-rpg-complete-edition-section-rot-fa8d1c95@2808b4e772afedc7473d1475d4f04a27
 ---
 
 # **[ Rot ]**
@@ -32,17 +32,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell hypnotizes the opponent, rendering them unable to actively think. The caster can control the hypnotized subject at will. However, this _cannot_ be used to make them do intense movements such as combat, or casting magic. It can only be as much as making them walk slowly in the direction you want or bring you something in their hands. You also cannot give complex commands that require the person to judge the situation and have them carry them out. For example, if you were to command som
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04065))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04065))_
+
+> This spell hypnotizes the opponent, rendering them unable to actively think. The caster can control the hypnotized subject at will. However, this _cannot_ be used to make them do intense movements such as combat, or casting magic. It can only be as much as making them walk slowly in the direction you want or bring you something in their hands. You also cannot give complex commands that require the person to judge the situation and have them carry them out. For example, if you were to command som
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04068))_
 
 > Base Mental Power Cost=24 Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04068))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04069))_
 
 > Area=One object Duration=30 minutes
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04069))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04070))_
 
 > Effect=Decays the target Type=Target score, Non-removable Counters (Overpowers): _Preservation_ Countered (Overpowered) By: _Preservation_ Expansion=Final score, time reduction (see description)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04070))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04071))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04071))_

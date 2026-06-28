@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-6-2-c23a3f7f@7f852787508f7b4bde2a241273679d0d
+projection_coverage: section-sword-world-rpg-complete-edition-section-6-2-c23a3f7f@202d524d604c40146b511ef601763676
 ---
 
 # **6.2**
@@ -32,17 +32,29 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Some abilities say _not retriable_ . Once you fail such an ability, you _cannot_ attempt it again on the same target. For example, the thief skill's _lockpicking_ ability cannot be retried. If a thief
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03290))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03290))_
+
+> Some abilities say _not retriable_ . Once you fail such an ability, you _cannot_ attempt it again on the same target. For example, the thief skill's _lockpicking_ ability cannot be retried. If a thief
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03293))_
 
 > It is true that the thief skill includes the abilities necessary for theft, such as pickpocketing and lockpicking, but if anything, you can say they're specialized craftsmen who are familiar with the techniques needed behind the scenes of society.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03293))_
 
-> Context: ① Tumble ⑩ Climb ② Lockpicking ⑪ Special Combat ③ Acrobatics ⑫ Long Jump/ High Jump ④ Mnemonics ⑬ Follow ⑤ Listen ⑭ Disguise ⑥ Stealthy Step ⑮ Treasure Appraisal ⑦ Pickpocket ⑯ Find/Sense Trap ⑧ Hide ⑰ Remove/Set Trap ⑨ Search
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03295))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03295))_
+
+> ① Tumble ⑩ Climb ② Lockpicking ⑪ Special Combat ③ Acrobatics ⑫ Long Jump/ High Jump ④ Mnemonics ⑬ Follow ⑤ Listen ⑭ Disguise ⑥ Stealthy Step ⑮ Treasure Appraisal ⑦ Pickpocket ⑯ Find/Sense Trap ⑧ Hide ⑰ Remove/Set Trap ⑨ Search
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03296))_
 
 > Even those who have not joined a guild can directly learn the thief skill from those who have a higher thief skill level than themselves, but if the guild finds out that such _outsider_ thieves (including those who have not paid the prescribed amount) used this skill to do _business_ , they'll send an assassin.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03296))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_
 
 | Type | Attack Power Mod. | Strike Power Mod. | Critical Target |
 | --- | --- | --- | --- |
@@ -124,4 +136,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03296))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_

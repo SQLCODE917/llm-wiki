@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-leprechaun-57d4a4ad@03ed4f35bd1850a936f8deea12aeece3
+projection_coverage: section-sword-world-rpg-complete-edition-section-leprechaun-57d4a4ad@0b2f8b0c4469113645bb4443da61061d
 ---
 
 # **[ Leprechaun ]**
@@ -28,17 +28,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05193))_
+
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05193))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05194))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05194))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05195))_
 
 > Agility=18 Movement Speed=16/6 (air) Number=One Frequency=Rare Intellect=Human Reaction=Violent Attack Points=Fangs: 11 (4) Strike Points=7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05195))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05196))_
 
 > Evasion Points=14 (7) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6) Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6, leprechaun only)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05196))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
 
 > In addition to normal movement, they can also perform teleportation.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_

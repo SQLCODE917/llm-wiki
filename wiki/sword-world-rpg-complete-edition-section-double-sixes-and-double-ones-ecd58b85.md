@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-double-sixes-and-double-ones-ecd58b85@dcca8d87473cf783f119bae9208b8271
+projection_coverage: section-sword-world-rpg-complete-edition-section-double-sixes-and-double-ones-ecd58b85@c896a87fefe57de24bc4a0d4f96e35e5
 ---
 
 # **Double Sixes and Double Ones**
@@ -27,14 +27,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If a roll comes up _double sixes_ or _double ones_ during combat between characters, the situation is resolved as follows:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01046))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01046))_
+
+> If a roll comes up _double sixes_ or _double ones_ during combat between characters, the situation is resolved as follows:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01047))_
 
 > The defender doesn’t even have to roll the dice.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01047))_
 
-> Context: If the defender's roll is _double sixes_ , the attack will _always_ fail. It doesn’t matter even if the attacker rolls double sixes.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01050))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01050))_
+
+> If the defender's roll is _double sixes_ , the attack will _always_ fail. It doesn’t matter even if the attacker rolls double sixes.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01051))_
 
 > Please refer to Table 4-4: Attack Checks.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01051))_

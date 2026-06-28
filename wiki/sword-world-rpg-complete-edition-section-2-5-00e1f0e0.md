@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-00e1f0e0@f2d5d855e9f4e4d449ad1cca6ab16f0c
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-00e1f0e0@fa2ccf44c3b2cc3d9eb675e1df24802b
 ---
 
 # **2.5**
@@ -42,14 +42,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: You tell your companions so. But one of your companions asks you with a difficult look on his face:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00615))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00615))_
+
+> You tell your companions so. But one of your companions asks you with a difficult look on his face:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00616))_
 
 > You (the player) roll the dice. The roll is _8_ . 4+8= _12_ , so it's a success, although just barely.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00616))_
 
-> Context: Some games treat extreme stakes during an action check as a _definitive_ success or failure, and _Sword World RPG_ may do so as well. However, if such a process is _not_ specified, it is _not_ treated as a definitive success/failure. Do be careful. Can you answer this question? Can you answer the question from your character's point of view? _I landed the success roll_ is not an answer. That's an answer from the _player's_ perspective, not the character's.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00619, source-range-870a16bc-00624))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00619, source-range-870a16bc-00624))_
+
+> Some games treat extreme stakes during an action check as a _definitive_ success or failure, and _Sword World RPG_ may do so as well. However, if such a process is _not_ specified, it is _not_ treated as a definitive success/failure. Do be careful. Can you answer this question? Can you answer the question from your character's point of view? _I landed the success roll_ is not an answer. That's an answer from the _player's_ perspective, not the character's.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00622))_
 
 > Even if a bonus or penalty is applied, the roll is still an automatic success if the roll comes up _double sixes_ , and an automatic failure if the roll if it’s _double ones_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00622))_

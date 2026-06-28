@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-86b50a6f@9ac9994b0937e4af172de916865a2df1
+projection_coverage: section-sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-86b50a6f@9201565af5f57d65473df3644d91d3f3
 ---
 
 # **What You’ll Need to Play Sword World RPG**
@@ -29,11 +29,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> When playing _Sword World RPG_ , you will have to write and rewrite many things during the game.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00102))_
+### Technical atom 1
 
-> Context: You will also need Character Sheets. A Character Sheet is used to keep track of a character who acts in a fictional world (Alecrast in the case of _Sword World RPG_ ) as the player's alter ego. These are needed per the number of people. Please copy and use the sheets included in this book.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00103))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00102))_
+
+> When playing _Sword World RPG_ , you will have to write and rewrite many things during the game.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00103))_
+
+> You will also need Character Sheets. A Character Sheet is used to keep track of a character who acts in a fictional world (Alecrast in the case of _Sword World RPG_ ) as the player's alter ego. These are needed per the number of people. Please copy and use the sheets included in this book.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00105))_
 
 > When you _roll 1D_ , roll one die and use the result that comes up.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00105))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-12-1-4210a9f8@68e57763dd0d2db8243d448887767291
+projection_coverage: section-sword-world-rpg-complete-edition-section-12-1-4210a9f8@ee2aaaf29970c3e17beac8f931d36875
 ---
 
 # **12.1**
@@ -27,5 +27,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04409))_
+
 > If you have a written language, you can not only have conversations with it, but also read it, but with a language that _only_ has spoken words, you _cannot_ read it, and can _only_ have conversations with it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04409))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-11-3-dragon-roar-magic-10c57eed@d76d335e762b6f6eab5d8f7e214800d9
+projection_coverage: section-sword-world-rpg-complete-edition-section-11-3-dragon-roar-magic-10c57eed@fc632cedbb037229fa418e1fc692f4c1
 ---
 
 # 11.3 Dragon Roar Magic
@@ -139,80 +139,143 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> If your consciousness is clear, you can receive the effects of a spell _just by remembering it in your mind_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04182))_
+### Technical atom 1
 
-> Context: Here is a list of dragon roar magic that dragon priests can use. Among the types of spells, there is one called **summon** . For this, please follow the _summon_ rules below. Summoning takes place across space. Therefore, it's possible to instantly summon creatures no matter where they are. However, the closer the target creature is, the easier it will be to summon it. When using the _Summon_ table, the game master can apply any modifiers as desired. If you can basically infer that they'll be in
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04198, source-range-870a16bc-04202))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04182))_
+
+> If your consciousness is clear, you can receive the effects of a spell _just by remembering it in your mind_ .
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04198, source-range-870a16bc-04202))_
+
+> Here is a list of dragon roar magic that dragon priests can use. Among the types of spells, there is one called **summon** . For this, please follow the _summon_ rules below. Summoning takes place across space. Therefore, it's possible to instantly summon creatures no matter where they are. However, the closer the target creature is, the easier it will be to summon it. When using the _Summon_ table, the game master can apply any modifiers as desired. If you can basically infer that they'll be in
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04201))_
 
 > When using these spells, the caster must determine the final score of the spell.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04201))_
 
-> Context: Spells of this type are spells that summon and employ the race specified by each spell. When using these spells, the caster must determine the final score of the spell. Then, compare this final score with the mental resistance score of the creature you're trying to summon. The result will determine when it will be summoned (Table 11-1: Summon). All summons are _non-removable_ magic. Therefore, _Dispel Magic_ has no effect. However, by using Pharis's special holy magic _Banish_ , it's possible to
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04201, source-range-870a16bc-04204))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04201, source-range-870a16bc-04204))_
+
+> Spells of this type are spells that summon and employ the race specified by each spell. When using these spells, the caster must determine the final score of the spell. Then, compare this final score with the mental resistance score of the creature you're trying to summon. The result will determine when it will be summoned (Table 11-1: Summon). All summons are _non-removable_ magic. Therefore, _Dispel Magic_ has no effect. However, by using Pharis's special holy magic _Banish_ , it's possible to
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04202))_
 
 > When using the _Summon_ table, the game master can apply any modifiers as desired.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04202))_
 
-> Context: All summons are _non-removable_ magic. Therefore, _Dispel Magic_ has no effect. However, by using Pharis's special holy magic _Banish_ , it's possible to drive the summoned creatures back to where they came from.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04204))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04204))_
+
+> All summons are _non-removable_ magic. Therefore, _Dispel Magic_ has no effect. However, by using Pharis's special holy magic _Banish_ , it's possible to drive the summoned creatures back to where they came from.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04207))_
 
 > Base Mental Power Cost=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04207))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04208))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04208))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04209))_
 
 > Area=Caster Duration=1 day Effect=Digest everything that can fit in the stomach and use it as nourishment
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04209))_
 
-> Context: Area=Caster Duration=1 day Effect=Digest everything that can fit in the stomach and use it as nourishment
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04209))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04209))_
+
+> Area=Caster Duration=1 day Effect=Digest everything that can fit in the stomach and use it as nourishment
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04210))_
 
 > Type=Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04210))_
 
-> Context: Area=Caster Duration=1 day Effect=Digest everything that can fit in the stomach and use it as nourishment
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04209))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04209))_
+
+> Area=Caster Duration=1 day Effect=Digest everything that can fit in the stomach and use it as nourishment
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04212))_
 
 > The caster of this spell will be able to digest anything that enters their stomach and use it as nourishment. For example, whether it's a pebble or mud, once it enters the stomach, it gives the same feeling of fullness as when eating the same amount of average food, and at the same time provides energy for life activities. It takes effect on anything that enters the stomach within the effect period, and your stomach will not feel upset even after the effect period has expired. Also, even if you put poison that belongs to _dose_ into your stomach during the effect period of this spell, the poison's effect will not appear. However, this spell _cannot_ protect you from _other_ types of poison.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04212))_
 
-> Context: The caster of this spell will be able to digest anything that enters their stomach and use it as nourishment. For example, whether it's a pebble or mud, once it enters the stomach, it gives the same feeling of fullness as when eating the same amount of average food, and at the same time provides energy for life activities. It takes effect on anything that enters the stomach within the effect period, and your stomach will not feel upset even after the effect period has expired. Also, even if you 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04212))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04212))_
+
+> The caster of this spell will be able to digest anything that enters their stomach and use it as nourishment. For example, whether it's a pebble or mud, once it enters the stomach, it gives the same feeling of fullness as when eating the same amount of average food, and at the same time provides energy for life activities. It takes effect on anything that enters the stomach within the effect period, and your stomach will not feel upset even after the effect period has expired. Also, even if you
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04214))_
 
 > Base Mental Power Cost=3 Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04214))_
 
-> Context: The caster of this spell will be able to digest anything that enters their stomach and use it as nourishment. For example, whether it's a pebble or mud, once it enters the stomach, it gives the same feeling of fullness as when eating the same amount of average food, and at the same time provides energy for life activities. It takes effect on anything that enters the stomach within the effect period, and your stomach will not feel upset even after the effect period has expired. Also, even if you 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04212))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04212))_
+
+> The caster of this spell will be able to digest anything that enters their stomach and use it as nourishment. For example, whether it's a pebble or mud, once it enters the stomach, it gives the same feeling of fullness as when eating the same amount of average food, and at the same time provides energy for life activities. It takes effect on anything that enters the stomach within the effect period, and your stomach will not feel upset even after the effect period has expired. Also, even if you
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04215))_
 
 > Area=Caster Duration=1 hour Effect=Enables communication with reptiles Type=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04215))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04216))_
 
 > Expansion=Duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04216))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04217))_
 
 > If the opponent's intelligence is high enough, you can negotiate, but if the opponent's intelligence is not sufficient, you can only know about the opponent's emotions and degree of hunger.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04217))_
 
-> Context: You will be able to communicate with reptiles such as snakes and lizards, as well as lizardmen. This spell _cannot_ give any binding commands to the opponent. If the opponent's intelligence is high enough, you can negotiate, but if the opponent's intelligence is not sufficient, you can only know about the opponent's emotions and degree of hunger. However, the risk of being attacked by the opponent is reduced. Your opponent will no longer attack you unless they're enraged or extremely hungry.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04217))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04217))_
+
+> You will be able to communicate with reptiles such as snakes and lizards, as well as lizardmen. This spell _cannot_ give any binding commands to the opponent. If the opponent's intelligence is high enough, you can negotiate, but if the opponent's intelligence is not sufficient, you can only know about the opponent's emotions and degree of hunger. However, the risk of being attacked by the opponent is reduced. Your opponent will no longer attack you unless they're enraged or extremely hungry.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04220))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04220))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04221))_
 
 > Area=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04221))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04222))_
 
 > Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04222))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04223))_
 
 > Effect=Wrap your entire body in scales, increasing defense power by +5 Type=Target score Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04223))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04225))_
 
 > **Table 11-1: Summon**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04225))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -246,229 +309,435 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04225))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04232))_
 
 > Base Mental Power Cost=8 Distance=Caster Area=Caster Duration=18 rounds Effect=Nullifies all types of poison Type=Expansion=Duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04232))_
+
+### Technical atom 20
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04233))_
 
 > Base Mental Power Cost=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04233))_
+
+### Technical atom 21
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04234))_
 
 > Distance=Infinite Area=One reptile Duration=18 rounds Effect=Summon one reptile Type=Summon, ritual, non-removable Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04234))_
+
+### Technical atom 22
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04235))_
 
 > However, the effect of poison received _before_ the spell is cast will merely stop, and if the duration of the poison's effect is _longer_ than the duration of the spell, it will begin to take effect _again_ as soon as the spell's duration has elapsed.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04235))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04236))_
 
 > When you chant this spell, you can summon one reptile, such as a snake or lizard.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04236))_
 
-> Context: When you chant this spell, you can summon one reptile, such as a snake or lizard. The caster must specify the type of reptile to be summoned.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04236))_
+### Technical atom 24
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04236))_
+
+> When you chant this spell, you can summon one reptile, such as a snake or lizard. The caster must specify the type of reptile to be summoned.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04238))_
 
 > Base Mental Power Cost=8
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04238))_
 
-> Context: When you chant this spell, you can summon one reptile, such as a snake or lizard. The caster must specify the type of reptile to be summoned.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04236))_
+### Technical atom 25
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04236))_
+
+> When you chant this spell, you can summon one reptile, such as a snake or lizard. The caster must specify the type of reptile to be summoned.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04239))_
 
 > Distance=Caster Area=Caster Duration=18 Rounds Effect=Claws sprout from both hands Type=Target score Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04239))_
+
+### Technical atom 26
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04242))_
 
 > The attack power is the caster's _dragon priest skill level + dexterity bonus_ , and if it hits, in addition to the damage from the claws,
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04242))_
+
+### Technical atom 27
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04243))_
 
 > Base Mental Power Cost=9
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04243))_
+
+### Technical atom 28
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04244))_
 
 > Distance=Caster Area=Caster Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04244))_
+
+### Technical atom 29
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04245))_
 
 > Effect=Enables communication with dragons Type=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04245))_
+
+### Technical atom 30
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04246))_
 
 > Expansion=Duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04246))_
+
+### Technical atom 31
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04248))_
 
 > If the opponent is intelligent enough, you can also negotiate.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04248))_
 
-> Context: Enables communication with dragon creatures such as wyverns, wyrms, and dragons (elder, lesser, ancient). If the opponent is intelligent enough, you can also negotiate. When the opponent's intelligence is low, you can only know their emotions and degree of hunger. The caster will no longer be attacked unless the opponent is enraged or extremely hungry.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04248))_
+### Technical atom 32
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04248))_
+
+> Enables communication with dragon creatures such as wyverns, wyrms, and dragons (elder, lesser, ancient). If the opponent is intelligent enough, you can also negotiate. When the opponent's intelligence is low, you can only know their emotions and degree of hunger. The caster will no longer be attacked unless the opponent is enraged or extremely hungry.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04250))_
 
 > Base Mental Power Cost=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04250))_
 
-> Context: Enables communication with dragon creatures such as wyverns, wyrms, and dragons (elder, lesser, ancient). If the opponent is intelligent enough, you can also negotiate. When the opponent's intelligence is low, you can only know their emotions and degree of hunger. The caster will no longer be attacked unless the opponent is enraged or extremely hungry.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04248))_
+### Technical atom 33
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04248))_
+
+> Enables communication with dragon creatures such as wyverns, wyrms, and dragons (elder, lesser, ancient). If the opponent is intelligent enough, you can also negotiate. When the opponent's intelligence is low, you can only know their emotions and degree of hunger. The caster will no longer be attacked unless the opponent is enraged or extremely hungry.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04251))_
 
 > Distance=Caster Area=Caster Duration=18 rounds Effect=No longer take damage from fire and heat
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04251))_
+
+### Technical atom 34
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04253))_
 
 > Expansion=Duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04253))_
+
+### Technical atom 35
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04254))_
 
 > Even if it's heat or fire caused by magic, you can protect yourself in the same way.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04254))_
+
+### Technical atom 36
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04256))_
 
 > Base Mental Power Cost=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04256))_
+
+### Technical atom 37
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04257))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04257))_
+
+### Technical atom 38
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04258))_
 
 > Area=Caster Duration=1 hour Effect=Grow wings and gain the ability to fly Type=Target score Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04258))_
 
-> Context: Wings shaped like dragon wings grow on your back. The size depends on the caster's body. Using these wings, the caster can fly freely in the sky. Movement speed during flight is 30, and during full movement, 30 km per hour. The caster's agility does _not_ change.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04259))_
+### Technical atom 39
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04259))_
+
+> Wings shaped like dragon wings grow on your back. The size depends on the caster's body. Using these wings, the caster can fly freely in the sky. Movement speed during flight is 30, and during full movement, 30 km per hour. The caster's agility does _not_ change.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04260))_
 
 > If you are wearing armor, you will not be able to grow your wings (unless you take some measure like having a hole in the back, etc.).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04260))_
+
+### Technical atom 40
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04263))_
 
 > Base Mental Power Cost=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04263))_
+
+### Technical atom 41
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04264))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04264))_
+
+### Technical atom 42
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04265))_
 
 > Area=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04265))_
+
+### Technical atom 43
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04266))_
 
 > Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04266))_
+
+### Technical atom 44
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04267))_
 
 > Effect=Protects against one type of spirit power that controls nature
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04267))_
+
+### Technical atom 45
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04269))_
 
 > Expansion=Duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04269))_
+
+### Technical atom 46
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04270))_
 
 > When casting this spell, the caster must specify one type of spirit that controls nature.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04270))_
 
-> Context: When casting this spell, the caster must specify one type of spirit that controls nature. The spirits that control nature are gnome, undine, salamander, sylph, frau, will-o-wisp, and shade. While this spell's effect lasts, the caster nullifies _all_ attacks from the specified spirit. In addition, spirit magic that uses the specified spirit as its source of power will be similarly nullified.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04270))_
+### Technical atom 47
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04270))_
+
+> When casting this spell, the caster must specify one type of spirit that controls nature. The spirits that control nature are gnome, undine, salamander, sylph, frau, will-o-wisp, and shade. While this spell's effect lasts, the caster nullifies _all_ attacks from the specified spirit. In addition, spirit magic that uses the specified spirit as its source of power will be similarly nullified.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04273))_
 
 > Base Mental Power Cost=20
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04273))_
+
+### Technical atom 48
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04274))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04274))_
+
+### Technical atom 49
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04275))_
 
 > Area=Semicircle with a 10 meter forward radius
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04275))_
+
+### Technical atom 50
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04276))_
 
 > Duration=Instant Effect=Breathe fire from the mouth Type=Damage (Fire-type) Expansion=Final score, area, damage certainty Resist=Reduced effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04276))_
+
+### Technical atom 51
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04281))_
 
 > Due to the nature of the spell, this spell _cannot_ be used in situations where you cannot make sound (even if you use it, it’ll be useless as the opponent will not be able to hear you).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04281))_
 
-> Context: A spell that raises a magical roar emitted by a dragon. Due to the nature of the spell, this spell _cannot_ be used in situations where you cannot make sound (even if you use it, it’ll be useless as the opponent will not be able to hear you). Those affected by this magical roar will tremble in fear. Those within the area of effect who fail to resist must roll 2D and receive an effect according to Table 5-5: Fears (see p. 89). If you expand the effect, those who fail to resist must roll 2D a numb
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04281))_
+### Technical atom 52
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04281))_
+
+> A spell that raises a magical roar emitted by a dragon. Due to the nature of the spell, this spell _cannot_ be used in situations where you cannot make sound (even if you use it, it’ll be useless as the opponent will not be able to hear you). Those affected by this magical roar will tremble in fear. Those within the area of effect who fail to resist must roll 2D and receive an effect according to Table 5-5: Fears (see p. 89). If you expand the effect, those who fail to resist must roll 2D a numb
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04284))_
 
 > Base Mental Power Cost=25
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04284))_
+
+### Technical atom 53
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04285))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04285))_
+
+### Technical atom 54
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04286))_
 
 > Area=Caster Duration=18 Rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04286))_
+
+### Technical atom 55
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04287))_
 
 > Effect=Transform into half-dragon, halfhuman
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04287))_
+
+### Technical atom 56
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04288))_
 
 > Type=Target score Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04288))_
+
+### Technical atom 57
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04289))_
 
 > When this spell is cast, the caster takes on a form somewhere between a dragon and a human.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04289))_
 
-> Context: When this spell is cast, the caster takes on a form somewhere between a dragon and a human. Specifically, it looks like an upright lizard with wings. As long as this spell lasts, the caster will receive the effects of _all_ spells of 3rd level or lower on the dragon roar magic list, except for _Summon Reptile_ . You _cannot_ stack more than one of these spells. Also, if you are wearing armor, you will not be able to grow your wings (unless you take some measure like having a hole in the back, et
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04289))_
+### Technical atom 58
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04289))_
+
+> When this spell is cast, the caster takes on a form somewhere between a dragon and a human. Specifically, it looks like an upright lizard with wings. As long as this spell lasts, the caster will receive the effects of _all_ spells of 3rd level or lower on the dragon roar magic list, except for _Summon Reptile_ . You _cannot_ stack more than one of these spells. Also, if you are wearing armor, you will not be able to grow your wings (unless you take some measure like having a hole in the back, et
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04290))_
 
 > Base Mental Power Cost=25 Distance=Caster Area=10 meter radius Duration=18 rounds Effect=Let out a roar of terror Type=Mind Expansion=Final score, duration, effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04290))_
+
+### Technical atom 59
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04294))_
 
 > Base Mental Power Cost=30
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04294))_
+
+### Technical atom 60
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04295))_
 
 > Distance=Infinite
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04295))_
+
+### Technical atom 61
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04296))_
 
 > Area=One wyvern Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04296))_
+
+### Technical atom 62
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04297))_
 
 > Effect=Summon one wyvern Type=Summon, ritual, non-removable
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04297))_
+
+### Technical atom 63
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04298))_
 
 > Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04298))_
+
+### Technical atom 64
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04301))_
 
 > Base Mental Power Cost=24
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04301))_
+
+### Technical atom 65
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04302))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04302))_
+
+### Technical atom 66
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04303))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04303))_
+
+### Technical atom 67
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04304))_
 
 > Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04304))_
+
+### Technical atom 68
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04305))_
 
 > Effect=Gives magical protection in exchange for life force
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04305))_
+
+### Technical atom 69
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04306))_
 
 > Type=Target score, curse
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04306))_
+
+### Technical atom 70
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04307))_
 
 > Expansion=Final score, targets, effect (see description)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04307))_
+
+### Technical atom 71
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04308))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04308))_
+
+### Technical atom 72
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04309))_
 
 > When using this spell, the caster must pour their own blood on another person.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04309))_
+
+### Technical atom 73
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04316))_
 
 > Base Mental Power Cost=35
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04316))_
+
+### Technical atom 74
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04317))_
 
 > Distance=Infinite Area=One wyrm Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04317))_
+
+### Technical atom 75
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04318))_
 
 > Effect=Summon one wyrm Type=Summon, ritual, non-removable Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04318))_
+
+### Technical atom 76
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04322))_
 
 > Base Mental Power Cost=35
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04322))_
+
+### Technical atom 77
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04323))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04323))_
+
+### Technical atom 78
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04324))_
 
 > Area=Caster Duration=18 rounds Effect=Transform into a lesser dragon Type=Target score Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04324))_
 
-> Context: While transformed into a lesser dragon, your intelligence also decreases, making you unable to act rationally or use magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04328))_
+### Technical atom 79
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04328))_
+
+> While transformed into a lesser dragon, your intelligence also decreases, making you unable to act rationally or use magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04331))_
 
 > Base Mental Power Cost=40
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04331))_
+
+### Technical atom 80
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04332))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04332))_
+
+### Technical atom 81
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04333))_
 
 > Area=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04333))_
+
+### Technical atom 82
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04334))_
 
 > Duration=10 days to 1 year (see description) Effect=By wrapping your entire body in a dragon egg and sleeping inside, you will fully recover.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04334))_
+
+### Technical atom 83
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04335))_
 
 > Type=Target score, ritual Expansion=Final score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04335))_
+
+### Technical atom 84
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04336))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04336))_

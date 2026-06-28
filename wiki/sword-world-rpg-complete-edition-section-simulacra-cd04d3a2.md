@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-simulacra-cd04d3a2@603008f3a957de45f11abe4f985c2046
+projection_coverage: section-sword-world-rpg-complete-edition-section-simulacra-cd04d3a2@2c414d1a9b1dee8e4a2a9ea39df55eb0
 ---
 
 # **[ Simulacra ]**
@@ -33,5 +33,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06356))_
+
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06356))_

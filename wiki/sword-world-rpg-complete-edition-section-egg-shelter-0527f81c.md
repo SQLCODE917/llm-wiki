@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-egg-shelter-0527f81c@6f9c1f58e1d568931becb2f270292e18
+projection_coverage: section-sword-world-rpg-complete-edition-section-egg-shelter-0527f81c@3233669fb9a777e8ca86b2073e0930ed
 ---
 
 # **[ Egg Shelter ]**
@@ -28,23 +28,42 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: While transformed into a lesser dragon, your intelligence also decreases, making you unable to act rationally or use magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04328))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04328))_
+
+> While transformed into a lesser dragon, your intelligence also decreases, making you unable to act rationally or use magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04331))_
 
 > Base Mental Power Cost=40
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04331))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04332))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04332))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04333))_
 
 > Area=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04333))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04334))_
 
 > Duration=10 days to 1 year (see description) Effect=By wrapping your entire body in a dragon egg and sleeping inside, you will fully recover.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04334))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04335))_
 
 > Type=Target score, ritual Expansion=Final score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04335))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04336))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04336))_

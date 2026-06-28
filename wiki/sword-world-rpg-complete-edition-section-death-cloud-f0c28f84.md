@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-death-cloud-f0c28f84@222e60814c09469fa722c97b42ab84ab
+projection_coverage: section-sword-world-rpg-complete-edition-section-death-cloud-f0c28f84@ee18e2910265e002b007519d81e8f3c4
 ---
 
 # **[ Death Cloud ]**
@@ -21,23 +21,44 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02207))_
+
 > Base Mental Power Cost=50
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02207))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02208))_
 
 > Distance=30 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02208))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02209))_
 
 > Area=A space with a 5 meter radius
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02209))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02210))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02210))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02211))_
 
 > Effect=Makes the air within the area of effect into a lethal substance, killing living things instantly
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02211))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02213))_
 
 > Expansion=Final score, distance, area Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02213))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02215))_
 
 > creatures within range must attempt to resist this spell, and if they fail, they will die instantly.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02215))_

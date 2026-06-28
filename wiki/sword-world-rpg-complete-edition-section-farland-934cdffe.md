@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-farland-934cdffe@6437dc01c578b592859f66655990722f
+projection_coverage: section-sword-world-rpg-complete-edition-section-farland-934cdffe@78294646511ed746670c8ed4d530bccf
 ---
 
 # **Farland**
@@ -25,8 +25,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The Unreachable Land - no one knows what kind of place Farland is. This is because Farland is a place that is "never to be defined in lore."
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08339))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08339))_
+
+> The Unreachable Land - no one knows what kind of place Farland is. This is because Farland is a place that is "never to be defined in lore."
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08341))_
 
 > Therefore, you can create your own world however you like.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08341))_

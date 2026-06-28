@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-youma-7dad44a6@b379fb9c6a114d062677b1a16f6133a3
+projection_coverage: section-sword-world-rpg-complete-edition-section-youma-7dad44a6@6e921467b04d5c709ad64abfbd189a3c
 ---
 
 # 《 **Youma** 》
@@ -22,8 +22,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Regardless of a spirit's rarity (a score related to how well-known the monster is, which will be explained later), a shaman knows all spirits. When encountering a spirit, a shaman can recognize a spirit without the need for a success roll.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04807))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04807))_
+
+> Regardless of a spirit's rarity (a score related to how well-known the monster is, which will be explained later), a shaman knows all spirits. When encountering a spirit, a shaman can recognize a spirit without the need for a success roll.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04809))_
 
 > They may also use spirit magic or dark magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04809))_

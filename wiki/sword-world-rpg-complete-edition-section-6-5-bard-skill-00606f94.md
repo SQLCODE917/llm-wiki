@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-6-5-bard-skill-00606f94@0f406b934d5b89fb5860a08811903d48
+projection_coverage: section-sword-world-rpg-complete-edition-section-6-5-bard-skill-00606f94@6cae92e09e0cbdf86d6427d32ceb30d8
 ---
 
 # 6.5 Bard Skill
@@ -62,29 +62,49 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This ability is used to know the value and utility of treasure. The _rarity_ of that treasure becomes the target score for a success roll. For standard ancient kingdom treasure-- many of which are magical items --the target score is around 15. Treat a failed treasure as being unable to _determine_ the treasure's value, _not_ as if you got the value _wrong_ . If the true value is 100 gamels, you will _not_ think that it's worth 10,000 gamels just because you failed the check. However, if the diff
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03466))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03466))_
+
+> This ability is used to know the value and utility of treasure. The _rarity_ of that treasure becomes the target score for a success roll. For standard ancient kingdom treasure-- many of which are magical items --the target score is around 15. Treat a failed treasure as being unable to _determine_ the treasure's value, _not_ as if you got the value _wrong_ . If the true value is 100 gamels, you will _not_ think that it's worth 10,000 gamels just because you failed the check. However, if the diff
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03468))_
 
 > If the research is successful, the sage may make another success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03468))_
 
-> Context: If the research is successful, the sage may make another success roll. When something they didn't know (something that failed) becomes a success, the sage has found a description of it in the literature and has access to that knowledge.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03468))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03468))_
+
+> If the research is successful, the sage may make another success roll. When something they didn't know (something that failed) becomes a success, the sage has found a description of it in the literature and has access to that knowledge.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03469))_
 
 > Alternatively, if it is something that can be used in combat, such as weapons or armor, other adventurers may purchase it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03469))_
 
-> Context: To create medicines or poisons, the game master should set a target score depending on the type, and ask for a success roll check. The target score for a poison which is able to kill people even in small amounts _and_ be tasteless and odorless, is around 20. Regardless of the result or dice roll, you will need materials and at least one week to attempt to create a medicine. You can make up to 10 doses at most.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03488))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03488))_
+
+> To create medicines or poisons, the game master should set a target score depending on the type, and ask for a success roll check. The target score for a poison which is able to kill people even in small amounts _and_ be tasteless and odorless, is around 20. Regardless of the result or dice roll, you will need materials and at least one week to attempt to create a medicine. You can make up to 10 doses at most.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03487))_
 
 > When appraising medicines or poisons, a success roll must be made using their rarity as the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03487))_
 
-> Context: When appraising medicines or poisons, a success roll must be made using their rarity as the target score. In Alecrast, the creation and use of poison is considered _shameful_ and _inhumane_ . Therefore, game masters should _not_ allow PCs to create or use poisons.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03487, source-range-870a16bc-03489))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03487, source-range-870a16bc-03489))_
+
+> When appraising medicines or poisons, a success roll must be made using their rarity as the target score. In Alecrast, the creation and use of poison is considered _shameful_ and _inhumane_ . Therefore, game masters should _not_ allow PCs to create or use poisons.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03488))_
 
 > To create medicines or poisons, the game master should set a target score depending on the type, and ask for a success roll check.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03488))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08371))_
 
 | **Bard Skill Abilities Table** |
 | --- |
@@ -110,4 +130,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03488))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08371))_

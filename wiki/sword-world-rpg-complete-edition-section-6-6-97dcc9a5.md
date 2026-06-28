@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-6-6-97dcc9a5@de2c14460cbb5687f0089540a079367d
+projection_coverage: section-sword-world-rpg-complete-edition-section-6-6-97dcc9a5@a54959ac3e169bf8cb62ef8cf69c24a6
 ---
 
 # **6.6**
@@ -31,14 +31,25 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03510))_
+
 > Falling off a horse will be treated as if you had fallen from a height of 3 meters, so you must make a damage check.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03510))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03517))_
 
 > When trying to ride a wild horse, you must first succeed on a success roll while attempting to mount it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03517))_
 
-> Context: First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb time, only double ones will result in a failure.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, source-range-870a16bc-03549))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, source-range-870a16bc-03549))_
+
+> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb time, only double ones will result in a failure.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
 
 | **Table 6-1: Climb by Skill** |
 | --- |
@@ -58,10 +69,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, 
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
 
-> Context: A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
+
+> A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03552))_
 
 | Base Target Score = 10 |
 | --- |
@@ -99,10 +114,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03552))_
 
-> Context: The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+
+> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
 
 | Feature Used | Base Target Score |
 | --- | --- |
@@ -135,7 +154,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
 
 | Skill Used | Base Target Score |
 | --- | --- |
@@ -164,4 +186,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_

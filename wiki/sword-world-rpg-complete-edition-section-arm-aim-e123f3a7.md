@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-arm-aim-e123f3a7@6837d4ababc1d28b672a348068e8a10c
+projection_coverage: section-sword-world-rpg-complete-edition-section-arm-aim-e123f3a7@fee92866b4312f1e9e27d8c4974c6da6
 ---
 
 # **Arm Aim**
@@ -22,8 +22,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07851))_
+
 > If it hits and further deals damage, your opponent may **drop what he or she**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07851))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07852))_
 
 > Your opponent must make a life force (points) resistance roll against a target score of 10 and with _damage dealt to life force_ as a penalty.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07852))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-gorilla-a3524037@ebba65ac16e60d0d9bf99d65f584d3d8
+projection_coverage: section-sword-world-rpg-complete-edition-section-gorilla-a3524037@527522ad2c995ff4b5ffad1a2a1dbc85
 ---
 
 # **Gorilla**
@@ -24,5 +24,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05889))_
+
 > Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05889))_

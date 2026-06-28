@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-counters-negates-7c9d681e@1866cb602728a0c10e9a39e2d338c746
+projection_coverage: section-sword-world-rpg-complete-edition-section-counters-negates-7c9d681e@d8fa80b84e85aabd42f6721fb81e2499
 ---
 
 # 《 **Counters (Negates)** 》
@@ -26,8 +26,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Conversely, if the dice roll double sixes when determining the _target score_ (the success score of the first magic), you _must_ roll another double sixes in order to nullify that magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01432))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01432))_
+
+> Conversely, if the dice roll double sixes when determining the _target score_ (the success score of the first magic), you _must_ roll another double sixes in order to nullify that magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01434))_
 
 > When magic is cast against other magic, their effects may completely cancel each other out.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01434))_

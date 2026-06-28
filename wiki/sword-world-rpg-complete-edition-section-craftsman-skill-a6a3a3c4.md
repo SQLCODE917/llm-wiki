@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-craftsman-skill-a6a3a3c4@0bfc9f97eebdcc5565317f15eb485165
+projection_coverage: section-sword-world-rpg-complete-edition-section-craftsman-skill-a6a3a3c4@665be4995ce30405f8a3997f16ba45c5
 ---
 
 # **Craftsman Skill**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-craftsman-
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08375))_
 
 | **Crafsman Skill Abilities Table** |
 | --- |
@@ -34,4 +38,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08375))_

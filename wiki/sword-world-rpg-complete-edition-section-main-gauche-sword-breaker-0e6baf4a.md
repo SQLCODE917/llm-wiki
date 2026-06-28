@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-main-gauche-sword-breaker-0e6baf4a@688bd7d4eeeaf97c70219214ebafc0b3
+projection_coverage: section-sword-world-rpg-complete-edition-section-main-gauche-sword-breaker-0e6baf4a@ab824a7e84a66d5a0c29ff18de33aeb8
 ---
 
 # **Main-gauche/Sword Breaker**
@@ -28,8 +28,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Pole weapons cannot reach their full power in tight spaces. The length of a pole weapon is **required strength x 15** centimeters. If you don't have a space with this radius, you _cannot_ use attack methods other than _thrust_ . It would not be a good idea to bring them into underground labyrinths, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07923))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07923))_
+
+> Pole weapons cannot reach their full power in tight spaces. The length of a pole weapon is **required strength x 15** centimeters. If you don't have a space with this radius, you _cannot_ use attack methods other than _thrust_ . It would not be a good idea to bring them into underground labyrinths, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07926))_
 
 > When you roll 2D for evasion, if you get _double sixes_ , you can _break_ your opponent's weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07926))_

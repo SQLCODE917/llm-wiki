@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bonus-damage-fcee7ff5@f6a96085efdbca08ad9162e98d58a9ac
+projection_coverage: section-sword-world-rpg-complete-edition-section-bonus-damage-fcee7ff5@976c8804e63dad225655f471002967b7
 ---
 
 # 【 **Bonus Damage** 】
@@ -30,11 +30,21 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00883))_
+
 > These characters can deal more damage to their foes, even when
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00883))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00884))_
 
 > **evasion speed** = fighter (thief) skill level + agility bonus
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00884))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 | Shield<br>Name | Evasion<br>Speed Mod. | Attack<br>Power Mod. |
 | --- | --- | --- |
@@ -52,7 +62,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00884))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 | Armor Name | Evasion Speed<br>Mod. | Defense<br>Mod. | Critical Target<br>Change | Anti-strangling<br>Prot. |
 | --- | --- | --- | --- | --- |
@@ -72,4 +85,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_

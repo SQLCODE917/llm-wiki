@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-14-4-f7303e91@6606bd2ca11f1b8dc9d91fc7664a897c
+projection_coverage: section-sword-world-rpg-complete-edition-section-14-4-f7303e91@2084081fdfd90d8ebc6d73ed9b46e358
 ---
 
 # **14.4**
@@ -41,14 +41,23 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: These magical treasures can be understood through spells such as _Sense Magic_ , etc. and their specific power can be appraised using _Analyze Enchantment_ . Even the cheapest ones cost as much as 1000 silver coins, and if they’re expensive you can’t even put a price on them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06974))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06974))_
+
+> These magical treasures can be understood through spells such as _Sense Magic_ , etc. and their specific power can be appraised using _Analyze Enchantment_ . Even the cheapest ones cost as much as 1000 silver coins, and if they’re expensive you can’t even put a price on them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06975))_
 
 > Also, even if there’s no magical power, books and scrolls may contain high ancient spellbooks or valuable information about the culture of the ancient kingdom, so don’t ever treat them lightly.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06975))_
 
-> Context: Rather than having these appear as _+1 swords_ , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and a history, as a way to enjoy the atmosphere of Alecrast. Here, as a guideline for rewards the game master should give to characters, is a list of prices of magical daggers, one-handed swords, and two-handed swords with +1 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))_
+
+> Rather than having these appear as _+1 swords_ , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and a history, as a way to enjoy the atmosphere of Alecrast. Here, as a guideline for rewards the game master should give to characters, is a list of prices of magical daggers, one-handed swords, and two-handed swords with +1 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07018))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -88,10 +97,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07018))_
 
-> Context: Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07027))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -131,10 +144,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07027))_
 
-> Context: Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07035))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -174,10 +191,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07035))_
 
-> Context: Similar to weapons, it's recommended to give each piece of magical armor its own name and lore by referencing the descriptions of magical armor that follow, which helps enhance the atmosphere of Alecrast. Here, we provide a price list of non-metallic or ring mail armor with _+1 power_ as a guideline for game masters when rewarding characters. For armor, items that exceed the _required strength_ often see decreased demand, so higher _required strength_ doesn't necessarily mean higher prices. This
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07165))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07165))_
+
+> Similar to weapons, it's recommended to give each piece of magical armor its own name and lore by referencing the descriptions of magical armor that follow, which helps enhance the atmosphere of Alecrast. Here, we provide a price list of non-metallic or ring mail armor with _+1 power_ as a guideline for game masters when rewarding characters. For armor, items that exceed the _required strength_ often see decreased demand, so higher _required strength_ doesn't necessarily mean higher prices. This
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -207,7 +228,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07165))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07176))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -239,10 +263,14 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07176))_
 
-> Context: Here is a list of prices of magical nonmetal or ring mail armor with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07183))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07183))_
+
+> Here is a list of prices of magical nonmetal or ring mail armor with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07184))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -272,10 +300,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07183))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07184))_
 
-> Context: Here is a list of prices of magical metal armor with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))_
+
+> Here is a list of prices of magical metal armor with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07190))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -307,10 +339,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07190))_
 
-> Context: Here is a list of prices of magical nonmetal or ring mail armor with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07196))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07196))_
+
+> Here is a list of prices of magical nonmetal or ring mail armor with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07197))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -340,10 +376,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07196))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07197))_
 
-> Context: Here is a list of prices of magical metal armor with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+
+> Here is a list of prices of magical metal armor with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07202))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -375,10 +415,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07202))_
 
-> Context: This is a price list for magical shields with enchantments. For shields with +2 or higher enchantment, small shields tend to be more expensive than large shields due to differences in demand. For the same reason, high-quality large shields +1/+2 are more expensive than large shields +2/+3. Shields requiring strength of 13 cannot be used by most adventurers.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))_
+
+> This is a price list for magical shields with enchantments. For shields with +2 or higher enchantment, small shields tend to be more expensive than large shields due to differences in demand. For the same reason, high-quality large shields +1/+2 are more expensive than large shields +2/+3. Shields requiring strength of 13 cannot be used by most adventurers.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07208))_
 
 | Shield | Price<br>(Gamels) |
 | --- | --- |
@@ -410,7 +454,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07208))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07549))_
 
 | 2D | Result |
 | --- | --- |
@@ -442,4 +489,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07208))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07549))_

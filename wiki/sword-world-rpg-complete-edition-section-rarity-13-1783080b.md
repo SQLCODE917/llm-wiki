@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-13-1783080b@2134f4f2c201954fe7e1b0a7977babe5
+projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-13-1783080b@d68804e55ce78b821942f1da65355043
 ---
 
 # Rarity=13
@@ -24,5 +24,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07265))_
+
 > Enchanter=Cyrus, "The Uncertain" Form=Small silver pendant Base Trade Price=80,000 gamels Powers=Wearer never falls asleep.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07265))_

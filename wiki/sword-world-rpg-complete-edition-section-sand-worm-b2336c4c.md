@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sand-worm-b2336c4c@495a6c323a5ef5055ddb9d002ebb8b9e
+projection_coverage: section-sword-world-rpg-complete-edition-section-sand-worm-b2336c4c@1ef79ea2b650d1b5fbb1de5226d6d9f5
 ---
 
 # **Sand Worm**
@@ -24,11 +24,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The rock worm is a member of the worm family that lives underground and looks like a giant earthworm, 5 meters long total. They feed on soil like normal earthworms, but they also eat rocks without hesitation. To do this, they secrete strong acidic digestive juices from their mouths. Similar to its relative, the sea worm, it has an extreme dislike of light. Therefore, if you come across one in an underground passage and are holding a torch or lantern, they will attack you. The attack is made usin
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
+
+> The rock worm is a member of the worm family that lives underground and looks like a giant earthworm, 5 meters long total. They feed on soil like normal earthworms, but they also eat rocks without hesitation. To do this, they secrete strong acidic digestive juices from their mouths. Similar to its relative, the sea worm, it has an extreme dislike of light. Therefore, if you come across one in an underground passage and are holding a torch or lantern, they will attack you. The attack is made usin
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05936))_
 
 > Monster Level=6 Rarity=15 Agility=10 Movement Speed=10/20 (underground)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05936))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05938))_
 
 > They usually burrow underground, but are always hungry, so when other creatures pass by on the ground, they leap out to attack them for food.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05938))_

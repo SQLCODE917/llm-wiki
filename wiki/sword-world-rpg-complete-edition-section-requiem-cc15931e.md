@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-requiem-cc15931e@8596f5eb529cfee47aa942716f1fb13d
+projection_coverage: section-sword-world-rpg-complete-edition-section-requiem-cc15931e@c81425989f80f5838029249763852d8e
 ---
 
 # **Requiem**
@@ -25,8 +25,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))_
+
+> With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03244))_
 
 | 2D | Result |
 | --- | --- |
@@ -56,4 +61,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03244))_

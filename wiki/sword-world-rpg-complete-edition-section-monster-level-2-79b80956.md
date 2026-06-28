@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-2-79b80956@2c84c4e0f3c3b9b67a0c81aa470b521f
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-2-79b80956@c1295ba86ef466217b98bf478402d138
 ---
 
 # Monster Level=2
@@ -24,29 +24,51 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05690))_
+
 > Rarity=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05690))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05691))_
 
 > Agility=18 Movement Speed=8/30 (air) Number=One to several Frequency=Rare Intellect=Animal
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05691))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05692))_
 
 > Reaction=Hunger-based Attack Points=Beak: 9 (2)/Talons: 10 (3) Strike Points=5/5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05692))_
 
-> Context: Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
+
+> Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05693))_
 
 > Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=16/10 (3) Mental Points/Resistance=7/9 (2) Special Abilities=Opponent’s attack is -2 Habitat=Mountains
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05693))_
 
-> Context: Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
+
+> Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05694))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05694))_
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 
 | Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
 | --- | --- | --- | --- | --- | --- |
@@ -62,7 +84,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_
 
 | Level 1-2 | It's no big deal. Just a small problem in a small village |
 | --- | --- |
@@ -88,4 +113,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-7e9b6a98@7abb43c7e7b67b4ae7a317cd92806e62
+projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-7e9b6a98@d001ab8470c7b471ade1c31fe9da523c
 ---
 
 # **[ Spirit Wall ]**
@@ -27,17 +27,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When you cast this spell, you can control the echoes of any sound that occurs within a 30 meter radius around the caster, no matter what it may be. You can make it so that only certain people can hear specific sounds, or conversely, you can make them inaudible. Any number of people can be targeted and made to hear or not hear sounds, as long as they're within the area of effect. Moreover, the targets can be chosen completely at the caster's discretion. For example, you can let your allies hear a
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02561))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02561))_
+
+> When you cast this spell, you can control the echoes of any sound that occurs within a 30 meter radius around the caster, no matter what it may be. You can make it so that only certain people can hear specific sounds, or conversely, you can make them inaudible. Any number of people can be targeted and made to hear or not hear sounds, as long as they're within the area of effect. Moreover, the targets can be chosen completely at the caster's discretion. For example, you can let your allies hear a
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02564))_
 
 > Base Mental Power Cost=30
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02564))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02565))_
 
 > Distance=30 meters Area=10 x 3 x 0.5 meters Duration=1 hour Effect=Put up a wall using spirits
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02565))_
 
-> Context: Distance=30 meters Area=10 x 3 x 0.5 meters Duration=1 hour Effect=Put up a wall using spirits
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02565))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02565))_
+
+> Distance=30 meters Area=10 x 3 x 0.5 meters Duration=1 hour Effect=Put up a wall using spirits
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02566))_
 
 > There are also walls that you cannot pass through, walls that deal damage even if you force your way
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02566))_

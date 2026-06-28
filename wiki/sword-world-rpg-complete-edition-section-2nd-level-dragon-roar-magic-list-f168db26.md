@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2nd-level-dragon-roar-magic-list-f168db26@34f1384d41592d9589813d882b0ff305
+projection_coverage: section-sword-world-rpg-complete-edition-section-2nd-level-dragon-roar-magic-list-f168db26@adea6260c797a84efbf247f98d696e6a
 ---
 
 # **2nd Level Dragon Roar Magic List**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-2nd-level-
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -48,4 +52,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

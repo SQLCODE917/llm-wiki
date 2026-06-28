@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ogre-d6a8982a@c14a7d2e84bfe24264c0a6b7a95cd2b2
+projection_coverage: section-sword-world-rpg-complete-edition-section-ogre-d6a8982a@9ac429ee207ace6032c6d2e4e450aff4
 ---
 
 # **[ Ogre ]**
@@ -29,8 +29,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Characters cannot move freely in deep snow areas such as those where the yeti lives. When fighting in these locations, your attack and evasion will suffer a -2 penalty, and your movement speed will be halved. However, the yeti itself is adapted to snow and does not suffer this penalty.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05242))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05242))_
+
+> Characters cannot move freely in deep snow areas such as those where the yeti lives. When fighting in these locations, your attack and evasion will suffer a -2 penalty, and your movement speed will be halved. However, the yeti itself is adapted to snow and does not suffer this penalty.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05245))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05245))_

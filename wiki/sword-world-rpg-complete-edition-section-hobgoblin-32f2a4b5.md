@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hobgoblin-32f2a4b5@433c36c725eb051639b00ca3cc2a14df
+projection_coverage: section-sword-world-rpg-complete-edition-section-hobgoblin-32f2a4b5@fe845dfa2e47481b7163ac217afa8448
 ---
 
 # **[ Hobgoblin ]**
@@ -26,5 +26,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05029))_
+
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05029))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dream-runner-inhaled-782fb751@c7edacbf2cceaa53dbbd35c71b347598
+projection_coverage: section-sword-world-rpg-complete-edition-section-dream-runner-inhaled-782fb751@8f848e33d1f2dfc73da837829d656960
 ---
 
 # **[ Dream Runner (Inhaled) ]**
@@ -21,11 +21,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: A fine powdered poison that requires a resistance roll each time you inhale, resulting in damage if you fail.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04593))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04593))_
+
+> A fine powdered poison that requires a resistance roll each time you inhale, resulting in damage if you fail.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04596))_
 
 > Effect=Gives happy dreams Toxicity Score=10 Rarity=10 Effect Start Time= 6 rounds later Effect Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04596))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04597))_
 
 > If you use it too many times, you may harm your health or go crazy.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04597))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-base-trade-price-b6c21526@d5690e98bf23e84e328afbc58dc55171
+projection_coverage: section-sword-world-rpg-complete-edition-section-base-trade-price-b6c21526@447b491acf5372b8b422dc11cffe8aaa
 ---
 
 # 《 **Base Trade Price** 》
@@ -27,5 +27,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06995))_
+
 > If it’s for sale, adventurers can buy it at the price shown here.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06995))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mental-points-resistance-32-26-19-9eba16a8@72f311c681b78a244099fe9df104e324
+projection_coverage: section-sword-world-rpg-complete-edition-section-mental-points-resistance-32-26-19-9eba16a8@f34ca2bdb0a9d3b35bbc104cb0e58edf
 ---
 
 # Mental Points/Resistance=32/26 (19)
@@ -25,14 +25,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06340))_
+
 > Special Abilities=10th level ancient magic (Magic intensity/magic power=22/15)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06340))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06343))_
 
 > Gaze (Resist target score=22, paralysis by fear)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06343))_
 
-> Context: Above all, the most frightening thing about the undead king is that it has great magical power. An undead king uses both ancient magic and dark magic up to at least 10th level.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06348))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06348))_
+
+> Above all, the most frightening thing about the undead king is that it has great magical power. An undead king uses both ancient magic and dark magic up to at least 10th level.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06346))_
 
 > Damage from healing magic Habitat=Places with _unholy soil_ Languages=Low ancient Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06346))_

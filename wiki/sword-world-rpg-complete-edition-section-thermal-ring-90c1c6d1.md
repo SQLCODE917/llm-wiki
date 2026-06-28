@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-thermal-ring-90c1c6d1@721dd1c744578c4a3d12b560b776cb4e
+projection_coverage: section-sword-world-rpg-complete-edition-section-thermal-ring-90c1c6d1@3e0bbaa13b47178fae9afd2500b4f3f0
 ---
 
 # **[ Thermal Ring ]**
@@ -21,20 +21,34 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: By wearing this ring and chanting a password, the user’s agility bonus becomes +2. This effect lasts for 18 rounds from the round in which you chanted the password. There’s no limit to the number of times it can be used, but if the _same_ person uses it _more than once a day_ , he or she will suffer a -1 _penalty_ to their agility bonus thereafter. This penalty is _cumulative_ . If you use it _3_ times, it becomes _-2_ , and if you use it _4_ times, it becomes _-3_ . If you don't use the ring fo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07399))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07399))_
+
+> By wearing this ring and chanting a password, the user’s agility bonus becomes +2. This effect lasts for 18 rounds from the round in which you chanted the password. There’s no limit to the number of times it can be used, but if the _same_ person uses it _more than once a day_ , he or she will suffer a -1 _penalty_ to their agility bonus thereafter. This penalty is _cumulative_ . If you use it _3_ times, it becomes _-2_ , and if you use it _4_ times, it becomes _-3_ . If you don't use the ring fo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07401))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07401))_
 
-> Context: By wearing this ring and chanting a password, the user’s agility bonus becomes +2. This effect lasts for 18 rounds from the round in which you chanted the password. There’s no limit to the number of times it can be used, but if the _same_ person uses it _more than once a day_ , he or she will suffer a -1 _penalty_ to their agility bonus thereafter. This penalty is _cumulative_ . If you use it _3_ times, it becomes _-2_ , and if you use it _4_ times, it becomes _-3_ . If you don't use the ring fo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07399))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07399))_
+
+> By wearing this ring and chanting a password, the user’s agility bonus becomes +2. This effect lasts for 18 rounds from the round in which you chanted the password. There’s no limit to the number of times it can be used, but if the _same_ person uses it _more than once a day_ , he or she will suffer a -1 _penalty_ to their agility bonus thereafter. This penalty is _cumulative_ . If you use it _3_ times, it becomes _-2_ , and if you use it _4_ times, it becomes _-3_ . If you don't use the ring fo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07402))_
 
 > Form=Bracelet with purple gems Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07402))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07403))_
 
 > Base Trade Price=32,000 gamels Powers=Keeps the wearer's body temperature constant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07403))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07404))_
 
 > The wearer of the ring can feel comfortable even when exposed to the fierce heat of a desert or the cold weather of a snowy mountain.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07404))_

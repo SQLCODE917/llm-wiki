@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-17-22711e86@4a16f41b94537ccac095409ed89fd3f6
+projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-17-22711e86@338ee550efcfb7a8413cc4cc310be876
 ---
 
 # Rarity=17
@@ -20,11 +20,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Those who use this can breathe underwater and move freely like a fish. However, on land it's merely a trident with no bonuses.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07083))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07083))_
+
+> Those who use this can breathe underwater and move freely like a fish. However, on land it's merely a trident with no bonuses.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07086))_
 
 > Enchanter=Yulandia, "The Wanderer" Form=Shortsword
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07086))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07087))_
 
 > Base Trade Price=24,000 gamels Required Strength=7 (Strike power 7) Powers=+2 to attack power and bonus damage. Turns invisible with a password
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07087))_

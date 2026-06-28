@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-6-5-a12139c2@877b84cc7aa002691c13b57f72b6c11f
+projection_coverage: section-sword-world-rpg-complete-edition-section-6-5-a12139c2@c77ba4199683c8db1afc57c50dd01f0d
 ---
 
 # **6.5**
@@ -19,6 +19,10 @@ From [[sword-world-rpg-complete-edition]].
 - Those with the bard skill are knowledgeable about ancient folklore and poetry, and make a living by performing them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03473))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
 | **Table 16-4 Maximum Ranges** |
 | --- |
@@ -74,4 +78,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-counter-spirit-20a24eb9@3a8a16568b6ccba86b58620b20a15617
+projection_coverage: section-sword-world-rpg-complete-edition-section-counter-spirit-20a24eb9@4dfa48836816198f236368ff445d7d84
 ---
 
 # **[ Counter Spirit ]**
@@ -25,23 +25,44 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04263))_
+
 > Base Mental Power Cost=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04263))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04264))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04264))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04265))_
 
 > Area=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04265))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04266))_
 
 > Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04266))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04267))_
 
 > Effect=Protects against one type of spirit power that controls nature
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04267))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04269))_
 
 > Expansion=Duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04269))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04270))_
 
 > When casting this spell, the caster must specify one type of spirit that controls nature.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04270))_

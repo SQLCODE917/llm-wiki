@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-criticals-ae852876@99952400b4605d3bc91eb54dcb19e036
+projection_coverage: section-sword-world-rpg-complete-edition-section-criticals-ae852876@f7af7730950a9869d5c879535a37f02d
 ---
 
 # 【 **Criticals** 】
@@ -31,29 +31,49 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When making a strike roll, if your 2D roll is 2 (double ones), the result is ＊＊ regardless of the key number. This means your attack hit the target, but failed to deal any damage! Make a note of the score you got on the Rating Table. Then, roll 2D again and look under the same key number on the Rating Table. Add _that_ result to the previous result. This is your base damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00939, source-range-870a16bc-00943))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00939, source-range-870a16bc-00943))_
+
+> When making a strike roll, if your 2D roll is 2 (double ones), the result is ＊＊ regardless of the key number. This means your attack hit the target, but failed to deal any damage! Make a note of the score you got on the Rating Table. Then, roll 2D again and look under the same key number on the Rating Table. Add _that_ result to the previous result. This is your base damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00942))_
 
 > When making a strike roll, if your 2D roll is equal to or greater than the critical target (usually _10_ , _9_ if using the thief skill), the strike is **critical** .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00942))_
 
-> Context: Make a note of the score you got on the Rating Table. Then, roll 2D again and look under the same key number on the Rating Table. Add _that_ result to the previous result. This is your base damage. If a critical occurs, but you roll _double ones_ on the second and subsequent damage checks, _0_ is added to the previous result (i.e., the previous result remains the _same_ ), and the base damage check will end. It can _never_ be 0 damage. Rest assured.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00943, source-range-870a16bc-00945))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00943, source-range-870a16bc-00945))_
+
+> Make a note of the score you got on the Rating Table. Then, roll 2D again and look under the same key number on the Rating Table. Add _that_ result to the previous result. This is your base damage. If a critical occurs, but you roll _double ones_ on the second and subsequent damage checks, _0_ is added to the previous result (i.e., the previous result remains the _same_ ), and the base damage check will end. It can _never_ be 0 damage. Rest assured.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00944))_
 
 > If the second 2D roll is _also_ greater than or equal to the critical target, you can make a third roll to add even _more_ damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00944))_
 
-> Context: If the second 2D roll is _also_ greater than or equal to the critical target, you can make a third roll to add even _more_ damage. This process can continue as long as you keep rolling greater than or equal to the critical target. In theory, this could deal an infinite amount of damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00944))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00944))_
+
+> If the second 2D roll is _also_ greater than or equal to the critical target, you can make a third roll to add even _more_ damage. This process can continue as long as you keep rolling greater than or equal to the critical target. In theory, this could deal an infinite amount of damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00945))_
 
 > If a critical occurs, but you roll _double ones_ on the second and subsequent damage checks, _0_ is added to the previous result (i.e., the previous result remains the _same_ ), and the base damage check will end.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00945))_
 
-> Context: That’s still greater than the critical target. The number on row 12 is **8** , so we’ll make a note of the 8 and roll a third time. The roll is _6_ . This did not reach the critical target, so the base damage check ends here. Since the number on row 6 is **4** , the base damage dealt by Ducard `Ⅱ` is 6+8+4= **18** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00947))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00947))_
+
+> That’s still greater than the critical target. The number on row 12 is **8** , so we’ll make a note of the 8 and roll a third time. The roll is _6_ . This did not reach the critical target, so the base damage check ends here. Since the number on row 6 is **4** , the base damage dealt by Ducard `Ⅱ` is 6+8+4= **18** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00948))_
 
 > If the third roll were a _2_ (double ones), the base damage would instead be 6+8+0= _14_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00948))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 | Shield<br>Name | Evasion<br>Speed Mod. | Attack<br>Power Mod. |
 | --- | --- | --- |
@@ -71,7 +91,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00948))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 | Armor Name | Evasion Speed<br>Mod. | Defense<br>Mod. | Critical Target<br>Change | Anti-strangling<br>Prot. |
 | --- | --- | --- | --- | --- |
@@ -91,4 +114,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_

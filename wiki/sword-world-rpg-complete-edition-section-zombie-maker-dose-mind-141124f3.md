@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-zombie-maker-dose-mind-141124f3@45b000b70b29cf7f964de12d21c15ca0
+projection_coverage: section-sword-world-rpg-complete-edition-section-zombie-maker-dose-mind-141124f3@62a835744201bff91cd093b0e986bec0
 ---
 
 # **[Zombie Maker (Dose/Mind)]**
@@ -32,26 +32,44 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04585))_
+
 > Effect=Paralyze the mind, making it into a robot Toxicity Score=11 Rarity=14 Effect Start Time=1 round later Effect Duration=24 hours
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04585))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04587))_
 
 > However, if you suffer a very strong physical or mental shock, you may recover from the paralysis even before the duration expires.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04587))_
 
-> Context: Around one additional hour of suggestions can transform the victim into a robot that follows commands. Victims turned into robots faithfully follow the commands of the person who gave them the suggestions, and will casually kill even their family and friends (they _cannot_ use magic). However, if you suffer a very strong physical or mental shock, you may recover from the paralysis even before the duration expires.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04587))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04587))_
+
+> Around one additional hour of suggestions can transform the victim into a robot that follows commands. Victims turned into robots faithfully follow the commands of the person who gave them the suggestions, and will casually kill even their family and friends (they _cannot_ use magic). However, if you suffer a very strong physical or mental shock, you may recover from the paralysis even before the duration expires.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04589))_
 
 > If treatment is delayed, you may remain in a coma for several days after the poison wears off.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04589))_
 
-> Context: A poison often used by assassins, it is a pitch-black viscous liquid. If you are wounded by a knife coated with this poison, you will suffer damage every 10 minutes thereafter. The victim continues to suffer damage until the poison wears off or they die. During this time, you will be in terrible pain and unable to take any action. If treatment is delayed, you may remain in a coma for several days after the poison wears off. If you succeed on a resistance roll, you will not suffer any damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04589))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04589))_
+
+> A poison often used by assassins, it is a pitch-black viscous liquid. If you are wounded by a knife coated with this poison, you will suffer damage every 10 minutes thereafter. The victim continues to suffer damage until the poison wears off or they die. During this time, you will be in terrible pain and unable to take any action. If treatment is delayed, you may remain in a coma for several days after the poison wears off. If you succeed on a resistance roll, you will not suffer any damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04590))_
 
 > **[Deathlike Sleep (Dose)]** Effect=Put into suspended animation Toxicity Score=14 Rarity=14 Effect Start Time= 1 round later Effect Duration=12 hours
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04590))_
 
-> Context: A poison often used by assassins, it is a pitch-black viscous liquid. If you are wounded by a knife coated with this poison, you will suffer damage every 10 minutes thereafter. The victim continues to suffer damage until the poison wears off or they die. During this time, you will be in terrible pain and unable to take any action. If treatment is delayed, you may remain in a coma for several days after the poison wears off. If you succeed on a resistance roll, you will not suffer any damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04589))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04589))_
+
+> A poison often used by assassins, it is a pitch-black viscous liquid. If you are wounded by a knife coated with this poison, you will suffer damage every 10 minutes thereafter. The victim continues to suffer damage until the poison wears off or they die. During this time, you will be in terrible pain and unable to take any action. If treatment is delayed, you may remain in a coma for several days after the poison wears off. If you succeed on a resistance roll, you will not suffer any damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04592))_
 
 > **[Deadly Dust (Inhaled/Damage)]** Effect=Deals strike power 10 damage plus bonus damage 1. Resist negates effect. Toxicity Score=10 Rarity=9 Effect Start Time=Immediately Effect Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04592))_

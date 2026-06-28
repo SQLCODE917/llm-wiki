@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-resist-89fac2ef@92e19cd271baebf3161a989b4fba91a0
+projection_coverage: section-sword-world-rpg-complete-edition-section-resist-89fac2ef@1935e1090af477d101d4f4306497ae95
 ---
 
 # 《 **Resist** 》
@@ -25,11 +25,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01538))_
+
 > Spells always take their effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01538))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01539))_
 
 > **Negated Effect** : If resisted, the spell does not take its effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01539))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01540))_
 
 > **Reduced Effect** : If resisted, the spell only takes an incomplete effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01540))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-quickness-ring-11a4bdc3@7451ffdc608fafa8158039fef8b130c5
+projection_coverage: section-sword-world-rpg-complete-edition-section-quickness-ring-11a4bdc3@7f794c358cf856b84d5d5d5d746e19b0
 ---
 
 # **[ Quickness Ring ]**
@@ -24,17 +24,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07394))_
+
 > Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07394))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07395))_
 
 > Enchanter=Yeren "The Unrewarded Seeker"
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07395))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07396))_
 
 > Form=White stone ring
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07396))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07397))_
 
 > Base Trade Price=9,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07397))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07398))_
 
 > Powers=+2 to the user's agility bonus
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07398))_

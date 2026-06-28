@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-e37f0351@d6f835fd5d76e2b062576537becbedf6
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-e37f0351@df92b180345fd8e78347d872c84376c8
 ---
 
 # **4.5**
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -55,7 +60,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -93,7 +101,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00924))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -131,4 +142,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00924))_

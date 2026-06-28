@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-whip-net-bola-aaa96541@9e4ac1a0be299f3bdab8747f2d40f241
+projection_coverage: section-sword-world-rpg-complete-edition-section-whip-net-bola-aaa96541@af4b412935187b2d6f5b8968aa0d9853
 ---
 
 # **Whip, Net, Bola**
@@ -25,11 +25,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: still suffer a -2 ／ -4 penalty. Also, if you use it for an attack, you’ll _lose_ the evasion bonus.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07928))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07928))_
+
+> still suffer a -2 ／ -4 penalty. Also, if you use it for an attack, you’ll _lose_ the evasion bonus.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07930))_
 
 > These weapons can perform attacks that **entangle** opponents.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07930))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07934))_
 
 > If the opponent is of a _larger_ race than him or her, the attacker must _release_ the whip or net.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07934))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-toad-10249abd@4f324f6e93c1e7a033854e9f26eb0dfd
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-toad-10249abd@c4b5a004382ab5f55c9a6720e8cbe1ca
 ---
 
 # **Giant Toad**
@@ -37,26 +37,44 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Monster Level=4 Rarity=11 Agility=8 Movement Speed=10/16 (water) Number=One Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Tongue: 10 (3) Strike Points=7 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=21/13 (6) Mental Points/Resistance=6/11 (4) Special Abilities=Wrap tongue around (strangling) and swallow whole Habitat=Wetlands such as lakes, riverbanks, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05839))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05839))_
+
+> Monster Level=4 Rarity=11 Agility=8 Movement Speed=10/16 (water) Number=One Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Tongue: 10 (3) Strike Points=7 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=21/13 (6) Mental Points/Resistance=6/11 (4) Special Abilities=Wrap tongue around (strangling) and swallow whole Habitat=Wetlands such as lakes, riverbanks, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05840))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05840))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05843))_
 
 > If someone becomes entangled in a Toad's tongue, the other party members can attempt to sever it with a bladed weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05843))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05844))_
 
 > If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05844))_
 
-> Context: Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05844))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05844))_
+
+> Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05846))_
 
 > penalty, and if you hit, the damage check is made as normal, and if the toad dies, you can escape.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05846))_
 
-> Context: Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05844))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05844))_
+
+> Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05847))_
 
 > In that case, if you deal more damage than the toad's remaining life points, that same damage (before it’s reduced by the toad's defense points) is also dealt to the victim inside its belly at the same time.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05847))_

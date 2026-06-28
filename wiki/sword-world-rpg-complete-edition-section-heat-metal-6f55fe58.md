@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-heat-metal-6f55fe58@8b3e307be99bf9bb08da26936a5585dc
+projection_coverage: section-sword-world-rpg-complete-edition-section-heat-metal-6f55fe58@1df4da61ce3e6cd3b93d51a986460bec
 ---
 
 # **[ Heat Metal ]**
@@ -26,50 +26,86 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: _Sense Metal_ is a spell that allows you to sense metals or veins containing metals in the surrounding area, as well as their type, purity, and amount. For the duration of the spell, the priest of Braki will see their surroundings in a unique color. You can determine the quality of a metal by its color, its purity by its strength, and the amount by what you can see in range. No material can block the effects of this spell.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03180))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03180))_
+
+> _Sense Metal_ is a spell that allows you to sense metals or veins containing metals in the surrounding area, as well as their type, purity, and amount. For the duration of the spell, the priest of Braki will see their surroundings in a unique color. You can determine the quality of a metal by its color, its purity by its strength, and the amount by what you can see in range. No material can block the effects of this spell.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03182))_
 
 > **(Spell Level=5)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03182))_
 
-> Context: _Sense Metal_ is a spell that allows you to sense metals or veins containing metals in the surrounding area, as well as their type, purity, and amount. For the duration of the spell, the priest of Braki will see their surroundings in a unique color. You can determine the quality of a metal by its color, its purity by its strength, and the amount by what you can see in range. No material can block the effects of this spell.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03180))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03180))_
+
+> _Sense Metal_ is a spell that allows you to sense metals or veins containing metals in the surrounding area, as well as their type, purity, and amount. For the duration of the spell, the priest of Braki will see their surroundings in a unique color. You can determine the quality of a metal by its color, its purity by its strength, and the amount by what you can see in range. No material can block the effects of this spell.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03183))_
 
 > Base Mental Power Cost=25
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03183))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03184))_
 
 > Distance=30 centimeters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03184))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03185))_
 
 > Area=One piece of metal up to 10 kilograms Duration=Until focus ends
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03185))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03186))_
 
 > Effect=Makes metal red hot so it can be processed
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03186))_
 
-> Context: By casting this spell, a priest of Braki can make a mass of metal red-hot, making it soft enough to be processed. If cast on (metal) armor, etc. the wearer will suffer severe burns. If _Heat Metal_ is cast on armor worn, the wearer will suffer strike power 10 damage to their life force (points) each round. This damage can only be reduced by adventurer level or magic. Even if metal parts are layered on a foundation such as leather, the damage cannot be reduced because the foundation will quickly 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03189))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03189))_
+
+> By casting this spell, a priest of Braki can make a mass of metal red-hot, making it soft enough to be processed. If cast on (metal) armor, etc. the wearer will suffer severe burns. If _Heat Metal_ is cast on armor worn, the wearer will suffer strike power 10 damage to their life force (points) each round. This damage can only be reduced by adventurer level or magic. Even if metal parts are layered on a foundation such as leather, the damage cannot be reduced because the foundation will quickly
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03187))_
 
 > Type=Focus
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03187))_
 
-> Context: By casting this spell, a priest of Braki can make a mass of metal red-hot, making it soft enough to be processed. If cast on (metal) armor, etc. the wearer will suffer severe burns. If _Heat Metal_ is cast on armor worn, the wearer will suffer strike power 10 damage to their life force (points) each round. This damage can only be reduced by adventurer level or magic. Even if metal parts are layered on a foundation such as leather, the damage cannot be reduced because the foundation will quickly 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03189))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03189))_
+
+> By casting this spell, a priest of Braki can make a mass of metal red-hot, making it soft enough to be processed. If cast on (metal) armor, etc. the wearer will suffer severe burns. If _Heat Metal_ is cast on armor worn, the wearer will suffer strike power 10 damage to their life force (points) each round. This damage can only be reduced by adventurer level or magic. Even if metal parts are layered on a foundation such as leather, the damage cannot be reduced because the foundation will quickly
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03188))_
 
 > Expansion=Final score, distance, target's weight (See description) Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03188))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03189))_
 
 > By casting this spell, a priest of Braki can make a mass of metal red-hot, making it soft enough to be processed.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03189))_
 
-> Context: By casting this spell, a priest of Braki can make a mass of metal red-hot, making it soft enough to be processed. If cast on (metal) armor, etc. the wearer will suffer severe burns. If _Heat Metal_ is cast on armor worn, the wearer will suffer strike power 10 damage to their life force (points) each round. This damage can only be reduced by adventurer level or magic. Even if metal parts are layered on a foundation such as leather, the damage cannot be reduced because the foundation will quickly 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03189))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03189))_
+
+> By casting this spell, a priest of Braki can make a mass of metal red-hot, making it soft enough to be processed. If cast on (metal) armor, etc. the wearer will suffer severe burns. If _Heat Metal_ is cast on armor worn, the wearer will suffer strike power 10 damage to their life force (points) each round. This damage can only be reduced by adventurer level or magic. Even if metal parts are layered on a foundation such as leather, the damage cannot be reduced because the foundation will quickly
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03190))_
 
 > This heating of metal is magical, so if the caster's focus is broken, the targeted metal mass instantly loses its heat.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03190))_
 
-> Context: By casting this spell, a priest of Braki can make a mass of metal red-hot, making it soft enough to be processed. If cast on (metal) armor, etc. the wearer will suffer severe burns. If _Heat Metal_ is cast on armor worn, the wearer will suffer strike power 10 damage to their life force (points) each round. This damage can only be reduced by adventurer level or magic. Even if metal parts are layered on a foundation such as leather, the damage cannot be reduced because the foundation will quickly 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03189))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03189))_
+
+> By casting this spell, a priest of Braki can make a mass of metal red-hot, making it soft enough to be processed. If cast on (metal) armor, etc. the wearer will suffer severe burns. If _Heat Metal_ is cast on armor worn, the wearer will suffer strike power 10 damage to their life force (points) each round. This damage can only be reduced by adventurer level or magic. Even if metal parts are layered on a foundation such as leather, the damage cannot be reduced because the foundation will quickly
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03191))_
 
 > In the middle of combat, it can only be used on enemies that are _engaged_ with you, and if you suffer damage from an enemy's counterattack, your focus will be broken and the magic's effect will be lost.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03191))_

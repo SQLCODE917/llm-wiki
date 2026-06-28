@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-valkyrie-blessing-valkyrie-mind-spirit-8f479c0a@0184b03662c46921d72e2491d4c35f70
+projection_coverage: section-sword-world-rpg-complete-edition-section-valkyrie-blessing-valkyrie-mind-spirit-8f479c0a@0c2cbf79c7dbfd8ed0d05d5bc3b79ca2
 ---
 
 # **[ Valkyrie Blessing ] (Valkyrie/Mind Spirit)**
@@ -27,23 +27,44 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02659))_
+
 > Base Mental Power Cost=28
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02659))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02660))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02660))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02661))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02661))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02662))_
 
 > Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02662))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02663))_
 
 > Effect=Gives pure energy protection to the target's armor, absorbing incoming damage Type=Target score Expansion=Final score, duration, distance, targets
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02663))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02664))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02664))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02666))_
 
 > When damage is dealt to this protection, reductions due to armor or adventurer level are not taken into account.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02666))_

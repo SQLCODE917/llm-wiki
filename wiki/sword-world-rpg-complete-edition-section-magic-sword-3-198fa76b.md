@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magic-sword-3-198fa76b@c043f1a481797f2d87c126e08b96935e
+projection_coverage: section-sword-world-rpg-complete-edition-section-magic-sword-3-198fa76b@567c7e5892961c33ee42b73a18d432c9
 ---
 
 # 《 **Magic Sword (+3)** 》
@@ -20,8 +20,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Rather than having these appear as _+1 swords_ , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and a history, as a way to enjoy the atmosphere of Alecrast. Here, as a guideline for rewards the game master should give to characters, is a list of prices of magical daggers, one-handed swords, and two-handed swords with +1 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))_
+
+> Rather than having these appear as _+1 swords_ , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and a history, as a way to enjoy the atmosphere of Alecrast. Here, as a guideline for rewards the game master should give to characters, is a list of prices of magical daggers, one-handed swords, and two-handed swords with +1 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07018))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -61,10 +66,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07018))_
 
-> Context: Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07027))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -104,28 +113,48 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07027))_
 
-> Context: Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07029))_
 
 > Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07029))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07030))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07030))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07031))_
 
 > Form=A dagger, a one-handed sword, or a two-handed sword
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07031))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07032))_
 
 > Required Strength/Base Trade Price=See description
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07032))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07033))_
 
 > Powers=+3 to attack power and bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07033))_
 
-> Context: Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07035))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -165,4 +194,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07035))_

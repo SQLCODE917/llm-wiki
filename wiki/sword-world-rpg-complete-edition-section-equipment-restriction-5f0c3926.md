@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-5f0c3926@c3257bcff20e96da25fbea137765dc56
+projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-5f0c3926@b73e89a758984f2d896c19f2d9da5f29
 ---
 
 # **(Equipment restriction)**
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03333))_
+
 > A success roll must be made when the thief is hiding and someone attempts to search for them or approaches them.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03333))_

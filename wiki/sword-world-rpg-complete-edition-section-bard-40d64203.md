@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bard-40d64203@2389752708c7098441ded2b4ef4a545e
+projection_coverage: section-sword-world-rpg-complete-edition-section-bard-40d64203@d8d5b00e96e8d50d6dc55ccefe37178d
 ---
 
 # 【 **Bard** 】
@@ -27,6 +27,10 @@ From [[sword-world-rpg-complete-edition]].
 - Although they are often thought to be confined to their study rooms, many of them do go out on _adventures_ , because they believe that _the best way to learn is to see and hear firsthand_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00266))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08371))_
 
 | **Bard Skill Abilities Table** |
 | --- |
@@ -52,4 +56,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08371))_

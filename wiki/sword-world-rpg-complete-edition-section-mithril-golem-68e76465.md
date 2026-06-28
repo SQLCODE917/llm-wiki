@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mithril-golem-68e76465@87142aa11a3839e88a835c1f0f9f23d4
+projection_coverage: section-sword-world-rpg-complete-edition-section-mithril-golem-68e76465@8a84614ac7e2616a6619c2e028b3b5f0
 ---
 
 # **Mithril Golem**
@@ -26,26 +26,46 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Against an iron golem, weapons cannot deal additional critical damage. Also, damage spells such as _cold-type_ , _electric-type_ , _stone-type_ , _poison gas-type_ , and _wind cutter-type_ are completely useless. _Fire-type_ damage magic is effective, but a critical cannot occur. _Earthquake-type_ , _explosion-type_ , and _pure energy-type_ damage magic is effective, and a critical _can_ occur.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06545))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06545))_
+
+> Against an iron golem, weapons cannot deal additional critical damage. Also, damage spells such as _cold-type_ , _electric-type_ , _stone-type_ , _poison gas-type_ , and _wind cutter-type_ are completely useless. _Fire-type_ damage magic is effective, but a critical cannot occur. _Earthquake-type_ , _explosion-type_ , and _pure energy-type_ damage magic is effective, and a critical _can_ occur.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06547))_
 
 > Monster Level=13 Rarity=16 Agility=12 Movement Speed=15 Number=One Frequency=Very rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:21 (14) Strike Points=25
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06547))_
 
-> Context: Against an iron golem, weapons cannot deal additional critical damage. Also, damage spells such as _cold-type_ , _electric-type_ , _stone-type_ , _poison gas-type_ , and _wind cutter-type_ are completely useless. _Fire-type_ damage magic is effective, but a critical cannot occur. _Earthquake-type_ , _explosion-type_ , and _pure energy-type_ damage magic is effective, and a critical _can_ occur.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06545))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06545))_
+
+> Against an iron golem, weapons cannot deal additional critical damage. Also, damage spells such as _cold-type_ , _electric-type_ , _stone-type_ , _poison gas-type_ , and _wind cutter-type_ are completely useless. _Fire-type_ damage magic is effective, but a critical cannot occur. _Earthquake-type_ , _explosion-type_ , and _pure energy-type_ damage magic is effective, and a critical _can_ occur.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06548))_
 
 > Evasion Points=19 (12) Defense Points=19 Life Points/Resistance=75/31 (24)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06548))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06549))_
 
 > Mental Points/Resistance=-/21 (14) Special Abilities=Weapons cannot critical
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06549))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06551))_
 
 > Habitat=Ruins
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06551))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06552))_
 
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06552))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06554))_
 
 > Against a mithril golem, weapons cannot deal additional critical damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06554))_

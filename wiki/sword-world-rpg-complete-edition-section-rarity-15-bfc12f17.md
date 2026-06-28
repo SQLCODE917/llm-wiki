@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-15-bfc12f17@42b6031ae47a832bcedf2485ecd7e356
+projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-15-bfc12f17@706f23844f4b8ffd4d4356289d7fd1ac
 ---
 
 # Rarity=15
@@ -21,17 +21,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07137))_
+
 > Enchanter=Shera, "The One Who Lives Between"
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07137))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07138))_
 
 > Form=Broadsword with a slightly reddish blade
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07138))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07139))_
 
 > Required Strength=14 (Strike power 16) Base Trade Price=20,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07139))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07140))_
 
 > Powers=Also deals damage to mental points of whoever's body was dealt damage (no bonus)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07140))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07141))_
 
 > Also, even if the sword does hit, this effect does _not_ apply if damage is _not_ dealt to life force.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07141))_

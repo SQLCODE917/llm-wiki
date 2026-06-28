@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-12-1-rules-regarding-language-a9d8cd1a@dcecae295dc78eb4763cfe403ac1d59c
+projection_coverage: section-sword-world-rpg-complete-edition-section-12-1-rules-regarding-language-a9d8cd1a@9d147e2a3848d980a4b1136bf8d5b739
 ---
 
 # 12.1 Rules Regarding Language
@@ -113,17 +113,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04409))_
+
 > If you have a written language, you can not only have conversations with it, but also read it, but with a language that _only_ has spoken words, you _cannot_ read it, and can _only_ have conversations with it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04409))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04431))_
 
 > This is because you cannot begin to understand the great civilization of the ancient kingdom unless you know low ancient.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04431))_
 
-> Context: Adventurers can study and learn common and normal languages other than their mother tongue. The way to do this is by acquiring (and increasing) bard or sage skill levels. You can only learn to _speak_ with the bard skill. With the sage skill, you can learn both to speak _and_ to read. Adventurers who have learned both to speak and to read can _write_ meaningful sentences using that language. Of course, it's impossible to learn how to read a language that doesn't have written characters. If an ad
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04470, source-range-870a16bc-04473))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04470, source-range-870a16bc-04473))_
+
+> Adventurers can study and learn common and normal languages other than their mother tongue. The way to do this is by acquiring (and increasing) bard or sage skill levels. You can only learn to _speak_ with the bard skill. With the sage skill, you can learn both to speak _and_ to read. Adventurers who have learned both to speak and to read can _write_ meaningful sentences using that language. Of course, it's impossible to learn how to read a language that doesn't have written characters. If an ad
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04472))_
 
 > An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04472))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04474))_
 
 > The languages that adventurers can learn are shown on Table 12-1: Languages.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04474))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-kindle-e881a01e@cf7e4606a7015539145897c4a9ec4365
+projection_coverage: section-sword-world-rpg-complete-edition-section-kindle-e881a01e@83726f154e2378e20a1397be099202e4
 ---
 
 # **[ Kindle ]**
@@ -24,20 +24,36 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01636))_
+
 > Base Mental Power Cost=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01636))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01637))_
 
 > Distance=Touch Area=Flammable material a few cm in size
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01637))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01638))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01638))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01639))_
 
 > Effect=Ignites flammable materials such as pieces of wood or paper
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01639))_
 
-> Context: Effect=Ignites flammable materials such as pieces of wood or paper
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01639))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01639))_
+
+> Effect=Ignites flammable materials such as pieces of wood or paper
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01640))_
 
 > Type=Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01640))_

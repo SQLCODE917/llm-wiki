@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-many-c913f859@bc30bf254de2f4f7cb18569cb79e322e
+projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-many-c913f859@64eefdf93c6ea7e549c0aeb5262bb986
 ---
 
 # Enchanter=Many
@@ -25,8 +25,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07350))_
+
 > Form=Mage’s staff Required Strength=5 (Strike power 10) Base Trade Price=Remaining mental points x 350 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07350))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_
 
 > Powers=Can use fire-type ancient magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_

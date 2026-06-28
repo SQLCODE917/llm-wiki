@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-7-2-merchant-skill-15476b49@cd9cb73cd6e6edfa37f405572b82f345
+projection_coverage: section-sword-world-rpg-complete-edition-section-7-2-merchant-skill-15476b49@8d3df87168f7e4c5d46de92cb176cd49
 ---
 
 # 7.2 Merchant Skill
@@ -60,11 +60,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: There are many general skills. There are probably as many general skills as there are occupations, hobbies, etc. There is no way we can create rules for them one by one, etc. Therefore, we will only introduce the necessary general skills, and leave everything beyond that to each game master. If a game master deems it necessary, please make a general skill into a rule.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03607))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03607))_
+
+> There are many general skills. There are probably as many general skills as there are occupations, hobbies, etc. There is no way we can create rules for them one by one, etc. Therefore, we will only introduce the necessary general skills, and leave everything beyond that to each game master. If a game master deems it necessary, please make a general skill into a rule.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03605))_
 
 > For example, some merchants may sell arts and crafts, while others might sell fresh produce, etc. Therefore, merchants are well versed in the art of trading one type of item, and are no different from ordinary people when it
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03605))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08373))_
 
 | **Merchant Skill Abilities Table** |
 | --- |
@@ -84,4 +92,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03605))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08373))_

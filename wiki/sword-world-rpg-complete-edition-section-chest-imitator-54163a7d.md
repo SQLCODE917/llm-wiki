@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chest-imitator-54163a7d@cfbdfbf511030cdfbf507c09bee163b8
+projection_coverage: section-sword-world-rpg-complete-edition-section-chest-imitator-54163a7d@99f7507816e25eea13b8110a230727f1
 ---
 
 # **Chest Imitator**
@@ -23,14 +23,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: perform a _surprise attack_ . To avoid being surprised, a character must make a success roll against target score 16 using _ranger skill level + intelligence bonus_ as the baseline score.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06418))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06418))_
+
+> perform a _surprise attack_ . To avoid being surprised, a character must make a success roll against target score 16 using _ranger skill level + intelligence bonus_ as the baseline score.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06421))_
 
 > Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06421))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06422))_
 
 > Rarity=13 Agility=10 Movement Speed=10 Number=One Frequency=Moderate Intellect= Almost none Reaction=Violent Attack Points=Arms:10 (3) Strike Points=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06422))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06423))_
 
 > Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=8/9 (2) Mental Points/Resistance=-/10 (3) Special Abilities=Camouflage (Sense target score=16)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06423))_

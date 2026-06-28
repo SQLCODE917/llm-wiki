@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-island-of-damned-419d5724@a720cdf55a364027e7e53d77fae491ff
+projection_coverage: section-sword-world-rpg-complete-edition-section-island-of-damned-419d5724@4c93eef2a8b025af29b59577c0cdc435
 ---
 
 # **Island of Damned**
@@ -24,5 +24,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08326))_
+
 > **(Language = Native Language)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08326))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-habitat-ruins-e333d9c9@22fb622fae25dc2e000f1cb38e925f61
+projection_coverage: section-sword-world-rpg-complete-edition-section-habitat-ruins-e333d9c9@6ecbff5f164b4f9db38ee3deca825fc2
 ---
 
 # Habitat=Ruins
@@ -29,11 +29,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: A gargoyle has wings on its back and can fly. It also has a tail. Its grotesque appearance is said to be because it was modeled after the lesser daemon zalbard (described later). The size of a gargoyle is nearly 2 meters when standing upright. Unlike golems, etc. they act according to their own judgment without receiving commands. In other words, they may run away if they think they're at a disadvantage, or they may take advantageous tactics depending on the situation. Their personality is very
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06462))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06462))_
+
+> A gargoyle has wings on its back and can fly. It also has a tail. Its grotesque appearance is said to be because it was modeled after the lesser daemon zalbard (described later). The size of a gargoyle is nearly 2 meters when standing upright. Unlike golems, etc. they act according to their own judgment without receiving commands. In other words, they may run away if they think they're at a disadvantage, or they may take advantageous tactics depending on the situation. Their personality is very
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06460))_
 
 > Languages=None Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06460))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06462))_
 
 > In other words, they may run away if they think they're at a disadvantage, or they may take advantageous tactics depending on the situation.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06462))_

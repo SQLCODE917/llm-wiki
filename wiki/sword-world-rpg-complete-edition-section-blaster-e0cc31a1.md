@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-blaster-e0cc31a1@bc5dcfb95ef861860e1dab46fc5c19de
+projection_coverage: section-sword-world-rpg-complete-edition-section-blaster-e0cc31a1@acabd56e9a9fae106703c789331f88fc
 ---
 
 # 《 **Blaster** 》
@@ -21,14 +21,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07123))_
+
 > Rarity=18
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07123))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07124))_
 
 > Enchanter=Nimserias, "The Forger of Enlightenment"
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07124))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07125))_
 
 > Form=Greatsword
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07125))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07126))_
 
 > Required Strength=20 (Strike power 25) Base Trade Price=370,000 gamels Powers=+1 to attack power and bonus damage. Shockwaves
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07126))_

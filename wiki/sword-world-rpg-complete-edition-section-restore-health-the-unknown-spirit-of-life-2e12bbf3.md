@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-restore-health-the-unknown-spirit-of-life-2e12bbf3@5c9899b1299d52ed850a066531e9dc93
+projection_coverage: section-sword-world-rpg-complete-edition-section-restore-health-the-unknown-spirit-of-life-2e12bbf3@8f45706c473121fd5bfd75a83dd06794
 ---
 
 # **[ Restore Health ] (The Unknown Spirit of Life)**
@@ -25,17 +25,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell has the effect of instilling fear in the target. An opponent who suffers the effect of this spell will feel an immeasurable fear towards the caster. For those affected, please determine the specific effect according to Table 5-5: Fears.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02503))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02503))_
+
+> This spell has the effect of instilling fear in the target. An opponent who suffers the effect of this spell will feel an immeasurable fear towards the caster. For those affected, please determine the specific effect according to Table 5-5: Fears.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02506))_
 
 > Base Mental Power Cost=20
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02506))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02507))_
 
 > Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02507))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02508))_
 
 > Area=One Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02508))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02509))_
 
 > Effect=Heals the target from poison or illness Type=Expansion=Final score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02509))_

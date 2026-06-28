@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-eaee664d@5897a6eb8ae0a116590e0c15f17ee3aa
+projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-eaee664d@ae91de29199b7af9599059dea8ff8423
 ---
 
 # **(Equipment restriction)**
@@ -22,14 +22,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If the person hearing the sound _also_ has the thief skill, _they_ may make a check using _thief skill level + intelligence bonus_ (this is the _listen_ ability from the previous section). At this time, if you can hear the sound, you will be able to discern not only the presence of something sneaking around, but _also_ its general appearance (walking speed, stride length, number of people if there is more than one, etc.).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03325))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03325))_
+
+> If the person hearing the sound _also_ has the thief skill, _they_ may make a check using _thief skill level + intelligence bonus_ (this is the _listen_ ability from the previous section). At this time, if you can hear the sound, you will be able to discern not only the presence of something sneaking around, but _also_ its general appearance (walking speed, stride length, number of people if there is more than one, etc.).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03328))_
 
 > The person trying to pickpocket must make a success roll using _thief skill level + dexterity bonus_ and the person being pickpocketed must make one using _adventurer level + intelligence bonus_ as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03328))_
 
-> Context: it will definitely be exposed to the opponent.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03329))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03329))_
+
+> it will definitely be exposed to the opponent.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03330))_
 
 > The game master may add modifiers depending on the surroundings and the opponent's situation.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03330))_

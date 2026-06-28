@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-female-35f452d5@3383205df8648775fb5dda33177e56d5
+projection_coverage: section-sword-world-rpg-complete-edition-section-female-35f452d5@201cb5c4176bde3491e8efe0a7569efe
 ---
 
 # **Female**
@@ -22,5 +22,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05948))_
+
 > Fishermen never choose to hunt females, out of fear that seal numbers will decline.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05948))_

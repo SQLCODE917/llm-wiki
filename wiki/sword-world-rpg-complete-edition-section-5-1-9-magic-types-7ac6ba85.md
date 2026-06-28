@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-9-magic-types-7ac6ba85@85ff63d51d214dda387bfd7fda4bc932
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-9-magic-types-7ac6ba85@8c7749940d8099f80e5c1af5c580f7b9
 ---
 
 # 5.1.9 Magic Types
@@ -95,80 +95,134 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: In either case, the caster's magic power can be added as bonus damage to the result of the strike roll. Also, the target's adventurer level (or the monster's monster level) is subtracted from the damage. However, there’s an _exception_ if you roll _double ones_ during your strike roll. In this case, no matter how much magic power your character (monster) has, they _cannot_ deal damage to the target at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01423))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01423))_
+
+> In either case, the caster's magic power can be added as bonus damage to the result of the strike roll. Also, the target's adventurer level (or the monster's monster level) is subtracted from the damage. However, there’s an _exception_ if you roll _double ones_ during your strike roll. In this case, no matter how much magic power your character (monster) has, they _cannot_ deal damage to the target at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01421))_
 
 > If you roll 10 or greater during the strike roll, a _critical_ will occur and deal even more damage, same as in weapon combat.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01421))_
 
-> Context: A spell that deals damage to the target's life force or mental power. Spells of the damage type always have a clearly defined _strike power_ . If you manage to break through the target's resist, use the spell's strike power to determine damage by making a _strike roll_ using the Rating Table, same as if you had hit with a weapon in weapon combat. The key number is, of course, the indicated _strike power_ . If you roll 10 or greater during the strike roll, a _critical_ will occur and deal even mo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01421, source-range-870a16bc-01423))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01421, source-range-870a16bc-01423))_
+
+> A spell that deals damage to the target's life force or mental power. Spells of the damage type always have a clearly defined _strike power_ . If you manage to break through the target's resist, use the spell's strike power to determine damage by making a _strike roll_ using the Rating Table, same as if you had hit with a weapon in weapon combat. The key number is, of course, the indicated _strike power_ . If you roll 10 or greater during the strike roll, a _critical_ will occur and deal even mo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01422))_
 
 > Most magic of the **damage** type can still deal damage even if it's resisted by the target, only with a reduced effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01422))_
 
-> Context: In either case, the caster's magic power can be added as bonus damage to the result of the strike roll. Also, the target's adventurer level (or the monster's monster level) is subtracted from the damage. However, there’s an _exception_ if you roll _double ones_ during your strike roll. In this case, no matter how much magic power your character (monster) has, they _cannot_ deal damage to the target at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01423))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01423))_
+
+> In either case, the caster's magic power can be added as bonus damage to the result of the strike roll. Also, the target's adventurer level (or the monster's monster level) is subtracted from the damage. However, there’s an _exception_ if you roll _double ones_ during your strike roll. In this case, no matter how much magic power your character (monster) has, they _cannot_ deal damage to the target at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01424))_
 
 > Also, even magic of the _damage_ type may in rare cases take no effect if resisted.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01424))_
 
-> Context: Some magic can nullify the effects of other magic. For example, the ancient magic _Dispel Magic_ nullifies the effects of most magic. This _target score_ equals the final score of the first magic that was cast (in other words, the magic you're about to nullify). Therefore, when an adventurer uses magic that has a _target score_ , that player should note down that score and remember it. However, if you feel this is cumbersome, or if you forget to make a note, then when it becomes necessary (nulli
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01426, source-range-870a16bc-01430))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01426, source-range-870a16bc-01430))_
+
+> Some magic can nullify the effects of other magic. For example, the ancient magic _Dispel Magic_ nullifies the effects of most magic. This _target score_ equals the final score of the first magic that was cast (in other words, the magic you're about to nullify). Therefore, when an adventurer uses magic that has a _target score_ , that player should note down that score and remember it. However, if you feel this is cumbersome, or if you forget to make a note, then when it becomes necessary (nulli
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01428))_
 
 > When casting any magic, no matter what kind of magic it is, you must roll 2D to check whether an automatic failure (double ones) will occur or not.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01428))_
 
-> Context: When casting any magic, no matter what kind of magic it is, you must roll 2D to check whether an automatic failure (double ones) will occur or not. If you're trying to nullify magic that has a _target score_ with another spell, you must use that other spell's 2D roll to determine your final score. This final score equals _magic power + 2D roll_ (similar to a final score for other success rolls).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01428))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01428))_
+
+> When casting any magic, no matter what kind of magic it is, you must roll 2D to check whether an automatic failure (double ones) will occur or not. If you're trying to nullify magic that has a _target score_ with another spell, you must use that other spell's 2D roll to determine your final score. This final score equals _magic power + 2D roll_ (similar to a final score for other success rolls).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01430))_
 
 > However, if you feel this is cumbersome, or if you forget to make a note, then when it becomes necessary (nullifying magic has been used), you can roll 2D on the spot to determine a final score = _target score_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01430))_
 
-> Context: This _target score_ equals the final score of the first magic that was cast (in other words, the magic you're about to nullify). Therefore, when an adventurer uses magic that has a _target score_ , that player should note down that score and remember it. However, if you feel this is cumbersome, or if you forget to make a note, then when it becomes necessary (nullifying magic has been used), you can roll 2D on the spot to determine a final score = _target score_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01430))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01430))_
+
+> This _target score_ equals the final score of the first magic that was cast (in other words, the magic you're about to nullify). Therefore, when an adventurer uses magic that has a _target score_ , that player should note down that score and remember it. However, if you feel this is cumbersome, or if you forget to make a note, then when it becomes necessary (nullifying magic has been used), you can roll 2D on the spot to determine a final score = _target score_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01431))_
 
 > When you use magic that nullifies other magic, if your roll is _double sixes_ , the magic will _automatically_ be nullified, no matter what the _target score_ is.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01431))_
 
-> Context: When you use magic that nullifies other magic, if your roll is _double sixes_ , the magic will _automatically_ be nullified, no matter what the _target score_ is.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01431))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01431))_
+
+> When you use magic that nullifies other magic, if your roll is _double sixes_ , the magic will _automatically_ be nullified, no matter what the _target score_ is.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01432))_
 
 > Conversely, if the dice roll double sixes when determining the _target score_ (the success score of the first magic), you _must_ roll another double sixes in order to nullify that magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01432))_
 
-> Context: Conversely, if the dice roll double sixes when determining the _target score_ (the success score of the first magic), you _must_ roll another double sixes in order to nullify that magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01432))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01432))_
+
+> Conversely, if the dice roll double sixes when determining the _target score_ (the success score of the first magic), you _must_ roll another double sixes in order to nullify that magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01434))_
 
 > When magic is cast against other magic, their effects may completely cancel each other out.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01434))_
 
-> Context: When casting _counters (negates):_ magic to cancel the effect of certain magic, if the magic that was cast prior has a _target score_ , then according to the definition of _magic with a target score_ , the magic that's cast after _cannot_ cancel the prior magic unless its final score is greater than or equal to the determined _target score_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01437))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01437))_
+
+> When casting _counters (negates):_ magic to cancel the effect of certain magic, if the magic that was cast prior has a _target score_ , then according to the definition of _magic with a target score_ , the magic that's cast after _cannot_ cancel the prior magic unless its final score is greater than or equal to the determined _target score_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01439))_
 
 > When certain magic is cast against other magic, it can cancel the effect of the prior magic but still take its own effect afterwards.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01439))_
 
-> Context: For example, the ancient magic _Darkness_ can nullify the effects of the spirit magic _Will-O-Wisp_ and still close the surrounding area in darkness, which means _Darkness_ itself is more effective.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01440))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01440))_
+
+> For example, the ancient magic _Darkness_ can nullify the effects of the spirit magic _Will-O-Wisp_ and still close the surrounding area in darkness, which means _Darkness_ itself is more effective.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01441))_
 
 > In the case of magic that does not take effect if resisted, if the target _does_ resist it, the magic will _not_ take its effect, and the effect of the _prior_ magic will continue.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01441))_
 
-> Context: The other, is when the prior magic has a _target score_ . In this case, according to the definition of _magic with a target score_ , the magic cast after will _not_ take effect unless its final score is greater than or equal to the determined _target score_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01442))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01442))_
+
+> The other, is when the prior magic has a _target score_ . In this case, according to the definition of _magic with a target score_ , the magic cast after will _not_ take effect unless its final score is greater than or equal to the determined _target score_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01444))_
 
 > ① First, confirm the _target score (= final score)_ of the magic cast prior (if you forgot, determine it now).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01444))_
 
-> Context: ② Next, the one casting the magic must roll 2D to find their final score (by adding their magic power). Also, all magic _counters (overpowers)_ itself. Therefore, if certain magic takes effect, and you cast that same magic on the same target _multiple_ times, the effect will _not_ be cumulative.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01446, source-range-870a16bc-01451))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01446, source-range-870a16bc-01451))_
+
+> ② Next, the one casting the magic must roll 2D to find their final score (by adding their magic power). Also, all magic _counters (overpowers)_ itself. Therefore, if certain magic takes effect, and you cast that same magic on the same target _multiple_ times, the effect will _not_ be cumulative.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01449))_
 
 > ⑤ If the target _successfully resisted_ in ④, the new magic cast will _not_ take effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01449))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01471))_
 
 > While focusing, the caster cannot take the following actions:
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01471))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01480))_
 
 > If the caster wishes to voluntarily release their focus (in order to take another action), they must declare it at the _beginning_ of the round, when no one else has made their action announcements yet.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01480))_

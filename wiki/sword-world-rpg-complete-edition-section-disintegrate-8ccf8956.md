@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-disintegrate-8ccf8956@e2746aa558a5e496e2f7bc4252c1b7f6
+projection_coverage: section-sword-world-rpg-complete-edition-section-disintegrate-8ccf8956@b955ccdaaecf1601164eb0798bd43aef
 ---
 
 # **[ Disintegrate ]**
@@ -24,23 +24,44 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02170))_
+
 > Base Mental Power Cost=45
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02170))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02171))_
 
 > Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02171))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02172))_
 
 > Area=One individual or object up to 1 cubic meter in volume
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02172))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02173))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02173))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02174))_
 
 > Effect=Break the target down into the smallest unit of matter, annihilating them Type=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02174))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02175))_
 
 > Expansion=Final score, target volume Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02175))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02176))_
 
 > If it was a living thing, it can never be revived again, and cannot be revived by _Resurrection_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02176))_

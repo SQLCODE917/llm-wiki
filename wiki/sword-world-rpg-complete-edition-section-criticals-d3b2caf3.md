@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-criticals-d3b2caf3@41175fbcdb01fe3541340bb5c4748ba2
+projection_coverage: section-sword-world-rpg-complete-edition-section-criticals-d3b2caf3@561c9bfc4cfc040689bab0b1d0b74642
 ---
 
 # 【 **Criticals?** 】
@@ -20,11 +20,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When making a defense roll, if your roll is double ones, that means that you’ve been hit _extremely_ hard. Maybe the monster's attack hit a gap in your character’s armor, or one of their vital points. In this case, your character _cannot_ reduce the monster's damage (strike points) at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01008))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01008))_
+
+> When making a defense roll, if your roll is double ones, that means that you’ve been hit _extremely_ hard. Maybe the monster's attack hit a gap in your character’s armor, or one of their vital points. In this case, your character _cannot_ reduce the monster's damage (strike points) at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01010))_
 
 > When making a defense roll, criticals do _not_ occur like they do with a strike roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01010))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 | Shield<br>Name | Evasion<br>Speed Mod. | Attack<br>Power Mod. |
 | --- | --- | --- |
@@ -42,7 +50,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01010))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 | Armor Name | Evasion Speed<br>Mod. | Defense<br>Mod. | Critical Target<br>Change | Anti-strangling<br>Prot. |
 | --- | --- | --- | --- | --- |
@@ -62,4 +73,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_

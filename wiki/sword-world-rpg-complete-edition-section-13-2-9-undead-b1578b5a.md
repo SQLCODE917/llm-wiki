@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-9-undead-b1578b5a@de3a03eb8906e0c0cf142b103e5cca3b
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-9-undead-b1578b5a@3069d4f5dbfb60ab46be1646aa4cc077
 ---
 
 # 13.2.9 Undead
@@ -32,5 +32,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06233))_
+
 > The dullahan will always appear at the place you moved to (or to one of the places moved to, if the residents have split up and moved to different places), even if it's on the sea, or in a room that's been walled off on all sides.......
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06233))_

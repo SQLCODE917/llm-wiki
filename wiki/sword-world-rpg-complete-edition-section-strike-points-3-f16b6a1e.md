@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-strike-points-3-f16b6a1e@b33890591ce4d24e60453d020a5eba24
+projection_coverage: section-sword-world-rpg-complete-edition-section-strike-points-3-f16b6a1e@c2ec69cf0f0a98f3e07a04cb84a6a4d2
 ---
 
 # Strike Points=3
@@ -27,8 +27,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Sorcerers in the ancient kingdom often experimented with creating life, but would carelessly throw their failed creations into the sewers or rivers. The blob is said to be the result of such failed artificial life turning feral. It's a black, slimy, amorphous creature with no intellect, which attacks all living things.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06377))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06377))_
+
+> Sorcerers in the ancient kingdom often experimented with creating life, but would carelessly throw their failed creations into the sewers or rivers. The blob is said to be the result of such failed artificial life turning feral. It's a black, slimy, amorphous creature with no intellect, which attacks all living things.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06375))_
 
 > Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=16/10 (3) Mental Points/Resistance=-/10 (3) Special Abilities=All weapons cannot critical Iron corrosion
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06375))_

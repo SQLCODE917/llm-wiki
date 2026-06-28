@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-9-special-weapons-77dd0946@fcf2f9b3abce505fd2d3af3ce2ccedbe
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-9-special-weapons-77dd0946@c808c2ca78c47299b136d8a3f4f70e3a
 ---
 
 # 16.9 Special Weapons
@@ -115,98 +115,170 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: _score at that time_ as the target score. If he or she fails, they will be swept off their feet and fall _prone_ . This attack _cannot_ target anything that’s _not_ bipedal, and it _cannot_ knock anything _larger_ than the adventurer, such as an ogre, giant, etc. _prone_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07902))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07902))_
+
+> _score at that time_ as the target score. If he or she fails, they will be swept off their feet and fall _prone_ . This attack _cannot_ target anything that’s _not_ bipedal, and it _cannot_ knock anything _larger_ than the adventurer, such as an ogre, giant, etc. _prone_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07903))_
 
 > For those with _multiple_ attack methods, you must declare _which_ attack method you will use each round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07903))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07921))_
 
 > If the attack is successful, the opponent suffers damage and at the same time must make a success roll using _adventurer level + dexterity bonus_ ( _evasion points -7_ for monsters) as the baseline score and the _attacker's final_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07921))_
 
-> Context: Pole weapons cannot reach their full power in tight spaces. The length of a pole weapon is **required strength x 15** centimeters. If you don't have a space with this radius, you _cannot_ use attack methods other than _thrust_ . It would not be a good idea to bring them into underground labyrinths, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07923))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07923))_
+
+> Pole weapons cannot reach their full power in tight spaces. The length of a pole weapon is **required strength x 15** centimeters. If you don't have a space with this radius, you _cannot_ use attack methods other than _thrust_ . It would not be a good idea to bring them into underground labyrinths, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07926))_
 
 > When you roll 2D for evasion, if you get _double sixes_ , you can _break_ your opponent's weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07926))_
 
-> Context: still suffer a -2 ／ -4 penalty. Also, if you use it for an attack, you’ll _lose_ the evasion bonus.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07928))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07928))_
+
+> still suffer a -2 ／ -4 penalty. Also, if you use it for an attack, you’ll _lose_ the evasion bonus.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07930))_
 
 > These weapons can perform attacks that **entangle** opponents.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07930))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07934))_
 
 > If the opponent is of a _larger_ race than him or her, the attacker must _release_ the whip or net.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07934))_
 
-> Context: Once entangled, an escape check is required _every_ round. Make a success roll using _adventurer level + strength bonus_ ( _attack power -7_ for monsters _)_ as the baseline score, and _attacker's final score when entangling (attack power + 2D roll at that time)_ as the target score. If the entangled target has hands or similar organs, the target score will _decrease_ by 1 each round. While entangled, there is _always_ a -4 penalty evading your opponent's attacks. To escape, you must first _rele
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07935))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07935))_
+
+> Once entangled, an escape check is required _every_ round. Make a success roll using _adventurer level + strength bonus_ ( _attack power -7_ for monsters _)_ as the baseline score, and _attacker's final score when entangling (attack power + 2D roll at that time)_ as the target score. If the entangled target has hands or similar organs, the target score will _decrease_ by 1 each round. While entangled, there is _always_ a -4 penalty evading your opponent's attacks. To escape, you must first _rele
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07937))_
 
 > The attacker may _choose_ , even if it _hits_ , to return the whip to his or her hand _instead_ of letting it entangle the opponent.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07937))_
 
-> Context: If the attack hits and the opponent is _not_ entangled, the whip will _return_ to the attacker's hand. The attacker may _choose_ , even if it _hits_ , to return the whip to his or her hand _instead_ of letting it entangle the opponent. At this time, roll 2D, and it'll _only_ entangle the opponent if you roll _double ones_ . **Net**
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07937))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07937))_
+
+> If the attack hits and the opponent is _not_ entangled, the whip will _return_ to the attacker's hand. The attacker may _choose_ , even if it _hits_ , to return the whip to his or her hand _instead_ of letting it entangle the opponent. At this time, roll 2D, and it'll _only_ entangle the opponent if you roll _double ones_ . **Net**
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07938))_
 
 > Even if this hits, it _cannot_ deal damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07938))_
 
-> Context: Even if this hits, it _cannot_ deal damage. It’s used in melee, but you can also use it by throwing it. However, its range is limited to 5 meters. **Bola**
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07938))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07938))_
+
+> Even if this hits, it _cannot_ deal damage. It’s used in melee, but you can also use it by throwing it. However, its range is limited to 5 meters. **Bola**
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07941))_
 
 > Adventurers may use shields for attacks.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07941))_
 
-> Context: Adventurers may use shields for attacks. However, in this case, the shield's evasion speed modifier _cannot_ be added to evasion speed. The shield's attack power modifier must be used _as is_ . In other words, a _small_ shield is **±0** and a _large_ shield is **-1** . However, large shields with _magical power of +1 or greater_ will _no longer_ have this -1 modifier.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07941))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07941))_
+
+> Adventurers may use shields for attacks. However, in this case, the shield's evasion speed modifier _cannot_ be added to evasion speed. The shield's attack power modifier must be used _as is_ . In other words, a _small_ shield is **±0** and a _large_ shield is **-1** . However, large shields with _magical power of +1 or greater_ will _no longer_ have this -1 modifier.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07942))_
 
 > Even if it’s a magic shield, the _only_ bonus damage you get is the
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07942))_
 
-> Context: Adventurers may use shields for attacks. However, in this case, the shield's evasion speed modifier _cannot_ be added to evasion speed. The shield's attack power modifier must be used _as is_ . In other words, a _small_ shield is **±0** and a _large_ shield is **-1** . However, large shields with _magical power of +1 or greater_ will _no longer_ have this -1 modifier.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07941))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07941))_
+
+> Adventurers may use shields for attacks. However, in this case, the shield's evasion speed modifier _cannot_ be added to evasion speed. The shield's attack power modifier must be used _as is_ . In other words, a _small_ shield is **±0** and a _large_ shield is **-1** . However, large shields with _magical power of +1 or greater_ will _no longer_ have this -1 modifier.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07944))_
 
 > If you’re a _fighter_ , you can also perform a shield attack as a _ram_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07944))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07948))_
 
 > If you’ve tightened the strings and prepared them in advance, you can fire the first shot _immediately_ , but after that, you’ll _only_ be able to fire _once_ every _four_ rounds.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07948))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07950))_
 
 > With 2~3 characters, when the _total_ strength of the characters reaches the _required strength_ , it can be wound up in _three_ rounds.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07950))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07955))_
 
 > When performing a lance charge, the movement distance must be within _lance length (required strength x 15 cm) x 2_ _**and** 90 meters (horse's full movement distance)_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07955))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07956))_
 
 > If lance charge hits, add +10 to strike power (since it's a charge) during the damage check.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07956))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07957))_
 
 > If you’re brought into melee while using a lance, you can evade as usual, but you _cannot_ attack.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07957))_
 
-> Context: When this weapon is thrown at an enemy and misses, it **returns to the user's hand** at the _end_ of the round. However, it will _not_ return if you roll _double ones_ on your hit check or if the boomerang hits the enemy.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07961))_
+### Technical atom 16
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07961))_
+
+> When this weapon is thrown at an enemy and misses, it **returns to the user's hand** at the _end_ of the round. However, it will _not_ return if you roll _double ones_ on your hit check or if the boomerang hits the enemy.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07962))_
 
 > You should also consider carefully before using it when there are allies nearby.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07962))_
 
-> Context: When this weapon is thrown at an enemy and misses, it **returns to the user's hand** at the _end_ of the round. However, it will _not_ return if you roll _double ones_ on your hit check or if the boomerang hits the enemy.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07961))_
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07961))_
+
+> When this weapon is thrown at an enemy and misses, it **returns to the user's hand** at the _end_ of the round. However, it will _not_ return if you roll _double ones_ on your hit check or if the boomerang hits the enemy.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07962))_
 
 > The boomerang _cannot_ be used if there's not enough _space_ for the boomerang to follow an arc. You should also consider carefully before using it when there are allies nearby.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07962))_
 
-> Context: The boomerang _cannot_ be used if there's not enough _space_ for the boomerang to follow an arc. You should also consider carefully before using it when there are allies nearby.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07962))_
+### Technical atom 18
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07962))_
+
+> The boomerang _cannot_ be used if there's not enough _space_ for the boomerang to follow an arc. You should also consider carefully before using it when there are allies nearby.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07965))_
 
 > Therefore, you can attack **through** an enemy's shield.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07965))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07966))_
 
 > weapon, _nor_ can you make _two_ attacks, it _can_ be useful when your weapon is knocked away.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07966))_
 
-> Context: These are **combat gloves** . This weapon allows you to use your hands _freely_ while it’s equipped. After putting on a cestus, you can _also_ hold a weapon in your hand. Although you _cannot_ add the strike power of a cestus to _another_
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07971))_
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07971))_
+
+> These are **combat gloves** . This weapon allows you to use your hands _freely_ while it’s equipped. After putting on a cestus, you can _also_ hold a weapon in your hand. Although you _cannot_ add the strike power of a cestus to _another_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07973))_
 
 > When struck by such an attack, the target must make a life force resistance
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07973))_

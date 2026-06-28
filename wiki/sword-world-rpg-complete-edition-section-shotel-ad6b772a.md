@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-shotel-ad6b772a@b7a32db66fa8dee685edf96dcb58c505
+projection_coverage: section-sword-world-rpg-complete-edition-section-shotel-ad6b772a@bda5866e36ee279ae66176d8ded8b43b
 ---
 
 # **Shotel**
@@ -27,11 +27,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The boomerang _cannot_ be used if there's not enough _space_ for the boomerang to follow an arc. You should also consider carefully before using it when there are allies nearby.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07962))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07962))_
+
+> The boomerang _cannot_ be used if there's not enough _space_ for the boomerang to follow an arc. You should also consider carefully before using it when there are allies nearby.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07965))_
 
 > Therefore, you can attack **through** an enemy's shield.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07965))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07966))_
 
 > weapon, _nor_ can you make _two_ attacks, it _can_ be useful when your weapon is knocked away.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07966))_

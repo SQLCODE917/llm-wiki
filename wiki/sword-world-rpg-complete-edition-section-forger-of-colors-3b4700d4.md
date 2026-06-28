@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-forger-of-colors-3b4700d4@6689b611614255ff6fe97905da9a1daf
+projection_coverage: section-sword-world-rpg-complete-edition-section-forger-of-colors-3b4700d4@38fff944380b764df124cc3988789f40
 ---
 
 # **Forger of Colors**
@@ -53,8 +53,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: _It's been said that no one could surpass the dwarves when it comes to the processing of mithril silver. Among the dwarves, the one who is said to have been the most skilled in the processing of mithril silver in the ancient kingdom, was Somska, an enchanter called the "Forger of Colors". The quality and quantity of Somska's mithril work was said to be outstanding, and countless legends have been passed down. The following anecdote is one of them._
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01174))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01174))_
+
+> _It's been said that no one could surpass the dwarves when it comes to the processing of mithril silver. Among the dwarves, the one who is said to have been the most skilled in the processing of mithril silver in the ancient kingdom, was Somska, an enchanter called the "Forger of Colors". The quality and quantity of Somska's mithril work was said to be outstanding, and countless legends have been passed down. The following anecdote is one of them._
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01177))_
 
 > Was this crown not to display all the colors of the world?!" It is said that Somska answered without changing the expression beneath his beard at all, "If you mix all colors together, you will only get black."_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01177))_

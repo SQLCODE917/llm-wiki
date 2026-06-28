@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-perception-pseudo-bc682d78@3dc682a38351069c99974ce62ead0bfb
+projection_coverage: section-sword-world-rpg-complete-edition-section-perception-pseudo-bc682d78@470ccb1c91422255b7e8f526add0743b
 ---
 
 # Perception=Pseudo
@@ -24,5 +24,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06545))_
+
 > Against an iron golem, weapons cannot deal additional critical damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06545))_

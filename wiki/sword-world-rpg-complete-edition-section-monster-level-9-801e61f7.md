@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-9-801e61f7@d197f507a838930a5e2fcc02d95255b3
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-9-801e61f7@18ea970141f2877ddbe1e3077a5b2b97
 ---
 
 # Monster Level=9
@@ -29,20 +29,35 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Wyrms are highly territorial, and when other wyrms or giant creatures enter their territory, which is a radius of about 20 kilometers, they will immediately try to drive them out or they may approach them to eat them as food.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05563))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05563))_
+
+> Wyrms are highly territorial, and when other wyrms or giant creatures enter their territory, which is a radius of about 20 kilometers, they will immediately try to drive them out or they may approach them to eat them as food.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05566))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05566))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05570))_
 
 > Habitat=Underground labyrinths, ruins Languages=Low ancient Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05570))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05573))_
 
 > The game master should roll 1D to determine which ray the buckbaird fires (or if it attempts to ram).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05573))_
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 
 | Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
 | --- | --- | --- | --- | --- | --- |
@@ -58,7 +73,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_
 
 | Level 1-2 | It's no big deal. Just a small problem in a small village |
 | --- | --- |
@@ -84,4 +102,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-representing-special-monsters-with-character-data-dd0d9052@6a00f077e9c844d8126c053e818b7a94
+projection_coverage: section-sword-world-rpg-complete-edition-section-representing-special-monsters-with-character-data-dd0d9052@807eb978bbce9dd32538f2b96666081c
 ---
 
 # **Representing Special Monsters with Character Data**
@@ -26,14 +26,23 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06756))_
 
 > **Table 13-2: Determining Monster Sub-Ability Scores**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06756))_
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 
 | Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
 | --- | --- | --- | --- | --- | --- |
@@ -49,4 +58,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_

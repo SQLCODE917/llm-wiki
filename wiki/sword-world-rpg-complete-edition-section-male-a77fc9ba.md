@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-male-a77fc9ba@f3bd819eb975c8642430a496f1d3c46d
+projection_coverage: section-sword-world-rpg-complete-edition-section-male-a77fc9ba@f28653c0c1d0bbfddaf9b727c6b2bf44
 ---
 
 # **Male**
@@ -25,17 +25,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Female giant seals are slightly smaller than males, measuring 6 to 7 meters long and do not have tusks. Although young females may wander alone, they usually belong to a kingdom. Fishermen never choose to hunt females, out of fear that seal numbers will decline.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05948))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05948))_
+
+> Female giant seals are slightly smaller than males, measuring 6 to 7 meters long and do not have tusks. Although young females may wander alone, they usually belong to a kingdom. Fishermen never choose to hunt females, out of fear that seal numbers will decline.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05950))_
 
 > Monster Level=6 Rarity=10 Agility=10 Movement Speed=10/16 (water) Number=One Frequency=Moderate Intellect=Animal Reaction=Neutral Attack Points=Ram:14 (7) Strike Points=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05950))_
 
-> Context: Female giant seals are slightly smaller than males, measuring 6 to 7 meters long and do not have tusks. Although young females may wander alone, they usually belong to a kingdom. Fishermen never choose to hunt females, out of fear that seal numbers will decline.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05948))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05948))_
+
+> Female giant seals are slightly smaller than males, measuring 6 to 7 meters long and do not have tusks. Although young females may wander alone, they usually belong to a kingdom. Fishermen never choose to hunt females, out of fear that seal numbers will decline.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05951))_
 
 > Evasion Points=12 (5) Defense Points=10 Life Points/Resistance=24/16 (9) Mental Points/Resistance=10/13 (6) Special Abilities=Ice adaptation
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05951))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05953))_
 
 > Habitat=Ice fields Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05953))_

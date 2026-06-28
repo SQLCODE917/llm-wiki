@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-water-breathing-undine-water-spirit-dd204a55@59f9f63d271a63fd2da7c82d6c95d0dd
+projection_coverage: section-sword-world-rpg-complete-edition-section-water-breathing-undine-water-spirit-dd204a55@2f9517324d63cc3f2d940e0f6ac6252b
 ---
 
 # **[ Water Breathing ] (Undine/Water Spirit)**
@@ -21,11 +21,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02405))_
+
 > Base Mental Power Cost=9 Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02405))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02406))_
 
 > Area=One Duration=1 hour Effect=Allows breathing underwater Type=Target score Expansion=Final score, duration, distance, targets
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02406))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02407))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02407))_

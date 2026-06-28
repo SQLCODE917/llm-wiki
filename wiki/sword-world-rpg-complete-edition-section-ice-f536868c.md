@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ice-f536868c@680f49d5ad4cc814d60d7044acffdf2b
+projection_coverage: section-sword-world-rpg-complete-edition-section-ice-f536868c@d5ef29d851cb42a32739ed73f4f3dcaa
 ---
 
 # **[ Ice ]**
@@ -16,29 +16,52 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08130))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08130))_
+
+> If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08132))_
 
 > Defense points = 3-30
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08132))_
 
-> Context: If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08130))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08130))_
+
+> If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08133))_
 
 > Destruction points = 1-25
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08133))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08134))_
 
 > Complete Immunity = Bows, crossbows, slings, cold-type, poison gas-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08134))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08135))_
 
 > No Criticals = Swords, spears, clubs, staves, barehanded, electric-type, wind cuttertype, blade-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08135))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08136))_
 
 > Normal = Axes, rocks, maces, flails, war hammers, stone-type, earthquake-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08136))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08137))_
 
 > Ignores Defense Points = Fire-type, explosion-type, pure energy-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08137))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08138))_
 
 > Special = If destroyed with fire-type or pure energy-type magic, it’ll melt and turn into water.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08138))_

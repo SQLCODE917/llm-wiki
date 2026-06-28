@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-critical-target-a5dde266@3cc3bc9771219fc1c9de3d032e1499bf
+projection_coverage: section-sword-world-rpg-complete-edition-section-critical-target-a5dde266@b5cb204fc4a02d15faac603e779db62b
 ---
 
 # 【 **Critical Target** 】
@@ -26,17 +26,29 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Attack power is calculated with the following formula:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00866))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00866))_
+
+> Attack power is calculated with the following formula:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00867))_
 
 > If a weapon hits, it’ll sometimes deal more damage than normal.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00867))_
 
-> Context: If a weapon hits, it’ll sometimes deal more damage than normal. For example, when you successfully exploit a gap in your opponent’s armor, or when you successfully damage an opponent’s vital point, such as an eye.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00867))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00867))_
+
+> If a weapon hits, it’ll sometimes deal more damage than normal. For example, when you successfully exploit a gap in your opponent’s armor, or when you successfully damage an opponent’s vital point, such as an eye.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00868))_
 
 > **attack power** = fighter (thief/ranger) skill level + dexterity bonus
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00868))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 | Shield<br>Name | Evasion<br>Speed Mod. | Attack<br>Power Mod. |
 | --- | --- | --- |
@@ -54,7 +66,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00868))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 | Armor Name | Evasion Speed<br>Mod. | Defense<br>Mod. | Critical Target<br>Change | Anti-strangling<br>Prot. |
 | --- | --- | --- | --- | --- |
@@ -74,4 +89,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_

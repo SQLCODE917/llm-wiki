@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-7-6-sailor-skill-eaced667@47701aa33399b537c7b229396f72339a
+projection_coverage: section-sword-world-rpg-complete-edition-section-7-6-sailor-skill-eaced667@9529dafa6fe6ef7ee887dc19bd7ecce9
 ---
 
 # 7.6 Sailor Skill
@@ -51,17 +51,29 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Sailors have the ability to know direction by looking at the stars on the sea at night, and to identify dangerous areas where reefs are likely to exist. The game master should ask for a success roll check for such actions using _sailor skill level + intelligence bonus_ as the baseline score. The difficulty or target score is determined by the game master each time.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03691))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03691))_
+
+> Sailors have the ability to know direction by looking at the stars on the sea at night, and to identify dangerous areas where reefs are likely to exist. The game master should ask for a success roll check for such actions using _sailor skill level + intelligence bonus_ as the baseline score. The difficulty or target score is determined by the game master each time.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03692))_
 
 > At that time, you can only wear armor up to cloth or soft leather.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03692))_
 
-> Context: The _abilities_ of the sailor skill are as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03693))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03693))_
+
+> The _abilities_ of the sailor skill are as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03696))_
 
 > If you're just going straight through calm water, you don't need a success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03696))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08377))_
 
 | **Sailor Skill Abilities Table** |
 | --- |
@@ -83,7 +95,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03696))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08377))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08383))_
 
 | Ability | Relevant AbilityScore | Equipment Restrictions | Retryinga success roll on the same target |
 | --- | --- | --- | --- |
@@ -111,4 +126,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08377))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08383))_

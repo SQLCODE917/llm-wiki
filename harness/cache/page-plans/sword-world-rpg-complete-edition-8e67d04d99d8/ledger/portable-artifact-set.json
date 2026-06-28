@@ -16,26 +16,26 @@
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "ledger-quality-report-artifact",
-      "target_artifact_fingerprint": "77295493488ac5a8",
-      "target_artifact_id": "ledger-quality-report-77295493488ac5a8"
+      "target_artifact_fingerprint": "19357c9c14c2f026",
+      "target_artifact_id": "ledger-quality-report-19357c9c14c2f026"
     },
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "ledger-quality-report-artifact",
-      "target_artifact_fingerprint": "9a6b2aa412e2ef9f",
-      "target_artifact_id": "ledger-quality-report-9a6b2aa412e2ef9f"
+      "target_artifact_fingerprint": "ce009b49a89a2ca6",
+      "target_artifact_id": "ledger-quality-report-ce009b49a89a2ca6"
     },
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "projection-coverage-artifact",
-      "target_artifact_fingerprint": "ad6ed0a0907d9a0c",
-      "target_artifact_id": "projection-coverage-e6464889ceaa470e"
+      "target_artifact_fingerprint": "2caf53327f169d4d",
+      "target_artifact_id": "projection-coverage-da3321c69782a4ce"
     },
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "quality-check-catalog-artifact",
-      "target_artifact_fingerprint": "dfb37f29d0f4637d",
-      "target_artifact_id": "quality-check-catalog-dfb37f29d0f4637d"
+      "target_artifact_fingerprint": "d27c45b62689f4dd",
+      "target_artifact_id": "quality-check-catalog-d27c45b62689f4dd"
     },
     {
       "artifact_format": "canonical-json",
@@ -44,6 +44,6 @@
       "target_artifact_id": "section-grounded-plan-48adb97535373f57"
     }
   ],
-  "portable_artifact_set_fingerprint": "c3179772480cd5be",
-  "portable_artifact_set_id": "portable-artifact-set-c3179772480cd5be"
+  "portable_artifact_set_fingerprint": "b83c840e78226a33",
+  "portable_artifact_set_id": "portable-artifact-set-b83c840e78226a33"
 }

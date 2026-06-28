@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-restrictions-on-weapons-and-armor-based-on-skill-5ed18178@4c35b8f7c42631a1e1579b6b65203296
+projection_coverage: section-sword-world-rpg-complete-edition-section-restrictions-on-weapons-and-armor-based-on-skill-5ed18178@73813b85926823efbc7edead5d76d368
 ---
 
 # **Restrictions on Weapons and Armor Based on Skill**
@@ -25,14 +25,23 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+
+> The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00450))_
 
 > **Table 1-9: Armor**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00450))_
 
-> Context: The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+
+> The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
 
 | **Table 1-9: Armor** |
 | --- |
@@ -52,10 +61,13 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
 
-> Context: The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+
+> The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00452))_
 
 > **Table 1-10: Shields**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00452))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-create-image-39e9bed6@781dc2c05bfab57fd164f63b1a7b09ff
+projection_coverage: section-sword-world-rpg-complete-edition-section-create-image-39e9bed6@97dc31c72c6687a4165e9a678bff2106
 ---
 
 # **[ Create Image ]**
@@ -26,17 +26,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If this spell would cause a weapon or armor's required strength to exceed its owner's strength, that character cannot act. However, if you're using the optional rules under _16.8: Weapons and Armor That Are Too Heavy_ (see p. 268), they can still act, but they'll receive a penalty to attack power, evasion speed, etc. Even if you increase the required strength, the strike power or defense power of weapons and armor will not change.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01728))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01728))_
+
+> If this spell would cause a weapon or armor's required strength to exceed its owner's strength, that character cannot act. However, if you're using the optional rules under _16.8: Weapons and Armor That Are Too Heavy_ (see p. 268), they can still act, but they'll receive a penalty to attack power, evasion speed, etc. Even if you increase the required strength, the strike power or defense power of weapons and armor will not change.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01730))_
 
 > Base Mental Power Cost=9
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01730))_
 
-> Context: If this spell would cause a weapon or armor's required strength to exceed its owner's strength, that character cannot act. However, if you're using the optional rules under _16.8: Weapons and Armor That Are Too Heavy_ (see p. 268), they can still act, but they'll receive a penalty to attack power, evasion speed, etc. Even if you increase the required strength, the strike power or defense power of weapons and armor will not change.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01728))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01728))_
+
+> If this spell would cause a weapon or armor's required strength to exceed its owner's strength, that character cannot act. However, if you're using the optional rules under _16.8: Weapons and Armor That Are Too Heavy_ (see p. 268), they can still act, but they'll receive a penalty to attack power, evasion speed, etc. Even if you increase the required strength, the strike power or defense power of weapons and armor will not change.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01731))_
 
 > Distance=30 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01731))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01732))_
 
 > Area=A space with a 5 meter radius Duration=1 hour Effect=Can create visual illusions Type=Illusion Expansion=Final score, duration, distance, target volume Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01732))_

@@ -59,3 +59,39 @@ Source page: [[javascriptallonge]]; linked pages: 290. Ledger artifacts: /home/s
 
 ## [2026-06-27] synthesize | cross-source
 Canonical concept synthesis over 2 source(s): 0 concept page(s), 0 blocked. Relations: agrees-with=0, conflicts-with=0, qualifies=0, supersedes=0.
+
+## [2026-06-27] ingest | javascriptallonge.pdf
+Claim-ledger ingest of raw/javascriptallonge.pdf (60 source unit(s)).
+Claim-ledger projection (coding): 2043 usable entries, 543 technical atoms, 666 needs-review, 290 linked page(s); write decision write-with-review-work.
+Source page: [[javascriptallonge]]; linked pages: 290. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/ledger.
+
+## [2026-06-27] ingest | javascriptallonge.pdf
+Claim-ledger ingest of raw/javascriptallonge.pdf (60 source unit(s)).
+Claim-ledger projection (coding): 2043 usable entries, 543 technical atoms, 666 needs-review, 290 linked page(s); write decision write-with-review-work.
+Source page: [[javascriptallonge]]; linked pages: 290. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/ledger.
+
+## [2026-06-27] synthesize | cross-source
+Canonical concept synthesis over 2 source(s): 0 concept page(s), 0 blocked. Relations: agrees-with=0, conflicts-with=0, qualifies=0, supersedes=0.
+
+## [2026-06-27] ingest | javascriptallonge.pdf
+Claim-ledger ingest of raw/javascriptallonge.pdf (60 source unit(s)).
+Claim-ledger projection (coding): 2043 usable entries, 543 technical atoms, 666 needs-review, 290 linked page(s); write decision write-with-review-work.
+Source page: [[javascriptallonge]]; linked pages: 290. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/ledger.
+
+## [2026-06-27] ingest | Sword World RPG - Complete Edition.pdf
+Claim-ledger ingest of raw/Sword World RPG - Complete Edition.pdf (134 source unit(s)).
+Claim-ledger projection (general-prose): 11015 usable entries, 2839 technical atoms, 1130 needs-review, 1673 linked page(s); write decision write-with-review-work.
+Source page: [[sword-world-rpg-complete-edition]]; linked pages: 1673. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/ledger.
+
+## [2026-06-27] synthesize | cross-source
+Canonical concept synthesis over 2 source(s): 0 concept page(s), 0 blocked. Relations: agrees-with=0, conflicts-with=0, qualifies=0, supersedes=0.
+
+## [2026-06-27] ingest | javascriptallonge.pdf
+Claim-ledger ingest of raw/javascriptallonge.pdf (60 source unit(s)).
+Claim-ledger projection (coding): 2043 usable entries, 543 technical atoms, 666 needs-review, 242 linked page(s); write decision write-with-review-work.
+Source page: [[javascriptallonge]]; linked pages: 242. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/ledger.
+
+## [2026-06-27] ingest | javascriptallonge.pdf
+Claim-ledger ingest of raw/javascriptallonge.pdf (60 source unit(s)).
+Claim-ledger projection (coding): 2043 usable entries, 543 technical atoms, 666 needs-review, 242 linked page(s); write decision write-with-review-work.
+Source page: [[javascriptallonge]]; linked pages: 242. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/ledger.

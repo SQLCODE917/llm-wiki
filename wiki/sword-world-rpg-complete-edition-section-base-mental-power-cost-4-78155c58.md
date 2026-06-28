@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-base-mental-power-cost-4-78155c58@2f96e484bb82bfa2187eb4891ea2028f
+projection_coverage: section-sword-world-rpg-complete-edition-section-base-mental-power-cost-4-78155c58@b8988789a5f4dde7ead1a26e91e7616e
 ---
 
 # Base Mental Power Cost=4
@@ -23,23 +23,43 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: You will be able to communicate with reptiles such as snakes and lizards, as well as lizardmen. This spell _cannot_ give any binding commands to the opponent. If the opponent's intelligence is high enough, you can negotiate, but if the opponent's intelligence is not sufficient, you can only know about the opponent's emotions and degree of hunger. However, the risk of being attacked by the opponent is reduced. Your opponent will no longer attack you unless they're enraged or extremely hungry.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04217))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04217))_
+
+> You will be able to communicate with reptiles such as snakes and lizards, as well as lizardmen. This spell _cannot_ give any binding commands to the opponent. If the opponent's intelligence is high enough, you can negotiate, but if the opponent's intelligence is not sufficient, you can only know about the opponent's emotions and degree of hunger. However, the risk of being attacked by the opponent is reduced. Your opponent will no longer attack you unless they're enraged or extremely hungry.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04220))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04220))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04221))_
 
 > Area=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04221))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04222))_
 
 > Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04222))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04223))_
 
 > Effect=Wrap your entire body in scales, increasing defense power by +5 Type=Target score Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04223))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04225))_
 
 > **Table 11-1: Summon**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04225))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -73,4 +93,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04225))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-thief-1b616410@5e7cb526cc8e0b67d88c45bb0dbc0923
+projection_coverage: section-sword-world-rpg-complete-edition-section-thief-1b616410@cd2fe359b86a96273666d34aef0a8268
 ---
 
 # 【 **Thief** 】
@@ -28,17 +28,29 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: However, not everyone with the thief skill makes a living off such thefts. The abilities of the thief are also useful in adventures. For example, there's the ability to detect and disable traps that have been set, and the ability to stay ahead of footsteps, listening and observing what’s going on.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00257))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00257))_
+
+> However, not everyone with the thief skill makes a living off such thefts. The abilities of the thief are also useful in adventures. For example, there's the ability to detect and disable traps that have been set, and the ability to stay ahead of footsteps, listening and observing what’s going on.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00258))_
 
 > Their fighting style is based on lightness, and although they cannot use heavy weapons or armor, they _can_ use light weapons and armor that does not impede their movement, allowing them to fight as well as a fighter.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00258))_
 
-> Context: Thieves also have some fighting ability. Their fighting style is based on lightness, and although they cannot use heavy weapons or armor, they _can_ use light weapons and armor that does not impede their movement, allowing them to fight as well as a fighter.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00258))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00258))_
+
+> Thieves also have some fighting ability. Their fighting style is based on lightness, and although they cannot use heavy weapons or armor, they _can_ use light weapons and armor that does not impede their movement, allowing them to fight as well as a fighter.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00260))_
 
 > **Table 1-2: Skill Types**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00260))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
 
 | **Tief Skill Abilities Table** |
 | --- |
@@ -88,7 +100,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00260))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08366))_
 
 | Ability | Relevant AbilityScore | Equipment Restrictions | Retryinga success roll on the same target |
 | --- | --- | --- | --- |
@@ -134,4 +149,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08366))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-beast-maker-dose-magic-5060ba0f@831e260897d3ca4d9048634eaa4c3dcd
+projection_coverage: section-sword-world-rpg-complete-edition-section-beast-maker-dose-magic-5060ba0f@3500ddb0541f7ba60db247073a925cc7
 ---
 
 # **[Beast Maker (Dose/Magic)]**
@@ -23,8 +23,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04602))_
+
 > Effect=Turn into an animal Toxicity Score=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04602))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04603))_
 
 > Rarity=15 Effect Start Time= 12 rounds later Effect Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04603))_

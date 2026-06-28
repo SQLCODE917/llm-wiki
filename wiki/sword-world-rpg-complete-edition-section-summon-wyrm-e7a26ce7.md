@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-summon-wyrm-e7a26ce7@4f3ba59081d2b02cc8457b449df90cbe
+projection_coverage: section-sword-world-rpg-complete-edition-section-summon-wyrm-e7a26ce7@03373d5868cd4b8db23a0d008fe0edce
 ---
 
 # **[ Summon Wyrm ]**
@@ -23,11 +23,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04316))_
+
 > Base Mental Power Cost=35
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04316))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04317))_
 
 > Distance=Infinite Area=One wyrm Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04317))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04318))_
 
 > Effect=Summon one wyrm Type=Summon, ritual, non-removable Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04318))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fire-crystal-3b128324@760469232e6db8becc87bab98fad774b
+projection_coverage: section-sword-world-rpg-complete-edition-section-fire-crystal-3b128324@51d3a5c92e3af4ae2d80654305ba5da6
 ---
 
 # **Fire Crystal**
@@ -22,8 +22,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07319))_
+
 > Rarity=13 Enchanter=Many Form=Spherical polished rose-colored crystal Base Trade Price=3,200 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07319))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07320))_
 
 > Powers=Has the same effect as Fireball when thrown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07320))_

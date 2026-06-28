@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-explosive-bullet-f3e73d7c@822f48285c3674e655391837da5db96b
+projection_coverage: section-sword-world-rpg-complete-edition-section-explosive-bullet-f3e73d7c@4611a291768b189f9c2fecf87b93a6ac
 ---
 
 # **[ Explosive Bullet ]**
@@ -21,14 +21,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07437))_
+
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07437))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
 
 > Enchanter=Many Form=Sling Bullet
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07439))_
 
 > Base Trade Price=2500 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07439))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07440))_
 
 > Powers=Explodes on impact, dealing strike power 30 damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07440))_

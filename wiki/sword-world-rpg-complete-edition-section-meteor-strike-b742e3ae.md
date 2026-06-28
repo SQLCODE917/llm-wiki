@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-meteor-strike-b742e3ae@65c1562aea5ca32adb62ea3fbc0b32b2
+projection_coverage: section-sword-world-rpg-complete-edition-section-meteor-strike-b742e3ae@64481ec22bc8ce0d8720bfc75d81c4d1
 ---
 
 # **[ Meteor Strike ]**
@@ -26,14 +26,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02227))_
+
 > Base Mental Power Cost=50
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02227))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02228))_
 
 > Distance=30 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02228))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02229))_
 
 > Area=A space with a 10 meter radius Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02229))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02230))_
 
 > Effect=A meteorite falls from the sky, causing a huge explosion Type=Damage (Explosion-type) Expansion=Final score, distance, area, damage certainty Resist=Reduced Effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02230))_

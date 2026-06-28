@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-greater-daemons-doppelganger-35a3c51d@a79bc074699d5c7e7993188a19a5df9c
+projection_coverage: section-sword-world-rpg-complete-edition-section-greater-daemons-doppelganger-35a3c51d@8d1caec2d0930e3f8eb49f0467982d9d
 ---
 
 # **[ Greater Daemons ] Doppelganger**
@@ -31,29 +31,52 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Conversely, while the maligdorai is performing an illusion, the target must make a resistance roll against the illusion each round.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06629))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06629))_
+
+> Conversely, while the maligdorai is performing an illusion, the target must make a resistance roll against the illusion each round.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06631))_
 
 > Monster Level=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06631))_
 
-> Context: Conversely, while the maligdorai is performing an illusion, the target must make a resistance roll against the illusion each round.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06629))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06629))_
+
+> Conversely, while the maligdorai is performing an illusion, the target must make a resistance roll against the illusion each round.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06632))_
 
 > Rarity=16 Agility=14 Movement Speed=18 Number=One Frequency=Very rare Intellect=High Reaction=Adversarial Attack Points=Claws: 18 (11)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06632))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06633))_
 
 > Strike Points=20
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06633))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06634))_
 
 > Evasion Points=16 (9) Defense Points=14 Life Points/Resistance=34/21 (14) Mental Points/Resistance=28/20 (13) Special Abilities=7th level ancient magic (magic intensity/magic power=16/9) Shapeshift
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06634))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06635))_
 
 > Habitat=Underground labyrinths, secluded ruins
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06635))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06636))_
 
 > Languages=Low ancient, languages of the person it shapeshifts into Perception=Five senses (Darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06636))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06639))_
 
 > A doppelganger who has copied the abilities and memories of an opponent can use _all_ of their abilities.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06639))_

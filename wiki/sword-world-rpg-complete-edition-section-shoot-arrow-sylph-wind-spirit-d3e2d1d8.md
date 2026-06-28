@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-shoot-arrow-sylph-wind-spirit-d3e2d1d8@ad29c8a584df42d4d9659697d1bf10be
+projection_coverage: section-sword-world-rpg-complete-edition-section-shoot-arrow-sylph-wind-spirit-d3e2d1d8@19e1fb3d6c3957920885387300f0196f
 ---
 
 # **[ Shoot Arrow ] (Sylph/Wind Spirit)**
@@ -29,23 +29,42 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02525))_
+
 > Base Mental Power Cost=20 Distance=30 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02525))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02526))_
 
 > Area=One Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02526))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02527))_
 
 > Effect=Automatically hit the target with a strike power 20 arrow
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02527))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02528))_
 
 > Type=Counters (Negates): _Missile Protection_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02528))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02530))_
 
 > Expansion=Distance, targets Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02530))_
 
-> Context: When you cast this spell, the caster's arrow will be carried by a sylph, ensuring that it hits the target. The strike power of the arrow is a uniform 20, the magic power of the caster is used as bonus damage. Also, if you roll 10 or greater on your damage check, a _critical_ will occur. The target cannot resist this spell. However, armor protection is effective.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02531))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02531))_
+
+> When you cast this spell, the caster's arrow will be carried by a sylph, ensuring that it hits the target. The strike power of the arrow is a uniform 20, the magic power of the caster is used as bonus damage. Also, if you roll 10 or greater on your damage check, a _critical_ will occur. The target cannot resist this spell. However, armor protection is effective.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02533))_
 
 > Note that this spell cannot deal damage to monsters that can only be wounded by silver or magical weapons, such as werewolves, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02533))_

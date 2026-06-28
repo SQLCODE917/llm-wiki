@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-6-2-thief-skill-2586fccc@5533d64978f560d384b3db590e4863a6
+projection_coverage: section-sword-world-rpg-complete-edition-section-6-2-thief-skill-2586fccc@447cd8dc1a42cd1960ecbb2aa24a4b54
 ---
 
 # 6.2 Thief Skill
@@ -119,125 +119,213 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03289))_
+### Technical atom 1
 
-> Context: Some abilities say _not retriable_ . Once you fail such an ability, you _cannot_ attempt it again on the same target. For example, the thief skill's _lockpicking_ ability cannot be retried. If a thief
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03290))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03289))_
+
+> If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03290))_
+
+> Some abilities say _not retriable_ . Once you fail such an ability, you _cannot_ attempt it again on the same target. For example, the thief skill's _lockpicking_ ability cannot be retried. If a thief
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03293))_
 
 > It is true that the thief skill includes the abilities necessary for theft, such as pickpocketing and lockpicking, but if anything, you can say they're specialized craftsmen who are familiar with the techniques needed behind the scenes of society.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03293))_
 
-> Context: ① Tumble ⑩ Climb ② Lockpicking ⑪ Special Combat ③ Acrobatics ⑫ Long Jump/ High Jump ④ Mnemonics ⑬ Follow ⑤ Listen ⑭ Disguise ⑥ Stealthy Step ⑮ Treasure Appraisal ⑦ Pickpocket ⑯ Find/Sense Trap ⑧ Hide ⑰ Remove/Set Trap ⑨ Search
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03295))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03295))_
+
+> ① Tumble ⑩ Climb ② Lockpicking ⑪ Special Combat ③ Acrobatics ⑫ Long Jump/ High Jump ④ Mnemonics ⑬ Follow ⑤ Listen ⑭ Disguise ⑥ Stealthy Step ⑮ Treasure Appraisal ⑦ Pickpocket ⑯ Find/Sense Trap ⑧ Hide ⑰ Remove/Set Trap ⑨ Search
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03296))_
 
 > Even those who have not joined a guild can directly learn the thief skill from those who have a higher thief skill level than themselves, but if the guild finds out that such _outsider_ thieves (including those who have not paid the prescribed amount) used this skill to do _business_ , they'll send an assassin.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03296))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03299))_
 
 > Even if a thief falls from a high place, they can reduce the damage by being skillful at taking a defensive tumble.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03299))_
 
-> Context: Also, it is of course illegal to use this skill to commit theft, and if caught, punishment awaits.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03300))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03300))_
+
+> Also, it is of course illegal to use this skill to commit theft, and if caught, punishment awaits.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03301))_
 
 > Some of these abilities cannot be used unless you're wearing light equipment.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03301))_
 
-> Context: The thief skill includes the following abilities. Some of these abilities cannot be used unless you're wearing light equipment. If you want to make full use of your thief skill, the required strength of your equipment (weapons, shields,
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03301))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03301))_
+
+> The thief skill includes the following abilities. Some of these abilities cannot be used unless you're wearing light equipment. If you want to make full use of your thief skill, the required strength of your equipment (weapons, shields,
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03303))_
 
 > These can be attempted again if the baseline score for a success roll increases (that is, if the skill level increases or the ability bonus of the relevant ability score increases).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03303))_
 
-> Context: These can be attempted again if the baseline score for a success roll increases (that is, if the skill level increases or the ability bonus of the relevant ability score increases).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03303))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03303))_
+
+> These can be attempted again if the baseline score for a success roll increases (that is, if the skill level increases or the ability bonus of the relevant ability score increases).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03305))_
 
 > Even if you don't have these tools, you can try using wire, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03305))_
 
-> Context: The ability to open locks on doors, treasure chests, etc. The thieves' guild sells lockpicking tools (sold under the name _thieves' tools_ ) to guild members for 100 silver coins. Even if you don't have these tools, you can try using wire, etc. if you have it. However, the probability of success will be lower (impose a -2 modifier on success rolls). The game
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03305))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03305))_
+
+> The ability to open locks on doors, treasure chests, etc. The thieves' guild sells lockpicking tools (sold under the name _thieves' tools_ ) to guild members for 100 silver coins. Even if you don't have these tools, you can try using wire, etc. if you have it. However, the probability of success will be lower (impose a -2 modifier on success rolls). The game
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03308))_
 
 > master should set the lock's target score depending on the difficulty.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03308))_
 
-> Context: Thieves are skilled at activities that require physical balance and agility, such as tightrope walking and jumping from branch to branch.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03311))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03311))_
+
+> Thieves are skilled at activities that require physical balance and agility, such as tightrope walking and jumping from branch to branch.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03312))_
 
 > Each time a character performs such an action, the game master must set a target score and ask for a success roll check.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03312))_
 
-> Context: Each time a character performs such an action, the game master must set a target score and ask for a success roll check.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03312))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03312))_
+
+> Each time a character performs such an action, the game master must set a target score and ask for a success roll check.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03315))_
 
 > For example, even if a book is written in a language you don't know, by using this ability you can memorize the shape of each letter exactly as it is, even if you don't know the meaning, and can write it down later.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03315))_
 
-> Context: This is the ability to remember what you witness. For example, even if a book is written in a language you don't know, by using this ability you can memorize the shape of each letter exactly as it is, even if you don't know the meaning, and can write it down later. Thieves do this habitually all the time. A success roll should be made when _recalling_ something, not when _trying to memorize_ something. The game master should determine the target score based on the contents being recalled and the
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03315))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03315))_
+
+> This is the ability to remember what you witness. For example, even if a book is written in a language you don't know, by using this ability you can memorize the shape of each letter exactly as it is, even if you don't know the meaning, and can write it down later. Thieves do this habitually all the time. A success roll should be made when _recalling_ something, not when _trying to memorize_ something. The game master should determine the target score based on the contents being recalled and the
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03318))_
 
 > You can also choose and listen to a specific sound from a mixture of various sounds.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03318))_
 
-> Context: In particular, if they're not paying _attention_ to the sound, impose a -4 penalty on the listener and make the same check.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03324))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03324))_
+
+> In particular, if they're not paying _attention_ to the sound, impose a -4 penalty on the listener and make the same check.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03325))_
 
 > If the person hearing the sound _also_ has the thief skill, _they_ may make a check using _thief skill level + intelligence bonus_ (this is the _listen_ ability from the previous section).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03325))_
 
-> Context: If the person hearing the sound _also_ has the thief skill, _they_ may make a check using _thief skill level + intelligence bonus_ (this is the _listen_ ability from the previous section). At this time, if you can hear the sound, you will be able to discern not only the presence of something sneaking around, but _also_ its general appearance (walking speed, stride length, number of people if there is more than one, etc.).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03325))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03325))_
+
+> If the person hearing the sound _also_ has the thief skill, _they_ may make a check using _thief skill level + intelligence bonus_ (this is the _listen_ ability from the previous section). At this time, if you can hear the sound, you will be able to discern not only the presence of something sneaking around, but _also_ its general appearance (walking speed, stride length, number of people if there is more than one, etc.).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03328))_
 
 > The person trying to pickpocket must make a success roll using _thief skill level + dexterity bonus_ and the person being pickpocketed must make one using _adventurer level + intelligence bonus_ as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03328))_
 
-> Context: it will definitely be exposed to the opponent.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03329))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03329))_
+
+> it will definitely be exposed to the opponent.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03330))_
 
 > The game master may add modifiers depending on the surroundings and the opponent's situation.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03330))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03333))_
 
 > A success roll must be made when the thief is hiding and someone attempts to search for them or approaches them.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03333))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03337))_
 
 > The game master should determine the difficulty depending on what is hidden.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03337))_
 
-> Context: Even thieves have combat abilities and can fight using their thief skill level. However, the way a thief fights is quite different from that of a fighter. For more information, please refer to _Chapter 4: Weapon Combat_ . The major difference (other than equipment restrictions) is the critical target. While a fighter fights in a linear style, trying to crush the enemy head-on, a thief tries to focus on the opponent's vital points and
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03345))_
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03345))_
+
+> Even thieves have combat abilities and can fight using their thief skill level. However, the way a thief fights is quite different from that of a fighter. For more information, please refer to _Chapter 4: Weapon Combat_ . The major difference (other than equipment restrictions) is the critical target. While a fighter fights in a linear style, trying to crush the enemy head-on, a thief tries to focus on the opponent's vital points and
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
 
 > If one adventurer has acquired both the thief skill _and_ the fighter skill, the player must _choose_ which skill to fight with.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
 
-> Context: You can jump over obstacles using _(pole) high jump_ or _(pole) long jump_ . For more information, please refer to the rules for ⑤ Long Jump/High Jump (see p. 122) under _6.6: Common Adventurer Abilities_ . The methods for determining target scores, etc. are included there.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03350))_
+### Technical atom 18
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03350))_
+
+> You can jump over obstacles using _(pole) high jump_ or _(pole) long jump_ . For more information, please refer to the rules for ⑤ Long Jump/High Jump (see p. 122) under _6.6: Common Adventurer Abilities_ . The methods for determining target scores, etc. are included there.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03352))_
 
 > The side that's following must use _thief skill level + agility bonus_ as their baseline score, while the side being followed must use _adventurer level + intelligence bonus_ , and success or failure is determined by comparing the final scores of their success rolls.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03352))_
 
-> Context: This is the ability to change one's face and appearance using special makeup. It's easy to just act like a completely different person, but it's difficult to disguise yourself as someone specific. Things like height and physique can be changed to a certain extent, but there are still limits.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03355))_
+### Technical atom 19
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03355))_
+
+> This is the ability to change one's face and appearance using special makeup. It's easy to just act like a completely different person, but it's difficult to disguise yourself as someone specific. Things like height and physique can be changed to a certain extent, but there are still limits.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_
 
 > If the thief is disguised as a specific person and they encounter an acquaintance of that person, they must make a success roll to determine success or failure.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_
 
-> Context: If the thief is disguised as a specific person and they encounter an acquaintance of that person, they must make a success roll to determine success or failure. The game master should add modifiers to success rolls to account for the unnaturalness of the disguise (such as disguising as the opposite sex, etc.). Especially when disguised as someone whose characteristics the thief doesn't know in detail, it's best to add a difficult modifier.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_
+
+> If the thief is disguised as a specific person and they encounter an acquaintance of that person, they must make a success roll to determine success or failure. The game master should add modifiers to success rolls to account for the unnaturalness of the disguise (such as disguising as the opposite sex, etc.). Especially when disguised as someone whose characteristics the thief doesn't know in detail, it's best to add a difficult modifier.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03359))_
 
 > If you take your time, you can determine specific prices for items such as jewelry, gold and silver, as well as works of art.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03359))_
 
-> Context: The **find** ability is used by the thief to actively identify a location and determine if a trap is set there. This check (success roll) is based on _difficulty_ . In the case of a success, please accurately tell them of the presence of the trap and the difficulty to disarm it, and in the case of a failure, or if a trap is not present in the first place, make sure to tell them that it cannot be found. Never say _no_ , even when there are no traps.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03362))_
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03362))_
+
+> The **find** ability is used by the thief to actively identify a location and determine if a trap is set there. This check (success roll) is based on _difficulty_ . In the case of a success, please accurately tell them of the presence of the trap and the difficulty to disarm it, and in the case of a failure, or if a trap is not present in the first place, make sure to tell them that it cannot be found. Never say _no_ , even when there are no traps.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03363))_
 
 > If successful, the presence of a trap will be sensed at a perilous point, and the game master must inform the player of the type of trap.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03363))_
 
-> Context: You can attempt to **remove** traps discovered through _find_ . Removal also involves attempting a success roll against the trap's difficulty.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03366))_
+### Technical atom 22
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03366))_
+
+> You can attempt to **remove** traps discovered through _find_ . Removal also involves attempting a success roll against the trap's difficulty.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03367))_
 
 > If you fail, the trap will be activated if the dice roll was 6 or more beneath the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03367))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
 
 | **Tief Skill Abilities Table** |
 | --- |
@@ -287,7 +375,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03367))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08366))_
 
 | Ability | Relevant AbilityScore | Equipment Restrictions | Retryinga success roll on the same target |
 | --- | --- | --- | --- |
@@ -333,4 +424,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08366))_

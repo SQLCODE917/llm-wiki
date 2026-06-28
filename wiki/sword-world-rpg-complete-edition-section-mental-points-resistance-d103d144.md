@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mental-points-resistance-d103d144@15fe15fcc0a5b5ce9e73b1d12de81c95
+projection_coverage: section-sword-world-rpg-complete-edition-section-mental-points-resistance-d103d144@26605407e129a313c2ab1c738aa1348e
 ---
 
 # 《 **Mental Points/Resistance** 》
@@ -28,5 +28,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04930))_
+
 > When a character casts a spell on a monster, they must make a success roll using their magic power as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04930))_

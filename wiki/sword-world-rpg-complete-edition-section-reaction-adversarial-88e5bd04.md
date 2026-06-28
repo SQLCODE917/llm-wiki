@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-reaction-adversarial-88e5bd04@73528859186349f4d17a21bf337baaa1
+projection_coverage: section-sword-world-rpg-complete-edition-section-reaction-adversarial-88e5bd04@83a557097f66c562ba055217f34cde0e
 ---
 
 # Reaction=Adversarial
@@ -25,11 +25,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05017))_
+
 > Attack Points=Weapon or fangs: 8 (1) Strike Points=5 Evasion Points=10 (3) Defense Points=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05017))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05018))_
 
 > Life Points/Resistance=8/8 (1) Mental Points/Resistance=8/8 (1) Special Abilities=Silver corrosion? Habitat=Mountains near human villages, forests, caves Languages=Goblin Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05018))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05019))_
 
 > They usually attack with their fangs, but they may also use a piece of wood as a club (in terms of data, they are the same).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05019))_

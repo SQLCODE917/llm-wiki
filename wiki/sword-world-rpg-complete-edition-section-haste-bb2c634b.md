@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-haste-bb2c634b@02fc801ec1a124941fc039c782c08fcb
+projection_coverage: section-sword-world-rpg-complete-edition-section-haste-bb2c634b@1bea6886470337268c5470e83fed38c9
 ---
 
 # **[ Haste ]**
@@ -23,14 +23,27 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02007))_
+
 > Base Mental Power Cost=24 Distance=10 meters Area=One Duration=18 rounds Effect=Doubles the target's agility Type=Target score, physical ability Expansion=Final score, duration, distance, targets
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02007))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02008))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02008))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02010))_
 
 > **Table 5-4: Haste: Agility and Evasion Bonuses**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02010))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
 
 | Target's<br>Agility | Evasion Speed (Points)<br>Bonus |
 | --- | --- |
@@ -54,4 +67,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02010))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_

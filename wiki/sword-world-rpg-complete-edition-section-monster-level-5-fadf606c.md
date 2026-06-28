@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-5-fadf606c@0308b063a321c1e6b4704ae4c7adb139
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-5-fadf606c@f77d388c45f9c6998395155b8dad9333
 ---
 
 # Monster Level=5
@@ -36,17 +36,29 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The giant ant queen is the queen of all giant ants. Her head and chest are almost the same as those of a normal giant ant, but her white abdomen is full of eggs and bloated. Therefore, her body length can reach over 10 meters.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05874))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05874))_
+
+> The giant ant queen is the queen of all giant ants. Her head and chest are almost the same as those of a normal giant ant, but her white abdomen is full of eggs and bloated. Therefore, her body length can reach over 10 meters.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05873))_
 
 > Habitat=Caves, ruins Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05873))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05875))_
 
 > However, if you’re unable to escape, the target score for the success roll required to escape increases by 2 points each time you’re hit by the mucus, increasing to 14, 16…… and so on.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05875))_
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 
 | Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
 | --- | --- | --- | --- | --- | --- |
@@ -62,7 +74,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_
 
 | Level 1-2 | It's no big deal. Just a small problem in a small village |
 | --- | --- |
@@ -88,4 +103,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_

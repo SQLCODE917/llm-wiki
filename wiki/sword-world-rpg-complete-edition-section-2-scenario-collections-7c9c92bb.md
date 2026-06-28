@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-scenario-collections-7c9c92bb@4e57401736eb00a97ac438659a63adff
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-scenario-collections-7c9c92bb@bf79bc8fb140723f4668e00a7dcf259e
 ---
 
 # **2. Scenario Collections**
@@ -27,5 +27,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00126))_
+
 > Although the details of monsters and magical items listed in individual scenarios may differ from the rules in this book, when using them, please play with the details as described in the scenario, with the exception of item prices.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00126))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-work-requests-to-npcs-e516d03f@5c58c5adeed9994e602f087da398d6d1
+projection_coverage: section-sword-world-rpg-complete-edition-section-work-requests-to-npcs-e516d03f@0c574ad27aebbde9b2155c0d6de031df
 ---
 
 # **Work Requests to NPCs**
@@ -36,11 +36,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04785))_
+
 > If it’s a very simple task like those above, you can have it done for _NPC skill level x skill level x 30 gamels_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04785))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04790))_
 
 > If the work _fails_ , you do _not_ have to pay the remainder.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04790))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04791))_
 
 > If you don't have clients, you won't get paid (so just patiently wait for work at the adventurer shop, okay?).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04791))_

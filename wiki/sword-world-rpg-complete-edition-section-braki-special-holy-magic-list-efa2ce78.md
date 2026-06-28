@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-braki-special-holy-magic-list-efa2ce78@2dba554a30651f2d5c6502ffd67247a6
+projection_coverage: section-sword-world-rpg-complete-edition-section-braki-special-holy-magic-list-efa2ce78@7aefd93f2cc4ec64f423fde15de6c63c
 ---
 
 # **Braki Special Holy Magic List**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-braki-spec
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_
 
 | Final Score | Time to regain memories |
 | --- | --- |
@@ -38,4 +42,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_

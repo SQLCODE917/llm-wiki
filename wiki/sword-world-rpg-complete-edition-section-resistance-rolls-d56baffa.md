@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-resistance-rolls-d56baffa@cc6b5c9fe503dfa25308d2d093776470
+projection_coverage: section-sword-world-rpg-complete-edition-section-resistance-rolls-d56baffa@e28ddf4f97c716c789389114a468bd14
 ---
 
 # **Resistance Rolls**
@@ -29,8 +29,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Life force resistance rolls are made to avoid or reduce the effects of physical dangers such as poison, while mental power resistance rolls are made to avoid or reduce the effects of magic or curses.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00672))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00672))_
+
+> Life force resistance rolls are made to avoid or reduce the effects of physical dangers such as poison, while mental power resistance rolls are made to avoid or reduce the effects of magic or curses.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00673))_
 
 > In particular, all checks against magic, even if it causes physical damage, are made with mental power resistance rolls.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00673))_

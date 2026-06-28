@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-unpoison-ring-bd54edb5@dd2dd7c53eede99fd189dba711c8fda4
+projection_coverage: section-sword-world-rpg-complete-edition-section-unpoison-ring-bd54edb5@9bb76d2354297e4eb37c601d25a44ffa
 ---
 
 # **[ Unpoison Ring ]**
@@ -28,23 +28,42 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07384))_
+
 > Rarity=10/15 Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07384))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07385))_
 
 > Form=Thin gold ring
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07385))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07386))_
 
 > Base Trade Price=Number of uses x 1000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07386))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07387))_
 
 > Powers=Eliminate poison or double its effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07387))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07388))_
 
 > If the final score is greater than or equal to the poison’s toxicity score, it can be detoxed.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07388))_
 
-> Context: Whoever wears this ring can place their hands on a person affected by poison and attempt to detox. Make a success roll with a baseline score of 8. If the final score is greater than or equal to the poison’s toxicity score, it can be detoxed. However, if this fails, the poison's effect is doubled. First, damage is doubled. If it’s _not_ a damage poison, the _effect time_ will be doubled. Both _cannot_ be doubled. If _neither_ applies, the game master should make his or her own decision. If this r
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07388))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07388))_
+
+> Whoever wears this ring can place their hands on a person affected by poison and attempt to detox. Make a success roll with a baseline score of 8. If the final score is greater than or equal to the poison’s toxicity score, it can be detoxed. However, if this fails, the poison's effect is doubled. First, damage is doubled. If it’s _not_ a damage poison, the _effect time_ will be doubled. Both _cannot_ be doubled. If _neither_ applies, the game master should make his or her own decision. If this r
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07389))_
 
 > The detox effect can be discovered on final score _10_ when using _treasure_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07389))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rune-rope-975ce72d@694ba02d396a602bbfb99b48012531fa
+projection_coverage: section-sword-world-rpg-complete-edition-section-rune-rope-975ce72d@8507d0e8780570d56f4ec2c0f905730c
 ---
 
 # **[ Rune Rope ]**
@@ -26,26 +26,46 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02013))_
+
 > Base Mental Power Cost=24 Distance=10 meters Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02013))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02014))_
 
 > Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02014))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02015))_
 
 > Effect=Binds the target with invisible rope Type=Target score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02015))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02016))_
 
 > Expansion=Final score, duration, distance, targets
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02016))_
 
-> Context: Note that if the target succeeds on a resistance roll against this spell, it’ll have no effect. When making a check, you may only make a resistance roll against this spell once per round in which the spell is cast. At this time, the result lasts for the duration of the spell.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02019))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02019))_
+
+> Note that if the target succeeds on a resistance roll against this spell, it’ll have no effect. When making a check, you may only make a resistance roll against this spell once per round in which the spell is cast. At this time, the result lasts for the duration of the spell.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02017))_
 
 > Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02017))_
 
-> Context: This spell creates an invisible magical rope, with the effect of binding the target. If the target fails to resist, they will be bound by this rope and become completely unable to move. The poor victim will be unable to take any actions. However, since they can still move their mouth, they can speak and use holy magic. Not even an ogre can break this magical rope.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02018))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02018))_
+
+> This spell creates an invisible magical rope, with the effect of binding the target. If the target fails to resist, they will be bound by this rope and become completely unable to move. The poor victim will be unable to take any actions. However, since they can still move their mouth, they can speak and use holy magic. Not even an ogre can break this magical rope.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02019))_
 
 > When making a check, you may only make a resistance roll against this spell once per round in which the spell is cast.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02019))_

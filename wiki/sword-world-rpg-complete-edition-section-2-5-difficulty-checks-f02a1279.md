@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-difficulty-checks-f02a1279@ba0b79e595dd17096fe6ee9164052385
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-difficulty-checks-f02a1279@8bd31b41c9cc8cafc5d1fba63871058d
 ---
 
 # 2.5 Difficulty Checks
@@ -96,50 +96,82 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Basically, automatic success and automatic failure are _not_ definitive success or definitive failure. It simply means that you succeeded or failed, _not_ that you succeeded very _well_ or failed very _badly_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00596))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00596))_
+
+> Basically, automatic success and automatic failure are _not_ definitive success or definitive failure. It simply means that you succeeded or failed, _not_ that you succeeded very _well_ or failed very _badly_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00597))_
 
 > Conversely, if that player rolls a **2** , that is, if the two dice both roll a 1 ( **double ones** ), the action _fails_ , no matter
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00597))_
 
-> Context: When such bonuses or penalties are applied, the baseline score will go up or down. A player must also calculate these before making a success roll.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00602))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00602))_
+
+> When such bonuses or penalties are applied, the baseline score will go up or down. A player must also calculate these before making a success roll.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00603))_
 
 > On the other hand, if you’re fighting in the dark, then unless your character has darkvision, you cannot see your opponent, so it is not so easy to hit him.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00603))_
 
-> Context: For example, if the person you’re fighting is falling, their movements will be restricted and your attacks will be easier to land. On the other hand, if you’re fighting in the dark, then unless your character has darkvision, you cannot see your opponent, so it is not so easy to hit him.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00603))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00603))_
+
+> For example, if the person you’re fighting is falling, their movements will be restricted and your attacks will be easier to land. On the other hand, if you’re fighting in the dark, then unless your character has darkvision, you cannot see your opponent, so it is not so easy to hit him.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00604))_
 
 > final score {baseline score + 2D ± (bonus, penalty)} ≥ target score → **action is successful**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00604))_
 
-> Context: You tell your companions so. But one of your companions asks you with a difficult look on his face:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00615))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00615))_
+
+> You tell your companions so. But one of your companions asks you with a difficult look on his face:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00616))_
 
 > You (the player) roll the dice. The roll is _8_ . 4+8= _12_ , so it's a success, although just barely.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00616))_
 
-> Context: Some games treat extreme stakes during an action check as a _definitive_ success or failure, and _Sword World RPG_ may do so as well. However, if such a process is _not_ specified, it is _not_ treated as a definitive success/failure. Do be careful. Can you answer this question? Can you answer the question from your character's point of view? _I landed the success roll_ is not an answer. That's an answer from the _player's_ perspective, not the character's.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00619, source-range-870a16bc-00624))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00619, source-range-870a16bc-00624))_
+
+> Some games treat extreme stakes during an action check as a _definitive_ success or failure, and _Sword World RPG_ may do so as well. However, if such a process is _not_ specified, it is _not_ treated as a definitive success/failure. Do be careful. Can you answer this question? Can you answer the question from your character's point of view? _I landed the success roll_ is not an answer. That's an answer from the _player's_ perspective, not the character's.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00622))_
 
 > Even if a bonus or penalty is applied, the roll is still an automatic success if the roll comes up _double sixes_ , and an automatic failure if the roll if it’s _double ones_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00622))_
 
-> Context: The players' dice rolls are otherwise the same. They will be told the baseline score, roll 2D, and modify it with any bonuses or penalties to find a final score. The game master does not say whether the result is _the action succeeded_ or _the action failed_ , because a difficulty check is made when the success or failure of the action is _not known_ to the characters. They must only answer as much as the character can tell from their successes and failures. Let's show how the game master's answ
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00633, source-range-870a16bc-00637))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00633, source-range-870a16bc-00637))_
+
+> The players' dice rolls are otherwise the same. They will be told the baseline score, roll 2D, and modify it with any bonuses or penalties to find a final score. The game master does not say whether the result is _the action succeeded_ or _the action failed_ , because a difficulty check is made when the success or failure of the action is _not known_ to the characters. They must only answer as much as the character can tell from their successes and failures. Let's show how the game master's answ
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00635))_
 
 > final score ≥ target score (difficulty + 2D) → **action succeeds**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00635))_
 
-> Context: However, a player is given only _one_ criteria to determine whether the success roll they made for a difficulty check is a success or a failure.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00644))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00644))_
+
+> However, a player is given only _one_ criteria to determine whether the success roll they made for a difficulty check is a success or a failure.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00646))_
 
 > If the roll is as high as 10 or 11, the success roll is considered to have a very high chance of success.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00646))_
 
-> Context: If the roll is as high as 10 or 11, the success roll is considered to have a very high chance of success. Therefore, if after examining the door, you do not find a trap, the risk is quite low even if you assume that there really are no traps.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00646))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00646))_
+
+> If the roll is as high as 10 or 11, the success roll is considered to have a very high chance of success. Therefore, if after examining the door, you do not find a trap, the risk is quite low even if you assume that there really are no traps.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00647))_
 
 > If the roll is low, such as 3 or 4, then there's a high chance that the success roll has failed.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00647))_

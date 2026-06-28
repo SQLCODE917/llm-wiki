@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-create-undead-b5bfc6c0@d51cdd33cb7c6135918740b8fa024c55
+projection_coverage: section-sword-world-rpg-complete-edition-section-create-undead-b5bfc6c0@208b8a083edc8375b9df07eba9e4d997
 ---
 
 # **[ Create Undead ]**
@@ -34,20 +34,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell's effect only works on those who have some degree of intelligence. At least, if you're not intelligent enough to use language, this spell cannot be cast on you.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01955))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01955))_
+
+> This spell's effect only works on those who have some degree of intelligence. At least, if you're not intelligent enough to use language, this spell cannot be cast on you.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01957))_
 
 > Base Mental Power Cost=24 Distance=Touch Area=One corpse Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01957))_
 
-> Context: This spell's effect only works on those who have some degree of intelligence. At least, if you're not intelligent enough to use language, this spell cannot be cast on you.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01955))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01955))_
+
+> This spell's effect only works on those who have some degree of intelligence. At least, if you're not intelligent enough to use language, this spell cannot be cast on you.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01958))_
 
 > Effect=Turns a corpse into undead Type=Non-removable, lost, ritual Expansion=Target volume Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01958))_
 
-> Context: way. The commands must be extremely simple, at best they can be made to protect a specific location. Even walking alongside you as guards is too difficult for them. For details on human skeletons and zombies, see 13.2.9: Undead (see p. 214).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01961))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01961))_
+
+> way. The commands must be extremely simple, at best they can be made to protect a specific location. Even walking alongside you as guards is too difficult for them. For details on human skeletons and zombies, see 13.2.9: Undead (see p. 214).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01962))_
 
 > If you wish, you can turn non-human animals, fae, youma, titans, mythical beasts, magical beasts, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01962))_

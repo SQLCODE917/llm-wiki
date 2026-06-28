@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hard-lock-357b49f1@83efc3c682c2f218cadfceef8790614c
+projection_coverage: section-sword-world-rpg-complete-edition-section-hard-lock-357b49f1@93ba4c04df421576cb3679443920dcf8
 ---
 
 # **[ Hard Lock ]**
@@ -25,20 +25,34 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell creates a human-shaped stone golem (1 and a half meters tall) from a stone the size of a clenched fist. This simplified version of a stone golem is specifically called a _Stone Servant_ and can be used to engage in combat or simple tasks. A stone servant's power is about 30 if converted to _strength_ , and furthermore, it never gets tired, so it can complete a considerable amount of heavy labor. However, more complex work is beyond a stone servant's hands. Stone servants obey only the
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01739))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01739))_
+
+> This spell creates a human-shaped stone golem (1 and a half meters tall) from a stone the size of a clenched fist. This simplified version of a stone golem is specifically called a _Stone Servant_ and can be used to engage in combat or simple tasks. A stone servant's power is about 30 if converted to _strength_ , and furthermore, it never gets tired, so it can complete a considerable amount of heavy labor. However, more complex work is beyond a stone servant's hands. Stone servants obey only the
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01742))_
 
 > Base Mental Power Cost=9 Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01742))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01743))_
 
 > Area=One object that opens and closes Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01743))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01744))_
 
 > Effect=Puts a magical lock on objects that open and close, such as doors, lids, etc., giving them the same strength as iron Type=Target score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01744))_
 
-> Context: Effect=Puts a magical lock on objects that open and close, such as doors, lids, etc., giving them the same strength as iron Type=Target score
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01744))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01744))_
+
+> Effect=Puts a magical lock on objects that open and close, such as doors, lids, etc., giving them the same strength as iron Type=Target score
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01745))_
 
 > Countered (Overpowered) By: _Unlock_ Expansion=Final score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01745))_

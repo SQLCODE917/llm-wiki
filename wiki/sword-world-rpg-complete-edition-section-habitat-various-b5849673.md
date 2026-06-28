@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-habitat-various-b5849673@db3b36b2d5bb2bd2f2caa58759087cfa
+projection_coverage: section-sword-world-rpg-complete-edition-section-habitat-various-b5849673@5da17fb293b3f3472375efdf6ed8c1e0
 ---
 
 # Habitat=Various
@@ -32,5 +32,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06214))_
+
 > Languages=Those previous Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06214))_

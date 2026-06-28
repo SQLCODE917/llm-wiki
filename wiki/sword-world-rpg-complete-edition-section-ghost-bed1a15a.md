@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ghost-bed1a15a@0dced68d2a8d95afc30271310f8e61db
+projection_coverage: section-sword-world-rpg-complete-edition-section-ghost-bed1a15a@b1e1023a41e55dc5ac1eaf2c25953833
 ---
 
 # **Ghost**
@@ -37,29 +37,48 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Languages=Those previous Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06188))_
+### Technical atom 1
 
-> Context: A ghost is a moving being whose corpse still holds a lingering grudge. Depending on how long ago they died, they can look like zombies (rotting corpses) or skeletons (moving skeletons). Their strength varies considerably depending on which abilities they had in life. The scores listed here are averages. All ability scores will be the same as previous, except for mental power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06189))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06188))_
+
+> Languages=Those previous Perception=Pseudo
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06189))_
+
+> A ghost is a moving being whose corpse still holds a lingering grudge. Depending on how long ago they died, they can look like zombies (rotting corpses) or skeletons (moving skeletons). Their strength varies considerably depending on which abilities they had in life. The scores listed here are averages. All ability scores will be the same as previous, except for mental power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
 
 > Those who had rune master skills can use magic of that level and magic power.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
 
-> Context: Mental power is the only one that’s _previous + 6_ . They have all the skills they had previously. Those who had rune master skills can use magic of that level and magic power. However, they cannot use holy magic (but they _can_ use dark magic). Also, to use ancient magic, they will still need a magical catalyst (such as a magic wand).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
+
+> Mental power is the only one that’s _previous + 6_ . They have all the skills they had previously. Those who had rune master skills can use magic of that level and magic power. However, they cannot use holy magic (but they _can_ use dark magic). Also, to use ancient magic, they will still need a magical catalyst (such as a magic wand).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06192))_
 
 > If a ghost's corpse is destroyed, it will always attempt to _possess_ someone nearby.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06192))_
 
-> Context: Mental power is the only one that’s _previous + 6_ . They have all the skills they had previously. Those who had rune master skills can use magic of that level and magic power. However, they cannot use holy magic (but they _can_ use dark magic). Also, to use ancient magic, they will still need a magical catalyst (such as a magic wand).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
+
+> Mental power is the only one that’s _previous + 6_ . They have all the skills they had previously. Those who had rune master skills can use magic of that level and magic power. However, they cannot use holy magic (but they _can_ use dark magic). Also, to use ancient magic, they will still need a magical catalyst (such as a magic wand).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06193))_
 
 > When its lingering regrets and grudges are cleared, or when its mental points are reduced to 0 or less due to a _Shade_ , etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06193))_
 
-> Context: Mental power is the only one that’s _previous + 6_ . They have all the skills they had previously. Those who had rune master skills can use magic of that level and magic power. However, they cannot use holy magic (but they _can_ use dark magic). Also, to use ancient magic, they will still need a magical catalyst (such as a magic wand).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06191))_
+
+> Mental power is the only one that’s _previous + 6_ . They have all the skills they had previously. Those who had rune master skills can use magic of that level and magic power. However, they cannot use holy magic (but they _can_ use dark magic). Also, to use ancient magic, they will still need a magical catalyst (such as a magic wand).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06194))_
 
 > When attacking a ghost in the form of a skeleton with a weapon, you cannot deal additional critical damage with a bladed weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06194))_

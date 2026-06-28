@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-vow-6c313969@f1dda4d51c11467ebd6c7279650a0ec1
+projection_coverage: section-sword-world-rpg-complete-edition-section-vow-6c313969@54c86ec9f7328525ce9e7a8182ed624c
 ---
 
 # 《 **Vow** 》
@@ -20,8 +20,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: There is no need for a god (the game master) to respond to nonsense such as, _If I die in a trap here, I won't be able to believe properly, so let's ask if there is a trap at this door._
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02837))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02837))_
+
+> There is no need for a god (the game master) to respond to nonsense such as, _If I die in a trap here, I won't be able to believe properly, so let's ask if there is a trap at this door._
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02839))_
 
 > When a priest wants to do something, they can make a _vow_ to their god.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02839))_

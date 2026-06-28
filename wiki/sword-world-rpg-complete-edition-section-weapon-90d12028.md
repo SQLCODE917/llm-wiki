@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-90d12028@3afb94115fe85f5d607e2ba087690fc1
+projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-90d12028@0d10884fa84db52e303f8401c28a06f8
 ---
 
 # **Weapon**
@@ -20,8 +20,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+
+> Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
 | **Table 1-8: Weapons-1** |
 | --- |
@@ -49,10 +54,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
-> Context: To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))_
+
+> To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00433))_
 
 | **Table 1-8: Weapons-2** |
 | --- |
@@ -88,10 +97,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00433))_
 
-> Context: The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+
+> The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
 
 | **Table 1-9: Armor** |
 | --- |
@@ -111,10 +124,16 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00811))_
 
 > If you already have a weapon ready, you can of course attack with that weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00811))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_
 
 | Type | Attack Power Mod. | Strike Power Mod. | Critical Target |
 | --- | --- | --- | --- |
@@ -196,4 +215,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00811))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_

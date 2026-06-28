@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ranger-e622c794@2e07bade6f7d3e663c16b0ec8ca34bf1
+projection_coverage: section-sword-world-rpg-complete-edition-section-ranger-e622c794@81f063872113d66b35d116e76f328dff
 ---
 
 # **[ Ranger ]**
@@ -27,6 +27,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
+
 | Shield Name | Req. Str. | Price |
 | --- | --- | --- |
 | Small shield | 1 | 60 |
@@ -43,16 +47,23 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
 
-> Context: For weapons, there are no restrictions. You should buy a weapon whose required strength is the same as your own strength. Ranger does _not_ include the ability to fight with _melee_ weapons, but it _does_ include the ability to handle _projectiles_ . Therefore, it is a good idea to choose a projectile, if you have to choose a weapon. On Table 1-8: Weapons, they are indicated as _throwable_ , _made for throwing_ , and _shooting_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00457))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00457))_
+
+> For weapons, there are no restrictions. You should buy a weapon whose required strength is the same as your own strength. Ranger does _not_ include the ability to fight with _melee_ weapons, but it _does_ include the ability to handle _projectiles_ . Therefore, it is a good idea to choose a projectile, if you have to choose a weapon. On Table 1-8: Weapons, they are indicated as _throwable_ , _made for throwing_ , and _shooting_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00455))_
 
 > If you want to make use of your ranger skill, your _armor_ must be _light_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00455))_
 
-> Context: If you want to make use of your ranger skill, your _armor_ must be _light_ . Specifically, it is armor that requires up to _half of your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00455))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00455))_
+
+> If you want to make use of your ranger skill, your _armor_ must be _light_ . Specifically, it is armor that requires up to _half of your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00457))_
 
 > Therefore, it is a good idea to choose a projectile, if you have to choose a weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00457))_

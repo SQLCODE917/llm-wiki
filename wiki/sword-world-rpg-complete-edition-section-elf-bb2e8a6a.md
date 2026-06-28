@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-elf-bb2e8a6a@bf6d8283fed905fbe29f5a7a355b760f
+projection_coverage: section-sword-world-rpg-complete-edition-section-elf-bb2e8a6a@bac007582215f6988af9acb6a0fccaac
 ---
 
 # 【 **Elf** 】
@@ -33,8 +33,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
+
+> Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00329))_
 
 | **dexterity**<br> **agility**<br> **intelligence**<br> **strength**<br> **life force** | =**A**+**B**<br>=**B**+**C**<br>=**C**+**D**<br>=**E**+**F**<br>=**F**+**G** |
 | --- | --- |
@@ -50,10 +55,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00329))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00332))_
 
 | Sub-AbilityScore | Human | Dwarf | Grassrunner | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -83,10 +92,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00332))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00336))_
 
 | AbilityScore | Human | Grassrunner | Dwarf | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -112,7 +125,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00336))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
 
 | 2D | Background | StartingSkills | Exp. Pts. | Money |
 | --- | --- | --- | --- | --- |
@@ -148,4 +164,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00336))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-critical-target-variation-2f822610@5299e8297dba2cbbe5a91c83b8261de8
+projection_coverage: section-sword-world-rpg-complete-edition-section-critical-target-variation-2f822610@582f4c6eecca6c1d10d85242a384a6f3
 ---
 
 # **Critical Target Variation**
@@ -22,8 +22,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07743))_
+
 > **Table 16-2 Shield Optional Rules**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07743))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 | Shield<br>Name | Evasion<br>Speed Mod. | Attack<br>Power Mod. |
 | --- | --- | --- |
@@ -41,10 +48,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07743))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07746))_
 
 > **Table 16-3 Armor Optional Rules**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07746))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 | Armor Name | Evasion Speed<br>Mod. | Defense<br>Mod. | Critical Target<br>Change | Anti-strangling<br>Prot. |
 | --- | --- | --- | --- | --- |
@@ -64,4 +77,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07746))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_

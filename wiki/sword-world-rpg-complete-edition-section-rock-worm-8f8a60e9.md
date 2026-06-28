@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rock-worm-8f8a60e9@c7634eb63efedc8f6bdbddeee62f9481
+projection_coverage: section-sword-world-rpg-complete-edition-section-rock-worm-8f8a60e9@6e0df9cc03fa948d6fba70c2c7a0f180
 ---
 
 # **Rock Worm**
@@ -29,8 +29,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: They will not approach gold or silver, perhaps because they cannot digest them with their digestive juices. Therefore, they do not appear near veins of precious metals.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05934))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05934))_
+
+> They will not approach gold or silver, perhaps because they cannot digest them with their digestive juices. Therefore, they do not appear near veins of precious metals.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
 
 > Armor cannot reduce it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-humans-5b3748e2@8ce857fb51439e643e576c1662a7ff01
+projection_coverage: section-sword-world-rpg-complete-edition-section-humans-5b3748e2@cf9722e756f51e727bbcfe9ddae685cc
 ---
 
 # **Humans**
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, source-range-870a16bc-00360))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, source-range-870a16bc-00360))_
+
+> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00358))_
 
 | Race | Restrictions／Special Abilities | Pre-Adventure<br>Exp. Pts. | Money |
 | --- | --- | --- | --- |
@@ -41,4 +46,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, 
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00358))_

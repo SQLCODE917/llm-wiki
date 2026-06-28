@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-base-mental-power-cost-32-73fe7550@fc9987169b0c4d7b8924d423fad416fd
+projection_coverage: section-sword-world-rpg-complete-edition-section-base-mental-power-cost-32-73fe7550@7604db36da6068ec076f9949167ae1e9
 ---
 
 # Base Mental Power Cost=32
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-base-menta
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -48,4 +52,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

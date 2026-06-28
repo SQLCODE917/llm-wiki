@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-nightmare-incubus-succubus-dream-spirit-3e693d04@403e1bb5f568adf27e7e27cbf1067fe0
+projection_coverage: section-sword-world-rpg-complete-edition-section-nightmare-incubus-succubus-dream-spirit-3e693d04@7b4c796dd839ad4bb049cabcab85832e
 ---
 
 # **[ Nightmare ] (Incubus, Succubus/Dream Spirit)**
@@ -34,8 +34,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02717))_
+
 > Base Mental Power Cost=40 Distance=Infinite Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02717))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02718))_
 
 > Duration=As long as the ritual continues Effect=Make the target weak by giving them nightmares every night Type=Target score, curse Expansion=Final score Resist=Reduced effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02718))_

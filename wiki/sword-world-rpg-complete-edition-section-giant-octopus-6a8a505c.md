@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-octopus-6a8a505c@39f838650d3e8cf675eba99b6ae403a3
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-octopus-6a8a505c@dd39786c8e74c06ee97f1b7a4fa51fa3
 ---
 
 # **Giant Octopus**
@@ -23,11 +23,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: A killer octopus will use all of its tentacles to attack one target, constricting the opponent with its entire body. Please follow the rules for strangling (see p. 236).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06022))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06022))_
+
+> A killer octopus will use all of its tentacles to attack one target, constricting the opponent with its entire body. Please follow the rules for strangling (see p. 236).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06025))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06025))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06027))_
 
 > A giant octopus can use each of its eight tentacles to perform a strangling (see p.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06027))_

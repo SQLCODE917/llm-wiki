@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-critical-target-variation-973b7225@8096db379277b22d391ceba5882f90a1
+projection_coverage: section-sword-world-rpg-complete-edition-section-critical-target-variation-973b7225@d4a086421b7c683fcecaaf321f635817
 ---
 
 # **Critical Target Variation**
@@ -20,6 +20,10 @@ From [[sword-world-rpg-complete-edition]].
 - Under the basic rules, when using the _Rating Table_ to determine damage, a 10 or greater is considered a _critical_ , but with this rule, the chance of a _critical_ is _different for each weapon_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07720))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 | Shield<br>Name | Evasion<br>Speed Mod. | Attack<br>Power Mod. |
 | --- | --- | --- |
@@ -37,7 +41,10 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 | Armor Name | Evasion Speed<br>Mod. | Defense<br>Mod. | Critical Target<br>Change | Anti-strangling<br>Prot. |
 | --- | --- | --- | --- | --- |
@@ -57,4 +64,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_

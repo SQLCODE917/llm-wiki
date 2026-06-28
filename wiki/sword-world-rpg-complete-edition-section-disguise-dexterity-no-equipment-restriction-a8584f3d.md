@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-disguise-dexterity-no-equipment-restriction-a8584f3d@4009b68882d798e0423bd2622e8ece2a
+projection_coverage: section-sword-world-rpg-complete-edition-section-disguise-dexterity-no-equipment-restriction-a8584f3d@c0f5d8759fb03014d7624e6f70a508af
 ---
 
 # **[** ⑭ **Disguise [Dexterity] (No equipment restriction)**
@@ -25,8 +25,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is the ability to change one's face and appearance using special makeup. It's easy to just act like a completely different person, but it's difficult to disguise yourself as someone specific. Things like height and physique can be changed to a certain extent, but there are still limits.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03355))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03355))_
+
+> This is the ability to change one's face and appearance using special makeup. It's easy to just act like a completely different person, but it's difficult to disguise yourself as someone specific. Things like height and physique can be changed to a certain extent, but there are still limits.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_
 
 > If the thief is disguised as a specific person and they encounter an acquaintance of that person, they must make a success roll to determine success or failure.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_

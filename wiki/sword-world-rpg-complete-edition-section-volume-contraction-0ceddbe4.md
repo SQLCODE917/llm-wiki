@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-volume-contraction-0ceddbe4@e4028e6c12d8e214d676ee4596c5775c
+projection_coverage: section-sword-world-rpg-complete-edition-section-volume-contraction-0ceddbe4@4cf14c4983b59a247696f10f03d4645f
 ---
 
 # 《 **Volume Contraction** 》
@@ -20,5 +20,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01405))_
+
 > Similar to area contraction, you can also reduce the volume of the targeted object or space.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01405))_

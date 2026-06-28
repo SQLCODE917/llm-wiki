@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dryad-6e04be4a@e1c3e50830f80f5c29c6163087f3a77d
+projection_coverage: section-sword-world-rpg-complete-edition-section-dryad-6e04be4a@e5dc17221bb869d278a964973da23bbd
 ---
 
 # **[ Dryad ]**
@@ -27,29 +27,50 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Leprechauns are mind spirits who control chaos. Its appearance is that of a completely naked imp, with no features that indicate its gender. In addition to normal movement, they can also perform teleportation. They cannot take any other actions during the round in which this action was chosen The teleportation destination is within the leprechaun's view. Leprechauns are spirits, but in this world they have a complete form, and will attack by biting. Other than that, they also attack (confuse) yo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
+
+> Leprechauns are mind spirits who control chaos. Its appearance is that of a completely naked imp, with no features that indicate its gender. In addition to normal movement, they can also perform teleportation. They cannot take any other actions during the round in which this action was chosen The teleportation destination is within the leprechaun's view. Leprechauns are spirits, but in this world they have a complete form, and will attack by biting. Other than that, they also attack (confuse) yo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05200))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05200))_
 
-> Context: Leprechauns are mind spirits who control chaos. Its appearance is that of a completely naked imp, with no features that indicate its gender. In addition to normal movement, they can also perform teleportation. They cannot take any other actions during the round in which this action was chosen The teleportation destination is within the leprechaun's view. Leprechauns are spirits, but in this world they have a complete form, and will attack by biting. Other than that, they also attack (confuse) yo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
+
+> Leprechauns are mind spirits who control chaos. Its appearance is that of a completely naked imp, with no features that indicate its gender. In addition to normal movement, they can also perform teleportation. They cannot take any other actions during the round in which this action was chosen The teleportation destination is within the leprechaun's view. Leprechauns are spirits, but in this world they have a complete form, and will attack by biting. Other than that, they also attack (confuse) yo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05201))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05201))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05202))_
 
 > Agility=19 Movement Speed=19 Number=One Frequency=Very Rare Intellect=Human Reaction=Violent Attack Points=Barehanded: 12 (5) Strike Points=6 Evasion Points=14 (7) Defense Points=7 Life Points/Resistance=10/12 (5)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05202))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05203))_
 
 > Mental Points/Resistance=20/14 (7) Special Abilities=Charm (Resist target score=14)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05203))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05206))_
 
 > Languages=Silent spirit Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05206))_
 
-> Context: A mad dryad uses the spirit magic " _Charm_ " to cause division among allies, and tries to block their opponent's movements with " _Binding_ ". Using these spells does not consume any of the dryad’s mental points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05208))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05208))_
+
+> A mad dryad uses the spirit magic " _Charm_ " to cause division among allies, and tries to block their opponent's movements with " _Binding_ ". Using these spells does not consume any of the dryad’s mental points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05209))_
 
 > If magic cannot be cast on the target, the dryad will attack barehanded.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05209))_

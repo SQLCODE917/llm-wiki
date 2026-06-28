@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-imago-2162bddc@f228e76ba76bd5ef137d6e92a9699e82
+projection_coverage: section-sword-world-rpg-complete-edition-section-imago-2162bddc@82e44390710c6c6a485df581672619f5
 ---
 
 # **Imago**
@@ -28,8 +28,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Those with the ranger skill may be able to sense an attack from this dangerous creature with their _sense danger_ ability. Make a success roll against target score 16, using _ranger skill level + intelligence bonus_ as the baseline score. If you succeed, you'll be able to sense the hole just before it opens under your feet and jump to the side.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05908))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05908))_
+
+> Those with the ranger skill may be able to sense an attack from this dangerous creature with their _sense danger_ ability. Make a success roll against target score 16, using _ranger skill level + intelligence bonus_ as the baseline score. If you succeed, you'll be able to sense the hole just before it opens under your feet and jump to the side.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05910))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05910))_

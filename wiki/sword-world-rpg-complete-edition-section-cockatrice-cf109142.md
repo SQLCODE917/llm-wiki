@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-cockatrice-cf109142@f5d1206bc72d82b2223724232b8da53a
+projection_coverage: section-sword-world-rpg-complete-edition-section-cockatrice-cf109142@cff2bd7ce270f830e1d66d90cfad9508
 ---
 
 # **[ Cockatrice ]**
@@ -28,20 +28,34 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: It is said that there are very rare centaurs who have very advanced knowledge and can use magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05376))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05376))_
+
+> It is said that there are very rare centaurs who have very advanced knowledge and can use magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05378))_
 
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05378))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05382))_
 
 > Habitat=Wilderness
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05382))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05383))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05383))_
 
-> Context: A cockatrice is a flightless bird about the size of a human with the legs and tail of a lizard. Its beak has the ability to petrify living creatures, and anyone hit by a cockatrice (regardless of whether they're dealt damage or not) must make a life force resistance roll against target score 11. If you fail, you will instantly turn to stone.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05384))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05384))_
+
+> A cockatrice is a flightless bird about the size of a human with the legs and tail of a lizard. Its beak has the ability to petrify living creatures, and anyone hit by a cockatrice (regardless of whether they're dealt damage or not) must make a life force resistance roll against target score 11. If you fail, you will instantly turn to stone.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05385))_
 
 > If you find and eat henruda in advance, you can neutralize the cockatrice's magical power and prevent being petrified.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05385))_

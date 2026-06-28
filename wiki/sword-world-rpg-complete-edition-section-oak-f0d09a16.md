@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-oak-f0d09a16@9baa25fb7260996bd9136835df4feea3
+projection_coverage: section-sword-world-rpg-complete-edition-section-oak-f0d09a16@9188b784aa139440f19047b0d4470154
 ---
 
 # **[ Oak ]**
@@ -26,8 +26,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell can be used on objects that open and close, such as doors, treasure chest lids, etc. to place a magical lock on them. As a result, the door or lid will never open unless you chant the password you chose when casting the spell. This password does _not_ have to be in high ancient. This spell creates a 1-meter tall, goblin-esque wood golem from a tree branch. This simplified version of a wood golem came to be called an _Oak_ because the material used was many oak tree branches, so that e
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01678, source-range-870a16bc-01682))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01678, source-range-870a16bc-01682))_
+
+> This spell can be used on objects that open and close, such as doors, treasure chest lids, etc. to place a magical lock on them. As a result, the door or lid will never open unless you chant the password you chose when casting the spell. This password does _not_ have to be in high ancient. This spell creates a 1-meter tall, goblin-esque wood golem from a tree branch. This simplified version of a wood golem came to be called an _Oak_ because the material used was many oak tree branches, so that e
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01681))_
 
 > Base Mental Power Cost=8 Distance=Touch Area=An oak tree branch Duration=1 hour Effect=Create a child-sized wood golem and make it fight Type=Non-removable Expansion=Duration, targets Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01681))_

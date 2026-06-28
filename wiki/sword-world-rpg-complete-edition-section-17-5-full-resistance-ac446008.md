@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-17-5-full-resistance-ac446008@70964b84fde94ee0ca8dcdcffbc77223
+projection_coverage: section-sword-world-rpg-complete-edition-section-17-5-full-resistance-ac446008@5783dc6eb11a2491304a08acea70e7c9
 ---
 
 # 17.5 Full Resistance
@@ -42,11 +42,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Basically, a mage's staff is used as a magic catalyst, but if the game master approves, you may use another object as a magic catalyst.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08012))_
+### Technical atom 1
 
-> Context: behind the curtain on the left, as well as the ceiling, behind me, _and_ under my feet are _all_ dangerous, so I'll full resist anything that might come from those places!"), he or she can add restrictions or refuse the player's declaration. If you try to pay attention to what's behind you, which you can't see, you _usually_ neglect what's in front of you.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08029))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08012))_
+
+> Basically, a mage's staff is used as a magic catalyst, but if the game master approves, you may use another object as a magic catalyst.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08029))_
+
+> behind the curtain on the left, as well as the ceiling, behind me, _and_ under my feet are _all_ dangerous, so I'll full resist anything that might come from those places!"), he or she can add restrictions or refuse the player's declaration. If you try to pay attention to what's behind you, which you can't see, you _usually_ neglect what's in front of you.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08030))_
 
 > When danger comes from an _unexpected_ direction or location, you receive _no_ bonus to resistance rolls and must make a check normally.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08030))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-merman-leader-d77a9515@534396759f31cc0d0d982ca5eebdc505
+projection_coverage: section-sword-world-rpg-complete-edition-section-merman-leader-d77a9515@90425be7f27c3f563daebcfccbefb7a9
 ---
 
 # **Merman Leader**
@@ -23,11 +23,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04984))_
+
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04984))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04985))_
 
 > Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04985))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04987))_
 
 > Languages=Merman Perception=Five senses (illumination)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04987))_

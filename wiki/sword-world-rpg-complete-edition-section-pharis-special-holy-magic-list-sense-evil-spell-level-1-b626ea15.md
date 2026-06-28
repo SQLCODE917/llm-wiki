@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-pharis-special-holy-magic-list-sense-evil-spell-level-1-b626ea15@c62177e8770bfca31ebcfe0f8efb8cd7
+projection_coverage: section-sword-world-rpg-complete-edition-section-pharis-special-holy-magic-list-sense-evil-spell-level-1-b626ea15@0a00c7fec5433f01797edd364167fce3
 ---
 
 # **Pharis Special Holy Magic List [ Sense Evil ] (Spell Level=1)**
@@ -25,6 +25,10 @@ From [[sword-world-rpg-complete-edition]].
 - This spell has no effect on humans, fae, youma, titans, mythical beasts, magical beasts, animals, titan creatures, plants, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03084))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_
 
 | Final Score | Time to regain memories |
 | --- | --- |
@@ -48,34 +52,59 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_
 
-> Context: The spells listed here can only be used by those who believe in a specific god among characters with the priest skill.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03070))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03070))_
+
+> The spells listed here can only be used by those who believe in a specific god among characters with the priest skill.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03072))_
 
 > Base Mental Power Cost=4 Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03072))_
 
-> Context: The spells listed here can only be used by those who believe in a specific god among characters with the priest skill.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03070))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03070))_
+
+> The spells listed here can only be used by those who believe in a specific god among characters with the priest skill.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03073))_
 
 > Area=One Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03073))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03074))_
 
 > Effect=Read the evil thoughts in an opponent's mind Type=Detection Expansion=Distance, targets Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03074))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03076))_
 
 > **[ Banish ] (Spell Level=8)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03076))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03077))_
 
 > Base Mental Power Cost=32
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03077))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03078))_
 
 > Distance=30 meters Area=One individual Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03078))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03079))_
 
 > Effect=Remove what isn't natural from the material world
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03079))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03080))_
 
 > Type=Counters (Overpowers): _Summon magic_ Expansion=Final score, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03080))_

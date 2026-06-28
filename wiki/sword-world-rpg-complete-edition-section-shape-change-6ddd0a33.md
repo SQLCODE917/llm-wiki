@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-shape-change-6ddd0a33@8dc48672dc758eafe98e235c1cfae360
+projection_coverage: section-sword-world-rpg-complete-edition-section-shape-change-6ddd0a33@7caf79cbf20b9abd1cce95d4d542a066
 ---
 
 # **[ Shape Change ]**
@@ -34,11 +34,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01835))_
+
 > Base Mental Power Cost=20 Distance=Caster Area=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01835))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01836))_
 
 > Duration=Depends on caster's intention Effect=Change the caster’s appearance Type=Target score Expansion=Final score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01836))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01837))_
 
 > The caster can cancel the spell's effect at any time, but once it's canceled, you cannot take on that form again unless you cast the spell again.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01837))_

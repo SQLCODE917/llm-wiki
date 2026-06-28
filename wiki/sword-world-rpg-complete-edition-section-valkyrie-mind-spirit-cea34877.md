@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-valkyrie-mind-spirit-cea34877@a464f0eac1550904b3ca5f3abe18599e
+projection_coverage: section-sword-world-rpg-complete-edition-section-valkyrie-mind-spirit-cea34877@67618f1de0664c06b2fd3066cbd13cbb
 ---
 
 # **(Valkyrie/Mind Spirit)**
@@ -24,8 +24,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: _Fanaticism_ heightens the courage of the target to the utmost limit, completely erasing fear. As a result, you can add a +2 bonus to attack power (points) in combat. However, as a recoil, you will suffer a -2 penalty to your evasion speed (points). This can be cast on others, but the target can attempt to resist the spell.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02368))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02368))_
+
+> _Fanaticism_ heightens the courage of the target to the utmost limit, completely erasing fear. As a result, you can add a +2 bonus to attack power (points) in combat. However, as a recoil, you will suffer a -2 penalty to your evasion speed (points). This can be cast on others, but the target can attempt to resist the spell.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02367))_
 
 > Base Mental Power Cost=6 Distance=10 meters Area=One Duration=18 rounds Effect=Raise the target's spirit Type=Mind Expansion=Final score, duration, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02367))_

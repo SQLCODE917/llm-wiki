@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-slice-slider-69ecf6a7@82dda81009f3c7de0753820655a51f2f
+projection_coverage: section-sword-world-rpg-complete-edition-section-slice-slider-69ecf6a7@e9ccbb5054d8e35e1e618c6b49d093c2
 ---
 
 # 《 **Slice Slider** 》
@@ -16,17 +16,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: power resistance roll against target score 18. If you fail, you will be instantly petrified.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07095))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07095))_
+
+> power resistance roll against target score 18. If you fail, you will be instantly petrified.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07097))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07097))_
 
-> Context: power resistance roll against target score 18. If you fail, you will be instantly petrified.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07095))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07095))_
+
+> power resistance roll against target score 18. If you fail, you will be instantly petrified.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07098))_
 
 > Enchanter=Unknown Form=Scimitar
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07098))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07099))_
 
 > Required Strength=14 (Strike power 14) Base Trade Price=83,000 gamels Powers=+2 to attack power and bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07099))_

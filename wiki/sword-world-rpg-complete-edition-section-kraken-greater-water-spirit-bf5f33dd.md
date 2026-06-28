@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-kraken-greater-water-spirit-bf5f33dd@ff19c02044534068973529f9b3e8857f
+projection_coverage: section-sword-world-rpg-complete-edition-section-kraken-greater-water-spirit-bf5f33dd@10f62384cf81c8e44858a6d3f7c0b98f
 ---
 
 # **(Kraken/Greater Water Spirit)**
@@ -24,17 +24,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02702))_
+
 > Base Mental Power Cost=32 Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02702))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02703))_
 
 > Area=20 meter width
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02703))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02704))_
 
 > Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02704))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02705))_
 
 > Effect=Can control the direction of water flow
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02705))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02706))_
 
 > Type=Target score Countered (Overpowered) By: _Maelstrom_ Expansion=Final score, duration, distance Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02706))_

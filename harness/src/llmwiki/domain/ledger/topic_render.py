@@ -20,11 +20,9 @@ from llmwiki.domain.ledger.coverage import (
 )
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.renderer import atom_block, atom_context_block
+from llmwiki.domain.ledger.topic_relations import RelatedTopicLink
 from llmwiki.domain.ledger.topic_terms import topic_matcher
 from llmwiki.domain.ledger.topics import SourceTopic
-
-_MAX_STATEMENTS = 14
-_MAX_ATOMS = 6
 
 
 def render_topic_page(
@@ -33,6 +31,7 @@ def render_topic_page(
     *,
     wiki_page_locator: str,
     source_page_id: str,
+    related_pages: tuple[RelatedTopicLink, ...] = (),
 ) -> RenderedPage:
     body = PageBodyBuilder()
     entries: list[ProjectionCoverageEntry] = []
@@ -40,12 +39,7 @@ def render_topic_page(
     body.add(f"What [[{source_page_id}]] covers about {topic.label.lower()}:\n\n")
 
     body.add("## Statements\n\n")
-    if len(topic.entry_ids) > _MAX_STATEMENTS:
-        body.add(
-            f"_Showing {_MAX_STATEMENTS} of {len(topic.entry_ids)} statements selected "
-            "for this topic._\n\n"
-        )
-    for entry_id in topic.entry_ids[:_MAX_STATEMENTS]:
+    for entry_id in topic.entry_ids:
         entry = ledger.entry(entry_id)
         if entry is None or not (entry.normalized_text or entry.source_text).strip():
             continue
@@ -60,12 +54,7 @@ def render_topic_page(
     if rendered_atoms:
         matcher = topic_matcher(topic.match_terms)
         body.add("\n## Technical atoms\n\n")
-        if len(rendered_atoms) > _MAX_ATOMS:
-            body.add(
-                f"_Showing {_MAX_ATOMS} of {len(rendered_atoms)} technical atoms selected "
-                "for this topic._\n\n"
-            )
-        for index, atom in enumerate(rendered_atoms[:_MAX_ATOMS], start=1):
+        for index, atom in enumerate(rendered_atoms, start=1):
             body.add(f"### Technical atom {index}\n\n")
             context = best_atom_context(ledger.atom_contexts(atom.technical_atom_id), matcher)
             if context is not None:
@@ -90,9 +79,32 @@ def render_topic_page(
                 )
             )
 
+    if related_pages:
+        body.add("\n## Related pages\n\n")
+        for link in related_pages:
+            span = body.add(f"- [[{link.page_id}]] - {link.relation}{_evidence_note(link)}\n")
+            entries.append(
+                _coverage(
+                    wiki_page_locator,
+                    "related-page-link",
+                    span,
+                    selected=link.shared_entry_ids,
+                    atom_id=link.shared_atom_ids[0] if link.shared_atom_ids else "",
+                )
+            )
+
     body.add(f"\n## Source\n\n- [[{source_page_id}]]\n")
     text = body.text()
     return RenderedPage(text, short_digest(text, 32), ProjectionCoverage(tuple(entries)))
+
+
+def _evidence_note(link: RelatedTopicLink) -> str:
+    parts: list[str] = []
+    if link.shared_entry_count:
+        parts.append(f"{link.shared_entry_count} shared statement(s)")
+    if link.shared_atom_count:
+        parts.append(f"{link.shared_atom_count} shared atom(s)")
+    return f" ({', '.join(parts)})" if parts else ""
 
 
 def _coverage(

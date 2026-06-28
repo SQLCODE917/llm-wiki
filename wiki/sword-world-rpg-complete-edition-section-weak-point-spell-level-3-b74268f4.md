@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-weak-point-spell-level-3-b74268f4@83bc8ea8f94c835609ba98da79b6599e
+projection_coverage: section-sword-world-rpg-complete-edition-section-weak-point-spell-level-3-b74268f4@366ca38aa287a9a3fc032a581758c3c8
 ---
 
 # **[ Weak Point ] (Spell Level=3)**
@@ -27,14 +27,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If you cast this spell, you can turn a failure into a success only _once_ on a success roll to see if you know something, such as _appraise treasure_ or _monster check_ . If a knowledge-related success roll _fails_ , the player can optionally make it a _success_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03118))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03118))_
+
+> If you cast this spell, you can turn a failure into a success only _once_ on a success roll to see if you know something, such as _appraise treasure_ or _monster check_ . If a knowledge-related success roll _fails_ , the player can optionally make it a _success_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03121))_
 
 > Base Mental Power Cost=15 Distance=10 meters Area=One Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03121))_
 
-> Context: This spell shows you your target's weak point and guides your attack there. This effect is expressed as a -1 to the attacker's critical target. In other words, the normal critical target of 10 becomes _9_ (9 to _8_ for a thief).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03124))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03124))_
+
+> This spell shows you your target's weak point and guides your attack there. This effect is expressed as a -1 to the attacker's critical target. In other words, the normal critical target of 10 becomes _9_ (9 to _8_ for a thief).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03126))_
 
 > If a character has this spell cast on them and a monster with fixed strike points attacks, the character's defense roll will be affected.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03126))_

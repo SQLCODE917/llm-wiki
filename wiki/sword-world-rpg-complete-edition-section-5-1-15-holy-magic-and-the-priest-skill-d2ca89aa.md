@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-15-holy-magic-and-the-priest-skill-d2ca89aa@e615427028b4b5d70b3acbe1ac991c2c
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-15-holy-magic-and-the-priest-skill-d2ca89aa@1f2a468e08affcebc252f7e92e3a7f21
 ---
 
 # 5.1.15 Holy Magic and the Priest Skill
@@ -174,53 +174,98 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02751))_
+
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02751))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02753))_
 
 > Effect=Instantly freezes the target, killing them instantly
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02753))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02755))_
 
 > Expansion=Final score, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02755))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02760))_
 
 > Base Mental Power Cost=45 Distance=500 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02760))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02761))_
 
 > Area=50 meter radius water surface Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02761))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02762))_
 
 > Effect=Creates a maelstrom that sinks floating people and objects Type=Target score Counters (Overpowers): _Current_ Expansion=Final score, duration, distance, area
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02762))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02763))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02763))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02765))_
 
 > If a ship is caught in the whirlpool, the person at the helm must make a success roll using the _ship steering_ ability.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02765))_
 
-> Context: If the ship is swallowed up by the whirlpool, everyone on board will be thrown into the whirlpool. In that case, make a success roll using the _swim_ ability to determine whether you drown.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02767))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02767))_
+
+> If the ship is swallowed up by the whirlpool, everyone on board will be thrown into the whirlpool. In that case, make a success roll using the _swim_ ability to determine whether you drown.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02770))_
 
 > Base Mental Power Cost=50
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02770))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02771))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02771))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02772))_
 
 > Area=A space within a 100 meter radius from the caster Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02772))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02788))_
 
 > If you try to use magic for a purpose that is far _removed_ from the god's will, it may not work at all.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02788))_
 
-> Context: There are no restrictions on armor or weapons to use the priest skill, and priests can cast magic simply by chanting holy prayers. However, this action must be in accordance with the _will_ of the god you believe in. If you try to use magic for a purpose that is far _removed_ from the god's will, it may not work at all. Also, a priest who loses _faith_ immediately loses their priest skill.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02788))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02788))_
+
+> There are no restrictions on armor or weapons to use the priest skill, and priests can cast magic simply by chanting holy prayers. However, this action must be in accordance with the _will_ of the god you believe in. If you try to use magic for a purpose that is far _removed_ from the god's will, it may not work at all. Also, a priest who loses _faith_ immediately loses their priest skill.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02789))_
 
 > Those with the priest skill must choose only _one_ god to worship.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02789))_
 
-> Context: There is no need for a god (the game master) to respond to nonsense such as, _If I die in a trap here, I won't be able to believe properly, so let's ask if there is a trap at this door._
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02837))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02837))_
+
+> There is no need for a god (the game master) to respond to nonsense such as, _If I die in a trap here, I won't be able to believe properly, so let's ask if there is a trap at this door._
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02839))_
 
 > When a priest wants to do something, they can make a _vow_ to their god.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02839))_

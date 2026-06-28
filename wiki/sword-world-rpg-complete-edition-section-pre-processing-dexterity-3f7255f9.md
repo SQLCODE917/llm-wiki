@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-pre-processing-dexterity-3f7255f9@84e6aaa62d17de329ba6ce6d0cdefa32
+projection_coverage: section-sword-world-rpg-complete-edition-section-pre-processing-dexterity-3f7255f9@575302b2f057c4fbbb62945cd9cf5967
 ---
 
 # **[** ⑨ **Pre-processing [Dexterity]]**
@@ -26,8 +26,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: To use this skill, you are subject to the same equipment restrictions as when using the ranger skill. Also, as mentioned above, the hunter skill is similar to the ranger skill, so please refer to the ranger skill section for overlapping _abilities_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03661))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03661))_
+
+> To use this skill, you are subject to the same equipment restrictions as when using the ranger skill. Also, as mentioned above, the hunter skill is similar to the ranger skill, so please refer to the ranger skill section for overlapping _abilities_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03663))_
 
 > You can also use it to take apart and smoke meat.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03663))_

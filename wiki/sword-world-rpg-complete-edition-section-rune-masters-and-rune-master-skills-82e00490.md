@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rune-masters-and-rune-master-skills-82e00490@b9319572784c2e844d882083caf391f6
+projection_coverage: section-sword-world-rpg-complete-edition-section-rune-masters-and-rune-master-skills-82e00490@59566792473798a593fc07d96eb7bf6a
 ---
 
 # **Rune Masters and Rune Master Skills**
@@ -35,8 +35,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: For those who have acquired multiple rune master skills, consider the level of spells you can use for each type of magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01233))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01233))_
+
+> For those who have acquired multiple rune master skills, consider the level of spells you can use for each type of magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01234))_
 
 > **magic power** = magic skill level + intelligence bonus
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01234))_

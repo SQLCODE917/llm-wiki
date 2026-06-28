@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-when-it-s-possible-to-change-attack-targets-d76c6c47@5d81c907a26a4a067d174b6ddcdaccb2
+projection_coverage: section-sword-world-rpg-complete-edition-section-when-it-s-possible-to-change-attack-targets-d76c6c47@7ad5bbe059aca2382733ee0758722e57
 ---
 
 # **When It’s Possible to Change Attack Targets**
@@ -26,5 +26,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00742))_
+
 > Just because a companion has knocked down an enemy in front of you does _not_ mean that you can attack a _different_ enemy.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00742))_

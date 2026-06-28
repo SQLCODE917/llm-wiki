@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-eternal-child-dose-effect-make-the-person-who-took-it-037e6269@495981bd1611274311687a727e39bd02
+projection_coverage: section-sword-world-rpg-complete-edition-section-eternal-child-dose-effect-make-the-person-who-took-it-037e6269@20904056b41ca6c0a9628f67824aa347
 ---
 
 # **[ Eternal Child (Dose) ]** Effect=Make the person who took it
@@ -23,11 +23,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04563))_
+
 > Toxicity Score=14 Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04563))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04564))_
 
 > Effect Start Time=1 hour later Effect Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04564))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04565))_
 
 > If you are detoxed, you will recover (grow) within a few days, but unless you are detoxed, you will have to act with the same physique and mentality as a child.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04565))_

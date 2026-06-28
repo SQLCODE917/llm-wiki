@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magic-d2094049@8bf1a2f329f2da68e2a8e0cddab1d55b
+projection_coverage: section-sword-world-rpg-complete-edition-section-magic-d2094049@47af8ce9681bad67be192ae0fb1860b2
 ---
 
 # 《 **Magic** 》
@@ -21,8 +21,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. For example, when you cast the ancient magic _Light_
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01374))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01374))_
+
+> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. For example, when you cast the ancient magic _Light_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01372))_
 
 | Expansion<br>Rate | Area Expansion<br>Length | Volume Expansion<br>Length |
 | --- | --- | --- |
@@ -54,10 +59,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01374))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01372))_
 
-> Context: The summoned familiar and the sorcerer are always in mental contact, so they can communicate in a way similar to telepathy and can also share sensory organs. The caster can use their familiar's sensory organs to see and hear, and vice versa. Also, when you give a command to your familiar, the familiar will try to execute it, but there are natural limits to what it can actually do depending on the familiar's physical abilities. Abilities of each familiar are listed on the table, but you can find 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01757, source-range-870a16bc-01761))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01757, source-range-870a16bc-01761))_
+
+> The summoned familiar and the sorcerer are always in mental contact, so they can communicate in a way similar to telepathy and can also share sensory organs. The caster can use their familiar's sensory organs to see and hear, and vice versa. Also, when you give a command to your familiar, the familiar will try to execute it, but there are natural limits to what it can actually do depending on the familiar's physical abilities. Abilities of each familiar are listed on the table, but you can find
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01760))_
 
 | Animal Name | Life Points | Mental Points | Abilities |
 | --- | --- | --- | --- |
@@ -81,7 +90,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01757, 
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01760))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02005))_
 
 | Target's<br>Agility | Evasion Speed (Points)<br>Penalty |
 | --- | --- |
@@ -105,7 +117,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01760))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02005))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
 
 | Target's<br>Agility | Evasion Speed (Points)<br>Bonus |
 | --- | --- |
@@ -129,7 +144,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02005))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_
 
 | Final Score | Time to regain memories |
 | --- | --- |
@@ -153,7 +171,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -187,10 +208,14 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
-> Context: Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))_
+
+> Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04387))_
 
 | 10th level | Royal capital level of a large country |
 | --- | --- |
@@ -212,10 +237,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04387))_
 
-> Context: Rather than having these appear as _+1 swords_ , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and a history, as a way to enjoy the atmosphere of Alecrast. Here, as a guideline for rewards the game master should give to characters, is a list of prices of magical daggers, one-handed swords, and two-handed swords with +1 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))_
+
+> Rather than having these appear as _+1 swords_ , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and a history, as a way to enjoy the atmosphere of Alecrast. Here, as a guideline for rewards the game master should give to characters, is a list of prices of magical daggers, one-handed swords, and two-handed swords with +1 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07018))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -255,10 +284,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07018))_
 
-> Context: Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07027))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -298,10 +331,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07027))_
 
-> Context: Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07035))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -341,10 +378,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07035))_
 
-> Context: Similar to weapons, it's recommended to give each piece of magical armor its own name and lore by referencing the descriptions of magical armor that follow, which helps enhance the atmosphere of Alecrast. Here, we provide a price list of non-metallic or ring mail armor with _+1 power_ as a guideline for game masters when rewarding characters. For armor, items that exceed the _required strength_ often see decreased demand, so higher _required strength_ doesn't necessarily mean higher prices. This
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07165))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07165))_
+
+> Similar to weapons, it's recommended to give each piece of magical armor its own name and lore by referencing the descriptions of magical armor that follow, which helps enhance the atmosphere of Alecrast. Here, we provide a price list of non-metallic or ring mail armor with _+1 power_ as a guideline for game masters when rewarding characters. For armor, items that exceed the _required strength_ often see decreased demand, so higher _required strength_ doesn't necessarily mean higher prices. This
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -374,7 +415,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07165))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07176))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -406,10 +450,14 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07176))_
 
-> Context: Here is a list of prices of magical nonmetal or ring mail armor with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07183))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07183))_
+
+> Here is a list of prices of magical nonmetal or ring mail armor with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07184))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -439,10 +487,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07183))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07184))_
 
-> Context: Here is a list of prices of magical metal armor with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))_
+
+> Here is a list of prices of magical metal armor with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07190))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -474,10 +526,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07190))_
 
-> Context: Here is a list of prices of magical nonmetal or ring mail armor with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07196))_
+### Technical atom 15
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07196))_
+
+> Here is a list of prices of magical nonmetal or ring mail armor with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07197))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -507,10 +563,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07196))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07197))_
 
-> Context: Here is a list of prices of magical metal armor with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+### Technical atom 16
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+
+> Here is a list of prices of magical metal armor with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07202))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -542,10 +602,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07202))_
 
-> Context: This is a price list for magical shields with enchantments. For shields with +2 or higher enchantment, small shields tend to be more expensive than large shields due to differences in demand. For the same reason, high-quality large shields +1/+2 are more expensive than large shields +2/+3. Shields requiring strength of 13 cannot be used by most adventurers.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))_
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))_
+
+> This is a price list for magical shields with enchantments. For shields with +2 or higher enchantment, small shields tend to be more expensive than large shields due to differences in demand. For the same reason, high-quality large shields +1/+2 are more expensive than large shields +2/+3. Shields requiring strength of 13 cannot be used by most adventurers.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07208))_
 
 | Shield | Price<br>(Gamels) |
 | --- | --- |
@@ -577,7 +641,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07208))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07549))_
 
 | 2D | Result |
 | --- | --- |
@@ -609,4 +676,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07208))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07549))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-slowness-128516d1@4a8910ed05eb3ab71e1d71957f7d89d4
+projection_coverage: section-sword-world-rpg-complete-edition-section-slowness-128516d1@8ccfd1fea12949c76f6b554283e33a66
 ---
 
 # **Slowness**
@@ -20,6 +20,10 @@ From [[sword-world-rpg-complete-edition]].
 - Also decreases the baseline score of related abilities. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01785))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02005))_
 
 | Target's<br>Agility | Evasion Speed (Points)<br>Penalty |
 | --- | --- |
@@ -43,4 +47,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02005))_

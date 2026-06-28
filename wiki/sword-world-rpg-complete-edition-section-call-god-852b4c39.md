@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-call-god-852b4c39@7c03d282067ae93cd5fd360582472c6d
+projection_coverage: section-sword-world-rpg-complete-edition-section-call-god-852b4c39@284c77f4bfbc0a189aa402e8ebd3c3e9
 ---
 
 # **[ Call God ]**
@@ -31,14 +31,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04118))_
+
 > Base Mental Power Cost=50
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04118))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04119))_
 
 > Distance=Touch Area=One sacrifice Duration=Permanent Effect=Summon a dark god Type=Target score, ritual Expansion=Final score Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04119))_
 
-> Context: This spell is almost the same as the holy magic of the same name, except for its duration and the fact that it summons a god (wicked god) into the body of a sacrifice rather than the caster. Even wicked gods who have lost contact with the material world will be able to use their full power if summoned with this
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04120))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04120))_
+
+> This spell is almost the same as the holy magic of the same name, except for its duration and the fact that it summons a god (wicked god) into the body of a sacrifice rather than the caster. Even wicked gods who have lost contact with the material world will be able to use their full power if summoned with this
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04123))_
 
 > If the person being sacrificed is close to a god (regardless of whether it's a god of light or a god of darkness), you can add +1 to +6 to the final score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04123))_

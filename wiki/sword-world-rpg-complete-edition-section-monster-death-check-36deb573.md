@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-death-check-36deb573@31e8577a04072b95814ff71b481072bd
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-death-check-36deb573@5ad63b2f8f6ae4a651384426fc34fbad
 ---
 
 # **Monster Death Check**
@@ -22,5 +22,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01100))_
+
 > Monsters with 0 or negative life points must also make a check to see if they live or die.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01100))_

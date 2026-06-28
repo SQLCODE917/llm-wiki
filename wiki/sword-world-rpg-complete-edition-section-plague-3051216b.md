@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-plague-3051216b@f38caefa5e1745d468d27794b22a4a09
+projection_coverage: section-sword-world-rpg-complete-edition-section-plague-3051216b@e8b09792d7a2a4663b1a08353f5727f9
 ---
 
 # **[ Plague ]**
@@ -27,14 +27,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04099))_
+
 > Basic Mental Power Cost=45
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04099))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04100))_
 
 > Distance=Touch Area=One Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04100))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04101))_
 
 > Effect=Infect your opponent with a highly contagious plague
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04101))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04103))_
 
 > Expansion=Final score Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04103))_

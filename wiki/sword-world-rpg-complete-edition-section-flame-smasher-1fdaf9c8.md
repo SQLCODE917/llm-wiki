@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-flame-smasher-1fdaf9c8@9a12eb2b3f09db2649a7803c26e73ceb
+projection_coverage: section-sword-world-rpg-complete-edition-section-flame-smasher-1fdaf9c8@22b90138842a6f32b10671d63d11bd50
 ---
 
 # 《 **Flame Smasher** 》
@@ -21,14 +21,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07118))_
+### Technical atom 1
 
-> Context: Since this is always spouting flames (unless it’s in its sheath), it has +10 to strike power, just like _Fire Weapon_ . Therefore, its strike power is 25 (30 with two hands).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07118))_
+
+> Rarity=14
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> Since this is always spouting flames (unless it’s in its sheath), it has +10 to strike power, just like _Fire Weapon_ . Therefore, its strike power is 25 (30 with two hands).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07119))_
 
 > Enchanter=Shiva, "The Friend of Salamander"
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07119))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
 
 > Since this is always spouting flames (unless it’s in its sheath), it has +10 to strike power, just like _Fire Weapon_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-create-buau-zombie-56fed6f3@d23e1156d334d3e51cb1dff13ce89bab
+projection_coverage: section-sword-world-rpg-complete-edition-section-create-buau-zombie-56fed6f3@59cd6de6452717bc3ec2c390ead585d9
 ---
 
 # **[ Create Buau Zombie ]**
@@ -23,17 +23,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is a spell that creates a mage's staff, which is a magical catalyst necessary for sorcerers to use ancient magic. All you need is a wooden staff of an appropriate length, and by casting this spell on that staff, you'll create a mage's staff. You can also use this spell to create a _magical catalyst_ other than a mage's staff.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01967))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01967))_
+
+> This is a spell that creates a mage's staff, which is a magical catalyst necessary for sorcerers to use ancient magic. All you need is a wooden staff of an appropriate length, and by casting this spell on that staff, you'll create a mage's staff. You can also use this spell to create a _magical catalyst_ other than a mage's staff.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01969))_
 
 > Base Mental Power Cost=30
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01969))_
 
-> Context: This is a spell that creates a mage's staff, which is a magical catalyst necessary for sorcerers to use ancient magic. All you need is a wooden staff of an appropriate length, and by casting this spell on that staff, you'll create a mage's staff. You can also use this spell to create a _magical catalyst_ other than a mage's staff.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01967))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01967))_
+
+> This is a spell that creates a mage's staff, which is a magical catalyst necessary for sorcerers to use ancient magic. All you need is a wooden staff of an appropriate length, and by casting this spell on that staff, you'll create a mage's staff. You can also use this spell to create a _magical catalyst_ other than a mage's staff.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01970))_
 
 > Distance=Touch Area=One corpse Duration=Permanent Effect=Turns a corpse into a buau zombie Type=Non-removable, lost
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01970))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01971))_
 
 > Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01971))_

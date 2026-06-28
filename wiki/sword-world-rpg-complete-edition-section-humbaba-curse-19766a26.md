@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-humbaba-curse-19766a26@17062a57ff0811221c3e99dd5fece189
+projection_coverage: section-sword-world-rpg-complete-edition-section-humbaba-curse-19766a26@3c519da93d81f59d451eb5a195dec66d
 ---
 
 # **[ Humbaba Curse ]**
@@ -22,8 +22,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04719))_
+
 > Symptoms=Extreme fever, vomiting, diarrhea, shortness of breath
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04719))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04720))_
 
 > Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04720))_

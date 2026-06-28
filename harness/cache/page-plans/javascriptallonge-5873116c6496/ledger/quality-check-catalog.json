@@ -301,8 +301,8 @@
       }
     ]
   },
-  "quality_check_catalog_artifact_id": "quality-check-catalog-dfb37f29d0f4637d",
-  "quality_check_catalog_fingerprint": "dfb37f29d0f4637d",
+  "quality_check_catalog_artifact_id": "quality-check-catalog-d27c45b62689f4dd",
+  "quality_check_catalog_fingerprint": "d27c45b62689f4dd",
   "quality_finding_severity_policy": {
     "reason_severity": {
       "audit-metric": "info",
@@ -431,6 +431,7 @@
         "disposition-count",
         "source-backed-position",
         "cross-source-relationship",
+        "related-page-link",
         "quality-report",
         "ledger-quality-report-artifact",
         "quality-finding",
@@ -517,6 +518,7 @@
         "disposition-count",
         "source-backed-position",
         "cross-source-relationship",
+        "related-page-link",
         "quality-report",
         "ledger-quality-report-artifact",
         "quality-finding",

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-languages-none-7b4975cf@baf521604325bd88a5fd3e0eea9e68e7
+projection_coverage: section-sword-world-rpg-complete-edition-section-languages-none-7b4975cf@858a719ce18f91bc5205732ebf627082
 ---
 
 # Languages=None
@@ -21,11 +21,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: A gas stalker is a Stalker created using a heavy, foul-smelling gas. Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor. When it materializes, it appears as a naked devil with green skin and crazy bloodshot eyes.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
+
+> A gas stalker is a Stalker created using a heavy, foul-smelling gas. Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor. When it materializes, it appears as a naked devil with green skin and crazy bloodshot eyes.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06497))_
 
 > Perception=Pseudo, Magic while in ghostly form
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06497))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
 
 > Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_

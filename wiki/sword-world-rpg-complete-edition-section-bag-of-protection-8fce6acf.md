@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bag-of-protection-8fce6acf@0e4ac93df4721fd959a5d87ff139e2d1
+projection_coverage: section-sword-world-rpg-complete-edition-section-bag-of-protection-8fce6acf@06c3cd4d421753191927de827430f509
 ---
 
 # **[ Bag of Protection ]**
@@ -25,14 +25,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07578))_
+
 > Rarity=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07578))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07579))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07579))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07580))_
 
 > Form=A 20 x 20cm bag made of a mysterious brown material
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07580))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07581))_
 
 > Base Trade Price=250,000 gamels Powers=Protects objects put inside the bag from detection magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07581))_

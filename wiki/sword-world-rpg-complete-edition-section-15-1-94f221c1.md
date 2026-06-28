@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-15-1-94f221c1@332fcc19491cd8ed2dea9886513d9a83
+projection_coverage: section-sword-world-rpg-complete-edition-section-15-1-94f221c1@0b5e60946fc67ffc159a9676ea7aa51c
 ---
 
 # **15.1**
@@ -23,5 +23,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07663))_
+
 > If they _cannot_ achieve it, they will only get **500** points.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07663))_

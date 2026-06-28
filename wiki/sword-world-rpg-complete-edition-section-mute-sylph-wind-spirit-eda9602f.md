@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mute-sylph-wind-spirit-eda9602f@53eae22b7461f6c2db4c4a6eef79714b
+projection_coverage: section-sword-world-rpg-complete-edition-section-mute-sylph-wind-spirit-eda9602f@a5acf5e98508231ea4dad46f18210c05
 ---
 
 # **[ Mute ] (Sylph/Wind Spirit)**
@@ -24,11 +24,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is a spell that heals the body by borrowing the power of an unknown spirit of life. When you cast this spell, it can completely heal any wound instantly, but it cannot regenerate a severed arm or leg. Also, although this spell can only be cast _by_ women, you _can_ choose a man as the _target_ of the spell.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02447))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02447))_
+
+> This is a spell that heals the body by borrowing the power of an unknown spirit of life. When you cast this spell, it can completely heal any wound instantly, but it cannot regenerate a severed arm or leg. Also, although this spell can only be cast _by_ women, you _can_ choose a man as the _target_ of the spell.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02450))_
 
 > Base Mental Power Cost=9 Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02450))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02451))_
 
 > Area=One Duration=18 rounds Effect=Negate sounds made by the target Type=Expansion=Final score, duration, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02451))_

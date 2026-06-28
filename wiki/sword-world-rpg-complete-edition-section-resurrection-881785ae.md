@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-resurrection-881785ae@4b854b925f5dd227e5fb481d0e08c75c
+projection_coverage: section-sword-world-rpg-complete-edition-section-resurrection-881785ae@861cd404efdabd2c1c54c147fc4d26a5
 ---
 
 # **[ Resurrection ]**
@@ -35,23 +35,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Priests who have given their bodies to others cannot be resurrected using _Resurrection_ , because they have lost their soul containers (although they _can_ have another priest cast _Recall Spirit_ on them...).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03032))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03032))_
+
+> Priests who have given their bodies to others cannot be resurrected using _Resurrection_ , because they have lost their soul containers (although they _can_ have another priest cast _Recall Spirit_ on them...).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03034))_
 
 > Base Mental Power Cost=45 Distance=Touch Area=One Duration=Instant Effect=Bring the dead back to life Type=Ritual Expansion=Final score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03034))_
 
-> Context: Priests who have given their bodies to others cannot be resurrected using _Resurrection_ , because they have lost their soul containers (although they _can_ have another priest cast _Recall Spirit_ on them...).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03032))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03032))_
+
+> Priests who have given their bodies to others cannot be resurrected using _Resurrection_ , because they have lost their soul containers (although they _can_ have another priest cast _Recall Spirit_ on them...).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03035))_
 
 > In other words, this spell is useless if the soul is destroyed, and those who have become undead must first save their soul with the _Save Soul_ spell.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03035))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03037))_
 
 > If you die within one day, you can be resurrected with a final score of 20 or greater, but for each day that passes, the required final value score will increase by 1, such as 21, 22, 23......
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03037))_
 
-> Context: since you died, the _less_ likely you are to come back to life. If you die within one day, you can be resurrected with a final score of 20 or greater, but for each day that passes, the required final value score will increase by 1, such as 21, 22, 23...... etc. Once this spell fails, the caster _cannot_ attempt _Resurrection_ on the same dead person (it will always fail) until their magic power increases. Also, since it’s not possible to reverse your age, those who die due to old age _cannot_ be
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03037))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03037))_
+
+> since you died, the _less_ likely you are to come back to life. If you die within one day, you can be resurrected with a final score of 20 or greater, but for each day that passes, the required final value score will increase by 1, such as 21, 22, 23...... etc. Once this spell fails, the caster _cannot_ attempt _Resurrection_ on the same dead person (it will always fail) until their magic power increases. Also, since it’s not possible to reverse your age, those who die due to old age _cannot_ be
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03038))_
 
 > You can add +6 to the final score of the spell if you have a corpse.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03038))_

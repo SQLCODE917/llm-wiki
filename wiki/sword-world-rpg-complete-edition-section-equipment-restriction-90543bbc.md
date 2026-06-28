@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-90543bbc@c76ab205f0116e359590ecff1657c0ea
+projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-90543bbc@90137f8d6be5dad7b312003fb28989b0
 ---
 
 # **(Equipment restriction)**
@@ -24,8 +24,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is the ability to remember what you witness. For example, even if a book is written in a language you don't know, by using this ability you can memorize the shape of each letter exactly as it is, even if you don't know the meaning, and can write it down later. Thieves do this habitually all the time. A success roll should be made when _recalling_ something, not when _trying to memorize_ something. The game master should determine the target score based on the contents being recalled and the
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03315))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03315))_
+
+> This is the ability to remember what you witness. For example, even if a book is written in a language you don't know, by using this ability you can memorize the shape of each letter exactly as it is, even if you don't know the meaning, and can write it down later. Thieves do this habitually all the time. A success roll should be made when _recalling_ something, not when _trying to memorize_ something. The game master should determine the target score based on the contents being recalled and the
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03318))_
 
 > You can also choose and listen to a specific sound from a mixture of various sounds.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03318))_

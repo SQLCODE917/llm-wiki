@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-common-cold-41dff7b6@82604f1aec2988f9b071f66c955a9c31
+projection_coverage: section-sword-world-rpg-complete-edition-section-common-cold-41dff7b6@ae7f9435ace8b3c0c5457d8bcfa44a02
 ---
 
 # **[ Common Cold ]**
@@ -25,11 +25,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Illness details are expressed as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04642))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04642))_
+
+> Illness details are expressed as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04644))_
 
 > Symptoms=Fever, cough, sneezing, runny nose, diarrhea, arthritis Rarity=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04644))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04646))_
 
 > Infection Power=Moderate
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04646))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-zombie-767c2449@d333b5593eff8c2bb8c112cb900e7028
+projection_coverage: section-sword-world-rpg-complete-edition-section-zombie-767c2449@30e4b04e489ba9760e6ed62bc96b96e4
 ---
 
 # **[ Zombie ]**
@@ -24,11 +24,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06134))_
+
 > Monster Level=1
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06134))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06135))_
 
 > Rarity=9 Agility=7 Movement Speed=7 Number=Several to dozens Frequency=Frequent Intellect=Obeys commands Reaction=Command-based Attack Points=Barehanded:8 (1) Strike Points=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06135))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06137))_
 
 > Habitat=Ruins Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06137))_

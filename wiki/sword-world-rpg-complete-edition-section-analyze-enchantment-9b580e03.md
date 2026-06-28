@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-analyze-enchantment-9b580e03@f9a81833ae9660db15fc5691311dd44f
+projection_coverage: section-sword-world-rpg-complete-edition-section-analyze-enchantment-9b580e03@5b4b5081e1cd085c14f04195a04c8a38
 ---
 
 # **[ Analyze Enchantment ]**
@@ -23,14 +23,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01944))_
+
 > Base Mental Power Cost=30
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01944))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01945))_
 
 > Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01945))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01946))_
 
 > Area=One object Duration=Instant Effect=Appraise and identify magic power applied to objects Type=Detection Counters (Overpowers): _Seal Enchantment_ Expansion=Final score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01946))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01947))_
 
 > If it's a regular magical item, you can almost certainly identify the magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01947))_

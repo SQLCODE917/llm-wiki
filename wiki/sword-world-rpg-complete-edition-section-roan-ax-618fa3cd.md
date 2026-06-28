@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-roan-ax-618fa3cd@47ea18dbdb418a6e80226fcf242419e2
+projection_coverage: section-sword-world-rpg-complete-edition-section-roan-ax-618fa3cd@6902e9444395b001ff720827b4c46f0e
 ---
 
 # 《 **Roan Ax** 》
@@ -16,11 +16,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07155))_
+
 > Rarity=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07155))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07156))_
 
 > Enchanter=Roan, “The Imperfect” Form=Battle-ax
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07156))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07157))_
 
 > Required Strength=18 (Strike power 18, 23 with two hands) Base Trade Price=7100 gamels Powers=+1 to bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07157))_

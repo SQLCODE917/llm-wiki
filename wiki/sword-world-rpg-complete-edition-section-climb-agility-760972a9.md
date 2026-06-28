@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-climb-agility-760972a9@a1fd0981df32f0b0f9d1eb065cad13bc
+projection_coverage: section-sword-world-rpg-complete-edition-section-climb-agility-760972a9@1ed29805c2166684d1c11ec23737cf19
 ---
 
 # **[** ⑥ **Climb [Agility] ]**
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb time, only double ones will result in a failure.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, source-range-870a16bc-03549))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, source-range-870a16bc-03549))_
+
+> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb time, only double ones will result in a failure.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
 
 | **Table 6-1: Climb by Skill** |
 | --- |
@@ -37,4 +42,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, 
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_

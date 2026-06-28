@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-counters-overpowers-aa3649a6@d0f3661b280287826687bc999c30241e
+projection_coverage: section-sword-world-rpg-complete-edition-section-counters-overpowers-aa3649a6@53ef7c922c32be835fc87aa288f7d5d0
 ---
 
 # 《 **Counters (Overpowers)** 》
@@ -37,26 +37,42 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When casting _counters (negates):_ magic to cancel the effect of certain magic, if the magic that was cast prior has a _target score_ , then according to the definition of _magic with a target score_ , the magic that's cast after _cannot_ cancel the prior magic unless its final score is greater than or equal to the determined _target score_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01437))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01437))_
+
+> When casting _counters (negates):_ magic to cancel the effect of certain magic, if the magic that was cast prior has a _target score_ , then according to the definition of _magic with a target score_ , the magic that's cast after _cannot_ cancel the prior magic unless its final score is greater than or equal to the determined _target score_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01439))_
 
 > When certain magic is cast against other magic, it can cancel the effect of the prior magic but still take its own effect afterwards.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01439))_
 
-> Context: For example, the ancient magic _Darkness_ can nullify the effects of the spirit magic _Will-O-Wisp_ and still close the surrounding area in darkness, which means _Darkness_ itself is more effective.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01440))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01440))_
+
+> For example, the ancient magic _Darkness_ can nullify the effects of the spirit magic _Will-O-Wisp_ and still close the surrounding area in darkness, which means _Darkness_ itself is more effective.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01441))_
 
 > In the case of magic that does not take effect if resisted, if the target _does_ resist it, the magic will _not_ take its effect, and the effect of the _prior_ magic will continue.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01441))_
 
-> Context: The other, is when the prior magic has a _target score_ . In this case, according to the definition of _magic with a target score_ , the magic cast after will _not_ take effect unless its final score is greater than or equal to the determined _target score_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01442))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01442))_
+
+> The other, is when the prior magic has a _target score_ . In this case, according to the definition of _magic with a target score_ , the magic cast after will _not_ take effect unless its final score is greater than or equal to the determined _target score_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01444))_
 
 > ① First, confirm the _target score (= final score)_ of the magic cast prior (if you forgot, determine it now).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01444))_
 
-> Context: ② Next, the one casting the magic must roll 2D to find their final score (by adding their magic power). Also, all magic _counters (overpowers)_ itself. Therefore, if certain magic takes effect, and you cast that same magic on the same target _multiple_ times, the effect will _not_ be cumulative.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01446, source-range-870a16bc-01451))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01446, source-range-870a16bc-01451))_
+
+> ② Next, the one casting the magic must roll 2D to find their final score (by adding their magic power). Also, all magic _counters (overpowers)_ itself. Therefore, if certain magic takes effect, and you cast that same magic on the same target _multiple_ times, the effect will _not_ be cumulative.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01449))_
 
 > ⑤ If the target _successfully resisted_ in ④, the new magic cast will _not_ take effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01449))_

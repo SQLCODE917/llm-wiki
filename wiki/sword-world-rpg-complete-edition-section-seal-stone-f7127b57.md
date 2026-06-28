@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-seal-stone-f7127b57@ad289aca845a104c5dd2ee8ea473cf50
+projection_coverage: section-sword-world-rpg-complete-edition-section-seal-stone-f7127b57@ac120e9a49db5f788f65fd17fd637910
 ---
 
 # **[ Seal Stone ]**
@@ -27,20 +27,36 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This jar is a magical jar that can seal things from another world, such as the spirit world, within it. It’s said to be able to seal not only lesser spirits such as salamander and sylph, but _also_ greater spirits such as djinn and efreet.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07489))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07489))_
+
+> This jar is a magical jar that can seal things from another world, such as the spirit world, within it. It’s said to be able to seal not only lesser spirits such as salamander and sylph, but _also_ greater spirits such as djinn and efreet.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07492))_
 
 > Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07492))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07493))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07493))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07494))_
 
 > Form=A crystal-like stone about 10cm in diameter
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07494))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07495))_
 
 > Powers=Seals a human soul
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07495))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07496))_
 
 > Base Trade Price=480,000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07496))_

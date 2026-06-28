@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-acid-cloud-00d72087@65884ed92d8f8478cc5981230cb7f80a
+projection_coverage: section-sword-world-rpg-complete-edition-section-acid-cloud-00d72087@339fab78be063701656cef9b9f6440d5
 ---
 
 # **[ Acid Cloud ]**
@@ -23,11 +23,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01939))_
+
 > Base Mental Power Cost=30
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01939))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01940))_
 
 > Distance=30 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01940))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01942))_
 
 > When you cast this spell, you can turn the air within its area of effect into highly acidic poison gas, dealing strike power 30 damage to everything within it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01942))_

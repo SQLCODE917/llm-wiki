@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-gizmo-889d776c@1d6f679bfff361e444dfa16435a315bc
+projection_coverage: section-sword-world-rpg-complete-edition-section-gizmo-889d776c@0448c572746fb3522c50e147a9f5b73e
 ---
 
 # **Gizmo**
@@ -22,23 +22,40 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Stalkers naturally follow the commands of their casters, but now that all the casters are dead, they remember the last command they were given and faithfully try to carry it out. Stalkers that were created but abandoned without being given any commands will act according to their violent tendencies, indiscriminately attacking anyone they come across.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06472))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06472))_
+
+> Stalkers naturally follow the commands of their casters, but now that all the casters are dead, they remember the last command they were given and faithfully try to carry it out. Stalkers that were created but abandoned without being given any commands will act according to their violent tendencies, indiscriminately attacking anyone they come across.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06475))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06475))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06476))_
 
 > Rarity=15 Agility=10 Movement Speed=13 Number=One to several Frequency=Rare Intellect=None Reaction=Violent Attack Points=- Strike Points=Evasion Points=10 (3) Defense Points=5 Life Points/Resistance=14/11 (4) Mental Points/Resistance=-/11 (4)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06476))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06477))_
 
 > Special Abilities=Noxious gas (Toxicity score 10, strike power 10, bonus damage 3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06477))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06479))_
 
 > Habitat=Stagnant swamps Languages=None Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06479))_
 
-> Context: Gizmos are amorphous black gasses around 2 meters in diameter, which were failed attempts at stalkers. They live by inhaling the stench of decay emitted by dead animals. If there are no animal carcasses nearby, they will also try to kill living creatures and turn them into corpses.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06480))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06480))_
+
+> Gizmos are amorphous black gasses around 2 meters in diameter, which were failed attempts at stalkers. They live by inhaling the stench of decay emitted by dead animals. If there are no animal carcasses nearby, they will also try to kill living creatures and turn them into corpses.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06481))_
 
 > Even if a gizmo's attack hits, it does not deal damage by itself.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06481))_

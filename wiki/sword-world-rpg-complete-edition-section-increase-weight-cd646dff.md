@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-increase-weight-cd646dff@4a5f7df66c19b5daeb8dc981b157478e
+projection_coverage: section-sword-world-rpg-complete-edition-section-increase-weight-cd646dff@e47333c50929efffd035455697424e8a
 ---
 
 # **[ Increase Weight ]**
@@ -30,17 +30,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell can cause all sounds occurring in a space within a 1-meter radius around the caster to be generated elsewhere. This spell can also be used within a more narrow area of effect, so you can just transfer your own words. At this time, sounds within the area of effect will not be heard at all from that location, and you will not be able to choose and transfer sounds.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01719))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01719))_
+
+> This spell can cause all sounds occurring in a space within a 1-meter radius around the caster to be generated elsewhere. This spell can also be used within a more narrow area of effect, so you can just transfer your own words. At this time, sounds within the area of effect will not be heard at all from that location, and you will not be able to choose and transfer sounds.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01722))_
 
 > Base Mental Power Cost=9
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01722))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01723))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01723))_
 
-> Context: has the effect of increasing required strength by +1 (strike power does not change). When used on other objects, consider it to have the effect of increasing their weight by 10%.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01726))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01726))_
+
+> has the effect of increasing required strength by +1 (strike power does not change). When used on other objects, consider it to have the effect of increasing their weight by 10%.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01728))_
 
 > If this spell would cause a weapon or armor's required strength to exceed its owner's strength, that character cannot act.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01728))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-natural-recovery-b5a45cfc@45ad1dfcd47dfea7f926564fbee71a97
+projection_coverage: section-sword-world-rpg-complete-edition-section-natural-recovery-b5a45cfc@10c2cdb00ebae645d3f714cb587e1a39
 ---
 
 # **Natural Recovery**
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01196))_
+
 > If someone with the **healer skill** is nursing them, that character can recover even more life force each day.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01196))_

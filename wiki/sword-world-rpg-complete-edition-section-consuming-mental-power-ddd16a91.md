@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-consuming-mental-power-ddd16a91@7779452c39c225abc3b55a9ed7e2b02f
+projection_coverage: section-sword-world-rpg-complete-edition-section-consuming-mental-power-ddd16a91@db1e497b60eff4f07456d0f1bd6da1ec
 ---
 
 # **Consuming Mental Power**
@@ -23,8 +23,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If the one on whom the magic is being cast chooses _not_ to resist the magic, it will _definitely_ take effect so long as the one casting the magic does _not_ roll double ones. You’re also allowed to choose to _not resist_ magic like _Fire Bolt_ , which will definitely result in a loss if it's cast on you....... but that probably won't benefit you in any way.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01328))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01328))_
+
+> If the one on whom the magic is being cast chooses _not_ to resist the magic, it will _definitely_ take effect so long as the one casting the magic does _not_ roll double ones. You’re also allowed to choose to _not resist_ magic like _Fire Bolt_ , which will definitely result in a loss if it's cast on you....... but that probably won't benefit you in any way.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01331))_
 
 > Adventurers cannot use magic endlessly.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01331))_

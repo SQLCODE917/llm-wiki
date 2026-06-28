@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-reaction-c6663e6b@599ffa4c059f101bb55058ad27f66627
+projection_coverage: section-sword-world-rpg-complete-edition-section-reaction-c6663e6b@d93b8d4bdb58b7e257651fc80c9b11ee
 ---
 
 # 《 **Reaction** 》
@@ -42,5 +42,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04898))_
+
 > If it says _adversarial_ , it means they consider adventurers (human or fae) to be their enemies. The specific actions they'll take will vary depending on the power dynamic (difference in number) between the adventurers and monsters, as well as the intelligence of the monsters. Even if the monster is adversarial, if the adventurers have the superior numbers, it will not attack immediately and may try to use trickery.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04898))_

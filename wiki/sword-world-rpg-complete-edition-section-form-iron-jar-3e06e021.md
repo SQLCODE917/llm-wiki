@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-form-iron-jar-3e06e021@85b97d45be77b200864773391d0f7a98
+projection_coverage: section-sword-world-rpg-complete-edition-section-form-iron-jar-3e06e021@510f954ee10a3eefe275cae38ac0034a
 ---
 
 # Form=Iron jar
@@ -25,17 +25,33 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07543))_
+
 > Powers=Puts those who stare at it to sleep
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07543))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07544))_
 
 > Base Trade Price=1,000,000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07544))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07546))_
 
 > Powers=Summon a daemon
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07546))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07548))_
 
 > **Table 14-1: Daemon Jar Summon**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07548))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07549))_
 
 | 2D | Result |
 | --- | --- |
@@ -67,4 +83,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07548))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07549))_

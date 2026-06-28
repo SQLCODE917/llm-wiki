@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-centaur-0c0a9454@88f1a1988d2663aedcb25ff23a1da830
+projection_coverage: section-sword-world-rpg-complete-edition-section-centaur-0c0a9454@0f86f9721f107fea56fdfd01fdc276be
 ---
 
 # **[ Centaur ]**
@@ -24,8 +24,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: In combat, an androscorpio uses a sword in his hand, but he can also attack with his tail at the same time. The stinger at the tip of his tail contains a hallucinogenic poison (toxicity score 11). Those wounded by a tail attack and fail a life force resistance roll will experience hallucinations starting on the next round. The enemy's appearance can change, or it can appear as multiple . This symptom lasts for one hour, during which time the victim suffers a -4 penalty on all success rolls.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05368))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05368))_
+
+> In combat, an androscorpio uses a sword in his hand, but he can also attack with his tail at the same time. The stinger at the tip of his tail contains a hallucinogenic poison (toxicity score 11). Those wounded by a tail attack and fail a life force resistance roll will experience hallucinations starting on the next round. The enemy's appearance can change, or it can appear as multiple . This symptom lasts for one hour, during which time the victim suffers a -4 penalty on all success rolls.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05370))_
 
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05370))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-flying-carpet-e8fb3a33@3d2fcba796adf4aba8dcc8da41b737be
+projection_coverage: section-sword-world-rpg-complete-edition-section-flying-carpet-e8fb3a33@513d0336514e1f7fc50df0401e66be48
 ---
 
 # **[ Flying Carpet ]**
@@ -24,20 +24,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07599))_
+
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07599))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07600))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07600))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07601))_
 
 > Form=A carpet about 1m square
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07601))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07602))_
 
 > Base Trade Price=180,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07602))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07603))_
 
 > Powers=You can move through the air by riding on the carpet.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07603))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07604))_
 
 > Also, if you don't hold your baggage securely, it can easily fall off the carpet.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07604))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-form-an-old-wooden-box-4a61992b@1a6ca973798d051f74098846a440692d
+projection_coverage: section-sword-world-rpg-complete-edition-section-form-an-old-wooden-box-4a61992b@e01709699029e8260f2af871e64c1f97
 ---
 
 # Form=An old wooden box
@@ -20,5 +20,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07575))_
+
 > Base Trade Price=3200~8000 gamels Powers=Explodes if opened by someone who doesn't know how.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07575))_

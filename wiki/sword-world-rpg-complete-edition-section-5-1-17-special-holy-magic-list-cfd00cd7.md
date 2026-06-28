@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-17-special-holy-magic-list-cfd00cd7@a1db45be613d7ae953e156a3e41a76f2
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-17-special-holy-magic-list-cfd00cd7@9b2d637cade9efa4254562c2b92d8659
 ---
 
 # 5.1.17 Special Holy Magic List
@@ -96,8 +96,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03056))_
+
 > **Table 5-8: Reincarnation Memory**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03056))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_
 
 | Final Score | Time to regain memories |
 | --- | --- |
@@ -121,265 +128,485 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03056))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03060))_
 
 > Base Mental Power Cost=50 Distance=Touch Area=One Duration=Until reincarnated Effect=Reincarnate a soul into a new body Type=Ritual Expansion=Final score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03060))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03061))_
 
 > Base Mental Power Cost=50 Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03061))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03062))_
 
 > Area=Up to 10 people within a 10 meter radius of the caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03062))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03063))_
 
 > Duration=Instant Effect=Help the party escape to a safe place Type=Expansion=Targets as well as area Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03063))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03068))_
 
 > Even before a person regains their personality, if someone who knew them well before reincarnation can identify their body after reincarnation, they can try to restore the person's old memories.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03068))_
 
-> Context: The spells listed here can only be used by those who believe in a specific god among characters with the priest skill.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03070))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03070))_
+
+> The spells listed here can only be used by those who believe in a specific god among characters with the priest skill.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03072))_
 
 > Base Mental Power Cost=4 Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03072))_
 
-> Context: The spells listed here can only be used by those who believe in a specific god among characters with the priest skill.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03070))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03070))_
+
+> The spells listed here can only be used by those who believe in a specific god among characters with the priest skill.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03073))_
 
 > Area=One Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03073))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03074))_
 
 > Effect=Read the evil thoughts in an opponent's mind Type=Detection Expansion=Distance, targets Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03074))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03076))_
 
 > **[ Banish ] (Spell Level=8)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03076))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03077))_
 
 > Base Mental Power Cost=32
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03077))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03078))_
 
 > Distance=30 meters Area=One individual Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03078))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03079))_
 
 > Effect=Remove what isn't natural from the material world
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03079))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03080))_
 
 > Type=Counters (Overpowers): _Summon magic_ Expansion=Final score, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03080))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03086))_
 
 > Base Mental Power Cost=50
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03086))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03087))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03087))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03088))_
 
 > Area=All believers of Pharis within the caster's view
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03088))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03089))_
 
 > Duration=1 week
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03089))_
 
-> Context: This spell is used when a high priest of Pharis discovers a great evil that absolutely cannot be overlooked. Gather as many Pharis believers as you can to a temple, and cast this in front of them. As a result, anyone who agrees to the spell, including the person who cast it, will experience the following effects.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+
+> This spell is used when a high priest of Pharis discovers a great evil that absolutely cannot be overlooked. Gather as many Pharis believers as you can to a temple, and cast this in front of them. As a result, anyone who agrees to the spell, including the person who cast it, will experience the following effects.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03090))_
 
 > Effect=Gives great fighting ability to believers of Pharis
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03090))_
 
-> Context: This spell is used when a high priest of Pharis discovers a great evil that absolutely cannot be overlooked. Gather as many Pharis believers as you can to a temple, and cast this in front of them. As a result, anyone who agrees to the spell, including the person who cast it, will experience the following effects.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+
+> This spell is used when a high priest of Pharis discovers a great evil that absolutely cannot be overlooked. Gather as many Pharis believers as you can to a temple, and cast this in front of them. As a result, anyone who agrees to the spell, including the person who cast it, will experience the following effects.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03091))_
 
 > Type=Ritual, mind, target score Expand=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03091))_
 
-> Context: This spell is used when a high priest of Pharis discovers a great evil that absolutely cannot be overlooked. Gather as many Pharis believers as you can to a temple, and cast this in front of them. As a result, anyone who agrees to the spell, including the person who cast it, will experience the following effects.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+### Technical atom 22
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+
+> This spell is used when a high priest of Pharis discovers a great evil that absolutely cannot be overlooked. Gather as many Pharis believers as you can to a temple, and cast this in front of them. As a result, anyone who agrees to the spell, including the person who cast it, will experience the following effects.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03094))_
 
 > The caster can also exclude anyone from the spell, even if another person willingly agrees.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03094))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03097))_
 
 > Base Mental Power Cost=20
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03097))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03098))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03098))_
+
+### Technical atom 25
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03099))_
 
 > Area=A range within which the caster's singing voice can be heard
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03099))_
+
+### Technical atom 26
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03100))_
 
 > Duration=As long as you keep singing
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03100))_
+
+### Technical atom 27
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03101))_
 
 > Effect=+2 attack power to those who listen to the song
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03101))_
 
-> Context: Effect=+2 attack power to those who listen to the song
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03101))_
+### Technical atom 28
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03101))_
+
+> Effect=+2 attack power to those who listen to the song
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03102))_
 
 > Type=Mind, target score Expansion=Final score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03102))_
 
-> Context: Effect=+2 attack power to those who listen to the song
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03101))_
+### Technical atom 29
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03101))_
+
+> Effect=+2 attack power to those who listen to the song
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03103))_
 
 > Unlike _focus_ magic, this spell will _not_ be interrupted even if the caster suffers damage, but the spell _cannot_ be maintained if the caster takes any other voluntary action.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03103))_
+
+### Technical atom 30
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03105))_
 
 > Base Mental Power Cost=21
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03105))_
+
+### Technical atom 31
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03106))_
 
 > Distance=Caster Area=Caster Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03106))_
+
+### Technical atom 32
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03107))_
 
 > Effect=Create an armor-like force field with defense power 30
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03107))_
+
+### Technical atom 33
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03108))_
 
 > Type=Target score Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03108))_
+
+### Technical atom 34
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03111))_
 
 > Base Mental Power Cost=21 Distance=Caster Area=Caster Duration=18 rounds Effect=Create a weapon-like force field with strike power 30 Type=Target score Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03111))_
+
+### Technical atom 35
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03114))_
 
 > Base Mental Power Cost=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03114))_
+
+### Technical atom 36
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03115))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03115))_
+
+### Technical atom 37
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03116))_
 
 > Area=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03116))_
+
+### Technical atom 38
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03117))_
 
 > Duration=Until the caster falls asleep Effect=You can turn a failed success roll related to _knowledge_ into a success only once Type=Non-removable Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03117))_
 
-> Context: Duration=Until the caster falls asleep Effect=You can turn a failed success roll related to _knowledge_ into a success only once Type=Non-removable Expansion=Resist=None
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03117))_
+### Technical atom 39
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03117))_
+
+> Duration=Until the caster falls asleep Effect=You can turn a failed success roll related to _knowledge_ into a success only once Type=Non-removable Expansion=Resist=None
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03118))_
 
 > If you cast this spell, you can turn a failure into a success only _once_ on a success roll to see if you know something, such as _appraise treasure_ or _monster check_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03118))_
 
-> Context: If you cast this spell, you can turn a failure into a success only _once_ on a success roll to see if you know something, such as _appraise treasure_ or _monster check_ . If a knowledge-related success roll _fails_ , the player can optionally make it a _success_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03118))_
+### Technical atom 40
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03118))_
+
+> If you cast this spell, you can turn a failure into a success only _once_ on a success roll to see if you know something, such as _appraise treasure_ or _monster check_ . If a knowledge-related success roll _fails_ , the player can optionally make it a _success_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03121))_
 
 > Base Mental Power Cost=15 Distance=10 meters Area=One Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03121))_
 
-> Context: This spell shows you your target's weak point and guides your attack there. This effect is expressed as a -1 to the attacker's critical target. In other words, the normal critical target of 10 becomes _9_ (9 to _8_ for a thief).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03124))_
+### Technical atom 41
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03124))_
+
+> This spell shows you your target's weak point and guides your attack there. This effect is expressed as a -1 to the attacker's critical target. In other words, the normal critical target of 10 becomes _9_ (9 to _8_ for a thief).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03126))_
 
 > If a character has this spell cast on them and a monster with fixed strike points attacks, the character's defense roll will be affected.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03126))_
 
-> Context: If a character has this spell cast on them and a monster with fixed strike points attacks, the character's defense roll will be affected. In this case, even if the defense roll result is not only 2 (double ones) but also _3_ , no damage reduction will be possible.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03126))_
+### Technical atom 42
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03126))_
+
+> If a character has this spell cast on them and a monster with fixed strike points attacks, the character's defense roll will be affected. In this case, even if the defense roll result is not only 2 (double ones) but also _3_ , no damage reduction will be possible.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03128))_
 
 > Base Mental Power Cost=28
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03128))_
 
-> Context: If a character has this spell cast on them and a monster with fixed strike points attacks, the character's defense roll will be affected. In this case, even if the defense roll result is not only 2 (double ones) but also _3_ , no damage reduction will be possible.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03126))_
+### Technical atom 43
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03126))_
+
+> If a character has this spell cast on them and a monster with fixed strike points attacks, the character's defense roll will be affected. In this case, even if the defense roll result is not only 2 (double ones) but also _3_ , no damage reduction will be possible.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03129))_
 
 > Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03129))_
+
+### Technical atom 44
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03130))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03130))_
+
+### Technical atom 45
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03131))_
 
 > Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03131))_
+
+### Technical atom 46
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03132))_
 
 > Effect=Make the target memorize text Type=Non-removable Expansion=Text amount (see explanation) Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03132))_
+
+### Technical atom 47
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03138))_
 
 > Base Mental Power Cost=1 Distance=Caster Area=Caster Duration=Until the caster falls asleep
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03138))_
+
+### Technical atom 48
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03139))_
 
 > Effect=You can turn a failed success roll into a success only once Type=Non-removable Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03139))_
 
-> Context: Effect=You can turn a failed success roll into a success only once Type=Non-removable Expansion=Resist=None
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03139))_
+### Technical atom 49
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03139))_
+
+> Effect=You can turn a failed success roll into a success only once Type=Non-removable Expansion=Resist=None
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03140))_
 
 > If you cast this spell, you can turn a failure into a success only _once_ on a success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03140))_
 
-> Context: A _defensive_ success roll should be judged by whether it means you _luckily survived_ . If the game master is unsure, treat it as something where it _can't_ be used. In particular, it can _never_ be used on checks for hitting others with attacks or checks for casting magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03145))_
+### Technical atom 50
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03145))_
+
+> A _defensive_ success roll should be judged by whether it means you _luckily survived_ . If the game master is unsure, treat it as something where it _can't_ be used. In particular, it can _never_ be used on checks for hitting others with attacks or checks for casting magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03148))_
 
 > Base Mental Power Cost=25
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03148))_
 
-> Context: This is a spell for protecting trade. If you try to engage in an illegal business transaction with the caster who cast this spell (e.g. trying to sell for more than the intended price, trying to buy for less than the intended price, etc.), the caster will discover it immediately. Also, when someone tries to steal or take something from the caster, it will be discovered because it means they're trying to buy it for _free = less than the intended price_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03151))_
+### Technical atom 51
 
-> Distance=Caster Area=Within the caster's view Duration=1 day
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03149))_
-
-> Context: This is a spell for protecting trade. If you try to engage in an illegal business transaction with the caster who cast this spell (e.g. trying to sell for more than the intended price, trying to buy for less than the intended price, etc.), the caster will discover it immediately. Also, when someone tries to steal or take something from the caster, it will be discovered because it means they're trying to buy it for _free = less than the intended price_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03151))_
-
-> Effect=You can see who is trying to engage in illegal business transactions with the caster Type=Detection, target score Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03150))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03151))_
 
 > This is a spell for protecting trade. If you try to engage in an illegal business transaction with the caster who cast this spell (e.g. trying to sell for more than the intended price, trying to buy for less than the intended price, etc.), the caster will discover it immediately. Also, when someone tries to steal or take something from the caster, it will be discovered because it means they're trying to buy it for _free = less than the intended price_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03151))_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03149))_
+
+> Distance=Caster Area=Within the caster's view Duration=1 day
+
+### Technical atom 52
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03151))_
+
+> This is a spell for protecting trade. If you try to engage in an illegal business transaction with the caster who cast this spell (e.g. trying to sell for more than the intended price, trying to buy for less than the intended price, etc.), the caster will discover it immediately. Also, when someone tries to steal or take something from the caster, it will be discovered because it means they're trying to buy it for _free = less than the intended price_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03150))_
+
+> Effect=You can see who is trying to engage in illegal business transactions with the caster Type=Detection, target score Expansion=Final score, duration Resist=None
+
+### Technical atom 53
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03151))_
+
+> This is a spell for protecting trade. If you try to engage in an illegal business transaction with the caster who cast this spell (e.g. trying to sell for more than the intended price, trying to buy for less than the intended price, etc.), the caster will discover it immediately. Also, when someone tries to steal or take something from the caster, it will be discovered because it means they're trying to buy it for _free = less than the intended price_ .
+
+### Technical atom 54
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03155))_
 
 > Base Mental Power Cost=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03155))_
+
+### Technical atom 55
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03156))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03156))_
+
+### Technical atom 56
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03157))_
 
 > Area=A space within a 10 meter radius from the caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03157))_
+
+### Technical atom 57
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03158))_
 
 > Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03158))_
+
+### Technical atom 58
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03159))_
 
 > Effect=Takes away hostility from targets within the area of effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03159))_
 
-> Context: Marfa, as the earth mother and the goddess of affection, preaches strong warnings against unnecessary conflict. Therefore, priests of Marfa can use this spell to take away the feelings of hatred that have arisen in each other's hearts and prevent them from fighting. Those who fail to resist will lose their hostility and attempt to stop the fight. At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack. This spell has
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
+### Technical atom 59
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
+
+> Marfa, as the earth mother and the goddess of affection, preaches strong warnings against unnecessary conflict. Therefore, priests of Marfa can use this spell to take away the feelings of hatred that have arisen in each other's hearts and prevent them from fighting. Those who fail to resist will lose their hostility and attempt to stop the fight. At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack. This spell has
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03160))_
 
 > Type=Mind, target score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03160))_
 
-> Context: Marfa, as the earth mother and the goddess of affection, preaches strong warnings against unnecessary conflict. Therefore, priests of Marfa can use this spell to take away the feelings of hatred that have arisen in each other's hearts and prevent them from fighting. Those who fail to resist will lose their hostility and attempt to stop the fight. At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack. This spell has
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
+### Technical atom 60
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
+
+> Marfa, as the earth mother and the goddess of affection, preaches strong warnings against unnecessary conflict. Therefore, priests of Marfa can use this spell to take away the feelings of hatred that have arisen in each other's hearts and prevent them from fighting. Those who fail to resist will lose their hostility and attempt to stop the fight. At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack. This spell has
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03161))_
 
 > Expansion=Final score, duration, area Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03161))_
+
+### Technical atom 61
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
 
 > At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
 
-> Context: Marfa, as the earth mother and the goddess of affection, preaches strong warnings against unnecessary conflict. Therefore, priests of Marfa can use this spell to take away the feelings of hatred that have arisen in each other's hearts and prevent them from fighting. Those who fail to resist will lose their hostility and attempt to stop the fight. At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack. This spell has
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
+### Technical atom 62
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
+
+> Marfa, as the earth mother and the goddess of affection, preaches strong warnings against unnecessary conflict. Therefore, priests of Marfa can use this spell to take away the feelings of hatred that have arisen in each other's hearts and prevent them from fighting. Those who fail to resist will lose their hostility and attempt to stop the fight. At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack. This spell has
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03164))_
 
 > Base Mental Power Cost=24
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03164))_
 
-> Context: Marfa, as the earth mother and the goddess of affection, preaches strong warnings against unnecessary conflict. Therefore, priests of Marfa can use this spell to take away the feelings of hatred that have arisen in each other's hearts and prevent them from fighting. Those who fail to resist will lose their hostility and attempt to stop the fight. At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack. This spell has
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
+### Technical atom 63
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
+
+> Marfa, as the earth mother and the goddess of affection, preaches strong warnings against unnecessary conflict. Therefore, priests of Marfa can use this spell to take away the feelings of hatred that have arisen in each other's hearts and prevent them from fighting. Those who fail to resist will lose their hostility and attempt to stop the fight. At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack. This spell has
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03165))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03165))_
+
+### Technical atom 64
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03166))_
 
 > Area=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03166))_
+
+### Technical atom 65
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03167))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03167))_
+
+### Technical atom 66
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03168))_
 
 > Effect=Help the caster escape to a safe place Type=Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03168))_
+
+### Technical atom 67
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03172))_
 
 > Base Mental Power Cost=9
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03172))_
+
+### Technical atom 68
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03173))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03173))_
+
+### Technical atom 69
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03174))_
 
 > Area=A space within a 30 meter radius from the caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03174))_

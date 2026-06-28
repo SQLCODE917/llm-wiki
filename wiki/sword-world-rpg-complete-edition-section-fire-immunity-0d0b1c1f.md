@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fire-immunity-0d0b1c1f@bd4ab1894a984d86a85add9c6c8f859b
+projection_coverage: section-sword-world-rpg-complete-edition-section-fire-immunity-0d0b1c1f@1d39eacf93128ba3860acef12fde3566
 ---
 
 # Fire immunity
@@ -29,8 +29,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05651))_
+
 > Habitat=Mountains, caves, other Languages=Lizardman, low ancient Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05651))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05652))_
 
 > Furthermore, they can also use dragon roar magic that uses the lost dragon roar (though they possess most of their abilities without using magic).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05652))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-roar-c8202d66@904421a93e33093594451de67184814b
+projection_coverage: section-sword-world-rpg-complete-edition-section-roar-c8202d66@47ed2a1fae6a3ff1e79eacac105307db
 ---
 
 # 《 **Roar** 》
@@ -22,6 +22,10 @@ From [[sword-world-rpg-complete-edition]].
 - It has no effect unless you hear it, but everyone who does hear it must make a mental power resistance roll. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06793))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -55,4 +59,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

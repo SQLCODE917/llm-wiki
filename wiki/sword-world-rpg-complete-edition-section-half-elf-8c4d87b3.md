@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-half-elf-8c4d87b3@eac64a56499c7327e2c2151b283f24bf
+projection_coverage: section-sword-world-rpg-complete-edition-section-half-elf-8c4d87b3@6357c4c22ce8aecba591d109a7d5bb24
 ---
 
 # 【 **Half-Elf** 】
@@ -32,14 +32,23 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Once you've chosen a race, you can determine your ability scores. First, you must roll the dice to determine **subability scores A~H** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00324))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00324))_
+
+> Once you've chosen a race, you can determine your ability scores. First, you must roll the dice to determine **subability scores A~H** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
 
 > Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
 
-> Context: Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
+
+> Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00329))_
 
 | **dexterity**<br> **agility**<br> **intelligence**<br> **strength**<br> **life force** | =**A**+**B**<br>=**B**+**C**<br>=**C**+**D**<br>=**E**+**F**<br>=**F**+**G** |
 | --- | --- |
@@ -55,16 +64,24 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00329))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00331))_
 
 > **Table 1-3: Determining Sub-Ability Scores**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00331))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00332))_
 
 | Sub-AbilityScore | Human | Dwarf | Grassrunner | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -94,16 +111,24 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00332))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00335))_
 
 > **Table 1-4: Average Ability Scores by Race**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00335))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00336))_
 
 | AbilityScore | Human | Grassrunner | Dwarf | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -129,10 +154,16 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00336))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 
 > **Table 1-5: Backgrounds**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
 
 | 2D | Background | StartingSkills | Exp. Pts. | Money |
 | --- | --- | --- | --- | --- |
@@ -168,7 +199,9 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00341))_
 
 > For reference, the average ability scores of each race are shown on Table 1- 4: Average Ability Scores by Race.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00341))_

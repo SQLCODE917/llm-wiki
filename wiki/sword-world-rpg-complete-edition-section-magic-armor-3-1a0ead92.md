@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magic-armor-3-1a0ead92@e865fbb3835ee8f3d08443ba49c86f68
+projection_coverage: section-sword-world-rpg-complete-edition-section-magic-armor-3-1a0ead92@31cb79ed974ce9b2b54a141916d3353e
 ---
 
 # 《 **Magic Armor (+3)** 》
@@ -21,8 +21,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Here is a list of prices of magical metal armor with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))_
+
+> Here is a list of prices of magical metal armor with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07190))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -54,13 +59,20 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07190))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07200))_
 
 > Required Strength/Base Trade Price=See description Magic Power=+3 to evasion speed and damage reduction
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07200))_
 
-> Context: Here is a list of prices of magical metal armor with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+
+> Here is a list of prices of magical metal armor with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07202))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -92,4 +104,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07202))_

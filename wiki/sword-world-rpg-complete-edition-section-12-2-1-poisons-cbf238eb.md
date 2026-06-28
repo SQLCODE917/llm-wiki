@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-1-poisons-cbf238eb@d26af85130cdc1a822245559e2c99ce1
+projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-1-poisons-cbf238eb@5e5cfa30b10380e518b67ec84d35c9dd
 ---
 
 # **12.2.1 Poisons**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-1-poi
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_
 
 | **Table 12-1: Languages** |
 | --- |
@@ -32,4 +36,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_

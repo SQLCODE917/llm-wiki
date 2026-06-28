@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magical-catalyst-fcb8e9e1@c10bb96e4e45053c516f57b304dac425
+projection_coverage: section-sword-world-rpg-complete-edition-section-magical-catalyst-fcb8e9e1@df6a395eebe8c2fe3c8104c7614418af
 ---
 
 # 《 **Magical Catalyst** 》
@@ -24,8 +24,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: time they try to cast a spell. This is because the words and actions of a spell are usually sharply memorized in your head. A spellbook is used to review them, always confirming and ensuring your memory.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01564))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01564))_
+
+> time they try to cast a spell. This is because the words and actions of a spell are usually sharply memorized in your head. A spellbook is used to review them, always confirming and ensuring your memory.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01567))_
 
 > This is why you must have a mage's staff as a restriction when using ancient magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01567))_

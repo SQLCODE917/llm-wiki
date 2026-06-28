@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-document-152a7608@37e888012234d66671739328512f89a4
+projection_coverage: section-sword-world-rpg-complete-edition-section-document-152a7608@9ac246162a99c48dd8f24228644fa2b1
 ---
 
 # Document
@@ -21,6 +21,10 @@ From [[sword-world-rpg-complete-edition]].
 - 257 16.8 Weapons and Armor 15.1 Four Types of That Are Too Heavy ............... _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00007))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00003))_
 
 | Welcome to “Sword World”! ....... 4 | 4.9 Unconscious and Death |
 | --- | --- |
@@ -124,4 +128,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00003))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-vampire-848cc8f1@3f60535f83de40b8129369cfe29b9df0
+projection_coverage: section-sword-world-rpg-complete-edition-section-vampire-848cc8f1@59ea165271accfa9bdb063b9f582a310
 ---
 
 # **[ Vampire ]**
@@ -44,14 +44,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: red eyes cause intense fear in those who see them. Anyone who makes eye contact with a vampire must first make a mental power resistance roll. The target score varies depending on the type of vampire, but in any case, if you fail to resist, you will be paralyzed with fear and unable to act. Even if the vampire removes its gaze, this paralysis continues until it disappears.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06301))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06301))_
+
+> red eyes cause intense fear in those who see them. Anyone who makes eye contact with a vampire must first make a mental power resistance roll. The target score varies depending on the type of vampire, but in any case, if you fail to resist, you will be paralyzed with fear and unable to act. Even if the vampire removes its gaze, this paralysis continues until it disappears.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06302))_
 
 > Also, if a vampire's attack hits a character, in addition to normal damage, mental power will also be damaged.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06302))_
 
-> Context: red eyes cause intense fear in those who see them. Anyone who makes eye contact with a vampire must first make a mental power resistance roll. The target score varies depending on the type of vampire, but in any case, if you fail to resist, you will be paralyzed with fear and unable to act. Even if the vampire removes its gaze, this paralysis continues until it disappears.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06301))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06301))_
+
+> red eyes cause intense fear in those who see them. Anyone who makes eye contact with a vampire must first make a mental power resistance roll. The target score varies depending on the type of vampire, but in any case, if you fail to resist, you will be paralyzed with fear and unable to act. Even if the vampire removes its gaze, this paralysis continues until it disappears.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06304))_
 
 > If they cannot steal mental power for one full day, they will automatically lose 1 mental point.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06304))_

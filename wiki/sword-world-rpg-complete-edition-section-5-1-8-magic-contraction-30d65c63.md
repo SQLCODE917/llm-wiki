@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-8-magic-contraction-30d65c63@f64d6ac1b05c465fddfea75936fb5f26
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-8-magic-contraction-30d65c63@2856be3c481e210b7bea3742c26a3906
 ---
 
 # 5.1.8 Magic Contraction
@@ -51,26 +51,46 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> you can make a damage check (strike roll) _twice_ or _three times_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01384))_
+### Technical atom 1
 
-> Context: This expansion requires a deep proficiency in magic. Therefore, it cannot be done infinitely. Final score can only be increased up to a maximum of _caster's rune master skill level ÷ 2 (rounded up)_ . That’s up to _+1 (double)_ for 1st~2nd level, _+2 (triple)_ for 3rd~4th level, and _+5 (sextuple)_ for 9th~10th level.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01390))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01384))_
+
+> you can make a damage check (strike roll) _twice_ or _three times_ .
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01390))_
+
+> This expansion requires a deep proficiency in magic. Therefore, it cannot be done infinitely. Final score can only be increased up to a maximum of _caster's rune master skill level ÷ 2 (rounded up)_ . That’s up to _+1 (double)_ for 1st~2nd level, _+2 (triple)_ for 3rd~4th level, and _+5 (sextuple)_ for 9th~10th level.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01388))_
 
 > you can add a _+1_ or _+2_ bonus to your final score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01388))_
 
-> Context: Magic contractions include the following:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01401))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01401))_
+
+> Magic contractions include the following:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01403))_
 
 > You can make the area of effect narrower than originally intended.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01403))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01405))_
 
 > Similar to area contraction, you can also reduce the volume of the targeted object or space.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01405))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01409))_
 
 > You must declare how many points you’ll reduce _before_ you roll the dice.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01409))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01413))_
 
 > Although it's not often done, it's possible to perform magic expansion _and_ contraction at the same time. For example, you could _extend_ the area of effect while _reducing_ magic power. The mental power required at this time is decided by _expansion_ . It _cannot_ be reduced by contraction. For example, if you _double_ the area _and_ reduce magic power by _-4_ , the mental power consumed will still be _double_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01413))_

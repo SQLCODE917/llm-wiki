@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ages-of-each-race-0f7d4b97@a3b9188be010b4a0bf44ebee0312667a
+projection_coverage: section-sword-world-rpg-complete-edition-section-ages-of-each-race-0f7d4b97@779f19fbeea2530878255feec0c874b8
 ---
 
 # 《 **Ages of Each Race** 》
@@ -32,5 +32,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00373))_
+
 > For races other than humans, consider age as follows. Even for different races with long life spans, the rate of growth to adulthood is not much different from that of humans. Therefore, once they reach around 20 years of age, they are physically fit enough to embark on an adventure.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00373))_

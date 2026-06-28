@@ -17,6 +17,7 @@ from llmwiki.domain.ledger.projection import (
 from llmwiki.domain.ledger.renderer import render_source_page
 from llmwiki.domain.ledger.topic_models import SourceTopic
 from llmwiki.domain.ledger.topic_render import render_topic_page
+from llmwiki.runtime.ledger_pages import build_topic_pages
 
 
 def test_source_page_renders_technical_atom_context() -> None:
@@ -76,7 +77,7 @@ def test_topic_page_pairs_context_with_technical_atom() -> None:
     assert "**Atom:** _(rules.md (source-range-code))_" in rendered.page_body
 
 
-def test_topic_page_reports_when_technical_atoms_are_capped() -> None:
+def test_topic_page_renders_all_selected_technical_atoms() -> None:
     rendered = render_topic_page(
         SourceTopic(
             topic_key="mapping",
@@ -93,7 +94,43 @@ def test_topic_page_reports_when_technical_atoms_are_capped() -> None:
         source_page_id="rules",
     )
 
-    assert "_Showing 6 of 7 technical atoms selected for this topic._" in rendered.page_body
+    assert "_Showing 6 of 7 technical atoms selected for this topic._" not in rendered.page_body
+    assert "### Technical atom 7" in rendered.page_body
+
+
+def test_topic_pages_render_bidirectional_related_links() -> None:
+    pages = build_topic_pages(
+        (
+            SourceTopic(
+                topic_key="list",
+                label="List",
+                page_kind="concept",
+                match_terms=("list",),
+                entry_ids=(),
+                atom_ids=("atom-code",),
+                from_heading=False,
+                salience=3.0,
+            ),
+            SourceTopic(
+                topic_key="linked-list",
+                label="Linked List",
+                page_kind="concept",
+                match_terms=("linked", "list"),
+                entry_ids=(),
+                atom_ids=("atom-code",),
+                from_heading=False,
+                salience=2.0,
+            ),
+        ),
+        _ledger_with_code_context(),
+        source_page_id="rules",
+        source_locator="rules.md",
+        today="2026-06-27",
+    )
+
+    by_id = {page.page_id: page.page_body for page in pages}
+    assert "[[rules-linked-list]] - narrower topic (1 shared atom(s))" in by_id["rules-list"]
+    assert "[[rules-list]] - broader topic (1 shared atom(s))" in by_id["rules-linked-list"]
 
 
 def _ledger_with_code_context() -> ClaimLedger:

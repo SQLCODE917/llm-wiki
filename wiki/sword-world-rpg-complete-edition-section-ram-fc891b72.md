@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ram-fc891b72@0dbfeb3d99a81770232bbca427814211
+projection_coverage: section-sword-world-rpg-complete-edition-section-ram-fc891b72@ea3f364fa58e7232b0af121cce44ed42
 ---
 
 # **Ram**
@@ -28,14 +28,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If you roll a 6, you will unfortunately attack your _ally_ by accident. This is an automatic hit. Please make a damage check immediately.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07834))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07834))_
+
+> If you roll a 6, you will unfortunately attack your _ally_ by accident. This is an automatic hit. Please make a damage check immediately.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07837))_
 
 > At the same time, the opponent must determine whether he or she fell _prone_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07837))_
 
-> Context: This is an attack method where you knock an opponent **prone** by charging forward. This can _only_ be performed with the _fighter skill_ , it _cannot_ be used with the _thief skill_ . If your attack hits, make a strike power 0 and critical target 12 damage check. At the same time, the opponent must determine whether he or she fell _prone_ . The attacker must make a
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07837))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07837))_
+
+> This is an attack method where you knock an opponent **prone** by charging forward. This can _only_ be performed with the _fighter skill_ , it _cannot_ be used with the _thief skill_ . If your attack hits, make a strike power 0 and critical target 12 damage check. At the same time, the opponent must determine whether he or she fell _prone_ . The attacker must make a
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07839))_
 
 > success roll using _fighter skill level + strength bonus_ as the baseline score, while the defender must make one using either _adventurer level + strength bonus_ _**or** adventurer level + life force bonus_ ( _life point resistance - 7_ for monsters), whichever is greater.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07839))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-9-3-1d17b823@6125a94b16456c95f4ec0d91d057e040
+projection_coverage: section-sword-world-rpg-complete-edition-section-9-3-1d17b823@49b7e6ec20033bf20cda8bd5ef0052b0
 ---
 
 # **9.3**
@@ -28,8 +28,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: For example, let's say you're searching for a document in a room with little light. Suppose there are three people: a human, an elf (shaman), and a dwarf.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03819))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03819))_
+
+> For example, let's say you're searching for a document in a room with little light. Suppose there are three people: a human, an elf (shaman), and a dwarf.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03820))_
 
 > In _Sword World RPG_ , the only guidelines for general success roll modifiers are as follows (Table 9-2: Success Roll Modifiers).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03820))_

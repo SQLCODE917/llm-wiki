@@ -1,4 +1,9 @@
-"""Evidence-led per-source topic planning."""
+"""Evidence-led per-source topic planning.
+
+Exact authored headings are projected as source-section pages. Topic pages are
+reserved for emergent concepts, repeated terms, and heading components that add
+navigation value without restating the same source section.
+"""
 
 from __future__ import annotations
 
@@ -15,25 +20,19 @@ from llmwiki.domain.ledger.structure import DocumentStructure
 from llmwiki.domain.ledger.topic_atom_match import atom_ids_matching_table_payload
 from llmwiki.domain.ledger.topic_candidates import (
     TopicCandidate,
-    section_candidates,
     section_component_candidates,
 )
 from llmwiki.domain.ledger.topic_evidence import (
     entry_supports_topic,
-    heading_topic_decision,
     topic_entry_rank,
 )
 from llmwiki.domain.ledger.topic_models import SourceTopic
 from llmwiki.domain.ledger.topic_terms import (
     content_terms,
     single_term_topic_candidate_allowed,
-    source_label_terms,
     topic_matcher,
 )
 
-_HEADING_NUMBER = re.compile(
-    r"^(?:chapter|part|section|appendix|book)\s+[\dIVXLC]+\s*[-:.]?\s*", re.IGNORECASE
-)
 _TOPIC_KINDS = ("claim", "event", "concept")
 _MIN_TERM_FREQUENCY = 4
 _MIN_MATCHES = 3
@@ -57,9 +56,7 @@ def plan_source_topics(
         if entry.ledger_entry_kind in _TOPIC_KINDS and (entry.subject or entry.normalized_text)
     ]
     candidates = (
-        section_candidates(section_plan)
-        + section_component_candidates(section_plan)
-        + _heading_candidates(structure)
+        section_component_candidates(section_plan)
         + _concept_candidates(entries)
         + _term_candidates(entries)
     )
@@ -75,31 +72,6 @@ def plan_source_topics(
             topics[candidate.topic_key] = topic
     ranked = sorted(topics.values(), key=lambda t: (-t.salience, t.topic_key))
     return tuple(ranked[:max_topics])
-
-
-def _heading_candidates(structure: DocumentStructure) -> list[TopicCandidate]:
-    candidates: list[TopicCandidate] = []
-    seen: set[str] = set()
-    for node in structure.structure_nodes:
-        if node.structure_node_kind == "root":
-            continue
-        label = _HEADING_NUMBER.sub("", node.heading_text).strip()
-        terms = source_label_terms(label)
-        key = "-".join(terms)
-        if not terms or len(terms) > 8 or key in seen:
-            continue
-        seen.add(key)
-        candidates.append(
-            TopicCandidate(
-                topic_key=key,
-                label=label,
-                terms=tuple(terms),
-                evidence_kind="heading",
-                from_heading=True,
-                structure_node_id=node.structure_node_id,
-            )
-        )
-    return candidates
 
 
 def _concept_candidates(entries: list[LedgerEntry]) -> list[TopicCandidate]:
@@ -176,9 +148,6 @@ def _aggregate(
             for atom_id in candidate.evidence_atom_ids
             if _atom_has_matching_context(ledger, atom_id, matcher)
         )
-    elif candidate.evidence_kind == "heading":
-        matched = _entries_in_node(entries, candidate.structure_node_id)
-        atom_ids = _atom_ids_in_node(ledger, candidate.structure_node_id, matcher)
     elif candidate.evidence_kind == "concept":
         matched = _entries_for_concept(candidate, entries, matcher)
         atom_ids = _atom_ids_near_entries(ledger, matched, matcher)
@@ -189,11 +158,6 @@ def _aggregate(
         atom_ids = tuple(
             dict.fromkeys((*atom_ids, *atom_ids_matching_table_payload(ledger, matcher, structure)))
         )
-    if candidate.evidence_kind == "heading":
-        decision = heading_topic_decision(candidate.terms, matched, atom_ids, matcher)
-        if not decision.accepted:
-            return None
-
     matched = [
         entry
         for entry in matched
@@ -217,10 +181,6 @@ def _aggregate(
         from_heading=candidate.from_heading,
         salience=salience,
     )
-
-
-def _entries_in_node(entries: list[LedgerEntry], node_id: str) -> list[LedgerEntry]:
-    return [entry for entry in entries if node_id and node_id in entry.structure_node_ids]
 
 
 def _entries_for_concept(
@@ -249,21 +209,6 @@ def _entries_for_subject_term(
     entries: list[LedgerEntry], matcher: re.Pattern[str]
 ) -> list[LedgerEntry]:
     return [entry for entry in entries if matcher.search(entry.subject)]
-
-
-def _atom_ids_in_node(
-    ledger: ClaimLedger, node_id: str, matcher: re.Pattern[str]
-) -> tuple[str, ...]:
-    ids = [
-        entry.technical_atom_id
-        for entry in ledger.usable_entries
-        if entry.ledger_entry_kind == "technical-atom"
-        and entry.technical_atom_id
-        and node_id
-        and node_id in entry.structure_node_ids
-        and _atom_has_matching_context(ledger, entry.technical_atom_id, matcher)
-    ]
-    return tuple(dict.fromkeys(ids))
 
 
 def _atom_ids_near_entries(

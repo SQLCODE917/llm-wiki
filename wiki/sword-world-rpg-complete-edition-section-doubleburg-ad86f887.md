@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-doubleburg-ad86f887@767dff5778716e4dac30c73b04606216
+projection_coverage: section-sword-world-rpg-complete-edition-section-doubleburg-ad86f887@1ec44c252fee77c87c2206ed9671527c
 ---
 
 # **Doubleburg**
@@ -22,8 +22,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The zalbard is a lesser daemon that's said to be the model for the gargoyle. Its appearance is almost identical to that of a gargoyle, but its skin is fiery red. Its eyes are also bright red, and glow suspiciously. A zalbard's method of attack is the sharp claws on its hands, and it also has the power to breathe magical fire from its mouth. The fire breathed by a zalbard extends in a straight line, making one target within 5 meters its victim. Those attacked by the fire will suffer damage equal 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06599))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06599))_
+
+> The zalbard is a lesser daemon that's said to be the model for the gargoyle. Its appearance is almost identical to that of a gargoyle, but its skin is fiery red. Its eyes are also bright red, and glow suspiciously. A zalbard's method of attack is the sharp claws on its hands, and it also has the power to breathe magical fire from its mouth. The fire breathed by a zalbard extends in a straight line, making one target within 5 meters its victim. Those attacked by the fire will suffer damage equal
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06602))_
 
 > Languages=Low ancient, languages of the person it shapeshifts into Perception=Five senses (Darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06602))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-character-creation-8c17bd80@695e6a9465b4b3350d02986efa66e82c
+projection_coverage: section-sword-world-rpg-complete-edition-section-character-creation-8c17bd80@383ddca6fe244d1b3cebfee74587cde4
 ---
 
 # **Character Creation**
@@ -24,8 +24,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
+
+> Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00329))_
 
 | **dexterity**<br> **agility**<br> **intelligence**<br> **strength**<br> **life force** | =**A**+**B**<br>=**B**+**C**<br>=**C**+**D**<br>=**E**+**F**<br>=**F**+**G** |
 | --- | --- |
@@ -41,10 +46,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00329))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00332))_
 
 | Sub-AbilityScore | Human | Dwarf | Grassrunner | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -74,10 +83,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00332))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00336))_
 
 | AbilityScore | Human | Grassrunner | Dwarf | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -103,7 +116,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00336))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
 
 | 2D | Background | StartingSkills | Exp. Pts. | Money |
 | --- | --- | --- | --- | --- |
@@ -139,7 +155,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00336))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00348))_
 
 | As a result, the ability | scores are |
 | --- | --- |
@@ -165,10 +184,14 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00348))_
 
-> Context: If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, source-range-870a16bc-00360))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, source-range-870a16bc-00360))_
+
+> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00358))_
 
 | Race | Restrictions／Special Abilities | Pre-Adventure<br>Exp. Pts. | Money |
 | --- | --- | --- | --- |
@@ -192,10 +215,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, 
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00358))_
 
-> Context: Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
+
+> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00410))_
 
 | Attained<br>Level | Sorcerer & Sage at the same<br>time | Sorcerer | <br>Sorcerer<br>(with<br>Sage) | Shaman | Fighter<br>Tief<br>Priest | Ranger<br>Sage<br>Bard |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -215,10 +242,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00410))_
 
-> Context: Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+
+> Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
 | **Table 1-8: Weapons-1** |
 | --- |
@@ -246,10 +277,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
-> Context: To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))_
+
+> To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00433))_
 
 | **Table 1-8: Weapons-2** |
 | --- |
@@ -285,10 +320,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00433))_
 
-> Context: The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+
+> The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
 
 | **Table 1-9: Armor** |
 | --- |
@@ -308,7 +347,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
 
 | Shield Name | Req. Str. | Price |
 | --- | --- | --- |
@@ -326,7 +368,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00501))_
 
 | **Table 1-11: Equipment** |
 | --- |
@@ -360,4 +405,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00501))_

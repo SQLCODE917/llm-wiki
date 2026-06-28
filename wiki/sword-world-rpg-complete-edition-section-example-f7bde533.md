@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-example-f7bde533@da24147e21c687b588e0a6a0845fd64d
+projection_coverage: section-sword-world-rpg-complete-edition-section-example-f7bde533@1b14ac789d223c1bbb0e9561bd41bd1f
 ---
 
 # Example:
@@ -27,6 +27,10 @@ From [[sword-world-rpg-complete-edition]].
 - Please note that with other projectiles such as slings, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07799))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00348))_
 
 | As a result, the ability | scores are |
 | --- | --- |
@@ -52,10 +56,14 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00348))_
 
-> Context: Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
+
+> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00410))_
 
 | Attained<br>Level | Sorcerer & Sage at the same<br>time | Sorcerer | <br>Sorcerer<br>(with<br>Sage) | Shaman | Fighter<br>Tief<br>Priest | Ranger<br>Sage<br>Bard |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -75,7 +83,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00410))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00501))_
 
 | **Table 1-11: Equipment** |
 | --- |
@@ -109,10 +120,14 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00410))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00501))_
 
-> Context: His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -150,7 +165,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -188,7 +206,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00924))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -226,10 +247,14 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00924))_
 
-> Context: Ducard II now determines how much damage his armor prevents. His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01061))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01061))_
+
+> Ducard II now determines how much damage his armor prevents. His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01064))_
 
 | Defender's Roll | Defender's Roll | Defender's Roll |
 | --- | --- | --- |
@@ -260,10 +285,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01061))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01064))_
 
-> Context: The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+
+> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
 
 | Feature Used | Base Target Score |
 | --- | --- |
@@ -296,7 +325,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
 
 | Skill Used | Base Target Score |
 | --- | --- |
@@ -325,7 +357,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_
 
 | Attained Level | <br>Sorcerer | Shaman<br>Dragon Priest | Fighter<br>Tief<br>Priest<br>Dark Priest | Ranger<br>Sage<br>Bard | Reduction for<br>Acquiring<br>Sorcerer &<br>Sage at the<br>Same Time |
 | --- | --- | --- | --- | --- | --- |
@@ -359,31 +394,50 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_
 
-> Context: However, this critical target reduction only applies to the _first_ strike roll. From the _second roll onward_ after a critical, the critical target will be _as normal_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07791))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07791))_
+
+> However, this critical target reduction only applies to the _first_ strike roll. From the _second roll onward_ after a critical, the critical target will be _as normal_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07793))_
 
 > If it hits, the critical target will be reduced by -3, making it 7.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07793))_
 
-> Context: However, this critical target reduction only applies to the _first_ strike roll. From the _second roll onward_ after a critical, the critical target will be _as normal_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07791))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07791))_
+
+> However, this critical target reduction only applies to the _first_ strike roll. From the _second roll onward_ after a critical, the critical target will be _as normal_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07794))_
 
 > If he rolls a 10 or greater, more damage will be added, but if he rolls a _7, 8 or 9_ , the strike roll will end there.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07794))_
 
-> Context: Ducard II makes a strike roll. It's an 8. That's a _critical_ . He _can_ continue to roll to increase the damage, but from here on the critical target will be determined as the normal _10_ . If he rolls a 10 or greater, more damage will be added, but if he rolls a _7, 8 or 9_ , the strike roll will end there.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07794))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07794))_
+
+> Ducard II makes a strike roll. It's an 8. That's a _critical_ . He _can_ continue to roll to increase the damage, but from here on the critical target will be determined as the normal _10_ . If he rolls a 10 or greater, more damage will be added, but if he rolls a _7, 8 or 9_ , the strike roll will end there.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07795))_
 
 > To prevent this, you can use the thief skill’s _hide_ ability or the ranger skill’s _camouflage_ ability.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07795))_
 
-> Context: However, while _aiming_ , there’s a chance that your opponent will sense your presence. To prevent this, you can use the thief skill’s _hide_ ability or the ranger skill’s _camouflage_ ability. You must make a success roll each round.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07795))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07795))_
+
+> However, while _aiming_ , there’s a chance that your opponent will sense your presence. To prevent this, you can use the thief skill’s _hide_ ability or the ranger skill’s _camouflage_ ability. You must make a success roll each round.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07798))_
 
 > When your opponent is a character, he or she can notice you by using the _sense danger_ ability.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07798))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08086))_
 
 | Fire-type | Firebolt, Fireball, Firestorm |
 | --- | --- |
@@ -415,4 +469,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07798))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08086))_

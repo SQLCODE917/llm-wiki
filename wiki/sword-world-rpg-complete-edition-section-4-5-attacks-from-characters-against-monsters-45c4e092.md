@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-attacks-from-characters-against-monsters-45c4e092@fa418c043dfe74db48ef778cbc80d3d9
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-attacks-from-characters-against-monsters-45c4e092@15624fac7c1ce4f8d60367506a7bbe2b
 ---
 
 # 4.5 Attacks From Characters Against Monsters
@@ -65,26 +65,43 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00912))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00912))_
+
+> In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00911))_
 
 > When a character attacks a monster, they must make a success roll hit check, using _attack power_ as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00911))_
 
-> Context: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00912))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00912))_
+
+> In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00914))_
 
 > character's attack power + 2D ≥ monster's evasion points → **attack hits**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00914))_
 
-> Context: His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00921))_
 
 > **Table 4-1: Rating Table**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00921))_
 
-> Context: His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -122,7 +139,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -160,7 +180,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00924))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -198,100 +221,172 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00924))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00926))_
 
 > If your hit check is a success and you’re able to hit your target, the damage dealt to your opponent can be determined next.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00926))_
 
-> Context: Damage calculation takes three steps: ① **Determine base damage** , ② **Add bonus damage** , and ③ **Subtract the monster's defense points** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00927))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00927))_
+
+> Damage calculation takes three steps: ① **Determine base damage** , ② **Add bonus damage** , and ③ **Subtract the monster's defense points** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00928))_
 
 > The first step is to determine base damage. Use Table 4-1: Rating Table to determine base damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00928))_
 
-> Context: On the table, look at the column where the **key number** equals your character's _strike power_ . For example, if your character's strike power is 14, you only need to look at key number column 14. The player should then roll 2D. Follow along the row next to the result and look for the number under the key number column that matches your character's _strike power_ . That's the **base damage** . This process is called a **strike roll** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00930, source-range-870a16bc-00933))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00930, source-range-870a16bc-00933))_
+
+> On the table, look at the column where the **key number** equals your character's _strike power_ . For example, if your character's strike power is 14, you only need to look at key number column 14. The player should then roll 2D. Follow along the row next to the result and look for the number under the key number column that matches your character's _strike power_ . That's the **base damage** . This process is called a **strike roll** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00931))_
 
 > **Table 4-2: Rating Table, Key Number Column 14**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00931))_
 
-> Context: On the table, look at the column where the **key number** equals your character's _strike power_ . For example, if your character's strike power is 14, you only need to look at key number column 14.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00930))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00930))_
+
+> On the table, look at the column where the **key number** equals your character's _strike power_ . For example, if your character's strike power is 14, you only need to look at key number column 14.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00933))_
 
 > The player should then roll 2D.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00933))_
 
-> Context: The player should then roll 2D. Follow along the row next to the result and look for the number under the key number column that matches your character's _strike power_ . That's the **base damage** . This process is called a **strike roll** . The result of his 2D roll is 6, so the number on row _6_ under key number column _14_ on the Rating Table is **4** . Base damage is **4 points** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00933, source-range-870a16bc-00937))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00933, source-range-870a16bc-00937))_
+
+> The player should then roll 2D. Follow along the row next to the result and look for the number under the key number column that matches your character's _strike power_ . That's the **base damage** . This process is called a **strike roll** . The result of his 2D roll is 6, so the number on row _6_ under key number column _14_ on the Rating Table is **4** . Base damage is **4 points** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00936))_
 
 > Now that he’s hit the goblin, Ducard II must determine how much damage his strike dealt.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00936))_
 
-> Context: The result of his 2D roll is 6, so the number on row _6_ under key number column _14_ on the Rating Table is **4** . Base damage is **4 points** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00937))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00937))_
+
+> The result of his 2D roll is 6, so the number on row _6_ under key number column _14_ on the Rating Table is **4** . Base damage is **4 points** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00939))_
 
 > When making a strike roll, if your 2D roll is 2 (double ones), the result is ＊＊ regardless of the key number.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00939))_
 
-> Context: When making a strike roll, if your 2D roll is 2 (double ones), the result is ＊＊ regardless of the key number. This means your attack hit the target, but failed to deal any damage! Make a note of the score you got on the Rating Table. Then, roll 2D again and look under the same key number on the Rating Table. Add _that_ result to the previous result. This is your base damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00939, source-range-870a16bc-00943))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00939, source-range-870a16bc-00943))_
+
+> When making a strike roll, if your 2D roll is 2 (double ones), the result is ＊＊ regardless of the key number. This means your attack hit the target, but failed to deal any damage! Make a note of the score you got on the Rating Table. Then, roll 2D again and look under the same key number on the Rating Table. Add _that_ result to the previous result. This is your base damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00942))_
 
 > When making a strike roll, if your 2D roll is equal to or greater than the critical target (usually _10_ , _9_ if using the thief skill), the strike is **critical** .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00942))_
 
-> Context: Make a note of the score you got on the Rating Table. Then, roll 2D again and look under the same key number on the Rating Table. Add _that_ result to the previous result. This is your base damage. If a critical occurs, but you roll _double ones_ on the second and subsequent damage checks, _0_ is added to the previous result (i.e., the previous result remains the _same_ ), and the base damage check will end. It can _never_ be 0 damage. Rest assured.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00943, source-range-870a16bc-00945))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00943, source-range-870a16bc-00945))_
+
+> Make a note of the score you got on the Rating Table. Then, roll 2D again and look under the same key number on the Rating Table. Add _that_ result to the previous result. This is your base damage. If a critical occurs, but you roll _double ones_ on the second and subsequent damage checks, _0_ is added to the previous result (i.e., the previous result remains the _same_ ), and the base damage check will end. It can _never_ be 0 damage. Rest assured.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00944))_
 
 > If the second 2D roll is _also_ greater than or equal to the critical target, you can make a third roll to add even _more_ damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00944))_
 
-> Context: If the second 2D roll is _also_ greater than or equal to the critical target, you can make a third roll to add even _more_ damage. This process can continue as long as you keep rolling greater than or equal to the critical target. In theory, this could deal an infinite amount of damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00944))_
+### Technical atom 15
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00944))_
+
+> If the second 2D roll is _also_ greater than or equal to the critical target, you can make a third roll to add even _more_ damage. This process can continue as long as you keep rolling greater than or equal to the critical target. In theory, this could deal an infinite amount of damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00945))_
 
 > If a critical occurs, but you roll _double ones_ on the second and subsequent damage checks, _0_ is added to the previous result (i.e., the previous result remains the _same_ ), and the base damage check will end.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00945))_
 
-> Context: That’s still greater than the critical target. The number on row 12 is **8** , so we’ll make a note of the 8 and roll a third time. The roll is _6_ . This did not reach the critical target, so the base damage check ends here. Since the number on row 6 is **4** , the base damage dealt by Ducard `Ⅱ` is 6+8+4= **18** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00947))_
+### Technical atom 16
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00947))_
+
+> That’s still greater than the critical target. The number on row 12 is **8** , so we’ll make a note of the 8 and roll a third time. The roll is _6_ . This did not reach the critical target, so the base damage check ends here. Since the number on row 6 is **4** , the base damage dealt by Ducard `Ⅱ` is 6+8+4= **18** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00948))_
 
 > If the third roll were a _2_ (double ones), the base damage would instead be 6+8+0= _14_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00948))_
 
-> Context: If the third roll were a _2_ (double ones), the base damage would instead be 6+8+0= _14_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00948))_
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00948))_
+
+> If the third roll were a _2_ (double ones), the base damage would instead be 6+8+0= _14_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00951))_
 
 > Once you’ve determined base damage, you must then add your character’s bonus damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00951))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00955))_
 
 > - is 18+4= **22** ,
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00955))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00957))_
 
 > - is 14+4= **18** .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00957))_
+
+### Technical atom 20
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00958))_
 
 > When determining base damage (strike roll), if you suddenly roll double ones, the damage will always be _0_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00958))_
+
+### Technical atom 21
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00966))_
 
 > **final damage** = base damage + bonus damage - monster's defense points
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00966))_
 
-> Context: If the base damage dealt by Ducard II is _4, 18_ , or _14_ , respectively, the final damage he could deal to the goblin would be:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00968))_
+### Technical atom 22
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00968))_
+
+> If the base damage dealt by Ducard II is _4, 18_ , or _14_ , respectively, the final damage he could deal to the goblin would be:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00970))_
 
 > - -4 (goblin's defense points) = **4**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00970))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00972))_
 
 > - -4 (goblin's defense points) = **18** 14 (base damage) +4 (bonus damage)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00972))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00973))_
 
 > - -4 (goblin's defense points) = **14**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00973))_
+
+### Technical atom 25
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00974))_
 
 > If final damage is _0 or negative_ , it means that _no damage_ was dealt.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00974))_
 
-> Context: Ducard II now determines how much damage his armor prevents. His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01061))_
+### Technical atom 26
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01061))_
+
+> Ducard II now determines how much damage his armor prevents. His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01064))_
 
 | Defender's Roll | Defender's Roll | Defender's Roll |
 | --- | --- | --- |
@@ -322,4 +417,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01061))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01064))_

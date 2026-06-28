@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-high-quality-weapons-and-armor-fc18953d@cc3c15f2eae7b5f5a371b23e5db4b0aa
+projection_coverage: section-sword-world-rpg-complete-edition-section-high-quality-weapons-and-armor-fc18953d@da8321b61729696c71861a9f24618549
 ---
 
 # **High-Quality Weapons and Armor**
@@ -41,11 +41,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: In addition, no matter how high quality it is, _nothing_ can affect its attack power or evasion speed. It’ll also have no effect on monsters that can only be wounded by magic or magical weapons (such as spirits, beastmen, etc.).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01124))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01124))_
+
+> In addition, no matter how high quality it is, _nothing_ can affect its attack power or evasion speed. It’ll also have no effect on monsters that can only be wounded by magic or magical weapons (such as spirits, beastmen, etc.).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01125))_
 
 > Also, even if you search all over Alecrast, you will usually only find _one_ with a required strength up to _5 lower than usual_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01125))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01128))_
 
 > **Table 4-5: Guideline for Obtaining High-Quality Weapons and Armor**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01128))_

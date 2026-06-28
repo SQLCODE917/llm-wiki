@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-3-projectile-bonus-damage-e12d5190@673b63a3f9fc43b7ba5d2259e19f7e0b
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-3-projectile-bonus-damage-e12d5190@a4043af9a1ab05c340879fdccc382a87
 ---
 
 # 16.3 Projectile Bonus Damage
@@ -43,41 +43,71 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> When using the _weapon modifiers_ optional rule, there is a limit to the number of times a projectile can be fired.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07726))_
+### Technical atom 1
 
-> Context: When using the _weapon modifiers_ optional rule, there is a limit to the number of times a projectile can be fired.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07726))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07726))_
+
+> When using the _weapon modifiers_ optional rule, there is a limit to the number of times a projectile can be fired.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07726))_
+
+> When using the _weapon modifiers_ optional rule, there is a limit to the number of times a projectile can be fired.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07727))_
 
 > A sling can shoot every round if it fires its _own_ bullets.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07727))_
 
-> Context: A sling can shoot every round if it fires its _own_ bullets. However, if you pick up pebbles, etc. on the ground and use them as bullets, it _must_ be every _other_ round.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07727))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07727))_
+
+> A sling can shoot every round if it fires its _own_ bullets. However, if you pick up pebbles, etc. on the ground and use them as bullets, it _must_ be every _other_ round.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07728))_
 
 > If you set a quarrel in advance, the _first_ shot will not take long.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07728))_
 
-> Context: A sling can shoot every round if it fires its _own_ bullets. However, if you pick up pebbles, etc. on the ground and use them as bullets, it _must_ be every _other_ round.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07727))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07727))_
+
+> A sling can shoot every round if it fires its _own_ bullets. However, if you pick up pebbles, etc. on the ground and use them as bullets, it _must_ be every _other_ round.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07729))_
 
 > Throwing weapons can be thrown _every_ round if they're kept ready in a place that's _easy to reach_ (such as on a belt, etc.).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07729))_
 
-> Context: Throwing weapons can be thrown _every_ round if they're kept ready in a place that's _easy to reach_ (such as on a belt, etc.). But if _not_ , they’ll take _one_ round to prepare and can only be thrown every _other_ round.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07729))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07729))_
+
+> Throwing weapons can be thrown _every_ round if they're kept ready in a place that's _easy to reach_ (such as on a belt, etc.). But if _not_ , they’ll take _one_ round to prepare and can only be thrown every _other_ round.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07732))_
 
 > " _Table 16-3 Armor Optional Rules_ " is a table of numerical armor modifications.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07732))_
 
-> Context: If you ready a shield, it’ll be easier to avoid your opponent's attacks. With this rule, if you ready a _large_ shield, your _evasion speed_ will be +2. However, if you do use a large shield, it’s inevitable that you’ll have to neglect your attacks. Therefore, when using a large shield, you will suffer a -1 penalty to your _attack power_ . However, large shields with a _magical power_ of +1 or greater do _not_ have this penalty.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07739))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07739))_
+
+> If you ready a shield, it’ll be easier to avoid your opponent's attacks. With this rule, if you ready a _large_ shield, your _evasion speed_ will be +2. However, if you do use a large shield, it’s inevitable that you’ll have to neglect your attacks. Therefore, when using a large shield, you will suffer a -1 penalty to your _attack power_ . However, large shields with a _magical power_ of +1 or greater do _not_ have this penalty.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07737))_
 
 > With this optional rule, there are differences in the way small and large shields are handled ( _Table 16-2: Shield Optional Rules_ ).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07737))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07743))_
 
 > **Table 16-2 Shield Optional Rules**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07743))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 | Shield<br>Name | Evasion<br>Speed Mod. | Attack<br>Power Mod. |
 | --- | --- | --- |
@@ -95,10 +125,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07743))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07746))_
 
 > **Table 16-3 Armor Optional Rules**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07746))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 | Armor Name | Evasion Speed<br>Mod. | Defense<br>Mod. | Critical Target<br>Change | Anti-strangling<br>Prot. |
 | --- | --- | --- | --- | --- |
@@ -118,4 +154,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07746))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_

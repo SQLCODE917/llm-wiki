@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ranger-skill-90fea5c8@0d68f3ea0d7a7d77c252e982f28038be
+projection_coverage: section-sword-world-rpg-complete-edition-section-ranger-skill-90fea5c8@31ec7db3fba0f9ada23aa4b59006fcbf
 ---
 
 # **Ranger Skill**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-ranger-ski
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
 
 | Shield Name | Req. Str. | Price |
 | --- | --- | --- |
@@ -32,4 +36,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_

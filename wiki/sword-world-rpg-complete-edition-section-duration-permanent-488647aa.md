@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-duration-permanent-488647aa@d0f05a7f12fb67bcfb8a5f425c1cdc88
+projection_coverage: section-sword-world-rpg-complete-edition-section-duration-permanent-488647aa@b6a737393a8133a72ce207978eea3f9f
 ---
 
 # Duration=Permanent
@@ -30,23 +30,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Area=One specific object
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01653))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01653))_
+
+> Area=One specific object
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01655))_
 
 > Effect=Gives the targeted object resistance to magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01655))_
 
-> Context: Area=One specific object
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01653))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01653))_
+
+> Area=One specific object
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01656))_
 
 > Type=Target score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01656))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01658))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01658))_
 
-> Context: This spell is powerless against spells that belong to _detection_ . Therefore, objects with this spell cast on them _will_ respond to _Sense Magic_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01661))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01661))_
+
+> This spell is powerless against spells that belong to _detection_ . Therefore, objects with this spell cast on them _will_ respond to _Sense Magic_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01659))_
 
 > If a successful resist, the opponent’s spell will either completely lose its effect, or will take only an incomplete effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01659))_

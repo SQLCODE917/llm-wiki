@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-focus-f23c3f19@d745407ac3dd55d5e30106a46bfe8297
+projection_coverage: section-sword-world-rpg-complete-edition-section-focus-f23c3f19@242393b89632ef851d4355c02c962a5e
 ---
 
 # 《 **Focus** 》
@@ -28,8 +28,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01471))_
+
 > While focusing, the caster cannot take the following actions:
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01471))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01480))_
 
 > If the caster wishes to voluntarily release their focus (in order to take another action), they must declare it at the _beginning_ of the round, when no one else has made their action announcements yet.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01480))_

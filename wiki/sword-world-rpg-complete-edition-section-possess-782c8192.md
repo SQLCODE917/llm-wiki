@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-possess-782c8192@40aae46ddef48202119e5d3df4d924ff
+projection_coverage: section-sword-world-rpg-complete-edition-section-possess-782c8192@e5f1470d1027a800593911392a59c60e
 ---
 
 # 《 **Possess** 》
@@ -22,14 +22,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: In some cases, the gaze or ray can be reflected off a mirror, etc. but if this is not specified, it cannot be reflected.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06783))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06783))_
+
+> In some cases, the gaze or ray can be reflected off a mirror, etc. but if this is not specified, it cannot be reflected.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06785))_
 
 > The targeted character must make a mental power resistance roll
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06785))_
 
-> Context: This is an ability that is used by undead monsters collectively referred to as haunts. The targeted character must make a mental power resistance roll
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06785))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06785))_
+
+> This is an ability that is used by undead monsters collectively referred to as haunts. The targeted character must make a mental power resistance roll
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06786))_
 
 > A haunt who has possessed a body can also use that character's abilities.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06786))_

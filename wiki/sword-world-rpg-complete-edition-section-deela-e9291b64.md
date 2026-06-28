@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-deela-e9291b64@f490a2658e1deaf121958c3ea3548c23
+projection_coverage: section-sword-world-rpg-complete-edition-section-deela-e9291b64@d58140550c8de4ed47ffede8e93d3671
 ---
 
 # **Deela**
@@ -24,5 +24,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05326))_
+
 > Anyone who hears a deela's song must make a mental power resistance roll against target score 10.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05326))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fire-breath-d87483d7@146f43d778fb1662ef9bdca85ec7abc0
+projection_coverage: section-sword-world-rpg-complete-edition-section-fire-breath-d87483d7@23fde996fa31a8f0147e5bdd3bc65d98
 ---
 
 # 《 **Fire Breath** 》
@@ -23,8 +23,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is the dragon's special ability, to let out a roar that trembles the souls of those who hear it. It has no effect unless you hear it, but everyone who does hear it must make a mental power resistance roll. If you fail, you will suffer the effects specified on Table 5-5: Fears (see p. 89).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06793))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06793))_
+
+> This is the dragon's special ability, to let out a roar that trembles the souls of those who hear it. It has no effect unless you hear it, but everyone who does hear it must make a mental power resistance roll. If you fail, you will suffer the effects specified on Table 5-5: Fears (see p. 89).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06795))_
 
 > You must also make a mental power resistance roll against the indicated target score, which if successful will result in a smaller amount of damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06795))_

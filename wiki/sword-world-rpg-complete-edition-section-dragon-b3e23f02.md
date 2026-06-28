@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dragon-b3e23f02@eeb72f07ce0cb114c540c22d6de2e469
+projection_coverage: section-sword-world-rpg-complete-edition-section-dragon-b3e23f02@b48690475708e28dac26aaabc7726669
 ---
 
 # **[ Dragon ]**
@@ -28,6 +28,10 @@ From [[sword-world-rpg-complete-edition]].
 - It is said that there is no way for a human to ever take on a drake. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05625))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -61,4 +65,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-duration-instant-4663f255@4a52d1e8de38141d74fb5c1ea653fd58
+projection_coverage: section-sword-world-rpg-complete-edition-section-duration-instant-4663f255@53dc5919916d079aa0ad8cff307a499c
 ---
 
 # Duration=Instant
@@ -26,8 +26,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02753))_
+
 > Effect=Instantly freezes the target, killing them instantly
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02753))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02755))_
 
 > Expansion=Final score, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02755))_

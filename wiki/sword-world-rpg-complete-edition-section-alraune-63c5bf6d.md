@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-alraune-63c5bf6d@97296471d261a0c3899608736092b6ac
+projection_coverage: section-sword-world-rpg-complete-edition-section-alraune-63c5bf6d@48b8581a4f7b163211078f96d91e52e5
 ---
 
 # **[ Alraune ]**
@@ -23,14 +23,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06079))_
+
 > Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6, gnome, dryad only)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06079))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06080))_
 
 > Scream (Resist target score=13, once per day)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06080))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06081))_
 
 > Mental attack immunity Habitat=Human villages Languages=Silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06081))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06082))_
 
 > Alraune look exactly like humans, and can speak and think like humans, but when they are wounded, a thick, red mucus oozes out of them.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06082))_

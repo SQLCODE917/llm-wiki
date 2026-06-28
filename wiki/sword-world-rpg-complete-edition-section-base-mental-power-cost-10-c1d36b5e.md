@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-base-mental-power-cost-10-c1d36b5e@19d4447025067b69bdb711c6131ffe4c
+projection_coverage: section-sword-world-rpg-complete-edition-section-base-mental-power-cost-10-c1d36b5e@a4c06e9ad84ce1e9d672fce36a4fd067
 ---
 
 # Base Mental Power Cost=10
@@ -32,23 +32,45 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01700))_
+
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01700))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01701))_
 
 > Area=One weapon Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01701))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01702))_
 
 > Effect=Wraps a weapon in magical fire, adding +10 to strike power
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01702))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01703))_
 
 > Type=Weapon enhancement, target score Expansion=Final score, duration, distance, targets
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01703))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01704))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01704))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01707))_
 
 > If you apply it to a projectile such as a bow, you do not have to apply it to each individual arrow.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01707))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -82,4 +104,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01707))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

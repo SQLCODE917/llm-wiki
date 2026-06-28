@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sphinx-ee5a11b8@ac8aa904efce7a444bafc91b11e1e055
+projection_coverage: section-sword-world-rpg-complete-edition-section-sphinx-ee5a11b8@98b90c07869e41ea43ff8388f0187537
 ---
 
 # **[ Sphinx ]**
@@ -24,14 +24,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05520))_
+
 > Habitat=Ruins, underground labyrinths Languages=Regional, low ancient Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05520))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05521))_
 
 > Although they can cast ancient magic, they will not use magic recklessly or challenge you to a fight unless something really bad happens.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05521))_
 
-> Context: The sphinx has the body of a lion with the wings of an eagle and a beautiful human-like face. They have an extremely long lifespan and have accumulated a great deal of knowledge. Although they can cast ancient magic, they will not use magic recklessly or challenge you to a fight unless something really bad happens.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05521))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05521))_
+
+> The sphinx has the body of a lion with the wings of an eagle and a beautiful human-like face. They have an extremely long lifespan and have accumulated a great deal of knowledge. Although they can cast ancient magic, they will not use magic recklessly or challenge you to a fight unless something really bad happens.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05522))_
 
 > If approached in a friendly manner, the sphinx may play a game of riddles to determine the intelligence of their opponent.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05522))_

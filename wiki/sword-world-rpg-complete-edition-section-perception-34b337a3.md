@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-perception-34b337a3@2e6c4aae0fca8fabb249ceebac104d32
+projection_coverage: section-sword-world-rpg-complete-edition-section-perception-34b337a3@474a6eeb296ee00d1d6fd1a17942da85
 ---
 
 # 《 **Perception** 》
@@ -45,8 +45,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: ( _Sonar_ ) means the monster can use sound waves or ultrasonic echoes to perceive the outside world. Therefore, they have almost no restrictions on action even in the dark. their empty eye sockets for pseudo vision. Therefore, if they're blindfolded, they won't be able to see, and they won't be able to see anything approaching from behind. Monsters whose perception is _pseudo_ can experience illusions.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04942, source-range-870a16bc-04945))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04942, source-range-870a16bc-04945))_
+
+> ( _Sonar_ ) means the monster can use sound waves or ultrasonic echoes to perceive the outside world. Therefore, they have almost no restrictions on action even in the dark. their empty eye sockets for pseudo vision. Therefore, if they're blindfolded, they won't be able to see, and they won't be able to see anything approaching from behind. Monsters whose perception is _pseudo_ can experience illusions.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04944))_
 
 > Those whose sensory abilities are _pseudo_ have five pseudo-senses through magical means. After all, one part may be missing, or they may have special senses. In such cases, there is an organ that captures the sensation in a pseudo manner. If those organs are destroyed, the pseudo-senses will no longer be usable. For example, skeletons can use
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04944))_

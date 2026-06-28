@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-unknown-dfd5565f@9eea5bad4a2c54727c1d4afbbb478939
+projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-unknown-dfd5565f@6f9021f978dfe999d1301d15fe348475
 ---
 
 # Enchanter=Unknown
@@ -24,8 +24,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07516))_
+
 > Form=Four statues of a crocodile, a snake, an ape and a bear made of mithril silver Base Trade Price=480,000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07516))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07517))_
 
 > Powers=Anyone who touches the statue shapeshifts into the form of the same animal as the statue (other than the snake)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07517))_

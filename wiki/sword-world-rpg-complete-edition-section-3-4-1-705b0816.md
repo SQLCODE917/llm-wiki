@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-1-705b0816@270b2402a3d70e434dc4ec168dd0572b
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-1-705b0816@5230c64d569ba9fd41735e77cd58a2bd
 ---
 
 # **3.4.1**
@@ -24,8 +24,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: You can wield up to two, one in each hand. If you want to switch your weapon from a projectile such as a bow, to a melee weapon, you can drop your previous weapon on the ground, and then you can ready a new weapon. This is because, from the beginning, it’s assumed your hands were empty.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00767))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00767))_
+
+> You can wield up to two, one in each hand. If you want to switch your weapon from a projectile such as a bow, to a melee weapon, you can drop your previous weapon on the ground, and then you can ready a new weapon. This is because, from the beginning, it’s assumed your hands were empty.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00770))_
 
 > If you’re carrying a shield on your back, you can also ready it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00770))_

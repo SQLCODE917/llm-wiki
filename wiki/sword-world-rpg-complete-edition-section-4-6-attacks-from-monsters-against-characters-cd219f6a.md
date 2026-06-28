@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-6-attacks-from-monsters-against-characters-cd219f6a@f5b8efbbcc6471a5e592f9c7a66c8eca
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-6-attacks-from-monsters-against-characters-cd219f6a@bc561b9532c4e5b6a68c2c7bcd4c3456
 ---
 
 # 4.6 Attacks From Monsters Against Characters
@@ -53,8 +53,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -92,7 +97,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -130,7 +138,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00924))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -168,55 +179,90 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00924))_
 
-> Context: This check is also made with a success roll.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00985))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00985))_
+
+> This check is also made with a success roll.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00987))_
 
 > evasion speed + 2D ≥ monster's attack points → **evasion success (monster's attack fails)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00987))_
 
-> Context: The player rolls the dice to determine if they evade the goblin's attack. The roll is **4** . 5+4= **9** , which is short of the target score (the goblin's attack points) of 10. Ducard II is hit by the goblin.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00992))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00992))_
+
+> The player rolls the dice to determine if they evade the goblin's attack. The roll is **4** . 5+4= **9** , which is short of the target score (the goblin's attack points) of 10. Ducard II is hit by the goblin.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00995))_
 
 > If a monster's attack hits (or if a character fails to evade), you must look for the base damage dealt by the monster.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00995))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01001))_
 
 > Characters can reduce the damage they receive from monsters by means of armor.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01001))_
 
-> Context: Characters can reduce the damage they receive from monsters by means of armor. You can determine the amount of _damage reduction_ by using Table 4-1: Rating Table. On the _Rating Table_ , look at the column where the key number equals your character's _defense power_ . For example, if your defense power is 7, you would look at key number column 7 with on the _Rating Table_ . Roll 2D and follow the row next to the result. Then, look for the number under the appropriate column. This process is spe
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01001, source-range-870a16bc-01004))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01001, source-range-870a16bc-01004))_
+
+> Characters can reduce the damage they receive from monsters by means of armor. You can determine the amount of _damage reduction_ by using Table 4-1: Rating Table. On the _Rating Table_ , look at the column where the key number equals your character's _defense power_ . For example, if your defense power is 7, you would look at key number column 7 with on the _Rating Table_ . Roll 2D and follow the row next to the result. Then, look for the number under the appropriate column. This process is spe
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01002))_
 
 > **Table 4-3: Rating Table, Key Number Column 7**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01002))_
 
-> Context: Let’s find out how much damage Ducard II is able to prevent with his armor after being attacked by the goblin. Since Ducard II has a defense power of _7_ , we’ll use key number column 7. We roll 2D, and the result is _3_ . The number on row 3 under key number column 7 is **0** . This is the damage that Ducard II is able to prevent with his armor.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01006))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01006))_
+
+> Let’s find out how much damage Ducard II is able to prevent with his armor after being attacked by the goblin. Since Ducard II has a defense power of _7_ , we’ll use key number column 7. We roll 2D, and the result is _3_ . The number on row 3 under key number column 7 is **0** . This is the damage that Ducard II is able to prevent with his armor.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01008))_
 
 > When making a defense roll, if your roll is double ones, that means that you’ve been hit _extremely_ hard.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01008))_
 
-> Context: When making a defense roll, if your roll is double ones, that means that you’ve been hit _extremely_ hard. Maybe the monster's attack hit a gap in your character’s armor, or one of their vital points. In this case, your character _cannot_ reduce the monster's damage (strike points) at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01008))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01008))_
+
+> When making a defense roll, if your roll is double ones, that means that you’ve been hit _extremely_ hard. Maybe the monster's attack hit a gap in your character’s armor, or one of their vital points. In this case, your character _cannot_ reduce the monster's damage (strike points) at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01010))_
 
 > When making a defense roll, criticals do _not_ occur like they do with a strike roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01010))_
 
-> Context: When making a defense roll, criticals do _not_ occur like they do with a strike roll. No matter how high the roll, _only_ the amount of _damage reduction_ indicated by that roll is used, _nothing_ is added to it.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01010))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01010))_
+
+> When making a defense roll, criticals do _not_ occur like they do with a strike roll. No matter how high the roll, _only_ the amount of _damage reduction_ indicated by that roll is used, _nothing_ is added to it.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01012))_
 
 > Suppose Ducard II’s defense roll came up 12 (double sixes!). The number on row 12 under key number column 7 is **6** . Unlike a strike roll, a defense roll is made only once. You _cannot_ roll the dice again to increase this number further.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01012))_
 
-> Context: If the result of Ducard II's defense roll is _0_ (roll 3) or _6_ (roll 12), respectively, the final damage he will suffer is calculated to be:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01022))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01022))_
+
+> If the result of Ducard II's defense roll is _0_ (roll 3) or _6_ (roll 12), respectively, the final damage he will suffer is calculated to be:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01020))_
 
 > **Final damage** = monster's strike points - (defense roll result + damage reduction)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01020))_
 
-> Context: Ducard II now determines how much damage his armor prevents. His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01061))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01061))_
+
+> Ducard II now determines how much damage his armor prevents. His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01064))_
 
 | Defender's Roll | Defender's Roll | Defender's Roll |
 | --- | --- | --- |
@@ -247,4 +293,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01061))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01064))_

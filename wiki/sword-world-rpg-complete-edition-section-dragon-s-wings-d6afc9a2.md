@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dragon-s-wings-d6afc9a2@b1c966cf68fef5de476fdba12c20aa89
+projection_coverage: section-sword-world-rpg-complete-edition-section-dragon-s-wings-d6afc9a2@1e9ac94e01210476fd35c69849ab73c9
 ---
 
 # **[ Dragon’s Wings ]**
@@ -23,17 +23,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04256))_
+
 > Base Mental Power Cost=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04256))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04257))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04257))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04258))_
 
 > Area=Caster Duration=1 hour Effect=Grow wings and gain the ability to fly Type=Target score Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04258))_
 
-> Context: Wings shaped like dragon wings grow on your back. The size depends on the caster's body. Using these wings, the caster can fly freely in the sky. Movement speed during flight is 30, and during full movement, 30 km per hour. The caster's agility does _not_ change.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04259))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04259))_
+
+> Wings shaped like dragon wings grow on your back. The size depends on the caster's body. Using these wings, the caster can fly freely in the sky. Movement speed during flight is 30, and during full movement, 30 km per hour. The caster's agility does _not_ change.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04260))_
 
 > If you are wearing armor, you will not be able to grow your wings (unless you take some measure like having a hole in the back, etc.).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04260))_

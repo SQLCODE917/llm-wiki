@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-wasp-f23b91cd@8bf2e97fbdc4b044d7b56dd5a725e427
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-wasp-f23b91cd@3f308e0a5cb2bda7d051a392d4b73855
 ---
 
 # **[ Giant Wasp ]**
@@ -31,20 +31,34 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05709))_
+
 > Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05709))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05711))_
 
 > Mental Points/Resistance=6/9 (2) Special Abilities=Poison (Toxicity score 12, paralysis)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05711))_
 
-> Context: This is a wasp about 1 meter long, with a black body and a red band on its belly. They do not build hives like honeybees, and will not attack you unless you attack them. However, during the autumn spawning season, the females become ferocious. This is because they have to attack animals to lay their eggs.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05714))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05714))_
+
+> This is a wasp about 1 meter long, with a black body and a red band on its belly. They do not build hives like honeybees, and will not attack you unless you attack them. However, during the autumn spawning season, the females become ferocious. This is because they have to attack animals to lay their eggs.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05712))_
 
 > Mental attack immunity Habitat=Warm Forests
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05712))_
 
-> Context: This is a wasp about 1 meter long, with a black body and a red band on its belly. They do not build hives like honeybees, and will not attack you unless you attack them. However, during the autumn spawning season, the females become ferocious. This is because they have to attack animals to lay their eggs.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05714))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05714))_
+
+> This is a wasp about 1 meter long, with a black body and a red band on its belly. They do not build hives like honeybees, and will not attack you unless you attack them. However, during the autumn spawning season, the females become ferocious. This is because they have to attack animals to lay their eggs.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05713))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05713))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lightning-crystal-9db75fee@5cb21c8b1512706a9a9539743294d54a
+projection_coverage: section-sword-world-rpg-complete-edition-section-lightning-crystal-9db75fee@c820dc92d7f5dada1d0683a2220c1599
 ---
 
 # **Lightning Crystal**
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07327))_
+
 > Rarity=13 Enchanter=Many Form=Spherical polished yellow crystal Base Trade Price=1800 gamels Powers=Has the same effect as Lightning when thrown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07327))_

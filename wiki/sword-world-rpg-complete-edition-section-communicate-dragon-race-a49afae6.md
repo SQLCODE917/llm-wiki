@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-communicate-dragon-race-a49afae6@754d62d7f00dfe79e604cc0fb2d38044
+projection_coverage: section-sword-world-rpg-complete-edition-section-communicate-dragon-race-a49afae6@d8e4f0db85ee351b193371591c14226d
 ---
 
 # **[Communicate Dragon Race]**
@@ -25,20 +25,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04242))_
+
 > The attack power is the caster's _dragon priest skill level + dexterity bonus_ , and if it hits, in addition to the damage from the claws,
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04242))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04243))_
 
 > Base Mental Power Cost=9
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04243))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04244))_
 
 > Distance=Caster Area=Caster Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04244))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04245))_
 
 > Effect=Enables communication with dragons Type=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04245))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04246))_
 
 > Expansion=Duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04246))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04248))_
 
 > If the opponent is intelligent enough, you can also negotiate.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04248))_

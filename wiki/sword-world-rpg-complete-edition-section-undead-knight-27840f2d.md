@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-undead-knight-27840f2d@1fbc10e6085ef9f3dd4213b4b888e3c3
+projection_coverage: section-sword-world-rpg-complete-edition-section-undead-knight-27840f2d@f54adecf6580cc10d43fc5d9ddfbef6c
 ---
 
 # **[ Undead Knight ]**
@@ -38,20 +38,36 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06251))_
+
 > Monster Level=8
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06251))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06252))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06252))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06254))_
 
 > Gaze (Resist target score=15, mental damage, strike power 10, bonus damage 8)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06254))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06256))_
 
 > Damage from healing magic Habitat=Ruins, deep in the woods Languages=Regional Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06256))_
 
-> Context: An undead knight can similarly drain the mental power of its enemies with its gaze. As a result, anyone struck by an undead knight's gaze (even from behind) will suffer damage to their mental power. Those whose mental power is reduced to 0 due to damage from an undead knight's weapons or gaze will die instantly and will be resurrected as a wight 24 hours later. For this reason, an undead knight may be accompanied by multiple wights. These wights are sometimes specifically called _squire wights_ 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06262))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06262))_
+
+> An undead knight can similarly drain the mental power of its enemies with its gaze. As a result, anyone struck by an undead knight's gaze (even from behind) will suffer damage to their mental power. Those whose mental power is reduced to 0 due to damage from an undead knight's weapons or gaze will die instantly and will be resurrected as a wight 24 hours later. For this reason, an undead knight may be accompanied by multiple wights. These wights are sometimes specifically called _squire wights_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06261))_
 
 > Also, if an undead knight's attack hits, the character will suffer damage to their mental power in addition to normal damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06261))_

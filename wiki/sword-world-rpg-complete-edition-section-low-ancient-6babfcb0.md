@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-low-ancient-6babfcb0@7d6a2a429ac0e937b310183565fda21b
+projection_coverage: section-sword-world-rpg-complete-edition-section-low-ancient-6babfcb0@6e34ee126cc280e6c856fc510f44711b
 ---
 
 # 《 **Low Ancient** 》
@@ -23,5 +23,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04431))_
+
 > This is because you cannot begin to understand the great civilization of the ancient kingdom unless you know low ancient.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04431))_

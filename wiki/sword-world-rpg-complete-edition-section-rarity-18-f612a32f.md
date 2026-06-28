@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-18-f612a32f@3e52ced9e5314083c10277c803462d8b
+projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-18-f612a32f@0909ca3ee36838b75de9dd5a98f162f1
 ---
 
 # Rarity=18
@@ -24,8 +24,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If _spirit magic_ is used around the wearer (used towards the wearer, or the wearer him or herself attempts to use spirit magic), this stone will seal the spirit, and the spirit magic is nullified as a result.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07524))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07524))_
+
+> If _spirit magic_ is used around the wearer (used towards the wearer, or the wearer him or herself attempts to use spirit magic), this stone will seal the spirit, and the spirit magic is nullified as a result.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07526))_
 
 > Enchanter=Kaiber, "The Sorcerer of Gravity" Form=A 1.5m diameter golden plate Base Trade Price=160,000 gamels Powers=Negates gravity
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07526))_

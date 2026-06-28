@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3rd-level-spirit-magic-list-invisibility-sprite-mind-spirit-03529149@38487cd5fba8fa2b7fc599d673e42e0a
+projection_coverage: section-sword-world-rpg-complete-edition-section-3rd-level-spirit-magic-list-invisibility-sprite-mind-spirit-03529149@68a9d76cd2ac349ae9a0b0e12ebb8730
 ---
 
 # **3rd Level Spirit Magic List [ Invisibility ] (Sprite/Mind Spirit)**
@@ -27,14 +27,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02394))_
+
 > Base Mental Power Cost=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02394))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02395))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02395))_
 
-> Context: If you cast _Invisibility_ during combat and then attempt to cancel it voluntarily (in order to take another action), by the definition of _focus_ magic, at the beginning of that round, you _must_ declare it when no one has yet made their action announcements. Therefore, you _cannot_ attack unopposed or use magic
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02398))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02398))_
+
+> If you cast _Invisibility_ during combat and then attempt to cancel it voluntarily (in order to take another action), by the definition of _focus_ magic, at the beginning of that round, you _must_ declare it when no one has yet made their action announcements. Therefore, you _cannot_ attack unopposed or use magic
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02396))_
 
 > Area=Caster Duration=Until focus ends Effect=Makes the caster invisible Type=Focus, Illusion Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02396))_

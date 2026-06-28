@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-distance-caster-6379bf55@c8416ad963281d7e576e35b1ed7b545c
+projection_coverage: section-sword-world-rpg-complete-edition-section-distance-caster-6379bf55@f18b357dceb34f0b912bc6835f53fe90
 ---
 
 # Distance=Caster
@@ -25,17 +25,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02996))_
+
 > Area=An area within a 1 kilometer radius from the caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02996))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02997))_
 
 > Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02997))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02998))_
 
 > Effect=Summon animals that represent a god Type=Target score Expansion=Final score, duration, area Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02998))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03000))_
 
 > You can also give commands to encourage suicide, such as jumping into a fire to become food, but if you give such commands unnecessarily, you may risk _losing_ your priest skill depending on the god you worship.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03000))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03000))_
 
 > The commands you give the animal should be very simple. For example, launching an attack on a specific target, delivering a certain package somewhere, heading to a certain location as a group, etc. You can also give commands to encourage suicide, such as jumping into a fire to become food, but if you give such commands unnecessarily, you may risk _losing_ your priest skill depending on the god you worship. For example, a priest of Myrii should _only_ use animals to buy time while he escapes from an enemy, unless the enemy is extremely unmanageable.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03000))_

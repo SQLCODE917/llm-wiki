@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-leprechaun-mind-spirit-4aff50f0@e4ad2d104246902a33340f1f70ef7340
+projection_coverage: section-sword-world-rpg-complete-edition-section-leprechaun-mind-spirit-4aff50f0@8d7695e665550b821ca850610f4c9bff
 ---
 
 # **(Leprechaun/Mind Spirit)**
@@ -28,32 +28,54 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02347))_
+
 > Base Mental Power Cost=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02347))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02348))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02348))_
 
-> Context: If you have this spell cast on you and you fail to resist, you'll be unable to understand your current situation. You'll also lose your ability to make accurate judgments. As a result, you won't be able to take any assertive action, and will be completely unable to attack or use magic on your opponents. However, you'll still be able to respond appropriately to actions taken against you, so if someone attacks you, you can conclude that the opponent is your enemy. You can make similar judgments ab
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02351))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02351))_
+
+> If you have this spell cast on you and you fail to resist, you'll be unable to understand your current situation. You'll also lose your ability to make accurate judgments. As a result, you won't be able to take any assertive action, and will be completely unable to attack or use magic on your opponents. However, you'll still be able to respond appropriately to actions taken against you, so if someone attacks you, you can conclude that the opponent is your enemy. You can make similar judgments ab
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02349))_
 
 > Area=One Duration=18 rounds Effect=Confuses the target Type=Mind Expansion=Final score, duration, distance, targets
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02349))_
 
-> Context: If you have this spell cast on you and you fail to resist, you'll be unable to understand your current situation. You'll also lose your ability to make accurate judgments. As a result, you won't be able to take any assertive action, and will be completely unable to attack or use magic on your opponents. However, you'll still be able to respond appropriately to actions taken against you, so if someone attacks you, you can conclude that the opponent is your enemy. You can make similar judgments ab
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02351))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02351))_
+
+> If you have this spell cast on you and you fail to resist, you'll be unable to understand your current situation. You'll also lose your ability to make accurate judgments. As a result, you won't be able to take any assertive action, and will be completely unable to attack or use magic on your opponents. However, you'll still be able to respond appropriately to actions taken against you, so if someone attacks you, you can conclude that the opponent is your enemy. You can make similar judgments ab
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02350))_
 
 > Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02350))_
 
-> Context: If you're caught by this spell, you can still use magic to strengthen or protect yourself. You can also cast _Dispel Magic_ , _Sanity_ , or other magic that belongs to _mind_ on yourself. Also, it doesn't mean you've become stupid, so you won't trust an opponent just because they yell _I'm your friend!_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02352))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02352))_
+
+> If you're caught by this spell, you can still use magic to strengthen or protect yourself. You can also cast _Dispel Magic_ , _Sanity_ , or other magic that belongs to _mind_ on yourself. Also, it doesn't mean you've become stupid, so you won't trust an opponent just because they yell _I'm your friend!_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02351))_
 
 > However, you'll still be able to respond appropriately to actions taken against you, so if someone attacks you, you can conclude that the opponent is your enemy.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02351))_
 
-> Context: If you have this spell cast on you and you fail to resist, you'll be unable to understand your current situation. You'll also lose your ability to make accurate judgments. As a result, you won't be able to take any assertive action, and will be completely unable to attack or use magic on your opponents. However, you'll still be able to respond appropriately to actions taken against you, so if someone attacks you, you can conclude that the opponent is your enemy. You can make similar judgments ab
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02351))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02351))_
+
+> If you have this spell cast on you and you fail to resist, you'll be unable to understand your current situation. You'll also lose your ability to make accurate judgments. As a result, you won't be able to take any assertive action, and will be completely unable to attack or use magic on your opponents. However, you'll still be able to respond appropriately to actions taken against you, so if someone attacks you, you can conclude that the opponent is your enemy. You can make similar judgments ab
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02352))_
 
 > If you're caught by this spell, you can still use magic to strengthen or protect yourself.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02352))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-many-1b3477bd@57c87e37543dafdb03ad45b011458e9c
+projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-many-1b3477bd@86aedf62080e1e1d038a00f241a34773
 ---
 
 # Enchanter=Many
@@ -25,11 +25,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07508))_
+
 > Form=A wooden doll about 20 cm long Base Trade Price=90,000 gamels Powers=Suffers damage in place of the user
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07508))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07510))_
 
 > At this time, if there is surplus damage, reduce the character's own life force.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07510))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07511))_
 
 > Once you start using it, this effect cannot be canceled even if you untie your hair.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07511))_

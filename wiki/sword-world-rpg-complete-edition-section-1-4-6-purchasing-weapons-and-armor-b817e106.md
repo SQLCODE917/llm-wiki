@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-6-purchasing-weapons-and-armor-b817e106@77550ee742ba8fc3465d110a9c94d71c
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-6-purchasing-weapons-and-armor-b817e106@9d93c7f83d3d4abd76713ad977610fd9
 ---
 
 # **1.4.6 Purchasing Weapons and Armor**
@@ -21,14 +21,23 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+
+> Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00419))_
 
 > **Table 1-8: Weapons-1**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00419))_
 
-> Context: Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+
+> Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
 | **Table 1-8: Weapons-1** |
 | --- |
@@ -56,10 +65,13 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
-> Context: Stock up on weapons, armor, and other equipment and get ready for adventure. At this time, please note the following.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00421))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00421))_
+
+> Stock up on weapons, armor, and other equipment and get ready for adventure. At this time, please note the following.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00422))_
 
 > Please determine how much money you have by following the instructions on Table 1-5: Backgrounds or Table 1-6: Starting Experience by Race.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00422))_

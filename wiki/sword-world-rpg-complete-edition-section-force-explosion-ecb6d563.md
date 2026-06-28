@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-force-explosion-ecb6d563@5a9ba85324994a72b680d7e09aee794a
+projection_coverage: section-sword-world-rpg-complete-edition-section-force-explosion-ecb6d563@2027260db273674e6467490c12128f9d
 ---
 
 # **[ Force Explosion ]**
@@ -16,8 +16,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If the effect of this spell is removed, such as with _Perfect Cancellation_ , etc. the decay will begin to progress at normal rate from that moment on.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02975))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02975))_
+
+> If the effect of this spell is removed, such as with _Perfect Cancellation_ , etc. the decay will begin to progress at normal rate from that moment on.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02978))_
 
 > Base Mental Power Cost=35
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02978))_

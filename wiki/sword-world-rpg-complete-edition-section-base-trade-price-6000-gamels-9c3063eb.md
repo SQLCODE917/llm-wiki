@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-base-trade-price-6000-gamels-9c3063eb@780b3b0d69f94666f518b7ce0b27873b
+projection_coverage: section-sword-world-rpg-complete-edition-section-base-trade-price-6000-gamels-9c3063eb@d6ac3367711cadd05921f1db841442e7
 ---
 
 # Base Trade Price=6000 gamels
@@ -23,8 +23,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07595))_
+
 > Powers=Gives a sword the effect of _Enchant Weapon_ when unsheathed
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07595))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07597))_
 
 > If it _is_ a broadsword, the sheath will automatically expand or contract to adjust for any slight differences in length.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07597))_

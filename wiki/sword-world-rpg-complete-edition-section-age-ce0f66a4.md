@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-age-ce0f66a4@c62ed50fdd31df2b843e627285ff9633
+projection_coverage: section-sword-world-rpg-complete-edition-section-age-ce0f66a4@2158704b172ca22dbc4c9e1bbab88c38
 ---
 
 # **[** ⑪ **Age ]**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-age-ce0f66
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 | Shield<br>Name | Evasion<br>Speed Mod. | Attack<br>Power Mod. |
 | --- | --- | --- |
@@ -32,7 +36,10 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 | Armor Name | Evasion Speed<br>Mod. | Defense<br>Mod. | Critical Target<br>Change | Anti-strangling<br>Prot. |
 | --- | --- | --- | --- | --- |
@@ -52,10 +59,14 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
-> Context: After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))_
+
+> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08056))_
 
 | Age | Modifcation |
 | --- | --- |
@@ -89,7 +100,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08056))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08368))_
 
 | **Sage Skill Abilities Table** |
 | --- |
@@ -119,4 +133,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08056))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08368))_

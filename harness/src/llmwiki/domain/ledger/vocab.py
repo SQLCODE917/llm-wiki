@@ -223,6 +223,7 @@ PROJECTION_COVERAGE_UNIT_KINDS: Final = (
     "source-review-item",
     "disposition-count",
     "cross-source-relationship",
+    "related-page-link",
 )
 QUALITY_FINDING_LOCATOR_KINDS: Final = (
     "source-locator",
@@ -274,6 +275,7 @@ QUALITY_FINDING_SUBJECT_KINDS: Final = (
     "disposition-count",
     "source-backed-position",
     "cross-source-relationship",
+    "related-page-link",
     "quality-report",
     "ledger-quality-report-artifact",
     "quality-finding",

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-distance-caster-3118814d@0ddf0a77462df6617703caba39d77552
+projection_coverage: section-sword-world-rpg-complete-edition-section-distance-caster-3118814d@d8574d4883239dd288413a1ac84e01d4
 ---
 
 # Distance=Caster
@@ -22,17 +22,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01688))_
+
 > Area=Within the caster's view Duration=18 round
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01688))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01689))_
 
 > Effect=Makes the presence of hostility clear to the caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01689))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01690))_
 
 > Type=Detection Expansion=Duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01690))_
 
-> Context: By casting this spell, the caster can learn of the presence of anything that has aggressive intentions towards them. Aggressive intentions in this case refers to a desire to deal physical or mental damage to the caster, so cases such as simply wanting to steal the caster's money will not be detected. However, if the theft is committed in order to cause problems for someone, you will be able to sense that intention.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01691))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01691))_
+
+> By casting this spell, the caster can learn of the presence of anything that has aggressive intentions towards them. Aggressive intentions in this case refers to a desire to deal physical or mental damage to the caster, so cases such as simply wanting to steal the caster's money will not be detected. However, if the theft is committed in order to cause problems for someone, you will be able to sense that intention.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01692))_
 
 > Anything that is not directly visible to the caster cannot be detected, even if it is hostile.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01692))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-7b0c8605@cc32075c70eecbd74072252803268363
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-7b0c8605@1d8e8d14f34209b17d6064acfa67b772
 ---
 
 # 18.3 Rules for Destroying Structures
@@ -67,44 +67,81 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08068))_
+
 > Defense points = 0~3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08068))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08069))_
 
 > Destruction points = 1~10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08069))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08070))_
 
 > Complete immunity = Poison Gas-Type magic No Criticals = Bow, crossbow, cold-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08070))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08071))_
 
 > Normal = Swords, spears, axes, maces, flails, slings, rocks, war hammers, barehanded, stone-type, wind cuttertype, blade-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08071))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08072))_
 
 > Ignore Defense Points = Fire-type, electrictype, explosion-type, pure energy-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08072))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08073))_
 
 > Special = If you cast " _Fire Weapon_ " magic, strike power will become +20, and even weapons that cannot cause criticals will now be able to cause criticals.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08073))_
 
-> Context: Indicates the strength of the material. There is a range, but the game master should decide on a specific score taking into consideration the thickness.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08075))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08075))_
+
+> Indicates the strength of the material. There is a range, but the game master should decide on a specific score taking into consideration the thickness.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08078))_
 
 > As expected, it indicates the strength of the material, and the game master must determine a specific score depending on the thickness.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08078))_
 
-> Context: Consider trying to destroy a wooden wall (!) that’s 20 cm thick. The game master considers this to have maximum strength for a wooden wall, and sets its _defense points_ and _destruction points_ to their maximums of _7_ and _15_ , respectively (see details below). When a character attempts to destroy something with a weapon, magic, etc. damage is calculated in the same way as when an attack hits a monster. Then, you subtract the defense points from the determined damage. If the result is _greate
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08080, source-range-870a16bc-08083))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08080, source-range-870a16bc-08083))_
+
+> Consider trying to destroy a wooden wall (!) that’s 20 cm thick. The game master considers this to have maximum strength for a wooden wall, and sets its _defense points_ and _destruction points_ to their maximums of _7_ and _15_ , respectively (see details below). When a character attempts to destroy something with a weapon, magic, etc. damage is calculated in the same way as when an attack hits a monster. Then, you subtract the defense points from the determined damage. If the result is _greate
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08082))_
 
 > If the damage is _greater than 8_ but _less than 21 points_ , the defense points will be reduced by _1 point_ (if the defense points become _0_ , the destruction points will start to _decrease_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08082))_
 
-> Context: Consider trying to destroy a wooden wall (!) that’s 20 cm thick. The game master considers this to have maximum strength for a wooden wall, and sets its _defense points_ and _destruction points_ to their maximums of _7_ and _15_ , respectively (see details below).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08080))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08080))_
+
+> Consider trying to destroy a wooden wall (!) that’s 20 cm thick. The game master considers this to have maximum strength for a wooden wall, and sets its _defense points_ and _destruction points_ to their maximums of _7_ and _15_ , respectively (see details below).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08083))_
 
 > If you cannot deal more
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08083))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08085))_
 
 > **Table 18-2 Types of Mag**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08085))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08086))_
 
 | Fire-type | Firebolt, Fireball, Firestorm |
 | --- | --- |
@@ -136,163 +173,305 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08085))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08086))_
 
-> Context: If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08089))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08089))_
+
+> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08088))_
 
 > If it says **complete immunity** , it can _never_ be destroyed by that weapon or magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08088))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08089))_
 
 > If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08089))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08090))_
 
 > If it says **ignores defense points** , the defense points are _not_ taken into consideration, and if the damage _exceeds_ the destruction points, it’ll be _destroyed in one blow_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08090))_
 
-> Context: Otherwise, such attacks reduce defense points by 1 point (unless you roll _double ones_ on a strike roll).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08091))_
+### Technical atom 15
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08091))_
+
+> Otherwise, such attacks reduce defense points by 1 point (unless you roll _double ones_ on a strike roll).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08092))_
 
 > Beyond this, game masters should also use common sense.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08092))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08096))_
 
 > When making a hole large enough for a person to fit through, at most two people can work together.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08096))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08100))_
 
 > Defense points = 1-7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08100))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08101))_
 
 > Destruction Points = 5-15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08101))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08102))_
 
 > Complete Immunity = Poison Gas-Type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08102))_
+
+### Technical atom 20
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08103))_
 
 > No Criticals = Swords, spears, bows, crossbows, barehanded, cold-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08103))_
+
+### Technical atom 21
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08104))_
 
 > Normal = Axes, maces, flails, slings, rocks, war hammers, stone-type, wind cuttertype, blade-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08104))_
+
+### Technical atom 22
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08105))_
 
 > Ignores Defense Points = Fire-type, electrictype, earthquake-type, explosion-type, pure energy-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08105))_
 
-> Context: When you use fire magic or a weapon with _Fire Weapon_ cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08108))_
+### Technical atom 23
 
-> Special = If you cast _Fire Weapon_ magic, not only will strike power increase by +10,
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08106))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08108))_
 
-> Context: When you use fire magic or a weapon with _Fire Weapon_ cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08108))_
+> When you use fire magic or a weapon with _Fire Weapon_ cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08106))_
 
 > Special = If you cast _Fire Weapon_ magic, not only will strike power increase by +10,
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08106))_
 
-> Context: When you use fire magic or a weapon with _Fire Weapon_ cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08108))_
+### Technical atom 24
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08108))_
+
+> When you use fire magic or a weapon with _Fire Weapon_ cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08106))_
+
+> Special = If you cast _Fire Weapon_ magic, not only will strike power increase by +10,
+
+### Technical atom 25
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08108))_
+
+> When you use fire magic or a weapon with _Fire Weapon_ cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08110))_
 
 > Defense points = 3-30
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08110))_
 
-> Context: When you use fire magic or a weapon with _Fire Weapon_ cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08108))_
+### Technical atom 26
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08108))_
+
+> When you use fire magic or a weapon with _Fire Weapon_ cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08111))_
 
 > Destruction points = 10-20
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08111))_
+
+### Technical atom 27
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08112))_
 
 > - Complete Immunity = Spears, clubs, staves, bows, crossbows, fire-type, cold-type, electric-type, wind cutter-type, poison gas-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08112))_
+
+### Technical atom 28
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08113))_
 
 > No Criticals = Swords, axes, slings, barehanded, blade-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08113))_
+
+### Technical atom 29
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08114))_
 
 > - Normal Damage = Maces, flails, rocks, war hammers, stone-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08114))_
+
+### Technical atom 30
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08115))_
 
 > - Ignores Defense Points = Earthquake-type, explosion-type, pure energy-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08115))_
+
+### Technical atom 31
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08117))_
 
 > Defense points = 3-30
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08117))_
+
+### Technical atom 32
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08118))_
 
 > Destruction points = 15-25
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08118))_
+
+### Technical atom 33
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08119))_
 
 > Complete Immunity = Swords, spears, clubs, staves, bows, crossbows, slings, firetype, cold-type, electric-type, wind cutter-type, poison gas-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08119))_
+
+### Technical atom 34
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08120))_
 
 > - No Criticals = Axes, maces, flails, rocks, barehanded, stone-type, blade-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08120))_
+
+### Technical atom 35
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08121))_
 
 > Normal = War hammers
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08121))_
+
+### Technical atom 36
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08122))_
 
 > Ignores Defense Points = Earthquake-type, explosion-type, pure energy-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08122))_
+
+### Technical atom 37
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08124))_
 
 > Defense points = 5-50
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08124))_
+
+### Technical atom 38
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08125))_
 
 > Destruction points = 20-30
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08125))_
+
+### Technical atom 39
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08126))_
 
 > Complete Immunity = Swords, axes, spears, clubs, staves, bows, crossbows, slings, rocks, barehanded, cold-type, electrictype, wind cutter-type, blade, poison gas-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08126))_
+
+### Technical atom 40
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08127))_
 
 > - No Criticals = Maces, flails, war hammers, stone-type, fire-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08127))_
+
+### Technical atom 41
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08128))_
 
 > Normal = Pure energy-Type, earthquaketype magic Ignores Defense Points = Explosion-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08128))_
+
+### Technical atom 42
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08129))_
 
 > Special = When destroyed with fire-type or pure energy-type magic, its temperature becomes extremely high immediately after destruction.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08129))_
 
-> Context: If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08130))_
+### Technical atom 43
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08130))_
+
+> If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08132))_
 
 > Defense points = 3-30
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08132))_
 
-> Context: If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08130))_
+### Technical atom 44
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08130))_
+
+> If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08133))_
 
 > Destruction points = 1-25
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08133))_
+
+### Technical atom 45
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08134))_
 
 > Complete Immunity = Bows, crossbows, slings, cold-type, poison gas-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08134))_
+
+### Technical atom 46
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08135))_
 
 > No Criticals = Swords, spears, clubs, staves, barehanded, electric-type, wind cuttertype, blade-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08135))_
+
+### Technical atom 47
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08136))_
 
 > Normal = Axes, rocks, maces, flails, war hammers, stone-type, earthquake-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08136))_
+
+### Technical atom 48
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08137))_
 
 > Ignores Defense Points = Fire-type, explosion-type, pure energy-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08137))_
+
+### Technical atom 49
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08138))_
 
 > Special = If destroyed with fire-type or pure energy-type magic, it’ll melt and turn into water.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08138))_
+
+### Technical atom 50
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08140))_
 
 > Defense points = 3-30
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08140))_
+
+### Technical atom 51
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08141))_
 
 > Destruction points = 10-20
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08141))_
+
+### Technical atom 52
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08142))_
 
 > Complete Immunity = Bows, crossbows, slings, barehanded, stone-type, earthquake-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08142))_
+
+### Technical atom 53
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08143))_
 
 > No Criticals = Swords, spears, clubs, staves, cold-type, poison gas-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08143))_
+
+### Technical atom 54
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08144))_
 
 > Normal = Axes, rocks, maces, flails, war hammer, electric-type, wind cuttertype, blade-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08144))_
+
+### Technical atom 55
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08145))_
 
 > Ignores Defense Points = Fire-type, explosion-type, pure energy-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08145))_
+
+### Technical atom 56
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08146))_
 
 > Special = If attacked with fire-type magic or a weapon with _Fire Weapon_ cast on it, treat it the same as wood.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08146))_

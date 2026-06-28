@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bend-bar-e46844b0@2ed145cb5ca5e32aceb2178bed2fbb35
+projection_coverage: section-sword-world-rpg-complete-edition-section-bend-bar-e46844b0@fa5b1d539f15baaf67397baf2e6c486b
 ---
 
 # **[ Bend Bar ]**
@@ -25,23 +25,40 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell works on targets slightly larger than a human (such as an ogre or a manticore), but has no effect on targets of a larger size than that (such as a dragon or a roc).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02070))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02070))_
+
+> This spell works on targets slightly larger than a human (such as an ogre or a manticore), but has no effect on targets of a larger size than that (such as a dragon or a roc).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02072))_
 
 > Base Mental Power Cost=21
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02072))_
 
-> Context: This spell works on targets slightly larger than a human (such as an ogre or a manticore), but has no effect on targets of a larger size than that (such as a dragon or a roc).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02070))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02070))_
+
+> This spell works on targets slightly larger than a human (such as an ogre or a manticore), but has no effect on targets of a larger size than that (such as a dragon or a roc).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02073))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02073))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02074))_
 
 > Area=A bar-shaped object Duration=Instant Effect=Bend a bar-shaped object Type=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02074))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02075))_
 
 > Expansion=Distance, targets, target’s crosssection (see description) Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02075))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02079))_
 
 > If you expand the effect by consuming extra mental power, you can bend objects with a thicker bar (crosssectional area).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02079))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-acid-098b071c@3e773d2e1c8607697462549161fdd240
+projection_coverage: section-sword-world-rpg-complete-edition-section-acid-098b071c@fd67706a7578ec80ff27359c9fe13489
 ---
 
 # 《 **Acid** 》
@@ -24,5 +24,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06834))_
+
 > If it hits, you _cannot_ make a resistance roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06834))_

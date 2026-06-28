@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-frau-ice-spirit-53191239@2d1d1b6bcfad488d67286401a53aeb28
+projection_coverage: section-sword-world-rpg-complete-edition-section-frau-ice-spirit-53191239@f0a0cb8467512927b1a7dc5cb4a48ee7
 ---
 
 # (Frau/Ice Spirit)
@@ -24,11 +24,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02622))_
+
 > Type=Target score, damage (Cold-type) Counters (Negates): _Spirit Wall: Salamander_ Countered (Negated) By: _Spirit Wall: Salamander_ Countered (Overpowered) By: _Cold Protective Circle_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02622))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02623))_
 
 > Expansion=Final score, duration, distance, target volume, damage certainty Resist=Reduced effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02623))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02624))_
 
 > It's made of magical ice, so if you touch this wall, you will be exposed to the cold air radiated from the ice and take strike power 10 damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02624))_

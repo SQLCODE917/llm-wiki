@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-determine-ability-scores-c30b6040@da46fcc22152b0d1f00b4c8ced5f1c61
+projection_coverage: section-sword-world-rpg-complete-edition-section-determine-ability-scores-c30b6040@f40e3c1fe2730a3c9008f1241645dc66
 ---
 
 # **Determine Ability Scores**
@@ -20,8 +20,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the ability score. For example, it would say something like _an adventurer with 14 de
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
+
+> adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the ability score. For example, it would say something like _an adventurer with 14 de
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00185))_
 
 | AbilityScore | Bonus |
 | --- | --- |
@@ -47,10 +52,13 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00185))_
 
-> Context: Half-elves are halfway between human and elf in terms of ability. Therefore, their dexterity, agility, intelligence, and mental power are slightly higher, while their strength and life force are slightly lower. However, they do not deviate very far from the average and are fully capable of handling all skills.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00326))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00326))_
+
+> Half-elves are halfway between human and elf in terms of ability. Therefore, their dexterity, agility, intelligence, and mental power are slightly higher, while their strength and life force are slightly lower. However, they do not deviate very far from the average and are fully capable of handling all skills.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00324))_
 
 > Once you've chosen a race, you can determine your ability scores.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00324))_

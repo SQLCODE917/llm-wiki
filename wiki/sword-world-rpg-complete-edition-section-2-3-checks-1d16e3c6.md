@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-3-checks-1d16e3c6@4a91b101560bb47d048406f82d9eddae
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-3-checks-1d16e3c6@023fc12498617f47b85b1c02c680ddb9
 ---
 
 # 2.3 Checks
@@ -60,32 +60,52 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: For example, if you want to hit an enemy with your sword, it is important to have dexterity to wield it accurately. Also, if the character is trained or experienced as a warrior, they’ll be even more likely to hit their target.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00559))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00559))_
+
+> For example, if you want to hit an enemy with your sword, it is important to have dexterity to wield it accurately. Also, if the character is trained or experienced as a warrior, they’ll be even more likely to hit their target.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00562))_
 
 > Therefore, 2+2= **4** is his baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00562))_
 
-> Context: Fighter is only useful in combat. The sorcerer, shaman, and priest rune master skills are also of little use for anything other than casting magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00564))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00564))_
+
+> Fighter is only useful in combat. The sorcerer, shaman, and priest rune master skills are also of little use for anything other than casting magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00565))_
 
 > **baseline score** = relevant skill level + ability bonus
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00565))_
 
-> Context: Did Ducard II’s attack hit the Goblin? His baseline score for attacks is _4_ and the target score for hitting a goblin is _10_ . In other words, we must roll two dice, add 4 to the result, and if the total is _10 or more_ , we’ll hit the target.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00577))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00577))_
+
+> Did Ducard II’s attack hit the Goblin? His baseline score for attacks is _4_ and the target score for hitting a goblin is _10_ . In other words, we must roll two dice, add 4 to the result, and if the total is _10 or more_ , we’ll hit the target.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00578))_
 
 > The player must roll two dice and add their baseline score to the roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00578))_
 
-> Context: The player must roll two dice and add their baseline score to the roll. The result is called the **final score** . This final score should be _equal to or greater than_ the target score.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00578))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00578))_
+
+> The player must roll two dice and add their baseline score to the roll. The result is called the **final score** . This final score should be _equal to or greater than_ the target score.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00579))_
 
 > If the roll is 6 or greater, it’s a _hit_ , and if the roll is 5 or lower, it’s a _miss_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00579))_
 
-> Context: Try rolling the dice yourself. If the roll is 6 or greater, it’s a _hit_ , and if the roll is 5 or lower, it’s a _miss_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00579))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00579))_
+
+> Try rolling the dice yourself. If the roll is 6 or greater, it’s a _hit_ , and if the roll is 5 or lower, it’s a _miss_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00580))_
 
 > final score (baseline score + 2D) ≥ target score → **action is successful**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00580))_

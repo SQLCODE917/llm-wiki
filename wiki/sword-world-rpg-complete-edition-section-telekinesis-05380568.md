@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-telekinesis-05380568@3976addf5905c8ef2bc9d5e23308d83e
+projection_coverage: section-sword-world-rpg-complete-edition-section-telekinesis-05380568@c5e0df1b26a5fe74df0147b7ea9c7472
 ---
 
 # **[ Telekinesis ]**
@@ -16,5 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02034))_
+
 > Base Mental Power Cost=28
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02034))_

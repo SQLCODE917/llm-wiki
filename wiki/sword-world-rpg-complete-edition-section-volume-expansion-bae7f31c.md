@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-volume-expansion-bae7f31c@05d1b956f490b27c8d424a8db5162f5b
+projection_coverage: section-sword-world-rpg-complete-edition-section-volume-expansion-bae7f31c@7f43c9b3fdddf1ec804539e242c1e03d
 ---
 
 # 《 **Volume Expansion** 》
@@ -31,11 +31,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> **Table 5-1: Area and Size Expansion**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01371))_
+### Technical atom 1
 
-> Context: When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. For example, when you cast the ancient magic _Light_
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01374))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01371))_
+
+> **Table 5-1: Area and Size Expansion**
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01374))_
+
+> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. For example, when you cast the ancient magic _Light_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01372))_
 
 | Expansion<br>Rate | Area Expansion<br>Length | Volume Expansion<br>Length |
 | --- | --- | --- |
@@ -67,4 +75,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01374))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01372))_

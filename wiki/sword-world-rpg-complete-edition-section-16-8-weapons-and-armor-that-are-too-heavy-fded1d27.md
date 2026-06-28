@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-8-weapons-and-armor-that-are-too-heavy-fded1d27@0ae5f3d583717de4ae5cdb746108ce82
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-8-weapons-and-armor-that-are-too-heavy-fded1d27@126ff123ecfc70253a60d56420ad0ca2
 ---
 
 # 16.8 Weapons and Armor That Are Too Heavy
@@ -44,17 +44,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07872))_
+
 > Therefore, when creating an adventurer, let's say that if you roll 2D and get _double sixes_ , they'll be ambidextrous.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07872))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07879))_
 
 > If you’re fighting with the thief skill, the required strength for _both_ weapons is only _half_ the character's strength.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07879))_
 
-> Context: It’s possible to throw **multiple** darts or daggers at once. However, the following restrictions occur in this case:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07883))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07883))_
+
+> It’s possible to throw **multiple** darts or daggers at once. However, the following restrictions occur in this case:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07885))_
 
 > The _total required strength_ must be up to the _character's strength_ (or _half_ that if it's the thief skill).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07885))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07892))_
 
 > A Character can also use weapons and armor whose required strength **exceeds** his or her own strength.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07892))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-3-spellsongs-4fafd2f2@9bb9b3c08a5fdf914e4e96fe2cb8eb21
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-3-spellsongs-4fafd2f2@8c4fcf4965ad0d26e54a42d5c62f2294
 ---
 
 # 5.3 Spellsongs
@@ -122,56 +122,95 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: became common runes, it’s obvious that thieves would use them to commit evil deeds. In such cases, please make sure to make a decision such as _The sorcerers' guild would never allow them on the market because they'd bring down the reputation of magic and sorcerers_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03207))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03207))_
+
+> became common runes, it’s obvious that thieves would use them to commit evil deeds. In such cases, please make sure to make a decision such as _The sorcerers' guild would never allow them on the market because they'd bring down the reputation of magic and sorcerers_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03208))_
 
 > For detailed effects of these, please refer to the ancient magic of the same name (see Table 5-9: Common Runes).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03208))_
 
-> Context: became common runes, it’s obvious that thieves would use them to commit evil deeds. In such cases, please make sure to make a decision such as _The sorcerers' guild would never allow them on the market because they'd bring down the reputation of magic and sorcerers_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03207))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03207))_
+
+> became common runes, it’s obvious that thieves would use them to commit evil deeds. In such cases, please make sure to make a decision such as _The sorcerers' guild would never allow them on the market because they'd bring down the reputation of magic and sorcerers_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03210))_
 
 > The game master may add other common runes at their discretion.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03210))_
 
-> Context: Using spellsongs does _not_ consume a bard's mental power. Also, the effect of a spellsong _cannot_ be expanded. A spellsong remains in effect as long as the bard sings it. However, once the song is interrupted, the effect disappears. As long as a bard is singing a spellsong, they cannot take any other actions and cannot move more than 3 meters in one round. However, unlike _focus_ , it’s _not_ interrupted by damage dealt to life force or mental power (unless, of course, you fall unconscious as 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03215, source-range-870a16bc-03217))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03215, source-range-870a16bc-03217))_
+
+> Using spellsongs does _not_ consume a bard's mental power. Also, the effect of a spellsong _cannot_ be expanded. A spellsong remains in effect as long as the bard sings it. However, once the song is interrupted, the effect disappears. As long as a bard is singing a spellsong, they cannot take any other actions and cannot move more than 3 meters in one round. However, unlike _focus_ , it’s _not_ interrupted by damage dealt to life force or mental power (unless, of course, you fall unconscious as
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03216))_
 
 > On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03216))_
 
-> Context: However, bards are never called rune masters. This is because compared to the runes used by rune masters, spellsongs are only a superficial imitation. On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03216))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03216))_
+
+> However, bards are never called rune masters. This is because compared to the runes used by rune masters, spellsongs are only a superficial imitation. On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03217))_
 
 > As long as a bard is singing a spellsong, they cannot take any other actions and cannot move more than 3 meters in one round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03217))_
 
-> Context: However, bards are never called rune masters. This is because compared to the runes used by rune masters, spellsongs are only a superficial imitation. On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03216))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03216))_
+
+> However, bards are never called rune masters. This is because compared to the runes used by rune masters, spellsongs are only a superficial imitation. On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03218))_
 
 > Also, if you choose a _flute_ as your instrument, you can use the spellsong _without_ having to sing the lyrics.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03218))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03227))_
 
 > In other words, each one _counters (overpowers):_ and cannot take an effect at the same time as magic or other spellsongs that also belong to _mind_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03227))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03237))_
 
 > Of course, they can't even converse, and they cannot use spellsongs or common runes.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03237))_
 
-> Context: Those who hear this spellsong will begin to move their limbs and dance according to the melody on their own. Those affected suffer a -4 penalty to attack power and evasion speed. Ancient magic and spirit magic cannot be cast. Since you can't use your musical instrument, you can't use spellsongs either. You will also be unable to use most skills’ abilities.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03239))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03239))_
+
+> Those who hear this spellsong will begin to move their limbs and dance according to the melody on their own. Those affected suffer a -4 penalty to attack power and evasion speed. Ancient magic and spirit magic cannot be cast. Since you can't use your musical instrument, you can't use spellsongs either. You will also be unable to use most skills’ abilities.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03241))_
 
 > However, if you suffer physical or mental damage, you can make another resistance roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03241))_
 
-> Context: This spellsong has the effect of charming those who hear it. Those who are, are not charmed by the bard him or herself, but rather charmed by their singing voice and performance. As long as the spellsong continues, those who are charmed will listen to the song in ecstasy. However, if you suffer physical or mental damage, you can make another resistance roll.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03241))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03241))_
+
+> This spellsong has the effect of charming those who hear it. Those who are, are not charmed by the bard him or herself, but rather charmed by their singing voice and performance. As long as the spellsong continues, those who are charmed will listen to the song in ecstasy. However, if you suffer physical or mental damage, you can make another resistance roll.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))_
 
 > With this spellsong, a bard can make those they charm take specific actions.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))_
 
-> Context: With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))_
+
+> With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03244))_
 
 | 2D | Result |
 | --- | --- |
@@ -201,13 +240,19 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03244))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03246))_
 
 > a resistance roll again If the resist is successful, not only does this save you from having to take the action, but _also_ breaks you free from the spellsong's charm effect completely.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03246))_
 
-> Context: a resistance roll again If the resist is successful, not only does this save you from having to take the action, but _also_ breaks you free from the spellsong's charm effect completely. This spellsong has the effect of making the listener act in accordance with the rhythm. All those who fail to resist will act simultaneously as long as the song continues. Regardless of their original agility, everyone's action order will be the same. You _cannot_ intentionally delay your action. The bard can fre
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03246, source-range-870a16bc-03250))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03246, source-range-870a16bc-03250))_
+
+> a resistance roll again If the resist is successful, not only does this save you from having to take the action, but _also_ breaks you free from the spellsong's charm effect completely. This spellsong has the effect of making the listener act in accordance with the rhythm. All those who fail to resist will act simultaneously as long as the song continues. Regardless of their original agility, everyone's action order will be the same. You _cannot_ intentionally delay your action. The bard can fre
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03248))_
 
 > If you are using a flute as your instrument, you can use this spellsong, but you _cannot_ make anyone take any actions.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03248))_

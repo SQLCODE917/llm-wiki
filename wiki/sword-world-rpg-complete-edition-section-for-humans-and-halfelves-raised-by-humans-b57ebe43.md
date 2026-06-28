@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-for-humans-and-halfelves-raised-by-humans-b57ebe43@7d747b885be5248426b4359c0b135d23
+projection_coverage: section-sword-world-rpg-complete-edition-section-for-humans-and-halfelves-raised-by-humans-b57ebe43@4510ac543cccb36d3c43b75e18e895b2
 ---
 
 # **For Humans and HalfElves Raised by Humans**
@@ -30,32 +30,53 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Even an adventurer who goes on an adventure for the first time is not a baby. As long as they've lived a certain number of years, they must have had some experience before entering the life of an adventurer. Once ability scores have been determined, the next step is to determine the adventurer's preadventure experience. This is represented by **starting skills** and **starting experience points** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00351))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00351))_
+
+> Even an adventurer who goes on an adventure for the first time is not a baby. As long as they've lived a certain number of years, they must have had some experience before entering the life of an adventurer. Once ability scores have been determined, the next step is to determine the adventurer's preadventure experience. This is represented by **starting skills** and **starting experience points** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00353))_
 
 > If the race is human or half-elf raised by humans, use Table 1-5: Backgrounds. Roll 2D and look at the appropriate row.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00353))_
 
-> Context: If the race is human or half-elf raised by humans, use Table 1-5: Backgrounds. Roll 2D and look at the appropriate row.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00353))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00353))_
+
+> If the race is human or half-elf raised by humans, use Table 1-5: Backgrounds. Roll 2D and look at the appropriate row.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00354))_
 
 > If the player's background is _ordinary citizen_ (roll 7), they must consult with the game master to determine one general skill appropriate for the character and acquire it at 3rd level.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00354))_
 
-> Context: If the player's background is _ordinary citizen_ (roll 7), they must consult with the game master to determine one general skill appropriate for the character and acquire it at 3rd level. At this time, both the game master and the player should clearly know what the chosen general skill can do (the abilities that can be used with that general skill).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00354))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00354))_
+
+> If the player's background is _ordinary citizen_ (roll 7), they must consult with the game master to determine one general skill appropriate for the character and acquire it at 3rd level. At this time, both the game master and the player should clearly know what the chosen general skill can do (the abilities that can be used with that general skill).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355))_
 
 > If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355))_
 
-> Context: If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355))_
+
+> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00357))_
 
 > **Table 1-6: Starting Experience by Race**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00357))_
 
-> Context: If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, source-range-870a16bc-00360))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, source-range-870a16bc-00360))_
+
+> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00358))_
 
 | Race | Restrictions／Special Abilities | Pre-Adventure<br>Exp. Pts. | Money |
 | --- | --- | --- | --- |
@@ -79,10 +100,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, 
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00358))_
 
-> Context: After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))_
+
+> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08056))_
 
 | Age | Modifcation |
 | --- | --- |
@@ -116,4 +141,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08056))_

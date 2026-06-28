@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-larva-6f31c131@378dfea49e4ba4496ae774d860d38e0c
+projection_coverage: section-sword-world-rpg-complete-edition-section-larva-6f31c131@a7939da6dd8571883363b391f38c343e
 ---
 
 # **Larva**
@@ -22,8 +22,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The giant antlion is a creature about 3 meters long total, with most of the front half of its body occupied by its large jaws, a cone-shaped tail on the back half of its body, and three pairs of spatulashaped legs that bend forward at the joints, making it suitable for burrowing underground. This creature usually lurks in shallow underground areas. When a creature passes directly above it, the giant antlion will sense its footsteps and suddenly dive further underground (with its tail). As a resu
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05903))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05903))_
+
+> The giant antlion is a creature about 3 meters long total, with most of the front half of its body occupied by its large jaws, a cone-shaped tail on the back half of its body, and three pairs of spatulashaped legs that bend forward at the joints, making it suitable for burrowing underground. This creature usually lurks in shallow underground areas. When a creature passes directly above it, the giant antlion will sense its footsteps and suddenly dive further underground (with its tail). As a resu
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05902))_
 
 > Mental attack immunity Habitat=Deserts (Khan Desert only) Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05902))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-body-f8ef842d@1cd03d5a3103b6bce5e6727d76ac8129
+projection_coverage: section-sword-world-rpg-complete-edition-section-body-f8ef842d@02e68a80bf2c655b6d13c201ccdfec67
 ---
 
 # **Body**
@@ -20,11 +20,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06099))_
+
 > Monster Level=6 Rarity=11 Agility=10 Movement Speed=0
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06099))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06101))_
 
 > Habitat=Forests Languages=None Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06101))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06102))_
 
 > Adventurers can also attack the body.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06102))_

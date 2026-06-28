@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-and-illness-49794a2e@c8ff406463d43a944fef6b9f81cc3a56
+projection_coverage: section-sword-world-rpg-complete-edition-section-and-illness-49794a2e@eaa130642bee29e5a623d12afde39f48
 ---
 
 # **and Illness** 》
@@ -21,6 +21,10 @@ From [[sword-world-rpg-complete-edition]].
 - Certain mythical beasts, magical beasts, undead powered by negative life, and pseudo-life forms created by magic, are free from poison and illness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06900))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_
 
 | **Table 12-1: Languages** |
 | --- |
@@ -38,4 +42,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_

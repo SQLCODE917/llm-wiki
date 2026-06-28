@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-love-passion-inhaled-dose-magic-mind-6222ae72@40a9d41cf84390ab1e20b511753afdc9
+projection_coverage: section-sword-world-rpg-complete-edition-section-love-passion-inhaled-dose-magic-mind-6222ae72@99f1342c3c107fbba8d3df61645bf29c
 ---
 
 # **[ Love Passion (Inhaled, Dose/Magic, Mind) ]**
@@ -26,8 +26,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04626))_
+
 > Effect=Fall in love with the first person you see
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04626))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04627))_
 
 > Toxicity Score=13 Rarity=11 Effect Start Time=1 round later Effect Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04627))_

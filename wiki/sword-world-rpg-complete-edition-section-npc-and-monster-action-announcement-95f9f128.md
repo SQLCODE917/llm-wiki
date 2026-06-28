@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-npc-and-monster-action-announcement-95f9f128@2f0b44a21b8169c6d73e4bff2ff5be75
+projection_coverage: section-sword-world-rpg-complete-edition-section-npc-and-monster-action-announcement-95f9f128@308811219db7e0950338c9cad4c36b87
 ---
 
 # **NPC and Monster Action Announcement**
@@ -29,8 +29,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: For example, it’s correct to announce the planned action of a hellhound with the ability to breathe fire by saying, _I'm about to do something with my mouth wide open…_ The characters have no way of knowing if the hellhound is about to bite them or breathe fire. However, the game master should decide in advance which actions they are going to take.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03846))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03846))_
+
+> For example, it’s correct to announce the planned action of a hellhound with the ability to breathe fire by saying, _I'm about to do something with my mouth wide open…_ The characters have no way of knowing if the hellhound is about to bite them or breathe fire. However, the game master should decide in advance which actions they are going to take.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03847))_
 
 > They must _not_ change things based on the circumstances, such as attacking with fangs if the character used the spell _Counter Magic_ to increase their resistance, or breathing fire if the character used the spell _Quickness_ to raise their agility (evasion speed).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03847))_

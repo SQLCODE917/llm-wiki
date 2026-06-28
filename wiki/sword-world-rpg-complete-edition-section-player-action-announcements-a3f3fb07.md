@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-player-action-announcements-a3f3fb07@a8f9664e7904543a61b17a26fe09ee0c
+projection_coverage: section-sword-world-rpg-complete-edition-section-player-action-announcements-a3f3fb07@b898cc6d61aba7a6e4429de2d3b8d339
 ---
 
 # **Player Action Announcements**
@@ -22,5 +22,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00703))_
+
 > A player must be specific when announcing their action.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00703))_

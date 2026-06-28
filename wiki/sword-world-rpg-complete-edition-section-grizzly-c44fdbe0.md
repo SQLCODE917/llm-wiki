@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-grizzly-c44fdbe0@ed8d7fb99e9a3b4c7fae4bbda31268bb
+projection_coverage: section-sword-world-rpg-complete-edition-section-grizzly-c44fdbe0@84a209f25440a3c6e3fca06448e8810b
 ---
 
 # **Grizzly**
@@ -38,14 +38,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Usually it tries to avoid humans on its own accord, but if it and a human bump into one another, or if it’s hungry, then things are different. Also, a mother bear with her cubs will do everything in her power to protect them, so travelers should avoid approaching groups of bears carelessly. At this time, it’s useless to play dead. This is because they also eat dead meat. It is also said that once a grizzly bear has learned the taste of human flesh, it’ll attack humans more frequently.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05810))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05810))_
+
+> Usually it tries to avoid humans on its own accord, but if it and a human bump into one another, or if it’s hungry, then things are different. Also, a mother bear with her cubs will do everything in her power to protect them, so travelers should avoid approaching groups of bears carelessly. At this time, it’s useless to play dead. This is because they also eat dead meat. It is also said that once a grizzly bear has learned the taste of human flesh, it’ll attack humans more frequently.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05808))_
 
 > Evasion Points=10 (3) Defense Points=7 Life Points/Resistance=22/12 (5) Mental Points/Resistance=7/10 (3) Special Abilities=Strangling Habitat=Forests Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05808))_
 
-> Context: A bear's special attack is a _bear hug_ . This is a technique in which it holds its opponent in its thick arms, squeezing them. Treat this as strangling (see p. 236). Bears use this attack depending on the situation. When surrounded by multiple opponents, it’ll choose to swing its arms around and try to mow down anything it happens to hit, but if there are fewer opponents, it’ll approach for a bear hug. If a bear hug attack hits, the adventurer will be held by the bear.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05811))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05811))_
+
+> A bear's special attack is a _bear hug_ . This is a technique in which it holds its opponent in its thick arms, squeezing them. Treat this as strangling (see p. 236). Bears use this attack depending on the situation. When surrounded by multiple opponents, it’ll choose to swing its arms around and try to mow down anything it happens to hit, but if there are fewer opponents, it’ll approach for a bear hug. If a bear hug attack hits, the adventurer will be held by the bear.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05812))_
 
 > In this state, the bear cannot attack other opponents.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05812))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-seal-2831f22d@780b7161d5d497fa982b206ea4cf40ae
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-seal-2831f22d@7bc937a2f9c9e728a788139b80bc6478
 ---
 
 # **[ Giant Seal ]**
@@ -27,5 +27,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05941))_
+
 > Giant seals can also use their fins to advance over ice fields, but they do not eat land animals, so they won't attack you unless you attack them or invade their territory.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05941))_

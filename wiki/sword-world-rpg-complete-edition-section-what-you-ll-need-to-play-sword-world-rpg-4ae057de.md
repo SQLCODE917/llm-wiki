@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-4ae057de@5c00278e3cd95ea9c027ee1668a3ad59
+projection_coverage: section-sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-4ae057de@06829bac9093b27abfbf0857d86a09b8
 ---
 
 # What You’ll Need to Play Sword World RPG
@@ -51,20 +51,34 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> It introduces the minimum rules you should remember when playing _Sword World RPG_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00087))_
+### Technical atom 1
 
-> Context: Therefore, if you're solely a player, you _don't_ have to force yourself to memorize the rules of this part. Conversely, a game master _must_ understand the rules included here in addition to those included in Part 1.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00091))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00087))_
+
+> It introduces the minimum rules you should remember when playing _Sword World RPG_ .
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00091))_
+
+> Therefore, if you're solely a player, you _don't_ have to force yourself to memorize the rules of this part. Conversely, a game master _must_ understand the rules included here in addition to those included in Part 1.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00090))_
 
 > When you’re a game master, you will have to remember rules that you wouldn’t have to remember when you’re a player.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00090))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00102))_
 
 > When playing _Sword World RPG_ , you will have to write and rewrite many things during the game.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00102))_
 
-> Context: You will also need Character Sheets. A Character Sheet is used to keep track of a character who acts in a fictional world (Alecrast in the case of _Sword World RPG_ ) as the player's alter ego. These are needed per the number of people. Please copy and use the sheets included in this book.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00103))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00103))_
+
+> You will also need Character Sheets. A Character Sheet is used to keep track of a character who acts in a fictional world (Alecrast in the case of _Sword World RPG_ ) as the player's alter ego. These are needed per the number of people. Please copy and use the sheets included in this book.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00105))_
 
 > When you _roll 1D_ , roll one die and use the result that comes up.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00105))_

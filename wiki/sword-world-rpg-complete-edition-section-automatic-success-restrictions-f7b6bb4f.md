@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-automatic-success-restrictions-f7b6bb4f@330693d45260a2a810f51aabd819f5e1
+projection_coverage: section-sword-world-rpg-complete-edition-section-automatic-success-restrictions-f7b6bb4f@64ccf5c8a652d852a99039c183331416
 ---
 
 # **Automatic Success Restrictions**
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: **Table 9-2: Success Roll Modifiers**
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03832))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03832))_
+
+> **Table 9-2: Success Roll Modifiers**
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03833))_
 
 | Extremely difcult situation | -4 |
 | --- | --- |
@@ -35,4 +40,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03832))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03833))_

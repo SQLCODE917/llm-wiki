@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-air-stalker-c382a813@67e8164c04b0c28d00e14f90770fb4f7
+projection_coverage: section-sword-world-rpg-complete-edition-section-air-stalker-c382a813@18c05ef054c2ad6508f5372ef39a3c8d
 ---
 
 # **Air Stalker**
@@ -24,14 +24,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06511))_
+
 > Monster Level=6 Rarity=15 Agility=15 Movement Speed=15 Number=One, rarely multiple Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Weapon:13 (6) Strike Points=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06511))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06512))_
 
 > Evasion Points=14 (7) Defense Points=8 Life Points/Resistance=16/14 (7) Mental Points/Resistance=20/15 (8) Special Abilities=Normal attack immunity
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06512))_
 
-> Context: An air stalker is a stalker created from transparent gas. Therefore, even when it materializes, it is completely invisible. For this reason, attacks on an air stalker and evasion against an air stalker's attacks are always -4.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06516))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06516))_
+
+> An air stalker is a stalker created from transparent gas. Therefore, even when it materializes, it is completely invisible. For this reason, attacks on an air stalker and evasion against an air stalker's attacks are always -4.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06515))_
 
 > Languages=None Perception=Pseudo, Magic while in ghostly form
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06515))_

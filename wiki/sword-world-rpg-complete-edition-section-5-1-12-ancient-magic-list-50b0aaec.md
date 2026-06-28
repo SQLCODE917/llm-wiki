@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-50b0aaec@3464e5ef1ec2a36a7ba0faa1cc8b971a
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-50b0aaec@cd3646a5e2ab713ae9d6a5b72b7ada5e
 ---
 
 # 5.1.12 Ancient Magic List
@@ -28,8 +28,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The summoned familiar and the sorcerer are always in mental contact, so they can communicate in a way similar to telepathy and can also share sensory organs. The caster can use their familiar's sensory organs to see and hear, and vice versa. Also, when you give a command to your familiar, the familiar will try to execute it, but there are natural limits to what it can actually do depending on the familiar's physical abilities. Abilities of each familiar are listed on the table, but you can find 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01757, source-range-870a16bc-01761))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01757, source-range-870a16bc-01761))_
+
+> The summoned familiar and the sorcerer are always in mental contact, so they can communicate in a way similar to telepathy and can also share sensory organs. The caster can use their familiar's sensory organs to see and hear, and vice versa. Also, when you give a command to your familiar, the familiar will try to execute it, but there are natural limits to what it can actually do depending on the familiar's physical abilities. Abilities of each familiar are listed on the table, but you can find
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01760))_
 
 | Animal Name | Life Points | Mental Points | Abilities |
 | --- | --- | --- | --- |
@@ -53,7 +58,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01757, 
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01760))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02005))_
 
 | Target's<br>Agility | Evasion Speed (Points)<br>Penalty |
 | --- | --- |
@@ -77,7 +85,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01760))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02005))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
 
 | Target's<br>Agility | Evasion Speed (Points)<br>Bonus |
 | --- | --- |
@@ -101,7 +112,9 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02005))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02096))_
 
 > If your magic has been reflected, you must resist against your own magic yourself.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02096))_

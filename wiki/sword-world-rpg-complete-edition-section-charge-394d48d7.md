@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-charge-394d48d7@728f263c117a442059dcae25d9f7b304
+projection_coverage: section-sword-world-rpg-complete-edition-section-charge-394d48d7@431ec56b6b57211a328b0889383e62e1
 ---
 
 # **Charge**
@@ -34,20 +34,34 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: speed to deal great damage. Since you can attack and move at the same time, you’ll also be able to attack from a slightly distant position (you can attack while performing _full movement_ ). This is resolved as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07781))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07781))_
+
+> speed to deal great damage. Since you can attack and move at the same time, you’ll also be able to attack from a slightly distant position (you can attack while performing _full movement_ ). This is resolved as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07783))_
 
 > If you’re any closer than this, it's not possible to charge, and if you’re any further away, you cannot reach your opponent.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07783))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07785))_
 
 > If it hits, add +10 to strike power when determining damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07785))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07786))_
 
 > An opponent who’s struck by a charge can take a counterattack action in response.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07786))_
 
-> Context: An opponent who’s struck by a charge can take a counterattack action in response. _Regardless_ of whether the charge was a hit or a failure, the opponent _can_ attack at the _end of the round_ . If you charged, you’ll suffer a -4 penalty to your evasion when dodging this attack. Of course, this is _not_ possible if you’re taking a different action, such as casting magic, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07786))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07786))_
+
+> An opponent who’s struck by a charge can take a counterattack action in response. _Regardless_ of whether the charge was a hit or a failure, the opponent _can_ attack at the _end of the round_ . If you charged, you’ll suffer a -4 penalty to your evasion when dodging this attack. Of course, this is _not_ possible if you’re taking a different action, such as casting magic, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07787))_
 
 > If your opponent's weapon is a spear, etc., you may _both_ charge each other - this includes cases where you’re waiting.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07787))_

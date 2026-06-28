@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-seal-enchantment-93a30c35@131e5ca33bc204db5437989ac8beb511
+projection_coverage: section-sword-world-rpg-complete-edition-section-seal-enchantment-93a30c35@d8fb74e8114d02772c75d8ca509f1bc3
 ---
 
 # **[ Seal Enchantment ]**
@@ -25,23 +25,40 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is a clairvoyance spell, so to speak. By casting this spell, the caster can see things on the other side of obstacles such as walls, etc. as well as the interior of boxes, etc. As long as it's within the area of effect, the caster can adjust the desired range and distance they want to see at will. The clairvoyant information appears directly in your mind as an image, so you can still see even if the target location is closed in darkness.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01979))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01979))_
+
+> This is a clairvoyance spell, so to speak. By casting this spell, the caster can see things on the other side of obstacles such as walls, etc. as well as the interior of boxes, etc. As long as it's within the area of effect, the caster can adjust the desired range and distance they want to see at will. The clairvoyant information appears directly in your mind as an image, so you can still see even if the target location is closed in darkness.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01981))_
 
 > Base Mental Power Cost=30
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01981))_
 
-> Context: This is a clairvoyance spell, so to speak. By casting this spell, the caster can see things on the other side of obstacles such as walls, etc. as well as the interior of boxes, etc. As long as it's within the area of effect, the caster can adjust the desired range and distance they want to see at will. The clairvoyant information appears directly in your mind as an image, so you can still see even if the target location is closed in darkness.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01979))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01979))_
+
+> This is a clairvoyance spell, so to speak. By casting this spell, the caster can see things on the other side of obstacles such as walls, etc. as well as the interior of boxes, etc. As long as it's within the area of effect, the caster can adjust the desired range and distance they want to see at will. The clairvoyant information appears directly in your mind as an image, so you can still see even if the target location is closed in darkness.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01982))_
 
 > Distance=Touch Area=One object Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01982))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01983))_
 
 > Effect=Hides magical power applied to an object
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01983))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01984))_
 
 > Type=Target score, non-removable, lost Countered (Overpowered) By: _Analyze Enchantment_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01984))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01985))_
 
 > Expansion=Final score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01985))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-head-aim-7fc849dd@d1a2536b1281828a698cb0dd8bb7a3ef
+projection_coverage: section-sword-world-rpg-complete-edition-section-head-aim-7fc849dd@14203c82b90c48c9e8cd547a81a90303
 ---
 
 # **Head Aim**
@@ -21,8 +21,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is an attack method that **targets a specific body part of an opponent** . You’ll suffer a penalty to your attack power, but if you hit, you’ll attain a _special effect_ . Damage calculation remains exactly the same as usual. If you don't want to kill your opponent, you can declare _mercy_ (if it's a blunt weapon).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07843))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07843))_
+
+> This is an attack method that **targets a specific body part of an opponent** . You’ll suffer a penalty to your attack power, but if you hit, you’ll attain a _special effect_ . Damage calculation remains exactly the same as usual. If you don't want to kill your opponent, you can declare _mercy_ (if it's a blunt weapon).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07846))_
 
 > The opponent must make a life force (points) resistance roll against a target score of 10, with _damage dealt to life force (points)_ as a penalty.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07846))_

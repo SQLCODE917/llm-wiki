@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-3-skills-8de42a95@9e7d97e5002d25099a3677ce2022ec36
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-3-skills-8de42a95@f53694a9439ebe34abdfff8ad89b898d
 ---
 
 # 1.3 Skills
@@ -131,26 +131,43 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Each skill consists of a number of abilities appropriate to the skill name, and having a **skill level** (1 skill level or higher) means that you can demonstrate those abilities.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00240))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00240))_
+
+> Each skill consists of a number of abilities appropriate to the skill name, and having a **skill level** (1 skill level or higher) means that you can demonstrate those abilities.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00241))_
 
 > The table below shows the names and types of each skill (Table 1-2: Skill Types).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00241))_
 
-> Context: However, not everyone with the thief skill makes a living off such thefts. The abilities of the thief are also useful in adventures. For example, there's the ability to detect and disable traps that have been set, and the ability to stay ahead of footsteps, listening and observing what’s going on.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00257))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00257))_
+
+> However, not everyone with the thief skill makes a living off such thefts. The abilities of the thief are also useful in adventures. For example, there's the ability to detect and disable traps that have been set, and the ability to stay ahead of footsteps, listening and observing what’s going on.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00258))_
 
 > Their fighting style is based on lightness, and although they cannot use heavy weapons or armor, they _can_ use light weapons and armor that does not impede their movement, allowing them to fight as well as a fighter.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00258))_
 
-> Context: Thieves also have some fighting ability. Their fighting style is based on lightness, and although they cannot use heavy weapons or armor, they _can_ use light weapons and armor that does not impede their movement, allowing them to fight as well as a fighter.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00258))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00258))_
+
+> Thieves also have some fighting ability. Their fighting style is based on lightness, and although they cannot use heavy weapons or armor, they _can_ use light weapons and armor that does not impede their movement, allowing them to fight as well as a fighter.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00260))_
 
 > **Table 1-2: Skill Types**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00260))_
 
-> Context: The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+
+> The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
 
 | **Table 1-9: Armor** |
 | --- |
@@ -170,7 +187,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
 
 | **Tief Skill Abilities Table** |
 | --- |
@@ -220,7 +240,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08366))_
 
 | Ability | Relevant AbilityScore | Equipment Restrictions | Retryinga success roll on the same target |
 | --- | --- | --- | --- |
@@ -266,7 +289,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08366))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08368))_
 
 | **Sage Skill Abilities Table** |
 | --- |
@@ -296,7 +322,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08366))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08368))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08371))_
 
 | **Bard Skill Abilities Table** |
 | --- |
@@ -322,7 +351,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08368))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08371))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08373))_
 
 | **Merchant Skill Abilities Table** |
 | --- |
@@ -342,7 +374,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08371))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08373))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08375))_
 
 | **Crafsman Skill Abilities Table** |
 | --- |
@@ -362,7 +397,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08373))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08375))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08377))_
 
 | **Sailor Skill Abilities Table** |
 | --- |
@@ -384,7 +422,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08375))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08377))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08381))_
 
 | Ability | Relevant AbilityScore | Equipment Restrictions | Retryinga success roll on the same target |
 | --- | --- | --- | --- |
@@ -420,7 +461,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08377))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08381))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08383))_
 
 | Ability | Relevant AbilityScore | Equipment Restrictions | Retryinga success roll on the same target |
 | --- | --- | --- | --- |
@@ -448,4 +492,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08381))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08383))_

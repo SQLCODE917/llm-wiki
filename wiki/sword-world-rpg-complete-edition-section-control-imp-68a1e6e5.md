@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-control-imp-68a1e6e5@5fd90d3d5ef7f2bc6006b57425eae2ee
+projection_coverage: section-sword-world-rpg-complete-edition-section-control-imp-68a1e6e5@cbc1ab244e1413f781ff49b663d0eb8c
 ---
 
 # **[ Control Imp ]**
@@ -22,23 +22,42 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: if the poison is removed by a spell such as _Cure Poison_ , etc. midway, the damage will stop accumulating at that point. However, the damage suffered up to that point will _not_ be recovered.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03978))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03978))_
+
+> if the poison is removed by a spell such as _Cure Poison_ , etc. midway, the damage will stop accumulating at that point. However, the damage suffered up to that point will _not_ be recovered.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03981))_
 
 > Base Mental Power Cost=20
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03981))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03982))_
 
 > Distance=1 kilometer
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03982))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03983))_
 
 > Area=One imp Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03983))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03984))_
 
 > Effect=You can make an imp into your familiar
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03984))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03985))_
 
 > Type=Non-removable Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03985))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03987))_
 
 > When casting magic, you can also borrow the imp's mental points to cast spells.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03987))_

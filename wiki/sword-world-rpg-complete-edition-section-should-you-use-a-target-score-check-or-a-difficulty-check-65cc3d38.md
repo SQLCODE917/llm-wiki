@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-should-you-use-a-target-score-check-or-a-difficulty-check-65cc3d38@468a80bc7a23eb348da95083666063a7
+projection_coverage: section-sword-world-rpg-complete-edition-section-should-you-use-a-target-score-check-or-a-difficulty-check-65cc3d38@44817b6be8160d36826a3c21fa376770
 ---
 
 # **Should You Use a Target Score Check or a Difficulty Check?**
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+
+> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03795))_
 
 | Target Score | Difculty | Standard |
 | --- | --- | --- |
@@ -67,4 +72,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03795))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-refresh-60cf1431@1549304644e4a6702b82d3db1f52740f
+projection_coverage: section-sword-world-rpg-complete-edition-section-refresh-60cf1431@d7fb8c7910e9bb62f35c522aa5fda6e3
 ---
 
 # **[ Refresh ]**
@@ -23,23 +23,44 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03014))_
+
 > Base Mental Power Cost=40
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03014))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03015))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03015))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03016))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03016))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03017))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03017))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03018))_
 
 > Effect=Get the target back to perfect health Type=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03018))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03019))_
 
 > Expansion=Final score, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03019))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03022))_
 
 > When used against undead, if the undead fails to resist, you can instantly reduce its life points 0.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03022))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sin-045a4172@a8943276a7652d8e6048a904958f5738
+projection_coverage: section-sword-world-rpg-complete-edition-section-sin-045a4172@c3a10ce48b19dfcc3b4b3de7da68bce0
 ---
 
 # **[ Sin ]**
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+
+> Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
 | **Table 1-8: Weapons-1** |
 | --- |
@@ -45,7 +50,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_
 
 | Attained Level | <br>Sorcerer | Shaman<br>Dragon Priest | Fighter<br>Tief<br>Priest<br>Dark Priest | Ranger<br>Sage<br>Bard | Reduction for<br>Acquiring<br>Sorcerer &<br>Sage at the<br>Same Time |
 | --- | --- | --- | --- | --- | --- |
@@ -79,4 +87,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_

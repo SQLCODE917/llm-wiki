@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-climb-agility-257e4d03@bd7ab331ddfbb7eb0e8adefd63d42513
+projection_coverage: section-sword-world-rpg-complete-edition-section-climb-agility-257e4d03@65bb61bf7d434ba061addd3bf2e9377c
 ---
 
 # **[** ④ **Climb [Agility] ]**
@@ -28,20 +28,33 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: An adventurer with adventurer level 4 and an agility bonus +2, attempts to climb a vertical natural cliff using a rope. He's wearing chain mail armor. The baseline score is _adventurer level + agility bonus_ = _6_ . The target score is 10+2+4= _16_ , taking into account the conditions of _vertical cliff with a foothold_ and _chain mail._ In other words, if he rolls 2D and gets a score of 10 or greater, he’ll succeed at climbing.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03541))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03541))_
+
+> An adventurer with adventurer level 4 and an agility bonus +2, attempts to climb a vertical natural cliff using a rope. He's wearing chain mail armor. The baseline score is _adventurer level + agility bonus_ = _6_ . The target score is 10+2+4= _16_ , taking into account the conditions of _vertical cliff with a foothold_ and _chain mail._ In other words, if he rolls 2D and gets a score of 10 or greater, he’ll succeed at climbing.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03543))_
 
 > If this adventurer is a thief, he can remove and discard the heavy armor he is wearing, and he can use his thief skill to attempt the climb more safely.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03543))_
 
-> Context: First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545))_
+
+> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03546))_
 
 > **Table 6-1: Climb by Skill**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03546))_
 
-> Context: First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb time, only double ones will result in a failure.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, source-range-870a16bc-03549))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, source-range-870a16bc-03549))_
+
+> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb time, only double ones will result in a failure.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
 
 | **Table 6-1: Climb by Skill** |
 | --- |
@@ -61,7 +74,9 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, 
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
 
 > If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_

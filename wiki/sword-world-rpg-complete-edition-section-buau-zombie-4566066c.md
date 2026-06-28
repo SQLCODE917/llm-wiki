@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-buau-zombie-4566066c@674d4ce95771e58636e938cb71b66bdc
+projection_coverage: section-sword-world-rpg-complete-edition-section-buau-zombie-4566066c@c298ee3e00dba68c08f73aa78bc27aae
 ---
 
 # **[ Buau Zombie ]**
@@ -31,8 +31,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06112))_
+
 > Monster Level=Based on previous Rarity=16 Agility=Half of previous Movement Speed=Half of previous Number=Several to dozens Frequency=Rare Intellect=Low Reaction=Command-based
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06112))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06115))_
 
 > Therefore, they will do their best to obey even abstract commands (for example, sneak into a house and steal something, etc.). They can also use tools such as weapons, armor, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06115))_

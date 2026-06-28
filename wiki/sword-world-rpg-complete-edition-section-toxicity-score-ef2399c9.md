@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-toxicity-score-ef2399c9@ee9828acac474b0a8149ca623776a051
+projection_coverage: section-sword-world-rpg-complete-edition-section-toxicity-score-ef2399c9@fd90a3ecd74d2c673055e8c84bcf7b95
 ---
 
 # 《 **Toxicity Score** 》
@@ -25,8 +25,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This represents how famous the poison is. The higher this score, the rarer the poison. An adventurer must make a success roll using _sage skill level + intelligence bonus_ as the baseline score, and if they succeed, they will know about the poison. You can also _guess_ the name of the poison when you see the symptoms of the poisoned person. If your success roll is 4 or more above the **rarity** , you can also know how to _make_ the poison and its antidote (if it has one).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04549))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04549))_
+
+> This represents how famous the poison is. The higher this score, the rarer the poison. An adventurer must make a success roll using _sage skill level + intelligence bonus_ as the baseline score, and if they succeed, they will know about the poison. You can also _guess_ the name of the poison when you see the symptoms of the poisoned person. If your success roll is 4 or more above the **rarity** , you can also know how to _make_ the poison and its antidote (if it has one).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04547))_
 
 > When the poison enters the body, make a life force resistance roll (for monsters, a life _point_ resistance roll) using the toxicity score as the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04547))_

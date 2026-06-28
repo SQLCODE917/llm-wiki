@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-maze-woods-ent-greater-plant-spirit-f2920575@1c784a9e910576a72130a5493f4df721
+projection_coverage: section-sword-world-rpg-complete-edition-section-maze-woods-ent-greater-plant-spirit-f2920575@9ad6e1911096418eb0db4a61372880a7
 ---
 
 # **[ Maze Woods ] (Ent/Greater Plant Spirit)**
@@ -16,11 +16,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02729))_
+
 > Base Mental Power Cost=40
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02729))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02730))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02730))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02731))_
 
 > Area=Area within a 500 meter radius from the caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02731))_

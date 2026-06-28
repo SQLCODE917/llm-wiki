@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-luck-spell-level-1-1f4996f6@602b9e6e4adb8c980c1a68fa49872160
+projection_coverage: section-sword-world-rpg-complete-edition-section-luck-spell-level-1-1f4996f6@74d2e2ccbad804e59d9b87c18c4751bb
 ---
 
 # **[ Luck ] (Spell Level=1)**
@@ -27,14 +27,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03138))_
+
 > Base Mental Power Cost=1 Distance=Caster Area=Caster Duration=Until the caster falls asleep
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03138))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03139))_
 
 > Effect=You can turn a failed success roll into a success only once Type=Non-removable Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03139))_
 
-> Context: Effect=You can turn a failed success roll into a success only once Type=Non-removable Expansion=Resist=None
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03139))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03139))_
+
+> Effect=You can turn a failed success roll into a success only once Type=Non-removable Expansion=Resist=None
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03140))_
 
 > If you cast this spell, you can turn a failure into a success only _once_ on a success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03140))_

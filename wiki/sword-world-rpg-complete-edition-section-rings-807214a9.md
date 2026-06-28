@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rings-807214a9@8dfa8aee340f4aa0808a51e7bb7c49d7
+projection_coverage: section-sword-world-rpg-complete-edition-section-rings-807214a9@41000c79d3b73df8f44818fe1d593d06
 ---
 
 # 《 **Rings** 》
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Similar to weapons, it's recommended to give each piece of magical armor its own name and lore by referencing the descriptions of magical armor that follow, which helps enhance the atmosphere of Alecrast. Here, we provide a price list of non-metallic or ring mail armor with _+1 power_ as a guideline for game masters when rewarding characters. For armor, items that exceed the _required strength_ often see decreased demand, so higher _required strength_ doesn't necessarily mean higher prices. This
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07165))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07165))_
+
+> Similar to weapons, it's recommended to give each piece of magical armor its own name and lore by referencing the descriptions of magical armor that follow, which helps enhance the atmosphere of Alecrast. Here, we provide a price list of non-metallic or ring mail armor with _+1 power_ as a guideline for game masters when rewarding characters. For armor, items that exceed the _required strength_ often see decreased demand, so higher _required strength_ doesn't necessarily mean higher prices. This
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -47,10 +52,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07165))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
 
-> Context: Here is a list of prices of magical nonmetal or ring mail armor with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07183))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07183))_
+
+> Here is a list of prices of magical nonmetal or ring mail armor with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07184))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -80,10 +89,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07183))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07184))_
 
-> Context: Here is a list of prices of magical nonmetal or ring mail armor with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07196))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07196))_
+
+> Here is a list of prices of magical nonmetal or ring mail armor with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07197))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -113,4 +126,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07196))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07197))_

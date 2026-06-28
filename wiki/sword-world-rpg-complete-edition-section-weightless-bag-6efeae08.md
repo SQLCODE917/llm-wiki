@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-weightless-bag-6efeae08@1b2d5c46302f3fc5fc1d2b22cb9dd215
+projection_coverage: section-sword-world-rpg-complete-edition-section-weightless-bag-6efeae08@471237d4c9fbef2a8a135948b7692228
 ---
 
 # **[ Weightless Bag ]**
@@ -21,14 +21,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07430))_
+
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07430))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07431))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07431))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07432))_
 
 > Form=Lightly colored backpack Base Trade Price=40,000 gamels Powers=Removes gravity from objects in the bag
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07432))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07434))_
 
 > However, you can _only_ put in as many objects as you can outwardly _see_ , so if you put in something of an _abnormal_ weight (the game master should make a suitable decision), the magical power will disintegrate and it’ll tear.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07434))_

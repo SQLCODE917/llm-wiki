@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-wraith-form-40a71c53@0197a53ce01630e141c699831ebaea07
+projection_coverage: section-sword-world-rpg-complete-edition-section-wraith-form-40a71c53@271cf66d378e5eb50b6c81a7cde2c94e
 ---
 
 # **[ Wraith Form ]**
@@ -28,26 +28,46 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell works on targets slightly larger than a human (such as an ogre or a manticore), but has no effect on targets of a larger size than that (such as a dragon or a roc).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02136))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02136))_
+
+> This spell works on targets slightly larger than a human (such as an ogre or a manticore), but has no effect on targets of a larger size than that (such as a dragon or a roc).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02138))_
 
 > Base Mental Power Cost=40
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02138))_
 
-> Context: This spell works on targets slightly larger than a human (such as an ogre or a manticore), but has no effect on targets of a larger size than that (such as a dragon or a roc).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02136))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02136))_
+
+> This spell works on targets slightly larger than a human (such as an ogre or a manticore), but has no effect on targets of a larger size than that (such as a dragon or a roc).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02139))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02139))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02140))_
 
 > Area=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02140))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02141))_
 
 > Duration=1 day Effect=Can withdraw from the ethereal body and become a wraith
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02141))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02142))_
 
 > Type=Non-removable, lost Expansion=Duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02142))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02143))_
 
 > If you do not (or cannot) return to your original body after the spell's duration has expired, you will lose complete contact with your body, and must remain adrift for eternity as a wraith.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02143))_

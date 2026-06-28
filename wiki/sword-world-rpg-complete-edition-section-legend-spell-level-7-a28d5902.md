@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-legend-spell-level-7-a28d5902@389ed479b4ff441e9868b4995374df3e
+projection_coverage: section-sword-world-rpg-complete-edition-section-legend-spell-level-7-a28d5902@1be7884e2fdeace66b5cfef03c06dfe9
 ---
 
 # **[ Legend ] (Spell Level=7)**
@@ -28,23 +28,40 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If a character has this spell cast on them and a monster with fixed strike points attacks, the character's defense roll will be affected. In this case, even if the defense roll result is not only 2 (double ones) but also _3_ , no damage reduction will be possible.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03126))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03126))_
+
+> If a character has this spell cast on them and a monster with fixed strike points attacks, the character's defense roll will be affected. In this case, even if the defense roll result is not only 2 (double ones) but also _3_ , no damage reduction will be possible.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03128))_
 
 > Base Mental Power Cost=28
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03128))_
 
-> Context: If a character has this spell cast on them and a monster with fixed strike points attacks, the character's defense roll will be affected. In this case, even if the defense roll result is not only 2 (double ones) but also _3_ , no damage reduction will be possible.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03126))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03126))_
+
+> If a character has this spell cast on them and a monster with fixed strike points attacks, the character's defense roll will be affected. In this case, even if the defense roll result is not only 2 (double ones) but also _3_ , no damage reduction will be possible.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03129))_
 
 > Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03129))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03130))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03130))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03131))_
 
 > Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03131))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03132))_
 
 > Effect=Make the target memorize text Type=Non-removable Expansion=Text amount (see explanation) Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03132))_

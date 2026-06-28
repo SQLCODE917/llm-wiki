@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-grapple-686b6ae1@5c485ef0f11af52fdbf65d8b47238ac4
+projection_coverage: section-sword-world-rpg-complete-edition-section-grapple-686b6ae1@6162ceb887a2e57e209c6033fb95b67f
 ---
 
 # **Grapple**
@@ -27,8 +27,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07807))_
+
 > Anyone who attempts to grapple will suffer a -2 penalty to his or her attack power, then must make a hit check for their attack.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07807))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07810))_
 
 > Once you’ve entered a grapple, the _only_ weapons you can use are daggers and garrotes (described below).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07810))_

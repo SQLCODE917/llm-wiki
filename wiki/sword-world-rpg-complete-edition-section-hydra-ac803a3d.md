@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hydra-ac803a3d@7d0cc34fa8a7a6b25daaa17445cb2f48
+projection_coverage: section-sword-world-rpg-complete-edition-section-hydra-ac803a3d@d46dc48ce624b846a32942f996c64732
 ---
 
 # **[ Hydra ]**
@@ -29,5 +29,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05588))_
+
 > Life Points/Resistance=54/25 (18) Mental Points/Resistance=10/17 (10) Special Abilities=Head regenerate Water adaptation Habitat=Lakes, rivers Languages=None Perception=Five senses (illumination)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05588))_

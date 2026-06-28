@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-form-a-stone-similar-to-topaz-that-emits-a-bluish-white-light-from-insid-a8a86761@8cc3bd173f8e1dc2de82e3fb01b7b73b
+projection_coverage: section-sword-world-rpg-complete-edition-section-form-a-stone-similar-to-topaz-that-emits-a-bluish-white-light-from-insid-a8a86761@5e3b9cf9f21540e35fd241664b0f66f4
 ---
 
 # Form=A stone similar to topaz that emits a bluish-white light from inside Enchanter=Many
@@ -29,14 +29,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07297))_
+
 > Base Trade Price=Stored mental points x mental points x 100 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07297))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07298))_
 
 > Normally, this stone stores 2D+10 mental points, and a rune master can use magic by consuming these mental points instead of their own mental power.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07298))_
 
-> Context: When referring to a magic crystal, it means a stone that concentrates magic power. While it looks similar to topaz at first glance, upon closer inspection it emits a bluish-white light from within. Normally, this stone stores 2D+10 mental points, and a rune master can use magic by consuming these mental points instead of their own mental power. However, only one stone can be used at a time, and it cannot be used simultaneously with the caster's own mental power. It can also be used as a substitu
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07298))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07298))_
+
+> When referring to a magic crystal, it means a stone that concentrates magic power. While it looks similar to topaz at first glance, upon closer inspection it emits a bluish-white light from within. Normally, this stone stores 2D+10 mental points, and a rune master can use magic by consuming these mental points instead of their own mental power. However, only one stone can be used at a time, and it cannot be used simultaneously with the caster's own mental power. It can also be used as a substitu
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07300))_
 
 > In this case, adventurers can purchase these stones if they have enough money.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07300))_

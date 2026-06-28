@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-summon-lesser-dragon-5975876a@30f31af5daff3e217052b690bfae15fb
+projection_coverage: section-sword-world-rpg-complete-edition-section-summon-lesser-dragon-5975876a@932a0c6d16746a0d363db787c75d8496
 ---
 
 # **[ Summon Lesser Dragon ]**
@@ -24,8 +24,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04342))_
+
 > Base Mental Power Cost=45
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04342))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04343))_
 
 > Distance=Infinite Area=One lesser dragon Duration=18 rounds Effect=Summon one lesser dragon Type=Summon, ritual, non-removable Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04343))_

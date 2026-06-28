@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-9-2-61e2913f@62139a1d37e63be7684e6d2bdb1f438e
+projection_coverage: section-sword-world-rpg-complete-edition-section-9-2-61e2913f@cfa1c5387ba42b1ecbe9c3b979d56b67
 ---
 
 # **9.2**
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+
+> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03795))_
 
 | Target Score | Difculty | Standard |
 | --- | --- | --- |
@@ -67,4 +72,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03795))_

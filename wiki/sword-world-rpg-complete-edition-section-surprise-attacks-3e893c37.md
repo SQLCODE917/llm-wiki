@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-surprise-attacks-3e893c37@f42161bf0999df4a94bf404910c311d0
+projection_coverage: section-sword-world-rpg-complete-edition-section-surprise-attacks-3e893c37@f3ee8005561410d8485de70ae33192f9
 ---
 
 # **Surprise Attacks**
@@ -24,8 +24,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Combat often occurs in unusual locations, such as in the dark, on poor footing, etc. In such cases, a penalty (sometimes a bonus) is given to an adventurer's attack power or evasion speed, depending on the situation. If the same conditions apply to monsters, the same penalty (bonus) will be given to the monster's attack and evasion points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03851))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03851))_
+
+> Combat often occurs in unusual locations, such as in the dark, on poor footing, etc. In such cases, a penalty (sometimes a bonus) is given to an adventurer's attack power or evasion speed, depending on the situation. If the same conditions apply to monsters, the same penalty (bonus) will be given to the monster's attack and evasion points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03854))_
 
 | **Table 10-1: Attack Power and Evasion Speed Modifers** |
 | --- |
@@ -47,25 +52,40 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03851))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03854))_
 
-> Context: An example is shown in Table 10-1: Attack Power and Evasion Speed Modifiers.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03855))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03855))_
+
+> An example is shown in Table 10-1: Attack Power and Evasion Speed Modifiers.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03858))_
 
 > When encountering a monster, one of you may notice the other without them noticing you, allowing you to perform a **surprise attack** .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03858))_
 
-> Context: When encountering a monster, one of you may notice the other without them noticing you, allowing you to perform a **surprise attack** . This should also be determined by the game master depending on the situation, but we've included Table 10-2: Surprise Attack Check as a reference. The game master must roll 2D and add it to the monster level (the highest one in the case of a group). Next, all adventurers make a success roll using _ranger skill level + intelligence bonus_ as the baseline score. S
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03858))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03858))_
+
+> When encountering a monster, one of you may notice the other without them noticing you, allowing you to perform a **surprise attack** . This should also be determined by the game master depending on the situation, but we've included Table 10-2: Surprise Attack Check as a reference. The game master must roll 2D and add it to the monster level (the highest one in the case of a group). Next, all adventurers make a success roll using _ranger skill level + intelligence bonus_ as the baseline score. S
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03860))_
 
 > However, you should also take into
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03860))_
 
-> Context: When encountering a monster, one of you may notice the other without them noticing you, allowing you to perform a **surprise attack** . This should also be determined by the game master depending on the situation, but we've included Table 10-2: Surprise Attack Check as a reference. The game master must roll 2D and add it to the monster level (the highest one in the case of a group). Next, all adventurers make a success roll using _ranger skill level + intelligence bonus_ as the baseline score. S
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03858))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03858))_
+
+> When encountering a monster, one of you may notice the other without them noticing you, allowing you to perform a **surprise attack** . This should also be determined by the game master depending on the situation, but we've included Table 10-2: Surprise Attack Check as a reference. The game master must roll 2D and add it to the monster level (the highest one in the case of a group). Next, all adventurers make a success roll using _ranger skill level + intelligence bonus_ as the baseline score. S
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03861))_
 
 > **Table 10-2: Surprise Attack Check**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03861))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03862))_
 
 | **Table 10-2: Surprise Attack Check** |
 | --- |
@@ -89,4 +109,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03861))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03862))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-1-combat-in-which-monsters-roll-dice-6b8947ea@04e25254809ee97467e2582d65e88271
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-1-combat-in-which-monsters-roll-dice-6b8947ea@1ab80b78fe3dfe74ea7c17ca07be7887
 ---
 
 # 16.1 Combat in Which Monsters Roll Dice
@@ -40,20 +40,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is because these advantages exist. Here we'll introduce the procedure by which the game master also rolls the dice and performs combat.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07689))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07689))_
+
+> This is because these advantages exist. Here we'll introduce the procedure by which the game master also rolls the dice and performs combat.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07687))_
 
 > When both sides roll the dice, the range of numbers will expand and the enjoyment can increase.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07687))_
 
-> Context: As you can see from the way the dice are rolled, this is the process for a success roll with _monster's attack points -7_ as the _difficulty_ . Therefore, a tie would result in _character's evasion success = monster's attack failure_ . Also, if the game master rolls double ones or double sixes, that does _not_ automatically result in failure/success (but for a _character_ , it still _does_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07692))_
+### Technical atom 2
 
-> The game master should roll 2D and add it to the number in parenthesis.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07691))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07692))_
 
-> Context: As you can see from the way the dice are rolled, this is the process for a success roll with _monster's attack points -7_ as the _difficulty_ . Therefore, a tie would result in _character's evasion success = monster's attack failure_ . Also, if the game master rolls double ones or double sixes, that does _not_ automatically result in failure/success (but for a _character_ , it still _does_ ). As in the previous section, this is the process for a success roll with _monster's evasion points -7_ as
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07692, source-range-870a16bc-07696))_
+> As you can see from the way the dice are rolled, this is the process for a success roll with _monster's attack points -7_ as the _difficulty_ . Therefore, a tie would result in _character's evasion success = monster's attack failure_ . Also, if the game master rolls double ones or double sixes, that does _not_ automatically result in failure/success (but for a _character_ , it still _does_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07691))_
 
 > The game master should roll 2D and add it to the number in parenthesis.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07695))_
+
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07692, source-range-870a16bc-07696))_
+
+> As you can see from the way the dice are rolled, this is the process for a success roll with _monster's attack points -7_ as the _difficulty_ . Therefore, a tie would result in _character's evasion success = monster's attack failure_ . Also, if the game master rolls double ones or double sixes, that does _not_ automatically result in failure/success (but for a _character_ , it still _does_ ). As in the previous section, this is the process for a success roll with _monster's evasion points -7_ as
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07695))_
+
+> The game master should roll 2D and add it to the number in parenthesis.

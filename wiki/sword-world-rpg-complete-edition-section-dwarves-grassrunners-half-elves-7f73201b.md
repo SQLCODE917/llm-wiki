@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dwarves-grassrunners-half-elves-7f73201b@cac1c16e0552b9e0b7d5384a8f982bd9
+projection_coverage: section-sword-world-rpg-complete-edition-section-dwarves-grassrunners-half-elves-7f73201b@b65ed3086a2eac37ebe42f8813b676fc
 ---
 
 # **Dwarves, Grassrunners, Half-Elves**
@@ -20,8 +20,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))_
+
+> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08056))_
 
 | Age | Modifcation |
 | --- | --- |
@@ -55,4 +60,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08056))_

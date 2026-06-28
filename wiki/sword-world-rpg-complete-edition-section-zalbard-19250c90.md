@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-zalbard-19250c90@1b2ac1c0fa0c036c4e4627d89d87b3ee
+projection_coverage: section-sword-world-rpg-complete-edition-section-zalbard-19250c90@a67b271fed105ad5186d96bd8ba2d5ad
 ---
 
 # **Zalbard**
@@ -16,14 +16,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: A grunel is a humanoid lesser daemon with steel-blue skin. It's characterized by its long tail, which it can manipulate freely like a whip to attack or entangle enemies. If it uses its tail to entangle, treat this as a strangling attack (see p. 236). The target will be unable to move, and the grunel can attack with the weapon in its right hand. They have the ability to use ancient magic. They seem to have been especially proficient at enchanting, and often carry a magical sword. If a grunel has 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06587))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06587))_
+
+> A grunel is a humanoid lesser daemon with steel-blue skin. It's characterized by its long tail, which it can manipulate freely like a whip to attack or entangle enemies. If it uses its tail to entangle, treat this as a strangling attack (see p. 236). The target will be unable to move, and the grunel can attack with the weapon in its right hand. They have the ability to use ancient magic. They seem to have been especially proficient at enchanting, and often carry a magical sword. If a grunel has
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06589))_
 
 > Monster Level=5 Rarity=13 Agility=14 Movement Speed=15/17 (air) Number=One to several Frequency=Very rare Intellect=Human Reaction=Adversarial, or command-based Attack Points=Claws: 13 (6) Strike Points=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06589))_
 
-> Context: A grunel is a humanoid lesser daemon with steel-blue skin. It's characterized by its long tail, which it can manipulate freely like a whip to attack or entangle enemies. If it uses its tail to entangle, treat this as a strangling attack (see p. 236). The target will be unable to move, and the grunel can attack with the weapon in its right hand. They have the ability to use ancient magic. They seem to have been especially proficient at enchanting, and often carry a magical sword. If a grunel has 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06587))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06587))_
+
+> A grunel is a humanoid lesser daemon with steel-blue skin. It's characterized by its long tail, which it can manipulate freely like a whip to attack or entangle enemies. If it uses its tail to entangle, treat this as a strangling attack (see p. 236). The target will be unable to move, and the grunel can attack with the weapon in its right hand. They have the ability to use ancient magic. They seem to have been especially proficient at enchanting, and often carry a magical sword. If a grunel has
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06590))_
 
 > Evasion Points=12 (5) Defense Points=9 Life Points/Resistance=25/15 (8)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06590))_

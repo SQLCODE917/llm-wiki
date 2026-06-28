@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-resistance-efe6826b@c6d44d0f5cca860065bf0386ef753492
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-resistance-efe6826b@683da0296bedc39395098e764aad021c
 ---
 
 # **Monster Resistance**
@@ -22,8 +22,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The magic procedure is resolved the same way regardless of whether a _monster_ or an _adventurer_ is casting the spell. In other words, you roll 2D and add it to your _magic power_ . Using that as the target score, everyone on the side on which it was cast must attempt a mental power resistance roll. If they fail, the magic will be cast with its full effect. If they succeed, the magic will _not_ be cast or its effect will be _reduced_ . However, if
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07988))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07988))_
+
+> The magic procedure is resolved the same way regardless of whether a _monster_ or an _adventurer_ is casting the spell. In other words, you roll 2D and add it to your _magic power_ . Using that as the target score, everyone on the side on which it was cast must attempt a mental power resistance roll. If they fail, the magic will be cast with its full effect. If they succeed, the magic will _not_ be cast or its effect will be _reduced_ . However, if
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07990))_
 
 > The final score must _exceed_ the final score from when the character cast the spell.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07990))_

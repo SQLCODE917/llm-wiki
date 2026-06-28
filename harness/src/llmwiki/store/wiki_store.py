@@ -169,10 +169,9 @@ class WikiStore:
     def delete_source_pages_not_in(
         self, source_locator: str, keep_page_ids: set[str]
     ) -> tuple[str, ...]:
-        source_ref = f"raw/{source_locator}"
         return self._delete_generated_pages(
             keep_page_ids,
-            lambda metadata: metadata.sources == (source_ref,),
+            lambda metadata: _metadata_matches_source(metadata, source_locator),
         )
 
     def delete_cross_source_pages_not_in(self, keep_page_ids: set[str]) -> tuple[str, ...]:
@@ -533,3 +532,18 @@ class WikiStore:
 
 def _is_hidden_path(path: Path, root: Path) -> bool:
     return any(part.startswith(".") for part in path.relative_to(root).parts)
+
+
+def _metadata_matches_source(metadata: PageMetadata, source_locator: str) -> bool:
+    if metadata.source_id == source_locator:
+        return True
+    source_refs = tuple(ref for ref in metadata.sources if ref.strip())
+    return bool(source_refs) and all(
+        _source_ref_matches(ref, source_locator) for ref in source_refs
+    )
+
+
+def _source_ref_matches(source_ref: str, source_locator: str) -> bool:
+    raw_ref = f"raw/{source_locator}"
+    stripped = source_ref.strip()
+    return stripped == raw_ref or stripped.startswith(f"{raw_ref} ")

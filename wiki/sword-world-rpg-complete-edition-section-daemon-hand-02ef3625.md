@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-daemon-hand-02ef3625@994507e10b326de865e4ebb4eca315aa
+projection_coverage: section-sword-world-rpg-complete-edition-section-daemon-hand-02ef3625@b67ef0ff85f8280c48f1d721063d2bda
 ---
 
 # **[ Daemon Hand ]**
@@ -16,17 +16,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The summoned daemon will obey the summoner's commands. Please use _Table 14-1: Daemon Jar Summon_ to determine which daemon will appear. If the summoner is gone, the daemon, according to its intrinsic nature, will begin to act violently.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07551))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07551))_
+
+> The summoned daemon will obey the summoner's commands. Please use _Table 14-1: Daemon Jar Summon_ to determine which daemon will appear. If the summoner is gone, the daemon, according to its intrinsic nature, will begin to act violently.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07553))_
 
 > Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07553))_
 
-> Context: The summoned daemon will obey the summoner's commands. Please use _Table 14-1: Daemon Jar Summon_ to determine which daemon will appear. If the summoner is gone, the daemon, according to its intrinsic nature, will begin to act violently.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07551))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07551))_
+
+> The summoned daemon will obey the summoner's commands. Please use _Table 14-1: Daemon Jar Summon_ to determine which daemon will appear. If the summoner is gone, the daemon, according to its intrinsic nature, will begin to act violently.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07554))_
 
 > Enchanter= "All-encompassing" Phreg Form=Gloves with fingers that are twice as long as normal
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07554))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07555))_
 
 > Base Trade Price=6000 gamels Powers=With freely-moving fingertips, gain a +2 to the thief skill’s _lockpicking_ , _remove/set trap_ , _climb_ , and _pickpocket_ checks
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07555))_

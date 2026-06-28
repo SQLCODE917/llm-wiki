@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-e0e72c90@2a1e0893f1161f4672a2489106adea74
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-e0e72c90@e323512d169662372f3b7830dd66207d
 ---
 
 # 13.2.10 Magical Creatures
@@ -221,305 +221,560 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06356))_
+
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06356))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06367))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06367))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06368))_
 
 > Agility=14 Movement Speed=4/7 (air) Number=One Frequency=Very rare Intellect=Human Reaction=Neutral Attack Points=Barehanded:8 (1) Strike Points=1
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06368))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06369))_
 
 > Evasion Points=10 (3) Defense Points=3 Life Points/Resistance=6/8 (1) Mental Points/Resistance=14/9 (2) Special Abilities=None in particular Habitat=Depends on the caster Languages=Low ancient Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06369))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06373))_
 
 > Monster Level=8 Rarity=15 Agility=8 Movement Speed=8 Number=One to several Frequency=Rare Intellect=None Reaction=Adversarial Attack Points=Ram:10 (3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06373))_
 
-> Context: Sorcerers in the ancient kingdom often experimented with creating life, but would carelessly throw their failed creations into the sewers or rivers. The blob is said to be the result of such failed artificial life turning feral. It's a black, slimy, amorphous creature with no intellect, which attacks all living things.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06377))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06377))_
+
+> Sorcerers in the ancient kingdom often experimented with creating life, but would carelessly throw their failed creations into the sewers or rivers. The blob is said to be the result of such failed artificial life turning feral. It's a black, slimy, amorphous creature with no intellect, which attacks all living things.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06375))_
 
 > Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=16/10 (3) Mental Points/Resistance=-/10 (3) Special Abilities=All weapons cannot critical Iron corrosion
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06375))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06385))_
 
 > Special Abilities=Mental attack immunity Not affected by poison and illness Habitat=Various
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06385))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06387))_
 
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06387))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06391))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06391))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06394))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06394))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06396))_
 
 > Habitat=Various
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06396))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06397))_
 
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06397))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06398))_
 
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06398))_
 
-> Context: A skeleton warrior is a golem created from a magical dragon's tooth. Its appearance is that of a fully-armed skeleton, which uses its weapon and shield with mechanical precision. However, its intellect is low and it cannot accept complex or abstract commands. For this reason, skeleton warriors are often used for simple tasks, such as guarding treasure vaults, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06399))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06399))_
+
+> A skeleton warrior is a golem created from a magical dragon's tooth. Its appearance is that of a fully-armed skeleton, which uses its weapon and shield with mechanical precision. However, its intellect is low and it cannot accept complex or abstract commands. For this reason, skeleton warriors are often used for simple tasks, such as guarding treasure vaults, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06402))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06402))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06405))_
 
 > Also, once created, a skeleton warrior will never return to its original tooth form.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06405))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06408))_
 
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06408))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06418))_
 
 > To avoid being surprised, a character must make a success roll against target score 16 using _ranger skill level + intelligence bonus_ as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06418))_
 
-> Context: perform a _surprise attack_ . To avoid being surprised, a character must make a success roll against target score 16 using _ranger skill level + intelligence bonus_ as the baseline score.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06418))_
+### Technical atom 18
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06418))_
+
+> perform a _surprise attack_ . To avoid being surprised, a character must make a success roll against target score 16 using _ranger skill level + intelligence bonus_ as the baseline score.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06421))_
 
 > Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06421))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06422))_
 
 > Rarity=13 Agility=10 Movement Speed=10 Number=One Frequency=Moderate Intellect= Almost none Reaction=Violent Attack Points=Arms:10 (3) Strike Points=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06422))_
+
+### Technical atom 20
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06423))_
 
 > Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=8/9 (2) Mental Points/Resistance=-/10 (3) Special Abilities=Camouflage (Sense target score=16)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06423))_
+
+### Technical atom 21
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06428))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06428))_
+
+### Technical atom 22
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06429))_
 
 > Rarity=13 Agility=10 Movement Speed=10 Number=One Frequency=Rare Intellect=Almost none Reaction=Violent Attack Points=Barehanded:10 (3) Strike Points=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06429))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06430))_
 
 > Evasion Points=10 (3) Defense Points=7 Life Points/Resistance=16/11 (4) Mental Points/Resistance=-/11 (4) Special Abilities=Camouflage (Sense target score=16)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06430))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06432))_
 
 > You can only use your other arm in combat, and your movement is restricted, so you cannot use ancient magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06432))_
 
-> Context: This is an imitator in the shape of a door. As soon as you touch the knob, it’ll attack. Anyone hit by a door imitator's attack on the first round will have one arm grabbed and will suffer a -4 penalty to evasion on subsequent rounds. You can only use your other arm in combat, and your movement is restricted, so you cannot use ancient magic. The method of shaking your arm free is the same as strangling (see p. 236), but you will not suffer any damage from being grabbed, and you’ll still be able 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06432))_
+### Technical atom 25
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06432))_
+
+> This is an imitator in the shape of a door. As soon as you touch the knob, it’ll attack. Anyone hit by a door imitator's attack on the first round will have one arm grabbed and will suffer a -4 penalty to evasion on subsequent rounds. You can only use your other arm in combat, and your movement is restricted, so you cannot use ancient magic. The method of shaking your arm free is the same as strangling (see p. 236), but you will not suffer any damage from being grabbed, and you’ll still be able
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
+
+### Technical atom 26
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06436))_
 
 > Special Abilities=Camouflage (Sense target score=16)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06436))_
+
+### Technical atom 27
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06439))_
 
 > A floor imitator can attack anyone standing on top of it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06439))_
+
+### Technical atom 28
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06441))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06441))_
+
+### Technical atom 29
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06442))_
 
 > Rarity=16 Agility=12 Movement Speed=12 Number=One Frequency=Very rare Intellect=Human Reaction=Neutral to adversarial Attack Points=Tentacles:10 (3) Strike Points=7 Evasion Points=11 (4) Defense Points=7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06442))_
+
+### Technical atom 30
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06443))_
 
 > Life Points/Resistance=16/11 (4)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06443))_
+
+### Technical atom 31
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06444))_
 
 > Mental Points/Resistance=12/11 (4) Special Abilities=Camouflage (Sense target score=16)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06444))_
 
-> Context: Things often eat humans. They approach their prey in the form of a human or elf, catch their opponent off guard, then aim to attack when they're alone. They target humans because they’re easier to deceive than animals. Animals have a keen sense of smell, so no matter how closely a thing resembles the real deal, they’ll be able to tell by the difference in smell.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06448))_
+### Technical atom 32
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06448))_
+
+> Things often eat humans. They approach their prey in the form of a human or elf, catch their opponent off guard, then aim to attack when they're alone. They target humans because they’re easier to deceive than animals. Animals have a keen sense of smell, so no matter how closely a thing resembles the real deal, they’ll be able to tell by the difference in smell.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06446))_
 
 > Habitat=Underground labyrinths, ruins Languages=Regional Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06446))_
+
+### Technical atom 33
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06449))_
 
 > During combat, a thing can attack up to 6 times by transforming its body so as to produce numerous arms and tentacles.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06449))_
 
-> Context: During combat, a thing can attack up to 6 times by transforming its body so as to produce numerous arms and tentacles. The game master must roll the dice to randomly determine how many attacks are made in a round.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06449))_
+### Technical atom 34
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06449))_
+
+> During combat, a thing can attack up to 6 times by transforming its body so as to produce numerous arms and tentacles. The game master must roll the dice to randomly determine how many attacks are made in a round.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06451))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06451))_
 
-> Context: A gargoyle has wings on its back and can fly. It also has a tail. Its grotesque appearance is said to be because it was modeled after the lesser daemon zalbard (described later). The size of a gargoyle is nearly 2 meters when standing upright. Unlike golems, etc. they act according to their own judgment without receiving commands. In other words, they may run away if they think they're at a disadvantage, or they may take advantageous tactics depending on the situation. Their personality is very
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06462))_
+### Technical atom 35
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06462))_
+
+> A gargoyle has wings on its back and can fly. It also has a tail. Its grotesque appearance is said to be because it was modeled after the lesser daemon zalbard (described later). The size of a gargoyle is nearly 2 meters when standing upright. Unlike golems, etc. they act according to their own judgment without receiving commands. In other words, they may run away if they think they're at a disadvantage, or they may take advantageous tactics depending on the situation. Their personality is very
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06460))_
 
 > Languages=None Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06460))_
+
+### Technical atom 36
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06462))_
 
 > In other words, they may run away if they think they're at a disadvantage, or they may take advantageous tactics depending on the situation.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06462))_
 
-> Context: They do not willingly go outside their home (ruins). A sí's weapon is a thin sword that resembles a needle. They also use ancient magic. This often includes lost spells among them. In present day Forcelia, the technique used to create stalkers has been lost. Therefore, all stalkers adventurers will meet are survivors from the ancient kingdom.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06467, source-range-870a16bc-06471))_
+### Technical atom 37
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06467, source-range-870a16bc-06471))_
+
+> They do not willingly go outside their home (ruins). A sí's weapon is a thin sword that resembles a needle. They also use ancient magic. This often includes lost spells among them. In present day Forcelia, the technique used to create stalkers has been lost. Therefore, all stalkers adventurers will meet are survivors from the ancient kingdom.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06469))_
 
 > Stalkers are usually ghostly beings, who can move without being blocked by physical obstacles.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06469))_
 
-> Context: Stalkers naturally follow the commands of their casters, but now that all the casters are dead, they remember the last command they were given and faithfully try to carry it out. Stalkers that were created but abandoned without being given any commands will act according to their violent tendencies, indiscriminately attacking anyone they come across.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06472))_
+### Technical atom 38
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06472))_
+
+> Stalkers naturally follow the commands of their casters, but now that all the casters are dead, they remember the last command they were given and faithfully try to carry it out. Stalkers that were created but abandoned without being given any commands will act according to their violent tendencies, indiscriminately attacking anyone they come across.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06475))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06475))_
+
+### Technical atom 39
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06476))_
 
 > Rarity=15 Agility=10 Movement Speed=13 Number=One to several Frequency=Rare Intellect=None Reaction=Violent Attack Points=- Strike Points=Evasion Points=10 (3) Defense Points=5 Life Points/Resistance=14/11 (4) Mental Points/Resistance=-/11 (4)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06476))_
+
+### Technical atom 40
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06477))_
 
 > Special Abilities=Noxious gas (Toxicity score 10, strike power 10, bonus damage 3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06477))_
+
+### Technical atom 41
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06479))_
 
 > Habitat=Stagnant swamps Languages=None Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06479))_
 
-> Context: Gizmos are amorphous black gasses around 2 meters in diameter, which were failed attempts at stalkers. They live by inhaling the stench of decay emitted by dead animals. If there are no animal carcasses nearby, they will also try to kill living creatures and turn them into corpses.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06480))_
+### Technical atom 42
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06480))_
+
+> Gizmos are amorphous black gasses around 2 meters in diameter, which were failed attempts at stalkers. They live by inhaling the stench of decay emitted by dead animals. If there are no animal carcasses nearby, they will also try to kill living creatures and turn them into corpses.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06481))_
 
 > Even if a gizmo's attack hits, it does not deal damage by itself.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06481))_
 
-> Context: body of a gizmo is poisonous gas, so those hit by it will inhale it and suffer damage resulting from a strike power 10 strike roll plus 3 points of bonus damage. However, if their resistance roll is successful, the strike power becomes 0. Armor cannot protect against gas, only adventurer level or magical protection can reduce the damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06484))_
+### Technical atom 43
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06484))_
+
+> body of a gizmo is poisonous gas, so those hit by it will inhale it and suffer damage resulting from a strike power 10 strike roll plus 3 points of bonus damage. However, if their resistance roll is successful, the strike power becomes 0. Armor cannot protect against gas, only adventurer level or magical protection can reduce the damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06485))_
 
 > Only _fire-type_ , _electric-type_ , _pure energytype_ , and _explosion-type_ magic attacks can deal damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06485))_
 
-> Context: body of a gizmo is poisonous gas, so those hit by it will inhale it and suffer damage resulting from a strike power 10 strike roll plus 3 points of bonus damage. However, if their resistance roll is successful, the strike power becomes 0. Armor cannot protect against gas, only adventurer level or magical protection can reduce the damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06484))_
+### Technical atom 44
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06484))_
+
+> body of a gizmo is poisonous gas, so those hit by it will inhale it and suffer damage resulting from a strike power 10 strike roll plus 3 points of bonus damage. However, if their resistance roll is successful, the strike power becomes 0. Armor cannot protect against gas, only adventurer level or magical protection can reduce the damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06487))_
 
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06487))_
+
+### Technical atom 45
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06488))_
 
 > Rarity=14 Agility=15 Movement Speed=15 Number=One, rarely multiple Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Claws:12 (5) Strike Points=9
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06488))_
+
+### Technical atom 46
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06489))_
 
 > Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=14/12 (5)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06489))_
+
+### Technical atom 47
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06490))_
 
 > Mental Points/Resistance=20/13 (6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06490))_
+
+### Technical atom 48
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06491))_
 
 > Special Abilities=Normal weapon immunity
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06491))_
+
+### Technical atom 49
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06495))_
 
 > Habitat=Ruins
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06495))_
 
-> Context: A gas stalker is a Stalker created using a heavy, foul-smelling gas. Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor. When it materializes, it appears as a naked devil with green skin and crazy bloodshot eyes.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
+### Technical atom 50
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
+
+> A gas stalker is a Stalker created using a heavy, foul-smelling gas. Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor. When it materializes, it appears as a naked devil with green skin and crazy bloodshot eyes.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06497))_
 
 > Perception=Pseudo, Magic while in ghostly form
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06497))_
+
+### Technical atom 51
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
 
 > Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
 
-> Context: A gas stalker is a Stalker created using a heavy, foul-smelling gas. Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor. When it materializes, it appears as a naked devil with green skin and crazy bloodshot eyes.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
+### Technical atom 52
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
+
+> A gas stalker is a Stalker created using a heavy, foul-smelling gas. Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor. When it materializes, it appears as a naked devil with green skin and crazy bloodshot eyes.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06500))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06500))_
 
-> Context: A gas stalker is a Stalker created using a heavy, foul-smelling gas. Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor. When it materializes, it appears as a naked devil with green skin and crazy bloodshot eyes.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
+### Technical atom 53
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
+
+> A gas stalker is a Stalker created using a heavy, foul-smelling gas. Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor. When it materializes, it appears as a naked devil with green skin and crazy bloodshot eyes.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06501))_
 
 > Rarity=14 Agility=15 Movement Speed=15 Number=One, rarely multiple Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Garrote:10 (3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06501))_
+
+### Technical atom 54
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06502))_
 
 > Strike Points=Special Evasion Points=13 (6) Defense Points=7 Life Points/Resistance=16/13 (6) Mental Points/Resistance=20/14 (7) Special Abilities=Choke (Strike power 10, bonus damage 5)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06502))_
+
+### Technical atom 55
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06503))_
 
 > Surprise attack (Sense target score=16) Normal attack immunity Not affected by poison and illness Sleepless Physical attack immunity while in ghostly form Habitat=Ruins
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06503))_
+
+### Technical atom 56
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06504))_
 
 > Languages=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06504))_
+
+### Technical atom 57
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06505))_
 
 > Perception=Pseudo, Magic while in ghostly form
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06505))_
 
-> Context: A shadow stalker is a stalker made using an extremely heavy black gas. Even when it's not materialized, the color of the black gas is clearly visible in a well-lit area, but when it's lost in darkness, it's barely recognizable. It also excels at moving around while pretending to be its opponent's shadow. A shadow stalker will materialize behind its opponent, holding a garrote in its hand. It'll then try to strangle the opponent to death with that garrote.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06506))_
+### Technical atom 58
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06506))_
+
+> A shadow stalker is a stalker made using an extremely heavy black gas. Even when it's not materialized, the color of the black gas is clearly visible in a well-lit area, but when it's lost in darkness, it's barely recognizable. It also excels at moving around while pretending to be its opponent's shadow. A shadow stalker will materialize behind its opponent, holding a garrote in its hand. It'll then try to strangle the opponent to death with that garrote.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06507))_
 
 > Those with the ranger skill can detect this attack using their _sense danger_ ability if they succeed on a success roll against target score 16 using _ranger skill level + intelligence bonus_ as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06507))_
+
+### Technical atom 59
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06511))_
 
 > Monster Level=6 Rarity=15 Agility=15 Movement Speed=15 Number=One, rarely multiple Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Weapon:13 (6) Strike Points=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06511))_
+
+### Technical atom 60
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06512))_
 
 > Evasion Points=14 (7) Defense Points=8 Life Points/Resistance=16/14 (7) Mental Points/Resistance=20/15 (8) Special Abilities=Normal attack immunity
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06512))_
 
-> Context: An air stalker is a stalker created from transparent gas. Therefore, even when it materializes, it is completely invisible. For this reason, attacks on an air stalker and evasion against an air stalker's attacks are always -4.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06516))_
+### Technical atom 61
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06516))_
+
+> An air stalker is a stalker created from transparent gas. Therefore, even when it materializes, it is completely invisible. For this reason, attacks on an air stalker and evasion against an air stalker's attacks are always -4.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06515))_
 
 > Languages=None Perception=Pseudo, Magic while in ghostly form
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06515))_
+
+### Technical atom 62
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06519))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06519))_
 
-> Context: This is a human who has mutated and gone berserk due to a special poison called _Living Doll_ (see Poison List, p. 161). They vary in appearance; some have four arms, some have a tail instead of legs, some have small wings, and some have scales all over their bodies.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06522))_
+### Technical atom 63
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06522))_
+
+> This is a human who has mutated and gone berserk due to a special poison called _Living Doll_ (see Poison List, p. 161). They vary in appearance; some have four arms, some have a tail instead of legs, some have small wings, and some have scales all over their bodies.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06523))_
 
 > Transformation from human to monster takes one round, during which they cannot attack, but they can still evade.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06523))_
 
-> Context: Transformation from human to monster takes one round, during which they cannot attack, but they can still evade. Evasion points, defense points, and life points in the round during transformation use the _monster's_ scores.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06523))_
+### Technical atom 64
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06523))_
+
+> Transformation from human to monster takes one round, during which they cannot attack, but they can still evade. Evasion points, defense points, and life points in the round during transformation use the _monster's_ scores.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06524))_
 
 > If you call out to them with all your heart, they may respond.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06524))_
 
-> Context: some come in special shapes that resemble animals, magical beasts, or mythical beasts such as dragons, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06531))_
+### Technical atom 65
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06531))_
+
+> some come in special shapes that resemble animals, magical beasts, or mythical beasts such as dragons, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06534))_
 
 > Monster Level=7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06534))_
+
+### Technical atom 66
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06535))_
 
 > Rarity=12 Agility=12 Movement Speed=13 Number=One Frequency=Rare Intellect=Obeys Commands Reaction=Command-based Attack Points=Arms:15 (8) Strike Points=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06535))_
 
-> Context: A flesh golem is a golem made from dead flesh. Usually animal products were used, but perhaps because it was the ancient kingdom period, examples made from the bodies of slaves are also frequently seen. Golems are generally slow-moving creatures, but these have relatively flexible and agile bodies among them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06538))_
+### Technical atom 67
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06538))_
+
+> A flesh golem is a golem made from dead flesh. Usually animal products were used, but perhaps because it was the ancient kingdom period, examples made from the bodies of slaves are also frequently seen. Golems are generally slow-moving creatures, but these have relatively flexible and agile bodies among them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06536))_
 
 > Evasion Points=14 (7) Defense Points=9 Life Points/Resistance=30/18 (11) Mental Points/Resistance=-/15 (8) Special Abilities=Mental attack immunity Not affected by poison and illness Habitat=Ruins
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06536))_
 
-> Context: A flesh golem is a golem made from dead flesh. Usually animal products were used, but perhaps because it was the ancient kingdom period, examples made from the bodies of slaves are also frequently seen. Golems are generally slow-moving creatures, but these have relatively flexible and agile bodies among them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06538))_
+### Technical atom 68
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06538))_
+
+> A flesh golem is a golem made from dead flesh. Usually animal products were used, but perhaps because it was the ancient kingdom period, examples made from the bodies of slaves are also frequently seen. Golems are generally slow-moving creatures, but these have relatively flexible and agile bodies among them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06537))_
 
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06537))_
+
+### Technical atom 69
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06540))_
 
 > Monster Level=9
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06540))_
+
+### Technical atom 70
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06541))_
 
 > Rarity=12 Agility=6 Movement Speed=8 Number=One Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:17 (10) Strike Points=19
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06541))_
+
+### Technical atom 71
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06545))_
 
 > Against an iron golem, weapons cannot deal additional critical damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06545))_
 
-> Context: Against an iron golem, weapons cannot deal additional critical damage. Also, damage spells such as _cold-type_ , _electric-type_ , _stone-type_ , _poison gas-type_ , and _wind cutter-type_ are completely useless. _Fire-type_ damage magic is effective, but a critical cannot occur. _Earthquake-type_ , _explosion-type_ , and _pure energy-type_ damage magic is effective, and a critical _can_ occur.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06545))_
+### Technical atom 72
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06545))_
+
+> Against an iron golem, weapons cannot deal additional critical damage. Also, damage spells such as _cold-type_ , _electric-type_ , _stone-type_ , _poison gas-type_ , and _wind cutter-type_ are completely useless. _Fire-type_ damage magic is effective, but a critical cannot occur. _Earthquake-type_ , _explosion-type_ , and _pure energy-type_ damage magic is effective, and a critical _can_ occur.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06547))_
 
 > Monster Level=13 Rarity=16 Agility=12 Movement Speed=15 Number=One Frequency=Very rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:21 (14) Strike Points=25
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06547))_
 
-> Context: Against an iron golem, weapons cannot deal additional critical damage. Also, damage spells such as _cold-type_ , _electric-type_ , _stone-type_ , _poison gas-type_ , and _wind cutter-type_ are completely useless. _Fire-type_ damage magic is effective, but a critical cannot occur. _Earthquake-type_ , _explosion-type_ , and _pure energy-type_ damage magic is effective, and a critical _can_ occur.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06545))_
+### Technical atom 73
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06545))_
+
+> Against an iron golem, weapons cannot deal additional critical damage. Also, damage spells such as _cold-type_ , _electric-type_ , _stone-type_ , _poison gas-type_ , and _wind cutter-type_ are completely useless. _Fire-type_ damage magic is effective, but a critical cannot occur. _Earthquake-type_ , _explosion-type_ , and _pure energy-type_ damage magic is effective, and a critical _can_ occur.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06548))_
 
 > Evasion Points=19 (12) Defense Points=19 Life Points/Resistance=75/31 (24)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06548))_
+
+### Technical atom 74
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06549))_
 
 > Mental Points/Resistance=-/21 (14) Special Abilities=Weapons cannot critical
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06549))_
+
+### Technical atom 75
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06551))_
 
 > Habitat=Ruins
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06551))_
+
+### Technical atom 76
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06552))_
 
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06552))_
+
+### Technical atom 77
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06554))_
 
 > Against a mithril golem, weapons cannot deal additional critical damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06554))_

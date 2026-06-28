@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-3-61079d71@8fee14e8838775a245af7b5870863cb1
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-3-61079d71@07b31fbd6babca69d9e1e5a5756e34cf
 ---
 
 # **4.3**
@@ -32,14 +32,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: There are some restrictions when handling projectiles such as bows and javelins.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00847))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00847))_
+
+> There are some restrictions when handling projectiles such as bows and javelins.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00849))_
 
 > When there’s an enemy in front of you, you can _never_ use a projectile marked _shooting_ or _made for throwing_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00849))_
 
-> Context: One is their **range** . There is no bow that has infinite reach. The maximum of shooting weapons such as bows and arrows– those marked _shooting_ on the Weapons table (see p. 21) --is **100m** , and of throwing weapons such as spears– those marked _throwable_ or _made for throwing_ on the Weapons table --is **20m** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00850))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00850))_
+
+> One is their **range** . There is no bow that has infinite reach. The maximum of shooting weapons such as bows and arrows– those marked _shooting_ on the Weapons table (see p. 21) --is **100m** , and of throwing weapons such as spears– those marked _throwable_ or _made for throwing_ on the Weapons table --is **20m** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00851))_
 
 > A character must choose _stand still_ as their movement
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00851))_

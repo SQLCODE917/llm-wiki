@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-using-holy-magic-or-common-runes-c86e8588@479e5154f4f8cd2546e417f39e0cae3c
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-using-holy-magic-or-common-runes-c86e8588@4539b29723df1c3e1c506d7b3e0d00a6
 ---
 
 # **4. Using Holy Magic or Common Runes**
@@ -24,8 +24,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Use your strength and weight to **pin down** your opponent. To resolve this, the one attempting to pin down must make a success roll using _fighter/thief skill level + strength bonus_ as the baseline score, while the one resisting must make one using _adventurer level + strength bonus_ . If the pinner’s is greater, the pin is successful.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07821))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07821))_
+
+> Use your strength and weight to **pin down** your opponent. To resolve this, the one attempting to pin down must make a success roll using _fighter/thief skill level + strength bonus_ as the baseline score, while the one resisting must make one using _adventurer level + strength bonus_ . If the pinner’s is greater, the pin is successful.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07824))_
 
 > Even while grappling, you can use holy magic so long as you can speak.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07824))_

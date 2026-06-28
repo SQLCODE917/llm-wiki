@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dance-macabre-9f6ee4be@d220ac4a3af602e510b5d379a916eb7d
+projection_coverage: section-sword-world-rpg-complete-edition-section-dance-macabre-9f6ee4be@e2b9d81314d69f35fafbcb6b6058dfc5
 ---
 
 # **[ Dance Macabre ]**
@@ -33,14 +33,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04689))_
+
 > Symptoms=The body keeps dancing separate from the person's will Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04689))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04691))_
 
 > Fatal Depth=4 Infection Power=Strong
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04691))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04694))_
 
 > **[ Deep Sleep ]** Symptoms=Excessive sleep, extreme fatigue Rarity=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04694))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04696))_
 
 > Infection Power=Weak
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04696))_

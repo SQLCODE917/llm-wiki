@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-guard-glove-d125fa2f@0a0a2b7307c1151414281d7e06cba150
+projection_coverage: section-sword-world-rpg-complete-edition-section-guard-glove-d125fa2f@8c921c764e7639fb819699d669efb807
 ---
 
 # **[ Guard Glove ]**
@@ -22,11 +22,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07463))_
+
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07463))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07464))_
 
 > Form=Left hand (rarely right hand) glove Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07464))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07465))_
 
 > Base Trade Price=1500 (Small shield)/5000 (Large shield) Powers=Generates a force field equivalent to a shield
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07465))_

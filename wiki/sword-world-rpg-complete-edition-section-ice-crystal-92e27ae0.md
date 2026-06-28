@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ice-crystal-92e27ae0@1a2c1f3fdb995cbcd44ac858d96e2a2d
+projection_coverage: section-sword-world-rpg-complete-edition-section-ice-crystal-92e27ae0@bdc6cedfe45328248977722245c68917
 ---
 
 # **Ice Crystal**
@@ -23,8 +23,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: An earth crystal will break after one use.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07306))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07306))_
+
+> An earth crystal will break after one use.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07308))_
 
 > Rarity=13 Enchanter=Many Form=Spherical polished white crystal Base Trade Price=5,000 gamels Powers=Has the same effect as Blizzard when thrown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07308))_

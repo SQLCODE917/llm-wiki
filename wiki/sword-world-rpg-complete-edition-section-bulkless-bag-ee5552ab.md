@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bulkless-bag-ee5552ab@6af0d5f3ec9a732a1cf9607a47ab3408
+projection_coverage: section-sword-world-rpg-complete-edition-section-bulkless-bag-ee5552ab@d87f475ed4da47780d9d7a4ef6a4a4be
 ---
 
 # **[ Bulkless Bag ]**
@@ -27,17 +27,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07584))_
+
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07584))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07585))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07585))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07586))_
 
 > Form=Lightly colored backpack Base Trade Price=200,000 gamels Powers=You can put objects in regardless of size
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07586))_
 
-> Context: Combining it with the Weightless Bag mentioned above, makes it possible to transport extremely large amounts of objects. Put the Bulkless Bag _in_ the Weightless Bag, then put the objects in _it_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07589))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07589))_
+
+> Combining it with the Weightless Bag mentioned above, makes it possible to transport extremely large amounts of objects. Put the Bulkless Bag _in_ the Weightless Bag, then put the objects in _it_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07588))_
 
 > To take it out, put your hand inside and think of the object itself (you can also take it out with a vague thought, but it’s not reliable).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07588))_

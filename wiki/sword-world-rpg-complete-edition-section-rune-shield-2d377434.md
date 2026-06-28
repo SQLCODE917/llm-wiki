@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rune-shield-2d377434@317085073ba1111a7cb37a8b6d1160a7
+projection_coverage: section-sword-world-rpg-complete-edition-section-rune-shield-2d377434@68d0b9d95b4f85f2256b043319257add
 ---
 
 # **[ Rune Shield ]**
@@ -25,23 +25,40 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Those who fail to resist this spell, no matter what they're made of, will instantly be turned to stone. Only creatures with natural life (humans, plants, animals, mythical beasts, magical beasts, fae, youma, and daemons) can be targets of this spell, with the exception of magical creatures such as spirits, undead, and golems. A petrified target will cease all life activity until they're released, so they will not age. If it's removed with _Dispel Magic_ , etc., they will be revived in the same s
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02185))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02185))_
+
+> Those who fail to resist this spell, no matter what they're made of, will instantly be turned to stone. Only creatures with natural life (humans, plants, animals, mythical beasts, magical beasts, fae, youma, and daemons) can be targets of this spell, with the exception of magical creatures such as spirits, undead, and golems. A petrified target will cease all life activity until they're released, so they will not age. If it's removed with _Dispel Magic_ , etc., they will be revived in the same s
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02187))_
 
 > Base Mental Power Cost=36
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02187))_
 
-> Context: Those who fail to resist this spell, no matter what they're made of, will instantly be turned to stone. Only creatures with natural life (humans, plants, animals, mythical beasts, magical beasts, fae, youma, and daemons) can be targets of this spell, with the exception of magical creatures such as spirits, undead, and golems. A petrified target will cease all life activity until they're released, so they will not age. If it's removed with _Dispel Magic_ , etc., they will be revived in the same s
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02185))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02185))_
+
+> Those who fail to resist this spell, no matter what they're made of, will instantly be turned to stone. Only creatures with natural life (humans, plants, animals, mythical beasts, magical beasts, fae, youma, and daemons) can be targets of this spell, with the exception of magical creatures such as spirits, undead, and golems. A petrified target will cease all life activity until they're released, so they will not age. If it's removed with _Dispel Magic_ , etc., they will be revived in the same s
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02188))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02188))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02189))_
 
 > Area=Caster Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02189))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02190))_
 
 > Effect=Create a barrier that completely protects against magic Type=Target score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02190))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02193))_
 
 > Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02193))_

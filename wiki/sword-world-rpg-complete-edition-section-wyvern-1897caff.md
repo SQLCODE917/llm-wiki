@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-wyvern-1897caff@d42647da696999b41d29ab3955d55c7e
+projection_coverage: section-sword-world-rpg-complete-edition-section-wyvern-1897caff@020cf8f880342034324f29d7f841f99f
 ---
 
 # **[ Wyvern ]**
@@ -29,11 +29,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Unlike dragons, they have low intellect, so they cannot cast spells, nor can they breathe fire.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05527))_
+### Technical atom 1
 
-> Context: Wyverns are said to be one of the subspecies of dragons. They are over 10 meters long and use their large wings to fly, but they have no front legs. Since they don't choose where they live, they are feared throughout Alecrast. Unlike dragons, they have low intellect, so they cannot cast spells, nor can they breathe fire.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05527))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05527))_
+
+> Unlike dragons, they have low intellect, so they cannot cast spells, nor can they breathe fire.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05527))_
+
+> Wyverns are said to be one of the subspecies of dragons. They are over 10 meters long and use their large wings to fly, but they have no front legs. Since they don't choose where they live, they are feared throughout Alecrast. Unlike dragons, they have low intellect, so they cannot cast spells, nor can they breathe fire.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05528))_
 
 > If you fail, the poison deals damage resulting from a strike power 20 strike roll plus bonus damage 7.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05528))_

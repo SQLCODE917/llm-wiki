@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-ant-soldier-5888197a@86d418f45d8ed99e6d956df07a898936
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-ant-soldier-5888197a@2fb0497a6da3255f02a279f0eccabc2c
 ---
 
 # **Giant Ant Soldier**
@@ -26,14 +26,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05862))_
+
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05862))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05863))_
 
 > Rarity=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05863))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05866))_
 
 > Habitat=Caves, ruins Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05866))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05867))_
 
 > If the fangs cannot penetrate armor, damage from the acid will not be dealt.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05867))_

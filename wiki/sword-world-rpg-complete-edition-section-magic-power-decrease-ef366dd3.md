@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magic-power-decrease-ef366dd3@902e01d8d1a5cc4aed3e218e2538341c
+projection_coverage: section-sword-world-rpg-complete-edition-section-magic-power-decrease-ef366dd3@1156e0b12db90598098d63d07bbd732d
 ---
 
 # 《 **Magic Power Decrease** 》
@@ -23,5 +23,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01409))_
+
 > You must declare how many points you’ll reduce _before_ you roll the dice.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01409))_

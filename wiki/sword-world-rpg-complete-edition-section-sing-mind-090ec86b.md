@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sing-mind-090ec86b@7a085887c66c1e995491bd1ded5e5c52
+projection_coverage: section-sword-world-rpg-complete-edition-section-sing-mind-090ec86b@05a838f31c88fdaa0e8e73c2eee7c776
 ---
 
 # **Sing (Mind)**
@@ -23,5 +23,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03237))_
+
 > Of course, they can't even converse, and they cannot use spellsongs or common runes.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03237))_

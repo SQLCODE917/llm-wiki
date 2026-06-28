@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-boomerang-1bed76cb@67bdd9c87a5d86cfd3a6480e747baf17
+projection_coverage: section-sword-world-rpg-complete-edition-section-boomerang-1bed76cb@17dd91e6ddef9a4f63d78f318aa58648
 ---
 
 # **Boomerang**
@@ -21,14 +21,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When this weapon is thrown at an enemy and misses, it **returns to the user's hand** at the _end_ of the round. However, it will _not_ return if you roll _double ones_ on your hit check or if the boomerang hits the enemy.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07961))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07961))_
+
+> When this weapon is thrown at an enemy and misses, it **returns to the user's hand** at the _end_ of the round. However, it will _not_ return if you roll _double ones_ on your hit check or if the boomerang hits the enemy.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07962))_
 
 > You should also consider carefully before using it when there are allies nearby.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07962))_
 
-> Context: When this weapon is thrown at an enemy and misses, it **returns to the user's hand** at the _end_ of the round. However, it will _not_ return if you roll _double ones_ on your hit check or if the boomerang hits the enemy.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07961))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07961))_
+
+> When this weapon is thrown at an enemy and misses, it **returns to the user's hand** at the _end_ of the round. However, it will _not_ return if you roll _double ones_ on your hit check or if the boomerang hits the enemy.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07962))_
 
 > The boomerang _cannot_ be used if there's not enough _space_ for the boomerang to follow an arc. You should also consider carefully before using it when there are allies nearby.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07962))_

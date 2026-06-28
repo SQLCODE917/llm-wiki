@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-pooka-edf70ac6@706c4530e109e225fa4672b3d203d147
+projection_coverage: section-sword-world-rpg-complete-edition-section-pooka-edf70ac6@489128f77c2a1bde0b01625d462ab2f5
 ---
 
 # **[ Pooka ]**
@@ -31,11 +31,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Fairies are sometimes seen where these two worlds meet. Just as humans wander into the fairy world, there are also fairies who wander from the fairy world into the material world. Fairies take the form of beautiful elf women, often mostly naked or clad in thin silk garments. They are about the same height as elves, but the most prominent difference between them and elves is the beautiful wings that grow from their backs. These wings are very thin but strong, allowing them to fly, albeit at a slo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04963))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04963))_
+
+> Fairies are sometimes seen where these two worlds meet. Just as humans wander into the fairy world, there are also fairies who wander from the fairy world into the material world. Fairies take the form of beautiful elf women, often mostly naked or clad in thin silk garments. They are about the same height as elves, but the most prominent difference between them and elves is the beautiful wings that grow from their backs. These wings are very thin but strong, allowing them to fly, albeit at a slo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04966))_
 
 > Habitat=Forests Languages=Fairy, silent spirit, regional Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04966))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04967))_
 
 > While transformed, they can use all of the animal's physical abilities and can also speak.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04967))_

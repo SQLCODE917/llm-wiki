@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-books-related-to-sword-world-rpg-da321184@53446bef8f60b5bb2c390fd5a3b4d6e0
+projection_coverage: section-sword-world-rpg-complete-edition-section-books-related-to-sword-world-rpg-da321184@d35c5cc6bcd6f0950e5abc0f3fc4a9d4
 ---
 
 # Books Related to Sword World RPG
@@ -60,8 +60,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00126))_
+
 > Although the details of monsters and magical items listed in individual scenarios may differ from the rules in this book, when using them, please play with the details as described in the scenario, with the exception of item prices.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00126))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00151))_
 
 > However, it is in accordance with the _old_ version of the rules mentioned above. In this book, some rules have been revised and some tables have been slightly changed. Therefore, it's advisable to make some modifications when using this. For example, you can copy the revised tables and paste them over the old ones.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00151))_

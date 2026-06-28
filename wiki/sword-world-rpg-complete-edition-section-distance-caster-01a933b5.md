@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-distance-caster-01a933b5@10f4dc715576d72a75c4da5d57fb55ab
+projection_coverage: section-sword-world-rpg-complete-edition-section-distance-caster-01a933b5@8dc11bcdc4b0d24f6a8c098d1a2c98e2
 ---
 
 # Distance=Caster
@@ -26,11 +26,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01802))_
+
 > Area=A space 1 meter high and wide and 20 meters long
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01802))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01803))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01803))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01804))_
 
 > Effect=Emits strike power 20 lightning Type=Damage (Electric-type) Expansion=Final score, area length (see description), damage certainty Resist=Reduced effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01804))_

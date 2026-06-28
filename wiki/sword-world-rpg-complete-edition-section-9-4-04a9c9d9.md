@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-9-4-04a9c9d9@ef9420a28d76c4ecd49e2e8b6f46a12a
+projection_coverage: section-sword-world-rpg-complete-edition-section-9-4-04a9c9d9@1af80b51b7c872b30cd074a69dfe7b4a
 ---
 
 # **9.4**
@@ -37,26 +37,43 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: them the difficulty. Players will probably think it's the same difficulty as before. Then, after it becomes clear that their success roll was a failure, it'll turn out that the difficulty was actually high. Modifiers are applied to the final score of a success roll. Therefore, the greater the negative number, the more difficult it is.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03827, source-range-870a16bc-03830))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03827, source-range-870a16bc-03830))_
+
+> them the difficulty. Players will probably think it's the same difficulty as before. Then, after it becomes clear that their success roll was a failure, it'll turn out that the difficulty was actually high. Modifiers are applied to the final score of a success roll. Therefore, the greater the negative number, the more difficult it is.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03829))_
 
 > Of course, even if that's the case, stay true to the roll of your dice.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03829))_
 
-> Context: Modifiers are applied to the final score of a success roll. Therefore, the greater the negative number, the more difficult it is.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03830))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03830))_
+
+> Modifiers are applied to the final score of a success roll. Therefore, the greater the negative number, the more difficult it is.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03831))_
 
 > Of course, game masters may set other modifiers (such as -3) at their discretion.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03831))_
 
-> Context: Of course, game masters may set other modifiers (such as -3) at their discretion. If there are conditions that make the action easier (such as having tools available to assist), you can also give it a positive modifier.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03831))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03831))_
+
+> Of course, game masters may set other modifiers (such as -3) at their discretion. If there are conditions that make the action easier (such as having tools available to assist), you can also give it a positive modifier.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03832))_
 
 > **Table 9-2: Success Roll Modifiers**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03832))_
 
-> Context: **Table 9-2: Success Roll Modifiers**
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03832))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03832))_
+
+> **Table 9-2: Success Roll Modifiers**
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03833))_
 
 | Extremely difcult situation | -4 |
 | --- | --- |
@@ -74,4 +91,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03832))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03833))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-suffocate-djinn-wind-spirit-0aaf1f12@d85c121c64409f1a705ea22b05744a6b
+projection_coverage: section-sword-world-rpg-complete-edition-section-suffocate-djinn-wind-spirit-0aaf1f12@c3b9734a19347793c16b4612c0c08220
 ---
 
 # **[ Suffocate ] (Djinn/Wind Spirit)**
@@ -27,14 +27,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02709))_
+
 > Base Mental Power Cost=40 Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02709))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02710))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02710))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02711))_
 
 > Duration=18 rounds or until the target dies Effect=Suffocate the target
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02711))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02712))_
 
 > Type=Target score Expansion=Final score, duration Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02712))_

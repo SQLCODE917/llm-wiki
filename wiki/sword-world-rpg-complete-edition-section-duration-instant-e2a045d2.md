@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-duration-instant-e2a045d2@39d5fa297560a30fa7d7d4e15685d2c9
+projection_coverage: section-sword-world-rpg-complete-edition-section-duration-instant-e2a045d2@effc86daba3a25830d8d499513a74961
 ---
 
 # Duration=Instant
@@ -28,14 +28,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell emits a light from your hands that is harmful to undead. As a result, you can deal damage to undead within 10 meters of the caster. Its strike power is 20.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02921))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02921))_
+
+> This spell emits a light from your hands that is harmful to undead. As a result, you can deal damage to undead within 10 meters of the caster. Its strike power is 20.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02919))_
 
 > Effect=Emits holy light, dealing strike power 20 damage to undead within range Type=Damage (Special) Counters (Overpowers): _Shade_ , _Spirit Wall: Shade_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02919))_
 
-> Context: This spell emits a light from your hands that is harmful to undead. As a result, you can deal damage to undead within 10 meters of the caster. Its strike power is 20.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02921))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02921))_
+
+> This spell emits a light from your hands that is harmful to undead. As a result, you can deal damage to undead within 10 meters of the caster. Its strike power is 20.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02920))_
 
 > Expansion=Final score, area, damage certainty Resist=Reduced effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02920))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-maximum-range-1b669409@0876bfbf49c05329ef401521e33d8ff4
+projection_coverage: section-sword-world-rpg-complete-edition-section-maximum-range-1b669409@6bb2363129b33c6cf9874c49bbe6e9b3
 ---
 
 # **Maximum Range**
@@ -20,8 +20,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
+
 > **Table 16-4 Maximum Rang**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
 | **Table 16-4 Maximum Ranges** |
 | --- |
@@ -77,4 +84,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_

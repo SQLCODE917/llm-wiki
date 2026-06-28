@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-many-2b92df9a@98bff092d896a132cd991032b906ff4d
+projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-many-2b92df9a@0dc0c36b878a915238db3e1ba58aa180
 ---
 
 # Enchanter=Many
@@ -20,11 +20,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07411))_
+
 > Form=Silver ring in the shape of a bird's wings
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07411))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07412))_
 
 > Base Trade Price=72,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07412))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07413))_
 
 > Powers=+6 to agility when worn (agility bonus +1)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07413))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-6cc4215f@16765055ebad176073d97bf84f63948e
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-6cc4215f@80408e3ec99601810d9feb471076f562
 ---
 
 # **5.1**
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. For example, when you cast the ancient magic _Light_
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01374))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01374))_
+
+> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. For example, when you cast the ancient magic _Light_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01372))_
 
 | Expansion<br>Rate | Area Expansion<br>Length | Volume Expansion<br>Length |
 | --- | --- | --- |
@@ -49,10 +54,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01374))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01372))_
 
-> Context: The summoned familiar and the sorcerer are always in mental contact, so they can communicate in a way similar to telepathy and can also share sensory organs. The caster can use their familiar's sensory organs to see and hear, and vice versa. Also, when you give a command to your familiar, the familiar will try to execute it, but there are natural limits to what it can actually do depending on the familiar's physical abilities. Abilities of each familiar are listed on the table, but you can find 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01757, source-range-870a16bc-01761))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01757, source-range-870a16bc-01761))_
+
+> The summoned familiar and the sorcerer are always in mental contact, so they can communicate in a way similar to telepathy and can also share sensory organs. The caster can use their familiar's sensory organs to see and hear, and vice versa. Also, when you give a command to your familiar, the familiar will try to execute it, but there are natural limits to what it can actually do depending on the familiar's physical abilities. Abilities of each familiar are listed on the table, but you can find
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01760))_
 
 | Animal Name | Life Points | Mental Points | Abilities |
 | --- | --- | --- | --- |
@@ -76,7 +85,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01757, 
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01760))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02005))_
 
 | Target's<br>Agility | Evasion Speed (Points)<br>Penalty |
 | --- | --- |
@@ -100,7 +112,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01760))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02005))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
 
 | Target's<br>Agility | Evasion Speed (Points)<br>Bonus |
 | --- | --- |
@@ -124,7 +139,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02005))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_
 
 | Final Score | Time to regain memories |
 | --- | --- |
@@ -148,4 +166,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-f9ffff62@38137cc6cd2dc0ef4835854db80047cd
+projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-f9ffff62@597c9087b894b7e288a88569cd511eae
 ---
 
 # **(Equipment restriction)**
@@ -24,17 +24,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Even if a thief falls from a high place, they can reduce the damage by being skillful at taking a defensive tumble.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03299))_
+### Technical atom 1
 
-> Context: Also, it is of course illegal to use this skill to commit theft, and if caught, punishment awaits.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03300))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03299))_
+
+> Even if a thief falls from a high place, they can reduce the damage by being skillful at taking a defensive tumble.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03300))_
+
+> Also, it is of course illegal to use this skill to commit theft, and if caught, punishment awaits.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03301))_
 
 > Some of these abilities cannot be used unless you're wearing light equipment.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03301))_
 
-> Context: The thief skill includes the following abilities. Some of these abilities cannot be used unless you're wearing light equipment. If you want to make full use of your thief skill, the required strength of your equipment (weapons, shields,
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03301))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03301))_
+
+> The thief skill includes the following abilities. Some of these abilities cannot be used unless you're wearing light equipment. If you want to make full use of your thief skill, the required strength of your equipment (weapons, shields,
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03303))_
 
 > These can be attempted again if the baseline score for a success roll increases (that is, if the skill level increases or the ability bonus of the relevant ability score increases).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03303))_

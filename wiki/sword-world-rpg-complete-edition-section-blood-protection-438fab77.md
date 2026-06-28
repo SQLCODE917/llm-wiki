@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-blood-protection-438fab77@d6e1f404ab4f17e82de744366853d95f
+projection_coverage: section-sword-world-rpg-complete-edition-section-blood-protection-438fab77@d5a14e835fdf669b28d1c4e6169a1966
 ---
 
 # **[ Blood Protection ]**
@@ -37,29 +37,56 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04301))_
+
 > Base Mental Power Cost=24
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04301))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04302))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04302))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04303))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04303))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04304))_
 
 > Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04304))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04305))_
 
 > Effect=Gives magical protection in exchange for life force
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04305))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04306))_
 
 > Type=Target score, curse
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04306))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04307))_
 
 > Expansion=Final score, targets, effect (see description)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04307))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04308))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04308))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04309))_
 
 > When using this spell, the caster must pour their own blood on another person.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04309))_

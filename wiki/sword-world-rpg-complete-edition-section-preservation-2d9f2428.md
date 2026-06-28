@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-preservation-2d9f2428@aef1d9b116cfd9a6044f860ae0d64f89
+projection_coverage: section-sword-world-rpg-complete-edition-section-preservation-2d9f2428@8a9162085cb15cc5d50dc7a72b169d79
 ---
 
 # **[ Preservation ]**
@@ -27,17 +27,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If a haunt is extinguished by this spell, its soul will be completely annihilated, so even if you use the spells _Resurrection_ and _Save Soul_ , you will no longer be able to bring it back to how it was before it became a haunt.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02969))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02969))_
+
+> If a haunt is extinguished by this spell, its soul will be completely annihilated, so even if you use the spells _Resurrection_ and _Save Soul_ , you will no longer be able to bring it back to how it was before it became a haunt.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02971))_
 
 > Base Mental Power Cost=24
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02971))_
 
-> Context: If a haunt is extinguished by this spell, its soul will be completely annihilated, so even if you use the spells _Resurrection_ and _Save Soul_ , you will no longer be able to bring it back to how it was before it became a haunt.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02969))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02969))_
+
+> If a haunt is extinguished by this spell, its soul will be completely annihilated, so even if you use the spells _Resurrection_ and _Save Soul_ , you will no longer be able to bring it back to how it was before it became a haunt.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02972))_
 
 > Distance=Touch Area=One object Duration=Permanent Effect=Protect objects from decay Type=Target score, Non-removable Counters (Overpowers): _Rot_ Countered (Overpowered) By: _Rot_ Expansion=Final score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02972))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02974))_
 
 > counter spell to the dark magic _Rot_ , and if cast within the duration of _Rot_ , it can restore things that have decayed back to their original state.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02974))_

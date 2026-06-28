@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-stone-skin-565344a7@b27bf19ea5d6f3663e0dba819d528fde
+projection_coverage: section-sword-world-rpg-complete-edition-section-stone-skin-565344a7@b2f6603324ca94e978ab02a9159a7ebf
 ---
 
 # **[ Stone Skin ]**
@@ -25,8 +25,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04684))_
+
 > Symptoms=The surface of the body gradually becomes hard like stone
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04684))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04685))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04685))_

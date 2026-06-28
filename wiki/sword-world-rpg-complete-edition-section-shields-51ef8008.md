@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-shields-51ef8008@c0a77ba930a07cc5e4207cf834e7408a
+projection_coverage: section-sword-world-rpg-complete-edition-section-shields-51ef8008@203ed0c7dda63daae5ab16169a44df5b
 ---
 
 # **Shields**
@@ -24,14 +24,23 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: are several types, but choose which one you think is appropriate (Table 1-9: Armor).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
+
+> are several types, but choose which one you think is appropriate (Table 1-9: Armor).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00442))_
 
 > If a character's strength is 13 or greater, a large shield can be chosen.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00442))_
 
-> Context: This is a price list for magical shields with enchantments. For shields with +2 or higher enchantment, small shields tend to be more expensive than large shields due to differences in demand. For the same reason, high-quality large shields +1/+2 are more expensive than large shields +2/+3. Shields requiring strength of 13 cannot be used by most adventurers.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))_
+
+> This is a price list for magical shields with enchantments. For shields with +2 or higher enchantment, small shields tend to be more expensive than large shields due to differences in demand. For the same reason, high-quality large shields +1/+2 are more expensive than large shields +2/+3. Shields requiring strength of 13 cannot be used by most adventurers.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07208))_
 
 | Shield | Price<br>(Gamels) |
 | --- | --- |
@@ -63,4 +72,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07208))_

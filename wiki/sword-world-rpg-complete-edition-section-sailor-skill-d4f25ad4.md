@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sailor-skill-d4f25ad4@8e3a1143dc023be9a085901cbb19656d
+projection_coverage: section-sword-world-rpg-complete-edition-section-sailor-skill-d4f25ad4@917eb572328f3513baf1a5e546faa1ad
 ---
 
 # **Sailor Skill**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-sailor-ski
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08377))_
 
 | **Sailor Skill Abilities Table** |
 | --- |
@@ -36,7 +40,10 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08377))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08383))_
 
 | Ability | Relevant AbilityScore | Equipment Restrictions | Retryinga success roll on the same target |
 | --- | --- | --- | --- |
@@ -64,4 +71,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08377))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08383))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-experience-points-22e20e5f@2769fbeeb97ecf599d21531929b85593
+projection_coverage: section-sword-world-rpg-complete-edition-section-experience-points-22e20e5f@d1f2447df8cc89e0af61c01a860e336e
 ---
 
 # **Experience Points**
@@ -20,6 +20,10 @@ From [[sword-world-rpg-complete-edition]].
 - **Character growth** is done using these experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03727))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_
 
 | Attained Level | <br>Sorcerer | Shaman<br>Dragon Priest | Fighter<br>Tief<br>Priest<br>Dark Priest | Ranger<br>Sage<br>Bard | Reduction for<br>Acquiring<br>Sorcerer &<br>Sage at the<br>Same Time |
 | --- | --- | --- | --- | --- | --- |
@@ -53,4 +57,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_

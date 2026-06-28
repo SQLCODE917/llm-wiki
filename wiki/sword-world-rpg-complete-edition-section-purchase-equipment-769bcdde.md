@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-purchase-equipment-769bcdde@94c0030d2901da1ec4faa3ac0530d25e
+projection_coverage: section-sword-world-rpg-complete-edition-section-purchase-equipment-769bcdde@1a846429d7371847c84eacfd5999de7a
 ---
 
 # **[** ⑮ **Purchase Equipment]**
@@ -21,8 +21,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Use your money to purchase equipment. Write down the items you purchased then rewrite your money, reducing by the amount of money you spent (Table 1-11: Equipment).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00541))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00541))_
+
+> Use your money to purchase equipment. Write down the items you purchased then rewrite your money, reducing by the amount of money you spent (Table 1-11: Equipment).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00542))_
 
 > When you purchase weapons, shields, and armor, write them in the appropriate fields (Table 1-8: Weapons, Table 1-9: Armor, and Table 1-10: Shields).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00542))_

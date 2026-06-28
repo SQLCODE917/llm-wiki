@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sylph-wind-spirit-541f7e56@78d30f678904ce17ab6ecaa9645c85bf
+projection_coverage: section-sword-world-rpg-complete-edition-section-sylph-wind-spirit-541f7e56@e9dfff9a7ba10d965d5ad128329700b2
 ---
 
 # (Sylph/Wind Spirit)
@@ -24,11 +24,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02605))_
+
 > Type=Target score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02605))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02606))_
 
 > Expansion=Final score, duration, distance, target volume Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02606))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02607))_
 
 > By borrowing the power of the wind spirit, you can create a wall of surging storms.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02607))_

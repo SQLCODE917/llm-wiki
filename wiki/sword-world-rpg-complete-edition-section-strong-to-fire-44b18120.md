@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-strong-to-fire-44b18120@d001eefd803ca4e4e355f674e3b2b824
+projection_coverage: section-sword-world-rpg-complete-edition-section-strong-to-fire-44b18120@28b0d8b91c9e79ff2f1d2a763eca8913
 ---
 
 # 《 **Strong to Fire** 》
@@ -23,5 +23,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06885))_
+
 > Even if one of these monsters has the ability _normal weapon immunity_ , it can still be wounded by a weapon that had _Fire Weapon_ cast on it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06885))_

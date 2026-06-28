@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-jack-o-lantern-1a53c110@604c4572ef7dd62ae50fba65245f26f3
+projection_coverage: section-sword-world-rpg-complete-edition-section-jack-o-lantern-1a53c110@c6d49f43cdb11966e1a8035121f07827
 ---
 
 # **[ Jack-O-Lantern ]**
@@ -25,14 +25,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: A phantom has lost all of the skills it had previously. After _possessing_ , it can only use the abilities of that body.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06217))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06217))_
+
+> A phantom has lost all of the skills it had previously. After _possessing_ , it can only use the abilities of that body.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06220))_
 
 > Monster Level=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06220))_
 
-> Context: Not affected by poison and illness Sleepless Damage from healing magic Habitat=Above swamps or ponds Languages=Regional Perception=Pseudo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06223))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06223))_
+
+> Not affected by poison and illness Sleepless Damage from healing magic Habitat=Above swamps or ponds Languages=Regional Perception=Pseudo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06221))_
 
 > Rarity=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06221))_

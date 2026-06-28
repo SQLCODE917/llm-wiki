@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-command-golem-ac91f38c@c783a88f8645c024e6f5e4e55c0d4d61
+projection_coverage: section-sword-world-rpg-complete-edition-section-command-golem-ac91f38c@e51925038ee004d1b1004eab58f8c6b7
 ---
 
 # **[ Command Golem ]**
@@ -25,20 +25,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02147))_
+
 > Base Mental Power Cost=45
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02147))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02148))_
 
 > Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02148))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02149))_
 
 > Area=1 golem
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02149))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02150))_
 
 > Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02150))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02151))_
 
 > Effect=You can control and give commands to golems that have not received commands yet
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02151))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02152))_
 
 > Type=Target score, non-removable Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02152))_

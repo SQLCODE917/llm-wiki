@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-9-2-should-you-use-a-target-score-check-or-a-difficulty-check-b7e6d343@c72bd0e3bc4618607200642ede7f6528
+projection_coverage: section-sword-world-rpg-complete-edition-section-9-2-should-you-use-a-target-score-check-or-a-difficulty-check-b7e6d343@223f3760ccb696f8101fe75f58a7dba7
 ---
 
 # **9.2 Should You Use a Target Score Check or a Difficulty Check?**
@@ -28,8 +28,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+
+> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03795))_
 
 | Target Score | Difculty | Standard |
 | --- | --- | --- |
@@ -79,16 +84,23 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03795))_
 
-> Context: There are two types of success rolls: those that use a target score for the check and those that use a difficulty for the check. The game master must decide which of these should be used to make the success roll. An example of something where success or failure cannot be determined is finding a trap. When a trap is not found, a character has no way of knowing whether there really are no traps or if it's because they couldn't find
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03799, source-range-870a16bc-03802))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03799, source-range-870a16bc-03802))_
+
+> There are two types of success rolls: those that use a target score for the check and those that use a difficulty for the check. The game master must decide which of these should be used to make the success roll. An example of something where success or failure cannot be determined is finding a trap. When a trap is not found, a character has no way of knowing whether there really are no traps or if it's because they couldn't find
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03800))_
 
 > The standard for deciding is _whether the character can tell if the action succeeded or failed_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03800))_
 
-> Context: The standard for deciding is _whether the character can tell if the action succeeded or failed_ . For example, if you want to jump over a cliff, success or An example of something where success or failure cannot be determined is finding a trap. When a trap is not found, a character has no way of knowing whether there really are no traps or if it's because they couldn't find
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03800, source-range-870a16bc-03802))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03800, source-range-870a16bc-03802))_
+
+> The standard for deciding is _whether the character can tell if the action succeeded or failed_ . For example, if you want to jump over a cliff, success or An example of something where success or failure cannot be determined is finding a trap. When a trap is not found, a character has no way of knowing whether there really are no traps or if it's because they couldn't find
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03801))_
 
 > If you succeed, you can jump over it, and if you fail, you will fall.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03801))_

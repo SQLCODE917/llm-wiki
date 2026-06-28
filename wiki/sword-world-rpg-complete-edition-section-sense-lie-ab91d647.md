@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sense-lie-ab91d647@c5ca84cd28803fa6b14e62bea7d54c5f
+projection_coverage: section-sword-world-rpg-complete-edition-section-sense-lie-ab91d647@23041aa8353cea010e1268ef2849d892
 ---
 
 # **[ Sense Lie ]**
@@ -21,17 +21,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01910))_
+
 > Base Mental Power Cost=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01910))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01911))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01911))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01912))_
 
 > Area=Area that the caster can hear Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01912))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01913))_
 
 > Effect=Can discover lies Type=Detection Expansion=Duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01913))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01914))_
 
 > You can only know that if it's a lie, it's a lie, and if it's an exaggeration, it's an exaggeration.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01914))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-suppress-elemental-2c9f01fd@1053a4cadedd3c15dbd4a6d573b86ce7
+projection_coverage: section-sword-world-rpg-complete-edition-section-suppress-elemental-2c9f01fd@7a57a23989f2c43972fded732e23276d
 ---
 
 # **[ Suppress Elemental ]**
@@ -28,32 +28,54 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: stone wall is in a passage, you can't see beyond it, but you're completely free to pass through it (if you try). However, this result will not destroy the illusion of the stone wall. As long as the caster maintains focus, they can freely change the illusion, but if they lose focus, only static or simple repeating illusions can remain. The caster can freely cancel the spell's effect, but a _Dispel Magic_ spell is required if someone else attempts to remove it.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01890))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01890))_
+
+> stone wall is in a passage, you can't see beyond it, but you're completely free to pass through it (if you try). However, this result will not destroy the illusion of the stone wall. As long as the caster maintains focus, they can freely change the illusion, but if they lose focus, only static or simple repeating illusions can remain. The caster can freely cancel the spell's effect, but a _Dispel Magic_ spell is required if someone else attempts to remove it.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01892))_
 
 > Base Mental Power Cost=20
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01892))_
 
-> Context: stone wall is in a passage, you can't see beyond it, but you're completely free to pass through it (if you try). However, this result will not destroy the illusion of the stone wall. As long as the caster maintains focus, they can freely change the illusion, but if they lose focus, only static or simple repeating illusions can remain. The caster can freely cancel the spell's effect, but a _Dispel Magic_ spell is required if someone else attempts to remove it.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01890))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01890))_
+
+> stone wall is in a passage, you can't see beyond it, but you're completely free to pass through it (if you try). However, this result will not destroy the illusion of the stone wall. As long as the caster maintains focus, they can freely change the illusion, but if they lose focus, only static or simple repeating illusions can remain. The caster can freely cancel the spell's effect, but a _Dispel Magic_ spell is required if someone else attempts to remove it.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01893))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01893))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01894))_
 
 > Area=A space with a 5 meter radius Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01894))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01895))_
 
 > Effect=Negate any one of the four major spirit
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01895))_
 
-> Context: This spell has the effect of negating any one of the four major spirit powers of earth, water, fire, or wind. However, only one kind of spirit power can be erased at a time. This spell cannot be expanded to block two or more kinds of spirit power from working at the same time. As a result of this, spirit magic that depends on that spirit power will no longer be usable. Also, if a spell effect is present due to the negated spirit power (either gnome, undine, salamander, or sylph) within the spell
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01898))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01898))_
+
+> This spell has the effect of negating any one of the four major spirit powers of earth, water, fire, or wind. However, only one kind of spirit power can be erased at a time. This spell cannot be expanded to block two or more kinds of spirit power from working at the same time. As a result of this, spirit magic that depends on that spirit power will no longer be usable. Also, if a spell effect is present due to the negated spirit power (either gnome, undine, salamander, or sylph) within the spell
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01896))_
 
 > powers Type=Target score Expansion=Final score, duration, distance, area
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01896))_
 
-> Context: This spell has the effect of negating any one of the four major spirit powers of earth, water, fire, or wind. However, only one kind of spirit power can be erased at a time. This spell cannot be expanded to block two or more kinds of spirit power from working at the same time. As a result of this, spirit magic that depends on that spirit power will no longer be usable. Also, if a spell effect is present due to the negated spirit power (either gnome, undine, salamander, or sylph) within the spell
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01898))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01898))_
+
+> This spell has the effect of negating any one of the four major spirit powers of earth, water, fire, or wind. However, only one kind of spirit power can be erased at a time. This spell cannot be expanded to block two or more kinds of spirit power from working at the same time. As a result of this, spirit magic that depends on that spirit power will no longer be usable. Also, if a spell effect is present due to the negated spirit power (either gnome, undine, salamander, or sylph) within the spell
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01897))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01897))_

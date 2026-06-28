@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-1-5cbe01fd@abf6da38092857d47d82faefff3c17db
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-1-5cbe01fd@df234b6fdc6a7fc01c397f4aa794cef0
 ---
 
 # **4.1**
@@ -25,5 +25,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00831))_
+
 > Characters may not use weapons or armor with a required strength greater than their own strength.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00831))_

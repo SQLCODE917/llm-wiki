@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mad-spirit-of-life-f1924047@30f350a47de009a947d282cbfee210de
+projection_coverage: section-sword-world-rpg-complete-edition-section-mad-spirit-of-life-f1924047@0592da8e70334f11720f8bd6a285d3cd
 ---
 
 # **[ Mad Spirit of Life ]**
@@ -24,8 +24,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05212))_
+
 > Monster Level=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05212))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05213))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05213))_

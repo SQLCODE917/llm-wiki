@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-npc-and-monster-action-announcements-961f4dc4@6bc2a612d55068611fe94d3a6bc35ddf
+projection_coverage: section-sword-world-rpg-complete-edition-section-npc-and-monster-action-announcements-961f4dc4@049736f1cedc4ed41b53f4c50a0783c3
 ---
 
 # **NPC and Monster Action Announcements**
@@ -31,20 +31,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When NPCs, monsters, etc. announce their actions, it’s done by the game master who manages them. Specific action announcements may not be made at this time.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00711))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00711))_
+
+> When NPCs, monsters, etc. announce their actions, it’s done by the game master who manages them. Specific action announcements may not be made at this time.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00712))_
 
 > If a settlement cannot be reached, the game master gets to announce their group's actions first (NPCs and monsters) and then the players follow.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00712))_
 
-> Context: For example, simply say, _I am about to open my big mouth_ . They won't know if it’s opening its mouth to bite, or perhaps even breathe fire.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00713))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00713))_
+
+> For example, simply say, _I am about to open my big mouth_ . They won't know if it’s opening its mouth to bite, or perhaps even breathe fire.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00715))_
 
 > You may only declare, _I'm preparing to cast a spell_ , and not give out the specific name of the spell.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00715))_
 
-> Context: You may only declare, _I'm preparing to cast a spell_ , and not give out the specific name of the spell. This is the difference in position between the players and the game master. The game master, as the person who manages the game, must know the actions of all the characters and monsters that appear. However, the players should only act from their _characters’_ point of view. So, if a _character_ cannot predict something, the _player_ cannot know it either. When you see it for the first time, 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00715))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00715))_
+
+> You may only declare, _I'm preparing to cast a spell_ , and not give out the specific name of the spell. This is the difference in position between the players and the game master. The game master, as the person who manages the game, must know the actions of all the characters and monsters that appear. However, the players should only act from their _characters’_ point of view. So, if a _character_ cannot predict something, the _player_ cannot know it either. When you see it for the first time,
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00716))_
 
 > If it's something the character _should_ know, the game master should tell you when they announce the action.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00716))_

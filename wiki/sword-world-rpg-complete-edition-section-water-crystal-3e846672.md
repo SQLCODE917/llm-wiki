@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-water-crystal-3e846672@6bdf29639d6db5da85823386cfe6578b
+projection_coverage: section-sword-world-rpg-complete-edition-section-water-crystal-3e846672@cb4f7fa62b2b699f1a02e75ee230f96b
 ---
 
 # **Water Crystal**
@@ -23,8 +23,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When thrown it deals strike power 20 damage within its area of effect, equivalent to _Blizzard_ . Its magic power is 5. Crystal breaks after one use.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07309))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07309))_
+
+> When thrown it deals strike power 20 damage within its area of effect, equivalent to _Blizzard_ . Its magic power is 5. Crystal breaks after one use.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07311))_
 
 > Rarity=13 Enchanter=Many Form=Spherical polished blue crystal Base Trade Price=Remaining absorption points x 480 gamels Powers=Absorbs 10 points of fire damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07311))_

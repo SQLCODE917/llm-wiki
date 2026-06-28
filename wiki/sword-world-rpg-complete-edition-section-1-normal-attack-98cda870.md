@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-normal-attack-98cda870@9d6dc5ea6c270f53cf72cce326c83235
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-normal-attack-98cda870@66862a7473f8c58ec5730ba734ec32fb
 ---
 
 # **1. Normal Attack**
@@ -21,8 +21,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Actions that characters in a grapple can take are limited to the following.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07811))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07811))_
+
+> Actions that characters in a grapple can take are limited to the following.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07813))_
 
 > If a monster has fangs, it can also bite.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07813))_

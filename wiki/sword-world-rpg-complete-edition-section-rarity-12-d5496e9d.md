@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-12-d5496e9d@5533cd011a1219b4be3a147463dde89f
+projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-12-d5496e9d@95b907784b694658810c5aa74b9ef7d8
 ---
 
 # Rarity=12
@@ -21,11 +21,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07609))_
+
 > Enchanter=Faye, “The One Who Wears the Wind”
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07609))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07610))_
 
 > Form=Mantle
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07610))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07611))_
 
 > Base Trade Price=400,000 gamels Powers=You’ll be able to fly
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07611))_

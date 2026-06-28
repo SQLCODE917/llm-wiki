@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-11-54e37223@d9d7ea5770cd2763cc2ee54ab9b59d5c
+projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-11-54e37223@e6119cd4ff5f36b4ad27f07568cfa9ed
 ---
 
 # Rarity=11
@@ -23,8 +23,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04759))_
+
 > Base Trade Value=360 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04759))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04760))_
 
 > It's not useful for treating illness, but is effective when accidentally taking other poisons, giving you a +2 bonus to resistance rolls.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04760))_

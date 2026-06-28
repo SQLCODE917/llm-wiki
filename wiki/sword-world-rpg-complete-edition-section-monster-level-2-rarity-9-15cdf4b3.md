@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-2-rarity-9-15cdf4b3@8778b91753b0c3261d9075833f67e041
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-2-rarity-9-15cdf4b3@9fe6cb0afea550915dcc74e3d384730c
 ---
 
 # Monster Level=2 Rarity=9
@@ -25,5 +25,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05024))_
+
 > Special Abilities=2nd level spirit magic (Magic Intensity/Magic Power=11/4) Habitat=Mountains, highlands Languages=Impish, silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05024))_

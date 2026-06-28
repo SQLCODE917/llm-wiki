@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-return@4b0f1068c9c1dd088aa04e247a722dee
+projection_coverage: topic-javascriptallonge-return@7262e979a1222b6806e1695f391cc3b1
 ---
 
 # Return
@@ -14,8 +14,6 @@ projection_coverage: topic-javascriptallonge-return@4b0f1068c9c1dd088aa04e247a72
 What [[javascriptallonge]] covers about return:
 
 ## Statements
-
-_Showing 14 of 15 statements selected for this topic._
 
 - first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. _(javascriptallonge.pdf (source-range-83ecb080-02501))_
 - It works, but as we’ve just seen, a function that returns an iterable can often be written much more simply as a generator, rather than a function that returns an iterable object:[93] _(javascriptallonge.pdf (source-range-83ecb080-02689))_
@@ -31,10 +29,9 @@ _Showing 14 of 15 statements selected for this topic._
 - Invoking only("you") returns an iterator that we can call with .next(), and it yields "you". _(javascriptallonge.pdf (source-range-83ecb080-02604))_
 - The body of our generator runs until it returns, ends, or encounters the next yield statement. _(javascriptallonge.pdf (source-range-83ecb080-02638))_
 - We’ve writing a function that returns an iterator, but we used a generator to do it. _(javascriptallonge.pdf (source-range-83ecb080-02681))_
+- It maps to the squares of all 30 numbers, but our code for mapping an iteration returns an iterable that can iterate over the squares of our numbers, not an array or stack of the squares. _(javascriptallonge.pdf (source-range-83ecb080-02788))_
 
 ## Technical atoms
-
-_Showing 6 of 15 technical atoms selected for this topic._
 
 ### Technical atom 1
 
@@ -96,6 +93,113 @@ _Showing 6 of 15 technical atoms selected for this topic._
 
 > (() => { **return** 1 + 1; 2 + 2 })() _//=> 2_
 
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00845))_
+
+> The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00846))_
+
+> **const** mapWith = (fn) => (array) => map(array, fn);
+
+### Technical atom 8
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00845))_
+
+> The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00847))_
+
+> **const** squareAll = mapWith((n) => n * n);
+
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00845))_
+
+> The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00848))_
+
+> squareAll([1, 2, 3]) _//=> [1, 4, 9]_
+
+### Technical atom 10
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01389))_
+
+> And to return to our first example, our version of length can be written as a fold:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01390))_
+
+> **const** length = (array) => foldWith((first, rest) => 1 + rest, 0, array);
+
+### Technical atom 11
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01389))_
+
+> And to return to our first example, our version of length can be written as a fold:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01391))_
+
+> length([1, 2, 3, 4, 5]) _//=> 5_
+
+### Technical atom 12
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02475))_
+
+> Many operations on ordered collections return another ordered collection. They do so by taking care to iterate over a result freshly every time we get an iterator for them. Consider this example for mapWith:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02476))_
+
+> **const** Evens = mapWith((x) => 2 * x, Numbers);
+
+### Technical atom 13
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02501))_
+
+> For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest]:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02502))_
+
+> **const** first = (iterable) => iterable[Symbol.iterator]().next().value; **const** rest = (iterable) => ({ [Symbol.iterator] () { **const** iterator = iterable[Symbol.iterator](); iterator.next(); **return** iterator; } });
+
+### Technical atom 14
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02593))_
+
+> 2. We don’t return values or output them to console.log. We “yield” values using the yield keyword.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02594))_
+
+> When we invoke the function, we get an iterator object back.
+
+### Technical atom 15
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02604))_
+
+> Invoking only("you") returns an iterator that we can call with .next(), and it yields "you". Invoking only more than once gives us fresh iterators each time:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02605))_
+
+> only("you").next() _//=>_ {"done": **false** , value: "you"} only("the lonely").next() _//=>_ {"done": **false** , value: "the lonely"}
+
+
+## Related pages
+
+- [[javascriptallonge-function]] - shared statements and technical atoms (6 shared statement(s), 9 shared atom(s))
+- [[javascriptallonge-argument]] - shared statements and technical atoms (3 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-mapwith]] - shared statements and technical atoms (1 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-iterator]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-length]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-element]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-iterable]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-expression]] - shared technical atoms (4 shared atom(s))
+- [[javascriptallonge-value]] - shared technical atoms (2 shared atom(s))
+- [[javascriptallonge-collection]] - shared technical atoms (1 shared atom(s))
+- [[javascriptallonge-javascript]] - shared technical atoms (1 shared atom(s))
+- [[javascriptallonge-rest]] - shared technical atoms (1 shared atom(s))
+- [[javascriptallonge-block]] - shared statements (2 shared statement(s))
+- [[javascriptallonge-code]] - shared statements (1 shared statement(s))
 
 ## Source
 

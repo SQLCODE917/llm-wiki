@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-1-action-announcements-291b4cab@be28cf756db689a8d318061e05103abd
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-1-action-announcements-291b4cab@10bcee32159e5bed5e40bbfff7a85951
 ---
 
 # 3.1 Action Announcements
@@ -51,32 +51,54 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> same group (e.g., a1, a2, a3 within group A) may be determined freely and can also be changed from round to round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00692))_
+### Technical atom 1
 
-> Context: Which of the two will make their action announcements first is determined based on _intelligence_ . The group with the _highest_ intelligence among all the characters (including monsters, etc.) participating in combat will announce their action _later_ . If _a2_ is the one with the highest intelligence between groups A and B as mentioned, then the announcements are made in the order of _B → A_ , regardless of the intelligence of the other characters. Those who announce their actions later- the o
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00700))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00692))_
+
+> same group (e.g., a1, a2, a3 within group A) may be determined freely and can also be changed from round to round.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00700))_
+
+> Which of the two will make their action announcements first is determined based on _intelligence_ . The group with the _highest_ intelligence among all the characters (including monsters, etc.) participating in combat will announce their action _later_ . If _a2_ is the one with the highest intelligence between groups A and B as mentioned, then the announcements are made in the order of _B → A_ , regardless of the intelligence of the other characters. Those who announce their actions later- the o
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00698))_
 
 > In an action announcement, you cannot declare something impossible.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00698))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00703))_
 
 > A player must be specific when announcing their action.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00703))_
 
-> Context: When NPCs, monsters, etc. announce their actions, it’s done by the game master who manages them. Specific action announcements may not be made at this time.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00711))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00711))_
+
+> When NPCs, monsters, etc. announce their actions, it’s done by the game master who manages them. Specific action announcements may not be made at this time.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00712))_
 
 > If a settlement cannot be reached, the game master gets to announce their group's actions first (NPCs and monsters) and then the players follow.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00712))_
 
-> Context: For example, simply say, _I am about to open my big mouth_ . They won't know if it’s opening its mouth to bite, or perhaps even breathe fire.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00713))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00713))_
+
+> For example, simply say, _I am about to open my big mouth_ . They won't know if it’s opening its mouth to bite, or perhaps even breathe fire.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00715))_
 
 > You may only declare, _I'm preparing to cast a spell_ , and not give out the specific name of the spell.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00715))_
 
-> Context: You may only declare, _I'm preparing to cast a spell_ , and not give out the specific name of the spell. This is the difference in position between the players and the game master. The game master, as the person who manages the game, must know the actions of all the characters and monsters that appear. However, the players should only act from their _characters’_ point of view. So, if a _character_ cannot predict something, the _player_ cannot know it either. When you see it for the first time, 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00715))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00715))_
+
+> You may only declare, _I'm preparing to cast a spell_ , and not give out the specific name of the spell. This is the difference in position between the players and the game master. The game master, as the person who manages the game, must know the actions of all the characters and monsters that appear. However, the players should only act from their _characters’_ point of view. So, if a _character_ cannot predict something, the _player_ cannot know it either. When you see it for the first time,
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00716))_
 
 > If it's something the character _should_ know, the game master should tell you when they announce the action.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00716))_

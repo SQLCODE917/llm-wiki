@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-purification-undine-water-spirit-77fbc6da@7d38b9da68c15696fc4d625314e3ba87
+projection_coverage: section-sword-world-rpg-complete-edition-section-purification-undine-water-spirit-77fbc6da@b7e5935e831921d77f5401a048fdeb76
 ---
 
 # **[ Purification ] (Undine/Water Spirit)**
@@ -24,20 +24,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02305))_
+
 > Base Mental Power Cost=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02305))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02306))_
 
 > Distance=10 meters Area=10 liters of water
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02306))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02307))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02307))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02308))_
 
 > Effect=Removes impurities from water and creates perfectly fresh water
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02308))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02310))_
 
 > Expansion=Final score, distance, target volume
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02310))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02311))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02311))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magic-armor-1-50e5adbe@6120e098ad15c5d0752bb14268952c30
+projection_coverage: section-sword-world-rpg-complete-edition-section-magic-armor-1-50e5adbe@bee7ad57648ff3d8ae583e974f54b8e2
 ---
 
 # 《 **Magic Armor (+1)** 》
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Here is a list of prices of magical metal armor with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))_
+
+> Here is a list of prices of magical metal armor with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07190))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -49,10 +54,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07190))_
 
-> Context: Here is a list of prices of magical metal armor with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+
+> Here is a list of prices of magical metal armor with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07202))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -84,4 +93,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07202))_

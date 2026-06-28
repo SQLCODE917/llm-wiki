@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-4-spirits-72f255cf@3e8a43e9e24bf36862455e7b6dc6d4a3
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-4-spirits-72f255cf@1a06855d94c4aa4f31464c707f9bbd0c
 ---
 
 # **13.2.4 Spirits**
@@ -35,23 +35,42 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05078))_
+
 > **[ Will-O-Wisp ]** Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05078))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05079))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05079))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05080))_
 
 > Agility=18 Movement Speed=20 (air) Number=Solo to several Frequency=Rare Intellect=Almost none Reaction=Neutral to violent Attack Points=Disintegrate: Always hits Strike Points=Strike power 10,
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05080))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05082))_
 
 > Evasion Points=12 (5) Defense Points=0 Life Points/Resistance=1/8 (1) Mental Points/Resistance=-/10 (3) Special Abilities=Releases energy and disintegrates
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05082))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05084))_
 
 > When they appear as mad spirits, there are two actions they can take.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05084))_
 
-> Context: The other type is one that collides directly with anything that comes into view. Will-o-wisps only target things that have a functioning mind. They will not target plants, minerals, vessels, etc. that do not have intelligence. They also will not attack low grade undead that do not have a mind. However, sleeping humans are subject to attack. Please make your judgment based on _whether it has a score called mental power (points)_ . Will-o-wisp attacks are always successful. When a Will-O-Wisp hits
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05085))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05085))_
+
+> The other type is one that collides directly with anything that comes into view. Will-o-wisps only target things that have a functioning mind. They will not target plants, minerals, vessels, etc. that do not have intelligence. They also will not attack low grade undead that do not have a mind. However, sleeping humans are subject to attack. Please make your judgment based on _whether it has a score called mental power (points)_ . Will-o-wisp attacks are always successful. When a Will-O-Wisp hits
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05087))_
 
 > If you strike a will-o-wisp with a melee weapon (it doesn't have to be silver or magical), you can destroy it, but the attacker will also suffer damage as if they were hit by the will-o-wisp.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05087))_

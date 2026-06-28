@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-projectile-range-extension-adfe5921@85d864ca41fd5b79ab848f49f115b167
+projection_coverage: section-sword-world-rpg-complete-edition-section-projectile-range-extension-adfe5921@69d34b5878a08ee0e9c5583d286a07a9
 ---
 
 # **Projectile Range Extension**
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07756))_
+
 > If you follow these optional rules, you can extend these even further.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07756))_

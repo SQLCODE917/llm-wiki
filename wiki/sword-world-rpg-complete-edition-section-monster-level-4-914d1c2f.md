@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-4-914d1c2f@2a9b7c64ba1f1ff4e8d4af7aa659d045
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-4-914d1c2f@07a79d9ffe0a07f430b5758ab293e39c
 ---
 
 # Monster Level=4
@@ -27,20 +27,35 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Rarity=12 Agility=14 Movement Speed=14 Number=One to several Frequency=Moderate
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06173))_
+### Technical atom 1
 
-> Context: Wights are undead that possess people and feed on the energy of others. Normal weapons have no effect against this monster. To wound a wight, you need a silver or magical weapon. A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. If a wight's attack hits, your life force will suffer damage as well as your mental power. The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4. 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06177))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06173))_
+
+> Rarity=12 Agility=14 Movement Speed=14 Number=One to several Frequency=Moderate
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06177))_
+
+> Wights are undead that possess people and feed on the energy of others. Normal weapons have no effect against this monster. To wound a wight, you need a silver or magical weapon. A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. If a wight's attack hits, your life force will suffer damage as well as your mental power. The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06176))_
 
 > Damage from healing magic Habitat=Ruins, graveyards Languages=Those previous Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06176))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06177))_
 
 > For this, you can only reduce the damage with your character's adventurer level.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06177))_
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 
 | Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
 | --- | --- | --- | --- | --- | --- |
@@ -56,7 +71,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_
 
 | Level 1-2 | It's no big deal. Just a small problem in a small village |
 | --- | --- |
@@ -82,4 +100,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_

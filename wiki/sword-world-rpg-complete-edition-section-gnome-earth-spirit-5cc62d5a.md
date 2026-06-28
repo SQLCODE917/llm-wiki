@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-gnome-earth-spirit-5cc62d5a@b0356a98535035035d799c5d215fdf76
+projection_coverage: section-sword-world-rpg-complete-edition-section-gnome-earth-spirit-5cc62d5a@e857ece7235a8d7a0a26b30f92ada04a
 ---
 
 # (Gnome/Earth Spirit)
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02617))_
+
 > Type=Target score Countered (Overpowered) By: _Tunnel_ Expansion=Final score, duration, distance, target volume Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02617))_

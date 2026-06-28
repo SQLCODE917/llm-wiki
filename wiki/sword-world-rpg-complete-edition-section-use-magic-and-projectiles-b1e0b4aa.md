@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-use-magic-and-projectiles-b1e0b4aa@afeff41e09b019140cbcf8efce31ceca
+projection_coverage: section-sword-world-rpg-complete-edition-section-use-magic-and-projectiles-b1e0b4aa@0d462cb8d9b50dab0d8d963b4f5453f2
 ---
 
 # **Use Magic and Projectiles**
@@ -24,14 +24,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Above all, the advantage of _standing still_ is the ability to use magic and attack with projectiles. Conversely, if you are not _standing still_ , you _cannot_ use magic or projectiles.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00817))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00817))_
+
+> Above all, the advantage of _standing still_ is the ability to use magic and attack with projectiles. Conversely, if you are not _standing still_ , you _cannot_ use magic or projectiles.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00818))_
 
 > If you want to attack with a projectile, please follow the process of _actions you can take during normal movement_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00818))_
 
-> Context: If you want to attack with a projectile, please follow the process of _actions you can take during normal movement_ . If you chose _stand still_ , then _attack with that weapon_ can be read as _attack with that projectile_ . However, when you're _engaged_ (being attacked by a melee weapon), you _cannot_ use projectiles.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00818))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00818))_
+
+> If you want to attack with a projectile, please follow the process of _actions you can take during normal movement_ . If you chose _stand still_ , then _attack with that weapon_ can be read as _attack with that projectile_ . However, when you're _engaged_ (being attacked by a melee weapon), you _cannot_ use projectiles.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00819))_
 
 > If you choose to _stand still_ , in addition to magic and projectiles, you can also take the following special action:
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00819))_

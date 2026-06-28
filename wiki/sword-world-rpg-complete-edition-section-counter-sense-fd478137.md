@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-counter-sense-fd478137@7958a3b8d95be26c5aa3156c1a3db376
+projection_coverage: section-sword-world-rpg-complete-edition-section-counter-sense-fd478137@9306e8352a2a6b829170abaabae8c06f
 ---
 
 # **[ Counter Sense ]**
@@ -29,29 +29,54 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01816))_
+
 > Base Mental Power Cost=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01816))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01817))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01817))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01818))_
 
 > Area=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01818))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01819))_
 
 > Duration=Until detected
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01819))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01821))_
 
 > Type=Detection Expansion=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01821))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01822))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01822))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01823))_
 
 > If you cast this spell, you can know if you or something you're wearing is being detected by a magical item or spell.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01823))_
 
-> Context: This spell targets spells of the _detection_ type, and items such as _crystal orb of clairvoyance_ that have the same effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01824))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01824))_
+
+> This spell targets spells of the _detection_ type, and items such as _crystal orb of clairvoyance_ that have the same effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01826))_
 
 > You cannot cast this spell multiple times in advance, to be able to trace back multiple times without having to recast it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01826))_

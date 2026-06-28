@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-manticore-bd4237bd@52ca57180d9f19493e39248adf5be9da
+projection_coverage: section-sword-world-rpg-complete-edition-section-manticore-bd4237bd@2012f6cbb670ae1b16e5f97a6ee6d0f6
 ---
 
 # **[ Manticore ]**
@@ -28,8 +28,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05479))_
+
 > Habitat=Deserts, Underground labyrinths Languages=Low ancient Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05479))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05482))_
 
 > In combat, a manticore can attack separate targets at the same time with its lion fangs and scorpion tail (it can also attack the same target twice).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05482))_

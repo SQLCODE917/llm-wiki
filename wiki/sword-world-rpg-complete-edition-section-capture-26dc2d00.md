@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-capture-26dc2d00@0b9b429d31d6c8b7bb3b12bd41bedebc
+projection_coverage: section-sword-world-rpg-complete-edition-section-capture-26dc2d00@cfd8ad9f1fde4d4ada8214a9410c92a9
 ---
 
 # 《 **Capture** 》
@@ -21,8 +21,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: While being strangled, a character suffers a -4 penalty to evasion and is normally unable to make sound. Depending on the monster, the penalty may be smaller, or it might be possible to still make sound, but if this is the case it'll be specified in the _description_ . Unless otherwise noted, the evasion penalty is - 4 and magic is also considered not possible.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06819))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06819))_
+
+> While being strangled, a character suffers a -4 penalty to evasion and is normally unable to make sound. Depending on the monster, the penalty may be smaller, or it might be possible to still make sound, but if this is the case it'll be specified in the _description_ . Unless otherwise noted, the evasion penalty is - 4 and magic is also considered not possible.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06822))_
 
 > To escape, you must make the same check as for _strangling_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06822))_

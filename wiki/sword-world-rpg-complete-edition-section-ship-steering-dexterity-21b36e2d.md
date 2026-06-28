@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ship-steering-dexterity-21b36e2d@2f8bdd678a553326b619f2f3ba5be685
+projection_coverage: section-sword-world-rpg-complete-edition-section-ship-steering-dexterity-21b36e2d@11a820b399eb61f6030241804da8c839
 ---
 
 # **[** ③ **Ship Steering [Dexterity]]**
@@ -27,8 +27,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Note that when a thief climbs up or down a wall or cliff _without_ using a rope, the conditions marked * are not possible.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03538))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03538))_
+
+> Note that when a thief climbs up or down a wall or cliff _without_ using a rope, the conditions marked * are not possible.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03539))_
 
 > If you're just going straight through calm water, you don't need a success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03539))_

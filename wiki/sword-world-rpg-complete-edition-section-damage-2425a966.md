@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-damage-2425a966@44d37e34ca52d845f5a0de0b28d20df3
+projection_coverage: section-sword-world-rpg-complete-edition-section-damage-2425a966@85ea1f55fa30fdff8cfbfad6754248bd
 ---
 
 # 《 **Damage** 》
@@ -30,23 +30,39 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: In either case, the caster's magic power can be added as bonus damage to the result of the strike roll. Also, the target's adventurer level (or the monster's monster level) is subtracted from the damage. However, there’s an _exception_ if you roll _double ones_ during your strike roll. In this case, no matter how much magic power your character (monster) has, they _cannot_ deal damage to the target at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01423))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01423))_
+
+> In either case, the caster's magic power can be added as bonus damage to the result of the strike roll. Also, the target's adventurer level (or the monster's monster level) is subtracted from the damage. However, there’s an _exception_ if you roll _double ones_ during your strike roll. In this case, no matter how much magic power your character (monster) has, they _cannot_ deal damage to the target at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01421))_
 
 > If you roll 10 or greater during the strike roll, a _critical_ will occur and deal even more damage, same as in weapon combat.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01421))_
 
-> Context: A spell that deals damage to the target's life force or mental power. Spells of the damage type always have a clearly defined _strike power_ . If you manage to break through the target's resist, use the spell's strike power to determine damage by making a _strike roll_ using the Rating Table, same as if you had hit with a weapon in weapon combat. The key number is, of course, the indicated _strike power_ . If you roll 10 or greater during the strike roll, a _critical_ will occur and deal even mo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01421, source-range-870a16bc-01423))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01421, source-range-870a16bc-01423))_
+
+> A spell that deals damage to the target's life force or mental power. Spells of the damage type always have a clearly defined _strike power_ . If you manage to break through the target's resist, use the spell's strike power to determine damage by making a _strike roll_ using the Rating Table, same as if you had hit with a weapon in weapon combat. The key number is, of course, the indicated _strike power_ . If you roll 10 or greater during the strike roll, a _critical_ will occur and deal even mo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01422))_
 
 > Most magic of the **damage** type can still deal damage even if it's resisted by the target, only with a reduced effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01422))_
 
-> Context: In either case, the caster's magic power can be added as bonus damage to the result of the strike roll. Also, the target's adventurer level (or the monster's monster level) is subtracted from the damage. However, there’s an _exception_ if you roll _double ones_ during your strike roll. In this case, no matter how much magic power your character (monster) has, they _cannot_ deal damage to the target at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01423))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01423))_
+
+> In either case, the caster's magic power can be added as bonus damage to the result of the strike roll. Also, the target's adventurer level (or the monster's monster level) is subtracted from the damage. However, there’s an _exception_ if you roll _double ones_ during your strike roll. In this case, no matter how much magic power your character (monster) has, they _cannot_ deal damage to the target at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01424))_
 
 > Also, even magic of the _damage_ type may in rare cases take no effect if resisted.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01424))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 | Shield<br>Name | Evasion<br>Speed Mod. | Attack<br>Power Mod. |
 | --- | --- | --- |
@@ -64,7 +80,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01424))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 | Armor Name | Evasion Speed<br>Mod. | Defense<br>Mod. | Critical Target<br>Change | Anti-strangling<br>Prot. |
 | --- | --- | --- | --- | --- |
@@ -84,4 +103,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_

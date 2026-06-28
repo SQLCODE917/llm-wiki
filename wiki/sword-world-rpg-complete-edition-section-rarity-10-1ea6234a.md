@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-10-1ea6234a@479a6d92b60daf4f6492781098473695
+projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-10-1ea6234a@a47e5fb02d314f25babd00543b564cc9
 ---
 
 # Rarity=10
@@ -24,8 +24,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04755))_
+
 > Base Trade Value=600 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04755))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04756))_
 
 > The flowers can alleviate fever, and when used on a patient suffering from a fever, they'll receive a +2 bonus on progression/healing checks.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04756))_

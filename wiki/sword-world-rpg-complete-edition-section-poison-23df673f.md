@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-poison-23df673f@37c77e0d9d6cfb0e60da1870aacefd40
+projection_coverage: section-sword-world-rpg-complete-edition-section-poison-23df673f@ffe67c63231b2600dbd9d3996120e06d
 ---
 
 # **[ Poison ]**
@@ -23,6 +23,10 @@ From [[sword-world-rpg-complete-edition]].
 - Although it is a poison, the resistance roll is made as a _mental power_ resistance roll, _not_ life force. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03967))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_
 
 | **Table 12-1: Languages** |
 | --- |
@@ -40,4 +44,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_

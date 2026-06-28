@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-undead-74f0efdd@425925c6e8af9837ef229e02f9eda0e5
+projection_coverage: section-sword-world-rpg-complete-edition-section-undead-74f0efdd@9a4d24a1965aed30a782ff36e0eef519
 ---
 
 # 《 **Undead** 》
@@ -26,5 +26,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04834))_
+
 > If the source of our life is called _positive_ life force, then the undead's source can be called _negative_ life force.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04834))_

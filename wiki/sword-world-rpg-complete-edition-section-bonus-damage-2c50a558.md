@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bonus-damage-2c50a558@34f0e923816588c5a8be2ec2280e71bd
+projection_coverage: section-sword-world-rpg-complete-edition-section-bonus-damage-2c50a558@92cb37ba2a6aa45d807d33283e7ac726
 ---
 
 # **Bonus Damage**
@@ -20,11 +20,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If the third roll were a _2_ (double ones), the base damage would instead be 6+8+0= _14_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00948))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00948))_
+
+> If the third roll were a _2_ (double ones), the base damage would instead be 6+8+0= _14_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00951))_
 
 > Once you’ve determined base damage, you must then add your character’s bonus damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00951))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 | Shield<br>Name | Evasion<br>Speed Mod. | Attack<br>Power Mod. |
 | --- | --- | --- |
@@ -42,7 +50,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00951))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 | Armor Name | Evasion Speed<br>Mod. | Defense<br>Mod. | Critical Target<br>Change | Anti-strangling<br>Prot. |
 | --- | --- | --- | --- | --- |
@@ -62,4 +73,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_

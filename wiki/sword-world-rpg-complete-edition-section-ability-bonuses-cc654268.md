@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ability-bonuses-cc654268@a35dc3353c838c445eff610da34e71ae
+projection_coverage: section-sword-world-rpg-complete-edition-section-ability-bonuses-cc654268@0bbd79707c34a2174368c2696132d230
 ---
 
 # **[** ⑤ **Ability Bonuses ]**
@@ -21,8 +21,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the ability score. For example, it would say something like _an adventurer with 14 de
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
+
+> adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the ability score. For example, it would say something like _an adventurer with 14 de
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00185))_
 
 | AbilityScore | Bonus |
 | --- | --- |
@@ -48,4 +53,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00185))_

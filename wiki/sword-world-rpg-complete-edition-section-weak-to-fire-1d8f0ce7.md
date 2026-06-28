@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-weak-to-fire-1d8f0ce7@785b554e31698119608fb566384456b3
+projection_coverage: section-sword-world-rpg-complete-edition-section-weak-to-fire-1d8f0ce7@2c3e1b7837e309d4c4a01798ac0fca0f
 ---
 
 # 《 **Weak to Fire** 》
@@ -22,5 +22,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06925))_
+
 > In the case of _Fire Bolt_ , make a strike power 20 damage check (10 if the monster successfully resists), and in the case of _Fire Weapon_ , add a +20 strike power bonus to the weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06925))_

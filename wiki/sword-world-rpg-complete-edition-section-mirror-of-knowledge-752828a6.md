@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mirror-of-knowledge-752828a6@2d3d3b761e3c9c809d2ffca08e14c1b7
+projection_coverage: section-sword-world-rpg-complete-edition-section-mirror-of-knowledge-752828a6@2da0acc6bec7b0b27fdad2ee055a09ef
 ---
 
 # **[ Mirror of Knowledge ]**
@@ -16,5 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07633))_
+
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07633))_

@@ -19757,19 +19757,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-80470276fb4d5281"
-        ],
-        "heading_text": "**A Pull of the Lever: Prefaces**",
-        "parent_structure_node_id": "structure-node-3c181c4c7c7d900d",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 22,
-        "source_range_id": "source-range-83ecb080-00022",
-        "structure_node_id": "structure-node-4fae3b0b4500336f",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-f2b65df3ebbe7ab6"
@@ -19781,19 +19768,6 @@
         "source_range_id": "source-range-83ecb080-00028",
         "structure_node_id": "structure-node-f68d67359e5d57d7",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-5b7f5403e637d856"
-        ],
-        "heading_text": "**About JavaScript Allongé**",
-        "parent_structure_node_id": "structure-node-f68d67359e5d57d7",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 31,
-        "source_range_id": "source-range-83ecb080-00031",
-        "structure_node_id": "structure-node-4c0f775c61d33c65",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -19902,19 +19876,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-53ff1ad2f6cb2a1f"
-        ],
-        "heading_text": "**Forewords to the First Edition**",
-        "parent_structure_node_id": "structure-node-ffad33871b4d66d1",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 121,
-        "source_range_id": "source-range-83ecb080-00121",
-        "structure_node_id": "structure-node-90eb2fe8df30b241",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-a69df68a82926d49"
         ],
         "heading_text": "**michael fogus**",
@@ -19952,19 +19913,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-67c06b8c020774b2"
-        ],
-        "heading_text": "**About The Sample PDF**",
-        "parent_structure_node_id": "structure-node-ee9adf3415cca69b",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 142,
-        "source_range_id": "source-range-83ecb080-00142",
-        "structure_node_id": "structure-node-195c4fbac5356619",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-0cbc340aa536e717"
@@ -19978,19 +19926,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-56b15975053f9981"
-        ],
-        "heading_text": "**Prelude: Values and Expressions over Coffee**",
-        "parent_structure_node_id": "structure-node-e0f89092f017e873",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 151,
-        "source_range_id": "source-range-83ecb080-00151",
-        "structure_node_id": "structure-node-f5422083da820a2f",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-f435354ba64ab710"
@@ -20002,19 +19937,6 @@
         "source_range_id": "source-range-83ecb080-00157",
         "structure_node_id": "structure-node-589204fb8a4a763c",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-45cc25b037153bff"
-        ],
-        "heading_text": "**values are expressions**",
-        "parent_structure_node_id": "structure-node-589204fb8a4a763c",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 160,
-        "source_range_id": "source-range-83ecb080-00160",
-        "structure_node_id": "structure-node-b595b604bcb74881",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -20058,19 +19980,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-81700ba2245c8e79"
-        ],
-        "heading_text": "**values and identity**",
-        "parent_structure_node_id": "structure-node-20db9f47a53d8137",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 182,
-        "source_range_id": "source-range-83ecb080-00182",
-        "structure_node_id": "structure-node-6d1f935d132e2973",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-b3380f45bb5c0dd1"
         ],
         "heading_text": "**value types**",
@@ -20106,19 +20015,6 @@
         "source_range_id": "source-range-83ecb080-00211",
         "structure_node_id": "structure-node-c2c0c8472990d725",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-ac2625e2d6141bdc"
-        ],
-        "heading_text": "**A Rich Aroma: Basic Numbers**",
-        "parent_structure_node_id": "structure-node-c2c0c8472990d725",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 212,
-        "source_range_id": "source-range-83ecb080-00212",
-        "structure_node_id": "structure-node-106b9a4265cac344",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -20160,19 +20056,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-bc7e6d40dfa28fc3"
-        ],
-        "heading_text": "**The first sip: Basic Functions**",
-        "parent_structure_node_id": "structure-node-bf00f8219be8f106",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 252,
-        "source_range_id": "source-range-83ecb080-00252",
-        "structure_node_id": "structure-node-a015d380c56440dd",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-7098ba1ce99952d7"
@@ -20184,19 +20067,6 @@
         "source_range_id": "source-range-83ecb080-00254",
         "structure_node_id": "structure-node-4b2d4f7ff9f49b07",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-ace143ab52750dc0"
-        ],
-        "heading_text": "**As Little As Possible About Functions, But No Less**",
-        "parent_structure_node_id": "structure-node-4b2d4f7ff9f49b07",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 257,
-        "source_range_id": "source-range-83ecb080-00257",
-        "structure_node_id": "structure-node-8da22f63526259a7",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -20474,19 +20344,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-f06b7e68144a5a07"
-        ],
-        "heading_text": "**Closures and Scope**",
-        "parent_structure_node_id": "structure-node-2ede9e631c3e6220",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 469,
-        "source_range_id": "source-range-83ecb080-00469",
-        "structure_node_id": "structure-node-7cab34c77c0a5cb0",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-8b56ec54d07df3d2"
         ],
         "heading_text": "((x) => (y) => x)(1)",
@@ -20604,19 +20461,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-943b7fb98a205d64"
-        ],
-        "heading_text": "**That Constant Coffee Craving**",
-        "parent_structure_node_id": "structure-node-635b8c3fef86dd23",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 542,
-        "source_range_id": "source-range-83ecb080-00542",
-        "structure_node_id": "structure-node-d211f9cea48054f3",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-cc31e038e59e5579"
         ],
         "heading_text": "**inside-out**",
@@ -20708,19 +20552,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-b44c61ac7f94cc5e"
-        ],
-        "heading_text": "**Naming Functions**",
-        "parent_structure_node_id": "structure-node-3f8f40248b961865",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 693,
-        "source_range_id": "source-range-83ecb080-00693",
-        "structure_node_id": "structure-node-136ad61845dfb4a8",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-009f8441318d96d3"
         ],
         "heading_text": "**the function keyword**",
@@ -20769,19 +20600,6 @@
         "source_range_id": "source-range-83ecb080-00776",
         "structure_node_id": "structure-node-3fb393f3d3b7e15e",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-131d6231d363537c"
-        ],
-        "heading_text": "**Combinators and Function Decorators**",
-        "parent_structure_node_id": "structure-node-3fb393f3d3b7e15e",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 779,
-        "source_range_id": "source-range-83ecb080-00779",
-        "structure_node_id": "structure-node-b38f7c730851380b",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -20851,19 +20669,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-81871805b094d886"
-        ],
-        "heading_text": "**Building Blocks**",
-        "parent_structure_node_id": "structure-node-00efdd30e96e41aa",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 823,
-        "source_range_id": "source-range-83ecb080-00823",
-        "structure_node_id": "structure-node-38d660b37ac47f9c",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-183e41722a7a64ba"
         ],
         "heading_text": "**composition**",
@@ -20899,19 +20704,6 @@
         "source_range_id": "source-range-83ecb080-00859",
         "structure_node_id": "structure-node-09f1a2dacd409b7d",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-fd4f85388dd55a4e"
-        ],
-        "heading_text": "**Magic Names**",
-        "parent_structure_node_id": "structure-node-09f1a2dacd409b7d",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 862,
-        "source_range_id": "source-range-83ecb080-00862",
-        "structure_node_id": "structure-node-9697027cee5a5fc0",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -20955,19 +20747,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-8d5f7474d92aa5b6"
-        ],
-        "heading_text": "**Summary**",
-        "parent_structure_node_id": "structure-node-b5ed07ad84a20779",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 902,
-        "source_range_id": "source-range-83ecb080-00902",
-        "structure_node_id": "structure-node-3072906874e08d53",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-800418175d09a863"
         ],
         "heading_text": "**Functions**",
@@ -20990,19 +20769,6 @@
         "source_range_id": "source-range-83ecb080-00920",
         "structure_node_id": "structure-node-a03ce0079eadd536",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-7a0975402e277b95"
-        ],
-        "heading_text": "**Recipes with Basic Functions**",
-        "parent_structure_node_id": "structure-node-a03ce0079eadd536",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 921,
-        "source_range_id": "source-range-83ecb080-00921",
-        "structure_node_id": "structure-node-35b21e3d520cc624",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -21031,19 +20797,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-7cc4742ddf797251"
-        ],
-        "heading_text": "**Partial Application**",
-        "parent_structure_node_id": "structure-node-367e6412a195d4e8",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 930,
-        "source_range_id": "source-range-83ecb080-00930",
-        "structure_node_id": "structure-node-60ed1ab03ea12246",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-6a6ecc8b68d54d51"
@@ -21055,19 +20808,6 @@
         "source_range_id": "source-range-83ecb080-00951",
         "structure_node_id": "structure-node-6518a2494124b970",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-d381ac73b312bf02"
-        ],
-        "heading_text": "**Unary**",
-        "parent_structure_node_id": "structure-node-6518a2494124b970",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 954,
-        "source_range_id": "source-range-83ecb080-00954",
-        "structure_node_id": "structure-node-f3e22a2904f73fea",
-        "structure_node_kind": "section"
       },
       {
         "depth": 1,
@@ -21083,19 +20823,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-ea4764b1199787d4"
-        ],
-        "heading_text": "**Tap**",
-        "parent_structure_node_id": "structure-node-db28d50b7978164c",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 976,
-        "source_range_id": "source-range-83ecb080-00976",
-        "structure_node_id": "structure-node-79e610576a5a87d1",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-cb0a178c17274844"
@@ -21107,19 +20834,6 @@
         "source_range_id": "source-range-83ecb080-00997",
         "structure_node_id": "structure-node-e8e3a97667366780",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-d0bc16353d19888d"
-        ],
-        "heading_text": "**Maybe**",
-        "parent_structure_node_id": "structure-node-e8e3a97667366780",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1000,
-        "source_range_id": "source-range-83ecb080-01000",
-        "structure_node_id": "structure-node-e44a69f5e424b879",
-        "structure_node_kind": "section"
       },
       {
         "depth": 1,
@@ -21135,19 +20849,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-6792015e7fa30ebf"
-        ],
-        "heading_text": "**Once**",
-        "parent_structure_node_id": "structure-node-baf3526602267f27",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1025,
-        "source_range_id": "source-range-83ecb080-01025",
-        "structure_node_id": "structure-node-3bfe04b7a50d7dac",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-baa884cb29be44af"
@@ -21159,19 +20860,6 @@
         "source_range_id": "source-range-83ecb080-01035",
         "structure_node_id": "structure-node-8fa9d2a675b68d1d",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-69d6b52e6d0d05b6"
-        ],
-        "heading_text": "**Left-Variadic Functions**",
-        "parent_structure_node_id": "structure-node-8fa9d2a675b68d1d",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1038,
-        "source_range_id": "source-range-83ecb080-01038",
-        "structure_node_id": "structure-node-07dc266372ee9634",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -21237,19 +20925,6 @@
         "source_range_id": "source-range-83ecb080-01087",
         "structure_node_id": "structure-node-25a1f17466d301c4",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-d5b01da3a4ebee92"
-        ],
-        "heading_text": "**Picking the Bean: Choice and Truthiness**",
-        "parent_structure_node_id": "structure-node-25a1f17466d301c4",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1088,
-        "source_range_id": "source-range-83ecb080-01088",
-        "structure_node_id": "structure-node-8081ea3ea0b86792",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -21356,19 +21031,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-fece69ec9bad15d2"
-        ],
-        "heading_text": "**Composing and Decomposing Data**",
-        "parent_structure_node_id": "structure-node-2f7bd6a3eb661b14",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1178,
-        "source_range_id": "source-range-83ecb080-01178",
-        "structure_node_id": "structure-node-7eae25358a856e23",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-0783b8ed2961659c"
@@ -21380,19 +21042,6 @@
         "source_range_id": "source-range-83ecb080-01183",
         "structure_node_id": "structure-node-ffa82d010573325b",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-b2fa20707c27dba0"
-        ],
-        "heading_text": "**Arrays and Destructuring Arguments**",
-        "parent_structure_node_id": "structure-node-ffa82d010573325b",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1186,
-        "source_range_id": "source-range-83ecb080-01186",
-        "structure_node_id": "structure-node-483ed8b8821c570e",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -21501,19 +21150,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-e885e156199cb638"
-        ],
-        "heading_text": "**Self-Similarity**",
-        "parent_structure_node_id": "structure-node-e2aeec96b5ec3eb1",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1296,
-        "source_range_id": "source-range-83ecb080-01296",
-        "structure_node_id": "structure-node-c36dd262418590b9",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-e549259e2b34325a"
         ],
         "heading_text": "**linear recursion**",
@@ -21575,19 +21211,6 @@
         "source_range_id": "source-range-83ecb080-01394",
         "structure_node_id": "structure-node-96815acdc5c8650d",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-b97b06f4f8325c14"
-        ],
-        "heading_text": "**Tail Calls (and Default Arguments)**",
-        "parent_structure_node_id": "structure-node-96815acdc5c8650d",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1397,
-        "source_range_id": "source-range-83ecb080-01397",
-        "structure_node_id": "structure-node-b713d8e120db10e8",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -21670,19 +21293,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-095c35c764f3844d"
-        ],
-        "heading_text": "**Garbage, Garbage Everywhere**",
-        "parent_structure_node_id": "structure-node-6bd95e2ecf52a884",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1504,
-        "source_range_id": "source-range-83ecb080-01504",
-        "structure_node_id": "structure-node-7c5b324540be7bf2",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-8fc670ab1ca2148d"
         ],
         "heading_text": "**some history**",
@@ -21748,19 +21358,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-28e67fcb0e3f2c01"
-        ],
-        "heading_text": "**Plain Old JavaScript Objects**",
-        "parent_structure_node_id": "structure-node-5b86d8f50af414de",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1574,
-        "source_range_id": "source-range-83ecb080-01574",
-        "structure_node_id": "structure-node-988af59160ee0e2c",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-2bac10570a73856d"
         ],
         "heading_text": "**literal object syntax**",
@@ -21809,19 +21406,6 @@
         "source_range_id": "source-range-83ecb080-01682",
         "structure_node_id": "structure-node-6964f70d79fa683d",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-b96407ef230b0737"
-        ],
-        "heading_text": "**Mutation**",
-        "parent_structure_node_id": "structure-node-6964f70d79fa683d",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1685,
-        "source_range_id": "source-range-83ecb080-01685",
-        "structure_node_id": "structure-node-31505165f8e826ec",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -21878,19 +21462,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-fa9bb590aaaed4bc"
-        ],
-        "heading_text": "**Reassignment**",
-        "parent_structure_node_id": "structure-node-93b2d085ba7a3048",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1757,
-        "source_range_id": "source-range-83ecb080-01757",
-        "structure_node_id": "structure-node-283251e110099791",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-400bea3c4d074ced"
         ],
         "heading_text": "**mixing let and const**",
@@ -21939,19 +21510,6 @@
         "source_range_id": "source-range-83ecb080-01846",
         "structure_node_id": "structure-node-c6ae74cdeb5689d4",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-0cd14103c8f3cfb4"
-        ],
-        "heading_text": "**Copy on Write**",
-        "parent_structure_node_id": "structure-node-c6ae74cdeb5689d4",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1849,
-        "source_range_id": "source-range-83ecb080-01849",
-        "structure_node_id": "structure-node-72e65a771dd065e1",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -22032,19 +21590,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-fe4bcf22361f2ca0"
-        ],
-        "heading_text": "**Tortoises, Hares, and Teleporting Turtles**",
-        "parent_structure_node_id": "structure-node-c40991fa0b8c9fce",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1905,
-        "source_range_id": "source-range-83ecb080-01905",
-        "structure_node_id": "structure-node-9acf2b5d5023b077",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-c85be96685fa0281"
@@ -22056,19 +21601,6 @@
         "source_range_id": "source-range-83ecb080-01929",
         "structure_node_id": "structure-node-fbfa959019b86df4",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-1ea05cf003f2a4e6"
-        ],
-        "heading_text": "**Functional Iterators**",
-        "parent_structure_node_id": "structure-node-fbfa959019b86df4",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 1932,
-        "source_range_id": "source-range-83ecb080-01932",
-        "structure_node_id": "structure-node-6b218e2623a118df",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -22134,19 +21666,6 @@
         "source_range_id": "source-range-83ecb080-02026",
         "structure_node_id": "structure-node-532697c5dcb83b3b",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-b7260da8a40ea62d"
-        ],
-        "heading_text": "**Making Data Out Of Functions**",
-        "parent_structure_node_id": "structure-node-532697c5dcb83b3b",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 2029,
-        "source_range_id": "source-range-83ecb080-02029",
-        "structure_node_id": "structure-node-6e9b28d70238ef3e",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -22255,19 +21774,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-dd904a9b24ed436c"
-        ],
-        "heading_text": "**Recipes with Data**",
-        "parent_structure_node_id": "structure-node-298abca178c30938",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 2201,
-        "source_range_id": "source-range-83ecb080-02201",
-        "structure_node_id": "structure-node-06734d7404fcbd04",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-cc29279185aff1b0"
         ],
         "heading_text": "**Disclaimer**",
@@ -22292,19 +21798,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-001be048c10c5399"
-        ],
-        "heading_text": "**mapWith**",
-        "parent_structure_node_id": "structure-node-226207e62a64cffd",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 2211,
-        "source_range_id": "source-range-83ecb080-02211",
-        "structure_node_id": "structure-node-a443162c1c249fea",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-627b69c619e8541a"
@@ -22316,19 +21809,6 @@
         "source_range_id": "source-range-83ecb080-02234",
         "structure_node_id": "structure-node-5473083b4c1a221b",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-83af03efb2e5c0a1"
-        ],
-        "heading_text": "**Flip**",
-        "parent_structure_node_id": "structure-node-5473083b4c1a221b",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 2237,
-        "source_range_id": "source-range-83ecb080-02237",
-        "structure_node_id": "structure-node-bdedeb49f5b1d964",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -22372,19 +21852,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-b80011afee37f2c6"
-        ],
-        "heading_text": "**Object.assign**",
-        "parent_structure_node_id": "structure-node-3fd7c36f9312f53f",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 2277,
-        "source_range_id": "source-range-83ecb080-02277",
-        "structure_node_id": "structure-node-0109deed331185fd",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-dcc28968588c22ba"
         ],
         "heading_text": "});",
@@ -22409,19 +21876,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-47ca4494c8d74d50"
-        ],
-        "heading_text": "**Why?**",
-        "parent_structure_node_id": "structure-node-9915e7a2c4d5b9be",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 2299,
-        "source_range_id": "source-range-83ecb080-02299",
-        "structure_node_id": "structure-node-f6421112f83accb8",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-fd0ac8a16599fd28"
@@ -22433,19 +21887,6 @@
         "source_range_id": "source-range-83ecb080-02313",
         "structure_node_id": "structure-node-11e2640e6daf584a",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-8341a619ea3d6994"
-        ],
-        "heading_text": "**A Warm Cup: Basic Strings and Quasi-Literals**",
-        "parent_structure_node_id": "structure-node-11e2640e6daf584a",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 2314,
-        "source_range_id": "source-range-83ecb080-02314",
-        "structure_node_id": "structure-node-ab558852547ea276",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -22487,19 +21928,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-d57bcc6196a9e104"
-        ],
-        "heading_text": "**Served by the Pot: Collections**",
-        "parent_structure_node_id": "structure-node-837a59963b996c15",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 2354,
-        "source_range_id": "source-range-83ecb080-02354",
-        "structure_node_id": "structure-node-f299b5e0246e3ac6",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-3556f988f7a4b35a"
@@ -22511,19 +21939,6 @@
         "source_range_id": "source-range-83ecb080-02357",
         "structure_node_id": "structure-node-f856d7949e9703e2",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-38dd23475830a71a"
-        ],
-        "heading_text": "**Iteration and Iterables**",
-        "parent_structure_node_id": "structure-node-f856d7949e9703e2",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 2360,
-        "source_range_id": "source-range-83ecb080-02360",
-        "structure_node_id": "structure-node-7d73c8fda6b387fa",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -22641,19 +22056,6 @@
         "source_range_id": "source-range-83ecb080-02524",
         "structure_node_id": "structure-node-dffe2960eb986fc1",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-edcd56213991e91c"
-        ],
-        "heading_text": "**Generating Iterables**",
-        "parent_structure_node_id": "structure-node-dffe2960eb986fc1",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 2527,
-        "source_range_id": "source-range-83ecb080-02527",
-        "structure_node_id": "structure-node-f1e31978caf6015a",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -22788,19 +22190,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-0b71b78fceb420ca"
-        ],
-        "heading_text": "**Lazy and Eager Collections**",
-        "parent_structure_node_id": "structure-node-39652de492059730",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 2736,
-        "source_range_id": "source-range-83ecb080-02736",
-        "structure_node_id": "structure-node-c588143403eee8c5",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-327cd58754b82deb"
         ],
         "heading_text": "**implementing methods with iteration**",
@@ -22849,19 +22238,6 @@
         "source_range_id": "source-range-83ecb080-02821",
         "structure_node_id": "structure-node-266deeeca5efcc3b",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-0d3395b5b18b9da2"
-        ],
-        "heading_text": "**Interlude: The Carpenter Interviews for a Job**",
-        "parent_structure_node_id": "structure-node-266deeeca5efcc3b",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 2824,
-        "source_range_id": "source-range-83ecb080-02824",
-        "structure_node_id": "structure-node-384196fb574c3ba6",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -22931,19 +22307,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-99b07e186bc67f10"
-        ],
-        "heading_text": "**Interactive Generators**",
-        "parent_structure_node_id": "structure-node-7a21b376a746f2da",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 2925,
-        "source_range_id": "source-range-83ecb080-02925",
-        "structure_node_id": "structure-node-643eb28e3b625766",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-92792d54b39b4f79"
         ],
         "heading_text": "**representing naughts and crosses as a stateless function**",
@@ -22983,19 +22346,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-99b07e186bc67f10"
-        ],
-        "heading_text": "**interactive generators**",
-        "parent_structure_node_id": "structure-node-7a21b376a746f2da",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 3025,
-        "source_range_id": "source-range-83ecb080-03025",
-        "structure_node_id": "structure-node-79a343612b6f4a33",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-f015d23d39cc08ad"
         ],
         "heading_text": "**summary**",
@@ -23018,19 +22368,6 @@
         "source_range_id": "source-range-83ecb080-03047",
         "structure_node_id": "structure-node-9858efd7dfe039ba",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-921c617fa9f4c081"
-        ],
-        "heading_text": "**Basic Operations on Iterables**",
-        "parent_structure_node_id": "structure-node-9858efd7dfe039ba",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 3050,
-        "source_range_id": "source-range-83ecb080-03050",
-        "structure_node_id": "structure-node-5d96b3b6430d514a",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -23098,19 +22435,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-edab431a806c9b58"
-        ],
-        "heading_text": "**The Golden Crema: Appendices and Afterwords**",
-        "parent_structure_node_id": "structure-node-e91e83e663c73cca",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 3077,
-        "source_range_id": "source-range-83ecb080-03077",
-        "structure_node_id": "structure-node-5ad3c138f25ab01f",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-bafe6599930b0d42"
@@ -23124,19 +22448,6 @@
         "structure_node_kind": "chapter"
       },
       {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-4bed76c0d4266c05"
-        ],
-        "heading_text": "**How to run the examples**",
-        "parent_structure_node_id": "structure-node-67b42e0bfbcfaedd",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 3083,
-        "source_range_id": "source-range-83ecb080-03083",
-        "structure_node_id": "structure-node-322ece62920a741e",
-        "structure_node_kind": "section"
-      },
-      {
         "depth": 1,
         "evidence_ids": [
           "evidence-d2ce860ed6bf6326"
@@ -23148,19 +22459,6 @@
         "source_range_id": "source-range-83ecb080-03113",
         "structure_node_id": "structure-node-8c6cc9d0ec827a13",
         "structure_node_kind": "chapter"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
-          "evidence-29db60c9de2bc13e"
-        ],
-        "heading_text": "**Thanks!**",
-        "parent_structure_node_id": "structure-node-8c6cc9d0ec827a13",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 3116,
-        "source_range_id": "source-range-83ecb080-03116",
-        "structure_node_id": "structure-node-f51e0f4228954558",
-        "structure_node_kind": "section"
       },
       {
         "depth": 2,
@@ -23204,19 +22502,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-070194f50e16a9bf"
-        ],
-        "heading_text": "**Copyright Notice**",
-        "parent_structure_node_id": "structure-node-cfbf3d72f35b484a",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 3132,
-        "source_range_id": "source-range-83ecb080-03132",
-        "structure_node_id": "structure-node-8dd015ba2684c20d",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-8d870f4bf48be9c7"
         ],
         "heading_text": "**images**",
@@ -23243,19 +22528,6 @@
       {
         "depth": 2,
         "evidence_ids": [
-          "evidence-06d04f141aa2427c"
-        ],
-        "heading_text": "**About The Author**",
-        "parent_structure_node_id": "structure-node-c3dda2c6ee71b96b",
-        "source_locator": "javascriptallonge.pdf",
-        "source_order": 3266,
-        "source_range_id": "source-range-83ecb080-03266",
-        "structure_node_id": "structure-node-1fa266db97bb7145",
-        "structure_node_kind": "section"
-      },
-      {
-        "depth": 2,
-        "evidence_ids": [
           "evidence-a8fddbe0bf295b5d"
         ],
         "heading_text": "**contact**",
@@ -23268,6 +22540,6 @@
       }
     ]
   },
-  "document_structure_artifact_id": "document-structure-7306acd57aee8111",
-  "document_structure_fingerprint": "03babfb95a423282"
+  "document_structure_artifact_id": "document-structure-618b567c0f291b74",
+  "document_structure_fingerprint": "d44fa3d746eab8a4"
 }

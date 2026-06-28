@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-17-5-176d4971@5a09d3237818e94cd5908fd71ff187d5
+projection_coverage: section-sword-world-rpg-complete-edition-section-17-5-176d4971@36210a3cc8ae9331875814dc2b2ff59c
 ---
 
 # **17.5**
@@ -37,8 +37,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: behind the curtain on the left, as well as the ceiling, behind me, _and_ under my feet are _all_ dangerous, so I'll full resist anything that might come from those places!"), he or she can add restrictions or refuse the player's declaration. If you try to pay attention to what's behind you, which you can't see, you _usually_ neglect what's in front of you.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08029))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08029))_
+
+> behind the curtain on the left, as well as the ceiling, behind me, _and_ under my feet are _all_ dangerous, so I'll full resist anything that might come from those places!"), he or she can add restrictions or refuse the player's declaration. If you try to pay attention to what's behind you, which you can't see, you _usually_ neglect what's in front of you.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08030))_
 
 > When danger comes from an _unexpected_ direction or location, you receive _no_ bonus to resistance rolls and must make a check normally.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08030))_

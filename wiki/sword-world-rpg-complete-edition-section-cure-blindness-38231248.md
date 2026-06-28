@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-cure-blindness-38231248@ab4da57a5fcd488aadb72885cb776142
+projection_coverage: section-sword-world-rpg-complete-edition-section-cure-blindness-38231248@b91fcc99819453469e707abcb3576855
 ---
 
 # **[ Cure Blindness ]**
@@ -21,11 +21,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02889))_
+
 > Base Mental Power Cost=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02889))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02890))_
 
 > Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02890))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02891))_
 
 > Area=One Duration=Instant Effect=Restore lost vision Type=Counters (Negates): _Blindness_ Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02891))_

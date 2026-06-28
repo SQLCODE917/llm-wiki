@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-targets-expansion-b159461a@3896911ad5f556406c7c6bdb309564f7
+projection_coverage: section-sword-world-rpg-complete-edition-section-targets-expansion-b159461a@357239b2d85fc2a7464738ea92ba7492
 ---
 
 # 《 **Targets Expansion** 》
@@ -21,11 +21,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Magic expansion includes the following types.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01356))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01356))_
+
+> Magic expansion includes the following types.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01358))_
 
 > If you expand a spell that affects one enemy (or ally), it can instead affect multiple at the same time.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01358))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01360))_
 
 > In this case, you must roll the dice separately for each target to determine if they resist the magic, and other effects such as damage must also be determined separately.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01360))_

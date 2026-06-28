@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-master-mummy-6ecf18f7@50a0a2324f736e9ef688959b480484fd
+projection_coverage: section-sword-world-rpg-complete-edition-section-master-mummy-6ecf18f7@57bacea8618ed54223a079e5d4ac19ef
 ---
 
 # **Master Mummy**
@@ -33,11 +33,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06290))_
+
 > Habitat=Tombs
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06290))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06291))_
 
 > Languages=Low ancient Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06291))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06295))_
 
 > If a master mummy's attack hits, in addition to physical damage, a _curse_ will befall you.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06295))_

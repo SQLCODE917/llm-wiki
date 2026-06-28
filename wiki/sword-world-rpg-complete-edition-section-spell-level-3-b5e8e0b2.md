@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-spell-level-3-b5e8e0b2@9f314a60799258f4136feb273070c13c
+projection_coverage: section-sword-world-rpg-complete-edition-section-spell-level-3-b5e8e0b2@f1b621fca9aa18d4b79145b08fa4d7d7
 ---
 
 # **(Spell Level=3)**
@@ -23,32 +23,58 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03155))_
+
 > Base Mental Power Cost=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03155))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03156))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03156))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03157))_
 
 > Area=A space within a 10 meter radius from the caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03157))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03158))_
 
 > Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03158))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03159))_
 
 > Effect=Takes away hostility from targets within the area of effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03159))_
 
-> Context: Marfa, as the earth mother and the goddess of affection, preaches strong warnings against unnecessary conflict. Therefore, priests of Marfa can use this spell to take away the feelings of hatred that have arisen in each other's hearts and prevent them from fighting. Those who fail to resist will lose their hostility and attempt to stop the fight. At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack. This spell has
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
+
+> Marfa, as the earth mother and the goddess of affection, preaches strong warnings against unnecessary conflict. Therefore, priests of Marfa can use this spell to take away the feelings of hatred that have arisen in each other's hearts and prevent them from fighting. Those who fail to resist will lose their hostility and attempt to stop the fight. At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack. This spell has
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03160))_
 
 > Type=Mind, target score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03160))_
 
-> Context: Marfa, as the earth mother and the goddess of affection, preaches strong warnings against unnecessary conflict. Therefore, priests of Marfa can use this spell to take away the feelings of hatred that have arisen in each other's hearts and prevent them from fighting. Those who fail to resist will lose their hostility and attempt to stop the fight. At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack. This spell has
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
+
+> Marfa, as the earth mother and the goddess of affection, preaches strong warnings against unnecessary conflict. Therefore, priests of Marfa can use this spell to take away the feelings of hatred that have arisen in each other's hearts and prevent them from fighting. Those who fail to resist will lose their hostility and attempt to stop the fight. At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack. This spell has
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03161))_
 
 > Expansion=Final score, duration, area Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03161))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_
 
 > At this point, if the opponent attempts to take hostile action again, this becomes a natural battle for Marfa, so you can counterattack.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03162))_

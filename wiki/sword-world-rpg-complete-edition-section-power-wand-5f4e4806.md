@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-power-wand-5f4e4806@248f6ec84c9532628532ef4abb911f4c
+projection_coverage: section-sword-world-rpg-complete-edition-section-power-wand-5f4e4806@5e21ef5994d24473cc32ee76e05f5438
 ---
 
 # **[ Power Wand ]**
@@ -21,8 +21,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This staff can be pre-imbued with magic that activates either when a specific password is spoken or after a predetermined time has elapsed. The spells that can be stored in this staff are limited to ancient magic with a consumed mental power (not the base mental power cost) of 3 or less. In other words, as a sorcerer reaches higher levels, they become capable of storing more powerful spells. To store a spell in this staff, you must expend the same amount of mental power as casting the spell norm
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07362))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07362))_
+
+> This staff can be pre-imbued with magic that activates either when a specific password is spoken or after a predetermined time has elapsed. The spells that can be stored in this staff are limited to ancient magic with a consumed mental power (not the base mental power cost) of 3 or less. In other words, as a sorcerer reaches higher levels, they become capable of storing more powerful spells. To store a spell in this staff, you must expend the same amount of mental power as casting the spell norm
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07365))_
 
 > Rarity=17 Enchanter=Many Form=Wand Base Trade Price=120,000 gamels Powers=Fires Energy Bolt
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07365))_

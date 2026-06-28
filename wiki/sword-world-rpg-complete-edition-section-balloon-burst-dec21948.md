@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-balloon-burst-dec21948@b7b2ada2a318f763255dc17cc6b71e96
+projection_coverage: section-sword-world-rpg-complete-edition-section-balloon-burst-dec21948@c27883b4990b05fe154f8755c624ca37
 ---
 
 # **[ Balloon Burst ]**
@@ -27,8 +27,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04704))_
+
 > Symptoms=Shortness of breath, body swelling, inability to move, pain throughout the body
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04704))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04705))_
 
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04705))_

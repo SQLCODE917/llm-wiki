@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-19f240c7@f997b968b2dad8121e708e9744b9f9d0
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-19f240c7@39c1434afb38b0e8ba644d6706266173
 ---
 
 # 13.2.6 Mythical Beasts and Magical Beasts
@@ -359,527 +359,952 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Monster Level=3 Rarity=14 Agility=15 Movement Speed=15 Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Horns: 9 (2)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05306))_
+### Technical atom 1
 
-> Context: They always carry a flute and can manipulate human emotions with their melodies. Humans who hear the satyr's flute may suddenly become frightened and run away, get excited and start dancing, or become lewd and start taking off their clothes. To resist this, you must succeed on a mental power resistance roll against target score 10.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05309))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05306))_
+
+> Monster Level=3 Rarity=14 Agility=15 Movement Speed=15 Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Horns: 9 (2)
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05309))_
+
+> They always carry a flute and can manipulate human emotions with their melodies. Humans who hear the satyr's flute may suddenly become frightened and run away, get excited and start dancing, or become lewd and start taking off their clothes. To resist this, you must succeed on a mental power resistance roll against target score 10.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05312))_
 
 > Rarity=14 Agility=12 Movement Speed=6 Frequency=Rare Number=One Intellect=Low Reaction=Adversarial Attack Points=Right arm:11 (4)/Left arm:10 (3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05312))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05313))_
 
 > Strike Points=Special/5 Evasion Points=10 (3) Defense Points=5 Life Points/Resistance=14 /11(4) Mental Points/Resistance=11/10(3) Special Abilities=Surprise attack (Sense target score=12)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05313))_
 
-> Context: Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body out from the ceiling in an instant to attack, so it has a high potential for surprise attacks. Rangers have a chance to notice this surprise attack with their _sense danger_ ability. To do so, you must succeed on a success toll against target score 12 using _ranger skill level + intelligence bonus_ as the baseline score. Failure will
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
+
+> Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body out from the ceiling in an instant to attack, so it has a high potential for surprise attacks. Rangers have a chance to notice this surprise attack with their _sense danger_ ability. To do so, you must succeed on a success toll against target score 12 using _ranger skill level + intelligence bonus_ as the baseline score. Failure will
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05315))_
 
 > Sleepless Habitat=Underground labyrinths Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05315))_
 
-> Context: Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body out from the ceiling in an instant to attack, so it has a high potential for surprise attacks. Rangers have a chance to notice this surprise attack with their _sense danger_ ability. To do so, you must succeed on a success toll against target score 12 using _ranger skill level + intelligence bonus_ as the baseline score. Failure will
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
+
+> Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body out from the ceiling in an instant to attack, so it has a high potential for surprise attacks. Rangers have a chance to notice this surprise attack with their _sense danger_ ability. To do so, you must succeed on a success toll against target score 12 using _ranger skill level + intelligence bonus_ as the baseline score. Failure will
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05316))_
 
 > By sticking with this lower body, a ceiling hanger can also move along walls and ceilings.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05316))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
 
 > Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
 
-> Context: Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body out from the ceiling in an instant to attack, so it has a high potential for surprise attacks. Rangers have a chance to notice this surprise attack with their _sense danger_ ability. To do so, you must succeed on a success toll against target score 12 using _ranger skill level + intelligence bonus_ as the baseline score. Failure will
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
+
+> Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body out from the ceiling in an instant to attack, so it has a high potential for surprise attacks. Rangers have a chance to notice this surprise attack with their _sense danger_ ability. To do so, you must succeed on a success toll against target score 12 using _ranger skill level + intelligence bonus_ as the baseline score. Failure will
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05320))_
 
 > From then on, in each round, a death check must be made when applying damage (even if it's 0).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05320))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05326))_
 
 > Anyone who hears a deela's song must make a mental power resistance roll against target score 10.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05326))_
 
-> Context: Deelas live on the coast, are beautiful, and can speak. They are neutral toward humans. Deelas mate with human males and lay eggs. At this time, deelas use the ability to _charm_ by singing. Anyone who hears a deela's song must make a mental power resistance roll against target score 10. If you fail, you will be charmed and must do what the deela tells you to do.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05326))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05326))_
+
+> Deelas live on the coast, are beautiful, and can speak. They are neutral toward humans. Deelas mate with human males and lay eggs. At this time, deelas use the ability to _charm_ by singing. Anyone who hears a deela's song must make a mental power resistance roll against target score 10. If you fail, you will be charmed and must do what the deela tells you to do.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05328))_
 
 > Monster Level=3 Rarity=18
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05328))_
 
-> Context: Deelas live on the coast, are beautiful, and can speak. They are neutral toward humans. Deelas mate with human males and lay eggs. At this time, deelas use the ability to _charm_ by singing. Anyone who hears a deela's song must make a mental power resistance roll against target score 10. If you fail, you will be charmed and must do what the deela tells you to do.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05326))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05326))_
+
+> Deelas live on the coast, are beautiful, and can speak. They are neutral toward humans. Deelas mate with human males and lay eggs. At this time, deelas use the ability to _charm_ by singing. Anyone who hears a deela's song must make a mental power resistance roll against target score 10. If you fail, you will be charmed and must do what the deela tells you to do.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05329))_
 
 > Agility=16 Movement Speed=6/30 (air) Number=One Frequency=Very Rare Intellect=Human Reaction=Neutral Attack Points=Talons:11 (4) Strike Points=9
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05329))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05330))_
 
 > Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=15/11 (4)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05330))_
 
-> Context: Usually, only female individuals are born among harpies. However, very rarely a male is born. A flock blessed with a male can produce offspring without the use of a human male, so that male is made their king. In such groups, they do not try to charm humans and avoid interaction as much as possible, because they do not need to use humans and do not want their king's existence to be known.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
+
+> Usually, only female individuals are born among harpies. However, very rarely a male is born. A flock blessed with a male can produce offspring without the use of a human male, so that male is made their king. In such groups, they do not try to charm humans and avoid interaction as much as possible, because they do not need to use humans and do not want their king's existence to be known.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05332))_
 
 > Mental Points/Resistance=12/11 (4) Special Abilities=None in particular Habitat=Coasts
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05332))_
 
-> Context: Usually, only female individuals are born among harpies. However, very rarely a male is born. A flock blessed with a male can produce offspring without the use of a human male, so that male is made their king. In such groups, they do not try to charm humans and avoid interaction as much as possible, because they do not need to use humans and do not want their king's existence to be known.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
+
+> Usually, only female individuals are born among harpies. However, very rarely a male is born. A flock blessed with a male can produce offspring without the use of a human male, so that male is made their king. In such groups, they do not try to charm humans and avoid interaction as much as possible, because they do not need to use humans and do not want their king's existence to be known.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05333))_
 
 > Languages=Harpy, regional Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05333))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05338))_
 
 > Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05338))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05343))_
 
 > Rarity=12 Agility=14 Movement Speed=8/20 (water) Number=One to dozens
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05343))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05344))_
 
 > Frequency=Rare Intellect=Animal Reaction=Neutral Attack Points=Leg: 11 (4) Strike Points=9 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=20/12 (5) Mental Points/Resistance=10/10 (3) Special Abilities=Water adaptation
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05344))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05345))_
 
 > Habitat=Seas Languages=None Perception=Five senses (illumination)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05345))_
 
-> Context: Mermen have tamed the hippocampus and use them as riding horses.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05347))_
+### Technical atom 18
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05347))_
+
+> Mermen have tamed the hippocampus and use them as riding horses.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05349))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05349))_
 
-> Context: Mermen have tamed the hippocampus and use them as riding horses.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05347))_
+### Technical atom 19
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05347))_
+
+> Mermen have tamed the hippocampus and use them as riding horses.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05350))_
 
 > Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Snakes (all engaged): 10 (3) Strike Points=7+poison
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05350))_
+
+### Technical atom 20
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05351))_
 
 > Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=14/11 (4) Mental Points/Resistance=18/12 (5) Special Abilities=Petrify (Resist target score=10)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05351))_
 
-> Context: Medusa is a magical beast that takes the form of a human woman, with dozens of snakes growing out of her head instead of hair, and a face with the magical power to petrify humans. They dwell mainly in ruins and underground labyrinths, and find wicked pleasure in turning visitors into stone statues. Anyone who encounters a medusa must succeed on a mental power resistance roll against target score 10 or they will instantly be turned into a stone statue. You can avoid being petrified by fighting wi
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05355))_
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05355))_
+
+> Medusa is a magical beast that takes the form of a human woman, with dozens of snakes growing out of her head instead of hair, and a face with the magical power to petrify humans. They dwell mainly in ruins and underground labyrinths, and find wicked pleasure in turning visitors into stone statues. Anyone who encounters a medusa must succeed on a mental power resistance roll against target score 10 or they will instantly be turned into a stone statue. You can avoid being petrified by fighting wi
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05354))_
 
 > Habitat=Ruins, underground labyrinths Languages=Regional Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05354))_
+
+### Technical atom 22
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05355))_
 
 > Also, you cannot cast magic on the medusa in these states.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05355))_
 
-> Context: Even if a medusa is killed, the magical power remains in her head for a while. It is possible to put the severed head of a Medusa in a bag, then show it to an enemy in combat to turn them to stone, but it must be used carefully, as there is a risk of it turning your allies to stone as well. The magical power in the head will disappear in about one week.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05358))_
+### Technical atom 23
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05358))_
+
+> Even if a medusa is killed, the magical power remains in her head for a while. It is possible to put the severed head of a Medusa in a bag, then show it to an enemy in combat to turn them to stone, but it must be used carefully, as there is a risk of it turning your allies to stone as well. The magical power in the head will disappear in about one week.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05361))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05361))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05363))_
 
 > Habitat=Deserts
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05363))_
+
+### Technical atom 25
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05364))_
 
 > Languages=Regional, silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05364))_
 
-> Context: In combat, an androscorpio uses a sword in his hand, but he can also attack with his tail at the same time. The stinger at the tip of his tail contains a hallucinogenic poison (toxicity score 11). Those wounded by a tail attack and fail a life force resistance roll will experience hallucinations starting on the next round. The enemy's appearance can change, or it can appear as multiple . This symptom lasts for one hour, during which time the victim suffers a -4 penalty on all success rolls.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05368))_
+### Technical atom 26
 
-> Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05370))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05368))_
 
-> Context: It is said that there are very rare centaurs who have very advanced knowledge and can use magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05376))_
+> In combat, an androscorpio uses a sword in his hand, but he can also attack with his tail at the same time. The stinger at the tip of his tail contains a hallucinogenic poison (toxicity score 11). Those wounded by a tail attack and fail a life force resistance roll will experience hallucinations starting on the next round. The enemy's appearance can change, or it can appear as multiple . This symptom lasts for one hour, during which time the victim suffers a -4 penalty on all success rolls.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05370))_
 
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05378))_
+
+### Technical atom 27
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05376))_
+
+> It is said that there are very rare centaurs who have very advanced knowledge and can use magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05378))_
+
+> Monster Level=4
+
+### Technical atom 28
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05382))_
 
 > Habitat=Wilderness
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05382))_
+
+### Technical atom 29
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05383))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05383))_
 
-> Context: A cockatrice is a flightless bird about the size of a human with the legs and tail of a lizard. Its beak has the ability to petrify living creatures, and anyone hit by a cockatrice (regardless of whether they're dealt damage or not) must make a life force resistance roll against target score 11. If you fail, you will instantly turn to stone.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05384))_
+### Technical atom 30
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05384))_
+
+> A cockatrice is a flightless bird about the size of a human with the legs and tail of a lizard. Its beak has the ability to petrify living creatures, and anyone hit by a cockatrice (regardless of whether they're dealt damage or not) must make a life force resistance roll against target score 11. If you fail, you will instantly turn to stone.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05385))_
 
 > If you find and eat henruda in advance, you can neutralize the cockatrice's magical power and prevent being petrified.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05385))_
 
-> Context: A cockatrice is a flightless bird about the size of a human with the legs and tail of a lizard. Its beak has the ability to petrify living creatures, and anyone hit by a cockatrice (regardless of whether they're dealt damage or not) must make a life force resistance roll against target score 11. If you fail, you will instantly turn to stone.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05384))_
+### Technical atom 31
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05384))_
+
+> A cockatrice is a flightless bird about the size of a human with the legs and tail of a lizard. Its beak has the ability to petrify living creatures, and anyone hit by a cockatrice (regardless of whether they're dealt damage or not) must make a life force resistance roll against target score 11. If you fail, you will instantly turn to stone.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05387))_
 
 > Monster Level=4 Rarity=13 Agility=12 Movement Speed=12/12 (water) Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Fangs (6 times):11 (4)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05387))_
 
-> Context: Scylla is a beautiful woman from the waist up, but six serpent heads and 12 octopus tentacles grow from her lower body. They are amphibious and can move freely on land, but mainly prefer to live in water. Their personality is extremely wicked, often luring men with only their upper bodies above the water, then dragging them underwater to kill them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05392))_
+### Technical atom 32
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05392))_
+
+> Scylla is a beautiful woman from the waist up, but six serpent heads and 12 octopus tentacles grow from her lower body. They are amphibious and can move freely on land, but mainly prefer to live in water. Their personality is extremely wicked, often luring men with only their upper bodies above the water, then dragging them underwater to kill them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05390))_
 
 > Habitat=Water
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05390))_
 
-> Context: Scylla is a beautiful woman from the waist up, but six serpent heads and 12 octopus tentacles grow from her lower body. They are amphibious and can move freely on land, but mainly prefer to live in water. Their personality is extremely wicked, often luring men with only their upper bodies above the water, then dragging them underwater to kill them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05392))_
+### Technical atom 33
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05392))_
+
+> Scylla is a beautiful woman from the waist up, but six serpent heads and 12 octopus tentacles grow from her lower body. They are amphibious and can move freely on land, but mainly prefer to live in water. Their personality is extremely wicked, often luring men with only their upper bodies above the water, then dragging them underwater to kill them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05391))_
 
 > Languages=Regional, silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05391))_
+
+### Technical atom 34
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05393))_
 
 > When in combat, a scylla can attack different targets at the same time with its six heads.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05393))_
 
-> Context: When in combat, a scylla can attack different targets at the same time with its six heads. However, she can only attack a single target three times in one round. Scylla can also use spirit magic. Her shaman skill level is 4 and her magic intensity is 13 (magic power 6).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05393))_
+### Technical atom 35
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05393))_
+
+> When in combat, a scylla can attack different targets at the same time with its six heads. However, she can only attack a single target three times in one round. Scylla can also use spirit magic. Her shaman skill level is 4 and her magic intensity is 13 (magic power 6).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05395))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05395))_
 
-> Context: When in combat, a scylla can attack different targets at the same time with its six heads. However, she can only attack a single target three times in one round. Scylla can also use spirit magic. Her shaman skill level is 4 and her magic intensity is 13 (magic power 6).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05393))_
+### Technical atom 36
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05393))_
+
+> When in combat, a scylla can attack different targets at the same time with its six heads. However, she can only attack a single target three times in one round. Scylla can also use spirit magic. Her shaman skill level is 4 and her magic intensity is 13 (magic power 6).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05396))_
 
 > Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05396))_
+
+### Technical atom 37
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05400))_
 
 > Languages=None Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05400))_
+
+### Technical atom 38
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05404))_
 
 > In combat, a Chimera can attack two targets at the same time, using its lion fangs and the snake fangs at the tip of its tail.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05404))_
 
-> Context: In combat, a Chimera can attack two targets at the same time, using its lion fangs and the snake fangs at the tip of its tail. It cannot attack the same target twice in one turn. The snake's fangs contain a neurotoxin that paralyzes the speech center, rendering those affected unable to speak or cast spells for one day. The black goat head on its back can also cast dark magic up to 5th level.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05404))_
+### Technical atom 39
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05404))_
+
+> In combat, a Chimera can attack two targets at the same time, using its lion fangs and the snake fangs at the tip of its tail. It cannot attack the same target twice in one turn. The snake's fangs contain a neurotoxin that paralyzes the speech center, rendering those affected unable to speak or cast spells for one day. The black goat head on its back can also cast dark magic up to 5th level.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05406))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05406))_
 
-> Context: In combat, a Chimera can attack two targets at the same time, using its lion fangs and the snake fangs at the tip of its tail. It cannot attack the same target twice in one turn. The snake's fangs contain a neurotoxin that paralyzes the speech center, rendering those affected unable to speak or cast spells for one day. The black goat head on its back can also cast dark magic up to 5th level.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05404))_
+### Technical atom 40
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05404))_
+
+> In combat, a Chimera can attack two targets at the same time, using its lion fangs and the snake fangs at the tip of its tail. It cannot attack the same target twice in one turn. The snake's fangs contain a neurotoxin that paralyzes the speech center, rendering those affected unable to speak or cast spells for one day. The black goat head on its back can also cast dark magic up to 5th level.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05407))_
 
 > Rarity=13 Agility=18 Movement Speed=15 Number=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05407))_
 
-> Context: Twintailed cats look like normal black cats, except for the fact that they have two tails. However, it is a true mythical beast that has an intellect greater than humans and can also use magic. They will occasionally meddle with humans on a whim, but rarely engage beyond light teasing. They believe that straightforward thinking is extremely dangerous. Therefore, when they communicate something, they say it in a mysterious way, as if they are trying to bewilder the person they're talking to. Alth
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05410))_
+### Technical atom 41
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05410))_
+
+> Twintailed cats look like normal black cats, except for the fact that they have two tails. However, it is a true mythical beast that has an intellect greater than humans and can also use magic. They will occasionally meddle with humans on a whim, but rarely engage beyond light teasing. They believe that straightforward thinking is extremely dangerous. Therefore, when they communicate something, they say it in a mysterious way, as if they are trying to bewilder the person they're talking to. Alth
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05411))_
 
 > If this happens, they will never betray their friends.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05411))_
 
-> Context: Twintailed cats look like normal black cats, except for the fact that they have two tails. However, it is a true mythical beast that has an intellect greater than humans and can also use magic. They will occasionally meddle with humans on a whim, but rarely engage beyond light teasing. They believe that straightforward thinking is extremely dangerous. Therefore, when they communicate something, they say it in a mysterious way, as if they are trying to bewilder the person they're talking to. Alth
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05410))_
+### Technical atom 42
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05410))_
+
+> Twintailed cats look like normal black cats, except for the fact that they have two tails. However, it is a true mythical beast that has an intellect greater than humans and can also use magic. They will occasionally meddle with humans on a whim, but rarely engage beyond light teasing. They believe that straightforward thinking is extremely dangerous. Therefore, when they communicate something, they say it in a mysterious way, as if they are trying to bewilder the person they're talking to. Alth
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05412))_
 
 > They can use ancient magic and spirit magic, but they are especially fond of illusions and magic that affects the mind.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05412))_
 
-> Context: They can use ancient magic and spirit magic, but they are especially fond of illusions and magic that affects the mind. Twintail Cats may have rare magical items related to these kinds of magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05412))_
+### Technical atom 43
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05412))_
+
+> They can use ancient magic and spirit magic, but they are especially fond of illusions and magic that affects the mind. Twintail Cats may have rare magical items related to these kinds of magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05415))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05415))_
+
+### Technical atom 44
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05417))_
 
 > Water adaptation Habitat=Secluded coasts Languages=Merman, low ancient Perception=Five senses (illumination)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05417))_
+
+### Technical atom 45
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05419))_
 
 > When in danger, telchines will use a _Shape Change_ spell to take on the form of a titan or an ugly beast to intimidate their opponents.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05419))_
 
-> Context: When in danger, telchines will use a _Shape Change_ spell to take on the form of a titan or an ugly beast to intimidate their opponents. When fighting in its true
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05419))_
+### Technical atom 46
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05419))_
+
+> When in danger, telchines will use a _Shape Change_ spell to take on the form of a titan or an ugly beast to intimidate their opponents. When fighting in its true
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05422))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05422))_
+
+### Technical atom 47
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05424))_
 
 > If you catch one as a child and tame it, you can even use it as a riding horse.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05424))_
 
-> Context: The hippogriff is said to have been born after a griffon (see p. 193) attacked a mare. A flying mythical beast, the front half of its body is an eagle and the back half is a horse. They live in grasslands and feed on small herbivores. Despite their appearance, they’re not very ferocious and will not attack humans unless they are very hungry. If you catch one as a child and tame it, you can even use it as a riding horse. Pegasus is a winged white horse that can fly. In the wild, Pegasus live on s
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05424, source-range-870a16bc-05428))_
+### Technical atom 48
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05424, source-range-870a16bc-05428))_
+
+> The hippogriff is said to have been born after a griffon (see p. 193) attacked a mare. A flying mythical beast, the front half of its body is an eagle and the back half is a horse. They live in grasslands and feed on small herbivores. Despite their appearance, they’re not very ferocious and will not attack humans unless they are very hungry. If you catch one as a child and tame it, you can even use it as a riding horse. Pegasus is a winged white horse that can fly. In the wild, Pegasus live on s
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05427))_
 
 > Habitat=Steep mountains, meadows Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05427))_
+
+### Technical atom 49
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05435))_
 
 > Agility=18 Movement Speed=18 (air) Frequency=Very Rare Number=One Intellect=Human Reaction=Adversarial Attack Points=Tentacles (strangle) x 4:12 (5)/Fangs:12 (5) Strike Points=8 x 4/10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05435))_
+
+### Technical atom 50
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05436))_
 
 > Evasion Points=15 (8) Defense Points=7 Life Points/Resistance=18 (14/7) Mental Points/Resistance=15 (13/6) Special Abilities=5th level dark magic (Magic Intensity/Magic Power=14/7) rarely
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05436))_
+
+### Technical atom 51
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05438))_
 
 > Habitat=Underground labyrinths, ruins Languages=Low ancient
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05438))_
+
+### Technical atom 52
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05439))_
 
 > Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05439))_
+
+### Technical atom 53
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05441))_
 
 > A head displacer itself has the ability to speak low ancient, but cannot use any of its host's (?) skills.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05441))_
 
-> Context: The head displacer looks like a severed human head with four vermillion tentacles growing out of its neck. When it remains alone, it moves by floating in the air. When it finds prey (humans), it'll first attack with its tentacles. The tentacles are usually about 15 cm long, but can extend up to 4 meters. If a tentacle attack hits, resolve it as strangling (see p. 236). If all 4 tentacles entangle its opponent, it'll also attack with its fangs. If the opponent becomes disabled, it'll devour their
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05441))_
+### Technical atom 54
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05441))_
+
+> The head displacer looks like a severed human head with four vermillion tentacles growing out of its neck. When it remains alone, it moves by floating in the air. When it finds prey (humans), it'll first attack with its tentacles. The tentacles are usually about 15 cm long, but can extend up to 4 meters. If a tentacle attack hits, resolve it as strangling (see p. 236). If all 4 tentacles entangle its opponent, it'll also attack with its fangs. If the opponent becomes disabled, it'll devour their
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05443))_
 
 > If the tentacles are not clear, those with the sage skill cannot use the _monster check_ ability.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05443))_
 
-> Context: If a character is in danger of a surprise attack by a head displacer, a character with the ranger skill may be able to notice it due to their _sense danger_ ability. Make a success roll against target score 15 using _ranger skill level + intelligence bonus_ as the baseline score, and if you succeed, you’ll be able to sense it, but if you fail, you’ll be hit by the surprise attack. If the tentacles are not clear, those with the sage skill cannot use the _monster check_ ability.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05443))_
+### Technical atom 55
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05443))_
+
+> If a character is in danger of a surprise attack by a head displacer, a character with the ranger skill may be able to notice it due to their _sense danger_ ability. Make a success roll against target score 15 using _ranger skill level + intelligence bonus_ as the baseline score, and if you succeed, you’ll be able to sense it, but if you fail, you’ll be hit by the surprise attack. If the tentacles are not clear, those with the sage skill cannot use the _monster check_ ability.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05445))_
 
 > A head displacer may use dark magic on very rare occasions.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05445))_
 
-> Context: A head displacer may use dark magic on very rare occasions. Its magic intensity is 14 (magic power 7).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05445))_
+### Technical atom 56
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05445))_
+
+> A head displacer may use dark magic on very rare occasions. Its magic intensity is 14 (magic power 7).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05447))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05447))_
 
-> Context: A head displacer may use dark magic on very rare occasions. Its magic intensity is 14 (magic power 7).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05445))_
+### Technical atom 57
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05445))_
+
+> A head displacer may use dark magic on very rare occasions. Its magic intensity is 14 (magic power 7).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05448))_
 
 > Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05448))_
+
+### Technical atom 58
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05449))_
 
 > Evasion Points=11 (4) Defense Points=8 Life Points/Resistance=20/14 (7) Mental Points/Resistance=16/13 (6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05449))_
+
+### Technical atom 59
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05450))_
 
 > Special Abilities=4th level ancient magic (Magic Intensity/Magic Power=13/6) Needs bloodsucking to
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05450))_
+
+### Technical atom 60
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05452))_
 
 > Habitat=Human villages Languages=Regional, low ancient Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05452))_
 
-> Context: Lamia cannot survive without sucking fresh blood from young humans, so they often use a _Shape Change_ spell to disguise themselves as human girls, deceive young people into becoming their lovers, and then secretly suck their
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05454))_
+### Technical atom 61
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05454))_
+
+> Lamia cannot survive without sucking fresh blood from young humans, so they often use a _Shape Change_ spell to disguise themselves as human girls, deceive young people into becoming their lovers, and then secretly suck their
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05455))_
 
 > Whenever they suck blood, they must return to their original form.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05455))_
+
+### Technical atom 62
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05459))_
 
 > Slaves have low intellect and cannot use magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05459))_
+
+### Technical atom 63
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05469))_
 
 > Habitat=Swamps Languages=Lizardman Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05469))_
+
+### Technical atom 64
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05479))_
 
 > Habitat=Deserts, Underground labyrinths Languages=Low ancient Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05479))_
+
+### Technical atom 65
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05482))_
 
 > In combat, a manticore can attack separate targets at the same time with its lion fangs and scorpion tail (it can also attack the same target twice).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05482))_
 
-> Context: In combat, a manticore can attack separate targets at the same time with its lion fangs and scorpion tail (it can also attack the same target twice). The stinger at the tip of its tail is highly poisonous. Those dealt damage by the tail attack must make a life force resistance roll against target score 13. Those who fail will become paralyzed and draw their last breath after one hour.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05482))_
+### Technical atom 66
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05482))_
+
+> In combat, a manticore can attack separate targets at the same time with its lion fangs and scorpion tail (it can also attack the same target twice). The stinger at the tip of its tail is highly poisonous. Those dealt damage by the tail attack must make a life force resistance roll against target score 13. Those who fail will become paralyzed and draw their last breath after one hour.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05484))_
 
 > Monster Level=6 Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05484))_
 
-> Context: In combat, a manticore can attack separate targets at the same time with its lion fangs and scorpion tail (it can also attack the same target twice). The stinger at the tip of its tail is highly poisonous. Those dealt damage by the tail attack must make a life force resistance roll against target score 13. Those who fail will become paralyzed and draw their last breath after one hour.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05482))_
+### Technical atom 67
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05482))_
+
+> In combat, a manticore can attack separate targets at the same time with its lion fangs and scorpion tail (it can also attack the same target twice). The stinger at the tip of its tail is highly poisonous. Those dealt damage by the tail attack must make a life force resistance roll against target score 13. Those who fail will become paralyzed and draw their last breath after one hour.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05485))_
 
 > Agility=10 Movement Speed=15 Number=One Frequency=Moderate Intellect=Low Reaction=Adversarial Attack Points=Two-handed ax: 13 (6) Strike Points=16 Attack Points=Strangle:15 (8) Strike Points=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05485))_
+
+### Technical atom 68
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05486))_
 
 > Evasion Points=12 (5) Defense Points=10 Life Points/Resistance=25/16 (9) Mental Points/Resistance=10/13 (6) Special Abilities=Strangling Habitat=Caves, underground labyrinths Languages=Minotaur Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05486))_
+
+### Technical atom 69
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05487))_
 
 > With that being said, all minotaurs are male, so they must use human women to produce offspring.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05487))_
+
+### Technical atom 70
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05492))_
 
 > Monster Level=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05492))_
+
+### Technical atom 71
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05493))_
 
 > Rarity=10 Agility=15 Movement Speed=30 Number=One to several
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05493))_
+
+### Technical atom 72
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05494))_
 
 > Frequency=Very Rare Intellect=High Reaction=Neutral to friendly Attack Points=Horn:12 (5)/Heel:12 (5) Strike Points=17/16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05494))_
+
+### Technical atom 73
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05495))_
 
 > Evasion Points=13 (6) Defense Points=9 Life Points/Resistance=25/16 (9) Mental Points/Resistance=20/15 (8)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05495))_
+
+### Technical atom 74
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05496))_
 
 > Special Abilities=6th level spirit magic (Magic Intensity/Magic Power=16/9) 10th level healing-type spirit magic (Magic Intensity/Magic Power=20/13)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05496))_
+
+### Technical atom 75
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05498))_
 
 > Languages=Silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05498))_
 
-> Context: Unicorns have high intellect and can communicate in silent spirit, but will only trust human (or elf or half-elf) virgin girls. Even in the unfortunate case of a fight, a unicorn will not do anything that would harm a human maiden. However, if anyone other than the maiden tries to touch it, the unicorn will issue a warning, and if you still do not listen, it’ll get angry and attack.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05500))_
+### Technical atom 76
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05500))_
+
+> Unicorns have high intellect and can communicate in silent spirit, but will only trust human (or elf or half-elf) virgin girls. Even in the unfortunate case of a fight, a unicorn will not do anything that would harm a human maiden. However, if anyone other than the maiden tries to touch it, the unicorn will issue a warning, and if you still do not listen, it’ll get angry and attack.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05502))_
 
 > Unicorns can also use spirit magic unrelated to the spirit of life, but at this time their shaman skill is only 6th level.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05502))_
 
-> Context: the spirit of life. For this reason, unicorn horns are sometimes traded as magical items. The user does not have to be a shaman or a woman, and may also wear metal armor. A horn has a reserve of mental points equal to _the unicorn's mental points when cut off x 10_ , and when you use magic, the base mental power cost of each is directly subtracted from this mental point reserve. If magic power is required, calculate it as 10. The reserve mental points cannot be recovered, and once they are used 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05504))_
+### Technical atom 77
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05504))_
+
+> the spirit of life. For this reason, unicorn horns are sometimes traded as magical items. The user does not have to be a shaman or a woman, and may also wear metal armor. A horn has a reserve of mental points equal to _the unicorn's mental points when cut off x 10_ , and when you use magic, the base mental power cost of each is directly subtracted from this mental point reserve. If magic power is required, calculate it as 10. The reserve mental points cannot be recovered, and once they are used
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05505))_
 
 > If a unicorn loses its horn due to overuse of magic or it being cut off, it will never grow back again.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05505))_
+
+### Technical atom 78
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05510))_
 
 > Special Abilities=Clairvoyance (within 100 meters)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05510))_
+
+### Technical atom 79
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05512))_
 
 > Languages=None Perception=Five senses (illumination)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05512))_
+
+### Technical atom 80
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05520))_
 
 > Habitat=Ruins, underground labyrinths Languages=Regional, low ancient Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05520))_
+
+### Technical atom 81
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05521))_
 
 > Although they can cast ancient magic, they will not use magic recklessly or challenge you to a fight unless something really bad happens.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05521))_
 
-> Context: The sphinx has the body of a lion with the wings of an eagle and a beautiful human-like face. They have an extremely long lifespan and have accumulated a great deal of knowledge. Although they can cast ancient magic, they will not use magic recklessly or challenge you to a fight unless something really bad happens.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05521))_
+### Technical atom 82
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05521))_
+
+> The sphinx has the body of a lion with the wings of an eagle and a beautiful human-like face. They have an extremely long lifespan and have accumulated a great deal of knowledge. Although they can cast ancient magic, they will not use magic recklessly or challenge you to a fight unless something really bad happens.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05522))_
 
 > If approached in a friendly manner, the sphinx may play a game of riddles to determine the intelligence of their opponent.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05522))_
+
+### Technical atom 83
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05527))_
 
 > Unlike dragons, they have low intellect, so they cannot cast spells, nor can they breathe fire.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05527))_
 
-> Context: Wyverns are said to be one of the subspecies of dragons. They are over 10 meters long and use their large wings to fly, but they have no front legs. Since they don't choose where they live, they are feared throughout Alecrast. Unlike dragons, they have low intellect, so they cannot cast spells, nor can they breathe fire.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05527))_
+### Technical atom 84
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05527))_
+
+> Wyverns are said to be one of the subspecies of dragons. They are over 10 meters long and use their large wings to fly, but they have no front legs. Since they don't choose where they live, they are feared throughout Alecrast. Unlike dragons, they have low intellect, so they cannot cast spells, nor can they breathe fire.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05528))_
 
 > If you fail, the poison deals damage resulting from a strike power 20 strike roll plus bonus damage 7.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05528))_
+
+### Technical atom 85
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05534))_
 
 > Habitat=Deserts
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05534))_
+
+### Technical atom 86
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05535))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05535))_
 
-> Context: You can attempt to use a large mirror (at least the size of a small shield) to catch the basilisk's gaze and reflect it back to turn the basilisk into stone. In that case, if a character attains a final score of 19 or greater on a resistance roll against petrification, they will be able to reflect it back at the basilisk. If this happens, the basilisk will automatically be petrified.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05538))_
+### Technical atom 87
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05538))_
+
+> You can attempt to use a large mirror (at least the size of a small shield) to catch the basilisk's gaze and reflect it back to turn the basilisk into stone. In that case, if a character attains a final score of 19 or greater on a resistance roll against petrification, they will be able to reflect it back at the basilisk. If this happens, the basilisk will automatically be petrified.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05539))_
 
 > Anyone holding a weapon with basilisk blood on it must make a life force resistance roll against target score 15 each round, and if they fail, they will suffer damage resulting from a strike power 10 strike roll plus bonus damage 8.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05539))_
 
-> Context: Basilisks also have a powerful poison in their blood. Weapons that deal damage to a basilisk will be soaked with the blood and become highly poisonous. Anyone holding a weapon with basilisk blood on it must make a life force resistance roll against target score 15 each round, and if they fail, they will suffer damage resulting from a strike power 10 strike roll plus bonus damage 8. If the resistance roll is successful, the strike force becomes 0. This damage can only be reduced by adventurer lev
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05539))_
+### Technical atom 88
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05539))_
+
+> Basilisks also have a powerful poison in their blood. Weapons that deal damage to a basilisk will be soaked with the blood and become highly poisonous. Anyone holding a weapon with basilisk blood on it must make a life force resistance roll against target score 15 each round, and if they fail, they will suffer damage resulting from a strike power 10 strike roll plus bonus damage 8. If the resistance roll is successful, the strike force becomes 0. This damage can only be reduced by adventurer lev
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05541))_
 
 > Monster Level=5 Rarity=10 Agility=12 Movement Speed=7 Number=One Frequency=Very Rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs:12 (5) Strike Points=13 Evasion Points=13 (6) Defense Points=9
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05541))_
 
-> Context: Basilisks also have a powerful poison in their blood. Weapons that deal damage to a basilisk will be soaked with the blood and become highly poisonous. Anyone holding a weapon with basilisk blood on it must make a life force resistance roll against target score 15 each round, and if they fail, they will suffer damage resulting from a strike power 10 strike roll plus bonus damage 8. If the resistance roll is successful, the strike force becomes 0. This damage can only be reduced by adventurer lev
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05539))_
+### Technical atom 89
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05539))_
+
+> Basilisks also have a powerful poison in their blood. Weapons that deal damage to a basilisk will be soaked with the blood and become highly poisonous. Anyone holding a weapon with basilisk blood on it must make a life force resistance roll against target score 15 each round, and if they fail, they will suffer damage resulting from a strike power 10 strike roll plus bonus damage 8. If the resistance roll is successful, the strike force becomes 0. This damage can only be reduced by adventurer lev
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05542))_
 
 > Life Points/Resistance=19/14 (7) Mental Points/Resistance=9/12 (5) Special Ability=Gaze (Resist target score=15, petrifying, once every 2 rounds)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05542))_
+
+### Technical atom 90
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05544))_
 
 > Habitat=Deserts
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05544))_
+
+### Technical atom 91
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05545))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05545))_
+
+### Technical atom 92
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05549))_
 
 > Rarity=18
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05549))_
+
+### Technical atom 93
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05553))_
 
 > Languages=None Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05553))_
+
+### Technical atom 94
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05555))_
 
 > A sea dragon can attack with its fangs and tail, and at the same time, it can also wrap its long body around its opponent and perform a strangling attack (see p.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05555))_
+
+### Technical atom 95
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05560))_
 
 > Agility=12 Movement Speed=35 (air) Number=One Frequency=Very Rare Intellect=Human Reaction=Neutral Attack Points=Fangs:15 (8)/Tail:15 (8) Strike Points=18/17
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05560))_
 
-> Context: Wyrms are highly territorial, and when other wyrms or giant creatures enter their territory, which is a radius of about 20 kilometers, they will immediately try to drive them out or they may approach them to eat them as food.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05563))_
+### Technical atom 96
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05563))_
+
+> Wyrms are highly territorial, and when other wyrms or giant creatures enter their territory, which is a radius of about 20 kilometers, they will immediately try to drive them out or they may approach them to eat them as food.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05566))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05566))_
+
+### Technical atom 97
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05570))_
 
 > Habitat=Underground labyrinths, ruins Languages=Low ancient Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05570))_
+
+### Technical atom 98
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05573))_
 
 > The game master should roll 1D to determine which ray the buckbaird fires (or if it attempts to ram).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05573))_
+
+### Technical atom 99
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05588))_
 
 > Life Points/Resistance=54/25 (18) Mental Points/Resistance=10/17 (10) Special Abilities=Head regenerate Water adaptation Habitat=Lakes, rivers Languages=None Perception=Five senses (illumination)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05588))_
+
+### Technical atom 100
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05592))_
 
 > Monster Level=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05592))_
+
+### Technical atom 101
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05593))_
 
 > Rarity=15 Agility=10 Movement Speed=10 Number=One Frequency=Very Rare Intellect=High Reaction=Adversarial Attack Points=Arm:18 (11) Strike Points=17
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05593))_
+
+### Technical atom 102
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05594))_
 
 > Evasion Points=16 (9) Defense Points=18 Life Points/Resistance=21/19 (12) Mental Points/Resistance=21/19 (12) Special Abilities=Gaze (Resist target score=17, petrifying, once every 3 rounds)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05594))_
+
+### Technical atom 103
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05598))_
 
 > Habitat=Forests
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05598))_
+
+### Technical atom 104
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05599))_
 
 > Languages=Low ancient Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05599))_
+
+### Technical atom 105
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05603))_
 
 > Those struck by this gaze must make a mental power resistance roll against target score 17.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05603))_
 
-> Context: A humbaba will fire a terrifying petrification ray from its one eye, once every 3 rounds. Those struck by this gaze must make a mental power resistance roll against target score 17. If you fail, you will instantly turn to stone. Even if this ray is reflected off a mirror, etc. it cannot affect the humbaba.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05603))_
+### Technical atom 106
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05603))_
+
+> A humbaba will fire a terrifying petrification ray from its one eye, once every 3 rounds. Those struck by this gaze must make a mental power resistance roll against target score 17. If you fail, you will instantly turn to stone. Even if this ray is reflected off a mirror, etc. it cannot affect the humbaba.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05604))_
 
 > You must roll 2D and if you don't roll a 7 or greater, you will become infected.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05604))_
 
-> Context: A humbaba can also spit fire from its large mouth, which takes up half of its face, once every 3 rounds. The fire is large enough to cover one person, and those hit by the fire will suffer damage resulting from a strike power 20 strike roll plus bonus damage 10. However, if you succeed on a mental power resistance roll against target score 17, the strike power becomes 10. This damage can only be reduced by adventurer level and magical defense. The humbaba's fire deals damage and at the same time
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05604))_
+### Technical atom 107
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05604))_
+
+> A humbaba can also spit fire from its large mouth, which takes up half of its face, once every 3 rounds. The fire is large enough to cover one person, and those hit by the fire will suffer damage resulting from a strike power 20 strike roll plus bonus damage 10. However, if you succeed on a mental power resistance roll against target score 17, the strike power becomes 10. This damage can only be reduced by adventurer level and magical defense. The humbaba's fire deals damage and at the same time
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05606))_
 
 > A humbaba cannot use gaze, fire, and normal attacks at the same time.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05606))_
 
-> Context: A humbaba cannot use gaze, fire, and normal attacks at the same time. Only one of these attacks can be performed per round.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05606))_
+### Technical atom 108
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05606))_
+
+> A humbaba cannot use gaze, fire, and normal attacks at the same time. Only one of these attacks can be performed per round.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05609))_
 
 > Rarity=13 Agility=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05609))_
+
+### Technical atom 109
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05610))_
 
 > Movement Speed=10/40 (air) Number=One Frequency=Very Rare Intellect=Animal Reaction=Neutral Attack Points=Beak:19 (12)/Talons:20 (13) Strike Points=22/22
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05610))_
+
+### Technical atom 110
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05611))_
 
 > Evasion Points=17 (10) Defense Points=16 Life Points/Resistance=40/24 (17) Mental Points/Resistance=20/21 (14)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05611))_
+
+### Technical atom 111
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05613))_
 
 > Habitat=Rarely seen on the distant southern islands of Alecrast
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05613))_
+
+### Technical atom 112
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05614))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05614))_
+
+### Technical atom 113
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05619))_
 
 > Monster Level=3 Rarity=13 Agility=6 Movement Speed=6 Number=One to several
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05619))_
+
+### Technical atom 114
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05627))_
 
 > Monster Level=10 Rarity=10 Agility=10 Movement Speed=10/30 (air)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05627))_
+
+### Technical atom 115
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05632))_
 
 > Habitat=Mountains, caves, other
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05632))_
+
+### Technical atom 116
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05633))_
 
 > Languages=Lizardman Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05633))_
 
-> Context: Lesser dragons are about 15 meters long. They have low intellect, and do not use magic. There is an outlook that they are like giant beasts, living according to instinct rather than thought.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05634))_
+### Technical atom 117
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05634))_
+
+> Lesser dragons are about 15 meters long. They have low intellect, and do not use magic. There is an outlook that they are like giant beasts, living according to instinct rather than thought.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05635))_
 
 > Those within range must make a mental power resistance roll against target score 17.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05635))_
 
-> Context: Lesser dragons have the ability to breathe fire, and are also resistant to fire. The lesser dragon's flames spread out in a semicircle, with a 20 meter forward radius. Those within range must make a mental power resistance roll against target score 17. If you fail, you’ll suffer
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05635))_
+### Technical atom 118
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05635))_
+
+> Lesser dragons have the ability to breathe fire, and are also resistant to fire. The lesser dragon's flames spread out in a semicircle, with a 20 meter forward radius. Those within range must make a mental power resistance roll against target score 17. If you fail, you’ll suffer
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05637))_
 
 > The use of fire is at the dragon's discretion, and there is no limit to the number of times it can use it, but it cannot make physical attacks with fangs or claws on the same round in which it uses fire.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05637))_
 
-> Context: damage resulting from a strike power 20 strike roll plus 10 points of bonus damage. The use of fire is at the dragon's discretion, and there is no limit to the number of times it can use it, but it cannot make physical attacks with fangs or claws on the same round in which it uses fire.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05637))_
+### Technical atom 119
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05637))_
+
+> damage resulting from a strike power 20 strike roll plus 10 points of bonus damage. The use of fire is at the dragon's discretion, and there is no limit to the number of times it can use it, but it cannot make physical attacks with fangs or claws on the same round in which it uses fire.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05640))_
 
 > Monster Level=15 Rarity=10 Agility=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05640))_
+
+### Technical atom 120
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05642))_
 
 > Anyone who hears the dragon's roar must make a mental power resistance roll against target score 17.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05642))_
 
-> Context: A dragon's roar also brings intense fear to those who hear it. Anyone who hears the dragon's roar must make a mental power resistance roll against target score 17. If you fail, determine the effect using Table 5-5: Fears (see p. 89). Treat this the same as magic that belongs to _mind_ . A dragon cannot breathe fire or attack with their fangs or claws on the same round in which it roars.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05642))_
+### Technical atom 121
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05642))_
+
+> A dragon's roar also brings intense fear to those who hear it. Anyone who hears the dragon's roar must make a mental power resistance roll against target score 17. If you fail, determine the effect using Table 5-5: Fears (see p. 89). Treat this the same as magic that belongs to _mind_ . A dragon cannot breathe fire or attack with their fangs or claws on the same round in which it roars.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05643))_
 
 > Evasion Points=20 (13) Defense Points=21 Life Points/Resistance=70/32 (25) Mental Points/Resistance=30/26 (19)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05643))_
 
-> Context: A dragon's roar also brings intense fear to those who hear it. Anyone who hears the dragon's roar must make a mental power resistance roll against target score 17. If you fail, determine the effect using Table 5-5: Fears (see p. 89). Treat this the same as magic that belongs to _mind_ . A dragon cannot breathe fire or attack with their fangs or claws on the same round in which it roars.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05642))_
+### Technical atom 122
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05642))_
+
+> A dragon's roar also brings intense fear to those who hear it. Anyone who hears the dragon's roar must make a mental power resistance roll against target score 17. If you fail, determine the effect using Table 5-5: Fears (see p. 89). Treat this the same as magic that belongs to _mind_ . A dragon cannot breathe fire or attack with their fangs or claws on the same round in which it roars.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05644))_
 
 > Special Abilities=10th level ancient magic (Magic Intensity/Magic Power=20/13)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05644))_
+
+### Technical atom 123
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05646))_
 
 > Dragons may take long periods of rest called _dormant season_ , but they do not require sleep in the normal sense of
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05646))_
+
+### Technical atom 124
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05651))_
 
 > Habitat=Mountains, caves, other Languages=Lizardman, low ancient Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05651))_
+
+### Technical atom 125
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05652))_
 
 > Furthermore, they can also use dragon roar magic that uses the lost dragon roar (though they possess most of their abilities without using magic).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05652))_

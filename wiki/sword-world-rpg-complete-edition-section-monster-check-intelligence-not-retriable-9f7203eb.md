@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-check-intelligence-not-retriable-9f7203eb@7fc432bc6ff9da164321c350748de3d2
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-check-intelligence-not-retriable-9f7203eb@012ea16f2ba9c41b1a042bd0d10e2f36
 ---
 
 # **[** ① **Monster Check [Intelligence]] (Not retriable)**
@@ -30,14 +30,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03447))_
+
 > When a sage sees a monster or hears its name, this ability may allow them to discover its true identity.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03447))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03448))_
 
 > You can also set a difficulty and ask for a success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03448))_
 
-> Context: Each monster has a score called _rarity_ . Using _sage skill level + intelligence bonus_ as the baseline score, make a success roll with this rarity as the target score, and if you succeed, you know the monster.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03449))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03449))_
+
+> Each monster has a score called _rarity_ . Using _sage skill level + intelligence bonus_ as the baseline score, make a success roll with this rarity as the target score, and if you succeed, you know the monster.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03450))_
 
 > Even if the _player_ knows, they must treat it as if they had no prior knowledge.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03450))_

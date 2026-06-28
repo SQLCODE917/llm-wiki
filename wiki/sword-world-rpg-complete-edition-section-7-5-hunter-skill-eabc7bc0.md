@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-7-5-hunter-skill-eabc7bc0@4803b8d955a3be023d57edff9ff6f686
+projection_coverage: section-sword-world-rpg-complete-edition-section-7-5-hunter-skill-eabc7bc0@ce28885358377b6bba8a540a6ff2e929
 ---
 
 # 7.5 Hunter Skill
@@ -52,20 +52,35 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: To use this skill, you are subject to the same equipment restrictions as when using the ranger skill. Also, as mentioned above, the hunter skill is similar to the ranger skill, so please refer to the ranger skill section for overlapping _abilities_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03661))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03661))_
+
+> To use this skill, you are subject to the same equipment restrictions as when using the ranger skill. Also, as mentioned above, the hunter skill is similar to the ranger skill, so please refer to the ranger skill section for overlapping _abilities_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03663))_
 
 > You can also use it to take apart and smoke meat.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03663))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03681))_
 
 > Therefore, it's no good if you cannot determine the price of the game you've hunted.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03681))_
 
-> Context: Hunters can see how much their prey and pre-processed products are worth. For prey and pre-processed items, set a difficulty and have them make a success roll.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03682))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03682))_
+
+> Hunters can see how much their prey and pre-processed products are worth. For prey and pre-processed items, set a difficulty and have them make a success roll.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03683))_
 
 > Game masters should not set a very high difficulty level for using this _ability_ unless you're trying to catch an extremely difficult animal.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03683))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08381))_
 
 | Ability | Relevant AbilityScore | Equipment Restrictions | Retryinga success roll on the same target |
 | --- | --- | --- | --- |
@@ -101,4 +116,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03683))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08381))_

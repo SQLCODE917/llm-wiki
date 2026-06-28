@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-perception-five-senses-darkvision-1a1b1e14@17650129f2e9b926bad720466102dec6
+projection_coverage: section-sword-world-rpg-complete-edition-section-perception-five-senses-darkvision-1a1b1e14@99668750ee91884fe52795b277fd0270
 ---
 
 # Perception=Five senses (Darkvision)
@@ -25,5 +25,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06587))_
+
 > The target will be unable to move, and the grunel can attack with the weapon in its right hand.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06587))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-plant-shell-ent-greater-plant-spirit-d4556b96@cfa56f4c0822d048fefbcc8213124798
+projection_coverage: section-sword-world-rpg-complete-edition-section-plant-shell-ent-greater-plant-spirit-d4556b96@3ba6dd3c4e969628d1febdbdee1a2d58
 ---
 
 # **[ Plant Shell ] (Ent/Greater Plant Spirit)**
@@ -25,20 +25,36 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: runs out, any damage beyond that (such as suffering 20 damage when the protection has only 10 remaining) will not reach the target. Any damage is first absorbed by this protective light, so until it vanishes, virtually no damage can be dealt directly to the body. When damage is dealt to this protection, reductions due to armor or adventurer level are not taken into account.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02666))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02666))_
+
+> runs out, any damage beyond that (such as suffering 20 damage when the protection has only 10 remaining) will not reach the target. Any damage is first absorbed by this protective light, so until it vanishes, virtually no damage can be dealt directly to the body. When damage is dealt to this protection, reductions due to armor or adventurer level are not taken into account.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02669))_
 
 > Base Mental Power Cost=28
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02669))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02670))_
 
 > Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02670))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02671))_
 
 > Area=A space with a 5 meter radius and a 2 meter height
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02671))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02672))_
 
 > Duration=1 day Effect=Create a shelter made of plants Type=Target score Expansion=Final score, duration, area Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02672))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02673))_
 
 > When entering or exiting the outer wall, the entrance can be partially opened or closed with one command from the caster.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02673))_

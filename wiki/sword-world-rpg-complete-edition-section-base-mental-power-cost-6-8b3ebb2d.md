@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-base-mental-power-cost-6-8b3ebb2d@a1e1058b1d5f77fe92e0405db0bef865
+projection_coverage: section-sword-world-rpg-complete-edition-section-base-mental-power-cost-6-8b3ebb2d@1ab7ac345f61ea097534c248edbcd53e
 ---
 
 # Base Mental Power Cost=6
@@ -25,14 +25,27 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01716))_
+
 > Distance=30 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01716))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01717))_
 
 > Area=Space with a 1 meter radius Duration=18 rounds Effect=Sounds within the area of effect can be generated elsewhere Type=Illusion
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01717))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01718))_
 
 > Countered (Overpowered) By: _Silence_ Expansion=Final score, duration, distance, area Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01718))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -66,4 +79,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01718))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

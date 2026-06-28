@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-languages-none-f1ab184d@245051dc50f1be66506a178402901b3e
+projection_coverage: section-sword-world-rpg-complete-edition-section-languages-none-f1ab184d@1d3d74eb9a83aa4f3bf741652ddefc69
 ---
 
 # Languages=None
@@ -23,11 +23,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05753))_
+
 > Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05753))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05754))_
 
 > Their personality is ferocious, moreover, they're carnivorous, always hungry and when any moving thing comes into view, they'll attack it immediately.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05754))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05755))_
 
 > When in combat, a giant scorpion can use the pincers on its arms and the barb on its tail to attack different targets (of course, it can also concentrate its attacks on a single target).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05755))_

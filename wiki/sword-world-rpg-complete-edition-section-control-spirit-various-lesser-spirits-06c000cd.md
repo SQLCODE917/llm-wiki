@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-control-spirit-various-lesser-spirits-06c000cd@ee318a51d5cfb616bec406ec758f6148
+projection_coverage: section-sword-world-rpg-complete-edition-section-control-spirit-various-lesser-spirits-06c000cd@7b5b009173f110385d6806a896aca4c8
 ---
 
 # **[ Control Spirit ] (Various lesser spirits)**
@@ -38,5 +38,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02410))_
+
 > Base Mental Power Cost=15 Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02410))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-goblin-4c11ea52@1f52d67cff0acdb699da2c22c13a1ab9
+projection_coverage: section-sword-world-rpg-complete-edition-section-goblin-4c11ea52@f3be404cd1d6b5e83f7566922a5dacce
 ---
 
 # **[ Goblin ]**
@@ -20,5 +20,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05036))_
+
 > Habitat=Mountains near human villages, forests, caves
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05036))_

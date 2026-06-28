@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-troll-28531435@20691b84d775cac8eec5d769cad0dd89
+projection_coverage: section-sword-world-rpg-complete-edition-section-troll-28531435@e58c18c939714a6b3610c03ac64f9e93
 ---
 
 # **[ Troll ]**
@@ -32,23 +32,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Spriggans are apostles of the dark gods and can use up to 2nd level dark magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05257))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05257))_
+
+> Spriggans are apostles of the dark gods and can use up to 2nd level dark magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05259))_
 
 > Monster Level=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05259))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05261))_
 
 > Special Abilities=Camouflage (Sense target score=13)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05261))_
 
-> Context: Although they're about 3 meters long, they walk with their backs bent, probably because they live in caves. They also have arms so long that their fingertips just barely touch the ground. Their body color is the same as a rock surface, and if you are careless, you may mistake one for a huge rock. To notice their presence, you must succeed on a success roll against target score 13 using _ranger skill level + intelligence bonus_ as the baseline score. If you fail, the troll can make a surprise att
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05264))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05264))_
+
+> Although they're about 3 meters long, they walk with their backs bent, probably because they live in caves. They also have arms so long that their fingertips just barely touch the ground. Their body color is the same as a rock surface, and if you are careless, you may mistake one for a huge rock. To notice their presence, you must succeed on a success roll against target score 13 using _ranger skill level + intelligence bonus_ as the baseline score. If you fail, the troll can make a surprise att
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05262))_
 
 > Habitat=Caves, hills Languages=Giant Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05262))_
 
-> Context: Trolls are titans with rock-like skin. They have very low intellect and rarely use tools. They live in caves and hills, and do not appear in forests or meadows. Due to this and their rugged, rock-like appearance, some sages believe that they may have some kind of connection with earth spirits, but it’s not clear whether this is true. In any case, it’s certain that they're terrifying monsters with enormous strength.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05263))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05263))_
+
+> Trolls are titans with rock-like skin. They have very low intellect and rarely use tools. They live in caves and hills, and do not appear in forests or meadows. Due to this and their rugged, rock-like appearance, some sages believe that they may have some kind of connection with earth spirits, but it’s not clear whether this is true. In any case, it’s certain that they're terrifying monsters with enormous strength.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05264))_
 
 > Their body color is the same as a rock surface, and if you are careless, you may mistake one for a huge rock.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05264))_

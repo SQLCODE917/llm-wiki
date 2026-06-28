@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-8-2-how-to-use-experience-points-increasing-skill-levels-b5ca719b@7a3811a6684b1c3ed8efff0a0037f3e5
+projection_coverage: section-sword-world-rpg-complete-edition-section-8-2-how-to-use-experience-points-increasing-skill-levels-b5ca719b@77bfe851b28a0eddc9953d50b7141e40
 ---
 
 # 8.2 How to Use Experience Points: Increasing Skill Levels
@@ -45,14 +45,25 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Experience points _cannot_ be negative. This is because you can't grow from experiences you haven't had. You also cannot _sell_ your skill levels for experience points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03740))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03740))_
+
+> Experience points _cannot_ be negative. This is because you can't grow from experiences you haven't had. You also cannot _sell_ your skill levels for experience points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03738))_
 
 > If he gains 5000 experience points again on his next adventure, he can now use his 5500 experience points to advance.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03738))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03743))_
 
 > **Table 8-1: Experience Points by Skill**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03743))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_
 
 | Attained Level | <br>Sorcerer | Shaman<br>Dragon Priest | Fighter<br>Tief<br>Priest<br>Dark Priest | Ranger<br>Sage<br>Bard | Reduction for<br>Acquiring<br>Sorcerer &<br>Sage at the<br>Same Time |
 | --- | --- | --- | --- | --- | --- |
@@ -86,4 +97,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03743))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_

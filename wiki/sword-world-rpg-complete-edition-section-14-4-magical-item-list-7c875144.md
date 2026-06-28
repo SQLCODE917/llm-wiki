@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-14-4-magical-item-list-7c875144@586c98708615829a02577b4486861358
+projection_coverage: section-sword-world-rpg-complete-edition-section-14-4-magical-item-list-7c875144@80b7f414879c0afc9e2c378754d124db
 ---
 
 # 14.4 Magical Item List
@@ -396,50 +396,93 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: These items can be discerned as treasure and their specific value can be determined by using the thief skill and sage skill’s _treasure appraisal_ ability.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06958))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06958))_
+
+> These items can be discerned as treasure and their specific value can be determined by using the thief skill and sage skill’s _treasure appraisal_ ability.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06960))_
 
 > If you spend enough time, you can determine a specific price.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06960))_
 
-> Context: These magical treasures can be understood through spells such as _Sense Magic_ , etc. and their specific power can be appraised using _Analyze Enchantment_ . Even the cheapest ones cost as much as 1000 silver coins, and if they’re expensive you can’t even put a price on them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06974))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06974))_
+
+> These magical treasures can be understood through spells such as _Sense Magic_ , etc. and their specific power can be appraised using _Analyze Enchantment_ . Even the cheapest ones cost as much as 1000 silver coins, and if they’re expensive you can’t even put a price on them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06975))_
 
 > Also, even if there’s no magical power, books and scrolls may contain high ancient spellbooks or valuable information about the culture of the ancient kingdom, so don’t ever treat them lightly.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06975))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06983))_
 
 > Form= An A4-sized, 352-page hardcover book
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06983))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06984))_
 
 > Enchanter=Miyuki Kiyomatsu/Group SNE Base Trade Price = 3600 Yen
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06984))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06985))_
 
 > Powers=Those who read it can know the rules of _Sword World RPG: Complete Edition_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06985))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06986))_
 
 > If you read this, you can understand the rules of _Sword World RPG: Complete Edition_ , and you’ll be able to enjoy adventures in Alecrast.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06986))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06995))_
 
 > If it’s for sale, adventurers can buy it at the price shown here.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06995))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07012))_
 
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07012))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07013))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07013))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07014))_
 
 > Form=A dagger, a one-handed sword, or a two-handed sword
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07014))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07015))_
 
 > Required Strength/Base Trade Price=See description
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07015))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07016))_
 
 > Powers=+1 to attack power and bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07016))_
 
-> Context: Rather than having these appear as _+1 swords_ , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and a history, as a way to enjoy the atmosphere of Alecrast. Here, as a guideline for rewards the game master should give to characters, is a list of prices of magical daggers, one-handed swords, and two-handed swords with +1 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))_
+
+> Rather than having these appear as _+1 swords_ , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and a history, as a way to enjoy the atmosphere of Alecrast. Here, as a guideline for rewards the game master should give to characters, is a list of prices of magical daggers, one-handed swords, and two-handed swords with +1 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07018))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -479,28 +522,48 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07018))_
 
-> Context: Rather than having these appear as _+1 swords_ , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and a history, as a way to enjoy the atmosphere of Alecrast. Here, as a guideline for rewards the game master should give to characters, is a list of prices of magical daggers, one-handed swords, and two-handed swords with +1 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07017))_
+
+> Rather than having these appear as _+1 swords_ , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and a history, as a way to enjoy the atmosphere of Alecrast. Here, as a guideline for rewards the game master should give to characters, is a list of prices of magical daggers, one-handed swords, and two-handed swords with +1 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07020))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07020))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07021))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07021))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07022))_
 
 > Form=A dagger, a one-handed sword, or a two-handed sword
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07022))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07023))_
 
 > Required Strength/Base Trade Price=See description
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07023))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07024))_
 
 > Powers=+2 to attack power and bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07024))_
 
-> Context: Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))_
+### Technical atom 19
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07027))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -540,28 +603,48 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07027))_
 
-> Context: Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))_
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07029))_
 
 > Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07029))_
+
+### Technical atom 21
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07030))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07030))_
+
+### Technical atom 22
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07031))_
 
 > Form=A dagger, a one-handed sword, or a two-handed sword
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07031))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07032))_
 
 > Required Strength/Base Trade Price=See description
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07032))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07033))_
 
 > Powers=+3 to attack power and bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07033))_
 
-> Context: Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))_
+### Technical atom 25
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07035))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -601,283 +684,534 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07035))_
 
-> Context: Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))_
+### Technical atom 26
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07034))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07037))_
 
 > Rarity=12 Enchanter=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07037))_
+
+### Technical atom 27
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07038))_
 
 > Required Strength=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07038))_
+
+### Technical atom 28
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07039))_
 
 > Form=A flute about 80 cm long
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07039))_
+
+### Technical atom 29
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07040))_
 
 > Base Trade Price=300 gamels (not for sale) Powers=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07040))_
+
+### Technical atom 30
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07044))_
 
 > Enchanter=Jagrilis, "The Master of Death" Form=Mage's staff engraved with high ancient runes
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07044))_
+
+### Technical atom 31
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07045))_
 
 > Required Strength=5 (Strike power 10) Base Trade Price=400,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07045))_
+
+### Technical atom 32
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07046))_
 
 > (complete)/27,000 gamels (incomplete) Powers=+1 to attack power and bonus damage. Makes undead monsters obey
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07046))_
+
+### Technical atom 33
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07047))_
 
 > When the staff is _incomplete_ , the undead monsters that can be made to obey are limited to those whose _total monster level_ is _less than or equal to the owner's mental power_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07047))_
 
-> Context: This staff grants its owner the power to make undead monsters obey. When the staff is _incomplete_ , the undead monsters that can be made to obey are limited to those whose _total monster level_ is _less than or equal to the owner's mental power_ . Make a success roll using _sorcerer skill level + intelligence bonus_ as the baseline score, and reveal the final score. If the score exceeds the target undead monster’s mental point resistance, they will obey.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07047))_
+### Technical atom 34
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07047))_
+
+> This staff grants its owner the power to make undead monsters obey. When the staff is _incomplete_ , the undead monsters that can be made to obey are limited to those whose _total monster level_ is _less than or equal to the owner's mental power_ . Make a success roll using _sorcerer skill level + intelligence bonus_ as the baseline score, and reveal the final score. If the score exceeds the target undead monster’s mental point resistance, they will obey.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07048))_
 
 > Once the staff is complete, you can control an _unlimited_ number of undead monsters, and you also gain a _+4 bonus_ to your final score when attempting to make them obey.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07048))_
+
+### Technical atom 35
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07051))_
 
 > Rarity=12 Enchanter=Unknown Form=A mithril silver broadsword that emits a pale light Required Strength=16 (Strike power 21) Base Trade Price=27,000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07051))_
+
+### Technical atom 36
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07052))_
 
 > Powers=+1 to attack power and bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07052))_
+
+### Technical atom 37
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07055))_
 
 > Rarity=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07055))_
+
+### Technical atom 38
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07056))_
 
 > Enchanter=Van
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07056))_
+
+### Technical atom 39
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07057))_
 
 > Form=Greatsword with a shining white blade Required Strength=18 (Strike power 23)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07057))_
+
+### Technical atom 40
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07058))_
 
 > Base Trade Price=1,000,000 gamels (not for sale, estimated)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07058))_
+
+### Technical atom 41
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07059))_
 
 > Powers=+3 to attack power and bonus damage. Sense danger. Knowledge of past kings
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07059))_
+
+### Technical atom 42
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07063))_
 
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07063))_
+
+### Technical atom 43
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07064))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07064))_
+
+### Technical atom 44
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07065))_
 
 > Form=Small mithril silver knife with a sharp curved blade
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07065))_
+
+### Technical atom 45
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07066))_
 
 > Required Strength=1 (Strike power 6) Base Trade Price=130,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07066))_
+
+### Technical atom 46
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07067))_
 
 > Powers=+2 to attack power and bonus damage. -2 to critical target
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07067))_
+
+### Technical atom 47
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07070))_
 
 > Rarity=17 Enchanter=Frodia, "The Liberator" Form=Heavy mace
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07070))_
+
+### Technical atom 48
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07071))_
 
 > Required Strength=16 (Strike power 16, 21 with two hands)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07071))_
+
+### Technical atom 49
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07072))_
 
 > Base Trade Price=700,000 gamels Powers=+2 to attack power and bonus damage. +12 to the user's strength (strength bonus +2), furthermore, the user is no
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07072))_
+
+### Technical atom 50
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07079))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07079))_
+
+### Technical atom 51
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07080))_
 
 > Enchanter=Cyrus "The Uncertain" Form=A trident with a fish engraved on the handle
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07080))_
+
+### Technical atom 52
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07081))_
 
 > Required Strength=15 (Strike power 15) Base Trade Price=235,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07081))_
+
+### Technical atom 53
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07082))_
 
 > Powers=+1 to attack power and bonus damage only in water. Gives the user the ability to act underwater
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07082))_
 
-> Context: Those who use this can breathe underwater and move freely like a fish. However, on land it's merely a trident with no bonuses.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07083))_
+### Technical atom 54
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07083))_
+
+> Those who use this can breathe underwater and move freely like a fish. However, on land it's merely a trident with no bonuses.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07086))_
 
 > Enchanter=Yulandia, "The Wanderer" Form=Shortsword
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07086))_
+
+### Technical atom 55
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07087))_
 
 > Base Trade Price=24,000 gamels Required Strength=7 (Strike power 7) Powers=+2 to attack power and bonus damage. Turns invisible with a password
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07087))_
 
-> Context: When you chant the specified password, this sword becomes completely invisible for 18 rounds. To someone you don't know, it’ll just look like you’re lightly clenching your fist.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07088))_
+### Technical atom 56
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07088))_
+
+> When you chant the specified password, this sword becomes completely invisible for 18 rounds. To someone you don't know, it’ll just look like you’re lightly clenching your fist.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07090))_
 
 > Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07090))_
 
-> Context: When you chant the specified password, this sword becomes completely invisible for 18 rounds. To someone you don't know, it’ll just look like you’re lightly clenching your fist.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07088))_
+### Technical atom 57
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07088))_
+
+> When you chant the specified password, this sword becomes completely invisible for 18 rounds. To someone you don't know, it’ll just look like you’re lightly clenching your fist.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07091))_
 
 > Enchanter=Rye Elk, "The Hundred Brained" Form=Bastard sword
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07091))_
+
+### Technical atom 58
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07092))_
 
 > Required Strength=16 (Strike power 16, 21 with two hands)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07092))_
+
+### Technical atom 59
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07093))_
 
 > Base Trade Price=650,000 gamels Powers=+1 to attack power and bonus damage. Also petrifies opponents it deals damage to.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07093))_
+
+### Technical atom 60
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07094))_
 
 > Anyone dealt damage by an attack from this sword must make a mental
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07094))_
 
-> Context: power resistance roll against target score 18. If you fail, you will be instantly petrified.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07095))_
+### Technical atom 61
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07095))_
+
+> power resistance roll against target score 18. If you fail, you will be instantly petrified.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07097))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07097))_
 
-> Context: power resistance roll against target score 18. If you fail, you will be instantly petrified.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07095))_
+### Technical atom 62
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07095))_
+
+> power resistance roll against target score 18. If you fail, you will be instantly petrified.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07098))_
 
 > Enchanter=Unknown Form=Scimitar
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07098))_
+
+### Technical atom 63
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07099))_
 
 > Required Strength=14 (Strike power 14) Base Trade Price=83,000 gamels Powers=+2 to attack power and bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07099))_
+
+### Technical atom 64
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07101))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07101))_
+
+### Technical atom 65
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07102))_
 
 > Enchanter=Dean "The Contrarian" Form=An old, slightly dirty sling Required Strength=4 (Strike power 4) Base Trade Price=80,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07102))_
+
+### Technical atom 66
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07103))_
 
 > Powers=-1 to hit checks and damage under normal use, fires an _Energy Bolt_ with a password
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07103))_
 
-> Context: Powers=-1 to hit checks and damage under normal use, fires an _Energy Bolt_ with a password
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07103))_
+### Technical atom 67
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07103))_
+
+> Powers=-1 to hit checks and damage under normal use, fires an _Energy Bolt_ with a password
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07106))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07106))_
+
+### Technical atom 68
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07107))_
 
 > Enchanter=Rafiness "The Colorful" Form=Mithril silver broadsword with high ancient runes engraved in bright red on the back of the blade
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07107))_
+
+### Technical atom 69
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07108))_
 
 > Required Strength=14 (Strike power 19) Base Trade Price=230,000 gamels Powers=+2 to attack power and bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07108))_
+
+### Technical atom 70
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07110))_
 
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07110))_
+
+### Technical atom 71
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07111))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07111))_
+
+### Technical atom 72
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07112))_
 
 > Form=Rapier
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07112))_
+
+### Technical atom 73
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07113))_
 
 > Required Strength=14 (Strike power 14) Powers=+1 to attack power and bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07113))_
+
+### Technical atom 74
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07114))_
 
 > Base Trade Price=9000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07114))_
+
+### Technical atom 75
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07118))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07118))_
 
-> Context: Since this is always spouting flames (unless it’s in its sheath), it has +10 to strike power, just like _Fire Weapon_ . Therefore, its strike power is 25 (30 with two hands).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+### Technical atom 76
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> Since this is always spouting flames (unless it’s in its sheath), it has +10 to strike power, just like _Fire Weapon_ . Therefore, its strike power is 25 (30 with two hands).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07119))_
 
 > Enchanter=Shiva, "The Friend of Salamander"
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07119))_
+
+### Technical atom 77
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
 
 > Since this is always spouting flames (unless it’s in its sheath), it has +10 to strike power, just like _Fire Weapon_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+### Technical atom 78
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07123))_
 
 > Rarity=18
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07123))_
+
+### Technical atom 79
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07124))_
 
 > Enchanter=Nimserias, "The Forger of Enlightenment"
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07124))_
+
+### Technical atom 80
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07125))_
 
 > Form=Greatsword
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07125))_
+
+### Technical atom 81
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07126))_
 
 > Required Strength=20 (Strike power 25) Base Trade Price=370,000 gamels Powers=+1 to attack power and bonus damage. Shockwaves
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07126))_
 
-> Context: This magic sword can use unlimited shockwaves (strike power 10, magic power 10), equivalent to the holy magic _Force_ (however, magic expansion is not possible). It can also be used as a magical catalyst.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07127))_
+### Technical atom 82
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07127))_
+
+> This magic sword can use unlimited shockwaves (strike power 10, magic power 10), equivalent to the holy magic _Force_ (however, magic expansion is not possible). It can also be used as a magical catalyst.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07129))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07129))_
 
-> Context: This magic sword can use unlimited shockwaves (strike power 10, magic power 10), equivalent to the holy magic _Force_ (however, magic expansion is not possible). It can also be used as a magical catalyst.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07127))_
+### Technical atom 83
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07127))_
+
+> This magic sword can use unlimited shockwaves (strike power 10, magic power 10), equivalent to the holy magic _Force_ (however, magic expansion is not possible). It can also be used as a magical catalyst.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07130))_
 
 > Enchanter=Rye Elk, "The Hundred Brained" Form=Broadsword with a face-like engraving from the handle to the blade
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07130))_
+
+### Technical atom 84
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07131))_
 
 > Required Strength=14 (Strike power 14) Base Trade Price=46,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07131))_
+
+### Technical atom 85
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07132))_
 
 > Powers=+1 to attack power and bonus damage. -1 to critical target. The sword itself is intelligent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07132))_
+
+### Technical atom 86
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07137))_
 
 > Enchanter=Shera, "The One Who Lives Between"
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07137))_
+
+### Technical atom 87
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07138))_
 
 > Form=Broadsword with a slightly reddish blade
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07138))_
+
+### Technical atom 88
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07139))_
 
 > Required Strength=14 (Strike power 16) Base Trade Price=20,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07139))_
+
+### Technical atom 89
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07140))_
 
 > Powers=Also deals damage to mental points of whoever's body was dealt damage (no bonus)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07140))_
+
+### Technical atom 90
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07141))_
 
 > Also, even if the sword does hit, this effect does _not_ apply if damage is _not_ dealt to life force.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07141))_
 
-> Context: Anyone whose life force has been dealt damage by this sword will suffer 2 points of damage to their mental points unless they succeed on a mental power resistance roll against target score 11. This damage cannot be reduced by adventurer level, similar to that of _Mental Attack_ . Also, even if the sword does hit, this effect does _not_ apply if damage is _not_ dealt to life force.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07141))_
+### Technical atom 91
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07141))_
+
+> Anyone whose life force has been dealt damage by this sword will suffer 2 points of damage to their mental points unless they succeed on a mental power resistance roll against target score 11. This damage cannot be reduced by adventurer level, similar to that of _Mental Attack_ . Also, even if the sword does hit, this effect does _not_ apply if damage is _not_ dealt to life force.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07143))_
 
 > Rarity=14 Enchanter=Unknown Form=Ornately decorated Shamshir Required Strength=15 (Strike power 20)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07143))_
+
+### Technical atom 92
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07146))_
 
 > Powers=+1 to attack power and bonus damage. Fresh water also flows from the blade
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07146))_
+
+### Technical atom 93
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07147))_
 
 > Moreover, when the user gives a command with a password, it can produce 1 liter of fresh water in 1 minute.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07147))_
 
-> Context: This magical shamshir always has dew trickling down the blade, to wash away blood and grease. Moreover, when the user gives a command with a password, it can produce 1 liter of fresh water in 1 minute. This ability can be used up to 10 times per day. The water produced by this sword also allows you to use spirit magic sourced from the power of undine. This sword may have been made for travelers crossing the desert.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07147))_
+### Technical atom 94
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07147))_
+
+> This magical shamshir always has dew trickling down the blade, to wash away blood and grease. Moreover, when the user gives a command with a password, it can produce 1 liter of fresh water in 1 minute. This ability can be used up to 10 times per day. The water produced by this sword also allows you to use spirit magic sourced from the power of undine. This sword may have been made for travelers crossing the desert.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07149))_
 
 > Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07149))_
+
+### Technical atom 95
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07151))_
 
 > Form=Dagger with a ruby set in a silver handle
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07151))_
+
+### Technical atom 96
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07152))_
 
 > Required Strength=3 (Strike power 3) Base Trade Price=5000 gamels Powers=+1 to attack power and bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07152))_
+
+### Technical atom 97
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07155))_
 
 > Rarity=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07155))_
+
+### Technical atom 98
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07156))_
 
 > Enchanter=Roan, “The Imperfect” Form=Battle-ax
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07156))_
+
+### Technical atom 99
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07157))_
 
 > Required Strength=18 (Strike power 18, 23 with two hands) Base Trade Price=7100 gamels Powers=+1 to bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07157))_
+
+### Technical atom 100
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07161))_
 
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07161))_
+
+### Technical atom 101
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07162))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07162))_
+
+### Technical atom 102
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07163))_
 
 > Form=Non-metal or ring mail armor Required Strength/Base Trade Price=See description
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07163))_
+
+### Technical atom 103
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07164))_
 
 > Powers=+1 to evasion speed and damage reduction
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07164))_
 
-> Context: Similar to weapons, it's recommended to give each piece of magical armor its own name and lore by referencing the descriptions of magical armor that follow, which helps enhance the atmosphere of Alecrast. Here, we provide a price list of non-metallic or ring mail armor with _+1 power_ as a guideline for game masters when rewarding characters. For armor, items that exceed the _required strength_ often see decreased demand, so higher _required strength_ doesn't necessarily mean higher prices. This
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07165))_
+### Technical atom 104
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07165))_
+
+> Similar to weapons, it's recommended to give each piece of magical armor its own name and lore by referencing the descriptions of magical armor that follow, which helps enhance the atmosphere of Alecrast. Here, we provide a price list of non-metallic or ring mail armor with _+1 power_ as a guideline for game masters when rewarding characters. For armor, items that exceed the _required strength_ often see decreased demand, so higher _required strength_ doesn't necessarily mean higher prices. This
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -907,19 +1241,34 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07165))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
+
+### Technical atom 105
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07169))_
 
 > Enchanter=Many Form=Metal armor
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07169))_
+
+### Technical atom 106
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07170))_
 
 > Required Strength/Base Trade Price=See description
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07170))_
+
+### Technical atom 107
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07171))_
 
 > Powers=+1 to evasion speed and damage reduction
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07171))_
+
+### Technical atom 108
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07172))_
 
 > While armor with high required strength tends to be unpopular, when it becomes
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07172))_
+
+### Technical atom 109
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07176))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -951,22 +1300,38 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07172))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07176))_
+
+### Technical atom 110
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07179))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07179))_
+
+### Technical atom 111
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07180))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07180))_
+
+### Technical atom 112
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07181))_
 
 > Form=Non-metal or ring mail armor Required Strength/Base Trade Price=See description
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07181))_
+
+### Technical atom 113
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07182))_
 
 > Powers=+2 to evasion speed and damage reduction
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07182))_
 
-> Context: Here is a list of prices of magical nonmetal or ring mail armor with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07183))_
+### Technical atom 114
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07183))_
+
+> Here is a list of prices of magical nonmetal or ring mail armor with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07184))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -996,16 +1361,26 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07183))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07184))_
+
+### Technical atom 115
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07187))_
 
 > Enchanter=Many Form=Metal armor
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07187))_
+
+### Technical atom 116
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07188))_
 
 > Required Strength/Base Trade Price=See description Powers=+2 to evasion speed and damage reduction
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07188))_
 
-> Context: Here is a list of prices of magical metal armor with +2 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))_
+### Technical atom 117
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))_
+
+> Here is a list of prices of magical metal armor with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07190))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -1037,19 +1412,32 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07189))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07190))_
+
+### Technical atom 118
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07193))_
 
 > Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07193))_
+
+### Technical atom 119
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07194))_
 
 > Enchanter=Many Form=Non-metal or ring mail armor Required Strength/Base Trade Price=See description
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07194))_
+
+### Technical atom 120
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07195))_
 
 > Magic Power=+3 to evasion speed and damage reduction
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07195))_
 
-> Context: Here is a list of prices of magical nonmetal or ring mail armor with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07196))_
+### Technical atom 121
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07196))_
+
+> Here is a list of prices of magical nonmetal or ring mail armor with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07197))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -1079,13 +1467,20 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07196))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07197))_
+
+### Technical atom 122
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07200))_
 
 > Required Strength/Base Trade Price=See description Magic Power=+3 to evasion speed and damage reduction
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07200))_
 
-> Context: Here is a list of prices of magical metal armor with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+### Technical atom 123
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+
+> Here is a list of prices of magical metal armor with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07202))_
 
 | Required | Price | Required | Price |
 | --- | --- | --- | --- |
@@ -1117,22 +1512,36 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07202))_
 
-> Context: Here is a list of prices of magical metal armor with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+### Technical atom 124
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+
+> Here is a list of prices of magical metal armor with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07204))_
 
 > Rarity=12 (+1)/14 (+2)/16 (+3) Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07204))_
+
+### Technical atom 125
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07205))_
 
 > Form=Shield
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07205))_
+
+### Technical atom 126
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07206))_
 
 > Required Strength/Base Trade Price=See description Powers=+1~+3 to evasion speed
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07206))_
 
-> Context: This is a price list for magical shields with enchantments. For shields with +2 or higher enchantment, small shields tend to be more expensive than large shields due to differences in demand. For the same reason, high-quality large shields +1/+2 are more expensive than large shields +2/+3. Shields requiring strength of 13 cannot be used by most adventurers.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))_
+### Technical atom 127
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))_
+
+> This is a price list for magical shields with enchantments. For shields with +2 or higher enchantment, small shields tend to be more expensive than large shields due to differences in demand. For the same reason, high-quality large shields +1/+2 are more expensive than large shields +2/+3. Shields requiring strength of 13 cannot be used by most adventurers.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07208))_
 
 | Shield | Price<br>(Gamels) |
 | --- | --- |
@@ -1164,691 +1573,1276 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07208))_
 
-> Context: This is a price list for magical shields with enchantments. For shields with +2 or higher enchantment, small shields tend to be more expensive than large shields due to differences in demand. For the same reason, high-quality large shields +1/+2 are more expensive than large shields +2/+3. Shields requiring strength of 13 cannot be used by most adventurers.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))_
+### Technical atom 128
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))_
+
+> This is a price list for magical shields with enchantments. For shields with +2 or higher enchantment, small shields tend to be more expensive than large shields due to differences in demand. For the same reason, high-quality large shields +1/+2 are more expensive than large shields +2/+3. Shields requiring strength of 13 cannot be used by most adventurers.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07210))_
 
 > Rarity=18
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07210))_
+
+### Technical atom 129
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07211))_
 
 > Enchanter=Many Form=Robe
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07211))_
+
+### Technical atom 130
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07212))_
 
 > Required Strength=1 (Defense power 1) Base Trade Price=200,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07212))_
+
+### Technical atom 131
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07214))_
 
 > Powers=+3 to evasion speed and damage reduction
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07214))_
+
+### Technical atom 132
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07221))_
 
 > Form=Transparent blue cloak Required Strength=1 (Defense power 1) Base Trade Price=16,000 gamels Powers=+2 to evasion speed only against projectiles
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07221))_
+
+### Technical atom 133
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07227))_
 
 > Rarity=18 Enchanter=Many Form=Cloth armor Required Strength=3 (Defense power 3) Base Trade Price=250,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07227))_
+
+### Technical atom 134
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07228))_
 
 > Powers=+3 to evasion speed and damage reduction. Also gives +3 to resistance to firetype attacks.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07228))_
 
-> Context: When performing a _treasure appraisal_ with the _sage skill_ , if the _final score_ of the success roll is between 12 and 17, it will only be identified as a +1 soft leather. Only when the _final score_ reaches 17 will you notice that this armor has a hidden drawback. This armor completely neutralizes the wearer's resistance to magic. As a result, while wearing this armor, all attempts to resist any magic automatically fail.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07232))_
+### Technical atom 135
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07232))_
+
+> When performing a _treasure appraisal_ with the _sage skill_ , if the _final score_ of the success roll is between 12 and 17, it will only be identified as a +1 soft leather. Only when the _final score_ reaches 17 will you notice that this armor has a hidden drawback. This armor completely neutralizes the wearer's resistance to magic. As a result, while wearing this armor, all attempts to resist any magic automatically fail.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07230))_
 
 > Rarity=12/17 Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07230))_
 
-> Context: When performing a _treasure appraisal_ with the _sage skill_ , if the _final score_ of the success roll is between 12 and 17, it will only be identified as a +1 soft leather. Only when the _final score_ reaches 17 will you notice that this armor has a hidden drawback. This armor completely neutralizes the wearer's resistance to magic. As a result, while wearing this armor, all attempts to resist any magic automatically fail.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07232))_
+### Technical atom 136
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07232))_
+
+> When performing a _treasure appraisal_ with the _sage skill_ , if the _final score_ of the success roll is between 12 and 17, it will only be identified as a +1 soft leather. Only when the _final score_ reaches 17 will you notice that this armor has a hidden drawback. This armor completely neutralizes the wearer's resistance to magic. As a result, while wearing this armor, all attempts to resist any magic automatically fail.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07231))_
 
 > Form=Soft leather armor Required Strength=7 (Defense power 7) Base Trade Price=16,000 gamels Powers=+1 to evasion speed and damage reduction. Unable to resist magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07231))_
+
+### Technical atom 137
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07232))_
 
 > When performing a _treasure appraisal_ with the _sage skill_ , if the _final score_ of the success roll is between 12 and 17, it will only be identified as a +1 soft leather.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07232))_
 
-> Context: When performing a _treasure appraisal_ with the _sage skill_ , if the _final score_ of the success roll is between 12 and 17, it will only be identified as a +1 soft leather. Only when the _final score_ reaches 17 will you notice that this armor has a hidden drawback. This armor completely neutralizes the wearer's resistance to magic. As a result, while wearing this armor, all attempts to resist any magic automatically fail.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07232))_
+### Technical atom 138
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07232))_
+
+> When performing a _treasure appraisal_ with the _sage skill_ , if the _final score_ of the success roll is between 12 and 17, it will only be identified as a +1 soft leather. Only when the _final score_ reaches 17 will you notice that this armor has a hidden drawback. This armor completely neutralizes the wearer's resistance to magic. As a result, while wearing this armor, all attempts to resist any magic automatically fail.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07233))_
 
 > Enchanter=Somska, "The Forger of Colors" Form=Cloth armor woven with fibrous mithril silver
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07233))_
 
-> Context: When performing a _treasure appraisal_ with the _sage skill_ , if the _final score_ of the success roll is between 12 and 17, it will only be identified as a +1 soft leather. Only when the _final score_ reaches 17 will you notice that this armor has a hidden drawback. This armor completely neutralizes the wearer's resistance to magic. As a result, while wearing this armor, all attempts to resist any magic automatically fail.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07232))_
+### Technical atom 139
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07232))_
+
+> When performing a _treasure appraisal_ with the _sage skill_ , if the _final score_ of the success roll is between 12 and 17, it will only be identified as a +1 soft leather. Only when the _final score_ reaches 17 will you notice that this armor has a hidden drawback. This armor completely neutralizes the wearer's resistance to magic. As a result, while wearing this armor, all attempts to resist any magic automatically fail.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07234))_
 
 > Required Strength=3 (Defense power 8) Base Trade Price=25,000 gamels Powers=-1 to opponent's strike points or +1 to their critical target
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07234))_
 
-> Context: There is no bonus to evasion speed. When facing monsters with fixed strike points, there is _1 point of damage reduction_ . When facing opponents who use weapons like adventurers and determine damage through strike rolls, there is an effect that _increases their critical target by +1_ , but there is no direct damage reduction.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07235))_
+### Technical atom 140
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07235))_
+
+> There is no bonus to evasion speed. When facing monsters with fixed strike points, there is _1 point of damage reduction_ . When facing opponents who use weapons like adventurers and determine damage through strike rolls, there is an effect that _increases their critical target by +1_ , but there is no direct damage reduction.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07237))_
 
 > Rarity=13/18
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07237))_
 
-> Context: There is no bonus to evasion speed. When facing monsters with fixed strike points, there is _1 point of damage reduction_ . When facing opponents who use weapons like adventurers and determine damage through strike rolls, there is an effect that _increases their critical target by +1_ , but there is no direct damage reduction.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07235))_
+### Technical atom 141
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07235))_
+
+> There is no bonus to evasion speed. When facing monsters with fixed strike points, there is _1 point of damage reduction_ . When facing opponents who use weapons like adventurers and determine damage through strike rolls, there is an effect that _increases their critical target by +1_ , but there is no direct damage reduction.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07238))_
 
 > Enchanter=Cyrus, "The Uncertain" Form=Large shield with an emerald set in the center Required Strength=13 Base Trade Price=3300 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07238))_
+
+### Technical atom 142
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07239))_
 
 > Powers=+1 to Evasion, +2 to resistance to Breath attacks, concentrates attacks on the owner
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07239))_
+
+### Technical atom 143
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07240))_
 
 > When performing a _treasure appraisal_ with the sage skill, if the success roll's _final score_ is 13 or higher but less than 18, you can only determine that it is a +1 large shield that also provides +2 resistance against breath attacks.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07240))_
 
-> Context: Only when the final score reaches 18 do you realize this shield has a catch. The emerald gleaming in the center of the shield attracts the attention of opponents, causing them to focus their attacks on the user. Enemies that use breath attacks will especially target the shield's wielder. Those who carry this shield, which trades higher evasion speed for drawing enemy attacks, are destined to become shields for their companions. If the emerald is removed, all magical power is lost. The emerald it
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07241))_
+### Technical atom 144
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07241))_
+
+> Only when the final score reaches 18 do you realize this shield has a catch. The emerald gleaming in the center of the shield attracts the attention of opponents, causing them to focus their attacks on the user. Enemies that use breath attacks will especially target the shield's wielder. Those who carry this shield, which trades higher evasion speed for drawing enemy attacks, are destined to become shields for their companions. If the emerald is removed, all magical power is lost. The emerald it
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07244))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07244))_
+
+### Technical atom 145
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07245))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07245))_
+
+### Technical atom 146
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07246))_
 
 > Form=Earrings with blue gems set in a teardrop-shaped gold base
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07246))_
+
+### Technical atom 147
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07247))_
 
 > Base Trade Price=96,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07247))_
+
+### Technical atom 148
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07248))_
 
 > Powers=Can understand languages you don’t know
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07248))_
+
+### Technical atom 149
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07251))_
 
 > Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07251))_
+
+### Technical atom 150
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07252))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07252))_
+
+### Technical atom 151
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07253))_
 
 > Form=Small silver earrings with intricately colored gems
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07253))_
+
+### Technical atom 152
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07254))_
 
 > Base Trade Price=170,000 gamels Powers=Can shapeshift into a small animal.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07254))_
+
+### Technical atom 153
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07255))_
 
 > When wearing these earrings and focusing your thoughts, you can transform into small animals such as mice or birds.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07255))_
 
-> Context: When wearing these earrings and focusing your thoughts, you can transform into small animals such as mice or birds. After shapeshifting, you can return to your original form by either touching the earrings while concentrating, or by using _Dispel Magic_ (target score 15). Additionally, after shapeshifting, you retain the same intelligence you had before the transformation.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07255))_
+### Technical atom 154
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07255))_
+
+> When wearing these earrings and focusing your thoughts, you can transform into small animals such as mice or birds. After shapeshifting, you can return to your original form by either touching the earrings while concentrating, or by using _Dispel Magic_ (target score 15). Additionally, after shapeshifting, you retain the same intelligence you had before the transformation.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07257))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07257))_
 
-> Context: When wearing these earrings and focusing your thoughts, you can transform into small animals such as mice or birds. After shapeshifting, you can return to your original form by either touching the earrings while concentrating, or by using _Dispel Magic_ (target score 15). Additionally, after shapeshifting, you retain the same intelligence you had before the transformation.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07255))_
+### Technical atom 155
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07255))_
+
+> When wearing these earrings and focusing your thoughts, you can transform into small animals such as mice or birds. After shapeshifting, you can return to your original form by either touching the earrings while concentrating, or by using _Dispel Magic_ (target score 15). Additionally, after shapeshifting, you retain the same intelligence you had before the transformation.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07258))_
 
 > Form=A bracelet with a large gem Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07258))_
+
+### Technical atom 156
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07259))_
 
 > Base Trade Price=120,000 gamels Powers=Sucks in an object
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07259))_
+
+### Technical atom 157
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07260))_
 
 > While the object is absorbed, if you speak the password again, you can retrieve the object.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07260))_
+
+### Technical atom 158
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07265))_
 
 > Enchanter=Cyrus, "The Uncertain" Form=Small silver pendant Base Trade Price=80,000 gamels Powers=Wearer never falls asleep.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07265))_
+
+### Technical atom 159
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07269))_
 
 > Enchanter=Gerebeis, "The Sharptongued" Form=Necklace adorned with bluish diamonds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07269))_
+
+### Technical atom 160
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07270))_
 
 > Base Trade Price=170,000 gamels Powers=Makes one target believe what the wearer believes.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07270))_
+
+### Technical atom 161
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07275))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07275))_
+
+### Technical atom 162
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07276))_
 
 > Enchanter=Many Form=Amulet
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07276))_
+
+### Technical atom 163
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07277))_
 
 > Base Trade Price=190,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07277))_
+
+### Technical atom 164
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07278))_
 
 > Powers=Know who is detecting
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07278))_
+
+### Technical atom 165
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07281))_
 
 > Rarity=15 Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07281))_
+
+### Technical atom 166
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07282))_
 
 > Form=Amulet
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07282))_
+
+### Technical atom 167
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07283))_
 
 > Base Trade Price=6,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07283))_
+
+### Technical atom 168
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07284))_
 
 > Powers=+1 to effect checks against undead
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07284))_
+
+### Technical atom 169
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07285))_
 
 > If the person wearing this amulet uses the holy magic _Turn Undead_ or the spellsong Requiem, they can add +1 to a 2D roll when making an _effect check_ against undead (if the roll is 12, treat it as 12).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07285))_
 
-> Context: If the person wearing this amulet uses the holy magic _Turn Undead_ or the spellsong Requiem, they can add +1 to a 2D roll when making an _effect check_ against undead (if the roll is 12, treat it as 12).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07285))_
+### Technical atom 170
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07285))_
+
+> If the person wearing this amulet uses the holy magic _Turn Undead_ or the spellsong Requiem, they can add +1 to a 2D roll when making an _effect check_ against undead (if the roll is 12, treat it as 12).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07287))_
 
 > Rarity=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07287))_
 
-> Context: If the person wearing this amulet uses the holy magic _Turn Undead_ or the spellsong Requiem, they can add +1 to a 2D roll when making an _effect check_ against undead (if the roll is 12, treat it as 12).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07285))_
+### Technical atom 171
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07285))_
+
+> If the person wearing this amulet uses the holy magic _Turn Undead_ or the spellsong Requiem, they can add +1 to a 2D roll when making an _effect check_ against undead (if the roll is 12, treat it as 12).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07288))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07288))_
+
+### Technical atom 172
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07289))_
 
 > Form=Amulet with a jeweled ball at the tip Base Trade Price=48,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07289))_
+
+### Technical atom 173
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07290))_
 
 > Powers=The wearers can talk to each other over a far distance.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07290))_
+
+### Technical atom 174
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07295))_
 
 > Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07295))_
+
+### Technical atom 175
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07297))_
 
 > Base Trade Price=Stored mental points x mental points x 100 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07297))_
+
+### Technical atom 176
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07298))_
 
 > Normally, this stone stores 2D+10 mental points, and a rune master can use magic by consuming these mental points instead of their own mental power.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07298))_
 
-> Context: When referring to a magic crystal, it means a stone that concentrates magic power. While it looks similar to topaz at first glance, upon closer inspection it emits a bluish-white light from within. Normally, this stone stores 2D+10 mental points, and a rune master can use magic by consuming these mental points instead of their own mental power. However, only one stone can be used at a time, and it cannot be used simultaneously with the caster's own mental power. It can also be used as a substitu
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07298))_
+### Technical atom 177
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07298))_
+
+> When referring to a magic crystal, it means a stone that concentrates magic power. While it looks similar to topaz at first glance, upon closer inspection it emits a bluish-white light from within. Normally, this stone stores 2D+10 mental points, and a rune master can use magic by consuming these mental points instead of their own mental power. However, only one stone can be used at a time, and it cannot be used simultaneously with the caster's own mental power. It can also be used as a substitu
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07300))_
 
 > In this case, adventurers can purchase these stones if they have enough money.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07300))_
+
+### Technical atom 178
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07304))_
 
 > Rarity=13 Enchanter=Many Form=Spherical polished amber crystal Base Trade Price=2,600 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07304))_
+
+### Technical atom 179
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07305))_
 
 > Powers=Makes 10 square meters of ground underfoot (sand or mud) more stable
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07305))_
 
-> Context: An earth crystal will break after one use.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07306))_
+### Technical atom 180
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07306))_
+
+> An earth crystal will break after one use.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07308))_
 
 > Rarity=13 Enchanter=Many Form=Spherical polished white crystal Base Trade Price=5,000 gamels Powers=Has the same effect as Blizzard when thrown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07308))_
 
-> Context: When thrown it deals strike power 20 damage within its area of effect, equivalent to _Blizzard_ . Its magic power is 5. Crystal breaks after one use.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07309))_
+### Technical atom 181
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07309))_
+
+> When thrown it deals strike power 20 damage within its area of effect, equivalent to _Blizzard_ . Its magic power is 5. Crystal breaks after one use.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07311))_
 
 > Rarity=13 Enchanter=Many Form=Spherical polished blue crystal Base Trade Price=Remaining absorption points x 480 gamels Powers=Absorbs 10 points of fire damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07311))_
+
+### Technical atom 182
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07316))_
 
 > Powers=Casts a Darkness spell
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07316))_
+
+### Technical atom 183
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07319))_
 
 > Rarity=13 Enchanter=Many Form=Spherical polished rose-colored crystal Base Trade Price=3,200 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07319))_
+
+### Technical atom 184
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07320))_
 
 > Powers=Has the same effect as Fireball when thrown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07320))_
 
-> Context: When thrown it deals strike power 20 damage within its area of effect, equivalent to _Fireball_ . Its _magic power_ is 4 and breaks after one use.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07321))_
+### Technical atom 185
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07321))_
+
+> When thrown it deals strike power 20 damage within its area of effect, equivalent to _Fireball_ . Its _magic power_ is 4 and breaks after one use.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07323))_
 
 > Rarity=13 Enchanter=Many Form=Spherical polished rainbow-colored crystal
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07323))_
 
-> Context: When thrown it deals strike power 20 damage within its area of effect, equivalent to _Fireball_ . Its _magic power_ is 4 and breaks after one use.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07321))_
+### Technical atom 186
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07321))_
+
+> When thrown it deals strike power 20 damage within its area of effect, equivalent to _Fireball_ . Its _magic power_ is 4 and breaks after one use.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07324))_
 
 > Base Trade Price=Remaining number of uses x 120 gamels Powers=Casts a Light spell
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07324))_
+
+### Technical atom 187
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07327))_
 
 > Rarity=13 Enchanter=Many Form=Spherical polished yellow crystal Base Trade Price=1800 gamels Powers=Has the same effect as Lightning when thrown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07327))_
 
-> Context: When thrown, a 20 meter bolt of lightning, equivalent to _Lightning_ , runs in that direction, dealing strike power 20 damage to those in its path. Its magic power is 3 and breaks after one use.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07328))_
+### Technical atom 188
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07328))_
+
+> When thrown, a 20 meter bolt of lightning, equivalent to _Lightning_ , runs in that direction, dealing strike power 20 damage to those in its path. Its magic power is 3 and breaks after one use.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07331))_
 
 > Rarity=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07331))_
+
+### Technical atom 189
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07332))_
 
 > Enchanter=Ladios, "The Sage of the Seabed" Form=Silver wand with a white crystal set in the tip
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07332))_
+
+### Technical atom 190
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07333))_
 
 > Base Trade Price=Number of uses x 2,400 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07333))_
+
+### Technical atom 191
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07334))_
 
 > Powers=Throws blades of ice to attack the target.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07334))_
+
+### Technical atom 192
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07337))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07337))_
+
+### Technical atom 193
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07338))_
 
 > Enchanter=Wolfen "The Powerless" Form=Pitch-black mage’s staff
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07338))_
+
+### Technical atom 194
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07339))_
 
 > Required Strength=5 (Strike power 10) Base Trade Price=490,000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07339))_
+
+### Technical atom 195
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07340))_
 
 > Powers=Can use ancient magic up to 7th level. However, you’ll be controlled and manipulated by the staff
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07340))_
 
-> Context: Powers=Can use ancient magic up to 7th level. However, you’ll be controlled and manipulated by the staff
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07340))_
+### Technical atom 196
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07340))_
+
+> Powers=Can use ancient magic up to 7th level. However, you’ll be controlled and manipulated by the staff
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07341))_
 
 > The wielder of this staff can use ancient magic up to level 7, as if they were a sorcerer.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07341))_
 
-> Context: However, for each spell cast, they must make a _mental power resistance_ roll with a target score of 16. If they fail, they become controlled by the staff. Even with a successful resist, the _target score increases by +1_ with each spell cast. If the staff is released for more than 1 day, the _target score_ returns to its original value. When the staff controls its user, it will attempt to cunningly and ruthlessly slaughter people, targeting magic users first.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07342))_
+### Technical atom 197
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07342))_
+
+> However, for each spell cast, they must make a _mental power resistance_ roll with a target score of 16. If they fail, they become controlled by the staff. Even with a successful resist, the _target score increases by +1_ with each spell cast. If the staff is released for more than 1 day, the _target score_ returns to its original value. When the staff controls its user, it will attempt to cunningly and ruthlessly slaughter people, targeting magic users first.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07345))_
 
 > Rarity=13 Enchanter=Many Form=Spherical polished black crystal Base Trade Price=Remaining number of uses x 120 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07345))_
+
+### Technical atom 198
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07350))_
 
 > Form=Mage’s staff Required Strength=5 (Strike power 10) Base Trade Price=Remaining mental points x 350 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07350))_
+
+### Technical atom 199
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_
 
 > Powers=Can use fire-type ancient magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_
 
-> Context: This staff stores 2Dx10 mental points. The user does not need to be a sorcerer. By waving the staff while chanting a password, you can use the _magic Tinder, Fire Weapon, Fireball,_ and _Suppress Elemental_ (salamander only). _Magic power_ is uniformly treated as 5 regardless of the user’s own magic power. The base mental power cost of the magic is then directly subtracted from the mental points stored in the staff.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07352))_
+### Technical atom 200
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07352))_
+
+> This staff stores 2Dx10 mental points. The user does not need to be a sorcerer. By waving the staff while chanting a password, you can use the _magic Tinder, Fire Weapon, Fireball,_ and _Suppress Elemental_ (salamander only). _Magic power_ is uniformly treated as 5 regardless of the user’s own magic power. The base mental power cost of the magic is then directly subtracted from the mental points stored in the staff.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07354))_
 
 > Rarity=13 Enchanter=Many Form=Mage’s staff
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07354))_
 
-> Context: This staff stores 2Dx10 mental points. The user does not need to be a sorcerer. By waving the staff while chanting a password, you can use the _magic Tinder, Fire Weapon, Fireball,_ and _Suppress Elemental_ (salamander only). _Magic power_ is uniformly treated as 5 regardless of the user’s own magic power. The base mental power cost of the magic is then directly subtracted from the mental points stored in the staff.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07352))_
+### Technical atom 201
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07352))_
+
+> This staff stores 2Dx10 mental points. The user does not need to be a sorcerer. By waving the staff while chanting a password, you can use the _magic Tinder, Fire Weapon, Fireball,_ and _Suppress Elemental_ (salamander only). _Magic power_ is uniformly treated as 5 regardless of the user’s own magic power. The base mental power cost of the magic is then directly subtracted from the mental points stored in the staff.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07355))_
 
 > Required Strength=5 (Strike power 10) Base Trade Price=60,000 gamels Powers=+2 to magic final scores
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07355))_
+
+### Technical atom 202
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07356))_
 
 > If you cast a spell using this staff as a magical catalyst, it’ll add +2 only to the _final score of a success roll_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07356))_
 
-> Context: If you cast a spell using this staff as a magical catalyst, it’ll add +2 only to the _final score of a success roll_ . There are no other bonuses.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07356))_
+### Technical atom 203
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07356))_
+
+> If you cast a spell using this staff as a magical catalyst, it’ll add +2 only to the _final score of a success roll_ . There are no other bonuses.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07358))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07358))_
+
+### Technical atom 204
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07360))_
 
 > Form=A beautifully carved wooden mage’s staff
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07360))_
+
+### Technical atom 205
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07361))_
 
 > Required Strength=5 (Strike power 10) Base Trade Price=20,000 gamels Powers=Can store one spell
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07361))_
 
-> Context: This staff can be pre-imbued with magic that activates either when a specific password is spoken or after a predetermined time has elapsed. The spells that can be stored in this staff are limited to ancient magic with a consumed mental power (not the base mental power cost) of 3 or less. In other words, as a sorcerer reaches higher levels, they become capable of storing more powerful spells. To store a spell in this staff, you must expend the same amount of mental power as casting the spell norm
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07362))_
+### Technical atom 206
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07362))_
+
+> This staff can be pre-imbued with magic that activates either when a specific password is spoken or after a predetermined time has elapsed. The spells that can be stored in this staff are limited to ancient magic with a consumed mental power (not the base mental power cost) of 3 or less. In other words, as a sorcerer reaches higher levels, they become capable of storing more powerful spells. To store a spell in this staff, you must expend the same amount of mental power as casting the spell norm
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07363))_
 
 > While this staff can be used as a normal magical catalyst, it provides no bonus when used as a weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07363))_
 
-> Context: This staff can be pre-imbued with magic that activates either when a specific password is spoken or after a predetermined time has elapsed. The spells that can be stored in this staff are limited to ancient magic with a consumed mental power (not the base mental power cost) of 3 or less. In other words, as a sorcerer reaches higher levels, they become capable of storing more powerful spells. To store a spell in this staff, you must expend the same amount of mental power as casting the spell norm
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07362))_
+### Technical atom 207
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07362))_
+
+> This staff can be pre-imbued with magic that activates either when a specific password is spoken or after a predetermined time has elapsed. The spells that can be stored in this staff are limited to ancient magic with a consumed mental power (not the base mental power cost) of 3 or less. In other words, as a sorcerer reaches higher levels, they become capable of storing more powerful spells. To store a spell in this staff, you must expend the same amount of mental power as casting the spell norm
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07365))_
 
 > Rarity=17 Enchanter=Many Form=Wand Base Trade Price=120,000 gamels Powers=Fires Energy Bolt
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07365))_
+
+### Technical atom 208
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07368))_
 
 > Rarity=15 Enchanter=Unknown Form=A wand about 15cm long Powers=Can use plant spirit magic Base Trade Price=100,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07368))_
 
-> Context: Those with this wand will be able to cast spirit magic sourced from the power of plant spirits up to 8th level, such as _Binding_ and _Charm_ . The wand stores 100 mental points, and each time you use magic, the base mental power cost of the magic is consumed. When using this wand to cast magic, magic power is treated as 8 regardless of the user’s magic power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07369))_
+### Technical atom 209
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07369))_
+
+> Those with this wand will be able to cast spirit magic sourced from the power of plant spirits up to 8th level, such as _Binding_ and _Charm_ . The wand stores 100 mental points, and each time you use magic, the base mental power cost of the magic is consumed. When using this wand to cast magic, magic power is treated as 8 regardless of the user’s magic power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07371))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07371))_
 
-> Context: Those with this wand will be able to cast spirit magic sourced from the power of plant spirits up to 8th level, such as _Binding_ and _Charm_ . The wand stores 100 mental points, and each time you use magic, the base mental power cost of the magic is consumed. When using this wand to cast magic, magic power is treated as 8 regardless of the user’s magic power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07369))_
+### Technical atom 210
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07369))_
+
+> Those with this wand will be able to cast spirit magic sourced from the power of plant spirits up to 8th level, such as _Binding_ and _Charm_ . The wand stores 100 mental points, and each time you use magic, the base mental power cost of the magic is consumed. When using this wand to cast magic, magic power is treated as 8 regardless of the user’s magic power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07372))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07372))_
+
+### Technical atom 211
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07373))_
 
 > Form=A simple wooden wand engraved with high ancient runes Base Trade Price=130,000 gamels Powers=Forget one specific memory
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07373))_
 
-> Context: To use this, the tip must touch the target's forehead. If you want to use it _during combat_ , make a _hit check_ the same
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07374))_
+### Technical atom 212
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07374))_
+
+> To use this, the tip must touch the target's forehead. If you want to use it _during combat_ , make a _hit check_ the same
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07375))_
 
 > If you fail to resist, you _will lose one specific memory_ (the game master should decide the range of one memory at his or her discretion).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07375))_
 
-> Context: way as a normal weapon. Those being targeted can also resist. If you fail to resist, you _will lose one specific memory_ (the game master should decide the range of one memory at his or her discretion). This item's magic intensity is 15 (magic power 8).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07375))_
+### Technical atom 213
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07375))_
+
+> way as a normal weapon. Those being targeted can also resist. If you fail to resist, you _will lose one specific memory_ (the game master should decide the range of one memory at his or her discretion). This item's magic intensity is 15 (magic power 8).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07377))_
 
 > Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07377))_
 
-> Context: way as a normal weapon. Those being targeted can also resist. If you fail to resist, you _will lose one specific memory_ (the game master should decide the range of one memory at his or her discretion). This item's magic intensity is 15 (magic power 8).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07375))_
+### Technical atom 214
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07375))_
+
+> way as a normal weapon. Those being targeted can also resist. If you fail to resist, you _will lose one specific memory_ (the game master should decide the range of one memory at his or her discretion). This item's magic intensity is 15 (magic power 8).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07378))_
 
 > Form=Staff with a gem on the tip Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07378))_
+
+### Technical atom 215
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07379))_
 
 > Required Strength=1 (Strike power 6) Base Trade Price=64,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07379))_
+
+### Technical atom 216
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07380))_
 
 > Powers=Falls in the gem’s direction or to the north
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07380))_
+
+### Technical atom 217
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07381))_
 
 > The gem on the tip can be removed, and if the staff falls down while it’s removed, the staff will fall in the direction of the gem, regardless of the distance between the staff and the gem.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07381))_
+
+### Technical atom 218
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07384))_
 
 > Rarity=10/15 Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07384))_
+
+### Technical atom 219
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07385))_
 
 > Form=Thin gold ring
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07385))_
+
+### Technical atom 220
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07386))_
 
 > Base Trade Price=Number of uses x 1000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07386))_
+
+### Technical atom 221
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07387))_
 
 > Powers=Eliminate poison or double its effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07387))_
+
+### Technical atom 222
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07388))_
 
 > If the final score is greater than or equal to the poison’s toxicity score, it can be detoxed.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07388))_
 
-> Context: Whoever wears this ring can place their hands on a person affected by poison and attempt to detox. Make a success roll with a baseline score of 8. If the final score is greater than or equal to the poison’s toxicity score, it can be detoxed. However, if this fails, the poison's effect is doubled. First, damage is doubled. If it’s _not_ a damage poison, the _effect time_ will be doubled. Both _cannot_ be doubled. If _neither_ applies, the game master should make his or her own decision. If this r
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07388))_
+### Technical atom 223
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07388))_
+
+> Whoever wears this ring can place their hands on a person affected by poison and attempt to detox. Make a success roll with a baseline score of 8. If the final score is greater than or equal to the poison’s toxicity score, it can be detoxed. However, if this fails, the poison's effect is doubled. First, damage is doubled. If it’s _not_ a damage poison, the _effect time_ will be doubled. Both _cannot_ be doubled. If _neither_ applies, the game master should make his or her own decision. If this r
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07389))_
 
 > The detox effect can be discovered on final score _10_ when using _treasure_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07389))_
+
+### Technical atom 224
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07394))_
 
 > Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07394))_
+
+### Technical atom 225
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07395))_
 
 > Enchanter=Yeren "The Unrewarded Seeker"
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07395))_
+
+### Technical atom 226
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07396))_
 
 > Form=White stone ring
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07396))_
+
+### Technical atom 227
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07397))_
 
 > Base Trade Price=9,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07397))_
+
+### Technical atom 228
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07398))_
 
 > Powers=+2 to the user's agility bonus
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07398))_
 
-> Context: By wearing this ring and chanting a password, the user’s agility bonus becomes +2. This effect lasts for 18 rounds from the round in which you chanted the password. There’s no limit to the number of times it can be used, but if the _same_ person uses it _more than once a day_ , he or she will suffer a -1 _penalty_ to their agility bonus thereafter. This penalty is _cumulative_ . If you use it _3_ times, it becomes _-2_ , and if you use it _4_ times, it becomes _-3_ . If you don't use the ring fo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07399))_
+### Technical atom 229
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07399))_
+
+> By wearing this ring and chanting a password, the user’s agility bonus becomes +2. This effect lasts for 18 rounds from the round in which you chanted the password. There’s no limit to the number of times it can be used, but if the _same_ person uses it _more than once a day_ , he or she will suffer a -1 _penalty_ to their agility bonus thereafter. This penalty is _cumulative_ . If you use it _3_ times, it becomes _-2_ , and if you use it _4_ times, it becomes _-3_ . If you don't use the ring fo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07401))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07401))_
 
-> Context: By wearing this ring and chanting a password, the user’s agility bonus becomes +2. This effect lasts for 18 rounds from the round in which you chanted the password. There’s no limit to the number of times it can be used, but if the _same_ person uses it _more than once a day_ , he or she will suffer a -1 _penalty_ to their agility bonus thereafter. This penalty is _cumulative_ . If you use it _3_ times, it becomes _-2_ , and if you use it _4_ times, it becomes _-3_ . If you don't use the ring fo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07399))_
+### Technical atom 230
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07399))_
+
+> By wearing this ring and chanting a password, the user’s agility bonus becomes +2. This effect lasts for 18 rounds from the round in which you chanted the password. There’s no limit to the number of times it can be used, but if the _same_ person uses it _more than once a day_ , he or she will suffer a -1 _penalty_ to their agility bonus thereafter. This penalty is _cumulative_ . If you use it _3_ times, it becomes _-2_ , and if you use it _4_ times, it becomes _-3_ . If you don't use the ring fo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07402))_
 
 > Form=Bracelet with purple gems Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07402))_
+
+### Technical atom 231
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07403))_
 
 > Base Trade Price=32,000 gamels Powers=Keeps the wearer's body temperature constant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07403))_
+
+### Technical atom 232
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07404))_
 
 > The wearer of the ring can feel comfortable even when exposed to the fierce heat of a desert or the cold weather of a snowy mountain.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07404))_
+
+### Technical atom 233
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07406))_
 
 > Rarity=12 Enchanter=Many Form=A ring with small metal shaped like a disc
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07406))_
+
+### Technical atom 234
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07407))_
 
 > Base Trade Price=7000 gamels Powers=+2 to evasion speed
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07407))_
+
+### Technical atom 235
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07409))_
 
 > Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07409))_
+
+### Technical atom 236
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07411))_
 
 > Form=Silver ring in the shape of a bird's wings
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07411))_
+
+### Technical atom 237
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07412))_
 
 > Base Trade Price=72,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07412))_
+
+### Technical atom 238
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07413))_
 
 > Powers=+6 to agility when worn (agility bonus +1)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07413))_
+
+### Technical atom 239
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07416))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07416))_
+
+### Technical atom 240
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07418))_
 
 > Form=A pair of (two) silver engagement rings
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07418))_
+
+### Technical atom 241
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07419))_
 
 > Base Trade Price=64,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07419))_
+
+### Technical atom 242
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07420))_
 
 > Powers=Two people who wear these can freely use each other's mental points between them
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07420))_
 
-> Context: Powers=Two people who wear these can freely use each other's mental points between them
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07420))_
+### Technical atom 243
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07420))_
+
+> Powers=Two people who wear these can freely use each other's mental points between them
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07421))_
 
 > When characters of the same race and opposite gender wear these rings, they can freely use each other’s mental points.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07421))_
 
-> Context: When characters of the same race and opposite gender wear these rings, they can freely use each other’s mental points. However, if one person has a spell, etc., that affects the mind cast on him or her, it’ll affect _both_ people. These rings will not work unless both people are within 1 km.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07421))_
+### Technical atom 244
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07421))_
+
+> When characters of the same race and opposite gender wear these rings, they can freely use each other’s mental points. However, if one person has a spell, etc., that affects the mind cast on him or her, it’ll affect _both_ people. These rings will not work unless both people are within 1 km.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07423))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07423))_
 
-> Context: When characters of the same race and opposite gender wear these rings, they can freely use each other’s mental points. However, if one person has a spell, etc., that affects the mind cast on him or her, it’ll affect _both_ people. These rings will not work unless both people are within 1 km.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07421))_
+### Technical atom 245
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07421))_
+
+> When characters of the same race and opposite gender wear these rings, they can freely use each other’s mental points. However, if one person has a spell, etc., that affects the mind cast on him or her, it’ll affect _both_ people. These rings will not work unless both people are within 1 km.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07424))_
 
 > Enchanter=Karla "The Powerful" Form=Small platinum ring
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07424))_
+
+### Technical atom 246
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07425))_
 
 > Base Trade Price=60,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07425))_
+
+### Technical atom 247
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07426))_
 
 > Powers=+1 to magic power of ancient magic when you wear it
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07426))_
+
+### Technical atom 248
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07430))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07430))_
+
+### Technical atom 249
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07431))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07431))_
+
+### Technical atom 250
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07432))_
 
 > Form=Lightly colored backpack Base Trade Price=40,000 gamels Powers=Removes gravity from objects in the bag
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07432))_
+
+### Technical atom 251
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07434))_
 
 > However, you can _only_ put in as many objects as you can outwardly _see_ , so if you put in something of an _abnormal_ weight (the game master should make a suitable decision), the magical power will disintegrate and it’ll tear.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07434))_
+
+### Technical atom 252
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07437))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07437))_
+
+### Technical atom 253
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
 
 > Enchanter=Many Form=Sling Bullet
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
+
+### Technical atom 254
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07439))_
 
 > Base Trade Price=2500 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07439))_
+
+### Technical atom 255
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07440))_
 
 > Powers=Explodes on impact, dealing strike power 30 damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07440))_
+
+### Technical atom 256
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07443))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07443))_
+
+### Technical atom 257
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+
+### Technical atom 258
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07445))_
 
 > Form=Relief of an old man’s face with its mouth half open
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07445))_
+
+### Technical atom 259
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07446))_
 
 > Base Trade Price=150,000 gamels Powers=Sees through lies
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07446))_
+
+### Technical atom 260
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07449))_
 
 > Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07449))_
+
+### Technical atom 261
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07450))_
 
 > Enchanter=Void, "The Immoral Summoning Sorcerer"
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07450))_
+
+### Technical atom 262
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07451))_
 
 > Form=Palm-sized card of unknown material Base Trade Price=Magic’s base mental power cost x 320 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07451))_
+
+### Technical atom 263
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07452))_
 
 > Powers=User can use various ancient magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07452))_
+
+### Technical atom 264
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07463))_
 
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07463))_
+
+### Technical atom 265
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07464))_
 
 > Form=Left hand (rarely right hand) glove Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07464))_
+
+### Technical atom 266
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07465))_
 
 > Base Trade Price=1500 (Small shield)/5000 (Large shield) Powers=Generates a force field equivalent to a shield
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07465))_
 
-> Context: When the wearer grasps tightly while holding nothing in their hand, a force field is generated around his or her arm, which has the same effect as holding a shield. You _cannot_ use ancient magic while one hand is clenched. Also, if you’re holding something in your dominant hand, you _cannot_ use spirit magic either. There are two types of _Guard Glove_ ; one that generates a _large_ force field like a large shield, and one that generates a _small_ force field like a small shield. The force fiel
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07466))_
+### Technical atom 267
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07466))_
+
+> When the wearer grasps tightly while holding nothing in their hand, a force field is generated around his or her arm, which has the same effect as holding a shield. You _cannot_ use ancient magic while one hand is clenched. Also, if you’re holding something in your dominant hand, you _cannot_ use spirit magic either. There are two types of _Guard Glove_ ; one that generates a _large_ force field like a large shield, and one that generates a _small_ force field like a small shield. The force fiel
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07468))_
 
 > Rarity=15 Enchanter=Le Val
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07468))_
 
-> Context: When the wearer grasps tightly while holding nothing in their hand, a force field is generated around his or her arm, which has the same effect as holding a shield. You _cannot_ use ancient magic while one hand is clenched. Also, if you’re holding something in your dominant hand, you _cannot_ use spirit magic either. There are two types of _Guard Glove_ ; one that generates a _large_ force field like a large shield, and one that generates a _small_ force field like a small shield. The force fiel
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07466))_
+### Technical atom 268
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07466))_
+
+> When the wearer grasps tightly while holding nothing in their hand, a force field is generated around his or her arm, which has the same effect as holding a shield. You _cannot_ use ancient magic while one hand is clenched. Also, if you’re holding something in your dominant hand, you _cannot_ use spirit magic either. There are two types of _Guard Glove_ ; one that generates a _large_ force field like a large shield, and one that generates a _small_ force field like a small shield. The force fiel
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07469))_
 
 > Form=Silver candlestick densely engraved with high ancient runes
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07469))_
 
-> Context: If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+### Technical atom 269
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+
+> If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07470))_
 
 > Base Trade Price=1,000,000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07470))_
 
-> Context: If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+### Technical atom 270
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+
+> If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07471))_
 
 > Powers=Gives good luck to the one who lights the candle
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07471))_
 
-> Context: If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+### Technical atom 271
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+
+> If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07474))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07474))_
 
-> Context: If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+### Technical atom 272
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+
+> If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07475))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07475))_
+
+### Technical atom 273
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07476))_
 
 > Form=Crystal ball about 10cm in diameter Base Trade Price=300,000 gamels~ Powers=You can see various places around the world
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07476))_
 
-> Context: The commonly found _Crystal Orb of Clairvoyance_ can project any place you’ve been to _before_ , but can only use this power _once per day_ . The duration is 15 minutes.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07478))_
+### Technical atom 274
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07478))_
+
+> The commonly found _Crystal Orb of Clairvoyance_ can project any place you’ve been to _before_ , but can only use this power _once per day_ . The duration is 15 minutes.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07480))_
 
 > Rarity=15 Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07480))_
 
-> Context: The commonly found _Crystal Orb of Clairvoyance_ can project any place you’ve been to _before_ , but can only use this power _once per day_ . The duration is 15 minutes.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07478))_
+### Technical atom 275
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07478))_
+
+> The commonly found _Crystal Orb of Clairvoyance_ can project any place you’ve been to _before_ , but can only use this power _once per day_ . The duration is 15 minutes.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07481))_
 
 > Form=Horseshoes equipped to a horse Base Trade Price=50,000 gamels Powers=Increases the equipped horse’s movement speed by 10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07481))_
+
+### Technical atom 276
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07487))_
 
 > Base Trade Price=1,000,000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07487))_
+
+### Technical atom 277
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07488))_
 
 > Powers=Seals something from another world within
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07488))_
 
-> Context: This jar is a magical jar that can seal things from another world, such as the spirit world, within it. It’s said to be able to seal not only lesser spirits such as salamander and sylph, but _also_ greater spirits such as djinn and efreet.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07489))_
+### Technical atom 278
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07489))_
+
+> This jar is a magical jar that can seal things from another world, such as the spirit world, within it. It’s said to be able to seal not only lesser spirits such as salamander and sylph, but _also_ greater spirits such as djinn and efreet.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07490))_
 
 > If you point this jar at a spirit and chant a password, any kind of spirit can be entrapped.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07490))_
 
-> Context: This jar is a magical jar that can seal things from another world, such as the spirit world, within it. It’s said to be able to seal not only lesser spirits such as salamander and sylph, but _also_ greater spirits such as djinn and efreet.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07489))_
+### Technical atom 279
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07489))_
+
+> This jar is a magical jar that can seal things from another world, such as the spirit world, within it. It’s said to be able to seal not only lesser spirits such as salamander and sylph, but _also_ greater spirits such as djinn and efreet.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07492))_
 
 > Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07492))_
+
+### Technical atom 280
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07493))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07493))_
+
+### Technical atom 281
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07494))_
 
 > Form=A crystal-like stone about 10cm in diameter
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07494))_
+
+### Technical atom 282
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07495))_
 
 > Powers=Seals a human soul
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07495))_
+
+### Technical atom 283
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07496))_
 
 > Base Trade Price=480,000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07496))_
+
+### Technical atom 284
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07500))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07500))_
+
+### Technical atom 285
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07501))_
 
 > Enchanter=Faye, “The One Who Wears the Wind”
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07501))_
+
+### Technical atom 286
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07502))_
 
 > Form=Boots
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07502))_
+
+### Technical atom 287
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07503))_
 
 > Base Trade Price=24,000 gamels Powers=The equipped person will be able to jump 3m high and 10m far.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07503))_
+
+### Technical atom 288
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07508))_
 
 > Form=A wooden doll about 20 cm long Base Trade Price=90,000 gamels Powers=Suffers damage in place of the user
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07508))_
+
+### Technical atom 289
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07510))_
 
 > At this time, if there is surplus damage, reduce the character's own life force.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07510))_
+
+### Technical atom 290
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07511))_
 
 > Once you start using it, this effect cannot be canceled even if you untie your hair.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07511))_
+
+### Technical atom 291
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07516))_
 
 > Form=Four statues of a crocodile, a snake, an ape and a bear made of mithril silver Base Trade Price=480,000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07516))_
+
+### Technical atom 292
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07517))_
 
 > Powers=Anyone who touches the statue shapeshifts into the form of the same animal as the statue (other than the snake)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07517))_
 
-> Context: immediately if they fail a mental power resistance roll against target score 16. You’ll usually need to hide it with an eyepatch, etc. If _spirit magic_ is used around the wearer (used towards the wearer, or the wearer him or herself attempts to use spirit magic), this stone will seal the spirit, and the spirit magic is nullified as a result.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07520, source-range-870a16bc-07524))_
+### Technical atom 293
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07520, source-range-870a16bc-07524))_
+
+> immediately if they fail a mental power resistance roll against target score 16. You’ll usually need to hide it with an eyepatch, etc. If _spirit magic_ is used around the wearer (used towards the wearer, or the wearer him or herself attempts to use spirit magic), this stone will seal the spirit, and the spirit magic is nullified as a result.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07522))_
 
 > Rarity=16 Enchanter=Unknown Form=White gem Base Trade Price=45,000 gamels Powers=Seals a spirit
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07522))_
 
-> Context: If _spirit magic_ is used around the wearer (used towards the wearer, or the wearer him or herself attempts to use spirit magic), this stone will seal the spirit, and the spirit magic is nullified as a result.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07524))_
+### Technical atom 294
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07524))_
+
+> If _spirit magic_ is used around the wearer (used towards the wearer, or the wearer him or herself attempts to use spirit magic), this stone will seal the spirit, and the spirit magic is nullified as a result.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07526))_
 
 > Enchanter=Kaiber, "The Sorcerer of Gravity" Form=A 1.5m diameter golden plate Base Trade Price=160,000 gamels Powers=Negates gravity
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07526))_
 
-> Context: However, if you try to block magic that uses a spirit with an average monster level of 5 or greater, the magic _itself_ will be blocked but the spirit will _not_ be sealed and the stone will _break_ . Also, greater spirits _cannot_ be sealed, so spirit magic used _will_ take effect as-is, and at the same time the stone will _break_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07528))_
+### Technical atom 295
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07528))_
+
+> However, if you try to block magic that uses a spirit with an average monster level of 5 or greater, the magic _itself_ will be blocked but the spirit will _not_ be sealed and the stone will _break_ . Also, greater spirits _cannot_ be sealed, so spirit magic used _will_ take effect as-is, and at the same time the stone will _break_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07531))_
 
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07531))_
 
-> Context: Only _one_ lesser spirit can be sealed at a time. If a spirit has _already_ been sealed, the stone is of no use. A shaman can release a sealed spirit. Also, if it’s an _undine_ , _salamander_ , _sylph_ , or _gnome_ , it’s possible to expel them (to the spirit world) using the ancient magic spell _Suppress Elemental_ . When you wear this cape, you’ll fall at a very slow speed. However, the magical power will not work unless you’re at least 1m above the ground.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07532, source-range-870a16bc-07535))_
+### Technical atom 296
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07532, source-range-870a16bc-07535))_
+
+> Only _one_ lesser spirit can be sealed at a time. If a spirit has _already_ been sealed, the stone is of no use. A shaman can release a sealed spirit. Also, if it’s an _undine_ , _salamander_ , _sylph_ , or _gnome_ , it’s possible to expel them (to the spirit world) using the ancient magic spell _Suppress Elemental_ . When you wear this cape, you’ll fall at a very slow speed. However, the magical power will not work unless you’re at least 1m above the ground.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07533))_
 
 > Enchanter=Faye, “The One Who Wears the Wind” Form=Cloak
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07533))_
 
-> Context: Only _one_ lesser spirit can be sealed at a time. If a spirit has _already_ been sealed, the stone is of no use. A shaman can release a sealed spirit. Also, if it’s an _undine_ , _salamander_ , _sylph_ , or _gnome_ , it’s possible to expel them (to the spirit world) using the ancient magic spell _Suppress Elemental_ . When you wear this cape, you’ll fall at a very slow speed. However, the magical power will not work unless you’re at least 1m above the ground.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07532, source-range-870a16bc-07535))_
+### Technical atom 297
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07532, source-range-870a16bc-07535))_
+
+> Only _one_ lesser spirit can be sealed at a time. If a spirit has _already_ been sealed, the stone is of no use. A shaman can release a sealed spirit. Also, if it’s an _undine_ , _salamander_ , _sylph_ , or _gnome_ , it’s possible to expel them (to the spirit world) using the ancient magic spell _Suppress Elemental_ . When you wear this cape, you’ll fall at a very slow speed. However, the magical power will not work unless you’re at least 1m above the ground.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07534))_
 
 > Base Trade Price=24,000 gamels Powers=Reduces fall speed
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07534))_
+
+### Technical atom 298
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07537))_
 
 > Rarity=18 Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07537))_
+
+### Technical atom 299
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07540))_
 
 > Form=Glass prosthetic eye Base Trade Price=280,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07540))_
+
+### Technical atom 300
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07541))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07541))_
+
+### Technical atom 301
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07543))_
 
 > Powers=Puts those who stare at it to sleep
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07543))_
+
+### Technical atom 302
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07544))_
 
 > Base Trade Price=1,000,000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07544))_
+
+### Technical atom 303
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07546))_
 
 > Powers=Summon a daemon
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07546))_
+
+### Technical atom 304
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07548))_
 
 > **Table 14-1: Daemon Jar Summon**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07548))_
+
+### Technical atom 305
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07549))_
 
 | 2D | Result |
 | --- | --- |
@@ -1880,229 +2874,423 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07548))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07549))_
 
-> Context: The summoned daemon will obey the summoner's commands. Please use _Table 14-1: Daemon Jar Summon_ to determine which daemon will appear. If the summoner is gone, the daemon, according to its intrinsic nature, will begin to act violently.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07551))_
+### Technical atom 306
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07551))_
+
+> The summoned daemon will obey the summoner's commands. Please use _Table 14-1: Daemon Jar Summon_ to determine which daemon will appear. If the summoner is gone, the daemon, according to its intrinsic nature, will begin to act violently.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07553))_
 
 > Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07553))_
 
-> Context: The summoned daemon will obey the summoner's commands. Please use _Table 14-1: Daemon Jar Summon_ to determine which daemon will appear. If the summoner is gone, the daemon, according to its intrinsic nature, will begin to act violently.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07551))_
+### Technical atom 307
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07551))_
+
+> The summoned daemon will obey the summoner's commands. Please use _Table 14-1: Daemon Jar Summon_ to determine which daemon will appear. If the summoner is gone, the daemon, according to its intrinsic nature, will begin to act violently.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07554))_
 
 > Enchanter= "All-encompassing" Phreg Form=Gloves with fingers that are twice as long as normal
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07554))_
+
+### Technical atom 308
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07555))_
 
 > Base Trade Price=6000 gamels Powers=With freely-moving fingertips, gain a +2 to the thief skill’s _lockpicking_ , _remove/set trap_ , _climb_ , and _pickpocket_ checks
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07555))_
+
+### Technical atom 309
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07557))_
 
 > Rarity=10 Enchanter=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07557))_
+
+### Technical atom 310
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07558))_
 
 > Form=Dragon tooth Base Trade Price=5000 gamels Powers=Material for a skeleton warrior
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07558))_
+
+### Technical atom 311
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07561))_
 
 > Rarity=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07561))_
+
+### Technical atom 312
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07563))_
 
 > Form=A doll about 30 cm long
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07563))_
+
+### Technical atom 313
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07564))_
 
 > Base Trade Price=260,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07564))_
+
+### Technical atom 314
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
 
 > Powers=Indicates direction of a specific object or person
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
 
-> Context: Powers=Indicates direction of a specific object or person
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
+### Technical atom 315
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
+
+> Powers=Indicates direction of a specific object or person
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07566))_
 
 > What the doll _remembers_ is displayed on its pedestal, so you can know this if you read low ancient.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07566))_
 
-> Context: This doll, which looks like a woman with one arm raised, was made to prevent the loss of important things, so it's endowed with the magical power to _remember_ specific objects or people, and always points in the direction they're located (are). In a state where it does not have anything to _remember_ , or if the thing it _remembers_ has been lost, the doll cannot point anywhere and will just spin around. To make it _remember_ something, you must touch the doll to the object and chant a password
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07566))_
+### Technical atom 316
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07566))_
+
+> This doll, which looks like a woman with one arm raised, was made to prevent the loss of important things, so it's endowed with the magical power to _remember_ specific objects or people, and always points in the direction they're located (are). In a state where it does not have anything to _remember_ , or if the thing it _remembers_ has been lost, the doll cannot point anywhere and will just spin around. To make it _remember_ something, you must touch the doll to the object and chant a password
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07568))_
 
 > Rarity=18
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07568))_
 
-> Context: This doll, which looks like a woman with one arm raised, was made to prevent the loss of important things, so it's endowed with the magical power to _remember_ specific objects or people, and always points in the direction they're located (are). In a state where it does not have anything to _remember_ , or if the thing it _remembers_ has been lost, the doll cannot point anywhere and will just spin around. To make it _remember_ something, you must touch the doll to the object and chant a password
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07566))_
+### Technical atom 317
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07566))_
+
+> This doll, which looks like a woman with one arm raised, was made to prevent the loss of important things, so it's endowed with the magical power to _remember_ specific objects or people, and always points in the direction they're located (are). In a state where it does not have anything to _remember_ , or if the thing it _remembers_ has been lost, the doll cannot point anywhere and will just spin around. To make it _remember_ something, you must touch the doll to the object and chant a password
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07569))_
 
 > Enchanter=Unknown Form=Glasses with red lenses Base Trade Price=130,000 gamels Powers=See through darkness
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07569))_
+
+### Technical atom 318
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07572))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07572))_
+
+### Technical atom 319
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07573))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07573))_
+
+### Technical atom 320
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07575))_
 
 > Base Trade Price=3200~8000 gamels Powers=Explodes if opened by someone who doesn't know how.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07575))_
+
+### Technical atom 321
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07578))_
 
 > Rarity=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07578))_
+
+### Technical atom 322
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07579))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07579))_
+
+### Technical atom 323
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07580))_
 
 > Form=A 20 x 20cm bag made of a mysterious brown material
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07580))_
+
+### Technical atom 324
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07581))_
 
 > Base Trade Price=250,000 gamels Powers=Protects objects put inside the bag from detection magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07581))_
+
+### Technical atom 325
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07584))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07584))_
+
+### Technical atom 326
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07585))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07585))_
+
+### Technical atom 327
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07586))_
 
 > Form=Lightly colored backpack Base Trade Price=200,000 gamels Powers=You can put objects in regardless of size
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07586))_
 
-> Context: Combining it with the Weightless Bag mentioned above, makes it possible to transport extremely large amounts of objects. Put the Bulkless Bag _in_ the Weightless Bag, then put the objects in _it_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07589))_
+### Technical atom 328
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07589))_
+
+> Combining it with the Weightless Bag mentioned above, makes it possible to transport extremely large amounts of objects. Put the Bulkless Bag _in_ the Weightless Bag, then put the objects in _it_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07588))_
 
 > To take it out, put your hand inside and think of the object itself (you can also take it out with a vague thought, but it’s not reliable).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07588))_
 
-> Context: weight remains the same. When putting an object in, place it in contact with the bag’s opening and it’ll go in when you push it. To take it out, put your hand inside and think of the object itself (you can also take it out with a vague thought, but it’s not reliable). If you turn it upside down and shake it, everything will come out. Also, it's only _slightly_ stronger than leather, so if you try to trap monsters, etc. in it, it'll probably break from the inside.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07588))_
+### Technical atom 329
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07588))_
+
+> weight remains the same. When putting an object in, place it in contact with the bag’s opening and it’ll go in when you push it. To take it out, put your hand inside and think of the object itself (you can also take it out with a vague thought, but it’s not reliable). If you turn it upside down and shake it, everything will come out. Also, it's only _slightly_ stronger than leather, so if you try to trap monsters, etc. in it, it'll probably break from the inside.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07591))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07591))_
+
+### Technical atom 330
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07592))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07592))_
+
+### Technical atom 331
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07595))_
 
 > Powers=Gives a sword the effect of _Enchant Weapon_ when unsheathed
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07595))_
+
+### Technical atom 332
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07597))_
 
 > If it _is_ a broadsword, the sheath will automatically expand or contract to adjust for any slight differences in length.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07597))_
+
+### Technical atom 333
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07599))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07599))_
+
+### Technical atom 334
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07600))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07600))_
+
+### Technical atom 335
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07601))_
 
 > Form=A carpet about 1m square
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07601))_
+
+### Technical atom 336
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07602))_
 
 > Base Trade Price=180,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07602))_
+
+### Technical atom 337
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07603))_
 
 > Powers=You can move through the air by riding on the carpet.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07603))_
+
+### Technical atom 338
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07604))_
 
 > Also, if you don't hold your baggage securely, it can easily fall off the carpet.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07604))_
+
+### Technical atom 339
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07609))_
 
 > Enchanter=Faye, “The One Who Wears the Wind”
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07609))_
+
+### Technical atom 340
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07610))_
 
 > Form=Mantle
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07610))_
+
+### Technical atom 341
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07611))_
 
 > Base Trade Price=400,000 gamels Powers=You’ll be able to fly
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07611))_
+
+### Technical atom 342
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07614))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07614))_
+
+### Technical atom 343
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07615))_
 
 > Form=Potion
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07615))_
+
+### Technical atom 344
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07617))_
 
 > Base Trade Price=10,000 gamels (not for sale) Power=Increase an ability score by 1 point
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07617))_
+
+### Technical atom 345
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07618))_
 
 > If a character drinks this potion, it’ll _permanently_ increase an ability score by 1 point.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07618))_
 
-> Context: you need magic power (baseline score for a success roll), use the sorcerer's.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07620))_
+### Technical atom 346
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07620))_
+
+> you need magic power (baseline score for a success roll), use the sorcerer's.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07621))_
 
 > If you bring it back without using it, perhaps the _lost_ magic may spread throughout the world through the research of an _academy of sages_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07621))_
 
-> Context: Some of these scrolls have _lost_ spells written on them. In this case, the _Base Trade Price_ will be x 1.5. If you bring it back without using it, perhaps the _lost_ magic may spread throughout the world through the research of an _academy of sages_ . Scrolls with _lost_ spells written on them are almost certainly _not_ sold on the market.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07621))_
+### Technical atom 347
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07621))_
+
+> Some of these scrolls have _lost_ spells written on them. In this case, the _Base Trade Price_ will be x 1.5. If you bring it back without using it, perhaps the _lost_ magic may spread throughout the world through the research of an _academy of sages_ . Scrolls with _lost_ spells written on them are almost certainly _not_ sold on the market.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07623))_
 
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07623))_
 
-> Context: Some of these scrolls have _lost_ spells written on them. In this case, the _Base Trade Price_ will be x 1.5. If you bring it back without using it, perhaps the _lost_ magic may spread throughout the world through the research of an _academy of sages_ . Scrolls with _lost_ spells written on them are almost certainly _not_ sold on the market.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07621))_
+### Technical atom 348
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07621))_
+
+> Some of these scrolls have _lost_ spells written on them. In this case, the _Base Trade Price_ will be x 1.5. If you bring it back without using it, perhaps the _lost_ magic may spread throughout the world through the research of an _academy of sages_ . Scrolls with _lost_ spells written on them are almost certainly _not_ sold on the market.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07624))_
 
 > Enchanter=Ladios, "The Sage of the Seabed" Form=A jade-colored mask imitating a human face
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07624))_
+
+### Technical atom 349
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07625))_
 
 > Base Trade Price=54,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07625))_
+
+### Technical atom 350
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07626))_
 
 > Powers=Allows you to breathe underwater
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07626))_
+
+### Technical atom 351
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07627))_
 
 > When you wear this mask, you can breathe underwater.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07627))_
+
+### Technical atom 352
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07629))_
 
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07629))_
+
+### Technical atom 353
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07633))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07633))_
+
+### Technical atom 354
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07635))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07635))_
+
+### Technical atom 355
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07637))_
 
 > Form=Mirror with high ancient runes densely engraved on the frame
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07637))_
+
+### Technical atom 356
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07638))_
 
 > Powers=Shows the natural form of the person reflected in the mirror Base Trade Price=380,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07638))_
 
-> Context: Powers=Shows the natural form of the person reflected in the mirror Base Trade Price=380,000 gamels
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07638))_
+### Technical atom 357
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07638))_
+
+> Powers=Shows the natural form of the person reflected in the mirror Base Trade Price=380,000 gamels
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07641))_
 
 > Rarity=12 Enchanter=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07641))_
+
+### Technical atom 358
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07642))_
 
 > Form=A spiral-shaped horn about 50cm long Base Trade Price=11,000~220,000 gamels (depends on remaining mental points) Powers=Can use life spirit magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07642))_
 
-> Context: Those who have this horn will be able to cast all spirit magic sourced from the power of the unknown spirit of life, such as _Healing_ and _Restore Health_ . The horn stores 10~200 mental points, and each time you use magic, the base mental power cost of the magic is consumed. If you need the horn’s magic power, set it to 10.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07643))_
+### Technical atom 359
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07643))_
+
+> Those who have this horn will be able to cast all spirit magic sourced from the power of the unknown spirit of life, such as _Healing_ and _Restore Health_ . The horn stores 10~200 mental points, and each time you use magic, the base mental power cost of the magic is consumed. If you need the horn’s magic power, set it to 10.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07644))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07644))_
+
+### Technical atom 360
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07647))_
 
 > Form=A scroll with a spell written on it Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07647))_
+
+### Technical atom 361
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07648))_
 
 > Base Trade Price=Magic level x magic’s base mental power cost x 20 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07648))_
+
+### Technical atom 362
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07649))_
 
 > Powers=Can use a magic spell only once
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07649))_
 
-> Context: Powers=Can use a magic spell only once Powers=The mirror spirit will answer simple questions Base Trade Price=390,000 gamels
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07649, source-range-870a16bc-07652))_
+### Technical atom 363
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07649, source-range-870a16bc-07652))_
+
+> Powers=Can use a magic spell only once Powers=The mirror spirit will answer simple questions Base Trade Price=390,000 gamels
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650))_
 
 > If a sorcerer reads it, he or she can use the magic written on it only _once_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650))_
 
-> Context: A magic spell is written on this (in high ancient). If a sorcerer reads it, he or she can use the magic written on it only _once_ . It doesn’t matter if the sorcerer skill level has not reached the magic level, _nor_ does it consume mental power. However, the magic _cannot_ be expanded. When Powers=The mirror spirit will answer simple questions Base Trade Price=390,000 gamels
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650, source-range-870a16bc-07652))_
+### Technical atom 364
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650, source-range-870a16bc-07652))_
+
+> A magic spell is written on this (in high ancient). If a sorcerer reads it, he or she can use the magic written on it only _once_ . It doesn’t matter if the sorcerer skill level has not reached the magic level, _nor_ does it consume mental power. However, the magic _cannot_ be expanded. When Powers=The mirror spirit will answer simple questions Base Trade Price=390,000 gamels
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07651))_
 
 > Form=Mirror with high ancient runes densely engraved on the frame
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07651))_
 
-> Context: A magic spell is written on this (in high ancient). If a sorcerer reads it, he or she can use the magic written on it only _once_ . It doesn’t matter if the sorcerer skill level has not reached the magic level, _nor_ does it consume mental power. However, the magic _cannot_ be expanded. When You can ask the mirror spirit sealed inside the mirror to answer a simple question. The mirror spirit knows everything reflected in mirrors around the world, so it's quite knowledgeable. However, since it ha
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650, source-range-870a16bc-07653))_
+### Technical atom 365
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650, source-range-870a16bc-07653))_
+
+> A magic spell is written on this (in high ancient). If a sorcerer reads it, he or she can use the magic written on it only _once_ . It doesn’t matter if the sorcerer skill level has not reached the magic level, _nor_ does it consume mental power. However, the magic _cannot_ be expanded. When You can ask the mirror spirit sealed inside the mirror to answer a simple question. The mirror spirit knows everything reflected in mirrors around the world, so it's quite knowledgeable. However, since it ha
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07652))_
 
 > Powers=The mirror spirit will answer simple questions Base Trade Price=390,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07652))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-divine-weapon-spell-level-7-274ab313@42f23478c2a475d8ef6c8ed22eb0f2f9
+projection_coverage: section-sword-world-rpg-complete-edition-section-divine-weapon-spell-level-7-274ab313@dc94df4a9d3d070ca536248f8ccea904
 ---
 
 # **[ Divine Weapon ] (Spell Level=7)**
@@ -26,5 +26,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03111))_
+
 > Base Mental Power Cost=21 Distance=Caster Area=Caster Duration=18 rounds Effect=Create a weapon-like force field with strike power 30 Type=Target score Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03111))_

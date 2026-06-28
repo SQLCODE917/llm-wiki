@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-distance-expansion-7637e857@aba081c8057f2b2013a3cd3f1e612d18
+projection_coverage: section-sword-world-rpg-complete-edition-section-distance-expansion-7637e857@f585a665bac7cb85382dbfe32d5693b3
 ---
 
 # 《 **Distance Expansion** 》
@@ -23,8 +23,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: For spells whose effects last a certain amount of time, you can expand that duration. If the duration is _doubled_ or _tripled_ ...... the mental power consumed will also be _doubled_ or _tripled_ ....... You can also increase it by a fraction, such as x1.5, in which case the fraction is _rounded up_ when determining the multiplier for mental power consumed.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01376))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01376))_
+
+> For spells whose effects last a certain amount of time, you can expand that duration. If the duration is _doubled_ or _tripled_ ...... the mental power consumed will also be _doubled_ or _tripled_ ....... You can also increase it by a fraction, such as x1.5, in which case the fraction is _rounded up_ when determining the multiplier for mental power consumed.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01379))_
 
 > You can also increase it by a fraction, such as x1.5, in which case the fraction is _rounded up_ when determining the multiplier for mental power consumed.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01379))_

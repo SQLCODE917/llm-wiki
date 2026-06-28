@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-16-55fe614c@dccfbc8cc5da601cf25b059ef223c803
+projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-16-55fe614c@bd44ac4a0d7b4aef4985ab42243c328b
 ---
 
 # Rarity=16
@@ -23,5 +23,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04771))_
+
 > Base Trade Value=9000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04771))_

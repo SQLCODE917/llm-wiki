@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lunatic-seed-spell-level-4-7b92f103@f2aae154549aba71a5d553d7efdad735
+projection_coverage: section-sword-world-rpg-complete-edition-section-lunatic-seed-spell-level-4-7b92f103@72680a267126d3e66bd8a2f43724bf3e
 ---
 
 # **[ Lunatic Seed ] (Spell Level=4)**
@@ -27,11 +27,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04156))_
+
 > Base Mental Power Cost=20 Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04156))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157))_
 
 > Area=One Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04158))_
 
 > Effect=Plant the seeds of madness in the opponent's mind Type=Mind, curse Expansion=Final score Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04158))_

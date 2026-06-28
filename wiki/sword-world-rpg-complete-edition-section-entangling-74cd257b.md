@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-entangling-74cd257b@ed38d46d4e24fe80ac9d15f4e54874ec
+projection_coverage: section-sword-world-rpg-complete-edition-section-entangling-74cd257b@88b64a5eac3ced75a413615c5cec13ef
 ---
 
 # 《 **Entangling** 》
@@ -24,5 +24,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06826))_
+
 > The character must make a success roll using _adventurer level + strength bonus_ as the baseline score in order to escape.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06826))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-10-4-7d3560f8@91d3db5141cb80c5a742dbb0d9494b32
+projection_coverage: section-sword-world-rpg-complete-edition-section-10-4-7d3560f8@1090c8d51dd61c88ce068d2905ba7ae5
 ---
 
 # **10.4**
@@ -30,20 +30,34 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03871))_
+
 > However, if you cast the spirit magic _Water Breathing_ beforehand, you can speak normally and cast spells.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03871))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03872))_
 
 > There are no restrictions on the weapons or magic you can use.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03872))_
 
-> Context: If the water is chest-high, your freedom of movement is restricted and you suffer a -2 penalty on hit and evasion checks. There are no restrictions on the weapons or magic you can use.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03872))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03872))_
+
+> If the water is chest-high, your freedom of movement is restricted and you suffer a -2 penalty on hit and evasion checks. There are no restrictions on the weapons or magic you can use.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03873))_
 
 > Also, if you cast the spell _Decrease Water Pressure_ , which is also spirit magic, you can fight without suffering any of these penalties.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03873))_
 
-> Context: Also, if you cast the spell _Decrease Water Pressure_ , which is also spirit magic, you can fight without suffering any of these penalties. At this time, you can use any weapon except projectiles. However, projectiles _cannot_ be used.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03873))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03873))_
+
+> Also, if you cast the spell _Decrease Water Pressure_ , which is also spirit magic, you can fight without suffering any of these penalties. At this time, you can use any weapon except projectiles. However, projectiles _cannot_ be used.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03874))_
 
 > Additionally, the only weapons you can use are daggers, short swords, one-handed spears, or something similar.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03874))_

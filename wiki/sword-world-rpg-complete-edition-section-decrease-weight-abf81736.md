@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-decrease-weight-abf81736@eec4ffaa1ca6b68a0621cbc8264b1798
+projection_coverage: section-sword-world-rpg-complete-edition-section-decrease-weight-abf81736@fda141d79272d9a84a082138e2cc09e8
 ---
 
 # **[ Decrease Weight ]**
@@ -30,11 +30,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01618))_
+
 > Base Mental Power Cost=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01618))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01620))_
 
 > If cast on a weapon or armor, it has the effect of reducing the target's required strength by -1 _without_ changing its strike power or defense power.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01620))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01622))_
 
 > Even if you reduce the required strength, the strike power or defense power of weapons and armor will _not_ change.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01622))_

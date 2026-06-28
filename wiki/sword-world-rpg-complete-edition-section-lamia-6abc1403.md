@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lamia-6abc1403@67b6f5b54f6501adb9192c553b23bc3b
+projection_coverage: section-sword-world-rpg-complete-edition-section-lamia-6abc1403@bf4ef0a31024125a55a2c91e1a9350c0
 ---
 
 # **[ Lamia ]**
@@ -32,29 +32,50 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: A head displacer may use dark magic on very rare occasions. Its magic intensity is 14 (magic power 7).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05445))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05445))_
+
+> A head displacer may use dark magic on very rare occasions. Its magic intensity is 14 (magic power 7).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05447))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05447))_
 
-> Context: A head displacer may use dark magic on very rare occasions. Its magic intensity is 14 (magic power 7).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05445))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05445))_
+
+> A head displacer may use dark magic on very rare occasions. Its magic intensity is 14 (magic power 7).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05448))_
 
 > Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05448))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05449))_
 
 > Evasion Points=11 (4) Defense Points=8 Life Points/Resistance=20/14 (7) Mental Points/Resistance=16/13 (6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05449))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05450))_
 
 > Special Abilities=4th level ancient magic (Magic Intensity/Magic Power=13/6) Needs bloodsucking to
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05450))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05452))_
 
 > Habitat=Human villages Languages=Regional, low ancient Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05452))_
 
-> Context: Lamia cannot survive without sucking fresh blood from young humans, so they often use a _Shape Change_ spell to disguise themselves as human girls, deceive young people into becoming their lovers, and then secretly suck their
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05454))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05454))_
+
+> Lamia cannot survive without sucking fresh blood from young humans, so they often use a _Shape Change_ spell to disguise themselves as human girls, deceive young people into becoming their lovers, and then secretly suck their
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05455))_
 
 > Whenever they suck blood, they must return to their original form.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05455))_

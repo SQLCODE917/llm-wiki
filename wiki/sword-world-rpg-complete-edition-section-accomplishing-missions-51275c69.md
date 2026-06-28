@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-accomplishing-missions-51275c69@ae71b512b7d749a634b27be2a3178caa
+projection_coverage: section-sword-world-rpg-complete-edition-section-accomplishing-missions-51275c69@2960589fa7428036184b85dc4aea3b99
 ---
 
 # **Accomplishing Missions**
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07666))_
+
 > If the game master deems it to be an incomplete success, but not _exactly_ a failure, he or she may decide to award experience points somewhere in between, such as 700 or 800.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07666))_

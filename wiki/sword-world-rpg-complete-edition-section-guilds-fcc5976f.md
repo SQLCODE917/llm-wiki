@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-guilds-fcc5976f@ab97f4ad63295bea21d44efa9b5b3d25
+projection_coverage: section-sword-world-rpg-complete-edition-section-guilds-fcc5976f@ea7f2beefe6b8a24710c5fc305d67f9a
 ---
 
 # **Guilds**
@@ -24,5 +24,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08235))_
+
 > Additionally, those who are guild members in one country may receive special privileges when joining guilds in other countries, such as only needing to pay a fee.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08235))_

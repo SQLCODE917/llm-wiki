@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-priest-skill-7b24bf0c@9e032ce4d10bd6d3aa18e215e9b10e22
+projection_coverage: section-sword-world-rpg-complete-edition-section-priest-skill-7b24bf0c@70d491e8fd6fb8214767c2b14cd37d28
 ---
 
 # 《 **Priest Skill** 》
@@ -31,5 +31,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04368))_
+
 > In rare cases, if a character who had the priest skill believes that their previous teachings are wrong and awakens to the teachings of another god, they may lose any previous priest skill
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04368))_

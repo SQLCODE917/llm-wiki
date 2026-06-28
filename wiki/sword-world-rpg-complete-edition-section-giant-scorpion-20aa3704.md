@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-scorpion-20aa3704@83cb0c9caacd0c685bc1bc78e372fab4
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-scorpion-20aa3704@2fec2f9d0f130beb5206cadaba491bd4
 ---
 
 # **[ Giant Scorpion ]**
@@ -20,11 +20,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05748))_
+
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05748))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05749))_
 
 > Rarity=8 Agility=12 Movement Speed=14 Number=Several to around ten
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05749))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05751))_
 
 > Mental attack immunity Habitat=Deserts, wastelands
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05751))_

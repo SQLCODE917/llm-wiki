@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-redcap-606753c1@d38ea960ac7847ef4dcd1157f6e1694c
+projection_coverage: section-sword-world-rpg-complete-edition-section-redcap-606753c1@5d1e1011cfe263c6332d0d47fd67fb0f
 ---
 
 # **[ Redcap ]**
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06723))_
+
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06723))_

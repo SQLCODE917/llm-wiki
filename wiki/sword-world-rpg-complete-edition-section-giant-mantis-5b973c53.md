@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-mantis-5b973c53@99de7cf8961c6e993d0a27bc8201344b
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-mantis-5b973c53@e85a9eeadb308aabd511a80eefa12573
 ---
 
 # **[ Giant Mantis ]**
@@ -29,17 +29,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When in combat, a giant scorpion can use the pincers on its arms and the barb on its tail to attack different targets (of course, it can also concentrate its attacks on a single target). The barb on the tip of its tail is a stinger that secretes a deadly poison (toxicity score 10), and those stung must make a life force resistance roll. If you fail, your whole body will become paralyzed after an hour, then you will draw your last breath.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05755))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05755))_
+
+> When in combat, a giant scorpion can use the pincers on its arms and the barb on its tail to attack different targets (of course, it can also concentrate its attacks on a single target). The barb on the tip of its tail is a stinger that secretes a deadly poison (toxicity score 10), and those stung must make a life force resistance roll. If you fail, your whole body will become paralyzed after an hour, then you will draw your last breath.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05757))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05757))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05761))_
 
 > You must roll the dice to determine which arm is trapped.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05761))_
 
-> Context: When attacking a human, a giant mantis will use its sickles to capture their arms and attempt to block their movement. Anyone hit by a giant mantis's attack will have one arm trapped. You must roll the dice to determine which arm is trapped. Roll 1D, and if it's 1-3, it'll be the right arm, but if it's 4-6 it'll be the left arm. Ancient magic cannot be used while one arm is trapped. Also, on subsequent rounds, you cannot escape from the giant mantis, so your evasion points will be -4. In order t
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05761))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05761))_
+
+> When attacking a human, a giant mantis will use its sickles to capture their arms and attempt to block their movement. Anyone hit by a giant mantis's attack will have one arm trapped. You must roll the dice to determine which arm is trapped. Roll 1D, and if it's 1-3, it'll be the right arm, but if it's 4-6 it'll be the left arm. Ancient magic cannot be used while one arm is trapped. Also, on subsequent rounds, you cannot escape from the giant mantis, so your evasion points will be -4. In order t
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05762))_
 
 > On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasion points will be reduced by -2.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05762))_

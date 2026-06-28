@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-6-recovering-mental-power-eca2b400@3bf93464bfdcc56d8da1eb9fa8398f8e
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-6-recovering-mental-power-eca2b400@9f5a665178b5bef2dcd1124bb5e0d964
 ---
 
 # 5.1.6 Recovering Mental Power
@@ -64,35 +64,58 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Each player must make a resistance roll using _monster's magic intensity_ as the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01312))_
+### Technical atom 1
 
-> Context: The following procedure is used to make a check when data created for a character casts magic on adventurers, and vice versa.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01317))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01312))_
+
+> Each player must make a resistance roll using _monster's magic intensity_ as the target score.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01317))_
+
+> The following procedure is used to make a check when data created for a character casts magic on adventurers, and vice versa.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01318))_
 
 > Each resisting side must then make a mental power resistance roll, using that determined final score as the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01318))_
 
-> Context: Some magic can also have secondary effects. For example, the spirit magic _Fanaticism_ increases attack power, but conversely _decreases_ evasion speed. With such magic, the one on whom it is cast can _choose_ whether or not to resist.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01327))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01327))_
+
+> Some magic can also have secondary effects. For example, the spirit magic _Fanaticism_ increases attack power, but conversely _decreases_ evasion speed. With such magic, the one on whom it is cast can _choose_ whether or not to resist.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01328))_
 
 > If the one on whom the magic is being cast chooses _not_ to resist the magic, it will _definitely_ take effect so long as the one casting the magic does _not_ roll double ones.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01328))_
 
-> Context: If the one on whom the magic is being cast chooses _not_ to resist the magic, it will _definitely_ take effect so long as the one casting the magic does _not_ roll double ones. You’re also allowed to choose to _not resist_ magic like _Fire Bolt_ , which will definitely result in a loss if it's cast on you....... but that probably won't benefit you in any way.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01328))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01328))_
+
+> If the one on whom the magic is being cast chooses _not_ to resist the magic, it will _definitely_ take effect so long as the one casting the magic does _not_ roll double ones. You’re also allowed to choose to _not resist_ magic like _Fire Bolt_ , which will definitely result in a loss if it's cast on you....... but that probably won't benefit you in any way.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01331))_
 
 > Adventurers cannot use magic endlessly.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01331))_
 
-> Context: A character can reduce their mental power to 0, but they _cannot_ make it negative. For example, a character with 5 points of mental power remaining _can_ use magic that costs 5 points of mental power, but _cannot_ use magic that costs _6 or more_ points of mental power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01336))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01336))_
+
+> A character can reduce their mental power to 0, but they _cannot_ make it negative. For example, a character with 5 points of mental power remaining _can_ use magic that costs 5 points of mental power, but _cannot_ use magic that costs _6 or more_ points of mental power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01337))_
 
 > The character cannot regain consciousness unless they recover their mental power to _1 point or more_ in some way.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01337))_
 
-> Context: A character can reduce their mental power to 0, but they _cannot_ make it negative. For example, a character with 5 points of mental power remaining _can_ use magic that costs 5 points of mental power, but _cannot_ use magic that costs _6 or more_ points of mental power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01336))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01336))_
+
+> A character can reduce their mental power to 0, but they _cannot_ make it negative. For example, a character with 5 points of mental power remaining _can_ use magic that costs 5 points of mental power, but _cannot_ use magic that costs _6 or more_ points of mental power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01338))_
 
 > Even if magic _fails_ , such as by rolling double ones or being resisted by the opponent, a character must _still_ consume their mental power, same as if they had actually used the magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01338))_

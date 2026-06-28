@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-van-blade-6d1d3c79@67faf132ede71690e969e5e121efc3b8
+projection_coverage: section-sword-world-rpg-complete-edition-section-van-blade-6d1d3c79@63632e43c0d65354af9074531ae8594a
 ---
 
 # 《 **Van Blade** 》
@@ -21,17 +21,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07055))_
+
 > Rarity=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07055))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07056))_
 
 > Enchanter=Van
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07056))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07057))_
 
 > Form=Greatsword with a shining white blade Required Strength=18 (Strike power 23)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07057))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07058))_
 
 > Base Trade Price=1,000,000 gamels (not for sale, estimated)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07058))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07059))_
 
 > Powers=+3 to attack power and bonus damage. Sense danger. Knowledge of past kings
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07059))_

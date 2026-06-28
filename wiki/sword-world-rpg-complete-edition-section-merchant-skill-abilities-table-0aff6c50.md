@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-merchant-skill-abilities-table-0aff6c50@9adcd4d38f11fa37c4830f8325a26cb2
+projection_coverage: section-sword-world-rpg-complete-edition-section-merchant-skill-abilities-table-0aff6c50@4a4a54c2f7db26a3d10b3d52c4b3a424
 ---
 
 # **Merchant Skill Abilities Table**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-merchant-s
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08373))_
 
 | **Merchant Skill Abilities Table** |
 | --- |
@@ -34,4 +38,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08373))_

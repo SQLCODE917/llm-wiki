@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-element
 page_kind: concept
-summary: Element: 22 statement(s) and 10 atom(s) from raw/javascriptallonge.pdf.
+summary: Element: 22 statement(s) and 12 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-element@f83f042c14aa61997a945af0467342c8
+projection_coverage: topic-javascriptallonge-element@71573a021ece01b71f2b362bfa119a56
 ---
 
 # Element
@@ -14,8 +14,6 @@ projection_coverage: topic-javascriptallonge-element@f83f042c14aa61997a945af0467
 What [[javascriptallonge]] covers about element:
 
 ## Statements
-
-_Showing 14 of 22 statements selected for this topic._
 
 - The big elements of divide and conquer are a method for decomposing a problem into smaller problems, a test for the smallest possible problem, and a means of putting the pieces back together. _(javascriptallonge.pdf (source-range-83ecb080-01338))_
 - There’s no making copies of arrays, the time to cdr a list with five elements is the same as the time to cdr a list with 5,000 elements, and no temporary arrays are needed. _(javascriptallonge.pdf (source-range-83ecb080-01555))_
@@ -31,10 +29,16 @@ _Showing 14 of 22 statements selected for this topic._
 - Here’s the scheme in JavaScript, using two-element arrays to represent cons cells: _(javascriptallonge.pdf (source-range-83ecb080-01537))_
 - In JavaScript, it’s still much, much, much faster to get all the elements except the head from a linked list than from an array. _(javascriptallonge.pdf (source-range-83ecb080-01555))_
 - Arrays avoid this problem by pessimistically copying all the references whenever we extract an element or sequence of elements from them (We’ll see this explained later in Mutation). _(javascriptallonge.pdf (source-range-83ecb080-01567))_
+- If we _know_ that a list doesn’t share any elements with another list, we can safely modify it. _(javascriptallonge.pdf (source-range-83ecb080-01863))_
+- And worst of all, we’re getting really low-level with details like knowing that the elements of an array are indexed with consecutive integers that begin with 0. _(javascriptallonge.pdf (source-range-83ecb080-01963))_
+- Acting on the elements of a collection one at a time is called _iterating over the contents_ , and JavaScript has a standard way to iterate over the contents of collections. _(javascriptallonge.pdf (source-range-83ecb080-02365))_
+- Instead of having a function that you call to get the next element, you have an object with a .next() method. _(javascriptallonge.pdf (source-range-83ecb080-02400))_
+- elements that are not, themselves, iterable. _(javascriptallonge.pdf (source-range-83ecb080-02548))_
+- The first element of the fibonacci sequence is zero. _(javascriptallonge.pdf (source-range-83ecb080-02561))_
+- The second element of the fibonacci sequence is one. _(javascriptallonge.pdf (source-range-83ecb080-02562))_
+- These three lines say, in essence, “yield all the elements of TreeIterable(e), in order.” This comes up quite often when we have collections that are compounds, collections made from other collections. _(javascriptallonge.pdf (source-range-83ecb080-02698))_
 
 ## Technical atoms
-
-_Showing 6 of 10 technical atoms selected for this topic._
 
 ### Technical atom 1
 
@@ -58,6 +62,16 @@ _Showing 6 of 10 technical atoms selected for this topic._
 
 ### Technical atom 3
 
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01356))_
+
+> And if we wanted to “truthify” each element in a list, we could write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01359))_
+
+> **const** truthyAll = ([first, ...rest]) => first === **undefined**
+
+### Technical atom 4
+
 **Context:** _(javascriptallonge.pdf (source-range-83ecb080-01537))_
 
 > Here’s the scheme in JavaScript, using two-element arrays to represent cons cells:
@@ -66,7 +80,7 @@ _Showing 6 of 10 technical atoms selected for this topic._
 
 > **const** cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d;
 
-### Technical atom 4
+### Technical atom 5
 
 **Context:** _(javascriptallonge.pdf (source-range-83ecb080-01565))_
 
@@ -76,7 +90,7 @@ _Showing 6 of 10 technical atoms selected for this topic._
 
 > We have avoided discussing rebinding and mutating values, but if we want to change elements of our lists, the naïve linked list implementation suffers as well: When we take the cdr of a linked list, we are sharing the elements.
 
-### Technical atom 5
+### Technical atom 6
 
 **Context:** _(javascriptallonge.pdf (source-range-83ecb080-01854))_
 
@@ -86,7 +100,7 @@ _Showing 6 of 10 technical atoms selected for this topic._
 
 > The consequence of this is that if you have an array, and you take it’s “rest,” your “child” array is a copy of the elements of the parent array.
 
-### Technical atom 6
+### Technical atom 7
 
 **Context:** _(javascriptallonge.pdf (source-range-83ecb080-02438))_
 
@@ -96,6 +110,70 @@ _Showing 6 of 10 technical atoms selected for this topic._
 
 > - ['some squares', ...someSquares] _//=> ["some squares", 1, 4, 9, 16, 25]_
 
+### Technical atom 8
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02440))_
+
+> And we can also spread the elements of an array literal into parameters:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02441))_
+
+> **const** firstAndSecondElement = (first, second) => ({first, second})
+
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02440))_
+
+> And we can also spread the elements of an array literal into parameters:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02442))_
+
+> firstAndSecondElement(...stack) _//=> {"first":5,"second":10}_
+
+### Technical atom 10
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02457))_
+
+> The iterables we’re discussing represent _ordered collections_ . One of the semantic properties of an ordered collection is that every time you iterate over it, you get its elements in order, from the beginning. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02458))_
+
+> **const** abc = ["a", "b", "c"];
+
+### Technical atom 11
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02501))_
+
+> For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest]:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02502))_
+
+> **const** first = (iterable) => iterable[Symbol.iterator]().next().value; **const** rest = (iterable) => ({ [Symbol.iterator] () { **const** iterator = iterable[Symbol.iterator](); iterator.next(); **return** iterator; } });
+
+### Technical atom 12
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02548))_
+
+> For example, iterating over a tree. Given an array that might contain arrays, let’s say we want to generate all the “leaf” elements, i.e. elements that are not, themselves, iterable.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02549))_
+
+> _// Generation_ **const** isIterable = (something) => !!something[Symbol.iterator];
+
+
+## Related pages
+
+- [[javascriptallonge-list]] - shared statements and technical atoms (3 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-iterable]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-array]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-collection]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-javascript]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-return]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-rest]] - shared technical atoms (2 shared atom(s))
+- [[javascriptallonge-copy]] - shared statements (2 shared statement(s))
+- [[javascriptallonge-function]] - shared statements (1 shared statement(s))
+- [[javascriptallonge-mapwith]] - shared statements (1 shared statement(s))
+- [[javascriptallonge-second]] - shared statements (1 shared statement(s))
 
 ## Source
 

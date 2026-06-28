@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-procedure-when-an-5-1-4-6-adventurer-casts-resistible-magic-on-an-advent-b5bd8bc2@0178c8b2ab1426039a1ecb7e3bff2b13
+projection_coverage: section-sword-world-rpg-complete-edition-section-procedure-when-an-5-1-4-6-adventurer-casts-resistible-magic-on-an-advent-b5bd8bc2@051c633b210a2611d1c0e2f2e2e58409
 ---
 
 # **Procedure When an 5.1.4.6 Adventurer Casts Resistible Magic on an Adventurer**
@@ -23,17 +23,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Just like player characters, even those whose data was created for a character may appear as an enemy. If such an enemy casts magic on an adventurer, or if an adventurer casts magic on such an enemy, both sides must roll dice to resolve the situation, just as in weapon combat between adventurers.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01288))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01288))_
+
+> Just like player characters, even those whose data was created for a character may appear as an enemy. If such an enemy casts magic on an adventurer, or if an adventurer casts magic on such an enemy, both sides must roll dice to resolve the situation, just as in weapon combat between adventurers.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01289))_
 
 > If the score of the one casting the magic is greater, the magic will take _full_ effect, but if there is a tie or if the score of the one on whom the magic is being cast is greater, the magic is _resisted_ and will only take an _incomplete_ effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01289))_
 
-> Context: Just like player characters, even those whose data was created for a character may appear as an enemy. If such an enemy casts magic on an adventurer, or if an adventurer casts magic on such an enemy, both sides must roll dice to resolve the situation, just as in weapon combat between adventurers.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01288))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01288))_
+
+> Just like player characters, even those whose data was created for a character may appear as an enemy. If such an enemy casts magic on an adventurer, or if an adventurer casts magic on such an enemy, both sides must roll dice to resolve the situation, just as in weapon combat between adventurers.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01291))_
 
 > When the one casting the magic rolls _double ones_ , the magic takes _no_ effect at all.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01291))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01292))_
 
 > When the resisting side rolls _double ones_ , the resist _fails_ , unless the side casting the magic _also_ rolls double ones.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01292))_

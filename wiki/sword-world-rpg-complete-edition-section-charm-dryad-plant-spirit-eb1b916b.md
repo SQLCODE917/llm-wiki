@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-charm-dryad-plant-spirit-eb1b916b@c028ecb71eb0a06e281b352caac74930
+projection_coverage: section-sword-world-rpg-complete-edition-section-charm-dryad-plant-spirit-eb1b916b@adbd577a06e3bb44b2550aa070f6c1cb
 ---
 
 # **[ Charm ] (Dryad/Plant Spirit)**
@@ -26,14 +26,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: It is possible to expand the effect of this spell to launch multiple arrows and attack multiple targets at once. However, you cannot launch multiple arrows at a single target at once. Note that this spell cannot deal damage to monsters that can only be wounded by silver or magical weapons, such as werewolves, etc. (unless the arrow itself is magical or silver).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02533))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02533))_
+
+> It is possible to expand the effect of this spell to launch multiple arrows and attack multiple targets at once. However, you cannot launch multiple arrows at a single target at once. Note that this spell cannot deal damage to monsters that can only be wounded by silver or magical weapons, such as werewolves, etc. (unless the arrow itself is magical or silver).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02535))_
 
 > Base Mental Power Cost=25 Distance=20 meters Area=One Duration=1 week Effect=Charms the target Type=Mind, target score Expansion=Final score, duration, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02535))_
 
-> Context: It is possible to expand the effect of this spell to launch multiple arrows and attack multiple targets at once. However, you cannot launch multiple arrows at a single target at once. Note that this spell cannot deal damage to monsters that can only be wounded by silver or magical weapons, such as werewolves, etc. (unless the arrow itself is magical or silver).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02533))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02533))_
+
+> It is possible to expand the effect of this spell to launch multiple arrows and attack multiple targets at once. However, you cannot launch multiple arrows at a single target at once. Note that this spell cannot deal damage to monsters that can only be wounded by silver or magical weapons, such as werewolves, etc. (unless the arrow itself is magical or silver).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02536))_
 
 > At this time, if both your intentions are _mutual_ , you can make them follow your will in the form of a proposal, and if your intentions are _not_ mutual, you will deprive them of hostility.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02536))_

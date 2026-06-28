@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-will-o-wisp-light-spirit-2cc0bbcf@b796210a1b40765ea3e1c6486015f396
+projection_coverage: section-sword-world-rpg-complete-edition-section-will-o-wisp-light-spirit-2cc0bbcf@1cd763023e425c98fd41481368e15e97
 ---
 
 # **(Will-O-Wisp/Light Spirit)**
@@ -28,20 +28,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02330))_
+
 > Base Mental Power Cost=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02330))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02331))_
 
 > Distance=20 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02331))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02332))_
 
 > Area=A space with a 5 meter radius Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02332))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02333))_
 
 > Effect=Illuminates the space within the area of effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02333))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02334))_
 
 > Type=Damage (Pure energy-type) Counters (Negates): _Shade_ , _Spirit Wall: Shade_ Countered (Negated) By: _Shade_ , _Spirit Wall: Shade_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02334))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02336))_
 
 > Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02336))_

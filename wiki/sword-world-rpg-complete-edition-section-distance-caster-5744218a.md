@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-distance-caster-5744218a@15e63ed74d210e87643e27e2984c97c3
+projection_coverage: section-sword-world-rpg-complete-edition-section-distance-caster-5744218a@fdb82f32ec078127aea31523cafbc810
 ---
 
 # Distance=Caster
@@ -21,14 +21,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01976))_
+
 > Area=A space within a 30 meter radius from the caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01976))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01977))_
 
 > Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01977))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01978))_
 
 > Effect=Can see through obstacles and the interior of objects Type=Detection Expansion=Duration, area Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01978))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01979))_
 
 > As long as it's within the area of effect, the caster can adjust the desired range and distance they want to see at will.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01979))_

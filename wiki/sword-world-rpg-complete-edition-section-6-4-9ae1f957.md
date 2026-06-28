@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-6-4-9ae1f957@49af5377c7d7faf09fcdf3b17f631e9f
+projection_coverage: section-sword-world-rpg-complete-edition-section-6-4-9ae1f957@d2ab615cedc7849d00c8ccbbcff86dd0
 ---
 
 # **6.4**
@@ -33,11 +33,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> There is no requirement that you have to have the sage skill and the sorcerer skill at the same time, but if you _do_ acquire the sage skill and the sorcerer skill at the same time, you will receive a _bonus_ on experience points consumed.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03433))_
+### Technical atom 1
 
-> Context: The sage skill includes the following abilities:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03436))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03433))_
+
+> There is no requirement that you have to have the sage skill and the sorcerer skill at the same time, but if you _do_ acquire the sage skill and the sorcerer skill at the same time, you will receive a _bonus_ on experience points consumed.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03436))_
+
+> The sage skill includes the following abilities:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03437))_
 
 > If you can read both common _and_ low ancient, you are free to learn subsequent languages.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03437))_

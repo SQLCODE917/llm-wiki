@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-power-link-3547f73d@2b595cc7ee06f4f70809c22f9ba48e9a
+projection_coverage: section-sword-world-rpg-complete-edition-section-power-link-3547f73d@c111fc3bbc2026beda33a54d2c034024
 ---
 
 # **[ Power Link ]**
@@ -30,26 +30,48 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The commands you give the animal should be very simple. For example, launching an attack on a specific target, delivering a certain package somewhere, heading to a certain location as a group, etc. You can also give commands to encourage suicide, such as jumping into a fire to become food, but if you give such commands unnecessarily, you may risk _losing_ your priest skill depending on the god you worship. For example, a priest of Myrii should _only_ use animals to buy time while he escapes from
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03000))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03000))_
+
+> The commands you give the animal should be very simple. For example, launching an attack on a specific target, delivering a certain package somewhere, heading to a certain location as a group, etc. You can also give commands to encourage suicide, such as jumping into a fire to become food, but if you give such commands unnecessarily, you may risk _losing_ your priest skill depending on the god you worship. For example, a priest of Myrii should _only_ use animals to buy time while he escapes from
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03003))_
 
 > Base Mental Power Cost=24
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03003))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03004))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03004))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03005))_
 
 > Area=A space within a 10 meter radius from the caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03005))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03006))_
 
 > Duration=Until focus ends
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03006))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03007))_
 
 > Effect=Create an accumulation field for mental power
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03007))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03008))_
 
 > Type=Focus, target score Expansion=Final score, area Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03008))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03009))_
 
 > Those within range must agree to the spell, and if so, decide how many points of mental power (points) they want to pour into the accumulation field.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03009))_

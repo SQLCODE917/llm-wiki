@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-crab-4ea29a62@edb36d36c6ca9ddbbac4a7f8f25b7bd6
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-crab-4ea29a62@922d3db5d73c75f0672c326506124dfd
 ---
 
 # **[ Giant Crab ]**
@@ -25,8 +25,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05915))_
+
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05915))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05917))_
 
 > Habitat=Warm coastal areas Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05917))_

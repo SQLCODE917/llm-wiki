@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-goblin-shaman-4dd812bc@3f4eb8e933ef6533ff614c72d1fcf791
+projection_coverage: section-sword-world-rpg-complete-edition-section-goblin-shaman-4dd812bc@9d608968bf817d1e396093a7ac5d552b
 ---
 
 # **Goblin Shaman**
@@ -32,26 +32,46 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05038))_
+
 > Monster Level=3 Rarity=10 Agility=13 Movement Speed=8 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Weapon or fang: 10 (3) Strike Points=8
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05038))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05039))_
 
 > Languages=Goblin Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05039))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05040))_
 
 > In their villages, they may use kobolds and human children as slaves.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05040))_
 
-> Context: Goblins are a type of youma that live near human villages, and are extremely common monsters in Alecrast. Their height is slightly smaller than that of a human, and their skin is reddish-brown. They usually live in groups of several to several dozen in forests and hills, but they sometimes appear at people's homes and attack livestock or steal. They often use weapons (mostly small ones such as shortswords, daggers etc.) stolen from humans. In their villages, they may use kobolds and human childr
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05040))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05040))_
+
+> Goblins are a type of youma that live near human villages, and are extremely common monsters in Alecrast. Their height is slightly smaller than that of a human, and their skin is reddish-brown. They usually live in groups of several to several dozen in forests and hills, but they sometimes appear at people's homes and attack livestock or steal. They often use weapons (mostly small ones such as shortswords, daggers etc.) stolen from humans. In their villages, they may use kobolds and human childr
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05041))_
 
 > Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=12/11 (4) Mental Points/Resistance=15/11 (4)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05041))_
 
-> Context: Goblins are a type of youma that live near human villages, and are extremely common monsters in Alecrast. Their height is slightly smaller than that of a human, and their skin is reddish-brown. They usually live in groups of several to several dozen in forests and hills, but they sometimes appear at people's homes and attack livestock or steal. They often use weapons (mostly small ones such as shortswords, daggers etc.) stolen from humans. In their villages, they may use kobolds and human childr
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05040))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05040))_
+
+> Goblins are a type of youma that live near human villages, and are extremely common monsters in Alecrast. Their height is slightly smaller than that of a human, and their skin is reddish-brown. They usually live in groups of several to several dozen in forests and hills, but they sometimes appear at people's homes and attack livestock or steal. They often use weapons (mostly small ones such as shortswords, daggers etc.) stolen from humans. In their villages, they may use kobolds and human childr
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05042))_
 
 > Special Abilities=3rd level spirit magic (Magic Intensity/Magic Power=12/5)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05042))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05044))_
 
 > Habitat=Mountains, forests, caves Languages=Goblin, silent spirit, regional Perception=Five senses (darkvision, infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05044))_

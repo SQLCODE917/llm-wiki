@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-find-sense-trap-intelligence-no-equipment-restriction-not-retriable-a177f97a@79234ef0be4c5ef7fcbab8383b188dea
+projection_coverage: section-sword-world-rpg-complete-edition-section-find-sense-trap-intelligence-no-equipment-restriction-not-retriable-a177f97a@49089162ab2f8ca37e09c54ca70d2333
 ---
 
 # **[** ⑯ **Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable)**
@@ -30,8 +30,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The **find** ability is used by the thief to actively identify a location and determine if a trap is set there. This check (success roll) is based on _difficulty_ . In the case of a success, please accurately tell them of the presence of the trap and the difficulty to disarm it, and in the case of a failure, or if a trap is not present in the first place, make sure to tell them that it cannot be found. Never say _no_ , even when there are no traps.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03362))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03362))_
+
+> The **find** ability is used by the thief to actively identify a location and determine if a trap is set there. This check (success roll) is based on _difficulty_ . In the case of a success, please accurately tell them of the presence of the trap and the difficulty to disarm it, and in the case of a failure, or if a trap is not present in the first place, make sure to tell them that it cannot be found. Never say _no_ , even when there are no traps.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03363))_
 
 > If successful, the presence of a trap will be sensed at a perilous point, and the game master must inform the player of the type of trap.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03363))_

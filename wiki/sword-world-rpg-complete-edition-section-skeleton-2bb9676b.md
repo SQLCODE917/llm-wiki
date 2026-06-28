@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-skeleton-2bb9676b@ec8825af40a67ba849e744a9c6c4b5c2
+projection_coverage: section-sword-world-rpg-complete-edition-section-skeleton-2bb9676b@0d972e18f87535cd21be61f1658a8f88
 ---
 
 # **[ Skeleton ]**
@@ -26,35 +26,68 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06121))_
+
 > Monster Level=1
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06121))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06122))_
 
 > Rarity=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06122))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06123))_
 
 > Agility=14 Movement Speed=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06123))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06124))_
 
 > Number=Several to dozens
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06124))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06125))_
 
 > Frequency=Frequent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06125))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06126))_
 
 > Intellect=Obeys commands Reaction=Command-based Attack Points=Weapon:8 (1) Strike Points=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06126))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06127))_
 
 > Evasion Points=9 (2) Defense Points=3 Life Points/Resistance=7/8 (1)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06127))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06128))_
 
 > Mental Points/Resistance=-/9 (2)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06128))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06129))_
 
 > Special Abilities=Bladed weapons cannot critical
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06129))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06131))_
 
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06131))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06132))_
 
 > Due to their characteristic lack of flesh, bladed weapons cannot deal additional critical damage to skeletons.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06132))_

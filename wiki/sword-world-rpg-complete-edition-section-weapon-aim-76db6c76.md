@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-aim-76db6c76@1d32ac60f7bbaaec27a56683742530c4
+projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-aim-76db6c76@81ec78acbdb087df478859c2cef7fe4e
 ---
 
 # **Weapon Aim**
@@ -27,14 +27,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If it hits and further deals damage, your opponent may fall **prone** . Your opponent must make a life force (points) resistance roll against a target score of 10 and with _damage dealt to life force (points)_ as a penalty. If he or she fails, they will fall _prone_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07855))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07855))_
+
+> If it hits and further deals damage, your opponent may fall **prone** . Your opponent must make a life force (points) resistance roll against a target score of 10 and with _damage dealt to life force (points)_ as a penalty. If he or she fails, they will fall _prone_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07858))_
 
 > If it hits, your opponent must make a success roll against target score 10, using _adventurer level + strength bonus_ as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07858))_
 
-> Context: 3. Subtract the defender's adventurer level from the result in 2. This final result is the penalty for the success roll.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07863))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07863))_
+
+> 3. Subtract the defender's adventurer level from the result in 2. This final result is the penalty for the success roll.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07864))_
 
 > If an area aim is declared against other monsters, the game master should refer to these and use common sense when making decisions.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07864))_

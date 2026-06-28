@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-11-4-acquiring-rune-master-skills-and-increasing-levels-0c325214@8ffab3298b6eb0fe0cd7ce2ad93a9415
+projection_coverage: section-sword-world-rpg-complete-edition-section-11-4-acquiring-rune-master-skills-and-increasing-levels-0c325214@1c554eaf9fb027ac1c269f9cf9294fe0
 ---
 
 # 11.4 Acquiring Rune Master Skills and Increasing Levels
@@ -66,20 +66,36 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04342))_
+
 > Base Mental Power Cost=45
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04342))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04343))_
 
 > Distance=Infinite Area=One lesser dragon Duration=18 rounds Effect=Summon one lesser dragon Type=Summon, ritual, non-removable Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04343))_
 
-> Context: (they can carry many more people if you use a basket, etc.).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04345))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04345))_
+
+> (they can carry many more people if you use a basket, etc.).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04348))_
 
 > Base Mental Power Cost=30 Distance=Caster Area=Caster Duration=Instant Effect=Be reborn as a dragon Type=Non-removable, ritual Expansion=Final score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04348))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04349))_
 
 > At this time, the caster must make a success roll to determine a final score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04349))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04368))_
 
 > In rare cases, if a character who had the priest skill believes that their previous teachings are wrong and awakens to the teachings of another god, they may lose any previous priest skill
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04368))_

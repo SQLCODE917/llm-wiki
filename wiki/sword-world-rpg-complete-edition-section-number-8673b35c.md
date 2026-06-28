@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-number-8673b35c@ea07f360cf2d079ab2fdbe72abf8dcf1
+projection_coverage: section-sword-world-rpg-complete-edition-section-number-8673b35c@aad10796504f974d2a5e2bb71373f959
 ---
 
 # 《 **Number** 》
@@ -23,6 +23,10 @@ From [[sword-world-rpg-complete-edition]].
 - However, in order to do so, you will need a reason that the players can understand. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04881))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06741))_
 
 | Critical Target 9 | 0-1 | 2-5 | 6-9 | 10-13 | 14-18 | 19-22 | 23-26 | 27-31 | 32-35 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -46,4 +50,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06741))_

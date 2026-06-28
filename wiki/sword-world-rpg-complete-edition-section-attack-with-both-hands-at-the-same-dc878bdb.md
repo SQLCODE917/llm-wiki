@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-attack-with-both-hands-at-the-same-dc878bdb@b266c6aa5cfcba401f7041f985b10df7
+projection_coverage: section-sword-world-rpg-complete-edition-section-attack-with-both-hands-at-the-same-dc878bdb@1a2ac37a2ccdcb8d6aa20ce937ca8c0b
 ---
 
 # **Attack with both hands at the same**
@@ -25,5 +25,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07879))_
+
 > If you’re fighting with the thief skill, the required strength for _both_ weapons is only _half_ the character's strength.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07879))_

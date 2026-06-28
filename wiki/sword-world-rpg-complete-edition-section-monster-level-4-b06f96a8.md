@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-4-b06f96a8@e9aa338225d178c1e19c41e49acc7240
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-4-b06f96a8@05f33a38a8684eabc997e1234a31b6d8
 ---
 
 # Monster Level=4
@@ -35,29 +35,53 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05135))_
+
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05135))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05136))_
 
 > Agility=10 Movement Speed=6 Number=Solo to several Frequency=Rare Intellect=Low Reaction=Violent Attack Points=Strike Points=Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=10/11 (4)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05136))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05137))_
 
 > Mental Points/Resistance=20/13 (6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05137))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05138))_
 
 > Special Abilities=Fire (Strike power 10, bonus damage 5, Magic Intensity/Magic Power=12/5)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05138))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05140))_
 
 > Habitat=Anywhere, provided there’s fire Languages=Silent spirit Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05140))_
 
-> Context: Salamanders are spirits, so their temporary bodies are, so to speak, a modified form of their spirit power, so they cannot be attacked by normal weapons. Iron can obstruct the workings of a spirit, but it cannot be used as a means to extinguish it. To damage a Salamander, you need a magic or magically-imbued weapon, or a silver weapon. Also, when a person using the
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05142))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05142))_
+
+> Salamanders are spirits, so their temporary bodies are, so to speak, a modified form of their spirit power, so they cannot be attacked by normal weapons. Iron can obstruct the workings of a spirit, but it cannot be used as a means to extinguish it. To damage a Salamander, you need a magic or magically-imbued weapon, or a silver weapon. Also, when a person using the
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05144))_
 
 > You can also deal damage to a Salamander by pouring water on it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05144))_
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 
 | Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
 | --- | --- | --- | --- | --- | --- |
@@ -73,7 +97,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_
 
 | Level 1-2 | It's no big deal. Just a small problem in a small village |
 | --- | --- |
@@ -99,4 +126,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-intellect-high-reaction-adversarial-07b2097e@34a22c4bc12762ab06fe8de9a3768f68
+projection_coverage: section-sword-world-rpg-complete-edition-section-intellect-high-reaction-adversarial-07b2097e@ffe355db802d3973e9f3170c1cecb921
 ---
 
 # Intellect=High Reaction=Adversarial
@@ -44,26 +44,46 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06322))_
+
 > Attack Points=Barehanded:17 (10) Strike Points=14+mental damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06322))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06323))_
 
 > Evasion Points=19 (12) Defense Points=12 Life Points/Resistance=26/20 (13) Mental Points/Resistance=26/20 (13)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06323))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06324))_
 
 > Special Abilities=8th level dark magic (Magic intensity/magic power=18/11) Steal mental power (Strike power 10, bonus damage 10)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06324))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06325))_
 
 > Gaze (Resist target score=17, paralysis by fear)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06325))_
 
-> Context: regenerate in its _soil_ location. Vampires can also turn into mist at their own will before their life points reach 0, and regenerate in a place with _soil_ . Even if their movement is blocked by magic such as _Paralyze_ , etc. they can still turn into a mist.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06331))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06331))_
+
+> regenerate in its _soil_ location. Vampires can also turn into mist at their own will before their life points reach 0, and regenerate in a place with _soil_ . Even if their movement is blocked by magic such as _Paralyze_ , etc. they can still turn into a mist.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06334))_
 
 > You cannot attempt this success roll if you do not know about vampires.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06334))_
 
-> Context: Many vampires preserve this "soil" by preparing a coffin and lining it inside, while others simply keep it in a mound inside their room. A sage who has knowledge of vampires can look at the _soil_ and completely find out its true identity through their _knowledge_ ability. To do so, you must know about vampires and must also make a success roll against target score 16. You cannot attempt this success roll if you do not know about vampires.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06334))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06334))_
+
+> Many vampires preserve this "soil" by preparing a coffin and lining it inside, while others simply keep it in a mound inside their room. A sage who has knowledge of vampires can look at the _soil_ and completely find out its true identity through their _knowledge_ ability. To do so, you must know about vampires and must also make a success roll against target score 16. You cannot attempt this success roll if you do not know about vampires.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06335))_
 
 > If someone with the shaman skill looks at the _soil_ , they can immediately tell that it's something out of the ordinary.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06335))_

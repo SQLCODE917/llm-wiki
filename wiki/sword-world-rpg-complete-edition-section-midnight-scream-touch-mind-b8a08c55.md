@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-midnight-scream-touch-mind-b8a08c55@3d82f3e1f3545527bc8084c5be1aa23e
+projection_coverage: section-sword-world-rpg-complete-edition-section-midnight-scream-touch-mind-b8a08c55@26a3cb7eaff42ff8314e45464866457c
 ---
 
 # **[Midnight Scream (Touch/Mind)]**
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04616))_
+
 > Effect=Cause intense fear Toxicity Score=13 Rarity=14 Effect Start Time=6 rounds later Effect Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04616))_

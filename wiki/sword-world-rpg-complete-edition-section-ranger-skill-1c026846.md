@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ranger-skill-1c026846@de1d24c87f77999e8960a877621f06d8
+projection_coverage: section-sword-world-rpg-complete-edition-section-ranger-skill-1c026846@15828f3aef5e8f4e56ff2b1fa8dc3864
 ---
 
 # 【 **Ranger Skill** 】
@@ -22,6 +22,10 @@ From [[sword-world-rpg-complete-edition]].
 - The ranger skill cannot be used for defense. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00844))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
 
 | Shield Name | Req. Str. | Price |
 | --- | --- | --- |
@@ -39,10 +43,13 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
 
-> Context: weapon + shield + armor or two-handed weapon + armor. Of course, one-handed weapon + armor, two-handed weapon without armor, etc. are also possible, and it is acceptable to carry a spare weapon on your waist or back, as long as it is within the bounds of common sense. However, you may not hold two weapons in both hands or hold a shield in each hand-- it is fine to do so, but a shield in your dominant hand or a weapon in your non-dominant hand is of no use.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00841))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00841))_
+
+> weapon + shield + armor or two-handed weapon + armor. Of course, one-handed weapon + armor, two-handed weapon without armor, etc. are also possible, and it is acceptable to carry a spare weapon on your waist or back, as long as it is within the bounds of common sense. However, you may not hold two weapons in both hands or hold a shield in each hand-- it is fine to do so, but a shield in your dominant hand or a weapon in your non-dominant hand is of no use.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00843))_
 
 > Weapons that can be used for both melee _and_ throwing, as indicated by _throwable_ on the Weapons table, are useful _only_ when used for throwing, _not_ for melee.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00843))_

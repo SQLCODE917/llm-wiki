@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-normal-weapon-immunity-ae7f2e00@00488d10fd9a8a49d5581ec529c0b08b
+projection_coverage: section-sword-world-rpg-complete-edition-section-normal-weapon-immunity-ae7f2e00@a8b93af9a1d7a77230e2f90862cf0ae9
 ---
 
 # 《 **Normal Weapon Immunity** 》
@@ -22,8 +22,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Attacks with weapons, no matter how powerful they are, or even if they’re magical weapons, will have no effect at all. Even in combat between monsters, it’s not possible for monsters that only have attack methods similar to weapons, such as fangs or claws, etc. to fight against them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06849))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06849))_
+
+> Attacks with weapons, no matter how powerful they are, or even if they’re magical weapons, will have no effect at all. Even in combat between monsters, it’s not possible for monsters that only have attack methods similar to weapons, such as fangs or claws, etc. to fight against them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06851))_
 
 > Normal weapons, no matter how powerful, cannot deal damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06851))_

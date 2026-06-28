@@ -220,27 +220,6 @@
       "topic_key": "pull-lever-preface"
     },
     {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-3bf46b3d69f4e422",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-3bf46b3d69f4e422"
-      ],
-      "label": "**A Pull of the Lever: Prefaces**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-583c63ffbeb9306c",
-      "source_range_id": "source-range-83ecb080-00022",
-      "structure_node_id": "structure-node-4fae3b0b4500336f",
-      "topic_key": "pull-lever-preface"
-    },
-    {
       "atom_ids": [
         "technical-atom-ebfc8d2efbcc798b",
         "technical-atom-685939cbe0eaa211",
@@ -491,63 +470,6 @@
       "page_target_id": "page-target-6ac36f4f08f6e1f9",
       "source_range_id": "source-range-83ecb080-00028",
       "structure_node_id": "structure-node-f68d67359e5d57d7",
-      "topic_key": "javascript-allong"
-    },
-    {
-      "atom_ids": [
-        "technical-atom-ebfc8d2efbcc798b"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-be66106f1d07f249",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "cause-effect",
-          "ledger_entry_id": "ledger-entry-e8ab03059f954c18",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-17f0df2e83dfa0c6",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-339af3e7ecc1e211",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-c863330690deac23",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "rule",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-ebfc8d2efbcc798b"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-be66106f1d07f249",
-        "ledger-entry-e8ab03059f954c18",
-        "ledger-entry-17f0df2e83dfa0c6",
-        "ledger-entry-339af3e7ecc1e211",
-        "ledger-entry-c863330690deac23"
-      ],
-      "label": "**About JavaScript Allongé**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-f356850c0933a717",
-      "source_range_id": "source-range-83ecb080-00031",
-      "structure_node_id": "structure-node-4c0f775c61d33c65",
       "topic_key": "javascript-allong"
     },
     {
@@ -1237,34 +1159,6 @@
       "topic_key": "sample-pdf"
     },
     {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-9984e5fab871e89b",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-9e2f4c5a13ddfb16",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-9984e5fab871e89b",
-        "ledger-entry-9e2f4c5a13ddfb16"
-      ],
-      "label": "**About The Sample PDF**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-4be2dc488dfc3e88",
-      "source_range_id": "source-range-83ecb080-00142",
-      "structure_node_id": "structure-node-195c4fbac5356619",
-      "topic_key": "sample-pdf"
-    },
-    {
       "atom_ids": [
         "technical-atom-39b935a8c67d3e9e",
         "technical-atom-0421e5ae1d6ff040"
@@ -1389,48 +1283,6 @@
       "page_target_id": "page-target-947953de9e104f3b",
       "source_range_id": "source-range-83ecb080-00157",
       "structure_node_id": "structure-node-589204fb8a4a763c",
-      "topic_key": "value-expression"
-    },
-    {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-1fec80c5e2961b93",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-30819615a87ccd79",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-b5f39fd957aae8ba",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-d7b72e15eb37816b",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-1fec80c5e2961b93",
-        "ledger-entry-30819615a87ccd79",
-        "ledger-entry-b5f39fd957aae8ba",
-        "ledger-entry-d7b72e15eb37816b"
-      ],
-      "label": "**values are expressions**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-44426068c5a5bfa3",
-      "source_range_id": "source-range-83ecb080-00160",
-      "structure_node_id": "structure-node-b595b604bcb74881",
       "topic_key": "value-expression"
     },
     {
@@ -1736,72 +1588,6 @@
       "page_target_id": "page-target-ddc56a316e284d2c",
       "source_range_id": "source-range-83ecb080-00179",
       "structure_node_id": "structure-node-20db9f47a53d8137",
-      "topic_key": "value-and-identity"
-    },
-    {
-      "atom_ids": [
-        "technical-atom-0c942e5ad104c7ab"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-4269d5c6eb71009d",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-a1bd4cc44234eca3",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-dd3a654063f8166b",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "example",
-          "ledger_entry_id": "ledger-entry-e3309a1b2cc6ea53",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-2731e2dc66ad3de7",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-3bd065ba116ecb99",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-0c942e5ad104c7ab"
-        }
-      ],
-      "concept_keys": [
-        "identity"
-      ],
-      "entry_ids": [
-        "ledger-entry-4269d5c6eb71009d",
-        "ledger-entry-a1bd4cc44234eca3",
-        "ledger-entry-dd3a654063f8166b",
-        "ledger-entry-e3309a1b2cc6ea53",
-        "ledger-entry-2731e2dc66ad3de7",
-        "ledger-entry-3bd065ba116ecb99"
-      ],
-      "label": "**values and identity**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-8153c26148b78729",
-      "source_range_id": "source-range-83ecb080-00182",
-      "structure_node_id": "structure-node-6d1f935d132e2973",
       "topic_key": "value-and-identity"
     },
     {
@@ -2176,98 +1962,6 @@
       "page_target_id": "page-target-e946eb13ee49888e",
       "source_range_id": "source-range-83ecb080-00211",
       "structure_node_id": "structure-node-c2c0c8472990d725",
-      "topic_key": "rich-aroma-number"
-    },
-    {
-      "atom_ids": [
-        "technical-atom-867a4b3935c753eb"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-7c61c24a916fe6b4",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-9266961e31feee8b",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-5d4e18a95d47c136",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-ceef717b56916afb",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-3f36dfed71dbe14a",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-fea8c7cdd33ddbb8",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-d4c986188451cd18",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-9c88e142e4ad916b",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-49f3ecba84b9ef37",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-320453b3098092c1",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "rule",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-867a4b3935c753eb"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-7c61c24a916fe6b4",
-        "ledger-entry-9266961e31feee8b",
-        "ledger-entry-5d4e18a95d47c136",
-        "ledger-entry-ceef717b56916afb",
-        "ledger-entry-3f36dfed71dbe14a",
-        "ledger-entry-fea8c7cdd33ddbb8",
-        "ledger-entry-d4c986188451cd18",
-        "ledger-entry-9c88e142e4ad916b",
-        "ledger-entry-49f3ecba84b9ef37",
-        "ledger-entry-320453b3098092c1"
-      ],
-      "label": "**A Rich Aroma: Basic Numbers**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-b11170d6cf65f979",
-      "source_range_id": "source-range-83ecb080-00212",
-      "structure_node_id": "structure-node-106b9a4265cac344",
       "topic_key": "rich-aroma-number"
     },
     {
@@ -3020,41 +2714,6 @@
       "page_target_id": "page-target-7e5063dd91091382",
       "source_range_id": "source-range-83ecb080-00254",
       "structure_node_id": "structure-node-4b2d4f7ff9f49b07",
-      "topic_key": "function-but"
-    },
-    {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-00335bbc55755a03",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-009062107e9fa631",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-62257f0706d22eb4",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-00335bbc55755a03",
-        "ledger-entry-009062107e9fa631",
-        "ledger-entry-62257f0706d22eb4"
-      ],
-      "label": "**As Little As Possible About Functions, But No Less**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-83105b91b7d00956",
-      "source_range_id": "source-range-83ecb080-00257",
-      "structure_node_id": "structure-node-8da22f63526259a7",
       "topic_key": "function-but"
     },
     {
@@ -4700,38 +4359,6 @@
       "topic_key": "closure-and-scope"
     },
     {
-      "atom_ids": [
-        "technical-atom-fcbe23a780932690"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-2cdb7994e37c4eaf",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-fcbe23a780932690"
-        }
-      ],
-      "concept_keys": [
-        "closure",
-        "scope"
-      ],
-      "entry_ids": [
-        "ledger-entry-2cdb7994e37c4eaf"
-      ],
-      "label": "**Closures and Scope**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-9ec413ea79b6cc69",
-      "source_range_id": "source-range-83ecb080-00469",
-      "structure_node_id": "structure-node-7cab34c77c0a5cb0",
-      "topic_key": "closure-and-scope"
-    },
-    {
       "atom_ids": [],
       "attached_evidence": [
         {
@@ -5681,126 +5308,6 @@
       "page_target_id": "page-target-473631cae8a570f2",
       "source_range_id": "source-range-83ecb080-00539",
       "structure_node_id": "structure-node-635b8c3fef86dd23",
-      "topic_key": "constant-coffee-craving"
-    },
-    {
-      "atom_ids": [
-        "technical-atom-39f84639e966bf74",
-        "technical-atom-0fdf0f3f0a4466f7",
-        "technical-atom-3551514a2fb08287",
-        "technical-atom-6fc52ba12fbf2675",
-        "technical-atom-65e99b06f1050f04",
-        "technical-atom-4e2d906473ec9b02"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-4647a8e3af6f908d",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-7989cd4261176165",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-e154c2c01f7e854c",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-9645defe5395e8ba",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-7a7d9eca454bb4c2",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-86fb048ea6faa1fe",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-b1712fb02292fe71",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-c70e901d83471042",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-07f25194e82b5f54",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-39f84639e966bf74"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-0fdf0f3f0a4466f7"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-3551514a2fb08287"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-6fc52ba12fbf2675"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-65e99b06f1050f04"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-4e2d906473ec9b02"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-4647a8e3af6f908d",
-        "ledger-entry-7989cd4261176165",
-        "ledger-entry-e154c2c01f7e854c",
-        "ledger-entry-9645defe5395e8ba",
-        "ledger-entry-7a7d9eca454bb4c2",
-        "ledger-entry-86fb048ea6faa1fe",
-        "ledger-entry-b1712fb02292fe71",
-        "ledger-entry-c70e901d83471042",
-        "ledger-entry-07f25194e82b5f54"
-      ],
-      "label": "**That Constant Coffee Craving**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-830a7a665bd05d10",
-      "source_range_id": "source-range-83ecb080-00542",
-      "structure_node_id": "structure-node-d211f9cea48054f3",
       "topic_key": "constant-coffee-craving"
     },
     {
@@ -6755,35 +6262,6 @@
       "page_target_id": "page-target-40b80e46b4f95849",
       "source_range_id": "source-range-83ecb080-00690",
       "structure_node_id": "structure-node-3f8f40248b961865",
-      "topic_key": "naming-function"
-    },
-    {
-      "atom_ids": [
-        "technical-atom-9923dfa32a3e4437"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-a9f12ea71a056f33",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-9923dfa32a3e4437"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-a9f12ea71a056f33"
-      ],
-      "label": "**Naming Functions**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-87bb0c946dee73b2",
-      "source_range_id": "source-range-83ecb080-00693",
-      "structure_node_id": "structure-node-136ad61845dfb4a8",
       "topic_key": "naming-function"
     },
     {
@@ -7854,48 +7332,6 @@
       "topic_key": "building-block"
     },
     {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-3ec3cb1219679ed3",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-9aeee0b63cb461ae",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-faf77b1327915ebb",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-fc7e147b2135702f",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-3ec3cb1219679ed3",
-        "ledger-entry-9aeee0b63cb461ae",
-        "ledger-entry-faf77b1327915ebb",
-        "ledger-entry-fc7e147b2135702f"
-      ],
-      "label": "**Building Blocks**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-08e6c039d30c5e92",
-      "source_range_id": "source-range-83ecb080-00823",
-      "structure_node_id": "structure-node-38d660b37ac47f9c",
-      "topic_key": "building-block"
-    },
-    {
       "atom_ids": [
         "technical-atom-33b86c2b2cb03f11",
         "technical-atom-b65c14412da67bea",
@@ -8389,34 +7825,6 @@
       "topic_key": "magic"
     },
     {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-b4755a931fb63eb7",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-d7dedef030fe031d",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-b4755a931fb63eb7",
-        "ledger-entry-d7dedef030fe031d"
-      ],
-      "label": "**Magic Names**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-cd21d3fb2d87d110",
-      "source_range_id": "source-range-83ecb080-00862",
-      "structure_node_id": "structure-node-9697027cee5a5fc0",
-      "topic_key": "magic"
-    },
-    {
       "atom_ids": [
         "technical-atom-81dae2458208ef2b",
         "technical-atom-b38ad8cfadfb665a",
@@ -8786,27 +8194,6 @@
       "topic_key": "recipe-function"
     },
     {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-82c8ae740bead6d5",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-82c8ae740bead6d5"
-      ],
-      "label": "**Recipes with Basic Functions**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-90e98205943be936",
-      "source_range_id": "source-range-83ecb080-00921",
-      "structure_node_id": "structure-node-35b21e3d520cc624",
-      "topic_key": "recipe-function"
-    },
-    {
       "atom_ids": [
         "technical-atom-ef367c693bdf4e21",
         "technical-atom-6a5092b268cd03a0",
@@ -8896,98 +8283,6 @@
       "page_target_id": "page-target-4a8ea765ca2247e8",
       "source_range_id": "source-range-83ecb080-00927",
       "structure_node_id": "structure-node-367e6412a195d4e8",
-      "topic_key": "partial-application"
-    },
-    {
-      "atom_ids": [
-        "technical-atom-ef367c693bdf4e21",
-        "technical-atom-6a5092b268cd03a0",
-        "technical-atom-69f3967865b18e41",
-        "technical-atom-a7a88e563529bf32",
-        "technical-atom-d2cfd6a722e07fe3"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-8254da2be6e9c42a",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-d12468a9ffc2f49e",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-17ce7f10e38c5205",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-b610d2b8c8700d33",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-bef7dd3dfbcdae14",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-bd544f05e4463e63",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-ef367c693bdf4e21"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-6a5092b268cd03a0"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-69f3967865b18e41"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-a7a88e563529bf32"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-d2cfd6a722e07fe3"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-8254da2be6e9c42a",
-        "ledger-entry-d12468a9ffc2f49e",
-        "ledger-entry-17ce7f10e38c5205",
-        "ledger-entry-b610d2b8c8700d33",
-        "ledger-entry-bef7dd3dfbcdae14",
-        "ledger-entry-bd544f05e4463e63"
-      ],
-      "label": "**Partial Application**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-6271065451f6c4df",
-      "source_range_id": "source-range-83ecb080-00930",
-      "structure_node_id": "structure-node-60ed1ab03ea12246",
       "topic_key": "partial-application"
     },
     {
@@ -9105,119 +8400,6 @@
     },
     {
       "atom_ids": [
-        "technical-atom-427b7ffbc43a4f35",
-        "technical-atom-2ca9a6ccc0a72426",
-        "technical-atom-7f4e8dfc9b6921b6",
-        "technical-atom-6bcc455cae784259",
-        "technical-atom-0b6c2c208c2a8e2d",
-        "technical-atom-ad0139b6c87f09a8",
-        "technical-atom-14f741fb6c81542f"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "example",
-          "ledger_entry_id": "ledger-entry-f559e87e32f5f177",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-103cdc036361af19",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-f709a5cf4698d042",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-e7550d4b96c1bae5",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-3c62559850c9af47",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-f5ac752f0bac01c7",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "definition",
-          "ledger_entry_id": "ledger-entry-f119ea9cace25c71",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-427b7ffbc43a4f35"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "rule",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-2ca9a6ccc0a72426"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-7f4e8dfc9b6921b6"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-6bcc455cae784259"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-0b6c2c208c2a8e2d"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-ad0139b6c87f09a8"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-14f741fb6c81542f"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-f559e87e32f5f177",
-        "ledger-entry-103cdc036361af19",
-        "ledger-entry-f709a5cf4698d042",
-        "ledger-entry-e7550d4b96c1bae5",
-        "ledger-entry-3c62559850c9af47",
-        "ledger-entry-f5ac752f0bac01c7",
-        "ledger-entry-f119ea9cace25c71"
-      ],
-      "label": "**Unary**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-d903487c2ee74e46",
-      "source_range_id": "source-range-83ecb080-00954",
-      "structure_node_id": "structure-node-f3e22a2904f73fea",
-      "topic_key": "unary"
-    },
-    {
-      "atom_ids": [
         "technical-atom-ab6157dcaa17bffe",
         "technical-atom-605137e9f81d289c",
         "technical-atom-2e373b386527d5b8",
@@ -9299,91 +8481,6 @@
       "page_target_id": "page-target-cb45129ff3f071ea",
       "source_range_id": "source-range-83ecb080-00973",
       "structure_node_id": "structure-node-db28d50b7978164c",
-      "topic_key": "tap"
-    },
-    {
-      "atom_ids": [
-        "technical-atom-ab6157dcaa17bffe",
-        "technical-atom-605137e9f81d289c",
-        "technical-atom-2e373b386527d5b8",
-        "technical-atom-8a494006bc211ecb",
-        "technical-atom-0f6523ce5a0a06e9",
-        "technical-atom-eb9f2745fe1bba62"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-9092a2cc1ab26baf",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-98a5ef14e9e98e2f",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-abeffc277ba3a07c",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-5986d9444c96c7f0",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-ab6157dcaa17bffe"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-605137e9f81d289c"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-2e373b386527d5b8"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-8a494006bc211ecb"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-0f6523ce5a0a06e9"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-eb9f2745fe1bba62"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-9092a2cc1ab26baf",
-        "ledger-entry-98a5ef14e9e98e2f",
-        "ledger-entry-abeffc277ba3a07c",
-        "ledger-entry-5986d9444c96c7f0"
-      ],
-      "label": "**Tap**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-d99cb5c4e1a7faa0",
-      "source_range_id": "source-range-83ecb080-00976",
-      "structure_node_id": "structure-node-79e610576a5a87d1",
       "topic_key": "tap"
     },
     {
@@ -9567,49 +8664,6 @@
       "page_target_id": "page-target-fe354967683ea38b",
       "source_range_id": "source-range-83ecb080-01035",
       "structure_node_id": "structure-node-8fa9d2a675b68d1d",
-      "topic_key": "left-variadic-function"
-    },
-    {
-      "atom_ids": [
-        "technical-atom-0afc000a8537481b"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-a2229d2ff2feb699",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-864d129eaad24a11",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-c79a051cf3fc3dd5",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-0afc000a8537481b"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-a2229d2ff2feb699",
-        "ledger-entry-864d129eaad24a11",
-        "ledger-entry-c79a051cf3fc3dd5"
-      ],
-      "label": "**Left-Variadic Functions**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-5dcf29e51bd7ca88",
-      "source_range_id": "source-range-83ecb080-01038",
-      "structure_node_id": "structure-node-07dc266372ee9634",
       "topic_key": "left-variadic-function"
     },
     {
@@ -10904,51 +9958,6 @@
       "topic_key": "array-and-destructuring-argument"
     },
     {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-1159aad7a5139195",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "cause-effect",
-          "ledger_entry_id": "ledger-entry-2d9868609c30a263",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-87c9ce6852368716",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "cause-effect",
-          "ledger_entry_id": "ledger-entry-cd44525e4ffc014a",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [
-        "array",
-        "destructuring-argument"
-      ],
-      "entry_ids": [
-        "ledger-entry-1159aad7a5139195",
-        "ledger-entry-2d9868609c30a263",
-        "ledger-entry-87c9ce6852368716",
-        "ledger-entry-cd44525e4ffc014a"
-      ],
-      "label": "**Arrays and Destructuring Arguments**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-0c26ee840edd2cf3",
-      "source_range_id": "source-range-83ecb080-01186",
-      "structure_node_id": "structure-node-483ed8b8821c570e",
-      "topic_key": "array-and-destructuring-argument"
-    },
-    {
       "atom_ids": [
         "technical-atom-efdd9c698e59229d",
         "technical-atom-c410739b1fb061fd",
@@ -11925,182 +10934,6 @@
       "topic_key": "self-similarity"
     },
     {
-      "atom_ids": [
-        "technical-atom-d4067a8aabc773cf",
-        "technical-atom-e2b0e7c467fe8728",
-        "technical-atom-43f58f96e68e71f2",
-        "technical-atom-9c46379ff4002d4d",
-        "technical-atom-782bb39c7eee231c"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-c5a3af2d4463a0fc",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-7a2395fcd9760558",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-5666a0bb5221fb54",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-2868fb3929cc8c06",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-9d16ff6f6139ebb0",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-c85ff38e2f8ee62d",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-c8337b2a6c17f578",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-751f41a82cfc53e7",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-ba114add5e6dbf61",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-c8813bd21a80fe77",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-91701720f7e11256",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "definition",
-          "ledger_entry_id": "ledger-entry-43076a6e59cb1782",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-79468c8fa0b4cfc3",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-b454f0495e68a4a0",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-ecf38eb49bd76151",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-fd1670079850b065",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "cause-effect",
-          "ledger_entry_id": "ledger-entry-86985a571a8e27ff",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-c9844630012a3642",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-d4067a8aabc773cf"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-e2b0e7c467fe8728"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-43f58f96e68e71f2"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-9c46379ff4002d4d"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-782bb39c7eee231c"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-c5a3af2d4463a0fc",
-        "ledger-entry-7a2395fcd9760558",
-        "ledger-entry-5666a0bb5221fb54",
-        "ledger-entry-2868fb3929cc8c06",
-        "ledger-entry-9d16ff6f6139ebb0",
-        "ledger-entry-c85ff38e2f8ee62d",
-        "ledger-entry-c8337b2a6c17f578",
-        "ledger-entry-751f41a82cfc53e7",
-        "ledger-entry-ba114add5e6dbf61",
-        "ledger-entry-c8813bd21a80fe77",
-        "ledger-entry-91701720f7e11256",
-        "ledger-entry-43076a6e59cb1782",
-        "ledger-entry-79468c8fa0b4cfc3",
-        "ledger-entry-b454f0495e68a4a0",
-        "ledger-entry-ecf38eb49bd76151",
-        "ledger-entry-fd1670079850b065",
-        "ledger-entry-86985a571a8e27ff",
-        "ledger-entry-c9844630012a3642"
-      ],
-      "label": "**Self-Similarity**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-2e7d56a83155a008",
-      "source_range_id": "source-range-83ecb080-01296",
-      "structure_node_id": "structure-node-c36dd262418590b9",
-      "topic_key": "self-similarity"
-    },
-    {
       "atom_ids": [],
       "attached_evidence": [
         {
@@ -12871,147 +11704,6 @@
       "page_target_id": "page-target-c808dfea3ca3a161",
       "source_range_id": "source-range-83ecb080-01394",
       "structure_node_id": "structure-node-96815acdc5c8650d",
-      "topic_key": "tail-and-default-argument"
-    },
-    {
-      "atom_ids": [
-        "technical-atom-a64c33d2f3a4b018",
-        "technical-atom-c0f9e582266bb857",
-        "technical-atom-37b3cb17c786c587",
-        "technical-atom-171a108323897fb1"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-3092ef9729bcbaa9",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-bce38eb619844789",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "example",
-          "ledger_entry_id": "ledger-entry-169d4c8627e48eb8",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-692e0cbeb8ea52ae",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-7808ca78dd8bce1a",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-3a94d5df069101dc",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-6e6213e4d58e6167",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-62146dd95b2882db",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-a8692113f536cbda",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-431dcf8d0469893a",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-e052c34caafdae54",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-47f3c9227d81ea1c",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-122c13bfdb92eda2",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-4ab6e63d6994800a",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "rule",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-a64c33d2f3a4b018"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-c0f9e582266bb857"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "structured-table",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-37b3cb17c786c587"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "structured-table",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-171a108323897fb1"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-3092ef9729bcbaa9",
-        "ledger-entry-bce38eb619844789",
-        "ledger-entry-169d4c8627e48eb8",
-        "ledger-entry-692e0cbeb8ea52ae",
-        "ledger-entry-7808ca78dd8bce1a",
-        "ledger-entry-3a94d5df069101dc",
-        "ledger-entry-6e6213e4d58e6167",
-        "ledger-entry-62146dd95b2882db",
-        "ledger-entry-a8692113f536cbda",
-        "ledger-entry-431dcf8d0469893a",
-        "ledger-entry-e052c34caafdae54",
-        "ledger-entry-47f3c9227d81ea1c",
-        "ledger-entry-122c13bfdb92eda2",
-        "ledger-entry-4ab6e63d6994800a"
-      ],
-      "label": "**Tail Calls (and Default Arguments)**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-4e5f4c2f54b14a7a",
-      "source_range_id": "source-range-83ecb080-01397",
-      "structure_node_id": "structure-node-b713d8e120db10e8",
       "topic_key": "tail-and-default-argument"
     },
     {
@@ -13816,119 +12508,6 @@
     },
     {
       "atom_ids": [
-        "technical-atom-ea5904d838a32ad1",
-        "technical-atom-ee7da0f15a928078"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-c998dd69b4e07a20",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-4716137e107aaace",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-74b28ef744eed00f",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-7dfbe24e8972f718",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-192fb054d0975093",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-7cf6c0417d50eb84",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-cd12a4e739ac2efe",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-906ed81d3a9d91fb",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-9b464208947600de",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "cause-effect",
-          "ledger_entry_id": "ledger-entry-1144a3dcb5ab233f",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-6905332bb1451169",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-f58d258d4ea7a97d",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-ea5904d838a32ad1"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-ee7da0f15a928078"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-c998dd69b4e07a20",
-        "ledger-entry-4716137e107aaace",
-        "ledger-entry-74b28ef744eed00f",
-        "ledger-entry-7dfbe24e8972f718",
-        "ledger-entry-192fb054d0975093",
-        "ledger-entry-7cf6c0417d50eb84",
-        "ledger-entry-cd12a4e739ac2efe",
-        "ledger-entry-906ed81d3a9d91fb",
-        "ledger-entry-9b464208947600de",
-        "ledger-entry-1144a3dcb5ab233f",
-        "ledger-entry-6905332bb1451169",
-        "ledger-entry-f58d258d4ea7a97d"
-      ],
-      "label": "**Garbage, Garbage Everywhere**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-7f3ef041e5b730a5",
-      "source_range_id": "source-range-83ecb080-01504",
-      "structure_node_id": "structure-node-7c5b324540be7bf2",
-      "topic_key": "garbage-everywhere"
-    },
-    {
-      "atom_ids": [
         "technical-atom-49ab03b7b6fcad15",
         "technical-atom-d04df8049e4f5993",
         "technical-atom-0d8d9219a4a650fa"
@@ -14647,98 +13226,6 @@
     },
     {
       "atom_ids": [
-        "technical-atom-fa58be881c81bf70",
-        "technical-atom-fe45bbe54d4de10e",
-        "technical-atom-5dba4fe547df2948",
-        "technical-atom-d84cadabb095c25d"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "cause-effect",
-          "ledger_entry_id": "ledger-entry-eabf33f39d1591e1",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-0149acd2101dbdec",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-b91bbe63b83422eb",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-30f1909901e025df",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-e147d1e2c8dc0a3d",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-7214677761bb5feb",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-6b5d80ab4f1ecbb7",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-fa58be881c81bf70"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-fe45bbe54d4de10e"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-5dba4fe547df2948"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-d84cadabb095c25d"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-eabf33f39d1591e1",
-        "ledger-entry-0149acd2101dbdec",
-        "ledger-entry-b91bbe63b83422eb",
-        "ledger-entry-30f1909901e025df",
-        "ledger-entry-e147d1e2c8dc0a3d",
-        "ledger-entry-7214677761bb5feb",
-        "ledger-entry-6b5d80ab4f1ecbb7"
-      ],
-      "label": "**Plain Old JavaScript Objects**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-1db6ea43d85fb719",
-      "source_range_id": "source-range-83ecb080-01574",
-      "structure_node_id": "structure-node-988af59160ee0e2c",
-      "topic_key": "plain-old-javascript-object"
-    },
-    {
-      "atom_ids": [
         "technical-atom-a6689c2010560576",
         "technical-atom-fe58073474e924fe",
         "technical-atom-a5937114554f4d44",
@@ -15443,168 +13930,6 @@
     },
     {
       "atom_ids": [
-        "technical-atom-3d9f1d79804e98ef",
-        "technical-atom-31a805ce284cbf1e",
-        "technical-atom-8a8526c52dbc6443",
-        "technical-atom-b9b731da5221b0d9",
-        "technical-atom-318da65b95cb83c1",
-        "technical-atom-439cf3e9e2b3e2a8",
-        "technical-atom-df44476f232928a9",
-        "technical-atom-ebba6410c457410b"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-6d0b0798e7b42ad2",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-ad58a6c372efc419",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-aec26bc8e5cecdb3",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-9ee3bcf5a18a3a8d",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-2fb13ee6a74f11f4",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-3f7418e281f5cbcc",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-41f3c2cd7533e4b3",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-8e8512c49514467c",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "cause-effect",
-          "ledger_entry_id": "ledger-entry-c53ca0a914d8026f",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-a7605ad6492610d1",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-d46dc42ddbc9064a",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-3959c01f9c1a3112",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-4d2748041026c104",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-3d9f1d79804e98ef"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-31a805ce284cbf1e"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-8a8526c52dbc6443"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-b9b731da5221b0d9"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-318da65b95cb83c1"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-439cf3e9e2b3e2a8"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-df44476f232928a9"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-ebba6410c457410b"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-6d0b0798e7b42ad2",
-        "ledger-entry-ad58a6c372efc419",
-        "ledger-entry-aec26bc8e5cecdb3",
-        "ledger-entry-9ee3bcf5a18a3a8d",
-        "ledger-entry-2fb13ee6a74f11f4",
-        "ledger-entry-3f7418e281f5cbcc",
-        "ledger-entry-41f3c2cd7533e4b3",
-        "ledger-entry-8e8512c49514467c",
-        "ledger-entry-c53ca0a914d8026f",
-        "ledger-entry-a7605ad6492610d1",
-        "ledger-entry-d46dc42ddbc9064a",
-        "ledger-entry-3959c01f9c1a3112",
-        "ledger-entry-4d2748041026c104"
-      ],
-      "label": "**Mutation**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-02147f1e035b49ef",
-      "source_range_id": "source-range-83ecb080-01685",
-      "structure_node_id": "structure-node-31505165f8e826ec",
-      "topic_key": "mutation"
-    },
-    {
-      "atom_ids": [
         "technical-atom-7a0acbc29395691c",
         "technical-atom-66af9cf7935b70f7"
       ],
@@ -16144,84 +14469,6 @@
     },
     {
       "atom_ids": [
-        "technical-atom-5aaf0ddfb585a37b",
-        "technical-atom-a7370786a1ca21eb"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-915abbe1ce3dbf80",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-16e0df5eb6a38b6a",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-ac6d66166cb98a8a",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-c90eebff35d05ca7",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-39af858420533dc7",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "cause-effect",
-          "ledger_entry_id": "ledger-entry-f43322478f347dcd",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-eca0e95e71a979b6",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-5aaf0ddfb585a37b"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-a7370786a1ca21eb"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-915abbe1ce3dbf80",
-        "ledger-entry-16e0df5eb6a38b6a",
-        "ledger-entry-ac6d66166cb98a8a",
-        "ledger-entry-c90eebff35d05ca7",
-        "ledger-entry-39af858420533dc7",
-        "ledger-entry-f43322478f347dcd",
-        "ledger-entry-eca0e95e71a979b6"
-      ],
-      "label": "**Reassignment**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-c6507b1353983aef",
-      "source_range_id": "source-range-83ecb080-01757",
-      "structure_node_id": "structure-node-283251e110099791",
-      "topic_key": "reassignment"
-    },
-    {
-      "atom_ids": [
         "technical-atom-889cac6ecbe9f9b1"
       ],
       "attached_evidence": [
@@ -16757,91 +15004,6 @@
     },
     {
       "atom_ids": [
-        "technical-atom-99564e448658145a",
-        "technical-atom-5726aa7ecd487974",
-        "technical-atom-08bc76b8861e1c18",
-        "technical-atom-9a90dbe030e4714e"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-38caa5fb627d28e7",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "example",
-          "ledger_entry_id": "ledger-entry-7eafdcd9e10aadc6",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-bbe25b0ca34a3bc0",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "cause-effect",
-          "ledger_entry_id": "ledger-entry-852980bd999e8abc",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-3bfe018dfb8dc8c9",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-c6bd0cdf84e4cbb6",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "rule",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-99564e448658145a"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "rule",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-5726aa7ecd487974"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-08bc76b8861e1c18"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-9a90dbe030e4714e"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-38caa5fb627d28e7",
-        "ledger-entry-7eafdcd9e10aadc6",
-        "ledger-entry-bbe25b0ca34a3bc0",
-        "ledger-entry-852980bd999e8abc",
-        "ledger-entry-3bfe018dfb8dc8c9",
-        "ledger-entry-c6bd0cdf84e4cbb6"
-      ],
-      "label": "**Copy on Write**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-05a5bf7ca4bef426",
-      "source_range_id": "source-range-83ecb080-01849",
-      "structure_node_id": "structure-node-72e65a771dd065e1",
-      "topic_key": "copy-write"
-    },
-    {
-      "atom_ids": [
         "technical-atom-8577898f00f0debc"
       ],
       "attached_evidence": [
@@ -17089,115 +15251,6 @@
       "page_target_id": "page-target-9c774c560fb66b1a",
       "source_range_id": "source-range-83ecb080-01902",
       "structure_node_id": "structure-node-c40991fa0b8c9fce",
-      "topic_key": "tortoise-hare-and-teleporting-turtle"
-    },
-    {
-      "atom_ids": [
-        "technical-atom-82cc975184ad6476",
-        "technical-atom-05cbf99947c6f6c4",
-        "technical-atom-735114144f055caa"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-a52c7f3c9ce3eba1",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-d057fe4271b27614",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-360120a6128c9dc1",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-f8eead1a7929fec7",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-564b86ec244ded16",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-a37f749eae3ec11c",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-ba4b13a79efc7824",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-2a096813307c3bf2",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-5e59e511476cc515",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-f2439762f06e800e",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-82cc975184ad6476"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-05cbf99947c6f6c4"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-735114144f055caa"
-        }
-      ],
-      "concept_keys": [
-        "tortoise-hare",
-        "teleporting-turtle"
-      ],
-      "entry_ids": [
-        "ledger-entry-a52c7f3c9ce3eba1",
-        "ledger-entry-d057fe4271b27614",
-        "ledger-entry-360120a6128c9dc1",
-        "ledger-entry-f8eead1a7929fec7",
-        "ledger-entry-564b86ec244ded16",
-        "ledger-entry-a37f749eae3ec11c",
-        "ledger-entry-ba4b13a79efc7824",
-        "ledger-entry-2a096813307c3bf2",
-        "ledger-entry-5e59e511476cc515",
-        "ledger-entry-f2439762f06e800e"
-      ],
-      "label": "**Tortoises, Hares, and Teleporting Turtles**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-bd4e239f1bfbaaac",
-      "source_range_id": "source-range-83ecb080-01905",
-      "structure_node_id": "structure-node-9acf2b5d5023b077",
       "topic_key": "tortoise-hare-and-teleporting-turtle"
     },
     {
@@ -17619,140 +15672,6 @@
       "page_target_id": "page-target-dc09f5bc4a703670",
       "source_range_id": "source-range-83ecb080-01929",
       "structure_node_id": "structure-node-fbfa959019b86df4",
-      "topic_key": "functional-iterator"
-    },
-    {
-      "atom_ids": [
-        "technical-atom-737668bf950608f8",
-        "technical-atom-1005aa93ece42a32",
-        "technical-atom-46acfcc53ff3b0fc",
-        "technical-atom-5912b18959f9e251",
-        "technical-atom-072ef0ea1646c566",
-        "technical-atom-6ed12f140f799893",
-        "technical-atom-5b47d11f49ee3ee8",
-        "technical-atom-cffc18a940298335",
-        "technical-atom-dc94932c90c76c08",
-        "technical-atom-75618637e6b53eed",
-        "technical-atom-4d4dc9eade77cfc3",
-        "technical-atom-9a0e3a43cef507da"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-771184ab55b67f27",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-c2a8dab0d8d23a93",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-4fd88dd60aa63257",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-82233eb225b01c98",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-34c56213bf300f06",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-737668bf950608f8"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-1005aa93ece42a32"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-46acfcc53ff3b0fc"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-5912b18959f9e251"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-072ef0ea1646c566"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-6ed12f140f799893"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-5b47d11f49ee3ee8"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-cffc18a940298335"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-dc94932c90c76c08"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-75618637e6b53eed"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-4d4dc9eade77cfc3"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-9a0e3a43cef507da"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-771184ab55b67f27",
-        "ledger-entry-c2a8dab0d8d23a93",
-        "ledger-entry-4fd88dd60aa63257",
-        "ledger-entry-82233eb225b01c98",
-        "ledger-entry-34c56213bf300f06"
-      ],
-      "label": "**Functional Iterators**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-f17e11f97461cfda",
-      "source_range_id": "source-range-83ecb080-01932",
-      "structure_node_id": "structure-node-6b218e2623a118df",
       "topic_key": "functional-iterator"
     },
     {
@@ -18898,112 +16817,6 @@
     },
     {
       "atom_ids": [
-        "technical-atom-eb65dd329ce7c87d",
-        "technical-atom-a6b2fbcb48187ae9",
-        "technical-atom-c32d0ea1c23e3d4b",
-        "technical-atom-20e77f9e2a3f493a",
-        "technical-atom-37109cb02db759d1"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-08b26aedb0b0fa8a",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-25621742980cc74f",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-945506eece6aef1b",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-51d6166d6ea19460",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-9b27107b2db53655",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-ac7380fc83a2d140",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-ffa9517315bb1c6f",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-5d95822f1608f9b2",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-eb65dd329ce7c87d"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-a6b2fbcb48187ae9"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-c32d0ea1c23e3d4b"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-20e77f9e2a3f493a"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-37109cb02db759d1"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-08b26aedb0b0fa8a",
-        "ledger-entry-25621742980cc74f",
-        "ledger-entry-945506eece6aef1b",
-        "ledger-entry-51d6166d6ea19460",
-        "ledger-entry-9b27107b2db53655",
-        "ledger-entry-ac7380fc83a2d140",
-        "ledger-entry-ffa9517315bb1c6f",
-        "ledger-entry-5d95822f1608f9b2"
-      ],
-      "label": "**Making Data Out Of Functions**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-f96727640343df4e",
-      "source_range_id": "source-range-83ecb080-02029",
-      "structure_node_id": "structure-node-6e9b28d70238ef3e",
-      "topic_key": "data-function"
-    },
-    {
-      "atom_ids": [
         "technical-atom-aca7aff658d0ce87",
         "technical-atom-ab190f81dd29337f",
         "technical-atom-1e6002fbe37e81b4",
@@ -19980,126 +17793,6 @@
     },
     {
       "atom_ids": [
-        "technical-atom-55510eca609a788b",
-        "technical-atom-42f1e0aa59d2d02e",
-        "technical-atom-3760f552bce07a07",
-        "technical-atom-82ad8a2f2e77b911",
-        "technical-atom-3f613e9c32678498",
-        "technical-atom-4d16768ccf5f5f2f",
-        "technical-atom-66df001c0e82f6e5",
-        "technical-atom-f0fae3de9cee6bf8",
-        "technical-atom-55efb994ee6569e8"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "definition",
-          "ledger_entry_id": "ledger-entry-425a3b419cb8f510",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-4287209a9a3d6b85",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-b486306faf30284f",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-e39361d54f811780",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-18d418577dbf632b",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-931c70beff5463f7",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-55510eca609a788b"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-42f1e0aa59d2d02e"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-3760f552bce07a07"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-82ad8a2f2e77b911"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-3f613e9c32678498"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-4d16768ccf5f5f2f"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-66df001c0e82f6e5"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-f0fae3de9cee6bf8"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-55efb994ee6569e8"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-425a3b419cb8f510",
-        "ledger-entry-4287209a9a3d6b85",
-        "ledger-entry-b486306faf30284f",
-        "ledger-entry-e39361d54f811780",
-        "ledger-entry-18d418577dbf632b",
-        "ledger-entry-931c70beff5463f7"
-      ],
-      "label": "**mapWith**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-82733469738e424c",
-      "source_range_id": "source-range-83ecb080-02211",
-      "structure_node_id": "structure-node-a443162c1c249fea",
-      "topic_key": "mapwith"
-    },
-    {
-      "atom_ids": [
         "technical-atom-d2f422e0ca513f98",
         "technical-atom-25b420869ab8b6f8",
         "technical-atom-c6fa72b958fbe761",
@@ -20241,126 +17934,6 @@
     },
     {
       "atom_ids": [
-        "technical-atom-d2f422e0ca513f98",
-        "technical-atom-25b420869ab8b6f8",
-        "technical-atom-c6fa72b958fbe761",
-        "technical-atom-77f9b2969c857988",
-        "technical-atom-7c63830011f5b9a3",
-        "technical-atom-a9c28052434df083",
-        "technical-atom-289ee1e4cae7ab5e",
-        "technical-atom-695a405a8c046594",
-        "technical-atom-9ee6f117d48ccdbe",
-        "technical-atom-7f6f74e68ec3128f",
-        "technical-atom-af74449500c2f477",
-        "technical-atom-ef4f4947abf111da",
-        "technical-atom-ff91420989db7da5"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-c72111905c89a199",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-cd85fc074e9a6ae6",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-d2f422e0ca513f98"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-25b420869ab8b6f8"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "rule",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-c6fa72b958fbe761"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-77f9b2969c857988"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-7c63830011f5b9a3"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-a9c28052434df083"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-289ee1e4cae7ab5e"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-695a405a8c046594"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-9ee6f117d48ccdbe"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-7f6f74e68ec3128f"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-af74449500c2f477"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-ef4f4947abf111da"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-ff91420989db7da5"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-c72111905c89a199",
-        "ledger-entry-cd85fc074e9a6ae6"
-      ],
-      "label": "**Flip**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-90231c3c94c01c08",
-      "source_range_id": "source-range-83ecb080-02237",
-      "structure_node_id": "structure-node-bdedeb49f5b1d964",
-      "topic_key": "flip"
-    },
-    {
-      "atom_ids": [
         "technical-atom-ad372ee2547410eb"
       ],
       "attached_evidence": [
@@ -20450,49 +18023,6 @@
       "page_target_id": "page-target-8e9b32ca427ef4ec",
       "source_range_id": "source-range-83ecb080-02274",
       "structure_node_id": "structure-node-3fd7c36f9312f53f",
-      "topic_key": "object-assign"
-    },
-    {
-      "atom_ids": [
-        "technical-atom-96dae227a6179a58",
-        "technical-atom-7d72c25bbd175328",
-        "technical-atom-164d18391e252b5a"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-42bc9f2b0e696656",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-96dae227a6179a58"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-7d72c25bbd175328"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-164d18391e252b5a"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-42bc9f2b0e696656"
-      ],
-      "label": "**Object.assign**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-2365228a09d06326",
-      "source_range_id": "source-range-83ecb080-02277",
-      "structure_node_id": "structure-node-0109deed331185fd",
       "topic_key": "object-assign"
     },
     {
@@ -20669,66 +18199,6 @@
     },
     {
       "atom_ids": [
-        "technical-atom-af3050dae5a361b5"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-d6d421388016a5c8",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "definition",
-          "ledger_entry_id": "ledger-entry-4dc8171a3d743841",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-68fdaa00dd137625",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-4cce8857cda05b86",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-6a70e8a36d216c2d",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-af3050dae5a361b5"
-        }
-      ],
-      "concept_keys": [
-        "warm-cup-string",
-        "quasi-literal"
-      ],
-      "entry_ids": [
-        "ledger-entry-d6d421388016a5c8",
-        "ledger-entry-4dc8171a3d743841",
-        "ledger-entry-68fdaa00dd137625",
-        "ledger-entry-4cce8857cda05b86",
-        "ledger-entry-6a70e8a36d216c2d"
-      ],
-      "label": "**A Warm Cup: Basic Strings and Quasi-Literals**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-58ffa4c5101405a9",
-      "source_range_id": "source-range-83ecb080-02314",
-      "structure_node_id": "structure-node-ab558852547ea276",
-      "topic_key": "warm-cup-string-and-quasi-literal"
-    },
-    {
-      "atom_ids": [
         "technical-atom-8237b455dba22c09",
         "technical-atom-4e8e56a028ba13b5",
         "technical-atom-173899b28a14c596",
@@ -20888,27 +18358,6 @@
       "page_target_id": "page-target-6fc627a47191195e",
       "source_range_id": "source-range-83ecb080-02353",
       "structure_node_id": "structure-node-837a59963b996c15",
-      "topic_key": "served-pot-collection"
-    },
-    {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-709f713c6cd46696",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-709f713c6cd46696"
-      ],
-      "label": "**Served by the Pot: Collections**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-b309df06eea2b791",
-      "source_range_id": "source-range-83ecb080-02354",
-      "structure_node_id": "structure-node-f299b5e0246e3ac6",
       "topic_key": "served-pot-collection"
     },
     {
@@ -21669,44 +19118,6 @@
       "page_target_id": "page-target-a114a5e7c68b3b7e",
       "source_range_id": "source-range-83ecb080-02357",
       "structure_node_id": "structure-node-f856d7949e9703e2",
-      "topic_key": "iteration-and-iterable"
-    },
-    {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-c71c6cbaccdd7dc5",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-d4932f26692c4b03",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-024b56a871ce389b",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [
-        "iteration",
-        "iterable"
-      ],
-      "entry_ids": [
-        "ledger-entry-c71c6cbaccdd7dc5",
-        "ledger-entry-d4932f26692c4b03",
-        "ledger-entry-024b56a871ce389b"
-      ],
-      "label": "**Iteration and Iterables**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-140fa1af7d072fd4",
-      "source_range_id": "source-range-83ecb080-02360",
-      "structure_node_id": "structure-node-7d73c8fda6b387fa",
       "topic_key": "iteration-and-iterable"
     },
     {
@@ -23118,91 +20529,6 @@
     },
     {
       "atom_ids": [
-        "technical-atom-63d00cf05e5bae01",
-        "technical-atom-21b6fcb4a438da84"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-e8c0782cd9cc7b90",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-101202b1e4dd19d1",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-50e2eb15b56555c9",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-31f02e33fd061f5e",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-0c0698a71e9aba1f",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-50a85de86ed15878",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-89d9d98cb7970dd5",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-7ec73f528e1edba3",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "rule",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-63d00cf05e5bae01"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-21b6fcb4a438da84"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-e8c0782cd9cc7b90",
-        "ledger-entry-101202b1e4dd19d1",
-        "ledger-entry-50e2eb15b56555c9",
-        "ledger-entry-31f02e33fd061f5e",
-        "ledger-entry-0c0698a71e9aba1f",
-        "ledger-entry-50a85de86ed15878",
-        "ledger-entry-89d9d98cb7970dd5",
-        "ledger-entry-7ec73f528e1edba3"
-      ],
-      "label": "**Generating Iterables**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-398087b428390c6a",
-      "source_range_id": "source-range-83ecb080-02527",
-      "structure_node_id": "structure-node-f1e31978caf6015a",
-      "topic_key": "generating-iterable"
-    },
-    {
-      "atom_ids": [
         "technical-atom-bfaf7863584d537f",
         "technical-atom-0d2e7f626bdbce1b"
       ],
@@ -24217,100 +21543,6 @@
       "topic_key": "lazy-and-eager-collection"
     },
     {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-ddd253d83f2588c9",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-5fde42a28dbefc1d",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-33805b99337f2aff",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-f0488a288df1c047",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-767687985627da8a",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-d17baa913a2d12d5",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-35f0fa2ed1f05c9a",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-6eab273ba4922884",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-865065631dfc712d",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-56a18eec9a1ce3f5",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-96f8507e57988f25",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [
-        "lazy",
-        "eager-collection"
-      ],
-      "entry_ids": [
-        "ledger-entry-ddd253d83f2588c9",
-        "ledger-entry-5fde42a28dbefc1d",
-        "ledger-entry-33805b99337f2aff",
-        "ledger-entry-f0488a288df1c047",
-        "ledger-entry-767687985627da8a",
-        "ledger-entry-d17baa913a2d12d5",
-        "ledger-entry-35f0fa2ed1f05c9a",
-        "ledger-entry-6eab273ba4922884",
-        "ledger-entry-865065631dfc712d",
-        "ledger-entry-56a18eec9a1ce3f5",
-        "ledger-entry-96f8507e57988f25"
-      ],
-      "label": "**Lazy and Eager Collections**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-61ca9340963dbd77",
-      "source_range_id": "source-range-83ecb080-02736",
-      "structure_node_id": "structure-node-c588143403eee8c5",
-      "topic_key": "lazy-and-eager-collection"
-    },
-    {
       "atom_ids": [
         "technical-atom-998fc8512c4b9153",
         "technical-atom-c953011d67cefdb6",
@@ -24955,34 +22187,6 @@
       "page_target_id": "page-target-64e4756cd31724cc",
       "source_range_id": "source-range-83ecb080-02821",
       "structure_node_id": "structure-node-266deeeca5efcc3b",
-      "topic_key": "interlude-carpenter-interview-for-job"
-    },
-    {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-f80dfeb44a25c741",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-09871f5d6ae364a4",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-f80dfeb44a25c741",
-        "ledger-entry-09871f5d6ae364a4"
-      ],
-      "label": "**Interlude: The Carpenter Interviews for a Job**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-e2a9ddfe5d8c0726",
-      "source_range_id": "source-range-83ecb080-02824",
-      "structure_node_id": "structure-node-384196fb574c3ba6",
       "topic_key": "interlude-carpenter-interview-for-job"
     },
     {
@@ -25641,83 +22845,6 @@
       "topic_key": "interactive-generator"
     },
     {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-369cefb276d7a309",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-3b5987beb737e06c",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-ae0b36094e194aa9",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-c99ce63598d0f5ba",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-bef02dae8eae3c10",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-d9354244b35cf3bc",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-50160db29fba547c",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-805944755ece3461",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-fd9ad0d78d6ef6ea",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-369cefb276d7a309",
-        "ledger-entry-3b5987beb737e06c",
-        "ledger-entry-ae0b36094e194aa9",
-        "ledger-entry-c99ce63598d0f5ba",
-        "ledger-entry-bef02dae8eae3c10",
-        "ledger-entry-d9354244b35cf3bc",
-        "ledger-entry-50160db29fba547c",
-        "ledger-entry-805944755ece3461",
-        "ledger-entry-fd9ad0d78d6ef6ea"
-      ],
-      "label": "**Interactive Generators**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-66f3b96103252d36",
-      "source_range_id": "source-range-83ecb080-02925",
-      "structure_node_id": "structure-node-643eb28e3b625766",
-      "topic_key": "interactive-generator"
-    },
-    {
       "atom_ids": [
         "technical-atom-3be6a97032be3174",
         "technical-atom-ae600eedd12cae46"
@@ -25832,77 +22959,6 @@
     },
     {
       "atom_ids": [
-        "technical-atom-b09e4836619ef504"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-2a77655b73c5c972",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-b7c3f9c178386daf",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-47647396c8d3df6a",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-c13a1d22c9f0316a",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-dc89cbbe1eaff781",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-5804db7659390feb",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-fb28665ffe810ae1",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-b09e4836619ef504"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-2a77655b73c5c972",
-        "ledger-entry-b7c3f9c178386daf",
-        "ledger-entry-47647396c8d3df6a",
-        "ledger-entry-c13a1d22c9f0316a",
-        "ledger-entry-dc89cbbe1eaff781",
-        "ledger-entry-5804db7659390feb",
-        "ledger-entry-fb28665ffe810ae1"
-      ],
-      "label": "**interactive generators**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-3f53218cd2239cc0",
-      "source_range_id": "source-range-83ecb080-03025",
-      "structure_node_id": "structure-node-79a343612b6f4a33",
-      "topic_key": "interactive-generator"
-    },
-    {
-      "atom_ids": [
         "technical-atom-699f9612e46ba075",
         "technical-atom-23d987304a59bb4c",
         "technical-atom-7843bfe8c5969652",
@@ -25949,27 +23005,6 @@
       "page_target_id": "page-target-3966365fd7e23373",
       "source_range_id": "source-range-83ecb080-03047",
       "structure_node_id": "structure-node-9858efd7dfe039ba",
-      "topic_key": "operation-iterable"
-    },
-    {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-f024d9e0b27b89c9",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-f024d9e0b27b89c9"
-      ],
-      "label": "**Basic Operations on Iterables**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-f507f0fea79e1bc5",
-      "source_range_id": "source-range-83ecb080-03050",
-      "structure_node_id": "structure-node-5d96b3b6430d514a",
       "topic_key": "operation-iterable"
     },
     {
@@ -26152,112 +23187,6 @@
       "topic_key": "how-run"
     },
     {
-      "atom_ids": [
-        "technical-atom-83edfa3c677d5f31",
-        "technical-atom-ebc6bd8e8939a9a8",
-        "technical-atom-ed4a497bb878ffba",
-        "technical-atom-d8837332c57886c0",
-        "technical-atom-9c78e72f4fe5e4bc"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-104e8a32cb53e077",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-8bd37a5e8d12a389",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-d82908e4fbb5fbbb",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-656d6789f7091a8f",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "rule",
-          "ledger_entry_id": "ledger-entry-834e7b18959e2f7e",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-3d3b94570b0d1fa9",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "property",
-          "ledger_entry_id": "ledger-entry-3eaba18179e28563",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-51c6f5d40e2b218f",
-          "technical_atom_id": ""
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-83edfa3c677d5f31"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-ebc6bd8e8939a9a8"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-ed4a497bb878ffba"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-d8837332c57886c0"
-        },
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-9c78e72f4fe5e4bc"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-104e8a32cb53e077",
-        "ledger-entry-8bd37a5e8d12a389",
-        "ledger-entry-d82908e4fbb5fbbb",
-        "ledger-entry-656d6789f7091a8f",
-        "ledger-entry-834e7b18959e2f7e",
-        "ledger-entry-3d3b94570b0d1fa9",
-        "ledger-entry-3eaba18179e28563",
-        "ledger-entry-51c6f5d40e2b218f"
-      ],
-      "label": "**How to run the examples**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-afe33ae57dd9cf7b",
-      "source_range_id": "source-range-83ecb080-03083",
-      "structure_node_id": "structure-node-322ece62920a741e",
-      "topic_key": "how-run"
-    },
-    {
       "atom_ids": [],
       "attached_evidence": [
         {
@@ -26310,27 +23239,6 @@
       "topic_key": "copyright-notice"
     },
     {
-      "atom_ids": [
-        "technical-atom-3a93304b6e8f7b56"
-      ],
-      "attached_evidence": [
-        {
-          "evidence_kind": "technical-atom",
-          "evidence_role": "formula",
-          "ledger_entry_id": "",
-          "technical_atom_id": "technical-atom-3a93304b6e8f7b56"
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [],
-      "label": "**Copyright Notice**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-4106ddbf23319864",
-      "source_range_id": "source-range-83ecb080-03132",
-      "structure_node_id": "structure-node-8dd015ba2684c20d",
-      "topic_key": "copyright-notice"
-    },
-    {
       "atom_ids": [],
       "attached_evidence": [
         {
@@ -26350,31 +23258,10 @@
       "source_range_id": "source-range-83ecb080-03263",
       "structure_node_id": "structure-node-c3dda2c6ee71b96b",
       "topic_key": "author"
-    },
-    {
-      "atom_ids": [],
-      "attached_evidence": [
-        {
-          "evidence_kind": "ledger-entry",
-          "evidence_role": "event",
-          "ledger_entry_id": "ledger-entry-405280ce62f133ef",
-          "technical_atom_id": ""
-        }
-      ],
-      "concept_keys": [],
-      "entry_ids": [
-        "ledger-entry-405280ce62f133ef"
-      ],
-      "label": "**About The Author**",
-      "page_kind": "concept",
-      "page_target_id": "page-target-21ce80ff7a874d1f",
-      "source_range_id": "source-range-83ecb080-03266",
-      "structure_node_id": "structure-node-1fa266db97bb7145",
-      "topic_key": "author"
     }
   ],
-  "section_grounded_plan_fingerprint": "c3c4d6d3e201dd61",
-  "section_grounded_plan_id": "section-grounded-plan-57406008cfd52330",
+  "section_grounded_plan_fingerprint": "1f3d0ccbba137d64",
+  "section_grounded_plan_id": "section-grounded-plan-6cd0441c6eb62f27",
   "source_coverage_map": [
     {
       "ledger_entry_ids": [
@@ -26453,16 +23340,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-3bf46b3d69f4e422"
-      ],
-      "page_target_ids": [
-        "page-target-583c63ffbeb9306c"
-      ],
-      "structure_node_id": "structure-node-4fae3b0b4500336f",
-      "technical_atom_ids": []
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-be66106f1d07f249",
         "ledger-entry-e8ab03059f954c18",
         "ledger-entry-17f0df2e83dfa0c6",
@@ -26503,22 +23380,6 @@
         "technical-atom-028e3db61cc4f01b",
         "technical-atom-a16ded43a3567247",
         "technical-atom-83a8c2a2d46c2d5d"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-be66106f1d07f249",
-        "ledger-entry-e8ab03059f954c18",
-        "ledger-entry-17f0df2e83dfa0c6",
-        "ledger-entry-339af3e7ecc1e211",
-        "ledger-entry-c863330690deac23"
-      ],
-      "page_target_ids": [
-        "page-target-f356850c0933a717"
-      ],
-      "structure_node_id": "structure-node-4c0f775c61d33c65",
-      "technical_atom_ids": [
-        "technical-atom-ebfc8d2efbcc798b"
       ]
     },
     {
@@ -26665,17 +23526,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-9984e5fab871e89b",
-        "ledger-entry-9e2f4c5a13ddfb16"
-      ],
-      "page_target_ids": [
-        "page-target-4be2dc488dfc3e88"
-      ],
-      "structure_node_id": "structure-node-195c4fbac5356619",
-      "technical_atom_ids": []
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-1fec80c5e2961b93",
         "ledger-entry-30819615a87ccd79",
         "ledger-entry-b5f39fd957aae8ba",
@@ -26699,19 +23549,6 @@
         "technical-atom-39b935a8c67d3e9e",
         "technical-atom-0421e5ae1d6ff040"
       ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-1fec80c5e2961b93",
-        "ledger-entry-30819615a87ccd79",
-        "ledger-entry-b5f39fd957aae8ba",
-        "ledger-entry-d7b72e15eb37816b"
-      ],
-      "page_target_ids": [
-        "page-target-44426068c5a5bfa3"
-      ],
-      "structure_node_id": "structure-node-b595b604bcb74881",
-      "technical_atom_ids": []
     },
     {
       "ledger_entry_ids": [],
@@ -26777,23 +23614,6 @@
         "technical-atom-4aaafced4afdd324",
         "technical-atom-a90203e05ea89793",
         "technical-atom-965b66681a9ef816"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-4269d5c6eb71009d",
-        "ledger-entry-a1bd4cc44234eca3",
-        "ledger-entry-dd3a654063f8166b",
-        "ledger-entry-e3309a1b2cc6ea53",
-        "ledger-entry-2731e2dc66ad3de7",
-        "ledger-entry-3bd065ba116ecb99"
-      ],
-      "page_target_ids": [
-        "page-target-8153c26148b78729"
-      ],
-      "structure_node_id": "structure-node-6d1f935d132e2973",
-      "technical_atom_ids": [
-        "technical-atom-0c942e5ad104c7ab"
       ]
     },
     {
@@ -26871,27 +23691,6 @@
         "technical-atom-b482a4aa6d006c71",
         "technical-atom-49e7d85abfbd94ad",
         "technical-atom-7c977e34b5ed1b52"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-7c61c24a916fe6b4",
-        "ledger-entry-9266961e31feee8b",
-        "ledger-entry-5d4e18a95d47c136",
-        "ledger-entry-ceef717b56916afb",
-        "ledger-entry-3f36dfed71dbe14a",
-        "ledger-entry-fea8c7cdd33ddbb8",
-        "ledger-entry-d4c986188451cd18",
-        "ledger-entry-9c88e142e4ad916b",
-        "ledger-entry-49f3ecba84b9ef37",
-        "ledger-entry-320453b3098092c1"
-      ],
-      "page_target_ids": [
-        "page-target-b11170d6cf65f979"
-      ],
-      "structure_node_id": "structure-node-106b9a4265cac344",
-      "technical_atom_ids": [
-        "technical-atom-867a4b3935c753eb"
       ]
     },
     {
@@ -27024,18 +23823,6 @@
         "technical-atom-2d731d9ba35f8798",
         "technical-atom-46372c5112419053"
       ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-00335bbc55755a03",
-        "ledger-entry-009062107e9fa631",
-        "ledger-entry-62257f0706d22eb4"
-      ],
-      "page_target_ids": [
-        "page-target-83105b91b7d00956"
-      ],
-      "structure_node_id": "structure-node-8da22f63526259a7",
-      "technical_atom_ids": []
     },
     {
       "ledger_entry_ids": [
@@ -27393,18 +24180,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-2cdb7994e37c4eaf"
-      ],
-      "page_target_ids": [
-        "page-target-9ec413ea79b6cc69"
-      ],
-      "structure_node_id": "structure-node-7cab34c77c0a5cb0",
-      "technical_atom_ids": [
-        "technical-atom-fcbe23a780932690"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-a49f378d2e5e4f91",
         "ledger-entry-738ed48b707561d6",
         "ledger-entry-fffea1178bc25f48",
@@ -27575,31 +24350,6 @@
         "technical-atom-35d1ac7f65200e63",
         "technical-atom-fcb1e9a5708d54e1",
         "technical-atom-a874bed769756bc3"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-4647a8e3af6f908d",
-        "ledger-entry-7989cd4261176165",
-        "ledger-entry-e154c2c01f7e854c",
-        "ledger-entry-9645defe5395e8ba",
-        "ledger-entry-7a7d9eca454bb4c2",
-        "ledger-entry-86fb048ea6faa1fe",
-        "ledger-entry-b1712fb02292fe71",
-        "ledger-entry-c70e901d83471042",
-        "ledger-entry-07f25194e82b5f54"
-      ],
-      "page_target_ids": [
-        "page-target-830a7a665bd05d10"
-      ],
-      "structure_node_id": "structure-node-d211f9cea48054f3",
-      "technical_atom_ids": [
-        "technical-atom-39f84639e966bf74",
-        "technical-atom-0fdf0f3f0a4466f7",
-        "technical-atom-3551514a2fb08287",
-        "technical-atom-6fc52ba12fbf2675",
-        "technical-atom-65e99b06f1050f04",
-        "technical-atom-4e2d906473ec9b02"
       ]
     },
     {
@@ -27783,18 +24533,6 @@
         "technical-atom-688048e4ff12fce9",
         "technical-atom-0809398612c19bd1",
         "technical-atom-a05c5829b1af60cc"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-a9f12ea71a056f33"
-      ],
-      "page_target_ids": [
-        "page-target-87bb0c946dee73b2"
-      ],
-      "structure_node_id": "structure-node-136ad61845dfb4a8",
-      "technical_atom_ids": [
-        "technical-atom-9923dfa32a3e4437"
       ]
     },
     {
@@ -28020,19 +24758,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-3ec3cb1219679ed3",
-        "ledger-entry-9aeee0b63cb461ae",
-        "ledger-entry-faf77b1327915ebb",
-        "ledger-entry-fc7e147b2135702f"
-      ],
-      "page_target_ids": [
-        "page-target-08e6c039d30c5e92"
-      ],
-      "structure_node_id": "structure-node-38d660b37ac47f9c",
-      "technical_atom_ids": []
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-56a46d95a95f33c1",
         "ledger-entry-6d4411e5700efc7d",
         "ledger-entry-236542ef94529769",
@@ -28127,17 +24852,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-b4755a931fb63eb7",
-        "ledger-entry-d7dedef030fe031d"
-      ],
-      "page_target_ids": [
-        "page-target-cd21d3fb2d87d110"
-      ],
-      "structure_node_id": "structure-node-9697027cee5a5fc0",
-      "technical_atom_ids": []
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-c9db311d0f103a52",
         "ledger-entry-5fb2536351f3fa7f",
         "ledger-entry-a81d3ac0ffad8bd5",
@@ -28220,16 +24934,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-82c8ae740bead6d5"
-      ],
-      "page_target_ids": [
-        "page-target-90e98205943be936"
-      ],
-      "structure_node_id": "structure-node-35b21e3d520cc624",
-      "technical_atom_ids": []
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-8254da2be6e9c42a",
         "ledger-entry-d12468a9ffc2f49e",
         "ledger-entry-17ce7f10e38c5205",
@@ -28241,27 +24945,6 @@
         "page-target-4a8ea765ca2247e8"
       ],
       "structure_node_id": "structure-node-367e6412a195d4e8",
-      "technical_atom_ids": [
-        "technical-atom-ef367c693bdf4e21",
-        "technical-atom-6a5092b268cd03a0",
-        "technical-atom-69f3967865b18e41",
-        "technical-atom-a7a88e563529bf32",
-        "technical-atom-d2cfd6a722e07fe3"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-8254da2be6e9c42a",
-        "ledger-entry-d12468a9ffc2f49e",
-        "ledger-entry-17ce7f10e38c5205",
-        "ledger-entry-b610d2b8c8700d33",
-        "ledger-entry-bef7dd3dfbcdae14",
-        "ledger-entry-bd544f05e4463e63"
-      ],
-      "page_target_ids": [
-        "page-target-6271065451f6c4df"
-      ],
-      "structure_node_id": "structure-node-60ed1ab03ea12246",
       "technical_atom_ids": [
         "technical-atom-ef367c693bdf4e21",
         "technical-atom-6a5092b268cd03a0",
@@ -28296,30 +24979,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-f559e87e32f5f177",
-        "ledger-entry-103cdc036361af19",
-        "ledger-entry-f709a5cf4698d042",
-        "ledger-entry-e7550d4b96c1bae5",
-        "ledger-entry-3c62559850c9af47",
-        "ledger-entry-f5ac752f0bac01c7",
-        "ledger-entry-f119ea9cace25c71"
-      ],
-      "page_target_ids": [
-        "page-target-d903487c2ee74e46"
-      ],
-      "structure_node_id": "structure-node-f3e22a2904f73fea",
-      "technical_atom_ids": [
-        "technical-atom-427b7ffbc43a4f35",
-        "technical-atom-2ca9a6ccc0a72426",
-        "technical-atom-7f4e8dfc9b6921b6",
-        "technical-atom-6bcc455cae784259",
-        "technical-atom-0b6c2c208c2a8e2d",
-        "technical-atom-ad0139b6c87f09a8",
-        "technical-atom-14f741fb6c81542f"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-9092a2cc1ab26baf",
         "ledger-entry-98a5ef14e9e98e2f",
         "ledger-entry-abeffc277ba3a07c",
@@ -28329,26 +24988,6 @@
         "page-target-cb45129ff3f071ea"
       ],
       "structure_node_id": "structure-node-db28d50b7978164c",
-      "technical_atom_ids": [
-        "technical-atom-ab6157dcaa17bffe",
-        "technical-atom-605137e9f81d289c",
-        "technical-atom-2e373b386527d5b8",
-        "technical-atom-8a494006bc211ecb",
-        "technical-atom-0f6523ce5a0a06e9",
-        "technical-atom-eb9f2745fe1bba62"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-9092a2cc1ab26baf",
-        "ledger-entry-98a5ef14e9e98e2f",
-        "ledger-entry-abeffc277ba3a07c",
-        "ledger-entry-5986d9444c96c7f0"
-      ],
-      "page_target_ids": [
-        "page-target-d99cb5c4e1a7faa0"
-      ],
-      "structure_node_id": "structure-node-79e610576a5a87d1",
       "technical_atom_ids": [
         "technical-atom-ab6157dcaa17bffe",
         "technical-atom-605137e9f81d289c",
@@ -28390,20 +25029,6 @@
         "technical-atom-f7f7b8bc5a881c41",
         "technical-atom-5dc4538f519b3330",
         "technical-atom-bd841ff11901a3c1"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-a2229d2ff2feb699",
-        "ledger-entry-864d129eaad24a11",
-        "ledger-entry-c79a051cf3fc3dd5"
-      ],
-      "page_target_ids": [
-        "page-target-5dcf29e51bd7ca88"
-      ],
-      "structure_node_id": "structure-node-07dc266372ee9634",
-      "technical_atom_ids": [
-        "technical-atom-0afc000a8537481b"
       ]
     },
     {
@@ -28669,19 +25294,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-1159aad7a5139195",
-        "ledger-entry-2d9868609c30a263",
-        "ledger-entry-87c9ce6852368716",
-        "ledger-entry-cd44525e4ffc014a"
-      ],
-      "page_target_ids": [
-        "page-target-0c26ee840edd2cf3"
-      ],
-      "structure_node_id": "structure-node-483ed8b8821c570e",
-      "technical_atom_ids": []
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-620320e83e1f3549",
         "ledger-entry-c1ddbc737f8c7f96",
         "ledger-entry-69783c5f1977c61f",
@@ -28883,39 +25495,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-c5a3af2d4463a0fc",
-        "ledger-entry-7a2395fcd9760558",
-        "ledger-entry-5666a0bb5221fb54",
-        "ledger-entry-2868fb3929cc8c06",
-        "ledger-entry-9d16ff6f6139ebb0",
-        "ledger-entry-c85ff38e2f8ee62d",
-        "ledger-entry-c8337b2a6c17f578",
-        "ledger-entry-751f41a82cfc53e7",
-        "ledger-entry-ba114add5e6dbf61",
-        "ledger-entry-c8813bd21a80fe77",
-        "ledger-entry-91701720f7e11256",
-        "ledger-entry-43076a6e59cb1782",
-        "ledger-entry-79468c8fa0b4cfc3",
-        "ledger-entry-b454f0495e68a4a0",
-        "ledger-entry-ecf38eb49bd76151",
-        "ledger-entry-fd1670079850b065",
-        "ledger-entry-86985a571a8e27ff",
-        "ledger-entry-c9844630012a3642"
-      ],
-      "page_target_ids": [
-        "page-target-2e7d56a83155a008"
-      ],
-      "structure_node_id": "structure-node-c36dd262418590b9",
-      "technical_atom_ids": [
-        "technical-atom-d4067a8aabc773cf",
-        "technical-atom-e2b0e7c467fe8728",
-        "technical-atom-43f58f96e68e71f2",
-        "technical-atom-9c46379ff4002d4d",
-        "technical-atom-782bb39c7eee231c"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-5c113e25099bdf2f",
         "ledger-entry-b77d6b23775d3344",
         "ledger-entry-f55abd00f74c32f8",
@@ -29053,34 +25632,6 @@
         "technical-atom-14469c5296ed1aac",
         "technical-atom-cde87166d81411c8",
         "technical-atom-e3add9f42a948d3e"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-3092ef9729bcbaa9",
-        "ledger-entry-bce38eb619844789",
-        "ledger-entry-169d4c8627e48eb8",
-        "ledger-entry-692e0cbeb8ea52ae",
-        "ledger-entry-7808ca78dd8bce1a",
-        "ledger-entry-3a94d5df069101dc",
-        "ledger-entry-6e6213e4d58e6167",
-        "ledger-entry-62146dd95b2882db",
-        "ledger-entry-a8692113f536cbda",
-        "ledger-entry-431dcf8d0469893a",
-        "ledger-entry-e052c34caafdae54",
-        "ledger-entry-47f3c9227d81ea1c",
-        "ledger-entry-122c13bfdb92eda2",
-        "ledger-entry-4ab6e63d6994800a"
-      ],
-      "page_target_ids": [
-        "page-target-4e5f4c2f54b14a7a"
-      ],
-      "structure_node_id": "structure-node-b713d8e120db10e8",
-      "technical_atom_ids": [
-        "technical-atom-a64c33d2f3a4b018",
-        "technical-atom-c0f9e582266bb857",
-        "technical-atom-37b3cb17c786c587",
-        "technical-atom-171a108323897fb1"
       ]
     },
     {
@@ -29246,30 +25797,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-c998dd69b4e07a20",
-        "ledger-entry-4716137e107aaace",
-        "ledger-entry-74b28ef744eed00f",
-        "ledger-entry-7dfbe24e8972f718",
-        "ledger-entry-192fb054d0975093",
-        "ledger-entry-7cf6c0417d50eb84",
-        "ledger-entry-cd12a4e739ac2efe",
-        "ledger-entry-906ed81d3a9d91fb",
-        "ledger-entry-9b464208947600de",
-        "ledger-entry-1144a3dcb5ab233f",
-        "ledger-entry-6905332bb1451169",
-        "ledger-entry-f58d258d4ea7a97d"
-      ],
-      "page_target_ids": [
-        "page-target-7f3ef041e5b730a5"
-      ],
-      "structure_node_id": "structure-node-7c5b324540be7bf2",
-      "technical_atom_ids": [
-        "technical-atom-ea5904d838a32ad1",
-        "technical-atom-ee7da0f15a928078"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-5b2ffbfaf20dd297",
         "ledger-entry-e8f1c2eff2eaeeee",
         "ledger-entry-4b71a588d4dd47e6",
@@ -29400,27 +25927,6 @@
         "technical-atom-018f45d6bbdab2d0",
         "technical-atom-1e6e3ccab624e1e1",
         "technical-atom-d405d44efa1fdf81"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-eabf33f39d1591e1",
-        "ledger-entry-0149acd2101dbdec",
-        "ledger-entry-b91bbe63b83422eb",
-        "ledger-entry-30f1909901e025df",
-        "ledger-entry-e147d1e2c8dc0a3d",
-        "ledger-entry-7214677761bb5feb",
-        "ledger-entry-6b5d80ab4f1ecbb7"
-      ],
-      "page_target_ids": [
-        "page-target-1db6ea43d85fb719"
-      ],
-      "structure_node_id": "structure-node-988af59160ee0e2c",
-      "technical_atom_ids": [
-        "technical-atom-fa58be881c81bf70",
-        "technical-atom-fe45bbe54d4de10e",
-        "technical-atom-5dba4fe547df2948",
-        "technical-atom-d84cadabb095c25d"
       ]
     },
     {
@@ -29557,37 +26063,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-6d0b0798e7b42ad2",
-        "ledger-entry-ad58a6c372efc419",
-        "ledger-entry-aec26bc8e5cecdb3",
-        "ledger-entry-9ee3bcf5a18a3a8d",
-        "ledger-entry-2fb13ee6a74f11f4",
-        "ledger-entry-3f7418e281f5cbcc",
-        "ledger-entry-41f3c2cd7533e4b3",
-        "ledger-entry-8e8512c49514467c",
-        "ledger-entry-c53ca0a914d8026f",
-        "ledger-entry-a7605ad6492610d1",
-        "ledger-entry-d46dc42ddbc9064a",
-        "ledger-entry-3959c01f9c1a3112",
-        "ledger-entry-4d2748041026c104"
-      ],
-      "page_target_ids": [
-        "page-target-02147f1e035b49ef"
-      ],
-      "structure_node_id": "structure-node-31505165f8e826ec",
-      "technical_atom_ids": [
-        "technical-atom-3d9f1d79804e98ef",
-        "technical-atom-31a805ce284cbf1e",
-        "technical-atom-8a8526c52dbc6443",
-        "technical-atom-b9b731da5221b0d9",
-        "technical-atom-318da65b95cb83c1",
-        "technical-atom-439cf3e9e2b3e2a8",
-        "technical-atom-df44476f232928a9",
-        "technical-atom-ebba6410c457410b"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-1629e4de037f0945",
         "ledger-entry-1f80b0c82780b1cc",
         "ledger-entry-dba523640483c44f",
@@ -29692,25 +26167,6 @@
         "technical-atom-43dc9aac1dec976c",
         "technical-atom-15ab5991c87cf588",
         "technical-atom-a3e11d6aa85cfa0f"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-915abbe1ce3dbf80",
-        "ledger-entry-16e0df5eb6a38b6a",
-        "ledger-entry-ac6d66166cb98a8a",
-        "ledger-entry-c90eebff35d05ca7",
-        "ledger-entry-39af858420533dc7",
-        "ledger-entry-f43322478f347dcd",
-        "ledger-entry-eca0e95e71a979b6"
-      ],
-      "page_target_ids": [
-        "page-target-c6507b1353983aef"
-      ],
-      "structure_node_id": "structure-node-283251e110099791",
-      "technical_atom_ids": [
-        "technical-atom-5aaf0ddfb585a37b",
-        "technical-atom-a7370786a1ca21eb"
       ]
     },
     {
@@ -29822,26 +26278,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-38caa5fb627d28e7",
-        "ledger-entry-7eafdcd9e10aadc6",
-        "ledger-entry-bbe25b0ca34a3bc0",
-        "ledger-entry-852980bd999e8abc",
-        "ledger-entry-3bfe018dfb8dc8c9",
-        "ledger-entry-c6bd0cdf84e4cbb6"
-      ],
-      "page_target_ids": [
-        "page-target-05a5bf7ca4bef426"
-      ],
-      "structure_node_id": "structure-node-72e65a771dd065e1",
-      "technical_atom_ids": [
-        "technical-atom-99564e448658145a",
-        "technical-atom-5726aa7ecd487974",
-        "technical-atom-08bc76b8861e1c18",
-        "technical-atom-9a90dbe030e4714e"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-6eb1f90e81bbc935",
         "ledger-entry-31d5bcffe9da2df2"
       ],
@@ -29900,29 +26336,6 @@
         "page-target-9c774c560fb66b1a"
       ],
       "structure_node_id": "structure-node-c40991fa0b8c9fce",
-      "technical_atom_ids": [
-        "technical-atom-82cc975184ad6476",
-        "technical-atom-05cbf99947c6f6c4",
-        "technical-atom-735114144f055caa"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-a52c7f3c9ce3eba1",
-        "ledger-entry-d057fe4271b27614",
-        "ledger-entry-360120a6128c9dc1",
-        "ledger-entry-f8eead1a7929fec7",
-        "ledger-entry-564b86ec244ded16",
-        "ledger-entry-a37f749eae3ec11c",
-        "ledger-entry-ba4b13a79efc7824",
-        "ledger-entry-2a096813307c3bf2",
-        "ledger-entry-5e59e511476cc515",
-        "ledger-entry-f2439762f06e800e"
-      ],
-      "page_target_ids": [
-        "page-target-bd4e239f1bfbaaac"
-      ],
-      "structure_node_id": "structure-node-9acf2b5d5023b077",
       "technical_atom_ids": [
         "technical-atom-82cc975184ad6476",
         "technical-atom-05cbf99947c6f6c4",
@@ -29995,33 +26408,6 @@
         "technical-atom-ea91ecabc172fdb8",
         "technical-atom-31bd6d284dc2827c",
         "technical-atom-37f27dc46e0f9035"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-771184ab55b67f27",
-        "ledger-entry-c2a8dab0d8d23a93",
-        "ledger-entry-4fd88dd60aa63257",
-        "ledger-entry-82233eb225b01c98",
-        "ledger-entry-34c56213bf300f06"
-      ],
-      "page_target_ids": [
-        "page-target-f17e11f97461cfda"
-      ],
-      "structure_node_id": "structure-node-6b218e2623a118df",
-      "technical_atom_ids": [
-        "technical-atom-737668bf950608f8",
-        "technical-atom-1005aa93ece42a32",
-        "technical-atom-46acfcc53ff3b0fc",
-        "technical-atom-5912b18959f9e251",
-        "technical-atom-072ef0ea1646c566",
-        "technical-atom-6ed12f140f799893",
-        "technical-atom-5b47d11f49ee3ee8",
-        "technical-atom-cffc18a940298335",
-        "technical-atom-dc94932c90c76c08",
-        "technical-atom-75618637e6b53eed",
-        "technical-atom-4d4dc9eade77cfc3",
-        "technical-atom-9a0e3a43cef507da"
       ]
     },
     {
@@ -30216,29 +26602,6 @@
         "technical-atom-cc8bbce4746cad0d",
         "technical-atom-47145ea23d237371",
         "technical-atom-fa147510fb30944f"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-08b26aedb0b0fa8a",
-        "ledger-entry-25621742980cc74f",
-        "ledger-entry-945506eece6aef1b",
-        "ledger-entry-51d6166d6ea19460",
-        "ledger-entry-9b27107b2db53655",
-        "ledger-entry-ac7380fc83a2d140",
-        "ledger-entry-ffa9517315bb1c6f",
-        "ledger-entry-5d95822f1608f9b2"
-      ],
-      "page_target_ids": [
-        "page-target-f96727640343df4e"
-      ],
-      "structure_node_id": "structure-node-6e9b28d70238ef3e",
-      "technical_atom_ids": [
-        "technical-atom-eb65dd329ce7c87d",
-        "technical-atom-a6b2fbcb48187ae9",
-        "technical-atom-c32d0ea1c23e3d4b",
-        "technical-atom-20e77f9e2a3f493a",
-        "technical-atom-37109cb02db759d1"
       ]
     },
     {
@@ -30451,31 +26814,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-425a3b419cb8f510",
-        "ledger-entry-4287209a9a3d6b85",
-        "ledger-entry-b486306faf30284f",
-        "ledger-entry-e39361d54f811780",
-        "ledger-entry-18d418577dbf632b",
-        "ledger-entry-931c70beff5463f7"
-      ],
-      "page_target_ids": [
-        "page-target-82733469738e424c"
-      ],
-      "structure_node_id": "structure-node-a443162c1c249fea",
-      "technical_atom_ids": [
-        "technical-atom-55510eca609a788b",
-        "technical-atom-42f1e0aa59d2d02e",
-        "technical-atom-3760f552bce07a07",
-        "technical-atom-82ad8a2f2e77b911",
-        "technical-atom-3f613e9c32678498",
-        "technical-atom-4d16768ccf5f5f2f",
-        "technical-atom-66df001c0e82f6e5",
-        "technical-atom-f0fae3de9cee6bf8",
-        "technical-atom-55efb994ee6569e8"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-c72111905c89a199",
         "ledger-entry-cd85fc074e9a6ae6",
         "ledger-entry-8c886370ae9be872",
@@ -30500,31 +26838,6 @@
         "technical-atom-ef4f4947abf111da",
         "technical-atom-ff91420989db7da5",
         "technical-atom-ad372ee2547410eb"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-c72111905c89a199",
-        "ledger-entry-cd85fc074e9a6ae6"
-      ],
-      "page_target_ids": [
-        "page-target-90231c3c94c01c08"
-      ],
-      "structure_node_id": "structure-node-bdedeb49f5b1d964",
-      "technical_atom_ids": [
-        "technical-atom-d2f422e0ca513f98",
-        "technical-atom-25b420869ab8b6f8",
-        "technical-atom-c6fa72b958fbe761",
-        "technical-atom-77f9b2969c857988",
-        "technical-atom-7c63830011f5b9a3",
-        "technical-atom-a9c28052434df083",
-        "technical-atom-289ee1e4cae7ab5e",
-        "technical-atom-695a405a8c046594",
-        "technical-atom-9ee6f117d48ccdbe",
-        "technical-atom-7f6f74e68ec3128f",
-        "technical-atom-af74449500c2f477",
-        "technical-atom-ef4f4947abf111da",
-        "technical-atom-ff91420989db7da5"
       ]
     },
     {
@@ -30565,20 +26878,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-42bc9f2b0e696656"
-      ],
-      "page_target_ids": [
-        "page-target-2365228a09d06326"
-      ],
-      "structure_node_id": "structure-node-0109deed331185fd",
-      "technical_atom_ids": [
-        "technical-atom-96dae227a6179a58",
-        "technical-atom-7d72c25bbd175328",
-        "technical-atom-164d18391e252b5a"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-d6d421388016a5c8",
         "ledger-entry-4dc8171a3d743841",
         "ledger-entry-68fdaa00dd137625",
@@ -30607,22 +26906,6 @@
         "technical-atom-febaa4eaaa3d7541",
         "technical-atom-1e2252edd3469bad",
         "technical-atom-3254ccd44d5f4841"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-d6d421388016a5c8",
-        "ledger-entry-4dc8171a3d743841",
-        "ledger-entry-68fdaa00dd137625",
-        "ledger-entry-4cce8857cda05b86",
-        "ledger-entry-6a70e8a36d216c2d"
-      ],
-      "page_target_ids": [
-        "page-target-58ffa4c5101405a9"
-      ],
-      "structure_node_id": "structure-node-ab558852547ea276",
-      "technical_atom_ids": [
-        "technical-atom-af3050dae5a361b5"
       ]
     },
     {
@@ -30669,16 +26952,6 @@
         "page-target-6fc627a47191195e"
       ],
       "structure_node_id": "structure-node-837a59963b996c15",
-      "technical_atom_ids": []
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-709f713c6cd46696"
-      ],
-      "page_target_ids": [
-        "page-target-b309df06eea2b791"
-      ],
-      "structure_node_id": "structure-node-f299b5e0246e3ac6",
       "technical_atom_ids": []
     },
     {
@@ -30796,18 +27069,6 @@
         "technical-atom-83b29b3bcdf0e197",
         "technical-atom-61c9e5064f574b54"
       ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-c71c6cbaccdd7dc5",
-        "ledger-entry-d4932f26692c4b03",
-        "ledger-entry-024b56a871ce389b"
-      ],
-      "page_target_ids": [
-        "page-target-140fa1af7d072fd4"
-      ],
-      "structure_node_id": "structure-node-7d73c8fda6b387fa",
-      "technical_atom_ids": []
     },
     {
       "ledger_entry_ids": [
@@ -31067,26 +27328,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-e8c0782cd9cc7b90",
-        "ledger-entry-101202b1e4dd19d1",
-        "ledger-entry-50e2eb15b56555c9",
-        "ledger-entry-31f02e33fd061f5e",
-        "ledger-entry-0c0698a71e9aba1f",
-        "ledger-entry-50a85de86ed15878",
-        "ledger-entry-89d9d98cb7970dd5",
-        "ledger-entry-7ec73f528e1edba3"
-      ],
-      "page_target_ids": [
-        "page-target-398087b428390c6a"
-      ],
-      "structure_node_id": "structure-node-f1e31978caf6015a",
-      "technical_atom_ids": [
-        "technical-atom-63d00cf05e5bae01",
-        "technical-atom-21b6fcb4a438da84"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-62eb6789c0b06127",
         "ledger-entry-d3bb530bf1a150ab",
         "ledger-entry-253f93c9a2ea9b4b",
@@ -31301,26 +27542,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-ddd253d83f2588c9",
-        "ledger-entry-5fde42a28dbefc1d",
-        "ledger-entry-33805b99337f2aff",
-        "ledger-entry-f0488a288df1c047",
-        "ledger-entry-767687985627da8a",
-        "ledger-entry-d17baa913a2d12d5",
-        "ledger-entry-35f0fa2ed1f05c9a",
-        "ledger-entry-6eab273ba4922884",
-        "ledger-entry-865065631dfc712d",
-        "ledger-entry-56a18eec9a1ce3f5",
-        "ledger-entry-96f8507e57988f25"
-      ],
-      "page_target_ids": [
-        "page-target-61ca9340963dbd77"
-      ],
-      "structure_node_id": "structure-node-c588143403eee8c5",
-      "technical_atom_ids": []
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-029059f2538c467f",
         "ledger-entry-76220e373ee7ba60",
         "ledger-entry-73e2f3fcdab4ad86",
@@ -31441,17 +27662,6 @@
         "technical-atom-f8ae7c94527eecf5",
         "technical-atom-2042151bc85043c4"
       ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-f80dfeb44a25c741",
-        "ledger-entry-09871f5d6ae364a4"
-      ],
-      "page_target_ids": [
-        "page-target-e2a9ddfe5d8c0726"
-      ],
-      "structure_node_id": "structure-node-384196fb574c3ba6",
-      "technical_atom_ids": []
     },
     {
       "ledger_entry_ids": [
@@ -31580,24 +27790,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-369cefb276d7a309",
-        "ledger-entry-3b5987beb737e06c",
-        "ledger-entry-ae0b36094e194aa9",
-        "ledger-entry-c99ce63598d0f5ba",
-        "ledger-entry-bef02dae8eae3c10",
-        "ledger-entry-d9354244b35cf3bc",
-        "ledger-entry-50160db29fba547c",
-        "ledger-entry-805944755ece3461",
-        "ledger-entry-fd9ad0d78d6ef6ea"
-      ],
-      "page_target_ids": [
-        "page-target-66f3b96103252d36"
-      ],
-      "structure_node_id": "structure-node-643eb28e3b625766",
-      "technical_atom_ids": []
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-500d77f38ac656bc",
         "ledger-entry-002a97401febc6d6",
         "ledger-entry-c09b01429f765a79",
@@ -31629,24 +27821,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-2a77655b73c5c972",
-        "ledger-entry-b7c3f9c178386daf",
-        "ledger-entry-47647396c8d3df6a",
-        "ledger-entry-c13a1d22c9f0316a",
-        "ledger-entry-dc89cbbe1eaff781",
-        "ledger-entry-5804db7659390feb",
-        "ledger-entry-fb28665ffe810ae1"
-      ],
-      "page_target_ids": [
-        "page-target-3f53218cd2239cc0"
-      ],
-      "structure_node_id": "structure-node-79a343612b6f4a33",
-      "technical_atom_ids": [
-        "technical-atom-b09e4836619ef504"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-f024d9e0b27b89c9"
       ],
       "page_target_ids": [
@@ -31659,16 +27833,6 @@
         "technical-atom-7843bfe8c5969652",
         "technical-atom-647dff1314c5c6a0"
       ]
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-f024d9e0b27b89c9"
-      ],
-      "page_target_ids": [
-        "page-target-f507f0fea79e1bc5"
-      ],
-      "structure_node_id": "structure-node-5d96b3b6430d514a",
-      "technical_atom_ids": []
     },
     {
       "ledger_entry_ids": [],
@@ -31726,29 +27890,6 @@
     },
     {
       "ledger_entry_ids": [
-        "ledger-entry-104e8a32cb53e077",
-        "ledger-entry-8bd37a5e8d12a389",
-        "ledger-entry-d82908e4fbb5fbbb",
-        "ledger-entry-656d6789f7091a8f",
-        "ledger-entry-834e7b18959e2f7e",
-        "ledger-entry-3d3b94570b0d1fa9",
-        "ledger-entry-3eaba18179e28563",
-        "ledger-entry-51c6f5d40e2b218f"
-      ],
-      "page_target_ids": [
-        "page-target-afe33ae57dd9cf7b"
-      ],
-      "structure_node_id": "structure-node-322ece62920a741e",
-      "technical_atom_ids": [
-        "technical-atom-83edfa3c677d5f31",
-        "technical-atom-ebc6bd8e8939a9a8",
-        "technical-atom-ed4a497bb878ffba",
-        "technical-atom-d8837332c57886c0",
-        "technical-atom-9c78e72f4fe5e4bc"
-      ]
-    },
-    {
-      "ledger_entry_ids": [
         "ledger-entry-82ba6bc701e30363",
         "ledger-entry-26e71711cd36aaea"
       ],
@@ -31769,16 +27910,6 @@
       ]
     },
     {
-      "ledger_entry_ids": [],
-      "page_target_ids": [
-        "page-target-4106ddbf23319864"
-      ],
-      "structure_node_id": "structure-node-8dd015ba2684c20d",
-      "technical_atom_ids": [
-        "technical-atom-3a93304b6e8f7b56"
-      ]
-    },
-    {
       "ledger_entry_ids": [
         "ledger-entry-405280ce62f133ef"
       ],
@@ -31786,16 +27917,6 @@
         "page-target-23fa8f6499643aa7"
       ],
       "structure_node_id": "structure-node-c3dda2c6ee71b96b",
-      "technical_atom_ids": []
-    },
-    {
-      "ledger_entry_ids": [
-        "ledger-entry-405280ce62f133ef"
-      ],
-      "page_target_ids": [
-        "page-target-21ce80ff7a874d1f"
-      ],
-      "structure_node_id": "structure-node-1fa266db97bb7145",
       "technical_atom_ids": []
     }
   ],

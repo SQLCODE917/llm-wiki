@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-6-1-character-s-dominant-hand-d00feeaf@a13877c30ee8a17d05a54b15a883a252
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-6-1-character-s-dominant-hand-d00feeaf@475c7bfb1210a67bbee001b0f8fc72c0
 ---
 
 # **16.6.1 Character's Dominant Hand**
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07872))_
+
 > Therefore, when creating an adventurer, let's say that if you roll 2D and get _double sixes_ , they'll be ambidextrous.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07872))_

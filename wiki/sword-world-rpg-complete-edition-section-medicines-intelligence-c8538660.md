@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-medicines-intelligence-c8538660@66c23a5dfa7bc595b1b820172faa0e9c
+projection_coverage: section-sword-world-rpg-complete-edition-section-medicines-intelligence-c8538660@b12b9220d5a07d26b7b9ee088d2a2cd9
 ---
 
 # **[** ⑦ **Medicines [Intelligence]]**
@@ -30,14 +30,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: To create medicines or poisons, the game master should set a target score depending on the type, and ask for a success roll check. The target score for a poison which is able to kill people even in small amounts _and_ be tasteless and odorless, is around 20. Regardless of the result or dice roll, you will need materials and at least one week to attempt to create a medicine. You can make up to 10 doses at most.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03488))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03488))_
+
+> To create medicines or poisons, the game master should set a target score depending on the type, and ask for a success roll check. The target score for a poison which is able to kill people even in small amounts _and_ be tasteless and odorless, is around 20. Regardless of the result or dice roll, you will need materials and at least one week to attempt to create a medicine. You can make up to 10 doses at most.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03487))_
 
 > When appraising medicines or poisons, a success roll must be made using their rarity as the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03487))_
 
-> Context: When appraising medicines or poisons, a success roll must be made using their rarity as the target score. In Alecrast, the creation and use of poison is considered _shameful_ and _inhumane_ . Therefore, game masters should _not_ allow PCs to create or use poisons.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03487, source-range-870a16bc-03489))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03487, source-range-870a16bc-03489))_
+
+> When appraising medicines or poisons, a success roll must be made using their rarity as the target score. In Alecrast, the creation and use of poison is considered _shameful_ and _inhumane_ . Therefore, game masters should _not_ allow PCs to create or use poisons.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03488))_
 
 > To create medicines or poisons, the game master should set a target score depending on the type, and ask for a success roll check.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03488))_

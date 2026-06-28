@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mask-of-lady-76759a59@57dc9ed346d9aa3e4e7f01ae3c863a3a
+projection_coverage: section-sword-world-rpg-complete-edition-section-mask-of-lady-76759a59@b5710c205f9645fccd257d9fc585acde
 ---
 
 # **[ Mask of Lady ]**
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07629))_
+
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07629))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mental-power-d50ee961@81511ff08c413c44bb1120611eb228de
+projection_coverage: section-sword-world-rpg-complete-edition-section-mental-power-d50ee961@98f87a1334d619dcef52bd9f8901a873
 ---
 
 # 【 **Mental Power** 】
@@ -21,6 +21,10 @@ From [[sword-world-rpg-complete-edition]].
 - Mental power is also related to magic resistance. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00169))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -54,4 +58,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

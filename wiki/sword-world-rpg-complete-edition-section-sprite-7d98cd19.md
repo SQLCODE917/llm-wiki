@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sprite-7d98cd19@69f193ba2e4973320e724333451847aa
+projection_coverage: section-sword-world-rpg-complete-edition-section-sprite-7d98cd19@3c1522a736065c325985e83e583243e6
 ---
 
 # **[ Sprite ]**
@@ -31,32 +31,56 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05160))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05160))_
+
+> Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05162))_
 
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05162))_
 
-> Context: Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05160))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05160))_
+
+> Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05163))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05163))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05164))_
 
 > Agility=18 Movement Speed=16 Number=One Frequency=Rare Intellect=Human Reaction=Violent Attack Points=Fangs: 11 (4) Strike Points=7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05164))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05165))_
 
 > Evasion Points=14 (7) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6) Special Abilities=Transparent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05165))_
 
-> Context: Sprites are said to be the spirits that control the emotion of shame (the function of the mind). A mad sprite remains invisible and attacks nearby creatures with its fangs. Because it's invisible, its appearance cannot be identified, but it is said to resemble a leprechaun, etc. When attacking a mad sprite, a -4 modifier will be imposed. Also, you cannot cast magic on mad sprites.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05168))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05168))_
+
+> Sprites are said to be the spirits that control the emotion of shame (the function of the mind). A mad sprite remains invisible and attacks nearby creatures with its fangs. Because it's invisible, its appearance cannot be identified, but it is said to resemble a leprechaun, etc. When attacking a mad sprite, a -4 modifier will be imposed. Also, you cannot cast magic on mad sprites.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05167))_
 
 > Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05167))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05168))_
 
 > Also, you cannot cast magic on mad sprites.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05168))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05169))_
 
 > When a mad sprite performs this attack, the target must make a mental power resistance roll (target score 13).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05169))_

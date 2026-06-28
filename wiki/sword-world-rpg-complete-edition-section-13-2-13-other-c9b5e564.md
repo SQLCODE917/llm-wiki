@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-13-other-c9b5e564@736e29b11c3182cef16e3d586b6ab729
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-13-other-c9b5e564@bfcfbfdeb91812660c3825df74000425
 ---
 
 # 13.2.13 Other
@@ -45,32 +45,58 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06678))_
+
 > Mental Points/Resistance=15/15 (8) Special Abilities=None in particular Habitat=Towns
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06678))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06679))_
 
 > Languages=Regional, common Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06679))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06684))_
 
 > Monster Level=1
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06684))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06689))_
 
 > Life Points/Resistance=14/11 (4) Mental Points/Resistance=14/11 (4) Special Abilities=3rd level dark magic (magic intensity/magic power=12/5) Habitat=Human villages Languages=Regional Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06689))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06692))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06692))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06698))_
 
 > When in human form, they may acquire and use various skills, including magic, just like an adventurer.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06698))_
 
-> Context: have acquired skills up to its monster level), or use the fixed scores for a normal man as given at page 230 (please set the life points high).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06699))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06699))_
+
+> have acquired skills up to its monster level), or use the fixed scores for a normal man as given at page 230 (please set the life points high).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06700))_
 
 > When the score is equal to or less than this, the lycanthrope will always enter beast form (the lycanthrope will always enter beast form on nights when the moon is full = 15 days).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06700))_
 
-> Context: have acquired skills up to its monster level), or use the fixed scores for a normal man as given at page 230 (please set the life points high).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06699))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06699))_
+
+> have acquired skills up to its monster level), or use the fixed scores for a normal man as given at page 230 (please set the life points high).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06701))_
 
 > Even when it's not, a lycanthrope can transform into a beast at their own will.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06701))_

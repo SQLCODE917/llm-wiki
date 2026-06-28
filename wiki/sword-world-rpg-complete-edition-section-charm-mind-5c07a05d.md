@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-charm-mind-5c07a05d@87932b703b96ff73a8aae5d996b7e705
+projection_coverage: section-sword-world-rpg-complete-edition-section-charm-mind-5c07a05d@4941d535ae365d6dd71561d6dbedb798
 ---
 
 # **Charm (Mind)**
@@ -24,14 +24,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Those who hear this spellsong will begin to move their limbs and dance according to the melody on their own. Those affected suffer a -4 penalty to attack power and evasion speed. Ancient magic and spirit magic cannot be cast. Since you can't use your musical instrument, you can't use spellsongs either. You will also be unable to use most skills’ abilities.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03239))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03239))_
+
+> Those who hear this spellsong will begin to move their limbs and dance according to the melody on their own. Those affected suffer a -4 penalty to attack power and evasion speed. Ancient magic and spirit magic cannot be cast. Since you can't use your musical instrument, you can't use spellsongs either. You will also be unable to use most skills’ abilities.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03241))_
 
 > However, if you suffer physical or mental damage, you can make another resistance roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03241))_
 
-> Context: This spellsong has the effect of charming those who hear it. Those who are, are not charmed by the bard him or herself, but rather charmed by their singing voice and performance. As long as the spellsong continues, those who are charmed will listen to the song in ecstasy. However, if you suffer physical or mental damage, you can make another resistance roll.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03241))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03241))_
+
+> This spellsong has the effect of charming those who hear it. Those who are, are not charmed by the bard him or herself, but rather charmed by their singing voice and performance. As long as the spellsong continues, those who are charmed will listen to the song in ecstasy. However, if you suffer physical or mental damage, you can make another resistance roll.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))_
 
 > With this spellsong, a bard can make those they charm take specific actions.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))_

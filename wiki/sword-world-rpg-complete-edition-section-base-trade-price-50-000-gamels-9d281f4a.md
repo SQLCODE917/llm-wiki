@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-base-trade-price-50-000-gamels-9d281f4a@7b6e8877dbd1c57edf819f2968468e3e
+projection_coverage: section-sword-world-rpg-complete-edition-section-base-trade-price-50-000-gamels-9d281f4a@f0d44e4eda20eb87b8c6e59e5de4069e
 ---
 
 # Base Trade Price=50,000 gamels
@@ -23,8 +23,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07146))_
+
 > Powers=+1 to attack power and bonus damage. Fresh water also flows from the blade
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07146))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07147))_
 
 > Moreover, when the user gives a command with a password, it can produce 1 liter of fresh water in 1 minute.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07147))_

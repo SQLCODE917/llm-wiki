@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-communicate-reptile-0f692750@9e72fea90ccd40eb60e381a5da1f24c5
+projection_coverage: section-sword-world-rpg-complete-edition-section-communicate-reptile-0f692750@f486f14bbb8e6eb36f208d45e1689645
 ---
 
 # **[ Communicate Reptile ]**
@@ -25,20 +25,34 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The caster of this spell will be able to digest anything that enters their stomach and use it as nourishment. For example, whether it's a pebble or mud, once it enters the stomach, it gives the same feeling of fullness as when eating the same amount of average food, and at the same time provides energy for life activities. It takes effect on anything that enters the stomach within the effect period, and your stomach will not feel upset even after the effect period has expired. Also, even if you 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04212))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04212))_
+
+> The caster of this spell will be able to digest anything that enters their stomach and use it as nourishment. For example, whether it's a pebble or mud, once it enters the stomach, it gives the same feeling of fullness as when eating the same amount of average food, and at the same time provides energy for life activities. It takes effect on anything that enters the stomach within the effect period, and your stomach will not feel upset even after the effect period has expired. Also, even if you
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04214))_
 
 > Base Mental Power Cost=3 Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04214))_
 
-> Context: The caster of this spell will be able to digest anything that enters their stomach and use it as nourishment. For example, whether it's a pebble or mud, once it enters the stomach, it gives the same feeling of fullness as when eating the same amount of average food, and at the same time provides energy for life activities. It takes effect on anything that enters the stomach within the effect period, and your stomach will not feel upset even after the effect period has expired. Also, even if you 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04212))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04212))_
+
+> The caster of this spell will be able to digest anything that enters their stomach and use it as nourishment. For example, whether it's a pebble or mud, once it enters the stomach, it gives the same feeling of fullness as when eating the same amount of average food, and at the same time provides energy for life activities. It takes effect on anything that enters the stomach within the effect period, and your stomach will not feel upset even after the effect period has expired. Also, even if you
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04215))_
 
 > Area=Caster Duration=1 hour Effect=Enables communication with reptiles Type=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04215))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04216))_
 
 > Expansion=Duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04216))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04217))_
 
 > If the opponent's intelligence is high enough, you can negotiate, but if the opponent's intelligence is not sufficient, you can only know about the opponent's emotions and degree of hunger.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04217))_

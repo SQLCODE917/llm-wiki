@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-thief-skill-de989b7a@8af7dd591c41dd887fe8c78c2e73bfec
+projection_coverage: section-sword-world-rpg-complete-edition-section-thief-skill-de989b7a@5b3440b1546a7d17b6135dc71986b127
 ---
 
 # 【 **Thief Skill** 】
@@ -22,11 +22,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: To be good at weapon combat, a character must have skills. The skills that can be used for this purpose are limited to the following three:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00835))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00835))_
+
+> To be good at weapon combat, a character must have skills. The skills that can be used for this purpose are limited to the following three:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00837))_
 
 > Specifically, you can only fight if the weapon or armor you're using requires up to _half (rounded up)_ of your character's strength.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00837))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
 
 | **Tief Skill Abilities Table** |
 | --- |
@@ -76,7 +84,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00837))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08366))_
 
 | Ability | Relevant AbilityScore | Equipment Restrictions | Retryinga success roll on the same target |
 | --- | --- | --- | --- |
@@ -122,4 +133,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08366))_

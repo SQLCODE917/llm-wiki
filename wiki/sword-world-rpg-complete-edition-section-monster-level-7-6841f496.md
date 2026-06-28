@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-7-6841f496@332e7fe925afb8effb2036d3b21d7667
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-7-6841f496@e9525e8a6396930c816c0c90648a75bd
 ---
 
 # Monster Level=7
@@ -40,26 +40,45 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Habitat=Underground labyrinths, secluded ruins
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06622))_
+### Technical atom 1
 
-> Context: A maligdorai’s most frightening ability is _illusion_ . The maligdorai can show illusions to surrounding creatures, dealing damage to their minds (these illusions have no effect on monsters that don't have mental points). When a maligdorai uses this illusion ability, those being targeted must make a mental power resistance roll against target score 17 at the beginning of the round. If the target succeeds, they will escape the effect and can act freely, but if the target fails to resist, they wil
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06625))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06622))_
+
+> Habitat=Underground labyrinths, secluded ruins
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06625))_
+
+> A maligdorai’s most frightening ability is _illusion_ . The maligdorai can show illusions to surrounding creatures, dealing damage to their minds (these illusions have no effect on monsters that don't have mental points). When a maligdorai uses this illusion ability, those being targeted must make a mental power resistance roll against target score 17 at the beginning of the round. If the target succeeds, they will escape the effect and can act freely, but if the target fails to resist, they wil
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06623))_
 
 > Languages=Low ancient Perception=Five senses (Darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06623))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06625))_
 
 > When a maligdorai uses this illusion ability, those being targeted must make a mental power resistance roll against target score 17 at the beginning of the round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06625))_
 
-> Context: A maligdorai can also show illusions to multiple creatures within its vision at the same time, but it must focus in order to perform the illusions. If its focus is interrupted or it’s unable to focus due to making physical attacks, suffering damage, etc., then it cannot maintain its illusions. Illusions cannot be used in the round immediately after suffering damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06628))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06628))_
+
+> A maligdorai can also show illusions to multiple creatures within its vision at the same time, but it must focus in order to perform the illusions. If its focus is interrupted or it’s unable to focus due to making physical attacks, suffering damage, etc., then it cannot maintain its illusions. Illusions cannot be used in the round immediately after suffering damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06629))_
 
 > Conversely, while the maligdorai is performing an illusion, the target must make a resistance roll against the illusion each round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06629))_
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 
 | Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
 | --- | --- | --- | --- | --- | --- |
@@ -75,7 +94,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_
 
 | Level 1-2 | It's no big deal. Just a small problem in a small village |
 | --- | --- |
@@ -101,4 +123,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_

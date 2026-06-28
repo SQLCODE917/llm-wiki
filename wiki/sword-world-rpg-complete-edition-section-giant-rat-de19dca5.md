@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-rat-de19dca5@db7b30e284958604c7a23c08cdc899fd
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-rat-de19dca5@b80b0b830cfe07e973ab7bfc122d16b6
 ---
 
 # **[ Giant Rat ]**
@@ -27,20 +27,36 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05666))_
+
 > Monster Level=1
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05666))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05667))_
 
 > Rarity=6 Agility=18 Movement Speed=20 Number=Several to around ten
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05667))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05668))_
 
 > Frequency=Moderate Intellect=Animal Reaction=Neutral Attack Points=Fangs:8 (1)/Claw:9 (2)/Claw:9
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05668))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05671))_
 
 > Even on the rare occasion that they do attack you, they will quickly run away if you wound them, and you can easily drive them away with fire.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05671))_
 
-> Context: and dexterous, and thus can stand on their hind legs and use simple tools. They are omnivorous, and usually live in groups. They are timid by nature and will not attack unless you seriously provoke them or invade their burrow without them knowing. Even on the rare occasion that they do attack you, they will quickly run away if you wound them, and you can easily drive them away with fire.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05671))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05671))_
+
+> and dexterous, and thus can stand on their hind legs and use simple tools. They are omnivorous, and usually live in groups. They are timid by nature and will not attack unless you seriously provoke them or invade their burrow without them knowing. Even on the rare occasion that they do attack you, they will quickly run away if you wound them, and you can easily drive them away with fire.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05672))_
 
 > You must roll 2D again.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05672))_

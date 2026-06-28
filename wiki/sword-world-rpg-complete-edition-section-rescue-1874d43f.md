@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rescue-1874d43f@dce5dc7161ee9ad9d45cb526afd4a2ce
+projection_coverage: section-sword-world-rpg-complete-edition-section-rescue-1874d43f@536fd6385026eaea7b47475d676153c9
 ---
 
 # **[ Rescue ]**
@@ -34,17 +34,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03060))_
+
 > Base Mental Power Cost=50 Distance=Touch Area=One Duration=Until reincarnated Effect=Reincarnate a soul into a new body Type=Ritual Expansion=Final score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03060))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03061))_
 
 > Base Mental Power Cost=50 Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03061))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03062))_
 
 > Area=Up to 10 people within a 10 meter radius of the caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03062))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03063))_
 
 > Duration=Instant Effect=Help the party escape to a safe place Type=Expansion=Targets as well as area Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03063))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03068))_
 
 > Even before a person regains their personality, if someone who knew them well before reincarnation can identify their body after reincarnation, they can try to restore the person's old memories.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03068))_

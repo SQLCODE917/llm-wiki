@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-no-equipment-restriction-not-retriable-c42b8b35@ebba8d706f51707cbd81c174a52cc45c
+projection_coverage: section-sword-world-rpg-complete-edition-section-no-equipment-restriction-not-retriable-c42b8b35@c6b38a48af6e2d683e45284e702d7c77
 ---
 
 # **(No equipment restriction, not retriable)**
@@ -23,8 +23,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Each time a character performs such an action, the game master must set a target score and ask for a success roll check.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03312))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03312))_
+
+> Each time a character performs such an action, the game master must set a target score and ask for a success roll check.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03315))_
 
 > For example, even if a book is written in a language you don't know, by using this ability you can memorize the shape of each letter exactly as it is, even if you don't know the meaning, and can write it down later.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03315))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-cure-wounds-f1a1d09d@bf3a3b3a3e4c017d32c1f11765ac6f3e
+projection_coverage: section-sword-world-rpg-complete-edition-section-cure-wounds-f1a1d09d@c7e9068445079e308aef32848f824b49
 ---
 
 # **[ Cure Wounds ]**
@@ -29,32 +29,56 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The spells listed here are available to characters with the priest (dark priest) skill without exception.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02845))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02845))_
+
+> The spells listed here are available to characters with the priest (dark priest) skill without exception.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02848))_
 
 > Base Mental Power Cost=5 Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02848))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02849))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02849))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02850))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02850))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02851))_
 
 > Effect=Restore recovery power 10 life force (points)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02851))_
 
-> Context: This spell has the effect of instantly healing any wound. Use the key number 10 column on the Rating Table to determine the base life force (points) to be recovered, same way as for attack rolls and defense rolls. The caster can add their own magic power to this result. When using the _Rating Table_ , the _critical_ process is _not_ performed. Only _one_ check needs to be made.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02854))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02854))_
+
+> This spell has the effect of instantly healing any wound. Use the key number 10 column on the Rating Table to determine the base life force (points) to be recovered, same way as for attack rolls and defense rolls. The caster can add their own magic power to this result. When using the _Rating Table_ , the _critical_ process is _not_ performed. Only _one_ check needs to be made.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02853))_
 
 > Expansion=Distance, targets, effect (damage) certainty Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02853))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02854))_
 
 > The caster can add their own magic power to this result.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02854))_
 
-> Context: This spell has the effect of instantly healing any wound. Use the key number 10 column on the Rating Table to determine the base life force (points) to be recovered, same way as for attack rolls and defense rolls. The caster can add their own magic power to this result. When using the _Rating Table_ , the _critical_ process is _not_ performed. Only _one_ check needs to be made.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02854))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02854))_
+
+> This spell has the effect of instantly healing any wound. Use the key number 10 column on the Rating Table to determine the base life force (points) to be recovered, same way as for attack rolls and defense rolls. The caster can add their own magic power to this result. When using the _Rating Table_ , the _critical_ process is _not_ performed. Only _one_ check needs to be made.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02855))_
 
 > If you use it on undead, and the undead fail to resist, it deals strike power 10 damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02855))_

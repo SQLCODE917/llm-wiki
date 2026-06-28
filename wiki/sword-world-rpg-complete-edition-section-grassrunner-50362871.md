@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-grassrunner-50362871@10a264a71412b53c94e93f67befd24b5
+projection_coverage: section-sword-world-rpg-complete-edition-section-grassrunner-50362871@b761ecc4901ef02e8e945727cf30ea3a
 ---
 
 # 【 **Grassrunner** 】
@@ -27,5 +27,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00316))_
+
 > If they were raised by elves, there is a restriction that they cannot acquire the priest skill.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00316))_

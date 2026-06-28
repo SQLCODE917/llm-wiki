@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-2-fae-9febdff0@4e01cd2151744f2ae67b82fb0b60257c
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-2-fae-9febdff0@54d729bc285454213c5faf0a439e753e
 ---
 
 # 13.2.2 Fae
@@ -79,74 +79,134 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04955))_
+
 > Habitat=Forests, meadows Languages=Fairy, silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04955))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04956))_
 
 > They can use this ability without any restrictions, and they do not consume mental points by using this ability.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04956))_
 
-> Context: Pixies look similar to elves, but are only about 30 cm tall. They have wings on their backs reminiscent of insects. Most of them have the appearance of women, but there are also individuals that have the appearance of men. Also, for some reason, they seem to be wearing something that looks like clothes. Although they are relatively friendly towards humans, they do not actively interact with humans and rarely appear in public. Moreover, they seem to have a very close relationship with the small s
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04956))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04956))_
+
+> Pixies look similar to elves, but are only about 30 cm tall. They have wings on their backs reminiscent of insects. Most of them have the appearance of women, but there are also individuals that have the appearance of men. Also, for some reason, they seem to be wearing something that looks like clothes. Although they are relatively friendly towards humans, they do not actively interact with humans and rarely appear in public. Moreover, they seem to have a very close relationship with the small s
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04958))_
 
 > Combat is unlikely to occur, but when it does, pixies can use up to 2nd level spirit magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04958))_
 
-> Context: Combat is unlikely to occur, but when it does, pixies can use up to 2nd level spirit magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04958))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04958))_
+
+> Combat is unlikely to occur, but when it does, pixies can use up to 2nd level spirit magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04960))_
 
 > Monster Level=1
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04960))_
 
-> Context: Fairies are sometimes seen where these two worlds meet. Just as humans wander into the fairy world, there are also fairies who wander from the fairy world into the material world. Fairies take the form of beautiful elf women, often mostly naked or clad in thin silk garments. They are about the same height as elves, but the most prominent difference between them and elves is the beautiful wings that grow from their backs. These wings are very thin but strong, allowing them to fly, albeit at a slo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04963))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04963))_
+
+> Fairies are sometimes seen where these two worlds meet. Just as humans wander into the fairy world, there are also fairies who wander from the fairy world into the material world. Fairies take the form of beautiful elf women, often mostly naked or clad in thin silk garments. They are about the same height as elves, but the most prominent difference between them and elves is the beautiful wings that grow from their backs. These wings are very thin but strong, allowing them to fly, albeit at a slo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04966))_
 
 > Habitat=Forests Languages=Fairy, silent spirit, regional Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04966))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04967))_
 
 > While transformed, they can use all of the animal's physical abilities and can also speak.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04967))_
 
-> Context: and the lower body of fish. Female mermen are called mermaids. They have an extreme fear and hatred of humans and will never try to negotiate with them. This is because over a hundred years ago, a rumor spread that _eating merman flesh will give long life_ , so humans fought and overhunted mermen. Since then, mermen have lived at the bottom of the deep sea, avoiding humans, and their social system and customs are shrouded in mystery.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04975))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04975))_
+
+> and the lower body of fish. Female mermen are called mermaids. They have an extreme fear and hatred of humans and will never try to negotiate with them. This is because over a hundred years ago, a rumor spread that _eating merman flesh will give long life_ , so humans fought and overhunted mermen. Since then, mermen have lived at the bottom of the deep sea, avoiding humans, and their social system and customs are shrouded in mystery.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04974))_
 
 > They cannot wear heavy armor, only soft leather at most.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04974))_
 
-> Context: They use a trident as a weapon.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04977))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04977))_
+
+> They use a trident as a weapon.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04980))_
 
 > Rarity=18
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04980))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04984))_
 
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04984))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04985))_
 
 > Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04985))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04987))_
 
 > Languages=Merman Perception=Five senses (illumination)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04987))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04992))_
 
 > Rarity=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04992))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04993))_
 
 > Agility=16 Movement Speed=3/20 (water) Number=Several to dozens
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04993))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04994))_
 
 > Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Weapon: 9 (2) Strike Points=5 Evasion Points=10 (3) Defense Points=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04994))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04995))_
 
 > Life Points/Resistance=14/10 (3) Mental Points/Resistance=16/10 (3) Special Abilities=Water adaptation Habitat=Seas
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04995))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04996))_
 
 > Languages=Merman Perception=Five senses (illumination)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04996))_
 
-> Context: Merman tribes select girls with outstanding intelligence and mental power and train them as shamans from an early age. The result is a mermaid shaman. Mermaid shamans can use spirit magic up to 4th level, which is powered by water spirits (undine). There is one mermaid shaman per combat group, and her role is to assist the merman leader. Also, if the merman leader is defeated, she will take command of the battle in his place. A combat group whose leader and shaman
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04999))_
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04999))_
+
+> Merman tribes select girls with outstanding intelligence and mental power and train them as shamans from an early age. The result is a mermaid shaman. Mermaid shamans can use spirit magic up to 4th level, which is powered by water spirits (undine). There is one mermaid shaman per combat group, and her role is to assist the merman leader. Also, if the merman leader is defeated, she will take command of the battle in his place. A combat group whose leader and shaman
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04998))_
 
 > Habitat=Seas Languages=Merman, silent spirit Perception=Five senses (infravision, illumination)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04998))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04999))_
 
 > Mermaid shamans can use spirit magic up to 4th level, which is powered by water spirits (undine).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04999))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-missile-protection-sylph-wind-spirit-8c74390f@effd034515a5685f8feddb4604963f36
+projection_coverage: section-sword-world-rpg-complete-edition-section-missile-protection-sylph-wind-spirit-8c74390f@f7e8e14c048c3c2a734d7bfc6bf7bd5c
 ---
 
 # **[ Missile Protection ] (Sylph/Wind Spirit)**
@@ -24,23 +24,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Base Mental Power Cost=20 Distance=20 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02549))_
+### Technical atom 1
 
-> Context: This spell specifies a point in space and affects the space within a 5 meter radius from it. Its effect is to protect those within range from projectile attacks. However, projectiles with a strike power that _exceeds_ 30 are beyond the limits of sylph's abilities, and therefore _cannot_ be the target of the effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02552))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02549))_
+
+> Base Mental Power Cost=20 Distance=20 meters
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02552))_
+
+> This spell specifies a point in space and affects the space within a 5 meter radius from it. Its effect is to protect those within range from projectile attacks. However, projectiles with a strike power that _exceeds_ 30 are beyond the limits of sylph's abilities, and therefore _cannot_ be the target of the effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02550))_
 
 > Area=A space with a 5 meter radius Duration=18 rounds Effect=Protect yourself from projectile attacks
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02550))_
 
-> Context: This spell specifies a point in space and affects the space within a 5 meter radius from it. Its effect is to protect those within range from projectile attacks. However, projectiles with a strike power that _exceeds_ 30 are beyond the limits of sylph's abilities, and therefore _cannot_ be the target of the effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02552))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02552))_
+
+> This spell specifies a point in space and affects the space within a 5 meter radius from it. Its effect is to protect those within range from projectile attacks. However, projectiles with a strike power that _exceeds_ 30 are beyond the limits of sylph's abilities, and therefore _cannot_ be the target of the effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02551))_
 
 > Type=Countered (Negated) By: _Shoot Arrow_ Expansion=Duration, distance, area Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02551))_
 
-> Context: This spell specifies a point in space and affects the space within a 5 meter radius from it. Its effect is to protect those within range from projectile attacks. However, projectiles with a strike power that _exceeds_ 30 are beyond the limits of sylph's abilities, and therefore _cannot_ be the target of the effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02552))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02552))_
+
+> This spell specifies a point in space and affects the space within a 5 meter radius from it. Its effect is to protect those within range from projectile attacks. However, projectiles with a strike power that _exceeds_ 30 are beyond the limits of sylph's abilities, and therefore _cannot_ be the target of the effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02553))_
 
 > The spell's power does not have to affect targets that the caster does not desire, even if they are within the area of effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02553))_

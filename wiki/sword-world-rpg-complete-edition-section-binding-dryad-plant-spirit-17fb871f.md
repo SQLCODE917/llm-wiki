@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-binding-dryad-plant-spirit-17fb871f@17d7e87df2a17989cd036234b79fc5fe
+projection_coverage: section-sword-world-rpg-complete-edition-section-binding-dryad-plant-spirit-17fb871f@1fe821bf47788aeceea15a40ee0b316b
 ---
 
 # **[ Binding ] (Dryad/Plant Spirit)**
@@ -25,17 +25,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02433))_
+
 > Base Mental Power Cost=12 Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02433))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02434))_
 
 > Area=One Duration=18 rounds Effect=Seal the target's movement Type=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02434))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02435))_
 
 > Expansion=Final score, duration, distance, targets
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02435))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02436))_
 
 > Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02436))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02437))_
 
 > Also, even if you're caught by this spell once, you can attempt to escape each round by making a success roll using _adventurer level + strength bonus_ as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02437))_

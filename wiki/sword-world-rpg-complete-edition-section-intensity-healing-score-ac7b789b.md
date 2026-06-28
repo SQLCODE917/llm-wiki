@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-intensity-healing-score-ac7b789b@114c83f0a1d37d06da16d16fa574ae34
+projection_coverage: section-sword-world-rpg-complete-edition-section-intensity-healing-score-ac7b789b@137ea895933cd64679d5b1a864b2c974
 ---
 
 # **Intensity/ Healing Score** 》
@@ -44,23 +44,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> If the roll is less than the **progression intensity** , the disease gets worse and the _depth_ increases by 1.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04655))_
+### Technical atom 1
 
-> Context: After a certain period of time has elapsed after becoming ill, the illness either progresses further or gets better. The degree of progression of an illness is indicated by a score called **depth** . Immediately after contracting an illness, the _depth_ is 1. After the time indicated by **progression speed** has elapsed since you contracted the illness, roll two dice and look at the result. If the roll is less than the **progression intensity** , the disease gets worse and the _depth_ increases 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04655))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04655))_
+
+> If the roll is less than the **progression intensity** , the disease gets worse and the _depth_ increases by 1.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04655))_
+
+> After a certain period of time has elapsed after becoming ill, the illness either progresses further or gets better. The degree of progression of an illness is indicated by a score called **depth** . Immediately after contracting an illness, the _depth_ is 1. After the time indicated by **progression speed** has elapsed since you contracted the illness, roll two dice and look at the result. If the roll is less than the **progression intensity** , the disease gets worse and the _depth_ increases
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04656))_
 
 > Even if a shaman cannot use the spell _Restore Health_ , they can still work with one type of spirit to alleviate symptoms.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04656))_
 
-> Context: When the holy magic _Cure Disease_ or _Refresh_ , or the spirit magic _Restore Health_ are cast, the caster must make a success roll using their magic power as
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04658))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04658))_
+
+> When the holy magic _Cure Disease_ or _Refresh_ , or the spirit magic _Restore Health_ are cast, the caster must make a success roll using their magic power as
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04659))_
 
 > If you succeed, the _depth_ of the illness is reduced by 1 and you can make an additional success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04659))_
 
-> Context: the baseline score. The target score is double the _healing score_ (added in parentheses). If you succeed, the _depth_ of the illness is reduced by 1 and you can make an additional success roll. You can continue to make this check until you fail or until the illness is completely cured. If this does _not_ completely cure the illness, it’ll be _useless_ to cast these spells on the same patient until the caster's magic power increases.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04659))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04659))_
+
+> the baseline score. The target score is double the _healing score_ (added in parentheses). If you succeed, the _depth_ of the illness is reduced by 1 and you can make an additional success roll. You can continue to make this check until you fail or until the illness is completely cured. If this does _not_ completely cure the illness, it’ll be _useless_ to cast these spells on the same patient until the caster's magic power increases.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04660))_
 
 > immediately after the illness's progression check), and you can only make one success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04660))_

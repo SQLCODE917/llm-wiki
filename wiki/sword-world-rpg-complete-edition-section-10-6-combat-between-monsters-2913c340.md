@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-10-6-combat-between-monsters-2913c340@09049dd6843a858fd843390b6c462c65
+projection_coverage: section-sword-world-rpg-complete-edition-section-10-6-combat-between-monsters-2913c340@1ef1a47fb15629c61ae5ec531277c5be
 ---
 
 # 10.6 Combat Between Monsters
@@ -28,20 +28,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When a monster, etc. attacks a sleeping adventurer, the attack will automatically hit. If the attack does not reduce life to 0, the adventurer wakes up immediately. Therefore, the quickest way to wake up your friends is to kick them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03895))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03895))_
+
+> When a monster, etc. attacks a sleeping adventurer, the attack will automatically hit. If the attack does not reduce life to 0, the adventurer wakes up immediately. Therefore, the quickest way to wake up your friends is to kick them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03894))_
 
 > If you're put to sleep by magical means such as _Sleep Cloud_ , you must make a check via mental power resistance roll each round as long as combat continues.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03894))_
 
-> Context: If you're put to sleep by magical means such as _Sleep Cloud_ , you must make a check via mental power resistance roll each round as long as combat continues.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03894))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03894))_
+
+> If you're put to sleep by magical means such as _Sleep Cloud_ , you must make a check via mental power resistance roll each round as long as combat continues.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03896))_
 
 > Unless the magic itself is broken by _Dispel Magic_ or other magic belonging to _mind_ , they'll never wake up.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03896))_
 
-> Context: Add a 2D roll to the attacking monster's attack points - 7 (marked in brackets). If it’s equal to or greater than the evasion points of the defending monster, it's a hit.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03901))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03901))_
+
+> Add a 2D roll to the attacking monster's attack points - 7 (marked in brackets). If it’s equal to or greater than the evasion points of the defending monster, it's a hit.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03903))_
 
 > If the attack hits, roll 2D.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03903))_

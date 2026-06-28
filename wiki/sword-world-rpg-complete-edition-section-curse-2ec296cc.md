@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-curse-2ec296cc@f8dfe28f19abb0fde97d9a08d0792a26
+projection_coverage: section-sword-world-rpg-complete-edition-section-curse-2ec296cc@04231e568752c0556c5d340fb6c78996
 ---
 
 # **Curse**
@@ -61,8 +61,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: according to the caster's commands, but due to their low intellect, they can only understand simple commands such as _kill anyone who enters this room_ or _dig a hole_ . See p. 215 for zombie details.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04016))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04016))_
+
+> according to the caster's commands, but due to their low intellect, they can only understand simple commands such as _kill anyone who enters this room_ or _dig a hole_ . See p. 215 for zombie details.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04017))_
 
 > If you wish, you can turn non-human animals, fae, youma, titans, mythical beasts, magical beasts, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04017))_

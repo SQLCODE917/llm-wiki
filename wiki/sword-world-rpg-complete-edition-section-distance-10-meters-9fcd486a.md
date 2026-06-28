@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-distance-10-meters-9fcd486a@4b5c36b8384e39604e6c223595033702
+projection_coverage: section-sword-world-rpg-complete-edition-section-distance-10-meters-9fcd486a@c229f19bbac5322772b1217b08effd9c
 ---
 
 # Distance=10 meters
@@ -24,23 +24,40 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02053))_
+
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02053))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02054))_
 
 > Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02054))_
 
-> Context: _Full Potential_ is a spell that enhances the effects of _Physical Enchantment_ and raises potential capabilities of the human body to maximum. The result is the same effect as casting the _Sharpness_ , _Quickness_ and _Strength_ spells of _Physical Enchantment_ all at the same time. In other words, _dexterity_ , _agility_ , and _strength_ all increase by _6_ at the same time. As a result, each ability bonus will be increased by +1, so for the duration, the baseline score of the abilities of eac
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02057))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02057))_
+
+> _Full Potential_ is a spell that enhances the effects of _Physical Enchantment_ and raises potential capabilities of the human body to maximum. The result is the same effect as casting the _Sharpness_ , _Quickness_ and _Strength_ spells of _Physical Enchantment_ all at the same time. In other words, _dexterity_ , _agility_ , and _strength_ all increase by _6_ at the same time. As a result, each ability bonus will be increased by +1, so for the duration, the baseline score of the abilities of eac
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02055))_
 
 > Effect=Increase the three ability scores of dexterity, agility, and strength by 6 Type=Target score, physical ability Expansion=Final score, duration, distance, targets
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02055))_
 
-> Context: _Full Potential_ is a spell that enhances the effects of _Physical Enchantment_ and raises potential capabilities of the human body to maximum. The result is the same effect as casting the _Sharpness_ , _Quickness_ and _Strength_ spells of _Physical Enchantment_ all at the same time. In other words, _dexterity_ , _agility_ , and _strength_ all increase by _6_ at the same time. As a result, each ability bonus will be increased by +1, so for the duration, the baseline score of the abilities of eac
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02057))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02057))_
+
+> _Full Potential_ is a spell that enhances the effects of _Physical Enchantment_ and raises potential capabilities of the human body to maximum. The result is the same effect as casting the _Sharpness_ , _Quickness_ and _Strength_ spells of _Physical Enchantment_ all at the same time. In other words, _dexterity_ , _agility_ , and _strength_ all increase by _6_ at the same time. As a result, each ability bonus will be increased by +1, so for the duration, the baseline score of the abilities of eac
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02056))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02056))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02057))_
 
 > If you use it in combat, attack power, evasion speed, and bonus damage will all increase, so action order and movement speed will also increase.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02057))_

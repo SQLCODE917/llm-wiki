@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-distance-17615566@5b1f5eaf3c14febcec9332bb1209f009
+projection_coverage: section-sword-world-rpg-complete-edition-section-distance-17615566@68319edea8810e23cf83e701493bb610
 ---
 
 # 《 **Distance** 》
@@ -25,8 +25,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The base mental power cost represents how much mental power is consumed when using that magic. As previously explained, this base mental power cost divided by the corresponding rune master skill level equals the actual mental power consumed by the caster.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01519))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01519))_
+
+> The base mental power cost represents how much mental power is consumed when using that magic. As previously explained, this base mental power cost divided by the corresponding rune master skill level equals the actual mental power consumed by the caster.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01521))_
 
 > If the distance is **touch** , the caster must touch the target with their hand or (for ancient magic) with their magical catalyst (see below).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01521))_

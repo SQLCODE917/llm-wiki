@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-poison-toad-e1c88fb0@ac9da989ee6f019239408345b9f3f003
+projection_coverage: section-sword-world-rpg-complete-edition-section-poison-toad-e1c88fb0@6d32859efe429f721c802f7bf03c00db
 ---
 
 # **Poison Toad**
@@ -23,8 +23,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is a toad about 50 cm long. Since they feed on fish and insects, they rarely attack humans, but if they’re attacked or startled, they’ll try to protect themselves by spewing venom from the secretory glands in their heads.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05835))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05835))_
+
+> This is a toad about 50 cm long. Since they feed on fish and insects, they rarely attack humans, but if they’re attacked or startled, they’ll try to protect themselves by spewing venom from the secretory glands in their heads.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05836))_
 
 > Anyone within 3 meters of a poison toad when it spews its venom must succeed on a life force resistance roll against target score 9.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05836))_

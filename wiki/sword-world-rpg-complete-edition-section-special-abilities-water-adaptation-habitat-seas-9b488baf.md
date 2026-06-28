@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-special-abilities-water-adaptation-habitat-seas-9b488baf@952737f76ccda700825606a97e734b4d
+projection_coverage: section-sword-world-rpg-complete-edition-section-special-abilities-water-adaptation-habitat-seas-9b488baf@554d879c2c8dba2a5eb2b7382007d358
 ---
 
 # Special Abilities=Water adaptation Habitat=Seas
@@ -24,5 +24,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05736))_
+
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05736))_

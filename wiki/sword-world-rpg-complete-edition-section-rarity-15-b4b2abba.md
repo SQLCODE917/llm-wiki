@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-15-b4b2abba@4b6299d0e344c31496b40ba01aa88ca1
+projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-15-b4b2abba@c04c3c7eb783713219f313397d3707ca
 ---
 
 # Rarity=15
@@ -30,29 +30,52 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05435))_
+
 > Agility=18 Movement Speed=18 (air) Frequency=Very Rare Number=One Intellect=Human Reaction=Adversarial Attack Points=Tentacles (strangle) x 4:12 (5)/Fangs:12 (5) Strike Points=8 x 4/10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05435))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05436))_
 
 > Evasion Points=15 (8) Defense Points=7 Life Points/Resistance=18 (14/7) Mental Points/Resistance=15 (13/6) Special Abilities=5th level dark magic (Magic Intensity/Magic Power=14/7) rarely
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05436))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05438))_
 
 > Habitat=Underground labyrinths, ruins Languages=Low ancient
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05438))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05439))_
 
 > Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05439))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05441))_
 
 > A head displacer itself has the ability to speak low ancient, but cannot use any of its host's (?) skills.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05441))_
 
-> Context: The head displacer looks like a severed human head with four vermillion tentacles growing out of its neck. When it remains alone, it moves by floating in the air. When it finds prey (humans), it'll first attack with its tentacles. The tentacles are usually about 15 cm long, but can extend up to 4 meters. If a tentacle attack hits, resolve it as strangling (see p. 236). If all 4 tentacles entangle its opponent, it'll also attack with its fangs. If the opponent becomes disabled, it'll devour their
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05441))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05441))_
+
+> The head displacer looks like a severed human head with four vermillion tentacles growing out of its neck. When it remains alone, it moves by floating in the air. When it finds prey (humans), it'll first attack with its tentacles. The tentacles are usually about 15 cm long, but can extend up to 4 meters. If a tentacle attack hits, resolve it as strangling (see p. 236). If all 4 tentacles entangle its opponent, it'll also attack with its fangs. If the opponent becomes disabled, it'll devour their
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05443))_
 
 > If the tentacles are not clear, those with the sage skill cannot use the _monster check_ ability.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05443))_
 
-> Context: If a character is in danger of a surprise attack by a head displacer, a character with the ranger skill may be able to notice it due to their _sense danger_ ability. Make a success roll against target score 15 using _ranger skill level + intelligence bonus_ as the baseline score, and if you succeed, you’ll be able to sense it, but if you fail, you’ll be hit by the surprise attack. If the tentacles are not clear, those with the sage skill cannot use the _monster check_ ability.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05443))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05443))_
+
+> If a character is in danger of a surprise attack by a head displacer, a character with the ranger skill may be able to notice it due to their _sense danger_ ability. Make a success roll against target score 15 using _ranger skill level + intelligence bonus_ as the baseline score, and if you succeed, you’ll be able to sense it, but if you fail, you’ll be hit by the surprise attack. If the tentacles are not clear, those with the sage skill cannot use the _monster check_ ability.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05445))_
 
 > A head displacer may use dark magic on very rare occasions.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05445))_

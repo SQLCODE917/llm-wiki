@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dark-elf-118d9f3d@c3a2d3e502a7560af3f6a6680ac4819c
+projection_coverage: section-sword-world-rpg-complete-edition-section-dark-elf-118d9f3d@d7e40ac93b59b6c99644b198429aede6
 ---
 
 # **[ Dark Elf ]**
@@ -29,14 +29,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Marshmen, also known as water imps, are youma that live in swamps. Their bodies are covered with green skin, and their backs are hard and shellshaped. They have high intelligence comparable to humans, and also have a rudimentary social life. They are exclusionary toward other races and react aggressively to anything that enters their habitat. They seem to have a deep connection with water spirits, and use undine-type spirit magic up to 4th level.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05057))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05057))_
+
+> Marshmen, also known as water imps, are youma that live in swamps. Their bodies are covered with green skin, and their backs are hard and shellshaped. They have high intelligence comparable to humans, and also have a rudimentary social life. They are exclusionary toward other races and react aggressively to anything that enters their habitat. They seem to have a deep connection with water spirits, and use undine-type spirit magic up to 4th level.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05060))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05060))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05061))_
 
 > Rarity=11 Agility=19 Movement Speed=19 Number=One to several Frequency=Rare Intellect=High Reaction=Adversarial Attack Points=Weapon: 9 (2) Strike Points=6+poison
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05061))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05062))_
 
 > Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=10/10 (3) Mental Points/Resistance=17/15 (8) Special Abilities=3rd level spirit magic (Magic Intensity/Magic Power=13/6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05062))_

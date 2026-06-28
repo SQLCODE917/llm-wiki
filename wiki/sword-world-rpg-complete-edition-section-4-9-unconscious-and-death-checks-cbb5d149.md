@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-cbb5d149@dd9b6991f17d7be2f9df46dc9959351e
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-cbb5d149@635cedcca9245db5adc39afe56361629
 ---
 
 # 4.9 Unconscious and Death Checks
@@ -55,35 +55,60 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> After damage is applied, a character (monster) can still act if they have at least _1_ life force (point) remaining.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01075))_
+### Technical atom 1
 
-> Context: 5 (life force resistance) + 7 (roll) - 4 (penalty) = **8** , which is greater or equal than 7. Ducard II survives. If the result of this death check had been 6 or lower, Ducard II would have met an _untimely end_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01081))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01075))_
+
+> After damage is applied, a character (monster) can still act if they have at least _1_ life force (point) remaining.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01081))_
+
+> 5 (life force resistance) + 7 (roll) - 4 (penalty) = **8** , which is greater or equal than 7. Ducard II survives. If the result of this death check had been 6 or lower, Ducard II would have met an _untimely end_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01080))_
 
 > Ducard II, with a life force of _-4_ , must make a **death check** .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01080))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01088))_
 
 > You must roll the dice to determine if your character survives.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01088))_
 
-> Context: This check is made using a _life force resistance roll_ . The baseline score is _life force resistance (adventurer level + life force bonus)_ and the target score is _7_ . If the character's life force is _negative_ , the negative amount will be used as a _penalty_ . If the result is _double sixes_ (automatic success), the character will regain consciousness on their own. At this time, their life force becomes _1_ point.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01089, source-range-870a16bc-01092))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01089, source-range-870a16bc-01092))_
+
+> This check is made using a _life force resistance roll_ . The baseline score is _life force resistance (adventurer level + life force bonus)_ and the target score is _7_ . If the character's life force is _negative_ , the negative amount will be used as a _penalty_ . If the result is _double sixes_ (automatic success), the character will regain consciousness on their own. At this time, their life force becomes _1_ point.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01090))_
 
 > Characters with 0 or negative life force must make a death check every _hour_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01090))_
 
-> Context: This check is made using a _life force resistance roll_ . The baseline score is _life force resistance (adventurer level + life force bonus)_ and the target score is _7_ . If the character's life force is _negative_ , the negative amount will be used as a _penalty_ . If the result is _double sixes_ (automatic success), the character will regain consciousness on their own. At this time, their life force becomes _1_ point.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01089, source-range-870a16bc-01092))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01089, source-range-870a16bc-01092))_
+
+> This check is made using a _life force resistance roll_ . The baseline score is _life force resistance (adventurer level + life force bonus)_ and the target score is _7_ . If the character's life force is _negative_ , the negative amount will be used as a _penalty_ . If the result is _double sixes_ (automatic success), the character will regain consciousness on their own. At this time, their life force becomes _1_ point.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01091))_
 
 > life force resistance + 2D - (damage applied beyond life force) ≥ 7 → **survival**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01091))_
 
-> Context: If the result is failure, the character will die.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01097))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01097))_
+
+> If the result is failure, the character will die.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01096))_
 
 > In _one hour_ , they must make another death check.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01096))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01100))_
 
 > Monsters with 0 or negative life points must also make a check to see if they live or die.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01100))_

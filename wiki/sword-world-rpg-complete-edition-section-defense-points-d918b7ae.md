@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-defense-points-d918b7ae@5febe46ac9b7c7c8cbea1210aa5f32dc
+projection_coverage: section-sword-world-rpg-complete-edition-section-defense-points-d918b7ae@9efaea1bd01e4df789a5a90af7503fae
 ---
 
 # 《 **Defense Points** 》
@@ -29,14 +29,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This represents the degree to which the monster can evade attacks. In order for a character to hit a monster with an attack, they must succeed on a success roll using these evasion points as the target score and their attack power as the baseline score. If you fail, your character's attack will miss.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04916))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04916))_
+
+> This represents the degree to which the monster can evade attacks. In order for a character to hit a monster with an attack, they must succeed on a success roll using these evasion points as the target score and their attack power as the baseline score. If you fail, your character's attack will miss.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04918))_
 
 > Just as characters can reduce damage through armor, monsters also have thick skin, shells, scales, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04918))_
 
-> Context: Monster level, like adventurer level, prevents all damage, but a monster's defense points _already_ include damage reduction due to monster level. Therefore, _only_ defense points should be applied when reducing damage from weapon attacks. Monster level may _not_ be further subtracted from it.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04921))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04921))_
+
+> Monster level, like adventurer level, prevents all damage, but a monster's defense points _already_ include damage reduction due to monster level. Therefore, _only_ defense points should be applied when reducing damage from weapon attacks. Monster level may _not_ be further subtracted from it.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04920))_
 
 > When struck by magic or similar attacks, defense points cannot reduce damage, monster level reduces damage instead.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04920))_

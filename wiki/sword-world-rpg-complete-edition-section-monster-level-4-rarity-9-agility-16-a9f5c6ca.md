@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-4-rarity-9-agility-16-a9f5c6ca@999daf17d1ff65860cd71ba10e05ce5c
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-4-rarity-9-agility-16-a9f5c6ca@ddc6819a47f10b45f99ccc52e53be860
 ---
 
 # Monster Level=4 Rarity=9 Agility=16
@@ -36,8 +36,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: and the lower body of fish. Female mermen are called mermaids. They have an extreme fear and hatred of humans and will never try to negotiate with them. This is because over a hundred years ago, a rumor spread that _eating merman flesh will give long life_ , so humans fought and overhunted mermen. Since then, mermen have lived at the bottom of the deep sea, avoiding humans, and their social system and customs are shrouded in mystery.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04975))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04975))_
+
+> and the lower body of fish. Female mermen are called mermaids. They have an extreme fear and hatred of humans and will never try to negotiate with them. This is because over a hundred years ago, a rumor spread that _eating merman flesh will give long life_ , so humans fought and overhunted mermen. Since then, mermen have lived at the bottom of the deep sea, avoiding humans, and their social system and customs are shrouded in mystery.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04974))_
 
 > They cannot wear heavy armor, only soft leather at most.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04974))_

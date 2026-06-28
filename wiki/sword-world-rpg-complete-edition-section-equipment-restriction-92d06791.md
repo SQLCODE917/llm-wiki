@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-92d06791@1b1b91a2dfdd3072866161d6b60f3ce4
+projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-92d06791@d6ebb0831d3c509e35375f3bdcd55f12
 ---
 
 # **(Equipment restriction)**
@@ -30,8 +30,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Even thieves have combat abilities and can fight using their thief skill level. However, the way a thief fights is quite different from that of a fighter. For more information, please refer to _Chapter 4: Weapon Combat_ . The major difference (other than equipment restrictions) is the critical target. While a fighter fights in a linear style, trying to crush the enemy head-on, a thief tries to focus on the opponent's vital points and
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03345))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03345))_
+
+> Even thieves have combat abilities and can fight using their thief skill level. However, the way a thief fights is quite different from that of a fighter. For more information, please refer to _Chapter 4: Weapon Combat_ . The major difference (other than equipment restrictions) is the critical target. While a fighter fights in a linear style, trying to crush the enemy head-on, a thief tries to focus on the opponent's vital points and
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
 
 > If one adventurer has acquired both the thief skill _and_ the fighter skill, the player must _choose_ which skill to fight with.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_

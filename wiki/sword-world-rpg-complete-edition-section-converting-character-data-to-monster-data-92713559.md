@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-converting-character-data-to-monster-data-92713559@35187ebf190efdd38f80a5e388d6fbcd
+projection_coverage: section-sword-world-rpg-complete-edition-section-converting-character-data-to-monster-data-92713559@661fa95b33b62923b2e7b1060493cba5
 ---
 
 # **Converting Character Data to Monster Data**
@@ -20,6 +20,10 @@ From [[sword-world-rpg-complete-edition]].
 - There are two advantages to doing this. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06728))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06741))_
 
 | Critical Target 9 | 0-1 | 2-5 | 6-9 | 10-13 | 14-18 | 19-22 | 23-26 | 27-31 | 32-35 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -43,4 +47,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06741))_

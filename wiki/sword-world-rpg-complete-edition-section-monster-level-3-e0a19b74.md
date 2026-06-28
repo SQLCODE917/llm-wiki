@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-3-e0a19b74@0f9b35603745da12037a7cfdf945b28d
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-3-e0a19b74@033f7284e0be1abe209ce33967cd057c
 ---
 
 # Monster Level=3
@@ -35,38 +35,65 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: They always carry a flute and can manipulate human emotions with their melodies. Humans who hear the satyr's flute may suddenly become frightened and run away, get excited and start dancing, or become lewd and start taking off their clothes. To resist this, you must succeed on a mental power resistance roll against target score 10.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05309))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05309))_
+
+> They always carry a flute and can manipulate human emotions with their melodies. Humans who hear the satyr's flute may suddenly become frightened and run away, get excited and start dancing, or become lewd and start taking off their clothes. To resist this, you must succeed on a mental power resistance roll against target score 10.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05312))_
 
 > Rarity=14 Agility=12 Movement Speed=6 Frequency=Rare Number=One Intellect=Low Reaction=Adversarial Attack Points=Right arm:11 (4)/Left arm:10 (3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05312))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05313))_
 
 > Strike Points=Special/5 Evasion Points=10 (3) Defense Points=5 Life Points/Resistance=14 /11(4) Mental Points/Resistance=11/10(3) Special Abilities=Surprise attack (Sense target score=12)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05313))_
 
-> Context: Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body out from the ceiling in an instant to attack, so it has a high potential for surprise attacks. Rangers have a chance to notice this surprise attack with their _sense danger_ ability. To do so, you must succeed on a success toll against target score 12 using _ranger skill level + intelligence bonus_ as the baseline score. Failure will
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
+
+> Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body out from the ceiling in an instant to attack, so it has a high potential for surprise attacks. Rangers have a chance to notice this surprise attack with their _sense danger_ ability. To do so, you must succeed on a success toll against target score 12 using _ranger skill level + intelligence bonus_ as the baseline score. Failure will
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05315))_
 
 > Sleepless Habitat=Underground labyrinths Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05315))_
 
-> Context: Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body out from the ceiling in an instant to attack, so it has a high potential for surprise attacks. Rangers have a chance to notice this surprise attack with their _sense danger_ ability. To do so, you must succeed on a success toll against target score 12 using _ranger skill level + intelligence bonus_ as the baseline score. Failure will
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
+
+> Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body out from the ceiling in an instant to attack, so it has a high potential for surprise attacks. Rangers have a chance to notice this surprise attack with their _sense danger_ ability. To do so, you must succeed on a success toll against target score 12 using _ranger skill level + intelligence bonus_ as the baseline score. Failure will
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05316))_
 
 > By sticking with this lower body, a ceiling hanger can also move along walls and ceilings.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05316))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
 
 > Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
 
-> Context: Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body out from the ceiling in an instant to attack, so it has a high potential for surprise attacks. Rangers have a chance to notice this surprise attack with their _sense danger_ ability. To do so, you must succeed on a success toll against target score 12 using _ranger skill level + intelligence bonus_ as the baseline score. Failure will
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05317))_
+
+> Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body out from the ceiling in an instant to attack, so it has a high potential for surprise attacks. Rangers have a chance to notice this surprise attack with their _sense danger_ ability. To do so, you must succeed on a success toll against target score 12 using _ranger skill level + intelligence bonus_ as the baseline score. Failure will
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05320))_
 
 > From then on, in each round, a death check must be made when applying damage (even if it's 0).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05320))_
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 
 | Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
 | --- | --- | --- | --- | --- | --- |
@@ -82,7 +109,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_
 
 | Level 1-2 | It's no big deal. Just a small problem in a small village |
 | --- | --- |
@@ -108,4 +138,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_

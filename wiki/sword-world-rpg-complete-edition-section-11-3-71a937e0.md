@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-11-3-71a937e0@e64a34bfe11353d980962e6de229800e
+projection_coverage: section-sword-world-rpg-complete-edition-section-11-3-71a937e0@a5ed6e1a9ca89a7a8e12a878fe56a763
 ---
 
 # **11.3**
@@ -28,8 +28,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04182))_
+
 > If your consciousness is clear, you can receive the effects of a spell _just by remembering it in your mind_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04182))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -63,4 +70,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04182))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

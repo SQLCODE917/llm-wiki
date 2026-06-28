@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fire-giant-ca1ca9d2@93ce0389319e34d5c91877343a1bb488
+projection_coverage: section-sword-world-rpg-complete-edition-section-fire-giant-ca1ca9d2@b4f3699c0527ed837871b2c68be8a233
 ---
 
 # **Fire Giant**
@@ -26,14 +26,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05283))_
+
 > Monster Level=11 Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05283))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05284))_
 
 > Agility=9 Movement Speed=20 Number=One to several Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Arm:19 (12) Strike Points=21
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05284))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05285))_
 
 > Evasion Points=16 (9) Defense Points=15 Life Points/Resistance=45/24 (17) Mental Points/Resistance=15/19 (12) Special Abilities=7th level spirit magic (Magic Intensity/Magic Power=16/9, fire spirits only)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05285))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05287))_
 
 > Habitat=Mountains near human villages, hills Languages=Giant, silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05287))_

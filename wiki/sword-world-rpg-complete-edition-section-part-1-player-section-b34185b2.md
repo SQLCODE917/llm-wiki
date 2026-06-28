@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-part-1-player-section-b34185b2@90e5d3cd0401c4cc1588486f43cd9966
+projection_coverage: section-sword-world-rpg-complete-edition-section-part-1-player-section-b34185b2@6ed67b4e2e66ffa44e99294362ed9f17
 ---
 
 # **Part 1 Player Section**
@@ -20,5 +20,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00087))_
+
 > It introduces the minimum rules you should remember when playing _Sword World RPG_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00087))_

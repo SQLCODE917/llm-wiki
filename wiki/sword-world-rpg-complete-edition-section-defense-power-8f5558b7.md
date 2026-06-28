@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-defense-power-8f5558b7@2ec0d446a2e67709df53198217f50cf9
+projection_coverage: section-sword-world-rpg-complete-edition-section-defense-power-8f5558b7@cd1785cdd81a7823d5875c05ffb4ca71
 ---
 
 # 【 **Defense Power** 】
@@ -23,8 +23,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00889))_
+
 > If by a stroke of bad luck, an opponent’s attack hits, a character can still reduce the damage by means of armor.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00889))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_
 
 > **defense power** = required strength of armor
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_

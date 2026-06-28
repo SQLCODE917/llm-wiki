@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-kaleidoscope-injected-or-dose-2f8ceef3@b935622a1a4cbcd1c24e85a0d4c4de34
+projection_coverage: section-sword-world-rpg-complete-edition-section-kaleidoscope-injected-or-dose-2f8ceef3@d7fae7da43e88a13eaad74661e4c0d9a
 ---
 
 # **[Kaleidoscope (Injected or Dose)]**
@@ -23,8 +23,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04567))_
+
 > Effect=Causes illusions
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04567))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04568))_
 
 > Toxicity Score=11 Rarity=14 Effect Start Time=1 round later Effect Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04568))_

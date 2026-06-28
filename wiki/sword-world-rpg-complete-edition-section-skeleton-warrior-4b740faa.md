@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-skeleton-warrior-4b740faa@d2742bc798471a46eb004cc907dcb04f
+projection_coverage: section-sword-world-rpg-complete-edition-section-skeleton-warrior-4b740faa@47f08c82e1a5f6b69fe06e88bd37bc2f
 ---
 
 # **Skeleton Warrior**
@@ -16,5 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06391))_
+
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06391))_

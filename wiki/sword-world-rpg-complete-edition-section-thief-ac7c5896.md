@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-thief-ac7c5896@72f02fbb3d17e527f2150e20042af220
+projection_coverage: section-sword-world-rpg-complete-edition-section-thief-ac7c5896@c79eca8a80e9d51d45eb30d966cf06b2
 ---
 
 # **[ Thief ]**
@@ -21,11 +21,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: There are no restrictions. The basic idea is to choose weapons and armor whose required strength is the same as your own strength. Weapons and armor that have a required strength less than your own strength will make your character's attack and defense incomplete, and weapons and armor with a required strength greater than your own strength cannot be handled.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00459))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00459))_
+
+> There are no restrictions. The basic idea is to choose weapons and armor whose required strength is the same as your own strength. Weapons and armor that have a required strength less than your own strength will make your character's attack and defense incomplete, and weapons and armor with a required strength greater than your own strength cannot be handled.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00462))_
 
 > If you want to take advantage of your thief skill, your weapons _and_ armor must be _light_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00462))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
 
 | **Tief Skill Abilities Table** |
 | --- |
@@ -75,7 +83,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00462))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08366))_
 
 | Ability | Relevant AbilityScore | Equipment Restrictions | Retryinga success roll on the same target |
 | --- | --- | --- | --- |
@@ -121,4 +132,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08364))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08366))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-common-runes-e6f1b4a8@b61d1b12f32594b0b48f8ad64db53632
+projection_coverage: section-sword-world-rpg-complete-edition-section-common-runes-e6f1b4a8@2ea2a49305ed0d06616a64e44222fb50
 ---
 
 # **Common Runes**
@@ -32,8 +32,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: **Common runes** were invented by Mana Rai, the great sage of Oran, and it involves putting the power of ancient magic into items (mainly rings) and activating it using a password in _common_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03195))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03195))_
+
+> **Common runes** were invented by Mana Rai, the great sage of Oran, and it involves putting the power of ancient magic into items (mainly rings) and activating it using a password in _common_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03197))_
 
 > Also, even if you can't use your hands or are wearing metal armor, you can use them as long as you can say the word.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03197))_

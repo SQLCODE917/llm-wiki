@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-stalker-5ee89a65@dbc0a3cecad912ba7b7d038bf45aff3d
+projection_coverage: section-sword-world-rpg-complete-edition-section-stalker-5ee89a65@eea98ec8f8c0bd5ad3898681c0ed4e17
 ---
 
 # **[ Stalker ]**
@@ -34,8 +34,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: They do not willingly go outside their home (ruins). A sí's weapon is a thin sword that resembles a needle. They also use ancient magic. This often includes lost spells among them. In present day Forcelia, the technique used to create stalkers has been lost. Therefore, all stalkers adventurers will meet are survivors from the ancient kingdom.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06467, source-range-870a16bc-06471))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06467, source-range-870a16bc-06471))_
+
+> They do not willingly go outside their home (ruins). A sí's weapon is a thin sword that resembles a needle. They also use ancient magic. This often includes lost spells among them. In present day Forcelia, the technique used to create stalkers has been lost. Therefore, all stalkers adventurers will meet are survivors from the ancient kingdom.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06469))_
 
 > Stalkers are usually ghostly beings, who can move without being blocked by physical obstacles.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06469))_

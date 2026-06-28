@@ -29580,12 +29580,12 @@
       }
     ],
     "quality_check_catalog_pointer": {
-      "target_artifact_fingerprint": "dfb37f29d0f4637d",
-      "target_artifact_id": "quality-check-catalog-dfb37f29d0f4637d",
+      "target_artifact_fingerprint": "d27c45b62689f4dd",
+      "target_artifact_id": "quality-check-catalog-d27c45b62689f4dd",
       "target_artifact_kind": "quality-check-catalog-artifact"
     },
     "quality_report_scope": "ledger-build"
   },
-  "ledger_quality_report_artifact_id": "ledger-quality-report-9a6b2aa412e2ef9f",
-  "ledger_quality_report_fingerprint": "9a6b2aa412e2ef9f"
+  "ledger_quality_report_artifact_id": "ledger-quality-report-19357c9c14c2f026",
+  "ledger_quality_report_fingerprint": "19357c9c14c2f026"
 }

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-vampire-297c76bd@f395f6f3e57f3ef3856320ecc8c0cee8
+projection_coverage: section-sword-world-rpg-complete-edition-section-vampire-297c76bd@219b8fc540ed01050f7b814c2e345a8a
 ---
 
 # **Vampire**
@@ -16,5 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06319))_
+
 > Monster Level=10 Rarity=13 Agility=20 Movement Speed=20/20 (air) Number=One to several Frequency=Very rare
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06319))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ethnoa-9a278749@bfc0bfacdf11346a29fc85a4e9194ec6
+projection_coverage: section-sword-world-rpg-complete-edition-section-ethnoa-9a278749@986f702c97adac2de92f3a87ee3cc199
 ---
 
 # **[ Ethnoa ]**
@@ -35,32 +35,56 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Since it is a plant, it is weak against fire attacks, and when using spells such as _Fire Weapon_ and _Fire Bolt_ , you gain a +10 bonus to the usual strike power of spells. However, they do not have human-like minds, so spells that cause mental effects have no effect at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06035))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06035))_
+
+> Since it is a plant, it is weak against fire attacks, and when using spells such as _Fire Weapon_ and _Fire Bolt_ , you gain a +10 bonus to the usual strike power of spells. However, they do not have human-like minds, so spells that cause mental effects have no effect at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06037))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06037))_
 
-> Context: Since it is a plant, it is weak against fire attacks, and when using spells such as _Fire Weapon_ and _Fire Bolt_ , you gain a +10 bonus to the usual strike power of spells. However, they do not have human-like minds, so spells that cause mental effects have no effect at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06035))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06035))_
+
+> Since it is a plant, it is weak against fire attacks, and when using spells such as _Fire Weapon_ and _Fire Bolt_ , you gain a +10 bonus to the usual strike power of spells. However, they do not have human-like minds, so spells that cause mental effects have no effect at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06038))_
 
 > Rarity=18 Agility=14 Movement Speed=0 Number=One to several Frequency=Rare Intellect=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06038))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06039))_
 
 > Reaction=Violent Attack Points=Tentacles:9 (2) Strike Points=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06039))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06040))_
 
 > Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=19/12 (5) Mental Points/Resistance=-/11 (4) Special Abilities=Capture with tentacles
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06040))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06042))_
 
 > Habitat=Woods Languages=None Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06042))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06044))_
 
 > ethnoa can attack using all six tentacles at the same time, but it can use only two against a single target.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06044))_
 
-> Context: ethnoa can attack using all six tentacles at the same time, but it can use only two against a single target. If an adventurer is hit by an ethnoa's tentacles, they will suffer damage and also become entangled in the tentacles. On the next round, you must make a resistance roll using _adventurer level + strength bonus_ as the baseline score and the ethnoa's attack points (or the final score from when the attack hits) as the target score. If you fail, the poor adventurer is thrown into the pouch t
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06044))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06044))_
+
+> ethnoa can attack using all six tentacles at the same time, but it can use only two against a single target. If an adventurer is hit by an ethnoa's tentacles, they will suffer damage and also become entangled in the tentacles. On the next round, you must make a resistance roll using _adventurer level + strength bonus_ as the baseline score and the ethnoa's attack points (or the final score from when the attack hits) as the target score. If you fail, the poor adventurer is thrown into the pouch t
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06046))_
 
 > While the victim is still conscious, they can attack from within using a dagger, shortsword, or similar small bladed weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06046))_

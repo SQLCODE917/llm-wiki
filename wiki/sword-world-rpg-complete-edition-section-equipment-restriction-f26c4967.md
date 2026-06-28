@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-f26c4967@a743ad05dd7e3d5ab382d5d3c8fd9a04
+projection_coverage: section-sword-world-rpg-complete-edition-section-equipment-restriction-f26c4967@5a9a6387746712d6e97511142056c54f
 ---
 
 # **(Equipment restriction)**
@@ -27,8 +27,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: In particular, if they're not paying _attention_ to the sound, impose a -4 penalty on the listener and make the same check.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03324))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03324))_
+
+> In particular, if they're not paying _attention_ to the sound, impose a -4 penalty on the listener and make the same check.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03325))_
 
 > If the person hearing the sound _also_ has the thief skill, _they_ may make a check using _thief skill level + intelligence bonus_ (this is the _listen_ ability from the previous section).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03325))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-search-intelligence-no-equipment-restriction-not-retriable-e5cd1f6d@ab5db0dfb94630ec8a014d28157ada5f
+projection_coverage: section-sword-world-rpg-complete-edition-section-search-intelligence-no-equipment-restriction-not-retriable-e5cd1f6d@2b6290390ea51e53c902604740e1d32d
 ---
 
 # **[** ⑧ **Search [Intelligence] ] (No equipment restriction, not retriable)**
@@ -21,8 +21,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: escape from a predicament on their own. When an adventurer's survival is in danger, the game master should set a target score and have them make a success roll to overcome the situation.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+
+> escape from a predicament on their own. When an adventurer's survival is in danger, the game master should set a target score and have them make a success roll to overcome the situation.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
 > The game master should determine the difficulty depending on what’s hidden.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_

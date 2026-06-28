@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-intellect-25c756f3@3deb194e068ec6c063b18747f566d7af
+projection_coverage: section-sword-world-rpg-complete-edition-section-intellect-25c756f3@309be76b4026a868048714976d2ed336
 ---
 
 # 《 **Intellect** 》
@@ -62,20 +62,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If it says _almost none_ , then it has almost no intellect. They have no advanced thinking and have almost no means of communicating their intentions. They only act on instinct. This is the intellectual standard of lower animals such as insects. If you were to convert it to intelligence, it would be _1-2_ . Of course, spells that affect the mind cannot be expected to have any effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04887))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04887))_
+
+> If it says _almost none_ , then it has almost no intellect. They have no advanced thinking and have almost no means of communicating their intentions. They only act on instinct. This is the intellectual standard of lower animals such as insects. If you were to convert it to intelligence, it would be _1-2_ . Of course, spells that affect the mind cannot be expected to have any effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04888))_
 
 > If given a command-- the only ones who can give commands are those who directly created the monster or those who used magic to give the command -- they will faithfully carry it out, but they cannot make their own decisions.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04888))_
 
-> Context: If it says _almost none_ , then it has almost no intellect. They have no advanced thinking and have almost no means of communicating their intentions. They only act on instinct. This is the intellectual standard of lower animals such as insects. If you were to convert it to intelligence, it would be _1-2_ . Of course, spells that affect the mind cannot be expected to have any effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04887))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04887))_
+
+> If it says _almost none_ , then it has almost no intellect. They have no advanced thinking and have almost no means of communicating their intentions. They only act on instinct. This is the intellectual standard of lower animals such as insects. If you were to convert it to intelligence, it would be _1-2_ . Of course, spells that affect the mind cannot be expected to have any effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04889))_
 
 > They can distinguish their master and will follow their commands (if they're trained).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04889))_
 
-> Context: If it says _animal_ , it means literally the same degree as an animal. They can distinguish their master and will follow their commands (if they're trained). Also, they have enough judgment ability to quickly run away if their life is in danger. If you were to convert it to intelligence, it would be around _3 to 5_ . However, they can sometimes display surprising judgment, although this is something that has been learned as an instinct. There are known stories of parent birds feigning injury to 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04889))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04889))_
+
+> If it says _animal_ , it means literally the same degree as an animal. They can distinguish their master and will follow their commands (if they're trained). Also, they have enough judgment ability to quickly run away if their life is in danger. If you were to convert it to intelligence, it would be around _3 to 5_ . However, they can sometimes display surprising judgment, although this is something that has been learned as an instinct. There are known stories of parent birds feigning injury to
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04890))_
 
 > They can also use primitive tools, words, and a very limited number of written characters.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04890))_

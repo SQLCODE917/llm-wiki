@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-many-e81819e6@43af8d77eaf1569c3405a081e0302254
+projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-many-e81819e6@edbc26e421c0849c0231d71d9169afd1
 ---
 
 # Enchanter=Many
@@ -27,14 +27,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07617))_
+
 > Base Trade Price=10,000 gamels (not for sale) Power=Increase an ability score by 1 point
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07617))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07618))_
 
 > If a character drinks this potion, it’ll _permanently_ increase an ability score by 1 point.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07618))_
 
-> Context: you need magic power (baseline score for a success roll), use the sorcerer's.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07620))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07620))_
+
+> you need magic power (baseline score for a success roll), use the sorcerer's.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07621))_
 
 > If you bring it back without using it, perhaps the _lost_ magic may spread throughout the world through the research of an _academy of sages_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07621))_

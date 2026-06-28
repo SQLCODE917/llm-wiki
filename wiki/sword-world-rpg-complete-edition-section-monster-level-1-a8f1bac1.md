@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-1-a8f1bac1@488534f23ccc6c032052ec8e04c47471
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-1-a8f1bac1@56a9f53771799a6f2e6ad7dc140ab364
 ---
 
 # Monster Level=1
@@ -41,32 +41,55 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05676))_
+
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05676))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679))_
 
 > The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679))_
 
-> Context: function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the needles will not pass through to your head and you will not need to make a resistance roll. However, once the attack hits, the hanger leg will now be lodged in the victim's head, so al
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679, source-range-870a16bc-05682))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679, source-range-870a16bc-05682))_
+
+> function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the needles will not pass through to your head and you will not need to make a resistance roll. However, once the attack hits, the hanger leg will now be lodged in the victim's head, so al
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05680))_
 
 > If other allies want to help, they must attack and be prepared to hit their own ally.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05680))_
 
-> Context: function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the needles will not pass through to your head and you will not need to make a resistance roll. However, once the attack hits, the hanger leg will now be lodged in the victim's head, so al
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679, source-range-870a16bc-05682))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679, source-range-870a16bc-05682))_
+
+> function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the needles will not pass through to your head and you will not need to make a resistance roll. However, once the attack hits, the hanger leg will now be lodged in the victim's head, so al
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05681))_
 
 > However, even if its opponent has human intellect, it cannot speak their languages, nor can it take their knowledge and experience as its own.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05681))_
 
-> Context: A hanger leg can freely use the body of the victim it's taken over. However, even if its opponent has human intellect, it cannot speak their languages, nor can it take their knowledge and experience as its own. Of course, using magic is out of the question. Nevertheless, all motor functions and physiological abilities are at the will of the parasite.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05681))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05681))_
+
+> A hanger leg can freely use the body of the victim it's taken over. However, even if its opponent has human intellect, it cannot speak their languages, nor can it take their knowledge and experience as its own. Of course, using magic is out of the question. Nevertheless, all motor functions and physiological abilities are at the will of the parasite.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05682))_
 
 > When a hanger leg attaches itself to an adventurer, it cannot use that person’s skills or adventurer level as is.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05682))_
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 
 | Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
 | --- | --- | --- | --- | --- | --- |
@@ -82,7 +105,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_
 
 | Level 1-2 | It's no big deal. Just a small problem in a small village |
 | --- | --- |
@@ -108,4 +134,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_

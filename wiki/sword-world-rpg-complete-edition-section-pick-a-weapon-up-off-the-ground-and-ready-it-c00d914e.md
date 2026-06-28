@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-pick-a-weapon-up-off-the-ground-and-ready-it-c00d914e@951064dcecba8f9ad1a32f4c3dae15d9
+projection_coverage: section-sword-world-rpg-complete-edition-section-pick-a-weapon-up-off-the-ground-and-ready-it-c00d914e@c18846acda39a8ea2056d50006a0d847
 ---
 
 # **Pick a Weapon Up off the Ground and Ready It**
@@ -20,5 +20,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00798))_
+
 > If a weapon or shield has fallen on the ground, you can pick it up and ready it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00798))_

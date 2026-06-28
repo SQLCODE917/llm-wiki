@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-combined-expansion-5-1-8-2-and-contraction-fa1176d4@2a09739db977fac0fb15c8e110733393
+projection_coverage: section-sword-world-rpg-complete-edition-section-combined-expansion-5-1-8-2-and-contraction-fa1176d4@6d74f2ac70ce216a337af9303d40471f
 ---
 
 # **Combined Expansion 5.1.8.2 and Contraction**
@@ -16,5 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01413))_
+
 > Although it's not often done, it's possible to perform magic expansion _and_ contraction at the same time. For example, you could _extend_ the area of effect while _reducing_ magic power. The mental power required at this time is decided by _expansion_ . It _cannot_ be reduced by contraction. For example, if you _double_ the area _and_ reduce magic power by _-4_ , the mental power consumed will still be _double_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01413))_

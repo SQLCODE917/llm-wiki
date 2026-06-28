@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-asking-npcs-to-use-magic-0cf76a30@dd0663d0606f4d123d9366fee378e67a
+projection_coverage: section-sword-world-rpg-complete-edition-section-asking-npcs-to-use-magic-0cf76a30@673ef15f376da10fecb8d65c28c13b96
 ---
 
 # **Asking NPCs to Use Magic**
@@ -34,26 +34,43 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. You may want to have a _Remove Curse_ cast on you when you're cursed, a _Resurrection_ cast when someone dies, or have a magical item appraised using _Analyze Enchantment_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04380))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04380))_
+
+> In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. You may want to have a _Remove Curse_ cast on you when you're cursed, a _Resurrection_ cast when someone dies, or have a magical item appraised using _Analyze Enchantment_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04381))_
 
 > Of course, these services are not always available, and when they are, they are not free.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04381))_
 
-> Context: In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. You may want to have a _Remove Curse_ cast on you when you're cursed, a _Resurrection_ cast when someone dies, or have a magical item appraised using _Analyze Enchantment_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04380))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04380))_
+
+> In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. You may want to have a _Remove Curse_ cast on you when you're cursed, a _Resurrection_ cast when someone dies, or have a magical item appraised using _Analyze Enchantment_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04383))_
 
 > As a rough standard, here we've listed Table 11-2: NPC Presence by Level.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04383))_
 
-> Context: Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))_
+
+> Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04386))_
 
 > **Table 11-2: NPC Presence by Level**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04386))_
 
-> Context: Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))_
+
+> Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04387))_
 
 | 10th level | Royal capital level of a large country |
 | --- | --- |
@@ -75,4 +92,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04387))_

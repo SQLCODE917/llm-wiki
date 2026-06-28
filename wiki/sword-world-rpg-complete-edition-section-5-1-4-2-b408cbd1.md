@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-4-2-b408cbd1@cf849274a292f6509136db229de63298
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-4-2-b408cbd1@b4f781430cb3760d719e49b96cb7dda1
 ---
 
 # **5.1.4.2**
@@ -26,14 +26,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The procedure for an adventurer to use _non-resistible_ magic is as follows: That's all. If the result is anything other than double ones, the magic takes effect. If it _is_ double ones, then for some reason (the spell was inaccurate, etc.) the magic takes _no_ effect at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01246, source-range-870a16bc-01251))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01246, source-range-870a16bc-01251))_
+
+> The procedure for an adventurer to use _non-resistible_ magic is as follows: That's all. If the result is anything other than double ones, the magic takes effect. If it _is_ double ones, then for some reason (the spell was inaccurate, etc.) the magic takes _no_ effect at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01249))_
 
 > Magic that is _resistible_ can be rendered ineffective or less effective if the target chooses to **resist** .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01249))_
 
-> Context: Declare which magic you’re using, then roll 2D.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01250))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01250))_
+
+> Declare which magic you’re using, then roll 2D.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01251))_
 
 > If the result is anything other than double ones, the magic takes effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01251))_

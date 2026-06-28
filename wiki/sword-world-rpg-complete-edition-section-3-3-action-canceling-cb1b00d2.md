@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-3-action-canceling-cb1b00d2@0af9d077cbe7322433ceda38865c6843
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-3-action-canceling-cb1b00d2@405dbd1dfdbbdfefe004bb87e9754cc2
 ---
 
 # 3.3 Action Canceling
@@ -57,32 +57,56 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Suppose that Ducard II has an agility of 13, which is equal to that of a goblin (let's call him _IIDash_ from now on, since he is a bit faster). In this case, both attacks are considered to be carried out simultaneously. During the course of the game, each attack check is made in the order of _goblin → IIDash_ (or vice versa). Otherwise, it would be difficult to progress the game.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00726))_
+### Technical atom 1
 
-> Context: Suppose that Ducard II has an agility of 13, which is equal to that of a goblin (let's call him _IIDash_ from now on, since he is a bit faster). In this case, both attacks are considered to be carried out simultaneously. During the course of the game, each attack check is made in the order of _goblin → IIDash_ (or vice versa). Otherwise, it would be difficult to progress the game. Suppose that, as in the first example, IIDash is still hit badly enough to fall down as a result of the goblin's att
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00726, source-range-870a16bc-00729))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00726))_
+
+> Suppose that Ducard II has an agility of 13, which is equal to that of a goblin (let's call him _IIDash_ from now on, since he is a bit faster). In this case, both attacks are considered to be carried out simultaneously. During the course of the game, each attack check is made in the order of _goblin → IIDash_ (or vice versa). Otherwise, it would be difficult to progress the game.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00726, source-range-870a16bc-00729))_
+
+> Suppose that Ducard II has an agility of 13, which is equal to that of a goblin (let's call him _IIDash_ from now on, since he is a bit faster). In this case, both attacks are considered to be carried out simultaneously. During the course of the game, each attack check is made in the order of _goblin → IIDash_ (or vice versa). Otherwise, it would be difficult to progress the game. Suppose that, as in the first example, IIDash is still hit badly enough to fall down as a result of the goblin's att
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00728))_
 
 > For convenience, they are resolved in order, but even if you’re attacked by an enemy of the _same_ agility and fall down, you can _still_ perform your intended actions.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00728))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00742))_
 
 > Just because a companion has knocked down an enemy in front of you does _not_ mean that you can attack a _different_ enemy.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00742))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00748))_
 
 > For example, suppose you know that a fellow wizard can use magic to increase the attack power of your sword. But what if your agility is higher than theirs? The support magic will be applied after you swing your sword, and the magic will be wasted.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00748))_
 
-> Context: For example, suppose you know that a fellow wizard can use magic to increase the attack power of your sword. But what if your agility is higher than theirs? The support magic will be applied after you swing your sword, and the magic will be wasted. If the enemy that's trying to withdraw has a higher agility than you, you _must_ switch to a different target, because according to your action order, the enemy will have escaped. At this time, an attacker can choose any new target to switch to (from 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00748, source-range-870a16bc-00752))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00748, source-range-870a16bc-00752))_
+
+> For example, suppose you know that a fellow wizard can use magic to increase the attack power of your sword. But what if your agility is higher than theirs? The support magic will be applied after you swing your sword, and the magic will be wasted. If the enemy that's trying to withdraw has a higher agility than you, you _must_ switch to a different target, because according to your action order, the enemy will have escaped. At this time, an attacker can choose any new target to switch to (from
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00750))_
 
 > If you want to **delay** an action, you must mention it in the action announcement phase, along with the action you intend to take.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00750))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00752))_
 
 > At this time, an attacker can choose any new target to switch to (from among those they're engaged with).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00752))_
 
-> Context: If the enemy that's trying to withdraw has a higher agility than you, you _must_ switch to a different target, because according to your action order, the enemy will have escaped. At this time, an attacker can choose any new target to switch to (from among those they're engaged with).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00752))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00752))_
+
+> If the enemy that's trying to withdraw has a higher agility than you, you _must_ switch to a different target, because according to your action order, the enemy will have escaped. At this time, an attacker can choose any new target to switch to (from among those they're engaged with).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00753))_
 
 > If _your_ agility is higher than that of the enemy who is trying to withdraw, you can attack them before they escape.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00753))_

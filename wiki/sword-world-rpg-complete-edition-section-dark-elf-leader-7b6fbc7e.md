@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dark-elf-leader-7b6fbc7e@05d75d53e7d89b48f9a5a556c777c649
+projection_coverage: section-sword-world-rpg-complete-edition-section-dark-elf-leader-7b6fbc7e@4cd877e9c65167468d7c0d3e4dcc6666
 ---
 
 # **Dark Elf Leader**
@@ -25,5 +25,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05072))_
+
 > Habitat=Forests far from human villages Languages=Elven, silent spirit, regional Perception=Five senses (darkvision, infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05072))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fireball-3359c3be@9b9f3266fe0eedbbebdf575e93d63135
+projection_coverage: section-sword-world-rpg-complete-edition-section-fireball-3359c3be@56c2ebe488d4eac304643a1d85b513de
 ---
 
 # **[ Fireball ]**
@@ -23,14 +23,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01860))_
+
 > Base Mental Power Cost=20 Distance=20 Meters Area=A space with a 3 meter radius
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01860))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01861))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01861))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01862))_
 
 > Effect=Causes an explosion centered on a point in space, dealing strike power 20 damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01862))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01863))_
 
 > Type=Damage (Fire-type) Expansion=Final score, distance, area, damage certainty Resist=Reduced effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01863))_

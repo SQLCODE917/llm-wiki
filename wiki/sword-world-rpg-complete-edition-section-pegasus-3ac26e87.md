@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-pegasus-3ac26e87@0b7cdc56cba998c8e55d0b09f16f7baf
+projection_coverage: section-sword-world-rpg-complete-edition-section-pegasus-3ac26e87@842f2b79b02857af497372805bce408f
 ---
 
 # **[ Pegasus ]**
@@ -22,8 +22,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The hippogriff is said to have been born after a griffon (see p. 193) attacked a mare. A flying mythical beast, the front half of its body is an eagle and the back half is a horse. They live in grasslands and feed on small herbivores. Despite their appearance, they’re not very ferocious and will not attack humans unless they are very hungry. If you catch one as a child and tame it, you can even use it as a riding horse. Pegasus is a winged white horse that can fly. In the wild, Pegasus live on s
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05424, source-range-870a16bc-05428))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05424, source-range-870a16bc-05428))_
+
+> The hippogriff is said to have been born after a griffon (see p. 193) attacked a mare. A flying mythical beast, the front half of its body is an eagle and the back half is a horse. They live in grasslands and feed on small herbivores. Despite their appearance, they’re not very ferocious and will not attack humans unless they are very hungry. If you catch one as a child and tame it, you can even use it as a riding horse. Pegasus is a winged white horse that can fly. In the wild, Pegasus live on s
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05427))_
 
 > Habitat=Steep mountains, meadows Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05427))_

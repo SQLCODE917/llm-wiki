@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-order-of-action-announcements-296de302@de1e7ba82adce6c408ca93f004f52851
+projection_coverage: section-sword-world-rpg-complete-edition-section-order-of-action-announcements-296de302@1957e0b85cf74423d41c0941828b2df6
 ---
 
 # **Order of Action Announcements**
@@ -36,8 +36,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Which of the two will make their action announcements first is determined based on _intelligence_ . The group with the _highest_ intelligence among all the characters (including monsters, etc.) participating in combat will announce their action _later_ . If _a2_ is the one with the highest intelligence between groups A and B as mentioned, then the announcements are made in the order of _B → A_ , regardless of the intelligence of the other characters. Those who announce their actions later- the o
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00700))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00700))_
+
+> Which of the two will make their action announcements first is determined based on _intelligence_ . The group with the _highest_ intelligence among all the characters (including monsters, etc.) participating in combat will announce their action _later_ . If _a2_ is the one with the highest intelligence between groups A and B as mentioned, then the announcements are made in the order of _B → A_ , regardless of the intelligence of the other characters. Those who announce their actions later- the o
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00698))_
 
 > In an action announcement, you cannot declare something impossible.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00698))_

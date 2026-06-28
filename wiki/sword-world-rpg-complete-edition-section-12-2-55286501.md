@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-55286501@a35ba501cb456d45159ba9e25f5ca8ea
+projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-55286501@933b18f30fe83d9dffaf9b6dd3988993
 ---
 
 # **12.2**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-55286
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_
 
 | **Table 12-1: Languages** |
 | --- |
@@ -32,4 +36,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_

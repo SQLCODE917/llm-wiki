@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-full-defense-f1249652@79e3440aaf804e3aa54b0a48361c3caa
+projection_coverage: section-sword-world-rpg-complete-edition-section-full-defense-f1249652@c39c06c75a05af0bfdf8681216d21a46
 ---
 
 # **Full Defense**
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07767))_
+
 > When an opponent is too strong, and fighting normally is of no use, an adventurer can **focus wholly on defense** .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07767))_

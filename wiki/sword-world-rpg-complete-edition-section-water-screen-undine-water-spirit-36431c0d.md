@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-water-screen-undine-water-spirit-36431c0d@f5fb2bf4a68bb6f312f70b98d50b6160
+projection_coverage: section-sword-world-rpg-complete-edition-section-water-screen-undine-water-spirit-36431c0d@7dffca8e769536709cea77960d5e8a15
 ---
 
 # **[ Water Screen ] (Undine/Water Spirit)**
@@ -21,11 +21,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02341))_
+
 > Base Mental Power Cost=6 Distance=10 meters Area=One Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02341))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02342))_
 
 > Effect=Reduce fire damage by 1 point Type=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02342))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02343))_
 
 > Expansion=Duration, distance, targets Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02343))_

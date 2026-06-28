@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-movement-and-actions-c69b2ebf@1953d6b0849b86451bc52efae413266e
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-movement-and-actions-c69b2ebf@1099b38cc56735f89c4b3d58124fd84f
 ---
 
 # 3.4 Movement and Actions
@@ -82,53 +82,90 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> engaged with attempt to withdraw (flee), even if they have high agility, you can still
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00756))_
+### Technical atom 1
 
-> Context: Below are some guidelines on how movement works and which actions can be taken. For any other actions, please use _common sense_ based on the time frame of 1 round = 10 seconds. Final decisions are to be made by the game master.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00765))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00756))_
+
+> engaged with attempt to withdraw (flee), even if they have high agility, you can still
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00765))_
+
+> Below are some guidelines on how movement works and which actions can be taken. For any other actions, please use _common sense_ based on the time frame of 1 round = 10 seconds. Final decisions are to be made by the game master.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00767))_
 
 > If you want to switch your weapon from a projectile such as a bow, to a melee weapon, you can drop your previous weapon on the ground, and then you can ready a new weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00767))_
 
-> Context: You can wield up to two, one in each hand. If you want to switch your weapon from a projectile such as a bow, to a melee weapon, you can drop your previous weapon on the ground, and then you can ready a new weapon. This is because, from the beginning, it’s assumed your hands were empty.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00767))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00767))_
+
+> You can wield up to two, one in each hand. If you want to switch your weapon from a projectile such as a bow, to a melee weapon, you can drop your previous weapon on the ground, and then you can ready a new weapon. This is because, from the beginning, it’s assumed your hands were empty.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00770))_
 
 > If you’re carrying a shield on your back, you can also ready it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00770))_
 
-> Context: Weapons and shields can be dropped on the ground at _any time_ , regardless of whether they're one-handed, twohanded, or both-handed. If you do drop a weapon, etc. consider it as if you _never had it in the first place_ , then choose your action.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00774))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00774))_
+
+> Weapons and shields can be dropped on the ground at _any time_ , regardless of whether they're one-handed, twohanded, or both-handed. If you do drop a weapon, etc. consider it as if you _never had it in the first place_ , then choose your action.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00776))_
 
 > If you have such a weapon in one hand and a shield in the other, if you drop the shield, the weapon is now considered to be in only one hand, so you can then hold it with both hands.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00776))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00798))_
 
 > If a weapon or shield has fallen on the ground, you can pick it up and ready it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00798))_
 
-> Context: Return a weapon in your hand to its sheath, etc. and ready a _different_ weapon. Only _one_ can be switched out. For example, if you have a sword and a shield, you _cannot_ return them both and ready a different weapon.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00801))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00801))_
+
+> Return a weapon in your hand to its sheath, etc. and ready a _different_ weapon. Only _one_ can be switched out. For example, if you have a sword and a shield, you _cannot_ return them both and ready a different weapon.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00802))_
 
 > If you do have a sword and a shield, you can drop _one_ of them on the ground, return the _other_ one, then ready a different weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00802))_
 
-> Context: Switch a weapon you’re using with only one hand to _both_ hands and attack. This action may be effective if you have a weapon that can be used with one or both hands.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00807))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00807))_
+
+> Switch a weapon you’re using with only one hand to _both_ hands and attack. This action may be effective if you have a weapon that can be used with one or both hands.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00808))_
 
 > If you’re holding a weapon in one hand and a shield in the other, and that weapon can be used with both hands, you can drop the shield on the ground and attack with both hands, since it's as if you were holding the weapon in only one hand from the beginning.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00808))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00811))_
 
 > If you already have a weapon ready, you can of course attack with that weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00811))_
 
-> Context: Above all, the advantage of _standing still_ is the ability to use magic and attack with projectiles. Conversely, if you are not _standing still_ , you _cannot_ use magic or projectiles.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00817))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00817))_
+
+> Above all, the advantage of _standing still_ is the ability to use magic and attack with projectiles. Conversely, if you are not _standing still_ , you _cannot_ use magic or projectiles.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00818))_
 
 > If you want to attack with a projectile, please follow the process of _actions you can take during normal movement_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00818))_
 
-> Context: If you want to attack with a projectile, please follow the process of _actions you can take during normal movement_ . If you chose _stand still_ , then _attack with that weapon_ can be read as _attack with that projectile_ . However, when you're _engaged_ (being attacked by a melee weapon), you _cannot_ use projectiles.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00818))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00818))_
+
+> If you want to attack with a projectile, please follow the process of _actions you can take during normal movement_ . If you chose _stand still_ , then _attack with that weapon_ can be read as _attack with that projectile_ . However, when you're _engaged_ (being attacked by a melee weapon), you _cannot_ use projectiles.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00819))_
 
 > If you choose to _stand still_ , in addition to magic and projectiles, you can also take the following special action:
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00819))_

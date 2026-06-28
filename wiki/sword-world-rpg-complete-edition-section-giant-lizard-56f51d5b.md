@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-lizard-56f51d5b@05e19e2dbd9a14f5d43aa7759a9c7780
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-lizard-56f51d5b@94104b4cfffa5b1e6128a7ef0e7cea7e
 ---
 
 # **[ Giant Lizard ]**
@@ -23,11 +23,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: A giant centipede's fangs are poisonous. An adventurer bitten by a giant centipede must make a life force resistance roll against target score 9. If you fail, your motor nerves will be affected, and will suffer a -2 penalty on all success rolls. The effects of this poison last for 3 days.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05702))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05702))_
+
+> A giant centipede's fangs are poisonous. An adventurer bitten by a giant centipede must make a life force resistance roll against target score 9. If you fail, your motor nerves will be affected, and will suffer a -2 penalty on all success rolls. The effects of this poison last for 3 days.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05704))_
 
 > Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05704))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05706))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05706))_

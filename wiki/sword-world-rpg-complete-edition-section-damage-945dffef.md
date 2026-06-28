@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-damage-945dffef@5fe39219c0013065853d42a03de97ac5
+projection_coverage: section-sword-world-rpg-complete-edition-section-damage-945dffef@45b7c4502184ace7f8c39f2c871532cc
 ---
 
 # 《 **Damage** 》
@@ -22,11 +22,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Add a 2D roll to the attacking monster's attack points - 7 (marked in brackets). If it’s equal to or greater than the evasion points of the defending monster, it's a hit.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03901))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03901))_
+
+> Add a 2D roll to the attacking monster's attack points - 7 (marked in brackets). If it’s equal to or greater than the evasion points of the defending monster, it's a hit.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03903))_
 
 > If the attack hits, roll 2D.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03903))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 | Shield<br>Name | Evasion<br>Speed Mod. | Attack<br>Power Mod. |
 | --- | --- | --- |
@@ -44,7 +52,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03903))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 | Armor Name | Evasion Speed<br>Mod. | Defense<br>Mod. | Critical Target<br>Change | Anti-strangling<br>Prot. |
 | --- | --- | --- | --- | --- |
@@ -64,4 +75,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_

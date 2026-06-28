@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sea-worm-f16509a2@82d7605770b208d36ea3dbfc493f25dd
+projection_coverage: section-sword-world-rpg-complete-edition-section-sea-worm-f16509a2@7a98245fbc4419f899bc86c067c4d5be
 ---
 
 # **Sea Worm**
@@ -33,11 +33,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05923))_
+
 > Monster Level=5 Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05923))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05924))_
 
 > Agility=10 Movement Speed=5/5 (water) Number=One to several
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05924))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05926))_
 
 > Water adaptation Habitat=Deep seas Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05926))_

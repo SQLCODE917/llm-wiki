@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-golden-wanderer-459b717f@8af2bfefe19c023ad137cde562572b51
+projection_coverage: section-sword-world-rpg-complete-edition-section-golden-wanderer-459b717f@b613ce4f0acd3df52657ceb4d3ac5011
 ---
 
 # **Golden Wanderer**
@@ -26,5 +26,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05960))_
+
 > Special Abilities=Ice adaptation Water adaptation Strong to cold Habitat=Ice fields Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05960))_

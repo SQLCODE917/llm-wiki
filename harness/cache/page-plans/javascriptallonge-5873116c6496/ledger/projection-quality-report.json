@@ -24,12 +24,12 @@
       }
     ],
     "quality_check_catalog_pointer": {
-      "target_artifact_fingerprint": "dfb37f29d0f4637d",
-      "target_artifact_id": "quality-check-catalog-dfb37f29d0f4637d",
+      "target_artifact_fingerprint": "d27c45b62689f4dd",
+      "target_artifact_id": "quality-check-catalog-d27c45b62689f4dd",
       "target_artifact_kind": "quality-check-catalog-artifact"
     },
     "quality_report_scope": "page-projection"
   },
-  "ledger_quality_report_artifact_id": "ledger-quality-report-5fe3b69afe7fb787",
-  "ledger_quality_report_fingerprint": "5fe3b69afe7fb787"
+  "ledger_quality_report_artifact_id": "ledger-quality-report-7aa41898d2f4add4",
+  "ledger_quality_report_fingerprint": "7aa41898d2f4add4"
 }

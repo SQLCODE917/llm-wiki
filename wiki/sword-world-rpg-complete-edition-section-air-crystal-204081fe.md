@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-air-crystal-204081fe@6c0339f2833e6e14ac11529d0b9c1fc9
+projection_coverage: section-sword-world-rpg-complete-edition-section-air-crystal-204081fe@24bb44cec6a07a09095317b96981c76d
 ---
 
 # **Air Crystal**
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07316))_
+
 > Powers=Casts a Darkness spell
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07316))_

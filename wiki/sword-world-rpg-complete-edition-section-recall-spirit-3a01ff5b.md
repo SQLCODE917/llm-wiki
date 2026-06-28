@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-recall-spirit-3a01ff5b@87b1bb9eec68c7f3a68254de480ce4c1
+projection_coverage: section-sword-world-rpg-complete-edition-section-recall-spirit-3a01ff5b@2b5a8264c71a3dd5e26b130cd12573a3
 ---
 
 # **[ Recall Spirit ]**
@@ -27,14 +27,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04110))_
+
 > Base Mental Power Cost=45
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04110))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04111))_
 
 > Distance=Touch Area=One sacrifice Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04111))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04112))_
 
 > Effect=Give a sacrificial body to a soul of the dead
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04112))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04113))_
 
 > Type=Ritual Expansion=Final score Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04113))_

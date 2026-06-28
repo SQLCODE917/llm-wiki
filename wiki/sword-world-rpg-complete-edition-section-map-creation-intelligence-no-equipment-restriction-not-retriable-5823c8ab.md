@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-map-creation-intelligence-no-equipment-restriction-not-retriable-5823c8ab@6cb8ddbac0466a67962f4f21ca550a04
+projection_coverage: section-sword-world-rpg-complete-edition-section-map-creation-intelligence-no-equipment-restriction-not-retriable-5823c8ab@706ad5f7f66ac9e879f314b6ef7d556a
 ---
 
 # **[** ⑨ **Map Creation [Intelligence]] (No equipment restriction, not retriable)**
@@ -21,8 +21,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is the ability to search for hidden things. The game master should determine the difficulty depending on what’s hidden. Since it's an ability that relies on feeling out of place in nature, it can _only_ be used outdoors.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
+
+> This is the ability to search for hidden things. The game master should determine the difficulty depending on what’s hidden. Since it's an ability that relies on feeling out of place in nature, it can _only_ be used outdoors.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
 > You can also determine direction from the position of the sun or stars.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sense-aura-10362062@6b3847ff13a2e0e45638f2cfedaf90a1
+projection_coverage: section-sword-world-rpg-complete-edition-section-sense-aura-10362062@79e055e6ddacd290fcd89bbd386acce8
 ---
 
 # 《 **Sense Aura** 》
@@ -22,5 +22,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02271))_
+
 > You cannot use spells that belong to a specific spirit in places where that spirit power is not at work.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02271))_

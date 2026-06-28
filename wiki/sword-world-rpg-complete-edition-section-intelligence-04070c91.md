@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-intelligence-04070c91@26c0f9a06e36f4d082705a9e8ad0a737
+projection_coverage: section-sword-world-rpg-complete-edition-section-intelligence-04070c91@faa2ded8f5751f860239175b3df08cb5
 ---
 
 # **[Intelligence] ]**
@@ -26,8 +26,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Sailors have the ability to know direction by looking at the stars on the sea at night, and to identify dangerous areas where reefs are likely to exist. The game master should ask for a success roll check for such actions using _sailor skill level + intelligence bonus_ as the baseline score. The difficulty or target score is determined by the game master each time.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03691))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03691))_
+
+> Sailors have the ability to know direction by looking at the stars on the sea at night, and to identify dangerous areas where reefs are likely to exist. The game master should ask for a success roll check for such actions using _sailor skill level + intelligence bonus_ as the baseline score. The difficulty or target score is determined by the game master each time.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03692))_
 
 > At that time, you can only wear armor up to cloth or soft leather.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03692))_

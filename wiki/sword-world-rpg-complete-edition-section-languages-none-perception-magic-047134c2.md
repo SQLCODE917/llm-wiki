@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-languages-none-perception-magic-047134c2@ec6acdd3206a821785d04830981439fd
+projection_coverage: section-sword-world-rpg-complete-edition-section-languages-none-perception-magic-047134c2@78ccfde8bc96a51fa42b4337d0815bde
 ---
 
 # Languages=None Perception=Magic
@@ -42,14 +42,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If a ranger or sage succeeds on a success roll against target score 12 using _ranger/sage skill level + intelligence bonus_ as the baseline score, they will be able to see the killer creeper's true identity before it approaches, and thus avoid the encounter (this is considered a use of _plant and animal check_ and _monster check_ ). If they fail, the adventurer will have stepped into the killer creeper without realizing it. This is always a surprise attack, so for one round, only the killer cree
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06059))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06059))_
+
+> If a ranger or sage succeeds on a success roll against target score 12 using _ranger/sage skill level + intelligence bonus_ as the baseline score, they will be able to see the killer creeper's true identity before it approaches, and thus avoid the encounter (this is considered a use of _plant and animal check_ and _monster check_ ). If they fail, the adventurer will have stepped into the killer creeper without realizing it. This is always a surprise attack, so for one round, only the killer cree
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06061))_
 
 > A character entangled in two or more vines cannot use ancient magic or spirit magic, because they're unable to move.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06061))_
 
-> Context: A character entangled in vines can also attempt to pull the entangled vines off instead of making a normal attack. Make a success roll using _adventurer level + strength bonus_ as the baseline score and the killer creeper's attack points (10,
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06062))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06062))_
+
+> A character entangled in vines can also attempt to pull the entangled vines off instead of making a normal attack. Make a success roll using _adventurer level + strength bonus_ as the baseline score and the killer creeper's attack points (10,
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06063))_
 
 > If successful, you can pull off the vines.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06063))_

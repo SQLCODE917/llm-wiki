@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-7-animals-981fc11f@30c0b6bdc7415623a2e3d7f07b485068
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-7-animals-981fc11f@0d11f16a6f6d188b1b7958f886a2474f
 ---
 
 # 13.2.7 Animals
@@ -403,542 +403,978 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05659))_
+
 > Monster Level=1 Rarity=5 Agility=16 Movement Speed=24 Number=Several to around ten Frequency=Moderate Intellect=Animal Reaction=Hunger-based Attack Points=Fangs: 8 (1) Strike Points=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05659))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05660))_
 
 > Evasion Points=9 (2) Defense Points=4 Life Points/Resistance=14/9 (2) Mental Points/Resistance=6/8 (1) Special Abilities=None in particular Habitat=Woods, meadows, near human villages
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05660))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05661))_
 
 > Languages=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05661))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05662))_
 
 > Perception=Five senses (illumination)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05662))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05666))_
 
 > Monster Level=1
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05666))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05667))_
 
 > Rarity=6 Agility=18 Movement Speed=20 Number=Several to around ten
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05667))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05668))_
 
 > Frequency=Moderate Intellect=Animal Reaction=Neutral Attack Points=Fangs:8 (1)/Claw:9 (2)/Claw:9
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05668))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05671))_
 
 > Even on the rare occasion that they do attack you, they will quickly run away if you wound them, and you can easily drive them away with fire.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05671))_
 
-> Context: and dexterous, and thus can stand on their hind legs and use simple tools. They are omnivorous, and usually live in groups. They are timid by nature and will not attack unless you seriously provoke them or invade their burrow without them knowing. Even on the rare occasion that they do attack you, they will quickly run away if you wound them, and you can easily drive them away with fire.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05671))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05671))_
+
+> and dexterous, and thus can stand on their hind legs and use simple tools. They are omnivorous, and usually live in groups. They are timid by nature and will not attack unless you seriously provoke them or invade their burrow without them knowing. Even on the rare occasion that they do attack you, they will quickly run away if you wound them, and you can easily drive them away with fire.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05672))_
 
 > You must roll 2D again.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05672))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05676))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05676))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679))_
 
 > The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679))_
 
-> Context: function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the needles will not pass through to your head and you will not need to make a resistance roll. However, once the attack hits, the hanger leg will now be lodged in the victim's head, so al
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679, source-range-870a16bc-05682))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679, source-range-870a16bc-05682))_
+
+> function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the needles will not pass through to your head and you will not need to make a resistance roll. However, once the attack hits, the hanger leg will now be lodged in the victim's head, so al
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05680))_
 
 > If other allies want to help, they must attack and be prepared to hit their own ally.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05680))_
 
-> Context: function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the needles will not pass through to your head and you will not need to make a resistance roll. However, once the attack hits, the hanger leg will now be lodged in the victim's head, so al
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679, source-range-870a16bc-05682))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679, source-range-870a16bc-05682))_
+
+> function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the needles will not pass through to your head and you will not need to make a resistance roll. However, once the attack hits, the hanger leg will now be lodged in the victim's head, so al
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05681))_
 
 > However, even if its opponent has human intellect, it cannot speak their languages, nor can it take their knowledge and experience as its own.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05681))_
 
-> Context: A hanger leg can freely use the body of the victim it's taken over. However, even if its opponent has human intellect, it cannot speak their languages, nor can it take their knowledge and experience as its own. Of course, using magic is out of the question. Nevertheless, all motor functions and physiological abilities are at the will of the parasite.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05681))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05681))_
+
+> A hanger leg can freely use the body of the victim it's taken over. However, even if its opponent has human intellect, it cannot speak their languages, nor can it take their knowledge and experience as its own. Of course, using magic is out of the question. Nevertheless, all motor functions and physiological abilities are at the will of the parasite.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05682))_
 
 > When a hanger leg attaches itself to an adventurer, it cannot use that person’s skills or adventurer level as is.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05682))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05690))_
 
 > Rarity=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05690))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05691))_
 
 > Agility=18 Movement Speed=8/30 (air) Number=One to several Frequency=Rare Intellect=Animal
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05691))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05692))_
 
 > Reaction=Hunger-based Attack Points=Beak: 9 (2)/Talons: 10 (3) Strike Points=5/5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05692))_
 
-> Context: Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
+### Technical atom 18
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
+
+> Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05693))_
 
 > Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=16/10 (3) Mental Points/Resistance=7/9 (2) Special Abilities=Opponent’s attack is -2 Habitat=Mountains
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05693))_
 
-> Context: Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
+### Technical atom 19
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
+
+> Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05694))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05694))_
 
-> Context: Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
+
+> Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05698))_
 
 > Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05698))_
 
-> Context: Rarity=7 Agility=10 Movement Speed=12 Number=One to several Frequency=Moderate Intellect=Almost none Reaction=Neutral Attack Points=Fangs: 9 (2) Strike Points=6+poison Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=16/10 (3) Mental Points/Resistance=5/8 (1) Special Abilities=Poison (Toxicity score 9, motor function decline=success roll-2) Mental attack immunity
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05699))_
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05699))_
+
+> Rarity=7 Agility=10 Movement Speed=12 Number=One to several Frequency=Moderate Intellect=Almost none Reaction=Neutral Attack Points=Fangs: 9 (2) Strike Points=6+poison Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=16/10 (3) Mental Points/Resistance=5/8 (1) Special Abilities=Poison (Toxicity score 9, motor function decline=success roll-2) Mental attack immunity
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05700))_
 
 > Habitat=Damp, gloomy places such as deep forests, jungles, caves, ruins, etc. Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05700))_
 
-> Context: The giant centipede is an abnormally developed giant bug, with a body length that ranges from about 30 cm to 1 meter. Their long and narrow, multi-segmented bodies are lined with dozens of legs, which they use to twist and crawl along, attacking and feeding on those who get in their way.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05701))_
+### Technical atom 22
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05701))_
+
+> The giant centipede is an abnormally developed giant bug, with a body length that ranges from about 30 cm to 1 meter. Their long and narrow, multi-segmented bodies are lined with dozens of legs, which they use to twist and crawl along, attacking and feeding on those who get in their way.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05702))_
 
 > An adventurer bitten by a giant centipede must make a life force resistance roll against target score 9.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05702))_
 
-> Context: A giant centipede's fangs are poisonous. An adventurer bitten by a giant centipede must make a life force resistance roll against target score 9. If you fail, your motor nerves will be affected, and will suffer a -2 penalty on all success rolls. The effects of this poison last for 3 days.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05702))_
+### Technical atom 23
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05702))_
+
+> A giant centipede's fangs are poisonous. An adventurer bitten by a giant centipede must make a life force resistance roll against target score 9. If you fail, your motor nerves will be affected, and will suffer a -2 penalty on all success rolls. The effects of this poison last for 3 days.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05704))_
 
 > Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05704))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05706))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05706))_
+
+### Technical atom 25
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05709))_
 
 > Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05709))_
+
+### Technical atom 26
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05711))_
 
 > Mental Points/Resistance=6/9 (2) Special Abilities=Poison (Toxicity score 12, paralysis)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05711))_
 
-> Context: This is a wasp about 1 meter long, with a black body and a red band on its belly. They do not build hives like honeybees, and will not attack you unless you attack them. However, during the autumn spawning season, the females become ferocious. This is because they have to attack animals to lay their eggs.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05714))_
+### Technical atom 27
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05714))_
+
+> This is a wasp about 1 meter long, with a black body and a red band on its belly. They do not build hives like honeybees, and will not attack you unless you attack them. However, during the autumn spawning season, the females become ferocious. This is because they have to attack animals to lay their eggs.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05712))_
 
 > Mental attack immunity Habitat=Warm Forests
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05712))_
 
-> Context: This is a wasp about 1 meter long, with a black body and a red band on its belly. They do not build hives like honeybees, and will not attack you unless you attack them. However, during the autumn spawning season, the females become ferocious. This is because they have to attack animals to lay their eggs.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05714))_
+### Technical atom 28
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05714))_
+
+> This is a wasp about 1 meter long, with a black body and a red band on its belly. They do not build hives like honeybees, and will not attack you unless you attack them. However, during the autumn spawning season, the females become ferocious. This is because they have to attack animals to lay their eggs.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05713))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05713))_
 
-> Context: A giant wasp's stinger is poisonous (toxicity score 12). Those dealt damage by a wasp's attack must succeed on a life force resistance roll, or else the poison will paralyze their bodies, leaving them in a state of suspended animation. This state of suspended animation lasts semipermanently. A giant wasp will drag paralyzed prey to its burrow, lay eggs inside them, then hide the entrance to the burrow with dead leaves, etc. Wasp larvae grow by feeding on the flesh and organs of their prey.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05715))_
+### Technical atom 29
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05715))_
+
+> A giant wasp's stinger is poisonous (toxicity score 12). Those dealt damage by a wasp's attack must succeed on a life force resistance roll, or else the poison will paralyze their bodies, leaving them in a state of suspended animation. This state of suspended animation lasts semipermanently. A giant wasp will drag paralyzed prey to its burrow, lay eggs inside them, then hide the entrance to the burrow with dead leaves, etc. Wasp larvae grow by feeding on the flesh and organs of their prey.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05718))_
 
 > Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05718))_
+
+### Technical atom 30
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05719))_
 
 > Rarity=5 Agility=12 Movement Speed=30 Number=Depends on the situation Frequency=Moderate Intellect=Animal Reaction=Depends on the rider
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05719))_
 
-> Context: with the other. This means you can't use shields or two-handed weapons.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05723))_
+### Technical atom 31
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05723))_
+
+> with the other. This means you can't use shields or two-handed weapons.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05724))_
 
 > To fight on horseback, you must make a success roll against target score 7 each round using _adventurer level + agility bonus_ as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05724))_
 
-> Context: To fight on horseback, you must make a success roll against target score 7 each round using _adventurer level + agility bonus_ as the baseline score. If you attempt to control your horse without using the reins, you will suffer a -4 penalty to your final score.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05724))_
+### Technical atom 32
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05724))_
+
+> To fight on horseback, you must make a success roll against target score 7 each round using _adventurer level + agility bonus_ as the baseline score. If you attempt to control your horse without using the reins, you will suffer a -4 penalty to your final score.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05727))_
 
 > Rarity=10 Agility=16 Movement Speed=24 Number=Depends on the situation Frequency=Rare Intellect=Animal Reaction=Depends on the user Attack Points=Fangs: 10 (3) Strike Points=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05727))_
+
+### Technical atom 33
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05728))_
 
 > Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=16/11 (4) Mental Points/Resistance=10/10 (3) Special Abilities=None in particular Habitat=Human villages Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05728))_
+
+### Technical atom 34
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05729))_
 
 > They can fight more than equally against normal soldiers, even if their opponents are well armed.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05729))_
+
+### Technical atom 35
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05733))_
 
 > Agility=16 Movement Speed=24 (water) Number=One to several
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05733))_
+
+### Technical atom 36
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05734))_
 
 > Frequency=Moderate Intellect=Animal Reaction=Hunger-based Attack Points=Fangs:10 (3) Strike Points=13 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=25/13 (6) Mental Points/Resistance=6/10 (3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05734))_
+
+### Technical atom 37
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05736))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05736))_
 
-> Context: Killer Sharks belong to the so-called man-eating shark family, but they are particularly large, ferocious, and cunning. They're about 5 meters long, and will attack anything that moves in the sea, chomping it to pieces with the sharp fangs in their huge mouths. Killer sharks will continue to grow as long as they live. The data listed here is for an average adult shark. For older ones, set the monster level to 4 and apply +1 to each score. Some young killer sharks have a monster level of 2. Apply
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05737))_
+### Technical atom 38
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05737))_
+
+> Killer Sharks belong to the so-called man-eating shark family, but they are particularly large, ferocious, and cunning. They're about 5 meters long, and will attack anything that moves in the sea, chomping it to pieces with the sharp fangs in their huge mouths. Killer sharks will continue to grow as long as they live. The data listed here is for an average adult shark. For older ones, set the monster level to 4 and apply +1 to each score. Some young killer sharks have a monster level of 2. Apply
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05740))_
 
 > Rarity=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05740))_
+
+### Technical atom 39
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05741))_
 
 > Agility=12 Movement Speed=6/12 (water) Number=One to several Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Large jaws:10 (3)/Tail:10 (3) Strike Points=12/10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05741))_
+
+### Technical atom 40
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05742))_
 
 > Evasion Points=11 (4) Defense Points=7 Life Points/Resistance=20/12 (5) Mental Points/Resistance=6/10 (3) Special Abilities=Strangling with large jaws Water adaptation
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05742))_
+
+### Technical atom 41
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05743))_
 
 > Habitat=Wetlands such as jungles, swamps, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05743))_
 
-> Context: Habitat=Wetlands such as jungles, swamps, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05743))_
+### Technical atom 42
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05743))_
+
+> Habitat=Wetlands such as jungles, swamps, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05744))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05744))_
 
-> Context: Habitat=Wetlands such as jungles, swamps, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05743))_
+### Technical atom 43
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05743))_
+
+> Habitat=Wetlands such as jungles, swamps, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05746))_
 
 > A crocodile's tail is also a powerful weapon, but it cannot attack the same target with its jaws and tail at the same time.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05746))_
+
+### Technical atom 44
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05748))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05748))_
+
+### Technical atom 45
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05749))_
 
 > Rarity=8 Agility=12 Movement Speed=14 Number=Several to around ten
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05749))_
+
+### Technical atom 46
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05751))_
 
 > Mental attack immunity Habitat=Deserts, wastelands
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05751))_
+
+### Technical atom 47
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05753))_
 
 > Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05753))_
+
+### Technical atom 48
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05754))_
 
 > Their personality is ferocious, moreover, they're carnivorous, always hungry and when any moving thing comes into view, they'll attack it immediately.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05754))_
+
+### Technical atom 49
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05755))_
 
 > When in combat, a giant scorpion can use the pincers on its arms and the barb on its tail to attack different targets (of course, it can also concentrate its attacks on a single target).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05755))_
 
-> Context: When in combat, a giant scorpion can use the pincers on its arms and the barb on its tail to attack different targets (of course, it can also concentrate its attacks on a single target). The barb on the tip of its tail is a stinger that secretes a deadly poison (toxicity score 10), and those stung must make a life force resistance roll. If you fail, your whole body will become paralyzed after an hour, then you will draw your last breath.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05755))_
+### Technical atom 50
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05755))_
+
+> When in combat, a giant scorpion can use the pincers on its arms and the barb on its tail to attack different targets (of course, it can also concentrate its attacks on a single target). The barb on the tip of its tail is a stinger that secretes a deadly poison (toxicity score 10), and those stung must make a life force resistance roll. If you fail, your whole body will become paralyzed after an hour, then you will draw your last breath.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05757))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05757))_
+
+### Technical atom 51
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05761))_
 
 > You must roll the dice to determine which arm is trapped.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05761))_
 
-> Context: When attacking a human, a giant mantis will use its sickles to capture their arms and attempt to block their movement. Anyone hit by a giant mantis's attack will have one arm trapped. You must roll the dice to determine which arm is trapped. Roll 1D, and if it's 1-3, it'll be the right arm, but if it's 4-6 it'll be the left arm. Ancient magic cannot be used while one arm is trapped. Also, on subsequent rounds, you cannot escape from the giant mantis, so your evasion points will be -4. In order t
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05761))_
+### Technical atom 52
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05761))_
+
+> When attacking a human, a giant mantis will use its sickles to capture their arms and attempt to block their movement. Anyone hit by a giant mantis's attack will have one arm trapped. You must roll the dice to determine which arm is trapped. Roll 1D, and if it's 1-3, it'll be the right arm, but if it's 4-6 it'll be the left arm. Ancient magic cannot be used while one arm is trapped. Also, on subsequent rounds, you cannot escape from the giant mantis, so your evasion points will be -4. In order t
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05762))_
 
 > On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasion points will be reduced by -2.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05762))_
 
-> Context: On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasion points will be reduced by -2. The scarlet vulture is a large carnivorous bird, with a wingspan of up to 4 meters while both wings are spread. It is so called because its wings and the top of its head are bright red. Although it is a member of the vulture family, so to speak, it regularly eats live meat, rather than dead meat. It ca
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05762, source-range-870a16bc-05766))_
+### Technical atom 53
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05762, source-range-870a16bc-05766))_
+
+> On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasion points will be reduced by -2. The scarlet vulture is a large carnivorous bird, with a wingspan of up to 4 meters while both wings are spread. It is so called because its wings and the top of its head are bright red. Although it is a member of the vulture family, so to speak, it regularly eats live meat, rather than dead meat. It ca
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05764))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05764))_
+
+### Technical atom 54
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05772))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05772))_
+
+### Technical atom 55
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05775))_
 
 > If they’re hungry, they may also attack humans.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05775))_
+
+### Technical atom 56
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05780))_
 
 > Monster Level=1
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05780))_
+
+### Technical atom 57
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05781))_
 
 > Rarity=5 Agility=18 Movement Speed=10 Number=Several to around ten Frequency=Moderate Intellect=Animal Reaction=Neutral Attack Points=Fangs:8 (1) Strike Points=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05781))_
 
-> Context: Evasion Points=11 (4) Defense Points=3 Life Points/Resistance=7/8 (1) Mental Points/Resistance=6/8 (1) Special Abilities=Disease (Intensity 6) Opponent’s attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. Languages=None
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05782))_
+### Technical atom 58
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05782))_
+
+> Evasion Points=11 (4) Defense Points=3 Life Points/Resistance=7/8 (1) Mental Points/Resistance=6/8 (1) Special Abilities=Disease (Intensity 6) Opponent’s attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. Languages=None
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05784))_
 
 > They are sensitive to light, and if an adventurer with a light carelessly enters the nest, they may blindly attack in groups.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05784))_
 
-> Context: Those bitten by a bat-- those whose life force has been dealt damage by a bat's attack --are at risk of contracting a fever. Roll 2D again. If you roll a 5 or less, you’ll be infected with _bat fever_ . Please refer to page 166 for details on _bat fever_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05786))_
+### Technical atom 59
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05786))_
+
+> Those bitten by a bat-- those whose life force has been dealt damage by a bat's attack --are at risk of contracting a fever. Roll 2D again. If you roll a 5 or less, you’ll be infected with _bat fever_ . Please refer to page 166 for details on _bat fever_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05788))_
 
 > Monster Level=2 Rarity=10 Agility=19 Movement Speed=20 Number=One to several Frequency=Rare Intellect=Animal Reaction=Hunger-based
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05788))_
+
+### Technical atom 60
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05791))_
 
 > Attack Points=Fangs:9 (2) Strike Points=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05791))_
+
+### Technical atom 61
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05792))_
 
 > Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=11/9 (2) Mental Points/Resistance=6/9 (2) Special Abilities=Bloodsuck (Strike power 10, bonus damage 2)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05792))_
 
-> Context: A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. However, it prefers to suck the blood of living creatures rather than eat their meat. Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. Make a strike power 10 plus bonus damage 2 check. This damage can only be reduced by adventurer level. Assume this state is a _grapple_ (see p. 265) as in the optional rules. Therefore, in order for the possessed opponent t
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05795))_
+### Technical atom 62
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05795))_
+
+> A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. However, it prefers to suck the blood of living creatures rather than eat their meat. Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. Make a strike power 10 plus bonus damage 2 check. This damage can only be reduced by adventurer level. Assume this state is a _grapple_ (see p. 265) as in the optional rules. Therefore, in order for the possessed opponent t
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05793))_
 
 > Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05793))_
 
-> Context: Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. However, it prefers to suck the blood of living creatures rather than eat their meat. Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. Make a strike power 10 plus bonus damage 2 check. This damage can only be reduced by adventurer level. Assume this state is a _grapple_ (se
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05793, source-range-870a16bc-05795))_
+### Technical atom 63
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05793, source-range-870a16bc-05795))_
+
+> Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. However, it prefers to suck the blood of living creatures rather than eat their meat. Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. Make a strike power 10 plus bonus damage 2 check. This damage can only be reduced by adventurer level. Assume this state is a _grapple_ (se
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05794))_
 
 > Languages=None Perception=Five senses (sonar)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05794))_
 
-> Context: Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05793))_
+### Technical atom 64
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05793))_
+
+> Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05795))_
 
 > Also, to detach the vampire bat, you must make a resistance roll using _adventurer level + strength bonus_ as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05795))_
 
-> Context: A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. However, it prefers to suck the blood of living creatures rather than eat their meat. Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. Make a strike power 10 plus bonus damage 2 check. This damage can only be reduced by adventurer level. Assume this state is a _grapple_ (see p. 265) as in the optional rules. Therefore, in order for the possessed opponent t
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05795))_
+### Technical atom 65
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05795))_
+
+> A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. However, it prefers to suck the blood of living creatures rather than eat their meat. Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. Make a strike power 10 plus bonus damage 2 check. This damage can only be reduced by adventurer level. Assume this state is a _grapple_ (see p. 265) as in the optional rules. Therefore, in order for the possessed opponent t
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05798))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05798))_
 
-> Context: A giant bat is a massive bat, with a wingspan of 3 meters across. They are completely nocturnal creatures, flying around forests and wastelands to hunt at night. They’re omnivorous and mainly catch and eat small animals, but when they’re starving they may also attack livestock and humans. When attacking prey, they act in groups, quickly descending from above, and scratching with their sharp talons.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05802))_
+### Technical atom 66
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05802))_
+
+> A giant bat is a massive bat, with a wingspan of 3 meters across. They are completely nocturnal creatures, flying around forests and wastelands to hunt at night. They’re omnivorous and mainly catch and eat small animals, but when they’re starving they may also attack livestock and humans. When attacking prey, they act in groups, quickly descending from above, and scratching with their sharp talons.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05800))_
 
 > Habitat=Places sunlight does not reach, such as caves, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05800))_
 
-> Context: Habitat=Places sunlight does not reach, such as caves, etc. A giant bat is a massive bat, with a wingspan of 3 meters across. They are completely nocturnal creatures, flying around forests and wastelands to hunt at night. They’re omnivorous and mainly catch and eat small animals, but when they’re starving they may also attack livestock and humans. When attacking prey, they act in groups, quickly descending from above, and scratching with their sharp talons.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05800, source-range-870a16bc-05802))_
+### Technical atom 67
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05800, source-range-870a16bc-05802))_
+
+> Habitat=Places sunlight does not reach, such as caves, etc. A giant bat is a massive bat, with a wingspan of 3 meters across. They are completely nocturnal creatures, flying around forests and wastelands to hunt at night. They’re omnivorous and mainly catch and eat small animals, but when they’re starving they may also attack livestock and humans. When attacking prey, they act in groups, quickly descending from above, and scratching with their sharp talons.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05801))_
 
 > Languages=None Perception=Five senses (sonar)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05801))_
 
-> Context: Habitat=Places sunlight does not reach, such as caves, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05800))_
+### Technical atom 68
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05800))_
+
+> Habitat=Places sunlight does not reach, such as caves, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05802))_
 
 > They’re omnivorous and mainly catch and eat small animals, but when they’re starving they may also attack livestock and humans.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05802))_
 
-> Context: Habitat=Places sunlight does not reach, such as caves, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05800))_
+### Technical atom 69
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05800))_
+
+> Habitat=Places sunlight does not reach, such as caves, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05803))_
 
 > If hit by both claws at the same time, a victim adventurer must make a resistance roll using the giant bat's attack points (or if using optional rules, the attack's final score, whichever is higher) as the target score and _adventurer level + strength bonus_ as the baseline score, to prevent being carried away.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05803))_
 
-> Context: Usually it tries to avoid humans on its own accord, but if it and a human bump into one another, or if it’s hungry, then things are different. Also, a mother bear with her cubs will do everything in her power to protect them, so travelers should avoid approaching groups of bears carelessly. At this time, it’s useless to play dead. This is because they also eat dead meat. It is also said that once a grizzly bear has learned the taste of human flesh, it’ll attack humans more frequently.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05810))_
+### Technical atom 70
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05810))_
+
+> Usually it tries to avoid humans on its own accord, but if it and a human bump into one another, or if it’s hungry, then things are different. Also, a mother bear with her cubs will do everything in her power to protect them, so travelers should avoid approaching groups of bears carelessly. At this time, it’s useless to play dead. This is because they also eat dead meat. It is also said that once a grizzly bear has learned the taste of human flesh, it’ll attack humans more frequently.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05808))_
 
 > Evasion Points=10 (3) Defense Points=7 Life Points/Resistance=22/12 (5) Mental Points/Resistance=7/10 (3) Special Abilities=Strangling Habitat=Forests Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05808))_
 
-> Context: A bear's special attack is a _bear hug_ . This is a technique in which it holds its opponent in its thick arms, squeezing them. Treat this as strangling (see p. 236). Bears use this attack depending on the situation. When surrounded by multiple opponents, it’ll choose to swing its arms around and try to mow down anything it happens to hit, but if there are fewer opponents, it’ll approach for a bear hug. If a bear hug attack hits, the adventurer will be held by the bear.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05811))_
+### Technical atom 71
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05811))_
+
+> A bear's special attack is a _bear hug_ . This is a technique in which it holds its opponent in its thick arms, squeezing them. Treat this as strangling (see p. 236). Bears use this attack depending on the situation. When surrounded by multiple opponents, it’ll choose to swing its arms around and try to mow down anything it happens to hit, but if there are fewer opponents, it’ll approach for a bear hug. If a bear hug attack hits, the adventurer will be held by the bear.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05812))_
 
 > In this state, the bear cannot attack other opponents.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05812))_
 
-> Context: Lions usually don't try to come close to human villages. However, lions sometimes attack humans if they’re starving or if they’ve tasted human flesh.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05817))_
+### Technical atom 72
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05817))_
+
+> Lions usually don't try to come close to human villages. However, lions sometimes attack humans if they’re starving or if they’ve tasted human flesh.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05819))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05819))_
+
+### Technical atom 73
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05824))_
 
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05824))_
+
+### Technical atom 74
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05826))_
 
 > Weak to Salt Habitat=Damp underground labyrinths, marshlands Languages=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05826))_
 
-> Context: This is a toad about 50 cm long. Since they feed on fish and insects, they rarely attack humans, but if they’re attacked or startled, they’ll try to protect themselves by spewing venom from the secretory glands in their heads.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05835))_
+### Technical atom 75
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05835))_
+
+> This is a toad about 50 cm long. Since they feed on fish and insects, they rarely attack humans, but if they’re attacked or startled, they’ll try to protect themselves by spewing venom from the secretory glands in their heads.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05836))_
 
 > Anyone within 3 meters of a poison toad when it spews its venom must succeed on a life force resistance roll against target score 9.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05836))_
 
-> Context: Monster Level=4 Rarity=11 Agility=8 Movement Speed=10/16 (water) Number=One Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Tongue: 10 (3) Strike Points=7 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=21/13 (6) Mental Points/Resistance=6/11 (4) Special Abilities=Wrap tongue around (strangling) and swallow whole Habitat=Wetlands such as lakes, riverbanks, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05839))_
+### Technical atom 76
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05839))_
+
+> Monster Level=4 Rarity=11 Agility=8 Movement Speed=10/16 (water) Number=One Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Tongue: 10 (3) Strike Points=7 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=21/13 (6) Mental Points/Resistance=6/11 (4) Special Abilities=Wrap tongue around (strangling) and swallow whole Habitat=Wetlands such as lakes, riverbanks, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05840))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05840))_
+
+### Technical atom 77
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05843))_
 
 > If someone becomes entangled in a Toad's tongue, the other party members can attempt to sever it with a bladed weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05843))_
+
+### Technical atom 78
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05844))_
 
 > If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05844))_
 
-> Context: Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05844))_
+### Technical atom 79
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05844))_
+
+> Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05846))_
 
 > penalty, and if you hit, the damage check is made as normal, and if the toad dies, you can escape.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05846))_
 
-> Context: Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05844))_
+### Technical atom 80
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05844))_
+
+> Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05847))_
 
 > In that case, if you deal more damage than the toad's remaining life points, that same damage (before it’s reduced by the toad's defense points) is also dealt to the victim inside its belly at the same time.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05847))_
+
+### Technical atom 81
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05851))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05851))_
+
+### Technical atom 82
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05852))_
 
 > Rarity=8 Agility=16 Movement Speed=15 Number=Several to around ten
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05852))_
+
+### Technical atom 83
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05856))_
 
 > Monster Level=3 Rarity=8 Agility=10 Movement Speed=8
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05856))_
+
+### Technical atom 84
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05857))_
 
 > Number=Several to around ten Frequency=Rare Intellect=Almost none Reaction=Violent Attack Points=Fangs:10 (3) Strike Points=8
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05857))_
+
+### Technical atom 85
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05858))_
 
 > Evasion Points=9 (2) Defense Points=5 Life Points/Resistance=20/12 (5) Mental Points/Resistance=6/10 (3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05858))_
+
+### Technical atom 86
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05859))_
 
 > Special Abilities=Mental attack immunity Habitat=Caves, ruins Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05859))_
+
+### Technical atom 87
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05862))_
 
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05862))_
+
+### Technical atom 88
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05863))_
 
 > Rarity=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05863))_
+
+### Technical atom 89
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05866))_
 
 > Habitat=Caves, ruins Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05866))_
+
+### Technical atom 90
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05867))_
 
 > If the fangs cannot penetrate armor, damage from the acid will not be dealt.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05867))_
 
-> Context: The giant ant queen is the queen of all giant ants. Her head and chest are almost the same as those of a normal giant ant, but her white abdomen is full of eggs and bloated. Therefore, her body length can reach over 10 meters.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05874))_
+### Technical atom 91
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05874))_
+
+> The giant ant queen is the queen of all giant ants. Her head and chest are almost the same as those of a normal giant ant, but her white abdomen is full of eggs and bloated. Therefore, her body length can reach over 10 meters.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05873))_
 
 > Habitat=Caves, ruins Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05873))_
+
+### Technical atom 92
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05875))_
 
 > However, if you’re unable to escape, the target score for the success roll required to escape increases by 2 points each time you’re hit by the mucus, increasing to 14, 16…… and so on.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05875))_
+
+### Technical atom 93
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05889))_
 
 > Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05889))_
 
-> Context: Gorillas attack by swinging their brawny arms around, but if an opponent is smaller than itself, it will grab it with both arms and try to strangle it to death. This attack method is resolved using the rules for strangling (see p. 236).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05892))_
+### Technical atom 94
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05892))_
+
+> Gorillas attack by swinging their brawny arms around, but if an opponent is smaller than itself, it will grab it with both arms and try to strangle it to death. This attack method is resolved using the rules for strangling (see p. 236).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05894))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05894))_
 
-> Context: Gorillas attack by swinging their brawny arms around, but if an opponent is smaller than itself, it will grab it with both arms and try to strangle it to death. This attack method is resolved using the rules for strangling (see p. 236).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05892))_
+### Technical atom 95
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05892))_
+
+> Gorillas attack by swinging their brawny arms around, but if an opponent is smaller than itself, it will grab it with both arms and try to strangle it to death. This attack method is resolved using the rules for strangling (see p. 236).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05895))_
 
 > Rarity=11 Agility=12 Movement Speed=20 Number=One Frequency=Very Rare Intellect=Low Reaction=Adversarial Attack Points=Arm:13 (6)/Arm:13 (6) Strike Points=13/13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05895))_
+
+### Technical atom 96
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05896))_
 
 > Attack Points=Strangling:13 (6) Strike Points=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05896))_
+
+### Technical atom 97
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05897))_
 
 > Evasion Points=11 (4) Defense Points=9 Life Points/Resistance=24/15 (8) Mental Points/Resistance=10/12 (5) Special Abilities=Strangling Habitat=Jungles Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05897))_
 
-> Context: The giant antlion is a creature about 3 meters long total, with most of the front half of its body occupied by its large jaws, a cone-shaped tail on the back half of its body, and three pairs of spatulashaped legs that bend forward at the joints, making it suitable for burrowing underground. This creature usually lurks in shallow underground areas. When a creature passes directly above it, the giant antlion will sense its footsteps and suddenly dive further underground (with its tail). As a resu
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05903))_
+### Technical atom 98
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05903))_
+
+> The giant antlion is a creature about 3 meters long total, with most of the front half of its body occupied by its large jaws, a cone-shaped tail on the back half of its body, and three pairs of spatulashaped legs that bend forward at the joints, making it suitable for burrowing underground. This creature usually lurks in shallow underground areas. When a creature passes directly above it, the giant antlion will sense its footsteps and suddenly dive further underground (with its tail). As a resu
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05902))_
 
 > Mental attack immunity Habitat=Deserts (Khan Desert only) Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05902))_
 
-> Context: Those with the ranger skill may be able to sense an attack from this dangerous creature with their _sense danger_ ability. Make a success roll against target score 16, using _ranger skill level + intelligence bonus_ as the baseline score. If you succeed, you'll be able to sense the hole just before it opens under your feet and jump to the side.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05908))_
+### Technical atom 99
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05908))_
+
+> Those with the ranger skill may be able to sense an attack from this dangerous creature with their _sense danger_ ability. Make a success roll against target score 16, using _ranger skill level + intelligence bonus_ as the baseline score. If you succeed, you'll be able to sense the hole just before it opens under your feet and jump to the side.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05910))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05910))_
+
+### Technical atom 100
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05915))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05915))_
+
+### Technical atom 101
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05917))_
 
 > Habitat=Warm coastal areas Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05917))_
+
+### Technical atom 102
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05923))_
 
 > Monster Level=5 Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05923))_
+
+### Technical atom 103
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05924))_
 
 > Agility=10 Movement Speed=5/5 (water) Number=One to several
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05924))_
+
+### Technical atom 104
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05926))_
 
 > Water adaptation Habitat=Deep seas Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05926))_
 
-> Context: They will not approach gold or silver, perhaps because they cannot digest them with their digestive juices. Therefore, they do not appear near veins of precious metals.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05934))_
+### Technical atom 105
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05934))_
+
+> They will not approach gold or silver, perhaps because they cannot digest them with their digestive juices. Therefore, they do not appear near veins of precious metals.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
 
 > Armor cannot reduce it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
 
-> Context: The rock worm is a member of the worm family that lives underground and looks like a giant earthworm, 5 meters long total. They feed on soil like normal earthworms, but they also eat rocks without hesitation. To do this, they secrete strong acidic digestive juices from their mouths. Similar to its relative, the sea worm, it has an extreme dislike of light. Therefore, if you come across one in an underground passage and are holding a torch or lantern, they will attack you. The attack is made usin
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
+### Technical atom 106
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
+
+> The rock worm is a member of the worm family that lives underground and looks like a giant earthworm, 5 meters long total. They feed on soil like normal earthworms, but they also eat rocks without hesitation. To do this, they secrete strong acidic digestive juices from their mouths. Similar to its relative, the sea worm, it has an extreme dislike of light. Therefore, if you come across one in an underground passage and are holding a torch or lantern, they will attack you. The attack is made usin
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05936))_
 
 > Monster Level=6 Rarity=15 Agility=10 Movement Speed=10/20 (underground)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05936))_
+
+### Technical atom 107
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05938))_
 
 > They usually burrow underground, but are always hungry, so when other creatures pass by on the ground, they leap out to attack them for food.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05938))_
+
+### Technical atom 108
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05941))_
 
 > Giant seals can also use their fins to advance over ice fields, but they do not eat land animals, so they won't attack you unless you attack them or invade their territory.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05941))_
+
+### Technical atom 109
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05948))_
 
 > Fishermen never choose to hunt females, out of fear that seal numbers will decline.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05948))_
 
-> Context: Female giant seals are slightly smaller than males, measuring 6 to 7 meters long and do not have tusks. Although young females may wander alone, they usually belong to a kingdom. Fishermen never choose to hunt females, out of fear that seal numbers will decline.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05948))_
+### Technical atom 110
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05948))_
+
+> Female giant seals are slightly smaller than males, measuring 6 to 7 meters long and do not have tusks. Although young females may wander alone, they usually belong to a kingdom. Fishermen never choose to hunt females, out of fear that seal numbers will decline.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05950))_
 
 > Monster Level=6 Rarity=10 Agility=10 Movement Speed=10/16 (water) Number=One Frequency=Moderate Intellect=Animal Reaction=Neutral Attack Points=Ram:14 (7) Strike Points=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05950))_
 
-> Context: Female giant seals are slightly smaller than males, measuring 6 to 7 meters long and do not have tusks. Although young females may wander alone, they usually belong to a kingdom. Fishermen never choose to hunt females, out of fear that seal numbers will decline.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05948))_
+### Technical atom 111
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05948))_
+
+> Female giant seals are slightly smaller than males, measuring 6 to 7 meters long and do not have tusks. Although young females may wander alone, they usually belong to a kingdom. Fishermen never choose to hunt females, out of fear that seal numbers will decline.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05951))_
 
 > Evasion Points=12 (5) Defense Points=10 Life Points/Resistance=24/16 (9) Mental Points/Resistance=10/13 (6) Special Abilities=Ice adaptation
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05951))_
+
+### Technical atom 112
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05953))_
 
 > Habitat=Ice fields Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05953))_
+
+### Technical atom 113
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05960))_
 
 > Special Abilities=Ice adaptation Water adaptation Strong to cold Habitat=Ice fields Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05960))_
+
+### Technical atom 114
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05970))_
 
 > Monster Level=4 Rarity=8 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Strangle: 12 (5) Strike Points=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05970))_
+
+### Technical atom 115
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05971))_
 
 > Evasion Points=9 (2) Defense Points=8 Life Points/Resistance=20/13 (6) Mental Points/Resistance=8/11 (4) Special Abilities=Strangling Habitat=Forests, meadows Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05971))_
+
+### Technical atom 116
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05975))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05975))_
+
+### Technical atom 117
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05976))_
 
 > A python can attack and evade without penalty while dancing.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05976))_
 
-> Context: Alecrast is home to the following dangerous spiders.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05982))_
+### Technical atom 118
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05982))_
+
+> Alecrast is home to the following dangerous spiders.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05984))_
 
 > Monster Level=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05984))_
+
+### Technical atom 119
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05987))_
 
 > Monster Level=1 Rarity=6 Agility=12 Movement Speed=10 Number=One to several Frequency=Moderate Intellect=Almost none Reaction=Hunger-based Attack Points=Fangs:8 (1) Strike Points=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05987))_
+
+### Technical atom 120
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05991))_
 
 > Evasion Points=9 (2) Defense Points=3 Life Points/Resistance=10/8 (1) Mental Points/Resistance=1/7 (0) Special Abilities=Capture with string
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05991))_
+
+### Technical atom 121
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05992))_
 
 > Mental attack immunity Habitat=Forests, underground labyrinths Languages=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05992))_
+
+### Technical atom 122
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05993))_
 
 > Perception=Five senses (Vibration sense)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05993))_
+
+### Technical atom 123
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05994))_
 
 > They usually feed on small animals such as rabbits, but if they can’t stand their hunger they may attack larger creatures than themselves such as humans, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05994))_
 
-> Context: Giant spiders are large spiders with a body length of about 50 cm. They usually feed on small animals such as rabbits, but if they can’t stand their hunger they may attack larger creatures than themselves such as humans, etc. They do not build webs, nor are they poisonous.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05994))_
+### Technical atom 124
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05994))_
+
+> Giant spiders are large spiders with a body length of about 50 cm. They usually feed on small animals such as rabbits, but if they can’t stand their hunger they may attack larger creatures than themselves such as humans, etc. They do not build webs, nor are they poisonous.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05995))_
 
 > If hit by the string attack, an adventurer will become entangled and lose their freedom of movement.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05995))_
+
+### Technical atom 125
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06001))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06001))_
 
-> Context: A giant tarantula's fangs contain a poison (toxicity score 12) that affects motor nerves. Those who are dealt damage by these fangs, and fail a life force resistance roll, will begin to dance
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06003))_
+### Technical atom 126
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06003))_
+
+> A giant tarantula's fangs contain a poison (toxicity score 12) that affects motor nerves. Those who are dealt damage by these fangs, and fail a life force resistance roll, will begin to dance
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06004))_
 
 > While dancing, you’ll suffer a - 4 penalty on attack and evasion, and cannot use ancient magic or spirit magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06004))_
 
-> Context: violently. While dancing, you’ll suffer a - 4 penalty on attack and evasion, and cannot use ancient magic or spirit magic. If the poison is not removed using the holy magic _Cure Poison_ , etc. the victim will continue dancing for one hour, losing 1 point of life force every 10 minutes due to fatigue. This damage cannot be reduced by adventurer level.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06004))_
+### Technical atom 127
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06004))_
+
+> violently. While dancing, you’ll suffer a - 4 penalty on attack and evasion, and cannot use ancient magic or spirit magic. If the poison is not removed using the holy magic _Cure Poison_ , etc. the victim will continue dancing for one hour, losing 1 point of life force every 10 minutes due to fatigue. This damage cannot be reduced by adventurer level.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06006))_
 
 > Monster Level=6 Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Almost none Reaction=Violent Attack Points=Fangs:13 (6) Strike Points=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06006))_
 
-> Context: When a giant webspinner is hungry, it’ll suddenly bite you with its fangs. When it's not, it'll emit a large amount of string from its abdomen and use its legs to try to entangle its prey. Those hit by a giant webspinner's string will not suffer any damage, but they will become more and more entangled in the string. Therefore, the target score of the success roll required to shake free from the web also increases by 2 points, to 15, 17…… etc. If the target score is 13 or more above than the base
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06012))_
+### Technical atom 128
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06012))_
+
+> When a giant webspinner is hungry, it’ll suddenly bite you with its fangs. When it's not, it'll emit a large amount of string from its abdomen and use its legs to try to entangle its prey. Those hit by a giant webspinner's string will not suffer any damage, but they will become more and more entangled in the string. Therefore, the target score of the success roll required to shake free from the web also increases by 2 points, to 15, 17…… etc. If the target score is 13 or more above than the base
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06010))_
 
 > If you fail, you will get caught in the web and attract the attention of the giant webspinner.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06010))_

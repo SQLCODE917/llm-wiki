@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-brownie-cf51d100@77630037f7b6928fd13c90ecf1c70666
+projection_coverage: section-sword-world-rpg-complete-edition-section-brownie-cf51d100@6a628b511f974641bda39796c353a416
 ---
 
 # **[ Brownie ]**
@@ -38,29 +38,54 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it’s impossible to identify its shape because it’s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it’s unlikely that your attacks will hit it (it’ll definitely disintegrate if they do). They will always attack by 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05096))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05096))_
+
+> Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it’s impossible to identify its shape because it’s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it’s unlikely that your attacks will hit it (it’ll definitely disintegrate if they do). They will always attack by
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05099))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05099))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05100))_
 
 > Rarity=14 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05100))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05101))_
 
 > Agility=14 Movement Speed=Special Number=Solo to several
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05101))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05102))_
 
 > Frequency=Very Rare Intellect=Human Reaction=Neutral to violent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05102))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05103))_
 
 > Attack Points=Furniture ： 10 (3) Strike Points=5 to 9 Evasion Points=Defense Points=Life Points/Resistance=-/Mental Points/Resistance=18/12 (5) Special Abilities=Physical attack immunity
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05103))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05105))_
 
 > Habitat=Old mansions
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05105))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05106))_
 
 > Languages=Silent spirit, mansion residents’ language
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05106))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05107))_
 
 > Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05107))_

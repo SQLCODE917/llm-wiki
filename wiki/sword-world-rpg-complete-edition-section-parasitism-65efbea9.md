@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-parasitism-65efbea9@c96931672c91ec31293fe2f9920be72e
+projection_coverage: section-sword-world-rpg-complete-edition-section-parasitism-65efbea9@8d1ecf0c282f1185c862e80498c69bfb
 ---
 
 # 《 **Parasitism** 》
@@ -21,8 +21,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: In the case of a poison that deals damage, if the resist is successful, then unless it's specified that no damage will be dealt, the effect will _not_ be completely removed, it will merely reduce the strike power by 10 (and prevent criticals).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06807))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06807))_
+
+> In the case of a poison that deals damage, if the resist is successful, then unless it's specified that no damage will be dealt, the effect will _not_ be completely removed, it will merely reduce the strike power by 10 (and prevent criticals).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06809))_
 
 > If you’re attacked by a monster with this ability, you must make a life force resistance roll against the indicated target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06809))_

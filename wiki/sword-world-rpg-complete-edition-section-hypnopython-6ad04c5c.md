@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hypnopython-6ad04c5c@9cba32b82b189eb828cb233c0ccc49bb
+projection_coverage: section-sword-world-rpg-complete-edition-section-hypnopython-6ad04c5c@d7ce2b5f10086e9dec06160dcb9be5cb
 ---
 
 # **Hypnopython**
@@ -24,8 +24,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05975))_
+
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05975))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05976))_
 
 > A python can attack and evade without penalty while dancing.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05976))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-staff-of-sorcery-d7022d0d@f5e0121e80a65b6719a74607ea4100e8
+projection_coverage: section-sword-world-rpg-complete-edition-section-staff-of-sorcery-d7022d0d@a009c4b13111cc5e146d1e0f0ae10c94
 ---
 
 # **[ Staff of Sorcery ]**
@@ -24,20 +24,36 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07337))_
+
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07337))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07338))_
 
 > Enchanter=Wolfen "The Powerless" Form=Pitch-black mage’s staff
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07338))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07339))_
 
 > Required Strength=5 (Strike power 10) Base Trade Price=490,000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07339))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07340))_
 
 > Powers=Can use ancient magic up to 7th level. However, you’ll be controlled and manipulated by the staff
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07340))_
 
-> Context: Powers=Can use ancient magic up to 7th level. However, you’ll be controlled and manipulated by the staff
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07340))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07340))_
+
+> Powers=Can use ancient magic up to 7th level. However, you’ll be controlled and manipulated by the staff
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07341))_
 
 > The wielder of this staff can use ancient magic up to level 7, as if they were a sorcerer.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07341))_

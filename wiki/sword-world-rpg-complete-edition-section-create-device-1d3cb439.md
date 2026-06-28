@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-create-device-1d3cb439@5227c339c667cdac39799f35e2dc7e8a
+projection_coverage: section-sword-world-rpg-complete-edition-section-create-device-1d3cb439@82138ddc8b1ad2d2fc20d4f467e0884b
 ---
 
 # **[ Create Device ]**
@@ -22,8 +22,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01965))_
+
 > Base Mental Power Cost=30 Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01965))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01966))_
 
 > Area=One wooden staff or object Duration=Permanent Effect=Can create a magical catalyst Type=Non-removable Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01966))_

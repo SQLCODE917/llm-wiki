@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-scarlet-vulture-3c239c00@6caba581d0542f2ac63a48d70fd85353
+projection_coverage: section-sword-world-rpg-complete-edition-section-scarlet-vulture-3c239c00@99752952c19500d8b4a735c87e29996e
 ---
 
 # **[ Scarlet Vulture ]**
@@ -32,8 +32,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasion points will be reduced by -2. The scarlet vulture is a large carnivorous bird, with a wingspan of up to 4 meters while both wings are spread. It is so called because its wings and the top of its head are bright red. Although it is a member of the vulture family, so to speak, it regularly eats live meat, rather than dead meat. It ca
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05762, source-range-870a16bc-05766))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05762, source-range-870a16bc-05766))_
+
+> On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasion points will be reduced by -2. The scarlet vulture is a large carnivorous bird, with a wingspan of up to 4 meters while both wings are spread. It is so called because its wings and the top of its head are bright red. Although it is a member of the vulture family, so to speak, it regularly eats live meat, rather than dead meat. It ca
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05764))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05764))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-deafness-32d5b19c@a0cd8fdb98d2bcd3f1e14e00a6a46165
+projection_coverage: section-sword-world-rpg-complete-edition-section-deafness-32d5b19c@e7c8fa4f2f95e7a0b517d0405001156d
 ---
 
 # **[ Deafness ]**
@@ -23,17 +23,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Note that this spell does _not_ allow the target to reduce damage using adventurer level. Also, the caster _cannot_ add their magic power to the damage dealt, and _cannot_ divide the mental power consumed by the spell by their level (for both a caster with a 1st level dark priest skill and a caster with a 3rd level dark priest skill, the mental power consumed is the same).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03951))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03951))_
+
+> Note that this spell does _not_ allow the target to reduce damage using adventurer level. Also, the caster _cannot_ add their magic power to the damage dealt, and _cannot_ divide the mental power consumed by the spell by their level (for both a caster with a 1st level dark priest skill and a caster with a 3rd level dark priest skill, the mental power consumed is the same).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03954))_
 
 > Base Mental Power Cost=8 Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03954))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03955))_
 
 > Area=One Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03955))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03956))_
 
 > Effect=Take away the target's hearing Type=Countered (Negated) By: _Cure Deafness_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03956))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03957))_
 
 > Expansion=Final score, duration Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03957))_

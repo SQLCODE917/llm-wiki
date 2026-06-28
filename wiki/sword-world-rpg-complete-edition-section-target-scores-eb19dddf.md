@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-target-scores-eb19dddf@05de09f3ba15db938b62227df4437c0a
+projection_coverage: section-sword-world-rpg-complete-edition-section-target-scores-eb19dddf@fd2e836c165e575619159f484fca57c4
 ---
 
 # **Target Scores**
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
+
+> A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03552))_
 
 | Base Target Score = 10 |
 | --- |
@@ -55,10 +60,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03552))_
 
-> Context: To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+
+> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03795))_
 
 | Target Score | Difculty | Standard |
 | --- | --- | --- |
@@ -108,4 +117,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03795))_

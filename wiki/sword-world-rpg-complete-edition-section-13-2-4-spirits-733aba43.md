@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-4-spirits-733aba43@85630374a5e0fafd89e6e0f0d644b877
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-4-spirits-733aba43@88b6cac82833a221408680b3aec51158
 ---
 
 # 13.2.4 Spirits
@@ -185,245 +185,456 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05078))_
+
 > **[ Will-O-Wisp ]** Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05078))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05079))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05079))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05080))_
 
 > Agility=18 Movement Speed=20 (air) Number=Solo to several Frequency=Rare Intellect=Almost none Reaction=Neutral to violent Attack Points=Disintegrate: Always hits Strike Points=Strike power 10,
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05080))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05082))_
 
 > Evasion Points=12 (5) Defense Points=0 Life Points/Resistance=1/8 (1) Mental Points/Resistance=-/10 (3) Special Abilities=Releases energy and disintegrates
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05082))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05084))_
 
 > When they appear as mad spirits, there are two actions they can take.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05084))_
 
-> Context: The other type is one that collides directly with anything that comes into view. Will-o-wisps only target things that have a functioning mind. They will not target plants, minerals, vessels, etc. that do not have intelligence. They also will not attack low grade undead that do not have a mind. However, sleeping humans are subject to attack. Please make your judgment based on _whether it has a score called mental power (points)_ . Will-o-wisp attacks are always successful. When a Will-O-Wisp hits
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05085))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05085))_
+
+> The other type is one that collides directly with anything that comes into view. Will-o-wisps only target things that have a functioning mind. They will not target plants, minerals, vessels, etc. that do not have intelligence. They also will not attack low grade undead that do not have a mind. However, sleeping humans are subject to attack. Please make your judgment based on _whether it has a score called mental power (points)_ . Will-o-wisp attacks are always successful. When a Will-O-Wisp hits
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05087))_
 
 > If you strike a will-o-wisp with a melee weapon (it doesn't have to be silver or magical), you can destroy it, but the attacker will also suffer damage as if they were hit by the will-o-wisp.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05087))_
 
-> Context: Will-o-wisp is the counterpart to the shade, which is described below, and when it comes into contact with a shade, it disappears without emitting any energy.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05088))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05088))_
+
+> Will-o-wisp is the counterpart to the shade, which is described below, and when it comes into contact with a shade, it disappears without emitting any energy.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05090))_
 
 > Monster Level=2 Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05090))_
 
-> Context: Will-o-wisp is the counterpart to the shade, which is described below, and when it comes into contact with a shade, it disappears without emitting any energy.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05088))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05088))_
+
+> Will-o-wisp is the counterpart to the shade, which is described below, and when it comes into contact with a shade, it disappears without emitting any energy.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05091))_
 
 > Agility=18 Movement Speed=20 (air) Number=One to several Frequency=Rare Intellect=Almost none
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05091))_
 
-> Context: Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it’s impossible to identify its shape because it’s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it’s unlikely that your attacks will hit it (it’ll definitely disintegrate if they do). They will always attack by 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05096))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05096))_
+
+> Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it’s impossible to identify its shape because it’s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it’s unlikely that your attacks will hit it (it’ll definitely disintegrate if they do). They will always attack by
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05094))_
 
 > Languages=None Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05094))_
 
-> Context: Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it’s impossible to identify its shape because it’s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it’s unlikely that your attacks will hit it (it’ll definitely disintegrate if they do). They will always attack by 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05096))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05096))_
+
+> Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it’s impossible to identify its shape because it’s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it’s unlikely that your attacks will hit it (it’ll definitely disintegrate if they do). They will always attack by
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05095))_
 
 > Life Points/Resistance=1/8 (1) Mental Points/Resistance=-/10 (3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05095))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05096))_
 
 > They will always attack by ramming any being with a will that comes into their view.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05096))_
 
-> Context: Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it’s impossible to identify its shape because it’s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it’s unlikely that your attacks will hit it (it’ll definitely disintegrate if they do). They will always attack by 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05096))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05096))_
+
+> Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it’s impossible to identify its shape because it’s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it’s unlikely that your attacks will hit it (it’ll definitely disintegrate if they do). They will always attack by
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05099))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05099))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05100))_
 
 > Rarity=14 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05100))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05101))_
 
 > Agility=14 Movement Speed=Special Number=Solo to several
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05101))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05102))_
 
 > Frequency=Very Rare Intellect=Human Reaction=Neutral to violent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05102))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05103))_
 
 > Attack Points=Furniture ： 10 (3) Strike Points=5 to 9 Evasion Points=Defense Points=Life Points/Resistance=-/Mental Points/Resistance=18/12 (5) Special Abilities=Physical attack immunity
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05103))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05105))_
 
 > Habitat=Old mansions
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05105))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05106))_
 
 > Languages=Silent spirit, mansion residents’ language
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05106))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05107))_
 
 > Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05107))_
+
+### Technical atom 20
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05118))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05118))_
+
+### Technical atom 21
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05119))_
 
 > Agility=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05119))_
+
+### Technical atom 22
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05120))_
 
 > Movement Speed=6/10 (water) Number=Solo to several Frequency=Rare Intellect=Human Reaction=Violent Attack Points=Strike Points=Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05120))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05121))_
 
 > Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6, undine only)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05121))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05124))_
 
 > Languages=Silent spirit Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05124))_
+
+### Technical atom 25
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05125))_
 
 > They can stick to their opponent and make them uncomfortable, or they can wrap around their face and make them feel pain for a while, but if the opponent has the will to resist, they can easily escape.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05125))_
 
-> Context: If a character fails the check, that means they've swallowed the undine. However, the victim can attempt to spit the undine out once swallowed. To do so, you must make a successful life force resistance roll. The target score is still 12. This check may be attempted once per round, but you cannot take any other actions while swallowing the undine. Also, you cannot spit out the undine while underwater.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05129))_
+### Technical atom 26
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05129))_
+
+> If a character fails the check, that means they've swallowed the undine. However, the victim can attempt to spit the undine out once swallowed. To do so, you must make a successful life force resistance roll. The target score is still 12. This check may be attempted once per round, but you cannot take any other actions while swallowing the undine. Also, you cannot spit out the undine while underwater.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05127))_
 
 > Undine can cast magic sourced from the power of undine without consuming its own mental points (the spells cannot be expanded).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05127))_
 
-> Context: If a target drinks even a little of an undine's body, this water spirit will enter directly into their lungs. A check for whether or not you’ve taken a drink is made via success roll using " _adventurer level + agility bonus_ " as the baseline score. The target score in this case is 12. This check must be made every round until you escape from the spring or river containing the undine. However, in this case, you can obviously hold your breath. As long as you hold your breath, you don't have to w
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05128))_
+### Technical atom 27
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05128))_
+
+> If a target drinks even a little of an undine's body, this water spirit will enter directly into their lungs. A check for whether or not you’ve taken a drink is made via success roll using " _adventurer level + agility bonus_ " as the baseline score. The target score in this case is 12. This check must be made every round until you escape from the spring or river containing the undine. However, in this case, you can obviously hold your breath. As long as you hold your breath, you don't have to w
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05129))_
 
 > To do so, you must make a successful life force resistance roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05129))_
+
+### Technical atom 28
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05135))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05135))_
+
+### Technical atom 29
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05136))_
 
 > Agility=10 Movement Speed=6 Number=Solo to several Frequency=Rare Intellect=Low Reaction=Violent Attack Points=Strike Points=Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=10/11 (4)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05136))_
+
+### Technical atom 30
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05137))_
 
 > Mental Points/Resistance=20/13 (6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05137))_
+
+### Technical atom 31
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05138))_
 
 > Special Abilities=Fire (Strike power 10, bonus damage 5, Magic Intensity/Magic Power=12/5)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05138))_
+
+### Technical atom 32
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05140))_
 
 > Habitat=Anywhere, provided there’s fire Languages=Silent spirit Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05140))_
 
-> Context: Salamanders are spirits, so their temporary bodies are, so to speak, a modified form of their spirit power, so they cannot be attacked by normal weapons. Iron can obstruct the workings of a spirit, but it cannot be used as a means to extinguish it. To damage a Salamander, you need a magic or magically-imbued weapon, or a silver weapon. Also, when a person using the
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05142))_
+### Technical atom 33
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05142))_
+
+> Salamanders are spirits, so their temporary bodies are, so to speak, a modified form of their spirit power, so they cannot be attacked by normal weapons. Iron can obstruct the workings of a spirit, but it cannot be used as a means to extinguish it. To damage a Salamander, you need a magic or magically-imbued weapon, or a silver weapon. Also, when a person using the
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05144))_
 
 > You can also deal damage to a Salamander by pouring water on it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05144))_
+
+### Technical atom 34
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05147))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05147))_
+
+### Technical atom 35
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05150))_
 
 > Habitat=Anywhere Languages=Silent spirit Perception=Magic Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05150))_
+
+### Technical atom 36
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05156))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05156))_
+
+### Technical atom 37
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05157))_
 
 > Agility=10 Movement Speed=18 (air)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05157))_
 
-> Context: Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05160))_
+### Technical atom 38
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05160))_
+
+> Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05162))_
 
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05162))_
 
-> Context: Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05160))_
+### Technical atom 39
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05160))_
+
+> Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05163))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05163))_
+
+### Technical atom 40
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05164))_
 
 > Agility=18 Movement Speed=16 Number=One Frequency=Rare Intellect=Human Reaction=Violent Attack Points=Fangs: 11 (4) Strike Points=7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05164))_
+
+### Technical atom 41
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05165))_
 
 > Evasion Points=14 (7) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6) Special Abilities=Transparent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05165))_
 
-> Context: Sprites are said to be the spirits that control the emotion of shame (the function of the mind). A mad sprite remains invisible and attacks nearby creatures with its fangs. Because it's invisible, its appearance cannot be identified, but it is said to resemble a leprechaun, etc. When attacking a mad sprite, a -4 modifier will be imposed. Also, you cannot cast magic on mad sprites.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05168))_
+### Technical atom 42
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05168))_
+
+> Sprites are said to be the spirits that control the emotion of shame (the function of the mind). A mad sprite remains invisible and attacks nearby creatures with its fangs. Because it's invisible, its appearance cannot be identified, but it is said to resemble a leprechaun, etc. When attacking a mad sprite, a -4 modifier will be imposed. Also, you cannot cast magic on mad sprites.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05167))_
 
 > Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05167))_
+
+### Technical atom 43
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05168))_
 
 > Also, you cannot cast magic on mad sprites.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05168))_
+
+### Technical atom 44
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05169))_
 
 > When a mad sprite performs this attack, the target must make a mental power resistance roll (target score 13).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05169))_
 
-> Context: Mad sprites have the ability to make others invisible. When a mad sprite performs this attack, the target must make a mental power resistance roll (target score 13). If you fail, you will become invisible. Those who have become invisible cannot see themselves either. For this reason, a -2 modifier will be imposed on all physical action checks. This invisibility cannot be removed unless you use _Dispel Magic_ , etc. or defeat the mad sprite.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05169))_
+### Technical atom 45
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05169))_
+
+> Mad sprites have the ability to make others invisible. When a mad sprite performs this attack, the target must make a mental power resistance roll (target score 13). If you fail, you will become invisible. Those who have become invisible cannot see themselves either. For this reason, a -2 modifier will be imposed on all physical action checks. This invisibility cannot be removed unless you use _Dispel Magic_ , etc. or defeat the mad sprite.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05172))_
 
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05172))_
+
+### Technical atom 46
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05173))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05173))_
+
+### Technical atom 47
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05174))_
 
 > Agility=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05174))_
+
+### Technical atom 48
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05175))_
 
 > Movement Speed=6 (ground)/ 10 (underground)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05175))_
+
+### Technical atom 49
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05176))_
 
 > Number=One to several Frequency=Rare Intellect=Low Reaction=Violent Attack Points=Strike Points=Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05176))_
+
+### Technical atom 50
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05177))_
 
 > Special Abilities=Stone (Strike power 20, bonus damage 5, Magic Intensity/Magic Power=12/5)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05177))_
+
+### Technical atom 51
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05185))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05185))_
+
+### Technical atom 52
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05191))_
 
 > Also, when attacking with a weapon, you will only be able to deal damage if it’s a magical or a silver weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05191))_
+
+### Technical atom 53
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05193))_
 
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05193))_
+
+### Technical atom 54
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05194))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05194))_
+
+### Technical atom 55
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05195))_
 
 > Agility=18 Movement Speed=16/6 (air) Number=One Frequency=Rare Intellect=Human Reaction=Violent Attack Points=Fangs: 11 (4) Strike Points=7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05195))_
+
+### Technical atom 56
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05196))_
 
 > Evasion Points=14 (7) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6) Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6, leprechaun only)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05196))_
+
+### Technical atom 57
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
 
 > In addition to normal movement, they can also perform teleportation.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
 
-> Context: Leprechauns are mind spirits who control chaos. Its appearance is that of a completely naked imp, with no features that indicate its gender. In addition to normal movement, they can also perform teleportation. They cannot take any other actions during the round in which this action was chosen The teleportation destination is within the leprechaun's view. Leprechauns are spirits, but in this world they have a complete form, and will attack by biting. Other than that, they also attack (confuse) yo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
+### Technical atom 58
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
+
+> Leprechauns are mind spirits who control chaos. Its appearance is that of a completely naked imp, with no features that indicate its gender. In addition to normal movement, they can also perform teleportation. They cannot take any other actions during the round in which this action was chosen The teleportation destination is within the leprechaun's view. Leprechauns are spirits, but in this world they have a complete form, and will attack by biting. Other than that, they also attack (confuse) yo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05200))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05200))_
 
-> Context: Leprechauns are mind spirits who control chaos. Its appearance is that of a completely naked imp, with no features that indicate its gender. In addition to normal movement, they can also perform teleportation. They cannot take any other actions during the round in which this action was chosen The teleportation destination is within the leprechaun's view. Leprechauns are spirits, but in this world they have a complete form, and will attack by biting. Other than that, they also attack (confuse) yo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
+### Technical atom 59
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
+
+> Leprechauns are mind spirits who control chaos. Its appearance is that of a completely naked imp, with no features that indicate its gender. In addition to normal movement, they can also perform teleportation. They cannot take any other actions during the round in which this action was chosen The teleportation destination is within the leprechaun's view. Leprechauns are spirits, but in this world they have a complete form, and will attack by biting. Other than that, they also attack (confuse) yo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05201))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05201))_
+
+### Technical atom 60
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05202))_
 
 > Agility=19 Movement Speed=19 Number=One Frequency=Very Rare Intellect=Human Reaction=Violent Attack Points=Barehanded: 12 (5) Strike Points=6 Evasion Points=14 (7) Defense Points=7 Life Points/Resistance=10/12 (5)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05202))_
+
+### Technical atom 61
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05203))_
 
 > Mental Points/Resistance=20/14 (7) Special Abilities=Charm (Resist target score=14)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05203))_
+
+### Technical atom 62
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05206))_
 
 > Languages=Silent spirit Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05206))_
 
-> Context: A mad dryad uses the spirit magic " _Charm_ " to cause division among allies, and tries to block their opponent's movements with " _Binding_ ". Using these spells does not consume any of the dryad’s mental points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05208))_
+### Technical atom 63
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05208))_
+
+> A mad dryad uses the spirit magic " _Charm_ " to cause division among allies, and tries to block their opponent's movements with " _Binding_ ". Using these spells does not consume any of the dryad’s mental points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05209))_
 
 > If magic cannot be cast on the target, the dryad will attack barehanded.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05209))_
+
+### Technical atom 64
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05212))_
 
 > Monster Level=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05212))_
+
+### Technical atom 65
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05213))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05213))_

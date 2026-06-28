@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-8-plants-4215440e@7b9c6147ff7d96d11277e513cdaf97f0
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-8-plants-4215440e@0ff79d503ba088385e9b83e9e9a01479
 ---
 
 # 13.2.8 Plants
@@ -82,143 +82,260 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: A killer octopus will use all of its tentacles to attack one target, constricting the opponent with its entire body. Please follow the rules for strangling (see p. 236).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06022))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06022))_
+
+> A killer octopus will use all of its tentacles to attack one target, constricting the opponent with its entire body. Please follow the rules for strangling (see p. 236).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06025))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06025))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06027))_
 
 > A giant octopus can use each of its eight tentacles to perform a strangling (see p.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06027))_
 
-> Context: A giant octopus can use each of its eight tentacles to perform a strangling (see p. 236) attack on separate targets. If you deal 5 or more points of damage (14 or more points of damage if defense points are taken into account) to a giant octopus with a bladed weapon, you’ll have cut off one of its tentacles, and the octopus’ number of attacks will be reduced by one.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06027))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06027))_
+
+> A giant octopus can use each of its eight tentacles to perform a strangling (see p. 236) attack on separate targets. If you deal 5 or more points of damage (14 or more points of damage if defense points are taken into account) to a giant octopus with a bladed weapon, you’ll have cut off one of its tentacles, and the octopus’ number of attacks will be reduced by one.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06030))_
 
 > **[ Creeping Tree ]** Monster Level=2 Rarity=10 Agility=11 Movement Speed=12 Number=One Frequency=Rare Intellect=None Reaction=Violent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06030))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06031))_
 
 > Attack Points=Tentacles:9 (2) Strike Points=5 Evasion Points=8 (1) Defense Points=6 Life Points/Resistance=25/12 (5) Mental Points/Resistance=-/10 (3) Special Abilities=Strangling Mental attack immunity Weak to fire
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06031))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06032))_
 
 > Habitat=Forests, meadows, human villages rarely
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06032))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06033))_
 
 > Languages=None Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06033))_
 
-> Context: Creeping trees do not have roots underground, but move around on the ground using their roots like imitation toes. They then use their tentacle-like branches to prey on animals that approach. Tentacle attacks are resolved the same way as strangling (see p. 236). When it stands still, it looks like an old oak tree covered in vines.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06034))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06034))_
+
+> Creeping trees do not have roots underground, but move around on the ground using their roots like imitation toes. They then use their tentacle-like branches to prey on animals that approach. Tentacle attacks are resolved the same way as strangling (see p. 236). When it stands still, it looks like an old oak tree covered in vines.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06035))_
 
 > Since it is a plant, it is weak against fire attacks, and when using spells such as _Fire Weapon_ and _Fire Bolt_ , you gain a +10 bonus to the usual strike power of spells.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06035))_
 
-> Context: Since it is a plant, it is weak against fire attacks, and when using spells such as _Fire Weapon_ and _Fire Bolt_ , you gain a +10 bonus to the usual strike power of spells. However, they do not have human-like minds, so spells that cause mental effects have no effect at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06035))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06035))_
+
+> Since it is a plant, it is weak against fire attacks, and when using spells such as _Fire Weapon_ and _Fire Bolt_ , you gain a +10 bonus to the usual strike power of spells. However, they do not have human-like minds, so spells that cause mental effects have no effect at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06037))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06037))_
 
-> Context: Since it is a plant, it is weak against fire attacks, and when using spells such as _Fire Weapon_ and _Fire Bolt_ , you gain a +10 bonus to the usual strike power of spells. However, they do not have human-like minds, so spells that cause mental effects have no effect at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06035))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06035))_
+
+> Since it is a plant, it is weak against fire attacks, and when using spells such as _Fire Weapon_ and _Fire Bolt_ , you gain a +10 bonus to the usual strike power of spells. However, they do not have human-like minds, so spells that cause mental effects have no effect at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06038))_
 
 > Rarity=18 Agility=14 Movement Speed=0 Number=One to several Frequency=Rare Intellect=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06038))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06039))_
 
 > Reaction=Violent Attack Points=Tentacles:9 (2) Strike Points=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06039))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06040))_
 
 > Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=19/12 (5) Mental Points/Resistance=-/11 (4) Special Abilities=Capture with tentacles
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06040))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06042))_
 
 > Habitat=Woods Languages=None Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06042))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06044))_
 
 > ethnoa can attack using all six tentacles at the same time, but it can use only two against a single target.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06044))_
 
-> Context: ethnoa can attack using all six tentacles at the same time, but it can use only two against a single target. If an adventurer is hit by an ethnoa's tentacles, they will suffer damage and also become entangled in the tentacles. On the next round, you must make a resistance roll using _adventurer level + strength bonus_ as the baseline score and the ethnoa's attack points (or the final score from when the attack hits) as the target score. If you fail, the poor adventurer is thrown into the pouch t
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06044))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06044))_
+
+> ethnoa can attack using all six tentacles at the same time, but it can use only two against a single target. If an adventurer is hit by an ethnoa's tentacles, they will suffer damage and also become entangled in the tentacles. On the next round, you must make a resistance roll using _adventurer level + strength bonus_ as the baseline score and the ethnoa's attack points (or the final score from when the attack hits) as the target score. If you fail, the poor adventurer is thrown into the pouch t
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06046))_
 
 > While the victim is still conscious, they can attack from within using a dagger, shortsword, or similar small bladed weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06046))_
 
-> Context: While the victim is still conscious, they can attack from within using a dagger, shortsword, or similar small bladed weapon. This attack suffers a -4 penalty to hit. However, the damage dealt is as per the normal rules. The victim cannot escape from inside unless the ethnoa dies.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06046))_
+### Technical atom 15
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06046))_
+
+> While the victim is still conscious, they can attack from within using a dagger, shortsword, or similar small bladed weapon. This attack suffers a -4 penalty to hit. However, the damage dealt is as per the normal rules. The victim cannot escape from inside unless the ethnoa dies.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06049))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06049))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06050))_
 
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06050))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06051))_
 
 > Agility=5 Movement Speed=0 Number=One Frequency=Rare Intellect=None Reaction=Violent Attack Points=Vine:10 (3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06051))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06052))_
 
 > Strike Points=7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06052))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06053))_
 
 > Evasion Points=9 (2) Defense Points=6 Life Points/Resistance=30/14 (7) Mental Points/Resistance=-/11 (4) Special Abilities=Strangling
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06053))_
 
-> Context: If a ranger or sage succeeds on a success roll against target score 12 using _ranger/sage skill level + intelligence bonus_ as the baseline score, they will be able to see the killer creeper's true identity before it approaches, and thus avoid the encounter (this is considered a use of _plant and animal check_ and _monster check_ ). If they fail, the adventurer will have stepped into the killer creeper without realizing it. This is always a surprise attack, so for one round, only the killer cree
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06059))_
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06059))_
+
+> If a ranger or sage succeeds on a success roll against target score 12 using _ranger/sage skill level + intelligence bonus_ as the baseline score, they will be able to see the killer creeper's true identity before it approaches, and thus avoid the encounter (this is considered a use of _plant and animal check_ and _monster check_ ). If they fail, the adventurer will have stepped into the killer creeper without realizing it. This is always a surprise attack, so for one round, only the killer cree
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06061))_
 
 > A character entangled in two or more vines cannot use ancient magic or spirit magic, because they're unable to move.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06061))_
 
-> Context: A character entangled in vines can also attempt to pull the entangled vines off instead of making a normal attack. Make a success roll using _adventurer level + strength bonus_ as the baseline score and the killer creeper's attack points (10,
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06062))_
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06062))_
+
+> A character entangled in vines can also attempt to pull the entangled vines off instead of making a normal attack. Make a success roll using _adventurer level + strength bonus_ as the baseline score and the killer creeper's attack points (10,
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06063))_
 
 > If successful, you can pull off the vines.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06063))_
 
-> Context: A character entangled in vines can also attempt to pull the entangled vines off instead of making a normal attack. Make a success roll using _adventurer level + strength bonus_ as the baseline score and the killer creeper's attack points (10,
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06062))_
+### Technical atom 22
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06062))_
+
+> A character entangled in vines can also attempt to pull the entangled vines off instead of making a normal attack. Make a success roll using _adventurer level + strength bonus_ as the baseline score and the killer creeper's attack points (10,
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06065))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06065))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06066))_
 
 > Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06066))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06067))_
 
 > Agility=8 Movement Speed=8 Number=One to several Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Barehanded:12 (5) Strike Points=7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06067))_
+
+### Technical atom 25
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06068))_
 
 > Evasion Points=12 (5) Defense Points=7 Life Points/Resistance=14/13 (6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06068))_
+
+### Technical atom 26
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06069))_
 
 > Mental Points/Resistance=12/13 (6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06069))_
+
+### Technical atom 27
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06070))_
 
 > Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=12/5, gnome, dryad only)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06070))_
+
+### Technical atom 28
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06071))_
 
 > Scream (Resist target score=12, once per day)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06071))_
+
+### Technical atom 29
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06073))_
 
 > Despite being plants, they have some intellect and can use spirit magic sourced from the power of dryad and gnome.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06073))_
 
-> Context: A mandrake is a plant with humanshaped roots, and when it's young, it grows underground like a normal plant, but in the seventh year after its seeds are sown, it crawls out from the soil and begins walking around the forest. It looks like an even uglier version of a goblin, with long leaves growing out of its head instead of hair. Despite being plants, they have some intellect and can use spirit magic sourced from the power of dryad and gnome. Young Mandrake root is prized as an ingredient for s
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06073, source-range-870a16bc-06076))_
+### Technical atom 30
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06073, source-range-870a16bc-06076))_
+
+> A mandrake is a plant with humanshaped roots, and when it's young, it grows underground like a normal plant, but in the seventh year after its seeds are sown, it crawls out from the soil and begins walking around the forest. It looks like an even uglier version of a goblin, with long leaves growing out of its head instead of hair. Despite being plants, they have some intellect and can use spirit magic sourced from the power of dryad and gnome. Young Mandrake root is prized as an ingredient for s
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06074))_
 
 > Anyone who hears this at close range without first wearing earplugs must make a mental power resistance roll against target score 12.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06074))_
 
-> Context: When a mandrake is hurt, it makes a terrifying scream. A Mandrake can only scream once per day. Anyone who hears this at close range without first wearing earplugs must make a mental power resistance roll against target score 12. If you fail, you cannot attack or cast spells for one full round, and you suffer a -4 penalty to evasion. At this time, if you roll double ones on your resistance roll, you will immediately go insane and become disabled. Young Mandrake root is prized as an ingredient fo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06074, source-range-870a16bc-06076))_
+### Technical atom 31
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06074, source-range-870a16bc-06076))_
+
+> When a mandrake is hurt, it makes a terrifying scream. A Mandrake can only scream once per day. Anyone who hears this at close range without first wearing earplugs must make a mental power resistance roll against target score 12. If you fail, you cannot attack or cast spells for one full round, and you suffer a -4 penalty to evasion. At this time, if you roll double ones on your resistance roll, you will immediately go insane and become disabled. Young Mandrake root is prized as an ingredient fo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06075))_
 
 > Additionally, those who fail the resistance roll must make another one, this time a life force resistance roll against target score 12.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06075))_
+
+### Technical atom 32
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06079))_
 
 > Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6, gnome, dryad only)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06079))_
+
+### Technical atom 33
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06080))_
 
 > Scream (Resist target score=13, once per day)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06080))_
+
+### Technical atom 34
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06081))_
 
 > Mental attack immunity Habitat=Human villages Languages=Silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06081))_
+
+### Technical atom 35
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06082))_
 
 > Alraune look exactly like humans, and can speak and think like humans, but when they are wounded, a thick, red mucus oozes out of them.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06082))_

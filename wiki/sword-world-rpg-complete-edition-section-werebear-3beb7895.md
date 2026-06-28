@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-werebear-3beb7895@9e828336ee8bcd168f43300e24170430
+projection_coverage: section-sword-world-rpg-complete-edition-section-werebear-3beb7895@6e619ac9599e085bbcc9f17929acdbb7
 ---
 
 # **Werebear**
@@ -20,8 +20,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06713))_
+
 > Evasion Points=13 (6) Defense Points=9 Life Points/Resistance=26/15 (8) Mental Points/Resistance=14/13 (6) Special Abilities=Normal weapon immunity after shifting into bear
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06713))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06714))_
 
 > Infect (Intensity 7) Habitat=Human villages, forests Languages=Regional
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06714))_

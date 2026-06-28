@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-basic-dark-magic-list-7926705e@7005a4dd7e1f93da07d46f27d75330e4
+projection_coverage: section-sword-world-rpg-complete-edition-section-basic-dark-magic-list-7926705e@abb9c255cad1ddd4edbccb120bf5345b
 ---
 
 # **Basic Dark Magic List**
@@ -22,8 +22,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Dark magic basically has the same origin as holy magic, and dark priests can use most of the basic holy magic. In addition, dark priests can use wicked magic that the gods of light do not allow (do not give power to). Furthermore, just as there is special holy magic that is unique to each god among holy magic, there is also special dark magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03923))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03923))_
+
+> Dark magic basically has the same origin as holy magic, and dark priests can use most of the basic holy magic. In addition, dark priests can use wicked magic that the gods of light do not allow (do not give power to). Furthermore, just as there is special holy magic that is unique to each god among holy magic, there is also special dark magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03925))_
 
 > Here is a list of common dark magic that any priest of the wicked gods can use.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03925))_

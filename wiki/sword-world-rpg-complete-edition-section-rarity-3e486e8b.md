@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-3e486e8b@c988c1968330ef6d75e9a33245222b67
+projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-3e486e8b@a6a509ff11bc7bf3e683233e16d15b79
 ---
 
 # 《 **Rarity** 》
@@ -26,8 +26,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Each poison has a **toxicity score** . When the poison enters the body, make a life force resistance roll (for monsters, a life _point_ resistance roll) using the toxicity score as the target score. If you fail, the effect will appear, but if you succeed, the effect will only appear incomplete or won't appear at all. The toxicity scores listed here are just examples; by diluting the substance, the toxicity score can be made as low as desired, and by concentrating it, it can be made somewhat grea
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04547))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04547))_
+
+> Each poison has a **toxicity score** . When the poison enters the body, make a life force resistance roll (for monsters, a life _point_ resistance roll) using the toxicity score as the target score. If you fail, the effect will appear, but if you succeed, the effect will only appear incomplete or won't appear at all. The toxicity scores listed here are just examples; by diluting the substance, the toxicity score can be made as low as desired, and by concentrating it, it can be made somewhat grea
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04549))_
 
 > An adventurer must make a success roll using _sage skill level + intelligence bonus_ as the baseline score, and if they succeed, they will know about the poison.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04549))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-oak-b1c19f44@481e06154837f1a910100515ca9dd544
+projection_coverage: section-sword-world-rpg-complete-edition-section-oak-b1c19f44@be1d168844d1895a112937b0d269b657
 ---
 
 # **Oak**
@@ -24,8 +24,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06385))_
+
 > Special Abilities=Mental attack immunity Not affected by poison and illness Habitat=Various
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06385))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06387))_
 
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06387))_

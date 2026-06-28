@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-analogy-of-success-and-failure-09d53aee@9155dc65d6061891f5236d093d84a80b
+projection_coverage: section-sword-world-rpg-complete-edition-section-analogy-of-success-and-failure-09d53aee@d35dfc4cb7b3c5ab01da3a1ba6fb2005
 ---
 
 # **Analogy of Success and Failure**
@@ -31,14 +31,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: However, a player is given only _one_ criteria to determine whether the success roll they made for a difficulty check is a success or a failure.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00644))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00644))_
+
+> However, a player is given only _one_ criteria to determine whether the success roll they made for a difficulty check is a success or a failure.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00646))_
 
 > If the roll is as high as 10 or 11, the success roll is considered to have a very high chance of success.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00646))_
 
-> Context: If the roll is as high as 10 or 11, the success roll is considered to have a very high chance of success. Therefore, if after examining the door, you do not find a trap, the risk is quite low even if you assume that there really are no traps.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00646))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00646))_
+
+> If the roll is as high as 10 or 11, the success roll is considered to have a very high chance of success. Therefore, if after examining the door, you do not find a trap, the risk is quite low even if you assume that there really are no traps.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00647))_
 
 > If the roll is low, such as 3 or 4, then there's a high chance that the success roll has failed.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00647))_

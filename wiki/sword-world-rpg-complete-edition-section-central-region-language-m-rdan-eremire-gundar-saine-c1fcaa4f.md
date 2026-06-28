@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-central-region-language-m-rdan-eremire-gundar-saine-c1fcaa4f@c33bc4fa47a683f8d5dc9a68f1a478ac
+projection_coverage: section-sword-world-rpg-complete-edition-section-central-region-language-m-rdan-eremire-gundar-saine-c1fcaa4f@72a46f69d81de40e145cc4d1e6bc0a41
 ---
 
 # **Central Region (Language = Mārdan/Eremire Gundar/Saine)**
@@ -66,8 +66,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: They are known for their extreme secrecy and rarely reveal their true nature or beliefs (they appear to worship their own deities). They have been known to send assassins after those who try to forcefully uncover their secrets or who accidentally witness important rituals. These assassins, skilled in spirit magic abilities, are greatly feared.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08289))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08289))_
+
+> They are known for their extreme secrecy and rarely reveal their true nature or beliefs (they appear to worship their own deities). They have been known to send assassins after those who try to forcefully uncover their secrets or who accidentally witness important rituals. These assassins, skilled in spirit magic abilities, are greatly feared.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08291))_
 
 > **Northern Central Region (Language = Western/Gundar)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08291))_

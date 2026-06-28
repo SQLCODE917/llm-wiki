@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mental-attack-immunity-0418098e@6bd3f304b5940f894edcef649a03900b
+projection_coverage: section-sword-world-rpg-complete-edition-section-mental-attack-immunity-0418098e@6d2cbd0df668855f16a09b27ca2c01c6
 ---
 
 # 《 **Mental Attack Immunity** 》
@@ -20,8 +20,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: They do not require rest or sleep in the usual sense. Therefore, they can never be put to sleep by magic, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06877))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06877))_
+
+> They do not require rest or sleep in the usual sense. Therefore, they can never be put to sleep by magic, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06875))_
 
 > If they do not have mental points (expressed as -), magic that deals damage to mental points ( _Shade_ , etc.) is likewise ineffective.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06875))_

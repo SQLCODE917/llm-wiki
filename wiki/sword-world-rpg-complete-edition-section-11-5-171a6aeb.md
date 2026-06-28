@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-11-5-171a6aeb@c82e8c0a1689b58e303ff47938e1214b
+projection_coverage: section-sword-world-rpg-complete-edition-section-11-5-171a6aeb@201caeca7b8383da893ebf82a3d69b9a
 ---
 
 # **11.5**
@@ -16,8 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))_
+
+> Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04387))_
 
 | 10th level | Royal capital level of a large country |
 | --- | --- |
@@ -39,4 +44,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04387))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sleep-cloud-d0fd459d@b55456b646ed2ff0a99fa2ef63e03c35
+projection_coverage: section-sword-world-rpg-complete-edition-section-sleep-cloud-d0fd459d@c1c745831fa83c53d8b990304a3e4261
 ---
 
 # **[ Sleep Cloud ]**
@@ -27,14 +27,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01603))_
+
 > Base Mental Power Cost=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01603))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01604))_
 
 > Distance=30 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01604))_
 
-> Context: This spell alters the air in a space within a 5 meter radius from the target, creating a gas with the effect of instantly putting any creatures inside to sleep. Anything within the area is affected, friend or foe, but targets that make a successful resistance roll will be completely unaffected by the spell.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01606))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01606))_
+
+> This spell alters the air in a space within a 5 meter radius from the target, creating a gas with the effect of instantly putting any creatures inside to sleep. Anything within the area is affected, friend or foe, but targets that make a successful resistance roll will be completely unaffected by the spell.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01607))_
 
 > happening in their surroundings, they can make a resistance roll each round, and wake up if successful.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01607))_

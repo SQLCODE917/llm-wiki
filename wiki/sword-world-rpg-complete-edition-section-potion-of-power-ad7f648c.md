@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-potion-of-power-ad7f648c@01f94cec10b096546f3c256dfeb2b1f9
+projection_coverage: section-sword-world-rpg-complete-edition-section-potion-of-power-ad7f648c@3a3d8e0febfbf71cc4af0215eda2a253
 ---
 
 # **[ Potion of Power ]**
@@ -16,8 +16,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07614))_
+
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07614))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07615))_
 
 > Form=Potion
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07615))_

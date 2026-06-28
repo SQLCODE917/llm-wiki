@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-54e907a2@fe6fd47436da76bc7c97c7fd60e9a2b1
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-54e907a2@2a84b56231ade52b9bb3415e2845b5bd
 ---
 
 # 4.10 Excellent Weapons and Armor
@@ -140,59 +140,102 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> If a character does not want to kill their opponent, they can declare **mercy** .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01108))_
+### Technical atom 1
 
-> Context: If a character does not want to kill their opponent, they can declare **mercy** . However, to do so, their weapon _must_ be a _dull weapon_ (a bludgeoning weapon). On Table 1-8: Weapons, _maces_ , _clubs_ , and _staves_ are classified as dull weapons. However, even if an item is classified as one of these, if you _throw_ it, you _cannot_ declare mercy. You can also declare
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01108))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01108))_
+
+> If a character does not want to kill their opponent, they can declare **mercy** .
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01108))_
+
+> If a character does not want to kill their opponent, they can declare **mercy** . However, to do so, their weapon _must_ be a _dull weapon_ (a bludgeoning weapon). On Table 1-8: Weapons, _maces_ , _clubs_ , and _staves_ are classified as dull weapons. However, even if an item is classified as one of these, if you _throw_ it, you _cannot_ declare mercy. You can also declare
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01109))_
 
 > You must declare mercy _before_ you make a hit check for your attack.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01109))_
 
-> Context: A character who falls down with 0 or negative life force due to an attack that was declared to be _mercy_ , will _only_ fail their _death check_ if _double ones_ are rolled. On any other roll, the character remains _alive_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01110))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01110))_
+
+> A character who falls down with 0 or negative life force due to an attack that was declared to be _mercy_ , will _only_ fail their _death check_ if _double ones_ are rolled. On any other roll, the character remains _alive_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01111))_
 
 > If left untreated, they must make another death check after _1 hour_ , and
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01111))_
 
-> Context: A character who falls down with 0 or negative life force due to an attack that was declared to be _mercy_ , will _only_ fail their _death check_ if _double ones_ are rolled. On any other roll, the character remains _alive_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01110))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01110))_
+
+> A character who falls down with 0 or negative life force due to an attack that was declared to be _mercy_ , will _only_ fail their _death check_ if _double ones_ are rolled. On any other roll, the character remains _alive_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01112))_
 
 > If they fail, then unless they roll double ones, they will continue to remain unconscious.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01112))_
 
-> Context: In addition, no matter how high quality it is, _nothing_ can affect its attack power or evasion speed. It’ll also have no effect on monsters that can only be wounded by magic or magical weapons (such as spirits, beastmen, etc.).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01124))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01124))_
+
+> In addition, no matter how high quality it is, _nothing_ can affect its attack power or evasion speed. It’ll also have no effect on monsters that can only be wounded by magic or magical weapons (such as spirits, beastmen, etc.).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01125))_
 
 > Also, even if you search all over Alecrast, you will usually only find _one_ with a required strength up to _5 lower than usual_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01125))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01128))_
 
 > **Table 4-5: Guideline for Obtaining High-Quality Weapons and Armor**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01128))_
 
-> Context: **Magical weapons** have exceptional _attack power_ and _bonus damage_ . If you use a +1 magical weapon, you receive a _+1 bonus_ to attack power and bonus damage. If +2, those bonuses are +2, and if +3, they're +3.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01144))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01144))_
+
+> **Magical weapons** have exceptional _attack power_ and _bonus damage_ . If you use a +1 magical weapon, you receive a _+1 bonus_ to attack power and bonus damage. If +2, those bonuses are +2, and if +3, they're +3.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01145))_
 
 > Magical weapons can deal damage to monsters that normal weapons cannot harm.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01145))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01149))_
 
 > If you wear +1 magical armor, you gain _+1_ to evasion speed and damage reduction.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01149))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01150))_
 
 > Even if it is magical, if it is _metal_ armor, a shaman cannot wear it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01150))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01154))_
 
 > Mithril silver is itself a mineral imbued with magic, and when processed, it gains power.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01154))_
 
-> Context: Mithril silver, like regular silver, is a metal that exists in the spirit world. Therefore, a shaman can wear mithril silver armor and _still_ use spirit magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01160))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01160))_
+
+> Mithril silver, like regular silver, is a metal that exists in the spirit world. Therefore, a shaman can wear mithril silver armor and _still_ use spirit magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01159))_
 
 > Mithril silver weapons can deal damage to monsters that normal weapons cannot harm.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01159))_
 
-> Context: _It's been said that no one could surpass the dwarves when it comes to the processing of mithril silver. Among the dwarves, the one who is said to have been the most skilled in the processing of mithril silver in the ancient kingdom, was Somska, an enchanter called the "Forger of Colors". The quality and quantity of Somska's mithril work was said to be outstanding, and countless legends have been passed down. The following anecdote is one of them._
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01174))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01174))_
+
+> _It's been said that no one could surpass the dwarves when it comes to the processing of mithril silver. Among the dwarves, the one who is said to have been the most skilled in the processing of mithril silver in the ancient kingdom, was Somska, an enchanter called the "Forger of Colors". The quality and quantity of Somska's mithril work was said to be outstanding, and countless legends have been passed down. The following anecdote is one of them._
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01177))_
 
 > Was this crown not to display all the colors of the world?!" It is said that Somska answered without changing the expression beneath his beard at all, "If you mix all colors together, you will only get black."_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01177))_

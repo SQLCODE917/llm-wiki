@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-cc8b74b0@021dcc085034e5e5a5ea7bc7fa9aab42
+projection_coverage: section-sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-cc8b74b0@e7b5f28c775a7aba144ffa51f8fd14d2
 ---
 
 # 15.1 Four Types of Experience Points
@@ -47,8 +47,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07663))_
+
 > If they _cannot_ achieve it, they will only get **500** points.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07663))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07666))_
 
 > If the game master deems it to be an incomplete success, but not _exactly_ a failure, he or she may decide to award experience points somewhere in between, such as 700 or 800.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07666))_

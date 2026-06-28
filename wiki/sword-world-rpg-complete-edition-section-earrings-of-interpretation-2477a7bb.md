@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-earrings-of-interpretation-2477a7bb@cdbf4398b1bf80cdcb9b5f95dfefed24
+projection_coverage: section-sword-world-rpg-complete-edition-section-earrings-of-interpretation-2477a7bb@53e98c5f38d7576f804f9c434ea97042
 ---
 
 # **[ Earrings of Interpretation ]**
@@ -21,20 +21,36 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Only when the final score reaches 18 do you realize this shield has a catch. The emerald gleaming in the center of the shield attracts the attention of opponents, causing them to focus their attacks on the user. Enemies that use breath attacks will especially target the shield's wielder. Those who carry this shield, which trades higher evasion speed for drawing enemy attacks, are destined to become shields for their companions. If the emerald is removed, all magical power is lost. The emerald it
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07241))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07241))_
+
+> Only when the final score reaches 18 do you realize this shield has a catch. The emerald gleaming in the center of the shield attracts the attention of opponents, causing them to focus their attacks on the user. Enemies that use breath attacks will especially target the shield's wielder. Those who carry this shield, which trades higher evasion speed for drawing enemy attacks, are destined to become shields for their companions. If the emerald is removed, all magical power is lost. The emerald it
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07244))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07244))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07245))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07245))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07246))_
 
 > Form=Earrings with blue gems set in a teardrop-shaped gold base
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07246))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07247))_
 
 > Base Trade Price=96,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07247))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07248))_
 
 > Powers=Can understand languages you don’t know
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07248))_

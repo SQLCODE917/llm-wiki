@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-frost-giant-98d97936@4c4ac175c5c3309c287e99448601a858
+projection_coverage: section-sword-world-rpg-complete-edition-section-frost-giant-98d97936@65c5ea4c7e8c895e80978ba14f8794b0
 ---
 
 # **Frost Giant**
@@ -29,8 +29,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05294))_
+
 > Habitat=Cold regions Languages=Giant, silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05294))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05295))_
 
 > If you can't communicate, they may threaten you.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05295))_

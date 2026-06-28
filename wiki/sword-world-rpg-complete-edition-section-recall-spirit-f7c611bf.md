@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-recall-spirit-f7c611bf@62f69a5de7d29a5d1b6ce717f0763272
+projection_coverage: section-sword-world-rpg-complete-edition-section-recall-spirit-f7c611bf@628d8ad217827ddc4641d3cbbe338124
 ---
 
 # **[ Recall Spirit ]**
@@ -26,20 +26,36 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03026))_
+
 > Base Mental Power Cost=45 Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03026))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03027))_
 
 > Area=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03027))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03028))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03028))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03029))_
 
 > Effect=Give the caster's body to a soul of the dead
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03029))_
 
-> Context: Priests who have given their bodies to others cannot be resurrected using _Resurrection_ , because they have lost their soul containers (although they _can_ have another priest cast _Recall Spirit_ on them...).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03032))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03032))_
+
+> Priests who have given their bodies to others cannot be resurrected using _Resurrection_ , because they have lost their soul containers (although they _can_ have another priest cast _Recall Spirit_ on them...).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03030))_
 
 > Type=Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03030))_

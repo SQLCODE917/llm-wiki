@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-gaze-ray-d40a1b1c@ce0fdf997544f57962b35e8621bc035b
+projection_coverage: section-sword-world-rpg-complete-edition-section-gaze-ray-d40a1b1c@84840256e8250b7f0783098b1ef7a075
 ---
 
 # 《 **Gaze/Ray** 》
@@ -21,14 +21,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is the ability to hypnotize opponents. The targeted character must make a mental power resistance roll against the indicated target score. If you fail, you’ll be manipulated at your opponent’s will.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06780))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06780))_
+
+> This is the ability to hypnotize opponents. The targeted character must make a mental power resistance roll against the indicated target score. If you fail, you’ll be manipulated at your opponent’s will.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06782))_
 
 > The targeted character must make a mental power resistance roll against the indicated target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06782))_
 
-> Context: This attacks opponents with a gaze or a ray. The targeted character must make a mental power resistance roll against the indicated target score. If you fail, you’ll suffer the effects as indicated.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06782))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06782))_
+
+> This attacks opponents with a gaze or a ray. The targeted character must make a mental power resistance roll against the indicated target score. If you fail, you’ll suffer the effects as indicated.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06783))_
 
 > but if this is not specified, it cannot be reflected.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06783))_

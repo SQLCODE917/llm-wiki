@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-the-number-of-times-the-game-master-has-to-roll-dice-during-combat-wil-27604d7e@0ed8877d06f6627d46cc4ffb6015c191
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-the-number-of-times-the-game-master-has-to-roll-dice-during-combat-wil-27604d7e@c690021417721993671650cb19135e4d
 ---
 
 # **[ 1. The number of times the game master has to roll dice during combat will be drastically reduced ]**
@@ -30,14 +30,25 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> If an enemy's strike roll is a critical, resulting in heavy damage or even death, the player may feel frustrated that they've been _killed by a roll of the dice_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06733))_
+### Technical atom 1
 
-> Context: _Agility_ and _movement speed_ use the character's _agility_ ability score as it is.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06737))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06733))_
+
+> If an enemy's strike roll is a critical, resulting in heavy damage or even death, the player may feel frustrated that they've been _killed by a roll of the dice_ .
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06737))_
+
+> _Agility_ and _movement speed_ use the character's _agility_ ability score as it is.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06740))_
 
 > **Table 13-1: Key Number = Expected Equivalents**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06740))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06741))_
 
 | Critical Target 9 | 0-1 | 2-5 | 6-9 | 10-13 | 14-18 | 19-22 | 23-26 | 27-31 | 32-35 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -61,4 +72,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06740))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06741))_

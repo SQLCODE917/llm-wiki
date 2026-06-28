@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-habitat-seas-d2466f2c@5f6d0cbba705f8f7e719229560a70478
+projection_coverage: section-sword-world-rpg-complete-edition-section-habitat-seas-d2466f2c@4c7f53edb1d8ff4867f55f693313cd5b
 ---
 
 # Habitat=Seas
@@ -23,8 +23,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05553))_
+
 > Languages=None Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05553))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05555))_
 
 > A sea dragon can attack with its fangs and tail, and at the same time, it can also wrap its long body around its opponent and perform a strangling attack (see p.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05555))_

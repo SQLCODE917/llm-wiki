@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-2-5c222b02@d74d3d71deca7c3327c0124413fc489e
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-2-5c222b02@4319de093fa23fa4e7cf1f422390dd20
 ---
 
 # **16.2**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-16-2-5c222
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_
 
 | Type | Attack Power Mod. | Strike Power Mod. | Critical Target |
 | --- | --- | --- | --- |
@@ -96,4 +100,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_

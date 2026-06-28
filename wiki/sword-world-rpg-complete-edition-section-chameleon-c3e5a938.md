@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chameleon-c3e5a938@b2bac4b1468c811160db3a1b9bc12867
+projection_coverage: section-sword-world-rpg-complete-edition-section-chameleon-c3e5a938@c1e0e7b2895301495b931ce93c4c6559
 ---
 
 # **[ Chameleon ]**
@@ -16,26 +16,46 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell has the ability to rejuvenate the body and mind, and can increase mental power resistance by +2. This bonus is effective on any mental power resistance roll.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01593))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01593))_
+
+> This spell has the ability to rejuvenate the body and mind, and can increase mental power resistance by +2. This bonus is effective on any mental power resistance roll.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01595))_
 
 > Base Mental Power Cost=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01595))_
 
-> Context: This spell has the ability to rejuvenate the body and mind, and can increase mental power resistance by +2. This bonus is effective on any mental power resistance roll.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01593))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01593))_
+
+> This spell has the ability to rejuvenate the body and mind, and can increase mental power resistance by +2. This bonus is effective on any mental power resistance roll.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01596))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01596))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01597))_
 
 > Area=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01597))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01598))_
 
 > Duration=Until focus ends
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01598))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01599))_
 
 > Effect=Assimilates caster's appearance into the surrounding scenery, making them invisible
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01599))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01600))_
 
 > Type=Focus, illusion Expansion=Final score Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01600))_

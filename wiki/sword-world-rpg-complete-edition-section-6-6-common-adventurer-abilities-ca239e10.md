@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-6-6-common-adventurer-abilities-ca239e10@33ce611efc683ced66c2099499ee0acf
+projection_coverage: section-sword-world-rpg-complete-edition-section-6-6-common-adventurer-abilities-ca239e10@0a77c17ae5afe6d9459a5c98649df9c8
 ---
 
 # 6.6 Common Adventurer Abilities
@@ -124,83 +124,141 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03500))_
+
 > By the nature of their business, a bard is familiar with myths and folklore passed down in various regions, as well as ancient poetry. This is because telling these stories is an important part of their job. Also, some of these legends include things that can serve as clues for your adventures. For example, a saga that tells of a battle between a monster and a hero may contain information about the monster's weakness. Legends about the ancient kingdom can sometimes lead adventurers to ancient ruins.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03500))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03510))_
 
 > Falling off a horse will be treated as if you had fallen from a height of 3 meters, so you must make a damage check.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03510))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03517))_
 
 > When trying to ride a wild horse, you must first succeed on a success roll while attempting to mount it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03517))_
 
-> Context: The riding rules here apply when dealing with trained horses, such as riding horses, war horses, etc. When trying to ride a wild horse, you must first succeed on a success roll while attempting to mount it. At this time, the target score is 9, but since the wild horse is not wearing a rein, a -4 penalty will be imposed. You can think of it as actually _13_ . If you want to control a wild horse in combat, etc. the target score is 11. If you
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03517))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03517))_
+
+> The riding rules here apply when dealing with trained horses, such as riding horses, war horses, etc. When trying to ride a wild horse, you must first succeed on a success roll while attempting to mount it. At this time, the target score is 9, but since the wild horse is not wearing a rein, a -4 penalty will be imposed. You can think of it as actually _13_ . If you want to control a wild horse in combat, etc. the target score is 11. If you
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03520))_
 
 > If you are just riding normally, you do not need to make a success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03520))_
 
-> Context: Basically all adventurers can swim. Therefore, you can swim across any pond that is about 25 meters in size. There is no need for a success roll (some players may choose to say _my character is sinking like a stone_ , but that's up to them).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03526))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03526))_
+
+> Basically all adventurers can swim. Therefore, you can swim across any pond that is about 25 meters in size. There is no need for a success roll (some players may choose to say _my character is sinking like a stone_ , but that's up to them).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
 
 > However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
 
-> Context: However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
+
+> However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03528))_
 
 > You can only wear cloth or at most soft leather.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03528))_
 
-> Context: However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
+
+> However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03529))_
 
 > If you succeed, you will be able to take it off and rise to the surface.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03529))_
 
-> Context: This attempt takes one minute, regardless of success or failure. An adventurer can only hold their breath underwater for a number of rounds equal to their life force. Each round is 10 seconds long, so this success roll can only be made a number of times equal to your life force ÷ 6, or in other words, your life force bonus. If you can't take off your armor in time, you'll drown.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03530))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03530))_
+
+> This attempt takes one minute, regardless of success or failure. An adventurer can only hold their breath underwater for a number of rounds equal to their life force. Each round is 10 seconds long, so this success roll can only be made a number of times equal to your life force ÷ 6, or in other words, your life force bonus. If you can't take off your armor in time, you'll drown.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
 
 > Also, if the distance is long or there are rapids, add a
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
 
-> Context: Heavy weapons and luggage also impede swimming. If you recklessly try to swim with a sword, spear, or ax, then using _adventurer level + agility bonus_ as the baseline score, make a success roll against target score 13 (this can be increased or decreased depending on the weight of your belongings. Also, if the distance is long or there are rapids, add a
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
+
+> Heavy weapons and luggage also impede swimming. If you recklessly try to swim with a sword, spear, or ax, then using _adventurer level + agility bonus_ as the baseline score, make a success roll against target score 13 (this can be increased or decreased depending on the weight of your belongings. Also, if the distance is long or there are rapids, add a
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03532))_
 
 > Even when carrying something other than a weapon, the game master should consider its weight when determining the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03532))_
 
-> Context: Heavy weapons and luggage also impede swimming. If you recklessly try to swim with a sword, spear, or ax, then using _adventurer level + agility bonus_ as the baseline score, make a success roll against target score 13 (this can be increased or decreased depending on the weight of your belongings. Also, if the distance is long or there are rapids, add a
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
+
+> Heavy weapons and luggage also impede swimming. If you recklessly try to swim with a sword, spear, or ax, then using _adventurer level + agility bonus_ as the baseline score, make a success roll against target score 13 (this can be increased or decreased depending on the weight of your belongings. Also, if the distance is long or there are rapids, add a
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03532))_
 
 > few more points to the target score), and if you fail, you will sink. However, unlike armor, weapons can be easily discarded. Even when carrying something other than a weapon, the game master should consider its weight when determining the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03532))_
 
-> Context: few more points to the target score), and if you fail, you will sink. However, unlike armor, weapons can be easily discarded. Even when carrying something other than a weapon, the game master should consider its weight when determining the target score.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03532))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03532))_
+
+> few more points to the target score), and if you fail, you will sink. However, unlike armor, weapons can be easily discarded. Even when carrying something other than a weapon, the game master should consider its weight when determining the target score.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03533))_
 
 > Climbing with the thief skill does _not_ require rope assistance, and if you _do_ have a rope, you can almost certainly climb.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03533))_
 
-> Context: Note that when a thief climbs up or down a wall or cliff _without_ using a rope, the conditions marked * are not possible.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03538))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03538))_
+
+> Note that when a thief climbs up or down a wall or cliff _without_ using a rope, the conditions marked * are not possible.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03539))_
 
 > If you're just going straight through calm water, you don't need a success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03539))_
 
-> Context: An adventurer with adventurer level 4 and an agility bonus +2, attempts to climb a vertical natural cliff using a rope. He's wearing chain mail armor. The baseline score is _adventurer level + agility bonus_ = _6_ . The target score is 10+2+4= _16_ , taking into account the conditions of _vertical cliff with a foothold_ and _chain mail._ In other words, if he rolls 2D and gets a score of 10 or greater, he’ll succeed at climbing.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03541))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03541))_
+
+> An adventurer with adventurer level 4 and an agility bonus +2, attempts to climb a vertical natural cliff using a rope. He's wearing chain mail armor. The baseline score is _adventurer level + agility bonus_ = _6_ . The target score is 10+2+4= _16_ , taking into account the conditions of _vertical cliff with a foothold_ and _chain mail._ In other words, if he rolls 2D and gets a score of 10 or greater, he’ll succeed at climbing.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03543))_
 
 > If this adventurer is a thief, he can remove and discard the heavy armor he is wearing, and he can use his thief skill to attempt the climb more safely.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03543))_
 
-> Context: First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545))_
+
+> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03546))_
 
 > **Table 6-1: Climb by Skill**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03546))_
 
-> Context: First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb time, only double ones will result in a failure.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, source-range-870a16bc-03549))_
+### Technical atom 15
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, source-range-870a16bc-03549))_
+
+> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb time, only double ones will result in a failure.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
 
 | **Table 6-1: Climb by Skill** |
 | --- |
@@ -220,13 +278,20 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, 
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
 
 > If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
 
-> Context: A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
+
+> A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03552))_
 
 | Base Target Score = 10 |
 | --- |
@@ -264,34 +329,54 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03552))_
 
-> Context: If an adventurer falls, damage will be determined as follows. **Falling damage** = fall height x 3 - (defense roll result + adventurer level)
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03559, source-range-870a16bc-03563))_
+### Technical atom 18
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03559, source-range-870a16bc-03563))_
+
+> If an adventurer falls, damage will be determined as follows. **Falling damage** = fall height x 3 - (defense roll result + adventurer level)
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03561))_
 
 > Just like when reducing damage in weapon combat, make a defense roll using the armor's defense power as the key number, and add your adventurer level to the result to determine the damage reduced.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03561))_
 
-> Context: However, an adventurer can reduce this damage depending on their adventurer level and armor. Just like when reducing damage in weapon combat, make a defense roll using the armor's defense power as the key number, and add your adventurer level to the result to determine the damage reduced. If the defense roll comes up _double ones_ , all damage reduction is lost, including adventurer level. Owners of the thief skill can greatly reduce this damage with their _tumble_ ability. If an owner of the th
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03561, source-range-870a16bc-03565))_
+### Technical atom 19
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03561, source-range-870a16bc-03565))_
+
+> However, an adventurer can reduce this damage depending on their adventurer level and armor. Just like when reducing damage in weapon combat, make a defense roll using the armor's defense power as the key number, and add your adventurer level to the result to determine the damage reduced. If the defense roll comes up _double ones_ , all damage reduction is lost, including adventurer level. Owners of the thief skill can greatly reduce this damage with their _tumble_ ability. If an owner of the th
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03563))_
 
 > **Falling damage** = fall height x 3 - (defense roll result + adventurer level)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03563))_
 
-> Context: Base falling damage (fall height x 3) is for falling on normal ground. If you fall on soft grass or on the water surface, calculate by reducing factors, such as _fall height x 2_ , _fall height x 1_ , etc. On the other hand, if you have something like spikes sticking out, etc. increase the factor to increase the damage. This decision should be made by the game master.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03564))_
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03564))_
+
+> Base falling damage (fall height x 3) is for falling on normal ground. If you fall on soft grass or on the water surface, calculate by reducing factors, such as _fall height x 2_ , _fall height x 1_ , etc. On the other hand, if you have something like spikes sticking out, etc. increase the factor to increase the damage. This decision should be made by the game master.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03565))_
 
 > If an owner of the thief skill falls, the height can be calculated by subtracting _thief skill level + agility bonus_ meters from the height of the fall.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03565))_
 
-> Context: The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+
+> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03579))_
 
 > **Table 6-3: Determining Long Jump Target Scores**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03579))_
 
-> Context: The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+### Technical atom 22
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+
+> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
 
 | Feature Used | Base Target Score |
 | --- | --- |
@@ -324,10 +409,16 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03581))_
 
 > **Table 6-4: Determining High Jump Target Scores**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03581))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
 
 | Skill Used | Base Target Score |
 | --- | --- |
@@ -356,7 +447,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03581))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
+
+### Technical atom 25
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08385))_
 
 | Ability | Relevant AbilityScore | Retryinga success roll on the same target |
 | --- | --- | --- |
@@ -380,7 +474,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08385))_
+
+### Technical atom 26
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08390))_
 
 | AbilityScore | Bonus |
 | --- | --- |
@@ -406,10 +503,14 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08385))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08390))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+### Technical atom 27
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08392))_
 
 | Sub-AbilityScore | Human | Dwarf | Grassrunner | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -439,10 +540,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08392))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+### Technical atom 28
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08395))_
 
 | AbilityScore | Human | Grassrunner | Dwarf | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -468,7 +573,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08395))_
+
+### Technical atom 29
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08398))_
 
 | 2D | Background | StartingSkills | Exp. Pts. | Money |
 | --- | --- | --- | --- | --- |
@@ -504,7 +612,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08395))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08398))_
+
+### Technical atom 30
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08400))_
 
 | Race | Restrictions／Special Abilities | Pre-Adventure<br>Exp. Pts. | Money |
 | --- | --- | --- | --- |
@@ -528,7 +639,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08398))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08400))_
+
+### Technical atom 31
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08402))_
 
 | Attained<br>Level | Sorcerer & Sage at the<br>same time | Sorcerer | Sorcerer<br>(with<br>Sage) | <br>Shaman | <br>Fighter<br>Tief<br>Priest | <br>Ranger<br>Sage<br>Bard |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -548,7 +662,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08400))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08402))_
+
+### Technical atom 32
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08405))_
 
 | **Table 1-8: Weapons-1** |
 | --- |
@@ -576,7 +693,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08402))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08405))_
+
+### Technical atom 33
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08408))_
 
 | **Table 1-8: Weapons-2** |
 | --- |
@@ -612,7 +732,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08405))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08408))_
+
+### Technical atom 34
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08411))_
 
 | **Table 1-9: Armor** |
 | --- |
@@ -632,7 +755,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08408))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08411))_
+
+### Technical atom 35
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08413))_
 
 | Shield Name | Req. Str. | Price |
 | --- | --- | --- |
@@ -650,7 +776,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08411))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08413))_
+
+### Technical atom 36
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08420))_
 
 | **Table 1-11: Equipment** |
 | --- |
@@ -684,10 +813,14 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08413))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08420))_
 
-> Context: When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08424))_
+### Technical atom 37
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08424))_
+
+> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08422))_
 
 | Expansion<br>Rate | Area Expansion<br>Length | Volume Expansion<br>Length |
 | --- | --- | --- |
@@ -719,10 +852,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08424))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08422))_
 
-> Context: For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08425))_
+### Technical atom 38
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08425))_
+
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08428))_
 
 | Target Score | Difculty | Standard |
 | --- | --- | --- |
@@ -772,10 +909,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08425))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08428))_
 
-> Context: **Table 9-2: Success Roll Modifiers**
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
+### Technical atom 39
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
+
+> **Table 9-2: Success Roll Modifiers**
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08430))_
 
 | **Table 9-2: Success Roll Modifers** |
 | --- |
@@ -795,10 +936,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08430))_
 
-> Context: **Table 9-2: Success Roll Modifiers**
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
+### Technical atom 40
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
+
+> **Table 9-2: Success Roll Modifiers**
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08432))_
 
 | **Table 10-1: Attack Power and Evasion Speed Modifers** |
 | --- |
@@ -820,7 +965,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08432))_
+
+### Technical atom 41
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08434))_
 
 | **Table 10-2: Surprise Attack Check** |
 | --- |
@@ -844,7 +992,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08432))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08434))_
+
+### Technical atom 42
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08437))_
 
 | 10th level | Royal capital level of a large country |
 | --- | --- |
@@ -866,7 +1017,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08434))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08437))_
+
+### Technical atom 43
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08439))_
 
 | Armor Name | Evasion Speed<br>Modifer | Defense<br>Modifer | Critical Target<br>Change | Anti-strangling<br>Protection |
 | --- | --- | --- | --- | --- |
@@ -884,7 +1038,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08437))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08439))_
+
+### Technical atom 44
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08441))_
 
 | **Table 16-4 Maximum Ranges** | **Table** |
 | --- | --- |
@@ -940,7 +1097,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08439))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08441))_
+
+### Technical atom 45
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08444))_
 
 | Age | Modifcation |
 | --- | --- |
@@ -974,7 +1134,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08441))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08444))_
+
+### Technical atom 46
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08446))_
 
 | Fire-Type | Firebolt, Fireball, Firestorm |
 | --- | --- |
@@ -1006,7 +1169,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08444))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08446))_
+
+### Technical atom 47
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08449))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1044,7 +1210,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08446))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08449))_
+
+### Technical atom 48
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08450))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1082,7 +1251,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08449))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08450))_
+
+### Technical atom 49
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08451))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1120,4 +1292,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08450))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08451))_

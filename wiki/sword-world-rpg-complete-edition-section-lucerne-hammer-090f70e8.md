@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lucerne-hammer-090f70e8@8a1ed01f76b803f1370ea6463783dd3d
+projection_coverage: section-sword-world-rpg-complete-edition-section-lucerne-hammer-090f70e8@fd16facd3d773dddcc46c1cb1fde7dba
 ---
 
 # **Lucerne Hammer**
@@ -31,5 +31,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07921))_
+
 > If the attack is successful, the opponent suffers damage and at the same time must make a success roll using _adventurer level + dexterity bonus_ ( _evasion points -7_ for monsters) as the baseline score and the _attacker's final_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07921))_

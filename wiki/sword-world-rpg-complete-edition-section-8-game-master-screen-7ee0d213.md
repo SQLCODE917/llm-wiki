@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-8-game-master-screen-7ee0d213@a7c0d6ca6c4db3e3ad083bd373f44d10
+projection_coverage: section-sword-world-rpg-complete-edition-section-8-game-master-screen-7ee0d213@4878b57f22e1ee7a283328fc21423189
 ---
 
 # **8. Game Master Screen**
@@ -22,5 +22,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00151))_
+
 > However, it is in accordance with the _old_ version of the rules mentioned above. In this book, some rules have been revised and some tables have been slightly changed. Therefore, it's advisable to make some modifications when using this. For example, you can copy the revised tables and paste them over the old ones.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00151))_

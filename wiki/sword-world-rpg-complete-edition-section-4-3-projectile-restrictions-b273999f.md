@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-3-projectile-restrictions-b273999f@12f96c53ac4a96c7dfd509555aede5b2
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-3-projectile-restrictions-b273999f@8c63e6504a8c4de13b00851f9fc672d6
 ---
 
 # 4.3 Projectile Restrictions
@@ -51,29 +51,48 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Characters may not use weapons or armor with a required strength greater than their own strength.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00831))_
+### Technical atom 1
 
-> Context: To be good at weapon combat, a character must have skills. The skills that can be used for this purpose are limited to the following three:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00835))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00831))_
+
+> Characters may not use weapons or armor with a required strength greater than their own strength.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00835))_
+
+> To be good at weapon combat, a character must have skills. The skills that can be used for this purpose are limited to the following three:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00837))_
 
 > Specifically, you can only fight if the weapon or armor you're using requires up to _half (rounded up)_ of your character's strength.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00837))_
 
-> Context: weapon + shield + armor or two-handed weapon + armor. Of course, one-handed weapon + armor, two-handed weapon without armor, etc. are also possible, and it is acceptable to carry a spare weapon on your waist or back, as long as it is within the bounds of common sense. However, you may not hold two weapons in both hands or hold a shield in each hand-- it is fine to do so, but a shield in your dominant hand or a weapon in your non-dominant hand is of no use.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00841))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00841))_
+
+> weapon + shield + armor or two-handed weapon + armor. Of course, one-handed weapon + armor, two-handed weapon without armor, etc. are also possible, and it is acceptable to carry a spare weapon on your waist or back, as long as it is within the bounds of common sense. However, you may not hold two weapons in both hands or hold a shield in each hand-- it is fine to do so, but a shield in your dominant hand or a weapon in your non-dominant hand is of no use.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00843))_
 
 > Weapons that can be used for both melee _and_ throwing, as indicated by _throwable_ on the Weapons table, are useful _only_ when used for throwing, _not_ for melee.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00843))_
 
-> Context: There are some restrictions when handling projectiles such as bows and javelins.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00847))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00847))_
+
+> There are some restrictions when handling projectiles such as bows and javelins.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00849))_
 
 > When there’s an enemy in front of you, you can _never_ use a projectile marked _shooting_ or _made for throwing_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00849))_
 
-> Context: One is their **range** . There is no bow that has infinite reach. The maximum of shooting weapons such as bows and arrows– those marked _shooting_ on the Weapons table (see p. 21) --is **100m** , and of throwing weapons such as spears– those marked _throwable_ or _made for throwing_ on the Weapons table --is **20m** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00850))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00850))_
+
+> One is their **range** . There is no bow that has infinite reach. The maximum of shooting weapons such as bows and arrows– those marked _shooting_ on the Weapons table (see p. 21) --is **100m** , and of throwing weapons such as spears– those marked _throwable_ or _made for throwing_ on the Weapons table --is **20m** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00851))_
 
 > A character must choose _stand still_ as their movement
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00851))_

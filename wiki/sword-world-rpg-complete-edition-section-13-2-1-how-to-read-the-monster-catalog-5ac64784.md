@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-how-to-read-the-monster-catalog-5ac64784@6762eabe18eb618cc356d0fc079270a7
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-how-to-read-the-monster-catalog-5ac64784@95742b32d2d9d1a04e0e192594fc70ae
 ---
 
 # 13.2.1 How to Read the Monster Catalog
@@ -210,95 +210,162 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Monster data is written in the following format. Dogs have a habit of following their leaders, and humans have taken advantage of this habit to use dogs for various purposes. Dogs react to humans in a variety of ways. If they are domesticated, they will not attack humans because they consider humans to be their masters. However, special guard dogs, military dogs, etc. that have been trained to treat all but specific people as enemies will attack even humans larger than themselves. Dogs are espec
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04860, source-range-870a16bc-04865))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04860, source-range-870a16bc-04865))_
+
+> Monster data is written in the following format. Dogs have a habit of following their leaders, and humans have taken advantage of this habit to use dogs for various purposes. Dogs react to humans in a variety of ways. If they are domesticated, they will not attack humans because they consider humans to be their masters. However, special guard dogs, military dogs, etc. that have been trained to treat all but specific people as enemies will attack even humans larger than themselves. Dogs are espec
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04863))_
 
 > If you want to include small or large dogs in your game, the game master should increase or
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04863))_
 
-> Context: decrease the scores listed here by 1 or 2 points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04864))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04864))_
+
+> decrease the scores listed here by 1 or 2 points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04865))_
 
 > If they're hungry and think their opponent is weak, they may attack.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04865))_
 
-> Context: decrease the scores listed here by 1 or 2 points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04864))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04864))_
+
+> decrease the scores listed here by 1 or 2 points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04865))_
 
 > Dogs have a habit of following their leaders, and humans have taken advantage of this habit to use dogs for various purposes. Dogs react to humans in a variety of ways. If they are domesticated, they will not attack humans because they consider humans to be their masters. However, special guard dogs, military dogs, etc. that have been trained to treat all but specific people as enemies will attack even humans larger than themselves. Dogs are especially aggressive towards intruders-they also have a strong sense of territory. If it's a wild dog that's not owned by humans, it will act according to its own instincts. If they're hungry and think their opponent is weak, they may attack.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04865))_
 
-> Context: If it says _almost none_ , then it has almost no intellect. They have no advanced thinking and have almost no means of communicating their intentions. They only act on instinct. This is the intellectual standard of lower animals such as insects. If you were to convert it to intelligence, it would be _1-2_ . Of course, spells that affect the mind cannot be expected to have any effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04887))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04887))_
+
+> If it says _almost none_ , then it has almost no intellect. They have no advanced thinking and have almost no means of communicating their intentions. They only act on instinct. This is the intellectual standard of lower animals such as insects. If you were to convert it to intelligence, it would be _1-2_ . Of course, spells that affect the mind cannot be expected to have any effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04888))_
 
 > If given a command-- the only ones who can give commands are those who directly created the monster or those who used magic to give the command -- they will faithfully carry it out, but they cannot make their own decisions.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04888))_
 
-> Context: If it says _almost none_ , then it has almost no intellect. They have no advanced thinking and have almost no means of communicating their intentions. They only act on instinct. This is the intellectual standard of lower animals such as insects. If you were to convert it to intelligence, it would be _1-2_ . Of course, spells that affect the mind cannot be expected to have any effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04887))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04887))_
+
+> If it says _almost none_ , then it has almost no intellect. They have no advanced thinking and have almost no means of communicating their intentions. They only act on instinct. This is the intellectual standard of lower animals such as insects. If you were to convert it to intelligence, it would be _1-2_ . Of course, spells that affect the mind cannot be expected to have any effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04889))_
 
 > They can distinguish their master and will follow their commands (if they're trained).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04889))_
 
-> Context: If it says _animal_ , it means literally the same degree as an animal. They can distinguish their master and will follow their commands (if they're trained). Also, they have enough judgment ability to quickly run away if their life is in danger. If you were to convert it to intelligence, it would be around _3 to 5_ . However, they can sometimes display surprising judgment, although this is something that has been learned as an instinct. There are known stories of parent birds feigning injury to 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04889))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04889))_
+
+> If it says _animal_ , it means literally the same degree as an animal. They can distinguish their master and will follow their commands (if they're trained). Also, they have enough judgment ability to quickly run away if their life is in danger. If you were to convert it to intelligence, it would be around _3 to 5_ . However, they can sometimes display surprising judgment, although this is something that has been learned as an instinct. There are known stories of parent birds feigning injury to
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04890))_
 
 > They can also use primitive tools, words, and a very limited number of written characters.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04890))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04898))_
 
 > If it says _adversarial_ , it means they consider adventurers (human or fae) to be their enemies. The specific actions they'll take will vary depending on the power dynamic (difference in number) between the adventurers and monsters, as well as the intelligence of the monsters. Even if the monster is adversarial, if the adventurers have the superior numbers, it will not attack immediately and may try to use trickery.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04898))_
 
-> Context: _Command-based_ is often seen in magical creatures and lower grade undead that move according to the commands of others. They follow the instructions of their commander. Whether they consider adventurers to be enemies or not depends on the commands given to them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04903))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04903))_
+
+> _Command-based_ is often seen in magical creatures and lower grade undead that move according to the commands of others. They follow the instructions of their commander. Whether they consider adventurers to be enemies or not depends on the commands given to them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04906))_
 
 > A character must make a success roll using their evasion speed as the baseline score and these attack points as the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04906))_
 
-> Context: This represents the monster's attack method and its accuracy. The higher this score, the more likely the monster will be able to hit you with an attack. A character must make a success roll using their evasion speed as the baseline score and these attack points as the target score. If you fail, you will suffer damage (refer to _Chapter 4: Weapon Combat_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04906))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04906))_
+
+> This represents the monster's attack method and its accuracy. The higher this score, the more likely the monster will be able to hit you with an attack. A character must make a success roll using their evasion speed as the baseline score and these attack points as the target score. If you fail, you will suffer damage (refer to _Chapter 4: Weapon Combat_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04907))_
 
 > In this case, if they're written on _one_ line separated by a slash (/), it means that they can attack that number of times in one round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04907))_
 
-> Context: Some monsters have multiple attack methods. Multiple attack points are also listed for these cases. In this case, if they're written on _one_ line separated by a slash (/), it means that they can attack that number of times in one round. For
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04907))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04907))_
+
+> Some monsters have multiple attack methods. Multiple attack points are also listed for these cases. In this case, if they're written on _one_ line separated by a slash (/), it means that they can attack that number of times in one round. For
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04908))_
 
 > Each targeted character must make a success roll to determine whether they're able to avoid the attack.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04908))_
 
-> Context: The numbers in parentheses next to each attack point score are used in the optional rule _16.1: Combat in Which Monsters Roll Dice._ (see p. 261).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04910))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04910))_
+
+> The numbers in parentheses next to each attack point score are used in the optional rule _16.1: Combat in Which Monsters Roll Dice._ (see p. 261).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04912))_
 
 > If a character fails to evade their attack, these strike points become damage and reduce the character's life force.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04912))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04914))_
 
 > If _Attack Points=Horn:12 (5)/Hoof:12 (5)_ is written as _Strike Points=17/16_ , then if the horn attack hits, it'll deal 17 points of damage, and the hoof attack hits, it'll deal 16 points.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04914))_
 
-> Context: This represents the degree to which the monster can evade attacks. In order for a character to hit a monster with an attack, they must succeed on a success roll using these evasion points as the target score and their attack power as the baseline score. If you fail, your character's attack will miss.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04916))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04916))_
+
+> This represents the degree to which the monster can evade attacks. In order for a character to hit a monster with an attack, they must succeed on a success roll using these evasion points as the target score and their attack power as the baseline score. If you fail, your character's attack will miss.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04918))_
 
 > Just as characters can reduce damage through armor, monsters also have thick skin, shells, scales, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04918))_
 
-> Context: Monster level, like adventurer level, prevents all damage, but a monster's defense points _already_ include damage reduction due to monster level. Therefore, _only_ defense points should be applied when reducing damage from weapon attacks. Monster level may _not_ be further subtracted from it.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04921))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04921))_
+
+> Monster level, like adventurer level, prevents all damage, but a monster's defense points _already_ include damage reduction due to monster level. Therefore, _only_ defense points should be applied when reducing damage from weapon attacks. Monster level may _not_ be further subtracted from it.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04920))_
 
 > When struck by magic or similar attacks, defense points cannot reduce damage, monster level reduces damage instead.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04920))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04924))_
 
 > When a monster suffers damage, it will lose life points.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04924))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04930))_
 
 > When a character casts a spell on a monster, they must make a success roll using their magic power as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04930))_
 
-> Context: ( _Sonar_ ) means the monster can use sound waves or ultrasonic echoes to perceive the outside world. Therefore, they have almost no restrictions on action even in the dark. their empty eye sockets for pseudo vision. Therefore, if they're blindfolded, they won't be able to see, and they won't be able to see anything approaching from behind. Monsters whose perception is _pseudo_ can experience illusions.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04942, source-range-870a16bc-04945))_
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04942, source-range-870a16bc-04945))_
+
+> ( _Sonar_ ) means the monster can use sound waves or ultrasonic echoes to perceive the outside world. Therefore, they have almost no restrictions on action even in the dark. their empty eye sockets for pseudo vision. Therefore, if they're blindfolded, they won't be able to see, and they won't be able to see anything approaching from behind. Monsters whose perception is _pseudo_ can experience illusions.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04944))_
 
 > Those whose sensory abilities are _pseudo_ have five pseudo-senses through magical means. After all, one part may be missing, or they may have special senses. In such cases, there is an organ that captures the sensation in a pseudo manner. If those organs are destroyed, the pseudo-senses will no longer be usable. For example, skeletons can use
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04944))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04948))_
 
 > If it says _none_ , then the monster does not use language (those with _obeys commands_ intellect may not speak themselves, but may understand what others are saying).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04948))_

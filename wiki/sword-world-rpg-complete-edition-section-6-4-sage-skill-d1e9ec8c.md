@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-6-4-sage-skill-d1e9ec8c@b63de48e863ccabdb8ca3fe2bc1d73e6
+projection_coverage: section-sword-world-rpg-complete-edition-section-6-4-sage-skill-d1e9ec8c@3468b8aea7f027143780545d9139147a
 ---
 
 # 6.4 Sage Skill
@@ -49,29 +49,53 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> There is no requirement that you have to have the sage skill and the sorcerer skill at the same time, but if you _do_ acquire the sage skill and the sorcerer skill at the same time, you will receive a _bonus_ on experience points consumed.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03433))_
+### Technical atom 1
 
-> Context: The sage skill includes the following abilities:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03436))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03433))_
+
+> There is no requirement that you have to have the sage skill and the sorcerer skill at the same time, but if you _do_ acquire the sage skill and the sorcerer skill at the same time, you will receive a _bonus_ on experience points consumed.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03436))_
+
+> The sage skill includes the following abilities:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03437))_
 
 > If you can read both common _and_ low ancient, you are free to learn subsequent languages.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03437))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03447))_
 
 > When a sage sees a monster or hears its name, this ability may allow them to discover its true identity.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03447))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03448))_
 
 > You can also set a difficulty and ask for a success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03448))_
 
-> Context: Each monster has a score called _rarity_ . Using _sage skill level + intelligence bonus_ as the baseline score, make a success roll with this rarity as the target score, and if you succeed, you know the monster.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03449))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03449))_
+
+> Each monster has a score called _rarity_ . Using _sage skill level + intelligence bonus_ as the baseline score, make a success roll with this rarity as the target score, and if you succeed, you know the monster.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03450))_
 
 > Even if the _player_ knows, they must treat it as if they had no prior knowledge.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03450))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03453))_
 
 > in Forcelia, but when they do, they are always a harbinger of something to come.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03453))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08368))_
 
 | **Sage Skill Abilities Table** |
 | --- |
@@ -101,4 +125,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03453))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08368))_

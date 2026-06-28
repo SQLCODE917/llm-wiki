@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-types-of-poison-f334e271@92b21d93513687fbaa274d4638b90b1c
+projection_coverage: section-sword-world-rpg-complete-edition-section-types-of-poison-f334e271@eaaf4998f8aed6c735481149b7e3cb72
 ---
 
 # 《 **Types of Poison** 》
@@ -36,14 +36,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Those that say _damage_ are poisons that damage life force (points), but there are common rules for these types of poisons. Each poison has its own unique strike power and bonus damage. If this type of poison enters your body, you will suffer this damage. Make a strike roll as you would for any magic that deals damage. If you roll 10 or greater, it becomes a critical.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04541))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04541))_
+
+> Those that say _damage_ are poisons that damage life force (points), but there are common rules for these types of poisons. Each poison has its own unique strike power and bonus damage. If this type of poison enters your body, you will suffer this damage. Make a strike roll as you would for any magic that deals damage. If you roll 10 or greater, it becomes a critical.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04542))_
 
 > Those affected by the poison can reduce this damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04542))_
 
-> Context: Those that say _damage_ are poisons that damage life force (points), but there are common rules for these types of poisons. Each poison has its own unique strike power and bonus damage. If this type of poison enters your body, you will suffer this damage. Make a strike roll as you would for any magic that deals damage. If you roll 10 or greater, it becomes a critical.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04541))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04541))_
+
+> Those that say _damage_ are poisons that damage life force (points), but there are common rules for these types of poisons. Each poison has its own unique strike power and bonus damage. If this type of poison enters your body, you will suffer this damage. Make a strike roll as you would for any magic that deals damage. If you roll 10 or greater, it becomes a critical.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04543))_
 
 > If you successfully resist, the damage will be reduced (in this case, strike power will be -10 and no criticals will occur) or you will not suffer any damage at all.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04543))_

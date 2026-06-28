@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-noble-8b516e29@5f012c17580e4863fe5a90c6af478a82
+projection_coverage: section-sword-world-rpg-complete-edition-section-noble-8b516e29@7c7e17efd03643a5eaf6820bfba251b5
 ---
 
 # **Noble**
@@ -22,5 +22,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05469))_
+
 > Habitat=Swamps Languages=Lizardman Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05469))_

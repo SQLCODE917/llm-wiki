@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-d7af8d68@ed8544996829b0b14f7466f61af29c9f
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-d7af8d68@57b2451a9abaa62434d0e358177ee137
 ---
 
 # 1.4 Character Creation
@@ -291,23 +291,39 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> If they were raised by elves, there is a restriction that they cannot acquire the priest skill.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00316))_
+### Technical atom 1
 
-> Context: Half-elves are halfway between human and elf in terms of ability. Therefore, their dexterity, agility, intelligence, and mental power are slightly higher, while their strength and life force are slightly lower. However, they do not deviate very far from the average and are fully capable of handling all skills.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00326))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00316))_
+
+> If they were raised by elves, there is a restriction that they cannot acquire the priest skill.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00326))_
+
+> Half-elves are halfway between human and elf in terms of ability. Therefore, their dexterity, agility, intelligence, and mental power are slightly higher, while their strength and life force are slightly lower. However, they do not deviate very far from the average and are fully capable of handling all skills.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00324))_
 
 > Once you've chosen a race, you can determine your ability scores.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00324))_
 
-> Context: Once you've chosen a race, you can determine your ability scores. First, you must roll the dice to determine **subability scores A~H** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00324))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00324))_
+
+> Once you've chosen a race, you can determine your ability scores. First, you must roll the dice to determine **subability scores A~H** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
 
 > Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
 
-> Context: Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
+
+> Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00329))_
 
 | **dexterity**<br> **agility**<br> **intelligence**<br> **strength**<br> **life force** | =**A**+**B**<br>=**B**+**C**<br>=**C**+**D**<br>=**E**+**F**<br>=**F**+**G** |
 | --- | --- |
@@ -323,16 +339,24 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00329))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00331))_
 
 > **Table 1-3: Determining Sub-Ability Scores**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00331))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00332))_
 
 | Sub-AbilityScore | Human | Dwarf | Grassrunner | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -362,16 +386,24 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00332))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00335))_
 
 > **Table 1-4: Average Ability Scores by Race**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00335))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00336))_
 
 | AbilityScore | Human | Grassrunner | Dwarf | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -397,10 +429,16 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00333))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00336))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 
 > **Table 1-5: Backgrounds**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
 
 | 2D | Background | StartingSkills | Exp. Pts. | Money |
 | --- | --- | --- | --- | --- |
@@ -436,10 +474,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00341))_
 
 > For reference, the average ability scores of each race are shown on Table 1- 4: Average Ability Scores by Race.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00341))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00348))_
 
 | As a result, the ability | scores are |
 | --- | --- |
@@ -465,34 +509,54 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00341))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00348))_
 
-> Context: Even an adventurer who goes on an adventure for the first time is not a baby. As long as they've lived a certain number of years, they must have had some experience before entering the life of an adventurer. Once ability scores have been determined, the next step is to determine the adventurer's preadventure experience. This is represented by **starting skills** and **starting experience points** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00351))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00351))_
+
+> Even an adventurer who goes on an adventure for the first time is not a baby. As long as they've lived a certain number of years, they must have had some experience before entering the life of an adventurer. Once ability scores have been determined, the next step is to determine the adventurer's preadventure experience. This is represented by **starting skills** and **starting experience points** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00353))_
 
 > If the race is human or half-elf raised by humans, use Table 1-5: Backgrounds. Roll 2D and look at the appropriate row.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00353))_
 
-> Context: If the race is human or half-elf raised by humans, use Table 1-5: Backgrounds. Roll 2D and look at the appropriate row.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00353))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00353))_
+
+> If the race is human or half-elf raised by humans, use Table 1-5: Backgrounds. Roll 2D and look at the appropriate row.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00354))_
 
 > If the player's background is _ordinary citizen_ (roll 7), they must consult with the game master to determine one general skill appropriate for the character and acquire it at 3rd level.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00354))_
 
-> Context: If the player's background is _ordinary citizen_ (roll 7), they must consult with the game master to determine one general skill appropriate for the character and acquire it at 3rd level. At this time, both the game master and the player should clearly know what the chosen general skill can do (the abilities that can be used with that general skill).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00354))_
+### Technical atom 15
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00354))_
+
+> If the player's background is _ordinary citizen_ (roll 7), they must consult with the game master to determine one general skill appropriate for the character and acquire it at 3rd level. At this time, both the game master and the player should clearly know what the chosen general skill can do (the abilities that can be used with that general skill).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355))_
 
 > If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355))_
 
-> Context: If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355))_
+### Technical atom 16
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355))_
+
+> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00357))_
 
 > **Table 1-6: Starting Experience by Race**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00357))_
 
-> Context: If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, source-range-870a16bc-00360))_
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, source-range-870a16bc-00360))_
+
+> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00358))_
 
 | Race | Restrictions／Special Abilities | Pre-Adventure<br>Exp. Pts. | Money |
 | --- | --- | --- | --- |
@@ -516,46 +580,76 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, 
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00358))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00373))_
 
 > For races other than humans, consider age as follows. Even for different races with long life spans, the rate of growth to adulthood is not much different from that of humans. Therefore, once they reach around 20 years of age, they are physically fit enough to embark on an adventure.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00373))_
 
-> Context: Use this as a guide when deciding on the age of a character of another race.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00380))_
+### Technical atom 19
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00380))_
+
+> Use this as a guide when deciding on the age of a character of another race.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00383))_
 
 > Even races other than humans have two genders, male and female, exactly the same as humans. Also consider the differences in appearance between men and women, as well as the differences in the division of roles in society, to be equivalent to those of humans.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00383))_
+
+### Technical atom 20
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00393))_
 
 > For example, if you do not have the ranger skill and you want to acquire 2 levels in ranger at once, you must spend 500 + 1000 for a total of 1500 experience points.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00393))_
 
-> Context: As for the name, it’s up to the player to decide on a name. You may follow your own sensibilities, or you may borrow the name of a real westerner. In this section, we'll use _Ducard Sample_ `Ⅱ` (the second), though it's not a very sensible name.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
+
+> As for the name, it’s up to the player to decide on a name. You may follow your own sensibilities, or you may borrow the name of a real westerner. In this section, we'll use _Ducard Sample_ `Ⅱ` (the second), though it's not a very sensible name.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00396))_
 
 > If you have enough experience points, you can acquire multiple skills.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00396))_
 
-> Context: Ducard II has 2500 experience points. With these, for example, we could acquire 1 level in sorcerer (25002000= _500_ remaining) or increase fighter to 2 levels (2500-1500= _1000_ remaining). In addition, we can even acquire 2 levels in thief at once (2500-1000-1500= _0_ remaining).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00404))_
+### Technical atom 22
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00404))_
+
+> Ducard II has 2500 experience points. With these, for example, we could acquire 1 level in sorcerer (25002000= _500_ remaining) or increase fighter to 2 levels (2500-1500= _1000_ remaining). In addition, we can even acquire 2 levels in thief at once (2500-1000-1500= _0_ remaining).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00406))_
 
 > The experience points required to increase a skill are shown in Table 1-7: Experience Points by Skill (at Character Creation).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00406))_
 
-> Context: Here, we'll increase fighter to 2nd level and also acquire 1 level in ranger. This leaves us 500 points, which we’ll save for future use.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00407))_
+### Technical atom 23
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00407))_
+
+> Here, we'll increase fighter to 2nd level and also acquire 1 level in ranger. This leaves us 500 points, which we’ll save for future use.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
 
 > Characters can spend their starting experience points to gain skill levels.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
 
-> Context: Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
+### Technical atom 24
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
+
+> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00409))_
 
 > **Table 1-7: Experience Points by Skill (at Character Creation)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00409))_
 
-> Context: Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
+### Technical atom 25
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
+
+> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00410))_
 
 | Attained<br>Level | Sorcerer & Sage at the same<br>time | Sorcerer | <br>Sorcerer<br>(with<br>Sage) | Shaman | Fighter<br>Tief<br>Priest | Ranger<br>Sage<br>Bard |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -575,22 +669,36 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00410))_
+
+### Technical atom 26
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00412))_
 
 > If a character has neither the sorcerer nor sage skill, they can acquire 1 level in both the sorcerer and sage skills by spending 2000 experience points.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00412))_
+
+### Technical atom 27
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00413))_
 
 > If a character has 1 level in the sage skill (so if they're a human or half-elf, and if _merchant/scholar_ or _noble_ was rolled on Table 1-5: Backgrounds), they can acquire 1 level in the sorcerer skill for 1500 points.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00413))_
 
-> Context: Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+### Technical atom 28
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+
+> Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00419))_
 
 > **Table 1-8: Weapons-1**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00419))_
 
-> Context: Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+### Technical atom 29
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+
+> Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
 | **Table 1-8: Weapons-1** |
 | --- |
@@ -618,40 +726,64 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
-> Context: Stock up on weapons, armor, and other equipment and get ready for adventure. At this time, please note the following.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00421))_
+### Technical atom 30
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00421))_
+
+> Stock up on weapons, armor, and other equipment and get ready for adventure. At this time, please note the following.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00422))_
 
 > Please determine how much money you have by following the instructions on Table 1-5: Backgrounds or Table 1-6: Starting Experience by Race.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00422))_
 
-> Context: Please determine how much money you have by following the instructions on Table 1-5: Backgrounds or Table 1-6: Starting Experience by Race. Basically, the most suitable weapon is one whose _required strength equals the character's strength_ . As long as you choose that, you are guaranteed the same attack capability, even if you use a different type of weapon. Think of a sword, ax, or spear with a required strength of 14 as the same in terms of game value. Therefore, it’s a good idea to choose on
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00422, source-range-870a16bc-00427))_
+### Technical atom 31
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00422, source-range-870a16bc-00427))_
+
+> Please determine how much money you have by following the instructions on Table 1-5: Backgrounds or Table 1-6: Starting Experience by Race. Basically, the most suitable weapon is one whose _required strength equals the character's strength_ . As long as you choose that, you are guaranteed the same attack capability, even if you use a different type of weapon. Think of a sword, ax, or spear with a required strength of 14 as the same in terms of game value. Therefore, it’s a good idea to choose on
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00425))_
 
 > When buying weapons and armor, one must be aware of their **required strength** .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00425))_
 
-> Context: Basically, the most suitable weapon is one whose _required strength equals the character's strength_ . As long as you choose that, you are guaranteed the same attack capability, even if you use a different type of weapon. Think of a sword, ax, or spear with a required strength of 14 as the same in terms of game value. Therefore, it’s a good idea to choose one based on the image of your character.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00427))_
+### Technical atom 32
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00427))_
+
+> Basically, the most suitable weapon is one whose _required strength equals the character's strength_ . As long as you choose that, you are guaranteed the same attack capability, even if you use a different type of weapon. Think of a sword, ax, or spear with a required strength of 14 as the same in terms of game value. Therefore, it’s a good idea to choose one based on the image of your character.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00428))_
 
 > Therefore, if the _required strength_ of the weapon you’re buying on Table 1-8: Weapons does not match your character's strength, you should not buy that weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00428))_
 
-> Context: Basically, the most suitable weapon is one whose _required strength equals the character's strength_ . As long as you choose that, you are guaranteed the same attack capability, even if you use a different type of weapon. Think of a sword, ax, or spear with a required strength of 14 as the same in terms of game value. Therefore, it’s a good idea to choose one based on the image of your character.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00427))_
+### Technical atom 33
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00427))_
+
+> Basically, the most suitable weapon is one whose _required strength equals the character's strength_ . As long as you choose that, you are guaranteed the same attack capability, even if you use a different type of weapon. Think of a sword, ax, or spear with a required strength of 14 as the same in terms of game value. Therefore, it’s a good idea to choose one based on the image of your character.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00430))_
 
 > Of course, if you have a twohanded weapon, you cannot hold a shield, which will make your character less capable of defense.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00430))_
 
-> Context: To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))_
+### Technical atom 34
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))_
+
+> To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00432))_
 
 > **Table 1-8: Weapons-2**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00432))_
 
-> Context: To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))_
+### Technical atom 35
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))_
+
+> To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00433))_
 
 | **Table 1-8: Weapons-2** |
 | --- |
@@ -687,37 +819,60 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00433))_
+
+### Technical atom 36
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00438))_
 
 > On Table 1-8: Weapons, weapons with _made for throwing_ or _shooting_ after the weapon's name are strictly projectile
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00438))_
 
-> Context: In the case of shields, there are only two types: **small shields** (required strength 1) and **large shields** (required strength 13). If a character's strength is 13 or greater, a large shield can be chosen. However, in terms of increasing a character's defensive ability, the effects of small and large shields are basically the same in this game. Therefore, it is safe to choose the less expensive small shield (Table 1-10: Shields).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00442))_
+### Technical atom 37
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00442))_
+
+> In the case of shields, there are only two types: **small shields** (required strength 1) and **large shields** (required strength 13). If a character's strength is 13 or greater, a large shield can be chosen. However, in terms of increasing a character's defensive ability, the effects of small and large shields are basically the same in this game. Therefore, it is safe to choose the less expensive small shield (Table 1-10: Shields).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
 
 > are several types, but choose which one you think is appropriate (Table 1-9: Armor).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
 
-> Context: are several types, but choose which one you think is appropriate (Table 1-9: Armor).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
+### Technical atom 38
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
+
+> are several types, but choose which one you think is appropriate (Table 1-9: Armor).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00442))_
 
 > If a character's strength is 13 or greater, a large shield can be chosen.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00442))_
 
-> Context: Weapons and armor have different prices for the same shape, depending on the required strength. For the prices of weapons and armor, please see the **price calculation** column of the weapons table. There you will find expressions like **x20+40** . The required strength is applied to this formula to find the actual price. For example, for a broadsword with a required strength of 14, the price would be:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00444))_
+### Technical atom 39
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00444))_
+
+> Weapons and armor have different prices for the same shape, depending on the required strength. For the prices of weapons and armor, please see the **price calculation** column of the weapons table. There you will find expressions like **x20+40** . The required strength is applied to this formula to find the actual price. For example, for a broadsword with a required strength of 14, the price would be:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00445))_
 
 > 14 (required strength) x 20 + 40 = **320.** Prices are in gamels ( **G** ).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00445))_
 
-> Context: The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+### Technical atom 40
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+
+> The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00450))_
 
 > **Table 1-9: Armor**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00450))_
 
-> Context: The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+### Technical atom 41
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+
+> The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
 
 | **Table 1-9: Armor** |
 | --- |
@@ -737,13 +892,20 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
 
-> Context: The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+### Technical atom 42
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00449))_
+
+> The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00452))_
 
 > **Table 1-10: Shields**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00452))_
+
+### Technical atom 43
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
 
 | Shield Name | Req. Str. | Price |
 | --- | --- | --- |
@@ -761,79 +923,132 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00452))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
 
-> Context: For weapons, there are no restrictions. You should buy a weapon whose required strength is the same as your own strength. Ranger does _not_ include the ability to fight with _melee_ weapons, but it _does_ include the ability to handle _projectiles_ . Therefore, it is a good idea to choose a projectile, if you have to choose a weapon. On Table 1-8: Weapons, they are indicated as _throwable_ , _made for throwing_ , and _shooting_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00457))_
+### Technical atom 44
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00457))_
+
+> For weapons, there are no restrictions. You should buy a weapon whose required strength is the same as your own strength. Ranger does _not_ include the ability to fight with _melee_ weapons, but it _does_ include the ability to handle _projectiles_ . Therefore, it is a good idea to choose a projectile, if you have to choose a weapon. On Table 1-8: Weapons, they are indicated as _throwable_ , _made for throwing_ , and _shooting_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00455))_
 
 > If you want to make use of your ranger skill, your _armor_ must be _light_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00455))_
 
-> Context: If you want to make use of your ranger skill, your _armor_ must be _light_ . Specifically, it is armor that requires up to _half of your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00455))_
+### Technical atom 45
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00455))_
+
+> If you want to make use of your ranger skill, your _armor_ must be _light_ . Specifically, it is armor that requires up to _half of your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00457))_
 
 > Therefore, it is a good idea to choose a projectile, if you have to choose a weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00457))_
 
-> Context: There are no restrictions. The basic idea is to choose weapons and armor whose required strength is the same as your own strength. Weapons and armor that have a required strength less than your own strength will make your character's attack and defense incomplete, and weapons and armor with a required strength greater than your own strength cannot be handled.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00459))_
+### Technical atom 46
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00459))_
+
+> There are no restrictions. The basic idea is to choose weapons and armor whose required strength is the same as your own strength. Weapons and armor that have a required strength less than your own strength will make your character's attack and defense incomplete, and weapons and armor with a required strength greater than your own strength cannot be handled.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00462))_
 
 > If you want to take advantage of your thief skill, your weapons _and_ armor must be _light_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00462))_
 
-> Context: If you want to take advantage of your thief skill, your weapons _and_ armor must be _light_ . Specifically, weapons and armor that require up to _half your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00462))_
+### Technical atom 47
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00462))_
+
+> If you want to take advantage of your thief skill, your weapons _and_ armor must be _light_ . Specifically, weapons and armor that require up to _half your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00465))_
 
 > If you want to make use of your sorcerer skill, your armor must be _cloth_ or _soft leather_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00465))_
 
-> Context: If you want to make use of your sorcerer skill, your armor must be _cloth_ or _soft leather_ . Either of these should be the one with the greatest required strength within the character's strength range. Also, you should not buy a shield.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00465))_
+### Technical atom 48
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00465))_
+
+> If you want to make use of your sorcerer skill, your armor must be _cloth_ or _soft leather_ . Either of these should be the one with the greatest required strength within the character's strength range. Also, you should not buy a shield.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00466))_
 
 > If the character's strength is 10 or less, it is appropriate to buy one with the same required strength as the character's strength; if the character's strength is 10 or greater, it is appropriate to buy one with a required strength of 10.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00466))_
 
-> Context: When choosing a weapon, since you’re not buying a shield, it's a good idea to choose a _two-handed_ weapon if at all possible. It is fundamental to match your strength to the required strength of the weapon. Ducard II has 2 levels in the fighter skill and 1 level in the ranger skill. There are no restrictions on either skill when choosing a weapon. Ranger has an advantage in projectiles, but this is consequently irrelevant because of the higher level of the _can use any weapon_ fighter.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00469, source-range-870a16bc-00473))_
+### Technical atom 49
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00469, source-range-870a16bc-00473))_
+
+> When choosing a weapon, since you’re not buying a shield, it's a good idea to choose a _two-handed_ weapon if at all possible. It is fundamental to match your strength to the required strength of the weapon. Ducard II has 2 levels in the fighter skill and 1 level in the ranger skill. There are no restrictions on either skill when choosing a weapon. Ranger has an advantage in projectiles, but this is consequently irrelevant because of the higher level of the _can use any weapon_ fighter.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00471))_
 
 > If a character has acquired only these skills, the basic idea is to choose weapons and armor whose required strength is the same as their own strength.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00471))_
 
-> Context: Ducard II has 2 levels in the fighter skill and 1 level in the ranger skill. There are no restrictions on either skill when choosing a weapon. Ranger has an advantage in projectiles, but this is consequently irrelevant because of the higher level of the _can use any weapon_ fighter.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00473))_
+### Technical atom 50
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00473))_
+
+> Ducard II has 2 levels in the fighter skill and 1 level in the ranger skill. There are no restrictions on either skill when choosing a weapon. Ranger has an advantage in projectiles, but this is consequently irrelevant because of the higher level of the _can use any weapon_ fighter.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00474))_
 
 > So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00474))_
 
-> Context: So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14). Here we have chosen the most typical weapon, a **broadsword** . The required strength of a broadsword is 8~16, so a broadsword with a required strength of 14 certainly exists.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00474))_
+### Technical atom 51
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00474))_
+
+> So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14). Here we have chosen the most typical weapon, a **broadsword** . The required strength of a broadsword is 8~16, so a broadsword with a required strength of 14 certainly exists.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00475))_
 
 > The price is 14 x 20 + 40 = **320** (gamels).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00475))_
 
-> Context: So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14). Here we have chosen the most typical weapon, a **broadsword** . The required strength of a broadsword is 8~16, so a broadsword with a required strength of 14 certainly exists.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00474))_
+### Technical atom 52
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00474))_
+
+> So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14). Here we have chosen the most typical weapon, a **broadsword** . The required strength of a broadsword is 8~16, so a broadsword with a required strength of 14 certainly exists.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00476))_
 
 > When choosing armor, the ranger skill's limitations come into play (required strength can only be up to _half_ one's own strength, armor can only be _non-metal_ or _ring mail_ ).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00476))_
 
-> Context: Here we will choose **ring mail** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00477))_
+### Technical atom 53
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00477))_
+
+> Here we will choose **ring mail** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00478))_
 
 > The price is 7 x 30 + 30 = **240** (gamels).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00478))_
 
-> Context: Here we will choose **ring mail** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00477))_
+### Technical atom 54
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00477))_
+
+> Here we will choose **ring mail** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00480))_
 
 > Since our starting amount was 1200 gamels, our character now has 1200 - 320 - 240 - 60 = **580 gamels** remaining.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00480))_
+
+### Technical atom 55
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00484))_
 
 > For equipment other than weapons and armor, see Table 1-11: Equipment.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00484))_
+
+### Technical atom 56
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00499))_
 
 > **Table 1-11: Equipment**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00499))_
+
+### Technical atom 57
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00501))_
 
 | **Table 1-11: Equipment** |
 | --- |
@@ -867,22 +1082,35 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00499))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00501))_
+
+### Technical atom 58
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00519))_
 
 > If the character is a human or a halfelf raised by a human, Table 1-5: Backgrounds must be used to determine their origin.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00519))_
 
-> Context: If the character is a human or a halfelf raised by a human, Table 1-5: Backgrounds must be used to determine their origin. Once it's been decided, write it in the _origin_ field. If the character
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00519))_
+### Technical atom 59
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00519))_
+
+> If the character is a human or a halfelf raised by a human, Table 1-5: Backgrounds must be used to determine their origin. Once it's been decided, write it in the _origin_ field. If the character
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00522))_
 
 > Please write down starting experience points as determined by Table 1-5: Backgrounds or Table 1-6: Starting Experience by Race in the _experience points_ field.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00522))_
+
+### Technical atom 60
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00535))_
 
 > Starting experience points can be used to acquire new adventurer skills or to increase any skills already acquired (Table 1-7: Experience Points by Skill).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00535))_
 
-> Context: Use your money to purchase equipment. Write down the items you purchased then rewrite your money, reducing by the amount of money you spent (Table 1-11: Equipment).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00541))_
+### Technical atom 61
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00541))_
+
+> Use your money to purchase equipment. Write down the items you purchased then rewrite your money, reducing by the amount of money you spent (Table 1-11: Equipment).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00542))_
 
 > When you purchase weapons, shields, and armor, write them in the appropriate fields (Table 1-8: Weapons, Table 1-9: Armor, and Table 1-10: Shields).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00542))_

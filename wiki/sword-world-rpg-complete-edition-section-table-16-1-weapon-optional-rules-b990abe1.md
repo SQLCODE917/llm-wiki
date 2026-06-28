@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-table-16-1-weapon-optional-rules-b990abe1@9a83d8a75ebed0c31554feb0a5f35808
+projection_coverage: section-sword-world-rpg-complete-edition-section-table-16-1-weapon-optional-rules-b990abe1@bd4840111929c8421c3bf9b98234f7f7
 ---
 
 # **Table 16-1 Weapon Optional Rules**
@@ -19,6 +19,10 @@ From [[sword-world-rpg-complete-edition]].
 - ***The lance itself has a +5 strike power modifier, +10 during a charge, and +2 damage itself _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07718))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_
 
 | Type | Attack Power Mod. | Strike Power Mod. | Critical Target |
 | --- | --- | --- | --- |
@@ -100,7 +104,9 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07717))_
 
 > △△ Calculate using _required strength_ x 2 + 10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07717))_

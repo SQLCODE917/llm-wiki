@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-what-is-a-role-playing-game-rpg-2b5f74a3@0c8068847d2f5e538fae8c844917b877
+projection_coverage: section-sword-world-rpg-complete-edition-section-what-is-a-role-playing-game-rpg-2b5f74a3@914d74fc395798e6781d6e893d73c13a
 ---
 
 # What is a Role-Playing Game (RPG)?
@@ -59,14 +59,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Before playing a game, the game master must prepare what’s called a **scenario** . You may either create your own, or you may use an existing one. A number of scenario collections have already been produced for _Sword World RPG_ , and will continue to be released in the future.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00020))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00020))_
+
+> Before playing a game, the game master must prepare what’s called a **scenario** . You may either create your own, or you may use an existing one. A number of scenario collections have already been produced for _Sword World RPG_ , and will continue to be released in the future.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00022))_
 
 > The players must make their characters act based on their abilities and characteristics.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00022))_
 
-> Context: **Player** ： (rolls) Agh, my roll was bad. My attack failed!
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00053))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00053))_
+
+> **Player** ： (rolls) Agh, my roll was bad. My attack failed!
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00056))_
 
 > If you enjoy the story in this way, you can say that you've experienced the best part of a role-playing game.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00056))_

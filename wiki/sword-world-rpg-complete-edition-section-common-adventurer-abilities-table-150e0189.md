@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-common-adventurer-abilities-table-150e0189@8e348a1b5958f34bdc1d8dd1c3c54b96
+projection_coverage: section-sword-world-rpg-complete-edition-section-common-adventurer-abilities-table-150e0189@e3cb305f67632725381b492ed68e9467
 ---
 
 # **Common Adventurer Abilities Table**
@@ -28,8 +28,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb time, only double ones will result in a failure.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, source-range-870a16bc-03549))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, source-range-870a16bc-03549))_
+
+> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb time, only double ones will result in a failure.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
 
 | **Table 6-1: Climb by Skill** |
 | --- |
@@ -49,10 +54,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, 
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
 
-> Context: A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
+
+> A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03552))_
 
 | Base Target Score = 10 |
 | --- |
@@ -90,10 +99,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03552))_
 
-> Context: The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+
+> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
 
 | Feature Used | Base Target Score |
 | --- | --- |
@@ -126,7 +139,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
 
 | Skill Used | Base Target Score |
 | --- | --- |
@@ -155,7 +171,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08385))_
 
 | Ability | Relevant AbilityScore | Retryinga success roll on the same target |
 | --- | --- | --- |
@@ -179,13 +198,22 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08385))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08388))_
 
 > **Table 1-1: Ability Bonuses**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08388))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08389))_
 
 > **Table 1-2: Skill Types**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08389))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08390))_
 
 | AbilityScore | Bonus |
 | --- | --- |
@@ -211,16 +239,24 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08389))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08390))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08391))_
 
 > **Table 1-3: Determining Sub-Ability Scores**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08391))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08392))_
 
 | Sub-AbilityScore | Human | Dwarf | Grassrunner | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -250,16 +286,24 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08392))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08394))_
 
 > **Table 1-4: Average Ability Scores by Race**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08394))_
 
-> Context: On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08395))_
 
 | AbilityScore | Human | Grassrunner | Dwarf | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -285,10 +329,16 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08395))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08397))_
 
 > **Table 1-5: Backgrounds**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08397))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08398))_
 
 | 2D | Background | StartingSkills | Exp. Pts. | Money |
 | --- | --- | --- | --- | --- |
@@ -324,10 +374,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08397))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08398))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08399))_
 
 > **Table 1-6: Starting Experience by Race**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08399))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08400))_
 
 | Race | Restrictions／Special Abilities | Pre-Adventure<br>Exp. Pts. | Money |
 | --- | --- | --- | --- |
@@ -351,10 +407,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08399))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08400))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08401))_
 
 > **Table 1-7: Experience Points by Skill (at Character Creation)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08401))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08402))_
 
 | Attained<br>Level | Sorcerer & Sage at the<br>same time | Sorcerer | Sorcerer<br>(with<br>Sage) | <br>Shaman | <br>Fighter<br>Tief<br>Priest | <br>Ranger<br>Sage<br>Bard |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -374,10 +436,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08401))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08402))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08404))_
 
 > **Table 1-8: Weapons-1**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08404))_
+
+### Technical atom 20
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08405))_
 
 | **Table 1-8: Weapons-1** |
 | --- |
@@ -405,10 +473,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08404))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08405))_
+
+### Technical atom 21
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08407))_
 
 > **Table 1-8: Weapons-2**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08407))_
+
+### Technical atom 22
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08408))_
 
 | **Table 1-8: Weapons-2** |
 | --- |
@@ -444,10 +518,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08407))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08408))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08410))_
 
 > **Table 1-9: Armor**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08410))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08411))_
 
 | **Table 1-9: Armor** |
 | --- |
@@ -467,10 +547,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08410))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08411))_
+
+### Technical atom 25
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08412))_
 
 > **Table 1-10: Shields**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08412))_
+
+### Technical atom 26
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08413))_
 
 | Shield Name | Req. Str. | Price |
 | --- | --- | --- |
@@ -488,10 +574,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08412))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08413))_
+
+### Technical atom 27
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08419))_
 
 > **Table 1-11: Equipment**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08419))_
+
+### Technical atom 28
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08420))_
 
 | **Table 1-11: Equipment** |
 | --- |
@@ -525,13 +617,20 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08419))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08420))_
+
+### Technical atom 29
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08421))_
 
 > **Table 5-1: Area and Size Expansion**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08421))_
 
-> Context: When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08424))_
+### Technical atom 30
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08424))_
+
+> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08422))_
 
 | Expansion<br>Rate | Area Expansion<br>Length | Volume Expansion<br>Length |
 | --- | --- | --- |
@@ -563,16 +662,24 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08424))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08422))_
 
-> Context: For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08425))_
+### Technical atom 31
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08425))_
+
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08427))_
 
 > **Table 9-1: Determining Target Scores or Difficulties**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08427))_
 
-> Context: For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08425))_
+### Technical atom 32
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08425))_
+
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08428))_
 
 | Target Score | Difculty | Standard |
 | --- | --- | --- |
@@ -622,13 +729,20 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08425))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08428))_
+
+### Technical atom 33
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
 
 > **Table 9-2: Success Roll Modifiers**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
 
-> Context: **Table 9-2: Success Roll Modifiers**
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
+### Technical atom 34
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
+
+> **Table 9-2: Success Roll Modifiers**
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08430))_
 
 | **Table 9-2: Success Roll Modifers** |
 | --- |
@@ -648,16 +762,24 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08430))_
 
-> Context: **Table 9-2: Success Roll Modifiers**
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
+### Technical atom 35
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
+
+> **Table 9-2: Success Roll Modifiers**
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08431))_
 
 > **Table 10-1: Attack Power and Evasion Speed Modifiers**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08431))_
 
-> Context: **Table 9-2: Success Roll Modifiers**
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
+### Technical atom 36
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
+
+> **Table 9-2: Success Roll Modifiers**
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08432))_
 
 | **Table 10-1: Attack Power and Evasion Speed Modifers** |
 | --- |
@@ -679,10 +801,16 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08432))_
+
+### Technical atom 37
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08433))_
 
 > **Table 10-2: Surprise Attack Check**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08433))_
+
+### Technical atom 38
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08434))_
 
 | **Table 10-2: Surprise Attack Check** |
 | --- |
@@ -706,10 +834,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08433))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08434))_
+
+### Technical atom 39
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08436))_
 
 > **Table 11-2: NPC Presence by Level**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08436))_
+
+### Technical atom 40
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08437))_
 
 | 10th level | Royal capital level of a large country |
 | --- | --- |
@@ -731,10 +865,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08436))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08437))_
+
+### Technical atom 41
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08438))_
 
 > **Table 16-3 Optional Armor Table**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08438))_
+
+### Technical atom 42
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08439))_
 
 | Armor Name | Evasion Speed<br>Modifer | Defense<br>Modifer | Critical Target<br>Change | Anti-strangling<br>Protection |
 | --- | --- | --- | --- | --- |
@@ -752,10 +892,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08438))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08439))_
+
+### Technical atom 43
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08440))_
 
 > **Table 16-4 Maximum Ranges Table**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08440))_
+
+### Technical atom 44
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08441))_
 
 | **Table 16-4 Maximum Ranges** | **Table** |
 | --- | --- |
@@ -811,10 +957,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08440))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08441))_
+
+### Technical atom 45
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08443))_
 
 > **Table 18-1: Age-Based Ability Score Modification Table**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08443))_
+
+### Technical atom 46
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08444))_
 
 | Age | Modifcation |
 | --- | --- |
@@ -848,10 +1000,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08443))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08444))_
+
+### Technical atom 47
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08445))_
 
 > **Table 18-2 Types of Mag**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08445))_
+
+### Technical atom 48
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08446))_
 
 | Fire-Type | Firebolt, Fireball, Firestorm |
 | --- | --- |
@@ -883,10 +1041,16 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08445))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08446))_
+
+### Technical atom 49
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08448))_
 
 > **Table 4-1: Rating Table**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08448))_
+
+### Technical atom 50
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08449))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -924,7 +1088,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08448))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08449))_
+
+### Technical atom 51
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08450))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -962,7 +1129,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08449))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08450))_
+
+### Technical atom 52
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08451))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1000,4 +1170,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08450))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08451))_

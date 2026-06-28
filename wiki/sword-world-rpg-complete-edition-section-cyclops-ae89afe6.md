@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-cyclops-ae89afe6@4b907d00cbc48857b106efa7151fa9f5
+projection_coverage: section-sword-world-rpg-complete-edition-section-cyclops-ae89afe6@142ee1656868c4c9e0cb45911e20e643
 ---
 
 # **[ Cyclops ]**
@@ -28,8 +28,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Frost giants have a deep connection with the spirit power of ice, and can use spirit magic sourced from the power of ice spirits (frau, fenrir) up to 8th level. Also, they will not suffer any damage at all from cold-type attacks.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05296))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05296))_
+
+> Frost giants have a deep connection with the spirit power of ice, and can use spirit magic sourced from the power of ice spirits (frau, fenrir) up to 8th level. Also, they will not suffer any damage at all from cold-type attacks.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05298))_
 
 > Monster Level=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05298))_

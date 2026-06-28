@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-tunnel-gnome-earth-spirit-c668f2f6@af62fa540524bc540ac68bef23dbadf3
+projection_coverage: section-sword-world-rpg-complete-edition-section-tunnel-gnome-earth-spirit-c668f2f6@174ab3a12a29693c46a4249a6565d978
 ---
 
 # **[ Tunnel ] (Gnome/Earth Spirit)**
@@ -33,20 +33,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02475))_
+
 > Base Mental Power Cost=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02475))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02476))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02476))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02477))_
 
 > Area=1 meter radius, 10 meter length Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02477))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02478))_
 
 > Effect=Drill a hole in the ground, a stone wall, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02478))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02479))_
 
 > Type=Counters (Overpowers): _Spirit Wall: Gnome_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02479))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02480))_
 
 > Expansion=Final score, duration, target score Resist=Special (see description)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02480))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lance-174d0e6e@4b1e10fcbfaede97ce356156804f974c
+projection_coverage: section-sword-world-rpg-complete-edition-section-lance-174d0e6e@0dacaeeaa25725434801591cca5b34f4
 ---
 
 # **Lance**
@@ -26,11 +26,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07955))_
+
 > When performing a lance charge, the movement distance must be within _lance length (required strength x 15 cm) x 2_ _**and** 90 meters (horse's full movement distance)_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07955))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07956))_
 
 > If lance charge hits, add +10 to strike power (since it's a charge) during the damage check.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07956))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07957))_
 
 > If you’re brought into melee while using a lance, you can evade as usual, but you _cannot_ attack.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07957))_

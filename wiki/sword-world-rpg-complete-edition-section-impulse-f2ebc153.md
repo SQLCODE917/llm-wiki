@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-impulse-f2ebc153@dfaa0d9649cb627ade154385c808e5a9
+projection_coverage: section-sword-world-rpg-complete-edition-section-impulse-f2ebc153@8569136ca9b511d7761356147fdf1723
 ---
 
 # 《 **Impulse** 》
@@ -21,8 +21,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07051))_
+
 > Rarity=12 Enchanter=Unknown Form=A mithril silver broadsword that emits a pale light Required Strength=16 (Strike power 21) Base Trade Price=27,000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07051))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07052))_
 
 > Powers=+1 to attack power and bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07052))_

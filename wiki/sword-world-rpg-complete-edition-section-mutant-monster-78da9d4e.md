@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mutant-monster-78da9d4e@f63afe2b6dc52f4432f23131e82a3e49
+projection_coverage: section-sword-world-rpg-complete-edition-section-mutant-monster-78da9d4e@3534079c29eb13be826586461eadb573
 ---
 
 # **[ Mutant Monster ]**
@@ -27,17 +27,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06519))_
+### Technical atom 1
 
-> Context: This is a human who has mutated and gone berserk due to a special poison called _Living Doll_ (see Poison List, p. 161). They vary in appearance; some have four arms, some have a tail instead of legs, some have small wings, and some have scales all over their bodies.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06522))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06519))_
+
+> Monster Level=5
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06522))_
+
+> This is a human who has mutated and gone berserk due to a special poison called _Living Doll_ (see Poison List, p. 161). They vary in appearance; some have four arms, some have a tail instead of legs, some have small wings, and some have scales all over their bodies.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06523))_
 
 > Transformation from human to monster takes one round, during which they cannot attack, but they can still evade.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06523))_
 
-> Context: Transformation from human to monster takes one round, during which they cannot attack, but they can still evade. Evasion points, defense points, and life points in the round during transformation use the _monster's_ scores.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06523))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06523))_
+
+> Transformation from human to monster takes one round, during which they cannot attack, but they can still evade. Evasion points, defense points, and life points in the round during transformation use the _monster's_ scores.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06524))_
 
 > If you call out to them with all your heart, they may respond.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06524))_

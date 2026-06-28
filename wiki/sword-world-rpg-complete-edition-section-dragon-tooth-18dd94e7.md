@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dragon-tooth-18dd94e7@e81cf25ece1d6b9d456378c2a1bc5e2a
+projection_coverage: section-sword-world-rpg-complete-edition-section-dragon-tooth-18dd94e7@7f7ee2b476498858ef25da4d12b49a66
 ---
 
 # **[ Dragon Tooth ]**
@@ -20,8 +20,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07557))_
+
 > Rarity=10 Enchanter=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07557))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07558))_
 
 > Form=Dragon tooth Base Trade Price=5000 gamels Powers=Material for a skeleton warrior
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07558))_

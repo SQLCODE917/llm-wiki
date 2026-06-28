@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-tiger-59827df8@cd0411acdb202dbe31c1104265c14293
+projection_coverage: section-sword-world-rpg-complete-edition-section-tiger-59827df8@cff2cf957cfeac9d5507111379bba968
 ---
 
 # **[ Tiger ]**
@@ -23,8 +23,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05772))_
+
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05772))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05775))_
 
 > If they’re hungry, they may also attack humans.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05775))_

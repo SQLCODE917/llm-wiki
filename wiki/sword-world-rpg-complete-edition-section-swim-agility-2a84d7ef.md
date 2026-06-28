@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-swim-agility-2a84d7ef@ed519fb7cc029f103a48967b162db070
+projection_coverage: section-sword-world-rpg-complete-edition-section-swim-agility-2a84d7ef@df625891c3f1371209fd94dcbbcb37c8
 ---
 
 # **[** ② **Swim [Agility] ]**
@@ -45,44 +45,72 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Basically all adventurers can swim. Therefore, you can swim across any pond that is about 25 meters in size. There is no need for a success roll (some players may choose to say _my character is sinking like a stone_ , but that's up to them).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03526))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03526))_
+
+> Basically all adventurers can swim. Therefore, you can swim across any pond that is about 25 meters in size. There is no need for a success roll (some players may choose to say _my character is sinking like a stone_ , but that's up to them).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
 
 > However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
 
-> Context: However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
+
+> However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03528))_
 
 > You can only wear cloth or at most soft leather.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03528))_
 
-> Context: However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
+
+> However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03529))_
 
 > If you succeed, you will be able to take it off and rise to the surface.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03529))_
 
-> Context: This attempt takes one minute, regardless of success or failure. An adventurer can only hold their breath underwater for a number of rounds equal to their life force. Each round is 10 seconds long, so this success roll can only be made a number of times equal to your life force ÷ 6, or in other words, your life force bonus. If you can't take off your armor in time, you'll drown.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03530))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03530))_
+
+> This attempt takes one minute, regardless of success or failure. An adventurer can only hold their breath underwater for a number of rounds equal to their life force. Each round is 10 seconds long, so this success roll can only be made a number of times equal to your life force ÷ 6, or in other words, your life force bonus. If you can't take off your armor in time, you'll drown.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
 
 > Also, if the distance is long or there are rapids, add a
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
 
-> Context: Heavy weapons and luggage also impede swimming. If you recklessly try to swim with a sword, spear, or ax, then using _adventurer level + agility bonus_ as the baseline score, make a success roll against target score 13 (this can be increased or decreased depending on the weight of your belongings. Also, if the distance is long or there are rapids, add a
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
+
+> Heavy weapons and luggage also impede swimming. If you recklessly try to swim with a sword, spear, or ax, then using _adventurer level + agility bonus_ as the baseline score, make a success roll against target score 13 (this can be increased or decreased depending on the weight of your belongings. Also, if the distance is long or there are rapids, add a
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03532))_
 
 > Even when carrying something other than a weapon, the game master should consider its weight when determining the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03532))_
 
-> Context: Heavy weapons and luggage also impede swimming. If you recklessly try to swim with a sword, spear, or ax, then using _adventurer level + agility bonus_ as the baseline score, make a success roll against target score 13 (this can be increased or decreased depending on the weight of your belongings. Also, if the distance is long or there are rapids, add a
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
+
+> Heavy weapons and luggage also impede swimming. If you recklessly try to swim with a sword, spear, or ax, then using _adventurer level + agility bonus_ as the baseline score, make a success roll against target score 13 (this can be increased or decreased depending on the weight of your belongings. Also, if the distance is long or there are rapids, add a
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03532))_
 
 > few more points to the target score), and if you fail, you will sink. However, unlike armor, weapons can be easily discarded. Even when carrying something other than a weapon, the game master should consider its weight when determining the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03532))_
 
-> Context: few more points to the target score), and if you fail, you will sink. However, unlike armor, weapons can be easily discarded. Even when carrying something other than a weapon, the game master should consider its weight when determining the target score.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03532))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03532))_
+
+> few more points to the target score), and if you fail, you will sink. However, unlike armor, weapons can be easily discarded. Even when carrying something other than a weapon, the game master should consider its weight when determining the target score.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03533))_
 
 > Climbing with the thief skill does _not_ require rope assistance, and if you _do_ have a rope, you can almost certainly climb.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03533))_

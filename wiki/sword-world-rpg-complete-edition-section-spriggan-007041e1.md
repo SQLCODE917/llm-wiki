@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-spriggan-007041e1@34bdceedc4d36a4c413ff0b8acf33894
+projection_coverage: section-sword-world-rpg-complete-edition-section-spriggan-007041e1@b9ca8e447d0197edf925ff4a5dfdb5eb
 ---
 
 # **[ Spriggan ]**
@@ -33,23 +33,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Evasion Points=13 (6) Defense Points=8
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05251))_
+### Technical atom 1
 
-> Context: If given the chance (such as when they're alone with a human who believes they're a normal child), a spriggan will revert to their true form (an ugly, 3- meter-tall titan with fangs bared and claws out) to attack their target. The transformation is instantaneous. If the target is unaware of the spriggan's true identity, this is a surprise attack. The target may not take any actions for one round and will suffer a -4 penalty to evasion. Spriggans quickly devour the flesh of those they kill. If th
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05255))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05251))_
+
+> Evasion Points=13 (6) Defense Points=8
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05255))_
+
+> If given the chance (such as when they're alone with a human who believes they're a normal child), a spriggan will revert to their true form (an ugly, 3- meter-tall titan with fangs bared and claws out) to attack their target. The transformation is instantaneous. If the target is unaware of the spriggan's true identity, this is a surprise attack. The target may not take any actions for one round and will suffer a -4 penalty to evasion. Spriggans quickly devour the flesh of those they kill. If th
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05254))_
 
 > The form that a Spriggan can take after transforming is fixed for each individual (its apparent age cannot be changed either).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05254))_
 
-> Context: Spriggans are evil titans who enjoy eating raw meat. They usually live in mountains, hills, forests, etc. but sometimes they come to human villages in search of their favorite food, human flesh. When entering a human village, spriggan transforms into a human child between the ages of 4 and 10. The transformation is so ingenious that there's nothing that hints at the spriggan's true identity, nor can it be detected by _Sense Magic_ or _Sense Aura_ . The form that a Spriggan can take after transfo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05254))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05254))_
+
+> Spriggans are evil titans who enjoy eating raw meat. They usually live in mountains, hills, forests, etc. but sometimes they come to human villages in search of their favorite food, human flesh. When entering a human village, spriggan transforms into a human child between the ages of 4 and 10. The transformation is so ingenious that there's nothing that hints at the spriggan's true identity, nor can it be detected by _Sense Magic_ or _Sense Aura_ . The form that a Spriggan can take after transfo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05255))_
 
 > The target may not take any actions for one round and will suffer a -4 penalty to evasion.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05255))_
 
-> Context: If given the chance (such as when they're alone with a human who believes they're a normal child), a spriggan will revert to their true form (an ugly, 3- meter-tall titan with fangs bared and claws out) to attack their target. The transformation is instantaneous. If the target is unaware of the spriggan's true identity, this is a surprise attack. The target may not take any actions for one round and will suffer a -4 penalty to evasion. Spriggans quickly devour the flesh of those they kill. If th
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05255))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05255))_
+
+> If given the chance (such as when they're alone with a human who believes they're a normal child), a spriggan will revert to their true form (an ugly, 3- meter-tall titan with fangs bared and claws out) to attack their target. The transformation is instantaneous. If the target is unaware of the spriggan's true identity, this is a surprise attack. The target may not take any actions for one round and will suffer a -4 penalty to evasion. Spriggans quickly devour the flesh of those they kill. If th
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05256))_
 
 > A spriggan can use its considerable strength even in its child form.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05256))_

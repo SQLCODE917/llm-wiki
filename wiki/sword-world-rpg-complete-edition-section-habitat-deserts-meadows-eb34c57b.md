@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-habitat-deserts-meadows-eb34c57b@f9c04e21deb7d4dc4fff61701daeef9b
+projection_coverage: section-sword-world-rpg-complete-edition-section-habitat-deserts-meadows-eb34c57b@253b48b66d52e89778496bcb58e7f5a9
 ---
 
 # Habitat=Deserts, meadows
@@ -25,11 +25,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06001))_
+### Technical atom 1
 
-> Context: A giant tarantula's fangs contain a poison (toxicity score 12) that affects motor nerves. Those who are dealt damage by these fangs, and fail a life force resistance roll, will begin to dance
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06003))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06001))_
+
+> Languages=None Perception=Five senses
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06003))_
+
+> A giant tarantula's fangs contain a poison (toxicity score 12) that affects motor nerves. Those who are dealt damage by these fangs, and fail a life force resistance roll, will begin to dance
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06004))_
 
 > While dancing, you’ll suffer a - 4 penalty on attack and evasion, and cannot use ancient magic or spirit magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06004))_

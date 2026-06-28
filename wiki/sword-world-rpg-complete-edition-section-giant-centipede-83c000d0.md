@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-centipede-83c000d0@4a6f4a8f7705f97c6dff857c5494d17a
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-centipede-83c000d0@5051baec3d54c9c919de0a2aba4d5fed
 ---
 
 # **[ Giant Centipede ]**
@@ -24,20 +24,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
+
+> Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05698))_
 
 > Monster Level=2
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05698))_
 
-> Context: Rarity=7 Agility=10 Movement Speed=12 Number=One to several Frequency=Moderate Intellect=Almost none Reaction=Neutral Attack Points=Fangs: 9 (2) Strike Points=6+poison Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=16/10 (3) Mental Points/Resistance=5/8 (1) Special Abilities=Poison (Toxicity score 9, motor function decline=success roll-2) Mental attack immunity
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05699))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05699))_
+
+> Rarity=7 Agility=10 Movement Speed=12 Number=One to several Frequency=Moderate Intellect=Almost none Reaction=Neutral Attack Points=Fangs: 9 (2) Strike Points=6+poison Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=16/10 (3) Mental Points/Resistance=5/8 (1) Special Abilities=Poison (Toxicity score 9, motor function decline=success roll-2) Mental attack immunity
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05700))_
 
 > Habitat=Damp, gloomy places such as deep forests, jungles, caves, ruins, etc. Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05700))_
 
-> Context: The giant centipede is an abnormally developed giant bug, with a body length that ranges from about 30 cm to 1 meter. Their long and narrow, multi-segmented bodies are lined with dozens of legs, which they use to twist and crawl along, attacking and feeding on those who get in their way.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05701))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05701))_
+
+> The giant centipede is an abnormally developed giant bug, with a body length that ranges from about 30 cm to 1 meter. Their long and narrow, multi-segmented bodies are lined with dozens of legs, which they use to twist and crawl along, attacking and feeding on those who get in their way.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05702))_
 
 > An adventurer bitten by a giant centipede must make a life force resistance roll against target score 9.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05702))_

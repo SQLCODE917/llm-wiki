@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-light-7cb55d80@a2e15491306ba555097d3a0a559e5a24
+projection_coverage: section-sword-world-rpg-complete-edition-section-light-7cb55d80@6fee33eee3281aec8625eb652859a155
 ---
 
 # **[ Light ]**
@@ -23,23 +23,44 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01664))_
+
 > Base Mental Power Cost=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01664))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01665))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01665))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01666))_
 
 > Area=A space with a 10 meter radius Duration=12 hours
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01666))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01667))_
 
 > Effect=Lights a magical light within the area of effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01667))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01668))_
 
 > Type=Counters (Negates): _Darkness_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01668))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01671))_
 
 > Countered (Negated) By: _Darkness_ Expansion=Duration, distance, target volume Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01671))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01672))_
 
 > If you cast it on a portable object such as a shield, you can move the light source along with the object.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01672))_

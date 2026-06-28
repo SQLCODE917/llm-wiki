@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-how-to-make-a-difficulty-check-6a6a2fa1@91f3a35c19d8db5bcc0aa70f70262c98
+projection_coverage: section-sword-world-rpg-complete-edition-section-how-to-make-a-difficulty-check-6a6a2fa1@5783345a53ddbbc1c5408f3f30bf06a1
 ---
 
 # **How to Make a Difficulty Check**
@@ -38,8 +38,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The players' dice rolls are otherwise the same. They will be told the baseline score, roll 2D, and modify it with any bonuses or penalties to find a final score. The game master does not say whether the result is _the action succeeded_ or _the action failed_ , because a difficulty check is made when the success or failure of the action is _not known_ to the characters. They must only answer as much as the character can tell from their successes and failures. Let's show how the game master's answ
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00633, source-range-870a16bc-00637))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00633, source-range-870a16bc-00637))_
+
+> The players' dice rolls are otherwise the same. They will be told the baseline score, roll 2D, and modify it with any bonuses or penalties to find a final score. The game master does not say whether the result is _the action succeeded_ or _the action failed_ , because a difficulty check is made when the success or failure of the action is _not known_ to the characters. They must only answer as much as the character can tell from their successes and failures. Let's show how the game master's answ
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00635))_
 
 > final score ≥ target score (difficulty + 2D) → **action succeeds**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00635))_

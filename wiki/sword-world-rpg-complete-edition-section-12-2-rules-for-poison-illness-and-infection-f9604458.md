@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-rules-for-poison-illness-and-infection-f9604458@cb2825a01baeec5a3e4641c4a54e0ccd
+projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-rules-for-poison-illness-and-infection-f9604458@bc6bbcba3b124d69515356d8a0f1dc65
 ---
 
 # 12.2 Rules for Poison, Illness and Infection
@@ -362,8 +362,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04477))_
+
 > **Table 12-1: Languages**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04477))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_
 
 | **Table 12-1: Languages** |
 | --- |
@@ -381,367 +388,661 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04477))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04478))_
 
-> Context: Just like in our world, in Alecrast, using poison as a weapon is an immoral act. If a player character uses poison to defeat an enemy, they are sure to be treated as a coward and looked down upon by the public. Therefore, a proud warrior does _not_ want to use poison. On the other hand, assassins, evil rune masters, dark priests, etc. _do_ like to use poison.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04514))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04514))_
+
+> Just like in our world, in Alecrast, using poison as a weapon is an immoral act. If a player character uses poison to defeat an enemy, they are sure to be treated as a coward and looked down upon by the public. Therefore, a proud warrior does _not_ want to use poison. On the other hand, assassins, evil rune masters, dark priests, etc. _do_ like to use poison.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04515))_
 
 > Poisons that have entered the body can be cleared using specific antidotes (if any), the holy magic _Cure Poison_ or _Refresh_ , or the spirit magic _Restore Health_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04515))_
 
-> Context: Poisons that have entered the body can be cleared using specific antidotes (if any), the holy magic _Cure Poison_ or _Refresh_ , or the spirit magic _Restore Health_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04515))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04515))_
+
+> Poisons that have entered the body can be cleared using specific antidotes (if any), the holy magic _Cure Poison_ or _Refresh_ , or the spirit magic _Restore Health_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04516))_
 
 > Once a detox fails, the same caster cannot attempt detox magic until their magic power increases (and even if they try, they will always fail).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04516))_
 
-> Context: To remove a poison with magic, the caster's final score (magic power + 2D roll) must be greater than or equal to the poison's **toxicity score** . Once a detox fails, the same caster cannot attempt detox magic until their magic power increases (and even if they try, they will always fail).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04516))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04516))_
+
+> To remove a poison with magic, the caster's final score (magic power + 2D roll) must be greater than or equal to the poison's **toxicity score** . Once a detox fails, the same caster cannot attempt detox magic until their magic power increases (and even if they try, they will always fail).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04518))_
 
 > The spirit magic _Purification_ can make liquid poison harmless if the final score when casting the magic is greater than or equal to than the toxicity score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04518))_
 
-> Context: Poison details are expressed as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04524))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04524))_
+
+> Poison details are expressed as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04526))_
 
 > Effect=Euphoria, drunkenness, in rare cases headache and vomiting, very rarely death Toxicity Score =10 Rarity=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04526))_
 
-> Context: Poison details are expressed as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04524))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04524))_
+
+> Poison details are expressed as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04527))_
 
 > Effect Start Time=30 minutes later Effect Duration=2 days
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04527))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04530))_
 
 > This type of poison only takes effect if you lose 1 or more
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04530))_
 
-> Context: _Inhaled_ poisons are in gas or powder form and take effect when inhaled through the respiratory tract. This is also often used as a trap, but another method is to store it in a breakable bottle and use it by slamming it into your opponent. In rare cases, some creatures use poison gas as a weapon.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04532))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04532))_
+
+> _Inhaled_ poisons are in gas or powder form and take effect when inhaled through the respiratory tract. This is also often used as a trap, but another method is to store it in a breakable bottle and use it by slamming it into your opponent. In rare cases, some creatures use poison gas as a weapon.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04533))_
 
 > If you’re trapped in a room filled with poison gas, you must make a resistance roll every round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04533))_
 
-> Context: Those that say _damage_ are poisons that damage life force (points), but there are common rules for these types of poisons. Each poison has its own unique strike power and bonus damage. If this type of poison enters your body, you will suffer this damage. Make a strike roll as you would for any magic that deals damage. If you roll 10 or greater, it becomes a critical.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04541))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04541))_
+
+> Those that say _damage_ are poisons that damage life force (points), but there are common rules for these types of poisons. Each poison has its own unique strike power and bonus damage. If this type of poison enters your body, you will suffer this damage. Make a strike roll as you would for any magic that deals damage. If you roll 10 or greater, it becomes a critical.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04542))_
 
 > Those affected by the poison can reduce this damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04542))_
 
-> Context: Those that say _damage_ are poisons that damage life force (points), but there are common rules for these types of poisons. Each poison has its own unique strike power and bonus damage. If this type of poison enters your body, you will suffer this damage. Make a strike roll as you would for any magic that deals damage. If you roll 10 or greater, it becomes a critical.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04541))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04541))_
+
+> Those that say _damage_ are poisons that damage life force (points), but there are common rules for these types of poisons. Each poison has its own unique strike power and bonus damage. If this type of poison enters your body, you will suffer this damage. Make a strike roll as you would for any magic that deals damage. If you roll 10 or greater, it becomes a critical.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04543))_
 
 > If you successfully resist, the damage will be reduced (in this case, strike power will be -10 and no criticals will occur) or you will not suffer any damage at all.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04543))_
 
-> Context: This represents how famous the poison is. The higher this score, the rarer the poison. An adventurer must make a success roll using _sage skill level + intelligence bonus_ as the baseline score, and if they succeed, they will know about the poison. You can also _guess_ the name of the poison when you see the symptoms of the poisoned person. If your success roll is 4 or more above the **rarity** , you can also know how to _make_ the poison and its antidote (if it has one).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04549))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04549))_
+
+> This represents how famous the poison is. The higher this score, the rarer the poison. An adventurer must make a success roll using _sage skill level + intelligence bonus_ as the baseline score, and if they succeed, they will know about the poison. You can also _guess_ the name of the poison when you see the symptoms of the poisoned person. If your success roll is 4 or more above the **rarity** , you can also know how to _make_ the poison and its antidote (if it has one).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04547))_
 
 > When the poison enters the body, make a life force resistance roll (for monsters, a life _point_ resistance roll) using the toxicity score as the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04547))_
 
-> Context: Each poison has a **toxicity score** . When the poison enters the body, make a life force resistance roll (for monsters, a life _point_ resistance roll) using the toxicity score as the target score. If you fail, the effect will appear, but if you succeed, the effect will only appear incomplete or won't appear at all. The toxicity scores listed here are just examples; by diluting the substance, the toxicity score can be made as low as desired, and by concentrating it, it can be made somewhat grea
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04547))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04547))_
+
+> Each poison has a **toxicity score** . When the poison enters the body, make a life force resistance roll (for monsters, a life _point_ resistance roll) using the toxicity score as the target score. If you fail, the effect will appear, but if you succeed, the effect will only appear incomplete or won't appear at all. The toxicity scores listed here are just examples; by diluting the substance, the toxicity score can be made as low as desired, and by concentrating it, it can be made somewhat grea
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04549))_
 
 > An adventurer must make a success roll using _sage skill level + intelligence bonus_ as the baseline score, and if they succeed, they will know about the poison.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04549))_
 
-> Context: Typical poisons include the following. There are many other types of poisons as well. This is the most terrifying poison used for assassination. This is because this poison is completely transparent, tasteless, and odorless, so it’ll never be noticed if it's mixed into alcohol or food. If you fail to resist, you will die, but if you succeed, there’ll be no harm at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04558, source-range-870a16bc-04560))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04558, source-range-870a16bc-04560))_
+
+> Typical poisons include the following. There are many other types of poisons as well. This is the most terrifying poison used for assassination. This is because this poison is completely transparent, tasteless, and odorless, so it’ll never be noticed if it's mixed into alcohol or food. If you fail to resist, you will die, but if you succeed, there’ll be no harm at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04559))_
 
 > **[ Iocane (Dose)** Effect=Fatal Toxicity Score=15 Rarity=12 Effect Start Time= 1 round later Effect Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04559))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04563))_
 
 > Toxicity Score=14 Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04563))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04564))_
 
 > Effect Start Time=1 hour later Effect Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04564))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04565))_
 
 > If you are detoxed, you will recover (grow) within a few days, but unless you are detoxed, you will have to act with the same physique and mentality as a child.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04565))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04567))_
 
 > Effect=Causes illusions
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04567))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04568))_
 
 > Toxicity Score=11 Rarity=14 Effect Start Time=1 round later Effect Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04568))_
 
-> Context: This is so named because its effect is similar to the _Forget_ magic used by gremlins. Those who fail to resist will have no memory of their past, and will be unable to use any abilities related to intelligence (those that use intelligence bonus to calculate a baseline score).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04572))_
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04572))_
+
+> This is so named because its effect is similar to the _Forget_ magic used by gremlins. Those who fail to resist will have no memory of their past, and will be unable to use any abilities related to intelligence (those that use intelligence bonus to calculate a baseline score).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04574))_
 
 > Effect=Deals strike power 30 damage plus 12 bonus damage every hour. Resist reduces effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04574))_
 
-> Context: This is so named because its effect is similar to the _Forget_ magic used by gremlins. Those who fail to resist will have no memory of their past, and will be unable to use any abilities related to intelligence (those that use intelligence bonus to calculate a baseline score).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04572))_
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04572))_
+
+> This is so named because its effect is similar to the _Forget_ magic used by gremlins. Those who fail to resist will have no memory of their past, and will be unable to use any abilities related to intelligence (those that use intelligence bonus to calculate a baseline score).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04575))_
 
 > Toxicity Score=14 Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04575))_
+
+### Technical atom 22
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04576))_
 
 > Effect Start Time=1 hour later Effect Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04576))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04582))_
 
 > Effect=Become unable to speak Toxicity Score=12 Rarity=14 Effect Start Time= 1 round later Effect Duration=24 hours
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04582))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04585))_
 
 > Effect=Paralyze the mind, making it into a robot Toxicity Score=11 Rarity=14 Effect Start Time=1 round later Effect Duration=24 hours
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04585))_
+
+### Technical atom 25
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04587))_
 
 > However, if you suffer a very strong physical or mental shock, you may recover from the paralysis even before the duration expires.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04587))_
 
-> Context: Around one additional hour of suggestions can transform the victim into a robot that follows commands. Victims turned into robots faithfully follow the commands of the person who gave them the suggestions, and will casually kill even their family and friends (they _cannot_ use magic). However, if you suffer a very strong physical or mental shock, you may recover from the paralysis even before the duration expires.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04587))_
+### Technical atom 26
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04587))_
+
+> Around one additional hour of suggestions can transform the victim into a robot that follows commands. Victims turned into robots faithfully follow the commands of the person who gave them the suggestions, and will casually kill even their family and friends (they _cannot_ use magic). However, if you suffer a very strong physical or mental shock, you may recover from the paralysis even before the duration expires.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04589))_
 
 > If treatment is delayed, you may remain in a coma for several days after the poison wears off.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04589))_
 
-> Context: A poison often used by assassins, it is a pitch-black viscous liquid. If you are wounded by a knife coated with this poison, you will suffer damage every 10 minutes thereafter. The victim continues to suffer damage until the poison wears off or they die. During this time, you will be in terrible pain and unable to take any action. If treatment is delayed, you may remain in a coma for several days after the poison wears off. If you succeed on a resistance roll, you will not suffer any damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04589))_
+### Technical atom 27
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04589))_
+
+> A poison often used by assassins, it is a pitch-black viscous liquid. If you are wounded by a knife coated with this poison, you will suffer damage every 10 minutes thereafter. The victim continues to suffer damage until the poison wears off or they die. During this time, you will be in terrible pain and unable to take any action. If treatment is delayed, you may remain in a coma for several days after the poison wears off. If you succeed on a resistance roll, you will not suffer any damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04590))_
 
 > **[Deathlike Sleep (Dose)]** Effect=Put into suspended animation Toxicity Score=14 Rarity=14 Effect Start Time= 1 round later Effect Duration=12 hours
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04590))_
 
-> Context: A poison often used by assassins, it is a pitch-black viscous liquid. If you are wounded by a knife coated with this poison, you will suffer damage every 10 minutes thereafter. The victim continues to suffer damage until the poison wears off or they die. During this time, you will be in terrible pain and unable to take any action. If treatment is delayed, you may remain in a coma for several days after the poison wears off. If you succeed on a resistance roll, you will not suffer any damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04589))_
+### Technical atom 28
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04589))_
+
+> A poison often used by assassins, it is a pitch-black viscous liquid. If you are wounded by a knife coated with this poison, you will suffer damage every 10 minutes thereafter. The victim continues to suffer damage until the poison wears off or they die. During this time, you will be in terrible pain and unable to take any action. If treatment is delayed, you may remain in a coma for several days after the poison wears off. If you succeed on a resistance roll, you will not suffer any damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04592))_
 
 > **[Deadly Dust (Inhaled/Damage)]** Effect=Deals strike power 10 damage plus bonus damage 1. Resist negates effect. Toxicity Score=10 Rarity=9 Effect Start Time=Immediately Effect Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04592))_
 
-> Context: A fine powdered poison that requires a resistance roll each time you inhale, resulting in damage if you fail.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04593))_
+### Technical atom 29
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04593))_
+
+> A fine powdered poison that requires a resistance roll each time you inhale, resulting in damage if you fail.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04596))_
 
 > Effect=Gives happy dreams Toxicity Score=10 Rarity=10 Effect Start Time= 6 rounds later Effect Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04596))_
+
+### Technical atom 30
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04597))_
 
 > If you use it too many times, you may harm your health or go crazy.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04597))_
 
-> Context: This is smoke produced when the leaves of certain plants are burned. Those who fail to resist will fall asleep and have happy dreams. If you use it too many times, you may harm your health or go crazy.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04597))_
+### Technical atom 31
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04597))_
+
+> This is smoke produced when the leaves of certain plants are burned. Those who fail to resist will fall asleep and have happy dreams. If you use it too many times, you may harm your health or go crazy.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04599))_
 
 > Effect=Make you laugh Toxicity Score=11 Rarity=10 Effect Start Time= 1 round later Effect Duration=1 round
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04599))_
+
+### Technical atom 32
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04602))_
 
 > Effect=Turn into an animal Toxicity Score=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04602))_
+
+### Technical atom 33
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04603))_
 
 > Rarity=15 Effect Start Time= 12 rounds later Effect Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04603))_
+
+### Technical atom 34
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04609))_
 
 > **[ Blue Nail (Injected)** Effect=Full body paralysis Toxicity Score=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04609))_
+
+### Technical atom 35
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04610))_
 
 > Rarity=10 Effect Start Time=1 round later Effect Duration=12 hours
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04610))_
+
+### Technical atom 36
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04613))_
 
 > Effect=Stiffens the whole body Toxicity Score=11 Rarity=13 Effect Start Time= 2 rounds later Effect Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04613))_
+
+### Technical atom 37
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04616))_
 
 > Effect=Cause intense fear Toxicity Score=13 Rarity=14 Effect Start Time=6 rounds later Effect Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04616))_
 
-> Context: This is a viscous poison and is used by smearing it on doorknobs, etc. Those who touch this poison and fail to resist will be struck with intense fear. Determine its effect using Table 5-5: Fears (see p. 89).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04617))_
+### Technical atom 38
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04617))_
+
+> This is a viscous poison and is used by smearing it on doorknobs, etc. Those who touch this poison and fail to resist will be struck with intense fear. Determine its effect using Table 5-5: Fears (see p. 89).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04619))_
 
 > Effect=Change gender Toxicity Score=14 Rarity=15 Effect Start Time=1 round later Effect Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04619))_
 
-> Context: This is a viscous poison and is used by smearing it on doorknobs, etc. Those who touch this poison and fail to resist will be struck with intense fear. Determine its effect using Table 5-5: Fears (see p. 89).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04617))_
+### Technical atom 39
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04617))_
+
+> This is a viscous poison and is used by smearing it on doorknobs, etc. Those who touch this poison and fail to resist will be struck with intense fear. Determine its effect using Table 5-5: Fears (see p. 89).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04620))_
 
 > Additionally, there are no changes to the magic that shamans can use.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04620))_
 
-> Context: This is a small granular poison, and if someone drinks it and fails to resist, they will become a woman if they're a man, and a man if they're a woman. There are no other penalties. Additionally, there are no changes to the magic that shamans can use. If you drink it again, you can return to normal.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04620))_
+### Technical atom 40
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04620))_
+
+> This is a small granular poison, and if someone drinks it and fails to resist, they will become a woman if they're a man, and a man if they're a woman. There are no other penalties. Additionally, there are no changes to the magic that shamans can use. If you drink it again, you can return to normal.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04622))_
 
 > Effect=Petrification Toxicity Score=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04622))_
 
-> Context: This is a small granular poison, and if someone drinks it and fails to resist, they will become a woman if they're a man, and a man if they're a woman. There are no other penalties. Additionally, there are no changes to the magic that shamans can use. If you drink it again, you can return to normal.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04620))_
+### Technical atom 41
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04620))_
+
+> This is a small granular poison, and if someone drinks it and fails to resist, they will become a woman if they're a man, and a man if they're a woman. There are no other penalties. Additionally, there are no changes to the magic that shamans can use. If you drink it again, you can return to normal.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04623))_
 
 > Rarity=13 Effect Start Time=6 rounds later Effect Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04623))_
+
+### Technical atom 42
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04626))_
 
 > Effect=Fall in love with the first person you see
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04626))_
+
+### Technical atom 43
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04627))_
 
 > Toxicity Score=13 Rarity=11 Effect Start Time=1 round later Effect Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04627))_
+
+### Technical atom 44
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04631))_
 
 > Effect=Turns women into little people and men into monsters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04631))_
+
+### Technical atom 45
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04632))_
 
 > Toxicity Score=13 Rarity=17 Effect Start Time=1 round left Effect Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04632))_
 
-> Context: Illness details are expressed as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04642))_
+### Technical atom 46
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04642))_
+
+> Illness details are expressed as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04644))_
 
 > Symptoms=Fever, cough, sneezing, runny nose, diarrhea, arthritis Rarity=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04644))_
+
+### Technical atom 47
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04646))_
 
 > Infection Power=Moderate
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04646))_
 
-> Context: This score is used when making a check to see if you know the illness. If an owner of the sage skill or healer skill succeeds on a success roll using _skill level + intelligence bonus_ as the baseline score and **rarity** as the target score, they can look at a sick patient and identify which illness they have. This means not only
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04651))_
+### Technical atom 48
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04651))_
+
+> This score is used when making a check to see if you know the illness. If an owner of the sage skill or healer skill succeeds on a success roll using _skill level + intelligence bonus_ as the baseline score and **rarity** as the target score, they can look at a sick patient and identify which illness they have. This means not only
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04652))_
 
 > If a disease can be identified, owners of the healer skill can provide appropriate treatment.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04652))_
+
+### Technical atom 49
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04655))_
 
 > If the roll is less than the **progression intensity** , the disease gets worse and the _depth_ increases by 1.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04655))_
 
-> Context: After a certain period of time has elapsed after becoming ill, the illness either progresses further or gets better. The degree of progression of an illness is indicated by a score called **depth** . Immediately after contracting an illness, the _depth_ is 1. After the time indicated by **progression speed** has elapsed since you contracted the illness, roll two dice and look at the result. If the roll is less than the **progression intensity** , the disease gets worse and the _depth_ increases 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04655))_
+### Technical atom 50
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04655))_
+
+> After a certain period of time has elapsed after becoming ill, the illness either progresses further or gets better. The degree of progression of an illness is indicated by a score called **depth** . Immediately after contracting an illness, the _depth_ is 1. After the time indicated by **progression speed** has elapsed since you contracted the illness, roll two dice and look at the result. If the roll is less than the **progression intensity** , the disease gets worse and the _depth_ increases
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04656))_
 
 > Even if a shaman cannot use the spell _Restore Health_ , they can still work with one type of spirit to alleviate symptoms.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04656))_
 
-> Context: When the holy magic _Cure Disease_ or _Refresh_ , or the spirit magic _Restore Health_ are cast, the caster must make a success roll using their magic power as
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04658))_
+### Technical atom 51
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04658))_
+
+> When the holy magic _Cure Disease_ or _Refresh_ , or the spirit magic _Restore Health_ are cast, the caster must make a success roll using their magic power as
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04659))_
 
 > If you succeed, the _depth_ of the illness is reduced by 1 and you can make an additional success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04659))_
 
-> Context: the baseline score. The target score is double the _healing score_ (added in parentheses). If you succeed, the _depth_ of the illness is reduced by 1 and you can make an additional success roll. You can continue to make this check until you fail or until the illness is completely cured. If this does _not_ completely cure the illness, it’ll be _useless_ to cast these spells on the same patient until the caster's magic power increases.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04659))_
+### Technical atom 52
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04659))_
+
+> the baseline score. The target score is double the _healing score_ (added in parentheses). If you succeed, the _depth_ of the illness is reduced by 1 and you can make an additional success roll. You can continue to make this check until you fail or until the illness is completely cured. If this does _not_ completely cure the illness, it’ll be _useless_ to cast these spells on the same patient until the caster's magic power increases.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04660))_
 
 > immediately after the illness's progression check), and you can only make one success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04660))_
+
+### Technical atom 53
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04670))_
 
 > The game master may also create any other illnesses they desire.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04670))_
 
-> Context: Here are some examples of illnesses seen in _Sword World_ . Most of the illnesses listed here are incurable diseases that are difficult to heal and have a high mortality rate. The game master may also create any other illnesses they desire.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04670))_
+### Technical atom 54
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04670))_
+
+> Here are some examples of illnesses seen in _Sword World_ . Most of the illnesses listed here are incurable diseases that are difficult to heal and have a high mortality rate. The game master may also create any other illnesses they desire.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04672))_
 
 > Symptoms=Green spots appear on the body, which eventually rots away from there Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04672))_
+
+### Technical atom 55
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04674))_
 
 > Infection Power=Moderate
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04674))_
+
+### Technical atom 56
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04677))_
 
 > Symptoms=Cotton-like tissue peels off from the wound
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04677))_
+
+### Technical atom 57
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04678))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04678))_
+
+### Technical atom 58
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04680))_
 
 > Infection Power=Weak
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04680))_
+
+### Technical atom 59
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04684))_
 
 > Symptoms=The surface of the body gradually becomes hard like stone
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04684))_
+
+### Technical atom 60
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04685))_
 
 > Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04685))_
+
+### Technical atom 61
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04689))_
 
 > Symptoms=The body keeps dancing separate from the person's will Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04689))_
+
+### Technical atom 62
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04691))_
 
 > Fatal Depth=4 Infection Power=Strong
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04691))_
+
+### Technical atom 63
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04694))_
 
 > **[ Deep Sleep ]** Symptoms=Excessive sleep, extreme fatigue Rarity=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04694))_
+
+### Technical atom 64
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04696))_
 
 > Infection Power=Weak
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04696))_
 
-> Context: It’s believed that this illness is caused by the power of the mind spirit sandman becoming too strong. As the illness progresses, the patient will begin to complain of extreme fatigue with even the slightest amount of exercise, and the amount of time spent sleeping each day will increase (use _depth x 3 + 9_ as a standard). The patient will then die when it reaches the fatal depth of 5. The reason for the outbreak of the disease is unknown, but there are many known cases where excessive use of t
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04697))_
+### Technical atom 65
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04697))_
+
+> It’s believed that this illness is caused by the power of the mind spirit sandman becoming too strong. As the illness progresses, the patient will begin to complain of extreme fatigue with even the slightest amount of exercise, and the amount of time spent sleeping each day will increase (use _depth x 3 + 9_ as a standard). The patient will then die when it reaches the fatal depth of 5. The reason for the outbreak of the disease is unknown, but there are many known cases where excessive use of t
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04700))_
 
 > Symptoms=Fever Rarity=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04700))_
+
+### Technical atom 66
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04704))_
 
 > Symptoms=Shortness of breath, body swelling, inability to move, pain throughout the body
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04704))_
+
+### Technical atom 67
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04705))_
 
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04705))_
+
+### Technical atom 68
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04711))_
 
 > Symptoms=Become extremely weak against sunlight
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04711))_
+
+### Technical atom 69
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04712))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04712))_
+
+### Technical atom 70
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04714))_
 
 > Fatal Depth=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04714))_
+
+### Technical atom 71
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04715))_
 
 > Infection Power=Weak
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04715))_
+
+### Technical atom 72
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04719))_
 
 > Symptoms=Extreme fever, vomiting, diarrhea, shortness of breath
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04719))_
+
+### Technical atom 73
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04720))_
 
 > Rarity=16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04720))_
+
+### Technical atom 74
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04724))_
 
 > Symptoms=Become a lycanthrope
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04724))_
+
+### Technical atom 75
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04725))_
 
 > Rarity=8
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04725))_
+
+### Technical atom 76
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04728))_
 
 > Anyone wounded by a lycanthrope must roll 2D.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04728))_
 
-> Context: Before becoming a full lycanthrope, it can be cured with a spell such as the holy magic _Cure Disease_ , etc. (the target score is 16), but once you become a beast, you _cannot_ be cured again.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04730))_
+### Technical atom 77
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04730))_
+
+> Before becoming a full lycanthrope, it can be cured with a spell such as the holy magic _Cure Disease_ , etc. (the target score is 16), but once you become a beast, you _cannot_ be cured again.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04732))_
 
 > Symptoms=Fever, swelling of joints Rarity=7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04732))_
+
+### Technical atom 78
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04734))_
 
 > Infection Power=Weak
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04734))_
+
+### Technical atom 79
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04736))_
 
 > **[ Red Cap ]** Symptoms=Going berserk, change in body shape Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04736))_
 
-> Context: When you're exposed to extremely strong fear, such as due to combat, etc. leprechaun, the mind spirit, manifests abnormally and causes this illness. When the illness is at depth 1, symptoms include being unable to move due to being seized by fear and having nightmares every night. When the depth is at 2 or greater, changes will appear in your body shape. You'll become hunched over, your hands abnormally long, your face contorted, and your eyes blazing red. This illness was given its name because
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04739))_
+### Technical atom 80
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04739))_
+
+> When you're exposed to extremely strong fear, such as due to combat, etc. leprechaun, the mind spirit, manifests abnormally and causes this illness. When the illness is at depth 1, symptoms include being unable to move due to being seized by fear and having nightmares every night. When the depth is at 2 or greater, changes will appear in your body shape. You'll become hunched over, your hands abnormally long, your face contorted, and your eyes blazing red. This illness was given its name because
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04738))_
 
 > Infection Power=Very strong (Infection through gaze)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04738))_
 
-> Context: When you're exposed to extremely strong fear, such as due to combat, etc. leprechaun, the mind spirit, manifests abnormally and causes this illness. When the illness is at depth 1, symptoms include being unable to move due to being seized by fear and having nightmares every night. When the depth is at 2 or greater, changes will appear in your body shape. You'll become hunched over, your hands abnormally long, your face contorted, and your eyes blazing red. This illness was given its name because
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04739))_
+### Technical atom 81
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04739))_
+
+> When you're exposed to extremely strong fear, such as due to combat, etc. leprechaun, the mind spirit, manifests abnormally and causes this illness. When the illness is at depth 1, symptoms include being unable to move due to being seized by fear and having nightmares every night. When the depth is at 2 or greater, changes will appear in your body shape. You'll become hunched over, your hands abnormally long, your face contorted, and your eyes blazing red. This illness was given its name because
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04740))_
 
 > If you make eye contact with someone who has the illness, a progression check must be made
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04740))_
 
-> Context: A wound can greatly disturb the balance of spirit power within the body, and the power of salamander in particular may become stronger. This results in lockjaw, a disease that causes a severe fever. A character will be unable to do much while suffering from lockjaw due to a high fever. It's not very contagious, but if you leave a wound with mud, etc. the chance of infection is fairly high. It is said that this is because undine and gnome create illusions due to the mud.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04748))_
+### Technical atom 82
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04748))_
+
+> A wound can greatly disturb the balance of spirit power within the body, and the power of salamander in particular may become stronger. This results in lockjaw, a disease that causes a severe fever. A character will be unable to do much while suffering from lockjaw due to a high fever. It's not very contagious, but if you leave a wound with mud, etc. the chance of infection is fairly high. It is said that this is because undine and gnome create illusions due to the mud.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04747))_
 
 > Fatal Depth=4 Infection Power=Very weak
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04747))_
+
+### Technical atom 83
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04751))_
 
 > Those with the sage, ranger, or healer skill can discern herbs by looking at them if they succeed on a success roll using rarity as the target score and _skill level + intelligence bonus_ as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04751))_
 
-> Context: Below is a list of **herbs** known in _Forcelia_ . Each has a provided rarity. Those with the sage, ranger, or healer skill can discern herbs by looking at them if they succeed on a success roll using rarity as the target score and _skill level + intelligence bonus_ as the baseline score.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04751))_
+### Technical atom 84
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04751))_
+
+> Below is a list of **herbs** known in _Forcelia_ . Each has a provided rarity. Those with the sage, ranger, or healer skill can discern herbs by looking at them if they succeed on a success roll using rarity as the target score and _skill level + intelligence bonus_ as the baseline score.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04752))_
 
 > If adventurers are in a large city, they can purchase them at the prices provided here.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04752))_
+
+### Technical atom 85
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04755))_
 
 > Base Trade Value=600 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04755))_
+
+### Technical atom 86
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04756))_
 
 > The flowers can alleviate fever, and when used on a patient suffering from a fever, they'll receive a +2 bonus on progression/healing checks.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04756))_
+
+### Technical atom 87
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04759))_
 
 > Base Trade Value=360 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04759))_
+
+### Technical atom 88
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04760))_
 
 > It's not useful for treating illness, but is effective when accidentally taking other poisons, giving you a +2 bonus to resistance rolls.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04760))_
+
+### Technical atom 89
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04771))_
 
 > Base Trade Value=9000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04771))_

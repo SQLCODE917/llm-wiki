@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-projectile-bonus-damage-24f4be26@d2d697b85436d6684ab7963f5c627053
+projection_coverage: section-sword-world-rpg-complete-edition-section-projectile-bonus-damage-24f4be26@c8698e932e4375c8d7e320d50cd405e2
 ---
 
 # **Projectile Bonus Damage**
@@ -19,6 +19,10 @@ From [[sword-world-rpg-complete-edition]].
 - In the basic rules, any weapon’s bonus damage equals _fighter (or thief, ranger) skill level + strength bonus_ , but for _projectiles_ , an adventurer’s strength is not fully utilized as-is. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07750))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 | Shield<br>Name | Evasion<br>Speed Mod. | Attack<br>Power Mod. |
 | --- | --- | --- |
@@ -36,7 +40,10 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 | Armor Name | Evasion Speed<br>Mod. | Defense<br>Mod. | Critical Target<br>Change | Anti-strangling<br>Prot. |
 | --- | --- | --- | --- | --- |
@@ -56,4 +63,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_

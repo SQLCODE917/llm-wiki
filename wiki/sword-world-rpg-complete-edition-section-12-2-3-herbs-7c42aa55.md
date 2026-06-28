@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-3-herbs-7c42aa55@caec583f4b800c7a2a36a7a66b72cecb
+projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-3-herbs-7c42aa55@1e3bff35ba3a5dfe53e0d94abddc197b
 ---
 
 # **12.2.3 Herbs**
@@ -25,11 +25,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Those with the sage, ranger, or healer skill can discern herbs by looking at them if they succeed on a success roll using rarity as the target score and _skill level + intelligence bonus_ as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04751))_
+### Technical atom 1
 
-> Context: Below is a list of **herbs** known in _Forcelia_ . Each has a provided rarity. Those with the sage, ranger, or healer skill can discern herbs by looking at them if they succeed on a success roll using rarity as the target score and _skill level + intelligence bonus_ as the baseline score.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04751))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04751))_
+
+> Those with the sage, ranger, or healer skill can discern herbs by looking at them if they succeed on a success roll using rarity as the target score and _skill level + intelligence bonus_ as the baseline score.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04751))_
+
+> Below is a list of **herbs** known in _Forcelia_ . Each has a provided rarity. Those with the sage, ranger, or healer skill can discern herbs by looking at them if they succeed on a success roll using rarity as the target score and _skill level + intelligence bonus_ as the baseline score.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04752))_
 
 > If adventurers are in a large city, they can purchase them at the prices provided here.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04752))_

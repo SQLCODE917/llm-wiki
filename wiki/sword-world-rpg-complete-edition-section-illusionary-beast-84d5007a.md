@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-illusionary-beast-84d5007a@bd9be8620408bf50477de3019269ecdc
+projection_coverage: section-sword-world-rpg-complete-edition-section-illusionary-beast-84d5007a@e844c48a9a43746ceee994945d0f2484
 ---
 
 # **[ Illusionary Beast ]**
@@ -30,20 +30,36 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If a caster using _Magic Reflection_ casts other magic on his or herself, the effect of _Magic Reflection_ will be lost at the same time the new magic is cast.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02098))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02098))_
+
+> If a caster using _Magic Reflection_ casts other magic on his or herself, the effect of _Magic Reflection_ will be lost at the same time the new magic is cast.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02101))_
 
 > Base Mental Power Cost=40
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02101))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02102))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02102))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02103))_
 
 > Area=One Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02103))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02104))_
 
 > Effect=Attacks with an illusionary beast that can only be seen by the target Type=Illusion, target score Expansion=Final score, duration, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02104))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02107))_
 
 > However, even if you cannot discover it, it's possible to determine that the target is being attacked by an invisible monster, so although you cannot attack this monster _directly_ , you can still support the target _indirectly_ (casting an _Enchant Weapon_ spell on the target's weapon, healing their wounds with a _Healing_ spell, etc.).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02107))_

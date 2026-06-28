@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-2-92410baf@3755bc900e6b11257ad78ec633a174fa
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-2-92410baf@a939a99f495f8e2e3d3a1d8c4914451a
 ---
 
 # **3.2**
@@ -35,11 +35,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Suppose that Ducard II has an agility of 13, which is equal to that of a goblin (let's call him _IIDash_ from now on, since he is a bit faster). In this case, both attacks are considered to be carried out simultaneously. During the course of the game, each attack check is made in the order of _goblin → IIDash_ (or vice versa). Otherwise, it would be difficult to progress the game.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00726))_
+### Technical atom 1
 
-> Context: Suppose that Ducard II has an agility of 13, which is equal to that of a goblin (let's call him _IIDash_ from now on, since he is a bit faster). In this case, both attacks are considered to be carried out simultaneously. During the course of the game, each attack check is made in the order of _goblin → IIDash_ (or vice versa). Otherwise, it would be difficult to progress the game. Suppose that, as in the first example, IIDash is still hit badly enough to fall down as a result of the goblin's att
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00726, source-range-870a16bc-00729))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00726))_
+
+> Suppose that Ducard II has an agility of 13, which is equal to that of a goblin (let's call him _IIDash_ from now on, since he is a bit faster). In this case, both attacks are considered to be carried out simultaneously. During the course of the game, each attack check is made in the order of _goblin → IIDash_ (or vice versa). Otherwise, it would be difficult to progress the game.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00726, source-range-870a16bc-00729))_
+
+> Suppose that Ducard II has an agility of 13, which is equal to that of a goblin (let's call him _IIDash_ from now on, since he is a bit faster). In this case, both attacks are considered to be carried out simultaneously. During the course of the game, each attack check is made in the order of _goblin → IIDash_ (or vice versa). Otherwise, it would be difficult to progress the game. Suppose that, as in the first example, IIDash is still hit badly enough to fall down as a result of the goblin's att
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00728))_
 
 > For convenience, they are resolved in order, but even if you’re attacked by an enemy of the _same_ agility and fall down, you can _still_ perform your intended actions.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00728))_

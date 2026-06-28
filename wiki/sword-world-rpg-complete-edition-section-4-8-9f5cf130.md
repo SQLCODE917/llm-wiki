@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-8-9f5cf130@12f554f9ade4a3f519934133928edf0a
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-8-9f5cf130@533c7ff01c2414f1741f3b9230f38fcd
 ---
 
 # **4.8**
@@ -22,5 +22,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01075))_
+
 > After damage is applied, a character (monster) can still act if they have at least _1_ life force (point) remaining.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01075))_

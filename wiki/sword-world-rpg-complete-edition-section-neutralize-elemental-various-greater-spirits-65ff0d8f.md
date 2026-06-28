@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-neutralize-elemental-various-greater-spirits-65ff0d8f@eb497712f5bcae4fd8182737bafa0de3
+projection_coverage: section-sword-world-rpg-complete-edition-section-neutralize-elemental-various-greater-spirits-65ff0d8f@0ba353be6e43662d88403e8b5a943190
 ---
 
 # **[ Neutralize Elemental ] (Various greater spirits)**
@@ -34,14 +34,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If the ship is swallowed up by the whirlpool, everyone on board will be thrown into the whirlpool. In that case, make a success roll using the _swim_ ability to determine whether you drown.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02767))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02767))_
+
+> If the ship is swallowed up by the whirlpool, everyone on board will be thrown into the whirlpool. In that case, make a success roll using the _swim_ ability to determine whether you drown.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02770))_
 
 > Base Mental Power Cost=50
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02770))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02771))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02771))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02772))_
 
 > Area=A space within a 100 meter radius from the caster Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02772))_

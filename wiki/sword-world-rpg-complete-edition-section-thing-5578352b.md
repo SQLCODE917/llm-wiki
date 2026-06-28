@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-thing-5578352b@b3cfc6e6d5831508e312f44f76cce5c7
+projection_coverage: section-sword-world-rpg-complete-edition-section-thing-5578352b@87a48f62eafcd4b9dc04300fa81fccb8
 ---
 
 # **Thing**
@@ -27,23 +27,42 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06441))_
+
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06441))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06442))_
 
 > Rarity=16 Agility=12 Movement Speed=12 Number=One Frequency=Very rare Intellect=Human Reaction=Neutral to adversarial Attack Points=Tentacles:10 (3) Strike Points=7 Evasion Points=11 (4) Defense Points=7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06442))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06443))_
 
 > Life Points/Resistance=16/11 (4)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06443))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06444))_
 
 > Mental Points/Resistance=12/11 (4) Special Abilities=Camouflage (Sense target score=16)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06444))_
 
-> Context: Things often eat humans. They approach their prey in the form of a human or elf, catch their opponent off guard, then aim to attack when they're alone. They target humans because they’re easier to deceive than animals. Animals have a keen sense of smell, so no matter how closely a thing resembles the real deal, they’ll be able to tell by the difference in smell.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06448))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06448))_
+
+> Things often eat humans. They approach their prey in the form of a human or elf, catch their opponent off guard, then aim to attack when they're alone. They target humans because they’re easier to deceive than animals. Animals have a keen sense of smell, so no matter how closely a thing resembles the real deal, they’ll be able to tell by the difference in smell.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06446))_
 
 > Habitat=Underground labyrinths, ruins Languages=Regional Perception=Magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06446))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06449))_
 
 > During combat, a thing can attack up to 6 times by transforming its body so as to produce numerous arms and tentacles.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06449))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-9-2-should-you-use-a-target-score-check-or-a-difficulty-check-0db0a93a@ba393f87ea138b5c18b0ea7a02a6fbb9
+projection_coverage: section-sword-world-rpg-complete-edition-section-9-2-should-you-use-a-target-score-check-or-a-difficulty-check-0db0a93a@c2b0eb39cea3a2b246fb8c03b67c65d9
 ---
 
 # 9.2 Should You Use a Target Score Check or a Difficulty Check?
@@ -35,20 +35,33 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: problem with things that are clearly stipulated in the rules, such as climbing, hit checks in combat, etc. but things that are not will have to be set by the game master each time they are needed. This table is written in a somewhat abstract format to accommodate all success rolls. As a game master, don't think too much about it, trust your own judgment and intuition when deciding on the target score or difficulty. It's not a good idea in an RPG to worry about situations like this and stall the 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03791, source-range-870a16bc-03793))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03791, source-range-870a16bc-03793))_
+
+> problem with things that are clearly stipulated in the rules, such as climbing, hit checks in combat, etc. but things that are not will have to be set by the game master each time they are needed. This table is written in a somewhat abstract format to accommodate all success rolls. As a game master, don't think too much about it, trust your own judgment and intuition when deciding on the target score or difficulty. It's not a good idea in an RPG to worry about situations like this and stall the
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
 
 > To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
 
-> Context: To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+
+> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03794))_
 
 > **Table 9-1: Determining Target Scores or Difficulties**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03794))_
 
-> Context: To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+
+> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03795))_
 
 | Target Score | Difculty | Standard |
 | --- | --- | --- |
@@ -98,16 +111,23 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03795))_
 
-> Context: There are two types of success rolls: those that use a target score for the check and those that use a difficulty for the check. The game master must decide which of these should be used to make the success roll. An example of something where success or failure cannot be determined is finding a trap. When a trap is not found, a character has no way of knowing whether there really are no traps or if it's because they couldn't find
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03799, source-range-870a16bc-03802))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03799, source-range-870a16bc-03802))_
+
+> There are two types of success rolls: those that use a target score for the check and those that use a difficulty for the check. The game master must decide which of these should be used to make the success roll. An example of something where success or failure cannot be determined is finding a trap. When a trap is not found, a character has no way of knowing whether there really are no traps or if it's because they couldn't find
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03800))_
 
 > The standard for deciding is _whether the character can tell if the action succeeded or failed_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03800))_
 
-> Context: The standard for deciding is _whether the character can tell if the action succeeded or failed_ . For example, if you want to jump over a cliff, success or An example of something where success or failure cannot be determined is finding a trap. When a trap is not found, a character has no way of knowing whether there really are no traps or if it's because they couldn't find
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03800, source-range-870a16bc-03802))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03800, source-range-870a16bc-03802))_
+
+> The standard for deciding is _whether the character can tell if the action succeeded or failed_ . For example, if you want to jump over a cliff, success or An example of something where success or failure cannot be determined is finding a trap. When a trap is not found, a character has no way of knowing whether there really are no traps or if it's because they couldn't find
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03801))_
 
 > If you succeed, you can jump over it, and if you fail, you will fall.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03801))_

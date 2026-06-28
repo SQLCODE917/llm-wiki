@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hunter-skill-abilities-table-047e3d75@4adb0ddd27470d5448826f82ef1bfca8
+projection_coverage: section-sword-world-rpg-complete-edition-section-hunter-skill-abilities-table-047e3d75@211c66af1de004043412b6bd3ef6c187
 ---
 
 # **Hunter Skill Abilities Table**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-hunter-ski
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08381))_
 
 | Ability | Relevant AbilityScore | Equipment Restrictions | Retryinga success roll on the same target |
 | --- | --- | --- | --- |
@@ -50,4 +54,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08381))_

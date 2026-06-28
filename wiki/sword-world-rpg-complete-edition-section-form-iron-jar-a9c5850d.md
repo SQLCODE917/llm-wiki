@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-form-iron-jar-a9c5850d@6250c9bafc4743ebcd2bffce4e60831d
+projection_coverage: section-sword-world-rpg-complete-edition-section-form-iron-jar-a9c5850d@afc130679449ef525d32aab01eb5dc33
 ---
 
 # Form=Iron jar
@@ -24,17 +24,31 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07487))_
+
 > Base Trade Price=1,000,000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07487))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07488))_
 
 > Powers=Seals something from another world within
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07488))_
 
-> Context: This jar is a magical jar that can seal things from another world, such as the spirit world, within it. It’s said to be able to seal not only lesser spirits such as salamander and sylph, but _also_ greater spirits such as djinn and efreet.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07489))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07489))_
+
+> This jar is a magical jar that can seal things from another world, such as the spirit world, within it. It’s said to be able to seal not only lesser spirits such as salamander and sylph, but _also_ greater spirits such as djinn and efreet.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07490))_
 
 > If you point this jar at a spirit and chant a password, any kind of spirit can be entrapped.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07490))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07549))_
 
 | 2D | Result |
 | --- | --- |
@@ -66,4 +80,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07490))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07549))_

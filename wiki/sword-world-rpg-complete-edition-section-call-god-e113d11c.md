@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-call-god-e113d11c@70a7866c10db134cb2f129eb5d0eaf1b
+projection_coverage: section-sword-world-rpg-complete-edition-section-call-god-e113d11c@6cd2bb38f9b650efbb375890b7f66cfb
 ---
 
 # **[ Call God ]**
@@ -24,17 +24,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03042))_
+
 > Base Mental Power Cost=50
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03042))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03043))_
 
 > Distance=Caster Area=Caster Duration=10 minutes
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03043))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03044))_
 
 > Effect=Temporarily summons the god the caster worships
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03044))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03045))_
 
 > Type=Target score Expansion=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03045))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03046))_
 
 > When you chant this spell, you can summon a major god into your own body.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03046))_

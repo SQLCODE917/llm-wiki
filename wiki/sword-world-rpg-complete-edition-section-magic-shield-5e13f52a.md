@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magic-shield-5e13f52a@90461da4e7f706f8956cf6a1c2cdf2a3
+projection_coverage: section-sword-world-rpg-complete-edition-section-magic-shield-5e13f52a@e66bdf7be3be548d5c94d1b8b4cc03ca
 ---
 
 # 《 **Magic Shield** 》
@@ -23,20 +23,35 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Here is a list of prices of magical metal armor with +3 power.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07201))_
+
+> Here is a list of prices of magical metal armor with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07204))_
 
 > Rarity=12 (+1)/14 (+2)/16 (+3) Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07204))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07205))_
 
 > Form=Shield
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07205))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07206))_
 
 > Required Strength/Base Trade Price=See description Powers=+1~+3 to evasion speed
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07206))_
 
-> Context: This is a price list for magical shields with enchantments. For shields with +2 or higher enchantment, small shields tend to be more expensive than large shields due to differences in demand. For the same reason, high-quality large shields +1/+2 are more expensive than large shields +2/+3. Shields requiring strength of 13 cannot be used by most adventurers.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))_
+
+> This is a price list for magical shields with enchantments. For shields with +2 or higher enchantment, small shields tend to be more expensive than large shields due to differences in demand. For the same reason, high-quality large shields +1/+2 are more expensive than large shields +2/+3. Shields requiring strength of 13 cannot be used by most adventurers.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07208))_
 
 | Shield | Price<br>(Gamels) |
 | --- | --- |
@@ -68,4 +83,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07207))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07208))_

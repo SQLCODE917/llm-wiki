@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-the-meaning-of-the-rulebook-4ae32e3b@a839e69cb77ea947cb1d2e1dec27dbcd
+projection_coverage: section-sword-world-rpg-complete-edition-section-the-meaning-of-the-rulebook-4ae32e3b@048d09ba883f7560d6fe501094b2a8d8
 ---
 
 # The Meaning of the Rulebook
@@ -43,8 +43,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00064))_
+
 > For example, some people may have spectacular muscle strength, while others may be less fortunate. A weapon wielded by someone with superior strength can do more damage than a weapon wielded by someone who is not blessed with such strength. However, with training and experience, even those with inferior talents should be able to fight admirably.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00064))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00076))_
 
 > For example, it was stated that Forcelia follows different laws than the real world. Indeed, they are different in many ways. Therefore, in order to be a complete rulebook, _all_ of its laws would have to be written. That is to say, _an apple that falls from a tree lands on the ground_ .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00076))_

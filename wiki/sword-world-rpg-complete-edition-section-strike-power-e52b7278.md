@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-strike-power-e52b7278@7647b851e3c5d3125846e957e8dd50ff
+projection_coverage: section-sword-world-rpg-complete-edition-section-strike-power-e52b7278@3adde2b2436ebfa6b7595d2e5ac11805
 ---
 
 # 【 **Strike Power** 】
@@ -26,14 +26,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The critical target is a _lower is better_ score, which is rare in _Sword World RPG_ . Therefore, an attack using the thief skill is _more_ likely to result in a critical than an attack using the regular fighter skill.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00874))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00874))_
+
+> The critical target is a _lower is better_ score, which is rare in _Sword World RPG_ . Therefore, an attack using the thief skill is _more_ likely to result in a critical than an attack using the regular fighter skill.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00876))_
 
 > **critical target** = 10 (9 if using thief skill)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00876))_
 
-> Context: **critical target** = 10 (9 if using thief skill)
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00876))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00876))_
+
+> **critical target** = 10 (9 if using thief skill)
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00877))_
 
 > **strike power** = required strength of weapon (+5 if a two-handed weapon)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00877))_

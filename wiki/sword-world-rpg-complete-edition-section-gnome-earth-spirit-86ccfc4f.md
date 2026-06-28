@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-gnome-earth-spirit-86ccfc4f@968cbc1eeb4037e10940cca4a3c6c283
+projection_coverage: section-sword-world-rpg-complete-edition-section-gnome-earth-spirit-86ccfc4f@0d159db4bbef800569e8c8d42a9e5ec1
 ---
 
 # **(Gnome/Earth Spirit)**
@@ -21,14 +21,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02292))_
+
 > Base Mental Power Cost=3 Distance=10 meters Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02292))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02293))_
 
 > Duration=Instant Effect=Knocks the target prone Type=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02293))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02294))_
 
 > Expansion=Final score, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02294))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02295))_
 
 > The target must spend one round in order to get back up.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02295))_

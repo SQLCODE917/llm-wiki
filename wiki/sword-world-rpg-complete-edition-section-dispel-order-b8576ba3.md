@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dispel-order-b8576ba3@f397fba7bb7cd5045b54e82d9d623368
+projection_coverage: section-sword-world-rpg-complete-edition-section-dispel-order-b8576ba3@d6ba95142e1dcae6a74f47a571e0f994
 ---
 
 # **[ Dispel Order ]**
@@ -25,23 +25,42 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell works on targets slightly larger than a human (such as an ogre or a manticore), but has no effect on targets of a larger size than that (such as a dragon or a roc).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02020))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02020))_
+
+> This spell works on targets slightly larger than a human (such as an ogre or a manticore), but has no effect on targets of a larger size than that (such as a dragon or a roc).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02023))_
 
 > Base Mental Power Cost=21
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02023))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02024))_
 
 > Distance=Touch Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02024))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02025))_
 
 > Duration=Instant Effect=Remove spells that enforce commands
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02025))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02026))_
 
 > Type=Counters (Negates): All puppet and golem-type magic, _Geas_ , _Command Golem_ , _Quest_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02026))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02027))_
 
 > Expansion=Final score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02027))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02028))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02028))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-certain-weapons-06979399@8373b2908fedc993dae9a0125716e982
+projection_coverage: section-sword-world-rpg-complete-edition-section-certain-weapons-06979399@69710d18295b8f3e4c5291e4e28bcd8c
 ---
 
 # **Certain Weapons** 》
@@ -21,5 +21,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06854))_
+
 > Even in combat between monsters, if an opponent monster's attack method is equivalent to an ineffective weapon, it will not deal damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06854))_

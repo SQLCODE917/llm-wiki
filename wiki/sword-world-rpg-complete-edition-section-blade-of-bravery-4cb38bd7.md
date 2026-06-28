@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-blade-of-bravery-4cb38bd7@a3d6daefc173f482af722adf53232ba7
+projection_coverage: section-sword-world-rpg-complete-edition-section-blade-of-bravery-4cb38bd7@90a3d2709ac02634f4e2e51fd8d95876
 ---
 
 # 《 **Blade of Bravery** 》
@@ -20,17 +20,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07110))_
+
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07110))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07111))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07111))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07112))_
 
 > Form=Rapier
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07112))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07113))_
 
 > Required Strength=14 (Strike power 14) Powers=+1 to attack power and bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07113))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07114))_
 
 > Base Trade Price=9000 gamels (not for sale)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07114))_

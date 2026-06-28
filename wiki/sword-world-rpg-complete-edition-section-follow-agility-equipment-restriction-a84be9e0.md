@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-follow-agility-equipment-restriction-a84be9e0@e94e24426018bf15bd01e3ccd5b9c90d
+projection_coverage: section-sword-world-rpg-complete-edition-section-follow-agility-equipment-restriction-a84be9e0@30fc9a54fd70b5807a98f78506f2a0e5
 ---
 
 # **[** ⑬ **Follow [Agility] (Equipment restriction)**
@@ -24,8 +24,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: You can jump over obstacles using _(pole) high jump_ or _(pole) long jump_ . For more information, please refer to the rules for ⑤ Long Jump/High Jump (see p. 122) under _6.6: Common Adventurer Abilities_ . The methods for determining target scores, etc. are included there.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03350))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03350))_
+
+> You can jump over obstacles using _(pole) high jump_ or _(pole) long jump_ . For more information, please refer to the rules for ⑤ Long Jump/High Jump (see p. 122) under _6.6: Common Adventurer Abilities_ . The methods for determining target scores, etc. are included there.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03352))_
 
 > The side that's following must use _thief skill level + agility bonus_ as their baseline score, while the side being followed must use _adventurer level + intelligence bonus_ , and success or failure is determined by comparing the final scores of their success rolls.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03352))_

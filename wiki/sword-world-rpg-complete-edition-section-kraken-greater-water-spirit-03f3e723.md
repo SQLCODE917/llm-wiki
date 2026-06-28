@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-kraken-greater-water-spirit-03f3e723@df0c09490ff2f8e325d8a7520bc9a8d2
+projection_coverage: section-sword-world-rpg-complete-edition-section-kraken-greater-water-spirit-03f3e723@2b88979b2d2dd717b23efcbd25624888
 ---
 
 # **(Kraken/Greater Water Spirit)**
@@ -30,17 +30,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02760))_
+
 > Base Mental Power Cost=45 Distance=500 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02760))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02761))_
 
 > Area=50 meter radius water surface Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02761))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02762))_
 
 > Effect=Creates a maelstrom that sinks floating people and objects Type=Target score Counters (Overpowers): _Current_ Expansion=Final score, duration, distance, area
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02762))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02763))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02763))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02765))_
 
 > If a ship is caught in the whirlpool, the person at the helm must make a success roll using the _ship steering_ ability.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02765))_

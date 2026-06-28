@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-combat-options-97b58318@7e28c18c659c28768ad1d7935fc3bfbe
+projection_coverage: section-sword-world-rpg-complete-edition-section-combat-options-97b58318@743d4c9089b4b373f864e59cff04ba72
 ---
 
 # **Combat Options**
@@ -19,6 +19,10 @@ From [[sword-world-rpg-complete-edition]].
 - These optional rules allow for a variety of attack methods, rather than just simple attacks _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07765))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
 | **Table 16-4 Maximum Ranges** |
 | --- |
@@ -74,4 +78,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_

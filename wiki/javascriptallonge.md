@@ -1,13 +1,13 @@
 ---
 page_id: javascriptallonge
 page_kind: source
-summary: Claim-ledger projection (coding): 2043 usable entries, 543 technical atoms, 666 needs-review, 290 linked page(s); write decision write-with-review-work.
+summary: Claim-ledger projection (coding): 2043 usable entries, 543 technical atoms, 666 needs-review, 242 linked page(s); write decision write-with-review-work.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources
 source_id: javascriptallonge.pdf
-projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
+projection_coverage: projection-coverage-c87b3743918a7e36@f0d0b901aa5b9537
 ---
 
 # Document
@@ -322,13 +322,9 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## A Pull of the Lever: Prefaces
 
-### **A Pull of the Lever: Prefaces**
-
 - Some complain that the long pull is more bitter and detracts from the best character of the coffee, others feel it releases even more complexity. _(javascriptallonge.pdf (source-range-83ecb080-00026))_
 
 ## About JavaScript Allongé
-
-### **About JavaScript Allongé**
 
 - JavaScript Allongé is a first and foremost, a book about _programming with functions_ . _(javascriptallonge.pdf (source-range-83ecb080-00032))_
 - It’s written in JavaScript, because JavaScript hits the perfect sweet spot of being both widely used, and of having proper first-class functions with lexical scope. _(javascriptallonge.pdf (source-range-83ecb080-00032))_
@@ -476,8 +472,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Forewords to the First Edition
 
-### **Forewords to the First Edition**
-
 ### **michael fogus**
 
 - However, I’m very conservative about books – let’s just say that if there was an aftershave scented to the essence of “Used Book Store” then I would be first in line to buy. _(javascriptallonge.pdf (source-range-83ecb080-00123))_
@@ -507,18 +501,12 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## About The Sample PDF
 
-### **About The Sample PDF**
-
 - If you read _JavaScript Allongé, The “six” edition_ and it doesn’t blow your mind, your money will be cheerfully refunded. _(javascriptallonge.pdf (source-range-83ecb080-00143))_
 - This sample edition of the book includes just a portion of the complete book. _(javascriptallonge.pdf (source-range-83ecb080-00143))_
 
 ## Prelude: Values and Expressions over Coffee
 
-### **Prelude: Values and Expressions over Coffee**
-
 ## values are expressions
-
-### **values are expressions**
 
 - All values are expressions. _(javascriptallonge.pdf (source-range-83ecb080-00161))_
 - You say, “I want one of these.” The barista is no fool, she gives it straight back to you, and you get exactly what you want. _(javascriptallonge.pdf (source-range-83ecb080-00161))_
@@ -563,8 +551,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 > Now we see that “strings” are values, and you can make an expression out of strings and an operator +. Since strings are values, they are also expressions by themselves. But strings with operators are not values, they are expressions. Now we know what was missing with our “coffee grounds plus hot water” example. The coffee grounds were a value, the boiling hot water was a value, and the “plus” operator between them made the whole thing an expression that was not a value.
 
 ## values and identity
-
-### **values and identity**
 
 - And then you’re shown another cup of coffee. _(javascriptallonge.pdf (source-range-83ecb080-00185))_
 - For example, the string "2" is not the same thing as the number 2. _(javascriptallonge.pdf (source-range-83ecb080-00186))_
@@ -645,8 +631,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 > [2-1, 2, 2+1] === [1,2,3] [1,2,3] === [1, 2, 3] [1, 2, 3] === [1, 2, 3]
 
 ## A Rich Aroma: Basic Numbers
-
-### **A Rich Aroma: Basic Numbers**
 
 - Almost all programming languages have notations for atomic values such as integers, floating-point numbers, and strings, and usually for booleans and characters; some also have notations for elements of enumerated types and compound values such as arrays, records, and objects. _(javascriptallonge.pdf (source-range-83ecb080-00215))_
 - In computer science, a literal is a notation for representing a fixed value in source code. _(javascriptallonge.pdf (source-range-83ecb080-00215))_
@@ -736,11 +720,7 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## The first sip: Basic Functions
 
-### **The first sip: Basic Functions**
-
 ## As Little As Possible About Functions, But No Less
-
-### **As Little As Possible About Functions, But No Less**
 
 - Functions represent computations to be performed. _(javascriptallonge.pdf (source-range-83ecb080-00258))_
 - Like numbers, strings, and arrays, they have a representation. _(javascriptallonge.pdf (source-range-83ecb080-00258))_
@@ -1158,8 +1138,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Closures and Scope
 
-### **Closures and Scope**
-
 - First off, let’s use what we learned above. _(javascriptallonge.pdf (source-range-83ecb080-00472))_
 
 **Context:** _(javascriptallonge.pdf (source-range-83ecb080-00470, source-range-83ecb080-00472))_
@@ -1326,8 +1304,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 > If you don’t want your code to operate directly within the global environment, what can you do?
 
 ## That Constant Coffee Craving
-
-### **That Constant Coffee Craving**
 
 - Up to now, all we’ve really seen are _anonymous functions_ , functions that don’t have a name. _(javascriptallonge.pdf (source-range-83ecb080-00543))_
 - This feels very different from programming in most other languages, where the focus is on naming functions, methods, and procedures. _(javascriptallonge.pdf (source-range-83ecb080-00543))_
@@ -1664,8 +1640,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Naming Functions
 
-### **Naming Functions**
-
 - This syntax binds an anonymous function to a name in an environment, but the function itself remains anonymous. _(javascriptallonge.pdf (source-range-83ecb080-00696))_
 
 **Context:** _(javascriptallonge.pdf (source-range-83ecb080-00694, source-range-83ecb080-00696))_
@@ -1829,8 +1803,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Combinators and Function Decorators
 
-### **Combinators and Function Decorators**
-
 ### **higher-order functions**
 
 - JavaScript functions are values, so JavaScript functions can take functions as arguments, return functions, or both. _(javascriptallonge.pdf (source-range-83ecb080-00781))_
@@ -1923,8 +1895,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 > **const** nothing = not(something);
 
 ## Building Blocks
-
-### **Building Blocks**
 
 - The weakness is that you will. _(javascriptallonge.pdf (source-range-83ecb080-00824))_
 - There are ifs, fors, returns, everything thrown higgledy piggledy together. _(javascriptallonge.pdf (source-range-83ecb080-00824))_
@@ -2062,8 +2032,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Magic Names
 
-### **Magic Names**
-
 - When a function is applied to arguments (or “called”), JavaScript binds the values of arguments to the function’s argument names in an environment created for the function’s execution. _(javascriptallonge.pdf (source-range-83ecb080-00863))_
 - What we haven’t discussed so far is that JavaScript also binds values to some “magic” names in addition to any you put in the argument list.[42] _(javascriptallonge.pdf (source-range-83ecb080-00863))_
 
@@ -2140,8 +2108,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Summary
 
-### **Summary**
-
 ### **Functions**
 
 - - Functions are values that can be part of expressions, returned from other functions, and so forth. _(javascriptallonge.pdf (source-range-83ecb080-00905))_
@@ -2162,8 +2128,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Recipes with Basic Functions
 
-### **Recipes with Basic Functions**
-
 - Having looked at basic pure functions and closures, we’re going to see some practical recipes that focus on the premise of functions that return functions. _(javascriptallonge.pdf (source-range-83ecb080-00924))_
 
 ### **Disclaimer**
@@ -2174,8 +2138,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 - The overall _use_ of each recipe will fit within the spirit of the language discussed so far, even if the implementations may not. _(javascriptallonge.pdf (source-range-83ecb080-00926))_
 
 ## Partial Application
-
-### **Partial Application**
 
 - This is such a common tool that many libraries provide some form of partial application. _(javascriptallonge.pdf (source-range-83ecb080-00931))_
 - In Building Blocks, we discussed partial application, but we didn’t write a generalized recipe for it. _(javascriptallonge.pdf (source-range-83ecb080-00931))_
@@ -2222,8 +2184,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 > **const** callRight = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
 
 ## Unary
-
-### **Unary**
 
 - “Unary” is a function decorator that modifies the number of arguments a function takes: Unary takes any function and turns it into a function taking exactly one argument. _(javascriptallonge.pdf (source-range-83ecb080-00955))_
 - JavaScript has a .map method for arrays, and many libraries offer a map function with the same semantics. _(javascriptallonge.pdf (source-range-83ecb080-00956))_
@@ -2289,8 +2249,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Tap
 
-### **Tap**
-
 - It has some surprising applications. _(javascriptallonge.pdf (source-range-83ecb080-00979))_
 - One is when you want to do something with a value for sideeffects, but keep the value around. _(javascriptallonge.pdf (source-range-83ecb080-00979))_
 - tap is a traditional name borrowed from various Unix shell commands. _(javascriptallonge.pdf (source-range-83ecb080-00981))_
@@ -2342,8 +2300,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Maybe
 
-### **Maybe**
-
 - A common problem in programming is checking for null or undefined (hereafter called “nothing,” while all other values including 0, [] and false will be called “something”). _(javascriptallonge.pdf (source-range-83ecb080-01001))_
 - Languages like JavaScript do not strongly enforce the notion that a particular variable or particular property be something, so programs are often written to account for values that may be nothing. _(javascriptallonge.pdf (source-range-83ecb080-01001))_
 - This recipe concerns a pattern that is very common: A function fn takes a value as a parameter, and its behaviour by design is to do nothing if the parameter is nothing: _(javascriptallonge.pdf (source-range-83ecb080-01002))_
@@ -2385,8 +2341,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Once
 
-### **Once**
-
 - It ensures that a function can only be called, well, _once_ . _(javascriptallonge.pdf (source-range-83ecb080-01026))_
 - once is an extremely helpful combinator. _(javascriptallonge.pdf (source-range-83ecb080-01026))_
 - It ensures that a function can only be called, well, _once_ . _(javascriptallonge.pdf (source-range-83ecb080-01026))_
@@ -2409,8 +2363,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 > askedOnBlindDate() _//=> undefined_
 
 ## Left-Variadic Functions
-
-### **Left-Variadic Functions**
 
 - A _variadic function_ is a function that is designed to accept a variable number of arguments.[52] In JavaScript, you can make a variadic function by gathering parameters. _(javascriptallonge.pdf (source-range-83ecb080-01039))_
 - This can be useful when writing certain kinds of destructuring algorithms. _(javascriptallonge.pdf (source-range-83ecb080-01041))_
@@ -2521,8 +2473,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 > butLast _//=> ['why', 'hello', 'there', 'little']_ last _//=> 'droid'_
 
 ## Picking the Bean: Choice and Truthiness
-
-### **Picking the Bean: Choice and Truthiness**
 
 - In addition to numbers, we often need to represent a much more basic idea of truth or falsehood. _(javascriptallonge.pdf (source-range-83ecb080-01091))_
 
@@ -2638,13 +2588,9 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Composing and Decomposing Data
 
-### **Composing and Decomposing Data**
-
 - Recursion is the root of computation since it trades description for time.—Alan Perlis, Epigrams in Programming[55] _(javascriptallonge.pdf (source-range-83ecb080-01181))_
 
 ## Arrays and Destructuring Arguments
-
-### **Arrays and Destructuring Arguments**
 
 - Arrays are JavaScript’s “native” representation of lists. _(javascriptallonge.pdf (source-range-83ecb080-01187))_
 - Lists are important because they represent ordered collections of things, and ordered collections are a fundamental abstraction for making sense of reality. _(javascriptallonge.pdf (source-range-83ecb080-01187))_
@@ -2917,8 +2863,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Self-Similarity
 
-### **Self-Similarity**
-
 - Recursion is the root of computation since it trades description for time.—Alan Perlis, Epigrams in Programming[60] _(javascriptallonge.pdf (source-range-83ecb080-01297))_
 - In Arrays and Destructuring Arguments, we worked with the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment. _(javascriptallonge.pdf (source-range-83ecb080-01298))_
 - We saw that the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment. _(javascriptallonge.pdf (source-range-83ecb080-01299))_
@@ -3129,8 +3073,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 - And finally, while folding is a special case of linear recursion, mapping is a special case of folding. _(javascriptallonge.pdf (source-range-83ecb080-01393))_
 
 ## Tail Calls (and Default Arguments)
-
-### **Tail Calls (and Default Arguments)**
 
 - The mapWith and foldWith functions we wrote in Self-Similarity are useful for illustrating the basic principles behind using recursion to work with self-similar data structures, but they are not “production-ready” implementations. _(javascriptallonge.pdf (source-range-83ecb080-01398))_
 - One of the reasons they are not production-ready is that they consume memory proportional to the size of the array being folded. _(javascriptallonge.pdf (source-range-83ecb080-01398))_
@@ -3421,8 +3363,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Garbage, Garbage Everywhere
 
-### **Garbage, Garbage Everywhere**
-
 - We have now seen how to use Tail Calls to execute mapWith in constant space: _(javascriptallonge.pdf (source-range-83ecb080-01507))_
 - But when we try it on very large arrays, we discover that it is _still_ very slow. _(javascriptallonge.pdf (source-range-83ecb080-01512))_
 - The right tool to discover why it’s still slow is a memory profiler, but a simple inspection of the program will reveal the following: _(javascriptallonge.pdf (source-range-83ecb080-01512))_
@@ -3553,8 +3493,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 - But it is an extremely simple illustration of how recursion works when you have a self-similar means of constructing a data structure. _(javascriptallonge.pdf (source-range-83ecb080-01570))_
 
 ## Plain Old JavaScript Objects
-
-### **Plain Old JavaScript Objects**
 
 - Lists are not the only way to represent collections of things, but they are the “oldest” data structure in the history of high level languages, because they map very closely to the way the hardware is organized in a computer. _(javascriptallonge.pdf (source-range-83ecb080-01575))_
 - Lists are not the only way to represent collections of things, but they are the “oldest” data structure in the history of high level languages, because they map very closely to the way the hardware is organized in a computer. _(javascriptallonge.pdf (source-range-83ecb080-01575))_
@@ -3827,8 +3765,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Mutation
 
-### **Mutation**
-
 - Recall that you can access a value from within an array or an object using []. _(javascriptallonge.pdf (source-range-83ecb080-01688))_
 - Specifically, arrays and objects can mutate. _(javascriptallonge.pdf (source-range-83ecb080-01688))_
 - In JavaScript, almost every type of value can _mutate_ . _(javascriptallonge.pdf (source-range-83ecb080-01688))_
@@ -3988,8 +3924,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Reassignment
 
-### **Reassignment**
-
 - Like some imperative programming languages, JavaScript allows you to re-assign the value bound : to parameters. _(javascriptallonge.pdf (source-range-83ecb080-01758))_
 - We can _shadow_ it by using const to declare a new binding with a new function or block scope, but we cannot rebind a name that was bound with const in an existing scope. _(javascriptallonge.pdf (source-range-83ecb080-01765))_
 - JavaScript does not permit us to rebind a name that has been bound with const. _(javascriptallonge.pdf (source-range-83ecb080-01765))_
@@ -4113,8 +4047,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Copy on Write
 
-### **Copy on Write**
-
 - We’ve seen how to build lists with arrays and with linked lists. _(javascriptallonge.pdf (source-range-83ecb080-01852))_
 - - When you take the rest of an array with destructuring ([first, ...rest]), you are given a _copy_ of the elements of the array. _(javascriptallonge.pdf (source-range-83ecb080-01853))_
 - - When you take the rest of a linked list with its reference, you are given the exact same nodes of the elements of the original list. _(javascriptallonge.pdf (source-range-83ecb080-01854))_
@@ -4221,8 +4153,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Tortoises, Hares, and Teleporting Turtles
 
-### **Tortoises, Hares, and Teleporting Turtles**
-
 - It was, “Write an algorithm to detect a loop in a linked list, in constant space.” _(javascriptallonge.pdf (source-range-83ecb080-01906))_
 - I’m not particularly surprised that I couldn’t think up an answer in a few minutes at the time. _(javascriptallonge.pdf (source-range-83ecb080-01907))_
 - This is the “trick answer” to a question about finding a missing integer from a list, so I was trying the old, “Transform this into a problem you’ve already solved[74] ” meta-algorithm. _(javascriptallonge.pdf (source-range-83ecb080-01908))_
@@ -4262,8 +4192,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 > teleportingTurtle(aList); _//=> true_
 
 ## Functional Iterators
-
-### **Functional Iterators**
 
 - But it still relies on foldArrayWith, so it can only sum arrays. _(javascriptallonge.pdf (source-range-83ecb080-01939))_
 - The nice thing about this is that the definition for arraySum mostly concerns itself with summing, and not with traversing over a collection of data. _(javascriptallonge.pdf (source-range-83ecb080-01939))_
@@ -4471,8 +4399,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 - For all intents and purposes, once you pass an iterator to a function, you can expect that you no longer “own” that iterator, and that its state either has changed or will change. _(javascriptallonge.pdf (source-range-83ecb080-02025))_
 
 ## Making Data Out Of Functions
-
-### **Making Data Out Of Functions**
 
 - In our code so far, we have used arrays and objects to represent the structure of data, and we have extensively used the ternary operator to write algorithms that terminate when we reach a base case. _(javascriptallonge.pdf (source-range-83ecb080-02032))_
 - For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list. _(javascriptallonge.pdf (source-range-83ecb080-02033))_
@@ -4874,8 +4800,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Recipes with Data
 
-### **Recipes with Data**
-
 ### **Disclaimer**
 
 - The overall _use_ of each recipe will fit within the spirit of the language discussed so far, even if the implementations may not. _(javascriptallonge.pdf (source-range-83ecb080-02207))_
@@ -4884,8 +4808,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 - The overall _use_ of each recipe will fit within the spirit of the language discussed so far, even if the implementations may not. _(javascriptallonge.pdf (source-range-83ecb080-02207))_
 
 ## mapWith
-
-### **mapWith**
 
 - That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. _(javascriptallonge.pdf (source-range-83ecb080-02219))_
 - That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. _(javascriptallonge.pdf (source-range-83ecb080-02219))_
@@ -4973,8 +4895,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 > squaresOf([1, 2, 3, 4, 5]) _//=> [1, 4, 9, 16, 25]_
 
 ## Flip
-
-### **Flip**
 
 - Let’s consider the case whether we have a map function of our own, perhaps from the allong.es[84] library, perhaps from Underscore[85] . _(javascriptallonge.pdf (source-range-83ecb080-02240))_
 - What we have now is a function that takes a function and “flips” the order of arguments around, then curries it. _(javascriptallonge.pdf (source-range-83ecb080-02253))_
@@ -5094,8 +5014,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Object.assign
 
-### **Object.assign**
-
 - Both needs can be met with Object.assign, a standard function. _(javascriptallonge.pdf (source-range-83ecb080-02282))_
 
 **Context:** _(javascriptallonge.pdf (source-range-83ecb080-02278))_
@@ -5126,8 +5044,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Why?
 
-### **Why?**
-
 - It enables you to make recursive functions without needing to bind a function to a name in an environment. _(javascriptallonge.pdf (source-range-83ecb080-02304))_
 - This has little practical utility in JavaScript, but in combinatory logic it’s essential: With fixed-point combinators it’s possible to compute everything computable without binding names. _(javascriptallonge.pdf (source-range-83ecb080-02304))_
 - Well, besides all of the practical applications that combinators provide, there is this little thing called _The joy of working things out._ _(javascriptallonge.pdf (source-range-83ecb080-02305))_
@@ -5153,8 +5069,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 > **const** Y = (f) => { **const** something = x => f(v => x(x)(v));
 
 ## A Warm Cup: Basic Strings and Quasi-Literals
-
-### **A Warm Cup: Basic Strings and Quasi-Literals**
 
 - An expression is any valid unit of code that resolves to a value.—Mozilla Development Network: Expressions and operators[87] _(javascriptallonge.pdf (source-range-83ecb080-02319))_
 - Special characters can be included in a string literal by means of an _escape sequence_ . _(javascriptallonge.pdf (source-range-83ecb080-02320))_
@@ -5247,13 +5161,9 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Served by the Pot: Collections
 
-### **Served by the Pot: Collections**
-
 - **Some different sized and coloured coffee pots by Antti Nurmesniemi, perhaps his most known design.** _(javascriptallonge.pdf (source-range-83ecb080-02356))_
 
 ## Iteration and Iterables
-
-### **Iteration and Iterables**
 
 - Many objects in JavaScript can model collections of things. _(javascriptallonge.pdf (source-range-83ecb080-02363))_
 - But sometimes you want to open it up and do things with its contents. _(javascriptallonge.pdf (source-range-83ecb080-02363))_
@@ -5576,8 +5486,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Generating Iterables
 
-### **Generating Iterables**
-
 - Iterables look cool, but then again, everything looks amazing when you’re given cherry-picked examples. _(javascriptallonge.pdf (source-range-83ecb080-02530))_
 - Iterables look cool, but then again, everything looks amazing when you’re given cherry-picked examples. _(javascriptallonge.pdf (source-range-83ecb080-02530))_
 - Whether it’s a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it’s done. _(javascriptallonge.pdf (source-range-83ecb080-02531))_
@@ -5853,8 +5761,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Lazy and Eager Collections
 
-### **Lazy and Eager Collections**
-
 - The operations on iterables are tremendously valuable, but let’s reiterate why we care: In JavaScript, we build single-responsibility objects, and single-responsibility functions, and we compose these together to build more full-featured objects and algorithms. _(javascriptallonge.pdf (source-range-83ecb080-02737))_
 - Composing an iterable with a mapIterable method cleaves the responsibility for knowing how to map from the fiddly bits of how a linked list differs from a stack _(javascriptallonge.pdf (source-range-83ecb080-02738))_
 - If we wanted to flatten collections to arrays, we wrote a .toArray method for each type of collection. _(javascriptallonge.pdf (source-range-83ecb080-02739))_
@@ -5951,8 +5857,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 - Pair is gatherable, because it implements .from(). _(javascriptallonge.pdf (source-range-83ecb080-02813))_
 
 ## Interlude: The Carpenter Interviews for a Job
-
-### **Interlude: The Carpenter Interviews for a Job**
 
 - “The Carpenter” was a JavaScript programmer, well-known for a meticulous attention to detail and love for hand-crafted, exquisitely joined code. _(javascriptallonge.pdf (source-range-83ecb080-02825))_
 - A few minutes later, he was joined by one of the company’s developers, Christine. _(javascriptallonge.pdf (source-range-83ecb080-02826))_
@@ -6080,8 +5984,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Interactive Generators
 
-### **Interactive Generators**
-
 - We saw how to use them for recursive unfolds and state machines. _(javascriptallonge.pdf (source-range-83ecb080-02926))_
 - But there are other times we want to build functions that maintain implicit state. _(javascriptallonge.pdf (source-range-83ecb080-02926))_
 - Let’s start by looking at a very simple example of a function that can be written statefully. _(javascriptallonge.pdf (source-range-83ecb080-02926))_
@@ -6092,6 +5994,23 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 - Let’s take a look at a very simple example, naughts and crosses[99] (We really ought to do something like Chess, but that might be a little out of scope for this chapter). _(javascriptallonge.pdf (source-range-83ecb080-02930))_
 - The first player will always be o, and they will always place their chequer in the top-left corner, coincidentally numbered o: _(javascriptallonge.pdf (source-range-83ecb080-02931))_
 - x has six possible moves, but they are really just two choices: 3 and anything else: _(javascriptallonge.pdf (source-range-83ecb080-02942))_
+- If we could do that, a generator function that played naughts and crosses would look like this: _(javascriptallonge.pdf (source-range-83ecb080-03026))_
+- So far, we have called iterators (and generators) with .next(). _(javascriptallonge.pdf (source-range-83ecb080-03026))_
+- Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn’t started yet. _(javascriptallonge.pdf (source-range-83ecb080-03033))_
+- We can then get the first move by calling .next(). _(javascriptallonge.pdf (source-range-83ecb080-03033))_
+- Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn’t started yet. _(javascriptallonge.pdf (source-range-83ecb080-03033))_
+- We can then get the first move by calling .next(). _(javascriptallonge.pdf (source-range-83ecb080-03033))_
+- It isn’t a collection, it has no meaning if we try to spread it into parameters or as the subject of a for...of block. _(javascriptallonge.pdf (source-range-83ecb080-03042))_
+- But the generator function allows us to maintain state implicitly. _(javascriptallonge.pdf (source-range-83ecb080-03043))_
+- And sometimes, we want to use implicit state instead of explicitly storing state in our data. _(javascriptallonge.pdf (source-range-83ecb080-03043))_
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03033))_
+
+> We can then get the first move by calling .next(). Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn’t started yet. If we wanted to pass some state to the generator before it begins, we’d do that with parameters.):
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03032))_
+
+> **const** aNaughtsAndCrossesGame = generatorNaughtsAndCrosses();
 
 ### **representing naughts and crosses as a stateless function**
 
@@ -6140,34 +6059,12 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 - But the first glance is deceptive, because we only see what we’ve seen so far. _(javascriptallonge.pdf (source-range-83ecb080-03024))_
 - But the first glance is deceptive, because we only see what we’ve seen so far. _(javascriptallonge.pdf (source-range-83ecb080-03024))_
 
-### **interactive generators**
-
-- If we could do that, a generator function that played naughts and crosses would look like this: _(javascriptallonge.pdf (source-range-83ecb080-03026))_
-- So far, we have called iterators (and generators) with .next(). _(javascriptallonge.pdf (source-range-83ecb080-03026))_
-- Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn’t started yet. _(javascriptallonge.pdf (source-range-83ecb080-03033))_
-- We can then get the first move by calling .next(). _(javascriptallonge.pdf (source-range-83ecb080-03033))_
-- Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn’t started yet. _(javascriptallonge.pdf (source-range-83ecb080-03033))_
-- We can then get the first move by calling .next(). _(javascriptallonge.pdf (source-range-83ecb080-03033))_
-- It isn’t a collection, it has no meaning if we try to spread it into parameters or as the subject of a for...of block. _(javascriptallonge.pdf (source-range-83ecb080-03042))_
-- But the generator function allows us to maintain state implicitly. _(javascriptallonge.pdf (source-range-83ecb080-03043))_
-- And sometimes, we want to use implicit state instead of explicitly storing state in our data. _(javascriptallonge.pdf (source-range-83ecb080-03043))_
-
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03033))_
-
-> We can then get the first move by calling .next(). Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn’t started yet. If we wanted to pass some state to the generator before it begins, we’d do that with parameters.):
-
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03032))_
-
-> **const** aNaughtsAndCrossesGame = generatorNaughtsAndCrosses();
-
 ### **summary**
 
 - We have looked at generators as ways of making iterators over static collections, where state is modelled implicitly in control flow. _(javascriptallonge.pdf (source-range-83ecb080-03045))_
 - Again, the salient difference is that an “interactive” generator is stateful, and it embodies its state in its control flow. _(javascriptallonge.pdf (source-range-83ecb080-03046))_
 
 ## Basic Operations on Iterables
-
-### **Basic Operations on Iterables**
 
 - Here are the operations we’ve defined on Iterables. _(javascriptallonge.pdf (source-range-83ecb080-03051))_
 
@@ -6201,11 +6098,7 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## The Golden Crema: Appendices and Afterwords
 
-### **The Golden Crema: Appendices and Afterwords**
-
 ## How to run the examples
-
-### **How to run the examples**
 
 - At the time this book was written, ECMAScript 2015 was not yet widely available. _(javascriptallonge.pdf (source-range-83ecb080-03084))_
 - Traceur and Babel are both _transpilers_ , they work by parsing ECMAScript 2015 code, then emitting valid ECMAScript-5 code that produces the same semantics. _(javascriptallonge.pdf (source-range-83ecb080-03084))_
@@ -6255,8 +6148,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Thanks!
 
-### **Thanks!**
-
 ### **Daniel Friedman and Matthias Felleisen**
 
 - But where _The Little Schemer’s_ primary focus is recursion, _JavaScript Allongé’s_ primary focus is **functions as first-class values** . _(javascriptallonge.pdf (source-range-83ecb080-03120))_
@@ -6269,8 +6160,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 
 ## Copyright Notice
 
-### **Copyright Notice**
-
 **Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03133))_
 
 > The original words in this book are (c) 2012-2015, Reginald Braithwaite. All rights reserved.
@@ -6278,8 +6167,6 @@ projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 ### **images**
 
 ## About The Author
-
-### **About The Author**
 
 - When he’s not shipping JavaScript, Ruby, CoffeeScript and Java applications scaling out to millions of users, Reg “Raganwald” Braithwaite has authored libraries[221] for JavaScript, CoffeeScript, and Ruby programming such as Allong.es, Method Combinators, Katy, JQuery Combinators, YouAreDaChef, andand, and others. _(javascriptallonge.pdf (source-range-83ecb080-03267))_
 - When he’s not shipping JavaScript, Ruby, CoffeeScript and Java applications scaling out to millions of users, Reg “Raganwald” Braithwaite has authored libraries[221] for JavaScript, CoffeeScript, and Ruby programming such as Allong.es, Method Combinators, Katy, JQuery Combinators, YouAreDaChef, andand, and others. _(javascriptallonge.pdf (source-range-83ecb080-03267))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fire-breath-a4c85fea@0ea2df19ac2b3451215f4733276dd430
+projection_coverage: section-sword-world-rpg-complete-edition-section-fire-breath-a4c85fea@5050534fae0ad010c751ba3a963ea5e6
 ---
 
 # **[ Fire Breath ]**
@@ -21,17 +21,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When casting this spell, the caster must specify one type of spirit that controls nature. The spirits that control nature are gnome, undine, salamander, sylph, frau, will-o-wisp, and shade. While this spell's effect lasts, the caster nullifies _all_ attacks from the specified spirit. In addition, spirit magic that uses the specified spirit as its source of power will be similarly nullified.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04270))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04270))_
+
+> When casting this spell, the caster must specify one type of spirit that controls nature. The spirits that control nature are gnome, undine, salamander, sylph, frau, will-o-wisp, and shade. While this spell's effect lasts, the caster nullifies _all_ attacks from the specified spirit. In addition, spirit magic that uses the specified spirit as its source of power will be similarly nullified.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04273))_
 
 > Base Mental Power Cost=20
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04273))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04274))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04274))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04275))_
 
 > Area=Semicircle with a 10 meter forward radius
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04275))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04276))_
 
 > Duration=Instant Effect=Breathe fire from the mouth Type=Damage (Fire-type) Expansion=Final score, area, damage certainty Resist=Reduced effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04276))_

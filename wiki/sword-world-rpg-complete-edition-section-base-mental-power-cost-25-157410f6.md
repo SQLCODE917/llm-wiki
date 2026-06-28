@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-base-mental-power-cost-25-157410f6@3eb753c4c5cbf25ed456e0d9c3a83a7c
+projection_coverage: section-sword-world-rpg-complete-edition-section-base-mental-power-cost-25-157410f6@6861acc033ae3cefdd1db54f1b98d240
 ---
 
 # Base Mental Power Cost=25
@@ -16,14 +16,27 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01932))_
+
 > Distance=20 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01932))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01933))_
 
 > Area=A space with a 5 meter radius Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01933))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01934))_
 
 > Effect=Creates an ice storm, dealing strike power 20 damage to those within range Type=Damage (Cold-type) Expansion=Final score, distance, area, damage certainty
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01934))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -57,4 +70,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01934))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

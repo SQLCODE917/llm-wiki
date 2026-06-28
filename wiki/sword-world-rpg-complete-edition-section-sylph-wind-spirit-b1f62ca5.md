@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sylph-wind-spirit-b1f62ca5@1128bf0d93b7b24f85e7f69832a32098
+projection_coverage: section-sword-world-rpg-complete-edition-section-sylph-wind-spirit-b1f62ca5@e2ccb7b7fed5ee44c9b90f18ae5413cc
 ---
 
 # **(Sylph/Wind Spirit)**
@@ -26,11 +26,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02419))_
+
 > Base Mental Power Cost=15 Distance=30 meters Area=A space with a 5 meter radius Duration=18 rounds Effect=Muffle all sound within the area of effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02419))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02420))_
 
 > Type=Counters (Overpowers): _Replace Sound_ , _Control Sound_ Expansion=Final score, duration, distance, area Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02420))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02421))_
 
 > Those within the area of effect can attempt to resist, and if they succeed, only the voices and sounds they make will be communicated to the outside, but other sounds will not be transmitted at all (those who succeed also cannot hear sounds from outside).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02421))_

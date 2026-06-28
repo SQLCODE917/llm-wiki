@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-duration-until-focus-ends-e30275bf@ba80ff2bc48d7f16232c80bfc755b92a
+projection_coverage: section-sword-world-rpg-complete-edition-section-duration-until-focus-ends-e30275bf@a1f024fe74de6860394c799e6572411e
 ---
 
 # Duration=Until focus ends
@@ -23,8 +23,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01832))_
+
 > Effect=Makes the caster invisible to others Type=Focus, illusion Expansion=Final score Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01832))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01833))_
 
 > However, you can feel their presence if you touch them.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01833))_

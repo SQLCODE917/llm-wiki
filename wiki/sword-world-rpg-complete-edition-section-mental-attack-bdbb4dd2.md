@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mental-attack-bdbb4dd2@e139d5790d295829fab4ab1206482e77
+projection_coverage: section-sword-world-rpg-complete-edition-section-mental-attack-bdbb4dd2@2513f544cde0c8c0ec8ff0701e6f7106
 ---
 
 # **[ Mental Attack ]**
@@ -26,29 +26,50 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell also has no effect on anything that does not have normal life, such as undead or magical creatures.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03940))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03940))_
+
+> This spell also has no effect on anything that does not have normal life, such as undead or magical creatures.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03942))_
 
 > Base Mental Power Cost=1~
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03942))_
 
-> Context: This spell also has no effect on anything that does not have normal life, such as undead or magical creatures.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03940))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03940))_
+
+> This spell also has no effect on anything that does not have normal life, such as undead or magical creatures.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03943))_
 
 > Distance=Touch Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03943))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03944))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03944))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03945))_
 
 > Effect=Reduces the target's mental power (points) by double the mental power consumed by the caster.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03945))_
 
-> Context: This is a very special spell. Before using this spell, you must declare in advance how many points of mental power (points) you will use. You can reduce the target's mental power (points) by _twice_ the mental power (points) consumed. The caster can use any number of points up to the amount of mental power they have. As a result, if the target's mental power (points)
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03948))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03948))_
+
+> This is a very special spell. Before using this spell, you must declare in advance how many points of mental power (points) you will use. You can reduce the target's mental power (points) by _twice_ the mental power (points) consumed. The caster can use any number of points up to the amount of mental power they have. As a result, if the target's mental power (points)
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03947))_
 
 > Expansion=Final score, effect (see description) Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03947))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03948))_
 
 > Before using this spell, you must declare in advance how many points of mental power (points) you will use.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03948))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-water-walking-undine-water-spirit-f3f947eb@0e0bbf6964e921a36925a7a47a6f1092
+projection_coverage: section-sword-world-rpg-complete-edition-section-water-walking-undine-water-spirit-f3f947eb@8767402c0d2fb5e4bbeac819b154936e
 ---
 
 # **[ Water Walking ] (Undine/Water Spirit)**
@@ -23,17 +23,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell differs from _Silence_ in that it can be used on an individual to silence only the voices and sounds _they_ make. The target can hear sounds from outside. Those under the influence of this spell can act without making any sound at all. However, they will no longer be able to use spells.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02452))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02452))_
+
+> This spell differs from _Silence_ in that it can be used on an individual to silence only the voices and sounds _they_ make. The target can hear sounds from outside. Those under the influence of this spell can act without making any sound at all. However, they will no longer be able to use spells.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02455))_
 
 > Base Mental Power Cost=12 Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02455))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02456))_
 
 > Area=One Duration=1 hour Effect=Become able to walk on water Type=Counters (Negates): _Sink_ Countered (Negated) By: _Sink_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02456))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02457))_
 
 > Expansion=Final score, duration, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02457))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02458))_
 
 > Those who've had this spell cast on them can walk on water as if they were walking on solid ground.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02458))_

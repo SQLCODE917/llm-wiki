@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-3-ac8e92ee@61e3dbc1bb7a6d63c3367edbf7d0c7be
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-3-ac8e92ee@94b51e22229acb1058bd7ea3bef3cfb6
 ---
 
 # **5.3**
@@ -38,26 +38,43 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Using spellsongs does _not_ consume a bard's mental power. Also, the effect of a spellsong _cannot_ be expanded. A spellsong remains in effect as long as the bard sings it. However, once the song is interrupted, the effect disappears. As long as a bard is singing a spellsong, they cannot take any other actions and cannot move more than 3 meters in one round. However, unlike _focus_ , it’s _not_ interrupted by damage dealt to life force or mental power (unless, of course, you fall unconscious as 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03215, source-range-870a16bc-03217))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03215, source-range-870a16bc-03217))_
+
+> Using spellsongs does _not_ consume a bard's mental power. Also, the effect of a spellsong _cannot_ be expanded. A spellsong remains in effect as long as the bard sings it. However, once the song is interrupted, the effect disappears. As long as a bard is singing a spellsong, they cannot take any other actions and cannot move more than 3 meters in one round. However, unlike _focus_ , it’s _not_ interrupted by damage dealt to life force or mental power (unless, of course, you fall unconscious as
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03216))_
 
 > On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03216))_
 
-> Context: However, bards are never called rune masters. This is because compared to the runes used by rune masters, spellsongs are only a superficial imitation. On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03216))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03216))_
+
+> However, bards are never called rune masters. This is because compared to the runes used by rune masters, spellsongs are only a superficial imitation. On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03217))_
 
 > As long as a bard is singing a spellsong, they cannot take any other actions and cannot move more than 3 meters in one round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03217))_
 
-> Context: However, bards are never called rune masters. This is because compared to the runes used by rune masters, spellsongs are only a superficial imitation. On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03216))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03216))_
+
+> However, bards are never called rune masters. This is because compared to the runes used by rune masters, spellsongs are only a superficial imitation. On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03218))_
 
 > Also, if you choose a _flute_ as your instrument, you can use the spellsong _without_ having to sing the lyrics.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03218))_
 
-> Context: With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))_
+
+> With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03244))_
 
 | 2D | Result |
 | --- | --- |
@@ -87,4 +104,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03242))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03244))_

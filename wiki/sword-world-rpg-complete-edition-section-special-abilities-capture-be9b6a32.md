@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-special-abilities-capture-be9b6a32@2621a56740ae1ce7cd16766eec47d6f9
+projection_coverage: section-sword-world-rpg-complete-edition-section-special-abilities-capture-be9b6a32@ad797c056a4151f8b0632ef3247fe6ee
 ---
 
 # Special Abilities=Capture
@@ -28,8 +28,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05613))_
+
 > Habitat=Rarely seen on the distant southern islands of Alecrast
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05613))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05614))_
 
 > Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05614))_

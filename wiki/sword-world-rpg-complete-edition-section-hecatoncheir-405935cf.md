@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hecatoncheir-405935cf@03da51e3dcad5cbe3da384a2d1e53c83
+projection_coverage: section-sword-world-rpg-complete-edition-section-hecatoncheir-405935cf@1a8907659a6408532bbe349f7d06170b
 ---
 
 # **[ Hecatoncheir ]**
@@ -29,5 +29,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05268))_
+
 > Monster Level=7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05268))_

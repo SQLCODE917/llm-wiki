@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-crack-behemoth-greater-earth-spirit-50ac61a8@8c0fcef8009bd9ca13cdda05d3073eff
+projection_coverage: section-sword-world-rpg-complete-edition-section-crack-behemoth-greater-earth-spirit-50ac61a8@754b9cad128b45398087df91e9d204a1
 ---
 
 # **[ Crack ] (Behemoth/Greater Earth Spirit)**
@@ -30,8 +30,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Additionally, the tornado creates a vacuum that cuts the skin and flesh of those within its area of effect, dealing strike power 10 damage. The cutting damage continues to have an effect until the target leaves the area of effect. Damage is determined by making a strike roll each round. Only the first attempt to resist this spell counts. Objects weighing less than 10 kilograms or equipment held in the hand or not securely attached to the body will be blown out of the area of effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02652))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02652))_
+
+> Additionally, the tornado creates a vacuum that cuts the skin and flesh of those within its area of effect, dealing strike power 10 damage. The cutting damage continues to have an effect until the target leaves the area of effect. Damage is determined by making a strike roll each round. Only the first attempt to resist this spell counts. Objects weighing less than 10 kilograms or equipment held in the hand or not securely attached to the body will be blown out of the area of effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02654))_
 
 > Base Mental Power Cost=35 Distance=30 meters Area=One Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02654))_

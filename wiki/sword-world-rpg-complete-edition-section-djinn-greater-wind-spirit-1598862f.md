@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-djinn-greater-wind-spirit-1598862f@f8d44022657b8c3396bc884582487e6b
+projection_coverage: section-sword-world-rpg-complete-edition-section-djinn-greater-wind-spirit-1598862f@0ace8a6239935e08c4f8d399db0666dd
 ---
 
 # **(Djinn/Greater Wind Spirit)**
@@ -31,17 +31,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02646))_
+
 > Base Mental Power Cost=35 Distance=30 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02646))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02647))_
 
 > Area=A space with a 10 meter radius Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02647))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02648))_
 
 > Effect=Create a tornado, knocking targets prone within range and dealing strike power 10 damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02648))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02649))_
 
 > Type=Target score, damage (Wind cuttertype)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02649))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02650))_
 
 > Expansion=Final score, duration, distance, area, damage certainty Resist=Reduced effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02650))_

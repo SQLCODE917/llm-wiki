@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lizardman-84317a1a@96b5512ac9dfc1de72d0119d9a7c3a8a
+projection_coverage: section-sword-world-rpg-complete-edition-section-lizardman-84317a1a@5afac1725d9671ead7045303fee7a2af
 ---
 
 # **[ Lizardman ]**
@@ -32,5 +32,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05459))_
+
 > Slaves have low intellect and cannot use magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05459))_

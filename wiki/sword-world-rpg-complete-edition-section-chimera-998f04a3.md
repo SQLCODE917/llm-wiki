@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chimera-998f04a3@332b84d014241706bb2475562b39b157
+projection_coverage: section-sword-world-rpg-complete-edition-section-chimera-998f04a3@5ccea957cb94395db4f8983f10daccd1
 ---
 
 # **[ Chimera ]**
@@ -26,20 +26,34 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When in combat, a scylla can attack different targets at the same time with its six heads. However, she can only attack a single target three times in one round. Scylla can also use spirit magic. Her shaman skill level is 4 and her magic intensity is 13 (magic power 6).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05393))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05393))_
+
+> When in combat, a scylla can attack different targets at the same time with its six heads. However, she can only attack a single target three times in one round. Scylla can also use spirit magic. Her shaman skill level is 4 and her magic intensity is 13 (magic power 6).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05395))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05395))_
 
-> Context: When in combat, a scylla can attack different targets at the same time with its six heads. However, she can only attack a single target three times in one round. Scylla can also use spirit magic. Her shaman skill level is 4 and her magic intensity is 13 (magic power 6).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05393))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05393))_
+
+> When in combat, a scylla can attack different targets at the same time with its six heads. However, she can only attack a single target three times in one round. Scylla can also use spirit magic. Her shaman skill level is 4 and her magic intensity is 13 (magic power 6).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05396))_
 
 > Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05396))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05400))_
 
 > Languages=None Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05400))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05404))_
 
 > In combat, a Chimera can attack two targets at the same time, using its lion fangs and the snake fangs at the tip of its tail.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05404))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-slug-b825f011@039a41c00bb5e87523df8e00d01bb7ae
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-slug-b825f011@f4cc1f9a3cc0320736926c21d5d69ccb
 ---
 
 # **[ Giant Slug ]**
@@ -20,8 +20,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05824))_
+
 > Monster Level=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05824))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05826))_
 
 > Weak to Salt Habitat=Damp underground labyrinths, marshlands Languages=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05826))_

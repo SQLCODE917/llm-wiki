@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sea-serpent-184c8471@4d6068a5887f296d31ff4a6e322e6ada
+projection_coverage: section-sword-world-rpg-complete-edition-section-sea-serpent-184c8471@7f0251e15997f3aae5a1579a69a3f094
 ---
 
 # **Sea Serpent**
@@ -20,8 +20,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Alecrast is home to the following dangerous spiders.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05982))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05982))_
+
+> Alecrast is home to the following dangerous spiders.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05984))_
 
 > Monster Level=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05984))_

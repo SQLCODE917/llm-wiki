@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-1-0fce0a64@a2c6484632c7da491b8aee5a4521c884
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-1-0fce0a64@367d714dc2b3c78cffda3aada5ca6d01
 ---
 
 # Monster Level=1
@@ -28,20 +28,35 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04955))_
+
 > Habitat=Forests, meadows Languages=Fairy, silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04955))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04956))_
 
 > They can use this ability without any restrictions, and they do not consume mental points by using this ability.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04956))_
 
-> Context: Pixies look similar to elves, but are only about 30 cm tall. They have wings on their backs reminiscent of insects. Most of them have the appearance of women, but there are also individuals that have the appearance of men. Also, for some reason, they seem to be wearing something that looks like clothes. Although they are relatively friendly towards humans, they do not actively interact with humans and rarely appear in public. Moreover, they seem to have a very close relationship with the small s
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04956))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04956))_
+
+> Pixies look similar to elves, but are only about 30 cm tall. They have wings on their backs reminiscent of insects. Most of them have the appearance of women, but there are also individuals that have the appearance of men. Also, for some reason, they seem to be wearing something that looks like clothes. Although they are relatively friendly towards humans, they do not actively interact with humans and rarely appear in public. Moreover, they seem to have a very close relationship with the small s
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04958))_
 
 > Combat is unlikely to occur, but when it does, pixies can use up to 2nd level spirit magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04958))_
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 
 | Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
 | --- | --- | --- | --- | --- | --- |
@@ -57,7 +72,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_
 
 | Level 1-2 | It's no big deal. Just a small problem in a small village |
 | --- | --- |
@@ -83,4 +101,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-2-weapon-and-armor-modifiers-a9744460@d408577d54e8b996e6e4b8ca8fa56218
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-2-weapon-and-armor-modifiers-a9744460@79414a8e61ee127cfd6f09e676348f08
 ---
 
 # 16.2 Weapon and Armor Modifiers
@@ -27,20 +27,35 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> In the basic rules, we did not consider the finer differences based on the shape of weapons and armor, but even though the required strength is the same, swords, axes, spears, and hammers differ in ease of use and power. This rule quantifies the finer differences between weapons and armor.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07704))_
+### Technical atom 1
 
-> Context: In the basic rules, we did not consider the finer differences based on the shape of weapons and armor, but even though the required strength is the same, swords, axes, spears, and hammers differ in ease of use and power. This rule quantifies the finer differences between weapons and armor. The terms used on this table are explained below.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07704, source-range-870a16bc-07707))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07704))_
+
+> In the basic rules, we did not consider the finer differences based on the shape of weapons and armor, but even though the required strength is the same, swords, axes, spears, and hammers differ in ease of use and power. This rule quantifies the finer differences between weapons and armor.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07704, source-range-870a16bc-07707))_
+
+> In the basic rules, we did not consider the finer differences based on the shape of weapons and armor, but even though the required strength is the same, swords, axes, spears, and hammers differ in ease of use and power. This rule quantifies the finer differences between weapons and armor. The terms used on this table are explained below.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07706))_
 
 > Here is a table of weapons commonly used by adventurers (" _Table 16-1 Weapon Optional Rules_ ").
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07706))_
 
-> Context: **Attack power modifier** indicates the modifier added to an adventurer's attack power when using that weapon. Weapons with higher numbers are more likely to hit an opponent, while weapons with smaller numbers are less likely to hit.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07709))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07709))_
+
+> **Attack power modifier** indicates the modifier added to an adventurer's attack power when using that weapon. Weapons with higher numbers are more likely to hit an opponent, while weapons with smaller numbers are less likely to hit.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07711))_
 
 > In other words, even if the required strength is the _same_ , one can say a weapon with a _higher_ strike power modifier will deal _greater_ damage to an opponent.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07711))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_
 
 | Type | Attack Power Mod. | Strike Power Mod. | Critical Target |
 | --- | --- | --- | --- |
@@ -122,7 +137,9 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07711))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07717))_
 
 > △△ Calculate using _required strength_ x 2 + 10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07717))_

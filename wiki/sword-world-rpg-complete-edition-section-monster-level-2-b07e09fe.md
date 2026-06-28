@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-2-b07e09fe@6a690068ef666a663e1e0bdc5cd8a00b
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-2-b07e09fe@eb21923f3c26577f45dab56127223c0d
 ---
 
 # Monster Level=2
@@ -22,32 +22,59 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04992))_
+
 > Rarity=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04992))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04993))_
 
 > Agility=16 Movement Speed=3/20 (water) Number=Several to dozens
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04993))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04994))_
 
 > Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Weapon: 9 (2) Strike Points=5 Evasion Points=10 (3) Defense Points=4
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04994))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04995))_
 
 > Life Points/Resistance=14/10 (3) Mental Points/Resistance=16/10 (3) Special Abilities=Water adaptation Habitat=Seas
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04995))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04996))_
 
 > Languages=Merman Perception=Five senses (illumination)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04996))_
 
-> Context: Merman tribes select girls with outstanding intelligence and mental power and train them as shamans from an early age. The result is a mermaid shaman. Mermaid shamans can use spirit magic up to 4th level, which is powered by water spirits (undine). There is one mermaid shaman per combat group, and her role is to assist the merman leader. Also, if the merman leader is defeated, she will take command of the battle in his place. A combat group whose leader and shaman
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04999))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04999))_
+
+> Merman tribes select girls with outstanding intelligence and mental power and train them as shamans from an early age. The result is a mermaid shaman. Mermaid shamans can use spirit magic up to 4th level, which is powered by water spirits (undine). There is one mermaid shaman per combat group, and her role is to assist the merman leader. Also, if the merman leader is defeated, she will take command of the battle in his place. A combat group whose leader and shaman
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04998))_
 
 > Habitat=Seas Languages=Merman, silent spirit Perception=Five senses (infravision, illumination)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04998))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04999))_
 
 > Mermaid shamans can use spirit magic up to 4th level, which is powered by water spirits (undine).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04999))_
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 
 | Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
 | --- | --- | --- | --- | --- | --- |
@@ -63,7 +90,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_
 
 | Level 1-2 | It's no big deal. Just a small problem in a small village |
 | --- | --- |
@@ -89,4 +119,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_

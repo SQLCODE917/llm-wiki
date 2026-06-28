@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-16-d8adfd36@a925360ba92e201051faa918a3c4e725
+projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-16-d8adfd36@6540e702dc48d9d4b14477bbee3f363c
 ---
 
 # Rarity=16
@@ -16,8 +16,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07540))_
+
 > Form=Glass prosthetic eye Base Trade Price=280,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07540))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07541))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07541))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-cat-claw-af3bbbb2@bbdadca137dbd6e86e15ef4423d5c58c
+projection_coverage: section-sword-world-rpg-complete-edition-section-cat-claw-af3bbbb2@fc16dad44e8773ac86d77e71f64c4840
 ---
 
 # 《 **Cat Claw** 》
@@ -20,17 +20,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07063))_
+
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07063))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07064))_
 
 > Enchanter=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07064))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07065))_
 
 > Form=Small mithril silver knife with a sharp curved blade
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07065))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07066))_
 
 > Required Strength=1 (Strike power 6) Base Trade Price=130,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07066))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07067))_
 
 > Powers=+2 to attack power and bonus damage. -2 to critical target
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07067))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bat-b91f1d08@e68f92f0767acdffec8d6f79272674d3
+projection_coverage: section-sword-world-rpg-complete-edition-section-bat-b91f1d08@ecffe0496ce3e19bab575d5638d3f554
 ---
 
 # **[ Bat ]**
@@ -21,8 +21,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Combat often occurs in unusual locations, such as in the dark, on poor footing, etc. In such cases, a penalty (sometimes a bonus) is given to an adventurer's attack power or evasion speed, depending on the situation. If the same conditions apply to monsters, the same penalty (bonus) will be given to the monster's attack and evasion points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03851))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03851))_
+
+> Combat often occurs in unusual locations, such as in the dark, on poor footing, etc. In such cases, a penalty (sometimes a bonus) is given to an adventurer's attack power or evasion speed, depending on the situation. If the same conditions apply to monsters, the same penalty (bonus) will be given to the monster's attack and evasion points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03854))_
 
 | **Table 10-1: Attack Power and Evasion Speed Modifers** |
 | --- |
@@ -44,7 +49,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03851))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03854))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
 | **Table 16-4 Maximum Ranges** |
 | --- |
@@ -100,4 +108,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03854))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_

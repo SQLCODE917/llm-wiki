@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-unknown-720c4f53@02cabe321f795395701242f3573a6077
+projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-unknown-720c4f53@0d519e8d39c92fdcacb4e4e4da5ddf7d
 ---
 
 # Enchanter=Unknown
@@ -21,8 +21,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07151))_
+
 > Form=Dagger with a ruby set in a silver handle
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07151))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07152))_
 
 > Required Strength=3 (Strike power 3) Base Trade Price=5000 gamels Powers=+1 to attack power and bonus damage
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07152))_

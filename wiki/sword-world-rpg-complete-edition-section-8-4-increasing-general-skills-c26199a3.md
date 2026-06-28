@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-8-4-increasing-general-skills-c26199a3@affad8b2a6e06b4f9ad406a7675b3e62
+projection_coverage: section-sword-world-rpg-complete-edition-section-8-4-increasing-general-skills-c26199a3@2d2647a7da5ba1b16bd98d634fc84e1c
 ---
 
 # 8.4 Increasing General Skills
@@ -53,14 +53,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03748))_
+
 > Please see the rightmost column of Table 8-1: Experience Points by Skill.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03748))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03759))_
 
 > If you acquire the 1st level sorcerer skill first, the experience points will be reduced when you acquire the 1st level sage skill, and as a result, the required experience points will be 500 - 500 = **0** points.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03759))_
 
-> Context: For example, let's say a character is forced to work in a bar for two months as punishment for eating and drinking without paying. He has no choice but to work as a shop clerk. As he works in this way, he will learn things like how to be
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03771))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03771))_
+
+> For example, let's say a character is forced to work in a bar for two months as punishment for eating and drinking without paying. He has no choice but to work as a shop clerk. As he works in this way, he will learn things like how to be
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03773))_
 
 > If a character is suitable for this type of job, you can give them 3 levels, and if a character is unsuitable, you can give them only 1 level.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03773))_

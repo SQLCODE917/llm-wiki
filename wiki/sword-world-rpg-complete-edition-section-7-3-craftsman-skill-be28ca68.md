@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-7-3-craftsman-skill-be28ca68@4f2cf80f63965f776a84f37f4ad1d7e6
+projection_coverage: section-sword-world-rpg-complete-edition-section-7-3-craftsman-skill-be28ca68@f4ccb39821c4b3e0de842577b3f9e6c9
 ---
 
 # 7.3 Craftsman Skill
@@ -60,23 +60,39 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is almost the same ability as the thief and sage skills' _treasure appraisal_ . However, you can only make a check for items that the merchant deals with. Therefore, a merchant who sells art can tell you the value of the art, and a merchant who sells weapons and armor can tell you the value of the weapons and armor. The result is a specific price converted to silver coins.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03622))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03622))_
+
+> This is almost the same ability as the thief and sage skills' _treasure appraisal_ . However, you can only make a check for items that the merchant deals with. Therefore, a merchant who sells art can tell you the value of the art, and a merchant who sells weapons and armor can tell you the value of the weapons and armor. The result is a specific price converted to silver coins.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03620))_
 
 > is a market price for ordinary items, so if you get too greedy, you may end up ruining a precious negotiation.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03620))_
 
-> Context: Negotiations will be concluded on terms more favorable to the side with the higher final score on their success roll. Both sides can refuse this, but that is not good business ethics. Of course, the game master and adventurer can negotiate with each other _without_ making such a mechanical check. However, in this case, please conduct negotiations with careful consideration of your role. It would be better not to rely on this check for negotiations between player characters.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03624))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03624))_
+
+> Negotiations will be concluded on terms more favorable to the side with the higher final score on their success roll. Both sides can refuse this, but that is not good business ethics. Of course, the game master and adventurer can negotiate with each other _without_ making such a mechanical check. However, in this case, please conduct negotiations with careful consideration of your role. It would be better not to rely on this check for negotiations between player characters.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03627))_
 
 > Of course, if you take the stock at a lower price or sell it at a higher price than the regular price, your profit will increase, so this ability is important.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03627))_
 
-> Context: Ducard II is trying to sell an ancient kingdom vase (price: 100 gamels) that he found on his adventure to an antique dealer. Ducard II has no merchant skill, so his baseline score for a success roll is _0_ . The antique dealer, on the other hand, has a merchant level of _5_ and a mental power bonus of _+2_ . Ducard II rolls 2D, and his final score is _8_ . On the other hand, the antique dealer's 2D roll is 9, and his final score is 9+5+2= _16_ . Since the difference between the two is 16-8= _8_ 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03640))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03640))_
+
+> Ducard II is trying to sell an ancient kingdom vase (price: 100 gamels) that he found on his adventure to an antique dealer. Ducard II has no merchant skill, so his baseline score for a success roll is _0_ . The antique dealer, on the other hand, has a merchant level of _5_ and a mental power bonus of _+2_ . Ducard II rolls 2D, and his final score is _8_ . On the other hand, the antique dealer's 2D roll is 9, and his final score is 9+5+2= _16_ . Since the difference between the two is 16-8= _8_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03641))_
 
 > However, you cannot create weapons or armor with a required strength of 6 or lower.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03641))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08375))_
 
 | **Crafsman Skill Abilities Table** |
 | --- |
@@ -96,4 +112,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03641))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08375))_

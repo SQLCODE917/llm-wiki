@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-17-2-lost-spells-9cce1f53@38a0213b64ceb9a83238e79e6ac52b90
+projection_coverage: section-sword-world-rpg-complete-edition-section-17-2-lost-spells-9cce1f53@8e59db1af3d749f271dad9870f9e879c
 ---
 
 # 17.2 Lost Spells
@@ -53,17 +53,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The magic procedure is resolved the same way regardless of whether a _monster_ or an _adventurer_ is casting the spell. In other words, you roll 2D and add it to your _magic power_ . Using that as the target score, everyone on the side on which it was cast must attempt a mental power resistance roll. If they fail, the magic will be cast with its full effect. If they succeed, the magic will _not_ be cast or its effect will be _reduced_ . However, if
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07988))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07988))_
+
+> The magic procedure is resolved the same way regardless of whether a _monster_ or an _adventurer_ is casting the spell. In other words, you roll 2D and add it to your _magic power_ . Using that as the target score, everyone on the side on which it was cast must attempt a mental power resistance roll. If they fail, the magic will be cast with its full effect. If they succeed, the magic will _not_ be cast or its effect will be _reduced_ . However, if
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07990))_
 
 > The final score must _exceed_ the final score from when the character cast the spell.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07990))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07997))_
 
 > However, even if you learn a lost spell, you cannot _use_ it unless your sorcerer skill is of the _spell's level or greater._ If your skill level is insufficient, you must wait until your skill level increases before you can use it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07997))_
 
-> Context: A shaman is attacked by three skeletons. He decides to expand the spirit magic _Fire Bolt_ by triple and cast it on each of them. His magic power is 4. His 2D roll is 8. The target score is 8 + 4 = _12_ , so the skeletons attempt to resist. A skeleton's resistance score due to their mental power is 9 (2), so the baseline score for the resistance roll is **2** . A monster will _fail_ to resist if the final scores are _tied_ , so a skeleton needs _11 or greater_ to resist. If the game master rolls
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08005))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08005))_
+
+> A shaman is attacked by three skeletons. He decides to expand the spirit magic _Fire Bolt_ by triple and cast it on each of them. His magic power is 4. His 2D roll is 8. The target score is 8 + 4 = _12_ , so the skeletons attempt to resist. A skeleton's resistance score due to their mental power is 9 (2), so the baseline score for the resistance roll is **2** . A monster will _fail_ to resist if the final scores are _tied_ , so a skeleton needs _11 or greater_ to resist. If the game master rolls
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08006))_
 
 > **Table 17-1 Lost Spells Table**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08006))_

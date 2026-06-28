@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-increasing-general-skills-bf29e598@4d2130fa1aba662bc18de7304192bed1
+projection_coverage: section-sword-world-rpg-complete-edition-section-increasing-general-skills-bf29e598@b6cf8d5fa98df795179a1a53f82d936d
 ---
 
 # **Increasing General Skills**
@@ -34,8 +34,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: For example, let's say a character is forced to work in a bar for two months as punishment for eating and drinking without paying. He has no choice but to work as a shop clerk. As he works in this way, he will learn things like how to be
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03771))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03771))_
+
+> For example, let's say a character is forced to work in a bar for two months as punishment for eating and drinking without paying. He has no choice but to work as a shop clerk. As he works in this way, he will learn things like how to be
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03773))_
 
 > If a character is suitable for this type of job, you can give them 3 levels, and if a character is unsuitable, you can give them only 1 level.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03773))_

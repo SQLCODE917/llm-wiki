@@ -1,124 +1,201 @@
 ---
 page_id: javascriptallonge-mapwith
-page_kind: source
-summary: mapWith from raw/javascriptallonge.pdf.
-sources: raw/javascriptallonge.pdf p.193-194
-updated: 2026-06-25
-source_id: javascriptallonge.pdf
+page_kind: concept
+summary: Mapwith: 13 statement(s) and 15 atom(s) from raw/javascriptallonge.pdf.
+sources: raw/javascriptallonge.pdf
+updated: 2026-06-27
+domain: javascriptallonge
+category_path: concepts
+projection_coverage: topic-javascriptallonge-mapwith@2005b4a657c29237a6ee3201317e5336
 ---
 
-## Source record
+# Mapwith
 
-The mapWith function is a utility that wraps around the .map method, turning any function into a mapper. It takes a function as an argument and returns a new function that applies the mapping to any array.
+What [[javascriptallonge]] covers about mapwith:
 
-## Key supported claims
+## Statements
 
-- mapWith is a function that wraps around the .map method, turning any function into a mapper (raw/javascriptallonge.pdf p.193-194).
-- mapWith is a very convenient abstraction for a very common pattern (raw/javascriptallonge.pdf p.193-194).
-- mapWith differs from map in two ways: it reverses the arguments and curries the function (raw/javascriptallonge.pdf p.193-194).
-- mapWith takes the function first and the list second, and it curries the function (raw/javascriptallonge.pdf p.193-194).
-- mapWith is suggested by ludicast (raw/javascriptallonge.pdf p.193-194).
+- Next, JavaScript invokes mapWith(fn, rest), which is semantically equivalent to mapWith((x) => x * x, [2, 3, 4, 5]). _(javascriptallonge.pdf (source-range-83ecb080-01405))_
+- mapWith takes any function as an argument and returns a partially applied map function. _(javascriptallonge.pdf (source-range-83ecb080-00845))_
+- Let’s rewrite mapWith so that we can use it to sum squares. _(javascriptallonge.pdf (source-range-83ecb080-01378))_
+- The mapWith and foldWith functions we wrote in Self-Similarity are useful for illustrating the basic principles behind using recursion to work with self-similar data structures, but they are not “production-ready” implementations. _(javascriptallonge.pdf (source-range-83ecb080-01398))_
+- First, mapWith((x) => x * x, [1, 2, 3, 4, 5]) is invoked. _(javascriptallonge.pdf (source-range-83ecb080-01401))_
+- Lather, rinse, repeat: Ever time we call mapWith, we’re creating a new array, copying all the elements from prepend into the new array, and then we no longer use prepend. _(javascriptallonge.pdf (source-range-83ecb080-01517))_
+- While we’re executing the mapWith function, we’re constructing a new linked list. _(javascriptallonge.pdf (source-range-83ecb080-01716))_
+- Our mapWith function would be very expensive if we make a copy every time we call rest(node). _(javascriptallonge.pdf (source-range-83ecb080-01880))_
+- And now functions like mapWith that make copies without modifying anything, work at full speed. _(javascriptallonge.pdf (source-range-83ecb080-01894))_
+- mapWith is a very convenient abstraction for a very common pattern. _(javascriptallonge.pdf (source-range-83ecb080-02231))_
+- Here’s mapWith, it takes an ordered collection, and returns another ordered collection representing a mapping over the original:[89] _(javascriptallonge.pdf (source-range-83ecb080-02469))_
+- Thus, mapWith has the property of preserving the collection semantics of the iterable we give it. _(javascriptallonge.pdf (source-range-83ecb080-02483))_
+- Like mapWith, they preserve the ordered collection semantics of whatever you give them. _(javascriptallonge.pdf (source-range-83ecb080-02496))_
 
-## Technical details
+## Technical atoms
 
-### `technical-atom-518c200c04646775` code
+### Technical atom 1
 
-Citation: (raw/javascriptallonge.pdf p.193-194)
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00845))_
 
-```javascript
-const map = (list, fn) => list.map(fn);
-```
+> The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
 
-### `technical-atom-cc99599b4ca9f803` code
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00846))_
 
-Citation: (raw/javascriptallonge.pdf p.193-194)
+> **const** mapWith = (fn) => (array) => map(array, fn);
 
-```javascript
-const mapWith = (fn) => (list) => list.map(fn);
-```
+### Technical atom 2
 
-### `technical-atom-49f118af13215ae0` code
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00845))_
 
-Citation: (raw/javascriptallonge.pdf p.193-194)
+> The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
 
-```javascript
-That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. For example, we might need a function to return the squares of an array. Instead of writing a a wrapper around .map:
-```
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00847))_
 
-### `technical-atom-200a75c05e224d56` code
+> **const** squareAll = mapWith((n) => n * n);
 
-Citation: (raw/javascriptallonge.pdf p.193-194)
+### Technical atom 3
 
-```javascript
-const squaresOf = (list) => list.map(x => x * x);
-```
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00845))_
 
-### `technical-atom-f6351842dd2b93c1` code
+> The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
 
-Citation: (raw/javascriptallonge.pdf p.193-194)
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00848))_
 
-```javascript
-const squaresOf = mapWith(n => n * n);
-```
+> squareAll([1, 2, 3]) _//=> [1, 4, 9]_
 
-### `technical-atom-3fc1386c8c65b3e6` code
+### Technical atom 4
 
-Citation: (raw/javascriptallonge.pdf p.193-194)
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01378))_
 
-```javascript
-const squaresOf = callRight(map, (n => n * n);
-```
+> Let’s rewrite mapWith so that we can use it to sum squares.
 
-### `technical-atom-b81c568b25c3fe2e` procedure
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01379))_
 
-Citation: (raw/javascriptallonge.pdf p.193-194)
+> **const** foldWith = (fn, terminalValue, [first, ...rest]) => first === **undefined** ? terminalValue : fn(first, foldWith(fn, terminalValue, rest));
 
-Map takes a function as an argument, and applies it to each of the elements of the array, then returns the results in another array.
+### Technical atom 5
 
-### `technical-atom-3d3d5bda66c820a8` procedure
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01382))_
 
-Citation: (raw/javascriptallonge.pdf p.193-194)
+> Our foldWith function is a generalization of our mapWith function. We can represent a map as a fold, we just need to supply the array rebuilding code:
 
-This recipe isn’t for map: It’s for mapWith, a function that wraps around map and turns any other function into a mapper.
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01383))_
 
-## Related technical details
+> **const** squareAll = (array) => foldWith((first, rest) => [first * first, ...rest],\ [], array); squareAll([1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
 
-### From [[javascriptallonge-making-data-out-of-functions]]: `technical-atom-cd36d849b171aa54` code
+### Technical atom 6
 
-Relation: nearby source page; matched terms `function`, `identity`, `pass`, `very`, `you`
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01384))_
 
-Citation: (raw/javascriptallonge.pdf p.177-190)
+> And if we like, we can write mapWith using foldWith:
 
-```javascript
-The identity function is a function that evaluates to whatever parameter you pass it. So I(42) => 42. Very simple, but useful. Now we’ll take it one more step forward: Passing a value to K gets a function back, and passing a value to that function gets us a value.
-```
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01387))_
 
-### From [[javascriptallonge-flip]]: `technical-atom-5e12113b4bab5f1d` code
+> **const** mapWith = (fn, array) => foldWith((first, rest) => [fn(first), ...rest], [\ ], array), squareAll = (array) => mapWith((x) => x * x, array);
 
-Relation: nearby source page; matched terms `function`, `map`, `mapwith`, `method`
+### Technical atom 7
 
-Citation: (raw/javascriptallonge.pdf p.195-197)
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01444))_
 
-```javascript
-Let’s return to the implementation of mapWith that relies on a map function rather than a method:
-```
+> This version of length calls uses lengthDelaysWork, and JavaScript optimizes that not to take up memory proportional to the length of the string. We can use this technique with mapWith:
 
-### From [[javascriptallonge-copy-on-write]]: `technical-atom-0fe1e1432a76a661` code
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01447))_
 
-Relation: nearby source page; matched terms `first`, `list`, `mapwith`
+> **const** mapWithDelaysWork = (fn, [first, ...rest], prepend) =>
 
-Citation: (raw/javascriptallonge.pdf p.158-163)
+### Technical atom 8
 
-```javascript
-const copy = (node, head = null, tail = null) => { if (node === EMPTY) { return head; } else if (tail === null) { const { first, rest } = node; const newNode = { first, rest }; return copy(rest, newNode, newNode); } else { const { first, rest } = node; const newNode = { first, rest }; tail.rest = newNode; return copy(node.rest, head, newNode); } } const first = ({first, rest}) => first; const rest = ({first, rest}) => rest; const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed: reverse(rest(node), { first: first(node), rest: delayed }); const mapWith = (fn, node, delayed = EMPTY) => node === EMPTY ? reverse(delayed): mapWith(fn, rest(node), { first: fn(first(node)), rest: delayed }); const at = (index, list) => index === 0 ? first(list): at(index - 1, rest(list)); const set = (index, value, list, originalList = list) => index === 0 ? (list.first = value, originalList): set(index - 1, value, rest(list), originalList) const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } }};
-```
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01507))_
 
-### From [[javascriptallonge-tortoises-hares-and-teleporting-turtles]]: `technical-atom-2e8c31db597723d2` code
+> We have now seen how to use Tail Calls to execute mapWith in constant space:
 
-Relation: nearby source page; matched terms `first`, `list`
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01508))_
 
-Citation: (raw/javascriptallonge.pdf p.164-166)
+> **const** mapWith = (fn, [first, ...rest], prepend = []) => first === **undefined**
 
-```javascript
-const pair = (first, rest = EMPTY) => ({first, rest}); const list = (...elements) => { const [first, ...rest] = elements; return elements.length === 0 ? EMPTY: pair(first, list(...rest)) } const forceAppend = (list1, list2) => { if (isEmpty(list1)) { return "FAIL!" } if (isEmpty(list1.rest)) { list1.rest = list2; } else { forceAppend(list1.rest, list2);
-```
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02215, source-range-83ecb080-02219))_
+
+> **const** map = (list, fn) => list.map(fn); That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. For example, we might need a function to return the squares of an array. Instead of writing a a wrapper around .map:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02217))_
+
+> **const** mapWith = (fn) => (list) => list.map(fn);
+
+### Technical atom 10
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02219))_
+
+> That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. For example, we might need a function to return the squares of an array. Instead of writing a a wrapper around .map:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02220))_
+
+> **const** squaresOf = (list) => list.map(x => x * x);
+
+### Technical atom 11
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02223, source-range-83ecb080-02228))_
+
+> > 82Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It’s the same idea, after all. If we didn’t use mapWith, we’d could have also used callRight with map to accomplish the same result:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02226))_
+
+> **const** squaresOf = mapWith(n => n * n);
+
+### Technical atom 12
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02228))_
+
+> If we didn’t use mapWith, we’d could have also used callRight with map to accomplish the same result:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02227))_
+
+> squaresOf([1, 2, 3, 4, 5]) _//=> [1, 4, 9, 16, 25]_
+
+### Technical atom 13
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02228))_
+
+> If we didn’t use mapWith, we’d could have also used callRight with map to accomplish the same result:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02229))_
+
+> **const** squaresOf = callRight(map, (n => n * n);
+
+### Technical atom 14
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02228))_
+
+> If we didn’t use mapWith, we’d could have also used callRight with map to accomplish the same result:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02230))_
+
+> squaresOf([1, 2, 3, 4, 5]) _//=> [1, 4, 9, 16, 25]_
+
+### Technical atom 15
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02475))_
+
+> Many operations on ordered collections return another ordered collection. They do so by taking care to iterate over a result freshly every time we get an iterator for them. Consider this example for mapWith:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02476))_
+
+> **const** Evens = mapWith((x) => 2 * x, Numbers);
+
+
+## Related pages
+
+- [[javascriptallonge-function]] - shared statements and technical atoms (5 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-return]] - shared statements and technical atoms (1 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-argument]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-javascript]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-collection]] - shared technical atoms (1 shared atom(s))
+- [[javascriptallonge-iterator]] - shared technical atoms (1 shared atom(s))
+- [[javascriptallonge-length]] - shared technical atoms (1 shared atom(s))
+- [[javascriptallonge-copy]] - shared statements (1 shared statement(s))
+- [[javascriptallonge-element]] - shared statements (1 shared statement(s))
+- [[javascriptallonge-iterable]] - shared statements (1 shared statement(s))
+- [[javascriptallonge-rest]] - shared statements (1 shared statement(s))
+
+## Source
+
+- [[javascriptallonge]]

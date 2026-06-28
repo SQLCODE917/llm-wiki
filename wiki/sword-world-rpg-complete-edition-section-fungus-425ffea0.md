@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fungus-425ffea0@95eebac4cca8de09df46efbe63394a56
+projection_coverage: section-sword-world-rpg-complete-edition-section-fungus-425ffea0@b5c8b488d6da38534b7bcfbac0a8f857
 ---
 
 # **[ Fungus ]**
@@ -31,8 +31,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06104))_
+
 > Monster Level=8 Rarity=15 Agility=7 Movement Speed=7 Number=One to several Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Barehanded:15 (8) Strike Points=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06104))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06107))_
 
 > After combat, they must make a life force resistance roll against target score 16, and those who fail will then have mushrooms growing all over their bodies after 24 hours.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06107))_

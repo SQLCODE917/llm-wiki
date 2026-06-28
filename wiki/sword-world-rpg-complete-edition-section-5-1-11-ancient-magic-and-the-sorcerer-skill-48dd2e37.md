@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-11-ancient-magic-and-the-sorcerer-skill-48dd2e37@588deab0af6af63c95e95c3e1f215eaf
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-11-ancient-magic-and-the-sorcerer-skill-48dd2e37@41a7ebb8b6c47d63fda923b143d6f205
 ---
 
 # 5.1.11 Ancient Magic and the Sorcerer Skill
@@ -76,26 +76,46 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The base mental power cost represents how much mental power is consumed when using that magic. As previously explained, this base mental power cost divided by the corresponding rune master skill level equals the actual mental power consumed by the caster.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01519))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01519))_
+
+> The base mental power cost represents how much mental power is consumed when using that magic. As previously explained, this base mental power cost divided by the corresponding rune master skill level equals the actual mental power consumed by the caster.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01521))_
 
 > If the distance is **touch** , the caster must touch the target with their hand or (for ancient magic) with their magical catalyst (see below).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01521))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01526))_
 
 > If it works on a **specific space or area** , then everything within that area is targeted. For example, a _Fireball_ explosion deals explosion damage to everything within a 3 meter radius. It makes no difference whether it's the caster's enemies, allies, or the caster. There are many other ways to write this, but it should be clear if you read the description.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01526))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01538))_
 
 > Spells always take their effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01538))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01539))_
 
 > **Negated Effect** : If resisted, the spell does not take its effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01539))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01540))_
 
 > **Reduced Effect** : If resisted, the spell only takes an incomplete effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01540))_
 
-> Context: time they try to cast a spell. This is because the words and actions of a spell are usually sharply memorized in your head. A spellbook is used to review them, always confirming and ensuring your memory.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01564))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01564))_
+
+> time they try to cast a spell. This is because the words and actions of a spell are usually sharply memorized in your head. A spellbook is used to review them, always confirming and ensuring your memory.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01567))_
 
 > This is why you must have a mage's staff as a restriction when using ancient magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01567))_

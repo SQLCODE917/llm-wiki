@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-shadow-stalker-6b341bd6@d78a54ccc9550675900d0623da0710eb
+projection_coverage: section-sword-world-rpg-complete-edition-section-shadow-stalker-6b341bd6@8c29fa45970234d62c02ce6b40e60329
 ---
 
 # **Shadow Stalker**
@@ -30,32 +30,56 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: A gas stalker is a Stalker created using a heavy, foul-smelling gas. Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor. When it materializes, it appears as a naked devil with green skin and crazy bloodshot eyes.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
+
+> A gas stalker is a Stalker created using a heavy, foul-smelling gas. Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor. When it materializes, it appears as a naked devil with green skin and crazy bloodshot eyes.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06500))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06500))_
 
-> Context: A gas stalker is a Stalker created using a heavy, foul-smelling gas. Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor. When it materializes, it appears as a naked devil with green skin and crazy bloodshot eyes.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
+
+> A gas stalker is a Stalker created using a heavy, foul-smelling gas. Although it's usually invisible and doesn't make a sound, you can tell when it’s approaching because the gas that makes up its body gives off a terrible odor. When it materializes, it appears as a naked devil with green skin and crazy bloodshot eyes.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06501))_
 
 > Rarity=14 Agility=15 Movement Speed=15 Number=One, rarely multiple Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Garrote:10 (3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06501))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06502))_
 
 > Strike Points=Special Evasion Points=13 (6) Defense Points=7 Life Points/Resistance=16/13 (6) Mental Points/Resistance=20/14 (7) Special Abilities=Choke (Strike power 10, bonus damage 5)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06502))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06503))_
 
 > Surprise attack (Sense target score=16) Normal attack immunity Not affected by poison and illness Sleepless Physical attack immunity while in ghostly form Habitat=Ruins
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06503))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06504))_
 
 > Languages=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06504))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06505))_
 
 > Perception=Pseudo, Magic while in ghostly form
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06505))_
 
-> Context: A shadow stalker is a stalker made using an extremely heavy black gas. Even when it's not materialized, the color of the black gas is clearly visible in a well-lit area, but when it's lost in darkness, it's barely recognizable. It also excels at moving around while pretending to be its opponent's shadow. A shadow stalker will materialize behind its opponent, holding a garrote in its hand. It'll then try to strangle the opponent to death with that garrote.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06506))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06506))_
+
+> A shadow stalker is a stalker made using an extremely heavy black gas. Even when it's not materialized, the color of the black gas is clearly visible in a well-lit area, but when it's lost in darkness, it's barely recognizable. It also excels at moving around while pretending to be its opponent's shadow. A shadow stalker will materialize behind its opponent, holding a garrote in its hand. It'll then try to strangle the opponent to death with that garrote.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06507))_
 
 > Those with the ranger skill can detect this attack using their _sense danger_ ability if they succeed on a success roll against target score 16 using _ranger skill level + intelligence bonus_ as the baseline score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06507))_

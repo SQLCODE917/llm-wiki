@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-11-5-asking-npcs-to-use-magic-10df5485@674cac7de7c2a8427c85b2826e58197b
+projection_coverage: section-sword-world-rpg-complete-edition-section-11-5-asking-npcs-to-use-magic-10df5485@c937730c290706c8bec49c2598f10e0a
 ---
 
 # 11.5 Asking NPCs to Use Magic
@@ -65,29 +65,49 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> If the game master wishes, on the basis that you rebelled greatly against your old faith, they may require only half the normal experience points to increase your level until you reach your previous priest skill level.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04371))_
+### Technical atom 1
 
-> Context: In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. You may want to have a _Remove Curse_ cast on you when you're cursed, a _Resurrection_ cast when someone dies, or have a magical item appraised using _Analyze Enchantment_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04380))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04371))_
+
+> If the game master wishes, on the basis that you rebelled greatly against your old faith, they may require only half the normal experience points to increase your level until you reach your previous priest skill level.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04380))_
+
+> In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. You may want to have a _Remove Curse_ cast on you when you're cursed, a _Resurrection_ cast when someone dies, or have a magical item appraised using _Analyze Enchantment_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04381))_
 
 > Of course, these services are not always available, and when they are, they are not free.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04381))_
 
-> Context: In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. You may want to have a _Remove Curse_ cast on you when you're cursed, a _Resurrection_ cast when someone dies, or have a magical item appraised using _Analyze Enchantment_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04380))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04380))_
+
+> In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. You may want to have a _Remove Curse_ cast on you when you're cursed, a _Resurrection_ cast when someone dies, or have a magical item appraised using _Analyze Enchantment_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04383))_
 
 > As a rough standard, here we've listed Table 11-2: NPC Presence by Level.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04383))_
 
-> Context: Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))_
+
+> Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04386))_
 
 > **Table 11-2: NPC Presence by Level**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04386))_
 
-> Context: Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))_
+
+> Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04387))_
 
 | 10th level | Royal capital level of a large country |
 | --- | --- |
@@ -109,28 +129,43 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04384))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04387))_
 
-> Context: Think about when you use _Resurrection_ to bring back a friend who lost their life on an adventure. Let's say you have a corpse that's been dead for 5 days, but has been preserved via _Preservation_ . At this time, the final score required for resurrection is 19.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04391))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04391))_
+
+> Think about when you use _Resurrection_ to bring back a friend who lost their life on an adventure. Let's say you have a corpse that's been dead for 5 days, but has been preserved via _Preservation_ . At this time, the final score required for resurrection is 19.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04392))_
 
 > If you have the magic expanded, the price will increase by double, triple......
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04392))_
 
-> Context: Think about when you use _Resurrection_ to bring back a friend who lost their life on an adventure. Let's say you have a corpse that's been dead for 5 days, but has been preserved via _Preservation_ . At this time, the final score required for resurrection is 19.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04391))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04391))_
+
+> Think about when you use _Resurrection_ to bring back a friend who lost their life on an adventure. Let's say you have a corpse that's been dead for 5 days, but has been preserved via _Preservation_ . At this time, the final score required for resurrection is 19.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04393))_
 
 > If you want to cast _Resurrection_ normally, the required money is 10 (priest's level) x 45 (base mental power cost for _Resurrection_ ) x 20 = **9000** (gamels).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04393))_
 
-> Context: You successfully find a 10th level priest and the negotiations are settled. If you want to cast _Resurrection_ normally, the required money is 10 (priest's level) x 45 (base mental power cost for _Resurrection_ ) x 20 = **9000** (gamels). However, assuming the priest's intelligence bonus is +2 , a 2D roll of 7 or greater is required for a successful resurrection.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04393))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04393))_
+
+> You successfully find a 10th level priest and the negotiations are settled. If you want to cast _Resurrection_ normally, the required money is 10 (priest's level) x 45 (base mental power cost for _Resurrection_ ) x 20 = **9000** (gamels). However, assuming the priest's intelligence bonus is +2 , a 2D roll of 7 or greater is required for a successful resurrection.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04395))_
 
 > Thinking that this is not enough, the adventurers ask the priest if they can expand the magic and increase the final
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04395))_
 
-> Context: the resurrection will be successful unless you roll double ones. However, in order to do so, you must donate 9000 x 5 (because the eventual final score is +4) = **45,000** gamels to the priest (temple). In this case, the average advance payment is between 4,500 and 13,500 Gamels.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04399))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04399))_
+
+> the resurrection will be successful unless you roll double ones. However, in order to do so, you must donate 9000 x 5 (because the eventual final score is +4) = **45,000** gamels to the priest (temple). In this case, the average advance payment is between 4,500 and 13,500 Gamels.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04400))_
 
 > If you don't have clients, you won't get paid.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04400))_

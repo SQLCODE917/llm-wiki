@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-gnome-earth-spirit-187b3bf5@0c398955d7330e2f4238fe1eefd1f585
+projection_coverage: section-sword-world-rpg-complete-edition-section-gnome-earth-spirit-187b3bf5@1ab0bf7e5b03e6c8b56158a25f9d9c30
 ---
 
 # **(Gnome/Earth Spirit)**
@@ -23,17 +23,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02426))_
+
 > Base Mental Power Cost=12 Distance=30 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02426))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02427))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02427))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02428))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02428))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02429))_
 
 > Effect=Deals strike power 20 stone damage to the target Type=Damage (Stone-type)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02429))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02430))_
 
 > Expansion=Final score, distance, targets, damage certainty Resist=Reduced effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02430))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-haunt-76be1aa0@c09d3959d7c0e7ace6877722de898b0a
+projection_coverage: section-sword-world-rpg-complete-edition-section-haunt-76be1aa0@6c6b6409d4d33ff8881b41afc726afb8
 ---
 
 # **[ Haunt ]**
@@ -37,11 +37,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Wights are undead that possess people and feed on the energy of others. Normal weapons have no effect against this monster. To wound a wight, you need a silver or magical weapon. A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. If a wight's attack hits, your life force will suffer damage as well as your mental power. The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4. 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06177))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06177))_
+
+> Wights are undead that possess people and feed on the energy of others. Normal weapons have no effect against this monster. To wound a wight, you need a silver or magical weapon. A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. If a wight's attack hits, your life force will suffer damage as well as your mental power. The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06180))_
 
 > If you can clear up those lingering regrets and grudges, they will cease to exist.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06180))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06183))_
 
 > If a haunt finds that a creature it comes into contact with does not sympathize with its feelings, it may attempt to possess them.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06183))_

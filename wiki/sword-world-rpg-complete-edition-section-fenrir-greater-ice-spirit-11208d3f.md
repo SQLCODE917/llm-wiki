@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fenrir-greater-ice-spirit-11208d3f@d1b36072f41bf4418f6923935aa65d6e
+projection_coverage: section-sword-world-rpg-complete-edition-section-fenrir-greater-ice-spirit-11208d3f@85170b59d4d5ac02db64c29da49655bc
 ---
 
 # **(Fenrir/Greater Ice Spirit)**
@@ -31,23 +31,40 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Please note that it is not possible to use both the _Control Spirit_ and _Full Control Spirit_ spells to control different spirits. In this case, the effect of the previously cast spell will vanish.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02681))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02681))_
+
+> Please note that it is not possible to use both the _Control Spirit_ and _Full Control Spirit_ spells to control different spirits. In this case, the effect of the previously cast spell will vanish.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02684))_
 
 > Base Mental Power Cost=32 Distance=30 meters Area=1 x 1 x 2 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02684))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02685))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02685))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02686))_
 
 > Effect=Trap the opponent in a pillar of ice Type=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02686))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02687))_
 
 > Expansion=Final score, distance, target volume Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02687))_
 
-> Context: Even if your friends are trapped in an ice pillar, it is extremely dangerous to attempt to destroy it. This is because there is a risk that your friends who are packed in the ice will also be destroyed. Damage dealt to the ice by weapons etc. will also be applied to whatever's inside the ice. For details on destruction, please refer to _18.3: Rules for Destroying Structures_ (see p. 277).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02691))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02691))_
+
+> Even if your friends are trapped in an ice pillar, it is extremely dangerous to attempt to destroy it. This is because there is a risk that your friends who are packed in the ice will also be destroyed. Damage dealt to the ice by weapons etc. will also be applied to whatever's inside the ice. For details on destruction, please refer to _18.3: Rules for Destroying Structures_ (see p. 277).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02689))_
 
 > If the target fails to resist, they become trapped in ice, unable to take any action, will lose consciousness and enter a state of suspended animation.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02689))_

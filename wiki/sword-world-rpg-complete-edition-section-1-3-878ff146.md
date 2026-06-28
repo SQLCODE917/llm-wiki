@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-3-878ff146@e3d3c866bc2000dd1586bbb14301ba27
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-3-878ff146@d9f87b99e5c24476c0a95bb3ec7eda8c
 ---
 
 # **1.3**
@@ -20,6 +20,10 @@ From [[sword-world-rpg-complete-edition]].
 - Skills have a greater impact on a character's actions than ability scores. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00227))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -53,4 +57,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-phalaris-special-dark-magic-list-f91658df@7dbf9fd40303140856985cb5adebc9b3
+projection_coverage: section-sword-world-rpg-complete-edition-section-phalaris-special-dark-magic-list-f91658df@623206afba680bc4eee3ff21f3b203c8
 ---
 
 # **Phalaris Special Dark Magic List**
@@ -25,23 +25,40 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Here is a list of special dark magic that can be used uniquely by each wicked god. Priests of wicked gods can use basic holy magic, basic dark magic, _and_ special dark magic created by their god.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04126))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04126))_
+
+> Here is a list of special dark magic that can be used uniquely by each wicked god. Priests of wicked gods can use basic holy magic, basic dark magic, _and_ special dark magic created by their god.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04128))_
 
 > **[ Evil Impulse ] (Spell Level=4)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04128))_
 
-> Context: Here is a list of special dark magic that can be used uniquely by each wicked god. Priests of wicked gods can use basic holy magic, basic dark magic, _and_ special dark magic created by their god.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04126))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04126))_
+
+> Here is a list of special dark magic that can be used uniquely by each wicked god. Priests of wicked gods can use basic holy magic, basic dark magic, _and_ special dark magic created by their god.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04129))_
 
 > Base Mental Power Cost=20 Distance=30 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04129))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04130))_
 
 > Area=One Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04130))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04131))_
 
 > Effect=Cause the target to impulsively commit evil acts
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04131))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04132))_
 
 > Type=Mind Expansion=Final score, duration, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04132))_

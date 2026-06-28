@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-who-knows-lost-spell-449255ce@67c19045ca360e59d03993302c8e6cc2
+projection_coverage: section-sword-world-rpg-complete-edition-section-who-knows-lost-spell-449255ce@30cd509bebcb3763d642ed7aa43af65f
 ---
 
 # **Who Knows Lost Spell**
@@ -27,5 +27,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07997))_
+
 > However, even if you learn a lost spell, you cannot _use_ it unless your sorcerer skill is of the _spell's level or greater._ If your skill level is insufficient, you must wait until your skill level increases before you can use it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07997))_

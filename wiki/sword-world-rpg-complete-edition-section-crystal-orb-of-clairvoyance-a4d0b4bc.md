@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-crystal-orb-of-clairvoyance-a4d0b4bc@e3bb3e3aa24d76ad2442bb176f249962
+projection_coverage: section-sword-world-rpg-complete-edition-section-crystal-orb-of-clairvoyance-a4d0b4bc@b767580ac5bc56fe94fd509601e8ff9b
 ---
 
 # **[Crystal Orb of Clairvoyance]**
@@ -24,17 +24,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+
+> If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07474))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07474))_
 
-> Context: If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+
+> If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07475))_
 
 > Enchanter=Many
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07475))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07476))_
 
 > Form=Crystal ball about 10cm in diameter Base Trade Price=300,000 gamels~ Powers=You can see various places around the world
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07476))_

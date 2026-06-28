@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-skeleton-warrior-25d4e25f@b638e13890e85155460a47df7ee53481
+projection_coverage: section-sword-world-rpg-complete-edition-section-skeleton-warrior-25d4e25f@d5c9cafc74194e20635464a5354aa740
 ---
 
 # **[ Skeleton Warrior ]**
@@ -29,17 +29,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01900))_
+
 > Base Mental Power Cost=20
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01900))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01901))_
 
 > Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01901))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01902))_
 
 > Area=Dragon's tooth
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01902))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01903))_
 
 > Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01903))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01904))_
 
 > Effect=Create a skeleton warrior and make it obey your commands Type=Non-removable Expansion=Target score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01904))_

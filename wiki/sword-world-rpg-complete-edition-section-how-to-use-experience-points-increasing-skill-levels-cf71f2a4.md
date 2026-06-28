@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-how-to-use-experience-points-increasing-skill-levels-cf71f2a4@9dbef886738ffdddad36834a0774a73d
+projection_coverage: section-sword-world-rpg-complete-edition-section-how-to-use-experience-points-increasing-skill-levels-cf71f2a4@027a30c6eccf39dfe093b88895c6c7c6
 ---
 
 # **How to Use Experience Points: Increasing Skill Levels**
@@ -23,6 +23,10 @@ From [[sword-world-rpg-complete-edition]].
 - The experience points required to increase each skill are shown on Table 8- 1: Experience Points by Skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03731))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_
 
 | Attained Level | <br>Sorcerer | Shaman<br>Dragon Priest | Fighter<br>Tief<br>Priest<br>Dark Priest | Ranger<br>Sage<br>Bard | Reduction for<br>Acquiring<br>Sorcerer &<br>Sage at the<br>Same Time |
 | --- | --- | --- | --- | --- | --- |
@@ -56,4 +60,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-resist-reduced-effect-61f4e489@322eb0e5554b42c3910603c5648bb58a
+projection_coverage: section-sword-world-rpg-complete-edition-section-resist-reduced-effect-61f4e489@a11ef999d209bc8b259111f72568b57c
 ---
 
 # Resist=Reduced effect
@@ -30,5 +30,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02363))_
+
 > The shade will fly freely in the air according to the caster's commands, but can no longer be controlled if it moves more than 20 meters away from the caster.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02363))_

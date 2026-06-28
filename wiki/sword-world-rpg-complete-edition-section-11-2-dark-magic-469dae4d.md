@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-11-2-dark-magic-469dae4d@8db47c96c62c677b84a5b9d29d9de465
+projection_coverage: section-sword-world-rpg-complete-edition-section-11-2-dark-magic-469dae4d@2de2055b8f9bddd6d4617f3433326b3d
 ---
 
 # 11.2 Dark Magic
@@ -243,407 +243,750 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Dark magic basically has the same origin as holy magic, and dark priests can use most of the basic holy magic. In addition, dark priests can use wicked magic that the gods of light do not allow (do not give power to). Furthermore, just as there is special holy magic that is unique to each god among holy magic, there is also special dark magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03923))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03923))_
+
+> Dark magic basically has the same origin as holy magic, and dark priests can use most of the basic holy magic. In addition, dark priests can use wicked magic that the gods of light do not allow (do not give power to). Furthermore, just as there is special holy magic that is unique to each god among holy magic, there is also special dark magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03925))_
 
 > Here is a list of common dark magic that any priest of the wicked gods can use.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03925))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03931))_
 
 > Base Mental Power Cost=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03931))_
 
-> Context: Dark priests can use the following abilities:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03932))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03932))_
+
+> Dark priests can use the following abilities:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03933))_
 
 > Distance=10 meters Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03933))_
 
-> Context: Dark priests can use the following abilities:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03932))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03932))_
+
+> Dark priests can use the following abilities:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03934))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03934))_
 
-> Context: Dark priests can use the following abilities:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03932))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03932))_
+
+> Dark priests can use the following abilities:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03935))_
 
 > Effect=Cut up the opponent's body, dealing strike power 10 damage Type=Damage (Special)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03935))_
 
-> Context: This spell also has no effect on anything that does not have normal life, such as undead or magical creatures.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03940))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03940))_
+
+> This spell also has no effect on anything that does not have normal life, such as undead or magical creatures.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03942))_
 
 > Base Mental Power Cost=1~
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03942))_
 
-> Context: This spell also has no effect on anything that does not have normal life, such as undead or magical creatures.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03940))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03940))_
+
+> This spell also has no effect on anything that does not have normal life, such as undead or magical creatures.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03943))_
 
 > Distance=Touch Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03943))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03944))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03944))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03945))_
 
 > Effect=Reduces the target's mental power (points) by double the mental power consumed by the caster.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03945))_
 
-> Context: This is a very special spell. Before using this spell, you must declare in advance how many points of mental power (points) you will use. You can reduce the target's mental power (points) by _twice_ the mental power (points) consumed. The caster can use any number of points up to the amount of mental power they have. As a result, if the target's mental power (points)
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03948))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03948))_
+
+> This is a very special spell. Before using this spell, you must declare in advance how many points of mental power (points) you will use. You can reduce the target's mental power (points) by _twice_ the mental power (points) consumed. The caster can use any number of points up to the amount of mental power they have. As a result, if the target's mental power (points)
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03947))_
 
 > Expansion=Final score, effect (see description) Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03947))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03948))_
 
 > Before using this spell, you must declare in advance how many points of mental power (points) you will use.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03948))_
 
-> Context: Note that this spell does _not_ allow the target to reduce damage using adventurer level. Also, the caster _cannot_ add their magic power to the damage dealt, and _cannot_ divide the mental power consumed by the spell by their level (for both a caster with a 1st level dark priest skill and a caster with a 3rd level dark priest skill, the mental power consumed is the same).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03951))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03951))_
+
+> Note that this spell does _not_ allow the target to reduce damage using adventurer level. Also, the caster _cannot_ add their magic power to the damage dealt, and _cannot_ divide the mental power consumed by the spell by their level (for both a caster with a 1st level dark priest skill and a caster with a 3rd level dark priest skill, the mental power consumed is the same).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03954))_
 
 > Base Mental Power Cost=8 Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03954))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03955))_
 
 > Area=One Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03955))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03956))_
 
 > Effect=Take away the target's hearing Type=Countered (Negated) By: _Cure Deafness_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03956))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03957))_
 
 > Expansion=Final score, duration Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03957))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03960))_
 
 > Base Mental Power Cost=8
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03960))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03961))_
 
 > Distance=Touch Area=One Duration=18 Rounds Effect=Take away the target's vision Type=Countered (Negated) By: _Cure Blindness_
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03961))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03962))_
 
 > Expansion=Final score, duration Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03962))_
 
-> Context: Although it is a poison, the resistance roll is made as a _mental power_ resistance roll, _not_ life force. Please be careful.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03967))_
+### Technical atom 19
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03967))_
+
+> Although it is a poison, the resistance roll is made as a _mental power_ resistance roll, _not_ life force. Please be careful.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03969))_
 
 > Base Mental Power Cost=15 Distance=Touch Area=One Duration=12 hours
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03969))_
 
-> Context: Although it is a poison, the resistance roll is made as a _mental power_ resistance roll, _not_ life force. Please be careful.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03967))_
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03967))_
+
+> Although it is a poison, the resistance roll is made as a _mental power_ resistance roll, _not_ life force. Please be careful.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03970))_
 
 > Effect=Creates a paralyzing poison in the target's body Type=Target score Countered (Negated) By: _Cure Poison_ Expansion=Final score Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03970))_
+
+### Technical atom 21
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03973))_
 
 > Base Mental Power Cost=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03973))_
+
+### Technical atom 22
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03974))_
 
 > Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03974))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03975))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03975))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03976))_
 
 > Duration=Special Effect=Creates a damage poison in the target's body Type=Target score, damage (Poison-type) Countered (Negated) By: _Cure Poison_ Expansion=Final score, damage certainty Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03976))_
 
-> Context: if the poison is removed by a spell such as _Cure Poison_ , etc. midway, the damage will stop accumulating at that point. However, the damage suffered up to that point will _not_ be recovered.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03978))_
+### Technical atom 25
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03978))_
+
+> if the poison is removed by a spell such as _Cure Poison_ , etc. midway, the damage will stop accumulating at that point. However, the damage suffered up to that point will _not_ be recovered.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03981))_
 
 > Base Mental Power Cost=20
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03981))_
+
+### Technical atom 26
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03982))_
 
 > Distance=1 kilometer
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03982))_
+
+### Technical atom 27
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03983))_
 
 > Area=One imp Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03983))_
+
+### Technical atom 28
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03984))_
 
 > Effect=You can make an imp into your familiar
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03984))_
+
+### Technical atom 29
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03985))_
 
 > Type=Non-removable Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03985))_
+
+### Technical atom 30
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03987))_
 
 > When casting magic, you can also borrow the imp's mental points to cast spells.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03987))_
+
+### Technical atom 31
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03990))_
 
 > Base Mental Power Cost=20 Distance=30 meters Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03990))_
+
+### Technical atom 32
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03991))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03991))_
+
+### Technical atom 33
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03995))_
 
 > If you expand the effect and steal life force (points) from multiple people, you can recover the total amount of life force (points) you stole.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03995))_
 
-> Context: to the target, and the caster's life force (points) will be restored by the same number of points. If you expand the effect and steal life force (points) from multiple people, you can recover the total amount of life force (points) you stole. However, you _cannot_ increase your life (points) higher than your original score. Also, like _Wounds_ , it has no effect at all if the opponent successfully resists, and it has no effect on opponents that don't have normal life, such as undead, skeleton wa
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03995))_
+### Technical atom 34
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03995))_
+
+> to the target, and the caster's life force (points) will be restored by the same number of points. If you expand the effect and steal life force (points) from multiple people, you can recover the total amount of life force (points) you stole. However, you _cannot_ increase your life (points) higher than your original score. Also, like _Wounds_ , it has no effect at all if the opponent successfully resists, and it has no effect on opponents that don't have normal life, such as undead, skeleton wa
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03996))_
 
 > For example, if the caster sacrifices their own life, it is acceptable to apply a fairly powerful curse.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03996))_
+
+### Technical atom 35
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04000))_
 
 > Base Mental Power Cost=25
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04000))_
+
+### Technical atom 36
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04001))_
 
 > Base Mental Power Cost=25 Distance=10 meters Area=One corpse Duration=Permanent Effect=Resurrect the deceased as a zombie Type=Non-removable, ritual Expansion=Distance, targets, target volume Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04001))_
+
+### Technical atom 37
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04002))_
 
 > Distance=Touch Area=One Duration=Permanent Effect=Put a curse on the target Type=Curse, target score Expansion=Final score Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04002))_
 
-> Context: according to the caster's commands, but due to their low intellect, they can only understand simple commands such as _kill anyone who enters this room_ or _dig a hole_ . See p. 215 for zombie details.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04016))_
+### Technical atom 38
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04016))_
+
+> according to the caster's commands, but due to their low intellect, they can only understand simple commands such as _kill anyone who enters this room_ or _dig a hole_ . See p. 215 for zombie details.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04017))_
 
 > If you wish, you can turn non-human animals, fae, youma, titans, mythical beasts, magical beasts, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04017))_
+
+### Technical atom 39
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04058))_
 
 > Base Mental Power Cost=24 Distance=30 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04058))_
+
+### Technical atom 40
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04059))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04059))_
+
+### Technical atom 41
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04060))_
 
 > Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04060))_
+
+### Technical atom 42
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04061))_
 
 > Effect=Hypnotize the target and make them move at will
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04061))_
+
+### Technical atom 43
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04062))_
 
 > Type=Mind
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04062))_
 
-> Context: This spell hypnotizes the opponent, rendering them unable to actively think. The caster can control the hypnotized subject at will. However, this _cannot_ be used to make them do intense movements such as combat, or casting magic. It can only be as much as making them walk slowly in the direction you want or bring you something in their hands. You also cannot give complex commands that require the person to judge the situation and have them carry them out. For example, if you were to command som
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04065))_
+### Technical atom 44
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04065))_
+
+> This spell hypnotizes the opponent, rendering them unable to actively think. The caster can control the hypnotized subject at will. However, this _cannot_ be used to make them do intense movements such as combat, or casting magic. It can only be as much as making them walk slowly in the direction you want or bring you something in their hands. You also cannot give complex commands that require the person to judge the situation and have them carry them out. For example, if you were to command som
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04063))_
 
 > Expansion=Final score, duration, distance, targets
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04063))_
 
-> Context: This spell hypnotizes the opponent, rendering them unable to actively think. The caster can control the hypnotized subject at will. However, this _cannot_ be used to make them do intense movements such as combat, or casting magic. It can only be as much as making them walk slowly in the direction you want or bring you something in their hands. You also cannot give complex commands that require the person to judge the situation and have them carry them out. For example, if you were to command som
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04065))_
+### Technical atom 45
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04065))_
+
+> This spell hypnotizes the opponent, rendering them unable to actively think. The caster can control the hypnotized subject at will. However, this _cannot_ be used to make them do intense movements such as combat, or casting magic. It can only be as much as making them walk slowly in the direction you want or bring you something in their hands. You also cannot give complex commands that require the person to judge the situation and have them carry them out. For example, if you were to command som
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04064))_
 
 > Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04064))_
+
+### Technical atom 46
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04065))_
 
 > This spell hypnotizes the opponent, rendering them unable to actively think. The caster can control the hypnotized subject at will. However, this _cannot_ be used to make them do intense movements such as combat, or casting magic. It can only be as much as making them walk slowly in the direction you want or bring you something in their hands. You also cannot give complex commands that require the person to judge the situation and have them carry them out. For example, if you were to command someone to _go to a certain house and steal some jewels_ , it wouldn’t be possible because those under the spell's influence wouldn't be able to think of a way to break into that house. Furthermore, you cannot command actions that directly encourage suicide. However, it _is_ possible to make someone walk off a cliff and fall to their death.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04065))_
 
-> Context: This spell hypnotizes the opponent, rendering them unable to actively think. The caster can control the hypnotized subject at will. However, this _cannot_ be used to make them do intense movements such as combat, or casting magic. It can only be as much as making them walk slowly in the direction you want or bring you something in their hands. You also cannot give complex commands that require the person to judge the situation and have them carry them out. For example, if you were to command som
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04065))_
+### Technical atom 47
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04065))_
+
+> This spell hypnotizes the opponent, rendering them unable to actively think. The caster can control the hypnotized subject at will. However, this _cannot_ be used to make them do intense movements such as combat, or casting magic. It can only be as much as making them walk slowly in the direction you want or bring you something in their hands. You also cannot give complex commands that require the person to judge the situation and have them carry them out. For example, if you were to command som
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04066))_
 
 > If you expand the effect and apply it to multiple targets at once, you can only give the _same_ command to _all_ targets.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04066))_
 
-> Context: This spell hypnotizes the opponent, rendering them unable to actively think. The caster can control the hypnotized subject at will. However, this _cannot_ be used to make them do intense movements such as combat, or casting magic. It can only be as much as making them walk slowly in the direction you want or bring you something in their hands. You also cannot give complex commands that require the person to judge the situation and have them carry them out. For example, if you were to command som
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04065))_
+### Technical atom 48
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04065))_
+
+> This spell hypnotizes the opponent, rendering them unable to actively think. The caster can control the hypnotized subject at will. However, this _cannot_ be used to make them do intense movements such as combat, or casting magic. It can only be as much as making them walk slowly in the direction you want or bring you something in their hands. You also cannot give complex commands that require the person to judge the situation and have them carry them out. For example, if you were to command som
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04068))_
 
 > Base Mental Power Cost=24 Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04068))_
+
+### Technical atom 49
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04069))_
 
 > Area=One object Duration=30 minutes
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04069))_
+
+### Technical atom 50
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04070))_
 
 > Effect=Decays the target Type=Target score, Non-removable Counters (Overpowers): _Preservation_ Countered (Overpowered) By: _Preservation_ Expansion=Final score, time reduction (see description)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04070))_
+
+### Technical atom 51
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04071))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04071))_
+
+### Technical atom 52
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04080))_
 
 > Base Mental Power Cost=40
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04080))_
+
+### Technical atom 53
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04081))_
 
 > Distance=30 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04081))_
+
+### Technical atom 54
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04082))_
 
 > Area=One body part Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04082))_
+
+### Technical atom 55
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04083))_
 
 > Effect=Take away an opponent's bodily freedom
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04083))_
+
+### Technical atom 56
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04084))_
 
 > Type=Curse, target score
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04084))_
 
-> Context: will be unable to see, hear, speak, or smell. As a result, it’ll be difficult to willingly take action.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04087))_
+### Technical atom 57
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04087))_
+
+> will be unable to see, hear, speak, or smell. As a result, it’ll be difficult to willingly take action.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04085))_
 
 > Expansion=Final score, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04085))_
 
-> Context: will be unable to see, hear, speak, or smell. As a result, it’ll be difficult to willingly take action.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04087))_
+### Technical atom 58
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04087))_
+
+> will be unable to see, hear, speak, or smell. As a result, it’ll be difficult to willingly take action.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04086))_
 
 > If you lose freedom of your arms, you won't be able to hold anything in those arms, and if you lose freedom of your legs, you will have difficulty moving, so you will suffer a -2 penalty on attack and evasion in combat, respectively.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04086))_
 
-> Context: This spell has the effect of taking away freedom of a part of the target's body, such as a limb, etc. Those who’ve had this spell cast on them will suffer various penalties depending on the body part. If you lose freedom of your arms, you won't be able to hold anything in those arms, and if you lose freedom of your legs, you will have difficulty moving, so you will suffer a -2 penalty on attack and evasion in combat, respectively. If freedom of your head is taken away, you
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04086))_
+### Technical atom 59
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04086))_
+
+> This spell has the effect of taking away freedom of a part of the target's body, such as a limb, etc. Those who’ve had this spell cast on them will suffer various penalties depending on the body part. If you lose freedom of your arms, you won't be able to hold anything in those arms, and if you lose freedom of your legs, you will have difficulty moving, so you will suffer a -2 penalty on attack and evasion in combat, respectively. If freedom of your head is taken away, you
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04089))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04089))_
+
+### Technical atom 60
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04090))_
 
 > Area=An area within a 1 kilometer radius from the caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04090))_
+
+### Technical atom 61
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04091))_
 
 > Duration=1 hour
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04091))_
+
+### Technical atom 62
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04092))_
 
 > Effect=Summon animals that represent a god Type=Target score Expansion=Final score, duration, area Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04092))_
+
+### Technical atom 63
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04099))_
 
 > Basic Mental Power Cost=45
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04099))_
+
+### Technical atom 64
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04100))_
 
 > Distance=Touch Area=One Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04100))_
+
+### Technical atom 65
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04101))_
 
 > Effect=Infect your opponent with a highly contagious plague
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04101))_
+
+### Technical atom 66
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04103))_
 
 > Expansion=Final score Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04103))_
+
+### Technical atom 67
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04110))_
 
 > Base Mental Power Cost=45
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04110))_
+
+### Technical atom 68
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04111))_
 
 > Distance=Touch Area=One sacrifice Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04111))_
+
+### Technical atom 69
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04112))_
 
 > Effect=Give a sacrificial body to a soul of the dead
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04112))_
+
+### Technical atom 70
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04113))_
 
 > Type=Ritual Expansion=Final score Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04113))_
+
+### Technical atom 71
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04118))_
 
 > Base Mental Power Cost=50
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04118))_
+
+### Technical atom 72
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04119))_
 
 > Distance=Touch Area=One sacrifice Duration=Permanent Effect=Summon a dark god Type=Target score, ritual Expansion=Final score Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04119))_
 
-> Context: This spell is almost the same as the holy magic of the same name, except for its duration and the fact that it summons a god (wicked god) into the body of a sacrifice rather than the caster. Even wicked gods who have lost contact with the material world will be able to use their full power if summoned with this
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04120))_
+### Technical atom 73
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04120))_
+
+> This spell is almost the same as the holy magic of the same name, except for its duration and the fact that it summons a god (wicked god) into the body of a sacrifice rather than the caster. Even wicked gods who have lost contact with the material world will be able to use their full power if summoned with this
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04123))_
 
 > If the person being sacrificed is close to a god (regardless of whether it's a god of light or a god of darkness), you can add +1 to +6 to the final score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04123))_
 
-> Context: Here is a list of special dark magic that can be used uniquely by each wicked god. Priests of wicked gods can use basic holy magic, basic dark magic, _and_ special dark magic created by their god.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04126))_
+### Technical atom 74
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04126))_
+
+> Here is a list of special dark magic that can be used uniquely by each wicked god. Priests of wicked gods can use basic holy magic, basic dark magic, _and_ special dark magic created by their god.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04128))_
 
 > **[ Evil Impulse ] (Spell Level=4)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04128))_
 
-> Context: Here is a list of special dark magic that can be used uniquely by each wicked god. Priests of wicked gods can use basic holy magic, basic dark magic, _and_ special dark magic created by their god.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04126))_
+### Technical atom 75
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04126))_
+
+> Here is a list of special dark magic that can be used uniquely by each wicked god. Priests of wicked gods can use basic holy magic, basic dark magic, _and_ special dark magic created by their god.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04129))_
 
 > Base Mental Power Cost=20 Distance=30 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04129))_
+
+### Technical atom 76
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04130))_
 
 > Area=One Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04130))_
+
+### Technical atom 77
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04131))_
 
 > Effect=Cause the target to impulsively commit evil acts
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04131))_
+
+### Technical atom 78
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04132))_
 
 > Type=Mind Expansion=Final score, duration, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04132))_
 
-> Context: This spell has the effect of amplifying the evil spirit that lies dormant in a person's heart. Targets that fail to resist will impulsively act in evil ways. What the target does depends on the situation at the moment and their desires. For example, if you think deep down _I want money_ , you’ll be tempted to steal it immediately.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04133))_
+### Technical atom 79
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04133))_
+
+> This spell has the effect of amplifying the evil spirit that lies dormant in a person's heart. Targets that fail to resist will impulsively act in evil ways. What the target does depends on the situation at the moment and their desires. For example, if you think deep down _I want money_ , you’ll be tempted to steal it immediately.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04136))_
 
 > **[ Insanity ] (Spell Level=1)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04136))_
+
+### Technical atom 80
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04137))_
 
 > Base Mental Power Cost=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04137))_
+
+### Technical atom 81
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04138))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04138))_
+
+### Technical atom 82
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04139))_
 
 > Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04139))_
+
+### Technical atom 83
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04140))_
 
 > Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04140))_
+
+### Technical atom 84
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04141))_
 
 > Effect=Take away the target's sanity
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04141))_
+
+### Technical atom 85
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04142))_
 
 > Type=Mind
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04142))_
+
+### Technical atom 86
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04143))_
 
 > Expansion=Final score, duration, distance, targets
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04143))_
 
-> Context: Most of the time, they will only be rendered useless, but only when they roll 2D again and the result is double ones, they will go berserk with madness and engage in destructive acts. In this case, they will be in the same state as when _Berserk_ is cast, described below. Please refer to _Berserk_ for handling.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04146))_
+### Technical atom 87
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04146))_
+
+> Most of the time, they will only be rendered useless, but only when they roll 2D again and the result is double ones, they will go berserk with madness and engage in destructive acts. In this case, they will be in the same state as when _Berserk_ is cast, described below. Please refer to _Berserk_ for handling.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04144))_
 
 > Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04144))_
 
-> Context: Most of the time, they will only be rendered useless, but only when they roll 2D again and the result is double ones, they will go berserk with madness and engage in destructive acts. In this case, they will be in the same state as when _Berserk_ is cast, described below. Please refer to _Berserk_ for handling.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04146))_
+### Technical atom 88
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04146))_
+
+> Most of the time, they will only be rendered useless, but only when they roll 2D again and the result is double ones, they will go berserk with madness and engage in destructive acts. In this case, they will be in the same state as when _Berserk_ is cast, described below. Please refer to _Berserk_ for handling.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04147))_
 
 > **[ Berserk ] (Spell Level=3)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04147))_
 
-> Context: Most of the time, they will only be rendered useless, but only when they roll 2D again and the result is double ones, they will go berserk with madness and engage in destructive acts. In this case, they will be in the same state as when _Berserk_ is cast, described below. Please refer to _Berserk_ for handling.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04146))_
+### Technical atom 89
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04146))_
+
+> Most of the time, they will only be rendered useless, but only when they roll 2D again and the result is double ones, they will go berserk with madness and engage in destructive acts. In this case, they will be in the same state as when _Berserk_ is cast, described below. Please refer to _Berserk_ for handling.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04148))_
 
 > Base Mental Power Cost=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04148))_
 
-> Context: Most of the time, they will only be rendered useless, but only when they roll 2D again and the result is double ones, they will go berserk with madness and engage in destructive acts. In this case, they will be in the same state as when _Berserk_ is cast, described below. Please refer to _Berserk_ for handling.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04146))_
+### Technical atom 90
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04146))_
+
+> Most of the time, they will only be rendered useless, but only when they roll 2D again and the result is double ones, they will go berserk with madness and engage in destructive acts. In this case, they will be in the same state as when _Berserk_ is cast, described below. Please refer to _Berserk_ for handling.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04149))_
 
 > Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04149))_
+
+### Technical atom 91
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04150))_
 
 > Area=One Duration=18 rounds Effect=Make the target go berserk Type=Mind
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04150))_
 
-> Context: Those who have this spell cast on them and fail to resist will go berserk and feel an urge to destroy everything nearby. Even the caster is not safe from the target. As a result, they will destroy property within sight and blindly attack creatures, regardless of friend or foe. At this time, their attack power and bonus damage will be +2, and their evasion speed will be -4. They also become indifferent to wounds and pain and ignore the risks of injury or life. Also, if no one is around, they will
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04153))_
+### Technical atom 92
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04153))_
+
+> Those who have this spell cast on them and fail to resist will go berserk and feel an urge to destroy everything nearby. Even the caster is not safe from the target. As a result, they will destroy property within sight and blindly attack creatures, regardless of friend or foe. At this time, their attack power and bonus damage will be +2, and their evasion speed will be -4. They also become indifferent to wounds and pain and ignore the risks of injury or life. Also, if no one is around, they will
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04152))_
 
 > Expansion=Final score, duration Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04152))_
+
+### Technical atom 93
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04154))_
 
 > The first time it becomes 0 or less, and each time you receive a new wound, you must make a death check, and if you fail, you will die.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04154))_
+
+### Technical atom 94
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04156))_
 
 > Base Mental Power Cost=20 Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04156))_
+
+### Technical atom 95
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157))_
 
 > Area=One Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157))_
+
+### Technical atom 96
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04158))_
 
 > Effect=Plant the seeds of madness in the opponent's mind Type=Mind, curse Expansion=Final score Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04158))_
+
+### Technical atom 97
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04161))_
 
 > Base Mental Power Cost=25
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04161))_
+
+### Technical atom 98
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04163))_
 
 > Area=Anyone within the caster's view Duration=12 hours + until focus and dancing ends
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04163))_
+
+### Technical atom 99
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04164))_
 
 > Effect=Causes 12 hours of madness to anyone who watches the dance
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04164))_
+
+### Technical atom 100
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04165))_
 
 > Type=Focus, mind Expansion=Final score, effect time (see description) Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04165))_
 
-> Context: **Kardis Special Dark Magic List [ Death ] (Spell Level=9)**
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04169))_
+### Technical atom 101
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04169))_
+
+> **Kardis Special Dark Magic List [ Death ] (Spell Level=9)**
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04170))_
 
 > Base Mental Power Cost=45 Distance=10 meters Area=One Duration=Instant Effect=Instantly kill the target Type=Expansion=Final score, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04170))_
 
-> Context: A terrifying death spell created by the power of the goddess of death, Kardis. A target who has this spell cast on them and fails a resistance roll will die instantly. It has no effect on things that do not have normal life, such as undead, magical creatures etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04171))_
+### Technical atom 102
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04171))_
+
+> A terrifying death spell created by the power of the goddess of death, Kardis. A target who has this spell cast on them and fails a resistance roll will die instantly. It has no effect on things that do not have normal life, such as undead, magical creatures etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04174))_
 
 > Base Mental Power Cost=30 Distance=Touch
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04174))_
+
+### Technical atom 103
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04175))_
 
 > Area=One ship Duration=Permanent Effect=Makes a ship into a ghost ship Type=Non-removable Counters (Overpowers): _Sink_ Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04175))_
+
+### Technical atom 104
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04176))_
 
 > When this spell is cast on a ship, it will never sink, no matter how much it rots, as long as it only carries as much weight as the original ship could support.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04176))_

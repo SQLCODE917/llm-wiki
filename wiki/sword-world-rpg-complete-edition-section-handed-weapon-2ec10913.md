@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-handed-weapon-2ec10913@66bff119be02147c4959d6aab6374e7a
+projection_coverage: section-sword-world-rpg-complete-edition-section-handed-weapon-2ec10913@66a35fe02b34f66b2024907cc669ee4e
 ---
 
 # **Handed Weapon**
@@ -23,8 +23,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))_
+
+> To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00433))_
 
 | **Table 1-8: Weapons-2** |
 | --- |
@@ -60,10 +65,13 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00431))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00433))_
 
-> Context: Return a weapon in your hand to its sheath, etc. and ready a _different_ weapon. Only _one_ can be switched out. For example, if you have a sword and a shield, you _cannot_ return them both and ready a different weapon.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00801))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00801))_
+
+> Return a weapon in your hand to its sheath, etc. and ready a _different_ weapon. Only _one_ can be switched out. For example, if you have a sword and a shield, you _cannot_ return them both and ready a different weapon.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00802))_
 
 > If you do have a sword and a shield, you can drop _one_ of them on the ground, return the _other_ one, then ready a different weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00802))_

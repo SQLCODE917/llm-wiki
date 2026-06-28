@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-paper-9c4b51fb@457e0d85c226023fc2439ef8eb84f3f2
+projection_coverage: section-sword-world-rpg-complete-edition-section-paper-9c4b51fb@bc59e4d72d4dfbbce7666a643ab42ef4
 ---
 
 # **[ Paper ]**
@@ -21,20 +21,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08068))_
+
 > Defense points = 0~3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08068))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08069))_
 
 > Destruction points = 1~10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08069))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08070))_
 
 > Complete immunity = Poison Gas-Type magic No Criticals = Bow, crossbow, cold-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08070))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08071))_
 
 > Normal = Swords, spears, axes, maces, flails, slings, rocks, war hammers, barehanded, stone-type, wind cuttertype, blade-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08071))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08072))_
 
 > Ignore Defense Points = Fire-type, electrictype, explosion-type, pure energy-type magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08072))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08073))_
 
 > Special = If you cast " _Fire Weapon_ " magic, strike power will become +20, and even weapons that cannot cause criticals will now be able to cause criticals.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08073))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-distance-caster-b90ec603@5dd158cdea099a12f42c96635ed6cae0
+projection_coverage: section-sword-world-rpg-complete-edition-section-distance-caster-b90ec603@283839846f60ae35e6b41121fbd2512c
 ---
 
 # Distance=Caster
@@ -21,11 +21,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02980))_
+
 > Area=A space within a 10 meter radius from the caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02980))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02981))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02981))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02982))_
 
 > Effect=Causes an explosion centered on the caster, dealing strike power 30 damage Type=Damage (Explosion-type) Expansion=Final score, area, damage certainty Resist=Reduced effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02982))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-unknown-a996db43@da1beeee1d8479a4fe684e90719eb44d
+projection_coverage: section-sword-world-rpg-complete-edition-section-enchanter-unknown-a996db43@7e7b77be15b66c386a13850478874f39
 ---
 
 # Enchanter=Unknown
@@ -31,14 +31,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07360))_
+
 > Form=A beautifully carved wooden mage’s staff
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07360))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07361))_
 
 > Required Strength=5 (Strike power 10) Base Trade Price=20,000 gamels Powers=Can store one spell
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07361))_
 
-> Context: This staff can be pre-imbued with magic that activates either when a specific password is spoken or after a predetermined time has elapsed. The spells that can be stored in this staff are limited to ancient magic with a consumed mental power (not the base mental power cost) of 3 or less. In other words, as a sorcerer reaches higher levels, they become capable of storing more powerful spells. To store a spell in this staff, you must expend the same amount of mental power as casting the spell norm
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07362))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07362))_
+
+> This staff can be pre-imbued with magic that activates either when a specific password is spoken or after a predetermined time has elapsed. The spells that can be stored in this staff are limited to ancient magic with a consumed mental power (not the base mental power cost) of 3 or less. In other words, as a sorcerer reaches higher levels, they become capable of storing more powerful spells. To store a spell in this staff, you must expend the same amount of mental power as casting the spell norm
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07363))_
 
 > While this staff can be used as a normal magical catalyst, it provides no bonus when used as a weapon.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07363))_

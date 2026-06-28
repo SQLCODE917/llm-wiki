@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-perception-five-senses-sonar-b2c89027@9c7e3395a8d8313373a2a9763f7d0868
+projection_coverage: section-sword-world-rpg-complete-edition-section-perception-five-senses-sonar-b2c89027@85a9d301f378eb79484f2296e44f01c9
 ---
 
 # Perception=Five senses (sonar)
@@ -22,8 +22,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Evasion Points=11 (4) Defense Points=3 Life Points/Resistance=7/8 (1) Mental Points/Resistance=6/8 (1) Special Abilities=Disease (Intensity 6) Opponent’s attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. Languages=None
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05782))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05782))_
+
+> Evasion Points=11 (4) Defense Points=3 Life Points/Resistance=7/8 (1) Mental Points/Resistance=6/8 (1) Special Abilities=Disease (Intensity 6) Opponent’s attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. Languages=None
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05784))_
 
 > They are sensitive to light, and if an adventurer with a light carelessly enters the nest, they may blindly attack in groups.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05784))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ice-blaze-wand-c3918a31@7f33f73eafcf758c0cb4bbfb6c1c0c8e
+projection_coverage: section-sword-world-rpg-complete-edition-section-ice-blaze-wand-c3918a31@5324efcea3c012e1dcfb6769172165c5
 ---
 
 # **[ Ice Blaze Wand ]**
@@ -23,17 +23,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: When thrown, a 20 meter bolt of lightning, equivalent to _Lightning_ , runs in that direction, dealing strike power 20 damage to those in its path. Its magic power is 3 and breaks after one use.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07328))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07328))_
+
+> When thrown, a 20 meter bolt of lightning, equivalent to _Lightning_ , runs in that direction, dealing strike power 20 damage to those in its path. Its magic power is 3 and breaks after one use.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07331))_
 
 > Rarity=11
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07331))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07332))_
 
 > Enchanter=Ladios, "The Sage of the Seabed" Form=Silver wand with a white crystal set in the tip
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07332))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07333))_
 
 > Base Trade Price=Number of uses x 2,400 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07333))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07334))_
 
 > Powers=Throws blades of ice to attack the target.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07334))_

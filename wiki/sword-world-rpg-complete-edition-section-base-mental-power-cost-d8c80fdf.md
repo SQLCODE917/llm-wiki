@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-base-mental-power-cost-d8c80fdf@10e22bf594ca3c2d699f99c8188be795
+projection_coverage: section-sword-world-rpg-complete-edition-section-base-mental-power-cost-d8c80fdf@d21276f6f425839c080477ec6e5824c9
 ---
 
 # 《 **Base Mental Power Cost** 》
@@ -20,6 +20,10 @@ From [[sword-world-rpg-complete-edition]].
 - As previously explained, this base mental power cost divided by the corresponding rune master skill level equals the actual mental power consumed by the caster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01519))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -53,4 +57,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

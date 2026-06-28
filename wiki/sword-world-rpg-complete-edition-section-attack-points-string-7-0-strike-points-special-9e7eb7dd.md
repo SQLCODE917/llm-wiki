@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-attack-points-string-7-0-strike-points-special-9e7eb7dd@35a471b26c947c5f79b48d32150a5787
+projection_coverage: section-sword-world-rpg-complete-edition-section-attack-points-string-7-0-strike-points-special-9e7eb7dd@cd398438acfe6959afbd9de74004e524
 ---
 
 # Attack Points=String:7 (0) Strike Points=Special
@@ -24,20 +24,36 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05991))_
+
 > Evasion Points=9 (2) Defense Points=3 Life Points/Resistance=10/8 (1) Mental Points/Resistance=1/7 (0) Special Abilities=Capture with string
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05991))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05992))_
 
 > Mental attack immunity Habitat=Forests, underground labyrinths Languages=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05992))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05993))_
 
 > Perception=Five senses (Vibration sense)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05993))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05994))_
 
 > They usually feed on small animals such as rabbits, but if they can’t stand their hunger they may attack larger creatures than themselves such as humans, etc.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05994))_
 
-> Context: Giant spiders are large spiders with a body length of about 50 cm. They usually feed on small animals such as rabbits, but if they can’t stand their hunger they may attack larger creatures than themselves such as humans, etc. They do not build webs, nor are they poisonous.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05994))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05994))_
+
+> Giant spiders are large spiders with a body length of about 50 cm. They usually feed on small animals such as rabbits, but if they can’t stand their hunger they may attack larger creatures than themselves such as humans, etc. They do not build webs, nor are they poisonous.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05995))_
 
 > If hit by the string attack, an adventurer will become entangled and lose their freedom of movement.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05995))_

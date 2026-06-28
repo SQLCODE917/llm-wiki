@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-card-of-power-b521d067@96d37c20ff9640a2db35f18ea439e8a7
+projection_coverage: section-sword-world-rpg-complete-edition-section-card-of-power-b521d067@e0c2264e15171967925214db86872329
 ---
 
 # **[ Card of Power ]**
@@ -25,14 +25,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07449))_
+
 > Rarity=13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07449))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07450))_
 
 > Enchanter=Void, "The Immoral Summoning Sorcerer"
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07450))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07451))_
 
 > Form=Palm-sized card of unknown material Base Trade Price=Magic’s base mental power cost x 320 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07451))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07452))_
 
 > Powers=User can use various ancient magic
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07452))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ballista-479fe82e@f3446fe5d85e09f336e97990b907c9e9
+projection_coverage: section-sword-world-rpg-complete-edition-section-ballista-479fe82e@f18c8cfd3aad582c80f70f3c8ba7f5b6
 ---
 
 # **Ballista**
@@ -28,5 +28,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07950))_
+
 > With 2~3 characters, when the _total_ strength of the characters reaches the _required strength_ , it can be wound up in _three_ rounds.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07950))_

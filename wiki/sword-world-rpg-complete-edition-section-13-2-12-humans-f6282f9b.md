@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-12-humans-f6282f9b@33485dd64ae3a342e5e123a6bc80ccee
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-12-humans-f6282f9b@2f3cd2086fe239fca341fb93588eb09e
 ---
 
 # 13.2.12 Humans
@@ -81,8 +81,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, source-range-870a16bc-00360))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, source-range-870a16bc-00360))_
+
+> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00358))_
 
 | Race | Restrictions／Special Abilities | Pre-Adventure<br>Exp. Pts. | Money |
 | --- | --- | --- | --- |
@@ -106,70 +111,127 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, 
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00358))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06622))_
 
 > Habitat=Underground labyrinths, secluded ruins
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06622))_
 
-> Context: A maligdorai’s most frightening ability is _illusion_ . The maligdorai can show illusions to surrounding creatures, dealing damage to their minds (these illusions have no effect on monsters that don't have mental points). When a maligdorai uses this illusion ability, those being targeted must make a mental power resistance roll against target score 17 at the beginning of the round. If the target succeeds, they will escape the effect and can act freely, but if the target fails to resist, they wil
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06625))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06625))_
+
+> A maligdorai’s most frightening ability is _illusion_ . The maligdorai can show illusions to surrounding creatures, dealing damage to their minds (these illusions have no effect on monsters that don't have mental points). When a maligdorai uses this illusion ability, those being targeted must make a mental power resistance roll against target score 17 at the beginning of the round. If the target succeeds, they will escape the effect and can act freely, but if the target fails to resist, they wil
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06623))_
 
 > Languages=Low ancient Perception=Five senses (Darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06623))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06625))_
 
 > When a maligdorai uses this illusion ability, those being targeted must make a mental power resistance roll against target score 17 at the beginning of the round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06625))_
 
-> Context: A maligdorai can also show illusions to multiple creatures within its vision at the same time, but it must focus in order to perform the illusions. If its focus is interrupted or it’s unable to focus due to making physical attacks, suffering damage, etc., then it cannot maintain its illusions. Illusions cannot be used in the round immediately after suffering damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06628))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06628))_
+
+> A maligdorai can also show illusions to multiple creatures within its vision at the same time, but it must focus in order to perform the illusions. If its focus is interrupted or it’s unable to focus due to making physical attacks, suffering damage, etc., then it cannot maintain its illusions. Illusions cannot be used in the round immediately after suffering damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06629))_
 
 > Conversely, while the maligdorai is performing an illusion, the target must make a resistance roll against the illusion each round.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06629))_
 
-> Context: Conversely, while the maligdorai is performing an illusion, the target must make a resistance roll against the illusion each round.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06629))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06629))_
+
+> Conversely, while the maligdorai is performing an illusion, the target must make a resistance roll against the illusion each round.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06631))_
 
 > Monster Level=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06631))_
 
-> Context: Conversely, while the maligdorai is performing an illusion, the target must make a resistance roll against the illusion each round.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06629))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06629))_
+
+> Conversely, while the maligdorai is performing an illusion, the target must make a resistance roll against the illusion each round.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06632))_
 
 > Rarity=16 Agility=14 Movement Speed=18 Number=One Frequency=Very rare Intellect=High Reaction=Adversarial Attack Points=Claws: 18 (11)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06632))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06633))_
 
 > Strike Points=20
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06633))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06634))_
 
 > Evasion Points=16 (9) Defense Points=14 Life Points/Resistance=34/21 (14) Mental Points/Resistance=28/20 (13) Special Abilities=7th level ancient magic (magic intensity/magic power=16/9) Shapeshift
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06634))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06635))_
 
 > Habitat=Underground labyrinths, secluded ruins
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06635))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06636))_
 
 > Languages=Low ancient, languages of the person it shapeshifts into Perception=Five senses (Darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06636))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06639))_
 
 > A doppelganger who has copied the abilities and memories of an opponent can use _all_ of their abilities.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06639))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06644))_
 
 > Monster Level=0
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06644))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06645))_
 
 > Rarity=- (Everyone knows them) Agility=10 Movement Speed=10 Number=One to hundreds Frequency=Frequent Intellect=Human Reaction=Friendly Attack Points=Farming Tools:7 (0) Strike Points=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06645))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06646))_
 
 > Evasion Points=8 (1) Defense Points=2 Life Points/Resistance=10/8 (1) Mental Points/Resistance=10/8 (1) Special Abilities=None in particular Habitat=Human villages Languages=Regional Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06646))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06658))_
 
 > Monster Level=3 Rarity=5 Agility=12 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Weapon: 10 (3) Strike Points=7 Evasion Points=11 (4) Defense Points=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06658))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06659))_
 
 > Life Points/Resistance=12/11 (4) Mental Points/Resistance=12/11 (4) Special Abilities=None in particular Habitat=Human villages, fields and hills near roads
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06659))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06660))_
 
 > Languages=Regional Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06660))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06668))_
 
 > Monster Level=3 Rarity=5 Agility=13 Movement Speed=13 Number=One to several
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06668))_

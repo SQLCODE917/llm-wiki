@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dog-59e44dab@0517ad85ba189d4480a0ca5caba4f7b4
+projection_coverage: section-sword-world-rpg-complete-edition-section-dog-59e44dab@3a65b24f213e9e5f04bb101c081cf5ef
 ---
 
 # **[ Dog ]**
@@ -29,20 +29,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Monster data is written in the following format. Dogs have a habit of following their leaders, and humans have taken advantage of this habit to use dogs for various purposes. Dogs react to humans in a variety of ways. If they are domesticated, they will not attack humans because they consider humans to be their masters. However, special guard dogs, military dogs, etc. that have been trained to treat all but specific people as enemies will attack even humans larger than themselves. Dogs are espec
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04860, source-range-870a16bc-04865))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04860, source-range-870a16bc-04865))_
+
+> Monster data is written in the following format. Dogs have a habit of following their leaders, and humans have taken advantage of this habit to use dogs for various purposes. Dogs react to humans in a variety of ways. If they are domesticated, they will not attack humans because they consider humans to be their masters. However, special guard dogs, military dogs, etc. that have been trained to treat all but specific people as enemies will attack even humans larger than themselves. Dogs are espec
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04863))_
 
 > If you want to include small or large dogs in your game, the game master should increase or
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04863))_
 
-> Context: decrease the scores listed here by 1 or 2 points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04864))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04864))_
+
+> decrease the scores listed here by 1 or 2 points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04865))_
 
 > If they're hungry and think their opponent is weak, they may attack.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04865))_
 
-> Context: decrease the scores listed here by 1 or 2 points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04864))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04864))_
+
+> decrease the scores listed here by 1 or 2 points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04865))_
 
 > Dogs have a habit of following their leaders, and humans have taken advantage of this habit to use dogs for various purposes. Dogs react to humans in a variety of ways. If they are domesticated, they will not attack humans because they consider humans to be their masters. However, special guard dogs, military dogs, etc. that have been trained to treat all but specific people as enemies will attack even humans larger than themselves. Dogs are especially aggressive towards intruders-they also have a strong sense of territory. If it's a wild dog that's not owned by humans, it will act according to its own instincts. If they're hungry and think their opponent is weak, they may attack.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04865))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-4-how-to-use-magic-4bc80385@a29d203aa04de73c7a690b0f714a6f47
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-4-how-to-use-magic-4bc80385@5a26b98f80a6585a7f96852f0ccc438f
 ---
 
 # 5.1.4 How to Use Magic
@@ -98,149 +98,250 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> He cannot use any ancient magic, nor any holy magic of 2nd level or higher, nor any spirit magic of 3rd level or higher.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01214))_
+### Technical atom 1
 
-> Context: For those who have acquired multiple rune master skills, consider the level of spells you can use for each type of magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01233))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01214))_
+
+> He cannot use any ancient magic, nor any holy magic of 2nd level or higher, nor any spirit magic of 3rd level or higher.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01233))_
+
+> For those who have acquired multiple rune master skills, consider the level of spells you can use for each type of magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01234))_
 
 > **magic power** = magic skill level + intelligence bonus
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01234))_
 
-> Context: The procedure for an adventurer to use _non-resistible_ magic is as follows: That's all. If the result is anything other than double ones, the magic takes effect. If it _is_ double ones, then for some reason (the spell was inaccurate, etc.) the magic takes _no_ effect at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01246, source-range-870a16bc-01251))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01246, source-range-870a16bc-01251))_
+
+> The procedure for an adventurer to use _non-resistible_ magic is as follows: That's all. If the result is anything other than double ones, the magic takes effect. If it _is_ double ones, then for some reason (the spell was inaccurate, etc.) the magic takes _no_ effect at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01249))_
 
 > Magic that is _resistible_ can be rendered ineffective or less effective if the target chooses to **resist** .
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01249))_
 
-> Context: Declare which magic you’re using, then roll 2D.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01250))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01250))_
+
+> Declare which magic you’re using, then roll 2D.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01251))_
 
 > If the result is anything other than double ones, the magic takes effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01251))_
 
-> Context: This distinction will be specified for each spell in the spell lists that follow.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01252))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01252))_
+
+> This distinction will be specified for each spell in the spell lists that follow.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01254))_
 
 > When attempting to cast _resistible_ magic on a monster, the caster must determine whether their opponent can resist it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01254))_
 
-> Context: When attempting to cast _resistible_ magic on a monster, the caster must determine whether their opponent can resist it. You must make a success roll using _caster’s magic power_ as the baseline score and the monster’s **mental point resistance** as the target score. If _2D roll + magic power_ is greater than or equal to the monster’s resistance score, the magic will be cast with its full effect. If the resistance score is _not_ met, the magic will _not_ work or will only have a _weak_ effect. I
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01254))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01254))_
+
+> When attempting to cast _resistible_ magic on a monster, the caster must determine whether their opponent can resist it. You must make a success roll using _caster’s magic power_ as the baseline score and the monster’s **mental point resistance** as the target score. If _2D roll + magic power_ is greater than or equal to the monster’s resistance score, the magic will be cast with its full effect. If the resistance score is _not_ met, the magic will _not_ work or will only have a _weak_ effect. I
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01255))_
 
 > If the 2D roll comes up _double sixes_ , the magic automatically succeeds and will take its full effect, no matter how high the monster’s mental point resistance (except for when the magic _itself_ has no effect on that monster.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01255))_
 
-> Context: Consider an adventurer with shaman skill level 2 and a +2 intelligence bonus (magic power 4) who casts the _Fire Bolt_ spell, which shoots a flaming bullet at the opponent, on a goblin (mental point resistance 9).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01257))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01257))_
+
+> Consider an adventurer with shaman skill level 2 and a +2 intelligence bonus (magic power 4) who casts the _Fire Bolt_ spell, which shoots a flaming bullet at the opponent, on a goblin (mental point resistance 9).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01258))_
 
 > _Fire Bolt_ is _resistible_ magic, so if it’s _resisted_ by the opponent, its effect will be reduced.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01258))_
 
-> Context: Consider an adventurer with shaman skill level 2 and a +2 intelligence bonus (magic power 4) who casts the _Fire Bolt_ spell, which shoots a flaming bullet at the opponent, on a goblin (mental point resistance 9).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01257))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01257))_
+
+> Consider an adventurer with shaman skill level 2 and a +2 intelligence bonus (magic power 4) who casts the _Fire Bolt_ spell, which shoots a flaming bullet at the opponent, on a goblin (mental point resistance 9).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01259))_
 
 > In this case, the adventurer (the player controlling them) must make a success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01259))_
 
-> Context: Roll of 5 or greater: _Fire Bolt_ takes its full effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01262))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01262))_
+
+> Roll of 5 or greater: _Fire Bolt_ takes its full effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01263))_
 
 > Roll of 3-4: _Fire Bolt_ takes an incomplete effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01263))_
 
-> Context: Roll of 2 (double ones): _Fire Bolt_ does not work at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01264))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01264))_
+
+> Roll of 2 (double ones): _Fire Bolt_ does not work at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01265))_
 
 > magic power + 2D ≥ monster's mental point resistance → **magic takes full effect**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01265))_
 
-> Context: Roll of 2 (double ones): _Fire Bolt_ does not work at all.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01264))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01264))_
+
+> Roll of 2 (double ones): _Fire Bolt_ does not work at all.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01267))_
 
 > When the 2D roll is _double sixes_ , the magic will _automatically_ take its _full_ effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01267))_
 
-> Context: When the 2D roll is _double sixes_ , the magic will _automatically_ take its _full_ effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01267))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01267))_
+
+> When the 2D roll is _double sixes_ , the magic will _automatically_ take its _full_ effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01268))_
 
 > When the 2D roll is _double ones_ , the magic _unconditionally_ takes _no_ effect at all.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01268))_
 
-> Context: First, in the case of _non-resistible_ magic, a monster can _never_ fail. There is no need to roll the dice, as the magic will _definitely_ take its effect. In the case of _resistible_ magic, the issue is resolved from the perspective of whether the adventurer is able to resist the magic cast by the monster. This is determined by a success roll using the character's _mental power resistance_ , that is, a _mental power resistance roll_ . The target score is a score called the monster’s **magic in
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01271))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01271))_
+
+> First, in the case of _non-resistible_ magic, a monster can _never_ fail. There is no need to roll the dice, as the magic will _definitely_ take its effect. In the case of _resistible_ magic, the issue is resolved from the perspective of whether the adventurer is able to resist the magic cast by the monster. This is determined by a success roll using the character's _mental power resistance_ , that is, a _mental power resistance roll_ . The target score is a score called the monster’s **magic in
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01272))_
 
 > If the adventurer's final score ( _mental power resistance + 2D_ ) is equal to or greater than the monster's _magic intensity_ , the monster's magic will only take an incomplete effect (some magic will take no effect at all).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01272))_
 
-> Context: Also, since this is considered a success roll, it’ll be an _automatic failure_ if the 2D roll is _double ones_ . No matter how high the adventurer's mental power
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01273))_
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01273))_
+
+> Also, since this is considered a success roll, it’ll be an _automatic failure_ if the 2D roll is _double ones_ . No matter how high the adventurer's mental power
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01276))_
 
 > Ducard II, Ducard II must make a mental power resistance roll (baseline score 4, target score 13).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01276))_
 
-> Context: Roll is 8 or less: failed resist. _Fire Bolt_ takes its full effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01278))_
+### Technical atom 15
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01278))_
+
+> Roll is 8 or less: failed resist. _Fire Bolt_ takes its full effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01279))_
 
 > mental power resistance + 2D ≥ monster's magic intensity → **magic takes an incomplete effect (some take no effect at all)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01279))_
 
-> Context: Roll is 8 or less: failed resist. _Fire Bolt_ takes its full effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01278))_
+### Technical atom 16
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01278))_
+
+> Roll is 8 or less: failed resist. _Fire Bolt_ takes its full effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01280))_
 
 > *In this way, when making a _resistible_ magic check, you can also call it a _successful resist_ or _failed resist_ from the perspective of the one being affected by the magic.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01280))_
 
-> Context: Just like player characters, even those whose data was created for a character may appear as an enemy. If such an enemy casts magic on an adventurer, or if an adventurer casts magic on such an enemy, both sides must roll dice to resolve the situation, just as in weapon combat between adventurers.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01288))_
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01288))_
+
+> Just like player characters, even those whose data was created for a character may appear as an enemy. If such an enemy casts magic on an adventurer, or if an adventurer casts magic on such an enemy, both sides must roll dice to resolve the situation, just as in weapon combat between adventurers.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01289))_
 
 > If the score of the one casting the magic is greater, the magic will take _full_ effect, but if there is a tie or if the score of the one on whom the magic is being cast is greater, the magic is _resisted_ and will only take an _incomplete_ effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01289))_
 
-> Context: Just like player characters, even those whose data was created for a character may appear as an enemy. If such an enemy casts magic on an adventurer, or if an adventurer casts magic on such an enemy, both sides must roll dice to resolve the situation, just as in weapon combat between adventurers.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01288))_
+### Technical atom 18
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01288))_
+
+> Just like player characters, even those whose data was created for a character may appear as an enemy. If such an enemy casts magic on an adventurer, or if an adventurer casts magic on such an enemy, both sides must roll dice to resolve the situation, just as in weapon combat between adventurers.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01291))_
 
 > When the one casting the magic rolls _double ones_ , the magic takes _no_ effect at all.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01291))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01292))_
 
 > When the resisting side rolls _double ones_ , the resist _fails_ , unless the side casting the magic _also_ rolls double ones.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01292))_
+
+### Technical atom 20
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01298))_
 
 > The player must roll the dice and make a check for each monster.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01298))_
 
-> Context: The player must roll the dice and make a check for each monster.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01298))_
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01298))_
+
+> The player must roll the dice and make a check for each monster.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01301))_
 
 > 1st goblin: 5 (magic power) + 6 (roll) = 11 ≥ 9 (mental point resistance), full effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01301))_
 
-> Context: 1st goblin: 5 (magic power) + 6 (roll) = 11 ≥ 9 (mental point resistance), full effect. 3rd goblin: The result is double ones, so no effect
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01301, source-range-870a16bc-01304))_
+### Technical atom 22
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01301, source-range-870a16bc-01304))_
+
+> 1st goblin: 5 (magic power) + 6 (roll) = 11 ≥ 9 (mental point resistance), full effect. 3rd goblin: The result is double ones, so no effect
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01302))_
 
 > If there are multiple targets in the path of the lightning bolt, you must make a check for each one’s attempt to resist.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01302))_
 
-> Context: Suppose an adventurer with sorcerer skill level 3 and a +2 intelligence bonus (magic power 5) casts the spell _Lightning_ . _Lightning_ is a spell that shoots a bolt of lightning, dealing damage to everything in its path. If there are multiple targets in the path of the lightning bolt, you must make a check for each one’s attempt to resist. 3rd goblin: The result is double ones, so no effect
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01302, source-range-870a16bc-01304))_
+### Technical atom 23
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01302, source-range-870a16bc-01304))_
+
+> Suppose an adventurer with sorcerer skill level 3 and a +2 intelligence bonus (magic power 5) casts the spell _Lightning_ . _Lightning_ is a spell that shoots a bolt of lightning, dealing damage to everything in its path. If there are multiple targets in the path of the lightning bolt, you must make a check for each one’s attempt to resist. 3rd goblin: The result is double ones, so no effect
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01303))_
 
 > 2nd goblin: 5 (magic power) + 3 (roll) = 8 < 9 (mental point resistance), incomplete effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01303))_
 
-> Context: 2nd goblin: 5 (magic power) + 3 (roll) = 8 < 9 (mental point resistance), incomplete effect.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01303))_
+### Technical atom 24
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01303))_
+
+> 2nd goblin: 5 (magic power) + 3 (roll) = 8 < 9 (mental point resistance), incomplete effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01305))_
 
 > Goblin lord: 5 (magic power) + 6 (roll) = 11 < 12 (mental point resistance), incomplete effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01305))_
 
-> Context: Goblin lord: 5 (magic power) + 6 (roll) = 11 < 12 (mental point resistance), incomplete effect. If the rolls against the three goblins were _6_ , _3_ , and _2_ (double ones!), and the roll against the goblin lord was _6_ , then the result would look like this:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01305, source-range-870a16bc-01308))_
+### Technical atom 25
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01305, source-range-870a16bc-01308))_
+
+> Goblin lord: 5 (magic power) + 6 (roll) = 11 < 12 (mental point resistance), incomplete effect. If the rolls against the three goblins were _6_ , _3_ , and _2_ (double ones!), and the roll against the goblin lord was _6_ , then the result would look like this:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01306))_
 
 > The player rolls the dice four times and for each one must determine whether the magic breaks through the resist and takes its full effect.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01306))_
 
-> Context: Suppose there are three goblins (each with a mental point resistance of 9) and one goblin lord (mental point resistance 12) in this space. The player rolls the dice four times and for each one must determine whether the magic breaks through the resist and takes its full effect. If the rolls against the three goblins were _6_ , _3_ , and _2_ (double ones!), and the roll against the goblin lord was _6_ , then the result would look like this:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01306, source-range-870a16bc-01308))_
+### Technical atom 26
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01306, source-range-870a16bc-01308))_
+
+> Suppose there are three goblins (each with a mental point resistance of 9) and one goblin lord (mental point resistance 12) in this space. The player rolls the dice four times and for each one must determine whether the magic breaks through the resist and takes its full effect. If the rolls against the three goblins were _6_ , _3_ , and _2_ (double ones!), and the roll against the goblin lord was _6_ , then the result would look like this:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01307))_
 
 > When rolling the dice, you must clearly declare which target the dice are meant for before you actually roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01307))_

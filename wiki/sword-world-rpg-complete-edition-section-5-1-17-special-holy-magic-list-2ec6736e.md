@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-17-special-holy-magic-list-2ec6736e@767d05495c792764c796021bb4449cd7
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-17-special-holy-magic-list-2ec6736e@0d3e97c0721e86830a877bc65a47c646
 ---
 
 # **5.1.17 Special Holy Magic List**
@@ -20,6 +20,10 @@ From [[sword-world-rpg-complete-edition]].
 - The spells listed here can only be used by those who believe in a specific god among characters with the priest skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03070))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_
 
 | Final Score | Time to regain memories |
 | --- | --- |
@@ -43,4 +47,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_

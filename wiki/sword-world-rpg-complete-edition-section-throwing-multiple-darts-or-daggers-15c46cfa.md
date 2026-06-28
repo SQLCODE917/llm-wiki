@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-throwing-multiple-darts-or-daggers-15c46cfa@79e493cafd341ecad4e87984908e839e
+projection_coverage: section-sword-world-rpg-complete-edition-section-throwing-multiple-darts-or-daggers-15c46cfa@2d61561306d81980a09227ba7338e20c
 ---
 
 # **Throwing Multiple Darts or Daggers**
@@ -26,8 +26,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: It’s possible to throw **multiple** darts or daggers at once. However, the following restrictions occur in this case:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07883))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07883))_
+
+> It’s possible to throw **multiple** darts or daggers at once. However, the following restrictions occur in this case:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07885))_
 
 > The _total required strength_ must be up to the _character's strength_ (or _half_ that if it's the thief skill).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07885))_

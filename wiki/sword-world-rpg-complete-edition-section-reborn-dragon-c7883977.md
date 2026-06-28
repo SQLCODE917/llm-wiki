@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-reborn-dragon-c7883977@f2d398dc9d1c0be3d7b10285cfc9dacb
+projection_coverage: section-sword-world-rpg-complete-edition-section-reborn-dragon-c7883977@74f92c26f63bd644e23cf170db276d2d
 ---
 
 # **[ Reborn Dragon ]**
@@ -31,11 +31,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: (they can carry many more people if you use a basket, etc.).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04345))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04345))_
+
+> (they can carry many more people if you use a basket, etc.).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04348))_
 
 > Base Mental Power Cost=30 Distance=Caster Area=Caster Duration=Instant Effect=Be reborn as a dragon Type=Non-removable, ritual Expansion=Final score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04348))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04349))_
 
 > At this time, the caster must make a success roll to determine a final score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04349))_

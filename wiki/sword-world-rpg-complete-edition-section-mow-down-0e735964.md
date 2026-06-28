@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mow-down-0e735964@804e409e862bf52569fdd62e716255f4
+projection_coverage: section-sword-world-rpg-complete-edition-section-mow-down-0e735964@5aea04c692e88ae8587fd6d24cce9592
 ---
 
 # **Mow Down**
@@ -29,8 +29,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Please note that with other projectiles such as slings, etc. you _cannot_ reduce the critical target by aiming.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07799))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07799))_
+
+> Please note that with other projectiles such as slings, etc. you _cannot_ reduce the critical target by aiming.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07801))_
 
 > A character can only do this if he or she has a two-handed weapon and it’s the type that cuts (sword, ax, pole weapon that can _cut_ ).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07801))_

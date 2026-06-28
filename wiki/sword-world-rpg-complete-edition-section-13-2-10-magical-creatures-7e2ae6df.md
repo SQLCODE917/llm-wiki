@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-7e2ae6df@3ec6645afe6081e0b4a3fea66e0fbb87
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-7e2ae6df@716ce2d1a9349d5e5c5ee2d3942f58d9
 ---
 
 # 13.2.10 Magical Creatures
@@ -26,8 +26,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: body of a gizmo is poisonous gas, so those hit by it will inhale it and suffer damage resulting from a strike power 10 strike roll plus 3 points of bonus damage. However, if their resistance roll is successful, the strike power becomes 0. Armor cannot protect against gas, only adventurer level or magical protection can reduce the damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06484))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06484))_
+
+> body of a gizmo is poisonous gas, so those hit by it will inhale it and suffer damage resulting from a strike power 10 strike roll plus 3 points of bonus damage. However, if their resistance roll is successful, the strike power becomes 0. Armor cannot protect against gas, only adventurer level or magical protection can reduce the damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06485))_
 
 > Only _fire-type_ , _electric-type_ , _pure energytype_ , and _explosion-type_ magic attacks can deal damage.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06485))_

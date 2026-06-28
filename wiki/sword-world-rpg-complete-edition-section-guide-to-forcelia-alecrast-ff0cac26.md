@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-guide-to-forcelia-alecrast-ff0cac26@3d0bca4c2898a577c8e8642b85bd5d7a
+projection_coverage: section-sword-world-rpg-complete-edition-section-guide-to-forcelia-alecrast-ff0cac26@d0b3b16606f39dcad78e5e8976abd662
 ---
 
 # Guide to Forcelia & Alecrast
@@ -36,8 +36,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Baikal is the northernmost country in Alecrast. It is a nation formed by the union of several tribes, each creating their own small villages and towns. The total population is slightly over 1 million. Among the tribes, the maritime tribes scattered along the northern Azul Bay hold more power than the tribes of the southern plains. This is because the maritime tribes generate profit through trade and piracy using galley ships called free merchant vessels, wielding incomparable power to the plains
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08271))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08271))_
+
+> Baikal is the northernmost country in Alecrast. It is a nation formed by the union of several tribes, each creating their own small villages and towns. The total population is slightly over 1 million. Among the tribes, the maritime tribes scattered along the northern Azul Bay hold more power than the tribes of the southern plains. This is because the maritime tribes generate profit through trade and piracy using galley ships called free merchant vessels, wielding incomparable power to the plains
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08273))_
 
 > If you can gain favor with the powerful tribes, Baikal can become a hospitable country for travelers.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08273))_

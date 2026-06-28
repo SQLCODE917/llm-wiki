@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-ant-4d9935db@d001a6d25a880e674ed8b61ae2d30f2b
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-ant-4d9935db@15e275a861df054dadbc353d58977962
 ---
 
 # **Giant Ant**
@@ -26,8 +26,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05851))_
+
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05851))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05852))_
 
 > Rarity=8 Agility=16 Movement Speed=15 Number=Several to around ten
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05852))_

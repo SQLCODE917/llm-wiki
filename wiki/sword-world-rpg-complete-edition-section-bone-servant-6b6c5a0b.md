@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bone-servant-6b6c5a0b@8a37ee0b8c063c3334e7b49b582f7674
+projection_coverage: section-sword-world-rpg-complete-edition-section-bone-servant-6b6c5a0b@1970cfc2f9a604bca5abe23b5f410e98
 ---
 
 # **Bone Servant**
@@ -25,14 +25,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: A skeleton warrior is a golem created from a magical dragon's tooth. Its appearance is that of a fully-armed skeleton, which uses its weapon and shield with mechanical precision. However, its intellect is low and it cannot accept complex or abstract commands. For this reason, skeleton warriors are often used for simple tasks, such as guarding treasure vaults, etc.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06399))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06399))_
+
+> A skeleton warrior is a golem created from a magical dragon's tooth. Its appearance is that of a fully-armed skeleton, which uses its weapon and shield with mechanical precision. However, its intellect is low and it cannot accept complex or abstract commands. For this reason, skeleton warriors are often used for simple tasks, such as guarding treasure vaults, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06402))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06402))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06405))_
 
 > Also, once created, a skeleton warrior will never return to its original tooth form.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06405))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06408))_
 
 > Languages=None Perception=Pseudo
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06408))_

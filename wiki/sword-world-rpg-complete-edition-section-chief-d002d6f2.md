@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chief-d002d6f2@8800f4570111ad4f926aa7dfdfb1058f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chief-d002d6f2@f457ad4c11b90a6bbac6d60a856fb76b
 ---
 
 # **Chief**
@@ -27,11 +27,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06658))_
+
 > Monster Level=3 Rarity=5 Agility=12 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Weapon: 10 (3) Strike Points=7 Evasion Points=11 (4) Defense Points=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06658))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06659))_
 
 > Life Points/Resistance=12/11 (4) Mental Points/Resistance=12/11 (4) Special Abilities=None in particular Habitat=Human villages, fields and hills near roads
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06659))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06660))_
 
 > Languages=Regional Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06660))_

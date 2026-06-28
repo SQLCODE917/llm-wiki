@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hit-evasion-checks-a9e574df@758baca18b7f483c2f64090d7e0dd3b9
+projection_coverage: section-sword-world-rpg-complete-edition-section-hit-evasion-checks-a9e574df@647f7b524bec4ec618bf3cf1d8e2bf84
 ---
 
 # **Hit (Evasion) Checks**
@@ -25,8 +25,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This check is also made with a success roll.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00985))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00985))_
+
+> This check is also made with a success roll.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00987))_
 
 > evasion speed + 2D ≥ monster's attack points → **evasion success (monster's attack fails)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00987))_

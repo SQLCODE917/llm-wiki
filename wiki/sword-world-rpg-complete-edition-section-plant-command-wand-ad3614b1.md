@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-plant-command-wand-ad3614b1@ef1026ef164f901eb20885635dca835b
+projection_coverage: section-sword-world-rpg-complete-edition-section-plant-command-wand-ad3614b1@103d05069cd66ec7398bad8ef7605033
 ---
 
 # **[ Plant Command Wand ]**
@@ -23,5 +23,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07368))_
+
 > Rarity=15 Enchanter=Unknown Form=A wand about 15cm long Powers=Can use plant spirit magic Base Trade Price=100,000 gamels
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07368))_

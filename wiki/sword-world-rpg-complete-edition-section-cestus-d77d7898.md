@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-cestus-d77d7898@a7fc141571188858d41f0980df73a4f9
+projection_coverage: section-sword-world-rpg-complete-edition-section-cestus-d77d7898@93af1a977992825e4559cf37e1ccf9bc
 ---
 
 # **Cestus**
@@ -24,8 +24,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: These are **combat gloves** . This weapon allows you to use your hands _freely_ while it’s equipped. After putting on a cestus, you can _also_ hold a weapon in your hand. Although you _cannot_ add the strike power of a cestus to _another_
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07971))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07971))_
+
+> These are **combat gloves** . This weapon allows you to use your hands _freely_ while it’s equipped. After putting on a cestus, you can _also_ hold a weapon in your hand. Although you _cannot_ add the strike power of a cestus to _another_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07973))_
 
 > When struck by such an attack, the target must make a life force resistance
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07973))_

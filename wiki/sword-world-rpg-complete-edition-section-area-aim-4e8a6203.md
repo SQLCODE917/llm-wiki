@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-area-aim-4e8a6203@50797edbfc709435e3326cb3e1f3149a
+projection_coverage: section-sword-world-rpg-complete-edition-section-area-aim-4e8a6203@4ce4d800cdd82eacf49f80c60e516819
 ---
 
 # **Area Aim**
@@ -21,8 +21,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: If you use this optional rule, then if successfully hit by a monster whose attack method is _ram_ , a character must determine whether he or she has fallen _prone_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07841))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07841))_
+
+> If you use this optional rule, then if successfully hit by a monster whose attack method is _ram_ , a character must determine whether he or she has fallen _prone_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07843))_
 
 > If you don't want to kill your opponent, you can declare _mercy_ (if it's a blunt weapon).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07843))_

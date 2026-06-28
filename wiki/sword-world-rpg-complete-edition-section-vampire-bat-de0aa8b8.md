@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-vampire-bat-de0aa8b8@50c0c47bd54580e8679d7b950648b0ea
+projection_coverage: section-sword-world-rpg-complete-edition-section-vampire-bat-de0aa8b8@9d6ccf54c62bc91bb9b9be1d0e6922de
 ---
 
 # **Vampire Bat**
@@ -16,8 +16,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Those bitten by a bat-- those whose life force has been dealt damage by a bat's attack --are at risk of contracting a fever. Roll 2D again. If you roll a 5 or less, you’ll be infected with _bat fever_ . Please refer to page 166 for details on _bat fever_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05786))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05786))_
+
+> Those bitten by a bat-- those whose life force has been dealt damage by a bat's attack --are at risk of contracting a fever. Roll 2D again. If you roll a 5 or less, you’ll be infected with _bat fever_ . Please refer to page 166 for details on _bat fever_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05788))_
 
 > Monster Level=2 Rarity=10 Agility=19 Movement Speed=20 Number=One to several Frequency=Rare Intellect=Animal Reaction=Hunger-based
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05788))_

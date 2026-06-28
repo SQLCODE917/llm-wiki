@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bat-fever-ea4bf7dc@c7b9b81c15817b6bf309d52c760926ca
+projection_coverage: section-sword-world-rpg-complete-edition-section-bat-fever-ea4bf7dc@88c1af1cd11f006346bbbded2af9829f
 ---
 
 # **[ Bat Fever ]**
@@ -25,8 +25,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: It’s believed that this illness is caused by the power of the mind spirit sandman becoming too strong. As the illness progresses, the patient will begin to complain of extreme fatigue with even the slightest amount of exercise, and the amount of time spent sleeping each day will increase (use _depth x 3 + 9_ as a standard). The patient will then die when it reaches the fatal depth of 5. The reason for the outbreak of the disease is unknown, but there are many known cases where excessive use of t
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04697))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04697))_
+
+> It’s believed that this illness is caused by the power of the mind spirit sandman becoming too strong. As the illness progresses, the patient will begin to complain of extreme fatigue with even the slightest amount of exercise, and the amount of time spent sleeping each day will increase (use _depth x 3 + 9_ as a standard). The patient will then die when it reaches the fatal depth of 5. The reason for the outbreak of the disease is unknown, but there are many known cases where excessive use of t
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04700))_
 
 > Symptoms=Fever Rarity=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04700))_

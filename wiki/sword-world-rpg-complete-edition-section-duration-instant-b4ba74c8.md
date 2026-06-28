@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-duration-instant-b4ba74c8@0cce702c574a4efa9b2867c4e23f8baa
+projection_coverage: section-sword-world-rpg-complete-edition-section-duration-instant-b4ba74c8@87ed965687dd12f677d5d25b3e35b9cc
 ---
 
 # Duration=Instant
@@ -26,11 +26,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02965))_
+
 > Effect=Makes a haunt vanish from the material world
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02965))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02966))_
 
 > Type=Ritual Expansion=Final score, distance, targets Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02966))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02967))_
 
 > If you can attain a final score that's greater than or equal to the haunt's mental point resistance, you can make that haunt vanish from the material world.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02967))_

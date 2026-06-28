@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-unicorn-9214a308@498a852e363713aa300e24187d28ef97
+projection_coverage: section-sword-world-rpg-complete-edition-section-unicorn-9214a308@9bf4e7b9469b7a00b895d0315d899056
 ---
 
 # **[ Unicorn ]**
@@ -40,32 +40,58 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05492))_
+
 > Monster Level=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05492))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05493))_
 
 > Rarity=10 Agility=15 Movement Speed=30 Number=One to several
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05493))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05494))_
 
 > Frequency=Very Rare Intellect=High Reaction=Neutral to friendly Attack Points=Horn:12 (5)/Heel:12 (5) Strike Points=17/16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05494))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05495))_
 
 > Evasion Points=13 (6) Defense Points=9 Life Points/Resistance=25/16 (9) Mental Points/Resistance=20/15 (8)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05495))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05496))_
 
 > Special Abilities=6th level spirit magic (Magic Intensity/Magic Power=16/9) 10th level healing-type spirit magic (Magic Intensity/Magic Power=20/13)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05496))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05498))_
 
 > Languages=Silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05498))_
 
-> Context: Unicorns have high intellect and can communicate in silent spirit, but will only trust human (or elf or half-elf) virgin girls. Even in the unfortunate case of a fight, a unicorn will not do anything that would harm a human maiden. However, if anyone other than the maiden tries to touch it, the unicorn will issue a warning, and if you still do not listen, it’ll get angry and attack.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05500))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05500))_
+
+> Unicorns have high intellect and can communicate in silent spirit, but will only trust human (or elf or half-elf) virgin girls. Even in the unfortunate case of a fight, a unicorn will not do anything that would harm a human maiden. However, if anyone other than the maiden tries to touch it, the unicorn will issue a warning, and if you still do not listen, it’ll get angry and attack.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05502))_
 
 > Unicorns can also use spirit magic unrelated to the spirit of life, but at this time their shaman skill is only 6th level.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05502))_
 
-> Context: the spirit of life. For this reason, unicorn horns are sometimes traded as magical items. The user does not have to be a shaman or a woman, and may also wear metal armor. A horn has a reserve of mental points equal to _the unicorn's mental points when cut off x 10_ , and when you use magic, the base mental power cost of each is directly subtracted from this mental point reserve. If magic power is required, calculate it as 10. The reserve mental points cannot be recovered, and once they are used 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05504))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05504))_
+
+> the spirit of life. For this reason, unicorn horns are sometimes traded as magical items. The user does not have to be a shaman or a woman, and may also wear metal armor. A horn has a reserve of mental points equal to _the unicorn's mental points when cut off x 10_ , and when you use magic, the base mental power cost of each is directly subtracted from this mental point reserve. If magic power is required, calculate it as 10. The reserve mental points cannot be recovered, and once they are used
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05505))_
 
 > If a unicorn loses its horn due to overuse of magic or it being cut off, it will never grow back again.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05505))_

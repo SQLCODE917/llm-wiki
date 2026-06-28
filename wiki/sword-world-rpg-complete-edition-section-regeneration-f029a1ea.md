@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-regeneration-f029a1ea@fd33c7f1db7b2d98079455d9cbfe1c1d
+projection_coverage: section-sword-world-rpg-complete-edition-section-regeneration-f029a1ea@ac4839f013923dada298fb8846b8ad09
 ---
 
 # **[ Regeneration ]**
@@ -24,11 +24,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02985))_
+
 > Base Mental Power Cost=35
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02985))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02986))_
 
 > Distance=Touch Area=One Duration=1 week Effect=Recover target's physical losses Type=Non-removable Expansion=Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02986))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02989))_
 
 > **Table 5-7: Summon Servant**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02989))_

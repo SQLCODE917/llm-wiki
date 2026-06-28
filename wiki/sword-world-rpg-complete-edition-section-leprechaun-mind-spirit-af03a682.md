@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-leprechaun-mind-spirit-af03a682@d00ce053627ebdf4eb162aca1ddcb04a
+projection_coverage: section-sword-world-rpg-complete-edition-section-leprechaun-mind-spirit-af03a682@1df0bb81df56993c968d742c42c5c076
 ---
 
 # **(Leprechaun/Mind Spirit)**
@@ -26,14 +26,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02372))_
+
 > Base Mental Power Cost=8
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02372))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02373))_
 
 > Distance=10 meters
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02373))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02374))_
 
 > Area=One Duration=18 rounds Effect=Target loses their memory Type=Mind Expansion=Final score, duration, distance, targets
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02374))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02375))_
 
 > Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02375))_

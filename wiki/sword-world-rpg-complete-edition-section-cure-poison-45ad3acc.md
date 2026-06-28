@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-cure-poison-45ad3acc@2f71212858853b78dec840e6c18e0000
+projection_coverage: section-sword-world-rpg-complete-edition-section-cure-poison-45ad3acc@92601aefbf1d739c80c34a45233ad24b
 ---
 
 # **[ Cure Poison ]**
@@ -25,20 +25,34 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Base Mental Power Cost=9
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02910))_
+### Technical atom 1
 
-> Context: This spell is an antidote spell used on an individual. If the final score when casting the spell is greater than or equal to the _toxicity score_ of each poison, that poison can be neutralized. For details, see 12.2.1: Poisons (see p. 159). Even if your body is infected by _multiple_ poisons, you can neutralize them _all_ with a single spell, as long as the final score is greater than or equal to each toxicity score. If you have used magic potions, etc. you can also remove their effects. _All_ a
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02913))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02910))_
+
+> Base Mental Power Cost=9
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02913))_
+
+> This spell is an antidote spell used on an individual. If the final score when casting the spell is greater than or equal to the _toxicity score_ of each poison, that poison can be neutralized. For details, see 12.2.1: Poisons (see p. 159). Even if your body is infected by _multiple_ poisons, you can neutralize them _all_ with a single spell, as long as the final score is greater than or equal to each toxicity score. If you have used magic potions, etc. you can also remove their effects. _All_ a
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02911))_
 
 > Distance=Touch Area=One Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02911))_
 
-> Context: This spell is an antidote spell used on an individual. If the final score when casting the spell is greater than or equal to the _toxicity score_ of each poison, that poison can be neutralized. For details, see 12.2.1: Poisons (see p. 159). Even if your body is infected by _multiple_ poisons, you can neutralize them _all_ with a single spell, as long as the final score is greater than or equal to each toxicity score. If you have used magic potions, etc. you can also remove their effects. _All_ a
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02913))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02913))_
+
+> This spell is an antidote spell used on an individual. If the final score when casting the spell is greater than or equal to the _toxicity score_ of each poison, that poison can be neutralized. For details, see 12.2.1: Poisons (see p. 159). Even if your body is infected by _multiple_ poisons, you can neutralize them _all_ with a single spell, as long as the final score is greater than or equal to each toxicity score. If you have used magic potions, etc. you can also remove their effects. _All_ a
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02912))_
 
 > Effect=Removes the effects of poisons and drugs on the target Type=Counters (Negates): _Poison_ Expansion=Final score Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02912))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02913))_
 
 > Even if your body is infected by _multiple_ poisons, you can neutralize them _all_ with a single spell, as long as the final score is greater than or equal to each toxicity score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02913))_

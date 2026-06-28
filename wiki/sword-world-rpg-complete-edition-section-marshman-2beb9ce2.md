@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-marshman-2beb9ce2@b55b5a930d954a479ceea576a03aad11
+projection_coverage: section-sword-world-rpg-complete-edition-section-marshman-2beb9ce2@a7efe2b539f2016ae075b292f11bea99
 ---
 
 # **[ Marshman ]**
@@ -20,5 +20,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05054))_
+
 > Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6) Weak to fire Weak to dehydration
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05054))_

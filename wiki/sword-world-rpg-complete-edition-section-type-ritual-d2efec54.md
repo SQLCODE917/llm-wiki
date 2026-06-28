@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-type-ritual-d2efec54@4df8d9ed98f3d6f918b1cab1ae5d2d77
+projection_coverage: section-sword-world-rpg-complete-edition-section-type-ritual-d2efec54@debb6b4f0f4d2ac8c63080300f80c3e1
 ---
 
 # Type=Ritual
@@ -23,11 +23,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Expansion=Final score, distance, targets or area
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01631))_
+### Technical atom 1
 
-> Context: Items with permanent magical power cannot be removed by this magic, because they are _non-removable_ .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01634))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01631))_
+
+> Expansion=Final score, distance, targets or area
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01634))_
+
+> Items with permanent magical power cannot be removed by this magic, because they are _non-removable_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01632))_
 
 > Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01632))_

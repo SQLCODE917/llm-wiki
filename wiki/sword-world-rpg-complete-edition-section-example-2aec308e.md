@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-example-2aec308e@92849c190f47603aae6d878de34d3cd9
+projection_coverage: section-sword-world-rpg-complete-edition-section-example-2aec308e@d2328632b7ebeeed4592e1107e254a06
 ---
 
 # **Example:**
@@ -28,6 +28,10 @@ From [[sword-world-rpg-complete-edition]].
 - If we have a large shield, the ranger skill will be limited, so our choice here is limited to a **small shield** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00479))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00348))_
 
 | As a result, the ability | scores are |
 | --- | --- |
@@ -53,10 +57,14 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00348))_
 
-> Context: Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
+
+> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00410))_
 
 | Attained<br>Level | Sorcerer & Sage at the same<br>time | Sorcerer | <br>Sorcerer<br>(with<br>Sage) | Shaman | Fighter<br>Tief<br>Priest | Ranger<br>Sage<br>Bard |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -76,37 +84,60 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00410))_
 
-> Context: Ducard II has 2 levels in the fighter skill and 1 level in the ranger skill. There are no restrictions on either skill when choosing a weapon. Ranger has an advantage in projectiles, but this is consequently irrelevant because of the higher level of the _can use any weapon_ fighter.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00473))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00473))_
+
+> Ducard II has 2 levels in the fighter skill and 1 level in the ranger skill. There are no restrictions on either skill when choosing a weapon. Ranger has an advantage in projectiles, but this is consequently irrelevant because of the higher level of the _can use any weapon_ fighter.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00474))_
 
 > So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00474))_
 
-> Context: So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14). Here we have chosen the most typical weapon, a **broadsword** . The required strength of a broadsword is 8~16, so a broadsword with a required strength of 14 certainly exists.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00474))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00474))_
+
+> So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14). Here we have chosen the most typical weapon, a **broadsword** . The required strength of a broadsword is 8~16, so a broadsword with a required strength of 14 certainly exists.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00475))_
 
 > The price is 14 x 20 + 40 = **320** (gamels).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00475))_
 
-> Context: So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14). Here we have chosen the most typical weapon, a **broadsword** . The required strength of a broadsword is 8~16, so a broadsword with a required strength of 14 certainly exists.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00474))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00474))_
+
+> So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14). Here we have chosen the most typical weapon, a **broadsword** . The required strength of a broadsword is 8~16, so a broadsword with a required strength of 14 certainly exists.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00476))_
 
 > When choosing armor, the ranger skill's limitations come into play (required strength can only be up to _half_ one's own strength, armor can only be _non-metal_ or _ring mail_ ).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00476))_
 
-> Context: Here we will choose **ring mail** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00477))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00477))_
+
+> Here we will choose **ring mail** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00478))_
 
 > The price is 7 x 30 + 30 = **240** (gamels).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00478))_
 
-> Context: Here we will choose **ring mail** .
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00477))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00477))_
+
+> Here we will choose **ring mail** .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00480))_
 
 > Since our starting amount was 1200 gamels, our character now has 1200 - 320 - 240 - 60 = **580 gamels** remaining.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00480))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00501))_
 
 | **Table 1-11: Equipment** |
 | --- |
@@ -140,10 +171,14 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00480))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00501))_
 
-> Context: His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -181,7 +216,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -219,7 +257,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00924))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -257,10 +298,14 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00924))_
 
-> Context: Ducard II now determines how much damage his armor prevents. His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01061))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01061))_
+
+> Ducard II now determines how much damage his armor prevents. His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01064))_
 
 | Defender's Roll | Defender's Roll | Defender's Roll |
 | --- | --- | --- |
@@ -291,10 +336,14 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01061))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01064))_
 
-> Context: The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+
+> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
 
 | Feature Used | Base Target Score |
 | --- | --- |
@@ -327,7 +376,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
 
 | Skill Used | Base Target Score |
 | --- | --- |
@@ -356,7 +408,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_
 
 | Attained Level | <br>Sorcerer | Shaman<br>Dragon Priest | Fighter<br>Tief<br>Priest<br>Dark Priest | Ranger<br>Sage<br>Bard | Reduction for<br>Acquiring<br>Sorcerer &<br>Sage at the<br>Same Time |
 | --- | --- | --- | --- | --- | --- |
@@ -390,7 +445,10 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08086))_
 
 | Fire-type | Firebolt, Fireball, Firestorm |
 | --- | --- |
@@ -422,4 +480,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08086))_

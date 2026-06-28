@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-guide-to-forcelia-alecrast-ffedfb4e@31d0af9764f46be90b0dfd308cdba608
+projection_coverage: section-sword-world-rpg-complete-edition-section-guide-to-forcelia-alecrast-ffedfb4e@55ab4ca41a30fcd1eb609108f65538a1
 ---
 
 # Guide to Forcelia & Alecrast
@@ -356,41 +356,74 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08228))_
+
 > When misfortune befalls them, these adventurers have few other people they can rely on.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08228))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08235))_
 
 > Additionally, those who are guild members in one country may receive special privileges when joining guilds in other countries, such as only needing to pay a fee.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08235))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08239))_
 
 > Of course, a Merchant's License issued in one country isn't valid everywhere, but if you wish to trade in another country, having a license typically means you can bypass strict
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08239))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08251))_
 
 > **Far East Region (Language = Eastern/ Mārdan)** At the eastern end of the Alecrast continent lie three countries: Mudeel, Milargo, and Anoth.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08251))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08265))_
 
 > **Northeast Region (Language = Eastern/Mārdan)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08265))_
 
-> Context: Baikal is the northernmost country in Alecrast. It is a nation formed by the union of several tribes, each creating their own small villages and towns. The total population is slightly over 1 million. Among the tribes, the maritime tribes scattered along the northern Azul Bay hold more power than the tribes of the southern plains. This is because the maritime tribes generate profit through trade and piracy using galley ships called free merchant vessels, wielding incomparable power to the plains
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08271))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08271))_
+
+> Baikal is the northernmost country in Alecrast. It is a nation formed by the union of several tribes, each creating their own small villages and towns. The total population is slightly over 1 million. Among the tribes, the maritime tribes scattered along the northern Azul Bay hold more power than the tribes of the southern plains. This is because the maritime tribes generate profit through trade and piracy using galley ships called free merchant vessels, wielding incomparable power to the plains
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08273))_
 
 > If you can gain favor with the powerful tribes, Baikal can become a hospitable country for travelers.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08273))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08279))_
 
 > **(Language = Eastern/Mārdan)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08279))_
 
-> Context: They are known for their extreme secrecy and rarely reveal their true nature or beliefs (they appear to worship their own deities). They have been known to send assassins after those who try to forcefully uncover their secrets or who accidentally witness important rituals. These assassins, skilled in spirit magic abilities, are greatly feared.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08289))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08289))_
+
+> They are known for their extreme secrecy and rarely reveal their true nature or beliefs (they appear to worship their own deities). They have been known to send assassins after those who try to forcefully uncover their secrets or who accidentally witness important rituals. These assassins, skilled in spirit magic abilities, are greatly feared.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08291))_
 
 > **Northern Central Region (Language = Western/Gundar)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08291))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08326))_
 
 > **(Language = Native Language)**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08326))_
 
-> Context: The Unreachable Land - no one knows what kind of place Farland is. This is because Farland is a place that is "never to be defined in lore."
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08339))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08339))_
+
+> The Unreachable Land - no one knows what kind of place Farland is. This is because Farland is a place that is "never to be defined in lore."
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08341))_
 
 > Therefore, you can create your own world however you like.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08341))_

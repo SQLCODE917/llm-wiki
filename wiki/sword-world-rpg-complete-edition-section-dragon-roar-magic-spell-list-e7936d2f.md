@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dragon-roar-magic-spell-list-e7936d2f@58fac02504e36ad71006b9edc89c8223
+projection_coverage: section-sword-world-rpg-complete-edition-section-dragon-roar-magic-spell-list-e7936d2f@2f603d0bbd651fecf93c9b031e3fc4ab
 ---
 
 # **Dragon Roar Magic Spell List**
@@ -22,6 +22,10 @@ From [[sword-world-rpg-complete-edition]].
 - Dragon priests will not join an adventurer's party due to their religious beliefs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04199))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -55,4 +59,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

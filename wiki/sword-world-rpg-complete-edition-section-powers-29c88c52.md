@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-powers-29c88c52@7b64a9c7dd4cc6e43994427f942cf5f5
+projection_coverage: section-sword-world-rpg-complete-edition-section-powers-29c88c52@d7e052a751e783152aa070e00e9ae622
 ---
 
 # 《 **Powers** 》
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-powers-29c
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_
 
 | **Table 11-1: Summon** |
 | --- |
@@ -48,4 +52,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04226))_

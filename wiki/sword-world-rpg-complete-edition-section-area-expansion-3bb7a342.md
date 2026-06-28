@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-area-expansion-3bb7a342@759c0771a31f172dde910b233c64b380
+projection_coverage: section-sword-world-rpg-complete-edition-section-area-expansion-3bb7a342@7aa66cddb2e7d9ebb3d7708516d59732
 ---
 
 # 《 **Area Expansion** 》
@@ -26,14 +26,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: In this case, you must roll the dice separately for each target to determine if they resist the magic, and other effects such as damage must also be determined separately.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01360))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01360))_
+
+> In this case, you must roll the dice separately for each target to determine if they resist the magic, and other effects such as damage must also be determined separately.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01363))_
 
 > If you expand a spell that affects a specific area, it can affect a larger area than originally intended.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01363))_
 
-> Context: If you expand a spell that affects a specific area, it can affect a larger area than originally intended.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01363))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01363))_
+
+> If you expand a spell that affects a specific area, it can affect a larger area than originally intended.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01364))_
 
 > You can also expand an area by a _fraction_ (x1.5, x8/3, etc.), in which case the fraction is _rounded up_ when determining the multiplier for mental power consumed.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01364))_

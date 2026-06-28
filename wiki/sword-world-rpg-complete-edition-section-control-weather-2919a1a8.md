@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-control-weather-2919a1a8@54851f8aecc5ffd7bcbd40f5caa48b97
+projection_coverage: section-sword-world-rpg-complete-edition-section-control-weather-2919a1a8@55f7698bd94c319a9492d4fb4f86de24
 ---
 
 # **[ Control Weather ]**
@@ -45,26 +45,46 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This spell is _not_ a spell that creates golems. It's only a spell that gives _commands_ to a golem. Moreover, the target golem must be in a state where _no_ commands have been given. This spell is ineffective on a golem that's _already_ following a command. Golems in a state without commands are extremely rarely found, but may be found in the ruins of the ancient kingdom.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02153))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02153))_
+
+> This spell is _not_ a spell that creates golems. It's only a spell that gives _commands_ to a golem. Moreover, the target golem must be in a state where _no_ commands have been given. This spell is ineffective on a golem that's _already_ following a command. Golems in a state without commands are extremely rarely found, but may be found in the ruins of the ancient kingdom.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02155))_
 
 > Base Mental Power Cost=45 Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02155))_
 
-> Context: This spell is _not_ a spell that creates golems. It's only a spell that gives _commands_ to a golem. Moreover, the target golem must be in a state where _no_ commands have been given. This spell is ineffective on a golem that's _already_ following a command. Golems in a state without commands are extremely rarely found, but may be found in the ruins of the ancient kingdom.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02153))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02153))_
+
+> This spell is _not_ a spell that creates golems. It's only a spell that gives _commands_ to a golem. Moreover, the target golem must be in a state where _no_ commands have been given. This spell is ineffective on a golem that's _already_ following a command. Golems in a state without commands are extremely rarely found, but may be found in the ruins of the ancient kingdom.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02156))_
 
 > Area=An area within a 10 kilometer radius of the caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02156))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02157))_
 
 > Duration=Until focus ends
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02157))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02158))_
 
 > Effect=Change the weather within the area of effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02158))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02159))_
 
 > Type=Focus, Target score, non-removable Expansion=Final score, area Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02159))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02160))_
 
 > Even if someone is within the area of effect, they cannot resist this spell.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02160))_

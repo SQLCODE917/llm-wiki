@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lesser-vampire-7485808b@62f5278bc2d6b3c7f1f7aa76390ea3ba
+projection_coverage: section-sword-world-rpg-complete-edition-section-lesser-vampire-7485808b@6eeb235da513b8e4406f983937fb836f
 ---
 
 # **Lesser Vampire**
@@ -28,20 +28,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06308))_
+
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06308))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06309))_
 
 > Rarity=13 Agility=14 Movement Speed=14 Number=Several to dozens
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06309))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06310))_
 
 > Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Barehanded:10 (3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06310))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06311))_
 
 > Strike Points=5+mental damage Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=14/11 (4) Mental Points/Resistance=14/11 (4)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06311))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06312))_
 
 > Special Abilities=Steal mental power (Strike power 10, bonus damage 3)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06312))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06313))_
 
 > Gaze (Resist target score=10, paralysis by fear)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06313))_

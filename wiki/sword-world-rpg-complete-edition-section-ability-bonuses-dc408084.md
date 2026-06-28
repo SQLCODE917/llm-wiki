@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ability-bonuses-dc408084@212c2db5d69f179da9228285797059fe
+projection_coverage: section-sword-world-rpg-complete-edition-section-ability-bonuses-dc408084@baf9b9bebd6455f3ad9318294e7d61be
 ---
 
 # 【 **Ability Bonuses** 】
@@ -27,20 +27,33 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Strength represents an adventurer's muscular strength. If you want to use
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00181))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00181))_
+
+> Strength represents an adventurer's muscular strength. If you want to use
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
 
 > etc.) When a character's ability score increases or decreases, even temporarily, the ability bonus increases or decreases accordingly.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
 
-> Context: adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the ability score. For example, it would say something like _an adventurer with 14 de
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
+
+> adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the ability score. For example, it would say something like _an adventurer with 14 de
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00184))_
 
 > **Table 1-1: Ability Bonuses**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00184))_
 
-> Context: adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the ability score. For example, it would say something like _an adventurer with 14 de
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
+
+> adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the ability score. For example, it would say something like _an adventurer with 14 de
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00185))_
 
 | AbilityScore | Bonus |
 | --- | --- |
@@ -66,4 +79,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00185))_

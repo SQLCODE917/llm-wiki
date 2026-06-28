@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-3-3b2329cc@439814d8ffd79dd58a12872fbf942d5b
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-3-3b2329cc@c606525bd7f09e6937643594e0dbea20
 ---
 
 # Monster Level=3
@@ -25,20 +25,35 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: To fight on horseback, you must make a success roll against target score 7 each round using _adventurer level + agility bonus_ as the baseline score. If you attempt to control your horse without using the reins, you will suffer a -4 penalty to your final score.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05724))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05724))_
+
+> To fight on horseback, you must make a success roll against target score 7 each round using _adventurer level + agility bonus_ as the baseline score. If you attempt to control your horse without using the reins, you will suffer a -4 penalty to your final score.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05727))_
 
 > Rarity=10 Agility=16 Movement Speed=24 Number=Depends on the situation Frequency=Rare Intellect=Animal Reaction=Depends on the user Attack Points=Fangs: 10 (3) Strike Points=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05727))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05728))_
 
 > Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=16/11 (4) Mental Points/Resistance=10/10 (3) Special Abilities=None in particular Habitat=Human villages Languages=None Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05728))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05729))_
 
 > They can fight more than equally against normal soldiers, even if their opponents are well armed.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05729))_
 
-> Context: Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+
+> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 
 | Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
 | --- | --- | --- | --- | --- | --- |
@@ -54,7 +69,10 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_
 
 | Level 1-2 | It's no big deal. Just a small problem in a small village |
 | --- | --- |
@@ -80,4 +98,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_

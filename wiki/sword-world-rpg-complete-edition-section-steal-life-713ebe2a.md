@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-steal-life-713ebe2a@e868028106491dd84e0383acc1e1d59a
+projection_coverage: section-sword-world-rpg-complete-edition-section-steal-life-713ebe2a@7969d6bb514136b58e8484d4bf5d164b
 ---
 
 # **[ Steal Life ]**
@@ -33,17 +33,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03990))_
+
 > Base Mental Power Cost=20 Distance=30 meters Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03990))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03991))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03991))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03995))_
 
 > If you expand the effect and steal life force (points) from multiple people, you can recover the total amount of life force (points) you stole.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03995))_
 
-> Context: to the target, and the caster's life force (points) will be restored by the same number of points. If you expand the effect and steal life force (points) from multiple people, you can recover the total amount of life force (points) you stole. However, you _cannot_ increase your life (points) higher than your original score. Also, like _Wounds_ , it has no effect at all if the opponent successfully resists, and it has no effect on opponents that don't have normal life, such as undead, skeleton wa
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03995))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03995))_
+
+> to the target, and the caster's life force (points) will be restored by the same number of points. If you expand the effect and steal life force (points) from multiple people, you can recover the total amount of life force (points) you stole. However, you _cannot_ increase your life (points) higher than your original score. Also, like _Wounds_ , it has no effect at all if the opponent successfully resists, and it has no effect on opponents that don't have normal life, such as undead, skeleton wa
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03996))_
 
 > For example, if the caster sacrifices their own life, it is acceptable to apply a fairly powerful curse.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03996))_

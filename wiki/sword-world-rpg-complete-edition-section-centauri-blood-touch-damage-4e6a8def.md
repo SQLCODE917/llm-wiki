@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-centauri-blood-touch-damage-4e6a8def@3a1957495c01f8ccda2c036721c763da
+projection_coverage: section-sword-world-rpg-complete-edition-section-centauri-blood-touch-damage-4e6a8def@82561921610cdcb6c5d0c4fa893fa2d1
 ---
 
 # **[Centauri Blood (Touch/Damage)]**
@@ -38,17 +38,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This is so named because its effect is similar to the _Forget_ magic used by gremlins. Those who fail to resist will have no memory of their past, and will be unable to use any abilities related to intelligence (those that use intelligence bonus to calculate a baseline score).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04572))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04572))_
+
+> This is so named because its effect is similar to the _Forget_ magic used by gremlins. Those who fail to resist will have no memory of their past, and will be unable to use any abilities related to intelligence (those that use intelligence bonus to calculate a baseline score).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04574))_
 
 > Effect=Deals strike power 30 damage plus 12 bonus damage every hour. Resist reduces effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04574))_
 
-> Context: This is so named because its effect is similar to the _Forget_ magic used by gremlins. Those who fail to resist will have no memory of their past, and will be unable to use any abilities related to intelligence (those that use intelligence bonus to calculate a baseline score).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04572))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04572))_
+
+> This is so named because its effect is similar to the _Forget_ magic used by gremlins. Those who fail to resist will have no memory of their past, and will be unable to use any abilities related to intelligence (those that use intelligence bonus to calculate a baseline score).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04575))_
 
 > Toxicity Score=14 Rarity=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04575))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04576))_
 
 > Effect Start Time=1 hour later Effect Duration=Permanent
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04576))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-2-guidelines-for-adventurer-age-and-ability-score-changes-42b51c47@f6d333109ada4b41d23a3ae3718c2c9e
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-2-guidelines-for-adventurer-age-and-ability-score-changes-42b51c47@a44a2f0b0519428c742ca6c6291fe3c7
 ---
 
 # 18.2 Guidelines for Adventurer Age and Ability Score Changes
@@ -41,32 +41,53 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: In such cases, you can **increase** the experience points for accomplishing missions as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08039))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08039))_
+
+> In such cases, you can **increase** the experience points for accomplishing missions as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08040))_
 
 > First, the game master must determine what are the most _severe_ obstacles to accomplishing the mission.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08040))_
 
-> Context: This most severe obstacle has the condition that it _must be resolved by rolling the dice, regardless of the character's efforts_ . For example, in a scenario where you negotiate with a dragon, which is a 10th level monster, and get it to give you an item, you don't have to _fight_ the dragon and you don't need to _roll_ any dice.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08042))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08042))_
+
+> This most severe obstacle has the condition that it _must be resolved by rolling the dice, regardless of the character's efforts_ . For example, in a scenario where you negotiate with a dragon, which is a 10th level monster, and get it to give you an item, you don't have to _fight_ the dragon and you don't need to _roll_ any dice.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08043))_
 
 > Therefore, this dragon is _not_ an obstacle to consider here. If you _have_ to fight the dragon regardless of whether the negotiations are successful or not, the dragon _will_ become an obstacle.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08043))_
 
-> Context: Even when using this method, if you _cannot_ accomplish the mission, you’ll _still_ only receive 500 experience points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08045))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08045))_
+
+> Even when using this method, if you _cannot_ accomplish the mission, you’ll _still_ only receive 500 experience points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08048))_
 
 > Also, if you’re a game master, you may need to prepare an old man or a young boy for an NPC.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08048))_
 
-> Context: After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))_
+
+> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08055))_
 
 > **Table 18-1: Age-Based Ability Score Modification Table**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08055))_
 
-> Context: After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))_
+
+> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08056))_
 
 | Age | Modifcation |
 | --- | --- |
@@ -100,4 +121,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08056))_

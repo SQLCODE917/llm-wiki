@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rules-for-awarding-greater-experience-points-d357faff@3063c43c7dcd7bfd1c36f8a816c3ecc2
+projection_coverage: section-sword-world-rpg-complete-edition-section-rules-for-awarding-greater-experience-points-d357faff@e5b94cf036a7bac1d48770f279a17c47
 ---
 
 # **Rules for Awarding Greater Experience Points**
@@ -32,14 +32,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: In such cases, you can **increase** the experience points for accomplishing missions as follows.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08039))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08039))_
+
+> In such cases, you can **increase** the experience points for accomplishing missions as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08040))_
 
 > First, the game master must determine what are the most _severe_ obstacles to accomplishing the mission.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08040))_
 
-> Context: This most severe obstacle has the condition that it _must be resolved by rolling the dice, regardless of the character's efforts_ . For example, in a scenario where you negotiate with a dragon, which is a 10th level monster, and get it to give you an item, you don't have to _fight_ the dragon and you don't need to _roll_ any dice.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08042))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08042))_
+
+> This most severe obstacle has the condition that it _must be resolved by rolling the dice, regardless of the character's efforts_ . For example, in a scenario where you negotiate with a dragon, which is a 10th level monster, and get it to give you an item, you don't have to _fight_ the dragon and you don't need to _roll_ any dice.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08043))_
 
 > Therefore, this dragon is _not_ an obstacle to consider here. If you _have_ to fight the dragon regardless of whether the negotiations are successful or not, the dragon _will_ become an obstacle.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08043))_

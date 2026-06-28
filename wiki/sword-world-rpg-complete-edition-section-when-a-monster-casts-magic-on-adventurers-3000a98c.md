@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-when-a-monster-casts-magic-on-adventurers-3000a98c@4ea98277665e7c3fcbff2316ba63a766
+projection_coverage: section-sword-world-rpg-complete-edition-section-when-a-monster-casts-magic-on-adventurers-3000a98c@9bab0bd995639b33114757ca7dbf1eeb
 ---
 
 # **When a Monster Casts Magic on Adventurers**
@@ -16,5 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01312))_
+
 > Each player must make a resistance roll using _monster's magic intensity_ as the target score.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01312))_

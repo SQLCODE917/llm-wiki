@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-jihad-spell-level-10-c139099f@a27e6d6b05d052ca6a98d566d192d4b3
+projection_coverage: section-sword-world-rpg-complete-edition-section-jihad-spell-level-10-c139099f@601e791d197018fcccf07485cb7f1e1d
 ---
 
 # **[ Jihad ] (Spell Level=10)**
@@ -25,32 +25,56 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03086))_
+
 > Base Mental Power Cost=50
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03086))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03087))_
 
 > Distance=Caster
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03087))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03088))_
 
 > Area=All believers of Pharis within the caster's view
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03088))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03089))_
 
 > Duration=1 week
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03089))_
 
-> Context: This spell is used when a high priest of Pharis discovers a great evil that absolutely cannot be overlooked. Gather as many Pharis believers as you can to a temple, and cast this in front of them. As a result, anyone who agrees to the spell, including the person who cast it, will experience the following effects.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+
+> This spell is used when a high priest of Pharis discovers a great evil that absolutely cannot be overlooked. Gather as many Pharis believers as you can to a temple, and cast this in front of them. As a result, anyone who agrees to the spell, including the person who cast it, will experience the following effects.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03090))_
 
 > Effect=Gives great fighting ability to believers of Pharis
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03090))_
 
-> Context: This spell is used when a high priest of Pharis discovers a great evil that absolutely cannot be overlooked. Gather as many Pharis believers as you can to a temple, and cast this in front of them. As a result, anyone who agrees to the spell, including the person who cast it, will experience the following effects.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+
+> This spell is used when a high priest of Pharis discovers a great evil that absolutely cannot be overlooked. Gather as many Pharis believers as you can to a temple, and cast this in front of them. As a result, anyone who agrees to the spell, including the person who cast it, will experience the following effects.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03091))_
 
 > Type=Ritual, mind, target score Expand=Final score, duration Resist=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03091))_
 
-> Context: This spell is used when a high priest of Pharis discovers a great evil that absolutely cannot be overlooked. Gather as many Pharis believers as you can to a temple, and cast this in front of them. As a result, anyone who agrees to the spell, including the person who cast it, will experience the following effects.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+
+> This spell is used when a high priest of Pharis discovers a great evil that absolutely cannot be overlooked. Gather as many Pharis believers as you can to a temple, and cast this in front of them. As a result, anyone who agrees to the spell, including the person who cast it, will experience the following effects.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03094))_
 
 > The caster can also exclude anyone from the spell, even if another person willingly agrees.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03094))_

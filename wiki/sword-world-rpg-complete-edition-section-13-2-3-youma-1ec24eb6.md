@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-3-youma-1ec24eb6@5abc5a255489c0ac4ab7ab1303755d91
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-3-youma-1ec24eb6@76bd11df7d575a85ca778000a83ac0c6
 ---
 
 # 13.2.3 Youma
@@ -93,89 +93,168 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05004))_
+
 > Monster Level=1
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05004))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05005))_
 
 > Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05005))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05007))_
 
 > Poison (Toxicity Score 10, Paralysis, Duration=1 Hour)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05007))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05008))_
 
 > Habitat=Unknown
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05008))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05009))_
 
 > Languages=Impish Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05009))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05015))_
 
 > Rarity=6 Agility=14 Movement Speed=8 Number=Several to dozens Frequency=Frequent Intellect=Low
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05015))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05017))_
 
 > Attack Points=Weapon or fangs: 8 (1) Strike Points=5 Evasion Points=10 (3) Defense Points=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05017))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05018))_
 
 > Life Points/Resistance=8/8 (1) Mental Points/Resistance=8/8 (1) Special Abilities=Silver corrosion? Habitat=Mountains near human villages, forests, caves Languages=Goblin Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05018))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05019))_
 
 > They usually attack with their fangs, but they may also use a piece of wood as a club (in terms of data, they are the same).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05019))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05024))_
 
 > Special Abilities=2nd level spirit magic (Magic Intensity/Magic Power=11/4) Habitat=Mountains, highlands Languages=Impish, silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05024))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05029))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05029))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05036))_
 
 > Habitat=Mountains near human villages, forests, caves
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05036))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05038))_
 
 > Monster Level=3 Rarity=10 Agility=13 Movement Speed=8 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Weapon or fang: 10 (3) Strike Points=8
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05038))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05039))_
 
 > Languages=Goblin Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05039))_
+
+### Technical atom 15
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05040))_
 
 > In their villages, they may use kobolds and human children as slaves.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05040))_
 
-> Context: Goblins are a type of youma that live near human villages, and are extremely common monsters in Alecrast. Their height is slightly smaller than that of a human, and their skin is reddish-brown. They usually live in groups of several to several dozen in forests and hills, but they sometimes appear at people's homes and attack livestock or steal. They often use weapons (mostly small ones such as shortswords, daggers etc.) stolen from humans. In their villages, they may use kobolds and human childr
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05040))_
+### Technical atom 16
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05040))_
+
+> Goblins are a type of youma that live near human villages, and are extremely common monsters in Alecrast. Their height is slightly smaller than that of a human, and their skin is reddish-brown. They usually live in groups of several to several dozen in forests and hills, but they sometimes appear at people's homes and attack livestock or steal. They often use weapons (mostly small ones such as shortswords, daggers etc.) stolen from humans. In their villages, they may use kobolds and human childr
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05041))_
 
 > Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=12/11 (4) Mental Points/Resistance=15/11 (4)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05041))_
 
-> Context: Goblins are a type of youma that live near human villages, and are extremely common monsters in Alecrast. Their height is slightly smaller than that of a human, and their skin is reddish-brown. They usually live in groups of several to several dozen in forests and hills, but they sometimes appear at people's homes and attack livestock or steal. They often use weapons (mostly small ones such as shortswords, daggers etc.) stolen from humans. In their villages, they may use kobolds and human childr
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05040))_
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05040))_
+
+> Goblins are a type of youma that live near human villages, and are extremely common monsters in Alecrast. Their height is slightly smaller than that of a human, and their skin is reddish-brown. They usually live in groups of several to several dozen in forests and hills, but they sometimes appear at people's homes and attack livestock or steal. They often use weapons (mostly small ones such as shortswords, daggers etc.) stolen from humans. In their villages, they may use kobolds and human childr
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05042))_
 
 > Special Abilities=3rd level spirit magic (Magic Intensity/Magic Power=12/5)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05042))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05044))_
 
 > Habitat=Mountains, forests, caves Languages=Goblin, silent spirit, regional Perception=Five senses (darkvision, infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05044))_
+
+### Technical atom 19
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05054))_
 
 > Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6) Weak to fire Weak to dehydration
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05054))_
+
+### Technical atom 20
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05056))_
 
 > Languages=Impish, regional Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05056))_
 
-> Context: Marshmen, also known as water imps, are youma that live in swamps. Their bodies are covered with green skin, and their backs are hard and shellshaped. They have high intelligence comparable to humans, and also have a rudimentary social life. They are exclusionary toward other races and react aggressively to anything that enters their habitat. They seem to have a deep connection with water spirits, and use undine-type spirit magic up to 4th level.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05057))_
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05057))_
+
+> Marshmen, also known as water imps, are youma that live in swamps. Their bodies are covered with green skin, and their backs are hard and shellshaped. They have high intelligence comparable to humans, and also have a rudimentary social life. They are exclusionary toward other races and react aggressively to anything that enters their habitat. They seem to have a deep connection with water spirits, and use undine-type spirit magic up to 4th level.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05058))_
 
 > They're weak against fire and heat, so when attacking a marshman with firebased magic, add +10 to strike power when making the check.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05058))_
 
-> Context: Marshmen, also known as water imps, are youma that live in swamps. Their bodies are covered with green skin, and their backs are hard and shellshaped. They have high intelligence comparable to humans, and also have a rudimentary social life. They are exclusionary toward other races and react aggressively to anything that enters their habitat. They seem to have a deep connection with water spirits, and use undine-type spirit magic up to 4th level.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05057))_
+### Technical atom 22
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05057))_
+
+> Marshmen, also known as water imps, are youma that live in swamps. Their bodies are covered with green skin, and their backs are hard and shellshaped. They have high intelligence comparable to humans, and also have a rudimentary social life. They are exclusionary toward other races and react aggressively to anything that enters their habitat. They seem to have a deep connection with water spirits, and use undine-type spirit magic up to 4th level.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05060))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05060))_
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05061))_
 
 > Rarity=11 Agility=19 Movement Speed=19 Number=One to several Frequency=Rare Intellect=High Reaction=Adversarial Attack Points=Weapon: 9 (2) Strike Points=6+poison
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05061))_
+
+### Technical atom 24
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05062))_
 
 > Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=10/10 (3) Mental Points/Resistance=17/15 (8) Special Abilities=3rd level spirit magic (Magic Intensity/Magic Power=13/6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05062))_
+
+### Technical atom 25
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05072))_
 
 > Habitat=Forests far from human villages Languages=Elven, silent spirit, regional Perception=Five senses (darkvision, infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05072))_

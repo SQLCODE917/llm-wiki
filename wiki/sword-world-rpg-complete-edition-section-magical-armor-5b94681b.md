@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magical-armor-5b94681b@63a8e2007452088a20ed4c730b3e5703
+projection_coverage: section-sword-world-rpg-complete-edition-section-magical-armor-5b94681b@eaf36e13e8f0317486077f4e1748de5a
 ---
 
 # 【 **Magical Armor** 】
@@ -26,8 +26,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01149))_
+
 > If you wear +1 magical armor, you gain _+1_ to evasion speed and damage reduction.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01149))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01150))_
 
 > Even if it is magical, if it is _metal_ armor, a shaman cannot wear it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01150))_

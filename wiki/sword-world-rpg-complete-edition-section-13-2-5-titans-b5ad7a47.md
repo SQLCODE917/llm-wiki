@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-5-titans-b5ad7a47@f97ed2d2307f326c4928b9a4fd36dd47
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-5-titans-b5ad7a47@808929ea15871990a937973e177a22d6
 ---
 
 # 13.2.5 Titans
@@ -126,131 +126,238 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> The target must make a mental power resistance roll (target score 15).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05219))_
+### Technical atom 1
 
-> Context: Each round, the mad spirit of life attempts to pour excessive life spirit power into a single target. Those affected by it suffer the effects of (physical) age shifting. The target must make a mental power resistance roll (target score 15). If you fail, roll 2D. If the roll is 8 or greater, you will age by _roll-7_ years. If the roll is 6 or less, you will become younger by _7-roll_ years. If the roll is exactly 7, no age change will occur. Regarding the results of aging and de-aging, please ref
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05219))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05219))_
+
+> The target must make a mental power resistance roll (target score 15).
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05219))_
+
+> Each round, the mad spirit of life attempts to pour excessive life spirit power into a single target. Those affected by it suffer the effects of (physical) age shifting. The target must make a mental power resistance roll (target score 15). If you fail, roll 2D. If the roll is 8 or greater, you will age by _roll-7_ years. If the roll is 6 or less, you will become younger by _7-roll_ years. If the roll is exactly 7, no age change will occur. Regarding the results of aging and de-aging, please ref
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05222))_
 
 > Monster Level=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05222))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05223))_
 
 > Rarity=12 (However, a shaman always knows)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05223))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05224))_
 
 > Agility=14 Movement Speed=14/30 (air) Number=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05224))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05225))_
 
 > Frequency=Very Rare Intellect=Human Reaction=Adversarial Attack Points=-
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05225))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05226))_
 
 > Strike Points=Evasion Points=14 (7) Defense Points=8
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05226))_
+
+### Technical atom 7
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05227))_
 
 > Life Points/Resistance=15/14 (7)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05227))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05228))_
 
 > Mental Points/Resistance=25/16 (9)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05228))_
 
-> Context: Valkyrie is a mind spirit. It governs the courage of men who fight. Her appearance is that of a human woman clad in shining white armor, and her noble appearance is said to fascinate all men. However, a mad valkyrie is extremely cruel and terrifying. They attack from above, casting the spell _Valkyrie Javelin_ where sword attacks can't reach. They will also cast a _Fanaticism_ spell to provoke you. Casting these spells does not consume spirit
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05231))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05231))_
+
+> Valkyrie is a mind spirit. It governs the courage of men who fight. Her appearance is that of a human woman clad in shining white armor, and her noble appearance is said to fascinate all men. However, a mad valkyrie is extremely cruel and terrifying. They attack from above, casting the spell _Valkyrie Javelin_ where sword attacks can't reach. They will also cast a _Fanaticism_ spell to provoke you. Casting these spells does not consume spirit
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05229))_
 
 > Special Abilities=6th level spirit magic (Magic Intensity/Magic Power=15/8, valkyrie only)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05229))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05236))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05236))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05237))_
 
 > Rarity=14 Agility=10 Movement Speed=15 Number=One to several Frequency=Very Rare Intellect=Low Reaction=Hunger-based Attack Points=Claw: 13 (6)/Claw:13 (6) Strike Points=13/13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05237))_
+
+### Technical atom 12
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05238))_
 
 > Evasion Points=11 (4) Defense Points=8 Life Points/Resistance=21/14 (7) Mental Points/Resistance=14/13 (6) Special Abilities=Strong to cold
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05238))_
+
+### Technical atom 13
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05240))_
 
 > Habitat=Cold regions, high mountains (snow never melts) Languages=Giant Perception=Five senses
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05240))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05242))_
 
 > Characters cannot move freely in deep snow areas such as those where the yeti lives.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05242))_
 
-> Context: Characters cannot move freely in deep snow areas such as those where the yeti lives. When fighting in these locations, your attack and evasion will suffer a -2 penalty, and your movement speed will be halved. However, the yeti itself is adapted to snow and does not suffer this penalty.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05242))_
+### Technical atom 15
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05242))_
+
+> Characters cannot move freely in deep snow areas such as those where the yeti lives. When fighting in these locations, your attack and evasion will suffer a -2 penalty, and your movement speed will be halved. However, the yeti itself is adapted to snow and does not suffer this penalty.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05243))_
 
 > Conversely, it is weak against fire, so if it's a fire-based attack, the check can be made with +10 to strike power.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05243))_
 
-> Context: Characters cannot move freely in deep snow areas such as those where the yeti lives. When fighting in these locations, your attack and evasion will suffer a -2 penalty, and your movement speed will be halved. However, the yeti itself is adapted to snow and does not suffer this penalty.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05242))_
+### Technical atom 16
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05242))_
+
+> Characters cannot move freely in deep snow areas such as those where the yeti lives. When fighting in these locations, your attack and evasion will suffer a -2 penalty, and your movement speed will be halved. However, the yeti itself is adapted to snow and does not suffer this penalty.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05245))_
 
 > Monster Level=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05245))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05251))_
 
 > Evasion Points=13 (6) Defense Points=8
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05251))_
 
-> Context: If given the chance (such as when they're alone with a human who believes they're a normal child), a spriggan will revert to their true form (an ugly, 3- meter-tall titan with fangs bared and claws out) to attack their target. The transformation is instantaneous. If the target is unaware of the spriggan's true identity, this is a surprise attack. The target may not take any actions for one round and will suffer a -4 penalty to evasion. Spriggans quickly devour the flesh of those they kill. If th
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05255))_
+### Technical atom 18
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05255))_
+
+> If given the chance (such as when they're alone with a human who believes they're a normal child), a spriggan will revert to their true form (an ugly, 3- meter-tall titan with fangs bared and claws out) to attack their target. The transformation is instantaneous. If the target is unaware of the spriggan's true identity, this is a surprise attack. The target may not take any actions for one round and will suffer a -4 penalty to evasion. Spriggans quickly devour the flesh of those they kill. If th
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05254))_
 
 > The form that a Spriggan can take after transforming is fixed for each individual (its apparent age cannot be changed either).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05254))_
 
-> Context: Spriggans are evil titans who enjoy eating raw meat. They usually live in mountains, hills, forests, etc. but sometimes they come to human villages in search of their favorite food, human flesh. When entering a human village, spriggan transforms into a human child between the ages of 4 and 10. The transformation is so ingenious that there's nothing that hints at the spriggan's true identity, nor can it be detected by _Sense Magic_ or _Sense Aura_ . The form that a Spriggan can take after transfo
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05254))_
+### Technical atom 19
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05254))_
+
+> Spriggans are evil titans who enjoy eating raw meat. They usually live in mountains, hills, forests, etc. but sometimes they come to human villages in search of their favorite food, human flesh. When entering a human village, spriggan transforms into a human child between the ages of 4 and 10. The transformation is so ingenious that there's nothing that hints at the spriggan's true identity, nor can it be detected by _Sense Magic_ or _Sense Aura_ . The form that a Spriggan can take after transfo
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05255))_
 
 > The target may not take any actions for one round and will suffer a -4 penalty to evasion.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05255))_
 
-> Context: If given the chance (such as when they're alone with a human who believes they're a normal child), a spriggan will revert to their true form (an ugly, 3- meter-tall titan with fangs bared and claws out) to attack their target. The transformation is instantaneous. If the target is unaware of the spriggan's true identity, this is a surprise attack. The target may not take any actions for one round and will suffer a -4 penalty to evasion. Spriggans quickly devour the flesh of those they kill. If th
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05255))_
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05255))_
+
+> If given the chance (such as when they're alone with a human who believes they're a normal child), a spriggan will revert to their true form (an ugly, 3- meter-tall titan with fangs bared and claws out) to attack their target. The transformation is instantaneous. If the target is unaware of the spriggan's true identity, this is a surprise attack. The target may not take any actions for one round and will suffer a -4 penalty to evasion. Spriggans quickly devour the flesh of those they kill. If th
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05256))_
 
 > A spriggan can use its considerable strength even in its child form.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05256))_
 
-> Context: Spriggans are apostles of the dark gods and can use up to 2nd level dark magic.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05257))_
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05257))_
+
+> Spriggans are apostles of the dark gods and can use up to 2nd level dark magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05259))_
 
 > Monster Level=6
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05259))_
+
+### Technical atom 22
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05261))_
 
 > Special Abilities=Camouflage (Sense target score=13)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05261))_
 
-> Context: Although they're about 3 meters long, they walk with their backs bent, probably because they live in caves. They also have arms so long that their fingertips just barely touch the ground. Their body color is the same as a rock surface, and if you are careless, you may mistake one for a huge rock. To notice their presence, you must succeed on a success roll against target score 13 using _ranger skill level + intelligence bonus_ as the baseline score. If you fail, the troll can make a surprise att
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05264))_
+### Technical atom 23
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05264))_
+
+> Although they're about 3 meters long, they walk with their backs bent, probably because they live in caves. They also have arms so long that their fingertips just barely touch the ground. Their body color is the same as a rock surface, and if you are careless, you may mistake one for a huge rock. To notice their presence, you must succeed on a success roll against target score 13 using _ranger skill level + intelligence bonus_ as the baseline score. If you fail, the troll can make a surprise att
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05262))_
 
 > Habitat=Caves, hills Languages=Giant Perception=Five senses (darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05262))_
 
-> Context: Trolls are titans with rock-like skin. They have very low intellect and rarely use tools. They live in caves and hills, and do not appear in forests or meadows. Due to this and their rugged, rock-like appearance, some sages believe that they may have some kind of connection with earth spirits, but it’s not clear whether this is true. In any case, it’s certain that they're terrifying monsters with enormous strength.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05263))_
+### Technical atom 24
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05263))_
+
+> Trolls are titans with rock-like skin. They have very low intellect and rarely use tools. They live in caves and hills, and do not appear in forests or meadows. Due to this and their rugged, rock-like appearance, some sages believe that they may have some kind of connection with earth spirits, but it’s not clear whether this is true. In any case, it’s certain that they're terrifying monsters with enormous strength.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05264))_
 
 > Their body color is the same as a rock surface, and if you are careless, you may mistake one for a huge rock.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05264))_
+
+### Technical atom 25
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05268))_
 
 > Monster Level=7
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05268))_
+
+### Technical atom 26
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05283))_
 
 > Monster Level=11 Rarity=12
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05283))_
+
+### Technical atom 27
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05284))_
 
 > Agility=9 Movement Speed=20 Number=One to several Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Arm:19 (12) Strike Points=21
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05284))_
+
+### Technical atom 28
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05285))_
 
 > Evasion Points=16 (9) Defense Points=15 Life Points/Resistance=45/24 (17) Mental Points/Resistance=15/19 (12) Special Abilities=7th level spirit magic (Magic Intensity/Magic Power=16/9, fire spirits only)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05285))_
+
+### Technical atom 29
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05287))_
 
 > Habitat=Mountains near human villages, hills Languages=Giant, silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05287))_
+
+### Technical atom 30
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05294))_
 
 > Habitat=Cold regions Languages=Giant, silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05294))_
+
+### Technical atom 31
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05295))_
 
 > If you can't communicate, they may threaten you.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05295))_
 
-> Context: Frost giants have a deep connection with the spirit power of ice, and can use spirit magic sourced from the power of ice spirits (frau, fenrir) up to 8th level. Also, they will not suffer any damage at all from cold-type attacks.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05296))_
+### Technical atom 32
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05296))_
+
+> Frost giants have a deep connection with the spirit power of ice, and can use spirit magic sourced from the power of ice spirits (frau, fenrir) up to 8th level. Also, they will not suffer any damage at all from cold-type attacks.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05298))_
 
 > Monster Level=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05298))_

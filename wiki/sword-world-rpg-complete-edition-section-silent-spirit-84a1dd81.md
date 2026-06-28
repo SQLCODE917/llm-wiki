@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-silent-spirit-84a1dd81@f1ecc00a735eb57b882f1791e9b989a6
+projection_coverage: section-sword-world-rpg-complete-edition-section-silent-spirit-84a1dd81@5bc0c25b1e6ee1ef59e464ac474ebec8
 ---
 
 # 《 **Silent Spirit** 》
@@ -22,8 +22,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: _Sense aura_ is a subtle sensation, more like what we can _smell_ than _see_ . Even if you know that spirit power is at work, you won't be able to tell where that spirit power is coming from unless you get very close. Also, if there's extremely strong spirit power in your surroundings, you may not be able to sense _weak_ spirit power at work.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02276))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02276))_
+
+> _Sense aura_ is a subtle sensation, more like what we can _smell_ than _see_ . Even if you know that spirit power is at work, you won't be able to tell where that spirit power is coming from unless you get very close. Also, if there's extremely strong spirit power in your surroundings, you may not be able to sense _weak_ spirit power at work.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02278))_
 
 > Those who can use these runes can communicate with any spirit.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02278))_

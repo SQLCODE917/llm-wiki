@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-vampire-skin-a05064ac@a4aeb30e31ea68e354998f16cf4a3e50
+projection_coverage: section-sword-world-rpg-complete-edition-section-vampire-skin-a05064ac@07f40f8263b7b66f0680636ac518c56f
 ---
 
 # **[ Vampire Skin ]**
@@ -23,14 +23,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04711))_
+
 > Symptoms=Become extremely weak against sunlight
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04711))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04712))_
 
 > Rarity=15
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04712))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04714))_
 
 > Fatal Depth=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04714))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04715))_
 
 > Infection Power=Weak
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04715))_

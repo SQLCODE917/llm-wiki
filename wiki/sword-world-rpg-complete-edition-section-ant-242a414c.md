@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ant-242a414c@d5c3c21700c2177735b4bd0a5ab0660d
+projection_coverage: section-sword-world-rpg-complete-edition-section-ant-242a414c@b5cf9081fb8628d4a09071a3aaf0d45e
 ---
 
 # **[ Ant ]**
@@ -20,6 +20,10 @@ From [[sword-world-rpg-complete-edition]].
 - Ordinary ants are unlikely to pose a threat to adventurers. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05849))_
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08373))_
 
 | **Merchant Skill Abilities Table** |
 | --- |
@@ -39,4 +43,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08373))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-12-4eb1169a@b5920638575aaeac2498b44f25243605
+projection_coverage: section-sword-world-rpg-complete-edition-section-rarity-12-4eb1169a@00691d6402e500f8c0e5c497c019ffc2
 ---
 
 # Rarity=12
@@ -26,8 +26,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07269))_
+
 > Enchanter=Gerebeis, "The Sharptongued" Form=Necklace adorned with bluish diamonds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07269))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07270))_
 
 > Base Trade Price=170,000 gamels Powers=Makes one target believe what the wearer believes.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07270))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bat-8ee3c29d@78199913755c19f62827e46dcdd07759
+projection_coverage: section-sword-world-rpg-complete-edition-section-bat-8ee3c29d@3012419d12a726d2dd661304a2cb6232
 ---
 
 # **Bat**
@@ -21,8 +21,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Combat often occurs in unusual locations, such as in the dark, on poor footing, etc. In such cases, a penalty (sometimes a bonus) is given to an adventurer's attack power or evasion speed, depending on the situation. If the same conditions apply to monsters, the same penalty (bonus) will be given to the monster's attack and evasion points.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03851))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03851))_
+
+> Combat often occurs in unusual locations, such as in the dark, on poor footing, etc. In such cases, a penalty (sometimes a bonus) is given to an adventurer's attack power or evasion speed, depending on the situation. If the same conditions apply to monsters, the same penalty (bonus) will be given to the monster's attack and evasion points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03854))_
 
 | **Table 10-1: Attack Power and Evasion Speed Modifers** |
 | --- |
@@ -44,13 +49,22 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03851))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03854))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05780))_
 
 > Monster Level=1
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05780))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05781))_
 
 > Rarity=5 Agility=18 Movement Speed=10 Number=Several to around ten Frequency=Moderate Intellect=Animal Reaction=Neutral Attack Points=Fangs:8 (1) Strike Points=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05781))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
 | **Table 16-4 Maximum Ranges** |
 | --- |
@@ -106,4 +120,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05781))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_

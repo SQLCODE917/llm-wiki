@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-11-daemons-underworld-creatures-f828d7f6@961e238cfeb7f0843a7acefc2ca34b76
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-11-daemons-underworld-creatures-f828d7f6@e83dd9e7b158d91ef6fafd3ab5f6a620
 ---
 
 # 13.2.11 Daemons/Underworld Creatures
@@ -65,77 +65,142 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06562))_
+
 > Rarity=15 Agility=16 Movement Speed=21 Number=One Frequency=Very rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs: 11 (4) Strike Points=10
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06562))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06565))_
 
 > If the game master wishes, they may create special aetherbeasts.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06565))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06568))_
 
 > Rarity=14 Agility=15 Movement Speed=18 Number=One Frequency=Rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs:12 (5) Strike Points=12 Evasion Points=12 (5) Defense Points=8 Life Points/Resistance=16/13 (6) Mental Points/Resistance=12/13 (6)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06568))_
+
+### Technical atom 4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06569))_
 
 > Special Abilities=Fire breath in a 5 meter forward radius (Resist target score=12, strike power 10, bonus damage 5)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06569))_
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06570))_
 
 > Fire immunity Habitat=Deep caves, underground labyrinths Languages=None
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06570))_
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06576))_
 
 > Fire immunity Habitat=Deep within underground labyrinths Languages=None Perception=Five senses (Darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06576))_
 
-> Context: Like a hellhound, a cerberus can also breathe fire. If a 1 is rolled on 1D, all three heads will breathe fire at the same time in three different directions. Everyone in a 5 meter radius surrounding the cerberus will suffer damage equal to a strike power 20 strike roll plus bonus damage 8. Armor cannot protect against this fire; only adventurer level and magical defense can reduce the damage.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06578))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06578))_
+
+> Like a hellhound, a cerberus can also breathe fire. If a 1 is rolled on 1D, all three heads will breathe fire at the same time in three different directions. Everyone in a 5 meter radius surrounding the cerberus will suffer damage equal to a strike power 20 strike roll plus bonus damage 8. Armor cannot protect against this fire; only adventurer level and magical defense can reduce the damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06581))_
 
 > Monster Level=5 Rarity=13 Agility=14 Movement Speed=15 Number=One to several Frequency=Very rare Intellect=Human
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06581))_
+
+### Technical atom 8
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06582))_
 
 > Reaction=Adversarial, or command-based Attack Points=Weapon: 12 (5)/Tail: 12 (5) Strike Points=13/13
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06582))_
+
+### Technical atom 9
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06584))_
 
 > Habitat=Underground labyrinths, secluded ruins
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06584))_
+
+### Technical atom 10
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06585))_
 
 > Languages=Low ancient
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06585))_
+
+### Technical atom 11
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06587))_
 
 > The target will be unable to move, and the grunel can attack with the weapon in its right hand.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06587))_
 
-> Context: A grunel is a humanoid lesser daemon with steel-blue skin. It's characterized by its long tail, which it can manipulate freely like a whip to attack or entangle enemies. If it uses its tail to entangle, treat this as a strangling attack (see p. 236). The target will be unable to move, and the grunel can attack with the weapon in its right hand. They have the ability to use ancient magic. They seem to have been especially proficient at enchanting, and often carry a magical sword. If a grunel has 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06587))_
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06587))_
+
+> A grunel is a humanoid lesser daemon with steel-blue skin. It's characterized by its long tail, which it can manipulate freely like a whip to attack or entangle enemies. If it uses its tail to entangle, treat this as a strangling attack (see p. 236). The target will be unable to move, and the grunel can attack with the weapon in its right hand. They have the ability to use ancient magic. They seem to have been especially proficient at enchanting, and often carry a magical sword. If a grunel has
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06589))_
 
 > Monster Level=5 Rarity=13 Agility=14 Movement Speed=15/17 (air) Number=One to several Frequency=Very rare Intellect=Human Reaction=Adversarial, or command-based Attack Points=Claws: 13 (6) Strike Points=14
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06589))_
 
-> Context: A grunel is a humanoid lesser daemon with steel-blue skin. It's characterized by its long tail, which it can manipulate freely like a whip to attack or entangle enemies. If it uses its tail to entangle, treat this as a strangling attack (see p. 236). The target will be unable to move, and the grunel can attack with the weapon in its right hand. They have the ability to use ancient magic. They seem to have been especially proficient at enchanting, and often carry a magical sword. If a grunel has 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06587))_
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06587))_
+
+> A grunel is a humanoid lesser daemon with steel-blue skin. It's characterized by its long tail, which it can manipulate freely like a whip to attack or entangle enemies. If it uses its tail to entangle, treat this as a strangling attack (see p. 236). The target will be unable to move, and the grunel can attack with the weapon in its right hand. They have the ability to use ancient magic. They seem to have been especially proficient at enchanting, and often carry a magical sword. If a grunel has
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06590))_
 
 > Evasion Points=12 (5) Defense Points=9 Life Points/Resistance=25/15 (8)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06590))_
+
+### Technical atom 14
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06593))_
 
 > Special Abilities=3rd level dark magic (magic intensity/magic power=12/5)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06593))_
 
-> Context: The zalbard is a lesser daemon that's said to be the model for the gargoyle. Its appearance is almost identical to that of a gargoyle, but its skin is fiery red. Its eyes are also bright red, and glow suspiciously. A zalbard's method of attack is the sharp claws on its hands, and it also has the power to breathe magical fire from its mouth. The fire breathed by a zalbard extends in a straight line, making one target within 5 meters its victim. Those attacked by the fire will suffer damage equal 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06599))_
+### Technical atom 15
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06599))_
+
+> The zalbard is a lesser daemon that's said to be the model for the gargoyle. Its appearance is almost identical to that of a gargoyle, but its skin is fiery red. Its eyes are also bright red, and glow suspiciously. A zalbard's method of attack is the sharp claws on its hands, and it also has the power to breathe magical fire from its mouth. The fire breathed by a zalbard extends in a straight line, making one target within 5 meters its victim. Those attacked by the fire will suffer damage equal
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06602))_
 
 > Languages=Low ancient, languages of the person it shapeshifts into Perception=Five senses (Darkvision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06602))_
+
+### Technical atom 16
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06605))_
 
 > If it spends one minute to observe them, it can imitate their tone of speech and gestures exactly.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06605))_
+
+### Technical atom 17
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06606))_
 
 > Reaction=Adversarial, or command-based Attack Points=Fangs: 13 (6)/Claws: 14 (7) Strike Points=17+Poison/16
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06606))_
+
+### Technical atom 18
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06607))_
 
 > Evasion Points=12 (5) Defense Points=10 Life Points/Resistance=30/17 (10) Mental Points/Resistance=20/15 (8) Special Abilities=3rd level dark magic (magic intensity/magic power=12/5)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06607))_
 
-> Context: However, it cannot copy its opponent's abilities and memories. Even if it shapeshifts, a doubleburg's score data will not change at all. For example, even though it looks like it's wielding a weapon, it's actually a part of the doubleburg's own body that's been shapeshifted.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06608))_
+### Technical atom 19
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06608))_
+
+> However, it cannot copy its opponent's abilities and memories. Even if it shapeshifts, a doubleburg's score data will not change at all. For example, even though it looks like it's wielding a weapon, it's actually a part of the doubleburg's own body that's been shapeshifted.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06610))_
 
 > Habitat=Underground labyrinths, secluded ruins
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06610))_
+
+### Technical atom 20
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06614))_
 
 > Monster Level=6 Rarity=13 Agility=10 Movement Speed=12/20 (air) Number=One Frequency=Very rare
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06614))_

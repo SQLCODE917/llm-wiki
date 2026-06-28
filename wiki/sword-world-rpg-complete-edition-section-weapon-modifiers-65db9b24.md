@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-modifiers-65db9b24@abdb7573305eb4a619704ffcec294898
+projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-modifiers-65db9b24@e9dcd8cfe0946f70482031d42a8a7f89
 ---
 
 # **Weapon Modifiers**
@@ -20,11 +20,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: In the basic rules, we did not consider the finer differences based on the shape of weapons and armor, but even though the required strength is the same, swords, axes, spears, and hammers differ in ease of use and power. This rule quantifies the finer differences between weapons and armor. The terms used on this table are explained below.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07704, source-range-870a16bc-07707))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07704, source-range-870a16bc-07707))_
+
+> In the basic rules, we did not consider the finer differences based on the shape of weapons and armor, but even though the required strength is the same, swords, axes, spears, and hammers differ in ease of use and power. This rule quantifies the finer differences between weapons and armor. The terms used on this table are explained below.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07706))_
 
 > Here is a table of weapons commonly used by adventurers (" _Table 16-1 Weapon Optional Rules_ ").
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07706))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_
 
 | Type | Attack Power Mod. | Strike Power Mod. | Critical Target |
 | --- | --- | --- | --- |
@@ -106,4 +114,3 @@ _(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07706))_
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07713))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-setting-target-scores-and-difficulties-392f562c@1879b5df4a9f5f7bfd5124fa228c62d5
+projection_coverage: section-sword-world-rpg-complete-edition-section-setting-target-scores-and-difficulties-392f562c@7f88f94c58da1bb1a364197895425d88
 ---
 
 # **Setting Target Scores and Difficulties**
@@ -26,20 +26,33 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: problem with things that are clearly stipulated in the rules, such as climbing, hit checks in combat, etc. but things that are not will have to be set by the game master each time they are needed. This table is written in a somewhat abstract format to accommodate all success rolls. As a game master, don't think too much about it, trust your own judgment and intuition when deciding on the target score or difficulty. It's not a good idea in an RPG to worry about situations like this and stall the 
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03791, source-range-870a16bc-03793))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03791, source-range-870a16bc-03793))_
+
+> problem with things that are clearly stipulated in the rules, such as climbing, hit checks in combat, etc. but things that are not will have to be set by the game master each time they are needed. This table is written in a somewhat abstract format to accommodate all success rolls. As a game master, don't think too much about it, trust your own judgment and intuition when deciding on the target score or difficulty. It's not a good idea in an RPG to worry about situations like this and stall the
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
 
 > To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
 
-> Context: To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+
+> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03794))_
 
 > **Table 9-1: Determining Target Scores or Difficulties**
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03794))_
 
-> Context: To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))_
+
+> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03795))_
 
 | Target Score | Difculty | Standard |
 | --- | --- | --- |
@@ -89,4 +102,3 @@ _(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03792))
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03795))_

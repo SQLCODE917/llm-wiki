@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-9285e1bb@da52959a7d27410cd1291a47afdd9966
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-9285e1bb@f2cec180ab52e23f8b8b383135b0a9ef
 ---
 
 # **18.3**
@@ -15,6 +15,10 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-9285e
 From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08086))_
 
 | Fire-type | Firebolt, Fireball, Firestorm |
 | --- | --- |
@@ -46,4 +50,3 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08086))_

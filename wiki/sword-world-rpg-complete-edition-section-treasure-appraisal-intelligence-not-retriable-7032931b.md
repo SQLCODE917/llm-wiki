@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-treasure-appraisal-intelligence-not-retriable-7032931b@0c37cbfb8c7cc7be54a465cfafad0737
+projection_coverage: section-sword-world-rpg-complete-edition-section-treasure-appraisal-intelligence-not-retriable-7032931b@9b1205d01c4ad67bffeab22b1edcbcc7
 ---
 
 # **[** ⑥ **Treasure Appraisal [Intelligence] ] (Not retriable)**
@@ -35,14 +35,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: This ability is used to know the value and utility of treasure. The _rarity_ of that treasure becomes the target score for a success roll. For standard ancient kingdom treasure-- many of which are magical items --the target score is around 15. Treat a failed treasure as being unable to _determine_ the treasure's value, _not_ as if you got the value _wrong_ . If the true value is 100 gamels, you will _not_ think that it's worth 10,000 gamels just because you failed the check. However, if the diff
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03466))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03466))_
+
+> This ability is used to know the value and utility of treasure. The _rarity_ of that treasure becomes the target score for a success roll. For standard ancient kingdom treasure-- many of which are magical items --the target score is around 15. Treat a failed treasure as being unable to _determine_ the treasure's value, _not_ as if you got the value _wrong_ . If the true value is 100 gamels, you will _not_ think that it's worth 10,000 gamels just because you failed the check. However, if the diff
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03468))_
 
 > If the research is successful, the sage may make another success roll.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03468))_
 
-> Context: If the research is successful, the sage may make another success roll. When something they didn't know (something that failed) becomes a success, the sage has found a description of it in the literature and has access to that knowledge.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03468))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03468))_
+
+> If the research is successful, the sage may make another success roll. When something they didn't know (something that failed) becomes a success, the sage has found a description of it in the literature and has access to that knowledge.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03469))_
 
 > Alternatively, if it is something that can be used in combat, such as weapons or armor, other adventurers may purchase it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03469))_

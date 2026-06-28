@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-strike-points-7a6d71fb@7872bbd8950ee7ed1a5e2d661eba2d95
+projection_coverage: section-sword-world-rpg-complete-edition-section-strike-points-7a6d71fb@55a91d2d574b24adba2dec88e2b20627
 ---
 
 # 《 **Strike Points** 》
@@ -22,11 +22,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: The numbers in parentheses next to each attack point score are used in the optional rule _16.1: Combat in Which Monsters Roll Dice._ (see p. 261).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04910))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04910))_
+
+> The numbers in parentheses next to each attack point score are used in the optional rule _16.1: Combat in Which Monsters Roll Dice._ (see p. 261).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04912))_
 
 > If a character fails to evade their attack, these strike points become damage and reduce the character's life force.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04912))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04914))_
 
 > If _Attack Points=Horn:12 (5)/Hoof:12 (5)_ is written as _Strike Points=17/16_ , then if the horn attack hits, it'll deal 17 points of damage, and the hoof attack hits, it'll deal 16 points.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04914))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-6-3-ranger-skill-dcb68b51@1e1e73a70c0e251341addf53d0e6df21
+projection_coverage: section-sword-world-rpg-complete-edition-section-6-3-ranger-skill-dcb68b51@a99d094e9d8a20ec86fa544f3f49d01e
 ---
 
 # 6.3 Ranger Skill
@@ -69,6 +69,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
+
 | Shield Name | Req. Str. | Price |
 | --- | --- | --- |
 | Small shield | 1 | 60 |
@@ -85,61 +89,99 @@ From [[sword-world-rpg-complete-edition]].
 ```
 
 </details>
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
+
+### Technical atom 2
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03370))_
 
 > For **set** , you can set traps up to a difficulty equal to your thief skill level without failing (you cannot set traps of a higher level).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03370))_
 
-> Context: This is the ability to track footprints left on the ground. The game master determines the difficulty by taking into account factors such as the condition of the ground and the amount of time that has passed since the footprints were made.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03390))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03390))_
+
+> This is the ability to track footprints left on the ground. The game master determines the difficulty by taking into account factors such as the condition of the ground and the amount of time that has passed since the footprints were made.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03393))_
 
 > For example, when you walk through a ravine and see a pebble fall, you may feel like a landslide
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03393))_
 
-> Context: Rangers have acquired the ability to endure difficult situations brought about by disaster, such as surviving with only a small amount of water or avoiding freezing to death in winter mountains, and either survive until help arrives or
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03400))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03400))_
+
+> Rangers have acquired the ability to endure difficult situations brought about by disaster, such as surviving with only a small amount of water or avoiding freezing to death in winter mountains, and either survive until help arrives or
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 
 > When an adventurer's survival is in danger, the game master should set a target score and have them make a success roll to overcome the situation.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 
-> Context: escape from a predicament on their own. When an adventurer's survival is in danger, the game master should set a target score and have them make a success roll to overcome the situation.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+### Technical atom 5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+
+> escape from a predicament on their own. When an adventurer's survival is in danger, the game master should set a target score and have them make a success roll to overcome the situation.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
 > The game master should determine the difficulty depending on what’s hidden.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
-> Context: This is the ability to search for hidden things. The game master should determine the difficulty depending on what’s hidden. Since it's an ability that relies on feeling out of place in nature, it can _only_ be used outdoors.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
+
+> This is the ability to search for hidden things. The game master should determine the difficulty depending on what’s hidden. Since it's an ability that relies on feeling out of place in nature, it can _only_ be used outdoors.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
 > You can also determine direction from the position of the sun or stars.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
-> Context: ranger succeeds on a success roll against a set target score using _ranger skill level + intelligence bonus_ as the baseline score, the ranger can roughly predict the weather (sunny, cloudy, rain, snow, storm, strong wind...... etc.) The game master must decide whether to use a difficulty or a target score. Normally you would use a target score. This is because failure means that the weather is unpredictable, and this is also very clear to the characters as well.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03411))_
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03411))_
+
+> ranger succeeds on a success roll against a set target score using _ranger skill level + intelligence bonus_ as the baseline score, the ranger can roughly predict the weather (sunny, cloudy, rain, snow, storm, strong wind...... etc.) The game master must decide whether to use a difficulty or a target score. Normally you would use a target score. This is because failure means that the weather is unpredictable, and this is also very clear to the characters as well.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03412))_
 
 > If you attempt to use this ability and fail the success roll, you simply cannot predict the weather; it does _not_ predict the opposite.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03412))_
 
-> Context: If you attempt to use this ability and fail the success roll, you simply cannot predict the weather; it does _not_ predict the opposite.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03412))_
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03412))_
+
+> If you attempt to use this ability and fail the success roll, you simply cannot predict the weather; it does _not_ predict the opposite.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03415))_
 
 > Rangers can determine what animals and plants they see.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03415))_
 
-> Context: Rangers can determine what animals and plants they see. When an animal or plant appears as a monster, you can make a success roll using its _rarity_ as the target score, similar to the sage skill's _monster check_ ability (the sage skill's abilities are explained later on page 118).
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03415))_
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03415))_
+
+> Rangers can determine what animals and plants they see. When an animal or plant appears as a monster, you can make a success roll using its _rarity_ as the target score, similar to the sage skill's _monster check_ ability (the sage skill's abilities are explained later on page 118).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03416))_
 
 > In other cases (such as searching for herbs), the _game master_ should determine a target score for the check.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03416))_
 
-> Context: In other cases (such as searching for herbs), the _game master_ should determine a target score for the check.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03416))_
+### Technical atom 10
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03416))_
+
+> In other cases (such as searching for herbs), the _game master_ should determine a target score for the check.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03419))_
 
 > You can use any projectile as long as your strength allows it.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03419))_
 
-> Context: The ranger skill is treated the same as the fighter skill (attack power, bonus damage modifiers) _only_ when attacking with projectiles. You can use any projectile as long as your strength allows it. The ranger skill is _not_ relevant to the
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03419))_
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03419))_
+
+> The ranger skill is treated the same as the fighter skill (attack power, bonus damage modifiers) _only_ when attacking with projectiles. You can use any projectile as long as your strength allows it. The ranger skill is _not_ relevant to the
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03420))_
 
 > When using the thief skill for defense, you must be lightly armed (required strength of weapons and armor must be _half_ your own strength or less).
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03420))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-strike-points-12-1bff366f@f751af58531cf5084ba3cce1b815f38f
+projection_coverage: section-sword-world-rpg-complete-edition-section-strike-points-12-1bff366f@875833390adca4cf19dfa3ea1b8bb5cc
 ---
 
 # Strike Points=12
@@ -28,17 +28,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Scylla is a beautiful woman from the waist up, but six serpent heads and 12 octopus tentacles grow from her lower body. They are amphibious and can move freely on land, but mainly prefer to live in water. Their personality is extremely wicked, often luring men with only their upper bodies above the water, then dragging them underwater to kill them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05392))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05392))_
+
+> Scylla is a beautiful woman from the waist up, but six serpent heads and 12 octopus tentacles grow from her lower body. They are amphibious and can move freely on land, but mainly prefer to live in water. Their personality is extremely wicked, often luring men with only their upper bodies above the water, then dragging them underwater to kill them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05390))_
 
 > Habitat=Water
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05390))_
 
-> Context: Scylla is a beautiful woman from the waist up, but six serpent heads and 12 octopus tentacles grow from her lower body. They are amphibious and can move freely on land, but mainly prefer to live in water. Their personality is extremely wicked, often luring men with only their upper bodies above the water, then dragging them underwater to kill them.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05392))_
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05392))_
+
+> Scylla is a beautiful woman from the waist up, but six serpent heads and 12 octopus tentacles grow from her lower body. They are amphibious and can move freely on land, but mainly prefer to live in water. Their personality is extremely wicked, often luring men with only their upper bodies above the water, then dragging them underwater to kill them.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05391))_
 
 > Languages=Regional, silent spirit Perception=Five senses (infravision)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05391))_
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05393))_
 
 > When in combat, a scylla can attack different targets at the same time with its six heads.
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05393))_

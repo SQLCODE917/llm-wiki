@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-wounds-85aadf15@564b01e02c87f7b17179e275ad403f7e
+projection_coverage: section-sword-world-rpg-complete-edition-section-wounds-85aadf15@f9025f13fb8d33eb8e1c17c679124d36
 ---
 
 # **[ Wounds ]**
@@ -22,23 +22,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Base Mental Power Cost=5
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03931))_
+### Technical atom 1
 
-> Context: Dark priests can use the following abilities:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03932))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03931))_
+
+> Base Mental Power Cost=5
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03932))_
+
+> Dark priests can use the following abilities:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03933))_
 
 > Distance=10 meters Area=One
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03933))_
 
-> Context: Dark priests can use the following abilities:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03932))_
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03932))_
+
+> Dark priests can use the following abilities:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03934))_
 
 > Duration=Instant
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03934))_
 
-> Context: Dark priests can use the following abilities:
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03932))_
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03932))_
+
+> Dark priests can use the following abilities:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03935))_
 
 > Effect=Cut up the opponent's body, dealing strike power 10 damage Type=Damage (Special)
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03935))_

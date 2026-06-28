@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-shade-dark-spirit-7adfb8e9@b63a5df80dcca2a60dfe42cb5eeddbd7
+projection_coverage: section-sword-world-rpg-complete-edition-section-shade-dark-spirit-7adfb8e9@cd82fab7ac2c9f90c64566a5bf608528
 ---
 
 # **(Shade/Dark Spirit)**
@@ -25,11 +25,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Base Mental Power Cost=12 Distance=10 meters Area=One Duration=18 rounds
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02501))_
+### Technical atom 1
 
-> Context: This spell's effect can be expanded. If expanded, make an equivalent number of checks on the _Fears_ table, then apply which result the caster finds most desirable.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02504))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02501))_
+
+> Base Mental Power Cost=12 Distance=10 meters Area=One Duration=18 rounds
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02504))_
+
+> This spell's effect can be expanded. If expanded, make an equivalent number of checks on the _Fears_ table, then apply which result the caster finds most desirable.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02502))_
 
 > Effect=Puts fear into an opponent Type=Mind Expansion=Final score, duration, distance, targets, effect Resist=Negated effect
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02502))_

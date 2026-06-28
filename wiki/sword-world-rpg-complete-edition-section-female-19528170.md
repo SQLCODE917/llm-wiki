@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-female-19528170@9f99714ced8fd3835eb2c11d05958675
+projection_coverage: section-sword-world-rpg-complete-edition-section-female-19528170@9e518bfdfae6860c6444c9bb7e051e3e
 ---
 
 # **Female**
@@ -20,8 +20,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-> Context: Lions usually don't try to come close to human villages. However, lions sometimes attack humans if they’re starving or if they’ve tasted human flesh.
-_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05817))_
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05817))_
+
+> Lions usually don't try to come close to human villages. However, lions sometimes attack humans if they’re starving or if they’ve tasted human flesh.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05819))_
 
 > Monster Level=3
-_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05819))_
