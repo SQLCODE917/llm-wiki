@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-weak-to-fire-7a5baa81@27f4353dd0544cf3faeb51538635c97b
+projection_coverage: section-sword-world-rpg-complete-edition-section-weak-to-fire-7a5baa81@b64487c3025c8a3488b66261f069c822
 ---
 
 # 《 Weak to Fire 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section: 13.6
 
 ## Statements
 

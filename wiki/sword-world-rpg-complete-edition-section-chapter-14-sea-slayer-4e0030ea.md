@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-sea-slayer-4e0030ea@bbd45225dd5582e81838da3e9bf6abf6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-sea-slayer-4e0030ea@e1176c415b2d8bb181b5a1747d15088d
 ---
 
 # Chapter 14: / 《 Sea Slayer 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

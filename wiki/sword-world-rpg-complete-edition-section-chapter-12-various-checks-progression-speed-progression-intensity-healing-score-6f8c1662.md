@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-progression-speed-progression-intensity-healing-score-6f8c1662@92f382ab0a1d1c988e6b00dd27fecc61
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-progression-speed-progression-intensity-healing-score-6f8c1662@cb023b998620d5b9afba660edd5fd9d8
 ---
 
 # Chapter 12: Various Checks / 《 Progression Speed/Progression Intensity/ Healing Score 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

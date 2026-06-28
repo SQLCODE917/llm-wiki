@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-1-high-quality-weapons-f8fd0fec@35c5a8578cdfe522342f704c654c6b3a
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-1-high-quality-weapons-f8fd0fec@11d0d9f1ce7320ee1b9e2de07ca87ba9
 ---
 
 # 4.10.1 High-Quality Weapons
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-10-d6286642]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-10-d6286642]] - broader source section: 4.10
 
 ## Technical atoms
 

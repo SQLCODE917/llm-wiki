@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-humans-281edb74@b745637bfdafca2b094f644bc698f85f
+projection_coverage: section-sword-world-rpg-complete-edition-section-humans-281edb74@bbb5f345cc6f53a3eb8fd2950cc10e31
 ---
 
 # 《 Humans 》
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section
-- [[sword-world-rpg-complete-edition-human]] - topic hub
-- [[sword-world-rpg-complete-edition-section-human-b8ddf91d]] - same source heading
-- [[sword-world-rpg-complete-edition-section-humans-b188b9b3]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section: 13.2.1
+- [[sword-world-rpg-complete-edition-human]] - topic hub: opens the topic page for Human
+- [[sword-world-rpg-complete-edition-section-human-b8ddf91d]] - same source heading: another source section with the same heading, 【 Human 】
+- [[sword-world-rpg-complete-edition-section-humans-b188b9b3]] - same source heading: another source section with the same heading, Humans
 
 ## Statements
 

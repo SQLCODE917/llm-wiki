@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hellhound-fa3899f0@569029475699ba5319bbe02e0fac9824
+projection_coverage: section-sword-world-rpg-complete-edition-section-hellhound-fa3899f0@7ed4722458df907b05f2562e4f3ec4f2
 ---
 
 # [ Hellhound ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-11-cbbcb4fd]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-11-cbbcb4fd]] - broader source section: 13.2.11
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-goblin-shaman-89171a6a@5420a14291c15ff748c74b9b072a6e20
+projection_coverage: section-sword-world-rpg-complete-edition-section-goblin-shaman-89171a6a@45a687363a6c221d33134466df8728ff
 ---
 
 # Goblin Shaman
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f]] - broader source section: 13.2.3
 
 ## Statements
 

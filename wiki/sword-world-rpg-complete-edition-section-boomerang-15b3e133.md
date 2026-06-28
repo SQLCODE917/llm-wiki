@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-boomerang-15b3e133@4257ae16ac360dfefa5652fcdcf3aa0f
+projection_coverage: section-sword-world-rpg-complete-edition-section-boomerang-15b3e133@51857193ad4ea11791e388b840fc31da
 ---
 
 # Boomerang
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section: 16.9
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-stone-tongue-injected-154bace4@e038caa966dacfcc982df0659887b3e7
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-stone-tongue-injected-154bace4@b8b6db73d35b763cd605597401524799
 ---
 
 # Chapter 12: Various Checks / [Stone Tongue (Injected)]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Technical atoms
 

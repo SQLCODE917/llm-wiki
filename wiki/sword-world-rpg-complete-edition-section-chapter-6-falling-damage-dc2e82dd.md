@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-falling-damage-dc2e82dd@0538417e356d8fc6f03c2a0eec936141
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-falling-damage-dc2e82dd@0a1dfaa5cde57a3aade0085d3b5b4069
 ---
 
 # Chapter 6: / Falling Damage
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section: Chapter 6:
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-cha-za-special-holy-magic-list-luck-3ead3ce9@e1e2bee9f905e45bf0ce9ab7223e9b4f
+projection_coverage: section-sword-world-rpg-complete-edition-section-cha-za-special-holy-magic-list-luck-3ead3ce9@002b3950d0e2c922bd1468e3a9ea120d
 ---
 
 # Cha Za Special Holy Magic List [ Luck ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-precautions-when-using-skills-9042b5b9@f9da55f8652e93451ec4facfcdb6deee
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-precautions-when-using-skills-9042b5b9@e67c372ff3bb73cc4e83d93aa1ae07ab
 ---
 
 # Chapter 6: / Precautions When Using Skills
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section: Chapter 6:
 
 ## Statements
 

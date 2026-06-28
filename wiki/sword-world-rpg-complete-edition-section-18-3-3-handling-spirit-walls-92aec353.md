@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-3-handling-spirit-walls-92aec353@39f0b9abe48f64ddfc6e131d68922d8a
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-3-handling-spirit-walls-92aec353@13ac2fb15598e16d28d88355e04980e3
 ---
 
 # 18.3.3 Handling Spirit Walls
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

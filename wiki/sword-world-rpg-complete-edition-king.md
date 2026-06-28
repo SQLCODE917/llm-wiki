@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-king@e14c14e32efd90e9e9c578ce04784dcf
+projection_coverage: topic-sword-world-rpg-complete-edition-king@b90efeed769114aea26431a13eaa3b97
 ---
 
 # King
@@ -223,19 +223,19 @@ What [[sword-world-rpg-complete-edition]] covers about king:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-ancient]] - shared statements and technical atoms (17 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-sorcerer]] - shared statements and technical atoms (4 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-undead]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-ability]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-level]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-magical]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-12-normal-language]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-final]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-kings-39d6abf8]] - source section (6 shared statement(s))
+- [[sword-world-rpg-complete-edition-ancient]] - shared statements and technical atoms: Ancient shares source evidence from 【 Sorcerer 】: The ancient kingdom of Kastuul, which fell more than 500 years ago, is sometimes referred to as the magical kingdom . As its nickname suggests, Kastuul is said to ha ... [truncated]; Ancient shares technical record from Chapter 6: / [ ⑥ Treasure Appraisal [Intelligence] ] (Not retriable): Alternatively, if it is something that can be used in combat, such as weapons or armor, other adventurers may purchase it. (17 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-sorcerer]] - shared statements and technical atoms: Sorcerer shares source evidence from 10th Level Ancient Magic List [ Dimension Gate ]: A normal Dimension Gate lasts for only 3 minutes, but the sorcerers of the ancient kingdom knew the technique for fixing gates semi-permanently, and so used them as ... [truncated]; Sorcerer shares technical record from Blob: Strike Points=3 Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=16/10 (3) Mental Points/Resistance=-/10 (3) (4 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-undead]] - shared statements and technical atoms: Undead shares source evidence from [ Vampire ]: There are three types of vampires: undead king, vampire, and lesser vampire. All types prolong their eternal life by sucking the lifeblood and mental power of others ... [truncated]; Undead shares technical record from Undead King: Perception=Pseudo (4 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability]] - shared statements and technical atoms: Ability shares source evidence from The Age of Magic = The Kingdom of Kastuul: This kingdom was ruled by great rune masters who were versed in various magical languages. The higher one's magical ability, the higher their status, and the kingdom ... [truncated]; Ability shares technical record from Chapter 6: / [ ⑥ Treasure Appraisal [Intelligence] ] (Not retriable): Alternatively, if it is something that can be used in combat, such as weapons or armor, other adventurers may purchase it. (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms: Score shares source evidence from 7th Level Ancient Magic List [ Dispel Order ]: This spell can also cancel commands given to a golem. Once a golem has had its commands canceled, it becomes neutral and can be given new commands using the 9th leve ... [truncated]; Score shares technical record from Chapter 6: / [ ⑥ Treasure Appraisal [Intelligence] ] (Not retriable): Alternatively, if it is something that can be used in combat, such as weapons or armor, other adventurers may purchase it. (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared technical atoms: Level shares technical record from [ Hecatoncheir ]: Perception=Five senses (darkvision) (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rarity]] - shared technical atoms: Rarity shares technical record from Chapter 6: / [ ⑥ Treasure Appraisal [Intelligence] ] (Not retriable): Alternatively, if it is something that can be used in combat, such as weapons or armor, other adventurers may purchase it. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared technical atoms: Target shares technical record from Chapter 6: / [ ⑥ Treasure Appraisal [Intelligence] ] (Not retriable): Alternatively, if it is something that can be used in combat, such as weapons or armor, other adventurers may purchase it. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared statements: Magical shares source evidence from 《 Magical Creatures 》: During the ancient kingdom period, various magical creatures were created as a challenge to the gods . The sorcerers sought to gain power as creators. The magical cr ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-12-normal-language]] - shared statements: 12.1.1 Normal Languages shares source evidence from Chapter 12: Various Checks / 《 Common 》: Common is the language most widely used in the world of Sword World . This language was first used during the early new kingdom period, replacing low ancient which h ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements: Character shares source evidence from The Age of Sword = The New Kingdoms: Having survived the chaotic period after the Ancient Kingdom's fall, the New Kingdom has now continued for over 500 years. Various kingdoms with distinct characteris ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-final]] - shared statements: Final shares source evidence from 7th Level Ancient Magic List [ Dispel Order ]: This spell can also cancel commands given to a golem. Once a golem has had its commands canceled, it becomes neutral and can be given new commands using the 9th leve ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-kings-39d6abf8]] - source section: Kings shares source evidence from Kings: The king is an absolute ruler. All national policies are determined by the king, and as the head of judicial power, he also presides over trials. In a nation, defyin ... [truncated] (6 shared statement(s))
 
 ## Source
 

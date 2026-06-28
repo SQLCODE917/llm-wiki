@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-table-10-2-surprise-attack-check-a9cb7161@9104cb9eabc95671c5e7895a257bb798
+projection_coverage: section-sword-world-rpg-complete-edition-section-table-10-2-surprise-attack-check-a9cb7161@a58ca8d269e72d4fb9ade27c53030bf4
 ---
 
 # Table 10-2: Surprise Attack Check
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Technical atoms
 

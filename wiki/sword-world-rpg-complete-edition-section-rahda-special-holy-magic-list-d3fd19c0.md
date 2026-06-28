@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rahda-special-holy-magic-list-d3fd19c0@de8968e19fd21c6d93e4b11c1acb18e5
+projection_coverage: section-sword-world-rpg-complete-edition-section-rahda-special-holy-magic-list-d3fd19c0@27818236642b03d21749bb5961a14d0f
 ---
 
 # Rahda Special Holy Magic List
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Technical atoms
 

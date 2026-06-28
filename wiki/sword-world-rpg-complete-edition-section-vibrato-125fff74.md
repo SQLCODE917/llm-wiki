@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-vibrato-125fff74@d5c25ed5975288298692168a45a171ad
+projection_coverage: section-sword-world-rpg-complete-edition-section-vibrato-125fff74@b030a1d36e871beec48d89dbd9b10bc3
 ---
 
 # Vibrato
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-3-8f977924]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-3-8f977924]] - broader source section: 5.3
 
 ## Statements
 

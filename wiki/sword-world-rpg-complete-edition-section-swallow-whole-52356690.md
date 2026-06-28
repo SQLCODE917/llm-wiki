@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-swallow-whole-52356690@527e5dc8a78d951974c100c3c7ada844
+projection_coverage: section-sword-world-rpg-complete-edition-section-swallow-whole-52356690@870f5bfaa8ada6a5abf66f66c5837a4c
 ---
 
 # 《 Swallow Whole 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section: 13.6
 
 ## Statements
 

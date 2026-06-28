@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-increasing-general-skills-c1619f8f@a448d6fb37886c62c14ab7285729278c
+projection_coverage: section-sword-world-rpg-complete-edition-section-increasing-general-skills-c1619f8f@5efb9a4879f34f05fd3b89d7de631cfa
 ---
 
 # Increasing General Skills
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-8-4-b37d42d6]] - broader source section
+- [[sword-world-rpg-complete-edition-section-8-4-b37d42d6]] - broader source section: 8.4
 
 ## Statements
 

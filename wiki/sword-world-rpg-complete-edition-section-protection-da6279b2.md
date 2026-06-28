@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-protection-da6279b2@2264ad53511c37967b39aab3fcf8e9ee
+projection_coverage: section-sword-world-rpg-complete-edition-section-protection-da6279b2@786f31ecb405abb300c76577ca4f572f
 ---
 
 # [ Protection ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

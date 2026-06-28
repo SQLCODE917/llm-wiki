@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-parry-parry-c47f4b3e@2d59cf66b17240a5bf6f555cc48311fd
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-parry-parry-c47f4b3e@1bdd6fec897bb0a8317e842b0e8f5506
 ---
 
 # Chapter 14: / [ Parry Parry ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Technical atoms
 

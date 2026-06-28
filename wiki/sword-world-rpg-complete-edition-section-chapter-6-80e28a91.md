@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-80e28a91@454bf282dafab88ebf9a29642952a889
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-80e28a91@62477d51333b8dec2d596ca106652a72
 ---
 
 # Chapter 6:
@@ -16,13 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-308b01c1]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-monster-check-intelligence-not-retriable-77f18cf3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-languages-intelligence-c4de4812]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-sage-skill-7d0ff839]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-astrology-intelligence-not-retriable-5bff6acb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-knowledge-intelligence-not-retriable-3afcf6c3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-research-intelligence-not-retriable-86942799]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-308b01c1]] - broader source section: Chapter 6:
+- [[sword-world-rpg-complete-edition-section-chapter-6-monster-check-intelligence-not-retriable-77f18cf3]] - narrower source section: Chapter 6: / [ ① Monster Check [Intelligence]] (Not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-languages-intelligence-c4de4812]] - narrower source section: Chapter 6: / [ ② Languages [Intelligence]]
+- [[sword-world-rpg-complete-edition-section-chapter-6-sage-skill-7d0ff839]] - narrower source section: Chapter 6: / Sage Skill
+- [[sword-world-rpg-complete-edition-section-chapter-6-astrology-intelligence-not-retriable-5bff6acb]] - narrower source section: Chapter 6: / [ ③ Astrology [Intelligence] ] (Not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-knowledge-intelligence-not-retriable-3afcf6c3]] - narrower source section: Chapter 6: / [ ④ Knowledge [Intelligence]] (Not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-research-intelligence-not-retriable-86942799]] - narrower source section: Chapter 6: / [ ⑤ Research [Intelligence] ] (Not retriable)
 
 ## Statements
 

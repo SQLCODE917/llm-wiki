@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-sing-mental-power-0ee11690@abcd547d90305cffc18516c4d4e2c41b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-sing-mental-power-0ee11690@dbf0e5966b8a947a1c7a355feb29b18d
 ---
 
 # Chapter 6: / [ ① Sing [Mental Power] ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section: Chapter 6:
 
 ## Statements
 

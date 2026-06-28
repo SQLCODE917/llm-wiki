@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-thief-e9cadc8b@44915916bae2ff988db958aed5fe767e
+projection_coverage: section-sword-world-rpg-complete-edition-section-thief-e9cadc8b@5aaadd1b0599c99f8d5a0a3d9a0290a9
 ---
 
 # 【 Thief 】
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-thief-8808f47a]] - same source heading
+- [[sword-world-rpg-complete-edition-section-thief-8808f47a]] - same source heading: another source section with the same heading, [ Thief ]
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-160fd94d@242c8c512519425faec27f79172d1b7c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-160fd94d@4dfffa29e69b82d8cd2bd76fb65b0b73
 ---
 
 # Chapter 11: Notes on Magic
@@ -16,13 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-bfe3e221]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-10th-level-dragon-roar-magic-list-reborn-dragon-97162faa]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-acquiring-rune-master-skills-and-increasing-levels-823c67fa]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-sorcerer-skill-4e9ae1fd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-shaman-skill-aeb34532]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-priest-skill-146be2d9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dark-priest-skill-0ec28078]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-bfe3e221]] - broader source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-10th-level-dragon-roar-magic-list-reborn-dragon-97162faa]] - narrower source section: Chapter 11: Notes on Magic / 10th Level Dragon Roar Magic List [ Reborn Dragon ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-acquiring-rune-master-skills-and-increasing-levels-823c67fa]] - narrower source section: Chapter 11: Notes on Magic / Acquiring Rune Master Skills and Increasing Levels
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-sorcerer-skill-4e9ae1fd]] - narrower source section: Chapter 11: Notes on Magic / 《 Sorcerer Skill 》
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-shaman-skill-aeb34532]] - narrower source section: Chapter 11: Notes on Magic / 《 Shaman Skill 》
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-priest-skill-146be2d9]] - narrower source section: Chapter 11: Notes on Magic / 《 Priest Skill 》
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dark-priest-skill-0ec28078]] - narrower source section: Chapter 11: Notes on Magic / 《 Dark Priest Skill 》
 
 ## Statements
 

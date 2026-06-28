@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-9-a263c100@77a21ec49d616c651a8b5ee2c0bfe0e0
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-9-a263c100@a68619be5ba246ff6438ab308e7816f4
 ---
 
 # 4.9
@@ -16,14 +16,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-unconscious-and-death-checks-562f2a20]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-29ceeafb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-4-9-1-e813bf03]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-4-9-2-death-checks-every-hour-e4d6f2bb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-81f4975b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-4-9-3-monster-death-check-efeabb68]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-84fce855]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-4-9-4-mercy-0a3560fa]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-unconscious-and-death-checks-562f2a20]] - narrower source section: Unconscious and Death Checks
+- [[sword-world-rpg-complete-edition-section-example-29ceeafb]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-4-9-1-e813bf03]] - narrower source section: 4.9.1
+- [[sword-world-rpg-complete-edition-section-4-9-2-death-checks-every-hour-e4d6f2bb]] - narrower source section: 4.9.2 Death Checks Every Hour
+- [[sword-world-rpg-complete-edition-section-example-81f4975b]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-4-9-3-monster-death-check-efeabb68]] - narrower source section: 4.9.3 Monster Death Check
+- [[sword-world-rpg-complete-edition-section-example-84fce855]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-4-9-4-mercy-0a3560fa]] - narrower source section: 4.9.4 Mercy
 
 ## Statements by subsection
 

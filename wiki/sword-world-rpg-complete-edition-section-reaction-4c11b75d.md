@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-reaction-4c11b75d@1449e601908da20339f77d320b0d4e42
+projection_coverage: section-sword-world-rpg-complete-edition-section-reaction-4c11b75d@f73b91d12fdae67642d31cf6d1dbbe1d
 ---
 
 # 《 Reaction 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section: 13.2.1
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-f858f314@3387510d869554639d975309a687777b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-f858f314@fd01e6355b4a8819ec7e7fbba557214c
 ---
 
 # Chapter 6:
@@ -16,26 +16,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-308b01c1]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-precautions-when-using-skills-9042b5b9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-thief-skill-a27e9e51]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-tumble-agility-equipment-restriction-40d9ad95]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-lockpicking-dexterity-no-equipment-restriction-not-retriable-b909b18f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-acrobatics-agility-equipment-restriction-8ad05a9b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-mnemonics-intelligence-no-equipment-restriction-not-retriable-669aa919]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-listen-intelligence-equipment-restriction-ba1860f7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-stealthy-step-agility-equipment-restriction-821838f1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-pickpocket-dexterity-equipment-restriction-a4225ac1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-hide-agility-equipment-restriction-c870789f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-04a276c8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-climb-agility-equipment-restriction-0af34044]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-special-combat-dexterity-agility-strength-equipment-restriction-23c507ce]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-long-jump-high-jump-agility-equipment-restriction-412f19c5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-follow-agility-equipment-restriction-bbaad827]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-disguise-dexterity-no-equipment-restriction-d932c41d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-treasure-appraisal-intelligence-no-equipment-restriction-not-retriable-b5c47b46]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-find-sense-trap-intelligence-no-equipment-restriction-not-retriable-212ebc6f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-remove-set-trap-dexterity-equipment-restriction-not-retriable-1d8e5d0d]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-308b01c1]] - broader source section: Chapter 6:
+- [[sword-world-rpg-complete-edition-section-chapter-6-precautions-when-using-skills-9042b5b9]] - narrower source section: Chapter 6: / Precautions When Using Skills
+- [[sword-world-rpg-complete-edition-section-chapter-6-thief-skill-a27e9e51]] - narrower source section: Chapter 6: / Thief Skill
+- [[sword-world-rpg-complete-edition-section-chapter-6-tumble-agility-equipment-restriction-40d9ad95]] - narrower source section: Chapter 6: / [ ① Tumble [Agility] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-lockpicking-dexterity-no-equipment-restriction-not-retriable-b909b18f]] - narrower source section: Chapter 6: / [ ② Lockpicking [Dexterity]] (No equipment restriction, not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-acrobatics-agility-equipment-restriction-8ad05a9b]] - narrower source section: Chapter 6: / [ ③ Acrobatics [Agility] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-mnemonics-intelligence-no-equipment-restriction-not-retriable-669aa919]] - narrower source section: Chapter 6: / [ ④ Mnemonics [Intelligence]] (No equipment restriction, not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-listen-intelligence-equipment-restriction-ba1860f7]] - narrower source section: Chapter 6: / [ ⑤ Listen [Intelligence] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-stealthy-step-agility-equipment-restriction-821838f1]] - narrower source section: Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-pickpocket-dexterity-equipment-restriction-a4225ac1]] - narrower source section: Chapter 6: / [ ⑦ Pickpocket [Dexterity] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-hide-agility-equipment-restriction-c870789f]] - narrower source section: Chapter 6: / [ ⑧ Hide [Agility] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-04a276c8]] - narrower source section: Chapter 6: / [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-climb-agility-equipment-restriction-0af34044]] - narrower source section: Chapter 6: / [ ⑩ Climb [Agility] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-special-combat-dexterity-agility-strength-equipment-restriction-23c507ce]] - narrower source section: Chapter 6: / [ ⑪ Special Combat [Dexterity, Agility, Strength]] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-long-jump-high-jump-agility-equipment-restriction-412f19c5]] - narrower source section: Chapter 6: / [ ⑫ Long Jump/High Jump [Agility] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-follow-agility-equipment-restriction-bbaad827]] - narrower source section: Chapter 6: / [ ⑬ Follow [Agility] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-disguise-dexterity-no-equipment-restriction-d932c41d]] - narrower source section: Chapter 6: / [ ⑭ Disguise [Dexterity] ] (No equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-treasure-appraisal-intelligence-no-equipment-restriction-not-retriable-b5c47b46]] - narrower source section: Chapter 6: / [ ⑮ Treasure Appraisal [Intelligence] ] (No equipment restriction, not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-find-sense-trap-intelligence-no-equipment-restriction-not-retriable-212ebc6f]] - narrower source section: Chapter 6: / [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-remove-set-trap-dexterity-equipment-restriction-not-retriable-1d8e5d0d]] - narrower source section: Chapter 6: / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable)
 
 ## Statements by subsection
 

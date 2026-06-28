@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-preserve-sound-sylph-wind-spirit-4bfd2d86@c871112d57ff8cb6c341c015bdbca7f5
+projection_coverage: section-sword-world-rpg-complete-edition-section-preserve-sound-sylph-wind-spirit-4bfd2d86@79c863c20498c77efec387dab9b92c40
 ---
 
 # [ Preserve Sound ] (Sylph/Wind Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

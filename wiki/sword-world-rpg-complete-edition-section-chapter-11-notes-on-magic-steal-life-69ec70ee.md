@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-steal-life-69ec70ee@c769cae957073e99de5cf6f06fa24a1b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-steal-life-69ec70ee@86991cd743d82b2c50fa4be0a54dac66
 ---
 
 # Chapter 11: Notes on Magic / [ Steal Life ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

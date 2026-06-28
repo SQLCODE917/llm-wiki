@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-9-4-mercy-0a3560fa@ac489ccb3dffe6481b02d077701da314
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-9-4-mercy-0a3560fa@cc0b5258209bde2090ca302e2970d7f9
 ---
 
 # 4.9.4 Mercy
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-9-a263c100]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-9-a263c100]] - broader source section: 4.9
 
 ## Statements
 

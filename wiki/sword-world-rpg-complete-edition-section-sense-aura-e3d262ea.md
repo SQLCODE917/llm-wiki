@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sense-aura-e3d262ea@f8d7d3bf081f469b93cf369d6d49d0ad
+projection_coverage: section-sword-world-rpg-complete-edition-section-sense-aura-e3d262ea@f5444b126873a082635c8fb9b0a51823
 ---
 
 # 《 Sense Aura 》
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
-- [[sword-world-rpg-complete-edition-section-sense-aura-f1cbd7bd]] - same source heading
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
+- [[sword-world-rpg-complete-edition-section-sense-aura-f1cbd7bd]] - same source heading: another source section with the same heading, [ Sense Aura ]
 
 ## Statements
 

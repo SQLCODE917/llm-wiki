@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-amulet-of-countersense-5479d2ab@915bcabccd43f01f2e668c283ba337cd
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-amulet-of-countersense-5479d2ab@6e9cfff3c62b7a5941b410afa303c4fe
 ---
 
 # Chapter 14: / [ Amulet of Countersense ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-types-of-poison-59862502@a59f2ff2949dc47c524ef47f9c578728
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-types-of-poison-59862502@34a577c0b45468f066c84b43c30416fd
 ---
 
 # Chapter 12: Various Checks / 《 Types of Poison 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

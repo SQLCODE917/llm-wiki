@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sense-metal-spell-level-3-18ca42a0@f577bf15e83fff2abb559ec33c3a8e35
+projection_coverage: section-sword-world-rpg-complete-edition-section-sense-metal-spell-level-3-18ca42a0@aceeb87e96ddb9f50f86b861ae876157
 ---
 
 # [ Sense Metal ] (Spell Level=3)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-ec5b347d@55405b5d07faf7493d87959aee4e1ba0
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-ec5b347d@059f6400ed0b78725a2a20cb7816cf6e
 ---
 
 # Chapter 12: Various Checks
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - narrower source section
-- [[sword-world-rpg-complete-edition-check]] - topic hub
-- [[sword-world-rpg-complete-edition-section-checks-916ced7a]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - narrower source section: Chapter 12: Various Checks
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - narrower source section: Chapter 12: Various Checks
+- [[sword-world-rpg-complete-edition-check]] - topic hub: opens the topic page for Check
+- [[sword-world-rpg-complete-edition-section-checks-916ced7a]] - same source heading: another source section with the same heading, Checks
 
 ## Statements by subsection
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-9400c78a@fbca91d6e66d63dcac9af6bba5555ebd
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-9400c78a@679a66dc16f713d27e56b38d87f5bbec
 ---
 
 # Chapter 16:
@@ -16,15 +16,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-5af21319]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-weapon-and-armor-modifiers-6149ea8a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-weapon-modifiers-28bfa87b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-attack-power-modifier-754d0a7d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-strike-power-modifier-d593568c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-critical-target-variation-f77740e3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-number-of-projectile-shots-fb9b930f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-armor-modifiers-e8868f3d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-evasion-modifier-ee5e8ce1]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-5af21319]] - broader source section: Chapter 16:
+- [[sword-world-rpg-complete-edition-section-chapter-16-weapon-and-armor-modifiers-6149ea8a]] - narrower source section: Chapter 16: / Weapon and Armor Modifiers
+- [[sword-world-rpg-complete-edition-section-chapter-16-weapon-modifiers-28bfa87b]] - narrower source section: Chapter 16: / Weapon Modifiers
+- [[sword-world-rpg-complete-edition-section-chapter-16-attack-power-modifier-754d0a7d]] - narrower source section: Chapter 16: / Attack Power Modifier
+- [[sword-world-rpg-complete-edition-section-chapter-16-strike-power-modifier-d593568c]] - narrower source section: Chapter 16: / Strike Power Modifier
+- [[sword-world-rpg-complete-edition-section-chapter-16-critical-target-variation-f77740e3]] - narrower source section: Chapter 16: / Critical Target Variation
+- [[sword-world-rpg-complete-edition-section-chapter-16-number-of-projectile-shots-fb9b930f]] - narrower source section: Chapter 16: / Number of Projectile Shots
+- [[sword-world-rpg-complete-edition-section-chapter-16-armor-modifiers-e8868f3d]] - narrower source section: Chapter 16: / Armor Modifiers
+- [[sword-world-rpg-complete-edition-section-chapter-16-evasion-modifier-ee5e8ce1]] - narrower source section: Chapter 16: / Evasion Modifier
 
 ## Statements by subsection
 

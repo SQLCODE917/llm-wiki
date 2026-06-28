@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-craftsman-skill-312749c3@79b790854c7ac9953570b6bbbce14bbf
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-craftsman-skill-312749c3@17506af429a11bce7c2ebe3b54f00a05
 ---
 
 # Chapter 7: / Craftsman Skill
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-afc17170]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-7-afc17170]] - broader source section: Chapter 7:
 
 ## Statements
 

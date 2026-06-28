@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-survivalism-life-force-no-equipment-restriction-9f68464e@24b59c7edcf363427d44bf815bec89a0
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-survivalism-life-force-no-equipment-restriction-9f68464e@d86b285ed52679503aeb1c9744a2bf00
 ---
 
 # Chapter 6: / [ ⑦ Survivalism [Life Force] ] (No equipment restriction)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section: Chapter 6:
 
 ## Statements
 

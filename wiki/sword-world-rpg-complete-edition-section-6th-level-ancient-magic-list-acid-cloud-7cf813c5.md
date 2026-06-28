@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-6th-level-ancient-magic-list-acid-cloud-7cf813c5@de6f9422a9afe8fa322d960b26a8bb91
+projection_coverage: section-sword-world-rpg-complete-edition-section-6th-level-ancient-magic-list-acid-cloud-7cf813c5@e18a84bd300e7c807bb4f4f65f5decb0
 ---
 
 # 6th Level Ancient Magic List [ Acid Cloud ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

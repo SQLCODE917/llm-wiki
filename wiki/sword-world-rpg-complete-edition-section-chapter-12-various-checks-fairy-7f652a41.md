@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-fairy-7f652a41@98f2d508eb4f17b4ad0da203b965cea3
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-fairy-7f652a41@bf9aed3100dc18c5f774c56c7e4e818f
 ---
 
 # Chapter 12: Various Checks / [ Fairy ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-d6286642@b382b17771f0b686284ce6e3b1f14a3f
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-d6286642@02eda1567735787c399755bdbfd69c0b
 ---
 
 # 4.10
@@ -16,12 +16,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-excellent-weapons-and-armor-6a2cc3eb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-4-10-1-high-quality-weapons-f8fd0fec]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-and-armor-76ac9fbd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-4-10-2-09544b5c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-4-10-3-6729b108]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-4-10-4-22cd202b]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-excellent-weapons-and-armor-6a2cc3eb]] - narrower source section: Excellent Weapons and Armor
+- [[sword-world-rpg-complete-edition-section-4-10-1-high-quality-weapons-f8fd0fec]] - narrower source section: 4.10.1 High-Quality Weapons
+- [[sword-world-rpg-complete-edition-section-and-armor-76ac9fbd]] - narrower source section: and Armor
+- [[sword-world-rpg-complete-edition-section-4-10-2-09544b5c]] - narrower source section: 4.10.2
+- [[sword-world-rpg-complete-edition-section-4-10-3-6729b108]] - narrower source section: 4.10.3
+- [[sword-world-rpg-complete-edition-section-4-10-4-22cd202b]] - narrower source section: 4.10.4
 
 ## Statements
 

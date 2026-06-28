@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-life-points-resistance-bc0c8152@e48064b5b7f4b1b320c60fad9184a03e
+projection_coverage: section-sword-world-rpg-complete-edition-section-life-points-resistance-bc0c8152@363ff5a94b05597a5ac0c147fbd2b861
 ---
 
 # 《 Life Points/Resistance 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section: 13.2.1
 
 ## Statements
 

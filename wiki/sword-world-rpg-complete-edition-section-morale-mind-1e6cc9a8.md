@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-morale-mind-1e6cc9a8@6bfe01f7bc8944b8e360c7667c84b3f1
+projection_coverage: section-sword-world-rpg-complete-edition-section-morale-mind-1e6cc9a8@491c35fbba2f2170aff87a58f323b0d1
 ---
 
 # Morale (Mind)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-3-8f977924]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-3-8f977924]] - broader source section: 5.3
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-kraken-greater-water-spirit-8123ea83@4bca89381e9b089ad4a7573a417a076f
+projection_coverage: section-sword-world-rpg-complete-edition-section-kraken-greater-water-spirit-8123ea83@ca27c8e1cff39b2a7db4f9fed0e79043
 ---
 
 # (Kraken/Greater Water Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

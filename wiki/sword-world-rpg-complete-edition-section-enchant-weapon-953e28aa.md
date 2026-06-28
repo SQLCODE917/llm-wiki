@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-enchant-weapon-953e28aa@05bd0cca8f709d69b090f1f21ef0021a
+projection_coverage: section-sword-world-rpg-complete-edition-section-enchant-weapon-953e28aa@1958a38497b5b1e0fcaf033823e66558
 ---
 
 # [ Enchant Weapon ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-11-2-7e531b45]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-11-2-7e531b45]] - broader source section: 5.1.11.2
 
 ## Statements
 

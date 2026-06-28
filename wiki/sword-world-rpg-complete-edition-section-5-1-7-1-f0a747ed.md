@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-7-1-f0a747ed@797d46cef09fb6876569d36cd1e5962d
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-7-1-f0a747ed@d1c25e270c66a96e5da10e1020858b88
 ---
 
 # 5.1.7.1
@@ -16,16 +16,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-expansion-types-7f6fbb67]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-targets-expansion-2f339fcb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-area-expansion-ef35c5c5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-volume-expansion-59583bc3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-table-5-1-area-and-size-expansion-20651f86]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-duration-expansion-59c672b3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-distance-expansion-313e663a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-damage-expansion-c39664f3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-final-score-increase-0baa2e61]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-effect-expansion-fa9e5dfc]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-expansion-types-7f6fbb67]] - narrower source section: Expansion Types
+- [[sword-world-rpg-complete-edition-section-targets-expansion-2f339fcb]] - narrower source section: 《 Targets Expansion 》
+- [[sword-world-rpg-complete-edition-section-area-expansion-ef35c5c5]] - narrower source section: 《 Area Expansion 》
+- [[sword-world-rpg-complete-edition-section-volume-expansion-59583bc3]] - narrower source section: 《 Volume Expansion 》
+- [[sword-world-rpg-complete-edition-section-table-5-1-area-and-size-expansion-20651f86]] - narrower source section: Table 5-1: Area and Size Expansion
+- [[sword-world-rpg-complete-edition-section-duration-expansion-59c672b3]] - narrower source section: 《 Duration Expansion 》
+- [[sword-world-rpg-complete-edition-section-distance-expansion-313e663a]] - narrower source section: 《 Distance Expansion 》
+- [[sword-world-rpg-complete-edition-section-damage-expansion-c39664f3]] - narrower source section: 《 Damage Expansion 》
+- [[sword-world-rpg-complete-edition-section-final-score-increase-0baa2e61]] - narrower source section: 《 Final Score Increase 》
+- [[sword-world-rpg-complete-edition-section-effect-expansion-fa9e5dfc]] - narrower source section: 《 Effect Expansion 》
 
 ## Statements by subsection
 

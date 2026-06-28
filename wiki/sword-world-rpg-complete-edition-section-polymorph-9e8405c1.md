@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-polymorph-9e8405c1@09e27bd89b48a193822b5ffa0ca2fbf3
+projection_coverage: section-sword-world-rpg-complete-edition-section-polymorph-9e8405c1@460c6e93eb56de145cdd0acfcf2a9169
 ---
 
 # [ Polymorph ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

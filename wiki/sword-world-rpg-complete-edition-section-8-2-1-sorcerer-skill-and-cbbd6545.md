@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-8-2-1-sorcerer-skill-and-cbbd6545@cb59003b7bc43b541711b2a94658f183
+projection_coverage: section-sword-world-rpg-complete-edition-section-8-2-1-sorcerer-skill-and-cbbd6545@b112a81cab57483e4f9d9baa918630c1
 ---
 
 # 8.2.1 Sorcerer Skill and
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-8-2-dc71ad75]] - broader source section
+- [[sword-world-rpg-complete-edition-section-8-2-dc71ad75]] - broader source section: 8.2
 
 ## Technical atoms
 

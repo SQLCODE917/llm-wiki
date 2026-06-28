@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-life-point-regenerate-f31b0bf0@4c3b354e3fe84361a1bc91b4b83e2918
+projection_coverage: section-sword-world-rpg-complete-edition-section-life-point-regenerate-f31b0bf0@ae693bd1c62dfb32b71631d073f4da09
 ---
 
 # 《 Life Point Regenerate 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6-d5c4f080]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-6-d5c4f080]] - broader source section: 13.6.6
 
 ## Statements
 

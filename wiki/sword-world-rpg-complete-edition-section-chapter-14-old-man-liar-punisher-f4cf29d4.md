@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-old-man-liar-punisher-f4cf29d4@16d48bd1a2525fbcf005a9ee22cb4727
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-old-man-liar-punisher-f4cf29d4@e1e2ec3f98a428b4b2eb9263570e3914
 ---
 
 # Chapter 14: / [ Old Man Liar Punisher ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

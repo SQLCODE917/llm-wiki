@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-please@69d75b1aa533f51e0ef02ebc85f45987
+projection_coverage: topic-sword-world-rpg-complete-edition-please@82584b08c63a93402cf12990b9a1237e
 ---
 
 # Please
@@ -287,36 +287,36 @@ What [[sword-world-rpg-complete-edition]] covers about please:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-ability]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-check]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-base]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-fail]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-meter]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-result]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-success]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements (5 shared statement(s))
-- [[sword-world-rpg-complete-edition-action]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-climb-agility-equipment-restriction]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-control-spirit-lesser]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-critical-target-variation]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-defense]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-play]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-sorcerer]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-spirit]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-spirit-wall-dryad]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-wall]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms: Game shares source evidence from Chapter 7: / How to Create General Skills: There are many general skills. There are probably as many general skills as there are occupations, hobbies, etc. There is no way we can create rules for them one by ... [truncated]; Game shares technical record from Chapter 16: / Attacks From Characters Against Monsters: The game master should roll 2D and add it to the number in parenthesis. (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms: Master shares source evidence from Chapter 7: / How to Create General Skills: There are many general skills. There are probably as many general skills as there are occupations, hobbies, etc. There is no way we can create rules for them one by ... [truncated]; Master shares technical record from Chapter 16: / Attacks From Characters Against Monsters: The game master should roll 2D and add it to the number in parenthesis. (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability]] - shared statements and technical atoms: Ability shares source evidence from 《 Clairvoyance 》: The mythical beast lynx has a sharp clairvoyance ability. For this reason, even if a character lurks in a place that's hidden from view, etc. he or she will be disco ... [truncated]; Ability shares technical record from Chapter 6: / [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable): If successful, the presence of a trap will be sensed at a perilous point, and the game master must inform the player of the type of trap. (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms: Score shares source evidence from Filling out the Character Sheet: Please write these scores in the designated fields on the Character Sheet. This will make the game run more smoothly.; Score shares technical record from Chapter 6: / Example:: If this adventurer is a thief, he can remove and discard the heavy armor he is wearing, and he can use his thief skill to attempt the climb more safely. (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-check]] - shared technical atoms: Check shares technical record from Chapter 6: / [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable): If successful, the presence of a trap will be sensed at a perilous point, and the game master must inform the player of the type of trap. (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared technical atoms: Target shares technical record from Chapter 6: / [ ⑪ Special Combat [Dexterity, Agility, Strength]] (Equipment restriction): If one adventurer has acquired both the thief skill and the fighter skill, the player must choose which skill to fight with. (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-base]] - shared technical atoms: Base shares technical record from Chapter 6: / Example:: If this adventurer is a thief, he can remove and discard the heavy armor he is wearing, and he can use his thief skill to attempt the climb more safely. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared technical atoms: Character shares technical record from What You'll Need to Play Sword World RPG: When you roll 1D , roll one die and use the result that comes up. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-evasion]] - shared technical atoms: Evasion shares technical record from Chapter 16: / Attacks From Characters Against Monsters: The game master should roll 2D and add it to the number in parenthesis. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-fail]] - shared technical atoms: Fail shares technical record from Chapter 6: / [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable): If successful, the presence of a trap will be sensed at a perilous point, and the game master must inform the player of the type of trap. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-meter]] - shared technical atoms: Meter shares technical record from Chapter 6: / Example:: If this adventurer is a thief, he can remove and discard the heavy armor he is wearing, and he can use his thief skill to attempt the climb more safely. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-result]] - shared technical atoms: Result shares technical record from Chapter 6: / Example:: If this adventurer is a thief, he can remove and discard the heavy armor he is wearing, and he can use his thief skill to attempt the climb more safely. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared technical atoms: Success shares technical record from Chapter 6: / [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable): If successful, the presence of a trap will be sensed at a perilous point, and the game master must inform the player of the type of trap. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - shared technical atoms: [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable) shares technical record from Chapter 6: / [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable): If successful, the presence of a trap will be sensed at a perilous point, and the game master must inform the player of the type of trap. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements: Spell shares source evidence from [ Valkyrie Javelin ] (Valkyrie/Mind Spirit): Please note that this spell can only be used by men. (5 shared statement(s))
+- [[sword-world-rpg-complete-edition-action]] - shared statements: Action shares source evidence from 3.2.1 Delaying an Action: Below are some guidelines on how movement works and which actions can be taken. For any other actions, please use common sense based on the time frame of 1 round = 1 ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from Chapter 14: / 14.2.1 Negotiations With Adventurers: Please consider the estimated reward for asking an adventurer to resolve a case to be around 50~200 times the (total of) each adventurer level. For a party consistin ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-climb-agility-equipment-restriction]] - shared statements: [ ⑩ Climb [Agility] ] (Equipment restriction) shares source evidence from Chapter 6: / [ ⑩ Climb [Agility] ] (Equipment restriction): This ability is used to climb walls and cliffs. Detailed rules regarding climbing and falling can be found under ④ Climb (see p. 121) in 6.6: Common Adventurer Abili ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-control-spirit-lesser]] - shared statements: [ Control Spirit ] (Various lesser spirits) shares source evidence from [ Full Control Spirit ] (Various lesser spirits): Please note that it is not possible to use both the Control Spirit and Full Control Spirit spells to control different spirits. In this case, the effect of the previ ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-critical-target-variation]] - shared statements: Critical Target Variation shares source evidence from Thrust: Its tip is sharply pointed. Y ou can treat these the same as spears. Please use spear/2H for attack power modifiers, strike power modifiers, critical target, etc. It ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-defense]] - shared statements: Defense shares source evidence from Monster Defense Points: Monsters can repel and hold off attacks with their thick skins and hard scales. In monster data, this is represented by defense points . This indicates the amount of ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: Filling Out the Character Sheet shares source evidence from Filling out the Character Sheet: Please write these scores in the designated fields on the Character Sheet. This will make the game run more smoothly. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements: Level shares source evidence from Chapter 14: / 14.2.1 Negotiations With Adventurers: Even if there's variation in level between the party, please make sure the rewards presented are equal per person. In the above example, the reward presented would b ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements: 《 Magic Armor (+1) 》 shares source evidence from [ Stone Blast ] (Gnome/Earth Spirit): To cast this spell, there must be bare, natural ground directly under the target's feet. The spell has no effect if the target is standing on a solid chunk of rock o ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-play]] - shared statements: Play shares source evidence from Currency: We believe this work will satisfy both longtime players and newcomers alike. Please play it-that is our greatest wish. And we hope that this will make the game even better. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements: 【 Ranger Skill 】 shares source evidence from Chapter 7: / [ ① First-Aid [-] ]: This is the same as the ranger skill's ability of the same name. Please refer to the ranger skill. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-sorcerer]] - shared statements: Sorcerer shares source evidence from Chapter 11: Notes on Magic / 《 Sorcerer Skill 》: Then, you'll be given basic knowledge as a sorcerer, such as speaking and reading in high and low ancient, thus a sorcerer who can use 1st level spells is born. In t ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-spirit]] - shared statements: Spirit shares source evidence from 18.3.3 Handling Spirit Walls: When using these rules for destroying structures to destroy the spirit magic Spirit Wall, please do so as follows. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-spirit-wall-dryad]] - shared statements: Spirit Wall: Dryad shares source evidence from 18.3.3 Handling Spirit Walls: When using these rules for destroying structures to destroy the spirit magic Spirit Wall, please do so as follows. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-wall]] - shared statements: Wall shares source evidence from 18.3.3 Handling Spirit Walls: When using these rules for destroying structures to destroy the spirit magic Spirit Wall, please do so as follows. (1 shared statement(s))
 
 ## Source
 

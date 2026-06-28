@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rune-rope-8b323aa9@e4eb78d2b8362adbe00a2ee7293b3c13
+projection_coverage: section-sword-world-rpg-complete-edition-section-rune-rope-8b323aa9@2da60f84c5128a02da62cf8042f9965d
 ---
 
 # [ Rune Rope ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

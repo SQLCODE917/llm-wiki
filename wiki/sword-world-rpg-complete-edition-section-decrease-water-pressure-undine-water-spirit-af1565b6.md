@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-decrease-water-pressure-undine-water-spirit-af1565b6@4024aaf4e7c5b89768068b1d28f44169
+projection_coverage: section-sword-world-rpg-complete-edition-section-decrease-water-pressure-undine-water-spirit-af1565b6@030427a2dc3912e1525377c8eef13284
 ---
 
 # [ Decrease Water Pressure ] (Undine/Water Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

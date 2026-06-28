@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-languages-ff31119e@78c6b53d580bf459e88c50bff5fc94c2
+projection_coverage: section-sword-world-rpg-complete-edition-section-languages-ff31119e@2909d7f259d00b4f29f565dcfe927098
 ---
 
 # 《 Languages 》
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-languages-e5336420]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section: 13.2.1
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-languages-e5336420]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / Languages
 
 ## Statements
 

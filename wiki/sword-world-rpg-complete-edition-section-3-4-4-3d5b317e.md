@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-3d5b317e@02bb6b972a27843f6c2c4a74f273692f
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-3d5b317e@da109aa47aec970a27fb65038f3c7575
 ---
 
 # 3.4.4
@@ -16,25 +16,25 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-actions-you-can-take-while-standing-still-1136e324]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-use-magic-and-projectiles-5f8b9ac5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-stand-up-and-ready-yourself-031da283]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-weapon-and-armor-restrictions-4eb09b62]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-weapon-combat-skills-df43c5a7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-fighter-skill-d81f180a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-thief-skill-01310bcf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-projectile-restrictions-31399109]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ranger-skill-be2a2889]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-scores-used-in-weapon-combat-83afeb2d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-attack-power-590f4c74]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-strike-power-9cc8a1d8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-bonus-damage-ba5bac46]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-critical-target-a5b41356]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-evasion-speed-340887e7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-defense-power-67b1a526]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-damage-reduction-740cdbd8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-35f0307f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-attacks-from-characters-against-monsters-f218ca0f]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-actions-you-can-take-while-standing-still-1136e324]] - narrower source section: Actions You Can Take While Standing Still
+- [[sword-world-rpg-complete-edition-section-use-magic-and-projectiles-5f8b9ac5]] - narrower source section: Use Magic and Projectiles
+- [[sword-world-rpg-complete-edition-section-stand-up-and-ready-yourself-031da283]] - narrower source section: Stand Up and Ready Yourself
+- [[sword-world-rpg-complete-edition-section-weapon-and-armor-restrictions-4eb09b62]] - narrower source section: Weapon and Armor Restrictions
+- [[sword-world-rpg-complete-edition-section-weapon-combat-skills-df43c5a7]] - narrower source section: Weapon Combat Skills
+- [[sword-world-rpg-complete-edition-section-fighter-skill-d81f180a]] - narrower source section: 【 Fighter Skill 】
+- [[sword-world-rpg-complete-edition-section-thief-skill-01310bcf]] - narrower source section: 【 Thief Skill 】
+- [[sword-world-rpg-complete-edition-section-projectile-restrictions-31399109]] - narrower source section: Projectile Restrictions
+- [[sword-world-rpg-complete-edition-section-ranger-skill-be2a2889]] - narrower source section: 【 Ranger Skill 】
+- [[sword-world-rpg-complete-edition-section-scores-used-in-weapon-combat-83afeb2d]] - narrower source section: Scores Used in Weapon Combat
+- [[sword-world-rpg-complete-edition-section-attack-power-590f4c74]] - narrower source section: 【 Attack Power 】
+- [[sword-world-rpg-complete-edition-section-strike-power-9cc8a1d8]] - narrower source section: 【 Strike Power 】
+- [[sword-world-rpg-complete-edition-section-bonus-damage-ba5bac46]] - narrower source section: 【 Bonus Damage 】
+- [[sword-world-rpg-complete-edition-section-critical-target-a5b41356]] - narrower source section: 【 Critical Target 】
+- [[sword-world-rpg-complete-edition-section-evasion-speed-340887e7]] - narrower source section: 【 Evasion Speed 】
+- [[sword-world-rpg-complete-edition-section-defense-power-67b1a526]] - narrower source section: 【 Defense Power 】
+- [[sword-world-rpg-complete-edition-section-damage-reduction-740cdbd8]] - narrower source section: 【 Damage Reduction 】
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-35f0307f]] - narrower source section: Filling out the Character Sheet
+- [[sword-world-rpg-complete-edition-section-attacks-from-characters-against-monsters-f218ca0f]] - narrower source section: Attacks From Characters Against Monsters
 
 ## Statements by subsection
 

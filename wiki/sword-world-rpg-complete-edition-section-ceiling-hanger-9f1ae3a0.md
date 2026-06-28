@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ceiling-hanger-9f1ae3a0@01c5a8aba9a61d36d991b83d01046f77
+projection_coverage: section-sword-world-rpg-complete-edition-section-ceiling-hanger-9f1ae3a0@832a7c4b6085fccffa18fa63d0829e61
 ---
 
 # [ Ceiling Hanger ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section: 13.2.6
 
 ## Statements
 

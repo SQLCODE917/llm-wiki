@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-earth-crystal-6d7f5d26@68477305ca87bbd6c57f64bd96d764f1
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-earth-crystal-6d7f5d26@c8092fa422e56b1366b59655fb3b96ca
 ---
 
 # Chapter 14: / Earth Crystal
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

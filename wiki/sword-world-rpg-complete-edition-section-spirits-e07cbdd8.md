@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-spirits-e07cbdd8@456840acc1b60cb34a7890a809fc9f1a
+projection_coverage: section-sword-world-rpg-complete-edition-section-spirits-e07cbdd8@99a269cbc6c2b30ba783109b6ae131c8
 ---
 
 # 《 Spirits 》
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section
-- [[sword-world-rpg-complete-edition-spirit]] - topic hub
-- [[sword-world-rpg-complete-edition-section-other-spirits-77d253c1]] - same source heading
-- [[sword-world-rpg-complete-edition-section-13-2-4-spirits-57a5a377]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section: 13.1
+- [[sword-world-rpg-complete-edition-spirit]] - topic hub: opens the topic page for Spirit
+- [[sword-world-rpg-complete-edition-section-other-spirits-77d253c1]] - same source heading: another source section with the same heading, ⬤ Other Spirits
+- [[sword-world-rpg-complete-edition-section-13-2-4-spirits-57a5a377]] - same source heading: another source section with the same heading, 13.2.4 Spirits
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-acquiring-rune-master-skills-and-increasing-levels-823c67fa@db1cbe667e5ec11fe5637f06675dc8c1
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-acquiring-rune-master-skills-and-increasing-levels-823c67fa@3a321faadf0cca65e17356645763fade
 ---
 
 # Chapter 11: Notes on Magic / Acquiring Rune Master Skills and Increasing Levels
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-160fd94d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-160fd94d]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

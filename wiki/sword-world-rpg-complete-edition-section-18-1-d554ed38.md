@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-1-d554ed38@bfec5916823f0d59adb2ba853b9ad048
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-1-d554ed38@c6f829f43c8abf652b68a0caaf85ebd2
 ---
 
 # 18.1
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-rules-for-awarding-greater-experience-points-a0bc1029]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-rules-for-awarding-greater-experience-points-a0bc1029]] - narrower source section: Rules for Awarding Greater Experience Points
 
 ## Statements by subsection
 

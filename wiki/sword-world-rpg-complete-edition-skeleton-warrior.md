@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-skeleton-warrior@37355437a57c8b4f53e75027d0c14b31
+projection_coverage: topic-sword-world-rpg-complete-edition-skeleton-warrior@44bd8f4ebe9a30c46717a0fb8adfb26c
 ---
 
 # [ Skeleton Warrior ]
@@ -99,17 +99,17 @@ What [[sword-world-rpg-complete-edition]] covers about [ skeleton warrior ]:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-cast]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-bone-servant]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-caster]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-ancient]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-stone-servant]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-weapon-critical]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-skeleton-warrior-a78842c2]] - source section (8 shared statement(s), 7 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-skeleton-warrior-41cfe652]] - source section (7 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements: Cast shares source evidence from [ Skeleton Warrior ]: The caster can give commands to the skeleton warrior in high ancient. Only the caster can give commands. They cannot understand overly complex commands, but they han ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-bone-servant]] - shared statements: [ Bone Servant ] shares source evidence from [ Puppet Golem ]: A puppet golem is a small, simple version of a golem that is created by giving temporary life to a tree branch, stone, etc. using an ancient magic spell. Depending o ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-caster]] - shared statements: Caster shares source evidence from [ Skeleton Warrior ]: The caster can give commands to the skeleton warrior in high ancient. Only the caster can give commands. They cannot understand overly complex commands, but they han ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-ancient]] - shared statements: Ancient shares source evidence from Chapter 14: / [ Dragon Tooth ]: By casting the 5th level ancient magic Skeleton Warrior on this tooth, you can create a puppet golem, a skeleton warrior (dragontooth warrior). (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements: Level shares source evidence from Chapter 14: / [ Dragon Tooth ]: By casting the 5th level ancient magic Skeleton Warrior on this tooth, you can create a puppet golem, a skeleton warrior (dragontooth warrior). (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements: Resist shares source evidence from [ Skeleton Warrior ]: Resist=None A skeleton warrior, also known as a dragontooth warrior, is a kind of golem created from a dragon's tooth, and resembles a human skeleton with a sword an ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements: Spell shares source evidence from [ Skeleton Warrior ]: Resist=None A skeleton warrior, also known as a dragontooth warrior, is a kind of golem created from a dragon's tooth, and resembles a human skeleton with a sword an ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-stone-servant]] - shared statements: [ Stone Servant ] shares source evidence from [ Puppet Golem ]: A puppet golem is a small, simple version of a golem that is created by giving temporary life to a tree branch, stone, etc. using an ancient magic spell. Depending o ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-weapon-critical]] - shared statements: 《 Weapons Cannot Critical 》 shares source evidence from Skeleton Warrior: Even if you attack a skeleton warrior with a bladed weapon, it will not cause a critical hit. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-skeleton-warrior-a78842c2]] - source section: [ Skeleton Warrior ] shares source evidence from [ Skeleton Warrior ]: Resist=None A skeleton warrior, also known as a dragontooth warrior, is a kind of golem created from a dragon's tooth, and resembles a human skeleton with a sword an ... [truncated]; [ Skeleton Warrior ] shares technical record from [ Skeleton Warrior ]: Base Mental Power Cost=20 (8 shared statement(s), 7 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-skeleton-warrior-41cfe652]] - source section: Skeleton Warrior shares source evidence from Skeleton Warrior: A skeleton warrior is a golem created from a magical dragon's tooth. Its appearance is that of a fully-armed skeleton, which uses its weapon and shield with mechanic ... [truncated]; Skeleton Warrior shares technical record from Skeleton Warrior: Perception=Pseudo (7 shared statement(s), 2 shared atom(s))
 
 ## Source
 

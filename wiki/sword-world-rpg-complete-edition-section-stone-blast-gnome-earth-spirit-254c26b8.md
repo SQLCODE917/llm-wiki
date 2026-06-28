@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-stone-blast-gnome-earth-spirit-254c26b8@a95367fd66f86e82c41e0677eeff0c48
+projection_coverage: section-sword-world-rpg-complete-edition-section-stone-blast-gnome-earth-spirit-254c26b8@57b3f6299c6a40c17fe55543324a9131
 ---
 
 # [ Stone Blast ] (Gnome/Earth Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

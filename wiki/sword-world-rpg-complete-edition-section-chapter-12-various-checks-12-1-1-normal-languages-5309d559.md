@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-1-normal-languages-5309d559@a3b9604ba1989ea284cae30926f27241
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-1-normal-languages-5309d559@5df0f99427ab4f307d43b6ebc19a918e
 ---
 
 # Chapter 12: Various Checks / 12.1.1 Normal Languages
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-normal-languages-9a70ff4e]] - same source heading
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-2-normal-languages-of-139716a3]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-normal-languages-9a70ff4e]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / 《 Normal Languages 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-2-normal-languages-of-139716a3]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / 12.1.2 Normal Languages of
 
 ## Technical atoms
 

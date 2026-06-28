@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-water-screen-undine-water-spirit-fd543089@b1d2baea2d31fa7ca550d99ab4888b92
+projection_coverage: section-sword-world-rpg-complete-edition-section-water-screen-undine-water-spirit-fd543089@79dca445e003c204943d445695b763ce
 ---
 
 # [ Water Screen ] (Undine/Water Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

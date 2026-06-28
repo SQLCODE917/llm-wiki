@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-a1683715@eaff4864a0c5da38f3a5c58aa5b877e0
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-a1683715@1c81b778e936788d445428456a24d366
 ---
 
 # 18.3
@@ -16,65 +16,65 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-rules-for-destroying-structures-bb9b586e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-18-3-1-how-to-read-the-structure-strength-table-bf7169a7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-paper-ccb6488a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-defense-points-522beb2f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-destruction-points-bca149f6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-6f29081e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-complete-immunity-no-criticals-normal-ignore-defense-points-7c7d7c20]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-special-3fd14093]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-18-3-2-structure-material-list-503b4290]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-wood-97b37d83]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-brick-1b276cad]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-stone-ceadbd7d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-iron-2bd47404]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ice-1dc32c33]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-vegetation-0a0ef239]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-18-3-3-handling-spirit-walls-92aec353]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-gnome-a968da3a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-frau-548c3d57]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-dryad-74f43937]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-age-of-mythology-e0e581cf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-the-age-of-magic-the-kingdom-of-kastuul-20b2c9a8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-the-age-of-sword-the-new-kingdoms-f48b0385]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-world-44a3d3d0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sun-moon-stars-469451fa]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-climate-604b49d0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-calendar-and-time-5dd20725]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-kingdoms-fcd95702]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-kings-39d6abf8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-nobles-knights-052d596e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-citizens-64996943]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-slaves-701bc14d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-intellectuals-clergy-traveling-merchants-af621356]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-adventurers-23bbc628]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-guilds-09079eae]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-merchant-s-license-81bd28a5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-thieves-guild-sorcerers-guild-academy-48a2f003]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-religious-organizations-e0eb271f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-far-east-region-language-eastern-m-rdan-9fd93090]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-northeast-region-language-eastern-m-rdan-a542da62]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-oran-language-eastern-m-rdan-9523b0a3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-central-region-language-m-rdan-eremire-gundar-saine-8eeddb6a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-northern-central-region-language-western-gundar-5b41ff5d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-southern-central-region-language-western-gundar-f40b6a4d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-western-countries-language-western-except-palmer-village-which-uses-eastern-7bb6e029]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-islands-of-azarn-language-eastern-m-rdan-6d795c7c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-island-of-damned-language-native-language-081e03a7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chaosland-language-native-language-c351b250]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-eastend-languages-dbe4bb8f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-farland-languages-3610c149]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-currency-f5e96b85]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sage-skill-abilities-table-7ec388b6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sailor-skill-abilities-table-fe5bba22]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-common-adventurer-abilities-table-64358c22]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-table-1-9-armor-04bad31f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-table-1-10-shields-e078e8de]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-table-5-1-area-and-size-expansion-7c997fcc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-table-10-2-surprise-attack-check-a9cb7161]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-table-4-1-rating-table-ffc10060]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-reprint-edition-sword-world-rpg-complete-edition-5fdb27b2]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-rules-for-destroying-structures-bb9b586e]] - narrower source section: Rules for Destroying Structures
+- [[sword-world-rpg-complete-edition-section-18-3-1-how-to-read-the-structure-strength-table-bf7169a7]] - narrower source section: 18.3.1 How to Read the Structure Strength Table
+- [[sword-world-rpg-complete-edition-section-paper-ccb6488a]] - narrower source section: [ Paper ]
+- [[sword-world-rpg-complete-edition-section-defense-points-522beb2f]] - narrower source section: Defense Points
+- [[sword-world-rpg-complete-edition-section-destruction-points-bca149f6]] - narrower source section: Destruction Points
+- [[sword-world-rpg-complete-edition-section-example-6f29081e]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-complete-immunity-no-criticals-normal-ignore-defense-points-7c7d7c20]] - narrower source section: Complete Immunity, No Criticals, Normal, Ignore Defense Points
+- [[sword-world-rpg-complete-edition-section-special-3fd14093]] - narrower source section: Special
+- [[sword-world-rpg-complete-edition-section-18-3-2-structure-material-list-503b4290]] - narrower source section: 18.3.2 Structure Material List
+- [[sword-world-rpg-complete-edition-section-wood-97b37d83]] - narrower source section: [ Wood ]
+- [[sword-world-rpg-complete-edition-section-brick-1b276cad]] - narrower source section: [ Brick ]
+- [[sword-world-rpg-complete-edition-section-stone-ceadbd7d]] - narrower source section: [ Stone ]
+- [[sword-world-rpg-complete-edition-section-iron-2bd47404]] - narrower source section: [ Iron ]
+- [[sword-world-rpg-complete-edition-section-ice-1dc32c33]] - narrower source section: [ Ice ]
+- [[sword-world-rpg-complete-edition-section-vegetation-0a0ef239]] - narrower source section: [ Vegetation ]
+- [[sword-world-rpg-complete-edition-section-18-3-3-handling-spirit-walls-92aec353]] - narrower source section: 18.3.3 Handling Spirit Walls
+- [[sword-world-rpg-complete-edition-section-spirit-wall-gnome-a968da3a]] - narrower source section: [ Spirit Wall: Gnome ]
+- [[sword-world-rpg-complete-edition-section-spirit-wall-frau-548c3d57]] - narrower source section: [ Spirit Wall: Frau ]
+- [[sword-world-rpg-complete-edition-section-spirit-wall-dryad-74f43937]] - narrower source section: [ Spirit Wall: Dryad ]
+- [[sword-world-rpg-complete-edition-section-age-of-mythology-e0e581cf]] - narrower source section: Age of Mythology
+- [[sword-world-rpg-complete-edition-section-the-age-of-magic-the-kingdom-of-kastuul-20b2c9a8]] - narrower source section: The Age of Magic = The Kingdom of Kastuul
+- [[sword-world-rpg-complete-edition-section-the-age-of-sword-the-new-kingdoms-f48b0385]] - narrower source section: The Age of Sword = The New Kingdoms
+- [[sword-world-rpg-complete-edition-section-world-44a3d3d0]] - narrower source section: World
+- [[sword-world-rpg-complete-edition-section-sun-moon-stars-469451fa]] - narrower source section: Sun, Moon, Stars
+- [[sword-world-rpg-complete-edition-section-climate-604b49d0]] - narrower source section: Climate
+- [[sword-world-rpg-complete-edition-section-calendar-and-time-5dd20725]] - narrower source section: Calendar and Time
+- [[sword-world-rpg-complete-edition-section-kingdoms-fcd95702]] - narrower source section: Kingdoms
+- [[sword-world-rpg-complete-edition-section-kings-39d6abf8]] - narrower source section: Kings
+- [[sword-world-rpg-complete-edition-section-nobles-knights-052d596e]] - narrower source section: Nobles/Knights
+- [[sword-world-rpg-complete-edition-section-citizens-64996943]] - narrower source section: Citizens
+- [[sword-world-rpg-complete-edition-section-slaves-701bc14d]] - narrower source section: Slaves
+- [[sword-world-rpg-complete-edition-section-intellectuals-clergy-traveling-merchants-af621356]] - narrower source section: Intellectuals/Clergy/ Traveling Merchants
+- [[sword-world-rpg-complete-edition-section-adventurers-23bbc628]] - narrower source section: Adventurers
+- [[sword-world-rpg-complete-edition-section-guilds-09079eae]] - narrower source section: Guilds
+- [[sword-world-rpg-complete-edition-section-merchant-s-license-81bd28a5]] - narrower source section: Merchant's License
+- [[sword-world-rpg-complete-edition-section-thieves-guild-sorcerers-guild-academy-48a2f003]] - narrower source section: Thieves Guild/Sorcerers' Guild (Academy)
+- [[sword-world-rpg-complete-edition-section-religious-organizations-e0eb271f]] - narrower source section: Religious Organizations
+- [[sword-world-rpg-complete-edition-section-far-east-region-language-eastern-m-rdan-9fd93090]] - narrower source section: Far East Region (Language = Eastern/ Mārdan)
+- [[sword-world-rpg-complete-edition-section-northeast-region-language-eastern-m-rdan-a542da62]] - narrower source section: Northeast Region (Language = Eastern/Mārdan)
+- [[sword-world-rpg-complete-edition-section-oran-language-eastern-m-rdan-9523b0a3]] - narrower source section: Oran (Language = Eastern/Mārdan)
+- [[sword-world-rpg-complete-edition-section-central-region-language-m-rdan-eremire-gundar-saine-8eeddb6a]] - narrower source section: Central Region (Language = Mārdan/Eremire Gundar/Saine)
+- [[sword-world-rpg-complete-edition-section-northern-central-region-language-western-gundar-5b41ff5d]] - narrower source section: Northern Central Region (Language = Western/Gundar)
+- [[sword-world-rpg-complete-edition-section-southern-central-region-language-western-gundar-f40b6a4d]] - narrower source section: Southern Central Region (Language = Western/Gundar)
+- [[sword-world-rpg-complete-edition-section-western-countries-language-western-except-palmer-village-which-uses-eastern-7bb6e029]] - narrower source section: Western Countries (Language: Western, except Palmer Village which uses Eastern)
+- [[sword-world-rpg-complete-edition-section-islands-of-azarn-language-eastern-m-rdan-6d795c7c]] - narrower source section: Islands of Azarn (Language = Eastern/Mārdan)
+- [[sword-world-rpg-complete-edition-section-island-of-damned-language-native-language-081e03a7]] - narrower source section: Island of Damned (Language = Native Language)
+- [[sword-world-rpg-complete-edition-section-chaosland-language-native-language-c351b250]] - narrower source section: Chaosland (Language = Native Language)
+- [[sword-world-rpg-complete-edition-section-eastend-languages-dbe4bb8f]] - narrower source section: Eastend (Languages = ?)
+- [[sword-world-rpg-complete-edition-section-farland-languages-3610c149]] - narrower source section: Farland (Languages = ?)
+- [[sword-world-rpg-complete-edition-section-currency-f5e96b85]] - narrower source section: Currency
+- [[sword-world-rpg-complete-edition-section-sage-skill-abilities-table-7ec388b6]] - narrower source section: Sage Skill Abilities Table
+- [[sword-world-rpg-complete-edition-section-sailor-skill-abilities-table-fe5bba22]] - narrower source section: Sailor Skill Abilities Table
+- [[sword-world-rpg-complete-edition-section-common-adventurer-abilities-table-64358c22]] - narrower source section: Common Adventurer Abilities Table
+- [[sword-world-rpg-complete-edition-section-table-1-9-armor-04bad31f]] - narrower source section: Table 1-9: Armor
+- [[sword-world-rpg-complete-edition-section-table-1-10-shields-e078e8de]] - narrower source section: Table 1-10: Shields
+- [[sword-world-rpg-complete-edition-section-table-5-1-area-and-size-expansion-7c997fcc]] - narrower source section: Table 5-1: Area and Size Expansion
+- [[sword-world-rpg-complete-edition-section-table-10-2-surprise-attack-check-a9cb7161]] - narrower source section: Table 10-2: Surprise Attack Check
+- [[sword-world-rpg-complete-edition-section-table-4-1-rating-table-ffc10060]] - narrower source section: Table 4-1: Rating Table
+- [[sword-world-rpg-complete-edition-section-reprint-edition-sword-world-rpg-complete-edition-5fdb27b2]] - narrower source section: [Reprint Edition] Sword World RPG Complete Edition
 
 ## Statements by subsection
 

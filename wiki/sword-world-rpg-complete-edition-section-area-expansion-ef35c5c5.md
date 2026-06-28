@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-area-expansion-ef35c5c5@075b9e8c55c6d3483dbdfa271e8935e6
+projection_coverage: section-sword-world-rpg-complete-edition-section-area-expansion-ef35c5c5@2e89e0a8b035f715cb9dc65e39ccc137
 ---
 
 # 《 Area Expansion 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-7-1-f0a747ed]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-7-1-f0a747ed]] - broader source section: 5.1.7.1
 
 ## Statements
 

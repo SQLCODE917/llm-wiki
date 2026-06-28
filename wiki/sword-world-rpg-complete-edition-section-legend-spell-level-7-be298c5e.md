@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-legend-spell-level-7-be298c5e@d270d247893f0975579e45d275a60374
+projection_coverage: section-sword-world-rpg-complete-edition-section-legend-spell-level-7-be298c5e@b41bcc20e8d6cd9659ea11c3cf6942c8
 ---
 
 # [ Legend ] (Spell Level=7)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Statements
 

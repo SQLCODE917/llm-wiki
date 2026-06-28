@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-projectile-bonus-damage-76c6fce6@3441b5a5f8f7a51409e3ea9b92812d97
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-projectile-bonus-damage-76c6fce6@63a560c93b0c3d20e0daa17d85788b5a
 ---
 
 # Chapter 16: / Projectile Bonus Damage
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-93b0e71b]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-93b0e71b]] - broader source section: Chapter 16:
 
 ## Statements
 

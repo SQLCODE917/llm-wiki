@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-henchman-3b0bebcd@6840fed1c70e48d3b93182e0817996e9
+projection_coverage: section-sword-world-rpg-complete-edition-section-henchman-3b0bebcd@c2dd222ca99e64b53bc9a75aed6d5409
 ---
 
 # Henchman
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section: 13.2.12
 
 ## Statements
 

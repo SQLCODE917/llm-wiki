@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605@3a6d22886b621c9b470f28b4068eae52
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605@12583097cc066c2a5af3ef7497b92168
 ---
 
 # Chapter 12: Various Checks
@@ -16,52 +16,52 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ec5b347d]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-common-f6fab38e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-rules-for-poison-illness-and-infection-2d648f77]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-2-1-poisons-f45a120b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-poison-treatment-and-detox-methods-312c92e0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-2-1-2-resistance-to-poison-4864e4e4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-how-to-read-poison-details-3dd0db56]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ale-dose-8b2cf8f6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-usage-b3d45578]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-types-of-poison-59862502]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-toxicity-score-06b72e8a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-rarity-4062bc4a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-effect-start-time-255808bb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-effect-duration-166248eb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-description-3c91ff33]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-poison-list-f1dd4fed]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-iocane-dose-91de5964]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-eternal-child-dose-135f6d3b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-kaleidoscope-injected-or-dose-26c4a533]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-gremlin-s-grin-injected-magic-af92cc22]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-centauri-blood-touch-damage-bd744cb3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-sandman-s-sand-inhaled-mind-462290b4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-stone-tongue-injected-154bace4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-zombie-maker-dose-mind-f47c706c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-dark-blade-injected-damage-b99f1f8d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-deathlike-sleep-dose-a171d4dc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-deadly-dust-inhaled-damage-cd9db480]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-dream-runner-inhaled-21f881a9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-bad-joke-inhaled-80928535]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-beast-maker-dose-magic-9fbf1314]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-black-death-touch-injected-or-inhaled-magic-damage-3767656c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-blue-nail-injected-0f41ad98]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-white-marble-inhaled-magic-2b8abca3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-midnight-scream-touch-mind-b56e715b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-moonlight-drone-dose-magic-f4af1f0a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-medusa-eyes-dose-magic-3f92e0c0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-love-passion-inhaled-dose-magic-mind-36c50fd8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-living-doll-injected-magic-e9196667]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-2-3-herbs-eb71ff9c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-arnica-f9c496bd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-upas-04fc44ac]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-dulcamara-fb58bfae]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-henruda-fe3d347a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-mandrake-b32c2131]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-work-requests-to-npcs-e5000888]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ec5b347d]] - broader source section: Chapter 12: Various Checks
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-common-f6fab38e]] - narrower source section: Chapter 12: Various Checks / [ Common ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-rules-for-poison-illness-and-infection-2d648f77]] - narrower source section: Chapter 12: Various Checks / Rules for Poison, Illness and Infection
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-2-1-poisons-f45a120b]] - narrower source section: Chapter 12: Various Checks / 12.2.1 Poisons
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-poison-treatment-and-detox-methods-312c92e0]] - narrower source section: Chapter 12: Various Checks / Poison Treatment and Detox Methods
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-2-1-2-resistance-to-poison-4864e4e4]] - narrower source section: Chapter 12: Various Checks / 12.2.1.2 Resistance to Poison
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-how-to-read-poison-details-3dd0db56]] - narrower source section: Chapter 12: Various Checks / How to Read Poison Details
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ale-dose-8b2cf8f6]] - narrower source section: Chapter 12: Various Checks / [ Ale (Dose) ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-usage-b3d45578]] - narrower source section: Chapter 12: Various Checks / 《 Usage 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-types-of-poison-59862502]] - narrower source section: Chapter 12: Various Checks / 《 Types of Poison 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-toxicity-score-06b72e8a]] - narrower source section: Chapter 12: Various Checks / 《 Toxicity Score 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-rarity-4062bc4a]] - narrower source section: Chapter 12: Various Checks / 《 Rarity 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-effect-start-time-255808bb]] - narrower source section: Chapter 12: Various Checks / 《 Effect Start Time 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-effect-duration-166248eb]] - narrower source section: Chapter 12: Various Checks / 《 Effect Duration 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-description-3c91ff33]] - narrower source section: Chapter 12: Various Checks / 《 Description 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-poison-list-f1dd4fed]] - narrower source section: Chapter 12: Various Checks / Poison List
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-iocane-dose-91de5964]] - narrower source section: Chapter 12: Various Checks / [ Iocane (Dose) ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-eternal-child-dose-135f6d3b]] - narrower source section: Chapter 12: Various Checks / [ Eternal Child (Dose) ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-kaleidoscope-injected-or-dose-26c4a533]] - narrower source section: Chapter 12: Various Checks / [Kaleidoscope (Injected or Dose)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-gremlin-s-grin-injected-magic-af92cc22]] - narrower source section: Chapter 12: Various Checks / [Gremlin's Grin (Injected/Magic)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-centauri-blood-touch-damage-bd744cb3]] - narrower source section: Chapter 12: Various Checks / [Centauri Blood (Touch/Damage)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-sandman-s-sand-inhaled-mind-462290b4]] - narrower source section: Chapter 12: Various Checks / [Sandman's Sand (Inhaled/Mind)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-stone-tongue-injected-154bace4]] - narrower source section: Chapter 12: Various Checks / [Stone Tongue (Injected)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-zombie-maker-dose-mind-f47c706c]] - narrower source section: Chapter 12: Various Checks / [Zombie Maker (Dose/Mind)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-dark-blade-injected-damage-b99f1f8d]] - narrower source section: Chapter 12: Various Checks / [Dark Blade (Injected/Damage)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-deathlike-sleep-dose-a171d4dc]] - narrower source section: Chapter 12: Various Checks / [Deathlike Sleep (Dose)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-deadly-dust-inhaled-damage-cd9db480]] - narrower source section: Chapter 12: Various Checks / [Deadly Dust (Inhaled/Damage)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-dream-runner-inhaled-21f881a9]] - narrower source section: Chapter 12: Various Checks / [ Dream Runner (Inhaled) ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-bad-joke-inhaled-80928535]] - narrower source section: Chapter 12: Various Checks / [ Bad Joke (Inhaled) ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-beast-maker-dose-magic-9fbf1314]] - narrower source section: Chapter 12: Various Checks / [Beast Maker (Dose/Magic)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-black-death-touch-injected-or-inhaled-magic-damage-3767656c]] - narrower source section: Chapter 12: Various Checks / [Black Death (Touch, Injected, or Inhaled/Magic, Damage)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-blue-nail-injected-0f41ad98]] - narrower source section: Chapter 12: Various Checks / [ Blue Nail (Injected) ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-white-marble-inhaled-magic-2b8abca3]] - narrower source section: Chapter 12: Various Checks / [White Marble (Inhaled/Magic)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-midnight-scream-touch-mind-b56e715b]] - narrower source section: Chapter 12: Various Checks / [Midnight Scream (Touch/Mind)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-moonlight-drone-dose-magic-f4af1f0a]] - narrower source section: Chapter 12: Various Checks / [Moonlight Drone (Dose/Magic)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-medusa-eyes-dose-magic-3f92e0c0]] - narrower source section: Chapter 12: Various Checks / [Medusa Eyes (Dose/Magic)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-love-passion-inhaled-dose-magic-mind-36c50fd8]] - narrower source section: Chapter 12: Various Checks / [ Love Passion (Inhaled, Dose/Magic, Mind) ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-living-doll-injected-magic-e9196667]] - narrower source section: Chapter 12: Various Checks / [Living Doll (Injected/Magic)]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - narrower source section: Chapter 12: Various Checks
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-2-3-herbs-eb71ff9c]] - narrower source section: Chapter 12: Various Checks / 12.2.3 Herbs
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-arnica-f9c496bd]] - narrower source section: Chapter 12: Various Checks / [ Arnica ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-upas-04fc44ac]] - narrower source section: Chapter 12: Various Checks / [ Upas ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-dulcamara-fb58bfae]] - narrower source section: Chapter 12: Various Checks / [ Dulcamara ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-henruda-fe3d347a]] - narrower source section: Chapter 12: Various Checks / [ Henruda ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-mandrake-b32c2131]] - narrower source section: Chapter 12: Various Checks / [ Mandrake ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-work-requests-to-npcs-e5000888]] - narrower source section: Chapter 12: Various Checks / Work Requests to NPCs
 
 ## Statements
 

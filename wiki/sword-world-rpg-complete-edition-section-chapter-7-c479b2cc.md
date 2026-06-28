@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-c479b2cc@303a90c7e009cf1214afa366d342207a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-c479b2cc@2a05ee7dae90f5dde7e78d73558ab9de
 ---
 
 # Chapter 7:
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-971915e8]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-the-difference-between-general-skills-and-adventurer-skills-a608c430]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-7-971915e8]] - broader source section: Chapter 7:
+- [[sword-world-rpg-complete-edition-section-chapter-7-the-difference-between-general-skills-and-adventurer-skills-a608c430]] - narrower source section: Chapter 7: / The Difference Between General Skills and Adventurer Skills
 
 ## Statements by subsection
 

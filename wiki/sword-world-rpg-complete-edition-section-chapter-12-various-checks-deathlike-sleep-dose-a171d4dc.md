@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-deathlike-sleep-dose-a171d4dc@36b0dfb8a9859cca71ac8fc3c2078a97
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-deathlike-sleep-dose-a171d4dc@c046a8c2a304b9ad8cf00d1313ec6e8c
 ---
 
 # Chapter 12: Various Checks / [Deathlike Sleep (Dose)]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

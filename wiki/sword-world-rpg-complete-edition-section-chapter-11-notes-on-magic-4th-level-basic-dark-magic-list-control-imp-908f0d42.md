@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-4th-level-basic-dark-magic-list-control-imp-908f0d42@39a0befe88ceb30da9373c8c502f91ac
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-4th-level-basic-dark-magic-list-control-imp-908f0d42@8dd12bbfe39409c22ea579996d594d19
 ---
 
 # Chapter 11: Notes on Magic / 4th Level Basic Dark Magic List [ Control Imp ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

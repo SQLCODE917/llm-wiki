@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-wisp-8cf430d5@33703cf1653bb28f4395fc49e16a5faf
+projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-wisp-8cf430d5@f52fe4d1f3a20e776f3d0b8b5f460207
 ---
 
 # Spirit Wall: Wisp
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ballista-0da971a6@62aa58aeeb94425b8a1abe64af81705a
+projection_coverage: section-sword-world-rpg-complete-edition-section-ballista-0da971a6@18209ac08e0ee3ababa6e8fef7d6e362
 ---
 
 # Ballista
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section: 16.9
 
 ## Statements
 

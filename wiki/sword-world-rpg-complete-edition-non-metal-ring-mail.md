@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-non-metal-ring-mail@44bc891445b51ec1f30eb802561c17b1
+projection_coverage: topic-sword-world-rpg-complete-edition-non-metal-ring-mail@43bac0337eae4b94e5471b899a6422c8
 ---
 
 # Non-metal or ring mail
@@ -89,13 +89,13 @@ What [[sword-world-rpg-complete-edition]] covers about non-metal or ring mail:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-14-non-metal-or-ring-mail-77ab9fd2]] - source section (3 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-14-non-metal-or-ring-mail-0a107080]] - source section (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements: 《 Magic Armor (+1) 》 shares source evidence from Chapter 14: / 《 Magic Armor (+2) 》 Non-metal or ring mail: Here is a list of prices of magical nonmetal or ring mail armor with +2 power. (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements: Adventure shares source evidence from Shadow Stalker: Once a shadow stalker's attack hits, treat it as if the character is being strangled. The damage is strike power 10, plus 5 points of bonus damage. If an adventurer ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared statements: Adventurer shares source evidence from Shadow Stalker: Once a shadow stalker's attack hits, treat it as if the character is being strangled. The damage is strike power 10, plus 5 points of bonus damage. If an adventurer ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from [ Ceiling Hanger ]: Strangling has strike power 0 and bonus damage 6 when making a damage check. Non-metal armor and ring mail have no effect against this damage, and points can only be ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements: Character shares source evidence from [ Ceiling Hanger ]: Strangling has strike power 0 and bonus damage 6 when making a damage check. Non-metal armor and ring mail have no effect against this damage, and points can only be ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-14-non-metal-or-ring-mail-77ab9fd2]] - source section: Chapter 14: / Non-metal or ring mail shares source evidence from Chapter 14: / Non-metal or ring mail: Similar to weapons, it's recommended to give each piece of magical armor its own name and lore by referencing the descriptions of magical armor that follow, which he ... [truncated]; Chapter 14: / Non-metal or ring mail shares technical record from Chapter 14: / Non-metal or ring mail: Rarity=12 (3 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-14-non-metal-or-ring-mail-0a107080]] - source section: Chapter 14: / Non-metal or ring mail shares source evidence from Chapter 14: / Non-metal or ring mail: Here is a list of prices of magical nonmetal or ring mail armor with +3 power.; Chapter 14: / Non-metal or ring mail shares technical record from Chapter 14: / Non-metal or ring mail: Rarity=16 Enchanter=Many Form=Non-metal or ring mail armor Required Strength/Base Trade Price=See description Magic Power=+3 to evasion speed damage reduction (1 shared statement(s), 1 shared atom(s))
 
 ## Source
 

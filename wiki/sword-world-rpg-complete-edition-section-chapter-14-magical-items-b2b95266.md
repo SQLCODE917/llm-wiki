@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magical-items-b2b95266@eba4bf887c919f21206452acddb2147f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magical-items-b2b95266@d50065856de23fb026da7a0f4e20e919
 ---
 
 # Chapter 14: / Magical Items
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

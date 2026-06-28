@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-curiosity-mind-1cbe40d4@842e77d52cad40f30c73d6f8d6e8386a
+projection_coverage: section-sword-world-rpg-complete-edition-section-curiosity-mind-1cbe40d4@3e33022d75362643b28d295985a252c3
 ---
 
 # Curiosity (Mind)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-3-8f977924]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-3-8f977924]] - broader source section: 5.3
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-m-rdan-9b004b71@7a48bfe50b3a294cb91e8dccc178f822
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-m-rdan-9b004b71@bd364455811a63c246539cb916e5aed8
 ---
 
 # Chapter 12: Various Checks / [ Mārdan ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

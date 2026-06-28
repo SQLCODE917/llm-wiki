@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-reprint-edition-sword-world-rpg-complete-edition-5fdb27b2@f055fd94de00b0defea3bfcb402ce07f
+projection_coverage: section-sword-world-rpg-complete-edition-section-reprint-edition-sword-world-rpg-complete-edition-5fdb27b2@51fabe96ad0fb1630d11a02a1a3e8d4a
 ---
 
 # [Reprint Edition] Sword World RPG Complete Edition
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-13a77f13@c65f9ba1622c6c5cfd152731c194776f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-13a77f13@6ce2268d25be7282fece3a2d9ea03a5b
 ---
 
 # Chapter 7:
@@ -16,11 +16,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-971915e8]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-merchant-skill-db1b2276]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-how-to-create-general-skills-ad597355]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-value-check-intelligence-not-retriable-14a010ce]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-negotiation-mental-power-not-retriable-f24eb121]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-7-971915e8]] - broader source section: Chapter 7:
+- [[sword-world-rpg-complete-edition-section-chapter-7-merchant-skill-db1b2276]] - narrower source section: Chapter 7: / Merchant Skill
+- [[sword-world-rpg-complete-edition-section-chapter-7-how-to-create-general-skills-ad597355]] - narrower source section: Chapter 7: / How to Create General Skills
+- [[sword-world-rpg-complete-edition-section-chapter-7-value-check-intelligence-not-retriable-14a010ce]] - narrower source section: Chapter 7: / [ ① Value Check [Intelligence]] (Not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-7-negotiation-mental-power-not-retriable-f24eb121]] - narrower source section: Chapter 7: / [ ② Negotiation [Mental Power]] (Not retriable)
 
 ## Statements
 

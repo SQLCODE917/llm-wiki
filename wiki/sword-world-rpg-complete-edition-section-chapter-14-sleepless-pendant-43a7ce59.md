@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-sleepless-pendant-43a7ce59@37b4c5f48f2ab1a8038130c72a500244
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-sleepless-pendant-43a7ce59@5ce5c7e9fda3916e8248c7b3e62e152c
 ---
 
 # Chapter 14: / [ Sleepless Pendant ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

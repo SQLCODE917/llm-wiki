@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-general-modifiers-bc36f8f6@74074227e626a8940a86d08af4104a31
+projection_coverage: section-sword-world-rpg-complete-edition-section-general-modifiers-bc36f8f6@81b3ecd7035e604a49e2b84b6951deb4
 ---
 
 # General Modifiers
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-9-3-c606422b]] - broader source section
+- [[sword-world-rpg-complete-edition-section-9-3-c606422b]] - broader source section: 9.3
 
 ## Statements
 

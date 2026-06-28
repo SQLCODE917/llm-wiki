@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magical-shields-ca1f57ac@ebb56e7e156c1494cf06816ac04d684c
+projection_coverage: section-sword-world-rpg-complete-edition-section-magical-shields-ca1f57ac@3b7ab7fcbb34987a61d5f6ef56a1f022
 ---
 
 # 【 Magical Shields 】
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-10-3-6729b108]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-10-3-6729b108]] - broader source section: 4.10.3
 
 ## Statements
 

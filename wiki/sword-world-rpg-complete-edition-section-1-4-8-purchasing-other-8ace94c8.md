@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-8-purchasing-other-8ace94c8@7ee2fe7c04297617680dba0a48442c57
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-8-purchasing-other-8ace94c8@355c6982afde4e3ae2dcacc1bb274f60
 ---
 
 # 1.4.8 Purchasing Other
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section: 1.4
 
 ## Technical atoms
 

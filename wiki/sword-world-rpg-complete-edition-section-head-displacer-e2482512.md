@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-head-displacer-e2482512@61e8bcf5df872b62cdaa7f44dc375582
+projection_coverage: section-sword-world-rpg-complete-edition-section-head-displacer-e2482512@7d8d10d9041bf4e23fe115ed4e4c90bc
 ---
 
 # [ Head Displacer ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section: 13.2.6
 
 ## Statements
 

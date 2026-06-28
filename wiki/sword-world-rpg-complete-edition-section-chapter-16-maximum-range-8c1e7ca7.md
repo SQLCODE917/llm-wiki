@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-maximum-range-8c1e7ca7@a4a8df57cdd3978cde79cc776ee13436
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-maximum-range-8c1e7ca7@517efc0d9780cc9dffa8d4175382d1c7
 ---
 
 # Chapter 16: / Maximum Range
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-1d2de216]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-1d2de216]] - broader source section: Chapter 16:
 
 ## Statements
 

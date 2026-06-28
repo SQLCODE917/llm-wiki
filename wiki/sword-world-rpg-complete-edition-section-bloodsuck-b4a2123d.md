@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bloodsuck-b4a2123d@21fbfed05b1eebbc8dd15285dab26561
+projection_coverage: section-sword-world-rpg-complete-edition-section-bloodsuck-b4a2123d@0ea1d6d98b2a68f9df5635ee480cc0a1
 ---
 
 # 《 Bloodsuck 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section: 13.6
 
 ## Statements
 

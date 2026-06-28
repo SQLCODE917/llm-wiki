@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-value-check-intelligence-not-retriable-14a010ce@26a11a9dff8d66e567d787cdba7741cb
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-value-check-intelligence-not-retriable-14a010ce@11ec50f4bf29237fd9b07bfecf6cb60f
 ---
 
 # Chapter 7: / [ ① Value Check [Intelligence]] (Not retriable)
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-13a77f13]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-value-check-intelligence-not-retriable-54bbc561]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-7-13a77f13]] - broader source section: Chapter 7:
+- [[sword-world-rpg-complete-edition-section-chapter-7-value-check-intelligence-not-retriable-54bbc561]] - same source heading: another source section with the same heading, Chapter 7: / [ ② Value Check [Intelligence]] (Not retriable)
 
 ## Statements
 

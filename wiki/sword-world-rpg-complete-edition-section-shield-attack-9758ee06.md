@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-shield-attack-9758ee06@857f8984ca539c6c4e52649f1508ef61
+projection_coverage: section-sword-world-rpg-complete-edition-section-shield-attack-9758ee06@65930659a2a38d5c4c70fb1670508e51
 ---
 
 # Shield Attack
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section: 16.9
 
 ## Statements
 

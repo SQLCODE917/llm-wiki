@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-effect-0555df00@bc8c997b69b0c2bea657d49cd8048041
+projection_coverage: section-sword-world-rpg-complete-edition-section-effect-0555df00@3c97d20b6cf315aea46c38809a82e8bc
 ---
 
 # 《 Effect 》
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-effect]] - topic hub
-- [[sword-world-rpg-complete-edition-section-full-effect-4ddfe3a5]] - same source heading
-- [[sword-world-rpg-complete-edition-section-full-effect-be10262a]] - same source heading
+- [[sword-world-rpg-complete-edition-effect]] - topic hub: opens the topic page for Effect
+- [[sword-world-rpg-complete-edition-section-full-effect-4ddfe3a5]] - same source heading: another source section with the same heading, full effect
+- [[sword-world-rpg-complete-edition-section-full-effect-be10262a]] - same source heading: another source section with the same heading, full effect
 
 ## Statements
 

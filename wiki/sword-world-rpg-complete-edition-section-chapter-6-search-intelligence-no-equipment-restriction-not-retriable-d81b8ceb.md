@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-d81b8ceb@3718c52991c9859f7dce3fc3f849aedb
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-d81b8ceb@d68afd9f6570a07bc7601a28a8544deb
 ---
 
 # Chapter 6: / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable)
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section
-- [[sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-04a276c8]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section: Chapter 6:
+- [[sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable]] - topic hub: opens the topic page for Search Intelligence Equipment Restriction Not Retriable
+- [[sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-04a276c8]] - same source heading: another source section with the same heading, Chapter 6: / [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable)
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sense-magic-1bf2a6c0@2a24fe3a16e47f54bce173df6aa01a44
+projection_coverage: section-sword-world-rpg-complete-edition-section-sense-magic-1bf2a6c0@ccf96ba2f382759cc86b42e37953b5ac
 ---
 
 # [ Sense Magic ]
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
-- [[sword-world-rpg-complete-edition-section-magic-1eca6338]] - same source heading
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
+- [[sword-world-rpg-complete-edition-section-magic-1eca6338]] - same source heading: another source section with the same heading, 《 Magic 》
 
 ## Statements
 

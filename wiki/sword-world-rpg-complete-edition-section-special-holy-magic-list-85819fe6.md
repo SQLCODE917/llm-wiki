@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-special-holy-magic-list-85819fe6@72442408aca3bc305f7da1bc07d3bd82
+projection_coverage: section-sword-world-rpg-complete-edition-section-special-holy-magic-list-85819fe6@0a481c8f59b695e6f8cfe04eb146af90
 ---
 
 # Special Holy Magic List
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-early-bird-mind-b572e23c@e4456cda550f02b9d2d57e6a255ad058
+projection_coverage: section-sword-world-rpg-complete-edition-section-early-bird-mind-b572e23c@0630224799f23ad615cad798118b37a4
 ---
 
 # Early Bird (Mind)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-3-8f977924]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-3-8f977924]] - broader source section: 5.3
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-special-bonuses-8630949e@09be93c00083d12e2546a083f6f61e73
+projection_coverage: section-sword-world-rpg-complete-edition-section-special-bonuses-8630949e@6b585a94ef4c4576e9cdf19764b98fac
 ---
 
 # Special Bonuses
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-15-1-907776c3]] - broader source section
+- [[sword-world-rpg-complete-edition-section-15-1-907776c3]] - broader source section: 15.1
 
 ## Statements
 

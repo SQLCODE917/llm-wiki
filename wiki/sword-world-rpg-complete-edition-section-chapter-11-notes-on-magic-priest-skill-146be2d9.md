@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-priest-skill-146be2d9@b0408d5c3c6f9fb5337b08e2ab92285c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-priest-skill-146be2d9@24ec5ccaccf6fa5b66f2ae3ecdeefe8e
 ---
 
 # Chapter 11: Notes on Magic / 《 Priest Skill 》
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-160fd94d]] - broader source section
-- [[sword-world-rpg-complete-edition-priest-skill]] - topic hub
-- [[sword-world-rpg-complete-edition-section-priest-skill-6b9e71c7]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-160fd94d]] - broader source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-priest-skill]] - topic hub: opens the topic page for Priest Skill
+- [[sword-world-rpg-complete-edition-section-priest-skill-6b9e71c7]] - same source heading: another source section with the same heading, Priest Skill
 
 ## Statements
 

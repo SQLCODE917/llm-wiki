@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-jihad-spell-level-10-1c32a9e6@72faa474916ac34189f68fa690c2c021
+projection_coverage: section-sword-world-rpg-complete-edition-section-jihad-spell-level-10-1c32a9e6@e1e357be0097be4195d6c7f2e977e8b3
 ---
 
 # [ Jihad ] (Spell Level=10)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Statements
 

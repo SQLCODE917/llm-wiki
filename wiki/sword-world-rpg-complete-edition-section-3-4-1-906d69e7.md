@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-1-906d69e7@7df672eb3053c2952cca8d53e32e720e
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-1-906d69e7@2b47a68f2f9e05600b2689d6f44d4a74
 ---
 
 # 3.4.1
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-drop-a-weapon-etc-on-the-ground-195a9ce0]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-drop-a-weapon-etc-on-the-ground-195a9ce0]] - narrower source section: Drop a Weapon, Etc. On the Ground
 
 ## Statements
 

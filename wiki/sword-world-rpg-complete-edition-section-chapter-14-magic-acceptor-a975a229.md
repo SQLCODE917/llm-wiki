@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magic-acceptor-a975a229@e9545944ec12b7d128eb7b63e60702ae
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magic-acceptor-a975a229@35b5e233b4562c8a1f87bf5f0a5d26cd
 ---
 
 # Chapter 14: / 《 Magic Acceptor 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04@a9beb835f6546af33b6c85f99dee39cd
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04@0c9f1cca5230b7d70685f9897cdf3782
 ---
 
 # Chapter 12: Various Checks
@@ -16,29 +16,29 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-how-to-read-illness-details-b392fd28]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-common-cold-c57574a6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-symptoms-47544a2f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-rarity-0e65d413]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-progression-speed-progression-intensity-healing-score-6f8c1662]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-fatal-depth-a3e03f7c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-infection-power-1d1d9e8b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-description-8a113277]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-illness-samples-a13449a4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-green-slime-rot-1d66b92c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-cotton-weaver-fc827477]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-stone-skin-e31e7f5f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-dance-macabre-67517fac]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-deep-sleep-72d1de6b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-bat-fever-d876e11d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-balloon-burst-3aad1f98]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-vampire-skin-c542c46c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-humbaba-curse-e329d2bf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-lycanthropy-951a038a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-rat-disease-b0f2ac8b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-red-cap-c04d6d49]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-lockjaw-67967070]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-how-to-read-illness-details-b392fd28]] - narrower source section: Chapter 12: Various Checks / How to Read Illness Details
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-common-cold-c57574a6]] - narrower source section: Chapter 12: Various Checks / [ Common Cold ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-symptoms-47544a2f]] - narrower source section: Chapter 12: Various Checks / 《 Symptoms 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-rarity-0e65d413]] - narrower source section: Chapter 12: Various Checks / 《 Rarity 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-progression-speed-progression-intensity-healing-score-6f8c1662]] - narrower source section: Chapter 12: Various Checks / 《 Progression Speed/Progression Intensity/ Healing Score 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-fatal-depth-a3e03f7c]] - narrower source section: Chapter 12: Various Checks / 《 Fatal Depth 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-infection-power-1d1d9e8b]] - narrower source section: Chapter 12: Various Checks / 《 Infection Power 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-description-8a113277]] - narrower source section: Chapter 12: Various Checks / 《 Description 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-illness-samples-a13449a4]] - narrower source section: Chapter 12: Various Checks / Illness Samples
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-green-slime-rot-1d66b92c]] - narrower source section: Chapter 12: Various Checks / [ Green Slime Rot ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-cotton-weaver-fc827477]] - narrower source section: Chapter 12: Various Checks / [ Cotton Weaver ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-stone-skin-e31e7f5f]] - narrower source section: Chapter 12: Various Checks / [ Stone Skin ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-dance-macabre-67517fac]] - narrower source section: Chapter 12: Various Checks / [ Dance Macabre ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-deep-sleep-72d1de6b]] - narrower source section: Chapter 12: Various Checks / [ Deep Sleep ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-bat-fever-d876e11d]] - narrower source section: Chapter 12: Various Checks / [ Bat Fever ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-balloon-burst-3aad1f98]] - narrower source section: Chapter 12: Various Checks / [ Balloon Burst ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-vampire-skin-c542c46c]] - narrower source section: Chapter 12: Various Checks / [ Vampire Skin ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-humbaba-curse-e329d2bf]] - narrower source section: Chapter 12: Various Checks / [ Humbaba Curse ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-lycanthropy-951a038a]] - narrower source section: Chapter 12: Various Checks / [ Lycanthropy ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-rat-disease-b0f2ac8b]] - narrower source section: Chapter 12: Various Checks / [ Rat Disease ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-red-cap-c04d6d49]] - narrower source section: Chapter 12: Various Checks / [ Red Cap ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-lockjaw-67967070]] - narrower source section: Chapter 12: Various Checks / [ Lockjaw ]
 
 ## Statements by subsection
 

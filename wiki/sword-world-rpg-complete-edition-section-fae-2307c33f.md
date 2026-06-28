@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fae-2307c33f@84a634d607072581a29a458f18abf0e5
+projection_coverage: section-sword-world-rpg-complete-edition-section-fae-2307c33f@5d9db8773a35fb22a579d003d2069ae3
 ---
 
 # 《 Fae 》
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section
-- [[sword-world-rpg-complete-edition-section-13-2-2-fae-b5110b1e]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section: 13.1
+- [[sword-world-rpg-complete-edition-section-13-2-2-fae-b5110b1e]] - same source heading: another source section with the same heading, 13.2.2 Fae
 
 ## Statements
 

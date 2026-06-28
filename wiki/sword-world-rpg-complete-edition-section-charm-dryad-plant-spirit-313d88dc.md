@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-charm-dryad-plant-spirit-313d88dc@bd901c7a8aba4e2b51f8793fce1968b5
+projection_coverage: section-sword-world-rpg-complete-edition-section-charm-dryad-plant-spirit-313d88dc@8613ece88fa609817b7ed6c882e709e3
 ---
 
 # [ Charm ] (Dryad/Plant Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

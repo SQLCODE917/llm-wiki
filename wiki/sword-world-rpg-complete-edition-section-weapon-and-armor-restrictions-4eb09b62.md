@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-and-armor-restrictions-4eb09b62@c70848f56d43005dca29efff660f76e1
+projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-and-armor-restrictions-4eb09b62@54f2cb82770340a08d6b1395ca7e5f26
 ---
 
 # Weapon and Armor Restrictions
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section
+- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section: 3.4.4
 
 ## Statements
 

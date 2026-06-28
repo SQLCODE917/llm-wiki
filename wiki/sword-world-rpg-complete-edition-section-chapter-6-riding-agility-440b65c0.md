@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-riding-agility-440b65c0@dc2bfe226414a60bd68ba286593bc1b2
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-riding-agility-440b65c0@91154e8b848e3418821d01f3b21cc907
 ---
 
 # Chapter 6: / [ ① Riding [Agility] ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section: Chapter 6:
 
 ## Statements
 

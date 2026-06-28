@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-stone-servant@1ff33225a8003655c514ec93183cb3ee
+projection_coverage: topic-sword-world-rpg-complete-edition-stone-servant@a50693aaa9de5ad699a375c64630bc8d
 ---
 
 # [ Stone Servant ]
@@ -79,18 +79,18 @@ What [[sword-world-rpg-complete-edition]] covers about [ stone servant ]:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-bone-servant]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-12-normal-language]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-agility]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-human]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-move]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-skeleton-warrior]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-sorcerer]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-stone-servant-b8fcd212]] - source section (4 shared statement(s), 9 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-stone-servant-8a394a2c]] - source section (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-bone-servant]] - shared statements: [ Bone Servant ] shares source evidence from [ Puppet Golem ]: A puppet golem is a small, simple version of a golem that is created by giving temporary life to a tree branch, stone, etc. using an ancient magic spell. Depending o ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements: Spell shares source evidence from [ Stone Servant ]: This spell creates a human-shaped stone golem (1 and a half meters tall) from a stone the size of a clenched fist. This simplified version of a stone golem is specif ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-12-normal-language]] - shared statements: 12.1.1 Normal Languages shares source evidence from Stone Servant: Rarity=15 (However, a sorcerer always knows) Agility=12 Movement Speed=12 Number=One to several Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-agility]] - shared statements: Agility shares source evidence from Stone Servant: Rarity=15 (However, a sorcerer always knows) Agility=12 Movement Speed=12 Number=One to several Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-human]] - shared statements: Human shares source evidence from [ Stone Servant ]: This spell creates a human-shaped stone golem (1 and a half meters tall) from a stone the size of a clenched fist. This simplified version of a stone golem is specif ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-move]] - shared statements: Move shares source evidence from Stone Servant: Rarity=15 (However, a sorcerer always knows) Agility=12 Movement Speed=12 Number=One to several Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-movement]] - shared statements: Movement shares source evidence from Stone Servant: Rarity=15 (However, a sorcerer always knows) Agility=12 Movement Speed=12 Number=One to several Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-rarity]] - shared statements: Rarity shares source evidence from Stone Servant: Rarity=15 (However, a sorcerer always knows) Agility=12 Movement Speed=12 Number=One to several Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-skeleton-warrior]] - shared statements: [ Skeleton Warrior ] shares source evidence from [ Puppet Golem ]: A puppet golem is a small, simple version of a golem that is created by giving temporary life to a tree branch, stone, etc. using an ancient magic spell. Depending o ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-sorcerer]] - shared statements: Sorcerer shares source evidence from Stone Servant: Rarity=15 (However, a sorcerer always knows) Agility=12 Movement Speed=12 Number=One to several Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-stone-servant-b8fcd212]] - source section: [ Stone Servant ] shares source evidence from [ Stone Servant ]: This spell creates a human-shaped stone golem (1 and a half meters tall) from a stone the size of a clenched fist. This simplified version of a stone golem is specif ... [truncated]; [ Stone Servant ] shares technical record from [ Stone Servant ]: Base Mental Power Cost=12 (4 shared statement(s), 9 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-stone-servant-8a394a2c]] - source section: Stone Servant shares source evidence from Stone Servant: Rarity=15 (However, a sorcerer always knows) Agility=12 Movement Speed=12 Number=One to several Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack ... [truncated]; Stone Servant shares technical record from Stone Servant: Monster Level=3 (3 shared statement(s), 1 shared atom(s))
 
 ## Source
 

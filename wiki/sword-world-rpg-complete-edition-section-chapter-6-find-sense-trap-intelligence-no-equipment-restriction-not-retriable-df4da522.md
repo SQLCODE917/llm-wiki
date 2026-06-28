@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-find-sense-trap-intelligence-no-equipment-restriction-not-retriable-df4da522@f9f0b20a913f17ac186bf467237dd8e9
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-find-sense-trap-intelligence-no-equipment-restriction-not-retriable-df4da522@9c2179a5f9f5ff580534add358aff0c5
 ---
 
 # Chapter 6: / [ ⑮ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable)
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section
-- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-6-find-sense-trap-intelligence-no-equipment-restriction-not-retriable-212ebc6f]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section: Chapter 6:
+- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - topic hub: opens the topic page for Trap Intelligence Equipment Restriction Not Retriable
+- [[sword-world-rpg-complete-edition-section-chapter-6-find-sense-trap-intelligence-no-equipment-restriction-not-retriable-212ebc6f]] - same source heading: another source section with the same heading, Chapter 6: / [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable)
 
 ## Statements
 

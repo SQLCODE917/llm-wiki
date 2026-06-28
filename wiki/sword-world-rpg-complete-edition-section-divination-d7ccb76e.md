@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-divination-d7ccb76e@5f6ffea10c99c4aeab1fabd3941f0c97
+projection_coverage: section-sword-world-rpg-complete-edition-section-divination-d7ccb76e@6c597b07851410dd2ac3d1b1086a9860
 ---
 
 # 《 Divination 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-divination-97dbbcb9]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-divination-97dbbcb9]] - same source heading: another source section with the same heading, Chapter 11: Notes on Magic / 《 Divination 》
 
 ## Statements
 

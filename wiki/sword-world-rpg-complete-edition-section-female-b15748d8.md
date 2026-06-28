@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-female-b15748d8@c3d51474f4c1702bb95d1b548bc7df75
+projection_coverage: section-sword-world-rpg-complete-edition-section-female-b15748d8@b48ab7fc6f7fdaa74d839e939b4bcb32
 ---
 
 # Female
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-female-de8523e5]] - same source heading
+- [[sword-world-rpg-complete-edition-section-female-de8523e5]] - same source heading: another source section with the same heading, Female
 
 ## Statements
 

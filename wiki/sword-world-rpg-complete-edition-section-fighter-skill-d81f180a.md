@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fighter-skill-d81f180a@dc34e13f1123db742957bdcea1f3a67d
+projection_coverage: section-sword-world-rpg-complete-edition-section-fighter-skill-d81f180a@fb2b7a69f7abc530167775a065b8529a
 ---
 
 # 【 Fighter Skill 】
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section
+- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section: 3.4.4
 
 ## Statements
 

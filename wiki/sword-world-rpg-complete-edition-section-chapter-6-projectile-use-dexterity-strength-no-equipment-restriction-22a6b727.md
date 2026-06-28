@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-projectile-use-dexterity-strength-no-equipment-restriction-22a6b727@dfb5a40d20302bacf9a8369617cd1bb5
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-projectile-use-dexterity-strength-no-equipment-restriction-22a6b727@671a8ffea3faedffa4dc478c653f2337
 ---
 
 # Chapter 6: / [ ⑫ Projectile Use [Dexterity, Strength] ] (No equipment restriction)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section: Chapter 6:
 
 ## Statements
 

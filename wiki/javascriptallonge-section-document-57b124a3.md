@@ -1,43 +1,27 @@
 ---
 page_id: javascriptallonge-section-document-57b124a3
 page_kind: source
-summary: Document: 3 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+summary: Document: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-document-57b124a3@248650089624b267e0e50283c602831d
+projection_coverage: section-javascriptallonge-section-document-57b124a3@9094a0c3b694edab7f9fe466921093fd
 ---
 
 # Document
 
 From [[javascriptallonge]].
 
-## Related pages
+## Statements
 
-- [[javascriptallonge-section-document-reg-raganwald-braithwaite-7f935dce]] - narrower source section
+- **Also By Reg “raganwald” Braithwaite** Kestrels, Quirky Birds, and Hopeless Egocentricity
 
-## Statements by subsection
+What I’ve Learned From Failure
 
-### Document / Reg “raganwald” Braithwaite
+How to Do What You Love & Earn What You’re Worth as a Programmer
 
-- How to Do What You Love & Earn What You’re Worth as a Programmer _(javascriptallonge.pdf (source-range-83ecb080-00010))_
+Steal Raganwald’s Book!
 
-## Technical atoms
-
-### Technical atom 1
-
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00005))_
-
-> This version was published on 2017-11-03
-
-### Technical atom 2
-
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00007))_
-
-> This is a Leanpub book. Leanpub empowers authors and publishers with the Lean Publishing process. Lean Publishing is the act of publishing an in-progress ebook using lightweight tools and many iterations to get reader feedback, pivot until you have the right book and build traction once you do.
-
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00008))_
-
-> © 2015 - 2017 Reg “raganwald” Braithwaite **Also By Reg “raganwald” Braithwaite** Kestrels, Quirky Birds, and Hopeless Egocentricity
+CoffeeScript Ristretto _(javascriptallonge.pdf (source-range-83ecb080-00003))_

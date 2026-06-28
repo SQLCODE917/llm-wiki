@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-9-3-monster-death-check-efeabb68@32672a6cb46ace5ec1657ba98e7fe005
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-9-3-monster-death-check-efeabb68@00cbb8ff0832a769e857afce79b48752
 ---
 
 # 4.9.3 Monster Death Check
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-9-a263c100]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-9-a263c100]] - broader source section: 4.9
 
 ## Statements
 

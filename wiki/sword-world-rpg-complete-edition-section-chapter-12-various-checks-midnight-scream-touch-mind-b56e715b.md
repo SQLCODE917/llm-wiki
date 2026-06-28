@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-midnight-scream-touch-mind-b56e715b@4c37b121adf1e436dc2977df0644073c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-midnight-scream-touch-mind-b56e715b@5bdd46eddd265abfc84c455d26db2cde
 ---
 
 # Chapter 12: Various Checks / [Midnight Scream (Touch/Mind)]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

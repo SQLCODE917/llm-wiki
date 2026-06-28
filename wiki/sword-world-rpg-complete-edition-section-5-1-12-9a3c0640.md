@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-9a3c0640@0ae52a73592d050b2450e7287524b95b
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-9a3c0640@b8dad649a6b3a891fe808ec25158df31
 ---
 
 # 5.1.12
@@ -16,105 +16,105 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-ancient-magic-list-01b20cbb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-counterspell-3ffd63f8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chameleon-65d3bce2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sleep-cloud-2dc61a55]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sense-magic-1bf2a6c0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-darkness-dc63c5ab]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-decrease-weight-base-mental-power-cost-3-distance-10-meters-area-one-object-duration-18-rounds-e-68920840]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-dispel-magic-b64dbfc2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-kindle-61e32525]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-protection-da6279b2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-magic-protection-33bf869c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-light-1a1a0577]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-lock-32ba82f4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-2nd-level-ancient-magic-list-oak-c8456585]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sense-enemy-7269ca1d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-disguise-5f59d994]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-fire-weapon-a358c6e1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-falling-control-8c8a1964]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-replace-sound-b3ef1d2a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-increase-weight-base-mental-power-cost-9-distance-10-meters-area-one-object-duration-18-rounds-e-27a97a97]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-create-image-cb391ede]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-stone-servant-b8fcd212]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-hard-lock-34a5d016]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-familiar-c57ffc19]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-physical-enchant-ed2e2644]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sharpness-6dbf2cda]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-dullness-dad4d419]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-quickness-c0af7e8c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-slowness-fea76aba]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-strength-8eaf7044]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-weakness-b9b599f8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-bone-servant-6ce709ba]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-lightning-1119f295]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-levitation-a27419b2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-4th-level-ancient-magic-list-counter-sense-d1dbd9c9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-conceal-self-18ea480d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-shape-change-05fbe58d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sense-aura-f1cbd7bd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-tongue-74cf9098]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-paralyze-6ee2e78b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-fireball-3067e42e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-location-9df31115]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-5th-level-ancient-magic-list-apport-a52e0c5f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-illusion-2ea22003]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-suppress-elemental-74a31c8f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-skeleton-warrior-a78842c2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sense-lie-91e8c1d2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-translate-3d3837a4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-vision-3712edd0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-flight-67bcbe09]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-blizzard-c367f133]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-6th-level-ancient-magic-list-acid-cloud-7cf813c5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-analyze-enchantment-5f85f4cd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-geas-8aa6c256]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-create-undead-a7f35b67]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-create-device-aa29329e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-create-buau-zombie-542eab44]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-see-through-89679576]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-seal-enchantment-adf4b764]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-steal-mind-b2c398d3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-slow-9de4575f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-haste-4e3a1289]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-rune-rope-8b323aa9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-7th-level-ancient-magic-list-dispel-order-f4865385]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-telekinesis-01dbdf9f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-teleport-0a9000d1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-full-potential-8855e6db]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-blade-net-2dd6d4e2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-bend-bar-e4ad78f5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-polymorph-9e8405c1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-magic-reflection-293f9b5a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-8th-level-ancient-magic-list-a203b9bf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-illusionary-beast-6ab6cea1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-stun-cloud-fb7f1a99]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-force-field-782166bf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-lightning-bind-de8377e0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-wraith-form-cd0e76d2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-9th-level-ancient-magic-list-command-golem-f91a956c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-control-weather-9d4b43bd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-disintegrate-f620fb0b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-petrification-b719a029]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-rune-shield-1d484008]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-10th-level-ancient-magic-list-dimension-gate-832aa917]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-death-cloud-7845e72e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-perfect-cancellation-234e1836]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-meteor-strike-73bf865e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-restrictions-on-using-spirit-magic-abef08af]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-wind-spirits-be3d7bea]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-earth-spirits-00cb1054]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-water-spirits-27ac7b6a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-fire-spirits-b534cc21]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ice-spirits-96700184]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-mind-spirits-640d96ef]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-plant-spirits-49a80b40]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-other-spirits-77d253c1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-basic-abilities-of-the-shaman-skill-bc7069d2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-infravision-3c202520]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sense-aura-e3d262ea]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-silent-spirit-c8af09c8]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-ancient-magic-list-01b20cbb]] - narrower source section: Ancient Magic List
+- [[sword-world-rpg-complete-edition-section-counterspell-3ffd63f8]] - narrower source section: [ Counterspell ]
+- [[sword-world-rpg-complete-edition-section-chameleon-65d3bce2]] - narrower source section: [ Chameleon ]
+- [[sword-world-rpg-complete-edition-section-sleep-cloud-2dc61a55]] - narrower source section: [ Sleep Cloud ]
+- [[sword-world-rpg-complete-edition-section-sense-magic-1bf2a6c0]] - narrower source section: [ Sense Magic ]
+- [[sword-world-rpg-complete-edition-section-darkness-dc63c5ab]] - narrower source section: [ Darkness ]
+- [[sword-world-rpg-complete-edition-section-decrease-weight-base-mental-power-cost-3-distance-10-meters-area-one-object-duration-18-rounds-e-68920840]] - narrower source section: [ Decrease Weight ] Base Mental Power Cost=3 Distance=10 meters Area=One object Duration=18 rounds Effect=Reduce the weight of an object Type=Lost Counters (Negates): Increase Weight Countered (Negated) By: Increase Weight Expansion=Duration, distance, targets, effect (see description)
+- [[sword-world-rpg-complete-edition-section-dispel-magic-b64dbfc2]] - narrower source section: [ Dispel Magic ]
+- [[sword-world-rpg-complete-edition-section-kindle-61e32525]] - narrower source section: [ Kindle ]
+- [[sword-world-rpg-complete-edition-section-protection-da6279b2]] - narrower source section: [ Protection ]
+- [[sword-world-rpg-complete-edition-section-magic-protection-33bf869c]] - narrower source section: [ Magic Protection ]
+- [[sword-world-rpg-complete-edition-section-light-1a1a0577]] - narrower source section: [ Light ]
+- [[sword-world-rpg-complete-edition-section-lock-32ba82f4]] - narrower source section: [ Lock ]
+- [[sword-world-rpg-complete-edition-section-2nd-level-ancient-magic-list-oak-c8456585]] - narrower source section: 2nd Level Ancient Magic List [ Oak ]
+- [[sword-world-rpg-complete-edition-section-sense-enemy-7269ca1d]] - narrower source section: [ Sense Enemy ]
+- [[sword-world-rpg-complete-edition-section-disguise-5f59d994]] - narrower source section: [ Disguise ]
+- [[sword-world-rpg-complete-edition-section-fire-weapon-a358c6e1]] - narrower source section: [ Fire Weapon ]
+- [[sword-world-rpg-complete-edition-section-falling-control-8c8a1964]] - narrower source section: [ Falling Control ]
+- [[sword-world-rpg-complete-edition-section-replace-sound-b3ef1d2a]] - narrower source section: [ Replace Sound ]
+- [[sword-world-rpg-complete-edition-section-increase-weight-base-mental-power-cost-9-distance-10-meters-area-one-object-duration-18-rounds-e-27a97a97]] - narrower source section: [ Increase Weight ] Base Mental Power Cost=9 Distance=10 meters Area=One object Duration=18 rounds Effect=Increase the weight of an object Type=Lost Counters (Negates): Decrease Weight Countered (Negated) By: Decrease Weight
+- [[sword-world-rpg-complete-edition-section-create-image-cb391ede]] - narrower source section: [ Create Image ]
+- [[sword-world-rpg-complete-edition-section-stone-servant-b8fcd212]] - narrower source section: [ Stone Servant ]
+- [[sword-world-rpg-complete-edition-section-hard-lock-34a5d016]] - narrower source section: [ Hard Lock ]
+- [[sword-world-rpg-complete-edition-section-familiar-c57ffc19]] - narrower source section: [ Familiar ]
+- [[sword-world-rpg-complete-edition-section-physical-enchant-ed2e2644]] - narrower source section: [ Physical Enchant ]
+- [[sword-world-rpg-complete-edition-section-sharpness-6dbf2cda]] - narrower source section: Sharpness
+- [[sword-world-rpg-complete-edition-section-dullness-dad4d419]] - narrower source section: Dullness
+- [[sword-world-rpg-complete-edition-section-quickness-c0af7e8c]] - narrower source section: Quickness
+- [[sword-world-rpg-complete-edition-section-slowness-fea76aba]] - narrower source section: Slowness
+- [[sword-world-rpg-complete-edition-section-strength-8eaf7044]] - narrower source section: Strength
+- [[sword-world-rpg-complete-edition-section-weakness-b9b599f8]] - narrower source section: Weakness
+- [[sword-world-rpg-complete-edition-section-bone-servant-6ce709ba]] - narrower source section: [ Bone Servant ]
+- [[sword-world-rpg-complete-edition-section-lightning-1119f295]] - narrower source section: [ Lightning ]
+- [[sword-world-rpg-complete-edition-section-levitation-a27419b2]] - narrower source section: [ Levitation ]
+- [[sword-world-rpg-complete-edition-section-4th-level-ancient-magic-list-counter-sense-d1dbd9c9]] - narrower source section: 4th Level Ancient Magic List [ Counter Sense ]
+- [[sword-world-rpg-complete-edition-section-conceal-self-18ea480d]] - narrower source section: [ Conceal Self ]
+- [[sword-world-rpg-complete-edition-section-shape-change-05fbe58d]] - narrower source section: [ Shape Change
+- [[sword-world-rpg-complete-edition-section-sense-aura-f1cbd7bd]] - narrower source section: [ Sense Aura ]
+- [[sword-world-rpg-complete-edition-section-tongue-74cf9098]] - narrower source section: [ Tongue ]
+- [[sword-world-rpg-complete-edition-section-paralyze-6ee2e78b]] - narrower source section: [ Paralyze ]
+- [[sword-world-rpg-complete-edition-section-fireball-3067e42e]] - narrower source section: [ Fireball ]
+- [[sword-world-rpg-complete-edition-section-location-9df31115]] - narrower source section: [ Location ]
+- [[sword-world-rpg-complete-edition-section-5th-level-ancient-magic-list-apport-a52e0c5f]] - narrower source section: 5th Level Ancient Magic List [ Apport ]
+- [[sword-world-rpg-complete-edition-section-illusion-2ea22003]] - narrower source section: [ Illusion ]
+- [[sword-world-rpg-complete-edition-section-suppress-elemental-74a31c8f]] - narrower source section: [ Suppress Elemental ]
+- [[sword-world-rpg-complete-edition-section-skeleton-warrior-a78842c2]] - narrower source section: [ Skeleton Warrior ]
+- [[sword-world-rpg-complete-edition-section-sense-lie-91e8c1d2]] - narrower source section: [ Sense Lie ]
+- [[sword-world-rpg-complete-edition-section-translate-3d3837a4]] - narrower source section: [ Translate ]
+- [[sword-world-rpg-complete-edition-section-vision-3712edd0]] - narrower source section: [ Vision ]
+- [[sword-world-rpg-complete-edition-section-flight-67bcbe09]] - narrower source section: [ Flight ]
+- [[sword-world-rpg-complete-edition-section-blizzard-c367f133]] - narrower source section: Blizzard ]
+- [[sword-world-rpg-complete-edition-section-6th-level-ancient-magic-list-acid-cloud-7cf813c5]] - narrower source section: 6th Level Ancient Magic List [ Acid Cloud ]
+- [[sword-world-rpg-complete-edition-section-analyze-enchantment-5f85f4cd]] - narrower source section: [ Analyze Enchantment ]
+- [[sword-world-rpg-complete-edition-section-geas-8aa6c256]] - narrower source section: [ Geas ]
+- [[sword-world-rpg-complete-edition-section-create-undead-a7f35b67]] - narrower source section: Create Undead ]
+- [[sword-world-rpg-complete-edition-section-create-device-aa29329e]] - narrower source section: [ Create Device ]
+- [[sword-world-rpg-complete-edition-section-create-buau-zombie-542eab44]] - narrower source section: [ Create Buau Zombie
+- [[sword-world-rpg-complete-edition-section-see-through-89679576]] - narrower source section: [ See-Through ]
+- [[sword-world-rpg-complete-edition-section-seal-enchantment-adf4b764]] - narrower source section: [ Seal Enchantment ]
+- [[sword-world-rpg-complete-edition-section-steal-mind-b2c398d3]] - narrower source section: [ Steal Mind ]
+- [[sword-world-rpg-complete-edition-section-slow-9de4575f]] - narrower source section: [ Slow ]
+- [[sword-world-rpg-complete-edition-section-haste-4e3a1289]] - narrower source section: [ Haste ]
+- [[sword-world-rpg-complete-edition-section-rune-rope-8b323aa9]] - narrower source section: [ Rune Rope ]
+- [[sword-world-rpg-complete-edition-section-7th-level-ancient-magic-list-dispel-order-f4865385]] - narrower source section: 7th Level Ancient Magic List [ Dispel Order ]
+- [[sword-world-rpg-complete-edition-section-telekinesis-01dbdf9f]] - narrower source section: [ Telekinesis ]
+- [[sword-world-rpg-complete-edition-section-teleport-0a9000d1]] - narrower source section: [ Teleport ]
+- [[sword-world-rpg-complete-edition-section-full-potential-8855e6db]] - narrower source section: [ Full Potential ]
+- [[sword-world-rpg-complete-edition-section-blade-net-2dd6d4e2]] - narrower source section: [ Blade Net ]
+- [[sword-world-rpg-complete-edition-section-bend-bar-e4ad78f5]] - narrower source section: [ Bend Bar ]
+- [[sword-world-rpg-complete-edition-section-polymorph-9e8405c1]] - narrower source section: [ Polymorph ]
+- [[sword-world-rpg-complete-edition-section-magic-reflection-293f9b5a]] - narrower source section: [ Magic Reflection ]
+- [[sword-world-rpg-complete-edition-section-8th-level-ancient-magic-list-a203b9bf]] - narrower source section: 8th Level Ancient Magic List
+- [[sword-world-rpg-complete-edition-section-illusionary-beast-6ab6cea1]] - narrower source section: Illusionary Beast
+- [[sword-world-rpg-complete-edition-section-stun-cloud-fb7f1a99]] - narrower source section: [ Stun Cloud ]
+- [[sword-world-rpg-complete-edition-section-force-field-782166bf]] - narrower source section: [ Force Field ]
+- [[sword-world-rpg-complete-edition-section-lightning-bind-de8377e0]] - narrower source section: [ Lightning Bind ]
+- [[sword-world-rpg-complete-edition-section-wraith-form-cd0e76d2]] - narrower source section: [ Wraith Form ]
+- [[sword-world-rpg-complete-edition-section-9th-level-ancient-magic-list-command-golem-f91a956c]] - narrower source section: 9th Level Ancient Magic List [ Command Golem ]
+- [[sword-world-rpg-complete-edition-section-control-weather-9d4b43bd]] - narrower source section: [ Control Weather ]
+- [[sword-world-rpg-complete-edition-section-disintegrate-f620fb0b]] - narrower source section: [ Disintegrate ]
+- [[sword-world-rpg-complete-edition-section-petrification-b719a029]] - narrower source section: [ Petrification
+- [[sword-world-rpg-complete-edition-section-rune-shield-1d484008]] - narrower source section: [ Rune Shield ]
+- [[sword-world-rpg-complete-edition-section-10th-level-ancient-magic-list-dimension-gate-832aa917]] - narrower source section: 10th Level Ancient Magic List [ Dimension Gate ]
+- [[sword-world-rpg-complete-edition-section-death-cloud-7845e72e]] - narrower source section: [ Death Cloud ]
+- [[sword-world-rpg-complete-edition-section-perfect-cancellation-234e1836]] - narrower source section: [ Perfect Cancellation ]
+- [[sword-world-rpg-complete-edition-section-meteor-strike-73bf865e]] - narrower source section: [ Meteor Strike ]
+- [[sword-world-rpg-complete-edition-section-restrictions-on-using-spirit-magic-abef08af]] - narrower source section: Restrictions on Using Spirit Magic
+- [[sword-world-rpg-complete-edition-section-wind-spirits-be3d7bea]] - narrower source section: ⬤ Wind Spirits
+- [[sword-world-rpg-complete-edition-section-earth-spirits-00cb1054]] - narrower source section: ⬤ Earth Spirits
+- [[sword-world-rpg-complete-edition-section-water-spirits-27ac7b6a]] - narrower source section: ⬤ Water Spirits
+- [[sword-world-rpg-complete-edition-section-fire-spirits-b534cc21]] - narrower source section: ⬤ Fire Spirits
+- [[sword-world-rpg-complete-edition-section-ice-spirits-96700184]] - narrower source section: ⬤ Ice Spirits
+- [[sword-world-rpg-complete-edition-section-mind-spirits-640d96ef]] - narrower source section: ⬤ Mind Spirits
+- [[sword-world-rpg-complete-edition-section-plant-spirits-49a80b40]] - narrower source section: ⬤ Plant Spirits
+- [[sword-world-rpg-complete-edition-section-other-spirits-77d253c1]] - narrower source section: ⬤ Other Spirits
+- [[sword-world-rpg-complete-edition-section-basic-abilities-of-the-shaman-skill-bc7069d2]] - narrower source section: Basic Abilities of the Shaman Skill
+- [[sword-world-rpg-complete-edition-section-infravision-3c202520]] - narrower source section: 《 Infravision 》
+- [[sword-world-rpg-complete-edition-section-sense-aura-e3d262ea]] - narrower source section: 《 Sense Aura 》
+- [[sword-world-rpg-complete-edition-section-silent-spirit-c8af09c8]] - narrower source section: 《 Silent Spirit 》
 
 ## Statements by subsection
 

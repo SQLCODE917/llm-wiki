@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-excellent-weapons-and-armor-6a2cc3eb@fc6841f8001838d5497ce36c4af32e52
+projection_coverage: section-sword-world-rpg-complete-edition-section-excellent-weapons-and-armor-6a2cc3eb@b9d597482a53ae95c36cd5f1ae743751
 ---
 
 # Excellent Weapons and Armor
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-10-d6286642]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-10-d6286642]] - broader source section: 4.10
 
 ## Statements
 

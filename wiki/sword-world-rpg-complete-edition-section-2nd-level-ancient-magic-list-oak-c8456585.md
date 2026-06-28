@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2nd-level-ancient-magic-list-oak-c8456585@a9089928f0f22d635e4d78f0782ff23e
+projection_coverage: section-sword-world-rpg-complete-edition-section-2nd-level-ancient-magic-list-oak-c8456585@c3b8b7d55f9d227283e613883a6b6138
 ---
 
 # 2nd Level Ancient Magic List [ Oak ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

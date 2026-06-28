@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-grassrunner-48f1c32f@1ae1b09cfc454b7705690aa961a71b78
+projection_coverage: section-sword-world-rpg-complete-edition-section-grassrunner-48f1c32f@3c0b50efe76d183302ca7cbf07fc336c
 ---
 
 # 【 Grassrunner 】
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section
-- [[sword-world-rpg-complete-edition-section-grassrunner-0eb50ced]] - same source heading
+- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section: 1.4
+- [[sword-world-rpg-complete-edition-section-grassrunner-0eb50ced]] - same source heading: another source section with the same heading, 【 Grassrunner 】
 
 ## Statements
 

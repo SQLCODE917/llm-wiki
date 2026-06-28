@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-map-creation-intelligence-no-equipment-restriction-not-retriable-342f35e1@e34008973ad288a403560ae9237adb19
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-map-creation-intelligence-no-equipment-restriction-not-retriable-342f35e1@80ab77bbbff3d5cff4c09ef528848a74
 ---
 
 # Chapter 6: / [ ⑨ Map Creation [Intelligence]] (No equipment restriction, not retriable)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section: Chapter 6:
 
 ## Statements
 

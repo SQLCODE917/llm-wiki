@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-attack-points-fa99b8e3@7a4d0969e29975d7c7317838faf3a5f8
+projection_coverage: section-sword-world-rpg-complete-edition-section-attack-points-fa99b8e3@0753e0bfcd9d47484c8ae2295415c7c7
 ---
 
 # 《 Attack Points 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section: 13.2.1
 
 ## Statements
 

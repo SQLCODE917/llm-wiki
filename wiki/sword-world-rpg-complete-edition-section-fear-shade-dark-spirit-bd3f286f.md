@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fear-shade-dark-spirit-bd3f286f@76373d28bb01e0bfd4d7fa5e4094fc44
+projection_coverage: section-sword-world-rpg-complete-edition-section-fear-shade-dark-spirit-bd3f286f@68c297beb8736846d3873e0041f5136c
 ---
 
 # [ Fear ] (Shade/Dark Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

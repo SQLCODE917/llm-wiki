@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bandit-98346a1e@c56d7c460cbc4615cd014db71379e448
+projection_coverage: section-sword-world-rpg-complete-edition-section-bandit-98346a1e@2147671e0d3d85e653343713c4781a56
 ---
 
 # [ Bandit ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section: 13.2.12
 
 ## Statements
 

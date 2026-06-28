@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-example-6f29081e@3c87e6726202bf8e2b2953ddd53d70f8
+projection_coverage: section-sword-world-rpg-complete-edition-section-example-6f29081e@0e90fa8d77fbea0666c0feca09eb7e92
 ---
 
 # Example:
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

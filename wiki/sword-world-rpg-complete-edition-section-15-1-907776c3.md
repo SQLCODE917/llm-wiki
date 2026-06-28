@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-15-1-907776c3@a9fb6a4262f9a620bc1cb5543e36c595
+projection_coverage: section-sword-world-rpg-complete-edition-section-15-1-907776c3@aa623d0937a34fa819bf9ef827feaa7e
 ---
 
 # 15.1
@@ -16,11 +16,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-four-types-of-experience-points-5bae806b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-accomplishing-missions-cf365c24]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-fighting-monsters-b0fb3d75]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-success-rolls-ea031433]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-special-bonuses-8630949e]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-four-types-of-experience-points-5bae806b]] - narrower source section: Four Types of Experience Points
+- [[sword-world-rpg-complete-edition-section-accomplishing-missions-cf365c24]] - narrower source section: Accomplishing Missions
+- [[sword-world-rpg-complete-edition-section-fighting-monsters-b0fb3d75]] - narrower source section: Fighting Monsters
+- [[sword-world-rpg-complete-edition-section-success-rolls-ea031433]] - narrower source section: Success Rolls
+- [[sword-world-rpg-complete-edition-section-special-bonuses-8630949e]] - narrower source section: Special Bonuses
 
 ## Statements by subsection
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-symptoms-47544a2f@87b5e57ede9df94591cf85e117f2cdda
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-symptoms-47544a2f@4612cb43632a1fe5e2940f8102c3d25f
 ---
 
 # Chapter 12: Various Checks / 《 Symptoms 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

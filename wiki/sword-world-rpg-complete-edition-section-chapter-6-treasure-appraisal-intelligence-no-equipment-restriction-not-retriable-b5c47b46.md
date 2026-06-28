@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-treasure-appraisal-intelligence-no-equipment-restriction-not-retriable-b5c47b46@bca44d2373216c46e1a15af1f2892c44
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-treasure-appraisal-intelligence-no-equipment-restriction-not-retriable-b5c47b46@60acc639bf912bb9eae1a69d66165bb0
 ---
 
 # Chapter 6: / [ ⑮ Treasure Appraisal [Intelligence] ] (No equipment restriction, not retriable)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section: Chapter 6:
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-7-2-damage-checks-c648cf40@0556d2901a8d7283b8761c40837207dc
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-7-2-damage-checks-c648cf40@567b03f65338fdb0335763a9947bf78b
 ---
 
 # 4.7.2 Damage Checks
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-7-146fbd9e]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-7-146fbd9e]] - broader source section: 4.7
 
 ## Statements
 

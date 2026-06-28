@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magic-armor-1-7e747774@12ee5e130c3e02056aa656967b5c5ef6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magic-armor-1-7e747774@74aae1cd76741cf643bad55a2b840d7b
 ---
 
 # Chapter 14: / 《 Magic Armor (+1)
@@ -16,12 +16,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
-- [[sword-world-rpg-complete-edition-magic-armor]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-1-4e883673]] - same source heading
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-2-dd012866]] - same source heading
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-3-23b7ec25]] - same source heading
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-3-cd4b8a4c]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
+- [[sword-world-rpg-complete-edition-magic-armor]] - topic hub: opens the topic page for Magic Armor
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-1-4e883673]] - same source heading: another source section with the same heading, Chapter 14: / 《 Magic Armor (+1) 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-2-dd012866]] - same source heading: another source section with the same heading, Chapter 14: / 《 Magic Armor (+2) 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-3-23b7ec25]] - same source heading: another source section with the same heading, Chapter 14: / 《 Magic Armor (+3) 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-3-cd4b8a4c]] - same source heading: another source section with the same heading, Chapter 14: / 《 Magic Armor (+3) 》
 
 ## Technical atoms
 

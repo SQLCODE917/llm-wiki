@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-damage-expansion-c39664f3@1e859e6f6cf791e2f822b542a070b910
+projection_coverage: section-sword-world-rpg-complete-edition-section-damage-expansion-c39664f3@7f57b483889abd79ecc8fb39acfdb01b
 ---
 
 # 《 Damage Expansion 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-7-1-f0a747ed]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-7-1-f0a747ed]] - broader source section: 5.1.7.1
 
 ## Statements
 

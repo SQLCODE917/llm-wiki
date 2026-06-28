@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-priest-skill-921e323e@4e10c13942c519d400787925c7fd8cb3
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-priest-skill-921e323e@29ae8011c5f5593698c8bc214e53b541
 ---
 
 # Chapter 11: Notes on Magic / 《 Dragon Priest Skill 》
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-09a12197]] - broader source section
-- [[sword-world-rpg-complete-edition-dragon-priest-skill]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-priest-skill-6f82944d]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-09a12197]] - broader source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-dragon-priest-skill]] - topic hub: opens the topic page for Dragon Priest Skill
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-priest-skill-6f82944d]] - same source heading: another source section with the same heading, Chapter 11: Notes on Magic / Dragon Priest Skill
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-staves-and-wands-ice-blaze-wand-d1911cbf@bdc6eb80800a61d208c0b40c9a755b46
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-staves-and-wands-ice-blaze-wand-d1911cbf@0401723068e2b5842f6052f40044d7b7
 ---
 
 # Chapter 14: / 《 Staves and Wands 》 [ Ice Blaze Wand ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

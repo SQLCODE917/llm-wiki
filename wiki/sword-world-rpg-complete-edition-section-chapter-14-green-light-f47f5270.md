@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-green-light-f47f5270@5258db9d0e15c86cf2a5b9af40425129
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-green-light-f47f5270@15ea89962a46e05215b7c5c3531f4de7
 ---
 
 # Chapter 14: / 《 Green Light 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Technical atoms
 

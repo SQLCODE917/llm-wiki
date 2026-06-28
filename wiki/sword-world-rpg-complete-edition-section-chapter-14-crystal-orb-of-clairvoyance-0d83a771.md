@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-crystal-orb-of-clairvoyance-0d83a771@2a98aca5f88e9fc95ff0f1a18257a227
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-crystal-orb-of-clairvoyance-0d83a771@9774e72a784369380e794803f6f62312
 ---
 
 # Chapter 14: / [Crystal Orb of Clairvoyance]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

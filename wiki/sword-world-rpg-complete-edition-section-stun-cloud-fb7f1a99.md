@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-stun-cloud-fb7f1a99@82c8cd9fb30f261d2b1e161e35b57d4d
+projection_coverage: section-sword-world-rpg-complete-edition-section-stun-cloud-fb7f1a99@ad555d07cbe06fe5a0a1e3201dada39a
 ---
 
 # [ Stun Cloud ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

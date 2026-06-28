@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hard-lock-34a5d016@383cf853873537cacb83dd5886f4b8a9
+projection_coverage: section-sword-world-rpg-complete-edition-section-hard-lock-34a5d016@f7112e0de3b11c5a863b3e50630f1be8
 ---
 
 # [ Hard Lock ]
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
-- [[sword-world-rpg-complete-edition-section-lock-32ba82f4]] - same source heading
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
+- [[sword-world-rpg-complete-edition-section-lock-32ba82f4]] - same source heading: another source section with the same heading, [ Lock ]
 
 ## Statements
 

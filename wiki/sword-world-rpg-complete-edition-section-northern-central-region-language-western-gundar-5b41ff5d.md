@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-northern-central-region-language-western-gundar-5b41ff5d@99682b36e8ce8e7a308cdfcd53f0ea09
+projection_coverage: section-sword-world-rpg-complete-edition-section-northern-central-region-language-western-gundar-5b41ff5d@615aeb056605e358fa86d16549d481b7
 ---
 
 # Northern Central Region (Language = Western/Gundar)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

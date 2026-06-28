@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-table-5-1-area-and-size-expansion-20651f86@71495bda31f242f93cd1443237122370
+projection_coverage: section-sword-world-rpg-complete-edition-section-table-5-1-area-and-size-expansion-20651f86@653a6428805a990d4c3f620cccb7652f
 ---
 
 # Table 5-1: Area and Size Expansion
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-7-1-f0a747ed]] - broader source section
-- [[sword-world-rpg-complete-edition-table-area-and-size-expansion]] - topic hub
-- [[sword-world-rpg-complete-edition-section-table-5-1-area-and-size-expansion-7c997fcc]] - same source heading
+- [[sword-world-rpg-complete-edition-section-5-1-7-1-f0a747ed]] - broader source section: 5.1.7.1
+- [[sword-world-rpg-complete-edition-table-area-and-size-expansion]] - topic hub: opens the topic page for Table Area And Size Expansion
+- [[sword-world-rpg-complete-edition-section-table-5-1-area-and-size-expansion-7c997fcc]] - same source heading: another source section with the same heading, Table 5-1: Area and Size Expansion
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lizardman-dfdafb32@a7fa6f4a1ae473feddbfdaf2be2a340f
+projection_coverage: section-sword-world-rpg-complete-edition-section-lizardman-dfdafb32@887f1223edf7521fc97b187ce58d934b
 ---
 
 # [ Lizardman ]
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-lizardman-1c0a3029]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section: 13.2.6
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-lizardman-1c0a3029]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / [ Lizardman ]
 
 ## Statements
 

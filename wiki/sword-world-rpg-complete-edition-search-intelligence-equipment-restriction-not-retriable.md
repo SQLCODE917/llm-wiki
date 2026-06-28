@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable@05cb42bdb9f5afc11c80bbc6341abc7c
+projection_coverage: topic-sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable@c5baf1147429e27e577a6b8a94642aa7
 ---
 
 # [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable)
@@ -89,17 +89,17 @@ Table 1-11: Equipment
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-climb-agility-equipment-restriction]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-follow-agility-equipment-restriction]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-game]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-remove-trap-dexterity-equipment-restriction-not-retriable]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-stealthy-step-agility-equipment-restriction]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-ability]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-04a276c8]] - source section (2 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-d81b8ceb]] - source section (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-climb-agility-equipment-restriction]] - shared technical atoms: [ ⑩ Climb [Agility] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-follow-agility-equipment-restriction]] - shared technical atoms: [ ⑬ Follow [Agility] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-game]] - shared technical atoms: Game shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction]] - shared technical atoms: [ ⑤ Listen [Intelligence] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-remove-trap-dexterity-equipment-restriction-not-retriable]] - shared technical atoms: [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-stealthy-step-agility-equipment-restriction]] - shared technical atoms: [ ⑥ Stealthy Step [Agility] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared technical atoms: Table shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - shared technical atoms: [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability]] - shared statements: Ability shares source evidence from Chapter 6: / [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable): This is the ability to search for hidden things. This ability is used to find things such as treasure chests with double bottoms, hidden doors in hallways, etc. The ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-04a276c8]] - source section: Chapter 6: / [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable) shares source evidence from Chapter 6: / [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable): This is the ability to search for hidden things. This ability is used to find things such as treasure chests with double bottoms, hidden doors in hallways, etc. The ... [truncated]; Chapter 6: / [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable) shares technical record from Chapter 6: / [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable): Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-d81b8ceb]] - source section: Chapter 6: / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable) shares source evidence from Chapter 6: / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable): This is the ability to search for hidden things. The game master should determine the difficulty depending on what's hidden. Since it's an ability that relies on fee ... [truncated]; Chapter 6: / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable) shares technical record from Chapter 6: / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable): Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (2 shared statement(s), 2 shared atom(s))
 
 ## Source
 

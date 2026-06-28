@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-3-analogy-of-success-and-failure-03657e91@f6ebf9b1696de112a7ad6d2941c51a3a
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-3-analogy-of-success-and-failure-03657e91@b87e6ee6bcd934744e1aa9e4d8d0e82f
 ---
 
 # 2.5.3 Analogy of Success and Failure
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-2-5-62be7ee4]] - broader source section
+- [[sword-world-rpg-complete-edition-section-2-5-62be7ee4]] - broader source section: 2.5
 
 ## Statements
 

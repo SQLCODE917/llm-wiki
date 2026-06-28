@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-adventurer-level-a545bb8f@ce6ea7dba66dc3ef09d7963d0a17a321
+projection_coverage: section-sword-world-rpg-complete-edition-section-adventurer-level-a545bb8f@1d9c46a5e97808e4b0fdf6008f3e9443
 ---
 
 # [ ⑭ Adventurer Level ]
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - broader source section
-- [[sword-world-rpg-complete-edition-adventurer-level]] - topic hub
-- [[sword-world-rpg-complete-edition-section-1-3-3-adventurer-level-4caced1d]] - same source heading
+- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - broader source section: 1.4.9
+- [[sword-world-rpg-complete-edition-adventurer-level]] - topic hub: opens the topic page for Adventurer Level
+- [[sword-world-rpg-complete-edition-section-1-3-3-adventurer-level-4caced1d]] - same source heading: another source section with the same heading, 1.3.3 Adventurer Level
 
 ## Statements
 

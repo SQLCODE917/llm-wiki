@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-bone-servant@ceccc06d1724ac5a835764d2e946a2d8
+projection_coverage: topic-sword-world-rpg-complete-edition-bone-servant@8d68d09a9f1b9701acbb0ac2c12b9fa0
 ---
 
 # [ Bone Servant ]
@@ -57,11 +57,11 @@ What [[sword-world-rpg-complete-edition]] covers about [ bone servant ]:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-skeleton-warrior]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-stone-servant]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-bone-servant-6ce709ba]] - source section (6 shared statement(s), 8 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-bone-servant-df5972b1]] - source section (4 shared statement(s))
+- [[sword-world-rpg-complete-edition-skeleton-warrior]] - shared statements: [ Skeleton Warrior ] shares source evidence from [ Puppet Golem ]: A puppet golem is a small, simple version of a golem that is created by giving temporary life to a tree branch, stone, etc. using an ancient magic spell. Depending o ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-stone-servant]] - shared statements: [ Stone Servant ] shares source evidence from [ Puppet Golem ]: A puppet golem is a small, simple version of a golem that is created by giving temporary life to a tree branch, stone, etc. using an ancient magic spell. Depending o ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements: Spell shares source evidence from [ Bone Servant ]: This spell creates a puppet golem called a bone servant from the bones of a living creature. The bones used for this spell can be human or animal, but they must be o ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-bone-servant-6ce709ba]] - source section: [ Bone Servant ] shares source evidence from [ Bone Servant ]: This spell creates a puppet golem called a bone servant from the bones of a living creature. The bones used for this spell can be human or animal, but they must be o ... [truncated]; [ Bone Servant ] shares technical record from [ Bone Servant ]: Base Mental Power Cost=15 (6 shared statement(s), 8 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-bone-servant-df5972b1]] - source section: Bone Servant shares source evidence from Bone Servant: A bone servant is a puppet golem made from the bones of living creatures. Usually they're humanoids, but other ones exist too. When armed, they're difficult to disti ... [truncated] (4 shared statement(s))
 
 ## Source
 

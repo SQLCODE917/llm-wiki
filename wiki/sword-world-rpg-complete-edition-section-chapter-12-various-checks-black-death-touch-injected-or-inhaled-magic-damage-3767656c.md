@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-black-death-touch-injected-or-inhaled-magic-damage-3767656c@4213c15e5c5ecdbf27c9712a19df7c4f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-black-death-touch-injected-or-inhaled-magic-damage-3767656c@126ace19e0939894451cf17b7e11f115
 ---
 
 # Chapter 12: Various Checks / [Black Death (Touch, Injected, or Inhaled/Magic, Damage)]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-slice-slider-c0381346@808b19607632b1601fc42c74bef7405d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-slice-slider-c0381346@8914c7dd41f48a6c013b72069a92c3d1
 ---
 
 # Chapter 14: / 《 Slice Slider 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Technical atoms
 

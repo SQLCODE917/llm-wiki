@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-8th-level-dragon-roar-magic-list-e41af287@1aac1fecd6fe7dbe6f2df8e8fde666ba
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-8th-level-dragon-roar-magic-list-e41af287@88845359f73c04af8610c16d13f91120
 ---
 
 # Chapter 11: Notes on Magic / 8th Level Dragon Roar Magic List
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-5th-level-dragon-roar-magic-list-dragon-s-roar-b9a26274]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-5th-level-dragon-roar-magic-list-dragon-s-roar-b9a26274]] - same source heading: another source section with the same heading, Chapter 11: Notes on Magic / 5th Level Dragon Roar Magic List [ Dragon's Roar ]
 
 ## Statements
 

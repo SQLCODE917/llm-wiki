@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-shade-149898ea@8d31fdc8b0b351fa4c0936ca40829dc3
+projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-shade-149898ea@1b828332aad882e110826b359af7190f
 ---
 
 # Spirit Wall: Shade
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

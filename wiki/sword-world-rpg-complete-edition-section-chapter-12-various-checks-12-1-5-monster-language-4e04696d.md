@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-5-monster-language-4e04696d@9d42f6615c82abc399487a003be588f4
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-5-monster-language-4e04696d@ca9b5f2538eabe5c84de82e2e592a41f
 ---
 
 # Chapter 12: Various Checks / 12.1.5 Monster Language
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
 
 ## Technical atoms
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-2fb2715d@26e386706c760c0f09459005a4817c89
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-2fb2715d@efb0a8d316d1fa7a774a4e99a1e8fa58
 ---
 
 # Chapter 17:
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-17-61f5de18]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-17-3a08908a]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-17-61f5de18]] - narrower source section: Chapter 17:
+- [[sword-world-rpg-complete-edition-section-chapter-17-3a08908a]] - narrower source section: Chapter 17:
 
 ## Statements by subsection
 

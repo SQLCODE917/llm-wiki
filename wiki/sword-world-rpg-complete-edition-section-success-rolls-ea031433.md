@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-success-rolls-ea031433@d1579e35b75414d7137432d1e21a96a1
+projection_coverage: section-sword-world-rpg-complete-edition-section-success-rolls-ea031433@54a80baf15f9b6747e980a9f295f0661
 ---
 
 # Success Rolls
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-15-1-907776c3]] - broader source section
+- [[sword-world-rpg-complete-edition-section-15-1-907776c3]] - broader source section: 15.1
 
 ## Statements
 

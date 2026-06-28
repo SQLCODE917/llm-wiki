@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-power-wand-76e6b637@10d2cae9549608cfbe9b90cbb75ee3de
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-power-wand-76e6b637@4eea37f4e9d0bcfe128baa4093d307c5
 ---
 
 # Chapter 14: / [ Power Wand ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

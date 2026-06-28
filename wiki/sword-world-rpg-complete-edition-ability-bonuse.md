@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-ability-bonuse@b29a25b92c3f7d27eb38ceec4473b8c4
+projection_coverage: topic-sword-world-rpg-complete-edition-ability-bonuse@0744a5a10c8e8a7b4fbc424abb932668
 ---
 
 # 【 Ability Bonuses 】
@@ -114,23 +114,23 @@ Table 1-1: Ability Bonuses                    Table 1-2: Skill Types
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-ability]] - broader topic (4 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (4 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-bonus]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-force]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-type]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-ability-score]] - shared statements (6 shared statement(s))
-- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-human]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-play]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-player]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-result]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-ability-bonuses-7ab3f5f1]] - source section (7 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-ability-bonuses-599f5f57]] - source section (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability]] - broader topic: Ability shares source evidence from 【 Ability Bonuses 】: An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in Sword World RPG , success or failure is determin ... [truncated]; Ability shares technical table: Table 1-1: Ability Bonuses represented by a loss of life force and Ability Score       Bonus 【     Agility   】             mental power (point reduction). If either ... [truncated] (4 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms: Score shares source evidence from 【 Ability Bonuses 】: An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in Sword World RPG , success or failure is determin ... [truncated]; Score shares technical table: Table 1-1: Ability Bonuses represented by a loss of life force and Ability Score       Bonus 【     Agility   】             mental power (point reduction). If either ... [truncated] (4 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-bonus]] - shared statements and technical atoms: Bonus shares source evidence from [ ⑤ Ability Bonuses ]: Once ability scores have been calculated, the next step is the ability bonuses. A bonus is an ability score divided by 6 (rounded down).; Bonus shares technical table: Table 1-1: Ability Bonuses represented by a loss of life force and Ability Score       Bonus 【     Agility   】             mental power (point reduction). If either ... [truncated] (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared technical atoms: Table shares technical table: Table 1-1: Ability Bonuses represented by a loss of life force and Ability Score       Bonus 【     Agility   】             mental power (point reduction). If either ... [truncated] (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms: Adventure shares technical table: Table 1-1: Ability Bonuses                    Table 1-2: Skill Types Ability Score           Bonus 2~5                ±0 6~11                +1 12~17               + ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared technical atoms: Adventurer shares technical table: Table 1-1: Ability Bonuses                    Table 1-2: Skill Types Ability Score           Bonus 2~5                ±0 6~11                +1 12~17               + ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-force]] - shared technical atoms: Force shares technical table: Table 1-1: Ability Bonuses represented by a loss of life force and Ability Score       Bonus 【     Agility   】             mental power (point reduction). If either ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms: Skill shares technical table: Table 1-1: Ability Bonuses                    Table 1-2: Skill Types Ability Score           Bonus 2~5                ±0 6~11                +1 12~17               + ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-type]] - shared technical atoms: Type shares technical table: Table 1-1: Ability Bonuses                    Table 1-2: Skill Types Ability Score           Bonus 2~5                ±0 6~11                +1 12~17               + ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability-score]] - shared statements: Ability Scores shares source evidence from 【 Ability Bonuses 】: An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in Sword World RPG , success or failure is determin ... [truncated] (6 shared statement(s))
+- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: Filling Out the Character Sheet shares source evidence from Example:: Once the ability scores have been determined, also find the ability bonuses and write them down on the Character Sheet. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-human]] - shared statements: Human shares source evidence from 【 Ability Bonuses 】: Humans are not the only adventurers in Forcelia. Next, we'll explain the races that are relatively common as adventurers in Forcelia, though they're not as common as humans. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-play]] - shared statements: Play shares source evidence from 【 Ability Bonuses 】: Players are free to choose from humans or any of these races to be their alter ego, an adventurer. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-player]] - shared statements: Player shares source evidence from 【 Ability Bonuses 】: Players are free to choose from humans or any of these races to be their alter ego, an adventurer. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-result]] - shared statements: Result shares source evidence from 【 Ability Bonuses 】: An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in Sword World RPG , success or failure is determin ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-ability-bonuses-7ab3f5f1]] - source section: 【 Ability Bonuses 】 shares source evidence from 【 Ability Bonuses 】: An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in Sword World RPG , success or failure is determin ... [truncated]; 【 Ability Bonuses 】 shares technical record from 【 Ability Bonuses 】: etc.) When a character's ability score increases or decreases, even temporarily, the ability bonus increases or decreases accordingly. (7 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-ability-bonuses-599f5f57]] - source section: [ ⑤ Ability Bonuses ] shares source evidence from [ ⑤ Ability Bonuses ]: Once ability scores have been calculated, the next step is the ability bonuses. A bonus is an ability score divided by 6 (rounded down).; [ ⑤ Ability Bonuses ] shares technical table: Table 1-1: Ability Bonuses represented by a loss of life force and Ability Score       Bonus 【     Agility   】             mental power (point reduction). If either ... [truncated] (2 shared statement(s), 2 shared atom(s))
 
 ## Source
 

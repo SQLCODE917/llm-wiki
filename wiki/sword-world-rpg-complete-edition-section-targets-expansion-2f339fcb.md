@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-targets-expansion-2f339fcb@cadf0ae1ce4e84397a38bd6f2a3a4214
+projection_coverage: section-sword-world-rpg-complete-edition-section-targets-expansion-2f339fcb@132d86d51a26f113f28ef1814e46abe2
 ---
 
 # 《 Targets Expansion 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-7-1-f0a747ed]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-7-1-f0a747ed]] - broader source section: 5.1.7.1
 
 ## Statements
 

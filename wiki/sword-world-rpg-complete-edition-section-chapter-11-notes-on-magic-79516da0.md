@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0@a828902a2bb25314a85c098dd6033d9b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0@fcbc0a953fb513ac897cc75bea3dbeeb
 ---
 
 # Chapter 11: Notes on Magic
@@ -16,15 +16,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-special-dark-magic-list-ef9a8ea3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-phalaris-special-dark-magic-list-6877e986]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-the-nameless-god-of-madness-special-dark-magic-list-639daaf2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-berserk-spell-level-3-81649d99]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-lunatic-seed-spell-level-4-d9a7741b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-lunatic-dance-spell-level-5-08a51499]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-kardis-special-dark-magic-list-b8d693d7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-create-ghost-ship-spell-level-6-78ee88a4]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-special-dark-magic-list-ef9a8ea3]] - narrower source section: Chapter 11: Notes on Magic / Special Dark Magic List
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-phalaris-special-dark-magic-list-6877e986]] - narrower source section: Chapter 11: Notes on Magic / Phalaris Special Dark Magic List ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-the-nameless-god-of-madness-special-dark-magic-list-639daaf2]] - narrower source section: Chapter 11: Notes on Magic / The Nameless God of Madness Special Dark Magic List
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-berserk-spell-level-3-81649d99]] - narrower source section: Chapter 11: Notes on Magic / [ Berserk ] (Spell Level=3)
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-lunatic-seed-spell-level-4-d9a7741b]] - narrower source section: Chapter 11: Notes on Magic / [ Lunatic Seed ] (Spell Level=4)
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-lunatic-dance-spell-level-5-08a51499]] - narrower source section: Chapter 11: Notes on Magic / [ Lunatic Dance ] (Spell Level=5)
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-kardis-special-dark-magic-list-b8d693d7]] - narrower source section: Chapter 11: Notes on Magic / Kardis Special Dark Magic List
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-create-ghost-ship-spell-level-6-78ee88a4]] - narrower source section: Chapter 11: Notes on Magic / [ Create Ghost Ship ] (Spell Level=6)
 
 ## Statements by subsection
 

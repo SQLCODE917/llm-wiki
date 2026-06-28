@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-live@f502f9aeeabd0869c9ad6be5afa422fd
+projection_coverage: topic-sword-world-rpg-complete-edition-live@2d1a66058ea71026c67c3f0d4b0f54a3
 ---
 
 # Live
@@ -221,13 +221,13 @@ What [[sword-world-rpg-complete-edition]] covers about live:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-human]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-giant]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-ancient]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-area]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-body]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-meter]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-human]] - shared statements and technical atoms: Human shares source evidence from 【 Dwarf 】: Dwarves usually live in human cities and villages using their own skills, but there are several cities and villages where only dwarves live.; Human shares technical record from [ Pegasus ] Monster Level=5 Rarity=10 Agility=12 Movement Speed=30/40 (air) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Heel:11 (4) Strike Points=13 Evasion Points=12 (5) Defense Points=8 Life Points/Resistance=20/14 (7) Mental Points/Resistance=15/13 (6) Special Abilities=Not affected by poison and illness Habitat=Steep mountains, meadows Languages=None: Perception=Five senses (4 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-giant]] - shared statements: Giant shares source evidence from [ Giant ]: Among the giants, the race called Giants in particular, unlike those that are merely large fae and youma (such as trolls, etc.), are one of the ancient races like dr ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-ancient]] - shared statements: Ancient shares source evidence from [ Gargoyle ]: The sí is said to be an artificial lifeform created by the wizards of the ancient kingdom. They mainly live in ancient ruins and have their own villages and small ho ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-area]] - shared statements: Area shares source evidence from Furia: Furia live in mountainous areas, are ugly, have low intellect, and are always aggressive. Furia mate with male eagles and may be encountered along with them. They ha ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-body]] - shared statements: Body shares source evidence from [ Hippocampus ]: It's a horse that lives in the sea, the lower half of its body is that of a fish. Its front legs have fins instead of hooves, and it has no hind legs. They can move ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-meter]] - shared statements: Meter shares source evidence from Hill Giant: These giants, about 5 meters tall, live in hills and mountains, and have golden or light brown hair on their heads and bodies. They have a gentle personality, so eve ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared statements: Skill shares source evidence from 【 Dwarf 】: Dwarves usually live in human cities and villages using their own skills, but there are several cities and villages where only dwarves live. (1 shared statement(s))
 
 ## Source
 

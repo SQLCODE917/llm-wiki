@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-normal-weapon-immunity-3cd071da@2981be577ce691cafd1b26df86230883
+projection_coverage: section-sword-world-rpg-complete-edition-section-normal-weapon-immunity-3cd071da@f40551e62b09d48dd15b4d483080dc15
 ---
 
 # 《 Normal Weapon Immunity 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - broader source section: 13.6.4
 
 ## Statements
 

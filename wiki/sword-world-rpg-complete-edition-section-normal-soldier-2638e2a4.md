@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-normal-soldier-2638e2a4@1e6762976bcbfbc77f684764b0c0ce0c
+projection_coverage: section-sword-world-rpg-complete-edition-section-normal-soldier-2638e2a4@d80daf30639e88d8d3e0b6b52b4f2a6c
 ---
 
 # Normal Soldier
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section: 13.2.12
 
 ## Statements
 

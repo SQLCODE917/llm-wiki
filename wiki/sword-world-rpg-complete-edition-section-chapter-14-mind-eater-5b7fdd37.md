@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-mind-eater-5b7fdd37@5178b01917fb522684790ae3188526a7
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-mind-eater-5b7fdd37@51c2c5f72f20b5fcb8cb1fb8198caeca
 ---
 
 # Chapter 14: / 《 Mind Eater 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

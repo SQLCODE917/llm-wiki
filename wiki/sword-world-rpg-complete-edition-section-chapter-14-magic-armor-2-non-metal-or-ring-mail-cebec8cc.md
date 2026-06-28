@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magic-armor-2-non-metal-or-ring-mail-cebec8cc@2532c6e71abc99d28d105763934edced
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magic-armor-2-non-metal-or-ring-mail-cebec8cc@64afdf6681a7ea4c22a1361d6cf4d94b
 ---
 
 # Chapter 14: / 《 Magic Armor (+2) 》 Non-metal or ring mail
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

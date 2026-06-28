@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-myrii-special-holy-magic-list-battle-song-spell-level-5-96063b3f@9e23a2b1e55502de1d9e5534608faa99
+projection_coverage: section-sword-world-rpg-complete-edition-section-myrii-special-holy-magic-list-battle-song-spell-level-5-96063b3f@fd38d8e17b45f23b96d3e3553cd57b24
 ---
 
 # Myrii Special Holy Magic List [ Battle Song ] (Spell Level=5)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Statements
 

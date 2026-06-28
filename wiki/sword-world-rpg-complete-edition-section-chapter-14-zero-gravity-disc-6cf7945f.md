@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-zero-gravity-disc-6cf7945f@672e2e822ab42764918c9befe6934ada
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-zero-gravity-disc-6cf7945f@1fcad838fce52cc63175a8f491a44724
 ---
 
 # Chapter 14: / [ Zero Gravity Disc ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

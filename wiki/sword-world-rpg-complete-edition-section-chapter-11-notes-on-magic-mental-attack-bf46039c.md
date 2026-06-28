@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-mental-attack-bf46039c@ff50b50bf1eb474a849d89ff295354e5
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-mental-attack-bf46039c@b0555dfcd816e8ead3c5604d45bfd547
 ---
 
 # Chapter 11: Notes on Magic / [ Mental Attack ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

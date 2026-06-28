@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ranger-b2145121@c58644172855ebe10fdfa22af8016612
+projection_coverage: section-sword-world-rpg-complete-edition-section-ranger-b2145121@74d7e1bfbe04bd3e7ca7ade57b0b4ac3
 ---
 
 # 【 Ranger 】
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-ranger-ae5a5f8b]] - same source heading
+- [[sword-world-rpg-complete-edition-section-ranger-ae5a5f8b]] - same source heading: another source section with the same heading, [ Ranger ]
 
 ## Statements
 

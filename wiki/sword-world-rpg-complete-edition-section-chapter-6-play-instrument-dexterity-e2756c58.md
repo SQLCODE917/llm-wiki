@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-play-instrument-dexterity-e2756c58@caa439783c9beed726a71e8dcca18b72
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-play-instrument-dexterity-e2756c58@f15db1c220ce02771cf92685e10571ce
 ---
 
 # Chapter 6: / [ ② Play Instrument [Dexterity]]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section: Chapter 6:
 
 ## Statements
 

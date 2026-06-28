@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-checks-916ced7a@4468fc652b5664d905c688bac2d4f4f8
+projection_coverage: section-sword-world-rpg-complete-edition-section-checks-916ced7a@92cfa4461abad21c3eb07404d030cbef
 ---
 
 # Checks
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-2-1-e751cfcf]] - broader source section
-- [[sword-world-rpg-complete-edition-check]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ec5b347d]] - same source heading
+- [[sword-world-rpg-complete-edition-section-2-1-e751cfcf]] - broader source section: 2.1
+- [[sword-world-rpg-complete-edition-check]] - topic hub: opens the topic page for Check
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ec5b347d]] - same source heading: another source section with the same heading, Chapter 12: Various Checks
 
 ## Statements
 

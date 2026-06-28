@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-reptile-check-intelligence-3f6a3ddc@40d3e2bc22da50af4cd5958dacab6134
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-reptile-check-intelligence-3f6a3ddc@09372437f9fa87f758326922fe4f47f5
 ---
 
 # Chapter 11: Notes on Magic / Reptile Check [Intelligence]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

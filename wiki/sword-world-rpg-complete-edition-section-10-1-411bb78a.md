@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-10-1-411bb78a@394d1c04ec42a34008a7213d37b4bc2e
+projection_coverage: section-sword-world-rpg-complete-edition-section-10-1-411bb78a@91b30dbdc7609f7ce6bb5546fa21e694
 ---
 
 # 10.1
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-npc-and-monster-action-announcement-542ec1ad]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-combat-in-special-situations-ba7693eb]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-npc-and-monster-action-announcement-542ec1ad]] - narrower source section: NPC and Monster Action Announcement
+- [[sword-world-rpg-complete-edition-section-combat-in-special-situations-ba7693eb]] - narrower source section: Combat in Special Situations
 
 ## Statements by subsection
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-soft-lander-74d720e6@9a792e992dba0caf110e72c4d5cdd3a3
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-soft-lander-74d720e6@2cc13fc31e07bfce471b3ca9d3e5f42e
 ---
 
 # Chapter 14: / [ Soft Lander ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

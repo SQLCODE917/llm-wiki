@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-wyvern-5462a12b@15a9cb22f166a6db0e38d6dd97e06be7
+projection_coverage: section-sword-world-rpg-complete-edition-section-wyvern-5462a12b@2a0a90967e71b39169fb5cf267ff2cdc
 ---
 
 # [ Wyvern ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section: 13.2.6
 
 ## Statements
 

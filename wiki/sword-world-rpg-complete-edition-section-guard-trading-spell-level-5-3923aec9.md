@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-guard-trading-spell-level-5-3923aec9@7cd3b95ab59e099a79f37c3a817d3a0f
+projection_coverage: section-sword-world-rpg-complete-edition-section-guard-trading-spell-level-5-3923aec9@c449739b2685908d5209fdd60a0cc476
 ---
 
 # [ Guard Trading ] (Spell Level=5)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Technical atoms
 

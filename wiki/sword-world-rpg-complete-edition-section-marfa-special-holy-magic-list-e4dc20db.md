@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-marfa-special-holy-magic-list-e4dc20db@659de8dc51be016d1b5355aa7afb6e88
+projection_coverage: section-sword-world-rpg-complete-edition-section-marfa-special-holy-magic-list-e4dc20db@99764ed8ca393c1125b6be184b8cc181
 ---
 
 # Marfa Special Holy Magic List
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Statements
 

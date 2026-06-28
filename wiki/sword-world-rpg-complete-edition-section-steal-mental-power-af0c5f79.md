@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-steal-mental-power-af0c5f79@00aaeb9118e024102e11b01dbb80f3c0
+projection_coverage: section-sword-world-rpg-complete-edition-section-steal-mental-power-af0c5f79@d09553044a729a05bf651f7805aee082
 ---
 
 # 《 Steal Mental Power 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section: 13.6
 
 ## Statements
 

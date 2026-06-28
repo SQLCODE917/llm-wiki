@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dark-magic-f3ed4592@6cb8fbc1a851d90f0071cd7db04d553a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dark-magic-f3ed4592@12af11b6972f52282d3c750cb057829a
 ---
 
 # Chapter 11: Notes on Magic / Dark Magic
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

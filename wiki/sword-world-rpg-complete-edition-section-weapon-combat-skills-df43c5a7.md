@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-combat-skills-df43c5a7@5bec3fc84bcd836a42b6407e9e2e5694
+projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-combat-skills-df43c5a7@c67ee448f622f5c62cdf7d8d77711a1f
 ---
 
 # Weapon Combat Skills
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section
+- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section: 3.4.4
 
 ## Statements
 

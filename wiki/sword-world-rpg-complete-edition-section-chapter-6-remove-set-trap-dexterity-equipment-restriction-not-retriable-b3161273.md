@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-remove-set-trap-dexterity-equipment-restriction-not-retriable-b3161273@34ff59a52e8f59c91e867c132d289e9e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-remove-set-trap-dexterity-equipment-restriction-not-retriable-b3161273@af880337eb904b7d62f29e3690fd6608
 ---
 
 # Chapter 6: / [ ⑯ Remove/Set Trap [Dexterity]] (Equipment restriction, not retriable)
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section
-- [[sword-world-rpg-complete-edition-remove-trap-dexterity-equipment-restriction-not-retriable]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-6-remove-set-trap-dexterity-equipment-restriction-not-retriable-1d8e5d0d]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section: Chapter 6:
+- [[sword-world-rpg-complete-edition-remove-trap-dexterity-equipment-restriction-not-retriable]] - topic hub: opens the topic page for Remove Trap Dexterity Equipment Restriction Not Retriable
+- [[sword-world-rpg-complete-edition-section-chapter-6-remove-set-trap-dexterity-equipment-restriction-not-retriable-1d8e5d0d]] - same source heading: another source section with the same heading, Chapter 6: / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable)
 
 ## Statements
 

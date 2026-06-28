@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-purchase-equipment-0a317d3b@3ef68bafd8052e65c51a92d7b4e25597
+projection_coverage: section-sword-world-rpg-complete-edition-section-purchase-equipment-0a317d3b@6eea7a0a985852adb3da3f389722d6f1
 ---
 
 # [ ⑮ Purchase Equipment]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - broader source section
+- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - broader source section: 1.4.9
 
 ## Statements
 

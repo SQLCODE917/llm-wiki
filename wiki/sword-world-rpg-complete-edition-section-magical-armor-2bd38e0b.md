@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magical-armor-2bd38e0b@02c2b58c3e132d07d5f98d1a14df25f9
+projection_coverage: section-sword-world-rpg-complete-edition-section-magical-armor-2bd38e0b@e437207e91ea1d95fcc021a2dd665b1d
 ---
 
 # 【 Magical Armor 】
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-10-3-6729b108]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-10-3-6729b108]] - broader source section: 4.10.3
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasure-types-9eae51bd@deafb6f292b8d56fd1e1deb10b66fc55
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasure-types-9eae51bd@0c687484c6fa98b9a80ae684eb8e4b2c
 ---
 
 # Chapter 14: / Treasure Types
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-edb8ea7e]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-edb8ea7e]] - broader source section: Chapter 14:
 
 ## Statements
 

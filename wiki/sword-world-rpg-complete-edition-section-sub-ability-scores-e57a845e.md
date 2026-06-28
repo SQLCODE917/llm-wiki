@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sub-ability-scores-e57a845e@94af5cde6d5cada15e7dcf10f134571a
+projection_coverage: section-sword-world-rpg-complete-edition-section-sub-ability-scores-e57a845e@c94491d95a148ea1307fe3ae42aa841c
 ---
 
 # [ ③ Sub-Ability Scores]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - broader source section
+- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - broader source section: 1.4.9
 
 ## Statements
 

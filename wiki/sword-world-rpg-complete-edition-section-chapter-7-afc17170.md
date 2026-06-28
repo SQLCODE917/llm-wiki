@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-afc17170@e92008d6494e3e77b956ebd1f349b47d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-afc17170@887ffd7f04dc5720a998731385f27022
 ---
 
 # Chapter 7:
@@ -16,11 +16,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-971915e8]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-craftsman-skill-312749c3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-craft-dexterity-ec9d8f46]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-example-3b8e5e40]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-value-check-intelligence-not-retriable-54bbc561]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-7-971915e8]] - broader source section: Chapter 7:
+- [[sword-world-rpg-complete-edition-section-chapter-7-craftsman-skill-312749c3]] - narrower source section: Chapter 7: / Craftsman Skill
+- [[sword-world-rpg-complete-edition-section-chapter-7-craft-dexterity-ec9d8f46]] - narrower source section: Chapter 7: / [ ① Craft [Dexterity] ]
+- [[sword-world-rpg-complete-edition-section-chapter-7-example-3b8e5e40]] - narrower source section: Chapter 7: / Example:
+- [[sword-world-rpg-complete-edition-section-chapter-7-value-check-intelligence-not-retriable-54bbc561]] - narrower source section: Chapter 7: / [ ② Value Check [Intelligence]] (Not retriable)
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-eastend-languages-dbe4bb8f@1817124fc9921336706aaedf8add127c
+projection_coverage: section-sword-world-rpg-complete-edition-section-eastend-languages-dbe4bb8f@697f9bda883313fe93e69b5dfc866f49
 ---
 
 # Eastend (Languages = ?)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

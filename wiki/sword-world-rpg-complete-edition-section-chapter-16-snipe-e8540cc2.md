@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-snipe-e8540cc2@8f78be4822822e854ba27addcae8cb4c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-snipe-e8540cc2@da0ad22af89f3bf22eafbbbb85e105cf
 ---
 
 # Chapter 16: / Snipe
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-cf2bd1e0]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-cf2bd1e0]] - broader source section: Chapter 16:
 
 ## Statements
 

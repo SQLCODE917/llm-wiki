@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-rune-masters-status-60762733@67dcd89095fd72e99f72c08672a7f048
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-rune-masters-status-60762733@7707bf608d1aa20d6dd2b6256b996cad
 ---
 
 # Chapter 11: Notes on Magic / Rune Masters' Status
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-69a62e4e]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-69a62e4e]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

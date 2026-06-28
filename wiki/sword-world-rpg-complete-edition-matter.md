@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-matter@a9aabb4a29e37fb402ce65e053082bee
+projection_coverage: topic-sword-world-rpg-complete-edition-matter@64c845e5fc9c8bbf894c64d1d76f1da3
 ---
 
 # Matter
@@ -269,35 +269,35 @@ What [[sword-world-rpg-complete-edition]] covers about matter:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (2 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (3 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (2 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared statements and technical atoms (2 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (2 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (2 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-sorcerer]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared technical atoms (6 shared atom(s))
-- [[sword-world-rpg-complete-edition-caster]] - shared technical atoms (5 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared technical atoms (5 shared atom(s))
-- [[sword-world-rpg-complete-edition-type]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-base]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-move]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-result]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-round]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-spirit]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-success]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-fail]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-action]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-addition]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-bonus]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-effect]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-master]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms: Power shares source evidence from full effect: Also, since this is considered a success roll, it'll be an automatic failure if the 2D roll is double ones . No matter how high the adventurer's mental power resista ... [truncated]; Power shares technical record from full effect: *In this way, when making a resistible magic check, you can also call it a successful resist or failed resist from the perspective of the one being affected by the magic. (2 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms: Level shares source evidence from 4.6.4 Damage Reduction: However, if the result of your defense roll is double ones , your character's damage reduction is meaningless . No matter how high your character's damage reduction ... [truncated]; Level shares technical record from 《 Damage 》: If you roll 10 or greater during the strike roll, a critical will occur and deal even more damage, same as in weapon combat. (3 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms: Adventure shares source evidence from 4.6.4 Damage Reduction: However, if the result of your defense roll is double ones , your character's damage reduction is meaningless . No matter how high your character's damage reduction ... [truncated]; Adventure shares technical record from full effect: *In this way, when making a resistible magic check, you can also call it a successful resist or failed resist from the perspective of the one being affected by the magic. (2 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared statements and technical atoms: Adventurer shares source evidence from 4.6.4 Damage Reduction: However, if the result of your defense roll is double ones , your character's damage reduction is meaningless . No matter how high your character's damage reduction ... [truncated]; Adventurer shares technical record from full effect: *In this way, when making a resistible magic check, you can also call it a successful resist or failed resist from the perspective of the one being affected by the magic. (2 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms: Resist shares source evidence from full effect: Also, since this is considered a success roll, it'll be an automatic failure if the 2D roll is double ones . No matter how high the adventurer's mental power resista ... [truncated]; Resist shares technical record from full effect: *In this way, when making a resistible magic check, you can also call it a successful resist or failed resist from the perspective of the one being affected by the magic. (2 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms: Spell shares source evidence from 4th Level Ancient Magic List [ Counter Sense ]: Also, the effects of detection items and spells, no matter how long their duration, will vanish after 1 round due to Counter Sense activating. In other words, for 1 ... [truncated]; Spell shares technical record from 《 Damage 》: Most magic of the damage type can still deal damage even if it's resisted by the target, only with a reduced effect. (2 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms: Skill shares source evidence from Common Runes: Common runes can be used by anyone who knows the password. Also, even if you can't use your hands or are wearing metal armor, you can use them as long as you can say ... [truncated]; Skill shares technical record from Chapter 14: / [ Magic Scroll ]: If you bring it back without using it, perhaps the lost magic may spread throughout the world through the research of an academy of sages . (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-sorcerer]] - shared statements and technical atoms: Sorcerer shares source evidence from Chapter 14: / [ Magic Scroll ]: A magic spell is written on this (in high ancient). If a sorcerer reads it, he or she can use the magic written on it only once . It doesn't matter if the sorcerer s ... [truncated]; Sorcerer shares technical record from Chapter 14: / [ Magic Scroll ]: If you bring it back without using it, perhaps the lost magic may spread throughout the world through the research of an academy of sages . (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms: Character shares source evidence from 4.6.4 Damage Reduction: However, if the result of your defense roll is double ones , your character's damage reduction is meaningless . No matter how high your character's damage reduction ... [truncated]; Character shares technical record from Full Resistance: One is that the character cannot take any other actions (wielding a weapon, casting spells, etc.) during that round. (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared technical atoms: Cast shares technical record from 《 Damage 》: If you roll 10 or greater during the strike roll, a critical will occur and deal even more damage, same as in weapon combat. (6 shared atom(s))
+- [[sword-world-rpg-complete-edition-caster]] - shared technical atoms: Caster shares technical record from 《 Damage 》: If you roll 10 or greater during the strike roll, a critical will occur and deal even more damage, same as in weapon combat. (5 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared technical atoms: Target shares technical record from 《 Damage 》: If you roll 10 or greater during the strike roll, a critical will occur and deal even more damage, same as in weapon combat. (5 shared atom(s))
+- [[sword-world-rpg-complete-edition-type]] - shared technical atoms: Type shares technical record from 《 Damage 》: Most magic of the damage type can still deal damage even if it's resisted by the target, only with a reduced effect. (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-base]] - shared technical atoms: Base shares technical record from Chapter 14: / [ Magic Scroll ]: If you bring it back without using it, perhaps the lost magic may spread throughout the world through the research of an academy of sages . (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-move]] - shared technical atoms: Move shares technical record from Full Resistance: One is that the character cannot take any other actions (wielding a weapon, casting spells, etc.) during that round. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-movement]] - shared technical atoms: Movement shares technical record from Full Resistance: One is that the character cannot take any other actions (wielding a weapon, casting spells, etc.) during that round. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-result]] - shared technical atoms: Result shares technical record from Full Resistance: One is that the character cannot take any other actions (wielding a weapon, casting spells, etc.) during that round. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-round]] - shared technical atoms: Round shares technical record from Full Resistance: One is that the character cannot take any other actions (wielding a weapon, casting spells, etc.) during that round. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-spirit]] - shared technical atoms: Spirit shares technical record from 《 Spirits 》: When encountering a spirit, a shaman can recognize a spirit without the need for a success roll. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared technical atoms: Success shares technical record from 2.3.1 Automatic Success and Automatic Failure: Conversely, if that player rolls a 2 , that is, if the two dice both roll a 1 ( double ones ), the action fails , no matter (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements: 【 Damage Reduction 】 shares source evidence from 【 Criticals? 】: When making a defense roll, criticals do not occur like they do with a strike roll. No matter how high the roll, only the amount of damage reduction indicated by tha ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-fail]] - shared statements: Fail shares source evidence from 《 Illusion 》: In the event of such a suspicion, the target of the illusion can make a mental power resistance roll. The target score is the final score from when the illusion spel ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-action]] - shared statements: Action shares source evidence from Automatic Success Restrictions: A success roll of double sixes is defined as an automatic success. No matter how difficult an action is, there is a 1 in 36 chance of success. This is a rule for game-like fun. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-addition]] - shared statements: Addition shares source evidence from and Armor: In addition, no matter how high quality it is, nothing can affect its attack power or evasion speed. It'll also have no effect on monsters that can only be wounded b ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from 4.6.4 Damage Reduction: However, if the result of your defense roll is double ones , your character's damage reduction is meaningless . No matter how high your character's damage reduction ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus]] - shared statements: Bonus shares source evidence from Example:: When determining base damage (strike roll), if you suddenly roll double ones, the damage will always be 0 . No matter how much bonus damage you have, it means nothing. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from Example:: When determining base damage (strike roll), if you suddenly roll double ones, the damage will always be 0 . No matter how much bonus damage you have, it means nothing. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared statements: Effect shares source evidence from 4th Level Ancient Magic List [ Counter Sense ]: Also, the effects of detection items and spells, no matter how long their duration, will vanish after 1 round due to Counter Sense activating. In other words, for 1 ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-master]] - shared statements: Master shares source evidence from Common Runes: Common runes can be used by anyone who knows the password. Also, even if you can't use your hands or are wearing metal armor, you can use them as long as you can say ... [truncated] (1 shared statement(s))
 
 ## Source
 

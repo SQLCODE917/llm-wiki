@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-5-d175bad9@eb3b40cff64f7b9071b65e66376581b4
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-5-d175bad9@05684a2865f9148c85ab501c8642a9b1
 ---
 
 # 13.6.5
@@ -16,14 +16,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section
-- [[sword-world-rpg-complete-edition-section-mental-attack-immunity-d49ae477]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sleepless-81a691c0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-certain-magic-resistant-1c1769a4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-fire-immunity-3512c9a6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-strong-to-fire-f6ff8f35]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-cold-immunity-41d74251]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-strong-to-cold-394fd568]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section: 13.6
+- [[sword-world-rpg-complete-edition-section-mental-attack-immunity-d49ae477]] - narrower source section: 《 Mental Attack Immunity 》
+- [[sword-world-rpg-complete-edition-section-sleepless-81a691c0]] - narrower source section: 《 Sleepless 》
+- [[sword-world-rpg-complete-edition-section-certain-magic-resistant-1c1769a4]] - narrower source section: 《 Certain Magic Resistant 》
+- [[sword-world-rpg-complete-edition-section-fire-immunity-3512c9a6]] - narrower source section: 《 Fire Immunity 》
+- [[sword-world-rpg-complete-edition-section-strong-to-fire-f6ff8f35]] - narrower source section: 《 Strong to Fire 》
+- [[sword-world-rpg-complete-edition-section-cold-immunity-41d74251]] - narrower source section: 《 Cold Immunity 》
+- [[sword-world-rpg-complete-edition-section-strong-to-cold-394fd568]] - narrower source section: 《 Strong to Cold 》
 
 ## Statements by subsection
 

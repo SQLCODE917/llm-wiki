@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-long-distance-modifiers-956abc8e@46107189095b43e3861b3d0ae2ea16a0
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-long-distance-modifiers-956abc8e@5a64f60ae1fbd20781cf6ce0298bd855
 ---
 
 # Chapter 16: / Long Distance Modifiers
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-1d2de216]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-1d2de216]] - broader source section: Chapter 16:
 
 ## Statements
 

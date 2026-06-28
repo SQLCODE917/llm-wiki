@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-9th-level-ancient-magic-list-command-golem-f91a956c@84b3aad5e8864ee9487e36adb3f20473
+projection_coverage: section-sword-world-rpg-complete-edition-section-9th-level-ancient-magic-list-command-golem-f91a956c@2863dfc22fb4976f6ec18d095aabd228
 ---
 
 # 9th Level Ancient Magic List [ Command Golem ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

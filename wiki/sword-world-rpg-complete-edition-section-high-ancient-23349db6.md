@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-high-ancient-23349db6@7076d7a3c9369c3f5929e3fab40dd37e
+projection_coverage: section-sword-world-rpg-complete-edition-section-high-ancient-23349db6@d6c536f456802e3a14f30de40e2508d4
 ---
 
 # 《 High Ancient 》
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-11-2-7e531b45]] - broader source section
-- [[sword-world-rpg-complete-edition-ancient]] - topic hub
+- [[sword-world-rpg-complete-edition-section-5-1-11-2-7e531b45]] - broader source section: 5.1.11.2
+- [[sword-world-rpg-complete-edition-ancient]] - topic hub: opens the topic page for Ancient
 
 ## Statements
 

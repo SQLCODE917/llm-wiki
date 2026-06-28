@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-anti-strangling-protection-8b4e8d44@6e28cd64cb7e5b0a6556f8aca26793aa
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-anti-strangling-protection-8b4e8d44@201782bdbb03e0f2168a6c88c8b7c8f8
 ---
 
 # Chapter 16: / Anti-Strangling Protection
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-93b0e71b]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-93b0e71b]] - broader source section: Chapter 16:
 
 ## Statements
 

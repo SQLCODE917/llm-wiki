@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-lycanthropy-951a038a@732b1c17fa4575506584eb1fcc8b8a8c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-lycanthropy-951a038a@89f742cad914b462dac0a2e51ad86582
 ---
 
 # Chapter 12: Various Checks / [ Lycanthropy ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

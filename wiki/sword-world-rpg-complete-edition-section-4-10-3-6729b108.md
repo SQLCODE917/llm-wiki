@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-3-6729b108@17228d31fcf9b010d0d5ef89bb006e1d
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-3-6729b108@73a1f32cc9432a75646ed8faba8c586f
 ---
 
 # 4.10.3
@@ -16,11 +16,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-10-d6286642]] - broader source section
-- [[sword-world-rpg-complete-edition-section-magical-weapons-and-armor-186f0a74]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-magical-weapons-a73549d1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-magical-shields-ca1f57ac]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-magical-armor-2bd38e0b]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-4-10-d6286642]] - broader source section: 4.10
+- [[sword-world-rpg-complete-edition-section-magical-weapons-and-armor-186f0a74]] - narrower source section: Magical Weapons and Armor
+- [[sword-world-rpg-complete-edition-section-magical-weapons-a73549d1]] - narrower source section: 【 Magical Weapons 】
+- [[sword-world-rpg-complete-edition-section-magical-shields-ca1f57ac]] - narrower source section: 【 Magical Shields 】
+- [[sword-world-rpg-complete-edition-section-magical-armor-2bd38e0b]] - narrower source section: 【 Magical Armor 】
 
 ## Statements by subsection
 

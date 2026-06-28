@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mithril-silver-weapons-and-armor-b75268a0@61cbcbb5726abf068df5d60c5ee011e0
+projection_coverage: section-sword-world-rpg-complete-edition-section-mithril-silver-weapons-and-armor-b75268a0@cd97b4839d69c7f07ea2fd853b59f503
 ---
 
 # Mithril Silver Weapons and Armor
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-10-4-22cd202b]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-10-4-22cd202b]] - broader source section: 4.10.4
 
 ## Statements
 

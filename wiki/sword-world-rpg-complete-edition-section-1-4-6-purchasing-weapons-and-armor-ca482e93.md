@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-6-purchasing-weapons-and-armor-ca482e93@c57bcb9ce3cd508e0a51c64e8d049729
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-6-purchasing-weapons-and-armor-ca482e93@08769c97abd02b8ed3fe4904e5ba5ea8
 ---
 
 # 1.4.6 Purchasing Weapons and Armor
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section: 1.4
 
 ## Statements
 

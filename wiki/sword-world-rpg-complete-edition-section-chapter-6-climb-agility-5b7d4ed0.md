@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-climb-agility-5b7d4ed0@debffd0d4d174df40eb81441711ab57f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-climb-agility-5b7d4ed0@a22345f708c43cbcc9f57ae8ebe50dc1
 ---
 
 # Chapter 6: / [ ④ Climb [Agility] ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section: Chapter 6:
 
 ## Statements
 

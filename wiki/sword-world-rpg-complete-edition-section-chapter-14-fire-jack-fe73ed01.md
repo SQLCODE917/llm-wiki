@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-fire-jack-fe73ed01@eecaf4ef3d10c64536b0dc9ff33b51f5
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-fire-jack-fe73ed01@ce493cda7103b2431e3e370d4acb4978
 ---
 
 # Chapter 14: / [ Fire Jack ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

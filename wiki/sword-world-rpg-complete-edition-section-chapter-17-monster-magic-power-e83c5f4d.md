@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-monster-magic-power-e83c5f4d@81857f098bb38da17ba1206d42f0250b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-monster-magic-power-e83c5f4d@0f3f582680471fd5ee2ebc51c832b6a8
 ---
 
 # Chapter 17: / Monster Magic Power
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-17-3a08908a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-17-3a08908a]] - broader source section: Chapter 17:
 
 ## Statements
 

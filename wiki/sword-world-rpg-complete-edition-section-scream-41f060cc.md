@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-scream-41f060cc@07095884e4c1412f743066e4ebc4d558
+projection_coverage: section-sword-world-rpg-complete-edition-section-scream-41f060cc@015067682a62c1a10b3a356957f2bb3a
 ---
 
 # 《 Scream 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-1-2b6cde92]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-1-2b6cde92]] - broader source section: 13.6.1
 
 ## Statements
 

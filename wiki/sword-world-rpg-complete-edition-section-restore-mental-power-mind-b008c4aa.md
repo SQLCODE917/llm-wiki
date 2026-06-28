@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-restore-mental-power-mind-b008c4aa@60f9d8448c25471855bc41c72330bd64
+projection_coverage: section-sword-world-rpg-complete-edition-section-restore-mental-power-mind-b008c4aa@586f1f5dfdd33f73d0c558f008869c09
 ---
 
 # Restore Mental Power (Mind)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-3-8f977924]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-3-8f977924]] - broader source section: 5.3
 
 ## Statements
 

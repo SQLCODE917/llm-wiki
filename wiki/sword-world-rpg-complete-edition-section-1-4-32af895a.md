@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-32af895a@1330fa09a1df02b9102ba506a101ef9a
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-32af895a@a4706837ef338cd5a7434f0777828d43
 ---
 
 # 1.4
@@ -16,50 +16,50 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-character-creation-91061a2a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-1-4-1-choose-a-race-062e9e53]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-human-b8ddf91d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-dwarf-98313b52]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-grassrunner-48f1c32f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-elf-d5aeb934]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-half-elf-f5f88ac0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-6ffecb81]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-1-4-2-determine-ability-scores-985acb3d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-ac6e89df]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-6de441e7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-1-4-3-starting-skills-and-starting-aeca89fe]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-experience-points-443c914d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-for-humans-and-halfelves-raised-by-humans-f3cfd364]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-for-races-other-than-humans-89449c29]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-2d8df425]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-1-4-4-age-gender-name-490bbb08]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-age-c34a6554]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ages-of-each-race-4d14c356]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-gender-de2d404d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-name-9d0546ea]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-18f8e0d8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-1-4-5-character-growth-via-starting-experience-points-7de178f3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-027dad33]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-1-4-6-purchasing-weapons-and-armor-ca482e93]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-required-strength-97dcd46e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-one-handed-and-twohanded-weapons-2478dbe3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-projectiles-455abe3a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-armor-bb9ffd91]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-shields-9f521a64]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-price-calculation-3ea0a024]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-1-4-7-restrictions-on-weapons-and-armor-based-on-skill-cc4cef6e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-fighter-fada090a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-thief-8808f47a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ranger-ae5a5f8b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sorcerer-9f1a4a7b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-shaman-fe4deb5b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sage-bard-priest-406e35c3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-2337ae9a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-1-4-8-purchasing-other-8ace94c8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-equipment-c6970fb7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-weight-limits-48c1995c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-28c147b6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-character-creation-91061a2a]] - narrower source section: Character Creation
+- [[sword-world-rpg-complete-edition-section-1-4-1-choose-a-race-062e9e53]] - narrower source section: 1.4.1 Choose a Race
+- [[sword-world-rpg-complete-edition-section-human-b8ddf91d]] - narrower source section: 【 Human 】
+- [[sword-world-rpg-complete-edition-section-dwarf-98313b52]] - narrower source section: 【 Dwarf 】
+- [[sword-world-rpg-complete-edition-section-grassrunner-48f1c32f]] - narrower source section: 【 Grassrunner 】
+- [[sword-world-rpg-complete-edition-section-elf-d5aeb934]] - narrower source section: 【 Elf 】
+- [[sword-world-rpg-complete-edition-section-half-elf-f5f88ac0]] - narrower source section: 【 Half-Elf 】
+- [[sword-world-rpg-complete-edition-section-example-6ffecb81]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-1-4-2-determine-ability-scores-985acb3d]] - narrower source section: 1.4.2 Determine Ability Scores
+- [[sword-world-rpg-complete-edition-section-example-ac6e89df]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-example-6de441e7]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-1-4-3-starting-skills-and-starting-aeca89fe]] - narrower source section: 1.4.3 Starting Skills and Starting
+- [[sword-world-rpg-complete-edition-section-experience-points-443c914d]] - narrower source section: Experience Points
+- [[sword-world-rpg-complete-edition-section-for-humans-and-halfelves-raised-by-humans-f3cfd364]] - narrower source section: For Humans and HalfElves Raised by Humans
+- [[sword-world-rpg-complete-edition-section-for-races-other-than-humans-89449c29]] - narrower source section: For Races Other Than Humans
+- [[sword-world-rpg-complete-edition-section-example-2d8df425]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-1-4-4-age-gender-name-490bbb08]] - narrower source section: 1.4.4 Age, Gender, Name
+- [[sword-world-rpg-complete-edition-section-age-c34a6554]] - narrower source section: 《 Age 》
+- [[sword-world-rpg-complete-edition-section-ages-of-each-race-4d14c356]] - narrower source section: 《 Ages of Each Race 》
+- [[sword-world-rpg-complete-edition-section-gender-de2d404d]] - narrower source section: 《 Gender 》
+- [[sword-world-rpg-complete-edition-section-name-9d0546ea]] - narrower source section: 《 Name 》
+- [[sword-world-rpg-complete-edition-section-example-18f8e0d8]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-1-4-5-character-growth-via-starting-experience-points-7de178f3]] - narrower source section: 1.4.5 Character Growth via Starting Experience Points
+- [[sword-world-rpg-complete-edition-section-example-027dad33]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-1-4-6-purchasing-weapons-and-armor-ca482e93]] - narrower source section: 1.4.6 Purchasing Weapons and Armor
+- [[sword-world-rpg-complete-edition-section-required-strength-97dcd46e]] - narrower source section: Required Strength
+- [[sword-world-rpg-complete-edition-section-one-handed-and-twohanded-weapons-2478dbe3]] - narrower source section: One-Handed and TwoHanded Weapons
+- [[sword-world-rpg-complete-edition-section-projectiles-455abe3a]] - narrower source section: Projectiles
+- [[sword-world-rpg-complete-edition-section-armor-bb9ffd91]] - narrower source section: Armor
+- [[sword-world-rpg-complete-edition-section-shields-9f521a64]] - narrower source section: Shields
+- [[sword-world-rpg-complete-edition-section-price-calculation-3ea0a024]] - narrower source section: Price Calculation
+- [[sword-world-rpg-complete-edition-section-1-4-7-restrictions-on-weapons-and-armor-based-on-skill-cc4cef6e]] - narrower source section: 1.4.7 Restrictions on Weapons and Armor Based on Skill
+- [[sword-world-rpg-complete-edition-section-fighter-fada090a]] - narrower source section: [ Fighter ］
+- [[sword-world-rpg-complete-edition-section-thief-8808f47a]] - narrower source section: [ Thief ]
+- [[sword-world-rpg-complete-edition-section-ranger-ae5a5f8b]] - narrower source section: [ Ranger ]
+- [[sword-world-rpg-complete-edition-section-sorcerer-9f1a4a7b]] - narrower source section: [ Sorcerer ]
+- [[sword-world-rpg-complete-edition-section-shaman-fe4deb5b]] - narrower source section: [ Shaman ]
+- [[sword-world-rpg-complete-edition-section-sage-bard-priest-406e35c3]] - narrower source section: [ Sage, Bard, Priest ]
+- [[sword-world-rpg-complete-edition-section-example-2337ae9a]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-1-4-8-purchasing-other-8ace94c8]] - narrower source section: 1.4.8 Purchasing Other
+- [[sword-world-rpg-complete-edition-section-equipment-c6970fb7]] - narrower source section: Equipment
+- [[sword-world-rpg-complete-edition-section-weight-limits-48c1995c]] - narrower source section: [ Weight Limits ]
+- [[sword-world-rpg-complete-edition-section-example-28c147b6]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - narrower source section: 1.4.9
 
 ## Statements by subsection
 

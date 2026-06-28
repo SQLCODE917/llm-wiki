@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-valkyrie-javelin-valkyrie-mind-spirit-da42ddc8@b34751b00e44bfc34a604fae005ed845
+projection_coverage: section-sword-world-rpg-complete-edition-section-valkyrie-javelin-valkyrie-mind-spirit-da42ddc8@2cc9517a42f1a2c906cad1000655306b
 ---
 
 # [ Valkyrie Javelin ] (Valkyrie/Mind Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

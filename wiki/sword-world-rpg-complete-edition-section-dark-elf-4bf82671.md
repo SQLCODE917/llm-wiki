@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dark-elf-4bf82671@61347075a42e21fa2b489dd29e511fba
+projection_coverage: section-sword-world-rpg-complete-edition-section-dark-elf-4bf82671@3c3c43b72cef627eff52e067856f5296
 ---
 
 # [ Dark Elf ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f]] - broader source section: 13.2.3
 
 ## Statements
 

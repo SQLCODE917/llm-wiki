@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-daemon-hand-689580d0@3b18d6a018730f3e70cb4c2dd0e9494c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-daemon-hand-689580d0@241da6306b807e6ef8c78cb7e0efe82c
 ---
 
 # Chapter 14: / [ Daemon Hand ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Technical atoms
 

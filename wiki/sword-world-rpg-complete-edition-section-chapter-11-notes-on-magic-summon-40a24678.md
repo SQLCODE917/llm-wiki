@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-summon-40a24678@84c874f93889d0490c0b16d9a547dcd2
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-summon-40a24678@75e3d01d7907afb350769998c95d6a18
 ---
 
 # Chapter 11: Notes on Magic / 《 Summon 》
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
-- [[sword-world-rpg-complete-edition-section-summon-426b133e]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-summon-426b133e]] - same source heading: another source section with the same heading, 《 Summon 》
 
 ## Statements
 

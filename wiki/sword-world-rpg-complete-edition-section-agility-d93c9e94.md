@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-agility-d93c9e94@00a5f996d4994d2d3c0491ccf8736292
+projection_coverage: section-sword-world-rpg-complete-edition-section-agility-d93c9e94@cff840b368e211f54b1a48f4e98768d6
 ---
 
 # 《 Agility 》
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section
-- [[sword-world-rpg-complete-edition-agility]] - topic hub
-- [[sword-world-rpg-complete-edition-section-agility-9e070281]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section: 13.2.1
+- [[sword-world-rpg-complete-edition-agility]] - topic hub: opens the topic page for Agility
+- [[sword-world-rpg-complete-edition-section-agility-9e070281]] - same source heading: another source section with the same heading, 【 Agility 】
 
 ## Statements
 

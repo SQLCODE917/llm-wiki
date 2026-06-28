@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-cranequin-crossbow-f6e3d2a0@4d9eee9934503c711da7904b921210e4
+projection_coverage: section-sword-world-rpg-complete-edition-section-cranequin-crossbow-f6e3d2a0@0f6da569700bc2a8ce30499133cd82ac
 ---
 
 # Cranequin Crossbow
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section: 16.9
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-love-passion-inhaled-dose-magic-mind-36c50fd8@7eb68485618f65cd200a9e15e3941346
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-love-passion-inhaled-dose-magic-mind-36c50fd8@9b3e4dbd7452f829e98688c0464a0ad0
 ---
 
 # Chapter 12: Various Checks / [ Love Passion (Inhaled, Dose/Magic, Mind) ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-physical-enchant-ed2e2644@97dd6ee20cf18054532e7dca1472bd50
+projection_coverage: section-sword-world-rpg-complete-edition-section-physical-enchant-ed2e2644@d2cf3be0c819b0d2742713de1bdf84b6
 ---
 
 # [ Physical Enchant ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-air-cloak-9a81715f@4f2e83244e282d18a99fdf40d7f41b3d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-air-cloak-9a81715f@1632c08dea1204c482bef3dd8c985dff
 ---
 
 # Chapter 14: / 《 Air Cloak 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Technical atoms
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-beginner-priest-37ed5ef9@ae854eb6d228a8938c5d1e81819ad06b
+projection_coverage: section-sword-world-rpg-complete-edition-section-beginner-priest-37ed5ef9@63c0717b42300064ab7fd35ddd2b9b85
 ---
 
 # Beginner Priest
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section: 13.2.12
 
 ## Statements
 

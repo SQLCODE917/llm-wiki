@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-dream-runner-inhaled-21f881a9@56252ac66789ce154a9129afe1c5feb2
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-dream-runner-inhaled-21f881a9@6e54501a087b8701d470beddcc52e351
 ---
 
 # Chapter 12: Various Checks / [ Dream Runner (Inhaled) ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

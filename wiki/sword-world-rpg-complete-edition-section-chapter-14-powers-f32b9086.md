@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-powers-f32b9086@f85fe15a2b997f09ee97882f5b0e87e7
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-powers-f32b9086@17cf60fd2211c961bd8c9bdadd84166d
 ---
 
 # Chapter 14: / 《 Powers 》
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
-- [[sword-world-rpg-complete-edition-power]] - topic hub
-- [[sword-world-rpg-complete-edition-section-power-26f807ef]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
+- [[sword-world-rpg-complete-edition-power]] - topic hub: opens the topic page for Power
+- [[sword-world-rpg-complete-edition-section-power-26f807ef]] - same source heading: another source section with the same heading, Power
 
 ## Technical atoms
 

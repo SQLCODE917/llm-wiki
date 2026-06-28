@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-valkyrie-blessing-valkyrie-mind-spirit-dc210f98@7e5a93fda2ce1d2a361aaafb662965a1
+projection_coverage: section-sword-world-rpg-complete-edition-section-valkyrie-blessing-valkyrie-mind-spirit-dc210f98@bd0f54a3f4a541d1b9f129797035becd
 ---
 
 # [ Valkyrie Blessing ] (Valkyrie/Mind Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

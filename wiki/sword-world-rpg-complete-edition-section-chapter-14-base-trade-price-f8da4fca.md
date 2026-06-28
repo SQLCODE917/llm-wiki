@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-base-trade-price-f8da4fca@ceef96883077b392448ea148d5013a4f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-base-trade-price-f8da4fca@42150d6f7b59f8d95cd36347572f4001
 ---
 
 # Chapter 14: / 《 Base Trade Price 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

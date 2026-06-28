@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-research-intelligence-not-retriable-86942799@84e4becb9054cada09a48319bffe8d0d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-research-intelligence-not-retriable-86942799@b4e7d01400c38dfbb091ac0152da29b5
 ---
 
 # Chapter 6: / [ ⑤ Research [Intelligence] ] (Not retriable)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-80e28a91]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-80e28a91]] - broader source section: Chapter 6:
 
 ## Statements
 

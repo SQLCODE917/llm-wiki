@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bat-21e23617@7fa9bf08b86162cf3c8993a4ec4e1a87
+projection_coverage: section-sword-world-rpg-complete-edition-section-bat-21e23617@6392c28d57abfe4b2dd027be108ed9a8
 ---
 
 # Bat
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-bat-b9d4d9aa]] - same source heading
+- [[sword-world-rpg-complete-edition-section-bat-b9d4d9aa]] - same source heading: another source section with the same heading, [ Bat ]
 
 ## Statements
 

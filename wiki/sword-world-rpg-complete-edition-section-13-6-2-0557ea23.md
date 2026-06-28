@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-2-0557ea23@5b222aeabe799d395f6043f297cadb9e
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-2-0557ea23@8db343fb4e70cae88d3b7a5d3c61238a
 ---
 
 # 13.6.2
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section
-- [[sword-world-rpg-complete-edition-section-poison-18aeb03b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-parasitism-ebffc9b8]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section: 13.6
+- [[sword-world-rpg-complete-edition-section-poison-18aeb03b]] - narrower source section: 《 Poison 》
+- [[sword-world-rpg-complete-edition-section-parasitism-ebffc9b8]] - narrower source section: 《 Parasitism 》
 
 ## Statements by subsection
 

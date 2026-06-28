@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-3a08908a@272b7fdb3949591cb3f03115618965e6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-3a08908a@4702a245405e1b088c519e7e570e03a8
 ---
 
 # Chapter 17:
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-17-2fb2715d]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-17-monster-magic-power-e83c5f4d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-17-monster-resistance-2c0e66ed]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-17-lost-spells-ab37a907]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-17-2fb2715d]] - broader source section: Chapter 17:
+- [[sword-world-rpg-complete-edition-section-chapter-17-monster-magic-power-e83c5f4d]] - narrower source section: Chapter 17: / Monster Magic Power
+- [[sword-world-rpg-complete-edition-section-chapter-17-monster-resistance-2c0e66ed]] - narrower source section: Chapter 17: / Monster Resistance
+- [[sword-world-rpg-complete-edition-section-chapter-17-lost-spells-ab37a907]] - narrower source section: Chapter 17: / Lost Spells
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magic-crystal-770ff040@8768167684f86406b802fcf7ba848a25
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magic-crystal-770ff040@bfe28cd71a70778a7b9cdd1d317b5ea7
 ---
 
 # Chapter 14: / Magic Crystal
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

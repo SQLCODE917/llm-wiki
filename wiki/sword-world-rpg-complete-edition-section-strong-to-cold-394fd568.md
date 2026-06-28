@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-strong-to-cold-394fd568@4276f3288758a87afe20344505a95e03
+projection_coverage: section-sword-world-rpg-complete-edition-section-strong-to-cold-394fd568@e01c3932e0797885ff382533eb83cfee
 ---
 
 # 《 Strong to Cold 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-5-d175bad9]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-5-d175bad9]] - broader source section: 13.6.5
 
 ## Statements
 

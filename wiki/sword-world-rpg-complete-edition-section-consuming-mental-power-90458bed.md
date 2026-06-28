@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-consuming-mental-power-90458bed@80d71c71192eef3e73c450131d638031
+projection_coverage: section-sword-world-rpg-complete-edition-section-consuming-mental-power-90458bed@364f16420e63b128429007e934b397a7
 ---
 
 # Consuming Mental Power
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-5-3a96e1b6]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-5-3a96e1b6]] - broader source section: 5.1.5
 
 ## Statements
 

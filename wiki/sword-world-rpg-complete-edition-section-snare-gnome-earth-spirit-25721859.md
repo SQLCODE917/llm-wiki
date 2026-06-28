@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-snare-gnome-earth-spirit-25721859@3944f0a20e19a413d5b6e83ecd9608fb
+projection_coverage: section-sword-world-rpg-complete-edition-section-snare-gnome-earth-spirit-25721859@9dfb8955029055f00530c8fe2d9da3a0
 ---
 
 # [ Snare ] (Gnome/Earth Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

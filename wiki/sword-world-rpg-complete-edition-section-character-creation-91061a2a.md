@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-character-creation-91061a2a@ba6a2c5c1dd8cd98f7d94a81e7d92c3c
+projection_coverage: section-sword-world-rpg-complete-edition-section-character-creation-91061a2a@e1468ef67380b7d320090f36c3090b64
 ---
 
 # Character Creation
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section: 1.4
 
 ## Statements
 

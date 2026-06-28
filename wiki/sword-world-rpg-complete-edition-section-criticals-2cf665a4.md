@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-criticals-2cf665a4@c2f645c3f6ccd6f31e7b71bc27c4d92b
+projection_coverage: section-sword-world-rpg-complete-edition-section-criticals-2cf665a4@303c79acbbdc747973bd0ae008e1caa5
 ---
 
 # 【 Criticals? 】
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-criticals-d563f0ef]] - same source heading
+- [[sword-world-rpg-complete-edition-section-criticals-d563f0ef]] - same source heading: another source section with the same heading, 【 Criticals
 
 ## Statements
 

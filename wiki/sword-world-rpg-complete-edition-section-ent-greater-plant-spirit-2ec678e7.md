@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ent-greater-plant-spirit-2ec678e7@21df2d1661bbf297ff391976b081c769
+projection_coverage: section-sword-world-rpg-complete-edition-section-ent-greater-plant-spirit-2ec678e7@e91259b4c34018f07e9218e7ab23840f
 ---
 
 # (Ent/Greater Plant Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

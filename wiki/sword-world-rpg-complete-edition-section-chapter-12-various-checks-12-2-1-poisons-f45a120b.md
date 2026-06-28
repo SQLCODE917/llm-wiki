@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-2-1-poisons-f45a120b@fed51589bcea2f9f89b6d15396bbc7ee
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-2-1-poisons-f45a120b@24f274036b58f86a6aca944a85cc961d
 ---
 
 # Chapter 12: Various Checks / 12.2.1 Poisons
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
-- [[sword-world-rpg-complete-edition-poison]] - topic hub
-- [[sword-world-rpg-complete-edition-section-poison-18aeb03b]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
+- [[sword-world-rpg-complete-edition-poison]] - topic hub: opens the topic page for Poison
+- [[sword-world-rpg-complete-edition-section-poison-18aeb03b]] - same source heading: another source section with the same heading, 《 Poison 》
 
 ## Technical atoms
 

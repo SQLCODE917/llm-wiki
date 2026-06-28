@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-dark-crystal-628b402f@01d8628e9f693106d86c78e1fa87d1d8
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-dark-crystal-628b402f@7380378e2883c697f22cec2379a22d3a
 ---
 
 # Chapter 14: / Dark Crystal
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

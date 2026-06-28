@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-action-canceling-734f83e4@7c46332203ec5e6b63c77fab163aa0ca
+projection_coverage: section-sword-world-rpg-complete-edition-section-action-canceling-734f83e4@e06d0ca6a12b6f8ecd18c98fe5515c43
 ---
 
 # Action Canceling
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-3-3-c1607db4]] - broader source section
+- [[sword-world-rpg-complete-edition-section-3-3-c1607db4]] - broader source section: 3.3
 
 ## Statements
 

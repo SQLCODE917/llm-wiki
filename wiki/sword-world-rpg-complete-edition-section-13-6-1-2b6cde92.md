@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-1-2b6cde92@c15d8dec63da3c6f72697bfaac88452d
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-1-2b6cde92@e462098719f57e9d9bb961a38a8fdd50
 ---
 
 # 13.6.1
@@ -16,17 +16,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section
-- [[sword-world-rpg-complete-edition-section-magic-1eca6338]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-hypnotism-cb0581db]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-gaze-ray-ec29ba25]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-possess-d5b09033]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-curse-65996068]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-scream-41f060cc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-roar-5ffbc8bf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-fire-breath-e8d25a87]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-stone-wind-cutter-d7a5aae4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-disintegrate-63e5e789]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section: 13.6
+- [[sword-world-rpg-complete-edition-section-magic-1eca6338]] - narrower source section: 《 Magic 》
+- [[sword-world-rpg-complete-edition-section-hypnotism-cb0581db]] - narrower source section: 《 Hypnotism 》
+- [[sword-world-rpg-complete-edition-section-gaze-ray-ec29ba25]] - narrower source section: 《 Gaze/Ray 》
+- [[sword-world-rpg-complete-edition-section-possess-d5b09033]] - narrower source section: 《 Possess 》
+- [[sword-world-rpg-complete-edition-section-curse-65996068]] - narrower source section: 《 Curse 》
+- [[sword-world-rpg-complete-edition-section-scream-41f060cc]] - narrower source section: 《 Scream 》
+- [[sword-world-rpg-complete-edition-section-roar-5ffbc8bf]] - narrower source section: 《 Roar 》
+- [[sword-world-rpg-complete-edition-section-fire-breath-e8d25a87]] - narrower source section: 《 Fire Breath 》
+- [[sword-world-rpg-complete-edition-section-stone-wind-cutter-d7a5aae4]] - narrower source section: 《 Stone/Wind Cutter 》
+- [[sword-world-rpg-complete-edition-section-disintegrate-63e5e789]] - narrower source section: 《 Disintegrate 》
 
 ## Statements by subsection
 

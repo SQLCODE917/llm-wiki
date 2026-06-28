@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-balloon-burst-3aad1f98@2427f2e09d5b8050451990552fb6b445
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-balloon-burst-3aad1f98@9600cc1163ff74d2f2acb895640469f3
 ---
 
 # Chapter 12: Various Checks / [ Balloon Burst ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

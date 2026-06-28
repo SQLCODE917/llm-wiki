@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-11-2-7e531b45@2605f2cc2a4a34ef42831696557beeee
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-11-2-7e531b45@6389add4f406e4acd77f75c74f00948d
 ---
 
 # 5.1.11.2
@@ -16,13 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-high-ancient-23349db6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-low-ancient-f95d2075]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spellbook-b520a4a3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-magical-catalyst-4523da42]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-1st-level-ancient-magic-list-unlock-25545660]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-energy-bolt-6dc7a39a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-enchant-weapon-953e28aa]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-high-ancient-23349db6]] - narrower source section: 《 High Ancient 》
+- [[sword-world-rpg-complete-edition-section-low-ancient-f95d2075]] - narrower source section: 《 Low Ancient 》
+- [[sword-world-rpg-complete-edition-section-spellbook-b520a4a3]] - narrower source section: 《 Spellbook 》
+- [[sword-world-rpg-complete-edition-section-magical-catalyst-4523da42]] - narrower source section: 《 Magical Catalyst 》
+- [[sword-world-rpg-complete-edition-section-1st-level-ancient-magic-list-unlock-25545660]] - narrower source section: 1st Level Ancient Magic List [ Unlock ]
+- [[sword-world-rpg-complete-edition-section-energy-bolt-6dc7a39a]] - narrower source section: [ Energy Bolt ]
+- [[sword-world-rpg-complete-edition-section-enchant-weapon-953e28aa]] - narrower source section: [ Enchant Weapon ]
 
 ## Statements by subsection
 

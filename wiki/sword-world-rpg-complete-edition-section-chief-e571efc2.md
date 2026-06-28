@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chief-e571efc2@647b8fb7d3fab1055992aeef6d378487
+projection_coverage: section-sword-world-rpg-complete-edition-section-chief-e571efc2@5a64b84febc50e8b2cbee8e1235c9ff6
 ---
 
 # Chief
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section: 13.2.12
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magical-catalyst-4523da42@19738d7ba029193709856a2283e19ed6
+projection_coverage: section-sword-world-rpg-complete-edition-section-magical-catalyst-4523da42@ad20315e00c8a86f4657cabd35fd6cf3
 ---
 
 # 《 Magical Catalyst 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-11-2-7e531b45]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-11-2-7e531b45]] - broader source section: 5.1.11.2
 
 ## Statements
 

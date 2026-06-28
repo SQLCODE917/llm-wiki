@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-1-29743fb8@681acc8cac3ba45b4e936c77a36c17a8
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-1-29743fb8@3d0006967d004516d2e2e6c9da901897
 ---
 
 # 13.1
@@ -16,17 +16,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-types-of-monsters-a0e7901e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-fae-2307c33f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-youma-098541cc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spirits-e07cbdd8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-titans-3c0346ce]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-mythical-beasts-and-magical-beasts-f340656a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-animals-b215a920]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-plants-d80e90a5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-undead-0adc0a56]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-magical-creatures-c6a443c4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-daemons-underworld-creatures-5bc716fd]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-types-of-monsters-a0e7901e]] - narrower source section: Types of Monsters
+- [[sword-world-rpg-complete-edition-section-fae-2307c33f]] - narrower source section: 《 Fae 》
+- [[sword-world-rpg-complete-edition-section-youma-098541cc]] - narrower source section: 《 Youma 》
+- [[sword-world-rpg-complete-edition-section-spirits-e07cbdd8]] - narrower source section: 《 Spirits 》
+- [[sword-world-rpg-complete-edition-section-titans-3c0346ce]] - narrower source section: 《 Titans 》
+- [[sword-world-rpg-complete-edition-section-mythical-beasts-and-magical-beasts-f340656a]] - narrower source section: 《 Mythical Beasts and Magical Beasts 》
+- [[sword-world-rpg-complete-edition-section-animals-b215a920]] - narrower source section: 《 Animals 》
+- [[sword-world-rpg-complete-edition-section-plants-d80e90a5]] - narrower source section: 《 Plants 》
+- [[sword-world-rpg-complete-edition-section-undead-0adc0a56]] - narrower source section: 《 Undead 》
+- [[sword-world-rpg-complete-edition-section-magical-creatures-c6a443c4]] - narrower source section: 《 Magical Creatures 》
+- [[sword-world-rpg-complete-edition-section-daemons-underworld-creatures-5bc716fd]] - narrower source section: 《 Daemons/Underworld Creatures 》
 
 ## Statements by subsection
 

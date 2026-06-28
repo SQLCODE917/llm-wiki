@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-9th-level-spirit-magic-list-earthquake-behemoth-greater-earth-spirit-eee09c00@7c8bdf433424dce84ab34aa8e1fd04dc
+projection_coverage: section-sword-world-rpg-complete-edition-section-9th-level-spirit-magic-list-earthquake-behemoth-greater-earth-spirit-eee09c00@6a2f1ed5c11fe0d104d447aaa1770a72
 ---
 
 # 9th Level Spirit Magic List [ Earthquake ] (Behemoth/Greater Earth Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

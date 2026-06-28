@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-medicines-intelligence-appraisal-only-not-retriable-e8f93edd@791ec80166a29778609fc370da076a6c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-medicines-intelligence-appraisal-only-not-retriable-e8f93edd@0ccc35ae2df073ffd1773f99ed682240
 ---
 
 # Chapter 6: / [ ⑦ Medicines [Intelligence]] ((Appraisal only) Not retriable)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section: Chapter 6:
 
 ## Statements
 

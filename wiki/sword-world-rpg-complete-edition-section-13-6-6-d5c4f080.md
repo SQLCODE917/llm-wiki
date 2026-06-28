@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-6-d5c4f080@69645660301647a04f111be4469e5a42
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-6-d5c4f080@4dec83081048ed7275a812e413267fb5
 ---
 
 # 13.6.6
@@ -16,15 +16,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section
-- [[sword-world-rpg-complete-edition-section-life-point-regenerate-f31b0bf0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-regenerate-40a2eea6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-not-affected-by-poison-and-illness-5ef0df4f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-camouflage-07035b06]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-shapeshift-9bb44983]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-clairvoyance-2aa4d89c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-summon-426b133e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-web-9c9b390b]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section: 13.6
+- [[sword-world-rpg-complete-edition-section-life-point-regenerate-f31b0bf0]] - narrower source section: 《 Life Point Regenerate 》
+- [[sword-world-rpg-complete-edition-section-regenerate-40a2eea6]] - narrower source section: 《 Regenerate 》
+- [[sword-world-rpg-complete-edition-section-not-affected-by-poison-and-illness-5ef0df4f]] - narrower source section: 《 Not Affected by Poison and Illness 》
+- [[sword-world-rpg-complete-edition-section-camouflage-07035b06]] - narrower source section: 《 Camouflage 》
+- [[sword-world-rpg-complete-edition-section-shapeshift-9bb44983]] - narrower source section: 《 Shapeshift 》
+- [[sword-world-rpg-complete-edition-section-clairvoyance-2aa4d89c]] - narrower source section: 《 Clairvoyance 》
+- [[sword-world-rpg-complete-edition-section-summon-426b133e]] - narrower source section: 《 Summon 》
+- [[sword-world-rpg-complete-edition-section-web-9c9b390b]] - narrower source section: 《 Web 》
 
 ## Statements by subsection
 

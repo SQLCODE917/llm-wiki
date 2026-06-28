@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-grey-suit-7ceeb31a@e59b4e4d5e48ed6f40cb7b4dbd5dc741
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-grey-suit-7ceeb31a@a404ef8a623dc62ebf98709ffeb99903
 ---
 
 # Chapter 14: / 《 Grey Suit 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

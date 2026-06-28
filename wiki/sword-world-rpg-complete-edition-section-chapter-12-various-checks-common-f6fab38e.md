@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-common-f6fab38e@e45382adfafe1a31afd7e9c06782b365
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-common-f6fab38e@4e578e53106efc9ea1e4fecea806d52f
 ---
 
 # Chapter 12: Various Checks / [ Common ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Technical atoms
 

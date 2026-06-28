@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-projectile-range-extension-9d7516c9@efa9da9c9d62d2258fde8d639857a37d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-projectile-range-extension-9d7516c9@cbeaced04134139309a7d8c4e699ef8a
 ---
 
 # Chapter 16: / Projectile Range Extension
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-1d2de216]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-1d2de216]] - broader source section: Chapter 16:
 
 ## Statements
 

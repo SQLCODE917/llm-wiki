@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-dwarven-eee80ac2@7eae2e18ed2d1fb43e88aa9eea3abb2a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-dwarven-eee80ac2@91e21964fb4e40817574b8c0ba63a8a6
 ---
 
 # Chapter 12: Various Checks / [ Dwarven ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

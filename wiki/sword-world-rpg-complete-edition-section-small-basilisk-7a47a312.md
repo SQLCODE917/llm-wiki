@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-small-basilisk-7a47a312@1b05f0b396ffa1fdf0359818b3b27f34
+projection_coverage: section-sword-world-rpg-complete-edition-section-small-basilisk-7a47a312@16b2d867ab88a9cc847c02b2e719b797
 ---
 
 # Small Basilisk
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section
-- [[sword-world-rpg-complete-edition-section-basilisk-ccab8c13]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section: 13.2.6
+- [[sword-world-rpg-complete-edition-section-basilisk-ccab8c13]] - same source heading: another source section with the same heading, [ Basilisk ]
 
 ## Statements
 

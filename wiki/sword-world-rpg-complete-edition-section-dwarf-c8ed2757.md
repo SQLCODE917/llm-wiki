@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dwarf-c8ed2757@582e4982bcbb89be56c8802c5d569d93
+projection_coverage: section-sword-world-rpg-complete-edition-section-dwarf-c8ed2757@627943157241cca2bfa382dfdf7ca483
 ---
 
 # 【 Dwarf 】
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-dwarf-98313b52]] - same source heading
+- [[sword-world-rpg-complete-edition-section-dwarf-98313b52]] - same source heading: another source section with the same heading, 【 Dwarf 】
 
 ## Statements
 

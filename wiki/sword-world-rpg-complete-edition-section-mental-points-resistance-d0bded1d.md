@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mental-points-resistance-d0bded1d@74a6c0de23e619ec1d2cff7af297bb2e
+projection_coverage: section-sword-world-rpg-complete-edition-section-mental-points-resistance-d0bded1d@6efe058432978ea1d3fddb2594b56091
 ---
 
 # 《 Mental Points/Resistance 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section: 13.2.1
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-elves-80602838@b5735b67ae1a2ff8d9d66d72fc3d2c95
+projection_coverage: section-sword-world-rpg-complete-edition-section-elves-80602838@ee8e0fc3067befeb6dffa9ad8e98be34
 ---
 
 # Elves
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-2-86873743]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-2-86873743]] - broader source section: 18.2
 
 ## Statements
 

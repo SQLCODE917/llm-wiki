@@ -1,0 +1,86 @@
+---
+page_id: javascriptallonge-section-magic-names-0cf94f23
+page_kind: source
+summary: Magic Names: 19 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+sources: raw/javascriptallonge.pdf
+updated: 2026-06-28
+domain: javascriptallonge
+category_path: sources/javascriptallonge/sections
+source_id: javascriptallonge.pdf
+projection_coverage: section-javascriptallonge-section-magic-names-0cf94f23@7e50e4a4fceb81addecfdfb8eef1197f
+---
+
+# Magic Names
+
+From [[javascriptallonge]].
+
+## Statements
+
+- The first sip: Basic Functions
+
+51
+
+## **Magic Names**
+
+When a function is applied to arguments (or “called”), JavaScript binds the values of arguments to the function’s argument names in an environment created for the function’s execution. What we haven’t discussed so far is that JavaScript also binds values to some “magic” names in addition to any you put in the argument list.[42]
+
+## **the function keyword**
+
+There are two separate rules for these “magic” names, one for when you invoke a function using the function keyword, and another for functions defined with “fat arrows.” We’ll begin with how things work for functions defined with the function keyword.
+
+The first magic name is this, and it is bound to something called the function’s context. We will explore this in more detail when we start discussing objects and classes. The second magic name is very interesting, it’s called arguments, and the most interesting thing about it is that it contains a list of arguments passed to a function: **const** plus = **function** (a, b) { **return** arguments[0] + arguments[1]; } plus(2,3) _//=> 5_ Although arguments looks like an array, it isn’t an array: It’s more like an object[43] that happens to bind some values to properties with names that look like integers starting with zero: **const** args = **function** (a, b) { **return** arguments; } args(2,3) _//=> { '0': 2, '1': 3 }_ arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:
+
+> 42You should never attempt to define your own bindings against “magic” names that JavaScript binds for you. It is wise to treat them as read-only at all times.
+
+> 43We’ll look at arrays and plain old javascript objects in depth later. _(javascriptallonge.pdf (source-range-83ecb080-00090))_
+- 52
+
+The first sip: Basic Functions **const** plus = **function** () { **return** arguments[0] + arguments[1]; } plus(2,3) _//=> 5_
+
+When discussing objects, we’ll discuss properties in more depth. Here’s something interesting about arguments: **const** howMany = **function** () { **return** arguments['length']; } howMany() _//=> 0_ howMany('hello') _//=> 1_ howMany('sharks', 'are', 'apex', 'predators') _//=> 4_
+
+The most common use of the arguments binding is to build functions that can take a variable number of arguments. We’ll see it used in many of the recipes, starting off with partial application and ellipses.
+
+## **magic names and fat arrows**
+
+The magic names this and arguments have a different behaviour when you invoke a function that was defined with a fat arrow: Instead of being bound when the function is invoked, the fat arrow function always acquires the bindings for this and arguments from its enclosing scope, just like any other binding.
+
+For example, when this expression’s inner function is defined with function, arguments[0] refers to its only argument, "inner": _(javascriptallonge.pdf (source-range-83ecb080-00091))_
+- The first sip: Basic Functions
+
+54 **const** row = **function** () { **return** mapWith( **function** (column) { **return** column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) _//=> [1,4,9,16,25,36,49,64,81,100,121,144]_ Now our inner function binds arguments[0] every time it is invoked, so we get the same result as if we’d written function (column) { return column * column }.
+
+Although this example is clearly unrealistic, there is a general design principle that deserves attention. Sometimes, a function is meant to be used as a Big-F function. It has a name, it is called by different pieces of code, it’s a first-class entity in the code.
+
+But sometimes, a function is a small-f function. It’s a simple representation of an expression to be computed. In our example above, row is a Big-F function, but (column) => column * arguments[0] is a small-f function, it exists just to give mapWith something to apply.
+
+Having magic variables apply to Big-F functions but not to small-G functions makes it much easier to use small-F functions as syntax, treating them as expressions or blocks that can be passed to functions like mapWith. _(javascriptallonge.pdf (source-range-83ecb080-00093))_
+- It is wise to treat them as read-only at all times. _(javascriptallonge.pdf (source-range-83ecb080-00090))_
+- For example, when this expression’s inner function is defined with function, arguments[0] refers to its only argument, "inner": _(javascriptallonge.pdf (source-range-83ecb080-00091))_
+- It has a name, it is called by different pieces of code, it’s a first-class entity in the code. _(javascriptallonge.pdf (source-range-83ecb080-00093))_
+
+## Technical atoms
+
+### Technical frame 1: Magic Names
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00093))_
+
+> The first sip: Basic Functions
+
+54 **const** row = **function** () { **return** mapWith( **function** (column) { **return** column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) _//=> [1,4,9,16,25,36,49,64,81,100,121,144]_ Now our inner function binds arguments[0] every time it is invoked, so we get the same result as if we’d written function (column) { return column * column }.
+
+Although this example is clearly unrealistic, there is a general design principle that deserves
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00092))_
+
+> 53
+> 
+> The first sip: Basic Functions
+> 
+> ( **function** () { **return** ( **function** () { **return** arguments[0]; })('inner'); })('outer') _//=> "inner"_ But if we use a fat arrow, arguments will be defined in the outer environment, the one defined with function. And thus arguments[0] will refer to "outer", not to "inner":
+> 
+> ( **function** () { **return** (() => arguments[0])('inner'); })('outer') _//=> "outer"_ Although it seems quixotic for the two syntaxes to have different semantics, it makes sense when you consider the design goal: Fat arrow functions are designed to be very lightweight and are often used with constructs like mapping or callbacks to emulate syntax.
+> 
+> To give a contrived example, this function takes a number and returns an array representing a row in a hypothetical multiplication table. It uses mapWith, which we discussed in Building Blocks.[44] We’ll use arguments just to show the difference between using a fat arrow and the function keyword: **const** row = **function** () { **return** mapWith( (column) => column * arguments[0], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) _//=> [3,6,9,12,15,18,21,24,27,30,33,36]_ This works just fine, because arguments[0] refers to the 3 we passed to the function row. Our “fat arrow” function (column) => column * arguments[0] doesn’t bind arguments when it’s invoked. But if we rewrite row to use the function keyword, it stops working:
+> 
+> > 44Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It’s the same idea, after all.

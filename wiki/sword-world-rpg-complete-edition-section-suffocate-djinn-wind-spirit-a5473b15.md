@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-suffocate-djinn-wind-spirit-a5473b15@bb9e3c6ceda4a5e912872a5e49995807
+projection_coverage: section-sword-world-rpg-complete-edition-section-suffocate-djinn-wind-spirit-a5473b15@ea18d9b0f19cdeaade32f19f823b74e0
 ---
 
 # [ Suffocate ] (Djinn/Wind Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

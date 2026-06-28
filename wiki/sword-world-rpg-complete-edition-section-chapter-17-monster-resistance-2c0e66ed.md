@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-monster-resistance-2c0e66ed@0fa8f728353e19d927c5d228bcac93d1
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-monster-resistance-2c0e66ed@ea485db9723f59a3095eb31ea0ad8b8d
 ---
 
 # Chapter 17: / Monster Resistance
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-17-3a08908a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-17-3a08908a]] - broader source section: Chapter 17:
 
 ## Statements
 

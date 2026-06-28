@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magic-scroll-16e3687e@3c1606d33521d0e09bda21ee36a282c6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magic-scroll-16e3687e@23939a83ac4e7024ff376847aa5249d6
 ---
 
 # Chapter 14: / [ Magic Scroll ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

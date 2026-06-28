@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-not-affected-by-poison-and-illness-5ef0df4f@f7d6f65132a0eeef3f71dc3cbd17295c
+projection_coverage: section-sword-world-rpg-complete-edition-section-not-affected-by-poison-and-illness-5ef0df4f@148a0e990abdd1924aa76bf35bbacac3
 ---
 
 # 《 Not Affected by Poison and Illness 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6-d5c4f080]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-6-d5c4f080]] - broader source section: 13.6.6
 
 ## Statements
 

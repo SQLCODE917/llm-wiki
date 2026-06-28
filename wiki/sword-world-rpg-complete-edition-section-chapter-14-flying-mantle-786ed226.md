@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-flying-mantle-786ed226@173d71323ddf2d6db32dbe70dc8110bd
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-flying-mantle-786ed226@44edfbd6c0025886ef1152b022a7c5c3
 ---
 
 # Chapter 14: / [ Flying Mantle ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

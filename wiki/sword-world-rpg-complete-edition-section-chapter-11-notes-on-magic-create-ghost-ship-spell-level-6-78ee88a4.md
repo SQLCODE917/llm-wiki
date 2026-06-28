@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-create-ghost-ship-spell-level-6-78ee88a4@97e9607caf122829a6e3965c08439d46
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-create-ghost-ship-spell-level-6-78ee88a4@92290aaf53d8ba606bc8f6a6a1b3757f
 ---
 
 # Chapter 11: Notes on Magic / [ Create Ghost Ship ] (Spell Level=6)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

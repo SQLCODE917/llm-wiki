@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-amber-robe-fde5f5f5@670498392b75cf9ca7d653074b7e6362
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-amber-robe-fde5f5f5@2def6731d041ff2f8dd8f1c57863afea
 ---
 
 # Chapter 14: / 《 Amber Robe 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Technical atoms
 

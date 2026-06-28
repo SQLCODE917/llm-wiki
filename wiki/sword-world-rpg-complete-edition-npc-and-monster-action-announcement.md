@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-npc-and-monster-action-announcement@166913a6dc9f4a31e5c22ee34bffa82f
+projection_coverage: topic-sword-world-rpg-complete-edition-npc-and-monster-action-announcement@59b34ebcdaaecc1a56108f7c853cc340
 ---
 
 # 3.1.3 NPC and Monster Action Announcements
@@ -75,15 +75,15 @@ What [[sword-world-rpg-complete-edition]] covers about 3.1.3 npc and monster act
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-action]] - broader topic (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (5 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms (5 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (3 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-play]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-player]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-3-1-3-npc-and-monster-action-announcements-360ca2b8]] - source section (7 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-npc-and-monster-action-announcement-542ec1ad]] - source section (6 shared statement(s))
+- [[sword-world-rpg-complete-edition-action]] - broader topic: Action shares source evidence from 3.1.3 NPC and Monster Action Announcements: When NPCs, monsters, etc. announce their actions, it's done by the game master who manages them. Specific action announcements may not be made at this time.; Action shares technical record from 3.1.3 NPC and Monster Action Announcements: If it's something the character should know, the game master should tell you when they announce the action. (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms: Game shares source evidence from 3.1.3 NPC and Monster Action Announcements: You may only declare, I'm preparing to cast a spell , and not give out the specific name of the spell. This is the difference in position between the players and the ... [truncated]; Game shares technical record from 3.1.3 NPC and Monster Action Announcements: If it's something the character should know, the game master should tell you when they announce the action. (5 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms: Master shares source evidence from 3.1.3 NPC and Monster Action Announcements: You may only declare, I'm preparing to cast a spell , and not give out the specific name of the spell. This is the difference in position between the players and the ... [truncated]; Master shares technical record from 3.1.3 NPC and Monster Action Announcements: If it's something the character should know, the game master should tell you when they announce the action. (5 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms: Character shares source evidence from 3.1.3 NPC and Monster Action Announcements: You may only declare, I'm preparing to cast a spell , and not give out the specific name of the spell. This is the difference in position between the players and the ... [truncated]; Character shares technical record from 3.1.3 NPC and Monster Action Announcements: If it's something the character should know, the game master should tell you when they announce the action. (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-play]] - shared statements and technical atoms: Play shares source evidence from 3.1.3 NPC and Monster Action Announcements: You may only declare, I'm preparing to cast a spell , and not give out the specific name of the spell. This is the difference in position between the players and the ... [truncated]; Play shares technical record from 3.1.3 NPC and Monster Action Announcements: If it's something the character should know, the game master should tell you when they announce the action. (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-player]] - shared statements and technical atoms: Player shares source evidence from 3.1.3 NPC and Monster Action Announcements: You may only declare, I'm preparing to cast a spell , and not give out the specific name of the spell. This is the difference in position between the players and the ... [truncated]; Player shares technical record from 3.1.3 NPC and Monster Action Announcements: If it's something the character should know, the game master should tell you when they announce the action. (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements: Target shares source evidence from [ Full Potential ]: Full Potential is a spell that enhances the effects of Physical Enchantment and raises potential capabilities of the human body to maximum. The result is the same ef ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-3-1-3-npc-and-monster-action-announcements-360ca2b8]] - source section: 3.1.3 NPC and Monster Action Announcements shares source evidence from 3.1.3 NPC and Monster Action Announcements: When NPCs, monsters, etc. announce their actions, it's done by the game master who manages them. Specific action announcements may not be made at this time.; 3.1.3 NPC and Monster Action Announcements shares technical record from 3.1.3 NPC and Monster Action Announcements: You may only declare, I'm preparing to cast a spell , and not give out the specific name of the spell. (7 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-npc-and-monster-action-announcement-542ec1ad]] - source section: NPC and Monster Action Announcement shares source evidence from NPC and Monster Action Announcement: The game master must manage the actions of NPCs and monsters. In combat, the planned actions of NPCs and monsters must be announced at the beginning of the round. (6 shared statement(s))
 
 ## Source
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-bfe3e221@7c873c6bf45c675a8f0e9a4b9d7a3a4b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-bfe3e221@a3cdc47ca02527b55fd657681e1d0012
 ---
 
 # Chapter 11: Notes on Magic
@@ -16,11 +16,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-69a62e4e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-160fd94d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-09a12197]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-69a62e4e]] - narrower source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - narrower source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - narrower source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-160fd94d]] - narrower source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-09a12197]] - narrower source section: Chapter 11: Notes on Magic
 
 ## Statements by subsection
 

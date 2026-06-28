@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-surprise-attacks-5fbb0c7d@b17b2d9b8aa76fc03311095b6970dd46
+projection_coverage: section-sword-world-rpg-complete-edition-section-surprise-attacks-5fbb0c7d@edd4d6dca011022bfb8968dcd29697cb
 ---
 
 # Surprise Attacks
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-10-3-b83dc222]] - broader source section
+- [[sword-world-rpg-complete-edition-section-10-3-b83dc222]] - broader source section: 10.3
 
 ## Statements
 

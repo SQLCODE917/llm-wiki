@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-932dc96c@00e8a08ecfe14d0da5dd95757479f330
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-932dc96c@fa0acf895f797f387aff9479c435e39a
 ---
 
 # Chapter 6:
@@ -16,24 +16,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-308b01c1]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-ranger-skill-4c651439]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-first-aid-no-equipment-restriction-4e9b1df1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-footprint-tracking-intelligence-no-equipment-restriction-not-retriable-521a6dbe]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-camouflage-intelligence-equipment-restriction-00e63094]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-listen-intelligence-equipment-restriction-3f0031d4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-sense-danger-intelligence-no-equipment-restriction-76a153c8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-stealthy-step-agility-equipment-restriction-264f4883]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-survivalism-life-force-no-equipment-restriction-9f68464e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-d81b8ceb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-map-creation-intelligence-no-equipment-restriction-not-retriable-342f35e1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-weather-prediction-intelligence-no-equipment-restriction-not-retriable-ac45ad8d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-plant-and-animal-check-intelligence-no-equipment-restriction-not-retriable-3d5c3fe8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-projectile-use-dexterity-strength-no-equipment-restriction-22a6b727]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-follow-agility-equipment-restriction-404b6a31]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-surprise-attack-intelligence-no-equipment-restriction-504f86dc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-find-sense-trap-intelligence-no-equipment-restriction-not-retriable-df4da522]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-remove-set-trap-dexterity-equipment-restriction-not-retriable-b3161273]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-308b01c1]] - broader source section: Chapter 6:
+- [[sword-world-rpg-complete-edition-section-chapter-6-ranger-skill-4c651439]] - narrower source section: Chapter 6: / Ranger Skill
+- [[sword-world-rpg-complete-edition-section-chapter-6-first-aid-no-equipment-restriction-4e9b1df1]] - narrower source section: Chapter 6: / [ ② First-Aid [-] ] (No equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-footprint-tracking-intelligence-no-equipment-restriction-not-retriable-521a6dbe]] - narrower source section: Chapter 6: / [ ① Footprint Tracking [Intelligence] ] (No equipment restriction, not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-camouflage-intelligence-equipment-restriction-00e63094]] - narrower source section: Chapter 6: / [ ③ Camouflage [Intelligence] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-listen-intelligence-equipment-restriction-3f0031d4]] - narrower source section: Chapter 6: / [ ④ Listen [Intelligence] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-sense-danger-intelligence-no-equipment-restriction-76a153c8]] - narrower source section: Chapter 6: / [ ⑤ Sense Danger [Intelligence]] (No equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-stealthy-step-agility-equipment-restriction-264f4883]] - narrower source section: Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-survivalism-life-force-no-equipment-restriction-9f68464e]] - narrower source section: Chapter 6: / [ ⑦ Survivalism [Life Force] ] (No equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-d81b8ceb]] - narrower source section: Chapter 6: / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-map-creation-intelligence-no-equipment-restriction-not-retriable-342f35e1]] - narrower source section: Chapter 6: / [ ⑨ Map Creation [Intelligence]] (No equipment restriction, not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-weather-prediction-intelligence-no-equipment-restriction-not-retriable-ac45ad8d]] - narrower source section: Chapter 6: / [ ⑩ Weather Prediction [Intelligence] ] (No equipment restriction, not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-plant-and-animal-check-intelligence-no-equipment-restriction-not-retriable-3d5c3fe8]] - narrower source section: Chapter 6: / [ ⑪ Plant and Animal Check [Intelligence] ] (No equipment restriction, not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-projectile-use-dexterity-strength-no-equipment-restriction-22a6b727]] - narrower source section: Chapter 6: / [ ⑫ Projectile Use [Dexterity, Strength] ] (No equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-follow-agility-equipment-restriction-404b6a31]] - narrower source section: Chapter 6: / [ ⑬ Follow [Agility] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-surprise-attack-intelligence-no-equipment-restriction-504f86dc]] - narrower source section: Chapter 6: / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-find-sense-trap-intelligence-no-equipment-restriction-not-retriable-df4da522]] - narrower source section: Chapter 6: / [ ⑮ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-remove-set-trap-dexterity-equipment-restriction-not-retriable-b3161273]] - narrower source section: Chapter 6: / [ ⑯ Remove/Set Trap [Dexterity]] (Equipment restriction, not retriable)
 
 ## Statements by subsection
 

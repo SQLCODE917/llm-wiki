@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-1-e751cfcf@a48392390cefcb94e7e0b608b463f496
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-1-e751cfcf@dbe8677cfc2c7d6423a52a49b42fb631
 ---
 
 # 2.1
@@ -16,12 +16,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-baseline-scores-8751b1c9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-12dfc7fa]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-checks-916ced7a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-ce832476]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-7ecf8936]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-c30a80ee]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-baseline-scores-8751b1c9]] - narrower source section: Baseline Scores
+- [[sword-world-rpg-complete-edition-section-example-12dfc7fa]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-checks-916ced7a]] - narrower source section: Checks
+- [[sword-world-rpg-complete-edition-section-example-ce832476]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-example-7ecf8936]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-example-c30a80ee]] - narrower source section: Example:
 
 ## Statements by subsection
 

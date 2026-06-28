@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-9-e9b13c9d@86299630c298fa8314cd119a08e15bf4
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-9-e9b13c9d@ef37a744c5e9b03073a9be7df46af8c6
 ---
 
 # 16.9
@@ -16,31 +16,31 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-special-weapons-d27aa092]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-pole-weapons-009fe0f5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-thrust-0b750467]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-cut-e9c5425f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-stab-b744dae6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-beat-b1494e77]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sweep-c6a2aa9e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-pole-ax-d9c34798]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-halberd-dc58eed4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-lucerne-hammer-63aaa415]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-glaive-6a4fca10]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-bill-8fd33edc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-main-gauche-sword-breaker-55b7471e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-whip-net-bola-e0c4df29]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-whip-e0ddba89]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-net-7cf3b720]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-shield-attack-9758ee06]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-cranequin-crossbow-f6e3d2a0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ballista-0da971a6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-lance-e94b3081]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-boomerang-15b3e133]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-shotel-bff309cc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-cestus-eacee4db]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sap-blackjack-0d90be86]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-garrote-2cc81767]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-special-weapons-d27aa092]] - narrower source section: Special Weapons
+- [[sword-world-rpg-complete-edition-section-pole-weapons-009fe0f5]] - narrower source section: Pole Weapons
+- [[sword-world-rpg-complete-edition-section-thrust-0b750467]] - narrower source section: Thrust
+- [[sword-world-rpg-complete-edition-section-cut-e9c5425f]] - narrower source section: Cut
+- [[sword-world-rpg-complete-edition-section-stab-b744dae6]] - narrower source section: Stab
+- [[sword-world-rpg-complete-edition-section-beat-b1494e77]] - narrower source section: Beat
+- [[sword-world-rpg-complete-edition-section-sweep-c6a2aa9e]] - narrower source section: Sweep
+- [[sword-world-rpg-complete-edition-section-pole-ax-d9c34798]] - narrower source section: Pole Ax
+- [[sword-world-rpg-complete-edition-section-halberd-dc58eed4]] - narrower source section: Halberd
+- [[sword-world-rpg-complete-edition-section-lucerne-hammer-63aaa415]] - narrower source section: Lucerne Hammer
+- [[sword-world-rpg-complete-edition-section-glaive-6a4fca10]] - narrower source section: Glaive
+- [[sword-world-rpg-complete-edition-section-bill-8fd33edc]] - narrower source section: Bill
+- [[sword-world-rpg-complete-edition-section-main-gauche-sword-breaker-55b7471e]] - narrower source section: Main-gauche/Sword Breaker
+- [[sword-world-rpg-complete-edition-section-whip-net-bola-e0c4df29]] - narrower source section: Whip, Net, Bola
+- [[sword-world-rpg-complete-edition-section-whip-e0ddba89]] - narrower source section: Whip
+- [[sword-world-rpg-complete-edition-section-net-7cf3b720]] - narrower source section: Net
+- [[sword-world-rpg-complete-edition-section-shield-attack-9758ee06]] - narrower source section: Shield Attack
+- [[sword-world-rpg-complete-edition-section-cranequin-crossbow-f6e3d2a0]] - narrower source section: Cranequin Crossbow
+- [[sword-world-rpg-complete-edition-section-ballista-0da971a6]] - narrower source section: Ballista
+- [[sword-world-rpg-complete-edition-section-lance-e94b3081]] - narrower source section: Lance
+- [[sword-world-rpg-complete-edition-section-boomerang-15b3e133]] - narrower source section: Boomerang
+- [[sword-world-rpg-complete-edition-section-shotel-bff309cc]] - narrower source section: Shotel
+- [[sword-world-rpg-complete-edition-section-cestus-eacee4db]] - narrower source section: Cestus
+- [[sword-world-rpg-complete-edition-section-sap-blackjack-0d90be86]] - narrower source section: Sap (Blackjack)
+- [[sword-world-rpg-complete-edition-section-garrote-2cc81767]] - narrower source section: Garrote
 
 ## Statements by subsection
 

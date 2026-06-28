@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-water-combat-12ccdfa2@c54774218d7c5901dbacab256995360b
+projection_coverage: section-sword-world-rpg-complete-edition-section-water-combat-12ccdfa2@ed84f4dd4d516b06c39eca85561cc324
 ---
 
 # Water Combat
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-10-4-566a48e8]] - broader source section
+- [[sword-world-rpg-complete-edition-section-10-4-566a48e8]] - broader source section: 10.4
 
 ## Statements
 

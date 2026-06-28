@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5th-level-ancient-magic-list-apport-a52e0c5f@e9b4a9435fcf36d21a3fb216758f1ccc
+projection_coverage: section-sword-world-rpg-complete-edition-section-5th-level-ancient-magic-list-apport-a52e0c5f@9c3f8452e480e30f6f4efa9441f02f16
 ---
 
 # 5th Level Ancient Magic List [ Apport ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

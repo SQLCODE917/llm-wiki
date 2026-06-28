@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-clairvoyance-2aa4d89c@84a71aec0144262d76046868afe8fe49
+projection_coverage: section-sword-world-rpg-complete-edition-section-clairvoyance-2aa4d89c@e9c9851a30adcd38dda39be049a4bbbc
 ---
 
 # 《 Clairvoyance 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6-d5c4f080]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-6-d5c4f080]] - broader source section: 13.6.6
 
 ## Statements
 

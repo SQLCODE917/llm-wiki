@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-cold-immunity-41d74251@d6c2794295103d6cff94452c7fe48106
+projection_coverage: section-sword-world-rpg-complete-edition-section-cold-immunity-41d74251@fd79596596e7468afae1f5df80a9b138
 ---
 
 # 《 Cold Immunity 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-5-d175bad9]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-5-d175bad9]] - broader source section: 13.6.5
 
 ## Statements
 

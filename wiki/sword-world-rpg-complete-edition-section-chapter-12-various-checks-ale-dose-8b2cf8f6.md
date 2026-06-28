@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-ale-dose-8b2cf8f6@afea7300ed2116561a09097815ec22ec
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-ale-dose-8b2cf8f6@94d3973911e4662d81106bbbcb39feae
 ---
 
 # Chapter 12: Various Checks / [ Ale (Dose) ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

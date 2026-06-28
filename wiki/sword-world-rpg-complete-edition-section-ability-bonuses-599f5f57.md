@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ability-bonuses-599f5f57@cd5f13b858086beb31d981ad20a59f35
+projection_coverage: section-sword-world-rpg-complete-edition-section-ability-bonuses-599f5f57@9c6dc51c2ee8c1eb6ad056e584aecb1c
 ---
 
 # [ ⑤ Ability Bonuses ]
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - broader source section
-- [[sword-world-rpg-complete-edition-ability-bonuse]] - topic hub
-- [[sword-world-rpg-complete-edition-section-ability-bonuses-7ab3f5f1]] - same source heading
+- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - broader source section: 1.4.9
+- [[sword-world-rpg-complete-edition-ability-bonuse]] - topic hub: opens the topic page for Ability Bonuse
+- [[sword-world-rpg-complete-edition-section-ability-bonuses-7ab3f5f1]] - same source heading: another source section with the same heading, 【 Ability Bonuses 】
 
 ## Statements
 

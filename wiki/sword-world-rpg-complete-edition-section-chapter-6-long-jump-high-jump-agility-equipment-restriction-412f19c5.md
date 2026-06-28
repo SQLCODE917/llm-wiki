@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-long-jump-high-jump-agility-equipment-restriction-412f19c5@0804fb63b621e5b8384cb35e69c23497
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-long-jump-high-jump-agility-equipment-restriction-412f19c5@4b68e1bf062c99d2c7c265f1ffaaa681
 ---
 
 # Chapter 6: / [ ⑫ Long Jump/High Jump [Agility] ] (Equipment restriction)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section: Chapter 6:
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-7-146fbd9e@0d1f82705bdce24c97143ab1263998eb
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-7-146fbd9e@ae0b47a2132a42667498496a6a4d0927
 ---
 
 # 4.7
@@ -16,13 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-attacks-from-characters-against-characters-c463ef05]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-4-7-1-hit-checks-eb13a0ec]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-hits-ff327ba6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-aa9e10c0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-double-sixes-and-double-ones-9a1cd2dd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-4-7-2-damage-checks-c648cf40]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-1480433c]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-attacks-from-characters-against-characters-c463ef05]] - narrower source section: Attacks From Characters Against Characters
+- [[sword-world-rpg-complete-edition-section-4-7-1-hit-checks-eb13a0ec]] - narrower source section: 4.7.1 Hit Checks
+- [[sword-world-rpg-complete-edition-section-hits-ff327ba6]] - narrower source section: hits
+- [[sword-world-rpg-complete-edition-section-example-aa9e10c0]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-double-sixes-and-double-ones-9a1cd2dd]] - narrower source section: Double Sixes and Double Ones
+- [[sword-world-rpg-complete-edition-section-4-7-2-damage-checks-c648cf40]] - narrower source section: 4.7.2 Damage Checks
+- [[sword-world-rpg-complete-edition-section-example-1480433c]] - narrower source section: Example:
 
 ## Statements by subsection
 

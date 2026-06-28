@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-poison-treatment-and-detox-methods-312c92e0@65b3c0bbe96bc207382ec1828847871c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-poison-treatment-and-detox-methods-312c92e0@fadffd8bebe0468804259317ba858abc
 ---
 
 # Chapter 12: Various Checks / Poison Treatment and Detox Methods
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

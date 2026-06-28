@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-6th-level-basic-dark-magic-list-mesmerize-1137e0cb@84cdf9c448475141ab3de16121c51745
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-6th-level-basic-dark-magic-list-mesmerize-1137e0cb@cdb35fbbfb44fa909c688b5a6f3f3920
 ---
 
 # Chapter 11: Notes on Magic / 6th Level Basic Dark Magic List [ Mesmerize ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section: Chapter 11: Notes on Magic
 
 ## Technical atoms
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-1-choose-a-race-062e9e53@3a237204e65adab6e7dda448e57f997b
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-1-choose-a-race-062e9e53@496ba68b9c5044f707cfa7c52615a7c3
 ---
 
 # 1.4.1 Choose a Race
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section: 1.4
 
 ## Statements
 

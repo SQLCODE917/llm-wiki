@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-listen-intelligence-equipment-restriction-ba1860f7@516c0bd92417b8c5b3708f5fa50cef80
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-listen-intelligence-equipment-restriction-ba1860f7@90d3f341782108877394db758cf17338
 ---
 
 # Chapter 6: / [ ⑤ Listen [Intelligence] ] (Equipment restriction)
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section
-- [[sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-6-listen-intelligence-equipment-restriction-3f0031d4]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section: Chapter 6:
+- [[sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction]] - topic hub: opens the topic page for Listen Intelligence Equipment Restriction
+- [[sword-world-rpg-complete-edition-section-chapter-6-listen-intelligence-equipment-restriction-3f0031d4]] - same source heading: another source section with the same heading, Chapter 6: / [ ④ Listen [Intelligence] ] (Equipment restriction)
 
 ## Statements
 

@@ -28,6 +28,7 @@ from llmwiki.domain.ledger.renderer import atom_block, atom_context_block
 from llmwiki.domain.ledger.topic_relations import RelatedTopicLink
 from llmwiki.domain.ledger.topic_terms import topic_matcher
 from llmwiki.domain.ledger.topics import SourceTopic
+from llmwiki.domain.ledger.walkability import related_link_markdown
 
 
 def render_topic_page(
@@ -139,7 +140,7 @@ def render_topic_page(
     if related_pages:
         body.add("\n## Related pages\n\n")
         for link in related_pages:
-            span = body.add(f"- [[{link.page_id}]] - {link.relation}{_evidence_note(link)}\n")
+            span = body.add(f"{related_link_markdown(link)}\n")
             entries.append(
                 _coverage(
                     wiki_page_locator,
@@ -153,15 +154,6 @@ def render_topic_page(
     body.add(f"\n## Source\n\n- [[{source_page_id}]]\n")
     text = body.text()
     return RenderedPage(text, short_digest(text, 32), ProjectionCoverage(tuple(entries)))
-
-
-def _evidence_note(link: RelatedTopicLink) -> str:
-    parts: list[str] = []
-    if link.shared_entry_count:
-        parts.append(f"{link.shared_entry_count} shared statement(s)")
-    if link.shared_atom_count:
-        parts.append(f"{link.shared_atom_count} shared atom(s)")
-    return f" ({', '.join(parts)})" if parts else ""
 
 
 def _coverage(

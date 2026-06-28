@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-four-types-of-experience-points-5bae806b@002619d3b6cb3030950cbfeebde40789
+projection_coverage: section-sword-world-rpg-complete-edition-section-four-types-of-experience-points-5bae806b@260ae285fe30b1ec58fa3d87f9ca5bd1
 ---
 
 # Four Types of Experience Points
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-15-1-907776c3]] - broader source section
+- [[sword-world-rpg-complete-edition-section-15-1-907776c3]] - broader source section: 15.1
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-shotel-bff309cc@ce055a1604b03d8463b40671c9639ac0
+projection_coverage: section-sword-world-rpg-complete-edition-section-shotel-bff309cc@c84bb66a6bb56ee5b8b95168efc0c8f9
 ---
 
 # Shotel
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section: 16.9
 
 ## Statements
 

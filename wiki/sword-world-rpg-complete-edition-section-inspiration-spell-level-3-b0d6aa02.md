@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-inspiration-spell-level-3-b0d6aa02@b0dbce0fa8bb47cf709d4e9786e104a3
+projection_coverage: section-sword-world-rpg-complete-edition-section-inspiration-spell-level-3-b0d6aa02@ea1f921ab4cbf8b51c2e32db9bf802b9
 ---
 
 # [ Inspiration ] (Spell Level=3)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-far-east-region-language-eastern-m-rdan-9fd93090@94caa37198caad5d74bf473c8b368909
+projection_coverage: section-sword-world-rpg-complete-edition-section-far-east-region-language-eastern-m-rdan-9fd93090@1893ea8e0b66b2c21dac742911865b60
 ---
 
 # Far East Region (Language = Eastern/ Mārdan)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

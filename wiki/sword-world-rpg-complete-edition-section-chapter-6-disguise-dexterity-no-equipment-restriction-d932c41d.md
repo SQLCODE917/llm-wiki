@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-disguise-dexterity-no-equipment-restriction-d932c41d@5ce06f15c89e826eddb2349a0897e04d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-disguise-dexterity-no-equipment-restriction-d932c41d@8bc9b1b9c447b06e48a7f0e74071e50d
 ---
 
 # Chapter 6: / [ ⑭ Disguise [Dexterity] ] (No equipment restriction)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section: Chapter 6:
 
 ## Statements
 

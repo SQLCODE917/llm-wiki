@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sea-dragon-2e4b5f0d@278a77e38dcce7827ef9162c30f6073c
+projection_coverage: section-sword-world-rpg-complete-edition-section-sea-dragon-2e4b5f0d@7aa758f7ad458badc85e848fc53cb54a
 ---
 
 # [ Sea Dragon ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section: 13.2.6
 
 ## Statements
 

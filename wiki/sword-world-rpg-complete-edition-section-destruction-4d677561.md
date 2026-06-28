@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-destruction-4d677561@fce2d081845e63d381fb9bf1f0b4614d
+projection_coverage: section-sword-world-rpg-complete-edition-section-destruction-4d677561@73eb8823ed8906878799103992f74522
 ---
 
 # [ Destruction ]
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
-- [[sword-world-rpg-complete-edition-section-destruction-points-bca149f6]] - same source heading
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
+- [[sword-world-rpg-complete-edition-section-destruction-points-bca149f6]] - same source heading: another source section with the same heading, Destruction Points
 
 ## Technical atoms
 

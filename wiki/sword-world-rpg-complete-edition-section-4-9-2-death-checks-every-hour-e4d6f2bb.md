@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-9-2-death-checks-every-hour-e4d6f2bb@83e995b0f730746f5dc560f1c109335c
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-9-2-death-checks-every-hour-e4d6f2bb@3ad222320d58945af7c68772629f5010
 ---
 
 # 4.9.2 Death Checks Every Hour
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-9-a263c100]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-9-a263c100]] - broader source section: 4.9
 
 ## Statements
 

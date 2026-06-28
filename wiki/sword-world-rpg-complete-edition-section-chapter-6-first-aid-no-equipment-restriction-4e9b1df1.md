@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-first-aid-no-equipment-restriction-4e9b1df1@747383b7d23af3ef62a5db6a2aceae1d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-first-aid-no-equipment-restriction-4e9b1df1@447708d6fac2d5b2c0622544b867e6b0
 ---
 
 # Chapter 6: / [ ② First-Aid [-] ] (No equipment restriction)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section: Chapter 6:
 
 ## Statements
 

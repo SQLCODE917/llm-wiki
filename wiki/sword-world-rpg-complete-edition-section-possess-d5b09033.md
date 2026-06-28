@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-possess-d5b09033@1dc63058d3bf43deb786058a289fbd19
+projection_coverage: section-sword-world-rpg-complete-edition-section-possess-d5b09033@3c5aaf7f375b2cce316efa599584f661
 ---
 
 # 《 Possess 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-1-2b6cde92]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-1-2b6cde92]] - broader source section: 13.6.1
 
 ## Statements
 

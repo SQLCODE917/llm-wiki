@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-stone-skin-e31e7f5f@8333675ea9f708c8c536aa4ee6d5de77
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-stone-skin-e31e7f5f@cf080d8d2d3dff05b59c75412aa86799
 ---
 
 # Chapter 12: Various Checks / [ Stone Skin ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

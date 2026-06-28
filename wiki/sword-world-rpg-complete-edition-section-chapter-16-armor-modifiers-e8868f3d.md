@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-armor-modifiers-e8868f3d@d1a87c9605c71c72d688b1482ad27628
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-armor-modifiers-e8868f3d@7d89248f6dfeac14311db29fa341c8be
 ---
 
 # Chapter 16: / Armor Modifiers
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-9400c78a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-9400c78a]] - broader source section: Chapter 16:
 
 ## Technical atoms
 

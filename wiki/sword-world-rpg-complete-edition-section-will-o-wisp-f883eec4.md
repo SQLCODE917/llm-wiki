@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-will-o-wisp-f883eec4@f92ba347b91870124a857dc93457db5d
+projection_coverage: section-sword-world-rpg-complete-edition-section-will-o-wisp-f883eec4@1dd0b1755477e2748a0125524eaccd66
 ---
 
 # [ Will-O-Wisp ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f]] - broader source section: 13.2.3
 
 ## Statements
 

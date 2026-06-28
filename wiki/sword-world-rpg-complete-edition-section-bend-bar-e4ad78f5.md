@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bend-bar-e4ad78f5@1e3b3d00a1f12afb747a78c02e759f93
+projection_coverage: section-sword-world-rpg-complete-edition-section-bend-bar-e4ad78f5@f64c261f6bcc3d49ffeaf90d8f60dfd7
 ---
 
 # [ Bend Bar ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

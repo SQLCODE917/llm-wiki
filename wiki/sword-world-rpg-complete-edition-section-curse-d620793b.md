@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-curse-d620793b@54bf426218807e25e67cd040b3cbed9a
+projection_coverage: section-sword-world-rpg-complete-edition-section-curse-d620793b@702abd013bed10184b0ef4b529bc814b
 ---
 
 # 《 Curse 》
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-curse-0363bb15]] - same source heading
-- [[sword-world-rpg-complete-edition-section-curse-65996068]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-curse-0363bb15]] - same source heading: another source section with the same heading, Chapter 11: Notes on Magic / Curse
+- [[sword-world-rpg-complete-edition-section-curse-65996068]] - same source heading: another source section with the same heading, 《 Curse 》
 
 ## Statements
 

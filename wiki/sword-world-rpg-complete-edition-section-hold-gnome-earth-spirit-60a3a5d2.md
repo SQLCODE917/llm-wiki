@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hold-gnome-earth-spirit-60a3a5d2@a94e92cba41b78878650a7a789159aed
+projection_coverage: section-sword-world-rpg-complete-edition-section-hold-gnome-earth-spirit-60a3a5d2@a1babff722fe12ea4422cda11ca8e6c1
 ---
 
 # [ Hold ] (Gnome/Earth Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

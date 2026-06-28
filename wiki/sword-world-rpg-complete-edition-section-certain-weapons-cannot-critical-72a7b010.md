@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-certain-weapons-cannot-critical-72a7b010@d73be74d0d0d9c1c8ef78f23b570831b
+projection_coverage: section-sword-world-rpg-complete-edition-section-certain-weapons-cannot-critical-72a7b010@dbf3053341f686f2ecf3e67b16d36478
 ---
 
 # 《 Certain Weapons Cannot Critical 》
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - broader source section
-- [[sword-world-rpg-complete-edition-weapon-critical]] - topic hub
-- [[sword-world-rpg-complete-edition-section-weapons-cannot-critical-cf215ee1]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - broader source section: 13.6.4
+- [[sword-world-rpg-complete-edition-weapon-critical]] - topic hub: opens the topic page for Weapon Critical
+- [[sword-world-rpg-complete-edition-section-weapons-cannot-critical-cf215ee1]] - same source heading: another source section with the same heading, 《 Weapons Cannot Critical 》
 
 ## Statements
 

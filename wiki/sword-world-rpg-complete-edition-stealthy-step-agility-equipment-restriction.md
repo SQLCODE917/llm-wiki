@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-stealthy-step-agility-equipment-restriction@b80699b52fb16681733593f3821919b4
+projection_coverage: topic-sword-world-rpg-complete-edition-stealthy-step-agility-equipment-restriction@8aaf598875b878bd496a800c5faec277
 ---
 
 # [ ⑥ Stealthy Step [Agility] ] (Equipment restriction)
@@ -101,20 +101,19 @@ Table 1-11: Equipment
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-agility]] - broader topic
-- [[sword-world-rpg-complete-edition-success]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-climb-agility-equipment-restriction]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-follow-agility-equipment-restriction]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-game]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-remove-trap-dexterity-equipment-restriction-not-retriable]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-range]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-6-stealthy-step-agility-equipment-restriction-821838f1]] - source section (6 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-6-stealthy-step-agility-equipment-restriction-264f4883]] - source section (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared statements and technical atoms: Success shares source evidence from Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction): This is the ability to move without making a sound. A success roll determines whether the sound of walking can be heard.; Success shares technical record from Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction): If the thief's final score is greater, the sound will never be heard. (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-climb-agility-equipment-restriction]] - shared technical atoms: [ ⑩ Climb [Agility] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-follow-agility-equipment-restriction]] - shared technical atoms: [ ⑬ Follow [Agility] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-game]] - shared technical atoms: Game shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction]] - shared technical atoms: [ ⑤ Listen [Intelligence] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-remove-trap-dexterity-equipment-restriction-not-retriable]] - shared technical atoms: [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable]] - shared technical atoms: [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared technical atoms: Table shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - shared technical atoms: [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction): At this time, the thief makes a success roll using thief skill + dexterity bonus as the baseline score, and the person trying to hear the sound makes one using adven ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-range]] - shared statements: Range shares source evidence from Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction): Rangers can walk silently and unnoticed. This is handled the same way as the thief skill's ability. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-6-stealthy-step-agility-equipment-restriction-821838f1]] - source section: Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction) shares source evidence from Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction): This is the ability to move without making a sound. A success roll determines whether the sound of walking can be heard.; Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction) shares technical record from Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction): Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (6 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-6-stealthy-step-agility-equipment-restriction-264f4883]] - source section: Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction) shares source evidence from Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction): Rangers can walk silently and unnoticed. This is handled the same way as the thief skill's ability.; Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (2 shared statement(s), 1 shared atom(s))
 
 ## Source
 

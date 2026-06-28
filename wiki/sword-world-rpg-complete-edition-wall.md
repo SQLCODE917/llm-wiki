@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-wall@664a572fdf39ecced849b1bba8be7acf
+projection_coverage: topic-sword-world-rpg-complete-edition-wall@10fc9a8cf0023c363b1ec90ddd769a7a
 ---
 
 # Wall
@@ -175,12 +175,12 @@ What [[sword-world-rpg-complete-edition]] covers about wall:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-spirit-wall-dryad]] - narrower topic (11 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (8 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-fire]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-please]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-spirit-wall-dryad]] - narrower topic: Spirit Wall: Dryad shares source evidence from 2nd Level Spirit Magic List [ Will-O-Wisp ] (Will-O-Wisp/Light Spirit): Counters (Negates): Shade , Spirit Wall: Shade Countered (Negated) By: Shade , Spirit Wall: Shade; Spirit Wall: Dryad shares technical record from [ Spirit Wall ]: There are also walls that you cannot pass through, walls that deal damage even if you force your way through, etc. (11 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms: Spirit shares source evidence from 2nd Level Spirit Magic List [ Will-O-Wisp ] (Will-O-Wisp/Light Spirit): Counters (Negates): Shade , Spirit Wall: Shade Countered (Negated) By: Shade , Spirit Wall: Shade; Spirit shares technical record from Spirit Wall: Wisp: Expansion=Final score, duration, distance, target volume, damage certainty Resist=Reduced effect (8 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-fire]] - shared statements: Fire shares source evidence from Spirit Wall: Salamander: Create a wall of blazing fire by borrowing the power of the fire spirit. When you chant this spell, tongues of fire rush everywhere, swell up as if they're going to ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements: Adventure shares source evidence from Example 2:: Since Ducard II has an adventurer level of 2 and a +2 mental power bonus, the baseline score of his mental power resistance roll (mental power resistance power) is 4 ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements: Character shares source evidence from Example:: If a character attacks with a weapon and deals 22 or greater points of damage in one blow, this wooden wall will be destroyed. If the damage is 7 points or less , th ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-please]] - shared statements: Please shares source evidence from 18.3.3 Handling Spirit Walls: When using these rules for destroying structures to destroy the spirit magic Spirit Wall, please do so as follows. (1 shared statement(s))
 
 ## Source
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rules-for-sleeping-monsters-45a6bbad@9f23a3214f9274a453d47ed82067db69
+projection_coverage: section-sword-world-rpg-complete-edition-section-rules-for-sleeping-monsters-45a6bbad@854ad0ec11d73eb41cc64966e0a96e05
 ---
 
 # Rules for Sleeping Monsters
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-10-5-9dea10a2]] - broader source section
+- [[sword-world-rpg-complete-edition-section-10-5-9dea10a2]] - broader source section: 10.5
 
 ## Statements
 

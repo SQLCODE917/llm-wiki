@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-armor-eb07a8ae@57a7a850aefbab2c7c895a0293d0b24e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-armor-eb07a8ae@611f6f1c92db8d0f9e4c5ad6e3846df3
 ---
 
 # Chapter 14: / Armor
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
-- [[sword-world-rpg-complete-edition-section-armor-bb9ffd91]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
+- [[sword-world-rpg-complete-edition-section-armor-bb9ffd91]] - same source heading: another source section with the same heading, Armor
 
 ## Technical atoms
 

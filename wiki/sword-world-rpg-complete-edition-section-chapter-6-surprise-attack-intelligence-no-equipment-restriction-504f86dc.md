@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-surprise-attack-intelligence-no-equipment-restriction-504f86dc@10e35793206a0fbc81626b35ce5ef3d1
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-surprise-attack-intelligence-no-equipment-restriction-504f86dc@bd32b5a92ee51f2d1286ac972039e9dc
 ---
 
 # Chapter 6: / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section: Chapter 6:
 
 ## Statements
 

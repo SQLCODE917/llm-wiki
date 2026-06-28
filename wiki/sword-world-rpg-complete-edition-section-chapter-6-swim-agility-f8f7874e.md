@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-swim-agility-f8f7874e@7d0babd60d09e824ffc4e708a7454ca4
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-swim-agility-f8f7874e@8df7424841e813c4a36c6cc6fa36c139
 ---
 
 # Chapter 6: / [ ② Swim [Agility] ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section: Chapter 6:
 
 ## Statements
 

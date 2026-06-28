@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-purification-undine-water-spirit-3d0a0695@85303cc2b3b575fc9dfd04d4d5c22169
+projection_coverage: section-sword-world-rpg-complete-edition-section-purification-undine-water-spirit-3d0a0695@fef47e4ddf99b28899559ef099502e9f
 ---
 
 # [ Purification ] (Undine/Water Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

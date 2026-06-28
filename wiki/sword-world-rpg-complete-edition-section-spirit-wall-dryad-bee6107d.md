@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-dryad-bee6107d@135150a31425dcc9b21184c4e61ab903
+projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-dryad-bee6107d@d71e168cf0a0df4dc6a42d72cf85113c
 ---
 
 # Spirit Wall: Dryad
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
-- [[sword-world-rpg-complete-edition-spirit-wall-dryad]] - topic hub
-- [[sword-world-rpg-complete-edition-section-spirit-wall-dryad-74f43937]] - same source heading
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
+- [[sword-world-rpg-complete-edition-spirit-wall-dryad]] - topic hub: opens the topic page for Spirit Wall Dryad
+- [[sword-world-rpg-complete-edition-section-spirit-wall-dryad-74f43937]] - same source heading: another source section with the same heading, [ Spirit Wall: Dryad ]
 
 ## Statements
 

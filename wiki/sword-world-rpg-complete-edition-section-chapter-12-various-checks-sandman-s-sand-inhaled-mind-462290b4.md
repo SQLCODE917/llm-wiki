@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-sandman-s-sand-inhaled-mind-462290b4@f2beadae3435d05eb88891aed4b3022f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-sandman-s-sand-inhaled-mind-462290b4@e0b7a04af1e9142537835b669f72be4c
 ---
 
 # Chapter 12: Various Checks / [Sandman's Sand (Inhaled/Mind)]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

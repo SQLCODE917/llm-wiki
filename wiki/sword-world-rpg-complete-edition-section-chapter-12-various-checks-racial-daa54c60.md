@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-racial-daa54c60@d19c7f7a359958b036145761c9b2a2a0
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-racial-daa54c60@bc7eaf5a5ee640432df3d3e76f9cdad6
 ---
 
 # Chapter 12: Various Checks / 《 Racial 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

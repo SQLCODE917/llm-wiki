@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-attacks-from-characters-against-monsters-cbb64114@1d5d703484da0300c1c90e50e4afa0bd
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-attacks-from-characters-against-monsters-cbb64114@e5db1a95dfd8a7da01d2c91e9b0d1e5a
 ---
 
 # Chapter 16: / Attacks From Characters Against Monsters
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-64c38056]] - broader source section
-- [[sword-world-rpg-complete-edition-section-attacks-from-characters-against-monsters-f218ca0f]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-16-64c38056]] - broader source section: Chapter 16:
+- [[sword-world-rpg-complete-edition-section-attacks-from-characters-against-monsters-f218ca0f]] - same source heading: another source section with the same heading, Attacks From Characters Against Monsters
 
 ## Statements
 

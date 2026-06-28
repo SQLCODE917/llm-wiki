@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-table-area-and-size-expansion@7d2cb9bd7db8e0af674c92b6103e9f59
+projection_coverage: topic-sword-world-rpg-complete-edition-table-area-and-size-expansion@f25b976c69f01e84bd52e15699d9220a
 ---
 
 # Table 5-1: Area and Size Expansion
@@ -179,33 +179,33 @@ Table 10-1: Attack Power and Evasion Speed Modifiers
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-area]] - broader topic (5 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - broader topic (2 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (3 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (3 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-success]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-fire]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-game]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-move]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared statements (4 shared statement(s))
-- [[sword-world-rpg-complete-edition-base]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-effect]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-final]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-final-damage]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-meter]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-caster]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-force]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-round]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-strike]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-table-5-1-area-and-size-expansion-20651f86]] - source section (2 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-table-5-1-area-and-size-expansion-7c997fcc]] - source section (2 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-area]] - broader topic: Area shares source evidence from [ Dispel Magic ]: Effect=Removes the effects of other spells cast on the target Type=Ritual Counters (Negates): All magic except curses and non-removable Expansion=Final score, distan ... [truncated]; Area shares technical table: Table 1-11: Equipment                                                 Table 5-1: Area and Size Expansion Name                       Price (in Gamels)       Expansion ... [truncated] (5 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - broader topic: Table shares source evidence from Table 5-1: Area and Size Expansion: Note: On the table, expansion rate is the multiplier for mental power consumed.; Table shares technical table: Table 1-11: Equipment                                                 Table 5-1: Area and Size Expansion Name                       Price (in Gamels)       Expansion ... [truncated] (2 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms: Power shares source evidence from [ Lightning ]: Base Mental Power Cost=15 Distance=Caster Area=A space 1 meter high and wide and 20 meters long Duration=Instant Effect=Emits strike power 20 lightning Type=Damage ( ... [truncated]; Power shares technical table: Table 10-1: Attack Power and Evasion Speed Modifiers Full movement (Evasion speed only)                                      -4 Can’t see opponent (in the dark, invi ... [truncated] (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms: Score shares source evidence from [ Dispel Magic ]: Effect=Removes the effects of other spells cast on the target Type=Ritual Counters (Negates): All magic except curses and non-removable Expansion=Final score, distan ... [truncated]; Score shares technical table: Table 9-1: Determining Target Scores or Difficulties Target Score   Difficulty                                    Standard 5          -2    If you have the skill, it ... [truncated] (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms: Target shares source evidence from [ Dispel Magic ]: Effect=Removes the effects of other spells cast on the target Type=Ritual Counters (Negates): All magic except curses and non-removable Expansion=Final score, distan ... [truncated]; Target shares technical table: Table 9-1: Determining Target Scores or Difficulties Target Score   Difficulty                                    Standard 5          -2    If you have the skill, it ... [truncated] (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared technical atoms: Success shares technical table: Table 9-1: Determining Target Scores or Difficulties Target Score   Difficulty                                    Standard 5          -2    If you have the skill, it ... [truncated] (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-evasion]] - shared technical atoms: Evasion shares technical table: Table 10-1: Attack Power and Evasion Speed Modifiers Full movement (Evasion speed only)                                      -4 Can’t see opponent (in the dark, invi ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-fire]] - shared technical atoms: Fire shares technical table: Table 9-1: Determining Target Scores or Difficulties Target Score   Difficulty                                    Standard 5          -2    If you have the skill, it ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-game]] - shared technical atoms: Game shares technical table: Table 1-11: Equipment                                                 Table 5-1: Area and Size Expansion Name                       Price (in Gamels)       Expansion ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-move]] - shared technical atoms: Move shares technical table: Table 10-1: Attack Power and Evasion Speed Modifiers Full movement (Evasion speed only)                                      -4 Can’t see opponent (in the dark, invi ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-movement]] - shared technical atoms: Movement shares technical table: Table 10-1: Attack Power and Evasion Speed Modifiers Full movement (Evasion speed only)                                      -4 Can’t see opponent (in the dark, invi ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms: Skill shares technical table: Table 9-1: Determining Target Scores or Difficulties Target Score   Difficulty                                    Standard 5          -2    If you have the skill, it ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements: Cast shares source evidence from Table 5-1: Area and Size Expansion: When you cast a spell by consuming that multiplied amount of mental power, multiply the number in area expansion length or volume expansion length by the number (rad ... [truncated] (4 shared statement(s))
+- [[sword-world-rpg-complete-edition-base]] - shared statements: Base shares source evidence from [ Lightning ]: Base Mental Power Cost=15 Distance=Caster Area=A space 1 meter high and wide and 20 meters long Duration=Instant Effect=Emits strike power 20 lightning Type=Damage ( ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared statements: Effect shares source evidence from [ Dispel Magic ]: Effect=Removes the effects of other spells cast on the target Type=Ritual Counters (Negates): All magic except curses and non-removable Expansion=Final score, distan ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-final]] - shared statements: Final shares source evidence from [ Dispel Magic ]: Effect=Removes the effects of other spells cast on the target Type=Ritual Counters (Negates): All magic except curses and non-removable Expansion=Final score, distan ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements: Resist shares source evidence from [ Dispel Magic ]: Effect=Removes the effects of other spells cast on the target Type=Ritual Counters (Negates): All magic except curses and non-removable Expansion=Final score, distan ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements: Spell shares source evidence from Table 5-1: Area and Size Expansion: When you cast a spell by consuming that multiplied amount of mental power, multiply the number in area expansion length or volume expansion length by the number (rad ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-final-damage]] - shared statements: 4.5.5 Final Damage shares source evidence from [ Lightning ]: Base Mental Power Cost=15 Distance=Caster Area=A space 1 meter high and wide and 20 meters long Duration=Instant Effect=Emits strike power 20 lightning Type=Damage ( ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-meter]] - shared statements: Meter shares source evidence from [ Lightning ]: Base Mental Power Cost=15 Distance=Caster Area=A space 1 meter high and wide and 20 meters long Duration=Instant Effect=Emits strike power 20 lightning Type=Damage ( ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-type]] - shared statements: Type shares source evidence from [ Dispel Magic ]: Effect=Removes the effects of other spells cast on the target Type=Ritual Counters (Negates): All magic except curses and non-removable Expansion=Final score, distan ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-caster]] - shared statements: Caster shares source evidence from [ Lightning ]: Base Mental Power Cost=15 Distance=Caster Area=A space 1 meter high and wide and 20 meters long Duration=Instant Effect=Emits strike power 20 lightning Type=Damage ( ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-force]] - shared statements: Force shares source evidence from [ Dispel Magic ]: Effect=Removes the effects of other spells cast on the target Type=Ritual Counters (Negates): All magic except curses and non-removable Expansion=Final score, distan ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-round]] - shared statements: Round shares source evidence from Chapter 11: Notes on Magic / [ Berserk ] (Spell Level=3): Base Mental Power Cost=15 Distance=Touch Area=One Duration=18 rounds Effect=Make the target go berserk Type=Mind Expansion=Final score, duration Resist=Negated effec ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-strike]] - shared statements: Strike shares source evidence from [ Lightning ]: Base Mental Power Cost=15 Distance=Caster Area=A space 1 meter high and wide and 20 meters long Duration=Instant Effect=Emits strike power 20 lightning Type=Damage ( ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-table-5-1-area-and-size-expansion-20651f86]] - source section: Table 5-1: Area and Size Expansion shares source evidence from Table 5-1: Area and Size Expansion: Note: On the table, expansion rate is the multiplier for mental power consumed.; Table 5-1: Area and Size Expansion shares technical table: Table 1-11: Equipment                                                 Table 5-1: Area and Size Expansion Name                       Price (in Gamels)       Expansion ... [truncated] (2 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-table-5-1-area-and-size-expansion-7c997fcc]] - source section: Table 5-1: Area and Size Expansion shares source evidence from Table 5-1: Area and Size Expansion: Note) On the table, expansion rate is the multiplier for mental power consumed.; Table 5-1: Area and Size Expansion shares technical table: Table 1-11: Equipment                                                 Table 5-1: Area and Size Expansion Name                       Price (in Gamels)       Expansion ... [truncated] (2 shared statement(s), 4 shared atom(s))
 
 ## Source
 

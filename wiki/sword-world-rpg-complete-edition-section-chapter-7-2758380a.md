@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-2758380a@71ab4a1611eaad64364c92fe9044bba3
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-2758380a@19bbdffabd2ca2654348ca593bff51a9
 ---
 
 # Chapter 7:
@@ -16,18 +16,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-971915e8]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-treatment-intelligence-d305a76c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-hunter-skill-a1dd2fb7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-pre-processing-dexterity-70939888]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-herbs-intelligence-not-retriable-2bd6cb72]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-large-ship-steering-intelligence-a42e0cdf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-seamanship-intelligence-92f6e3a5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-small-ship-steering-dexterity-9b38a40d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-swim-agility-equipment-restriction-abc9980b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-weather-prediction-intelligence-not-retriable-c9f9fa51]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-climb-agility-equipment-restriction-8a2b8c1b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-ropework-dexterity-bd7ac747]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-7-971915e8]] - broader source section: Chapter 7:
+- [[sword-world-rpg-complete-edition-section-chapter-7-treatment-intelligence-d305a76c]] - narrower source section: Chapter 7: / [ ② Treatment [Intelligence]]
+- [[sword-world-rpg-complete-edition-section-chapter-7-hunter-skill-a1dd2fb7]] - narrower source section: Chapter 7: / Hunter Skill
+- [[sword-world-rpg-complete-edition-section-chapter-7-pre-processing-dexterity-70939888]] - narrower source section: Chapter 7: / [ ⑨ Pre-processing [Dexterity]]
+- [[sword-world-rpg-complete-edition-section-chapter-7-herbs-intelligence-not-retriable-2bd6cb72]] - narrower source section: Chapter 7: / [ ③ Herbs [Intelligence] ] (Not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-7-large-ship-steering-intelligence-a42e0cdf]] - narrower source section: Chapter 7: / [ ① Large Ship Steering [Intelligence] ]
+- [[sword-world-rpg-complete-edition-section-chapter-7-seamanship-intelligence-92f6e3a5]] - narrower source section: Chapter 7: / [ ② Seamanship [Intelligence] ]
+- [[sword-world-rpg-complete-edition-section-chapter-7-small-ship-steering-dexterity-9b38a40d]] - narrower source section: Chapter 7: / [ ③ Small Ship Steering [Dexterity] ]
+- [[sword-world-rpg-complete-edition-section-chapter-7-swim-agility-equipment-restriction-abc9980b]] - narrower source section: Chapter 7: / [ ④ Swim [Agility] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-7-weather-prediction-intelligence-not-retriable-c9f9fa51]] - narrower source section: Chapter 7: / [ ⑤ Weather Prediction [Intelligence] ] (Not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-7-climb-agility-equipment-restriction-8a2b8c1b]] - narrower source section: Chapter 7: / [ ⑥ Climb [Agility] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-7-ropework-dexterity-bd7ac747]] - narrower source section: Chapter 7: / [ ⑦ Ropework [Dexterity] ]
 
 ## Statements by subsection
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-bat-fever-d876e11d@1f0329d296b957d1b617ca2d3880d798
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-bat-fever-d876e11d@022d8f693c51b410daf2634652b2a0c3
 ---
 
 # Chapter 12: Various Checks / [ Bat Fever ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

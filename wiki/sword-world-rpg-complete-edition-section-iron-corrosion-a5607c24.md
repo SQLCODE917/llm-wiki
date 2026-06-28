@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-iron-corrosion-a5607c24@bcbc52cfc4a2968ed0b50d6a9f09bd55
+projection_coverage: section-sword-world-rpg-complete-edition-section-iron-corrosion-a5607c24@ef197f76ba70dcf053a611117650a2c2
 ---
 
 # 《 Iron Corrosion 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section: 13.6
 
 ## Statements
 

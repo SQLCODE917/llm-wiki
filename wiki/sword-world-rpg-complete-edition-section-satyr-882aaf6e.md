@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-satyr-882aaf6e@d9cf1124f874c4742d6198e3100ca91a
+projection_coverage: section-sword-world-rpg-complete-edition-section-satyr-882aaf6e@755b33ef56b00ead34f4e9211217be79
 ---
 
 # [ Satyr ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section: 13.2.6
 
 ## Statements
 

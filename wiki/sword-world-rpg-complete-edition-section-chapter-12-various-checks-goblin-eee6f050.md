@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-goblin-eee6f050@195a531a7a70731e9a5c94c583ea305e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-goblin-eee6f050@fa4ef7a0d92a840793c6e89465a15d8d
 ---
 
 # Chapter 12: Various Checks / [ Goblin ]
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
-- [[sword-world-rpg-complete-edition-section-goblin-0889e0c1]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
+- [[sword-world-rpg-complete-edition-section-goblin-0889e0c1]] - same source heading: another source section with the same heading, [ Goblin ]
 
 ## Statements
 

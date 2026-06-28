@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-normal-man-d41b4f1d@dc0ffd70f8cc74093e6f63c1b584f2cb
+projection_coverage: section-sword-world-rpg-complete-edition-section-normal-man-d41b4f1d@5e7e255b72c2cc1eea55a535fd2f1f82
 ---
 
 # [ Normal Man ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section: 13.2.12
 
 ## Statements
 

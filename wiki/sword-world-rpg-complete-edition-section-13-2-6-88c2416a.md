@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-88c2416a@87424040780b765345b7d25833436e90
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-88c2416a@7b38bce171243c186a32d63f4cc7bd99
 ---
 
 # 13.2.6
@@ -16,40 +16,40 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-satyr-882aaf6e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ceiling-hanger-9f1ae3a0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-harpy-0ccce8ad]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-deela-bbf0d55a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-deela-king-121e8bbc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-furia-7e540eb4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-hippocampus-1a45cc08]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-medusa-1f43cb1f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-androscorpio-5f8899ed]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-centaur-c3ec7127]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-cockatrice-0e4d01bf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-scylla-monster-level-4-rarity-13-agility-12-movement-speed-12-12-water-number-one-frequency-rare-f7d9178c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chimera-5c35f7cf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-twintail-cat-f0cd966a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-telchines-monster-level-5-rarity-14-agility-12-movement-speed-10-10-water-number-one-frequency-v-36e12cff]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-hippogriff-0cbc3bfb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-pegasus-monster-level-5-rarity-10-agility-12-movement-speed-30-40-air-number-one-to-several-freq-31c807d3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-head-displacer-e2482512]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-lamia-f5ca7f50]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-lizardman-dfdafb32]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-slave-0d500d8f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-noble-163745fa]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-griffon-fae1fc25]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-manticore-9d320252]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-minotaur-d5178b18]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-unicorn-7e78f906]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-lynx-7e8683dd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sphinx-monster-level-7-rarity-12-agility-14-movement-speed-18-30-air-number-one-frequency-very-r-6cb9c4a7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-wyvern-5462a12b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-basilisk-ccab8c13]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-small-basilisk-7a47a312]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sea-dragon-2e4b5f0d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-wyrm-85d7c9d7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-buckbaird-2465ee2e]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-satyr-882aaf6e]] - narrower source section: [ Satyr ]
+- [[sword-world-rpg-complete-edition-section-ceiling-hanger-9f1ae3a0]] - narrower source section: [ Ceiling Hanger ]
+- [[sword-world-rpg-complete-edition-section-harpy-0ccce8ad]] - narrower source section: [ Harpy ]
+- [[sword-world-rpg-complete-edition-section-deela-bbf0d55a]] - narrower source section: Deela
+- [[sword-world-rpg-complete-edition-section-deela-king-121e8bbc]] - narrower source section: Deela King
+- [[sword-world-rpg-complete-edition-section-furia-7e540eb4]] - narrower source section: Furia
+- [[sword-world-rpg-complete-edition-section-hippocampus-1a45cc08]] - narrower source section: [ Hippocampus ]
+- [[sword-world-rpg-complete-edition-section-medusa-1f43cb1f]] - narrower source section: [ Medusa ]
+- [[sword-world-rpg-complete-edition-section-androscorpio-5f8899ed]] - narrower source section: [ Androscorpio ]
+- [[sword-world-rpg-complete-edition-section-centaur-c3ec7127]] - narrower source section: [ Centaur ]
+- [[sword-world-rpg-complete-edition-section-cockatrice-0e4d01bf]] - narrower source section: [ Cockatrice ]
+- [[sword-world-rpg-complete-edition-section-scylla-monster-level-4-rarity-13-agility-12-movement-speed-12-12-water-number-one-frequency-rare-f7d9178c]] - narrower source section: [ Scylla ] Monster Level=4 Rarity=13 Agility=12 Movement Speed=12/12 (water) Number=One Frequency=Rare Intellect=Human Reaction=Adversarial
+- [[sword-world-rpg-complete-edition-section-chimera-5c35f7cf]] - narrower source section: [ Chimera ]
+- [[sword-world-rpg-complete-edition-section-twintail-cat-f0cd966a]] - narrower source section: [ Twintail Cat ]
+- [[sword-world-rpg-complete-edition-section-telchines-monster-level-5-rarity-14-agility-12-movement-speed-10-10-water-number-one-frequency-v-36e12cff]] - narrower source section: [ Telchines ] Monster Level=5 Rarity=14 Agility=12 Movement Speed=10/10 (water) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Weapon:11 (4)/Tail:12 (5) Strike Points=12/11 Evasion Points=12 (5) Defense Points=8 Life Points/Resistance=16/13 (6) Mental Points/Resistance=20/14 (7) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) Water adaptation Habitat=Secluded coasts Languages=Merman, low ancient Perception=Five senses (illumination)
+- [[sword-world-rpg-complete-edition-section-hippogriff-0cbc3bfb]] - narrower source section: [ Hippogriff ]
+- [[sword-world-rpg-complete-edition-section-pegasus-monster-level-5-rarity-10-agility-12-movement-speed-30-40-air-number-one-to-several-freq-31c807d3]] - narrower source section: [ Pegasus ] Monster Level=5 Rarity=10 Agility=12 Movement Speed=30/40 (air) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Heel:11 (4) Strike Points=13 Evasion Points=12 (5) Defense Points=8 Life Points/Resistance=20/14 (7) Mental Points/Resistance=15/13 (6) Special Abilities=Not affected by poison and illness Habitat=Steep mountains, meadows Languages=None
+- [[sword-world-rpg-complete-edition-section-head-displacer-e2482512]] - narrower source section: [ Head Displacer ]
+- [[sword-world-rpg-complete-edition-section-lamia-f5ca7f50]] - narrower source section: [ Lamia ]
+- [[sword-world-rpg-complete-edition-section-lizardman-dfdafb32]] - narrower source section: [ Lizardman ]
+- [[sword-world-rpg-complete-edition-section-slave-0d500d8f]] - narrower source section: Slave
+- [[sword-world-rpg-complete-edition-section-noble-163745fa]] - narrower source section: Noble
+- [[sword-world-rpg-complete-edition-section-griffon-fae1fc25]] - narrower source section: [ Griffon ]
+- [[sword-world-rpg-complete-edition-section-manticore-9d320252]] - narrower source section: [ Manticore ]
+- [[sword-world-rpg-complete-edition-section-minotaur-d5178b18]] - narrower source section: [ Minotaur ]
+- [[sword-world-rpg-complete-edition-section-unicorn-7e78f906]] - narrower source section: [ Unicorn ]
+- [[sword-world-rpg-complete-edition-section-lynx-7e8683dd]] - narrower source section: [ Lynx ]
+- [[sword-world-rpg-complete-edition-section-sphinx-monster-level-7-rarity-12-agility-14-movement-speed-18-30-air-number-one-frequency-very-r-6cb9c4a7]] - narrower source section: [ Sphinx ] Monster Level=7 Rarity=12 Agility=14 Movement Speed=18/30 (air) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Claw:15 (8)/Claw:15 (8) Strike Points=16/16 Evasion Points=14 (7) Defense Points=11 Life Points/Resistance=24/17 (10) Mental Points/Resistance=20/16 (9) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) Tell riddles Not affected by poison and illness Sleepless Habitat=Ruins, underground labyrinths Languages=Regional, low ancient
+- [[sword-world-rpg-complete-edition-section-wyvern-5462a12b]] - narrower source section: [ Wyvern ]
+- [[sword-world-rpg-complete-edition-section-basilisk-ccab8c13]] - narrower source section: [ Basilisk ]
+- [[sword-world-rpg-complete-edition-section-small-basilisk-7a47a312]] - narrower source section: Small Basilisk
+- [[sword-world-rpg-complete-edition-section-sea-dragon-2e4b5f0d]] - narrower source section: [ Sea Dragon ]
+- [[sword-world-rpg-complete-edition-section-wyrm-85d7c9d7]] - narrower source section: [ Wyrm ]
+- [[sword-world-rpg-complete-edition-section-buckbaird-2465ee2e]] - narrower source section: [ Buckbaird ]
 
 ## Statements by subsection
 

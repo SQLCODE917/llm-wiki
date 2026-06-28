@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-divine-armor-spell-level-7-a7d1304e@05c2cf32ff063e09ab200c8a444fcfd8
+projection_coverage: section-sword-world-rpg-complete-edition-section-divine-armor-spell-level-7-a7d1304e@cee6581871ce3c7451f6711ad9e889ce
 ---
 
 # [ Divine Armor ] (Spell Level=7)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Statements
 

@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-climb-agility-equipment-restriction@9bfe9ac0414e8d7fdd5c9c2bf8ece35e
+projection_coverage: topic-sword-world-rpg-complete-edition-climb-agility-equipment-restriction@bdaa10a1789c7ea4c508dd919146c8ce
 ---
 
 # [ ⑩ Climb [Agility] ] (Equipment restriction)
@@ -113,25 +113,25 @@ Table 6-1: Climb by Skill
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-agility]] - broader topic (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-follow-agility-equipment-restriction]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-bonus]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-final-damage]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-game]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-level]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-remove-trap-dexterity-equipment-restriction-not-retriable]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-stealthy-step-agility-equipment-restriction]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-ability]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-please]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-6-climb-agility-equipment-restriction-0af34044]] - source section (3 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-7-climb-agility-equipment-restriction-8a2b8c1b]] - source section (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-agility]] - broader topic: Agility shares technical table: Table 6-1: Climb by Skill using adventurer level + agility bonus as With Rope             Without Rope the baseline score, make a success roll against target score 1 ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-follow-agility-equipment-restriction]] - shared statements and technical atoms: [ ⑬ Follow [Agility] ] (Equipment restriction) shares source evidence from Chapter 6: / [ ⑩ Climb [Agility] ] (Equipment restriction): Of particular note here is that An owner of the thief skill (as long as they follow equipment restrictions) succeeds when climbing using a rope unless they roll doub ... [truncated]; [ ⑬ Follow [Agility] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared technical atoms: Table shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms: Adventure shares technical table: Table 6-1: Climb by Skill using adventurer level + agility bonus as With Rope             Without Rope the baseline score, make a success roll against target score 1 ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared technical atoms: Adventurer shares technical table: Table 6-1: Climb by Skill using adventurer level + agility bonus as With Rope             Without Rope the baseline score, make a success roll against target score 1 ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-bonus]] - shared technical atoms: Bonus shares technical table: Table 6-1: Climb by Skill using adventurer level + agility bonus as With Rope             Without Rope the baseline score, make a success roll against target score 1 ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-final-damage]] - shared technical atoms: 4.5.5 Final Damage shares technical table: Table 6-1: Climb by Skill using adventurer level + agility bonus as With Rope             Without Rope the baseline score, make a success roll against target score 1 ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-game]] - shared technical atoms: Game shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared technical atoms: Level shares technical table: Table 6-1: Climb by Skill using adventurer level + agility bonus as With Rope             Without Rope the baseline score, make a success roll against target score 1 ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction]] - shared technical atoms: [ ⑤ Listen [Intelligence] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-remove-trap-dexterity-equipment-restriction-not-retriable]] - shared technical atoms: [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable]] - shared technical atoms: [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms: Skill shares technical table: Table 6-1: Climb by Skill using adventurer level + agility bonus as With Rope             Without Rope the baseline score, make a success roll against target score 1 ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-stealthy-step-agility-equipment-restriction]] - shared technical atoms: [ ⑥ Stealthy Step [Agility] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - shared technical atoms: [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability]] - shared statements: Ability shares source evidence from Chapter 6: / [ ⑩ Climb [Agility] ] (Equipment restriction): This ability is used to climb walls and cliffs. Detailed rules regarding climbing and falling can be found under ④ Climb (see p. 121) in 6.6: Common Adventurer Abili ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-please]] - shared statements: Please shares source evidence from Chapter 6: / [ ⑩ Climb [Agility] ] (Equipment restriction): This ability is used to climb walls and cliffs. Detailed rules regarding climbing and falling can be found under ④ Climb (see p. 121) in 6.6: Common Adventurer Abili ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-6-climb-agility-equipment-restriction-0af34044]] - source section: Chapter 6: / [ ⑩ Climb [Agility] ] (Equipment restriction) shares source evidence from Chapter 6: / [ ⑩ Climb [Agility] ] (Equipment restriction): This ability is used to climb walls and cliffs. Detailed rules regarding climbing and falling can be found under ④ Climb (see p. 121) in 6.6: Common Adventurer Abili ... [truncated]; Chapter 6: / [ ⑩ Climb [Agility] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (3 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-7-climb-agility-equipment-restriction-8a2b8c1b]] - source section: Chapter 7: / [ ⑥ Climb [Agility] ] (Equipment restriction) shares source evidence from Chapter 7: / [ ⑥ Climb [Agility] ] (Equipment restriction): Sailors have the ability to climb in order to perform actions such as ascending masts or stretched nets. This is handled in the same way as that of the thief skill.; Chapter 7: / [ ⑥ Climb [Agility] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (2 shared statement(s), 2 shared atom(s))
 
 ## Source
 

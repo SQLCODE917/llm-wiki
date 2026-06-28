@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f@cb49ac46f797081d9ea7caf12b95a8e0
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f@4c8ced5b66d4460f35661b576389a760
 ---
 
 # 13.2.3
@@ -16,16 +16,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-youma-4a37a8db]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-gremlin-monster-level-2-rarity-9-agility-17-movement-speed-6-8-air-number-one-to-several-frequen-b6fcb8f8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-hobgoblin-614483f5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-goblin-0889e0c1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-goblin-shaman-89171a6a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-goblin-lord-27ee8580]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-marshman-63179469]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-dark-elf-4bf82671]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-dark-elf-leader-92928d7a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-will-o-wisp-f883eec4]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-youma-4a37a8db]] - narrower source section: Youma
+- [[sword-world-rpg-complete-edition-section-gremlin-monster-level-2-rarity-9-agility-17-movement-speed-6-8-air-number-one-to-several-frequen-b6fcb8f8]] - narrower source section: [ Gremlin ] Monster Level=2 Rarity=9 Agility=17 Movement Speed=6/8 (air) Number=One to several Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Fangs: 9 (2) Strike Points=3 Evasion Points=11 (4) Defense Points=4 Life Points/Resistance=8/9 (2) Mental Points/Resistance=14/10 (3) Special Abilities=2nd level spirit magic (Magic Intensity/Magic Power=11/4) Habitat=Mountains, highlands Languages=Impish, silent spirit Perception=Five senses (infravision)
+- [[sword-world-rpg-complete-edition-section-hobgoblin-614483f5]] - narrower source section: [ Hobgoblin ]
+- [[sword-world-rpg-complete-edition-section-goblin-0889e0c1]] - narrower source section: [ Goblin ]
+- [[sword-world-rpg-complete-edition-section-goblin-shaman-89171a6a]] - narrower source section: Goblin Shaman
+- [[sword-world-rpg-complete-edition-section-goblin-lord-27ee8580]] - narrower source section: Goblin Lord
+- [[sword-world-rpg-complete-edition-section-marshman-63179469]] - narrower source section: [ Marshman ]
+- [[sword-world-rpg-complete-edition-section-dark-elf-4bf82671]] - narrower source section: [ Dark Elf ]
+- [[sword-world-rpg-complete-edition-section-dark-elf-leader-92928d7a]] - narrower source section: Dark Elf Leader
+- [[sword-world-rpg-complete-edition-section-will-o-wisp-f883eec4]] - narrower source section: [ Will-O-Wisp ]
 
 ## Statements by subsection
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1st-level-spirit-magic-list-wind-voice-6edd1a27@d8749bd5027d75629f451c9c34ee7beb
+projection_coverage: section-sword-world-rpg-complete-edition-section-1st-level-spirit-magic-list-wind-voice-6edd1a27@b548eca70fe47e6f69d27546a03f0049
 ---
 
 # 1st Level Spirit Magic List [ Wind Voice ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

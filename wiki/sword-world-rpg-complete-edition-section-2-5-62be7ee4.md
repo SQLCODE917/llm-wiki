@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-62be7ee4@86e23328cda9642d42340cbcae33ef1f
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-62be7ee4@f93705c07041c717fa140957bcf62acf
 ---
 
 # 2.5
@@ -16,11 +16,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-difficulty-checks-c51b6a4d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-2-5-1-90196313]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-2-5-2-how-to-make-a-difficulty-check-e8794c81]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-2-5-3-analogy-of-success-and-failure-03657e91]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-caution-fa513feb]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-difficulty-checks-c51b6a4d]] - narrower source section: Difficulty Checks
+- [[sword-world-rpg-complete-edition-section-2-5-1-90196313]] - narrower source section: 2.5.1
+- [[sword-world-rpg-complete-edition-section-2-5-2-how-to-make-a-difficulty-check-e8794c81]] - narrower source section: 2.5.2 How to Make a Difficulty Check
+- [[sword-world-rpg-complete-edition-section-2-5-3-analogy-of-success-and-failure-03657e91]] - narrower source section: 2.5.3 Analogy of Success and Failure
+- [[sword-world-rpg-complete-edition-section-caution-fa513feb]] - narrower source section: Caution
 
 ## Statements
 

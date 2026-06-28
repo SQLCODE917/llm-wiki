@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-runes-6f095bd5@25b06f84cb674ea49c1f15cc311c00fa
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-runes-6f095bd5@cbdda5a8c7cfe4a2a8f88090da071476
 ---
 
 # Chapter 12: Various Checks / 《 Runes 》
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
-- [[sword-world-rpg-complete-edition-section-common-runes-ceb61c9f]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
+- [[sword-world-rpg-complete-edition-section-common-runes-ceb61c9f]] - same source heading: another source section with the same heading, Common Runes
 
 ## Statements
 

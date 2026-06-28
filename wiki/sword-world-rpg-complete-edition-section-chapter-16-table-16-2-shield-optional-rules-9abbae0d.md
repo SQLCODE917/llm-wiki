@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-table-16-2-shield-optional-rules-9abbae0d@a4b917af5aca5561fea78f789212ec87
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-table-16-2-shield-optional-rules-9abbae0d@151176000a83f9cd3d2e718a967c1104
 ---
 
 # Chapter 16: / Table 16-2 Shield Optional Rules
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-93b0e71b]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-93b0e71b]] - broader source section: Chapter 16:
 
 ## Technical atoms
 

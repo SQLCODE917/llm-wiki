@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ancient-magic-list-01b20cbb@f170980b7d681335ac9821cca95f7bf5
+projection_coverage: section-sword-world-rpg-complete-edition-section-ancient-magic-list-01b20cbb@d06a7fa7eb862a9502a257e8d2269e66
 ---
 
 # Ancient Magic List
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

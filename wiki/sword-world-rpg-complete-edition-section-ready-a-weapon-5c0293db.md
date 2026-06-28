@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ready-a-weapon-5c0293db@e5127132eccef56af170faac61c6930b
+projection_coverage: section-sword-world-rpg-complete-edition-section-ready-a-weapon-5c0293db@ee7663a241a549db8a2d080122edcb9c
 ---
 
 # Ready a Weapon
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-3-4-3-72b649fd]] - broader source section
+- [[sword-world-rpg-complete-edition-section-3-4-3-72b649fd]] - broader source section: 3.4.3
 
 ## Statements
 

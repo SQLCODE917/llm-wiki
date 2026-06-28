@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-plant-and-animal-check-intelligence-no-equipment-restriction-not-retriable-3d5c3fe8@47d53c618d0d6b7298fe7981576dab18
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-plant-and-animal-check-intelligence-no-equipment-restriction-not-retriable-3d5c3fe8@280cfc57846b22ae5b5a6703217c77b4
 ---
 
 # Chapter 6: / [ ⑪ Plant and Animal Check [Intelligence] ] (No equipment restriction, not retriable)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section: Chapter 6:
 
 ## Technical atoms
 

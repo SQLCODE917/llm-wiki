@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-3-c1607db4@80f1c7474313619c9b423bb9d73bf791
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-3-c1607db4@63d46104cdefbc748870cfbe02650247
 ---
 
 # 3.3
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-action-canceling-734f83e4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-change-attack-targets-9e223429]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-action-canceling-734f83e4]] - narrower source section: Action Canceling
+- [[sword-world-rpg-complete-edition-section-change-attack-targets-9e223429]] - narrower source section: Change Attack Targets
 
 ## Statements
 

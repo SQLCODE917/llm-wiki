@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-gems-and-precious-metals-f43c417e@d3e930ec80f0b45c8030aa6c84890d8d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-gems-and-precious-metals-f43c417e@561b715731f2fcef02916fb7b4459c21
 ---
 
 # Chapter 14: / Gems and Precious Metals
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-edb8ea7e]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-edb8ea7e]] - broader source section: Chapter 14:
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-communicate-reptile-a8f623a2@72451e22f127bc36e1b7d2a004703c0f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-communicate-reptile-a8f623a2@f4afad074a9ddcd3e5d46f0f80982d25
 ---
 
 # Chapter 11: Notes on Magic / [ Communicate Reptile ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

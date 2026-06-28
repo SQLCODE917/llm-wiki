@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-mask-of-scale-b4b4bf2e@fd5b5356a5b7cb2a97e2d3594858fb45
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-mask-of-scale-b4b4bf2e@edef3f4ec678254dd7f08b93dfbe39d6
 ---
 
 # Chapter 14: / [ Mask of Scale
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Technical atoms
 

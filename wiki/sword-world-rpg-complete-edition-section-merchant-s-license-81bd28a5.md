@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-merchant-s-license-81bd28a5@ac1226e435a0e55e4d704ea2d9b3fe8f
+projection_coverage: section-sword-world-rpg-complete-edition-section-merchant-s-license-81bd28a5@63e59503302c18140f5ce8ea348120e7
 ---
 
 # Merchant's License
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

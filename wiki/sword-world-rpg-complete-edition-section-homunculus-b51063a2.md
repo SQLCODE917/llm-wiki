@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-homunculus-b51063a2@a076dd8f9be06223cddfca84c3c85549
+projection_coverage: section-sword-world-rpg-complete-edition-section-homunculus-b51063a2@981c65cf9998ae950aae7928015f3a52
 ---
 
 # Homunculus
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-homunculus-3722e3a7]] - same source heading
+- [[sword-world-rpg-complete-edition-section-homunculus-3722e3a7]] - same source heading: another source section with the same heading, [ Homunculus ]
 
 ## Statements
 

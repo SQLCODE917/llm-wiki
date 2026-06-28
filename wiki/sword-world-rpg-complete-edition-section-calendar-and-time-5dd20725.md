@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-calendar-and-time-5dd20725@b32917e85b74bb1a5ca16333f6eb1a6e
+projection_coverage: section-sword-world-rpg-complete-edition-section-calendar-and-time-5dd20725@007cfcad33d0945f6e4988484532a10f
 ---
 
 # Calendar and Time
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

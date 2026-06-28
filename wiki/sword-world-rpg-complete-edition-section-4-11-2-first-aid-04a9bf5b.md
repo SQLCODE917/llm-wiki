@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-11-2-first-aid-04a9bf5b@428646c83db2a80f60432ccf5a850a66
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-11-2-first-aid-04a9bf5b@f500be332f9a15cb0d15f7b166f66e06
 ---
 
 # 4.11.2 First-Aid
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-first-aid-c29f2da5]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-7-first-aid-c29f2da5]] - same source heading: another source section with the same heading, Chapter 7: / [ ① First-Aid [-] ]
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-potion-of-power-3b644dcc@d05b2ca7d114a8b7ab404d54aa33295e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-potion-of-power-3b644dcc@c84d376b2eb91ecc9a4f449e9aba9628
 ---
 
 # Chapter 14: / [ Potion of Power ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

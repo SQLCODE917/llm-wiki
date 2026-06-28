@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-weapon-modifiers-28bfa87b@2b938f9fa9323274bc72d3ed0731c4e9
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-weapon-modifiers-28bfa87b@90eee13d2136ce444531b68d67e0d009
 ---
 
 # Chapter 16: / Weapon Modifiers
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-9400c78a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-9400c78a]] - broader source section: Chapter 16:
 
 ## Statements
 

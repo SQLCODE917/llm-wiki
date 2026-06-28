@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-astrology-intelligence-not-retriable-5bff6acb@149c1a825d37c2214f12b4478a55c80b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-astrology-intelligence-not-retriable-5bff6acb@3f93b356cac1a2c7cfec323bc1a07d83
 ---
 
 # Chapter 6: / [ ③ Astrology [Intelligence] ] (Not retriable)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-80e28a91]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-80e28a91]] - broader source section: Chapter 6:
 
 ## Statements
 

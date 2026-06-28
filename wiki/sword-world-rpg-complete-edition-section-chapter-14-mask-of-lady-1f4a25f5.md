@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-mask-of-lady-1f4a25f5@ecdfc107b77d75d0dbcdf37069d3d35c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-mask-of-lady-1f4a25f5@e222463eafa23f408c53a8dcf9274156
 ---
 
 # Chapter 14: / [ Mask of Lady ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

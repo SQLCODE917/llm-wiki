@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-necklace-of-faith-ccc2a849@02d78eec8316a30c56671a012b458e2a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-necklace-of-faith-ccc2a849@94bc83c9c75cea3437b3f857066d1060
 ---
 
 # Chapter 14: / [ Necklace of Faith ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

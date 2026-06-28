@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-elf-73a5bcb6@fc235a422e944b93d97d6ff90b373b88
+projection_coverage: section-sword-world-rpg-complete-edition-section-elf-73a5bcb6@dbfb812d714fe1b76cef66377e42dfa8
 ---
 
 # 【 Elf 】
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-2-f1403546]] - broader source section
-- [[sword-world-rpg-complete-edition-section-half-elf-453be4ba]] - same source heading
-- [[sword-world-rpg-complete-edition-section-elf-d5aeb934]] - same source heading
-- [[sword-world-rpg-complete-edition-section-half-elf-f5f88ac0]] - same source heading
+- [[sword-world-rpg-complete-edition-section-1-2-f1403546]] - broader source section: 1.2
+- [[sword-world-rpg-complete-edition-section-half-elf-453be4ba]] - same source heading: another source section with the same heading, 【 Half-Elf 】
+- [[sword-world-rpg-complete-edition-section-elf-d5aeb934]] - same source heading: another source section with the same heading, 【 Elf 】
+- [[sword-world-rpg-complete-edition-section-half-elf-f5f88ac0]] - same source heading: another source section with the same heading, 【 Half-Elf 】
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-maligdorai-7fb269a9@e5bff04f7125fd5931090209cadb224b
+projection_coverage: section-sword-world-rpg-complete-edition-section-maligdorai-7fb269a9@8a48a050f0f5383c8b99006792222536
 ---
 
 # Maligdorai
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-11-cbbcb4fd]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-11-cbbcb4fd]] - broader source section: 13.2.11
 
 ## Statements
 

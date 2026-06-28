@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-12-488a05fa@83d3eef686e32e82b2421909a81d69a0
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-12-488a05fa@3f694f79e4304fa0512f1dcf21dd3999
 ---
 
 # 13.2.12
@@ -16,21 +16,21 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-humans-b188b9b3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-normal-man-d41b4f1d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-bandit-98346a1e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-henchman-3b0bebcd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-leader-862cd99a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chief-e571efc2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-soldier-b32a3839]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-normal-soldier-2638e2a4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-senior-soldier-4b61576b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-knight-bb1a980b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-knight-leader-43e6f27f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-dark-priest-warrior-7d4c173a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-beginner-priest-37ed5ef9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-priest-833ff7c5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-high-priest-9df9a242]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-humans-b188b9b3]] - narrower source section: Humans
+- [[sword-world-rpg-complete-edition-section-normal-man-d41b4f1d]] - narrower source section: [ Normal Man ]
+- [[sword-world-rpg-complete-edition-section-bandit-98346a1e]] - narrower source section: [ Bandit ]
+- [[sword-world-rpg-complete-edition-section-henchman-3b0bebcd]] - narrower source section: Henchman
+- [[sword-world-rpg-complete-edition-section-leader-862cd99a]] - narrower source section: Leader
+- [[sword-world-rpg-complete-edition-section-chief-e571efc2]] - narrower source section: Chief
+- [[sword-world-rpg-complete-edition-section-soldier-b32a3839]] - narrower source section: [ Soldier ]
+- [[sword-world-rpg-complete-edition-section-normal-soldier-2638e2a4]] - narrower source section: Normal Soldier
+- [[sword-world-rpg-complete-edition-section-senior-soldier-4b61576b]] - narrower source section: Senior Soldier
+- [[sword-world-rpg-complete-edition-section-knight-bb1a980b]] - narrower source section: Knight
+- [[sword-world-rpg-complete-edition-section-knight-leader-43e6f27f]] - narrower source section: Knight Leader
+- [[sword-world-rpg-complete-edition-section-dark-priest-warrior-7d4c173a]] - narrower source section: [ Dark Priest Warrior ]
+- [[sword-world-rpg-complete-edition-section-beginner-priest-37ed5ef9]] - narrower source section: Beginner Priest
+- [[sword-world-rpg-complete-edition-section-priest-833ff7c5]] - narrower source section: Priest
+- [[sword-world-rpg-complete-edition-section-high-priest-9df9a242]] - narrower source section: High Priest
 
 ## Statements by subsection
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-defense-power-67b1a526@eece41374e4151debaf53e071ad63c57
+projection_coverage: section-sword-world-rpg-complete-edition-section-defense-power-67b1a526@456a55b0e54938cc6fe8be9d1a897823
 ---
 
 # 【 Defense Power 】
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section
+- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section: 3.4.4
 
 ## Statements
 

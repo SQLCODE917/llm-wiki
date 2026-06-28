@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-weather-prediction-intelligence-no-equipment-restriction-not-retriable-ac45ad8d@36d265952d4d342431a6848b86378874
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-weather-prediction-intelligence-no-equipment-restriction-not-retriable-ac45ad8d@22b92c052336f116f5edba4b6763c88c
 ---
 
 # Chapter 6: / [ ⑩ Weather Prediction [Intelligence] ] (No equipment restriction, not retriable)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section: Chapter 6:
 
 ## Statements
 

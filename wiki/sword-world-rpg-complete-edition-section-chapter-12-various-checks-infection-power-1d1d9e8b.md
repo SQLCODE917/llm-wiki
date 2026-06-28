@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-infection-power-1d1d9e8b@d7d40884544619e8e4909a4313ae6cd4
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-infection-power-1d1d9e8b@2c9b010b4bfe5ddef09ca117e74c5ffd
 ---
 
 # Chapter 12: Various Checks / 《 Infection Power 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

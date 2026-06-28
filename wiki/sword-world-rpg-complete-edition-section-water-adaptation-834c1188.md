@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-water-adaptation-834c1188@69fa5330550de7797a79262d50203277
+projection_coverage: section-sword-world-rpg-complete-edition-section-water-adaptation-834c1188@807c1c257722f8370965e5960a1997c1
 ---
 
 # 《 Water Adaptation 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - broader source section: 13.6.4
 
 ## Statements
 

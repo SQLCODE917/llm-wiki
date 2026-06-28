@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sheath-a-weapon-etc-6349573d@a32c359c07056ed4a4ede2c349610ca5
+projection_coverage: section-sword-world-rpg-complete-edition-section-sheath-a-weapon-etc-6349573d@399ca4bbfda3bf7dca99d5b30c29ba36
 ---
 
 # Sheath a Weapon, Etc.
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-3-4-3-72b649fd]] - broader source section
-- [[sword-world-rpg-complete-edition-sheath-weapon-etc]] - topic hub
-- [[sword-world-rpg-complete-edition-section-sheath-a-weapon-etc-85059d96]] - same source heading
+- [[sword-world-rpg-complete-edition-section-3-4-3-72b649fd]] - broader source section: 3.4.3
+- [[sword-world-rpg-complete-edition-sheath-weapon-etc]] - topic hub: opens the topic page for Sheath Weapon Etc
+- [[sword-world-rpg-complete-edition-section-sheath-a-weapon-etc-85059d96]] - same source heading: another source section with the same heading, Sheath a Weapon, Etc.
 
 ## Technical atoms
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-maze-woods-ent-greater-plant-spirit-31f8b633@95a2fb88a4cf0ac1014a8b0f967f0f76
+projection_coverage: section-sword-world-rpg-complete-edition-section-maze-woods-ent-greater-plant-spirit-31f8b633@346445b80758b3a9a1463a2b05142c30
 ---
 
 # [ Maze Woods ] (Ent/Greater Plant Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

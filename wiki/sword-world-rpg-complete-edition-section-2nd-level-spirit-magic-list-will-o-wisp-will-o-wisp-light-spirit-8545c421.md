@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2nd-level-spirit-magic-list-will-o-wisp-will-o-wisp-light-spirit-8545c421@49d89a640e11d93b806736d585d26a22
+projection_coverage: section-sword-world-rpg-complete-edition-section-2nd-level-spirit-magic-list-will-o-wisp-will-o-wisp-light-spirit-8545c421@ce57883d0ec766a700545f93a025d86e
 ---
 
 # 2nd Level Spirit Magic List [ Will-O-Wisp ] (Will-O-Wisp/Light Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

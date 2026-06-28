@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-roar-magic-ecba70c8@2a5a35e982f1fbd832147dbfb1dd428b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-roar-magic-ecba70c8@77e882fa32b61920fb3c1aaed7c12e67
 ---
 
 # Chapter 11: Notes on Magic / Dragon Roar Magic
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-2-dragon-roar-magic-3d33fb50]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-2-dragon-roar-magic-3d33fb50]] - same source heading: another source section with the same heading, Chapter 11: Notes on Magic / 11.3.2 Dragon Roar Magic
 
 ## Statements
 

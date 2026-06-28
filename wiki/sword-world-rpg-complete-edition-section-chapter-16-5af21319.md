@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-5af21319@245e2e0782c5d3188039d1a4a8866915
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-5af21319@2111b9c84044e09e329dd287b0d6ab00
 ---
 
 # Chapter 16:
@@ -16,11 +16,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-64c38056]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-9400c78a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-93b0e71b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-1d2de216]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-cf2bd1e0]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-64c38056]] - narrower source section: Chapter 16:
+- [[sword-world-rpg-complete-edition-section-chapter-16-9400c78a]] - narrower source section: Chapter 16:
+- [[sword-world-rpg-complete-edition-section-chapter-16-93b0e71b]] - narrower source section: Chapter 16:
+- [[sword-world-rpg-complete-edition-section-chapter-16-1d2de216]] - narrower source section: Chapter 16:
+- [[sword-world-rpg-complete-edition-section-chapter-16-cf2bd1e0]] - narrower source section: Chapter 16:
 
 ## Statements by subsection
 

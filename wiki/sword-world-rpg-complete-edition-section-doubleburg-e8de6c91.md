@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-doubleburg-e8de6c91@448189f7ddfe69162f54769563ef854b
+projection_coverage: section-sword-world-rpg-complete-edition-section-doubleburg-e8de6c91@fd63df0221b5c26231d12de01378467f
 ---
 
 # Doubleburg
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-11-cbbcb4fd]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-11-cbbcb4fd]] - broader source section: 13.2.11
 
 ## Statements
 

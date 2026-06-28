@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-brick-1b276cad@cdf4cfabbe6fa07d9f0a26cd5272d77b
+projection_coverage: section-sword-world-rpg-complete-edition-section-brick-1b276cad@bee63f0c197041df6c77a033653503d8
 ---
 
 # [ Brick ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Technical atoms
 

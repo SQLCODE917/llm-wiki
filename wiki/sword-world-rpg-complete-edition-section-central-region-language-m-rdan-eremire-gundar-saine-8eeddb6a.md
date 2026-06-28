@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-central-region-language-m-rdan-eremire-gundar-saine-8eeddb6a@5c3d0c290d6fdc13a2e09dc3effbf350
+projection_coverage: section-sword-world-rpg-complete-edition-section-central-region-language-m-rdan-eremire-gundar-saine-8eeddb6a@2a30e98382e0f7260e4c3547bd8ca7ab
 ---
 
 # Central Region (Language = Mārdan/Eremire Gundar/Saine)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-heat-metal-spell-level-5-421ded54@54f9b94f0eff701f9a90251b59103fed
+projection_coverage: section-sword-world-rpg-complete-edition-section-heat-metal-spell-level-5-421ded54@663c4b752ce322f44cf8ff21f459e18f
 ---
 
 # [ Heat Metal ] (Spell Level=5)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Statements
 

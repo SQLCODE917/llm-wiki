@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-bulkless-bag-9176cc9f@9fcab0550aebf9ab4a54e051d2871b77
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-bulkless-bag-9176cc9f@e2aba429c6499c244e47bf9125a60f1d
 ---
 
 # Chapter 14: / [ Bulkless Bag ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

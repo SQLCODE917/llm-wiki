@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-6-5-final-damage-e3713cd6@a881be69f8500ec48ce8b042b3ba7df8
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-6-5-final-damage-e3713cd6@7dd67fe4f9caa246cdee283462f554a9
 ---
 
 # 4.6.5 Final Damage
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-final-damage]] - topic hub
-- [[sword-world-rpg-complete-edition-section-4-5-5-final-damage-b58b3174]] - same source heading
+- [[sword-world-rpg-complete-edition-final-damage]] - topic hub: opens the topic page for Final Damage
+- [[sword-world-rpg-complete-edition-section-4-5-5-final-damage-b58b3174]] - same source heading: another source section with the same heading, 4.5.5 Final Damage
 
 ## Statements
 

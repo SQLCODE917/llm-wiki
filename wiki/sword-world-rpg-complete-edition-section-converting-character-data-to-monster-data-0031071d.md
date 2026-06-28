@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-converting-character-data-to-monster-data-0031071d@cc908d3b0322e31f9a5a90aece9b25bd
+projection_coverage: section-sword-world-rpg-complete-edition-section-converting-character-data-to-monster-data-0031071d@0053d38d83463a2e37d534e094b6c564
 ---
 
 # Converting Character Data to Monster Data
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-3-d13323e4]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-3-d13323e4]] - broader source section: 13.3
 
 ## Statements
 

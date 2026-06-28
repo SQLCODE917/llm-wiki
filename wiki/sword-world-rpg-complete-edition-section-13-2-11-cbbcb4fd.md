@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-11-cbbcb4fd@653e85181f9746c8e9c3f0ff32f95828
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-11-cbbcb4fd@3faf7beaaa887f34fdd04a4da8aa1367
 ---
 
 # 13.2.11
@@ -16,15 +16,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-aetherbeast-d76900a7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-hellhound-fa3899f0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-cerberus-d1aee94b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-lesser-daemon-grunel-7304dc12]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-zalbard-ed96c020]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-doubleburg-e8de6c91]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ragnakang-2835de76]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-maligdorai-7fb269a9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-greater-daemons-doppelganger-d9178dad]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-aetherbeast-d76900a7]] - narrower source section: [ Aetherbeast ]
+- [[sword-world-rpg-complete-edition-section-hellhound-fa3899f0]] - narrower source section: [ Hellhound ]
+- [[sword-world-rpg-complete-edition-section-cerberus-d1aee94b]] - narrower source section: [ Cerberus ]
+- [[sword-world-rpg-complete-edition-section-lesser-daemon-grunel-7304dc12]] - narrower source section: [ Lesser Daemon ] Grunel
+- [[sword-world-rpg-complete-edition-section-zalbard-ed96c020]] - narrower source section: Zalbard
+- [[sword-world-rpg-complete-edition-section-doubleburg-e8de6c91]] - narrower source section: Doubleburg
+- [[sword-world-rpg-complete-edition-section-ragnakang-2835de76]] - narrower source section: Ragnakang
+- [[sword-world-rpg-complete-edition-section-maligdorai-7fb269a9]] - narrower source section: Maligdorai
+- [[sword-world-rpg-complete-edition-section-greater-daemons-doppelganger-d9178dad]] - narrower source section: [ Greater Daemons ] Doppelganger
 
 ## Statements by subsection
 

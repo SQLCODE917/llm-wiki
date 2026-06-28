@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-rules-regarding-language-db062c7a@797deec795e051906d82b1dc65ed329a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-rules-regarding-language-db062c7a@601b659c4d067330bbc9677421e923b1
 ---
 
 # Chapter 12: Various Checks / Rules Regarding Language
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-vampire-skin-c542c46c@33bc736c5ddcd48e2f1026066a8e51b8
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-vampire-skin-c542c46c@e3a91f6709a64ec220fa11897fd7d338
 ---
 
 # Chapter 12: Various Checks / [ Vampire Skin ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

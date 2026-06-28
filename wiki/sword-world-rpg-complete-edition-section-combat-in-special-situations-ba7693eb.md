@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-combat-in-special-situations-ba7693eb@319a956c2a77a0c973f0092e89be02d4
+projection_coverage: section-sword-world-rpg-complete-edition-section-combat-in-special-situations-ba7693eb@afe11b8b6c274926a7031c24d766ebfb
 ---
 
 # Combat in Special Situations
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-10-1-411bb78a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-10-1-411bb78a]] - broader source section: 10.1
 
 ## Statements
 

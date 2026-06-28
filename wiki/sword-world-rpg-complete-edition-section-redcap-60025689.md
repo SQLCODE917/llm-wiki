@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-redcap-60025689@dc3dea6258a268b3ea21c078e1428686
+projection_coverage: section-sword-world-rpg-complete-edition-section-redcap-60025689@d21626bcf38fe8f49a4abb98b05c9d40
 ---
 
 # [ Redcap ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-3-d13323e4]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-3-d13323e4]] - broader source section: 13.3
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-decrease-weight-base-mental-power-cost-3-distance-10-meters-area-one-object-duration-18-rounds-e-68920840@cb49fc719618e0f4caf1a5dc6fe5558d
+projection_coverage: section-sword-world-rpg-complete-edition-section-decrease-weight-base-mental-power-cost-3-distance-10-meters-area-one-object-duration-18-rounds-e-68920840@383f812ba0f44b6551f850ff72abad06
 ---
 
 # [ Decrease Weight ] Base Mental Power Cost=3 Distance=10 meters Area=One object Duration=18 rounds Effect=Reduce the weight of an object Type=Lost Counters (Negates): Increase Weight Countered (Negated) By: Increase Weight Expansion=Duration, distance, targets, effect (see description)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

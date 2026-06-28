@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-2-1-2-resistance-to-poison-4864e4e4@a049c53a9ec28a725dab73083942a2d0
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-2-1-2-resistance-to-poison-4864e4e4@9678a903bb5966f64392c7b0f4c1883e
 ---
 
 # Chapter 12: Various Checks / 12.2.1.2 Resistance to Poison
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

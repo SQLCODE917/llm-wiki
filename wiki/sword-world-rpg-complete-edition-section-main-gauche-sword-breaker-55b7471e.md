@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-main-gauche-sword-breaker-55b7471e@f2ff6e20cce0bd32420b78ad500976e5
+projection_coverage: section-sword-world-rpg-complete-edition-section-main-gauche-sword-breaker-55b7471e@574016d4ac813d98cc2a8dd42a09c580
 ---
 
 # Main-gauche/Sword Breaker
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section: 16.9
 
 ## Statements
 

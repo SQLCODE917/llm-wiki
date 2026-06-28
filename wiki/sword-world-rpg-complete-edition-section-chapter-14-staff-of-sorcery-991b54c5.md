@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-staff-of-sorcery-991b54c5@0544df40eb91e3763966315850a8ccfe
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-staff-of-sorcery-991b54c5@333e4cd63ab78d9e6c1423f3ccb84afd
 ---
 
 # Chapter 14: / [ Staff of Sorcery ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

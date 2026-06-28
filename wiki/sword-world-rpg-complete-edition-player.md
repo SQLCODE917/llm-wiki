@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-player@a5b2f9c9d9e9d1b4ef541d9ef8f663be
+projection_coverage: topic-sword-world-rpg-complete-edition-player@085bfd6dd8531f20de127f752c7a6cbc
 ---
 
 # Player
@@ -329,34 +329,34 @@ What [[sword-world-rpg-complete-edition]] covers about player:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-play]] - shared statements and technical atoms (38 shared statement(s), 18 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (9 shared statement(s), 6 shared atom(s))
-- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (5 shared statement(s), 7 shared atom(s))
-- [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms (4 shared statement(s), 6 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (2 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared statements and technical atoms (2 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-action]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-npc-and-monster-action-announcement]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-sage-skill]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-success]] - shared technical atoms (6 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared technical atoms (5 shared atom(s))
-- [[sword-world-rpg-complete-edition-bonus]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-check]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-final]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-base]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-meter]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-poison]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-sword]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-ability-bonuse]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-ability-score]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-hit-check]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-remove-trap-dexterity-equipment-restriction-not-retriable]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-player-name-5cc8cbf7]] - source section (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-play]] - shared statements and technical atoms: Play shares source evidence from What is a Role-Playing Game (RPG)?: Thus, the game proceeds. In this case, the scenario prepared by the game master does not say there will be a fight with thugs (the Brando family) . It only says thug ... [truncated]; Play shares technical record from What is a Role-Playing Game (RPG)?: If you enjoy the story in this way, you can say that you've experienced the best part of a role-playing game. (38 shared statement(s), 18 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms: Character shares source evidence from What is a Role-Playing Game (RPG)?: Neither the game master nor the players know whether the characters will be able to kick the thugs out of the tavern and become heroes of justice , or get beaten by ... [truncated]; Character shares technical record from For Humans and HalfElves Raised by Humans: If the player's background is merchant/scholar (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. (9 shared statement(s), 6 shared atom(s))
+- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms: Game shares source evidence from What is a Role-Playing Game (RPG)?: Neither the game master nor the players know whether the characters will be able to kick the thugs out of the tavern and become heroes of justice , or get beaten by ... [truncated]; Game shares technical record from Part 2 Game Master Section: When you're a game master, you will have to remember rules that you wouldn't have to remember when you're a player. (5 shared statement(s), 7 shared atom(s))
+- [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms: Master shares source evidence from What is a Role-Playing Game (RPG)?: Neither the game master nor the players know whether the characters will be able to kick the thugs out of the tavern and become heroes of justice , or get beaten by ... [truncated]; Master shares technical record from Part 2 Game Master Section: When you're a game master, you will have to remember rules that you wouldn't have to remember when you're a player. (4 shared statement(s), 6 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms: Adventure shares source evidence from Example:: Each of the three adventurers (the players in control) roll 2D to check if they resist, using their mental power resistance as the baseline score, and 13 (magic inte ... [truncated]; Adventure shares technical record from Chapter 6: / [ ② Swim [Agility] ]: However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you'll need a success roll. (2 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared statements and technical atoms: Adventurer shares source evidence from Example:: Each of the three adventurers (the players in control) roll 2D to check if they resist, using their mental power resistance as the baseline score, and 13 (magic inte ... [truncated]; Adventurer shares technical record from Chapter 6: / [ ② Swim [Agility] ]: However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you'll need a success roll. (2 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-action]] - shared statements and technical atoms: Action shares source evidence from Chapter 14: / Adventure Treasure and Reward Amounts: Of course, depending on the contents of the scenario and the actions of the player characters, it's fine to introduce unexpected treasure, or to even have an adventu ... [truncated]; Action shares technical record from 3.1.3 NPC and Monster Action Announcements: If it's something the character should know, the game master should tell you when they announce the action. (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-npc-and-monster-action-announcement]] - shared statements and technical atoms: 3.1.3 NPC and Monster Action Announcements shares source evidence from 3.1.3 NPC and Monster Action Announcements: You may only declare, I'm preparing to cast a spell , and not give out the specific name of the spell. This is the difference in position between the players and the ... [truncated]; 3.1.3 NPC and Monster Action Announcements shares technical record from 3.1.3 NPC and Monster Action Announcements: If it's something the character should know, the game master should tell you when they announce the action. (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-sage-skill]] - shared statements and technical atoms: Sage Skill shares source evidence from Chapter 6: / Sage Skill: The player chooses which language to learn, along with whether they will speak or read it. However, runes cannot be chosen. Even in the same language, being able to ... [truncated]; Sage Skill shares technical record from Chapter 6: / Sage Skill: If you can read both common and low ancient, you are free to learn subsequent languages. (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared technical atoms: Success shares technical record from 2.5: final score {baseline score + 2D ± (bonus, penalty)} ≥ target score → action is successful (6 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared technical atoms: Score shares technical record from 2.5.2 How to Make a Difficulty Check: final score ≥ target score (difficulty + 2D) → action succeeds (5 shared atom(s))
+- [[sword-world-rpg-complete-edition-bonus]] - shared technical atoms: Bonus shares technical record from 2.5: final score {baseline score + 2D ± (bonus, penalty)} ≥ target score → action is successful (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared technical atoms: Cast shares technical record from Procedure When an Adventurer Casts Resistible Magic on an Adventurer: If the score of the one casting the magic is greater, the magic will take full effect, but if there is a tie or if the score of the one on whom the magic is being ca ... [truncated] (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-check]] - shared technical atoms: Check shares technical record from Difficulty Checks: Even if a bonus or penalty is applied, the roll is still an automatic success if the roll comes up double sixes , and an automatic failure if the roll if it's double ones . (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-final]] - shared technical atoms: Final shares technical record from 2.5.2 How to Make a Difficulty Check: final score ≥ target score (difficulty + 2D) → action succeeds (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared technical atoms: Target shares technical record from Chapter 6: / [ ② Swim [Agility] ]: Y ou can only wear cloth or at most soft leather. (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-base]] - shared technical atoms: Base shares technical record from 2.5.2 How to Make a Difficulty Check: final score ≥ target score (difficulty + 2D) → action succeeds (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-meter]] - shared technical atoms: Meter shares technical record from Automatic Success Restrictions: Of course, even if that's the case, stay true to the roll of your dice. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-poison]] - shared technical atoms: Poison shares technical record from Chapter 12: Various Checks / Poison Treatment and Detox Methods: Poisons that have entered the body can be cleared using specific antidotes (if any), the holy magic Cure Poison or Refresh , or the spirit magic Restore Health . (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms: Skill shares technical record from Automatic Success Restrictions: Of course, even if that's the case, stay true to the roll of your dice. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-sword]] - shared technical atoms: Sword shares technical record from Automatic Success Restrictions: Of course, even if that's the case, stay true to the roll of your dice. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability-bonuse]] - shared statements: 【 Ability Bonuses 】 shares source evidence from 【 Ability Bonuses 】: Players are free to choose from humans or any of these races to be their alter ego, an adventurer. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-ability-score]] - shared statements: Ability Scores shares source evidence from Should the Difficulty Be Clear?: During a difficulty check, it is up to the game master to decide whether or not to reveal the difficulty. However, the difficulty should be made as clear as possible ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from Chapter 6: / [ ② Swim [Agility] ]: However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you'll need a success roll. The game master must determine the ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-hit-check]] - shared statements: 4.5.1 Hit Checks shares source evidence from Example:: His player rolls the dice to make a hit check. The roll is 8. 4+8= 12 , which is more than 10. The attack hit the target perfectly. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-remove-trap-dexterity-equipment-restriction-not-retriable]] - shared statements: [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable) shares source evidence from Chapter 6: / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable): For set , you can set traps up to a difficulty equal to your thief skill level without failing (you cannot set traps of a higher level). If a third party attempts to ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-type]] - shared statements: Type shares source evidence from What is a Role-Playing Game (RPG)?: In this way, due to two types of randomness, player's choice and random numbers (dice) , the actual game can display a wide degree of fluctuation, sometimes the "sto ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-player-name-5cc8cbf7]] - source section: [ ① Player Name ] shares source evidence from [ ① Player Name ]: The player should write their own name in the player name field. (1 shared statement(s))
 
 ## Source
 

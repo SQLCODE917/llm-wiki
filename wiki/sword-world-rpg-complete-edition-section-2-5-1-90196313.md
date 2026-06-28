@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-1-90196313@2ab8b6cf324979247d690748223aea47
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-1-90196313@70b94e55d0e5f8c9c19319cc2ee96d04
 ---
 
 # 2.5.1
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-2-5-62be7ee4]] - broader source section
-- [[sword-world-rpg-complete-edition-section-difficulty-0e85ac6a]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-2-5-62be7ee4]] - broader source section: 2.5
+- [[sword-world-rpg-complete-edition-section-difficulty-0e85ac6a]] - narrower source section: Difficulty
 
 ## Statements by subsection
 

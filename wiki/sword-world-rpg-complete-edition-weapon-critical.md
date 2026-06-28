@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-weapon-critical@07b2d521e9d55e3343fb17486751ef40
+projection_coverage: topic-sword-world-rpg-complete-edition-weapon-critical@34163f5d7b667150ec52c3ca007d0f48
 ---
 
 # 《 Weapons Cannot Critical 》
@@ -318,28 +318,28 @@ Table 1-8: Weapons-2
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-sheath-weapon-etc]] - shared statements and technical atoms (1 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared statements and technical atoms (1 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-sorcerer]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-sword]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-critical-target-variation]] - shared statements (9 shared statement(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-agility]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-check]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-move]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-skeleton-warrior]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-weapons-cannot-critical-cf215ee1]] - source section (1 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-certain-weapons-cannot-critical-72a7b010]] - source section (2 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-sheath-weapon-etc]] - shared statements and technical atoms: Sheath a Weapon, Etc. shares source evidence from 《 Certain Weapons Cannot Critical 》: There are weapons that cannot deliver effective strikes due to their form, etc. Attacks with the indicated weapon, no matter how powerful or magical it is, will neve ... [truncated]; Sheath a Weapon, Etc. shares technical table: Table 1-8: Weapons-1 When  you have the sorcerer skill, there's a few things to be careful of. This                Weapon Name             Usage Required Str. Price ... [truncated] (1 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared statements and technical atoms: Table shares source evidence from Chapter 16: / Critical Target Variation: Under the basic rules, when using the Rating Table to determine damage, a 10 or greater is considered a critical , but with this rule, the chance of a critical is di ... [truncated]; Table shares technical table: Table 1-8: Weapons-1 When  you have the sorcerer skill, there's a few things to be careful of. This                Weapon Name             Usage Required Str. Price ... [truncated] (1 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms: Adventure shares technical table: Table 1-8: Weapons-1 Weapon Name             Usage Required Str. Price Calculation Swords Dagger (throwable)                  1H      1~5         x10+20 Main-gauche ... [truncated] (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared technical atoms: Adventurer shares technical table: Table 1-8: Weapons-1 Weapon Name             Usage Required Str. Price Calculation Swords Dagger (throwable)                  1H      1~5         x10+20 Main-gauche ... [truncated] (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms: Skill shares technical table: Table 1-8: Weapons-1 When  you have the sorcerer skill, there's a few things to be careful of. This                Weapon Name             Usage Required Str. Price ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-sorcerer]] - shared technical atoms: Sorcerer shares technical table: Table 1-8: Weapons-1 When  you have the sorcerer skill, there's a few things to be careful of. This                Weapon Name             Usage Required Str. Price ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-sword]] - shared technical atoms: Sword shares technical table: Table 1-8: Weapons-1 Weapon Name             Usage Required Str. Price Calculation Swords Dagger (throwable)                  1H      1~5         x10+20 Main-gauche ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-critical-target-variation]] - shared statements: Critical Target Variation shares source evidence from Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (9 shared statement(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements: Target shares source evidence from [ Weak Point ] (Spell Level=3): Note that the critical target can only be lowered for weapon attacks, while the critical target of damage magic cannot be lowered. (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-agility]] - shared statements: Agility shares source evidence from Iron Golem: Monster Level=9 Rarity=12 Agility=6 Movement Speed=8 Number=One Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:17 (10) Strike Poin ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-check]] - shared statements: Check shares source evidence from Rules for Sleeping Monsters: Attacks against sleeping monsters are always a success unless you roll 2D and get double ones on your hit check (even when attacking a sleeping opponent, double ones ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements: 【 Damage Reduction 】 shares source evidence from Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: Filling Out the Character Sheet shares source evidence from Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements: Level shares source evidence from Iron Golem: Monster Level=9 Rarity=12 Agility=6 Movement Speed=8 Number=One Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:17 (10) Strike Poin ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-move]] - shared statements: Move shares source evidence from Iron Golem: Monster Level=9 Rarity=12 Agility=6 Movement Speed=8 Number=One Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:17 (10) Strike Poin ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-movement]] - shared statements: Movement shares source evidence from Iron Golem: Monster Level=9 Rarity=12 Agility=6 Movement Speed=8 Number=One Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:17 (10) Strike Poin ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-rarity]] - shared statements: Rarity shares source evidence from Iron Golem: Monster Level=9 Rarity=12 Agility=6 Movement Speed=8 Number=One Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:17 (10) Strike Poin ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-skeleton-warrior]] - shared statements: [ Skeleton Warrior ] shares source evidence from Skeleton Warrior: Even if you attack a skeleton warrior with a bladed weapon, it will not cause a critical hit. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements: Spell shares source evidence from [ Fire Weapon ]: This is a spell used on weapons. The targeted weapon will now emit a magical flame from its striking end, adding a +10 bonus to the weapon's own strike power. This s ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-weapons-cannot-critical-cf215ee1]] - source section: 《 Weapons Cannot Critical 》 shares source evidence from 《 Weapons Cannot Critical 》: Weapons do not deal additional damage from criticals.; 《 Weapons Cannot Critical 》 shares technical table: Table 1-8: Weapons-1 When  you have the sorcerer skill, there's a few things to be careful of. This                Weapon Name             Usage Required Str. Price ... [truncated] (1 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-certain-weapons-cannot-critical-72a7b010]] - source section: 《 Certain Weapons Cannot Critical 》 shares source evidence from 《 Certain Weapons Cannot Critical 》: There are weapons that cannot deliver effective strikes due to their form, etc. Attacks with the indicated weapon, no matter how powerful or magical it is, will neve ... [truncated]; 《 Certain Weapons Cannot Critical 》 shares technical table: Table 1-8: Weapons-1 When  you have the sorcerer skill, there's a few things to be careful of. This                Weapon Name             Usage Required Str. Price ... [truncated] (2 shared statement(s), 4 shared atom(s))
 
 ## Source
 

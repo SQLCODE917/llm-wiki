@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-ad1355f1@a2d6ec408a5c86067ee47ffc6bf8d429
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-ad1355f1@ea6f64e26eaf6b7f49727015653ea1f3
 ---
 
 # Chapter 14:
@@ -16,131 +16,131 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-dbeb2ef5]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magical-items-b2b95266]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magical-item-list-a2b48c2d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-14-4-1-how-to-read-item-c95c9942]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-sword-world-rpg-complete-edition-rulebook-59029812]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-rarity-634e1ec0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-enchanter-c6af6b9c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-base-trade-price-f8da4fca]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-powers-f32b9086]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-description-6caaeb40]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-other-68c24931]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-14-4-2-list-of-magical-items-2aba3ff6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-weapons-d52bb373]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-1-20e1da37]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-2-d38fc2fd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-3-0f8362a4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-assassin-s-flute-0a8b61fa]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-undead-ruler-630a0a02]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-impulse-e7ede97e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-van-blade-9edf7310]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-cat-claw-b6e57ae5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-crusher-c575d37d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-green-light-f47f5270]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-sea-slayer-4e0030ea]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-shy-blade-2ccb788a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-stone-statue-dd48523b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-slice-slider-c0381346]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-twisted-sling-d203f68a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-fame-face-d65909a5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-blade-of-bravery-e2677c61]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-flame-smasher-2f55ff51]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-blaster-7cc01df7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-brain-blade-6b7bbc24]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-mind-eater-5b7fdd37]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-misty-sword-c9ec3c2c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-red-eye-e5c0b19f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-armor-eb07a8ae]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-1-4e883673]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-non-metal-or-ring-mail-77ab9fd2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-1-7e747774]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-chain-mail-splint-lamellar-plate-armor-1e689bf5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-2-non-metal-or-ring-mail-cebec8cc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-2-dd012866]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-chain-mail-splint-lamellar-plate-armor-8d447962]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-3-23b7ec25]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-non-metal-or-ring-mail-0a107080]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-3-cd4b8a4c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-shield-2e9f594c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-amber-robe-fde5f5f5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-air-cloak-9a81715f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-grey-suit-7ceeb31a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-cold-cloak-288a1f53]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-acceptor-a975a229]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-mithril-mesh-360de86e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-shield-of-the-brave-5fc1a88b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-accessories-earrings-of-interpretation-e201fe10]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-earrings-of-pooka-f4ddf59c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-container-bracelet-8ad3f889]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-sleepless-pendant-43a7ce59]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-necklace-of-faith-ccc2a849]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-amulet-of-countersense-5479d2ab]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-amulet-versus-undead-7a817bd0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-telecall-amulet-8865c66e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-crystal-7d15763a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-crystal-770ff040]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-earth-crystal-6d7f5d26]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-ice-crystal-7c31ae8d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-water-crystal-ada2a2f1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-air-crystal-1133e43f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-dark-crystal-628b402f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-fire-crystal-96f78dee]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-light-crystal-7f7e24ff]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-lightning-crystal-6b5077d9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-staves-and-wands-ice-blaze-wand-d1911cbf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-staff-of-sorcery-991b54c5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-staff-of-fire-d9ecf2c1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-sorcerer-staff-3e0f6fb2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-delay-staff-5a5d76d5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-power-wand-76e6b637]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-plant-command-wand-a07fc0d4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-memory-robber-4c6d38d5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-lead-staff-9ea91c06]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-unpoison-ring-2375112b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-quickness-ring-b60750d5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-thermal-ring-48735207]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-parry-parry-c47f4b3e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-fast-finger-7ca02b4b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-linkage-ring-f9fc42fb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-rune-ring-d4bc63b3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-other-6baca6aa]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-weightless-bag-45bd4418]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-explosive-bullet-c9baf87c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-old-man-liar-punisher-f4cf29d4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-card-of-power-830e9a1c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-guard-glove-03f660a9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-candlestick-of-infinite-un-luck-8e2f43b4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-crystal-orb-of-clairvoyance-0d83a771]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-gale-horseshoes-3957d931]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-sealing-jar-7848cd16]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-seal-stone-e5a71399]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-jumping-boots-59d710f3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-scape-doll-d24ebad2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-statue-of-changing-d1751b3e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-spirit-sealing-stone-484d3acf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-sleep-eye-f74f9a8d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-zero-gravity-disc-6cf7945f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-soft-lander-74d720e6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-daemon-jar-2f5eb995]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-daemon-hand-689580d0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-dragon-tooth-faeaa1cb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-tracer-doll-6deb6070]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-night-goggles-b02d9b93]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-fire-jack-fe73ed01]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-bag-of-protection-297ab108]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-bulkless-bag-9176cc9f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-forging-sheath-82f58dad]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-flying-carpet-0d579297]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-flying-mantle-786ed226]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-potion-of-power-3b644dcc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-scroll-16e3687e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-mask-of-scale-b4b4bf2e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-mask-of-lady-1f4a25f5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-mirror-of-knowledge-684696d3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-mirror-of-truth-5980489d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-unicorn-s-horn-ec253630]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-dbeb2ef5]] - broader source section: Chapter 14:
+- [[sword-world-rpg-complete-edition-section-chapter-14-magical-items-b2b95266]] - narrower source section: Chapter 14: / Magical Items
+- [[sword-world-rpg-complete-edition-section-chapter-14-magical-item-list-a2b48c2d]] - narrower source section: Chapter 14: / Magical Item List
+- [[sword-world-rpg-complete-edition-section-chapter-14-14-4-1-how-to-read-item-c95c9942]] - narrower source section: Chapter 14: / 14.4.1 How to Read Item
+- [[sword-world-rpg-complete-edition-section-chapter-14-sword-world-rpg-complete-edition-rulebook-59029812]] - narrower source section: Chapter 14: / Sword World RPG: Complete Edition Rulebook
+- [[sword-world-rpg-complete-edition-section-chapter-14-rarity-634e1ec0]] - narrower source section: Chapter 14: / 《 Rarity 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-enchanter-c6af6b9c]] - narrower source section: Chapter 14: / 《 Enchanter 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-base-trade-price-f8da4fca]] - narrower source section: Chapter 14: / 《 Base Trade Price 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-powers-f32b9086]] - narrower source section: Chapter 14: / 《 Powers 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-description-6caaeb40]] - narrower source section: Chapter 14: / 《 Description 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-other-68c24931]] - narrower source section: Chapter 14: / 《 Other 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-14-4-2-list-of-magical-items-2aba3ff6]] - narrower source section: Chapter 14: / 14.4.2 List of Magical Items
+- [[sword-world-rpg-complete-edition-section-chapter-14-weapons-d52bb373]] - narrower source section: Chapter 14: / Weapons
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-1-20e1da37]] - narrower source section: Chapter 14: / 《 Magic Sword (+1) 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-2-d38fc2fd]] - narrower source section: Chapter 14: / 《 Magic Sword (+2) 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-3-0f8362a4]] - narrower source section: Chapter 14: / 《 Magic Sword (+3) 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-assassin-s-flute-0a8b61fa]] - narrower source section: Chapter 14: / 《 Assassin's Flute 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-undead-ruler-630a0a02]] - narrower source section: Chapter 14: / 《 Undead Ruler 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-impulse-e7ede97e]] - narrower source section: Chapter 14: / 《 Impulse 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-van-blade-9edf7310]] - narrower source section: Chapter 14: / 《 Van Blade 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-cat-claw-b6e57ae5]] - narrower source section: Chapter 14: / 《 Cat Claw 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-crusher-c575d37d]] - narrower source section: Chapter 14: / 《 Crusher 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-green-light-f47f5270]] - narrower source section: Chapter 14: / 《 Green Light 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-sea-slayer-4e0030ea]] - narrower source section: Chapter 14: / 《 Sea Slayer 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-shy-blade-2ccb788a]] - narrower source section: Chapter 14: / 《 Shy Blade 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-stone-statue-dd48523b]] - narrower source section: Chapter 14: / 《 Stone Statue 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-slice-slider-c0381346]] - narrower source section: Chapter 14: / 《 Slice Slider 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-twisted-sling-d203f68a]] - narrower source section: Chapter 14: / 《 Twisted Sling 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-fame-face-d65909a5]] - narrower source section: Chapter 14: / 《 Fame Face 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-blade-of-bravery-e2677c61]] - narrower source section: Chapter 14: / 《 Blade of Bravery 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-flame-smasher-2f55ff51]] - narrower source section: Chapter 14: / 《 Flame Smasher 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-blaster-7cc01df7]] - narrower source section: Chapter 14: / 《 Blaster 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-brain-blade-6b7bbc24]] - narrower source section: Chapter 14: / 《 Brain Blade 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-mind-eater-5b7fdd37]] - narrower source section: Chapter 14: / 《 Mind Eater 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-misty-sword-c9ec3c2c]] - narrower source section: Chapter 14: / 《 Misty Sword 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-red-eye-e5c0b19f]] - narrower source section: Chapter 14: / 《 Red Eye 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-armor-eb07a8ae]] - narrower source section: Chapter 14: / Armor
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-1-4e883673]] - narrower source section: Chapter 14: / 《 Magic Armor (+1) 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-non-metal-or-ring-mail-77ab9fd2]] - narrower source section: Chapter 14: / Non-metal or ring mail
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-1-7e747774]] - narrower source section: Chapter 14: / 《 Magic Armor (+1)
+- [[sword-world-rpg-complete-edition-section-chapter-14-chain-mail-splint-lamellar-plate-armor-1e689bf5]] - narrower source section: Chapter 14: / Chain mail, splint, lamellar, plate armor
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-2-non-metal-or-ring-mail-cebec8cc]] - narrower source section: Chapter 14: / 《 Magic Armor (+2) 》 Non-metal or ring mail
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-2-dd012866]] - narrower source section: Chapter 14: / 《 Magic Armor (+2) 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-chain-mail-splint-lamellar-plate-armor-8d447962]] - narrower source section: Chapter 14: / Chain mail, splint, lamellar, plate armor
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-3-23b7ec25]] - narrower source section: Chapter 14: / 《 Magic Armor (+3) 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-non-metal-or-ring-mail-0a107080]] - narrower source section: Chapter 14: / Non-metal or ring mail
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-3-cd4b8a4c]] - narrower source section: Chapter 14: / 《 Magic Armor (+3) 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-shield-2e9f594c]] - narrower source section: Chapter 14: / 《 Magic Shield 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-amber-robe-fde5f5f5]] - narrower source section: Chapter 14: / 《 Amber Robe 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-air-cloak-9a81715f]] - narrower source section: Chapter 14: / 《 Air Cloak 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-grey-suit-7ceeb31a]] - narrower source section: Chapter 14: / 《 Grey Suit 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-cold-cloak-288a1f53]] - narrower source section: Chapter 14: / 《 Cold Cloak 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-acceptor-a975a229]] - narrower source section: Chapter 14: / 《 Magic Acceptor 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-mithril-mesh-360de86e]] - narrower source section: Chapter 14: / 《 Mithril Mesh 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-shield-of-the-brave-5fc1a88b]] - narrower source section: Chapter 14: / 《 Shield of the Brave 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-accessories-earrings-of-interpretation-e201fe10]] - narrower source section: Chapter 14: / 《 Accessories 》 [ Earrings of Interpretation ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-earrings-of-pooka-f4ddf59c]] - narrower source section: Chapter 14: / [ Earrings of Pooka ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-container-bracelet-8ad3f889]] - narrower source section: Chapter 14: / [ Container Bracelet ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-sleepless-pendant-43a7ce59]] - narrower source section: Chapter 14: / [ Sleepless Pendant ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-necklace-of-faith-ccc2a849]] - narrower source section: Chapter 14: / [ Necklace of Faith ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-amulet-of-countersense-5479d2ab]] - narrower source section: Chapter 14: / [ Amulet of Countersense ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-amulet-versus-undead-7a817bd0]] - narrower source section: Chapter 14: / [ Amulet Versus Undead ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-telecall-amulet-8865c66e]] - narrower source section: Chapter 14: / [ Telecall Amulet ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-crystal-7d15763a]] - narrower source section: Chapter 14: / [ Crystal ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-crystal-770ff040]] - narrower source section: Chapter 14: / Magic Crystal
+- [[sword-world-rpg-complete-edition-section-chapter-14-earth-crystal-6d7f5d26]] - narrower source section: Chapter 14: / Earth Crystal
+- [[sword-world-rpg-complete-edition-section-chapter-14-ice-crystal-7c31ae8d]] - narrower source section: Chapter 14: / Ice Crystal
+- [[sword-world-rpg-complete-edition-section-chapter-14-water-crystal-ada2a2f1]] - narrower source section: Chapter 14: / Water Crystal
+- [[sword-world-rpg-complete-edition-section-chapter-14-air-crystal-1133e43f]] - narrower source section: Chapter 14: / Air Crystal
+- [[sword-world-rpg-complete-edition-section-chapter-14-dark-crystal-628b402f]] - narrower source section: Chapter 14: / Dark Crystal
+- [[sword-world-rpg-complete-edition-section-chapter-14-fire-crystal-96f78dee]] - narrower source section: Chapter 14: / Fire Crystal
+- [[sword-world-rpg-complete-edition-section-chapter-14-light-crystal-7f7e24ff]] - narrower source section: Chapter 14: / Light Crystal
+- [[sword-world-rpg-complete-edition-section-chapter-14-lightning-crystal-6b5077d9]] - narrower source section: Chapter 14: / Lightning Crystal
+- [[sword-world-rpg-complete-edition-section-chapter-14-staves-and-wands-ice-blaze-wand-d1911cbf]] - narrower source section: Chapter 14: / 《 Staves and Wands 》 [ Ice Blaze Wand ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-staff-of-sorcery-991b54c5]] - narrower source section: Chapter 14: / [ Staff of Sorcery ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-staff-of-fire-d9ecf2c1]] - narrower source section: Chapter 14: / [ Staff of Fire ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-sorcerer-staff-3e0f6fb2]] - narrower source section: Chapter 14: / [ Sorcerer Staff ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-delay-staff-5a5d76d5]] - narrower source section: Chapter 14: / [ Delay Staff ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-power-wand-76e6b637]] - narrower source section: Chapter 14: / [ Power Wand ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-plant-command-wand-a07fc0d4]] - narrower source section: Chapter 14: / [ Plant Command Wand ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-memory-robber-4c6d38d5]] - narrower source section: Chapter 14: / [ Memory Robber ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-lead-staff-9ea91c06]] - narrower source section: Chapter 14: / [ Lead Staff ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-unpoison-ring-2375112b]] - narrower source section: Chapter 14: / [ Unpoison Ring ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-quickness-ring-b60750d5]] - narrower source section: Chapter 14: / [ Quickness Ring ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-thermal-ring-48735207]] - narrower source section: Chapter 14: / [ Thermal Ring ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-parry-parry-c47f4b3e]] - narrower source section: Chapter 14: / [ Parry Parry ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-fast-finger-7ca02b4b]] - narrower source section: Chapter 14: / [ Fast Finger ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-linkage-ring-f9fc42fb]] - narrower source section: Chapter 14: / [ Linkage Ring ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-rune-ring-d4bc63b3]] - narrower source section: Chapter 14: / [ Rune Ring ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-other-6baca6aa]] - narrower source section: Chapter 14: / 《 Other 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-weightless-bag-45bd4418]] - narrower source section: Chapter 14: / [ Weightless Bag ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-explosive-bullet-c9baf87c]] - narrower source section: Chapter 14: / [ Explosive Bullet ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-old-man-liar-punisher-f4cf29d4]] - narrower source section: Chapter 14: / [ Old Man Liar Punisher ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-card-of-power-830e9a1c]] - narrower source section: Chapter 14: / [ Card of Power ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-guard-glove-03f660a9]] - narrower source section: Chapter 14: / [ Guard Glove ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-candlestick-of-infinite-un-luck-8e2f43b4]] - narrower source section: Chapter 14: / [Candlestick of Infinite (Un)Luck]
+- [[sword-world-rpg-complete-edition-section-chapter-14-crystal-orb-of-clairvoyance-0d83a771]] - narrower source section: Chapter 14: / [Crystal Orb of Clairvoyance]
+- [[sword-world-rpg-complete-edition-section-chapter-14-gale-horseshoes-3957d931]] - narrower source section: Chapter 14: / [ Gale Horseshoes ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-sealing-jar-7848cd16]] - narrower source section: Chapter 14: / [ Sealing Jar ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-seal-stone-e5a71399]] - narrower source section: Chapter 14: / [ Seal Stone ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-jumping-boots-59d710f3]] - narrower source section: Chapter 14: / [ Jumping Boots ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-scape-doll-d24ebad2]] - narrower source section: Chapter 14: / [ Scape Doll ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-statue-of-changing-d1751b3e]] - narrower source section: Chapter 14: / [ Statue of Changing ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-spirit-sealing-stone-484d3acf]] - narrower source section: Chapter 14: / [ Spirit Sealing Stone ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-sleep-eye-f74f9a8d]] - narrower source section: Chapter 14: / [ Sleep Eye ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-zero-gravity-disc-6cf7945f]] - narrower source section: Chapter 14: / [ Zero Gravity Disc ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-soft-lander-74d720e6]] - narrower source section: Chapter 14: / [ Soft Lander ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-daemon-jar-2f5eb995]] - narrower source section: Chapter 14: / [ Daemon Jar ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-daemon-hand-689580d0]] - narrower source section: Chapter 14: / [ Daemon Hand ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-dragon-tooth-faeaa1cb]] - narrower source section: Chapter 14: / [ Dragon Tooth ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-tracer-doll-6deb6070]] - narrower source section: Chapter 14: / [ Tracer Doll ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-night-goggles-b02d9b93]] - narrower source section: Chapter 14: / [ Night Goggles ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-fire-jack-fe73ed01]] - narrower source section: Chapter 14: / [ Fire Jack ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-bag-of-protection-297ab108]] - narrower source section: Chapter 14: / [ Bag of Protection ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-bulkless-bag-9176cc9f]] - narrower source section: Chapter 14: / [ Bulkless Bag ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-forging-sheath-82f58dad]] - narrower source section: Chapter 14: / [ Forging Sheath ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-flying-carpet-0d579297]] - narrower source section: Chapter 14: / [ Flying Carpet ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-flying-mantle-786ed226]] - narrower source section: Chapter 14: / [ Flying Mantle ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-potion-of-power-3b644dcc]] - narrower source section: Chapter 14: / [ Potion of Power ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-scroll-16e3687e]] - narrower source section: Chapter 14: / [ Magic Scroll ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-mask-of-scale-b4b4bf2e]] - narrower source section: Chapter 14: / [ Mask of Scale
+- [[sword-world-rpg-complete-edition-section-chapter-14-mask-of-lady-1f4a25f5]] - narrower source section: Chapter 14: / [ Mask of Lady ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-mirror-of-knowledge-684696d3]] - narrower source section: Chapter 14: / [ Mirror of Knowledge ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-mirror-of-truth-5980489d]] - narrower source section: Chapter 14: / [ Mirror of Truth ]
+- [[sword-world-rpg-complete-edition-section-chapter-14-unicorn-s-horn-ec253630]] - narrower source section: Chapter 14: / [ Unicorn's Horn ]
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-humans-b188b9b3@abb288c26417b8ff84e22ee50b7d3638
+projection_coverage: section-sword-world-rpg-complete-edition-section-humans-b188b9b3@9503689b8b406aff3665d542048b7d3e
 ---
 
 # Humans
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section
-- [[sword-world-rpg-complete-edition-human]] - topic hub
-- [[sword-world-rpg-complete-edition-section-human-b8ddf91d]] - same source heading
-- [[sword-world-rpg-complete-edition-section-humans-281edb74]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section: 13.2.12
+- [[sword-world-rpg-complete-edition-human]] - topic hub: opens the topic page for Human
+- [[sword-world-rpg-complete-edition-section-human-b8ddf91d]] - same source heading: another source section with the same heading, 【 Human 】
+- [[sword-world-rpg-complete-edition-section-humans-281edb74]] - same source heading: another source section with the same heading, 《 Humans 》
 
 ## Technical atoms
 

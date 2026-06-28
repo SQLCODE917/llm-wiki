@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fighter-fada090a@67733c3c09a8db89e4ddbde4fc640c7b
+projection_coverage: section-sword-world-rpg-complete-edition-section-fighter-fada090a@7f18400b11774ea35b9f7a0d84d46094
 ---
 
 # [ Fighter ］
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section
-- [[sword-world-rpg-complete-edition-section-fighter-bc1f0234]] - same source heading
+- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section: 1.4
+- [[sword-world-rpg-complete-edition-section-fighter-bc1f0234]] - same source heading: another source section with the same heading, 【 Fighter 】
 
 ## Statements
 

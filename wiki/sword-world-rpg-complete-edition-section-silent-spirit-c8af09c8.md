@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-silent-spirit-c8af09c8@4830cb86b0dd8bed26b26a3d36a0ad20
+projection_coverage: section-sword-world-rpg-complete-edition-section-silent-spirit-c8af09c8@a1c610e15403b4664a7e9f4efa3de126
 ---
 
 # 《 Silent Spirit 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

@@ -10,6 +10,7 @@ from llmwiki.domain.ledger.structure import DocumentStructure
 from llmwiki.domain.ledger.topic_relations import RelatedTopicLink, related_topic_links
 from llmwiki.domain.ledger.topic_render import render_topic_page
 from llmwiki.domain.ledger.topics import SourceTopic
+from llmwiki.domain.ledger.walkability import audit_related_links
 from llmwiki.domain.pages import PageMetadata, WikiPage, slugify
 from llmwiki.pdf.document import DocumentModel
 
@@ -36,12 +37,18 @@ def build_topic_pages(
                 )
             )
         )
+        walkability = audit_related_links(
+            topic_page_id,
+            related_pages,
+            ledger,
+            projection_context=projection_context,
+        )
         rendered = render_topic_page(
             topic,
             ledger,
             wiki_page_locator=topic_page_id,
             source_page_id=source_page_id,
-            related_pages=related_pages,
+            related_pages=walkability.accepted_links,
             projection_context=projection_context,
         )
         metadata = PageMetadata(

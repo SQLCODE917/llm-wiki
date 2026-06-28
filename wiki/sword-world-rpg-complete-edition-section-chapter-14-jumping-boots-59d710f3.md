@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-jumping-boots-59d710f3@357fa6ce7abaaef58a47c5e6e22a8914
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-jumping-boots-59d710f3@e16fe475c077509c2ed8be9c693173c6
 ---
 
 # Chapter 14: / [ Jumping Boots ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Technical atoms
 

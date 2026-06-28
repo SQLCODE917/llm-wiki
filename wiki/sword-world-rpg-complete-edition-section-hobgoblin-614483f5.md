@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hobgoblin-614483f5@8086af570e43c4702ab9123ad7bf2fbc
+projection_coverage: section-sword-world-rpg-complete-edition-section-hobgoblin-614483f5@e21f679ad9e6256bda0de067a5d13513
 ---
 
 # [ Hobgoblin ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f]] - broader source section: 13.2.3
 
 ## Statements
 

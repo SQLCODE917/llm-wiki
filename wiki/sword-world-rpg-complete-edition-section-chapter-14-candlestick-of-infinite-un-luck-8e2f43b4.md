@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-candlestick-of-infinite-un-luck-8e2f43b4@348b645d784bc9b5157ac48cf8cc446e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-candlestick-of-infinite-un-luck-8e2f43b4@a9e43c245dc3210307fe4389665ccfea
 ---
 
 # Chapter 14: / [Candlestick of Infinite (Un)Luck]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

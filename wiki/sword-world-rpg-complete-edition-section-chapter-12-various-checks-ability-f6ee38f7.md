@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-ability-f6ee38f7@f425a6f00b45172dbc71f46f263b8251
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-ability-f6ee38f7@c6c6aa81bf2efd4d398cc2a825d84b6f
 ---
 
 # Chapter 12: Various Checks / Ability
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
-- [[sword-world-rpg-complete-edition-ability]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-1-basic-abilities-of-the-a02fadf0]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
+- [[sword-world-rpg-complete-edition-ability]] - topic hub: opens the topic page for Ability
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-1-basic-abilities-of-the-a02fadf0]] - same source heading: another source section with the same heading, Chapter 11: Notes on Magic / 11.3.1 Basic Abilities of the
 
 ## Statements
 

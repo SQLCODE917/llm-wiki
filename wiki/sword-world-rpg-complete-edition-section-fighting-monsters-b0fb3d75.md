@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fighting-monsters-b0fb3d75@4537b29566b3299a72c96fe8e3af0d39
+projection_coverage: section-sword-world-rpg-complete-edition-section-fighting-monsters-b0fb3d75@12cd451cc280c72c0c6055869041deae
 ---
 
 # Fighting Monsters
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-15-1-907776c3]] - broader source section
+- [[sword-world-rpg-complete-edition-section-15-1-907776c3]] - broader source section: 15.1
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-common-adventurer-abilities-abdf95fb@44dac0f05a18691f408598a48ca89a6b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-common-adventurer-abilities-abdf95fb@f4be66e9d3aefcf17facf8d4740ee25c
 ---
 
 # Chapter 6: / Common Adventurer Abilities
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section: Chapter 6:
 
 ## Statements
 

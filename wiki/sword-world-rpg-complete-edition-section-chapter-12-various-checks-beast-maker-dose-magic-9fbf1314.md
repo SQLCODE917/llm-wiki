@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-beast-maker-dose-magic-9fbf1314@d0d722100ad7bfbe9c18c8d7e16e758a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-beast-maker-dose-magic-9fbf1314@26a940eb4ea98f64dd3a2048f3bfd55f
 ---
 
 # Chapter 12: Various Checks / [Beast Maker (Dose/Magic)]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

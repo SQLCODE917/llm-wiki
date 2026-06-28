@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-body-ac5ecc46@16b170a27f1fed26e5a188b67b5d3bdd
+projection_coverage: section-sword-world-rpg-complete-edition-section-body-ac5ecc46@64a91a33ee2bb69c6553e04227ab853c
 ---
 
 # Body
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-body]] - topic hub
+- [[sword-world-rpg-complete-edition-body]] - topic hub: opens the topic page for Body
 
 ## Statements
 

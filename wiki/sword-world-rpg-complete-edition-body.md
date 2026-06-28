@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-body@fa4fdfbf174a637cb3dbf7da7af35404
+projection_coverage: topic-sword-world-rpg-complete-edition-body@50957f83863b2e695e66d0f64568f80a
 ---
 
 # Body
@@ -403,36 +403,36 @@ What [[sword-world-rpg-complete-edition]] covers about body:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-addition]] - shared statements and technical atoms (1 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-fail]] - shared statements and technical atoms (4 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-meter]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-poison]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-level]] - shared technical atoms (4 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-range]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-final]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-giant]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-power]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-strike]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-ability]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-check]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-fire]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-round]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-caster]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-human]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-live]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-shape-change]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-body-ac5ecc46]] - source section (1 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-addition]] - shared statements and technical atoms: Addition shares source evidence from [ Ceiling Hanger ]: Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body ... [truncated]; Addition shares technical record from [ Ceiling Hanger ]: Special Abilities=Surprise attack (Sense target score=12) (1 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-fail]] - shared statements and technical atoms: Fail shares source evidence from [ Giant Scorpion ]: When in combat, a giant scorpion can use the pincers on its arms and the barb on its tail to attack different targets (of course, it can also concentrate its attacks ... [truncated]; Fail shares technical record from [ Ceiling Hanger ]: Special Abilities=Surprise attack (Sense target score=12) (4 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-meter]] - shared statements and technical atoms: Meter shares source evidence from [ Shade ]: Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darknes ... [truncated]; Meter shares technical record from [ Shade ]: Life Points/Resistance=1/8 (1) (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms: Cast shares source evidence from [ Shape Change: Only the caster's body will change shape, the clothes and accessories they're wearing do not change. They will fall off or break in the process of changing. Also, af ... [truncated]; Cast shares technical record from 3rd Level Basic Holy Magic List [ Cure Poison ]: Expansion=Final score (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-poison]] - shared statements and technical atoms: Poison shares source evidence from Chapter 12: Various Checks / 《 Types of Poison 》: Those that say damage are poisons that damage life force (points), but there are common rules for these types of poisons. Each poison has its own unique strike power ... [truncated]; Poison shares technical record from Chapter 12: Various Checks / 《 Types of Poison 》: Those affected by the poison can reduce this damage. (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-type]] - shared statements and technical atoms: Type shares source evidence from Chapter 12: Various Checks / 《 Types of Poison 》: Those that say damage are poisons that damage life force (points), but there are common rules for these types of poisons. Each poison has its own unique strike power ... [truncated]; Type shares technical record from Chapter 12: Various Checks / 《 Types of Poison 》: Those affected by the poison can reduce this damage. (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms: Spirit shares source evidence from Chapter 12: Various Checks / Rules for Poison, Illness and Infection: On the other hand, illness is a state where the spirit power within the body remains unbalanced and in a fixed state. Think of it as the spirits inside your body tha ... [truncated]; Spirit shares technical record from [ Undine ]: To do so, you must make a successful life force resistance roll. (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms: Target shares source evidence from [ Undine ]: If a target drinks even a little of an undine's body, this water spirit will enter directly into their lungs. A check for whether or not you've taken a drink is made ... [truncated]; Target shares technical record from [ Undine ]: To do so, you must make a successful life force resistance roll. (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared technical atoms: Level shares technical record from [ Undine ]: To do so, you must make a successful life force resistance roll. (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms: Adventure shares technical record from [ Salamander ]: Also, when a person using the spirit magic Water Screen is attacked by a salamander, after the normal effect, 2 points of damage will be dealt to the salamander (the ... [truncated] (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared technical atoms: Adventurer shares technical record from [ Salamander ]: Also, when a person using the spirit magic Water Screen is attacked by a salamander, after the normal effect, 2 points of damage will be dealt to the salamander (the ... [truncated] (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared technical atoms: Character shares technical record from [ Ceiling Hanger ]: Special Abilities=Surprise attack (Sense target score=12) (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-range]] - shared technical atoms: Range shares technical record from [ Ceiling Hanger ]: Special Abilities=Surprise attack (Sense target score=12) (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared technical atoms: Score shares technical record from 3rd Level Basic Holy Magic List [ Cure Poison ]: Expansion=Final score (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-final]] - shared technical atoms: Final shares technical record from 3rd Level Basic Holy Magic List [ Cure Poison ]: Expansion=Final score (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-giant]] - shared technical atoms: Giant shares technical record from Giant Ant Queen: Languages=None (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-power]] - shared technical atoms: Power shares technical record from [ Shade ]: Life Points/Resistance=1/8 (1) (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared technical atoms: Spell shares technical record from 3rd Level Basic Holy Magic List [ Cure Poison ]: Expansion=Final score (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-strike]] - shared technical atoms: Strike shares technical record from [ Shade ]: Life Points/Resistance=1/8 (1) (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability]] - shared technical atoms: Ability shares technical record from [ Salamander ]: Also, when a person using the spirit magic Water Screen is attacked by a salamander, after the normal effect, 2 points of damage will be dealt to the salamander (the ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-check]] - shared technical atoms: Check shares technical record from [ Undine ]: To do so, you must make a successful life force resistance roll. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-fire]] - shared technical atoms: Fire shares technical record from [ Salamander ]: Also, when a person using the spirit magic Water Screen is attacked by a salamander, after the normal effect, 2 points of damage will be dealt to the salamander (the ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared technical atoms: Resist shares technical record from Gizmo: Only fi re-type , electric-type , pure energytype , and explosion-type magic attacks can deal damage. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-round]] - shared technical atoms: Round shares technical record from [ Undine ]: To do so, you must make a successful life force resistance roll. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from Gizmo: Even if a gizmo's attack hits, it does not deal damage by itself. However, the body of a gizmo is poisonous gas, so those hit by it will inhale it and suffer damage ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-caster]] - shared statements: Caster shares source evidence from [ Shape Change: Only the caster's body will change shape, the clothes and accessories they're wearing do not change. They will fall off or break in the process of changing. Also, af ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-human]] - shared statements: Human shares source evidence from [ Minotaur ]: The minotaur, with a strong human body and the head of a bull, is an extremely brutal creature. They are carnivorous, especially fond of human flesh, and when they a ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-live]] - shared statements: Live shares source evidence from [ Hippocampus ]: It's a horse that lives in the sea, the lower half of its body is that of a fish. Its front legs have fins instead of hooves, and it has no hind legs. They can move ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-shape-change]] - shared statements: [ Shape Change shares source evidence from [ Shape Change: Only the caster's body will change shape, the clothes and accessories they're wearing do not change. They will fall off or break in the process of changing. Also, af ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-body-ac5ecc46]] - source section: Body shares source evidence from Body: Adventurers can also attack the body. If the body's life points reach 0, the flower will also cease activity.; Body shares technical record from Body: Monster Level=6 Rarity=11 Agility=10 Movement Speed=0 (1 shared statement(s), 13 shared atom(s))
 
 ## Source
 

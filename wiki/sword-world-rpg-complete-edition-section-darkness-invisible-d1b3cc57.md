@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-darkness-invisible-d1b3cc57@a47d7df2c47299eeb86638fee86af714
+projection_coverage: section-sword-world-rpg-complete-edition-section-darkness-invisible-d1b3cc57@4082b133013248b9ea85a2039758876b
 ---
 
 # 《 Darkness/Invisible 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - broader source section: 13.6.4
 
 ## Statements
 

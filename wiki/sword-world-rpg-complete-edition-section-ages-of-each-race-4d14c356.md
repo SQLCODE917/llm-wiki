@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ages-of-each-race-4d14c356@3c2e13bf815fc7728c5c30ab2fc93bd5
+projection_coverage: section-sword-world-rpg-complete-edition-section-ages-of-each-race-4d14c356@2403a88faa200233641ae66236654aed
 ---
 
 # 《 Ages of Each Race 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section: 1.4
 
 ## Statements
 

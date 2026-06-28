@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-thief-skill-a27e9e51@bb3964b1b4de58e58e31ea91e79bacd1
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-thief-skill-a27e9e51@5f2e09640ffe1f7cc9162bf54f755da8
 ---
 
 # Chapter 6: / Thief Skill
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section
-- [[sword-world-rpg-complete-edition-section-thief-skill-01310bcf]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section: Chapter 6:
+- [[sword-world-rpg-complete-edition-section-thief-skill-01310bcf]] - same source heading: another source section with the same heading, 【 Thief Skill 】
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-hide-agility-equipment-restriction-c870789f@ae86bf55f5ad26f12689520816ad957a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-hide-agility-equipment-restriction-c870789f@8f1d7e081bcfe813a87420da539d4ce1
 ---
 
 # Chapter 6: / [ ⑧ Hide [Agility] ] (Equipment restriction)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section: Chapter 6:
 
 ## Statements
 

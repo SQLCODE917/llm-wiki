@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-earrings-of-pooka-f4ddf59c@c10298372121ffc99453c0b14f5a5a99
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-earrings-of-pooka-f4ddf59c@9ebbf79a2fa9e13b810abb7d3f8346c5
 ---
 
 # Chapter 14: / [ Earrings of Pooka ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

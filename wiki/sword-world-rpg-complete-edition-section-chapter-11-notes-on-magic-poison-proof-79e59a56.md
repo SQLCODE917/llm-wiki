@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-poison-proof-79e59a56@f6fc4ab23b03f9379ce326fa2def2f68
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-poison-proof-79e59a56@d5f109274d7fd48a16ea947a3aa7298c
 ---
 
 # Chapter 11: Notes on Magic / Poison Proof ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

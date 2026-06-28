@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-ranger-skill-4c651439@73b9a2745571b1aa1c5b02670d6473e9
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-ranger-skill-4c651439@ad563e3f16a5a6503eb9082ba6cf9271
 ---
 
 # Chapter 6: / Ranger Skill
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section
-- [[sword-world-rpg-complete-edition-ranger-skill]] - topic hub
-- [[sword-world-rpg-complete-edition-section-ranger-skill-be2a2889]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section: Chapter 6:
+- [[sword-world-rpg-complete-edition-ranger-skill]] - topic hub: opens the topic page for Ranger Skill
+- [[sword-world-rpg-complete-edition-section-ranger-skill-be2a2889]] - same source heading: another source section with the same heading, 【 Ranger Skill 】
 
 ## Statements
 

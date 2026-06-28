@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-create-zombie-ef9c917d@541f94793ac1627bcc22a862e0412567
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-create-zombie-ef9c917d@40edb39508a9a967e807b2873612d403
 ---
 
 # Chapter 11: Notes on Magic / [ Create Zombie ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

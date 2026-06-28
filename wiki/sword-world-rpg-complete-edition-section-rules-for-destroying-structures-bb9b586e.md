@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rules-for-destroying-structures-bb9b586e@8fbd621ccacb2a181f7462eb77b7c7f5
+projection_coverage: section-sword-world-rpg-complete-edition-section-rules-for-destroying-structures-bb9b586e@2836cb5764931e681f1b2374285e8f31
 ---
 
 # Rules for Destroying Structures
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

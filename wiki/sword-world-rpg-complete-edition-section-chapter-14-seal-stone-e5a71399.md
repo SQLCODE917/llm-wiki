@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-seal-stone-e5a71399@7cf37ff96cd08b765a43d8e3678a23e9
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-seal-stone-e5a71399@ac5d2f9a55658869788e5b12d5b36624
 ---
 
 # Chapter 14: / [ Seal Stone ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

@@ -34,6 +34,7 @@ from llmwiki.domain.ledger.table_identity import (
 )
 from llmwiki.domain.ledger.topic_models import SourceTopic
 from llmwiki.domain.ledger.topic_relations import RelatedTopicLink
+from llmwiki.domain.ledger.walkability import audit_related_links, related_link_markdown
 from llmwiki.domain.pages import PageMetadata, WikiPage, slugify
 
 _SECTION_NODE_KINDS = {"chapter", "section", "heading"}
@@ -74,7 +75,20 @@ def build_section_pages(
         related = related_section_links(
             projection.page_ref, structure, by_node, same_topic, topic_page_ids
         )
-        body = _body(ledger, structure, projection, source_page_id, related, projection_context)
+        walkability = audit_related_links(
+            projection.page_id,
+            related,
+            ledger,
+            projection_context=projection_context,
+        )
+        body = _body(
+            ledger,
+            structure,
+            projection,
+            source_page_id,
+            walkability.accepted_links,
+            projection_context,
+        )
         metadata = PageMetadata(
             page_id=projection.page_id,
             page_kind="source",
@@ -105,7 +119,7 @@ def _body(
     if related_links:
         lines.extend(("## Related pages", ""))
         for link in related_links:
-            lines.append(f"- [[{link.page_id}]] - {link.relation}{_evidence_note(link)}")
+            lines.append(related_link_markdown(link))
         lines.append("")
     direct_claims = _claim_entries(projection.direct_entries)
     if direct_claims:
@@ -247,15 +261,6 @@ def _entries_for_node(ledger: ClaimLedger, node_id: str) -> tuple[LedgerEntry, .
         if node_id in entry.structure_node_ids
         and (entry.normalized_text or entry.source_text or entry.technical_atom_id)
     )
-
-
-def _evidence_note(link: RelatedTopicLink) -> str:
-    parts: list[str] = []
-    if link.shared_entry_count:
-        parts.append(f"{link.shared_entry_count} shared statement(s)")
-    if link.shared_atom_count:
-        parts.append(f"{link.shared_atom_count} shared atom(s)")
-    return f" ({', '.join(parts)})" if parts else ""
 
 
 def _atoms_for_entries(

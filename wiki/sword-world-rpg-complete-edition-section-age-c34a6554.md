@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-age-c34a6554@91e658375b63d22a8d08944781d6e787
+projection_coverage: section-sword-world-rpg-complete-edition-section-age-c34a6554@b04d8ac7e20665e388df5699370e88b7
 ---
 
 # 《 Age 》
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section
-- [[sword-world-rpg-complete-edition-section-age-6a506507]] - same source heading
+- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section: 1.4
+- [[sword-world-rpg-complete-edition-section-age-6a506507]] - same source heading: another source section with the same heading, [ ⑪ Age ]
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-nightmare-incubus-succubus-dream-spirit-2c2ce503@4a6563f2e21033db973270f1b5c27f59
+projection_coverage: section-sword-world-rpg-complete-edition-section-nightmare-incubus-succubus-dream-spirit-2c2ce503@81f5daa65fdcd7602d5f8138bf12d971
 ---
 
 # [ Nightmare ] (Incubus, Succubus/Dream Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

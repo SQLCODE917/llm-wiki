@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-stone-servant-8a394a2c@f0f50fadd876d5b55dbedce0a3a66271
+projection_coverage: section-sword-world-rpg-complete-edition-section-stone-servant-8a394a2c@779eb3954164c64a4c9e49a1c20cd899
 ---
 
 # Stone Servant
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-stone-servant]] - topic hub
-- [[sword-world-rpg-complete-edition-section-stone-servant-b8fcd212]] - same source heading
+- [[sword-world-rpg-complete-edition-stone-servant]] - topic hub: opens the topic page for Stone Servant
+- [[sword-world-rpg-complete-edition-section-stone-servant-b8fcd212]] - same source heading: another source section with the same heading, [ Stone Servant ]
 
 ## Statements
 

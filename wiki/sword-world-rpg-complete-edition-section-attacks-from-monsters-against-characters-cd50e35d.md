@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-attacks-from-monsters-against-characters-cd50e35d@e257b4d6dc4064fc5445e63f8424c872
+projection_coverage: section-sword-world-rpg-complete-edition-section-attacks-from-monsters-against-characters-cd50e35d@ad8e15697f8855bce5c7cc63ec354510
 ---
 
 # Attacks From Monsters Against Characters
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-attacks-from-monsters-against-characters-7a043551]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-16-attacks-from-monsters-against-characters-7a043551]] - same source heading: another source section with the same heading, Chapter 16: / Attacks From Monsters Against Characters
 
 ## Technical atoms
 

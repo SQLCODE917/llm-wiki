@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-tumble-agility-equipment-restriction-40d9ad95@ead4b3a1902f8380ec7ee08ffc953913
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-tumble-agility-equipment-restriction-40d9ad95@91b599eee84df1113421a21a62dd3cb0
 ---
 
 # Chapter 6: / [ ① Tumble [Agility] ] (Equipment restriction)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section: Chapter 6:
 
 ## Statements
 

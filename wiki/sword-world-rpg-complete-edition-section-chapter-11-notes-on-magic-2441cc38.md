@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38@293e7b749468bf85bf2e8ad897763a58
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38@e2d3f4c02836eba6b03ccd81b3091bd0
 ---
 
 # Chapter 11: Notes on Magic
@@ -16,33 +16,33 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-bfe3e221]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-roar-magic-ecba70c8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-1-basic-abilities-of-the-a02fadf0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-priest-skill-6f82944d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-reptile-check-intelligence-3f6a3ddc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-2-dragon-roar-magic-3d33fb50]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-spell-list-6154e7cb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-summon-40a24678]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-1st-level-dragon-roar-magic-list-iron-stomach-0adbd923]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-communicate-reptile-a8f623a2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-heavy-scale-fdf6f8c5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-summon-reptile-1c7dad9f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-swordclaw-51762d99]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-poison-proof-79e59a56]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-communicate-dragon-race-6a285e82]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-fire-proof-e99d3d77]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-s-wings-a28d9667]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-counter-spirit-dd798b5c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-fire-breath-7eb43570]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-5th-level-dragon-roar-magic-list-dragon-s-roar-b9a26274]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-partial-dragon-40937c17]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-summon-wyvern-e66ab0fb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-blood-protection-a2008013]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-7th-level-dragon-roar-magic-list-summon-wyrm-0f2daff6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-shape-change-dbedf837]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-8th-level-dragon-roar-magic-list-e41af287]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-9th-level-dragon-roar-magic-list-summon-lesser-dragon-7a1661b0]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-bfe3e221]] - broader source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-roar-magic-ecba70c8]] - narrower source section: Chapter 11: Notes on Magic / Dragon Roar Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-1-basic-abilities-of-the-a02fadf0]] - narrower source section: Chapter 11: Notes on Magic / 11.3.1 Basic Abilities of the
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-priest-skill-6f82944d]] - narrower source section: Chapter 11: Notes on Magic / Dragon Priest Skill
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-reptile-check-intelligence-3f6a3ddc]] - narrower source section: Chapter 11: Notes on Magic / Reptile Check [Intelligence]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-2-dragon-roar-magic-3d33fb50]] - narrower source section: Chapter 11: Notes on Magic / 11.3.2 Dragon Roar Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-spell-list-6154e7cb]] - narrower source section: Chapter 11: Notes on Magic / Spell List
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-summon-40a24678]] - narrower source section: Chapter 11: Notes on Magic / 《 Summon 》
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-1st-level-dragon-roar-magic-list-iron-stomach-0adbd923]] - narrower source section: Chapter 11: Notes on Magic / 1st Level Dragon Roar Magic List [ Iron Stomach ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-communicate-reptile-a8f623a2]] - narrower source section: Chapter 11: Notes on Magic / [ Communicate Reptile ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-heavy-scale-fdf6f8c5]] - narrower source section: Chapter 11: Notes on Magic / [ Heavy Scale ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-summon-reptile-1c7dad9f]] - narrower source section: Chapter 11: Notes on Magic / [ Summon Reptile ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-swordclaw-51762d99]] - narrower source section: Chapter 11: Notes on Magic / [ Swordclaw ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-poison-proof-79e59a56]] - narrower source section: Chapter 11: Notes on Magic / Poison Proof ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-communicate-dragon-race-6a285e82]] - narrower source section: Chapter 11: Notes on Magic / [Communicate Dragon Race]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-fire-proof-e99d3d77]] - narrower source section: Chapter 11: Notes on Magic / [ Fire Proof ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-s-wings-a28d9667]] - narrower source section: Chapter 11: Notes on Magic / [ Dragon's Wings ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-counter-spirit-dd798b5c]] - narrower source section: Chapter 11: Notes on Magic / [ Counter Spirit ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-fire-breath-7eb43570]] - narrower source section: Chapter 11: Notes on Magic / [ Fire Breath ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-5th-level-dragon-roar-magic-list-dragon-s-roar-b9a26274]] - narrower source section: Chapter 11: Notes on Magic / 5th Level Dragon Roar Magic List [ Dragon's Roar ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-partial-dragon-40937c17]] - narrower source section: Chapter 11: Notes on Magic / [ Partial Dragon ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-summon-wyvern-e66ab0fb]] - narrower source section: Chapter 11: Notes on Magic / [ Summon Wyvern ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-blood-protection-a2008013]] - narrower source section: Chapter 11: Notes on Magic / [ Blood Protection ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-7th-level-dragon-roar-magic-list-summon-wyrm-0f2daff6]] - narrower source section: Chapter 11: Notes on Magic / 7th Level Dragon Roar Magic List [ Summon Wyrm ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-shape-change-dbedf837]] - narrower source section: Chapter 11: Notes on Magic / [ Shape Change
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-8th-level-dragon-roar-magic-list-e41af287]] - narrower source section: Chapter 11: Notes on Magic / 8th Level Dragon Roar Magic List
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-9th-level-dragon-roar-magic-list-summon-lesser-dragon-7a1661b0]] - narrower source section: Chapter 11: Notes on Magic / 9th Level Dragon Roar Magic List [ Summon Lesser Dragon ]
 
 ## Statements by subsection
 

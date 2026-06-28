@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-van-blade-9edf7310@d3b0d08bf6c16f612d8b18abd4377b4b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-van-blade-9edf7310@599c6bea5c316bc01cbce1089aed683e
 ---
 
 # Chapter 14: / 《 Van Blade 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

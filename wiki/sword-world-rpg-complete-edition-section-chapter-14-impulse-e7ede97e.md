@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-impulse-e7ede97e@380d0c74d674e2d8e1b2c06c74de0e55
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-impulse-e7ede97e@bfe20b536510e71a2a22968e4f042450
 ---
 
 # Chapter 14: / 《 Impulse 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

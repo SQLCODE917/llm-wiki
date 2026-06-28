@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ice-adaptation-3bbd8a22@fdfbb585a9507bc9b5a048670f755d44
+projection_coverage: section-sword-world-rpg-complete-edition-section-ice-adaptation-3bbd8a22@c73cea3937966377d6bdd5363d66991a
 ---
 
 # 《 Ice Adaptation 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - broader source section: 13.6.4
 
 ## Statements
 

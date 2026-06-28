@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lucerne-hammer-63aaa415@6bc62ce913ce9c6bac83cf6548baaf95
+projection_coverage: section-sword-world-rpg-complete-edition-section-lucerne-hammer-63aaa415@5ab03c8679ca808bcf4526eb2928ab29
 ---
 
 # Lucerne Hammer
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section: 16.9
 
 ## Statements
 

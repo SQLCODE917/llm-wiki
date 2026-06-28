@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-stone-statue-dd48523b@7ea36395c99d1987c7a67ba546298454
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-stone-statue-dd48523b@37ec81fbb30c58172bc8934d0cc6df4a
 ---
 
 # Chapter 14: / 《 Stone Statue 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

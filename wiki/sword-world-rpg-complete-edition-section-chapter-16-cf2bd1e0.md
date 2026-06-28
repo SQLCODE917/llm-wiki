@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-cf2bd1e0@ab156d2f19aa00a37286305b99f37442
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-cf2bd1e0@54234fd56ce6d25ecdf49de63f92a0c0
 ---
 
 # Chapter 16:
@@ -16,14 +16,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-5af21319]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-combat-options-7e072fd2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-full-defense-a1d3cbd8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-strong-blow-46eac46a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-charge-8f450f1d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-snipe-e8540cc2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-mow-down-03c977c8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-grapple-58d3986c]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-5af21319]] - broader source section: Chapter 16:
+- [[sword-world-rpg-complete-edition-section-chapter-16-combat-options-7e072fd2]] - narrower source section: Chapter 16: / Combat Options
+- [[sword-world-rpg-complete-edition-section-chapter-16-full-defense-a1d3cbd8]] - narrower source section: Chapter 16: / Full Defense
+- [[sword-world-rpg-complete-edition-section-chapter-16-strong-blow-46eac46a]] - narrower source section: Chapter 16: / Strong Blow
+- [[sword-world-rpg-complete-edition-section-chapter-16-charge-8f450f1d]] - narrower source section: Chapter 16: / Charge
+- [[sword-world-rpg-complete-edition-section-chapter-16-snipe-e8540cc2]] - narrower source section: Chapter 16: / Snipe
+- [[sword-world-rpg-complete-edition-section-chapter-16-mow-down-03c977c8]] - narrower source section: Chapter 16: / Mow Down
+- [[sword-world-rpg-complete-edition-section-chapter-16-grapple-58d3986c]] - narrower source section: Chapter 16: / Grapple
 
 ## Statements by subsection
 

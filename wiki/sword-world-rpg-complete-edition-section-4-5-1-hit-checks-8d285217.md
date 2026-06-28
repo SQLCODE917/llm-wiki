@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-1-hit-checks-8d285217@0cc1c1a3f8006ad7d19d45ee3a3b857f
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-1-hit-checks-8d285217@cbbe7ac42e45431865f32d5e3bee8256
 ---
 
 # 4.5.1 Hit Checks
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-hit-check]] - topic hub
-- [[sword-world-rpg-complete-edition-section-4-7-1-hit-checks-eb13a0ec]] - same source heading
-- [[sword-world-rpg-complete-edition-section-hit-checks-0a7250f7]] - same source heading
+- [[sword-world-rpg-complete-edition-hit-check]] - topic hub: opens the topic page for Hit Check
+- [[sword-world-rpg-complete-edition-section-4-7-1-hit-checks-eb13a0ec]] - same source heading: another source section with the same heading, 4.7.1 Hit Checks
+- [[sword-world-rpg-complete-edition-section-hit-checks-0a7250f7]] - same source heading: another source section with the same heading, 《 Hit Checks 》
 
 ## Statements
 

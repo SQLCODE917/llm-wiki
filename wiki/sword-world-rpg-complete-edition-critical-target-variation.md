@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-critical-target-variation@cd9330c7ae68dad8cf96a43e2aefeea7
+projection_coverage: topic-sword-world-rpg-complete-edition-critical-target-variation@b349d99ca3e31a13c32d1337e9526173
 ---
 
 # Critical Target Variation
@@ -217,31 +217,31 @@ Table 16-1 Weapon Optional Rules
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-target]] - broader topic (13 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-strike]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-base]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-sword]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-type]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-weapon-critical]] - shared statements (9 shared statement(s))
-- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-bonus]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-check]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-effect]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-fire]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-hit-check]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-magical]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-please]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-success]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-16-critical-target-variation-f77740e3]] - source section (6 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-16-critical-target-variation-a611c88f]] - source section (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - broader topic: Target shares source evidence from Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction .; Target shares technical record from 【 Critical Target 】: Table 16-1 Weapon Optional Rules consider the finer differences based on Type          Attack Power Mod.    Strike Power Mod.    Critical Target the shape of weapons ... [truncated] (13 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms: Power shares source evidence from Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction .; Power shares technical table: Table 16-1 Weapon Optional Rules consider the finer differences based on Type          Attack Power Mod.    Strike Power Mod.    Critical Target the shape of weapons ... [truncated] (4 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-strike]] - shared statements and technical atoms: Strike shares source evidence from Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction .; Strike shares technical table: Table 16-1 Weapon Optional Rules consider the finer differences based on Type          Attack Power Mod.    Strike Power Mod.    Critical Target the shape of weapons ... [truncated] (4 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared statements and technical atoms: Table shares source evidence from Chapter 16: / Critical Target Variation: Under the basic rules, when using the Rating Table to determine damage, a 10 or greater is considered a critical , but with this rule, the chance of a critical is di ... [truncated]; Table shares technical table: Table 16-1 Weapon Optional Rules consider the finer differences based on Type          Attack Power Mod.    Strike Power Mod.    Critical Target the shape of weapons ... [truncated] (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-base]] - shared technical atoms: Base shares technical table: Table 16-1 Weapon Optional Rules consider the finer differences based on Type          Attack Power Mod.    Strike Power Mod.    Critical Target the shape of weapons ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms: Skill shares technical record from 【 Critical Target 】: critical target = 10 (9 if using thief skill) (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-sword]] - shared technical atoms: Sword shares technical record from 【 Critical Target 】: critical target = 10 (9 if using thief skill) (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-type]] - shared technical atoms: Type shares technical table: Table 16-1 Weapon Optional Rules consider the finer differences based on Type          Attack Power Mod.    Strike Power Mod.    Critical Target the shape of weapons ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-weapon-critical]] - shared statements: 《 Weapons Cannot Critical 》 shares source evidence from Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (9 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements: 【 Damage Reduction 】 shares source evidence from Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus]] - shared statements: Bonus shares source evidence from Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-check]] - shared statements: Check shares source evidence from Rules for Sleeping Monsters: Attacks against sleeping monsters are always a success unless you roll 2D and get double ones on your hit check (even when attacking a sleeping opponent, double ones ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared statements: Effect shares source evidence from [ Weak Point ] (Spell Level=3): Resist=Negated effect This spell shows you your target's weak point and guides your attack there. This effect is expressed as a -1 to the attacker's critical target. ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-evasion]] - shared statements: Evasion shares source evidence from Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: Filling Out the Character Sheet shares source evidence from Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-fire]] - shared statements: Fire shares source evidence from [ Firebolt ] (Salamander/Fire Spirit): To use this spell, there must be a fire (or a controlled salamander) large enough to burn a torch within at least 10 meters around the caster. A line of fire up to 1 ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-hit-check]] - shared statements: 4.5.1 Hit Checks shares source evidence from Ram: This is an attack method where you knock an opponent prone by charging forward. This can only be performed with the fi ghter skill , it cannot be used with the thief ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared statements: Magical shares source evidence from [ Firebolt ] (Salamander/Fire Spirit): To use this spell, there must be a fire (or a controlled salamander) large enough to burn a torch within at least 10 meters around the caster. A line of fire up to 1 ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-please]] - shared statements: Please shares source evidence from Thrust: Its tip is sharply pointed. Y ou can treat these the same as spears. Please use spear/2H for attack power modifiers, strike power modifiers, critical target, etc. It ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements: Resist shares source evidence from [ Force ]: When you chant this spell, an invisible shockwave is emitted from the caster, dealing strike power 10 damage to the target. If the target successfully resists, the s ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements: Spell shares source evidence from [ Fire Weapon ]: This is a spell used on weapons. The targeted weapon will now emit a magical flame from its striking end, adding a +10 bonus to the weapon's own strike power. This s ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-success]] - shared statements: Success shares source evidence from [ Force ]: When you chant this spell, an invisible shockwave is emitted from the caster, dealing strike power 10 damage to the target. If the target successfully resists, the s ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-16-critical-target-variation-f77740e3]] - source section: Chapter 16: / Critical Target Variation shares source evidence from Chapter 16: / Critical Target Variation: Under the basic rules, when using the Rating Table to determine damage, a 10 or greater is considered a critical , but with this rule, the chance of a critical is di ... [truncated]; Chapter 16: / Critical Target Variation shares technical record from Chapter 16: / Critical Target Variation: Table 16-1 Weapon Optional Rules consider the finer differences based on Type          Attack Power Mod.    Strike Power Mod.    Critical Target the shape of weapons ... [truncated] (6 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-16-critical-target-variation-a611c88f]] - source section: Chapter 16: / Critical Target Variation shares source evidence from Chapter 16: / Critical Target Variation: Critical target variation indicates that the armor reduces the chance of being dealt a strong blow from some weapons while wearing it. If this field says yes , the o ... [truncated]; Chapter 16: / Critical Target Variation shares technical table: Table 16-1 Weapon Optional Rules consider the finer differences based on Type          Attack Power Mod.    Strike Power Mod.    Critical Target the shape of weapons ... [truncated] (2 shared statement(s), 1 shared atom(s))
 
 ## Source
 

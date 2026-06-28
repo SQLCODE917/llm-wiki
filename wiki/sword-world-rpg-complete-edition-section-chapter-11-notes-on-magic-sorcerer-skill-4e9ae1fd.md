@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-sorcerer-skill-4e9ae1fd@9e4cf615e0d337b88d58dc793ebac747
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-sorcerer-skill-4e9ae1fd@51c8237c2f61944074dd1708099bfbb9
 ---
 
 # Chapter 11: Notes on Magic / 《 Sorcerer Skill 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-160fd94d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-160fd94d]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

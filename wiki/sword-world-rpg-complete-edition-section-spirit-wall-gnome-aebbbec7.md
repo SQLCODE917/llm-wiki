@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-gnome-aebbbec7@ef2f097799665455971eafa9bd33d56d
+projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-gnome-aebbbec7@4a3600ec17ce79ea248c53ff82aa7e31
 ---
 
 # Spirit Wall: Gnome
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-gnome-a968da3a]] - same source heading
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
+- [[sword-world-rpg-complete-edition-section-spirit-wall-gnome-a968da3a]] - same source heading: another source section with the same heading, [ Spirit Wall: Gnome ]
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-power-26f807ef@abb596456ce14e45ee339119b4724384
+projection_coverage: section-sword-world-rpg-complete-edition-section-power-26f807ef@8c250b7e631fa6293fffbf6b7fadd7ec
 ---
 
 # Power
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-power]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-14-powers-f32b9086]] - same source heading
+- [[sword-world-rpg-complete-edition-power]] - topic hub: opens the topic page for Power
+- [[sword-world-rpg-complete-edition-section-chapter-14-powers-f32b9086]] - same source heading: another source section with the same heading, Chapter 14: / 《 Powers 》
 
 ## Statements
 

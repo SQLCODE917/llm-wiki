@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-youma-4a37a8db@047788843adb48e11f20ec7dbdae91b1
+projection_coverage: section-sword-world-rpg-complete-edition-section-youma-4a37a8db@ff49010058aacdb3e9e182eee2398ba4
 ---
 
 # Youma
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f]] - broader source section
-- [[sword-world-rpg-complete-edition-section-youma-098541cc]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f]] - broader source section: 13.2.3
+- [[sword-world-rpg-complete-edition-section-youma-098541cc]] - same source heading: another source section with the same heading, 《 Youma 》
 
 ## Statements
 

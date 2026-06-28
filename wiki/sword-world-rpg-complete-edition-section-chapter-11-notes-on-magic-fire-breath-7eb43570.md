@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-fire-breath-7eb43570@52e6130addf9540020ece9750b91c11d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-fire-breath-7eb43570@ef56953c3830c29993b12af2aa55de69
 ---
 
 # Chapter 11: Notes on Magic / [ Fire Breath ]
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
-- [[sword-world-rpg-complete-edition-fire-breath]] - topic hub
-- [[sword-world-rpg-complete-edition-section-fire-breath-e8d25a87]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-fire-breath]] - topic hub: opens the topic page for Fire Breath
+- [[sword-world-rpg-complete-edition-section-fire-breath-e8d25a87]] - same source heading: another source section with the same heading, 《 Fire Breath 》
 
 ## Statements
 

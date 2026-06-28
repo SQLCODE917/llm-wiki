@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-the-number-of-times-the-game-master-has-to-roll-dice-during-combat-will-be-drastically-reduced-c61485e9@e579de88719bdf1c03c4ba95b40697af
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-the-number-of-times-the-game-master-has-to-roll-dice-during-combat-will-be-drastically-reduced-c61485e9@7f5e4dd0e6ba9b8eb1a6b858c69cf31b
 ---
 
 # [ 1. The number of times the game master has to roll dice during combat will be drastically reduced ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-3-d13323e4]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-3-d13323e4]] - broader source section: 13.3
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-restrictions-on-using-spirit-magic-abef08af@6ffcf0bc320d7f9f8dd66c6f859c3c65
+projection_coverage: section-sword-world-rpg-complete-edition-section-restrictions-on-using-spirit-magic-abef08af@0d5661dbce01eae6bdf1ada5435a13ab
 ---
 
 # Restrictions on Using Spirit Magic
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

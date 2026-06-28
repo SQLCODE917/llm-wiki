@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-negotiation-mental-power-not-retriable-f24eb121@f445a49036eaebb9ade11680ab9eb919
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-negotiation-mental-power-not-retriable-f24eb121@a3f73146c3584ed953689ea481bf0712
 ---
 
 # Chapter 7: / [ ② Negotiation [Mental Power]] (Not retriable)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-13a77f13]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-7-13a77f13]] - broader source section: Chapter 7:
 
 ## Statements
 

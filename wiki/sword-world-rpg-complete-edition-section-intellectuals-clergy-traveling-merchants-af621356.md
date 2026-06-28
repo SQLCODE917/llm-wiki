@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-intellectuals-clergy-traveling-merchants-af621356@b707b008483f712d471eb377ee332543
+projection_coverage: section-sword-world-rpg-complete-edition-section-intellectuals-clergy-traveling-merchants-af621356@3cdde15afccf479b080832c6c84625d3
 ---
 
 # Intellectuals/Clergy/ Traveling Merchants
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

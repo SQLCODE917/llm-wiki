@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-enemy-strike-rolls-can-no-longer-critical-b4b634d3@199b4cf347259cf42627ec5a35f1e740
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-enemy-strike-rolls-can-no-longer-critical-b4b634d3@27e7251cd4e27b25e62b234d9d44b668
 ---
 
 # [ 2. Enemy strike rolls can no longer critical ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-3-d13323e4]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-3-d13323e4]] - broader source section: 13.3
 
 ## Statements
 

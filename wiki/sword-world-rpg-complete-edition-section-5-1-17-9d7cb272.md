@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-17-9d7cb272@cbc9929a450cbb390ce0ae89fa02d8cb
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-17-9d7cb272@00469ba772560a56730f99c566177ed4
 ---
 
 # 5.1.17
@@ -16,22 +16,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-special-holy-magic-list-85819fe6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-jihad-spell-level-10-1c32a9e6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-myrii-special-holy-magic-list-battle-song-spell-level-5-96063b3f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-divine-armor-spell-level-7-a7d1304e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-divine-weapon-spell-level-7-ddbf3740]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-rahda-special-holy-magic-list-d3fd19c0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-inspiration-spell-level-3-b0d6aa02]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-weak-point-spell-level-3-07d937f7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-legend-spell-level-7-be298c5e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-cha-za-special-holy-magic-list-luck-3ead3ce9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-guard-trading-spell-level-5-3923aec9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-marfa-special-holy-magic-list-e4dc20db]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-return-home-spell-level-6-ef9e9acf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-braki-special-holy-magic-list-d6ded5cf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sense-metal-spell-level-3-18ca42a0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-heat-metal-spell-level-5-421ded54]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-special-holy-magic-list-85819fe6]] - narrower source section: Special Holy Magic List
+- [[sword-world-rpg-complete-edition-section-jihad-spell-level-10-1c32a9e6]] - narrower source section: [ Jihad ] (Spell Level=10)
+- [[sword-world-rpg-complete-edition-section-myrii-special-holy-magic-list-battle-song-spell-level-5-96063b3f]] - narrower source section: Myrii Special Holy Magic List [ Battle Song ] (Spell Level=5)
+- [[sword-world-rpg-complete-edition-section-divine-armor-spell-level-7-a7d1304e]] - narrower source section: [ Divine Armor ] (Spell Level=7)
+- [[sword-world-rpg-complete-edition-section-divine-weapon-spell-level-7-ddbf3740]] - narrower source section: [ Divine Weapon ] (Spell Level=7)
+- [[sword-world-rpg-complete-edition-section-rahda-special-holy-magic-list-d3fd19c0]] - narrower source section: Rahda Special Holy Magic List
+- [[sword-world-rpg-complete-edition-section-inspiration-spell-level-3-b0d6aa02]] - narrower source section: [ Inspiration ] (Spell Level=3)
+- [[sword-world-rpg-complete-edition-section-weak-point-spell-level-3-07d937f7]] - narrower source section: [ Weak Point ] (Spell Level=3)
+- [[sword-world-rpg-complete-edition-section-legend-spell-level-7-be298c5e]] - narrower source section: [ Legend ] (Spell Level=7)
+- [[sword-world-rpg-complete-edition-section-cha-za-special-holy-magic-list-luck-3ead3ce9]] - narrower source section: Cha Za Special Holy Magic List [ Luck ]
+- [[sword-world-rpg-complete-edition-section-guard-trading-spell-level-5-3923aec9]] - narrower source section: [ Guard Trading ] (Spell Level=5)
+- [[sword-world-rpg-complete-edition-section-marfa-special-holy-magic-list-e4dc20db]] - narrower source section: Marfa Special Holy Magic List
+- [[sword-world-rpg-complete-edition-section-return-home-spell-level-6-ef9e9acf]] - narrower source section: [ Return Home ] (Spell Level=6)
+- [[sword-world-rpg-complete-edition-section-braki-special-holy-magic-list-d6ded5cf]] - narrower source section: Braki Special Holy Magic List
+- [[sword-world-rpg-complete-edition-section-sense-metal-spell-level-3-18ca42a0]] - narrower source section: [ Sense Metal ] (Spell Level=3)
+- [[sword-world-rpg-complete-edition-section-heat-metal-spell-level-5-421ded54]] - narrower source section: [ Heat Metal ] (Spell Level=5)
 
 ## Statements by subsection
 

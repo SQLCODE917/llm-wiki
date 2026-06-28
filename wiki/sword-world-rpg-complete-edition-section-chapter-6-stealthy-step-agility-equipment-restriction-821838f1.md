@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-stealthy-step-agility-equipment-restriction-821838f1@9f9fd263bdf29e6579b7fc91de1470a6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-stealthy-step-agility-equipment-restriction-821838f1@6f871775554526cd7bff0b9655e3083c
 ---
 
 # Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction)
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section
-- [[sword-world-rpg-complete-edition-stealthy-step-agility-equipment-restriction]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-6-stealthy-step-agility-equipment-restriction-264f4883]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section: Chapter 6:
+- [[sword-world-rpg-complete-edition-stealthy-step-agility-equipment-restriction]] - topic hub: opens the topic page for Stealthy Step Agility Equipment Restriction
+- [[sword-world-rpg-complete-edition-section-chapter-6-stealthy-step-agility-equipment-restriction-264f4883]] - same source heading: another source section with the same heading, Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction)
 
 ## Statements
 

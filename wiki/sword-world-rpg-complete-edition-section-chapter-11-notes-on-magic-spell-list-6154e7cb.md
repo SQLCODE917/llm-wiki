@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-spell-list-6154e7cb@21b3cb4dc8557bac8ec8bffc7280b5c6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-spell-list-6154e7cb@bf14d48c51fa4bf874911f864e49b5d5
 ---
 
 # Chapter 11: Notes on Magic / Spell List
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

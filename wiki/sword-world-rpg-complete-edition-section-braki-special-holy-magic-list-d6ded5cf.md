@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-braki-special-holy-magic-list-d6ded5cf@50ee51313ab7c006e030ef00e0f31025
+projection_coverage: section-sword-world-rpg-complete-edition-section-braki-special-holy-magic-list-d6ded5cf@9d24708e3c10397841095711dd4187ee
 ---
 
 # Braki Special Holy Magic List
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Technical atoms
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-2-f1403546@d41348d381df1bb7d0f7c3d8c67b2936
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-2-f1403546@24cd031bc250e8f795cde4419f6e99fc
 ---
 
 # 1.2
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-grassrunner-0eb50ced]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-elf-73a5bcb6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-half-elf-453be4ba]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-skills-a38d8bc3]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-grassrunner-0eb50ced]] - narrower source section: 【 Grassrunner 】
+- [[sword-world-rpg-complete-edition-section-elf-73a5bcb6]] - narrower source section: 【 Elf 】
+- [[sword-world-rpg-complete-edition-section-half-elf-453be4ba]] - narrower source section: 【 Half-Elf 】
+- [[sword-world-rpg-complete-edition-section-skills-a38d8bc3]] - narrower source section: Skills
 
 ## Statements by subsection
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-languages-intelligence-c4de4812@c36f8e8020ccefed3f933b82aa969fb7
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-languages-intelligence-c4de4812@6d445628bf1f9a120f8e565ed945d3eb
 ---
 
 # Chapter 6: / [ ② Languages [Intelligence]]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-80e28a91]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-80e28a91]] - broader source section: Chapter 6:
 
 ## Statements
 

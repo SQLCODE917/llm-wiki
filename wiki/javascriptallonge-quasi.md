@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-quasi
 page_kind: concept
-summary: Quasi: 5 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
+summary: Quasi: 5 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-quasi@6dd4dc942b9679b6e28ae33e6df1065d
+projection_coverage: topic-javascriptallonge-quasi@1cd0496552881d41e3d7938b28cfe863
 ---
 
 # Quasi
@@ -15,55 +15,63 @@ What [[javascriptallonge]] covers about quasi:
 
 ## Statements
 
-- Quasi-literal strings are denoted with back quotes, and most strings that can be expressed as literals have the exact same meaning as quasi-literals, e.g. _(javascriptallonge.pdf (source-range-83ecb080-01502))_
-- JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function’s body is evaluated. _(javascriptallonge.pdf (source-range-83ecb080-01517))_
-- A quasi-literal can contain an expression to be evaluated. _(javascriptallonge.pdf (source-range-83ecb080-01504))_
-- A quasi-literal is computationally equivalent to an expression using +. _(javascriptallonge.pdf (source-range-83ecb080-01508))_
-- Quasi-literals are expressions that resemble their result. _(javascriptallonge.pdf (source-range-83ecb080-01512))_
+### A Warm Cup: Basic Strings and Quasi-Literals
 
-## Technical atoms
+- A Warm Cup: Basic Strings and Quasi-Literals
 
-### Technical atom 1
+180
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01504))_
+An expression is any valid unit of code that resolves to a value.—Mozilla Development Network: Expressions and operators[87] Like most programming languages, JavaScript also has string literals, like 'fubar' or 'fizzbuzz'. Special characters can be included in a string literal by means of an _escape sequence_ . For example, the escape sequence \n inserts a newline character in a string literal, like this: 'first line\nsecond line'.
 
-> Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this “unquoting,” the more contemporary term is “interpolation.” An unquoted expression is inserted in a quasi-literal with ${expression}. The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string.
+There are operators that can be used on strings. The most common is +, it _concatenates_ : 'fu' + 'bar' _//=> 'fubar'_
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01503))_
+String manipulation is extremely common in programming. Writing is a big part of what makes us human, and strings are how JavaScript and most other languages represent writing.
 
-> `foobar` _//=> 'foobar'_ `fizz` + `buzz` _//=> 'fizzbuzz'_
+## **quasi-literals**
 
-### Technical atom 2
+JavaScript supports _quasi-literal strings_ , a/k/a “Template Strings” or “String Interpolation Expressions.” A quasi-literal string is something that looks like a string literal, but is actually an expression. Quasi-literal strings are denoted with back quotes, and most strings that can be expressed as literals have the exact same meaning as quasi-literals, e.g.
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01505, source-range-83ecb080-01508))_
+`foobar` _//=> 'foobar'_ `fizz` + `buzz` _//=> 'fizzbuzz'_
 
-> For example: A quasi-literal is computationally equivalent to an expression using +. So the above expression could also be written:
+Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this “unquoting,” the more contemporary term is “interpolation.” An unquoted expression is inserted in a quasi-literal with ${expression}. The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string.
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01506))_
+For example:
 
-> - `A popular number for nerds is **${** 40 + 2 **}** `
+- `A popular number for nerds is **${** 40 + 2 **}** `
 
-### Technical atom 3
+- _//=> 'A popular number for nerds is 42'_
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01512))_
+A quasi-literal is computationally equivalent to an expression using +. So the above expression could also be written:
 
-> 'A popular number for nerds is ' + (40 + 2) - _//=> 'A popular number for nerds is 42'_ However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They’re easier to read and it’s easier to avid errors like the following:
+> 87https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators _(javascriptallonge.pdf (source-range-83ecb080-00242))_
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01513))_
+- A Warm Cup: Basic Strings and Quasi-Literals
 
-> - 'A popular number for nerds is' + (40 + 2) - _//=> 'A popular number for nerds is42'_
+181
+
+- 'A popular number for nerds is ' + (40 + 2) - _//=> 'A popular number for nerds is 42'_ However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They’re easier to read and it’s easier to avid errors like the following:
+
+- 'A popular number for nerds is' + (40 + 2) - _//=> 'A popular number for nerds is42'_
+
+## **evaluation time**
+
+Like any other expression, quasi-literals are evaluated _late_ , when that line or lines of code is evaluated.
+
+So for example, **const** name = "Harry"; **const** greeting = (name) => `Hello my name is **${** name **}** `; greeting('Arthur Dent') - _//=> 'Hello my name is Arthur Dent'_
+
+JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function’s body is evaluated. Thus, name is not bound to "Harry", it is bound to 'Arthur Dent', the value of the parameter when the function is invoked.
+
+This is exactly what we’d expect if we’d written it like this: **const** greeting = (name) => 'Hello my name is ' + name; greeting('Arthur Dent') - _//=> 'Hello my name is Arthur Dent'_ _(javascriptallonge.pdf (source-range-83ecb080-00243))_
 
 
 ## Related pages
 
-- [[javascriptallonge-quasi-literal]] - narrower topic (5 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-literal]] - shared statements and technical atoms (5 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-string]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-warm-cup-string]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-expression]] - shared technical atoms (3 shared atom(s))
-- [[javascriptallonge-evaluate]] - shared statements (1 shared statement(s))
-- [[javascriptallonge-function]] - shared statements (1 shared statement(s))
-- [[javascriptallonge-javascript]] - shared statements (1 shared statement(s))
+- [[javascriptallonge-quasi-literal]] - narrower topic: Quasi Literal shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: A Warm Cup: Basic Strings and Quasi-Literals  180  An expression is any valid unit of code that resolves to a value.—Mozilla Development Network: Expressions and ope ... [truncated] (5 shared statement(s))
+- [[javascriptallonge-literal]] - shared statements: Literal shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: A Warm Cup: Basic Strings and Quasi-Literals  180  An expression is any valid unit of code that resolves to a value.—Mozilla Development Network: Expressions and ope ... [truncated] (5 shared statement(s))
+- [[javascriptallonge-evaluate]] - shared statements: Evaluate shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: A Warm Cup: Basic Strings and Quasi-Literals  181  - 'A popular number for nerds is ' + (40 + 2) - _//=> 'A popular number for nerds is 42'_ However, there is a big ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-function]] - shared statements: Function shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: A Warm Cup: Basic Strings and Quasi-Literals  181  - 'A popular number for nerds is ' + (40 + 2) - _//=> 'A popular number for nerds is 42'_ However, there is a big ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-javascript]] - shared statements: Javascript shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: A Warm Cup: Basic Strings and Quasi-Literals  181  - 'A popular number for nerds is ' + (40 + 2) - _//=> 'A popular number for nerds is 42'_ However, there is a big ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-string]] - shared statements: String shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: A Warm Cup: Basic Strings and Quasi-Literals  180  An expression is any valid unit of code that resolves to a value.—Mozilla Development Network: Expressions and ope ... [truncated] (1 shared statement(s))
 
 ## Source
 

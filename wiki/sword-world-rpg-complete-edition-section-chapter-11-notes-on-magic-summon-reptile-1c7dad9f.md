@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-summon-reptile-1c7dad9f@ce74ebe0762ba8ac36f3d1741df7bb36
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-summon-reptile-1c7dad9f@40833b67b1e1058a92d16d75ef171b99
 ---
 
 # Chapter 11: Notes on Magic / [ Summon Reptile ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

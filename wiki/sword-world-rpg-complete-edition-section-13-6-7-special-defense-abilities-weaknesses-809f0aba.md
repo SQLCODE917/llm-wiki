@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-7-special-defense-abilities-weaknesses-809f0aba@37f77da0e71f39ba65b76cca77361886
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-7-special-defense-abilities-weaknesses-809f0aba@767bd406c57d62de6a5c069c2613750d
 ---
 
 # 13.6.7 Special Defense Abilities: Weaknesses
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section: 13.6
 
 ## Statements
 

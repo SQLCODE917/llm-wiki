@@ -16,6 +16,7 @@ class RelatedTopicLink:
     relation: str
     shared_entry_ids: tuple[str, ...] = ()
     shared_atom_ids: tuple[str, ...] = ()
+    explanation: str = ""
 
     @property
     def shared_entry_count(self) -> int:

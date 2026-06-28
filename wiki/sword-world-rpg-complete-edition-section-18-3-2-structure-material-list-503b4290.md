@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-2-structure-material-list-503b4290@4f50d2ff71df1be76446c7e98720f8c9
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-2-structure-material-list-503b4290@8b8524001502167e6bd3563088ec2032
 ---
 
 # 18.3.2 Structure Material List
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Technical atoms
 

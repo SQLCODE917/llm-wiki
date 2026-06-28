@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-defense-points-44b9d084@a367ec30a7a8e5b284b9312da44454ef
+projection_coverage: section-sword-world-rpg-complete-edition-section-defense-points-44b9d084@8593788ed7f1cb26247125f862a25156
 ---
 
 # 《 Defense Points 》
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section
-- [[sword-world-rpg-complete-edition-defense]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-16-full-defense-a1d3cbd8]] - same source heading
-- [[sword-world-rpg-complete-edition-section-defense-points-522beb2f]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-2-1-d861703c]] - broader source section: 13.2.1
+- [[sword-world-rpg-complete-edition-defense]] - topic hub: opens the topic page for Defense
+- [[sword-world-rpg-complete-edition-section-chapter-16-full-defense-a1d3cbd8]] - same source heading: another source section with the same heading, Chapter 16: / Full Defense
+- [[sword-world-rpg-complete-edition-section-defense-points-522beb2f]] - same source heading: another source section with the same heading, Defense Points
 
 ## Statements
 

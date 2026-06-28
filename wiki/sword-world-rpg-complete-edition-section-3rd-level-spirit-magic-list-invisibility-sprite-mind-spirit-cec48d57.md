@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3rd-level-spirit-magic-list-invisibility-sprite-mind-spirit-cec48d57@36b11fc3362ef6b52b5b07dbaab691a1
+projection_coverage: section-sword-world-rpg-complete-edition-section-3rd-level-spirit-magic-list-invisibility-sprite-mind-spirit-cec48d57@1d4477dbeb4382847a7ba43f5b7539d0
 ---
 
 # 3rd Level Spirit Magic List [ Invisibility ] (Sprite/Mind Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

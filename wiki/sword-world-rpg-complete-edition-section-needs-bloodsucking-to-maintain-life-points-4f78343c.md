@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-needs-bloodsucking-to-maintain-life-points-4f78343c@b8384e810c876d8578f0bbcaea657260
+projection_coverage: section-sword-world-rpg-complete-edition-section-needs-bloodsucking-to-maintain-life-points-4f78343c@480b8e70417c4c30840396dcb1be8c51
 ---
 
 # 《 Needs Bloodsucking to Maintain Life Points 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section: 13.6
 
 ## Statements
 

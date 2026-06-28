@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-low-ancient@406f881c1f3cbcfe3ab56dbf01559c8b
+projection_coverage: topic-sword-world-rpg-complete-edition-low-ancient@4c68a8096b9359fc6f2120a54a30ce59
 ---
 
 # 《 Low Ancient 》
@@ -103,24 +103,24 @@ What [[sword-world-rpg-complete-edition]] covers about 《 low ancient 》:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-ancient]] - broader topic (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-12-normal-language]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-sage-skill]] - shared statements and technical atoms (3 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-agility]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-move]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-magical]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-sorcerer]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-sword]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-low-ancient-f95d2075]] - source section (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-low-ancient-ce4fc1bf]] - source section (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-ancient]] - broader topic: Ancient shares source evidence from 《 Low Ancient 》: This was an everyday language of the ancient kingdom, called low ancient , and was the language used by citizens and slaves. Sorcerers can speak, read and write in t ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-12-normal-language]] - shared statements and technical atoms: 12.1.1 Normal Languages shares source evidence from Chapter 12: Various Checks / 《 Common 》: Common is the language most widely used in the world of Sword World . This language was first used during the early new kingdom period, replacing low ancient which h ... [truncated]; 12.1.1 Normal Languages shares technical record from Chapter 12: Various Checks / Languages: An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common). (4 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-sage-skill]] - shared statements and technical atoms: Sage Skill shares source evidence from Chapter 6: / Sage Skill: There are limitations to learning languages through the sage skill. Characters who cannot read common must fi rst learn how to read common before learning other lang ... [truncated]; Sage Skill shares technical record from Chapter 12: Various Checks / Languages: An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common). (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms: Adventure shares source evidence from Chapter 12: Various Checks / Languages: If an adventurer who has learned low ancient through the sage skill acquires the sorcerer skill, they will not be able to learn another language because it would jus ... [truncated]; Adventure shares technical record from Chapter 12: Various Checks / Languages: An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common). (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared statements and technical atoms: Adventurer shares source evidence from Chapter 12: Various Checks / Languages: If an adventurer who has learned low ancient through the sage skill acquires the sorcerer skill, they will not be able to learn another language because it would jus ... [truncated]; Adventurer shares technical record from Chapter 12: Various Checks / Languages: An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common). (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms: Skill shares technical record from Chapter 12: Various Checks / Languages: An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common). (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-agility]] - shared statements: Agility shares source evidence from [ Lamia ]: Monster Level=5 Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11 Evasi ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements: Level shares source evidence from [ Lamia ]: Monster Level=5 Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11 Evasi ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-move]] - shared statements: Move shares source evidence from [ Lamia ]: Monster Level=5 Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11 Evasi ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-movement]] - shared statements: Movement shares source evidence from [ Lamia ]: Monster Level=5 Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11 Evasi ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-rarity]] - shared statements: Rarity shares source evidence from [ Lamia ]: Monster Level=5 Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11 Evasi ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements: Character shares source evidence from Chapter 6: / Sage Skill: There are limitations to learning languages through the sage skill. Characters who cannot read common must fi rst learn how to read common before learning other lang ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared statements: Magical shares source evidence from Chapter 14: / [ Seal Stone ]: This stone's magical power will appear when you aim it at an opponent and chant a password in low ancient. Those who fail to resist will have their soul sealed in th ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements: Power shares source evidence from Chapter 14: / [ Seal Stone ]: This stone's magical power will appear when you aim it at an opponent and chant a password in low ancient. Those who fail to resist will have their soul sealed in th ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-sorcerer]] - shared statements: Sorcerer shares source evidence from 《 Low Ancient 》: This was an everyday language of the ancient kingdom, called low ancient , and was the language used by citizens and slaves. Sorcerers can speak, read and write in t ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-sword]] - shared statements: Sword shares source evidence from Chapter 14: / 《 Brain Blade 》: This sword has knowledge about enemies and speaks to the user's mind, telling him or her the enemy's name and strength in concrete scores. The contents of this knowl ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-low-ancient-f95d2075]] - source section: 《 Low Ancient 》 shares source evidence from 《 Low Ancient 》: This was an everyday language of the ancient kingdom, called low ancient , and was the language used by citizens and slaves. Sorcerers can speak, read and write in t ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-low-ancient-ce4fc1bf]] - source section: Chapter 12: Various Checks / 《 Low Ancient 》 shares source evidence from Chapter 12: Various Checks / 《 Low Ancient 》: Low ancient is the normal language used in the ancient kingdom of Kastuul, which once flourished throughout Alecrast. Although it is now a dead language, its words a ... [truncated]; Chapter 12: Various Checks / 《 Low Ancient 》 shares technical record from Chapter 12: Various Checks / 《 Low Ancient 》: This is because you cannot begin to understand the great civilization of the ancient kingdom unless you know low ancient. (3 shared statement(s), 1 shared atom(s))
 
 ## Source
 

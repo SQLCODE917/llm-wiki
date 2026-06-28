@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-2-09544b5c@8dff0d956f5ed52b2a30d311ab9b4655
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-2-09544b5c@636f7b6b51866a3336a961a1ffe9341e
 ---
 
 # 4.10.2
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-10-d6286642]] - broader source section
-- [[sword-world-rpg-complete-edition-section-silver-weapons-and-armor-5436e470]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-4-10-d6286642]] - broader source section: 4.10
+- [[sword-world-rpg-complete-edition-section-silver-weapons-and-armor-5436e470]] - narrower source section: Silver Weapons and Armor
 
 ## Statements by subsection
 

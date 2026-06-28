@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-poison-18aeb03b@208187c0891616c8b544f78ee2fe3dd0
+projection_coverage: section-sword-world-rpg-complete-edition-section-poison-18aeb03b@4dfb6cb3346e47720bc30c861e99ee5b
 ---
 
 # 《 Poison 》
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-2-0557ea23]] - broader source section
-- [[sword-world-rpg-complete-edition-poison]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-2-1-poisons-f45a120b]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-6-2-0557ea23]] - broader source section: 13.6.2
+- [[sword-world-rpg-complete-edition-poison]] - topic hub: opens the topic page for Poison
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-2-1-poisons-f45a120b]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / 12.2.1 Poisons
 
 ## Statements
 

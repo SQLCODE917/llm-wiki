@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-twisted-sling-d203f68a@7a6cdd53a86d919340c36a8f766e0c54
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-twisted-sling-d203f68a@df4c3c7cf12b5f35cad5a5dc663b00ce
 ---
 
 # Chapter 14: / 《 Twisted Sling 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

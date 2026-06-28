@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-stone-ceadbd7d@70b1654e056cb084f9eb2a44fc8eabde
+projection_coverage: section-sword-world-rpg-complete-edition-section-stone-ceadbd7d@27309398077f8a38e03fcbaa2cac1750
 ---
 
 # [ Stone ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Technical atoms
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-ff6588ad@ef59a8f7e9291fbcbe320a5cfab70042
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-ff6588ad@bce5db92ec08c86127388116ca7735d4
 ---
 
 # Chapter 6:
@@ -16,28 +16,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-308b01c1]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-treasure-appraisal-intelligence-not-retriable-01894046]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-sing-mental-power-0ee11690]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-play-instrument-dexterity-e2756c58]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-medicines-intelligence-appraisal-only-not-retriable-e8f93edd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-languages-spoken-intelligence-803e6777]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-spellsongs-mental-power-7dfdf54e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-folklore-knowledge-intelligence-not-retriable-a70e5e7c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-common-adventurer-abilities-abdf95fb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-riding-agility-440b65c0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-swim-agility-f8f7874e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-ship-steering-dexterity-d697e71b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-climb-agility-5b7d4ed0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-example-8dd0d644]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-example-1-71f64697]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-example-2-38fc3737]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-falling-damage-dc2e82dd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-base-target-score-10-1be63992]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-example-aa66fa86]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-long-jump-high-jump-agility-3ef93f0b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-example-1-d7b82501]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-6-example-2-f6fc08de]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-308b01c1]] - broader source section: Chapter 6:
+- [[sword-world-rpg-complete-edition-section-chapter-6-treasure-appraisal-intelligence-not-retriable-01894046]] - narrower source section: Chapter 6: / [ ⑥ Treasure Appraisal [Intelligence] ] (Not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-sing-mental-power-0ee11690]] - narrower source section: Chapter 6: / [ ① Sing [Mental Power] ]
+- [[sword-world-rpg-complete-edition-section-chapter-6-play-instrument-dexterity-e2756c58]] - narrower source section: Chapter 6: / [ ② Play Instrument [Dexterity]]
+- [[sword-world-rpg-complete-edition-section-chapter-6-medicines-intelligence-appraisal-only-not-retriable-e8f93edd]] - narrower source section: Chapter 6: / [ ⑦ Medicines [Intelligence]] ((Appraisal only) Not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-languages-spoken-intelligence-803e6777]] - narrower source section: Chapter 6: / [ ③ Languages (Spoken) [Intelligence] ]
+- [[sword-world-rpg-complete-edition-section-chapter-6-spellsongs-mental-power-7dfdf54e]] - narrower source section: Chapter 6: / [ ④ Spellsongs [Mental Power]]
+- [[sword-world-rpg-complete-edition-section-chapter-6-folklore-knowledge-intelligence-not-retriable-a70e5e7c]] - narrower source section: Chapter 6: / [ ⑤ Folklore Knowledge [Intelligence] ] (Not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-common-adventurer-abilities-abdf95fb]] - narrower source section: Chapter 6: / Common Adventurer Abilities
+- [[sword-world-rpg-complete-edition-section-chapter-6-riding-agility-440b65c0]] - narrower source section: Chapter 6: / [ ① Riding [Agility] ]
+- [[sword-world-rpg-complete-edition-section-chapter-6-swim-agility-f8f7874e]] - narrower source section: Chapter 6: / [ ② Swim [Agility] ]
+- [[sword-world-rpg-complete-edition-section-chapter-6-ship-steering-dexterity-d697e71b]] - narrower source section: Chapter 6: / [ ③ Ship Steering [Dexterity]]
+- [[sword-world-rpg-complete-edition-section-chapter-6-climb-agility-5b7d4ed0]] - narrower source section: Chapter 6: / [ ④ Climb [Agility] ]
+- [[sword-world-rpg-complete-edition-section-chapter-6-example-8dd0d644]] - narrower source section: Chapter 6: / Example:
+- [[sword-world-rpg-complete-edition-section-chapter-6-example-1-71f64697]] - narrower source section: Chapter 6: / Example 1:
+- [[sword-world-rpg-complete-edition-section-chapter-6-example-2-38fc3737]] - narrower source section: Chapter 6: / Example 2:
+- [[sword-world-rpg-complete-edition-section-chapter-6-falling-damage-dc2e82dd]] - narrower source section: Chapter 6: / Falling Damage
+- [[sword-world-rpg-complete-edition-section-chapter-6-base-target-score-10-1be63992]] - narrower source section: Chapter 6: / Base Target Score = 10
+- [[sword-world-rpg-complete-edition-section-chapter-6-example-aa66fa86]] - narrower source section: Chapter 6: / Example:
+- [[sword-world-rpg-complete-edition-section-chapter-6-long-jump-high-jump-agility-3ef93f0b]] - narrower source section: Chapter 6: / [ ⑤ Long Jump/High Jump [Agility] ]
+- [[sword-world-rpg-complete-edition-section-chapter-6-example-1-d7b82501]] - narrower source section: Chapter 6: / Example 1:
+- [[sword-world-rpg-complete-edition-section-chapter-6-example-2-f6fc08de]] - narrower source section: Chapter 6: / Example 2:
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-4-19ebe28d@20c3a2a29f1a6e883d96b48a25f8a982
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-4-19ebe28d@639a9809989bd6790c152ac52ec08620
 ---
 
 # 13.6.4
@@ -16,18 +16,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section
-- [[sword-world-rpg-complete-edition-section-physical-attack-immunity-bb6c881f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-weapon-immunity-a3455e78]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-normal-weapon-immunity-3cd071da]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-complete-immunity-to-certain-weapons-4399acf2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-weapons-cannot-critical-cf215ee1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-certain-weapons-cannot-critical-72a7b010]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-darkness-invisible-d1b3cc57]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-keen-perception-airborne-4dc4334a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-water-adaptation-834c1188]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ice-adaptation-3bbd8a22]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-snow-adaptation-87b0471a]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section: 13.6
+- [[sword-world-rpg-complete-edition-section-physical-attack-immunity-bb6c881f]] - narrower source section: 《 Physical Attack Immunity 》
+- [[sword-world-rpg-complete-edition-section-weapon-immunity-a3455e78]] - narrower source section: 《 Weapon Immunity 》
+- [[sword-world-rpg-complete-edition-section-normal-weapon-immunity-3cd071da]] - narrower source section: 《 Normal Weapon Immunity 》
+- [[sword-world-rpg-complete-edition-section-complete-immunity-to-certain-weapons-4399acf2]] - narrower source section: 《 Complete Immunity to Certain Weapons 》
+- [[sword-world-rpg-complete-edition-section-weapons-cannot-critical-cf215ee1]] - narrower source section: 《 Weapons Cannot Critical 》
+- [[sword-world-rpg-complete-edition-section-certain-weapons-cannot-critical-72a7b010]] - narrower source section: 《 Certain Weapons Cannot Critical 》
+- [[sword-world-rpg-complete-edition-section-darkness-invisible-d1b3cc57]] - narrower source section: 《 Darkness/Invisible 》
+- [[sword-world-rpg-complete-edition-section-keen-perception-airborne-4dc4334a]] - narrower source section: 《 Keen Perception/Airborne 》
+- [[sword-world-rpg-complete-edition-section-water-adaptation-834c1188]] - narrower source section: 《 Water Adaptation 》
+- [[sword-world-rpg-complete-edition-section-ice-adaptation-3bbd8a22]] - narrower source section: 《 Ice Adaptation 》
+- [[sword-world-rpg-complete-edition-section-snow-adaptation-87b0471a]] - narrower source section: 《 Snow Adaptation 》
 
 ## Statements by subsection
 

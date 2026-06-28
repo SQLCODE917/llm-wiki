@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mythical-beasts-and-magical-beasts-f340656a@2ae69666bd8adcec1319fd7eece61c63
+projection_coverage: section-sword-world-rpg-complete-edition-section-mythical-beasts-and-magical-beasts-f340656a@2a9f6bee66f6b86899cd6152bc4a7272
 ---
 
 # 《 Mythical Beasts and Magical Beasts 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section: 13.1
 
 ## Statements
 

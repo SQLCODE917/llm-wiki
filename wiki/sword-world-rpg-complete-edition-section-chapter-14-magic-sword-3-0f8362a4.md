@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magic-sword-3-0f8362a4@65b382367373edbbfeecd0b3af5fb996
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-magic-sword-3-0f8362a4@9b81055abf5fbee6b898c19b0eac0be6
 ---
 
 # Chapter 14: / 《 Magic Sword (+3) 》
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
-- [[sword-world-rpg-complete-edition-magic-sword]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-1-20e1da37]] - same source heading
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-2-d38fc2fd]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
+- [[sword-world-rpg-complete-edition-magic-sword]] - topic hub: opens the topic page for Magic Sword
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-1-20e1da37]] - same source heading: another source section with the same heading, Chapter 14: / 《 Magic Sword (+1) 》
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-2-d38fc2fd]] - same source heading: another source section with the same heading, Chapter 14: / 《 Magic Sword (+2) 》
 
 ## Statements
 

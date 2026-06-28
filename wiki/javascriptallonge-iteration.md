@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-iteration
 page_kind: concept
-summary: Iteration: 2 statement(s) and 1 atom(s) from raw/javascriptallonge.pdf.
+summary: Iteration: 2 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-iteration@72b56e8f1017c339f1cd7696b73639bc
+projection_coverage: topic-javascriptallonge-iteration@1d712d47992d3deafb6a64908bd35e8e
 ---
 
 # Iteration
@@ -15,30 +15,29 @@ What [[javascriptallonge]] covers about iteration:
 
 ## Statements
 
-- Iteration for functions and objects has been around for many, many decades. _(javascriptallonge.pdf (source-range-83ecb080-01546))_
-- Our functions don’t need to know anything about how an object implements iteration, and we get the benefit of lazily traversing our objects. _(javascriptallonge.pdf (source-range-83ecb080-01543))_
+### Iteration and Iterables
 
-## Technical atoms
+- 186
 
-### Technical atom 1
+Served by the Pot: Collections **const** stack = Stack1(); stack.push(1); stack.push(2); stack.push(3); iteratorSum(stack.iterator()) _//=> 6_
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01620))_
+We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method: **const** collectionSum = (collection) => { **const** iterator = collection.iterator(); **let** eachIteration, sum = 0; **while** ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum } collectionSum(stack) _//=> 6_
 
-> Stack3.from = **function** (iterable) { **const** stack = **this** (); **for** ( **let** element **of** iterable) { stack.push(element); } **return** stack; } Pair1.from = (iterable) => ( **function** iterationToList (iteration) { **const** {done, value} = iteration.next(); **return** done ? EMPTY : Pair1(value, iterationToList(iteration)); })(iterable[Symbol.iterator]()) Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we ca
+If we write a program with the presumption that “everything is an object,” we can write maps, folds, and filters that work on objects. We just ask the object for an iterator, and work on the iterator. Our functions don’t need to know anything about how an object implements iteration, and we get the benefit of lazily traversing our objects.
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01621))_
+This is a good thing.
 
-> Pair1.from(Squares) _//=> {"first":0,_ "rest":{"first":1, "rest":{"first":4, "rest":{ ... Served by the Pot: Collections 200
+## **iterator objects**
+
+Iteration for functions and objects has been around for many, many decades. For simple linear collections like arrays, linked lists, stacks, and queues, functional iterators are the simplest and easiest way to implement iterators.
+
+In programs involving large collections of objects, it can be handy to implement iterators as objects, rather than functions. The mechanics of iterating can then be factored using the same tools that are used to factor the mechanics of all other objects in the system. _(javascriptallonge.pdf (source-range-83ecb080-00250))_
 
 
 ## Related pages
 
-- [[javascriptallonge-function]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-element]] - shared technical atoms (1 shared atom(s))
-- [[javascriptallonge-iterable]] - shared technical atoms (1 shared atom(s))
-- [[javascriptallonge-value]] - shared technical atoms (1 shared atom(s))
-- [[javascriptallonge-functional-iterator]] - shared statements (1 shared statement(s))
-- [[javascriptallonge-object]] - shared statements (1 shared statement(s))
+- [[javascriptallonge-function]] - shared statements: Function shares source evidence from Iteration and Iterables: 186  Served by the Pot: Collections **const** stack = Stack1(); stack.push(1); stack.push(2); stack.push(3); iteratorSum(stack.iterator()) _//=> 6_  We could save a ... [truncated] (2 shared statement(s))
+- [[javascriptallonge-object]] - shared statements: Object shares source evidence from Iteration and Iterables: 186  Served by the Pot: Collections **const** stack = Stack1(); stack.push(1); stack.push(2); stack.push(3); iteratorSum(stack.iterator()) _//=> 6_  We could save a ... [truncated] (1 shared statement(s))
 
 ## Source
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-red-cap-c04d6d49@39a4fb547d93f04e8daae9914a7d7ce7
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-red-cap-c04d6d49@4ff1d0b91887398e2ffc86f9a8f4d872
 ---
 
 # Chapter 12: Various Checks / [ Red Cap ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

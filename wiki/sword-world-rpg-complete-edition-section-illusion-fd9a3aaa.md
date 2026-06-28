@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-illusion-fd9a3aaa@04f63e48bcd0011c4989c6f85f7848c3
+projection_coverage: section-sword-world-rpg-complete-edition-section-illusion-fd9a3aaa@99b6cea32c13776902a961bd414e6275
 ---
 
 # 《 Illusion 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-illusion-2ea22003]] - same source heading
+- [[sword-world-rpg-complete-edition-section-illusion-2ea22003]] - same source heading: another source section with the same heading, [ Illusion ]
 
 ## Statements
 

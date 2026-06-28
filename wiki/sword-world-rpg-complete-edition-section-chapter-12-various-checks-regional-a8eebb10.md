@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-regional-a8eebb10@1e8f6e57de4fa7d06032ec115a3d4b41
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-regional-a8eebb10@344c96ec571560dae213ae5e6cb808c2
 ---
 
 # Chapter 12: Various Checks / 《 Regional 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

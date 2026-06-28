@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-6-4-damage-reduction-a9f1a46a@8bc1247a56dc67ceeb77a15017e7b7f8
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-6-4-damage-reduction-a9f1a46a@8a0796acbb773d4afc0af56dd3a73f5d
 ---
 
 # 4.6.4 Damage Reduction
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-damage-reduction]] - topic hub
-- [[sword-world-rpg-complete-edition-section-damage-reduction-740cdbd8]] - same source heading
+- [[sword-world-rpg-complete-edition-damage-reduction]] - topic hub: opens the topic page for Damage Reduction
+- [[sword-world-rpg-complete-edition-section-damage-reduction-740cdbd8]] - same source heading: another source section with the same heading, 【 Damage Reduction 】
 
 ## Statements
 

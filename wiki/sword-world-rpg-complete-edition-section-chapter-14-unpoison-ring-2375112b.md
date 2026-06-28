@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-unpoison-ring-2375112b@e45eb6aafc48fc8c6cd679268e393446
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-unpoison-ring-2375112b@abddc774f278066a84ee6090020a0de3
 ---
 
 # Chapter 14: / [ Unpoison Ring ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

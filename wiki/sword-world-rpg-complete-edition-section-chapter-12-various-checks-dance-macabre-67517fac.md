@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-dance-macabre-67517fac@2885051d6ed31ab0863cea6dcfacfc0d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-dance-macabre-67517fac@2bd2fe79a88d343e3eeac799553c337b
 ---
 
 # Chapter 12: Various Checks / [ Dance Macabre ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

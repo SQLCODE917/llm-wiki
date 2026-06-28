@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-2-1-negotiations-with-adventurers-6bfbf4ee@6be95bdf932c6be1ced378ae3d128ab7
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-2-1-negotiations-with-adventurers-6bfbf4ee@fc136bf2ff577b15f364ab1117366576
 ---
 
 # Chapter 14: / 14.2.1 Negotiations With Adventurers
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-5b7f462f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-5b7f462f]] - broader source section: Chapter 14:
 
 ## Statements
 

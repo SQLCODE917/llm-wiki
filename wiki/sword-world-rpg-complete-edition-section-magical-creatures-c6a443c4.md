@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magical-creatures-c6a443c4@36477b754abd0680cf0def67d385138b
+projection_coverage: section-sword-world-rpg-complete-edition-section-magical-creatures-c6a443c4@8806a81f98c92c5220a7b75329795689
 ---
 
 # 《 Magical Creatures 》
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section
-- [[sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-d7f9e4ff]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section: 13.1
+- [[sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-d7f9e4ff]] - same source heading: another source section with the same heading, 13.2.10 Magical Creatures
 
 ## Statements
 

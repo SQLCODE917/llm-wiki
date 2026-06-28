@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-dbeb2ef5@e4179d27560879ab5a5fa4beff6c3731
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-dbeb2ef5@92df2f624c103b21087a229f2b57b53a
 ---
 
 # Chapter 14:
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-4117a911]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-5b7f462f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-edb8ea7e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-4117a911]] - narrower source section: Chapter 14:
+- [[sword-world-rpg-complete-edition-section-chapter-14-5b7f462f]] - narrower source section: Chapter 14:
+- [[sword-world-rpg-complete-edition-section-chapter-14-edb8ea7e]] - narrower source section: Chapter 14:
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - narrower source section: Chapter 14:
 
 ## Statements by subsection
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-4-2-list-of-magical-items-2aba3ff6@edb657c015fb01e090d8a95121eba58f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-4-2-list-of-magical-items-2aba3ff6@0b09f6c9a5a28bfde49d198532be6bdb
 ---
 
 # Chapter 14: / 14.4.2 List of Magical Items
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Technical atoms
 

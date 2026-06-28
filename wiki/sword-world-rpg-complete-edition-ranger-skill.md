@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-ranger-skill@b591f10eb79d0b04f6a3fd202bbdd5cf
+projection_coverage: topic-sword-world-rpg-complete-edition-ranger-skill@2aee2e68b61428887875ed475267b445
 ---
 
 # 【 Ranger Skill 】
@@ -149,23 +149,23 @@ What [[sword-world-rpg-complete-edition]] covers about 【 ranger skill 】:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-skill]] - broader topic (14 shared statement(s))
-- [[sword-world-rpg-complete-edition-range]] - shared statements (12 shared statement(s))
-- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements (4 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-bonus]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-force]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-hit-check]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-please]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-ranger-skill-be2a2889]] - source section (4 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-6-ranger-skill-4c651439]] - source section (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-skill]] - broader topic: Skill shares source evidence from Example:: Now let's buy some parchment (10 sheets for 10 G) and quill pen ink (5 G). Ducard II's ranger skill includes the map creation ability. It may be useful at some point ... [truncated] (14 shared statement(s))
+- [[sword-world-rpg-complete-edition-range]] - shared statements: Range shares source evidence from Example:: Now let's buy some parchment (10 sheets for 10 G) and quill pen ink (5 G). Ducard II's ranger skill includes the map creation ability. It may be useful at some point ... [truncated] (12 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from 【 Bonus Damage 】: If fighter (or thief, ranger) skill level is 0 , bonus damage is 0 regardless of the character's strength bonus. (4 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from Surprise Attacks: When encountering a monster, one of you may notice the other without them noticing you, allowing you to perform a surprise attack . This should also be determined by ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements: Level shares source evidence from 【 Attack Power 】: If fighter (or thief, ranger) skill level is 0 , then attack power is 0 regardless of the character's dexterity bonus. (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements: Adventure shares source evidence from Surprise Attacks: When encountering a monster, one of you may notice the other without them noticing you, allowing you to perform a surprise attack . This should also be determined by ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared statements: Adventurer shares source evidence from Surprise Attacks: When encountering a monster, one of you may notice the other without them noticing you, allowing you to perform a surprise attack . This should also be determined by ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus]] - shared statements: Bonus shares source evidence from Chapter 14: / [ Explosive Bullet ]: This bullet explodes on impact, dealing strike power 30 damage regardless of the sling used. As usual, bonus damage is fi ghter/thief/ranger skill level + strength b ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements: Character shares source evidence from 4.11.2 First-Aid: A character with 0 or negative life force will recover up to 1 (positive) point if given treatment by someone with the ranger skill, healer skill, or similar. (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-force]] - shared statements: Force shares source evidence from 4.11.2 First-Aid: A character with 0 or negative life force will recover up to 1 (positive) point if given treatment by someone with the ranger skill, healer skill, or similar. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-hit-check]] - shared statements: 4.5.1 Hit Checks shares source evidence from 4.5.1 Hit Checks: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-please]] - shared statements: Please shares source evidence from Chapter 7: / [ ① First-Aid [-] ]: This is the same as the ranger skill's ability of the same name. Please refer to the ranger skill. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements: Power shares source evidence from Ballista: A general term for extremely large wind-up crossbows that are installed on castles, ships, etc. It's not carried or used by characters. Hoisting requires multiple pe ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements: Target shares source evidence from Chapter 16: / Snipe: When your opponent is a character, he or she can notice you by using the sense danger ability. The target must make a success roll using ranger skill level + intelli ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - shared statements: [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable) shares source evidence from Chapter 6: / [ ⑮ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable): This is basically the same ability as that of the thief skill, but it only applies to traps that use outdoor nature. This includes those that are made by tying grass ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-ranger-skill-be2a2889]] - source section: 【 Ranger Skill 】 shares source evidence from 【 Ranger Skill 】: The ranger skill is proficient with projectiles, and only when using a weapon that is designated as suchthrowable , made for throwing , or shooting on Table 1-8: Wea ... [truncated]; 【 Ranger Skill 】 shares technical record from 【 Ranger Skill 】: Weapons that can be used for both melee and throwing, as indicated by throwable on the Weapons table, are useful only when used for throwing, not for melee. (4 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-6-ranger-skill-4c651439]] - source section: Chapter 6: / Ranger Skill shares source evidence from Chapter 6: / Ranger Skill: Owners of the ranger skill demonstrate a variety of abilities in outdoor activities, as explained below. (1 shared statement(s))
 
 ## Source
 

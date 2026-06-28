@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bonus-damage-ba5bac46@15d7f80b7fc41106fba9e6d8c3dd7f5a
+projection_coverage: section-sword-world-rpg-complete-edition-section-bonus-damage-ba5bac46@1afc9f611d34680e78830e0858f0d436
 ---
 
 # 【 Bonus Damage 】
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section
-- [[sword-world-rpg-complete-edition-bonus-damage]] - topic hub
-- [[sword-world-rpg-complete-edition-section-4-5-3-bonus-damage-8d90d126]] - same source heading
+- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section: 3.4.4
+- [[sword-world-rpg-complete-edition-bonus-damage]] - topic hub: opens the topic page for Bonus Damage
+- [[sword-world-rpg-complete-edition-section-4-5-3-bonus-damage-8d90d126]] - same source heading: another source section with the same heading, 4.5.3 Bonus Damage
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-zombie-maker-dose-mind-f47c706c@c1bb258b18bd2b5229a1b25739cdccd4
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-zombie-maker-dose-mind-f47c706c@a8142e6d29441a559d9e93917b2917ae
 ---
 
 # Chapter 12: Various Checks / [Zombie Maker (Dose/Mind)]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

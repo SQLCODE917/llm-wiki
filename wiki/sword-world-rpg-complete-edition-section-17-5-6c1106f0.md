@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-17-5-6c1106f0@10698ac400d61700e9f7346a3d36c3c9
+projection_coverage: section-sword-world-rpg-complete-edition-section-17-5-6c1106f0@89ff04856feb7a8ce7db13d5bbbf76c4
 ---
 
 # 17.5
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-full-resistance-bf70ec77]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-full-resistance-bf70ec77]] - narrower source section: Full Resistance
 
 ## Statements
 

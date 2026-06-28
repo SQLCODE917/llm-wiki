@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-healer-skill-14023036@ebfde24536771e5788f098ead80f89d6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-healer-skill-14023036@a2a7f0c7cce4c50c8cb80529b91ca73a
 ---
 
 # Chapter 7: / Healer Skill
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-d788e59c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-7-d788e59c]] - broader source section: Chapter 7:
 
 ## Statements
 

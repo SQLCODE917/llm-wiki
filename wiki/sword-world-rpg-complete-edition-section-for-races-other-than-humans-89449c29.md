@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-for-races-other-than-humans-89449c29@fa47b9736addee2f58349f87bbcf8e36
+projection_coverage: section-sword-world-rpg-complete-edition-section-for-races-other-than-humans-89449c29@ea586117d558fd13866a3d35e1d81fe7
 ---
 
 # For Races Other Than Humans
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section: 1.4
 
 ## Statements
 

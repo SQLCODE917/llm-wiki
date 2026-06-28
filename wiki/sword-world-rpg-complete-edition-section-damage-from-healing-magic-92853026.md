@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-damage-from-healing-magic-92853026@1200ee6e6faa36ebea92b3ee17c11933
+projection_coverage: section-sword-world-rpg-complete-edition-section-damage-from-healing-magic-92853026@1057c80c9221a321d4387ee24acce6a0
 ---
 
 # 《 Damage From Healing Magic 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-6ab72dc9]] - broader source section: 13.6
 
 ## Statements
 

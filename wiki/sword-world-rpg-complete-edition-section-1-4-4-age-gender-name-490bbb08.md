@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-4-age-gender-name-490bbb08@42e42301a460462e4dd7022f46bfd412
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-4-age-gender-name-490bbb08@22eef5b56ea2f839fc4207ab5d33b07f
 ---
 
 # 1.4.4 Age, Gender, Name
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section: 1.4
 
 ## Statements
 

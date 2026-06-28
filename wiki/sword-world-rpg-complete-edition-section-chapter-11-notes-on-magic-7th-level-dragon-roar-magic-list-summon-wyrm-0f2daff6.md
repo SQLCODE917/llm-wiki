@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-7th-level-dragon-roar-magic-list-summon-wyrm-0f2daff6@02d9bd2a83b452d51548c5d7c8a8798c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-7th-level-dragon-roar-magic-list-summon-wyrm-0f2daff6@51788666a8363bbf3c2c5e58c5be4e92
 ---
 
 # Chapter 11: Notes on Magic / 7th Level Dragon Roar Magic List [ Summon Wyrm ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

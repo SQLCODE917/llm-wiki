@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-green-slime-rot-1d66b92c@a3a4d451b1dd473755d1b6457d0121f4
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-green-slime-rot-1d66b92c@ec803649df2d354df9949aec2fc28909
 ---
 
 # Chapter 12: Various Checks / [ Green Slime Rot ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-catalysts-other-than-staves-5ac54f9f@4b4ad3f55ff07494711b067e523dd1c3
+projection_coverage: section-sword-world-rpg-complete-edition-section-catalysts-other-than-staves-5ac54f9f@c1f324ab787babfff40160a499e3b687
 ---
 
 # Catalysts Other Than Staves
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-17-3-93ba68cf]] - broader source section
+- [[sword-world-rpg-complete-edition-section-17-3-93ba68cf]] - broader source section: 17.3
 
 ## Statements
 

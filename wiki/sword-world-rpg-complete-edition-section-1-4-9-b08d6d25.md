@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-9-b08d6d25@9fa14776704ab2e0c02162e9a7d46853
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-9-b08d6d25@d5ec07ee592d9c6f0bc9bc372c9156f6
 ---
 
 # 1.4.9
@@ -16,22 +16,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-eb89c9b4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-player-name-5cc8cbf7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-race-6a47bc14]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sub-ability-scores-e57a845e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ability-scores-aa0ddc41]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ability-bonuses-599f5f57]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-origin-e4ad2af9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-starting-experience-points-2c954e65]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-money-44e1e685]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-gender-51286cf2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-age-6a506507]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-increase-skills-3891bf6c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-adventurer-level-a545bb8f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-purchase-equipment-0a317d3b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-other-sections-7921cb27]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section: 1.4
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-eb89c9b4]] - narrower source section: Filling Out the Character Sheet
+- [[sword-world-rpg-complete-edition-section-player-name-5cc8cbf7]] - narrower source section: [ ① Player Name ]
+- [[sword-world-rpg-complete-edition-section-race-6a47bc14]] - narrower source section: [ ② Race ]
+- [[sword-world-rpg-complete-edition-section-sub-ability-scores-e57a845e]] - narrower source section: [ ③ Sub-Ability Scores]
+- [[sword-world-rpg-complete-edition-section-ability-scores-aa0ddc41]] - narrower source section: [ ④ Ability Scores ]
+- [[sword-world-rpg-complete-edition-section-ability-bonuses-599f5f57]] - narrower source section: [ ⑤ Ability Bonuses ]
+- [[sword-world-rpg-complete-edition-section-origin-e4ad2af9]] - narrower source section: [ ⑥ Origin ]
+- [[sword-world-rpg-complete-edition-section-starting-experience-points-2c954e65]] - narrower source section: [ ⑦ Starting Experience Points ]
+- [[sword-world-rpg-complete-edition-section-money-44e1e685]] - narrower source section: [ ⑨ Money ]
+- [[sword-world-rpg-complete-edition-section-gender-51286cf2]] - narrower source section: [ ⑩ Gender ]
+- [[sword-world-rpg-complete-edition-section-age-6a506507]] - narrower source section: [ ⑪ Age ]
+- [[sword-world-rpg-complete-edition-section-increase-skills-3891bf6c]] - narrower source section: [ ⑬ Increase Skills ]
+- [[sword-world-rpg-complete-edition-section-adventurer-level-a545bb8f]] - narrower source section: [ ⑭ Adventurer Level ]
+- [[sword-world-rpg-complete-edition-section-purchase-equipment-0a317d3b]] - narrower source section: [ ⑮ Purchase Equipment]
+- [[sword-world-rpg-complete-edition-section-other-sections-7921cb27]] - narrower source section: ⑯ Other Sections ]
 
 ## Statements by subsection
 

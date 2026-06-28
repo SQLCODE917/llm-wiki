@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hand-8fe41c28@36bbd2d6cac616bf7cacb4f934b353b8
+projection_coverage: section-sword-world-rpg-complete-edition-section-hand-8fe41c28@a0f9494f729efc1ab4414aa3bedddaae
 ---
 
 # Hand
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-16-6-4c57969e]] - broader source section
+- [[sword-world-rpg-complete-edition-section-16-6-4c57969e]] - broader source section: 16.6
 
 ## Statements
 

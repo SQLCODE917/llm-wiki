@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-sheath-weapon-etc@95d341316ee71fcb6b6a067d739993fc
+projection_coverage: topic-sword-world-rpg-complete-edition-sheath-weapon-etc@b7bccf2e1354b07238ac667c75071a1b
 ---
 
 # Sheath a Weapon, Etc.
@@ -308,18 +308,18 @@ Table 1-8: Weapons-2
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-weapon-critical]] - shared statements and technical atoms (1 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (4 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-sorcerer]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-sword]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-defense]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-move]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-sheath-a-weapon-etc-85059d96]] - source section (3 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-sheath-a-weapon-etc-6349573d]] - source section (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-weapon-critical]] - shared statements and technical atoms: 《 Weapons Cannot Critical 》 shares source evidence from 《 Certain Weapons Cannot Critical 》: There are weapons that cannot deliver effective strikes due to their form, etc. Attacks with the indicated weapon, no matter how powerful or magical it is, will neve ... [truncated]; 《 Weapons Cannot Critical 》 shares technical table: Table 1-8: Weapons-1 When  you have the sorcerer skill, there's a few things to be careful of. This                Weapon Name             Usage Required Str. Price ... [truncated] (1 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared technical atoms: Table shares technical table: Table 1-8: Weapons-1 When  you have the sorcerer skill, there's a few things to be careful of. This                Weapon Name             Usage Required Str. Price ... [truncated] (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms: Adventure shares technical table: Table 1-8: Weapons-1 Weapon Name             Usage Required Str. Price Calculation Swords Dagger (throwable)                  1H      1~5         x10+20 Main-gauche ... [truncated] (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared technical atoms: Adventurer shares technical table: Table 1-8: Weapons-1 Weapon Name             Usage Required Str. Price Calculation Swords Dagger (throwable)                  1H      1~5         x10+20 Main-gauche ... [truncated] (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms: Skill shares technical table: Table 1-8: Weapons-1 When  you have the sorcerer skill, there's a few things to be careful of. This                Weapon Name             Usage Required Str. Price ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-sorcerer]] - shared technical atoms: Sorcerer shares technical table: Table 1-8: Weapons-1 When  you have the sorcerer skill, there's a few things to be careful of. This                Weapon Name             Usage Required Str. Price ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-sword]] - shared technical atoms: Sword shares technical table: Table 1-8: Weapons-1 Weapon Name             Usage Required Str. Price Calculation Swords Dagger (throwable)                  1H      1~5         x10+20 Main-gauche ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-defense]] - shared statements: Defense shares source evidence from 《 Defense Points 》: Defense points are only effective against attacks such as weapons, etc. When struck by magic or similar attacks, defense points cannot reduce damage, monster level r ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-move]] - shared statements: Move shares source evidence from Ready a Weapon: As during full movement, you can ready a weapon from a sheath, etc. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-movement]] - shared statements: Movement shares source evidence from Ready a Weapon: As during full movement, you can ready a weapon from a sheath, etc. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-sheath-a-weapon-etc-85059d96]] - source section: Sheath a Weapon, Etc. shares source evidence from Sheath a Weapon, Etc.: You can sheath up to two, one in each hand. However, this is only possible if there is a sheath, etc. Y ou can also place a shield on your back.; Sheath a Weapon, Etc. shares technical table: Table 1-8: Weapons-1 When  you have the sorcerer skill, there's a few things to be careful of. This                Weapon Name             Usage Required Str. Price ... [truncated] (3 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-sheath-a-weapon-etc-6349573d]] - source section: Sheath a Weapon, Etc. shares technical table: Table 1-8: Weapons-1 When  you have the sorcerer skill, there's a few things to be careful of. This                Weapon Name             Usage Required Str. Price ... [truncated] (4 shared atom(s))
 
 ## Source
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-8th-level-spirit-magic-list-ice-coffin-01652d43@7cd76fc0664f649ccdf5b07afe8f9ce4
+projection_coverage: section-sword-world-rpg-complete-edition-section-8th-level-spirit-magic-list-ice-coffin-01652d43@82ccaef9cf9230e192dfdf2e4c204576
 ---
 
 # 8th Level Spirit Magic List [ Ice Coffin ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

@@ -80,9 +80,19 @@ def test_section_pages_roll_up_descendants_and_link_repeated_topic_contexts() ->
     assert "Write magic fields on the sheet." in by_id[chapter_id]
 
     assert "# 1.4 Character Creation / Filling out the Character Sheet" in by_id[combat_id]
-    assert f"[[{chapter_id}]] - broader source section" in by_id[combat_id]
-    assert "[[source-filling-character-sheet]] - topic hub" in by_id[combat_id]
-    assert f"[[{magic_id}]] - same source heading" in by_id[combat_id]
+    assert (
+        f"[[{chapter_id}]] - broader source section: 1.4 Character Creation"
+        in by_id[combat_id]
+    )
+    assert (
+        "[[source-filling-character-sheet]] - topic hub: opens the topic page for "
+        "Filling Character Sheet" in by_id[combat_id]
+    )
+    assert (
+        f"[[{magic_id}]] - same source heading: another source section with the same "
+        "heading, 1.4 Character Creation / Filling out the Character Sheet"
+        in by_id[combat_id]
+    )
 
 
 def _entry(entry_id: str, node_id: str, text: str) -> LedgerEntry:

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-8th-level-ancient-magic-list-a203b9bf@2db97ce9f157ad17d0e78925dd2af636
+projection_coverage: section-sword-world-rpg-complete-edition-section-8th-level-ancient-magic-list-a203b9bf@c4c825d73afbda2a6f51c4b3942116e8
 ---
 
 # 8th Level Ancient Magic List
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

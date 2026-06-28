@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-spirit-wall-dryad@ffe4065cfc5801c1daf627f4ada02ac1
+projection_coverage: topic-sword-world-rpg-complete-edition-spirit-wall-dryad@788a09ba5ee6dfded27d83872472ed1c
 ---
 
 # Spirit Wall: Dryad
@@ -135,21 +135,21 @@ What [[sword-world-rpg-complete-edition]] covers about spirit wall: dryad:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-wall]] - broader topic (11 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-spirit]] - broader topic (10 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements (4 shared statement(s))
-- [[sword-world-rpg-complete-edition-12-normal-language]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-control-spirit-lesser]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-defense]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-please]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-spirit-wall-dryad-bee6107d]] - source section (4 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-spirit-wall-dryad-74f43937]] - source section (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-wall]] - broader topic: Wall shares source evidence from 2nd Level Spirit Magic List [ Will-O-Wisp ] (Will-O-Wisp/Light Spirit): Counters (Negates): Shade , Spirit Wall: Shade Countered (Negated) By: Shade , Spirit Wall: Shade; Wall shares technical record from [ Spirit Wall ]: There are also walls that you cannot pass through, walls that deal damage even if you force your way through, etc. (11 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-spirit]] - broader topic: Spirit shares source evidence from 2nd Level Spirit Magic List [ Will-O-Wisp ] (Will-O-Wisp/Light Spirit): Counters (Negates): Shade , Spirit Wall: Shade Countered (Negated) By: Shade , Spirit Wall: Shade; Spirit shares technical record from Spirit Wall: Wisp: Expansion=Final score, duration, distance, target volume, damage certainty Resist=Reduced effect (10 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements: Spell shares source evidence from [ Charm ] (Dryad/Plant Spirit): Dryad is a plant spirit which at the same time has the nature of a mind spirit. This spell has the effect of using the dryad's mind spirit power to charm the target. ... [truncated] (4 shared statement(s))
+- [[sword-world-rpg-complete-edition-12-normal-language]] - shared statements: 12.1.1 Normal Languages shares source evidence from [ Dryad ]: Mental Points/Resistance=20/14 (7) Special Abilities=Charm (Resist target score=14) 5th level spirit magic (Magic Intensity/Magic Power=14/7, dryad only) Normal weap ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-control-spirit-lesser]] - shared statements: [ Control Spirit ] (Various lesser spirits) shares source evidence from [ Spirit Wall ]: You cannot build a wall where other materials such as rocks, trees, or living things already exist. Furthermore, once a wall is put up, it cannot be moved or removed ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-defense]] - shared statements: Defense shares source evidence from [ Spirit Wall: Dryad ]: Treat it as a vegetation wall. Without expansion, defense points and destruction points are both 15. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements: Level shares source evidence from [ Dryad ]: Mental Points/Resistance=20/14 (7) Special Abilities=Charm (Resist target score=14) 5th level spirit magic (Magic Intensity/Magic Power=14/7, dryad only) Normal weap ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-please]] - shared statements: Please shares source evidence from 18.3.3 Handling Spirit Walls: When using these rules for destroying structures to destroy the spirit magic Spirit Wall, please do so as follows. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements: Power shares source evidence from [ Dryad ]: Mental Points/Resistance=20/14 (7) Special Abilities=Charm (Resist target score=14) 5th level spirit magic (Magic Intensity/Magic Power=14/7, dryad only) Normal weap ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements: Resist shares source evidence from [ Dryad ]: Mental Points/Resistance=20/14 (7) Special Abilities=Charm (Resist target score=14) 5th level spirit magic (Magic Intensity/Magic Power=14/7, dryad only) Normal weap ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements: Score shares source evidence from [ Dryad ]: Mental Points/Resistance=20/14 (7) Special Abilities=Charm (Resist target score=14) 5th level spirit magic (Magic Intensity/Magic Power=14/7, dryad only) Normal weap ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements: Target shares source evidence from [ Dryad ]: Mental Points/Resistance=20/14 (7) Special Abilities=Charm (Resist target score=14) 5th level spirit magic (Magic Intensity/Magic Power=14/7, dryad only) Normal weap ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-type]] - shared statements: Type shares source evidence from [ Spirit Wall ]: You cannot build a wall where other materials such as rocks, trees, or living things already exist. Furthermore, once a wall is put up, it cannot be moved or removed ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-spirit-wall-dryad-bee6107d]] - source section: Spirit Wall: Dryad shares source evidence from Spirit Wall: Dryad: By borrowing the power of plant spirits, creates a wall of living vegetation consisting of vines and thorn bushes. When you chant the spell, vines will sprout from t ... [truncated]; Spirit Wall: Dryad shares technical record from Spirit Wall: Dryad: Type=Target score Expansion=Final score, duration, distance, target volume Resist=None (4 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-spirit-wall-dryad-74f43937]] - source section: [ Spirit Wall: Dryad ] shares source evidence from [ Spirit Wall: Dryad ]: Treat it as a vegetation wall. Without expansion, defense points and destruction points are both 15. (2 shared statement(s))
 
 ## Source
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-lost-spells-ab37a907@fb4cec8c6f51a8305b8b6707ad8d1f86
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-lost-spells-ab37a907@ecc6fd9d5f1e0b9d35a3ce834aea3794
 ---
 
 # Chapter 17: / Lost Spells
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-17-3a08908a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-17-3a08908a]] - broader source section: Chapter 17:
 
 ## Statements
 

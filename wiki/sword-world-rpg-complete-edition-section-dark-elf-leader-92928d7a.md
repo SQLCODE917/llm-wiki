@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dark-elf-leader-92928d7a@a2b5d9ebc6a4726dc93dd606dfbd66b4
+projection_coverage: section-sword-world-rpg-complete-edition-section-dark-elf-leader-92928d7a@bce0e3de8a4b0dd91919ce7b2d9080eb
 ---
 
 # Dark Elf Leader
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-3-abcf9e0f]] - broader source section: 13.2.3
 
 ## Statements
 

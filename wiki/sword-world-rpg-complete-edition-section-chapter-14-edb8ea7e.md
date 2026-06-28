@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-edb8ea7e@425d4c4f3d1df012895f2667449114de
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-edb8ea7e@e1ac60796cee8f2b2243c8678f1126e4
 ---
 
 # Chapter 14:
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-dbeb2ef5]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-treasure-types-9eae51bd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-gems-and-precious-metals-f43c417e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-14-artwork-2570414d]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-dbeb2ef5]] - broader source section: Chapter 14:
+- [[sword-world-rpg-complete-edition-section-chapter-14-treasure-types-9eae51bd]] - narrower source section: Chapter 14: / Treasure Types
+- [[sword-world-rpg-complete-edition-section-chapter-14-gems-and-precious-metals-f43c417e]] - narrower source section: Chapter 14: / Gems and Precious Metals
+- [[sword-world-rpg-complete-edition-section-chapter-14-artwork-2570414d]] - narrower source section: Chapter 14: / Artwork
 
 ## Statements by subsection
 

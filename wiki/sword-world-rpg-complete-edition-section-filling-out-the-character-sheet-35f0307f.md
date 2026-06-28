@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-35f0307f@d8750c98020c545fd3db2f5e0b1f6a5f
+projection_coverage: section-sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-35f0307f@397bea21bd7f93f4afb05329933e7c4b
 ---
 
 # Filling out the Character Sheet
@@ -16,13 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section
-- [[sword-world-rpg-complete-edition-filling-character-sheet]] - topic hub
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-eb89c9b4]] - same source heading
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-683f787d]] - same source heading
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-7ab07b55]] - same source heading
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-407d21c2]] - same source heading
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-43d12f43]] - same source heading
+- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section: 3.4.4
+- [[sword-world-rpg-complete-edition-filling-character-sheet]] - topic hub: opens the topic page for Filling Character Sheet
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-eb89c9b4]] - same source heading: another source section with the same heading, Filling Out the Character Sheet
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-683f787d]] - same source heading: another source section with the same heading, Filling Out the Character Sheet
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-7ab07b55]] - same source heading: another source section with the same heading, Filling out the Character Sheet
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-407d21c2]] - same source heading: another source section with the same heading, Filling out the Character Sheet
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-43d12f43]] - same source heading: another source section with the same heading, Filling out the Character Sheet
 
 ## Statements
 

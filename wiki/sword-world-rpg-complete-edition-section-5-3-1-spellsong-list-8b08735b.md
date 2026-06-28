@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-3-1-spellsong-list-8b08735b@07d6671cd7e50dcbeb3d28ed584382b3
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-3-1-spellsong-list-8b08735b@83af94a8380e1bdfba8b4883877078f4
 ---
 
 # 5.3.1 Spellsong List
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-3-8f977924]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-3-8f977924]] - broader source section: 5.3
 
 ## Statements
 

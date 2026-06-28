@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-special-weapons-d27aa092@dfce972f217efa7d2d88aa9cc8ae76ac
+projection_coverage: section-sword-world-rpg-complete-edition-section-special-weapons-d27aa092@d5f1e244e2b3d4f4006cf1035c7f371b
 ---
 
 # Special Weapons
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-16-9-e9b13c9d]] - broader source section: 16.9
 
 ## Technical atoms
 

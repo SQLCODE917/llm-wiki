@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-fire-crystal-96f78dee@d084cf38e677be174381541e6779e59e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-fire-crystal-96f78dee@c1788cf2f0bff0466b9ca2ac1c88db98
 ---
 
 # Chapter 14: / Fire Crystal
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

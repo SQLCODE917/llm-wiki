@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-swordclaw-51762d99@52c19b98363509a57fd707b2f8607238
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-swordclaw-51762d99@70db306a9d508dc6b382989f1c07fa92
 ---
 
 # Chapter 11: Notes on Magic / [ Swordclaw ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

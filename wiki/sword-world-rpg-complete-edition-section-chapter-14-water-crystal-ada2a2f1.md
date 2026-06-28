@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-water-crystal-ada2a2f1@281e3aa72774e9be7b9362e2bb5964d7
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-water-crystal-ada2a2f1@f8c34879b29987bb0984a5928b0bab57
 ---
 
 # Chapter 14: / Water Crystal
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

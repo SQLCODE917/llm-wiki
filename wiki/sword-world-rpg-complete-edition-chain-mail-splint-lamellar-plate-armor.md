@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-chain-mail-splint-lamellar-plate-armor@790c7d16ad6d351f840491f88205baf8
+projection_coverage: topic-sword-world-rpg-complete-edition-chain-mail-splint-lamellar-plate-armor@1fc4a0cf27816abd9b0b1edb9dfc3c0e
 ---
 
 # Chain mail, splint, lamellar, plate armor
@@ -114,14 +114,14 @@ Table 1-9: Armor
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements and technical atoms (3 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-14-chain-mail-splint-lamellar-plate-armor-1e689bf5]] - source section (1 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-14-chain-mail-splint-lamellar-plate-armor-8d447962]] - source section (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements and technical atoms: 《 Magic Armor (+1) 》 shares source evidence from Chapter 14: / Chain mail, splint, lamellar, plate armor: This is a price list for magic metal armor with +1 power. While armor with high required strength tends to be unpopular, when it becomes exceptionally high-end, it s ... [truncated]; 《 Magic Armor (+1) 》 shares technical table: Table 1-9: Armor you think is appropriate (Table 1-9: Armor Name           Required Strength     Price Calculation Armor). Non-metal armor Cloth armor ... [truncated] (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared technical atoms: Table shares technical table: Table 1-9: Armor you think is appropriate (Table 1-9: Armor Name           Required Strength     Price Calculation Armor). Non-metal armor Cloth armor ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements: 【 Damage Reduction 】 shares source evidence from Chapter 14: / 《 Magic Armor (+3) 》: Chain mail, splint, lamellar, plate armor Rarity=16 Enchanter=Many Form=Metal Armor Required Strength/Base Trade Price=See description Magic Power=+3 to evasion spee ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-rarity]] - shared statements: Rarity shares source evidence from Chapter 14: / 《 Magic Armor (+3) 》: Chain mail, splint, lamellar, plate armor Rarity=16 Enchanter=Many Form=Metal Armor Required Strength/Base Trade Price=See description Magic Power=+3 to evasion spee ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements: Score shares source evidence from Chapter 6: / [ ② Swim [Agility] ]: Those who sink due to the weight of their armor can attempt to remove it underwater. To do so, you must succeed on a success roll using adventurer level + dexterity ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements: Target shares source evidence from Chapter 6: / [ ② Swim [Agility] ]: Those who sink due to the weight of their armor can attempt to remove it underwater. To do so, you must succeed on a success roll using adventurer level + dexterity ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-14-chain-mail-splint-lamellar-plate-armor-1e689bf5]] - source section: Chapter 14: / Chain mail, splint, lamellar, plate armor shares source evidence from Chapter 14: / Chain mail, splint, lamellar, plate armor: This is a price list for magic metal armor with +1 power. While armor with high required strength tends to be unpopular, when it becomes exceptionally high-end, it s ... [truncated]; Chapter 14: / Chain mail, splint, lamellar, plate armor shares technical record from Chapter 14: / Chain mail, splint, lamellar, plate armor: Table 1-9: Armor you think is appropriate (Table 1-9: Armor Name           Required Strength     Price Calculation Armor). Non-metal armor Cloth armor ... [truncated] (1 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-14-chain-mail-splint-lamellar-plate-armor-8d447962]] - source section: Chapter 14: / Chain mail, splint, lamellar, plate armor shares source evidence from Chapter 14: / Chain mail, splint, lamellar, plate armor: Here is a list of prices of magical metal armor with +2 power.; Chapter 14: / Chain mail, splint, lamellar, plate armor shares technical record from Chapter 14: / Chain mail, splint, lamellar, plate armor: Table 1-9: Armor you think is appropriate (Table 1-9: Armor Name           Required Strength     Price Calculation Armor). Non-metal armor Cloth armor ... [truncated] (1 shared statement(s), 2 shared atom(s))
 
 ## Source
 

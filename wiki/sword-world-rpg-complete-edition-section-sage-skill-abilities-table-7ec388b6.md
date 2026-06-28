@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sage-skill-abilities-table-7ec388b6@bff24fe4ba0d83d1faa213fd3cd190c6
+projection_coverage: section-sword-world-rpg-complete-edition-section-sage-skill-abilities-table-7ec388b6@047f2a6079915b7feb01ef6a5571aef7
 ---
 
 # Sage Skill Abilities Table
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Technical atoms
 

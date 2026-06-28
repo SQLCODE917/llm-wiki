@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-phalaris-special-dark-magic-list-6877e986@8ec3564c6757dfdfcf513e69a67a9766
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-phalaris-special-dark-magic-list-6877e986@be7c909540cd12779f9a2f2889149ba6
 ---
 
 # Chapter 11: Notes on Magic / Phalaris Special Dark Magic List ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

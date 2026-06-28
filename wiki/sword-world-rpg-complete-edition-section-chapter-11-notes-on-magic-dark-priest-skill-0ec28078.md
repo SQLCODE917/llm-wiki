@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dark-priest-skill-0ec28078@017887bd85df469bb96a1c8d86d32b8f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dark-priest-skill-0ec28078@451190a2d690c54280cdad3690f19b35
 ---
 
 # Chapter 11: Notes on Magic / 《 Dark Priest Skill 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-160fd94d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-160fd94d]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

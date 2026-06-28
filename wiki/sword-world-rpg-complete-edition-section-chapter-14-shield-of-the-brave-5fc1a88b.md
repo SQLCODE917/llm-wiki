@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-shield-of-the-brave-5fc1a88b@f575a7ea05b62fa4e3d9f7de8c05f33e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-shield-of-the-brave-5fc1a88b@0693a3f7d94916609cd868f2eaa37359
 ---
 
 # Chapter 14: / 《 Shield of the Brave 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-night-goggles-b02d9b93@d0fa13ce0c80ab3f68c40761ecca65df
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-night-goggles-b02d9b93@bbf80c9e0e913df81ca13a0f13618e84
 ---
 
 # Chapter 14: / [ Night Goggles ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Technical atoms
 

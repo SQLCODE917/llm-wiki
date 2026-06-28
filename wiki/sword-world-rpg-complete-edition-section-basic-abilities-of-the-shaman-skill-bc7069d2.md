@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-basic-abilities-of-the-shaman-skill-bc7069d2@066502ad408e80b93f25d47240b9a729
+projection_coverage: section-sword-world-rpg-complete-edition-section-basic-abilities-of-the-shaman-skill-bc7069d2@f0d522a8b46bda20026b2d34bf6a3954
 ---
 
 # Basic Abilities of the Shaman Skill
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

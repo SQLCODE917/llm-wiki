@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dark-priest-warrior-7d4c173a@428fba387b5d46c1260f6039ac4a7580
+projection_coverage: section-sword-world-rpg-complete-edition-section-dark-priest-warrior-7d4c173a@91ed24cf1d0dcbd32018a87f83031359
 ---
 
 # [ Dark Priest Warrior ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-12-488a05fa]] - broader source section: 13.2.12
 
 ## Statements
 

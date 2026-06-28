@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-flame-smasher-2f55ff51@7ae965ddec5ccab2e955724ee060442b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-flame-smasher-2f55ff51@b0dc0c9ef6976904be78f67e14fa2129
 ---
 
 # Chapter 14: / 《 Flame Smasher 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

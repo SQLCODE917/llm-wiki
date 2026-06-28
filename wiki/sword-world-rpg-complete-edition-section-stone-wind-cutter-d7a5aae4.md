@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-stone-wind-cutter-d7a5aae4@35ff44711117aa5d24231e7e71f07dbc
+projection_coverage: section-sword-world-rpg-complete-edition-section-stone-wind-cutter-d7a5aae4@ea009c9d7f3d886a6bce34173a636a8d
 ---
 
 # 《 Stone/Wind Cutter 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-1-2b6cde92]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-1-2b6cde92]] - broader source section: 13.6.1
 
 ## Statements
 

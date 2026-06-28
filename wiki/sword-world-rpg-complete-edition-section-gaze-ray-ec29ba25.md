@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-gaze-ray-ec29ba25@df1016503f3d0212eceb97ff717a2776
+projection_coverage: section-sword-world-rpg-complete-edition-section-gaze-ray-ec29ba25@ca99b28032c373d1ebe8590fc52bd0ce
 ---
 
 # 《 Gaze/Ray 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-1-2b6cde92]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-1-2b6cde92]] - broader source section: 13.6.1
 
 ## Statements
 

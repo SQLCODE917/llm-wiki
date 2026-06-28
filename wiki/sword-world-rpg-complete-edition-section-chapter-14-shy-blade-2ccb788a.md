@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-shy-blade-2ccb788a@f870042e234d19af21dd4e1314e0a33b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-shy-blade-2ccb788a@ec5424e9460850f2da1c42d934dcaec9
 ---
 
 # Chapter 14: / 《 Shy Blade 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

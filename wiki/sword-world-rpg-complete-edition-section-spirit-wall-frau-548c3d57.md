@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-frau-548c3d57@d9c8e60a4998bda85a61495e0d65cbec
+projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-frau-548c3d57@502d8bf9348340d4d26ae04c57fc595c
 ---
 
 # [ Spirit Wall: Frau ]
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-frau-286680e5]] - same source heading
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
+- [[sword-world-rpg-complete-edition-section-spirit-wall-frau-286680e5]] - same source heading: another source section with the same heading, Spirit Wall: Frau
 
 ## Statements
 

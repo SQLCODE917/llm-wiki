@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-3-adventurer-languages-e5bbfc97@e7f9948bbd01ab4a58908934f67b4f5d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-3-adventurer-languages-e5bbfc97@1ccc2ce6146efade4281e7710635a4ff
 ---
 
 # Chapter 12: Various Checks / 12.1.3 Adventurer Languages
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-combat-in-which-monsters-roll-dice-4f5c9f7e@c2a89e560cbb22214dfde0084b013247
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-combat-in-which-monsters-roll-dice-4f5c9f7e@2a9b2d8fb93982bcc8d20b554c88e3c5
 ---
 
 # Chapter 16: / Combat in Which Monsters Roll Dice
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-64c38056]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-64c38056]] - broader source section: Chapter 16:
 
 ## Statements
 

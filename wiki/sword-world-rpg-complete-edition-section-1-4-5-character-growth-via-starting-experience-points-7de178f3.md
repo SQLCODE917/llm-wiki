@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-5-character-growth-via-starting-experience-points-7de178f3@2099eda1f511310d09e375ff8aec3c02
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-5-character-growth-via-starting-experience-points-7de178f3@599314040fca27d9cb329a446006e7f0
 ---
 
 # 1.4.5 Character Growth via Starting Experience Points
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section: 1.4
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-4-22cd202b@d19231b0ccf10fbaa44a649f02e54355
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-4-22cd202b@4b60985fdb79614406f6f6cc5ee5bf9b
 ---
 
 # 4.10.4
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-10-d6286642]] - broader source section
-- [[sword-world-rpg-complete-edition-section-mithril-silver-weapons-and-armor-b75268a0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-forger-of-colors-32e3d760]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-damage-recovery-d85f1704]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-4-10-d6286642]] - broader source section: 4.10
+- [[sword-world-rpg-complete-edition-section-mithril-silver-weapons-and-armor-b75268a0]] - narrower source section: Mithril Silver Weapons and Armor
+- [[sword-world-rpg-complete-edition-section-forger-of-colors-32e3d760]] - narrower source section: Forger of Colors
+- [[sword-world-rpg-complete-edition-section-damage-recovery-d85f1704]] - narrower source section: Damage Recovery
 
 ## Statements by subsection
 

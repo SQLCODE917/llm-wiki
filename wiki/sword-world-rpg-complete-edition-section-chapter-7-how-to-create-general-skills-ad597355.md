@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-how-to-create-general-skills-ad597355@72e6a0703c26c2523e40cc85451af52d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-how-to-create-general-skills-ad597355@6877ec23dfd4efd69bcf6d038a8653b4
 ---
 
 # Chapter 7: / How to Create General Skills
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-13a77f13]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-7-13a77f13]] - broader source section: Chapter 7:
 
 ## Statements
 

@@ -130,8 +130,14 @@ def test_topic_pages_render_bidirectional_related_links() -> None:
     )
 
     by_id = {page.page_id: page.page_body for page in pages}
-    assert "[[rules-linked-list]] - narrower topic (1 shared atom(s))" in by_id["rules-list"]
-    assert "[[rules-list]] - broader topic (1 shared atom(s))" in by_id["rules-linked-list"]
+    assert (
+        "[[rules-linked-list]] - narrower topic: Linked List shares technical "
+        "code-block: value => value + 1 (1 shared atom(s))"
+    ) in by_id["rules-list"]
+    assert (
+        "[[rules-list]] - broader topic: List shares technical code-block: "
+        "value => value + 1 (1 shared atom(s))"
+    ) in by_id["rules-linked-list"]
 
 
 def test_topic_pages_render_related_source_sections() -> None:
@@ -164,7 +170,10 @@ def test_topic_pages_render_related_source_sections() -> None:
         },
     )
 
-    assert "[[rules-section-mapping]] - source section (1 shared atom(s))" in pages[0].page_body
+    assert (
+        "[[rules-section-mapping]] - source section: Mapping section shares technical "
+        "code-block: value => value + 1 (1 shared atom(s))"
+    ) in pages[0].page_body
 
 
 def _ledger_with_code_context() -> ClaimLedger:

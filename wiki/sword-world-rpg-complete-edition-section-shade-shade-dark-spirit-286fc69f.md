@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-shade-shade-dark-spirit-286fc69f@a4b21e9df25df1d2331a19d244ddc3ce
+projection_coverage: section-sword-world-rpg-complete-edition-section-shade-shade-dark-spirit-286fc69f@f7296acc532d1c0777aa11ec7e70aadb
 ---
 
 # [ Shade ] (Shade/Dark Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

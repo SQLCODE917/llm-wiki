@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-skeleton-warrior-41cfe652@976608dd99381f9162fdb731532c4756
+projection_coverage: section-sword-world-rpg-complete-edition-section-skeleton-warrior-41cfe652@3811b81f83bc31b79c89fdf34961c688
 ---
 
 # Skeleton Warrior
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-skeleton-warrior]] - topic hub
-- [[sword-world-rpg-complete-edition-section-skeleton-warrior-a78842c2]] - same source heading
+- [[sword-world-rpg-complete-edition-skeleton-warrior]] - topic hub: opens the topic page for Skeleton Warrior
+- [[sword-world-rpg-complete-edition-section-skeleton-warrior-a78842c2]] - same source heading: another source section with the same heading, [ Skeleton Warrior ]
 
 ## Statements
 

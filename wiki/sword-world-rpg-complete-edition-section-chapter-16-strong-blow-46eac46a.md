@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-strong-blow-46eac46a@540044215d3e8a880e7834b475859aba
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-strong-blow-46eac46a@82ce28ac735980ff0f746bf7b9b28af7
 ---
 
 # Chapter 16: / Strong Blow
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-cf2bd1e0]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-cf2bd1e0]] - broader source section: Chapter 16:
 
 ## Statements
 

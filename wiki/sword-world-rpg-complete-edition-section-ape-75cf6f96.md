@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ape-75cf6f96@43da6d3cb7703b4109ea48bb3e4a81f8
+projection_coverage: section-sword-world-rpg-complete-edition-section-ape-75cf6f96@f9d4f5c5c44337051832671b6dac5bde
 ---
 
 # [ Ape ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-small-ape-44584355]] - same source heading
+- [[sword-world-rpg-complete-edition-section-small-ape-44584355]] - same source heading: another source section with the same heading, Small Ape
 
 ## Statements
 

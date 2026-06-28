@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-lunatic-seed-spell-level-4-d9a7741b@4c64e3f09f9ca0fe008c7d6e7760284b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-lunatic-seed-spell-level-4-d9a7741b@0aaa2f5dcd9e93670b75a74583f8e7e3
 ---
 
 # Chapter 11: Notes on Magic / [ Lunatic Seed ] (Spell Level=4)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

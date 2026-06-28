@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-17-4-ad154d19@440d5c2f65364c5edf22d86b4e3e8d3f
+projection_coverage: section-sword-world-rpg-complete-edition-section-17-4-ad154d19@c4972b11e23b586cc873269e76beba5e
 ---
 
 # 17.4
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-using-magic-without-a-catalyst-9ceb59a5]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-using-magic-without-a-catalyst-9ceb59a5]] - narrower source section: Using Magic Without a Catalyst
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-blade-of-bravery-e2677c61@9af4daeaaf05047b4d164a050d8455bc
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-blade-of-bravery-e2677c61@219cd1d21255e13b850a07fb00dd529f
 ---
 
 # Chapter 14: / 《 Blade of Bravery 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

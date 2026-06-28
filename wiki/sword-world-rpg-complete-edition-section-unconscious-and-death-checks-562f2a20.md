@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-unconscious-and-death-checks-562f2a20@605fa08f33ddb5fe58cbdc460a79a5e7
+projection_coverage: section-sword-world-rpg-complete-edition-section-unconscious-and-death-checks-562f2a20@40846fc8778ef9962028933d1ede10ce
 ---
 
 # Unconscious and Death Checks
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-9-a263c100]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-9-a263c100]] - broader source section: 4.9
 
 ## Statements
 

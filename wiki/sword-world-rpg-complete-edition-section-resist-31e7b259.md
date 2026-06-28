@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-resist-31e7b259@17b3d0afd2bc536cfd7d7c7b90f27958
+projection_coverage: section-sword-world-rpg-complete-edition-section-resist-31e7b259@a8e60b6595da4fcb716a8373ca30321c
 ---
 
 # 《 Resist 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-resist]] - topic hub
+- [[sword-world-rpg-complete-edition-resist]] - topic hub: opens the topic page for Resist
 
 ## Statements
 

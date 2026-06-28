@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-changes-to-magic-procedure-48640491@aeeb6e2f95f519a16d0126b81c45489d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-changes-to-magic-procedure-48640491@eec1737c4527762383b51863a3c9612c
 ---
 
 # Chapter 17: / Changes to Magic Procedure
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-17-61f5de18]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-17-61f5de18]] - broader source section: Chapter 17:
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ability-scores-42fb12f7@a6cc9e157d88882d1d67744cd1d9a83a
+projection_coverage: section-sword-world-rpg-complete-edition-section-ability-scores-42fb12f7@aa69886829775880d5fa65a3cafc2bc6
 ---
 
 # Ability Scores
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-ability-score]] - topic hub
-- [[sword-world-rpg-complete-edition-section-ability-scores-aa0ddc41]] - same source heading
-- [[sword-world-rpg-complete-edition-section-ability-scores-38724346]] - same source heading
+- [[sword-world-rpg-complete-edition-ability-score]] - topic hub: opens the topic page for Ability Score
+- [[sword-world-rpg-complete-edition-section-ability-scores-aa0ddc41]] - same source heading: another source section with the same heading, [ ④ Ability Scores ]
+- [[sword-world-rpg-complete-edition-section-ability-scores-38724346]] - same source heading: another source section with the same heading, Ability Scores
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-blood-protection-a2008013@58f4031f63897e5f4a70b37546a18142
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-blood-protection-a2008013@983aeced18c7e050f38ce8543b1a947c
 ---
 
 # Chapter 11: Notes on Magic / [ Blood Protection ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

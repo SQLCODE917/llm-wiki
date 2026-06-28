@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-8-2-dc71ad75@664261737bc0afbc2c965c084d46ac79
+projection_coverage: section-sword-world-rpg-complete-edition-section-8-2-dc71ad75@70e5b201da7865e9facb06869099e303
 ---
 
 # 8.2
@@ -16,12 +16,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-how-to-use-experience-points-increasing-skill-levels-87964d9d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-f485148e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-040bbcdb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-8-2-1-sorcerer-skill-and-cbbd6545]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sage-skill-8443f6be]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-1-2f7c0918]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-how-to-use-experience-points-increasing-skill-levels-87964d9d]] - narrower source section: How to Use Experience Points: Increasing Skill Levels
+- [[sword-world-rpg-complete-edition-section-example-f485148e]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-example-040bbcdb]] - narrower source section: Example:
+- [[sword-world-rpg-complete-edition-section-8-2-1-sorcerer-skill-and-cbbd6545]] - narrower source section: 8.2.1 Sorcerer Skill and
+- [[sword-world-rpg-complete-edition-section-sage-skill-8443f6be]] - narrower source section: Sage Skill
+- [[sword-world-rpg-complete-edition-section-example-1-2f7c0918]] - narrower source section: Example 1:
 
 ## Statements by subsection
 

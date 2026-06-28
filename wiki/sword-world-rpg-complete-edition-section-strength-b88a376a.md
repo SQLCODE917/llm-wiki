@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-strength-b88a376a@e3682deebc6be3bbf30900156008493a
+projection_coverage: section-sword-world-rpg-complete-edition-section-strength-b88a376a@454ff26a94e57e4b3babb56351289ca8
 ---
 
 # 【 Strength 】
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-strength-8eaf7044]] - same source heading
+- [[sword-world-rpg-complete-edition-section-strength-8eaf7044]] - same source heading: another source section with the same heading, Strength
 
 ## Statements
 

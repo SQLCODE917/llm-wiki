@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction@ee4f9e5d3e3909721288e01efdf32156
+projection_coverage: topic-sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction@0c8d9a6740ac8e80b947684f98a99665
 ---
 
 # [ ⑤ Listen [Intelligence] ] (Equipment restriction)
@@ -89,20 +89,20 @@ Table 1-11: Equipment
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-climb-agility-equipment-restriction]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-follow-agility-equipment-restriction]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-remove-trap-dexterity-equipment-restriction-not-retriable]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-stealthy-step-agility-equipment-restriction]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-ability]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-fail]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-master]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-range]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-6-listen-intelligence-equipment-restriction-ba1860f7]] - source section (5 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-6-listen-intelligence-equipment-restriction-3f0031d4]] - source section (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms: Game shares source evidence from Chapter 6: / [ ⑤ Listen [Intelligence] ] (Equipment restriction): This ability is used to hear certain sounds from behind walls, doors, or from a distance. You can also choose and listen to a specific sound from a mixture of variou ... [truncated]; Game shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-climb-agility-equipment-restriction]] - shared technical atoms: [ ⑩ Climb [Agility] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-follow-agility-equipment-restriction]] - shared technical atoms: [ ⑬ Follow [Agility] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-remove-trap-dexterity-equipment-restriction-not-retriable]] - shared technical atoms: [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable]] - shared technical atoms: [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-stealthy-step-agility-equipment-restriction]] - shared technical atoms: [ ⑥ Stealthy Step [Agility] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared technical atoms: Table shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - shared technical atoms: [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability]] - shared statements: Ability shares source evidence from Chapter 6: / [ ⑤ Listen [Intelligence] ] (Equipment restriction): This ability is used to hear certain sounds from behind walls, doors, or from a distance. You can also choose and listen to a specific sound from a mixture of variou ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-fail]] - shared statements: Fail shares source evidence from Chapter 6: / [ ⑤ Listen [Intelligence] ] (Equipment restriction): This ability is used to hear certain sounds from behind walls, doors, or from a distance. You can also choose and listen to a specific sound from a mixture of variou ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-master]] - shared statements: Master shares source evidence from Chapter 6: / [ ⑤ Listen [Intelligence] ] (Equipment restriction): This ability is used to hear certain sounds from behind walls, doors, or from a distance. You can also choose and listen to a specific sound from a mixture of variou ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-range]] - shared statements: Range shares source evidence from Chapter 6: / [ ④ Listen [Intelligence] ] (Equipment restriction): Rangers can listen to even the smallest sounds and can choose the sound they want to hear from a wide range of sounds. This is handed the same way as the thief's ability. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-6-listen-intelligence-equipment-restriction-ba1860f7]] - source section: Chapter 6: / [ ⑤ Listen [Intelligence] ] (Equipment restriction) shares source evidence from Chapter 6: / [ ⑤ Listen [Intelligence] ] (Equipment restriction): This ability is used to hear certain sounds from behind walls, doors, or from a distance. You can also choose and listen to a specific sound from a mixture of variou ... [truncated]; Chapter 6: / [ ⑤ Listen [Intelligence] ] (Equipment restriction) shares technical record from Chapter 6: / [ ⑤ Listen [Intelligence] ] (Equipment restriction): Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (5 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-6-listen-intelligence-equipment-restriction-3f0031d4]] - source section: Chapter 6: / [ ④ Listen [Intelligence] ] (Equipment restriction) shares source evidence from Chapter 6: / [ ④ Listen [Intelligence] ] (Equipment restriction): Rangers can listen to even the smallest sounds and can choose the sound they want to hear from a wide range of sounds. This is handed the same way as the thief's ability.; Chapter 6: / [ ④ Listen [Intelligence] ] (Equipment restriction) shares technical table: Table 1-11: Equipment Name                       Price (in Gamels) Bags Rucksack (leather)                                   50 Bag (cloth) ... [truncated] (2 shared statement(s), 1 shared atom(s))
 
 ## Source
 

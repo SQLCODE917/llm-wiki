@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-range@e58e7a8774b0b86290d20e4b68a1017b
+projection_coverage: topic-sword-world-rpg-complete-edition-range@c41eef4b1cde505ea9594cafe4362229
 ---
 
 # Range
@@ -382,38 +382,38 @@ Table 16-4 Maximum  Ranges Table
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (12 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (4 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-meter]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared technical atoms (5 shared atom(s))
-- [[sword-world-rpg-complete-edition-fail]] - shared technical atoms (4 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (4 shared atom(s))
-- [[sword-world-rpg-complete-edition-addition]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-body]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-check]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-game]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-success]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-master]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements (12 shared statement(s))
-- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-area]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-base]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-bonus]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-effect]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-final]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-final-damage]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-stealthy-step-agility-equipment-restriction]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-strike]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms: Skill shares source evidence from Example:: Now let's buy some parchment (10 sheets for 10 G) and quill pen ink (5 G). Ducard II's ranger skill includes the map creation ability. It may be useful at some point ... [truncated]; Skill shares technical record from 1.4.5 Character Growth via Starting Experience Points: For example, if you do not have the ranger skill and you want to acquire 2 levels in ranger at once, you must spend 500 + 1000 for a total of 1500 experience points. (12 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms: Level shares source evidence from 1.4.5 Character Growth via Starting Experience Points: Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 f ... [truncated]; Level shares technical record from 1.4.5 Character Growth via Starting Experience Points: For example, if you do not have the ranger skill and you want to acquire 2 levels in ranger at once, you must spend 500 + 1000 for a total of 1500 experience points. (4 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms: Adventure shares source evidence from Chapter 16: / Projectile Bonus Damage: In the basic rules, any weapon's bonus damage equals fi ghter (or thief, ranger) skill level + strength bonus , but for projectiles , an adventurer's strength is not ... [truncated]; Adventure shares technical record from [ Killer Creeper ]: A character entangled in two or more vines cannot use ancient magic or spirit magic, because they're unable to move. (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared statements and technical atoms: Adventurer shares source evidence from Chapter 16: / Projectile Bonus Damage: In the basic rules, any weapon's bonus damage equals fi ghter (or thief, ranger) skill level + strength bonus , but for projectiles , an adventurer's strength is not ... [truncated]; Adventurer shares technical record from [ Killer Creeper ]: A character entangled in two or more vines cannot use ancient magic or spirit magic, because they're unable to move. (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-meter]] - shared statements and technical atoms: Meter shares source evidence from [ Ice Storm ] (Fenrir/Greater Ice Spirit): Base Mental Power Cost=40 Distance=30 meters Area=A space with a 10 meter radius Duration=Instant Effect=Creates an ice storm, dealing strike power 30 damage to targ ... [truncated]; Meter shares technical table: Table 16-4 Maximum  Ranges 20 meters for throwing weapons and 100 Dagger                  30 meters for shooting weapons. If you (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared technical atoms: Character shares technical record from 1.4.5 Character Growth via Starting Experience Points: For example, if you do not have the ranger skill and you want to acquire 2 levels in ranger at once, you must spend 500 + 1000 for a total of 1500 experience points. (5 shared atom(s))
+- [[sword-world-rpg-complete-edition-fail]] - shared technical atoms: Fail shares technical record from [ Ceiling Hanger ]: Special Abilities=Surprise attack (Sense target score=12) (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared technical atoms: Table shares technical record from [ Ranger ]: If you want to make use of your ranger skill, your armor must be light . (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-addition]] - shared technical atoms: Addition shares technical record from [ Ceiling Hanger ]: Special Abilities=Surprise attack (Sense target score=12) (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-body]] - shared technical atoms: Body shares technical record from [ Ceiling Hanger ]: Special Abilities=Surprise attack (Sense target score=12) (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-check]] - shared technical atoms: Check shares technical table: [ ⑩ Value Check [Intelligence]] (Not retriable) Unlike  rangers,  hunters  hunt  and convert their prey into gold to earn their own  income.  Therefore,  it's  no  g ... [truncated] (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-game]] - shared technical atoms: Game shares technical record from Chapter 6: / [ ⑩ Weather Prediction [Intelligence] ] (No equipment restriction, not retriable): If you attempt to use this ability and fail the success roll, you simply cannot predict the weather; it does not predict the opposite. (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared technical atoms: Success shares technical record from [ Killer Creeper ]: A character entangled in two or more vines cannot use ancient magic or spirit magic, because they're unable to move. (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-evasion]] - shared technical atoms: Evasion shares technical record from [ Killer Creeper ]: A character entangled in two or more vines cannot use ancient magic or spirit magic, because they're unable to move. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-master]] - shared technical atoms: Master shares technical record from Chapter 6: / [ ⑩ Weather Prediction [Intelligence] ] (No equipment restriction, not retriable): If you attempt to use this ability and fail the success roll, you simply cannot predict the weather; it does not predict the opposite. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements: 【 Ranger Skill 】 shares source evidence from Example:: Now let's buy some parchment (10 sheets for 10 G) and quill pen ink (5 G). Ducard II's ranger skill includes the map creation ability. It may be useful at some point ... [truncated] (12 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from 【 Bonus Damage 】: If fighter (or thief, ranger) skill level is 0 , bonus damage is 0 regardless of the character's strength bonus. (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from Chapter 16: / Projectile Bonus Damage: In the basic rules, any weapon's bonus damage equals fi ghter (or thief, ranger) skill level + strength bonus , but for projectiles , an adventurer's strength is not ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-area]] - shared statements: Area shares source evidence from [ Ice Storm ] (Fenrir/Greater Ice Spirit): Base Mental Power Cost=40 Distance=30 meters Area=A space with a 10 meter radius Duration=Instant Effect=Creates an ice storm, dealing strike power 30 damage to targ ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-base]] - shared statements: Base shares source evidence from [ Ice Storm ] (Fenrir/Greater Ice Spirit): Base Mental Power Cost=40 Distance=30 meters Area=A space with a 10 meter radius Duration=Instant Effect=Creates an ice storm, dealing strike power 30 damage to targ ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus]] - shared statements: Bonus shares source evidence from Chapter 16: / Projectile Bonus Damage: In the basic rules, any weapon's bonus damage equals fi ghter (or thief, ranger) skill level + strength bonus , but for projectiles , an adventurer's strength is not ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared statements: Effect shares source evidence from [ Ice Storm ] (Fenrir/Greater Ice Spirit): Base Mental Power Cost=40 Distance=30 meters Area=A space with a 10 meter radius Duration=Instant Effect=Creates an ice storm, dealing strike power 30 damage to targ ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-final]] - shared statements: Final shares source evidence from [ Ice Storm ] (Fenrir/Greater Ice Spirit): Base Mental Power Cost=40 Distance=30 meters Area=A space with a 10 meter radius Duration=Instant Effect=Creates an ice storm, dealing strike power 30 damage to targ ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-final-damage]] - shared statements: 4.5.5 Final Damage shares source evidence from [ Ice Storm ] (Fenrir/Greater Ice Spirit): Base Mental Power Cost=40 Distance=30 meters Area=A space with a 10 meter radius Duration=Instant Effect=Creates an ice storm, dealing strike power 30 damage to targ ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction]] - shared statements: [ ⑤ Listen [Intelligence] ] (Equipment restriction) shares source evidence from Chapter 6: / [ ④ Listen [Intelligence] ] (Equipment restriction): Rangers can listen to even the smallest sounds and can choose the sound they want to hear from a wide range of sounds. This is handed the same way as the thief's ability. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements: Power shares source evidence from [ Ice Storm ] (Fenrir/Greater Ice Spirit): Base Mental Power Cost=40 Distance=30 meters Area=A space with a 10 meter radius Duration=Instant Effect=Creates an ice storm, dealing strike power 30 damage to targ ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements: Resist shares source evidence from [ Ice Storm ] (Fenrir/Greater Ice Spirit): Base Mental Power Cost=40 Distance=30 meters Area=A space with a 10 meter radius Duration=Instant Effect=Creates an ice storm, dealing strike power 30 damage to targ ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements: Score shares source evidence from [ Ice Storm ] (Fenrir/Greater Ice Spirit): Base Mental Power Cost=40 Distance=30 meters Area=A space with a 10 meter radius Duration=Instant Effect=Creates an ice storm, dealing strike power 30 damage to targ ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-stealthy-step-agility-equipment-restriction]] - shared statements: [ ⑥ Stealthy Step [Agility] ] (Equipment restriction) shares source evidence from Chapter 6: / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction): Rangers can walk silently and unnoticed. This is handled the same way as the thief skill's ability. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-strike]] - shared statements: Strike shares source evidence from [ Ice Storm ] (Fenrir/Greater Ice Spirit): Base Mental Power Cost=40 Distance=30 meters Area=A space with a 10 meter radius Duration=Instant Effect=Creates an ice storm, dealing strike power 30 damage to targ ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements: Target shares source evidence from [ Ice Storm ] (Fenrir/Greater Ice Spirit): Base Mental Power Cost=40 Distance=30 meters Area=A space with a 10 meter radius Duration=Instant Effect=Creates an ice storm, dealing strike power 30 damage to targ ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-type]] - shared statements: Type shares source evidence from [ Ice Storm ] (Fenrir/Greater Ice Spirit): Base Mental Power Cost=40 Distance=30 meters Area=A space with a 10 meter radius Duration=Instant Effect=Creates an ice storm, dealing strike power 30 damage to targ ... [truncated] (1 shared statement(s))
 
 ## Source
 

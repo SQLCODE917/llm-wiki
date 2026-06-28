@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-strike-power-modifier-d593568c@9dd9d44484ba77bc793a5da19e62b561
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-strike-power-modifier-d593568c@72d9053ad441edc9dcb50084dc2c0095
 ---
 
 # Chapter 16: / Strike Power Modifier
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-9400c78a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-9400c78a]] - broader source section: Chapter 16:
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-analyze-enchantment-5f85f4cd@1fd8229aec2811cc684d20d9a1baf05e
+projection_coverage: section-sword-world-rpg-complete-edition-section-analyze-enchantment-5f85f4cd@3ffbe24fc7410b6e7e7b5547ea502244
 ---
 
 # [ Analyze Enchantment ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

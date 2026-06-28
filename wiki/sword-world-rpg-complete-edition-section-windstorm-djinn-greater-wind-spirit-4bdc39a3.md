@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-windstorm-djinn-greater-wind-spirit-4bdc39a3@3356d5307124f3a798936c7b55fe86e8
+projection_coverage: section-sword-world-rpg-complete-edition-section-windstorm-djinn-greater-wind-spirit-4bdc39a3@549dc22adb7e1b58cb239cbd93b3f3dd
 ---
 
 # [ Windstorm ] (Djinn/Greater Wind Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

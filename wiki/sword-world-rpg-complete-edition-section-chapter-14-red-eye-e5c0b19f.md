@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-red-eye-e5c0b19f@83954fd8195cc7ac36c657db57daadf3
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-red-eye-e5c0b19f@333bb68b985e67af9c56be41e590e860
 ---
 
 # Chapter 14: / 《 Red Eye 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

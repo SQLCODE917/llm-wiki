@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-8-3-a159ba7f@0313f1d8028c01eaff6181a2da8e79c7
+projection_coverage: section-sword-world-rpg-complete-edition-section-8-3-a159ba7f@225b9ced272f0046432a03c0e346d70f
 ---
 
 # 8.3
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-example-2-3cfb0717]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-3-b79e588a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-how-to-use-experience-points-increasing-ability-scores-c199293f]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-example-2-3cfb0717]] - narrower source section: Example 2:
+- [[sword-world-rpg-complete-edition-section-example-3-b79e588a]] - narrower source section: Example 3:
+- [[sword-world-rpg-complete-edition-section-how-to-use-experience-points-increasing-ability-scores-c199293f]] - narrower source section: How to Use Experience Points: Increasing Ability Scores
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-determining-base-damage-strike-roll-744e87c3@18a770fbe38d6ab44169be9f5cd4c169
+projection_coverage: section-sword-world-rpg-complete-edition-section-determining-base-damage-strike-roll-744e87c3@c863b31dafef8907e26c8618f365e1c2
 ---
 
 # Determining Base Damage (Strike Roll)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-5-2-1e3a6f91]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-5-2-1e3a6f91]] - broader source section: 4.5.2
 
 ## Statements
 

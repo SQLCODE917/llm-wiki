@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-minotaur-d5178b18@49f6da8f2c1e8d304fa918f8e33bc8e3
+projection_coverage: section-sword-world-rpg-complete-edition-section-minotaur-d5178b18@6cea2115bacec04d432e99284f1c4f7e
 ---
 
 # [ Minotaur ]
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-minotaur-4c4e7b8d]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section: 13.2.6
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-minotaur-4c4e7b8d]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / [ Minotaur ]
 
 ## Statements
 

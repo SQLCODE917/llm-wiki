@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-western-countries-language-western-except-palmer-village-which-uses-eastern-7bb6e029@70a28ff8137cad2a725da5a0d2bc79ce
+projection_coverage: section-sword-world-rpg-complete-edition-section-western-countries-language-western-except-palmer-village-which-uses-eastern-7bb6e029@0fe1e34e959c4c9aefd9c1b04805a0a3
 ---
 
 # Western Countries (Language: Western, except Palmer Village which uses Eastern)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-9th-level-dragon-roar-magic-list-summon-lesser-dragon-7a1661b0@dc565c4595cd2509e9de3740a2744e5b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-9th-level-dragon-roar-magic-list-summon-lesser-dragon-7a1661b0@331ce7d715f7798326d0ffbaf44a46ab
 ---
 
 # Chapter 11: Notes on Magic / 9th Level Dragon Roar Magic List [ Summon Lesser Dragon ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-sleep-eye-f74f9a8d@89ab026eb95d84916e7fb7c72c74fb0c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-sleep-eye-f74f9a8d@008167fceec99857912f0447957bcbd6
 ---
 
 # Chapter 14: / [ Sleep Eye ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

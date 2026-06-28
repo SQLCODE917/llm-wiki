@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-accessories-earrings-of-interpretation-e201fe10@4722e2e613748ec19d7ecbf77a0bcded
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-accessories-earrings-of-interpretation-e201fe10@03b0d1c3d161b0547663a52839895540
 ---
 
 # Chapter 14: / 《 Accessories 》 [ Earrings of Interpretation ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

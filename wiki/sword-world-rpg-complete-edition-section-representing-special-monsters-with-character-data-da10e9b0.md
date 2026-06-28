@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-representing-special-monsters-with-character-data-da10e9b0@91e5ee0677ef15eeaa7d5958bab54723
+projection_coverage: section-sword-world-rpg-complete-edition-section-representing-special-monsters-with-character-data-da10e9b0@0f8de58e5724f530155ebc0b3777c052
 ---
 
 # Representing Special Monsters with Character Data
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-4-b7a9c715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-4-b7a9c715]] - broader source section: 13.4
 
 ## Statements
 

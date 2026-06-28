@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-magic-sword@497f032b8b3ea5db41f4777b869e76f6
+projection_coverage: topic-sword-world-rpg-complete-edition-magic-sword@58fb4a503ceabe200f6c8f147e30a942
 ---
 
 # 《 Magic Sword (+1) 》
@@ -113,17 +113,17 @@ What [[sword-world-rpg-complete-edition]] covers about 《 magic sword (+1) 》:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-sword]] - broader topic (6 shared statement(s))
-- [[sword-world-rpg-complete-edition-magical]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-addition]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-game]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-master]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-1-20e1da37]] - source section (2 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-2-d38fc2fd]] - source section (5 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-3-0f8362a4]] - source section (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-sword]] - broader topic: Sword shares source evidence from 5.1.1 Types of Magic: In Sword World , there is a power called magic that can produce various mysterious effects by chanting words called runes and performing certain procedures at the same time. (6 shared statement(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared statements: Magical shares source evidence from Chapter 14: / Magical Item List: Of course, in many cases the value of these treasures cannot be converted into a price. For adventurers, magical swords and armor are not something you can give up. ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-addition]] - shared statements: Addition shares source evidence from Chariot of Dullahan: A chariot can only be dealt damage by silver or magical weapons. Furthermore, additional critical damage cannot be dealt by swords , spears , clubs , bows , crossbow ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements: Adventure shares source evidence from Chapter 14: / Magical Item List: Of course, in many cases the value of these treasures cannot be converted into a price. For adventurers, magical swords and armor are not something you can give up. ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared statements: Adventurer shares source evidence from Chapter 14: / Magical Item List: Of course, in many cases the value of these treasures cannot be converted into a price. For adventurers, magical swords and armor are not something you can give up. ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-game]] - shared statements: Game shares source evidence from Chapter 14: / 《 Magic Sword (+1) 》: Rather than having these appear as +1 swords , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements: 《 Magic Armor (+1) 》 shares source evidence from Chapter 14: / Magical Item List: Of course, in many cases the value of these treasures cannot be converted into a price. For adventurers, magical swords and armor are not something you can give up. ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-master]] - shared statements: Master shares source evidence from Chapter 14: / 《 Magic Sword (+1) 》: Rather than having these appear as +1 swords , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-1-20e1da37]] - source section: Chapter 14: / 《 Magic Sword (+1) 》 shares source evidence from Chapter 14: / 《 Magic Sword (+1) 》: Rather than having these appear as +1 swords , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and ... [truncated]; Chapter 14: / 《 Magic Sword (+1) 》 shares technical record from Chapter 14: / 《 Magic Sword (+1) 》: Rarity=12 (2 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-2-d38fc2fd]] - source section: Chapter 14: / 《 Magic Sword (+2) 》 shares technical record from Chapter 14: / 《 Magic Sword (+2) 》: Rarity=14 (5 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-sword-3-0f8362a4]] - source section: Chapter 14: / 《 Magic Sword (+3) 》 shares source evidence from Chapter 14: / 《 Magic Sword (+3) 》: Here's a list of prices of magical daggers, one-handed swords, and twohanded swords with +3 power.; Chapter 14: / 《 Magic Sword (+3) 》 shares technical record from Chapter 14: / 《 Magic Sword (+3) 》: Rarity=16 Enchanter=Many Form=A dagger, a one-handed sword, or a two-handed sword Required Strength/Base Trade Price=See description bonus (1 shared statement(s), 2 shared atom(s))
 
 ## Source
 

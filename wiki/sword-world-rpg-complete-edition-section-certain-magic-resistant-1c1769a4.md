@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-certain-magic-resistant-1c1769a4@af46a42898811cc55c00cedb75c75d07
+projection_coverage: section-sword-world-rpg-complete-edition-section-certain-magic-resistant-1c1769a4@46b12997a6f8f55b07f2721ff4429084
 ---
 
 # 《 Certain Magic Resistant 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-5-d175bad9]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-5-d175bad9]] - broader source section: 13.6.5
 
 ## Statements
 

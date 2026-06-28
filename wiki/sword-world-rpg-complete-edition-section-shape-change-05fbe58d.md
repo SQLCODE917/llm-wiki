@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-shape-change-05fbe58d@3bb0c10261dbb9dd5be67090581536ec
+projection_coverage: section-sword-world-rpg-complete-edition-section-shape-change-05fbe58d@ede46844a5bd9f01758849aca175e730
 ---
 
 # [ Shape Change
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
-- [[sword-world-rpg-complete-edition-shape-change]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-shape-change-dbedf837]] - same source heading
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
+- [[sword-world-rpg-complete-edition-shape-change]] - topic hub: opens the topic page for Shape Change
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-shape-change-dbedf837]] - same source heading: another source section with the same heading, Chapter 11: Notes on Magic / [ Shape Change
 
 ## Statements
 

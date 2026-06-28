@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-971915e8@b25f02fedd75aea2f35fd39579cd30bc
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-971915e8@0ddfd6cb7f66fc8ffe6693e591c013a2
 ---
 
 # Chapter 7:
@@ -16,11 +16,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-c479b2cc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-13a77f13]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-afc17170]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-d788e59c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-7-2758380a]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-7-c479b2cc]] - narrower source section: Chapter 7:
+- [[sword-world-rpg-complete-edition-section-chapter-7-13a77f13]] - narrower source section: Chapter 7:
+- [[sword-world-rpg-complete-edition-section-chapter-7-afc17170]] - narrower source section: Chapter 7:
+- [[sword-world-rpg-complete-edition-section-chapter-7-d788e59c]] - narrower source section: Chapter 7:
+- [[sword-world-rpg-complete-edition-section-chapter-7-2758380a]] - narrower source section: Chapter 7:
 
 ## Statements by subsection
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-1-how-to-read-the-structure-strength-table-bf7169a7@5b429667e7fa02bd4b367aac458be144
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-1-how-to-read-the-structure-strength-table-bf7169a7@ae65b3cd0e7bf0dbf066d2dcf39fc8ad
 ---
 
 # 18.3.1 How to Read the Structure Strength Table
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Technical atoms
 

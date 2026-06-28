@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-10th-level-basic-dark-magic-list-call-god-479b722b@447627f9b8485e5c41871a50da87b6f3
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-10th-level-basic-dark-magic-list-call-god-479b722b@579257f0442d9af9c76490e037fa948b
 ---
 
 # Chapter 11: Notes on Magic / 10th Level Basic Dark Magic List [ Call God ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

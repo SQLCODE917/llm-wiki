@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasure-and-rewards-in-sword-world-1d00658e@7b3b3e4db6304380fa21bb37550192a9
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasure-and-rewards-in-sword-world-1d00658e@b5fe165998839c83dc9c1c918ab19bb0
 ---
 
 # Chapter 14: / Treasure and Rewards in Sword World
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-4117a911]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-4117a911]] - broader source section: Chapter 14:
 
 ## Statements
 

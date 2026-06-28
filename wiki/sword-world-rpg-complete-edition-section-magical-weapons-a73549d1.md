@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magical-weapons-a73549d1@01909f9901ca92f7c0f548589eb228fe
+projection_coverage: section-sword-world-rpg-complete-edition-section-magical-weapons-a73549d1@5e4fee2e3ba4505d7a86cf7b10a434f3
 ---
 
 # 【 Magical Weapons 】
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-10-3-6729b108]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-10-3-6729b108]] - broader source section: 4.10.3
 
 ## Statements
 

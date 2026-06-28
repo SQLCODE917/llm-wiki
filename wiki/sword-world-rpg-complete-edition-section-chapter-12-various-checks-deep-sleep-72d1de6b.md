@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-deep-sleep-72d1de6b@dd4de374318a1507c3797eb8cc2001f6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-deep-sleep-72d1de6b@81baa699b8315c85aad0a04ccfb0a6bf
 ---
 
 # Chapter 12: Various Checks / [ Deep Sleep ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

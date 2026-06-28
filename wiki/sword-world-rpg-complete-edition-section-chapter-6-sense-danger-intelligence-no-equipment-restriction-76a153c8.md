@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-sense-danger-intelligence-no-equipment-restriction-76a153c8@228d7f656681064ddab100755e26339c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-sense-danger-intelligence-no-equipment-restriction-76a153c8@7aa067b9362c69938aabedb9f62b16dc
 ---
 
 # Chapter 6: / [ ⑤ Sense Danger [Intelligence]] (No equipment restriction)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section: Chapter 6:
 
 ## Statements
 

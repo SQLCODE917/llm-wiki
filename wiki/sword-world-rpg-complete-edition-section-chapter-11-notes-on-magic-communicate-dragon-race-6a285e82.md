@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-communicate-dragon-race-6a285e82@b2bf7b19cb2a8fb84c789ccd141b1387
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-communicate-dragon-race-6a285e82@e4d29e45d59ba6d247be8b01255e9645
 ---
 
 # Chapter 11: Notes on Magic / [Communicate Dragon Race]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2441cc38]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

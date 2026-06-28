@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-humbaba-curse-e329d2bf@ac21b2cdd64bd719c441e5b5269475da
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-humbaba-curse-e329d2bf@8cf04cc7309bfe26c2d5d9fa1b9108d4
 ---
 
 # Chapter 12: Various Checks / [ Humbaba Curse ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ddbbca04]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

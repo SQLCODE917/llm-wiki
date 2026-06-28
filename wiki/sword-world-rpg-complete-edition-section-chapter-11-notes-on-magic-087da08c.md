@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c@b5e42df2d252fb2fe3c3961aba668bc2
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c@a03baee2df4e125f8a050d333a95e2ec
 ---
 
 # Chapter 11: Notes on Magic
@@ -16,31 +16,31 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-bfe3e221]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dark-magic-f3ed4592]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-8ff38ad2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-2-basic-dark-magic-list-873bb63d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-1st-level-basic-dark-magic-list-fd643577]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-mental-attack-bf46039c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2nd-level-basic-dark-magic-list-a07b41e1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-blindness-8bac905f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-3rd-level-basic-dark-magic-list-poison-10317bd8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-paralysis-poison-dff68a74]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-damage-poison-b683e217]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-4th-level-basic-dark-magic-list-control-imp-908f0d42]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-steal-life-69ec70ee]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-5th-level-basic-dark-magic-list-ef03c952]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-create-zombie-ef9c917d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-curse-0363bb15]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-6th-level-basic-dark-magic-list-mesmerize-1137e0cb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-rot-810f930a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-7th-level-basic-dark-magic-list-589d3ae8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-8th-level-basic-dark-magic-list-cripple-76c20c98]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-summon-servant-415706af]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-9th-level-basic-dark-magic-list-plague-8aa524b7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-recall-spirit-f42a7164]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-10th-level-basic-dark-magic-list-call-god-479b722b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-bfe3e221]] - broader source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dark-magic-f3ed4592]] - narrower source section: Chapter 11: Notes on Magic / Dark Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-8ff38ad2]] - narrower source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-2-basic-dark-magic-list-873bb63d]] - narrower source section: Chapter 11: Notes on Magic / 11.2.2 Basic Dark Magic List
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-1st-level-basic-dark-magic-list-fd643577]] - narrower source section: Chapter 11: Notes on Magic / 1st Level Basic Dark Magic List
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-mental-attack-bf46039c]] - narrower source section: Chapter 11: Notes on Magic / [ Mental Attack ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-2nd-level-basic-dark-magic-list-a07b41e1]] - narrower source section: Chapter 11: Notes on Magic / 2nd Level Basic Dark Magic List
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-blindness-8bac905f]] - narrower source section: Chapter 11: Notes on Magic / Blindness
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-3rd-level-basic-dark-magic-list-poison-10317bd8]] - narrower source section: Chapter 11: Notes on Magic / 3rd Level Basic Dark Magic List [ Poison ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-paralysis-poison-dff68a74]] - narrower source section: Chapter 11: Notes on Magic / Paralysis Poison
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-damage-poison-b683e217]] - narrower source section: Chapter 11: Notes on Magic / Damage Poison
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-4th-level-basic-dark-magic-list-control-imp-908f0d42]] - narrower source section: Chapter 11: Notes on Magic / 4th Level Basic Dark Magic List [ Control Imp ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-steal-life-69ec70ee]] - narrower source section: Chapter 11: Notes on Magic / [ Steal Life ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-5th-level-basic-dark-magic-list-ef03c952]] - narrower source section: Chapter 11: Notes on Magic / 5th Level Basic Dark Magic List
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-create-zombie-ef9c917d]] - narrower source section: Chapter 11: Notes on Magic / [ Create Zombie ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-curse-0363bb15]] - narrower source section: Chapter 11: Notes on Magic / Curse
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-6th-level-basic-dark-magic-list-mesmerize-1137e0cb]] - narrower source section: Chapter 11: Notes on Magic / 6th Level Basic Dark Magic List [ Mesmerize ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-rot-810f930a]] - narrower source section: Chapter 11: Notes on Magic / [ Rot ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-7th-level-basic-dark-magic-list-589d3ae8]] - narrower source section: Chapter 11: Notes on Magic / 7th Level Basic Dark Magic List
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-8th-level-basic-dark-magic-list-cripple-76c20c98]] - narrower source section: Chapter 11: Notes on Magic / 8th Level Basic Dark Magic List [ Cripple ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-summon-servant-415706af]] - narrower source section: Chapter 11: Notes on Magic / [ Summon Servant ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-9th-level-basic-dark-magic-list-plague-8aa524b7]] - narrower source section: Chapter 11: Notes on Magic / 9th Level Basic Dark Magic List [ Plague ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-recall-spirit-f42a7164]] - narrower source section: Chapter 11: Notes on Magic / [ Recall Spirit ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-10th-level-basic-dark-magic-list-call-god-479b722b]] - narrower source section: Chapter 11: Notes on Magic / 10th Level Basic Dark Magic List [ Call God ]
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0]] - narrower source section: Chapter 11: Notes on Magic
 
 ## Statements
 

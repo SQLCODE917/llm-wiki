@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-hunter-skill-a1dd2fb7@bdbadf70ca7d88a528731cfe46338861
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-hunter-skill-a1dd2fb7@fa10c365d64cab7f12bf99e42f912cd1
 ---
 
 # Chapter 7: / Hunter Skill
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-2758380a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-7-2758380a]] - broader source section: Chapter 7:
 
 ## Statements
 

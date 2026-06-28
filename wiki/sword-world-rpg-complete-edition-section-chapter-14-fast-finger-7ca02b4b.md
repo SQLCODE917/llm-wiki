@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-fast-finger-7ca02b4b@310a7c929ffd6be9831b4565a237bae7
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-fast-finger-7ca02b4b@9bf9ffc25d0bc46fd0322edc42bb6ddf
 ---
 
 # Chapter 14: / [ Fast Finger ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

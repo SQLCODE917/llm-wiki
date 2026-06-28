@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-fire-breath@ef3e94109c63994c248d0dd2d4f07dfc
+projection_coverage: topic-sword-world-rpg-complete-edition-fire-breath@7082a4401e918570d0aa2d57f707ff21
 ---
 
 # [ Fire Breath ]
@@ -93,18 +93,18 @@ What [[sword-world-rpg-complete-edition]] covers about [ fire breath ]:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-fire]] - broader topic (6 shared statement(s))
-- [[sword-world-rpg-complete-edition-ability]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-area]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-effect]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-strike]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-fire-breath-7eb43570]] - source section (2 shared statement(s), 8 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-fire-breath-e8d25a87]] - source section (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-fire]] - broader topic: Fire shares source evidence from Chapter 11: Notes on Magic / [ Fire Breath ]: The caster breathes fire from their mouth like a dragon. The fire's area of effect is a semicircle with a 10 meter forward radius. The fire's strike power is 20, and ... [truncated] (6 shared statement(s))
+- [[sword-world-rpg-complete-edition-ability]] - shared statements: Ability shares source evidence from [ Salamander ]: Salamanders, which are spirits of fire, look like quadrupedal beasts with a body length of about 1 meter, as they are called by the name fi re lizard . However, its ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from Chapter 11: Notes on Magic / [ Fire Breath ]: The caster breathes fire from their mouth like a dragon. The fire's area of effect is a semicircle with a 10 meter forward radius. The fire's strike power is 20, and ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from 《 Fire Breath 》: Monsters with this ability can breathe fire. Characters exposed to the fire (the range of the fire varies by monster) will suffer damage. This damage cannot be preve ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-area]] - shared statements: Area shares source evidence from Chapter 11: Notes on Magic / [ Fire Breath ]: The caster breathes fire from their mouth like a dragon. The fire's area of effect is a semicircle with a 10 meter forward radius. The fire's strike power is 20, and ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements: Character shares source evidence from 《 Fire Breath 》: Monsters with this ability can breathe fire. Characters exposed to the fire (the range of the fire varies by monster) will suffer damage. This damage cannot be preve ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared statements: Effect shares source evidence from Chapter 11: Notes on Magic / [ Fire Breath ]: The caster breathes fire from their mouth like a dragon. The fire's area of effect is a semicircle with a 10 meter forward radius. The fire's strike power is 20, and ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements: 《 Magic Armor (+1) 》 shares source evidence from 《 Fire Breath 》: Monsters with this ability can breathe fire. Characters exposed to the fire (the range of the fire varies by monster) will suffer damage. This damage cannot be preve ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements: Power shares source evidence from Chapter 11: Notes on Magic / [ Fire Breath ]: The caster breathes fire from their mouth like a dragon. The fire's area of effect is a semicircle with a 10 meter forward radius. The fire's strike power is 20, and ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-strike]] - shared statements: Strike shares source evidence from Chapter 11: Notes on Magic / [ Fire Breath ]: The caster breathes fire from their mouth like a dragon. The fire's area of effect is a semicircle with a 10 meter forward radius. The fire's strike power is 20, and ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-fire-breath-7eb43570]] - source section: Chapter 11: Notes on Magic / [ Fire Breath ] shares source evidence from Chapter 11: Notes on Magic / [ Fire Breath ]: The caster breathes fire from their mouth like a dragon. The fire's area of effect is a semicircle with a 10 meter forward radius. The fire's strike power is 20, and ... [truncated]; Chapter 11: Notes on Magic / [ Fire Breath ] shares technical record from Chapter 11: Notes on Magic / [ Fire Breath ]: Base Mental Power Cost=20 (2 shared statement(s), 8 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-fire-breath-e8d25a87]] - source section: 《 Fire Breath 》 shares source evidence from 《 Fire Breath 》: Monsters with this ability can breathe fire. Characters exposed to the fire (the range of the fire varies by monster) will suffer damage. This damage cannot be preve ... [truncated]; 《 Fire Breath 》 shares technical record from 《 Fire Breath 》: You must also make a mental power resistance roll against the indicated target score, which if successful will result in a smaller amount of damage. (3 shared statement(s), 1 shared atom(s))
 
 ## Source
 

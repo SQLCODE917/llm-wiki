@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-resistance-rolls-251ab24b@6661a5b9499b23ec0183fc577d69c729
+projection_coverage: section-sword-world-rpg-complete-edition-section-resistance-rolls-251ab24b@4c5a01f053128dc52f003f1fce9b0147
 ---
 
 # Resistance Rolls
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-2-6-3fcadf7c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-2-6-3fcadf7c]] - broader source section: 2.6
 
 ## Statements
 

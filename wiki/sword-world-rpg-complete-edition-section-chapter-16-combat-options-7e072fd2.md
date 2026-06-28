@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-combat-options-7e072fd2@684acdd7b682f85f017435cc561ea5d9
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-combat-options-7e072fd2@9f722d41492a9a411522d6a67defb164
 ---
 
 # Chapter 16: / Combat Options
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-cf2bd1e0]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-cf2bd1e0]] - broader source section: Chapter 16:
 
 ## Statements
 

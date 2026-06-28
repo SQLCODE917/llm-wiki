@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-4-1-how-to-read-item-c95c9942@b15253aac0acc8c32fbc98b229f51429
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-4-1-how-to-read-item-c95c9942@406e4762fcbb0620c031705f51e87654
 ---
 
 # Chapter 14: / 14.4.1 How to Read Item
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Technical atoms
 

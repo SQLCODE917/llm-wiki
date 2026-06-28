@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-effect-duration-166248eb@e0e411eb8b0f1719a32ad0a46e370d89
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-effect-duration-166248eb@f423f34798f0af0891aba71757304128
 ---
 
 # Chapter 12: Various Checks / 《 Effect Duration 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

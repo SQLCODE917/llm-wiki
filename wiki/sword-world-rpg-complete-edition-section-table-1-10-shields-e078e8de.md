@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-table-1-10-shields-e078e8de@a9bf2e17aa6333c49ac10ca1dee9f908
+projection_coverage: section-sword-world-rpg-complete-edition-section-table-1-10-shields-e078e8de@3b3deb38638e909ab2b5af5676f1c9f6
 ---
 
 # Table 1-10: Shields
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Technical atoms
 

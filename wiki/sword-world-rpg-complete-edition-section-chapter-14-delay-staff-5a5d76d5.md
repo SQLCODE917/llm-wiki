@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-delay-staff-5a5d76d5@956901d8ffc33a3caeb7c6176e63da12
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-delay-staff-5a5d76d5@b10c1f42b4c741cbe89ef3587d9c794a
 ---
 
 # Chapter 14: / [ Delay Staff ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

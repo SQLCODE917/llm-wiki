@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-example-d96093e5@e9c426dd14c933ddc147f5584b51a604
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-example-d96093e5@6e3f3f2964fe3ae578358bb156ab920e
 ---
 
 # Chapter 11: Notes on Magic / Example:
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-09a12197]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-09a12197]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

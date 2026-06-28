@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-cat-claw-b6e57ae5@6969a356deb8d3e74f3ec56bca22eca3
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-cat-claw-b6e57ae5@bd1f7c4da0113cb18634b39a495d7471
 ---
 
 # Chapter 14: / 《 Cat Claw 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

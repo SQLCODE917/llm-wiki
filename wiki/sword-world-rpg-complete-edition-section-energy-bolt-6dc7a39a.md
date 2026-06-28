@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-energy-bolt-6dc7a39a@e0173974741c6180c7f9884a52075be3
+projection_coverage: section-sword-world-rpg-complete-edition-section-energy-bolt-6dc7a39a@c8b7af4bbaa88a712ef94c88b1e8f12e
 ---
 
 # [ Energy Bolt ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-11-2-7e531b45]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-11-2-7e531b45]] - broader source section: 5.1.11.2
 
 ## Statements
 

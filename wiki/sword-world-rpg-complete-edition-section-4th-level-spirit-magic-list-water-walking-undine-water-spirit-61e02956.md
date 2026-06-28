@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4th-level-spirit-magic-list-water-walking-undine-water-spirit-61e02956@b56c5bc2abe5b3b3c9374d9d5b37cc93
+projection_coverage: section-sword-world-rpg-complete-edition-section-4th-level-spirit-magic-list-water-walking-undine-water-spirit-61e02956@ac5c080e278005eef2b82c699df60ad4
 ---
 
 # 4th Level Spirit Magic List [ Water Walking ] (Undine/Water Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

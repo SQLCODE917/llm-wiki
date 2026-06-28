@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-8-cc000603@ece091291cb6f0c2c85375baea6e6eb9
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-8-cc000603@8e4d39377b072df5d9263db6e3c0f815
 ---
 
 # 4.8
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-applying-damage-b41555f1]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-applying-damage-b41555f1]] - narrower source section: Applying Damage
 
 ## Statements by subsection
 

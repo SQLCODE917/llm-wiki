@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ragnakang-2835de76@91d7e89c46e23c8b2ba3abf0cfefa6fe
+projection_coverage: section-sword-world-rpg-complete-edition-section-ragnakang-2835de76@3baad34e1539f9ff8be03a1669b535ca
 ---
 
 # Ragnakang
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-11-cbbcb4fd]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-11-cbbcb4fd]] - broader source section: 13.2.11
 
 ## Statements
 

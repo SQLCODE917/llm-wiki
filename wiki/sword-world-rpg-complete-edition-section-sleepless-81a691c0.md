@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sleepless-81a691c0@7ca2c663c4749770b12fc131923b2f0f
+projection_coverage: section-sword-world-rpg-complete-edition-section-sleepless-81a691c0@dd9229bd6fbb4fe4d3627614668abdb7
 ---
 
 # 《 Sleepless 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-5-d175bad9]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-5-d175bad9]] - broader source section: 13.6.5
 
 ## Statements
 

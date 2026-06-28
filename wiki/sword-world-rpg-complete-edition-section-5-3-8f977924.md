@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-3-8f977924@b18e8056ba6b7d2d90b9748b5f9b6b2d
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-3-8f977924@8568301c9bf61030a833101131e0c3c0
 ---
 
 # 5.3
@@ -16,26 +16,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-spellsongs-0751b0a6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-5-3-1-spellsong-list-8b08735b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-407d21c2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-early-bird-mind-b572e23c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-curiosity-mind-1cbe40d4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-summon-small-animals-mind-96fdec72]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sing-mind-fe01cd4f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-dance-mind-ca5bbe21]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-charm-mind-af088d17]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-nostalgia-mind-07ee9d2b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-peace-mind-1a4691c6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-healing-75c38dfa]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-march-mind-e7831b4d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-morale-mind-1e6cc9a8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-lullaby-mind-c067c77b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-requiem-7c8a97f7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-resistance-50fa601d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-restore-mental-power-mind-b008c4aa]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-vibrato-125fff74]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-43d12f43]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-spellsongs-0751b0a6]] - narrower source section: Spellsongs
+- [[sword-world-rpg-complete-edition-section-5-3-1-spellsong-list-8b08735b]] - narrower source section: 5.3.1 Spellsong List
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-407d21c2]] - narrower source section: Filling out the Character Sheet
+- [[sword-world-rpg-complete-edition-section-early-bird-mind-b572e23c]] - narrower source section: Early Bird (Mind)
+- [[sword-world-rpg-complete-edition-section-curiosity-mind-1cbe40d4]] - narrower source section: Curiosity (Mind)
+- [[sword-world-rpg-complete-edition-section-summon-small-animals-mind-96fdec72]] - narrower source section: Summon Small Animals (Mind)
+- [[sword-world-rpg-complete-edition-section-sing-mind-fe01cd4f]] - narrower source section: Sing (Mind)
+- [[sword-world-rpg-complete-edition-section-dance-mind-ca5bbe21]] - narrower source section: Dance (Mind)
+- [[sword-world-rpg-complete-edition-section-charm-mind-af088d17]] - narrower source section: Charm (Mind)
+- [[sword-world-rpg-complete-edition-section-nostalgia-mind-07ee9d2b]] - narrower source section: Nostalgia (Mind)
+- [[sword-world-rpg-complete-edition-section-peace-mind-1a4691c6]] - narrower source section: Peace (Mind)
+- [[sword-world-rpg-complete-edition-section-healing-75c38dfa]] - narrower source section: Healing
+- [[sword-world-rpg-complete-edition-section-march-mind-e7831b4d]] - narrower source section: March (Mind)
+- [[sword-world-rpg-complete-edition-section-morale-mind-1e6cc9a8]] - narrower source section: Morale (Mind)
+- [[sword-world-rpg-complete-edition-section-lullaby-mind-c067c77b]] - narrower source section: Lullaby (Mind)
+- [[sword-world-rpg-complete-edition-section-requiem-7c8a97f7]] - narrower source section: Requiem
+- [[sword-world-rpg-complete-edition-section-resistance-50fa601d]] - narrower source section: Resistance
+- [[sword-world-rpg-complete-edition-section-restore-mental-power-mind-b008c4aa]] - narrower source section: Restore Mental Power (Mind)
+- [[sword-world-rpg-complete-edition-section-vibrato-125fff74]] - narrower source section: Vibrato
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-43d12f43]] - narrower source section: Filling out the Character Sheet
 
 ## Statements
 

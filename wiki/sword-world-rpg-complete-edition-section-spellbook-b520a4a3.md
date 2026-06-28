@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-spellbook-b520a4a3@dff953cc581483e92260996b28bae786
+projection_coverage: section-sword-world-rpg-complete-edition-section-spellbook-b520a4a3@92287cbfc80821b687ce82bf45c3a3e1
 ---
 
 # 《 Spellbook 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-11-2-7e531b45]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-11-2-7e531b45]] - broader source section: 5.1.11.2
 
 ## Statements
 

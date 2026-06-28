@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-firestorm-efreet-greater-fire-spirit-d1bd8720@0dd37cd0842e3f5a74d32e2a6187943f
+projection_coverage: section-sword-world-rpg-complete-edition-section-firestorm-efreet-greater-fire-spirit-d1bd8720@a8e169a3a0e97c2d9fb5802e6f5b2929
 ---
 
 # [ Firestorm ] (Efreet/Greater Fire Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

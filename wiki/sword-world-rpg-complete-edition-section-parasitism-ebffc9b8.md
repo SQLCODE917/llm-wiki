@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-parasitism-ebffc9b8@4c18cf0dce82d39a137bb236608bdfc1
+projection_coverage: section-sword-world-rpg-complete-edition-section-parasitism-ebffc9b8@a57825d87f58581c909ee47dac046361
 ---
 
 # 《 Parasitism 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-2-0557ea23]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-2-0557ea23]] - broader source section: 13.6.2
 
 ## Statements
 

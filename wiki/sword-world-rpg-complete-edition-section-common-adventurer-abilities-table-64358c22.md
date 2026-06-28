@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-common-adventurer-abilities-table-64358c22@9f3cc6885b587a7946464ab11a5ab9cd
+projection_coverage: section-sword-world-rpg-complete-edition-section-common-adventurer-abilities-table-64358c22@a286bb5c9d1ed633c34729c29b365620
 ---
 
 # Common Adventurer Abilities Table
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

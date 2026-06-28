@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-pick-a-weapon-up-off-the-ground-and-ready-it-5d1dd963@1ca479e2c8db21eea8235a941f9b8b87
+projection_coverage: section-sword-world-rpg-complete-edition-section-pick-a-weapon-up-off-the-ground-and-ready-it-5d1dd963@a6491513667483d6e2c7c56df5141e21
 ---
 
 # Pick a Weapon Up off the Ground and Ready It
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-3-4-3-72b649fd]] - broader source section
+- [[sword-world-rpg-complete-edition-section-3-4-3-72b649fd]] - broader source section: 3.4.3
 
 ## Statements
 

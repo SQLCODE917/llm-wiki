@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-long-jump-high-jump-agility-3ef93f0b@1941a3150feefb2c7591c17c3e05c24b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-long-jump-high-jump-agility-3ef93f0b@72a0f95a29a810113522e42f9db0d0ce
 ---
 
 # Chapter 6: / [ ⑤ Long Jump/High Jump [Agility] ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section: Chapter 6:
 
 ## Statements
 

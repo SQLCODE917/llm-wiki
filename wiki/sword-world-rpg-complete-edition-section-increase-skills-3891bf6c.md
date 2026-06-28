@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-increase-skills-3891bf6c@27fed09e8de361cf24a9d33861468a05
+projection_coverage: section-sword-world-rpg-complete-edition-section-increase-skills-3891bf6c@d102ad43b5b0b51a15c20e3289c6f7ca
 ---
 
 # [ ⑬ Increase Skills ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - broader source section
+- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - broader source section: 1.4.9
 
 ## Technical atoms
 

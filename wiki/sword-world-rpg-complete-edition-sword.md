@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-sword@b08a1777d6078af151c57a804568f001
+projection_coverage: topic-sword-world-rpg-complete-edition-sword@96fe9031733e563f614b950951748185
 ---
 
 # Sword
@@ -368,35 +368,35 @@ Table 1-8: Weapons-1
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-magic-sword]] - narrower topic (6 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (5 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared statements and technical atoms (5 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-base]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-critical-target-variation]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-meter]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-play]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-player]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-sheath-weapon-etc]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-success]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-weapon-critical]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-ability-score]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-addition]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-game]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-master]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-ability]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-low-ancient]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-magical]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-magic-sword]] - narrower topic: 《 Magic Sword (+1) 》 shares source evidence from 5.1.1 Types of Magic: In Sword World , there is a power called magic that can produce various mysterious effects by chanting words called runes and performing certain procedures at the same time. (6 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms: Adventure shares source evidence from Ability Scores: Just as there are many different kinds of people in the real world, strong (or weak), smart (or dumb), etc., there are many different kinds of people in Forcelia. In ... [truncated]; Adventure shares technical record from 【 Damage Reduction 】: damage reduction = adventurer level (5 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared statements and technical atoms: Adventurer shares source evidence from Ability Scores: Just as there are many different kinds of people in the real world, strong (or weak), smart (or dumb), etc., there are many different kinds of people in Forcelia. In ... [truncated]; Adventurer shares technical record from 【 Damage Reduction 】: damage reduction = adventurer level (5 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms: Character shares source evidence from Ability Scores: Just as there are many different kinds of people in the real world, strong (or weak), smart (or dumb), etc., there are many different kinds of people in Forcelia. In ... [truncated]; Character shares technical record from Baseline Scores: baseline score = relevant skill level + ability bonus (3 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms: Skill shares source evidence from Automatic Success Restrictions: The world record for the long jump is just under 9 meters. In Sword World RPG , those with a high thief skill can jump them the difficulty. Players will probably thi ... [truncated]; Skill shares technical record from 【 Critical Target 】: critical target = 10 (9 if using thief skill) (1 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms: Cast shares source evidence from [ Valkyrie ]: Valkyrie is a mind spirit. It governs the courage of men who fight. Her appearance is that of a human woman clad in shining white armor, and her noble appearance is ... [truncated]; Cast shares technical record from [ Valkyrie ]: Languages=Silent spirit (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms: Score shares source evidence from Skills: In addition to ability scores, Sword World RPG also uses numeric values called skills to describe the characteristics of characters. Skills have a greater impact on ... [truncated]; Score shares technical record from Chapter 6: / Example 2:: Table 6-4: Determining High Jump Target Scores (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms: Spell shares source evidence from [ Valkyrie ]: Valkyrie is a mind spirit. It governs the courage of men who fight. Her appearance is that of a human woman clad in shining white armor, and her noble appearance is ... [truncated]; Spell shares technical record from [ Valkyrie ]: Languages=Silent spirit (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements and technical atoms: 1.3.3 Adventurer Level shares source evidence from 1.3.3 Adventurer Level: In Sword World RPG, a character's capability as an adventurer is determined by their adventurer skill level. The highest level among the adventurer skills that a cha ... [truncated]; 1.3.3 Adventurer Level shares technical record from 【 Damage Reduction 】: damage reduction = adventurer level (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements and technical atoms: 【 Damage Reduction 】 shares source evidence from 【 Damage Reduction 】: Those who are called heroes do not die from just a few injuries. In Sword World RPG , a character with a high adventurer level, that is, a character who has a high l ... [truncated]; 【 Damage Reduction 】 shares technical record from 【 Damage Reduction 】: damage reduction = adventurer level (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms: Level shares source evidence from 【 Damage Reduction 】: Those who are called heroes do not die from just a few injuries. In Sword World RPG , a character with a high adventurer level, that is, a character who has a high l ... [truncated]; Level shares technical record from 【 Damage Reduction 】: damage reduction = adventurer level (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared technical atoms: Target shares technical record from 【 Critical Target 】: critical target = 10 (9 if using thief skill) (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-base]] - shared technical atoms: Base shares technical record from Chapter 6: / Example 2:: Table 6-4: Determining High Jump Target Scores (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-critical-target-variation]] - shared technical atoms: Critical Target Variation shares technical record from 【 Critical Target 】: critical target = 10 (9 if using thief skill) (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-meter]] - shared technical atoms: Meter shares technical record from Automatic Success Restrictions: Of course, even if that's the case, stay true to the roll of your dice. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-play]] - shared technical atoms: Play shares technical record from Automatic Success Restrictions: Of course, even if that's the case, stay true to the roll of your dice. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-player]] - shared technical atoms: Player shares technical record from Automatic Success Restrictions: Of course, even if that's the case, stay true to the roll of your dice. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-sheath-weapon-etc]] - shared technical atoms: Sheath a Weapon, Etc. shares technical table: Table 1-8: Weapons-1 Weapon Name             Usage Required Str. Price Calculation Swords Dagger (throwable)                  1H      1~5         x10+20 Main-gauche ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared technical atoms: Success shares technical record from Automatic Success Restrictions: Of course, even if that's the case, stay true to the roll of your dice. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared technical atoms: Table shares technical table: Table 1-8: Weapons-1 Weapon Name             Usage Required Str. Price Calculation Swords Dagger (throwable)                  1H      1~5         x10+20 Main-gauche ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-weapon-critical]] - shared technical atoms: 《 Weapons Cannot Critical 》 shares technical table: Table 1-8: Weapons-1 Weapon Name             Usage Required Str. Price Calculation Swords Dagger (throwable)                  1H      1~5         x10+20 Main-gauche ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability-score]] - shared statements: Ability Scores shares source evidence from Ability Scores: Just as there are many different kinds of people in the real world, strong (or weak), smart (or dumb), etc., there are many different kinds of people in Forcelia. In ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-addition]] - shared statements: Addition shares source evidence from 8. Game Master Screen: In addition to these, Sword World RPG is scheduled to feature a variety of other related works. It will also continue to be supported in magazines published by Fujim ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-game]] - shared statements: Game shares source evidence from 8. Game Master Screen: The Sword World RPG Game Master Screen is a collection of charts (or tables) that you will need in order to play this game. This can be useful for smooth game progress. (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-master]] - shared statements: Master shares source evidence from 8. Game Master Screen: The Sword World RPG Game Master Screen is a collection of charts (or tables) that you will need in order to play this game. This can be useful for smooth game progress. (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-ability]] - shared statements: Ability shares source evidence from Skills: In addition to ability scores, Sword World RPG also uses numeric values called skills to describe the characteristics of characters. Skills have a greater impact on ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-low-ancient]] - shared statements: 《 Low Ancient 》 shares source evidence from Chapter 14: / 《 Brain Blade 》: This sword has knowledge about enemies and speaks to the user's mind, telling him or her the enemy's name and strength in concrete scores. The contents of this knowl ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements: 《 Magic Armor (+1) 》 shares source evidence from Chapter 14: / Magical Item List: Of course, in many cases the value of these treasures cannot be converted into a price. For adventurers, magical swords and armor are not something you can give up. ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared statements: Magical shares source evidence from Chapter 14: / Magical Item List: Of course, in many cases the value of these treasures cannot be converted into a price. For adventurers, magical swords and armor are not something you can give up. ... [truncated] (1 shared statement(s))
 
 ## Source
 

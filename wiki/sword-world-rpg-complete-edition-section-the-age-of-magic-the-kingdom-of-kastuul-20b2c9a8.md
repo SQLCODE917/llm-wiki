@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-the-age-of-magic-the-kingdom-of-kastuul-20b2c9a8@6f76815ccbded2f005067c3bb42c1647
+projection_coverage: section-sword-world-rpg-complete-edition-section-the-age-of-magic-the-kingdom-of-kastuul-20b2c9a8@68c58e3fd817377ab956f1107c201d19
 ---
 
 # The Age of Magic = The Kingdom of Kastuul
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

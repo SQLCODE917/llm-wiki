@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-full-effect-be10262a@b5cc564160aeaaba4645460b5052bfe9
+projection_coverage: section-sword-world-rpg-complete-edition-section-full-effect-be10262a@f9236d907714d6aa0d07a47054fce097
 ---
 
 # full effect
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-effect]] - topic hub
-- [[sword-world-rpg-complete-edition-section-full-effect-4ddfe3a5]] - same source heading
-- [[sword-world-rpg-complete-edition-section-effect-0555df00]] - same source heading
+- [[sword-world-rpg-complete-edition-effect]] - topic hub: opens the topic page for Effect
+- [[sword-world-rpg-complete-edition-section-full-effect-4ddfe3a5]] - same source heading: another source section with the same heading, full effect
+- [[sword-world-rpg-complete-edition-section-effect-0555df00]] - same source heading: another source section with the same heading, 《 Effect 》
 
 ## Technical atoms
 

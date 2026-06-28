@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-change-attack-targets-9e223429@56ff856328bc56179b8e6af8fd72acbe
+projection_coverage: section-sword-world-rpg-complete-edition-section-change-attack-targets-9e223429@8a16985efb658abc96135ae4c3995935
 ---
 
 # Change Attack Targets
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-3-3-c1607db4]] - broader source section
+- [[sword-world-rpg-complete-edition-section-3-3-c1607db4]] - broader source section: 3.3
 
 ## Statements
 

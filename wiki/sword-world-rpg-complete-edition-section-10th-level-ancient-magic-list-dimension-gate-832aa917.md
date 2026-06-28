@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-10th-level-ancient-magic-list-dimension-gate-832aa917@43e8dcc05fdc4726d7dfcfa963fd9fbb
+projection_coverage: section-sword-world-rpg-complete-edition-section-10th-level-ancient-magic-list-dimension-gate-832aa917@45f07e4f5c02e6c9f7751df40ff63f62
 ---
 
 # 10th Level Ancient Magic List [ Dimension Gate ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
 
 ## Statements
 

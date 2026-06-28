@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-divine-weapon-spell-level-7-ddbf3740@50c6a05fa4b08a4f07716f301b81d8ca
+projection_coverage: section-sword-world-rpg-complete-edition-section-divine-weapon-spell-level-7-ddbf3740@fad120f2ada5ef634fc9efffbeb0e8c1
 ---
 
 # [ Divine Weapon ] (Spell Level=7)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Statements
 

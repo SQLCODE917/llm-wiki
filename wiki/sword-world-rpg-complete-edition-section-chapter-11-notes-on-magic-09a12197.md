@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-09a12197@1cc12d558f8c4394b6069e85ce10240d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-09a12197@c46a922c9696c92a7e35f3a780a06bb3
 ---
 
 # Chapter 11: Notes on Magic
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-bfe3e221]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-asking-npcs-to-use-magic-07708fb0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-example-d96093e5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-priest-skill-921e323e]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-bfe3e221]] - broader source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-asking-npcs-to-use-magic-07708fb0]] - narrower source section: Chapter 11: Notes on Magic / Asking NPCs to Use Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-example-d96093e5]] - narrower source section: Chapter 11: Notes on Magic / Example:
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-dragon-priest-skill-921e323e]] - narrower source section: Chapter 11: Notes on Magic / 《 Dragon Priest Skill 》
 
 ## Statements
 

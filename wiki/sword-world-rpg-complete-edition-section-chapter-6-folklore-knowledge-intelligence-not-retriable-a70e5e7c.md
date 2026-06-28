@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-folklore-knowledge-intelligence-not-retriable-a70e5e7c@8e748da85fceaebcfad32e29ae5a3825
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-folklore-knowledge-intelligence-not-retriable-a70e5e7c@02f9fbd1e6f33db0e2041af4d8337237
 ---
 
 # Chapter 6: / [ ⑤ Folklore Knowledge [Intelligence] ] (Not retriable)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-ff6588ad]] - broader source section: Chapter 6:
 
 ## Statements
 

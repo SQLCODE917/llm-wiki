@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-centaurian-5107268a@eabd4aad084c9c79e533ad73549af904
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-centaurian-5107268a@0c6a3b31ee842a81a9d1c63f7ae00ae8
 ---
 
 # Chapter 12: Various Checks / [ Centaurian ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mental-attack-immunity-d49ae477@53a188b59233ef97ad751c6758889f2d
+projection_coverage: section-sword-world-rpg-complete-edition-section-mental-attack-immunity-d49ae477@b347a8a965204c9ee429b81741ec842f
 ---
 
 # 《 Mental Attack Immunity 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-5-d175bad9]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-5-d175bad9]] - broader source section: 13.6.5
 
 ## Statements
 

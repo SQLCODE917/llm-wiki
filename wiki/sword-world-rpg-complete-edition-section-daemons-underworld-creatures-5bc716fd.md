@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-daemons-underworld-creatures-5bc716fd@137b98a7a119bb971c841e3e08a65826
+projection_coverage: section-sword-world-rpg-complete-edition-section-daemons-underworld-creatures-5bc716fd@f5f97c6ca5be09106db45e088390903d
 ---
 
 # 《 Daemons/Underworld Creatures 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section: 13.1
 
 ## Statements
 

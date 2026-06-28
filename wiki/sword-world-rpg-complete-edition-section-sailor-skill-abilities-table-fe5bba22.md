@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sailor-skill-abilities-table-fe5bba22@465f439deabdf36ebf48f49f385bdf9b
+projection_coverage: section-sword-world-rpg-complete-edition-section-sailor-skill-abilities-table-fe5bba22@e36aaa0835cb092345f893f14f24e166
 ---
 
 # Sailor Skill Abilities Table
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Technical atoms
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-thermal-ring-48735207@c8a73b5ba5471d09d8ad409b0d86971e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-thermal-ring-48735207@2924f7357a285200a0f40ab2973297a3
 ---
 
 # Chapter 14: / [ Thermal Ring ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

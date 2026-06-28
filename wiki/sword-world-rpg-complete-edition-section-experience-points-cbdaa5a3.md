@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-experience-points-cbdaa5a3@b41ecf3b3f0048946013c703fe84b7cc
+projection_coverage: section-sword-world-rpg-complete-edition-section-experience-points-cbdaa5a3@2d479131de70051651e9c6804a7f7bef
 ---
 
 # Experience Points
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-8-1-ef2bfdfa]] - broader source section
-- [[sword-world-rpg-complete-edition-section-experience-points-443c914d]] - same source heading
+- [[sword-world-rpg-complete-edition-section-8-1-ef2bfdfa]] - broader source section: 8.1
+- [[sword-world-rpg-complete-edition-section-experience-points-443c914d]] - same source heading: another source section with the same heading, Experience Points
 
 ## Statements
 

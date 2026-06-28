@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-baseline-scores-8751b1c9@048393a00d0ced8109379423fcdf3297
+projection_coverage: section-sword-world-rpg-complete-edition-section-baseline-scores-8751b1c9@0ee1aeb3fb3269fc256bb40d544d9a59
 ---
 
 # Baseline Scores
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-2-1-e751cfcf]] - broader source section
+- [[sword-world-rpg-complete-edition-section-2-1-e751cfcf]] - broader source section: 2.1
 
 ## Statements
 

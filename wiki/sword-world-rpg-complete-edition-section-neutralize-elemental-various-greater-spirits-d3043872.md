@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-neutralize-elemental-various-greater-spirits-d3043872@f00c3f5417354fb11a07dfff7a4ccbbd
+projection_coverage: section-sword-world-rpg-complete-edition-section-neutralize-elemental-various-greater-spirits-d3043872@0103bf0672ed740cd44c3e995622844a
 ---
 
 # [ Neutralize Elemental (Various greater spirits)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

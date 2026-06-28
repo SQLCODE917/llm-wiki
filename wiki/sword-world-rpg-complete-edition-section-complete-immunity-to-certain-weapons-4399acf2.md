@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-complete-immunity-to-certain-weapons-4399acf2@f4eab300d0020dcb9318be7f7b8f67ed
+projection_coverage: section-sword-world-rpg-complete-edition-section-complete-immunity-to-certain-weapons-4399acf2@45786daf24847f1b043c65d43a70ac4b
 ---
 
 # 《 Complete Immunity to Certain Weapons 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - broader source section: 13.6.4
 
 ## Statements
 

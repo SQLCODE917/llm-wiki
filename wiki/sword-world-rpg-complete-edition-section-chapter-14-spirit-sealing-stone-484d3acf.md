@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-spirit-sealing-stone-484d3acf@16c51142a6007ed0b0f205497f170979
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-spirit-sealing-stone-484d3acf@92ffb8ddb7882e4a6651f8c03e96cf75
 ---
 
 # Chapter 14: / [ Spirit Sealing Stone ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

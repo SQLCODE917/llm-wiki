@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-0-damage-edf9daa1@36b5eecfac22d9cb060961d39861807e
+projection_coverage: section-sword-world-rpg-complete-edition-section-0-damage-edf9daa1@0b1ac4c976204bd5915e259bfe530ba4
 ---
 
 # 【 0 Damage! 】
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-5-2-1e3a6f91]] - broader source section
-- [[sword-world-rpg-complete-edition-section-damage-dc87ddd1]] - same source heading
-- [[sword-world-rpg-complete-edition-section-damage-ee5bcc31]] - same source heading
+- [[sword-world-rpg-complete-edition-section-4-5-2-1e3a6f91]] - broader source section: 4.5.2
+- [[sword-world-rpg-complete-edition-section-damage-dc87ddd1]] - same source heading: another source section with the same heading, 《 Damage 》
+- [[sword-world-rpg-complete-edition-section-damage-ee5bcc31]] - same source heading: another source section with the same heading, 《 Damage 》
 
 ## Statements
 

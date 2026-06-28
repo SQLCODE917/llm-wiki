@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-for-humans-and-halfelves-raised-by-humans-f3cfd364@67b1b85fd1f6e781e5bbc8a2d2201c90
+projection_coverage: section-sword-world-rpg-complete-edition-section-for-humans-and-halfelves-raised-by-humans-f3cfd364@9af757024709d3b907c11905e0250b7f
 ---
 
 # For Humans and HalfElves Raised by Humans
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-1-4-32af895a]] - broader source section: 1.4
 
 ## Statements
 

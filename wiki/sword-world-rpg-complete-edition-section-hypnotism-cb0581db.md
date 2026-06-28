@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hypnotism-cb0581db@d90754bfe2a02c79a532f0b0997a72fd
+projection_coverage: section-sword-world-rpg-complete-edition-section-hypnotism-cb0581db@5fbf1f0745b0672feb386d3ffe40c91f
 ---
 
 # 《 Hypnotism 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-1-2b6cde92]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-6-1-2b6cde92]] - broader source section: 13.6.1
 
 ## Statements
 

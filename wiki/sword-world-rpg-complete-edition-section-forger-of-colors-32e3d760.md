@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-forger-of-colors-32e3d760@352471261da62608df52c1ec9207bbb1
+projection_coverage: section-sword-world-rpg-complete-edition-section-forger-of-colors-32e3d760@9482faea10f834b69b56df0302e4e2cb
 ---
 
 # Forger of Colors
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-10-4-22cd202b]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-10-4-22cd202b]] - broader source section: 4.10.4
 
 ## Statements
 

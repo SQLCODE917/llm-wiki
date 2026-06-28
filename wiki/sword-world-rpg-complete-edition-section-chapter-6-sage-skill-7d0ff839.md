@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-sage-skill-7d0ff839@c33457a5c136f9321bd6a6348ad0d3e4
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-sage-skill-7d0ff839@f5a86b2a32578d1661dabef03d7f00c9
 ---
 
 # Chapter 6: / Sage Skill
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-80e28a91]] - broader source section
-- [[sword-world-rpg-complete-edition-sage-skill]] - topic hub
-- [[sword-world-rpg-complete-edition-section-sage-skill-8443f6be]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-6-80e28a91]] - broader source section: Chapter 6:
+- [[sword-world-rpg-complete-edition-sage-skill]] - topic hub: opens the topic page for Sage Skill
+- [[sword-world-rpg-complete-edition-section-sage-skill-8443f6be]] - same source heading: another source section with the same heading, Sage Skill
 
 ## Statements
 

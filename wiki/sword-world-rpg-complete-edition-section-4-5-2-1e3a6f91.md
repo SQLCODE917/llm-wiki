@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-2-1e3a6f91@1c89330e351bce30ead3ffba710017ad
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-2-1e3a6f91@433b7733845ba96b6b33be06b80c7880
 ---
 
 # 4.5.2
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-determining-base-damage-strike-roll-744e87c3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-0-damage-edf9daa1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-criticals-d563f0ef]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-a8580d5e]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-determining-base-damage-strike-roll-744e87c3]] - narrower source section: Determining Base Damage (Strike Roll)
+- [[sword-world-rpg-complete-edition-section-0-damage-edf9daa1]] - narrower source section: 【 0 Damage! 】
+- [[sword-world-rpg-complete-edition-section-criticals-d563f0ef]] - narrower source section: 【 Criticals
+- [[sword-world-rpg-complete-edition-section-example-a8580d5e]] - narrower source section: Example:
 
 ## Statements by subsection
 

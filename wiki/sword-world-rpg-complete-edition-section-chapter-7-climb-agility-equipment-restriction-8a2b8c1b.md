@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-climb-agility-equipment-restriction-8a2b8c1b@46702d29c15d052cb81281d816cc0834
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-climb-agility-equipment-restriction-8a2b8c1b@e4cabd76cfcc3f3ca3dd1b4f497e89c3
 ---
 
 # Chapter 7: / [ ⑥ Climb [Agility] ] (Equipment restriction)
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-2758380a]] - broader source section
-- [[sword-world-rpg-complete-edition-climb-agility-equipment-restriction]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-6-climb-agility-equipment-restriction-0af34044]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-7-2758380a]] - broader source section: Chapter 7:
+- [[sword-world-rpg-complete-edition-climb-agility-equipment-restriction]] - topic hub: opens the topic page for Climb Agility Equipment Restriction
+- [[sword-world-rpg-complete-edition-section-chapter-6-climb-agility-equipment-restriction-0af34044]] - same source heading: another source section with the same heading, Chapter 6: / [ ⑩ Climb [Agility] ] (Equipment restriction)
 
 ## Statements
 

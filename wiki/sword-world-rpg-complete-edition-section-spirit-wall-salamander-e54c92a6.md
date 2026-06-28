@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-salamander-e54c92a6@08965b2e070fc57c5afc79fd6f61003e
+projection_coverage: section-sword-world-rpg-complete-edition-section-spirit-wall-salamander-e54c92a6@10db5f9a0e73f78c8b224c0203476358
 ---
 
 # Spirit Wall: Salamander
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

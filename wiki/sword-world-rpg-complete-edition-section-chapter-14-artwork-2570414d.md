@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-artwork-2570414d@ee4998f6f3d2b6f64e6688384d62048a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-artwork-2570414d@740d8bf3162d8ac62ce959d9b3a6085a
 ---
 
 # Chapter 14: / Artwork
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-edb8ea7e]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-edb8ea7e]] - broader source section: Chapter 14:
 
 ## Statements
 

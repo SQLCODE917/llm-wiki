@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-animals-b215a920@1163b24ba1b9159e294de8974a838567
+projection_coverage: section-sword-world-rpg-complete-edition-section-animals-b215a920@5bf4060bb7897d08687e9bfe99073902
 ---
 
 # 《 Animals 》
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section
-- [[sword-world-rpg-complete-edition-section-13-2-7-animals-d260d271]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section: 13.1
+- [[sword-world-rpg-complete-edition-section-13-2-7-animals-d260d271]] - same source heading: another source section with the same heading, 13.2.7 Animals
 
 ## Statements
 

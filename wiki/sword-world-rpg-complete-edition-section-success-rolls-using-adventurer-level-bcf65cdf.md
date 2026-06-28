@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-success-rolls-using-adventurer-level-bcf65cdf@ded6cffe27e6e8fecd723b00095e13ab
+projection_coverage: section-sword-world-rpg-complete-edition-section-success-rolls-using-adventurer-level-bcf65cdf@48ebdb8986bd929a31f515f903417239
 ---
 
 # Success Rolls Using Adventurer Level
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-2-6-3fcadf7c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-2-6-3fcadf7c]] - broader source section: 2.6
 
 ## Statements
 

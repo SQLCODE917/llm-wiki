@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-mithril-mesh-360de86e@1c28a98b8c4c2fce8b4fd8afaae8b920
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-mithril-mesh-360de86e@d76d13424507927f1724f4c4825b4a42
 ---
 
 # Chapter 14: / 《 Mithril Mesh 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-accomplishing-missions-cf365c24@0fa999f8358c05dcf0743974dcec6696
+projection_coverage: section-sword-world-rpg-complete-edition-section-accomplishing-missions-cf365c24@7745aed045f64c45e101cdce4f59c563
 ---
 
 # Accomplishing Missions
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-15-1-907776c3]] - broader source section
+- [[sword-world-rpg-complete-edition-section-15-1-907776c3]] - broader source section: 15.1
 
 ## Statements
 

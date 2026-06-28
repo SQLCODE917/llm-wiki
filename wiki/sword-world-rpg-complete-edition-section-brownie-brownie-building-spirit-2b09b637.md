@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-brownie-brownie-building-spirit-2b09b637@032bed4b86bd638f281e781f6b32bba1
+projection_coverage: section-sword-world-rpg-complete-edition-section-brownie-brownie-building-spirit-2b09b637@e29e88e15820c701cfb4f3f0247ef944
 ---
 
 # [ Brownie ] (Brownie/Building Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

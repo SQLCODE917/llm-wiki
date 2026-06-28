@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-the-age-of-sword-the-new-kingdoms-f48b0385@2298516393988ac6cba0ebc911303c34
+projection_coverage: section-sword-world-rpg-complete-edition-section-the-age-of-sword-the-new-kingdoms-f48b0385@a8f3ae35cfc8d8681a1c0913cd3188a1
 ---
 
 # The Age of Sword = The New Kingdoms
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

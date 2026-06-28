@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-6-3fcadf7c@5e6742ec002c63a3211f5e09b1be1306
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-6-3fcadf7c@f4a135130962738488b0cdc70427406e
 ---
 
 # 2.6
@@ -16,12 +16,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-success-rolls-using-adventurer-level-bcf65cdf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-resistance-rolls-251ab24b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-1-71c5a5f0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-2-f9123762]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ability-scores-38724346]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-683f787d]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-success-rolls-using-adventurer-level-bcf65cdf]] - narrower source section: Success Rolls Using Adventurer Level
+- [[sword-world-rpg-complete-edition-section-resistance-rolls-251ab24b]] - narrower source section: Resistance Rolls
+- [[sword-world-rpg-complete-edition-section-example-1-71c5a5f0]] - narrower source section: Example 1:
+- [[sword-world-rpg-complete-edition-section-example-2-f9123762]] - narrower source section: Example 2:
+- [[sword-world-rpg-complete-edition-section-ability-scores-38724346]] - narrower source section: Ability Scores
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-683f787d]] - narrower source section: Filling Out the Character Sheet
 
 ## Statements by subsection
 

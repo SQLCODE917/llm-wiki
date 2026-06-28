@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bone-servant-df5972b1@2f7533071c5fc48341e3a4628f5857c9
+projection_coverage: section-sword-world-rpg-complete-edition-section-bone-servant-df5972b1@a7867bbf6b5ab623eb8212e19eff1bf8
 ---
 
 # Bone Servant
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-bone-servant]] - topic hub
-- [[sword-world-rpg-complete-edition-section-bone-servant-6ce709ba]] - same source heading
+- [[sword-world-rpg-complete-edition-bone-servant]] - topic hub: opens the topic page for Bone Servant
+- [[sword-world-rpg-complete-edition-section-bone-servant-6ce709ba]] - same source heading: another source section with the same heading, [ Bone Servant ]
 
 ## Statements
 

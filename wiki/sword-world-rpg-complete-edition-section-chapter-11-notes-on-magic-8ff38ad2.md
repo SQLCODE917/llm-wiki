@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-8ff38ad2@299c931eee3f85c7c3527a33ed325236
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-8ff38ad2@a03cb6970916ca3a47d01976c85ede28
 ---
 
 # Chapter 11: Notes on Magic
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-divination-97dbbcb9]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-divination-97dbbcb9]] - narrower source section: Chapter 11: Notes on Magic / 《 Divination 》
 
 ## Statements by subsection
 

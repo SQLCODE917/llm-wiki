@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-assassin-s-flute-0a8b61fa@6f3eead1ff2df695e028aa1b64c99999
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-assassin-s-flute-0a8b61fa@d9a7c37e9c6ac55f58f17e5a012c58e5
 ---
 
 # Chapter 14: / 《 Assassin's Flute 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

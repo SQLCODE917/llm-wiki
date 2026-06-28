@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-attacks-from-characters-against-characters-c463ef05@1c7cbe2df996b10538cb008521ae9890
+projection_coverage: section-sword-world-rpg-complete-edition-section-attacks-from-characters-against-characters-c463ef05@1029cd1bacab3e1a369661369e7ff502
 ---
 
 # Attacks From Characters Against Characters
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-7-146fbd9e]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-7-146fbd9e]] - broader source section: 4.7
 
 ## Statements
 

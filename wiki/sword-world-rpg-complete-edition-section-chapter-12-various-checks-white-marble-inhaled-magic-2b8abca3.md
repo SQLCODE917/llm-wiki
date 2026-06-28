@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-white-marble-inhaled-magic-2b8abca3@582bf86d9f4547b5f988673592a296a8
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-white-marble-inhaled-magic-2b8abca3@ef84e5a0b5a738eddb1c69716675dfd6
 ---
 
 # Chapter 12: Various Checks / [White Marble (Inhaled/Magic)]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

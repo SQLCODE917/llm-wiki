@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-types-of-monsters-a0e7901e@de48eaac8d06e094039f8e6b5d1c48ae
+projection_coverage: section-sword-world-rpg-complete-edition-section-types-of-monsters-a0e7901e@ae4a67618748bcfb2cd5627395cc81fd
 ---
 
 # Types of Monsters
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section: 13.1
 
 ## Statements
 

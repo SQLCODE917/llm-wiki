@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-95411a76@2c8c1535a57385e276c9b93cd5003541
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-95411a76@2bff572850523d70a5b7d0c09fe0850d
 ---
 
 # 5.1.14
@@ -16,69 +16,69 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1st-level-spirit-magic-list-wind-voice-6edd1a27]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-snare-gnome-earth-spirit-25721859]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-destruction-4d677561]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-leprechaun-mind-spirit-6250ba4f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-purification-undine-water-spirit-3d0a0695]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-firebolt-salamander-fire-spirit-713101cc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-brownie-brownie-building-spirit-2b09b637]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-2nd-level-spirit-magic-list-will-o-wisp-will-o-wisp-light-spirit-8545c421]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-water-screen-undine-water-spirit-fd543089]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-confusion-leprechaun-mind-spirit-fe314eb1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-shade-shade-dark-spirit-286fc69f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-fanaticism-valkyrie-mind-spirit-9782cd4a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-forget-leprechaun-mind-spirit-1b4d32fd]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-the-tragedy-of-the-hero-grax-be975f75]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-hold-gnome-earth-spirit-60a3a5d2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-3rd-level-spirit-magic-list-invisibility-sprite-mind-spirit-cec48d57]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-water-breathing-undine-water-spirit-4d0340b8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-control-spirit-various-lesser-spirits-f079a507]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-silence-sylph-wind-spirit-0cb75dcb]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-stone-blast-gnome-earth-spirit-254c26b8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-binding-dryad-plant-spirit-0d942b98]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-healing-the-unknown-spirit-of-life-98533943]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-mute-sylph-wind-spirit-98d665fa]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-4th-level-spirit-magic-list-water-walking-undine-water-spirit-61e02956]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sink-undine-water-spirit-eed63477]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sleep-sandman-mind-spirit-586d7d43]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-tunnel-gnome-earth-spirit-71abd835]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-fear-shade-dark-spirit-bd3f286f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-restore-health-the-unknown-spirit-of-life-41c55109]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-5th-level-spirit-magic-list-control-plant-358bac07]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-shoot-arrow-sylph-wind-spirit-8acda7e2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-charm-dryad-plant-spirit-313d88dc]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-valkyrie-javelin-valkyrie-mind-spirit-da42ddc8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-missile-protection-sylph-wind-spirit-9bf476f7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-6th-level-spirit-magic-list-d7251639]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-c4c9b0d2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-wisp-8cf430d5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-undine-88c80984]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-salamander-e54c92a6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-shade-149898ea]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-sylph-5dd156f2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-dryad-bee6107d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-gnome-aebbbec7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-spirit-wall-frau-286680e5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-decrease-water-pressure-undine-water-spirit-af1565b6]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-preserve-sound-sylph-wind-spirit-4bfd2d86]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-magic-list-6ad2242b]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-windstorm-djinn-greater-wind-spirit-4bdc39a3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-crack-behemoth-greater-earth-spirit-d05e0a17]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-valkyrie-blessing-valkyrie-mind-spirit-dc210f98]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ent-greater-plant-spirit-2ec678e7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-full-control-spirit-various-lesser-spirits-bed6eba4]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-8th-level-spirit-magic-list-ice-coffin-01652d43]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ice-storm-fenrir-greater-ice-spirit-3c564477]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-current-kraken-greater-water-spirit-ffb2d2f0]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-suffocate-djinn-wind-spirit-a5473b15]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-nightmare-incubus-succubus-dream-spirit-2c2ce503]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-firestorm-efreet-greater-fire-spirit-d1bd8720]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-maze-woods-ent-greater-plant-spirit-31f8b633]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-9th-level-spirit-magic-list-earthquake-behemoth-greater-earth-spirit-eee09c00]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-freeze-fenrir-greater-ice-spirit-336b8863]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-kraken-greater-water-spirit-8123ea83]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-neutralize-elemental-various-greater-spirits-d3043872]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-1st-level-spirit-magic-list-wind-voice-6edd1a27]] - narrower source section: 1st Level Spirit Magic List [ Wind Voice ]
+- [[sword-world-rpg-complete-edition-section-snare-gnome-earth-spirit-25721859]] - narrower source section: [ Snare ] (Gnome/Earth Spirit)
+- [[sword-world-rpg-complete-edition-section-destruction-4d677561]] - narrower source section: [ Destruction ]
+- [[sword-world-rpg-complete-edition-section-leprechaun-mind-spirit-6250ba4f]] - narrower source section: (Leprechaun/Mind Spirit)
+- [[sword-world-rpg-complete-edition-section-purification-undine-water-spirit-3d0a0695]] - narrower source section: [ Purification ] (Undine/Water Spirit)
+- [[sword-world-rpg-complete-edition-section-firebolt-salamander-fire-spirit-713101cc]] - narrower source section: [ Firebolt ] (Salamander/Fire Spirit)
+- [[sword-world-rpg-complete-edition-section-brownie-brownie-building-spirit-2b09b637]] - narrower source section: [ Brownie ] (Brownie/Building Spirit)
+- [[sword-world-rpg-complete-edition-section-2nd-level-spirit-magic-list-will-o-wisp-will-o-wisp-light-spirit-8545c421]] - narrower source section: 2nd Level Spirit Magic List [ Will-O-Wisp ] (Will-O-Wisp/Light Spirit)
+- [[sword-world-rpg-complete-edition-section-water-screen-undine-water-spirit-fd543089]] - narrower source section: [ Water Screen ] (Undine/Water Spirit)
+- [[sword-world-rpg-complete-edition-section-confusion-leprechaun-mind-spirit-fe314eb1]] - narrower source section: [ Confusion ] (Leprechaun/Mind Spirit)
+- [[sword-world-rpg-complete-edition-section-shade-shade-dark-spirit-286fc69f]] - narrower source section: [ Shade ] (Shade/Dark Spirit)
+- [[sword-world-rpg-complete-edition-section-fanaticism-valkyrie-mind-spirit-9782cd4a]] - narrower source section: [ Fanaticism ] (Valkyrie/Mind Spirit)
+- [[sword-world-rpg-complete-edition-section-forget-leprechaun-mind-spirit-1b4d32fd]] - narrower source section: [ Forget ] (Leprechaun/Mind Spirit)
+- [[sword-world-rpg-complete-edition-section-the-tragedy-of-the-hero-grax-be975f75]] - narrower source section: The Tragedy of the Hero Grax
+- [[sword-world-rpg-complete-edition-section-hold-gnome-earth-spirit-60a3a5d2]] - narrower source section: [ Hold ] (Gnome/Earth Spirit)
+- [[sword-world-rpg-complete-edition-section-3rd-level-spirit-magic-list-invisibility-sprite-mind-spirit-cec48d57]] - narrower source section: 3rd Level Spirit Magic List [ Invisibility ] (Sprite/Mind Spirit)
+- [[sword-world-rpg-complete-edition-section-water-breathing-undine-water-spirit-4d0340b8]] - narrower source section: [ Water Breathing ] (Undine/Water Spirit)
+- [[sword-world-rpg-complete-edition-section-control-spirit-various-lesser-spirits-f079a507]] - narrower source section: [ Control Spirit ] (Various lesser spirits)
+- [[sword-world-rpg-complete-edition-section-silence-sylph-wind-spirit-0cb75dcb]] - narrower source section: [ Silence ] (Sylph/Wind Spirit)
+- [[sword-world-rpg-complete-edition-section-stone-blast-gnome-earth-spirit-254c26b8]] - narrower source section: [ Stone Blast ] (Gnome/Earth Spirit)
+- [[sword-world-rpg-complete-edition-section-binding-dryad-plant-spirit-0d942b98]] - narrower source section: [ Binding ] (Dryad/Plant Spirit)
+- [[sword-world-rpg-complete-edition-section-healing-the-unknown-spirit-of-life-98533943]] - narrower source section: [ Healing ] (The Unknown Spirit of Life)
+- [[sword-world-rpg-complete-edition-section-mute-sylph-wind-spirit-98d665fa]] - narrower source section: [ Mute ] (Sylph/Wind Spirit)
+- [[sword-world-rpg-complete-edition-section-4th-level-spirit-magic-list-water-walking-undine-water-spirit-61e02956]] - narrower source section: 4th Level Spirit Magic List [ Water Walking ] (Undine/Water Spirit)
+- [[sword-world-rpg-complete-edition-section-sink-undine-water-spirit-eed63477]] - narrower source section: [ Sink ] (Undine/Water Spirit)
+- [[sword-world-rpg-complete-edition-section-sleep-sandman-mind-spirit-586d7d43]] - narrower source section: [ Sleep ] (Sandman/Mind Spirit)
+- [[sword-world-rpg-complete-edition-section-tunnel-gnome-earth-spirit-71abd835]] - narrower source section: [ Tunnel ] (Gnome/Earth Spirit)
+- [[sword-world-rpg-complete-edition-section-fear-shade-dark-spirit-bd3f286f]] - narrower source section: [ Fear ] (Shade/Dark Spirit)
+- [[sword-world-rpg-complete-edition-section-restore-health-the-unknown-spirit-of-life-41c55109]] - narrower source section: [ Restore Health ] (The Unknown Spirit of Life)
+- [[sword-world-rpg-complete-edition-section-5th-level-spirit-magic-list-control-plant-358bac07]] - narrower source section: 5th Level Spirit Magic List [ Control Plant ]
+- [[sword-world-rpg-complete-edition-section-shoot-arrow-sylph-wind-spirit-8acda7e2]] - narrower source section: [ Shoot Arrow ] (Sylph/Wind Spirit)
+- [[sword-world-rpg-complete-edition-section-charm-dryad-plant-spirit-313d88dc]] - narrower source section: [ Charm ] (Dryad/Plant Spirit)
+- [[sword-world-rpg-complete-edition-section-valkyrie-javelin-valkyrie-mind-spirit-da42ddc8]] - narrower source section: [ Valkyrie Javelin ] (Valkyrie/Mind Spirit)
+- [[sword-world-rpg-complete-edition-section-missile-protection-sylph-wind-spirit-9bf476f7]] - narrower source section: [ Missile Protection ] (Sylph/Wind Spirit)
+- [[sword-world-rpg-complete-edition-section-6th-level-spirit-magic-list-d7251639]] - narrower source section: 6th Level Spirit Magic List
+- [[sword-world-rpg-complete-edition-section-spirit-wall-c4c9b0d2]] - narrower source section: [ Spirit Wall ]
+- [[sword-world-rpg-complete-edition-section-spirit-wall-wisp-8cf430d5]] - narrower source section: Spirit Wall: Wisp
+- [[sword-world-rpg-complete-edition-section-spirit-wall-undine-88c80984]] - narrower source section: Spirit Wall: Undine
+- [[sword-world-rpg-complete-edition-section-spirit-wall-salamander-e54c92a6]] - narrower source section: Spirit Wall: Salamander
+- [[sword-world-rpg-complete-edition-section-spirit-wall-shade-149898ea]] - narrower source section: Spirit Wall: Shade
+- [[sword-world-rpg-complete-edition-section-spirit-wall-sylph-5dd156f2]] - narrower source section: Spirit Wall: Sylph
+- [[sword-world-rpg-complete-edition-section-spirit-wall-dryad-bee6107d]] - narrower source section: Spirit Wall: Dryad
+- [[sword-world-rpg-complete-edition-section-spirit-wall-gnome-aebbbec7]] - narrower source section: Spirit Wall: Gnome
+- [[sword-world-rpg-complete-edition-section-spirit-wall-frau-286680e5]] - narrower source section: Spirit Wall: Frau
+- [[sword-world-rpg-complete-edition-section-decrease-water-pressure-undine-water-spirit-af1565b6]] - narrower source section: [ Decrease Water Pressure ] (Undine/Water Spirit)
+- [[sword-world-rpg-complete-edition-section-preserve-sound-sylph-wind-spirit-4bfd2d86]] - narrower source section: [ Preserve Sound ] (Sylph/Wind Spirit)
+- [[sword-world-rpg-complete-edition-section-magic-list-6ad2242b]] - narrower source section: Magic List
+- [[sword-world-rpg-complete-edition-section-windstorm-djinn-greater-wind-spirit-4bdc39a3]] - narrower source section: [ Windstorm ] (Djinn/Greater Wind Spirit)
+- [[sword-world-rpg-complete-edition-section-crack-behemoth-greater-earth-spirit-d05e0a17]] - narrower source section: [ Crack ] (Behemoth/Greater Earth Spirit)
+- [[sword-world-rpg-complete-edition-section-valkyrie-blessing-valkyrie-mind-spirit-dc210f98]] - narrower source section: [ Valkyrie Blessing ] (Valkyrie/Mind Spirit)
+- [[sword-world-rpg-complete-edition-section-ent-greater-plant-spirit-2ec678e7]] - narrower source section: (Ent/Greater Plant Spirit)
+- [[sword-world-rpg-complete-edition-section-full-control-spirit-various-lesser-spirits-bed6eba4]] - narrower source section: [ Full Control Spirit ] (Various lesser spirits)
+- [[sword-world-rpg-complete-edition-section-8th-level-spirit-magic-list-ice-coffin-01652d43]] - narrower source section: 8th Level Spirit Magic List [ Ice Coffin ]
+- [[sword-world-rpg-complete-edition-section-ice-storm-fenrir-greater-ice-spirit-3c564477]] - narrower source section: [ Ice Storm ] (Fenrir/Greater Ice Spirit)
+- [[sword-world-rpg-complete-edition-section-current-kraken-greater-water-spirit-ffb2d2f0]] - narrower source section: [ Current ] (Kraken/Greater Water Spirit)
+- [[sword-world-rpg-complete-edition-section-suffocate-djinn-wind-spirit-a5473b15]] - narrower source section: [ Suffocate ] (Djinn/Wind Spirit)
+- [[sword-world-rpg-complete-edition-section-nightmare-incubus-succubus-dream-spirit-2c2ce503]] - narrower source section: [ Nightmare ] (Incubus, Succubus/Dream Spirit)
+- [[sword-world-rpg-complete-edition-section-firestorm-efreet-greater-fire-spirit-d1bd8720]] - narrower source section: [ Firestorm ] (Efreet/Greater Fire Spirit)
+- [[sword-world-rpg-complete-edition-section-maze-woods-ent-greater-plant-spirit-31f8b633]] - narrower source section: [ Maze Woods ] (Ent/Greater Plant Spirit)
+- [[sword-world-rpg-complete-edition-section-9th-level-spirit-magic-list-earthquake-behemoth-greater-earth-spirit-eee09c00]] - narrower source section: 9th Level Spirit Magic List [ Earthquake ] (Behemoth/Greater Earth Spirit)
+- [[sword-world-rpg-complete-edition-section-freeze-fenrir-greater-ice-spirit-336b8863]] - narrower source section: [ Freeze ] (Fenrir/Greater Ice Spirit)
+- [[sword-world-rpg-complete-edition-section-kraken-greater-water-spirit-8123ea83]] - narrower source section: (Kraken/Greater Water Spirit)
+- [[sword-world-rpg-complete-edition-section-neutralize-elemental-various-greater-spirits-d3043872]] - narrower source section: [ Neutralize Elemental (Various greater spirits)
 
 ## Statements by subsection
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-monster-check-intelligence-not-retriable-77f18cf3@d7e6ba3efeb282dd56a972aa6c94995b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-monster-check-intelligence-not-retriable-77f18cf3@c6e93aa60e5f4726ba786438a3762310
 ---
 
 # Chapter 6: / [ ① Monster Check [Intelligence]] (Not retriable)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-80e28a91]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-80e28a91]] - broader source section: Chapter 6:
 
 ## Statements
 

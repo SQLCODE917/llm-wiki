@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-lunatic-dance-spell-level-5-08a51499@987c5397aab55657f8d7100bcd2d43b7
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-lunatic-dance-spell-level-5-08a51499@3066c3075f8231a9f1becd3e143cc693
 ---
 
 # Chapter 11: Notes on Magic / [ Lunatic Dance ] (Spell Level=5)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

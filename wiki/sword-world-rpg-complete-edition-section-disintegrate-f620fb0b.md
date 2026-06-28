@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-disintegrate-f620fb0b@3cea4aade0da5b18ce8809aff67f2449
+projection_coverage: section-sword-world-rpg-complete-edition-section-disintegrate-f620fb0b@bd0b0a7b415110459a7215ca780c94da
 ---
 
 # [ Disintegrate ]
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
-- [[sword-world-rpg-complete-edition-section-disintegrate-63e5e789]] - same source heading
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section: 5.1.12
+- [[sword-world-rpg-complete-edition-section-disintegrate-63e5e789]] - same source heading: another source section with the same heading, 《 Disintegrate 》
 
 ## Statements
 

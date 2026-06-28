@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-priest-skill@872a3f2918c0035f63946cc0b4c931f7
+projection_coverage: topic-sword-world-rpg-complete-edition-priest-skill@006819d965b6fcac97c08daa612b0be6
 ---
 
 # Priest Skill
@@ -198,32 +198,32 @@ Table 11-2: NPC Presence by Level.
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-priest]] - broader topic (15 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - broader topic (15 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-dragon-priest-skill]] - narrower topic (31 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (3 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms (3 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-action]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-success]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-force]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-game]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-sorcerer]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-addition]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-bonus]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-caster]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-play]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-sage-skill]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-priest-skill-6b9e71c7]] - source section (16 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-priest-skill-146be2d9]] - source section (10 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-priest]] - broader topic: Priest shares source evidence from 1.3.3 Adventurer Level: In Sword World RPG, a character's capability as an adventurer is determined by their adventurer skill level. The highest level among the adventurer skills that a cha ... [truncated]; Priest shares technical record from Restrictions on Using Holy Magic: Table 11-2: NPC Presence by Level. The market price is NPC's rune master      You successfully find a 10th level Once you have found such a rune skill level x base m ... [truncated] (15 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - broader topic: Skill shares source evidence from 1.3.3 Adventurer Level: In Sword World RPG, a character's capability as an adventurer is determined by their adventurer skill level. The highest level among the adventurer skills that a cha ... [truncated]; Skill shares technical table: Table 11-2: NPC Presence by Level. The market price is NPC's rune master      You successfully find a 10th level Once you have found such a rune skill level x base m ... [truncated] (15 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-dragon-priest-skill]] - narrower topic: Dragon Priest Skill shares source evidence from 1.3.2 Skill Types: First, skills are divided into two types: adventurer skills and general skills . Adventurer skills, as the name implies, are acquired by player characters, the adven ... [truncated]; Dragon Priest Skill shares technical record from Restrictions on Using Holy Magic: Table 11-2: NPC Presence by Level. The market price is NPC's rune master      You successfully find a 10th level Once you have found such a rune skill level x base m ... [truncated] (31 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms: Level shares source evidence from 1.3.3 Adventurer Level: In Sword World RPG, a character's capability as an adventurer is determined by their adventurer skill level. The highest level among the adventurer skills that a cha ... [truncated]; Level shares technical table: Table 11-2: NPC Presence by Level. The market price is NPC's rune master      You successfully find a 10th level Once you have found such a rune skill level x base m ... [truncated] (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms: Master shares source evidence from Example:: Fighter is only useful in combat. The sorcerer, shaman, and priest rune master skills are also of little use for anything other than casting magic.; Master shares technical table: Table 11-2: NPC Presence by Level. The market price is NPC's rune master      You successfully find a 10th level Once you have found such a rune skill level x base m ... [truncated] (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-action]] - shared technical atoms: Action shares technical record from Restrictions on Using Holy Magic: Those with the priest skill must choose only one god to worship. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared technical atoms: Success shares technical table: Table 11-2: NPC Presence by Level. The market price is NPC's rune master      You successfully find a 10th level Once you have found such a rune skill level x base m ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared technical atoms: Table shares technical table: Table 11-2: NPC Presence by Level. The market price is NPC's rune master      You successfully find a 10th level Once you have found such a rune skill level x base m ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from 1.3.3 Adventurer Level: In Sword World RPG, a character's capability as an adventurer is determined by their adventurer skill level. The highest level among the adventurer skills that a cha ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements: Spell shares source evidence from Priest Skill: The caster uses these holy prayers to pray to the gods and activate the power of the spells. In addition, each holy magic has special spells that can only be used by ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements: Adventure shares source evidence from 【 Rune Master 】: The five adventurer skills of sorcerer, shaman, priest, dark priest, and dragon priest are sometimes collectively referred to as rune master skills . This is because ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared statements: Adventurer shares source evidence from 【 Rune Master 】: The five adventurer skills of sorcerer, shaman, priest, dark priest, and dragon priest are sometimes collectively referred to as rune master skills . This is because ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-force]] - shared statements: Force shares source evidence from Priest Skill: Among the many gods that exist in Forcelia, there are also those called wicked gods . The teachings of these wicked gods are extremely inconvenient for protecting hu ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-game]] - shared statements: Game shares source evidence from Priest Skill: Game masters should not allow characters to become priests of wicked gods. If you role-play according to the wicked gods' teachings, there is a high possibility that ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements: Power shares source evidence from [ Transfer Mental Power: The amount of mental power being transferred cannot be divided by priest skill level. Even if you are a 10th level priest, if you want to give 10 points of mental po ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-sorcerer]] - shared statements: Sorcerer shares source evidence from 【 Rune Master 】: The five adventurer skills of sorcerer, shaman, priest, dark priest, and dragon priest are sometimes collectively referred to as rune master skills . This is because ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-addition]] - shared statements: Addition shares source evidence from Priest Skill: The caster uses these holy prayers to pray to the gods and activate the power of the spells. In addition, each holy magic has special spells that can only be used by ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus]] - shared statements: Bonus shares source evidence from Example:: An adventurer with priest skill level 1, shaman skill level 2, and 13 intelligence (+2 bonus) would have a magic power of 3 in holy magic and a magic power of 4 in spirit magic. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements: Cast shares source evidence from Priest Skill: The caster uses these holy prayers to pray to the gods and activate the power of the spells. In addition, each holy magic has special spells that can only be used by ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-caster]] - shared statements: Caster shares source evidence from Priest Skill: The caster uses these holy prayers to pray to the gods and activate the power of the spells. In addition, each holy magic has special spells that can only be used by ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements: Character shares source evidence from 1.3.3 Adventurer Level: In Sword World RPG, a character's capability as an adventurer is determined by their adventurer skill level. The highest level among the adventurer skills that a cha ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-magic-armor]] - shared statements: 《 Magic Armor (+1) 》 shares source evidence from Restrictions on Using Holy Magic: There are no restrictions on armor or weapons to use the priest skill, and priests can cast magic simply by chanting holy prayers. However, this action must be in ac ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-play]] - shared statements: Play shares source evidence from Priest Skill: Game masters should not allow characters to become priests of wicked gods. If you role-play according to the wicked gods' teachings, there is a high possibility that ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-sage-skill]] - shared statements: Sage Skill shares source evidence from Chapter 11: Notes on Magic / Reptile Check [Intelligence]: Dragon priests have knowledge of dragons, their subspecies such as wyrms, wyverns, etc. and reptiles. For these monsters only, they can identify them with a success ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-priest-skill-6b9e71c7]] - source section: Priest Skill shares source evidence from Priest Skill: Holy prayers are runes used to contact the great beings, the gods , and use that power as a source to perform various miracles. There are many gods in Sword World , ... [truncated]; Priest Skill shares technical table: Table 11-2: NPC Presence by Level. The market price is NPC's rune master      You successfully find a 10th level Once you have found such a rune skill level x base m ... [truncated] (16 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-priest-skill-146be2d9]] - source section: Chapter 11: Notes on Magic / 《 Priest Skill 》 shares source evidence from Chapter 11: Notes on Magic / 《 Priest Skill 》: To acquire the priest skill, it is necessary to awaken to faith . When you awaken to faith and recognize the existence of the gods, you can acquire the 1st level pri ... [truncated]; Chapter 11: Notes on Magic / 《 Priest Skill 》 shares technical record from Chapter 11: Notes on Magic / 《 Priest Skill 》: When you awaken to faith and recognize the existence of the gods, you can acquire the 1st level priest skill. (10 shared statement(s), 3 shared atom(s))
 
 ## Source
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-9th-level-basic-dark-magic-list-plague-8aa524b7@5629ef8c43405b0207c6480c7b33ccef
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-9th-level-basic-dark-magic-list-plague-8aa524b7@a1f753b12b363713eb3340a75940262d
 ---
 
 # Chapter 11: Notes on Magic / 9th Level Basic Dark Magic List [ Plague ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-scores-used-in-weapon-combat-83afeb2d@f4c0cf1790335b1f2bce54d25e247ed9
+projection_coverage: section-sword-world-rpg-complete-edition-section-scores-used-in-weapon-combat-83afeb2d@d4b315772e2225ae009bc29cad3c722d
 ---
 
 # Scores Used in Weapon Combat
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section
+- [[sword-world-rpg-complete-edition-section-3-4-4-3d5b317e]] - broader source section: 3.4.4
 
 ## Statements
 

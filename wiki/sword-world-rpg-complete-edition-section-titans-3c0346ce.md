@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-titans-3c0346ce@0d1fc13853bc445ef99ba47258d84ae3
+projection_coverage: section-sword-world-rpg-complete-edition-section-titans-3c0346ce@1cdea29ffeb1afa38d198bc8ca2d345f
 ---
 
 # 《 Titans 》
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section
-- [[sword-world-rpg-complete-edition-section-13-2-5-titans-b613e428]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-1-29743fb8]] - broader source section: 13.1
+- [[sword-world-rpg-complete-edition-section-13-2-5-titans-b613e428]] - same source heading: another source section with the same heading, 13.2.5 Titans
 
 ## Statements
 

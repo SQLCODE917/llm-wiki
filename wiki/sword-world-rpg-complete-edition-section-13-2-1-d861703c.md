@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-d861703c@341d9d8bf9f89b201667a65ee3ba7e1a
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-d861703c@97bce335c756f5d987f55331040a059f
 ---
 
 # 13.2.1
@@ -16,30 +16,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-humans-281edb74]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-monster-catalog-63d9c508]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-how-to-read-the-monster-catalog-3cbbc14f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-monster-level-81259234]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-dog-368698c5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-other-5e465373]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-rarity-122b8b40]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-agility-d93c9e94]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-movement-speed-80c956c1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-number-e15eb54e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-frequency-c61fe78d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-intellect-3274f296]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-reaction-4c11b75d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-attack-points-fa99b8e3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-strike-points-15dde443]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-evasion-points-ae77dfe2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-defense-points-44b9d084]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-life-points-resistance-bc0c8152]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-mental-points-resistance-d0bded1d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-special-abilities-9cbac5c5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-habitat-a9b4c0be]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-perception-2149ef9a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-languages-ff31119e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-pixie-a0432dc0]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-humans-281edb74]] - narrower source section: 《 Humans 》
+- [[sword-world-rpg-complete-edition-section-monster-catalog-63d9c508]] - narrower source section: Monster Catalog
+- [[sword-world-rpg-complete-edition-section-how-to-read-the-monster-catalog-3cbbc14f]] - narrower source section: How to Read the Monster Catalog
+- [[sword-world-rpg-complete-edition-section-monster-level-81259234]] - narrower source section: 《 Monster Level 》
+- [[sword-world-rpg-complete-edition-section-dog-368698c5]] - narrower source section: [ Dog ]
+- [[sword-world-rpg-complete-edition-section-other-5e465373]] - narrower source section: 《 Other 》
+- [[sword-world-rpg-complete-edition-section-rarity-122b8b40]] - narrower source section: 《 Rarity 》
+- [[sword-world-rpg-complete-edition-section-agility-d93c9e94]] - narrower source section: 《 Agility 》
+- [[sword-world-rpg-complete-edition-section-movement-speed-80c956c1]] - narrower source section: 《 Movement Speed 》
+- [[sword-world-rpg-complete-edition-section-number-e15eb54e]] - narrower source section: 《 Number 》
+- [[sword-world-rpg-complete-edition-section-frequency-c61fe78d]] - narrower source section: 《 Frequency 》
+- [[sword-world-rpg-complete-edition-section-intellect-3274f296]] - narrower source section: 《 Intellect 》
+- [[sword-world-rpg-complete-edition-section-reaction-4c11b75d]] - narrower source section: 《 Reaction 》
+- [[sword-world-rpg-complete-edition-section-attack-points-fa99b8e3]] - narrower source section: 《 Attack Points 》
+- [[sword-world-rpg-complete-edition-section-strike-points-15dde443]] - narrower source section: 《 Strike Points
+- [[sword-world-rpg-complete-edition-section-evasion-points-ae77dfe2]] - narrower source section: 《 Evasion Points 》
+- [[sword-world-rpg-complete-edition-section-defense-points-44b9d084]] - narrower source section: 《 Defense Points 》
+- [[sword-world-rpg-complete-edition-section-life-points-resistance-bc0c8152]] - narrower source section: 《 Life Points/Resistance 》
+- [[sword-world-rpg-complete-edition-section-mental-points-resistance-d0bded1d]] - narrower source section: 《 Mental Points/Resistance 》
+- [[sword-world-rpg-complete-edition-section-special-abilities-9cbac5c5]] - narrower source section: 《 Special Abilities 》
+- [[sword-world-rpg-complete-edition-section-habitat-a9b4c0be]] - narrower source section: 《 Habitat 》
+- [[sword-world-rpg-complete-edition-section-perception-2149ef9a]] - narrower source section: 《 Perception 》
+- [[sword-world-rpg-complete-edition-section-languages-ff31119e]] - narrower source section: 《 Languages 》
+- [[sword-world-rpg-complete-edition-section-pixie-a0432dc0]] - narrower source section: [ Pixie ]
 
 ## Statements by subsection
 

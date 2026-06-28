@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-6ab72dc9@9d6d2d4bffb6c6e45c8268a116d0604c
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-6ab72dc9@e349bf4940523d49102bf015354a693a
 ---
 
 # 13.6
@@ -16,27 +16,27 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-handling-monster-special-abilities-7517bc92]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-13-6-1-2b6cde92]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-13-6-2-0557ea23]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-disease-f805e01d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-strangling-6d4045b1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-capture-220eff09]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-entangling-fd1d5883]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-swallow-whole-52356690]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-bloodsuck-b4a2123d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-acid-e159d4ce]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-corrosion-65896284]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-steal-mental-power-af0c5f79]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-iron-corrosion-a5607c24]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-13-6-5-d175bad9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-13-6-6-d5c4f080]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-13-6-7-special-defense-abilities-weaknesses-809f0aba]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-needs-bloodsucking-to-maintain-life-points-4f78343c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-needs-bloodsucking-to-maintain-mental-points-a2b1650f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-damage-from-healing-magic-92853026]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-weak-to-fire-7a5baa81]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-handling-monster-special-abilities-7517bc92]] - narrower source section: Handling Monster Special Abilities
+- [[sword-world-rpg-complete-edition-section-13-6-1-2b6cde92]] - narrower source section: 13.6.1
+- [[sword-world-rpg-complete-edition-section-13-6-2-0557ea23]] - narrower source section: 13.6.2
+- [[sword-world-rpg-complete-edition-section-disease-f805e01d]] - narrower source section: 《 Disease 》
+- [[sword-world-rpg-complete-edition-section-strangling-6d4045b1]] - narrower source section: 《 Strangling 》
+- [[sword-world-rpg-complete-edition-section-capture-220eff09]] - narrower source section: 《 Capture 》
+- [[sword-world-rpg-complete-edition-section-entangling-fd1d5883]] - narrower source section: 《 Entangling 》
+- [[sword-world-rpg-complete-edition-section-swallow-whole-52356690]] - narrower source section: 《 Swallow Whole 》
+- [[sword-world-rpg-complete-edition-section-bloodsuck-b4a2123d]] - narrower source section: 《 Bloodsuck 》
+- [[sword-world-rpg-complete-edition-section-acid-e159d4ce]] - narrower source section: 《 Acid 》
+- [[sword-world-rpg-complete-edition-section-corrosion-65896284]] - narrower source section: 《 Corrosion 》
+- [[sword-world-rpg-complete-edition-section-steal-mental-power-af0c5f79]] - narrower source section: 《 Steal Mental Power 》
+- [[sword-world-rpg-complete-edition-section-iron-corrosion-a5607c24]] - narrower source section: 《 Iron Corrosion 》
+- [[sword-world-rpg-complete-edition-section-13-6-4-19ebe28d]] - narrower source section: 13.6.4
+- [[sword-world-rpg-complete-edition-section-13-6-5-d175bad9]] - narrower source section: 13.6.5
+- [[sword-world-rpg-complete-edition-section-13-6-6-d5c4f080]] - narrower source section: 13.6.6
+- [[sword-world-rpg-complete-edition-section-13-6-7-special-defense-abilities-weaknesses-809f0aba]] - narrower source section: 13.6.7 Special Defense Abilities: Weaknesses
+- [[sword-world-rpg-complete-edition-section-needs-bloodsucking-to-maintain-life-points-4f78343c]] - narrower source section: 《 Needs Bloodsucking to Maintain Life Points 》
+- [[sword-world-rpg-complete-edition-section-needs-bloodsucking-to-maintain-mental-points-a2b1650f]] - narrower source section: 《 Needs Bloodsucking to Maintain Mental Points 》
+- [[sword-world-rpg-complete-edition-section-damage-from-healing-magic-92853026]] - narrower source section: 《 Damage From Healing Magic 》
+- [[sword-world-rpg-complete-edition-section-weak-to-fire-7a5baa81]] - narrower source section: 《 Weak to Fire 》
 
 ## Statements
 

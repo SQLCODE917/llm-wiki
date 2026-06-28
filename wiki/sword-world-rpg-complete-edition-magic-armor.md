@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-magic-armor@cdd5989e0083b91654365e46f241113e
+projection_coverage: topic-sword-world-rpg-complete-edition-magic-armor@f8c5ce6227ce28499bf25abb8dbc4761
 ---
 
 # 《 Magic Armor (+1) 》
@@ -186,32 +186,32 @@ Table 1-9: Armor
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-chain-mail-splint-lamellar-plate-armor]] - shared statements and technical atoms (3 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-magical]] - shared statements (10 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (8 shared statement(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-non-metal-ring-mail]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-addition]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-dragon-priest-skill]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-fire-breath]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-force]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-magic-sword]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-please]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-priest-skill]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-sword]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-1-4e883673]] - source section (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-1-7e747774]] - source section (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-2-dd012866]] - source section (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-3-23b7ec25]] - source section (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-3-cd4b8a4c]] - source section (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-chain-mail-splint-lamellar-plate-armor]] - shared statements and technical atoms: Chain mail, splint, lamellar, plate armor shares source evidence from Chapter 14: / Chain mail, splint, lamellar, plate armor: This is a price list for magic metal armor with +1 power. While armor with high required strength tends to be unpopular, when it becomes exceptionally high-end, it s ... [truncated]; Chain mail, splint, lamellar, plate armor shares technical table: Table 1-9: Armor you think is appropriate (Table 1-9: Armor Name           Required Strength     Price Calculation Armor). Non-metal armor Cloth armor ... [truncated] (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared technical atoms: Table shares technical table: Table 1-9: Armor you think is appropriate (Table 1-9: Armor Name           Required Strength     Price Calculation Armor). Non-metal armor Cloth armor ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared statements: Magical shares source evidence from Magical Weapons and Armor: In Forcelia, there are magical weapons and armor that were once created during the age of the magical kingdom (Kastuul). These magical weapons and armor are seldom f ... [truncated] (10 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from Gizmo: Even if a gizmo's attack hits, it does not deal damage by itself. However, the body of a gizmo is poisonous gas, so those hit by it will inhale it and suffer damage ... [truncated] (8 shared statement(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements: Character shares source evidence from Magical Weapons and Armor: Characters may obtain these magical weapons and armor through their adventures. The power of magical weapons and armor is represented by a +1 or +2 score. (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements: 【 Damage Reduction 】 shares source evidence from 【 Magical Armor 】: Magical armor increases evasion speed and damage reduction . If you wear +1 magical armor, you gain +1 to evasion speed and damage reduction. +2 means +2, and +3 mea ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-non-metal-ring-mail]] - shared statements: Non-metal or ring mail shares source evidence from Chapter 14: / 《 Magic Armor (+2) 》 Non-metal or ring mail: Here is a list of prices of magical nonmetal or ring mail armor with +2 power. (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-addition]] - shared statements: Addition shares source evidence from Southern Central Region (Language = Western/Gundar): The city of Reide within Lomar (formerly the capital of the Kingdom of Reide before its annexation by Lomar) is known as the "City of Mercenaries." This city has a m ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements: Adventure shares source evidence from Chapter 14: / Magical Item List: Of course, in many cases the value of these treasures cannot be converted into a price. For adventurers, magical swords and armor are not something you can give up. ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer]] - shared statements: Adventurer shares source evidence from Chapter 14: / Magical Item List: Of course, in many cases the value of these treasures cannot be converted into a price. For adventurers, magical swords and armor are not something you can give up. ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-dragon-priest-skill]] - shared statements: Dragon Priest Skill shares source evidence from Restrictions on Using Holy Magic: There are no restrictions on armor or weapons to use the priest skill, and priests can cast magic simply by chanting holy prayers. However, this action must be in ac ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-evasion]] - shared statements: Evasion shares source evidence from 【 Magical Armor 】: Magical armor increases evasion speed and damage reduction . If you wear +1 magical armor, you gain +1 to evasion speed and damage reduction. +2 means +2, and +3 mea ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-fire-breath]] - shared statements: [ Fire Breath ] shares source evidence from 《 Fire Breath 》: Monsters with this ability can breathe fire. Characters exposed to the fire (the range of the fire varies by monster) will suffer damage. This damage cannot be preve ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-force]] - shared statements: Force shares source evidence from Magical Weapons and Armor: In Forcelia, there are magical weapons and armor that were once created during the age of the magical kingdom (Kastuul). These magical weapons and armor are seldom f ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-magic-sword]] - shared statements: 《 Magic Sword (+1) 》 shares source evidence from Chapter 14: / Magical Item List: Of course, in many cases the value of these treasures cannot be converted into a price. For adventurers, magical swords and armor are not something you can give up. ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-please]] - shared statements: Please shares source evidence from [ Stone Blast ] (Gnome/Earth Spirit): To cast this spell, there must be bare, natural ground directly under the target's feet. The spell has no effect if the target is standing on a solid chunk of rock o ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements: Power shares source evidence from Magical Weapons and Armor: Characters may obtain these magical weapons and armor through their adventures. The power of magical weapons and armor is represented by a +1 or +2 score. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-priest-skill]] - shared statements: Priest Skill shares source evidence from Restrictions on Using Holy Magic: There are no restrictions on armor or weapons to use the priest skill, and priests can cast magic simply by chanting holy prayers. However, this action must be in ac ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-rarity]] - shared statements: Rarity shares source evidence from Chapter 14: / 《 Magic Armor (+3) 》: Chain mail, splint, lamellar, plate armor Rarity=16 Enchanter=Many Form=Metal Armor Required Strength/Base Trade Price=See description Magic Power=+3 to evasion spee ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared statements: Skill shares source evidence from 1.4.7 Restrictions on Weapons and Armor Based on Skill: The general rule is to choose one whose required strength equals the character's strength , but a character may be substantially limited by the skills they have. For ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-sword]] - shared statements: Sword shares source evidence from Chapter 14: / Magical Item List: Of course, in many cases the value of these treasures cannot be converted into a price. For adventurers, magical swords and armor are not something you can give up. ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-1-4e883673]] - source section: Chapter 14: / 《 Magic Armor (+1) 》 shares technical table: Table 1-9: Armor you think is appropriate (Table 1-9: Armor Name           Required Strength     Price Calculation Armor). Non-metal armor Cloth armor ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-1-7e747774]] - source section: Chapter 14: / 《 Magic Armor (+1) shares technical table: Table 1-9: Armor you think is appropriate (Table 1-9: Armor Name           Required Strength     Price Calculation Armor). Non-metal armor Cloth armor ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-2-dd012866]] - source section: Chapter 14: / 《 Magic Armor (+2) 》 shares technical table: Table 1-9: Armor you think is appropriate (Table 1-9: Armor Name           Required Strength     Price Calculation Armor). Non-metal armor Cloth armor ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-3-23b7ec25]] - source section: Chapter 14: / 《 Magic Armor (+3) 》 shares technical table: Table 1-9: Armor you think is appropriate (Table 1-9: Armor Name           Required Strength     Price Calculation Armor). Non-metal armor Cloth armor ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-14-magic-armor-3-cd4b8a4c]] - source section: Chapter 14: / 《 Magic Armor (+3) 》 shares source evidence from Chapter 14: / 《 Magic Armor (+3) 》: Chain mail, splint, lamellar, plate armor Rarity=16 Enchanter=Many Form=Metal Armor Required Strength/Base Trade Price=See description Magic Power=+3 to evasion spee ... [truncated]; Chapter 14: / 《 Magic Armor (+3) 》 shares technical table: Table 1-9: Armor you think is appropriate (Table 1-9: Armor Name           Required Strength     Price Calculation Armor). Non-metal armor Cloth armor ... [truncated] (2 shared statement(s), 1 shared atom(s))
 
 ## Source
 

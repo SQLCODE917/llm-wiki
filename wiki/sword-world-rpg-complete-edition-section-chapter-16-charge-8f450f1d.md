@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-charge-8f450f1d@9b0e4d6ede2138377b6cbd598aa9086d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-charge-8f450f1d@3d1cb52674e064610fea9ea458eb6779
 ---
 
 # Chapter 16: / Charge
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-cf2bd1e0]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-cf2bd1e0]] - broader source section: Chapter 16:
 
 ## Statements
 

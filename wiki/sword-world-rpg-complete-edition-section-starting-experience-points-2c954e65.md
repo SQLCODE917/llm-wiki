@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-starting-experience-points-2c954e65@ccb19096efc6b1dfcd9b80ac8eef85bf
+projection_coverage: section-sword-world-rpg-complete-edition-section-starting-experience-points-2c954e65@aba5be07372a0a8aefafb31f1fc552d9
 ---
 
 # [ ⑦ Starting Experience Points ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - broader source section
+- [[sword-world-rpg-complete-edition-section-1-4-9-b08d6d25]] - broader source section: 1.4.9
 
 ## Technical atoms
 

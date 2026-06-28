@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-mandrake-b32c2131@9d395b32032e53f81a59ead8fe8fedb3
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-mandrake-b32c2131@e58973147fa2392fb3a7f9960716dc26
 ---
 
 # Chapter 12: Various Checks / [ Mandrake ]
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
-- [[sword-world-rpg-complete-edition-section-mandrake-47813921]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
+- [[sword-world-rpg-complete-edition-section-mandrake-47813921]] - same source heading: another source section with the same heading, [ Mandrake ]
 
 ## Statements
 

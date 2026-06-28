@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-critical-target-variation-a611c88f@68e129bffe36b7197a4b24b035a2720a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-critical-target-variation-a611c88f@bc7468694bbe6cc40cdb581194adf446
 ---
 
 # Chapter 16: / Critical Target Variation
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-93b0e71b]] - broader source section
-- [[sword-world-rpg-complete-edition-critical-target-variation]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-16-critical-target-variation-f77740e3]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-16-93b0e71b]] - broader source section: Chapter 16:
+- [[sword-world-rpg-complete-edition-critical-target-variation]] - topic hub: opens the topic page for Critical Target Variation
+- [[sword-world-rpg-complete-edition-section-chapter-16-critical-target-variation-f77740e3]] - same source heading: another source section with the same heading, Chapter 16: / Critical Target Variation
 
 ## Statements
 

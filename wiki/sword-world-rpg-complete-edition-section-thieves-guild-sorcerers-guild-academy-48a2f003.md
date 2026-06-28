@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-thieves-guild-sorcerers-guild-academy-48a2f003@24adbfcd84f98d1e94f7d1d54f6eae30
+projection_coverage: section-sword-world-rpg-complete-edition-section-thieves-guild-sorcerers-guild-academy-48a2f003@f37330b6cb363151433147793b1ca05d
 ---
 
 # Thieves Guild/Sorcerers' Guild (Academy)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section
+- [[sword-world-rpg-complete-edition-section-18-3-a1683715]] - broader source section: 18.3
 
 ## Statements
 

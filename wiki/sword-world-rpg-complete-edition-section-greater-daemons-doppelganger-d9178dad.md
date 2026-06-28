@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-greater-daemons-doppelganger-d9178dad@8b1c6c2286f9a497484e643a83c0144f
+projection_coverage: section-sword-world-rpg-complete-edition-section-greater-daemons-doppelganger-d9178dad@f208548fec7a0c808265d35aaf90ec57
 ---
 
 # [ Greater Daemons ] Doppelganger
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-11-cbbcb4fd]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-2-11-cbbcb4fd]] - broader source section: 13.2.11
 
 ## Statements
 

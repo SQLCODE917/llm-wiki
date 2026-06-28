@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-double-sixes-and-double-ones-9a1cd2dd@e07c1f4c6e4ad2752d66588e2b0212df
+projection_coverage: section-sword-world-rpg-complete-edition-section-double-sixes-and-double-ones-9a1cd2dd@1c13c65f4b3efbb2ab5bb279c26788e7
 ---
 
 # Double Sixes and Double Ones
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-7-146fbd9e]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-7-146fbd9e]] - broader source section: 4.7
 
 ## Statements
 

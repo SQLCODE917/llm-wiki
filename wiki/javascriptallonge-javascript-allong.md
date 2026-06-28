@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-javascript-allong
 page_kind: concept
-summary: Javascript Allong: 4 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
+summary: Javascript Allong: 3 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-javascript-allong@3a5f5cedb2733a4ec6b043cda070e7b3
+projection_coverage: topic-javascriptallonge-javascript-allong@ad2f7fd72e5e6475f551810fc573c085
 ---
 
 # Javascript Allong
@@ -15,17 +15,50 @@ What [[javascriptallonge]] covers about javascript allong:
 
 ## Statements
 
-- JavaScript Allongé does not attempt to address the question of JavaScript best practices in the wider context of software development, because JavaScript Allongé isn’t a book about practicing, it’s a book about thinking. _(javascriptallonge.pdf (source-range-83ecb080-00067))_
-- JavaScript Allongé is a book about programming with functions. _(javascriptallonge.pdf (source-range-83ecb080-00057))_
-- But while JavaScript Allongé attempts to be provocative, it is not _prescriptive_ . _(javascriptallonge.pdf (source-range-83ecb080-00059))_
-- While the content of each chapter builds naturally on what was discussed in the previous chapter, the recipes may draw upon any aspect of the JavaScript programming language. _(javascriptallonge.pdf (source-range-83ecb080-00072))_
+### What JavaScript Allongé is. And isn't.
+
+- A Pull of the Lever: Prefaces v
+
+## **What JavaScript Allongé is. And isn’t.**
+
+**==> picture [468 x 275] intentionally omitted <==**
+
+**JavaScript Allongé is a book about thinking about programs**
+
+JavaScript Allongé is a book about programming with functions. From functions flow many ideas, from decorators to methods to delegation to mixins, and onwards in so many fruitful directions.
+
+The focus in this book on the underlying ideas, what we might call the fundamentals, and how they combine to form new ideas. The intention is to improve the way we think about programs. That’s a good thing.
+
+But while JavaScript Allongé attempts to be provocative, it is not _prescriptive_ . There is absolutely no suggestion that any of the techniques shown here are the only way to do something, the best way, or even an acceptable way to write programs that are intended to be used, read, and maintained by others.
+
+Software development is a complex field. Choices in development are often driven by social considerations. People often say that software should be written for people to read. Doesn’t that depend upon the people in question? Should code written by a small team of specialists use the same techniques and patterns as code maintained by a continuously changing cast of inexperienced interns?
+
+Choices in software development are also often driven by requirements specific to the type of software being developed. For example, business software written in-house has a very different set of requirements than a library written to be publicly distributed as open-source. _(javascriptallonge.pdf (source-range-83ecb080-00016))_
+
+- vi
+
+A Pull of the Lever: Prefaces
+
+Choices in software development must also consider the question of consistency. If a particular codebase is written with lots of helper functions that place the subject first, like this: **const** mapWith = (iterable, fn) => ({ [Symbol.iterator]: **function** * () { **for** ( **let** element **of** iterable) { **yield** fn(element); } } }); Then it can be jarring to add new helpers written that place the verb first, like this: **const** filterWith = (fn, iterable) => ({ [Symbol.iterator]: **function** * () { **for** ( **let** element **of** iterable) { **if** (!!fn(element)) **yield** element; } } });
+
+There are reasons why the second form is more flexible, especially when used in combination with partial application, but does that outweigh the benefit of having an entire codebase do everything consistently the first way or the second way?
+
+Finally, choices in software development cannot ignore the tooling that is used to create and maintain software. The use of source-code control systems with integrated diffing rewards making certain types of focused changes. The use of linters[1] makes checking for certain types of undesirable code very cheap. Debuggers encourage the use of functions with explicit or implicit names. Continuous integration encourages the creation of software in tandem with and factored to facilitate the creation of automated test suites.
+
+JavaScript Allongé does not attempt to address the question of JavaScript best practices in the wider context of software development, because JavaScript Allongé isn’t a book about practicing, it’s a book about thinking.
+
+## **how this book is organized**
+
+_JavaScript Allongé_ introduces new aspects of programming with functions in each chapter, explaining exactly how JavaScript works. Code examples within each chapter are small and emphasize exposition rather than serving as patterns for everyday use.
+
+1https://en.wikipedia.org/wiki/Lint_ _(javascriptallonge.pdf (source-range-83ecb080-00017))_
+
 
 ## Related pages
 
-- [[javascriptallonge-allong]] - broader topic (3 shared statement(s))
-- [[javascriptallonge-javascript]] - broader topic (3 shared statement(s))
-- [[javascriptallonge-javascript-allong-and]] - narrower topic (4 shared statement(s))
-- [[javascriptallonge-section-about-javascript-allong-c4b2d938]] - source section (25 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-allong]] - broader topic: Allong shares source evidence from What JavaScript Allongé is. And isn't.: A Pull of the Lever: Prefaces v  ## **What JavaScript Allongé is. And isn’t.**  **==> picture [468 x 275] intentionally omitted <==**  **JavaScript Allongé is a book ... [truncated] (3 shared statement(s))
+- [[javascriptallonge-javascript]] - broader topic: Javascript shares source evidence from What JavaScript Allongé is. And isn't.: A Pull of the Lever: Prefaces v  ## **What JavaScript Allongé is. And isn’t.**  **==> picture [468 x 275] intentionally omitted <==**  **JavaScript Allongé is a book ... [truncated] (3 shared statement(s))
+- [[javascriptallonge-section-about-javascript-allong-f7f890c6]] - source section: About JavaScript Allongé shares source evidence from About JavaScript Allongé: ii  A Pull of the Lever: Prefaces  ## **About JavaScript Allongé**  JavaScript Allongé is a first and foremost, a book about _programming with functions_ . It’s writ ... [truncated] (26 shared statement(s))
 
 ## Source
 

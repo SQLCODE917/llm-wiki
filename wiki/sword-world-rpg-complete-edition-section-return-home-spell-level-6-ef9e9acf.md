@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-return-home-spell-level-6-ef9e9acf@1b0b79193e138605b4d7b754d0030a46
+projection_coverage: section-sword-world-rpg-complete-edition-section-return-home-spell-level-6-ef9e9acf@57f02a714764d01ee69c93ab844c0fdf
 ---
 
 # [ Return Home ] (Spell Level=6)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-17-9d7cb272]] - broader source section: 5.1.17
 
 ## Statements
 

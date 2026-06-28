@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-damage-poison-b683e217@67daba22aaf7a812a3c848633ac9a51e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-damage-poison-b683e217@43f958d61c13714948036650eda5b7db
 ---
 
 # Chapter 11: Notes on Magic / Damage Poison
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

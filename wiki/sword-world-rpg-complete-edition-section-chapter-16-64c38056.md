@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-64c38056@320b0db86275803496b6534442b40ff3
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-64c38056@1408841aa5a6bd2c9dc5a703e661e3a5
 ---
 
 # Chapter 16:
@@ -16,10 +16,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-5af21319]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-combat-in-which-monsters-roll-dice-4f5c9f7e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-attacks-from-monsters-against-characters-7a043551]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-attacks-from-characters-against-monsters-cbb64114]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-5af21319]] - broader source section: Chapter 16:
+- [[sword-world-rpg-complete-edition-section-chapter-16-combat-in-which-monsters-roll-dice-4f5c9f7e]] - narrower source section: Chapter 16: / Combat in Which Monsters Roll Dice
+- [[sword-world-rpg-complete-edition-section-chapter-16-attacks-from-monsters-against-characters-7a043551]] - narrower source section: Chapter 16: / Attacks From Monsters Against Characters
+- [[sword-world-rpg-complete-edition-section-chapter-16-attacks-from-characters-against-monsters-cbb64114]] - narrower source section: Chapter 16: / Attacks From Characters Against Monsters
 
 ## Statements by subsection
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-medusa-eyes-dose-magic-3f92e0c0@2e96f52d01b3859027330b004f2c38a8
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-medusa-eyes-dose-magic-3f92e0c0@76986bd9eb4d068a7800ada015af5d98
 ---
 
 # Chapter 12: Various Checks / [Medusa Eyes (Dose/Magic)]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-6th-level-spirit-magic-list-d7251639@ea80e0167e3b656a6a84480569e1a5e6
+projection_coverage: section-sword-world-rpg-complete-edition-section-6th-level-spirit-magic-list-d7251639@a475edb59ec45e88e0a329bf09a77ac0
 ---
 
 # 6th Level Spirit Magic List
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

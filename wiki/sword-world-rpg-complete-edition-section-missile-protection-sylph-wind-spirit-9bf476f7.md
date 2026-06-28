@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-missile-protection-sylph-wind-spirit-9bf476f7@c6d3a2afe678ae57fe00b70078fc7bf6
+projection_coverage: section-sword-world-rpg-complete-edition-section-missile-protection-sylph-wind-spirit-9bf476f7@c3a32fd0603b66b9af61d9784f875a58
 ---
 
 # [ Missile Protection ] (Sylph/Wind Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

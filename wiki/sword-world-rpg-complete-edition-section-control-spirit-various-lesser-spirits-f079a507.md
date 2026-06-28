@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-control-spirit-various-lesser-spirits-f079a507@e6ca7962593962294930bdbdec3f9afe
+projection_coverage: section-sword-world-rpg-complete-edition-section-control-spirit-various-lesser-spirits-f079a507@693d4d80a47bbde8cb682d2f2e3b8582
 ---
 
 # [ Control Spirit ] (Various lesser spirits)
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
-- [[sword-world-rpg-complete-edition-control-spirit-lesser]] - topic hub
-- [[sword-world-rpg-complete-edition-section-full-control-spirit-various-lesser-spirits-bed6eba4]] - same source heading
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
+- [[sword-world-rpg-complete-edition-control-spirit-lesser]] - topic hub: opens the topic page for Control Spirit Lesser
+- [[sword-world-rpg-complete-edition-section-full-control-spirit-various-lesser-spirits-bed6eba4]] - same source heading: another source section with the same heading, [ Full Control Spirit ] (Various lesser spirits)
 
 ## Statements
 

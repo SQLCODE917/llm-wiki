@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-merchant-skill-db1b2276@31f57f52b80a39816cccbc469254b60b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-merchant-skill-db1b2276@2f932616af3192192b9da091cf71fbce
 ---
 
 # Chapter 7: / Merchant Skill
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-13a77f13]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-7-13a77f13]] - broader source section: Chapter 7:
 
 ## Statements
 

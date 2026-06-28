@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-footprint-tracking-intelligence-no-equipment-restriction-not-retriable-521a6dbe@d7b8ccd5ae774ea063e5718edd7d00bf
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-footprint-tracking-intelligence-no-equipment-restriction-not-retriable-521a6dbe@240089c655a896c4dc6a076d85a909ca
 ---
 
 # Chapter 6: / [ ① Footprint Tracking [Intelligence] ] (No equipment restriction, not retriable)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-932dc96c]] - broader source section: Chapter 6:
 
 ## Statements
 

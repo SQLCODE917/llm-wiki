@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-93b0e71b@c43944df023ff0885e28ceaaab78dd10
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-93b0e71b@971bb96853ef6d768f1d9cb6d5e42da0
 ---
 
 # Chapter 16:
@@ -16,13 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-5af21319]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-defense-modifier-94aab4ca]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-critical-target-variation-a611c88f]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-anti-strangling-protection-8b4e8d44]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-shield-modifiers-ba0fa732]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-table-16-2-shield-optional-rules-9abbae0d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-16-projectile-bonus-damage-76c6fce6]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-5af21319]] - broader source section: Chapter 16:
+- [[sword-world-rpg-complete-edition-section-chapter-16-defense-modifier-94aab4ca]] - narrower source section: Chapter 16: / Defense Modifier
+- [[sword-world-rpg-complete-edition-section-chapter-16-critical-target-variation-a611c88f]] - narrower source section: Chapter 16: / Critical Target Variation
+- [[sword-world-rpg-complete-edition-section-chapter-16-anti-strangling-protection-8b4e8d44]] - narrower source section: Chapter 16: / Anti-Strangling Protection
+- [[sword-world-rpg-complete-edition-section-chapter-16-shield-modifiers-ba0fa732]] - narrower source section: Chapter 16: / Shield Modifiers
+- [[sword-world-rpg-complete-edition-section-chapter-16-table-16-2-shield-optional-rules-9abbae0d]] - narrower source section: Chapter 16: / Table 16-2 Shield Optional Rules
+- [[sword-world-rpg-complete-edition-section-chapter-16-projectile-bonus-damage-76c6fce6]] - narrower source section: Chapter 16: / Projectile Bonus Damage
 
 ## Statements
 

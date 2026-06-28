@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-quickness-ring-b60750d5@03dadaf698792849df994dfc32a9df25
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-quickness-ring-b60750d5@a0a1438418cb1698a9048905e285f83d
 ---
 
 # Chapter 14: / [ Quickness Ring ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

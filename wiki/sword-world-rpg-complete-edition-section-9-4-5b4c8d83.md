@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-9-4-5b4c8d83@2915b26495ad3d2517b6002ae7e16629
+projection_coverage: section-sword-world-rpg-complete-edition-section-9-4-5b4c8d83@717852c3eef029dc2f9cb1542ae573e1
 ---
 
 # 9.4
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-automatic-success-restrictions-21bf91e1]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-automatic-success-restrictions-21bf91e1]] - narrower source section: Automatic Success Restrictions
 
 ## Statements
 

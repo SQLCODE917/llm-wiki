@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-follow-agility-equipment-restriction-bbaad827@91fe588d0d3cb4d836dd177fe8ba9506
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-follow-agility-equipment-restriction-bbaad827@e895dc492864cdaf8f23d60cbe6033e4
 ---
 
 # Chapter 6: / [ ⑬ Follow [Agility] ] (Equipment restriction)
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section
-- [[sword-world-rpg-complete-edition-follow-agility-equipment-restriction]] - topic hub
-- [[sword-world-rpg-complete-edition-section-chapter-6-follow-agility-equipment-restriction-404b6a31]] - same source heading
+- [[sword-world-rpg-complete-edition-section-chapter-6-f858f314]] - broader source section: Chapter 6:
+- [[sword-world-rpg-complete-edition-follow-agility-equipment-restriction]] - topic hub: opens the topic page for Follow Agility Equipment Restriction
+- [[sword-world-rpg-complete-edition-section-chapter-6-follow-agility-equipment-restriction-404b6a31]] - same source heading: another source section with the same heading, Chapter 6: / [ ⑬ Follow [Agility] ] (Equipment restriction)
 
 ## Statements
 

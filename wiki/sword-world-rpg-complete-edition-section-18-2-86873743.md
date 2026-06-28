@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-2-86873743@9d25cdbd863641915d3a8f7a53541f67
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-2-86873743@d820db47ebdcff7d071820bd337a7b76
 ---
 
 # 18.2
@@ -16,9 +16,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-guidelines-for-adventurer-age-and-ability-score-changes-2b1b0d56]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-elves-80602838]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-dwarves-grassrunners-half-elves-385fa94e]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-guidelines-for-adventurer-age-and-ability-score-changes-2b1b0d56]] - narrower source section: Guidelines for Adventurer Age and Ability Score Changes
+- [[sword-world-rpg-complete-edition-section-elves-80602838]] - narrower source section: Elves
+- [[sword-world-rpg-complete-edition-section-dwarves-grassrunners-half-elves-385fa94e]] - narrower source section: Dwarves, Grassrunners, Half-Elves
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-slave-0d500d8f@9ed9b1191c1a9b4f3f73abe6616fcc11
+projection_coverage: section-sword-world-rpg-complete-edition-section-slave-0d500d8f@fc3fc110327d01cd361ba6610ddb91eb
 ---
 
 # Slave
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section
-- [[sword-world-rpg-complete-edition-section-slaves-701bc14d]] - same source heading
+- [[sword-world-rpg-complete-edition-section-13-2-6-88c2416a]] - broader source section: 13.2.6
+- [[sword-world-rpg-complete-edition-section-slaves-701bc14d]] - same source heading: another source section with the same heading, Slaves
 
 ## Technical atoms
 

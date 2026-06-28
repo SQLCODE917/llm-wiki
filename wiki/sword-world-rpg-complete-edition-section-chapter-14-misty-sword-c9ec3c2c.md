@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-misty-sword-c9ec3c2c@f25ba54ab7388d76906ca115d4053fa9
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-misty-sword-c9ec3c2c@0bed2ca5f14bb18a591df41dc080c30f
 ---
 
 # Chapter 14: / 《 Misty Sword 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

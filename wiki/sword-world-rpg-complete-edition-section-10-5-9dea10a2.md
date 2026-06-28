@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-10-5-9dea10a2@2ad79dacb593e75fa4630ccd022e95ec
+projection_coverage: section-sword-world-rpg-complete-edition-section-10-5-9dea10a2@693f950b5fbbb481ba4717dad9860a3e
 ---
 
 # 10.5
@@ -16,11 +16,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-rules-for-sleeping-monsters-45a6bbad]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-rules-for-sleeping-adventurers-4e4948c1]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-combat-between-monsters-b7bdfd61]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-hit-checks-0a7250f7]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-damage-ee5bcc31]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-rules-for-sleeping-monsters-45a6bbad]] - narrower source section: Rules for Sleeping Monsters
+- [[sword-world-rpg-complete-edition-section-rules-for-sleeping-adventurers-4e4948c1]] - narrower source section: Rules for Sleeping Adventurers
+- [[sword-world-rpg-complete-edition-section-combat-between-monsters-b7bdfd61]] - narrower source section: Combat Between Monsters
+- [[sword-world-rpg-complete-edition-section-hit-checks-0a7250f7]] - narrower source section: 《 Hit Checks 》
+- [[sword-world-rpg-complete-edition-section-damage-ee5bcc31]] - narrower source section: 《 Damage 》
 
 ## Statements
 

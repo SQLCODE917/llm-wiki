@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-giant@cd89986afc2b665f52a17b25a4960d35
+projection_coverage: topic-sword-world-rpg-complete-edition-giant@c1206a064109e57faa2da717323b0b21
 ---
 
 # Giant
@@ -273,19 +273,19 @@ What [[sword-world-rpg-complete-edition]] covers about giant:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-meter]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-human]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-body]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-ancient]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-round]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-success]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-fire]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-live]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-giant-395c0a98]] - source section (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-giant-437ff093]] - source section (4 shared statement(s))
+- [[sword-world-rpg-complete-edition-meter]] - shared statements and technical atoms: Meter shares source evidence from Hill Giant: These giants, about 5 meters tall, live in hills and mountains, and have golden or light brown hair on their heads and bodies. They have a gentle personality, so eve ... [truncated]; Meter shares technical record from Larva: Languages=None (3 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-human]] - shared statements and technical atoms: Human shares source evidence from [ Giant Mantis: When attacking a human, a giant mantis will use its sickles to capture their arms and attempt to block their movement. Anyone hit by a giant mantis's attack will hav ... [truncated]; Human shares technical record from [ Giant Mantis: On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasio ... [truncated] (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-body]] - shared technical atoms: Body shares technical record from Giant Ant Queen: Languages=None (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-ancient]] - shared technical atoms: Ancient shares technical record from [ Giant Mantis: On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasio ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-round]] - shared technical atoms: Round shares technical record from [ Giant Mantis: On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasio ... [truncated] (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared technical atoms: Score shares technical record from Giant Webspinner: If you fail, you will get caught in the web and attract the attention of the giant webspinner. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared technical atoms: Success shares technical record from Giant Webspinner: If you fail, you will get caught in the web and attract the attention of the giant webspinner. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared technical atoms: Target shares technical record from Giant Webspinner: If you fail, you will get caught in the web and attract the attention of the giant webspinner. (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-fire]] - shared statements: Fire shares source evidence from Fire Giant: A fire giant is a giant about 7 meters tall, with reddish-brown skin. They have rich heads of hair, the color of which ranges from jet black to deep crimson, dependi ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from Larva: The giant antlion will attempt to bite down on its fallen prey with its large jaws. If it manages to bite, it'll hold its grip firmly in place then stab its mouth wh ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-live]] - shared statements: Live shares source evidence from [ Giant ]: Among the giants, the race called Giants in particular, unlike those that are merely large fae and youma (such as trolls, etc.), are one of the ancient races like dr ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-giant-395c0a98]] - source section: Chapter 12: Various Checks / [ Giant ] shares source evidence from Chapter 12: Various Checks / [ Giant ]: This is the language used by titans such as giants, cyclops, ogres, etc. It is said that the high language of giant are runes comparable to high ancient for humans, ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-giant-437ff093]] - source section: [ Giant ] shares source evidence from [ Giant ]: Among the giants, the race called Giants in particular, unlike those that are merely large fae and youma (such as trolls, etc.), are one of the ancient races like dr ... [truncated] (4 shared statement(s))
 
 ## Source
 

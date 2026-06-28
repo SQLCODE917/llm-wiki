@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-vampire-a84db1f7@db676cf0f7b890c2e4fc76f2e4e6c1c3
+projection_coverage: section-sword-world-rpg-complete-edition-section-vampire-a84db1f7@bd8860a314a404490ef7de0dfa4d15f4
 ---
 
 # [ Vampire ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-vampire-b937e9ae]] - same source heading
+- [[sword-world-rpg-complete-edition-section-vampire-b937e9ae]] - same source heading: another source section with the same heading, Vampire
 
 ## Statements
 

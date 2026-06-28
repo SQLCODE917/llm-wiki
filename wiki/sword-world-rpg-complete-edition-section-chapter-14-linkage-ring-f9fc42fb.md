@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-linkage-ring-f9fc42fb@83260be7e04bdaac0a72c86b77416fc1
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-linkage-ring-f9fc42fb@9f045dd76d62519d09eb581b24cf925b
 ---
 
 # Chapter 14: / [ Linkage Ring ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

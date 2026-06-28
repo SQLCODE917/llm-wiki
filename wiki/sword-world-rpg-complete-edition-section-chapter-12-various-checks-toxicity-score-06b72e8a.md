@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-toxicity-score-06b72e8a@1b932f3d5a4be8efcecbe69da31dba94
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-toxicity-score-06b72e8a@6bf1a93da7c0eff4aadd2f921a96b08c
 ---
 
 # Chapter 12: Various Checks / 《 Toxicity Score 》
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-60b0c605]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

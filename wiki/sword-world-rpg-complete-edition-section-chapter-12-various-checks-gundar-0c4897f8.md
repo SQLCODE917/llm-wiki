@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-gundar-0c4897f8@54c9b158f30b128cd2643c200a836be9
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-gundar-0c4897f8@950ee14a66a4cb3d41c6288628d29a6f
 ---
 
 # Chapter 12: Various Checks / [ Gundar ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f]] - broader source section: Chapter 12: Various Checks
 
 ## Statements
 

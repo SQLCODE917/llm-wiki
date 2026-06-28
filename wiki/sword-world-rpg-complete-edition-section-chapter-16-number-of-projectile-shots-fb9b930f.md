@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-number-of-projectile-shots-fb9b930f@4297df66ed8ea26df2172f0cbbf61c84
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-number-of-projectile-shots-fb9b930f@e0128ba21d2afaf16acf174e40f51466
 ---
 
 # Chapter 16: / Number of Projectile Shots
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-16-9400c78a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-16-9400c78a]] - broader source section: Chapter 16:
 
 ## Statements
 

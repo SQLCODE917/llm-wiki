@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-container-bracelet-8ad3f889@eb9f81aa13d085ffa1b9cedc28d19621
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-container-bracelet-8ad3f889@bcb50741a97c3b85002c8a83f41bf25a
 ---
 
 # Chapter 14: / [ Container Bracelet ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-14-ad1355f1]] - broader source section: Chapter 14:
 
 ## Statements
 

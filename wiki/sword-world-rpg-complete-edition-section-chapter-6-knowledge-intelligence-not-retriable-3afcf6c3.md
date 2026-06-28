@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-knowledge-intelligence-not-retriable-3afcf6c3@247242f46d833491a43e420628fc9fb4
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-knowledge-intelligence-not-retriable-3afcf6c3@e2b4ffc8e3f54138aa3fa4a2012ab9ac
 ---
 
 # Chapter 6: / [ ④ Knowledge [Intelligence]] (Not retriable)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-6-80e28a91]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-6-80e28a91]] - broader source section: Chapter 6:
 
 ## Statements
 

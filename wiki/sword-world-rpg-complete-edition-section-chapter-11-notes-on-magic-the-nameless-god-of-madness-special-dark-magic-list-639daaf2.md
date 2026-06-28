@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-the-nameless-god-of-madness-special-dark-magic-list-639daaf2@8c9feec7012aee43fe90ef8fe6a52bf8
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-the-nameless-god-of-madness-special-dark-magic-list-639daaf2@3453a04ead4c2a13a93b347f3ccd304c
 ---
 
 # Chapter 11: Notes on Magic / The Nameless God of Madness Special Dark Magic List
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-79516da0]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

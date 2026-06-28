@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-recall-spirit-f42a7164@dd352514cf0d7dace68aade34afeb02e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-recall-spirit-f42a7164@6f5a852fdbeaad11d7a6bf7c86189ba4
 ---
 
 # Chapter 11: Notes on Magic / [ Recall Spirit ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-087da08c]] - broader source section: Chapter 11: Notes on Magic
 
 ## Statements
 

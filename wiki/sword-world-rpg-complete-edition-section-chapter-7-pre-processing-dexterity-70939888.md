@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-pre-processing-dexterity-70939888@a3dbce2013a05883f6dc4a49c9d6cd33
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-pre-processing-dexterity-70939888@26e652d6bc8d8641e95e5af720324008
 ---
 
 # Chapter 7: / [ ⑨ Pre-processing [Dexterity]]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-2758380a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-7-2758380a]] - broader source section: Chapter 7:
 
 ## Statements
 

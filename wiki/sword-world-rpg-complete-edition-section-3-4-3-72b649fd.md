@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-3-72b649fd@31f8d07241ce60de339fb57dbf5dcae7
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-3-72b649fd@a63798610c4e36fe91535cd82f882702
 ---
 
 # 3.4.3
@@ -16,13 +16,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-ready-a-weapon-5c0293db]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-sheath-a-weapon-etc-6349573d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-pick-a-weapon-up-off-the-ground-and-ready-it-5d1dd963]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-switch-out-a-onehanded-weapon-7ddac437]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-ready-a-weapon-and-attack-18cb585c]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-switch-a-weapon-s-hands-and-attack-98bf96a5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-attack-with-a-readied-weapon-f788015f]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-ready-a-weapon-5c0293db]] - narrower source section: Ready a Weapon
+- [[sword-world-rpg-complete-edition-section-sheath-a-weapon-etc-6349573d]] - narrower source section: Sheath a Weapon, Etc.
+- [[sword-world-rpg-complete-edition-section-pick-a-weapon-up-off-the-ground-and-ready-it-5d1dd963]] - narrower source section: Pick a Weapon Up off the Ground and Ready It
+- [[sword-world-rpg-complete-edition-section-switch-out-a-onehanded-weapon-7ddac437]] - narrower source section: Switch Out a OneHanded Weapon
+- [[sword-world-rpg-complete-edition-section-ready-a-weapon-and-attack-18cb585c]] - narrower source section: Ready a Weapon and Attack
+- [[sword-world-rpg-complete-edition-section-switch-a-weapon-s-hands-and-attack-98bf96a5]] - narrower source section: Switch a Weapon's Hands and Attack
+- [[sword-world-rpg-complete-edition-section-attack-with-a-readied-weapon-f788015f]] - narrower source section: Attack with a Readied Weapon
 
 ## Statements
 

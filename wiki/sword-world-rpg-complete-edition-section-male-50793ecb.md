@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-male-50793ecb@071d4405605a0390971237d590a892db
+projection_coverage: section-sword-world-rpg-complete-edition-section-male-50793ecb@1d45b2bcd38a5602c5e3d789609722d8
 ---
 
 # Male
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-male-88db6769]] - same source heading
+- [[sword-world-rpg-complete-edition-section-male-88db6769]] - same source heading: another source section with the same heading, Male
 
 ## Statements
 

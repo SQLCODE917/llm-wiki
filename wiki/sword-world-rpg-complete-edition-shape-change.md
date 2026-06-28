@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-shape-change@81115d0b627c9cc8fb61df6f512ed217
+projection_coverage: topic-sword-world-rpg-complete-edition-shape-change@7e181ce2715bd502a13208a317583ccf
 ---
 
 # [ Shape Change
@@ -125,16 +125,16 @@ What [[sword-world-rpg-complete-edition]] covers about [ shape change:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-cast]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-caster]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-body]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-force]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-sage-skill]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-shape-change-05fbe58d]] - source section (10 shared statement(s), 9 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-shape-change-dbedf837]] - source section (2 shared statement(s), 8 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements: Cast shares source evidence from [ Shape Change: Only the caster's body will change shape, the clothes and accessories they're wearing do not change. They will fall off or break in the process of changing. Also, af ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-caster]] - shared statements: Caster shares source evidence from [ Shape Change: Only the caster's body will change shape, the clothes and accessories they're wearing do not change. They will fall off or break in the process of changing. Also, af ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements: Spell shares source evidence from [ Disguise ]: This spell is a type of illusion magic that works on the caster, changing their appearance into something else. However, this spell cannot significantly change the s ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-body]] - shared statements: Body shares source evidence from [ Shape Change: Only the caster's body will change shape, the clothes and accessories they're wearing do not change. They will fall off or break in the process of changing. Also, af ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-force]] - shared statements: Force shares source evidence from Chapter 11: Notes on Magic / [ Shape Change: Transform into a lesser dragon. Life force and mental power will be taken from the caster's current scores ( not their maximum scores), but other details such as att ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements: Power shares source evidence from Chapter 11: Notes on Magic / [ Shape Change: Transform into a lesser dragon. Life force and mental power will be taken from the caster's current scores ( not their maximum scores), but other details such as att ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-sage-skill]] - shared statements: Sage Skill shares source evidence from [ Shape Change: This is a spell that allows the caster to change their form into another living creature at will. However, the creatures they can change into are limited to about 10 ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements: Score shares source evidence from Doubleburg: However, it cannot copy its opponent's abilities and memories. Even if it shapeshifts, a doubleburg's score data will not change at all. For example, even though it ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-shape-change-05fbe58d]] - source section: [ Shape Change shares source evidence from [ Shape Change: This is a spell that allows the caster to change their form into another living creature at will. However, the creatures they can change into are limited to about 10 ... [truncated]; [ Shape Change shares technical record from [ Shape Change: Base Mental Power Cost=20 (10 shared statement(s), 9 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-shape-change-dbedf837]] - source section: Chapter 11: Notes on Magic / [ Shape Change shares source evidence from Chapter 11: Notes on Magic / [ Shape Change: Transform into a lesser dragon. Life force and mental power will be taken from the caster's current scores ( not their maximum scores), but other details such as att ... [truncated]; Chapter 11: Notes on Magic / [ Shape Change shares technical record from Chapter 11: Notes on Magic / [ Shape Change: Base Mental Power Cost=35 (2 shared statement(s), 8 shared atom(s))
 
 ## Source
 

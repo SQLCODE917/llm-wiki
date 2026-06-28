@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f@6fb1b82f553d7d67075c563a78686e47
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-2b10207f@7cedd36d8b182b8637acbd31eb46916b
 ---
 
 # Chapter 12: Various Checks
@@ -16,37 +16,37 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ec5b347d]] - broader source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-rules-regarding-language-db062c7a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-1-normal-languages-5309d559]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-and-runes-5a794b4e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-normal-languages-9a70ff4e]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-runes-6f095bd5]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-2-normal-languages-of-139716a3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-forcelia-cdf04cad]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-common-694d76e3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-regional-a8eebb10]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-m-rdan-9b004b71]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-gundar-0c4897f8]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-low-ancient-ce4fc1bf]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-racial-daa54c60]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-elven-ce633649]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-dwarven-eee80ac2]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-impish-96eee2d3]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-centaurian-5107268a]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-goblin-eee6f050]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-giant-395c0a98]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-harpy-8b529802]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-fairy-7f652a41]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-merman-964e8dfa]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-minotaur-4c4e7b8d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-lizardman-1c0a3029]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-3-adventurer-languages-e5bbfc97]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-starting-adventurer-languages-a84727e9]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-4-learning-unknown-ba3a8794]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-languages-e5336420]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-5-monster-language-4e04696d]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ability-f6ee38f7]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ec5b347d]] - broader source section: Chapter 12: Various Checks
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-rules-regarding-language-db062c7a]] - narrower source section: Chapter 12: Various Checks / Rules Regarding Language
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-1-normal-languages-5309d559]] - narrower source section: Chapter 12: Various Checks / 12.1.1 Normal Languages
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-and-runes-5a794b4e]] - narrower source section: Chapter 12: Various Checks / and Runes
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-normal-languages-9a70ff4e]] - narrower source section: Chapter 12: Various Checks / 《 Normal Languages 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-runes-6f095bd5]] - narrower source section: Chapter 12: Various Checks / 《 Runes 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-2-normal-languages-of-139716a3]] - narrower source section: Chapter 12: Various Checks / 12.1.2 Normal Languages of
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-forcelia-cdf04cad]] - narrower source section: Chapter 12: Various Checks / Forcelia
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-common-694d76e3]] - narrower source section: Chapter 12: Various Checks / 《 Common 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-regional-a8eebb10]] - narrower source section: Chapter 12: Various Checks / 《 Regional 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-m-rdan-9b004b71]] - narrower source section: Chapter 12: Various Checks / [ Mārdan ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-gundar-0c4897f8]] - narrower source section: Chapter 12: Various Checks / [ Gundar ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-low-ancient-ce4fc1bf]] - narrower source section: Chapter 12: Various Checks / 《 Low Ancient 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-racial-daa54c60]] - narrower source section: Chapter 12: Various Checks / 《 Racial 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-elven-ce633649]] - narrower source section: Chapter 12: Various Checks / [ Elven ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-dwarven-eee80ac2]] - narrower source section: Chapter 12: Various Checks / [ Dwarven ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-impish-96eee2d3]] - narrower source section: Chapter 12: Various Checks / [ Impish ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-centaurian-5107268a]] - narrower source section: Chapter 12: Various Checks / [ Centaurian ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-goblin-eee6f050]] - narrower source section: Chapter 12: Various Checks / [ Goblin ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-giant-395c0a98]] - narrower source section: Chapter 12: Various Checks / [ Giant ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-harpy-8b529802]] - narrower source section: Chapter 12: Various Checks / [ Harpy ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-fairy-7f652a41]] - narrower source section: Chapter 12: Various Checks / [ Fairy ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-merman-964e8dfa]] - narrower source section: Chapter 12: Various Checks / [ Merman ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-minotaur-4c4e7b8d]] - narrower source section: Chapter 12: Various Checks / [ Minotaur ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-lizardman-1c0a3029]] - narrower source section: Chapter 12: Various Checks / [ Lizardman ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-3-adventurer-languages-e5bbfc97]] - narrower source section: Chapter 12: Various Checks / 12.1.3 Adventurer Languages
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-starting-adventurer-languages-a84727e9]] - narrower source section: Chapter 12: Various Checks / Starting Adventurer Languages
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-4-learning-unknown-ba3a8794]] - narrower source section: Chapter 12: Various Checks / 12.1.4 Learning Unknown
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-languages-e5336420]] - narrower source section: Chapter 12: Various Checks / Languages
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-5-monster-language-4e04696d]] - narrower source section: Chapter 12: Various Checks / 12.1.5 Monster Language
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ability-f6ee38f7]] - narrower source section: Chapter 12: Various Checks / Ability
 
 ## Statements by subsection
 

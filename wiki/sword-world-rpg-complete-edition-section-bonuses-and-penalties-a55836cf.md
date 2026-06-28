@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bonuses-and-penalties-a55836cf@83b175c51e20626fe0b2c78381ef0817
+projection_coverage: section-sword-world-rpg-complete-edition-section-bonuses-and-penalties-a55836cf@f341f1c40c13b237a9f2fc6caa8275cb
 ---
 
 # Bonuses and Penalties
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-2-4-cb11f2fb]] - broader source section
+- [[sword-world-rpg-complete-edition-section-2-4-cb11f2fb]] - broader source section: 2.4
 
 ## Statements
 

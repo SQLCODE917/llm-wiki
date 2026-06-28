@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-rules-for-sleeping-adventurers-4e4948c1@2659e5f94ee847a6125fac6edf44b366
+projection_coverage: section-sword-world-rpg-complete-edition-section-rules-for-sleeping-adventurers-4e4948c1@9ddc7925da804e45f0e4a93568c86f52
 ---
 
 # Rules for Sleeping Adventurers
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-10-5-9dea10a2]] - broader source section
+- [[sword-world-rpg-complete-edition-section-10-5-9dea10a2]] - broader source section: 10.5
 
 ## Statements
 

@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-seamanship-intelligence-92f6e3a5@3b149a260243cbcb5656a9b42f6f7539
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-seamanship-intelligence-92f6e3a5@74dfbc4c2cc561e07eed31c96a0b51cb
 ---
 
 # Chapter 7: / [ ② Seamanship [Intelligence] ]
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-7-2758380a]] - broader source section
+- [[sword-world-rpg-complete-edition-section-chapter-7-2758380a]] - broader source section: Chapter 7:
 
 ## Statements
 

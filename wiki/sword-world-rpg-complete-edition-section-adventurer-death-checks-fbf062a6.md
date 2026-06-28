@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-adventurer-death-checks-fbf062a6@dd1388c6390e3cec7d13a16d8356509d
+projection_coverage: section-sword-world-rpg-complete-edition-section-adventurer-death-checks-fbf062a6@fed8c3cb66ddb57555b64035b98cedc0
 ---
 
 # Adventurer Death Checks
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-9-1-e813bf03]] - broader source section
+- [[sword-world-rpg-complete-edition-section-4-9-1-e813bf03]] - broader source section: 4.9.1
 
 ## Statements
 

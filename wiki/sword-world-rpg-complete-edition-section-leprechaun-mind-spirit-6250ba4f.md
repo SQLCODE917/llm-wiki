@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-leprechaun-mind-spirit-6250ba4f@191e70edefa6dd1d2f90a142efe30e5a
+projection_coverage: section-sword-world-rpg-complete-edition-section-leprechaun-mind-spirit-6250ba4f@f37636e070f9d0b749daf1b1384bd9b7
 ---
 
 # (Leprechaun/Mind Spirit)
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section
+- [[sword-world-rpg-complete-edition-section-5-1-14-95411a76]] - broader source section: 5.1.14
 
 ## Statements
 

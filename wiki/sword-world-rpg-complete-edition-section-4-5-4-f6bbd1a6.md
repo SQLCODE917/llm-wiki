@@ -7,7 +7,7 @@ updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-4-f6bbd1a6@c7b861074261f675970a22b5c2badf11
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-4-f6bbd1a6@b03ad47077be00ee2770eb1ac399f0e8
 ---
 
 # 4.5.4
@@ -16,8 +16,8 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-monster-defense-points-07585811]] - narrower source section
-- [[sword-world-rpg-complete-edition-section-example-fec67991]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-monster-defense-points-07585811]] - narrower source section: Monster Defense Points
+- [[sword-world-rpg-complete-edition-section-example-fec67991]] - narrower source section: Example:
 
 ## Statements by subsection
 
