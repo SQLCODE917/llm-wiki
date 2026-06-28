@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-learn
 page_kind: concept
-summary: Learn: 4 statement(s) and 1 atom(s) from raw/javascriptallonge.pdf.
+summary: Learn: 5 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-learn@3030dc077ff8cb45410fca467c1f2e84
+projection_coverage: topic-javascriptallonge-learn@cc2a595ca5ed571a5f4469a6bcaf4d77
 ---
 
 # Learn
@@ -15,129 +15,74 @@ What [[javascriptallonge]] covers about learn:
 
 ## Statements
 
-### Closures and Scope
+### variables and bindings
 
-- The first sip: Basic Functions
+- But there's another reason for learning the word antidisestablishmentarianism : We might learn how prefixes and postfixes work in English grammar. It's the same thing with (x) => (y) => x . It has a certain important meaning in its own right, and it's also an excellent excuse to learn about functions that make functions, environments, variables, and more. _(javascriptallonge.pdf (source-range-31a4cf47-00304))_
 
-22
+### if functions without free variables are pure, are closures impure?
 
-## **if functions without free variables are pure, are closures impure?**
+- From this, we learn something: A pure function can contain a closure. _(javascriptallonge.pdf (source-range-31a4cf47-00352))_
 
-The function (y) => x is interesting. It contains a _free variable_ , x.[27] A free variable is one that is not bound within the function. Up to now, we’ve only seen one way to “bind” a variable, namely by passing in an argument with the same name. Since the function (y) => x doesn’t have an argument named x, the variable x isn’t bound in this function, which makes it “free.” Now that we know that variables used in a function are either bound or free, we can bifurcate functions into those with free variables and those without:
+### const
 
-- Functions containing no free variables are called _pure functions_ .
+- JavaScript gives us a way to do that, the const keyword. We'll learn a lot more about const in future chapters, but here's the most important thing we can do with const : _(javascriptallonge.pdf (source-range-31a4cf47-00423))_
 
-- Functions containing one or more free variables are called _closures_ .
+### defaults and destructuring
 
-Pure functions are easiest to understand. They always mean the same thing wherever you use them. Here are some pure functions we’ve already seen:
+- Wesawearlier that destructuring parameters works the same way as destructuring assignment. Now we learn that we can create a default parameter argument. Can we create a default destructuring assignment? _(javascriptallonge.pdf (source-range-31a4cf47-01011))_
 
-## () => {}
+### flipping methods
 
-## (x) => x
-
-- (x) => (y) => x
-
-The first function doesn’t have any variables, therefore doesn’t have any free variables. The second doesn’t have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ..., and it doesn’t have a free variable: The only variable anywhere in its body is x, which is certainly bound within (x) => ....
-
-From this, we learn something: A pure function can contain a closure.
-
-**==> picture [29 x 30] intentionally omitted <==**
-
-If pure functions can contain closures, can a closure contain a pure function? Using only what we’ve learned so far, attempt to compose a closure that contains a pure function. If you can’t, give your reasoning for why it’s impossible.
-
-Pure functions always mean the same thing because all of their “inputs” are fully defined by their arguments. Not so with a closure. If I present to you this pure function (x, y) => x + y, we know exactly what it does with (2, 2). But what about this closure: (y) => x + y? We can’t say what it will do with argument (2) without understanding the magic for evaluating the free variable x.
-
-27You may also hear the term “non-local variable.” Both are correct. _(javascriptallonge.pdf (source-range-83ecb080-00057))_
-
-### Combinators and Function Decorators
-
-- The first sip: Basic Functions
-
-45
-
-## **Combinators and Function Decorators**
-
-## **higher-order functions**
-
-As we’ve seen, JavaScript functions take values as arguments and return values. JavaScript functions are values, so JavaScript functions can take functions as arguments, return functions, or both. Generally speaking, a function that either takes functions as arguments, or returns a function, or both, is referred to as a “higher-order” function.
-
-Here’s a very simple higher-order function that takes a function as an argument: **const** repeat = (num, fn) => (num > 0) ? (repeat(num - 1, fn), fn(num)) : **undefined** repeat(3, **function** (n) { console.log(`Hello **${** n **}** `) }) _//=>_ 'Hello 1' 'Hello 2' 'Hello 3' **undefined**
-
-Higher-order functions dominate _JavaScript Allongé_ . But before we go on, we’ll talk about some specific types of higher-order functions.
-
-## **combinators**
-
-The word “combinator” has a precise technical meaning in mathematics:
-
-“A combinator is a higher-order function that uses only function application and earlier defined combinators to define a result from its arguments.”–Wikipedia[35] If we were learning Combinatorial Logic, we’d start with the most basic combinators like S, K, and I, and work up from there to practical combinators. We’d learn that the fundamental combinators are named after birds following the example of Raymond Smullyan’s famous book To Mock a Mockingbird[36] .
-
-> 35https://en.wikipedia.org/wiki/Combinatory_logic
-
-> 36http://www.amazon.com/gp/product/B00A1P096Y/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A1P096Y& linkCode=as2&tag=raganwald001-20 _(javascriptallonge.pdf (source-range-83ecb080-00082))_
-
-### Tail Calls (and Default Arguments)
-
-- Composing and Decomposing Data
-
-101 **const** factorial = (n, work = 1) => n === 1 ? work : factorial(n - 1, n * work); factorial(1) _//=> 1_ factorial(6) _//=> 720_
-
-By writing our parameter list as (n, work = 1) =>, we’re stating that if a second parameter is not provided, work is to be bound to 1. We can do similar things with our other tail-recursive functions: **const** length = ([first, ...rest], numberToBeAdded = 0) => first === **undefined** ? numberToBeAdded : length(rest, 1 + numberToBeAdded) length(["foo", "bar", "baz"]) _//=> 3_ **const** mapWith = (fn, [first, ...rest], prepend = []) => first === **undefined** ? prepend : mapWith(fn, rest, [...prepend, fn(first)]); mapWith((x) => x * x, [1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_ Now we don’t need to use two functions. A default argument is concise and readable.
-
-## **defaults and destructuring**
-
-We saw earlier that destructuring parameters works the same way as destructuring assignment. Now we learn that we can create a default parameter argument. Can we create a default destructuring assignment? _(javascriptallonge.pdf (source-range-83ecb080-00149))_
-
-### Flip
-
-- Recipes with Data
-
-173 **const** flipAndCurry = (fn) => (first) => (second) => fn(second, first);
-
-Sometimes you want to flip, but not curry: **const** flip = (fn) => (first, second) => fn(second, first);
-
-This is gold. Consider how we define mapWith now: **var** mapWith = flipAndCurry(map);
-
-Much nicer!
-
-## **self-currying flip**
-
-Sometimes we’ll want to flip a function, but retain the flexibility to call it in its curried form (pass one parameter) or non-curried form (pass both). We _could_ make that into flip: **const** flip = (fn) => **function** (first, second) { **if** (arguments.length === 2) { **return** fn(second, first); } **else** { **return function** (second) { **return** fn(second, first); }; }; };
-
-Now if we write mapWith = flip(map), we can call mapWith(fn, list) or mapWith(fn)(list), our choice.
-
-## **flipping methods**
-
-When we learn about context and methods, we’ll see that flip throws the current context away, so it can’t be used to flip methods. A small alteration gets the job done: _(javascriptallonge.pdf (source-range-83ecb080-00232))_
+- When we learn about context and methods, we'll see that flip throws the current context away, so it can't be used to flip methods. A small alteration gets the job done: _(javascriptallonge.pdf (source-range-31a4cf47-01470))_
 
 
 ## Technical atoms
 
-### Technical frame 1: Tail Calls (and Default Arguments)
+### Technical frame 1: const
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00149))_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00425))_
 
-> Composing and Decomposing Data
+> The const keyword introduces one or more bindings in the block that encloses it. It doesn't incur the cost of a function invocation. That's great. Even better, it puts the symbol (like PI ) close to the value ( 3.14159265 ). That's much better than what we were writing.
 
-101 **const** factorial = (n, work = 1) => n === 1 ? work : factorial(n - 1, n * work); factorial(1) _//=> 1_ factorial(6) _//=> 720_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00424))_
 
-By writing our parameter list as (n, work = 1) =>, we’re stating that if a second parameter is not provided, work is to be bound to 1. We can do similar things with our other tail-recursive functions: **const** length = ([first, ...rest], numberToBeAdded = 0) => first === **undefined** ? numberToBeAdded : length(rest, 1 + numberToB
+```
+(diameter) => { const PI = 3.14159265; return diameter * PI }
+```
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00150))_
+### Technical frame 2: defaults and destructuring
 
-> 102 **const** [first, second = "two"] = ["one"];
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01013))_
+
+> How very useful: defaults can be supplied for destructuring assignments, just like defaults for parameters.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01012))_
+
+```
+const [first, second = "two"] = ["one"]; ` ${ first } . ${ second } ` //=> "one . two" const [first, second = "two"] = ["primus", "secundus"]; ` ${ first } . ${ second } ` //=> "primus . secundus"
+```
+
+### Technical frame 3: flipping methods
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01470))_
+
+> When we learn about context and methods, we'll see that flip throws the current context away, so it can't be used to flip methods. A small alteration gets the job done:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01471))_
+
+```
+const flipAndCurry = (fn) => (first) => function (second) { return fn.call( this , second, first); } const flip = (fn) => function (first, second) { return fn.call( this , second, first); } const flip = (fn) => function (first, second) { if (arguments.length === 2) { return fn.call( this , second, first); } else { return function (second) { return fn.call( this , second, first); }; }; };
+```
 
 
 ## Related pages
 
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Closures and Scope: The first sip: Basic Functions  22  ## **if functions without free variables are pure, are closures impure?**  The function (y) => x is interesting. It contains a _f ... [truncated]; Function shares technical record from Tail Calls (and Default Arguments): 102 **const** [first, second = "two"] = ["one"]; (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical record from Tail Calls (and Default Arguments): 102 **const** [first, second = "two"] = ["one"]; (1 shared atom(s))
-- [[javascriptallonge-length]] - shared technical atoms: Length shares technical record from Tail Calls (and Default Arguments): 102 **const** [first, second = "two"] = ["one"]; (1 shared atom(s))
-- [[javascriptallonge-mapwith]] - shared technical atoms: Mapwith shares technical record from Tail Calls (and Default Arguments): 102 **const** [first, second = "two"] = ["one"]; (1 shared atom(s))
-- [[javascriptallonge-rest]] - shared technical atoms: Rest shares technical record from Tail Calls (and Default Arguments): 102 **const** [first, second = "two"] = ["one"]; (1 shared atom(s))
-- [[javascriptallonge-closure]] - shared statements: Closure shares source evidence from Closures and Scope: The first sip: Basic Functions  22  ## **if functions without free variables are pure, are closures impure?**  The function (y) => x is interesting. It contains a _f ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-combinator]] - shared statements: Combinator shares source evidence from Combinators and Function Decorators: The first sip: Basic Functions  45  ## **Combinators and Function Decorators**  ## **higher-order functions**  As we’ve seen, JavaScript functions take values as arg ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-method]] - shared statements: Method shares source evidence from Flip: Recipes with Data  173 **const** flipAndCurry = (fn) => (first) => (second) => fn(second, first);  Sometimes you want to flip, but not curry: **const** flip = (fn) = ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-pure]] - shared statements: Pure shares source evidence from Closures and Scope: The first sip: Basic Functions  22  ## **if functions without free variables are pure, are closures impure?**  The function (y) => x is interesting. It contains a _f ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-default]] - shared statements and technical atoms: Default shares source evidence from defaults and destructuring: Wesawearlier that destructuring parameters works the same way as destructuring assignment. Now we learn that we can create a default parameter argument. Can we creat ... [truncated]; Default shares technical record from defaults and destructuring: const [first, second = "two"] = ["one"]; ` ${ first } . ${ second } ` //=> "one . two" const [first, second = "two"] = ["primus", "secundus"]; ` ${ first } . ${ seco ... [truncated] (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-important]] - shared statements and technical atoms: Important shares source evidence from const: JavaScript gives us a way to do that, the const keyword. We'll learn a lot more about const in future chapters, but here's the most important thing we can do with const :; Important shares technical record from const: (diameter) => { const PI = 3.14159265; return diameter * PI } (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-method]] - shared statements and technical atoms: Method shares source evidence from flipping methods: When we learn about context and methods, we'll see that flip throws the current context away, so it can't be used to flip methods. A small alteration gets the job done:; Method shares technical record from flipping methods: const flipAndCurry = (fn) => (first) => function (second) { return fn.call( this , second, first); } const flip = (fn) => function (first, second) { return fn.call( ... [truncated] (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-destructuring]] - shared technical atoms: Destructuring shares technical record from defaults and destructuring: const [first, second = "two"] = ["one"]; ` ${ first } . ${ second } ` //=> "one . two" const [first, second = "two"] = ["primus", "secundus"]; ` ${ first } . ${ seco ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from const: (diameter) => { const PI = 3.14159265; return diameter * PI } (1 shared atom(s))
+- [[javascriptallonge-function]] - shared statements: Function shares source evidence from if functions without free variables are pure, are closures impure?: From this, we learn something: A pure function can contain a closure. (1 shared statement(s))
 
 ## Source
 

@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-ecmascript
 page_kind: concept
-summary: Ecmascript: 8 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
+summary: Ecmascript: 11 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-ecmascript@c93f09e826901f42895555a4a3736ee7
+projection_coverage: topic-javascriptallonge-ecmascript@fb6dae81eeb04f58870d68346493af76
 ---
 
 # Ecmascript
@@ -15,93 +15,115 @@ What [[javascriptallonge]] covers about ecmascript:
 
 ## Statements
 
-### About JavaScript Allongé
+### why the 'six' edition?
 
-- ii
+- ECMAScript 2015 (formerly called ECMAScript 6 or 'ES6'), is ushering in a very large number of improvements to the way programmers can write small, powerful components and combine them into larger, fully featured programs. Features like destructuring, block-structured variables, iterables, generators, and the class keyword are poised to make JavaScript programming more expressive. _(javascriptallonge.pdf (source-range-31a4cf47-00021))_
 
-A Pull of the Lever: Prefaces
+- Prior to ECMAScript 2015, JavaScript did not include many features that programmers have discovered are vital to writing great software. For example, JavaScript did not include block-structured variables. Over time, programmers discovered ways to roll their own versions of important features. _(javascriptallonge.pdf (source-range-31a4cf47-00022))_
 
-## **About JavaScript Allongé**
+- And the variable i is scoped locally to the code within the braces. Prior to ECMAScript 2015, JavaScript did not support block-structuring, so programmers borrowed a trick from the Scheme programming language, and would write: _(javascriptallonge.pdf (source-range-31a4cf47-00025))_
 
-JavaScript Allongé is a first and foremost, a book about _programming with functions_ . It’s written in JavaScript, because JavaScript hits the perfect sweet spot of being both widely used, and of having proper first-class functions with lexical scope. If those terms seem unfamiliar, don’t worry: JavaScript Allongé takes great delight in explaining what they mean and why they matter.
+- Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into a parameter, so programmers would take advantage of an awkward work-around and write things like: _(javascriptallonge.pdf (source-range-31a4cf47-00030))_
 
-_JavaScript Allongé_ begins at the beginning, with values and expressions, and builds from there to discuss types, identity, functions, closures, scopes, collections, iterators, and many more subjects up to working with classes and instances.
+### that's nice. is that the only reason?
 
-It also provides recipes for using functions to write software that is simpler, cleaner, and less complicated than alternative approaches that are object-centric or code-centric. JavaScript idioms like function combinators and decorators leverage JavaScript’s power to make code easier to read, modify, debug and refactor.
+- ECMAScript 2015 does more than simply update the language with some simpler syntax for a few things and help us avoid warts. It makes a number of interesting programming techniques easy to explain and easy to use. And these techniques dovetail nicely with Allongé's focus on composing entities and working with functions. _(javascriptallonge.pdf (source-range-31a4cf47-00045))_
 
-_JavaScript Allongé_ teaches you how to handle complex code, and it also teaches you how to simplify code without dumbing it down. As a result, _JavaScript Allongé_ is a rich read releasing many of JavaScript’s subtleties, much like the Café Allongé beloved by coffee enthusiasts everywhere.
+### Foreword to the 'Six' edition
 
-## **why the “six” edition?**
+- ECMAScript 6 (short name: ES6; official name: ECMAScript 2015) was ratified as a standard on June 17. Getting there took a while - in a way, the origins of ES6 date back to the year 2000: After ECMAScript 3 was finished, TC39 (the committee evolving JavaScript) started to work on ECMAScript 4. That version was planned to have numerous new features (interfaces, namespaces, packages, multimethods, etc.), which would have turned JavaScript into a completely new language. After internal conflict, a settlement was reached in July 2008 and a new plan was made - to abandon ECMAScript 4 and to replace it with two upgrades: _(javascriptallonge.pdf (source-range-31a4cf47-00069))_
 
-ECMAScript 2015 (formerly called ECMAScript 6 or “ES6”), is ushering in a very large number of improvements to the way programmers can write small, powerful components and combine them into larger, fully featured programs. Features like destructuring, block-structured variables, iterables, generators, and the class keyword are poised to make JavaScript programming more expressive.
+- A larger upgrade would substantially improve JavaScript, but without being as radical as ECMAScript 4. This upgrade became ECMAScript 6 (some features that were initially discussed will show up later, in upcoming ECMAScript versions). _(javascriptallonge.pdf (source-range-31a4cf47-00071))_
 
-Prior to ECMAScript 2015, JavaScript did not include many features that programmers have discovered are vital to writing great software. For example, JavaScript did not include block-structured variables. Over time, programmers discovered ways to roll their own versions of important features.
+### ECMAScript 6 has three major groups of features:
 
-For example, block-structured languages allow us to write: **for** ( **int** i = 0; i < array.length; ++i) { _// ..._ } And the variable i is scoped locally to the code within the braces. Prior to ECMAScript 2015, JavaScript did not support block-structuring, so programmers borrowed a trick from the Scheme programming language, and would write: _(javascriptallonge.pdf (source-range-83ecb080-00012))_
+- With ECMAScript 6, JavaScript has become much larger as a language. JavaScript Allongé, the 'Six' Edition is both a comprehensive tour of its features and a rich collection of techniques for making better use of them. You will learn much about functional programming and object-oriented programming. And you'll do so via ES6 code, handed to you in small, easily digestible pieces. _(javascriptallonge.pdf (source-range-31a4cf47-00079))_
 
-- iv
+### the function keyword
 
-A Pull of the Lever: Prefaces **function** foo (first, ...rest) { _// ..._ } And presto, rest collects the rest of the arguments without a lot of malarky involving slicing arguments. Not having to work around these kinds of missing features makes JavaScript Allongé a _better book_ , because it can focus on the _why_ to do something and _when_ to do it, instead of on the how to make it work
+- JavaScript does have a syntax for naming a function, we use the function keyword. Until ECMAScript 2015 was created, function was the usual syntax for writing functions. _(javascriptallonge.pdf (source-range-31a4cf47-00506))_
 
-JavaScript Allongé, The “Six” Edition packs all the goodness of JavaScript Allongé into a new, updated package that is relevant for programmers working with (or planning to work with) the latest version of JavaScript.
+### Left-Variadic Functions
 
-## **that’s nice. is that the only reason?**
+- ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do? _(javascriptallonge.pdf (source-range-31a4cf47-00723))_
 
-Actually, no.
 
-If it were just a matter of updating the syntax, the original version of JavaScript Allongé could have simply iterated, slowly replacing old syntax with new. It would have continued to say much the same things, only with new syntax.
+## Technical atoms
 
-_But there’s more to it than that_ . The original JavaScript Allongé was not just written to teach JavaScript: It was written to describe certain ideas in programming: Working with small, independent entities that compose together to make bigger programs. Thus, the focus on things like writing decorators.
+### Technical frame 1: why the 'six' edition?
 
-As noted above, JavaScript was chosen as the language for Allongé because it hit a sweet spot of having a large audience of programmers and having certain language features that happen to work well with this style of programming.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00028))_
 
-ECMAScript 2015 does more than simply update the language with some simpler syntax for a few things and help us avoid warts. It makes a number of interesting programming techniques easy to explain and easy to use. And these techniques dovetail nicely with Allongé’s focus on composing entities and working with functions.
+> Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Ruby, we can write:
 
-Thus, the “six” edition introduces classes and mixins. It introduces the notion of implementing private properties with symbols. It introduces iterators and generators. But the common thread that runs through all these things is that since they are all simple objects and simple functions, we can use the same set of “programming with functions” techniques to build programs by composing small, flexible, and decoupled entities.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00026))_
 
-We just call some of those functions constructors, others decorators, others functional mixins, and yet others, policies.
+```
+var i; for (i = 0; i < array.length; ++i) { ( function (i) { // ... })(i) }
+```
 
-Introducing so many new ideas did require a major rethink of the way the book was organized. And introducing these new ideas did add substantially to its bulk. But even so, in a way it is still explaining the exact same original idea that programs are built out of small, flexible functions composed together. _(javascriptallonge.pdf (source-range-83ecb080-00014))_
+### Technical frame 2: why the 'six' edition?
 
-### Foreword to the Six'' edition
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00032))_
 
-- viii
+> The first edition of JavaScript Allongé explained these and many other patterns for writing flexible and composable programs in JavaScript, but the intention wasn't to explain how to work around JavaScript's missing features: The intention was to explain why the style of programming exemplified by the missing features is important.
 
-A Pull of the Lever: Prefaces
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00031))_
 
-## **Foreword to the “Six” edition**
+```
+function foo () { var first = arguments[0], rest = [].slice.call(arguments, 1); // ... }
+```
 
-ECMAScript 6 (short name: ES6; official name: ECMAScript 2015) was ratified as a standard on June 17. Getting there took a while – in a way, the origins of ES6 date back to the year 2000: After ECMAScript 3 was finished, TC39 (the committee evolving JavaScript) started to work on ECMAScript 4. That version was planned to have numerous new features (interfaces, namespaces, packages, multimethods, etc.), which would have turned JavaScript into a completely new language. After internal conflict, a settlement was reached in July 2008 and a new plan was made – to abandon ECMAScript 4 and to replace it with two upgrades:
+### Technical frame 3: why the 'six' edition?
 
-- A smaller upgrade would bring a few minor enhancements to ECMAScript 3. This upgrade became ECMAScript 5.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00036))_
 
-- A larger upgrade would substantially improve JavaScript, but without being as radical as ECMAScript 4. This upgrade became ECMAScript 6 (some features that were initially discussed will show up later, in upcoming ECMAScript versions).
+> And i is scoped to the for loop. We can also write:
 
-ECMAScript 6 has three major groups of features:
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00035))_
 
-- Better syntax for features that already exist (e.g. via libraries). For example: classes and modules.
+```
+for ( let i = 0; i < array.length; ++i) { // ... }
+```
 
-- New functionality in the standard library. For example:
+### Technical frame 4: Left-Variadic Functions
 
-- New methods for strings and arrays
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00721))_
 
-- Promises (for asynchronous programming) - Maps and sets
+> 52 English is about as inconsistent as JavaScript: Functions with a fixed number of arguments can be unary, binary, ternary, and so forth. But can they be 'variary?' No! They have to be 'variadic.'
 
-- Completely new features. For example: Generators, proxies and WeakMaps.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00720))_
 
-With ECMAScript 6, JavaScript has become much larger as a language. _JavaScript Allongé, the “Six” Edition_ is both a comprehensive tour of its features and a rich collection of techniques for making better use of them. You will learn much about functional programming and object-oriented programming. And you’ll do so via ES6 code, handed to you in small, easily digestible pieces.
+```
+function team(coach, captain, ...players) { console.log(` ${ captain } (captain)`); for ( let player of players) { console.log(player); } console.log(`squad coached by ${ coach } `); } team('Luis Enrique', 'Xavi Hernández', 'Marc-André ter Stegen', 'Martín Montoya', 'Gerard Piqué') //=> Xavi Hernández (captain) Marc-André ter Stegen Martín Montoya Gerard Piqué squad coached by Luis Enrique But we can't go the other way around:
+```
 
-- Axel Rauschmayer Blogger[2] , trainer[3] and author of “Exploring ES6[4] ” > 2http://www.2ality.com
+### Technical frame 5: Left-Variadic Functions
 
-> 3http://ecmanauten.de
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00723))_
 
-> 4http://exploringjs.com _(javascriptallonge.pdf (source-range-83ecb080-00020))_
+> ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do?
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00722))_
+
+```
+function team2(...players, captain, coach) { console.log(` ${ captain } (captain)`); for ( let player of players) { console.log(player); } console.log(`squad coached by ${ coach } `); } //=> Unexpected token
+```
 
 
 ## Related pages
 
-- [[javascriptallonge-javascript]] - shared statements: Javascript shares source evidence from About JavaScript Allongé: ii  A Pull of the Lever: Prefaces  ## **About JavaScript Allongé**  JavaScript Allongé is a first and foremost, a book about _programming with functions_ . It’s writ ... [truncated] (3 shared statement(s))
-- [[javascriptallonge-feature]] - shared statements: Feature shares source evidence from Foreword to the Six'' edition: viii  A Pull of the Lever: Prefaces  ## **Foreword to the “Six” edition**  ECMAScript 6 (short name: ES6; official name: ECMAScript 2015) was ratified as a standard ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from why the 'six' edition?: Prior to ECMAScript 2015, JavaScript did not include many features that programmers have discovered are vital to writing great software. For example, JavaScript did ... [truncated]; Javascript shares technical record from why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { ( function (i) { // ... })(i) } (4 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-feature]] - shared statements and technical atoms: Feature shares source evidence from Foreword to the 'Six' edition: A larger upgrade would substantially improve JavaScript, but without being as radical as ECMAScript 4. This upgrade became ECMAScript 6 (some features that were init ... [truncated]; Feature shares technical record from why the 'six' edition?: for ( let i = 0; i < array.length; ++i) { // ... } (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-program]] - shared technical atoms: Program shares technical record from why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { ( function (i) { // ... })(i) } (3 shared atom(s))
+- [[javascriptallonge-programmer]] - shared technical atoms: Programmer shares technical record from why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { ( function (i) { // ... })(i) } (3 shared atom(s))
+- [[javascriptallonge-function]] - shared technical atoms: Function shares technical record from Left-Variadic Functions: function team(coach, captain, ...players) { console.log(` ${ captain } (captain)`); for ( let player of players) { console.log(player); } console.log(`squad coached ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-block]] - shared technical atoms: Block shares technical record from why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { ( function (i) { // ... })(i) } (1 shared atom(s))
+- [[javascriptallonge-language]] - shared technical atoms: Language shares technical record from why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { ( function (i) { // ... })(i) } (1 shared atom(s))
+- [[javascriptallonge-programming]] - shared technical atoms: Programming shares technical record from why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { ( function (i) { // ... })(i) } (1 shared atom(s))
+- [[javascriptallonge-function-keyword]] - shared statements: the function keyword shares source evidence from the function keyword: JavaScript does have a syntax for naming a function, we use the function keyword. Until ECMAScript 2015 was created, function was the usual syntax for writing functions. (1 shared statement(s))
+- [[javascriptallonge-gathering]] - shared statements: Gathering shares source evidence from Left-Variadic Functions: ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do? (1 shared statement(s))
+- [[javascriptallonge-parameter]] - shared statements: Parameter shares source evidence from Left-Variadic Functions: ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do? (1 shared statement(s))
 
 ## Source
 

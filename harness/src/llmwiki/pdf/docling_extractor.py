@@ -2,20 +2,108 @@
 
 from __future__ import annotations
 
+import traceback
+from dataclasses import dataclass
 from importlib.metadata import PackageNotFoundError, version
+from multiprocessing import get_context
 from pathlib import Path
+from tempfile import TemporaryDirectory
 from typing import Any
 
-from llmwiki.pdf.document import DocumentElement, DocumentModel
+from llmwiki.pdf.document import (
+    DocumentElement,
+    DocumentModel,
+    document_model_from_json,
+    document_model_to_json,
+)
+
+_DOCLING_TIMEOUT_SECONDS = 20 * 60
+_DOCLING_DEVICES = ("auto", "cpu")
+
+
+@dataclass(frozen=True)
+class _DoclingAttemptFailure:
+    device: str
+    detail: str
 
 
 def extract_document_model(pdf_path: Path, source_locator: str, source_hash: str) -> DocumentModel:
+    failures: list[_DoclingAttemptFailure] = []
+    for device in _DOCLING_DEVICES:
+        result = _extract_document_model_isolated(pdf_path, source_locator, source_hash, device)
+        if isinstance(result, DocumentModel):
+            return result
+        failures.append(result)
+    raise RuntimeError(
+        "Docling extraction failed for "
+        f"{source_locator}: "
+        + "; ".join(f"{failure.device}: {failure.detail}" for failure in failures)
+    )
+
+
+def _extract_document_model_isolated(
+    pdf_path: Path, source_locator: str, source_hash: str, device: str
+) -> DocumentModel | _DoclingAttemptFailure:
+    context = get_context("spawn")
+    with TemporaryDirectory(prefix="llmwiki-docling-") as temp_dir:
+        output_path = Path(temp_dir) / "document_model.json"
+        error_path = Path(temp_dir) / "error.txt"
+        process = context.Process(
+            target=_docling_worker,
+            args=(
+                str(pdf_path),
+                source_locator,
+                source_hash,
+                device,
+                str(output_path),
+                str(error_path),
+            ),
+        )
+        process.start()
+        process.join(_DOCLING_TIMEOUT_SECONDS)
+        if process.is_alive():
+            process.terminate()
+            process.join()
+            return _DoclingAttemptFailure(device, "timed out")
+        if process.exitcode == 0 and output_path.is_file():
+            return document_model_from_json(output_path.read_text(encoding="utf-8"))
+        detail = error_path.read_text(encoding="utf-8").strip() if error_path.is_file() else ""
+        return _DoclingAttemptFailure(device, detail or _exit_detail(process.exitcode))
+
+
+def _docling_worker(
+    pdf_path: str,
+    source_locator: str,
+    source_hash: str,
+    device: str,
+    output_path: str,
+    error_path: str,
+) -> None:
+    try:
+        model = _extract_document_model_in_process(
+            Path(pdf_path), source_locator, source_hash, device
+        )
+        Path(output_path).write_text(document_model_to_json(model), encoding="utf-8")
+    except BaseException:
+        Path(error_path).write_text(traceback.format_exc(), encoding="utf-8")
+        raise
+
+
+def _exit_detail(exitcode: int | None) -> str:
+    if exitcode is None:
+        return "no child-process exit code"
+    if exitcode < 0:
+        return f"killed by signal {-exitcode}"
+    return f"exited with code {exitcode}"
+
+
+def _extract_document_model_in_process(
+    pdf_path: Path, source_locator: str, source_hash: str, device: str = "auto"
+) -> DocumentModel:
     from docling.datamodel.base_models import InputFormat
-    from docling.datamodel.pipeline_options import PdfPipelineOptions
     from docling.document_converter import DocumentConverter, PdfFormatOption
 
-    pipeline_options = PdfPipelineOptions()
-    pipeline_options.do_ocr = False
+    pipeline_options = pdf_pipeline_options(device)
     converter = DocumentConverter(
         format_options={
             InputFormat.PDF: PdfFormatOption(pipeline_options=pipeline_options),
@@ -28,6 +116,21 @@ def extract_document_model(pdf_path: Path, source_locator: str, source_hash: str
         source_hash=source_hash,
         extractor_version=_docling_version(),
     )
+
+
+def pdf_pipeline_options(device: str = "auto") -> Any:
+    from docling.datamodel.accelerator_options import AcceleratorDevice, AcceleratorOptions
+    from docling.datamodel.pipeline_options import PdfPipelineOptions
+
+    pipeline_options = PdfPipelineOptions()
+    if device == "cpu":
+        pipeline_options.accelerator_options = AcceleratorOptions(device=AcceleratorDevice.CPU)
+    pipeline_options.do_ocr = False
+    # The harness has a source-neutral table recovery layer after Docling. Avoid
+    # Docling TableFormer here: it is slower, less portable, and can fail inside
+    # native/ML dependencies before our table fallback has a chance to run.
+    pipeline_options.do_table_structure = False
+    return pipeline_options
 
 
 def document_model_from_docling_document(

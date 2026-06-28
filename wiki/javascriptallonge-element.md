@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-element
 page_kind: concept
-summary: Element: 17 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
+summary: Element: 21 statement(s) and 17 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-element@17a008fd102b1e1f97f426fcbffc7e43
+projection_coverage: topic-javascriptallonge-element@04cbcd5ffc58d0140bd4d3fe63203a76
 ---
 
 # Element
@@ -15,255 +15,299 @@ What [[javascriptallonge]] covers about element:
 
 ## Statements
 
-### Arrays and Destructuring Arguments
+### element references
 
-- Composing and Decomposing Data
+- Array elements can be extracted using [ and ] as postfix operators. We pass an integer as an index of the element to extract: _(javascriptallonge.pdf (source-range-31a4cf47-00834))_
 
-79 **const** wrap = (something) => [something]; wrap("lunch") _//=> ["lunch"]_ Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements: [] === [] _//=> false_ [2 + 2] === [2 + 2] _//=> false_ **const** array_of_one = () => [1]; array_of_one() === array_of_one() _//=> false_
+### Self-Similarity
 
-## **element references**
+- Let's convert our rules to array literals. The first rule is simple: [] is a list. How about the second rule? We can express that using a spread. Given an element e and a list list , [e, ...list] is a list. We can test this manually by building up a list: _(javascriptallonge.pdf (source-range-31a4cf47-00890))_
 
-Array elements can be extracted using [ and ] as postfix operators. We pass an integer as an index of the element to extract: **const** oneTwoThree = ["one", "two", "three"]; oneTwoThree[0] _//=> 'one'_ oneTwoThree[1] _//=> 'two'_ oneTwoThree[2] _//=> 'three'_ As we can see, JavaScript Arrays are zero-based[56] .
+### linear recursion
 
-We know that every array is its own unique entity, with its own unique reference. What about the contents of an array? Does it store references to the things we give it? Or copies of some kind?
+- The big elements of divide and conquer are a method for decomposing a problem into smaller problems, a test for the smallest possible problem, and a means of putting the pieces back together. Our solutions are a little simpler in that we don't really break a problem down into multiple pieces, we break a piece off the problem that may or may not be solvable, and solve that before sticking it onto a solution for the rest of the problem. _(javascriptallonge.pdf (source-range-31a4cf47-00915))_
 
-56https://en.wikipedia.org/wiki/Zero-based_numbering _(javascriptallonge.pdf (source-range-83ecb080-00125))_
+- Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and composing a solution from the solved portions. _(javascriptallonge.pdf (source-range-31a4cf47-00923))_
 
 ### Garbage, Garbage Everywhere
 
-- Composing and Decomposing Data
+- The array we had in prepend is no longer used. In GC environments, it is marked as no longer being used, and eventually the garbage collector recycles the memory it is using. Lather, rinse, repeat: Ever time we call mapWith , we're creating a new array, copying all the elements from prepend into the new array, and then we no longer use prepend . _(javascriptallonge.pdf (source-range-31a4cf47-01022))_
 
-104
+- Here's the scheme in JavaScript, using two-element arrays to represent cons cells: _(javascriptallonge.pdf (source-range-31a4cf47-01034))_
 
-Worse, the JavaScript Engine actually copies the elements from prepend into the new array one at a time. That is very laborious.[64] The array we had in prepend is no longer used. In GC environments, it is marked as no longer being used, and eventually the garbage collector recycles the memory it is using. Lather, rinse, repeat: Ever time we call mapWith, we’re creating a new array, copying all the elements from prepend into the new array, and then we no longer use prepend.
+- Again, it's just extracting a reference from a cons cell, it's very fast. In Lisp, it's blazingly fast because it happens in hardware. There's no making copies of arrays, the time to cdr a list with five elements is the same as the time to cdr a list with 5,000 elements, and no temporary arrays are needed. In JavaScript, it's still much, much, much faster to get all the elements except the head from a linked list than from an array. Getting one reference to a structure that already exists is faster than copying a bunch of elements. _(javascriptallonge.pdf (source-range-31a4cf47-01046))_
 
-We may not be creating 3,000 stack frames, but we are creating three thousand new arrays and copying elements into each and every one of them. Although the maximum amount of memory does not grow, the thrashing as we create short-lived arrays is very bad, and we do a lot of work copying elements from one array to another.
+### so why arrays
 
-**Key Point** : Our [first, ...rest] approach to recursion is slow because that it creates a lot of temporary arrays, and it spends an enormous amount of time copying elements into arrays that end up being discarded.
-
-So here’s a question: If this is such a slow approach, why do some examples of “functional” algorithms work this exact way?
-
-> 64It needn’t always be so: Programmers have developed specialized data structures that make operations like this cheap, often by arranging for structures to share common elements by default, and only making copies when changes are made. But this is not how JavaScript’s built-in arrays work. _(javascriptallonge.pdf (source-range-83ecb080-00153))_
-
-- Composing and Decomposing Data
-
-107 **const** node5 = [5, **null** ], node4 = [4, node5], node3 = [3, node4], node2 = [2, node3], node1 = [1, node2]; **const** oneToFive = node1;
-
-This is a Linked List[68] , it’s just that those early Lispers used the names car and cdr after the hardware instructions, whereas today we use words like data and reference. But it works the same way: If we want the head of a list, we call car on it: car(oneToFive) _//=> 1_ car is very fast, it simply extracts the first element of the cons cell.
-
-But what about the rest of the list? cdr does the trick: cdr(oneToFive) _//=> [2,[3,[4,[5,null]]]]_ Again, it’s just extracting a reference from a cons cell, it’s very fast. In Lisp, it’s blazingly fast because it happens in hardware. There’s no making copies of arrays, the time to cdr a list with five elements is the same as the time to cdr a list with 5,000 elements, and no temporary arrays are needed. In JavaScript, it’s still much, much, much faster to get all the elements except the head from a linked list than from an array. Getting one reference to a structure that already exists is faster than copying a bunch of elements.
-
-So now we understand that in Lisp, a lot of things use linked lists, and they do that in part because it was what the hardware made possible.
-
-Getting back to JavaScript now, when we write [first, ...rest] to gather or spread arrays, we’re emulating the semantics of car and cdr, but not the implementation. We’re doing something laborious and memory-inefficient compared to using a linked list as Lisp did and as we can still do if we choose.
-
-That being said, it is easy to understand and helps us grasp how literals and destructuring works, and how recursive algorithms ought to mirror the self-similarity of the data structures they manipulate. And so it is today that languages like JavaScript have arrays that are slow to split into the equivalent of a car/cdr pair, but instructional examples of recursive programs still have echoes of their Lisp origins.
-
-We’ll look at linked lists again when we look at Plain Old JavaScript Objects.
-
-68https://en.wikipedia.org/wiki/Linked_list _(javascriptallonge.pdf (source-range-83ecb080-00156))_
-
-- Composing and Decomposing Data
-
-108
-
-## **so why arrays**
-
-If [first, ...rest] is so slow, why does JavaScript use arrays instead of making everything a linked list?
-
-Well, linked lists are fast for a few things, like taking the front element off a list, and taking the remainder of a list. But not for iterating over a list: Pointer chasing through memory is quite a bit slower than incrementing an index. In addition to the extra fetches to dereference pointers, pointer chasing suffers from cache misses. And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
-
-We have avoided discussing rebinding and mutating values, but if we want to change elements of our lists, the naïve linked list implementation suffers as well: When we take the cdr of a linked list, we are sharing the elements. If we make any change other than cons-ing a new element to the front, we are changing both the new list and the old list.
-
-Arrays avoid this problem by pessimistically copying all the references whenever we extract an element or sequence of elements from them (We’ll see this explained later in Mutation).
-
-For these and other reasons, almost all languages today make it possible to use a fast array or vector type that is optimized for iteration, and even Lisp now has a variety of data structures that are optimized for specific use cases.
-
-## **summary**
-
-Although we showed how to use tail calls to map and fold over arrays with [first, ...rest], in reality this is not how it ought to be done. But it is an extremely simple illustration of how recursion works when you have a self-similar means of constructing a data structure. _(javascriptallonge.pdf (source-range-83ecb080-00157))_
+- Arrays avoid this problem by pessimistically copying all the references whenever we extract an element or sequence of elements from them (We'll see this explained later in Mutation). _(javascriptallonge.pdf (source-range-31a4cf47-01056))_
 
 ### Copy on Write
 
-- Composing and Decomposing Data
+- This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunch of bookkeeping to track references? We'll end up reinventing reference counting and garbage collection. _(javascriptallonge.pdf (source-range-31a4cf47-01232))_
 
-136
+### iterating
 
-Whereas if you have a linked list, and you take it’s “rest,” your “child” list shares its nodes with the “parent” list. And therefore, modifications to the parent also modify the child, and modifications to the child also modify the parent.
-
-Let’s confirm our understanding: **const** parentArray = [1, 2, 3]; **const** [aFirst, ...childArray] = parentArray; parentArray[2] = "three"; childArray[0] = "two"; parentArray _//=> [1,2,"three"]_ childArray _//=> ["two",3]_ **const** EMPTY = { first: {}, rest: {} }; **const** parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }\ }}; **const** childList = parentList.rest; parentList.rest.rest.first = "three"; childList.first = "two"; parentList _//=> {"first":1,"rest":{"first":"two","rest":{"first":"three","rest":{"first":\_ {},"rest":{}}}}} childList _//=> {"first":"two","rest":{"first":"three","rest":{"first":{},"rest":{}}}}_ This is remarkably unsafe. If we _know_ that a list doesn’t share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunch of bookkeeping to track references? We’ll end up reinventing reference counting and garbage collection.
-
-## **a few utilities**
-
-before we go any further, let’s write a few naïve list utilities so that we can work at a slightly higher level of abstraction: _(javascriptallonge.pdf (source-range-83ecb080-00189))_
-
-### Functional Iterators
-
-- Composing and Decomposing Data
-
-146
-
-## **iterating**
-
-Folding is a universal operation, and with care we can accomplish any task with folds that could be accomplished with that stalwart of structured programming, the for loop. Nevertheless, there is some value in being able to express some algorithms as iteration.
-
-JavaScript has a particularly low-level version of for loop that mimics the semantics of the C language. Summing the elements of an array can be accomplished with: **const** arraySum = (array) => { **let** sum = 0; **for** ( **let** i = 0; i < array.length; ++i) { sum += array[i]; } **return** sum } arraySum([1, 4, 9, 16, 25]) _//=> 55_
-
-Once again, we’re mixing the code for iterating over an array with the code for calculating a sum. And worst of all, we’re getting really low-level with details like knowing that the elements of an array are indexed with consecutive integers that begin with 0.
-
-We can write this a slightly different way, using a while loop: **const** arraySum = (array) => { **let** done, sum = 0, i = 0; **while** ((done = i == array.length, !done)) { **const** value = array[i++]; sum += value; } **return** sum } arraySum([1, 4, 9, 16, 25]) _//=> 55_
-
-Notice that buried inside our loop, we have bound the names done and value. We can put those into a POJO (a Plain Old JavaScript Object). It’ll be a little awkward, but we’ll be patient: _(javascriptallonge.pdf (source-range-83ecb080-00201))_
+- Once again, we're mixing the code for iterating over an array with the code for calculating a sum. And worst of all, we're getting really low-level with details like knowing that the elements of an array are indexed with consecutive integers that begin with 0 . _(javascriptallonge.pdf (source-range-31a4cf47-01288))_
 
 ### Iteration and Iterables
 
-- Served by the Pot: Collections
+- All of these actions involve going through the contents one by one. Acting on the elements of a collection one at a time is called iterating over the contents , and JavaScript has a standard way to iterate over the contents of collections. _(javascriptallonge.pdf (source-range-31a4cf47-01530))_
 
-183
+### iterator objects
 
-## **Iteration and Iterables**
+- Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object with a .next() method. _(javascriptallonge.pdf (source-range-31a4cf47-01548))_
 
-**==> picture [469 x 313] intentionally omitted <==**
+### iterables
 
-**Coffee Labels at the Saltspring Coffee Processing Facility**
+- One caveat of spreading iterables: JavaScript creates an array out of the elements of the iterable. That might be very wasteful for extremely large collections. For example, if we spread a large collection just to find an element in the collection, it might have been wiser to iterate over the element using its iterator directly. _(javascriptallonge.pdf (source-range-31a4cf47-01570))_
 
-Many objects in JavaScript can model collections of things. A collection is like a box containing stuff. Sometimes you just want to move the box around. But sometimes you want to open it up and do things with its contents.
+### operations on ordered collections
 
-Things like “put a label on every bag of coffee in this box,” Or, “Open the box, take out the bags of decaf, and make a new box with just the decaf.” Or, “go through the bags in this box, and take out the first one marked ‘Espresso’ that contains at least 454 grams of beans.” All of these actions involve going through the contents one by one. Acting on the elements of a collection one at a time is called _iterating over the contents_ , and JavaScript has a standard way to iterate over the contents of collections.
+- For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest] : _(javascriptallonge.pdf (source-range-31a4cf47-01607))_
 
-## **a look back at functional iterators**
+### recursive iterators
 
-When discussing functions, we looked at the benefits of writing Functional Iterators. We can do the same thing for objects. Here’s a stack that has its own functional iterator method: _(javascriptallonge.pdf (source-range-83ecb080-00247))_
+- For example, iterating over a tree. Given an array that might contain arrays, let's say we want to generate all the 'leaf' elements, i.e. elements that are not, themselves, iterable. _(javascriptallonge.pdf (source-range-31a4cf47-01638))_
 
-- 187
+### state machines
 
-Served by the Pot: Collections
+- The first element of the fibonacci sequence is zero. _(javascriptallonge.pdf (source-range-31a4cf47-01647))_
 
-Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object with a .next() method. Like this: **const** Stack2 = () => ({ array: [], index: -1, push (value) { **return this** .array[ **this** .index += 1] = value; }, pop () { **const** value = **this** .array[ **this** .index]; **this** .array[ **this** .index] = **undefined** ; **if** ( **this** .index >= 0) { **this** .index -= 1 } **return** value }, isEmpty () { **return this** .index < 0 }, iterator () { **let** iterationIndex = **this** .index; **return** { next () { **if** (iterationIndex > **this** .index) { iterationIndex = **this** .index; } **if** (iterationIndex < 0) { **return** {done: **true** }; } **else** { **return** {done: **false** , value: **this** .array[iterationIndex--]} } } } } }); _(javascriptallonge.pdf (source-range-83ecb080-00251))_
+- The second element of the fibonacci sequence is one. _(javascriptallonge.pdf (source-range-31a4cf47-01648))_
 
-- 192
+- Every subsequent element of the fibonacci sequence is the sum of the previous two elements. _(javascriptallonge.pdf (source-range-31a4cf47-01649))_
 
-Served by the Pot: Collections As we can see, we can use for...of with linked lists just as easily as with stacks. And there’s one more thing: You recall that the spread operator (...) can spread the elements of an array in an array literal or as parameters in a function invocation.
+### yielding iterables
 
-Now is the time to note that we can spread any iterable. So we can spread the elements of an iterable into an array literal:
+- Wetake advantage of the for...of loop in a plain and direct way: For each element e , if it is iterable, treat it as a tree and iterate over it, yielding each of its elements. If e is not an iterable, yield e . _(javascriptallonge.pdf (source-range-31a4cf47-01735))_
 
-- ['some squares', ...someSquares] _//=> ["some squares", 1, 4, 9, 16, 25]_ And we can also spread the elements of an array literal into parameters: **const** firstAndSecondElement = (first, second) => ({first, second}) firstAndSecondElement(...stack) _//=> {"first":5,"second":10}_ This can be extremely useful.
+### lazy collection operations
 
-One caveat of spreading iterables: JavaScript creates an array out of the elements of the iterable. That might be very wasteful for extremely large collections. For example, if we spread a large collection just to find an element in the collection, it might have been wiser to iterate over the element using its iterator directly.
+- Finally, we take the first element of that filtered, squared iterable and now JavaScript actually iterates over the stack's elements, and it only needs to square two of those elements, 29 and 28 , to return the answer. _(javascriptallonge.pdf (source-range-31a4cf47-01793))_
 
-And if we have an infinite collection, spreading is going to fail outright as we’re about to see.
 
-## **iterables out to infinity**
+## Technical atoms
 
-Iterables needn’t represent finite collections: **const** Numbers = { [Symbol.iterator] () { **let** n = 0; **return** { next: () => ({done: **false** , value: n++}) } } } There are useful things we can do with iterables representing an infinitely large collection. But let’s point out what we can’t do with them: _(javascriptallonge.pdf (source-range-83ecb080-00256))_
+### Technical frame 1: element references
 
-- 198
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00836))_
 
-Served by the Pot: Collections
+> As we can see, JavaScript Arrays are zero-based 56 .
 
-Like mapWith, they preserve the ordered collection semantics of whatever you give them.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00835))_
 
-And here’s a computation performed using operations on ordered collections: We’ll create an ordered collection of square numbers that end in one and are less than 1,000: **const** Squares = mapWith((x) => x * x, Numbers); **const** EndWithOne = filterWith((x) => x % 10 === 1, Squares); **const** UpTo1000 = untilWith((x) => (x > 1000), EndWithOne);
+```
+const oneTwoThree = ["one", "two", "three"]; oneTwoThree[0] //=> 'one' oneTwoThree[1] //=> 'two' oneTwoThree[2] //=> 'three'
+```
 
-[...UpTo1000] _//=>_ [1,81,121,361,441,841,961] [...UpTo1000] _//=>_ [1,81,121,361,441,841,961] As we expect from an ordered collection, each time we iterate over UpTo1000, we begin at the beginning.
+### Technical frame 2: Self-Similarity
 
-For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest]: **const** first = (iterable) => iterable[Symbol.iterator]().next().value; **const** rest = (iterable) => ({ [Symbol.iterator] () { **const** iterator = iterable[Symbol.iterator](); iterator.next(); **return** iterator; } }); like our other operations, rest preserves the ordered collection semantics of its argument.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00892))_
 
-## **from**
+> Thanks to the parallel between array literals + spreads with destructuring + rests, we can also use the same rules to decompose lists:
 
-Having iterated over a collection, are we limited to for..do and/or gathering the elements in an array literal and/or gathering the elements into the parameters of a function? No, of course not, we can do anything we like with them. _(javascriptallonge.pdf (source-range-83ecb080-00262))_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00891))_
 
-### Generating Iterables
+```
+[] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"]
+```
 
-- 203
+### Technical frame 3: Garbage, Garbage Everywhere
 
-Served by the Pot: Collections
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01041))_
 
-They’re of approximately equal complexity. So why bring up generation? Well, there are some collections that are much easier to generate than to iterate over. Let’s look at one:
+> This is a Linked List 68 , it's just that those early Lispers used the names car and cdr after the hardware instructions, whereas today we use words like data and reference . But it works the same way: If we want the head of a list, we call car on it:
 
-## **recursive iterators**
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01035))_
 
-Iterators maintain state, that’s what they do. Generators have to manage the exact same amount of state, but sometimes, it’s much easier to manage that state in a generator. One of those cases is when we have to recursively enumerate something.
+```
+const cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d;
+```
 
-For example, iterating over a tree. Given an array that might contain arrays, let’s say we want to generate all the “leaf” elements, i.e. elements that are not, themselves, iterable.
+### Technical frame 4: Garbage, Garbage Everywhere
 
-_// Generation_ **const** isIterable = (something) => !!something[Symbol.iterator]; **const** generate = (iterable) => { **for** ( **let** element **of** iterable) { **if** (isIterable(element)) { generate(element) } **else** { console.log(element) } } } generate([1, [2, [3, 4], 5]]) _//=>_ 1 2 3 4 5
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01046))_
 
-Very simple. Now for the iteration version. We’ll write a functional iterator to keep things simple, but it’s easy to see the shape of the basic problem: _(javascriptallonge.pdf (source-range-83ecb080-00268))_
+> Again, it's just extracting a reference from a cons cell, it's very fast. In Lisp, it's blazingly fast because it happens in hardware. There's no making copies of arrays, the time to cdr a list with five elements is the same as the time to cdr a list with 5,000 elements, and no temporary arrays are needed. In JavaScript, it's still much, much, much faster to get all the elements except the head from a linked list than from an array. Getting one reference to a structure that already exists is fas
 
-- Served by the Pot: Collections
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01045))_
 
-205
+```
+cdr(oneToFive) //=> [2,[3,[4,[5,null]]]]
+```
 
-A less kind way to put it is that the iteration version is greenspunning something built into our programming language: We’re reinventing the use of a stack to manage recursion, because writing our code to respond to a function call makes us turn a simple recursive algorithm inside-out.
+### Technical frame 5: so why arrays
 
-## **state machines**
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01056))_
 
-Some iterables can be modelled as state machines. Let’s revisit the Fibonacci sequence. Again. One way to define it is:
+> Arrays avoid this problem by pessimistically copying all the references whenever we extract an element or sequence of elements from them (We'll see this explained later in Mutation).
 
-- The first element of the fibonacci sequence is zero.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01055))_
 
-- The second element of the fibonacci sequence is one.
+> We have avoided discussing rebinding and mutating values, but if we want to change elements of our lists, the naïve linked list implementation suffers as well: When we take the cdr of a linked list, we are sharing the elements.
 
-- Every subsequent element of the fibonacci sequence is the sum of the previous two elements.
+### Technical frame 6: Copy on Write
 
-Let’s write a generator:
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01232))_
 
-_// Generation_ **const** fibonacci = () => { **let** a, b; console.log(a = 0); console.log(b = 1); **while** ( **true** ) { [a, b] = [b, a + b]; console.log(b); } } fibonacci() _//=>_
+> This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunch of bookkeeping to track references? We'll end up reinventing reference counting and garbage collection.
 
-0 1 1 2
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01228))_
 
-3 5 8 13
+> The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array.
 
-21
+### Technical frame 7: Copy on Write
 
-34 _(javascriptallonge.pdf (source-range-83ecb080-00270))_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01232))_
 
-- 218
+> This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunch of bookkeeping to track references? We'll end up reinventing reference counting and garbage collection.
 
-Served by the Pot: Collections **function** * tree (iterable) { **for** ( **const** e **of** iterable) { **if** (isIterable(e)) { **for** ( **const** ee **of** tree(e)) { **yield** ee; } } **else** { **yield** e; } } }; **for** ( **const** i **of** tree([1, [2, [3, 4], 5]])) { console.log(i); } _//=>_ 1 2 3 4 5
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01229))_
 
-We take advantage of the for...of loop in a plain and direct way: For each element e, if it is iterable, treat it as a tree and iterate over it, yielding each of its elements. If e is not an iterable, yield e.
+> Whereas if you have a linked list, and you take it's 'rest,' your 'child' list shares its nodes with the 'parent' list.
 
-JavaScript handles the recursion for us using its own execution stack. This is clearly simpler than trying to maintain our own stack and remembering whether we are shifting and unshifting, or pushing and popping.
+### Technical frame 8: iterating
 
-But while we’re here, let’s look at one bit of this code: **for** ( **const** ee **of** tree(e)) { **yield** ee; } These three lines say, in essence, “yield all the elements of TreeIterable(e), in order.” This comes up quite often when we have collections that are compounds, collections made from other collections. Consider this operation on iterables: _(javascriptallonge.pdf (source-range-83ecb080-00281))_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01288))_
 
-### Lazy and Eager Collections
+> Once again, we're mixing the code for iterating over an array with the code for calculating a sum. And worst of all, we're getting really low-level with details like knowing that the elements of an array are indexed with consecutive integers that begin with 0 .
 
-- Served by the Pot: Collections
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01287))_
 
-231
+```
+const arraySum = (array) => { let sum = 0; for ( let i = 0; i < array.length; ++i) { sum += array[i]; } return sum } arraySum([1, 4, 9, 16, 25]) //=> 55
+```
 
-Stack.from([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]) .map((x) => x * x) .filter((x) => x % 2 == 0) .first() This expression begins with a stack containing 30 elements. The top two are 29 and 28. It maps to the squares of all 30 numbers, but our code for mapping an iteration returns an iterable that can iterate over the squares of our numbers, not an array or stack of the squares. Same with .filter, we get an iterable that can iterate over the even squares, but not an actual stack or array.
+### Technical frame 9: iterables
 
-Finally, we take the first element of that filtered, squared iterable and now JavaScript actually iterates over the stack’s elements, and it only needs to square two of those elements, 29 and 28, to return the answer.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01570))_
 
-We can confirm this:
+> One caveat of spreading iterables: JavaScript creates an array out of the elements of the iterable. That might be very wasteful for extremely large collections. For example, if we spread a large collection just to find an element in the collection, it might have been wiser to iterate over the element using its iterator directly.
 
-Stack.from([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]) .map((x) => { console.log(`squaring **${** x **}** `); **return** x * x }) .filter((x) => { console.log(`filtering **${** x **}** `); **return** x % 2 == 0 }) .first() _//=>_ squaring 29 filtering 841 squaring 28 filtering 784 784
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01566))_
 
-If we write the almost identical thing with an array, we get a different behaviour: _(javascriptallonge.pdf (source-range-83ecb080-00295))_
+```
+['some squares', ...someSquares] //=> ["some squares", 1, 4, 9, 16, 25]
+```
+
+### Technical frame 10: iterables
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01570))_
+
+> One caveat of spreading iterables: JavaScript creates an array out of the elements of the iterable. That might be very wasteful for extremely large collections. For example, if we spread a large collection just to find an element in the collection, it might have been wiser to iterate over the element using its iterator directly.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01568))_
+
+```
+const firstAndSecondElement = (first, second) => ({first, second}) firstAndSecondElement(...stack) //=> {"first":5,"second":10}
+```
+
+### Technical frame 11: operations on ordered collections
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01609))_
+
+> like our other operations, rest preserves the ordered collection semantics of its argument.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01608))_
+
+```
+const first = (iterable) => iterable[Symbol.iterator]().next().value; const rest = (iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator](); iterator.next(); return iterator; } });
+```
+
+### Technical frame 12: recursive iterators
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01638))_
+
+> For example, iterating over a tree. Given an array that might contain arrays, let's say we want to generate all the 'leaf' elements, i.e. elements that are not, themselves, iterable.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01639))_
+
+```
+// Generation const isIterable = (something) => !!something[Symbol.iterator]; const generate = (iterable) => { for ( let element of iterable) { if (isIterable(element)) { generate(element) } else { console.log(element) } } } generate([1, [2, [3, 4], 5]]) //=> 1 2 3 4 5
+```
+
+### Technical frame 13: yielding iterables
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01747))_
+
+> yield* is handy when writing generator functions that operate on or create iterables.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01740))_
+
+```
+function * append (...iterables) { for ( const iterable of iterables) { for ( const element of iterable) { yield element; } } } const lyrics = append(["a", "b", "c"], ["one", "two", "three"], ["do", "re", "me\ "]); for ( const word of lyrics) { console.log(word); } //=> a b c one two three do re me
+```
+
+### Technical frame 14: yielding iterables
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01747))_
+
+> yield* is handy when writing generator functions that operate on or create iterables.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01743))_
+
+```
+function * append (...iterables) { for ( const iterable of iterables) { yield * iterable; } } const lyrics = append(["a", "b", "c"], ["one", "two", "three"], ["do", "re", "me\ "]); for ( const word of lyrics) { console.log(word); }
+```
+
+### Technical frame 15: yielding iterables
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01747))_
+
+> yield* is handy when writing generator functions that operate on or create iterables.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01744))_
+
+```
+//=> a b c one two do re
+```
+
+### Technical frame 16: yielding iterables
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01747))_
+
+> yield* is handy when writing generator functions that operate on or create iterables.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01745))_
+
+```
+const isIterable = (something) => !!something[Symbol.iterator]; function * tree (iterable) { for ( const e of iterable) { if (isIterable(e)) { yield * tree(e); } else { yield e; } } }; for ( const i of console.log(i); } //=> 1 2 3 4 5
+```
+
+### Technical frame 17: lazy collection operations
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01792))_
+
+> This expression begins with a stack containing 30 elements. The top two are 29 and 28 . It maps to the squares of all 30 numbers, but our code for mapping an iteration returns an iterable that can iterate over the squares of our numbers, not an array or stack of the squares. Same with .filter , we get an iterable that can iterate over the even squares, but not an actual stack or array.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01791))_
+
+```
+Stack.from([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]) .map((x) => x * x) .filter((x) => x % 2 == 0) .first()
+```
 
 
 ## Related pages
 
-- [[javascriptallonge-sequence]] - shared statements: Sequence shares source evidence from Garbage, Garbage Everywhere: Composing and Decomposing Data  108  ## **so why arrays**  If [first, ...rest] is so slow, why does JavaScript use arrays instead of making everything a linked list? ... [truncated] (4 shared statement(s))
-- [[javascriptallonge-collection]] - shared statements: Collection shares source evidence from Iteration and Iterables: Served by the Pot: Collections  183  ## **Iteration and Iterables**  **==> picture [469 x 313] intentionally omitted <==**  **Coffee Labels at the Saltspring Coffee ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-copy]] - shared statements: Copy shares source evidence from Garbage, Garbage Everywhere: Composing and Decomposing Data  104  Worse, the JavaScript Engine actually copies the elements from prepend into the new array one at a time. That is very laborious. ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-list]] - shared statements: List shares source evidence from Garbage, Garbage Everywhere: Composing and Decomposing Data  107 **const** node5 = [5, **null** ], node4 = [4, node5], node3 = [3, node4], node2 = [2, node3], node1 = [1, node2]; **const** oneTo ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-array]] - shared statements: Array shares source evidence from Arrays and Destructuring Arguments: Composing and Decomposing Data  79 **const** wrap = (something) => [something]; wrap("lunch") _//=> ["lunch"]_ Array literals are expressions, and arrays are _refere ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-function]] - shared statements: Function shares source evidence from Iteration and Iterables: 187  Served by the Pot: Collections  Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get t ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-instead]] - shared statements: Instead shares source evidence from Iteration and Iterables: 187  Served by the Pot: Collections  Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get t ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-iterable]] - shared statements: Iterable shares source evidence from Iteration and Iterables: 198  Served by the Pot: Collections  Like mapWith, they preserve the ordered collection semantics of whatever you give them.  And here’s a computation performed usin ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-javascript]] - shared statements: Javascript shares source evidence from Garbage, Garbage Everywhere: Composing and Decomposing Data  107 **const** node5 = [5, **null** ], node4 = [4, node5], node3 = [3, node4], node2 = [2, node3], node1 = [1, node2]; **const** oneTo ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-knowing]] - shared statements: Knowing shares source evidence from Functional Iterators: Composing and Decomposing Data  146  ## **iterating**  Folding is a universal operation, and with care we can accomplish any task with folds that could be accomplish ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-mapwith]] - shared statements: Mapwith shares source evidence from Garbage, Garbage Everywhere: Composing and Decomposing Data  104  Worse, the JavaScript Engine actually copies the elements from prepend into the new array one at a time. That is very laborious. ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-problem]] - shared statements: Problem shares source evidence from Garbage, Garbage Everywhere: Composing and Decomposing Data  108  ## **so why arrays**  If [first, ...rest] is so slow, why does JavaScript use arrays instead of making everything a linked list? ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-reference]] - shared statements: Reference shares source evidence from Garbage, Garbage Everywhere: Composing and Decomposing Data  108  ## **so why arrays**  If [first, ...rest] is so slow, why does JavaScript use arrays instead of making everything a linked list? ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-return]] - shared statements: Return shares source evidence from Iteration and Iterables: 198  Served by the Pot: Collections  Like mapWith, they preserve the ordered collection semantics of whatever you give them.  And here’s a computation performed usin ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-second]] - shared statements: Second shares source evidence from Generating Iterables: Served by the Pot: Collections  205  A less kind way to put it is that the iteration version is greenspunning something built into our programming language: We’re re ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-whenever]] - shared statements: Whenever shares source evidence from Garbage, Garbage Everywhere: Composing and Decomposing Data  108  ## **so why arrays**  If [first, ...rest] is so slow, why does JavaScript use arrays instead of making everything a linked list? ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-array]] - shared statements and technical atoms: Array shares source evidence from element references: Array elements can be extracted using [ and ] as postfix operators. We pass an integer as an index of the element to extract:; Array shares technical record from element references: const oneTwoThree = ["one", "two", "three"]; oneTwoThree[0] //=> 'one' oneTwoThree[1] //=> 'two' oneTwoThree[2] //=> 'three' (6 shared statement(s), 6 shared atom(s))
+- [[javascriptallonge-list]] - shared statements and technical atoms: List shares source evidence from Self-Similarity: Let's convert our rules to array literals. The first rule is simple: [] is a list. How about the second rule? We can express that using a spread. Given an element e ... [truncated]; List shares technical record from Self-Similarity: [] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"] (3 shared statement(s), 5 shared atom(s))
+- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from Garbage, Garbage Everywhere: Here's the scheme in JavaScript, using two-element arrays to represent cons cells:; Javascript shares technical record from Garbage, Garbage Everywhere: const cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d; (2 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-copy-write]] - shared statements and technical atoms: Copy on Write shares source evidence from Copy on Write: This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunc ... [truncated]; Copy on Write shares technical record from Copy on Write: The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array. (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-return]] - shared statements and technical atoms: Return shares source evidence from operations on ordered collections: For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that itera ... [truncated]; Return shares technical record from operations on ordered collections: const first = (iterable) => iterable[Symbol.iterator]().next().value; const rest = (iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator] ... [truncated] (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-copy]] - shared statements and technical atoms: Copy shares source evidence from Garbage, Garbage Everywhere: The array we had in prepend is no longer used. In GC environments, it is marked as no longer being used, and eventually the garbage collector recycles the memory it ... [truncated]; Copy shares technical record from Garbage, Garbage Everywhere: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (2 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-reference]] - shared statements and technical atoms: Reference shares source evidence from so why arrays: Arrays avoid this problem by pessimistically copying all the references whenever we extract an element or sequence of elements from them (We'll see this explained la ... [truncated]; Reference shares technical record from Garbage, Garbage Everywhere: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-rest]] - shared technical atoms: Rest shares technical record from Garbage, Garbage Everywhere: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (4 shared atom(s))
+- [[javascriptallonge-literal]] - shared technical atoms: Literal shares technical record from Self-Similarity: [] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"] (1 shared atom(s))
+- [[javascriptallonge-note]] - shared technical atoms: Note shares technical record from iterables: ['some squares', ...someSquares] //=> ["some squares", 1, 4, 9, 16, 25] (1 shared atom(s))
+- [[javascriptallonge-rule]] - shared technical atoms: Rule shares technical record from Self-Similarity: [] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"] (1 shared atom(s))
+- [[javascriptallonge-collection]] - shared statements: Collection shares source evidence from Iteration and Iterables: All of these actions involve going through the contents one by one. Acting on the elements of a collection one at a time is called iterating over the contents , and ... [truncated] (2 shared statement(s))
+- [[javascriptallonge-problem]] - shared statements: Problem shares source evidence from linear recursion: Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and com ... [truncated] (2 shared statement(s))
+- [[javascriptallonge-directly]] - shared statements: Directly shares source evidence from linear recursion: Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and com ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-function]] - shared statements: Function shares source evidence from iterator objects: Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object w ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-important]] - shared statements: Important shares source evidence from linear recursion: Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and com ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-instead]] - shared statements: Instead shares source evidence from iterator objects: Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object w ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-mapwith]] - shared statements: Mapwith shares source evidence from Garbage, Garbage Everywhere: The array we had in prepend is no longer used. In GC environments, it is marked as no longer being used, and eventually the garbage collector recycles the memory it ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-second]] - shared statements: Second shares source evidence from state machines: The second element of the fibonacci sequence is one. (1 shared statement(s))
 
 ## Source
 

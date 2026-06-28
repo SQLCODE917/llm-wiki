@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-needn
 page_kind: concept
-summary: Needn: 5 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
+summary: Needn: 4 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-needn@5b2029bb718ffd64deef09f386b7e6d7
+projection_coverage: topic-javascriptallonge-needn@7fe7d3c0b7b244b9009183660948cdeb
 ---
 
 # Needn
@@ -17,95 +17,81 @@ What [[javascriptallonge]] covers about needn:
 
 ### Building Blocks
 
-- The first sip: Basic Functions
-
-48
-
-## **Building Blocks**
-
-When you look at functions within functions in JavaScript, there’s a bit of a “spaghetti code” look to it. The strength of JavaScript is that you can do anything. The weakness is that you will. There are ifs, fors, returns, everything thrown higgledy piggledy together. Although you needn’t restrict yourself to a small number of simple patterns, it can be helpful to understand the patterns so that you can structure your code around some basic building blocks.
-
-## **composition**
-
-: One of the most basic of these building blocks is _composition_ **const** cookAndEat = (food) => eat(cook(food));
-
-It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators: **const** compose = (a, b) => (c) => a(b(c)); **const** cookAndEat = compose(eat, cook);
-
-If that was all there was to it, composition wouldn’t matter much. But like many patterns, using it when it applies is only 20% of the benefit. The other 80% comes from organizing your code such that you can use it: Writing functions that can be composed in various ways.
-
-In the recipes, we’ll look at a decorator called once: It ensures that a function can only be executed once. Thereafter, it does nothing. Once is useful for ensuring that certain side effects are not repeated. We’ll also look at maybe: It ensures that a function does nothing if it is given nothing (like null or undefined) as an argument.
-
-Of course, you needn’t use combinators to implement either of these ideas, you can use if statements. But once and maybe compose, so you can chain them together as you see fit:
-
-- **const** actuallyTransfer= (from, to, amount) => _// do something_ **const** invokeTransfer = once(maybe(actuallyTransfer(...))); _(javascriptallonge.pdf (source-range-83ecb080-00086))_
+- When you look at functions within functions in JavaScript, there's a bit of a 'spaghetti code' look to it. The strength of JavaScript is that you can do anything. The weakness is that you will. There are ifs, fors, returns, everything thrown higgledy piggledy together. Although you needn't restrict yourself to a small number of simple patterns, it can be helpful to understand the patterns so that you can structure your code around some basic building blocks. _(javascriptallonge.pdf (source-range-31a4cf47-00581))_
 
 ### Garbage, Garbage Everywhere
 
-- Composing and Decomposing Data
+- 64 It needn't always be so: Programmers have developed specialized data structures that make operations like this cheap, often by arranging for structures to share common elements by default, and only making copies when changes are made. But this is not how JavaScript's built-in arrays work. _(javascriptallonge.pdf (source-range-31a4cf47-01026))_
 
-104
+### literal object syntax
 
-Worse, the JavaScript Engine actually copies the elements from prepend into the new array one at a time. That is very laborious.[64] The array we had in prepend is no longer used. In GC environments, it is marked as no longer being used, and eventually the garbage collector recycles the memory it is using. Lather, rinse, repeat: Ever time we call mapWith, we’re creating a new array, copying all the elements from prepend into the new array, and then we no longer use prepend.
+- Names needn't be alphanumeric strings. For anything else, enclose the label in quotes: _(javascriptallonge.pdf (source-range-31a4cf47-01078))_
 
-We may not be creating 3,000 stack frames, but we are creating three thousand new arrays and copying elements into each and every one of them. Although the maximum amount of memory does not grow, the thrashing as we create short-lived arrays is very bad, and we do a lot of work copying elements from one array to another.
+### ordered collections
 
-**Key Point** : Our [first, ...rest] approach to recursion is slow because that it creates a lot of temporary arrays, and it spends an enormous amount of time copying elements into arrays that end up being discarded.
+- Iterables needn't represent ordered collections. We could make an infinite iterable representing random numbers: _(javascriptallonge.pdf (source-range-31a4cf47-01582))_
 
-So here’s a question: If this is such a slow approach, why do some examples of “functional” algorithms work this exact way?
 
-> 64It needn’t always be so: Programmers have developed specialized data structures that make operations like this cheap, often by arranging for structures to share common elements by default, and only making copies when changes are made. But this is not how JavaScript’s built-in arrays work. _(javascriptallonge.pdf (source-range-83ecb080-00153))_
+## Technical atoms
 
-### Plain Old JavaScript Objects
+### Technical frame 1: literal object syntax
 
-- Composing and Decomposing Data
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01080))_
 
-110
+> If the name is an alphanumeric string conforming to the same rules as names of variables, there's a simplified syntax for accessing the values:
 
-## **literal object syntax**
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01079))_
 
-JavaScript has a literal syntax for creating objects. This object maps values to the keys year, month, and day:
+```
+{ 'first name': 'reginald', 'last name': 'lewis' }['first name'] //=> 'reginald'
+```
 
-- { year: 2012, month: 6, day: 14 } Two objects created with separate evaluations have differing identities, just like arrays:
+### Technical frame 2: ordered collections
 
-- { year: 2012, month: 6, day: 14 } === { year: 2012, month: 6, day: 14 } _//=> false_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01584))_
 
-Objects use [] to access the values by name, using a string:
+> Whether you work with the same iterator over and over, or get a fresh iterable every time, you are always going to get fresh random numbers. Therefore, RandomNumbers is not an ordered collection.
 
-- { year: 2012, month: 6, day: 14 }['day'] _//=> 14_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01583))_
 
-Values contained within an object work just like values contained within an array, we access them by reference to the original: **const** unique = () => [], - x = unique(), - y = unique(), - z = unique(), o = { a: x, b: y, c: z };
+```
+const RandomNumbers = { [Symbol.iterator]: () => ({ next () { return {value: Math.random()}; } }) } for ( const i of RandomNumbers) { console.log(i) } //=> 0.494052127469331 0.835459444206208 0.1408337657339871 ... for ( const i of RandomNumbers) { console.log(i) } //=> 0.7845381607767195 0.4956772483419627 0.20259276474826038 ...
+```
 
-- o['a'] === x && o['b'] === y && o['c'] === z _//=> true_
+### Technical atom 3
 
-Names needn’t be alphanumeric strings. For anything else, enclose the label in quotes:
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00114))_
 
-- { 'first name': 'reginald', 'last name': 'lewis' }['first name'] _//=> 'reginald'_
+> Let's try this as well with something else the computer understands easily:
 
-If the name is an alphanumeric string conforming to the same rules as names of variables, there’s a simplified syntax for accessing the values: _(javascriptallonge.pdf (source-range-83ecb080-00160))_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00116))_
 
-### Iteration and Iterables
+| entry | content |
+| --- | --- |
+| 10 | Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' and so does the computer. |
+| 11 | In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values. |
 
-- 193
+<details>
+<summary>Raw table text</summary>
 
-Served by the Pot: Collections ['all the numbers', ...Numbers] _//=> infinite loop!_
+```
+10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' and so does the computer.
+11 In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values.
+```
 
-firstAndSecondElement(...Numbers) _//=> infinite loop!_
-
-Attempting to spread an infinite iterable into an array is always going to fail.
-
-## **ordered collections**
-
-The iterables we’re discussing represent _ordered collections_ . One of the semantic properties of an ordered collection is that every time you iterate over it, you get its elements in order, from the beginning. For example: **const** abc = ["a", "b", "c"]; **for** ( **const** i **of** abc) { console.log(i) } _//=>_ a b c **for** ( **const** i **of** abc) { console.log(i) } _//=>_ a b c
-
-This is accomplished with our own collections by returning a brand new iterator every time we call [Symbol.iterator], and ensuring that our iterators start at the beginning and work forward. Iterables needn’t represent ordered collections. We could make an infinite iterable representing random numbers: _(javascriptallonge.pdf (source-range-83ecb080-00257))_
+</details>
 
 
 ## Related pages
 
-- [[javascriptallonge-alway]] - shared statements: Alway shares source evidence from Garbage, Garbage Everywhere: Composing and Decomposing Data  104  Worse, the JavaScript Engine actually copies the elements from prepend into the new array one at a time. That is very laborious. ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-iterable]] - shared statements: Iterable shares source evidence from Iteration and Iterables: 193  Served by the Pot: Collections ['all the numbers', ...Numbers] _//=> infinite loop!_  firstAndSecondElement(...Numbers) _//=> infinite loop!_  Attempting to spr ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-pattern]] - shared statements: Pattern shares source evidence from Building Blocks: The first sip: Basic Functions  48  ## **Building Blocks**  When you look at functions within functions in JavaScript, there’s a bit of a “spaghetti code” look to it ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-rest]] - shared statements: Rest shares source evidence from Building Blocks: The first sip: Basic Functions  48  ## **Building Blocks**  When you look at functions within functions in JavaScript, there’s a bit of a “spaghetti code” look to it ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-expression]] - shared technical atoms: Expression shares technical table: 10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-iterator]] - shared technical atoms: Iterator shares technical record from ordered collections: const RandomNumbers = { [Symbol.iterator]: () => ({ next () { return {value: Math.random()}; } }) } for ( const i of RandomNumbers) { console.log(i) } //=> 0.4940521 ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical table: 10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-language]] - shared technical atoms: Language shares technical table: 10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-value]] - shared technical atoms: Value shares technical table: 10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-alway]] - shared statements: Alway shares source evidence from Garbage, Garbage Everywhere: 64 It needn't always be so: Programmers have developed specialized data structures that make operations like this cheap, often by arranging for structures to share c ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-pattern]] - shared statements: Pattern shares source evidence from Building Blocks: When you look at functions within functions in JavaScript, there's a bit of a 'spaghetti code' look to it. The strength of JavaScript is that you can do anything. Th ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-rest]] - shared statements: Rest shares source evidence from Building Blocks: When you look at functions within functions in JavaScript, there's a bit of a 'spaghetti code' look to it. The strength of JavaScript is that you can do anything. Th ... [truncated] (1 shared statement(s))
 
 ## Source
 

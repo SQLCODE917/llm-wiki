@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-value
 page_kind: concept
-summary: Value: 20 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
+summary: Value: 28 statement(s) and 28 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-value@0dc8adff7cccfef2e264a907624decbc
+projection_coverage: topic-javascriptallonge-value@3a6c4250c357feea4eb20cb03b9593b4
 ---
 
 # Value
@@ -17,335 +17,490 @@ What [[javascriptallonge]] covers about value:
 
 ### values are expressions
 
-- xiv
+- All values are expressions. Say you hand the barista a café Cubano. Yup, you hand over a cup with some coffee infused through partially caramelized sugar. You say, 'I want one of these.' The barista is no fool, she gives it straight back to you, and you get exactly what you want. Thus, a café Cubano is an expression (you can use it to place an order) and a value (you get it back from the barista). _(javascriptallonge.pdf (source-range-31a4cf47-00105))_
 
-Prelude: Values and Expressions over Coffee
-
-## **values are expressions**
-
-All values are expressions. Say you hand the barista a café Cubano. Yup, you hand over a cup with some coffee infused through partially caramelized sugar. You say, “I want one of these.” The barista is no fool, she gives it straight back to you, and you get exactly what you want. Thus, a café Cubano is an expression (you can use it to place an order) and a value (you get it back from the barista).
-
-Let’s try this with something the computer understands easily:
-
-## 42
-
-Is this an expression? A value? Neither? Or both?
-
-The answer is, this is both an expression _and_ a value.[10] The way you can tell that it’s both is very easy: When you type it into JavaScript, you get the same thing back, just like our café Cubano:
-
-## 42
-
-_//=> 42_
-
-All values are expressions. That’s easy! Are there any other kinds of expressions? Sure! let’s go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let’s hand over some ground coffee plus some boiling water.
-
-Astute readers will realize we’re omitting something. Congratulations! Take a sip of espresso. We’ll get to that in a moment.
-
-Now the barista gives us back an espresso. And if we hand over the espresso, we get the espresso right back. So, boiling water plus ground coffee is an expression, but it isn’t a value.[11] Boiling water is a value. Ground coffee is a value. Espresso is a value. Boiling water plus ground coffee is an expression.
-
-Let’s try this as well with something else the computer understands easily:
-
-> "JavaScript" + " " + "Allonge"
-
-> _//=> "JavaScript Allonge"_
-
-> 10Technically, it’s a _representation_ of a value using Base10 notation, but we needn’t worry about that in this book. You and I both understand that this means “42,” and so does the computer.
-
-> 11In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values. _(javascriptallonge.pdf (source-range-83ecb080-00030))_
+- All values are expressions. That's easy! Are there any other kinds of expressions? Sure! let's go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let's hand over some ground coffee plus some boiling water. _(javascriptallonge.pdf (source-range-31a4cf47-00111))_
 
 ### values and identity
 
-- xvi
+- Second, sometimes, the cups are of the same type-perhaps two espresso cups-but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different 'content.' For example, the number 5 is not the same thing as the number 2 . _(javascriptallonge.pdf (source-range-31a4cf47-00124))_
 
-Prelude: Values and Expressions over Coffee
+### reference types
 
-## **values and identity**
+- They look the same, but if you examine them with === , you see that they are different. Every time you evaluate an expression (including typing something in) to create an array, you're creating a new, distinct value even if it appears to be the same as some other array value. As we'll see, this is true of many other kinds of values, including functions , the main subject of this book. _(javascriptallonge.pdf (source-range-31a4cf47-00141))_
 
-In JavaScript, we test whether two values are identical with the === operator, and whether they are not identical with the !== operator:
+### functions and identities
 
-2 === 2 _//=> true_ 'hello' !== 'goodbye' _//=> true_
+- You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same contents. Reference types do not. _(javascriptallonge.pdf (source-range-31a4cf47-00180))_
 
-How does === work, exactly? Imagine that you’re shown a cup of coffee. And then you’re shown another cup of coffee. Are the two cups “identical?” In JavaScript, there are four possibilities:
+### functions that return values and evaluate expressions
 
-First, sometimes, the cups are of different kinds. One is a demitasse, the other a mug. This corresponds to comparing two things in JavaScript that have different _types_ . For example, the string "2" is not the same thing as the number 2. Strings and numbers are different types, so strings and numbers are never identical:
+- In the prelude, we looked at expressions. Values like 0 are expressions, as are things like 40 + 2 . Can we put an expression to the right of the arrow? _(javascriptallonge.pdf (source-range-31a4cf47-00195))_
 
-2 === '2' _//=> false_ **true** !== 'true' _//=> true_
+### undefined
 
-Second, sometimes, the cups are of the same type–perhaps two espresso cups–but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different “content.” For example, the number 5 is not the same thing as the number 2.
+- In JavaScript, the absence of a value is written undefined , and it means there is no value. It will crop up again. undefined is its own type of value, and it acts like a value type: _(javascriptallonge.pdf (source-range-31a4cf47-00221))_
 
-**true** === **false** _//=> false_ 2 !== 5 _//=> true_ 'two' === 'five' _//=> false_
+### call by value
 
-What if the cups are of the same type _and_ the contents are the same? Well, JavaScript’s third and fourth possibilities cover that. _(javascriptallonge.pdf (source-range-83ecb080-00033))_
+- We'll see below that while JavaScript always calls by value, the notion of a 'value' has additional subtlety. But before we do, let's look at variables. _(javascriptallonge.pdf (source-range-31a4cf47-00299))_
 
-- xviii
+### variables and bindings
 
-Prelude: Values and Expressions over Coffee
+- The value '2' is bound to the name 'x' in the environment. _(javascriptallonge.pdf (source-range-31a4cf47-00317))_
 
-An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wild with things like:
+- The value of a variable when evaluated in an environment is the value bound to the variable's name in that environment, which is '2' _(javascriptallonge.pdf (source-range-31a4cf47-00319))_
 
-[2-1, 2, 2+1] [1, 1+1, 1+1+1] Notice that you are always generating arrays with the same contents. But are they identical the same way that every value of 42 is identical to every other value of 42? Try these for yourself:
+### call by sharing
 
-[2-1, 2, 2+1] === [1,2,3] [1,2,3] === [1, 2, 3] [1, 2, 3] === [1, 2, 3] How about that! When you type [1, 2, 3] or any of its variations, you are typing an expression that generates its own _unique_ array that is not identical to any other array, even if that other array also looks like [1, 2, 3]. It’s as if JavaScript is generating new cups of coffee with serial numbers on the bottom.
+- We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. Now we can elaborate: When JavaScript binds a value-type to a name, it makes a copy of the value and places the copy in the environment. As you recall, value types like strings and numbers are identical to each other if they have the same content. So JavaScript can make as many copies of strings, numbers, or booleans as it wishes. _(javascriptallonge.pdf (source-range-31a4cf47-00325))_
 
-They look the same, but if you examine them with ===, you see that they are different. Every time you evaluate an expression (including typing something in) to create an array, you’re creating a new, distinct value even if it _appears_ to be the same as some other array value. As we’ll see, this is true of many other kinds of values, including _functions_ , the main subject of this book. _(javascriptallonge.pdf (source-range-83ecb080-00035))_
+- Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, and when the value needs to be used, JavaScript uses the reference to obtain the original. _(javascriptallonge.pdf (source-range-31a4cf47-00327))_
 
-### As Little As Possible About Functions, But No Less
+### const and lexical scope
 
-- The first sip: Basic Functions
+- Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. _(javascriptallonge.pdf (source-range-31a4cf47-00465))_
 
-8
+### are consts also from a shadowy planet?
 
-I’d prefer something else, but I must accept that what gets typed back to us on the screen is arbitrary, and all that really counts is that it is somewhat useful for a human to read. But we must understand that whether we see [Function] or () => 0, internally JavaScript has a full and proper function.
+- We just saw that values bound with const use lexical scope, just like values bound with parameters. They are looked up in the environment where they are declared. And we know that functions create environments. Parameters are declared when we create functions, so it makes sense that parameters are bound to environments created when we invoke functions. _(javascriptallonge.pdf (source-range-31a4cf47-00467))_
 
-## **functions and identities**
+- We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different values to the same name, but one environment will be completely enclosed by the other. _(javascriptallonge.pdf (source-range-31a4cf47-00469))_
 
-You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same contents. Reference types do not.
+### false
 
-Which kind are functions? Let’s try them out and see. For reasons of appeasing the JavaScript parser, we’ll enclose our functions in parentheses: (() => 0) === (() => 0) _//=> false_
+- true and false are value types. All values of true are === all other values of true. We can see that is the case by looking at some operators we can perform on boolean values, ! , && , and || . To being with, ! is a unary prefix operator that negates its argument. So: _(javascriptallonge.pdf (source-range-31a4cf47-00759))_
 
-Like arrays, every time you evaluate an expression to produce a function, you get a new function that is not identical to any other function, even if you use the same expression to generate it. “Function” is a reference type.
+### truthiness and the ternary operator
 
-## **applying functions**
+- Every other value in JavaScript is 'truthy' except the aforementioned false , null , undefined , NaN , 0 , and '' . (Many other languages that have a notion of truthiness consider zero and the empty string to be truthy, not falsy, so beware of blindly transliterating code from one language to another!) _(javascriptallonge.pdf (source-range-31a4cf47-00766))_
 
-Let’s put functions to work. The way we use functions is to _apply_ them to zero or more values called _arguments_ . Just as 2 + 2 produces a value (in this case 4), applying a function to zero or more arguments produces a value as well.
+### truthiness and operators
 
-Here’s how we apply a function to some values in JavaScript: Let’s say that _fn_expr_ is an expression that when evaluated, produces a function. Let’s call the arguments _args_ . Here’s how to apply a function to some arguments:
+- In JavaScript, && and || aren't boolean logical operators in the logical sense. They don't operate strictly on logical values, and they don't commute: a || b is not always equal to b || a , and the same goes for && . _(javascriptallonge.pdf (source-range-31a4cf47-00790))_
 
-## _fn_expr_ ( _args_ )
+### destructuring is not pattern matching
 
-Right now, we only know about one such expression: () => 0, so let’s use it. We’ll put it in parentheses[17] to keep the parser happy, like we did above: (() => 0). Since we aren’t giving it any arguments, we’ll simply write () after the expression. So we write: (() => 0)() _//=> 0_
-
-> 17If you’re used to other programming languages, you’ve probably internalized the idea that sometimes parentheses are used to group operations in an expression like math, and sometimes to apply a function to arguments. If not… Welcome to the ALGOL family of programming languages! _(javascriptallonge.pdf (source-range-83ecb080-00045))_
-
-- The first sip: Basic Functions
-
-9
-
-## **functions that return values and evaluate expressions**
-
-We’ve seen () => 0. We know that (() => 0)() returns 0, and this is unsurprising. Likewise, the following all ought to be obvious: (() => 1)() _//=> 1_ (() => "Hello, JavaScript")() _//=> "Hello, JavaScript"_ (() => **Infinity** )() _//=> Infinity_
-
-Well, the last one’s a doozy, but still, the general idea is this: We can make a function that returns a value by putting the value to the right of the arrow.
-
-In the prelude, we looked at expressions. Values like 0 are expressions, as are things like 40 + 2. Can we put an expression to the right of the arrow?
-
-(() => 1 + 1)() _//=> 2_ (() => "Hello, " + "JavaScript")() _//=> "Hello, JavaScript"_ (() => **Infinity** * **Infinity** )() _//=> Infinity_
-
-Yes we can. We can put any expression to the right of the arrow. For example, (() => 0)() is an expression. Can we put it to the right of an arrow, like this: () => (() => 0)()?
-
-Let’s try it: (() => (() => 0)())() _//=> 0_
-
-Yes we can! Functions can return the value of evaluating another function.
-
-When dealing with expressions that have a lot of the same characters (like parentheses), you may find it helpful to format the code to make things stand out. So we can also write: _(javascriptallonge.pdf (source-range-83ecb080-00046))_
-
-- The first sip: Basic Functions
-
-11
-
-## **the simplest possible block**
-
-There’s another thing we can put to the right of an arrow, a _block_ . A block has zero or more _statements_ , separated by semicolons.[18] So, this is a valid function:
-
-## () => {}
-
-It returns the result of evaluating a block that has no statements. What would that be? Let’s try it: (() => {})() _//=> undefined_
-
-What is this undefined?
-
-## **undefined**
-
-In JavaScript, the absence of a value is written undefined, and it means there is no value. It will crop up again. undefined is its own type of value, and it acts like a value type:
-
-## **undefined**
-
-_//=> undefined_
-
-Like numbers, booleans and strings, JavaScript can print out the value undefined.
-
-**undefined** === **undefined**
-
-_//=> true_ (() => {})() === (() => {})() _//=> true_ (() => {})() === **undefined** _//=> true_
-
-No matter how you evaluate undefined, you get an identical value back. undefined is a value that means “I don’t have a value.” But it’s still a value :-)
-
-> 18Sometimes, you will find JavaScript that has statements that are separated by newlines without semi-colons. This works because JavaScript has a feature that can infer where the semi-colons should be most of the time. We will not take advantage of this feature, but it’s helpful to know it exists. _(javascriptallonge.pdf (source-range-83ecb080-00048))_
-
-- The first sip: Basic Functions
-
-20 are identical to each other if they have the same content. So JavaScript can make as many copies of strings, numbers, or booleans as it wishes.
-
-What about reference types? JavaScript does not place copies of reference values in any environment. JavaScript places _references_ to reference types in environments, and when the value needs to be used, JavaScript uses the reference to obtain the original.
-
-Because many references can share the same value, and because JavaScript passes references as arguments, JavaScript can be said to implement “call by sharing” semantics. Call by sharing is generally understood to be a specialization of call by value, and it explains why some values are known as value types and other values are known as reference types.
-
-And with that, we’re ready to look at _closures_ . When we combine our knowledge of value types, reference types, arguments, and closures, we’ll understand why this function always evaluates to true no matter what argument[26] you apply it to: (value) =>
-
-- ((ref1, ref2) => ref1 === ref2)(value, value) > 26 Unless the argument is NaN, which isn’t equal to anything, _including itself_ . NaN in JavaScript behaves a lot like NULL in SQL. _(javascriptallonge.pdf (source-range-83ecb080-00054))_
-
-### That Constant Coffee Craving
-
-- 34
-
-The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => diameter * PI })() ) _//=> 6.2831853_
-
-Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope.
-
-## **are consts also from a shadowy planet?**
-
-We just saw that values bound with const use lexical scope, just like values bound with parameters. They are looked up in the environment where they are declared. And we know that functions create environments. Parameters are declared when we create functions, so it makes sense that parameters are bound to environments created when we invoke functions.
-
-But const statements can appear inside blocks, and we saw that blocks can appear inside of other blocks, including function bodies. So where are const variables bound? In the function environment? Or in an environment corresponding to the block?
-
-We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we’ll bind two different values to the same name, but one environment will be completely enclosed by the other.
-
-Let’s start, as above, by doing this with parameters. We’ll start with:
-
-((PI) => (diameter) => diameter * PI )(3.14159265) And gratuitously wrap it in another IIFE so that we can bind PI to something else: _(javascriptallonge.pdf (source-range-83ecb080-00070))_
-
-- The first sip: Basic Functions
-
-37 })(2) _//=> 6.2831853_
-
-Ah! const statements don’t just shadow values bound within the environments created by functions, they shadow values bound within environments created by blocks!
-
-This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this: ((diameter) => { **const** PI = 3.14159265; **if** ( **true** ) { **const** PI = 3; } **return** diameter * PI; })(2) _//=> would return 6 if const had function scope_
-
-If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:” ((diameter) => { **if** ( **true** ) { **const** PI = 3.14159265; } **return** diameter * PI; })(2) _//=> would return 6.2831853 if const had function scope_ Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege[32] , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not “leaking” its binding to other parts of the code that do not need to interact with it.
-
-## **rebinding**
-
-By default, JavaScript permits us to _rebind_ new values to names bound with a parameter. For example, we can write:
-
-> 32https://en.wikipedia.org/wiki/Principle_of_least_privilege _(javascriptallonge.pdf (source-range-83ecb080-00073))_
-
-### Arrays and Destructuring Arguments
-
-- Composing and Decomposing Data
-
-83 **const** [what] = []; That match would fail because the array doesn’t have an element to assign to what. But this is not how JavaScript works. JavaScript tries its best to assign things, and if there isn’t something that fits, JavaScript binds undefined to the name. Therefore: **const** [what] = []; what _//=> undefined_ **const** [which, what, who] = ["duck feet", "tiger tail"]; who _//=> undefined_ And if there aren’t any items to assign with ..., JavaScript assigns an empty array: **const** [...they] = []; they _//=> []_ **const** [which, what, ...they] = ["duck feet", "tiger tail"]; they _//=> []_ From its very inception, JavaScript has striven to avoid catastrophic errors. As a result, it often coerces values, passes undefined around, or does whatever it can to keep executing without failing. This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things.
-
-## **destructuring and return values**
-
-Some languages support multiple return values: A function can return several things at once, like a value and an error code. This can easily be emulated in JavaScript with destructuring: _(javascriptallonge.pdf (source-range-83ecb080-00129))_
+- From its very inception, JavaScript has striven to avoid catastrophic errors. As a result, it often coerces values, passes undefined around, or does whatever it can to keep executing without failing. This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things. _(javascriptallonge.pdf (source-range-31a4cf47-00869))_
 
 ### Garbage, Garbage Everywhere
 
-- Composing and Decomposing Data
+- Thus, CONS put two values together, CAR extracted one, and CDR extracted the other. Lisp's basic data type is often said to be the list, but in actuality it was the 'cons cell,' the term used to describe two 15-bit values stored in one word. The 15-bit values were used as pointers that could refer to a location in memory, so in effect, a cons cell was a little data structure with two pointers to other cons cells. _(javascriptallonge.pdf (source-range-31a4cf47-01031))_
 
-106
+### literal object syntax
 
-In broad terms, this means that a single 36-bit word could store two separate 15-bit values and it was very fast to save and retrieve pairs of values. If you had two 15-bit values and wished to write them to the register, the CONS macro would take the values and write them to a 36-bit word.
-
-Thus, CONS put two values together, CAR extracted one, and CDR extracted the other. Lisp’s basic data type is often said to be the list, but in actuality it was the “cons cell,” the term used to describe two 15-bit values stored in one word. The 15-bit values were used as pointers that could refer to a location in memory, so in effect, a cons cell was a little data structure with two pointers to other cons cells.
-
-Lists were represented as linked lists of cons cells, with each cell’s head pointing to an element and the tail pointing to another cons cell.
-
-Having these instructions be very fast was important to those early designers: They were working on one of the first high-level languages (COBOL and FORTRAN being the others), and computers in the late 1950s were extremely small and slow by today’s standards. Although the 704 used core memory, it still used vacuum tubes for its logic. Thus, the design of programming languages and algorithms was driven by what could be accomplished with limited memory and performance.
-
-Here’s the scheme in JavaScript, using two-element arrays to represent cons cells: **const** cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d;
-
-We can make a list by calling cons repeatedly, and terminating it with null: **const** oneToFive = cons(1, cons(2, cons(3, cons(4, cons(5, **null** )))));
-
-## oneToFive
-
-_//=> [1,[2,[3,[4,[5,null]]]]]_ Notice that though JavaScript displays our list as if it is composed of arrays nested within each other like Russian Dolls, in reality the arrays refer to each other with references, so [1,[2,[3,[4,[5,null]]]]] is actually more like: _(javascriptallonge.pdf (source-range-83ecb080-00155))_
+- Values contained within an object work just like values contained within an array, we access them by reference to the original: _(javascriptallonge.pdf (source-range-31a4cf47-01076))_
 
 ### Mutation
 
-- Composing and Decomposing Data
+- In JavaScript, almost every type of value can mutate . Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate. Recall that you can access a value from within an array or an object using [] . You can reassign a value using [] = : _(javascriptallonge.pdf (source-range-31a4cf47-01121))_
 
-118
+- The outer value of allHallowsEve was not changed because all we did was rebind the name halloween within the inner environment. However, what happens if we mutate the value in the inner environment? _(javascriptallonge.pdf (source-range-31a4cf47-01134))_
 
-## **Mutation**
+### the kestrel and the idiot
 
-**==> picture [240 x 321] intentionally omitted <==**
+- This is very interesting. Given two values, we can say that K always returns the first value: K(x)(y) => x (that's not valid JavaScript, but it's essentially how it works). _(javascriptallonge.pdf (source-range-31a4cf47-01344))_
 
-**Cupping Grinds**
+- This is very interesting. Given two values, we can say that K always returns the first value, and given two values, K(I) always returns the second value. _(javascriptallonge.pdf (source-range-31a4cf47-01352))_
 
-In JavaScript, almost every type of value can _mutate_ . Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate. Recall that you can access a value from within an array or an object using []. You can reassign a value using [] =: **const** oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree _//=> [ 'one', 2, 3 ]_ You can even add a value: _(javascriptallonge.pdf (source-range-83ecb080-00169))_
+### the vireo
 
-### Making Data Out Of Functions
+- As an aside, the Vireo is a little like JavaScript's .apply function. It says, 'take these two values and apply them to this function.' There are other, similar combinators that apply values to functions. One notable example is the 'thrush' or T combinator: It takes one value and applies it to a function. It is known to most programmers as .tap . _(javascriptallonge.pdf (source-range-31a4cf47-01374))_
 
-- 156
 
-Composing and Decomposing Data **const** K = (x) => (y) => x; **const** I = (x) => (x); **const** V = (x) => (y) => (z) => z(x)(y);
+## Technical atoms
 
-## **the kestrel and the idiot**
+### Technical frame 1: values are expressions
 
-A _constant function_ is a function that always returns the same thing, no matter what you give it. For example, (x) => 42 is a constant function that always evaluates to 42. The kestrel, or K, is a function that makes constant functions. You give it a value, and it returns a constant function that gives that value.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00111))_
 
-For example: **const** K = (x) => (y) => x; **const** fortyTwo = K(42); fortyTwo(6) _//=> 42_ fortyTwo("Hello") _//=> 42_
+> All values are expressions. That's easy! Are there any other kinds of expressions? Sure! let's go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let's hand over some ground coffee plus some boiling water.
 
-The _identity function_ is a function that evaluates to whatever parameter you pass it. So I(42) => 42. Very simple, but useful. Now we’ll take it one more step forward: Passing a value to K gets a function back, and passing a value to that function gets us a value.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00110))_
 
-Like so:
+```
+42 //=> 42
+```
 
-K(6)(7) _//=> 6_
+### Technical frame 2: values are expressions
 
-K(12)(24) _//=> 12_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00112))_
 
-This is very interesting. Given two values, we can say that K always returns the _first_ value: K(x)(y) => x (that’s not valid JavaScript, but it’s essentially how it works).
+> Astute readers will realize we're omitting something. Congratulations! Take a sip of espresso. We'll get to that in a moment.
 
-Now, an interesting thing happens when we pass functions to each other. Consider K(I). From what we just wrote, K(x)(y) => x So K(I)(x) => I. Makes sense. Now let’s tack one more invocation on: What is K(I)(x)(y)? If K(I)(x) => I, then K(I)(x)(y) === I(y) which is y.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00113))_
 
-Therefore, K(I)(x)(y) => y: _(javascriptallonge.pdf (source-range-83ecb080-00212))_
+> And if we hand over the espresso, we get the espresso right back.
 
-- Composing and Decomposing Data
+### Technical frame 3: values and identity
 
-157
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00122))_
 
-K(I)(6)(7) _//=> 7_
+> First, sometimes, the cups are of different kinds. One is a demitasse, the other a mug. This corresponds to comparing two things in JavaScript that have different types . For example, the string "2" is not the same thing as the number 2 . Strings and numbers are different types, so strings and numbers are never identical:
 
-K(I)(12)(24) _//=> 24_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00120))_
 
-Aha! Given two values, K(I) always returns the _second_ value.
+```
+2 === 2 //=> true 'hello' !== 'goodbye' //=> true
+```
 
-K("primus")("secundus") _//=> "primus"_
+### Technical frame 4: values and identity
 
-K(I)("primus")("secundus") _//=> "secundus"_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00124))_
 
-If we are not feeling particularly academic, we can name our functions: **const** first = K, second = K(I); first("primus")("secundus") _//=> "primus"_ second("primus")("secundus") _//=> "secundus"_
+> Second, sometimes, the cups are of the same type-perhaps two espresso cups-but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different 'content.' For example, the number 5 is not the same thing as the number 2 .
 
-This is very interesting. Given two values, we can say that K always returns the _first_ value, and given two values, K(I) always returns the _second_ value.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00125))_
 
-## **backwardness**
+```
+true === false //=> false 2 !== 5 //=> true 'two' === 'five' //=> false
+```
 
-Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of values as an array, we’d write them like this: _(javascriptallonge.pdf (source-range-83ecb080-00213))_
+### Technical frame 5: reference types
 
-- Composing and Decomposing Data
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00140))_
 
-160 **const** first = K, second = K(I), pair = V; **const** latin = pair("primus")("secundus"); latin(first) _//=> "primus"_ latin(second) _//=> "secundus"_ As an aside, the Vireo is a little like JavaScript’s .apply function. It says, “take these two values and apply them to this function.” There are other, similar combinators that apply values to functions. One notable example is the “thrush” or T combinator: It takes one value and applies it to a function. It is known to most programmers as .tap.
+> How about that! When you type [1, 2, 3] or any of its variations, you are typing an expression that generates its own unique array that is not identical to any other array, even if that other array also looks like [1, 2, 3] . It's as if JavaScript is generating new cups of coffee with serial numbers on the bottom.
 
-Armed with nothing more than K, I, and V, we can make a little data structure that holds two values, the cons cell of Lisp and the node of a linked list. Without arrays, and without objects, just with functions. We’d better try it out to check.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00139))_
 
-## **lists with functions as data**
+```
+[2-1, 2, 2+1] === [1,2,3] [1,2,3] === [1, 2, 3] [1, 2, 3] === [1, 2, 3]
+```
 
-Here’s another look at linked lists using POJOs. We use the term rest instead of second, but it’s otherwise identical to what we have above: **const** first = ({first, rest}) => first, rest = ({first, rest}) => rest, pair = (first, rest) => ({first, rest}), EMPTY = ({}); **const** l123 = pair(1, pair(2, pair(3, EMPTY))); first(l123) _//=> 1_ first(rest(l123)) _//=> 2_ first(rest(rest(l123))) _//=3_
+### Technical frame 6: functions that return values and evaluate expressions
 
-We can write length and mapWith functions over it: _(javascriptallonge.pdf (source-range-83ecb080-00216))_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00197))_
+
+> Yes we can. We can put any expression to the right of the arrow. For example, (() => 0)() is an expression. Can we put it to the right of an arrow, like this: () => (() => 0)() ?
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00196))_
+
+```
+(() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity )() //=> Infinity
+```
+
+### Technical frame 7: functions that return values and evaluate expressions
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00200))_
+
+> Yes we can! Functions can return the value of evaluating another function.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00201))_
+
+> When dealing with expressions that have a lot of the same characters (like parentheses), you may find it helpful to format the code to make things stand out.
+
+### Technical frame 8: undefined
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00224))_
+
+> Like numbers, booleans and strings, JavaScript can print out the value undefined .
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00222))_
+
+```
+undefined
+```
+
+### Technical frame 9: undefined
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00224))_
+
+> Like numbers, booleans and strings, JavaScript can print out the value undefined .
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00223))_
+
+```
+//=> undefined
+```
+
+### Technical frame 10: undefined
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00226))_
+
+> No matter how you evaluate undefined , you get an identical value back. undefined is a value that means 'I don't have a value.' But it's still a value :-)
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00225))_
+
+```
+undefined === undefined //=> true (() => {})() === (() => {})() //=> true (() => {})() === undefined //=> true
+```
+
+### Technical frame 11: variables and bindings
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00317))_
+
+> The value '2' is bound to the name 'x' in the environment.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00309))_
+
+```
+((x) => x)(2) //=> 2
+```
+
+### Technical frame 12: call by sharing
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00331))_
+
+> 26 Unless the argument is NaN , which isn't equal to anything, including itself . NaN in JavaScript behaves a lot like NULL in SQL.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00330))_
+
+```
+(value) => ((ref1, ref2) => ref1 === ref2)(value, value)
+```
+
+### Technical frame 13: are consts also from a shadowy planet?
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
+
+> Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00489))_
+
+```
+((diameter) => { const PI = 3.14159265; if ( true ) { const PI = 3; } return diameter * PI; })(2) //=> would return 6 if const had function scope
+```
+
+### Technical frame 14: are consts also from a shadowy planet?
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
+
+> Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00491))_
+
+```
+((diameter) => { if ( true ) { const PI = 3.14159265; } return diameter * PI; })(2) //=> would return 6.2831853 if const had function scope
+```
+
+### Technical frame 15: false
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00763))_
+
+> Now, note well: We have said what happens if you pass boolean values to ! , && , and || , but we've said nothing about expressions or about passing other values. We'll look at those presently.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00760))_
+
+```
+! true //=> false ! false //=> true
+```
+
+### Technical frame 16: truthiness and operators
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00790))_
+
+> In JavaScript, && and || aren't boolean logical operators in the logical sense. They don't operate strictly on logical values, and they don't commute: a || b is not always equal to b || a , and the same goes for && .
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00789))_
+
+```
+1 || 2 //=> 1 null && undefined //=> null undefined && null //=> undefined
+```
+
+### Technical frame 17: destructuring is not pattern matching
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00869))_
+
+> From its very inception, JavaScript has striven to avoid catastrophic errors. As a result, it often coerces values, passes undefined around, or does whatever it can to keep executing without failing. This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00867))_
+
+```
+const [...they] = []; they //=> [] const [which, what, they //=> []
+```
+
+### Technical frame 18: literal object syntax
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01076))_
+
+> Values contained within an object work just like values contained within an array, we access them by reference to the original:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01073))_
+
+```
+{ year: 2012, month: 6, day: 14 }
+```
+
+### Technical frame 19: literal object syntax
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01078))_
+
+> Names needn't be alphanumeric strings. For anything else, enclose the label in quotes:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01077))_
+
+```
+const unique = () => [], x = unique(), y = unique(), z = unique(), o = { a: x, b: y, c: z }; o['a'] === x && o['b'] === y && o['c'] === z //=> true
+```
+
+### Technical frame 20: literal object syntax
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01082))_
+
+> Expressions can be used for keys as well. The syntax is to enclose the key's expression in [ and ] :
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01081))_
+
+```
+const date = { year: 2012, month: 6, day: 14 }; date['day'] === date.day //=> true
+```
+
+### Technical frame 21: literal object syntax
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01090))_
+
+> It is very common to associate named function expressions with keys in objects, and there is a 'compact method syntax' for binding named function expressions to keywords:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01085))_
+
+```
+const Mathematics = { abs: (a) => a < 0 ? -a : a }; Mathematics.abs(-5) //=> 5
+```
+
+### Technical frame 22: Mutation
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01127))_
+
+> Wehave established that JavaScript's semantics allow for two different bindings to refer to the same value. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01122))_
+
+```
+const oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree //=> [ 'one', 2, 3 ]
+```
+
+### Technical frame 23: Mutation
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01127))_
+
+> Wehave established that JavaScript's semantics allow for two different bindings to refer to the same value. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01124))_
+
+```
+const oneTwoThree = [1, 2, 3]; oneTwoThree[3] = 'four'; oneTwoThree //=> [ 1, 2, 3, 'four' ]
+```
+
+### Technical frame 24: Mutation
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01129))_
+
+> Both halloween and allHallowsEve are bound to the same array value within the local environment. And also:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01128))_
+
+```
+const allHallowsEve = [2012, 10, 31] const halloween = allHallowsEve;
+```
+
+### Technical frame 25: Mutation
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01131))_
+
+> There are two nested environments, and each one binds a name to the exact same array value. In each of these examples, we have created two aliases for the same value. Before we could reassign things, the most important point about this is that the identities were the same, because they were the same value.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01130))_
+
+```
+const allHallowsEve = [2012, 10, 31]; ( function (halloween) { // ... })(allHallowsEve);
+```
+
+### Technical frame 26: Mutation
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01134))_
+
+> The outer value of allHallowsEve was not changed because all we did was rebind the name halloween within the inner environment. However, what happens if we mutate the value in the inner environment?
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01133))_
+
+```
+const allHallowsEve = [2012, 10, 31]; ( function (halloween) { halloween = [2013, 10, 31]; })(allHallowsEve); allHallowsEve //=> [2012, 10, 31]
+```
+
+### Technical atom 27
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00103))_
+
+| entry | content |
+| --- | --- |
+| 8 | https://en.wikipedia.org/wiki/Expression_ |
+| 9 | https://en.wikipedia.org/wiki/Value_ |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+Prelude: Values and Expressions over Coffee
+The following material is extremely basic, however like most stories, the best way to begin is to start at the very beginning.
+Imagine we are visiting our favourite coffee shop. They will make for you just about any drink you desire, from a short, intense espresso ristretto through a dry cappuccino, up to those coffee-flavoured desert concoctions featuring various concentrated syrups and milks. (You tolerate the existence of sugary drinks because they provide a sufficient profit margin to the establishment to finance your hanging out there all day using their WiFi and ordering a $3 drink every few hours.)
+You express your order at one end of their counter, the folks behind the counter perform their magic, and deliver the coffee you value at the other end. This is exactly how the JavaScript environment works for the purpose of this book. We are going to dispense with web servers, browsers and other complexities and deal with this simple model: You give the computer an expression 8 , and it returns a value 9 , just as you express your wishes to a barista and receive a coffee in return.
+8 https://en.wikipedia.org/wiki/Expression_
+9 https://en.wikipedia.org/wiki/Value_
+```
+
+</details>
+
+### Technical atom 28
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00114))_
+
+> Let's try this as well with something else the computer understands easily:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00116))_
+
+| entry | content |
+| --- | --- |
+| 10 | Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' and so does the computer. |
+| 11 | In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values. |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' and so does the computer.
+11 In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values.
+```
+
+</details>
 
 
 ## Related pages
 
-- [[javascriptallonge-javascript]] - shared statements: Javascript shares source evidence from values and identity: xvi  Prelude: Values and Expressions over Coffee  ## **values and identity**  In JavaScript, we test whether two values are identical with the === operator, and whet ... [truncated] (5 shared statement(s))
-- [[javascriptallonge-const]] - shared statements: Const shares source evidence from That Constant Coffee Craving: 34  The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => d ... [truncated] (3 shared statement(s))
-- [[javascriptallonge-type]] - shared statements: Type shares source evidence from As Little As Possible About Functions, But No Less: The first sip: Basic Functions  8  I’d prefer something else, but I must accept that what gets typed back to us on the screen is arbitrary, and all that really count ... [truncated] (3 shared statement(s))
-- [[javascriptallonge-apply]] - shared statements: Apply shares source evidence from As Little As Possible About Functions, But No Less: The first sip: Basic Functions  8  I’d prefer something else, but I must accept that what gets typed back to us on the screen is arbitrary, and all that really count ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-bind]] - shared statements: Bind shares source evidence from That Constant Coffee Craving: 34  The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => d ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-binding]] - shared statements: Binding shares source evidence from That Constant Coffee Craving: 34  The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => d ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-bound]] - shared statements: Bound shares source evidence from That Constant Coffee Craving: 34  The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => d ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-environment]] - shared statements: Environment shares source evidence from As Little As Possible About Functions, But No Less: The first sip: Basic Functions  20 are identical to each other if they have the same content. So JavaScript can make as many copies of strings, numbers, or booleans ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-function]] - shared statements: Function shares source evidence from As Little As Possible About Functions, But No Less: The first sip: Basic Functions  8  I’d prefer something else, but I must accept that what gets typed back to us on the screen is arbitrary, and all that really count ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-alway]] - shared statements: Alway shares source evidence from That Constant Coffee Craving: The first sip: Basic Functions  37 })(2) _//=> 6.2831853_  Ah! const statements don’t just shadow values bound within the environments created by functions, they sha ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-different]] - shared statements: Different shares source evidence from That Constant Coffee Craving: 34  The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => d ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-evaluate]] - shared statements: Evaluate shares source evidence from values and identity: xviii  Prelude: Values and Expressions over Coffee  An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wil ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-expression]] - shared statements: Expression shares source evidence from values and identity: xviii  Prelude: Values and Expressions over Coffee  An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wil ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-instead]] - shared statements: Instead shares source evidence from That Constant Coffee Craving: 34  The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => d ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-parameter]] - shared statements: Parameter shares source evidence from That Constant Coffee Craving: 34  The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => d ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-pass]] - shared statements: Pass shares source evidence from Arrays and Destructuring Arguments: Composing and Decomposing Data  83 **const** [what] = []; That match would fail because the array doesn’t have an element to assign to what. But this is not how Java ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-reference]] - shared statements: Reference shares source evidence from As Little As Possible About Functions, But No Less: The first sip: Basic Functions  20 are identical to each other if they have the same content. So JavaScript can make as many copies of strings, numbers, or booleans ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-variable]] - shared statements: Variable shares source evidence from That Constant Coffee Craving: 34  The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => d ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-function-return-value]] - narrower topic: Function Return Value shares technical record from functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity )() //=> Infinity (2 shared atom(s))
+- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from values and identity: Second, sometimes, the cups are of the same type-perhaps two espresso cups-but they have different contents. One holds a single, one a double. This corresponds to co ... [truncated]; Javascript shares technical record from values and identity: 2 === 2 //=> true 'hello' !== 'goodbye' //=> true (7 shared statement(s), 9 shared atom(s))
+- [[javascriptallonge-environment]] - shared statements and technical atoms: Environment shares source evidence from call by sharing: Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, ... [truncated]; Environment shares technical record from variables and bindings: ((x) => x)(2) //=> 2 (2 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-type]] - shared statements and technical atoms: Type shares source evidence from functions and identities: You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same cont ... [truncated]; Type shares technical record from call by sharing: (value) => ((ref1, ref2) => ref1 === ref2)(value, value) (4 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-array]] - shared statements and technical atoms: Array shares source evidence from reference types: They look the same, but if you examine them with === , you see that they are different. Every time you evaluate an expression (including typing something in) to crea ... [truncated]; Array shares technical record from reference types: [2-1, 2, 2+1] === [1,2,3] [1,2,3] === [1, 2, 3] [1, 2, 3] === [1, 2, 3] (1 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from the vireo: As an aside, the Vireo is a little like JavaScript's .apply function. It says, 'take these two values and apply them to this function.' There are other, similar comb ... [truncated]; Function shares technical record from functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity )() //=> Infinity (1 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-bind]] - shared statements and technical atoms: Bind shares source evidence from call by sharing: We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. Now we can elaborate: When JavaScript binds a value-type to ... [truncated]; Bind shares technical record from destructuring is not pattern matching: const [...they] = []; they //=> [] const [which, what, they //=> [] (3 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-bound]] - shared statements and technical atoms: Bound shares source evidence from are consts also from a shadowy planet?: We just saw that values bound with const use lexical scope, just like values bound with parameters. They are looked up in the environment where they are declared. An ... [truncated]; Bound shares technical record from are consts also from a shadowy planet?: ((diameter) => { const PI = 3.14159265; if ( true ) { const PI = 3; } return diameter * PI; })(2) //=> would return 6 if const had function scope (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-expression]] - shared statements and technical atoms: Expression shares source evidence from reference types: They look the same, but if you examine them with === , you see that they are different. Every time you evaluate an expression (including typing something in) to crea ... [truncated]; Expression shares technical table: Prelude: Values and Expressions over Coffee The following material is extremely basic, however like most stories, the best way to begin is to start at the very begin ... [truncated] (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-pass]] - shared statements and technical atoms: Pass shares source evidence from destructuring is not pattern matching: From its very inception, JavaScript has striven to avoid catastrophic errors. As a result, it often coerces values, passes undefined around, or does whatever it can ... [truncated]; Pass shares technical record from truthiness and operators: 1 || 2 //=> 1 null && undefined //=> null undefined && null //=> undefined (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-different]] - shared statements and technical atoms: Different shares source evidence from are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated]; Different shares technical record from Mutation: const allHallowsEve = [2012, 10, 31] const halloween = allHallowsEve; (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-evaluate]] - shared statements and technical atoms: Evaluate shares source evidence from reference types: They look the same, but if you examine them with === , you see that they are different. Every time you evaluate an expression (including typing something in) to crea ... [truncated]; Evaluate shares technical record from undefined: undefined === undefined //=> true (() => {})() === (() => {})() //=> true (() => {})() === undefined //=> true (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-instead]] - shared statements and technical atoms: Instead shares source evidence from are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated]; Instead shares technical record from values are expressions: And if we hand over the espresso, we get the espresso right back. (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-recall]] - shared statements and technical atoms: Recall shares source evidence from call by sharing: We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. Now we can elaborate: When JavaScript binds a value-type to ... [truncated]; Recall shares technical record from Mutation: const oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree //=> [ 'one', 2, 3 ] (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-reference]] - shared statements and technical atoms: Reference shares source evidence from call by sharing: Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, ... [truncated]; Reference shares technical record from call by sharing: (value) => ((ref1, ref2) => ref1 === ref2)(value, value) (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-result]] - shared statements and technical atoms: Result shares source evidence from destructuring is not pattern matching: From its very inception, JavaScript has striven to avoid catastrophic errors. As a result, it often coerces values, passes undefined around, or does whatever it can ... [truncated]; Result shares technical record from destructuring is not pattern matching: const [...they] = []; they //=> [] const [which, what, they //=> [] (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical record from variables and bindings: ((x) => x)(2) //=> 2 (2 shared atom(s))
+- [[javascriptallonge-coffee]] - shared technical atoms: Coffee shares technical record from values are expressions: And if we hand over the espresso, we get the espresso right back. (2 shared atom(s))
+- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity )() //=> Infinity (2 shared atom(s))
+- [[javascriptallonge-statement]] - shared technical atoms: Statement shares technical record from are consts also from a shadowy planet?: ((diameter) => { const PI = 3.14159265; if ( true ) { const PI = 3; } return diameter * PI; })(2) //=> would return 6 if const had function scope (2 shared atom(s))
+- [[javascriptallonge-follow]] - shared technical atoms: Follow shares technical table: Prelude: Values and Expressions over Coffee The following material is extremely basic, however like most stories, the best way to begin is to start at the very begin ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-idea]] - shared technical atoms: Idea shares technical record from functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity )() //=> Infinity (1 shared atom(s))
+- [[javascriptallonge-language]] - shared technical atoms: Language shares technical table: 10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-matter]] - shared technical atoms: Matter shares technical record from undefined: undefined === undefined //=> true (() => {})() === (() => {})() //=> true (() => {})() === undefined //=> true (1 shared atom(s))
+- [[javascriptallonge-needn]] - shared technical atoms: Needn shares technical table: 10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-object]] - shared technical atoms: Object shares technical record from Mutation: const oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree //=> [ 'one', 2, 3 ] (1 shared atom(s))
+- [[javascriptallonge-binding]] - shared statements: Binding shares source evidence from const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. (2 shared statement(s))
+- [[javascriptallonge-alway]] - shared statements: Alway shares source evidence from call by value: We'll see below that while JavaScript always calls by value, the notion of a 'value' has additional subtlety. But before we do, let's look at variables. (1 shared statement(s))
+- [[javascriptallonge-const]] - shared statements: Const shares source evidence from const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. (1 shared statement(s))
+- [[javascriptallonge-identity]] - shared statements: Identity shares source evidence from functions and identities: You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same cont ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-parameter]] - shared statements: Parameter shares source evidence from const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. (1 shared statement(s))
+- [[javascriptallonge-string]] - shared statements: String shares source evidence from call by sharing: We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. Now we can elaborate: When JavaScript binds a value-type to ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-variable]] - shared statements: Variable shares source evidence from variables and bindings: The value of a variable when evaluated in an environment is the value bound to the variable's name in that environment, which is '2' (1 shared statement(s))
+- [[javascriptallonge-section-call-by-value-96512294]] - source section: call by value shares source evidence from call by value: Like most contemporary programming languages, JavaScript uses the 'call by value' evaluation strategy 23 . That means that when you write some code that appears to a ... [truncated]; call by value shares technical record from call by value: ((diameter) => diameter * 3.14159265)(1 + 1) //=> 6.2831853 (4 shared statement(s), 1 shared atom(s))
 
 ## Source
 

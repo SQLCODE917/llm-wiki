@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-declaration
 page_kind: concept
-summary: Declaration: 4 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
+summary: Declaration: 4 statement(s) and 8 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-declaration@072a0892f4fcca9e1a78df70c96841f0
+projection_coverage: topic-javascriptallonge-declaration@48ddbc0a4cd915cf7130a390780b302a
 ---
 
 # Declaration
@@ -15,86 +15,127 @@ What [[javascriptallonge]] covers about declaration:
 
 ## Statements
 
-### That Constant Coffee Craving
+### function declarations
 
-- 43
+- In that it binds a name in the environment to a named function. However, there are two important differences. First, function declarations are hoisted to the top of the function in which they occur. _(javascriptallonge.pdf (source-range-31a4cf47-00543))_
 
-The first sip: Basic Functions
+### function declaration caveats 34
 
-( **function** () { **return** fizzbuzz(); **function** fizzbuzz () { **return** "Fizz" + "Buzz"; } })() _//=> 'FizzBuzz'_ Although fizzbuzz is declared later in the function, JavaScript behaves as if we’d written:
+- Function declarations are formally only supposed to be made at what we might call the 'top level' of a function. Although some JavaScript environments permit the following code, this example is technically illegal and definitely a bad idea: _(javascriptallonge.pdf (source-range-31a4cf47-00551))_
 
-( **function** () { **const** fizzbuzz = **function** fizzbuzz () { **return** "Fizz" + "Buzz"; } **return** fizzbuzz(); })() The definition of the fizzbuzz is “hoisted” to the top of its enclosing scope (an IIFE in this case). This behaviour is intentional on the part of JavaScript’s design to facilitate a certain style of programming where you put the main logic up front, and the “helper functions” at the bottom. It is not necessary to declare functions in this way in JavaScript, but understanding the syntax and its behaviour (especially the way it differs from const) is essential for working with production code.
+- Function declarations are not supposed to occur inside of blocks. The big trouble with expressions like this is that they may work just fine in your test environment but work a different way in production. Or it may work one way today and a different way when the JavaScript engine is updated, say with a new optimization. _(javascriptallonge.pdf (source-range-31a4cf47-00554))_
 
-## **function declaration caveats**[34]
+### var
 
-Function declarations are formally only supposed to be made at what we might call the “top level” of a function. Although some JavaScript environments permit the following code, this example is technically illegal and definitely a bad idea:
+- But, again, it is unwise to expect consistency. A function declaration can appear anywhere within a function, but the declaration and the definition are hoisted. Note this example of a function that uses a helper: _(javascriptallonge.pdf (source-range-31a4cf47-01194))_
 
-34 A number of the caveats discussed here were described in Jyrly Zaytsev’s excellent article Named function expressions demystified. _(javascriptallonge.pdf (source-range-83ecb080-00079))_
 
-- 44
+## Technical atoms
 
-The first sip: Basic Functions
+### Technical frame 1: function declarations
 
-( **function** (camelCase) { **return** fizzbuzz(); **if** (camelCase) { **function** fizzbuzz () { **return** "Fizz" + "Buzz"; } } **else** { **function** fizzbuzz () { **return** "Fizz" + "Buzz"; } } })( **true** ) _//=> 'FizzBuzz'? Or ERROR: Can't find variable: fizzbuzz?_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00543))_
 
-Function declarations are not supposed to occur inside of blocks. The big trouble with expressions like this is that they may work just fine in your test environment but work a different way in production. Or it may work one way today and a different way when the JavaScript engine is updated, say with a new optimization.
+> In that it binds a name in the environment to a named function. However, there are two important differences. First, function declarations are hoisted to the top of the function in which they occur.
 
-Another caveat is that a function declaration cannot exist inside of _any_ expression, otherwise it’s a function expression. So this is a function declaration: **function** trueDat () { **return true** } But this is not:
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00541))_
 
-( **function** trueDat () { **return true** }) The parentheses make this an expression, not a function declaration. _(javascriptallonge.pdf (source-range-83ecb080-00080))_
+```
+function someName () { // ... } This behaves a little like: const someName = function someName () // ... }
+```
 
-### Summary
+### Technical frame 2: function declarations
 
-- The first sip: Basic Functions
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00543))_
 
-55
+> In that it binds a name in the environment to a named function. However, there are two important differences. First, function declarations are hoisted to the top of the function in which they occur.
 
-## **Summary**
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00542))_
 
-**==> picture [29 x 29] intentionally omitted <==**
+```
+{
+```
 
-## **Functions**
+### Technical frame 3: function declarations
 
-- Functions are values that can be part of expressions, returned from other functions, and so forth.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00549))_
 
-- Functions are _reference values_ .
+> The definition of the fizzbuzz is 'hoisted' to the top of its enclosing scope (an IIFE in this case). This behaviour is intentional on the part of JavaScript's design to facilitate a certain style of programming where you put the main logic up front, and the 'helper functions' at the bottom. It is not necessary to declare functions in this way in JavaScript, but understanding the syntax and its behaviour (especially the way it differs from const ) is essential for working with production code.
 
-- Functions are applied to arguments.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00547))_
 
-- The arguments are passed by sharing, which is also called “pass by value.” - Fat arrow functions have expressions or blocks as their bodies.
+```
+( function () { return fizzbuzz(); function fizzbuzz () { return "Fizz" + "Buzz"; } })() //=> 'FizzBuzz' Although fizzbuzz is declared later in the function, JavaScript behaves as if we'd written: ( function () { {
+```
 
-- function keyword functions always have blocks as their bodies.
+### Technical frame 4: function declarations
 
-- Function bodies have zero or more statements.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00549))_
 
-- Expression bodies evaluate to the value of the expression.
+> The definition of the fizzbuzz is 'hoisted' to the top of its enclosing scope (an IIFE in this case). This behaviour is intentional on the part of JavaScript's design to facilitate a certain style of programming where you put the main logic up front, and the 'helper functions' at the bottom. It is not necessary to declare functions in this way in JavaScript, but understanding the syntax and its behaviour (especially the way it differs from const ) is essential for working with production code.
 
-- Block bodies evaluate to whatever is returned with the return keyword, or to undefined.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00548))_
 
-- JavaScript uses const to bind values to names within block scope.
+```
+const fizzbuzz = function fizzbuzz () return "Fizz" + "Buzz"; } return fizzbuzz(); })()
+```
 
-- JavaScript uses function declarations to bind functions to names within function scope. Function declarations are “hoisted.” - Function application creates a scope.
+### Technical frame 5: function declaration caveats 34
 
-- Blocks also create scopes if const statements are within them.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00557))_
 
-- Scopes are nested and free variable references closed over.
+> The parentheses make this an expression, not a function declaration.
 
-- Variables can shadow variables in an enclosing scope. _(javascriptallonge.pdf (source-range-83ecb080-00095))_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00556))_
 
-### Reassignment
+```
+function trueDat () { return true } But this is not: ( function trueDat () { return true })
+```
 
-- Composing and Decomposing Data
+### Technical frame 6: var
 
-129 **return** n * factorial2(x); } } factorial2(5) _//=> 120_ But of course, it’s not exactly like let. It’s just different enough to present a source of confusion. First, var is not block scoped, it’s function scoped, just like function declarations: (() => { **var** age = 49; **if** ( **true** ) { **var** age = 50; } **return** age; })() _//=> 50_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01193))_
 
-Declaring age twice does not cause an error(!), and the inner declaration does not shadow the outer declaration. All var declarations behave as if they were hoisted to the top of the function, a little like function declarations.
+> Declaring age twice does not cause an error(!), and the inner declaration does not shadow the outer declaration. All var declarations behave as if they were hoisted to the top of the function, a little like function declarations.
 
-But, again, it is unwise to expect consistency. A function declaration can appear anywhere within a function, but the declaration _and_ the definition are hoisted. Note this example of a function that uses a helper: **const** factorial = (n) => { **return** innerFactorial(n, 1); **function** innerFactorial (x, y) { **if** (x == 1) { **return** y; } **else** { **return** innerFactorial(x-1, x * y); } } } factorial(4) _//=> 24_ _(javascriptallonge.pdf (source-range-83ecb080-00181))_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01192))_
+
+```
+(() => { var age = 49; if ( true ) { var age = 50; } return age; })() //=> 50
+```
+
+### Technical frame 7: var
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01200))_
+
+> In that way, var is a little like const and let , we should always declare and bind names before using them. But it's not like const and let in that it's function scoped, not block scoped.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01195))_
+
+```
+const factorial = (n) => { return innerFactorial(n, 1); function innerFactorial (x, y) { if (x == 1) { return y; } else { return innerFactorial(x-1, x * y); } } } factorial(4) //=> 24
+```
+
+### Technical frame 8: var
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01200))_
+
+> In that way, var is a little like const and let , we should always declare and bind names before using them. But it's not like const and let in that it's function scoped, not block scoped.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01199))_
+
+```
+const factorial = (n) => { let innerFactorial = undefined ; return innerFactorial(n, 1); innerFactorial = function innerFactorial (x, y) { if (x == 1) { return y; } else { return innerFactorial(x-1, x * y); } } } factorial(4) //=> undefined is not a function (evaluating 'innerFactorial(n, 1)')
+```
 
 
 ## Related pages
 
-- [[javascriptallonge-function]] - shared statements: Function shares source evidence from That Constant Coffee Craving: 43  The first sip: Basic Functions  ( **function** () { **return** fizzbuzz(); **function** fizzbuzz () { **return** "Fizz" + "Buzz"; } })() _//=> 'FizzBuzz'_ Althou ... [truncated] (4 shared statement(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from function declarations: In that it binds a name in the environment to a named function. However, there are two important differences. First, function declarations are hoisted to the top of ... [truncated]; Function shares technical record from function declarations: function someName () { // ... } This behaves a little like: const someName = function someName () // ... } (4 shared statement(s), 7 shared atom(s))
+- [[javascriptallonge-bound]] - shared technical atoms: Bound shares technical record from function declarations: ( function () { return fizzbuzz(); function fizzbuzz () { return "Fizz" + "Buzz"; } })() //=> 'FizzBuzz' Although fizzbuzz is declared later in the function, JavaScr ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from var: const factorial = (n) => { return innerFactorial(n, 1); function innerFactorial (x, y) { if (x == 1) { return y; } else { return innerFactorial(x-1, x * y); } } } fa ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-bind]] - shared technical atoms: Bind shares technical record from function declarations: { (1 shared atom(s))
+- [[javascriptallonge-expression]] - shared technical atoms: Expression shares technical record from function declaration caveats 34: function trueDat () { return true } But this is not: ( function trueDat () { return true }) (1 shared atom(s))
 
 ## Source
 

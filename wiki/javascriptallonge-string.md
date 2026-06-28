@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-string
 page_kind: concept
-summary: String: 9 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
+summary: String: 7 statement(s) and 4 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-string@baf45e6d67aa513dcf9174ed0fa62511
+projection_coverage: topic-javascriptallonge-string@add9f8cbd6ec99e6b5863ea40c41d072
 ---
 
 # String
@@ -15,146 +15,97 @@ What [[javascriptallonge]] covers about string:
 
 ## Statements
 
-### values are expressions
-
-- xv
-
-Prelude: Values and Expressions over Coffee
-
-Now we see that “strings” are values, and you can make an expression out of strings and an operator +. Since strings are values, they are also expressions by themselves. But strings with operators are not values, they are expressions. Now we know what was missing with our “coffee grounds plus hot water” example. The coffee grounds were a value, the boiling hot water was a value, and the “plus” operator between them made the whole thing an expression that was not a value. _(javascriptallonge.pdf (source-range-83ecb080-00031))_
-
 ### values and identity
 
-- xvi
-
-Prelude: Values and Expressions over Coffee
-
-## **values and identity**
-
-In JavaScript, we test whether two values are identical with the === operator, and whether they are not identical with the !== operator:
-
-2 === 2 _//=> true_ 'hello' !== 'goodbye' _//=> true_
-
-How does === work, exactly? Imagine that you’re shown a cup of coffee. And then you’re shown another cup of coffee. Are the two cups “identical?” In JavaScript, there are four possibilities:
-
-First, sometimes, the cups are of different kinds. One is a demitasse, the other a mug. This corresponds to comparing two things in JavaScript that have different _types_ . For example, the string "2" is not the same thing as the number 2. Strings and numbers are different types, so strings and numbers are never identical:
-
-2 === '2' _//=> false_ **true** !== 'true' _//=> true_
-
-Second, sometimes, the cups are of the same type–perhaps two espresso cups–but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different “content.” For example, the number 5 is not the same thing as the number 2.
-
-**true** === **false** _//=> false_ 2 !== 5 _//=> true_ 'two' === 'five' _//=> false_
-
-What if the cups are of the same type _and_ the contents are the same? Well, JavaScript’s third and fourth possibilities cover that. _(javascriptallonge.pdf (source-range-83ecb080-00033))_
+- First, sometimes, the cups are of different kinds. One is a demitasse, the other a mug. This corresponds to comparing two things in JavaScript that have different types . For example, the string "2" is not the same thing as the number 2 . Strings and numbers are different types, so strings and numbers are never identical: _(javascriptallonge.pdf (source-range-31a4cf47-00122))_
 
 ### As Little As Possible About Functions, But No Less
 
-- The first sip: Basic Functions
+- In JavaScript, functions are values, but they are also much more than simple numbers, strings, or even complex data structures like trees or maps. Functions represent computations to be performed. Like numbers, strings, and arrays, they have a representation. Let's start with the second simplest possible function. 16 In JavaScript, it looks like this: _(javascriptallonge.pdf (source-range-31a4cf47-00172))_
 
-7
+### undefined
 
-## **As Little As Possible About Functions, But No Less**
+- Like numbers, booleans and strings, JavaScript can print out the value undefined . _(javascriptallonge.pdf (source-range-31a4cf47-00224))_
 
-In JavaScript, functions are values, but they are also much more than simple numbers, strings, or even complex data structures like trees or maps. Functions represent computations to be performed. Like numbers, strings, and arrays, they have a representation. Let’s start with the second simplest possible function.[16] In JavaScript, it looks like this:
+### call by sharing
 
-## () => 0
-
-This is a function that is applied to no values and returns 0. Let’s verify that our function is a value like all others:
-
-- (() => 0) _//=> [Function]_ What!? Why didn’t it type back () => 0 for us? This _seems_ to break our rule that if an expression is also a value, JavaScript will give the same value back to us. What’s going on? The simplest and easiest answer is that although the JavaScript interpreter does indeed return that value, displaying it on the screen is a slightly different matter. [Function] is a choice made by the people who wrote Node.js, the JavaScript environment that hosts the JavaScript REPL. If you try the same thing in a browser, you may see something else.
-
-> 16 The simplest possible function is () => {}, we’ll see that later. _(javascriptallonge.pdf (source-range-83ecb080-00044))_
-
-- The first sip: Basic Functions
-
-11
-
-## **the simplest possible block**
-
-There’s another thing we can put to the right of an arrow, a _block_ . A block has zero or more _statements_ , separated by semicolons.[18] So, this is a valid function:
-
-## () => {}
-
-It returns the result of evaluating a block that has no statements. What would that be? Let’s try it: (() => {})() _//=> undefined_
-
-What is this undefined?
-
-## **undefined**
-
-In JavaScript, the absence of a value is written undefined, and it means there is no value. It will crop up again. undefined is its own type of value, and it acts like a value type:
-
-## **undefined**
-
-_//=> undefined_
-
-Like numbers, booleans and strings, JavaScript can print out the value undefined.
-
-**undefined** === **undefined**
-
-_//=> true_ (() => {})() === (() => {})() _//=> true_ (() => {})() === **undefined** _//=> true_
-
-No matter how you evaluate undefined, you get an identical value back. undefined is a value that means “I don’t have a value.” But it’s still a value :-)
-
-> 18Sometimes, you will find JavaScript that has statements that are separated by newlines without semi-colons. This works because JavaScript has a feature that can infer where the semi-colons should be most of the time. We will not take advantage of this feature, but it’s helpful to know it exists. _(javascriptallonge.pdf (source-range-83ecb080-00048))_
+- We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. Now we can elaborate: When JavaScript binds a value-type to a name, it makes a copy of the value and places the copy in the environment. As you recall, value types like strings and numbers are identical to each other if they have the same content. So JavaScript can make as many copies of strings, numbers, or booleans as it wishes. _(javascriptallonge.pdf (source-range-31a4cf47-00325))_
 
 ### Arrays and Destructuring Arguments
 
-- Composing and Decomposing Data
-
-78
-
-## **Arrays and Destructuring Arguments**
-
-While we have mentioned arrays briefly, we haven’t had a close look at them. Arrays are JavaScript’s “native” representation of lists. Strings are important because they represent writing. Lists are important because they represent ordered collections of things, and ordered collections are a fundamental abstraction for making sense of reality.
-
-## **array literals**
-
-JavaScript has a literal syntax for creating an array: The [ and ] characters. We can create an empty array: [] _//=> []_ We can create an array with one or more _elements_ by placing them between the brackets and separating the items with commas. Whitespace is optional:
-
-[1] _//=> [1]_ [2, 3, 4] _//=> [2,3,4]_ Any expression will work:
-
-[ 2, 3, 2 + 2 ] _//=> [2,3,4]_ Including an expression denoting another array: [[[[[]]]]] This is an array with one element that is an array with one element that is an array with one element that is an array with one element that is an empty array. Although that seems like something nobody would ever construct, many students have worked with almost the exact same thing when they explored various means of constructing arithmetic from Set Theory.
-
-Any expression will do, including names: _(javascriptallonge.pdf (source-range-83ecb080-00124))_
+- While we have mentioned arrays briefly, we haven't had a close look at them. Arrays are JavaScript's 'native' representation of lists. Strings are important because they represent writing. Lists are important because they represent ordered collections of things, and ordered collections are a fundamental abstraction for making sense of reality. _(javascriptallonge.pdf (source-range-31a4cf47-00818))_
 
 ### A Warm Cup: Basic Strings and Quasi-Literals
 
-- A Warm Cup: Basic Strings and Quasi-Literals
+- String manipulation is extremely common in programming. Writing is a big part of what makes us human, and strings are how JavaScript and most other languages represent writing. _(javascriptallonge.pdf (source-range-31a4cf47-01503))_
 
-180
+### quasi-literals
 
-An expression is any valid unit of code that resolves to a value.—Mozilla Development Network: Expressions and operators[87] Like most programming languages, JavaScript also has string literals, like 'fubar' or 'fizzbuzz'. Special characters can be included in a string literal by means of an _escape sequence_ . For example, the escape sequence \n inserts a newline character in a string literal, like this: 'first line\nsecond line'.
+- JavaScript supports quasi-literal strings , a/k/a 'Template Strings' or 'String Interpolation Expressions.' A quasi-literal string is something that looks like a string literal, but is actually an expression. Quasi-literal strings are denoted with back quotes, and most strings that can be expressed as literals have the exact same meaning as quasi-literals, e.g. _(javascriptallonge.pdf (source-range-31a4cf47-01505))_
 
-There are operators that can be used on strings. The most common is +, it _concatenates_ : 'fu' + 'bar' _//=> 'fubar'_
 
-String manipulation is extremely common in programming. Writing is a big part of what makes us human, and strings are how JavaScript and most other languages represent writing.
+## Technical atoms
 
-## **quasi-literals**
+### Technical frame 1: values and identity
 
-JavaScript supports _quasi-literal strings_ , a/k/a “Template Strings” or “String Interpolation Expressions.” A quasi-literal string is something that looks like a string literal, but is actually an expression. Quasi-literal strings are denoted with back quotes, and most strings that can be expressed as literals have the exact same meaning as quasi-literals, e.g.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00124))_
 
-`foobar` _//=> 'foobar'_ `fizz` + `buzz` _//=> 'fizzbuzz'_
+> Second, sometimes, the cups are of the same type-perhaps two espresso cups-but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different 'content.' For example, the number 5 is not the same thing as the number 2 .
 
-Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this “unquoting,” the more contemporary term is “interpolation.” An unquoted expression is inserted in a quasi-literal with ${expression}. The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00123))_
 
-For example:
+```
+2 === '2' //=> false true !== 'true' //=> true
+```
 
-- `A popular number for nerds is **${** 40 + 2 **}** `
+### Technical frame 2: As Little As Possible About Functions, But No Less
 
-- _//=> 'A popular number for nerds is 42'_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00174))_
 
-A quasi-literal is computationally equivalent to an expression using +. So the above expression could also be written:
+> This is a function that is applied to no values and returns 0 . Let's verify that our function is a value like all others:
 
-> 87https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators _(javascriptallonge.pdf (source-range-83ecb080-00242))_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00173))_
+
+```
+() => 0
+```
+
+### Technical frame 3: A Warm Cup: Basic Strings and Quasi-Literals
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01503))_
+
+> String manipulation is extremely common in programming. Writing is a big part of what makes us human, and strings are how JavaScript and most other languages represent writing.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01502))_
+
+```
+'fu' + 'bar' //=> 'fubar'
+```
+
+### Technical frame 4: quasi-literals
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01507))_
+
+> Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this 'unquoting,' the more contemporary term is 'interpolation.' An unquoted expression is inserted in a quasi-literal with ${expression} . The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01506))_
+
+```
+`foobar` //=> 'foobar' `fizz` + `buzz` //=> 'fizzbuzz'
+```
 
 
 ## Related pages
 
-- [[javascriptallonge-javascript]] - shared statements: Javascript shares source evidence from As Little As Possible About Functions, But No Less: The first sip: Basic Functions  11  ## **the simplest possible block**  There’s another thing we can put to the right of an arrow, a _block_ . A block has zero or mo ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-literal]] - shared statements: Literal shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: A Warm Cup: Basic Strings and Quasi-Literals  180  An expression is any valid unit of code that resolves to a value.—Mozilla Development Network: Expressions and ope ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-operator]] - shared statements: Operator shares source evidence from values are expressions: xv  Prelude: Values and Expressions over Coffee  Now we see that “strings” are values, and you can make an expression out of strings and an operator +. Since strings ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-quasi]] - shared statements: Quasi shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: A Warm Cup: Basic Strings and Quasi-Literals  180  An expression is any valid unit of code that resolves to a value.—Mozilla Development Network: Expressions and ope ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-quasi-literal]] - shared statements: Quasi Literal shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: A Warm Cup: Basic Strings and Quasi-Literals  180  An expression is any valid unit of code that resolves to a value.—Mozilla Development Network: Expressions and ope ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from undefined: Like numbers, booleans and strings, JavaScript can print out the value undefined .; Javascript shares technical record from values and identity: 2 === '2' //=> false true !== 'true' //=> true (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-array]] - shared statements and technical atoms: Array shares source evidence from As Little As Possible About Functions, But No Less: In JavaScript, functions are values, but they are also much more than simple numbers, strings, or even complex data structures like trees or maps. Functions represen ... [truncated]; Array shares technical record from As Little As Possible About Functions, But No Less: () => 0 (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-literal]] - shared statements and technical atoms: Literal shares source evidence from quasi-literals: JavaScript supports quasi-literal strings , a/k/a 'Template Strings' or 'String Interpolation Expressions.' A quasi-literal string is something that looks like a str ... [truncated]; Literal shares technical record from quasi-literals: `foobar` //=> 'foobar' `fizz` + `buzz` //=> 'fizzbuzz' (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-quasi]] - shared statements and technical atoms: Quasi shares source evidence from quasi-literals: JavaScript supports quasi-literal strings , a/k/a 'Template Strings' or 'String Interpolation Expressions.' A quasi-literal string is something that looks like a str ... [truncated]; Quasi shares technical record from quasi-literals: `foobar` //=> 'foobar' `fizz` + `buzz` //=> 'fizzbuzz' (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-expression]] - shared technical atoms: Expression shares technical record from quasi-literals: `foobar` //=> 'foobar' `fizz` + `buzz` //=> 'fizzbuzz' (1 shared atom(s))
+- [[javascriptallonge-function]] - shared technical atoms: Function shares technical record from As Little As Possible About Functions, But No Less: () => 0 (1 shared atom(s))
+- [[javascriptallonge-recall]] - shared statements: Recall shares source evidence from call by sharing: We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. Now we can elaborate: When JavaScript binds a value-type to ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-type]] - shared statements: Type shares source evidence from call by sharing: We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. Now we can elaborate: When JavaScript binds a value-type to ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-value]] - shared statements: Value shares source evidence from call by sharing: We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. Now we can elaborate: When JavaScript binds a value-type to ... [truncated] (1 shared statement(s))
 
 ## Source
 

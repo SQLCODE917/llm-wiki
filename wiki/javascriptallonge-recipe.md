@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-recipe
 page_kind: concept
-summary: Recipe: 5 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
+summary: Recipe: 5 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-recipe@009b99c778f782e06d9221f7581b043e
+projection_coverage: topic-javascriptallonge-recipe@bfb8a0d6d06e841b2aaef71eca07c96a
 ---
 
 # Recipe
@@ -15,58 +15,105 @@ What [[javascriptallonge]] covers about recipe:
 
 ## Statements
 
-### Building Blocks
+### Disclaimer
 
-- The first sip: Basic Functions
+- The recipes are written for practicality, and their implementation may introduce JavaScript features that haven't been discussed in the text to this point, such as methods and/or prototypes. The overall use of each recipe will fit within the spirit of the language discussed so far, even if the implementations may not. _(javascriptallonge.pdf (source-range-31a4cf47-00658))_
 
-48
+- These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want to leave a 'hole' in the argument list, you will need to either use a generalized partial recipe, or you will need to repeatedly apply arguments. They are context-agnostic. _(javascriptallonge.pdf (source-range-31a4cf47-00660))_
 
-## **Building Blocks**
+### Maybe
 
-When you look at functions within functions in JavaScript, there’s a bit of a “spaghetti code” look to it. The strength of JavaScript is that you can do anything. The weakness is that you will. There are ifs, fors, returns, everything thrown higgledy piggledy together. Although you needn’t restrict yourself to a small number of simple patterns, it can be helpful to understand the patterns so that you can structure your code around some basic building blocks.
+- This recipe concerns a pattern that is very common: A function fn takes a value as a parameter, and its behaviour by design is to do nothing if the parameter is nothing: _(javascriptallonge.pdf (source-range-31a4cf47-00696))_
 
-## **composition**
+- Naturally, there's a function decorator recipe for that, borrowed from Haskell's maybe monad 50 , Ruby's andand 51 , and CoffeeScript's existential method invocation: _(javascriptallonge.pdf (source-range-31a4cf47-00700))_
 
-: One of the most basic of these building blocks is _composition_ **const** cookAndEat = (food) => eat(cook(food));
+### Disclaimer
 
-It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators: **const** compose = (a, b) => (c) => a(b(c)); **const** cookAndEat = compose(eat, cook);
+- The recipes are written for practicality, and their implementation may introduce JavaScript features that haven't been discussed in the text to this point, such as methods and/or prototypes. The overall use of each recipe will fit within the spirit of the language discussed so far, even if the implementations may not. _(javascriptallonge.pdf (source-range-31a4cf47-01428))_
 
-If that was all there was to it, composition wouldn’t matter much. But like many patterns, using it when it applies is only 20% of the benefit. The other 80% comes from organizing your code such that you can use it: Writing functions that can be composed in various ways.
 
-In the recipes, we’ll look at a decorator called once: It ensures that a function can only be executed once. Thereafter, it does nothing. Once is useful for ensuring that certain side effects are not repeated. We’ll also look at maybe: It ensures that a function does nothing if it is given nothing (like null or undefined) as an argument.
+## Technical atoms
 
-Of course, you needn’t use combinators to implement either of these ideas, you can use if statements. But once and maybe compose, so you can chain them together as you see fit:
+### Technical frame 1: Disclaimer
 
-- **const** actuallyTransfer= (from, to, amount) => _// do something_ **const** invokeTransfer = once(maybe(actuallyTransfer(...))); _(javascriptallonge.pdf (source-range-83ecb080-00086))_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00662))_
 
-### Recipes with Basic Functions
+> As noted above, our partial recipe allows us to create functions that are partial applications of functions that are context aware. We'd need a different recipe if we wish to create partial applications of object methods.
 
-- ## **Recipes with Basic Functions**
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00661))_
 
-**==> picture [384 x 289] intentionally omitted <==**
+```
+const callFirst = (fn, larg) => function (...rest) { return fn.call( this , larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call( this , ...rest, rarg); } const greet = (me, you) => `Hello, ${ you } , my name is ${ me } `; const heliosSaysHello = callFirst(greet, 'Helios'); heliosSaysHello('Eartha') //=> 'Hello, Eartha, my name is Helios' const sayHelloToCeline = callLast(greet, 'Celine'); sayHelloToCeline('Eartha') //=> 'Hello, Celine, my name is Eartha'
+```
 
-**Before combining ingredients, begin with implements so clean, they gleam.**
+### Technical frame 2: Maybe
 
-Having looked at basic pure functions and closures, we’re going to see some practical recipes that focus on the premise of functions that return functions.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00698))_
 
-## **Disclaimer**
+> Alternately, the function may be intended to work with any value, but the code calling the function wishes to emulate the behaviour of doing nothing by design when given nothing:
 
-The recipes are written for practicality, and their implementation may introduce JavaScript features that haven’t been discussed in the text to this point, such as methods and/or prototypes. The overall _use_ of each recipe will fit within the spirit of the language discussed so far, even if the implementations may not. _(javascriptallonge.pdf (source-range-83ecb080-00097))_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00697))_
 
-### Recipes with Data
+```
+const isSomething = (value) => value !== null && value !== void 0; const checksForSomething = (value) => { if (isSomething(value)) { // function's true logic } }
+```
 
-- Recipes with Data
+### Technical frame 3: Maybe
 
-169
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00708))_
 
-## **Disclaimer**
+> If some code ever tries to call model.setSomething with nothing, the operation will be skipped.
 
-The recipes are written for practicality, and their implementation may introduce JavaScript features that haven’t been discussed in the text to this point, such as methods and/or prototypes. The overall _use_ of each recipe will fit within the spirit of the language discussed so far, even if the implementations may not. _(javascriptallonge.pdf (source-range-83ecb080-00226))_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00701))_
+
+```
+const maybe = (fn) => function (...args) { if (args.length === 0) { return } else { for ( let arg of args) { if (arg == null ) return ; }
+```
+
+### Technical frame 4: Maybe
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00708))_
+
+> If some code ever tries to call model.setSomething with nothing, the operation will be skipped.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00703))_
+
+```
+return fn.apply( this , args) } }
+```
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00659))_
+
+| entry | content |
+| --- | --- |
+| 45 | from Michael Fogus, Functional JavaScript |
+| 46 | from Oliver Steele and the terse but handy node-ap |
+| 47 | from James Halliday. |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+Partial Application
+In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libraries provide some form of partial application. You'll find examples in Lemonad 45 from Michael Fogus, Functional JavaScript 46 from Oliver Steele and the terse but handy node-ap 47 from James Halliday.
+```
+
+</details>
 
 
 ## Related pages
 
-- [[javascriptallonge-decorator]] - shared statements: Decorator shares source evidence from Building Blocks: The first sip: Basic Functions  48  ## **Building Blocks**  When you look at functions within functions in JavaScript, there’s a bit of a “spaghetti code” look to it ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Maybe: Naturally, there's a function decorator recipe for that, borrowed from Haskell's maybe monad 50 , Ruby's andand 51 , and CoffeeScript's existential method invocation:; Function shares technical record from Maybe: const isSomething = (value) => value !== null && value !== void 0; const checksForSomething = (value) => { if (isSomething(value)) { // function's true logic } } (1 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-pattern]] - shared statements and technical atoms: Pattern shares source evidence from Maybe: This recipe concerns a pattern that is very common: A function fn takes a value as a parameter, and its behaviour by design is to do nothing if the parameter is nothing:; Pattern shares technical record from Maybe: const isSomething = (value) => value !== null && value !== void 0; const checksForSomething = (value) => { if (isSomething(value)) { // function's true logic } } (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical record from Disclaimer: const callFirst = (fn, larg) => function (...rest) { return fn.call( this , larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call( thi ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-bind]] - shared technical atoms: Bind shares technical record from Disclaimer: const callFirst = (fn, larg) => function (...rest) { return fn.call( this , larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call( thi ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-block]] - shared technical atoms: Block shares technical table: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-functional]] - shared technical atoms: Functional shares technical table: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical table: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-list]] - shared technical atoms: List shares technical record from Disclaimer: const callFirst = (fn, larg) => function (...rest) { return fn.call( this , larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call( thi ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-write]] - shared technical atoms: Write shares technical table: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (1 shared atom(s))
 
 ## Source
 

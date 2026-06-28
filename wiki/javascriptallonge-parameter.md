@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-parameter
 page_kind: concept
-summary: Parameter: 4 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
+summary: Parameter: 6 statement(s) and 10 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-parameter@39e6108923fd2b111ed05c375ba5c68c
+projection_coverage: topic-javascriptallonge-parameter@0529b493f02e8dbe0d5bda90ff66c201
 ---
 
 # Parameter
@@ -15,62 +15,166 @@ What [[javascriptallonge]] covers about parameter:
 
 ## Statements
 
-### That Constant Coffee Craving
+### const and lexical scope
 
-- 34
+- Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. _(javascriptallonge.pdf (source-range-31a4cf47-00465))_
 
-The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => diameter * PI })() ) _//=> 6.2831853_
+### are consts also from a shadowy planet?
 
-Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope.
+- We just saw that values bound with const use lexical scope, just like values bound with parameters. They are looked up in the environment where they are declared. And we know that functions create environments. Parameters are declared when we create functions, so it makes sense that parameters are bound to environments created when we invoke functions. _(javascriptallonge.pdf (source-range-31a4cf47-00467))_
 
-## **are consts also from a shadowy planet?**
+- Parameters are only bound when we invoke a function. That's why we made all these IIFEs. But const statements can appear inside blocks. What happens when we use a const inside of a block? We'll need a gratuitous block. We've seen if statements, what could be more gratuitous than: _(javascriptallonge.pdf (source-range-31a4cf47-00484))_
 
-We just saw that values bound with const use lexical scope, just like values bound with parameters. They are looked up in the environment where they are declared. And we know that functions create environments. Parameters are declared when we create functions, so it makes sense that parameters are bound to environments created when we invoke functions.
+### Left-Variadic Functions
 
-But const statements can appear inside blocks, and we saw that blocks can appear inside of other blocks, including function bodies. So where are const variables bound? In the function environment? Or in an environment corresponding to the block?
+- ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do? _(javascriptallonge.pdf (source-range-31a4cf47-00723))_
 
-We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we’ll bind two different values to the same name, but one environment will be completely enclosed by the other.
+### function parameters are eager
 
-Let’s start, as above, by doing this with parameters. We’ll start with:
+- In contrast to the behaviour of the ternary operator, || , and && , function parameters are always eagerly evaluated : _(javascriptallonge.pdf (source-range-31a4cf47-00801))_
 
-((PI) => (diameter) => diameter * PI )(3.14159265) And gratuitously wrap it in another IIFE so that we can bind PI to something else: _(javascriptallonge.pdf (source-range-83ecb080-00070))_
+### the vireo
 
-- 36
+- Given that our latin data is represented as the function (selector) => selector("primus")("secundus") , our obvious next step is to make a function that makes data. For arrays, we'd write cons = (first, second) => [first, second] . For objects we'd write: cons = (first, second) => {first, second} . In both cases, we take two parameters, and return the form of the data. _(javascriptallonge.pdf (source-range-31a4cf47-01364))_
 
-The first sip: Basic Functions ((diameter) => { **const** PI = 3.14159265; (() => { **const** PI = 3; })(); **return** diameter * PI; })(2) _//=> 6.2831853_
 
-Yes, names bound with const shadow enclosing bindings just like parameters. But wait! There’s more!!!
+## Technical atoms
 
-Parameters are only bound when we invoke a function. That’s why we made all these IIFEs. But const statements can appear inside blocks. What happens when we use a const inside of a block?
+### Technical frame 1: are consts also from a shadowy planet?
 
-We’ll need a gratuitous block. We’ve seen if statements, what could be more gratuitous than: **if** ( **true** ) { _// an immediately invoked block statement (IIBS)_ } Let’s try it: ((diameter) => { **const** PI = 3; **if** ( **true** ) { **const** PI = 3.14159265; **return** diameter * PI; } })(2) _//=> 6.2831853_ ((diameter) => { **const** PI = 3.14159265; **if** ( **true** ) { **const** PI = 3; } **return** diameter * PI; _(javascriptallonge.pdf (source-range-83ecb080-00072))_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00476))_
 
-### Making Data Out Of Functions
+> And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the 'outer' environment? Let's rewrite things slightly differently:
 
-- Composing and Decomposing Data
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00471))_
 
-159
+```
+((PI) => (diameter) => diameter * PI )(3.14159265)
+```
 
-Our latin data structure is no longer a dumb data structure, it’s a function. And instead of passing latin to first or second, we pass first or second to latin. It’s _exactly backwards_ of the way we write functions that operate on data.
+### Technical frame 2: are consts also from a shadowy planet?
 
-## **the vireo**
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00484))_
 
-Given that our latin data is represented as the function (selector) => selector("primus")("secundus"), our obvious next step is to make a function that makes data. For arrays, we’d write cons = (first, second) => [first, second]. For objects we’d write: cons = (first, second) => {first, second}. In both cases, we take two parameters, and return the form of the data.
+> Parameters are only bound when we invoke a function. That's why we made all these IIFEs. But const statements can appear inside blocks. What happens when we use a const inside of a block? We'll need a gratuitous block. We've seen if statements, what could be more gratuitous than:
 
-For “data” we access with K and K(I), our “structure” is the function (selector) => selector("primus")("secundus"). Let’s extract those into parameters: (first, second) => (selector) => selector(first)(second) For consistency with the way combinators are written as functions taking just one parameter, we’ll curry[78] the function: (first) => (second) => (selector) => selector(first)(second) Let’s try it, we’ll use the word pair for the function that makes data (When we need to refer to a specific pair, we’ll use the name aPair by default): **const** first = K, second = K(I), pair = (first) => (second) => (selector) => selector(first)(second); **const** latin = pair("primus")("secundus"); latin(first) _//=> "primus"_ latin(second) _//=> "secundus"_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00482))_
 
-It works! Now what is this pair function? If we change the names to x, y, and z, we get: (x) => (y) => (z) => z(x)(y). That’s the V combinator, the Vireo! So we can write:
+```
+((diameter) => { const PI = 3.14159265; (() => { const PI = 3; })(); return diameter * PI; })(2) //=> 6.2831853
+```
 
-78https://en.wikipedia.org/wiki/Currying _(javascriptallonge.pdf (source-range-83ecb080-00215))_
+### Technical frame 3: are consts also from a shadowy planet?
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
+
+> Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00485))_
+
+```
+if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: ((diameter) => { const PI = 3; if ( true ) { const PI = 3.14159265; return diameter * PI; } })(2) //=> 6.2831853 ((diameter) => { const PI = 3.14159265; if ( true ) { const PI = 3; } return diameter * PI;
+```
+
+### Technical frame 4: are consts also from a shadowy planet?
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
+
+> Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00486))_
+
+```
+})(2) //=> 6.2831853
+```
+
+### Technical frame 5: Left-Variadic Functions
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00719))_
+
+> This can be useful when writing certain kinds of destructuring algorithms. For example, we might want to have a function that builds some kind of team record. It accepts a coach, a captain, and an arbitrary number of players. Easy in ECMAScript 2015:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00718))_
+
+```
+const abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); }; abccc(1, 2, 3, 4, 5) 1 2 [3,4,5]
+```
+
+### Technical frame 6: function parameters are eager
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00804))_
+
+> If we need to have functions with control-flow semantics, we can pass anonymous functions. We obviously don't need anything like this for or and and , but to demonstrate the technique:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00802))_
+
+```
+const or = (a, b) => a || b const and = (a, b) => a && b const even = (n) => or(n === 0, and(n !== 1, even(n - 2))) even(42) //=> Maximum call stack size exceeded.
+```
+
+### Technical frame 7: destructuring parameters
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00878))_
+
+> It looks like destructuring. It acts like destructuring. There is only one difference: We have not tried gathering. Let's do that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00875))_
+
+```
+foo() bar("smaug") baz(1, 2, 3)
+```
+
+### Technical frame 8: destructuring parameters
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00878))_
+
+> It looks like destructuring. It acts like destructuring. There is only one difference: We have not tried gathering. Let's do that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00877))_
+
+```
+const foo = () => ... const bar = (name) => ... const baz = (a, b, c) => ...
+```
+
+### Technical frame 9: the vireo
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01367))_
+
+> For consistency with the way combinators are written as functions taking just one parameter, we'll curry 78 the function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01366))_
+
+```
+(first, second) => (selector) => selector(first)(second)
+```
+
+### Technical frame 10: the vireo
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01374))_
+
+> As an aside, the Vireo is a little like JavaScript's .apply function. It says, 'take these two values and apply them to this function.' There are other, similar combinators that apply values to functions. One notable example is the 'thrush' or T combinator: It takes one value and applies it to a function. It is known to most programmers as .tap .
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01368))_
+
+```
+(first) => (second) => (selector) => selector(first)(second)
+```
 
 
 ## Related pages
 
-- [[javascriptallonge-bind]] - shared statements: Bind shares source evidence from That Constant Coffee Craving: 34  The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => d ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-binding]] - shared statements: Binding shares source evidence from That Constant Coffee Craving: 34  The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => d ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-const]] - shared statements: Const shares source evidence from That Constant Coffee Craving: 34  The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => d ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-return]] - shared statements: Return shares source evidence from Making Data Out Of Functions: Composing and Decomposing Data  159  Our latin data structure is no longer a dumb data structure, it’s a function. And instead of passing latin to first or second, w ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-value]] - shared statements: Value shares source evidence from That Constant Coffee Craving: 34  The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => d ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from function parameters are eager: In contrast to the behaviour of the ternary operator, || , and && , function parameters are always eagerly evaluated :; Function shares technical record from Left-Variadic Functions: const abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); }; abccc(1, 2, 3, 4, 5) 1 2 [3,4,5] (1 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-behaviour]] - shared statements and technical atoms: Behaviour shares source evidence from function parameters are eager: In contrast to the behaviour of the ternary operator, || , and && , function parameters are always eagerly evaluated :; Behaviour shares technical record from function parameters are eager: const or = (a, b) => a || b const and = (a, b) => a && b const even = (n) => or(n === 0, and(n !== 1, even(n - 2))) even(42) //=> Maximum call stack size exceeded. (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-bind]] - shared statements and technical atoms: Bind shares source evidence from const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope.; Bind shares technical record from are consts also from a shadowy planet?: ((diameter) => { const PI = 3.14159265; (() => { const PI = 3; })(); return diameter * PI; })(2) //=> 6.2831853 (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-binding]] - shared statements and technical atoms: Binding shares source evidence from const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope.; Binding shares technical record from are consts also from a shadowy planet?: ((diameter) => { const PI = 3.14159265; (() => { const PI = 3; })(); return diameter * PI; })(2) //=> 6.2831853 (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-gathering]] - shared statements and technical atoms: Gathering shares source evidence from Left-Variadic Functions: ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do?; Gathering shares technical record from Left-Variadic Functions: const abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); }; abccc(1, 2, 3, 4, 5) 1 2 [3,4,5] (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-bound]] - shared technical atoms: Bound shares technical record from are consts also from a shadowy planet?: if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: ((diameter) => { const PI = 3; if ( true ) { const PI = 3.14159265; return diameter * ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-statement]] - shared technical atoms: Statement shares technical record from are consts also from a shadowy planet?: if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: ((diameter) => { const PI = 3; if ( true ) { const PI = 3.14159265; return diameter * ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from Left-Variadic Functions: const abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); }; abccc(1, 2, 3, 4, 5) 1 2 [3,4,5] (1 shared atom(s))
+- [[javascriptallonge-const]] - shared statements: Const shares source evidence from const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. (1 shared statement(s))
+- [[javascriptallonge-ecmascript]] - shared statements: Ecmascript shares source evidence from Left-Variadic Functions: ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do? (1 shared statement(s))
+- [[javascriptallonge-return]] - shared statements: Return shares source evidence from the vireo: Given that our latin data is represented as the function (selector) => selector("primus")("secundus") , our obvious next step is to make a function that makes data. ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-value]] - shared statements: Value shares source evidence from const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. (1 shared statement(s))
 
 ## Source
 

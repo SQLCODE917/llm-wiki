@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-statement
 page_kind: concept
-summary: Statement: 6 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
+summary: Statement: 6 statement(s) and 11 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-statement@64a9fb055ea0da4dd808ae17af8eb4bd
+projection_coverage: topic-javascriptallonge-statement@44951b6f20ca412a6ba4ff12128f5dbd
 ---
 
 # Statement
@@ -15,119 +15,189 @@ What [[javascriptallonge]] covers about statement:
 
 ## Statements
 
-### As Little As Possible About Functions, But No Less
+### a quick summary of functions and bodies
 
-- 14
+- One of the important possible statements is a return statement. A return statement accepts any valid JavaScript expression. _(javascriptallonge.pdf (source-range-31a4cf47-00291))_
 
-The first sip: Basic Functions (() => 2 + 2)() _//=> 4_ (() => { 2 + 2 })() _//=> undefined_ (() => (1 + 1, 2 + 2))() _//=> 4_ (() => { 1 + 1; 2 + 2 })() _//=> undefined_ So how do we get a function that evaluates a block to return a value when applied? With the return keyword and any expression: (() => { **return** 0 })() _//=> 0_ (() => { **return** 1 })() _//=> 1_ (() => { **return** 'Hello ' + 'World' })() _// 'Hello World'_
+### nested blocks
 
-The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example: (() => { 1 + 1; **return** 2 + 2 })() _//=> 4_ And also: (() => { **return** 1 + 1; 2 + 2 })() _//=> 2_
+- The if statement is a statement, not an expression (an unfortunate design choice), and its clauses are statements or blocks. So we could also write something like: _(javascriptallonge.pdf (source-range-31a4cf47-00445))_
 
-The return statement is the first statement we’ve seen, and it behaves differently than an expression. For example, you can’t use one as the expression in a simple function, because it isn’t an expression: _(javascriptallonge.pdf (source-range-83ecb080-00051))_
+### are consts also from a shadowy planet?
 
-### That Constant Coffee Craving
+- But const statements can appear inside blocks, and we saw that blocks can appear inside of other blocks, including function bodies. So where are const variables bound? In the function environment? Or in an environment corresponding to the block? _(javascriptallonge.pdf (source-range-31a4cf47-00468))_
 
-- The first sip: Basic Functions
+- Parameters are only bound when we invoke a function. That's why we made all these IIFEs. But const statements can appear inside blocks. What happens when we use a const inside of a block? We'll need a gratuitous block. We've seen if statements, what could be more gratuitous than: _(javascriptallonge.pdf (source-range-31a4cf47-00484))_
 
-31
+### Functions
 
-## **nested blocks**
+- Blocks also create scopes if const statements are within them. _(javascriptallonge.pdf (source-range-31a4cf47-00650))_
 
-Up to now, we’ve only ever seen blocks we use as the body of functions. But there are other kinds of blocks. One of the places you can find blocks is in an if statement. In JavaScript, an if statement looks like this: (n) => { **const** even = (x) => { **if** (x === 0) **return true** ; **else return** !even(x - 1); } **return** even(n) } And it works for fairly small numbers: ((n) => { **const** even = (x) => { **if** (x === 0) **return true** ; **else return** !even(x - 1); } **return** even(n) })(13) _//=> false_
+### destructuring arrays
 
-The if statement is a statement, not an expression (an unfortunate design choice), and its clauses are statements or blocks. So we could also write something like: (n) => { **const** even = (x) => { **if** (x === 0) **return true** ; **else** { **const** odd = (y) => !even(y); **return** odd(x - 1); } _(javascriptallonge.pdf (source-range-83ecb080-00067))_
+- The statement const [something] = wrapped; destructures the array represented by wrapped , binding the value of its single element to the name something . We can do the same thing with more than one element: _(javascriptallonge.pdf (source-range-31a4cf47-00847))_
 
-- 34
 
-The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => diameter * PI })() ) _//=> 6.2831853_
+## Technical atoms
 
-Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope.
+### Technical frame 1: nested blocks
 
-## **are consts also from a shadowy planet?**
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00445))_
 
-We just saw that values bound with const use lexical scope, just like values bound with parameters. They are looked up in the environment where they are declared. And we know that functions create environments. Parameters are declared when we create functions, so it makes sense that parameters are bound to environments created when we invoke functions.
+> The if statement is a statement, not an expression (an unfortunate design choice), and its clauses are statements or blocks. So we could also write something like:
 
-But const statements can appear inside blocks, and we saw that blocks can appear inside of other blocks, including function bodies. So where are const variables bound? In the function environment? Or in an environment corresponding to the block?
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00442))_
 
-We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we’ll bind two different values to the same name, but one environment will be completely enclosed by the other.
+```
+(n) => { const even = (x) => { if (x === 0) return true ; else return !even(x - 1); } return even(n) }
+```
 
-Let’s start, as above, by doing this with parameters. We’ll start with:
+### Technical frame 2: nested blocks
 
-((PI) => (diameter) => diameter * PI )(3.14159265) And gratuitously wrap it in another IIFE so that we can bind PI to something else: _(javascriptallonge.pdf (source-range-83ecb080-00070))_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00449))_
 
-- 36
+> We've used a block as the else clause, and since it's a block, we've placed a const statement inside it.
 
-The first sip: Basic Functions ((diameter) => { **const** PI = 3.14159265; (() => { **const** PI = 3; })(); **return** diameter * PI; })(2) _//=> 6.2831853_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00446))_
 
-Yes, names bound with const shadow enclosing bindings just like parameters. But wait! There’s more!!!
+```
+(n) => { const even = (x) => { if (x === 0) return true ; else { const odd = (y) => !even(y); return odd(x - 1); }
+```
 
-Parameters are only bound when we invoke a function. That’s why we made all these IIFEs. But const statements can appear inside blocks. What happens when we use a const inside of a block?
+### Technical frame 3: nested blocks
 
-We’ll need a gratuitous block. We’ve seen if statements, what could be more gratuitous than: **if** ( **true** ) { _// an immediately invoked block statement (IIBS)_ } Let’s try it: ((diameter) => { **const** PI = 3; **if** ( **true** ) { **const** PI = 3.14159265; **return** diameter * PI; } })(2) _//=> 6.2831853_ ((diameter) => { **const** PI = 3.14159265; **if** ( **true** ) { **const** PI = 3; } **return** diameter * PI; _(javascriptallonge.pdf (source-range-83ecb080-00072))_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00449))_
 
-### Summary
+> We've used a block as the else clause, and since it's a block, we've placed a const statement inside it.
 
-- The first sip: Basic Functions
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00447))_
 
-55
+```
+} return even(n) } And this also works: ((n) => { const even = (x) => { if (x === 0) return true ; else { const odd = (y) => !even(y); return odd(x - 1); } } return even(n) })(42)
+```
 
-## **Summary**
+### Technical frame 4: nested blocks
 
-**==> picture [29 x 29] intentionally omitted <==**
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00449))_
 
-## **Functions**
+> We've used a block as the else clause, and since it's a block, we've placed a const statement inside it.
 
-- Functions are values that can be part of expressions, returned from other functions, and so forth.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00448))_
 
-- Functions are _reference values_ .
+```
+//=> true
+```
 
-- Functions are applied to arguments.
+### Technical frame 5: are consts also from a shadowy planet?
 
-- The arguments are passed by sharing, which is also called “pass by value.” - Fat arrow functions have expressions or blocks as their bodies.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
 
-- function keyword functions always have blocks as their bodies.
+> Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
-- Function bodies have zero or more statements.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00485))_
 
-- Expression bodies evaluate to the value of the expression.
+```
+if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: ((diameter) => { const PI = 3; if ( true ) { const PI = 3.14159265; return diameter * PI; } })(2) //=> 6.2831853 ((diameter) => { const PI = 3.14159265; if ( true ) { const PI = 3; } return diameter * PI;
+```
 
-- Block bodies evaluate to whatever is returned with the return keyword, or to undefined.
+### Technical frame 6: are consts also from a shadowy planet?
 
-- JavaScript uses const to bind values to names within block scope.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
 
-- JavaScript uses function declarations to bind functions to names within function scope. Function declarations are “hoisted.” - Function application creates a scope.
+> Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
-- Blocks also create scopes if const statements are within them.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00486))_
 
-- Scopes are nested and free variable references closed over.
+```
+})(2) //=> 6.2831853
+```
 
-- Variables can shadow variables in an enclosing scope. _(javascriptallonge.pdf (source-range-83ecb080-00095))_
+### Technical frame 7: are consts also from a shadowy planet?
 
-### Arrays and Destructuring Arguments
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
 
-- Composing and Decomposing Data
+> Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
-80 **const** x = [], a = [x]; a[0] === x
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00489))_
 
-_//=> true, arrays store references to the things you put in them._
+```
+((diameter) => { const PI = 3.14159265; if ( true ) { const PI = 3; } return diameter * PI; })(2) //=> would return 6 if const had function scope
+```
 
-## **destructuring arrays**
+### Technical frame 8: are consts also from a shadowy planet?
 
-There is another way to extract elements from arrays: _Destructuring_ , a feature going back to Common Lisp, if not before. We saw how to construct an array literal using [, expressions, , and ]. Here’s an example of an array literal that uses a name: **const** wrap = (something) => [something];
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
 
-Let’s expand it to use a block and an extra name: **const** wrap = (something) => { **const** wrapped = [something]; **return** wrapped; } wrap("package") _//=> ["package"]_ The line const wrapped = [something]; is interesting. On the left hand is a name to be bound, and on the right hand is an array literal, a template for constructing an array, very much like a quasi-literal string.
+> Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
-In JavaScript, we can actually _reverse_ the statement and place the template on the left and a value on the right: **const** unwrap = (wrapped) => { **const** [something] = wrapped; **return** something; } unwrap(["present"]) _//=> "present"_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00491))_
 
-The statement const [something] = wrapped; _destructures_ the array represented by wrapped, binding the value of its single element to the name something. We can do the same thing with more than one element: _(javascriptallonge.pdf (source-range-83ecb080-00126))_
+```
+((diameter) => { if ( true ) { const PI = 3.14159265; } return diameter * PI; })(2) //=> would return 6.2831853 if const had function scope
+```
+
+### Technical frame 9: destructuring arrays
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00847))_
+
+> The statement const [something] = wrapped; destructures the array represented by wrapped , binding the value of its single element to the name something . We can do the same thing with more than one element:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00846))_
+
+```
+const unwrap = (wrapped) => { const [something] = wrapped; return something; } unwrap(["present"]) //=> "present"
+```
+
+### Technical frame 10: destructuring arrays
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00849))_
+
+> We could do the same thing with (name) => name[1] , but destructuring is code that resembles the data it consumes, a valuable coding style.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00848))_
+
+```
+const surname = (name) => { const [first, last] = name; return last; } surname(["Reginald", "Braithwaite"]) //=> "Braithwaite"
+```
+
+### Technical atom 11
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00571))_
+
+| entry | content |
+| --- | --- |
+| 37 | As we'll discuss later, this implementation of the B Combinator is correct in languages like Scheme, but for truly general-purpose use in JavaScript, it needs to correctly manage the function context. |
+| 38 | We'll see later why an even more useful version would be written (fn) => (...args) => !fn(...args) |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+function decorators
+A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a variation of the argument function. Here's a ridiculously simple decorator: 38
+37 As we'll discuss later, this implementation of the B Combinator is correct in languages like Scheme, but for truly general-purpose use in JavaScript, it needs to correctly manage the function context.
+38 We'll see later why an even more useful version would be written (fn) => (...args) => !fn(...args)
+```
+
+</details>
 
 
 ## Related pages
 
-- [[javascriptallonge-const]] - shared statements: Const shares source evidence from That Constant Coffee Craving: 34  The first sip: Basic Functions ((diameter_fn) => { **const** PI = 3; **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => d ... [truncated] (4 shared statement(s))
-- [[javascriptallonge-array]] - shared statements: Array shares source evidence from Arrays and Destructuring Arguments: Composing and Decomposing Data  80 **const** x = [], a = [x]; a[0] === x  _//=> true, arrays store references to the things you put in them._  ## **destructuring arr ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-block]] - shared statements: Block shares source evidence from Summary: The first sip: Basic Functions  55  ## **Summary**  **==> picture [29 x 29] intentionally omitted <==**  ## **Functions**  - Functions are values that can be part of ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-return]] - shared statements: Return shares source evidence from As Little As Possible About Functions, But No Less: 14  The first sip: Basic Functions (() => 2 + 2)() _//=> 4_ (() => { 2 + 2 })() _//=> undefined_ (() => (1 + 1, 2 + 2))() _//=> 4_ (() => { 1 + 1; 2 + 2 })() _//=> u ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-block]] - shared statements and technical atoms: Block shares source evidence from Functions: Blocks also create scopes if const statements are within them.; Block shares technical record from nested blocks: (n) => { const even = (x) => { if (x === 0) return true ; else return !even(x - 1); } return even(n) } (1 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-bound]] - shared technical atoms: Bound shares technical record from are consts also from a shadowy planet?: if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: ((diameter) => { const PI = 3; if ( true ) { const PI = 3.14159265; return diameter * ... [truncated] (4 shared atom(s))
+- [[javascriptallonge-environment]] - shared technical atoms: Environment shares technical record from are consts also from a shadowy planet?: ((diameter) => { const PI = 3.14159265; if ( true ) { const PI = 3; } return diameter * PI; })(2) //=> would return 6 if const had function scope (2 shared atom(s))
+- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from destructuring arrays: const unwrap = (wrapped) => { const [something] = wrapped; return something; } unwrap(["present"]) //=> "present" (2 shared atom(s))
+- [[javascriptallonge-parameter]] - shared technical atoms: Parameter shares technical record from are consts also from a shadowy planet?: if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: ((diameter) => { const PI = 3; if ( true ) { const PI = 3.14159265; return diameter * ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-value]] - shared technical atoms: Value shares technical record from are consts also from a shadowy planet?: ((diameter) => { const PI = 3.14159265; if ( true ) { const PI = 3; } return diameter * PI; })(2) //=> would return 6 if const had function scope (2 shared atom(s))
+- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-function]] - shared technical atoms: Function shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-language]] - shared technical atoms: Language shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-purpose]] - shared technical atoms: Purpose shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-return]] - shared technical atoms: Return shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-seen]] - shared technical atoms: Seen shares technical record from nested blocks: (n) => { const even = (x) => { if (x === 0) return true ; else return !even(x - 1); } return even(n) } (1 shared atom(s))
+- [[javascriptallonge-works-just-fine-because-arguments]] - shared technical atoms: Works Just Fine, Because Arguments[0 shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-important]] - shared statements: Important shares source evidence from a quick summary of functions and bodies: One of the important possible statements is a return statement. A return statement accepts any valid JavaScript expression. (1 shared statement(s))
 
 ## Source
 

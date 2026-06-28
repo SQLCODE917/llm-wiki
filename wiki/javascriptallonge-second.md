@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-second
 page_kind: concept
-summary: Second: 4 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
+summary: Second: 9 statement(s) and 4 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-second@288fa4c238ed5bfef12ac61aa6ffad00
+projection_coverage: topic-javascriptallonge-second@56a88589c946d0f5b6153342a34386c8
 ---
 
 # Second
@@ -15,111 +15,104 @@ What [[javascriptallonge]] covers about second:
 
 ## Statements
 
-### Closures and Scope
+### void
 
-- The first sip: Basic Functions
+- The first form works but it's cumbersome. The second form works most of the time, but it is possible to break it by reassigning undefined to a different value, something we'll discuss in Reassignment and Mutation. The third form is guaranteed to always work, so that's what we will use. 20 _(javascriptallonge.pdf (source-range-31a4cf47-00236))_
 
-22
+### variables and bindings
 
-## **if functions without free variables are pure, are closures impure?**
+- In order to talk about how this works, we should agree on a few terms (you may already know them, but let's check-in together and 'synchronize our dictionaries'). The first x , the one in (x) => ... , is an argument . The y in function (y) ... is another argument. The second x , the one in => x , is not an argument, it's an expression referring to a variable . Arguments and variables work the same way whether we're talking about (x) => (y) => x or just plain (x) => x . _(javascriptallonge.pdf (source-range-31a4cf47-00305))_
 
-The function (y) => x is interesting. It contains a _free variable_ , x.[27] A free variable is one that is not bound within the function. Up to now, we’ve only seen one way to “bind” a variable, namely by passing in an argument with the same name. Since the function (y) => x doesn’t have an argument named x, the variable x isn’t bound in this function, which makes it “free.” Now that we know that variables used in a function are either bound or free, we can bifurcate functions into those with free variables and those without:
+### if functions without free variables are pure, are closures impure?
 
-- Functions containing no free variables are called _pure functions_ .
+- The first function doesn't have any variables, therefore doesn't have any free variables. The second doesn't have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ... , and it doesn't have a free variable: The only variable anywhere in its body is x , which is certainly bound within (x) => ... . _(javascriptallonge.pdf (source-range-31a4cf47-00351))_
 
-- Functions containing one or more free variables are called _closures_ .
+### const
 
-Pure functions are easiest to understand. They always mean the same thing wherever you use them. Here are some pure functions we’ve already seen:
+- 30 We're into the second chapter and we've finally named a function. Sheesh. _(javascriptallonge.pdf (source-range-31a4cf47-00439))_
 
-## () => {}
+### the function keyword
 
-## (x) => x
+- The first magic name is this , and it is bound to something called the function's context. We will explore this in more detail when we start discussing objects and classes. The second magic name is very interesting, it's called arguments , and the most interesting thing about it is that it contains a list of arguments passed to a function: _(javascriptallonge.pdf (source-range-31a4cf47-00609))_
 
-- (x) => (y) => x
+### truthiness and the ternary operator
 
-The first function doesn’t have any variables, therefore doesn’t have any free variables. The second doesn’t have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ..., and it doesn’t have a free variable: The only variable anywhere in its body is x, which is certainly bound within (x) => ....
+- The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example: _(javascriptallonge.pdf (source-range-31a4cf47-00773))_
 
-From this, we learn something: A pure function can contain a closure.
+### backwardness
 
-**==> picture [29 x 30] intentionally omitted <==**
+- Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of values as an array, we'd write them like this: _(javascriptallonge.pdf (source-range-31a4cf47-01354))_
 
-If pure functions can contain closures, can a closure contain a pure function? Using only what we’ve learned so far, attempt to compose a closure that contains a pure function. If you can’t, give your reasoning for why it’s impossible.
+- In both cases, the functions first and second know how the data is represented, whether it be an array or an object. You pass the data to these functions, and they extract it. _(javascriptallonge.pdf (source-range-31a4cf47-01358))_
 
-Pure functions always mean the same thing because all of their “inputs” are fully defined by their arguments. Not so with a closure. If I present to you this pure function (x, y) => x + y, we know exactly what it does with (2, 2). But what about this closure: (y) => x + y? We can’t say what it will do with argument (2) without understanding the magic for evaluating the free variable x.
+### state machines
 
-27You may also hear the term “non-local variable.” Both are correct. _(javascriptallonge.pdf (source-range-83ecb080-00057))_
+- The second element of the fibonacci sequence is one. _(javascriptallonge.pdf (source-range-31a4cf47-01648))_
 
-### Making Data Out Of Functions
 
-- Composing and Decomposing Data
+## Technical atoms
 
-157
+### Technical frame 1: void
 
-K(I)(6)(7) _//=> 7_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00235))_
 
-K(I)(12)(24) _//=> 24_
+> void is an operator that takes any value and evaluates to undefined , always. So, when we deliberately want an undefined value, should we use the first, second, or third form? 19 The answer is, use void . By convention, use void 0 .
 
-Aha! Given two values, K(I) always returns the _second_ value.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00234))_
 
-K("primus")("secundus") _//=> "primus"_
+```
+void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined
+```
 
-K(I)("primus")("secundus") _//=> "secundus"_
+### Technical frame 2: the function keyword
 
-If we are not feeling particularly academic, we can name our functions: **const** first = K, second = K(I); first("primus")("secundus") _//=> "primus"_ second("primus")("secundus") _//=> "secundus"_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00613))_
 
-This is very interesting. Given two values, we can say that K always returns the _first_ value, and given two values, K(I) always returns the _second_ value.
+> arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:
 
-## **backwardness**
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00610))_
 
-Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of values as an array, we’d write them like this: _(javascriptallonge.pdf (source-range-83ecb080-00213))_
+```
+const plus = function (a, b) { return arguments[0] + arguments[1]; } plus(2,3) //=> 5
+```
 
-- Composing and Decomposing Data
+### Technical frame 3: truthiness and the ternary operator
 
-158 **const** first = ([first, second]) => first, second = ([first, second]) => second; **const** latin = ["primus", "secundus"]; first(latin) _//=> "primus"_ second(latin) _//=> "secundus"_ Or if we were using a POJO, we’d write them like this: **const** first = ({first, second}) => first, second = ({first, second}) => second; **const** latin = {first: "primus", second: "secundus"}; first(latin) _//=> "primus"_ second(latin) _//=> "secundus"_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00775))_
 
-In both cases, the functions first and second know how the data is represented, whether it be an array or an object. You pass the data to these functions, and they extract it.
+> Wecertainly don't want JavaScript trying to evaluate deleteRecord(currentRecord) unless isAuthorized(currentUser) returns true .
 
-But the first and second we built out of K and I don’t work that way. You call them and pass them the bits, and they choose what to return. So if we wanted to use them with a two-element array, we’d need to have a piece of code that calls some code.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00774))_
 
-Here’s the first cut: **const** first = K, second = K(I); **const** latin = (selector) => selector("primus")("secundus"); latin(first) _//=> "primus"_ latin(second) _//=> "secundus"_ _(javascriptallonge.pdf (source-range-83ecb080-00214))_
+```
+const status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\ den';
+```
 
-### Generating Iterables
+### Technical frame 4: backwardness
 
-- Served by the Pot: Collections
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01358))_
 
-205
+> In both cases, the functions first and second know how the data is represented, whether it be an array or an object. You pass the data to these functions, and they extract it.
 
-A less kind way to put it is that the iteration version is greenspunning something built into our programming language: We’re reinventing the use of a stack to manage recursion, because writing our code to respond to a function call makes us turn a simple recursive algorithm inside-out.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01355))_
 
-## **state machines**
-
-Some iterables can be modelled as state machines. Let’s revisit the Fibonacci sequence. Again. One way to define it is:
-
-- The first element of the fibonacci sequence is zero.
-
-- The second element of the fibonacci sequence is one.
-
-- Every subsequent element of the fibonacci sequence is the sum of the previous two elements.
-
-Let’s write a generator:
-
-_// Generation_ **const** fibonacci = () => { **let** a, b; console.log(a = 0); console.log(b = 1); **while** ( **true** ) { [a, b] = [b, a + b]; console.log(b); } } fibonacci() _//=>_
-
-0 1 1 2
-
-3 5 8 13
-
-21
-
-34 _(javascriptallonge.pdf (source-range-83ecb080-00270))_
+```
+const first = ([first, second]) => first, second = ([first, second]) => second; const latin = ["primus", "secundus"]; first(latin) //=> "primus" second(latin) //=> "secundus"
+```
 
 
 ## Related pages
 
-- [[javascriptallonge-function]] - shared statements: Function shares source evidence from Making Data Out Of Functions: Composing and Decomposing Data  157  K(I)(6)(7) _//=> 7_  K(I)(12)(24) _//=> 24_  Aha! Given two values, K(I) always returns the _second_ value.  K("primus")("secund ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-data]] - shared statements: Data shares source evidence from Making Data Out Of Functions: Composing and Decomposing Data  158 **const** first = ([first, second]) => first, second = ([first, second]) => second; **const** latin = ["primus", "secundus"]; fir ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-element]] - shared statements: Element shares source evidence from Generating Iterables: Served by the Pot: Collections  205  A less kind way to put it is that the iteration version is greenspunning something built into our programming language: We’re re ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-sequence]] - shared statements: Sequence shares source evidence from Generating Iterables: Served by the Pot: Collections  205  A less kind way to put it is that the iteration version is greenspunning something built into our programming language: We’re re ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from backwardness: Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of va ... [truncated]; Function shares technical record from backwardness: const first = ([first, second]) => first, second = ([first, second]) => second; const latin = ["primus", "secundus"]; first(latin) //=> "primus" second(latin) //=> "secundus" (2 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-data]] - shared statements and technical atoms: Data shares source evidence from backwardness: In both cases, the functions first and second know how the data is represented, whether it be an array or an object. You pass the data to these functions, and they extract it.; Data shares technical record from backwardness: const first = ([first, second]) => first, second = ([first, second]) => second; const latin = ["primus", "secundus"]; first(latin) //=> "primus" second(latin) //=> "secundus" (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-expression]] - shared statements and technical atoms: Expression shares source evidence from truthiness and the ternary operator: The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example:; Expression shares technical record from truthiness and the ternary operator: const status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\ den'; (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-function-keyword]] - shared statements and technical atoms: the function keyword shares source evidence from the function keyword: The first magic name is this , and it is bound to something called the function's context. We will explore this in more detail when we start discussing objects and c ... [truncated]; the function keyword shares technical record from the function keyword: const plus = function (a, b) { return arguments[0] + arguments[1]; } plus(2,3) //=> 5 (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-third]] - shared statements and technical atoms: Third shares source evidence from truthiness and the ternary operator: The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example:; Third shares technical record from truthiness and the ternary operator: const status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\ den'; (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-evaluate]] - shared technical atoms: Evaluate shares technical record from void: void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined (2 shared atom(s))
+- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical record from the function keyword: const plus = function (a, b) { return arguments[0] + arguments[1]; } plus(2,3) //=> 5 (1 shared atom(s))
+- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from void: void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined (1 shared atom(s))
+- [[javascriptallonge-element]] - shared statements: Element shares source evidence from state machines: The second element of the fibonacci sequence is one. (1 shared statement(s))
+- [[javascriptallonge-variable]] - shared statements: Variable shares source evidence from variables and bindings: In order to talk about how this works, we should agree on a few terms (you may already know them, but let's check-in together and 'synchronize our dictionaries'). Th ... [truncated] (1 shared statement(s))
 
 ## Source
 

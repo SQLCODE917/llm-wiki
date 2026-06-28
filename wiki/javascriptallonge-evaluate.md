@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-evaluate
 page_kind: concept
-summary: Evaluate: 5 statement(s) and 0 atom(s) from raw/javascriptallonge.pdf.
+summary: Evaluate: 9 statement(s) and 8 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-evaluate@8d68449542742585ff56c6d156dc0ebe
+projection_coverage: topic-javascriptallonge-evaluate@d4c9c60c2bf12c55214736d6c4767536
 ---
 
 # Evaluate
@@ -15,155 +15,177 @@ What [[javascriptallonge]] covers about evaluate:
 
 ## Statements
 
-### values and identity
+### reference types
 
-- xviii
+- They look the same, but if you examine them with === , you see that they are different. Every time you evaluate an expression (including typing something in) to create an array, you're creating a new, distinct value even if it appears to be the same as some other array value. As we'll see, this is true of many other kinds of values, including functions , the main subject of this book. _(javascriptallonge.pdf (source-range-31a4cf47-00141))_
 
-Prelude: Values and Expressions over Coffee
+### undefined
 
-An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wild with things like:
+- No matter how you evaluate undefined , you get an identical value back. undefined is a value that means 'I don't have a value.' But it's still a value :-) _(javascriptallonge.pdf (source-range-31a4cf47-00226))_
 
-[2-1, 2, 2+1] [1, 1+1, 1+1+1] Notice that you are always generating arrays with the same contents. But are they identical the same way that every value of 42 is identical to every other value of 42? Try these for yourself:
+### void
 
-[2-1, 2, 2+1] === [1,2,3] [1,2,3] === [1, 2, 3] [1, 2, 3] === [1, 2, 3] How about that! When you type [1, 2, 3] or any of its variations, you are typing an expression that generates its own _unique_ array that is not identical to any other array, even if that other array also looks like [1, 2, 3]. It’s as if JavaScript is generating new cups of coffee with serial numbers on the bottom.
+- But no matter how we arrange them, a block with one or more expressions still evaluates to undefined : _(javascriptallonge.pdf (source-range-31a4cf47-00246))_
 
-They look the same, but if you examine them with ===, you see that they are different. Every time you evaluate an expression (including typing something in) to create an array, you’re creating a new, distinct value even if it _appears_ to be the same as some other array value. As we’ll see, this is true of many other kinds of values, including _functions_ , the main subject of this book. _(javascriptallonge.pdf (source-range-83ecb080-00035))_
+### it's always the environment
 
-### As Little As Possible About Functions, But No Less
+- The first function is the result of currying a the second function. Calling a curried function with only some of its arguments is sometimes called partial application b . Some programming languages automatically curry and partially evaluate functions without the need to manually nest them. _(javascriptallonge.pdf (source-range-31a4cf47-00369))_
 
-- The first sip: Basic Functions
+### Functions
 
-11
+- Block bodies evaluate to whatever is returned with the return keyword, or to undefined . _(javascriptallonge.pdf (source-range-31a4cf47-00646))_
 
-## **the simplest possible block**
+### truthiness and the ternary operator
 
-There’s another thing we can put to the right of an arrow, a _block_ . A block has zero or more _statements_ , separated by semicolons.[18] So, this is a valid function:
+- JavaScript inherited an operator from the C family of languages, the ternary operator. It's the only operator that takes three arguments. It looks like this: first ? second : third . It evaluates first , and if first is 'truthy', it evaluates second and that is its value. If first is not truthy, it evaluates third and that is its value. _(javascriptallonge.pdf (source-range-31a4cf47-00768))_
 
-## () => {}
+- Wecertainly don't want JavaScript trying to evaluate deleteRecord(currentRecord) unless isAuthorized(currentUser) returns true . _(javascriptallonge.pdf (source-range-31a4cf47-00775))_
 
-It returns the result of evaluating a block that has no statements. What would that be? Let’s try it: (() => {})() _//=> undefined_
+### evaluation time
 
-What is this undefined?
+- JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function's body is evaluated. Thus, name is not bound to "Harry" , it is bound to 'Arthur Dent' , the value of the parameter when the function is invoked. _(javascriptallonge.pdf (source-range-31a4cf47-01519))_
 
-## **undefined**
+### iterables
 
-In JavaScript, the absence of a value is written undefined, and it means there is no value. It will crop up again. undefined is its own type of value, and it acts like a value type:
+- The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object. _(javascriptallonge.pdf (source-range-31a4cf47-01557))_
 
-## **undefined**
 
-_//=> undefined_
+## Technical atoms
 
-Like numbers, booleans and strings, JavaScript can print out the value undefined.
+### Technical frame 1: undefined
 
-**undefined** === **undefined**
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00226))_
 
-_//=> true_ (() => {})() === (() => {})() _//=> true_ (() => {})() === **undefined** _//=> true_
+> No matter how you evaluate undefined , you get an identical value back. undefined is a value that means 'I don't have a value.' But it's still a value :-)
 
-No matter how you evaluate undefined, you get an identical value back. undefined is a value that means “I don’t have a value.” But it’s still a value :-)
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00225))_
 
-> 18Sometimes, you will find JavaScript that has statements that are separated by newlines without semi-colons. This works because JavaScript has a feature that can infer where the semi-colons should be most of the time. We will not take advantage of this feature, but it’s helpful to know it exists. _(javascriptallonge.pdf (source-range-83ecb080-00048))_
+```
+undefined === undefined //=> true (() => {})() === (() => {})() //=> true (() => {})() === undefined //=> true
+```
 
-### Closures and Scope
+### Technical frame 2: void
 
-- The first sip: Basic Functions
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00235))_
 
-24
+> void is an operator that takes any value and evaluates to undefined , always. So, when we deliberately want an undefined value, should we use the first, second, or third form? 19 The answer is, use void . By convention, use void 0 .
 
-The first function is the result of currying _[a]_ the second function. Calling a curried function with only some of its arguments is sometimes called partial application _[b]_ . Some programming languages automatically curry and partially evaluate functions without the need to manually nest them.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00234))_
 
-> _a_ https://en.wikipedia.org/wiki/Currying
+```
+void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined
+```
 
-> _b_ https://en.wikipedia.org/wiki/Partial_application
+### Technical frame 3: void
 
-## **shadowy variables from a shadowy planet**
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00249))_
 
-An interesting thing happens when a variable has the same name as an ancestor environment’s variable. Consider:
+> 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
-- (x) => (x, y) => x + y
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00247))_
 
-The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x, it is ignored when evaluating x + y. JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of: (x) => (x, y) => (w, z) => (w) => x + y + z
+```
+(() => { 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined
+```
 
-When evaluating x + y + z, JavaScript will find x and y in the great-grandparent scope and z in the parent scope. The x in the great-great-grandparent scope is ignored, as are both ws. When a variable has the same name as an ancestor environment’s binding, it is said to _shadow_ the ancestor.
+### Technical frame 4: void
 
-This is often a good thing.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00249))_
 
-## **which came first, the chicken or the egg?**
+> 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
-This behaviour of pure functions and closures has many, many consequences that can be exploited to write software. We are going to explore them in some detail as well as look at some of the other mechanisms JavaScript provides for working with variables and mutable state.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00252))_
 
-But before we do so, there’s one final question: Where does the ancestry start? If there’s no other code in a file, what is (x) => x’s parent environment? _(javascriptallonge.pdf (source-range-83ecb080-00059))_
+```
+(() => { return 0 })() //=> 0 (() => { return 1 })() //=> 1 (() => { return 'Hello ' + 'World' })() // 'Hello World'
+```
 
-### Summary
+### Technical frame 5: it's always the environment
 
-- The first sip: Basic Functions
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00361))_
 
-55
+> (x) => x is called the I Combinator, or the Identity Function . (x) => (y) => x is called the K Combinator, or Kestrel . Some people get so excited by this that they write entire books about them, some are great a , some-how shall I put this-are interesting b if you use Ruby. a http://www.amzn.com/0192801422?tag=raganwald001-20
 
-## **Summary**
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00359))_
 
-**==> picture [29 x 29] intentionally omitted <==**
+> So whenever a function is applied to arguments, its environment always has a reference to its parent environment.
 
-## **Functions**
+### Technical frame 6: it's always the environment
 
-- Functions are values that can be part of expressions, returned from other functions, and so forth.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00368))_
 
-- Functions are _reference values_ .
+> Only you call it with (1)(2)(3) instead of (1, 2, 3) . The other big difference is that you can call it with (1) and get a function back that you can later call with (2)(3) .
 
-- Functions are applied to arguments.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00367))_
 
-- The arguments are passed by sharing, which is also called “pass by value.” - Fat arrow functions have expressions or blocks as their bodies.
+```
+(x, y, z) => x + y + z
+```
 
-- function keyword functions always have blocks as their bodies.
+### Technical frame 7: truthiness and the ternary operator
 
-- Function bodies have zero or more statements.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00775))_
 
-- Expression bodies evaluate to the value of the expression.
+> Wecertainly don't want JavaScript trying to evaluate deleteRecord(currentRecord) unless isAuthorized(currentUser) returns true .
 
-- Block bodies evaluate to whatever is returned with the return keyword, or to undefined.
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00774))_
 
-- JavaScript uses const to bind values to names within block scope.
+```
+const status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\ den';
+```
 
-- JavaScript uses function declarations to bind functions to names within function scope. Function declarations are “hoisted.” - Function application creates a scope.
+### Technical atom 8
 
-- Blocks also create scopes if const statements are within them.
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00239))_
 
-- Scopes are nested and free variable references closed over.
+> We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21
 
-- Variables can shadow variables in an enclosing scope. _(javascriptallonge.pdf (source-range-83ecb080-00095))_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00237))_
 
-### A Warm Cup: Basic Strings and Quasi-Literals
+| entry | content |
+| --- | --- |
+| 19 | Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This was actually the preferred mechanism until void became commonplace. |
+| 20 | As an exercise for the reader, we suggest you ask your friendly neighbourhood programming language designer or human factors subjectmatter expert to explain why a keyword called void is used to generate an undefined value, instead of calling them both void or both undefined . We have no idea. |
 
-- A Warm Cup: Basic Strings and Quasi-Literals
+<details>
+<summary>Raw table text</summary>
 
-181
+```
+back on the block
+Back to our function. We evaluated this:
+19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This was actually the preferred mechanism until void became commonplace.
+20 As an exercise for the reader, we suggest you ask your friendly neighbourhood programming language designer or human factors subjectmatter expert to explain why a keyword called void is used to generate an undefined value, instead of calling them both void or both undefined . We have no idea.
+```
 
-- 'A popular number for nerds is ' + (40 + 2) - _//=> 'A popular number for nerds is 42'_ However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They’re easier to read and it’s easier to avid errors like the following:
-
-- 'A popular number for nerds is' + (40 + 2) - _//=> 'A popular number for nerds is42'_
-
-## **evaluation time**
-
-Like any other expression, quasi-literals are evaluated _late_ , when that line or lines of code is evaluated.
-
-So for example, **const** name = "Harry"; **const** greeting = (name) => `Hello my name is **${** name **}** `; greeting('Arthur Dent') - _//=> 'Hello my name is Arthur Dent'_
-
-JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function’s body is evaluated. Thus, name is not bound to "Harry", it is bound to 'Arthur Dent', the value of the parameter when the function is invoked.
-
-This is exactly what we’d expect if we’d written it like this: **const** greeting = (name) => 'Hello my name is ' + name; greeting('Arthur Dent') - _//=> 'Hello my name is Arthur Dent'_ _(javascriptallonge.pdf (source-range-83ecb080-00243))_
+</details>
 
 
 ## Related pages
 
-- [[javascriptallonge-function]] - shared statements: Function shares source evidence from Closures and Scope: The first sip: Basic Functions  24  The first function is the result of currying _[a]_ the second function. Calling a curried function with only some of its argument ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-block]] - shared statements: Block shares source evidence from Summary: The first sip: Basic Functions  55  ## **Summary**  **==> picture [29 x 29] intentionally omitted <==**  ## **Functions**  - Functions are values that can be part of ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-expression]] - shared statements: Expression shares source evidence from values and identity: xviii  Prelude: Values and Expressions over Coffee  An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wil ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-javascript]] - shared statements: Javascript shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: A Warm Cup: Basic Strings and Quasi-Literals  181  - 'A popular number for nerds is ' + (40 + 2) - _//=> 'A popular number for nerds is 42'_ However, there is a big ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-language]] - shared statements: Language shares source evidence from Closures and Scope: The first sip: Basic Functions  24  The first function is the result of currying _[a]_ the second function. Calling a curried function with only some of its argument ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-literal]] - shared statements: Literal shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: A Warm Cup: Basic Strings and Quasi-Literals  181  - 'A popular number for nerds is ' + (40 + 2) - _//=> 'A popular number for nerds is 42'_ However, there is a big ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-programming]] - shared statements: Programming shares source evidence from Closures and Scope: The first sip: Basic Functions  24  The first function is the result of currying _[a]_ the second function. Calling a curried function with only some of its argument ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-quasi]] - shared statements: Quasi shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: A Warm Cup: Basic Strings and Quasi-Literals  181  - 'A popular number for nerds is ' + (40 + 2) - _//=> 'A popular number for nerds is 42'_ However, there is a big ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-quasi-literal]] - shared statements: Quasi Literal shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: A Warm Cup: Basic Strings and Quasi-Literals  181  - 'A popular number for nerds is ' + (40 + 2) - _//=> 'A popular number for nerds is 42'_ However, there is a big ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-value]] - shared statements: Value shares source evidence from values and identity: xviii  Prelude: Values and Expressions over Coffee  An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wil ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from it's always the environment: The first function is the result of currying a the second function. Calling a curried function with only some of its arguments is sometimes called partial applicatio ... [truncated]; Function shares technical record from void: (() => { return 0 })() //=> 0 (() => { return 1 })() //=> 1 (() => { return 'Hello ' + 'World' })() // 'Hello World' (2 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-expression]] - shared statements and technical atoms: Expression shares source evidence from reference types: They look the same, but if you examine them with === , you see that they are different. Every time you evaluate an expression (including typing something in) to crea ... [truncated]; Expression shares technical record from void: (() => { 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (3 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-block]] - shared statements and technical atoms: Block shares source evidence from void: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined :; Block shares technical record from void: (() => { 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from truthiness and the ternary operator: Wecertainly don't want JavaScript trying to evaluate deleteRecord(currentRecord) unless isAuthorized(currentUser) returns true .; Javascript shares technical record from void: void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined (2 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-matter]] - shared statements and technical atoms: Matter shares source evidence from undefined: No matter how you evaluate undefined , you get an identical value back. undefined is a value that means 'I don't have a value.' But it's still a value :-); Matter shares technical record from undefined: undefined === undefined //=> true (() => {})() === (() => {})() //=> true (() => {})() === undefined //=> true (2 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-program]] - shared statements and technical atoms: Program shares source evidence from it's always the environment: The first function is the result of currying a the second function. Calling a curried function with only some of its arguments is sometimes called partial applicatio ... [truncated]; Program shares technical record from it's always the environment: (x, y, z) => x + y + z (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-language]] - shared statements and technical atoms: Language shares source evidence from it's always the environment: The first function is the result of currying a the second function. Calling a curried function with only some of its arguments is sometimes called partial applicatio ... [truncated]; Language shares technical record from it's always the environment: (x, y, z) => x + y + z (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-programming]] - shared statements and technical atoms: Programming shares source evidence from it's always the environment: The first function is the result of currying a the second function. Calling a curried function with only some of its arguments is sometimes called partial applicatio ... [truncated]; Programming shares technical record from it's always the environment: (x, y, z) => x + y + z (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-value]] - shared statements and technical atoms: Value shares source evidence from reference types: They look the same, but if you examine them with === , you see that they are different. Every time you evaluate an expression (including typing something in) to crea ... [truncated]; Value shares technical record from undefined: undefined === undefined //=> true (() => {})() === (() => {})() //=> true (() => {})() === undefined //=> true (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-second]] - shared technical atoms: Second shares technical record from void: void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined (2 shared atom(s))
+- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-evaluating]] - shared technical atoms: Evaluating shares technical record from void: (() => { return 0 })() //=> 0 (() => { return 1 })() //=> 1 (() => { return 'Hello ' + 'World' })() // 'Hello World' (1 shared atom(s))
+- [[javascriptallonge-programmer]] - shared technical atoms: Programmer shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-result]] - shared technical atoms: Result shares technical record from void: (() => { return 0 })() //=> 0 (() => { return 1 })() //=> 1 (() => { return 'Hello ' + 'World' })() // 'Hello World' (1 shared atom(s))
+- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from void: (() => { return 0 })() //=> 0 (() => { return 1 })() //=> 1 (() => { return 'Hello ' + 'World' })() // 'Hello World' (1 shared atom(s))
+- [[javascriptallonge-third]] - shared technical atoms: Third shares technical record from truthiness and the ternary operator: const status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\ den'; (1 shared atom(s))
+- [[javascriptallonge-works-just-fine-because-arguments]] - shared technical atoms: Works Just Fine, Because Arguments[0 shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-array]] - shared statements: Array shares source evidence from reference types: They look the same, but if you examine them with === , you see that they are different. Every time you evaluate an expression (including typing something in) to crea ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-iterator]] - shared statements: Iterator shares source evidence from iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object. (1 shared statement(s))
+- [[javascriptallonge-literal]] - shared statements: Literal shares source evidence from evaluation time: JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function's body is evaluated. Thus, name is not bound to "Harry" ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-method]] - shared statements: Method shares source evidence from iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object. (1 shared statement(s))
+- [[javascriptallonge-object]] - shared statements: Object shares source evidence from iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object. (1 shared statement(s))
+- [[javascriptallonge-quasi]] - shared statements: Quasi shares source evidence from evaluation time: JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function's body is evaluated. Thus, name is not bound to "Harry" ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-symbol]] - shared statements: Symbol shares source evidence from iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object. (1 shared statement(s))
 
 ## Source
 

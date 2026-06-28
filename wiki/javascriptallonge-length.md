@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-length
 page_kind: concept
-summary: Length: 6 statement(s) and 1 atom(s) from raw/javascriptallonge.pdf.
+summary: Length: 7 statement(s) and 12 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-length@a00551cc7566075f04b821d07fc915e5
+projection_coverage: topic-javascriptallonge-length@7153a3f6173c00e01eee9f73794851ea
 ---
 
 # Length
@@ -15,119 +15,189 @@ What [[javascriptallonge]] covers about length:
 
 ## Statements
 
-### Arrays and Destructuring Arguments
+### Self-Similarity
 
-- Composing and Decomposing Data
+- We need something for when the array isn't empty. If an array is not empty, and we break it into two pieces, first and rest , the length of our array is going to be length(first) + length(rest) . Well, the length of first is 1 , there's just one element at the front. But we don't know the length of rest . If only there was a function we could call… Like length ! _(javascriptallonge.pdf (source-range-31a4cf47-00901))_
 
-88 its .length. But as an exercise, how would we write a length function using just what we have already?
+- Our length function is recursive , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar. _(javascriptallonge.pdf (source-range-31a4cf47-00904))_
 
-First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0: **const** length = ([first, ...rest]) => first === **undefined** ? 0 : _// ???_
+### folding
 
-We need something for when the array isn’t empty. If an array is not empty, and we break it into two pieces, first and rest, the length of our array is going to be length(first) + length(rest). Well, the length of first is 1, there’s just one element at the front. But we don’t know the length of rest. If only there was a function we could call… Like length!
+- And to return to our first example, our version of length can be written as a fold: _(javascriptallonge.pdf (source-range-31a4cf47-00949))_
 
-**const** length = ([first, ...rest]) => first === **undefined** ? 0 : 1 + length(rest);
+### tail-call optimization
 
-Let’s try it!
+- The length function calls itself, but it is not a tail-call, because it returns 1 + length(rest) , not length(rest) . _(javascriptallonge.pdf (source-range-31a4cf47-00974))_
 
-length([]) _//=> 0_ length(["foo"]) _//=> 1_ length(["foo", "bar", "baz"]) _//=> 3_
+### converting non-tail-calls to tail-calls
 
-Our length function is _recursive_ , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
+- This version of length calls uses lengthDelaysWork , and JavaScript optimizes that not to take up memory proportional to the length of the string. We can use this technique with mapWith : _(javascriptallonge.pdf (source-range-31a4cf47-00983))_
 
-## **linear recursion**
+### revisiting linked lists
 
-“Recursion” sometimes seems like an elaborate party trick. There’s even a joke about this:
-
-When promising students are trying to choose between pure mathematics and applied engineering, they are given a two-part aptitude test. In the first part, they are led to a laboratory bench and told to follow the instructions printed on the card. They find a bunsen burner, a sparker, a tap, an empty beaker, a stand, and a card with the instructions “boil water.” _(javascriptallonge.pdf (source-range-83ecb080-00134))_
-
-### Tail Calls (and Default Arguments)
-
-- Composing and Decomposing Data
-
-96
-
-## **tail-call optimization**
-
-A “tail-call” occurs when a function’s last act is to invoke another function, and then return whatever the other function returns. For example, consider the maybe function decorator: **const** maybe = (fn) => **function** (...args) { **if** (args.length === 0) { **return** ; } **else** { **for** ( **let** arg **of** args) { **if** (arg == **null** ) **return** ; } **return** fn.apply( **this** , args); } } There are three places it returns. The first two don’t return anything, they don’t matter. But the third is fn.apply(this, args). This is a tail-call, because it invokes another function and returns its result. This is interesting, because after sorting out what to supply as arguments (this, args), JavaScript can throw away everything in its current stack frame. It isn’t going to do any more work, so it can throw its existing stack frame away.
-
-And in fact, it does exactly that: It throws the stack frame away, and does not consume extra memory when making a maybe-wrapped call. This is a very important characteristic of JavaScript: **If a function makes a call in tail position, JavaScript optimizes away the function call overhead and stack space.**
-
-That is excellent, but one wrapping is not a big deal. When would we really care? Consider this implementation of length: **const** length = ([first, ...rest]) => first === **undefined** ? 0 : 1 + length(rest);
-
-The length function calls itself, but it is not a tail-call, because it returns 1 + length(rest), not length(rest).
-
-The problem can be stated in such a way that the answer is obvious: length does not call itself in tail position, because it has to do two pieces of work, and while one of them is in the recursive call to length, the other happens after the recursive call.
-
-The obvious solution? _(javascriptallonge.pdf (source-range-83ecb080-00143))_
-
-- Composing and Decomposing Data
-
-97
-
-## **converting non-tail-calls to tail-calls**
-
-The obvious solution is push the 1 + work into the call to length. Here’s our first cut: **const** lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === **undefined**
-
-? 0 + numberToBeAdded : lengthDelaysWork(rest, 1 + numberToBeAdded) lengthDelaysWork(["foo", "bar", "baz"], 0) _//=> 3_
-
-This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that: **const** lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === **undefined**
-
-? numberToBeAdded : lengthDelaysWork(rest, 1 + numberToBeAdded) **const** length = (n) => lengthDelaysWork(n, 0); Or we could use partial application: **const** callLast = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args); **const** length = callLast(lengthDelaysWork, 0); length(["foo", "bar", "baz"]) _//=> 3_
-
-This version of length calls uses lengthDelaysWork, and JavaScript optimizes that not to take up memory proportional to the length of the string. We can use this technique with mapWith: _(javascriptallonge.pdf (source-range-83ecb080-00144))_
-
-### Plain Old JavaScript Objects
-
-- 117
-
-Composing and Decomposing Data
-
-Our mapWith function takes twice as long as a straight iteration, because it iterates over the entire list twice, once to map, and once to reverse the list. Likewise, it takes twice as much memory, because it constructs a reverse of the desired result before throwing it away.
-
-Mind you, this is still much, much faster than making partial copies of arrays. For a list of length _n_ , we created _n_ superfluous nodes and copied _n_ superfluous values. Whereas our naïve array algorithm created 2 _n_ superfluous arrays and copied _n_[2] superfluous values. _(javascriptallonge.pdf (source-range-83ecb080-00167))_
+- Mind you, this is still much, much faster than making partial copies of arrays. For a list of length n , wecreated n superfluous nodes and copied n superfluous values. Whereas our naïve array algorithm created 2 n superfluous arrays and copied n 2 superfluous values. _(javascriptallonge.pdf (source-range-31a4cf47-01117))_
 
 ### Making Data Out Of Functions
 
-- Composing and Decomposing Data
-
-154
-
-## **Making Data Out Of Functions**
-
-**==> picture [469 x 352] intentionally omitted <==**
-
-**Coffee served at the CERN particle accelerator**
-
-In our code so far, we have used arrays and objects to represent the structure of data, and we have extensively used the ternary operator to write algorithms that terminate when we reach a base case.
-
-For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list. _(javascriptallonge.pdf (source-range-83ecb080-00210))_
+- In our code so far, we have used arrays and objects to represent the structure of data, and we have extensively used the ternary operator to write algorithms that terminate when we reach a base case. For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list. _(javascriptallonge.pdf (source-range-31a4cf47-01328))_
 
 
 ## Technical atoms
 
-### Technical frame 1: Tail Calls (and Default Arguments)
+### Technical frame 1: Self-Similarity
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00149))_
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00901))_
 
-> Composing and Decomposing Data
+> We need something for when the array isn't empty. If an array is not empty, and we break it into two pieces, first and rest , the length of our array is going to be length(first) + length(rest) . Well, the length of first is 1 , there's just one element at the front. But we don't know the length of rest . If only there was a function we could call… Like length !
 
-101 **const** factorial = (n, work = 1) => n === 1 ? work : factorial(n - 1, n * work); factorial(1) _//=> 1_ factorial(6) _//=> 720_
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00900))_
 
-By writing our parameter list as (n, work = 1) =>, we’re stating that if a second parameter is not provided, work is to be bound to 1. We can do similar things with our other tail-recursive functions: **const** length = ([first, ...rest], numberToBeAdded = 0) => first === **undefined** ? numberToBeAdded : length(rest, 1 + numberToB
+```
+const length = ([first, ...rest]) => first === undefined ? 0 : // ???
+```
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00150))_
+### Technical frame 2: Self-Similarity
 
-> 102 **const** [first, second = "two"] = ["one"];
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00904))_
+
+> Our length function is recursive , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00902))_
+
+```
+const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest); Let's try it! length([]) //=> 0 length(["foo"]) //=> 1 length(["foo", "bar", "baz"])
+```
+
+### Technical frame 3: Self-Similarity
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00904))_
+
+> Our length function is recursive , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00903))_
+
+```
+//=> 3
+```
+
+### Technical frame 4: folding
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00943))_
+
+> And now we supply a function that does slightly more than our mapping functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00937))_
+
+```
+const sumSquares = ([first, ...rest]) => first === undefined ? 0 : first * first + sumSquares(rest); sumSquares([1, 2, 3, 4, 5]) //=> 55
+```
+
+### Technical frame 5: folding
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00949))_
+
+> And to return to our first example, our version of length can be written as a fold:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00950))_
+
+```
+const length = (array) => foldWith((first, rest) => 1 + rest, 0, array); length([1, 2, 3, 4, 5]) //=> 5
+```
+
+### Technical frame 6: tail-call optimization
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00974))_
+
+> The length function calls itself, but it is not a tail-call, because it returns 1 + length(rest) , not length(rest) .
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00973))_
+
+```
+const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest);
+```
+
+### Technical frame 7: converting non-tail-calls to tail-calls
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00980))_
+
+> This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we've seen how it works, we can clean up the 0 + numberToBeAdded business. But while we're doing that, it's annoying to remember to call it with a zero. Let's fix that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00979))_
+
+```
+const lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === undefined ? 0 + numberToBeAdded : lengthDelaysWork(rest, 1 + numberToBeAdded) lengthDelaysWork(["foo", "bar", "baz"], 0) //=> 3
+```
+
+### Technical frame 8: converting non-tail-calls to tail-calls
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00983))_
+
+> This version of length calls uses lengthDelaysWork , and JavaScript optimizes that not to take up memory proportional to the length of the string. We can use this technique with mapWith :
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00981))_
+
+```
+const lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === undefined ? numberToBeAdded : lengthDelaysWork(rest, 1 + numberToBeAdded) const length = (n) => lengthDelaysWork(n, 0);
+```
+
+### Technical frame 9: converting non-tail-calls to tail-calls
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00983))_
+
+> This version of length calls uses lengthDelaysWork , and JavaScript optimizes that not to take up memory proportional to the length of the string. We can use this technique with mapWith :
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00982))_
+
+```
+Or we could use partial application: const callLast = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args); const length = callLast(lengthDelaysWork, 0); length(["foo", "bar", "baz"]) //=> 3
+```
+
+### Technical frame 10: converting non-tail-calls to tail-calls
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00986))_
+
+> Brilliant! We can map over large arrays without incurring all the memory and performance overhead of non-tail-calls. And this basic transformation from a recursive function that does not make a tail call, into a recursive function that calls itself in tail position, is a bread-and-butter pattern for programmers using a language that incorporates tail-call optimization.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00984))_
+
+```
+const mapWithDelaysWork = (fn, [first, ...rest], prepend) => first === undefined ? prepend : mapWithDelaysWork(fn, rest, [...prepend, fn(first)]); const mapWith = callLast(mapWithDelaysWork, []); mapWith((x) => x * x, [1, 2, 3, 4, 5]) //=> [1,4,9,16,25] We can use it with ridiculously large arrays:
+```
+
+### Technical frame 11: converting non-tail-calls to tail-calls
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00986))_
+
+> Brilliant! We can map over large arrays without incurring all the memory and performance overhead of non-tail-calls. And this basic transformation from a recursive function that does not make a tail call, into a recursive function that calls itself in tail position, is a bread-and-butter pattern for programmers using a language that incorporates tail-call optimization.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00985))_
+
+```
+mapWith((x) => x * x, [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, // ... 2980, 2981, 2982, 2983, 2984, 2985, 2986, 2987, 2988, 2989, 2990, 2991, 2992, 2993, 2994, 2995, 2996, 2997, 2998, 2999 ]) //=> [0,1,4,9,16,25,36,49,64,81,100,121,144,169,196, ...
+```
+
+### Technical frame 12: Making Data Out Of Functions
+
+**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01330))_
+
+> A very long time ago, mathematicians like Alonzo Church, Moses Schönfinkel, Alan Turning, and Haskell Curry and asked themselves if we really needed all these features to perform computations. They searched for a radically simpler set of tools that could accomplish all of the same things.
+
+**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01329))_
+
+```
+const EMPTY = {}; const OneTwoThree = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY \ } } }; OneTwoThree.first //=> 1 OneTwoThree.rest.first //=> 2 OneTwoThree.rest.rest.first //=> 3 const length = (node, delayed = 0) => node === EMPTY ? delayed : length(node.rest, delayed + 1); length(OneTwoThree) //=> 3
+```
 
 
 ## Related pages
 
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Arrays and Destructuring Arguments: Composing and Decomposing Data  88 its .length. But as an exercise, how would we write a length function using just what we have already?  First, we pick what we cal ... [truncated]; Function shares technical record from Tail Calls (and Default Arguments): 102 **const** [first, second = "two"] = ["one"]; (3 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical record from Tail Calls (and Default Arguments): 102 **const** [first, second = "two"] = ["one"]; (1 shared atom(s))
-- [[javascriptallonge-learn]] - shared technical atoms: Learn shares technical record from Tail Calls (and Default Arguments): 102 **const** [first, second = "two"] = ["one"]; (1 shared atom(s))
-- [[javascriptallonge-mapwith]] - shared technical atoms: Mapwith shares technical record from Tail Calls (and Default Arguments): 102 **const** [first, second = "two"] = ["one"]; (1 shared atom(s))
-- [[javascriptallonge-rest]] - shared technical atoms: Rest shares technical record from Tail Calls (and Default Arguments): 102 **const** [first, second = "two"] = ["one"]; (1 shared atom(s))
-- [[javascriptallonge-list]] - shared statements: List shares source evidence from Plain Old JavaScript Objects: 117  Composing and Decomposing Data  Our mapWith function takes twice as long as a straight iteration, because it iterates over the entire list twice, once to map, a ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-version]] - shared statements: Version shares source evidence from Tail Calls (and Default Arguments): Composing and Decomposing Data  97  ## **converting non-tail-calls to tail-calls**  The obvious solution is push the 1 + work into the call to length. Here’s our fir ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Self-Similarity: Our length function is recursive , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to c ... [truncated]; Function shares technical record from Self-Similarity: const length = ([first, ...rest]) => first === undefined ? 0 : // ??? (3 shared statement(s), 9 shared atom(s))
+- [[javascriptallonge-version]] - shared statements and technical atoms: Version shares source evidence from folding: And to return to our first example, our version of length can be written as a fold:; Version shares technical record from folding: const length = (array) => foldWith((first, rest) => 1 + rest, 0, array); length([1, 2, 3, 4, 5]) //=> 5 (2 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-list]] - shared statements and technical atoms: List shares source evidence from revisiting linked lists: Mind you, this is still much, much faster than making partial copies of arrays. For a list of length n , wecreated n superfluous nodes and copied n superfluous value ... [truncated]; List shares technical record from Self-Similarity: const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest); Let's try it! length([]) //=> 0 length(["foo"]) //=> 1 length(["foo", "bar", "baz"]) (1 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-return]] - shared statements and technical atoms: Return shares source evidence from folding: And to return to our first example, our version of length can be written as a fold:; Return shares technical record from folding: const length = (array) => foldWith((first, rest) => 1 + rest, 0, array); length([1, 2, 3, 4, 5]) //=> 5 (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-seen]] - shared technical atoms: Seen shares technical record from converting non-tail-calls to tail-calls: const lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === undefined ? 0 + numberToBeAdded : lengthDelaysWork(rest, 1 + numberToBeAdded) lengthDelaysW ... [truncated] (3 shared atom(s))
+- [[javascriptallonge-array]] - shared technical atoms: Array shares technical record from Self-Similarity: const length = ([first, ...rest]) => first === undefined ? 0 : // ??? (2 shared atom(s))
+- [[javascriptallonge-code]] - shared technical atoms: Code shares technical record from Making Data Out Of Functions: const EMPTY = {}; const OneTwoThree = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY \ } } }; OneTwoThree.first //=> 1 OneTwoThree.rest.first //=> 2 One ... [truncated] (1 shared atom(s))
 
 ## Source
 
