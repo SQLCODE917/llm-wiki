@@ -1,4 +1,5 @@
 from llmwiki.domain.bounded_text import sentence_fragments
+from llmwiki.domain.prose_flow import should_merge_prose
 from llmwiki.domain.source_claim_sentences import claim_sentences
 
 
@@ -40,3 +41,9 @@ def test_claim_sentences_repairs_layout_split_continuations() -> None:
         first,
         "If successful, they awaken.",
     )
+
+
+def test_prose_merge_delimiter_scan_is_bounded_for_large_fragments() -> None:
+    left = "(" + ("very long extracted table prose " * 10_000) + ","
+
+    assert should_merge_prose(left, "continued text", max_chars=None)

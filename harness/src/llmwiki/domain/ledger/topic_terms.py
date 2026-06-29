@@ -52,6 +52,8 @@ _AMBIGUOUS_TOPIC_TERMS = frozenset(
         "value",
     }
 )
+_MAX_MATCH_TERMS = 24
+_MAX_MATCH_TERM_LENGTH = 80
 
 
 def content_terms(text: str) -> list[str]:
@@ -77,7 +79,7 @@ def source_label_terms(text: str) -> list[str]:
 
 
 def topic_matcher(terms: tuple[str, ...]) -> re.Pattern[str] | None:
-    parts = [re.escape(term) for term in terms if term]
+    parts = [re.escape(term) for term in _bounded_match_terms(terms)]
     if not parts:
         return None
     return re.compile(r"\b(?:" + "|".join(parts) + r")", re.IGNORECASE)
@@ -91,16 +93,17 @@ def topic_field_matches(
     if not text.strip():
         return False
     required_terms = required_topic_terms(terms)
-    if len(required_terms) <= 1:
-        return matcher.search(text) is not None
-    return len(matching_topic_terms(text, required_terms)) >= required_topic_hit_count(
-        required_terms
-    )
+    if required_terms:
+        matched_terms = matching_topic_terms(text, required_terms)
+        if len(required_terms) <= 1:
+            return bool(matched_terms)
+        return len(matched_terms) >= required_topic_hit_count(required_terms)
+    return matcher.search(text) is not None
 
 
 def required_topic_terms(terms: tuple[str, ...]) -> tuple[str, ...]:
-    return tuple(
-        dict.fromkeys(
+    return _bounded_match_terms(
+        tuple(
             term
             for term in terms
             if term and topic_term_role(term) not in ("discourse-container", "structural-container")
@@ -109,10 +112,11 @@ def required_topic_terms(terms: tuple[str, ...]) -> tuple[str, ...]:
 
 
 def matching_topic_terms(text: str, terms: tuple[str, ...]) -> tuple[str, ...]:
+    tokens = _match_tokens(text)
     return tuple(
         term
-        for term in terms
-        if re.search(r"\b" + re.escape(term), text, re.IGNORECASE) is not None
+        for term in _bounded_match_terms(terms)
+        if any(token.startswith(term) for token in tokens)
     )
 
 
@@ -151,3 +155,20 @@ def singular(token: str) -> str:
     if token.endswith("ss"):
         return token
     return token[:-1] if token.endswith("s") and len(token) > 4 else token
+
+
+def _bounded_match_terms(terms: tuple[str, ...]) -> tuple[str, ...]:
+    cleaned = (
+        term.strip().lower()
+        for term in terms
+        if term and len(term.strip()) <= _MAX_MATCH_TERM_LENGTH
+    )
+    return tuple(dict.fromkeys(cleaned))[:_MAX_MATCH_TERMS]
+
+
+def _match_tokens(text: str) -> tuple[str, ...]:
+    tokens = []
+    for token in LABEL_TOKEN.findall(text):
+        lowered = token.lower()
+        tokens.append(singular(lowered) if lowered.isalpha() else lowered)
+    return tuple(dict.fromkeys(tokens))

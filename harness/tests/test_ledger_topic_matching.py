@@ -1,6 +1,6 @@
 from llmwiki.domain.ledger.atom_context import TechnicalAtomContext, atom_context_matches
 from llmwiki.domain.ledger.common import ConfidenceBasis
-from llmwiki.domain.ledger.topic_terms import topic_matcher
+from llmwiki.domain.ledger.topic_terms import matching_topic_terms, topic_matcher
 
 
 def test_atom_context_matching_requires_compound_topic_coverage() -> None:
@@ -22,6 +22,14 @@ def test_atom_context_matching_requires_compound_topic_coverage() -> None:
         matcher,
         ("skeleton", "warrior"),
     )
+
+
+def test_matching_topic_terms_is_bounded_and_lexical() -> None:
+    terms = tuple(f"topic{i}x" for i in range(100))
+
+    matches = matching_topic_terms("topic1x topic2x topic99x", terms)
+
+    assert matches == ("topic1x", "topic2x")
 
 
 def _context(text: str, terms: tuple[str, ...]) -> TechnicalAtomContext:

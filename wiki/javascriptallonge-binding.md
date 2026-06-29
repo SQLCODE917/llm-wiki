@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-binding
 page_kind: concept
-summary: Binding: 3 statement(s) and 7 atom(s) from raw/javascriptallonge.pdf.
+summary: Binding: 3 statement(s) and 8 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-28
+updated: 2026-06-29
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-binding@c5ed9e6128597a89e31d0ce68a574759
+projection_coverage: topic-javascriptallonge-binding@731c8ab9808a8cd8e21ee8e942f512a2
 ---
 
 # Binding
@@ -15,100 +15,153 @@ What [[javascriptallonge]] covers about binding:
 
 ## Statements
 
-### const and lexical scope
+### And also: / That Constant Coffee Craving / const and lexical scope
 
-- Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. _(javascriptallonge.pdf (source-range-8eb13d6b-00465))_
+- Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. _(javascriptallonge.pdf (source-range-7239e085-00462))_
 
-### are consts also from a shadowy planet?
+### And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
 
-- We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different values to the same name, but one environment will be completely enclosed by the other. _(javascriptallonge.pdf (source-range-8eb13d6b-00469))_
+- We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different values to the same name, but one environment will be completely enclosed by the other. _(javascriptallonge.pdf (source-range-7239e085-00466))_
 
-### Reassignment
+### Composing and Decomposing Data / Reassignment
 
-- Like evaluating variable labels, when a binding is rebound, JavaScript searches for the binding in the current environment and then each ancestor in turn until it finds one. It then rebinds the name in that environment. _(javascriptallonge.pdf (source-range-8eb13d6b-01177))_
+- Like evaluating variable labels, when a binding is rebound, JavaScript searches for the binding in the current environment and then each ancestor in turn until it finds one. It then rebinds the name in that environment. _(javascriptallonge.pdf (source-range-7239e085-01178))_
 
 
 ## Technical atoms
 
-### Technical frame 1: are consts also from a shadowy planet?
+### Technical frame 1: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00478))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00475))_
 
 > Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI . Does that binding 'overwrite' the outer one? Will our function return 6 or 6.2831853 ? This is a book, you've already scanned ahead, so you know that the answer is no , the inner binding does not overwrite the outer binding:
 
-**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00477))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00474))_
 
 ```
-((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265)
+((PI) => {
+((PI) => {})(3);
+return (diameter) => diameter * PI;
+})(3.14159265)
 ```
 
-### Technical frame 2: are consts also from a shadowy planet?
+### Technical frame 2: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00480))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00477))_
 
 > We say that when we bind a variable using a parameter inside another binding, the inner binding shadows the outer binding. It has effect inside its own scope, but does not affect the binding in the enclosing scope.
 
-**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00479))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00476))_
 
 ```
-((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265)(2) //=> 6.2831853
+((PI) => {
+((PI) => {})(3);
+return (diameter) => diameter * PI;
+})(3.14159265)(2)
+//=> 6.2831853
 ```
 
-### Technical frame 3: are consts also from a shadowy planet?
+### Technical frame 3: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00484))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00481))_
 
 > Parameters are only bound when we invoke a function. That's why we made all these IIFEs. But const statements can appear inside blocks. What happens when we use a const inside of a block? We'll need a gratuitous block. We've seen if statements, what could be more gratuitous than:
 
-**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00482))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00479))_
 
 ```
-((diameter) => { const PI = 3.14159265; (() => { const PI = 3; })(); return diameter * PI; })(2) //=> 6.2831853
+((diameter) => {
+const PI = 3.14159265;
+(() => {
+const PI = 3;
+})();
+return diameter * PI;
+})(2)
+//=> 6.2831853
 ```
 
-### Technical frame 4: Reassignment
+### Technical frame 4: Composing and Decomposing Data / Plain Old JavaScript Objects / literal object syntax
 
-**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01172))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01091))_
+
+> It is very common to associate named function expressions with keys in objects, and there is a 'compact method syntax' for binding named function expressions to keywords:
+
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01092))_
+
+```
+const SecretDecoderRing = {
+encode (plaintext) {
+return plaintext
+.split('')
+.map( char => char.charCodeAt() )
+.map( code => code + 1 )
+.map( code => String.fromCharCode(code) )
+.join('');
+},
+decode (cyphertext) {
+return cyphertext
+.split('')
+.map( char => char.charCodeAt() )
+.map( code => code - 1 )
+.map( code => String.fromCharCode(code) )
+.join('');
+}
+}
+```
+
+### Technical frame 5: Composing and Decomposing Data / Reassignment
+
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01173))_
 
 > Using let to bind 50 to age within the block does not change the binding of age in the outer environment because the binding of age in the block shadows the binding of age in the outer environment, just like const . We go from:
 
-**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01171))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01172))_
 
 ```
-(() => { let age = 49; if ( true ) { let age = 50; } return age; })() //=> 49
+(() => {
+let age = 49;
+if (true) {
+let age = 50;
+}
+return age;
+})()
+//=> 49
 ```
 
-### Technical frame 5: Reassignment
+### Technical frame 6: Composing and Decomposing Data / Reassignment
 
-**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01177))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01178))_
 
 > Like evaluating variable labels, when a binding is rebound, JavaScript searches for the binding in the current environment and then each ancestor in turn until it finds one. It then rebinds the name in that environment.
 
-**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01173))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01174))_
 
 ```
-{age: 49, '..': global-environment} To: {age: 50, '..': {age: 49, '..': global-environment}} Then back to:
+{age: 49, '..': global-environment}
+To:
+{age: 50, '..': {age: 49, '..': global-environment}}
+Then back to:
 ```
 
-### Technical frame 6: Reassignment
+### Technical frame 7: Composing and Decomposing Data / Reassignment
 
-**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01177))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01178))_
 
 > Like evaluating variable labels, when a binding is rebound, JavaScript searches for the binding in the current environment and then each ancestor in turn until it finds one. It then rebinds the name in that environment.
 
-**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01174))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01175))_
 
 ```
 {age: 49, '..': global-environment}
 ```
 
-### Technical atom 7
+### Technical atom 8
 
-**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00613))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00612))_
 
 > arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:
 
-**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00614))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00613))_
 
 | entry | content |
 | --- | --- |
@@ -128,20 +181,20 @@ What [[javascriptallonge]] covers about binding:
 
 ## Related pages
 
-- [[javascriptallonge-bind]] - shared statements and technical atoms: Bind shares source evidence from const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope.; Bind shares technical record from are consts also from a shadowy planet?: ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265) (3 shared statement(s), 7 shared atom(s))
-- [[javascriptallonge-different]] - shared statements and technical atoms: Different shares source evidence from are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated]; Different shares technical record from are consts also from a shadowy planet?: ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265) (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-environment]] - shared statements and technical atoms: Environment shares source evidence from are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated]; Environment shares technical record from are consts also from a shadowy planet?: ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265) (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-parameter]] - shared statements and technical atoms: Parameter shares source evidence from const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope.; Parameter shares technical record from are consts also from a shadowy planet?: ((diameter) => { const PI = 3.14159265; (() => { const PI = 3; })(); return diameter * PI; })(2) //=> 6.2831853 (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-block]] - shared technical atoms: Block shares technical record from Reassignment: (() => { let age = 49; if ( true ) { let age = 50; } return age; })() //=> 49 (3 shared atom(s))
-- [[javascriptallonge-array]] - shared technical atoms: Array shares technical table: 42 You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times. 43 W ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-function]] - shared technical atoms: Function shares technical table: 42 You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times. 43 W ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-bind]] - shared statements and technical atoms: Bind shares source evidence from And also: / That Constant Coffee Craving / const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope.; Bind shares technical record from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265) (3 shared statement(s), 8 shared atom(s))
+- [[javascriptallonge-different]] - shared statements and technical atoms: Different shares source evidence from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated]; Different shares technical record from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265) (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-environment]] - shared statements and technical atoms: Environment shares source evidence from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated]; Environment shares technical record from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265) (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-parameter]] - shared statements and technical atoms: Parameter shares source evidence from And also: / That Constant Coffee Craving / const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope.; Parameter shares technical record from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: ((diameter) => { const PI = 3.14159265; (() => { const PI = 3; })(); return diameter * PI; })(2) //=> 6.2831853 (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-block]] - shared technical atoms: Block shares technical record from Composing and Decomposing Data / Reassignment: (() => { let age = 49; if (true) { let age = 50; } return age; })() //=> 49 (3 shared atom(s))
+- [[javascriptallonge-function]] - shared technical atoms: Function shares technical record from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265) (3 shared atom(s))
+- [[javascriptallonge-expression]] - shared technical atoms: Expression shares technical record from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265) (2 shared atom(s))
+- [[javascriptallonge-object]] - shared technical atoms: Object shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / literal object syntax: const SecretDecoderRing = { encode (plaintext) { return plaintext .split('') .map( char => char.charCodeAt() ) .map( code => code + 1 ) .map( code => String.fromChar ... [truncated] (2 shared atom(s))
 - [[javascriptallonge-function-keyword]] - shared technical atoms: the function keyword shares technical table: 42 You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times. 43 W ... [truncated] (1 shared atom(s))
 - [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical table: 42 You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times. 43 W ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-object]] - shared technical atoms: Object shares technical table: 42 You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times. 43 W ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-value]] - shared statements: Value shares source evidence from const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. (2 shared statement(s))
-- [[javascriptallonge-const]] - shared statements: Const shares source evidence from const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. (1 shared statement(s))
-- [[javascriptallonge-evaluating]] - shared statements: Evaluating shares source evidence from Reassignment: Like evaluating variable labels, when a binding is rebound, JavaScript searches for the binding in the current environment and then each ancestor in turn until it fi ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-instead]] - shared statements: Instead shares source evidence from are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-value]] - shared statements: Value shares source evidence from And also: / That Constant Coffee Craving / const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. (2 shared statement(s))
+- [[javascriptallonge-const]] - shared statements: Const shares source evidence from And also: / That Constant Coffee Craving / const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. (1 shared statement(s))
+- [[javascriptallonge-evaluating]] - shared statements: Evaluating shares source evidence from Composing and Decomposing Data / Reassignment: Like evaluating variable labels, when a binding is rebound, JavaScript searches for the binding in the current environment and then each ancestor in turn until it fi ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-instead]] - shared statements: Instead shares source evidence from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated] (1 shared statement(s))
 
 ## Source
 

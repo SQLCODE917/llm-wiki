@@ -23,6 +23,7 @@ from llmwiki.domain.pages import PageError, slugify
 from llmwiki.domain.planning_analysis import top_terms
 
 _MAX_TOPICS = 32
+_MAX_TERM_TOPIC_CANDIDATES = 256
 _MIN_TERM_FREQUENCY = 2
 
 
@@ -110,22 +111,18 @@ def _claim_group_topics(
 def _term_topics(
     page_plan: PagePlan, entries_by_claim: dict[str, LedgerEntry], ledger: ClaimLedger
 ) -> list[SourceTopic]:
-    claim_by_id = {claim.source_claim_id: claim for claim in page_plan.source_claims}
+    claim_ids_by_term: dict[str, list[str]] = {}
+    for claim in page_plan.source_claims:
+        for term in claim.subject_terms:
+            claim_ids_by_term.setdefault(term, []).append(claim.source_claim_id)
     counts: Counter[str] = Counter(
-        term for claim in claim_by_id.values() for term in claim.subject_terms
+        {term: len(claim_ids) for term, claim_ids in claim_ids_by_term.items()}
     )
     topics: list[SourceTopic] = []
-    for term, frequency in counts.most_common():
+    for term, frequency in counts.most_common(_MAX_TERM_TOPIC_CANDIDATES):
         if frequency < _MIN_TERM_FREQUENCY:
             break
-        claim_ids = tuple(
-            claim.source_claim_id for claim in claim_by_id.values() if term in claim.subject_terms
-        )
-        entry_ids = tuple(
-            entry.ledger_entry_id
-            for claim_id in claim_ids
-            if (entry := entries_by_claim.get(claim_id)) is not None
-        )
+        entry_ids = _entry_ids_for_claims(claim_ids_by_term.get(term, ()), entries_by_claim)
         if len(entry_ids) < _MIN_TERM_FREQUENCY:
             continue
         topics.append(
@@ -141,6 +138,17 @@ def _term_topics(
             )
         )
     return topics
+
+
+def _entry_ids_for_claims(
+    claim_ids: list[str] | tuple[str, ...], entries_by_claim: dict[str, LedgerEntry]
+) -> tuple[str, ...]:
+    entry_ids: list[str] = []
+    for claim_id in claim_ids:
+        entry = entries_by_claim.get(claim_id)
+        if entry is not None:
+            entry_ids.append(entry.ledger_entry_id)
+    return tuple(entry_ids)
 
 
 def _rank_topics(topics: tuple[SourceTopic, ...]) -> tuple[SourceTopic, ...]:

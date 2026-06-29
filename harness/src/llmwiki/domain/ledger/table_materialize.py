@@ -10,6 +10,7 @@ from llmwiki.domain.ledger.segments import SourceSegment
 from llmwiki.domain.ledger.tabular import inline_row_marker_spans, range_value_entries
 
 _ENUMERATED_LINE = re.compile(r"^\s*(?:[-*]\s*)?(\d+)[\s.)]+(.*)$")
+_NUMERIC_MARKER_LINE = re.compile(r"^\s*(?:[-*]\s*)?(\d+)\s*$")
 _TABLE_CAPTION = re.compile(r"^\s*(?:table|tab\.)\s*(?:[-:.]|\d+\b)?\s*(.*)$", re.IGNORECASE)
 _SPACED_COLUMN = re.compile(r"\S.*?\s{2,}\S")
 
@@ -127,36 +128,73 @@ def _parse_enumerated_table(
 
 
 def _enumerated_entries(raw: str) -> tuple[tuple[str, str], ...]:
-    line_entries: list[tuple[str, str]] = []
-    pending_prefix: list[str] = []
-    for line in raw.splitlines():
-        line = line.strip()
-        if not line:
-            continue
-        multi = _inline_entries(line, minimum=2)
-        if multi:
-            line_entries.extend(multi)
-            pending_prefix = []
-            continue
-        match = _ENUMERATED_LINE.match(line)
-        if match and match.group(2).strip():
-            content = match.group(2).strip()
-            if pending_prefix:
-                content = f"{' '.join(pending_prefix)} {content}"
-                pending_prefix = []
-            line_entries.append((match.group(1), content))
-        elif line_entries and _looks_like_next_row_prefix(line):
-            pending_prefix.append(line)
-        elif line_entries:
-            key, content = line_entries[-1]
-            line_entries[-1] = (key, f"{content} {line}".strip())
-    if len(line_entries) >= 2:
-        return tuple(line_entries)
+    lines = [_clean_line(line) for line in raw.splitlines() if _clean_line(line)]
+    entries = _line_enumerated_entries(lines)
+    if len(entries) >= 2:
+        return entries
     flat = " ".join(raw.split())
     ranged = range_value_entries(flat)
     if ranged:
         return ranged
     return _inline_entries(flat, minimum=3)
+
+
+def _line_enumerated_entries(lines: list[str]) -> tuple[tuple[str, str], ...]:
+    line_entries: list[tuple[str, str]] = []
+    pending_prefix: list[str] = []
+    current_key = ""
+    current_parts: list[str] = []
+    for index, line in enumerate(lines):
+        if _punctuation_only(line):
+            continue
+        multi = _inline_entries(line, minimum=2)
+        if multi:
+            _flush_entry(line_entries, current_key, current_parts)
+            current_key, current_parts = "", []
+            line_entries.extend(multi)
+            pending_prefix = []
+            continue
+        match = _ENUMERATED_LINE.match(line)
+        if match and match.group(2).strip():
+            _flush_entry(line_entries, current_key, current_parts)
+            current_key, current_parts = "", []
+            content = match.group(2).strip()
+            if pending_prefix:
+                content = f"{' '.join(pending_prefix)} {content}"
+                pending_prefix = []
+            line_entries.append((match.group(1), content))
+            continue
+        marker = _NUMERIC_MARKER_LINE.match(line)
+        if marker is not None:
+            _flush_entry(line_entries, current_key, current_parts)
+            current_key = marker.group(1)
+            current_parts = pending_prefix
+            pending_prefix = []
+            continue
+        if current_key:
+            if (
+                current_parts
+                and _looks_like_next_row_prefix(line)
+                and _next_marker_soon(lines, index)
+            ):
+                _flush_entry(line_entries, current_key, current_parts)
+                current_key, current_parts = "", []
+                pending_prefix.append(line)
+            else:
+                current_parts.append(line)
+        elif line_entries and _looks_like_next_row_prefix(line):
+            pending_prefix.append(line)
+        elif line_entries:
+            key, content = line_entries[-1]
+            line_entries[-1] = (key, f"{content} {line}".strip())
+    _flush_entry(line_entries, current_key, current_parts)
+    return tuple(line_entries)
+
+
+def _flush_entry(entries: list[tuple[str, str]], key: str, parts: list[str]) -> None:
+    content = " ".join(part for part in parts if part).strip()
+    if key and content:
+        entries.append((key, content))
 
 
 def _inline_entries(text: str, *, minimum: int) -> tuple[tuple[str, str], ...]:
@@ -172,7 +210,27 @@ def _inline_entries(text: str, *, minimum: int) -> tuple[tuple[str, str], ...]:
     return tuple(entries)
 
 
+def _clean_line(line: str) -> str:
+    return " ".join(line.strip().split())
+
+
+def _punctuation_only(line: str) -> bool:
+    return bool(line) and not any(char.isalnum() for char in line)
+
+
+def _next_marker_soon(lines: list[str], index: int) -> bool:
+    return any(
+        _ENUMERATED_LINE.match(line) or _NUMERIC_MARKER_LINE.match(line)
+        for line in lines[index + 1 : index + 4]
+        if not _punctuation_only(line)
+    )
+
+
 def _looks_like_next_row_prefix(line: str) -> bool:
+    if not line[:1].isalnum():
+        return False
+    if line[:1].islower():
+        return False
     words = line.split()
     if len(words) > 14:
         return False

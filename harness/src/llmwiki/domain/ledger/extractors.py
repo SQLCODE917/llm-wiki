@@ -46,6 +46,7 @@ _CAPABILITY_SIGNAL = {
     "worked-example-extractor": "relationship-density",
 }
 _TABLE_GATE = 0.15
+_MAX_DECISION_SIGNAL_IDS = 32
 # A segment's modality decides which extractors may materialize: a code fence
 # yields only a code atom, a tabular block only a table, prose only the prose
 # atom kinds. Other capabilities abstain (unsupported modality), so each
@@ -80,7 +81,7 @@ def extract_segment(
 ) -> SegmentExtraction:
     decisions: list[ExtractorDecision] = []
     candidates: list[AtomCandidate] = []
-    signal_ids = tuple(signal.feature_signal_id for signal in profile.feature_signals)
+    signal_ids = _decision_signal_ids(profile)
     for capability in capabilities.capabilities:
         signal_kind = _CAPABILITY_SIGNAL.get(capability.extractor_capability_id, "")
         score = round(profile.value(signal_kind), 4) if signal_kind else 0.0
@@ -137,6 +138,15 @@ def extract_segment(
                 )
             )
     return SegmentExtraction(tuple(decisions), tuple(candidates))
+
+
+def _decision_signal_ids(profile: ExtractedUnitProfile) -> tuple[str, ...]:
+    signal_ids: list[str] = []
+    for signal in profile.feature_signals:
+        signal_ids.append(signal.feature_signal_id)
+        if len(signal_ids) >= _MAX_DECISION_SIGNAL_IDS:
+            break
+    return tuple(signal_ids)
 
 
 def _materialize(

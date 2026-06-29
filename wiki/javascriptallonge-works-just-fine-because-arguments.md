@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-works-just-fine-because-arguments
 page_kind: concept
-summary: Works Just Fine, Because Arguments[0: 1 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
+summary: Works Just Fine, Because Arguments[0: 1 statement(s) and 4 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-28
+updated: 2026-06-29
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-works-just-fine-because-arguments@7fdb1bec21203e8508af02df4207f63b
+projection_coverage: topic-javascriptallonge-works-just-fine-because-arguments@04f8050eb28d755cefb0c2e60c456733
 ---
 
 # Works Just Fine, Because Arguments[0
@@ -15,20 +15,20 @@ What [[javascriptallonge]] covers about works just fine, because arguments[0:
 
 ## Statements
 
-### magic names and fat arrows
+### And also: / Magic Names / magic names and fat arrows
 
-- This works just fine, because arguments[0] refers to the 3 we passed to the function row . Our 'fat arrow' function (column) => column * arguments[0] doesn't bind arguments when it's invoked. But if we rewrite row to use the function keyword, it stops working: _(javascriptallonge.pdf (source-range-8eb13d6b-00628))_
+- This works just fine, because arguments[0] refers to the 3 we passed to the function row . Our 'fat arrow' function (column) => column * arguments[0] doesn't bind arguments when it's invoked. But if we rewrite row to use the function keyword, it stops working: _(javascriptallonge.pdf (source-range-7239e085-00627))_
 
 
 ## Technical atoms
 
 ### Technical atom 1
 
-**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00239))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00236))_
 
 > We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21
 
-**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00237))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00234))_
 
 | entry | content |
 | --- | --- |
@@ -49,7 +49,7 @@ Back to our function. We evaluated this:
 
 ### Technical atom 2
 
-**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00564))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00562))_
 
 | entry | content |
 | --- | --- |
@@ -72,7 +72,7 @@ If we were learning Combinatorial Logic, we'd start with the most basic combinat
 
 ### Technical atom 3
 
-**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00571))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00570))_
 
 | entry | content |
 | --- | --- |
@@ -91,21 +91,45 @@ A function decorator is a higher-order function that takes one function as an ar
 
 </details>
 
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00856))_
+
+> Alas, the ... notation does not provide a universal patten-matching capability. For example, we cannot write
+
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00857))_
+
+| entry | content |
+| --- | --- |
+| 57 | https://en.wikipedia.org/wiki/CAR_and_CDR |
+| 58 | Kyle Simpson is the author of You Don't Know JS, available here |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+57 https://en.wikipedia.org/wiki/CAR_and_CDR
+58 Kyle Simpson is the author of You Don't Know JS, available here
+```
+
+</details>
+
 
 ## Related pages
 
-- [[javascriptallonge-argument]] - broader topic: Argument shares source evidence from magic names and fat arrows: This works just fine, because arguments[0] refers to the 3 we passed to the function row . Our 'fat arrow' function (column) => column * arguments[0] doesn't bind ar ... [truncated]; Argument shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (1 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-argument]] - broader topic: Argument shares source evidence from And also: / Magic Names / magic names and fat arrows: This works just fine, because arguments[0] refers to the 3 we passed to the function row . Our 'fat arrow' function (column) => column * arguments[0] doesn't bind ar ... [truncated]; Argument shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (1 shared statement(s), 4 shared atom(s))
 - [[javascriptallonge-function]] - shared technical atoms: Function shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (3 shared atom(s))
 - [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (2 shared atom(s))
 - [[javascriptallonge-block]] - shared technical atoms: Block shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-data]] - shared technical atoms: Data shares technical table: 57 https://en.wikipedia.org/wiki/CAR_and_CDR 58 Kyle Simpson is the author of You Don't Know JS, available here (1 shared atom(s))
 - [[javascriptallonge-evaluate]] - shared technical atoms: Evaluate shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-gathering]] - shared technical atoms: Gathering shares technical table: 57 https://en.wikipedia.org/wiki/CAR_and_CDR 58 Kyle Simpson is the author of You Don't Know JS, available here (1 shared atom(s))
 - [[javascriptallonge-language]] - shared technical atoms: Language shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
 - [[javascriptallonge-program]] - shared technical atoms: Program shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (1 shared atom(s))
 - [[javascriptallonge-programmer]] - shared technical atoms: Programmer shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (1 shared atom(s))
 - [[javascriptallonge-purpose]] - shared technical atoms: Purpose shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
 - [[javascriptallonge-result]] - shared technical atoms: Result shares technical table: combinators The word 'combinator' has a precise technical meaning in mathematics: 'A combinator is a higher-order function that uses only function application and ea ... [truncated] (1 shared atom(s))
 - [[javascriptallonge-return]] - shared technical atoms: Return shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-statement]] - shared technical atoms: Statement shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
 
 ## Source
 

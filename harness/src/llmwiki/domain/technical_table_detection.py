@@ -161,7 +161,7 @@ def _page_range(
     source_range: SourceRange,
     line_range: tuple[int, int] | None,
 ) -> tuple[int, int] | None:
-    if source_range.line_range == line_range and source_range.page_range is not None:
+    if source_range.line_range == line_range and _valid_range(source_range.page_range):
         return source_range.page_range
     if source_text is None or source_text.source_text_kind != "pdf-cache" or line_range is None:
         return None
@@ -210,4 +210,9 @@ def _page_marker(line: str) -> int | None:
     match = _PAGE_MARKER_RE.match(line)
     if match is None:
         return None
-    return int(match.group("page"))
+    page = int(match.group("page"))
+    return page if page >= 1 else None
+
+
+def _valid_range(value: tuple[int, int] | None) -> bool:
+    return value is not None and value[0] >= 1 and value[1] >= value[0]

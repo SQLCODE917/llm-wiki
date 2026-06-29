@@ -20,6 +20,9 @@ class DocumentElement:
     text: str
     markdown: str
     heading_level: int = 0
+    layout_font_size: float = 0.0
+    layout_x0: float = 0.0
+    layout_y0: float = 0.0
 
 
 @dataclass(frozen=True)

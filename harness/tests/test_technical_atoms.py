@@ -6,6 +6,7 @@ from llmwiki.config import WikiPaths
 from llmwiki.domain.answer_evaluation import AnswerEvaluationCase, evaluate_answer
 from llmwiki.domain.claim_support_selection import select_claim_support_candidates
 from llmwiki.domain.evidence_registry import (
+    EvidenceRecord,
     EvidenceRegistry,
     build_evidence_registry,
     source_text_from_text,
@@ -22,7 +23,13 @@ from llmwiki.domain.objects import (
 )
 from llmwiki.domain.pages import PageMetadata, WikiPage
 from llmwiki.domain.technical_atom_builder import build_technical_atom_catalog
-from llmwiki.domain.technical_atom_detection import TechnicalAtomKind, claim_kind, is_formula
+from llmwiki.domain.technical_atom_detection import (
+    MAX_EVIDENCE_RECORDS_PER_ATOM,
+    TechnicalAtomKind,
+    best_evidence_ids,
+    claim_kind,
+    is_formula,
+)
 from llmwiki.domain.technical_atom_io import (
     technical_atom_catalog_from_json,
     technical_atom_catalog_to_json,
@@ -91,6 +98,31 @@ def test_technical_atom_ids_are_stable_for_same_payload_and_evidence() -> None:
     assert [atom.technical_atom_id for atom in first.technical_atoms] == [
         atom.technical_atom_id for atom in second.technical_atoms
     ]
+
+
+def test_technical_atom_builder_skips_giant_line_candidates() -> None:
+    source = "This is ordinary prose.\n" + ("value = " + ("1 + " * 1000))
+    plan, registry = _plan(source)
+
+    catalog = build_technical_atom_catalog(
+        source_locator="rules.md",
+        page_plan=plan,
+        evidence_registry=registry,
+        artifact_fingerprint="fp",
+    )
+
+    assert all(atom.atom_kind != "formula" for atom in catalog.technical_atoms)
+
+
+def test_best_evidence_ids_bounds_scored_records() -> None:
+    records = tuple(
+        _evidence_record(f"ev-{index:03d}", "unrelated")
+        for index in range(MAX_EVIDENCE_RECORDS_PER_ATOM)
+    ) + (_evidence_record("ev-late", "exact payload term"),)
+
+    selected = best_evidence_ids(records, "exact payload term")
+
+    assert selected == ("ev-000", "ev-001", "ev-002")
 
 
 def test_claim_fenced_code_uses_inner_payload_and_dedupes_structural_atom() -> None:
@@ -492,6 +524,19 @@ def _claim(raw: RawSource, claim_id: str, statement: str, role: str) -> SourceCl
         source_span="L1-L13",
         claim_role_tags=(role,),
         claim_salience=1.0,
+    )
+
+
+def _evidence_record(evidence_id: str, excerpt: str) -> EvidenceRecord:
+    return EvidenceRecord(
+        evidence_id=evidence_id,
+        source_locator="rules.md",
+        source_hash="hash",
+        source_range_id="range-1",
+        line_range=None,
+        excerpt=excerpt,
+        excerpt_digest=evidence_id,
+        evidence_kind="citation",
     )
 
 

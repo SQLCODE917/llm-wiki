@@ -3,10 +3,10 @@ page_id: javascriptallonge-follow
 page_kind: concept
 summary: Follow: 8 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-28
+updated: 2026-06-29
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-follow@c8b054d9aed45642c5e45754778959e3
+projection_coverage: topic-javascriptallonge-follow@7953fbb658f4722edf7b07081421ea03
 ---
 
 # Follow
@@ -15,62 +15,69 @@ What [[javascriptallonge]] covers about follow:
 
 ## Statements
 
-### how this book is organized
+### A Pull of the Lever: Prefaces / What JavaScript Allongé is. And isn't. / how this book is organized
 
-- Following some of the chapters are a series of recipes designed to show the application of the chapter's ideas in practical form. While the content of each chapter builds naturally on what was discussed in the previous chapter, the recipes may draw upon any aspect of the JavaScript programming language. _(javascriptallonge.pdf (source-range-8eb13d6b-00067))_
+- Following some of the chapters are a series of recipes designed to show the application of the chapter's ideas in practical form. While the content of each chapter builds naturally on what was discussed in the previous chapter, the recipes may draw upon any aspect of the JavaScript programming language. _(javascriptallonge.pdf (source-range-7239e085-00067))_
 
-### michael fogus
+### ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus
 
-- As a life-long bibliophile and long-time follower of Reg's online work, I was excited when he started writing books. However, I'm very conservative about books - let's just say that if there was an aftershave scented to the essence of 'Used Book Store' then I would be first in line to buy. So as you might imagine I was 'skeptical' about the decision to release JavaScript Allongé as an ongoing ebook, with a pay-what-you-want model. However, Reg sent me a copy of his book and I was humbled. Not only was this a great book, but it was also a great way to write and distribute books. Having written books myself, I know the pain of soliciting and receiving feedback. _(javascriptallonge.pdf (source-range-8eb13d6b-00084))_
+- As a life-long bibliophile and long-time follower of Reg's online work, I was excited when he started writing books. However, I'm very conservative about books - let's just say that if there was an aftershave scented to the essence of 'Used Book Store' then I would be first in line to buy. So as you might imagine I was 'skeptical' about the decision to release JavaScript Allongé as an ongoing ebook, with a pay-what-you-want model. However, Reg sent me a copy of his book and I was humbled. Not only was this a great book, but it was also a great way to write and distribute books. Having written books myself, I know the pain of soliciting and receiving feedback. _(javascriptallonge.pdf (source-range-7239e085-00084))_
 
-### void
+### Or even: / back on the block
 
-- 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that exploits it, so they deliberately omit any semicolon that JavaScript will insert for them. _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
+- 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that exploits it, so they deliberately omit any semicolon that JavaScript will insert for them. _(javascriptallonge.pdf (source-range-7239e085-00246))_
 
-### function declaration caveats 34
+### And also: / Naming Functions / function declaration caveats 34
 
-- Function declarations are formally only supposed to be made at what we might call the 'top level' of a function. Although some JavaScript environments permit the following code, this example is technically illegal and definitely a bad idea: _(javascriptallonge.pdf (source-range-8eb13d6b-00551))_
+- Function declarations are formally only supposed to be made at what we might call the 'top level' of a function. Although some JavaScript environments permit the following code, this example is technically illegal and definitely a bad idea: _(javascriptallonge.pdf (source-range-7239e085-00548))_
 
-### mutation and data structures
+### Composing and Decomposing Data / Mutation / mutation and data structures
 
-- One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let's recall linked lists from Plain Old JavaScript Objects. While we're executing the mapWith function, we're constructing a new linked list. By this pattern, we would be happy to use mutation to construct the list while running mapWith . _(javascriptallonge.pdf (source-range-8eb13d6b-01142))_
+- One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let's recall linked lists from Plain Old JavaScript Objects. While we're executing the mapWith function, we're constructing a new linked list. By this pattern, we would be happy to use mutation to construct the list while running mapWith . _(javascriptallonge.pdf (source-range-7239e085-01143))_
 
-### copy-on-write
+### Yes. Consider this variation: / Copy on Write / copy-on-write
 
-- Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liberal with mutation. Once we're done with it and give it to someone else, we need to be conservative and use a strategy like copy-on-read or copy-on-write. _(javascriptallonge.pdf (source-range-8eb13d6b-01254))_
+- Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liberal with mutation. Once we're done with it and give it to someone else, we need to be conservative and use a strategy like copy-on-read or copy-on-write. _(javascriptallonge.pdf (source-range-7239e085-01255))_
 
-### say 'please'
+### Yes. Consider this variation: / Making Data Out Of Functions / say 'please'
 
-- Wekeep using the same pattern in our functions: aPair === EMPTY ? doSomething : doSomethingElse . This follows the philosophy we used with data structures: The function doing the work inspects the data structure. _(javascriptallonge.pdf (source-range-8eb13d6b-01388))_
+- Wekeep using the same pattern in our functions: aPair === EMPTY ? doSomething : doSomethingElse . This follows the philosophy we used with data structures: The function doing the work inspects the data structure. _(javascriptallonge.pdf (source-range-7239e085-01389))_
 
 
 ## Technical atoms
 
-### Technical frame 1: void
+### Technical frame 1: Or even: / back on the block
 
-**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
-
-> 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
-
-**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00250))_
-
-```
-(() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined
-```
-
-### Technical frame 2: void
-
-**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00246))_
 
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
-**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00251))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00247))_
+
+```
+(() => 2 + 2)()
+//=> 4
+(() => { 2 + 2 })()
+//=> undefined
+(() => (1 + 1, 2 + 2))()
+//=> 4
+(() => { 1 + 1; 2 + 2 })()
+//=> undefined
+```
+
+### Technical frame 2: Or even: / back on the block
+
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00246))_
+
+> 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
+
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00248))_
 
 > So how do we get a function that evaluates a block to return a value when applied?
 
 ### Technical atom 3
 
-**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00103))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00099))_
 
 | entry | content |
 | --- | --- |
@@ -94,26 +101,26 @@ You express your order at one end of their counter, the folks behind the counter
 
 ## Related pages
 
-- [[javascriptallonge-code]] - shared statements and technical atoms: Code shares source evidence from void: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Code shares technical record from void: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (3 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from void: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Javascript shares technical record from void: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-rule]] - shared statements and technical atoms: Rule shares source evidence from void: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Rule shares technical record from void: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-write]] - shared statements and technical atoms: Write shares source evidence from copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated]; Write shares technical record from void: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated]; Function shares technical record from void: So how do we get a function that evaluates a block to return a value when applied? (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-expression]] - shared technical atoms: Expression shares technical record from void: So how do we get a function that evaluates a block to return a value when applied? (2 shared atom(s))
-- [[javascriptallonge-feature]] - shared technical atoms: Feature shares technical record from void: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared atom(s))
-- [[javascriptallonge-language]] - shared technical atoms: Language shares technical record from void: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared atom(s))
-- [[javascriptallonge-program]] - shared technical atoms: Program shares technical record from void: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared atom(s))
-- [[javascriptallonge-programmer]] - shared technical atoms: Programmer shares technical record from void: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared atom(s))
+- [[javascriptallonge-code]] - shared statements and technical atoms: Code shares source evidence from Or even: / back on the block: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Code shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (3 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from Or even: / back on the block: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Javascript shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-rule]] - shared statements and technical atoms: Rule shares source evidence from Or even: / back on the block: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Rule shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-write]] - shared statements and technical atoms: Write shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated]; Write shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated]; Function shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-expression]] - shared technical atoms: Expression shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (2 shared atom(s))
+- [[javascriptallonge-feature]] - shared technical atoms: Feature shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared atom(s))
+- [[javascriptallonge-language]] - shared technical atoms: Language shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared atom(s))
+- [[javascriptallonge-program]] - shared technical atoms: Program shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared atom(s))
+- [[javascriptallonge-programmer]] - shared technical atoms: Programmer shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared atom(s))
 - [[javascriptallonge-coffee]] - shared technical atoms: Coffee shares technical table: Prelude: Values and Expressions over Coffee The following material is extremely basic, however like most stories, the best way to begin is to start at the very begin ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-evaluating]] - shared technical atoms: Evaluating shares technical record from void: So how do we get a function that evaluates a block to return a value when applied? (1 shared atom(s))
-- [[javascriptallonge-result]] - shared technical atoms: Result shares technical record from void: So how do we get a function that evaluates a block to return a value when applied? (1 shared atom(s))
-- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from void: So how do we get a function that evaluates a block to return a value when applied? (1 shared atom(s))
+- [[javascriptallonge-evaluating]] - shared technical atoms: Evaluating shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared atom(s))
+- [[javascriptallonge-result]] - shared technical atoms: Result shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared atom(s))
+- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared atom(s))
 - [[javascriptallonge-value]] - shared technical atoms: Value shares technical table: Prelude: Values and Expressions over Coffee The following material is extremely basic, however like most stories, the best way to begin is to start at the very begin ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-pattern]] - shared statements: Pattern shares source evidence from mutation and data structures: One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let's recall linked lists f ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-copy]] - shared statements: Copy shares source evidence from copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-copy-write]] - shared statements: Copy on Write shares source evidence from copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-environment]] - shared statements: Environment shares source evidence from function declaration caveats 34: Function declarations are formally only supposed to be made at what we might call the 'top level' of a function. Although some JavaScript environments permit the fol ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-mutation]] - shared statements: Mutation shares source evidence from mutation and data structures: One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let's recall linked lists f ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-pattern]] - shared statements: Pattern shares source evidence from Composing and Decomposing Data / Mutation / mutation and data structures: One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let's recall linked lists f ... [truncated] (2 shared statement(s))
+- [[javascriptallonge-copy]] - shared statements: Copy shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-copy-write]] - shared statements: Copy on Write shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-environment]] - shared statements: Environment shares source evidence from And also: / Naming Functions / function declaration caveats 34: Function declarations are formally only supposed to be made at what we might call the 'top level' of a function. Although some JavaScript environments permit the fol ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-mutation]] - shared statements: Mutation shares source evidence from Composing and Decomposing Data / Mutation / mutation and data structures: One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let's recall linked lists f ... [truncated] (1 shared statement(s))
 
 ## Source
 

@@ -36,11 +36,25 @@ class TextLine:
 
 
 def page_words(page: Any) -> tuple[WordBox, ...]:
-    return tuple(
-        WordBox(float(x0), float(y0), float(x1), float(y1), str(text))
-        for x0, y0, x1, y1, text, *_rest in page.get_text("words", sort=True)
-        if str(text).strip()
-    )
+    words: list[WordBox] = []
+    for raw in page.get_text("words", sort=False):
+        box = _word_box(raw)
+        if box is not None:
+            words.append(box)
+    return tuple(sorted(words, key=lambda word: (word.y0, word.x0)))
+
+
+def _word_box(raw: Any) -> WordBox | None:
+    try:
+        x0, y0, x1, y1, text, *_rest = raw
+        box = WordBox(float(x0), float(y0), float(x1), float(y1), str(text))
+    except (TypeError, ValueError):
+        return None
+    if not box.text.strip():
+        return None
+    if box.x1 < box.x0 or box.y1 < box.y0:
+        return None
+    return box
 
 
 def page_lines(page: Any, page_index: int) -> tuple[TextLine, ...]:

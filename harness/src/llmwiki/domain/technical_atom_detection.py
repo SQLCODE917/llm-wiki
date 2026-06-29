@@ -37,6 +37,7 @@ SUPPORT_STATUSES = frozenset(("supported", "too_broad", "not_supported", "unclea
 MAX_TECHNICAL_PAYLOAD_CHARS = 1200
 MAX_RENDERED_ATOMS_PER_PAGE = 8
 MAX_EVIDENCE_SCORER_TEXT_CHARS = 20_000
+MAX_EVIDENCE_RECORDS_PER_ATOM = 128
 
 _FORMULA_RE = re.compile(r"(?=.*[=+\-*/x×÷])(?:[A-Za-z][A-Za-z0-9 _-]{2,}|\*\*.+?\*\*)\s*=")
 _PROGRAMMING_DECLARATION_RE = re.compile(r"\b(?:const|let|var)\s+[A-Za-z_$][\w$]*\s*=")
@@ -200,7 +201,8 @@ def is_formula(text: str) -> bool:
 def best_evidence_ids(records: tuple[EvidenceRecord, ...], payload: object) -> tuple[str, ...]:
     scored_payload = _score_text(payload)
     ranked: list[tuple[int, int, EvidenceRecord]] = []
-    for index, record in enumerate(records):
+    scored_records = records[:MAX_EVIDENCE_RECORDS_PER_ATOM]
+    for index, record in enumerate(scored_records):
         ranked.append((_evidence_match_score(record.excerpt, scored_payload), index, record))
     ranked.sort(key=lambda item: (-item[0], item[1]))
     if _has_table_payload(scored_payload):
@@ -212,7 +214,7 @@ def best_evidence_ids(records: tuple[EvidenceRecord, ...], payload: object) -> t
         if table_matches:
             return tuple(table_matches)
     selected = [record.evidence_id for score, _index, record in ranked if score > 0][:3]
-    return tuple(selected or [record.evidence_id for record in records[:3]])
+    return tuple(selected or [record.evidence_id for record in scored_records[:3]])
 
 
 def bounded_payload(payload: str) -> str | None:

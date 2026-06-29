@@ -12,11 +12,12 @@ from llmwiki.domain.ledger.segments import SegmentClaim, SourceSegment
 from llmwiki.domain.ledger.tabular import row_marker_count
 from llmwiki.domain.objects import Schema
 from llmwiki.domain.planning import derive_segment_claims
-from llmwiki.domain.prose_flow import normalize_prose_text
 from llmwiki.pdf.document import DocumentElement, DocumentModel
 
 _FENCE = re.compile(r"^\s*(```|~~~)")
 _PROSE_KINDS = ("paragraph", "list")
+_ROW_CONTINUATION_LOOKAHEAD = 10
+_TABLE_RUN_ELEMENT_LIMIT = 80
 
 
 def segment_document_model(
@@ -35,6 +36,21 @@ def segment_document_model(
         table_end = _table_run_end(elements, index)
         if table_end > index:
             group = elements[index:table_end]
+            if _preserve_table_section_heading(group):
+                order += 1
+                _append_segment(
+                    inputs,
+                    profiles,
+                    order=order,
+                    kind="heading",
+                    text=_element_segment_text(group[0], "heading"),
+                    heading_path=group[0].heading_path,
+                    page_locator=_page_locator((group[0],)),
+                    source_element_ids=(group[0].element_id,),
+                    source_locator=source_locator,
+                    source_hash=source_hash,
+                    schema=schema,
+                )
             kind = "table-block"
             text = _table_text(group)
             index = table_end
@@ -126,7 +142,7 @@ def _body_element(element: DocumentElement) -> bool:
         return False
     if element.element_kind == "picture":
         return True
-    return bool(_element_source_text(element).strip())
+    return bool((element.text or element.markdown).strip())
 
 
 def _element_segment_kind(element: DocumentElement) -> str:
@@ -159,7 +175,7 @@ def _element_segment_text(element: DocumentElement, kind: str) -> str:
         locator = _page_locator((element,))
         label = f"[Figure: {caption}]" if caption else "[Figure]"
         return f"{label} ({locator})"
-    return normalize_prose_text(_collapse_spaces(element.text))
+    return _collapse_spaces(element.text)
 
 
 def _table_run_end(elements: tuple[DocumentElement, ...], start: int) -> int:
@@ -168,7 +184,7 @@ def _table_run_end(elements: tuple[DocumentElement, ...], start: int) -> int:
         return start + 1
     if element.element_kind == "heading":
         return _heading_table_end(elements, start)
-    if _row_marker_count(_element_source_text(element)) > 0:
+    if row_marker_count(element.text or element.markdown) > 0:
         return _row_run_end(elements, start)
     return start
 
@@ -180,13 +196,13 @@ def _heading_table_end(elements: tuple[DocumentElement, ...], start: int) -> int
     non_row_before_rows = 0
     end = start + 1
     index = start + 1
-    while index < len(elements) and index <= start + 40:
+    while index < len(elements) and index <= start + _TABLE_RUN_ELEMENT_LIMIT:
         element = elements[index]
         if element.element_kind == "heading":
             break
         if element.element_kind in {"code_block", "picture"}:
             break
-        count = _row_marker_count(_element_source_text(element))
+        count = row_marker_count(element.text or element.markdown)
         if count:
             row_count += count
             end = index + 1
@@ -213,7 +229,7 @@ def _row_run_end(elements: tuple[DocumentElement, ...], start: int) -> int:
         element = elements[index]
         if element.element_kind in {"heading", "code_block", "picture"}:
             break
-        count = _row_marker_count(_element_source_text(element))
+        count = row_marker_count(element.text or element.markdown)
         if not count:
             if row_count and _row_continues_ahead(elements, index):
                 index += 1
@@ -238,27 +254,30 @@ def _table_element_text(element: DocumentElement) -> str:
     return element.text or element.markdown
 
 
-def _element_source_text(element: DocumentElement) -> str:
-    return element.text or element.markdown
+def _preserve_table_section_heading(elements: tuple[DocumentElement, ...]) -> bool:
+    if not elements or elements[0].element_kind != "heading":
+        return False
+    heading = _collapse_spaces(elements[0].text)
+    return bool(heading and not _table_caption_heading(heading))
 
 
-def _row_marker_count(text: str) -> int:
-    return row_marker_count(text)
+def _table_caption_heading(text: str) -> bool:
+    lowered = text.casefold()
+    return lowered.startswith(("table-", "table ", "tab. ")) or "table below" in lowered
 
 
 def _row_continues_ahead(elements: tuple[DocumentElement, ...], index: int) -> bool:
     element = elements[index]
     if element.element_kind in {"heading", "code_block", "picture"}:
         return False
-    next_index = index + 1
-    if next_index >= len(elements):
-        return False
-    next_element = elements[next_index]
-    if next_element.element_kind in {"heading", "code_block", "picture"}:
-        return False
-    if next_element.heading_path != element.heading_path:
-        return False
-    return _row_marker_count(_element_source_text(next_element)) > 0
+    for next_element in elements[index + 1 : index + _ROW_CONTINUATION_LOOKAHEAD + 1]:
+        if next_element.element_kind in {"heading", "code_block", "picture"}:
+            return False
+        if next_element.heading_path != element.heading_path:
+            return False
+        if row_marker_count(next_element.text or next_element.markdown) > 0:
+            return True
+    return False
 
 
 def _markdown_heading_level(markdown: str) -> int:

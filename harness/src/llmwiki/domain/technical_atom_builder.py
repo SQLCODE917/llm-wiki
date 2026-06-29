@@ -35,6 +35,8 @@ from llmwiki.domain.technical_table_atoms import build_technical_table_atom
 from llmwiki.domain.technical_table_detection import detect_technical_tables
 from llmwiki.domain.technical_tables import TechnicalTable
 
+_LINE_ATOM_SCAN_LIMIT = 2_000
+
 
 def build_technical_atom_catalog(
     *,
@@ -170,6 +172,9 @@ class TechnicalAtomBuilder:
         seen: set[tuple[str, str, str]],
     ) -> tuple[TechnicalAtom, ...]:
         atoms: list[TechnicalAtom] = []
+        line = line.strip()
+        if not _line_atom_candidate(line):
+            return ()
         if is_code_fragment(line):
             atom = self._make_atom(
                 "code",
@@ -312,3 +317,9 @@ def _limit_atoms_per_page(atoms: list[TechnicalAtom]) -> tuple[TechnicalAtom, ..
 
 def _digest(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def _line_atom_candidate(line: str) -> bool:
+    if not line or len(line) > _LINE_ATOM_SCAN_LIMIT:
+        return False
+    return not (line.startswith("|") and line.endswith("|"))

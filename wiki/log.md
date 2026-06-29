@@ -244,3 +244,18 @@ Source page: [[javascriptallonge]]; linked pages: 293. Ledger artifacts: /home/s
 Claim-ledger ingest of raw/javascriptallonge.pdf (209 source unit(s)).
 Claim-ledger projection (coding): 1991 usable entries, 653 technical atoms, 430 needs-review, 293 linked page(s); write decision write-with-review-work.
 Source page: [[javascriptallonge]]; linked pages: 293. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/ledger.
+
+## [2026-06-29] ingest | javascriptallonge.pdf
+Claim-ledger ingest of raw/javascriptallonge.pdf (206 source unit(s)).
+Claim-ledger projection (coding): 1989 usable entries, 654 technical atoms, 427 needs-review, 301 linked page(s); write decision write-with-review-work.
+Source page: [[javascriptallonge]]; linked pages: 301. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/ledger.
+
+## [2026-06-29] ingest | javascriptallonge.pdf
+Claim-ledger ingest of raw/javascriptallonge.pdf (206 source unit(s)).
+Claim-ledger projection (coding): 1989 usable entries, 654 technical atoms, 427 needs-review, 301 linked page(s); write decision write-with-review-work.
+Source page: [[javascriptallonge]]; linked pages: 301. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/ledger.
+
+## [2026-06-29] ingest | Sword World RPG - Complete Edition.pdf
+Claim-ledger ingest of raw/Sword World RPG - Complete Edition.pdf (1316 source unit(s)).
+Claim-ledger projection (history): 12577 usable entries, 4708 technical atoms, 1129 needs-review, 1343 linked page(s); write decision write-with-review-work.
+Source page: [[sword-world-rpg-complete-edition]]; linked pages: 1343. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/ledger.

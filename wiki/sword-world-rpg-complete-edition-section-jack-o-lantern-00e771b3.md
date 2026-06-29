@@ -1,0 +1,63 @@
+---
+page_id: sword-world-rpg-complete-edition-section-jack-o-lantern-00e771b3
+page_kind: source
+summary: [ Jack-O-Lantern ]: 18 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-29
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-jack-o-lantern-00e771b3@716a3ca26393105c68e6c9dbf9a5918b
+---
+
+# [ Jack-O-Lantern ]
+
+From [[sword-world-rpg-complete-edition]].
+
+## Statements
+
+- A jack-o-lantern looks like a pumpkin , the vegetable, with a yellowishorange face about 30 cm in diameter, that floats in the air. Its face has semicircular eyes and a mouth that arch downward, and a triangular nose that points upward, as if cut with a knife. There are no eyeballs, and an evil red light can be seen deep inside the eye sockets. They often float around above swamps and ponds, and if they spot prey, they'll attack straight away. Like ghouls, they live by scavenging dead flesh, but perhaps this does not satisfy their hunger, as they frequently attack the living. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08737))_
+- This monster has dark magic abilities. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08738))_
+- There are no eyeballs, and an evil red light can be seen deep inside the eye sockets. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08737))_
+
+## Technical atoms
+
+### Technical frame 1: [ Jack-O-Lantern ]
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08721, source-range-0b9dec90-08722, source-range-0b9dec90-08723, source-range-0b9dec90-08724, source-range-0b9dec90-08725, source-range-0b9dec90-08726, source-range-0b9dec90-08727, source-range-0b9dec90-08728, source-range-0b9dec90-08729, source-range-0b9dec90-08730, source-range-0b9dec90-08731))_
+
+> Monster Level=6
+
+> Rarity=11
+
+> Agility=18 Movement Speed=18 (air)
+
+> Number=One to several Frequency=Rare
+
+> Intellect=High Reaction=Adversarial
+
+> Attack Points=Fangs:13 (6)
+
+> Strike Points=12
+
+> Evasion Points=16 (9) Defense Points=10
+
+> Life Points/Resistance=14/14 (7)
+
+> Mental Points/Resistance=21/15 (8)
+
+> Special Abilities=6th level dark magic (Magic Intensity/Magic Power=16/9)
+
+### Technical frame 2: [ Jack-O-Lantern ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08737))_
+
+> A jack-o-lantern looks like a pumpkin , the vegetable, with a yellowishorange face about 30 cm in diameter, that floats in the air. Its face has semicircular eyes and a mouth that arch downward, and a triangular nose that points upward, as if cut with a knife. There are no eyeballs, and an evil red light can be seen deep inside the eye sockets. They often float around above swamps and ponds, and if they spot prey, they'll attack straight away. Like ghouls, they live by scavenging dead flesh, but
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08734, source-range-0b9dec90-08735, source-range-0b9dec90-08736))_
+
+> Habitat=Above swamps or ponds
+
+> Languages=Regional
+
+> Perception=Pseudo

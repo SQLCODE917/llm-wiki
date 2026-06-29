@@ -33,6 +33,7 @@ _TERMINAL = frozenset(".!?")
 _OPENERS = {"(": ")", "[": "]", "{": "}", "“": "”", '"': '"'}
 _CLOSING_MARKS = "\"'”’)]}*_`~"
 _OPENING_MARKS = "\"'“‘([{*_`~"
+_DELIMITER_SCAN_LIMIT = 512
 
 
 def normalize_prose_paragraphs(
@@ -162,14 +163,11 @@ def _right_continuation(text: str) -> bool:
 
 
 def _has_unclosed_delimiter(text: str) -> bool:
-    counts = {opener: 0 for opener in _OPENERS}
-    for character in text:
-        if character in counts:
-            counts[character] += 1
-        for opener, closer in _OPENERS.items():
-            if character == closer and counts[opener] > 0:
-                counts[opener] -= 1
-    return any(count > 0 for opener, count in counts.items() if opener != '"')
+    tail = text[-_DELIMITER_SCAN_LIMIT:]
+    return any(
+        opener != '"' and tail.count(opener) > tail.count(closer)
+        for opener, closer in _OPENERS.items()
+    )
 
 
 def _strip_closing_marks(text: str) -> str:
