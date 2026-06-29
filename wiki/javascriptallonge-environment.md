@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-environment@53bf4ea82c77b64251a99d24f5748c03
+projection_coverage: topic-javascriptallonge-environment@00da907cce067f24b61dee2f0f24a6a6
 ---
 
 # Environment
@@ -17,48 +17,48 @@ What [[javascriptallonge]] covers about environment:
 
 ### variables and bindings
 
-- Every time a function is invoked ('invoked' means 'applied to zero or more arguments'), a new environment is created. An environment is a (possibly empty) dictionary that maps variables to values by name. The x in the expression that we call a 'variable' is itself an expression that is evaluated by looking up the value in the environment. _(javascriptallonge.pdf (source-range-31a4cf47-00306))_
+- Every time a function is invoked ('invoked' means 'applied to zero or more arguments'), a new environment is created. An environment is a (possibly empty) dictionary that maps variables to values by name. The x in the expression that we call a 'variable' is itself an expression that is evaluated by looking up the value in the environment. _(javascriptallonge.pdf (source-range-8eb13d6b-00306))_
 
-- When we talk about environments, we'll use an unsurprising syntax 25 for showing their bindings: {x: 2, ...} . meaning, that the environment is a dictionary, and that the value 2 is bound to the name x , and that there might be other stuff in that dictionary we aren't discussing right now. _(javascriptallonge.pdf (source-range-31a4cf47-00321))_
+- When we talk about environments, we'll use an unsurprising syntax 25 for showing their bindings: {x: 2, ...} . meaning, that the environment is a dictionary, and that the value 2 is bound to the name x , and that there might be other stuff in that dictionary we aren't discussing right now. _(javascriptallonge.pdf (source-range-8eb13d6b-00321))_
 
 ### call by sharing
 
-- Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, and when the value needs to be used, JavaScript uses the reference to obtain the original. _(javascriptallonge.pdf (source-range-31a4cf47-00327))_
+- Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, and when the value needs to be used, JavaScript uses the reference to obtain the original. _(javascriptallonge.pdf (source-range-8eb13d6b-00327))_
 
 ### are consts also from a shadowy planet?
 
-- We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different values to the same name, but one environment will be completely enclosed by the other. _(javascriptallonge.pdf (source-range-31a4cf47-00469))_
+- We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different values to the same name, but one environment will be completely enclosed by the other. _(javascriptallonge.pdf (source-range-8eb13d6b-00469))_
 
 ### Naming Functions
 
-- It doesn't name the function 'repeat' for the same reason that const answer = 42 doesn't name the number 42 . This syntax binds an anonymous function to a name in an environment, but the function itself remains anonymous. _(javascriptallonge.pdf (source-range-31a4cf47-00504))_
+- It doesn't name the function 'repeat' for the same reason that const answer = 42 doesn't name the number 42 . This syntax binds an anonymous function to a name in an environment, but the function itself remains anonymous. _(javascriptallonge.pdf (source-range-8eb13d6b-00504))_
 
 ### the function keyword
 
-- So 'actualName' isn't bound in the environment where we use the named function expression. Is it bound anywhere else? Yes it is. Here's a function that determines whether a positive integer is even or not. We'll use it in an IIFE so that we don't have to bind it to a name with const : _(javascriptallonge.pdf (source-range-31a4cf47-00534))_
+- So 'actualName' isn't bound in the environment where we use the named function expression. Is it bound anywhere else? Yes it is. Here's a function that determines whether a positive integer is even or not. We'll use it in an IIFE so that we don't have to bind it to a name with const : _(javascriptallonge.pdf (source-range-8eb13d6b-00534))_
 
 ### function declarations
 
-- In that it binds a name in the environment to a named function. However, there are two important differences. First, function declarations are hoisted to the top of the function in which they occur. _(javascriptallonge.pdf (source-range-31a4cf47-00543))_
+- In that it binds a name in the environment to a named function. However, there are two important differences. First, function declarations are hoisted to the top of the function in which they occur. _(javascriptallonge.pdf (source-range-8eb13d6b-00543))_
 
 ### function declaration caveats 34
 
-- Function declarations are formally only supposed to be made at what we might call the 'top level' of a function. Although some JavaScript environments permit the following code, this example is technically illegal and definitely a bad idea: _(javascriptallonge.pdf (source-range-31a4cf47-00551))_
+- Function declarations are formally only supposed to be made at what we might call the 'top level' of a function. Although some JavaScript environments permit the following code, this example is technically illegal and definitely a bad idea: _(javascriptallonge.pdf (source-range-8eb13d6b-00551))_
 
 ### Garbage, Garbage Everywhere
 
-- The array we had in prepend is no longer used. In GC environments, it is marked as no longer being used, and eventually the garbage collector recycles the memory it is using. Lather, rinse, repeat: Ever time we call mapWith , we're creating a new array, copying all the elements from prepend into the new array, and then we no longer use prepend . _(javascriptallonge.pdf (source-range-31a4cf47-01022))_
+- The array we had in prepend is no longer used. In GC environments, it is marked as no longer being used, and eventually the garbage collector recycles the memory it is using. Lather, rinse, repeat: Ever time we call mapWith , we're creating a new array, copying all the elements from prepend into the new array, and then we no longer use prepend . _(javascriptallonge.pdf (source-range-8eb13d6b-01022))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: variables and bindings
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00317))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00317))_
 
 > The value '2' is bound to the name 'x' in the environment.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00309))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00309))_
 
 ```
 ((x) => x)(2) //=> 2
@@ -66,11 +66,11 @@ What [[javascriptallonge]] covers about environment:
 
 ### Technical frame 2: are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00478))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00478))_
 
 > Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI . Does that binding 'overwrite' the outer one? Will our function return 6 or 6.2831853 ? This is a book, you've already scanned ahead, so you know that the answer is no , the inner binding does not overwrite the outer binding:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00477))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00477))_
 
 ```
 ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265)
@@ -78,11 +78,11 @@ What [[javascriptallonge]] covers about environment:
 
 ### Technical frame 3: are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00492))_
 
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00489))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00489))_
 
 ```
 ((diameter) => { const PI = 3.14159265; if ( true ) { const PI = 3; } return diameter * PI; })(2) //=> would return 6 if const had function scope
@@ -90,11 +90,11 @@ What [[javascriptallonge]] covers about environment:
 
 ### Technical frame 4: are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00492))_
 
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00491))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00491))_
 
 ```
 ((diameter) => { if ( true ) { const PI = 3.14159265; } return diameter * PI; })(2) //=> would return 6.2831853 if const had function scope
@@ -102,11 +102,11 @@ What [[javascriptallonge]] covers about environment:
 
 ### Technical frame 5: Naming Functions
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00504))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00504))_
 
 > It doesn't name the function 'repeat' for the same reason that const answer = 42 doesn't name the number 42 . This syntax binds an anonymous function to a name in an environment, but the function itself remains anonymous.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00503))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00503))_
 
 ```
 const repeat = (str) => str + str
@@ -114,11 +114,11 @@ const repeat = (str) => str + str
 
 ### Technical frame 6: the function keyword
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00534))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00534))_
 
 > So 'actualName' isn't bound in the environment where we use the named function expression. Is it bound anywhere else? Yes it is. Here's a function that determines whether a positive integer is even or not. We'll use it in an IIFE so that we don't have to bind it to a name with const :
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00533))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00533))_
 
 ```
 const bindingName = function actualName () { //... }; bindingName //=> [Function: actualName] actualName //=> ReferenceError: actualName is not defined
@@ -126,11 +126,11 @@ const bindingName = function actualName () { //... }; bindingName //=> [Function
 
 ### Technical frame 7: the function keyword
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00536))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00536))_
 
 > Clearly, the name even is bound to the function within the function's body . Is it bound to the function outside of the function's body?
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00535))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00535))_
 
 ```
 ( function even (n) { if (n === 0) { return true } else return !even(n - 1) })(5) //=> false ( function even (n) { if (n === 0) { return true } else return !even(n - 1) })(2) //=> true
@@ -138,11 +138,11 @@ const bindingName = function actualName () { //... }; bindingName //=> [Function
 
 ### Technical frame 8: the function keyword
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00538))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00538))_
 
 > even is bound within the function itself, but not outside it. This is useful for making recursive functions as we see above, and it speaks to the principle of least privilege: If you don't need to name it anywhere else, you needn't.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00537))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00537))_
 
 ```
 even //=> Can't find variable: even
@@ -168,7 +168,7 @@ even //=> Can't find variable: even
 - [[javascriptallonge-reference]] - shared statements: Reference shares source evidence from call by sharing: Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-type]] - shared statements: Type shares source evidence from call by sharing: Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-variable]] - shared statements: Variable shares source evidence from variables and bindings: Every time a function is invoked ('invoked' means 'applied to zero or more arguments'), a new environment is created. An environment is a (possibly empty) dictionary ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-section-it-s-always-the-environment-50e4f5c7]] - source section: it's always the environment shares source evidence from it's always the environment: To understand how closures are evaluated, we need to revisit environments. As we've said before, all functions are associated with an environment. We also hand-waved ... [truncated]; it's always the environment shares technical record from it's always the environment: So whenever a function is applied to arguments, its environment always has a reference to its parent environment. (8 shared statement(s), 5 shared atom(s))
+- [[javascriptallonge-section-it-s-always-the-environment-a04db4d0]] - source section: it's always the environment shares source evidence from it's always the environment: To understand how closures are evaluated, we need to revisit environments. As we've said before, all functions are associated with an environment. We also hand-waved ... [truncated]; it's always the environment shares technical record from it's always the environment: So whenever a function is applied to arguments, its environment always has a reference to its parent environment. (8 shared statement(s), 5 shared atom(s))
 
 ## Source
 

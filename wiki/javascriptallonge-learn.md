@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-learn@cc2a595ca5ed571a5f4469a6bcaf4d77
+projection_coverage: topic-javascriptallonge-learn@ad2a13bee8e175fe7572a6c022c3798b
 ---
 
 # Learn
@@ -17,34 +17,34 @@ What [[javascriptallonge]] covers about learn:
 
 ### variables and bindings
 
-- But there's another reason for learning the word antidisestablishmentarianism : We might learn how prefixes and postfixes work in English grammar. It's the same thing with (x) => (y) => x . It has a certain important meaning in its own right, and it's also an excellent excuse to learn about functions that make functions, environments, variables, and more. _(javascriptallonge.pdf (source-range-31a4cf47-00304))_
+- But there's another reason for learning the word antidisestablishmentarianism : We might learn how prefixes and postfixes work in English grammar. It's the same thing with (x) => (y) => x . It has a certain important meaning in its own right, and it's also an excellent excuse to learn about functions that make functions, environments, variables, and more. _(javascriptallonge.pdf (source-range-8eb13d6b-00304))_
 
 ### if functions without free variables are pure, are closures impure?
 
-- From this, we learn something: A pure function can contain a closure. _(javascriptallonge.pdf (source-range-31a4cf47-00352))_
+- From this, we learn something: A pure function can contain a closure. _(javascriptallonge.pdf (source-range-8eb13d6b-00352))_
 
 ### const
 
-- JavaScript gives us a way to do that, the const keyword. We'll learn a lot more about const in future chapters, but here's the most important thing we can do with const : _(javascriptallonge.pdf (source-range-31a4cf47-00423))_
+- JavaScript gives us a way to do that, the const keyword. We'll learn a lot more about const in future chapters, but here's the most important thing we can do with const : _(javascriptallonge.pdf (source-range-8eb13d6b-00423))_
 
 ### defaults and destructuring
 
-- Wesawearlier that destructuring parameters works the same way as destructuring assignment. Now we learn that we can create a default parameter argument. Can we create a default destructuring assignment? _(javascriptallonge.pdf (source-range-31a4cf47-01011))_
+- Wesawearlier that destructuring parameters works the same way as destructuring assignment. Now we learn that we can create a default parameter argument. Can we create a default destructuring assignment? _(javascriptallonge.pdf (source-range-8eb13d6b-01011))_
 
 ### flipping methods
 
-- When we learn about context and methods, we'll see that flip throws the current context away, so it can't be used to flip methods. A small alteration gets the job done: _(javascriptallonge.pdf (source-range-31a4cf47-01470))_
+- When we learn about context and methods, we'll see that flip throws the current context away, so it can't be used to flip methods. A small alteration gets the job done: _(javascriptallonge.pdf (source-range-8eb13d6b-01469))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: const
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00425))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00425))_
 
 > The const keyword introduces one or more bindings in the block that encloses it. It doesn't incur the cost of a function invocation. That's great. Even better, it puts the symbol (like PI ) close to the value ( 3.14159265 ). That's much better than what we were writing.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00424))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00424))_
 
 ```
 (diameter) => { const PI = 3.14159265; return diameter * PI }
@@ -52,11 +52,11 @@ What [[javascriptallonge]] covers about learn:
 
 ### Technical frame 2: defaults and destructuring
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01013))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01013))_
 
 > How very useful: defaults can be supplied for destructuring assignments, just like defaults for parameters.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01012))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01012))_
 
 ```
 const [first, second = "two"] = ["one"]; ` ${ first } . ${ second } ` //=> "one . two" const [first, second = "two"] = ["primus", "secundus"]; ` ${ first } . ${ second } ` //=> "primus . secundus"
@@ -64,11 +64,11 @@ const [first, second = "two"] = ["one"]; ` ${ first } . ${ second } ` //=> "one 
 
 ### Technical frame 3: flipping methods
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01470))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01469))_
 
 > When we learn about context and methods, we'll see that flip throws the current context away, so it can't be used to flip methods. A small alteration gets the job done:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01471))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01470))_
 
 ```
 const flipAndCurry = (fn) => (first) => function (second) { return fn.call( this , second, first); } const flip = (fn) => function (first, second) { return fn.call( this , second, first); } const flip = (fn) => function (first, second) { if (arguments.length === 2) { return fn.call( this , second, first); } else { return function (second) { return fn.call( this , second, first); }; }; };

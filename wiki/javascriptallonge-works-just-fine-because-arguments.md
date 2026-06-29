@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-works-just-fine-because-arguments@f89877d1dda81437b70545812c8f8ae9
+projection_coverage: topic-javascriptallonge-works-just-fine-because-arguments@7fdb1bec21203e8508af02df4207f63b
 ---
 
 # Works Just Fine, Because Arguments[0
@@ -17,18 +17,18 @@ What [[javascriptallonge]] covers about works just fine, because arguments[0:
 
 ### magic names and fat arrows
 
-- This works just fine, because arguments[0] refers to the 3 we passed to the function row . Our 'fat arrow' function (column) => column * arguments[0] doesn't bind arguments when it's invoked. But if we rewrite row to use the function keyword, it stops working: _(javascriptallonge.pdf (source-range-31a4cf47-00628))_
+- This works just fine, because arguments[0] refers to the 3 we passed to the function row . Our 'fat arrow' function (column) => column * arguments[0] doesn't bind arguments when it's invoked. But if we rewrite row to use the function keyword, it stops working: _(javascriptallonge.pdf (source-range-8eb13d6b-00628))_
 
 
 ## Technical atoms
 
 ### Technical atom 1
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00239))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00239))_
 
 > We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00237))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00237))_
 
 | entry | content |
 | --- | --- |
@@ -49,7 +49,7 @@ Back to our function. We evaluated this:
 
 ### Technical atom 2
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00564))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00564))_
 
 | entry | content |
 | --- | --- |
@@ -72,7 +72,7 @@ If we were learning Combinatorial Logic, we'd start with the most basic combinat
 
 ### Technical atom 3
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00571))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00571))_
 
 | entry | content |
 | --- | --- |

@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-write@1736a35c7402f3458bea6f063115080c
+projection_coverage: topic-javascriptallonge-write@995b9312f7ccd6c1d180e0aa792335af
 ---
 
 # Write
@@ -17,40 +17,40 @@ What [[javascriptallonge]] covers about write:
 
 ### void
 
-- 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that exploits it, so they deliberately omit any semicolon that JavaScript will insert for them. _(javascriptallonge.pdf (source-range-31a4cf47-00249))_
+- 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that exploits it, so they deliberately omit any semicolon that JavaScript will insert for them. _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
 
 ### const
 
-- Another way to write our 'circumference' function would be to pass PI along with the diameter argument, something like this: _(javascriptallonge.pdf (source-range-31a4cf47-00418))_
+- Another way to write our 'circumference' function would be to pass PI along with the diameter argument, something like this: _(javascriptallonge.pdf (source-range-8eb13d6b-00418))_
 
 ### copy-on-write
 
-- Copy-on-write is the name given to the policy that whenever a task attempts to make a change to the shared information, it should first create a separate (private) copy of that information to prevent its changes from becoming visible to all the other tasks.Wikipedia 73 _(javascriptallonge.pdf (source-range-31a4cf47-01253))_
+- Copy-on-write is the name given to the policy that whenever a task attempts to make a change to the shared information, it should first create a separate (private) copy of that information to prevent its changes from becoming visible to all the other tasks.Wikipedia 73 _(javascriptallonge.pdf (source-range-8eb13d6b-01252))_
 
-- Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liberal with mutation. Once we're done with it and give it to someone else, we need to be conservative and use a strategy like copy-on-read or copy-on-write. _(javascriptallonge.pdf (source-range-31a4cf47-01255))_
+- Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liberal with mutation. Once we're done with it and give it to someone else, we need to be conservative and use a strategy like copy-on-read or copy-on-write. _(javascriptallonge.pdf (source-range-8eb13d6b-01254))_
 
 ### a look back at functional iterators
 
-- If we write a program with the presumption that 'everything is an object,' we can write maps, folds, and filters that work on objects. We just ask the object for an iterator, and work on the iterator. Our functions don't need to know anything about how an object implements iteration, and we get the benefit of lazily traversing our objects. _(javascriptallonge.pdf (source-range-31a4cf47-01543))_
+- If we write a program with the presumption that 'everything is an object,' we can write maps, folds, and filters that work on objects. We just ask the object for an iterator, and work on the iterator. Our functions don't need to know anything about how an object implements iteration, and we get the benefit of lazily traversing our objects. _(javascriptallonge.pdf (source-range-8eb13d6b-01542))_
 
 ### iterables
 
-- So, when a standard way to write iterators was added to the JavaScript language, it didn't make sense to use a method like .iterator() for it: That would conflict with existing code. Instead, the language encourages new code to be written with a different name for the method that a collection object uses to return its iterator. _(javascriptallonge.pdf (source-range-31a4cf47-01555))_
+- So, when a standard way to write iterators was added to the JavaScript language, it didn't make sense to use a method like .iterator() for it: That would conflict with existing code. Instead, the language encourages new code to be written with a different name for the method that a collection object uses to return its iterator. _(javascriptallonge.pdf (source-range-8eb13d6b-01554))_
 
 ### We'll keep it simple:
 
-- Again, this is not particularly horrendous, but like the recursive example, we're explicitly greenspunning the natural linear state. In a generator, we write 'do this, then this, then this.' In an iterator, we have to wrap that up and explicitly keep track of what step we're on. _(javascriptallonge.pdf (source-range-31a4cf47-01659))_
+- Again, this is not particularly horrendous, but like the recursive example, we're explicitly greenspunning the natural linear state. In a generator, we write 'do this, then this, then this.' In an iterator, we have to wrap that up and explicitly keep track of what step we're on. _(javascriptallonge.pdf (source-range-8eb13d6b-01657))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: void
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00249))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
 
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00250))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00250))_
 
 ```
 (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined
@@ -58,21 +58,21 @@ What [[javascriptallonge]] covers about write:
 
 ### Technical frame 2: void
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00249))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
 
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00251))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00251))_
 
 > So how do we get a function that evaluates a block to return a value when applied?
 
 ### Technical frame 3: const
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00422))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00422))_
 
 > This differs from our example above in that there is only one environment, rather than two. We have one binding in the environment representing our regular argument, and another our 'constant.' That's more efficient, and it's almost what we wanted all along: A way to bind 3.14159265 to a readable name.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00419))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00419))_
 
 ```
 (diameter, PI) => diameter * PI
@@ -80,11 +80,11 @@ What [[javascriptallonge]] covers about write:
 
 ### Technical frame 4: const
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00433))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00433))_
 
 > We can bind any expression. Functions are expressions, so we can bind helper functions:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00432))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00432))_
 
 ```
 ((diameter) => { const PI = 3.14159265; return diameter * PI })(2) //=> 6.2831853
@@ -92,11 +92,11 @@ What [[javascriptallonge]] covers about write:
 
 ### Technical frame 5: a look back at functional iterators
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01543))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01542))_
 
 > If we write a program with the presumption that 'everything is an object,' we can write maps, folds, and filters that work on objects. We just ask the object for an iterator, and work on the iterator. Our functions don't need to know anything about how an object implements iteration, and we get the benefit of lazily traversing our objects.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01542))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01541))_
 
 ```
 const collectionSum = (collection) => { const iterator = collection.iterator(); let eachIteration, sum = 0; while ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } return sum } collectionSum(stack) //=> 6
@@ -104,7 +104,7 @@ const collectionSum = (collection) => { const iterator = collection.iterator(); 
 
 ### Technical atom 6
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00659))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00659))_
 
 | entry | content |
 | --- | --- |

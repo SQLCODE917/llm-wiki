@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-discussing@e7e4cb160f67c32b84e5cbf1020749b8
+projection_coverage: topic-javascriptallonge-discussing@ef54fbfcd39da45d17b27e11b8f4488c
 ---
 
 # Discussing
@@ -17,30 +17,30 @@ What [[javascriptallonge]] covers about discussing:
 
 ### magic names and fat arrows
 
-- 44 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It's the same idea, after all. _(javascriptallonge.pdf (source-range-31a4cf47-00629))_
+- 44 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It's the same idea, after all. _(javascriptallonge.pdf (source-range-8eb13d6b-00629))_
 
 ### mapWith
 
-- 82 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It's the same idea, after all. _(javascriptallonge.pdf (source-range-31a4cf47-01440))_
+- 82 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It's the same idea, after all. _(javascriptallonge.pdf (source-range-8eb13d6b-01439))_
 
 ### ordered collections
 
-- The iterables we're discussing represent ordered collections . One of the semantic properties of an ordered collection is that every time you iterate over it, you get its elements in order, from the beginning. For example: _(javascriptallonge.pdf (source-range-31a4cf47-01579))_
+- The iterables we're discussing represent ordered collections . One of the semantic properties of an ordered collection is that every time you iterate over it, you get its elements in order, from the beginning. For example: _(javascriptallonge.pdf (source-range-8eb13d6b-01578))_
 
 ### operations on ordered collections
 
-- 89 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It's the same idea, after all. _(javascriptallonge.pdf (source-range-31a4cf47-01588))_
+- 89 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It's the same idea, after all. _(javascriptallonge.pdf (source-range-8eb13d6b-01587))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: magic names and fat arrows
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00632))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00632))_
 
 > Although this example is clearly unrealistic, there is a general design principle that deserves attention. Sometimes, a function is meant to be used as a Big-F function. It has a name, it is called by different pieces of code, it's a first-class entity in the code.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00630))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00630))_
 
 ```
 const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36,49,64,81,100,121,144]
@@ -48,11 +48,11 @@ const row = function () { return mapWith( function (column) { return column * ar
 
 ### Technical frame 2: mapWith
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01442))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01441))_
 
 > If we didn't use mapWith , we'd could have also used callRight with map to accomplish the same result:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01441))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01440))_
 
 ```
 const squaresOf = mapWith(n => n * n); squaresOf([1, 2, 3, 4, 5]) //=> [1, 4, 9, 16, 25]
@@ -60,11 +60,11 @@ const squaresOf = mapWith(n => n * n); squaresOf([1, 2, 3, 4, 5]) //=> [1, 4, 9,
 
 ### Technical frame 3: ordered collections
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01581))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01580))_
 
 > This is accomplished with our own collections by returning a brand new iterator every time we call [Symbol.iterator] , and ensuring that our iterators start at the beginning and work forward.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01580))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01579))_
 
 ```
 const abc = ["a", "b", "c"]; for ( const i of abc) { console.log(i) } //=> a b c for ( const i of abc) { console.log(i) } //=> a b c
@@ -72,11 +72,11 @@ const abc = ["a", "b", "c"]; for ( const i of abc) { console.log(i) } //=> a b c
 
 ### Technical frame 4: operations on ordered collections
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01590))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01589))_
 
 > This illustrates the general pattern of working with ordered collections: We make them iterables , meaning that they have a [Symbol.iterator] method, that returns an iterator . An iterator is also an object, but with a .next() method that is invoked repeatedly to obtain the elements in order.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01589))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01588))_
 
 ```
 const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next(); return ({done, value: done ? undefined : fn(value)}); } } } });

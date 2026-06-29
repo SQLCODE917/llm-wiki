@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-coffee@2735c9d563e46ce2436957c4703f2dd2
+projection_coverage: topic-javascriptallonge-coffee@754a1a588481969867ce0cf29e6f1b57
 ---
 
 # Coffee
@@ -17,34 +17,34 @@ What [[javascriptallonge]] covers about coffee:
 
 ### values are expressions
 
-- All values are expressions. Say you hand the barista a café Cubano. Yup, you hand over a cup with some coffee infused through partially caramelized sugar. You say, 'I want one of these.' The barista is no fool, she gives it straight back to you, and you get exactly what you want. Thus, a café Cubano is an expression (you can use it to place an order) and a value (you get it back from the barista). _(javascriptallonge.pdf (source-range-31a4cf47-00105))_
+- All values are expressions. Say you hand the barista a café Cubano. Yup, you hand over a cup with some coffee infused through partially caramelized sugar. You say, 'I want one of these.' The barista is no fool, she gives it straight back to you, and you get exactly what you want. Thus, a café Cubano is an expression (you can use it to place an order) and a value (you get it back from the barista). _(javascriptallonge.pdf (source-range-8eb13d6b-00105))_
 
-- Now the barista gives us back an espresso. And if we hand over the espresso, we get the espresso right back. So, boiling water plus ground coffee is an expression, but it isn't a value. 11 Boiling water is a value. Ground coffee is a value. Espresso is a value. Boiling water plus ground coffee is an expression. _(javascriptallonge.pdf (source-range-31a4cf47-00113))_
+- Now the barista gives us back an espresso. And if we hand over the espresso, we get the espresso right back. So, boiling water plus ground coffee is an expression, but it isn't a value. 11 Boiling water is a value. Ground coffee is a value. Espresso is a value. Boiling water plus ground coffee is an expression. _(javascriptallonge.pdf (source-range-8eb13d6b-00113))_
 
 ### A Warm Cup: Basic Strings and Quasi-Literals
 
-- Coffee and a Book An expression is any valid unit of code that resolves to a value.-Mozilla Development Network: Expressions and operators 87 _(javascriptallonge.pdf (source-range-31a4cf47-01499))_
+- Coffee and a Book An expression is any valid unit of code that resolves to a value.-Mozilla Development Network: Expressions and operators 87 _(javascriptallonge.pdf (source-range-8eb13d6b-01498))_
 
 ### About The Author
 
-- When he's not shipping JavaScript, Ruby, CoffeeScript and Java applications scaling out to millions of users, Reg 'Raganwald' Braithwaite has authored libraries 221 for JavaScript, CoffeeScript, and Ruby programming such as Allong.es, Method Combinators, Katy, JQuery Combinators, YouAreDaChef, andand, and others. _(javascriptallonge.pdf (source-range-31a4cf47-02063))_
+- When he's not shipping JavaScript, Ruby, CoffeeScript and Java applications scaling out to millions of users, Reg 'Raganwald' Braithwaite has authored libraries 221 for JavaScript, CoffeeScript, and Ruby programming such as Allong.es, Method Combinators, Katy, JQuery Combinators, YouAreDaChef, andand, and others. _(javascriptallonge.pdf (source-range-8eb13d6b-02061))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: values are expressions
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00112))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00112))_
 
 > Astute readers will realize we're omitting something. Congratulations! Take a sip of espresso. We'll get to that in a moment.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00113))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00113))_
 
 > And if we hand over the espresso, we get the espresso right back.
 
 ### Technical atom 2
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00103))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00103))_
 
 | entry | content |
 | --- | --- |

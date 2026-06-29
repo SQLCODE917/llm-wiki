@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-different@26b26dc3b609cfdb828ab4141d30db15
+projection_coverage: topic-javascriptallonge-different@6509631c869d00f3223f187488898ccf
 ---
 
 # Different
@@ -17,34 +17,34 @@ What [[javascriptallonge]] covers about different:
 
 ### matthew knox
 
-- A different kind of language requires a different kind of book. _(javascriptallonge.pdf (source-range-31a4cf47-00091))_
+- A different kind of language requires a different kind of book. _(javascriptallonge.pdf (source-range-8eb13d6b-00091))_
 
 ### That Constant Coffee Craving
 
-- Up to now, all we've really seen are anonymous functions , functions that don't have a name. This feels very different from programming in most other languages, where the focus is on naming functions, methods, and procedures. Naming things is a critical part of programming, but all we've seen so far is how to name arguments. _(javascriptallonge.pdf (source-range-31a4cf47-00388))_
+- Up to now, all we've really seen are anonymous functions , functions that don't have a name. This feels very different from programming in most other languages, where the focus is on naming functions, methods, and procedures. Naming things is a critical part of programming, but all we've seen so far is how to name arguments. _(javascriptallonge.pdf (source-range-8eb13d6b-00388))_
 
 ### are consts also from a shadowy planet?
 
-- We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different values to the same name, but one environment will be completely enclosed by the other. _(javascriptallonge.pdf (source-range-31a4cf47-00469))_
+- We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different values to the same name, but one environment will be completely enclosed by the other. _(javascriptallonge.pdf (source-range-8eb13d6b-00469))_
 
 ### Mutation
 
-- This is different. We haven't rebound the inner name to a different variable, we've mutated the value that both bindings share. Now that we've finished with mutation and aliases, let's have a look at it. _(javascriptallonge.pdf (source-range-31a4cf47-01136))_
+- This is different. We haven't rebound the inner name to a different variable, we've mutated the value that both bindings share. Now that we've finished with mutation and aliases, let's have a look at it. _(javascriptallonge.pdf (source-range-8eb13d6b-01135))_
 
 ### Served by the Pot: Collections
 
-- Some different sized and coloured coffee pots by Antti Nurmesniemi, perhaps his most known design. _(javascriptallonge.pdf (source-range-31a4cf47-01524))_
+- Some different sized and coloured coffee pots by Antti Nurmesniemi, perhaps his most known design. _(javascriptallonge.pdf (source-range-8eb13d6b-01523))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00478))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00478))_
 
 > Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI . Does that binding 'overwrite' the outer one? Will our function return 6 or 6.2831853 ? This is a book, you've already scanned ahead, so you know that the answer is no , the inner binding does not overwrite the outer binding:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00477))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00477))_
 
 ```
 ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265)
@@ -52,11 +52,11 @@ What [[javascriptallonge]] covers about different:
 
 ### Technical frame 2: Mutation
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01129))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01128))_
 
 > Both halloween and allHallowsEve are bound to the same array value within the local environment. And also:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01128))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01127))_
 
 ```
 const allHallowsEve = [2012, 10, 31] const halloween = allHallowsEve;

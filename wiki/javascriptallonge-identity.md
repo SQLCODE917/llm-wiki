@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-identity@ad24a920e8551e195200d292924ab0e5
+projection_coverage: topic-javascriptallonge-identity@c7331caaf14af82cceb598fe2f17bb6c
 ---
 
 # Identity
@@ -17,7 +17,7 @@ What [[javascriptallonge]] covers about identity:
 
 ### functions and identities
 
-- You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same contents. Reference types do not. _(javascriptallonge.pdf (source-range-31a4cf47-00180))_
+- You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same contents. Reference types do not. _(javascriptallonge.pdf (source-range-8eb13d6b-00180))_
 
 
 ## Related pages

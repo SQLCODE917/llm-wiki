@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-language@20ec650dbf620e3afe7dd610f2d2fb2f
+projection_coverage: topic-javascriptallonge-language@75cdda4e5d28127a4bf8392c55115b8a
 ---
 
 # Language
@@ -17,70 +17,70 @@ What [[javascriptallonge]] covers about language:
 
 ### why the 'six' edition?
 
-- Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Ruby, we can write: _(javascriptallonge.pdf (source-range-31a4cf47-00028))_
+- Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Ruby, we can write: _(javascriptallonge.pdf (source-range-8eb13d6b-00028))_
 
 ### matthew knox
 
-- A different kind of language requires a different kind of book. _(javascriptallonge.pdf (source-range-31a4cf47-00091))_
+- A different kind of language requires a different kind of book. _(javascriptallonge.pdf (source-range-8eb13d6b-00091))_
 
 ### A Rich Aroma: Basic Numbers
 
-- In computer science, a literal is a notation for representing a fixed value in source code. Almost all programming languages have notations for atomic values such as integers, floating-point numbers, and strings, and usually for booleans and characters; some also have notations for elements of enumerated types and compound values such as arrays, records, and objects. An anonymous function is a literal for the function type.Wikipedia 12 _(javascriptallonge.pdf (source-range-31a4cf47-00145))_
+- In computer science, a literal is a notation for representing a fixed value in source code. Almost all programming languages have notations for atomic values such as integers, floating-point numbers, and strings, and usually for booleans and characters; some also have notations for elements of enumerated types and compound values such as arrays, records, and objects. An anonymous function is a literal for the function type.Wikipedia 12 _(javascriptallonge.pdf (source-range-8eb13d6b-00145))_
 
 ### void
 
-- 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that exploits it, so they deliberately omit any semicolon that JavaScript will insert for them. _(javascriptallonge.pdf (source-range-31a4cf47-00249))_
+- 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that exploits it, so they deliberately omit any semicolon that JavaScript will insert for them. _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
 
 ### it's always the environment
 
-- The first function is the result of currying a the second function. Calling a curried function with only some of its arguments is sometimes called partial application b . Some programming languages automatically curry and partially evaluate functions without the need to manually nest them. _(javascriptallonge.pdf (source-range-31a4cf47-00369))_
+- The first function is the result of currying a the second function. Calling a curried function with only some of its arguments is sometimes called partial application b . Some programming languages automatically curry and partially evaluate functions without the need to manually nest them. _(javascriptallonge.pdf (source-range-8eb13d6b-00369))_
 
 ### That Constant Coffee Craving
 
-- Up to now, all we've really seen are anonymous functions , functions that don't have a name. This feels very different from programming in most other languages, where the focus is on naming functions, methods, and procedures. Naming things is a critical part of programming, but all we've seen so far is how to name arguments. _(javascriptallonge.pdf (source-range-31a4cf47-00388))_
+- Up to now, all we've really seen are anonymous functions , functions that don't have a name. This feels very different from programming in most other languages, where the focus is on naming functions, methods, and procedures. Naming things is a critical part of programming, but all we've seen so far is how to name arguments. _(javascriptallonge.pdf (source-range-8eb13d6b-00388))_
 
 ### Maybe
 
-- A common problem in programming is checking for null or undefined (hereafter called 'nothing,' while all other values including 0 , [] and false will be called 'something'). Languages like JavaScript do not strongly enforce the notion that a particular variable or particular property be something, so programs are often written to account for values that may be nothing. _(javascriptallonge.pdf (source-range-31a4cf47-00695))_
+- A common problem in programming is checking for null or undefined (hereafter called 'nothing,' while all other values including 0 , [] and false will be called 'something'). Languages like JavaScript do not strongly enforce the notion that a particular variable or particular property be something, so programs are often written to account for values that may be nothing. _(javascriptallonge.pdf (source-range-8eb13d6b-00695))_
 
 ### Garbage, Garbage Everywhere
 
-- Having these instructions be very fast was important to those early designers: They were working on one of the first high-level languages (COBOL and FORTRAN being the others), and computers in the late 1950s were extremely small and slow by today's standards. Although the 704 used core memory, it still used vacuum tubes for its logic. Thus, the design of programming languages and algorithms was driven by what could be accomplished with limited memory and performance. _(javascriptallonge.pdf (source-range-31a4cf47-01033))_
+- Having these instructions be very fast was important to those early designers: They were working on one of the first high-level languages (COBOL and FORTRAN being the others), and computers in the late 1950s were extremely small and slow by today's standards. Although the 704 used core memory, it still used vacuum tubes for its logic. Thus, the design of programming languages and algorithms was driven by what could be accomplished with limited memory and performance. _(javascriptallonge.pdf (source-range-8eb13d6b-01033))_
 
 ### so why arrays
 
-- For these and other reasons, almost all languages today make it possible to use a fast array or vector type that is optimized for iteration, and even Lisp now has a variety of data structures that are optimized for specific use cases. _(javascriptallonge.pdf (source-range-31a4cf47-01057))_
+- For these and other reasons, almost all languages today make it possible to use a fast array or vector type that is optimized for iteration, and even Lisp now has a variety of data structures that are optimized for specific use cases. _(javascriptallonge.pdf (source-range-8eb13d6b-01057))_
 
 ### Reassignment
 
-- Like some imperative programming languages, JavaScript allows you to re-assign the value bound to parameters. We saw this earlier in rebinding: _(javascriptallonge.pdf (source-range-31a4cf47-01162))_
+- Like some imperative programming languages, JavaScript allows you to re-assign the value bound to parameters. We saw this earlier in rebinding: _(javascriptallonge.pdf (source-range-8eb13d6b-01161))_
 
 ### bonus
 
-- Many programmers coming to JavaScript from other languages are familiar with three 'canonical' operations on collections: folding, filtering, and finding. In Smalltalk, for example, they are known as collect , select , and detect . _(javascriptallonge.pdf (source-range-31a4cf47-01316))_
+- Many programmers coming to JavaScript from other languages are familiar with three 'canonical' operations on collections: folding, filtering, and finding. In Smalltalk, for example, they are known as collect , select , and detect . _(javascriptallonge.pdf (source-range-8eb13d6b-01315))_
 
 ### functions are not the real point
 
-- However, that is not the interesting thing to note here. Practically speaking, languages like JavaScript already provide arrays with mapping and folding methods, choice operations, and other rich constructs. Knowing how to make a linked list out of functions is not really necessary for the working programmer. (Knowing that it can be done, on the other hand, is very important to understanding computer science.) _(javascriptallonge.pdf (source-range-31a4cf47-01404))_
+- However, that is not the interesting thing to note here. Practically speaking, languages like JavaScript already provide arrays with mapping and folding methods, choice operations, and other rich constructs. Knowing how to make a linked list out of functions is not really necessary for the working programmer. (Knowing that it can be done, on the other hand, is very important to understanding computer science.) _(javascriptallonge.pdf (source-range-8eb13d6b-01403))_
 
 ### iterables
 
-- So, when a standard way to write iterators was added to the JavaScript language, it didn't make sense to use a method like .iterator() for it: That would conflict with existing code. Instead, the language encourages new code to be written with a different name for the method that a collection object uses to return its iterator. _(javascriptallonge.pdf (source-range-31a4cf47-01555))_
+- So, when a standard way to write iterators was added to the JavaScript language, it didn't make sense to use a method like .iterator() for it: That would conflict with existing code. Instead, the language encourages new code to be written with a different name for the method that a collection object uses to return its iterator. _(javascriptallonge.pdf (source-range-8eb13d6b-01554))_
 
 ### summary
 
-- Separating concerns with iterators speaks to JavaScript's fundamental nature: It's a language that wants to compose functionality out of small, singe-responsibility pieces, whether those pieces are functions or objects built out of functions. _(javascriptallonge.pdf (source-range-31a4cf47-01621))_
+- Separating concerns with iterators speaks to JavaScript's fundamental nature: It's a language that wants to compose functionality out of small, singe-responsibility pieces, whether those pieces are functions or objects built out of functions. _(javascriptallonge.pdf (source-range-8eb13d6b-01620))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: why the 'six' edition?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00025))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00025))_
 
 > And the variable i is scoped locally to the code within the braces. Prior to ECMAScript 2015, JavaScript did not support block-structuring, so programmers borrowed a trick from the Scheme programming language, and would write:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00024))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00024))_
 
 ```
 for ( int i = 0; i < array.length; ++i) { // ... }
@@ -88,11 +88,11 @@ for ( int i = 0; i < array.length; ++i) { // ... }
 
 ### Technical frame 2: why the 'six' edition?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00028))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00028))_
 
 > Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Ruby, we can write:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00026))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00026))_
 
 ```
 var i; for (i = 0; i < array.length; ++i) { ( function (i) { // ... })(i) }
@@ -100,11 +100,11 @@ var i; for (i = 0; i < array.length; ++i) { ( function (i) { // ... })(i) }
 
 ### Technical frame 3: why the 'six' edition?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00030))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00030))_
 
 > Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into a parameter, so programmers would take advantage of an awkward work-around and write things like:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00029))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00029))_
 
 ```
 def foo (first, *rest) # ... end
@@ -112,21 +112,21 @@ def foo (first, *rest) # ... end
 
 ### Technical frame 4: A Rich Aroma: Basic Numbers
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00149))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00149))_
 
 > For example, the largest integer JavaScript can safely 14 handle is 9007199254740991 , or 2 '53' - 1 . Like most programming languages, JavaScript does not allow us to use commas to separate groups of digits.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00148))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00148))_
 
 > The machine's representation of a number almost never lines up perfectly with our understanding of how a number behaves, and thus there will be places where the computer's behaviour surprises us if we don't know a little about what it's doing 'under the hood.'
 
 ### Technical frame 5: void
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00249))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
 
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00250))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00250))_
 
 ```
 (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined
@@ -134,21 +134,21 @@ def foo (first, *rest) # ... end
 
 ### Technical frame 6: void
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00249))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
 
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00251))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00251))_
 
 > So how do we get a function that evaluates a block to return a value when applied?
 
 ### Technical frame 7: it's always the environment
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00368))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00368))_
 
 > Only you call it with (1)(2)(3) instead of (1, 2, 3) . The other big difference is that you can call it with (1) and get a function back that you can later call with (2)(3) .
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00367))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00367))_
 
 ```
 (x, y, z) => x + y + z
@@ -156,11 +156,11 @@ def foo (first, *rest) # ... end
 
 ### Technical frame 8: bonus
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01319))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01318))_
 
 > This is interesting, because it is lazy: It doesn't apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01318))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01317))_
 
 ```
 const firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator), 1);
@@ -168,11 +168,11 @@ const firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator)
 
 ### Technical atom 9
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00114))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00114))_
 
 > Let's try this as well with something else the computer understands easily:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00116))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00116))_
 
 | entry | content |
 | --- | --- |
@@ -191,7 +191,7 @@ const firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator)
 
 ### Technical atom 10
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00571))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00571))_
 
 | entry | content |
 | --- | --- |

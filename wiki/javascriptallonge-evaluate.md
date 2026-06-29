@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-evaluate@d4c9c60c2bf12c55214736d6c4767536
+projection_coverage: topic-javascriptallonge-evaluate@a3c75f6cb6b54b88241ff2b6ad4a6edd
 ---
 
 # Evaluate
@@ -17,48 +17,48 @@ What [[javascriptallonge]] covers about evaluate:
 
 ### reference types
 
-- They look the same, but if you examine them with === , you see that they are different. Every time you evaluate an expression (including typing something in) to create an array, you're creating a new, distinct value even if it appears to be the same as some other array value. As we'll see, this is true of many other kinds of values, including functions , the main subject of this book. _(javascriptallonge.pdf (source-range-31a4cf47-00141))_
+- They look the same, but if you examine them with === , you see that they are different. Every time you evaluate an expression (including typing something in) to create an array, you're creating a new, distinct value even if it appears to be the same as some other array value. As we'll see, this is true of many other kinds of values, including functions , the main subject of this book. _(javascriptallonge.pdf (source-range-8eb13d6b-00141))_
 
 ### undefined
 
-- No matter how you evaluate undefined , you get an identical value back. undefined is a value that means 'I don't have a value.' But it's still a value :-) _(javascriptallonge.pdf (source-range-31a4cf47-00226))_
+- No matter how you evaluate undefined , you get an identical value back. undefined is a value that means 'I don't have a value.' But it's still a value :-) _(javascriptallonge.pdf (source-range-8eb13d6b-00226))_
 
 ### void
 
-- But no matter how we arrange them, a block with one or more expressions still evaluates to undefined : _(javascriptallonge.pdf (source-range-31a4cf47-00246))_
+- But no matter how we arrange them, a block with one or more expressions still evaluates to undefined : _(javascriptallonge.pdf (source-range-8eb13d6b-00246))_
 
 ### it's always the environment
 
-- The first function is the result of currying a the second function. Calling a curried function with only some of its arguments is sometimes called partial application b . Some programming languages automatically curry and partially evaluate functions without the need to manually nest them. _(javascriptallonge.pdf (source-range-31a4cf47-00369))_
+- The first function is the result of currying a the second function. Calling a curried function with only some of its arguments is sometimes called partial application b . Some programming languages automatically curry and partially evaluate functions without the need to manually nest them. _(javascriptallonge.pdf (source-range-8eb13d6b-00369))_
 
 ### Functions
 
-- Block bodies evaluate to whatever is returned with the return keyword, or to undefined . _(javascriptallonge.pdf (source-range-31a4cf47-00646))_
+- Block bodies evaluate to whatever is returned with the return keyword, or to undefined . _(javascriptallonge.pdf (source-range-8eb13d6b-00646))_
 
 ### truthiness and the ternary operator
 
-- JavaScript inherited an operator from the C family of languages, the ternary operator. It's the only operator that takes three arguments. It looks like this: first ? second : third . It evaluates first , and if first is 'truthy', it evaluates second and that is its value. If first is not truthy, it evaluates third and that is its value. _(javascriptallonge.pdf (source-range-31a4cf47-00768))_
+- JavaScript inherited an operator from the C family of languages, the ternary operator. It's the only operator that takes three arguments. It looks like this: first ? second : third . It evaluates first , and if first is 'truthy', it evaluates second and that is its value. If first is not truthy, it evaluates third and that is its value. _(javascriptallonge.pdf (source-range-8eb13d6b-00768))_
 
-- Wecertainly don't want JavaScript trying to evaluate deleteRecord(currentRecord) unless isAuthorized(currentUser) returns true . _(javascriptallonge.pdf (source-range-31a4cf47-00775))_
+- Wecertainly don't want JavaScript trying to evaluate deleteRecord(currentRecord) unless isAuthorized(currentUser) returns true . _(javascriptallonge.pdf (source-range-8eb13d6b-00775))_
 
 ### evaluation time
 
-- JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function's body is evaluated. Thus, name is not bound to "Harry" , it is bound to 'Arthur Dent' , the value of the parameter when the function is invoked. _(javascriptallonge.pdf (source-range-31a4cf47-01519))_
+- JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function's body is evaluated. Thus, name is not bound to "Harry" , it is bound to 'Arthur Dent' , the value of the parameter when the function is invoked. _(javascriptallonge.pdf (source-range-8eb13d6b-01518))_
 
 ### iterables
 
-- The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object. _(javascriptallonge.pdf (source-range-31a4cf47-01557))_
+- The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object. _(javascriptallonge.pdf (source-range-8eb13d6b-01556))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: undefined
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00226))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00226))_
 
 > No matter how you evaluate undefined , you get an identical value back. undefined is a value that means 'I don't have a value.' But it's still a value :-)
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00225))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00225))_
 
 ```
 undefined === undefined //=> true (() => {})() === (() => {})() //=> true (() => {})() === undefined //=> true
@@ -66,11 +66,11 @@ undefined === undefined //=> true (() => {})() === (() => {})() //=> true (() =>
 
 ### Technical frame 2: void
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00235))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00235))_
 
 > void is an operator that takes any value and evaluates to undefined , always. So, when we deliberately want an undefined value, should we use the first, second, or third form? 19 The answer is, use void . By convention, use void 0 .
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00234))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00234))_
 
 ```
 void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined
@@ -78,11 +78,11 @@ void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined
 
 ### Technical frame 3: void
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00249))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
 
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00247))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00247))_
 
 ```
 (() => { 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined
@@ -90,11 +90,11 @@ void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined
 
 ### Technical frame 4: void
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00249))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
 
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00252))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00252))_
 
 ```
 (() => { return 0 })() //=> 0 (() => { return 1 })() //=> 1 (() => { return 'Hello ' + 'World' })() // 'Hello World'
@@ -102,21 +102,21 @@ void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined
 
 ### Technical frame 5: it's always the environment
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00361))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00361))_
 
 > (x) => x is called the I Combinator, or the Identity Function . (x) => (y) => x is called the K Combinator, or Kestrel . Some people get so excited by this that they write entire books about them, some are great a , some-how shall I put this-are interesting b if you use Ruby. a http://www.amzn.com/0192801422?tag=raganwald001-20
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00359))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00359))_
 
 > So whenever a function is applied to arguments, its environment always has a reference to its parent environment.
 
 ### Technical frame 6: it's always the environment
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00368))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00368))_
 
 > Only you call it with (1)(2)(3) instead of (1, 2, 3) . The other big difference is that you can call it with (1) and get a function back that you can later call with (2)(3) .
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00367))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00367))_
 
 ```
 (x, y, z) => x + y + z
@@ -124,11 +124,11 @@ void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined
 
 ### Technical frame 7: truthiness and the ternary operator
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00775))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00775))_
 
 > Wecertainly don't want JavaScript trying to evaluate deleteRecord(currentRecord) unless isAuthorized(currentUser) returns true .
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00774))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00774))_
 
 ```
 const status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\ den';
@@ -136,11 +136,11 @@ const status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid
 
 ### Technical atom 8
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00239))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00239))_
 
 > We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00237))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00237))_
 
 | entry | content |
 | --- | --- |

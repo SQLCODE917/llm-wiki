@@ -3,204 +3,204 @@
 ## Sources
 - [[1776thomaspaine]] — Hub page for the source '1776' by Thomas Paine, linking chapter pages.
 - [[1776thomaspaine-document]] — Document from raw/1776ThomasPaine.pdf.
-- [[javascriptallonge]] — Claim-ledger projection (coding): 1992 usable entries, 654 technical atoms, 430 needs-review, 293 linked page(s); write decision write-with-review-work.
-- [[javascriptallonge-section-a-balanced-statement-about-combinators-cf02a85f]] — a balanced statement about combinators: 10 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-few-utilities-7ab880aa]] — a few utilities: 3 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-history-lesson-cb2b1fc8]] — a history lesson: 5 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-look-back-at-functional-iterators-98eb8fd9]] — a look back at functional iterators: 10 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-742ab4b7]] — A Pull of the Lever: Prefaces: 2 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-quick-summary-of-functions-and-bodies-9b7c454c]] — a quick summary of functions and bodies: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-return-to-backward-thinking-355ac000]] — a return to backward thinking: 22 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-rich-aroma-basic-numbers-97588563]] — A Rich Aroma: Basic Numbers: 14 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-b250d92c]] — A Warm Cup: Basic Strings and Quasi-Literals: 8 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-about-javascript-allong-0c951834]] — About JavaScript Allongé: 7 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-about-the-author-ca8e9cf0]] — About The Author: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-about-the-sample-pdf-48384d6f]] — About The Sample PDF: 4 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-after-another-drink-abc2aedb]] — after another drink: 8 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-ah-i-d-like-to-have-an-argument-please-22-fbe5c983]] — Ah. I'd Like to Have an Argument, Please. 22: 15 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-4bdef26b]] — And also:: 3 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-are-control-flow-operators-0b06cb90]] — || and && are control-flow operators: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-applying-functions-04c77250]] — applying functions: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-are-consts-also-from-a-shadowy-planet-9d1fd9e3]] — are consts also from a shadowy planet?: 30 source-backed entries and 11 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-array-literals-61109ad1]] — array literals: 13 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-arrays-and-destructuring-arguments-75b30d05]] — Arrays and Destructuring Arguments: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-as-little-as-possible-about-functions-but-no-less-8e09ba14]] — As Little As Possible About Functions, But No Less: 13 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-backwardness-5faa732a]] — backwardness: 7 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-basic-operations-on-iterables-007fb72e]] — Basic Operations on Iterables: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-bonus-02231193]] — bonus: 10 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-building-blocks-d06fb892]] — Building Blocks: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-building-with-mutation-980bff93]] — building with mutation: 10 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-call-by-sharing-ba7d2090]] — call by sharing: 17 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-call-by-value-96512294]] — call by value: 7 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-caveat-f0db9574]] — caveat: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-closures-and-scope-42f3206b]] — Closures and Scope: 11 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-commas-ac755424]] — commas: 6 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-284db6a6]] — Composing and Decomposing Data: 2 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composition-9e6eae84]] — composition: 13 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-const-0fb64898]] — const: 22 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-const-and-lexical-scope-ceed1c03]] — const and lexical scope: 15 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-contact-df29a07d]] — contact: 1 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-converting-non-tail-calls-to-tail-calls-af87de47]] — converting non-tail-calls to tail-calls: 12 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-copy-on-read-ae579efc]] — copy-on-read: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-copy-on-write-6d38a4af]] — Copy on Write: 11 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-copy-on-write-9634f431]] — copy-on-write: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-copyright-notice-368afec5]] — Copyright Notice: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-daniel-friedman-and-matthias-felleisen-1aedcdab]] — Daniel Friedman and Matthias Felleisen: 3 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-default-arguments-a85d3baf]] — default arguments: 9 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-defaults-and-destructuring-bb2261b7]] — defaults and destructuring: 3 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-destructuring-and-return-values-58195e8d]] — destructuring and return values: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-destructuring-arrays-4bb0db7d]] — destructuring arrays: 11 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-destructuring-is-not-pattern-matching-b7f29770]] — destructuring is not pattern matching: 12 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-destructuring-objects-9d3f97be]] — destructuring objects: 7 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-destructuring-parameters-934b50af]] — destructuring parameters: 7 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-disclaimer-1eabd0c5]] — Disclaimer: 4 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-disclaimer-da38fc1d]] — Disclaimer: 12 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-eager-collections-04ca2770]] — eager collections: 10 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-ecmascript-6-has-three-major-groups-of-features-4a72a852]] — ECMAScript 6 has three major groups of features:: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-element-references-87c6108b]] — element references: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-evaluation-time-1e5c7a76]] — evaluation time: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-factorials-ba7fc9a9]] — factorials: 10 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-false-ed9f526e]] — false: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-flip-106cc115]] — Flip: 11 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-flipping-methods-9ebb97da]] — flipping methods: 2 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-floating-6fc60024]] — floating: 14 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-folding-e94f3089]] — folding: 11 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-foreword-to-the-six-edition-097ddf25]] — Foreword to the 'Six' edition: 9 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-from-744216d9]] — from: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-function-declaration-caveats-34-a5476143]] — function declaration caveats 34: 13 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-function-declarations-eda0a9ee]] — function declarations: 15 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-function-parameters-are-eager-6a17bf0a]] — function parameters are eager: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-functional-iterators-8ba98332]] — Functional Iterators: 11 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-functions-a259562e]] — Functions: 15 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-functions-and-identities-ffd2112d]] — functions and identities: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-functions-are-not-the-real-point-fd33929f]] — functions are not the real point: 8 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-functions-that-evaluate-to-functions-40decd4a]] — functions that evaluate to functions: 10 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-functions-that-return-values-and-evaluate-expressions-2e589d25]] — functions that return values and evaluate expressions: 13 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-garbage-garbage-everywhere-e4ee1f43]] — Garbage, Garbage Everywhere: 48 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-gathering-bb3ea828]] — gathering: 7 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-generating-iterables-ed97dc16]] — Generating Iterables: 14 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-generators-and-iterables-f2bcb66f]] — generators and iterables: 11 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-generators-are-coroutines-5bfc7448]] — generators are coroutines: 25 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-higher-order-functions-058e77d1]] — higher-order functions: 9 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-how-this-book-is-organized-f75c5f11]] — how this book is organized: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-how-to-run-the-examples-b3097c69]] — How to run the examples: 16 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-if-functions-without-free-variables-are-pure-are-closures-impure-e2ee6411]] — if functions without free variables are pure, are closures impure?: 26 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-images-63bbf355]] — images: 1 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-implementing-methods-with-iteration-3763e522]] — implementing methods with iteration: 14 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-inside-out-d80f508c]] — inside-out: 23 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-interactive-generators-a35833ca]] — Interactive Generators: 15 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-interactive-generators-b616f84c]] — interactive generators: 8 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-interlude-the-carpenter-interviews-for-a-job-143a564b]] — Interlude: The Carpenter Interviews for a Job: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-it-s-always-the-environment-50e4f5c7]] — it's always the environment: 15 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-iterables-595e34dc]] — iterables: 22 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-iterables-out-to-infinity-e6b19bbb]] — iterables out to infinity: 4 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-iterating-b85cef64]] — iterating: 16 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-iteration-5a27a620]] — // Iteration: 5 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-iteration-and-iterables-c743f28c]] — Iteration and Iterables: 5 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-iterator-objects-b543dd8c]] — iterator objects: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-javascript-s-generators-d92f9b81]] — javascript's generators: 17 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-lazy-and-eager-collections-7daf259e]] — Lazy and Eager Collections: 11 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-lazy-collection-operations-47f313f9]] — lazy collection operations: 22 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-left-variadic-destructuring-ec50610e]] — left-variadic destructuring: 7 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-left-variadic-functions-8798770f]] — Left-Variadic Functions: 11 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-like-this-22a82a52]] — Like this:: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-linear-recursion-a81f8832]] — linear recursion: 17 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-lists-with-functions-as-data-5998cfcc]] — lists with functions as data: 9 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-literal-object-syntax-e378f3d1]] — literal object syntax: 17 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-magic-names-and-fat-arrows-bc96c163]] — magic names and fat arrows: 24 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-magic-names-bd8314e3]] — Magic Names: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-making-data-out-of-functions-58b10f4d]] — Making Data Out Of Functions: 12 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-mapping-e23f2810]] — mapping: 8 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-mapwith-fa334002]] — mapWith: 14 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-matthew-knox-5a8dd943]] — matthew knox: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-maybe-04b5b14a]] — Maybe: 12 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-memoizing-an-iterable-080c6142]] — memoizing an iterable: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-michael-fogus-290734fa]] — michael fogus: 16 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-mixing-let-and-const-d447814e]] — mixing let and const: 6 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-more-generators-59ed9e0a]] — more generators: 9 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-mutation-96af1627]] — Mutation: 27 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-mutation-and-data-structures-5d4f0aae]] — mutation and data structures: 12 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-naming-functions-f77dbaf8]] — Naming Functions: 2 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-nested-blocks-9f88a0a0]] — nested blocks: 12 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-object-assign-f23f0713]] — Object.assign: 8 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-once-4951b30e]] — Once: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-operations-on-numbers-d7519e16]] — operations on numbers: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-operations-on-ordered-collections-fd8fa160]] — operations on ordered collections: 28 source-backed entries and 9 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-operations-that-compose-two-or-more-iterables-into-an-iterable-87523200]] — operations that compose two or more iterables into an iterable: 2 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-operations-that-transform-an-iterable-into-a-value-572613ca]] — operations that transform an iterable into a value: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-operations-that-transform-one-iterable-into-another-e6d27df0]] — operations that transform one iterable into another: 2 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-or-even-8a29a04f]] — Or even:: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-ordered-collections-0fc7ec1a]] — ordered collections: 12 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-overcoming-limitations-6137780f]] — overcoming limitations: 6 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-partial-application-0ab7f284]] — partial application: 14 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-0b84d6a4]] — Picking the Bean: Choice and Truthiness: 2 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-plain-old-javascript-objects-00921001]] — Plain Old JavaScript Objects: 14 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-quasi-literals-16290e1b]] — quasi-literals: 11 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-reassignment-435ad71b]] — Reassignment: 16 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-rebinding-e450db8c]] — rebinding: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-basic-functions-731037a6]] — Recipes with Basic Functions: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-data-88b89264]] — Recipes with Data: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recursive-iterators-d5442e37]] — recursive iterators: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-reference-types-2e0c23b3]] — reference types: 8 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-reg-raganwald-braithwaite-cf48cca4]] — Reg 'raganwald' Braithwaite: 2 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-representing-naughts-and-crosses-as-a-stateful-function-42b09e48]] — representing naughts and crosses as a stateful function: 5 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-representing-naughts-and-crosses-as-a-stateless-function-0569cde1]] — representing naughts and crosses as a stateless function: 4 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-revisiting-linked-lists-4b6c16ed]] — revisiting linked lists: 21 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-rewriting-iterable-operations-4f3758e6]] — rewriting iterable operations: 10 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-richard-feynman-318c005b]] — Richard Feynman: 3 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-say-please-37506518]] — say 'please': 11 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-self-currying-flip-bb1b38f7]] — self-currying flip: 3 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-self-similarity-e4c1b8bf]] — Self-Similarity: 27 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-served-by-the-pot-collections-f4edb14d]] — Served by the Pot: Collections: 2 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-shadowy-variables-from-a-shadowy-planet-f30dadf2]] — shadowy variables from a shadowy planet: 8 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-so-why-arrays-aa693f44]] — so why arrays: 7 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-state-machines-34ba1b2f]] — state machines: 11 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-summary-0de4d8ef]] — summary: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-summary-140268eb]] — Summary: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-summary-572f0a04]] — Summary: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-summary-7f66eec7]] — summary: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-summary-a813e970]] — summary: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-summary-cd692e57]] — summary: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-summary-ff6b7bfa]] — summary: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-tail-call-optimization-152dac4b]] — tail-call optimization: 16 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-tail-calls-and-default-arguments-422bd13e]] — Tail Calls (and Default Arguments): 20 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-tap-a2b54f28]] — Tap: 7 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-that-constant-coffee-craving-5ec1ad3b]] — That Constant Coffee Craving: 13 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-that-s-nice-is-that-the-only-reason-ec7cd51b]] — that's nice. is that the only reason?: 12 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-aftermath-7d2ffc89]] — the aftermath: 5 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-carpenter-s-solution-8c314c8e]] — the carpenter's solution: 24 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-first-sip-basic-functions-b06770b2]] — The first sip: Basic Functions: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-function-keyword-48d2f233]] — the function keyword: 34 source-backed entries and 14 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-function-keyword-a734ba14]] — the function keyword: 10 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-golden-crema-appendices-and-afterwords-62e08607]] — The Golden Crema: Appendices and Afterwords: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-kestrel-and-the-idiot-9fbc0e32]] — the kestrel and the idiot: 12 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-problem-c5c8f67f]] — the problem: 13 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-simplest-possible-block-e6c07091]] — the simplest possible block: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-vireo-40297c82]] — the vireo: 11 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-this-seems-familiar-560c925d]] — this seems familiar: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-tortoises-hares-and-teleporting-turtles-a6e5979e]] — Tortoises, Hares, and Teleporting Turtles: 13 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-truthiness-and-operators-2af51d06]] — truthiness and operators: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-truthiness-and-the-ternary-operator-70f4b7e2]] — truthiness and the ternary operator: 16 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-unary-2da4aa66]] — Unary: 15 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-undefined-993f2b67]] — undefined: 15 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-unfolding-and-laziness-8ab158de]] — unfolding and laziness: 17 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-value-types-406cd6d0]] — value types: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-values-and-identity-8050145d]] — values and identity: 11 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-values-are-expressions-be8dc025]] — values are expressions: 18 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-var-5f92679c]] — var: 15 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-variables-and-bindings-434cdc17]] — variables and bindings: 22 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-void-7e97e0bb]] — void: 26 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-get-734c3366]] — We get:: 3 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-162bcd28]] — We'll keep it simple:: 7 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-what-javascript-allong-is-and-isn-t-ed112c9d]] — What JavaScript Allongé is. And isn't.: 26 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-which-came-first-the-chicken-or-the-egg-6e770573]] — which came first, the chicken or the egg?: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-why-3f444025]] — Why?: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-why-const-and-let-were-invented-e85f559a]] — why const and let were invented: 12 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-why-the-six-edition-b7ddab6e]] — why the 'six' edition?: 28 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-will-be-represented-as-7334da19]] — Will be represented as:: 5 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-would-be-3-producing-4ec4827e]] — Would be 3 , producing:: 5 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-b24db82d]] — Yes. Consider this variation:: 16 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yielding-iterables-c38f7cd6]] — yielding iterables: 16 source-backed entries and 9 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge]] — Claim-ledger projection (coding): 1991 usable entries, 653 technical atoms, 430 needs-review, 293 linked page(s); write decision write-with-review-work.
+- [[javascriptallonge-section-a-balanced-statement-about-combinators-85a0e2e7]] — a balanced statement about combinators: 10 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-few-utilities-ed4649a9]] — a few utilities: 3 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-history-lesson-f521f8a2]] — a history lesson: 5 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-look-back-at-functional-iterators-c95ba37c]] — a look back at functional iterators: 10 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-8685c094]] — A Pull of the Lever: Prefaces: 2 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-quick-summary-of-functions-and-bodies-14c9bc18]] — a quick summary of functions and bodies: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-return-to-backward-thinking-80911f6d]] — a return to backward thinking: 22 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-rich-aroma-basic-numbers-74026456]] — A Rich Aroma: Basic Numbers: 14 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-b65723f4]] — A Warm Cup: Basic Strings and Quasi-Literals: 8 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-about-javascript-allong-fbcbe77b]] — About JavaScript Allongé: 7 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-about-the-author-5dd68421]] — About The Author: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-about-the-sample-pdf-fec17fa1]] — About The Sample PDF: 4 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-after-another-drink-a2560f6e]] — after another drink: 8 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-ah-i-d-like-to-have-an-argument-please-22-0ec55670]] — Ah. I'd Like to Have an Argument, Please. 22: 15 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-and-also-3efaefc9]] — And also:: 3 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-and-are-control-flow-operators-f606c375]] — || and && are control-flow operators: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-applying-functions-187f9521]] — applying functions: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-are-consts-also-from-a-shadowy-planet-bfa72806]] — are consts also from a shadowy planet?: 30 source-backed entries and 11 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-array-literals-83ae8bb8]] — array literals: 13 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-arrays-and-destructuring-arguments-40d73c05]] — Arrays and Destructuring Arguments: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-as-little-as-possible-about-functions-but-no-less-f7fa7db1]] — As Little As Possible About Functions, But No Less: 13 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-backwardness-80b1b688]] — backwardness: 7 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-basic-operations-on-iterables-70fe16f9]] — Basic Operations on Iterables: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-bonus-534c91a7]] — bonus: 10 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-building-blocks-90e156b1]] — Building Blocks: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-building-with-mutation-02131e8b]] — building with mutation: 10 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-call-by-sharing-0ce2f0ea]] — call by sharing: 17 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-call-by-value-bde820bb]] — call by value: 7 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-caveat-fca66c73]] — caveat: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-closures-and-scope-29128998]] — Closures and Scope: 11 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-commas-07b76445]] — commas: 6 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-composing-and-decomposing-data-c81f84d9]] — Composing and Decomposing Data: 2 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-composition-96ad16ff]] — composition: 13 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-const-a93a8dff]] — const: 22 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-const-and-lexical-scope-5a865c0d]] — const and lexical scope: 15 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-contact-25fefc00]] — contact: 1 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-converting-non-tail-calls-to-tail-calls-14a7c766]] — converting non-tail-calls to tail-calls: 12 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-copy-on-read-627d7e63]] — copy-on-read: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-copy-on-write-42cc7136]] — Copy on Write: 11 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-copy-on-write-e50e229e]] — copy-on-write: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-copyright-notice-bb2e25e0]] — Copyright Notice: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-daniel-friedman-and-matthias-felleisen-979ff365]] — Daniel Friedman and Matthias Felleisen: 3 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-default-arguments-6c923ad4]] — default arguments: 9 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-defaults-and-destructuring-28f8381b]] — defaults and destructuring: 3 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-destructuring-and-return-values-263798f7]] — destructuring and return values: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-destructuring-arrays-fcc591d2]] — destructuring arrays: 11 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-destructuring-is-not-pattern-matching-623f567c]] — destructuring is not pattern matching: 12 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-destructuring-objects-7b9d1130]] — destructuring objects: 7 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-destructuring-parameters-2486990e]] — destructuring parameters: 7 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-disclaimer-074cb061]] — Disclaimer: 4 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-disclaimer-7ce04a65]] — Disclaimer: 12 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-eager-collections-db44e140]] — eager collections: 10 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-ecmascript-6-has-three-major-groups-of-features-a865692f]] — ECMAScript 6 has three major groups of features:: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-element-references-0a5cf431]] — element references: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-evaluation-time-da60e75d]] — evaluation time: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-factorials-e5c73f61]] — factorials: 10 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-false-cf431099]] — false: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-flip-cc6afc68]] — Flip: 11 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-flipping-methods-a15b5590]] — flipping methods: 2 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-floating-00a5e427]] — floating: 14 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-folding-35a286da]] — folding: 11 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-foreword-to-the-six-edition-20c8dc6e]] — Foreword to the 'Six' edition: 9 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-from-3f6d6c43]] — from: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-function-declaration-caveats-34-997b686f]] — function declaration caveats 34: 13 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-function-declarations-35f0cb6b]] — function declarations: 15 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-function-parameters-are-eager-102f4e58]] — function parameters are eager: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functional-iterators-17f67f36]] — Functional Iterators: 11 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functions-7fcd019c]] — Functions: 15 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functions-and-identities-c0e0153a]] — functions and identities: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functions-are-not-the-real-point-9515e641]] — functions are not the real point: 8 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functions-that-evaluate-to-functions-47133f51]] — functions that evaluate to functions: 10 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functions-that-return-values-and-evaluate-expressions-8aeedb74]] — functions that return values and evaluate expressions: 13 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-garbage-garbage-everywhere-52795634]] — Garbage, Garbage Everywhere: 48 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-gathering-c3f6d27a]] — gathering: 7 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-generating-iterables-8ed271b5]] — Generating Iterables: 14 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-generators-and-iterables-48800b31]] — generators and iterables: 11 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-generators-are-coroutines-04b2f2dd]] — generators are coroutines: 25 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-higher-order-functions-e73309ad]] — higher-order functions: 9 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-how-this-book-is-organized-ed4d2585]] — how this book is organized: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-how-to-run-the-examples-c5aeb939]] — How to run the examples: 16 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-if-functions-without-free-variables-are-pure-are-closures-impure-612b6855]] — if functions without free variables are pure, are closures impure?: 26 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-images-46ee2b20]] — images: 1 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-implementing-methods-with-iteration-05f65ce5]] — implementing methods with iteration: 14 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-inside-out-42d13885]] — inside-out: 23 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-interactive-generators-42a29113]] — Interactive Generators: 15 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-interactive-generators-86a3413f]] — interactive generators: 8 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-interlude-the-carpenter-interviews-for-a-job-aa14c48c]] — Interlude: The Carpenter Interviews for a Job: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-it-s-always-the-environment-a04db4d0]] — it's always the environment: 15 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-iterables-5d93ec42]] — iterables: 22 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-iterables-out-to-infinity-d7fa34ef]] — iterables out to infinity: 4 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-iterating-fdda74e7]] — iterating: 16 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-iteration-42bdb7f2]] — // Iteration: 5 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-iteration-and-iterables-4105b2c3]] — Iteration and Iterables: 5 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-iterator-objects-5efe0aeb]] — iterator objects: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-javascript-s-generators-d3deceb6]] — javascript's generators: 17 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-lazy-and-eager-collections-e31f5686]] — Lazy and Eager Collections: 11 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-lazy-collection-operations-ca8a18a1]] — lazy collection operations: 22 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-left-variadic-destructuring-c34737e8]] — left-variadic destructuring: 7 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-left-variadic-functions-61afef6c]] — Left-Variadic Functions: 11 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-like-this-f28684b0]] — Like this:: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-linear-recursion-a77d0573]] — linear recursion: 17 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-lists-with-functions-as-data-b51ab085]] — lists with functions as data: 9 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-literal-object-syntax-e81da492]] — literal object syntax: 17 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-magic-names-and-fat-arrows-1459b56b]] — magic names and fat arrows: 24 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-magic-names-fc588fe9]] — Magic Names: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-making-data-out-of-functions-20f048ee]] — Making Data Out Of Functions: 12 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mapping-297a2b1f]] — mapping: 8 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mapwith-b7eef2dd]] — mapWith: 14 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-matthew-knox-2eb0c746]] — matthew knox: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-maybe-eef1f856]] — Maybe: 12 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-memoizing-an-iterable-6c56f0eb]] — memoizing an iterable: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-michael-fogus-5ac51ed0]] — michael fogus: 16 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mixing-let-and-const-8228076e]] — mixing let and const: 6 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-more-generators-d217e00d]] — more generators: 9 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mutation-4ba5b6e2]] — Mutation: 27 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mutation-and-data-structures-7ffd00e1]] — mutation and data structures: 12 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-naming-functions-fb24a2ec]] — Naming Functions: 2 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-nested-blocks-865d5980]] — nested blocks: 12 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-object-assign-97245373]] — Object.assign: 8 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-once-ec2a7fc3]] — Once: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-operations-on-numbers-c424d882]] — operations on numbers: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-operations-on-ordered-collections-2d1f4708]] — operations on ordered collections: 28 source-backed entries and 9 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-operations-that-compose-two-or-more-iterables-into-an-iterable-b5aa21e2]] — operations that compose two or more iterables into an iterable: 2 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-operations-that-transform-an-iterable-into-a-value-156e74cb]] — operations that transform an iterable into a value: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-operations-that-transform-one-iterable-into-another-eaef9d21]] — operations that transform one iterable into another: 2 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-or-even-fe3702bb]] — Or even:: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-ordered-collections-c9a754fb]] — ordered collections: 12 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-overcoming-limitations-24b59718]] — overcoming limitations: 6 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-partial-application-eefc445e]] — partial application: 14 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-7a53b460]] — Picking the Bean: Choice and Truthiness: 2 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-plain-old-javascript-objects-9284b97d]] — Plain Old JavaScript Objects: 14 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-quasi-literals-63d54018]] — quasi-literals: 11 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-reassignment-33f2e98a]] — Reassignment: 16 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-rebinding-f33b2093]] — rebinding: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-recipes-with-basic-functions-7e8734a3]] — Recipes with Basic Functions: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-recipes-with-data-46ec652c]] — Recipes with Data: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-recursive-iterators-a98145cf]] — recursive iterators: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-reference-types-d406df39]] — reference types: 8 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-reg-raganwald-braithwaite-c68de615]] — Reg 'raganwald' Braithwaite: 2 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-representing-naughts-and-crosses-as-a-stateful-function-c85a3c6c]] — representing naughts and crosses as a stateful function: 5 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-representing-naughts-and-crosses-as-a-stateless-function-e6873c6e]] — representing naughts and crosses as a stateless function: 4 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-revisiting-linked-lists-e02bb0fa]] — revisiting linked lists: 21 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-rewriting-iterable-operations-a53fcd36]] — rewriting iterable operations: 10 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-richard-feynman-89740efa]] — Richard Feynman: 3 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-say-please-7214c91b]] — say 'please': 11 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-self-currying-flip-2b540aad]] — self-currying flip: 3 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-self-similarity-965a2ce9]] — Self-Similarity: 27 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-served-by-the-pot-collections-bc33f075]] — Served by the Pot: Collections: 2 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-shadowy-variables-from-a-shadowy-planet-cebec391]] — shadowy variables from a shadowy planet: 8 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-so-why-arrays-c12d8d74]] — so why arrays: 7 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-state-machines-5bf2dac1]] — state machines: 10 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-2ca0a0df]] — summary: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-2f5f7081]] — Summary: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-55d5c618]] — summary: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-a108fe19]] — Summary: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-b6560b3d]] — summary: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-de9fdddf]] — summary: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-fd323cc1]] — summary: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tail-call-optimization-e0bfcc99]] — tail-call optimization: 16 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tail-calls-and-default-arguments-6149d1c0]] — Tail Calls (and Default Arguments): 20 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tap-12380c77]] — Tap: 7 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-that-constant-coffee-craving-85ce294e]] — That Constant Coffee Craving: 13 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-that-s-nice-is-that-the-only-reason-df07c236]] — that's nice. is that the only reason?: 12 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-aftermath-54dcbb71]] — the aftermath: 5 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-carpenter-s-solution-e993efee]] — the carpenter's solution: 24 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-first-sip-basic-functions-f88412c6]] — The first sip: Basic Functions: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-function-keyword-332556f0]] — the function keyword: 34 source-backed entries and 14 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-function-keyword-b50ba16e]] — the function keyword: 10 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-golden-crema-appendices-and-afterwords-bef9f31a]] — The Golden Crema: Appendices and Afterwords: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-kestrel-and-the-idiot-c9f9dbf2]] — the kestrel and the idiot: 12 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-problem-f2a980ba]] — the problem: 13 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-simplest-possible-block-c9be17c8]] — the simplest possible block: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-vireo-70b9e02f]] — the vireo: 11 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-this-seems-familiar-d0a901f6]] — this seems familiar: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tortoises-hares-and-teleporting-turtles-90019f98]] — Tortoises, Hares, and Teleporting Turtles: 13 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-truthiness-and-operators-d8eb6fca]] — truthiness and operators: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-truthiness-and-the-ternary-operator-6520cd73]] — truthiness and the ternary operator: 16 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-unary-ad645563]] — Unary: 15 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-undefined-3c28cd68]] — undefined: 15 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-unfolding-and-laziness-25a49c7a]] — unfolding and laziness: 17 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-value-types-278b4e72]] — value types: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-values-and-identity-2dc82706]] — values and identity: 11 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-values-are-expressions-f0d0475c]] — values are expressions: 18 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-var-1701df33]] — var: 15 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-variables-and-bindings-d501d2de]] — variables and bindings: 22 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-void-dee0e1e8]] — void: 26 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-we-get-e820b240]] — We get:: 3 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-we-ll-keep-it-simple-de0e7faa]] — We'll keep it simple:: 7 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-what-javascript-allong-is-and-isn-t-32364893]] — What JavaScript Allongé is. And isn't.: 26 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-which-came-first-the-chicken-or-the-egg-c9255892]] — which came first, the chicken or the egg?: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-why-a8ddd87f]] — Why?: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-why-const-and-let-were-invented-5a03ee4b]] — why const and let were invented: 12 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-why-the-six-edition-c2a6b7fa]] — why the 'six' edition?: 28 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-will-be-represented-as-ed41e621]] — Will be represented as:: 5 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-would-be-3-producing-6349023c]] — Would be 3 , producing:: 5 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-yes-consider-this-variation-43e83133]] — Yes. Consider this variation:: 16 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-yielding-iterables-033b1a5e]] — yielding iterables: 16 source-backed entries and 9 atom(s) from raw/javascriptallonge.pdf.
 - [[mit8-01scs22-chapter2]] — MIT 8.01SC Physics I: Classical Mechanics, Chapter 2
 - [[mit8-01scs22-chapter2-document]] — Document from raw/mit8_01scs22_chapter2.pdf.
 - [[sword-world-rpg-complete-edition]] — Claim-ledger projection (history): 12480 usable entries, 4613 technical atoms, 1140 needs-review, 1647 linked page(s); write decision write-with-review-work.

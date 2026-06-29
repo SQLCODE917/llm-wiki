@@ -1,0 +1,61 @@
+---
+page_id: javascriptallonge-section-destructuring-is-not-pattern-matching-623f567c
+page_kind: source
+summary: destructuring is not pattern matching: 12 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+sources: raw/javascriptallonge.pdf
+updated: 2026-06-28
+domain: javascriptallonge
+category_path: sources/javascriptallonge/sections
+source_id: javascriptallonge.pdf
+projection_coverage: section-javascriptallonge-section-destructuring-is-not-pattern-matching-623f567c@a6aee897e068e65da28c32c3fa4538aa
+---
+
+# destructuring is not pattern matching
+
+From [[javascriptallonge]].
+
+## Statements
+
+- Some other languages have something called pattern matching , where you can write something like a destructuring assignment, and the language decides whether the 'patterns' matches at all. If it does, assignments are made where appropriate. _(javascriptallonge.pdf (source-range-8eb13d6b-00862))_
+- That match would fail because the array doesn't have an element to assign to what . But this is not how JavaScript works. JavaScript tries its best to assign things, and if there isn't something that fits, JavaScript binds undefined to the name. Therefore: _(javascriptallonge.pdf (source-range-8eb13d6b-00865))_
+- From its very inception, JavaScript has striven to avoid catastrophic errors. As a result, it often coerces values, passes undefined around, or does whatever it can to keep executing without failing. This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things. _(javascriptallonge.pdf (source-range-8eb13d6b-00869))_
+- That match would fail because the array doesn't have an element to assign to what . _(javascriptallonge.pdf (source-range-8eb13d6b-00865))_
+- This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things. _(javascriptallonge.pdf (source-range-8eb13d6b-00869))_
+
+## Technical atoms
+
+### Technical frame 1: destructuring is not pattern matching
+
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00865))_
+
+> That match would fail because the array doesn't have an element to assign to what . But this is not how JavaScript works. JavaScript tries its best to assign things, and if there isn't something that fits, JavaScript binds undefined to the name. Therefore:
+
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00864))_
+
+```
+const [what] = [];
+```
+
+### Technical frame 2: destructuring is not pattern matching
+
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00869))_
+
+> From its very inception, JavaScript has striven to avoid catastrophic errors. As a result, it often coerces values, passes undefined around, or does whatever it can to keep executing without failing. This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things.
+
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00866))_
+
+```
+const [what] = []; what //=> undefined const [which, what, who //=> undefined
+```
+
+### Technical frame 3: destructuring is not pattern matching
+
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00869))_
+
+> From its very inception, JavaScript has striven to avoid catastrophic errors. As a result, it often coerces values, passes undefined around, or does whatever it can to keep executing without failing. This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things.
+
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00867))_
+
+```
+const [...they] = []; they //=> [] const [which, what, they //=> []
+```

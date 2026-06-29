@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-result@62a22ad7b5981bab1b844a1383e1e544
+projection_coverage: topic-javascriptallonge-result@9032a4a5306c4eda0160461dba49fe54
 ---
 
 # Result
@@ -17,34 +17,34 @@ What [[javascriptallonge]] covers about result:
 
 ### the simplest possible block
 
-- It returns the result of evaluating a block that has no statements. What would that be? Let's try it: _(javascriptallonge.pdf (source-range-31a4cf47-00217))_
+- It returns the result of evaluating a block that has no statements. What would that be? Let's try it: _(javascriptallonge.pdf (source-range-8eb13d6b-00217))_
 
 ### void
 
-- We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21 _(javascriptallonge.pdf (source-range-31a4cf47-00239))_
+- We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21 _(javascriptallonge.pdf (source-range-8eb13d6b-00239))_
 
 ### partial application
 
-- The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function. _(javascriptallonge.pdf (source-range-31a4cf47-00598))_
+- The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function. _(javascriptallonge.pdf (source-range-8eb13d6b-00598))_
 
 ### destructuring is not pattern matching
 
-- From its very inception, JavaScript has striven to avoid catastrophic errors. As a result, it often coerces values, passes undefined around, or does whatever it can to keep executing without failing. This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things. _(javascriptallonge.pdf (source-range-31a4cf47-00869))_
+- From its very inception, JavaScript has striven to avoid catastrophic errors. As a result, it often coerces values, passes undefined around, or does whatever it can to keep executing without failing. This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things. _(javascriptallonge.pdf (source-range-8eb13d6b-00869))_
 
 ### How to run the examples
 
-- Both tools offer an online area where you can type ECMAScript code into a web browser and see the ECMAScript-5 equivalent, and you can run the code as well. To see the result of your expressions, you may have to use the console in your web browser. _(javascriptallonge.pdf (source-range-31a4cf47-01977))_
+- Both tools offer an online area where you can type ECMAScript code into a web browser and see the ECMAScript-5 equivalent, and you can run the code as well. To see the result of your expressions, you may have to use the console in your web browser. _(javascriptallonge.pdf (source-range-8eb13d6b-01975))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: the simplest possible block
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00217))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00217))_
 
 > It returns the result of evaluating a block that has no statements. What would that be? Let's try it:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00216))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00216))_
 
 ```
 () => {}
@@ -52,11 +52,11 @@ What [[javascriptallonge]] covers about result:
 
 ### Technical frame 2: the simplest possible block
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00217))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00217))_
 
 > It returns the result of evaluating a block that has no statements. What would that be? Let's try it:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00218))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00218))_
 
 ```
 (() => {})() //=> undefined
@@ -64,11 +64,11 @@ What [[javascriptallonge]] covers about result:
 
 ### Technical frame 3: void
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00239))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00239))_
 
 > We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00238))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00238))_
 
 ```
 (() => {})() //=> undefined
@@ -76,21 +76,21 @@ What [[javascriptallonge]] covers about result:
 
 ### Technical frame 4: void
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00249))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
 
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00251))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00251))_
 
 > So how do we get a function that evaluates a block to return a value when applied?
 
 ### Technical frame 5: void
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00249))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
 
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00252))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00252))_
 
 ```
 (() => { return 0 })() //=> 0 (() => { return 1 })() //=> 1 (() => { return 'Hello ' + 'World' })() // 'Hello World'
@@ -98,11 +98,11 @@ What [[javascriptallonge]] covers about result:
 
 ### Technical frame 6: void
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00249))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00249))_
 
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00254))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00254))_
 
 ```
 (() => { 1 + 1; return 2 + 2 })() //=> 4
@@ -110,11 +110,11 @@ What [[javascriptallonge]] covers about result:
 
 ### Technical frame 7: partial application
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00600))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00600))_
 
 > We'll discuss mapWith again. The important thing to see is that partial application is orthogonal to composition, and that they both work together nicely:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00599))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00599))_
 
 ```
 const mapWith = (fn) => (array) => map(array, fn); const squareAll = mapWith((n) => n * n); squareAll([1, 2, 3]) //=> [1, 4, 9]
@@ -122,11 +122,11 @@ const mapWith = (fn) => (array) => map(array, fn); const squareAll = mapWith((n)
 
 ### Technical frame 8: destructuring is not pattern matching
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00869))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00869))_
 
 > From its very inception, JavaScript has striven to avoid catastrophic errors. As a result, it often coerces values, passes undefined around, or does whatever it can to keep executing without failing. This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00867))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00867))_
 
 ```
 const [...they] = []; they //=> [] const [which, what, they //=> []
@@ -134,11 +134,11 @@ const [...they] = []; they //=> [] const [which, what, they //=> []
 
 ### Technical frame 9: How to run the examples
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01977))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01975))_
 
 > Both tools offer an online area where you can type ECMAScript code into a web browser and see the ECMAScript-5 equivalent, and you can run the code as well. To see the result of your expressions, you may have to use the console in your web browser.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01975))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01973))_
 
 ```
 100 101 http://babeljs.io/
@@ -146,11 +146,11 @@ const [...they] = []; they //=> [] const [which, what, they //=> []
 
 ### Technical frame 10: How to run the examples
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01977))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01975))_
 
 > Both tools offer an online area where you can type ECMAScript code into a web browser and see the ECMAScript-5 equivalent, and you can run the code as well. To see the result of your expressions, you may have to use the console in your web browser.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01976))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01974))_
 
 ```
 const before = (decoration) => (method) => function (...args) { decoration.apply( this , args); return method.apply( this , args) }; And it would be 'transpiled' into: var before = function (decoration) { return function (method) { return function () { for ( let _len = arguments.length, args = Array(_len), _key = 0; _key < _le\ n; _key++) { args[_key] = arguments[_key]; } decoration.apply( this , args); return method.apply( this , args); }; }; };
@@ -158,7 +158,7 @@ const before = (decoration) => (method) => function (...args) { decoration.apply
 
 ### Technical atom 11
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00564))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00564))_
 
 | entry | content |
 | --- | --- |

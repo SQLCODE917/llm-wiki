@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-literal@ff36585b1aeb9da18d533ca3a6956453
+projection_coverage: topic-javascriptallonge-literal@49748a4448d2e6fdf8e6a1f183e90c1b
 ---
 
 # Literal
@@ -17,58 +17,58 @@ What [[javascriptallonge]] covers about literal:
 
 ### A Rich Aroma: Basic Numbers
 
-- In computer science, a literal is a notation for representing a fixed value in source code. Almost all programming languages have notations for atomic values such as integers, floating-point numbers, and strings, and usually for booleans and characters; some also have notations for elements of enumerated types and compound values such as arrays, records, and objects. An anonymous function is a literal for the function type.Wikipedia 12 _(javascriptallonge.pdf (source-range-31a4cf47-00145))_
+- In computer science, a literal is a notation for representing a fixed value in source code. Almost all programming languages have notations for atomic values such as integers, floating-point numbers, and strings, and usually for booleans and characters; some also have notations for elements of enumerated types and compound values such as arrays, records, and objects. An anonymous function is a literal for the function type.Wikipedia 12 _(javascriptallonge.pdf (source-range-8eb13d6b-00145))_
 
-- JavaScript, like most languages, has a collection of literals. We saw that an expression consisting solely of numbers, like 42 , is a literal. It represents the number forty-two, which is 42 base 10. Not all numbers are base ten. If we start a literal with a zero, it is an octal literal. So the literal 042 is 42 base 8, which is actually 34 base 10. _(javascriptallonge.pdf (source-range-31a4cf47-00146))_
+- JavaScript, like most languages, has a collection of literals. We saw that an expression consisting solely of numbers, like 42 , is a literal. It represents the number forty-two, which is 42 base 10. Not all numbers are base ten. If we start a literal with a zero, it is an octal literal. So the literal 042 is 42 base 8, which is actually 34 base 10. _(javascriptallonge.pdf (source-range-8eb13d6b-00146))_
 
 ### inside-out
 
-- Which one is better? Well, the first one seems simplest, but a half-century of experience has taught us that names matter. A 'magic literal' like 3.14159265 is anathema to sustainable software development. _(javascriptallonge.pdf (source-range-31a4cf47-00405))_
+- Which one is better? Well, the first one seems simplest, but a half-century of experience has taught us that names matter. A 'magic literal' like 3.14159265 is anathema to sustainable software development. _(javascriptallonge.pdf (source-range-8eb13d6b-00405))_
 
 ### array literals
 
-- Array literals are expressions, and arrays are reference types . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements: _(javascriptallonge.pdf (source-range-31a4cf47-00831))_
+- Array literals are expressions, and arrays are reference types . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements: _(javascriptallonge.pdf (source-range-8eb13d6b-00831))_
 
 ### Self-Similarity
 
-- We saw that the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment. _(javascriptallonge.pdf (source-range-31a4cf47-00885))_
+- We saw that the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment. _(javascriptallonge.pdf (source-range-8eb13d6b-00885))_
 
-- Thanks to the parallel between array literals + spreads with destructuring + rests, we can also use the same rules to decompose lists: _(javascriptallonge.pdf (source-range-31a4cf47-00892))_
+- Thanks to the parallel between array literals + spreads with destructuring + rests, we can also use the same rules to decompose lists: _(javascriptallonge.pdf (source-range-8eb13d6b-00892))_
 
 ### quasi-literals
 
-- JavaScript supports quasi-literal strings , a/k/a 'Template Strings' or 'String Interpolation Expressions.' A quasi-literal string is something that looks like a string literal, but is actually an expression. Quasi-literal strings are denoted with back quotes, and most strings that can be expressed as literals have the exact same meaning as quasi-literals, e.g. _(javascriptallonge.pdf (source-range-31a4cf47-01505))_
+- JavaScript supports quasi-literal strings , a/k/a 'Template Strings' or 'String Interpolation Expressions.' A quasi-literal string is something that looks like a string literal, but is actually an expression. Quasi-literal strings are denoted with back quotes, and most strings that can be expressed as literals have the exact same meaning as quasi-literals, e.g. _(javascriptallonge.pdf (source-range-8eb13d6b-01504))_
 
-- Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this 'unquoting,' the more contemporary term is 'interpolation.' An unquoted expression is inserted in a quasi-literal with ${expression} . The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string. _(javascriptallonge.pdf (source-range-31a4cf47-01507))_
+- Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this 'unquoting,' the more contemporary term is 'interpolation.' An unquoted expression is inserted in a quasi-literal with ${expression} . The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string. _(javascriptallonge.pdf (source-range-8eb13d6b-01506))_
 
-- Aquasi-literal is computationally equivalent to an expression using + . So the above expression could also be written: _(javascriptallonge.pdf (source-range-31a4cf47-01510))_
+- Aquasi-literal is computationally equivalent to an expression using + . So the above expression could also be written: _(javascriptallonge.pdf (source-range-8eb13d6b-01509))_
 
-- However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They're easier to read and it's easier to avid errors like the following: _(javascriptallonge.pdf (source-range-31a4cf47-01513))_
+- However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They're easier to read and it's easier to avid errors like the following: _(javascriptallonge.pdf (source-range-8eb13d6b-01512))_
 
 ### evaluation time
 
-- JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function's body is evaluated. Thus, name is not bound to "Harry" , it is bound to 'Arthur Dent' , the value of the parameter when the function is invoked. _(javascriptallonge.pdf (source-range-31a4cf47-01519))_
+- JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function's body is evaluated. Thus, name is not bound to "Harry" , it is bound to 'Arthur Dent' , the value of the parameter when the function is invoked. _(javascriptallonge.pdf (source-range-8eb13d6b-01518))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: A Rich Aroma: Basic Numbers
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00149))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00149))_
 
 > For example, the largest integer JavaScript can safely 14 handle is 9007199254740991 , or 2 '53' - 1 . Like most programming languages, JavaScript does not allow us to use commas to separate groups of digits.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00148))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00148))_
 
 > The machine's representation of a number almost never lines up perfectly with our understanding of how a number behaves, and thus there will be places where the computer's behaviour surprises us if we don't know a little about what it's doing 'under the hood.'
 
 ### Technical frame 2: array literals
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00822))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00822))_
 
 > We can create an array with one or more elements by placing them between the brackets and separating the items with commas. Whitespace is optional:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00821))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00821))_
 
 ```
 [] //=> []
@@ -76,11 +76,11 @@ What [[javascriptallonge]] covers about literal:
 
 ### Technical frame 3: array literals
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00831))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00831))_
 
 > Array literals are expressions, and arrays are reference types . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00832))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00832))_
 
 ```
 [] === [] //=> false [2 + 2] === [2 + 2] //=> false const array_of_one = () => [1]; array_of_one() === array_of_one() //=> false
@@ -88,11 +88,11 @@ What [[javascriptallonge]] covers about literal:
 
 ### Technical frame 4: Self-Similarity
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00892))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00892))_
 
 > Thanks to the parallel between array literals + spreads with destructuring + rests, we can also use the same rules to decompose lists:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00891))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00891))_
 
 ```
 [] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"]
@@ -100,11 +100,11 @@ What [[javascriptallonge]] covers about literal:
 
 ### Technical frame 5: Self-Similarity
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00897))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00897))_
 
 > Armed with our definition of an empty list and with what we've already learned, we can build a great many functions that operate on arrays. We know that we can get the length of an array using its .length . But as an exercise, how would we write a length function using just what we have already?
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00895))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00895))_
 
 ```
 const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ...rest] = ["foo"]; first //=> "foo" rest //=> [] const [first, ...rest] = ["foo", "bar"]; first //=> "foo" rest //=> ["bar"] const [first, ...rest] = ["foo", "bar", "baz"]; first //=> "foo" rest //=> ["bar","baz"] For the purpose of this exploration, we will presume the following: const isEmpty = ([first, ...rest]) => first === undefined ;
@@ -112,11 +112,11 @@ const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ..
 
 ### Technical frame 6: quasi-literals
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01507))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01506))_
 
 > Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this 'unquoting,' the more contemporary term is 'interpolation.' An unquoted expression is inserted in a quasi-literal with ${expression} . The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01506))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01505))_
 
 ```
 `foobar` //=> 'foobar' `fizz` + `buzz` //=> 'fizzbuzz'
@@ -124,11 +124,11 @@ const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ..
 
 ### Technical frame 7: quasi-literals
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01510))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01509))_
 
 > Aquasi-literal is computationally equivalent to an expression using + . So the above expression could also be written:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01509))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01508))_
 
 ```
 `A popular number for nerds is ${ 40 + 2 } ` //=> 'A popular number for nerds is 42'
@@ -136,11 +136,11 @@ const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ..
 
 ### Technical frame 8: quasi-literals
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01513))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01512))_
 
 > However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They're easier to read and it's easier to avid errors like the following:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01512))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01511))_
 
 ```
 'A popular number for nerds is ' + (40 + 2) //=> 'A popular number for nerds is 42'
@@ -148,11 +148,11 @@ const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ..
 
 ### Technical frame 9: quasi-literals
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01513))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01512))_
 
 > However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They're easier to read and it's easier to avid errors like the following:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01514))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01513))_
 
 ```
 'A popular number for nerds is' + (40 + 2) //=> 'A popular number for nerds is42'

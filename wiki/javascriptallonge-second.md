@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-second@56a88589c946d0f5b6153342a34386c8
+projection_coverage: topic-javascriptallonge-second@40389cb24558f19e1750c53123c15528
 ---
 
 # Second
@@ -17,48 +17,48 @@ What [[javascriptallonge]] covers about second:
 
 ### void
 
-- The first form works but it's cumbersome. The second form works most of the time, but it is possible to break it by reassigning undefined to a different value, something we'll discuss in Reassignment and Mutation. The third form is guaranteed to always work, so that's what we will use. 20 _(javascriptallonge.pdf (source-range-31a4cf47-00236))_
+- The first form works but it's cumbersome. The second form works most of the time, but it is possible to break it by reassigning undefined to a different value, something we'll discuss in Reassignment and Mutation. The third form is guaranteed to always work, so that's what we will use. 20 _(javascriptallonge.pdf (source-range-8eb13d6b-00236))_
 
 ### variables and bindings
 
-- In order to talk about how this works, we should agree on a few terms (you may already know them, but let's check-in together and 'synchronize our dictionaries'). The first x , the one in (x) => ... , is an argument . The y in function (y) ... is another argument. The second x , the one in => x , is not an argument, it's an expression referring to a variable . Arguments and variables work the same way whether we're talking about (x) => (y) => x or just plain (x) => x . _(javascriptallonge.pdf (source-range-31a4cf47-00305))_
+- In order to talk about how this works, we should agree on a few terms (you may already know them, but let's check-in together and 'synchronize our dictionaries'). The first x , the one in (x) => ... , is an argument . The y in function (y) ... is another argument. The second x , the one in => x , is not an argument, it's an expression referring to a variable . Arguments and variables work the same way whether we're talking about (x) => (y) => x or just plain (x) => x . _(javascriptallonge.pdf (source-range-8eb13d6b-00305))_
 
 ### if functions without free variables are pure, are closures impure?
 
-- The first function doesn't have any variables, therefore doesn't have any free variables. The second doesn't have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ... , and it doesn't have a free variable: The only variable anywhere in its body is x , which is certainly bound within (x) => ... . _(javascriptallonge.pdf (source-range-31a4cf47-00351))_
+- The first function doesn't have any variables, therefore doesn't have any free variables. The second doesn't have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ... , and it doesn't have a free variable: The only variable anywhere in its body is x , which is certainly bound within (x) => ... . _(javascriptallonge.pdf (source-range-8eb13d6b-00351))_
 
 ### const
 
-- 30 We're into the second chapter and we've finally named a function. Sheesh. _(javascriptallonge.pdf (source-range-31a4cf47-00439))_
+- 30 We're into the second chapter and we've finally named a function. Sheesh. _(javascriptallonge.pdf (source-range-8eb13d6b-00439))_
 
 ### the function keyword
 
-- The first magic name is this , and it is bound to something called the function's context. We will explore this in more detail when we start discussing objects and classes. The second magic name is very interesting, it's called arguments , and the most interesting thing about it is that it contains a list of arguments passed to a function: _(javascriptallonge.pdf (source-range-31a4cf47-00609))_
+- The first magic name is this , and it is bound to something called the function's context. We will explore this in more detail when we start discussing objects and classes. The second magic name is very interesting, it's called arguments , and the most interesting thing about it is that it contains a list of arguments passed to a function: _(javascriptallonge.pdf (source-range-8eb13d6b-00609))_
 
 ### truthiness and the ternary operator
 
-- The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example: _(javascriptallonge.pdf (source-range-31a4cf47-00773))_
+- The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example: _(javascriptallonge.pdf (source-range-8eb13d6b-00773))_
 
 ### backwardness
 
-- Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of values as an array, we'd write them like this: _(javascriptallonge.pdf (source-range-31a4cf47-01354))_
+- Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of values as an array, we'd write them like this: _(javascriptallonge.pdf (source-range-8eb13d6b-01353))_
 
-- In both cases, the functions first and second know how the data is represented, whether it be an array or an object. You pass the data to these functions, and they extract it. _(javascriptallonge.pdf (source-range-31a4cf47-01358))_
+- In both cases, the functions first and second know how the data is represented, whether it be an array or an object. You pass the data to these functions, and they extract it. _(javascriptallonge.pdf (source-range-8eb13d6b-01357))_
 
 ### state machines
 
-- The second element of the fibonacci sequence is one. _(javascriptallonge.pdf (source-range-31a4cf47-01648))_
+- The second element of the fibonacci sequence is one. _(javascriptallonge.pdf (source-range-8eb13d6b-01647))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: void
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00235))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00235))_
 
 > void is an operator that takes any value and evaluates to undefined , always. So, when we deliberately want an undefined value, should we use the first, second, or third form? 19 The answer is, use void . By convention, use void 0 .
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00234))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00234))_
 
 ```
 void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined
@@ -66,11 +66,11 @@ void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined
 
 ### Technical frame 2: the function keyword
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00613))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00613))_
 
 > arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00610))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00610))_
 
 ```
 const plus = function (a, b) { return arguments[0] + arguments[1]; } plus(2,3) //=> 5
@@ -78,11 +78,11 @@ const plus = function (a, b) { return arguments[0] + arguments[1]; } plus(2,3) /
 
 ### Technical frame 3: truthiness and the ternary operator
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00775))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00775))_
 
 > Wecertainly don't want JavaScript trying to evaluate deleteRecord(currentRecord) unless isAuthorized(currentUser) returns true .
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00774))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00774))_
 
 ```
 const status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\ den';
@@ -90,11 +90,11 @@ const status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid
 
 ### Technical frame 4: backwardness
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01358))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01357))_
 
 > In both cases, the functions first and second know how the data is represented, whether it be an array or an object. You pass the data to these functions, and they extract it.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01355))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01354))_
 
 ```
 const first = ([first, second]) => first, second = ([first, second]) => second; const latin = ["primus", "secundus"]; first(latin) //=> "primus" second(latin) //=> "secundus"

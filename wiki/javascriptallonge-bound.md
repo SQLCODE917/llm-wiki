@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-bound@a61830b1486ad7b967374a2e8b34d203
+projection_coverage: topic-javascriptallonge-bound@1d5cf2e74863e2e350d175978de4ae29
 ---
 
 # Bound
@@ -17,30 +17,30 @@ What [[javascriptallonge]] covers about bound:
 
 ### const
 
-- Notice calc(d) ? This underscores what we've said: if we have an expression that evaluates to a function, we apply it with () . A name that's bound to a function is a valid expression evaluating to a function. 30 _(javascriptallonge.pdf (source-range-31a4cf47-00435))_
+- Notice calc(d) ? This underscores what we've said: if we have an expression that evaluates to a function, we apply it with () . A name that's bound to a function is a valid expression evaluating to a function. 30 _(javascriptallonge.pdf (source-range-8eb13d6b-00435))_
 
 ### are consts also from a shadowy planet?
 
-- We just saw that values bound with const use lexical scope, just like values bound with parameters. They are looked up in the environment where they are declared. And we know that functions create environments. Parameters are declared when we create functions, so it makes sense that parameters are bound to environments created when we invoke functions. _(javascriptallonge.pdf (source-range-31a4cf47-00467))_
+- We just saw that values bound with const use lexical scope, just like values bound with parameters. They are looked up in the environment where they are declared. And we know that functions create environments. Parameters are declared when we create functions, so it makes sense that parameters are bound to environments created when we invoke functions. _(javascriptallonge.pdf (source-range-8eb13d6b-00467))_
 
 ### the function keyword
 
-- So 'actualName' isn't bound in the environment where we use the named function expression. Is it bound anywhere else? Yes it is. Here's a function that determines whether a positive integer is even or not. We'll use it in an IIFE so that we don't have to bind it to a name with const : _(javascriptallonge.pdf (source-range-31a4cf47-00534))_
+- So 'actualName' isn't bound in the environment where we use the named function expression. Is it bound anywhere else? Yes it is. Here's a function that determines whether a positive integer is even or not. We'll use it in an IIFE so that we don't have to bind it to a name with const : _(javascriptallonge.pdf (source-range-8eb13d6b-00534))_
 
 ### function declarations
 
-- We haven't actually bound a function to the name fizzbuzz before we try to use it, so we get an error. But a function declaration works differently: _(javascriptallonge.pdf (source-range-31a4cf47-00546))_
+- We haven't actually bound a function to the name fizzbuzz before we try to use it, so we get an error. But a function declaration works differently: _(javascriptallonge.pdf (source-range-8eb13d6b-00546))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00492))_
 
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00485))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00485))_
 
 ```
 if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: ((diameter) => { const PI = 3; if ( true ) { const PI = 3.14159265; return diameter * PI; } })(2) //=> 6.2831853 ((diameter) => { const PI = 3.14159265; if ( true ) { const PI = 3; } return diameter * PI;
@@ -48,11 +48,11 @@ if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: (
 
 ### Technical frame 2: are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00492))_
 
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00486))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00486))_
 
 ```
 })(2) //=> 6.2831853
@@ -60,11 +60,11 @@ if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: (
 
 ### Technical frame 3: are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00492))_
 
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00489))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00489))_
 
 ```
 ((diameter) => { const PI = 3.14159265; if ( true ) { const PI = 3; } return diameter * PI; })(2) //=> would return 6 if const had function scope
@@ -72,21 +72,21 @@ if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: (
 
 ### Technical frame 4: are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00492))_
 
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00490))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00490))_
 
 > If const always bound its value to the name defined in the function's environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents.
 
 ### Technical frame 5: are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00492))_
 
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00491))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00491))_
 
 ```
 ((diameter) => { if ( true ) { const PI = 3.14159265; } return diameter * PI; })(2) //=> would return 6.2831853 if const had function scope
@@ -94,11 +94,11 @@ if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: (
 
 ### Technical frame 6: the function keyword
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00536))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00536))_
 
 > Clearly, the name even is bound to the function within the function's body . Is it bound to the function outside of the function's body?
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00535))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00535))_
 
 ```
 ( function even (n) { if (n === 0) { return true } else return !even(n - 1) })(5) //=> false ( function even (n) { if (n === 0) { return true } else return !even(n - 1) })(2) //=> true
@@ -106,11 +106,11 @@ if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: (
 
 ### Technical frame 7: the function keyword
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00538))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00538))_
 
 > even is bound within the function itself, but not outside it. This is useful for making recursive functions as we see above, and it speaks to the principle of least privilege: If you don't need to name it anywhere else, you needn't.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00537))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00537))_
 
 ```
 even //=> Can't find variable: even
@@ -118,11 +118,11 @@ even //=> Can't find variable: even
 
 ### Technical frame 8: function declarations
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00549))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00549))_
 
 > The definition of the fizzbuzz is 'hoisted' to the top of its enclosing scope (an IIFE in this case). This behaviour is intentional on the part of JavaScript's design to facilitate a certain style of programming where you put the main logic up front, and the 'helper functions' at the bottom. It is not necessary to declare functions in this way in JavaScript, but understanding the syntax and its behaviour (especially the way it differs from const ) is essential for working with production code.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00547))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00547))_
 
 ```
 ( function () { return fizzbuzz(); function fizzbuzz () { return "Fizz" + "Buzz"; } })() //=> 'FizzBuzz' Although fizzbuzz is declared later in the function, JavaScript behaves as if we'd written: ( function () { {
@@ -130,11 +130,11 @@ even //=> Can't find variable: even
 
 ### Technical frame 9: function declarations
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00549))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00549))_
 
 > The definition of the fizzbuzz is 'hoisted' to the top of its enclosing scope (an IIFE in this case). This behaviour is intentional on the part of JavaScript's design to facilitate a certain style of programming where you put the main logic up front, and the 'helper functions' at the bottom. It is not necessary to declare functions in this way in JavaScript, but understanding the syntax and its behaviour (especially the way it differs from const ) is essential for working with production code.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00548))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00548))_
 
 ```
 const fizzbuzz = function fizzbuzz () return "Fizz" + "Buzz"; } return fizzbuzz(); })()

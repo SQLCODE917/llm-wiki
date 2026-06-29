@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-type@faa9851e859c4a9701a733a247afa267
+projection_coverage: topic-javascriptallonge-type@5314041c5463297331d679e344111db2
 ---
 
 # Type
@@ -17,44 +17,44 @@ What [[javascriptallonge]] covers about type:
 
 ### value types
 
-- Third, some types of cups have no distinguishing marks on them. If they are the same kind of cup, and they hold the same contents, we have no way to tell the difference between them. This is the case with the strings, numbers, and booleans we have seen so far. _(javascriptallonge.pdf (source-range-31a4cf47-00128))_
+- Third, some types of cups have no distinguishing marks on them. If they are the same kind of cup, and they hold the same contents, we have no way to tell the difference between them. This is the case with the strings, numbers, and booleans we have seen so far. _(javascriptallonge.pdf (source-range-8eb13d6b-00128))_
 
 ### reference types
 
-- How about that! When you type [1, 2, 3] or any of its variations, you are typing an expression that generates its own unique array that is not identical to any other array, even if that other array also looks like [1, 2, 3] . It's as if JavaScript is generating new cups of coffee with serial numbers on the bottom. _(javascriptallonge.pdf (source-range-31a4cf47-00140))_
+- How about that! When you type [1, 2, 3] or any of its variations, you are typing an expression that generates its own unique array that is not identical to any other array, even if that other array also looks like [1, 2, 3] . It's as if JavaScript is generating new cups of coffee with serial numbers on the bottom. _(javascriptallonge.pdf (source-range-8eb13d6b-00140))_
 
 ### functions and identities
 
-- You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same contents. Reference types do not. _(javascriptallonge.pdf (source-range-31a4cf47-00180))_
+- You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same contents. Reference types do not. _(javascriptallonge.pdf (source-range-8eb13d6b-00180))_
 
 ### call by sharing
 
-- We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. Now we can elaborate: When JavaScript binds a value-type to a name, it makes a copy of the value and places the copy in the environment. As you recall, value types like strings and numbers are identical to each other if they have the same content. So JavaScript can make as many copies of strings, numbers, or booleans as it wishes. _(javascriptallonge.pdf (source-range-31a4cf47-00325))_
+- We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. Now we can elaborate: When JavaScript binds a value-type to a name, it makes a copy of the value and places the copy in the environment. As you recall, value types like strings and numbers are identical to each other if they have the same content. So JavaScript can make as many copies of strings, numbers, or booleans as it wishes. _(javascriptallonge.pdf (source-range-8eb13d6b-00325))_
 
-- Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, and when the value needs to be used, JavaScript uses the reference to obtain the original. _(javascriptallonge.pdf (source-range-31a4cf47-00327))_
+- Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, and when the value needs to be used, JavaScript uses the reference to obtain the original. _(javascriptallonge.pdf (source-range-8eb13d6b-00327))_
 
 ### Garbage, Garbage Everywhere
 
-- Thus, CONS put two values together, CAR extracted one, and CDR extracted the other. Lisp's basic data type is often said to be the list, but in actuality it was the 'cons cell,' the term used to describe two 15-bit values stored in one word. The 15-bit values were used as pointers that could refer to a location in memory, so in effect, a cons cell was a little data structure with two pointers to other cons cells. _(javascriptallonge.pdf (source-range-31a4cf47-01031))_
+- Thus, CONS put two values together, CAR extracted one, and CDR extracted the other. Lisp's basic data type is often said to be the list, but in actuality it was the 'cons cell,' the term used to describe two 15-bit values stored in one word. The 15-bit values were used as pointers that could refer to a location in memory, so in effect, a cons cell was a little data structure with two pointers to other cons cells. _(javascriptallonge.pdf (source-range-8eb13d6b-01031))_
 
 ### Mutation
 
-- In JavaScript, almost every type of value can mutate . Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate. Recall that you can access a value from within an array or an object using [] . You can reassign a value using [] = : _(javascriptallonge.pdf (source-range-31a4cf47-01121))_
+- In JavaScript, almost every type of value can mutate . Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate. Recall that you can access a value from within an array or an object using [] . You can reassign a value using [] = : _(javascriptallonge.pdf (source-range-8eb13d6b-01120))_
 
 ### the aftermath
 
-- The Carpenter sat down and waited. This type of solution provided an excellent opportunity to explore lazy versus eager evaluation, the performance of iterators versus native iteration, single responsibility design, and many other rich topics. _(javascriptallonge.pdf (source-range-31a4cf47-01854))_
+- The Carpenter sat down and waited. This type of solution provided an excellent opportunity to explore lazy versus eager evaluation, the performance of iterators versus native iteration, single responsibility design, and many other rich topics. _(javascriptallonge.pdf (source-range-8eb13d6b-01852))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: value types
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00130))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00130))_
 
 > Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same 'content.' Strings, numbers, and booleans are examples of what JavaScript calls 'value' or 'primitive' types. We'll use both terms interchangeably.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00129))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00129))_
 
 ```
 2 + 2 === 4 //=> true (2 + 2 === 4) === (2 !== 5) //=> true
@@ -62,21 +62,21 @@ What [[javascriptallonge]] covers about type:
 
 ### Technical frame 2: value types
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00133))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00133))_
 
 > Cafe Macchiato is also a fine drink, especially when following up on the fortunes of the Azzurri or the standings in the Giro d'Italia
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00131))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00131))_
 
 > So even if you have two cups of the same type, and their contents are the same, you can still distinguish between them.
 
 ### Technical frame 3: call by sharing
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00331))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00331))_
 
 > 26 Unless the argument is NaN , which isn't equal to anything, including itself . NaN in JavaScript behaves a lot like NULL in SQL.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00330))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00330))_
 
 ```
 (value) => ((ref1, ref2) => ref1 === ref2)(value, value)
@@ -84,11 +84,11 @@ What [[javascriptallonge]] covers about type:
 
 ### Technical frame 4: Mutation
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01127))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01126))_
 
 > Wehave established that JavaScript's semantics allow for two different bindings to refer to the same value. For example:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01122))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01121))_
 
 ```
 const oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree //=> [ 'one', 2, 3 ]
@@ -96,7 +96,7 @@ const oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree //=> [ 'one',
 
 ### Technical atom 5
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00156))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00156))_
 
 | entry | content |
 | --- | --- |

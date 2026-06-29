@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-mutation@538f36775d3a71aab2a4d237d6482568
+projection_coverage: topic-javascriptallonge-mutation@22bdef0ff3722407b7ad3d9ba3b299c3
 ---
 
 # Mutation
@@ -17,20 +17,20 @@ What [[javascriptallonge]] covers about mutation:
 
 ### mutation and data structures
 
-- Mutation is a surprisingly complex subject. It is possible to compute anything without ever mutating an existing entity. Languages like Haskell 70 don't permit mutation at all. In general, mutation makes some algorithms shorter to write and possibly faster, but harder to reason about. _(javascriptallonge.pdf (source-range-31a4cf47-01142))_
+- Mutation is a surprisingly complex subject. It is possible to compute anything without ever mutating an existing entity. Languages like Haskell 70 don't permit mutation at all. In general, mutation makes some algorithms shorter to write and possibly faster, but harder to reason about. _(javascriptallonge.pdf (source-range-8eb13d6b-01141))_
 
-- One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let's recall linked lists from Plain Old JavaScript Objects. While we're executing the mapWith function, we're constructing a new linked list. By this pattern, we would be happy to use mutation to construct the list while running mapWith . _(javascriptallonge.pdf (source-range-31a4cf47-01143))_
+- One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let's recall linked lists from Plain Old JavaScript Objects. While we're executing the mapWith function, we're constructing a new linked list. By this pattern, we would be happy to use mutation to construct the list while running mapWith . _(javascriptallonge.pdf (source-range-8eb13d6b-01142))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: mutation and data structures
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01150))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01149))_
 
 > The gathering operation [a, b, ...ThreeToFive] is slower, but 'safer. '
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01146))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01145))_
 
 ```
 const EMPTY = {}; const OneToFive = { first: 1, rest: { first: 2, rest: { first: 3, rest: { first: 4, rest: { first: 5, rest: EMPTY } } } } }; OneToFive //=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":"fou\ r","rest":{"first":"five","rest":{}}}}}} const ThreeToFive = OneToFive.rest.rest; ThreeToFive //=> {"first":3,"rest":{"first":4,"rest":{"first":5,"rest":{}}}} ThreeToFive.first = "three"; ThreeToFive.rest.first = "four"; ThreeToFive.rest.rest.first = "five"; ThreeToFive //=> {"first":"three","rest":{"first":"four","rest":{"first":"five","rest":{}}\ }} OneToFive //=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":"fou\ r","rest":{"first":"five","rest":{}}}}}} Changes made to ThreeToFive affect OneToFive , because they share the same structure. When we wrote ThreeToFive = OneToFive.rest.rest; , we weren't making a brand new copy of {"first":3,"rest":{"fir we were getting a reference to the same chain of nodes. Structure sharing like this is what makes linked lists so fast for taking everything but the first item
@@ -41,7 +41,7 @@ const EMPTY = {}; const OneToFive = { first: 1, rest: { first: 2, rest: { first:
 
 - [[javascriptallonge-follow]] - shared statements: Follow shares source evidence from mutation and data structures: One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let's recall linked lists f ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-pattern]] - shared statements: Pattern shares source evidence from mutation and data structures: One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let's recall linked lists f ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-section-mutation-96af1627]] - source section: Mutation shares source evidence from Mutation: In JavaScript, almost every type of value can mutate . Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate. Recall t ... [truncated]; Mutation shares technical record from Mutation: const oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree //=> [ 'one', 2, 3 ] (12 shared statement(s), 7 shared atom(s))
+- [[javascriptallonge-section-mutation-4ba5b6e2]] - source section: Mutation shares source evidence from Mutation: In JavaScript, almost every type of value can mutate . Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate. Recall t ... [truncated]; Mutation shares technical record from Mutation: const oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree //=> [ 'one', 2, 3 ] (12 shared statement(s), 7 shared atom(s))
 
 ## Source
 

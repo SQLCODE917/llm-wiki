@@ -234,3 +234,13 @@ Source page: [[javascriptallonge]]; linked pages: 293. Ledger artifacts: /home/s
 Claim-ledger ingest of raw/javascriptallonge.pdf (209 source unit(s)).
 Claim-ledger projection (coding): 1992 usable entries, 654 technical atoms, 430 needs-review, 293 linked page(s); write decision write-with-review-work.
 Source page: [[javascriptallonge]]; linked pages: 293. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/ledger.
+
+## [2026-06-28] ingest | javascriptallonge.pdf
+Claim-ledger ingest of raw/javascriptallonge.pdf (209 source unit(s)).
+Claim-ledger projection (coding): 1992 usable entries, 654 technical atoms, 430 needs-review, 293 linked page(s); write decision write-with-review-work.
+Source page: [[javascriptallonge]]; linked pages: 293. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/ledger.
+
+## [2026-06-28] ingest | javascriptallonge.pdf
+Claim-ledger ingest of raw/javascriptallonge.pdf (209 source unit(s)).
+Claim-ledger projection (coding): 1991 usable entries, 653 technical atoms, 430 needs-review, 293 linked page(s); write decision write-with-review-work.
+Source page: [[javascriptallonge]]; linked pages: 293. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/ledger.

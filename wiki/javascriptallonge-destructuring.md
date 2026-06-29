@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-destructuring@ed6ee02719ac034dca844a06f0522dfe
+projection_coverage: topic-javascriptallonge-destructuring@ab40757e7e456733d1cfd01d112097e1
 ---
 
 # Destructuring
@@ -17,14 +17,14 @@ What [[javascriptallonge]] covers about destructuring:
 
 ### defaults and destructuring
 
-- How very useful: defaults can be supplied for destructuring assignments, just like defaults for parameters. _(javascriptallonge.pdf (source-range-31a4cf47-01013))_
+- How very useful: defaults can be supplied for destructuring assignments, just like defaults for parameters. _(javascriptallonge.pdf (source-range-8eb13d6b-01013))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: destructuring and return values
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00872))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00872))_
 
 ```
 const description = (nameAndOccupation) => { if (nameAndOccupation.length < 2) { return ["", "occupation missing"] } else { const [[first, last], occupation] = nameAndOccupation; return [` ${ first } is a ${ occupation } `, "ok"]; } } const [reg, status] = description([["Reginald", "Braithwaite"], "programmer"]); reg //=> "Reginald is a programmer" status //=> "ok"
@@ -32,11 +32,11 @@ const description = (nameAndOccupation) => { if (nameAndOccupation.length < 2) {
 
 ### Technical frame 2: defaults and destructuring
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01013))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01013))_
 
 > How very useful: defaults can be supplied for destructuring assignments, just like defaults for parameters.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01012))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01012))_
 
 ```
 const [first, second = "two"] = ["one"]; ` ${ first } . ${ second } ` //=> "one . two" const [first, second = "two"] = ["primus", "secundus"]; ` ${ first } . ${ second } ` //=> "primus . secundus"

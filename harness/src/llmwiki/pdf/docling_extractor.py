@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 import traceback
 from dataclasses import dataclass
 from importlib.metadata import PackageNotFoundError, version
@@ -18,7 +19,9 @@ from llmwiki.pdf.document import (
 )
 
 _DOCLING_TIMEOUT_SECONDS = 20 * 60
-_DOCLING_DEVICES = ("auto", "cpu")
+_DEFAULT_DOCLING_DEVICES = ("cpu",)
+_DOCLING_DEVICE_ENV = "LLMWIKI_DOCLING_DEVICES"
+_VALID_DOCLING_DEVICES = frozenset({"auto", "cpu", "cuda"})
 
 
 @dataclass(frozen=True)
@@ -29,7 +32,7 @@ class _DoclingAttemptFailure:
 
 def extract_document_model(pdf_path: Path, source_locator: str, source_hash: str) -> DocumentModel:
     failures: list[_DoclingAttemptFailure] = []
-    for device in _DOCLING_DEVICES:
+    for device in docling_devices():
         result = _extract_document_model_isolated(pdf_path, source_locator, source_hash, device)
         if isinstance(result, DocumentModel):
             return result
@@ -39,6 +42,20 @@ def extract_document_model(pdf_path: Path, source_locator: str, source_hash: str
         f"{source_locator}: "
         + "; ".join(f"{failure.device}: {failure.detail}" for failure in failures)
     )
+
+
+def docling_devices() -> tuple[str, ...]:
+    raw_devices = os.environ.get(_DOCLING_DEVICE_ENV)
+    if raw_devices is None or not raw_devices.strip():
+        return _DEFAULT_DOCLING_DEVICES
+    devices = tuple(device.strip().lower() for device in raw_devices.split(",") if device.strip())
+    invalid = tuple(device for device in devices if device not in _VALID_DOCLING_DEVICES)
+    if not devices or invalid:
+        valid = ", ".join(sorted(_VALID_DOCLING_DEVICES))
+        raise ValueError(
+            f"{_DOCLING_DEVICE_ENV} must contain comma-separated values from: {valid}."
+        )
+    return devices
 
 
 def _extract_document_model_isolated(
@@ -125,6 +142,8 @@ def pdf_pipeline_options(device: str = "auto") -> Any:
     pipeline_options = PdfPipelineOptions()
     if device == "cpu":
         pipeline_options.accelerator_options = AcceleratorOptions(device=AcceleratorDevice.CPU)
+    if device == "cuda":
+        pipeline_options.accelerator_options = AcceleratorOptions(device=AcceleratorDevice.CUDA)
     pipeline_options.do_ocr = False
     # The harness has a source-neutral table recovery layer after Docling. Avoid
     # Docling TableFormer here: it is slower, less portable, and can fail inside

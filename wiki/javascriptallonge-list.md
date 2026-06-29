@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-list@489b36a5025439e743ecaa38d1e56df4
+projection_coverage: topic-javascriptallonge-list@1eba178c05fa292b02f90e9a35c9374d
 ---
 
 # List
@@ -17,78 +17,78 @@ What [[javascriptallonge]] covers about list:
 
 ### Disclaimer
 
-- These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want to leave a 'hole' in the argument list, you will need to either use a generalized partial recipe, or you will need to repeatedly apply arguments. They are context-agnostic. _(javascriptallonge.pdf (source-range-31a4cf47-00660))_
+- These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want to leave a 'hole' in the argument list, you will need to either use a generalized partial recipe, or you will need to repeatedly apply arguments. They are context-agnostic. _(javascriptallonge.pdf (source-range-8eb13d6b-00660))_
 
 ### Arrays and Destructuring Arguments
 
-- While we have mentioned arrays briefly, we haven't had a close look at them. Arrays are JavaScript's 'native' representation of lists. Strings are important because they represent writing. Lists are important because they represent ordered collections of things, and ordered collections are a fundamental abstraction for making sense of reality. _(javascriptallonge.pdf (source-range-31a4cf47-00818))_
+- While we have mentioned arrays briefly, we haven't had a close look at them. Arrays are JavaScript's 'native' representation of lists. Strings are important because they represent writing. Lists are important because they represent ordered collections of things, and ordered collections are a fundamental abstraction for making sense of reality. _(javascriptallonge.pdf (source-range-8eb13d6b-00818))_
 
 ### Self-Similarity
 
-- Let's be more specific. Some data structures, like lists, can obviously be seen as a collection of items. Some are empty, some have three items, some forty-two, some contain numbers, some contain strings, some a mixture of elements, there are all kinds of lists. _(javascriptallonge.pdf (source-range-31a4cf47-00886))_
+- Let's be more specific. Some data structures, like lists, can obviously be seen as a collection of items. Some are empty, some have three items, some forty-two, some contain numbers, some contain strings, some a mixture of elements, there are all kinds of lists. _(javascriptallonge.pdf (source-range-8eb13d6b-00886))_
 
-- Let's convert our rules to array literals. The first rule is simple: [] is a list. How about the second rule? We can express that using a spread. Given an element e and a list list , [e, ...list] is a list. We can test this manually by building up a list: _(javascriptallonge.pdf (source-range-31a4cf47-00890))_
+- Let's convert our rules to array literals. The first rule is simple: [] is a list. How about the second rule? We can express that using a spread. Given an element e and a list list , [e, ...list] is a list. We can test this manually by building up a list: _(javascriptallonge.pdf (source-range-8eb13d6b-00890))_
 
 ### folding
 
-- With the exception of the length example at the beginning, our examples so far all involve rebuilding a solution using spreads. But they needn't. A function to compute the sum of the squares of a list of numbers might look like this: _(javascriptallonge.pdf (source-range-31a4cf47-00936))_
+- With the exception of the length example at the beginning, our examples so far all involve rebuilding a solution using spreads. But they needn't. A function to compute the sum of the squares of a list of numbers might look like this: _(javascriptallonge.pdf (source-range-8eb13d6b-00936))_
 
 ### Garbage, Garbage Everywhere
 
-- Lists were represented as linked lists of cons cells, with each cell's head pointing to an element and the tail pointing to another cons cell. _(javascriptallonge.pdf (source-range-31a4cf47-01032))_
+- Lists were represented as linked lists of cons cells, with each cell's head pointing to an element and the tail pointing to another cons cell. _(javascriptallonge.pdf (source-range-8eb13d6b-01032))_
 
-- Again, it's just extracting a reference from a cons cell, it's very fast. In Lisp, it's blazingly fast because it happens in hardware. There's no making copies of arrays, the time to cdr a list with five elements is the same as the time to cdr a list with 5,000 elements, and no temporary arrays are needed. In JavaScript, it's still much, much, much faster to get all the elements except the head from a linked list than from an array. Getting one reference to a structure that already exists is faster than copying a bunch of elements. _(javascriptallonge.pdf (source-range-31a4cf47-01046))_
+- Again, it's just extracting a reference from a cons cell, it's very fast. In Lisp, it's blazingly fast because it happens in hardware. There's no making copies of arrays, the time to cdr a list with five elements is the same as the time to cdr a list with 5,000 elements, and no temporary arrays are needed. In JavaScript, it's still much, much, much faster to get all the elements except the head from a linked list than from an array. Getting one reference to a structure that already exists is faster than copying a bunch of elements. _(javascriptallonge.pdf (source-range-8eb13d6b-01046))_
 
 ### so why arrays
 
-- Well, linked lists are fast for a few things, like taking the front element off a list, and taking the remainder of a list. But not for iterating over a list: Pointer chasing through memory is quite a bit slower than incrementing an index. In addition to the extra fetches to dereference pointers, pointer chasing suffers from cache misses. And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it. _(javascriptallonge.pdf (source-range-31a4cf47-01054))_
+- Well, linked lists are fast for a few things, like taking the front element off a list, and taking the remainder of a list. But not for iterating over a list: Pointer chasing through memory is quite a bit slower than incrementing an index. In addition to the extra fetches to dereference pointers, pointer chasing suffers from cache misses. And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it. _(javascriptallonge.pdf (source-range-8eb13d6b-01054))_
 
 ### Plain Old JavaScript Objects
 
-- Lists are not the only way to represent collections of things, but they are the 'oldest' data structure in the history of high level languages, because they map very closely to the way the hardware is organized in a computer. Lists are obviously very handy for homogeneous collections of things, like a shopping list: _(javascriptallonge.pdf (source-range-31a4cf47-01061))_
+- Lists are not the only way to represent collections of things, but they are the 'oldest' data structure in the history of high level languages, because they map very closely to the way the hardware is organized in a computer. Lists are obviously very handy for homogeneous collections of things, like a shopping list: _(javascriptallonge.pdf (source-range-8eb13d6b-01061))_
 
-- Remembering that the name is the first item is error-prone, and being expected to look at user[0][1] and know that we are talking about a surname is unreasonable. So back when lists were the only things available, programmers would introduce constants to make things easier on themselves: _(javascriptallonge.pdf (source-range-31a4cf47-01064))_
+- Remembering that the name is the first item is error-prone, and being expected to look at user[0][1] and know that we are talking about a surname is unreasonable. So back when lists were the only things available, programmers would introduce constants to make things easier on themselves: _(javascriptallonge.pdf (source-range-8eb13d6b-01064))_
 
 ### revisiting linked lists
 
-- The problem here is that linked lists are constructed back-to-front, but we iterate over them frontto-back. So to copy a list, we have to save all the bits on the call stack and then construct the list from back-to-front as all the recursive calls return. _(javascriptallonge.pdf (source-range-31a4cf47-01111))_
+- The problem here is that linked lists are constructed back-to-front, but we iterate over them frontto-back. So to copy a list, we have to save all the bits on the call stack and then construct the list from back-to-front as all the recursive calls return. _(javascriptallonge.pdf (source-range-8eb13d6b-01110))_
 
-- Mind you, this is still much, much faster than making partial copies of arrays. For a list of length n , wecreated n superfluous nodes and copied n superfluous values. Whereas our naïve array algorithm created 2 n superfluous arrays and copied n 2 superfluous values. _(javascriptallonge.pdf (source-range-31a4cf47-01117))_
+- Mind you, this is still much, much faster than making partial copies of arrays. For a list of length n , wecreated n superfluous nodes and copied n superfluous values. Whereas our naïve array algorithm created 2 n superfluous arrays and copied n 2 superfluous values. _(javascriptallonge.pdf (source-range-8eb13d6b-01116))_
 
 ### building with mutation
 
-- This algorithm makes copies of nodes as it goes, and mutates the last node in the list so that it can splice the next one on. Adding a node to an existing list is risky, as we saw when considering the fact that OneToFive and ThreeToFive share the same nodes. But when we're in the midst of creating a brand new list, we aren't sharing any nodes with any other lists, and we can afford to be more liberal about using mutation to save space and/or time. _(javascriptallonge.pdf (source-range-31a4cf47-01157))_
+- This algorithm makes copies of nodes as it goes, and mutates the last node in the list so that it can splice the next one on. Adding a node to an existing list is risky, as we saw when considering the fact that OneToFive and ThreeToFive share the same nodes. But when we're in the midst of creating a brand new list, we aren't sharing any nodes with any other lists, and we can afford to be more liberal about using mutation to save space and/or time. _(javascriptallonge.pdf (source-range-8eb13d6b-01156))_
 
 ### Copy on Write
 
-- We've seen how to build lists with arrays and with linked lists. We've touched on an important difference between them: _(javascriptallonge.pdf (source-range-31a4cf47-01225))_
+- We've seen how to build lists with arrays and with linked lists. We've touched on an important difference between them: _(javascriptallonge.pdf (source-range-8eb13d6b-01224))_
 
-- This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunch of bookkeeping to track references? We'll end up reinventing reference counting and garbage collection. _(javascriptallonge.pdf (source-range-31a4cf47-01232))_
+- This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunch of bookkeeping to track references? We'll end up reinventing reference counting and garbage collection. _(javascriptallonge.pdf (source-range-8eb13d6b-01231))_
 
 ### copy-on-read
 
-- So back to the problem of structure sharing. One strategy for avoiding problems is to be pessimistic . Whenever we take the rest of a list, make a copy. _(javascriptallonge.pdf (source-range-31a4cf47-01239))_
+- So back to the problem of structure sharing. One strategy for avoiding problems is to be pessimistic . Whenever we take the rest of a list, make a copy. _(javascriptallonge.pdf (source-range-8eb13d6b-01238))_
 
 ### copy-on-write
 
-- But our new parent and child lists are copies that contain the desired modifications, without interfering with each other: _(javascriptallonge.pdf (source-range-31a4cf47-01249))_
+- But our new parent and child lists are copies that contain the desired modifications, without interfering with each other: _(javascriptallonge.pdf (source-range-8eb13d6b-01248))_
 
 ### a return to backward thinking
 
-- We're passing list what we want done with an empty list, and what we want done with a list that has at least one element. We then ask list to do it, and provide a way for list to call the code we pass in. _(javascriptallonge.pdf (source-range-31a4cf47-01416))_
+- We're passing list what we want done with an empty list, and what we want done with a list that has at least one element. We then ask list to do it, and provide a way for list to call the code we pass in. _(javascriptallonge.pdf (source-range-8eb13d6b-01415))_
 
-- Having a list know itself whether it is empty hides implementation information from the code that uses lists. This is a fundamental principle of good design. It is a tenet of Object-Oriented Programming, but it is not exclusive to OOP: We can and should design data structures to hide implementation information from the code that use them, whether we are working with functions, objects, or both. _(javascriptallonge.pdf (source-range-31a4cf47-01420))_
+- Having a list know itself whether it is empty hides implementation information from the code that uses lists. This is a fundamental principle of good design. It is a tenet of Object-Oriented Programming, but it is not exclusive to OOP: We can and should design data structures to hide implementation information from the code that use them, whether we are working with functions, objects, or both. _(javascriptallonge.pdf (source-range-8eb13d6b-01419))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: Disclaimer
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00662))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00662))_
 
 > As noted above, our partial recipe allows us to create functions that are partial applications of functions that are context aware. We'd need a different recipe if we wish to create partial applications of object methods.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00661))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00661))_
 
 ```
 const callFirst = (fn, larg) => function (...rest) { return fn.call( this , larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call( this , ...rest, rarg); } const greet = (me, you) => `Hello, ${ you } , my name is ${ me } `; const heliosSaysHello = callFirst(greet, 'Helios'); heliosSaysHello('Eartha') //=> 'Hello, Eartha, my name is Helios' const sayHelloToCeline = callLast(greet, 'Celine'); sayHelloToCeline('Eartha') //=> 'Hello, Celine, my name is Eartha'
@@ -96,11 +96,11 @@ const callFirst = (fn, larg) => function (...rest) { return fn.call( this , larg
 
 ### Technical frame 2: Self-Similarity
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00892))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00892))_
 
 > Thanks to the parallel between array literals + spreads with destructuring + rests, we can also use the same rules to decompose lists:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00891))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00891))_
 
 ```
 [] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"]
@@ -108,11 +108,11 @@ const callFirst = (fn, larg) => function (...rest) { return fn.call( this , larg
 
 ### Technical frame 3: Self-Similarity
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00897))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00897))_
 
 > Armed with our definition of an empty list and with what we've already learned, we can build a great many functions that operate on arrays. We know that we can get the length of an array using its .length . But as an exercise, how would we write a length function using just what we have already?
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00895))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00895))_
 
 ```
 const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ...rest] = ["foo"]; first //=> "foo" rest //=> [] const [first, ...rest] = ["foo", "bar"]; first //=> "foo" rest //=> ["bar"] const [first, ...rest] = ["foo", "bar", "baz"]; first //=> "foo" rest //=> ["bar","baz"] For the purpose of this exploration, we will presume the following: const isEmpty = ([first, ...rest]) => first === undefined ;
@@ -120,11 +120,11 @@ const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ..
 
 ### Technical frame 4: Self-Similarity
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00904))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00904))_
 
 > Our length function is recursive , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00902))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00902))_
 
 ```
 const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest); Let's try it! length([]) //=> 0 length(["foo"]) //=> 1 length(["foo", "bar", "baz"])
@@ -132,11 +132,11 @@ const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest);
 
 ### Technical frame 5: Self-Similarity
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00904))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00904))_
 
 > Our length function is recursive , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00903))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00903))_
 
 ```
 //=> 3
@@ -144,11 +144,11 @@ const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest);
 
 ### Technical frame 6: folding
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00943))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00943))_
 
 > And now we supply a function that does slightly more than our mapping functions:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00937))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00937))_
 
 ```
 const sumSquares = ([first, ...rest]) => first === undefined ? 0 : first * first + sumSquares(rest); sumSquares([1, 2, 3, 4, 5]) //=> 55
@@ -156,11 +156,11 @@ const sumSquares = ([first, ...rest]) => first === undefined ? 0 : first * first
 
 ### Technical frame 7: Garbage, Garbage Everywhere
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01041))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01041))_
 
 > This is a Linked List 68 , it's just that those early Lispers used the names car and cdr after the hardware instructions, whereas today we use words like data and reference . But it works the same way: If we want the head of a list, we call car on it:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01037))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01037))_
 
 ```
 const oneToFive = cons(1, cons(2, cons(3, cons(4, cons(5, null )))));
@@ -168,11 +168,11 @@ const oneToFive = cons(1, cons(2, cons(3, cons(4, cons(5, null )))));
 
 ### Technical frame 8: Garbage, Garbage Everywhere
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01041))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01041))_
 
 > This is a Linked List 68 , it's just that those early Lispers used the names car and cdr after the hardware instructions, whereas today we use words like data and reference . But it works the same way: If we want the head of a list, we call car on it:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01038))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01038))_
 
 ```
 oneToFive //=> [1,[2,[3,[4,[5,null]]]]]
@@ -180,11 +180,11 @@ oneToFive //=> [1,[2,[3,[4,[5,null]]]]]
 
 ### Technical frame 9: Garbage, Garbage Everywhere
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01041))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01041))_
 
 > This is a Linked List 68 , it's just that those early Lispers used the names car and cdr after the hardware instructions, whereas today we use words like data and reference . But it works the same way: If we want the head of a list, we call car on it:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01040))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01040))_
 
 ```
 const node5 = [5, null ], node4 = [4, node5], node3 = [3, node4], node2 = [2, node3], node1 = [1, node2]; const oneToFive = node1;
@@ -192,11 +192,11 @@ const node5 = [5, null ], node4 = [4, node5], node3 = [3, node4], node2 = [2, no
 
 ### Technical frame 10: Garbage, Garbage Everywhere
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01043))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01043))_
 
 > car is very fast, it simply extracts the first element of the cons cell.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01042))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01042))_
 
 ```
 car(oneToFive) //=> 1
@@ -204,11 +204,11 @@ car(oneToFive) //=> 1
 
 ### Technical frame 11: Garbage, Garbage Everywhere
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01046))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01046))_
 
 > Again, it's just extracting a reference from a cons cell, it's very fast. In Lisp, it's blazingly fast because it happens in hardware. There's no making copies of arrays, the time to cdr a list with five elements is the same as the time to cdr a list with 5,000 elements, and no temporary arrays are needed. In JavaScript, it's still much, much, much faster to get all the elements except the head from a linked list than from an array. Getting one reference to a structure that already exists is fas
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01045))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01045))_
 
 ```
 cdr(oneToFive) //=> [2,[3,[4,[5,null]]]]
@@ -216,31 +216,31 @@ cdr(oneToFive) //=> [2,[3,[4,[5,null]]]]
 
 ### Technical frame 12: so why arrays
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01055))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01055))_
 
 > We have avoided discussing rebinding and mutating values, but if we want to change elements of our lists, the naïve linked list implementation suffers as well: When we take the cdr of a linked list, we are sharing the elements. If we make any change other than cons-ing a new element to the front, we are changing both the new list and the old list.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01054))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01054))_
 
 > And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
 
 ### Technical frame 13: so why arrays
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01056))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01056))_
 
 > Arrays avoid this problem by pessimistically copying all the references whenever we extract an element or sequence of elements from them (We'll see this explained later in Mutation).
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01055))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01055))_
 
 > We have avoided discussing rebinding and mutating values, but if we want to change elements of our lists, the naïve linked list implementation suffers as well: When we take the cdr of a linked list, we are sharing the elements.
 
 ### Technical frame 14: Plain Old JavaScript Objects
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01064))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01064))_
 
 > Remembering that the name is the first item is error-prone, and being expected to look at user[0][1] and know that we are talking about a surname is unreasonable. So back when lists were the only things available, programmers would introduce constants to make things easier on themselves:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01062))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01062))_
 
 ```
 const remember = ["the milk", "the coffee beans", "the biscotti"]; And they can be used to store heterogeneous things in various levels of structure:
@@ -248,11 +248,11 @@ const remember = ["the milk", "the coffee beans", "the biscotti"]; And they can 
 
 ### Technical frame 15: Plain Old JavaScript Objects
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01064))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01064))_
 
 > Remembering that the name is the first item is error-prone, and being expected to look at user[0][1] and know that we are talking about a surname is unreasonable. So back when lists were the only things available, programmers would introduce constants to make things easier on themselves:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01063))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01063))_
 
 ```
 const user = [["Reginald", "Braithwaite"],[ "author", ["JavaScript Allongé", "Ja\ vaScript Spessore", "CoffeeScript Ristretto"]]];
@@ -260,11 +260,11 @@ const user = [["Reginald", "Braithwaite"],[ "author", ["JavaScript Allongé", "J
 
 ### Technical frame 16: Plain Old JavaScript Objects
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01066))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01066))_
 
 > Now they could write user[NAME][LAST] or user[OCCUPATION][TITLE] instead of user[0][1] or user[1][0] . Over time, this need to build heterogeneous data structures with access to members by name evolved into the Dictionary 69 data type, a mapping from a unique set of objects to another set of objects.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01065))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01065))_
 
 ```
 const NAME = 0, FIRST = 0, LAST = 1, OCCUPATION = 1, TITLE = 0, RESPONSIBILITIES = 1; const user = [["Reginald", "Braithwaite"],[ "author", ["JavaScript Allongé", "Ja\ vaScript Spessore", "CoffeeScript Ristretto"]]];
@@ -272,11 +272,11 @@ const NAME = 0, FIRST = 0, LAST = 1, OCCUPATION = 1, TITLE = 0, RESPONSIBILITIES
 
 ### Technical frame 17: revisiting linked lists
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01106))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01105))_
 
 > In essence, this simple implementation used functions to create an abstraction with named elements. But now that we've looked at objects, we can use an object instead of a two-element array. While we're at it, let's use contemporary names. So our linked list nodes will be formed from { first, rest }
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01105))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01104))_
 
 ```
 const cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d;
@@ -284,11 +284,11 @@ const cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d;
 
 ### Technical frame 18: revisiting linked lists
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01109))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01108))_
 
 > What about mapping? Well, let's start with the simplest possible thing, making a copy of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn't fast is naïvely copying a list:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01107))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01106))_
 
 ```
 In that case, a linked list of the numbers 1 , 2 , and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } } . We can then perform the equivalent of [first, ...rest] with direct property accessors:
@@ -296,11 +296,11 @@ In that case, a linked list of the numbers 1 , 2 , and 3 will look like this: { 
 
 ### Technical frame 19: revisiting linked lists
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01109))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01108))_
 
 > What about mapping? Well, let's start with the simplest possible thing, making a copy of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn't fast is naïvely copying a list:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01108))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01107))_
 
 ```
 const EMPTY = {}; const OneTwoThree = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY \ } } }; OneTwoThree.first //=> 1 OneTwoThree.rest //=> {"first":2,"rest":{"first":3,"rest":{}}} OneTwoThree.rest.rest.first //=> 3 Taking the length of a linked list is easy: const length = (node, delayed = 0) => node === EMPTY ? delayed : length(node.rest, delayed + 1); length(OneTwoThree) //=> 3
@@ -308,11 +308,11 @@ const EMPTY = {}; const OneTwoThree = { first: 1, rest: { first: 2, rest: { firs
 
 ### Technical frame 20: revisiting linked lists
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01111))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01110))_
 
 > The problem here is that linked lists are constructed back-to-front, but we iterate over them frontto-back. So to copy a list, we have to save all the bits on the call stack and then construct the list from back-to-front as all the recursive calls return.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01110))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01109))_
 
 ```
 const slowcopy = (node) => node === EMPTY ? EMPTY : { first: node.first, rest: slowcopy(node.rest)}; slowcopy(OneTwoThree) //=> {"first":1,"rest":{"first":2,"rest":{"first":3,"rest":{}}}}
@@ -320,11 +320,11 @@ const slowcopy = (node) => node === EMPTY ? EMPTY : { first: node.first, rest: s
 
 ### Technical frame 21: revisiting linked lists
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01116))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01115))_
 
 > Our mapWith function takes twice as long as a straight iteration, because it iterates over the entire list twice, once to map, and once to reverse the list. Likewise, it takes twice as much memory, because it constructs a reverse of the desired result before throwing it away.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01115))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01114))_
 
 ```
 const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed }); And now, we can make a reversing map: const reverseMapWith = (fn, node, delayed = EMPTY) => node === EMPTY ? delayed : reverseMapWith(fn, node.rest, { first: fn(node.first), rest: delayed }); reverseMapWith((x) => x * x, OneTwoThree) //=> {"first":9,"rest":{"first":4,"rest":{"first":1,"rest":{}}}} And a regular mapWith follows: const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed }); const mapWith = (fn, node, delayed = EMPTY) => node === EMPTY ? reverse(delayed) : mapWith(fn, node.rest, { first: fn(node.first), rest: delayed }); mapWith((x) => x * x, OneTwoThree) //=> {"first":1,"rest":{"first":4,"rest":{"first":9,"rest":{}}}}
@@ -332,11 +332,11 @@ const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(no
 
 ### Technical frame 22: building with mutation
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01155))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01154))_
 
 > If we want to make a copy of a linked list without iterating over it twice and making a copy we discard later, we can use mutation:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01154))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01153))_
 
 ```
 const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed }); const copy = (node) => reverse(reverse(node));
@@ -344,11 +344,11 @@ const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(no
 
 ### Technical frame 23: building with mutation
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01157))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01156))_
 
 > This algorithm makes copies of nodes as it goes, and mutates the last node in the list so that it can splice the next one on. Adding a node to an existing list is risky, as we saw when considering the fact that OneToFive and ThreeToFive share the same nodes. But when we're in the midst of creating a brand new list, we aren't sharing any nodes with any other lists, and we can afford to be more liberal about using mutation to save space and/or time.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01156))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01155))_
 
 ```
 const copy = (node, head = null , tail = null ) => { if (node === EMPTY) { return head; } else if (tail === null ) { const { first, rest } = node; const newNode = { first, rest }; return copy(rest, newNode, newNode); } else { const { first, rest } = node; const newNode = { first, rest }; tail.rest = newNode; return copy(node.rest, head, newNode); } }
@@ -356,31 +356,31 @@ const copy = (node, head = null , tail = null ) => { if (node === EMPTY) { retur
 
 ### Technical frame 24: Copy on Write
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01232))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01231))_
 
 > This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunch of bookkeeping to track references? We'll end up reinventing reference counting and garbage collection.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01228))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01227))_
 
 > The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array.
 
 ### Technical frame 25: Copy on Write
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01232))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01231))_
 
 > This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunch of bookkeeping to track references? We'll end up reinventing reference counting and garbage collection.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01229))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01228))_
 
 > Whereas if you have a linked list, and you take it's 'rest,' your 'child' list shares its nodes with the 'parent' list.
 
 ### Technical frame 26: copy-on-read
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01241))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01240))_
 
 > This strategy is called 'copy-on-read', because when we attempt the parent to 'read' the value of a child of the list, we make a copy and read the copy of the child. Thereafter, we can write to the parent or the copy of the child freely.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01240))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01239))_
 
 ```
 const rest = ({first, rest}) => copy(rest); const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }\ }}; const childList = rest(parentList); const newParentList = set(2, "three", parentList); set(0, "two", childList); parentList //=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":{},"\ rest":{}}}}} childList //=> {"first":"two","rest":{"first":3,"rest":{"first":{},"rest":{}}}}
@@ -388,11 +388,11 @@ const rest = ({first, rest}) => copy(rest); const parentList = { first: 1, rest:
 
 ### Technical frame 27: copy-on-write
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01249))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01248))_
 
 > But our new parent and child lists are copies that contain the desired modifications, without interfering with each other:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01246))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01245))_
 
 ```
 const rest = ({first, rest}) => rest; const set = (index, value, list) => index === 0 ? { first: value, rest: list.rest } : { first: list.first, rest: set(index - 1, value, list.rest) }; const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }\ }}; const childList = rest(parentList); const newParentList = set(2, "three", parentList); const newChildList = set(0, "two", childList);
@@ -400,11 +400,11 @@ const rest = ({first, rest}) => rest; const set = (index, value, list) => index 
 
 ### Technical frame 28: copy-on-write
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01249))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01248))_
 
 > But our new parent and child lists are copies that contain the desired modifications, without interfering with each other:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01248))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01247))_
 
 ```
 parentList //=> {"first":1,"rest":{"first":2,"rest":{"first":3,"rest":{"first":{},"rest":\ {}}}}} childList //=> {"first":2,"rest":{"first":3,"rest":{"first":{},"rest":{}}}}
@@ -412,11 +412,11 @@ parentList //=> {"first":1,"rest":{"first":2,"rest":{"first":3,"rest":{"first":{
 
 ### Technical frame 29: copy-on-write
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01251))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01250))_
 
-> And now functions like that make copies without modifying anything, work at full speed.
+> And now functions like mapWith that make copies without modifying anything, work at full speed.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01250))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01249))_
 
 ```
 newParentList //=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":{},"\ rest":{}}}}} newChildList //=> {"first":"two","rest":{"first":3,"rest":{"first":{},"rest":{}}}}
@@ -424,11 +424,11 @@ newParentList //=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{
 
 ### Technical frame 30: a return to backward thinking
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01416))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01415))_
 
 > We're passing list what we want done with an empty list, and what we want done with a list that has at least one element. We then ask list to do it, and provide a way for list to call the code we pass in.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01415))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01414))_
 
 ```
 const length = (list) => list( () => 0, (aPair) => 1 + length(aPair(pairRest))) );
@@ -436,11 +436,11 @@ const length = (list) => list( () => 0, (aPair) => 1 + length(aPair(pairRest))) 
 
 ### Technical frame 31: a return to backward thinking
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01419))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01418))_
 
 > The line node === EMPTY presumes a lot of things. It presumes there is one canonical empty list value. It presumes you can compare these things with the === operator. We can fix this with an isEmpty function, but now we're pushing even more knowledge about the structure of lists into the code that uses them.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01418))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01417))_
 
 ```
 const length = (node, delayed = 0) => node === EMPTY ? delayed : length(node.rest, delayed + 1);

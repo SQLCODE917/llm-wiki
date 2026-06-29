@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-functional@f7dc072157055ab2fef393c38b60a247
+projection_coverage: topic-javascriptallonge-functional@0ef9c4e040ef3a780c92a9d13c2779dc
 ---
 
 # Functional
@@ -17,36 +17,36 @@ What [[javascriptallonge]] covers about functional:
 
 ### michael fogus
 
-- As a staunch advocate of functional programming, much of what Reg has written rings true to me. While not exclusively a book about functional programming, JavaScript Allongé will provide a solid foundation for functional techniques. However, you'll not be beaten about the head and neck with dogma. Instead, every section is motivated by relevant dialog and fortified with compelling source examples. As an author of programming books I admire what Reg has managed to accomplish and I envy the fine reader who finds JavaScript Allongé via some darkened channel in the Internet sprawl and reads it for the first time. _(javascriptallonge.pdf (source-range-31a4cf47-00087))_
+- As a staunch advocate of functional programming, much of what Reg has written rings true to me. While not exclusively a book about functional programming, JavaScript Allongé will provide a solid foundation for functional techniques. However, you'll not be beaten about the head and neck with dogma. Instead, every section is motivated by relevant dialog and fortified with compelling source examples. As an author of programming books I admire what Reg has managed to accomplish and I envy the fine reader who finds JavaScript Allongé via some darkened channel in the Internet sprawl and reads it for the first time. _(javascriptallonge.pdf (source-range-8eb13d6b-00087))_
 
 ### why const and let were invented
 
-- const and let are recent additions to JavaScript. For nearly twenty years, variables were declared with var (not counting parameters and function declarations, of course). However, its functional scope was a problem. _(javascriptallonge.pdf (source-range-31a4cf47-01202))_
+- const and let are recent additions to JavaScript. For nearly twenty years, variables were declared with var (not counting parameters and function declarations, of course). However, its functional scope was a problem. _(javascriptallonge.pdf (source-range-8eb13d6b-01201))_
 
 ### summary
 
-- Separating concerns with iterators speaks to JavaScript's fundamental nature: It's a language that wants to compose functionality out of small, singe-responsibility pieces, whether those pieces are functions or objects built out of functions. _(javascriptallonge.pdf (source-range-31a4cf47-01621))_
+- Separating concerns with iterators speaks to JavaScript's fundamental nature: It's a language that wants to compose functionality out of small, singe-responsibility pieces, whether those pieces are functions or objects built out of functions. _(javascriptallonge.pdf (source-range-8eb13d6b-01620))_
 
 ### Generating Iterables
 
-- Let's consider how they work. Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it's done. _(javascriptallonge.pdf (source-range-31a4cf47-01626))_
+- Let's consider how they work. Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it's done. _(javascriptallonge.pdf (source-range-8eb13d6b-01625))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: Generating Iterables
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01630))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01629))_
 
 > Well, we've written our iterator as a server . It waits until given a request, and then it returns exactly one item. Then it waits for the next request. There is no concept of pushing numbers out from the iterator, just waiting until a number is pulled out of the iterator by whatever code consumes numbers.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01627))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01626))_
 
 > Iterators have to arrange its own state such that when you call them, they compute and return the next item.
 
 ### Technical atom 2
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00659))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00659))_
 
 | entry | content |
 | --- | --- |
@@ -66,11 +66,11 @@ In Building Blocks, we discussed partial application, but we didn't write a gene
 
 ### Technical atom 3
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00660))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00660))_
 
 > These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want to leave a 'hole' in the argument list, you will need to either use a generalized partial recipe, or you will need to repeatedly apply arguments. They are context-agnostic.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00663))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00663))_
 
 | entry | content |
 | --- | --- |
@@ -89,11 +89,11 @@ In Building Blocks, we discussed partial application, but we didn't write a gene
 
 ### Technical atom 4
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00700))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00700))_
 
 > Naturally, there's a function decorator recipe for that, borrowed from Haskell's maybe monad 50 , Ruby's andand 51 , and CoffeeScript's existential method invocation:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00702))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00702))_
 
 | entry | content |
 | --- | --- |

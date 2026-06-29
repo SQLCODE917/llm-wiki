@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-parameter@0529b493f02e8dbe0d5bda90ff66c201
+projection_coverage: topic-javascriptallonge-parameter@7280dcacc95ae9a53acf104e7e67c3ab
 ---
 
 # Parameter
@@ -17,36 +17,36 @@ What [[javascriptallonge]] covers about parameter:
 
 ### const and lexical scope
 
-- Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. _(javascriptallonge.pdf (source-range-31a4cf47-00465))_
+- Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. _(javascriptallonge.pdf (source-range-8eb13d6b-00465))_
 
 ### are consts also from a shadowy planet?
 
-- We just saw that values bound with const use lexical scope, just like values bound with parameters. They are looked up in the environment where they are declared. And we know that functions create environments. Parameters are declared when we create functions, so it makes sense that parameters are bound to environments created when we invoke functions. _(javascriptallonge.pdf (source-range-31a4cf47-00467))_
+- We just saw that values bound with const use lexical scope, just like values bound with parameters. They are looked up in the environment where they are declared. And we know that functions create environments. Parameters are declared when we create functions, so it makes sense that parameters are bound to environments created when we invoke functions. _(javascriptallonge.pdf (source-range-8eb13d6b-00467))_
 
-- Parameters are only bound when we invoke a function. That's why we made all these IIFEs. But const statements can appear inside blocks. What happens when we use a const inside of a block? We'll need a gratuitous block. We've seen if statements, what could be more gratuitous than: _(javascriptallonge.pdf (source-range-31a4cf47-00484))_
+- Parameters are only bound when we invoke a function. That's why we made all these IIFEs. But const statements can appear inside blocks. What happens when we use a const inside of a block? We'll need a gratuitous block. We've seen if statements, what could be more gratuitous than: _(javascriptallonge.pdf (source-range-8eb13d6b-00484))_
 
 ### Left-Variadic Functions
 
-- ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do? _(javascriptallonge.pdf (source-range-31a4cf47-00723))_
+- ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do? _(javascriptallonge.pdf (source-range-8eb13d6b-00723))_
 
 ### function parameters are eager
 
-- In contrast to the behaviour of the ternary operator, || , and && , function parameters are always eagerly evaluated : _(javascriptallonge.pdf (source-range-31a4cf47-00801))_
+- In contrast to the behaviour of the ternary operator, || , and && , function parameters are always eagerly evaluated : _(javascriptallonge.pdf (source-range-8eb13d6b-00801))_
 
 ### the vireo
 
-- Given that our latin data is represented as the function (selector) => selector("primus")("secundus") , our obvious next step is to make a function that makes data. For arrays, we'd write cons = (first, second) => [first, second] . For objects we'd write: cons = (first, second) => {first, second} . In both cases, we take two parameters, and return the form of the data. _(javascriptallonge.pdf (source-range-31a4cf47-01364))_
+- Given that our latin data is represented as the function (selector) => selector("primus")("secundus") , our obvious next step is to make a function that makes data. For arrays, we'd write cons = (first, second) => [first, second] . For objects we'd write: cons = (first, second) => {first, second} . In both cases, we take two parameters, and return the form of the data. _(javascriptallonge.pdf (source-range-8eb13d6b-01363))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00476))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00476))_
 
 > And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the 'outer' environment? Let's rewrite things slightly differently:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00471))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00471))_
 
 ```
 ((PI) => (diameter) => diameter * PI )(3.14159265)
@@ -54,11 +54,11 @@ What [[javascriptallonge]] covers about parameter:
 
 ### Technical frame 2: are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00484))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00484))_
 
 > Parameters are only bound when we invoke a function. That's why we made all these IIFEs. But const statements can appear inside blocks. What happens when we use a const inside of a block? We'll need a gratuitous block. We've seen if statements, what could be more gratuitous than:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00482))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00482))_
 
 ```
 ((diameter) => { const PI = 3.14159265; (() => { const PI = 3; })(); return diameter * PI; })(2) //=> 6.2831853
@@ -66,11 +66,11 @@ What [[javascriptallonge]] covers about parameter:
 
 ### Technical frame 3: are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00492))_
 
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00485))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00485))_
 
 ```
 if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: ((diameter) => { const PI = 3; if ( true ) { const PI = 3.14159265; return diameter * PI; } })(2) //=> 6.2831853 ((diameter) => { const PI = 3.14159265; if ( true ) { const PI = 3; } return diameter * PI;
@@ -78,11 +78,11 @@ if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: (
 
 ### Technical frame 4: are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00492))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00492))_
 
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00486))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00486))_
 
 ```
 })(2) //=> 6.2831853
@@ -90,11 +90,11 @@ if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: (
 
 ### Technical frame 5: Left-Variadic Functions
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00719))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00719))_
 
 > This can be useful when writing certain kinds of destructuring algorithms. For example, we might want to have a function that builds some kind of team record. It accepts a coach, a captain, and an arbitrary number of players. Easy in ECMAScript 2015:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00718))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00718))_
 
 ```
 const abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); }; abccc(1, 2, 3, 4, 5) 1 2 [3,4,5]
@@ -102,11 +102,11 @@ const abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); 
 
 ### Technical frame 6: function parameters are eager
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00804))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00804))_
 
 > If we need to have functions with control-flow semantics, we can pass anonymous functions. We obviously don't need anything like this for or and and , but to demonstrate the technique:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00802))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00802))_
 
 ```
 const or = (a, b) => a || b const and = (a, b) => a && b const even = (n) => or(n === 0, and(n !== 1, even(n - 2))) even(42) //=> Maximum call stack size exceeded.
@@ -114,11 +114,11 @@ const or = (a, b) => a || b const and = (a, b) => a && b const even = (n) => or(
 
 ### Technical frame 7: destructuring parameters
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00878))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00878))_
 
 > It looks like destructuring. It acts like destructuring. There is only one difference: We have not tried gathering. Let's do that:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00875))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00875))_
 
 ```
 foo() bar("smaug") baz(1, 2, 3)
@@ -126,11 +126,11 @@ foo() bar("smaug") baz(1, 2, 3)
 
 ### Technical frame 8: destructuring parameters
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00878))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00878))_
 
 > It looks like destructuring. It acts like destructuring. There is only one difference: We have not tried gathering. Let's do that:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00877))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00877))_
 
 ```
 const foo = () => ... const bar = (name) => ... const baz = (a, b, c) => ...
@@ -138,11 +138,11 @@ const foo = () => ... const bar = (name) => ... const baz = (a, b, c) => ...
 
 ### Technical frame 9: the vireo
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01367))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01366))_
 
 > For consistency with the way combinators are written as functions taking just one parameter, we'll curry 78 the function:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01366))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01365))_
 
 ```
 (first, second) => (selector) => selector(first)(second)
@@ -150,11 +150,11 @@ const foo = () => ... const bar = (name) => ... const baz = (a, b, c) => ...
 
 ### Technical frame 10: the vireo
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01374))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01373))_
 
 > As an aside, the Vireo is a little like JavaScript's .apply function. It says, 'take these two values and apply them to this function.' There are other, similar combinators that apply values to functions. One notable example is the 'thrush' or T combinator: It takes one value and applies it to a function. It is known to most programmers as .tap .
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01368))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01367))_
 
 ```
 (first) => (second) => (selector) => selector(first)(second)

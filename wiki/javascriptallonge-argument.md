@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-argument@dd2c943c54cd77540205d9a83cc8f38b
+projection_coverage: topic-javascriptallonge-argument@a0446aaa66db892b8e116ac5cf5967d7
 ---
 
 # Argument
@@ -17,66 +17,66 @@ What [[javascriptallonge]] covers about argument:
 
 ### Ah. I'd Like to Have an Argument, Please. 22
 
-- Up to now, we've looked at functions without arguments. We haven't even said what an argument is , only that our functions don't have any. _(javascriptallonge.pdf (source-range-31a4cf47-00273))_
+- Up to now, we've looked at functions without arguments. We haven't even said what an argument is , only that our functions don't have any. _(javascriptallonge.pdf (source-range-8eb13d6b-00273))_
 
 ### a quick summary of functions and bodies
 
-- How arguments are used in a body's expression is probably perfectly obvious to you from the examples, especially if you've used any programming language (except for the dialect of BASIC-which I recall from my secondary school-that didn't allow parameters when you called a procedure). _(javascriptallonge.pdf (source-range-31a4cf47-00289))_
+- How arguments are used in a body's expression is probably perfectly obvious to you from the examples, especially if you've used any programming language (except for the dialect of BASIC-which I recall from my secondary school-that didn't allow parameters when you called a procedure). _(javascriptallonge.pdf (source-range-8eb13d6b-00289))_
 
 ### variables and bindings
 
-- How does the value get put in the environment? Well for arguments, that is very simple. When you apply the function to the arguments, an entry is placed in the dictionary for each argument. So when we write: _(javascriptallonge.pdf (source-range-31a4cf47-00308))_
+- How does the value get put in the environment? Well for arguments, that is very simple. When you apply the function to the arguments, an entry is placed in the dictionary for each argument. So when we write: _(javascriptallonge.pdf (source-range-8eb13d6b-00308))_
 
 ### call by sharing
 
-- 26 Unless the argument is NaN , which isn't equal to anything, including itself . NaN in JavaScript behaves a lot like NULL in SQL. _(javascriptallonge.pdf (source-range-31a4cf47-00331))_
+- 26 Unless the argument is NaN , which isn't equal to anything, including itself . NaN in JavaScript behaves a lot like NULL in SQL. _(javascriptallonge.pdf (source-range-8eb13d6b-00331))_
 
 ### higher-order functions
 
-- As we've seen, JavaScript functions take values as arguments and return values. JavaScript functions are values, so JavaScript functions can take functions as arguments, return functions, or both. Generally speaking, a function that either takes functions as arguments, or returns a function, or both, is referred to as a 'higher-order' function. _(javascriptallonge.pdf (source-range-31a4cf47-00560))_
+- As we've seen, JavaScript functions take values as arguments and return values. JavaScript functions are values, so JavaScript functions can take functions as arguments, return functions, or both. Generally speaking, a function that either takes functions as arguments, or returns a function, or both, is referred to as a 'higher-order' function. _(javascriptallonge.pdf (source-range-8eb13d6b-00560))_
 
 ### partial application
 
-- The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function. _(javascriptallonge.pdf (source-range-31a4cf47-00598))_
+- The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function. _(javascriptallonge.pdf (source-range-8eb13d6b-00598))_
 
 ### the function keyword
 
-- arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this: _(javascriptallonge.pdf (source-range-31a4cf47-00613))_
+- arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this: _(javascriptallonge.pdf (source-range-8eb13d6b-00613))_
 
 ### magic names and fat arrows
 
-- This works just fine, because arguments[0] refers to the 3 we passed to the function row . Our 'fat arrow' function (column) => column * arguments[0] doesn't bind arguments when it's invoked. But if we rewrite row to use the function keyword, it stops working: _(javascriptallonge.pdf (source-range-31a4cf47-00628))_
+- This works just fine, because arguments[0] refers to the 3 we passed to the function row . Our 'fat arrow' function (column) => column * arguments[0] doesn't bind arguments when it's invoked. But if we rewrite row to use the function keyword, it stops working: _(javascriptallonge.pdf (source-range-8eb13d6b-00628))_
 
 ### Disclaimer
 
-- These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want to leave a 'hole' in the argument list, you will need to either use a generalized partial recipe, or you will need to repeatedly apply arguments. They are context-agnostic. _(javascriptallonge.pdf (source-range-31a4cf47-00660))_
+- These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want to leave a 'hole' in the argument list, you will need to either use a generalized partial recipe, or you will need to repeatedly apply arguments. They are context-agnostic. _(javascriptallonge.pdf (source-range-8eb13d6b-00660))_
 
 ### left-variadic destructuring
 
-- Gathering arguments for functions is one of the ways JavaScript can destructure arrays. Another way is when assigning variables, like this: _(javascriptallonge.pdf (source-range-31a4cf47-00741))_
+- Gathering arguments for functions is one of the ways JavaScript can destructure arrays. Another way is when assigning variables, like this: _(javascriptallonge.pdf (source-range-8eb13d6b-00741))_
 
 ### truthiness and operators
 
-- Our logical operators ! , && , and || are a little more subtle than our examples above implied. ! is the simplest. It always returns false if its argument is truthy, and true is its argument is not truthy: _(javascriptallonge.pdf (source-range-31a4cf47-00777))_
+- Our logical operators ! , && , and || are a little more subtle than our examples above implied. ! is the simplest. It always returns false if its argument is truthy, and true is its argument is not truthy: _(javascriptallonge.pdf (source-range-8eb13d6b-00777))_
 
 ### Self-Similarity
 
-- In Arrays and Destructuring Arguments, we worked with the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment. _(javascriptallonge.pdf (source-range-31a4cf47-00884))_
+- In Arrays and Destructuring Arguments, we worked with the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment. _(javascriptallonge.pdf (source-range-8eb13d6b-00884))_
 
 ### default arguments
 
-- Now we don't need to use two functions. A default argument is concise and readable. _(javascriptallonge.pdf (source-range-31a4cf47-01009))_
+- Now we don't need to use two functions. A default argument is concise and readable. _(javascriptallonge.pdf (source-range-8eb13d6b-01009))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: Ah. I'd Like to Have an Argument, Please. 22
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00277))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00277))_
 
 > This function has one argument, room , and an empty body. Here's a function with two arguments and an empty body:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00276))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00276))_
 
 ```
 (room) => {}
@@ -84,11 +84,11 @@ What [[javascriptallonge]] covers about argument:
 
 ### Technical frame 2: Ah. I'd Like to Have an Argument, Please. 22
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00279))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00279))_
 
 > I'm sure you are perfectly comfortable with the idea that this function has two arguments, room , and board . What does one do with the arguments? Use them in the body, of course. What do you think this is?
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00278))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00278))_
 
 ```
 (room, board) => {}
@@ -96,11 +96,11 @@ What [[javascriptallonge]] covers about argument:
 
 ### Technical frame 3: Ah. I'd Like to Have an Argument, Please. 22
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00281))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00281))_
 
 > It's a function for calculating the circumference of a circle given the diameter. I read that aloud as 'When applied to a value representing the diameter, this function returns the diameter times 3.14159265.'
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00280))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00280))_
 
 ```
 (diameter) => diameter * 3.14159265
@@ -108,11 +108,11 @@ What [[javascriptallonge]] covers about argument:
 
 ### Technical frame 4: Ah. I'd Like to Have an Argument, Please. 22
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00284))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00284))_
 
 > You won't be surprised to see how to write and apply a function to two arguments:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00283))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00283))_
 
 ```
 ((diameter) => diameter * 3.14159265)(2) //=> 6.2831853
@@ -120,11 +120,11 @@ What [[javascriptallonge]] covers about argument:
 
 ### Technical frame 5: Ah. I'd Like to Have an Argument, Please. 22
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00284))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00284))_
 
 > You won't be surprised to see how to write and apply a function to two arguments:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00286))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00286))_
 
 ```
 ((room, board) => room + board)(800, 150) //=> 950
@@ -132,11 +132,11 @@ What [[javascriptallonge]] covers about argument:
 
 ### Technical frame 6: variables and bindings
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00303))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00303))_
 
 > (x) => (y) => x just looks crazy, as if we are learning English as a second language and the teacher promises us that soon we will be using words like antidisestablishmentarianism . Besides a desire to use long words to sound impressive, this is not going to seem attractive until we find ourselves wanting to discuss the role of the Church of England in 19th century British politics.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00302))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00302))_
 
 ```
 (x) => (y) => x
@@ -144,11 +144,11 @@ What [[javascriptallonge]] covers about argument:
 
 ### Technical frame 7: variables and bindings
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00317))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00317))_
 
 > The value '2' is bound to the name 'x' in the environment.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00309))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00309))_
 
 ```
 ((x) => x)(2) //=> 2
@@ -156,11 +156,11 @@ What [[javascriptallonge]] covers about argument:
 
 ### Technical frame 8: call by sharing
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00331))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00331))_
 
 > 26 Unless the argument is NaN , which isn't equal to anything, including itself . NaN in JavaScript behaves a lot like NULL in SQL.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00330))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00330))_
 
 ```
 (value) => ((ref1, ref2) => ref1 === ref2)(value, value)
@@ -168,11 +168,11 @@ What [[javascriptallonge]] covers about argument:
 
 ### Technical frame 9: higher-order functions
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00565))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00565))_
 
 > In this book, we will be using a looser definition of 'combinator:' Higher-order pure functions that take only functions as arguments and return a function. We won't be strict about using only previously defined combinators in their construction.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00562))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00562))_
 
 ```
 const repeat = (num, fn) => (num > 0) ? (repeat(num - 1, fn), fn(num)) : undefined repeat(3, function (n) { console.log(`Hello ${ n } `) }) //=> 'Hello 1' 'Hello 2' 'Hello 3' undefined
@@ -180,11 +180,11 @@ const repeat = (num, fn) => (num > 0) ? (repeat(num - 1, fn), fn(num)) : undefin
 
 ### Technical frame 10: partial application
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00598))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00598))_
 
 > The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00594))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00594))_
 
 ```
 _.map([1, 2, 3], (n) => n * n) //=> [1, 4, 9]
@@ -192,11 +192,11 @@ _.map([1, 2, 3], (n) => n * n) //=> [1, 4, 9]
 
 ### Technical frame 11: partial application
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00598))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00598))_
 
 > The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00597))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00597))_
 
 ```
 const squareAll = (array) => map(array, (n) => n * n);
@@ -204,11 +204,11 @@ const squareAll = (array) => map(array, (n) => n * n);
 
 ### Technical frame 12: partial application
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00600))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00600))_
 
 > We'll discuss mapWith again. The important thing to see is that partial application is orthogonal to composition, and that they both work together nicely:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00599))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00599))_
 
 ```
 const mapWith = (fn) => (array) => map(array, fn); const squareAll = mapWith((n) => n * n); squareAll([1, 2, 3]) //=> [1, 4, 9]
@@ -216,11 +216,11 @@ const mapWith = (fn) => (array) => map(array, fn); const squareAll = mapWith((n)
 
 ### Technical frame 13: the function keyword
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00613))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00613))_
 
 > arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00610))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00610))_
 
 ```
 const plus = function (a, b) { return arguments[0] + arguments[1]; } plus(2,3) //=> 5
@@ -228,11 +228,11 @@ const plus = function (a, b) { return arguments[0] + arguments[1]; } plus(2,3) /
 
 ### Technical frame 14: the function keyword
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00613))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00613))_
 
 > arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00612))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00612))_
 
 ```
 const args = function (a, b) { return arguments; } args(2,3) //=> { '0': 2, '1': 3 }
@@ -240,11 +240,11 @@ const args = function (a, b) { return arguments; } args(2,3) //=> { '0': 2, '1':
 
 ### Technical frame 15: the function keyword
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00618))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00618))_
 
 > The most common use of the arguments binding is to build functions that can take a variable number of arguments. We'll see it used in many of the recipes, starting off with partial application and ellipses.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00615))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00615))_
 
 ```
 const plus = function () { return arguments[0] + arguments[1]; } plus(2,3) //=> 5
@@ -252,11 +252,11 @@ const plus = function () { return arguments[0] + arguments[1]; } plus(2,3) //=> 
 
 ### Technical frame 16: the function keyword
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00618))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00618))_
 
 > The most common use of the arguments binding is to build functions that can take a variable number of arguments. We'll see it used in many of the recipes, starting off with partial application and ellipses.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00617))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00617))_
 
 ```
 const howMany = function () { return arguments['length']; } howMany() //=> 0 howMany('hello') //=> 1 howMany('sharks', 'are', 'apex', 'predators') //=> 4
@@ -264,11 +264,11 @@ const howMany = function () { return arguments['length']; } howMany() //=> 0 how
 
 ### Technical frame 17: magic names and fat arrows
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00623))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00623))_
 
 > But if we use a fat arrow, arguments will be defined in the outer environment, the one defined with function . And thus arguments[0] will refer to "outer" , not to "inner" :
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00622))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00622))_
 
 ```
 ( function () { return ( function () { return arguments[0]; })('inner'); })('outer') //=> "inner"
@@ -276,11 +276,11 @@ const howMany = function () { return arguments['length']; } howMany() //=> 0 how
 
 ### Technical frame 18: magic names and fat arrows
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00625))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00625))_
 
 > Although it seems quixotic for the two syntaxes to have different semantics, it makes sense when you consider the design goal: Fat arrow functions are designed to be very lightweight and are often used with constructs like mapping or callbacks to emulate syntax.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00624))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00624))_
 
 ```
 ( function () { return (() => arguments[0])('inner'); })('outer') //=> "outer"
@@ -288,11 +288,11 @@ const howMany = function () { return arguments['length']; } howMany() //=> 0 how
 
 ### Technical frame 19: magic names and fat arrows
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00628))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00628))_
 
 > This works just fine, because arguments[0] refers to the 3 we passed to the function row . Our 'fat arrow' function (column) => column * arguments[0] doesn't bind arguments when it's invoked. But if we rewrite row to use the function keyword, it stops working:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00627))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00627))_
 
 ```
 const row = function () { return mapWith( (column) => column * arguments[0], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [3,6,9,12,15,18,21,24,27,30,33,36]
@@ -300,11 +300,11 @@ const row = function () { return mapWith( (column) => column * arguments[0], [1,
 
 ### Technical frame 20: magic names and fat arrows
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00632))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00632))_
 
 > Although this example is clearly unrealistic, there is a general design principle that deserves attention. Sometimes, a function is meant to be used as a Big-F function. It has a name, it is called by different pieces of code, it's a first-class entity in the code.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00630))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00630))_
 
 ```
 const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36,49,64,81,100,121,144]
@@ -312,11 +312,11 @@ const row = function () { return mapWith( function (column) { return column * ar
 
 ### Technical frame 21: Disclaimer
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00662))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00662))_
 
 > As noted above, our partial recipe allows us to create functions that are partial applications of functions that are context aware. We'd need a different recipe if we wish to create partial applications of object methods.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00661))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00661))_
 
 ```
 const callFirst = (fn, larg) => function (...rest) { return fn.call( this , larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call( this , ...rest, rarg); } const greet = (me, you) => `Hello, ${ you } , my name is ${ me } `; const heliosSaysHello = callFirst(greet, 'Helios'); heliosSaysHello('Eartha') //=> 'Hello, Eartha, my name is Helios' const sayHelloToCeline = callLast(greet, 'Celine'); sayHelloToCeline('Eartha') //=> 'Hello, Celine, my name is Eartha'
@@ -324,11 +324,11 @@ const callFirst = (fn, larg) => function (...rest) { return fn.call( this , larg
 
 ### Technical frame 22: Disclaimer
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00665))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00665))_
 
 > We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00666))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00666))_
 
 ```
 const callLeft = (fn, ...args) => (...remainingArgs) => fn(...args, ...remainingArgs); const callRight = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
@@ -336,11 +336,11 @@ const callLeft = (fn, ...args) => (...remainingArgs) => fn(...args, ...remaining
 
 ### Technical frame 23: left-variadic destructuring
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00747))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00747))_
 
 > But we can write our own left-gathering function utility using the same principles without all the tedium:
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00742))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00742))_
 
 ```
 const [first, ...butFirst] = ['why', 'hello', 'there', 'little', 'droid']; first //=> 'why' butFirst //=> ["hello","there","little","droid"]
@@ -348,11 +348,11 @@ const [first, ...butFirst] = ['why', 'hello', 'there', 'little', 'droid']; first
 
 ### Technical frame 24: left-variadic destructuring
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00749))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00749))_
 
 > With leftGather , we have to supply the length of the array we wish to use as the result, and it gathers excess arguments into it from the left, just like leftVariadic gathers excess parameters for a function.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00748))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00748))_
 
 ```
 const leftGather = (outputArrayLength) => { return function (inputArray) { return [inputArray.slice(0, inputArray.length - outputArrayLength + 1)].conc\ at( inputArray.slice(inputArray.length - outputArrayLength + 1) ) } }; const [butLast, last] = leftGather(2)(['why', 'hello', 'there', 'little', 'droid\ ']); butLast //=> ['why', 'hello', 'there', 'little'] last //=> 'droid'
@@ -360,11 +360,11 @@ const leftGather = (outputArrayLength) => { return function (inputArray) { retur
 
 ### Technical frame 25: truthiness and operators
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00779))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00779))_
 
 > Programmers often take advantage of this behaviour to observe that !!(someExpression) will always evaluate to true is someExpression is truthy, and to false if it is not. So in JavaScript (and other languages with similar semantics), when you see something like !!currentUser() , this is an idiom that means 'true if currentUser is truthy.' Thus, a function like currentUser() is free to return null , or undefined , or false if there is no current user.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00778))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00778))_
 
 ```
 !5 //=> false ! undefined //=> true
@@ -372,11 +372,11 @@ const leftGather = (outputArrayLength) => { return function (inputArray) { retur
 
 ### Technical frame 26: default arguments
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-01009))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-01009))_
 
 > Now we don't need to use two functions. A default argument is concise and readable.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-01006))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-01006))_
 
 ```
 const factorial = (n, work = 1) => n === 1 ? work : factorial(n - 1, n * work); factorial(1) //=> 1 factorial(6) //=> 720
@@ -384,11 +384,11 @@ const factorial = (n, work = 1) => n === 1 ? work : factorial(n - 1, n * work); 
 
 ### Technical atom 27
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00239))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00239))_
 
 > We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00237))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00237))_
 
 | entry | content |
 | --- | --- |
@@ -409,7 +409,7 @@ Back to our function. We evaluated this:
 
 ### Technical atom 28
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00564))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00564))_
 
 | entry | content |
 | --- | --- |
@@ -432,7 +432,7 @@ If we were learning Combinatorial Logic, we'd start with the most basic combinat
 
 ### Technical atom 29
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00571))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00571))_
 
 | entry | content |
 | --- | --- |

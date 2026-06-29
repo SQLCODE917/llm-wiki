@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-28
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-important@e657176df7a1c8c2675303b594be56de
+projection_coverage: topic-javascriptallonge-important@370502db2f907250d80376ec81c54511
 ---
 
 # Important
@@ -17,32 +17,32 @@ What [[javascriptallonge]] covers about important:
 
 ### a quick summary of functions and bodies
 
-- One of the important possible statements is a return statement. A return statement accepts any valid JavaScript expression. _(javascriptallonge.pdf (source-range-31a4cf47-00291))_
+- One of the important possible statements is a return statement. A return statement accepts any valid JavaScript expression. _(javascriptallonge.pdf (source-range-8eb13d6b-00291))_
 
 ### const
 
-- JavaScript gives us a way to do that, the const keyword. We'll learn a lot more about const in future chapters, but here's the most important thing we can do with const : _(javascriptallonge.pdf (source-range-31a4cf47-00423))_
+- JavaScript gives us a way to do that, the const keyword. We'll learn a lot more about const in future chapters, but here's the most important thing we can do with const : _(javascriptallonge.pdf (source-range-8eb13d6b-00423))_
 
-- Amazing how such an important idea-naming functions-can be explained en passant in just a few words. That emphasizes one of the things JavaScript gets really, really right: Functions as 'first class entities. ' Functions are values that can be bound to names like any other value, passed as arguments, returned from other functions, and so forth. _(javascriptallonge.pdf (source-range-31a4cf47-00436))_
+- Amazing how such an important idea-naming functions-can be explained en passant in just a few words. That emphasizes one of the things JavaScript gets really, really right: Functions as 'first class entities. ' Functions are values that can be bound to names like any other value, passed as arguments, returned from other functions, and so forth. _(javascriptallonge.pdf (source-range-8eb13d6b-00436))_
 
 ### partial application
 
-- We'll discuss mapWith again. The important thing to see is that partial application is orthogonal to composition, and that they both work together nicely: _(javascriptallonge.pdf (source-range-31a4cf47-00600))_
+- We'll discuss mapWith again. The important thing to see is that partial application is orthogonal to composition, and that they both work together nicely: _(javascriptallonge.pdf (source-range-8eb13d6b-00600))_
 
 ### linear recursion
 
-- Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and composing a solution from the solved portions. _(javascriptallonge.pdf (source-range-31a4cf47-00923))_
+- Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and composing a solution from the solved portions. _(javascriptallonge.pdf (source-range-8eb13d6b-00923))_
 
 
 ## Technical atoms
 
 ### Technical frame 1: const
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00425))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00425))_
 
 > The const keyword introduces one or more bindings in the block that encloses it. It doesn't incur the cost of a function invocation. That's great. Even better, it puts the symbol (like PI ) close to the value ( 3.14159265 ). That's much better than what we were writing.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00424))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00424))_
 
 ```
 (diameter) => { const PI = 3.14159265; return diameter * PI }
@@ -50,11 +50,11 @@ What [[javascriptallonge]] covers about important:
 
 ### Technical frame 2: partial application
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00604))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00604))_
 
 > Wegeneralized composition with the compose combinator. Partial application also has a combinator, which we'll see in the partial recipe.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00602))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00602))_
 
 ```
 const safeSquareAll = mapWith(maybe((n) => n * n));
@@ -62,11 +62,11 @@ const safeSquareAll = mapWith(maybe((n) => n * n));
 
 ### Technical frame 3: partial application
 
-**Context:** _(javascriptallonge.pdf (source-range-31a4cf47-00604))_
+**Context:** _(javascriptallonge.pdf (source-range-8eb13d6b-00604))_
 
 > Wegeneralized composition with the compose combinator. Partial application also has a combinator, which we'll see in the partial recipe.
 
-**Atom:** _(javascriptallonge.pdf (source-range-31a4cf47-00603))_
+**Atom:** _(javascriptallonge.pdf (source-range-8eb13d6b-00603))_
 
 ```
 safeSquareAll([1, null , 2, 3]) //=> [1, null, 4, 9]
