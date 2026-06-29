@@ -38,7 +38,12 @@ def docling_devices() -> tuple[str, ...]:
 
 
 def extract_document_model_isolated(
-    pdf_path: Path, source_locator: str, source_hash: str, device: str
+    pdf_path: Path,
+    source_locator: str,
+    source_hash: str,
+    device: str,
+    page_range: tuple[int, int] | None = None,
+    timeout_seconds: int | None = None,
 ) -> object:
     context = get_context("spawn")
     with TemporaryDirectory(prefix="llmwiki-docling-") as temp_dir:
@@ -51,12 +56,13 @@ def extract_document_model_isolated(
                 source_locator,
                 source_hash,
                 device,
+                page_range,
                 str(output_path),
                 str(error_path),
             ),
         )
         process.start()
-        process.join(_DOCLING_TIMEOUT_SECONDS)
+        process.join(timeout_seconds or _DOCLING_TIMEOUT_SECONDS)
         if process.is_alive():
             process.terminate()
             process.join()
@@ -72,6 +78,7 @@ def _docling_worker(
     source_locator: str,
     source_hash: str,
     device: str,
+    page_range: tuple[int, int] | None,
     output_path: str,
     error_path: str,
 ) -> None:
@@ -79,7 +86,7 @@ def _docling_worker(
         from llmwiki.pdf.docling_extractor import _extract_document_model_in_process
 
         model = _extract_document_model_in_process(
-            Path(pdf_path), source_locator, source_hash, device
+            Path(pdf_path), source_locator, source_hash, device, page_range
         )
         Path(output_path).write_text(document_model_to_json(model), encoding="utf-8")
     except BaseException:

@@ -126,34 +126,77 @@ def test_docling_devices_accept_explicit_retry_order(monkeypatch: pytest.MonkeyP
 
 
 def test_docling_extraction_retries_cpu_after_auto_failure(monkeypatch: pytest.MonkeyPatch) -> None:
-    calls: list[str] = []
+    calls: list[tuple[str, tuple[int, int] | None]] = []
     expected = _model()
 
     def fake_isolated(
-        pdf_path: Path, source_locator: str, source_hash: str, device: str
+        pdf_path: Path,
+        source_locator: str,
+        source_hash: str,
+        device: str,
+        page_range: tuple[int, int] | None = None,
+        timeout_seconds: int | None = None,
     ) -> DocumentModel | _DoclingAttemptFailure:
-        calls.append(device)
+        _ = timeout_seconds
+        calls.append((device, page_range))
         if device == "auto":
             return _DoclingAttemptFailure(device, "killed by signal 11")
         return expected
 
     monkeypatch.setenv("LLMWIKI_DOCLING_DEVICES", "auto,cpu")
+    monkeypatch.setattr(docling_extractor, "_pdf_page_count", lambda _: 1)
     monkeypatch.setattr(docling_extractor, "_extract_document_model_isolated", fake_isolated)
 
     actual = extract_document_model(Path("book.pdf"), "book.pdf", "source-hash")
 
     assert actual == expected
-    assert calls == ["auto", "cpu"]
+    assert calls == [("auto", None), ("auto", (1, 1)), ("cpu", None)]
 
 
 def test_docling_extraction_reports_all_attempt_failures(monkeypatch: pytest.MonkeyPatch) -> None:
     def fake_isolated(
-        pdf_path: Path, source_locator: str, source_hash: str, device: str
+        pdf_path: Path,
+        source_locator: str,
+        source_hash: str,
+        device: str,
+        page_range: tuple[int, int] | None = None,
+        timeout_seconds: int | None = None,
     ) -> DocumentModel | _DoclingAttemptFailure:
-        return _DoclingAttemptFailure(device, f"{device} failed")
+        _ = timeout_seconds
+        detail = f"{device} failed"
+        if page_range is not None:
+            detail = f"{device} failed in {page_range}"
+        return _DoclingAttemptFailure(device, detail)
 
     monkeypatch.setenv("LLMWIKI_DOCLING_DEVICES", "auto,cpu")
+    monkeypatch.setattr(docling_extractor, "_pdf_page_count", lambda _: 1)
     monkeypatch.setattr(docling_extractor, "_extract_document_model_isolated", fake_isolated)
 
-    with pytest.raises(RuntimeError, match="auto: auto failed; cpu: cpu failed"):
+    with pytest.raises(RuntimeError, match="full document failed"):
         extract_document_model(Path("book.pdf"), "book.pdf", "source-hash")
+
+
+def test_docling_extraction_uses_windows_for_large_pdfs(monkeypatch: pytest.MonkeyPatch) -> None:
+    calls: list[tuple[int, int] | None] = []
+
+    def fake_isolated(
+        pdf_path: Path,
+        source_locator: str,
+        source_hash: str,
+        device: str,
+        page_range: tuple[int, int] | None = None,
+        timeout_seconds: int | None = None,
+    ) -> DocumentModel | _DoclingAttemptFailure:
+        _ = timeout_seconds
+        calls.append(page_range)
+        return _model()
+
+    monkeypatch.setenv("LLMWIKI_DOCLING_WINDOW_PAGES", "50")
+    monkeypatch.setenv("LLMWIKI_DOCLING_FULL_PAGE_LIMIT", "100")
+    monkeypatch.setattr(docling_extractor, "_pdf_page_count", lambda _: 120)
+    monkeypatch.setattr(docling_extractor, "_extract_document_model_isolated", fake_isolated)
+
+    actual = extract_document_model(Path("book.pdf"), "book.pdf", "source-hash")
+
+    assert actual == _model()
+    assert calls == [(1, 50), (51, 100), (101, 120)]
