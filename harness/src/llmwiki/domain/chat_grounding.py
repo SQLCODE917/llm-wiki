@@ -250,6 +250,7 @@ def render_grounded_user_message(
     *,
     index_text: str = "",
     search_results: str = "",
+    task_evidence_pack: str = "",
 ) -> str:
     if plan.include_index:
         return (
@@ -257,12 +258,23 @@ def render_grounded_user_message(
         )
     if plan.include_search_results:
         task_guidance = _task_guidance(plan.task_mode)
+        if task_evidence_pack.strip():
+            return (
+                "Initial wiki search results for the question. These are discovery "
+                "hints only. The deterministic task evidence pack below is the "
+                "bounded evidence surface for this task.\n\n"
+                f"{search_results}\n\n"
+                f"{task_guidance}"
+                f"\n\n{task_evidence_pack}\n\n"
+                f"Question: {question}"
+            )
         return (
             "Initial wiki search results for the question. These are discovery "
             "hints, not enough evidence for a substantive answer; read a "
             "relevant page before responding.\n\n"
             f"{search_results}\n\n"
             f"{task_guidance}"
+            "\n\n"
             f"Question: {question}"
         )
     return question
@@ -296,6 +308,10 @@ def _task_guidance(task_mode: ChatTaskMode) -> str:
     if task_mode is ChatTaskMode.EXECUTE_PROCEDURE:
         return (
             "Task intent: execute the relevant procedure, not merely summarize it. "
+            "If submit_procedure_execution is available, your next tool call should "
+            "be submit_procedure_execution with a typed ProcedureExecution built "
+            "from the deterministic task evidence pack. Include every required "
+            "step; use unresolved outputs instead of searching indefinitely. "
             "Read the best procedure page and any linked evidence pages needed for "
             "specific choices, tables, formulas, or constraints. If the user did not "
             "provide choices or random results, make explicit assumptions or use "

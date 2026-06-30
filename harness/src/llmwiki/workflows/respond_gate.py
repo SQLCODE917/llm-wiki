@@ -7,6 +7,7 @@ from forge.tools.respond import respond_tool
 
 from llmwiki.domain.chat_grounding import ChatResponseCitationPolicy
 from llmwiki.store import WikiStoreError
+from llmwiki.workflows.procedure_execution_tools import ProcedureExecutionState
 
 
 def respond_after_wiki_read_tool(
@@ -15,12 +16,24 @@ def respond_after_wiki_read_tool(
     allow_index_response: bool = True,
     require_wiki_read: bool = True,
     require_read_page_citation: bool = False,
+    procedure_execution_state: ProcedureExecutionState | None = None,
+    require_procedure_execution: bool = False,
 ) -> ToolDef:
     """Return respond, gated on reading wiki evidence first."""
 
     base = respond_tool()
 
     def _respond(message: str) -> str:
+        if (
+            require_procedure_execution
+            and procedure_execution_state is not None
+            and not procedure_execution_state.has_valid_execution
+        ):
+            raise WikiStoreError(
+                "Call submit_procedure_execution with a valid ProcedureExecution "
+                "before respond. A procedure execution answer must be validated "
+                "against the deterministic task evidence pack first."
+            )
         if not require_wiki_read:
             return str(base.callable(message=message))
         page_reads = read_tracker - {"index.md"}

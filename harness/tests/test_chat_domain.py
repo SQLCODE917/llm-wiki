@@ -115,6 +115,7 @@ class TestChatGrounding:
             search_results="[[book-procedure-create-character]]",
         )
         assert "Task intent: execute the relevant procedure" in message
+        assert "submit_procedure_execution" in message
         assert "not merely summarize it" in message
         assert "make explicit assumptions" in message
         assert "not a future-tense plan" in message

@@ -20,6 +20,7 @@ from forge.core.runner import WorkflowRunner
 from llmwiki.config import StrictEvidenceMode
 from llmwiki.domain.chat_grounding import (
     ChatEvidenceScope,
+    ChatTaskMode,
     plan_chat_grounding,
     render_grounded_user_message,
 )
@@ -92,6 +93,7 @@ from llmwiki.domain.system_pages import (
     ORPHAN_EXEMPT_PAGES,
     SEMANTIC_LINT_PAGE,
 )
+from llmwiki.domain.task_evidence import build_task_evidence_pack
 from llmwiki.domain.technical_atom_builder import build_technical_atom_catalog
 from llmwiki.domain.technical_atom_io import technical_atom_catalog_to_json
 from llmwiki.domain.technical_atoms import TechnicalAtomCatalog
@@ -133,8 +135,11 @@ _MAX_ITERATIONS = {
     "semantic-lint": 18,
     "pdf-chunk": 24,
     "pdf-integrate": 32,
-    "chat": 12,
+    "chat": 24,
     "chat-file": 14,
+}
+_MAX_TOOL_ERRORS = {
+    "chat": 10,
 }
 _CLAIM_SUPPORT_BATCH_SIZE = 5
 
@@ -183,7 +188,12 @@ _RETRY_NUDGES = {
         "If the hub page and cross-links are in place, call finish_ingest "
         "with your report; otherwise call the next tool you need."
     ),
-    "chat": ("Reply with exactly one tool call. Use respond to deliver your answer to the user."),
+    "chat": (
+        "Reply with exactly one tool call. If submit_procedure_execution is "
+        "available, call submit_procedure_execution next with one step_result "
+        "for every required step; use unresolved outputs instead of searching "
+        "forever. Otherwise use respond to deliver your answer to the user."
+    ),
     "chat-file": (
         "Reply with exactly one tool call. If the durable synthesis is filed "
         "or cannot be supported, call finish_chat_file; otherwise call the "
@@ -708,16 +718,28 @@ class Session:
         grounding_plan = plan_chat_grounding(question, grounded=grounded, has_window=bool(window))
         search_results = ""
         evidence_scope: ChatEvidenceScope | None = None
+        task_evidence_pack_text = ""
+        task_evidence_pack = None
         if grounding_plan.include_search_results:
             pages = self.store.page_texts()
             search_hits = search_pages(pages, question)
             search_results = render_hits(search_hits)
             evidence_scope = ChatEvidenceScope.from_search_hits(pages, search_hits)
+            task_evidence_pack = build_task_evidence_pack(
+                pages,
+                search_hits,
+                task_mode=grounding_plan.task_mode,
+            )
+            if task_evidence_pack is not None:
+                task_evidence_pack_text = task_evidence_pack.render()
         workflow = build_chat_workflow(
             self.store,
             allow_index_response=grounding_plan.allow_index_response,
             require_wiki_read=grounding_plan.require_wiki_read,
             evidence_scope=evidence_scope,
+            task_evidence_pack=task_evidence_pack,
+            require_procedure_execution=task_evidence_pack is not None
+            and grounding_plan.task_mode is ChatTaskMode.EXECUTE_PROCEDURE,
         )
         rendered = workflow.build_system_prompt(schema=self.store.read_schema())
         seed = [Message(MessageRole.SYSTEM, rendered, MessageMeta(MessageType.SYSTEM_PROMPT))]
@@ -735,6 +757,7 @@ class Session:
                 grounding_plan,
                 index_text=self.store.read_index() if grounding_plan.include_index else "",
                 search_results=search_results,
+                task_evidence_pack=task_evidence_pack_text,
             )
         seed.append(Message(MessageRole.USER, message, MessageMeta(MessageType.USER_INPUT)))
         return await self._run(workflow, message, "chat", tag=tag, initial_messages=seed)
@@ -963,6 +986,7 @@ class Session:
             client=self.client,
             context_manager=self.context_manager,
             max_iterations=_MAX_ITERATIONS[op],
+            max_tool_errors=_MAX_TOOL_ERRORS.get(op, 2),
             on_message=writer.on_message if writer else None,
             retry_nudge=_RETRY_NUDGES[op],
         )

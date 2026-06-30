@@ -106,7 +106,9 @@ CHAT_TEMPLATE = _BASE + (
     "historical — "
     "claims and citations in earlier turns are what was said then, not "
     "evidence now. When a prior claim becomes load-bearing for the current "
-    "answer, re-verify it against the wiki's current pages. Deliver every "
+    "answer, re-verify it against the wiki's current pages. When the user asks "
+    "you to execute a procedure and the submit_procedure_execution tool is "
+    "available, submit a typed ProcedureExecution before responding. Deliver every "
     "answer with the respond tool."
 )
 

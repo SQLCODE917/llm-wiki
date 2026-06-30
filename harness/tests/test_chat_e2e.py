@@ -12,10 +12,11 @@ from helpers import wiki_page
 
 from llmwiki.cli import _close_backend_safely, _run_chat
 from llmwiki.config import WikiPaths
-from llmwiki.domain.chat_grounding import ChatEvidenceScope
+from llmwiki.domain.chat_grounding import ChatEvidenceScope, ChatTaskMode
 from llmwiki.domain.chatwindow import QAPair
 from llmwiki.domain.pages import PageMetadata, WikiPage
 from llmwiki.domain.search import SearchHit
+from llmwiki.domain.task_evidence import build_task_evidence_pack
 from llmwiki.runtime.chat_repl import ChatRepl
 from llmwiki.runtime.session import Session
 from llmwiki.store import WikiStore, WikiStoreError
@@ -44,6 +45,47 @@ def _seed_wiki(store: WikiStore) -> None:
             summary="Functions capturing scope.",
             body="A closure captures its defining environment.",
             updated=TODAY,
+        )
+    )
+
+
+def _seed_procedure_wiki(store: WikiStore) -> None:
+    store.write_page(
+        WikiPage(
+            page_metadata=PageMetadata(
+                page_id="book-procedure-create-character",
+                page_kind="procedure",
+                page_family="procedure-guide",
+                summary="Create Character.",
+            ),
+            page_body=(
+                "# Create Character\n\n"
+                "## Procedure Steps\n\n"
+                "1. **Choose Race** (`choose`) - evidence section [[book-choose-race]].\n"
+                "2. **Record Name** (`record`) - evidence section [[book-record-name]].\n"
+            ),
+        )
+    )
+    store.write_page(
+        WikiPage(
+            page_metadata=PageMetadata(
+                page_id="book-choose-race",
+                page_kind="source",
+                page_family="section-reference",
+                summary="Race choices.",
+            ),
+            page_body="# Choose Race\n\nThe race chosen in the worked example is human.",
+        )
+    )
+    store.write_page(
+        WikiPage(
+            page_metadata=PageMetadata(
+                page_id="book-record-name",
+                page_kind="source",
+                page_family="section-reference",
+                summary="Name choice.",
+            ),
+            page_body="# Record Name\n\nNames are a free character choice.",
         )
     )
 
@@ -129,6 +171,65 @@ class TestChatWorkflow:
         assert "write_page" in workflow.tools
         assert "finish_chat_file" in workflow.tools
         assert workflow.required_steps == ["read_page"]
+
+    def test_procedure_execution_requires_valid_submit_before_response(
+        self, store: WikiStore
+    ) -> None:
+        _seed_procedure_wiki(store)
+        pack = build_task_evidence_pack(
+            store.page_texts(),
+            (SearchHit("book-procedure-create-character", 500, "procedure"),),
+            task_mode=ChatTaskMode.EXECUTE_PROCEDURE,
+        )
+        assert pack is not None
+        workflow = build_chat_workflow(
+            store,
+            allow_index_response=False,
+            task_evidence_pack=pack,
+            require_procedure_execution=True,
+        )
+
+        assert "submit_procedure_execution" in workflow.tools
+        assert set(workflow.tools) == {"submit_procedure_execution", "respond"}
+        assert workflow.required_steps == ["submit_procedure_execution"]
+        with pytest.raises(WikiStoreError, match="submit_procedure_execution"):
+            workflow.tools["respond"].callable(message="Created [[book-choose-race]].")
+
+        workflow.tools["submit_procedure_execution"].callable(
+            procedure_id="book-procedure-create-character",
+            assumptions=["Aldis is the chosen character name."],
+            step_results=[
+                {
+                    "sequence": 1,
+                    "title": "Choose Race",
+                    "status": "completed",
+                    "outputs": [
+                        {
+                            "name": "race",
+                            "value": "human",
+                            "support": "evidence",
+                            "evidence_page_ids": ["book-choose-race"],
+                        }
+                    ],
+                },
+                {
+                    "sequence": 2,
+                    "title": "Record Name",
+                    "status": "completed",
+                    "outputs": [
+                        {
+                            "name": "name",
+                            "value": "Aldis",
+                            "support": "assumption",
+                        }
+                    ],
+                },
+            ],
+        )
+        answer = workflow.tools["respond"].callable(
+            message="Created a human named Aldis. [[book-choose-race]]"
+        )
+        assert "human named Aldis" in answer
 
     async def test_grounded_turn_carries_index_so_coverage_answers_work(
         self, store: WikiStore, paths: WikiPaths
@@ -236,6 +337,70 @@ class TestChatTurn:
         current_user = [m for m in fake.sent[0] if m["role"] == "user"][-1]
         assert "Initial wiki search results for the question." in current_user["content"]
         assert "[[closure]]" in current_user["content"]
+
+    async def test_execution_turn_carries_pack_and_accepts_typed_execution(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        _seed_procedure_wiki(store)
+        script = [
+            [
+                ToolCall(
+                    tool="submit_procedure_execution",
+                    args={
+                        "procedure_id": "book-procedure-create-character",
+                        "assumptions": ["Aldis is the chosen character name."],
+                        "step_results": [
+                            {
+                                "sequence": 1,
+                                "title": "Choose Race",
+                                "status": "completed",
+                                "outputs": [
+                                    {
+                                        "name": "race",
+                                        "value": "human",
+                                        "support": "evidence",
+                                        "evidence_page_ids": ["book-choose-race"],
+                                    }
+                                ],
+                            },
+                            {
+                                "sequence": 2,
+                                "title": "Record Name",
+                                "status": "completed",
+                                "outputs": [
+                                    {
+                                        "name": "name",
+                                        "value": "Aldis",
+                                        "support": "assumption",
+                                    }
+                                ],
+                            },
+                        ],
+                    },
+                )
+            ],
+            [
+                ToolCall(
+                    tool="respond",
+                    args={
+                        "message": (
+                            "Created a human named Aldis from the procedure. [[book-choose-race]]"
+                        )
+                    },
+                )
+            ],
+        ]
+        session = _session(store, script, paths)
+
+        answer, _ = await session.chat_turn(
+            "actually create a character", window=(), grounded=True, tag="chat-execute"
+        )
+
+        assert "human named Aldis" in answer
+        fake: FakeClient = session.client
+        first_user = next(m for m in fake.sent[0] if m["role"] == "user")
+        assert "Deterministic task evidence pack" in first_user["content"]
+        assert "submit_procedure_execution" in first_user["content"]
 
 
 class TestChatFile:

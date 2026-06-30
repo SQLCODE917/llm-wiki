@@ -28,6 +28,7 @@ from llmwiki.domain.ingest_profiles import (
 )
 from llmwiki.domain.ingest_route_plan import IngestRouteContext, IngestRoutePlanState
 from llmwiki.domain.semantic_lint import SemanticFinding
+from llmwiki.domain.task_evidence import TaskEvidencePack
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.chat_file_tools import chat_file_write_page_tool
@@ -37,6 +38,10 @@ from llmwiki.workflows.contradiction_tools import record_contradiction_tool
 from llmwiki.workflows.graph_tools import link_orphan_tool
 from llmwiki.workflows.grounding_tools import record_grounding_verdict_tool
 from llmwiki.workflows.ingest_route_tools import plan_pages_tool
+from llmwiki.workflows.procedure_execution_tools import (
+    ProcedureExecutionState,
+    submit_procedure_execution_tool,
+)
 from llmwiki.workflows.respond_gate import respond_after_wiki_read_tool
 from llmwiki.workflows.semantic_lint_tools import record_semantic_finding_tool
 from llmwiki.workflows.tools import (
@@ -144,6 +149,8 @@ def build_chat_workflow(
     allow_index_response: bool = True,
     require_wiki_read: bool = True,
     evidence_scope: ChatEvidenceScope | None = None,
+    task_evidence_pack: TaskEvidencePack | None = None,
+    require_procedure_execution: bool = False,
 ) -> Workflow:
     """Read-only by construction: no write tool exists in this workflow.
 
@@ -154,23 +161,39 @@ def build_chat_workflow(
     a junk search, and the model answered from the junk (recency wins in
     a 14B).
     """
-    seen: set[str] = set()
-    tools = [
-        search_wiki_tool(store),
-        read_index_tool(store, read_tracker=seen),
-        chat_read_page_tool(store, evidence_scope=evidence_scope, read_tracker=seen),
+    seen: set[str] = set(task_evidence_pack.page_ids if task_evidence_pack is not None else ())
+    procedure_execution_state = ProcedureExecutionState()
+    procedure_execution_required = require_procedure_execution and task_evidence_pack is not None
+    if task_evidence_pack is not None and procedure_execution_required:
+        tools = [
+            submit_procedure_execution_tool(
+                store,
+                task_evidence_pack,
+                read_tracker=seen,
+                state=procedure_execution_state,
+            ),
+        ]
+    else:
+        tools = [
+            search_wiki_tool(store),
+            read_index_tool(store, read_tracker=seen),
+            chat_read_page_tool(store, evidence_scope=evidence_scope, read_tracker=seen),
+        ]
+    tools.append(
         respond_after_wiki_read_tool(
             seen,
             allow_index_response=allow_index_response,
             require_wiki_read=require_wiki_read,
             require_read_page_citation=True,
-        ),
-    ]
+            procedure_execution_state=procedure_execution_state,
+            require_procedure_execution=procedure_execution_required,
+        )
+    )
     return Workflow(
         name="chat",
         description="Converse over the wiki (read-only).",
         tools={t.name: t for t in tools},
-        required_steps=[],
+        required_steps=["submit_procedure_execution"] if procedure_execution_required else [],
         terminal_tool="respond",
         system_prompt_template=prompts.CHAT_TEMPLATE,
     )

@@ -15,6 +15,8 @@ INDEX_SKELETON = """# Index
 
 ## Concepts
 
+## Procedures
+
 ## Syntheses
 """
 
