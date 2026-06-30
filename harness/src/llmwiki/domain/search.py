@@ -19,6 +19,12 @@ _ALL_TERMS_WEIGHT = 20
 _BODY_PHRASE_WEIGHT = 200
 _NAME_PHRASE_WEIGHT = 400
 _TERM_COUNT_CAP = 5
+_TASK_QUERY = re.compile(
+    r"\b(how\s+do\s+i|how\s+to|steps?|procedure|workflow|create|make|build|set\s+up)\b",
+    re.IGNORECASE,
+)
+_PROCEDURE_KIND = "page_kind: procedure"
+_PROCEDURE_BOOST = 250
 
 
 @dataclass(frozen=True)
@@ -54,6 +60,8 @@ def search_pages(pages: Mapping[str, str], query: str, limit: int = 8) -> list[S
             score += _BODY_PHRASE_WEIGHT
         if phrase and phrase in normalized_name:
             score += _NAME_PHRASE_WEIGHT
+        if _TASK_QUERY.search(query) and _PROCEDURE_KIND in text:
+            score += _PROCEDURE_BOOST
         if score == 0:
             continue
         hits.append(SearchHit(name=name, score=score, snippet=_snippet(text, terms, phrase)))

@@ -4,7 +4,9 @@ from llmwiki.domain.chat_grounding import (
     ChatEvidenceMode,
     ChatEvidenceScope,
     ChatResponseCitationPolicy,
+    ChatTaskMode,
     plan_chat_grounding,
+    render_grounded_user_message,
 )
 from llmwiki.domain.chatwindow import (
     SEED_ANSWER_CAP_CHARS,
@@ -86,6 +88,53 @@ class TestChatGrounding:
         assert plan.evidence_mode is ChatEvidenceMode.PAGE
         assert plan.require_wiki_read
         assert plan.include_search_results
+
+    def test_how_to_question_explains_procedure(self) -> None:
+        plan = plan_chat_grounding(
+            "how do I create a Sword World RPG character?", grounded=False, has_window=False
+        )
+
+        assert plan.task_mode is ChatTaskMode.EXPLAIN_PROCEDURE
+        message = render_grounded_user_message(
+            "how do I create a Sword World RPG character?",
+            plan,
+            search_results="[[book-procedure-create-character]]",
+        )
+        assert "Task intent: explain the relevant procedure" in message
+        assert "Prefer procedure pages" in message
+
+    def test_creation_request_executes_procedure(self) -> None:
+        plan = plan_chat_grounding(
+            "actually create a Sword World RPG character", grounded=False, has_window=True
+        )
+
+        assert plan.task_mode is ChatTaskMode.EXECUTE_PROCEDURE
+        message = render_grounded_user_message(
+            "actually create a Sword World RPG character",
+            plan,
+            search_results="[[book-procedure-create-character]]",
+        )
+        assert "Task intent: execute the relevant procedure" in message
+        assert "not merely summarize it" in message
+        assert "make explicit assumptions" in message
+        assert "not a future-tense plan" in message
+        assert "one concrete result or explicit unresolved note" in message
+
+    def test_source_material_comparison_uses_page_grounding(self) -> None:
+        plan = plan_chat_grounding(
+            "compare that character with the source material", grounded=False, has_window=True
+        )
+
+        assert plan.evidence_mode is ChatEvidenceMode.PAGE
+        assert plan.include_search_results
+        assert plan.task_mode is ChatTaskMode.SOURCE_AUDIT
+        message = render_grounded_user_message(
+            "compare that character with the source material",
+            plan,
+            search_results="[[book-procedure-create-character]]",
+        )
+        assert "Task intent: audit a previous answer against source material" in message
+        assert "Report matches, mismatches, unsupported fields, and corrections" in message
 
 
 class TestChatEvidenceScope:

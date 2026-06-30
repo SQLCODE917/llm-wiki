@@ -17,6 +17,7 @@ _FOCUSED_PAGE_FAMILIES = frozenset(
         "source-summary",
         "section-reference",
         "topic-concept",
+        "procedure-guide",
         "entity-profile",
         "cross-source-synthesis",
     }
@@ -30,11 +31,19 @@ class ChatEvidenceMode(StrEnum):
     CONVERSATION = "conversation"
 
 
+class ChatTaskMode(StrEnum):
+    NONE = "none"
+    EXPLAIN_PROCEDURE = "explain-procedure"
+    EXECUTE_PROCEDURE = "execute-procedure"
+    SOURCE_AUDIT = "source-audit"
+
+
 @dataclass(frozen=True)
 class ChatGroundingPlan:
     evidence_mode: ChatEvidenceMode
     include_index: bool
     include_search_results: bool
+    task_mode: ChatTaskMode = ChatTaskMode.NONE
 
     @property
     def allow_index_response(self) -> bool:
@@ -190,6 +199,28 @@ _CONVERSATION_FOLLOWUP = re.compile(
     re.IGNORECASE,
 )
 
+_PROCEDURE_EXPLANATION = re.compile(
+    r"\b(how\s+do\s+i|how\s+to|steps?|procedure|workflow|process)\b",
+    re.IGNORECASE,
+)
+
+_PROCEDURE_EXECUTION = re.compile(
+    r"\b("
+    r"actually\s+(create|make|build|generate|run|do)|"
+    r"(create|make|build|generate)\s+(?:a|an|the|new)\b|"
+    r"run\s+(?:the\s+)?(procedure|workflow|process)|"
+    r"walk\s+through\s+(creating|making|building|generating)"
+    r")\b",
+    re.IGNORECASE,
+)
+
+_SOURCE_AUDIT = re.compile(
+    r"\b(compare|check|verify|validate|audit|match)\b.*\b("
+    r"source\s+material|source|sources|evidence|wiki\s+evidence"
+    r")\b",
+    re.IGNORECASE,
+)
+
 
 def plan_chat_grounding(question: str, *, grounded: bool, has_window: bool) -> ChatGroundingPlan:
     if _is_catalog_question(question):
@@ -197,6 +228,7 @@ def plan_chat_grounding(question: str, *, grounded: bool, has_window: bool) -> C
             evidence_mode=ChatEvidenceMode.CATALOG_OR_PAGE,
             include_index=True,
             include_search_results=False,
+            task_mode=_task_mode(question),
         )
     if has_window and _is_conversation_followup(question):
         return ChatGroundingPlan(
@@ -208,6 +240,7 @@ def plan_chat_grounding(question: str, *, grounded: bool, has_window: bool) -> C
         evidence_mode=ChatEvidenceMode.PAGE,
         include_index=False,
         include_search_results=True,
+        task_mode=_task_mode(question),
     )
 
 
@@ -223,11 +256,13 @@ def render_grounded_user_message(
             f"The wiki's index - the catalog of every page:\n\n{index_text}\n\nQuestion: {question}"
         )
     if plan.include_search_results:
+        task_guidance = _task_guidance(plan.task_mode)
         return (
             "Initial wiki search results for the question. These are discovery "
             "hints, not enough evidence for a substantive answer; read a "
             "relevant page before responding.\n\n"
             f"{search_results}\n\n"
+            f"{task_guidance}"
             f"Question: {question}"
         )
     return question
@@ -235,9 +270,58 @@ def render_grounded_user_message(
 
 def _is_catalog_question(question: str) -> bool:
     normalized = " ".join(question.lower().split())
+    if _is_source_audit(normalized):
+        return False
     return _CATALOG_TERMS.search(normalized) is not None
 
 
 def _is_conversation_followup(question: str) -> bool:
     normalized = " ".join(question.lower().split())
     return _CONVERSATION_FOLLOWUP.search(normalized) is not None
+
+
+def _task_mode(question: str) -> ChatTaskMode:
+    normalized = " ".join(question.lower().split())
+    if _is_source_audit(normalized):
+        return ChatTaskMode.SOURCE_AUDIT
+    asks_for_explanation = _PROCEDURE_EXPLANATION.search(normalized) is not None
+    if _PROCEDURE_EXECUTION.search(normalized) and not asks_for_explanation:
+        return ChatTaskMode.EXECUTE_PROCEDURE
+    if asks_for_explanation:
+        return ChatTaskMode.EXPLAIN_PROCEDURE
+    return ChatTaskMode.NONE
+
+
+def _task_guidance(task_mode: ChatTaskMode) -> str:
+    if task_mode is ChatTaskMode.EXECUTE_PROCEDURE:
+        return (
+            "Task intent: execute the relevant procedure, not merely summarize it. "
+            "Read the best procedure page and any linked evidence pages needed for "
+            "specific choices, tables, formulas, or constraints. If the user did not "
+            "provide choices or random results, make explicit assumptions or use "
+            "source-provided worked examples; label those assumptions in the answer. "
+            "Do not fill missing table or formula details from memory; when the "
+            "needed rule detail is not available in the read wiki pages, mark that "
+            "field unresolved instead of inventing it. Return a completed procedure "
+            "output, not a future-tense plan: include one concrete result or "
+            "explicit unresolved note for each procedure step. Cite the wiki pages "
+            "read.\n\n"
+        )
+    if task_mode is ChatTaskMode.SOURCE_AUDIT:
+        return (
+            "Task intent: audit a previous answer against source material. Use the "
+            "conversation history to identify the answer being checked, then read "
+            "the procedure or evidence pages cited in that answer before responding. "
+            "Report matches, mismatches, unsupported fields, and corrections with "
+            "wiki page citations.\n\n"
+        )
+    if task_mode is ChatTaskMode.EXPLAIN_PROCEDURE:
+        return (
+            "Task intent: explain the relevant procedure. Prefer procedure pages "
+            "when present, and cite the wiki pages read.\n\n"
+        )
+    return ""
+
+
+def _is_source_audit(normalized_question: str) -> bool:
+    return _SOURCE_AUDIT.search(normalized_question) is not None

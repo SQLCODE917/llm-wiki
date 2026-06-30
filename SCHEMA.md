@@ -33,6 +33,8 @@ The index and log formats below are also enforced in harness code
   - `source` — summary of one raw source; named after the source.
   - `entity` — a person, place, organization, system, or thing.
   - `concept` — an idea, theme, claim, or recurring pattern.
+  - `procedure` — an ordered task guide with steps, decision points,
+    table/formula references, and completion checks.
   - `synthesis` — cross-source analysis, comparisons, answers worth keeping.
 - Link to other pages inline with `[[page-id]]`. Link liberally — links to
   pages that do not exist yet mark pages worth creating.
@@ -137,13 +139,15 @@ as source evidence or as existing wiki coverage.
 3. Build the claim ledger. The ledger is the source of truth for projection:
    usable claims, technical atoms, source ranges, confidence, and review
    findings live there before any page is written.
-4. Build the section plan and topic index from the ledger. Categories and
-   topics should emerge from source structure, source terminology, and observed
-   claim/atom clusters, not source-specific trigger-word lists.
+4. Build the section plan, topic index, and procedure index from the ledger.
+   Categories, topics, and task guides should emerge from source structure,
+   source terminology, observed claim/atom clusters, ordered steps, decision
+   points, and table/formula dependencies, not source-specific trigger-word
+   lists.
 5. Project source-local wiki pages from those artifacts: the source hub,
-   section pages, topic pages, source coverage, and projection coverage. Dense
-   navigation comes from `category_path`, `domain`, source-backed links, and
-   explicit `From [[source-page]]` backlinks.
+   section pages, topic pages, procedure pages, source coverage, and projection
+   coverage. Dense navigation comes from `category_path`, `domain`,
+   source-backed links, and explicit `From [[source-page]]` backlinks.
 6. Write pages, index entries, generated graph/candidate artifacts, and log
    entries through the harness. Ordinary ingest does not ask the model to invent
    page targets; model-authored `write_page` remains for chat filing,
@@ -170,14 +174,22 @@ schema wins.
 ### query
 
 1. For content questions, search the wiki (`search_wiki`), then read the
-   relevant pages. For questions about the wiki itself or its coverage,
-   `read_index` is the relevant wiki document.
-2. Answer from wiki content with page and source citations.
-3. If the answer is a new synthesis worth keeping (a comparison, an analysis,
+   relevant pages. For task questions ("how do I...", setup, creation,
+   workflow, or ordered-use questions), prefer `procedure` pages when present.
+   For questions about the wiki itself or its coverage, `read_index` is the
+   relevant wiki document.
+2. If the user asks how to perform a task, explain the procedure from the
+   procedure page. If the user asks you to perform, create, generate, build, or
+   run the task, apply the procedure: state any assumptions for missing choices
+   or random results, use source-provided worked examples when that is the most
+   grounded option, and return the concrete output rather than only restating
+   the steps.
+3. Answer from wiki content with page and source citations.
+4. If the answer is a new synthesis worth keeping (a comparison, an analysis,
    a connection not yet recorded), file it with `write_page` (`page_kind`
    `synthesis`) before responding. Do not write pages for simple coverage,
    status, or catalog answers.
-4. Call `respond` with the answer.
+5. Call `respond` with the answer.
 
 ### chat-file
 

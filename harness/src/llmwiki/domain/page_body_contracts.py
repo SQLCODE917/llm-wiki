@@ -101,6 +101,17 @@ def default_page_body_contracts() -> tuple[PageBodyContract, ...]:
             required_uncertainty_policy="preserve-source-uncertainty",
         ),
         PageBodyContract(
+            contract_id="procedure-page",
+            match_page_kinds=("procedure",),
+            required_sections=("Goal", "Procedure Steps", "Source Trail"),
+            required_markdown_shape="ordered-steps",
+            max_words=650,
+            max_copied_ngram_ratio=0.80,
+            required_link_policy="planned-related-pages",
+            required_citation_policy="all-raw-sources",
+            required_uncertainty_policy="preserve-source-uncertainty",
+        ),
+        PageBodyContract(
             contract_id="synthesis-page",
             match_page_kinds=("synthesis",),
             required_markdown_shape="prose",
@@ -118,6 +129,7 @@ def default_page_body_contract_by_page_kind() -> tuple[tuple[str, str], ...]:
         ("source", "source-summary"),
         ("entity", "entity-page"),
         ("concept", "concept-page"),
+        ("procedure", "procedure-page"),
         ("synthesis", "synthesis-page"),
     )
 

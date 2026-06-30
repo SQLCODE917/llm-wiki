@@ -211,7 +211,7 @@
 - [[javascriptallonge-section-yes-consider-this-variation-tortoises-hares-and-teleporting-turtles-091ad917]] — Yes. Consider this variation: / Tortoises, Hares, and Teleporting Turtles: 13 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
 - [[mit8-01scs22-chapter2]] — MIT 8.01SC Physics I: Classical Mechanics, Chapter 2
 - [[mit8-01scs22-chapter2-document]] — Document from raw/mit8_01scs22_chapter2.pdf.
-- [[sword-world-rpg-complete-edition]] — Claim-ledger projection (history): 12343 usable entries, 4708 technical atoms, 1304 needs-review, 1246 linked page(s); write decision write-with-review-work.
+- [[sword-world-rpg-complete-edition]] — Claim-ledger projection (history): 12343 usable entries, 4708 technical atoms, 1304 needs-review, 1247 linked page(s); write decision write-with-review-work.
 - [[sword-world-rpg-complete-edition-section-1-2-races-56190ca1]] — 1.2 Races: 39 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-1-2-races-elf-d52481b7]] — 1.2 Races / 【 Elf 】: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-1-2-races-grassrunner-1b7187c6]] — 1.2 Races / 【 Grassrunner 】: 19 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -1558,6 +1558,9 @@
 - [[sword-world-rpg-complete-edition-underworld-creature]] — Underworld Creature: 65 statement(s) and 142 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-weapon]] — Weapon: 9 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-weapon-critical]] — 《 Weapons Cannot Critical 》: 15 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+
+## Procedures
+- [[sword-world-rpg-complete-edition-procedure-create-character]] — Create Character: 9 ordered step(s), 31 decision point(s), and 55 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 
 ## Syntheses
 - [[cross-source-synthesis]] — Cross-source synthesis index: 0 shared topics.
