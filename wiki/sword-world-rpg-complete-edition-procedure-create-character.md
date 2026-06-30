@@ -9,7 +9,7 @@ domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
 aliases: create-character, character-creation
-projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-create-character@2bcd544308d9cdaee33ac506514666f1
+projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-create-character@ad0189db7636d2b859d9ee1016469f19
 ---
 
 # Create Character
@@ -70,18 +70,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Tables And Formulas
 
-- `rule`: If they were raised by elves, there is a restriction that they cannot acquire the priest skill. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00319))_
-- `rule`: Once you've chosen a race, you can determine your ability scores. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00324))_
 - `formula`: Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00325))_
-- `formula`: Table 1-3: Determining Sub-Ability Scores _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00358))_
 - `formula`: Table 1-4: Average Ability Scores by Race _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00414))_
-- `formula`: Table 1-5: Backgrounds _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00437))_
-- `formula`: 9+7= 16 _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00505))_
-- `formula`: 7+5= 12 _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00507))_
-- `formula`: 5+8= 13 _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00509))_
-- `formula`: 6+8= 14 _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00511))_
-- `formula`: 8+10= 18 _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00513))_
-- `formula`: 10+4= _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00515))_
+- `rule`: If the player's background is merchant/scholar (roll 8), they must choose either 3rd level in the merchant skill or 3rd  _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00528))_
+- `formula`: Table 1-6: Starting Experience by Race _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00529))_
+- `rule`: For example, if you do not have the ranger skill and you want to acquire 2 levels in ranger at once, you must spend 500  _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00618))_
+- `rule`: If you have enough experience points, you can acquire multiple skills. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00619))_
+- `formula`: Table 1-7: Experience Points by Skill (at Character Creation) _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00625))_
+- `formula`: Please determine how much money you have by following the instructions on Table 1-5: Backgrounds or Table 1-6: Starting  _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00661))_
+- `rule`: When buying weapons and armor, one must be aware of their required strength . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00803))_
+- `rule`: Therefore, if the required strength of the weapon you're buying on Table 1-8: Weapons does not match your character's st _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00806))_
+- `formula`: 14 (required strength) x 20 + 40 = 320. Prices are in gamels ( G ). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00945))_
+- `rule`: If the equipment has both unrestricted and restricted skills, please understand that your equipment must conform to the  _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00948))_
 
 ## Completion Check
 

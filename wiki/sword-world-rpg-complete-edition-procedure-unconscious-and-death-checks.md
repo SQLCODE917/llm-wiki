@@ -2,14 +2,14 @@
 page_id: sword-world-rpg-complete-edition-procedure-unconscious-and-death-checks
 page_kind: procedure
 page_family: procedure-guide
-summary: Complete Unconscious and Death Checks: 4 ordered step(s), 15 decision point(s), and 8 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Complete Unconscious and Death Checks: 4 ordered step(s), 15 decision point(s), and 9 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
 aliases: complete-unconscious-and-death-checks, unconscious-and-death-checks
-projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-unconscious-and-death-checks@3a5f1b1486ed14cb468e9307c385ae5e
+projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-unconscious-and-death-checks@cf24f3c7a60728e9183d065f587ad56a
 ---
 
 # Unconscious and Death Checks
@@ -22,7 +22,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Procedure Steps
 
-1. **Adventurer Death Checks** (`step`) - evidence section [[sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-4-9-1-adventurer-death-checks-a33556dd]].
+1. **Adventurer Death Checks** (`validate`) - evidence section [[sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-4-9-1-adventurer-death-checks-a33556dd]].
    - Any adventurer who falls to 0 or negative life force is now at risk of dying . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02321))_
    - If the character's life force is negative , the negative amount will be used as a penalty . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02322))_
    - The baseline score is life force resistance (adventurer level + life force bonus) and the target score is 7 . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02322))_
@@ -52,11 +52,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Tables And Formulas
 
-- `rule`: You must roll the dice to determine if your character survives. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02321))_
 - `formula`: life force resistance + 2D - (damage applied beyond life force) ≥ 7 → survival _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02323))_
 - `rule`: Ducard II, with a life force of -4 , must make a death check . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02326))_
 - `rule`: Characters with 0 or negative life force must make a death check every hour . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02330))_
 - `rule`: In one hour , they must make another death check. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02335))_
+- `rule`: If left untreated, they must make another death check after 1 hour , and _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02347))_
+- `rule`: You must roll the dice to determine if your character survives. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02321))_
 - `rule`: Monsters with 0 or negative life points must also make a check to see if they live or die. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02338))_
 - `rule`: If a character does not want to kill their opponent, they can declare mercy . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02343))_
 - `rule`: You must declare mercy before you make a hit check for your attack. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02345))_

@@ -2,14 +2,14 @@
 page_id: sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor
 page_kind: procedure
 page_family: procedure-guide
-summary: Complete Excellent Weapons and Armor: 4 ordered step(s), 15 decision point(s), and 11 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Complete Excellent Weapons and Armor: 4 ordered step(s), 15 decision point(s), and 14 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
 aliases: complete-excellent-weapons-and-armor, excellent-weapons-and-armor
-projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor@d0264293b74b63c5c945fbef68c086c5
+projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor@96e4537016d8e9a1debf8f5874d2bc1c
 ---
 
 # Excellent Weapons and Armor
@@ -54,15 +54,16 @@ From [[sword-world-rpg-complete-edition]].
 
 - `rule`: Also, even if you search all over Alecrast, you will usually only find one with a required strength up to 5 lower than u _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02357))_
 - `rule`: However, if you want one of higher quality, you must go to a larger town. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02358))_
-- `rule`: If they fail, then unless they roll double ones, they will continue to remain unconscious. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02361))_
+- `table`: These high-quality weapons and armor  can  be  expensive.  Their  price increases  by 20% for  every 1 required strength _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02359))_
 - `rule`: Whenever an adventurer declares that their attack on a monster is a mercy, that monster will always remain alive. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02362))_
 - `rule`: Magical weapons can deal damage to monsters that normal weapons cannot harm. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02378))_
-- `rule`: If you wear +1 magical armor, you gain +1 to evasion speed and damage reduction. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02382))_
-- `rule`: Even if it is magical, if it is metal armor, a shaman cannot wear it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02383))_
-- `rule`: Mithril silver is itself a mineral imbued with magic, and when processed, it gains power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02388))_
 - `rule`: Mithril silver weapons can deal damage to monsters that normal weapons cannot harm. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02394))_
 - `rule`: Mithril silver weapons and armor are never , if ever, placed in shops or traded for money. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02397))_
-- `rule`: Was this crown not to display all the colors of the world?!" It is said that Somska answered without changing the expres _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02409))_
+- `rule`: You must declare mercy before you make a hit check for your attack. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02345))_
+- `rule`: If left untreated, they must make another death check after 1 hour , and _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02347))_
+- `rule`: If they fail, then unless they roll double ones, they will continue to remain unconscious. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02361))_
+- `rule`: If you wear +1 magical armor, you gain +1 to evasion speed and damage reduction. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02382))_
+- `rule`: Even if it is magical, if it is metal armor, a shaman cannot wear it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02383))_
 
 ## Completion Check
 

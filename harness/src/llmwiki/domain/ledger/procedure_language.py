@@ -12,7 +12,10 @@ _ACTION_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
     ("allocate", re.compile(r"\b(spend|spending|allocate|increase|assign)\b", re.I)),
     ("acquire", re.compile(r"\b(purchase|purchasing|buy|acquire|get|obtain)\b", re.I)),
     ("record", re.compile(r"\b(write|record|fill|filling|note)\b", re.I)),
-    ("validate", re.compile(r"\b(check|verify|confirm|ensure|restrict|restriction)\b", re.I)),
+    (
+        "validate",
+        re.compile(r"\b(check|checks|verify|confirm|ensure|restrict|restriction)\b", re.I),
+    ),
     ("apply", re.compile(r"\b(apply|use|using)\b", re.I)),
     ("finalize", re.compile(r"\b(finalize|finish|complete)\b", re.I)),
 )

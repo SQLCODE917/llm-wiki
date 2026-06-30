@@ -211,7 +211,7 @@
 - [[javascriptallonge-section-yes-consider-this-variation-tortoises-hares-and-teleporting-turtles-091ad917]] — Yes. Consider this variation: / Tortoises, Hares, and Teleporting Turtles: 13 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
 - [[mit8-01scs22-chapter2]] — MIT 8.01SC Physics I: Classical Mechanics, Chapter 2
 - [[mit8-01scs22-chapter2-document]] — Document from raw/mit8_01scs22_chapter2.pdf.
-- [[sword-world-rpg-complete-edition]] — Claim-ledger projection (history): 12343 usable entries, 4708 technical atoms, 1304 needs-review, 1256 linked page(s); write decision write-with-review-work.
+- [[sword-world-rpg-complete-edition]] — Claim-ledger projection (history): 12343 usable entries, 4708 technical atoms, 1304 needs-review, 1251 linked page(s); write decision write-with-review-work.
 - [[sword-world-rpg-complete-edition-section-1-2-races-56190ca1]] — 1.2 Races: 39 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-1-2-races-elf-d52481b7]] — 1.2 Races / 【 Elf 】: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-1-2-races-grassrunner-1b7187c6]] — 1.2 Races / 【 Grassrunner 】: 19 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -1562,14 +1562,9 @@
 ## Procedures
 - [[sword-world-rpg-complete-edition-procedure-attacks-from-characters-against-characters]] — Complete Attacks From Characters Against Characters: 2 ordered step(s), 8 decision point(s), and 14 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-procedure-create-character]] — Create Character: 9 ordered step(s), 31 decision point(s), and 55 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-dark-magic]] — Complete Dark Magic: 3 ordered step(s), 30 decision point(s), and 166 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-difficulty-checks]] — Complete Difficulty Checks: 3 ordered step(s), 17 decision point(s), and 5 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-dragon-roar-magic]] — Complete Dragon Roar Magic: 2 ordered step(s), 17 decision point(s), and 146 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor]] — Complete Excellent Weapons and Armor: 4 ordered step(s), 15 decision point(s), and 11 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-handling-monster-special-abilities]] — Complete Handling Monster Special Abilities: 2 ordered step(s), 33 decision point(s), and 26 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-rules-for-destroying-structures]] — Complete Rules for Destroying Structures: 3 ordered step(s), 24 decision point(s), and 93 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-rules-regarding-language]] — Complete Rules Regarding Language: 5 ordered step(s), 6 decision point(s), and 5 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-unconscious-and-death-checks]] — Complete Unconscious and Death Checks: 4 ordered step(s), 15 decision point(s), and 8 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-procedure-difficulty-checks]] — Complete Difficulty Checks: 3 ordered step(s), 17 decision point(s), and 7 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor]] — Complete Excellent Weapons and Armor: 4 ordered step(s), 15 decision point(s), and 14 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-procedure-unconscious-and-death-checks]] — Complete Unconscious and Death Checks: 4 ordered step(s), 15 decision point(s), and 9 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 
 ## Syntheses
 - [[cross-source-synthesis]] — Cross-source synthesis index: 0 shared topics.
