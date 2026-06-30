@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-2a0224d4@48dd376767b9b833d9af28128618dda6
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-2a0224d4@c5ad2cdc5ad4d0e20d75ef31c3907c9b
 ---
 
 # 《 Monster Level 》
@@ -17,6 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-13-2-1-6e762209]] - broader source section: 13.2.1
+- [[sword-world-rpg-complete-edition-monster-level]] - topic hub: opens the topic page for Monster Level
 
 ## Statements
 

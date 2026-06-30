@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-6-fd2780a9
 page_kind: source
-summary: Chapter 6:: 159 source-backed entries and 29 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 6:: 157 source-backed entries and 28 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-fd2780a9@85a392c7e6b35bd05fbc68ae5d70381e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-fd2780a9@f3b4fd3348c0b358362c5a3a318a5a72
 ---
 
 # Chapter 6:
@@ -402,45 +402,3 @@ From [[sword-world-rpg-complete-edition]].
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05248))_
 
 > Table 6-4: Determining High Jump Target Scores
-
-### Technical atom 28
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11501))_
-
-> Actions that characters in a grapple can take are limited to the following.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11502))_
-
-| Attack | with | a | dagger, | barehanded (claws, talons), | cestus, etc. If | a monster has | fangs, | it | can | also | bite. | Opponents have a -2 penalty to evasion. |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Strangle your opponent barehanded or with a garrote. Opponents have a -2 penalty to evasion. Once strangling, the strangler can automatically deal damage every round. If you're barehanded, strike power | is | 0 | (critical | target | 12), | and | if you're using a garrote, strike power is 10 (critical target 10). Only adventurer level can reduce strangling damage. |  |  |  |  |  |
-| If | you're | being | strangled, | the only thing you can do in the rounds onward is attempt to break free. To resolve breaking | free, | the | one | being | strangled must make a success roll using adventurer level + strength bonus as | the baseline score, while the strangler must make one using fi ghter/thief skill level + strength | bonus . | If |
-| Also, | even | if | your | character | doesn't suffer damage, if or she remains strangled for a number of rounds equal to his or her life force , life force will immediately fall to 0, he or she will fall unconscious , | and | you'll | need | to | make | a death check . |  |
-| However, you cannot attack monsters that don't breathe (undead, etc.), monsters that are much larger than your character (ogres, etc.), or those that wear metal armor , | by | strangling. | Y ou | cannot deal damage | to | these, nor can you suffocate them. |  |  |  |  |  |  |
-| Use your strength and weight to pin down your opponent. To resolve this, the one attempting to pin down must make a success roll using fi ghter/thief skill level + | strength | bonus as | the | baseline | score, while | the | one | resisting | must | make | one using adventurer level + strength bonus . If the pinner's is greater, the pin | is successful. |
-| Once pinning, the pinner will automatically continue in that state and can perform normal attacks (of course, weapons | are | restricted). | However, | the one being pinned can attempt to break free. At this time, please make the same check. |  |  |  |  |  |  |  |  |
-| Even | while | grappling, | you | can | use holy magic so long as you can speak. It's not possible while being strangled , but if you're | merely | being pinned | down , | you can use | holy | magic. | Common |
-| Ancient magic, spirit magic, | and spellsongs cannot be used. |  |  |  |  |  |  |  |  |  |  |  |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-1. Normal Attack
-Attack  with  a  dagger,  barehanded (claws, talons),  cestus, etc. If  a monster has  fangs,  it  can  also  bite.  Opponents have a -2 penalty to evasion.
-2. Strangle/Continue to Strangle/Escape
-Strangle your opponent barehanded or with a garrote. Opponents have a -2 penalty to evasion. Once strangling, the strangler can automatically deal damage every round. If you're barehanded, strike power  is  0  (critical  target  12),  and  if you're using a garrote, strike power is 10 (critical target 10). Only adventurer level can reduce strangling damage.
-If  you're  being  strangled,  the only thing you can do in the rounds onward is attempt to break free. To resolve breaking  free,  the  one  being  strangled must make a success roll using adventurer level + strength bonus as  the baseline score, while the strangler must make one using fi ghter/thief skill level + strength  bonus .  If  the  final  score  of  the one trying to break free is greater, or if there's a tie, he or she will escape. While being  strangled,  you  cannot  make  any sound at all, so you cannot use magic.
-Also,  even  if  your  character  doesn't suffer damage, if or she remains strangled for a number of rounds equal to his or her life force , life force will immediately fall to 0, he or she will fall unconscious ,  and  you'll  need  to  make  a death check .
-You must make a death check every round so long as the strangling continues, even if you do not suffer any damage.
-However, you cannot attack monsters that don't breathe (undead, etc.), monsters that are much larger than your character (ogres, etc.), or those that wear metal armor ,  by  strangling.  Y ou  cannot deal damage  to  these, nor can you suffocate them.
-3. Pin Down
-Use your strength and weight to pin down your opponent. To resolve this, the one attempting to pin down must make a success roll using fi ghter/thief skill level +  strength  bonus as  the  baseline  score, while  the  one  resisting  must  make  one using adventurer level + strength bonus . If the pinner's is greater, the pin  is successful.
-Once pinning, the pinner will automatically continue in that state and can perform normal attacks (of course, weapons  are  restricted).  However,  the one being pinned can attempt to break free. At this time, please make the same check.
-4. Using Holy Magic or Common Runes
-Even  while  grappling,  you  can  use holy magic so long as you can speak. It's not possible while being strangled , but if you're  merely  being pinned  down ,  you can use  holy  magic.  Common  runes require you to not only be able to speak, but to also be able to use a catalyst. It's usually a ring, so you can use it.
-Ancient magic, spirit magic,  and spellsongs cannot be used.
-5. Escape from Grapple
-```
-
-</details>

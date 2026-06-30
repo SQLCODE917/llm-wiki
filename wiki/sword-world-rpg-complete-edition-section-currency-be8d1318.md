@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-currency-be8d1318
 page_kind: source
-summary: Currency: 124 source-backed entries and 51 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Currency: 97 source-backed entries and 51 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-currency-be8d1318@edead465115ace376bf88f3941697095
+projection_coverage: section-sword-world-rpg-complete-edition-section-currency-be8d1318@0de255811a1c873f7b4ba430115860d7
 ---
 
 # Currency
@@ -40,32 +40,11 @@ From [[sword-world-rpg-complete-edition]].
 - This game will continue to receive further support through Fujimi Shobo's Dragon Magazine and RPG Dragon Magazine. Please make use of these two magazines to enhance your gaming experience. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12037))_
 - While the author of this book is listed as "Miyuki Kiyomatsu/Group SNE," this means that I handled the main work such as organization, editing, and final checks, while the various manuscripts were, of course, collaboratively written by Group SNE members, including Ryo Mizuno and Hiroshi Yamamoto. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12038))_
 - On the table, "D" stands for dice . 1D stands for one die , 2D stands for two dice , and 1/2D stands for half the result of one dice (rounded up) . In addition, a notation such as 1D+6 means to roll one dice and add 6 to the result . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12444))_
-- Note) On the table, expansion rate is the multiplier for mental power consumed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13003))_
-- When you cast a spell by consuming that multiplied amount of mental power, multiply the number in area expansion length or volume expansion length by the number (radius, side) that represents the spell's area of effect , and the result will be the spell's area . For spells cast on a flat surface, use the number in the area expansion length column, and for spells cast into space, use the number in the volume expansion length column. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13004))_
-- For example, when you cast the ancient magic Light , whose area is A space with a 10 meter radius , by consuming double the mental power, the resulting area will be a spherical space with a radius of 10 x 1.3 = 13 meters . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13005))_
-- If you have the skill, it's almost a sure-fire task. Even amateurs can be successful. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13013))_
-- Almost guaranteed if you have the skill. Even amateurs have a greater chance of success. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13016))_
-- If you have the skill, there is a high probability of success. For amateurs, the risk of failure is greater. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13022))_
-- If you have the skill, you'll succeed 2 out of 3 times, but if you're an amateur, you'll fail 2 out of 3 times. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13025))_
-- If you're a pro in that field, you'll most likely succeed, but if you only have the skill, there's a greater risk of failure. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13031))_
-- Amateurs should stay away from it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13032))_
-- It's possible with a little luck if you're someone who's only dabbled. Even pros can fail due to a little bad luck. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13038))_
-- A simple task for the world's greatest expert. At pro level, failure is quite possible. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13041))_
-- Even if you're a master, there is no guarantee that you'll succeed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13047))_
-- Even the greatest master is subject to the possibility of failure. It is best not to expect success at pro level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13050))_
-- Even a master cannot guarantee success. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13053))_
-- You can't blame a master even if they fail. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13056))_
-- Even if you're a master, the probability of failure is high. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13062))_
-- This is a task that will go down in history if successful. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13065))_
-- However, if alternative senses (smell, hearing, etc.) are developed to some extent _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13077))_
 - This is a free, unofficial, fan-based translation. Please support original creators by buying Sword World books and supplements. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13873))_
 - Because this has been achieved, we now feel a deep sense of accomplishment, thinking "we've finally made it this far." _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12033))_
 - It is precisely because we have continued creating Sword World RPG for 8 years, and because there have been people who played it, that we were able to accumulate this much data. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12033))_
 - While the author of this book is listed as "Miyuki Kiyomatsu/Group SNE," this means that I handled the main work such as organization, editing, and final checks, while the various manuscripts were, of course, collaboratively written by Group SNE members, including Ryo Mizuno and Hiroshi Yamamoto. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12038))_
 - In addition, a notation such as 1D+6 means to roll one dice and add 6 to the result . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12444))_
-- For example, when you cast the ancient magic Light , whose area is A space with a 10 meter radius , by consuming double the mental power, the resulting area will be a spherical space with a radius of 10 x 1.3 = 13 meters . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13005))_
-- If you're a pro in that field, you'll most likely succeed, but if you only have the skill, there's a greater risk of failure. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13031))_
-- It's possible with a little luck if you're someone who's only dabbled. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13038))_
 
 ## Technical atoms
 
@@ -247,19 +226,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 29: Currency
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13013))_
-
-> If you have the skill, it's almost a sure-fire task. Even amateurs can be successful.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13006))_
 
 > [Figure] (p.304)
 
 ### Technical frame 30: Currency
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13013))_
-
-> If you have the skill, it's almost a sure-fire task. Even amateurs can be successful.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13007))_
 
@@ -267,19 +238,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 31: Currency
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13022))_
-
-> If you have the skill, there is a high probability of success. For amateurs, the risk of failure is greater.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13019))_
 
 > If you have the skill, you can expect success. For amateurs, it's 50-50.
 
 ### Technical frame 32: Currency
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13022))_
-
-> If you have the skill, there is a high probability of success. For amateurs, the risk of failure is greater.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13019))_
 
@@ -287,19 +250,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 33: Currency
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13031))_
-
-> If you're a pro in that field, you'll most likely succeed, but if you only have the skill, there's a greater risk of failure.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13028))_
 
 > It's 50-50 if you have the skill. Success is not guaranteed to amateurs.
 
 ### Technical frame 34: Currency
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13038))_
-
-> It's possible with a little luck if you're someone who's only dabbled. Even pros can fail due to a little bad luck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13035))_
 
@@ -307,19 +262,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 35: Currency
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13047))_
-
-> Even if you're a master, there is no guarantee that you'll succeed.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13044))_
 
 > If you're a master, you'll never fail, but if you're a pro, success is 50-50.
 
 ### Technical frame 36: Currency
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13047))_
-
-> Even if you're a master, there is no guarantee that you'll succeed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13044))_
 
@@ -327,19 +274,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 37: Currency
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13062))_
-
-> Even if you're a master, the probability of failure is high.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13059))_
 
 > 50-50 for masters. Otherwise, it's best not to touch it at all.
 
 ### Technical frame 38: Currency
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13065))_
-
-> This is a task that will go down in history if successful.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13066))_
 
@@ -347,19 +286,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 39: Currency
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13077))_
-
-> However, if alternative senses (smell, hearing, etc.) are developed to some extent
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13073))_
 
 > Table 10-1: Attack Power and Evasion Speed Modifiers
 
 ### Technical frame 40: Currency
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13077))_
-
-> However, if alternative senses (smell, hearing, etc.) are developed to some extent
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13078))_
 

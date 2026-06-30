@@ -7,12 +7,16 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-failure-c3b9b54c@4d78f28bd219f99f0fa2b7134821fb76
+projection_coverage: section-sword-world-rpg-complete-edition-section-failure-c3b9b54c@e766d04219cc6bc19d732d16d6b17a48
 ---
 
 # 【 Failure! 】
 
 From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-failure]] - topic hub: opens the topic page for Failure
 
 ## Statements
 

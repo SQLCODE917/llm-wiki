@@ -1,6 +1,10 @@
 from llmwiki.domain.ledger.atom_context import TechnicalAtomContext, atom_context_matches
 from llmwiki.domain.ledger.common import ConfidenceBasis
-from llmwiki.domain.ledger.topic_terms import matching_topic_terms, topic_matcher
+from llmwiki.domain.ledger.topic_terms import (
+    matching_topic_terms,
+    topic_field_matches,
+    topic_matcher,
+)
 
 
 def test_atom_context_matching_requires_compound_topic_coverage() -> None:
@@ -30,6 +34,42 @@ def test_matching_topic_terms_is_bounded_and_lexical() -> None:
     matches = matching_topic_terms("topic1x topic2x topic99x", terms)
 
     assert matches == ("topic1x", "topic2x")
+
+
+def test_matching_topic_terms_does_not_match_adverbial_prefixes() -> None:
+    matches = matching_topic_terms(
+        "Normally, this would never succeed, but our 2D roll is 12.",
+        ("normal", "language"),
+    )
+
+    assert matches == ()
+
+
+def test_matching_topic_terms_ignores_malformed_non_string_terms() -> None:
+    malformed = compile("1", "<test>", "eval")
+
+    matches = matching_topic_terms(
+        "Language is used for communication.",
+        (malformed, "language"),  # type: ignore[arg-type]
+    )
+
+    assert matches == ("language",)
+
+
+def test_topic_field_matches_uses_bounded_compound_identity() -> None:
+    matcher = topic_matcher(("normal", "language"))
+    assert matcher is not None
+
+    assert topic_field_matches(
+        "Normal languages describe communication." + (" noise" * 20_000),
+        matcher,
+        ("normal", "language"),
+    )
+    assert not topic_field_matches(
+        "Normally, this would never succeed, but our 2D roll is 12." + (" noise" * 20_000),
+        matcher,
+        ("normal", "language"),
+    )
 
 
 def _context(text: str, terms: tuple[str, ...]) -> TechnicalAtomContext:

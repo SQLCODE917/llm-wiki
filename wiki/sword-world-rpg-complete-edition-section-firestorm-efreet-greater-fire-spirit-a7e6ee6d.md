@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-firestorm-efreet-greater-fire-spirit-a7e6ee6d
 page_kind: source
-summary: [ Firestorm ] (Efreet/Greater Fire Spirit): 9 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Firestorm ] (Efreet/Greater Fire Spirit): 8 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

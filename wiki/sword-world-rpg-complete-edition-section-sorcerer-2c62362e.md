@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sorcerer-2c62362e@8c2a33e11ebb0bf378783487abf05a8d
+projection_coverage: section-sword-world-rpg-complete-edition-section-sorcerer-2c62362e@751ccaae37cac596321376649cb28fb8
 ---
 
 # [ Sorcerer ]
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-1-4-1e239ef6]] - broader source section: 1.4
-- [[sword-world-rpg-complete-edition-sorcerer]] - topic hub: opens the topic page for Sorcerer
 - [[sword-world-rpg-complete-edition-section-sorcerer-2adead14]] - same source heading: another source section with the same heading, 【 Sorcerer 】
 
 ## Statements

@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-hecatoncheir-92d60869
 page_kind: source
-summary: [ Hecatoncheir ]: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Hecatoncheir ]: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

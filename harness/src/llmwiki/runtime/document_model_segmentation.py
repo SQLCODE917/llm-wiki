@@ -12,6 +12,7 @@ from llmwiki.domain.ledger.segments import SegmentClaim, SourceSegment
 from llmwiki.domain.ledger.tabular import row_marker_count
 from llmwiki.domain.objects import Schema
 from llmwiki.domain.planning import derive_segment_claims
+from llmwiki.domain.source_summary import SourceClaim
 from llmwiki.pdf.document import DocumentElement, DocumentModel
 
 _FENCE = re.compile(r"^\s*(```|~~~)")
@@ -26,10 +27,12 @@ def segment_document_model(
     source_locator: str,
     source_hash: str,
     schema: Schema,
+    source_claims_by_heading: dict[str, tuple[SourceClaim, ...]] | None = None,
 ) -> tuple[tuple[SegmentInput, ...], dict[str, ExtractedUnitProfile]]:
     elements = tuple(element for element in model.elements if _body_element(element))
     inputs: list[SegmentInput] = []
     profiles: dict[str, ExtractedUnitProfile] = {}
+    claimed_source_claim_ids: set[str] = set()
     order = 0
     index = 0
     while index < len(elements):
@@ -50,6 +53,8 @@ def segment_document_model(
                     source_locator=source_locator,
                     source_hash=source_hash,
                     schema=schema,
+                    source_claims_by_heading=source_claims_by_heading,
+                    claimed_source_claim_ids=claimed_source_claim_ids,
                 )
             kind = "table-block"
             text = _table_text(group)
@@ -74,6 +79,8 @@ def segment_document_model(
             source_locator=source_locator,
             source_hash=source_hash,
             schema=schema,
+            source_claims_by_heading=source_claims_by_heading,
+            claimed_source_claim_ids=claimed_source_claim_ids,
         )
     return tuple(inputs), profiles
 
@@ -91,6 +98,8 @@ def _append_segment(
     source_hash: str,
     source_element_ids: tuple[str, ...],
     schema: Schema,
+    source_claims_by_heading: dict[str, tuple[SourceClaim, ...]] | None,
+    claimed_source_claim_ids: set[str],
 ) -> None:
     range_id = f"source-range-{source_hash[:8]}-{order:05d}"
     evidence_id = EvidenceIdentity.from_excerpt(
@@ -109,7 +118,20 @@ def _append_segment(
         evidence_ids=(evidence_id,),
         source_element_ids=source_element_ids,
     )
-    inputs.append(SegmentInput(segment=segment, claims=_claims(kind, text, (evidence_id,), schema)))
+    inputs.append(
+        SegmentInput(
+            segment=segment,
+            claims=_claims(
+                kind,
+                text,
+                (evidence_id,),
+                schema,
+                heading_path=heading_path,
+                source_claims_by_heading=source_claims_by_heading,
+                claimed_source_claim_ids=claimed_source_claim_ids,
+            ),
+        )
+    )
     profiles[segment.segment_id] = profile_unit(
         extracted_unit_id=segment.segment_id,
         source_range_id=range_id,
@@ -119,10 +141,24 @@ def _append_segment(
 
 
 def _claims(
-    kind: str, text: str, evidence_ids: tuple[str, ...], schema: Schema
+    kind: str,
+    text: str,
+    evidence_ids: tuple[str, ...],
+    schema: Schema,
+    *,
+    heading_path: str,
+    source_claims_by_heading: dict[str, tuple[SourceClaim, ...]] | None,
+    claimed_source_claim_ids: set[str],
 ) -> tuple[SegmentClaim, ...]:
     if kind not in _PROSE_KINDS:
         return ()
+    if source_claims_by_heading is not None:
+        return _source_claim_segment_claims(
+            text,
+            evidence_ids,
+            source_claims_by_heading.get(heading_path, ()),
+            claimed_source_claim_ids,
+        )
     records = derive_segment_claims(text, schema)
     return tuple(
         SegmentClaim(
@@ -135,6 +171,32 @@ def _claims(
         )
         for index, record in enumerate(records, start=1)
     )
+
+
+def _source_claim_segment_claims(
+    text: str,
+    evidence_ids: tuple[str, ...],
+    source_claims: tuple[SourceClaim, ...],
+    claimed_source_claim_ids: set[str],
+) -> tuple[SegmentClaim, ...]:
+    claims: list[SegmentClaim] = []
+    for claim in source_claims:
+        if claim.source_claim_id in claimed_source_claim_ids:
+            continue
+        if claim.statement not in text:
+            continue
+        claimed_source_claim_ids.add(claim.source_claim_id)
+        claims.append(
+            SegmentClaim(
+                claim_id=claim.source_claim_id,
+                statement=claim.statement,
+                role_tags=claim.claim_role_tags,
+                eligibility=claim.claim_eligibility,
+                certainty=claim.claim_certainty,
+                evidence_ids=evidence_ids,
+            )
+        )
+    return tuple(claims)
 
 
 def _body_element(element: DocumentElement) -> bool:

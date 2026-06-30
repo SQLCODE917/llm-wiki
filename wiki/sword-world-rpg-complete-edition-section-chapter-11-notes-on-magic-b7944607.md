@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-b7944607
 page_kind: source
-summary: Chapter 11: Notes on Magic: 760 source-backed entries and 332 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 11: Notes on Magic: 752 source-backed entries and 332 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-b7944607@356b5dffebfe30837a64626c8cbaba25
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-b7944607@cf46dd97d0bdd8049655c8486bff7d80
 ---
 
 # Chapter 11: Notes on Magic
@@ -94,7 +94,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 11: Notes on Magic / [ Steal Life ]
 
-- from the target and give it to the caster. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05848))_
 - This spell combines the effects of both Wounds and Cure Wounds , allowing the caster to absorb life force (points) from the target to recover when the caster is wounded. First, make a strike power 10 check for damage dealt to the target, and the caster's life force (points) will be restored by the same number of points. If you expand the effect and steal life force (points) from multiple people, you can recover the total amount of life force (points) you stole. However, you cannot increase your life (points) higher than your original score. Also, like Wounds , it has no effect at all if the opponent successfully resists, and it has no effect on opponents that don't have normal life, such as undead, skeleton warriors, etc. This spell also cannot be used if the dark priest him or herself is undead. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05852))_
 - Also, like Wounds , it has no effect at all if the opponent successfully resists, and it has no effect on opponents that don't have normal life, such as undead, skeleton warriors, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05852))_
 
@@ -286,11 +285,6 @@ From [[sword-world-rpg-complete-edition]].
 ### Chapter 11: Notes on Magic / [ Swordclaw ]
 
 - Sharp claws grow on both hands of the caster. These claws have strike power 15 and critical target 10, and are furthermore treated the same as a weapon imbued with magical power. The attack power is the caster's dragon priest skill level + dexterity bonus , and if it hits, in addition to the damage from the claws, it can also deal bonus damage equal to dragon priest skill level + strength bonus . Claw attacks allow you to attack with both hands at the same time without penalty. However, while these claws are grown out, you cannot grasp or hold anything. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06152))_
-
-### Chapter 11: Notes on Magic / Poison Proof ]
-
-- While the effect of this spell lasts, the caster can neutralize all poisons within their body, regardless of their type, amount, or toxicity score. However, the effect of poison received before the spell is cast will merely stop, and if the duration of the poison's effect is longer than the duration of the spell, it will begin to take effect again as soon as the spell's duration has elapsed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06163))_
-- While the effect of this spell lasts, the caster can neutralize all poisons within their body, regardless of their type, amount, or toxicity score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06163))_
 
 ### Chapter 11: Notes on Magic / [Communicate Dragon Race]
 
@@ -635,10 +629,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 14: Chapter 11: Notes on Magic / [ Steal Life ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05848))_
-
-> from the target and give it to the caster.
-
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05843, source-range-0b9dec90-05844, source-range-0b9dec90-05845, source-range-0b9dec90-05846, source-range-0b9dec90-05847, source-range-0b9dec90-05849, source-range-0b9dec90-05850, source-range-0b9dec90-05851))_
 
 > Base Mental Power Cost=20
@@ -658,10 +648,6 @@ From [[sword-world-rpg-complete-edition]].
 > Resist=Negated effect
 
 ### Technical frame 15: Chapter 11: Notes on Magic / [ Steal Life ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05848))_
-
-> from the target and give it to the caster.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05852))_
 
@@ -1190,10 +1176,6 @@ From [[sword-world-rpg-complete-edition]].
 > The attack power is the caster's dragon priest skill level + dexterity bonus , and if it hits, in addition to the damage from the claws, it can also deal bonus damage equal to dragon priest skill level + strength bonus .
 
 ### Technical frame 54: Chapter 11: Notes on Magic / Poison Proof ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06163))_
-
-> While the effect of this spell lasts, the caster can neutralize all poisons within their body, regardless of their type, amount, or toxicity score. However, the effect of poison received before the spell is cast will merely stop, and if the duration of the poison's effect is longer than the duration of the spell, it will begin to take effect again as soon as the spell's duration has elapsed.
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06155, source-range-0b9dec90-06156, source-range-0b9dec90-06157, source-range-0b9dec90-06158, source-range-0b9dec90-06159, source-range-0b9dec90-06161, source-range-0b9dec90-06162))_
 

@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-undine-a413b3f4
 page_kind: source
-summary: [ Undine ]: 41 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Undine ]: 40 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-undine-a413b3f4@ab1bf6b9ac30a37dedac0fbf71ded468
+projection_coverage: section-sword-world-rpg-complete-edition-section-undine-a413b3f4@b3b8cbd2059415b0138eb7c82293aeb4
 ---
 
 # [ Undine ]
@@ -16,7 +16,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Mental attack immunity Normal weapon immunity Not affected by poison and illness Habitat=Water Languages=Silent spirit _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07153))_
 - Undine is a Water Spirit. Its body is just about 10 liters of liquid. It often takes the form of a small girl, but it can take any form as long as its weight and volume remain the same. Undine has no direct means of attack. They can stick to their opponent and make them uncomfortable, or they can wrap around their face and make them feel pain for a while, but if the opponent has the will to resist, they can easily escape. However, if anyone bathes or swims in a spring or river where this spirit resides, without realizing its presence, the mad undine will do everything it can to drown its opponent, including casting a Sink spell to take away their buoyancy or fly directly into their lungs. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07155))_
 - Undine can cast magic sourced from the power of undine without consuming its own mental points (the spells cannot be expanded). Undine's shaman skill level should be 4. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07156))_
 - If a target drinks even a little of an undine's body, this water spirit will enter directly into their lungs. A check for whether or not you've taken a drink is made via success roll using " adventurer level + agility bonus " as the baseline score. The target score in this case is 12. This check must be made every round until you escape from the spring or river containing the undine. However, in this case, you can obviously hold your breath. As long as you hold your breath, you don't have to worry about drinking the water. However, the undine's first attack will always be a surprise attack, so in the first round, please make a check to see whether you've swallowed the undine or not. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07157))_

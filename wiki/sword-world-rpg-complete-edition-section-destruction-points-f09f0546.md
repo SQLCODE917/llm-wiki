@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-destruction-points-f09f0546
 page_kind: source
-summary: Destruction Points: 35 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Destruction Points: 33 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-destruction-points-f09f0546@6c6d44b10fec24a106625b729123bf4f
+projection_coverage: section-sword-world-rpg-complete-edition-section-destruction-points-f09f0546@8b16ecee9ca130b803e46aab540d7dc0
 ---
 
 # Destruction Points
@@ -24,7 +24,6 @@ From [[sword-world-rpg-complete-edition]].
 - As expected, it indicates the strength of the material, and the game master must determine a specific score depending on the thickness. The lowest of this score is called the minimum destruction points . In the case of paper, the score is 1~10, so the minimum destruction points are 1 . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11753))_
 - Defense points and destruction points are used in the basic system for destroying structures. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11754))_
 - When a character attempts to destroy something with a weapon, magic, etc. damage is calculated in the same way as when an attack hits a monster. Then, you subtract the defense points from the determined damage. If the result is greater than or equal to the destruction points , the structure is destroyed by that blow. If the result is greater than 1 but less than the destruction points, the defense points are reduced by 1 point. However, the structure itself is not destroyed. If the result is 0 or less (when damage is less than or equal to defense points), that means there was no effect at all. After the defense points fall to 0, the destruction points will decrease by 1 point. However, this will only be reduced to the minimum destruction points depending on the material. If you cannot deal more _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11755))_
-- damage than these minimum destruction points with a single blow , you will not be able to destroy a structure with 0 defense points. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11757))_
 - Consider trying to destroy a wooden wall (!) that's 20 cm thick. The game master considers this to have maximum strength for a wooden wall, and sets its defense points and destruction points to their maximums of 7 and 15 , respectively (see details below). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11759))_
 - If a character attacks with a weapon and deals 22 or greater points of damage in one blow, this wooden wall will be destroyed. If the damage is 7 points or less , the character's efforts are completely wasted . If the damage is greater than 8 but less than 21 points , the defense points will be reduced by 1 point (if the defense points become 0 , the destruction points will start to decrease . Once the destruction points reach 5 points , they will no longer decrease.) _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11760))_
 - When it comes to destroying structures, some weapons and magic are completely unsuitable, while conversely, others are extremely effective. This is expressed by what's given here. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11762))_
@@ -54,9 +53,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 2: Destruction Points
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11757))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11759))_
 
-> damage than these minimum destruction points with a single blow , you will not be able to destroy a structure with 0 defense points.
+> Consider trying to destroy a wooden wall (!) that's 20 cm thick. The game master considers this to have maximum strength for a wooden wall, and sets its defense points and destruction points to their maximums of 7 and 15 , respectively (see details below).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11755))_
 
@@ -64,9 +63,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 3: Destruction Points
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11757))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11759))_
 
-> damage than these minimum destruction points with a single blow , you will not be able to destroy a structure with 0 defense points.
+> Consider trying to destroy a wooden wall (!) that's 20 cm thick. The game master considers this to have maximum strength for a wooden wall, and sets its defense points and destruction points to their maximums of 7 and 15 , respectively (see details below).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11756))_
 

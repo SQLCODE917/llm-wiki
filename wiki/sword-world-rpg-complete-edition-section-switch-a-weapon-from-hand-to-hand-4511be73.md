@@ -7,12 +7,16 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-switch-a-weapon-from-hand-to-hand-4511be73@5da6b7ee479b8dc69c530cf5a526ff16
+projection_coverage: section-sword-world-rpg-complete-edition-section-switch-a-weapon-from-hand-to-hand-4511be73@440e42e870f66c972ddab20e475e7964
 ---
 
 # Switch a Weapon From Hand to Hand
 
 From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-switch-weapon-hand]] - topic hub: opens the topic page for Switch Weapon Hand
 
 ## Statements
 

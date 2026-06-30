@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-kings-6bd8bb73@72edc664571b1ebe2cd41068e737db36
+projection_coverage: section-sword-world-rpg-complete-edition-section-kings-6bd8bb73@472bf620f6eba7d7f5233d764aa0fbea
 ---
 
 # Kings
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-18-3-5e113017]] - broader source section: 18.3
-- [[sword-world-rpg-complete-edition-king]] - topic hub: opens the topic page for King
 
 ## Statements
 

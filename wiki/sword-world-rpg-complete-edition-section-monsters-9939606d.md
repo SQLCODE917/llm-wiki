@@ -7,12 +7,16 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monsters-9939606d@2ff87baa77b5207af5f89add0c2af7bb
+projection_coverage: section-sword-world-rpg-complete-edition-section-monsters-9939606d@4d699224ef767c56c2dd75bd88c43581
 ---
 
 # Monsters
 
 From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-monster]] - topic hub: opens the topic page for Monster
 
 ## Statements
 

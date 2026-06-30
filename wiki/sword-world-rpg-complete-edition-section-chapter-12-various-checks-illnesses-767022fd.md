@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-illnesses-767022fd@b21f4f5a55d84fd011e8fae55b517fc2
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-illnesses-767022fd@4df6a05fe6f340163004414cdac2a347
 ---
 
 # Chapter 12: Various Checks / Illnesses
@@ -17,6 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-b9c7f5f9]] - broader source section: Chapter 12: Various Checks
+- [[sword-world-rpg-complete-edition-illness]] - topic hub: opens the topic page for Illness
 
 ## Statements
 

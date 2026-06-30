@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-9-054d19ec@103fe13c05c7fc5c5f6680b7a5d2781e
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-9-054d19ec@c11660d9f0bdb4df70d28c48dc4bead3
 ---
 
 # 1.4.9
@@ -26,7 +26,6 @@ From [[sword-world-rpg-complete-edition]].
 - [[sword-world-rpg-complete-edition-section-origin-290d7074]] - narrower source section: [ ⑥ Origin ]
 - [[sword-world-rpg-complete-edition-section-money-960fa2dd]] - narrower source section: [ ⑨ Money ]
 - [[sword-world-rpg-complete-edition-section-gender-635acbe5]] - narrower source section: [ ⑩ Gender ]
-- [[sword-world-rpg-complete-edition-section-age-57d51bb6]] - narrower source section: [ ⑪ Age ]
 - [[sword-world-rpg-complete-edition-section-increase-skills-d4bb6b67]] - narrower source section: [ ⑬ Increase Skills ]
 - [[sword-world-rpg-complete-edition-section-adventurer-level-ed80716f]] - narrower source section: [ ⑭ Adventurer Level ]
 - [[sword-world-rpg-complete-edition-section-other-sections-b0cbc18e]] - narrower source section: ⑯ Other Sections ]

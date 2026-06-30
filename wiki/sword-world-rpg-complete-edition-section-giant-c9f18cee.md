@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-giant-c9f18cee
 page_kind: source
-summary: [ Giant ]: 47 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Giant ]: 45 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-c9f18cee@26773b7b4f1c2fa7aa88413f2bee3d6e
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-c9f18cee@f66e88cd217942745bc27ea740f3954a
 ---
 
 # [ Giant ]
@@ -16,7 +16,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-giant]] - topic hub: opens the topic page for Giant
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-giant-bba55fe3]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / [ Giant ]
 
 ## Statements

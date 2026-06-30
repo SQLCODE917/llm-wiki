@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-armor-0e4942a3@286b56d6e5ddcd124125f30a385ff52d
+projection_coverage: section-sword-world-rpg-complete-edition-section-armor-0e4942a3@242bc64199a8e10dcce0e26f72019e61
 ---
 
 # Armor
@@ -17,6 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-1-4-1e239ef6]] - broader source section: 1.4
+- [[sword-world-rpg-complete-edition-armor]] - topic hub: opens the topic page for Armor
 
 ## Statements
 

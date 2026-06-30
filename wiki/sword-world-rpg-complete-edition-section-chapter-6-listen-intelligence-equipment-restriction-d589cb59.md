@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-6-listen-intelligence-equipment-restriction-d589cb59
 page_kind: source
-summary: Chapter 6: / [ ④ Listen [Intelligence] ] (Equipment restriction): 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 6: / [ ④ Listen [Intelligence] ] (Equipment restriction): 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

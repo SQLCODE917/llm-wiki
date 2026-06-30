@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-hippocampus-699257f0
 page_kind: source
-summary: [ Hippocampus ]: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Hippocampus ]: 6 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

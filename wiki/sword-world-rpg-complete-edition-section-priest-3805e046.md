@@ -7,16 +7,12 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-priest-3805e046@bf298dae5298d2eb4e86a947359b0bd8
+projection_coverage: section-sword-world-rpg-complete-edition-section-priest-3805e046@51b088c3bb8048ea185ed0e95e5b8002
 ---
 
 # 【 Priest 】
 
 From [[sword-world-rpg-complete-edition]].
-
-## Related pages
-
-- [[sword-world-rpg-complete-edition-priest]] - topic hub: opens the topic page for Priest
 
 ## Statements
 

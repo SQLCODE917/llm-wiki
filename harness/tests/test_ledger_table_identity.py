@@ -14,6 +14,7 @@ from llmwiki.domain.ledger.table_identity import (
     explicit_forward_reference,
     has_matching_table_name,
     named_table_references,
+    normalize_table_name,
     table_identity_names_by_atom_id,
 )
 
@@ -97,6 +98,26 @@ def test_table_name_matching_bounds_pathological_names() -> None:
     table_names = ("reaction table", "other " + ("d20 noise " * 10_000))
 
     assert has_matching_table_name(reference, table_names)
+
+
+def test_normalize_table_name_uses_bounded_lexical_identity() -> None:
+    long_name = "Reaction " + ("noisy-value " * 10_000)
+
+    assert normalize_table_name("Table 12-3: Reaction Table") == "reaction"
+    assert normalize_table_name(long_name).split()[0] == "reaction"
+    assert len(normalize_table_name(long_name).split()) <= 8
+
+
+def test_normalize_table_name_tolerates_pdf_unicode_glyph_noise() -> None:
+    assert normalize_table_name("Table 1: Mārdan Ā① Reaction") == "m rdan reaction"
+
+
+def test_table_name_matching_requires_alphabetic_identity_overlap() -> None:
+    assert not has_matching_table_name(
+        "12 1 1 normal languages",
+        ("2 1", "baseline scores", "2 1 baseline scores"),
+    )
+    assert not has_matching_table_name("12 1 2 normal languages of", ("2", "races"))
 
 
 def test_table_reference_detection_bounds_pathological_text() -> None:

@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-9-c551036d
 page_kind: source
-summary: Chapter 9:: 29 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 9:: 28 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

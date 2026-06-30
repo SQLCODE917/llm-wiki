@@ -15,6 +15,7 @@ from llmwiki.domain.ledger.artifacts import (
     QualityCheckCatalogArtifact,
     SourceCoverageArtifact,
     build_portable_artifact_set,
+    claim_ledger_artifact_to_json,
 )
 from llmwiki.domain.ledger.canonical import canonical_json
 from llmwiki.domain.ledger.section_planning import SectionGroundedPlan
@@ -149,7 +150,11 @@ def _artifact_files(
 ) -> dict[str, str]:
     artifact_files = {
         "document-structure.json": canonical_json(ds_artifact, indent=2),
-        "claim-ledger.json": canonical_json(ledger_artifact, indent=2),
+        "claim-ledger.json": claim_ledger_artifact_to_json(
+            ledger_artifact,
+            entry_ids=_topic_entry_ids(topic_index),
+            atom_ids=_topic_atom_ids(topic_index),
+        ),
         "quality-check-catalog.json": canonical_json(catalog_artifact, indent=2),
         "ledger-quality-report.json": canonical_json(ledger_report_artifact, indent=2),
         "projection-quality-report.json": canonical_json(projection_report_artifact, indent=2),
@@ -166,3 +171,15 @@ def _artifact_files(
 
 def _member(kind: str, target_id: str, fingerprint: str) -> PortableArtifactMember:
     return PortableArtifactMember(kind, target_id, fingerprint)
+
+
+def _topic_entry_ids(topic_index: TopicIndex) -> tuple[str, ...]:
+    return tuple(
+        dict.fromkeys(entry_id for topic in topic_index.topics for entry_id in topic.entry_ids)
+    )
+
+
+def _topic_atom_ids(topic_index: TopicIndex) -> tuple[str, ...]:
+    return tuple(
+        dict.fromkeys(atom_id for topic in topic_index.topics for atom_id in topic.atom_ids)
+    )

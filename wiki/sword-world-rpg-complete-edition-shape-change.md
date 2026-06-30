@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-shape-change
 page_kind: concept
-summary: [ Shape Change: 20 statement(s) and 17 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Shape Change: 15 statement(s) and 17 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-shape-change@ef926917b849aeafc10bc44b46df09f7
+projection_coverage: topic-sword-world-rpg-complete-edition-shape-change@9ce574675510f91a15622592777ad717
 ---
 
 # [ Shape Change
@@ -14,14 +14,6 @@ projection_coverage: topic-sword-world-rpg-complete-edition-shape-change@ef92691
 What [[sword-world-rpg-complete-edition]] covers about [ shape change:
 
 ## Statements
-
-### 《 Area Contraction 》
-
-- You can make the area of effect narrower than originally intended. The shape (usually a circle) cannot be changed. You also cannot cast it in such a way that it hits the enemy directly in the eyes. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02627))_
-
-### 《 Volume Contraction 》
-
-- Similar to area contraction, you can also reduce the volume of the targeted object or space. Again, the shape cannot be changed, and you cannot directly aim it at the enemy's eyes. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02629))_
 
 ### [ Disguise ]
 
@@ -52,14 +44,6 @@ What [[sword-world-rpg-complete-edition]] covers about [ shape change:
 ### [ Lamia ]
 
 - Lamia cannot survive without sucking fresh blood from young humans, so they often use a Shape Change spell to disguise themselves as human girls, deceive young people into becoming their lovers, and then secretly suck their blood in the middle of the night. Whenever they suck blood, they must return to their original form. A lamia that does not suck blood at least once per day will lose 1 life point, and if she does not suck blood for 20 days, she will starve to death. Those who have their blood sucked will lose life points, and the lamia will recover that same amount of life points. Usually only 1 point worth of blood is needed per day. With this amount of damage, a healthy young person will only feel mild fatigue and should recover quickly. There are some who have been living with lamia for years without even realizing it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07540))_
-
-### [ Lesser Daemon ] Grunel
-
-- However, it cannot copy its opponent's abilities and memories. Even if it shapeshifts, a doubleburg's score data will not change at all. For example, even though it looks like it's wielding a weapon, it's actually a part of the doubleburg's own body that's been shapeshifted. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09349))_
-
-### Chapter 14: / [ Mirror of Truth ]
-
-- This mirror reflects the natural form of the person standing before it. Anything whose appearance has been changed by illusion or shapeshifting magic will have its natural form exposed in this mirror. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11127))_
 
 
 ## Technical atoms
@@ -125,16 +109,8 @@ What [[sword-world-rpg-complete-edition]] covers about [ shape change:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-cast]] - shared statements: Cast shares source evidence from [ Shape Change: Only the caster's body will change shape, the clothes and accessories they're wearing do not change. They will fall off or break in the process of changing. Also, af ... [truncated] (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-caster]] - shared statements: Caster shares source evidence from [ Shape Change: Only the caster's body will change shape, the clothes and accessories they're wearing do not change. They will fall off or break in the process of changing. Also, af ... [truncated] (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements: Spell shares source evidence from [ Disguise ]: This spell is a type of illusion magic that works on the caster, changing their appearance into something else. However, this spell cannot significantly change the s ... [truncated] (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-body]] - shared statements: Body shares source evidence from [ Shape Change: Only the caster's body will change shape, the clothes and accessories they're wearing do not change. They will fall off or break in the process of changing. Also, af ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-force]] - shared statements: Force shares source evidence from Chapter 11: Notes on Magic / [ Shape Change: Transform into a lesser dragon. Life force and mental power will be taken from the caster's current scores ( not their maximum scores), but other details such as att ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-mental]] - shared statements: Mental shares source evidence from Chapter 11: Notes on Magic / [ Shape Change: Transform into a lesser dragon. Life force and mental power will be taken from the caster's current scores ( not their maximum scores), but other details such as att ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements: Power shares source evidence from Chapter 11: Notes on Magic / [ Shape Change: Transform into a lesser dragon. Life force and mental power will be taken from the caster's current scores ( not their maximum scores), but other details such as att ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-sage-skill]] - shared statements: Sage Skill shares source evidence from [ Shape Change: This is a spell that allows the caster to change their form into another living creature at will. However, the creatures they can change into are limited to about 10 ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements: Score shares source evidence from [ Lesser Daemon ] Grunel: However, it cannot copy its opponent's abilities and memories. Even if it shapeshifts, a doubleburg's score data will not change at all. For example, even though it ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-shape-change-db790ca4]] - source section: [ Shape Change shares source evidence from [ Shape Change: This is a spell that allows the caster to change their form into another living creature at will. However, the creatures they can change into are limited to about 10 ... [truncated]; [ Shape Change shares technical record from [ Shape Change: Base Mental Power Cost=20 (10 shared statement(s), 9 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-shape-change-db790ca4]] - source section: [ Shape Change shares source evidence from [ Shape Change: This is a spell that allows the caster to change their form into another living creature at will. However, the creatures they can change into are limited to about 10 ... [truncated]; [ Shape Change shares technical record from [ Shape Change: Base Mental Power Cost=20 (9 shared statement(s), 9 shared atom(s))
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-shape-change-47b4475b]] - source section: Chapter 11: Notes on Magic / [ Shape Change shares source evidence from Chapter 11: Notes on Magic / [ Shape Change: Transform into a lesser dragon. Life force and mental power will be taken from the caster's current scores ( not their maximum scores), but other details such as att ... [truncated]; Chapter 11: Notes on Magic / [ Shape Change shares technical record from Chapter 11: Notes on Magic / [ Shape Change: Base Mental Power Cost=35 (2 shared statement(s), 8 shared atom(s))
 
 ## Source

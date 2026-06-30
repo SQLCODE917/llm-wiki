@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-player-name-c236ed38@7e9523fc3167375d7bc79d2141865b73
+projection_coverage: section-sword-world-rpg-complete-edition-section-player-name-c236ed38@4c44b261a604876c07dfe336c815f43f
 ---
 
 # [ ① Player Name ]
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-1-4-9-054d19ec]] - broader source section: 1.4.9
-- [[sword-world-rpg-complete-edition-player]] - topic hub: opens the topic page for Player
 
 ## Statements
 

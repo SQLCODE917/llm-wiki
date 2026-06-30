@@ -25,6 +25,9 @@ from llmwiki.domain.source_summary_relevance import (
 )
 
 MAX_SOURCE_SUMMARY_CLAIMS = 5
+_BEHAVIORAL_CLAIM_ROLES = frozenset(
+    {"function", "limitation", "mechanism", "procedure", "requirement"}
+)
 
 
 def source_summary_plan(
@@ -88,6 +91,14 @@ def source_summary_plan(
         source_has_eligible_claims,
         prefer_central_eligible_claims,
         min_claims,
+        selected,
+    )
+    _select_behavioral_catalog_claim(
+        terms,
+        candidate_claims,
+        source_has_eligible_claims,
+        prefer_central_eligible_claims,
+        first_relevant_position,
         selected,
     )
 
@@ -316,6 +327,41 @@ def _fill_remaining_claims(
         ):
             continue
         selected.append(claim)
+
+
+def _select_behavioral_catalog_claim(
+    terms: frozenset[str],
+    candidate_claims: tuple[SourceClaim, ...],
+    source_has_eligible_claims: bool,
+    prefer_central_eligible_claims: bool,
+    first_relevant_position: int,
+    selected: list[SourceClaim],
+) -> None:
+    if len(selected) >= MAX_SOURCE_SUMMARY_CLAIMS:
+        return
+    if any(_has_behavioral_role(claim) for claim in selected):
+        return
+    selected_ids = _selected_claim_ids(selected)
+    selected_units = frozenset(claim.extracted_unit_id for claim in selected)
+    candidates = [
+        claim
+        for claim in candidate_claims
+        if claim.source_claim_id not in selected_ids
+        and claim.extracted_unit_id in selected_units
+        and _has_behavioral_role(claim)
+        and after_first_relevant_claim(first_relevant_position, claim)
+    ]
+    candidates = eligible_or_source_fallback_claims(
+        without_competing_section_claims(terms, candidates),
+        source_has_eligible_claims,
+        prefer_central_eligible_claims,
+    )
+    if candidates:
+        selected.append(max(candidates, key=lambda claim: selection_score(terms, claim)))
+
+
+def _has_behavioral_role(claim: SourceClaim) -> bool:
+    return bool(_BEHAVIORAL_CLAIM_ROLES.intersection(claim.claim_role_tags))
 
 
 def _diversify_broad_page_selection(

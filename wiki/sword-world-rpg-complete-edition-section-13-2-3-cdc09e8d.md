@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-13-2-3-cdc09e8d
 page_kind: source
-summary: 13.2.3: 116 source-backed entries and 44 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.2.3: 103 source-backed entries and 44 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-3-cdc09e8d@bd44c879a6603032084ce9c42935a41a
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-3-cdc09e8d@2963a93a91140afc85fc65b17fa6e37d
 ---
 
 # 13.2.3
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-youma-28116c9e]] - narrower source section: Youma
-- [[sword-world-rpg-complete-edition-section-gremlin-monster-level-2-rarity-9-agility-17-movement-speed-6-8-air-number-one-to-several-frequen-c38c774c]] - narrower source section: [ Gremlin ] Monster Level=2 Rarity=9 Agility=17 Movement Speed=6/8 (air) Number=One to several Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Fangs: 9 (2) Strike Points=3 Evasion Points=11 (4) Defense Points=4 Life Points/Resistance=8/9 (2) Mental Points/Resistance=14/10 (3) Special Abilities=2nd level spirit magic (Magic Intensity/Magic Power=11/4) Habitat=Mountains, highlands Languages=Impish, silent spirit Perception=Five senses (infravision)
 - [[sword-world-rpg-complete-edition-section-hobgoblin-f726d52e]] - narrower source section: [ Hobgoblin ]
 - [[sword-world-rpg-complete-edition-section-goblin-2b12933f]] - narrower source section: [ Goblin ]
 - [[sword-world-rpg-complete-edition-section-marshman-de72f2b9]] - narrower source section: [ Marshman ]
@@ -32,11 +31,6 @@ From [[sword-world-rpg-complete-edition]].
 - Legend has it that kobolds can corrode silver, so they are fiercely regarded as enemies by miners and dwarves. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07030))_
 - However, kobolds are also known to be sneaky and will attack opponents who are outnumbered, wounded, or unable to fight, such as women and children. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07029))_
 
-### [ Gremlin ] Monster Level=2 Rarity=9 Agility=17 Movement Speed=6/8 (air) Number=One to several Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Fangs: 9 (2) Strike Points=3 Evasion Points=11 (4) Defense Points=4 Life Points/Resistance=8/9 (2) Mental Points/Resistance=14/10 (3) Special Abilities=2nd level spirit magic (Magic Intensity/Magic Power=11/4) Habitat=Mountains, highlands Languages=Impish, silent spirit Perception=Five senses (infravision)
-
-- A small winged youma also known as the "sky imp". Its body is dark brown and it has black wings on its back resembling those of a bat. These wings allow them to fly, but their speed is not that great. They have the power to use spirit magic up to 2nd level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07032))_
-- Gremlins are not aggressive, but they are treacherous and enjoy playing malicious pranks. The tragedy of the hero Grax riding Pegasus and dying in a crash due to a gremlin's prank is widely known in Alecrast. (See p. 86) _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07033))_
-
 ### [ Hobgoblin ]
 
 - Monster Level=3 Rarity=8 Agility=12 Movement Speed=8 Number=Several Frequency=Normal Intellect=Low Reaction=Adversarial Attack Points=Weapon or fangs: 10 (3) Strike Points=10 Evasion Points=11 (4) Defense Points=7 Life Points/Resistance=15/11 (4) Mental Points/Resistance=12/11 (4) Special Abilities=None in particular Habitat=Mountains relatively far from human villages, forests, caves Languages=Goblin _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07035))_
@@ -49,7 +43,6 @@ From [[sword-world-rpg-complete-edition]].
 - Among the goblin tribe, this refers to those who are skilled in the power of spirit magic. Their physical characteristics are not much different from ordinary goblins, but they are smart and moreover, have mastered silent spirit. This is not surprising, considering that goblins are originally from the fairy world. Some goblin shamans are also dark priests who can use dark magic. Goblins served the dark gods in mythical times. A goblin shaman has either a 3rd level shaman skill (magical intensity 12/magic power 5), a 1st level dark priest skill (magical intensity 10/magic power 3), or both. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07059))_
 - The goblin lord, as the name suggests, is the king of the goblins. However, not all tribes have this type of lord-species, if anything they're rare. They are a greater species of goblin, so to speak, who retain a limited amount of power from the time when goblins lived in the fairy world. Although they lack magical abilities, they have bodies that are about the same size or even larger than humans and hobgoblins. It is said that there are quite a few of this goblin lord species in the Youma Forest to the east of Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07064))_
 - They often use weapons (mostly small ones such as shortswords, daggers etc.) stolen from humans. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07041))_
-- Among the goblin tribe, this refers to those who are skilled in the power of spirit magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07059))_
 - They are a greater species of goblin, so to speak, who retain a limited amount of power from the time when goblins lived in the fairy world. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07064))_
 
 ### [ Marshman ]

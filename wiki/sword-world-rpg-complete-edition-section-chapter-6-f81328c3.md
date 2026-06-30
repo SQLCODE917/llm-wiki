@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-6-f81328c3
 page_kind: source
-summary: Chapter 6:: 61 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 6:: 58 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-f81328c3@5c7d22a27f498814bb619800988754b2
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-f81328c3@1b6f3bf796c3e4581f50d01a264c9f48
 ---
 
 # Chapter 6:
@@ -100,7 +100,6 @@ From [[sword-world-rpg-complete-edition]].
 - The ranger skill is used for surprise attacks. For details, see 10.3: Surprise Attacks (see p. 138). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05040))_
 - This is basically the same ability as that of the thief skill, but it only applies to traps that use outdoor nature. This includes those that are made by tying grass into a ring, or are hung from a tree using string, etc. Indoor mechanical traps cannot be found/sensed with the ranger skill. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05042))_
 - This also follows the thief skill. It's the ability to remove traps set outdoors and create traps using natural objects. Indoor mechanical traps cannot be removed or set . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05044))_
-- This is basically the same ability as that of the thief skill, but it only applies to traps that use outdoor nature. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05042))_
 
 ## Technical atoms
 

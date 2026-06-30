@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-ranger-20608247
 page_kind: source
-summary: [ Ranger ]: 9 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Ranger ]: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ranger-20608247@2ad3e27e8cd7e8ad8d6be00f50152be2
+projection_coverage: section-sword-world-rpg-complete-edition-section-ranger-20608247@0a86e698555369a3cc324ae53fb4786e
 ---
 
 # [ Ranger ]
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-1-4-1e239ef6]] - broader source section: 1.4
-- [[sword-world-rpg-complete-edition-ranger]] - topic hub: opens the topic page for Ranger
 - [[sword-world-rpg-complete-edition-section-ranger-d52c6d08]] - same source heading: another source section with the same heading, 【 Ranger 】
 
 ## Statements

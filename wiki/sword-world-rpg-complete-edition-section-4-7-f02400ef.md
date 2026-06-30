@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-4-7-f02400ef
 page_kind: source
-summary: 4.7: 39 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 4.7: 38 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-7-f02400ef@0fb4fa723eaac72a3b0cb1f6363a8231
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-7-f02400ef@40666bb3e0bdcb6b17ebc105ef351bd9
 ---
 
 # 4.7
@@ -22,10 +22,6 @@ From [[sword-world-rpg-complete-edition]].
 - [[sword-world-rpg-complete-edition-section-4-7-2-damage-checks-00600f49]] - narrower source section: 4.7.2 Damage Checks
 
 ## Statements by subsection
-
-### Attacks From Characters Against Characters
-
-- While infighting between player characters is something you should avoid at all costs, fights against nonplayer characters are common. Sometimes, especially when the mastermind behind an incident is a dark priest, you'll have to fight against someone whose data was created for a character. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02237))_
 
 ### 4.7.1 Hit Checks
 

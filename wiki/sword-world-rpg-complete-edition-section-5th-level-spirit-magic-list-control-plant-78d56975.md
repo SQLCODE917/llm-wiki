@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-5th-level-spirit-magic-list-control-plant-78d56975
 page_kind: source
-summary: 5th Level Spirit Magic List [ Control Plant ]: 13 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 5th Level Spirit Magic List [ Control Plant ]: 12 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

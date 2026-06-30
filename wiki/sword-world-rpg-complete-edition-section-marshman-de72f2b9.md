@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-marshman-de72f2b9
 page_kind: source
-summary: [ Marshman ]: 25 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Marshman ]: 24 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

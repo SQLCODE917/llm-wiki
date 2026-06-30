@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-evasion-points-4a108a5f@63e215155e63db0e5a79ee6e5f8a55ad
+projection_coverage: section-sword-world-rpg-complete-edition-section-evasion-points-4a108a5f@a3c7e2909b5e259918907616464c5c41
 ---
 
 # 《 Evasion Points 》
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-13-2-1-6e762209]] - broader source section: 13.2.1
-- [[sword-world-rpg-complete-edition-evasion]] - topic hub: opens the topic page for Evasion
 
 ## Statements
 

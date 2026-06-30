@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-humans-59432e5d@10728b3f56dabd7b24ad2f9c8e83cc02
+projection_coverage: section-sword-world-rpg-complete-edition-section-humans-59432e5d@cefd10e557eb4f5812f168257ec4a12a
 ---
 
 # 《 Humans 》
@@ -18,7 +18,6 @@ From [[sword-world-rpg-complete-edition]].
 
 - [[sword-world-rpg-complete-edition-section-13-2-1-6e762209]] - broader source section: 13.2.1
 - [[sword-world-rpg-complete-edition-section-humans-monster-catalog-8f0a6e1a]] - narrower source section: 《 Humans 》 / Monster Catalog
-- [[sword-world-rpg-complete-edition-human]] - topic hub: opens the topic page for Human
 - [[sword-world-rpg-complete-edition-section-human-06c90783]] - same source heading: another source section with the same heading, 【 Human 】
 
 ## Statements

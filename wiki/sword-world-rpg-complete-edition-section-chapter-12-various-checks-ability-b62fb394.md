@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-ability-b62fb394@353d51c39c038087b84596b7bf13017b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-ability-b62fb394@772c090cb01086a4eb1cbe5b4ff0647b
 ---
 
 # Chapter 12: Various Checks / Ability
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ba47b7d8]] - broader source section: Chapter 12: Various Checks
-- [[sword-world-rpg-complete-edition-ability]] - topic hub: opens the topic page for Ability
 
 ## Statements
 

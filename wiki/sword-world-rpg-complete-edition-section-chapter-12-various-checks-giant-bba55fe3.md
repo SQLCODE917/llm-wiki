@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-giant-bba55fe3@382956e869822a42f5f0780f2dcd0e87
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-giant-bba55fe3@9dd8e6cfcfdba018e1f51eefea4c5771
 ---
 
 # Chapter 12: Various Checks / [ Giant ]
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ba47b7d8]] - broader source section: Chapter 12: Various Checks
-- [[sword-world-rpg-complete-edition-giant]] - topic hub: opens the topic page for Giant
 - [[sword-world-rpg-complete-edition-section-giant-c9f18cee]] - same source heading: another source section with the same heading, [ Giant ]
 
 ## Statements

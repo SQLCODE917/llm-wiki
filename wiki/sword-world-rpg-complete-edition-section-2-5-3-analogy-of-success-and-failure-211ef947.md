@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-2-5-3-analogy-of-success-and-failure-211ef947
 page_kind: source
-summary: 2.5.3 Analogy of Success and Failure: 23 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 2.5.3 Analogy of Success and Failure: 23 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-3-analogy-of-success-and-failure-211ef947@877991332a631a3cbdc7243e06826890
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-3-analogy-of-success-and-failure-211ef947@07265e33523d3d7c336fc4119902d485
 ---
 
 # 2.5.3 Analogy of Success and Failure
@@ -58,27 +58,3 @@ From [[sword-world-rpg-complete-edition]].
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01245))_
 
 > If the roll is low, such as 3 or 4, then there's a high chance that the success roll has failed.
-
-### Technical atom 3
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01237))_
-
-> The game master does not say whether the result is the action succeeded or the action failed , because a difficulty check is made when the success or failure of the action is not known to the characters. They must only answer as much as the character can tell from their successes and failures. Let's show how the game master's answer would be for the case of the door and the traps:
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01238))_
-
-| entry | content |
-| --- | --- |
-| 1 | There is a trap, the find trap check is successful → There is a trap at the door |
-| 2 | There is a trap, the find trap check is a failure → You don't find any traps |
-| 3 | There is no trap, the find trap check is successful → You don't find any traps |
-| 4 | There is no trap, the find trap check is a failure → You don't find any traps |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-1. There is a  trap, the find trap check is successful → There is a trap at the door 2. There is a trap, the find trap check is a failure → You don't find any traps 3. There is no trap, the find trap check is successful → You don't find any traps 4. There is no trap, the find trap check is a failure → You don't find any traps
-```
-
-</details>

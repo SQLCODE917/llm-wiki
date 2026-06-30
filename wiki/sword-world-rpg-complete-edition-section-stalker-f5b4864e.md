@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-stalker-f5b4864e
 page_kind: source
-summary: [ Stalker ]: 84 source-backed entries and 39 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Stalker ]: 83 source-backed entries and 39 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-stalker-f5b4864e@54ff4708329d970247d818a9a6fdf73b
+projection_coverage: section-sword-world-rpg-complete-edition-section-stalker-f5b4864e@b25accdb04d70aec0512e653c7798fce
 ---
 
 # [ Stalker ]
@@ -28,7 +28,6 @@ From [[sword-world-rpg-complete-edition]].
 - A shadow stalker is a stalker made using an extremely heavy black gas. Even when it's not materialized, the color of the black gas is clearly visible in a well-lit area, but when it's lost in darkness, it's barely recognizable. It also excels at moving around while pretending to be its opponent's shadow. A shadow stalker will materialize behind its opponent, holding a garrote in its hand. It'll then try to strangle the opponent to death with that garrote. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09159))_
 - Those with the ranger skill can detect this attack using their sense danger ability if they succeed on a success roll against target score 16 using ranger skill level + intelligence bonus as the baseline score. If you can detect it, you can evade and attack as normal, but if you cannot, it will be a complete surprise attack , so you will not be able to attack, and will be attacked with no chance to respond. At this time, you'll suffer a -4 penalty to evasion. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09160))_
 - Once a shadow stalker's attack hits, treat it as if the character is being strangled. The damage is strike power 10, plus 5 points of bonus damage. If an adventurer is wearing metal armor other than ring mail, they will not suffer any damage. Regardless of damage or armor, once character's life force rounds have passed, the character will suffocate and fall unconscious (life force 0). Every round from then on, you'll need to make a death check when applying damage (even if it' s 0). For information on escaping, see grappling (see p. 265). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09161))_
-- Monster Level=6 Rarity=15 Agility=15 Movement Speed=15 Number=One, rarely multiple Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Weapon:13 (6) Strike Points=12 Evasion Points=14 (7) Defense Points=8 Life Points/Resistance=16/14 (7) Mental Points/Resistance=20/15 (8) Special Abilities=Normal attack immunity Completely transparent Not affected by poison and illness Sleepless Physical attack immunity while in ghostly form Habitat=Ruins Languages=None Perception=Pseudo, Magic while in ghostly _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09163))_
 - An air stalker is a stalker created from transparent gas. Therefore, even when it materializes, it is completely invisible. For this reason, attacks on an air stalker and evasion against an air stalker's attacks are always -4. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09165))_
 - Of course, it's not certain what form an air stalker will materialize in....... _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09166))_
 - Thus they can freely pass through small gaps in doors or holes in walls. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09105))_

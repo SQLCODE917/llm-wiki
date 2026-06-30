@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-wyrm-01c598fe
 page_kind: source
-summary: [ Wyrm ]: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Wyrm ]: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

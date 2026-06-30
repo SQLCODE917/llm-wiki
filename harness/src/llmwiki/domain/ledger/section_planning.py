@@ -21,8 +21,19 @@ from llmwiki.domain.ledger.table_identity import (
     normalize_table_name,
     table_identity_names_by_atom_id,
 )
-from llmwiki.domain.ledger.topic_evidence import heading_topic_decision
-from llmwiki.domain.ledger.topic_terms import source_label_terms, topic_matcher, topic_term_role
+from llmwiki.domain.ledger.topic_entry_index import (
+    TopicEntryIndex,
+    entry_is_concept_or_definition,
+    topic_entry_index,
+    topic_entry_index_strongly_supports_topic,
+    topic_entry_index_supports_topic,
+)
+from llmwiki.domain.ledger.topic_terms import (
+    required_topic_terms,
+    source_label_terms,
+    topic_matcher,
+    topic_term_role,
+)
 
 _SECTION_NODE_KINDS = {"chapter", "section", "heading"}
 _HEADING_NUMBER = re.compile(
@@ -84,12 +95,22 @@ class SectionGroundedPlan:
     source_coverage_map: tuple[SourceCoverageMapEntry, ...]
 
 
+@dataclass(frozen=True)
+class SectionPlanningContext:
+    table_names_by_atom_id: dict[str, tuple[str, ...]]
+    entry_indexes_by_node: dict[str, tuple[TopicEntryIndex, ...]]
+
+
 def build_section_grounded_plan(
     ledger: ClaimLedger, structure: DocumentStructure
 ) -> SectionGroundedPlan:
+    context = SectionPlanningContext(
+        table_names_by_atom_id=table_identity_names_by_atom_id(ledger, structure),
+        entry_indexes_by_node=_entry_indexes_by_node(ledger),
+    )
     targets: list[PageTarget] = []
     for node in _section_nodes(structure):
-        target = _target_for_node(ledger, structure, node)
+        target = _target_for_node(ledger, structure, context, node)
         if target is not None:
             targets.append(target)
     target_tuple = tuple(targets)
@@ -137,7 +158,10 @@ def _section_nodes(structure: DocumentStructure) -> tuple[StructureNode, ...]:
 
 
 def _target_for_node(
-    ledger: ClaimLedger, structure: DocumentStructure, node: StructureNode
+    ledger: ClaimLedger,
+    structure: DocumentStructure,
+    context: SectionPlanningContext,
+    node: StructureNode,
 ) -> PageTarget | None:
     label = _clean_heading(node.heading_text)
     if not label or _generic_heading(label):
@@ -148,11 +172,18 @@ def _target_for_node(
     matcher = topic_matcher(terms)
     if matcher is None:
         return None
-    entries = _entries_for_node(ledger, node.structure_node_id)
-    atoms = _atoms_for_node(ledger, structure, node)
+    entry_indexes = context.entry_indexes_by_node.get(node.structure_node_id, ())
+    entries = tuple(index.entry for index in entry_indexes)
+    atoms = _atoms_for_node(ledger, context, node)
     atom_ids = tuple(atom.technical_atom_id for atom in atoms)
-    decision = heading_topic_decision(terms, list(entries), atom_ids, matcher)
-    if not decision.accepted:
+    accepted = _heading_topic_accepted(
+        terms,
+        entry_indexes,
+        atom_ids,
+        matcher,
+        required_topic_terms(terms),
+    )
+    if not accepted:
         return None
     topic_key = "-".join(terms)
     attached = tuple(evidence for entry in entries for evidence in _entry_evidence(entry)) + tuple(
@@ -201,18 +232,53 @@ def _component_topic_keys(label: str, topic_key: str) -> tuple[str, ...]:
     return tuple(dict.fromkeys(keys))
 
 
-def _entries_for_node(ledger: ClaimLedger, node_id: str) -> tuple[LedgerEntry, ...]:
-    return tuple(
-        entry
-        for entry in ledger.usable_entries
-        if entry.ledger_entry_kind in ("claim", "event", "concept")
-        and node_id in entry.structure_node_ids
-        and len((entry.normalized_text or entry.source_text).split()) <= 45
+def _entry_indexes_by_node(ledger: ClaimLedger) -> dict[str, tuple[TopicEntryIndex, ...]]:
+    grouped: dict[str, list[TopicEntryIndex]] = {}
+    for entry in ledger.usable_entries:
+        if entry.ledger_entry_kind not in ("claim", "event", "concept"):
+            continue
+        if len((entry.normalized_text or entry.source_text).split()) > 45:
+            continue
+        index = topic_entry_index(entry)
+        for node_id in entry.structure_node_ids:
+            grouped.setdefault(node_id, []).append(index)
+    return {node_id: tuple(indexes) for node_id, indexes in grouped.items()}
+
+
+def _heading_topic_accepted(
+    terms: tuple[str, ...],
+    entry_indexes: tuple[TopicEntryIndex, ...],
+    atom_ids: tuple[str, ...],
+    matcher: re.Pattern[str],
+    required_terms: tuple[str, ...],
+) -> bool:
+    evidence = tuple(
+        index
+        for index in entry_indexes
+        if topic_entry_index_supports_topic(index, matcher, terms, required_terms)
+    )
+    strong = tuple(
+        index
+        for index in evidence
+        if topic_entry_index_strongly_supports_topic(index, matcher, terms, required_terms)
+    )
+    concept = tuple(index for index in evidence if entry_is_concept_or_definition(index.entry))
+    if not evidence and not atom_ids:
+        return False
+    return not (
+        _all_container_terms(terms) and not (concept or len(strong) >= 2 or atom_ids)
+    )
+
+
+def _all_container_terms(terms: tuple[str, ...]) -> bool:
+    return all(
+        topic_term_role(term) in ("discourse-container", "structural-container")
+        for term in terms
     )
 
 
 def _atoms_for_node(
-    ledger: ClaimLedger, structure: DocumentStructure, node: StructureNode
+    ledger: ClaimLedger, context: SectionPlanningContext, node: StructureNode
 ) -> tuple[TechnicalAtom, ...]:
     atom_ids = {
         entry.technical_atom_id
@@ -223,7 +289,7 @@ def _atoms_for_node(
     }
     section_name = normalize_table_name(node.heading_text)
     if section_name:
-        for atom_id, names in table_identity_names_by_atom_id(ledger, structure).items():
+        for atom_id, names in context.table_names_by_atom_id.items():
             if has_matching_table_name(section_name, names):
                 atom_ids.add(atom_id)
     return tuple(

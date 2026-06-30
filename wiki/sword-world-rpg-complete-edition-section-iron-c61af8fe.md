@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-iron-c61af8fe
 page_kind: source
-summary: [ Iron ]: 10 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Iron ]: 7 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-iron-c61af8fe@a7c9555d5af961c8576e27a51d587244
+projection_coverage: section-sword-world-rpg-complete-edition-section-iron-c61af8fe@9e873b9c080211ce1abc0b502ea13f91
 ---
 
 # [ Iron ]
@@ -18,18 +18,9 @@ From [[sword-world-rpg-complete-edition]].
 
 - [[sword-world-rpg-complete-edition-section-18-3-5e113017]] - broader source section: 18.3
 
-## Statements
-
-- If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11824))_
-- If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11824))_
-
 ## Technical atoms
 
 ### Technical frame 1: [ Iron ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11824))_
-
-> If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed.
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11817, source-range-0b9dec90-11818, source-range-0b9dec90-11819, source-range-0b9dec90-11820, source-range-0b9dec90-11821, source-range-0b9dec90-11822, source-range-0b9dec90-11823))_
 

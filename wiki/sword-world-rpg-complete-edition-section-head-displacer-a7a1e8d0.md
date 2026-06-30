@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-head-displacer-a7a1e8d0
 page_kind: source
-summary: [ Head Displacer ]: 14 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Head Displacer ]: 13 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

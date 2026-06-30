@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-hit-check
 page_kind: concept
-summary: 4.5.1 Hit Checks: 34 statement(s) and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 4.5.1 Hit Checks: 31 statement(s) and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-hit-check@bd65b4f85234fe2dd5c84d2cbd8173c8
+projection_coverage: topic-sword-world-rpg-complete-edition-hit-check@107a64e36ba26a0e70920016baa52a70
 ---
 
 # 4.5.1 Hit Checks
@@ -28,8 +28,6 @@ What [[sword-world-rpg-complete-edition]] covers about 4.5.1 hit checks:
 - In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01484))_
 
 - The target score at this time varies depending on the monster. In the monsters' data, there is a score called evasion points , which becomes the target score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01485))_
-
-- character's attack power + 2D < monster's evasion points → attack fails ※ Double sixes will automatically hit, and double ones will automatically fail. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01487))_
 
 - Since a hit check is also a type of success roll, double ones is an automatic failure and double sixes is an automatic success . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01488))_
 
@@ -56,10 +54,6 @@ What [[sword-world-rpg-complete-edition]] covers about 4.5.1 hit checks:
 ### 《 Distance 》
 
 - This represents the distance the magic can reach. Basically, magic works on things that the caster can see and are within this distance. Any exceptions will always be noted in the explanation that follows. If the distance is touch , the caster must touch the target with their hand or (for ancient magic) with their magical catalyst (see below). To cast these spells in combat, you must be engaged with the target. At this time, there is no need to roll dice to determine whether you've touched your opponent, like with an attack hit check (you can touch them automatically). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02731))_
-
-### Cha Za Special Holy Magic List [ Luck ]
-
-- A defensive success roll should be judged by whether it means you luckily survived . If the game master is unsure, treat it as something where it can't be used. In particular, it can never be used on checks for hitting others with attacks or checks for casting magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04761))_
 
 ### Chapter 9: / Setting Target Scores and Difficulties
 
@@ -101,10 +95,6 @@ What [[sword-world-rpg-complete-edition]] covers about 4.5.1 hit checks:
 
 - In this case, if you spend one round aiming, you can reduce the critical target by 1 if the shot hits. You may spend up to 4 rounds aiming and the critical target may go as low as -4 . In this case, you will not gain a bonus to your hit check using this method (since your opponent is not aware of you, your opponent suffers an automatic -4 penalty to evasion ). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11483))_
 
-### Chapter 16: / Ram
-
-- This is an attack method where you knock an opponent prone by charging forward. This can only be performed with the fi ghter skill , it cannot be used with the thief skill . If your attack hits, make a strike power 0 and critical target 12 damage check. At the same time, the opponent must determine whether he or she fell prone . The attacker must make a success roll using fi ghter skill level + strength bonus as the baseline score, while the defender must make one using either adventurer level + strength bonus or adventurer level + life force bonus ( life point resistance -7 for monsters), whichever is greater. If the attacker's final score is greater, the opponent will fall prone . Conditions such as poor footing, etc. will impose a penalty on the attacker's success roll. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11512))_
-
 ### Chapter 16: / Boomerang
 
 - When this weapon is thrown at an enemy and misses, it returns to the user's hand at the end of the round. However, it will not return if you roll double ones on your hit check or if the boomerang hits the enemy. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11631))_
@@ -124,9 +114,9 @@ What [[sword-world-rpg-complete-edition]] covers about 4.5.1 hit checks:
 
 ### Technical frame 2: 4.5.1 Hit Checks
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01487))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01488))_
 
-> character's attack power + 2D < monster's evasion points → attack fails ※ Double sixes will automatically hit, and double ones will automatically fail.
+> Since a hit check is also a type of success roll, double ones is an automatic failure and double sixes is an automatic success .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01486))_
 
@@ -193,22 +183,10 @@ What [[sword-world-rpg-complete-edition]] covers about 4.5.1 hit checks:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-check]] - broader topic: Check shares source evidence from 4.5.1 Hit Checks: Since a hit check is also a type of success roll, double ones is an automatic failure and double sixes is an automatic success .; Check shares technical record from 4.5.1 Hit Checks: Table 4-1: Rating Table (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms: Power shares source evidence from 4.5.1 Hit Checks: character's attack power + 2D < monster's evasion points → attack fails ※ Double sixes will automatically hit, and double ones will automatically fail.; Power shares technical record from 4.5.1 Hit Checks: When a character attacks a monster, they must make a success roll hit check, using attack power as the baseline score. (3 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-word]] - shared statements and technical atoms: Word shares source evidence from 4.5.1 Hit Checks: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score.; Word shares technical record from 4.5.1 Hit Checks: When a character attacks a monster, they must make a success roll hit check, using attack power as the baseline score. (1 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-play]] - shared statements and technical atoms: Play shares source evidence from 4.5.1 Hit Checks: His player rolls the dice to make a hit check. The roll is 8. 4+8= 12 , which is more than 10. The attack hit the target perfectly.; Play shares technical record from 4.5.1 Hit Checks: Table 4-1: Rating Table (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-player]] - shared statements and technical atoms: Player shares source evidence from 4.5.1 Hit Checks: His player rolls the dice to make a hit check. The roll is 8. 4+8= 12 , which is more than 10. The attack hit the target perfectly.; Player shares technical record from 4.5.1 Hit Checks: Table 4-1: Rating Table (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-ducard]] - shared statements: Ducard shares source evidence from 4.5.1 Hit Checks: Ducard II is fighting a goblin. His attack power is 4 (fighter skill level 2, dexterity bonus 2) and the goblin's evasion points are 10. (5 shared statement(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements: Character shares source evidence from 4.5.1 Hit Checks: character's attack power + 2D < monster's evasion points → attack fails ※ Double sixes will automatically hit, and double ones will automatically fail. (2 shared statement(s))
 - [[sword-world-rpg-complete-edition-target-score]] - shared statements: Target Scores shares source evidence from 4.5.1 Hit Checks: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score. (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-critical-target-variation]] - shared statements: Critical Target Variation shares source evidence from Chapter 16: / Ram: This is an attack method where you knock an opponent prone by charging forward. This can only be performed with the fi ghter skill , it cannot be used with the thief ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared statements: Evasion shares source evidence from 4.5.1 Hit Checks: character's attack power + 2D < monster's evasion points → attack fails ※ Double sixes will automatically hit, and double ones will automatically fail. (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-fail]] - shared statements: Fail shares source evidence from 4.5.1 Hit Checks: character's attack power + 2D < monster's evasion points → attack fails ※ Double sixes will automatically hit, and double ones will automatically fail. (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: Filling Out the Character Sheet shares source evidence from Filling out the Character Sheet: Have you learned each of these terms? Now, let's get into the actual description of the combat procedure. Combat consists of two checks: one is made to determine if ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements: 【 Ranger Skill 】 shares source evidence from 4.5.1 Hit Checks: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score. (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared statements: Rarity shares source evidence from Chapter 14: / 《 Twisted Sling 》: Rarity=15 Enchanter=Dean "The Contrarian" Form=An old, slightly dirty sling Required Strength=4 (Strike power 4) Base Trade Price=80,000 gamels Powers=-1 to hit chec ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-spirit]] - shared statements: Spirit shares source evidence from 《 Hit Checks 》: The spirit magic Sleep is still an exception. Unless the magic itself is broken by Dispel Magic or other magic belonging to mind , they'll never wake up. (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-4-5-1-hit-checks-426c8706]] - source section: 4.5.1 Hit Checks shares source evidence from 4.5.1 Hit Checks: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score.; 4.5.1 Hit Checks shares technical record from 4.5.1 Hit Checks: When a character attacks a monster, they must make a success roll hit check, using attack power as the baseline score. (8 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-4-5-1-hit-checks-426c8706]] - source section: 4.5.1 Hit Checks shares source evidence from 4.5.1 Hit Checks: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score.; 4.5.1 Hit Checks shares technical record from 4.5.1 Hit Checks: When a character attacks a monster, they must make a success roll hit check, using attack power as the baseline score. (7 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-section-4-7-1-hit-checks-62d20d3a]] - source section: 4.7.1 Hit Checks shares source evidence from 4.7.1 Hit Checks: To make a hit check, both sides must roll the dice (2D). The attacker adds their roll to their attack power , and the defender adds their roll to their evasion speed .; 4.7.1 Hit Checks shares technical record from 4.7.1 Hit Checks: To make a hit check, both sides must roll the dice (2D). (7 shared statement(s), 5 shared atom(s))
 - [[sword-world-rpg-complete-edition-section-hit-checks-f105c38c]] - source section: 《 Hit Checks 》 shares source evidence from 《 Hit Checks 》: The spirit magic Sleep is still an exception. Unless the magic itself is broken by Dispel Magic or other magic belonging to mind , they'll never wake up.; 《 Hit Checks 》 shares technical record from 《 Hit Checks 》: Unless the magic itself is broken by Dispel Magic or other magic belonging to mind , they'll never wake up. (1 shared statement(s), 1 shared atom(s))
 

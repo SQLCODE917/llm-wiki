@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-5-1-12-19f66f88
 page_kind: source
-summary: 5.1.12: 1044 source-backed entries and 545 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 5.1.12: 1038 source-backed entries and 545 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-19f66f88@beefc5227ae6fc82f55c61443db301cd
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-19f66f88@d98d824007b6bcfbe8be3c07bca8529e
 ---
 
 # 5.1.12
@@ -251,7 +251,6 @@ From [[sword-world-rpg-complete-edition]].
 - Decreases the target's dexterity by 6. Decreases attack power (points) and the baseline score of dexterity-related abilities by 1 point. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03057))_
 - Increases the target's agility by 6. Affects evasion speed (points) and action order. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03059))_
 - Also increases the baseline score of related abilities. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03060))_
-- Reduces the target's agility by 6. Affects evasion speed (points) and action order. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03062))_
 - Also decreases the baseline score of related abilities. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03063))_
 - Reduces the target's strength by 6. Affects bonus damage (strike points). If, due to this spell being cast, the required strength of your weapon or armor exceeds your own strength, you will be disabled. However, if you're using the optional rules under 16.8: Weapons and Armor That Are Too Heavy (see p. 268), you can still act, but you'll receive a penalty to attack power, evasion speed, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03067))_
 
@@ -363,7 +362,6 @@ From [[sword-world-rpg-complete-edition]].
 ### Blizzard ]
 
 - Expansion=Final score, distance, area, damage certainty Resist=Reduced effect This spell creates a sudden storm containing countless pieces of ice the size of pebbles, in a space within a 5 meter radius centered on a point, dealing cold damage to everything within range. Its strike power is 20. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03258))_
-- Expansion=Final score, distance, area, damage certainty Resist=Reduced effect This spell creates a sudden storm containing countless pieces of ice the size of pebbles, in a space within a 5 meter radius centered on a point, dealing cold damage to everything within range. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03258))_
 
 ### 6th Level Ancient Magic List [ Acid Cloud ]
 
@@ -576,7 +574,6 @@ From [[sword-world-rpg-complete-edition]].
 
 - The fact that there are countless unseen masses of rock floating in the sky is considered a matter of course among sages. These rocks fall to the ground at a rate of about once every hundred years. These rocks floating in the sky are called meteorites. The spell Meteor Strike is a spell that allows the caster to control a meteorite (a very small one) at will, and make it fall to the ground. The meteorite will fall the moment you finish the spell, causing a large explosion. Targets within the area of effect will be hit by shockwaves and fragments of the meteorite, suffering strike power 50 _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03658))_
 - damage. Of course, its destructive power would be enough to destroy buildings and ramparts. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03659))_
-- Targets within the area of effect will be hit by shockwaves and fragments of the meteorite, suffering strike power 50 _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03658))_
 
 ## Technical atoms
 

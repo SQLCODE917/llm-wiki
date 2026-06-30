@@ -44,6 +44,7 @@ from llmwiki.domain.ledger.source_coverage import build_source_coverage
 from llmwiki.domain.ledger.topics import build_topic_index, plan_source_topics
 from llmwiki.domain.objects import Schema
 from llmwiki.domain.pages import WikiPage, slugify
+from llmwiki.domain.source_summary import SourceClaim
 from llmwiki.pdf.document import DocumentModel
 from llmwiki.runtime.document_model_segmentation import segment_document_model
 from llmwiki.runtime.ledger_artifact_bundle import build_serialized_artifact_bundle
@@ -54,7 +55,11 @@ from llmwiki.runtime.ledger_pages import (
     source_element_records,
     source_title,
 )
-from llmwiki.runtime.ledger_segmentation import ChunkText, segment_chunks
+from llmwiki.runtime.ledger_segmentation import (
+    ChunkText,
+    segment_chunks,
+    segment_page_plan_claim_chunks,
+)
 
 
 @dataclass(frozen=True)
@@ -78,12 +83,28 @@ def build_source_ledger(
     evidence_registry_hash: str,
     chunks: tuple[ChunkText, ...],
     document_model: DocumentModel | None = None,
+    source_claims: tuple[SourceClaim, ...] = (),
     today: str,
     schema: Schema | None = None,
 ) -> SourceLedgerResult:
     resolved_schema = schema or Schema()
     bundle = default_schema_bundle()
-    if document_model is None:
+    if document_model is not None and source_claims:
+        inputs, profiles = segment_document_model(
+            document_model,
+            source_locator=source_locator,
+            source_hash=source_hash,
+            schema=resolved_schema,
+            source_claims_by_heading=_source_claims_by_heading(chunks, source_claims),
+        )
+    elif source_claims:
+        inputs, profiles = segment_page_plan_claim_chunks(
+            chunks,
+            source_claims,
+            source_locator=source_locator,
+            source_hash=source_hash,
+        )
+    elif document_model is None:
         inputs, profiles = segment_chunks(
             chunks, source_locator=source_locator, source_hash=source_hash, schema=resolved_schema
         )
@@ -262,3 +283,15 @@ def build_source_ledger(
         portable_artifact_set=artifact_bundle.portable_artifact_set,
         summary=summary,
     )
+
+
+def _source_claims_by_heading(
+    chunks: tuple[ChunkText, ...], source_claims: tuple[SourceClaim, ...]
+) -> dict[str, tuple[SourceClaim, ...]]:
+    heading_by_unit = {chunk.unit_id: chunk.heading_path for chunk in chunks}
+    grouped: dict[str, list[SourceClaim]] = {}
+    for claim in source_claims:
+        heading = heading_by_unit.get(claim.extracted_unit_id)
+        if heading:
+            grouped.setdefault(heading, []).append(claim)
+    return {heading: tuple(claims) for heading, claims in grouped.items()}

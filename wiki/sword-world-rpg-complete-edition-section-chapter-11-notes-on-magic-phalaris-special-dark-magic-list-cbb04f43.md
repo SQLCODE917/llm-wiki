@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-phalaris-special-dark-magic-list-cbb04f43
 page_kind: source
-summary: Chapter 11: Notes on Magic / Phalaris Special Dark Magic List ]: 14 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 11: Notes on Magic / Phalaris Special Dark Magic List ]: 13 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

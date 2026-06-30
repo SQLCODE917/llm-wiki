@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-ceiling-hanger-7a6fa718
 page_kind: source
-summary: [ Ceiling Hanger ]: 31 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Ceiling Hanger ]: 30 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

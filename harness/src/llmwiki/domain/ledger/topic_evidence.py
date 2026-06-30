@@ -28,10 +28,15 @@ def heading_topic_decision(
     entries: list[LedgerEntry],
     atom_ids: tuple[str, ...],
     matcher: re.Pattern[str],
+    required_terms: tuple[str, ...] | None = None,
 ) -> TopicEvidenceDecision:
-    evidence = tuple(entry for entry in entries if entry_supports_topic(entry, matcher, terms))
+    evidence = tuple(
+        entry for entry in entries if entry_supports_topic(entry, matcher, terms, required_terms)
+    )
     strong = tuple(
-        entry for entry in evidence if entry_strongly_supports_topic(entry, matcher, terms)
+        entry
+        for entry in evidence
+        if entry_strongly_supports_topic(entry, matcher, terms, required_terms)
     )
     concept = tuple(entry for entry in evidence if _is_concept_or_definition(entry))
     if not evidence and not atom_ids:
@@ -50,9 +55,12 @@ def entry_supports_topic(
     entry: LedgerEntry,
     matcher: re.Pattern[str],
     terms: tuple[str, ...] = (),
+    required_terms: tuple[str, ...] | None = None,
 ) -> bool:
-    return entry_strongly_supports_topic(entry, matcher, terms) or topic_field_matches(
-        entry.normalized_text or entry.source_text, matcher, terms
+    return entry_strongly_supports_topic(
+        entry, matcher, terms, required_terms
+    ) or topic_field_matches(
+        entry.normalized_text or entry.source_text, matcher, terms, required_terms
     )
 
 
@@ -60,13 +68,17 @@ def entry_strongly_supports_topic(
     entry: LedgerEntry,
     matcher: re.Pattern[str],
     terms: tuple[str, ...] = (),
+    required_terms: tuple[str, ...] | None = None,
 ) -> bool:
     return (
         _is_concept_or_definition(entry)
-        and any(topic_field_matches(facet, matcher, terms) for facet in entry.concept_facets)
+        and any(
+            topic_field_matches(facet, matcher, terms, required_terms)
+            for facet in entry.concept_facets
+        )
     ) or bool(
-        topic_field_matches(entry.subject, matcher, terms)
-        or topic_field_matches(entry.object_value, matcher, terms)
+        topic_field_matches(entry.subject, matcher, terms, required_terms)
+        or topic_field_matches(entry.object_value, matcher, terms, required_terms)
     )
 
 
@@ -75,13 +87,19 @@ def topic_entry_rank(
     matcher: re.Pattern[str],
     ledger: ClaimLedger,
     terms: tuple[str, ...] = (),
+    required_terms: tuple[str, ...] | None = None,
 ) -> tuple[int, int, int, int, int, int, int, int, str]:
     is_concept = entry.ledger_entry_kind == "concept"
     is_definition = _is_concept_or_definition(entry)
-    subject_match = topic_field_matches(entry.subject, matcher, terms)
-    object_match = topic_field_matches(entry.object_value, matcher, terms)
-    facet_match = any(topic_field_matches(facet, matcher, terms) for facet in entry.concept_facets)
-    text_match = topic_field_matches(entry.normalized_text or entry.source_text, matcher, terms)
+    subject_match = topic_field_matches(entry.subject, matcher, terms, required_terms)
+    object_match = topic_field_matches(entry.object_value, matcher, terms, required_terms)
+    facet_match = any(
+        topic_field_matches(facet, matcher, terms, required_terms)
+        for facet in entry.concept_facets
+    )
+    text_match = topic_field_matches(
+        entry.normalized_text or entry.source_text, matcher, terms, required_terms
+    )
     strong_match = subject_match or object_match or facet_match
     return (
         0 if strong_match else 1,

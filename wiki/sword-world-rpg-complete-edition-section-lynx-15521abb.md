@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-lynx-15521abb
 page_kind: source
-summary: [ Lynx ]: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Lynx ]: 9 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

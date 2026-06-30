@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-ability-bonuse@c357045e6836ed2173e175e04cef72bf
+projection_coverage: topic-sword-world-rpg-complete-edition-ability-bonuse@a2bf4f399a1137b25c1aea634f398473
 ---
 
 # 【 Ability Bonuses 】
@@ -53,15 +53,8 @@ What [[sword-world-rpg-complete-edition]] covers about 【 ability bonuses 】:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-ability]] - broader topic: Ability shares source evidence from 【 Ability Bonuses 】: An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in Sword World RPG , success or failure is determin ... [truncated]; Ability shares technical record from 【 Ability Bonuses 】: Table 1-1: Ability Bonuses (4 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms: Score shares source evidence from 【 Ability Bonuses 】: An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in Sword World RPG , success or failure is determin ... [truncated]; Score shares technical record from 【 Ability Bonuses 】: Table 1-1: Ability Bonuses (4 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-result]] - shared statements and technical atoms: Result shares source evidence from 【 Ability Bonuses 】: An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in Sword World RPG , success or failure is determin ... [truncated]; Result shares technical record from 【 Ability Bonuses 】: Table 1-1: Ability Bonuses (1 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-ability-score]] - shared statements: Ability Scores shares source evidence from 【 Ability Bonuses 】: An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in Sword World RPG , success or failure is determin ... [truncated] (6 shared statement(s))
-- [[sword-world-rpg-complete-edition-bonus]] - shared statements: Bonus shares source evidence from [ ⑤ Ability Bonuses ]: Once ability scores have been calculated, the next step is the ability bonuses. A bonus is an ability score divided by 6 (rounded down). (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: Filling Out the Character Sheet shares source evidence from 1.4.2 Determine Ability Scores: Once the ability scores have been determined, also find the ability bonuses and write them down on the Character Sheet. (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-human]] - shared statements: Human shares source evidence from 【 Ability Bonuses 】: Humans are not the only adventurers in Forcelia. Next, we'll explain the races that are relatively common as adventurers in Forcelia, though they're not as common as humans. (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-play]] - shared statements: Play shares source evidence from 【 Ability Bonuses 】: Players are free to choose from humans or any of these races to be their alter ego, an adventurer. (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-player]] - shared statements: Player shares source evidence from 【 Ability Bonuses 】: Players are free to choose from humans or any of these races to be their alter ego, an adventurer. (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-section-ability-bonuses-d68698df]] - source section: 【 Ability Bonuses 】 shares source evidence from 【 Ability Bonuses 】: An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in Sword World RPG , success or failure is determin ... [truncated]; 【 Ability Bonuses 】 shares technical record from 【 Ability Bonuses 】: etc.) When a character's ability score increases or decreases, even temporarily, the ability bonus increases or decreases accordingly. (7 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-section-ability-bonuses-b2f8cd3d]] - source section: [ ⑤ Ability Bonuses ] shares source evidence from [ ⑤ Ability Bonuses ]: Once ability scores have been calculated, the next step is the ability bonuses. A bonus is an ability score divided by 6 (rounded down). (2 shared statement(s))
 

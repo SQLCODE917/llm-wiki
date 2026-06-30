@@ -188,6 +188,98 @@ def test_repeated_section_topics_include_direct_topic_mentions_outside_targets()
     assert "atom-noise" not in topics[0].atom_ids
 
 
+def test_repeated_numbered_compound_topics_do_not_include_adverbial_prefix_noise() -> None:
+    ledger = _ledger(
+        _entry(
+            "entry-language-one",
+            "node-language-one",
+            "Normal languages are words used for communication.",
+            "Normal languages",
+        ),
+        _entry(
+            "entry-language-two",
+            "node-language-two",
+            "Only normal languages are described in monster language fields.",
+            "Only normal languages",
+        ),
+        _entry(
+            "entry-resistance",
+            "node-resistance",
+            "Normally, this would never succeed, but our 2D roll is 12.",
+            "Normally, this",
+        ),
+    )
+    structure = DocumentStructure(
+        "root",
+        (
+            StructureNode("root", "root", "source.pdf", "root", "source.pdf", 0),
+            StructureNode(
+                "node-language-one",
+                "section",
+                "12.1.1 Normal Languages",
+                "range-language-one",
+                "source.pdf",
+                1,
+            ),
+            StructureNode(
+                "node-language-two",
+                "section",
+                "12.1.2 Normal Languages of Monsters",
+                "range-language-two",
+                "source.pdf",
+                2,
+            ),
+            StructureNode(
+                "node-resistance",
+                "section",
+                "Resistance Rolls",
+                "range-resistance",
+                "source.pdf",
+                3,
+            ),
+        ),
+    )
+    section_plan = SectionGroundedPlan(
+        section_grounded_plan_id="section-plan",
+        section_grounded_plan_fingerprint="fingerprint",
+        source_locator="source.pdf",
+        source_hash="sourcehash",
+        page_targets=(
+            PageTarget(
+                page_target_id="target-language-one",
+                topic_key="12-normal-language",
+                label="12.1.1 Normal Languages",
+                page_kind="concept",
+                structure_node_id="node-language-one",
+                source_range_id="range-language-one",
+                concept_keys=(),
+                entry_ids=("entry-language-one",),
+                atom_ids=(),
+                attached_evidence=(),
+            ),
+            PageTarget(
+                page_target_id="target-language-two",
+                topic_key="12-normal-language",
+                label="12.1.2 Normal Languages of Monsters",
+                page_kind="concept",
+                structure_node_id="node-language-two",
+                source_range_id="range-language-two",
+                concept_keys=(),
+                entry_ids=("entry-language-two",),
+                atom_ids=(),
+                attached_evidence=(),
+            ),
+        ),
+        source_coverage_map=(),
+    )
+
+    topics = plan_source_topics(ledger, structure, section_plan=section_plan)
+
+    assert len(topics) == 1
+    assert set(topics[0].entry_ids) == {"entry-language-one", "entry-language-two"}
+    assert "entry-resistance" not in topics[0].entry_ids
+
+
 def _entry(entry_id: str, node_id: str, text: str, subject: str) -> LedgerEntry:
     return LedgerEntry(
         ledger_entry_id=entry_id,

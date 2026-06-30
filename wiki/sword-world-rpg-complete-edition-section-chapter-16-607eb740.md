@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-16-607eb740
 page_kind: source
-summary: Chapter 16:: 25 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 16:: 25 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-607eb740@d91eef727c706da1b6579a1a029c2444
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-607eb740@3d5d0a66c690ff56cc317f5739ee577f
 ---
 
 # Chapter 16:
@@ -87,27 +87,3 @@ From [[sword-world-rpg-complete-edition]].
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11179))_
 
 > [Figure] (p.261)
-
-### Technical atom 5
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04906))_
-
-| entry | content |
-| --- | --- |
-| 6 | 1 Precautions When Using Skills The abilities associated with these skills, including the thief skill , are mostly determined by success rolls. If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target |
-| 6 | 2 |
-| 6 | 2 Thief Skill |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Precautions When Using Skills
-6.1 Precautions When Using Skills
-The  abilities  associated  with  these skills, including the thief skill , are mostly determined by success rolls.
-If the rules for determining the target score  or  difficulty  are  clearly  indicated, the  game  master  should  follow  those rules,  otherwise  the  game  master  must follow the rules under 9.1: Setting Target
-6.2
-6.2 Thief Skill
-```
-
-</details>

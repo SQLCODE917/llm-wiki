@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-projectiles-783a061b@0cdeafa92a13db652d86b3ef46c1168e
+projection_coverage: section-sword-world-rpg-complete-edition-section-projectiles-783a061b@92b4b73fdf0d56d7db9dee9b2943191c
 ---
 
 # Projectiles
@@ -17,6 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-1-4-1e239ef6]] - broader source section: 1.4
+- [[sword-world-rpg-complete-edition-projectile]] - topic hub: opens the topic page for Projectile
 
 ## Statements
 

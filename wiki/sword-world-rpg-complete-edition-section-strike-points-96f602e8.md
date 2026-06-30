@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-strike-points-96f602e8@1de11a51a843a4804b717a3c24bdba8c
+projection_coverage: section-sword-world-rpg-complete-edition-section-strike-points-96f602e8@95f32bd5cd2b085dadf135ece52139a1
 ---
 
 # 《 Strike Points
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-13-2-1-6e762209]] - broader source section: 13.2.1
-- [[sword-world-rpg-complete-edition-strike]] - topic hub: opens the topic page for Strike
 
 ## Statements
 

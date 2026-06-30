@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-full-resistance-b1dbfd23@38eaac3f0ff7335385b661c538d6245c
+projection_coverage: section-sword-world-rpg-complete-edition-section-full-resistance-b1dbfd23@c64cb234371149c53d186d9c84725047
 ---
 
 # Full Resistance
@@ -17,6 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-17-5-6a8ab9c7]] - broader source section: 17.5
+- [[sword-world-rpg-complete-edition-resistance]] - topic hub: opens the topic page for Resistance
 - [[sword-world-rpg-complete-edition-section-resistance-7078c5ed]] - same source heading: another source section with the same heading, Resistance
 
 ## Statements

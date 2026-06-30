@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-rules-for-awarding-greater-experience-points-7a8fb439
 page_kind: source
-summary: Rules for Awarding Greater Experience Points: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Rules for Awarding Greater Experience Points: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

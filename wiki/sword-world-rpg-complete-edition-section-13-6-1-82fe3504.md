@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-13-6-1-82fe3504
 page_kind: source
-summary: 13.6.1: 38 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.6.1: 38 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-1-82fe3504@3c1419ed20b244b56c49ecb7f9e88f35
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-1-82fe3504@520287efbf28d53c69d0374facadb9f0
 ---
 
 # 13.6.1
@@ -130,27 +130,3 @@ From [[sword-world-rpg-complete-edition]].
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09830))_
 
 > You must also make a mental power resistance roll against the indicated target score, which if successful will result in a smaller amount of damage.
-
-### Technical atom 8
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04906))_
-
-| entry | content |
-| --- | --- |
-| 6 | 1 Precautions When Using Skills The abilities associated with these skills, including the thief skill , are mostly determined by success rolls. If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target |
-| 6 | 2 |
-| 6 | 2 Thief Skill |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Precautions When Using Skills
-6.1 Precautions When Using Skills
-The  abilities  associated  with  these skills, including the thief skill , are mostly determined by success rolls.
-If the rules for determining the target score  or  difficulty  are  clearly  indicated, the  game  master  should  follow  those rules,  otherwise  the  game  master  must follow the rules under 9.1: Setting Target
-6.2
-6.2 Thief Skill
-```
-
-</details>

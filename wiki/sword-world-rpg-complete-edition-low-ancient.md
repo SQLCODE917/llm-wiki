@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-low-ancient
 page_kind: concept
-summary: 《 Low Ancient 》: 22 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 《 Low Ancient 》: 20 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-low-ancient@31410c07eb6debfd59ccb2f80ea2b4dd
+projection_coverage: topic-sword-world-rpg-complete-edition-low-ancient@6692a0754504689edfc83759a015811f
 ---
 
 # 《 Low Ancient 》
@@ -45,10 +45,6 @@ What [[sword-world-rpg-complete-edition]] covers about 《 low ancient 》:
 
 - Monster Level=5 Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11 Evasion Points=11 (4) Defense Points=8 Life Points/Resistance=20/14 (7) Mental Points/Resistance=16/13 (6) Special Abilities=4th level ancient magic (Magic Intensity/Magic Power=13/6) Needs bloodsucking to maintain life points Habitat=Human villages Languages=Regional, low ancient _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07537))_
 
-### [ Buckbaird ]
-
-- Not affected by poison and illness Sleepless Habitat=Underground labyrinths, ruins Languages=Low ancient Perception=Pseudo _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07747))_
-
 ### [ Homunculus ]
 
 - Monster Level=1 Rarity=14 Agility=14 Movement Speed=4/7 (air) Number=One Frequency=Very rare Intellect=Human Reaction=Neutral Attack Points=Barehanded:8 (1) Strike Points=1 Evasion Points=10 (3) Defense Points=3 Life Points/Resistance=6/8 (1) Mental Points/Resistance=14/9 (2) Special Abilities=None in particular Habitat=Depends on the caster Languages=Low ancient Perception=Five senses _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08953))_
@@ -77,10 +73,6 @@ What [[sword-world-rpg-complete-edition]] covers about 《 low ancient 》:
 
 - This item was developed so that even those without the sorcerer skill can use ancient magic. It does not consume mental power when used. To use it, a manual written in low ancient is included in its box, and if you chant a spell name in low ancient while tearing up the card, the magical power previously bestowed on the card will be released. Magic intensity is 15, and the effect cannot be expanded at all. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10884))_
 
-### Chapter 14: / [ Seal Stone ]
-
-- This stone's magical power will appear when you aim it at an opponent and chant a password in low ancient. Those who fail to resist will have their soul sealed in the stone (resist target score is 18). A body that's lost its soul must faithfully obey the commands of the stone's owner. It has no effect on undead, etc. which do not have souls. Only one person's soul can be sealed in at a time. No memories will remain while the soul is sealed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10930))_
-
 
 ## Technical atoms
 
@@ -103,21 +95,7 @@ What [[sword-world-rpg-complete-edition]] covers about 《 low ancient 》:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-ancient]] - broader topic: Ancient shares source evidence from 《 Low Ancient 》: This was an everyday language of the ancient kingdom, called low ancient , and was the language used by citizens and slaves. Sorcerers can speak, read and write in t ... [truncated] (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-12-normal-language]] - shared statements and technical atoms: 12.1.1 Normal Languages shares source evidence from Chapter 12: Various Checks / 《 Common 》: Common is the language most widely used in the world of Sword World . This language was first used during the early new kingdom period, replacing low ancient which h ... [truncated]; 12.1.1 Normal Languages shares technical record from Chapter 12: Various Checks / Languages: An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common). (4 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-sage-skill]] - shared statements and technical atoms: Sage Skill shares source evidence from Chapter 6: / [ ② Languages [Intelligence]] / Sage Skill: There are limitations to learning languages through the sage skill. Characters who cannot read common must fi rst learn how to read common before learning other lang ... [truncated]; Sage Skill shares technical record from Chapter 12: Various Checks / Languages: An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common). (3 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms: Adventure shares source evidence from Chapter 12: Various Checks / Languages: If an adventurer who has learned low ancient through the sage skill acquires the sorcerer skill, they will not be able to learn another language because it would jus ... [truncated]; Adventure shares technical record from Chapter 12: Various Checks / Languages: An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common). (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer]] - shared statements and technical atoms: Adventurer shares source evidence from Chapter 12: Various Checks / Languages: If an adventurer who has learned low ancient through the sage skill acquires the sorcerer skill, they will not be able to learn another language because it would jus ... [truncated]; Adventurer shares technical record from Chapter 12: Various Checks / Languages: An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common). (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms: Skill shares technical record from Chapter 12: Various Checks / Languages: An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common). (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-agility]] - shared statements: Agility shares source evidence from [ Lamia ]: Monster Level=5 Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11 Evasi ... [truncated] (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements: Level shares source evidence from [ Lamia ]: Monster Level=5 Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11 Evasi ... [truncated] (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-move]] - shared statements: Move shares source evidence from [ Lamia ]: Monster Level=5 Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11 Evasi ... [truncated] (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared statements: Rarity shares source evidence from [ Lamia ]: Monster Level=5 Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11 Evasi ... [truncated] (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements: Character shares source evidence from Chapter 6: / [ ② Languages [Intelligence]] / Sage Skill: There are limitations to learning languages through the sage skill. Characters who cannot read common must fi rst learn how to read common before learning other lang ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-magical]] - shared statements: Magical shares source evidence from Chapter 14: / [ Seal Stone ]: This stone's magical power will appear when you aim it at an opponent and chant a password in low ancient. Those who fail to resist will have their soul sealed in th ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements: Power shares source evidence from Chapter 14: / [ Seal Stone ]: This stone's magical power will appear when you aim it at an opponent and chant a password in low ancient. Those who fail to resist will have their soul sealed in th ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-sorcerer]] - shared statements: Sorcerer shares source evidence from 《 Low Ancient 》: This was an everyday language of the ancient kingdom, called low ancient , and was the language used by citizens and slaves. Sorcerers can speak, read and write in t ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-sword]] - shared statements: Sword shares source evidence from Chapter 14: / 《 Brain Blade 》: This sword has knowledge about enemies and speaks to the user's mind, telling him or her the enemy's name and strength in concrete scores. The contents of this knowl ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-section-low-ancient-fa46dad7]] - source section: 《 Low Ancient 》 shares source evidence from 《 Low Ancient 》: This was an everyday language of the ancient kingdom, called low ancient , and was the language used by citizens and slaves. Sorcerers can speak, read and write in t ... [truncated] (3 shared statement(s))
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-low-ancient-f237b444]] - source section: Chapter 12: Various Checks / 《 Low Ancient 》 shares source evidence from Chapter 12: Various Checks / 《 Low Ancient 》: Low ancient is the normal language used in the ancient kingdom of Kastuul, which once flourished throughout Alecrast. Although it is now a dead language, its words a ... [truncated]; Chapter 12: Various Checks / 《 Low Ancient 》 shares technical record from Chapter 12: Various Checks / 《 Low Ancient 》: This is because you cannot begin to understand the great civilization of the ancient kingdom unless you know low ancient. (3 shared statement(s), 1 shared atom(s))
 

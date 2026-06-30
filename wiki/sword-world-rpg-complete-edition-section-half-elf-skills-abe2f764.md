@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-half-elf-skills-abe2f764@3bc7d6c1f902f16f60769b2e58b9593b
+projection_coverage: section-sword-world-rpg-complete-edition-section-half-elf-skills-abe2f764@85dc18f8ac4d27a80a6898ee4a1de4f8
 ---
 
 # 【 Half-Elf 】 / Skills
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-half-elf-8416755e]] - broader source section: 【 Half-Elf 】
-- [[sword-world-rpg-complete-edition-skill]] - topic hub: opens the topic page for Skill
 
 ## Statements
 

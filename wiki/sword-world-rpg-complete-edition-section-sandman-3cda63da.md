@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-sandman-3cda63da
 page_kind: source
-summary: [ Sandman ]: 16 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Sandman ]: 15 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

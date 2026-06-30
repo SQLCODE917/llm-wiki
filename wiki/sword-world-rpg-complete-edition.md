@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition
 page_kind: source
-summary: Claim-ledger projection (history): 12577 usable entries, 4708 technical atoms, 1129 needs-review, 1343 linked page(s); write decision write-with-review-work.
+summary: Claim-ledger projection (history): 12343 usable entries, 4708 technical atoms, 1304 needs-review, 1330 linked page(s); write decision write-with-review-work.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
+projection_coverage: projection-coverage-255a643d494d53d6@46b21e43b4ec6ce9
 ---
 
 # What is a Role-Playing Game (RPG)?
@@ -1239,7 +1239,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Y ou should buy a weapon whose required strength is the same as your own strength. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00996))_
 - Ranger does not include the ability to fight with melee weapons, but it does include the ability to handle projectiles . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00996))_
 - On Table 1-8: Weapons, they are indicated as throwable made for throwing , and shooting . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00996))_
-- For weapons, there are no restrictions. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00996))_
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00996))_
 
@@ -1744,7 +1743,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ### Success Rolls Using Adventurer Level
 
-- adventuring, the baseline score for a success roll is adventurer level + ability bonus . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01257))_
 - Actions that fit into this category are explained in 6.6: Common Adventurer Abilities . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01258))_
 
 ### Resistance Rolls
@@ -1802,7 +1800,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Each round begins with an announcement of what your character intends to do. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01287))_
 - In combat, there are basically two opposing groups. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01288))_
 - Suppose there are three characters, a1, a2, and a3 in group A and two characters, b1 and b2 in group B . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01289))_
-- announcements are made by each group. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01289))_
 - In this case, the order of action announcements is A → B or B → A . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01289))_
 - The group with the highest intelligence among all the characters (including monsters, etc.) participating in combat will announce their action later . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01290))_
 - Which of the two will make their action announcements first is determined based on intelligence . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01290))_
@@ -1949,7 +1946,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - In this case, an intended attack on an enemy that is about to withdraw can be changed to another target that you're engaged with. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01338))_
 - At this time, an attacker can choose any new target to switch to (from among those they're engaged with). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01339))_
 - As we'll see later, if all the enemies you're engaged with attempt to withdraw (flee), even if they have high agility, you can still _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01340))_
-- attack, and you will have a higher chance of hitting than usual. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01342))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01335))_
 
@@ -2254,7 +2250,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - The greater this score, the more damage a character will deal. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01443))_
 - However, if the weapon is a two-handed weapon, it's instead required strength + 5 . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01444))_
 - Strike power is the same number as the required strength of the weapon used. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01444))_
-- If a character does not have a weapon (they're barehanded ), Strike Power is 0 . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01446))_
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01443))_
 
@@ -2376,7 +2371,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01484))_
 - In the monsters' data, there is a score called evasion points , which becomes the target score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01485))_
-- character's attack power + 2D < monster's evasion points → attack fails ※ Double sixes will automatically hit, and double ones will automatically fail. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01487))_
 - Since a hit check is also a type of success roll, double ones is an automatic failure and double sixes is an automatic success . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01488))_
 - Ducard II is fighting a goblin. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01490))_
 - His attack power is 4 (fighter skill level 2, dexterity bonus 2) and the goblin's evasion points are 10. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01490))_
@@ -2577,7 +2571,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - This check is also made with a success roll. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02195))_
 - The baseline score is the character's evasion speed . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02196))_
 - The target score is still different for each monster, but it's called the monster's attack points . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02196))_
-- ※ Double sixes will automatically evade, and double ones will automatically fail _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02199))_
 - Since this is a success roll, double sixes and double ones are automatic successes and automatic failures , respectively. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02200))_
 - On the other hand, the goblin has 10 attack points. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02202))_
 - Ducard II has an evasion speed of 5 (fighter level 2, agility bonus +2, has a shield). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02202))_
@@ -2687,8 +2680,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## 4.7
 
 ### Attacks From Characters Against Characters
-
-- While infighting between player characters is something you should avoid at all costs, fights against nonplayer characters are common. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02237))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02237))_
 
@@ -2852,7 +2843,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - If the character's life force is negative , the negative amount will be used as a penalty . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02322))_
 - The baseline score is life force resistance (adventurer level + life force bonus) and the target score is 7 . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02322))_
 - This check is made using a life force resistance roll . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02322))_
-- life force resistance + 2D -(damage applied beyond life force) < 7 → death _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02324))_
 - His result after rolling 2D is 7 . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02326))_
 - His life force resistance is 5 (adventurer level 2, life force bonus +3). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02326))_
 - Since Ducard II has a life force of -4 , that will also be the penalty. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02326))_
@@ -3213,8 +3203,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - Rune masters are divided into five types according to the type of magic (runes) they use. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02439))_
 - In Sword World , all those who use magic utilizing runes are called rune masters . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02439))_
-- Sorcerer uses ancient magic Shaman uses spirit magic Priest uses holy magic Dark priest uses dark magic _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02440))_
-- and dragon priest uses dragon roar magic . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02441))_
 - Each corresponds to the skill for which it is named. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02442))_
 - Those with the sorcerer skill can use ancient magic and are called sorcerers . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02442))_
 - Some rune masters are fluent in multiple runes. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02443))_
@@ -3223,7 +3211,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - One, is that some races may not be able to learn some or all of the runes. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02444))_
 - These types of magic are obtained through belief in gods , wicked gods , and dragons , respectively. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02445))_
 - A character cannot hold more than one of these beliefs at the same time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02445))_
-- The other, is that you cannot have more than one each of holy, dark, and dragon roar magic at the same time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02445))_
 
 ## 5.1.3 Learning Magic
 
@@ -3612,9 +3599,7 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## Consuming Mental Power
 
 - When using magic, an adventurer must temporarily reduce their mental power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02554))_
-- This base mental power cost, divided by the corresponding rune master skill level _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02555))_
 - Each magic has a score called base mental power cost . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02555))_
-- (rounded up), equals the actual mental power consumed by the character. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02556))_
 - A character with shaman skill level 2 uses the Fire Bolt spell. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02558))_
 - The character must consume 5 ÷ 2 = 2.5, rounding up to 3 points of mental power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02558))_
 - The base mental power cost for Fire Bolt is 5 . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02558))_
@@ -3936,7 +3921,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## 《 Counters (Negates) 》
 
-- and Increase Weight (which makes an object heavier), but when both of these are cast on the same object at the same time, they will cancel each other out and disappear without taking effect. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02654))_
 - Such magic, that is, magic that negates the effect of other magic, but at the same time is negated by that other magic without taking its own effect, is called counters (negates): type. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02655))_
 - Such magic, that is, magic that negates the effect of other magic, but at the same time is negated by that other magic without taking its own effect, is called counters (negates): type. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02655))_
 - When casting counters (negates): magic to cancel the effect of certain magic, if the magic that was cast prior has a target score , then according to the definition of magic with a target score , the magic that's cast after cannot cancel the prior magic unless its final score is greater than or equal to the determined target score . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02656))_
@@ -5233,8 +5217,8 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Increases attack power (points) and the baseline score of dexterity-related abilities by 1 point. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03055))_
 - Decreases attack power (points) and the baseline score of dexterity-related abilities by 1 point. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03057))_
 - Affects evasion speed (points) and action order. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03059))_
+- Affects evasion speed (points) and action order. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03059))_
 - Also increases the baseline score of related abilities. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03060))_
-- Affects evasion speed (points) and action order. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03062))_
 - Also decreases the baseline score of related abilities. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03063))_
 - 268), you can still act, but you'll receive a penalty to attack power, evasion speed, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03067))_
 
@@ -5471,7 +5455,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - They will fall off or break in the process of changing. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03121))_
 - Only the caster's body will change shape, the clothes and accessories they're wearing do not change. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03121))_
 - You will also gain special abilities such as flying. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03123))_
-- creature they changed into. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03123))_
 - The caster will not lose their sense of self, and can cancel the spell at will. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03123))_
 - You will also gain special abilities such as flying. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03123))_
 
@@ -6008,9 +5991,7 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## Blizzard ]
 
-- Expansion=Final score, distance, area, damage certainty Resist=Reduced effect This spell creates a sudden storm containing countless pieces of ice the size of pebbles, in a space within a 5 meter radius centered on a point, dealing cold damage to everything within range. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03258))_
 - Its strike power is 20. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03258))_
-- Expansion=Final score, distance, area, damage certainty Resist=Reduced effect This spell creates a sudden storm containing countless pieces of ice the size of pebbles, in a space within a 5 meter radius centered on a point, dealing cold damage to everything within range. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03258))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03252))_
 
@@ -6882,7 +6863,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - This illusionary beast can only be seen by the target. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03504))_
 - This attack can only target the person targeted by the spell. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03504))_
-- As the name suggests, this is a spell that creates an illusionary beast to attack the target. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03504))_
 - The attack will continue until the illusionary beast itself is defeated, this spell is removed, the duration expires, or the target dies. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03504))_
 - In the round in which the spell is cast, an illusionary beast will appear in front of the target, and begin attacking on the next round. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03504))_
 - This illusionary beast can only be seen by the target. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03504))_
@@ -7491,11 +7471,9 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - The fact that there are countless unseen masses of rock floating in the sky is considered a matter of course among sages. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03658))_
 - These rocks fall to the ground at a rate of about once every hundred years. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03658))_
-- Targets within the area of effect will be hit by shockwaves and fragments of the meteorite, suffering strike power 50 _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03658))_
 - These rocks floating in the sky are called meteorites. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03658))_
 - The spell Meteor Strike is a spell that allows the caster to control a meteorite (a very small one) at will, and make it fall to the ground. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03658))_
 - The meteorite will fall the moment you finish the spell, causing a large explosion. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03658))_
-- Targets within the area of effect will be hit by shockwaves and fragments of the meteorite, suffering strike power 50 _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03658))_
 - Of course, its destructive power would be enough to destroy buildings and ramparts. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03659))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03649))_
@@ -7799,7 +7777,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## 2nd Level Spirit Magic List [ Will-O-Wisp ] (Will-O-Wisp/Light Spirit)
 
-- Counters (Negates): Shade , Spirit Wall: Shade Countered (Negated) By: Shade , Spirit Wall: Shade _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03762))_
 - When used for this purpose, a will-o-wisp disintegrates immediately, even during its duration. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03763))_
 - This spirit can be easily destroyed by applying a small amount of force, and when it does, it emits powerful energy. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03763))_
 - However, in places affected by the ancient magic Darkness , the light emitted by a will-owisp will have no effect, and if it overlaps with the darkness created by a shade, they will negate each other's effects. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03763))_
@@ -8109,7 +8086,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## 3rd Level Spirit Magic List [ Invisibility ] (Sprite/Mind Spirit)
 
-- However, Grax's end was a pitiful one. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03842))_
 - Grax paid no heed to this little youma, but quite unexpectedly, the gremlin cast a "Forget" spell on the pegasus he was riding and fled. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03842))_
 - After emerging victorious from a battle, he was on his way back to report to the kingdom ahead of the others, when he encountered a lone gremlin. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03842))_
 - After emerging victorious from a battle, he was on his way back to report to the kingdom ahead of the others, when he encountered a lone gremlin. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03842))_
@@ -8524,7 +8500,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## [ Tunnel ] (Gnome/Earth Spirit)
 
 - In other words, you can't open holes in two walls with one spell. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03961))_
-- This is a spell that creates a hole with a 1 meter radius in walls and ground made of stone or earth, as well as the sides and ceilings of caves. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03961))_
 - The effect of this spell can be expanded regarding the size of the hole being made (target volume). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03961))_
 - However, if the wall is less than 10 meters thick, the spell's effect ends there. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03961))_
 - This spell allows you to create holes up to 10 meters in length. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03961))_
@@ -8670,7 +8645,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - This allows you to control all plants at will. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03999))_
 - The scores for strike points, defense points, and life points/resistance will depend on the size of the plant being controlled, but for a normal tree they will be about as follows. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04001))_
 - the controlled plants will immediately return to their original tree state. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04004))_
-- The game master should modify these scores according to the size of the plant being controlled. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04004))_
 - Additionally, if the spell is removed by Dispel Magic , etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04004))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03998))_
@@ -8885,9 +8859,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## 6th Level Spirit Magic List
 
-- Base Mental Power Cost=24 Distance=Caster Area=A space within a 30 meter radius from the caster Duration=Until focus ends Effect=Manipulate the echoes of sounds within the area of effect Type=Focus Countered (Overpowered) By: Silence Expansion=Final score, area Resist=Negated effect _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04049))_
-- Base Mental Power Cost=24 Distance=Caster Area=A space within a 30 meter radius from the caster Duration=Until focus ends Effect=Manipulate the echoes of sounds within the area of effect Type=Focus Countered (Overpowered) By: Silence Expansion=Final score, area Resist=Negated effect _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04049))_
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04050))_
 
 > You can make it so that only certain people can hear specific sounds, or conversely, you can make them inaudible.
@@ -8914,7 +8885,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - You cannot build a wall where other materials such as rocks, trees, or living things already exist. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04056))_
 - The types of spells are divided by the lesser spirits that control them, and the walls created by each spell each have different characteristics depending on their spirit power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04056))_
 - You cannot build a wall where other materials such as rocks, trees, or living things already exist. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04056))_
-- Counters (Negates): Shade , Spirit Wall: Shade Countered (Negated) By: Shade , Spirit Wall: Shade _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04060))_
 - Therefore, the space on either side of the wall of light is illuminated with a brightness like midday. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04063))_
 - At this time, make a resistance roll, and if you fail, you will suffer strike power 10 damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04063))_
 - With the help of the spirit of light, you can build a dazzling wall of light. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04063))_
@@ -8940,7 +8910,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Undine is waiting inside the water wall. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04072))_
 - Moreover, any rescuers must also be able to get inside the wall in order to save those that have been swallowed up by it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04072))_
 - Those inside the wall will automatically drown after a number of rounds equal to their life force (points) have elapsed, unless rescued from the outside. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04072))_
-- Counters (Negates): Spirit Wall: Undine/Frau Countered (Negated) By: Spirit Wall Undine/Frau _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04076))_
 - A wall of fire cannot be seen through. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04080))_
 - It is possible to pass through, but upon touching the wall or trying to pass through it, you will be rammed by the salamander and suffer strike power 10 damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04080))_
 - A wall of fire cannot be destroyed by physical means or magic that deals damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04081))_
@@ -8964,12 +8933,12 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - You can't see through it, and you can't pass through it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04100))_
 - When you chant the spell, vines will sprout from the ground and entangle each other, filling the gaps with thorn bushes. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04100))_
 - This wall can be destroyed by weapons or magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04101))_
+- This wall can be destroyed by weapons or magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04101))_
 - Even if the wall is completely destroyed, it will continue to regenerate for the duration of the spell. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04101))_
 - A rock wall blocks your gaze and cannot be passed through without making a hole in the wall. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04105))_
 - When you chant the spell, cold mist gathers and becomes frost, then the frost rises in bands of ice. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04115))_
 - Your gaze can see through the ice wall, but you cannot pass through it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04115))_
 - When you chant the spell, cold mist gathers and becomes frost, then the frost rises in bands of ice. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04115))_
-- This wall can be destroyed by weapons or magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04116))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04053))_
 
@@ -9289,7 +9258,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## [ Full Control Spirit ] (Various lesser spirits)
 
 - In this case, the effect of the previously cast spell will vanish. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04170))_
-- Please note that it is not possible to use both the Control Spirit and Full Control Spirit spells to control different spirits. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04170))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04166))_
 
@@ -9310,7 +9278,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## 8th Level Spirit Magic List [ Ice Coffin ]
 
 - If the opponent successfully resists, the ice pillar will vanish before it's completed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04173))_
-- Base Mental Power Cost=32 Distance=30 meters Area=1 x 1 x 2 meters Duration=Instant Effect=Trap the opponent in a pillar of ice Type=- Expansion=Final score, distance, target volume Resist=Negated effect This spell instantly condenses moisture in the air, creating a pillar of ice 1 meter wide and 2 meters high, which can trap your opponent. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04173))_
 - Although it cannot be cast on opponents who are too large to fit into the ice pillar, you can increase the size of the ice pillar by expanding the effect. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04173))_
 - If the opponent successfully resists, the ice pillar will vanish before it's completed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04173))_
 - If the temperature is below freezing, it will not melt permanently. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04175))_
@@ -9453,7 +9420,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Firestorm ] (Efreet/Greater Fire Spirit)
 
-- This spell creates a storm of scorching flame in a 10 meter radius centered on a point in space. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04218))_
 - Its strike power is 30. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04218))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04211))_
@@ -9683,13 +9649,9 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## 10th Level Spirit Magic List ]
 
-- Base Mental Power Cost=50 Distance=Caster Area=A space within a 100 meter radius from the caster Duration=18 rounds Effect=Appeal to the greater spirits to neutralize spirit power Type=Target score Counters (Overpowers): All magic that uses related spirit power Expansion=Final score, duration, area _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04270))_
-- Base Mental Power Cost=50 Distance=Caster Area=A space within a 100 meter radius from the caster Duration=18 rounds Effect=Appeal to the greater spirits to neutralize spirit power Type=Target score Counters (Overpowers): All magic that uses related spirit power Expansion=Final score, duration, area _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04270))_
 - This is the same even if multiple casters attempt it (only one type of spirit power can be neutralized in one space). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04272))_
 - However, only one type of spirit power can be neutralized at a time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04272))_
-- This spell appeals to a greater spirit and completely neutralizes one type of spirit power within its area of effect for a limited time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04272))_
 - This is the same even if multiple casters attempt it (only one type of spirit power can be neutralized in one space). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04272))_
-- This spell appeals to a greater spirit and completely neutralizes one type of spirit power within its area of effect for a limited time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04272))_
 - However, only one type of spirit power can be neutralized at a time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04272))_
 - Within the area of effect, any spirit magic that depends on the neutralized spirit power will no longer be able to be used, and any magic that had an effect will be canceled immediately. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04273))_
 - This also applies to spirits sealed with spells such as Control Spirit , etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04273))_
@@ -10623,7 +10585,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - This spell is also effective in restoring vision and hearing. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04524))_
 - This is a spell that regenerates missing or non-functioning body tissues and restores their function. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04524))_
 - One week is required for regeneration and functional recovery. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04524))_
-- This spell does not help restore life force (points) from wounds, nor can it be cast on a corpse to bring it back to life. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04543))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04516))_
 
@@ -10826,7 +10787,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - If you have a corpse, that's fine, but if you don't, you'll need items that were loved by the deceased. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04597))_
 - The effect of this spell is not guaranteed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04598))_
 - Also, since it's not possible to reverse your age, those who die due to old age cannot be saved. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04600))_
-- since you died, the less likely you are to come back to life. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04600))_
 - Once this spell fails, the caster cannot attempt Resurrection on the same dead person (it will always fail) until their magic power increases. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04600))_
 - If they died due to poison, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04601))_
 - However, it must not be in a state where it would die immediately even if it came back to life, such as a decapitated corpse, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04601))_
@@ -11178,7 +11138,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Gather as many Pharis believers as you can to a temple, and cast this in front of them. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04693))_
 - This spell is used when a high priest of Pharis discovers a great evil that absolutely cannot be overlooked. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04693))_
 - Those with fighter skill 0 will be temporarily given 2 levels) 2. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04694))_
-- It has no impact at all on those who do not agree to the spell, but no devout follower of Pharis would not agree to the high priest's spell. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04695))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04685))_
 
@@ -11756,7 +11715,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - The result is that they'll come out of their hiding place and reveal themselves to the performer. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04841))_
 - This spellsong has the effect of arousing the curiosity of those who hear it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04841))_
 - The resistance roll is made on the fourth round after the song begins (count the beginning of the song as the first round, and make the roll when the bard's action order occurs on the fourth round). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04841))_
-- This spell has the effect of summoning specific small animals nearby. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04843))_
 - If the summoned small animals are attacked, the effect of the spellsong will be broken and they will all run away. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04843))_
 - When this spellsong begins, all small animals within earshot of the song will gather around the bard. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04843))_
 - You can summon any hand-sized mammals or birds (mice, squirrels, small cats, small birds, etc.). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04843))_
@@ -11906,7 +11864,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## Resistance
 
 - This spellsong activates the listener's physical and mental functions, giving them +1 to life force and mental power, as well as the resistance rolls of each. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04890))_
-- Every time you listen to this spell for one hour, you can recover 1 point of mental power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04892))_
 - If you interrupt the spellsong midway through, there will be no effect. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04892))_
 - Those who wish to take part in the effect of this spellsong must remain completely relaxed for the duration of the performance. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04892))_
 - The bard singing the spellsong cannot recover their own mental power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04893))_
@@ -11980,8 +11937,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ ① Tumble [Agility] ] (Equipment restriction)
 
-- attempts to pick a lock and fails, no further attempts can be made to pick that lock (and any attempts will always fail). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04937))_
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04925))_
 
 > Even if a thief falls from a high place, they can reduce the damage by being skillful at taking a defensive tumble.
@@ -12014,7 +11969,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Thieves are skilled at activities that require physical balance and agility, such as tightrope walking and jumping from branch to branch. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04943))_
 - Thieves are skilled at activities that require physical balance and agility, such as tightrope walking and jumping from branch to branch. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04943))_
 - Thieves do this habitually all the time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04946))_
-- This is the ability to remember what you witness. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04946))_
 - A success roll should be made when recalling something, not when trying to memorize something. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04946))_
 - The game master should determine the target score based on the contents being recalled and the time since you witnessed it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04946))_
 
@@ -12176,8 +12130,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - This is the ability to instantly judge whether something is valuable as a treasure or not, and which one is likely to be more valuable. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04977))_
 - However, magical items and books whose contents need to be understood are completely excluded. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04977))_
 - The game master should set the target score each time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04977))_
-- This is the ability to sense and find traps set indoors, such as doors, hallways, boxes, drawers, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04979))_
-- This is the ability to sense and find traps set indoors, such as doors, hallways, boxes, drawers, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04979))_
 - This check (success roll) is based on difficulty . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04980))_
 - Never say no , even when there are no traps. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04980))_
 - The fi nd ability is used by the thief to actively identify a location and determine if a trap is set there. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04980))_
@@ -12260,7 +12212,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - This is handed the same way as the thief's ability. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05017))_
 - Rangers can listen to even the smallest sounds and can choose the sound they want to hear from a wide range of sounds. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05017))_
-- Rangers acquire a good intuition, which can be called a sixth sense. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05019))_
 - This ability is the ability used to sense when danger is approaching. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05019))_
 - The target score is determined by the game master depending on the situation, but in general it should be set high. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05019))_
 
@@ -12369,8 +12320,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - The ranger skill is used for surprise attacks. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05040))_
 - Indoor mechanical traps cannot be found/sensed with the ranger skill. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05042))_
 - This includes those that are made by tying grass into a ring, or are hung from a tree using string, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05042))_
-- This is basically the same ability as that of the thief skill, but it only applies to traps that use outdoor nature. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05042))_
-- This is basically the same ability as that of the thief skill, but it only applies to traps that use outdoor nature. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05042))_
 - Indoor mechanical traps cannot be removed or set . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05044))_
 
 ## 6.4
@@ -12379,7 +12328,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - The sage skill represents a comprehensive understanding and depth of knowledge in all academic fields. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05047))_
 - Many sorcerers have this skill. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05047))_
 - This includes knowledge of the various monsters that live in Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05057))_
-- Sages have a wide range of knowledge. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05057))_
 - Using sage skill level + intelligence bonus as the baseline score, make a success roll with this rarity as the target score, and if you succeed, you know the monster. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05058))_
 - Each monster has a score called rarity . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05058))_
 - If the check fails, the character has no knowledge of the monster. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05059))_
@@ -12510,7 +12458,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Although they're called songs, unlike modern pop songs, most of them are melodies attached to legends and folklore. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05094))_
 - Although they're called songs, unlike modern pop songs, most of them are melodies attached to legends and folklore. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05094))_
 - The higher the bard's level, the more skillful they will be at playing an instrument. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05096))_
-- This is the art of playing a musical instrument. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05096))_
 
 ## [ ⑦ Medicines [Intelligence]] ((Appraisal only) Not retriable)
 
@@ -12737,7 +12684,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - However, an adventurer can reduce this damage depending on their adventurer level and armor. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05172))_
 - If the defense roll comes up double ones , all damage reduction is lost, including adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05172))_
 - The base damage minus this damage reduction is the actual damage the adventurer suffers. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05202))_
-- Base falling damage (fall height x 3) is for falling on normal ground. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05204))_
 - This decision should be made by the game master. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05204))_
 - On the other hand, if you have something like spikes sticking out, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05204))_
 - If the result of this subtraction is 0 or less, even if the thief falls, they can land cleanly on their feet or stand up in one motion. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05205))_
@@ -12894,7 +12840,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Among them are peddlers who are always traveling and doing business. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05294))_
 - Therefore, if some of the adventurers have this skill, they can also sell the items they obtain from their adventures in shops or on the street. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05294))_
 - However, you are free to buy, sell, or transfer personal items. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05295))_
-- person without this certificate cannot conduct transactions in public. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05295))_
 - Even though they're all called merchants, there are many different types of merchants _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05296))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05297))_
@@ -12907,9 +12852,7 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - There are many general skills. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05299))_
 - If a game master deems it necessary, please make a general skill into a rule. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05299))_
 - There is no way we can create rules for them one by one, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05299))_
-- A skilled fisherman must be able to identify fish - fi sh check , be good at swimming swim , and be able to operate a boat small ship steering ) _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05304))_
 - However, the basics of trade are not that different, so it may be useful in some cases. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05305))_
-- This is almost the same ability as the thief and sage skills' treasure appraisal . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05310))_
 - Therefore, a merchant who sells art can tell you the value of the art, and a merchant who sells weapons and armor can tell you the value of the weapons and armor. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05310))_
 - However, you can only make a check for items that the merchant deals with. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05310))_
 - The result is a specific price converted to silver coins. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05310))_
@@ -12967,7 +12910,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Ducard II rolls 2D, and his final score is 8 . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05328))_
 - Ducard II is trying to sell an ancient kingdom vase (price: 100 gamels) that he found on his adventure to an antique dealer. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05328))_
 - The target score is 15 + the decrease in required strength . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05329))_
-- Craftsmen know how high the quality of the products they have made are, so naturally they can determine the value of items made by others. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05331))_
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05328))_
 
@@ -13422,7 +13364,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Therefore, the greater the negative number, the more difficult it is. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05634))_
 - If there are conditions that make the action easier (such as having tools available to assist), you can also give it a positive modifier. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05635))_
 - If there are conditions that make the action easier (such as having tools available to assist), you can also give it a positive modifier. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05635))_
-- farther, but 20 meters is still a ridiculous number. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05643))_
 - Game masters should not allow a success roll itself for such actions. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05643))_
 - Success rolls are only made when there is a chance of success. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05644))_
 - Success rolls are only made when there is a chance of success. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05644))_
@@ -13463,7 +13404,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ### NPC and Monster Action Announcement
 
-- However, that does not mean that you can make loose announcements and change them depending on the situation. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05653))_
 - For example, it's correct to announce the planned action of a hellhound with the ability to breathe fire by saying, I'm about to do something with my mouth wide open… The characters have no way of knowing if the hellhound is about to bite them or breathe fire. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05654))_
 - However, the game master should decide in advance which actions they are going to take. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05654))_
 - For example, it's correct to announce the planned action of a hellhound with the ability to breathe fire by saying, I'm about to do something with my mouth wide open… The characters have no way of knowing if the hellhound is about to bite them or breathe fire. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05654))_
@@ -13493,8 +13433,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - On the Surprise Attack Check table, if this score is lower than the one in the monster column, the monster has a chance for a surprise They must not change things based on the circumstances, such as attacking with fangs if the character used the spell Counter Magic to increase their resistance, or breathing fire if the character used the spell Quickness to raise their agility (evasion speed). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05663))_
 - Next, all adventurers make a success roll using ranger skill level + intelligence bonus as the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05663))_
 - On the Surprise Attack Check table, if this score is lower than the one in the monster column, the monster has a chance for a surprise They must not change things based on the circumstances, such as attacking with fangs if the character used the spell Counter Magic to increase their resistance, or breathing fire if the character used the spell Quickness to raise their agility (evasion speed). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05663))_
-- However, if alternative senses (smell, hearing, etc.) are developed to some extent _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05685))_
-- attack, and if it's greater than the one in the adventurer column, the adventurers have a chance for a surprise attack. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05696))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05663))_
 
@@ -13715,7 +13653,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ### Dark Magic
 
-- As mentioned earlier, these runes, like holy magic, use the gods as its source of power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05747))_
 - However, it is derived from the power of the gods of evil (wicked gods) such as Phalaris, who are believed to cause harm to us humans. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05747))_
 - This is because believers in wicked gods other than Phalaris are rarely seen. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05747))_
 - For this reason, the rune masters of these runes are both hated and feared by the general public. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05747))_
@@ -13750,7 +13687,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## 1st Level Basic Dark Magic List
 
-- their presence, they are also viewed with fear and disgust by the general public. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05762))_
 - Countries that are negative towards magic sometimes have policies that exile rune masters from the country. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05762))_
 - Of course, these people also rely on magical power when they themselves need it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05763))_
 - This spell has the opposite effect of Cure Wounds , cutting into the target's body and causing wounds. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05766))_
@@ -13780,7 +13716,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - The caster can use any number of points up to the amount of mental power they have. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05777))_
 - You can reduce the target's mental power (points) by twice the mental power (points) consumed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05777))_
 - This is a very special spell. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05777))_
-- reaches 0, the opponent will lose consciousness. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05778))_
 - However, mental power (points) will not fall below 0. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05778))_
 - Note that this spell does not allow the target to reduce damage using adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05779))_
 
@@ -13836,7 +13771,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - The penalty that'll be imposed depends on the situation, so the game master should act on the assumption that the target cannot hear. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05792))_
 - The target can attempt to resist, but a target who fails will no longer be able to hear any sounds. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05792))_
-- This spell has the effect of taking away the target's hearing. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05792))_
 - If they're successful, they won't be affected at all. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05792))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05783))_
@@ -14041,7 +13975,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Steal Life ]
 
-- from the target and give it to the caster. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05848))_
 - However, you cannot increase your life (points) higher than your original score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05852))_
 - This spell combines the effects of both Wounds and Cure Wounds , allowing the caster to absorb life force (points) from the target to recover when the caster is wounded. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05852))_
 - This spell also cannot be used if the dark priest him or herself is undead. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05852))_
@@ -14476,7 +14409,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## Phalaris Special Dark Magic List ]
 
-- Resist=Negated effect This spell has the effect of amplifying the evil spirit that lies dormant in a person's heart. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06000))_
 - Targets that fail to resist will impulsively act in evil ways. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06000))_
 - What the target does depends on the situation at the moment and their desires. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06000))_
 - For example, if you think deep down I want money , you'll be tempted to steal it immediately. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06000))_
@@ -15026,9 +14958,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## [
 
 ## Poison Proof ]
-
-- While the effect of this spell lasts, the caster can neutralize all poisons within their body, regardless of their type, amount, or toxicity score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06163))_
-- While the effect of this spell lasts, the caster can neutralize all poisons within their body, regardless of their type, amount, or toxicity score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06163))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06155))_
 
@@ -16353,7 +16282,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - This is a black liquid poison and is a type of narcotic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06590))_
 - Around one additional hour of suggestions can transform the victim into a robot that follows commands. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06591))_
 - Victims turned into robots faithfully follow the commands of the person who gave them the suggestions, and will casually kill even their family and friends (they cannot use magic). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06591))_
-- Effect=Become disabled, and suffer strike power 20 damage plus bonus damage 6 every 10 minutes. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06593))_
 - If you are wounded by a knife coated with this poison, you will suffer damage every 10 minutes thereafter. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06594))_
 - A poison often used by assassins, it is a pitch-black viscous liquid. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06594))_
 - During this time, you will be in terrible pain and unable to take any action. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06594))_
@@ -17003,11 +16931,9 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - When the depth is at 2 or greater, changes will appear in your body shape. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
 - When the illness is at depth 1, symptoms include being unable to move due to being seized by fear and having nightmares every night. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
 - leprechaun, the mind spirit, manifests abnormally and causes this illness. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
-- When you're exposed to extremely strong fear, such as due to combat, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
 - You'll become hunched over, your hands abnormally long, your face contorted, and your eyes blazing red. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
 - This illness was given its name because the entire body turns red and hair falls out. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
 - This illness was given its name because the entire body turns red and hair falls out. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
-- When you're exposed to extremely strong fear, such as due to combat, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
 - In other words, roll two dice, and if the roll does not total 5 or greater, you'll be infected. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06775))_
 - This illness is transmitted when eye contact is made with someone who's been infected. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06775))_
 
@@ -17811,7 +17737,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - However, there are some places in the material world that have contact with the fairy world. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06987))_
 - Stories are often told of humans who inadvertently wandered into the fairy world from these places. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06987))_
-- Fairies are a representative race of fae, and many of them still live in the fairy world, and rarely come to the material world, the world we live in. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06987))_
 - They may carry items such as silver daggers, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06988))_
 - As they are residents of the fairy world, they have a deep connection with spirits, and use spirit magic up to 3rd level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06988))_
 - Fairies are sometimes seen where these two worlds meet. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06988))_
@@ -17853,7 +17778,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Monster Level=4 Rarity=9 Agility=16 Movement Speed=10/30 (air) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Weapon: 11 (4) Strike Points=8 Evasion Points=12 (5) Defense Points=7 Life Points/Resistance=12/12 (5) Mental Points/Resistance=18/13 (6) Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6) Habitat=Mountains Languages=Harpy, silent spirit, regional _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06995))_
 - However, they're not interested in gold or jewelry. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06997))_
 - They live in rugged mountainous areas, have gentle personalities and do not like fighting, but they despise harpies (furiaspecies). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06997))_
-- Featherfolk resemble humans, but have bird wings growing from their shoulders, allowing them to fly. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06997))_
 - They use spirit magic and their shaman skill level is 4. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06998))_
 - Featherfolk use swords, bows and arrows, and spears as weapons. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06998))_
 
@@ -17886,7 +17810,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - There is one mermaid shaman per combat group, and her role is to assist the merman leader. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07010))_
 - Monster Level=4 Rarity=13 Agility=16 Movement Speed=3/20 (water) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Weapon: 10 (3) Strike Points=8 Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=15/12 (5) Mental Points/Resistance=17/12 (5) Special Abilities=Water adaptation Habitat=Seas Languages=Merman _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07012))_
 - Those who receive training and grow up will become merman leaders, the head of a combat group of 10 mermen, and command those mermen in battle. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07014))_
-- Merman tribes select physically superior boys from an early age and give them special training. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07014))_
 - Also, a particularly chosen one among them becomes the chieftain who leads the tribe. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07014))_
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07002))_
@@ -17931,7 +17854,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Imp ]
 
-- Imps are small youma with brown to dark brown skin, no body hair, and a tail. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07020))_
 - The tail contains a paralyzing poison. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07020))_
 - If you fail, you've been poisoned and will be paralyzed and unable to move at the end of the next round. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07020))_
 - Anyone who suffers damage from an imp's attack must attempt a life force resistance roll. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07020))_
@@ -17963,7 +17885,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## Youma
 
 - However, kobolds are also known to be sneaky and will attack opponents who are outnumbered, wounded, or unable to fight, such as women and children. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07029))_
-- Kobolds are small youma with doglike faces and tails. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07029))_
 - They live in forests, hills, and mountains near human villages, but they are timid and rarely cause harm to human homes. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07029))_
 - They have no body hair at all. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07029))_
 - However, kobolds are also known to be sneaky and will attack opponents who are outnumbered, wounded, or unable to fight, such as women and children. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07029))_
@@ -17975,17 +17896,9 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Gremlin ] Monster Level=2 Rarity=9 Agility=17 Movement Speed=6/8 (air) Number=One to several Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Fangs: 9 (2) Strike Points=3 Evasion Points=11 (4) Defense Points=4 Life Points/Resistance=8/9 (2) Mental Points/Resistance=14/10 (3) Special Abilities=2nd level spirit magic (Magic Intensity/Magic Power=11/4) Habitat=Mountains, highlands Languages=Impish, silent spirit Perception=Five senses (infravision)
 
-- A small winged youma also known as the "sky imp". _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07032))_
-- These wings allow them to fly, but their speed is not that great. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07032))_
-- They have the power to use spirit magic up to 2nd level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07032))_
-- Its body is dark brown and it has black wings on its back resembling those of a bat. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07032))_
-- The tragedy of the hero Grax riding Pegasus and dying in a crash due to a gremlin's prank is widely known in Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07033))_
-- Gremlins are not aggressive, but they are treacherous and enjoy playing malicious pranks. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07033))_
-
 ## [ Hobgoblin ]
 
 - Monster Level=3 Rarity=8 Agility=12 Movement Speed=8 Number=Several Frequency=Normal Intellect=Low Reaction=Adversarial Attack Points=Weapon or fangs: 10 (3) Strike Points=10 Evasion Points=11 (4) Defense Points=7 Life Points/Resistance=15/11 (4) Mental Points/Resistance=12/11 (4) Special Abilities=None in particular Habitat=Mountains relatively far from human villages, forests, caves Languages=Goblin _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07035))_
-- Hobgoblins are a race of youma that are closely related to goblins, described later. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07037))_
 - They have reddish-brown skin and very little hair on their heads, but they do have thick hair all over their bodies. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07037))_
 - Although they have a belligerent personality, they are also surprisingly cowardly, and will run away as soon as they see that the situation is not going well. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07037))_
 - When fighting, they use either a crude club or the fangs that protrude from their jaws. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07037))_
@@ -17999,7 +17912,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## [ Goblin ]
 
 - They may also live with a hobgoblin who acts as their bodyguard. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07041))_
-- Goblins are a type of youma that live near human villages, and are extremely common monsters in Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07041))_
 - They often use weapons (mostly small ones such as shortswords, daggers etc.) stolen from humans. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07041))_
 - Their height is slightly smaller than that of a human, and their skin is reddish-brown. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07041))_
 - They usually live in groups of several to several dozen in forests and hills, but they sometimes appear at people's homes and attack livestock or steal. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07041))_
@@ -18008,14 +17920,11 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Some goblin shamans are also dark priests who can use dark magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07059))_
 - Goblins served the dark gods in mythical times. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07059))_
 - Their physical characteristics are not much different from ordinary goblins, but they are smart and moreover, have mastered silent spirit. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07059))_
-- Among the goblin tribe, this refers to those who are skilled in the power of spirit magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07059))_
 - This is not surprising, considering that goblins are originally from the fairy world. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07059))_
-- Among the goblin tribe, this refers to those who are skilled in the power of spirit magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07059))_
 - Although they lack magical abilities, they have bodies that are about the same size or even larger than humans and hobgoblins. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07064))_
 - It is said that there are quite a few of this goblin lord species in the Youma Forest to the east of Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07064))_
 - However, not all tribes have this type of lord-species, if anything they're rare. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07064))_
 - They are a greater species of goblin, so to speak, who retain a limited amount of power from the time when goblins lived in the fairy world. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07064))_
-- The goblin lord, as the name suggests, is the king of the goblins. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07064))_
 - They are a greater species of goblin, so to speak, who retain a limited amount of power from the time when goblins lived in the fairy world. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07064))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07041))_
@@ -18109,7 +18018,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## [ Marshman ]
 
 - Their bodies are covered with green skin, and their backs are hard and shellshaped. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07085))_
-- Marshmen, also known as water imps, are youma that live in swamps. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07085))_
 - They are exclusionary toward other races and react aggressively to anything that enters their habitat. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07085))_
 - They have high intelligence comparable to humans, and also have a rudimentary social life. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07085))_
 - They seem to have a deep connection with water spirits, and use undine-type spirit magic up to 4th level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07085))_
@@ -18272,7 +18180,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Strike power is 10, bonus damage is 2, and only adventurer level can reduce it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07128))_
 - Its body seems to be dark and spherical, but it's impossible to identify its shape because it' s in the dark. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07128))_
 - All natural light within 5 meters of its body is canceled out, leaving you in total darkness. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07128))_
-- Shade is a spirit of darkness, and also a mind spirit that controls fear. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07128))_
 - Strike power is 10, bonus damage is 2, and only adventurer level can reduce it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07128))_
 - All natural light within 5 meters of its body is canceled out, leaving you in total darkness. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07128))_
 - Its body seems to be dark and spherical, but it's impossible to identify its shape because it' s in the dark. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07128))_
@@ -18374,7 +18281,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Undine ]
 
-- Mental attack immunity Normal weapon immunity Not affected by poison and illness Habitat=Water Languages=Silent spirit _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07153))_
 - However, if anyone bathes or swims in a spring or river where this spirit resides, without realizing its presence, the mad undine will do everything it can to drown its opponent, including casting a Sink spell to take away their buoyancy or fly directly into their lungs. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07155))_
 - It often takes the form of a small girl, but it can take any form as long as its weight and volume remain the same. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07155))_
 - Its body is just about 10 liters of liquid. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07155))_
@@ -18468,7 +18374,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Salamander ]
 
-- Normal weapon immunity Mental attack immunity Fire immunity Not affected by poison and illness _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07165))_
 - However, its entire body is not covered in animal skin but in flames, making it extremely dangerous as it ignites flammable materials around it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07169))_
 - Salamanders shower you in a breath of fire, which has the same effect as the 1st level spirit magic spell Fire Bolt . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07169))_
 - This fire always hits, but an adventurer can attempt to resist just the same way they would against magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07169))_
@@ -18506,7 +18411,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Sandman ]
 
-- Sandman is a mind spirit that controls sleep. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07185))_
 - Its figure is that of a small, completely naked child, with no features that would indicate gender. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07185))_
 - No matter how much Sleep it uses, a sandman does not consume any mental points. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07186))_
 - A mad sandman indiscriminately uses Sleep spells to try to put others to sleep. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07186))_
@@ -18555,7 +18459,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Sylph ]
 
-- Normal weapon immunity Mental attack immunity Not affected by poison and illness Habitat=Anywhere Languages=Silent spirit Perception=Magic _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07196))_
 - It appears as a naked elf woman. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07197))_
 - Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07197))_
 - Sylph is a spirit of wind. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07197))_
@@ -18613,8 +18516,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Gnome ]
 
-- knows) Agility=10 Movement Speed=6 (ground)/ 10 (underground) Number=One to several Frequency=Rare Intellect=Low Reaction=Violent Attack Points=Strike Points=Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6) Special Abilities=Stone (Strike power 20, bonus damage 5, Magic Intensity/Magic Power=12/5) 4th level spirit magic (Magic Intensity/Magic Power=12/5, gnome only) Normal weapon immunity Mental attack immunity Not affected by poison and illness Habitat=Anywhere Languages=Silent spirit Perception=Magic _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07205))_
-- knows) Agility=10 Movement Speed=6 (ground)/ 10 (underground) Number=One to several Frequency=Rare Intellect=Low Reaction=Violent Attack Points=Strike Points=Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6) Special Abilities=Stone (Strike power 20, bonus damage 5, Magic Intensity/Magic Power=12/5) 4th level spirit magic (Magic Intensity/Magic Power=12/5, gnome only) Normal weapon immunity Mental attack immunity Not affected by poison and illness Habitat=Anywhere Languages=Silent spirit Perception=Magic _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07205))_
 - Gnome is the spirit of earth. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07206))_
 - A gnome can disappear into the ground, move underground, and reappear above ground all in one round. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07207))_
 - They do not consume mental points even when they throw stones or use spirit magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07207))_
@@ -18636,8 +18537,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Frau ]
 
-- 4th level spirit magic (Magic Intensity/Magic Power=13/6, frau only) Normal weapon immunity Mental attack immunity Cold immunity Not affected by poison and illness Habitat=Cold regions Languages=Silent spirit Perception=Magic _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07219))_
-- 4th level spirit magic (Magic Intensity/Magic Power=13/6, frau only) Normal weapon immunity Mental attack immunity Cold immunity Not affected by poison and illness Habitat=Cold regions Languages=Silent spirit Perception=Magic _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07219))_
 - Its eyes are also pure white. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07220))_
 - Frau only appear in areas with snow and ice. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07220))_
 - Therefore, its legs are not visible at all. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07220))_
@@ -18691,7 +18590,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Leprechaun ]
 
-- Normal weapon immunity Mental attack immunity Not affected by poison and illness T eleport _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07235))_
 - They cannot take any other actions during the round in which this action was chosen The teleportation destination is within the leprechaun's view. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07239))_
 - Leprechauns are mind spirits who control chaos. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07239))_
 - Leprechauns are spirits, but in this world they have a complete form, and will attack by biting. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07239))_
@@ -18766,8 +18664,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Dryad ]
 
-- Mental Points/Resistance=20/14 (7) Special Abilities=Charm (Resist target score=14) 5th level spirit magic (Magic Intensity/Magic Power=14/7, dryad only) Normal weapon immunity Mental attack immunity Not affected by poison and illness Habitat=Woods Languages=Silent spirit Perception=Magic _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07249))_
-- Mental Points/Resistance=20/14 (7) Special Abilities=Charm (Resist target score=14) 5th level spirit magic (Magic Intensity/Magic Power=14/7, dryad only) Normal weapon immunity Mental attack immunity Not affected by poison and illness Habitat=Woods Languages=Silent spirit Perception=Magic _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07249))_
 - They usually reside in trees, but a shaman can summon them anywhere there are plants. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07250))_
 - Dryads are plant spirits. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07250))_
 - Their figure is that of a completely naked elf woman, with long green hair wrapped around her entire body. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07250))_
@@ -18817,7 +18713,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Mad Spirit of Life ]
 
-- Normal weapon immunity Mental attack immunity Not affected by poison and illness Habitat=Anywhere Languages=Silent spirit Perception=Magic _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07266))_
 - The mad spirit of life does not attack physically. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07267))_
 - However, its reckless power has a major impact on the lives around it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07267))_
 - The mad spirit of life appears in the form of a shining white horse. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07267))_
@@ -19043,7 +18938,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Monster Level=5 Rarity=10 Agility=10 Movement Speed=15 Number=One to several Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Weapon or arm: 13 (6) Strike Points=12 Evasion Points=11 (4) Defense Points=8 Life Points/Resistance=21/14 (7) Mental Points/Resistance=10/12 (5) Special Abilities=None in particular Habitat=Forests and hills near human villages Languages=Giant _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07316))_
 - Of course, their strength is also considerable. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07318))_
 - Although they are on the smaller side of the titans, their height is well over 2 meters, and they have strong bodies to match. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07318))_
-- Ogres, also known as jikininki , are ferocious, carnivorous titans who, as their name suggests, particularly enjoy human flesh. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07318))_
 - They have sharp canine teeth that allow them to tear and eat raw meat. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07318))_
 - Their body color is reddish-brown, and their face is reminiscent of primitive humans (of our world). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07318))_
 - Numerically, there is no difference in the strength of an ogre even if it does not have a weapon. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07318))_
@@ -19114,18 +19008,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Troll ] Monster Level=6 Rarity=11 Agility=12 Movement Speed=24 Number=One to several Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Arm:14 (7) Strike Points=13 Evasion Points=13 (6) Defense Points=11 Life Points/Resistance=21/15 (8) Mental Points/Resistance=14/14 (7) Special Abilities=Camouflage (Sense target score=13) Habitat=Caves, hills Languages=Giant Perception=Five senses (darkvision)
 
-- They live in caves and hills, and do not appear in forests or meadows. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07331))_
-- They have very low intellect and rarely use tools. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07331))_
-- Trolls are titans with rock-like skin. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07331))_
-- A character caught by surprise cannot take any actions for one round, and suffers a -4 penalty to evasion for that round. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07332))_
-- To notice their presence, you must succeed on a success roll against target score 13 using ranger skill level + intelligence bonus as the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07332))_
-- If you fail, the troll can make a surprise attack. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07332))_
-- They also have arms so long that their fingertips just barely touch the ground. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07332))_
-- It will not be affected by just any half-hearted attack, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07333))_
-- That single blow has terrifying destructive power that can kill a person in an instant. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07333))_
-- A troll's skin is not only similar in color, but also has a hardness comparable to that of rock. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07333))_
-- A troll's skin is not only similar in color, but also has a hardness comparable to that of rock. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07333))_
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07331))_
 
 > Trolls are titans with rock-like skin. They have very low intellect and rarely use tools. They live in caves and hills, and do not appear in forests or meadows. Due to this and their rugged, rock-like appearance, some sages believe that they may have some kind of connection with earth spirits, but it's not clear whether this is true. In any case, it's certain that they're terrifying monsters with enormous strength.
@@ -19138,7 +19020,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - Monster Level=7 Rarity=15 Agility=7 Movement Speed=15 Number=One Frequency=Very Rare Intellect=Human Reaction=Neutral Attack Points=Weapon or arms (6 times): 15 (8) Strike Points=15 x 6 Evasion Points=13 (6) Defense Points=11 Life Points/Resistance=28/17 (10) Mental Points/Resistance=14/15 (8) Special Abilities=4th level holy magic (Magic Intensity/Magic Power=13/6) rarely Habitat=Underground ruins Languages=Giant _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07335))_
 - They can aim at different targets in one round, or focus on hitting one target. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07337))_
-- Hecatoncheir are a subspecies of titans, reaching nearly 4 meters tall. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07337))_
 - Six of these are used in combat. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07337))_
 - Although they're called the hundredhanded titan , they actually have only 12 arms. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07337))_
 - Some of them carry weapons, but even without such things, their thick arms are enough to pose a threat to humans (and fae). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07337))_
@@ -19172,7 +19053,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - This giant makes the forest its home, and has darker hair on its head and body than a hill giant. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07347))_
 - They have rich heads of hair, the color of which ranges from jet black to deep crimson, depending on the individual. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07364))_
 - They also have body hair of the same color as the hair on their heads, but it's not all over their bodies. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07364))_
-- A fire giant is a giant about 7 meters tall, with reddish-brown skin. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07364))_
 - Fire giants are ferocious creatures that will attack anything that enters their territory without mercy. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07365))_
 - Since they often live near human villages, they are greatly feared by humans. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07365))_
 - Fire giants have a deep connection with the spirit power of fire, and can use spirit magic sourced from the power of fire spirits (salamander, etc.) up to 7th level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07366))_
@@ -19182,7 +19062,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - They are among the largest of the giants, reaching over 10 meters tall. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07371))_
 - However, they live a closed life and do not like when their territory is invaded. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07371))_
 - If you're open to communication, they'll simply give you a warning and ask you to leave their territory. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07371))_
-- Frost giants are giants that live in cold regions and are covered in white hair all over their bodies. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07371))_
 - Yet, they have relatively gentle personalities and will not attack humans unless they do something particularly unjust. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07371))_
 - Also, they will not suffer any damage at all from cold-type attacks. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07372))_
 - Frost giants have a deep connection with the spirit power of ice, and can use spirit magic sourced from the power of ice spirits (frau, fenrir) up to 8th level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07372))_
@@ -19360,7 +19239,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## [ Ceiling Hanger ]
 
 - Its lower body is made of a glue-like substance that expands and contracts, and it's usually about 1 meter long. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07412))_
-- Strangle Sleepless Habitat=Underground labyrinths Languages=None Perception=Five senses A ceiling hanger is a magical beast with arms of different sizes on its left and right sides. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07412))_
 - To do so, you must succeed on a success toll against target score 12 using ranger skill level + intelligence bonus as the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07413))_
 - Rangers have a chance to notice this surprise attack with their sense danger ability. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07413))_
 - Failure will result in a surprise attack and the targeted character will suffer a -4 penalty to evasion. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07413))_
@@ -19538,7 +19416,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - Its front legs have fins instead of hooves, and it has no hind legs. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07444))_
 - They can move around quickly underwater, but once on land they suffer a -4 penalty to attack and evasion. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07444))_
-- It's a horse that lives in the sea, the lower half of its body is that of a fish. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07444))_
 - Mermen have tamed the hippocampus and use them as riding horses. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07445))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07441))_
@@ -19560,7 +19437,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - You can avoid being petrified by fighting with your eyes closed or your face turned away, but in such a state you will suffer a -4 penalty to your attack power and evasion speed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07448))_
 - Mirrors do not reflect a medusa's magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07448))_
 - Conversely, holding a mirror up to a medusa is completely ineffective. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07448))_
-- Medusa is a magical beast that takes the form of a human woman, with dozens of snakes growing out of her head instead of hair, and a face with the magical power to petrify humans. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07448))_
 - Therefore, you can fight while looking at a medusa's reflection in a mirror. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07448))_
 - Anyone who encounters a medusa must succeed on a mental power resistance roll against target score 10 or they will instantly be turned into a stone statue. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07448))_
 - In this case, the penalty to attack power and evasion speed is only -2. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07448))_
@@ -19584,7 +19460,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - Like humans, there are good androscorpios, and there are evil androscorpios. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07458))_
 - They can use spirit magic, and their shaman skill level is 3. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07458))_
-- Androscorpio is a mythical beast that lives in the desert, with the upper body of a handsome young man and the lower body of a brightly colored scorpion. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07458))_
 - This symptom lasts for one hour, during which time the victim suffers a -4 penalty on all success rolls. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07459))_
 - The stinger at the tip of his tail contains a hallucinogenic poison (toxicity score 11). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07459))_
 - Those wounded by a tail attack and fail a life force resistance roll will experience hallucinations starting on the next round. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07459))_
@@ -19694,7 +19569,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## [ Scylla ] Monster Level=4 Rarity=13 Agility=12 Movement Speed=12/12 (water) Number=One Frequency=Rare Intellect=Human Reaction=Adversarial
 
 - Their personality is extremely wicked, often luring men with only their upper bodies above the water, then dragging them underwater to kill them. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07489))_
-- Scylla is a beautiful woman from the waist up, but six serpent heads and 12 octopus tentacles grow from her lower body. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07489))_
 - They are amphibious and can move freely on land, but mainly prefer to live in water. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07489))_
 - Their personality is extremely wicked, often luring men with only their upper bodies above the water, then dragging them underwater to kill them. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07489))_
 - Scylla can also use spirit magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07490))_
@@ -19716,7 +19590,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Chimera ]
 
-- A chimera has a black lion for the front half of its body and a demonic black goat for the rear half. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07509))_
 - Its tail is a snake and a goat's head grows out of its back. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07509))_
 - Known to be extremely ferocious, they are impossible to defeat except by the very bravest. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07509))_
 - Fortunately, they live deep in the mountains, their fertility is weak due to their unnatural composition, and their numbers are small, so they're rarely encountered. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07509))_
@@ -19868,7 +19741,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - Monster Level=5 Rarity=15 Agility=18 Movement Speed=18 (air) Frequency=Very Rare Number=One Intellect=Human Reaction=Adversarial Attack Points=Tentacles (strangle) x 4:12 (5)/Fangs:12 (5) Strike Points=8 x 4/10 Evasion Points=15 (8) Defense Points=7 Life Points/Resistance=18 (14/7) Mental Points/Resistance=15 (13/6) Special Abilities=5th level dark magic (Magic Intensity/Magic Power=14/7) rarely Strangling Not affected by poison and illness Sleepless Habitat=Underground labyrinths, ruins Languages=Low ancient _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07529))_
 - It is said among the sages that they may have been created primarily for attacking castles during war. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07531))_
-- Head displacers have the ability to devour large numbers of humans without being noticed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07531))_
 - When it remains alone, it moves by floating in the air. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07532))_
 - Its movements are awkward, and naturally, after several days since its prey was slain, the body will begin to decompose and a putrid odor will linger in the air. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07532))_
 - If the opponent becomes disabled, it'll devour their head and place itself in the head's position. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07532))_
@@ -19946,7 +19818,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - The magic used by noble lizardmen is said to be dragon roar magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07546))_
 - Although the Witch of Orphan Laverna assumed that the lizardman family was closely related to dragons and avoided premature classification, it was precisely because of this reason that later sages classified them as a type of mythical or magical beast. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07546))_
 - The data given here is for what's said to be average , but there are great individual differences, and some are said to have dragon roar magic ability of nearly 10th level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07583))_
-- The noble lizardman is a far superior species to the slave lizardman. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07583))_
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07546))_
 
@@ -20161,7 +20032,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## [ Manticore ]
 
 - They have an extremely long life span and accumulate a great deal of knowledge. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07623))_
-- A manticore has the body of a lion, the tail of a scorpion, the wings of a bat, and the face of an old man. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07623))_
 - Many are followers of Phalaris, and their dark priest skill is 5th level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07623))_
 - 194) is the guardian of true knowledge, the manticore is said to be the guardian of wicked knowledge. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07623))_
 - The stinger at the tip of its tail is highly poisonous. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07624))_
@@ -20241,7 +20111,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - They are carnivorous, especially fond of human flesh, and when they are hungry, they will sometimes come out and attack nearby villages. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07642))_
 - To prevent such calamities, rural villages will often hold rituals in which young girls are sacrificed to the minotaur. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07642))_
-- The minotaur, with a strong human body and the head of a bull, is an extremely brutal creature. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07642))_
 - If the minotaur is hungry, it'll eat the sacrifice immediately, but if it has other food, it'll keep her alive for a while and use her for other pleasures. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07642))_
 - Minotaurs primarily use a giant ax as a weapon, but when fighting barehanded, they will attempt to strangle their opponent to death with both arms. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07643))_
 
@@ -20416,7 +20285,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## [ Lynx ]
 
 - Although carnivorous, they mainly feed on small animals and will not attack human-sized creatures unless they are extremely hungry. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07673))_
-- A lynx is a large cat-like creature about 3 meters long that lives in mountains and forests. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07673))_
 - Although carnivorous, they mainly feed on small animals and will not attack human-sized creatures unless they are extremely hungry. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07673))_
 - Rather, it is humans who hunt the lynx. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07674))_
 - This is because the lynx has a small amber stone called lignia stone in its body, and this stone is a cure-all for illnesses that affect the mind. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07674))_
@@ -20428,7 +20296,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Sphinx ] Monster Level=7 Rarity=12 Agility=14 Movement Speed=18/30 (air) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Claw:15 (8)/Claw:15 (8) Strike Points=16/16 Evasion Points=14 (7) Defense Points=11 Life Points/Resistance=24/17 (10) Mental Points/Resistance=20/16 (9) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) Tell riddles Not affected by poison and illness Sleepless Habitat=Ruins, underground labyrinths Languages=Regional, low ancient
 
-- The sphinx has the body of a lion with the wings of an eagle and a beautiful human-like face. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07678))_
 - They have an extremely long lifespan and have accumulated a great deal of knowledge. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07678))_
 - The sphinx will only reveal its secrets to those it deems to be truly wise and right-minded. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07679))_
 - The sphinx is said to be a mythical beast created by the sorcerers of the ancient kingdom to protect true knowledge, and to prevent lost ancient magic spell books and valuable magical items from falling into the hands of fools. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07679))_
@@ -20454,7 +20321,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - Monster Level=7 Rarity=10 Agility=18 Movement Speed=8/35 (air) Number=One Frequency=Rare Intellect=Animal Reaction=Neutral Attack Points=Fangs:14 (7)/Talon:15 (8)/ Talon:15 (8)/Tail:14 (7) Strike Points=17/16/16/16+poison Evasion Points=13 (6) Defense Points=11 Life Points/Resistance=25/17 (10) Special Abilities=Poison (Toxicity score 14, strike power 20, bonus damage 7) Habitat=Deserts, forests, mountains, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07681))_
 - They are over 10 meters long and use their large wings to fly, but they have no front legs. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07683))_
-- Wyverns are said to be one of the subspecies of dragons. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07683))_
 - Since they don't choose where they live, they are feared throughout Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07683))_
 - Since they don't choose where they live, they are feared throughout Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07683))_
 - Anyone dealt damage by a wyvern's tail attack must immediately make a life force resistance roll against target score 14. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07684))_
@@ -20606,7 +20472,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## [ Sea Dragon ]
 
 - Monster Level=8 Rarity=18 Agility=13 Movement Speed=8/14 (air) Number=One Frequency=Very Rare Intellect=Animal Reaction=Hunger-based Attack Points=Fangs:15 (8)/Tail:15 (8)/ Strangle:17 (10) Strike Points=19/18/17 Evasion Points=14 (7) Defense Points=12 Life Points/Resistance=35/19 (12) Mental Points/Resistance=12/16 (9) Special Abilities=Strangling _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07721))_
-- It is said that the sea monster, the sea dragon, is a creature that evolved from a dragon to adapt to living in the water, but this is not known for sure. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07726))_
 - Even a large ship can sink within minutes if it's ensnared by a sea dragon. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07727))_
 - Even a large ship can sink within minutes if it's ensnared by a sea dragon. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07727))_
 
@@ -20625,7 +20490,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## [ Wyrm ]
 
 - Monster Level=8 Rarity=18 Agility=12 Movement Speed=35 (air) Number=One Frequency=Very Rare Intellect=Human Reaction=Neutral Attack Points=Fangs:15 (8)/Tail:15 (8) Strike Points=18/17 Evasion Points=14 (7) Defense Points=11 Life Points/Resistance=25/18 (11) Mental Points/Resistance=16/16 (9) Special Abilities=None in particular Habitat=Steep mountains that humans can't pass through Languages=Lizardman _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07729))_
-- A wyrm has the appearance of a large snake, with a body over 15 meters long, and bat-like wings. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07731))_
 - They have human-like intellect and can speak lizardman, but they do not have the ability to use magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07731))_
 - Its head resembles that of a dragon or wyvern, but it has no legs at all. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07731))_
 - Wyrms are highly territorial, and when other wyrms or giant creatures enter their territory, which is a radius of about 20 kilometers, they will immediately try to drive them out or they may approach them to eat them as food. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07732))_
@@ -20636,7 +20500,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Buckbaird ]
 
-- Not affected by poison and illness Sleepless Habitat=Underground labyrinths, ruins Languages=Low ancient Perception=Pseudo _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07747))_
 - They are only found in underground labyrinths, but what they eat and how they reproduce is a complete mystery. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07748))_
 - It's a giant eyeball about one and a half meters in diameter, covered in long black hair, and it somehow floats in the air. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07748))_
 - There seem to be several subspecies, and some have been seen with antennae and short limbs. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07748))_
@@ -20699,7 +20562,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Hydra ]
 
-- The hydra is a terrifying serpent with nine heads and a total length of 10 meters. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07764))_
 - They mainly live in lakes and rivers, but can also act on land without penalty. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07764))_
 - At this time, it can attack a single target 9 times, or aim at different targets. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07764))_
 - However, if a head is dealt fire or electric damage immediately after it falls off, that head will not regenerate. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07765))_
@@ -20889,14 +20751,12 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - The 30 meter long drake, feared as a god slayer monster, and also a master of a variety of magic, is nowhere to be seen in Forcelia today. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07804))_
 - There is an outlook that they are like giant beasts, living according to instinct rather than thought. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07827))_
 - They have low intellect, and do not use magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07827))_
-- Lesser dragons are about 15 meters long. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07827))_
 - The use of fire is at the dragon's discretion, and there is no limit to the number of times it can use it, but it cannot make physical attacks with fangs or claws on the same round in which it uses fire. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07828))_
 - If you fail, you'll suffer damage resulting from a strike power 20 strike roll plus 10 points of bonus damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07828))_
 - Lesser dragons have the ability to breathe fire, and are also resistant to fire. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07828))_
 - The use of fire is at the dragon's discretion, and there is no limit to the number of times it can use it, but it cannot make physical attacks with fangs or claws on the same round in which it uses fire. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07828))_
 - A dragon cannot breathe fire or attack with their fangs or claws on the same round in which it roars. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07829))_
 - Monster Level=15 Rarity=10 Agility=10 Movement Speed=10/30 (air) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Fangs:22 (15)/Talon:23 (16)/Talon:23 (16)/Tail:22 (15) Strike Points=28/27/27/27 Evasion Points=20 (13) Defense Points=21 Life Points/Resistance=70/32 (25) Mental Points/Resistance=30/26 (19) Special Abilities=10th level ancient magic (Magic Intensity/Magic Power=20/13) 10th level dragon roar magic _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07832))_
-- Elder dragons are about 20 meters long. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07838))_
 - Unlike lesser dragons, they have high intellect and sometimes use ancient magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07838))_
 - Some sages claim that this is based on the lost dragon roar, and should not be called ancient magic, although the results are the same. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07838))_
 - Unlike lesser dragons, they have high intellect and sometimes use ancient magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07838))_
@@ -21010,7 +20870,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## [ Wolf ]
 
 - Monster Level=1 Rarity=5 Agility=16 Movement Speed=24 Number=Several to around ten Frequency=Moderate Intellect=Animal Reaction=Hunger-based Attack Points=Fangs: 8 (1) Strike Points=5 Evasion Points=9 (2) Defense Points=4 Life Points/Resistance=14/9 (2) Mental Points/Resistance=6/8 (1) Special Abilities=None in particular Habitat=Woods, meadows, near human villages Languages=None _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07843))_
-- Wolves are carnivorous and usually act in packs of several to several dozen. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07845))_
 - They are also nocturnal, which means their activity is limited to the night. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07845))_
 - They systematically attack unsuspecting animals that are separated from their herd. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07845))_
 - They are also nocturnal, which means their activity is limited to the night. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07845))_
@@ -21024,7 +20883,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## [ Giant Rat ]
 
 - Monster Level=1 Rarity=6 Agility=18 Movement Speed=20 Number=Several to around ten Frequency=Moderate Intellect=Animal Reaction=Neutral Attack Points=Fangs:8 (1)/Claw:9 (2)/Claw:9 (2) Strike Points=4/3/3 Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=9/8 (1) Mental Points/Resistance=7/8 (1) Special Abilities=Disease (Intensity 5) Habitat=Underground tunnels, caves, ruins Languages=None _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07848))_
-- A giant rat is a huge rodent, about 1 meter long. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07850))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07849))_
 
@@ -21053,28 +20911,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 > You must roll 2D again.
 
 ## [ Hanger Leg ] Monster Level=1 Rarity=13 Agility=18 Movement Speed=8 Number=One. However, eggs are often found in groups Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Needle: 8 (1) Strike Points=6 Evasion Points=11 (4) Defense Points=4 Life Points/Resistance=8/8 (1) Mental Points/Resistance=8/8 (1) Special Abilities=Parasitism (Resist target score=8) Habitat=Forests Languages=None Perception=Five senses
-
-- This headless octopus-like creature is a vicious parasite that lives by taking over the bodies of large animals, and has no visible distinction between male and female. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07855))_
-- Also, its jumping power and strangling power are not something to be underestimated. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07855))_
-- It can easily jump up to 3 meters, and once it attaches itself to a creature's head, it won't come off even if a giant pulls at it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07855))_
-- Its body is only 20 cm long, but its supple legs, which also serve as tentacles, are equipped with countless suckers, and can stretch to over 1 meter when extended. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07855))_
-- Its body is only 20 cm long, but its supple legs, which also serve as tentacles, are equipped with countless suckers, and can stretch to over 1 meter when extended. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07855))_
-- However, once the attack hits, the hanger leg will now be lodged in the victim's head, so all subsequent attacks will automatically succeed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07856))_
-- If your armor and adventurer level prevent you from suffering substantial damage, the needles will not pass through to your head and you will not need to make a resistance roll. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07856))_
-- In addition to absorbing nourishing blood from the blood vessels, the needles also have the function of paralyzing the opponent's brain and controlling their nervous system. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07856))_
-- Then, needles extended from the tips of the legs are embedded into the opponent's brain. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07856))_
-- Then, needles extended from the tips of the legs are embedded into the opponent's brain. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07856))_
-- A hanger leg that is lodged in a head cannot be removed by force. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07857))_
-- Nevertheless, all motor functions and physiological abilities are at the will of the parasite. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07858))_
-- A hanger leg can freely use the body of the victim it's taken over. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07858))_
-- Of course, using magic is out of the question. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07858))_
-- Naturally, you cannot escape on your own, but once killed, the parasite leaves the host's body. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07860))_
-- An unfortunate victim of a hanger leg's possession will lose all senses, unable to see or hear anything, and furthermore, will be unable to think. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07860))_
-- Then, when the long-awaited opportunity arrives, they are quick to pounce on such an unwary creature. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07861))_
-- These eggs will hatch and grow inside the balls, and when they grow up, they will form a cocoon and sleep until a host creature approaches. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07861))_
-- Also, when death is near, the hanger leg will form several balls under the flesh hardened with secretion and lay small eggs. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07861))_
-- These eggs will hatch and grow inside the balls, and when they grow up, they will form a cocoon and sleep until a host creature approaches. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07861))_
-- Then, when the long-awaited opportunity arrives, they are quick to pounce on such an unwary creature. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07861))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07856))_
 
@@ -21399,7 +21235,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - The data listed here is for an average adult shark. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07946))_
 - Some young killer sharks have a monster level of 2. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07946))_
 - Killer sharks will continue to grow as long as they live. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07946))_
-- on Special Abilities=Water adaptation Habitat=Seas Languages=None Perception=Five senses Killer Sharks belong to the so-called man-eating shark family, but they are particularly large, ferocious, and cunning. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07946))_
 - They're about 5 meters long, and will attack anything that moves in the sea, chomping it to pieces with the sharp fangs in their huge mouths. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07946))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07935))_
@@ -21684,7 +21519,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - The scarlet vulture has strong legs, and can move quite freely on the ground. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08007))_
 - It is so called because its wings and the top of its head are bright red. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08007))_
-- The scarlet vulture is a large carnivorous bird, with a wingspan of up to 4 meters while both wings are spread. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08007))_
 - Although it is a member of the vulture family, so to speak, it regularly eats live meat, rather than dead meat. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08007))_
 - It can lift anything from small animals such as dogs, cats, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08007))_
 - It can lift anything from small animals such as dogs, cats, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08007))_
@@ -21713,7 +21547,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Tiger ] Monster Level=3 Rarity=6 Agility=21 Movement Speed=25 Number=One to several Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Fang:10 (3)/Claw:11 (4)/ Claw:11 (4) Strike Points=11/10/10 Evasion Points=11 (4) Defense Points=7 Life Points/Resistance=20/12 (5) Mental Points/Resistance=7/10 (3) Special Abilities=None in particular Habitat=Deep in forests Languages=None
 
-- Tigers are fierce, carnivorous beasts that usually act alone. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08014))_
 - Despite their large size, they possess the graceful and flexible movements characteristic of the cat family, and are among the strongest of all ordinary animals. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08014))_
 - It is said that once a tiger learns the taste of human flesh, it becomes a maneating tiger , which aggressively attacks humans. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08015))_
 
@@ -21730,20 +21563,21 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Some of these bats are not very strong, but have characteristics that make them dangerous monsters. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08017))_
 - There are many different types of bats in Forcelia . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08017))_
 - Monster Level=1 Rarity=5 Agility=18 Movement Speed=10 Number=Several to around ten Frequency=Moderate Intellect=Animal Reaction=Neutral Attack Points=Fangs:8 (1) Strike Points=3 Evasion Points=11 (4) Defense Points=3 Life Points/Resistance=7/8 (1) Mental Points/Resistance=6/8 (1) Special Abilities=Disease (Intensity 6) Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08019))_
+- Habitat=Places sunlight does not reach, such as caves, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08019))_
+- Habitat=Places sunlight does not reach, such as caves, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08019))_
 - Monster Level=1 Rarity=5 Agility=18 Movement Speed=10 Number=Several to around ten Frequency=Moderate Intellect=Animal Reaction=Neutral Attack Points=Fangs:8 (1) Strike Points=3 Evasion Points=11 (4) Defense Points=3 Life Points/Resistance=7/8 (1) Mental Points/Resistance=6/8 (1) Special Abilities=Disease (Intensity 6) Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08019))_
-- They often sleep hanging from the ceiling of their caves during the day, and are mainly active at night. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08020))_
+- Habitat=Places sunlight does not reach, such as caves, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08019))_
+- Habitat=Places sunlight does not reach, such as caves, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08019))_
 - If you roll a 5 or less, you'll be infected with bat fever . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08022))_
 - Those bitten by a bat-- those whose life force has been dealt damage by a bat's attack --are at risk of contracting a fever. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08022))_
 - Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08032))_
 - Furthermore, if you attack a vampire bat that's attached to a living creature, there is also a risk of accidentally hitting an ally. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08032))_
 - Therefore, in order for the possessed opponent to attack the vampire bat in question, they will need a melee weapon that can be used at close range, such as a dagger. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08032))_
-- A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08032))_
 - This damage can only be reduced by adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08032))_
 - At this time, the vampire bat's attack points become the target score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08032))_
 - This damage can only be reduced by adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08032))_
 - Therefore, in order for the possessed opponent to attack the vampire bat in question, they will need a melee weapon that can be used at close range, such as a dagger. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08032))_
 - Attacks made against a vampire bat while it's in the air suffer a penalty of 2 due to the bat's keen perception plus the fact that it is flying. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08033))_
-- A giant bat is a massive bat, with a wingspan of 3 meters across. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08041))_
 - They are completely nocturnal creatures, flying around forests and wastelands to hunt at night. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08041))_
 - Y ou can try to resist again while being carried, but you'll have to be prepared to suffer falling damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08042))_
 - If you succeed, you'll be able to escape before the giant bat flies too high, but if you fail, you'll be taken straight to its nesting hole. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08042))_
@@ -22929,7 +22763,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - If the python takes damage, it'll stop dancing for one round, allowing those affected by the dance to return to their senses. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08363))_
 - However, starting on the next round, they will begin dancing again. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08363))_
 - Their body length starts at 10 meters, but it's said that some can reach over 20 meters. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08366))_
-- Special Abilities=Strangling Water adaptation Habitat=Rock crevices and caves in reef areas Languages=None Perception=Five senses The sea serpent is a giant snake that often lives among reefs, and its whole body is covered with hard scales. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08366))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08338))_
 
@@ -23015,7 +22848,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - Alecrast is home to the following dangerous spiders. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08368))_
 - They do not build webs, nor are they poisonous. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08383))_
-- Giant spiders are large spiders with a body length of about 50 cm. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08383))_
 - An entangled opponent suffers a -4 penalty to evasion speed (points). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08384))_
 - The giant spider will bite the opponent with its fangs and attempt to suck out their fluids. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08384))_
 - Monster Level=4 Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Almost none Reaction=Hunger-based Attack Points=Fangs:11 (4) Strike Points=8+poison Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=17/12 (5) Mental Points/Resistance=5/10 (3) Special Abilities=Poison (Toxicity score 12, Dance=-4 to attack and evasion, 1 damage every 10 minutes, lasts for 1 hour) Mental attack immunity Habitat=Deserts, meadows Languages=None _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08386))_
@@ -23025,7 +22857,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - the victim will continue dancing for one hour, losing 1 point of life force every 10 minutes due to fatigue. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08389))_
 - A giant tarantula's fangs contain a poison (toxicity score 12) that affects motor nerves. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08389))_
 - Those who are dealt damage by these fangs, and fail a life force resistance roll, will begin to dance violently. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08389))_
-- This is a huge spider, 3 meters long with legs that are 4 meters long. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08398))_
 - They will not attack anyone who has not touched their web. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08398))_
 - They usually stay in one corner of the nest, but if an intruder gets caught in their web, they will attack. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08398))_
 - The web is highly sticky, so much that it entangles the body, and anyone caught in it will suffer a -4 penalty to their attack and evasion, and will be unable to use ancient magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08399))_
@@ -24068,7 +23899,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - Those whose mental power is reduced to 0 by this attack will die immediately and will then be revived as a new wight 24 hours later. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08647))_
 - Normal weapons have no effect against this monster. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08647))_
-- Normal weapon immunity Not affected by poison and illness Sleepless Damage from healing magic Habitat=Ruins, graveyards Languages=Those previous Perception=Pseudo Wights are undead that possess people and feed on the energy of others. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08647))_
 - If a wight's attack hits, your life force will suffer damage as well as your mental power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08647))_
 - A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08647))_
 - The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08647))_
@@ -24734,7 +24564,7 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Mummy ]
 
-- Mental attack immunity Not affected by poison and illness Damage from healing magic Weak to fire _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08837))_
+- To break this curse, the holy magic Remove Curse is required. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08841))_
 - To break this curse, the holy magic Remove Curse is required. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08841))_
 - At this time, even if the adventurer's rope is broken, his agility will not recover from 0 and he will still be unable to take any action! _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08841))_
 - A mummy is a monster transformed by a magical ritual in ancient , and is buried together in a tomb as the keeper of its master's coffin. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08841))_
@@ -24746,7 +24576,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - A Master Mummy is an ancient member of a royal family or noble who followed a ritual in ancient and sleeps in a tomb as an undead. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08867))_
 - places their hands on its coffin, the master mummy rises and begins to act. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08867))_
 - The character must make a mental power resistance roll against target score 16. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08868))_
-- To break this curse, the holy magic Remove Curse is required. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08868))_
 - If they fail, they will not recover any reductions, including life force and mental power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08868))_
 - This regeneration or summoning can only be done once per round. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08869))_
 - A master mummy can use this ability while taking other actions. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08869))_
@@ -25193,7 +25022,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - When armed, they're difficult to distinguish from a skeleton warrior. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08976))_
 - A bone servant is a puppet golem made from the bones of living creatures. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08976))_
 - They are superior to stone servants, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08976))_
-- Monster Level=5 Rarity=14 (However, a sorcerer knows) Agility=18 Movement Speed=14 Number=One to several Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Weapon:12 (5) Strike Points=11 Evasion Points=14 (7) Defense Points=10 Life Points/Resistance=16/13 (6) Mental Points/Resistance=-/13 (6) Special Abilities=Mental attack immunity Bladed weapons cannot critical Not affected by poison and illness Habitat=Uncertain Languages=None _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08979))_
 - For this reason, skeleton warriors are often used for simple tasks, such as guarding treasure vaults, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08982))_
 - Its appearance is that of a fully-armed skeleton, which uses its weapon and shield with mechanical precision. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08982))_
 - However, its intellect is low and it cannot accept complex or abstract commands. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08982))_
@@ -25706,7 +25534,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Regardless of damage or armor, once character's life force rounds have passed, the character will suffocate and fall unconscious (life force 0). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09161))_
 - Every round from then on, you'll need to make a death check when applying damage (even if it' s 0). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09161))_
 - Every round from then on, you'll need to make a death check when applying damage (even if it' s 0). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09161))_
-- Monster Level=6 Rarity=15 Agility=15 Movement Speed=15 Number=One, rarely multiple Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Weapon:13 (6) Strike Points=12 Evasion Points=14 (7) Defense Points=8 Life Points/Resistance=16/14 (7) Mental Points/Resistance=20/15 (8) Special Abilities=Normal attack immunity Completely transparent Not affected by poison and illness Sleepless Physical attack immunity while in ghostly form Habitat=Ruins Languages=None Perception=Pseudo, Magic while in ghostly _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09163))_
 - For this reason, attacks on an air stalker and evasion against an air stalker's attacks are always -4. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09165))_
 - An air stalker is a stalker created from transparent gas. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09165))_
 - Therefore, even when it materializes, it is completely invisible. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09165))_
@@ -26018,16 +25845,16 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Monster Level=9 Rarity=12 Agility=6 Movement Speed=8 Number=One Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:17 (10) Strike Points=19 Evasion Points=14 (7) Defense Points=14 Life Points/Resistance=50/23 (16) Mental Points/Resistance=-/17 (10) Special Abilities=Weapons cannot critical Certain magic resistant Mental attack immunity Not affected by poison and illness Habitat=Ruins _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09199))_
 - Languages=None Perception=Pseudo An iron golem is a golem made of iron, and is the slowest of all golems. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09200))_
 - Fire-type damage magic is effective, but a critical cannot occur. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
+- Fire-type damage magic is effective, but a critical cannot occur. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
+- Also, damage spells such as cold-type , electric-type , stone-type , poison gas-type , and wind cutter-type are completely useless. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
 - Also, damage spells such as cold-type , electric-type , stone-type , poison gas-type , and wind cutter-type are completely useless. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
 - Earthquake-type , explosion-type , and pure energy-type damage magic is effective, and a critical can occur. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
+- Earthquake-type , explosion-type , and pure energy-type damage magic is effective, and a critical can occur. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
+- Also, damage spells such as cold-type , electric-type , stone-type , poison gas-type , and wind cutter-type are completely useless. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
 - Also, damage spells such as cold-type , electric-type , stone-type , poison gas-type , and wind cutter-type are completely useless. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
 - Since they're formed from mithril silver, which is hard but lightweight, they can make relatively agile movements, and they also have exceptionally hard bodies and large amounts of life force. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09223))_
 - Mithril Golems are extremely rare, and only one has been confirmed to exist to date. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09223))_
 - Mithril Golems are extremely rare, and only one has been confirmed to exist to date. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09223))_
-- Also, damage spells such as cold-type , electric-type , stone-type , poison gas-type , and wind cutter-type are completely useless. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09224))_
-- Earthquake-type , explosion-type , and pure energy-type damage magic is effective, and a critical can occur. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09224))_
-- Fire-type damage magic is effective, but a critical cannot occur. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09224))_
-- Also, damage spells such as cold-type , electric-type , stone-type , poison gas-type , and wind cutter-type are completely useless. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09224))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
 
@@ -26119,7 +25946,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Aetherbeast ]
 
-- These are beasts of the daemon world, said to be creatures created by daemons. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09247))_
 - They're rarely encountered in the material world, and details of them are not well understood. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09248))_
 - Although this data is general, there are many different types of aetherbeasts. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09249))_
 
@@ -26269,7 +26095,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Cerberus ]
 
-- A cerberus is a large black dog with three heads, and is thought to be a variant of the hellhound. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09286))_
 - It's slightly larger than a hellhound, about as big as a medium-sized horse. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09286))_
 - When attacking, it uses all three of its heads to bite the same target at the same time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09286))_
 - Everyone in a 5 meter radius surrounding the cerberus will suffer damage equal to a strike power 20 strike roll plus bonus damage 8. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09287))_
@@ -26340,7 +26165,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - They seem to have been especially proficient at enchanting, and often carry a magical sword. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09308))_
 - They can also use dark magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09308))_
 - They have the ability to use ancient magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09308))_
-- A grunel is a humanoid lesser daemon with steel-blue skin. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09308))_
 - If a grunel has a magic sword, add a bonus of 1 point to both its attack points and strike points. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09308))_
 - A zalbard's method of attack is the sharp claws on its hands, and it also has the power to breathe magical fire from its mouth. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09330))_
 - Its appearance is almost identical to that of a gargoyle, but its skin is fiery red. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09330))_
@@ -26350,22 +26174,18 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - If you succeed on a resistance roll, strike power becomes 0. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09330))_
 - In addition, fire and heat attacks cannot wound a zalbard. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09330))_
 - Those attacked by the fire will suffer damage equal to a strike power 10 strike roll plus 5 points of bonus damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09330))_
-- The zalbard is a lesser daemon that's said to be the model for the gargoyle. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09330))_
 - The fire breathed by a zalbard extends in a straight line, making one target within 5 meters its victim. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09330))_
 - To shapeshift or shapeshift back requires one full round. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09348))_
 - This daemon has the ability to completely copy any opponent's appearance after just one look, including their clothes. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09348))_
 - It has a bright red open mouth straight across its face, but no other features. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09348))_
-- A doubleburg is almost the same size as a human, and its entire body is pitch black. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09348))_
 - This daemon has the ability to completely copy any opponent's appearance after just one look, including their clothes. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09348))_
 - Even if it shapeshifts, a doubleburg's score data will not change at all. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09349))_
 - For example, even though it looks like it's wielding a weapon, it's actually a part of the doubleburg's own body that's been shapeshifted. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09349))_
 - However, it cannot copy its opponent's abilities and memories. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09349))_
 - For example, even though it looks like it's wielding a weapon, it's actually a part of the doubleburg's own body that's been shapeshifted. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09349))_
-- Poison (toxicity score 13, strike power 20, bonus damage 6) Habitat=Underground labyrinths, secluded ruins _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09357))_
 - It also uses its strong tail as a weapon. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09360))_
 - It has wings reminiscent of a giant bat, can reach over 3 meters in height with its neck extended, and uses its long neck to attack by biting. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09360))_
 - Its sharp fangs contain a powerful poison, and those who fail to resist will immediately suffer damage equal to a strike power 20 strike roll plus 6 points of bonus damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09360))_
-- The Maligdorai is a daemon whose upper body resembles an owl and lower body the hind legs of a goat, and its entire body is covered in feathers. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09377))_
 - As well as wings on its back, it has jointless tentacle-like viscera sprouting from the base of each wing. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09377))_
 - Its arms come to sharp gimlet-shaped points, and it performs physical attacks by stabbing with them. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09377))_
 - They will also be unable to take any actions. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09378))_
@@ -26748,7 +26568,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Greater Daemons ] Doppelganger
 
-- The doppleganger, which is in the same family as the doubleburg, albeit a greater species, has the appearance of a 3 meter tall giant with an entirely black body. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09400))_
 - Then, if they observe them for over one hour, they will be able to completely copy their abilities and memories. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09400))_
 - At a glance, all they can capture is their appearance (including their belongings). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09400))_
 - To shapeshift or shapeshift back requires one full round. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09400))_
@@ -27396,7 +27215,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - There may be some hiding their true identity and living among humans in towns and villages, but when their time comes, they're likely to take odd actions to hide their transformations. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09568))_
 - Lycanthropes have the ability to summon and control other beasts of their kind in their surroundings (wolves for werewolves, bears for werebears, etc.). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09568))_
 - Lycanthropy is a type of infectious illness, and those who are wounded by a lycanthrope in beast form are at risk of becoming a lycanthrope of the same species. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09569))_
-- A werewolf is a lycanthrope with the power to shapeshift into a wolf. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09575))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09565))_
 
@@ -27496,8 +27314,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## 13.3
 
-- A werebear is a lycanthrope with the power to shapeshift into a bear. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09598))_
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09597))_
 
 > Perception=Five senses (Illumination)
@@ -27566,8 +27382,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - There are two advantages to doing this. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09620))_
 - Using the rules presented here, a game master can convert data created as a character into the format of a monster . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09620))_
-- The number of times the game master has to roll dice during combat will be drastically reduced ] _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09621))_
-- The game master will be freed from the labor of rolling dice, and will be able to manage enemy data in combat more easily. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09622))_
 - It'll also give you more time to provide guidance to players who are unfamiliar with the rules. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09622))_
 - This is especially effective when there are many enemies. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09623))_
 - This is because it's a process that cannot be dealt with by the player. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09625))_
@@ -27863,7 +27677,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - A noble lizardman's entire body is covered in scales which adds +5 to defense power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09730))_
 - Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the Note: A dark elf can add +4 to mental power resistance due to the blessings of the dark gods. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09730))_
 - This is the same reason why resistance score is calculated with +8. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09803))_
-- between characters, if the attacker and the evader have the same final scores, the attack will fail , but between a character and a monster , the attack will hit . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09803))_
 - In particular, monsters that use magic are, without exception, more formidable enemies than their level suggests. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09804))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09731))_
@@ -28822,8 +28635,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## 《 Blade of Bravery 》
 
-- (Supplement) The blade of bravery is a famous sword passed down from generation to generation as proof of the head of the Sokran family, an Orphan nobility that's existed since the days of Phan. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10277))_
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10271))_
 
 > Rarity=12
@@ -28919,9 +28730,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## 《 Mind Eater 》
 
-- Anyone whose life force has been dealt damage by this sword will suffer 2 points of damage to their mental points unless they succeed on a mental power resistance roll against target score 11. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10305))_
-- Anyone whose life force has been dealt damage by this sword will suffer 2 points of damage to their mental points unless they succeed on a mental power resistance roll against target score 11. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10305))_
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10298))_
 
 > Rarity=15
@@ -28979,7 +28787,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## 《 Red Eye 》
 
-- Rarity=13 Enchanter=Unknown Form=Dagger with a ruby set in a silver handle Required Strength=3 (Strike power 3) Base Trade Price=5000 gamels Powers=+1 to attack power and bonus _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10313))_
 - This dagger is of high value as a work of art. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10315))_
 - If you take out the ruby, the price will be 3400 gamels. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10315))_
 
@@ -30177,7 +29984,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10900))_
 - Then, if the candle's fire in the candlestick goes out, that person will be struck by every conceivable misfortune as a final result. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10900))_
 - If you light a candle, the fire will magically last for one week, but the candle's fire itself offers no protection and will easily go out with a slight breeze, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10900))_
-- Powers=Gives good luck to the one who lights the candle If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10900))_
 - Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10900))_
 - Then, if the candle's fire in the candlestick goes out, that person will be struck by every conceivable misfortune as a final result. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10900))_
 
@@ -30328,7 +30134,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - No memories will remain while the soul is sealed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10930))_
 - Only one person's soul can be sealed in at a time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10930))_
 - Those who fail to resist will have their soul sealed in the stone (resist target score is 18). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10930))_
-- This stone's magical power will appear when you aim it at an opponent and chant a password in low ancient. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10930))_
 - A body that's lost its soul must faithfully obey the commands of the stone's owner. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10930))_
 - Only one person's soul can be sealed in at a time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10930))_
 - If you hold the stone and chant the password of release, or if you destroy the stone, the sealed soul will be released and return to its body. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10931))_
@@ -30414,7 +30219,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Statue of Changing ]
 
-- Anyone who touches this statue will shapeshift into an animal of the same form as the statue. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10955))_
 - A shapeshifted form can return to his or her original state by either touching the snake statue or with a final score 15 Dispel Magic . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10955))_
 - The animals you can shapeshift into by touching each statue are as follows. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10956))_
 
@@ -30496,7 +30300,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - This is used by transplanting it into a body in place of a lost eye. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10973))_
 - Anyone who sees this eye (even if it' s an image reflected in a mirror) will fall asleep _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10973))_
-- immediately if they fail a mental power resistance roll against target score 16. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10975))_
 - You'll usually need to hide it with an eyepatch, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10975))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10968))_
@@ -31222,9 +31025,7 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 - This is indicated by the critical target . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11192))_
 - Under the basic rules, when using the Rating Table to determine damage, a 10 or greater is considered a critical , but with this rule, the chance of a critical is different for each weapon . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11192))_
-- ***The lance itself has a +5 strike power modifier, +10 during a charge, and +2 damage itself _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11343))_
 - Weapons classified as swords , axes , spears , bows , and crossbows suffer +1 to this critical target against metal armor . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11344))_
-- likely you are to deliver a powerful strike. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11344))_
 - In other words, these sharp weapons are less likely to deliver a powerful strike due to the armor's metal. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11345))_
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11192))_
@@ -32197,7 +31998,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ### Rules for Awarding Greater Experience Points
 
-- As your character's level increases and you take on more difficult adventures, you may find that 1000 experience points for completing a mission is not enough. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11717))_
 - 1000 experience points each is a good score for enjoying Sword World RPG for a long time, but some people may want to reach higher levels more easily. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11717))_
 - In such cases, you can increase the experience points for accomplishing missions as follows. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11718))_
 
@@ -32274,9 +32074,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Paper ]
 
-- Also, if exposed to fire, it'll ignite immediately, and its defense points will automatically decrease by 1 point every round. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11749))_
-- When its defense points reach 0, its destruction points begin to decrease, and on the next round when destruction points reach 1, the paper object will burn out. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11749))_
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11743))_
 
 > Defense points = 0~3
@@ -32326,9 +32123,7 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - After the defense points fall to 0, the destruction points will decrease by 1 point. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11755))_
 - If the result is 0 or less (when damage is less than or equal to defense points), that means there was no effect at all. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11755))_
 - Then, you subtract the defense points from the determined damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11755))_
-- damage than these minimum destruction points with a single blow , you will not be able to destroy a structure with 0 defense points. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11757))_
 - The game master considers this to have maximum strength for a wooden wall, and sets its defense points and destruction points to their maximums of 7 and 15 , respectively (see details below). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11759))_
-- Once the destruction points reach 5 points , they will no longer decrease.) _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11760))_
 - If the damage is 7 points or less , the character's efforts are completely wasted . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11760))_
 - If a character attacks with a weapon and deals 22 or greater points of damage in one blow, this wooden wall will be destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11760))_
 - When it comes to destroying structures, some weapons and magic are completely unsuitable, while conversely, others are extremely effective. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11762))_
@@ -32399,8 +32194,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ## 18.3.2 Structure Material List
 
 ## [ Wood ]
-
-- When you use fire magic or a weapon with Fire Weapon cast on it, it will ignite if a critical occurs, and will be destroyed as a result. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11801))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11794))_
 
@@ -32491,10 +32284,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 > Ignores Defense Points = Earthquake-type, explosion-type, pure energy-type magic
 
 ## [ Iron ]
-
-- If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11824))_
-- If your character accidentally touches it, he or she will suffer severe burns. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11824))_
-- If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11824))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11817))_
 
@@ -32590,20 +32379,9 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## [ Spirit Wall: Gnome ]
 
-- Without expansion, defense points are 15 and destruction points are 20. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11844))_
-- Its minimum destruction points are 1 because it's stone. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11844))_
-- Its minimum destruction points are 1 because it's stone. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11844))_
-
 ## [ Spirit Wall: Frau ]
 
-- Its minimum destruction points are 1 because it's ice. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11846))_
-- Without expansion, defense points are 15 and destruction points are 20. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11846))_
-- Its minimum destruction points are 1 because it's ice. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11846))_
-
 ## [ Spirit Wall: Dryad ]
-
-- Without expansion, defense points and destruction points are both 15. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11848))_
-- Spirit Wall: Dryad has the power to regenerate even if it's destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11849))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11850))_
 
@@ -32858,7 +32636,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 
 ## Geography
 
-- At the eastern end of the Alecrast continent lie three countries: Mudeel, Milargo, and Anoth. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11938))_
 - These armed merchant ships frequently visit and trade with countries along the southern coast of the Alecrast continent. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11939))_
 - Mudeel, known as the "Farthest Kingdom," has a population of about 1.2 million. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11939))_
 - These galleys, also known as armed merchant ships, boast strength that makes ordinary pirate ships pale in comparison. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11939))_
@@ -33136,33 +32913,6 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 - In addition, a notation such as 1D+6 means to roll one dice and add 6 to the result . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12444))_
 - 1D stands for one die , 2D stands for two dice , and 1/2D stands for half the result of one dice (rounded up) . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12444))_
 - In addition, a notation such as 1D+6 means to roll one dice and add 6 to the result . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12444))_
-- Note) On the table, expansion rate is the multiplier for mental power consumed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13003))_
-- For spells cast on a flat surface, use the number in the area expansion length column, and for spells cast into space, use the number in the volume expansion length column. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13004))_
-- When you cast a spell by consuming that multiplied amount of mental power, multiply the number in area expansion length or volume expansion length by the number (radius, side) that represents the spell's area of effect , and the result will be the spell's area . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13004))_
-- For example, when you cast the ancient magic Light , whose area is A space with a 10 meter radius , by consuming double the mental power, the resulting area will be a spherical space with a radius of 10 x 1.3 = 13 meters . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13005))_
-- For example, when you cast the ancient magic Light , whose area is A space with a 10 meter radius , by consuming double the mental power, the resulting area will be a spherical space with a radius of 10 x 1.3 = 13 meters . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13005))_
-- Even amateurs can be successful. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13013))_
-- If you have the skill, it's almost a sure-fire task. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13013))_
-- Even amateurs have a greater chance of success. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13016))_
-- Almost guaranteed if you have the skill. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13016))_
-- If you have the skill, there is a high probability of success. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13022))_
-- For amateurs, the risk of failure is greater. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13022))_
-- If you have the skill, you'll succeed 2 out of 3 times, but if you're an amateur, you'll fail 2 out of 3 times. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13025))_
-- If you're a pro in that field, you'll most likely succeed, but if you only have the skill, there's a greater risk of failure. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13031))_
-- If you're a pro in that field, you'll most likely succeed, but if you only have the skill, there's a greater risk of failure. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13031))_
-- Amateurs should stay away from it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13032))_
-- It's possible with a little luck if you're someone who's only dabbled. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13038))_
-- Even pros can fail due to a little bad luck. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13038))_
-- It's possible with a little luck if you're someone who's only dabbled. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13038))_
-- At pro level, failure is quite possible. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13041))_
-- Even if you're a master, there is no guarantee that you'll succeed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13047))_
-- It is best not to expect success at pro level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13050))_
-- Even the greatest master is subject to the possibility of failure. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13050))_
-- Even a master cannot guarantee success. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13053))_
-- You can't blame a master even if they fail. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13056))_
-- Even if you're a master, the probability of failure is high. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13062))_
-- This is a task that will go down in history if successful. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13065))_
-- However, if alternative senses (smell, hearing, etc.) are developed to some extent _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13077))_
 - This is a free, unofficial, fan-based translation. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13873))_
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12016))_
@@ -33390,6 +33140,7 @@ projection_coverage: projection-coverage-3902e224b69a8d21@0cd3f55483151273
 ### Needs review
 
 - Welcome to 'Sword World'! — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00003))_
+- Welcome to 'Sword World'! — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00003))_
 - 1.1 Ability Scores
 ...............
 12
@@ -33413,7 +33164,6 @@ Chapter 2: Success Rolls
 30
 2.3 Checks
 .................. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00028))_
-- Welcome to 'Sword World'! — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00031))_
 - They only know the characters they're taking on. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00038))_
 - Then, about five or six unsavorylooking people enter. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00040))_
 - A ： That doesn't sound good... — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00041))_
@@ -33447,6 +33197,7 @@ Chapter 2: Success Rolls
 - Human ability scores range from 4-24 (14 on average) for each. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00164))_
 - While adventuring, adventurers often suffer physical and mental injuries and fatigue. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00178))_
 - At this time, whether they're conscious or not depends on the situation. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00178))_
+- Add +1 for every +6 in ability scores — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00195))_
 - - Can see in the dark. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00208))_
 - Races
 2. Among the craftsman general skill, has  any  one  of  the  following  at  level  5: carpentry, smithing, woodworking, stonemasonry, gem crafting (details are explained under 7.3: Craftsman Skill, see p. 126).
@@ -33493,6 +33244,9 @@ Mental Power
 22
 17
 14.5 — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00436))_
+- As a result, the ability scores are — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00503))_
+- When raised by elves, characteristics are the same as — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00574))_
+- elves, when raised by humans, they're the same as — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00575))_
 - Therefore, making them too old poses a problem in this sense as well. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00590))_
 - However, you're not completely free to decide on age. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00590))_
 - In elf society, it's a little later. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00597))_
@@ -33501,6 +33255,7 @@ Mental Power
 - Here, we'll put man . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00610))_
 - As for the name, it's up to the player to decide on a name. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00611))_
 - Here, we'll increase fighter to 2nd level and also acquire 1 level in ranger. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00624))_
+- Sorcerer & Sage at the same — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00628))_
 - At this time, please note the following. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00801))_
 - Stock up on weapons, armor, and other equipment and get ready for adventure. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00801))_
 - In real life, when a baseball player chooses a bat for himself, he chooses one that matches his physical strength. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00804))_
@@ -33515,6 +33270,8 @@ Mental Power
 - Here we will choose ring mail . — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01011))_
 - Riding horses or pack horses aren't possible due to their price. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01027))_
 - There's still no adventure in store for Ducard II. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01030))_
+- Torch (6, lasts 2 hours each) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01060))_
+- Oil (1 bottle for a lantern, lasts 12 hours each) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01063))_
 - 1 serving
 1 serving of rations — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01089))_
 - 1 night (not including food)
@@ -33529,7 +33286,7 @@ Living expenses
 - Let us explain how to fill out the sheet according to the order of character creation. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01116))_
 - Roll the dice according to Table 1-3: Determining Sub-Ability Scores and write down the sub-ability scores from A-H in order. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01122))_
 - Please calculate and write down the six ability scores. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01124))_
-- As with starting experience points, write down your starting skills. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01133))_
+- [ ⑦ Starting Experience Points ] — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01129))_
 - It' s advisable to write them in the order of adventurer skill → general skill. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01133))_
 - Roll the dice, calculate it, and write it down in the money field. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01135))_
 - Decide on gender and write it in this field. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01138))_
@@ -33543,10 +33300,10 @@ Living expenses
 A baseline  score is  a  number  that indicates  how  competent  or  skilled  a character is at a given activity.
 skill  level ,  and  their  dexterity  bonus  is used for ability bonus .
 For  example,  if  you  want  to  hit  an enemy with your sword, it is impor — _partial-parse: table parsed from aligned text columns_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01163))_
-- is his baseline score. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01168))_
 - Target Scores
 2.2 Target Scores
 The baseline score is  a number that represents a character's ability. However, the  success  of  an  action  is  not  only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01172))_
+- final score (baseline score + 2D) < target score → action fails — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01176))_
 - The greater the target score, the more difficult the action. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01179))_
 - Did Ducard II's attack hit the Goblin? — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01182))_
 - Try rolling the dice yourself. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01184))_
@@ -33560,6 +33317,7 @@ The baseline score is  a number that represents a character's ability. However, 
 - final score {baseline score + 2D ± (bonus, penalty)} < target score → action failed — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01221))_
 - well hidden that you just couldn't see them? — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01224))_
 - That's an answer from the player's perspective, not the character's. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01225))_
+- final score < target score (difficulty + 2D) → action fails — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01236))_
 - 1. There is a  trap, the find trap check is successful → There is a trap at the door 2. There is a trap, the find trap check is a failure → You don't find any traps 3. There is no trap, the find trap check is successful → You don't find any traps 4. There is no trap, the find trap check is a failure — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01238))_
 - And yet I'll carelessly open it and get hit. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01250))_
 - This is misinterpreting the rules. Instead, — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01251))_
@@ -33568,7 +33326,8 @@ The baseline score is  a number that represents a character's ability. However, 
 2.6 Success Rolls Using Adventurer Level
 For a success roll, the baseline score is usually calculated as relevant skill level + ability bonus . However, in some cases, adventurer level , rather than skill level, is used to calculate the baseline score.
 For action — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01256))_
-- adventurer level in its baseline score calculation. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01273))_
+- adventuring, the baseline score for a success roll is adventurer level + ability bonus . — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01257))_
+- adventurer level in its baseline score calculation. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01273))_
 - He withstands the magic and escapes the room safely. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01275))_
 - Look at the life force and mental power fields under ability scores. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01277))_
 - The baseline score (resistance) equals adventurer level + life force/mental power bonus . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01278))_
@@ -33581,6 +33340,7 @@ For action — _unextracted: segment carries subject matter but no structured cl
 - Ducard II then fails to evade it and falls down with a deep wound. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01318))_
 - The goblin cuts at him with its claws. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01318))_
 - However, even at this time, it' s still acceptable to switch attack targets. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01340))_
+- attack, and you will have a higher chance of hitting than usual. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01342))_
 - Movement and Actions
 3.4 Movement and Actions
 1 round lasts 10 seconds . Therefore, a character can also move during this time. However,  when movement is made, actions are restricted. You cannot wield weapons or cast spells while running at full speed. — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01344))_
@@ -33598,7 +33358,10 @@ All joking aside, however, if we want to be realistic, weapons and armor used sh
 - The maximum of shooting weapons such as bows and arrows- those marked shooting on the Weapons table (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01424))_
 - are also possible, and it is acceptable to carry a spare weapon on your waist or back, as long as it is within the bounds of common sense. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01427))_
 - The ranger skill is proficient with projectiles, and only when using a weapon that is designated as suchthrowable , made for throwing , or shooting on Table 1-8: Weapons (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01429))_
+- Attack power is calculated with the following formula: — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01439))_
 - strike power = required strength of weapon (+5 if a two-handed weapon) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01445))_
+- If a character does not have a weapon (they're barehanded ), Strike Power is 0 . — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01446))_
+- Bonus damage is calculated with the following formula: — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01449))_
 - For example, when you successfully exploit a gap in your opponent's armor, or when you successfully damage an opponent's vital point, such as an eye. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01453))_
 - No matter how formidable the weapon, it's not that scary if it doesn't hit. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01460))_
 - The size of the shield (whether it is a small or large shield) is completely irrelevant unless you introduce the optional rule 16.2: Weapon and Armor Modifiers (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01462))_
@@ -33607,10 +33370,11 @@ All joking aside, however, if we want to be realistic, weapons and armor used sh
 - The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01475))_
 - Now, don't worry about it too much. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01475))_
 - The target score at this time varies depending on the monster. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01485))_
+- character's attack power + 2D < monster's evasion points → attack fails ※ Double sixes will automatically hit, and double ones will automatically fail. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01487))_
 - The attack hit the target perfectly. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01491))_
 - On the table, look at the column where the key number equals your character's strike power . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02150))_
 - Follow along the row next to the result and look for the number under the key number column that matches your character's strike power . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02153))_
-- roll is 2 (double ones), the result is ＊＊ regardless of the key number. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02159))_
+- When making a strike roll, if your 2D — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02158))_
 - Make a note of the score you got on the Rating Table. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02164))_
 - Add that result to the previous result. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02164))_
 - That's still greater than the critical target. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02169))_
@@ -33621,14 +33385,17 @@ All joking aside, however, if we want to be realistic, weapons and armor used sh
 14 (base damage) +4 (bonus damage) -4 (goblin's defense points) = 14
 If  final  damage  is 0  or  negative ,  it means  that no  damage was  dealt.  The attack  was — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02189))_
 - When a monster attacks a character, whether or not the attack hits is determined from the perspective of did the character dodge the monster's attack? . — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02194))_
-- evasion speed + 2D < monster's attack points → evasion failure (monster's attack hits) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02198))_
+- evasion speed + 2D < monster's attack points → evasion failure (monster's attack hits) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02198))_
+- ※ Double sixes will automatically evade, and double ones will automatically fail — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02199))_
 - On the Rating Table , look at the column where the key number equals your character's defense power . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02211))_
 - Roll 2D and follow the row next to the result. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02214))_
 - Then, look for the number under the appropriate column. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02214))_
 - Maybe the monster's attack hit a gap in your character's armor, or one of their vital points. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02218))_
 - 7 (goblin's strike points) - {0 (defense roll) +2 (damage reduction)} = 5
 7 (goblin's strike points) - {6 (defense roll) +2 (damage reduction)} = -1 — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02231))_
+- 4.7 Attacks From Characters Against Characters — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02236))_
 - If the attacker's final score exceeds that of the defender, the attack hits . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02243))_
+- attacker's attack power + 2D > defender's evasion speed +2D → attack — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02244))_
 - Ducard II suddenly found himself in a dispute with another adventurer, Bucky. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02248))_
 - Bucky dodges Ducard II's attack, then counterattacks. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02265))_
 - As a result of his hit check, it's a hit. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02265))_
@@ -33636,6 +33403,7 @@ If  final  damage  is 0  or  negative ,  it means  that no  damage was  dealt.  
 - Ducard II now determines how much damage his armor prevents. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02267))_
 - Damage reduces a character's life force (or a monster's life points). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02310))_
 - Ducard II faints and collapses . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02318))_
+- life force resistance + 2D -(damage applied beyond life force) < 7 → death — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02324))_
 - If they're given treatment by magic, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02329))_
 - It's still possible for him to act. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02334))_
 - Do not roll the dice at this time. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02338))_
@@ -33644,7 +33412,7 @@ If  final  damage  is 0  or  negative ,  it means  that no  damage was  dealt.  
 - If left untreated, they must make another death check after 1 hour , and — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02347))_
 - These high-quality weapons and armor  can  be  expensive.  Their  price increases  by 20% for  every 1 required strength lower than usual. 2 lower will be 40% more expensive, 3 lower will be 60% more  expensive, 4 lower  will  be 80% more expensive, and 5 lower will be twice the original price.
 Tabl — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02359))_
-- again, will only die on double ones. — _fragmentary: text starts with a continuation cue before a verb_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02361))_
+- All but the most remote village — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02360))_
 - Just think in terms of multiplication. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02370))_
 - The damage reduction bonus from magical armor applies only to weapon attacks. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02382))_
 - A guide to prices can be found in Chapter 14: Treasure (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02384))_
@@ -33652,19 +33420,21 @@ Tabl — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - Co
 - Make it of more beautiful color and brilliance than two hundred precious gems. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02406))_
 - This treatment takes 30 minutes . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02420))_
 - For more information, see 7.4: Healer Skill. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02423))_
+- Sorcerer uses ancient magic Shaman uses spirit magic Priest uses holy magic Dark priest uses dark magic — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02440))_
+- and dragon priest uses dragon roar magic . — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02441))_
 - These are as explained earlier under 1.2: Races (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02444))_
 - 5.1.4 How to Use Mag ic — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02454))_
 - Now let's explain how to actually use magic in combat, etc. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02457))_
 - For the character in the above example, we' d write holy prayer and silent spirit in the runes column and 1 and 3 (holy prayer), and 2 and 4 (silent spirit) in the level and magic power columns to the right of them, respectively. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02465))_
 - If the 2D roll comes up double sixes , the magic automatically succeeds and will take its full effect, no matter how high the monster's mental point resistance (except for when the magic itself has no effect on that monster. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02480))_
 - Consider an adventurer with shaman skill level 2 and a +2 intelligence bonus (magic power 4) who casts the Fire Bolt spell, which shoots a flaming bullet at the opponent, on a goblin (mental point resistance 9). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02482))_
+- Fire Bolt takes its full effect. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02486))_
 - Roll of 5 or greater: Fire Bolt takes its full effect. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02486))_
 - Roll of 2 (double ones): Fire Bolt does not work at all. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02488))_
-- magic power + 2D < monster's mental point resistance → magic takes an incomplete effect (some take no effect at all) — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02491))_
-- Fire Bolt takes an incomplete effect. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02504))_
+- magic power + 2D < monster's mental point resistance → magic takes an incomplete effect (some take no effect at all) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02491))_
 - Roll is 9 or higher: successful resist. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02504))_
-- Fire Bolt takes its full effect. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02505))_
 - Roll is 8 or less: failed resist. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02505))_
+- mental power resistance + 2D < monster's magic intensity → magic takes — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02507))_
 - Some magic impacts a certain area and takes effect on all targets within that area. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02520))_
 - Suppose an adventurer with sorcerer skill level 3 and a +2 intelligence bonus (magic power 5) casts the spell Lightning . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02526))_
 - A centaur and three adventurers get into a fight. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02537))_
@@ -33672,6 +33442,7 @@ Tabl — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - Co
 - For example, a sorcerer who leads undead monsters to attack villages. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02546))_
 - Please use the optional rules under 17.1: Changes to Magic Procedure (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02546))_
 - but that probably won't benefit you in any way. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02550))_
+- (rounded up), equals the actual mental power consumed by the character. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02556))_
 - can be recovered via the following methods. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02565))_
 - 5.1.7 Magic Expansion
 5.1.7 Magic Expansion
@@ -33719,7 +33490,7 @@ Although  it's not  often  done,  it's possible  to  perform  magic  expansion a
 - There's several kinds of magic that share the same characteristics. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02636))_
 - A spell that deals damage to the target's life force or mental power. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02639))_
 - For example, the ancient magic Dispel Magic nullifies the effects of most magic. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02645))_
-- For example, there are two kinds of ancient magic, Decrease Weight (which makes an object lighter) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02653))_
+- and Increase Weight (which makes an object heavier), but when both of these are cast on the same object at the same time, they will cancel each other out and disappear without taking effect. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02654))_
 - - ③ Compare target score in ① with fi nal score in ② . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02666))_
 - The resist target score equals the fi nal score in ② . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02667))_
 - It's possible for magic A to counter (overpower) magic B, and at the same time for magic B to counter (overpower) magic A. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02669))_
@@ -33731,6 +33502,8 @@ Although  it's not  often  done,  it's possible  to  perform  magic  expansion a
 - Please resolve them as counters (overpowers) magic. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02679))_
 - A spell that detects objects, people, magic power, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02687))_
 - These spells also ignore the protection of the ancient magic Magic Protection . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02688))_
+- Attack another with a weapon (or barehanded) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02692))_
+- Move more than 3 meters in one round — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02693))_
 - Even while focusing, if another attacks you with a weapon, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02695))_
 - A spell that deceives the five senses of the target. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02700))_
 - Or, what if you were in a hallway with a thick layer of dust, but only one part of it was free of dust? — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02705))_
@@ -33781,9 +33554,9 @@ Although  it's not  often  done,  it's possible  to  perform  magic  expansion a
 - Increases the target's agility by 6. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03059))_
 - Reduces the target's agility by 6. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03062))_
 - Affects bonus damage (strike points). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03065))_
+- Affects bonus damage (strike points). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03065))_
 - Increases the target's strength by 6. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03065))_
 - However, if you're using the optional rules under 16.8: Weapons and Armor That Are Too Heavy (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03067))_
-- Affects bonus damage (strike points). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03067))_
 - Reduces the target's strength by 6. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03067))_
 - 215) or a skeleton warrior (see p. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03079))_
 - If you use human bones, it'll take the form of a human skeleton, such as a skeleton (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03079))_
@@ -33808,7 +33581,7 @@ Although  it's not  often  done,  it's possible  to  perform  magic  expansion a
 - Movement and combat, as well as casting spells, all count as having taken an action (using holy magic also counts as having taken an action). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03460))_
 - At this time, the result lasts for the duration of the spell. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03461))_
 - Resist=None This spell reflects magic cast on the caster directly back onto their opponent. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03489))_
-- Monster Level=8 Rarity=16 (However, a sorcerer always knows) Agility=18 Movement=Never leaves the target's side Attack Points=Claw:16 (9)/Claw:16 (9) Strike Points=15 Evasion Points=17 (10) Defense Points=13 Life Points/Resistance=18/17 (10) Mental Points/Resistance=-/17 (10) — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03507))_
+- Monster Level=8 Rarity=16 (However, a sorcerer always knows) Agility=18 Movement=Never leaves the target's side Attack Points=Claw:16 (9)/Claw:16 (9) Strike Points=15 Evasion Points=17 (10) Defense Points=13 Life Points/Resistance=18/17 (10) Mental Points/Resistance=-/17 (10) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03507))_
 - Stun Cloud turns the air within the area of effect into poison gas. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03518))_
 - Those who successfully resist won't receive these effects. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03518))_
 - This spell also prevents attacks from magical weapons. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03528))_
@@ -33816,10 +33589,10 @@ Although  it's not  often  done,  it's possible  to  perform  magic  expansion a
 - At this time, the result lasts for the duration of the spell. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03537))_
 - 219 for wraith details. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03550))_
 - Counters (Overpowers): Curses cast on the caster him or herself, all magic except nonremovable — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03607))_
-- attacks other than magic. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03612))_
 - This spell creates a gate between two distant places, allowing you to instantly move to a destination. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03622))_
 - If the caster knows about the underworld, it's also possible to open a gate to the underworld. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03623))_
 - Death Cloud turns the air within its area of effect into a lethal poison gas. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03634))_
+- Counters (Negates): All magic other than — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03643))_
 - 5.1.13 Spirit Magic and the Shaman Skill
 5.1.13 Spirit Magic  and the Shaman Skil
 Silent spirit are runes used to communicate with spirits and draw out the  power  controlled  by  those  spirits. The skill for using spirit magic is called the shaman skill , and those who have this skill  are  called — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03662))_
@@ -33827,16 +33600,21 @@ Silent spirit are runes used to communicate with spirits and draw out the  power
 - #3 is ultimately decided by the game master, but below are some guidelines for where spirit power can be found at work. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03670))_
 - but in places where plants and trees grow, they're only at work in small amounts. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03684))_
 - Salamander and frau control fire and ice, as well as heat and cold. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03691))_
+- 1st Level Spirit Magic List [ Wind Voice ] — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03700))_
 - carried by Wind Voice . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03712))_
 - Use this spell against a target during movement or combat. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03721))_
-- raised by gnome and fall prone one round in order to get back up. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03722))_
+- raised by gnome and fall prone one round in order to get back up. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03722))_
 - - Magic cannot be used (if you're attempting to use magic at a later action order during the round, you must cancel your action) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03728))_
+- - A -1 penalty to attack power (points) and evasion speed (points) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03729))_
+- - Spells that require focus cannot — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03730))_
 - When you chant this spell, any kind of muddy or poisonous water instantly turns back into pure water. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03741))_
+- Counters (Negates): Shade , Spirit Wall: Shade Countered (Negated) By: Shade , Spirit Wall: Shade — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03762))_
 - Countered (Overpowered) By: Darkness Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect Will-o-wisp is a spirit of light, spherical in shape and emitting pale blue-white light. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03763))_
 - Make this damage check using the strike power 10 column. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03763))_
 - This spirit flies around in the sky according to the caster's commands. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03763))_
 - It doesn't matter what kind of fire. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03774))_
 - Whether it's magical fire or natural fire, it takes effect. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03774))_
+- Counters (Negates): Will-O-Wisp , Spirit Wall: Wisp — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03794))_
 - At this time, it emits an energy completely different from a willo-wisp. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03797))_
 - Make a strike power 10 damage check, and subtract the result from mental power (points). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03797))_
 - Therefore, skill levels, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03821))_
@@ -33846,7 +33624,6 @@ Silent spirit are runes used to communicate with spirits and draw out the  power
 - This spell's effect only works on objects up to the size of a small boat. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03942))_
 - Attack points +2, evasion points -4. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03968))_
 - The target goes berserk from a state of panic. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03968))_
-- cannot use magic, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03969))_
 - 4 Target is struck by panic and is prevented from taking action. Take a -1 penalty on all success rolls
 5
 Same as above, but penalty is -2
@@ -33858,14 +33635,20 @@ Target runs away. If that's not possible, they act with a -3 pen — _partial-pa
 - will always be the following scores. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03999))_
 - This spell specifies a point in space and affects the space within a 5 meter radius from it. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04045))_
 - It' s up to the caster to decide who to protect with this spell. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04046))_
+- [ Control Sound ] (Sylph/Wind Spirit) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04048))_
+- Base Mental Power Cost=24 Distance=Caster Area=A space within a 30 meter radius from the caster Duration=Until focus ends Effect=Manipulate the echoes of sounds within the area of effect Type=Focus Countered (Overpowered) By: Silence Expansion=Final score, area Resist=Negated effect — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04049))_
 - When you chant this spell, a stream of water separates from a single point in the air and radiates out in countless streaks, which eventually hang down in a continuous curtain. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04072))_
 - Create a wall of water by borrowing the power of water spirits. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04072))_
+- Counters (Negates): Spirit Wall: Undine/Frau Countered (Negated) By: Spirit Wall Undine/Frau — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04076))_
 - Create a wall of blazing fire by borrowing the power of the fire spirit. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04080))_
+- Counters (Negates): Will-O-Wisp , Spirit Wall: Wisp — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04085))_
+- For more information, please refer to 18.3: Rules for Destroying Structures (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04101))_
 - For more information, please refer to 18.3: Rules for Destroying Structures (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04101))_
 - However, this wall regenerates by growing new trees one after the other. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04101))_
 - When you chant this spell, a number of stone slabs break through the ground and rise up in a flash, creating a seamless wall. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04105))_
 - For details on the destruction of this wall, please refer to 18.3: Rules for Destroying Structures (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04106))_
-- For more information, please refer to 18.3: Rules for Destroying Structures (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04116))_
+- Countered (Negated) By: Spirit Wall: Salamander — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04111))_
+- This wall can be destroyed by weapons or magic. For more information, please refer to 18.3: Rules for Destroying Structures (see p. 277). — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04116))_
 - When attacking, evading, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04136))_
 - This spell creates a tornado in a 10 meter radius around a point in space. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04136))_
 - Additionally, the tornado creates a vacuum that cuts the skin and flesh of those within its area of effect, dealing strike power 10 damage. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04137))_
@@ -33883,6 +33666,8 @@ Target runs away. If that's not possible, they act with a -3 pen — _partial-pa
 - The firestorm deals fire and heat damage to everything within its radius. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04218))_
 - At this time, the result lasts for the duration of the spell (damage is determined by a new dice roll each round) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04242))_
 - For more information, please refer to the section Sailor Skill (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04266))_
+- [ Neutralize Elemental (Various greater spirits) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04269))_
+- Base Mental Power Cost=50 Distance=Caster Area=A space within a 100 meter radius from the caster Duration=18 rounds Effect=Appeal to the greater spirits to neutralize spirit power Type=Target score Counters (Overpowers): All magic that uses related spirit power Expansion=Final score, duration, area — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04270))_
 - Priest Skill
 5.1.15 Holy Magic  and the  Priest Skil
 Holy prayers are runes used to contact  the  great  beings,  the gods ,  and use  that  power  as  a  source  to  perform various miracles. There are many gods in Sword  World , each drawing worship from humans and other intelligent races.
@@ -33901,11 +33686,19 @@ In orde — _partial-parse: table parsed from aligned text columns_ _(Sword Worl
 - For details, see 12.2.1: Poisons (see p. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04427))_
 - will completely vanish. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04427))_
 - Therefore, any symptoms of drunkenness, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04427))_
+- Counters (Overpowers): Shade , Spirit Wall: Shade — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04435))_
 - For details, see 12.2.2: Illnesses (see p. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04450))_
 - This spell negates all magic except for non-removable . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04483))_
 - The shockwave deals strike power 30 damage to everything within a 10 meter radius. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04514))_
-- Small bird, wolf (they chirp, howl, etc.), rabbit (their feet are a symbol of good luck), crows aren't allowed (a symbol of bad luck) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04533))_
-- Braki Mole, woodpecker, squirrel, small bird (they have the characteristic of nest-building) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04542))_
+- Dog, hawk, horse (they're faithfully tamed by humans) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04527))_
+- Eagle, hawk, tiger, wolf (they hunt) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04529))_
+- Rat, fox, crow (they have a certain cleverness) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04531))_
+- Small bird, wolf (they chirp, howl, etc.), rabbit (their feet are a symbol of good luck), crows aren't allowed (a symbol of bad luck) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04533))_
+- Cow, horse, rabbit, chicken (they're livestock) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04535))_
+- Sheep, birds (they have distinct wool or feathers) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04537))_
+- Mouse, squirrel, monkey, bear (they use their forefeet skillfully) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04539))_
+- Braki Mole, woodpecker, squirrel, small bird (they have the characteristic of nest-building) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04542))_
+- This spell does not help restore life force (points) from wounds, nor can it be cast on a corpse to bring it back to life. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04543))_
 - However, when your mental power (points) suffer damage from certain monster attacks or spells such as Mental Attack , etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04561))_
 - If you've lost life points due to wounds, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04573))_
 - The same goes for rotting corpses. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04601))_
@@ -33926,9 +33719,15 @@ Memories cannot be regained naturally
 - The shape depends on the caster's preference. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04721))_
 - When you create a bow, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04721))_
 - Marfa, as the earth mother and the goddess of affection, preaches strong warnings against unnecessary conflict. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04778))_
-- Base Mental Power Cost=25 Distance=30 centimeters Area=One piece of metal up to 10 kilograms Duration=Until focus ends Effect=Makes metal red hot so it can be processed Type=Focus Expansion=Final score, distance, target's weight (See description) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04795))_
+- Base Mental Power Cost=25 Distance=30 centimeters Area=One piece of metal up to 10 kilograms Duration=Until focus ends Effect=Makes metal red hot so it can be processed Type=Focus Expansion=Final score, distance, target's weight (See description) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04795))_
 - If cast on (metal) armor, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04797))_
-- Please note the magic's reach distance (30 centimeters). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04814))_
+- Enchant Weapon (Mental Power Consumed 3, 3000 Gamels) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04807))_
+- Counterspell (Mental Power Consumed 3, 3000 Gamels) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04808))_
+- Decrease Weight (Mental Power Consumed 3, 3000 Gamels) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04809))_
+- Kindle (Mental Power Consumed 3, 3000 Gamels) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04810))_
+- Protection (Mental Power Consumed 3, 3000 Gamels) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04811))_
+- Light (Mental Power Consumed 3, 3000 Gamels) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04812))_
+- Lock (Mental Power Consumed 3, 3000 Gamels) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04813))_
 - However, if magic such as Unlock , etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04819))_
 - same way as magic. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04826))_
 - However, it doesn't matter if you don't know the meaning, as long as you know the lyrics by heart. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04828))_
@@ -33940,11 +33739,11 @@ Memories cannot be regained naturally
 - belongs to mind explained under 5.1.9: Magic Types (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04837))_
 - It takes about 18 rounds to gather. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04843))_
 - Movement slows down while the song continues. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04857))_
+- Movement slows down while the song continues. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04857))_
+- Movement slows down while the song continues. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04857))_
 - -1 to attack points and evasion points. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04857))_
 - -2 to attack points and evasion points. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04859))_
-- Movement slows down while the song continues. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04859))_
 - -3 to attack points and evasion points. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04861))_
-- Movement slows down while the song continues. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04861))_
 - Cannot act while the song continues. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04867))_
 - Undead crumble away. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04869))_
 - However, only the action order changes, not the agility. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04881))_
@@ -33962,8 +33761,10 @@ If the rules for determining the target score  or  difficulty  are  clearly  ind
 - Otherwise, it's written as no equipment restriction . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04913))_
 - For more information, please refer to ④ Climb (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04925))_
 - 121) under 6.6: Common Adventurer Abilities . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04925))_
+- attempts to pick a lock and fails, no further attempts can be made to pick that lock (and any attempts will always fail). — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04937))_
 - The ability to open locks on doors, treasure chests, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04940))_
 - The thieves' guild sells lockpicking tools (sold under the name thieves' tools ) to guild members for 100 silver coins. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04940))_
+- [ ④ Mnemonics [Intelligence]] (No equipment restriction, not retriable) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04945))_
 - Add a +2 modifier to the success roll when you try to recall something you've already specifically tried to consciously memorize. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04946))_
 - Detailed rules regarding climbing and falling can be found under ④ Climb (see p. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04963))_
 - 121) in 6.6: Common Adventurer Abilities . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04963))_
@@ -33973,13 +33774,18 @@ If the rules for determining the target score  or  difficulty  are  clearly  ind
 - The methods for determining target scores, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04969))_
 - For more information, please refer to the rules for ⑤ Long Jump/High Jump (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04969))_
 - 122) under 6.6: Common Adventurer Abilities . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04969))_
+- [ ⑯ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04978))_
+- This is the ability to sense and find traps set indoors, such as doors, hallways, boxes, drawers, etc. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04979))_
 - Checks are made in the same way as the thief skill's Hide (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05015))_
+- [ ⑤ Sense Danger [Intelligence]] (No equipment restriction) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05018))_
 - If a ranger succeeds on a success roll against a set target score using ranger skill level + intelligence bonus as the baseline score, the ranger can roughly predict the weather (sunny, cloudy, rain, snow, storm, strong wind...... — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05030))_
 - Adventurers attack with the ranger skill and defend with the fighter or thief skill. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05036))_
 - For details, see 10.3: Surprise Attacks (see p. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05040))_
+- [ ⑮ Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05041))_
+- [ ⑯ Remove/Set Trap [Dexterity]] (Equipment restriction, not retriable) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05043))_
 - It's the ability to remove traps set outdoors and create traps using natural objects. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05044))_
-- This also follows the thief skill. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05044))_
 - For more information, please refer to Chapter 8: Character Growth (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05047))_
+- [ ① Monster Check [Intelligence]] (Not retriable) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05056))_
 - can learn to speak or read one new language. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05063))_
 - For detailed rules regarding languages, please refer to 12.1: Rules Regarding Language (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05066))_
 - It's for checks regarding whether you know or don't know about things in all fields, from trivia to politics to science. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05070))_
@@ -34000,10 +33806,12 @@ If the rules for determining the target score  or  difficulty  are  clearly  ind
 - He's wearing chain mail armor. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05161))_
 - Therefore, he climbs the cliff. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05166))_
 - An adventurer tries to climb a 22 meter cliff. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05166))_
-- *This condition is not possible to climb with the thief skill (not using a rope) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05175))_
+- *This condition is not possible to climb with the thief skill (not using a rope) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05175))_
+- Modifier due to wall and cliff foothold conditions: — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05176))_
+- Walls and cliffs are somewhat slanted, but slippery (e.g., sloped rapids, etc.) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05183))_
 - If you fall on soft grass or on the water surface, calculate by reducing factors, such as fall height x 2 , fall height x 1 , etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05204))_
 - increase the factor to increase the damage. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05204))_
-- meters or greater, determine the base damage by (fall height - 5) x 3 . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05208))_
+- meters or greater, determine the base damage by (fall height - 5) x 3 . — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05208))_
 - The adventurer tries to jump over it. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05213))_
 - 5 for 3 meters, +1 for every 15 cm
 Thief Skill (Normal Long Jump)
@@ -34014,23 +33822,29 @@ Adventurer Level Standing Long Jump)
 5 for 2 meters, +1 for every 10 cm
 Adventurer Level (Normal Long Jump)
 5 for 4 meters, +1 for eve — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05221))_
+- Insufficient run-up (except standing long jump) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05243))_
 - 5 for 2 meters, +1 for every 5 cm
 Thief Skill (Pole High Jump)
 5 for 4 meters, +1 for every 20 cm
 Adventurer Level (Normal High Jump)
 5 for 1 meter, +1 for every 5 cm — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05252))_
+- Have a lot of luggage, heavy — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05268))_
+- Dangerous place where failure could be life-threatening — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05272))_
+- Others, as appropriate to the situation — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05274))_
 - In Sword World RPG , adventurer level increases as an adventurer's skill level increases, and the — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05287))_
 - - Decide on the purpose of the skill (e.g. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05301))_
-- - Consider restrictions for using the skill (e.g. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05303))_
-- - Think about the abilities required for the skill (e.g. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05304))_
-- comes to items outside their specialty. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05305))_
-- In Alecrast, merchants generally purchase items at half the retail price. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05312))_
+- - Decide on a name for the skill (e.g., it's a fisherman, so we'll call it the fisher skill) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05302))_
+- - Consider restrictions for using the skill (e.g. fishermen probably don't need any restrictions) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05303))_
+- - Think about the abilities required for the skill (e.g. A skilled fisherman must be able to identify fish - fi sh check , be good at swimming swim , and be able to operate a boat small ship steering ) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05304))_
+- [ ① Value Check [Intelligence]] (Not retriable) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05309))_
+- [ ② Negotiation [Mental Power]] (Not retriable) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05311))_
 - However, in this case, please conduct negotiations with careful consideration of your role. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05316))_
 - Therefore, the quality of the item depends entirely on the skill of the craftsman. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05319))_
 - Please round up any fractions. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05326))_
 - 50 gamels, half the list price). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05328))_
 - Since the difference between the two is 16-8= 8 , the antique dealer can offer to take it for 38 gamels, which is 8 x 3%, or 24% off, from the normal taking price (i.e. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05328))_
 - craftsmen and armor craftsmen to create high quality weapons and armor. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05329))_
+- [ ② Value Check [Intelligence]] (Not retriable) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05330))_
 - Treat this the same way as a merchant's value check . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05331))_
 - However, having a healer increases it dramatically. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05344))_
 - Normally, natural damage recovery is 1 point per day (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05344))_
@@ -34038,7 +33852,7 @@ Adventurer Level (Normal High Jump)
 - Detailed rules regarding illnesses can be found under 12.2.2: Illnesses (see p. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05363))_
 - It concerns all other similar acts. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05363))_
 - Please refer to 12.2.3: Herbs (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05367))_
-- Unlike rangers, hunters hunt and convert their prey into gold to earn their own income. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05370))_
+- [ ⑩ Value Check [Intelligence]] (Not retriable) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05369))_
 - Please see the ranger ability of the same name. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05395))_
 - For now, please ignore the rightmost column (reduction for acquiring sorcerer & sage at the same time). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05414))_
 - He pursues his abilities as a ranger and raises his ranger skill from 1st level to 3rd level in one go. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05416))_
@@ -34059,9 +33873,14 @@ Adventurer Level (Normal High Jump)
 10.1 NPC and Monster Action Announcement
 The  game  master  must  manage  the actions of NPCs and monsters. In combat,  the  planned  actions  of  NPCs and monsters must be announced at the beginning of the round.
 At  this  time,  the  game  master  does not need  — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05652))_
+- However, that does not mean that you can make loose announcements and change them depending on the situation. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05653))_
 - This penalty will be considered in accordance with 9.3: General Modifiers (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05658))_
 - Subtract the monster's score from the highest final score. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05663))_
 - Strictly plan your actions, and when telling the players, only tell them things that only the character knows. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05680))_
+- Can't see opponent (in the dark, invisible enemy, etc.) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05684))_
+- However, if alternative senses (smell, hearing, etc.) are developed to some extent — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05685))_
+- (Rocks and debris are everywhere, water is up to your waist, etc.) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05691))_
+- (Same as when trying to stand up because you're in an unstable state) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05694))_
 - If a surprise attack occurs, the side who surprised the other is free to act for — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05697))_
 - It's still possible to take actions such as trying to avoid enemy attacks or resisting magic cast on you. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05699))_
 - Also, since you cannot make sound normally underwater, all spells and — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05705))_
@@ -34073,6 +33892,7 @@ At  this  time,  the  game  master  does not need  — _partial-parse: table par
 - If a human or monster in this state (only those that rely on vision) attempts to attack, they suffer a -4 modifier to attack and evasion. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05803))_
 - Deals damage to the opponent's life force (points). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05829))_
 - 178 for information on imp abilities. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05839))_
+- from the target and give it to the caster. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05848))_
 - It' s up to the game master to decide what kind of penalty to impose. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05857))_
 - "It's on the house, don't worry about paying" The waiter told the man. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05868))_
 - 'If I were betrayed by a woman I'd always loved, then ran into her, that's the look I might give her. ' That thought came to the waiter's mind. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05872))_
@@ -34096,6 +33916,8 @@ At  this  time,  the  game  master  does not need  — _partial-parse: table par
 - Then, compare this final score with the mental resistance score of the creature you're trying to summon. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06089))_
 - Summoning takes place across space. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06090))_
 - If you know for sure they're there, +4. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06090))_
+- When this spell is chanted, the caster's entire body is covered with scales, — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06121))_
+- Appears immediately. However, the summoned creature becomes enraged and — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06127))_
 - -7 or less
 10 days later
 -6
@@ -34125,7 +33947,7 @@ At  this  time,  the  game  master  does not need  — _partial-parse: table par
 - The same applies when expanding the target score. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06259))_
 - Summon and control a wyrm, a lesser species of dragon. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06264))_
 - Transform into a lesser dragon. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06275))_
-- transformed into a dragon, the damage reduction will be 10 points, which is the lesser dragon's monster level, not the caster's adventurer level. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06277))_
+- transformed into a dragon, the damage reduction will be 10 points, which is the lesser dragon's monster level, not the caster's adventurer level. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06277))_
 - 197 for lesser dragon details. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06278))_
 - The shell disappears as soon as you wake up. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06290))_
 - Wrap yourself in a dragon egg shell. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06290))_
@@ -34167,14 +33989,23 @@ Poisons are not effective against everything. It has no effect on monsters that 
 - Determine its effect using Table 5-5: Fears (see p. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06633))_
 - The victims look like dolls, hence the name. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06661))_
 - This section summarizes the rules regarding illnesses. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06666))_
+- Progression Speed/Progression Intensity/ Healing Score=1 day/5/7 (14) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06673))_
 - However, this must be at each progression speed of the illness (i.e. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06686))_
 - Indicates the infectiousness of the illness. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06690))_
+- Progression Speed/Progression Intensity/ Healing Score=3 days/6/9 (18) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06698))_
 - In this state, it's almost impossible to take action. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06701))_
+- Progression Speed/Progression Intensity/ Healing Score=2 weeks/7/11 (22) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06711))_
+- Progression Speed/Progression Intensity/ Healing Score=Half day/6/9 (18) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06718))_
+- Progression Speed/Progression Intensity/ Healing Score=3 hours/6/8 (16) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06729))_
+- Progression Speed/Progression Intensity/ Healing Score=3 days/7/9 (18) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06736))_
+- Progression Speed/Progression Intensity/ Healing Score=1 hour/6/9 (18) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06745))_
 - The progression of lycanthropy differs from the rules of normal illnesses. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06761))_
 - This fever continues endlessly. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06761))_
 - Every night from that day onwards, compare 2D + 3 with the number of days since the new moon (if it's 16 days or more, then 30 - the number of days ). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06761))_
 - Those with this illness experience swelling in their joints and suffer from high fevers. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06767))_
+- Progression Speed/Progression Intensity/ Healing Score=1 week/5/10 (20) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06771))_
 - 233 when fighting with these patients. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
+- Progression Speed/Progression Intensity/ Healing Score=2 days/8/9 (18) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06779))_
 - It's not very contagious, but if you leave a wound with mud, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06782))_
 - For this reason, it' s rarely sold in town apothecaries. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06802))_
 - If you take this herb daily, you'll receive a +4 bonus to progression/healing checks against stone skin . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06802))_
@@ -34213,67 +34044,77 @@ Poisons are not effective against everything. It has no effect on monsters that 
 - ( Infravision ) indicates that the monster can see the heat of the target, similar to a shaman's infravision , and can perceive it even in places where there is no normal light. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06956))_
 - For more information on language, please refer to 12.1: Rules Regarding Language (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06963))_
 - They sometimes play pranks on humans. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06983))_
-- [ Fairy ] Monster Level=1 Rarity=11 Agility=18 Movement Speed=9/10 (air) Number=Several Frequency=Rare Intellect=Human Reaction=Friendly to neutral Attack Points=Weapon: 8 (1) Strike Points=3 Evasion Points=10 (3) Defense Points=3 Life Points/Resistance=10/8 (1) Mental Points/Resistance=18/10 (3) Sp — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06986))_
+- [ Fairy ] Monster Level=1 Rarity=11 Agility=18 Movement Speed=9/10 (air) Number=Several Frequency=Rare Intellect=Human Reaction=Friendly to neutral Attack Points=Weapon: 8 (1) Strike Points=3 Evasion Points=10 (3) Defense Points=3 Life Points/Resistance=10/8 (1) Mental Points/Resistance=18/10 (3) Sp — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06986))_
 - for self-defense, but they rarely wield them. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06988))_
 - They mostly turn into foxes, fawns, rabbits, squirrels etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06992))_
 - They're not in the habit of wearing clothes. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06992))_
 - Both their men and women look beautiful. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06997))_
 - Sometimes they keep eagles and griffons for reconnaissance and self-defense purposes. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06998))_
 - They usually live in groups of about a few dozen. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07001))_
-- Monster Level=4 Rarity=18 Agility=16 Movement Speed=3/20 (water) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Weapon: 10 (3) Strike Points=7 Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=12/12 (5) Mental Points/Resistance=18/13 (6) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07004))_
-- Merman tribes select girls with outstanding intelligence and mental power and train them as shamans from an early age. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07010))_
-- Monster Level=1 Rarity=12 Agility=14 Movement Speed=7/7 (air) Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Tail: 8 (1) Strike Points=4+poison Evasion Points=9 (2) Defense Points=3 Life Points/Resistance=8/8 (1) Mental Points/Resistance=14/9 (2) Special Abilities=1st l — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07017))_
+- Monster Level=4 Rarity=18 Agility=16 Movement Speed=3/20 (water) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Weapon: 10 (3) Strike Points=7 Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=12/12 (5) Mental Points/Resistance=18/13 (6) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07004))_
+- Monster Level=1 Rarity=12 Agility=14 Movement Speed=7/7 (air) Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Tail: 8 (1) Strike Points=4+poison Evasion Points=9 (2) Defense Points=3 Life Points/Resistance=8/8 (1) Mental Points/Resistance=14/9 (2) Special Abilities=1st l — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07017))_
 - The ecology of imps, such as where they live, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07021))_
 - is not well understood. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07021))_
 - 225) and its model, the zalbard (see p. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07022))_
-- Habitat=Mountains near human villages, forests, caves Languages=Goblin Perception=Five senses (darkvision) — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07028))_
-- Monster Level=2 Rarity=5 Agility=13 Movement Speed=8 Number=Several to dozens Frequency=Frequent Intellect=Low Reaction=Adversarial Attack Points=Weapon or fangs: 9 (2) Strike Points=7 Evasion Points=10 (3) Defense Points=5 Life Points/Resistance=12/10 (3) Mental Points/Resistance=10/9 (2) Special A — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07040))_
-- Rarity=10 Agility=12 Movement Speed=10 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Weapon or fangs: 11 (4) Strike Points=11 Evasion Points=12 (5) Defense Points=7 Life Points/Resistance=18/13 (6) Mental Points/Resistance=15/12 (5) Special Abilities=None in particular — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07063))_
-- Strike Points=6+poison Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=10/10 (3) Mental Points/Resistance=17/15 (8) Special Abilities=3rd level spirit magic (Magic Intensity/Magic Power=13/6) 1st level dark magic (Magic Intensity/Magic Power=11/4) Poison (Toxicity Score 10, Strike Powe — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07090))_
-- In the ancient battle of the gods, the elves fought on the side of the gods of light. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07091))_
+- Reaction=Adversarial Attack Points=Weapon or fangs: 8 (1) Strike Points=5 Evasion Points=10 (3) Defense Points=3 Life Points/Resistance=8/8 (1) Mental Points/Resistance=8/8 (1) Special Abilities=Silver corrosion? Habitat=Mountains near human villages, forests, caves Languages=Goblin Perception=Five  — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07028))_
+- A small winged youma also known as the "sky imp". Its body is dark brown and it has black wings on its back resembling those of a bat. These wings allow them to fly, but their speed is not that great. They have the power to use spirit magic up to 2nd level. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07032))_
+- Gremlins are not aggressive, but they are treacherous and enjoy playing malicious pranks. The tragedy of the hero Grax riding Pegasus and dying in a crash due to a gremlin's prank is widely known in Alecrast. (See p. 86) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07033))_
+- Monster Level=2 Rarity=5 Agility=13 Movement Speed=8 Number=Several to dozens Frequency=Frequent Intellect=Low Reaction=Adversarial Attack Points=Weapon or fangs: 9 (2) Strike Points=7 Evasion Points=10 (3) Defense Points=5 Life Points/Resistance=12/10 (3) Mental Points/Resistance=10/9 (2) Special A — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07040))_
+- Rarity=10 Agility=12 Movement Speed=10 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Weapon or fangs: 11 (4) Strike Points=11 Evasion Points=12 (5) Defense Points=7 Life Points/Resistance=18/13 (6) Mental Points/Resistance=15/12 (5) Special Abilities=None in particular — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07063))_
+- Strike Points=6+poison Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=10/10 (3) Mental Points/Resistance=17/15 (8) Special Abilities=3rd level spirit magic (Magic Intensity/Magic Power=13/6) 1st level dark magic (Magic Intensity/Magic Power=11/4) Poison (Toxicity Score 10, Strike Powe — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07090))_
 - Humans also harbor strong hostility toward dark elves. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07093))_
 - Dark elves often conspire with stronger beings (such as dark priests) to plan great acts of evil. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07093))_
-- Rarity=11 Agility=19 Movement Speed=19 Number=One Frequency=Very Rare Intellect=High Reaction=Adversarial Attack Points=Weapon: 12 (5) Strike Points=9+poison Evasion Points=15 (8) Defense Points=9 Life Points/Resistance=10/13 (6) Mental Points/Resistance=17/18 (11) Special Abilities=6th level spirit — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07096))_
+- Rarity=11 Agility=19 Movement Speed=19 Number=One Frequency=Very Rare Intellect=High Reaction=Adversarial Attack Points=Weapon: 12 (5) Strike Points=9+poison Evasion Points=15 (8) Defense Points=9 Life Points/Resistance=10/13 (6) Mental Points/Resistance=17/18 (11) Special Abilities=6th level spirit — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07096))_
 - Will-O-Wisp is a spirit of light. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07105))_
 - Will-o-wisp attacks are always successful. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07106))_
 - Will-o-wisps only target things that have a functioning mind. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07106))_
 - Will-o-wisp is the counterpart to the shade, which is described below, and when it comes into contact with a shade, it disappears without emitting any energy. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07110))_
 - Therefore, attacks against shades always suffer a -4 penalty. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07128))_
 - would be 7, and a large chest of drawers would be 9. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07136))_
+- Enter lungs (Target score for evade and resist=12) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07152))_
+- Mental attack immunity Normal weapon immunity Not affected by poison and illness Habitat=Water Languages=Silent spirit — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07153))_
 - Also, please refer to 10.4: Water Combat (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07159))_
-- Monster Level=4 Rarity=12 (However, a shaman always knows) Agility=10 Movement Speed=6 Number=Solo to several Frequency=Rare Intellect=Low Reaction=Violent Attack Points=Strike Points=Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07163))_
+- Monster Level=4 Rarity=12 (However, a shaman always knows) Agility=10 Movement Speed=6 Number=Solo to several Frequency=Rare Intellect=Low Reaction=Violent Attack Points=Strike Points=Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07163))_
+- Normal weapon immunity Mental attack immunity Fire immunity Not affected by poison and illness — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07165))_
 - A mad salamander, as befitting of a spirit of fire, a symbol of destruction, acts with the sole purpose of burning everything to ash. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07169))_
-- 4th level spirit magic (Magic Intensity/Magic Power=13/6, sylph only) — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07195))_
+- 4th level spirit magic (Magic Intensity/Magic Power=13/6, sylph only) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07195))_
+- Normal weapon immunity Mental attack immunity Not affected by poison and illness Habitat=Anywhere Languages=Silent spirit Perception=Magic — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07196))_
 - or defeat the mad sprite. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07200))_
+- knows) Agility=10 Movement Speed=6 (ground)/ 10 (underground) Number=One to several Frequency=Rare Intellect=Low Reaction=Violent Attack Points=Strike Points=Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6) Special Abilities=Stone (Strike pow — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07205))_
 - Treat it as strike power 20 damage magic (magic intensity/magic power=12/5). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07207))_
-- meters per round underground. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07207))_
+- 4th level spirit magic (Magic Intensity/Magic Power=13/6, frau only) Normal weapon immunity Mental attack immunity Cold immunity Not affected by poison and illness Habitat=Cold regions Languages=Silent spirit Perception=Magic — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07219))_
 - A mad frau attacks by blowing cold air while it flies through the air. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07221))_
 - Treat this cold air as strike power 10 damage magic (magic intensity/magic power=13/6). — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07221))_
+- Normal weapon immunity Mental attack immunity Not affected by poison and illness T eleport — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07235))_
 - Other than that, they also attack (confuse) you with spells such as Confusion and Forget . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07239))_
+- Mental Points/Resistance=20/14 (7) Special Abilities=Charm (Resist target score=14) 5th level spirit magic (Magic Intensity/Magic Power=14/7, dryad only) Normal weapon immunity Mental attack immunity Not affected by poison and illness Habitat=Woods Languages=Silent spirit Perception=Magic — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07249))_
+- Normal weapon immunity Mental attack immunity Not affected by poison and illness Habitat=Anywhere Languages=Silent spirit Perception=Magic — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07266))_
 - The sages believe this suggests a connection with unicorns. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07267))_
 - Each round, the mad spirit of life attempts to pour excessive life spirit power into a single target. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07268))_
 - Regarding the results of aging and de-aging, please refer to 18.2: Guidelines for Adventurer Age and Ability Score Changes (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07268))_
+- Normal weapon immunity Mental attack immunity — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07286))_
 - It governs the courage of men who fight. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07291))_
 - would surely be no match for them. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07319))_
 - They usually live alone, or sometimes in groups of several, in forests and hills near human villages, and attack their favorite food: humans. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07319))_
-- 2nd level dark magic (Magic Intensity/Magic Power=11/4) Habitat=Mountains near human villages, hills, forests, human villages Languages=Giant, regional Perception=Five senses — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07325))_
+- 2nd level dark magic (Magic Intensity/Magic Power=11/4) Habitat=Mountains near human villages, hills, forests, human villages Languages=Giant, regional Perception=Five senses — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07325))_
 - but sometimes they come to human villages in search of their favorite food, human flesh. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07326))_
 - They usually live in mountains, hills, forests, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07326))_
 - When entering a human village, spriggan transforms into a human child between the ages of 4 and 10. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07326))_
 - Spriggans quickly devour the flesh of those they kill. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07327))_
-- In any case, it's certain that they're terrifying monsters with enormous strength. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07331))_
-- Although they're about 3 meters long, they walk with their backs bent, probably because they live in caves. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07332))_
+- Trolls are titans with rock-like skin. They have very low intellect and rarely use tools. They live in caves and hills, and do not appear in forests or meadows. Due to this and their rugged, rock-like appearance, some sages believe that they may have some kind of connection with earth spirits, but i — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07331))_
+- A troll's skin is not only similar in color, but also has a hardness comparable to that of rock. It will not be affected by just any half-hearted attack, etc. They have the physical strength to match their body size, and when they attack, they strike with their rock-like arms. That single blow has t — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07333))_
 - They possess the 4th level priest skill. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07338))_
 - Sometimes they live alone, but sometimes they live in groups of several. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07389))_
 - When attacking prey, this lower body stretches, reaching a length of 6 meters. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07412))_
 - Also, evading the left arm's attack incurs a -2 penalty. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07414))_
 - Deelas mate with human males and lay eggs. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07422))_
-- Monster Level=3 Rarity=12 Agility=14 Movement Speed=8/20 (water) Number=One to dozens Frequency=Rare Intellect=Animal Reaction=Neutral Attack Points=Leg: 11 (4) Strike Points=9 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=20/12 (5) Mental Points/Resistance=10/10 (3) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07440))_
-- Monster Level=3 Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Snakes (all engaged): 10 (3) Strike Points=7+poison Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=14/11 (4) Mental Points/Resistance=18/12 (5) Special A — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07447))_
-- Monster Level=4 Rarity=14 Agility=17 Movement Speed=17 Number=One to several Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Weapon:11 (4)/Tail:11 (4) Strike Points=10/12+poison Evasion Points=11 (4) Defense Points=8 Life Points/Resistance=17/12 (5) Mental Points/Resistance=18/13 ( — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07452))_
-- Strike Points=12 Evasion Points=11 (4) Defense Points=7 Life Points/Resistance=18/13 (6) Mental Points/Resistance=15/12 (5) Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6) Not affected by poison and illness Sleepless Habitat=Water Languages=Regional, silent spirit Percept — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07488))_
-- Monster Level=5 Rarity=13 Agility=18 Movement Speed=15 Number=One Frequency=Rare (Kaios Island)/Very Rare (Other) Intellect=High Reaction=Neutral Attack Points=Fangs: 12 (5)/Claw: 13(6)/ Claw: 13 (6) Strike Points=8/7/7 Evasion Points=15 (8) Defense Points=8 Life Points/Resistance=12/13 (6) Mental P — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07512))_
-- Twintailed cats look like normal black cats, except for the fact that they have two tails. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07514))_
+- Monster Level=3 Rarity=12 Agility=14 Movement Speed=8/20 (water) Number=One to dozens Frequency=Rare Intellect=Animal Reaction=Neutral Attack Points=Leg: 11 (4) Strike Points=9 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=20/12 (5) Mental Points/Resistance=10/10 (3) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07440))_
+- Monster Level=3 Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Snakes (all engaged): 10 (3) Strike Points=7+poison Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=14/11 (4) Mental Points/Resistance=18/12 (5) Special A — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07447))_
+- Monster Level=4 Rarity=14 Agility=17 Movement Speed=17 Number=One to several Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Weapon:11 (4)/Tail:11 (4) Strike Points=10/12+poison Evasion Points=11 (4) Defense Points=8 Life Points/Resistance=17/12 (5) Mental Points/Resistance=18/13 ( — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07452))_
+- Strike Points=12 Evasion Points=11 (4) Defense Points=7 Life Points/Resistance=18/13 (6) Mental Points/Resistance=15/12 (5) Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6) Not affected by poison and illness Sleepless Habitat=Water Languages=Regional, silent spirit Percept — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07488))_
+- Poison (Toxicity score 12, speech impediment, lasts 1 day) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07503))_
+- Not affected by poison and illness — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07504))_
+- Monster Level=5 Rarity=13 Agility=18 Movement Speed=15 Number=One Frequency=Rare (Kaios Island)/Very Rare (Other) Intellect=High Reaction=Neutral Attack Points=Fangs: 12 (5)/Claw: 13(6)/ Claw: 13 (6) Strike Points=8/7/7 Evasion Points=15 (8) Defense Points=8 Life Points/Resistance=12/13 (6) Mental P — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07512))_
 - When a situation beyond their control arises, they skillfully guide and encourage other races to act voluntarily in accordance with their goals. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07516))_
 - All cats follow their commands. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07516))_
 - The hippogriff is said to have been born after a griffon (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07524))_
@@ -34284,15 +34125,24 @@ Poisons are not effective against everything. It has no effect on monsters that 
 - When it finds prey (humans), it'll first attack with its tentacles. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07532))_
 - Make a success roll against target score 15 using ranger skill level + intelligence bonus as the baseline score, and if you succeed, you'll be able to sense it, but if you fail, you'll be hit by the surprise attack. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07533))_
 - If the head displacer's tentacles have entangled your character, refer to the rules for grappling (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07534))_
+- Poison (Toxicity score 13, death in 1 hour) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07618))_
+- Not affected by poison and illness Sleepless — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07619))_
 - While the sphinx (see p. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07623))_
 - For more information, please refer to strangling under 13.6: Handling Monster Special Abilities (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07643))_
+- 10th level healing-type spirit magic (Magic Intensity/Magic Power=20/13) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07657))_
+- Not affected by poison and illness — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07658))_
 - A unicorn looks like a white horse with a long spiral horn growing from its head. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07662))_
-- Monster Level=6 Rarity=12 Agility=19 Movement Speed=20 Number=One Frequency=Very Rare Intellect=Animal Reaction=Hunger-based Attack Points=Fangs:13 (6)/Claw:14 (7)/ Claw:14 (7) Strike Points=15/14/14 Evasion Points=14 (7) Defense Points=10 Life Points/Resistance=22/15 (8) Mental Points/Resistance=16 — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07670))_
-- Not affected by poison and illness Habitat=Countryside, woods Languages=None Perception=Five senses (illumination) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07672))_
+- Monster Level=6 Rarity=12 Agility=19 Movement Speed=20 Number=One Frequency=Very Rare Intellect=Animal Reaction=Hunger-based Attack Points=Fangs:13 (6)/Claw:14 (7)/ Claw:14 (7) Strike Points=15/14/14 Evasion Points=14 (7) Defense Points=10 Life Points/Resistance=22/15 (8) Mental Points/Resistance=16 — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07670))_
+- Not affected by poison and illness Habitat=Countryside, woods Languages=None Perception=Five senses (illumination) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07672))_
 - Its body fur shines yellow to gold in color. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07673))_
+- Poison blood (Toxicity score 15, strike power 10, bonus damage 8) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07699))_
+- Not affected by poison and illness Sleepless — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07700))_
 - In normal combat, it'll try to bite its enemy to death with its fangs, but if it realizes that it's at a disadvantage, it'll attack with its petrifying gaze. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07704))_
+- Poison blood (Toxicity score 15, strike power 10, bonus damage 8) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07714))_
+- Not affected by poison and illness Sleepless — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07715))_
 - At a total of 30 meters long, it is feared by sailors along with the giant octopus (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07726))_
 - A sea dragon can attack with its fangs and tail, and at the same time, it can also wrap its long body around its opponent and perform a strangling attack (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07727))_
+- Not affected by poison and illness Sleepless Habitat=Underground labyrinths, ruins Languages=Low ancient Perception=Pseudo — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07747))_
 - 1. Paralysis Ray
 You will be paralyzed for 6 rounds.
 2. Hypnosis Ray
@@ -34302,19 +34152,23 @@ You will freeze instantly and enter a state of suspended animation. Treat this t
 4. Brainwashing Ray
 You   — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07750))_
 - In combat, a hydra attacks with its nine heads. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07764))_
-- Fire breath that covers one person (Resist target score=17, strike power 20, bonus damage 10 as well as illness/Intensity 7, once every 3 rounds) — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07778))_
-- Monster Level=12 Rarity=13 Agility=10 Movement Speed=10/40 (air) Number=One Frequency=Very Rare Intellect=Animal Reaction=Neutral Attack Points=Beak:19 (12)/Talons:20 (13) Strike Points=22/22 Evasion Points=17 (10) Defense Points=16 Life Points/Resistance=40/24 (17) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07790))_
+- Fire breath that covers one person (Resist target score=17, strike power 20, bonus damage 10 as well as illness/Intensity 7, once every 3 rounds) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07778))_
+- Monster Level=12 Rarity=13 Agility=10 Movement Speed=10/40 (air) Number=One Frequency=Very Rare Intellect=Animal Reaction=Neutral Attack Points=Beak:19 (12)/Talons:20 (13) Strike Points=22/22 Evasion Points=17 (10) Defense Points=16 Life Points/Resistance=40/24 (17) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07790))_
+- Roar of fear (Resist target score=17) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07821))_
 - The lesser dragon's flames spread out in a semicircle, with a 20 meter forward radius. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07828))_
 - Treat this the same as magic that belongs to mind . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07829))_
 - If you fail, determine the effect using Table 5-5: Fears (see p. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07829))_
 - A dragon's roar also brings intense fear to those who hear it. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07829))_
-- Fire breath in a 30 meter forward radius (Resist target score=22, strike power 30, bonus damage 15) — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07834))_
-- Fire immunity Not affected by poison and illness Sleepless Habitat=Mountains, caves, other Languages=Lizardman, low ancient Perception=Five senses (darkvision) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07837))_
+- Fire breath in a 30 meter forward radius (Resist target score=22, strike power 30, bonus damage 15) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07834))_
+- Roar of fear (Resist target score=22) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07835))_
+- Fire immunity Not affected by poison and illness Sleepless Habitat=Mountains, caves, other Languages=Lizardman, low ancient Perception=Five senses (darkvision) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07837))_
 - 166 for rat disease details. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07853))_
-- Conversely, if the host dies, it'll attempt to possess the nearest living creature. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07860))_
-- Fortunately, however, they rarely attach themselves to humans, usually preferring to possess animals and livestock. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07862))_
+- This headless octopus-like creature is a vicious parasite that lives by taking over the bodies of large animals, and has no visible distinction between male and female. Its body is only 20 cm long, but its supple legs, which also serve as tentacles, are equipped with countless suckers, and can stret — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07855))_
+- An unfortunate victim of a hanger leg's possession will lose all senses, unable to see or hear anything, and furthermore, will be unable to think. Naturally, you cannot escape on your own, but once killed, the parasite leaves the host's body. Conversely, if the host dies, it'll attempt to possess th — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07860))_
+- Also, when death is near, the hanger leg will form several balls under the flesh hardened with secretion and lay small eggs. These eggs will hatch and grow inside the balls, and when they grow up, they will form a cocoon and sleep until a host creature approaches. Then, when the long-awaited opportu — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07861))_
+- Fortunately, however, they rarely attach themselves to humans, usually preferring to possess animals and livestock. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07862))_
 - They attack their opponents from the air with their claws and beak. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07879))_
-- Rarity=7 Agility=10 Movement Speed=12 Number=One to several Frequency=Moderate Intellect=Almost none Reaction=Neutral Attack Points=Fangs: 9 (2) Strike Points=6+poison Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=16/10 (3) Mental Points/Resistance=5/8 (1) Special Abilities=Poison (T — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07883))_
+- Rarity=7 Agility=10 Movement Speed=12 Number=One to several Frequency=Moderate Intellect=Almost none Reaction=Neutral Attack Points=Fangs: 9 (2) Strike Points=6+poison Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=16/10 (3) Mental Points/Resistance=5/8 (1) Special Abilities=Poison (T — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07883))_
 - The effects of this poison last for 3 days. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07889))_
 - Wasp larvae grow by feeding on the flesh and organs of their prey. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07909))_
 - For older ones, set the monster level to 4 and apply +1 to each score. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07946))_
@@ -34326,11 +34180,11 @@ You   — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - C
 - It tries to kill its prey by dropping it from a high altitude, or by pecking what it catches with its beak. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08007))_
 - At this time, its eyes reflect a small amount of light, and glow red. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08010))_
 - When attacking a bat, you'll suffer a 2 penalty due to the bat's keen perception, plus the fact that it's flying in the air. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08021))_
-- Agility=19 Movement Speed=20 Number=One to several Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Fangs:9 (2) Strike Points=5 Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=11/9 (2) Mental Points/Resistance=6/9 (2) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08026))_
+- Agility=19 Movement Speed=20 Number=One to several Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Fangs:9 (2) Strike Points=5 Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=11/9 (2) Mental Points/Resistance=6/9 (2) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08026))_
 - However, it prefers to suck the blood of living creatures rather than eat their meat. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08032))_
 - Make a strike power 10 plus bonus damage 2 check. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08032))_
 - Assume this state is a grapple (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08032))_
-- Monster Level=3 Rarity=9 Agility=18 Movement Speed=20 Number=Several to around ten Frequency=Moderate Intellect=Animal Reaction=Hunger-based Attack Points=Fangs:10 (3)/Talon:10 (3)/ Talon:10 (3) Strike Points=6/6/6 Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=11/10 (3) Mental Points — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08035))_
+- Monster Level=3 Rarity=9 Agility=18 Movement Speed=20 Number=Several to around ten Frequency=Moderate Intellect=Animal Reaction=Hunger-based Attack Points=Fangs:10 (3)/Talon:10 (3)/ Talon:10 (3) Strike Points=6/6/6 Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=11/10 (3) Mental Points — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08035))_
 - When attacking prey, they act in groups, quickly descending from above, and scratching with their sharp talons. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08041))_
 - There are several types of bears, but here we will introduce the grizzly, which is the representative type in Forcelia. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08044))_
 - At this time, it's useless to play dead. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08048))_
@@ -34338,10 +34192,11 @@ You   — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - C
 - They usually live in small family groups consisting of one male with a fine mane and several females . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08052))_
 - Males and females differ slightly in strength. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08052))_
 - Lions usually don't try to come close to human villages. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08053))_
-- Monster Level=4 Rarity=12 Agility=6 Movement Speed=5 Number=One Frequency=Rare Intellect=Almost none Reaction=Hunger-based Attack Points=Ram:12 (5) Strike Points=11 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=19/13 (6) Mental Points/Resistance=6/11 (4) Special Abilities=Crush (14 d — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08062))_
+- Monster Level=4 Rarity=12 Agility=6 Movement Speed=5 Number=One Frequency=Rare Intellect=Almost none Reaction=Hunger-based Attack Points=Ram:12 (5) Strike Points=11 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=19/13 (6) Mental Points/Resistance=6/11 (4) Special Abilities=Crush (14 d — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08062))_
 - Attacks by a giant toad are treated as strangling (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08094))_
 - For more information, please refer to how to handle grappling (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08095))_
 - A giant ant larva. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08134))_
+- strike power 10, bonus damage 4) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08148))_
 - In addition, a soldier's fangs secrete a highly toxic acid. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08153))_
 - Usually, it's easier to progress through the game if you don't think about it. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08153))_
 - is up to each game master's decision. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08153))_
@@ -34352,24 +34207,25 @@ You   — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - C
 - This creature usually lurks in shallow underground areas. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08253))_
 - In addition, a character's attack and evasion suffer a -4 penalty. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08254))_
 - Make a success roll against target score 16, using ranger skill level + intelligence bonus as the baseline score. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08256))_
-- Monster Level=5 Rarity=14 Agility=18 Movement Speed=10/30 (air) Number=One Frequency=Very Rare Intellect=Low Reaction=Neutral Attack Points=Arms:13 (6) Strike Points=7 Evasion Points=13 (6) Defense Points=7 Life Points/Resistance=15/13 (6) Mental Points/Resistance=10/12 (5) Special Abilities=None in — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08258))_
+- Monster Level=5 Rarity=14 Agility=18 Movement Speed=10/30 (air) Number=One Frequency=Very Rare Intellect=Low Reaction=Neutral Attack Points=Arms:13 (6) Strike Points=7 Evasion Points=13 (6) Defense Points=7 Life Points/Resistance=15/13 (6) Mental Points/Resistance=10/12 (5) Special Abilities=None in — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08258))_
 - They usually live in the water, but sometimes search for food on land. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08264))_
 - This is resolved as strangling (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08265))_
 - This digestive juice deals strike power 10 damage plus bonus damage 5. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08292))_
-- Number=One to several Frequency=Rare Intellect=Animal Reaction=Adversarial Attack Points=Mouth:13 (6) Strike Points=14 Evasion Points=11 (4) Defense Points=9 Life Points/Resistance=30/17 (10) Mental Points/Resistance=5/12 (5) Special Abilities=None in particular Habitat=Deserts Languages=None — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08296))_
+- Number=One to several Frequency=Rare Intellect=Animal Reaction=Adversarial Attack Points=Mouth:13 (6) Strike Points=14 Evasion Points=11 (4) Defense Points=9 Life Points/Resistance=30/17 (10) Mental Points/Resistance=5/12 (5) Special Abilities=None in particular Habitat=Deserts Languages=None — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08296))_
 - will be almost impossible. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08303))_
 - When in combat on ice, characters suffer a -2 penalty to attack and evasion due to poor footing. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08303))_
 - When they reach a certain age, they fight their father, the king, for ownership of the females. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08327))_
 - Fishermen hunt them. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08327))_
-- Monster Level=6 Rarity=12 Agility=10 Movement Speed=10/16 (water) Number=One Frequency=Very rare Intellect=Animal Reaction=Neutral Attack Points=Ram:14 (7) Strike Points=15 Evasion Points=12 (5) Defense Points=10 Life Points/Resistance=30/17 (10) Mental Points/Resistance=10/13 (6) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08330))_
+- Monster Level=6 Rarity=12 Agility=10 Movement Speed=10/16 (water) Number=One Frequency=Very rare Intellect=Animal Reaction=Neutral Attack Points=Ram:14 (7) Strike Points=15 Evasion Points=12 (5) Defense Points=10 Life Points/Resistance=30/17 (10) Mental Points/Resistance=10/13 (6) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08330))_
 - When it attacks its prey, it entangles it with its body and tries to strangle it to death. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08345))_
 - This attack resolves as strangling (see p. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08345))_
 - In combat, they dance by twisting their bodies, attempting to hypnotize their foes with their movements. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08362))_
 - Treat hypnotism the same as magic that belongs to mind . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08363))_
-- Monster Level=6 Rarity=12 Agility=11 Movement Speed=9/20 (water) Number=One Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Strangle:14 (7) Strike Points=13 Evasion Points=11 (4) Defense Points=9 Life Points/Resistance=23/15 (8) Mental Points/Resistance=10/13 (6) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08365))_
+- Monster Level=6 Rarity=12 Agility=11 Movement Speed=9/20 (water) Number=One Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Strangle:14 (7) Strike Points=13 Evasion Points=11 (4) Defense Points=9 Life Points/Resistance=23/15 (8) Mental Points/Resistance=10/13 (6) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08365))_
 - Escaping from this should be resolved the same way as strangling (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08384))_
 - Giant spiders attack their prey by shooting sticky string at it. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08384))_
-- Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Almost none Reaction=Violent Attack Points=Fangs:13 (6) Strike Points=16 Attack Points=String:14 (7) Strike Points=Special Evasion Points=13 (6) Defense Points=8 Life Points/Resistance=25/16 (9) Mental Points/Resistance=8/13  — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08392))_
+- Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Almost none Reaction=Violent Attack Points=Fangs:13 (6) Strike Points=16 Attack Points=String:14 (7) Strike Points=Special Evasion Points=13 (6) Defense Points=8 Life Points/Resistance=25/16 (9) Mental Points/Resistance=8/13  — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08392))_
+- Entangling with string Mental attack immunity — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08394))_
 - They build their nests in their habitat with sturdy webs several cm thick. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08398))_
 - They kill and eat large fish, but they also attack human swimmers. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08407))_
 - Please follow the rules for strangling (see p. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08408))_
@@ -34381,7 +34237,7 @@ You   — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - C
 - A killer creeper attacks by entangling with its vines. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08493))_
 - Entangled vines automatically deal damage in subsequent rounds without requiring a hit check. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08493))_
 - Make a success roll using adventurer level + strength bonus as the baseline score and the killer creeper's attack points (10, or the final score from when the attack hit) as the target score. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08495))_
-- Monster Level=5 Rarity=16 Agility=8 Movement Speed=8 Number=One to several Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Barehanded:12 (5) Strike Points=7 Evasion Points=12 (5) Defense Points=7 Life Points/Resistance=14/13 (6) Mental Points/Resistance=12/13 (6) Special Abilities=4t — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08497))_
+- Monster Level=5 Rarity=16 Agility=8 Movement Speed=8 Number=One to several Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Barehanded:12 (5) Strike Points=7 Evasion Points=12 (5) Defense Points=7 Life Points/Resistance=14/13 (6) Mental Points/Resistance=12/13 (6) Special Abilities=4t — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08497))_
 - Young mandrakes scream like their parents, but they're small and unable to move or cast spells, making them easy to kill. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08501))_
 - For this reason, humans often find and dig up young mandrakes. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08501))_
 - Therefore, mandrakes deeply hate humans. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08501))_
@@ -34399,19 +34255,25 @@ You   — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - C
 - It's possible to damage an ash's life points with damage magic other than fire-type. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08603))_
 - Due to the ash's physical characteristics, attacks with weapons, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08603))_
 - The Ash wraps itself around the target creature and attacks it. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08604))_
+- Not affected by poison and illness Sleepless — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08620))_
 - This paralysis lasts for one day. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08623))_
-- Monster Level=4 Rarity=12 Agility=14 Movement Speed=14 Number=One to several Frequency=Moderate Intellect=Human Reaction=Violent Attack Points=Claws:12 (5) Strike Points=9+mental damage Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=14/12 (5) Mental Points/Resistance=14/12 (5) Special — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08645))_
+- Not affected by poison and illness Sleepless — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08638))_
+- Monster Level=4 Rarity=12 Agility=14 Movement Speed=14 Number=One to several Frequency=Moderate Intellect=Human Reaction=Violent Attack Points=Claws:12 (5) Strike Points=9+mental damage Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=14/12 (5) Mental Points/Resistance=14/12 (5) Special — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08645))_
 - They then complain about their regrets and grudges to any third party they happen to encounter. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08650))_
+- Bladed weapons cannot critical (Skeleton type) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08667))_
+- Not affected by poison and illness Sleepless — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08668))_
 - Even after becoming a phantom, it'll attempt to possess if given the chance. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08675))_
+- Not affected by poison and illness Sleepless — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08732))_
 - They often float around above swamps and ponds, and if they spot prey, they'll attack straight away. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08737))_
 - Then, it knocks on the door. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08762))_
 - When a resident opens the door and looks out, the dullahan points inside the house and prophesizes death , then leaves. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08762))_
 - Around one year later, the dullahan reappears at the house, chooses one person in the house, and kills them. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08762))_
-- Monster Level=8 Rarity=14 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Weapon:15 (8) Strike Points=17+mental damage Evasion Points=16 (9) Defense Points=13 Life Points/Resistance=21/17 (10) Mental Points/Resistance=24/18 (11) Special Abili — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08789))_
+- Monster Level=8 Rarity=14 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Weapon:15 (8) Strike Points=17+mental damage Evasion Points=16 (9) Defense Points=13 Life Points/Resistance=21/17 (10) Mental Points/Resistance=24/18 (11) Special Abili — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08789))_
 - Based on this, some sages claim that undead knights are the mere shadows of the former holy warriors of Pharis. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08798))_
 - This monster wanders around alone, making its home in places humans don't approach. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08798))_
 - This monster roams alone in inaccessible places. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08798))_
 - Also, mental magic doesn't work on a mummy. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08842))_
+- 7th level dark magic (Magic intensity/magic power=17/10) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08858))_
 - All types prolong their eternal life by sucking the lifeblood and mental power of others. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08872))_
 - Vampires spontaneously emerge from among the servants of the dark gods. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08872))_
 - Even if the vampire removes its gaze, this paralysis continues until it disappears. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08873))_
@@ -34419,10 +34281,18 @@ You   — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - C
 - Vampires maintain their mental points by sucking human blood. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08875))_
 - cannot recover them unless they suck the blood of another human or steal the mental power of another human. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08875))_
 - Vampires hate sunlight. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08878))_
-- Monster Level=3 Rarity=13 Agility=14 Movement Speed=14 Number=Several to dozens Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Barehanded:10 (3) Strike Points=5+mental damage Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=14/11 (4) Mental Points/Resistance=14/11 (4) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08880))_
+- Monster Level=3 Rarity=13 Agility=14 Movement Speed=14 Number=Several to dozens Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Barehanded:10 (3) Strike Points=5+mental damage Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=14/11 (4) Mental Points/Resistance=14/11 (4) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08880))_
+- Life point regenerate (3 points per round) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08883))_
+- Steal mental power (Strike power 10, bonus damage 10) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08899))_
+- Life point regenerate (3 points per round) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08902))_
+- Normal weapon immunity Not affected by poison and illness Sleepless — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08903))_
 - Apart from the difference in scores and magical power already shown, a vampire's abilities, weaknesses and ecology are similar to those of a lesser vampire. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08909))_
 - Many vampires preserve this "soil" by preparing a coffin and lining it inside, while others simply keep it in a mound inside their room. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08913))_
 - However, cautious vampires usually keep soil in several locations. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08915))_
+- 10th level dark magic (Magic intensity/magic power=22/15) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08921))_
+- Steal mental power (Strike power 10, bonus damage 15) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08922))_
+- Life point regenerate (3 points per round) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08924))_
+- Not affected by poison and illness Sleepless — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08926))_
 - That said, there aren't exactly enough undead kings in Forcelia to go taking averages... — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08931))_
 - The same goes for the presence of soil . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08933))_
 - A simulacra duplicates the belongings, weapons, armor, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08944))_
@@ -34431,20 +34301,25 @@ You   — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - C
 - Unlike golems, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08955))_
 - It's a black, slimy, amorphous creature with no intellect, which attacks all living things. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08960))_
 - using an ancient magic spell. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08964))_
-- Monster Level=2 Rarity=13 (However, a sorcerer always knows) Agility=14 Movement Speed=14 Number=One to several Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:10 (3) Strike Points=6 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=12/10 (3) — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08966))_
+- Monster Level=2 Rarity=13 (However, a sorcerer always knows) Agility=14 Movement Speed=14 Number=One to several Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:10 (3) Strike Points=6 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=12/10 (3) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08966))_
 - Usually they're humanoids, but other ones exist too. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08976))_
 - Bladed weapons cannot critical against a bone servant. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08977))_
+- Monster Level=5 Rarity=14 (However, a sorcerer knows) Agility=18 Movement Speed=14 Number=One to several Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Weapon:12 (5) Strike Points=11 Evasion Points=14 (7) Defense Points=10 Life Points/Resistance=16/13 (6) Mental Points/ — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08979))_
 - As soon as a thief touches it to examine it, it'll attack. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09012))_
+- Not affected by poison and illness — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09029))_
 - As soon as you touch the knob, it'll attack. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09033))_
 - The method of shaking your arm free is the same as strangling (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09033))_
+- Not affected by poison and illness — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09050))_
 - Anyone hit by a floor imitator's attack will be enwrapped in its amorphous body and strangled (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09054))_
+- Not affected by poison and illness Sleepless — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09070))_
 - Things often eat humans. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09074))_
 - They target humans because they're easier to deceive than animals. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09074))_
-- Monster Level=3 Rarity=12 Agility=12 Movement Speed=10/15 (air) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Fangs:10 (3)/Claws:11 (4) Strike Points=10/9 Evasion Points=11 (4) Defense Points=8 Life Points/Resistance=16/11 (4) Mental Points/Resistance=10/10 (3)  — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09093))_
+- Monster Level=3 Rarity=12 Agility=12 Movement Speed=10/15 (air) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Fangs:10 (3)/Claws:11 (4) Strike Points=10/9 Evasion Points=11 (4) Defense Points=8 Life Points/Resistance=16/11 (4) Mental Points/Resistance=10/10 (3)  — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09093))_
 - Unlike golems, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09099))_
 - they act according to their own judgment without receiving commands. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09099))_
 - As their name suggests, they're meant to assassinate others. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09105))_
 - Also, if you cast a Fire Weapon spell on your weapon and attack, it'll deal strike power 20 damage if it hits. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09114))_
+- Not affected by poison and illness — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09152))_
 - It'll then try to strangle the opponent to death with that garrote. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09159))_
 - At this time, you'll suffer a -4 penalty to evasion. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09160))_
 - For information on escaping, see grappling (see p. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09161))_
@@ -34452,10 +34327,14 @@ You   — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - C
 - According to one theory, magical beasts such as scylla, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09188))_
 - were born from such poison. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09188))_
 - However, in terms of hardness of body and size of life force, they're also terrifying beings that rival lesser dragons and titans. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09200))_
+- Not affected by poison and illness — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09219))_
+- These are beasts of the daemon world, said to be creatures created by daemons. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09247))_
 - They often work as servants of daemons. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09248))_
 - However, in reality, it' s a terrifying beast from the underworld, also known as the watchdog of Hell. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09268))_
+- 3rd level dark magic (magic intensity/magic power=12/5) Strangling — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09304))_
 - If it uses its tail to entangle, treat this as a strangling attack (see p. — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09308))_
 - Therefore, it's not possible to discern whether it's the real thing by appearance alone. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09348))_
+- Poison (toxicity score 13, strike power 20, bonus damage 6) Habitat=Underground labyrinths, secluded ruins — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09357))_
 - They perform these two attacks at the same time every round. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09360))_
 - of an opponent by observing them. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09400))_
 - Leader-class bandits that control several henchmen. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09446))_
@@ -34463,7 +34342,10 @@ You   — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - C
 - Compare the number of days since the new moon with 2D + 3 at nighttime or 2D + 9 in the daytime. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09566))_
 - Their habitat depends on the type of beast they shapeshift into. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09568))_
 - 166 for details on this illness. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09569))_
-- Monster Level=4 Rarity=8 Agility=16 Movement Speed=24 Number=One to several Frequency=Rare Intellect=Animal/Human Reaction=Adversarial Attack Points=Fangs:11 (4) Strike Points=12 Evasion Points=12 (5) Defense Points=8 Life Points/Resistance=20/13 (6) Mental Points/Resistance=14/12 (5) Special Abilit — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09571))_
+- A werewolf is a lycanthrope with the power to shapeshift into a wolf. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09575))_
+- A werebear is a lycanthrope with the power to shapeshift into a bear. Like a bear, it attacks with a bear hug (strangling). — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09598))_
+- [ 1. The number of times the game master has to roll dice during combat will be drastically reduced ] — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09621))_
+- [ 2. Enemy strike rolls can no longer critical ] — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09624))_
 - So, let us show you how. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09627))_
 - Adventurer level adapts directly to monster level . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09628))_
 - 166 for details on this disease. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09711))_
@@ -34522,6 +34404,8 @@ You   — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - C
 - This greatsword's blade glows white to inform the user when danger approaches. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10226))_
 - However, on land it's merely a trident with no bonuses. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10246))_
 - To someone you don't know, it'll just look like you're lightly clenching your fist. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10251))_
+- (Supplement) The blade of bravery is a famous sword passed down from generation to generation as proof of the head of the Sokran family, an Orphan nobility that's existed since the days of Phan. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10277))_
+- Rarity=13 Enchanter=Unknown Form=Dagger with a ruby set in a silver handle Required Strength=3 (Strike power 3) Base Trade Price=5000 gamels Powers=+1 to attack power and bonus — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10313))_
 - The ruby itself costs about 1000 gamels. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10315))_
 - Unable to resist magic. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10619))_
 - As a result, while wearing this armor, all attempts to resist any magic automatically fail. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10620))_
@@ -34539,7 +34423,6 @@ You   — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - C
 - This staff stores 2Dx10 mental points. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10762))_
 - This staff also functions as a magical catalyst. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10801))_
 - Make a success roll with a baseline score of 8. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10809))_
-- Adds +6 to the wearer's agility. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10838))_
 - Put the Bulkless Bag in the Weightless Bag, then put the objects in it. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10862))_
 - If you open the lid, they immediately return to the spirit world. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10922))_
 - A scape doll takes the place of its user and suffers damage. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10945))_
@@ -34560,6 +34443,7 @@ You   — _partial-parse: table parsed as enumerated rows_ _(Sword World RPG - C
 - Attack Power Mod. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11195))_
 - Strike Power Mod. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11196))_
 - *Critical Target +1 against metal armor. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11339))_
+- ***The lance itself has a +5 strike power modifier, +10 during a charge, and +2 damage itself — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11343))_
 - However, if you pick up pebbles, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11348))_
 - Evasion speed modifier is the evasion speed penalty you suffer while — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11355))_
 - It' s wasteful to pull a light bow with so much strength that it breaks. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11443))_
@@ -34635,6 +34519,7 @@ The total required  — _partial-parse: table parsed as enumerated rows_ _(Sword
 - Moreover, if you're hit by a physical attack, you'll suffer a -4 penalty to evasion. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11705))_
 - that's trying to cast spells on you. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11706))_
 - Also, if you predict danger from multiple locations, there's no problem so long as you're fully aware of each . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11706))_
+- 18.1 Rules for Awarding Greater Experience Points — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11716))_
 - Then, check its level . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11721))_
 - Then multiply that maximum obstacle level by 500. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11724))_
 - Guidelines for Adventurer Age and Ability Score Changes
@@ -34644,14 +34529,18 @@ As  humans get  older,  their  physical abilities  decline.  On  the  other  han
 - Divide the age by half and apply it to the human table. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11736))_
 - Indicates the strength of the material. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11751))_
 - When a character attempts to destroy something with a weapon, magic, etc. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11755))_
+- damage than these minimum destruction points with a single blow , you will not be able to destroy a structure with 0 defense points. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11757))_
 - Consider trying to destroy a wooden wall (!) that's 20 cm thick. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11759))_
 - If the damage is greater than 8 but less than 21 points , the defense points will be reduced by 1 point (if the defense points become 0 , the destruction points will start to decrease . — _fragmentary: text ends with an unfinished clause_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11760))_
+- Complete Immunity, No Criticals, Normal, Ignore Defense Points — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11761))_
 - Also, most walls don't move, so Blade Net won't deal any damage. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11788))_
 - Also, be aware of the number of people working as a group when creating holes. — _fragmentary: text starts with a continuation cue before a verb_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11791))_
-- Treat it as a stone wall. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11844))_
-- Treat it as an ice wall. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11846))_
-- Treat it as a vegetation wall. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11848))_
-- Each round, Spirit Wall: Dryad regenerates 1 defense point and 1 destruction point. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11849))_
+- When you use fire magic or a weapon with Fire Weapon cast on it, it will ignite if a critical occurs, and will be destroyed as a result. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11801))_
+- If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11824))_
+- Treat it as a stone wall. Without expansion, defense points are 15 and destruction points are 20. Its minimum destruction points are 1 because it's stone. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11844))_
+- Treat it as an ice wall. Without expansion, defense points are 15 and destruction points are 20. Its minimum destruction points are 1 because it's ice. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11846))_
+- Treat it as a vegetation wall. Without expansion, defense points and destruction points are both 15. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11848))_
+- Spirit Wall: Dryad has the power to regenerate even if it's destroyed. Each round, Spirit Wall: Dryad regenerates 1 defense point and 1 destruction point. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11849))_
 - Thus began the age of creation by the gods. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11860))_
 - However, after the age of creation came an age of conflict. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11862))_
 - And so, the age of the gods came to a close. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11863))_
@@ -34674,6 +34563,7 @@ As  humans get  older,  their  physical abilities  decline.  On  the  other  han
 - Thieves, Sorcerers, and Sages belong to these groups. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11929))_
 - It's closest to an academic society. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11931))_
 - In Forcelia, a world where gods exist, religious organizations wield considerable power. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11933))_
+- At the eastern end of the Alecrast continent lie three countries: Mudeel, Milargo, and Anoth. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11938))_
 - Its capital city shares the same name, Mudeel. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11939))_
 - Along with agriculture and textile industry, this country actively engages in trade using distinctive galleys. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11939))_
 - Within this Youma forest lies ruins known as the City of Mara Ajanis. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11940))_
@@ -34700,7 +34590,15 @@ As  humans get  older,  their  physical abilities  decline.  On  the  other  han
 - Is this Sword World?" or "Wasn't Sword World RPG supposed to be known for its simple rules?" — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12028))_
 - If we kept doing just this, we'd burn out in no time. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12032))_
 - Even now, we take pride in knowing that the system's core elements like adventurer skills, adventurer level, success rolls, and rating table that form the backbone of Sword World RPG — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12034))_
-- remain excellent and haven't become outdated. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12035))_
+- Retrying a success roll on the same target — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12120))_
+- Retrying a success roll on the same target — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12188))_
+- Retrying a success roll on the same target — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12214))_
+- Retrying a success roll on the same target — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12233))_
+- Retrying a success roll on the same target — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12243))_
+- Retrying a success roll on the same target — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12253))_
+- Retrying a success roll on the same target — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12268))_
+- Retrying a success roll on the same target — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12317))_
+- Retrying a success roll on the same target — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12349))_
 - On the table, "D" stands for dice . — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12444))_
 - 20.5
 15
@@ -34724,9 +34622,14 @@ Mental Power
 22
 17
 14.5 — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12467))_
+- Has 1 level in the shaman skill — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12567))_
+- When raised by elves, characteristics are the same — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12574))_
+- as elves, when raised by humans, they're the same as — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12575))_
 - 10 for 12
 10 for 12
 5 for 20 — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12875))_
+- Torch (6, lasts 2 hours each) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12952))_
+- Oil (1 bottle for a lantern, lasts 12 hours each) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12955))_
 - 1 serving
 1 serving of rations — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12981))_
 - 1 night (not including food)
@@ -34766,8 +34669,30 @@ x 7
 x 8
 2.8
  — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13002))_
-- A simple task for the world's greatest expert. — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13041))_
-- Large city in a large country, royal capital level of a small country — _fragmentary: no subject/predicate region recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13108))_
+- Note) On the table, expansion rate is the multiplier for mental power consumed. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13003))_
+- When you cast a spell by consuming that multiplied amount of mental power, multiply the number in area expansion length or volume expansion length by the number (radius, side) that represents the spell's area of effect , and the result will be the spell's area . For spells cast on a flat surface, us — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13004))_
+- For example, when you cast the ancient magic Light , whose area is A space with a 10 meter radius , by consuming double the mental power, the resulting area will be a spherical space with a radius of 10 x 1.3 = 13 meters . — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13005))_
+- If you have the skill, it's almost a sure-fire task. Even amateurs can be successful. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13013))_
+- Almost guaranteed if you have the skill. Even amateurs have a greater chance of success. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13016))_
+- If you have the skill, there is a high probability of success. For amateurs, the risk of failure is greater. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13022))_
+- If you have the skill, you'll succeed 2 out of 3 times, but if you're an amateur, you'll fail 2 out of 3 times. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13025))_
+- If you're a pro in that field, you'll most likely succeed, but if you only have the skill, there's a greater risk of failure. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13031))_
+- Amateurs should stay away from it. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13032))_
+- It's possible with a little luck if you're someone who's only dabbled. Even pros can fail due to a little bad luck. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13038))_
+- A simple task for the world's greatest expert. At pro level, failure is quite possible. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13041))_
+- Even if you're a master, there is no guarantee that you'll succeed. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13047))_
+- Even the greatest master is subject to the possibility of failure. It is best not to expect success at pro level. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13050))_
+- Even a master cannot guarantee success. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13053))_
+- You can't blame a master even if they fail. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13056))_
+- Even if you're a master, the probability of failure is high. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13062))_
+- This is a task that will go down in history if successful. — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13065))_
+- Can't see opponent (in the dark, invisible enemy, etc.) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13076))_
+- However, if alternative senses (smell, hearing, etc.) are developed to some extent — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13077))_
+- (Rocks and debris are everywhere, water is up to your waist, etc.) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13083))_
+- (Same as when trying to stand up because you're in an unstable state) — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13086))_
+- Royal capital level of a large country — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13106))_
+- Large city in a large country, royal capital level of a small country — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13108))_
+- All but the most remote village — _unextracted: segment carries subject matter but no structured claim was recovered_ _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13114))_
 - 20 + Character's Strength
 Javelin
 30 + Character's Strength x 3
@@ -34787,4 +34712,4 @@ Shortbow
 
 ### Disposition counts
 
-- non-claim: 5329
+- non-claim: 5206

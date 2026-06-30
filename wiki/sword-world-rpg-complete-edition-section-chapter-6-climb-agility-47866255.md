@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-6-climb-agility-47866255
 page_kind: source
-summary: Chapter 6: / [ ④ Climb [Agility] ]: 46 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 6: / [ ④ Climb [Agility] ]: 45 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

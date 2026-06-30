@@ -7,16 +7,12 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-force-9ae2e39f@0d08688028cf99aff127359168699810
+projection_coverage: section-sword-world-rpg-complete-edition-section-force-9ae2e39f@95eb369a8c15183a0d85a90ffd33793b
 ---
 
 # [ Force ]
 
 From [[sword-world-rpg-complete-edition]].
-
-## Related pages
-
-- [[sword-world-rpg-complete-edition-force]] - topic hub: opens the topic page for Force
 
 ## Statements
 

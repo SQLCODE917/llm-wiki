@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-medusa-61dd8d64
 page_kind: source
-summary: [ Medusa ]: 21 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Medusa ]: 20 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

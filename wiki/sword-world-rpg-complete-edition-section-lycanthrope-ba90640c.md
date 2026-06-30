@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-lycanthrope-ba90640c
 page_kind: source
-summary: [ Lycanthrope ]: 31 source-backed entries and 22 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Lycanthrope ]: 30 source-backed entries and 22 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lycanthrope-ba90640c@6ac2d20fe0407ed5defbef5f9c4dc225
+projection_coverage: section-sword-world-rpg-complete-edition-section-lycanthrope-ba90640c@ea475d3e9891a6008ad31048f0248e4a
 ---
 
 # [ Lycanthrope ]
@@ -20,7 +20,6 @@ From [[sword-world-rpg-complete-edition]].
 - Shapeshifting is affected by the waxing and waning of the moon. Compare the number of days since the new moon with 2D + 3 at nighttime or 2D + 9 in the daytime. When the number of days is 16 or more, compare it with 30 - the number of days (the waxing and waning of the moon in Forcelia is one cycle every 30 days). When the score is equal to or less than this, the lycanthrope will always enter beast form (the lycanthrope will always enter beast form on nights when the moon is full = 15 days). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09566))_
 - Lycanthropes have the ability to summon and control other beasts of their kind in their surroundings (wolves for werewolves, bears for werebears, etc.). Their habitat depends on the type of beast they shapeshift into. There may be some hiding their true identity and living among humans in towns and villages, but when their time comes, they're likely to take odd actions to hide their transformations. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09568))_
 - Lycanthropy is a type of infectious illness, and those who are wounded by a lycanthrope in beast form are at risk of becoming a lycanthrope of the same species. See p. 166 for details on this illness. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09569))_
-- A werewolf is a lycanthrope with the power to shapeshift into a wolf. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09575))_
 
 ## Technical atoms
 
@@ -56,9 +55,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 4: [ Lycanthrope ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09575))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09569))_
 
-> A werewolf is a lycanthrope with the power to shapeshift into a wolf.
+> Lycanthropy is a type of infectious illness, and those who are wounded by a lycanthrope in beast form are at risk of becoming a lycanthrope of the same species. See p. 166 for details on this illness.
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09572, source-range-0b9dec90-09573, source-range-0b9dec90-09574))_
 
@@ -70,9 +69,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 5: [ Lycanthrope ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09575))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09569))_
 
-> A werewolf is a lycanthrope with the power to shapeshift into a wolf.
+> Lycanthropy is a type of infectious illness, and those who are wounded by a lycanthrope in beast form are at risk of becoming a lycanthrope of the same species. See p. 166 for details on this illness.
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09577, source-range-0b9dec90-09578, source-range-0b9dec90-09579, source-range-0b9dec90-09580, source-range-0b9dec90-09581, source-range-0b9dec90-09582, source-range-0b9dec90-09583, source-range-0b9dec90-09584, source-range-0b9dec90-09586, source-range-0b9dec90-09587, source-range-0b9dec90-09588, source-range-0b9dec90-09589, source-range-0b9dec90-09590, source-range-0b9dec90-09591))_
 

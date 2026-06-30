@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-counters-negates-acc6a6c6
 page_kind: source
-summary: 《 Counters (Negates) 》: 28 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 《 Counters (Negates) 》: 27 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-counters-negates-acc6a6c6@15968746aed1c257b753ac8bf6fdf5b4
+projection_coverage: section-sword-world-rpg-complete-edition-section-counters-negates-acc6a6c6@61078575423b4d6d2dc535ffaaa6b151
 ---
 
 # 《 Counters (Negates) 》
@@ -20,7 +20,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- and Increase Weight (which makes an object heavier), but when both of these are cast on the same object at the same time, they will cancel each other out and disappear without taking effect. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02654))_
 - Such magic, that is, magic that negates the effect of other magic, but at the same time is negated by that other magic without taking its own effect, is called counters (negates): type. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02655))_
 - When casting counters (negates): magic to cancel the effect of certain magic, if the magic that was cast prior has a target score , then according to the definition of magic with a target score , the magic that's cast after cannot cancel the prior magic unless its final score is greater than or equal to the determined target score . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02656))_
 - Such magic, that is, magic that negates the effect of other magic, but at the same time is negated by that other magic without taking its own effect, is called counters (negates): type. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02655))_
@@ -51,9 +50,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 《 Counters (Negates) 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02654))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02655))_
 
-> and Increase Weight (which makes an object heavier), but when both of these are cast on the same object at the same time, they will cancel each other out and disappear without taking effect.
+> Such magic, that is, magic that negates the effect of other magic, but at the same time is negated by that other magic without taking its own effect, is called counters (negates): type.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02653))_
 

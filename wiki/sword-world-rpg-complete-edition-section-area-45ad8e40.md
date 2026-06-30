@@ -7,16 +7,12 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-area-45ad8e40@673b9f4a8a4d43c5555d6dc4c43f83f4
+projection_coverage: section-sword-world-rpg-complete-edition-section-area-45ad8e40@07afc96fd711ad230b8ddfb9b41abb6f
 ---
 
 # 《 Area 》
 
 From [[sword-world-rpg-complete-edition]].
-
-## Related pages
-
-- [[sword-world-rpg-complete-edition-area]] - topic hub: opens the topic page for Area
 
 ## Statements
 

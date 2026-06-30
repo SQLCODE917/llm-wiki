@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-12-various-checks-bbb8bf9e
 page_kind: source
-summary: Chapter 12: Various Checks: 493 source-backed entries and 153 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 12: Various Checks: 490 source-backed entries and 152 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-bbb8bf9e@6e56fe7cd774ad0b78f87f07689388b6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-bbb8bf9e@3020dfde21c0ef10641ca35f82b33091
 ---
 
 # Chapter 12: Various Checks
@@ -158,7 +158,6 @@ From [[sword-world-rpg-complete-edition]].
 
 - This is a black liquid poison and is a type of narcotic. Those who fail to resist will lose all will and emotion and become like a doll. If someone pulls their arm, they will stagger, and if someone calls them, they will respond in an emotionless voice, but they cannot do anything of their own will. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06590))_
 - Around one additional hour of suggestions can transform the victim into a robot that follows commands. Victims turned into robots faithfully follow the commands of the person who gave them the suggestions, and will casually kill even their family and friends (they cannot use magic). However, if you suffer a very strong physical or mental shock, you may recover from the paralysis even before the duration expires. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06591))_
-- Effect=Become disabled, and suffer strike power 20 damage plus bonus damage 6 every 10 minutes. Resist negates effect Toxicity Score=15 Rarity=10 Effect Start Time= 1 round later Effect Duration=Permanent _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06593))_
 - A poison often used by assassins, it is a pitch-black viscous liquid. If you are wounded by a knife coated with this poison, you will suffer damage every 10 minutes thereafter. The victim continues to suffer damage until the poison wears off or they die. During this time, you will be in terrible pain and unable to take any action. If treatment is delayed, you may remain in a coma for several days after the poison wears off. If you succeed on a resistance roll, you will not suffer any damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06594))_
 
 ### Chapter 12: Various Checks / [Deathlike Sleep (Dose)]
@@ -324,7 +323,6 @@ From [[sword-world-rpg-complete-edition]].
 - When you're exposed to extremely strong fear, such as due to combat, etc. leprechaun, the mind spirit, manifests abnormally and causes this illness. When the illness is at depth 1, symptoms include being unable to move due to being seized by fear and having nightmares every night. When the depth is at 2 or greater, changes will appear in your body shape. You'll become hunched over, your hands abnormally long, your face contorted, and your eyes blazing red. This illness was given its name because the entire body turns red and hair falls out. Patients in this state go berserk and begin to attack things around them at random. Use the details p. 233 when fighting with these patients. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
 - This illness is transmitted when eye contact is made with someone who's been infected. If you make eye contact with someone who has the illness, a progression check must be made immediately. In other words, roll two dice, and if the roll does not total 5 or greater, you'll be infected. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06775))_
 - This illness was given its name because the entire body turns red and hair falls out. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
-- When you're exposed to extremely strong fear, such as due to combat, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
 
 ### Chapter 12: Various Checks / [ Lockjaw ]
 
@@ -598,9 +596,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 21: Chapter 12: Various Checks / [Zombie Maker (Dose/Mind)]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06593))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06594))_
 
-> Effect=Become disabled, and suffer strike power 20 damage plus bonus damage 6 every 10 minutes. Resist negates effect Toxicity Score=15 Rarity=10 Effect Start Time= 1 round later Effect Duration=Permanent
+> A poison often used by assassins, it is a pitch-black viscous liquid. If you are wounded by a knife coated with this poison, you will suffer damage every 10 minutes thereafter. The victim continues to suffer damage until the poison wears off or they die. During this time, you will be in terrible pain and unable to take any action. If treatment is delayed, you may remain in a coma for several days after the poison wears off. If you succeed on a resistance roll, you will not suffer any damage.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06591))_
 
@@ -608,9 +606,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 22: Chapter 12: Various Checks / [Zombie Maker (Dose/Mind)]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06593))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06591))_
 
-> Effect=Become disabled, and suffer strike power 20 damage plus bonus damage 6 every 10 minutes. Resist negates effect Toxicity Score=15 Rarity=10 Effect Start Time= 1 round later Effect Duration=Permanent
+> Around one additional hour of suggestions can transform the victim into a robot that follows commands. Victims turned into robots faithfully follow the commands of the person who gave them the suggestions, and will casually kill even their family and friends (they cannot use magic). However, if you suffer a very strong physical or mental shock, you may recover from the paralysis even before the duration expires.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06594))_
 
@@ -1253,28 +1251,3 @@ From [[sword-world-rpg-complete-edition]].
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06822))_
 
 > [Figure] (p.168)
-
-### Technical atom 76
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06515))_
-
-> To remove a poison with magic, the caster's final score (magic power + 2D roll) must be greater than or equal to the poison's toxicity score . Once a detox fails, the same caster cannot attempt detox magic until their magic power increases (and even if they try, they will always fail).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06518))_
-
-| entry | content |
-| --- | --- |
-| 12 | 2.1.2 Resistance to Poison Poisons are not effective against everything. It has no effect on monsters that have no life such as undead, golems, etc. Some mythical and magical beasts have strong life force that makes them immune to poison. Some poison effects may or may not affect specific monsters. Monsters that use poison as weapons are immune to their own poisons (but are still affected by other poisons). |
-| 12 | 2.1.3 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-12.2.1.2 Resistance to Poison
-Poisons are not effective against everything. It has no effect on monsters that have no life such as undead, golems, etc.  Some  mythical  and  magical  beasts have  strong  life  force  that  makes  them immune to poison. Some poison effects may or may not affect specific monsters.
-Monsters that use poison as weapons are  immune  to  their own poisons  (but are still affected by other poisons).
-12.2.1.3
-```
-
-</details>

@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-physical-enchant-a070ea9d@1747cc0588c8807a7676a18d184d1ea4
+projection_coverage: section-sword-world-rpg-complete-edition-section-physical-enchant-a070ea9d@a25fded3f36f6cbe616f2c944cf7992d
 ---
 
 # [ Physical Enchant ]
@@ -27,7 +27,6 @@ From [[sword-world-rpg-complete-edition]].
 - Decreases the target's dexterity by 6. Decreases attack power (points) and the baseline score of dexterity-related abilities by 1 point. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03057))_
 - Increases the target's agility by 6. Affects evasion speed (points) and action order. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03059))_
 - Also increases the baseline score of related abilities. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03060))_
-- Reduces the target's agility by 6. Affects evasion speed (points) and action order. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03062))_
 - Also decreases the baseline score of related abilities. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03063))_
 - Reduces the target's strength by 6. Affects bonus damage (strike points). If, due to this spell being cast, the required strength of your weapon or armor exceeds your own strength, you will be disabled. However, if you're using the optional rules under 16.8: Weapons and Armor That Are Too Heavy (see p. 268), you can still act, but you'll receive a penalty to attack power, evasion speed, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03067))_
 

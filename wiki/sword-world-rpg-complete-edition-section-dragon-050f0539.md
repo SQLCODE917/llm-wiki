@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-dragon-050f0539
 page_kind: source
-summary: [ Dragon ]: 51 source-backed entries and 22 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Dragon ]: 49 source-backed entries and 22 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

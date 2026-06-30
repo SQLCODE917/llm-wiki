@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-5-1-14-55816c7f
 page_kind: source
-summary: 5.1.14: 756 source-backed entries and 350 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 5.1.14: 741 source-backed entries and 349 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-55816c7f@510bd2ef45aec971fae94fd8b4eb158c
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-55816c7f@87122221addc905e64d1cda00d32e44f
 ---
 
 # 5.1.14
@@ -104,7 +104,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ### 2nd Level Spirit Magic List [ Will-O-Wisp ] (Will-O-Wisp/Light Spirit)
 
-- Counters (Negates): Shade , Spirit Wall: Shade Countered (Negated) By: Shade , Spirit Wall: Shade _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03762))_
 - Countered (Overpowered) By: Darkness Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect Will-o-wisp is a spirit of light, spherical in shape and emitting pale blue-white light. The light can illuminate a space within a 5 meter radius. However, in places affected by the ancient magic Darkness , the light emitted by a will-owisp will have no effect, and if it overlaps with the darkness created by a shade, they will negate each other's effects. This spirit flies around in the sky according to the caster's commands. However, if it moves more than 20 meters away from the caster, they will no longer be able to control it. This spirit can be easily destroyed by applying a small amount of force, and when it does, it emits powerful energy. If the will-o-wisp hits an opponent, the target will receive damage from the energy generated when the will-o-wisp disintegrates. Make this damage check using the strike power 10 column. When used for this purpose, a will-o-wisp disintegrates immediately, even during its duration. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03763))_
 - Furthermore, if someone destroys a will-o-wisp with a weapon they're holding, the one who took that action will also suffer the same damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03764))_
 - If a will-o-wisp itself comes into contact with a shade's body or enters the area of effect of Darkness , it'll vanish without emitting any energy. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03765))_
@@ -263,22 +262,15 @@ From [[sword-world-rpg-complete-edition]].
 - Its effect is to protect those within range from projectile attacks. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04045))_
 - However, projectiles with a strike power that exceeds 30 are beyond the limits of sylph's abilities, and therefore cannot be the target of the effect. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04045))_
 
-### 6th Level Spirit Magic List
-
-- Base Mental Power Cost=24 Distance=Caster Area=A space within a 30 meter radius from the caster Duration=Until focus ends Effect=Manipulate the echoes of sounds within the area of effect Type=Focus Countered (Overpowered) By: Silence Expansion=Final score, area Resist=Negated effect _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04049))_
-- Base Mental Power Cost=24 Distance=Caster Area=A space within a 30 meter radius from the caster Duration=Until focus ends Effect=Manipulate the echoes of sounds within the area of effect Type=Focus Countered (Overpowered) By: Silence Expansion=Final score, area Resist=Negated effect _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04049))_
-
 ### [ Spirit Wall ]
 
 - This spell has the effect of creating a wall in a specified area using certain spirit power. Some walls may block your gaze, preventing attacks from spells and projectiles. There are also walls that you cannot pass through, walls that deal damage even if you force your way through, etc. Walls can be negated by Dispel Magic or Suppress Elemental , or countered by the opposing Spirit Wall . The wall is normally 0.5 meters thick, but you can consume extra mental power to expand the target size and make it thicker (as long as you do not change the length or height of the wall, the thickness will increase as the expansion rate increases). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04055))_
 - You cannot build a wall where other materials such as rocks, trees, or living things already exist. Furthermore, once a wall is put up, it cannot be moved or removed by the caster's will. The types of spells are divided by the lesser spirits that control them, and the walls created by each spell each have different characteristics depending on their spirit power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04056))_
-- Counters (Negates): Shade , Spirit Wall: Shade Countered (Negated) By: Shade , Spirit Wall: Shade _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04060))_
 - With the help of the spirit of light, you can build a dazzling wall of light. The wall of light is not a solid entity, but a collection of will-o-wisps themselves. Therefore, the space on either side of the wall of light is illuminated with a brightness like midday. The glow from the wall is so intense that you can't look directly at it (so your gaze won't pass through it). The wall of light has no way to prevent objects from passing through it, so you can pass through it without any resistance. However, if you touch the wall or try to pass through it, you will destroy the will-o-wisps forming the wall. At this time, make a resistance roll, and if you fail, you will suffer strike power 10 damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04063))_
 - The wall of light cannot be destroyed by physical methods or damage magic, but when the dark spirit shade collides with the wall, a round hole about 50 cm in diameter will be created. At this time, the shade will also vanish. If Spirit Wall: Shade is used in the same place, their effects will negate each other, and both walls will vanish. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04064))_
 - A wall of light cannot be put up within the area of effect of the ancient magic Darkness . Also, if the magical darkness created by Darkness and the wall of light overlap, the wall will end there. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04065))_
 - Counters (Negates): Spirit Wall: Salamander Countered (Negated) By: Spirit Wall: Salamander _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04069))_
 - Create a wall of water by borrowing the power of water spirits. When you chant this spell, a stream of water separates from a single point in the air and radiates out in countless streaks, which eventually hang down in a continuous curtain. Undine is waiting inside the water wall. Water walls do not obstruct your gaze, but projectiles cannot pass through them. Anything that attempts to touch or pass through the wall must attempt to resist. If you succeed, you will only get a little wet and you will be able to pass through the wall, but if you fail, you will be swallowed up by the wall. Those inside the wall will automatically drown after a number of rounds equal to their life force (points) have elapsed, unless rescued from the outside. You cannot escape on your own. Moreover, any rescuers must also be able to get inside the wall in order to save those that have been swallowed up by it. A wall made of water can't be destroyed by physical means or even magic that deals damage, as it quickly compensates for any damaged areas. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04072))_
-- Counters (Negates): Spirit Wall: Undine/Frau Countered (Negated) By: Spirit Wall Undine/Frau _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04076))_
 - Create a wall of blazing fire by borrowing the power of the fire spirit. When you chant this spell, tongues of fire rush everywhere, swell up as if they're going to explode, then become a large mass of flames. A wall of fire cannot be seen through. It is possible to pass through, but upon touching the wall or trying to pass through it, you will be rammed by the salamander and suffer strike power 10 damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04080))_
 - A wall of fire cannot be destroyed by physical means or magic that deals damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04081))_
 - By borrowing the power of the dark spirit, you can put up a wall of darkness. A wall of darkness is a collection of shades. The wall itself is pitch black, and the space up to 5 meters on either side of the wall will also be closed in darkness. Your gaze cannot pass through a wall of darkness. However, it has no means of preventing the passage of objects, so you can pass through it without any resistance. However, if you touch or try to pass through the wall, you will destroy the shades that form the wall, and you will suffer strike power 10 damage to your mental power (points). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04090))_
@@ -289,7 +281,6 @@ From [[sword-world-rpg-complete-edition]].
 - This wall can be destroyed by weapons or magic. For more information, please refer to 18.3: Rules for Destroying Structures (see p. 277). However, this wall regenerates by growing new trees one after the other. Even if the wall is completely destroyed, it will continue to regenerate for the duration of the spell. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04101))_
 - By borrowing the power of the earth spirit, you can build a smooth wall made of solid rock. When you chant this spell, a number of stone slabs break through the ground and rise up in a flash, creating a seamless wall. A rock wall blocks your gaze and cannot be passed through without making a hole in the wall. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04105))_
 - By borrowing the power of the ice spirits, you can build a freezing wall of ice. When you chant the spell, cold mist gathers and becomes frost, then the frost rises in bands of ice. Your gaze can see through the ice wall, but you cannot pass through it. It's made of magical ice, so if you touch this wall, you will be exposed to the cold air radiated from the ice and take strike power 10 damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04115))_
-- This wall can be destroyed by weapons or magic. For more information, please refer to 18.3: Rules for Destroying Structures (see p. 277). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04116))_
 - You cannot build a wall where other materials such as rocks, trees, or living things already exist. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04056))_
 - Therefore, the space on either side of the wall of light is illuminated with a brightness like midday. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04063))_
 - A wall of light cannot be put up within the area of effect of the ancient magic Darkness . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04065))_
@@ -421,13 +412,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ### 10th Level Spirit Magic List ]
 
-- Base Mental Power Cost=50 Distance=Caster Area=A space within a 100 meter radius from the caster Duration=18 rounds Effect=Appeal to the greater spirits to neutralize spirit power Type=Target score Counters (Overpowers): All magic that uses related spirit power Expansion=Final score, duration, area _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04270))_
 - This spell appeals to a greater spirit and completely neutralizes one type of spirit power within its area of effect for a limited time. However, only one type of spirit power can be neutralized at a time. Even if you expand this spell and use it, you cannot neutralize two or more types of spirit power at the same time. This is the same even if multiple casters attempt it (only one type of spirit power can be neutralized in one space). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04272))_
 - Within the area of effect, any spirit magic that depends on the neutralized spirit power will no longer be able to be used, and any magic that had an effect will be canceled immediately. This spell's restrictions include the caster him or herself who appealed to the greater spirit. It' s not that the spirit power ceases to exist; the lesser spirits still exist there, but they temporarily become completely neutral and you won't be able to draw out their magical powers. This also applies to spirits sealed with spells such as Control Spirit , etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04273))_
 - The greater spirits and spirit power that can be neutralized are as follows. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04274))_
-- Base Mental Power Cost=50 Distance=Caster Area=A space within a 100 meter radius from the caster Duration=18 rounds Effect=Appeal to the greater spirits to neutralize spirit power Type=Target score Counters (Overpowers): All magic that uses related spirit power Expansion=Final score, duration, area _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04270))_
 - This is the same even if multiple casters attempt it (only one type of spirit power can be neutralized in one space). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04272))_
-- This spell appeals to a greater spirit and completely neutralizes one type of spirit power within its area of effect for a limited time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04272))_
 - However, only one type of spirit power can be neutralized at a time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04272))_
 - This also applies to spirits sealed with spells such as Control Spirit , etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04273))_
 - Within the area of effect, any spirit magic that depends on the neutralized spirit power will no longer be able to be used, and any magic that had an effect will be canceled immediately. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04273))_
@@ -562,9 +550,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 10: 2nd Level Spirit Magic List [ Will-O-Wisp ] (Will-O-Wisp/Light Spirit)
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03762))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03763))_
 
-> Counters (Negates): Shade , Spirit Wall: Shade Countered (Negated) By: Shade , Spirit Wall: Shade
+> Countered (Overpowered) By: Darkness Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect Will-o-wisp is a spirit of light, spherical in shape and emitting pale blue-white light. The light can illuminate a space within a 5 meter radius. However, in places affected by the ancient magic Darkness , the light emitted by a will-owisp will have no effect, and if it overlaps with the darkness created by a shade, they will negate each other's effects. This spirit fl
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03756, source-range-0b9dec90-03757, source-range-0b9dec90-03758, source-range-0b9dec90-03759, source-range-0b9dec90-03760, source-range-0b9dec90-03761))_
 
@@ -1264,29 +1252,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 55: 6th Level Spirit Magic List
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04049))_
-
-> Base Mental Power Cost=24 Distance=Caster Area=A space within a 30 meter radius from the caster Duration=Until focus ends Effect=Manipulate the echoes of sounds within the area of effect Type=Focus Countered (Overpowered) By: Silence Expansion=Final score, area Resist=Negated effect
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04050))_
 
 > You can make it so that only certain people can hear specific sounds, or conversely, you can make them inaudible.
 
 ### Technical frame 56: 6th Level Spirit Magic List
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04049))_
-
-> Base Mental Power Cost=24 Distance=Caster Area=A space within a 30 meter radius from the caster Duration=Until focus ends Effect=Manipulate the echoes of sounds within the area of effect Type=Focus Countered (Overpowered) By: Silence Expansion=Final score, area Resist=Negated effect
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04050))_
 
 > When you cast this spell, you can control the echoes of any sound that occurs within a 30 meter radius around the caster, no matter what it may be. You can make it so that only certain people can hear specific sounds, or conversely, you can make them inaudible. Any number of people can be targeted and made to hear or not hear sounds, as long as they're within the area of effect. Moreover, the targets can be chosen completely at the caster's discretion. For example, you can let your allies hear a spellsong that raises their morale without giving the enemy an advantage, or you can have secret conversations in a crowded place full of people while staying separate. However, the caster who is focusing the spell can only control one type of sound source at a time. If the caster desires, they can also switch the sound source they control each round.
 
 ### Technical frame 57: 6th Level Spirit Magic List
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04049))_
-
-> Base Mental Power Cost=24 Distance=Caster Area=A space within a 30 meter radius from the caster Duration=Until focus ends Effect=Manipulate the echoes of sounds within the area of effect Type=Focus Countered (Overpowered) By: Silence Expansion=Final score, area Resist=Negated effect
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04051))_
 
@@ -1316,9 +1292,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 60: [ Spirit Wall ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04060))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04063))_
 
-> Counters (Negates): Shade , Spirit Wall: Shade Countered (Negated) By: Shade , Spirit Wall: Shade
+> With the help of the spirit of light, you can build a dazzling wall of light. The wall of light is not a solid entity, but a collection of will-o-wisps themselves. Therefore, the space on either side of the wall of light is illuminated with a brightness like midday. The glow from the wall is so intense that you can't look directly at it (so your gaze won't pass through it). The wall of light has no way to prevent objects from passing through it, so you can pass through it without any resistance.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04059))_
 
@@ -1360,9 +1336,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 64: [ Spirit Wall ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04076))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04080))_
 
-> Counters (Negates): Spirit Wall: Undine/Frau Countered (Negated) By: Spirit Wall Undine/Frau
+> Create a wall of blazing fire by borrowing the power of the fire spirit. When you chant this spell, tongues of fire rush everywhere, swell up as if they're going to explode, then become a large mass of flames. A wall of fire cannot be seen through. It is possible to pass through, but upon touching the wall or trying to pass through it, you will be rammed by the salamander and suffer strike power 10 damage.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04072))_
 
@@ -1370,9 +1346,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 65: [ Spirit Wall ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04076))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04080))_
 
-> Counters (Negates): Spirit Wall: Undine/Frau Countered (Negated) By: Spirit Wall Undine/Frau
+> Create a wall of blazing fire by borrowing the power of the fire spirit. When you chant this spell, tongues of fire rush everywhere, swell up as if they're going to explode, then become a large mass of flames. A wall of fire cannot be seen through. It is possible to pass through, but upon touching the wall or trying to pass through it, you will be rammed by the salamander and suffer strike power 10 damage.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04075))_
 
@@ -1487,10 +1463,6 @@ From [[sword-world-rpg-complete-edition]].
 > Resist=Reduced effect
 
 ### Technical frame 76: [ Spirit Wall ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04116))_
-
-> This wall can be destroyed by weapons or magic. For more information, please refer to 18.3: Rules for Destroying Structures (see p. 277).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04115))_
 
@@ -1891,46 +1863,3 @@ From [[sword-world-rpg-complete-edition]].
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04275))_
 
 > Behemoth=Earth spirit power Kraken=Water spirit power Efreet=Fire spirit power Djinn=Wind spirit power Fenrir=Ice spirit power Ent=Plant spirit power
-
-### Technical atom 104
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03969))_
-
-> cannot use magic, etc.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03972))_
-
-| entry | content |
-| --- | --- |
-| 4 | Target is struck by panic and is prevented from taking action. Take a -1 penalty on all success rolls |
-| 5 | Same as above, but penalty is -2 |
-| 6 | Same as above, but penalty is -3 |
-| 7 | Target runs away. They go berserk if that's not possible. |
-| 8 | Target runs away. If that's not possible, they act with a -3 penalty |
-| 9 | Target runs away. If that's not possible, they freeze in fear and become unable to act |
-| 10 | Target freezes in fear. They become unable to act |
-| 11 | Same as above |
-| 12 | Target loses consciousness from fear. It takes 1 hour to regain consciousness naturally |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-4 Target is struck by panic and is prevented from taking action. Take a -1 penalty on all success rolls
-5
-Same as above, but penalty is -2
-6
-Same as above, but penalty is -3
-7 Target runs away. They go berserk if that's not possible.
-8
-Target runs away. If that's not possible, they act with a -3 penalty
-9
-Target runs away. If that's not possible, they freeze in fear and become unable to act
-10
-Target freezes in fear. They become unable to act
-11
-Same as above
-12 Target loses consciousness from fear. It takes 1 hour to regain consciousness naturally
-```
-
-</details>

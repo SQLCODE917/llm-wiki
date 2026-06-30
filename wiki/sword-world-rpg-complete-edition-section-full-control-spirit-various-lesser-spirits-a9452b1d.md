@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-full-control-spirit-various-lesser-spirits-a9452b1d
 page_kind: source
-summary: [ Full Control Spirit ] (Various lesser spirits): 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Full Control Spirit ] (Various lesser spirits): 5 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

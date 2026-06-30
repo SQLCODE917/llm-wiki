@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-manticore-251189ac
 page_kind: source
-summary: [ Manticore ]: 25 source-backed entries and 17 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Manticore ]: 24 source-backed entries and 17 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

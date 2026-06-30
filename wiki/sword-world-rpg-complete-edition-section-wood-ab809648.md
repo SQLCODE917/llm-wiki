@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-wood-ab809648
 page_kind: source
-summary: [ Wood ]: 8 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Wood ]: 7 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-wood-ab809648@0e7616957b745c3b3fa836a535de1d63
+projection_coverage: section-sword-world-rpg-complete-edition-section-wood-ab809648@a92e8241358b7517377341d82d6a304b
 ---
 
 # [ Wood ]
@@ -18,17 +18,9 @@ From [[sword-world-rpg-complete-edition]].
 
 - [[sword-world-rpg-complete-edition-section-18-3-5e113017]] - broader source section: 18.3
 
-## Statements
-
-- When you use fire magic or a weapon with Fire Weapon cast on it, it will ignite if a critical occurs, and will be destroyed as a result. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11801))_
-
 ## Technical atoms
 
 ### Technical frame 1: [ Wood ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11801))_
-
-> When you use fire magic or a weapon with Fire Weapon cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11794, source-range-0b9dec90-11795, source-range-0b9dec90-11796, source-range-0b9dec90-11797, source-range-0b9dec90-11798, source-range-0b9dec90-11799))_
 
@@ -45,10 +37,6 @@ From [[sword-world-rpg-complete-edition]].
 > Ignores Defense Points = Fire-type, electrictype, earthquake-type, explosion-type, pure energy-type magic
 
 ### Technical frame 2: [ Wood ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11801))_
-
-> When you use fire magic or a weapon with Fire Weapon cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11800))_
 

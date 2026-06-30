@@ -14,8 +14,10 @@ from dataclasses import dataclass, replace
 
 from llmwiki.domain.ledger.canonical import (
     artifact_fingerprint,
+    canonical_json,
     content_fingerprint,
     deterministic_id,
+    short_digest,
 )
 from llmwiki.domain.ledger.coverage import ProjectionCoverage
 from llmwiki.domain.ledger.ledger import ClaimLedger
@@ -148,12 +150,39 @@ def build_quality_check_catalog_artifact(
 def build_ledger_quality_report_artifact(
     report: LedgerQualityReport,
 ) -> LedgerQualityReportArtifact:
-    fingerprint = artifact_fingerprint(report)
+    fingerprint = _ledger_quality_report_fingerprint(report)
     return LedgerQualityReportArtifact(
         ledger_quality_report_artifact_id=f"ledger-quality-report-{fingerprint}",
         ledger_quality_report_fingerprint=fingerprint,
         artifact_format=ARTIFACT_FORMAT,
         ledger_quality_report=report,
+    )
+
+
+def _ledger_quality_report_fingerprint(report: LedgerQualityReport) -> str:
+    finding_rows = tuple(
+        (
+            finding.quality_check_id,
+            finding.quality_report_scope,
+            finding.quality_finding_severity,
+            finding.quality_finding_reason,
+            finding.quality_finding_subject.quality_finding_subject_kind,
+            finding.quality_finding_subject.quality_finding_subject_id,
+            finding.quality_finding_subject.quality_finding_subject_field,
+            finding.quality_finding_locator.quality_finding_locator_kind,
+            finding.quality_finding_locator.quality_finding_subject_id,
+            finding.quality_finding_locator.source_range_id,
+            finding.quality_finding_locator.wiki_page_locator,
+            finding.review_reason.reason_kind if finding.review_reason else "",
+        )
+        for finding in report.findings
+    )
+    return content_fingerprint(
+        (
+            report.quality_report_scope,
+            report.quality_check_catalog_pointer,
+            finding_rows,
+        )
     )
 
 
@@ -170,10 +199,113 @@ def build_claim_ledger_artifact(
         ledger_quality_report_pointer=ledger_quality_report_pointer,
         ledger=ledger,
     )
-    fingerprint = artifact_fingerprint(
-        draft, exclude=("claim_ledger_fingerprint", "ledger_quality_report_pointer")
-    )
+    fingerprint = claim_ledger_artifact_fingerprint(draft)
     return replace(draft, claim_ledger_fingerprint=fingerprint)
+
+
+def claim_ledger_artifact_fingerprint(artifact: ClaimLedgerArtifact) -> str:
+    members = _claim_ledger_artifact_json_members(
+        artifact,
+        ledger_json=_claim_ledger_fingerprint_json(artifact.ledger),
+    )
+    members.pop("claim_ledger_fingerprint", None)
+    members.pop("ledger_quality_report_pointer", None)
+    return short_digest(_canonical_object_json(members))
+
+
+def claim_ledger_artifact_to_json(
+    artifact: ClaimLedgerArtifact,
+    *,
+    entry_ids: tuple[str, ...] = (),
+    atom_ids: tuple[str, ...] = (),
+) -> str:
+    return _canonical_object_json(
+        _claim_ledger_artifact_json_members(
+            artifact,
+            ledger_json=_claim_ledger_json(artifact.ledger, entry_ids=entry_ids, atom_ids=atom_ids),
+        )
+    )
+
+
+def _claim_ledger_artifact_json_members(
+    artifact: ClaimLedgerArtifact, *, ledger_json: str
+) -> dict[str, str]:
+    return {
+        "artifact_format": canonical_json(artifact.artifact_format),
+        "claim_ledger_fingerprint": canonical_json(artifact.claim_ledger_fingerprint),
+        "claim_ledger_id": canonical_json(artifact.claim_ledger_id),
+        "document_structure_pointer": canonical_json(artifact.document_structure_pointer),
+        "ledger": ledger_json,
+        "ledger_quality_report_pointer": canonical_json(artifact.ledger_quality_report_pointer),
+    }
+
+
+def _claim_ledger_json(
+    ledger: ClaimLedger,
+    *,
+    entry_ids: tuple[str, ...] = (),
+    atom_ids: tuple[str, ...] = (),
+) -> str:
+    entry_id_set = set(entry_ids)
+    atom_id_set = set(atom_ids)
+    entries = (
+        tuple(entry for entry in ledger.entries if entry.ledger_entry_id in entry_id_set)
+        if entry_id_set
+        else ledger.entries
+    )
+    atoms = (
+        tuple(atom for atom in ledger.technical_atoms if atom.technical_atom_id in atom_id_set)
+        if atom_id_set
+        else ledger.technical_atoms
+    )
+    contexts = (
+        tuple(
+            context
+            for context in ledger.technical_atom_contexts
+            if context.technical_atom_id in atom_id_set
+        )
+        if atom_id_set
+        else ledger.technical_atom_contexts
+    )
+    return _canonical_object_json(
+        {
+            "claim_ledger_id": canonical_json(ledger.claim_ledger_id),
+            "entries": _canonical_array_json(entries),
+            "evidence_registry_hash": canonical_json(ledger.evidence_registry_hash),
+            "extractor_decisions": "[]",
+            "rejected_candidates": "[]",
+            "source_family_assignment": canonical_json(ledger.source_family_assignment),
+            "source_hash": canonical_json(ledger.source_hash),
+            "source_locator": canonical_json(ledger.source_locator),
+            "source_profile": canonical_json(ledger.source_profile),
+            "source_statements": "[]",
+            "technical_atom_contexts": _canonical_array_json(contexts),
+            "technical_atoms": _canonical_array_json(atoms),
+        }
+    )
+
+
+def _claim_ledger_fingerprint_json(ledger: ClaimLedger) -> str:
+    return _canonical_object_json(
+        {
+            "claim_ledger_id": canonical_json(ledger.claim_ledger_id),
+            "entry_ids": canonical_json(tuple(entry.ledger_entry_id for entry in ledger.entries)),
+            "evidence_registry_hash": canonical_json(ledger.evidence_registry_hash),
+            "source_hash": canonical_json(ledger.source_hash),
+            "source_locator": canonical_json(ledger.source_locator),
+            "technical_atom_ids": canonical_json(
+                tuple(atom.technical_atom_id for atom in ledger.technical_atoms)
+            ),
+        }
+    )
+
+
+def _canonical_array_json(items: tuple[object, ...]) -> str:
+    return "[" + ",".join(canonical_json(item) for item in items) + "]"
+
+
+def _canonical_object_json(members: dict[str, str]) -> str:
+    return "{" + ",".join(f"{canonical_json(key)}:{members[key]}" for key in sorted(members)) + "}"
 
 
 def build_projection_coverage_artifact(

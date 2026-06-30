@@ -16,6 +16,7 @@ from llmwiki.domain.planning import (
     build_page_plan,
     source_summary_quality_report,
 )
+from llmwiki.domain.source_claim_heuristics import code_fragment_payload
 from llmwiki.domain.source_claim_quality import (
     claim_eligibility as _claim_eligibility,
 )
@@ -54,6 +55,33 @@ def test_claim_role_tags_handles_long_source_sentences() -> None:
     roles = _claim_role_tags(statement)
 
     assert "function" in roles
+
+
+def test_claim_role_tags_tolerates_pdf_unicode_glyph_noise() -> None:
+    statement = "Functions return values. " + ("Ā①� " * 5000)
+
+    roles = _claim_role_tags(statement)
+
+    assert "function" in roles
+
+
+def test_code_fragment_payload_bounds_pathological_extracted_text() -> None:
+    text = (" _unclosed emphasis " * 30_000) + " , ; : ) ]"
+
+    payload = code_fragment_payload(text)
+
+    assert len(payload) <= 20_000
+    assert " ," not in payload
+    assert " ;" not in payload
+    assert " :" not in payload
+    assert " )" not in payload
+    assert " ]" not in payload
+
+
+def test_code_fragment_payload_preserves_programming_identifiers() -> None:
+    payload = code_fragment_payload("const foo_bar = baz_qux;")
+
+    assert payload == "const foo_bar = baz_qux;"
 
 
 def test_layout_field_claims_are_source_furniture() -> None:

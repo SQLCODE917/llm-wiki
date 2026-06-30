@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-adventurers-9781d3d7@82c2ead0c42aea2677a91a692a4c74af
+projection_coverage: section-sword-world-rpg-complete-edition-section-adventurers-9781d3d7@b7b87e936d3c9984b2d1c75e6b2edfa1
 ---
 
 # Adventurers
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-18-3-5e113017]] - broader source section: 18.3
-- [[sword-world-rpg-complete-edition-adventurer]] - topic hub: opens the topic page for Adventurer
 
 ## Statements
 

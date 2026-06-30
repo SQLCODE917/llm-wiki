@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-weapon-critical
 page_kind: concept
-summary: 《 Weapons Cannot Critical 》: 16 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 《 Weapons Cannot Critical 》: 15 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-weapon-critical@babe44b0ed03496d3558f8789eba532b
+projection_coverage: topic-sword-world-rpg-complete-edition-weapon-critical@ed799b51d4006f8536f2704bcc374e23
 ---
 
 # 《 Weapons Cannot Critical 》
@@ -67,38 +67,13 @@ What [[sword-world-rpg-complete-edition]] covers about 《 weapons cannot critic
 
 - Critical target variation indicates that the armor reduces the chance of being dealt a strong blow from some weapons while wearing it. If this field says yes , the opponent's critical target will be +1 when they attack you with a sword, spear, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11361))_
 
-### [ Wood ]
-
-- When you use fire magic or a weapon with Fire Weapon cast on it, it will ignite if a critical occurs, and will be destroyed as a result. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11801))_
-
-
-## Technical atoms
-
-### Technical frame 1: [ Wood ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11801))_
-
-> When you use fire magic or a weapon with Fire Weapon cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11800))_
-
-> Special = If you cast Fire Weapon magic, not only will strike power increase by +10, even weapons that cannot cause criticals will now be able to cause criticals (defense points are effective).
-
 
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-critical-target-variation]] - shared statements: Critical Target Variation shares source evidence from Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (9 shared statement(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements: Target shares source evidence from [ Weak Point ] (Spell Level=3): Note that the critical target can only be lowered for weapon attacks, while the critical target of damage magic cannot be lowered. (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-agility]] - shared statements: Agility shares source evidence from [ Golem ]: Monster Level=9 Rarity=12 Agility=6 Movement Speed=8 Number=One Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:17 (10) Strike Poin ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-check]] - shared statements: Check shares source evidence from Rules for Sleeping Monsters: Attacks against sleeping monsters are always a success unless you roll 2D and get double ones on your hit check (even when attacking a sleeping opponent, double ones ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements: 【 Damage Reduction 】 shares source evidence from Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: Filling Out the Character Sheet shares source evidence from Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements: Level shares source evidence from [ Golem ]: Monster Level=9 Rarity=12 Agility=6 Movement Speed=8 Number=One Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:17 (10) Strike Poin ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-move]] - shared statements: Move shares source evidence from [ Golem ]: Monster Level=9 Rarity=12 Agility=6 Movement Speed=8 Number=One Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:17 (10) Strike Poin ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared statements: Rarity shares source evidence from [ Golem ]: Monster Level=9 Rarity=12 Agility=6 Movement Speed=8 Number=One Frequency=Rare Intellect=Obeys commands Reaction=Command-based Attack Points=Arms:17 (10) Strike Poin ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements: Spell shares source evidence from [ Fire Weapon ]: This is a spell used on weapons. The targeted weapon will now emit a magical flame from its striking end, adding a +10 bonus to the weapon's own strike power. This s ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-table]] - shared statements: Table shares source evidence from Chapter 16: / Critical Target Variation: Under the basic rules, when using the Rating Table to determine damage, a 10 or greater is considered a critical , but with this rule, the chance of a critical is di ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-section-weapons-cannot-critical-491f8ce9]] - source section: 《 Weapons Cannot Critical 》 shares source evidence from 《 Weapons Cannot Critical 》: Weapons do not deal additional damage from criticals. (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-section-certain-weapons-cannot-critical-a85dd114]] - source section: 《 Certain Weapons Cannot Critical 》 shares source evidence from 《 Certain Weapons Cannot Critical 》: There are weapons that cannot deliver effective strikes due to their form, etc. Attacks with the indicated weapon, no matter how powerful or magical it is, will neve ... [truncated] (2 shared statement(s))
 

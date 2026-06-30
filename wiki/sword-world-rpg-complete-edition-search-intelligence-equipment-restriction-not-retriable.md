@@ -6,7 +6,7 @@ sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable@06f23220bcda71d6e7b9dd05afb1f3a8
+projection_coverage: topic-sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable@8d6decc76d6f929af58e76700749b52c
 ---
 
 # [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable)
@@ -41,7 +41,6 @@ What [[sword-world-rpg-complete-edition]] covers about [ ⑨ search [intelligenc
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-ability]] - shared statements: Ability shares source evidence from Chapter 6: / [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable): This is the ability to search for hidden things. This ability is used to find things such as treasure chests with double bottoms, hidden doors in hallways, etc. The ... [truncated] (2 shared statement(s))
 - [[sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-1b45b8cf]] - source section: Chapter 6: / [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable) shares source evidence from Chapter 6: / [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable): This is the ability to search for hidden things. This ability is used to find things such as treasure chests with double bottoms, hidden doors in hallways, etc. The ... [truncated]; Chapter 6: / [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable) shares technical record from Chapter 6: / [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable): The game master should determine the difficulty depending on what is hidden. (2 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-section-chapter-6-search-intelligence-no-equipment-restriction-not-retriable-91bd2582]] - source section: Chapter 6: / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable) shares source evidence from Chapter 6: / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable): This is the ability to search for hidden things. The game master should determine the difficulty depending on what's hidden. Since it's an ability that relies on fee ... [truncated]; Chapter 6: / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable) shares technical record from Chapter 6: / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable): The game master should determine the difficulty depending on what's hidden. (2 shared statement(s), 1 shared atom(s))
 

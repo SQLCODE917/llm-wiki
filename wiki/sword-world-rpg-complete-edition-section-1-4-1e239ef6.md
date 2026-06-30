@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-1-4-1e239ef6
 page_kind: source
-summary: 1.4: 336 source-backed entries and 59 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 1.4: 335 source-backed entries and 59 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-effect-638e1c52@b5fdc681522b0d0e1c5d199a24f8da7c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-effect-638e1c52@4fcbb409a253a28974e7adff61b285c2
 ---
 
 # Chapter 12: Various Checks / 《 Effect 》
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-bbb8bf9e]] - broader source section: Chapter 12: Various Checks
-- [[sword-world-rpg-complete-edition-effect]] - topic hub: opens the topic page for Effect
 - [[sword-world-rpg-complete-edition-section-effect-519bb37d]] - same source heading: another source section with the same heading, 《 Effect 》
 
 ## Technical atoms

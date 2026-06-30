@@ -95,10 +95,13 @@ def atom_context_matches(
     contexts: tuple[TechnicalAtomContext, ...],
     matcher: re.Pattern[str],
     terms: tuple[str, ...] = (),
+    required_terms: tuple[str, ...] | None = None,
 ) -> bool:
     return any(
-        topic_field_matches(context.context_text, matcher, terms)
-        or topic_field_matches(" ".join(context.demonstrated_concept_keys), matcher, terms)
+        topic_field_matches(context.context_text, matcher, terms, required_terms)
+        or topic_field_matches(
+            " ".join(context.demonstrated_concept_keys), matcher, terms, required_terms
+        )
         for context in contexts
     )
 

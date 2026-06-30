@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-kingdoms-3f54478c@59ad315260b64a7c93160ed0b8bd9f27
+projection_coverage: section-sword-world-rpg-complete-edition-section-kingdoms-3f54478c@c0c1c2b726af1f4474a8d185b06a3988
 ---
 
 # Kingdoms
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-18-3-5e113017]] - broader source section: 18.3
-- [[sword-world-rpg-complete-edition-kingdom]] - topic hub: opens the topic page for Kingdom
 
 ## Statements
 

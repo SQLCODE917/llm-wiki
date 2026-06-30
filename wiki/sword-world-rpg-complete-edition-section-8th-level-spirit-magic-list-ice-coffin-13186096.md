@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-8th-level-spirit-magic-list-ice-coffin-13186096
 page_kind: source
-summary: 8th Level Spirit Magic List [ Ice Coffin ]: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 8th Level Spirit Magic List [ Ice Coffin ]: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

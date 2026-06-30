@@ -350,6 +350,7 @@ class Session:
             evidence_registry_hash=registry_hash,
             chunks=chunks,
             document_model=document_model,
+            source_claims=page_plan.source_claims,
             today=self.today,
             schema=ingest_run.schema,
         )

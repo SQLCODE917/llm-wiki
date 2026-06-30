@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-7-22223c91
 page_kind: source
-summary: Chapter 7:: 149 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 7:: 145 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-22223c91@389e8baacf941011a34e1e5a56b3a8bc
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-22223c91@3e051c764e221c5f66d80028ff54a551
 ---
 
 # Chapter 7:
@@ -52,7 +52,6 @@ From [[sword-world-rpg-complete-edition]].
 ### Chapter 7: / How to Create General Skills
 
 - There are many general skills. There are probably as many general skills as there are occupations, hobbies, etc. There is no way we can create rules for them one by one, etc. Therefore, we will only introduce the necessary general skills, and leave everything beyond that to each game master. If a game master deems it necessary, please make a general skill into a rule. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05299))_
-- Think about the abilities required for the skill (e.g. A skilled fisherman must be able to identify fish - fi sh check , be good at swimming swim , and be able to operate a boat small ship steering ) _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05304))_
 - comes to items outside their specialty. However, the basics of trade are not that different, so it may be useful in some cases. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05305))_
 - This is almost the same ability as the thief and sage skills' treasure appraisal . However, you can only make a check for items that the merchant deals with. Therefore, a merchant who sells art can tell you the value of the art, and a merchant who sells weapons and armor can tell you the value of the weapons and armor. The result is a specific price converted to silver coins. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05310))_
 - In Alecrast, merchants generally purchase items at half the retail price. In other words, if a product has a regular price of 100 gamels, you'd purchase it from a craftsman for 50 gamels. Of course, if you take the stock at a lower price or sell it at a higher price than the regular price, your profit will increase, so this ability is important. However, there _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05312))_
@@ -76,7 +75,6 @@ From [[sword-world-rpg-complete-edition]].
 - Success rolls are not required to create items of normal quality, but success rolls are required for weapon The price will increase or decrease by about 3% for every 1 point of difference in the final score. Please round up any fractions. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05326))_
 - Ducard II is trying to sell an ancient kingdom vase (price: 100 gamels) that he found on his adventure to an antique dealer. Ducard II has no merchant skill, so his baseline score for a success roll is 0 . The antique dealer, on the other hand, has a merchant level of 5 and a mental power bonus of +2 . Ducard II rolls 2D, and his final score is 8 . On the other hand, the antique dealer's 2D roll is 9, and his final score is 9+5+2= 16 . Since the difference between the two is 16-8= 8 , the antique dealer can offer to take it for 38 gamels, which is 8 x 3%, or 24% off, from the normal taking price (i.e. 50 gamels, half the list price). Ducard II thinks the price is unreasonable, but he can't refute the antique dealer's argument and agrees to sell the vase at that price. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05328))_
 - craftsmen and armor craftsmen to create high quality weapons and armor. The target score is 15 + the decrease in required strength . However, you cannot create weapons or armor with a required strength of 6 or lower. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05329))_
-- Craftsmen know how high the quality of the products they have made are, so naturally they can determine the value of items made by others. Treat this the same way as a merchant's value check . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05331))_
 
 ### Chapter 7: / Healer Skill
 
@@ -183,9 +181,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 4: Chapter 7: / [ ① Craft [Dexterity] ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05331))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05328))_
 
-> Craftsmen know how high the quality of the products they have made are, so naturally they can determine the value of items made by others. Treat this the same way as a merchant's value check .
+> Ducard II is trying to sell an ancient kingdom vase (price: 100 gamels) that he found on his adventure to an antique dealer. Ducard II has no merchant skill, so his baseline score for a success roll is 0 . The antique dealer, on the other hand, has a merchant level of 5 and a mental power bonus of +2 . Ducard II rolls 2D, and his final score is 8 . On the other hand, the antique dealer's 2D roll is 9, and his final score is 9+5+2= 16 . Since the difference between the two is 16-8= 8 , the antiqu
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05329))_
 

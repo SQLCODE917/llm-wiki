@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-1-2-56190ca1
 page_kind: source
-summary: 1.2: 39 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 1.2: 39 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-2-56190ca1@c3885a954eab8a468a200adf77d59b1d
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-2-56190ca1@6e3425717b77074c394701d7439f4ba2
 ---
 
 # 1.2
@@ -52,25 +52,3 @@ From [[sword-world-rpg-complete-edition]].
 ### 【 Half-Elf 】 / Skills
 
 - In addition to ability scores, Sword World RPG also uses numeric values called skills to describe the characteristics of characters. Skills have a greater impact on a character's actions than ability scores. This chapter explains the basics of skills. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00236))_
-
-## Technical atoms
-
-### Technical atom 1
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00211))_
-
-| entry | content |
-| --- | --- |
-| 2 | Among the craftsman general skill, has any one of the following at level 5: carpentry, smithing, woodworking, stonemasonry, gem crafting (details are explained under 7.3: Craftsman Skill, see p. 126). |
-| 3 | Unable to learn ancient magic or spirit magic. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Races
-2. Among the craftsman general skill, has  any  one  of  the  following  at  level  5: carpentry, smithing, woodworking, stonemasonry, gem crafting (details are explained under 7.3: Craftsman Skill, see p. 126).
-3. Unable  to  learn  ancient  magic  or spirit magic.
-```
-
-</details>

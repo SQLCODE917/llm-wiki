@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-18-3-5e113017
 page_kind: source
-summary: 18.3: 564 source-backed entries and 118 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 18.3: 520 source-backed entries and 118 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-5e113017@12697420999733db5ed37c089511b1a4
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-5e113017@e53cb2745b9a41e5acc73561f7b2d1cb
 ---
 
 # 18.3
@@ -28,8 +28,6 @@ From [[sword-world-rpg-complete-edition]].
 - [[sword-world-rpg-complete-edition-section-ice-5d05f923]] - narrower source section: [ Ice ]
 - [[sword-world-rpg-complete-edition-section-vegetation-13067c28]] - narrower source section: [ Vegetation ]
 - [[sword-world-rpg-complete-edition-section-18-3-3-handling-spirit-walls-8b2281d9]] - narrower source section: 18.3.3 Handling Spirit Walls
-- [[sword-world-rpg-complete-edition-section-spirit-wall-gnome-207aa3d6]] - narrower source section: [ Spirit Wall: Gnome ]
-- [[sword-world-rpg-complete-edition-section-spirit-wall-frau-cee27c63]] - narrower source section: [ Spirit Wall: Frau ]
 - [[sword-world-rpg-complete-edition-section-spirit-wall-dryad-2f6404b9]] - narrower source section: [ Spirit Wall: Dryad ]
 - [[sword-world-rpg-complete-edition-section-age-of-mythology-897d74b9]] - narrower source section: Age of Mythology
 - [[sword-world-rpg-complete-edition-section-the-age-of-magic-the-kingdom-of-kastuul-925bcae3]] - narrower source section: The Age of Magic = The Kingdom of Kastuul
@@ -69,10 +67,6 @@ From [[sword-world-rpg-complete-edition]].
 
 - Basically, characters cannot destroy walls or doors, but if you really want to implement something like this, it's fine for the game master to make decisions using his or her own common sense ('You have an ax, so you should be able to break down a wooden door'). However, if you specifically want to handle this numerically, please use the following rules. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11740))_
 
-### [ Paper ]
-
-- Special = If you cast " Fire Weapon " magic, strike power will become +20, and even weapons that cannot cause criticals will now be able to cause criticals. Also, if exposed to fire, it'll ignite immediately, and its defense points will automatically decrease by 1 point every round. When its defense points reach 0, its destruction points begin to decrease, and on the next round when destruction points reach 1, the paper object will burn out. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11749))_
-
 ### Defense Points
 
 - Indicates the strength of the material. There is a range, but the game master should decide on a specific score taking into consideration the thickness. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11751))_
@@ -82,7 +76,6 @@ From [[sword-world-rpg-complete-edition]].
 - As expected, it indicates the strength of the material, and the game master must determine a specific score depending on the thickness. The lowest of this score is called the minimum destruction points . In the case of paper, the score is 1~10, so the minimum destruction points are 1 . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11753))_
 - Defense points and destruction points are used in the basic system for destroying structures. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11754))_
 - When a character attempts to destroy something with a weapon, magic, etc. damage is calculated in the same way as when an attack hits a monster. Then, you subtract the defense points from the determined damage. If the result is greater than or equal to the destruction points , the structure is destroyed by that blow. If the result is greater than 1 but less than the destruction points, the defense points are reduced by 1 point. However, the structure itself is not destroyed. If the result is 0 or less (when damage is less than or equal to defense points), that means there was no effect at all. After the defense points fall to 0, the destruction points will decrease by 1 point. However, this will only be reduced to the minimum destruction points depending on the material. If you cannot deal more _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11755))_
-- damage than these minimum destruction points with a single blow , you will not be able to destroy a structure with 0 defense points. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11757))_
 - Consider trying to destroy a wooden wall (!) that's 20 cm thick. The game master considers this to have maximum strength for a wooden wall, and sets its defense points and destruction points to their maximums of 7 and 15 , respectively (see details below). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11759))_
 - If a character attacks with a weapon and deals 22 or greater points of damage in one blow, this wooden wall will be destroyed. If the damage is 7 points or less , the character's efforts are completely wasted . If the damage is greater than 8 but less than 21 points , the defense points will be reduced by 1 point (if the defense points become 0 , the destruction points will start to decrease . Once the destruction points reach 5 points , they will no longer decrease.) _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11760))_
 - When it comes to destroying structures, some weapons and magic are completely unsuitable, while conversely, others are extremely effective. This is expressed by what's given here. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11762))_
@@ -102,33 +95,9 @@ From [[sword-world-rpg-complete-edition]].
 
 - Special notes are given in cases where special treatment is applied for that mate. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11790))_
 
-### [ Wood ]
-
-- When you use fire magic or a weapon with Fire Weapon cast on it, it will ignite if a critical occurs, and will be destroyed as a result. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11801))_
-
-### [ Iron ]
-
-- If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11824))_
-- If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11824))_
-
 ### 18.3.3 Handling Spirit Walls
 
 - When using these rules for destroying structures to destroy the spirit magic Spirit Wall, please do so as follows. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11842))_
-
-### [ Spirit Wall: Gnome ]
-
-- Treat it as a stone wall. Without expansion, defense points are 15 and destruction points are 20. Its minimum destruction points are 1 because it's stone. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11844))_
-- Its minimum destruction points are 1 because it's stone. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11844))_
-
-### [ Spirit Wall: Frau ]
-
-- Treat it as an ice wall. Without expansion, defense points are 15 and destruction points are 20. Its minimum destruction points are 1 because it's ice. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11846))_
-- Its minimum destruction points are 1 because it's ice. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11846))_
-
-### [ Spirit Wall: Dryad ]
-
-- Treat it as a vegetation wall. Without expansion, defense points and destruction points are both 15. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11848))_
-- Spirit Wall: Dryad has the power to regenerate even if it's destroyed. Each round, Spirit Wall: Dryad regenerates 1 defense point and 1 destruction point. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11849))_
 
 ### Age of Mythology
 
@@ -262,7 +231,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Geography
 
-- At the eastern end of the Alecrast continent lie three countries: Mudeel, Milargo, and Anoth. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11938))_
 - Mudeel, known as the "Farthest Kingdom," has a population of about 1.2 million. Its capital city shares the same name, Mudeel. Along with agriculture and textile industry, this country actively engages in trade using distinctive galleys. These galleys, also known as armed merchant ships, boast strength that makes ordinary pirate ships pale in comparison. These armed merchant ships frequently visit and trade with countries along the southern coast of the Alecrast continent. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11939))_
 - Mudeel has a forest called the "Goblin Woods." It is a mystical realm inhabited by many youma and magical beasts, where humans rarely venture. Within this Youma forest lies ruins known as the City of Mara Ajanis. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11940))_
 - Milargo is known as the "Kingdom of Meadows." It has a population of about 1 million, with its capital city being Grad. This kingdom is a confederation of dozens of nomadic tribes. Important state affairs are decided by a tribal council where tribal chiefs gather. This tribal council also appoints the king and ministers. In Alecrast, it would be considered a country with notably weak royal authority. It is described as the very picture of freedom. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11941))_
@@ -401,40 +369,15 @@ From [[sword-world-rpg-complete-edition]].
 - This game will continue to receive further support through Fujimi Shobo's Dragon Magazine and RPG Dragon Magazine. Please make use of these two magazines to enhance your gaming experience. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12037))_
 - While the author of this book is listed as "Miyuki Kiyomatsu/Group SNE," this means that I handled the main work such as organization, editing, and final checks, while the various manuscripts were, of course, collaboratively written by Group SNE members, including Ryo Mizuno and Hiroshi Yamamoto. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12038))_
 - On the table, "D" stands for dice . 1D stands for one die , 2D stands for two dice , and 1/2D stands for half the result of one dice (rounded up) . In addition, a notation such as 1D+6 means to roll one dice and add 6 to the result . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12444))_
-- Note) On the table, expansion rate is the multiplier for mental power consumed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13003))_
-- When you cast a spell by consuming that multiplied amount of mental power, multiply the number in area expansion length or volume expansion length by the number (radius, side) that represents the spell's area of effect , and the result will be the spell's area . For spells cast on a flat surface, use the number in the area expansion length column, and for spells cast into space, use the number in the volume expansion length column. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13004))_
-- For example, when you cast the ancient magic Light , whose area is A space with a 10 meter radius , by consuming double the mental power, the resulting area will be a spherical space with a radius of 10 x 1.3 = 13 meters . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13005))_
-- If you have the skill, it's almost a sure-fire task. Even amateurs can be successful. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13013))_
-- Almost guaranteed if you have the skill. Even amateurs have a greater chance of success. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13016))_
-- If you have the skill, there is a high probability of success. For amateurs, the risk of failure is greater. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13022))_
-- If you have the skill, you'll succeed 2 out of 3 times, but if you're an amateur, you'll fail 2 out of 3 times. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13025))_
-- If you're a pro in that field, you'll most likely succeed, but if you only have the skill, there's a greater risk of failure. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13031))_
-- Amateurs should stay away from it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13032))_
-- It's possible with a little luck if you're someone who's only dabbled. Even pros can fail due to a little bad luck. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13038))_
-- A simple task for the world's greatest expert. At pro level, failure is quite possible. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13041))_
-- Even if you're a master, there is no guarantee that you'll succeed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13047))_
-- Even the greatest master is subject to the possibility of failure. It is best not to expect success at pro level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13050))_
-- Even a master cannot guarantee success. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13053))_
-- You can't blame a master even if they fail. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13056))_
-- Even if you're a master, the probability of failure is high. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13062))_
-- This is a task that will go down in history if successful. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13065))_
-- However, if alternative senses (smell, hearing, etc.) are developed to some extent _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13077))_
 - This is a free, unofficial, fan-based translation. Please support original creators by buying Sword World books and supplements. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13873))_
 - Because this has been achieved, we now feel a deep sense of accomplishment, thinking "we've finally made it this far." _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12033))_
 - It is precisely because we have continued creating Sword World RPG for 8 years, and because there have been people who played it, that we were able to accumulate this much data. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12033))_
 - While the author of this book is listed as "Miyuki Kiyomatsu/Group SNE," this means that I handled the main work such as organization, editing, and final checks, while the various manuscripts were, of course, collaboratively written by Group SNE members, including Ryo Mizuno and Hiroshi Yamamoto. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12038))_
 - In addition, a notation such as 1D+6 means to roll one dice and add 6 to the result . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12444))_
-- For example, when you cast the ancient magic Light , whose area is A space with a 10 meter radius , by consuming double the mental power, the resulting area will be a spherical space with a radius of 10 x 1.3 = 13 meters . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13005))_
-- If you're a pro in that field, you'll most likely succeed, but if you only have the skill, there's a greater risk of failure. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13031))_
-- It's possible with a little luck if you're someone who's only dabbled. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13038))_
 
 ## Technical atoms
 
 ### Technical frame 1: [ Paper ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11749))_
-
-> Special = If you cast " Fire Weapon " magic, strike power will become +20, and even weapons that cannot cause criticals will now be able to cause criticals. Also, if exposed to fire, it'll ignite immediately, and its defense points will automatically decrease by 1 point every round. When its defense points reach 0, its destruction points begin to decrease, and on the next round when destruction points reach 1, the paper object will burn out.
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11743, source-range-0b9dec90-11744, source-range-0b9dec90-11745, source-range-0b9dec90-11746, source-range-0b9dec90-11747, source-range-0b9dec90-11748))_
 
@@ -468,9 +411,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 4: Destruction Points
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11757))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11759))_
 
-> damage than these minimum destruction points with a single blow , you will not be able to destroy a structure with 0 defense points.
+> Consider trying to destroy a wooden wall (!) that's 20 cm thick. The game master considers this to have maximum strength for a wooden wall, and sets its defense points and destruction points to their maximums of 7 and 15 , respectively (see details below).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11755))_
 
@@ -478,9 +421,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 5: Destruction Points
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11757))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11759))_
 
-> damage than these minimum destruction points with a single blow , you will not be able to destroy a structure with 0 defense points.
+> Consider trying to destroy a wooden wall (!) that's 20 cm thick. The game master considers this to have maximum strength for a wooden wall, and sets its defense points and destruction points to their maximums of 7 and 15 , respectively (see details below).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11756))_
 
@@ -538,10 +481,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 11: [ Wood ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11801))_
-
-> When you use fire magic or a weapon with Fire Weapon cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
-
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11794, source-range-0b9dec90-11795, source-range-0b9dec90-11796, source-range-0b9dec90-11797, source-range-0b9dec90-11798, source-range-0b9dec90-11799))_
 
 > Defense points = 1-7
@@ -557,10 +496,6 @@ From [[sword-world-rpg-complete-edition]].
 > Ignores Defense Points = Fire-type, electrictype, earthquake-type, explosion-type, pure energy-type magic
 
 ### Technical frame 12: [ Wood ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11801))_
-
-> When you use fire magic or a weapon with Fire Weapon cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11800))_
 
@@ -599,10 +534,6 @@ From [[sword-world-rpg-complete-edition]].
 > Ignores Defense Points = Earthquake-type, explosion-type, pure energy-type magic
 
 ### Technical frame 15: [ Iron ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11824))_
-
-> If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed.
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11817, source-range-0b9dec90-11818, source-range-0b9dec90-11819, source-range-0b9dec90-11820, source-range-0b9dec90-11821, source-range-0b9dec90-11822, source-range-0b9dec90-11823))_
 
@@ -658,29 +589,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 18: [ Spirit Wall: Dryad ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11849))_
-
-> Spirit Wall: Dryad has the power to regenerate even if it's destroyed. Each round, Spirit Wall: Dryad regenerates 1 defense point and 1 destruction point.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11850))_
 
 > [Figure] (p.279)
 
 ### Technical frame 19: [ Spirit Wall: Dryad ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11849))_
-
-> Spirit Wall: Dryad has the power to regenerate even if it's destroyed. Each round, Spirit Wall: Dryad regenerates 1 defense point and 1 destruction point.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11852))_
 
 > [Figure] (p.280)
 
 ### Technical frame 20: [ Spirit Wall: Dryad ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11849))_
-
-> Spirit Wall: Dryad has the power to regenerate even if it's destroyed. Each round, Spirit Wall: Dryad regenerates 1 defense point and 1 destruction point.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11854))_
 
@@ -738,9 +657,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 26: Geography
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11938))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11939))_
 
-> At the eastern end of the Alecrast continent lie three countries: Mudeel, Milargo, and Anoth.
+> Mudeel, known as the "Farthest Kingdom," has a population of about 1.2 million. Its capital city shares the same name, Mudeel. Along with agriculture and textile industry, this country actively engages in trade using distinctive galleys. These galleys, also known as armed merchant ships, boast strength that makes ordinary pirate ships pale in comparison. These armed merchant ships frequently visit and trade with countries along the southern coast of the Alecrast continent.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11937))_
 
@@ -954,19 +873,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 58: Currency
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13013))_
-
-> If you have the skill, it's almost a sure-fire task. Even amateurs can be successful.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13006))_
 
 > [Figure] (p.304)
 
 ### Technical frame 59: Currency
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13013))_
-
-> If you have the skill, it's almost a sure-fire task. Even amateurs can be successful.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13007))_
 
@@ -974,19 +885,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 60: Currency
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13022))_
-
-> If you have the skill, there is a high probability of success. For amateurs, the risk of failure is greater.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13019))_
 
 > If you have the skill, you can expect success. For amateurs, it's 50-50.
 
 ### Technical frame 61: Currency
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13022))_
-
-> If you have the skill, there is a high probability of success. For amateurs, the risk of failure is greater.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13019))_
 
@@ -994,19 +897,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 62: Currency
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13031))_
-
-> If you're a pro in that field, you'll most likely succeed, but if you only have the skill, there's a greater risk of failure.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13028))_
 
 > It's 50-50 if you have the skill. Success is not guaranteed to amateurs.
 
 ### Technical frame 63: Currency
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13038))_
-
-> It's possible with a little luck if you're someone who's only dabbled. Even pros can fail due to a little bad luck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13035))_
 
@@ -1014,19 +909,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 64: Currency
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13047))_
-
-> Even if you're a master, there is no guarantee that you'll succeed.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13044))_
 
 > If you're a master, you'll never fail, but if you're a pro, success is 50-50.
 
 ### Technical frame 65: Currency
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13047))_
-
-> Even if you're a master, there is no guarantee that you'll succeed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13044))_
 
@@ -1034,19 +921,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 66: Currency
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13062))_
-
-> Even if you're a master, the probability of failure is high.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13059))_
 
 > 50-50 for masters. Otherwise, it's best not to touch it at all.
 
 ### Technical frame 67: Currency
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13065))_
-
-> This is a task that will go down in history if successful.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13066))_
 
@@ -1054,19 +933,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 68: Currency
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13077))_
-
-> However, if alternative senses (smell, hearing, etc.) are developed to some extent
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13073))_
 
 > Table 10-1: Attack Power and Evasion Speed Modifiers
 
 ### Technical frame 69: Currency
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13077))_
-
-> However, if alternative senses (smell, hearing, etc.) are developed to some extent
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-13078))_
 

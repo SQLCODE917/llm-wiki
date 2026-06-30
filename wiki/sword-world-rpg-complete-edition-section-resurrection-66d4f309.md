@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-resurrection-66d4f309
 page_kind: source
-summary: [ Resurrection: 27 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Resurrection: 26 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

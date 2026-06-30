@@ -1,3 +1,4 @@
+from llmwiki.domain.ledger import section_pages
 from llmwiki.domain.ledger.common import ConfidenceBasis
 from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.ledger import (
@@ -92,6 +93,65 @@ def test_section_pages_roll_up_descendants_and_link_repeated_topic_contexts() ->
         f"[[{magic_id}]] - same source heading: another source section with the same "
         "heading, 1.4 Character Creation / Filling out the Character Sheet"
         in by_id[combat_id]
+    )
+
+
+def test_section_pages_build_table_identity_once(monkeypatch) -> None:
+    calls = 0
+
+    def fake_table_identity_names_by_atom_id(
+        ledger: ClaimLedger, structure: DocumentStructure
+    ) -> dict[str, frozenset[str]]:
+        nonlocal calls
+        calls += 1
+        return {}
+
+    monkeypatch.setattr(
+        section_pages,
+        "table_identity_names_by_atom_id",
+        fake_table_identity_names_by_atom_id,
+    )
+
+    pages = build_section_pages(
+        _ledger(
+            _entry("entry-combat", "combat-sheet", "Write combat totals on the sheet."),
+            _entry("entry-magic", "magic-sheet", "Write magic fields on the sheet."),
+        ),
+        _structure(),
+        source_page_id="source",
+        source_locator="source.pdf",
+        today="2026-06-27",
+    )
+
+    assert calls == 1
+    assert len(pages) == 3
+
+
+def _structure() -> DocumentStructure:
+    return DocumentStructure(
+        "root",
+        (
+            StructureNode("root", "root", "source.pdf", "root", "source.pdf", 0),
+            StructureNode("chapter", "chapter", "1.4 Character Creation", "r1", "source.pdf", 1),
+            StructureNode(
+                "combat-sheet",
+                "section",
+                "Filling out the Character Sheet",
+                "r2",
+                "source.pdf",
+                2,
+                parent_structure_node_id="chapter",
+            ),
+            StructureNode(
+                "magic-sheet",
+                "section",
+                "Filling out the Character Sheet",
+                "r3",
+                "source.pdf",
+                3,
+                parent_structure_node_id="chapter",
+            ),
+        ),
     )
 
 

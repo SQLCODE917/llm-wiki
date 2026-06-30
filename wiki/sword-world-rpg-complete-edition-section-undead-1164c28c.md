@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-undead-1164c28c@fa5d708d986ffa14ad9bb88f94f32d40
+projection_coverage: section-sword-world-rpg-complete-edition-section-undead-1164c28c@e9c40ef3e429169c1a2e3207ecb545a0
 ---
 
 # 《 Undead 》
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-13-1-1cd4c9c3]] - broader source section: 13.1
-- [[sword-world-rpg-complete-edition-undead]] - topic hub: opens the topic page for Undead
 
 ## Statements
 

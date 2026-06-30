@@ -6,43 +6,54 @@ import re
 
 from llmwiki.domain.planning_analysis import tokens
 
-_FURNITURE_REGEXES = tuple(
-    re.compile(pattern)
-    for pattern in (
-        r"©",
-        r"\(c\)",
-        r"\bcopyright\b",
-        r"\bisbn\b",
-        r"\btable of contents\b",
-        r"\bhttp(s)?://\b",
-        r"\bfor sale at\b",
-        r"\bleanpub\b",
-        r"\balso by\b",
-        r"\boriginal words in this book\b",
-        r"\bauthors? and publishers?\b",
-        r"\blean publishing\b",
-        r"\bcreativecommons\b",
-        r"\bsome rights reserved\b",
-        r"\ball rights reserved\b",
-        r"\bflickr\b",
-        r"\backnowledg(e)?ments?\b",
-        r"\babout the author\b",
-        r"\bdownload\b",
-        r"\bpublished by\b",
-        r"\beverything is explained\b",
-        r"\bpage \d+\b",
-    )
+_FURNITURE_PHRASES = (
+    "©",
+    "(c)",
+    "copyright",
+    "isbn",
+    "table of contents",
+    "http://",
+    "https://",
+    "for sale at",
+    "leanpub",
+    "also by",
+    "original words in this book",
+    "author and publisher",
+    "authors and publishers",
+    "lean publishing",
+    "creativecommons",
+    "some rights reserved",
+    "all rights reserved",
+    "flickr",
+    "acknowledgment",
+    "acknowledgement",
+    "acknowledgments",
+    "acknowledgements",
+    "about the author",
+    "download",
+    "published by",
+    "everything is explained",
 )
-_SHORT_BYLINE_REGEXES = (
-    re.compile(r"^(?:by|written by|edited by|translated by|illustrated by|authored by)\b"),
-    re.compile(r"\b(?:written|edited|translated|illustrated|authored|published)\s+by\b"),
+_SHORT_BYLINE_PREFIXES = (
+    "by ",
+    "written by ",
+    "edited by ",
+    "translated by ",
+    "illustrated by ",
+    "authored by ",
+)
+_SHORT_BYLINE_PHRASES = (
+    "written by",
+    "edited by",
+    "translated by",
+    "illustrated by",
+    "authored by",
+    "published by",
 )
 _RHETORICAL_REGEXES = tuple(
     re.compile(pattern)
     for pattern in (r"\bwhy\?\b", r"\bwhat if\b", r"\bhow would\b", r"\bwouldn'?t it\b")
 )
-_BOLD_SPAN_RE = re.compile(r"(?<![A-Za-z0-9_)])\*\*([^*\n]+?)\*\*(?![A-Za-z0-9_(])")
-_ITALIC_SPAN_RE = re.compile(r"(?<![A-Za-z0-9_])_([^_\n]+?)_(?![A-Za-z0-9_])")
 _DECLARATION_RE = re.compile(
     r"^\s*(?:const|let|var|class)\s+[A-Za-z_$][\w$]*(?:\s*[,=]|\s+extends\b)"
 )
@@ -87,23 +98,28 @@ _FIRST_PERSON_NARRATIVE_MARKERS = (
     "i couldn't",
     "i couldnt",
 )
+_MAX_CODE_FRAGMENT_INPUT_CHARS = 20_000
+_SPACE_STRIPPED_PUNCTUATION = frozenset(",;:)]")
 
 
 def is_source_furniture(lowered: str) -> bool:
+    lowered = lowered[:4_000]
     if ("to the left of" in lowered or "to the right of" in lowered) and "field" in lowered:
         return True
     if "field to write" in lowered or "field labeled" in lowered:
         return True
-    if _matches_any(_FURNITURE_REGEXES, lowered):
+    if _has_any_phrase(lowered, _FURNITURE_PHRASES) or _has_page_number(lowered):
         return True
-    statement_tokens = tokens(lowered)
+    statement_tokens = _ascii_words(lowered)
     if len(statement_tokens) <= 14 and _is_short_byline_furniture(lowered):
         return True
     return len(statement_tokens) <= 8 and not lowered.endswith((".", "?", "!"))
 
 
 def _is_short_byline_furniture(lowered: str) -> bool:
-    return _matches_any(_SHORT_BYLINE_REGEXES, lowered)
+    return lowered.startswith(_SHORT_BYLINE_PREFIXES) or _has_any_phrase(
+        lowered, _SHORT_BYLINE_PHRASES
+    )
 
 
 def is_code_fragment(statement: str) -> bool:
@@ -135,12 +151,68 @@ def is_code_fragment(statement: str) -> bool:
     return code_markers >= 2 and len(tokens(stripped)) <= 48
 
 
-def code_fragment_payload(statement: str) -> str:
-    text = _BOLD_SPAN_RE.sub(r"\1", statement)
-    text = _ITALIC_SPAN_RE.sub(r"\1", text)
+def code_fragment_payload(statement: object) -> str:
+    text = _bounded_text(statement)
+    text = _strip_balanced_marker_spans(text, "**")
+    text = _strip_balanced_marker_spans(text, "_")
     text = text.replace("\\ ", " ")
-    text = re.sub(r"\s+([,;:)\]])", r"\1", text)
-    return text
+    return _collapse_space_before_punctuation(text)
+
+
+def _bounded_text(value: object) -> str:
+    text = value if isinstance(value, str) else str(value)
+    return text[:_MAX_CODE_FRAGMENT_INPUT_CHARS]
+
+
+def _strip_balanced_marker_spans(text: str, marker: str) -> str:
+    if marker not in text:
+        return text
+    parts: list[str] = []
+    index = 0
+    marker_length = len(marker)
+    while index < len(text):
+        start = text.find(marker, index)
+        if start < 0:
+            parts.append(text[index:])
+            break
+        end = text.find(marker, start + marker_length)
+        if end < 0:
+            parts.append(text[index:])
+            break
+        inner = text[start + marker_length : end]
+        if _markdown_span_is_plain(text, marker, start, end, inner):
+            parts.append(text[index:start])
+            parts.append(inner)
+            index = end + marker_length
+        else:
+            parts.append(text[index : start + marker_length])
+            index = start + marker_length
+    return "".join(parts)
+
+
+def _markdown_span_is_plain(
+    text: str, marker: str, start: int, end: int, inner: str
+) -> bool:
+    if not inner or "\n" in inner or marker in inner:
+        return False
+    before = text[start - 1] if start > 0 else " "
+    after_index = end + len(marker)
+    after = text[after_index] if after_index < len(text) else " "
+    return not (_is_identifier_char(before) or _is_identifier_char(after))
+
+
+def _is_identifier_char(char: str) -> bool:
+    return char.isalnum() or char in "_$"
+
+
+def _collapse_space_before_punctuation(text: str) -> str:
+    chars: list[str] = []
+    for char in text:
+        if char in _SPACE_STRIPPED_PUNCTUATION:
+            while chars and chars[-1].isspace():
+                chars.pop()
+        chars.append(char)
+    return "".join(chars)
 
 
 def is_rhetorical_example(lowered: str) -> bool:
@@ -182,3 +254,38 @@ def _matches_any(patterns: tuple[re.Pattern[str], ...], text: str) -> bool:
         if pattern.search(text):
             return True
     return False
+
+
+def _has_any_phrase(text: str, phrases: tuple[str, ...]) -> bool:
+    return any(phrase in text for phrase in phrases)
+
+
+def _has_page_number(text: str) -> bool:
+    words = _ascii_words(text)
+    for index, word in enumerate(words[:-1]):
+        if word == "page" and _ascii_digits(words[index + 1]):
+            return True
+    return False
+
+
+def _ascii_words(text: str) -> tuple[str, ...]:
+    words: list[str] = []
+    current: list[str] = []
+    for char in text[:4_000]:
+        if len(char) != 1:
+            continue
+        codepoint = ord(char)
+        if 48 <= codepoint <= 57 or 97 <= codepoint <= 122:
+            current.append(char)
+        elif 65 <= codepoint <= 90:
+            current.append(chr(codepoint + 32))
+        elif current:
+            words.append("".join(current))
+            current = []
+    if current:
+        words.append("".join(current))
+    return tuple(words)
+
+
+def _ascii_digits(text: str) -> bool:
+    return bool(text) and all(48 <= ord(char) <= 57 for char in text)

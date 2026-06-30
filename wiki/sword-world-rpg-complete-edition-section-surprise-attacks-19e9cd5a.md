@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-surprise-attacks-19e9cd5a
 page_kind: source
-summary: Surprise Attacks: 13 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Surprise Attacks: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-surprise-attacks-19e9cd5a@7d5573e8b58a5a5bcc11f05381383ef9
+projection_coverage: section-sword-world-rpg-complete-edition-section-surprise-attacks-19e9cd5a@212ba670599fbaf5055a4082ff041914
 ---
 
 # Surprise Attacks
@@ -21,8 +21,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - When encountering a monster, one of you may notice the other without them noticing you, allowing you to perform a surprise attack . This should also be determined by the game master depending on the situation, but we've included Table 10-2: Surprise Attack Check as a reference. The game master must roll 2D and add it to the monster level (the highest one in the case of a group). Next, all adventurers make a success roll using ranger skill level + intelligence bonus as the baseline score. Subtract the monster's score from the highest final score. On the Surprise Attack Check table, if this score is lower than the one in the monster column, the monster has a chance for a surprise They must not change things based on the circumstances, such as attacking with fangs if the character used the spell Counter Magic to increase their resistance, or breathing fire if the character used the spell Quickness to raise their agility (evasion speed). This can lead to a loss of game fairness and may also spoil player motivation. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05663))_
-- However, if alternative senses (smell, hearing, etc.) are developed to some extent _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05685))_
-- attack, and if it's greater than the one in the adventurer column, the adventurers have a chance for a surprise attack. However, you should also take into consideration conditions such as the surrounding environment and whether the adventurers are proceeding quietly. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05696))_
 - On the Surprise Attack Check table, if this score is lower than the one in the monster column, the monster has a chance for a surprise They must not change things based on the circumstances, such as attacking with fangs if the character used the spell Counter Magic to increase their resistance, or breathing fire if the character used the spell Quickness to raise their agility (evasion speed). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05663))_
 
 ## Technical atoms
@@ -45,19 +43,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 3: Surprise Attacks
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05685))_
-
-> However, if alternative senses (smell, hearing, etc.) are developed to some extent
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05681))_
 
 > Table 10-1: Attack Power and Evasion Speed Modifiers
 
 ### Technical frame 4: Surprise Attacks
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05685))_
-
-> However, if alternative senses (smell, hearing, etc.) are developed to some extent
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05686))_
 

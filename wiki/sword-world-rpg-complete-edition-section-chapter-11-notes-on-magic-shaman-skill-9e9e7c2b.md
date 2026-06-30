@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-shaman-skill-9e9e7c2b@d76d169b4932034c80222b61c6e8c55d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-shaman-skill-9e9e7c2b@c0788208aecdb72fbd5a8c3267dd5b8f
 ---
 
 # Chapter 11: Notes on Magic / 《 Shaman Skill 》
@@ -17,6 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-97baced0]] - broader source section: Chapter 11: Notes on Magic
+- [[sword-world-rpg-complete-edition-shaman-skill]] - topic hub: opens the topic page for Shaman Skill
 
 ## Statements
 

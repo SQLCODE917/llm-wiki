@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-4e19b2f2
 page_kind: source
-summary: Chapter 11: Notes on Magic: 95 source-backed entries and 51 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 11: Notes on Magic: 94 source-backed entries and 50 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-4e19b2f2@b6c5881ee427300d4bb3bcf2a69f3a05
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-4e19b2f2@07cb7ef0f810a0b28c7879dce5f6e452
 ---
 
 # Chapter 11: Notes on Magic
@@ -222,23 +222,3 @@ From [[sword-world-rpg-complete-edition]].
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06065))_
 
 > When this spell is cast on a ship, it will never sink, no matter how much it rots, as long as it only carries as much weight as the original ship could support.
-
-### Technical atom 10
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00211))_
-
-| entry | content |
-| --- | --- |
-| 2 | Among the craftsman general skill, has any one of the following at level 5: carpentry, smithing, woodworking, stonemasonry, gem crafting (details are explained under 7.3: Craftsman Skill, see p. 126). |
-| 3 | Unable to learn ancient magic or spirit magic. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Races
-2. Among the craftsman general skill, has  any  one  of  the  following  at  level  5: carpentry, smithing, woodworking, stonemasonry, gem crafting (details are explained under 7.3: Craftsman Skill, see p. 126).
-3. Unable  to  learn  ancient  magic  or spirit magic.
-```
-
-</details>

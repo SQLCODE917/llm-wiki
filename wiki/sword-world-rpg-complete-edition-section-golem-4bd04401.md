@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-golem-4bd04401@893108389e746237a1a93674507d522b
+projection_coverage: section-sword-world-rpg-complete-edition-section-golem-4bd04401@cbf853d484ddf156d4fe53a2d43c81a6
 ---
 
 # [ Golem ]
@@ -27,12 +27,11 @@ From [[sword-world-rpg-complete-edition]].
 - Languages=None Perception=Pseudo An iron golem is a golem made of iron, and is the slowest of all golems. However, in terms of hardness of body and size of life force, they're also terrifying beings that rival lesser dragons and titans. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09200))_
 - Against an iron golem, weapons cannot deal additional critical damage. Also, damage spells such as cold-type , electric-type , stone-type , poison gas-type , and wind cutter-type are completely useless. Fire-type damage magic is effective, but a critical cannot occur. Earthquake-type , explosion-type , and pure energy-type damage magic is effective, and a critical can occur. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
 - Mithril Golems are extremely rare, and only one has been confirmed to exist to date. Since they're formed from mithril silver, which is hard but lightweight, they can make relatively agile movements, and they also have exceptionally hard bodies and large amounts of life force. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09223))_
-- Against a mithril golem, weapons cannot deal additional critical damage. Also, damage spells such as cold-type , electric-type , stone-type , poison gas-type , and wind cutter-type are completely useless. Fire-type damage magic is effective, but a critical cannot occur. Earthquake-type , explosion-type , and pure energy-type damage magic is effective, and a critical can occur. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09224))_
 - Golems are generally humanoid, but there are many exceptions to this, and some come in special shapes that resemble animals, magical beasts, or mythical beasts such as dragons, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09193))_
 - Usually animal products were used, but perhaps because it was the ancient kingdom period, examples made from the bodies of slaves are also frequently seen. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09197))_
 - Also, damage spells such as cold-type , electric-type , stone-type , poison gas-type , and wind cutter-type are completely useless. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
+- Also, damage spells such as cold-type , electric-type , stone-type , poison gas-type , and wind cutter-type are completely useless. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
 - Mithril Golems are extremely rare, and only one has been confirmed to exist to date. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09223))_
-- Also, damage spells such as cold-type , electric-type , stone-type , poison gas-type , and wind cutter-type are completely useless. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09224))_
 
 ## Technical atoms
 

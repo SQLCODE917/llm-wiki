@@ -8,28 +8,13 @@ from llmwiki.domain.ledger.atoms import TablePayload
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.structure import DocumentStructure, StructureNode
 
-_TABLE_CAPTION = re.compile(r"^\s*(?:table|tab\.)\s*(?:[-:.]|\d+\b)?\s*(.+)$", re.IGNORECASE)
-_TOC = re.compile(r"\btable\s+of\s+contents\b", re.IGNORECASE)
 _TABLE_VERB = r"shows|lists|gives|provides|contains|summarizes|describes"
-_NAME_CHARS = r"[A-Za-z0-9/&+() -]"
-_NAMED_TABLE_REFS = (
-    re.compile(
-        rf"\b(?:the|this|that)\s+({_NAME_CHARS}{{1,80}}?)\s+table\s+"
-        rf"(?:{_TABLE_VERB})\b",
-        re.IGNORECASE,
-    ),
-    re.compile(rf"\b([A-Z]{_NAME_CHARS}{{1,80}}?)\s+table\s+(?:{_TABLE_VERB})\b"),
-    re.compile(
-        rf"\b(?:see|consult|using|use)\s+(?:the\s+)?({_NAME_CHARS}{{1,80}}?)\s+table\b",
-        re.IGNORECASE,
-    ),
-    re.compile(
-        rf"\b(?:from|in|on)\s+the\s+({_NAME_CHARS}{{1,80}}?)\s+table\b",
-        re.IGNORECASE,
-    ),
-)
 _LEADING_WORDS = frozenset({"a", "an", "the", "this", "that", "these", "those", "following"})
 _TRAILING_WORDS = frozenset({"table"})
+_TABLE_REFERENCE_VERBS = frozenset(_TABLE_VERB.split("|"))
+_TABLE_REFERENCE_BOUNDARIES = frozenset(
+    {"see", "consult", "using", "use", "from", "in", "on", *_LEADING_WORDS}
+)
 _MAX_FORWARD_CUE_NODES = 256
 _MAX_FORWARD_CUE_TABLE_ATOMS = 64
 _MAX_TABLE_NAME_CHARS = 240
@@ -84,18 +69,22 @@ def raw_table_caption_lines(payload: TablePayload) -> tuple[str, ...]:
     return tuple(
         line
         for line in payload.raw_table_text.splitlines()[:3]
-        if _TABLE_CAPTION.match(line.strip())
+        if _table_caption_body(line.strip()) is not None
     )
 
 
 def named_table_references(text: object) -> tuple[str, ...]:
     text = _bounded_reference(text)
-    if _TOC.search(text):
+    if "table of contents" in text.lower():
         return ()
     refs: list[str] = []
-    for pattern in _NAMED_TABLE_REFS:
-        for match in pattern.finditer(text):
-            name = normalize_table_name(match.group(1))
+    words = _normalized_table_words(text)
+    for index, word in enumerate(words):
+        if word != "table":
+            continue
+        next_word = words[index + 1] if index + 1 < len(words) else ""
+        if next_word in _TABLE_REFERENCE_VERBS or index > 0:
+            name = _table_reference_name_before(words, index)
             if name:
                 refs.append(name)
     return tuple(dict.fromkeys(refs))
@@ -103,11 +92,9 @@ def named_table_references(text: object) -> tuple[str, ...]:
 
 def normalize_table_name(text: str) -> str:
     text = _bounded_name(text)
-    match = _TABLE_CAPTION.match(text.strip())
-    if match is not None:
-        text = match.group(1)
-    text = re.sub(r"[^a-z0-9]+", " ", text.lower())
-    words = [word for word in text.split() if word]
+    if caption_body := _table_caption_body(text):
+        text = caption_body
+    words = list(_normalized_table_words(text))
     while words and words[0] in _LEADING_WORDS:
         words.pop(0)
     while words and words[-1] in _TRAILING_WORDS:
@@ -118,8 +105,12 @@ def normalize_table_name(text: str) -> str:
 def has_matching_table_name(reference: str, table_names: tuple[str, ...]) -> bool:
     reference = _bounded_name(reference)
     reference_tokens = _match_tokens(reference)
+    reference_alpha = _alphabetic_tokens(reference)
     for name in table_names:
         name = _bounded_name(name)
+        name_alpha = _alphabetic_tokens(name)
+        if not reference_alpha or not name_alpha or not reference_alpha.intersection(name_alpha):
+            continue
         if reference == name or reference in name or name in reference:
             return True
         name_tokens = _match_tokens(name)
@@ -291,12 +282,82 @@ def _match_tokens(name: str) -> set[str]:
     }
 
 
+def _alphabetic_tokens(name: str) -> set[str]:
+    return {token for token in _match_tokens(name) if any(char.isalpha() for char in token)}
+
+
 def _bounded_name(name: object) -> str:
     return (name if isinstance(name, str) else str(name))[:_MAX_TABLE_NAME_CHARS]
 
 
 def _bounded_reference(text: object) -> str:
     return (text if isinstance(text, str) else str(text))[:_MAX_TABLE_REFERENCE_CHARS]
+
+
+def _table_caption_body(text: str) -> str | None:
+    stripped = _bounded_name(text).strip()
+    if _ascii_startswith(stripped, "tab."):
+        body = stripped[4:]
+    elif _ascii_startswith(stripped, "table"):
+        body = stripped[5:]
+    else:
+        return None
+    return body.lstrip(" \t-:.0123456789") or None
+
+
+def _normalized_table_words(text: str) -> tuple[str, ...]:
+    words: list[str] = []
+    current: list[str] = []
+    for char in _bounded_name(text):
+        normalized = _ascii_word_char(char)
+        if normalized:
+            current.append(normalized)
+        elif current:
+            words.append("".join(current))
+            current = []
+    if current:
+        words.append("".join(current))
+    return tuple(words)
+
+
+def _table_reference_name_before(words: tuple[str, ...], table_index: int) -> str:
+    start = max(0, table_index - 8)
+    for index in range(table_index - 1, start - 1, -1):
+        if words[index] in _TABLE_REFERENCE_BOUNDARIES:
+            start = index + 1
+            break
+    name = normalize_table_name(" ".join(words[start:table_index]))
+    return "" if name in _TABLE_REFERENCE_BOUNDARIES else name
+
+
+def _ascii_startswith(text: str, prefix: str) -> bool:
+    return _ascii_lower_prefix(text, len(prefix)) == prefix
+
+
+def _ascii_lower_prefix(text: str, length: int) -> str:
+    return "".join(_ascii_lower_char(char) for char in text[:length])
+
+
+def _ascii_word_char(char: str) -> str:
+    if len(char) != 1:
+        return ""
+    codepoint = ord(char)
+    if 48 <= codepoint <= 57 or 97 <= codepoint <= 122:
+        return char
+    if 65 <= codepoint <= 90:
+        return chr(codepoint + 32)
+    return ""
+
+
+def _ascii_lower_char(char: str) -> str:
+    if len(char) != 1:
+        return " "
+    codepoint = ord(char)
+    if 65 <= codepoint <= 90:
+        return chr(codepoint + 32)
+    if codepoint < 128:
+        return char
+    return " "
 
 
 def _singularize(word: str) -> str:

@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-cerberus-db82bdec
 page_kind: source
-summary: [ Cerberus ]: 23 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Cerberus ]: 22 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

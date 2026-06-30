@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-tunnel-gnome-earth-spirit-764bab0b
 page_kind: source
-summary: [ Tunnel ] (Gnome/Earth Spirit): 22 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Tunnel ] (Gnome/Earth Spirit): 21 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

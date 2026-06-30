@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-3-91231f10
 page_kind: source
-summary: Chapter 3:: 13 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 3:: 13 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-91231f10@81f6881dcc1ef66a737fee0b10c0ff7f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-91231f10@4f1a78a6756b93d258882a488a636622
 ---
 
 # Chapter 3:
@@ -45,39 +45,3 @@ From [[sword-world-rpg-complete-edition]].
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01314))_
 
 > For convenience, they are resolved in order, but even if you're attacked by an enemy of the same agility and fall down, you can still perform your intended actions.
-
-### Technical atom 2
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07749))_
-
-> In combat, a buckbaird uses five different types of rays. The game master should roll 1D to determine which ray the buckbaird fires (or if it attempts to ram). The ray can only affect one target. Those targeted by the ray will be unaffected if they succeed on a mental power resistance roll against target score 16, but will be seriously affected if they fail. This ray cannot affect the buckbaird itself, even if it's reflected using a mirror, etc.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07750))_
-
-| entry | content |
-| --- | --- |
-| 1 | Paralysis Ray You will be paralyzed for 6 rounds. |
-| 2 | Hypnosis Ray You will fall asleep. This is considered natural sleep. |
-| 3 | Freeze Ray You will freeze instantly and enter a state of suspended animation. Treat this the same way as the spirit magic Ice Coffin (see p. 94). |
-| 4 | Brainwashing Ray You will think the buckbaird is your ally and attack your allies. This effect lasts 18 rounds. Treat this the same way as magic that belongs to mind . |
-| 5 | Metal Destruction Ray Destroys metal weapons and armor you are wearing. Magical weapons and armor are not affected. This ray cannot be resisted. |
-| 6 | No firing |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-1. Paralysis Ray
-You will be paralyzed for 6 rounds.
-2. Hypnosis Ray
-You will fall asleep. This is considered natural sleep.
-3. Freeze Ray
-You will freeze instantly and enter a state of suspended animation. Treat this the same way as the spirit magic Ice Coffin (see p. 94).
-4. Brainwashing Ray
-You  will  think  the  buckbaird  is your ally and attack your allies. This effect lasts 18 rounds. Treat this the same  way  as  magic  that  belongs  to mind .
-5. Metal Destruction Ray
-Destroys metal weapons and armor you are wearing. Magical weapons and armor are not affected. This ray cannot be resisted.
-6. No firing
-```
-
-</details>

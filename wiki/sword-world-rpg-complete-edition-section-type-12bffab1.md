@@ -7,16 +7,12 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-type-12bffab1@71a2abb29b59b5353e75b21cd4dffd7a
+projection_coverage: section-sword-world-rpg-complete-edition-section-type-12bffab1@cac4e3a82150e76d4c4886b6c456460f
 ---
 
 # 《 Type 》
 
 From [[sword-world-rpg-complete-edition]].
-
-## Related pages
-
-- [[sword-world-rpg-complete-edition-type]] - topic hub: opens the topic page for Type
 
 ## Statements
 

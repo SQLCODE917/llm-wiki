@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-poison-proof-5fc37215
 page_kind: source
-summary: Chapter 11: Notes on Magic / Poison Proof ]: 10 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 11: Notes on Magic / Poison Proof ]: 8 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-poison-proof-5fc37215@cea3e08a4a4728d76abca3982895322e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-poison-proof-5fc37215@0f33a63b26ede8bd01998e9725b4d425
 ---
 
 # Chapter 11: Notes on Magic / Poison Proof ]
@@ -18,18 +18,9 @@ From [[sword-world-rpg-complete-edition]].
 
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-4a413d46]] - broader source section: Chapter 11: Notes on Magic
 
-## Statements
-
-- While the effect of this spell lasts, the caster can neutralize all poisons within their body, regardless of their type, amount, or toxicity score. However, the effect of poison received before the spell is cast will merely stop, and if the duration of the poison's effect is longer than the duration of the spell, it will begin to take effect again as soon as the spell's duration has elapsed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06163))_
-- While the effect of this spell lasts, the caster can neutralize all poisons within their body, regardless of their type, amount, or toxicity score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06163))_
-
 ## Technical atoms
 
 ### Technical frame 1: Chapter 11: Notes on Magic / Poison Proof ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06163))_
-
-> While the effect of this spell lasts, the caster can neutralize all poisons within their body, regardless of their type, amount, or toxicity score. However, the effect of poison received before the spell is cast will merely stop, and if the duration of the poison's effect is longer than the duration of the spell, it will begin to take effect again as soon as the spell's duration has elapsed.
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06155, source-range-0b9dec90-06156, source-range-0b9dec90-06157, source-range-0b9dec90-06158, source-range-0b9dec90-06159, source-range-0b9dec90-06161, source-range-0b9dec90-06162))_
 

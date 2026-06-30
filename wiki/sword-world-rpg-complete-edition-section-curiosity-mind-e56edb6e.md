@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-curiosity-mind-e56edb6e
 page_kind: source
-summary: Curiosity (Mind): 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Curiosity (Mind): 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

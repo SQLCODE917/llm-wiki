@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-lizardman-95bf209c
 page_kind: source
-summary: [ Lizardman ]: 49 source-backed entries and 34 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Lizardman ]: 48 source-backed entries and 34 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

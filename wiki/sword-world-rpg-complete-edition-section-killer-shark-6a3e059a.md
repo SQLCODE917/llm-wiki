@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-killer-shark-6a3e059a
 page_kind: source
-summary: [ Killer Shark ]: 16 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Killer Shark ]: 15 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

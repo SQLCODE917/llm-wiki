@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-3rd-level-spirit-magic-list-invisibility-sprite-mind-spirit-ea7bb168
 page_kind: source
-summary: 3rd Level Spirit Magic List [ Invisibility ] (Sprite/Mind Spirit): 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 3rd Level Spirit Magic List [ Invisibility ] (Sprite/Mind Spirit): 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

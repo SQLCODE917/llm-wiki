@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-13-3-37181414
 page_kind: source
-summary: 13.3: 97 source-backed entries and 78 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.3: 94 source-backed entries and 78 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-3-37181414@465807c050f4178f0e4ed8e95860b863
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-3-37181414@e5458d1e7c39965ef5a9b041df3e4f59
 ---
 
 # 13.3
@@ -19,16 +19,11 @@ From [[sword-world-rpg-complete-edition]].
 - [[sword-world-rpg-complete-edition-section-converting-character-data-to-monster-data-06537fc4]] - narrower source section: Converting Character Data to Monster Data
 - [[sword-world-rpg-complete-edition-section-redcap-0ebb307d]] - narrower source section: [ Redcap ]
 
-## Statements
-
-- A werebear is a lycanthrope with the power to shapeshift into a bear. Like a bear, it attacks with a bear hug (strangling). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09598))_
-
 ## Statements by subsection
 
 ### Converting Character Data to Monster Data
 
 - Using the rules presented here, a game master can convert data created as a character into the format of a monster . There are two advantages to doing this. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09620))_
-- [ 1. The number of times the game master has to roll dice during combat will be drastically reduced ] _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09621))_
 - The game master will be freed from the labor of rolling dice, and will be able to manage enemy data in combat more easily. It'll also give you more time to provide guidance to players who are unfamiliar with the rules. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09622))_
 - This is especially effective when there are many enemies. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09623))_
 - If an enemy's strike roll is a critical, resulting in heavy damage or even death, the player may feel frustrated that they've been killed by a roll of the dice . This is because it's a process that cannot be dealt with by the player. If you change the enemy character's data to that of a monster , the damage will be a fixed score called strike points , so this kind of frustration should be less frequent. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09625))_
@@ -50,19 +45,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 13.3
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09598))_
-
-> A werebear is a lycanthrope with the power to shapeshift into a bear. Like a bear, it attacks with a bear hug (strangling).
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09597))_
 
 > Perception=Five senses (Illumination)
 
 ### Technical frame 2: 13.3
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09598))_
-
-> A werebear is a lycanthrope with the power to shapeshift into a bear. Like a bear, it attacks with a bear hug (strangling).
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09600, source-range-0b9dec90-09601, source-range-0b9dec90-09602, source-range-0b9dec90-09603, source-range-0b9dec90-09604, source-range-0b9dec90-09605, source-range-0b9dec90-09606, source-range-0b9dec90-09607, source-range-0b9dec90-09609, source-range-0b9dec90-09610, source-range-0b9dec90-09611, source-range-0b9dec90-09612))_
 

@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-elf-d52481b7
 page_kind: source
-summary: 【 Elf 】: 14 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 【 Elf 】: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-elf-d52481b7@62e3cb050fc5dae50e7e27176bceedf1
+projection_coverage: section-sword-world-rpg-complete-edition-section-elf-d52481b7@94892cdb47ac009abdb6aba6d9ca2b8c
 ---
 
 # 【 Elf 】
@@ -28,27 +28,3 @@ From [[sword-world-rpg-complete-edition]].
 - They live a very closed-off life in the forest. They do not like outsiders, nor do they want to be ruled by others. As such, they may act aggressively toward intruders into the forest. They rarely leave the forests where they live, but occasionally the odd elf will show up in town. They do not believe in any gods. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00225))_
 - One of the reasons humans envy elves is their immortality , which is a characteristic of an elite (ancient) race called high elves . However, these high elves avoid contact with humans even more so than common elves. Elves who appear in the cities of humans are for the most part ordinary (newer species) elves, bound to a life span of about 1000 years rather than immortality. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00226))_
 - Elves are members of the fae tribe who live in the forests, and are the envy of humans because of their beautiful appearance and immortality (no life span). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00223))_
-
-## Technical atoms
-
-### Technical atom 1
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01409))_
-
-| entry | content |
-| --- | --- |
-| 4 | 1 Weapon and Armor Restrictions A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword... All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters may not use weapons or armor with a required strength greater than their own strength. |
-| 4 | 2 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Weapon and Armor Restrictions
-4.1 Weapon and Armor Restrictions
-A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword...
-All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters  may  not  use  weapons  or armor  with  a  required  strength  greater than their own strength.
-4.2
-```
-
-</details>

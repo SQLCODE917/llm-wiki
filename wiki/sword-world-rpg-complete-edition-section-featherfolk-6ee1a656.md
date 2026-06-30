@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-featherfolk-6ee1a656
 page_kind: source
-summary: [ Featherfolk ]: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Featherfolk ]: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

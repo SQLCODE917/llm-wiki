@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-goblin-2b12933f
 page_kind: source
-summary: [ Goblin ]: 37 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Goblin ]: 33 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-goblin-2b12933f@bd916d1533ba6407dd151cf029b029fe
+projection_coverage: section-sword-world-rpg-complete-edition-section-goblin-2b12933f@afa113acde126ee017f2770cf4c63767
 ---
 
 # [ Goblin ]
@@ -25,7 +25,6 @@ From [[sword-world-rpg-complete-edition]].
 - Among the goblin tribe, this refers to those who are skilled in the power of spirit magic. Their physical characteristics are not much different from ordinary goblins, but they are smart and moreover, have mastered silent spirit. This is not surprising, considering that goblins are originally from the fairy world. Some goblin shamans are also dark priests who can use dark magic. Goblins served the dark gods in mythical times. A goblin shaman has either a 3rd level shaman skill (magical intensity 12/magic power 5), a 1st level dark priest skill (magical intensity 10/magic power 3), or both. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07059))_
 - The goblin lord, as the name suggests, is the king of the goblins. However, not all tribes have this type of lord-species, if anything they're rare. They are a greater species of goblin, so to speak, who retain a limited amount of power from the time when goblins lived in the fairy world. Although they lack magical abilities, they have bodies that are about the same size or even larger than humans and hobgoblins. It is said that there are quite a few of this goblin lord species in the Youma Forest to the east of Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07064))_
 - They often use weapons (mostly small ones such as shortswords, daggers etc.) stolen from humans. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07041))_
-- Among the goblin tribe, this refers to those who are skilled in the power of spirit magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07059))_
 - They are a greater species of goblin, so to speak, who retain a limited amount of power from the time when goblins lived in the fairy world. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07064))_
 
 ## Technical atoms

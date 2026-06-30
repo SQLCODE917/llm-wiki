@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-8-2-23991946@5cfe4bdfd406732c70ea0ff40c1e697b
+projection_coverage: section-sword-world-rpg-complete-edition-section-8-2-23991946@02f98deaa465c0db3b268cf26c8110ea
 ---
 
 # 8.2
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-how-to-use-experience-points-increasing-skill-levels-59dd2265]] - narrower source section: How to Use Experience Points: Increasing Skill Levels
-- [[sword-world-rpg-complete-edition-section-8-2-1-sorcerer-skill-and-71f0a210]] - narrower source section: 8.2.1 Sorcerer Skill and
 - [[sword-world-rpg-complete-edition-section-sage-skill-8c2e6cd5]] - narrower source section: Sage Skill
 
 ## Statements by subsection

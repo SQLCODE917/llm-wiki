@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-hydra-7cea2cdc
 page_kind: source
-summary: [ Hydra ]: 20 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Hydra ]: 19 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

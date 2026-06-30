@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-androscorpio-d1fea7e7
 page_kind: source
-summary: [ Androscorpio ]: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Androscorpio ]: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

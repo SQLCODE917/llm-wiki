@@ -37,16 +37,21 @@ def _to_jsonable(obj: Any, seen: set[int]) -> Any:
             raise TypeError(f"Cannot canonicalize recursive dataclass {type(obj)!r}")
         seen.add(marker)
         try:
-            return {
-                name: _to_jsonable(getattr(obj, name), seen)
-                for name in _dataclass_field_names(type(obj))
-            }
+            dataclass_result: dict[str, Any] = {}
+            for name in _dataclass_field_names(type(obj)):
+                dataclass_result[name] = _to_jsonable(getattr(obj, name), seen)
+            return dataclass_result
         finally:
             seen.remove(marker)
     if isinstance(obj, dict):
-        return {str(key): _to_jsonable(value, seen) for key, value in obj.items()}
+        dict_result: dict[str, Any] = {}
+        for key, value in obj.items():
+            dict_result[str(key)] = _to_jsonable(value, seen)
+        return dict_result
     if isinstance(obj, (tuple, list, set, frozenset)):
-        items = [_to_jsonable(item, seen) for item in obj]
+        items: list[Any] = []
+        for item in obj:
+            items.append(_to_jsonable(item, seen))
         if isinstance(obj, (set, frozenset)):
             items.sort(key=_sort_key)
         return items

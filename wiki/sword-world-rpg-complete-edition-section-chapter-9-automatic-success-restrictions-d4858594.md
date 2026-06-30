@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-9-automatic-success-restrictions-d4858594
 page_kind: source
-summary: Chapter 9: / Automatic Success Restrictions: 25 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 9: / Automatic Success Restrictions: 24 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

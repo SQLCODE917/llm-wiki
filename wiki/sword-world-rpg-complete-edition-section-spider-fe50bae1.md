@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-spider-fe50bae1
 page_kind: source
-summary: [ Spider ]: 50 source-backed entries and 23 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Spider ]: 48 source-backed entries and 23 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

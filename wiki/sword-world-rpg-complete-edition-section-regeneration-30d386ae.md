@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-regeneration-30d386ae
 page_kind: source
-summary: [ Regeneration ]: 12 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Regeneration ]: 11 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-regeneration-30d386ae@8d90defcb145b933c79ebb1139cf928f
+projection_coverage: section-sword-world-rpg-complete-edition-section-regeneration-30d386ae@72c785cc443993f3fe63e8acdc203317
 ---
 
 # [ Regeneration ]
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - This is a spell that regenerates missing or non-functioning body tissues and restores their function. This spell is also effective in restoring vision and hearing. One week is required for regeneration and functional recovery. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04524))_
-- This spell does not help restore life force (points) from wounds, nor can it be cast on a corpse to bring it back to life. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04543))_
 
 ## Technical atoms
 

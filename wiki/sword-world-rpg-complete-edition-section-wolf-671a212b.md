@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-wolf-671a212b
 page_kind: source
-summary: [ Wolf ]: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Wolf ]: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

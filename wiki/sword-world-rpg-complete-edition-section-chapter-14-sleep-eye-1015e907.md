@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-14-sleep-eye-1015e907
 page_kind: source
-summary: Chapter 14: / [ Sleep Eye ]: 10 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 14: / [ Sleep Eye ]: 9 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

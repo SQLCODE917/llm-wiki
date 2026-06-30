@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-mummy-ab9ab2a0
 page_kind: source
-summary: [ Mummy ]: 58 source-backed entries and 37 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Mummy ]: 57 source-backed entries and 37 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mummy-ab9ab2a0@da63fb92c0cd4dc9f3ecf9f5813b92c2
+projection_coverage: section-sword-world-rpg-complete-edition-section-mummy-ab9ab2a0@b3960d26fe27e126bd3669e1e684e77f
 ---
 
 # [ Mummy ]
@@ -16,7 +16,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Mental attack immunity Not affected by poison and illness Damage from healing magic Weak to fire _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08837))_
 - A mummy is a monster transformed by a magical ritual in ancient , and is buried together in a tomb as the keeper of its master's coffin. When a miscreant such as a graverobber appears, the mummy is given the mission to awaken and attack the intruder. If a mummy's attack hits, in addition to physical damage, a curse will befall you. The character must make a mental power resistance roll against target score 13. If they fail, they will no longer be able to recover any reductions in ability scores, including life force and mental power. Let's say an adventurer under this curse is bound with a rope and the game master says, Well, you have 0 agility and are disabled . At this time, even if the adventurer's rope is broken, his agility will not recover from 0 and he will still be unable to take any action! To break this curse, the holy magic Remove Curse is required. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08841))_
 - Also, mental magic doesn't work on a mummy. Since a mummy is dry, it's weak to fire, so fire attacks receive a +10 bonus to strike power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08842))_
 - A Master Mummy is an ancient member of a royal family or noble who followed a ritual in ancient and sleeps in a tomb as an undead. When a graverobber, etc. places their hands on its coffin, the master mummy rises and begins to act. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08867))_

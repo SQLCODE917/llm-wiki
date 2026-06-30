@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-aetherbeast-ab684931
 page_kind: source
-summary: [ Aetherbeast ]: 21 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Aetherbeast ]: 20 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-aetherbeast-ab684931@d04690d4f015b2b205bdf9c3610d948b
+projection_coverage: section-sword-world-rpg-complete-edition-section-aetherbeast-ab684931@1cefa5d0022014e26e4e6a5fb3ecc62f
 ---
 
 # [ Aetherbeast ]
@@ -20,7 +20,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- These are beasts of the daemon world, said to be creatures created by daemons. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09247))_
 - They often work as servants of daemons. They're rarely encountered in the material world, and details of them are not well understood. The few eyewitness accounts are mixed, and its shape is not clear, but it's agreed that it looks like a combination of several animals from the material world. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09248))_
 - Although this data is general, there are many different types of aetherbeasts. If the game master wishes, they may create special aetherbeasts. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09249))_
 

@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-3-4-4-519dd7f4
 page_kind: source
-summary: 3.4.4: 97 source-backed entries and 20 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 3.4.4: 96 source-backed entries and 19 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-519dd7f4@d15e638fc324a851ee1eee690377d86b
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-519dd7f4@869b3c4fd540970e0254973dd52333ee
 ---
 
 # 3.4.4
@@ -97,7 +97,6 @@ From [[sword-world-rpg-complete-edition]].
 
 - This is the number needed to determine how much damage a character's attack will deal if it hits. The greater this score, the more damage a character will deal. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01443))_
 - Strike power is the same number as the required strength of the weapon used. However, if the weapon is a two-handed weapon, it's instead required strength + 5 . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01444))_
-- If a character does not have a weapon (they're barehanded ), Strike Power is 0 . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01446))_
 
 ### 【 Bonus Damage 】
 
@@ -232,9 +231,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 10: 【 Strike Power 】
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01446))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01444))_
 
-> If a character does not have a weapon (they're barehanded ), Strike Power is 0 .
+> Strike power is the same number as the required strength of the weapon used. However, if the weapon is a two-handed weapon, it's instead required strength + 5 .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01445))_
 
@@ -325,25 +324,3 @@ From [[sword-world-rpg-complete-edition]].
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01481))_
 
 > [Figure] (p.43)
-
-### Technical atom 20
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01409))_
-
-| entry | content |
-| --- | --- |
-| 4 | 1 Weapon and Armor Restrictions A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword... All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters may not use weapons or armor with a required strength greater than their own strength. |
-| 4 | 2 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Weapon and Armor Restrictions
-4.1 Weapon and Armor Restrictions
-A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword...
-All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters  may  not  use  weapons  or armor  with  a  required  strength  greater than their own strength.
-4.2
-```
-
-</details>

@@ -25,10 +25,11 @@ from llmwiki.domain.ledger.topic_candidates import (
     repeated_section_candidates,
     section_component_candidates,
 )
-from llmwiki.domain.ledger.topic_evidence import (
-    entry_strongly_supports_topic,
-    entry_supports_topic,
-    topic_entry_rank,
+from llmwiki.domain.ledger.topic_entry_index import (
+    TopicEntryIndex,
+    topic_entry_index,
+    topic_entry_index_supports_topic,
+    topic_field_index_matches,
 )
 from llmwiki.domain.ledger.topic_models import SourceTopic
 from llmwiki.domain.ledger.topic_terms import (
@@ -47,6 +48,7 @@ _HEADING_BONUS = 3.0
 _CONCEPT_BONUS = 2.0
 _REPEATED_SECTION_BONUS = 12.0
 _MAX_STATEMENT_WORDS = 45
+_MAX_ENTRIES_FOR_SUBJECT_TERM_CANDIDATES = 2_000
 
 
 def plan_source_topics(
@@ -66,8 +68,13 @@ def plan_source_topics(
         repeated_section_candidates(section_plan)
         + section_component_candidates(section_plan)
         + _concept_candidates(entries)
-        + _term_candidates(entries)
+        + (
+            _term_candidates(entries)
+            if len(entries) <= _MAX_ENTRIES_FOR_SUBJECT_TERM_CANDIDATES
+            else []
+        )
     )
+    indexed_entries = tuple(topic_entry_index(entry) for entry in entries)
     protected_topic_keys = {
         candidate.topic_key
         for candidate in candidates
@@ -77,7 +84,7 @@ def plan_source_topics(
     for candidate in candidates:
         if candidate.topic_key in topics:
             continue
-        topic = _aggregate(candidate, entries, ledger, structure)
+        topic = _aggregate(candidate, indexed_entries, ledger, structure)
         if topic is None:
             continue
         minimum = 1 if candidate.from_heading or candidate.evidence_entry_ids else min_matches
@@ -141,22 +148,25 @@ def _term_candidates(entries: list[LedgerEntry]) -> list[TopicCandidate]:
 
 def _aggregate(
     candidate: TopicCandidate,
-    entries: list[LedgerEntry],
+    indexed_entries: tuple[TopicEntryIndex, ...],
     ledger: ClaimLedger,
     structure: DocumentStructure,
 ) -> SourceTopic | None:
     matcher = topic_matcher(candidate.terms)
     if matcher is None:
         return None
+    prepared_required_terms = required_topic_terms(candidate.terms)
     if candidate.evidence_kind in ("section", "section-repeat"):
         evidence_ids = set(candidate.evidence_entry_ids)
         matched = [
-            entry
-            for entry in entries
-            if entry.ledger_entry_id in evidence_ids
+            index.entry
+            for index in indexed_entries
+            if index.entry.ledger_entry_id in evidence_ids
             or (
                 candidate.evidence_kind == "section-repeat"
-                and entry_supports_topic(entry, matcher, candidate.terms)
+                and topic_entry_index_supports_topic(
+                    index, matcher, candidate.terms, prepared_required_terms
+                )
             )
         ]
         atom_ids = tuple(
@@ -164,7 +174,14 @@ def _aggregate(
                 (
                     *candidate.evidence_atom_ids,
                     *(
-                        _atom_ids_near_entries(ledger, structure, matched, matcher, candidate.terms)
+                        _atom_ids_near_entries(
+                            ledger,
+                            structure,
+                            matched,
+                            matcher,
+                            candidate.terms,
+                            prepared_required_terms,
+                        )
                         if candidate.evidence_kind == "section-repeat"
                         else ()
                     ),
@@ -174,32 +191,49 @@ def _aggregate(
     elif candidate.evidence_kind == "section-component":
         evidence_ids = set(candidate.evidence_entry_ids)
         matched = [
-            entry
-            for entry in entries
-            if entry.ledger_entry_id in evidence_ids
-            and entry_supports_topic(entry, matcher, candidate.terms)
+            index.entry
+            for index in indexed_entries
+            if index.entry.ledger_entry_id in evidence_ids
+            and topic_entry_index_supports_topic(
+                index, matcher, candidate.terms, prepared_required_terms
+            )
         ]
         atom_ids = tuple(
             atom_id
             for atom_id in candidate.evidence_atom_ids
-            if _atom_has_matching_context(ledger, atom_id, matcher, candidate.terms)
+            if _atom_has_matching_context(
+                ledger, atom_id, matcher, candidate.terms, prepared_required_terms
+            )
         )
     elif candidate.evidence_kind == "concept":
-        matched = _entries_for_concept(candidate, entries, matcher)
-        atom_ids = _atom_ids_near_entries(ledger, structure, matched, matcher, candidate.terms)
+        matched = _entries_for_concept(candidate, indexed_entries)
+        atom_ids = _atom_ids_near_entries(
+            ledger, structure, matched, matcher, candidate.terms, prepared_required_terms
+        )
     else:
-        matched = _entries_for_subject_term(entries, matcher)
-        atom_ids = _atom_ids_near_entries(ledger, structure, matched, matcher, candidate.terms)
+        matched = _entries_for_subject_term(
+            indexed_entries, matcher, candidate.terms, prepared_required_terms
+        )
+        atom_ids = _atom_ids_near_entries(
+            ledger, structure, matched, matcher, candidate.terms, prepared_required_terms
+        )
     if candidate.evidence_kind not in ("section", "section-repeat", "section-component"):
         atom_ids = tuple(
-            dict.fromkeys((*atom_ids, *atom_ids_matching_table_payload(ledger, matcher, structure)))
+            dict.fromkeys(
+                (
+                    *atom_ids,
+                    *atom_ids_matching_table_payload(
+                        ledger, matcher, candidate.terms, prepared_required_terms, structure
+                    ),
+                )
+            )
         )
     matched = [
         entry
         for entry in matched
         if len((entry.normalized_text or entry.source_text).split()) <= _MAX_STATEMENT_WORDS
     ]
-    matched.sort(key=lambda entry: topic_entry_rank(entry, matcher, ledger, candidate.terms))
+    matched.sort(key=lambda entry: (_source_order(ledger, entry), entry.ledger_entry_id))
     entry_ids = tuple(entry.ledger_entry_id for entry in matched)
     salience = (
         len(entry_ids)
@@ -221,31 +255,26 @@ def _aggregate(
 
 
 def _entries_for_concept(
-    candidate: TopicCandidate, entries: list[LedgerEntry], matcher: re.Pattern[str]
+    candidate: TopicCandidate,
+    indexed_entries: tuple[TopicEntryIndex, ...],
 ) -> list[LedgerEntry]:
     evidence_ids = set(candidate.evidence_entry_ids)
-    evidence_nodes = {
-        node_id
-        for entry in entries
-        if entry.ledger_entry_id in evidence_ids
-        for node_id in entry.structure_node_ids[:1]
-    }
-    matched: list[LedgerEntry] = []
-    for entry in entries:
-        if entry.ledger_entry_id in evidence_ids:
-            matched.append(entry)
-            continue
-        if not evidence_nodes.intersection(entry.structure_node_ids):
-            continue
-        if entry_strongly_supports_topic(entry, matcher, candidate.terms):
-            matched.append(entry)
-    return matched
+    return [index.entry for index in indexed_entries if index.entry.ledger_entry_id in evidence_ids]
 
 
 def _entries_for_subject_term(
-    entries: list[LedgerEntry], matcher: re.Pattern[str]
+    indexed_entries: tuple[TopicEntryIndex, ...],
+    matcher: re.Pattern[str],
+    terms: tuple[str, ...],
+    required_terms: tuple[str, ...],
 ) -> list[LedgerEntry]:
-    return [entry for entry in entries if matcher.search(entry.subject)]
+    return [
+        index.entry
+        for index in indexed_entries
+        if topic_field_index_matches(
+            index.subject_tokens, index.entry.subject, matcher, terms, required_terms
+        )
+    ]
 
 
 def _atom_ids_near_entries(
@@ -254,6 +283,7 @@ def _atom_ids_near_entries(
     entries: list[LedgerEntry],
     matcher: re.Pattern[str],
     terms: tuple[str, ...],
+    required_terms: tuple[str, ...],
 ) -> tuple[str, ...]:
     nodes = {node_id for entry in entries for node_id in entry.structure_node_ids[:1]}
     ids: list[str] = []
@@ -262,9 +292,13 @@ def _atom_ids_near_entries(
             continue
         if nodes and not nodes.intersection(entry.structure_node_ids):
             continue
-        if not _atom_entry_belongs_to_topic(ledger, structure, entry, matcher, terms):
+        if not _atom_entry_belongs_to_topic(
+            ledger, structure, entry, matcher, terms, required_terms
+        ):
             continue
-        if _atom_has_matching_context(ledger, entry.technical_atom_id, matcher, terms):
+        if _atom_has_matching_context(
+            ledger, entry.technical_atom_id, matcher, terms, required_terms
+        ):
             ids.append(entry.technical_atom_id)
     return tuple(dict.fromkeys(ids))
 
@@ -275,14 +309,19 @@ def _atom_entry_belongs_to_topic(
     entry: LedgerEntry,
     matcher: re.Pattern[str],
     terms: tuple[str, ...],
+    required_terms: tuple[str, ...],
 ) -> bool:
-    if len(required_topic_terms(terms)) <= 1:
+    if len(required_terms) <= 1:
         return True
     node = structure.node(entry.structure_node_ids[0]) if entry.structure_node_ids else None
-    if node is not None and topic_field_matches(section_title(structure, node), matcher, terms):
+    if node is not None and topic_field_matches(
+        section_title(structure, node), matcher, terms, required_terms
+    ):
         return True
     atom = ledger.atom(entry.technical_atom_id)
-    return atom is not None and topic_field_matches(atom_raw_text(atom.payload), matcher, terms)
+    return atom is not None and topic_field_matches(
+        atom_raw_text(atom.payload), matcher, terms, required_terms
+    )
 
 
 def _atom_has_matching_context(
@@ -290,10 +329,18 @@ def _atom_has_matching_context(
     atom_id: str,
     matcher: re.Pattern[str],
     terms: tuple[str, ...],
+    required_terms: tuple[str, ...],
 ) -> bool:
     atom = ledger.atom(atom_id)
     return (
         atom is not None
         and atom_is_topic_projectable(atom, ledger.source_profile)
-        and atom_context_matches(ledger.atom_contexts(atom_id), matcher, terms)
+        and atom_context_matches(ledger.atom_contexts(atom_id), matcher, terms, required_terms)
     )
+
+
+def _source_order(ledger: ClaimLedger, entry: LedgerEntry) -> int:
+    for index, statement in enumerate(ledger.source_statements):
+        if statement.source_range_id == entry.source_range_id:
+            return index
+    return len(ledger.source_statements)

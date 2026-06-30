@@ -1,18 +1,22 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-shade-c73983c5
 page_kind: source
-summary: [ Shade ]: 23 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Shade ]: 22 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-shade-c73983c5@0a5863084c4c0590dece6b1627478a00
+projection_coverage: section-sword-world-rpg-complete-edition-section-shade-c73983c5@a295c82fb433ae7b459ec31ee767e1e8
 ---
 
 # [ Shade ]
 
 From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-shade]] - topic hub: opens the topic page for Shade
 
 ## Statements
 

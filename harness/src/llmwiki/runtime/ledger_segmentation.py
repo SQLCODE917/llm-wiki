@@ -20,6 +20,7 @@ from llmwiki.domain.ledger.segments import SegmentClaim, SourceSegment
 from llmwiki.domain.objects import Schema
 from llmwiki.domain.planning import derive_segment_claims
 from llmwiki.domain.prose_flow import merge_prose_blocks
+from llmwiki.domain.source_summary import SourceClaim
 
 _HEADING = re.compile(r"^\s{0,3}#{1,6}\s")
 _FENCE = re.compile(r"^\s*(```|~~~)")
@@ -76,6 +77,58 @@ def segment_chunks(
                 text=analysis_text,
                 evidence_ids=(evidence_id,),
             )
+    return tuple(inputs), profiles
+
+
+def segment_page_plan_claim_chunks(
+    chunks: tuple[ChunkText, ...],
+    source_claims: tuple[SourceClaim, ...],
+    *,
+    source_locator: str,
+    source_hash: str,
+) -> tuple[tuple[SegmentInput, ...], dict[str, ExtractedUnitProfile]]:
+    claims_by_unit: dict[str, list[SourceClaim]] = {}
+    for claim in source_claims:
+        claims_by_unit.setdefault(claim.extracted_unit_id, []).append(claim)
+    inputs: list[SegmentInput] = []
+    profiles: dict[str, ExtractedUnitProfile] = {}
+    for order, chunk in enumerate(chunks, start=1):
+        range_id = f"source-range-{source_hash[:8]}-{order:05d}"
+        analysis_text = _analysis_text(chunk.text)
+        evidence_id = EvidenceIdentity.from_excerpt(
+            source_locator, source_hash, chunk.page_locator, analysis_text
+        ).evidence_id
+        segment = SourceSegment(
+            segment_id=f"segment-{order:05d}",
+            source_range_id=range_id,
+            source_locator=source_locator,
+            source_hash=source_hash,
+            heading_path=chunk.heading_path,
+            structure_node_id="",
+            source_order=order,
+            text=chunk.text,
+            segment_kind="paragraph",
+            evidence_ids=(evidence_id,),
+        )
+        segment_claims: list[SegmentClaim] = []
+        for claim in claims_by_unit.get(chunk.unit_id, ()):
+            segment_claims.append(
+                SegmentClaim(
+                    claim_id=claim.source_claim_id,
+                    statement=claim.statement,
+                    role_tags=claim.claim_role_tags,
+                    eligibility=claim.claim_eligibility,
+                    certainty=claim.claim_certainty,
+                    evidence_ids=(evidence_id,),
+                )
+            )
+        inputs.append(SegmentInput(segment=segment, claims=tuple(segment_claims)))
+        profiles[segment.segment_id] = profile_unit(
+            extracted_unit_id=segment.segment_id,
+            source_range_id=range_id,
+            text=analysis_text,
+            evidence_ids=(evidence_id,),
+        )
     return tuple(inputs), profiles
 
 
@@ -143,11 +196,25 @@ def _consume_paragraph(lines: list[str], start: int, blocks: list[tuple[str, str
     if kind in _PROSE_KINDS:
         # Tabs are layout whitespace in this extractor; collapse them so prose
         # reads as sentences. Tables/code keep their raw text for fidelity.
-        block = "\n".join(re.sub(r"[ \t]+", " ", line).strip() for line in collected)
+        block = "\n".join(_collapse_layout_spaces(line).strip() for line in collected)
     else:
         block = "\n".join(collected)
     blocks.append((kind, block))
     return index
+
+
+def _collapse_layout_spaces(line: str) -> str:
+    chars: list[str] = []
+    previous_layout_space = False
+    for char in line:
+        if char in {" ", "\t"}:
+            if not previous_layout_space:
+                chars.append(" ")
+            previous_layout_space = True
+            continue
+        chars.append(char)
+        previous_layout_space = False
+    return "".join(chars)
 
 
 def _classify(lines: list[str]) -> str:

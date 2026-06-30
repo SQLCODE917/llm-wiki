@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-shaman-dc17ae99@22dfa77cb87be00d94247791140c721e
+projection_coverage: section-sword-world-rpg-complete-edition-section-shaman-dc17ae99@6160b37ee6546604929c7d52d6563784
 ---
 
 # [ Shaman ]
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-1-4-1e239ef6]] - broader source section: 1.4
-- [[sword-world-rpg-complete-edition-shaman]] - topic hub: opens the topic page for Shaman
 - [[sword-world-rpg-complete-edition-section-shaman-93a47168]] - same source heading: another source section with the same heading, 【 Shaman 】
 
 ## Statements

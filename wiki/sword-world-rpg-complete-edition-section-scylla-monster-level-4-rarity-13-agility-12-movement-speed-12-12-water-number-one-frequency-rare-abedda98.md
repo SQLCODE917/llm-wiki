@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-scylla-monster-level-4-rarity-13-agility-12-movement-speed-12-12-water-number-one-frequency-rare-abedda98
 page_kind: source
-summary: [ Scylla ] Monster Level=4 Rarity=13 Agility=12 Movement Speed=12/12 (water) Number=One Frequency=Rare Intellect=Human Reaction=Adversarial: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Scylla ] Monster Level=4 Rarity=13 Agility=12 Movement Speed=12/12 (water) Number=One Frequency=Rare Intellect=Human Reaction=Adversarial: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

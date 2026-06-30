@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-14-e871a62e
 page_kind: source
-summary: Chapter 14:: 812 source-backed entries and 445 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 14:: 804 source-backed entries and 445 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-e871a62e@7a56f8ee58fd6dcfa689d2f4ed529c02
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-e871a62e@494029e6cd80ca09309135ec673c5392
 ---
 
 # Chapter 14:
@@ -239,10 +239,6 @@ From [[sword-world-rpg-complete-edition]].
 - Rarity=15 Enchanter=Dean "The Contrarian" Form=An old, slightly dirty sling Required Strength=4 (Strike power 4) Base Trade Price=80,000 gamels Powers=-1 to hit checks and damage under normal use, fires an Energy Bolt with a password _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10262))_
 - This looks like a worn-out sling with strings coming loose all over. Moreover, when used normally, both hit checks and damage will suffer a -1 modifier. However, when used without a bullet and with a low ancient password, it can fire a strike power 10, magic power 8 Energy Bolt . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10263))_
 
-### Chapter 14: / 《 Blade of Bravery 》
-
-- (Supplement) The blade of bravery is a famous sword passed down from generation to generation as proof of the head of the Sokran family, an Orphan nobility that's existed since the days of Phan. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10277))_
-
 ### Chapter 14: / 《 Flame Smasher 》
 
 - Since this is always spouting flames (unless it's in its sheath), it has +10 to strike power, just like Fire Weapon . Therefore, its strike power is 25 (30 with two hands). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10284))_
@@ -257,18 +253,12 @@ From [[sword-world-rpg-complete-edition]].
 - This sword has knowledge about enemies and speaks to the user's mind, telling him or her the enemy's name and strength in concrete scores. The contents of this knowledge are limited to only what concerns the enemy. Also, the sword's language is low ancient, so a character who cannot speak low ancient cannot obtain this knowledge. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10296))_
 - The contents of this knowledge are limited to only what concerns the enemy. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10296))_
 
-### Chapter 14: / 《 Mind Eater 》
-
-- Anyone whose life force has been dealt damage by this sword will suffer 2 points of damage to their mental points unless they succeed on a mental power resistance roll against target score 11. This damage cannot be reduced by adventurer level, similar to that of Mental Attack . Also, even if the sword does hit, this effect does not apply if damage is not dealt to life force. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10305))_
-- Anyone whose life force has been dealt damage by this sword will suffer 2 points of damage to their mental points unless they succeed on a mental power resistance roll against target score 11. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10305))_
-
 ### Chapter 14: / 《 Misty Sword 》
 
 - This magical shamshir always has dew trickling down the blade, to wash away blood and grease. Moreover, when the user gives a command with a password, it can produce 1 liter of fresh water in 1 minute. This ability can be used up to 10 times per day. The water produced by this sword also allows you to use spirit magic sourced from the power of undine. This sword may have been made for travelers crossing the desert. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10311))_
 
 ### Chapter 14: / 《 Red Eye 》
 
-- Rarity=13 Enchanter=Unknown Form=Dagger with a ruby set in a silver handle Required Strength=3 (Strike power 3) Base Trade Price=5000 gamels Powers=+1 to attack power and bonus _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10313))_
 - This dagger is of high value as a work of art. If you take out the ruby, the price will be 3400 gamels. The ruby itself costs about 1000 gamels. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10315))_
 
 ### Chapter 14: / 《 Magic Armor (+1) 》
@@ -838,10 +828,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 19: Chapter 14: / 《 Blade of Bravery 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10277))_
-
-> (Supplement) The blade of bravery is a famous sword passed down from generation to generation as proof of the head of the Sokran family, an Orphan nobility that's existed since the days of Phan.
-
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10271, source-range-0b9dec90-10272, source-range-0b9dec90-10273, source-range-0b9dec90-10274, source-range-0b9dec90-10275, source-range-0b9dec90-10276))_
 
 > Rarity=12
@@ -909,10 +895,6 @@ From [[sword-world-rpg-complete-edition]].
 > Powers=+1 to attack power and bonus damage. -1 to critical target. The sword itself is intelligent
 
 ### Technical frame 24: Chapter 14: / 《 Mind Eater 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10305))_
-
-> Anyone whose life force has been dealt damage by this sword will suffer 2 points of damage to their mental points unless they succeed on a mental power resistance roll against target score 11. This damage cannot be reduced by adventurer level, similar to that of Mental Attack . Also, even if the sword does hit, this effect does not apply if damage is not dealt to life force.
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10298, source-range-0b9dec90-10299, source-range-0b9dec90-10301, source-range-0b9dec90-10302, source-range-0b9dec90-10303, source-range-0b9dec90-10304))_
 

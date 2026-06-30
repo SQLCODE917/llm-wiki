@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-12-various-checks-ba47b7d8
 page_kind: source
-summary: Chapter 12: Various Checks: 105 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 12: Various Checks: 105 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-ba47b7d8@f2261bbbe751f1a33309a6833f5475c1
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-ba47b7d8@b77bb903eea7ef7747aff3a6e75fbe6b
 ---
 
 # Chapter 12: Various Checks
@@ -18,11 +18,9 @@ From [[sword-world-rpg-complete-edition]].
 
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-19369d81]] - broader source section: Chapter 12: Various Checks
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-rules-regarding-language-0307c8b7]] - narrower source section: Chapter 12: Various Checks / Rules Regarding Language
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-1-normal-languages-4a627d7a]] - narrower source section: Chapter 12: Various Checks / 12.1.1 Normal Languages
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-and-runes-e9d35e0c]] - narrower source section: Chapter 12: Various Checks / and Runes
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-normal-languages-c1caef74]] - narrower source section: Chapter 12: Various Checks / 《 Normal Languages 》
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-runes-9d27818d]] - narrower source section: Chapter 12: Various Checks / 《 Runes 》
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-2-normal-languages-of-af26f862]] - narrower source section: Chapter 12: Various Checks / 12.1.2 Normal Languages of
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-forcelia-1f5595d6]] - narrower source section: Chapter 12: Various Checks / Forcelia
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-common-05c48873]] - narrower source section: Chapter 12: Various Checks / 《 Common 》
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-regional-ea5ed158]] - narrower source section: Chapter 12: Various Checks / 《 Regional 》
@@ -43,9 +41,7 @@ From [[sword-world-rpg-complete-edition]].
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-lizardman-bd9dbc95]] - narrower source section: Chapter 12: Various Checks / [ Lizardman ]
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-3-adventurer-languages-c429aed9]] - narrower source section: Chapter 12: Various Checks / 12.1.3 Adventurer Languages
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-starting-adventurer-languages-6f11169b]] - narrower source section: Chapter 12: Various Checks / Starting Adventurer Languages
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-4-learning-unknown-a1d4128f]] - narrower source section: Chapter 12: Various Checks / 12.1.4 Learning Unknown
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-languages-0f917e8e]] - narrower source section: Chapter 12: Various Checks / Languages
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-5-monster-language-06ecb4ee]] - narrower source section: Chapter 12: Various Checks / 12.1.5 Monster Language
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-ability-b62fb394]] - narrower source section: Chapter 12: Various Checks / Ability
 
 ## Statements by subsection
@@ -216,57 +212,3 @@ From [[sword-world-rpg-complete-edition]].
 > The languages that adventurers can learn are shown on Table 12-1: Languages.
 
 > Table 12-1: Languages
-
-### Technical atom 5
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01163))_
-
-| A baseline | score is | a | number | that indicates | how | competent | or | skilled | a character is at a given activity. |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| skill | level , | and | their | dexterity | bonus | is used for ability bonus . |  |  |  |
-| For | example, | if | you | want | to | hit | an enemy with your sword, it is important to | have | dexterity |
-| For | example, | if | the | player | wields | a sword, their fighter skill level is used for |  |  |  |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Baseline Scores
-2.1 Baseline Scores
-A baseline  score is  a  number  that indicates  how  competent  or  skilled  a character is at a given activity.
-skill  level ,  and  their  dexterity  bonus  is used for ability bonus .
-For  example,  if  you  want  to  hit  an enemy with your sword, it is important to  have  dexterity  to  wield  it  accurately. Also, if the character is trained or experienced as a warrior, they'll be even more likely to hit their target.
-In Sword World RPG , this is expressed as relevant skill level + ability bonus and is called the baseline score .
-baseline score = relevant skill level + ability bonus
-For  example,  if  the  player  wields  a sword, their fighter skill level is used for
-2.2
-```
-
-</details>
-
-### Technical atom 6
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01174))_
-
-> The player must roll two dice and add their baseline score to the roll. The result is called the fi nal score . This final score should be equal to or greater than the target score.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01172))_
-
-| entry | content |
-| --- | --- |
-| 2 | 2 Target Scores The baseline score is a number that represents a character's ability. However, the success of an action is not only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned warrior, than when he is an amateur with no fighting experience. |
-| 2 | 3 |
-| 2 | 3 Checks |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Target Scores
-2.2 Target Scores
-The baseline score is  a number that represents a character's ability. However, the  success  of  an  action  is  not  only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned  warrior,  than  when  he  is  an amateur with no fighting experience.
-2.3
-2.3 Checks
-```
-
-</details>

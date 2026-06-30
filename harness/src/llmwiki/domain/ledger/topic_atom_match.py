@@ -9,11 +9,14 @@ from llmwiki.domain.ledger.atoms import TablePayload
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.structure import DocumentStructure
 from llmwiki.domain.ledger.table_identity import table_identity_names_by_atom_id
+from llmwiki.domain.ledger.topic_terms import topic_field_matches
 
 
 def atom_ids_matching_table_payload(
     ledger: ClaimLedger,
     matcher: re.Pattern[str],
+    terms: tuple[str, ...],
+    required_terms: tuple[str, ...] | None = None,
     structure: DocumentStructure | None = None,
 ) -> tuple[str, ...]:
     ids: list[str] = []
@@ -30,7 +33,7 @@ def atom_ids_matching_table_payload(
                 *names_by_atom.get(atom.technical_atom_id, ()),
             )
         )
-        if matcher.search(searchable):
+        if topic_field_matches(searchable, matcher, terms, required_terms):
             ids.append(atom.technical_atom_id)
     return tuple(dict.fromkeys(ids))
 

@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-npc-and-monster-action-announcement-499c18a3
 page_kind: source
-summary: NPC and Monster Action Announcement: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: NPC and Monster Action Announcement: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-npc-and-monster-action-announcement-499c18a3@58c78590b09fa7798aaee4c13b0c0cd1
+projection_coverage: section-sword-world-rpg-complete-edition-section-npc-and-monster-action-announcement-499c18a3@5d807cb6d64848f35a7045aa49ab029f
 ---
 
 # NPC and Monster Action Announcement
@@ -22,7 +22,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- However, that does not mean that you can make loose announcements and change them depending on the situation. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05653))_
 - For example, it's correct to announce the planned action of a hellhound with the ability to breathe fire by saying, I'm about to do something with my mouth wide open… The characters have no way of knowing if the hellhound is about to bite them or breathe fire. However, the game master should decide in advance which actions they are going to take. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05654))_
 - For example, it's correct to announce the planned action of a hellhound with the ability to breathe fire by saying, I'm about to do something with my mouth wide open… The characters have no way of knowing if the hellhound is about to bite them or breathe fire. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05654))_
 

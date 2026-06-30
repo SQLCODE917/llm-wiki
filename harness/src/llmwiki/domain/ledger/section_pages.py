@@ -143,9 +143,10 @@ def _section_projections(
     ledger: ClaimLedger, structure: DocumentStructure, source_page_id: str
 ) -> tuple[_SectionProjection, ...]:
     projections: list[_SectionProjection] = []
+    table_names_by_atom_id = table_identity_names_by_atom_id(ledger, structure)
     for node in _section_nodes(structure):
         rollup_entries = _entries_for_node(ledger, node.structure_node_id)
-        atoms = _atoms_for_entries(ledger, rollup_entries, structure, node)
+        atoms = _atoms_for_entries(ledger, rollup_entries, table_names_by_atom_id, node)
         if not rollup_entries and not atoms:
             continue
         projections.append(
@@ -266,7 +267,7 @@ def _entries_for_node(ledger: ClaimLedger, node_id: str) -> tuple[LedgerEntry, .
 def _atoms_for_entries(
     ledger: ClaimLedger,
     entries: tuple[LedgerEntry, ...],
-    structure: DocumentStructure,
+    table_names_by_atom_id: dict[str, tuple[str, ...]],
     node: StructureNode,
 ) -> tuple[TechnicalAtom, ...]:
     atom_ids = {
@@ -276,7 +277,7 @@ def _atoms_for_entries(
     }
     section_name = normalize_table_name(node.heading_text)
     if section_name:
-        for atom_id, names in table_identity_names_by_atom_id(ledger, structure).items():
+        for atom_id, names in table_names_by_atom_id.items():
             if has_matching_table_name(section_name, names):
                 atom_ids.add(atom_id)
     return tuple(

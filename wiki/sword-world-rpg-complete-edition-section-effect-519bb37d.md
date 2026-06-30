@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-effect-519bb37d@65fac287e3489437f276e71d66b8fee8
+projection_coverage: section-sword-world-rpg-complete-edition-section-effect-519bb37d@49973e3de128caf965b60092b1d2b572
 ---
 
 # 《 Effect 》
@@ -16,7 +16,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-effect]] - topic hub: opens the topic page for Effect
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-effect-638e1c52]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / 《 Effect 》
 
 ## Statements

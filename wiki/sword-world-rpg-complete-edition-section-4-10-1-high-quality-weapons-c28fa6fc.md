@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-4-10-1-high-quality-weapons-c28fa6fc
 page_kind: source
-summary: 4.10.1 High-Quality Weapons: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 4.10.1 High-Quality Weapons: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-1-high-quality-weapons-c28fa6fc@aa919a0fb1ea04adf68dc7fe87d44546
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-1-high-quality-weapons-c28fa6fc@27d7adc9f42c9ddeafd8f063563c61df
 ---
 
 # 4.10.1 High-Quality Weapons
@@ -56,28 +56,6 @@ Reasonable city
 2 less Required Strength
 Town of about 1000 people
 1 less Required Strength
-```
-
-</details>
-
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05652))_
-
-| entry | content |
-| --- | --- |
-| 10 | 1 NPC and Monster Action Announcement The game master must manage the actions of NPCs and monsters. In combat, the planned actions of NPCs and monsters must be announced at the beginning of the round. At this time, the game master does not need to make a specific announcement. All they have to do is tell you what you can understand from the character's perspective. |
-| 10 | 2 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-NPC and Monster Action Announcement
-10.1 NPC and Monster Action Announcement
-The  game  master  must  manage  the actions of NPCs and monsters. In combat,  the  planned  actions  of  NPCs and monsters must be announced at the beginning of the round.
-At  this  time,  the  game  master  does not need to make a specific announcement. All they have to do is tell you what you can understand from the character's perspective.
-10.2
 ```
 
 </details>

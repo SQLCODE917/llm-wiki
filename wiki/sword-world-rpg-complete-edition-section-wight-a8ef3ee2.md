@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-wight-a8ef3ee2
 page_kind: source
-summary: [ Wight ]: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Wight ]: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-geography-8f6a8be6
 page_kind: source
-summary: Geography: 27 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Geography: 26 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-geography-8f6a8be6@80cc39639959124d72024fa14df8ffdc
+projection_coverage: section-sword-world-rpg-complete-edition-section-geography-8f6a8be6@1d20d639add2366914a90b86c57a1e1b
 ---
 
 # Geography
@@ -20,7 +20,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- At the eastern end of the Alecrast continent lie three countries: Mudeel, Milargo, and Anoth. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11938))_
 - Mudeel, known as the "Farthest Kingdom," has a population of about 1.2 million. Its capital city shares the same name, Mudeel. Along with agriculture and textile industry, this country actively engages in trade using distinctive galleys. These galleys, also known as armed merchant ships, boast strength that makes ordinary pirate ships pale in comparison. These armed merchant ships frequently visit and trade with countries along the southern coast of the Alecrast continent. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11939))_
 - Mudeel has a forest called the "Goblin Woods." It is a mystical realm inhabited by many youma and magical beasts, where humans rarely venture. Within this Youma forest lies ruins known as the City of Mara Ajanis. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11940))_
 - Milargo is known as the "Kingdom of Meadows." It has a population of about 1 million, with its capital city being Grad. This kingdom is a confederation of dozens of nomadic tribes. Important state affairs are decided by a tribal council where tribal chiefs gather. This tribal council also appoints the king and ministers. In Alecrast, it would be considered a country with notably weak royal authority. It is described as the very picture of freedom. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11941))_
@@ -35,9 +34,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: Geography
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11938))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11939))_
 
-> At the eastern end of the Alecrast continent lie three countries: Mudeel, Milargo, and Anoth.
+> Mudeel, known as the "Farthest Kingdom," has a population of about 1.2 million. Its capital city shares the same name, Mudeel. Along with agriculture and textile industry, this country actively engages in trade using distinctive galleys. These galleys, also known as armed merchant ships, boast strength that makes ordinary pirate ships pale in comparison. These armed merchant ships frequently visit and trade with countries along the southern coast of the Alecrast continent.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11937))_
 

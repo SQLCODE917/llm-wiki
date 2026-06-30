@@ -1,7 +1,7 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-1st-level-basic-dark-magic-list-9a1849be
 page_kind: source
-summary: Chapter 11: Notes on Magic / 1st Level Basic Dark Magic List: 12 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 11: Notes on Magic / 1st Level Basic Dark Magic List: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition

@@ -7,7 +7,7 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-rarity-14cc16c1@ea7518adf6e2b8d56925a2f5fd909673
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-rarity-14cc16c1@22f11c2c2a5ebdc6b51012bb01b88f2e
 ---
 
 # Chapter 12: Various Checks / 《 Rarity 》
@@ -17,7 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-bbb8bf9e]] - broader source section: Chapter 12: Various Checks
-- [[sword-world-rpg-complete-edition-rarity]] - topic hub: opens the topic page for Rarity
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-rarity-bad75e7e]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / 《 Rarity 》
 - [[sword-world-rpg-complete-edition-section-rarity-a5c8f0b8]] - same source heading: another source section with the same heading, 《 Rarity 》
 - [[sword-world-rpg-complete-edition-section-chapter-14-rarity-5cfe727c]] - same source heading: another source section with the same heading, Chapter 14: / 《 Rarity 》

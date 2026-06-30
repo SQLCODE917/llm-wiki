@@ -7,12 +7,16 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-brownie-b317bc62@2a9e857ec21d0ae527444211e6f9f6da
+projection_coverage: section-sword-world-rpg-complete-edition-section-brownie-b317bc62@9c40b1258edec472d7ea8ec896447bdf
 ---
 
 # [ Brownie ]
 
 From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-brownie]] - topic hub: opens the topic page for Brownie
 
 ## Statements
 

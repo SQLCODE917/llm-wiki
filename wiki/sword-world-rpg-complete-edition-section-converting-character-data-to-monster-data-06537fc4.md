@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-converting-character-data-to-monster-data-06537fc4
 page_kind: source
-summary: Converting Character Data to Monster Data: 62 source-backed entries and 47 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Converting Character Data to Monster Data: 60 source-backed entries and 47 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-converting-character-data-to-monster-data-06537fc4@98dd785d94a31c9bee78dfa3eabb44ae
+projection_coverage: section-sword-world-rpg-complete-edition-section-converting-character-data-to-monster-data-06537fc4@5d681049b84b52bf172bf627529399dd
 ---
 
 # Converting Character Data to Monster Data
@@ -21,7 +21,6 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - Using the rules presented here, a game master can convert data created as a character into the format of a monster . There are two advantages to doing this. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09620))_
-- [ 1. The number of times the game master has to roll dice during combat will be drastically reduced ] _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09621))_
 - The game master will be freed from the labor of rolling dice, and will be able to manage enemy data in combat more easily. It'll also give you more time to provide guidance to players who are unfamiliar with the rules. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09622))_
 - This is especially effective when there are many enemies. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09623))_
 - If an enemy's strike roll is a critical, resulting in heavy damage or even death, the player may feel frustrated that they've been killed by a roll of the dice . This is because it's a process that cannot be dealt with by the player. If you change the enemy character's data to that of a monster , the damage will be a fixed score called strike points , so this kind of frustration should be less frequent. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09625))_

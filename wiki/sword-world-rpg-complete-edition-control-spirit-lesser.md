@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-control-spirit-lesser
 page_kind: concept
-summary: [ Control Spirit ] (Various lesser spirits): 33 statement(s) and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Control Spirit ] (Various lesser spirits): 27 statement(s) and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-control-spirit-lesser@bd371171f7d6e2be2644b598da9f767a
+projection_coverage: topic-sword-world-rpg-complete-edition-control-spirit-lesser@5178e05e7173d0a1c95d190d2a2f1bc7
 ---
 
 # [ Control Spirit ] (Various lesser spirits)
@@ -18,8 +18,6 @@ What [[sword-world-rpg-complete-edition]] covers about [ control spirit ] (vario
 ### 【 Shaman 】
 
 - Silent spirit are runes used to communicate with spirits and draw out the powers they control. The skill that can use silent spirit is called the shaman skill, and those who have this skill are referred to as shamans. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00287))_
-
-- The powers controlled by spirits are diverse, ranging from the four major powers of earth , water , fi re , and wind to the spirit of humans , and there are many different types of spirit magic used by shamans. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00288))_
 
 ### 5.1.13 Spirit Magic and the Shaman Skill
 
@@ -57,10 +55,6 @@ What [[sword-world-rpg-complete-edition]] covers about [ control spirit ] (vario
 
 - Please note that it is not possible to use both the Control Spirit and Full Control Spirit spells to control different spirits. In this case, the effect of the previously cast spell will vanish. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04170))_
 
-### [ Nightmare ] (Incubus, Succubus/Dream Spirit)
-
-- This is a spell that uses a dream spirit to send nightmares into the target's sleep, cursing your opponent to death. This spell has no distance restrictions, but the target must be someone the caster knows personally. The spell begins when the target goes to sleep, while the caster remains awake and focuses on controlling the dream spirit. Thus, the dream spirit controlled in this way enters the opponent's dreams and causes them to have nightmares. At this time, the contents of the nightmare the opponent sees can be chosen as desired by the caster. This ritual must be performed every night until the target becomes weak and dies. If the ritual is interrupted, even for one night, the spell's effect is completely lost. Also, the ritual must be continued overnight with undivided attention from sunset until dawn. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04207))_
-
 ### 10th Level Spirit Magic List ]
 
 - Within the area of effect, any spirit magic that depends on the neutralized spirit power will no longer be able to be used, and any magic that had an effect will be canceled immediately. This spell's restrictions include the caster him or herself who appealed to the greater spirit. It' s not that the spirit power ceases to exist; the lesser spirits still exist there, but they temporarily become completely neutral and you won't be able to draw out their magical powers. This also applies to spirits sealed with spells such as Control Spirit , etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04273))_
@@ -72,14 +66,6 @@ What [[sword-world-rpg-complete-edition]] covers about [ control spirit ] (vario
 ### Types of Monsters
 
 - certain that spirits are involved in the activities of life itself. Poisons, illnesses, and mental attacks are all meaningless against spirits. Also, they will not be wounded even if attacked by the spirit power they control. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06830))_
-
-### [ Shade ]
-
-- Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it's impossible to identify its shape because it' s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it's unlikely that your attacks will hit it (it'll definitely disintegrate if they do). They will always attack by ramming any being with a will that comes into their view. Its effect is exactly like a will-o-wisp attack, except that the damage is dealt to mental power instead of life force. Strike power is 10, bonus damage is 2, and only adventurer level can reduce it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07128))_
-
-### [ Sandman ]
-
-- Sandman is a mind spirit that controls sleep. Its figure is that of a small, completely naked child, with no features that would indicate gender. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07185))_
 
 ### [ Leprechaun ]
 
@@ -155,22 +141,11 @@ What [[sword-world-rpg-complete-edition]] covers about [ control spirit ] (vario
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-spirit]] - broader topic: Spirit shares source evidence from 【 Shaman 】: Silent spirit are runes used to communicate with spirits and draw out the powers they control. The skill that can use silent spirit is called the shaman skill, and t ... [truncated] (11 shared statement(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms: Spell shares source evidence from [ Spirit Wall ]: You cannot build a wall where other materials such as rocks, trees, or living things already exist. Furthermore, once a wall is put up, it cannot be moved or removed ... [truncated]; Spell shares technical record from 5th Level Spirit Magic List [ Control Plant ]: Monster Level =5 Rarity=15 Agility=6 Movement Speed=6 Attack Points=12 (5) Evasion Points=12 (5) Mental Points/Resistance=-/12(5) Special Abilities=Mental attack imm ... [truncated] (3 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms: Resist shares source evidence from [ Shade ] (Shade/Dark Spirit): Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect Shade is the spirit of darkness that opposes will-o-wisp, and is also the ... [truncated]; Resist shares technical record from 5th Level Spirit Magic List [ Control Plant ]: Monster Level =5 Rarity=15 Agility=6 Movement Speed=6 Attack Points=12 (5) Evasion Points=12 (5) Mental Points/Resistance=-/12(5) Special Abilities=Mental attack imm ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms: Score shares source evidence from [ Shade ] (Shade/Dark Spirit): Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect Shade is the spirit of darkness that opposes will-o-wisp, and is also the ... [truncated]; Score shares technical record from 5th Level Spirit Magic List [ Control Plant ]: Monster Level =5 Rarity=15 Agility=6 Movement Speed=6 Attack Points=12 (5) Evasion Points=12 (5) Mental Points/Resistance=-/12(5) Special Abilities=Mental attack imm ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements: Power shares source evidence from 【 Shaman 】: The powers controlled by spirits are diverse, ranging from the four major powers of earth , water , fi re , and wind to the spirit of humans , and there are many dif ... [truncated] (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements: Type shares source evidence from 5.1.13 Spirit Magic and the Shaman Skill: This spirit power is at work wherever there are living things with functioning minds. Of course if the caster him or herself is like that, there's no problem. Some o ... [truncated] (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared statements: Cast shares source evidence from [ Full Control Spirit ] (Various lesser spirits): Please note that it is not possible to use both the Control Spirit and Full Control Spirit spells to control different spirits. In this case, the effect of the previ ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-effect]] - shared statements: Effect shares source evidence from [ Full Control Spirit ] (Various lesser spirits): Please note that it is not possible to use both the Control Spirit and Full Control Spirit spells to control different spirits. In this case, the effect of the previ ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-final]] - shared statements: Final shares source evidence from [ Shade ] (Shade/Dark Spirit): Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect Shade is the spirit of darkness that opposes will-o-wisp, and is also the ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-final-damage]] - shared statements: 4.5.5 Final Damage shares source evidence from [ Shade ] (Shade/Dark Spirit): Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect Shade is the spirit of darkness that opposes will-o-wisp, and is also the ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-please]] - shared statements: Please shares source evidence from [ Full Control Spirit ] (Various lesser spirits): Please note that it is not possible to use both the Control Spirit and Full Control Spirit spells to control different spirits. In this case, the effect of the previ ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-shaman]] - shared statements: Shaman shares source evidence from [ Control Spirit ] (Various lesser spirits): Spirits that have been successfully summoned and controlled can be sealed in items, etc. It is up to the game master's discretion to decide what kind of item the spi ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements: Target shares source evidence from [ Shade ] (Shade/Dark Spirit): Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect Shade is the spirit of darkness that opposes will-o-wisp, and is also the ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-shade]] - shared statements: Shade shares source evidence from [ Shade ] (Shade/Dark Spirit): Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect Shade is the spirit of darkness that opposes will-o-wisp, and is also the ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-target-score]] - shared statements: Target Scores shares source evidence from [ Shade ] (Shade/Dark Spirit): Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect Shade is the spirit of darkness that opposes will-o-wisp, and is also the ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-section-control-spirit-various-lesser-spirits-72ca9389]] - source section: [ Control Spirit ] (Various lesser spirits) shares source evidence from [ Control Spirit ] (Various lesser spirits): This is a spell that summons a spirit and lets you control it as your servant (you're free to call it your friend). The only spirits you can summon are those that be ... [truncated]; [ Control Spirit ] (Various lesser spirits) shares technical record from [ Control Spirit ] (Various lesser spirits): Base Mental Power Cost=15 (12 shared statement(s), 8 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-full-control-spirit-various-lesser-spirits-a9452b1d]] - source section: [ Full Control Spirit ] (Various lesser spirits) shares source evidence from [ Full Control Spirit ] (Various lesser spirits): Please note that it is not possible to use both the Control Spirit and Full Control Spirit spells to control different spirits. In this case, the effect of the previ ... [truncated]; [ Full Control Spirit ] (Various lesser spirits) shares technical record from [ Full Control Spirit ] (Various lesser spirits): Base Mental Power Cost=35 (2 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-full-control-spirit-various-lesser-spirits-a9452b1d]] - source section: [ Full Control Spirit ] (Various lesser spirits) shares source evidence from [ Full Control Spirit ] (Various lesser spirits): Please note that it is not possible to use both the Control Spirit and Full Control Spirit spells to control different spirits. In this case, the effect of the previ ... [truncated]; [ Full Control Spirit ] (Various lesser spirits) shares technical record from [ Full Control Spirit ] (Various lesser spirits): Base Mental Power Cost=35 (1 shared statement(s), 3 shared atom(s))
 
 ## Source
 

@@ -7,16 +7,12 @@ updated: 2026-06-29
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-power-fb155b75@db95ad2ae4c6dae26d6f227d5ae098bc
+projection_coverage: section-sword-world-rpg-complete-edition-section-power-fb155b75@b77577d32d8189afa5f31071eaf84f37
 ---
 
 # Power
 
 From [[sword-world-rpg-complete-edition]].
-
-## Related pages
-
-- [[sword-world-rpg-complete-edition-power]] - topic hub: opens the topic page for Power
 
 ## Statements
 
