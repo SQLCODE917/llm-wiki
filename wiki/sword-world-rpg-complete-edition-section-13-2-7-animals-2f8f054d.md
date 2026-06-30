@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-13-2-7-animals-2f8f054d
 page_kind: source
+page_family: section-reference
 summary: 13.2.7 Animals: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-7-animals-2f8f054d@360034e58a850e4c5a60829b20ee2265
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-7-animals-2f8f054d@1b6e97205ea009b15af6b1ec458b20de
 ---
 
 # 13.2.7 Animals
@@ -16,7 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-animals-19584a47]] - same source heading: another source section with the same heading, 《 Animals 》
+- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-animals-19584a47]] - same source heading: another source section with the same heading, 13.1 Types of Monsters / 《 Animals 》
 
 ## Statements
 

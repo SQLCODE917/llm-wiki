@@ -94,8 +94,7 @@ def topic_entry_rank(
     subject_match = topic_field_matches(entry.subject, matcher, terms, required_terms)
     object_match = topic_field_matches(entry.object_value, matcher, terms, required_terms)
     facet_match = any(
-        topic_field_matches(facet, matcher, terms, required_terms)
-        for facet in entry.concept_facets
+        topic_field_matches(facet, matcher, terms, required_terms) for facet in entry.concept_facets
     )
     text_match = topic_field_matches(
         entry.normalized_text or entry.source_text, matcher, terms, required_terms

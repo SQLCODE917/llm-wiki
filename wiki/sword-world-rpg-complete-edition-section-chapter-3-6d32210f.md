@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-3-6d32210f
 page_kind: source
-summary: Chapter 3:: 97 source-backed entries and 19 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+page_family: section-reference
+summary: Chapter 3:: 88 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-6d32210f@0670a7096964b315ea7f6f229c186621
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-6d32210f@14bdbebd9c95ac27d6355a979bd34c0b
 ---
 
 # Chapter 3:
@@ -20,20 +21,17 @@ From [[sword-world-rpg-complete-edition]].
 - [[sword-world-rpg-complete-edition-section-chapter-3-3-1-1-order-of-action-announcements-7b9a8dc5]] - narrower source section: Chapter 3: / 3.1.1 Order of Action Announcements
 - [[sword-world-rpg-complete-edition-section-chapter-3-3-1-2-player-action-announcements-b10493a2]] - narrower source section: Chapter 3: / 3.1.2 Player Action Announcements
 - [[sword-world-rpg-complete-edition-section-chapter-3-3-1-3-npc-and-monster-action-announcements-0f1f8fa3]] - narrower source section: Chapter 3: / 3.1.3 NPC and Monster Action Announcements
-- [[sword-world-rpg-complete-edition-section-chapter-3-91231f10]] - narrower source section: Chapter 3:
-- [[sword-world-rpg-complete-edition-section-chapter-3-b3932e7e]] - narrower source section: Chapter 3:
+- [[sword-world-rpg-complete-edition-section-chapter-3-3-2-action-order-91231f10]] - narrower source section: Chapter 3: / 3.2 Action Order
+- [[sword-world-rpg-complete-edition-section-chapter-3-3-3-action-canceling-b3932e7e]] - narrower source section: Chapter 3: / 3.3 Action Canceling
 - [[sword-world-rpg-complete-edition-section-chapter-3-3-2-1-delaying-an-action-30273104]] - narrower source section: Chapter 3: / 3.2.1 Delaying an Action
 - [[sword-world-rpg-complete-edition-section-chapter-3-movement-and-actions-d724a2ed]] - narrower source section: Chapter 3: / Movement and Actions
-- [[sword-world-rpg-complete-edition-section-chapter-3-61f445aa]] - narrower source section: Chapter 3:
-- [[sword-world-rpg-complete-edition-section-chapter-3-3-4-2-actions-you-can-take-4af3fc3f]] - narrower source section: Chapter 3: / 3.4.2 Actions You Can Take
 
 ## Statements by subsection
 
 ### Chapter 3: / 3.1.1 Order of Action Announcements
 
 - Each round begins with an announcement of what your character intends to do. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01287))_
-- In combat, there are basically two opposing groups. Action _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01288))_
-- announcements are made by each group. Suppose there are three characters, a1, a2, and a3 in group A and two characters, b1 and b2 in group B . In this case, the order of action announcements is A → B or B → A . Characters who belong to different groups, such as a1→b1→a2 ...... do not take turns to announce their actions. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01289))_
+- In combat, there are basically two opposing groups. Action announcements are made by each group. Suppose there are three characters, a1, a2, and a3 in group A and two characters, b1 and b2 in group B . In this case, the order of action announcements is A → B or B → A . Characters who belong to different groups, such as a1→b1→a2 ...... do not take turns to announce their actions. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01288, source-range-0b9dec90-01289))_
 - Which of the two will make their action announcements first is determined based on intelligence . The group with the highest intelligence among all the characters (including monsters, etc.) participating in combat will announce their action later . If a2 is the one with the highest intelligence between groups A and B as mentioned, then the announcements are made in the order of B → A , regardless of the intelligence of the other characters. Those who announce their actions later- the ones with highest representative intelligence --will have a significant advantage because they can announce their own actions after hearing their opponents' announcements. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01290))_
 - If the two groups are equal in intelligence (i.e., the highest intelligence in each group is the same), compare the second highest in each group. If those are also the same, then compare the third highest. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01291))_
 - If there are three or more groups instead of two, the order of action announcements is determined in the same way. The groups with the higher intelligence can decide on their actions later than the others. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01294))_
@@ -55,7 +53,7 @@ From [[sword-world-rpg-complete-edition]].
 - Of course, if a character has a wealth of knowledge, or if they're an advanced spellcaster, they might know such things. If it's something the character should know, the game master should tell you when they announce the action. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01305))_
 - However, the players should only act from their characters' point of view. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01304))_
 
-### Chapter 3: / Action Order
+### Chapter 3: / 3.2 Action Order
 
 - Once action announcements are complete, it is time to resolve both friends' and foes' actions. Combat will then actually take place. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01309))_
 - II's. Therefore, the goblin will act before Ducard II. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01310))_
@@ -63,17 +61,14 @@ From [[sword-world-rpg-complete-edition]].
 - If, as a result of the action of someone with higher agility, someone with lower agility is unable to perform their intended action , it means that their action is no longer possible . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01312))_
 - If two have exactly the same agility, their actions are considered to be simultaneous . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01313))_
 - Ducard II is fighting a goblin. He has an agility of 12. On the other hand, the goblin's agility is 13, better than Ducard _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01316))_
+- Each of their action announcements are attack the opponent (with a weapon) . The goblin cuts at him with its claws. Ducard II then fails to evade it and falls down with a deep wound. Ducard II cannot carry out his intended attack on the goblin. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01318))_
+- Suppose that, as in the first example, IIDash is still hit badly enough to fall down as a result of the goblin's attack check. However, IIDash's action order = agility is the same as the goblin's, so he would've been slashing at the goblin at the same time . In other words, _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01320))_
 - Combat will then actually take place. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01309))_
 - Therefore, the goblin will act before Ducard II. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01310))_
 - Therefore, it is possible to have a mixture of friends and foes, as in a1 → b1 → a2 ....... _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01311))_
 - If, as a result of the action of someone with higher agility, someone with lower agility is unable to perform their intended action , it means that their action is no longer possible . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01312))_
 
-### Chapter 3:
-
-- Each of their action announcements are attack the opponent (with a weapon) . The goblin cuts at him with its claws. Ducard II then fails to evade it and falls down with a deep wound. Ducard II cannot carry out his intended attack on the goblin. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01318))_
-- Suppose that, as in the first example, IIDash is still hit badly enough to fall down as a result of the goblin's attack check. However, IIDash's action order = agility is the same as the goblin's, so he would've been slashing at the goblin at the same time . In other words, _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01320))_
-
-### Chapter 3: / Action Canceling
+### Chapter 3: / 3.3 Action Canceling
 
 - A character may cancel and not perform their announced action. For example, if an enemy that you intended to attack falls down due to the attack of a fellow player, no further attack is necessary. If you fall down yourself early in the order, you will not be able to act. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01323))_
 - Or, in the middle of a round, your companion may ask you to help out by giving money or goods. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01324))_
@@ -83,7 +78,7 @@ From [[sword-world-rpg-complete-edition]].
 - For example, if an enemy that you intended to attack falls down due to the attack of a fellow player, no further attack is necessary. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01323))_
 - You also cannot switch from magic to a weapon attack because you intended to cast a spell but were blocked from chanting halfway through. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01326))_
 
-### Chapter 3: / 3.3.1 When It's Possible to / Change Attack Targets
+### Chapter 3: / 3.3 Action Canceling / 3.3.1 When It's Possible to / Change Attack Targets
 
 - As mentioned earlier, a character has only two choices: carry out their action as is or cancel it. However, there is an exception to this principle. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01330))_
 - It's when you're engaged with several enemies and some of them are trying to withdraw (flee) . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01331))_
@@ -103,21 +98,7 @@ From [[sword-world-rpg-complete-edition]].
 
 - Characters have three options for movement: full movement , normal movement , or stand still . Each has different distances that can be traveled and different restrictions on actions that can be taken. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01345))_
 - Below are some guidelines on how movement works and which actions can be taken. For any other actions, please use common sense based on the time frame of 1 round = 10 seconds. Final decisions are to be made by the game master. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01346))_
-
-### Chapter 3:
-
 - The following actions can be taken at any time , regardless of the movement method. They do not prevent other actions at all. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01349))_
-
-### Chapter 3: / Drop a Weapon, Etc. On the Ground
-
-- Weapons and shields can be dropped on the ground at any time , regardless of whether they're one-handed, twohanded, or both-handed. If you do drop a weapon, etc. consider it as if you never had it in the first place , then choose your action. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01351))_
-
-### Chapter 3: / 3.4.2 Actions You Can Take
-
-- Full movement means that a character runs without looking aside. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01354))_
-- Naturally, you can advance farther, but the restrictions on your actions will also be greater. At this time, attacks from the enemy are also much more likely to hit. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01355))_
-- The distance you can go with full movement is character's agility x 3 meters. For monsters, their movement speed is set separately from agility, so they can move up to movement speed x 3 meters. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01356))_
-- Full movement means that a character runs without looking aside. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01354))_
 
 ## Technical atoms
 
@@ -181,7 +162,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > If it's something the character should know, the game master should tell you when they announce the action.
 
-### Technical frame 7: Chapter 3: / Action Order
+### Technical frame 7: Chapter 3: / 3.2 Action Order
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01316))_
 
@@ -191,7 +172,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > For convenience, they are resolved in order, but even if you're attacked by an enemy of the same agility and fall down, you can still perform your intended actions.
 
-### Technical frame 8: Chapter 3:
+### Technical frame 8: Chapter 3: / 3.2 Action Order
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01320))_
 
@@ -201,7 +182,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > Suppose that Ducard II has an agility of 13, which is equal to that of a goblin (let's call him IIDash from now on, since he is a bit faster). In this case, both attacks are considered to be carried out simultaneously. During the course of the game, each attack check is made in the order of goblin → IIDash (or vice versa). Otherwise, it would be difficult to progress the game.
 
-### Technical frame 9: Chapter 3: / Action Canceling
+### Technical frame 9: Chapter 3: / 3.3 Action Canceling
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01327))_
 
@@ -251,13 +232,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > If your agility is higher than that of the enemy who is trying to withdraw, you can attack them before they escape.
 
-### Technical frame 14: Chapter 3: / Drop a Weapon, Etc. On the Ground
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01351))_
-
-> consider it as if you never had it in the first place , then choose your action.
-
-### Technical atom 15
+### Technical atom 14
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01344))_
 
@@ -277,7 +252,7 @@ Movement and Actions
 
 </details>
 
-### Technical atom 16
+### Technical atom 15
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04906))_
 
@@ -297,96 +272,6 @@ The  abilities  associated  with  these skills, including the thief skill , are 
 If the rules for determining the target score  or  difficulty  are  clearly  indicated, the  game  master  should  follow  those rules,  otherwise  the  game  master  must follow the rules under 9.1: Setting Target
 6.2
 6.2 Thief Skill
-```
-
-</details>
-
-### Technical atom 17
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06515))_
-
-> To remove a poison with magic, the caster's final score (magic power + 2D roll) must be greater than or equal to the poison's toxicity score . Once a detox fails, the same caster cannot attempt detox magic until their magic power increases (and even if they try, they will always fail).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06518))_
-
-| entry | content |
-| --- | --- |
-| 12 | 2.1.2 Resistance to Poison Poisons are not effective against everything. It has no effect on monsters that have no life such as undead, golems, etc. Some mythical and magical beasts have strong life force that makes them immune to poison. Some poison effects may or may not affect specific monsters. Monsters that use poison as weapons are immune to their own poisons (but are still affected by other poisons). |
-| 12 | 2.1.3 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-12.2.1.2 Resistance to Poison
-Poisons are not effective against everything. It has no effect on monsters that have no life such as undead, golems, etc.  Some  mythical  and  magical  beasts have  strong  life  force  that  makes  them immune to poison. Some poison effects may or may not affect specific monsters.
-Monsters that use poison as weapons are  immune  to  their own poisons  (but are still affected by other poisons).
-12.2.1.3
-```
-
-</details>
-
-### Technical atom 18
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11501))_
-
-> Actions that characters in a grapple can take are limited to the following.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11502))_
-
-| Attack | with | a | dagger, | barehanded (claws, talons), | cestus, etc. If | a monster has | fangs, | it | can | also | bite. | Opponents have a -2 penalty to evasion. |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Strangle your opponent barehanded or with a garrote. Opponents have a -2 penalty to evasion. Once strangling, the strangler can automatically deal damage every round. If you're barehanded, strike power | is | 0 | (critical | target | 12), | and | if you're using a garrote, strike power is 10 (critical target 10). Only adventurer level can reduce strangling damage. |  |  |  |  |  |
-| If | you're | being | strangled, | the only thing you can do in the rounds onward is attempt to break free. To resolve breaking | free, | the | one | being | strangled must make a success roll using adventurer level + strength bonus as | the baseline score, while the strangler must make one using fi ghter/thief skill level + strength | bonus . | If |
-| Also, | even | if | your | character | doesn't suffer damage, if or she remains strangled for a number of rounds equal to his or her life force , life force will immediately fall to 0, he or she will fall unconscious , | and | you'll | need | to | make | a death check . |  |
-| However, you cannot attack monsters that don't breathe (undead, etc.), monsters that are much larger than your character (ogres, etc.), or those that wear metal armor , | by | strangling. | Y ou | cannot deal damage | to | these, nor can you suffocate them. |  |  |  |  |  |  |
-| Use your strength and weight to pin down your opponent. To resolve this, the one attempting to pin down must make a success roll using fi ghter/thief skill level + | strength | bonus as | the | baseline | score, while | the | one | resisting | must | make | one using adventurer level + strength bonus . If the pinner's is greater, the pin | is successful. |
-| Once pinning, the pinner will automatically continue in that state and can perform normal attacks (of course, weapons | are | restricted). | However, | the one being pinned can attempt to break free. At this time, please make the same check. |  |  |  |  |  |  |  |  |
-| Even | while | grappling, | you | can | use holy magic so long as you can speak. It's not possible while being strangled , but if you're | merely | being pinned | down , | you can use | holy | magic. | Common |
-| Ancient magic, spirit magic, | and spellsongs cannot be used. |  |  |  |  |  |  |  |  |  |  |  |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-1. Normal Attack
-Attack  with  a  dagger,  barehanded (claws, talons),  cestus, etc. If  a monster has  fangs,  it  can  also  bite.  Opponents have a -2 penalty to evasion.
-2. Strangle/Continue to Strangle/Escape
-Strangle your opponent barehanded or with a garrote. Opponents have a -2 penalty to evasion. Once strangling, the strangler can automatically deal damage every round. If you're barehanded, strike power  is  0  (critical  target  12),  and  if you're using a garrote, strike power is 10 (critical target 10). Only adventurer level can reduce strangling damage.
-If  you're  being  strangled,  the only thing you can do in the rounds onward is attempt to break free. To resolve breaking  free,  the  one  being  strangled must make a success roll using adventurer level + strength bonus as  the baseline score, while the strangler must make one using fi ghter/thief skill level + strength  bonus .  If  the  final  score  of  the one trying to break free is greater, or if there's a tie, he or she will escape. While being  strangled,  you  cannot  make  any sound at all, so you cannot use magic.
-Also,  even  if  your  character  doesn't suffer damage, if or she remains strangled for a number of rounds equal to his or her life force , life force will immediately fall to 0, he or she will fall unconscious ,  and  you'll  need  to  make  a death check .
-You must make a death check every round so long as the strangling continues, even if you do not suffer any damage.
-However, you cannot attack monsters that don't breathe (undead, etc.), monsters that are much larger than your character (ogres, etc.), or those that wear metal armor ,  by  strangling.  Y ou  cannot deal damage  to  these, nor can you suffocate them.
-3. Pin Down
-Use your strength and weight to pin down your opponent. To resolve this, the one attempting to pin down must make a success roll using fi ghter/thief skill level +  strength  bonus as  the  baseline  score, while  the  one  resisting  must  make  one using adventurer level + strength bonus . If the pinner's is greater, the pin  is successful.
-Once pinning, the pinner will automatically continue in that state and can perform normal attacks (of course, weapons  are  restricted).  However,  the one being pinned can attempt to break free. At this time, please make the same check.
-4. Using Holy Magic or Common Runes
-Even  while  grappling,  you  can  use holy magic so long as you can speak. It's not possible while being strangled , but if you're  merely  being pinned  down ,  you can use  holy  magic.  Common  runes require you to not only be able to speak, but to also be able to use a catalyst. It's usually a ring, so you can use it.
-Ancient magic, spirit magic,  and spellsongs cannot be used.
-5. Escape from Grapple
-```
-
-</details>
-
-### Technical atom 19
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11554))_
-
-| entry | content |
-| --- | --- |
-| 16 | 7 Throwing Multiple Darts or Daggers It' s possible to throw multiple darts or daggers at once. However, the following restrictions occur in this case: All objects thrown at the same time must have the same weight (required strength). The total required strength must be up to the character's strength (or half that if it's the thief skill). |
-| 16 | 8 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Throwing Multiple Darts or Daggers
-16.7 Throwing Multiple Darts or Daggers
-It' s  possible  to  throw multiple darts or daggers at once. However, the following restrictions occur in this case:
-All  objects  thrown  at  the  same time must have the same weight (required strength).
-The total required strength must be up to the character's strength (or half that if it's the thief skill).
-16.8
 ```
 
 </details>

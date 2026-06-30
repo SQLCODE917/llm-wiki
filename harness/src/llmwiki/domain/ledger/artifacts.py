@@ -23,6 +23,7 @@ from llmwiki.domain.ledger.coverage import ProjectionCoverage
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.pointers import PortableArtifactPointer
 from llmwiki.domain.ledger.projection import ProjectionSourceSupport
+from llmwiki.domain.ledger.projection_context import ProjectionContext
 from llmwiki.domain.ledger.quality import LedgerQualityReport
 from llmwiki.domain.ledger.quality_catalog import (
     QualityCheckCatalog,
@@ -80,6 +81,16 @@ class ProjectionCoverageArtifact:
     ledger_quality_report_pointer: PortableArtifactPointer
     projection_source_support_set: tuple[ProjectionSourceSupport, ...]
     projection_coverage: ProjectionCoverage
+
+
+@dataclass(frozen=True)
+class ProjectionContextArtifact:
+    projection_context_artifact_id: str
+    projection_context_fingerprint: str
+    artifact_format: str
+    source_locator: str
+    source_hash: str
+    projection_context: ProjectionContext
 
 
 @dataclass(frozen=True)
@@ -347,6 +358,31 @@ def build_source_coverage_artifact(coverage: SourceCoverage) -> SourceCoverageAr
     )
     fingerprint = artifact_fingerprint(draft, exclude=("source_coverage_fingerprint",))
     return replace(draft, source_coverage_fingerprint=fingerprint)
+
+
+def build_projection_context_artifact(
+    *,
+    source_locator: str,
+    source_hash: str,
+    projection_context: ProjectionContext,
+) -> ProjectionContextArtifact:
+    fingerprint = artifact_fingerprint(
+        {
+            "source_hash": source_hash,
+            "source_locator": source_locator,
+            "projection_context": projection_context,
+        }
+    )
+    return ProjectionContextArtifact(
+        projection_context_artifact_id=deterministic_id(
+            "projection-context", source_hash, source_locator, fingerprint
+        ),
+        projection_context_fingerprint=fingerprint,
+        artifact_format=ARTIFACT_FORMAT,
+        source_locator=source_locator,
+        source_hash=source_hash,
+        projection_context=projection_context,
+    )
 
 
 def build_blocked_write_diagnostic_artifact(

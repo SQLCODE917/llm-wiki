@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-4-5-3-bonus-damage-62cc15ec
 page_kind: source
+page_family: section-reference
 summary: 4.5.3 Bonus Damage: 9 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-3-bonus-damage-62cc15ec@2b1abf065ec92c159274789939e7b3e2
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-3-bonus-damage-62cc15ec@213ff8dfe73daaccb61d062d817862f0
 ---
 
 # 4.5.3 Bonus Damage
@@ -17,7 +18,7 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-bonus-damage]] - topic hub: opens the topic page for Bonus Damage
-- [[sword-world-rpg-complete-edition-section-bonus-damage-da6ab1ae]] - same source heading: another source section with the same heading, 【 Bonus Damage 】
+- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-bonus-damage-da6ab1ae]] - same source heading: another source section with the same heading, 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】
 
 ## Statements
 

@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-13-2-2-fae-30e08f10
 page_kind: source
+page_family: section-reference
 summary: 13.2.2 Fae: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-2-fae-30e08f10@47de89aee7bca121605053588d53cc0a
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-2-fae-30e08f10@4a7d4281cd10ecf49a0fee7504519c54
 ---
 
 # 13.2.2 Fae
@@ -16,7 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-fae-a53503c1]] - same source heading: another source section with the same heading, 《 Fae 》
+- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-fae-a53503c1]] - same source heading: another source section with the same heading, 13.1 Types of Monsters / 《 Fae 》
 
 ## Statements
 

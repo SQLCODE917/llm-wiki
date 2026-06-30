@@ -1,12 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-halfelve-raised-human
 page_kind: concept
+page_family: topic-concept
 summary: Halfelve Raised Human: 0 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-halfelve-raised-human@0f8af56e2ad4784b8a3e89710c345fd5
+projection_coverage: topic-sword-world-rpg-complete-edition-halfelve-raised-human@cdad14ee799a80e68a295933863fcbbe
 ---
 
 # Halfelve Raised Human
@@ -18,7 +19,7 @@ What [[sword-world-rpg-complete-edition]] covers about halfelve raised human:
 
 ## Technical atoms
 
-### Technical frame 1: For Humans and HalfElves Raised by Humans
+### Technical frame 1: 1.4 Character Creation / For Humans and HalfElves Raised by Humans
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00528))_
 

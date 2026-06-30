@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-priest-skill-48ce4d00
 page_kind: source
+page_family: section-reference
 summary: Priest Skill: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-priest-skill-48ce4d00@56847acbb5218a444fc7b6b7a8feaf0f
+projection_coverage: section-sword-world-rpg-complete-edition-section-priest-skill-48ce4d00@f3e2fe9a63acf3618195e294681f9357
 ---
 
 # Priest Skill
@@ -17,7 +18,7 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-priest-skill]] - topic hub: opens the topic page for Priest Skill
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-priest-skill-c4404cc7]] - same source heading: another source section with the same heading, Chapter 11: Notes on Magic / 《 Priest Skill 》
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-priest-skill-c4404cc7]] - same source heading: another source section with the same heading, Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Priest Skill 》
 
 ## Statements
 

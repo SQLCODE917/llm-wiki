@@ -6,7 +6,7 @@ import re
 from dataclasses import dataclass, field
 from pathlib import PurePosixPath
 
-from llmwiki.domain.schema import PAGE_KINDS
+from llmwiki.domain.schema import PAGE_FAMILIES, PAGE_KINDS
 
 _SLUG_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 _FRONTMATTER_DELIM = "---"
@@ -39,6 +39,14 @@ def validate_page_kind(page_kind: str) -> str:
     return page_kind
 
 
+def validate_page_family(page_family: str) -> str:
+    if page_family and page_family not in PAGE_FAMILIES:
+        raise PageError(
+            f"Invalid page_family {page_family!r}: must be one of {', '.join(PAGE_FAMILIES)}."
+        )
+    return page_family
+
+
 def validate_summary(summary: str) -> str:
     cleaned = " ".join(summary.split())
     if not cleaned:
@@ -63,6 +71,7 @@ class PageMetadata:
     page_id: str
     page_kind: str
     summary: str
+    page_family: str = ""
     sources: tuple[str, ...] = field(default=())
     updated: str = ""
     domain: str = ""
@@ -76,6 +85,7 @@ class PageMetadata:
     def __post_init__(self) -> None:
         validate_page_id(self.page_id)
         validate_page_kind(self.page_kind)
+        validate_page_family(self.page_family)
         object.__setattr__(self, "summary", validate_summary(self.summary))
 
 
@@ -93,6 +103,7 @@ class PathTemplate:
         fields = dict(
             PageId=metadata.page_id,
             PageKind=metadata.page_kind,
+            PageFamily=metadata.page_family,
             Summary=metadata.summary,
             Sources=",".join(metadata.sources),
             Updated=metadata.updated,
@@ -181,8 +192,10 @@ class DomainFrontmatter:
             _FRONTMATTER_DELIM,
             f"page_id: {metadata.page_id}",
             f"page_kind: {metadata.page_kind}",
-            f"summary: {metadata.summary}",
         ]
+        if metadata.page_family:
+            lines.append(f"page_family: {metadata.page_family}")
+        lines.append(f"summary: {metadata.summary}")
         if metadata.sources:
             lines.append(f"sources: {', '.join(metadata.sources)}")
         if metadata.updated:
@@ -229,6 +242,7 @@ def parse_page(text: str) -> WikiPage:
         page_id=fields.get("page_id", ""),
         page_kind=fields.get("page_kind", ""),
         summary=fields.get("summary", ""),
+        page_family=fields.get("page_family", ""),
         sources=_split_frontmatter_list(fields.get("sources", "")),
         updated=fields.get("updated", ""),
         domain=fields.get("domain", ""),

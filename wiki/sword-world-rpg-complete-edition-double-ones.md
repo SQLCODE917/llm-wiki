@@ -1,12 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-double-ones
 page_kind: concept
+page_family: topic-concept
 summary: Double Ones: 4 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-double-ones@1b36758f4bfde2aa7e26f94c497d4d51
+projection_coverage: topic-sword-world-rpg-complete-edition-double-ones@a013ca256656f10f9934d25e7e4a45c8
 ---
 
 # Double Ones
@@ -15,7 +16,7 @@ What [[sword-world-rpg-complete-edition]] covers about double ones:
 
 ## Statements
 
-### Double Sixes and Double Ones
+### 4.7 Attacks From Characters Against Characters / Double Sixes and Double Ones
 
 - If a roll comes up double sixes or double ones during combat between characters, the situation is resolved as follows: _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02253))_
 
@@ -26,7 +27,7 @@ What [[sword-world-rpg-complete-edition]] covers about double ones:
 
 ## Technical atoms
 
-### Technical frame 1: Double Sixes and Double Ones
+### Technical frame 1: 4.7 Attacks From Characters Against Characters / Double Sixes and Double Ones
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02255))_
 
@@ -36,7 +37,7 @@ What [[sword-world-rpg-complete-edition]] covers about double ones:
 
 > The defender doesn't even have to roll the dice.
 
-### Technical frame 2: Double Sixes and Double Ones
+### Technical frame 2: 4.7 Attacks From Characters Against Characters / Double Sixes and Double Ones
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02256))_
 
@@ -49,7 +50,7 @@ What [[sword-world-rpg-complete-edition]] covers about double ones:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-double-sixe]] - shared statements and technical atoms: Double Sixe shares source evidence from Double Sixes and Double Ones: If a roll comes up double sixes or double ones during combat between characters, the situation is resolved as follows:; Double Sixe shares technical record from Double Sixes and Double Ones: The defender doesn't even have to roll the dice. (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-double-sixe]] - shared statements and technical atoms: Double Sixe shares source evidence from 4.7 Attacks From Characters Against Characters / Double Sixes and Double Ones: If a roll comes up double sixes or double ones during combat between characters, the situation is resolved as follows:; Double Sixe shares technical record from 4.7 Attacks From Characters Against Characters / Double Sixes and Double Ones: The defender doesn't even have to roll the dice. (1 shared statement(s), 1 shared atom(s))
 
 ## Source
 

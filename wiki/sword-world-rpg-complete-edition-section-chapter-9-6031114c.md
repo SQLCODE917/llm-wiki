@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-9-6031114c
 page_kind: source
-summary: Chapter 9:: 100 source-backed entries and 22 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+page_family: section-reference
+summary: Chapter 9:: 100 source-backed entries and 19 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-9-6031114c@7b83b57db932570e1b8c1c6935f539c7
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-9-6031114c@d323d3799a3ec4d43166c8278adff645
 ---
 
 # Chapter 9:
@@ -17,8 +18,8 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-chapter-9-setting-target-scores-and-difficulties-ae9c232d]] - narrower source section: Chapter 9: / Setting Target Scores and Difficulties
-- [[sword-world-rpg-complete-edition-section-chapter-9-d8d72628]] - narrower source section: Chapter 9:
-- [[sword-world-rpg-complete-edition-section-chapter-9-c551036d]] - narrower source section: Chapter 9:
+- [[sword-world-rpg-complete-edition-section-chapter-9-9-3-general-modifiers-d8d72628]] - narrower source section: Chapter 9: / 9.3 General Modifiers
+- [[sword-world-rpg-complete-edition-section-chapter-9-9-4-automatic-success-restrictions-c551036d]] - narrower source section: Chapter 9: / 9.4 Automatic Success Restrictions
 
 ## Statements by subsection
 
@@ -53,32 +54,26 @@ From [[sword-world-rpg-complete-edition]].
 - During a difficulty check, it is up to the game master to decide whether or not to reveal the difficulty. However, the difficulty should be made as clear as possible. When a player makes a success roll, they use the baseline score (skill level + ability bonus) and the final score attained from the dice roll to infer the success or failure of the action. At this time, if you don't know the difficulty, it'll be difficult to guess. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05612))_
 - For example, let's say a character tries to find a trap. In this case, the final score of his success roll is 13. If the difficulty is clear, let's say it's 3, players can infer that they can only fail when the game master rolls an 11 or 12. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05613))_
 - However, this is not possible without knowing the difficulty. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05614))_
-- For example, if you want to jump over a cliff, success or failure is clear. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05608))_
-- When a trap is not found, a character has no way of knowing whether there really are no traps or if it's because they couldn't find it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05609))_
-- If you can fail on a success roll but still have it appear to be a success, then the success roll should be made as a difficulty check. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05610))_
-
-### Chapter 9:
-
 - The time when you should not reveal the difficulty is when revealing the difficulty itself would indicate that something is wrong . For example, suppose one mansion has a difficulty 5 trap and a difficulty 6 trap. What if the difficulty of finding traps has been 5 for a long time, but it suddenly increases to 6? _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05616))_
 - That alone will make players wary. In such cases, it is better to keep the difficulty low. A technique for creating scenarios is to keep the difficulty consistent for success rolls that are likely to be made frequently in one scenario, such as finding traps. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05617))_
 - If you really want to include traps with different difficulties, then when the difficulty changes, just nonchalantly say Okay, make a success roll without telling _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05618))_
+- For example, if you want to jump over a cliff, success or failure is clear. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05608))_
+- When a trap is not found, a character has no way of knowing whether there really are no traps or if it's because they couldn't find it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05609))_
+- If you can fail on a success roll but still have it appear to be a success, then the success roll should be made as a difficulty check. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05610))_
 - For example, suppose one mansion has a difficulty 5 trap and a difficulty 6 trap. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05616))_
 - A technique for creating scenarios is to keep the difficulty consistent for success rolls that are likely to be made frequently in one scenario, such as finding traps. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05617))_
 - If you really want to include traps with different difficulties, then when the difficulty changes, just nonchalantly say Okay, make a success roll without telling _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05618))_
 
-### Chapter 9: / General Modifiers
+### Chapter 9: / 9.3 General Modifiers
 
 - Success rolls may have modifiers applied to them. For example, trying to find things in situations with little light can be difficult. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05621))_
 - This situation can be reflected in the target score or difficulty, but there is also a way to deal with it by modifying the final score of the success roll. The advantage of dealing with this through modifiers is that it is simpler and easier to maintain fairness. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05622))_
 - For example, let's say you're searching for a document in a room with little light. Suppose there are three people: a human, an elf (shaman), and a dwarf. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05623))_
-- For example, trying to find things in situations with little light can be difficult. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05621))_
-
-### Chapter 9:
-
 - In this case, instead of the game master looking at the Determining Target Scores or Difficulties table for each , it's easier to deal with it by setting one target score, assuming there is complete light, and applying -4 to the human because they can't see, -2 to the elf (shaman) because they can use infravision, and no modifier to the dwarf because they have full darkvision. Also, since the modifiers are reflected in the final score, the advantage is that you can also see who did the best search. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05625))_
+- For example, trying to find things in situations with little light can be difficult. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05621))_
 - In this case, instead of the game master looking at the Determining Target Scores or Difficulties table for each , it's easier to deal with it by setting one target score, assuming there is complete light, and applying -4 to the human because they can't see, -2 to the elf (shaman) because they can use infravision, and no modifier to the dwarf because they have full darkvision. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05625))_
 
-### Chapter 9: / Automatic Success Restrictions
+### Chapter 9: / 9.4 Automatic Success Restrictions
 
 - A success roll of double sixes is defined as an automatic success. No matter how difficult an action is, there is a 1 in 36 chance of success. This is a rule for game-like fun. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05629))_
 - However, it would be unnatural if even something that seems so impossible has a 1 in 36 chance of success. For example, is it really possible for a character to jump over a cliff that's 20 meters wide? _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05630))_
@@ -199,7 +194,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > If the difficulty is clear, let's say it's 3, players can infer that they can only fail when the game master rolls an 11 or 12.
 
-### Technical frame 11: Chapter 9:
+### Technical frame 11: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05617))_
 
@@ -209,7 +204,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > The time when you should not reveal the difficulty is when revealing the difficulty itself would indicate that something is wrong .
 
-### Technical frame 12: Chapter 9:
+### Technical frame 12: Chapter 9: / 9.3 General Modifiers
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05625))_
 
@@ -219,7 +214,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > In Sword World RPG , the only guidelines for general success roll modifiers are as follows (Table 9-2: Success Roll Modifiers).
 
-### Technical frame 13: Chapter 9: / Automatic Success Restrictions
+### Technical frame 13: Chapter 9: / 9.4 Automatic Success Restrictions
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05634))_
 
@@ -229,7 +224,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > Of course, even if that's the case, stay true to the roll of your dice.
 
-### Technical frame 14: Chapter 9: / Automatic Success Restrictions
+### Technical frame 14: Chapter 9: / 9.4 Automatic Success Restrictions
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05643))_
 
@@ -239,7 +234,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > Of course, game masters may set other modifiers (such as -3) at their discretion.
 
-### Technical frame 15: Chapter 9: / Automatic Success Restrictions
+### Technical frame 15: Chapter 9: / 9.4 Automatic Success Restrictions
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05643))_
 
@@ -249,7 +244,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > Table 9-2: Success Roll Modifiers
 
-### Technical frame 16: Chapter 9: / Automatic Success Restrictions
+### Technical frame 16: Chapter 9: / 9.4 Automatic Success Restrictions
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05644))_
 
@@ -299,96 +294,6 @@ The  abilities  associated  with  these skills, including the thief skill , are 
 If the rules for determining the target score  or  difficulty  are  clearly  indicated, the  game  master  should  follow  those rules,  otherwise  the  game  master  must follow the rules under 9.1: Setting Target
 6.2
 6.2 Thief Skill
-```
-
-</details>
-
-### Technical atom 19
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06515))_
-
-> To remove a poison with magic, the caster's final score (magic power + 2D roll) must be greater than or equal to the poison's toxicity score . Once a detox fails, the same caster cannot attempt detox magic until their magic power increases (and even if they try, they will always fail).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06518))_
-
-| entry | content |
-| --- | --- |
-| 12 | 2.1.2 Resistance to Poison Poisons are not effective against everything. It has no effect on monsters that have no life such as undead, golems, etc. Some mythical and magical beasts have strong life force that makes them immune to poison. Some poison effects may or may not affect specific monsters. Monsters that use poison as weapons are immune to their own poisons (but are still affected by other poisons). |
-| 12 | 2.1.3 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-12.2.1.2 Resistance to Poison
-Poisons are not effective against everything. It has no effect on monsters that have no life such as undead, golems, etc.  Some  mythical  and  magical  beasts have  strong  life  force  that  makes  them immune to poison. Some poison effects may or may not affect specific monsters.
-Monsters that use poison as weapons are  immune  to  their own poisons  (but are still affected by other poisons).
-12.2.1.3
-```
-
-</details>
-
-### Technical atom 20
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11501))_
-
-> Actions that characters in a grapple can take are limited to the following.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11502))_
-
-| Attack | with | a | dagger, | barehanded (claws, talons), | cestus, etc. If | a monster has | fangs, | it | can | also | bite. | Opponents have a -2 penalty to evasion. |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Strangle your opponent barehanded or with a garrote. Opponents have a -2 penalty to evasion. Once strangling, the strangler can automatically deal damage every round. If you're barehanded, strike power | is | 0 | (critical | target | 12), | and | if you're using a garrote, strike power is 10 (critical target 10). Only adventurer level can reduce strangling damage. |  |  |  |  |  |
-| If | you're | being | strangled, | the only thing you can do in the rounds onward is attempt to break free. To resolve breaking | free, | the | one | being | strangled must make a success roll using adventurer level + strength bonus as | the baseline score, while the strangler must make one using fi ghter/thief skill level + strength | bonus . | If |
-| Also, | even | if | your | character | doesn't suffer damage, if or she remains strangled for a number of rounds equal to his or her life force , life force will immediately fall to 0, he or she will fall unconscious , | and | you'll | need | to | make | a death check . |  |
-| However, you cannot attack monsters that don't breathe (undead, etc.), monsters that are much larger than your character (ogres, etc.), or those that wear metal armor , | by | strangling. | Y ou | cannot deal damage | to | these, nor can you suffocate them. |  |  |  |  |  |  |
-| Use your strength and weight to pin down your opponent. To resolve this, the one attempting to pin down must make a success roll using fi ghter/thief skill level + | strength | bonus as | the | baseline | score, while | the | one | resisting | must | make | one using adventurer level + strength bonus . If the pinner's is greater, the pin | is successful. |
-| Once pinning, the pinner will automatically continue in that state and can perform normal attacks (of course, weapons | are | restricted). | However, | the one being pinned can attempt to break free. At this time, please make the same check. |  |  |  |  |  |  |  |  |
-| Even | while | grappling, | you | can | use holy magic so long as you can speak. It's not possible while being strangled , but if you're | merely | being pinned | down , | you can use | holy | magic. | Common |
-| Ancient magic, spirit magic, | and spellsongs cannot be used. |  |  |  |  |  |  |  |  |  |  |  |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-1. Normal Attack
-Attack  with  a  dagger,  barehanded (claws, talons),  cestus, etc. If  a monster has  fangs,  it  can  also  bite.  Opponents have a -2 penalty to evasion.
-2. Strangle/Continue to Strangle/Escape
-Strangle your opponent barehanded or with a garrote. Opponents have a -2 penalty to evasion. Once strangling, the strangler can automatically deal damage every round. If you're barehanded, strike power  is  0  (critical  target  12),  and  if you're using a garrote, strike power is 10 (critical target 10). Only adventurer level can reduce strangling damage.
-If  you're  being  strangled,  the only thing you can do in the rounds onward is attempt to break free. To resolve breaking  free,  the  one  being  strangled must make a success roll using adventurer level + strength bonus as  the baseline score, while the strangler must make one using fi ghter/thief skill level + strength  bonus .  If  the  final  score  of  the one trying to break free is greater, or if there's a tie, he or she will escape. While being  strangled,  you  cannot  make  any sound at all, so you cannot use magic.
-Also,  even  if  your  character  doesn't suffer damage, if or she remains strangled for a number of rounds equal to his or her life force , life force will immediately fall to 0, he or she will fall unconscious ,  and  you'll  need  to  make  a death check .
-You must make a death check every round so long as the strangling continues, even if you do not suffer any damage.
-However, you cannot attack monsters that don't breathe (undead, etc.), monsters that are much larger than your character (ogres, etc.), or those that wear metal armor ,  by  strangling.  Y ou  cannot deal damage  to  these, nor can you suffocate them.
-3. Pin Down
-Use your strength and weight to pin down your opponent. To resolve this, the one attempting to pin down must make a success roll using fi ghter/thief skill level +  strength  bonus as  the  baseline  score, while  the  one  resisting  must  make  one using adventurer level + strength bonus . If the pinner's is greater, the pin  is successful.
-Once pinning, the pinner will automatically continue in that state and can perform normal attacks (of course, weapons  are  restricted).  However,  the one being pinned can attempt to break free. At this time, please make the same check.
-4. Using Holy Magic or Common Runes
-Even  while  grappling,  you  can  use holy magic so long as you can speak. It's not possible while being strangled , but if you're  merely  being pinned  down ,  you can use  holy  magic.  Common  runes require you to not only be able to speak, but to also be able to use a catalyst. It's usually a ring, so you can use it.
-Ancient magic, spirit magic,  and spellsongs cannot be used.
-5. Escape from Grapple
-```
-
-</details>
-
-### Technical atom 21
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11554))_
-
-| entry | content |
-| --- | --- |
-| 16 | 7 Throwing Multiple Darts or Daggers It' s possible to throw multiple darts or daggers at once. However, the following restrictions occur in this case: All objects thrown at the same time must have the same weight (required strength). The total required strength must be up to the character's strength (or half that if it's the thief skill). |
-| 16 | 8 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Throwing Multiple Darts or Daggers
-16.7 Throwing Multiple Darts or Daggers
-It' s  possible  to  throw multiple darts or daggers at once. However, the following restrictions occur in this case:
-All  objects  thrown  at  the  same time must have the same weight (required strength).
-The total required strength must be up to the character's strength (or half that if it's the thief skill).
-16.8
 ```
 
 </details>

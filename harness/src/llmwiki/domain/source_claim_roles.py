@@ -179,11 +179,7 @@ def _role_matches(
             word_prefixes, "inscription"
         )
     if role == "provenance":
-        return (
-            "from" in word_set
-            or "retrieved" in word_set
-            or _has_stem(word_prefixes, "origin")
-        )
+        return "from" in word_set or "retrieved" in word_set or _has_stem(word_prefixes, "origin")
     if role == "temporal":
         return (
             _has_year(words)

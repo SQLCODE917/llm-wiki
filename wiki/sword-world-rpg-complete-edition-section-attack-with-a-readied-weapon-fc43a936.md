@@ -1,22 +1,19 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-attack-with-a-readied-weapon-fc43a936
 page_kind: source
+page_family: section-reference
 summary: Attack with a Readied Weapon: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-attack-with-a-readied-weapon-fc43a936@4aa3b259933ce30b0ecc314cb413a314
+projection_coverage: section-sword-world-rpg-complete-edition-section-attack-with-a-readied-weapon-fc43a936@21bed3160e7ddf0c97072e46601cf0fd
 ---
 
 # Attack with a Readied Weapon
 
 From [[sword-world-rpg-complete-edition]].
-
-## Related pages
-
-- [[sword-world-rpg-complete-edition-section-3-4-3-46f0996b]] - broader source section: 3.4.3
 
 ## Statements
 

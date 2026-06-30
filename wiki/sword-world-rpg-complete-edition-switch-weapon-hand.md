@@ -1,9 +1,10 @@
 ---
 page_id: sword-world-rpg-complete-edition-switch-weapon-hand
 page_kind: concept
+page_family: topic-concept
 summary: Switch Weapon Hand: 1 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
 projection_coverage: topic-sword-world-rpg-complete-edition-switch-weapon-hand@f0ea6a97ea75fa9dba482b4ce7641e03

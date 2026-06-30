@@ -1,12 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-ability-bonuse
 page_kind: concept
+page_family: topic-concept
 summary: 【 Ability Bonuses 】: 10 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-ability-bonuse@a2bf4f399a1137b25c1aea634f398473
+projection_coverage: topic-sword-world-rpg-complete-edition-ability-bonuse@4590239d5eece7105facf2ca9b45b287
 ---
 
 # 【 Ability Bonuses 】
@@ -23,11 +24,11 @@ What [[sword-world-rpg-complete-edition]] covers about 【 ability bonuses 】:
 
 - Players are free to choose from humans or any of these races to be their alter ego, an adventurer. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00199))_
 
-### 1.4.2 Determine Ability Scores
+### 1.4 Character Creation / 1.4.2 Determine Ability Scores
 
 - Once the ability scores have been determined, also find the ability bonuses and write them down on the Character Sheet. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00518))_
 
-### [ ⑤ Ability Bonuses ]
+### 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑤ Ability Bonuses ]
 
 - Once ability scores have been calculated, the next step is the ability bonuses. A bonus is an ability score divided by 6 (rounded down). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01126))_
 
@@ -54,9 +55,9 @@ What [[sword-world-rpg-complete-edition]] covers about 【 ability bonuses 】:
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-ability-score]] - shared statements: Ability Scores shares source evidence from 【 Ability Bonuses 】: An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in Sword World RPG , success or failure is determin ... [truncated] (6 shared statement(s))
-- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: Filling Out the Character Sheet shares source evidence from 1.4.2 Determine Ability Scores: Once the ability scores have been determined, also find the ability bonuses and write them down on the Character Sheet. (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: 1.4.9 Filling Out the Character Sheet shares source evidence from 1.4 Character Creation / 1.4.2 Determine Ability Scores: Once the ability scores have been determined, also find the ability bonuses and write them down on the Character Sheet. (3 shared statement(s))
 - [[sword-world-rpg-complete-edition-section-ability-bonuses-d68698df]] - source section: 【 Ability Bonuses 】 shares source evidence from 【 Ability Bonuses 】: An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in Sword World RPG , success or failure is determin ... [truncated]; 【 Ability Bonuses 】 shares technical record from 【 Ability Bonuses 】: etc.) When a character's ability score increases or decreases, even temporarily, the ability bonus increases or decreases accordingly. (7 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-ability-bonuses-b2f8cd3d]] - source section: [ ⑤ Ability Bonuses ] shares source evidence from [ ⑤ Ability Bonuses ]: Once ability scores have been calculated, the next step is the ability bonuses. A bonus is an ability score divided by 6 (rounded down). (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-ability-bonuses-b2f8cd3d]] - source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑤ Ability Bonuses ] shares source evidence from 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑤ Ability Bonuses ]: Once ability scores have been calculated, the next step is the ability bonuses. A bonus is an ability score divided by 6 (rounded down). (2 shared statement(s))
 
 ## Source
 

@@ -11,6 +11,7 @@ from llmwiki.domain.ledger.artifacts import (
     build_claim_ledger_artifact,
     build_document_structure_artifact,
     build_ledger_quality_report_artifact,
+    build_projection_context_artifact,
     build_projection_coverage_artifact,
     build_quality_check_catalog_artifact,
     build_source_coverage_artifact,
@@ -203,6 +204,11 @@ def build_source_ledger(
 
     section_plan = build_section_grounded_plan(ledger, structure)
     projection_context = build_projection_context(ledger, structure)
+    projection_context_artifact = build_projection_context_artifact(
+        source_locator=source_locator,
+        source_hash=source_hash,
+        projection_context=projection_context,
+    )
     topics = plan_source_topics(ledger, structure, section_plan=section_plan)
     topic_index = build_topic_index(
         ledger,
@@ -265,6 +271,7 @@ def build_source_ledger(
         ledger_report_artifact=ledger_report_artifact,
         projection_report_artifact=projection_report_artifact,
         coverage_artifact=coverage_artifact,
+        projection_context_artifact=projection_context_artifact,
         section_plan=section_plan,
         topic_index=topic_index,
         source_coverage_artifact=source_coverage_artifact,

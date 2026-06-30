@@ -1,9 +1,10 @@
 ---
 page_id: sword-world-rpg-complete-edition-monster-action-announcement
 page_kind: concept
+page_family: topic-concept
 summary: Monster Action Announcement: 2 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
 projection_coverage: topic-sword-world-rpg-complete-edition-monster-action-announcement@997a4d1a8e69cd1ae1bf942e51a7bd0d

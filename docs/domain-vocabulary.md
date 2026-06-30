@@ -29,6 +29,7 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 |---|---|
 | `PageId` | `page_id` |
 | `PageKind` | `page_kind` |
+| `PageFamily` | `page_family` |
 | `PagePath` | `page_path` |
 | `PageBody` | `page_body` |
 | `PageBodyContract` | `page_body_contract` |
@@ -86,6 +87,10 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `ClaimSupportVerdict` | `claim_support_verdict` |
 | `ClaimSupportFinding` | `claim_support_finding` |
 | `ClaimSupportAuditReport` | `claim_support_audit_report` |
+| `ProjectionPolicy` | `projection_policy` |
+| `ProjectionBudget` | `projection_budget` |
+| `ProjectionContext` | `projection_context` |
+| `ProjectionEligibility` | `projection_eligibility` |
 | `IngestConfidenceReport` | `ingest_confidence_report` |
 | `IngestConfidenceGate` | `ingest_confidence_gate` |
 | `ValidationFinding` | `validation_finding` |
@@ -122,6 +127,10 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | Term | Status | Canonical owner or current surface |
 |---|---|---|
 | PageMetadata | Exists | `llmwiki.domain.pages` |
+| ProjectionPolicy | Exists | `llmwiki.domain.ledger.projection_policy`; decides page family, source-support budget, and standalone render eligibility |
+| ProjectionBudget | Exists | `llmwiki.domain.ledger.projection_policy`; source-agnostic thresholds for broad topic projection |
+| ProjectionContext | Exists | `llmwiki.domain.ledger.projection_context`; portable coherent evidence blocks and technical atom frames |
+| ProjectionEligibility | Exists | `llmwiki.domain.ledger.projection_policy`; classifies ledger entries as standalone, contextual-only, technical-frame-only, or review-only |
 | IngestRoutePlan | Exists | `llmwiki.domain.ingest_route_plan` |
 | PlannedPage | Exists | `llmwiki.domain.ingest_route_plan` |
 | RouteGap | Exists | `llmwiki.domain.ingest_route_plan` |
@@ -220,6 +229,7 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | chat SQLite rows | `llmwiki.store.chat_store` | `ChatSession` concept |
 | accepted source summary draft JSON | `cache/page-plans/*/accepted-source-summaries/*.json` | `SourceSummaryDraft` |
 | technical atom catalog JSON | `cache/page-plans/*/technical-atoms.json` | `TechnicalAtomCatalog` |
+| projection context JSON | `cache/page-plans/*/ledger/projection-context.json` | `ProjectionContext` |
 
 ### View Models
 

@@ -1,12 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-ancient-magic
 page_kind: concept
+page_family: topic-concept
 summary: Ancient Magic: 4 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-ancient-magic@02abd138db1591da5941c423e1f035db
+projection_coverage: topic-sword-world-rpg-complete-edition-ancient-magic@ae4a49611f488efbcc0b8a0f72f01de7
 ---
 
 # Ancient Magic
@@ -23,10 +24,6 @@ What [[sword-world-rpg-complete-edition]] covers about ancient magic:
 
 - If you don't obey these two things, you won't be able to use ancient magic. Other rules follow the basic rules of magic. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02761))_
 
-
-## Related pages
-
-- [[sword-world-rpg-complete-edition-sorcerer-skill]] - shared statements: Sorcerer Skill shares source evidence from 5.1.11 Ancient Magic and the Sorcerer Skill: High ancient are the great runes that were developed and studied during the time of the ancient kingdom. The power of these runes releases magic forces and brings ab ... [truncated] (1 shared statement(s))
 
 ## Source
 

@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-criticals-c8e92745
 page_kind: source
+page_family: section-reference
 summary: 【 Criticals? 】: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-criticals-c8e92745@0b4202f849a47e01d057650c16a5d9dd
+projection_coverage: section-sword-world-rpg-complete-edition-section-criticals-c8e92745@def03acf5d0574d60ec9a4a8c138d842
 ---
 
 # 【 Criticals? 】
@@ -16,7 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-criticals-b18f30d7]] - same source heading: another source section with the same heading, 【 Criticals
+- [[sword-world-rpg-complete-edition-section-4-5-2-determining-base-damage-strike-roll-criticals-b18f30d7]] - same source heading: another source section with the same heading, 4.5.2 Determining Base Damage (Strike Roll) / 【 Criticals
 
 ## Statements
 

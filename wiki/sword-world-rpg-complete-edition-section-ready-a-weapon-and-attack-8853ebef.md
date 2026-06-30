@@ -1,22 +1,19 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-ready-a-weapon-and-attack-8853ebef
 page_kind: source
+page_family: section-reference
 summary: Ready a Weapon and Attack: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ready-a-weapon-and-attack-8853ebef@ddca7f3f984c3a7e245f945ce3fa6367
+projection_coverage: section-sword-world-rpg-complete-edition-section-ready-a-weapon-and-attack-8853ebef@714bf4230982f5056aef1a3b62d86e6b
 ---
 
 # Ready a Weapon and Attack
 
 From [[sword-world-rpg-complete-edition]].
-
-## Related pages
-
-- [[sword-world-rpg-complete-edition-section-3-4-3-46f0996b]] - broader source section: 3.4.3
 
 ## Statements
 

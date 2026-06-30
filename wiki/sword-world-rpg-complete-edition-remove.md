@@ -1,12 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-remove
 page_kind: concept
+page_family: topic-concept
 summary: Remove: 3 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-remove@cbf0710f0720532eb108d7a17de8690b
+projection_coverage: topic-sword-world-rpg-complete-edition-remove@4a5c6fc81c0125c7977ede1bc7d123f5
 ---
 
 # Remove
@@ -15,7 +16,7 @@ What [[sword-world-rpg-complete-edition]] covers about remove:
 
 ## Statements
 
-### Chapter 6: / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable)
+### Chapter 6: / 6.1 Precautions When Using Skills / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable)
 
 - You can attempt to remove traps discovered through fi nd . Removal also involves attempting a success roll against the trap's difficulty. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04983))_
 
@@ -26,7 +27,7 @@ What [[sword-world-rpg-complete-edition]] covers about remove:
 
 ## Technical atoms
 
-### Technical frame 1: Chapter 6: / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable)
+### Technical frame 1: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable)
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04985))_
 
@@ -36,7 +37,7 @@ What [[sword-world-rpg-complete-edition]] covers about remove:
 
 > If you fail, the trap will be activated if the dice roll was 6 or more beneath the target score.
 
-### Technical frame 2: Chapter 6: / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable)
+### Technical frame 2: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable)
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04984))_
 

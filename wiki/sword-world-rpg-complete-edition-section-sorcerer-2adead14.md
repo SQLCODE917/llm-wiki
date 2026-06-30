@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-sorcerer-2adead14
 page_kind: source
+page_family: section-reference
 summary: 【 Sorcerer 】: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sorcerer-2adead14@77f08aec18643e6e3f0ee599069c3e50
+projection_coverage: section-sword-world-rpg-complete-edition-section-sorcerer-2adead14@ffb2db49ae08685b97b9e28ccce53f28
 ---
 
 # 【 Sorcerer 】
@@ -16,7 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-sorcerer-2c62362e]] - same source heading: another source section with the same heading, [ Sorcerer ]
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-sorcerer-2c62362e]] - same source heading: another source section with the same heading, 1.4 Character Creation / [ Sorcerer ]
 
 ## Statements
 

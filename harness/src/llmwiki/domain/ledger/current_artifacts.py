@@ -11,12 +11,14 @@ from llmwiki.domain.ledger.artifacts import (
     LedgerQualityReportArtifact,
     PortableArtifactMember,
     PortableArtifactSet,
+    ProjectionContextArtifact,
     ProjectionCoverageArtifact,
     QualityCheckCatalogArtifact,
     build_claim_ledger_artifact,
     build_document_structure_artifact,
     build_ledger_quality_report_artifact,
     build_portable_artifact_set,
+    build_projection_context_artifact,
     build_projection_coverage_artifact,
     build_quality_check_catalog_artifact,
 )
@@ -37,6 +39,7 @@ from llmwiki.domain.ledger.pointers import (
     ledger_quality_report_pointer,
     quality_check_catalog_pointer,
 )
+from llmwiki.domain.ledger.projection_context import build_projection_context
 from llmwiki.domain.ledger.quality import LedgerQualityReport, build_ledger_quality_report
 from llmwiki.domain.ledger.quality_catalog import (
     default_quality_check_catalog,
@@ -59,6 +62,7 @@ class CurrentLedgerArtifacts:
     quality_check_catalog_artifact: QualityCheckCatalogArtifact
     ledger_quality_report_artifact: LedgerQualityReportArtifact
     projection_coverage_artifact: ProjectionCoverageArtifact
+    projection_context_artifact: ProjectionContextArtifact
     topic_index: TopicIndex
     portable_artifact_set: PortableArtifactSet
 
@@ -74,6 +78,7 @@ class CurrentLedgerArtifacts:
                 self.ledger_quality_report_artifact, indent=2
             ),
             "projection-coverage.json": canonical_json(self.projection_coverage_artifact, indent=2),
+            "projection-context.json": canonical_json(self.projection_context_artifact, indent=2),
             "topics.json": canonical_json(self.topic_index, indent=2),
             "portable-artifact-set.json": canonical_json(self.portable_artifact_set, indent=2),
         }
@@ -173,6 +178,11 @@ def _artifacts(
         evidence_registry=evidence_registry,
         ledger=ledger,
     )
+    projection_context_artifact = build_projection_context_artifact(
+        source_locator=source_locator,
+        source_hash=source_hash,
+        projection_context=build_projection_context(ledger, structure),
+    )
     manifest = build_portable_artifact_set(
         (
             _member("document-structure-artifact", structure_artifact),
@@ -188,6 +198,11 @@ def _artifacts(
                 projection_coverage_artifact.projection_coverage_artifact_id,
                 projection_coverage_artifact.projection_coverage_fingerprint,
             ),
+            PortableArtifactMember(
+                "projection-context-artifact",
+                projection_context_artifact.projection_context_artifact_id,
+                projection_context_artifact.projection_context_fingerprint,
+            ),
         )
     )
     return CurrentLedgerArtifacts(
@@ -199,6 +214,7 @@ def _artifacts(
         catalog_artifact,
         report_artifact,
         projection_coverage_artifact,
+        projection_context_artifact,
         topic_index,
         manifest,
     )

@@ -16,6 +16,7 @@ from llmwiki.domain.ledger.atoms import atom_raw_text
 from llmwiki.domain.ledger.concepts import concept_topic_keys
 from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.ledger import ClaimLedger
+from llmwiki.domain.ledger.projection_substance import entry_is_unresolved_context_pointer
 from llmwiki.domain.ledger.section_navigation import section_title
 from llmwiki.domain.ledger.section_planning import SectionGroundedPlan
 from llmwiki.domain.ledger.structure import DocumentStructure
@@ -198,6 +199,15 @@ def _aggregate(
                 index, matcher, candidate.terms, prepared_required_terms
             )
         ]
+        section_entries = [
+            index.entry for index in indexed_entries if index.entry.ledger_entry_id in evidence_ids
+        ]
+        if (
+            matched
+            and all(entry_is_unresolved_context_pointer(entry) for entry in matched)
+            and any(not entry_is_unresolved_context_pointer(entry) for entry in section_entries)
+        ):
+            matched = section_entries
         atom_ids = tuple(
             atom_id
             for atom_id in candidate.evidence_atom_ids
@@ -205,6 +215,8 @@ def _aggregate(
                 ledger, atom_id, matcher, candidate.terms, prepared_required_terms
             )
         )
+        if not atom_ids and len(matched) > 1:
+            atom_ids = candidate.evidence_atom_ids
     elif candidate.evidence_kind == "concept":
         matched = _entries_for_concept(candidate, indexed_entries)
         atom_ids = _atom_ids_near_entries(

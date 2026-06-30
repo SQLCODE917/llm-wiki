@@ -133,11 +133,7 @@ def required_topic_terms(terms: tuple[str, ...]) -> tuple[str, ...]:
 
 def matching_topic_terms(text: str, terms: tuple[str, ...]) -> tuple[str, ...]:
     tokens = set(_match_tokens(text))
-    return tuple(
-        term
-        for term in _bounded_match_terms(terms)
-        if term in tokens
-    )
+    return tuple(term for term in _bounded_match_terms(terms) if term in tokens)
 
 
 def required_topic_hit_count(terms: tuple[str, ...]) -> int:
@@ -219,9 +215,7 @@ def _match_tokens(text: object) -> tuple[str, ...]:
     return tuple(dict.fromkeys(tokens))
 
 
-def _ascii_tokens(
-    text: object, *, min_length: int, require_alpha_start: bool
-) -> tuple[str, ...]:
+def _ascii_tokens(text: object, *, min_length: int, require_alpha_start: bool) -> tuple[str, ...]:
     tokens: list[str] = []
     current: list[str] = []
     for char in _bounded_topic_text(text):

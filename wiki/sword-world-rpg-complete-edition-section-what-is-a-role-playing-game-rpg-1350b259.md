@@ -1,9 +1,10 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-what-is-a-role-playing-game-rpg-1350b259
 page_kind: source
+page_family: section-reference
 summary: What is a Role-Playing Game (RPG)?: 40 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf

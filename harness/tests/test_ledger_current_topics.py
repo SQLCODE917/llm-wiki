@@ -11,10 +11,7 @@ from llmwiki.domain.objects import Evidence, PagePlan, RawSource, SourceBundle, 
 
 def test_term_topics_build_from_bounded_term_claim_map() -> None:
     raw = RawSource("rules.pdf", "pdf")
-    claims = tuple(
-        _claim(raw, f"claim-{index}", ("alpha", f"term{index}"))
-        for index in range(300)
-    )
+    claims = tuple(_claim(raw, f"claim-{index}", ("alpha", f"term{index}")) for index in range(300))
     entries = tuple(_entry(f"entry-{index}", f"claim-{index}") for index in range(300))
     entries_by_claim = {f"claim-{index}": entries[index] for index in range(300)}
 

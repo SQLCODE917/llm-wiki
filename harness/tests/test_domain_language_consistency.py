@@ -9,7 +9,7 @@ from pathlib import Path
 from llmwiki.domain.links import compute_findings
 from llmwiki.domain.objects import LintRun, SourcePlan
 from llmwiki.domain.pages import PageMetadata, WikiPage, render_page
-from llmwiki.domain.schema import PAGE_KINDS, PAGE_METADATA_FIELDS
+from llmwiki.domain.schema import PAGE_FAMILIES, PAGE_KINDS, PAGE_METADATA_FIELDS
 from llmwiki.workflows.tools import ReadPageParams, ReadSourceParams, WritePageParams
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -91,12 +91,18 @@ def test_domain_vocabulary_contains_domain_term_code_name_table() -> None:
 
 
 def test_domain_frontmatter_uses_page_metadata_field_names() -> None:
-    metadata = PageMetadata(page_id="closure", page_kind="concept", summary="A closure.")
+    metadata = PageMetadata(
+        page_id="closure",
+        page_kind="concept",
+        page_family="topic-concept",
+        summary="A closure.",
+    )
     page = WikiPage.from_metadata(metadata, "Body.")
     rendered = render_page(page)
 
     assert "page_id: closure" in rendered
     assert "page_kind: concept" in rendered
+    assert "page_family: topic-concept" in rendered
     assert "summary: A closure." in rendered
     assert "category:" not in rendered
     assert "name:" not in rendered
@@ -104,7 +110,23 @@ def test_domain_frontmatter_uses_page_metadata_field_names() -> None:
 
 def test_schema_module_is_the_page_kind_and_metadata_field_source() -> None:
     assert PAGE_KINDS == ("source", "entity", "concept", "synthesis")
-    assert PAGE_METADATA_FIELDS == ("PageId", "PageKind", "Summary", "Sources", "Updated")
+    assert PAGE_FAMILIES == (
+        "source-manifest",
+        "source-summary",
+        "section-reference",
+        "topic-concept",
+        "broad-topic",
+        "entity-profile",
+        "cross-source-synthesis",
+    )
+    assert PAGE_METADATA_FIELDS == (
+        "PageId",
+        "PageKind",
+        "PageFamily",
+        "Summary",
+        "Sources",
+        "Updated",
+    )
 
 
 def test_source_plan_references_planned_page_writes_without_target_duplicates() -> None:

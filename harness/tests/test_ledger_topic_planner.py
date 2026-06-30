@@ -1,6 +1,6 @@
 from llmwiki.domain.ledger.atom_context import TechnicalAtomContext
 from llmwiki.domain.ledger.atoms import FormulaPayload, TechnicalAtom
-from llmwiki.domain.ledger.common import ConfidenceBasis
+from llmwiki.domain.ledger.common import ConfidenceBasis, SpatialScope
 from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.ledger import (
     ClaimLedger,
@@ -280,6 +280,71 @@ def test_repeated_numbered_compound_topics_do_not_include_adverbial_prefix_noise
     assert "entry-resistance" not in topics[0].entry_ids
 
 
+def test_section_component_topic_uses_section_evidence_when_match_is_context_pointer() -> None:
+    ledger = _ledger(
+        _context_pointer_entry(
+            "entry-summary",
+            "node-acquiring",
+            "Here is a summary of how to acquire and increase each rune master skill.",
+        ),
+        _entry(
+            "entry-sorcerer",
+            "node-sorcerer",
+            "The sorcerer skill is increased by spending experience points.",
+            "The sorcerer skill",
+        ),
+    )
+    structure = DocumentStructure(
+        "root",
+        (
+            StructureNode("root", "root", "source.pdf", "root", "source.pdf", 0),
+            StructureNode(
+                "node-acquiring",
+                "section",
+                "11.4 Acquiring Rune Master Skills and Increasing Levels",
+                "range-acquiring",
+                "source.pdf",
+                1,
+            ),
+            StructureNode(
+                "node-sorcerer",
+                "section",
+                "Sorcerer Skill",
+                "range-sorcerer",
+                "source.pdf",
+                2,
+                parent_structure_node_id="node-acquiring",
+            ),
+        ),
+    )
+    section_plan = SectionGroundedPlan(
+        section_grounded_plan_id="section-plan",
+        section_grounded_plan_fingerprint="fingerprint",
+        source_locator="source.pdf",
+        source_hash="sourcehash",
+        page_targets=(
+            PageTarget(
+                page_target_id="target-acquiring",
+                topic_key="acquiring-rune-master-skill-and-increasing-level",
+                label="11.4 Acquiring Rune Master Skills and Increasing Levels",
+                page_kind="concept",
+                structure_node_id="node-acquiring",
+                source_range_id="range-acquiring",
+                concept_keys=("acquiring-rune-master-skill",),
+                entry_ids=("entry-summary", "entry-sorcerer"),
+                atom_ids=(),
+                attached_evidence=(),
+            ),
+        ),
+        source_coverage_map=(),
+    )
+
+    topics = plan_source_topics(ledger, structure, section_plan=section_plan)
+
+    target = next(topic for topic in topics if topic.topic_key == "acquiring-rune-master-skill")
+    assert set(target.entry_ids) == {"entry-summary", "entry-sorcerer"}
+
+
 def _entry(entry_id: str, node_id: str, text: str, subject: str) -> LedgerEntry:
     return LedgerEntry(
         ledger_entry_id=entry_id,
@@ -300,6 +365,35 @@ def _entry(entry_id: str, node_id: str, text: str, subject: str) -> LedgerEntry:
         object_value=text,
         polarity="positive",
         claim_force="asserted",
+    )
+
+
+def _context_pointer_entry(entry_id: str, node_id: str, text: str) -> LedgerEntry:
+    return LedgerEntry(
+        ledger_entry_id=entry_id,
+        source_statement_id=f"statement-{entry_id}",
+        ledger_entry_kind="claim",
+        ledger_entry_status="usable",
+        extraction_confidence="medium",
+        confidence_basis=ConfidenceBasis("test"),
+        source_locator="source.pdf",
+        source_hash="sourcehash",
+        source_range_id=f"range-{entry_id}",
+        evidence_ids=(f"ev-{entry_id}",),
+        source_text=text,
+        structure_node_ids=(node_id,),
+        normalized_text=text,
+        subject="Here",
+        predicate="is",
+        object_value=text,
+        polarity="positive",
+        claim_force="asserted",
+        spatial_scope=SpatialScope(
+            spatial_text="Here",
+            spatial_kind="relative-location",
+            spatial_confidence="low",
+        ),
+        claim_role_tags=("identity",),
     )
 
 

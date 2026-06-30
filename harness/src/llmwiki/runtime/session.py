@@ -312,10 +312,16 @@ class Session:
             result,
             reuse_persisted=not reextract,
         )
+        cached_plan_is_current = (
+            not reextract
+            and self._cached_pdf_page_plan(source_locator, result.manifest, result.cache_dir)
+            is not None
+        )
         self._persist_page_plan(
             source_locator,
             page_plan,
             reuse_technical_catalog=reintegrate,
+            skip_existing_artifacts=cached_plan_is_current,
         )
         save_manifest(
             ExtractionResult(manifest=result.manifest.mark_integrated(), cache_dir=result.cache_dir)
@@ -433,7 +439,9 @@ class Session:
         reuse_persisted: bool = True,
     ) -> PagePlan:
         if reuse_persisted and _manifest_has_progress(result.manifest):
-            cached_plan = self._cached_pdf_page_plan(source_locator, result.manifest)
+            cached_plan = self._cached_pdf_page_plan(
+                source_locator, result.manifest, result.cache_dir
+            )
             if cached_plan is not None:
                 return cached_plan
         raw_source = _single_raw_source(ingest_run)
@@ -460,7 +468,9 @@ class Session:
             new_page_prefix=self._pdf_page_prefix(source_locator),
         )
 
-    def _cached_pdf_page_plan(self, source_locator: str, manifest: Manifest) -> PagePlan | None:
+    def _cached_pdf_page_plan(
+        self, source_locator: str, manifest: Manifest, cache_dir: Path
+    ) -> PagePlan | None:
         cached = self.store.read_page_plan_artifact(source_locator)
         if cached is None:
             return None
@@ -470,6 +480,8 @@ class Session:
             return None
         if not _pdf_page_plan_matches_manifest(plan, source_locator, manifest):
             return None
+        if not _pdf_page_plan_matches_cache_text(plan, manifest, cache_dir):
+            return None
         return plan
 
     def _persist_page_plan(
@@ -478,9 +490,12 @@ class Session:
         page_plan: PagePlan,
         *,
         reuse_technical_catalog: bool = False,
+        skip_existing_artifacts: bool = False,
     ) -> str:
         report = observation_report(page_plan)
         has_page_plan_artifact = self.store.read_page_plan_artifact(source_locator) is not None
+        if skip_existing_artifacts and has_page_plan_artifact:
+            return report
         if reuse_technical_catalog and has_page_plan_artifact:
             return report
         self.store.write_page_plan_artifacts(source_locator, page_plan_to_json(page_plan), report)
@@ -1108,6 +1123,22 @@ def _pdf_page_plan_matches_manifest(
     if not _page_plan_sources_match_source(page_plan, source_locator):
         return False
     return _page_plan_unit_map(page_plan) == _manifest_unit_map(manifest)
+
+
+def _pdf_page_plan_matches_cache_text(
+    page_plan: PagePlan, manifest: Manifest, cache_dir: Path
+) -> bool:
+    units_by_id = {unit.unit_id: unit for unit in page_plan.extracted_units}
+    for record in manifest.chunks:
+        unit = units_by_id.get(f"unit-{record.chunk_id:04d}")
+        if unit is None:
+            return False
+        chunk_path = chunk_file(cache_dir, record.chunk_id)
+        if not chunk_path.is_file():
+            return False
+        if unit.text != chunk_path.read_text(encoding="utf-8"):
+            return False
+    return True
 
 
 def _page_plan_unit_map(page_plan: PagePlan) -> tuple[tuple[str, str, str], ...]:

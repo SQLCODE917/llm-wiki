@@ -106,8 +106,7 @@ def test_walkability_accepts_source_structure_links() -> None:
 
     assert report.rejected_links == ()
     assert related_link_markdown(report.accepted_links[0]) == (
-        "- [[source-section-parent]] - broader source section: "
-        "Chapter 1 / Character Creation"
+        "- [[source-section-parent]] - broader source section: Chapter 1 / Character Creation"
     )
 
 

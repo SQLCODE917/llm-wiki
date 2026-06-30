@@ -1,12 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-jump
 page_kind: concept
+page_family: topic-concept
 summary: Jump: 10 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-jump@7e512dca94529b2433063834bfc6975e
+projection_coverage: topic-sword-world-rpg-complete-edition-jump@d00fb07b655bc26e2ee75a2c46680b68
 ---
 
 # Jump
@@ -15,7 +16,7 @@ What [[sword-world-rpg-complete-edition]] covers about jump:
 
 ## Statements
 
-### Chapter 6: / [ ⑤ Long Jump/High Jump [Agility] ]
+### [ ⑤ Long Jump/High Jump [Agility] ]
 
 - Long jump and high jump are common adventurer abilities, and are also abilities of the thief skill. The latter allows you to jump farther and higher. The baseline score is thief skill level + agility bonus or adventurer level + agility bonus (Table 6-3: Determining Long Jump Target Scores). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05210))_
 
@@ -28,7 +29,7 @@ What [[sword-world-rpg-complete-edition]] covers about jump:
 
 ## Technical atoms
 
-### Technical frame 1: Chapter 6: / [ ⑤ Long Jump/High Jump [Agility] ]
+### Technical frame 1: [ ⑤ Long Jump/High Jump [Agility] ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05216))_
 
@@ -41,8 +42,8 @@ What [[sword-world-rpg-complete-edition]] covers about jump:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-target-score]] - shared statements and technical atoms: Target Scores shares source evidence from Chapter 6: / [ ⑤ Long Jump/High Jump [Agility] ]: Long jump and high jump are common adventurer abilities, and are also abilities of the thief skill. The latter allows you to jump farther and higher. The baseline sc ... [truncated]; Target Scores shares technical record from Chapter 6: / [ ⑤ Long Jump/High Jump [Agility] ]: Table 6-3: Determining Long Jump Target Scores (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from Chapter 6: / [ ⑤ Long Jump/High Jump [Agility] ]: Long jump and high jump are common adventurer abilities, and are also abilities of the thief skill. The latter allows you to jump farther and higher. The baseline sc ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-target-score]] - shared statements and technical atoms: Target Scores shares source evidence from [ ⑤ Long Jump/High Jump [Agility] ]: Long jump and high jump are common adventurer abilities, and are also abilities of the thief skill. The latter allows you to jump farther and higher. The baseline sc ... [truncated]; Target Scores shares technical record from [ ⑤ Long Jump/High Jump [Agility] ]: Table 6-3: Determining Long Jump Target Scores (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from [ ⑤ Long Jump/High Jump [Agility] ]: Long jump and high jump are common adventurer abilities, and are also abilities of the thief skill. The latter allows you to jump farther and higher. The baseline sc ... [truncated] (1 shared statement(s))
 
 ## Source
 

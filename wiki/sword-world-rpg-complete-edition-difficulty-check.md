@@ -1,12 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-difficulty-check
 page_kind: concept
+page_family: topic-concept
 summary: Difficulty Check: 3 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-difficulty-check@f92a6ac8a2a80e9af17c81838f20f541
+projection_coverage: topic-sword-world-rpg-complete-edition-difficulty-check@d148b26950aa8dceba522c62116d86e3
 ---
 
 # Difficulty Check
@@ -53,7 +54,7 @@ What [[sword-world-rpg-complete-edition]] covers about difficulty check:
 - [[sword-world-rpg-complete-edition-should-you-target-score-check]] - shared statements and technical atoms: Should You Target Score Check shares source evidence from Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: There are two types of success rolls: those that use a target score for the check and those that use a difficulty for the check. The game master must decide which of ... [truncated]; Should You Target Score Check shares technical record from Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: The standard for deciding is whether the character can tell if the action succeeded or failed . (2 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-setting-target-score]] - shared statements and technical atoms: Setting Target Score shares source evidence from Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: There are two types of success rolls: those that use a target score for the check and those that use a difficulty for the check. The game master must decide which of ... [truncated]; Setting Target Score shares technical record from Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: The standard for deciding is whether the character can tell if the action succeeded or failed . (1 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-target-score]] - shared statements and technical atoms: Target Scores shares source evidence from Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: There are two types of success rolls: those that use a target score for the check and those that use a difficulty for the check. The game master must decide which of ... [truncated]; Target Scores shares technical record from Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: The standard for deciding is whether the character can tell if the action succeeded or failed . (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-difficulty-checks-195d02c4]] - source section: Difficulty Checks shares source evidence from Difficulty Checks: You (your character) are now at a door. The owner of the mansion is known to be paranoid and is rumored to have set numerous traps. So you decide to check for traps, ... [truncated]; Difficulty Checks shares technical record from Difficulty Checks: You (the player) roll the dice. The roll is 8 . 4+8= 12 , so it's a success, although just barely. (19 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-2-5-difficulty-checks-6c442155]] - source section: 2.5 Difficulty Checks shares source evidence from 2.5 Difficulty Checks: You (your character) are now at a door. The owner of the mansion is known to be paranoid and is rumored to have set numerous traps. So you decide to check for traps, ... [truncated]; 2.5 Difficulty Checks shares technical record from 2.5 Difficulty Checks: You (the player) roll the dice. The roll is 8 . 4+8= 12 , so it's a success, although just barely. (47 shared statement(s), 6 shared atom(s))
 
 ## Source
 

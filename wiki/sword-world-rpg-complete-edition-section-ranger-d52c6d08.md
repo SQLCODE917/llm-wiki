@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-ranger-d52c6d08
 page_kind: source
+page_family: section-reference
 summary: 【 Ranger 】: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ranger-d52c6d08@8680d61041310baf5c4da26e2b90804e
+projection_coverage: section-sword-world-rpg-complete-edition-section-ranger-d52c6d08@d3a6ec72e840bdaec6f4ad2a2b6bdff5
 ---
 
 # 【 Ranger 】
@@ -16,7 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-ranger-20608247]] - same source heading: another source section with the same heading, [ Ranger ]
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-ranger-20608247]] - same source heading: another source section with the same heading, 1.4 Character Creation / [ Ranger ]
 
 ## Statements
 

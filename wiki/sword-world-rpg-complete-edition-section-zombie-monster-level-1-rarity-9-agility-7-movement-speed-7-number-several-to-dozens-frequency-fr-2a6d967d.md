@@ -1,9 +1,10 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-zombie-monster-level-1-rarity-9-agility-7-movement-speed-7-number-several-to-dozens-frequency-fr-2a6d967d
 page_kind: source
+page_family: section-reference
 summary: [ Zombie ] Monster Level=1 Rarity=9 Agility=7 Movement Speed=7 Number=Several to dozens Frequency=Frequent Intellect=Obeys commands Reaction=Command-based Attack Points=Barehanded:8 (1) Strike Points=4: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf

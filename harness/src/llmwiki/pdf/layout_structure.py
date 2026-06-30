@@ -141,9 +141,7 @@ def compile_layout_structure(model: DocumentModel, *, body_font_size: float) -> 
     return replace(model, elements=tuple(elements))
 
 
-def _accepted_heading_ids(
-    elements: tuple[DocumentElement, ...], body_font_size: float
-) -> set[str]:
+def _accepted_heading_ids(elements: tuple[DocumentElement, ...], body_font_size: float) -> set[str]:
     headings = tuple(e for e in elements if e.element_kind == "heading")
     if not headings:
         return set()

@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-fighter-110350f0
 page_kind: source
+page_family: section-reference
 summary: 【 Fighter 】: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fighter-110350f0@8ed79c017f134a8a864e125833a551ba
+projection_coverage: section-sword-world-rpg-complete-edition-section-fighter-110350f0@1186ac1c11257dff4e3a3a30b2e5f895
 ---
 
 # 【 Fighter 】
@@ -16,7 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-fighter-a46fc415]] - same source heading: another source section with the same heading, [ Fighter ］
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-fighter-a46fc415]] - same source heading: another source section with the same heading, 1.4 Character Creation / [ Fighter ］
 
 ## Statements
 

@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-target-score-2ca82818
 page_kind: source
+page_family: section-reference
 summary: 《 Target Score 》: 13 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-target-score-2ca82818@0444c218b371877e27b52ab0b084f71c
+projection_coverage: section-sword-world-rpg-complete-edition-section-target-score-2ca82818@2e3b986b616ae5957e2092ca5fc03f66
 ---
 
 # 《 Target Score 》
@@ -17,7 +18,7 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-target-score]] - topic hub: opens the topic page for Target Score
-- [[sword-world-rpg-complete-edition-section-target-scores-ebc660b1]] - same source heading: another source section with the same heading, Target Scores
+- [[sword-world-rpg-complete-edition-section-2-1-baseline-scores-target-scores-ebc660b1]] - same source heading: another source section with the same heading, 2.1 Baseline Scores / Target Scores
 
 ## Statements
 

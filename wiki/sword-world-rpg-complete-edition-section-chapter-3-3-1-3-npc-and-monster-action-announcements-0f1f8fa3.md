@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-chapter-3-3-1-3-npc-and-monster-action-announcements-0f1f8fa3
 page_kind: source
+page_family: section-reference
 summary: Chapter 3: / 3.1.3 NPC and Monster Action Announcements: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-3-1-3-npc-and-monster-action-announcements-0f1f8fa3@08934ab8a18a478076ab7eeb5840bb84
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-3-1-3-npc-and-monster-action-announcements-0f1f8fa3@49bce76892fe74753d354cbdf48a7fe4
 ---
 
 # Chapter 3: / 3.1.3 NPC and Monster Action Announcements
@@ -18,7 +19,7 @@ From [[sword-world-rpg-complete-edition]].
 
 - [[sword-world-rpg-complete-edition-section-chapter-3-6d32210f]] - broader source section: Chapter 3:
 - [[sword-world-rpg-complete-edition-npc-and-monster-action-announcement]] - topic hub: opens the topic page for Npc And Monster Action Announcement
-- [[sword-world-rpg-complete-edition-section-npc-and-monster-action-announcement-499c18a3]] - same source heading: another source section with the same heading, NPC and Monster Action Announcement
+- [[sword-world-rpg-complete-edition-section-10-1-npc-and-monster-action-announcement-cbd8789a]] - same source heading: another source section with the same heading, 10.1 NPC and Monster Action Announcement
 
 ## Statements
 

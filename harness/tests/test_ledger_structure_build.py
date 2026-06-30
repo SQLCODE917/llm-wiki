@@ -59,10 +59,8 @@ def test_build_structure_reparents_numbered_heading_that_precedes_parent() -> No
     nodes = {node.heading_text: node for node in plan.nodes}
     assert nodes["**4.9.4 Mercy**"].parent_structure_node_id == plan.root_node_id
     assert plan.node_for_segment["mercy-body"] == nodes["**4.9.4 Mercy**"].structure_node_id
-    assert (
-        plan.node_for_segment["title-body"]
-        == nodes["**Excellent Weapons and Armor**"].structure_node_id
-    )
+    equipment = nodes["4.10 **Excellent Weapons and Armor**"]
+    assert plan.node_for_segment["title-body"] == equipment.structure_node_id
 
 
 def test_build_structure_keeps_numbered_child_under_matching_parent() -> None:
@@ -141,25 +139,54 @@ def test_build_structure_uses_numbered_path_when_markdown_depth_is_flat() -> Non
     )
 
     nodes = {node.heading_text: node for node in plan.nodes}
-    assert (
-        nodes["**5.1.2**"].parent_structure_node_id
-        == nodes["**5.1 Basic Rules of Magic**"].structure_node_id
-    )
-    assert (
-        nodes["**Rune Masters and Rune Master Skills**"].parent_structure_node_id
-        == nodes["**5.1.2**"].structure_node_id
-    )
+    child = nodes["5.1.2 **Rune Masters and Rune Master Skills**"]
+    assert child.parent_structure_node_id == nodes["**5.1 Basic Rules of Magic**"].structure_node_id
+    assert plan.node_for_segment["body"] == child.structure_node_id
     assert (
         nodes["**5.1.3 Casting Magic**"].parent_structure_node_id
         == nodes["**5.1 Basic Rules of Magic**"].structure_node_id
     )
     assert (
-        plan.node_for_segment["body"]
-        == nodes["**Rune Masters and Rune Master Skills**"].structure_node_id
-    )
-    assert (
         plan.node_for_segment["sibling-body"] == nodes["**5.1.3 Casting Magic**"].structure_node_id
     )
+
+
+def test_build_structure_keeps_unbound_number_marker_from_swallowing_layout_noise() -> None:
+    plan = build_structure(
+        "sourcehash",
+        "source.md",
+        (
+            _segment("spell", "heading", "# 9th Level Spell", 1),
+            _segment("spell-body", "paragraph", "The spell body starts.", 2),
+            _segment("marker", "heading", "# 11.4", 3),
+            _segment("spell-continuation", "paragraph", "(continued spell text).", 4),
+            _segment("other-spell", "heading", "# 10th Level Spell", 5),
+            _segment("other-body", "paragraph", "Another spell body.", 6),
+            _segment(
+                "section-title",
+                "heading",
+                "## Acquiring Rune Master Skills and Increasing Levels",
+                7,
+            ),
+            _segment(
+                "numbered-title",
+                "paragraph",
+                "11.4 Acquiring Rune Master Skills and Increasing Levels",
+                8,
+            ),
+            _segment("skill", "heading", "# 《 Sorcerer Skill 》", 9),
+            _segment("skill-body", "paragraph", "Sorcerer skill acquisition rule.", 10),
+        ),
+    )
+
+    nodes = {node.heading_text: node for node in plan.nodes}
+    section = nodes["11.4 Acquiring Rune Master Skills and Increasing Levels"]
+
+    assert plan.node_for_segment["spell-continuation"] == nodes["9th Level Spell"].structure_node_id
+    assert nodes["10th Level Spell"].parent_structure_node_id != section.structure_node_id
+    assert plan.node_for_segment["section-title"] == section.structure_node_id
+    assert nodes["《 Sorcerer Skill 》"].parent_structure_node_id == section.structure_node_id
+    assert plan.node_for_segment["skill-body"] == nodes["《 Sorcerer Skill 》"].structure_node_id
 
 
 def _segment(segment_id: str, kind: str, text: str, order: int) -> SourceSegment:

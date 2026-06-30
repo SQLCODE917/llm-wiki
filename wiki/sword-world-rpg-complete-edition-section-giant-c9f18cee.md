@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-giant-c9f18cee
 page_kind: source
+page_family: section-reference
 summary: [ Giant ]: 45 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-c9f18cee@f66e88cd217942745bc27ea740f3954a
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-c9f18cee@96bcc8bc65bfeb3343d2335635d27ef9
 ---
 
 # [ Giant ]
@@ -16,7 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-giant-bba55fe3]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / [ Giant ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-giant-bba55fe3]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Giant ]
 
 ## Statements
 

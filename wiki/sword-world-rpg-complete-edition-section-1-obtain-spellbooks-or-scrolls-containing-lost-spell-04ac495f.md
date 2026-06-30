@@ -1,9 +1,10 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-1-obtain-spellbooks-or-scrolls-containing-lost-spell-04ac495f
 page_kind: source
+page_family: section-reference
 summary: 1. Obtain Spellbooks or Scrolls Containing Lost Spell: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf

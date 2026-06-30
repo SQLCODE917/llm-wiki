@@ -1,9 +1,10 @@
 ---
 page_id: sword-world-rpg-complete-edition-setting-target-score
 page_kind: concept
+page_family: topic-concept
 summary: Setting Target Score: 4 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
 projection_coverage: topic-sword-world-rpg-complete-edition-setting-target-score@de0f9dc74934a9e1781d1a307d63424b

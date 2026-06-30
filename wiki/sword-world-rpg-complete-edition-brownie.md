@@ -1,12 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-brownie
 page_kind: concept
+page_family: topic-concept
 summary: Brownie: 1 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-brownie@9c8d6be20ddbc44a2f85196ac0312594
+projection_coverage: topic-sword-world-rpg-complete-edition-brownie@024882fd257fc2e461ae4e565bc9f250
 ---
 
 # Brownie
@@ -15,14 +16,14 @@ What [[sword-world-rpg-complete-edition]] covers about brownie:
 
 ## Statements
 
-### [ Brownie ] (Brownie/Building Spirit)
+### 5.1.14 Spirit Magic List / [ Brownie ] (Brownie/Building Spirit)
 
 - Brownies are spirits that live in old houses and castles that were built over 50 years ago. They may clean the house while the family members are sleeping. This spell has the effect of giving a command to a brownie, specifying a chore the caster would like them to do while they're asleep. However, the requested job must be a simple one. If you request something too complicated, it's too much for them and you can't expect a good result. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03754))_
 
 
 ## Technical atoms
 
-### Technical frame 1: [ Brownie ] (Brownie/Building Spirit)
+### Technical frame 1: 5.1.14 Spirit Magic List / [ Brownie ] (Brownie/Building Spirit)
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03754))_
 

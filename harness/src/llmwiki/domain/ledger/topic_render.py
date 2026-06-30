@@ -24,6 +24,12 @@ from llmwiki.domain.ledger.projection_context_render import (
     atom_frame_markdown,
     evidence_block_line,
 )
+from llmwiki.domain.ledger.projection_policy import (
+    TopicProjectionPolicy,
+    entry_can_render_standalone,
+    select_evidence_blocks_for_policy,
+    topic_projection_policy,
+)
 from llmwiki.domain.ledger.renderer import atom_block, atom_context_block
 from llmwiki.domain.ledger.topic_relations import RelatedTopicLink
 from llmwiki.domain.ledger.topic_terms import topic_matcher
@@ -39,17 +45,28 @@ def render_topic_page(
     source_page_id: str,
     related_pages: tuple[RelatedTopicLink, ...] = (),
     projection_context: ProjectionContext | None = None,
+    projection_policy: TopicProjectionPolicy | None = None,
 ) -> RenderedPage:
+    policy = projection_policy or topic_projection_policy(topic, ledger, projection_context)
     body = PageBodyBuilder()
     entries: list[ProjectionCoverageEntry] = []
     body.add(f"# {topic.label}\n\n")
     body.add(f"What [[{source_page_id}]] covers about {topic.label.lower()}:\n\n")
 
-    body.add("## Statements\n\n")
+    related_pages_rendered = False
+    if related_pages and policy.is_broad_topic:
+        _render_related_pages(body, entries, wiki_page_locator, related_pages)
+        related_pages_rendered = True
+
+    heading = "## Statements by source section" if policy.is_broad_topic else "## Statements"
+    body.add(f"{heading}\n\n")
     rendered_entry_ids: set[str] = set()
     if projection_context is not None:
         current_section_label = ""
-        for block in projection_context.blocks_for_entries(topic.entry_ids):
+        blocks = select_evidence_blocks_for_policy(
+            projection_context.blocks_for_entries(topic.entry_ids), policy
+        )
+        for block in blocks:
             selected = tuple(
                 entry_id for entry_id in block.entry_ids if entry_id in topic.entry_ids
             )
@@ -63,18 +80,21 @@ def render_topic_page(
             entries.append(
                 _coverage(wiki_page_locator, "projected-evidence-block", span, selected=selected)
             )
-    for entry_id in topic.entry_ids:
-        if entry_id in rendered_entry_ids:
-            continue
-        entry = ledger.entry(entry_id)
-        if entry is None or not (entry.normalized_text or entry.source_text).strip():
-            continue
-        text = clean_statement(entry.normalized_text or entry.source_text)
-        citation = f"{entry.source_locator} ({entry.source_range_id})"
-        span = body.add(f"- {text} _({citation})_\n")
-        entries.append(
-            _coverage(wiki_page_locator, "generated-page-claim", span, selected=(entry_id,))
-        )
+    if not policy.is_broad_topic:
+        for entry_id in topic.entry_ids:
+            if entry_id in rendered_entry_ids:
+                continue
+            entry = ledger.entry(entry_id)
+            if entry is None or not (entry.normalized_text or entry.source_text).strip():
+                continue
+            if not entry_can_render_standalone(entry):
+                continue
+            text = clean_statement(entry.normalized_text or entry.source_text)
+            citation = f"{entry.source_locator} ({entry.source_range_id})"
+            span = body.add(f"- {text} _({citation})_\n")
+            entries.append(
+                _coverage(wiki_page_locator, "generated-page-claim", span, selected=(entry_id,))
+            )
 
     rendered_atom_ids: set[str] = set()
     atom_frames = (
@@ -137,23 +157,32 @@ def render_topic_page(
                 )
             )
 
-    if related_pages:
-        body.add("\n## Related pages\n\n")
-        for link in related_pages:
-            span = body.add(f"{related_link_markdown(link)}\n")
-            entries.append(
-                _coverage(
-                    wiki_page_locator,
-                    "related-page-link",
-                    span,
-                    selected=link.shared_entry_ids,
-                    atom_id=link.shared_atom_ids[0] if link.shared_atom_ids else "",
-                )
-            )
+    if related_pages and not related_pages_rendered:
+        _render_related_pages(body, entries, wiki_page_locator, related_pages)
 
     body.add(f"\n## Source\n\n- [[{source_page_id}]]\n")
     text = body.text()
     return RenderedPage(text, short_digest(text, 32), ProjectionCoverage(tuple(entries)))
+
+
+def _render_related_pages(
+    body: PageBodyBuilder,
+    entries: list[ProjectionCoverageEntry],
+    wiki_page_locator: str,
+    related_pages: tuple[RelatedTopicLink, ...],
+) -> None:
+    body.add("\n## Related pages\n\n")
+    for link in related_pages:
+        span = body.add(f"{related_link_markdown(link)}\n")
+        entries.append(
+            _coverage(
+                wiki_page_locator,
+                "related-page-link",
+                span,
+                selected=link.shared_entry_ids,
+                atom_id=link.shared_atom_ids[0] if link.shared_atom_ids else "",
+            )
+        )
 
 
 def _coverage(

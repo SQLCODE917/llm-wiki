@@ -1,9 +1,10 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-sanity-base-mental-power-cost-3-distance-touch-area-one-duration-instant-effect-restore-the-targ-8bc1c4ab
 page_kind: source
+page_family: section-reference
 summary: [ Sanity ] Base Mental Power Cost=3 Distance=Touch Area=One Duration=Instant Effect=Restore the target's peace of mind Type=Mind Expansion=Final score Resist=Negated effect: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf

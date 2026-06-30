@@ -1,9 +1,10 @@
 ---
 page_id: sword-world-rpg-complete-edition-loss-ability-score
 page_kind: concept
+page_family: topic-concept
 summary: Loss Ability Score: 1 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
 projection_coverage: topic-sword-world-rpg-complete-edition-loss-ability-score@b60f3a3ab2cc1b7115a39584098cbda3

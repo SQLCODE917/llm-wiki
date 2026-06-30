@@ -64,9 +64,7 @@ def test_layout_font_tiers_create_parent_child_paths_without_source_terms() -> N
         ("Next Secondary Operation", 2),
     ]
     assert compiled.elements[3].heading_path == "Primary Module > Secondary Operation"
-    assert headings[2].heading_path == (
-        "Primary Module > Secondary Operation > Tertiary Case"
-    )
+    assert headings[2].heading_path == ("Primary Module > Secondary Operation > Tertiary Case")
     assert headings[3].heading_path == "Primary Module > Next Secondary Operation"
 
 

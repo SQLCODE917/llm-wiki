@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-agility-87cfe22c
 page_kind: source
+page_family: section-reference
 summary: 【 Agility 】: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-agility-87cfe22c@d94a5714783201db5ed0d6c911cede4e
+projection_coverage: section-sword-world-rpg-complete-edition-section-agility-87cfe22c@77248668ae47e5d26d1674750e4ce8b0
 ---
 
 # 【 Agility 】
@@ -16,7 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-agility-27086478]] - same source heading: another source section with the same heading, 《 Agility 》
+- [[sword-world-rpg-complete-edition-section-13-2-1-humans-agility-27086478]] - same source heading: another source section with the same heading, 13.2.1 《 Humans 》 / 《 Agility 》
 
 ## Statements
 

@@ -18,6 +18,10 @@ from llmwiki.domain.ledger.projection_context_render import (
     atom_frame_markdown,
     evidence_block_line,
 )
+from llmwiki.domain.ledger.projection_policy import (
+    PAGE_FAMILY_SECTION_REFERENCE,
+    entry_can_render_standalone,
+)
 from llmwiki.domain.ledger.renderer import atom_block, atom_context_block
 from llmwiki.domain.ledger.section_navigation import (
     SectionPageRef,
@@ -52,6 +56,12 @@ class _SectionProjection:
     @property
     def page_ref(self) -> SectionPageRef:
         return SectionPageRef(self.node, self.page_id, self.title)
+
+
+@dataclass(frozen=True)
+class _SectionEntryIndex:
+    direct_by_node: dict[str, tuple[LedgerEntry, ...]]
+    rollup_by_node: dict[str, tuple[LedgerEntry, ...]]
 
 
 def build_section_pages(
@@ -96,6 +106,7 @@ def build_section_pages(
                 f"{projection.title}: {len(projection.rollup_entries)} source-backed entries and "
                 f"{len(projection.atoms)} atom(s) from raw/{source_locator}."
             ),
+            page_family=PAGE_FAMILY_SECTION_REFERENCE,
             sources=(f"raw/{source_locator}",),
             updated=today,
             domain=source_page_id,
@@ -144,8 +155,9 @@ def _section_projections(
 ) -> tuple[_SectionProjection, ...]:
     projections: list[_SectionProjection] = []
     table_names_by_atom_id = table_identity_names_by_atom_id(ledger, structure)
+    entry_index = _section_entry_index(ledger)
     for node in _section_nodes(structure):
-        rollup_entries = _entries_for_node(ledger, node.structure_node_id)
+        rollup_entries = entry_index.rollup_by_node.get(node.structure_node_id, ())
         atoms = _atoms_for_entries(ledger, rollup_entries, table_names_by_atom_id, node)
         if not rollup_entries and not atoms:
             continue
@@ -154,7 +166,7 @@ def _section_projections(
                 node=node,
                 page_id=section_page_id(source_page_id, structure, node),
                 title=section_title(structure, node),
-                direct_entries=_direct_entries_for_node(ledger, node.structure_node_id),
+                direct_entries=entry_index.direct_by_node.get(node.structure_node_id, ()),
                 rollup_entries=rollup_entries,
                 atoms=atoms,
             )
@@ -190,6 +202,8 @@ def _append_claims(
             rendered.update(selected)
     for entry in claims:
         if entry.ledger_entry_id in rendered:
+            continue
+        if not entry_can_render_standalone(entry):
             continue
         text = entry.normalized_text or entry.source_text
         citation = f"{entry.source_locator} ({entry.source_range_id})"
@@ -246,21 +260,19 @@ def _group_descendant_claims(
     return tuple(result)
 
 
-def _direct_entries_for_node(ledger: ClaimLedger, node_id: str) -> tuple[LedgerEntry, ...]:
-    return tuple(
-        entry
-        for entry in ledger.usable_entries
-        if entry.structure_node_ids[:1] == (node_id,)
-        and (entry.normalized_text or entry.source_text or entry.technical_atom_id)
-    )
-
-
-def _entries_for_node(ledger: ClaimLedger, node_id: str) -> tuple[LedgerEntry, ...]:
-    return tuple(
-        entry
-        for entry in ledger.usable_entries
-        if node_id in entry.structure_node_ids
-        and (entry.normalized_text or entry.source_text or entry.technical_atom_id)
+def _section_entry_index(ledger: ClaimLedger) -> _SectionEntryIndex:
+    direct: dict[str, list[LedgerEntry]] = {}
+    rollup: dict[str, list[LedgerEntry]] = {}
+    for entry in ledger.usable_entries:
+        if not (entry.normalized_text or entry.source_text or entry.technical_atom_id):
+            continue
+        if entry.structure_node_ids:
+            direct.setdefault(entry.structure_node_ids[0], []).append(entry)
+        for node_id in entry.structure_node_ids:
+            rollup.setdefault(node_id, []).append(entry)
+    return _SectionEntryIndex(
+        direct_by_node={node_id: tuple(entries) for node_id, entries in direct.items()},
+        rollup_by_node={node_id: tuple(entries) for node_id, entries in rollup.items()},
     )
 
 

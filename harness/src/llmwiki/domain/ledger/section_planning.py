@@ -15,6 +15,7 @@ from llmwiki.domain.ledger.atoms import TechnicalAtom, atom_raw_text
 from llmwiki.domain.ledger.canonical import content_fingerprint, deterministic_id
 from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.ledger import ClaimLedger
+from llmwiki.domain.ledger.projection_substance import entry_is_unresolved_context_pointer
 from llmwiki.domain.ledger.structure import DocumentStructure, StructureNode
 from llmwiki.domain.ledger.table_identity import (
     has_matching_table_name,
@@ -265,15 +266,18 @@ def _heading_topic_accepted(
     concept = tuple(index for index in evidence if entry_is_concept_or_definition(index.entry))
     if not evidence and not atom_ids:
         return False
-    return not (
-        _all_container_terms(terms) and not (concept or len(strong) >= 2 or atom_ids)
-    )
+    if (
+        entry_indexes
+        and not atom_ids
+        and all(entry_is_unresolved_context_pointer(index.entry) for index in entry_indexes)
+    ):
+        return False
+    return not (_all_container_terms(terms) and not (concept or len(strong) >= 2 or atom_ids))
 
 
 def _all_container_terms(terms: tuple[str, ...]) -> bool:
     return all(
-        topic_term_role(term) in ("discourse-container", "structural-container")
-        for term in terms
+        topic_term_role(term) in ("discourse-container", "structural-container") for term in terms
     )
 
 

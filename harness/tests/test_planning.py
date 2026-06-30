@@ -712,6 +712,7 @@ async def test_fake_pdf_ingest_persists_page_plan_before_writes(paths: WikiPaths
     ledger_dir = store.page_plan_artifact_dir("book.pdf") / "ledger"
     assert (ledger_dir / "claim-ledger.json").is_file()
     assert (ledger_dir / "projection-coverage.json").is_file()
+    assert (ledger_dir / "projection-context.json").is_file()
     assert (ledger_dir / "section-plan.json").is_file()
     assert (ledger_dir / "topics.json").is_file()
     plan_json = (store.page_plan_artifact_dir("book.pdf") / "page-plan.json").read_text(

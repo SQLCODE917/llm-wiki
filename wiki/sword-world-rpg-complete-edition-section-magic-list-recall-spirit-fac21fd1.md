@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-magic-list-recall-spirit-fac21fd1
 page_kind: source
-summary: Magic List [ Recall Spirit ]: 14 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+page_family: section-reference
+summary: Magic List [ Recall Spirit ]: 14 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magic-list-recall-spirit-fac21fd1@c08756d697b6d2ee8b5a76a7aba0bad3
+projection_coverage: section-sword-world-rpg-complete-edition-section-magic-list-recall-spirit-fac21fd1@590b0f3392de8254a7a09869d4b6896e
 ---
 
 # Magic List [ Recall Spirit ]
@@ -50,3 +51,46 @@ From [[sword-world-rpg-complete-edition]].
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04585))_
 
 > Resist=None
+
+### Technical atom 3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03969))_
+
+> cannot use magic, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03972))_
+
+| entry | content |
+| --- | --- |
+| 4 | Target is struck by panic and is prevented from taking action. Take a -1 penalty on all success rolls |
+| 5 | Same as above, but penalty is -2 |
+| 6 | Same as above, but penalty is -3 |
+| 7 | Target runs away. They go berserk if that's not possible. |
+| 8 | Target runs away. If that's not possible, they act with a -3 penalty |
+| 9 | Target runs away. If that's not possible, they freeze in fear and become unable to act |
+| 10 | Target freezes in fear. They become unable to act |
+| 11 | Same as above |
+| 12 | Target loses consciousness from fear. It takes 1 hour to regain consciousness naturally |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+4 Target is struck by panic and is prevented from taking action. Take a -1 penalty on all success rolls
+5
+Same as above, but penalty is -2
+6
+Same as above, but penalty is -3
+7 Target runs away. They go berserk if that's not possible.
+8
+Target runs away. If that's not possible, they act with a -3 penalty
+9
+Target runs away. If that's not possible, they freeze in fear and become unable to act
+10
+Target freezes in fear. They become unable to act
+11
+Same as above
+12 Target loses consciousness from fear. It takes 1 hour to regain consciousness naturally
+```
+
+</details>

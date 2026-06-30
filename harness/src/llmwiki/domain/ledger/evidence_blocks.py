@@ -7,7 +7,7 @@ coherent passage instead of context-dependent sentence fragments.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 
 from llmwiki.domain.ledger.canonical import deterministic_id
 from llmwiki.domain.ledger.entries import LedgerEntry
@@ -23,6 +23,7 @@ class EvidenceBlock:
     evidence_block_id: str
     source_statement_id: str
     source_range_id: str
+    source_range_ids: tuple[str, ...]
     source_locator: str
     source_text: str
     entry_ids: tuple[str, ...]
@@ -79,7 +80,8 @@ def build_evidence_blocks(
             )
         )
 
-    return tuple(sorted(blocks, key=lambda block: (block.source_order, block.evidence_block_id)))
+    ordered = tuple(sorted(blocks, key=lambda block: (block.source_order, block.evidence_block_id)))
+    return _merge_continuation_blocks(ledger, ordered)
 
 
 def _block(
@@ -100,6 +102,7 @@ def _block(
         evidence_block_id=block_id,
         source_statement_id=statement_id,
         source_range_id=source_range_id,
+        source_range_ids=(source_range_id,),
         source_locator=ledger.source_locator,
         source_text=source_text,
         entry_ids=entry_ids,
@@ -123,3 +126,61 @@ def _source_order_by_range(structure: DocumentStructure) -> dict[str, int]:
         disposition.source_range_id: disposition.source_order
         for disposition in structure.dispositions
     }
+
+
+def _merge_continuation_blocks(
+    ledger: ClaimLedger, blocks: tuple[EvidenceBlock, ...]
+) -> tuple[EvidenceBlock, ...]:
+    merged: list[EvidenceBlock] = []
+    for block in blocks:
+        if merged and _should_merge(merged[-1], block):
+            merged[-1] = _merge_blocks(ledger, merged[-1], block)
+            continue
+        merged.append(block)
+    return tuple(merged)
+
+
+def _should_merge(previous: EvidenceBlock, current: EvidenceBlock) -> bool:
+    return bool(
+        previous.source_locator == current.source_locator
+        and previous.section_label == current.section_label
+        and previous.structure_node_ids[:1] == current.structure_node_ids[:1]
+        and 0 < current.source_order - previous.source_order <= 3
+        and not _ends_sentence(previous.source_text)
+        and _starts_mid_sentence(current.source_text)
+    )
+
+
+def _merge_blocks(
+    ledger: ClaimLedger, previous: EvidenceBlock, current: EvidenceBlock
+) -> EvidenceBlock:
+    source_range_ids = (*previous.source_range_ids, *current.source_range_ids)
+    entry_ids = (*previous.entry_ids, *current.entry_ids)
+    return replace(
+        previous,
+        evidence_block_id=deterministic_id(
+            "evidence-block", ledger.source_hash, "|".join(source_range_ids), "|".join(entry_ids)
+        ),
+        source_statement_id="|".join((previous.source_statement_id, current.source_statement_id)),
+        source_range_ids=source_range_ids,
+        source_text=" ".join((previous.source_text.rstrip(), current.source_text.lstrip())),
+        entry_ids=entry_ids,
+    )
+
+
+def _ends_sentence(text: str) -> bool:
+    stripped = text.rstrip()
+    if not stripped:
+        return False
+    return stripped[-1] in ".!?"
+
+
+def _starts_mid_sentence(text: str) -> bool:
+    for char in text.lstrip():
+        if char.isalpha():
+            return char.islower()
+        if char.isdigit():
+            return False
+        if char in ",;:)":
+            return True
+    return False

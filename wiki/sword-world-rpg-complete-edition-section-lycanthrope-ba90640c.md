@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-lycanthrope-ba90640c
 page_kind: source
-summary: [ Lycanthrope ]: 30 source-backed entries and 22 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+page_family: section-reference
+summary: [ Lycanthrope ]: 46 source-backed entries and 38 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lycanthrope-ba90640c@ea475d3e9891a6008ad31048f0248e4a
+projection_coverage: section-sword-world-rpg-complete-edition-section-lycanthrope-ba90640c@c4551f27077118b0112543fe95929083
 ---
 
 # [ Lycanthrope ]
@@ -105,8 +106,48 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 6: [ Lycanthrope ]
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09594, source-range-0b9dec90-09595))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09594, source-range-0b9dec90-09595, source-range-0b9dec90-09597))_
 
 > Habitat=Human villages, forests
 
 > Languages=Regional
+
+> Perception=Five senses (Illumination)
+
+### Technical frame 7: [ Lycanthrope ]
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09600, source-range-0b9dec90-09601, source-range-0b9dec90-09602, source-range-0b9dec90-09603, source-range-0b9dec90-09604, source-range-0b9dec90-09605, source-range-0b9dec90-09606, source-range-0b9dec90-09607, source-range-0b9dec90-09609, source-range-0b9dec90-09610, source-range-0b9dec90-09611, source-range-0b9dec90-09612))_
+
+> Monster Level=5
+
+> Rarity=11
+
+> Agility=21
+
+> Movement Speed=25
+
+> Number=One to several Frequency=Rare
+
+> Intellect=Animal/Human
+
+> Reaction=Adversarial
+
+> Attack Points=Fangs:12 (5)/Claw:13 (6)/
+
+> Evasion Points=14 (7) Defense Points=9
+
+> Life Points/Resistance=24/15 (8)
+
+> Mental Points/Resistance=14/13 (6)
+
+> Special Abilities=Normal weapon immunity
+
+### Technical frame 8: [ Lycanthrope ]
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09615, source-range-0b9dec90-09616, source-range-0b9dec90-09617))_
+
+> Habitat=Human villages, forests
+
+> Languages=Regional
+
+> Perception=Five senses (Illumination)

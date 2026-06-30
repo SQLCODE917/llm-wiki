@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-damage-9e33ce2f
 page_kind: source
+page_family: section-reference
 summary: 《 Damage 》: 14 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-damage-9e33ce2f@06e59b98fd24c71bb2630429777749b6
+projection_coverage: section-sword-world-rpg-complete-edition-section-damage-9e33ce2f@7cab6bfc16daf6326eee1d59ed95da04
 ---
 
 # 《 Damage 》
@@ -17,8 +18,8 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-damage]] - topic hub: opens the topic page for Damage
-- [[sword-world-rpg-complete-edition-section-0-damage-bd8aa671]] - same source heading: another source section with the same heading, 【 0 Damage! 】
-- [[sword-world-rpg-complete-edition-section-damage-f88e83a5]] - same source heading: another source section with the same heading, 《 Damage 》
+- [[sword-world-rpg-complete-edition-section-4-5-2-determining-base-damage-strike-roll-0-damage-bd8aa671]] - same source heading: another source section with the same heading, 4.5.2 Determining Base Damage (Strike Roll) / 【 0 Damage! 】
+- [[sword-world-rpg-complete-edition-section-10-5-attacks-against-the-sleeping-damage-f88e83a5]] - same source heading: another source section with the same heading, 10.5 Attacks Against the Sleeping / 《 Damage 》
 
 ## Statements
 

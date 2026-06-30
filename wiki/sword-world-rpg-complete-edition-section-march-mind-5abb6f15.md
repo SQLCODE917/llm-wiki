@@ -1,22 +1,19 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-march-mind-5abb6f15
 page_kind: source
+page_family: section-reference
 summary: March (Mind): 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-march-mind-5abb6f15@4b9e7f97d2b99360be98ec45ada6412e
+projection_coverage: section-sword-world-rpg-complete-edition-section-march-mind-5abb6f15@976f7d263f4684d7ff85c0d5d3b46be2
 ---
 
 # March (Mind)
 
 From [[sword-world-rpg-complete-edition]].
-
-## Related pages
-
-- [[sword-world-rpg-complete-edition-section-5-3-7bfa67b3]] - broader source section: 5.3
 
 ## Statements
 

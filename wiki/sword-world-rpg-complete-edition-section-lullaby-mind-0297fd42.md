@@ -1,22 +1,19 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-lullaby-mind-0297fd42
 page_kind: source
+page_family: section-reference
 summary: Lullaby (Mind): 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lullaby-mind-0297fd42@81edb47f57f838c29701bf49b1c2dbbe
+projection_coverage: section-sword-world-rpg-complete-edition-section-lullaby-mind-0297fd42@24e8358a5c9d77d1545a1164011902c0
 ---
 
 # Lullaby (Mind)
 
 From [[sword-world-rpg-complete-edition]].
-
-## Related pages
-
-- [[sword-world-rpg-complete-edition-section-5-3-7bfa67b3]] - broader source section: 5.3
 
 ## Statements
 

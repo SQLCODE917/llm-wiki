@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-13-2-4-spirits-4ce53b91
 page_kind: source
+page_family: section-reference
 summary: 13.2.4 Spirits: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-4-spirits-4ce53b91@75884c3893d08038fbdc196a5a321606
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-4-spirits-4ce53b91@2137676ceb032df635ae5f8032747e23
 ---
 
 # 13.2.4 Spirits
@@ -16,7 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-spirits-eebe351c]] - same source heading: another source section with the same heading, 《 Spirits 》
+- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-spirits-eebe351c]] - same source heading: another source section with the same heading, 13.1 Types of Monsters / 《 Spirits 》
 
 ## Statements
 

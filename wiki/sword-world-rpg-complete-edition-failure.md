@@ -1,12 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-failure
 page_kind: concept
+page_family: topic-concept
 summary: Failure: 5 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-failure@cbceb2d926493925c9e213a9d46a640f
+projection_coverage: topic-sword-world-rpg-complete-edition-failure@dd789869c3c9b88009e448f54b3fc76a
 ---
 
 # Failure
@@ -15,7 +16,7 @@ What [[sword-world-rpg-complete-edition]] covers about failure:
 
 ## Statements
 
-### 2.5.3 Analogy of Success and Failure
+### 2.5 Difficulty Checks / 2.5.3 Analogy of Success and Failure
 
 - If a success roll is made for a difficulty check, the success or failure of the action is strictly unknown to the player. That is precisely the reason why we use difficulty checks. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01241))_
 
@@ -30,7 +31,7 @@ What [[sword-world-rpg-complete-edition]] covers about failure:
 
 ## Technical atoms
 
-### Technical frame 1: 2.5.3 Analogy of Success and Failure
+### Technical frame 1: 2.5 Difficulty Checks / 2.5.3 Analogy of Success and Failure
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01245))_
 

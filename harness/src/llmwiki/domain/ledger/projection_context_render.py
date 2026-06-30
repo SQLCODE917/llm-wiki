@@ -11,7 +11,7 @@ from llmwiki.domain.ledger.renderer import atom_block
 
 
 def evidence_block_line(block: EvidenceBlock) -> str:
-    citation = f"{block.source_locator} ({block.source_range_id})"
+    citation = f"{block.source_locator} ({', '.join(block.source_range_ids)})"
     return f"- {clean_statement(block.source_text)} _({citation})_"
 
 
@@ -24,9 +24,10 @@ def atom_frame_markdown(
     lines = [f"### Technical frame {index}: {frame.label}", ""]
     context = projection_context.evidence_block(frame.context_block_id)
     if context is not None:
+        context_ranges = ", ".join(context.source_range_ids)
         lines.extend(
             (
-                f"**Context:** _({context.source_locator} ({context.source_range_id}))_",
+                f"**Context:** _({context.source_locator} ({context_ranges}))_",
                 "",
                 f"> {clean_statement(context.source_text)[:500]}",
                 "",

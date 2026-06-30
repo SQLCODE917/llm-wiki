@@ -1,12 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-thieve-guild
 page_kind: concept
+page_family: topic-concept
 summary: Thieve Guild: 2 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-thieve-guild@76f275640c3106ed23627fbc98d7ff4d
+projection_coverage: topic-sword-world-rpg-complete-edition-thieve-guild@4955230a21f63cea45f3fd6c4efefa93
 ---
 
 # Thieve Guild
@@ -15,7 +16,7 @@ What [[sword-world-rpg-complete-edition]] covers about thieve guild:
 
 ## Statements
 
-### Thieves Guild/Sorcerers' Guild (Academy)
+### 18.3 Rules for Destroying Structures / Thieves Guild/Sorcerers' Guild (Academy)
 
 - Though not official guilds, the Thieves Guild and Sorcerers' Guild (Academy) are essential organizations. Both are global organizations that regularly exchange information between headquarters and branches. Thieves, Sorcerers, and Sages belong to these groups. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11929))_
 
@@ -24,7 +25,7 @@ What [[sword-world-rpg-complete-edition]] covers about thieve guild:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-sorcerer-guild-academy]] - shared statements: Sorcerer Guild Academy shares source evidence from Thieves Guild/Sorcerers' Guild (Academy): Though not official guilds, the Thieves Guild and Sorcerers' Guild (Academy) are essential organizations. Both are global organizations that regularly exchange infor ... [truncated] (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-sorcerer-guild-academy]] - shared statements: Sorcerer Guild Academy shares source evidence from 18.3 Rules for Destroying Structures / Thieves Guild/Sorcerers' Guild (Academy): Though not official guilds, the Thieves Guild and Sorcerers' Guild (Academy) are essential organizations. Both are global organizations that regularly exchange infor ... [truncated] (1 shared statement(s))
 
 ## Source
 

@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-1-3-3-adventurer-level-5236d7b4
 page_kind: source
+page_family: section-reference
 summary: 1.3.3 Adventurer Level: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-3-3-adventurer-level-5236d7b4@98d09e0d7d3f42932c7888ceb37e6bad
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-3-3-adventurer-level-5236d7b4@5ec70f299b50402e2f7a1c62dcf95557
 ---
 
 # 1.3.3 Adventurer Level
@@ -17,7 +18,7 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-adventurer-level]] - topic hub: opens the topic page for Adventurer Level
-- [[sword-world-rpg-complete-edition-section-adventurer-level-ed80716f]] - same source heading: another source section with the same heading, [ ⑭ Adventurer Level ]
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-adventurer-level-ed80716f]] - same source heading: another source section with the same heading, 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑭ Adventurer Level ]
 
 ## Statements
 

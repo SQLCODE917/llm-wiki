@@ -1,22 +1,19 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-switch-out-a-onehanded-weapon-1003bf20
 page_kind: source
+page_family: section-reference
 summary: Switch Out a OneHanded Weapon: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-switch-out-a-onehanded-weapon-1003bf20@78a4b53dce1b3acab951500251891243
+projection_coverage: section-sword-world-rpg-complete-edition-section-switch-out-a-onehanded-weapon-1003bf20@0a8b5a9dc9ed0fd087f50a58fe4ad8be
 ---
 
 # Switch Out a OneHanded Weapon
 
 From [[sword-world-rpg-complete-edition]].
-
-## Related pages
-
-- [[sword-world-rpg-complete-edition-section-3-4-3-46f0996b]] - broader source section: 3.4.3
 
 ## Statements
 

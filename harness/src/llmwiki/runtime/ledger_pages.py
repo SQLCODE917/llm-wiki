@@ -5,6 +5,10 @@ from __future__ import annotations
 from llmwiki.domain.ledger.artifacts import ProjectionCoverageArtifact
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.projection_context import ProjectionContext
+from llmwiki.domain.ledger.projection_policy import (
+    PAGE_FAMILY_SOURCE_MANIFEST,
+    topic_projection_policy,
+)
 from llmwiki.domain.ledger.source_coverage import SourceElementRecord
 from llmwiki.domain.ledger.structure import DocumentStructure
 from llmwiki.domain.ledger.topic_relations import RelatedTopicLink, related_topic_links
@@ -43,6 +47,7 @@ def build_topic_pages(
             ledger,
             projection_context=projection_context,
         )
+        policy = topic_projection_policy(topic, ledger, projection_context)
         rendered = render_topic_page(
             topic,
             ledger,
@@ -50,10 +55,12 @@ def build_topic_pages(
             source_page_id=source_page_id,
             related_pages=walkability.accepted_links,
             projection_context=projection_context,
+            projection_policy=policy,
         )
         metadata = PageMetadata(
             page_id=topic_page_id,
             page_kind=topic.page_kind,
+            page_family=policy.page_family,
             summary=(
                 f"{topic.label}: {len(topic.entry_ids)} statement(s) and "
                 f"{len(topic.atom_ids)} atom(s) from raw/{source_locator}."
@@ -84,6 +91,7 @@ def build_source_wiki_page(
     metadata = PageMetadata(
         page_id=page_id,
         page_kind="source",
+        page_family=PAGE_FAMILY_SOURCE_MANIFEST,
         summary=summary,
         sources=(f"raw/{source_locator}",),
         updated=today,

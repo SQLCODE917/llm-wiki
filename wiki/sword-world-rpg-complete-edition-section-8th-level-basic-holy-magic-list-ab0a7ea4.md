@@ -1,9 +1,10 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-8th-level-basic-holy-magic-list-ab0a7ea4
 page_kind: source
+page_family: section-reference
 summary: 8th Level Basic Holy Magic List: 17 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf

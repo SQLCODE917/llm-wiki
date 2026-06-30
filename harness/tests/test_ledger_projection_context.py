@@ -1,5 +1,7 @@
+from llmwiki.domain.ledger.artifacts import build_projection_context_artifact
 from llmwiki.domain.ledger.atoms import FormulaPayload, TechnicalAtom
-from llmwiki.domain.ledger.common import ConfidenceBasis
+from llmwiki.domain.ledger.canonical import canonical_json
+from llmwiki.domain.ledger.common import ConfidenceBasis, SpatialScope
 from llmwiki.domain.ledger.entries import LedgerEntry, SourceStatement
 from llmwiki.domain.ledger.ledger import (
     ClaimLedger,
@@ -8,6 +10,13 @@ from llmwiki.domain.ledger.ledger import (
     SourceProfile,
 )
 from llmwiki.domain.ledger.projection_context import build_projection_context
+from llmwiki.domain.ledger.projection_policy import (
+    PAGE_FAMILY_BROAD_TOPIC,
+    PROJECTION_ELIGIBILITY_CONTEXTUAL_ONLY,
+    ProjectionBudget,
+    ledger_entry_projection_eligibility,
+    topic_projection_policy,
+)
 from llmwiki.domain.ledger.structure import (
     DocumentStructure,
     ExtractedUnitDispositionRecord,
@@ -166,6 +175,212 @@ def test_topic_projection_groups_ambiguous_claims_by_source_section() -> None:
     ) in rendered.page_body
 
 
+def test_projection_context_merges_adjacent_mid_sentence_fragments() -> None:
+    ledger = _ledger(
+        entries=(
+            _claim(
+                "entry-dark-priest-start",
+                "statement-dark-priest-start",
+                "range-dark-priest-start",
+                "The method is almost the same. However, many dark gods that dark priests",
+            ),
+            _claim(
+                "entry-dark-priest-continuation",
+                "statement-dark-priest-continuation",
+                "range-dark-priest-continuation",
+                "believe in have no temples.",
+            ),
+        ),
+        atoms=(),
+        statements=(
+            SourceStatement(
+                "statement-dark-priest-start",
+                "range-dark-priest-start",
+                "The method is almost the same. However, many dark gods that dark priests",
+                ("entry-dark-priest-start",),
+            ),
+            SourceStatement(
+                "statement-dark-priest-continuation",
+                "range-dark-priest-continuation",
+                "believe in have no temples.",
+                ("entry-dark-priest-continuation",),
+            ),
+        ),
+    )
+    context = build_projection_context(ledger, _continuation_structure())
+    topic = SourceTopic(
+        topic_key="dark-priest-skill",
+        label="Dark Priest Skill",
+        page_kind="concept",
+        match_terms=("dark", "priest"),
+        entry_ids=("entry-dark-priest-start", "entry-dark-priest-continuation"),
+        atom_ids=(),
+        from_heading=True,
+        salience=3,
+    )
+
+    rendered = render_topic_page(
+        topic,
+        ledger,
+        wiki_page_locator="source-dark-priest-skill",
+        source_page_id="source",
+        projection_context=context,
+    )
+
+    assert (
+        "- The method is almost the same. However, many dark gods that dark priests "
+        "believe in have no temples. _(source.pdf (range-dark-priest-start, "
+        "range-dark-priest-continuation))_"
+    ) in rendered.page_body
+    assert "- believe in have no temples." not in rendered.page_body
+
+
+def test_projection_context_serializes_as_portable_artifact() -> None:
+    ledger = _ledger(
+        entries=(
+            _claim(
+                "entry-description-one",
+                "statement-description",
+                "range-description",
+                "A source-backed statement.",
+            ),
+        ),
+        atoms=(),
+        statements=(
+            SourceStatement(
+                "statement-description",
+                "range-description",
+                "A source-backed statement.",
+                ("entry-description-one",),
+            ),
+        ),
+    )
+    context = build_projection_context(ledger, _structure())
+
+    artifact = build_projection_context_artifact(
+        source_locator="source.pdf",
+        source_hash="sourcehash",
+        projection_context=context,
+    )
+    payload = canonical_json(artifact)
+
+    assert artifact.projection_context_artifact_id.startswith("projection-context-")
+    assert "projection_context" in payload
+    assert "range-description" in payload
+
+
+def test_contextual_only_entries_do_not_render_as_fallback_claims() -> None:
+    entry = _claim(
+        "entry-contextual",
+        "statement-contextual",
+        "range-contextual",
+        "This provides the relative identity.",
+        subject="This",
+    )
+    entry = entry.__class__(
+        **{
+            **vars(entry),
+            "spatial_scope": SpatialScope(
+                spatial_text="this",
+                spatial_kind="relative-location",
+                spatial_confidence="high",
+            ),
+            "claim_role_tags": ("identity",),
+        }
+    )
+    ledger = _ledger(
+        entries=(entry,),
+        atoms=(),
+        statements=(
+            SourceStatement(
+                "statement-contextual",
+                "range-contextual",
+                "This provides the relative identity.",
+                ("entry-contextual",),
+            ),
+        ),
+    )
+    topic = SourceTopic(
+        topic_key="relative-entry",
+        label="Relative Entry",
+        page_kind="concept",
+        match_terms=("relative", "entry"),
+        entry_ids=("entry-contextual",),
+        atom_ids=(),
+        from_heading=False,
+        salience=1,
+    )
+
+    rendered = render_topic_page(
+        topic,
+        ledger,
+        wiki_page_locator="source-relative-entry",
+        source_page_id="source",
+        projection_context=None,
+    )
+
+    assert ledger_entry_projection_eligibility(entry) == PROJECTION_ELIGIBILITY_CONTEXTUAL_ONLY
+    assert "This provides the relative identity" not in rendered.page_body
+    assert "range-contextual" not in rendered.page_body
+
+
+def test_broad_topic_policy_limits_evidence_blocks_by_source_section() -> None:
+    ledger = _ledger(
+        entries=(
+            _claim("entry-a1", "statement-a1", "range-a1", "Alpha first.", node_id="node-a"),
+            _claim("entry-a2", "statement-a2", "range-a2", "Alpha second.", node_id="node-a"),
+            _claim("entry-b1", "statement-b1", "range-b1", "Beta first.", node_id="node-b"),
+            _claim("entry-c1", "statement-c1", "range-c1", "Gamma first.", node_id="node-c"),
+        ),
+        atoms=(),
+        statements=(
+            SourceStatement("statement-a1", "range-a1", "Alpha first.", ("entry-a1",)),
+            SourceStatement("statement-a2", "range-a2", "Alpha second.", ("entry-a2",)),
+            SourceStatement("statement-b1", "range-b1", "Beta first.", ("entry-b1",)),
+            SourceStatement("statement-c1", "range-c1", "Gamma first.", ("entry-c1",)),
+        ),
+    )
+    context = build_projection_context(ledger, _broad_structure())
+    topic = SourceTopic(
+        topic_key="large-topic",
+        label="Large Topic",
+        page_kind="concept",
+        match_terms=("large", "topic"),
+        entry_ids=("entry-a1", "entry-a2", "entry-b1", "entry-c1"),
+        atom_ids=(),
+        from_heading=False,
+        salience=4,
+    )
+    policy = topic_projection_policy(
+        topic,
+        ledger,
+        context,
+        budget=ProjectionBudget(
+            broad_topic_min_entries=99,
+            broad_topic_min_sections=2,
+            broad_topic_min_source_order_span=99,
+            broad_topic_max_blocks_per_section=1,
+            broad_topic_max_sections=2,
+        ),
+    )
+
+    rendered = render_topic_page(
+        topic,
+        ledger,
+        wiki_page_locator="source-large-topic",
+        source_page_id="source",
+        projection_context=context,
+        projection_policy=policy,
+    )
+
+    assert policy.page_family == PAGE_FAMILY_BROAD_TOPIC
+    assert "## Statements by source section" in rendered.page_body
+    assert "Alpha first." in rendered.page_body
+    assert "Alpha second." not in rendered.page_body
+    assert "Beta first." in rendered.page_body
+    assert "Gamma first." not in rendered.page_body
+
+
 def _structure() -> DocumentStructure:
     return DocumentStructure(
         "root",
@@ -187,6 +402,81 @@ def _structure() -> DocumentStructure:
             ExtractedUnitDispositionRecord("unit-distance", "range-distance", "accepted", 3),
             ExtractedUnitDispositionRecord("unit-description", "range-description", "accepted", 4),
             ExtractedUnitDispositionRecord("unit-command", "range-command", "accepted", 5),
+        ),
+    )
+
+
+def _broad_structure() -> DocumentStructure:
+    return DocumentStructure(
+        "root",
+        (
+            StructureNode("root", "root", "source.pdf", "root", "source.pdf", 0),
+            StructureNode(
+                "node-a",
+                "section",
+                "Section A",
+                "range-heading-a",
+                "source.pdf",
+                1,
+                parent_structure_node_id="root",
+            ),
+            StructureNode(
+                "node-b",
+                "section",
+                "Section B",
+                "range-heading-b",
+                "source.pdf",
+                2,
+                parent_structure_node_id="root",
+            ),
+            StructureNode(
+                "node-c",
+                "section",
+                "Section C",
+                "range-heading-c",
+                "source.pdf",
+                3,
+                parent_structure_node_id="root",
+            ),
+        ),
+        (
+            ExtractedUnitDispositionRecord("unit-a1", "range-a1", "accepted", 1),
+            ExtractedUnitDispositionRecord("unit-a2", "range-a2", "accepted", 2),
+            ExtractedUnitDispositionRecord("unit-b1", "range-b1", "accepted", 100),
+            ExtractedUnitDispositionRecord("unit-c1", "range-c1", "accepted", 200),
+        ),
+    )
+
+
+def _continuation_structure() -> DocumentStructure:
+    return DocumentStructure(
+        "root",
+        (
+            StructureNode("root", "root", "source.pdf", "root", "source.pdf", 0),
+            StructureNode(
+                "node-dark-priest",
+                "section",
+                "Dark Priest Skill",
+                "range-dark-priest-heading",
+                "source.pdf",
+                1,
+                parent_structure_node_id="root",
+            ),
+        ),
+        (
+            ExtractedUnitDispositionRecord(
+                "unit-dark-priest-heading", "range-dark-priest-heading", "structural", 1
+            ),
+            ExtractedUnitDispositionRecord(
+                "unit-dark-priest-start", "range-dark-priest-start", "accepted", 10
+            ),
+            ExtractedUnitDispositionRecord("unit-noise", "range-noise", "structural", 11),
+            ExtractedUnitDispositionRecord(
+                "unit-dark-priest-continuation",
+                "range-dark-priest-continuation",
+                "accepted",
+                12,
+            ),
         ),
     )
 

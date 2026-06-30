@@ -190,9 +190,7 @@ def _strip_balanced_marker_spans(text: str, marker: str) -> str:
     return "".join(parts)
 
 
-def _markdown_span_is_plain(
-    text: str, marker: str, start: int, end: int, inner: str
-) -> bool:
+def _markdown_span_is_plain(text: str, marker: str, start: int, end: int, inner: str) -> bool:
     if not inner or "\n" in inner or marker in inner:
         return False
     before = text[start - 1] if start > 0 else " "

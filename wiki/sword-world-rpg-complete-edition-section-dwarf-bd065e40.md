@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-dwarf-bd065e40
 page_kind: source
+page_family: section-reference
 summary: 【 Dwarf 】: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dwarf-bd065e40@f35a4df14d3d498f968130d6d19aba8a
+projection_coverage: section-sword-world-rpg-complete-edition-section-dwarf-bd065e40@b16957a205d489acf533935d27751aba
 ---
 
 # 【 Dwarf 】
@@ -16,7 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-dwarf-e4b48970]] - same source heading: another source section with the same heading, 【 Dwarf 】
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-dwarf-e4b48970]] - same source heading: another source section with the same heading, 1.4 Character Creation / 【 Dwarf 】
 
 ## Statements
 

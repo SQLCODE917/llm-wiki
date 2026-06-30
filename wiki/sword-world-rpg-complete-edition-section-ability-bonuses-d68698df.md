@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-ability-bonuses-d68698df
 page_kind: source
+page_family: section-reference
 summary: 【 Ability Bonuses 】: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ability-bonuses-d68698df@f38ee62678c1cfa8f343466773851de7
+projection_coverage: section-sword-world-rpg-complete-edition-section-ability-bonuses-d68698df@34f95dd328c997baf24c13074e0cdace
 ---
 
 # 【 Ability Bonuses 】
@@ -17,7 +18,7 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-ability-bonuse]] - topic hub: opens the topic page for Ability Bonuse
-- [[sword-world-rpg-complete-edition-section-ability-bonuses-b2f8cd3d]] - same source heading: another source section with the same heading, [ ⑤ Ability Bonuses ]
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-ability-bonuses-b2f8cd3d]] - same source heading: another source section with the same heading, 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑤ Ability Bonuses ]
 
 ## Statements
 

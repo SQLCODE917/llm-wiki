@@ -31,7 +31,6 @@ def test_stream_grid_reconstruction_merges_wrapped_cells_and_groups() -> None:
 
 def _line(index: int, y0: float, words: list[tuple[float, str]]) -> TextLine:
     boxes = tuple(
-        WordBox(x0, y0, x0 + max(6.0, len(text) * 5.0), y0 + 10.0, text)
-        for x0, text in words
+        WordBox(x0, y0, x0 + max(6.0, len(text) * 5.0), y0 + 10.0, text) for x0, text in words
     )
     return TextLine(index, y0, y0 + 10.0, boxes)

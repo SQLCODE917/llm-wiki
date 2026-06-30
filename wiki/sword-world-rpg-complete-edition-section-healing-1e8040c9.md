@@ -1,22 +1,19 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-healing-1e8040c9
 page_kind: source
+page_family: section-reference
 summary: Healing: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-healing-1e8040c9@a02f0ad2ba8f9905e20b477d3f863617
+projection_coverage: section-sword-world-rpg-complete-edition-section-healing-1e8040c9@e0c4e39e2db0c6c19907e0fa0af7371a
 ---
 
 # Healing
 
 From [[sword-world-rpg-complete-edition]].
-
-## Related pages
-
-- [[sword-world-rpg-complete-edition-section-5-3-7bfa67b3]] - broader source section: 5.3
 
 ## Statements
 

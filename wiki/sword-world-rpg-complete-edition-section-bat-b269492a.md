@@ -1,9 +1,10 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-bat-b269492a
 page_kind: source
+page_family: section-reference
 summary: [ Bat ]: 37 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf

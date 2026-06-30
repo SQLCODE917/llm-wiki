@@ -9,7 +9,7 @@ node when a source is structurally flat.
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 
 from llmwiki.domain.ledger.canonical import deterministic_id, short_digest
 from llmwiki.domain.ledger.segments import SourceSegment
@@ -19,6 +19,7 @@ _DEPTH_KIND = {1: "chapter", 2: "section"}
 _MARKDOWN_DECORATION = re.compile(r"[*_`]+")
 _TRAILING_MARKER = re.compile(r"\s+#+\s*$")
 _WHITESPACE = re.compile(r"\s+")
+_PENDING_NUMBER_MARKER_WINDOW = 24
 
 
 @dataclass(frozen=True)
@@ -35,6 +36,15 @@ class _OpenHeading:
     canonical_label: str
     number_path: tuple[int, ...]
     is_number_marker: bool
+    title_bound: bool = True
+
+
+@dataclass(frozen=True)
+class _PendingNumberMarker:
+    heading: _OpenHeading
+    stack: tuple[_OpenHeading, ...]
+    previous_node_id: str
+    source_order: int
 
 
 def build_structure(
@@ -52,17 +62,36 @@ def build_structure(
     nodes: list[StructureNode] = [root]
     node_for_segment: dict[str, str] = {}
     open_headings: list[_OpenHeading] = []
-    for order, segment in enumerate(segments, start=1):
+    pending_markers: dict[tuple[int, ...], _PendingNumberMarker] = {}
+    for index, segment in enumerate(segments):
+        order = index + 1
         if segment.segment_kind == "heading":
             depth = _heading_depth(segment.text)
             heading_text = _heading_text(segment.text)
             canonical_label = _canonical_heading_label(heading_text)
             number_path = _heading_number_path(canonical_label)
             is_number_marker = _is_number_marker(canonical_label, number_path)
+            previous_node_id = _previous_node_id(open_headings, root_id)
+            pending = _pending_marker_for_title(
+                pending_markers, canonical_label, segments, index, order
+            )
+            if pending is not None:
+                heading_text = _numbered_title(pending.heading.number_path, heading_text)
+                canonical_label = _canonical_heading_label(heading_text)
+                bound = replace(pending.heading, canonical_label=canonical_label, title_bound=True)
+                _replace_node_heading(nodes, bound.node_id, heading_text, segment.evidence_ids)
+                open_headings = [*pending.stack[:-1], bound]
+                pending_markers.pop(pending.heading.number_path, None)
+                node_for_segment[segment.segment_id] = bound.node_id
+                continue
             while open_headings and open_headings[-1].depth >= depth:
                 if _number_parent(open_headings[-1].number_path, number_path):
                     break
-                if open_headings[-1].is_number_marker and not number_path:
+                if (
+                    open_headings[-1].is_number_marker
+                    and open_headings[-1].title_bound
+                    and not number_path
+                ):
                     break
                 open_headings.pop()
             if (
@@ -103,13 +132,26 @@ def build_structure(
                     evidence_ids=segment.evidence_ids,
                 )
             )
-            open_headings.append(
-                _OpenHeading(depth, node_id, canonical_label, number_path, is_number_marker)
+            heading = _OpenHeading(
+                depth,
+                node_id,
+                canonical_label,
+                number_path,
+                is_number_marker,
+                title_bound=not is_number_marker,
             )
+            open_headings.append(heading)
+            if is_number_marker:
+                pending_markers[number_path] = _PendingNumberMarker(
+                    heading=heading,
+                    stack=tuple(open_headings),
+                    previous_node_id=previous_node_id,
+                    source_order=order,
+                )
             node_for_segment[segment.segment_id] = node_id
         else:
-            node_for_segment[segment.segment_id] = (
-                open_headings[-1].node_id if open_headings else root_id
+            node_for_segment[segment.segment_id] = _node_for_non_heading(
+                open_headings, pending_markers, segment, root_id
             )
     return StructurePlan(root_id, tuple(nodes), node_for_segment)
 
@@ -171,3 +213,79 @@ def _without_leading_number(label: str) -> str:
         label,
         count=1,
     ).strip()
+
+
+def _pending_marker_for_title(
+    pending_markers: dict[tuple[int, ...], _PendingNumberMarker],
+    canonical_label: str,
+    segments: tuple[SourceSegment, ...],
+    index: int,
+    order: int,
+) -> _PendingNumberMarker | None:
+    for pending in sorted(pending_markers.values(), key=lambda item: -item.source_order):
+        if order - pending.source_order > _PENDING_NUMBER_MARKER_WINDOW:
+            continue
+        if order - pending.source_order == 1:
+            return pending
+        if _nearby_numbered_title(pending.heading.number_path, canonical_label, segments, index):
+            return pending
+    return None
+
+
+def _nearby_numbered_title(
+    number_path: tuple[int, ...],
+    canonical_label: str,
+    segments: tuple[SourceSegment, ...],
+    index: int,
+) -> bool:
+    for segment in segments[index : index + 4]:
+        candidate = _canonical_heading_label(_heading_text(segment.text))
+        if _heading_number_path(candidate) != number_path:
+            continue
+        if _same_heading(candidate, canonical_label):
+            return True
+    return False
+
+
+def _numbered_title(number_path: tuple[int, ...], title: str) -> str:
+    return f"{'.'.join(str(part) for part in number_path)} {title}".strip()
+
+
+def _replace_node_heading(
+    nodes: list[StructureNode], node_id: str, heading_text: str, evidence_ids: tuple[str, ...]
+) -> None:
+    for index, node in enumerate(nodes):
+        if node.structure_node_id != node_id:
+            continue
+        nodes[index] = replace(
+            node,
+            heading_text=heading_text,
+            evidence_ids=tuple(dict.fromkeys((*node.evidence_ids, *evidence_ids))),
+        )
+        return
+
+
+def _previous_node_id(open_headings: list[_OpenHeading], root_id: str) -> str:
+    for heading in reversed(open_headings):
+        if heading.title_bound or not heading.is_number_marker:
+            return heading.node_id
+    return root_id
+
+
+def _node_for_non_heading(
+    open_headings: list[_OpenHeading],
+    pending_markers: dict[tuple[int, ...], _PendingNumberMarker],
+    segment: SourceSegment,
+    root_id: str,
+) -> str:
+    if not open_headings:
+        return root_id
+    current = open_headings[-1]
+    if not current.is_number_marker or current.title_bound:
+        return current.node_id
+    pending = pending_markers.get(current.number_path)
+    if pending is None:
+        return current.node_id
+    if _heading_number_path(_canonical_heading_label(segment.text)) == current.number_path:
+        return current.node_id
+    return pending.previous_node_id

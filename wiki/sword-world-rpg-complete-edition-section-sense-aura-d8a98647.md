@@ -1,13 +1,14 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-sense-aura-d8a98647
 page_kind: source
+page_family: section-reference
 summary: 《 Sense Aura 》: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sense-aura-d8a98647@f269576cea072e1ab4064fbf55d91404
+projection_coverage: section-sword-world-rpg-complete-edition-section-sense-aura-d8a98647@714c669220e48af48f60f6691155ba8a
 ---
 
 # 《 Sense Aura 》
@@ -16,7 +17,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-sense-aura-c369fd28]] - same source heading: another source section with the same heading, [ Sense Aura ]
+- [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-sense-aura-c369fd28]] - same source heading: another source section with the same heading, 5.1.12 Ancient Magic List / [ Sense Aura ]
 
 ## Statements
 

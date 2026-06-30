@@ -1,12 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-difficulty
 page_kind: concept
-summary: Difficulty: 8 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+page_family: topic-concept
+summary: Difficulty: 12 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-29
+updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-difficulty@6d9fa35a7c93e29954f2deebe8640a36
+projection_coverage: topic-sword-world-rpg-complete-edition-difficulty@5d8fa7ae0b213b280744de8520015fec
 ---
 
 # Difficulty
@@ -28,6 +29,12 @@ What [[sword-world-rpg-complete-edition]] covers about difficulty:
 - During a difficulty check, it is up to the game master to decide whether or not to reveal the difficulty. However, the difficulty should be made as clear as possible. When a player makes a success roll, they use the baseline score (skill level + ability bonus) and the final score attained from the dice roll to infer the success or failure of the action. At this time, if you don't know the difficulty, it'll be difficult to guess. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05612))_
 
 - However, this is not possible without knowing the difficulty. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05614))_
+
+- The time when you should not reveal the difficulty is when revealing the difficulty itself would indicate that something is wrong . For example, suppose one mansion has a difficulty 5 trap and a difficulty 6 trap. What if the difficulty of finding traps has been 5 for a long time, but it suddenly increases to 6? _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05616))_
+
+- That alone will make players wary. In such cases, it is better to keep the difficulty low. A technique for creating scenarios is to keep the difficulty consistent for success rolls that are likely to be made frequently in one scenario, such as finding traps. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05617))_
+
+- If you really want to include traps with different difficulties, then when the difficulty changes, just nonchalantly say Okay, make a success roll without telling _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05618))_
 
 
 ## Technical atoms
@@ -72,7 +79,7 @@ What [[sword-world-rpg-complete-edition]] covers about difficulty:
 - [[sword-world-rpg-complete-edition-target-score]] - shared statements and technical atoms: Target Scores shares source evidence from Chapter 9: / Setting Target Scores and Difficulties: To make a success roll, you must decide on the skill to be used , the relevant ability score , and the target score or difficulty . Of these, skill and ability score ... [truncated]; Target Scores shares technical record from Chapter 9: / Setting Target Scores and Difficulties: To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties. (3 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-should-you-target-score-check]] - shared statements and technical atoms: Should You Target Score Check shares source evidence from Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: There are two types of success rolls: those that use a target score for the check and those that use a difficulty for the check. The game master must decide which of ... [truncated]; Should You Target Score Check shares technical record from Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: The standard for deciding is whether the character can tell if the action succeeded or failed . (2 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-ability-score]] - shared statements: Ability Scores shares source evidence from Chapter 9: / Setting Target Scores and Difficulties: To make a success roll, you must decide on the skill to be used , the relevant ability score , and the target score or difficulty . Of these, skill and ability score ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-difficulty-d902eee8]] - source section: Difficulty shares source evidence from Difficulty: Difficulty is a score determined by the game master based on the difficulty of the actions the character attempts. What makes this different from a target score is t ... [truncated]; Difficulty shares technical table: 1. There is a  trap, the find trap check is successful → There is a trap at the door 2. There is a trap, the find trap check is a failure → You don't find any traps ... [truncated] (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-2-5-difficulty-checks-2-5-1-difficulty-b2b0e076]] - source section: 2.5 Difficulty Checks / 2.5.1 Difficulty shares source evidence from 2.5 Difficulty Checks / 2.5.1 Difficulty: Difficulty is a score determined by the game master based on the difficulty of the actions the character attempts. What makes this different from a target score is t ... [truncated]; 2.5 Difficulty Checks / 2.5.1 Difficulty shares technical table: 1. There is a  trap, the find trap check is successful → There is a trap at the door 2. There is a trap, the find trap check is a failure → You don't find any traps ... [truncated] (2 shared statement(s), 1 shared atom(s))
 
 ## Source
 
