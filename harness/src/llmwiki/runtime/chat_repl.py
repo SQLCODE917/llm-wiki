@@ -24,7 +24,7 @@ _HELP = """commands:
   /ingest <file>  ingest a raw source (own workflow, warm server)
   /lint           health-check the wiki (own workflow, warm server)
   /help           this text
-  /exit           leave chat (Ctrl-C and Ctrl-D work too)
+  /exit           leave chat (Ctrl-C prints the resume command)
 anything else is a question for the wiki."""
 
 
@@ -98,6 +98,19 @@ class ChatRepl:
                 f"Conversations: {', '.join(sorted(self.conversations_touched))}. "
                 "History in harness/chat.db; transcripts per turn in harness/runs/.",
             )
+
+    def resume_command(self, runtime_name: str | None = None) -> str:
+        runtime = f" --runtime {runtime_name}" if runtime_name else ""
+        resume = f" --resume {self.active_id}" if self.active_id else " --resume"
+        return f"uv run llmwiki{runtime} chat{resume}"
+
+    def interrupt(self, runtime_name: str | None = None) -> None:
+        self.emit("")
+        if self.active_id:
+            self.emit(f"interrupted; conversation {self.active_id} is still resumable")
+        else:
+            self.emit("interrupted")
+        self.emit(f"resume with: {self.resume_command(runtime_name)}")
 
     # -- internals -------------------------------------------------------------
 

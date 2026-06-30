@@ -272,8 +272,9 @@ mode we hit.
 - **It's a local model behind forge.** Even with guardrails, expect occasional
   mis-filed pages, thin summaries, or missed cross-references — that's what
   `lint` is for, and `raw/` remains the immutable source of truth.
-- **Query runs with `/no_think`.** Fast factual lookups; complex multi-hop
-  questions get less reasoning than ingest/lint do.
+- **Query/chat run with backend thinking disabled.** Fast factual lookups avoid
+  thinking preambles at the runtime boundary; control tokens are not injected
+  into user questions.
 - **`wiki-health` is rewritten each lint.** Point-in-time reports live only
   in `log.md` and git history, not as dated pages.
 - **`wiki-curator-status` is rewritten each maintenance pass.** It is the

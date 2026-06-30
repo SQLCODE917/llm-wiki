@@ -1093,3 +1093,19 @@ class TestSearch:
     def test_snippet_contains_context(self) -> None:
         hits = search_pages(self.PAGES, "hittites")
         assert "Hittites" in hits[0].snippet
+
+    def test_exact_phrase_on_focused_page_beats_broad_repetition(self) -> None:
+        pages = {
+            "source-manifest": " ".join(["warrior"] * 50) + " dragontooth warrior appears once.",
+            "section-skeleton-warrior": (
+                "A skeleton warrior is also known as a dragontooth warrior."
+            ),
+        }
+
+        hits = search_pages(pages, "dragontooth warrior")
+
+        assert [h.name for h in hits] == [
+            "section-skeleton-warrior",
+            "source-manifest",
+        ]
+        assert "dragontooth warrior" in hits[0].snippet

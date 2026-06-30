@@ -18,6 +18,11 @@ from forge.core.messages import Message, MessageMeta, MessageRole, MessageType
 from forge.core.runner import WorkflowRunner
 
 from llmwiki.config import StrictEvidenceMode
+from llmwiki.domain.chat_grounding import (
+    ChatEvidenceScope,
+    plan_chat_grounding,
+    render_grounded_user_message,
+)
 from llmwiki.domain.chatwindow import QAPair
 from llmwiki.domain.claim_support import (
     ClaimSupportAuditReport,
@@ -72,6 +77,7 @@ from llmwiki.domain.planning import (
 )
 from llmwiki.domain.planning_analysis import build_extracted_unit
 from llmwiki.domain.salience import SalienceReport, compute_salience, reconcile_key_lists
+from llmwiki.domain.search import render_hits, search_pages
 from llmwiki.domain.semantic_lint import (
     SemanticFinding,
     SemanticLintReport,
@@ -683,8 +689,7 @@ class Session:
 
     async def query(self, question: str) -> OperationResult:
         workflow = build_query_workflow(self.store, self.today, self._evidence_policy())
-        # Factual lookups don't benefit from Qwen3's thinking preamble.
-        answer, transcript = await self._run(workflow, question + " /no_think", "query")
+        answer, transcript = await self._run(workflow, question, "query")
         self.store.append_log(self.today, "query", question, answer)
         return OperationResult("query", question, answer, transcript)
 
@@ -695,11 +700,25 @@ class Session:
 
         The seed carries question/answer text only — prior tool calls and
         page contents are never replayed; evidence is re-fetched on demand.
-        *grounded* (a conversation's first turn) provisions the wiki index
-        with the question, so the opening answer starts from the catalog
-        and drills into pages — grounding by provisioning, not enforcement.
+        The current question chooses the evidence mode: catalog questions get
+        the index, conversational refinements get the prior Q/A window, and
+        fresh content lookups get deterministic search hints before the model
+        reads wiki pages.
         """
-        workflow = build_chat_workflow(self.store)
+        grounding_plan = plan_chat_grounding(question, grounded=grounded, has_window=bool(window))
+        search_results = ""
+        evidence_scope: ChatEvidenceScope | None = None
+        if grounding_plan.include_search_results:
+            pages = self.store.page_texts()
+            search_hits = search_pages(pages, question)
+            search_results = render_hits(search_hits)
+            evidence_scope = ChatEvidenceScope.from_search_hits(pages, search_hits)
+        workflow = build_chat_workflow(
+            self.store,
+            allow_index_response=grounding_plan.allow_index_response,
+            require_wiki_read=grounding_plan.require_wiki_read,
+            evidence_scope=evidence_scope,
+        )
         rendered = workflow.build_system_prompt(schema=self.store.read_schema())
         seed = [Message(MessageRole.SYSTEM, rendered, MessageMeta(MessageType.SYSTEM_PROMPT))]
         for pair in window:
@@ -709,12 +728,13 @@ class Session:
             seed.append(
                 Message(MessageRole.ASSISTANT, pair.answer, MessageMeta(MessageType.TEXT_RESPONSE))
             )
-        message = question + " /no_think"
-        if grounded:
-            message = (
-                "The wiki's index — the catalog of every page:\n\n"
-                f"{self.store.read_index()}\n\n"
-                f"Question: {message}"
+        message = question
+        if grounding_plan.include_index or grounding_plan.include_search_results:
+            message = render_grounded_user_message(
+                question,
+                grounding_plan,
+                index_text=self.store.read_index() if grounding_plan.include_index else "",
+                search_results=search_results,
             )
         seed.append(Message(MessageRole.USER, message, MessageMeta(MessageType.USER_INPUT)))
         return await self._run(workflow, message, "chat", tag=tag, initial_messages=seed)

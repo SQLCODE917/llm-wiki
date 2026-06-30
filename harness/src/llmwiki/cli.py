@@ -9,9 +9,10 @@ from __future__ import annotations
 import argparse
 import asyncio
 import sys
+from contextlib import suppress
 from datetime import datetime
 from pathlib import Path
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 from forge.context import ContextManager, NoCompact
 
@@ -429,10 +430,10 @@ async def _run(args: argparse.Namespace) -> OperationResult:
         if args.op == "query":
             return await session.query(args.question)
         if args.op == "chat":
-            return await _run_chat(session, paths, args.resume)
+            return await _run_chat(session, paths, args.resume, backend_config.runtime_name)
         return await session.lint()
     finally:
-        await backend.aclose()
+        await _close_backend_safely(backend)
 
 
 def _select_profiles(paths: WikiPaths, requested: list[str]) -> tuple[IngestProfile, ...]:
@@ -948,28 +949,38 @@ def _run_candidates(args: argparse.Namespace, paths: WikiPaths, today: str) -> O
     return OperationResult("candidates", "candidate backlog", backlog.render(), None)
 
 
-async def _run_chat(session: Session, paths: WikiPaths, resume: str | None) -> OperationResult:
+async def _run_chat(
+    session: Session, paths: WikiPaths, resume: str | None, runtime_name: str | None
+) -> OperationResult:
     """The thin input loop; all REPL logic lives in ChatRepl (testable)."""
     chat_store = ChatStore(paths.root / "harness" / "chat.db")
     repl = ChatRepl(session=session, chat_store=chat_store)
+    interrupted = False
     try:
         repl.start(resume)
         while True:
             try:
-                line = await asyncio.to_thread(input, "llmwiki> ")
+                line = input("llmwiki> ")
             except EOFError:  # Ctrl-D
                 break
             if not await repl.handle(line):
                 break
-    except KeyboardInterrupt:  # Ctrl-C: same graceful path as /exit
-        pass
+    except (KeyboardInterrupt, asyncio.CancelledError):  # Ctrl-C
+        interrupted = True
+        repl.interrupt(runtime_name)
     finally:
         repl.finish()
         chat_store.close()
+    status = "chat interrupted" if interrupted else "chat ended"
     summary = (
-        f"chat ended: {repl.turns} turns across {len(repl.conversations_touched)} conversation(s)"
+        f"{status}: {repl.turns} turns across {len(repl.conversations_touched)} conversation(s)"
     )
     return OperationResult("chat", "conversation", summary, None)
+
+
+async def _close_backend_safely(backend: Any) -> None:
+    with suppress(KeyboardInterrupt, asyncio.CancelledError):
+        await backend.aclose()
 
 
 def main() -> None:
@@ -979,6 +990,8 @@ def main() -> None:
     except (ConfigError, PdfError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         raise SystemExit(2) from exc
+    except KeyboardInterrupt:
+        raise SystemExit(130) from None
     print(result.output)
     if result.transcript_path is not None:
         print(f"\n[transcript: {result.transcript_path}]", file=sys.stderr)

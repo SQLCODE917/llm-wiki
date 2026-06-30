@@ -1,16 +1,24 @@
 """Chat e2e: read-only workflow, seeded turns, and the REPL's dispatch logic
 — real WorkflowRunner + stores, fake LLM, no terminal."""
 
+import asyncio
+import builtins
+
+import pytest
 from fakes import FakeClient
 from forge.context import ContextManager, NoCompact
 from forge.core.workflow import ToolCall
 from helpers import wiki_page
 
+from llmwiki.cli import _close_backend_safely, _run_chat
 from llmwiki.config import WikiPaths
+from llmwiki.domain.chat_grounding import ChatEvidenceScope
 from llmwiki.domain.chatwindow import QAPair
+from llmwiki.domain.pages import PageMetadata, WikiPage
+from llmwiki.domain.search import SearchHit
 from llmwiki.runtime.chat_repl import ChatRepl
 from llmwiki.runtime.session import Session
-from llmwiki.store import WikiStore
+from llmwiki.store import WikiStore, WikiStoreError
 from llmwiki.store.chat_store import ChatStore
 from llmwiki.workflows import build_chat_file_workflow, build_chat_workflow
 
@@ -47,9 +55,74 @@ class TestChatWorkflow:
         assert set(workflow.tools) == {"search_wiki", "read_index", "read_page", "respond"}
 
     def test_no_required_steps_grounding_is_provisioned(self, store: WikiStore) -> None:
-        # A required-search step was removed on live evidence: it interrupted
-        # a correct index-first flow and the forced junk search won by recency.
+        # The respond tool performs the evidence gate, so StepEnforcer still
+        # does not force a fixed navigation sequence.
         assert build_chat_workflow(store).required_steps == []
+
+    def test_content_chat_requires_page_read_before_response(self, store: WikiStore) -> None:
+        _seed_wiki(store)
+        workflow = build_chat_workflow(store, allow_index_response=False)
+        workflow.tools["read_index"].callable()
+        with pytest.raises(WikiStoreError, match="read_page"):
+            workflow.tools["respond"].callable(message="The index did not mention it.")
+
+    def test_content_chat_requires_citation_to_read_page(self, store: WikiStore) -> None:
+        _seed_wiki(store)
+        workflow = build_chat_workflow(store, allow_index_response=False)
+        workflow.tools["read_page"].callable(page_id="closure")
+
+        with pytest.raises(WikiStoreError, match=r"\[\[closure\]\]"):
+            workflow.tools["respond"].callable(
+                message="A closure captures its defining environment. (raw/book.pdf)"
+            )
+
+        answer = workflow.tools["respond"].callable(
+            message="A closure captures its defining environment. [[closure]] (raw/book.pdf)"
+        )
+        assert "[[closure]]" in answer
+
+    def test_focused_chat_scope_rejects_lower_ranked_aggregate_read(self, store: WikiStore) -> None:
+        store.write_page(
+            WikiPage(
+                page_metadata=PageMetadata(
+                    page_id="book",
+                    page_kind="source",
+                    page_family="source-manifest",
+                    summary="Whole source manifest.",
+                ),
+                page_body="### Disposition counts\n\n- non-claim: 5206\n",
+            )
+        )
+        store.write_page(
+            WikiPage(
+                page_metadata=PageMetadata(
+                    page_id="book-section",
+                    page_kind="source",
+                    page_family="section-reference",
+                    summary="Focused section.",
+                ),
+                page_body="A precise term is explained here.",
+            )
+        )
+        scope = ChatEvidenceScope.from_search_hits(
+            store.page_texts(),
+            (
+                SearchHit("book-section", 247, "focused"),
+                SearchHit("book", 227, "aggregate"),
+            ),
+        )
+        workflow = build_chat_workflow(
+            store,
+            allow_index_response=False,
+            evidence_scope=scope,
+        )
+
+        assert "precise term" in workflow.tools["read_page"].callable(page_id="book-section")
+        with pytest.raises(WikiStoreError) as exc:
+            workflow.tools["read_page"].callable(page_id="book")
+
+        assert "source-manifest" in str(exc.value)
+        assert "non-claim" not in str(exc.value)
 
     def test_chat_file_workflow_is_explicit_write_path(self, store: WikiStore) -> None:
         workflow = build_chat_file_workflow(store, TODAY)
@@ -65,6 +138,7 @@ class TestChatWorkflow:
         # directly from it.
         _seed_wiki(store)
         script = [
+            [ToolCall(tool="read_index", args={})],
             [ToolCall(tool="respond", args={"message": "It covers [[closure]] and more."})],
         ]
         session = _session(store, script, paths)
@@ -83,7 +157,12 @@ class TestChatWorkflow:
         _seed_wiki(store)
         script = [[ToolCall(tool="respond", args={"message": "ok"})]]
         session = _session(store, script, paths)
-        await session.chat_turn("shorter please", window=(), grounded=False, tag="chat-f")
+        await session.chat_turn(
+            "shorter please",
+            window=(QAPair(question="what is a closure?", answer="See [[closure]]."),),
+            grounded=False,
+            tag="chat-f",
+        )
         fake: FakeClient = session.client
         user_contents = [m["content"] for m in fake.sent[0] if m["role"] == "user"]
         assert not any("[[closure]] — Functions capturing scope." in c for c in user_contents)
@@ -96,6 +175,7 @@ class TestChatTurn:
         _seed_wiki(store)
         script = [
             [ToolCall(tool="search_wiki", args={"query": "closure"})],
+            [ToolCall(tool="read_page", args={"page_id": "closure"})],
             [ToolCall(tool="respond", args={"message": "See [[closure]]."})],
         ]
         session = _session(store, script, paths)
@@ -104,6 +184,11 @@ class TestChatTurn:
         )
         assert answer == "See [[closure]]."
         assert transcript is not None and transcript.exists()
+        fake: FakeClient = session.client
+        first_user = next(m for m in fake.sent[0] if m["role"] == "user")
+        assert "Initial wiki search results for the question." in first_user["content"]
+        assert "[[closure]]" in first_user["content"]
+        assert "/no_think" not in first_user["content"]
 
     async def test_follow_up_sees_window_and_skips_search(
         self, store: WikiStore, paths: WikiPaths
@@ -125,6 +210,32 @@ class TestChatTurn:
         assert any("See [[closure]]." in c for c in contents)
         assert sent[0]["role"] == "system"
         assert "say that shorter" in sent[-1]["content"]
+
+    async def test_resumed_fresh_lookup_gets_search_hints_and_requires_page_read(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        _seed_wiki(store)
+        script = [
+            [ToolCall(tool="read_page", args={"page_id": "closure"})],
+            [ToolCall(tool="respond", args={"message": "See [[closure]]."})],
+        ]
+        session = _session(store, script, paths)
+        window = (
+            QAPair(
+                question="previous topic",
+                answer="Prior answer about a different topic.",
+            ),
+        )
+
+        answer, _ = await session.chat_turn(
+            "closure", window=window, grounded=False, tag="chat-new-topic"
+        )
+
+        assert answer == "See [[closure]]."
+        fake: FakeClient = session.client
+        current_user = [m for m in fake.sent[0] if m["role"] == "user"][-1]
+        assert "Initial wiki search results for the question." in current_user["content"]
+        assert "[[closure]]" in current_user["content"]
 
 
 class TestChatFile:
@@ -298,14 +409,15 @@ class TestChatRepl:
         _seed_wiki(store)
         script = [
             [ToolCall(tool="search_wiki", args={"query": "closure"})],
-            [ToolCall(tool="respond", args={"message": "Answer one."})],
+            [ToolCall(tool="read_page", args={"page_id": "closure"})],
+            [ToolCall(tool="respond", args={"message": "Answer one from [[closure]]."})],
         ]
         repl, emitted = self._repl(store, paths, script)
         repl.start(resume=None)
         first_id = repl.active_id
 
         assert await repl.handle("what is a closure?") is True
-        assert "Answer one." in emitted
+        assert "Answer one from [[closure]]." in emitted
         assert repl.chat_store.turn_count(first_id) == 1
 
         assert await repl.handle("/new") is True
@@ -394,6 +506,58 @@ class TestChatRepl:
         await repl.handle("/switch ghost")
         assert repl.active_id == "old-1"
         assert any("no conversation 'ghost'" in line for line in emitted)
+
+    def test_interrupt_message_prints_runtime_resume_command(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        repl, emitted = self._repl(store, paths, script=[])
+        repl.start(resume=None)
+        session_id = repl.active_id
+
+        repl.interrupt("local-4090")
+
+        assert f"conversation {session_id} is still resumable" in "\n".join(emitted)
+        assert (
+            f"resume with: uv run llmwiki --runtime local-4090 chat --resume {session_id}"
+            in emitted
+        )
+
+    async def test_cli_ctrl_c_prints_resume_command(
+        self,
+        monkeypatch: pytest.MonkeyPatch,
+        store: WikiStore,
+        paths: WikiPaths,
+        capsys: pytest.CaptureFixture[str],
+    ) -> None:
+        def interrupting_input(_prompt: str) -> str:
+            raise KeyboardInterrupt
+
+        monkeypatch.setattr(builtins, "input", interrupting_input)
+
+        result = await _run_chat(
+            _session(store, [], paths),
+            paths,
+            resume=None,
+            runtime_name="local-4090",
+        )
+
+        output = capsys.readouterr().out
+        assert "resume with: uv run llmwiki --runtime local-4090 chat --resume" in output
+        assert result.output.startswith("chat interrupted:")
+
+    async def test_backend_cleanup_suppresses_late_interrupt(self) -> None:
+        class InterruptingBackend:
+            async def aclose(self) -> None:
+                raise KeyboardInterrupt
+
+        await _close_backend_safely(InterruptingBackend())
+
+    async def test_backend_cleanup_suppresses_late_cancellation(self) -> None:
+        class CancellingBackend:
+            async def aclose(self) -> None:
+                raise asyncio.CancelledError
+
+        await _close_backend_safely(CancellingBackend())
 
     async def test_unknown_command_hint(self, store: WikiStore, paths: WikiPaths) -> None:
         repl, emitted = self._repl(store, paths, script=[])

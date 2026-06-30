@@ -11,8 +11,8 @@ Guardrail contracts (enforced by forge's StepEnforcer, not by prompting):
 from __future__ import annotations
 
 from forge.core.workflow import Workflow
-from forge.tools.respond import respond_tool
 
+from llmwiki.domain.chat_grounding import ChatEvidenceScope
 from llmwiki.domain.claim_support import (
     ClaimSupportCandidate,
     ClaimSupportFinding,
@@ -31,6 +31,7 @@ from llmwiki.domain.semantic_lint import SemanticFinding
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.chat_file_tools import chat_file_write_page_tool
+from llmwiki.workflows.chat_tools import chat_read_page_tool
 from llmwiki.workflows.claim_support_tools import record_claim_support_verdict_tool
 from llmwiki.workflows.contradiction_tools import record_contradiction_tool
 from llmwiki.workflows.graph_tools import link_orphan_tool
@@ -137,7 +138,13 @@ def build_query_workflow(
     )
 
 
-def build_chat_workflow(store: WikiStore) -> Workflow:
+def build_chat_workflow(
+    store: WikiStore,
+    *,
+    allow_index_response: bool = True,
+    require_wiki_read: bool = True,
+    evidence_scope: ChatEvidenceScope | None = None,
+) -> Workflow:
     """Read-only by construction: no write tool exists in this workflow.
 
     Grounding is provisioned, not enforced: the orchestrator prepends the
@@ -147,11 +154,17 @@ def build_chat_workflow(store: WikiStore) -> Workflow:
     a junk search, and the model answered from the junk (recency wins in
     a 14B).
     """
+    seen: set[str] = set()
     tools = [
         search_wiki_tool(store),
-        read_index_tool(store),
-        read_page_tool(store),
-        respond_tool(),
+        read_index_tool(store, read_tracker=seen),
+        chat_read_page_tool(store, evidence_scope=evidence_scope, read_tracker=seen),
+        respond_after_wiki_read_tool(
+            seen,
+            allow_index_response=allow_index_response,
+            require_wiki_read=require_wiki_read,
+            require_read_page_citation=True,
+        ),
     ]
     return Workflow(
         name="chat",

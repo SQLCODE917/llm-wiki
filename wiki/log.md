@@ -284,3 +284,21 @@ Source page: [[sword-world-rpg-complete-edition]]; linked pages: 1246. Ledger ar
 Claim-ledger ingest of raw/Sword World RPG - Complete Edition.pdf (1316 source unit(s)).
 Claim-ledger projection (history): 12343 usable entries, 4708 technical atoms, 1304 needs-review, 1246 linked page(s); write decision write-with-review-work.
 Source page: [[sword-world-rpg-complete-edition]]; linked pages: 1246. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/ledger.
+
+## [2026-06-30] chat | 1 turns across 1 conversation
+Conversations: 20260630-080923. History in harness/chat.db; transcripts per turn in harness/runs/.
+
+## [2026-06-30] chat | 2 turns across 1 conversation
+Conversations: 20260630-101733. History in harness/chat.db; transcripts per turn in harness/runs/.
+
+## [2026-06-30] chat | 1 turns across 1 conversation
+Conversations: 20260630-101733. History in harness/chat.db; transcripts per turn in harness/runs/.
+
+## [2026-06-30] chat | 1 turns across 1 conversation
+Conversations: 20260630-110111. History in harness/chat.db; transcripts per turn in harness/runs/.
+
+## [2026-06-30] chat | 1 turns across 1 conversation
+Conversations: 20260630-112021. History in harness/chat.db; transcripts per turn in harness/runs/.
+
+## [2026-06-30] chat | 1 turns across 1 conversation
+Conversations: 20260630-112336. History in harness/chat.db; transcripts per turn in harness/runs/.
