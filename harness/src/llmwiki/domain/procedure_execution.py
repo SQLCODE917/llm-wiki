@@ -113,7 +113,9 @@ def validate_procedure_execution(
             return _reject(f"Step {sequence} has invalid status {step.status!r}.")
         if step.status == "unresolved" and not (step.note or step.outputs):
             return _reject(f"Step {sequence} is unresolved but has no note.")
-        if step.status != "unresolved" and not step.outputs:
+        if step.status == "partial" and not (step.note or step.outputs):
+            return _reject(f"Step {sequence} is partial but has no note or output.")
+        if step.status == "completed" and not step.outputs:
             return _reject(f"Step {sequence} must record at least one output.")
         decision = _validate_outputs(
             step.outputs,

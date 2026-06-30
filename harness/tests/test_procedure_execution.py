@@ -27,6 +27,47 @@ def test_task_evidence_pack_follows_procedure_step_links() -> None:
     assert "Deterministic task evidence pack" in pack.render()
 
 
+def test_task_evidence_pack_lifts_structured_artifacts_from_linked_pages() -> None:
+    pack = build_task_evidence_pack(
+        _pages(),
+        (SearchHit("book-procedure-create-character", 500, "procedure"),),
+        task_mode=ChatTaskMode.EXECUTE_PROCEDURE,
+    )
+
+    assert pack is not None
+    rendered = pack.render()
+    assert "Deterministic structured evidence artifacts" in rendered
+    assert "Table A: Example Outcomes" in rendered
+    assert "roll 8 gives trained operator" in rendered
+    assert "calibration-table" in pack.evidence_texts["book-source-section"]
+
+
+def test_task_evidence_pack_excludes_source_manifest_artifacts() -> None:
+    pack = build_task_evidence_pack(
+        _pages(),
+        (SearchHit("book-procedure-create-character", 500, "procedure"),),
+        task_mode=ChatTaskMode.EXECUTE_PROCEDURE,
+    )
+
+    assert pack is not None
+    rendered = pack.render()
+    assert "irrelevant global formula" not in rendered
+    assert "book-source-manifest" not in pack.page_ids
+
+
+def test_task_evidence_pack_supports_explanation_without_execution_tool() -> None:
+    pack = build_task_evidence_pack(
+        _pages(),
+        (SearchHit("book-procedure-create-character", 500, "procedure"),),
+        task_mode=ChatTaskMode.EXPLAIN_PROCEDURE,
+    )
+
+    assert pack is not None
+    rendered = pack.render(require_procedure_execution=False)
+    assert "Procedure explanation checklist" in rendered
+    assert "submit_procedure_execution" not in rendered
+
+
 def test_procedure_execution_rejects_missing_step() -> None:
     pack = _pack()
     execution = ProcedureExecution(
@@ -213,6 +254,31 @@ def test_procedure_execution_accepts_evidence_and_declared_assumptions() -> None
     assert decision.allowed
 
 
+def test_procedure_execution_accepts_partial_step_note_without_outputs() -> None:
+    pack = _pack()
+    execution = ProcedureExecution(
+        procedure_id=pack.procedure_id,
+        step_results=(
+            ProcedureStepResult(
+                sequence=1,
+                title="Choose Race",
+                status="partial",
+                note="The worked example chooses a human.",
+            ),
+            ProcedureStepResult(
+                sequence=2,
+                title="Record Name",
+                status="partial",
+                note="Name is a free character choice.",
+            ),
+        ),
+    )
+
+    decision = validate_procedure_execution(execution, pack, pack.evidence_texts)
+
+    assert decision.allowed
+
+
 def _pack():
     pack = build_task_evidence_pack(
         _pages(),
@@ -231,9 +297,11 @@ def _pages() -> dict[str, str]:
             "procedure-guide",
             "Create Character.",
             "# Create Character\n\n"
+            "From [[book-source-manifest]].\n\n"
             "## Procedure Steps\n\n"
             "1. **Choose Race** (`choose`) - evidence section [[book-choose-race]].\n"
-            "2. **Record Name** (`record`) - evidence section [[book-record-name]].\n",
+            "2. **Record Name** (`record`) - evidence section [[book-record-name]].\n"
+            "\n## Source Trail\n\n- Source section: [[book-source-section]]\n",
         ),
         "book-choose-race": _page(
             "book-choose-race",
@@ -248,6 +316,33 @@ def _pages() -> dict[str, str]:
             "section-reference",
             "Name choice.",
             "# Record Name\n\nNames are a free character choice.",
+        ),
+        "book-source-manifest": _page(
+            "book-source-manifest",
+            "source",
+            "source-manifest",
+            "Aggregate source page.",
+            "# Aggregate Source\n\n- For example, an irrelevant global formula is 10 x 10 = 100.\n",
+        ),
+        "book-source-section": _page(
+            "book-source-section",
+            "source",
+            "section-reference",
+            "Structured procedure evidence.",
+            "# Source Section\n\n"
+            "## Statements\n\n"
+            "- For example, roll 8 gives trained operator and 200 starting credits.\n\n"
+            "## Technical atoms\n\n"
+            "### Technical frame 1: Generic Procedure / Outcomes\n\n"
+            "**Context:** _(Manual.pdf (source-range-0001))_\n\n"
+            "> Table A: Example Outcomes\n\n"
+            "<details><summary>Raw table text</summary>\n\n"
+            "```text\n"
+            "calibration-table\n"
+            "Roll | Outcome | Credits\n"
+            "8 | trained operator | 200\n"
+            "```\n\n"
+            "</details>\n",
         ),
     }
 

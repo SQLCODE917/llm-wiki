@@ -720,6 +720,7 @@ class Session:
         evidence_scope: ChatEvidenceScope | None = None
         task_evidence_pack_text = ""
         task_evidence_pack = None
+        procedure_execution_required = False
         if grounding_plan.include_search_results:
             pages = self.store.page_texts()
             search_hits = search_pages(pages, question)
@@ -731,15 +732,19 @@ class Session:
                 task_mode=grounding_plan.task_mode,
             )
             if task_evidence_pack is not None:
-                task_evidence_pack_text = task_evidence_pack.render()
+                procedure_execution_required = (
+                    grounding_plan.task_mode is ChatTaskMode.EXECUTE_PROCEDURE
+                )
+                task_evidence_pack_text = task_evidence_pack.render(
+                    require_procedure_execution=procedure_execution_required
+                )
         workflow = build_chat_workflow(
             self.store,
             allow_index_response=grounding_plan.allow_index_response,
             require_wiki_read=grounding_plan.require_wiki_read,
             evidence_scope=evidence_scope,
             task_evidence_pack=task_evidence_pack,
-            require_procedure_execution=task_evidence_pack is not None
-            and grounding_plan.task_mode is ChatTaskMode.EXECUTE_PROCEDURE,
+            require_procedure_execution=procedure_execution_required,
         )
         rendered = workflow.build_system_prompt(schema=self.store.read_schema())
         seed = [Message(MessageRole.SYSTEM, rendered, MessageMeta(MessageType.SYSTEM_PROMPT))]

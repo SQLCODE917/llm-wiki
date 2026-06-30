@@ -2,11 +2,13 @@
 
 from __future__ import annotations
 
+import ast
+import json
 from dataclasses import dataclass
-from typing import Literal
+from typing import Any, Literal
 
 from forge.core.workflow import ToolDef, ToolSpec
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 from llmwiki.domain.procedure_execution import (
     ProcedureExecution,
@@ -43,7 +45,10 @@ class ProcedureStepResultParams(BaseModel):
     )
     outputs: list[ProcedureOutputParams] = Field(
         default_factory=list,
-        description="Recorded outputs for this step.",
+        description=(
+            "Recorded outputs for this step. For broad steps, status='partial' "
+            "with a concise note may be used instead of many nested outputs."
+        ),
     )
     note: str = Field(default="", description="Step-level caveat or unresolved reason.")
 
@@ -57,6 +62,17 @@ class ProcedureExecutionParams(BaseModel):
     step_results: list[ProcedureStepResultParams] = Field(
         description="One result for every required procedure step.",
     )
+
+    @model_validator(mode="before")
+    @classmethod
+    def rescue_malformed_args(cls, value: object) -> object:
+        if not isinstance(value, dict):
+            return value
+        data: dict[str, Any] = {str(key).strip(): item for key, item in value.items()}
+        for key in ("assumptions", "step_results"):
+            if isinstance(data.get(key), str):
+                data[key] = _literal_list(data[key])
+        return data
 
 
 @dataclass
@@ -129,3 +145,16 @@ def _execution_from_params(params: ProcedureExecutionParams) -> ProcedureExecuti
             for step in params.step_results
         ),
     )
+
+
+def _literal_list(value: object) -> object:
+    if not isinstance(value, str):
+        return value
+    try:
+        parsed = json.loads(value)
+    except json.JSONDecodeError:
+        try:
+            parsed = ast.literal_eval(value)
+        except (SyntaxError, ValueError, SystemError):
+            return value
+    return parsed if isinstance(parsed, list) else value

@@ -101,7 +101,7 @@ class TestChatGrounding:
             search_results="[[book-procedure-create-character]]",
         )
         assert "Task intent: explain the relevant procedure" in message
-        assert "Prefer procedure pages" in message
+        assert "already-read wiki evidence" in message
 
     def test_creation_request_executes_procedure(self) -> None:
         plan = plan_chat_grounding(
@@ -136,6 +136,24 @@ class TestChatGrounding:
         )
         assert "Task intent: audit a previous answer against source material" in message
         assert "Report matches, mismatches, unsupported fields, and corrections" in message
+
+    def test_response_policy_rejects_non_page_wikilinks(self) -> None:
+        policy = ChatResponseCitationPolicy(frozenset({"book-page"}))
+
+        decision = policy.response_decision(
+            "Use [[Table 1-4: Average Ability Scores by Race]] and [[book-page]]."
+        )
+
+        assert not decision.allowed
+        assert "Do not wrap table titles" in decision.message
+
+    def test_response_policy_rejects_unread_page_links(self) -> None:
+        policy = ChatResponseCitationPolicy(frozenset({"book-page"}))
+
+        decision = policy.response_decision("Use [[other-page]] and [[book-page]].")
+
+        assert not decision.allowed
+        assert "Only cite wiki pages read" in decision.message
 
 
 class TestChatEvidenceScope:

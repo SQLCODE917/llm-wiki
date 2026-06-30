@@ -52,7 +52,7 @@ def _literal_list(value: object) -> object:
     for candidate in candidates:
         try:
             parsed = ast.literal_eval(candidate)
-        except (SyntaxError, ValueError):
+        except (SyntaxError, ValueError, SystemError):
             continue
         if isinstance(parsed, list):
             return parsed

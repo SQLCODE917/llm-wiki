@@ -58,10 +58,14 @@ def plan_procedure_guides(
         entries = _rollup_entries(structure, entries_by_node, node)
         atoms = _rollup_atoms(structure, atoms_by_node, node)
         children = tuple(child for child in structure.children(node.structure_node_id))
-        steps = _steps_for_children(structure, entries_by_node, children, source_page_id)
-        if not has_task_noun(node.heading_text):
-            continue
-        if _candidate_score(node, entries, atoms, steps) < 4:
+        steps = _steps_for_children(
+            structure,
+            entries_by_node,
+            atoms_by_node,
+            children,
+            source_page_id,
+        )
+        if _candidate_score(node, entries, atoms, steps) < 6:
             continue
         if len(steps) < 2:
             continue
@@ -90,6 +94,7 @@ def procedure_aliases(guide: ProcedureGuide) -> tuple[str, ...]:
 def _steps_for_children(
     structure: DocumentStructure,
     entries_by_node: dict[str, tuple[LedgerEntry, ...]],
+    atoms_by_node: dict[str, tuple[TechnicalAtom, ...]],
     children: tuple[StructureNode, ...],
     source_page_id: str,
 ) -> tuple[ProcedureStep, ...]:
@@ -98,21 +103,25 @@ def _steps_for_children(
     while index < len(children):
         child = children[index]
         entries = _rollup_entries(structure, entries_by_node, child)
+        atoms = _rollup_atoms(structure, atoms_by_node, child)
         if not is_step_heading(child.heading_text):
             index += 1
             continue
         title_heading = _best_step_heading(structure, child)
         evidence_node = child
-        continuation = _next_heading_continuation(structure, entries_by_node, children, index)
+        continuation = _next_heading_continuation(
+            structure, entries_by_node, atoms_by_node, children, index
+        )
         if not entries and continuation is not None:
             entries = _rollup_entries(structure, entries_by_node, continuation)
+            atoms = (*atoms, *_rollup_atoms(structure, atoms_by_node, continuation))
             title_heading = f"{child.heading_text} {continuation.heading_text}"
             evidence_node = continuation
             index += 1
-        action = action_type(child.heading_text) or action_type(_entry_excerpt(entries))
-        if not action or not entries:
+        if not _has_step_evidence(entries, atoms):
             index += 1
             continue
+        action = action_type(child.heading_text) or action_type(_entry_excerpt(entries)) or "step"
         steps.append(
             ProcedureStep(
                 sequence=len(steps) + 1,
@@ -133,20 +142,23 @@ def _candidate_score(
     steps: tuple[ProcedureStep, ...],
 ) -> int:
     text = f"{node.heading_text} {' '.join(_entry_text(entry) for entry in entries[:12])}"
-    action_types = {step.action_type for step in steps}
+    action_types = {step.action_type for step in steps if step.action_type != "step"}
+    has_task = has_task_noun(node.heading_text)
+    has_role = _has_procedure_role(entries)
+    has_atoms = _has_procedure_atoms(atoms)
+    has_decisions = has_condition(text)
     score = len(steps)
-    if has_task_noun(node.heading_text):
+    if len(steps) >= 2:
         score += 2
-    if len(action_types) >= 3:
+    if has_task:
+        score += 1
+    if len(action_types) >= 3 and (has_task or has_role or has_atoms or has_decisions):
+        score += 1
+    if has_role:
         score += 2
-    if any(
-        "procedure" in entry.claim_role_tags or "method" in entry.claim_role_tags
-        for entry in entries
-    ):
-        score += 1
-    if any(atom.technical_atom_kind in {"table", "formula", "procedure"} for atom in atoms):
-        score += 1
-    if has_condition(text):
+    if has_atoms:
+        score += 2
+    if has_decisions:
         score += 1
     return score
 
@@ -209,6 +221,21 @@ def _decision_points(entries: tuple[LedgerEntry, ...]) -> tuple[LedgerEntry, ...
     return _unique_entries(tuple(entry for entry in entries if has_condition(_entry_text(entry))))
 
 
+def _has_step_evidence(entries: tuple[LedgerEntry, ...], atoms: tuple[TechnicalAtom, ...]) -> bool:
+    return bool(entries or _has_procedure_atoms(atoms))
+
+
+def _has_procedure_role(entries: tuple[LedgerEntry, ...]) -> bool:
+    return any(
+        "procedure" in entry.claim_role_tags or "method" in entry.claim_role_tags
+        for entry in entries
+    )
+
+
+def _has_procedure_atoms(atoms: tuple[TechnicalAtom, ...]) -> bool:
+    return any(atom.technical_atom_kind in {"table", "formula", "procedure"} for atom in atoms)
+
+
 def _relevant_atoms(atoms: tuple[TechnicalAtom, ...]) -> tuple[TechnicalAtom, ...]:
     return _unique_atoms(
         tuple(
@@ -260,6 +287,7 @@ def _best_step_heading(structure: DocumentStructure, node: StructureNode) -> str
 def _next_heading_continuation(
     structure: DocumentStructure,
     entries_by_node: dict[str, tuple[LedgerEntry, ...]],
+    atoms_by_node: dict[str, tuple[TechnicalAtom, ...]],
     children: tuple[StructureNode, ...],
     index: int,
 ) -> StructureNode | None:
@@ -269,7 +297,8 @@ def _next_heading_continuation(
     if not _is_heading_fragment(candidate):
         return None
     entries = _rollup_entries(structure, entries_by_node, candidate)
-    return candidate if entries else None
+    atoms = _rollup_atoms(structure, atoms_by_node, candidate)
+    return candidate if _has_step_evidence(entries, atoms) else None
 
 
 def _is_heading_fragment(node: StructureNode) -> bool:

@@ -167,7 +167,7 @@ def _rescued_plan_pages_kwargs(
 def _literal_list(value: str) -> object:
     try:
         parsed = ast.literal_eval(value)
-    except (SyntaxError, ValueError):
+    except (SyntaxError, ValueError, SystemError):
         return value
     return parsed if isinstance(parsed, list) else value
 

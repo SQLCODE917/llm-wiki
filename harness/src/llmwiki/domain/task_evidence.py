@@ -3,21 +3,25 @@
 from __future__ import annotations
 
 import re
-from collections.abc import Mapping, Sequence
+from collections.abc import Iterable, Mapping, Sequence
 from dataclasses import dataclass
 
 from llmwiki.domain.chat_grounding import ChatTaskMode
 from llmwiki.domain.links import extract_links
 from llmwiki.domain.pages import PageError, parse_page
 from llmwiki.domain.search import SearchHit
+from llmwiki.domain.structured_evidence import (
+    StructuredEvidenceArtifact,
+    select_structured_evidence_artifacts,
+)
 
 _STEP_RE = re.compile(
     r"^\s*(?P<sequence>\d+)\.\s+\*\*(?P<title>[^*]+)\*\*.*?\[\[(?P<page_id>[a-z0-9-]+)\]\]",
     re.MULTILINE,
 )
-_MAX_PROCEDURE_CHARS = 6_500
-_MAX_PAGE_CHARS = 550
-_MAX_TOTAL_CHARS = 12_000
+_MAX_PROCEDURE_CHARS = 5_000
+_MAX_PAGE_CHARS = 350
+_MAX_TOTAL_CHARS = 8_000
 
 
 @dataclass(frozen=True)
@@ -44,16 +48,23 @@ class TaskEvidencePack:
     procedure_title: str
     steps: tuple[ProcedureStepRequirement, ...]
     pages: tuple[TaskEvidencePage, ...]
+    structured_artifacts: tuple[StructuredEvidenceArtifact, ...] = ()
 
     @property
     def page_ids(self) -> frozenset[str]:
-        return frozenset(page.page_id for page in self.pages)
+        return frozenset(page.page_id for page in self.pages) | frozenset(
+            artifact.page_id for artifact in self.structured_artifacts
+        )
 
     @property
     def evidence_texts(self) -> dict[str, str]:
-        return {page.page_id: page.excerpt for page in self.pages}
+        texts = {page.page_id: page.excerpt for page in self.pages}
+        for artifact in self.structured_artifacts:
+            existing = texts.get(artifact.page_id, "")
+            texts[artifact.page_id] = f"{existing}\n\n{artifact.excerpt}".strip()
+        return texts
 
-    def render(self) -> str:
+    def render(self, *, require_procedure_execution: bool = True) -> str:
         lines = [
             "Deterministic task evidence pack:",
             f"- Procedure: [[{self.procedure_id}]] {self.procedure_title}",
@@ -62,18 +73,45 @@ class TaskEvidencePack:
         for step in self.steps:
             lines.append(f"  {step.sequence}. {step.title} - evidence [[{step.evidence_page_id}]]")
         lines.append("")
-        lines.extend(
-            (
-                "ProcedureExecution submission checklist:",
-                "- Call submit_procedure_execution before respond.",
-                f"- procedure_id must be {self.procedure_id}.",
-                "- step_results must include every sequence/title listed above.",
-                "- For each output, set support to evidence, derived, assumption, or unresolved.",
-                "- Put user-independent choices in assumptions; mark missing rule "
-                "details unresolved.",
-                "",
+        if require_procedure_execution:
+            lines.extend(
+                (
+                    "ProcedureExecution submission checklist:",
+                    "- Call submit_procedure_execution before respond.",
+                    f"- procedure_id must be {self.procedure_id}.",
+                    "- step_results must include every sequence/title listed above.",
+                    "- For each output, set support to evidence, derived, "
+                    "assumption, or unresolved.",
+                    "- For broad steps, a status=partial step_result with a concise "
+                    "note is acceptable when many nested outputs would be too large.",
+                    "- Put user-independent choices in assumptions; mark missing rule "
+                    "details unresolved.",
+                    "",
+                )
             )
-        )
+        else:
+            lines.extend(
+                (
+                    "Procedure explanation checklist:",
+                    "- Walk through every required step listed above.",
+                    "- Name relevant table, formula, and worked-example artifacts "
+                    "using their exact source titles.",
+                    "- Treat the table-index artifact as the authoritative list "
+                    "of table titles; do not replace those titles with generic names.",
+                    "- Say plainly when a detail is a free choice or unresolved.",
+                    "",
+                )
+            )
+        if self.structured_artifacts:
+            lines.append("Deterministic structured evidence artifacts:")
+            for artifact in self.structured_artifacts:
+                lines.extend(
+                    (
+                        f"### [[{artifact.page_id}]] {artifact.category}: {artifact.heading}",
+                        artifact.excerpt.strip(),
+                        "",
+                    )
+                )
         lines.append("Evidence pages:")
         for page in self.pages:
             family = f"/{page.page_family}" if page.page_family else ""
@@ -84,6 +122,27 @@ class TaskEvidencePack:
                     "",
                     page.excerpt.strip(),
                     "",
+                )
+            )
+        if require_procedure_execution:
+            lines.extend(
+                (
+                    "ProcedureExecution tool reminder:",
+                    "- For an execution request, the next tool call must be "
+                    "submit_procedure_execution, not respond.",
+                    "- Include every required step result. Use unresolved outputs for "
+                    "missing details instead of answering directly.",
+                )
+            )
+        else:
+            lines.extend(
+                (
+                    "Procedure explanation reminder:",
+                    "- Answer by explaining the required steps and the structured "
+                    "table/formula/example evidence above, preserving exact table titles.",
+                    "- Include exact table titles from the table-index artifact "
+                    "whenever you summarize tables and formulas.",
+                    "- Do not answer with a meta-summary that the steps were provided.",
                 )
             )
         return "\n".join(lines).strip()
@@ -97,7 +156,11 @@ def build_task_evidence_pack(
 ) -> TaskEvidencePack | None:
     """Build a task evidence pack from search hits and procedure-page links."""
 
-    if task_mode not in {ChatTaskMode.EXECUTE_PROCEDURE, ChatTaskMode.SOURCE_AUDIT}:
+    if task_mode not in {
+        ChatTaskMode.EXPLAIN_PROCEDURE,
+        ChatTaskMode.EXECUTE_PROCEDURE,
+        ChatTaskMode.SOURCE_AUDIT,
+    }:
         return None
     procedure_id = _best_procedure_page(pages, hits)
     if procedure_id is None:
@@ -108,6 +171,11 @@ def build_task_evidence_pack(
     if not steps:
         return None
     page_ids = _candidate_page_ids(procedure_id, procedure_page.page_body, steps, hits, pages)
+    structured_artifacts = select_structured_evidence_artifacts(
+        pages,
+        page_ids,
+        (procedure_page.page_body, *(step.title for step in steps)),
+    )
     evidence_pages = _pack_pages(pages, page_ids)
     if not evidence_pages:
         return None
@@ -116,6 +184,7 @@ def build_task_evidence_pack(
         procedure_title=_title(procedure_page.page_body) or procedure_page.summary,
         steps=steps,
         pages=evidence_pages,
+        structured_artifacts=structured_artifacts,
     )
 
 
@@ -156,9 +225,26 @@ def _candidate_page_ids(
 ) -> tuple[str, ...]:
     ordered: list[str] = [procedure_id]
     ordered.extend(step.evidence_page_id for step in steps)
-    ordered.extend(extract_links(procedure_body))
+    ordered.extend(_prioritized_page_links(extract_links(procedure_body), pages))
     ordered.extend(hit.name for hit in hits)
     return tuple(dict.fromkeys(page_id for page_id in ordered if page_id in pages))
+
+
+def _prioritized_page_links(page_ids: Iterable[str], pages: Mapping[str, str]) -> tuple[str, ...]:
+    existing = tuple(dict.fromkeys(page_id for page_id in page_ids if page_id in pages))
+    return tuple(sorted(existing, key=lambda page_id: _page_link_priority(page_id, pages)))
+
+
+def _page_link_priority(page_id: str, pages: Mapping[str, str]) -> tuple[int, str]:
+    try:
+        page = parse_page(pages[page_id])
+    except PageError:
+        return (2, page_id)
+    if page.page_metadata.page_family == "source-manifest":
+        return (2, page_id)
+    if page.page_kind == "source":
+        return (0, page_id)
+    return (1, page_id)
 
 
 def _pack_pages(
@@ -171,6 +257,8 @@ def _pack_pages(
         try:
             page = parse_page(text)
         except PageError:
+            continue
+        if page_id != page_ids[0] and page.page_metadata.page_family == "source-manifest":
             continue
         cap = _MAX_PROCEDURE_CHARS if page_id == page_ids[0] else _MAX_PAGE_CHARS
         remaining = _MAX_TOTAL_CHARS - total

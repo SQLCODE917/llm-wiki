@@ -42,7 +42,7 @@ def action_type(text: str) -> str:
 
 
 def is_step_heading(text: str) -> bool:
-    return bool(_ORDERED_HEADING.search(text) or action_type(text))
+    return bool(_ORDERED_HEADING.search(text))
 
 
 def goal_title(heading: str) -> str:
