@@ -161,23 +161,19 @@ def single_term_topic_candidate_allowed(term: str) -> bool:
 def singular(token: str) -> str:
     if token in {"series", "species"}:
         return token
-    if _suffix(token, 2) == "us":
+    if token.endswith("us"):
         return token
-    if _suffix(token, 4) == "sses" and len(token) > 5:
+    if token.endswith("sses") and len(token) > 5:
         return token[:-2]
-    if _suffix(token, 4) in {"ches", "shes"} and len(token) > 5:
+    if (token.endswith("ches") or token.endswith("shes")) and len(token) > 5:
         return token[:-2]
-    if _suffix(token, 3) in {"xes", "zes"} and len(token) > 5:
+    if (token.endswith("xes") or token.endswith("zes")) and len(token) > 5:
         return token[:-2]
-    if _suffix(token, 3) == "ies" and len(token) > 4:
+    if token.endswith("ies") and len(token) > 4:
         return token[:-3] + "y"
-    if _suffix(token, 2) == "ss":
+    if token.endswith("ss"):
         return token
-    return token[:-1] if _suffix(token, 1) == "s" and len(token) > 4 else token
-
-
-def _suffix(token: str, length: int) -> str:
-    return token[-length:] if len(token) >= length else ""
+    return token[:-1] if token.endswith("s") and len(token) > 4 else token
 
 
 def _bounded_match_terms(terms: object) -> tuple[str, ...]:

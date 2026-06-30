@@ -7,6 +7,9 @@ import re
 _LINE_ROW_MARKER = re.compile(r"^\s*(?:[-*]\s*)?(\d{1,3})[.)\s]+(?=\S)")
 _INLINE_ROW_MARKER = re.compile(r"(?:^|\s)(\d{1,3})[.)]?\s+(?=[A-Za-z])")
 _RANGE_VALUE_MARKER = re.compile(r"(?:^|\s)(\d{1,3}(?:\s*[-–]\s*\d{1,3})?)\s+([+-]\d+)\b")
+_MAX_FLAT_SCAN_CHARS = 250_000
+_RANGE_SCAN_WINDOW_CHARS = 50_000
+_RANGE_SCAN_OVERLAP_CHARS = 64
 
 
 def row_marker_count(text: str) -> int:
@@ -15,10 +18,11 @@ def row_marker_count(text: str) -> int:
     line_markers = _line_markers(lines)
     if len(line_markers) >= 2 and sequence_like(line_markers):
         return len(line_markers)
-    range_entries = range_value_entries(" ".join(lines))
+    flat_text = _bounded_flat_text(lines)
+    range_entries = range_value_entries(flat_text)
     if len(range_entries) >= 3:
         return len(range_entries)
-    inline_markers = inline_row_marker_spans(" ".join(lines))
+    inline_markers = inline_row_marker_spans(flat_text)
     if len(inline_markers) >= 3:
         return len(inline_markers)
     return 1 if len(line_markers) == 1 else 0
@@ -41,14 +45,47 @@ def inline_row_marker_spans(text: str) -> tuple[tuple[int, int, int], ...]:
 def range_value_entries(text: str) -> tuple[tuple[str, str], ...]:
     entries: list[tuple[str, str]] = []
     starts: list[int] = []
-    for match in _RANGE_VALUE_MARKER.finditer(text):
-        key = " ".join(match.group(1).replace("–", "-").split())
-        value = match.group(2)
-        entries.append((key, value))
-        starts.append(_range_start(key))
+    seen_starts: set[int] = set()
+    for offset, chunk in _range_scan_windows(text):
+        for match in _RANGE_VALUE_MARKER.finditer(chunk):
+            absolute_start = offset + match.start(1)
+            if absolute_start in seen_starts:
+                continue
+            seen_starts.add(absolute_start)
+            key = " ".join(match.group(1).replace("–", "-").split())
+            value = match.group(2)
+            entries.append((key, value))
+            starts.append(_range_start(key))
     if len(entries) < 3 or not _range_sequence_like(tuple(starts)):
         return ()
     return tuple(entries)
+
+
+def _bounded_flat_text(lines: list[str]) -> str:
+    parts: list[str] = []
+    remaining = _MAX_FLAT_SCAN_CHARS
+    for line in lines:
+        if remaining <= 0:
+            break
+        piece = line[:remaining]
+        parts.append(piece)
+        remaining -= len(piece) + 1
+    return " ".join(parts)
+
+
+def _range_scan_windows(text: str) -> tuple[tuple[int, str], ...]:
+    if len(text) <= _RANGE_SCAN_WINDOW_CHARS:
+        return ((0, text),)
+    windows: list[tuple[int, str]] = []
+    step = _RANGE_SCAN_WINDOW_CHARS - _RANGE_SCAN_OVERLAP_CHARS
+    start = 0
+    while start < len(text):
+        end = min(start + _RANGE_SCAN_WINDOW_CHARS, len(text))
+        windows.append((start, text[start:end]))
+        if end == len(text):
+            break
+        start += step
+    return tuple(windows)
 
 
 def sequence_like(markers: tuple[int, ...]) -> bool:

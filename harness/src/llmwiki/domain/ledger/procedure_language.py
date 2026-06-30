@@ -24,6 +24,10 @@ _TASK_NOUN = re.compile(
 _CONDITION = re.compile(r"\b(if|when|unless|except|whether|depending on whether)\b", re.I)
 _LEADING_NUMBER = re.compile(r"^\s*\d+(?:\.\d+)*\.?\s*")
 _ORDERED_HEADING = re.compile(r"^\s*\d+(?:\.\d+){1,}\s+")
+_STRUCTURAL_PREFIX = re.compile(
+    r"^(chapter|part|appendix|volume|book)\b(?:\s+[ivxlcdm\d]+)?\s*:?\s*(.*)$",
+    re.IGNORECASE,
+)
 
 
 def has_task_noun(text: str) -> bool:
@@ -46,7 +50,7 @@ def is_step_heading(text: str) -> bool:
 
 
 def goal_title(heading: str) -> str:
-    title = clean_title(heading)
+    title = _strip_structural_prefix(clean_title(heading))
     lower = title.lower()
     if lower.endswith(" creation"):
         return f"Create {title[:-9].strip()}"
@@ -75,3 +79,11 @@ def step_title(heading: str) -> str:
 def clean_title(text: str) -> str:
     cleaned = _LEADING_NUMBER.sub("", " ".join(text.replace("/", " ").split()))
     return cleaned.strip(" :-")
+
+
+def _strip_structural_prefix(title: str) -> str:
+    match = _STRUCTURAL_PREFIX.match(title)
+    if match is None:
+        return title
+    remainder = match.group(2).strip()
+    return remainder or title

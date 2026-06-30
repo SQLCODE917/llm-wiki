@@ -193,6 +193,108 @@ def test_action_verbs_alone_do_not_create_procedure_guides() -> None:
     assert guides == ()
 
 
+def test_unanchored_structural_container_does_not_absorb_descendant_procedures() -> None:
+    guides = plan_procedure_guides(
+        _ledger(
+            _entry(
+                "topic",
+                "topic",
+                "The topic describes a condition that may apply.",
+                role_tags=("procedure",),
+            ),
+            _entry(
+                "method",
+                "method",
+                "The method records a result from the table.",
+                role_tags=("procedure",),
+            ),
+            atoms=(_table_atom("method-table", "method"),),
+        ),
+        DocumentStructure(
+            "root",
+            (
+                StructureNode("root", "root", "book.pdf", "root", "book.pdf", 0),
+                StructureNode("chapter", "chapter", "Chapter 7", "r1", "book.pdf", 1),
+                StructureNode(
+                    "topic",
+                    "section",
+                    "7.1 Reference Topic",
+                    "r2",
+                    "book.pdf",
+                    2,
+                    parent_structure_node_id="chapter",
+                ),
+                StructureNode(
+                    "method",
+                    "section",
+                    "7.2 Method Topic",
+                    "r3",
+                    "book.pdf",
+                    3,
+                    parent_structure_node_id="chapter",
+                ),
+            ),
+        ),
+        source_page_id="book",
+    )
+
+    assert guides == ()
+
+
+def test_structural_container_with_task_title_can_be_procedure() -> None:
+    guides = plan_procedure_guides(
+        _ledger(
+            _entry(
+                "input",
+                "input",
+                "The input state is established by the source table.",
+                role_tags=("procedure",),
+            ),
+            _entry(
+                "output",
+                "output",
+                "The output state is recorded after the value is resolved.",
+                role_tags=("procedure",),
+            ),
+        ),
+        DocumentStructure(
+            "root",
+            (
+                StructureNode("root", "root", "book.pdf", "root", "book.pdf", 0),
+                StructureNode(
+                    "chapter",
+                    "chapter",
+                    "Chapter 1: Character Creation",
+                    "r1",
+                    "book.pdf",
+                    1,
+                ),
+                StructureNode(
+                    "input",
+                    "section",
+                    "1.1 Input State",
+                    "r2",
+                    "book.pdf",
+                    2,
+                    parent_structure_node_id="chapter",
+                ),
+                StructureNode(
+                    "output",
+                    "section",
+                    "1.2 Output State",
+                    "r3",
+                    "book.pdf",
+                    3,
+                    parent_structure_node_id="chapter",
+                ),
+            ),
+        ),
+        source_page_id="book",
+    )
+
+    assert [guide.title for guide in guides] == ["Create Character"]
+
+
 def test_task_search_boosts_procedure_pages() -> None:
     pages = {
         "book-character": (

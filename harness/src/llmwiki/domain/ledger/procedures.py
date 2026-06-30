@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 
 from llmwiki.domain.ledger.atoms import TechnicalAtom, atom_raw_text
@@ -25,6 +26,10 @@ PAGE_FAMILY_PROCEDURE_GUIDE = "procedure-guide"
 
 _SECTION_NODE_KINDS = {"chapter", "section", "heading"}
 _MAX_PROCEDURE_PAGES = 64
+_STRUCTURAL_CONTAINER_PREFIX = re.compile(
+    r"^(chapter|part|appendix|volume|book)\b(?:\s+[ivxlcdm\d]+)?\s*:?\s*(.*)$",
+    re.IGNORECASE,
+)
 
 
 @dataclass(frozen=True)
@@ -55,6 +60,10 @@ def plan_procedure_guides(
     atoms_by_node = _atoms_by_node(ledger)
     guides: list[ProcedureGuide] = []
     for node in _section_nodes(structure):
+        direct_entries = entries_by_node.get(node.structure_node_id, ())
+        direct_atoms = atoms_by_node.get(node.structure_node_id, ())
+        if _is_unanchored_structural_container(node, direct_entries, direct_atoms):
+            continue
         entries = _rollup_entries(structure, entries_by_node, node)
         atoms = _rollup_atoms(structure, atoms_by_node, node)
         children = tuple(child for child in structure.children(node.structure_node_id))
@@ -234,6 +243,29 @@ def _has_procedure_role(entries: tuple[LedgerEntry, ...]) -> bool:
 
 def _has_procedure_atoms(atoms: tuple[TechnicalAtom, ...]) -> bool:
     return any(atom.technical_atom_kind in {"table", "formula", "procedure"} for atom in atoms)
+
+
+def _has_local_procedure_anchor(
+    entries: tuple[LedgerEntry, ...], atoms: tuple[TechnicalAtom, ...]
+) -> bool:
+    return _has_procedure_role(entries) or any(
+        atom.technical_atom_kind == "procedure" for atom in atoms
+    )
+
+
+def _is_unanchored_structural_container(
+    node: StructureNode,
+    direct_entries: tuple[LedgerEntry, ...],
+    direct_atoms: tuple[TechnicalAtom, ...],
+) -> bool:
+    title = clean_title(node.heading_text)
+    match = _STRUCTURAL_CONTAINER_PREFIX.match(title)
+    if match is None:
+        return False
+    remainder = match.group(2).strip()
+    if remainder and (has_task_noun(remainder) or action_type(remainder)):
+        return False
+    return not _has_local_procedure_anchor(direct_entries, direct_atoms)
 
 
 def _relevant_atoms(atoms: tuple[TechnicalAtom, ...]) -> tuple[TechnicalAtom, ...]:
