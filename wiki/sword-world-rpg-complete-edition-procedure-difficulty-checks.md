@@ -2,14 +2,14 @@
 page_id: sword-world-rpg-complete-edition-procedure-difficulty-checks
 page_kind: procedure
 page_family: procedure-guide
-summary: Complete Difficulty Checks: 3 ordered step(s), 17 decision point(s), and 7 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Complete Difficulty Checks: 3 ordered step(s), 7 decision point(s), and 7 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
 aliases: complete-difficulty-checks, difficulty-checks
-projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-difficulty-checks@56a32deb19b7e246ae034c32dc06de2f
+projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-difficulty-checks@993dd28f4b91678572e1f6c4063e51cd
 ---
 
 # Difficulty Checks
@@ -37,13 +37,11 @@ From [[sword-world-rpg-complete-edition]].
 ## Decision Points
 
 - The fi nd trap ability of the thief skill will be used to see if this will work. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01211))_
-- You followed the door with your eyes for any odd nicks, tapped lightly on the door to hear the echo, and carefully twisted the knob slightly to see if it felt right. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01217))_
-- The owner of this place is the kind of guy who'd think you're a thief when he sees you . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01220))_
 - However, if such a process is not specified, it is not treated as a definitive success/failure. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01220))_
-- Within the setting, there are actions that we attempt on our own but do not know (or cannot tell ) whether they are successful or unsuccessful. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01226))_
-- These checks-- which are often made mainly when finding something --change the method of success rolls considerably. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01227))_
-- If there is a tie or if the final score is greater, the action is a success ; if it is less, the action is a failure . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01234))_
 - The game master does not say whether the result is the action succeeded or the action failed , because a difficulty check is made when the success or failure of the action is not known to the characters. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01237))_
+- Therefore, if after examining the door, you do not find a trap, the risk is quite low even if you assume that there really are no traps. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01244))_
+- So, even if you examine the door and do not find any traps, you should be skeptical of the results. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01245))_
+- In particular, when a player rolls either of the two extremes, double sixes or double ones , it means automatic success or automatic failure , so that the player can clearly see whether the success roll is successful or not. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01246))_
 
 ## Tables And Formulas
 

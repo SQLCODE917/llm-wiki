@@ -2,14 +2,14 @@
 page_id: sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor
 page_kind: procedure
 page_family: procedure-guide
-summary: Complete Excellent Weapons and Armor: 4 ordered step(s), 15 decision point(s), and 14 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Complete Excellent Weapons and Armor: 4 ordered step(s), 6 decision point(s), and 14 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
 aliases: complete-excellent-weapons-and-armor, excellent-weapons-and-armor
-projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor@96e4537016d8e9a1debf8f5874d2bc1c
+projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor@6ea23f63ac7679837b4129e744b6ede1
 ---
 
 # Excellent Weapons and Armor
@@ -41,14 +41,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Decision Points
 
-- When a character obtains and uses these weapons and armor, their various scores are modified as follows. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02351))_
-- For example, if you want a high-quality broadsword, its required strength (size) is naturally limited to 8-16 . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02356))_
 - If successful, then even if it's not double sixes, they will regain consciousness with 1 point of life force. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02361))_
-- If left alone, it will always regain consciousness. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02362))_
 - Also, shamans are not normally able to wear metal armor (as metal armor prevents them from using spirit magic), but they can use spirit magic while wearing it, if it's silver armor . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02369))_
 - If you use a +1 magical weapon, you receive a +1 bonus to attack power and bonus damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02377))_
-- If +2, those bonuses are +2, and if +3, they're +3. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02377))_
-- A +1 magic shield grants +1 evasion speed, +2 if +2. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02380))_
+- Magical weapons and armor are not usually traded, but if you are very lucky you may be able to buy them if they're +1. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02384))_
+- Since I was told that showing off such a thing would only make me a target for thieves, I have rarely used this pen and have put it away, but when I occasionally take it out, I can see that it has not lost any of the beautiful contrast between red and yellow. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02402))_
+- Mithril silver is said to acquire different colors and brilliance only when one draws out its power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02403))_
 
 ## Tables And Formulas
 

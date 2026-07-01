@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from llmwiki.domain.ledger.atoms import TechnicalAtom, atom_raw_text
 from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.ledger import ClaimLedger
+from llmwiki.domain.ledger.procedure_decisions import DecisionPoint, plan_decision_points
 from llmwiki.domain.ledger.procedure_language import (
     action_type,
     clean_title,
@@ -56,7 +57,7 @@ class ProcedureGuide:
     source_node: StructureNode
     source_section_page_id: str
     steps: tuple[ProcedureStep, ...]
-    decision_points: tuple[LedgerEntry, ...]
+    decision_points: tuple[DecisionPoint, ...]
     technical_atoms: tuple[TechnicalAtom, ...]
     state_flow: ProcedureStateFlow
 
@@ -97,7 +98,7 @@ def plan_procedure_guides(
                 source_node=node,
                 source_section_page_id=section_page_id(source_page_id, structure, node),
                 steps=steps,
-                decision_points=_decision_points(entries),
+                decision_points=plan_decision_points(entries, atoms),
                 technical_atoms=_relevant_atoms(atoms),
                 state_flow=state_flow,
             )
@@ -314,10 +315,6 @@ def _rollup_atoms(
         *(child.structure_node_id for child in structure.descendants(node.structure_node_id)),
     )
     return tuple(atom for node_id in node_ids for atom in atoms_by_node.get(node_id, ()))
-
-
-def _decision_points(entries: tuple[LedgerEntry, ...]) -> tuple[LedgerEntry, ...]:
-    return _unique_entries(tuple(entry for entry in entries if has_condition(_entry_text(entry))))
 
 
 def _has_step_evidence(entries: tuple[LedgerEntry, ...], atoms: tuple[TechnicalAtom, ...]) -> bool:

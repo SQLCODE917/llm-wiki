@@ -6,6 +6,7 @@ from llmwiki.domain.ledger.atoms import TechnicalAtom
 from llmwiki.domain.ledger.canonical import short_digest
 from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.ledger import ClaimLedger
+from llmwiki.domain.ledger.procedure_decisions import DecisionPoint
 from llmwiki.domain.ledger.procedures import (
     PAGE_FAMILY_PROCEDURE_GUIDE,
     ProcedureGuide,
@@ -68,12 +69,12 @@ def render_procedure_page(guide: ProcedureGuide, source_page_id: str) -> str:
             lines.append(f"   - {_entry_text(claim)} _({_citation(claim)})_")
     lines.append("")
     decision_points = tuple(
-        entry for entry in guide.decision_points if _entry_key(entry) not in shown_claim_keys
+        point for point in guide.decision_points if _entry_key(point.entry) not in shown_claim_keys
     )
     if decision_points:
         lines.extend(("## Decision Points", ""))
-        for entry in decision_points[:8]:
-            lines.append(f"- {_entry_text(entry)} _({_citation(entry)})_")
+        for point in decision_points[:8]:
+            lines.append(f"- {_decision_text(point)} _({_citation(point.entry)})_")
         lines.append("")
     if guide.technical_atoms:
         lines.extend(("## Tables And Formulas", ""))
@@ -99,6 +100,10 @@ def render_procedure_page(guide: ProcedureGuide, source_page_id: str) -> str:
 
 def _entry_text(entry: LedgerEntry) -> str:
     return (entry.normalized_text or entry.source_text).strip()
+
+
+def _decision_text(point: DecisionPoint) -> str:
+    return _entry_text(point.entry)
 
 
 def _entry_key(entry: LedgerEntry) -> tuple[str, str]:
