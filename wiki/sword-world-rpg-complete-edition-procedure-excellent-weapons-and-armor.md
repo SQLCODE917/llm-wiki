@@ -2,14 +2,14 @@
 page_id: sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor
 page_kind: procedure
 page_family: procedure-guide
-summary: Complete Excellent Weapons and Armor: 4 ordered step(s), 6 decision point(s), and 14 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Complete Excellent Weapons and Armor: 4 ordered step(s), 4 decision point(s), and 14 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
 aliases: complete-excellent-weapons-and-armor, excellent-weapons-and-armor
-projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor@6ea23f63ac7679837b4129e744b6ede1
+projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor@f9c1fae9c5fdaadfe0afecf161e2a179
 ---
 
 # Excellent Weapons and Armor
@@ -41,12 +41,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Decision Points
 
-- If successful, then even if it's not double sixes, they will regain consciousness with 1 point of life force. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02361))_
-- Also, shamans are not normally able to wear metal armor (as metal armor prevents them from using spirit magic), but they can use spirit magic while wearing it, if it's silver armor . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02369))_
-- If you use a +1 magical weapon, you receive a +1 bonus to attack power and bonus damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02377))_
-- Magical weapons and armor are not usually traded, but if you are very lucky you may be able to buy them if they're +1. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02384))_
-- Since I was told that showing off such a thing would only make me a target for thieves, I have rarely used this pen and have put it away, but when I occasionally take it out, I can see that it has not lost any of the beautiful contrast between red and yellow. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02402))_
-- Mithril silver is said to acquire different colors and brilliance only when one draws out its power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02403))_
+- again, will only die on double ones. If successful, then even if it's not double sixes, they will regain consciousness with 1 point of life force. If they fail, then unless they roll double ones, they will continue to remain unconscious. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02361))_
+- However, silver weapons , due to their magic power, can deal damage to monsters that can only be wounded by magic or magical weapons. Also, shamans are not normally able to wear metal armor (as metal armor prevents them from using spirit magic), but they can use spirit magic while wearing it, if it's silver armor . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02368, source-range-0b9dec90-02369))_
+- Magical weapons have exceptional attack power and bonus damage . If you use a +1 magical weapon, you receive a +1 bonus to attack power and bonus damage. If +2, those bonuses are +2, and if +3, they're +3. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02377))_
+- The many mithril silver objects dating back to the ancient kingdom period are a marvel to us with their variety of colors and brilliancy. The "Crimson" breastplate is said to glow even redder than the blood of enemies, and the "White Sword" given to the commander of the kingsguard of Ramliearth does not lose its whiteness, no matter how much blood is spilled. I myself was given a beautifully crafted pen in the shape of a feather by the king at the start of my journey. Since I was told that showing off such a thing would only make me a target for thieves, I have rarely used this pen and have put it away, but when I occasionally take it out, I can see that it has not lost any of the beautiful contrast between red and yellow. However, even today, on rare occasions, mithril silver ore is found, but it is black and has no sparkle whatsoever. Mithril silver is said to acquire different colors and brilliance only when one draws out its power. Depending on the skill of the craftsman, it seems that different colors could be shown in a single item, as in my pen. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02402, source-range-0b9dec90-02403))_
 
 ## Tables And Formulas
 

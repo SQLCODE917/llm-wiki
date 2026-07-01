@@ -2,14 +2,14 @@
 page_id: sword-world-rpg-complete-edition-procedure-create-character
 page_kind: procedure
 page_family: procedure-guide
-summary: Create Character: 9 ordered step(s), 14 decision point(s), and 55 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Create Character: 9 ordered step(s), 3 decision point(s), and 55 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
 aliases: create-character, character-creation
-projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-create-character@cf02d1fd91bdf2e35d484e3baa109147
+projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-create-character@1c0be44370622976cdf422969e4d35e5
 ---
 
 # Create Character
@@ -59,14 +59,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Decision Points
 
-- On the other hand, if they were raised by humans, there is no limit on acquiring skills. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00319))_
-- If they've acquired the sage skill, they can choose to come from either the merchant or scholar background. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00528))_
-- If a character has acquired the merchant skill, they must always come from the merchant background. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00528))_
-- When deciding on the age of a character, it should be between 15 years old and around 30 years old at most for a human. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00591))_
-- This skill is closely related to the sage skill and requires fewer experience points when acquiring both. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00654))_
-- As long as you choose that, you are guaranteed the same attack capability, even if you use a different type of weapon. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00805))_
-- This is essential when using ancient magic . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01000))_
-- If you want to make use of your shaman skill, your armor is limited to cloth , soft leather , or hard leather . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01002))_
+- If the player's background is merchant/scholar (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must always come from the merchant background. If they've acquired the sage skill, they can choose to come from either the merchant or scholar background. The backgrounds table does not always have to be used. Players may, if they so choose, create a character as if they were always an ordinary citizen . If they wish to have a special background such as noble or rune master , they may discuss this with the game master. These are placed on rows of the background table that are difficult to roll, and so they're given preferential treatment in terms of experience points. Such special backgrounds are not allowed without the game master's permission. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00528))_
+- When deciding on the age of a character, it should be between 15 years old and around 30 years old at most for a human. The life span of a human is about 100 years old. Of course, it's natural that they'll die earlier than this if they're ill or wounded. In Alecrast, the average life span of a human is about 50 years due to underdeveloped medical care. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00591))_
+- If you want to make use of your shaman skill, your armor is limited to cloth , soft leather , or hard leather . Of these, the one with the greatest required strength within the character's strength range should be chosen. Also, you should not buy a shield. When choosing a weapon, since you're not buying a shield, it's a good idea to choose a two-handed weapon if at all possible. It is fundamental to match your strength to the required strength of the weapon. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01002, source-range-0b9dec90-01003))_
 
 ## Tables And Formulas
 

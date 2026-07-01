@@ -2,14 +2,14 @@
 page_id: sword-world-rpg-complete-edition-procedure-attacks-from-characters-against-characters
 page_kind: procedure
 page_family: procedure-guide
-summary: Complete Attacks From Characters Against Characters: 2 ordered step(s), 6 decision point(s), and 14 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Complete Attacks From Characters Against Characters: 2 ordered step(s), 3 decision point(s), and 14 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
 aliases: complete-attacks-from-characters-against-characters, attacks-from-characters-against-characters
-projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-attacks-from-characters-against-characters@d299b43b804009a75ef5f589c6f88373
+projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-attacks-from-characters-against-characters@f6ed8181cae4f87df4e5802b3da9b80e
 ---
 
 # Attacks From Characters Against Characters
@@ -34,11 +34,8 @@ From [[sword-world-rpg-complete-edition]].
 ## Decision Points
 
 - If a roll comes up double sixes or double ones during combat between characters, the situation is resolved as follows: _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02253))_
-- If the attacker's roll is double ones , the attack fails without question. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02254))_
-- However, if the defender's roll is also double sixes, the attack fails . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02255))_
-- If the attacker's roll is double sixes , it' s basically an automatic hit. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02255))_
-- If the defender's roll is double ones , it' s basically an automatic hit. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02256))_
-- However, if the attacker's roll is also double ones, the attack fails . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02256))_
+- If the attacker's roll is double sixes , it' s basically an automatic hit. However, if the defender's roll is also double sixes, the attack fails . If the defender's roll is double ones , it' s basically an automatic hit. However, if the attacker's roll is also double ones, the attack fails . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02255, source-range-0b9dec90-02256))_
+- If the attacker's roll is double sixes , it' s basically an automatic hit. However, if the defender's roll is also double sixes, the attack fails . If the defender's roll is double ones , it' s basically an automatic hit. However, if the attacker's roll is also double ones, the attack fails . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02255, source-range-0b9dec90-02256))_
 
 ## Tables And Formulas
 

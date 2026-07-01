@@ -2,14 +2,14 @@
 page_id: sword-world-rpg-complete-edition-procedure-unconscious-and-death-checks
 page_kind: procedure
 page_family: procedure-guide
-summary: Complete Unconscious and Death Checks: 4 ordered step(s), 8 decision point(s), and 9 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Complete Unconscious and Death Checks: 4 ordered step(s), 4 decision point(s), and 9 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
 aliases: complete-unconscious-and-death-checks, unconscious-and-death-checks
-projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-unconscious-and-death-checks@302a91fc0b9d4261d671279915db0bc7
+projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-unconscious-and-death-checks@cd507e5093e0bb434f50fb92d273bbbd
 ---
 
 # Unconscious and Death Checks
@@ -41,10 +41,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Decision Points
 
-- If the result of this death check had been 6 or lower, Ducard II would have met an untimely end . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02327))_
-- If it's alive after a death check, it recovers 1 life point every hour , and will regain consciousness when it reaches (positive) 1 life point. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02341))_
-- mercy when using a barehanded attack. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02345))_
-- A character who falls down with 0 or negative life force due to an attack that was declared to be mercy , will only fail their death check if double ones are rolled. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02346))_
+- 5 (life force resistance) + 7 (roll) - 4 (penalty) = 8 , which is greater or equal than 7. Ducard II survives. If the result of this death check had been 6 or lower, Ducard II would have met an untimely end . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02327))_
+- A monster's first death check determines whether or not it survives. If it's alive after a death check, it recovers 1 life point every hour , and will regain consciousness when it reaches (positive) 1 life point. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02341))_
+- mercy when using a barehanded attack. You must declare mercy before you make a hit check for your attack. It cannot be done after a hit or after damage check. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02345))_
+- A character who falls down with 0 or negative life force due to an attack that was declared to be mercy , will only fail their death check if double ones are rolled. On any other roll, the character remains alive . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02346))_
 
 ## Tables And Formulas
 

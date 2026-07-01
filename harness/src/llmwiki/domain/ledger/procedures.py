@@ -98,7 +98,7 @@ def plan_procedure_guides(
                 source_node=node,
                 source_section_page_id=section_page_id(source_page_id, structure, node),
                 steps=steps,
-                decision_points=plan_decision_points(entries, atoms),
+                decision_points=plan_decision_points(entries, atoms, ledger.source_statements),
                 technical_atoms=_relevant_atoms(atoms),
                 state_flow=state_flow,
             )

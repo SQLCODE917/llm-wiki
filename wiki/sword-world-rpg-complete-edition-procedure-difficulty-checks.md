@@ -2,14 +2,14 @@
 page_id: sword-world-rpg-complete-edition-procedure-difficulty-checks
 page_kind: procedure
 page_family: procedure-guide
-summary: Complete Difficulty Checks: 3 ordered step(s), 7 decision point(s), and 7 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Complete Difficulty Checks: 3 ordered step(s), 4 decision point(s), and 7 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-30
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
 aliases: complete-difficulty-checks, difficulty-checks
-projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-difficulty-checks@993dd28f4b91678572e1f6c4063e51cd
+projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-difficulty-checks@f49e848ce389d4d6b1d8e9f75058e845
 ---
 
 # Difficulty Checks
@@ -36,11 +36,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Decision Points
 
-- The fi nd trap ability of the thief skill will be used to see if this will work. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01211))_
-- However, if such a process is not specified, it is not treated as a definitive success/failure. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01220))_
-- The game master does not say whether the result is the action succeeded or the action failed , because a difficulty check is made when the success or failure of the action is not known to the characters. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01237))_
-- Therefore, if after examining the door, you do not find a trap, the risk is quite low even if you assume that there really are no traps. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01244))_
-- So, even if you examine the door and do not find any traps, you should be skeptical of the results. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01245))_
+- You examined the door. You followed the door with your eyes for any odd nicks, tapped lightly on the door to hear the echo, and carefully twisted the knob slightly to see if it felt right. As a result, you did not discover any traps. Really? The owner of this place is the kind of guy who'd think you're a thief when he sees you . You just couldn't find a trap, could you? Maybe the traps are so Some games treat extreme stakes during an action check as a definitive success or failure, and Sword World RPG may do so as well. However, if such a process is not specified, it is not treated as a definitive success/failure. Do be careful. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01217, source-range-0b9dec90-01220))_
+- The game master does not say whether the result is the action succeeded or the action failed , because a difficulty check is made when the success or failure of the action is not known to the characters. They must only answer as much as the character can tell from their successes and failures. Let's show how the game master's answer would be for the case of the door and the traps: _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01237))_
+- If the roll is low, such as 3 or 4, then there's a high chance that the success roll has failed. So, even if you examine the door and do not find any traps, you should be skeptical of the results. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01245))_
 - In particular, when a player rolls either of the two extremes, double sixes or double ones , it means automatic success or automatic failure , so that the player can clearly see whether the success roll is successful or not. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01246))_
 
 ## Tables And Formulas
