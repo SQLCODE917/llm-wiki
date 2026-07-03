@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-and-armor-8906bbe1
 page_kind: source
 page_family: section-reference
-summary: 4.10 Excellent Weapons and Armor / and Armor: 25 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 4.10 Excellent Weapons and Armor / and Armor: 25 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-and-armor-8906bbe1@db676c149f72d86a6f870b468ef2236f
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-and-armor-8906bbe1@b3e3726811d5b44201dd4cf319bb5920
 ---
 
 # 4.10 Excellent Weapons and Armor / and Armor
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excel
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-3d37b0b9]] - broader source section: 4.10 Excellent Weapons and Armor
 
@@ -46,6 +48,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02357))_
 
+<a id="atom-technical-atom-b2b24ba20eca44f8"></a>
+
 > Also, even if you search all over Alecrast, you will usually only find one with a required strength up to 5 lower than usual .
 
 ### Technical frame 2: 4.10 Excellent Weapons and Armor / and Armor
@@ -56,57 +60,36 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02358))_
 
+<a id="atom-technical-atom-b3da874e11489f23"></a>
+
 > However, if you want one of higher quality, you must go to a larger town.
 
-### Technical frame 3: 4.10 Excellent Weapons and Armor / and Armor
+### Technical atom 3
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02362))_
-
-> Whenever an adventurer declares that their attack on a monster is a mercy, that monster will always remain alive. If left alone, it will always regain consciousness.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02361))_
-
-> If they fail, then unless they roll double ones, they will continue to remain unconscious.
-
-### Technical frame 4: 4.10 Excellent Weapons and Armor / and Armor
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02363))_
-
-> In addition, no matter how high quality it is, nothing can affect its attack power or evasion speed. It'll also have no effect on monsters that can only be wounded by magic or magical weapons (such as spirits, beastmen, etc.).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02362))_
-
-> Whenever an adventurer declares that their attack on a monster is a mercy, that monster will always remain alive.
-
-### Technical atom 5
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01409))_
-
-| entry | content |
-| --- | --- |
-| 4 | 1 Weapon and Armor Restrictions A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword... All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters may not use weapons or armor with a required strength greater than their own strength. |
-| 4 | 2 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Weapon and Armor Restrictions
-4.1 Weapon and Armor Restrictions
-A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword...
-All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters  may  not  use  weapons  or armor  with  a  required  strength  greater than their own strength.
-4.2
-```
-
-</details>
-
-### Technical atom 6
+<a id="atom-technical-atom-0d6d657b228f142a"></a>
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02356))_
 
 > It is important to note that such weapons and armor cannot exceed the limits of the weapon or armor itself. For example, if you want a high-quality broadsword, its required strength (size) is naturally limited to 8-16 . Since there is no such broadsword with a natural required strength of 17, that means there is no such thing as a broadsword with required strength 16 and strike power 17 .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02359))_
+
+```text
+These high-quality weapons and armor  can  be  expensive.  Their  price increases  by 20% for  every 1 required strength lower than usual. 2 lower will be 40% more expensive, 3 lower will be 60% more  expensive, 4 lower  will  be 80% more expensive, and 5 lower will be twice the original price.
+Table 4-5: Guideline for Obtaining High-Quality Weapons and Armor
+5 less Required Strength
+Royal city level in a large country
+4 less Required Strength
+Large city in a large country, royal city level in a small country
+3 less Required Strength
+Reasonable city
+2 less Required Strength
+Town of about 1000 people
+1 less Required Strength
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
 
 | entry | content |
 | --- | --- |
@@ -120,22 +103,5 @@ All joking aside, however, if we want to be realistic, weapons and armor used sh
 | 3 | Large city in a large country, royal city level in a small country less Required Strength |
 | 2 | Reasonable city less Required Strength |
 | 1 | Town of about 1000 people less Required Strength |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-These high-quality weapons and armor  can  be  expensive.  Their  price increases  by 20% for  every 1 required strength lower than usual. 2 lower will be 40% more expensive, 3 lower will be 60% more  expensive, 4 lower  will  be 80% more expensive, and 5 lower will be twice the original price.
-Table 4-5: Guideline for Obtaining High-Quality Weapons and Armor
-5 less Required Strength
-Royal city level in a large country
-4 less Required Strength
-Large city in a large country, royal city level in a small country
-3 less Required Strength
-Reasonable city
-2 less Required Strength
-Town of about 1000 people
-1 less Required Strength
-```
 
 </details>

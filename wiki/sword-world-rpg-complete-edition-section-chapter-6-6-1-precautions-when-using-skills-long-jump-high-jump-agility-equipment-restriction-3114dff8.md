@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑫ Long Jump/High Jump [Agility] ] (Equipment restriction): 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-long-jump-high-jump-agility-equipment-restriction-3114dff8@39d07c4c7d55ab25225dedd58e54e55e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-long-jump-high-jump-agility-equipment-restriction-3114dff8@afe67b74a93b4b2631f300781fe26de4
 ---
 
 # Chapter 6: / 6.1 Precautions When Using Skills / [ ⑫ Long Jump/High Jump [Agility] ] (Equipment restriction)
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-82cdd945]] - broader source section: Chapter 6: / 6.1 Precautions When Using Skills
 

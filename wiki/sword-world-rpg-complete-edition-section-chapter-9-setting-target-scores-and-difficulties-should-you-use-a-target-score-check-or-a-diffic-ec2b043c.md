@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-9-setting-target-scores-and-difficulties-should-you-use-a-target-score-check-or-a-diffic-ec2b043c
 page_kind: source
 page_family: section-reference
-summary: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: 29 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: 29 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-9-setting-target-scores-and-difficulties-should-you-use-a-target-score-check-or-a-diffic-ec2b043c@ba8a7a9c89cecc0ffcc16ca13f0e1b20
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-9-setting-target-scores-and-difficulties-should-you-use-a-target-score-check-or-a-diffic-ec2b043c@eeb1c63be39eabcbb6dd8302314a115f
 ---
 
 # Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-9-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-9-setting-target-scores-and-difficulties-ae9c232d]] - broader source section: Chapter 9: / Setting Target Scores and Difficulties
 
@@ -48,6 +50,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05608))_
 
+<a id="atom-technical-atom-c5f6009e94dc6a1d"></a>
+
 > The standard for deciding is whether the character can tell if the action succeeded or failed .
 
 ### Technical frame 2: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?
@@ -58,41 +62,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05613))_
 
+<a id="atom-technical-atom-4e59e0aa4e54ade4"></a>
+
 > If the difficulty is clear, let's say it's 3, players can infer that they can only fail when the game master rolls an 11 or 12.
-
-### Technical frame 3: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05617))_
-
-> That alone will make players wary. In such cases, it is better to keep the difficulty low. A technique for creating scenarios is to keep the difficulty consistent for success rolls that are likely to be made frequently in one scenario, such as finding traps.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05616))_
-
-> The time when you should not reveal the difficulty is when revealing the difficulty itself would indicate that something is wrong .
-
-### Technical atom 4
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01174))_
-
-> The player must roll two dice and add their baseline score to the roll. The result is called the fi nal score . This final score should be equal to or greater than the target score.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01172))_
-
-| entry | content |
-| --- | --- |
-| 2 | 2 Target Scores The baseline score is a number that represents a character's ability. However, the success of an action is not only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned warrior, than when he is an amateur with no fighting experience. |
-| 2 | 3 |
-| 2 | 3 Checks |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Target Scores
-2.2 Target Scores
-The baseline score is  a number that represents a character's ability. However, the  success  of  an  action  is  not  only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned  warrior,  than  when  he  is  an amateur with no fighting experience.
-2.3
-2.3 Checks
-```
-
-</details>

@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Giant ]: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-giant-bba55fe3@e3c985048d5f7de33023291725ea5920
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-giant-bba55fe3@4fb93e003dca678c153e0f7552f24b3d
 ---
 
 # Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Giant ]
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8]] - broader source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-giant-c9f18cee]] - same source heading: another source section with the same heading, [ Giant ]
 
 ## Statements

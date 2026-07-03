@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-1-3-2-skill-types-04daba3a
 page_kind: source
 page_family: section-reference
-summary: 1.3.2 Skill Types: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 1.3.2 Skill Types: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-3-2-skill-types-04daba3a@a41fec098b55b45c7e283c17965199b8
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-3-2-skill-types-04daba3a@ee993253ba9aa49af90bfbaa5e420725
 ---
 
 # 1.3.2 Skill Types
@@ -23,15 +23,3 @@ From [[sword-world-rpg-complete-edition]].
 - Each skill consists of a number of abilities appropriate to the skill name, and having a skill level (1 skill level or higher) means that you can demonstrate those abilities. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00247))_
 - General skills are skills of an ordinary person as opposed to an adventurer, such as merchant , farmer , etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00246))_
 - Each skill consists of a number of abilities appropriate to the skill name, and having a skill level (1 skill level or higher) means that you can demonstrate those abilities. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00247))_
-
-## Technical atoms
-
-### Technical frame 1: 1.3.2 Skill Types
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00247))_
-
-> Each skill consists of a number of abilities appropriate to the skill name, and having a skill level (1 skill level or higher) means that you can demonstrate those abilities.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00248))_
-
-> The table below shows the names and types of each skill (Table 1-2: Skill Types).

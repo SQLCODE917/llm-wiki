@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-closures-and-scope-it-s-always-the-environment-47a785c5
 page_kind: source
-summary: And also: / Closures and Scope / it's always the environment: 15 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: And also: / Closures and Scope / it's always the environment: 15 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-closures-and-scope-it-s-always-the-environment-47a785c5@fc5282e78534d79f38f3cd11c3766f7a
+projection_coverage: section-javascriptallonge-section-and-also-closures-and-scope-it-s-always-the-environment-47a785c5@ba8192d753fd9a5ce896d69dc7472019
 ---
 
 # And also: / Closures and Scope / it's always the environment
@@ -16,7 +17,12 @@ From [[javascriptallonge]].
 
 ## Related pages
 
+### Source structure
+
 - [[javascriptallonge-section-and-also-closures-and-scope-d1679ec0]] - broader source section: And also: / Closures and Scope
+
+### Topics
+
 - [[javascriptallonge-environment]] - topic hub: opens the topic page for Environment
 
 ## Statements
@@ -38,55 +44,6 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00356))_
 
+<a id="atom-technical-atom-634e3513bd1b5d02"></a>
+
 > So whenever a function is applied to arguments, its environment always has a reference to its parent environment.
-
-### Technical frame 2: And also: / Closures and Scope / it's always the environment
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00365))_
-
-> Only you call it with (1)(2)(3) instead of (1, 2, 3) . The other big difference is that you can call it with (1) and get a function back that you can later call with (2)(3) .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00360))_
-
-```
-bh
-```
-
-### Technical frame 3: And also: / Closures and Scope / it's always the environment
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00365))_
-
-> Only you call it with (1)(2)(3) instead of (1, 2, 3) . The other big difference is that you can call it with (1) and get a function back that you can later call with (2)(3) .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00362))_
-
-```
-(x) =>
-(y) =>
-(z) => x + y + z
-```
-
-### Technical frame 4: And also: / Closures and Scope / it's always the environment
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00365))_
-
-> Only you call it with (1)(2)(3) instead of (1, 2, 3) . The other big difference is that you can call it with (1) and get a function back that you can later call with (2)(3) .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00364))_
-
-```
-(x, y, z) => x + y + z
-```
-
-### Technical frame 5: And also: / Closures and Scope / it's always the environment
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00366))_
-
-> The first function is the result of currying a the second function. Calling a curried function with only some of its arguments is sometimes called partial application b . Some programming languages automatically curry and partially evaluate functions without the need to manually nest them.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00367))_
-
-```
-ah
-bh
-```

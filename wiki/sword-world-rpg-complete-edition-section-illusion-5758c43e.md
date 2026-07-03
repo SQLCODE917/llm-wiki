@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-illusion-5758c43e
 page_kind: source
 page_family: section-reference
-summary: 《 Illusion 》: 23 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 《 Illusion 》: 23 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-illusion-5758c43e@920823558a1bcf403877e1a0ea0d17f2
+projection_coverage: section-sword-world-rpg-complete-edition-section-illusion-5758c43e@0c69342d4333e8505a04dd319aa208fc
 ---
 
 # 《 Illusion 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-illusion-5
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Other
 
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-illusion-5ce13208]] - same source heading: another source section with the same heading, 5.1.12 Ancient Magic List / [ Illusion ]
 
@@ -31,15 +33,3 @@ From [[sword-world-rpg-complete-edition]].
 - For example, suppose a fake floor is created above a pit using a Create Image (ancient magic) spell. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02703))_
 - It might be unreasonable for a monster with low intelligence, such as a goblin, but a human of average intelligence would find it suspicious. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02706))_
 - However, you can only make this resistance roll once . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02707))_
-
-## Technical atoms
-
-### Technical frame 1: 《 Illusion 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02706))_
-
-> It might be unreasonable for a monster with low intelligence, such as a goblin, but a human of average intelligence would find it suspicious.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02707))_
-
-> In the event of such a suspicion, the target of the illusion can make a mental power resistance roll.

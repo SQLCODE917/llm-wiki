@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-2-1-humans-perception-2e7c860d
 page_kind: source
 page_family: section-reference
-summary: 13.2.1 《 Humans 》 / 《 Perception 》: 24 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.2.1 《 Humans 》 / 《 Perception 》: 24 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-perception-2e7c860d@96fa04686b6e256abf3b67aebd408832
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-perception-2e7c860d@7d80a2ddd07eb95a72880d48a52d221e
 ---
 
 # 13.2.1 《 Humans 》 / 《 Perception 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-hum
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-2-1-humans-6e762209]] - broader source section: 13.2.1 《 Humans 》
 
@@ -35,15 +37,3 @@ From [[sword-world-rpg-complete-edition]].
 - Therefore, they have almost no restrictions on action even in the dark. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06958))_
 - ( Vibration sense ) means the monster can sense vibrations in the ground and perceive things moving around it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06959))_
 - These senses cannot be blocked or deceived by any means. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06961))_
-
-## Technical atoms
-
-### Technical frame 1: 13.2.1 《 Humans 》 / 《 Perception 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06961))_
-
-> Those whose sensory abilities are magic perceive their surroundings with magical senses. These senses cannot be blocked or deceived by any means. Illusions are ineffective on monsters whose perception is magic .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06960))_
-
-> Those whose sensory abilities are pseudo have five pseudo-senses through magical means. After all, one part may be missing, or they may have special senses. In such cases, there is an organ that captures the sensation in a pseudo manner. If those organs are destroyed, the pseudo-senses will no longer be usable. For example, skeletons can use their empty eye sockets for pseudo vision. Therefore, if they're blindfolded, they won't be able to see, and they won't be able to see anything approaching from behind. Monsters whose perception is pseudo can experience illusions.

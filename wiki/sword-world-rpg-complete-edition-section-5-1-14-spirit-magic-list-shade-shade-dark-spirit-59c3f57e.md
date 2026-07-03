@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-shade-shade-dark-spirit-59c3f57e
 page_kind: source
 page_family: section-reference
-summary: 5.1.14 Spirit Magic List / [ Shade ] (Shade/Dark Spirit): 19 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 5.1.14 Spirit Magic List / [ Shade ] (Shade/Dark Spirit): 19 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-shade-shade-dark-spirit-59c3f57e@0090effaf9ba701f7894d9be62b8bd32
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-shade-shade-dark-spirit-59c3f57e@07470d609001a81262f60db0e09eb442
 ---
 
 # 5.1.14 Spirit Magic List / [ Shade ] (Shade/Dark Spirit)
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spi
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-55816c7f]] - broader source section: 5.1.14 Spirit Magic List
 
@@ -25,31 +27,3 @@ From [[sword-world-rpg-complete-edition]].
 - If a shade itself comes into contact with a will-o-wisp's body or enters the area of effect of the ancient magic Light , it'll vanish without emitting any energy. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03798))_
 - All natural light within a 5 meter radius of this spirit is negated, closing it in complete darkness. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03797))_
 - The damage is only dealt to mental power (points), the rest of the check is the same as for magic that deals normal damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03797))_
-
-## Technical atoms
-
-### Technical frame 1: 5.1.14 Spirit Magic List / [ Shade ] (Shade/Dark Spirit)
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03788, source-range-0b9dec90-03789, source-range-0b9dec90-03790, source-range-0b9dec90-03791, source-range-0b9dec90-03792, source-range-0b9dec90-03793))_
-
-> Base Mental Power Cost=6
-
-> Distance=20 meters
-
-> Area=A space with a 5 meter radius
-
-> Duration=1 hour
-
-> Effect=Negates natural light within the area of effect, closing it in darkness
-
-> Type=Damage (Mind-type)
-
-### Technical frame 2: 5.1.14 Spirit Magic List / [ Shade ] (Shade/Dark Spirit)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03798))_
-
-> If a shade itself comes into contact with a will-o-wisp's body or enters the area of effect of the ancient magic Light , it'll vanish without emitting any energy.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03797))_
-
-> The shade will fly freely in the air according to the caster's commands, but can no longer be controlled if it moves more than 20 meters away from the caster.

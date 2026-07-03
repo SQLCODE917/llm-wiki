@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 13.6 Handling Monster Special Abilities / 《 Strong to Cold 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-strong-to-cold-49f47a0a@6b40a69407dfeb37974b9f76b6416ce9
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-strong-to-cold-49f47a0a@3d7c624cef12f15203de27271aefeb96
 ---
 
 # 13.6 Handling Monster Special Abilities / 《 Strong to Cold 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handl
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-22341d2d]] - broader source section: 13.6 Handling Monster Special Abilities
 

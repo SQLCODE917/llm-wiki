@@ -4,10 +4,10 @@ page_kind: concept
 page_family: broad-topic
 summary: 《 Mythical Beasts and Magical Beasts 》: 297 statement(s) and 284 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-mythical-beast-and-magical@89b9426a8e53195deee79724639b2e73
+projection_coverage: topic-sword-world-rpg-complete-edition-mythical-beast-and-magical@5d00d535fb21827d78e713599e8a622b
 ---
 
 # 《 Mythical Beasts and Magical Beasts 》
@@ -17,9 +17,17 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-mythical-beast]] - broader topic: Mythical Beast shares source evidence from 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: Mythical beast and magical beast are general terms for monsters that have living bodies, unlike spirits or undead. These include three types: things that have existe ... [truncated]; Mythical Beast shares technical record from 13.2.6 Mythical Beasts and Magical Beasts / [ Twintail Cat ]: Perception=Five senses infravision) (13 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-magical-beast]] - broader topic: Magical Beast shares source evidence from 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: Mythical beast and magical beast are general terms for monsters that have living bodies, unlike spirits or undead. These include three types: things that have existe ... [truncated]; Magical Beast shares technical record from 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]: Slaves have low intellect and cannot use magic. (12 shared statement(s), 1 shared atom(s))
+### Source structure
+
+- [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] - source section: 13.2.6 Mythical Beasts and Magical Beasts shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Satyr ]: Monster Level=3 Rarity=14 Agility=15 Movement Speed=15 Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Horns: 9 (2) Strike Points ... [truncated]; 13.2.6 Mythical Beasts and Magical Beasts shares technical record from 13.2.6 Mythical Beasts and Magical Beasts / [ Satyr ]: Perception=Five senses (264 shared statement(s), 284 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-mythical-beasts-and-magical-beasts-6af041c8]] - source section: 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》 shares source evidence from 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: Mythical beast and magical beast are general terms for monsters that have living bodies, unlike spirits or undead. These include three types: things that have existe ... [truncated]; 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》 shares technical table: 1. Paralysis Ray You will be paralyzed for 6 rounds. 2. Hypnosis Ray You will fall asleep. This is considered natural sleep. 3. Freeze Ray You will freeze instantly ... [truncated] (19 shared statement(s), 1 shared atom(s))
+
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-target-score]] - shared statements and technical atoms: Target Scores shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Satyr ]: Monster Level=3 Rarity=14 Agility=15 Movement Speed=15 Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Horns: 9 (2) Strike Points ... [truncated]; Target Scores shares technical record from 13.2.6 Mythical Beasts and Magical Beasts / [ Ceiling Hanger ]: Special Abilities=Surprise attack (Sense target score=12) (14 shared statement(s), 2 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Ceiling Hanger ]: Strangling has strike power 0 and bonus damage 6 when making a damage check. Non-metal armor and ring mail have no effect against this damage, and points can only be ... [truncated] (6 shared statement(s))
 - [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Ceiling Hanger ]: Strangling has strike power 0 and bonus damage 6 when making a damage check. Non-metal armor and ring mail have no effect against this damage, and points can only be ... [truncated] (5 shared statement(s))
 - [[sword-world-rpg-complete-edition-ability-score]] - shared statements: Ability Scores shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Satyr ]: Monster Level=3 Rarity=14 Agility=15 Movement Speed=15 Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Horns: 9 (2) Strike Points ... [truncated] (4 shared statement(s))
@@ -28,10 +36,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 - [[sword-world-rpg-complete-edition-shape-change]] - shared statements: [ Shape Change shares source evidence from 5.1.12 Ancient Magic List / [ Shape Change: This is a spell that allows the caster to change their form into another living creature at will. However, the creatures they can change into are limited to about 10 ... [truncated] (2 shared statement(s))
 - [[sword-world-rpg-complete-edition-dragon-priest-skill]] - shared statements: Dragon Priest Skill shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Manticore ]: A manticore has the body of a lion, the tail of a scorpion, the wings of a bat, and the face of an old man. They have an extremely long life span and accumulate a gr ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-illness]] - shared statements: Illness shares source evidence from 13.6 Handling Monster Special Abilities / 《 Not Affected by Poison and Illness 》: Certain mythical beasts, magical beasts, undead powered by negative life, and pseudo-life forms created by magic, are free from poison and illness. These monsters ar ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-low-ancient]] - shared statements: 《 Low Ancient 》 shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Lamia ]: Monster Level=5 Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11 Evasi ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-priest-skill]] - shared statements: Priest Skill shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Manticore ]: A manticore has the body of a lion, the tail of a scorpion, the wings of a bat, and the face of an old man. They have an extremely long life span and accumulate a gr ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-mythical-beasts-and-magical-beasts-6af041c8]] - source section: 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》 shares source evidence from 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: Mythical beast and magical beast are general terms for monsters that have living bodies, unlike spirits or undead. These include three types: things that have existe ... [truncated]; 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》 shares technical table: 1. Paralysis Ray You will be paralyzed for 6 rounds. 2. Hypnosis Ray You will fall asleep. This is considered natural sleep. 3. Freeze Ray You will freeze instantly ... [truncated] (19 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] - source section: 13.2.6 Mythical Beasts and Magical Beasts shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Satyr ]: Monster Level=3 Rarity=14 Agility=15 Movement Speed=15 Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Horns: 9 (2) Strike Points ... [truncated]; 13.2.6 Mythical Beasts and Magical Beasts shares technical record from 13.2.6 Mythical Beasts and Magical Beasts / [ Satyr ]: Perception=Five senses (264 shared statement(s), 284 shared atom(s))
+
+### Topics
+
+- [[sword-world-rpg-complete-edition-mythical-beast]] - broader topic: Mythical Beast shares source evidence from 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: Mythical beast and magical beast are general terms for monsters that have living bodies, unlike spirits or undead. These include three types: things that have existe ... [truncated]; Mythical Beast shares technical record from 13.2.6 Mythical Beasts and Magical Beasts / [ Twintail Cat ]: Perception=Five senses infravision) (13 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-magical-beast]] - broader topic: Magical Beast shares source evidence from 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: Mythical beast and magical beast are general terms for monsters that have living bodies, unlike spirits or undead. These include three types: things that have existe ... [truncated]; Magical Beast shares technical record from 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]: Slaves have low intellect and cannot use magic. (12 shared statement(s), 1 shared atom(s))
 ## Statements by source section
 
 ### 5.1.12 Ancient Magic List / [ Shape Change
@@ -183,37 +192,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07395))_
 
+<a id="atom-technical-atom-889bfa302b2feca0"></a>
+
 > Perception=Five senses
 
 ### Technical frame 2: 13.2.6 Mythical Beasts and Magical Beasts / [ Ceiling Hanger ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07399, source-range-0b9dec90-07400, source-range-0b9dec90-07401, source-range-0b9dec90-07402, source-range-0b9dec90-07403, source-range-0b9dec90-07404, source-range-0b9dec90-07405, source-range-0b9dec90-07407, source-range-0b9dec90-07408, source-range-0b9dec90-07409, source-range-0b9dec90-07410, source-range-0b9dec90-07411))_
-
-> Monster Level=3
-
-> Rarity=14
-
-> Agility=12 Movement Speed=6
-
-> Frequency=Rare
-
-> Number=One
-
-> Intellect=Low Reaction=Adversarial
-
-> Attack Points=Right arm:11 (4)/Left arm:10
-
-> Strike Points=Special/5
-
-> Evasion Points=10 (3) Defense Points=5
-
-> Life Points/Resistance=14 /11(4)
-
-> Mental Points/Resistance=11/10(3)
-
-> Special Abilities=Surprise attack (Sense target score=12)
-
-### Technical frame 3: 13.2.6 Mythical Beasts and Magical Beasts / [ Ceiling Hanger ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07413))_
 
@@ -221,9 +204,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07412))_
 
+<a id="atom-technical-atom-be6f4865808b243d"></a>
+
 > By sticking with this lower body, a ceiling hanger can also move along walls and ceilings.
 
-### Technical frame 4: 13.2.6 Mythical Beasts and Magical Beasts / [ Ceiling Hanger ]
+### Technical frame 3: 13.2.6 Mythical Beasts and Magical Beasts / [ Ceiling Hanger ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07414))_
 
@@ -231,9 +216,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07413))_
 
+<a id="atom-technical-atom-a8a14078a56bd93a"></a>
+
 > Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well.
 
-### Technical frame 5: 13.2.6 Mythical Beasts and Magical Beasts / [ Ceiling Hanger ]
+### Technical frame 4: 13.2.6 Mythical Beasts and Magical Beasts / [ Ceiling Hanger ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07416))_
 
@@ -241,9 +228,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07415))_
 
+<a id="atom-technical-atom-9bde5b6f7024cecd"></a>
+
 > From then on, in each round, a death check must be made when applying damage (even if it's 0).
 
-### Technical frame 6: 13.2.6 Mythical Beasts and Magical Beasts / [ Harpy ]
+### Technical frame 5: 13.2.6 Mythical Beasts and Magical Beasts / [ Harpy ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07422))_
 
@@ -251,9 +240,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07421))_
 
+<a id="atom-technical-atom-fe3dfc028fda1889"></a>
+
 > Perception=Five senses
 
-### Technical frame 7: 13.2.6 Mythical Beasts and Magical Beasts / [ Harpy ]
+### Technical frame 6: 13.2.6 Mythical Beasts and Magical Beasts / [ Harpy ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07420))_
 
@@ -261,9 +252,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07422))_
 
+<a id="atom-technical-atom-488d587a06e7cac1"></a>
+
 > Anyone who hears a deela's song must make a mental power resistance roll against target score 10.
 
-### Technical frame 8: 13.2.6 Mythical Beasts and Magical Beasts / [ Harpy ]
+### Technical frame 7: 13.2.6 Mythical Beasts and Magical Beasts / [ Harpy ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07422))_
 
@@ -271,25 +264,43 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07424, source-range-0b9dec90-07425, source-range-0b9dec90-07426, source-range-0b9dec90-07427, source-range-0b9dec90-07428, source-range-0b9dec90-07429, source-range-0b9dec90-07430, source-range-0b9dec90-07431, source-range-0b9dec90-07432))_
 
+<a id="atom-technical-atom-8cdeb86f74873ef9"></a>
+
 > Monster Level=3
+
+<a id="atom-technical-atom-8ba08d8ac05bf6c0"></a>
 
 > Rarity=18
 
+<a id="atom-technical-atom-431418ae6bb582c5"></a>
+
 > Agility=16 Movement Speed=6/30 (air)
+
+<a id="atom-technical-atom-462b716010c5d5c4"></a>
 
 > Number=One Frequency=Very Rare
 
+<a id="atom-technical-atom-e111771bb5aba6e2"></a>
+
 > Intellect=Human Reaction=Neutral
+
+<a id="atom-technical-atom-ffb2a114499eb682"></a>
 
 > Attack Points=Talons:11 (4)
 
+<a id="atom-technical-atom-18e5dfb6665ad7a3"></a>
+
 > Strike Points=9
+
+<a id="atom-technical-atom-29d2bb673ec1ce7d"></a>
 
 > Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=15/11 (4)
 
+<a id="atom-technical-atom-a4767842c93b4ec4"></a>
+
 > Mental Points/Resistance=12/11 (4) Special Abilities=None in particular Habitat=Coasts Languages=Harpy, regional Perception=Five senses
 
-### Technical frame 9: 13.2.6 Mythical Beasts and Magical Beasts / [ Harpy ]
+### Technical frame 8: 13.2.6 Mythical Beasts and Magical Beasts / [ Harpy ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07438))_
 
@@ -297,9 +308,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07437))_
 
+<a id="atom-technical-atom-61958a1a3607260c"></a>
+
 > Perception=Five senses
 
-### Technical frame 10: 13.2.6 Mythical Beasts and Magical Beasts / [ Hippocampus ]
+### Technical frame 9: 13.2.6 Mythical Beasts and Magical Beasts / [ Hippocampus ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07444))_
 
@@ -307,13 +320,19 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07441, source-range-0b9dec90-07442, source-range-0b9dec90-07443))_
 
+<a id="atom-technical-atom-b9244a3957266cc6"></a>
+
 > Special Abilities=Water adaptation
+
+<a id="atom-technical-atom-473bf61b0398ecaf"></a>
 
 > Habitat=Seas Languages=None
 
+<a id="atom-technical-atom-b570f19c4a10ea20"></a>
+
 > Perception=Five senses (illumination)
 
-### Technical frame 11: 13.2.6 Mythical Beasts and Magical Beasts / [ Medusa ]
+### Technical frame 10: 13.2.6 Mythical Beasts and Magical Beasts / [ Medusa ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07449))_
 
@@ -321,9 +340,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07448))_
 
+<a id="atom-technical-atom-3aaafa9bfe42f819"></a>
+
 > Also, you cannot cast magic on the medusa in these states.
 
-### Technical frame 12: 13.2.6 Mythical Beasts and Magical Beasts / [ Androscorpio ]
+### Technical frame 11: 13.2.6 Mythical Beasts and Magical Beasts / [ Androscorpio ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07458))_
 
@@ -331,13 +352,19 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07455, source-range-0b9dec90-07456, source-range-0b9dec90-07457))_
 
+<a id="atom-technical-atom-81a9973dbaee2c24"></a>
+
 > Habitat=Deserts
+
+<a id="atom-technical-atom-a92aaa9f711ba4c5"></a>
 
 > Languages=Regional, silent spirit
 
+<a id="atom-technical-atom-2edcfcd63d51b039"></a>
+
 > Perception=Five senses (infravision)
 
-### Technical frame 13: 13.2.6 Mythical Beasts and Magical Beasts / [ Centaur ]
+### Technical frame 12: 13.2.6 Mythical Beasts and Magical Beasts / [ Centaur ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07463))_
 
@@ -345,35 +372,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07462))_
 
+<a id="atom-technical-atom-ccaf8e3e896fb397"></a>
+
 > Perception=Five senses
 
-### Technical frame 14: 13.2.6 Mythical Beasts and Magical Beasts / [ Cockatrice ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07468, source-range-0b9dec90-07469, source-range-0b9dec90-07470, source-range-0b9dec90-07471, source-range-0b9dec90-07472, source-range-0b9dec90-07473, source-range-0b9dec90-07474, source-range-0b9dec90-07475, source-range-0b9dec90-07476, source-range-0b9dec90-07477, source-range-0b9dec90-07478))_
-
-> Monster Level=4
-
-> Rarity=15
-
-> Agility=11 Movement Speed=10
-
-> Number=One Frequency=Rare
-
-> Intellect=Animal Reaction=Neutral
-
-> Attack Points=Beak:11 (4)
-
-> Strike Points=9+petrify
-
-> Evasion Points=11 (4) Defense Points=7
-
-> Life Points/Resistance=16/12 (5)
-
-> Mental Points/Resistance=8/11 (4)
-
-> Special Abilities=Petrify (Resist target score=11)
-
-### Technical frame 15: 13.2.6 Mythical Beasts and Magical Beasts / [ Cockatrice ]
+### Technical frame 13: 13.2.6 Mythical Beasts and Magical Beasts / [ Cockatrice ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07484))_
 
@@ -381,13 +384,19 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07481, source-range-0b9dec90-07482, source-range-0b9dec90-07483))_
 
+<a id="atom-technical-atom-2bff2c9965c5bfd9"></a>
+
 > Habitat=Wilderness
+
+<a id="atom-technical-atom-68ec00d4a813ae23"></a>
 
 > Languages=None
 
+<a id="atom-technical-atom-1f21eac3c7e16ff3"></a>
+
 > Perception=Five senses
 
-### Technical frame 16: 13.2.6 Mythical Beasts and Magical Beasts / [ Cockatrice ]
+### Technical frame 14: 13.2.6 Mythical Beasts and Magical Beasts / [ Cockatrice ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07484))_
 
@@ -395,9 +404,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07485))_
 
+<a id="atom-technical-atom-1a1203098abc7be1"></a>
+
 > If you find and eat henruda in advance, you can neutralize the cockatrice's magical power and prevent being petrified.
 
-### Technical frame 17: 13.2.6 Mythical Beasts and Magical Beasts / [ Scylla ] Monster Level=4 Rarity=13 Agility=12 Movement Speed=12/12 (water) Number=One Frequency=Rare Intellect=Human Reaction=Adversarial
+### Technical frame 15: 13.2.6 Mythical Beasts and Magical Beasts / [ Scylla ] Monster Level=4 Rarity=13 Agility=12 Movement Speed=12/12 (water) Number=One Frequency=Rare Intellect=Human Reaction=Adversarial
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07489))_
 
@@ -405,9 +416,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07487))_
 
+<a id="atom-technical-atom-6bab05a67a7eef07"></a>
+
 > Attack Points=Fangs (6 times):11 (4)
 
-### Technical frame 18: 13.2.6 Mythical Beasts and Magical Beasts / [ Scylla ] Monster Level=4 Rarity=13 Agility=12 Movement Speed=12/12 (water) Number=One Frequency=Rare Intellect=Human Reaction=Adversarial
+### Technical frame 16: 13.2.6 Mythical Beasts and Magical Beasts / [ Scylla ] Monster Level=4 Rarity=13 Agility=12 Movement Speed=12/12 (water) Number=One Frequency=Rare Intellect=Human Reaction=Adversarial
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07489))_
 
@@ -415,35 +428,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07490))_
 
+<a id="atom-technical-atom-4e4a8b93f2f4bfda"></a>
+
 > When in combat, a scylla can attack different targets at the same time with its six heads.
 
-### Technical frame 19: 13.2.6 Mythical Beasts and Magical Beasts / [ Chimera ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07492, source-range-0b9dec90-07493, source-range-0b9dec90-07494, source-range-0b9dec90-07495, source-range-0b9dec90-07496, source-range-0b9dec90-07497, source-range-0b9dec90-07498, source-range-0b9dec90-07499, source-range-0b9dec90-07500, source-range-0b9dec90-07501, source-range-0b9dec90-07502))_
-
-> Monster Level=5
-
-> Rarity=13
-
-> Agility=12 Movement Speed=12
-
-> Number=One Frequency=Rare
-
-> Intellect=Human Reaction=Adversarial
-
-> Attack Points=Fangs:12 (5)/Snake's fangs:12 (5)
-
-> Strike Points=15/13+poison
-
-> Evasion Points=12 (5) Defense Points=9
-
-> Life Points/Resistance=24/15 (8)
-
-> Mental Points/Resistance=18/14 (7)
-
-> Special Abilities=5th level dark magic (Magic Intensity/Magic Power=14/7)
-
-### Technical frame 20: 13.2.6 Mythical Beasts and Magical Beasts / [ Chimera ]
+### Technical frame 17: 13.2.6 Mythical Beasts and Magical Beasts / [ Chimera ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07509))_
 
@@ -451,13 +440,19 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07506, source-range-0b9dec90-07507, source-range-0b9dec90-07508))_
 
+<a id="atom-technical-atom-f5d1a8d45b21f64c"></a>
+
 > Habitat=Mountain recesses
+
+<a id="atom-technical-atom-847bc747fb0f77bc"></a>
 
 > Languages=None
 
+<a id="atom-technical-atom-b7e8fad4108976ab"></a>
+
 > Perception=Five senses (darkvision)
 
-### Technical frame 21: 13.2.6 Mythical Beasts and Magical Beasts / [ Chimera ]
+### Technical frame 18: 13.2.6 Mythical Beasts and Magical Beasts / [ Chimera ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07509))_
 
@@ -465,9 +460,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07510))_
 
+<a id="atom-technical-atom-b676b7c224d802da"></a>
+
 > In combat, a Chimera can attack two targets at the same time, using its lion fangs and the snake fangs at the tip of its tail.
 
-### Technical frame 22: 13.2.6 Mythical Beasts and Magical Beasts / [ Twintail Cat ]
+### Technical frame 19: 13.2.6 Mythical Beasts and Magical Beasts / [ Twintail Cat ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07514))_
 
@@ -475,9 +472,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07513))_
 
+<a id="atom-technical-atom-fc3829bb00a778db"></a>
+
 > Perception=Five senses infravision)
 
-### Technical frame 23: 13.2.6 Mythical Beasts and Magical Beasts / [ Twintail Cat ]
+### Technical frame 20: 13.2.6 Mythical Beasts and Magical Beasts / [ Twintail Cat ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07515))_
 
@@ -485,9 +484,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07514))_
 
+<a id="atom-technical-atom-c3e6a30cac18a8fc"></a>
+
 > If this happens, they will never betray their friends.
 
-### Technical frame 24: 13.2.6 Mythical Beasts and Magical Beasts / [ Twintail Cat ]
+### Technical frame 21: 13.2.6 Mythical Beasts and Magical Beasts / [ Twintail Cat ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07516))_
 
@@ -495,9 +496,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07515))_
 
+<a id="atom-technical-atom-2e65f4323fe1dd7c"></a>
+
 > They can use ancient magic and spirit magic, but they are especially fond of illusions and magic that affects the mind.
 
-### Technical frame 25: 13.2.6 Mythical Beasts and Magical Beasts / [ Telchines ] Monster Level=5 Rarity=14 Agility=12 Movement Speed=10/10 (water) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Weapon:11 (4)/Tail:12 (5) Strike Points=12/11 Evasion Points=12 (5) Defense Points=8 Life Points/Resistance=16/13 (6) Mental Points/Resistance=20/14 (7) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) Water adaptation Habitat=Secluded coasts Languages=Merman, low ancient Perception=Five senses (illumination)
+### Technical frame 22: 13.2.6 Mythical Beasts and Magical Beasts / [ Telchines ] Monster Level=5 Rarity=14 Agility=12 Movement Speed=10/10 (water) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Weapon:11 (4)/Tail:12 (5) Strike Points=12/11 Evasion Points=12 (5) Defense Points=8 Life Points/Resistance=16/13 (6) Mental Points/Resistance=20/14 (7) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) Water adaptation Habitat=Secluded coasts Languages=Merman, low ancient Perception=Five senses (illumination)
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07518))_
 
@@ -505,9 +508,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07519))_
 
+<a id="atom-technical-atom-a206f2443799bf28"></a>
+
 > When in danger, telchines will use a Shape Change spell to take on the form of a titan or an ugly beast to intimidate their opponents.
 
-### Technical frame 26: 13.2.6 Mythical Beasts and Magical Beasts / [ Hippogriff ]
+### Technical frame 23: 13.2.6 Mythical Beasts and Magical Beasts / [ Hippogriff ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07522))_
 
@@ -515,11 +520,15 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07521, source-range-0b9dec90-07523))_
 
+<a id="atom-technical-atom-792734aaa291d6db"></a>
+
 > Monster Level=5
+
+<a id="atom-technical-atom-b1a153721f074e6b"></a>
 
 > Perception=Five senses
 
-### Technical frame 27: 13.2.6 Mythical Beasts and Magical Beasts / [ Hippogriff ]
+### Technical frame 24: 13.2.6 Mythical Beasts and Magical Beasts / [ Hippogriff ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07522))_
 
@@ -527,9 +536,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07524))_
 
+<a id="atom-technical-atom-dfe622bd65932e8a"></a>
+
 > If you catch one as a child and tame it, you can even use it as a riding horse.
 
-### Technical frame 28: 13.2.6 Mythical Beasts and Magical Beasts / [ Pegasus ] Monster Level=5 Rarity=10 Agility=12 Movement Speed=30/40 (air) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Heel:11 (4) Strike Points=13 Evasion Points=12 (5) Defense Points=8 Life Points/Resistance=20/14 (7) Mental Points/Resistance=15/13 (6) Special Abilities=Not affected by poison and illness Habitat=Steep mountains, meadows Languages=None
+### Technical frame 25: 13.2.6 Mythical Beasts and Magical Beasts / [ Pegasus ] Monster Level=5 Rarity=10 Agility=12 Movement Speed=30/40 (air) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Heel:11 (4) Strike Points=13 Evasion Points=12 (5) Defense Points=8 Life Points/Resistance=20/14 (7) Mental Points/Resistance=15/13 (6) Special Abilities=Not affected by poison and illness Habitat=Steep mountains, meadows Languages=None
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07527))_
 
@@ -537,9 +548,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07526))_
 
+<a id="atom-technical-atom-ce61d7fcab60d3bf"></a>
+
 > Perception=Five senses
 
-### Technical frame 29: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]
+### Technical frame 26: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07531))_
 
@@ -547,9 +560,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07530))_
 
+<a id="atom-technical-atom-add2ab17d5d84cc7"></a>
+
 > Perception=Five senses (darkvision)
 
-### Technical frame 30: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]
+### Technical frame 27: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07533))_
 
@@ -557,9 +572,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07532))_
 
+<a id="atom-technical-atom-5f205ef5beed4472"></a>
+
 > A head displacer itself has the ability to speak low ancient, but cannot use any of its host's (?) skills.
 
-### Technical frame 31: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]
+### Technical frame 28: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07535))_
 
@@ -567,9 +584,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07533))_
 
+<a id="atom-technical-atom-86e5970a68366d55"></a>
+
 > If the tentacles are not clear, those with the sage skill cannot use the monster check ability.
 
-### Technical frame 32: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]
+### Technical frame 29: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07533))_
 
@@ -577,9 +596,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07535))_
 
+<a id="atom-technical-atom-563c95be31eabbc3"></a>
+
 > A head displacer may use dark magic on very rare occasions.
 
-### Technical frame 33: 13.2.6 Mythical Beasts and Magical Beasts / [ Lamia ]
+### Technical frame 30: 13.2.6 Mythical Beasts and Magical Beasts / [ Lamia ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07539))_
 
@@ -587,9 +608,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07538))_
 
+<a id="atom-technical-atom-5a2a590a325e1208"></a>
+
 > Perception=Five senses
 
-### Technical frame 34: 13.2.6 Mythical Beasts and Magical Beasts / [ Lamia ]
+### Technical frame 31: 13.2.6 Mythical Beasts and Magical Beasts / [ Lamia ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07541))_
 
@@ -597,9 +620,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07540))_
 
+<a id="atom-technical-atom-5f568ba634aa3974"></a>
+
 > Whenever they suck blood, they must return to their original form.
 
-### Technical frame 35: 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]
+### Technical frame 32: 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07545))_
 
@@ -607,9 +632,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07544))_
 
+<a id="atom-technical-atom-a41d90f3ca85a039"></a>
+
 > Slaves have low intellect and cannot use magic.
 
-### Technical frame 36: 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]
+### Technical frame 33: 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07546))_
 
@@ -617,91 +644,139 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07548, source-range-0b9dec90-07549, source-range-0b9dec90-07550, source-range-0b9dec90-07551, source-range-0b9dec90-07552, source-range-0b9dec90-07553, source-range-0b9dec90-07554, source-range-0b9dec90-07555, source-range-0b9dec90-07556, source-range-0b9dec90-07557, source-range-0b9dec90-07558, source-range-0b9dec90-07559, source-range-0b9dec90-07560, source-range-0b9dec90-07561, source-range-0b9dec90-07562, source-range-0b9dec90-07563, source-range-0b9dec90-07565, source-range-0b9dec90-07566, source-range-0b9dec90-07567, source-range-0b9dec90-07568, source-range-0b9dec90-07569, source-range-0b9dec90-07570, source-range-0b9dec90-07571, source-range-0b9dec90-07572, source-range-0b9dec90-07573, source-range-0b9dec90-07574, source-range-0b9dec90-07575, source-range-0b9dec90-07576, source-range-0b9dec90-07577, source-range-0b9dec90-07578, source-range-0b9dec90-07580, source-range-0b9dec90-07581, source-range-0b9dec90-07582))_
 
+<a id="atom-technical-atom-55ad5217f74669bb"></a>
+
 > Monster Level=8
+
+<a id="atom-technical-atom-968710f61655944b"></a>
 
 > Rarity=10
 
+<a id="atom-technical-atom-8e61f4411c157810"></a>
+
 > Agility=18
 
+<a id="atom-technical-atom-dd9775e3a92c24f6"></a>
+
 > Movement Speed=10/10 (water)
+
+<a id="atom-technical-atom-67b23f78ad2ec3a0"></a>
 
 > Number=Several to dozens
 
+<a id="atom-technical-atom-a271a22ab7a854f6"></a>
+
 > Frequency=Rare
+
+<a id="atom-technical-atom-0f490681755ae9d9"></a>
 
 > Intellect=Low Reaction=Neutral
 
+<a id="atom-technical-atom-b4753a24c1ce2a87"></a>
+
 > Attack Points=Weapon: 10 (3)
+
+<a id="atom-technical-atom-a47d890587a88297"></a>
 
 > Strike Points=7
 
+<a id="atom-technical-atom-9f67208d6b331133"></a>
+
 > Evasion Points=10 (3) Defense Points=6
+
+<a id="atom-technical-atom-34c1f7d585d10c54"></a>
 
 > Life Points/Resistance=16/10 (3)
 
+<a id="atom-technical-atom-3ab818677bd41264"></a>
+
 > Mental Points/Resistance=10/9 (2)
+
+<a id="atom-technical-atom-6da321a0626f2d6d"></a>
 
 > Special Abilities=Water adaptation
 
+<a id="atom-technical-atom-16abb417db172158"></a>
+
 > Habitat=Lakes, river coasts
 
+<a id="atom-technical-atom-6f78843b6206323d"></a>
+
 > Languages=Lizardman
+
+<a id="atom-technical-atom-4a3d9a23c6dd1d3f"></a>
 
 > Perception=Five senses (illumination)
 
+<a id="atom-technical-atom-96fb9f5473b4fecd"></a>
+
 > Monster Level=5
+
+<a id="atom-technical-atom-d5297578abad513f"></a>
 
 > Rarity=15
 
+<a id="atom-technical-atom-53c45e873bcc3aac"></a>
+
 > Agility=14
+
+<a id="atom-technical-atom-abd9b86d90c5a262"></a>
 
 > Movement Speed=10/10 (water)
 
+<a id="atom-technical-atom-15be49f4b2afa68f"></a>
+
 > Number=One to several
+
+<a id="atom-technical-atom-e4689a473c799c64"></a>
 
 > Frequency=Very Rare
 
+<a id="atom-technical-atom-350cec61e34bc195"></a>
+
 > Intellect=Human Reaction=Neutral
+
+<a id="atom-technical-atom-e22662af0e2dbdf7"></a>
 
 > Attack Points=Weapon: 13 (6)
 
+<a id="atom-technical-atom-6d555bab1343568b"></a>
+
 > Strike Points=10
+
+<a id="atom-technical-atom-dc808d23560fcbb4"></a>
 
 > Evasion Points=14 (7) Defense Points=10
 
+<a id="atom-technical-atom-fca75ccd635900be"></a>
+
 > Life Points/Resistance=20/14 (7)
+
+<a id="atom-technical-atom-c1ec1d1d6319db8e"></a>
 
 > Mental Points/Resistance=14/13 (6)
 
+<a id="atom-technical-atom-1a55d05b6214d8e3"></a>
+
 > Special Abilities=5th level dragon roar magic
+
+<a id="atom-technical-atom-4051320cdebe6c61"></a>
 
 > (Magic Intensity/Magic Power=14/7)
 
+<a id="atom-technical-atom-5552797e0b8b4a4d"></a>
+
 > Habitat=Swamps
+
+<a id="atom-technical-atom-b912b64546502e54"></a>
 
 > Languages=Lizardman
 
+<a id="atom-technical-atom-a491f35840d192ef"></a>
+
 > Perception=Five senses (darkvision)
 
-### Technical frame 37: 13.2.6 Mythical Beasts and Magical Beasts / [ Griffon ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07585, source-range-0b9dec90-07586, source-range-0b9dec90-07587, source-range-0b9dec90-07588, source-range-0b9dec90-07589, source-range-0b9dec90-07590, source-range-0b9dec90-07591))_
-
-> Monster Level=6
-
-> Rarity=12
-
-> Agility=14
-
-> Movement Speed=6/40 (air)
-
-> Number=One to several Frequency=Rare
-
-> Intellect=Animal Reaction=Neutral
-
-> Attack Points=Talon:14 (7)/Talon:14 (7)/
-
-### Technical frame 38: 13.2.6 Mythical Beasts and Magical Beasts / [ Griffon ]
+### Technical frame 34: 13.2.6 Mythical Beasts and Magical Beasts / [ Griffon ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07602))_
 
@@ -709,53 +784,39 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07594, source-range-0b9dec90-07595, source-range-0b9dec90-07596, source-range-0b9dec90-07597, source-range-0b9dec90-07598, source-range-0b9dec90-07599, source-range-0b9dec90-07600, source-range-0b9dec90-07601))_
 
+<a id="atom-technical-atom-5c4e604cf64e6f24"></a>
+
 > Evasion Points=13 (6)
+
+<a id="atom-technical-atom-820383a1492cbaa9"></a>
 
 > Defense Points=10
 
+<a id="atom-technical-atom-cc0be6b27f1a7680"></a>
+
 > Life Points/Resistance=26/16 (9)
+
+<a id="atom-technical-atom-4f180afe778b5ae3"></a>
 
 > Mental Points/Resistance=14/14 (7)
 
+<a id="atom-technical-atom-094309c70610b4de"></a>
+
 > Special Abilities=None in particular
+
+<a id="atom-technical-atom-3b0e7114cc522700"></a>
 
 > Habitat=Steep mountains
 
+<a id="atom-technical-atom-960ef75a004e8d9a"></a>
+
 > Languages=None
+
+<a id="atom-technical-atom-45113d7e621d6683"></a>
 
 > Perception=Five senses
 
-### Technical frame 39: 13.2.6 Mythical Beasts and Magical Beasts / [ Manticore ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07604, source-range-0b9dec90-07605, source-range-0b9dec90-07606, source-range-0b9dec90-07607, source-range-0b9dec90-07608, source-range-0b9dec90-07609, source-range-0b9dec90-07610, source-range-0b9dec90-07611, source-range-0b9dec90-07613, source-range-0b9dec90-07614, source-range-0b9dec90-07615, source-range-0b9dec90-07616, source-range-0b9dec90-07617))_
-
-> Monster Level=6
-
-> Rarity=12
-
-> Agility=10 Movement Speed=21
-
-> Number=One Frequency=Rare
-
-> Intellect=High Reaction=Hostile
-
-> Attack Points=Fangs:13 (6)/Needle:13 (6)
-
-> Strike Points=15/17+poison
-
-> Evasion Points=12 (5)
-
-> Points=10
-
-> Life Points/Resistance=23/15 (8)
-
-> Mental Points/Resistance=18/15 (8)
-
-> Special Abilities=5th level dark magic (Magic
-
-> Intensity/Magic Power=15/8)
-
-### Technical frame 40: 13.2.6 Mythical Beasts and Magical Beasts / [ Manticore ]
+### Technical frame 35: 13.2.6 Mythical Beasts and Magical Beasts / [ Manticore ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07623))_
 
@@ -763,13 +824,19 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07620, source-range-0b9dec90-07621, source-range-0b9dec90-07622))_
 
+<a id="atom-technical-atom-676ea0b50c9f9cef"></a>
+
 > Habitat=Deserts, Underground labyrinths
+
+<a id="atom-technical-atom-8c61001d9be0ff3c"></a>
 
 > Languages=Low ancient
 
+<a id="atom-technical-atom-aa4e48dd7ef96491"></a>
+
 > Perception=Five senses (darkvision)
 
-### Technical frame 41: 13.2.6 Mythical Beasts and Magical Beasts / [ Manticore ]
+### Technical frame 36: 13.2.6 Mythical Beasts and Magical Beasts / [ Manticore ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07623))_
 
@@ -777,45 +844,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07624))_
 
+<a id="atom-technical-atom-0ae71a5616b163b9"></a>
+
 > In combat, a manticore can attack separate targets at the same time with its lion fangs and scorpion tail (it can also attack the same target twice).
 
-### Technical frame 42: 13.2.6 Mythical Beasts and Magical Beasts / [ Minotaur ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07626, source-range-0b9dec90-07627, source-range-0b9dec90-07628, source-range-0b9dec90-07629, source-range-0b9dec90-07630, source-range-0b9dec90-07631, source-range-0b9dec90-07632, source-range-0b9dec90-07633, source-range-0b9dec90-07634, source-range-0b9dec90-07635, source-range-0b9dec90-07636, source-range-0b9dec90-07637, source-range-0b9dec90-07638, source-range-0b9dec90-07639, source-range-0b9dec90-07640, source-range-0b9dec90-07641))_
-
-> Monster Level=6
-
-> Rarity=12
-
-> Agility=10 Movement Speed=15
-
-> Number=One Frequency=Moderate
-
-> Intellect=Low Reaction=Adversarial
-
-> Attack Points=Two-handed ax: 13 (6)
-
-> Strike Points=16
-
-> Attack Points=Strangle:15 (8)
-
-> Strike Points=14
-
-> Evasion Points=12 (5) Defense Points=10
-
-> Life Points/Resistance=25/16 (9)
-
-> Mental Points/Resistance=10/13 (6)
-
-> Special Abilities=Strangling
-
-> Habitat=Caves, underground labyrinths
-
-> Languages=Minotaur
-
-> Perception=Five senses (darkvision)
-
-### Technical frame 43: 13.2.6 Mythical Beasts and Magical Beasts / [ Minotaur ]
+### Technical frame 37: 13.2.6 Mythical Beasts and Magical Beasts / [ Minotaur ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07643))_
 
@@ -823,37 +856,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07642))_
 
+<a id="atom-technical-atom-0bb5bdffbce20d4b"></a>
+
 > With that being said, all minotaurs are male, so they must use human women to produce offspring.
 
-### Technical frame 44: 13.2.6 Mythical Beasts and Magical Beasts / [ Unicorn ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07645, source-range-0b9dec90-07646, source-range-0b9dec90-07647, source-range-0b9dec90-07648, source-range-0b9dec90-07649, source-range-0b9dec90-07650, source-range-0b9dec90-07651, source-range-0b9dec90-07652, source-range-0b9dec90-07653, source-range-0b9dec90-07654, source-range-0b9dec90-07655, source-range-0b9dec90-07656))_
-
-> Monster Level=6
-
-> Rarity=10
-
-> Agility=15 Movement Speed=30
-
-> Number=One to several
-
-> Frequency=Very Rare
-
-> Intellect=High Reaction=Neutral to friendly
-
-> Attack Points=Horn:12 (5)/Heel:12 (5)
-
-> Strike Points=17/16
-
-> Evasion Points=13 (6) Defense Points=9
-
-> Life Points/Resistance=25/16 (9)
-
-> Mental Points/Resistance=20/15 (8)
-
-> Special Abilities=6th level spirit magic (Magic Intensity/Magic Power=16/9)
-
-### Technical frame 45: 13.2.6 Mythical Beasts and Magical Beasts / [ Unicorn ]
+### Technical frame 38: 13.2.6 Mythical Beasts and Magical Beasts / [ Unicorn ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07663))_
 
@@ -861,13 +868,19 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07659, source-range-0b9dec90-07660, source-range-0b9dec90-07661))_
 
+<a id="atom-technical-atom-aceee72774ab31e5"></a>
+
 > Habitat=Deep in the woods, rarely seen
+
+<a id="atom-technical-atom-e67c1173ed9555b0"></a>
 
 > outside Unicorn Woods Languages=Silent spirit
 
+<a id="atom-technical-atom-db971a248dfd8755"></a>
+
 > Perception=Five senses (infravision)
 
-### Technical frame 46: 13.2.6 Mythical Beasts and Magical Beasts / [ Unicorn ]
+### Technical frame 39: 13.2.6 Mythical Beasts and Magical Beasts / [ Unicorn ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07666))_
 
@@ -875,9 +888,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07665))_
 
+<a id="atom-technical-atom-d06fb7bc432fcdbe"></a>
+
 > Unicorns can also use spirit magic unrelated to the spirit of life, but at this time their shaman skill is only 6th level.
 
-### Technical frame 47: 13.2.6 Mythical Beasts and Magical Beasts / [ Unicorn ]
+### Technical frame 40: 13.2.6 Mythical Beasts and Magical Beasts / [ Unicorn ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07668))_
 
@@ -885,9 +900,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07667))_
 
+<a id="atom-technical-atom-f2ba252d210a5d22"></a>
+
 > If a unicorn loses its horn due to overuse of magic or it being cut off, it will never grow back again.
 
-### Technical frame 48: 13.2.6 Mythical Beasts and Magical Beasts / [ Sphinx ] Monster Level=7 Rarity=12 Agility=14 Movement Speed=18/30 (air) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Claw:15 (8)/Claw:15 (8) Strike Points=16/16 Evasion Points=14 (7) Defense Points=11 Life Points/Resistance=24/17 (10) Mental Points/Resistance=20/16 (9) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) Tell riddles Not affected by poison and illness Sleepless Habitat=Ruins, underground labyrinths Languages=Regional, low ancient
+### Technical frame 41: 13.2.6 Mythical Beasts and Magical Beasts / [ Sphinx ] Monster Level=7 Rarity=12 Agility=14 Movement Speed=18/30 (air) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Claw:15 (8)/Claw:15 (8) Strike Points=16/16 Evasion Points=14 (7) Defense Points=11 Life Points/Resistance=24/17 (10) Mental Points/Resistance=20/16 (9) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) Tell riddles Not affected by poison and illness Sleepless Habitat=Ruins, underground labyrinths Languages=Regional, low ancient
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07678))_
 
@@ -895,9 +912,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07677))_
 
+<a id="atom-technical-atom-058058152bdd1a42"></a>
+
 > Perception=Five senses (darkvision)
 
-### Technical frame 49: 13.2.6 Mythical Beasts and Magical Beasts / [ Sphinx ] Monster Level=7 Rarity=12 Agility=14 Movement Speed=18/30 (air) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Claw:15 (8)/Claw:15 (8) Strike Points=16/16 Evasion Points=14 (7) Defense Points=11 Life Points/Resistance=24/17 (10) Mental Points/Resistance=20/16 (9) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) Tell riddles Not affected by poison and illness Sleepless Habitat=Ruins, underground labyrinths Languages=Regional, low ancient
+### Technical frame 42: 13.2.6 Mythical Beasts and Magical Beasts / [ Sphinx ] Monster Level=7 Rarity=12 Agility=14 Movement Speed=18/30 (air) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Claw:15 (8)/Claw:15 (8) Strike Points=16/16 Evasion Points=14 (7) Defense Points=11 Life Points/Resistance=24/17 (10) Mental Points/Resistance=20/16 (9) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) Tell riddles Not affected by poison and illness Sleepless Habitat=Ruins, underground labyrinths Languages=Regional, low ancient
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07679))_
 
@@ -905,9 +924,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07678))_
 
+<a id="atom-technical-atom-a195229416f3bb89"></a>
+
 > Although they can cast ancient magic, they will not use magic recklessly or challenge you to a fight unless something really bad happens.
 
-### Technical frame 50: 13.2.6 Mythical Beasts and Magical Beasts / [ Sphinx ] Monster Level=7 Rarity=12 Agility=14 Movement Speed=18/30 (air) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Claw:15 (8)/Claw:15 (8) Strike Points=16/16 Evasion Points=14 (7) Defense Points=11 Life Points/Resistance=24/17 (10) Mental Points/Resistance=20/16 (9) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) Tell riddles Not affected by poison and illness Sleepless Habitat=Ruins, underground labyrinths Languages=Regional, low ancient
+### Technical frame 43: 13.2.6 Mythical Beasts and Magical Beasts / [ Sphinx ] Monster Level=7 Rarity=12 Agility=14 Movement Speed=18/30 (air) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Claw:15 (8)/Claw:15 (8) Strike Points=16/16 Evasion Points=14 (7) Defense Points=11 Life Points/Resistance=24/17 (10) Mental Points/Resistance=20/16 (9) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) Tell riddles Not affected by poison and illness Sleepless Habitat=Ruins, underground labyrinths Languages=Regional, low ancient
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07678))_
 
@@ -915,9 +936,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07679))_
 
+<a id="atom-technical-atom-eb507fe9ef831eab"></a>
+
 > If approached in a friendly manner, the sphinx may play a game of riddles to determine the intelligence of their opponent.
 
-### Technical frame 51: 13.2.6 Mythical Beasts and Magical Beasts / [ Wyvern ]
+### Technical frame 44: 13.2.6 Mythical Beasts and Magical Beasts / [ Wyvern ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07683))_
 
@@ -925,9 +948,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07682))_
 
+<a id="atom-technical-atom-12726a5d2cdf137f"></a>
+
 > Perception=Five senses (illumination)
 
-### Technical frame 52: 13.2.6 Mythical Beasts and Magical Beasts / [ Wyvern ]
+### Technical frame 45: 13.2.6 Mythical Beasts and Magical Beasts / [ Wyvern ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07684))_
 
@@ -935,9 +960,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07683))_
 
+<a id="atom-technical-atom-8634183a0f0eb854"></a>
+
 > Unlike dragons, they have low intellect, so they cannot cast spells, nor can they breathe fire.
 
-### Technical frame 53: 13.2.6 Mythical Beasts and Magical Beasts / [ Wyvern ]
+### Technical frame 46: 13.2.6 Mythical Beasts and Magical Beasts / [ Wyvern ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07683))_
 
@@ -945,37 +972,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07684))_
 
+<a id="atom-technical-atom-c1b4e98fb2239d9a"></a>
+
 > If you fail, the poison deals damage resulting from a strike power 20 strike roll plus bonus damage 7.
 
-### Technical frame 54: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07686, source-range-0b9dec90-07687, source-range-0b9dec90-07688, source-range-0b9dec90-07689, source-range-0b9dec90-07690, source-range-0b9dec90-07691, source-range-0b9dec90-07692, source-range-0b9dec90-07693, source-range-0b9dec90-07694, source-range-0b9dec90-07695, source-range-0b9dec90-07696, source-range-0b9dec90-07698))_
-
-> Monster Level=8
-
-> Rarity=9
-
-> Agility=12 Movement Speed=10
-
-> Number=Solo Frequency=Very Rare
-
-> Intellect=Animal Reaction=Adversarial
-
-> Attack Points=Fangs:15 (8)
-
-> Strike Points=18
-
-> Evasion Points=14 (7) Defense Points=12
-
-> Life Points/Resistance=25/18 (11)
-
-> Mental Points/Resistance=12/16 (9)
-
-> Special Abilities=Gaze
-
-> score=15, petrifying, once every 2 rounds)
-
-### Technical frame 55: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
+### Technical frame 47: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07704))_
 
@@ -983,13 +984,19 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07701, source-range-0b9dec90-07702, source-range-0b9dec90-07703))_
 
+<a id="atom-technical-atom-6aba0713a72bd878"></a>
+
 > Habitat=Deserts
+
+<a id="atom-technical-atom-56e9526cb6ab8d2a"></a>
 
 > Languages=None
 
+<a id="atom-technical-atom-cae8cedb4a4e748d"></a>
+
 > Perception=Five senses
 
-### Technical frame 56: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
+### Technical frame 48: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07706))_
 
@@ -997,9 +1004,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07707))_
 
+<a id="atom-technical-atom-7da82e206d3ce4b9"></a>
+
 > Anyone holding a weapon with basilisk blood on it must make a life force resistance roll against target score 15 each round, and if they fail, they will suffer damage resulting from a strike power 10 strike roll plus bonus damage 8.
 
-### Technical frame 57: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
+### Technical frame 49: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07707))_
 
@@ -1007,17 +1016,27 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07709, source-range-0b9dec90-07710, source-range-0b9dec90-07711, source-range-0b9dec90-07712, source-range-0b9dec90-07713))_
 
+<a id="atom-technical-atom-7cc8f49212ec1561"></a>
+
 > Monster Level=5 Rarity=10 Agility=12 Movement Speed=7 Number=One Frequency=Very Rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs:12 (5) Strike Points=13
+
+<a id="atom-technical-atom-25fc1d73d41c132f"></a>
 
 > Evasion Points=13 (6) Defense Points=9
 
+<a id="atom-technical-atom-3d1255eb2421e44e"></a>
+
 > Life Points/Resistance=19/14 (7)
+
+<a id="atom-technical-atom-42182795a0242cf9"></a>
 
 > Mental Points/Resistance=9/12 (5)
 
+<a id="atom-technical-atom-b570b63c245d9b91"></a>
+
 > Special Ability=Gaze (Resist target score=15, petrifying, once every 2 rounds)
 
-### Technical frame 58: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
+### Technical frame 50: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07719))_
 
@@ -1025,13 +1044,19 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07716, source-range-0b9dec90-07717, source-range-0b9dec90-07718))_
 
+<a id="atom-technical-atom-ad1ce2212f6c0d57"></a>
+
 > Habitat=Deserts
+
+<a id="atom-technical-atom-54975c27ef11cab1"></a>
 
 > Languages=None
 
+<a id="atom-technical-atom-2af1d0af4a27e5e8"></a>
+
 > Perception=Five senses
 
-### Technical frame 59: 13.2.6 Mythical Beasts and Magical Beasts / [ Sea Dragon ]
+### Technical frame 51: 13.2.6 Mythical Beasts and Magical Beasts / [ Sea Dragon ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07727))_
 
@@ -1039,13 +1064,19 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07723, source-range-0b9dec90-07724, source-range-0b9dec90-07725))_
 
+<a id="atom-technical-atom-9bbf0f86c59caf64"></a>
+
 > Habitat=Seas
+
+<a id="atom-technical-atom-19ff22493b257161"></a>
 
 > Languages=None
 
+<a id="atom-technical-atom-b29e8653001d1433"></a>
+
 > Perception=Five senses (darkvision)
 
-### Technical frame 60: 13.2.6 Mythical Beasts and Magical Beasts / [ Wyrm ]
+### Technical frame 52: 13.2.6 Mythical Beasts and Magical Beasts / [ Wyrm ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07731))_
 
@@ -1053,35 +1084,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07730))_
 
+<a id="atom-technical-atom-b3506c8bf67846b8"></a>
+
 > Perception=Five senses (illumination)
 
-### Technical frame 61: 13.2.6 Mythical Beasts and Magical Beasts / [ Buckbaird ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07734, source-range-0b9dec90-07735, source-range-0b9dec90-07736, source-range-0b9dec90-07737, source-range-0b9dec90-07738, source-range-0b9dec90-07739, source-range-0b9dec90-07740, source-range-0b9dec90-07741, source-range-0b9dec90-07742, source-range-0b9dec90-07743, source-range-0b9dec90-07744))_
-
-> Monster Level=9
-
-> Rarity=15
-
-> Agility=11 Movement Speed=15 (air)
-
-> Number=One Frequency=Very Rare
-
-> Intellect=Human Reaction=Neutral
-
-> Attack Points=Ram:17 (10)
-
-> Strike Points=18
-
-> Evasion Points=16 (9) Defense Points=12
-
-> Life Points/Resistance=27/19 (12)
-
-> Mental Points/Resistance=17/17 (10)
-
-> Special Abilities=Ray (Resist target
-
-### Technical frame 62: 13.2.6 Mythical Beasts and Magical Beasts / [ Buckbaird ]
+### Technical frame 53: 13.2.6 Mythical Beasts and Magical Beasts / [ Buckbaird ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07751))_
 
@@ -1089,61 +1096,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07749))_
 
+<a id="atom-technical-atom-8ff6a1e0cf8aaa86"></a>
+
 > The game master should roll 1D to determine which ray the buckbaird fires (or if it attempts to ram).
 
-### Technical frame 63: 13.2.6 Mythical Beasts and Magical Beasts / [ Hydra ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07753, source-range-0b9dec90-07754, source-range-0b9dec90-07755, source-range-0b9dec90-07756, source-range-0b9dec90-07757, source-range-0b9dec90-07758, source-range-0b9dec90-07759, source-range-0b9dec90-07760, source-range-0b9dec90-07761, source-range-0b9dec90-07762, source-range-0b9dec90-07763))_
-
-> Monster Level=10
-
-> Rarity=13
-
-> Agility=9
-
-> Movement Speed=12/20 (Underwater)
-
-> Number=One Frequency=Rare
-
-> Intellect=Animal Reaction=Adversarial
-
-> Attack Points=Fangs: 17 (10) x 9
-
-> Strike Points=20 x 9
-
-> Evasion Points=15 (8) Defense Points=14
-
-> Life Points/Resistance=54/25 (18) Mental Points/Resistance=10/17 (10) Special Abilities=Head regenerate Water adaptation Habitat=Lakes, rivers Languages=None
-
-> Perception=Five senses (illumination)
-
-### Technical frame 64: 13.2.6 Mythical Beasts and Magical Beasts / [ Humbaba ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07767, source-range-0b9dec90-07768, source-range-0b9dec90-07769, source-range-0b9dec90-07770, source-range-0b9dec90-07771, source-range-0b9dec90-07772, source-range-0b9dec90-07773, source-range-0b9dec90-07774, source-range-0b9dec90-07775, source-range-0b9dec90-07776, source-range-0b9dec90-07777))_
-
-> Monster Level=10
-
-> Rarity=15
-
-> Agility=10 Movement Speed=10
-
-> Number=One Frequency=Very Rare
-
-> Intellect=High Reaction=Adversarial
-
-> Attack Points=Arm:18 (11)
-
-> Strike Points=17
-
-> Evasion Points=16 (9) Defense Points=18
-
-> Life Points/Resistance=21/19 (12)
-
-> Mental Points/Resistance=21/19 (12)
-
-> Special Abilities=Gaze (Resist target score=17, petrifying, once every 3 rounds)
-
-### Technical frame 65: 13.2.6 Mythical Beasts and Magical Beasts / [ Humbaba ]
+### Technical frame 54: 13.2.6 Mythical Beasts and Magical Beasts / [ Humbaba ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07784))_
 
@@ -1151,13 +1108,19 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07781, source-range-0b9dec90-07782, source-range-0b9dec90-07783))_
 
+<a id="atom-technical-atom-d768021215a021e3"></a>
+
 > Habitat=Forests
+
+<a id="atom-technical-atom-8691092824085fee"></a>
 
 > Languages=Low ancient
 
+<a id="atom-technical-atom-80a352c44cd4c5e3"></a>
+
 > Perception=Five senses
 
-### Technical frame 66: 13.2.6 Mythical Beasts and Magical Beasts / [ Humbaba ]
+### Technical frame 55: 13.2.6 Mythical Beasts and Magical Beasts / [ Humbaba ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07786))_
 
@@ -1165,9 +1128,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07785))_
 
+<a id="atom-technical-atom-bc97ba4add0fad03"></a>
+
 > Those struck by this gaze must make a mental power resistance roll against target score 17.
 
-### Technical frame 67: 13.2.6 Mythical Beasts and Magical Beasts / [ Humbaba ]
+### Technical frame 56: 13.2.6 Mythical Beasts and Magical Beasts / [ Humbaba ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07788))_
 
@@ -1175,9 +1140,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07786))_
 
+<a id="atom-technical-atom-904a6242ff49d937"></a>
+
 > You must roll 2D and if you don't roll a 7 or greater, you will become infected.
 
-### Technical frame 68: 13.2.6 Mythical Beasts and Magical Beasts / [ Humbaba ]
+### Technical frame 57: 13.2.6 Mythical Beasts and Magical Beasts / [ Humbaba ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07786))_
 
@@ -1185,9 +1152,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07788))_
 
+<a id="atom-technical-atom-b835ab917e0a5681"></a>
+
 > A humbaba cannot use gaze, fire, and normal attacks at the same time.
 
-### Technical frame 69: 13.2.6 Mythical Beasts and Magical Beasts / [ Roc ]
+### Technical frame 58: 13.2.6 Mythical Beasts and Magical Beasts / [ Roc ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07794))_
 
@@ -1195,13 +1164,19 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07791, source-range-0b9dec90-07792, source-range-0b9dec90-07793))_
 
+<a id="atom-technical-atom-31e327da40db245e"></a>
+
 > Mental Points/Resistance=20/21 (14)
+
+<a id="atom-technical-atom-e44eed4e2d7a4eb5"></a>
 
 > Special Abilities=Capture
 
+<a id="atom-technical-atom-a18669e4ef1d69f0"></a>
+
 > Habitat=Rarely seen on the distant southern islands of Alecrast Languages=None Perception=Five senses
 
-### Technical frame 70: 13.2.6 Mythical Beasts and Magical Beasts / [ Roc ]
+### Technical frame 59: 13.2.6 Mythical Beasts and Magical Beasts / [ Roc ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07798))_
 
@@ -1209,9 +1184,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07799))_
 
+<a id="atom-technical-atom-dd539e6e8ea9ac14"></a>
+
 > Perception=Five Senses
 
-### Technical frame 71: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
+### Technical frame 60: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07804))_
 
@@ -1219,37 +1196,43 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07806, source-range-0b9dec90-07807, source-range-0b9dec90-07808, source-range-0b9dec90-07809, source-range-0b9dec90-07810, source-range-0b9dec90-07811, source-range-0b9dec90-07812, source-range-0b9dec90-07813, source-range-0b9dec90-07814))_
 
+<a id="atom-technical-atom-c616c415edda2a17"></a>
+
 > Monster Level=10
+
+<a id="atom-technical-atom-cc1026690d6abe0b"></a>
 
 > Rarity=10
 
+<a id="atom-technical-atom-721e2ea593253424"></a>
+
 > Agility=10
+
+<a id="atom-technical-atom-9b3b397e870fbc3c"></a>
 
 > Movement Speed=10/30 (air)
 
+<a id="atom-technical-atom-42f958a73cf5a71d"></a>
+
 > Number=One
+
+<a id="atom-technical-atom-6040891a438b7ce8"></a>
 
 > Frequency=Very Rare
 
+<a id="atom-technical-atom-571d47bbef0f7060"></a>
+
 > Intellect=Low
+
+<a id="atom-technical-atom-5b9ffa32f8c208ba"></a>
 
 > Reaction=Neutral
 
+<a id="atom-technical-atom-d0bf3c48201b17f5"></a>
+
 > Attack Points=Fangs:17 (10)/Talon:18 (11)/
 
-### Technical frame 72: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07817, source-range-0b9dec90-07818, source-range-0b9dec90-07819, source-range-0b9dec90-07820))_
-
-> Evasion Points=15 (8) Defense Points=15
-
-> Life Points/Resistance=50/24 (17)
-
-> Mental Points/Resistance=20/19 (12)
-
-> Special Abilities=Fire breath in a 20 meter forward radius (Resist target score=17, strike power 20, bonus damage 10)
-
-### Technical frame 73: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
+### Technical frame 61: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07827))_
 
@@ -1257,13 +1240,19 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07824, source-range-0b9dec90-07825, source-range-0b9dec90-07826))_
 
+<a id="atom-technical-atom-4e608fd1a3db0682"></a>
+
 > Habitat=Mountains, caves, other
+
+<a id="atom-technical-atom-8c6e8ff371290b37"></a>
 
 > Languages=Lizardman
 
+<a id="atom-technical-atom-aff27a9b794c7c36"></a>
+
 > Perception=Five senses (darkvision)
 
-### Technical frame 74: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
+### Technical frame 62: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07829))_
 
@@ -1271,9 +1260,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07828))_
 
+<a id="atom-technical-atom-750bd72e57a479da"></a>
+
 > Those within range must make a mental power resistance roll against target score 17.
 
-### Technical frame 75: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
+### Technical frame 63: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07832))_
 
@@ -1281,9 +1272,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07829))_
 
+<a id="atom-technical-atom-3402ee171791bcfc"></a>
+
 > Anyone who hears the dragon's roar must make a mental power resistance roll against target score 17.
 
-### Technical frame 76: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
+### Technical frame 64: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07832))_
 
@@ -1291,9 +1284,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07830))_
 
+<a id="atom-technical-atom-ef58c8bd43e7b56d"></a>
+
 > Dragons may take long periods of rest called dormant season , but they do not require sleep in the normal sense of the word and cannot be put to sleep by magic.
 
-### Technical frame 77: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
+### Technical frame 65: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07838))_
 
@@ -1301,9 +1296,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07833))_
 
+<a id="atom-technical-atom-9c9b906159c93734"></a>
+
 > (Magic Intensity/Magic Power=20/13)
 
-### Technical frame 78: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
+### Technical frame 66: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07839))_
 
@@ -1311,9 +1308,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07838))_
 
+<a id="atom-technical-atom-4d74b730924a418e"></a>
+
 > Furthermore, they can also use dragon roar magic that uses the lost dragon roar (though they possess most of their abilities without using magic).
 
-### Technical frame 79: 13.2.6 Mythical Beasts and Magical Beasts / [ Wolf ]
+### Technical frame 67: 13.2.6 Mythical Beasts and Magical Beasts / [ Wolf ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07845))_
 
@@ -1321,9 +1320,11 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07844))_
 
+<a id="atom-technical-atom-2d1290817dad0423"></a>
+
 > Perception=Five senses (illumination)
 
-### Technical frame 80: 13.2.6 Mythical Beasts and Magical Beasts / [ Giant Rat ]
+### Technical frame 68: 13.2.6 Mythical Beasts and Magical Beasts / [ Giant Rat ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07848))_
 
@@ -1331,9 +1332,13 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07849))_
 
+<a id="atom-technical-atom-1c1aed76db1c95ce"></a>
+
 > Perception=Five senses (illumination)
 
-### Technical atom 81
+### Technical atom 69
+
+<a id="atom-technical-atom-8afe7398d62a3875"></a>
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07749))_
 
@@ -1341,19 +1346,7 @@ What [[sword-world-rpg-complete-edition]] covers about 《 mythical beasts and m
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07750))_
 
-| entry | content |
-| --- | --- |
-| 1 | Paralysis Ray You will be paralyzed for 6 rounds. |
-| 2 | Hypnosis Ray You will fall asleep. This is considered natural sleep. |
-| 3 | Freeze Ray You will freeze instantly and enter a state of suspended animation. Treat this the same way as the spirit magic Ice Coffin (see p. 94). |
-| 4 | Brainwashing Ray You will think the buckbaird is your ally and attack your allies. This effect lasts 18 rounds. Treat this the same way as magic that belongs to mind . |
-| 5 | Metal Destruction Ray Destroys metal weapons and armor you are wearing. Magical weapons and armor are not affected. This ray cannot be resisted. |
-| 6 | No firing |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 1. Paralysis Ray
 You will be paralyzed for 6 rounds.
 2. Hypnosis Ray
@@ -1367,7 +1360,31 @@ Destroys metal weapons and armor you are wearing. Magical weapons and armor are 
 6. No firing
 ```
 
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
+| entry | content |
+| --- | --- |
+| 1 | Paralysis Ray You will be paralyzed for 6 rounds. |
+| 2 | Hypnosis Ray You will fall asleep. This is considered natural sleep. |
+| 3 | Freeze Ray You will freeze instantly and enter a state of suspended animation. Treat this the same way as the spirit magic Ice Coffin (see p. 94). |
+| 4 | Brainwashing Ray You will think the buckbaird is your ally and attack your allies. This effect lasts 18 rounds. Treat this the same way as magic that belongs to mind. |
+| 5 | Metal Destruction Ray Destroys metal weapons and armor you are wearing. Magical weapons and armor are not affected. This ray cannot be resisted. |
+| 6 | No firing |
+
 </details>
+
+### Technical atom 70
+
+<a id="atom-technical-atom-af8665af469a1bfa"></a>
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07413))_
+
+> Ceiling hangers primarily attack sleeping prey, but when hungry they may attack active prey as well. In addition to its protective color, it also stretches its body out from the ceiling in an instant to attack, so it has a high potential for surprise attacks. Rangers have a chance to notice this surprise attack with their sense danger ability. To do so, you must succeed on a success toll against target score 12 using ranger skill level + intelligence bonus as the baseline score. Failure will res
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07411))_
+
+> Special Abilities=Surprise attack (Sense target score=12)
 
 
 ## Source

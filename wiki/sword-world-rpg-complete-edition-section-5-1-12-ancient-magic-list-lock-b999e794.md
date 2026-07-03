@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 5.1.12 Ancient Magic List / [ Lock ]: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-lock-b999e794@40d66195f47687e4f820ab586dcb13aa
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-lock-b999e794@5a78963c55d02c379b3425e311f29c91
 ---
 
 # 5.1.12 Ancient Magic List / [ Lock ]
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-19f66f88]] - broader source section: 5.1.12 Ancient Magic List
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-hard-lock-b636faa9]] - same source heading: another source section with the same heading, 5.1.12 Ancient Magic List / [ Hard Lock ]
 
 ## Statements
@@ -36,6 +41,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02933))_
 
+<a id="atom-technical-atom-1f2630d739c9e947"></a>
+
 > Resist=None
 
 ### Technical frame 2: 5.1.12 Ancient Magic List / [ Lock ]
@@ -45,5 +52,7 @@ From [[sword-world-rpg-complete-edition]].
 > Base Mental Power Cost=3 Distance=Touch Area=One object that opens and closes Duration=1 day Effect=Puts a magical lock on objects that open and close, such as doors, lids, etc. Type=Target score Countered (Overpowered) By: Unlock Expansion=Final score, duration
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02934))_
+
+<a id="atom-technical-atom-fc39524c16d847ed"></a>
 
 > As a result, the door or lid will never open unless you chant the password you chose when casting the spell.

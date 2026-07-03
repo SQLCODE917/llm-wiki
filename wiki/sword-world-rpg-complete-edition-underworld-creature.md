@@ -4,10 +4,10 @@ page_kind: concept
 page_family: broad-topic
 summary: Underworld Creature: 65 statement(s) and 142 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-underworld-creature@eb7a645c51e2c8435d1380ac11dc3a75
+projection_coverage: topic-sword-world-rpg-complete-edition-underworld-creature@f1a7ea38d8b3793598bd8967a51ca308
 ---
 
 # Underworld Creature
@@ -17,11 +17,19 @@ What [[sword-world-rpg-complete-edition]] covers about underworld creature:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-daemon-underworld-creature]] - narrower topic: 《 Daemons/Underworld Creatures 》 shares source evidence from 13.1 Types of Monsters / 《 Daemons/Underworld Creatures 》: Daemons are underworld monsters that live in a material world different from ours. In the age of the gods, they were known as terrifying slaughterers who followed th ... [truncated]; 《 Daemons/Underworld Creatures 》 shares technical record from 13.2.11 Daemons/Underworld Creatures / [ Aetherbeast ]: Monster Level=4 (65 shared statement(s), 142 shared atom(s))
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-daemon]] - shared statements and technical atoms: Daemon shares source evidence from 13.1 Types of Monsters / 《 Daemons/Underworld Creatures 》: Daemons are underworld monsters that live in a material world different from ours. In the age of the gods, they were known as terrifying slaughterers who followed th ... [truncated]; Daemon shares technical record from 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel: Monster Level=5 (8 shared statement(s), 7 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from 13.2.11 Daemons/Underworld Creatures / [ Hellhound ]: At first glance, the hellhound looks like a large black dog. However, in reality, it' s a terrifying beast from the underworld, also known as the watchdog of Hell. H ... [truncated] (5 shared statement(s))
 - [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from 13.2.11 Daemons/Underworld Creatures / [ Hellhound ]: At first glance, the hellhound looks like a large black dog. However, in reality, it' s a terrifying beast from the underworld, also known as the watchdog of Hell. H ... [truncated] (2 shared statement(s))
 - [[sword-world-rpg-complete-edition-magic-sword]] - shared statements: 《 Magic Sword (+1) 》 shares source evidence from 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel: A grunel is a humanoid lesser daemon with steel-blue skin. It's characterized by its long tail, which it can manipulate freely like a whip to attack or entangle enem ... [truncated] (1 shared statement(s))
+
+### Topics
+
+- [[sword-world-rpg-complete-edition-daemon-underworld-creature]] - narrower topic: 《 Daemons/Underworld Creatures 》 shares source evidence from 13.1 Types of Monsters / 《 Daemons/Underworld Creatures 》: Daemons are underworld monsters that live in a material world different from ours. In the age of the gods, they were known as terrifying slaughterers who followed th ... [truncated]; 《 Daemons/Underworld Creatures 》 shares technical record from 13.2.11 Daemons/Underworld Creatures / [ Aetherbeast ]: Monster Level=4 (65 shared statement(s), 142 shared atom(s))
 ## Statements by source section
 
 ### 13.1 Types of Monsters / 《 Daemons/Underworld Creatures 》
@@ -71,165 +79,17 @@ What [[sword-world-rpg-complete-edition]] covers about underworld creature:
 
 ### Technical frame 1: 13.2.11 Daemons/Underworld Creatures / [ Aetherbeast ]
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09230, source-range-0b9dec90-09231, source-range-0b9dec90-09232, source-range-0b9dec90-09233, source-range-0b9dec90-09234, source-range-0b9dec90-09235, source-range-0b9dec90-09236, source-range-0b9dec90-09237, source-range-0b9dec90-09238, source-range-0b9dec90-09239, source-range-0b9dec90-09240, source-range-0b9dec90-09241, source-range-0b9dec90-09242, source-range-0b9dec90-09243, source-range-0b9dec90-09244, source-range-0b9dec90-09245, source-range-0b9dec90-09246))_
-
-> Monster Level=4
-
-> Rarity=15
-
-> Agility=16
-
-> Movement Speed=21
-
-> Number=One
-
-> Frequency=Very rare
-
-> Intellect=Animal
-
-> Reaction=Adversarial
-
-> Attack Points=Fangs: 11 (4)
-
-> Strike Points=10
-
-> Evasion Points=11 (4) Defense Points=7
-
-> Life Points/Resistance=14/12 (5)
-
-> Mental Points/Resistance=16/12 (5)
-
-> Special Abilities=Depends on appendages
-
-> Habitat=Underground labyrinths, ruins
-
-> Languages=None
-
-> Perception=Five senses (illumination due to appendages)
-
-### Technical frame 2: 13.2.11 Daemons/Underworld Creatures / [ Aetherbeast ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09248))_
 
 > They often work as servants of daemons. They're rarely encountered in the material world, and details of them are not well understood. The few eyewitness accounts are mixed, and its shape is not clear, but it's agreed that it looks like a combination of several animals from the material world.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09249))_
 
+<a id="atom-technical-atom-007337070d0dc3ae"></a>
+
 > If the game master wishes, they may create special aetherbeasts.
 
-### Technical frame 3: 13.2.11 Daemons/Underworld Creatures / [ Hellhound ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09251, source-range-0b9dec90-09252, source-range-0b9dec90-09253, source-range-0b9dec90-09254, source-range-0b9dec90-09255, source-range-0b9dec90-09256, source-range-0b9dec90-09257, source-range-0b9dec90-09258, source-range-0b9dec90-09259, source-range-0b9dec90-09260, source-range-0b9dec90-09261, source-range-0b9dec90-09262, source-range-0b9dec90-09263, source-range-0b9dec90-09264, source-range-0b9dec90-09266, source-range-0b9dec90-09267))_
-
-> Monster Level=5
-
-> Rarity=14
-
-> Agility=15
-
-> Movement Speed=18
-
-> Number=One
-
-> Frequency=Rare
-
-> Intellect=Animal
-
-> Reaction=Adversarial
-
-> Attack Points=Fangs:12 (5)
-
-> Strike Points=12
-
-> Evasion Points=12 (5) Defense Points=8
-
-> Life Points/Resistance=16/13 (6)
-
-> Mental Points/Resistance=12/13 (6)
-
-> Special Abilities=Fire breath in a 5 meter forward radius (Resist target score=12, strike power 10, bonus damage 5)
-
-> Habitat=Deep caves, underground labyrinths Languages=None
-
-> Perception=Five senses (Darkvision)
-
-### Technical frame 4: 13.2.11 Daemons/Underworld Creatures / [ Cerberus ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09270, source-range-0b9dec90-09271, source-range-0b9dec90-09272, source-range-0b9dec90-09273, source-range-0b9dec90-09274, source-range-0b9dec90-09275, source-range-0b9dec90-09276, source-range-0b9dec90-09277, source-range-0b9dec90-09278, source-range-0b9dec90-09279, source-range-0b9dec90-09280, source-range-0b9dec90-09282, source-range-0b9dec90-09284, source-range-0b9dec90-09285))_
-
-> Monster Level=9
-
-> Rarity=13
-
-> Agility=15
-
-> Number=One Movement Speed=18
-
-> Frequency=Very rare
-
-> Intellect=Animal Reaction=Adversarial
-
-> Attack Points=Fangs (3 times): 15 (8)
-
-> Strike Points=17x3
-
-> Evasion Points=15 (8) Defense Points=12 Life Points/Resistance=22/17 (10)
-
-> Mental Points/Resistance=15/16 (9)
-
-> Special Abilities=Fire breath in a 5 meter surrounding radius (Resist target score=15, strike power 20, bonus damage 8)
-
-> Habitat=Deep
-
-> Languages=None
-
-> Perception=Five senses (Darkvision)
-
-### Technical frame 5: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09290, source-range-0b9dec90-09291, source-range-0b9dec90-09292, source-range-0b9dec90-09293, source-range-0b9dec90-09294, source-range-0b9dec90-09295, source-range-0b9dec90-09296, source-range-0b9dec90-09297, source-range-0b9dec90-09298, source-range-0b9dec90-09299, source-range-0b9dec90-09300, source-range-0b9dec90-09301, source-range-0b9dec90-09302, source-range-0b9dec90-09303, source-range-0b9dec90-09305, source-range-0b9dec90-09306, source-range-0b9dec90-09307))_
-
-> Monster Level=5
-
-> Rarity=13
-
-> Agility=14
-
-> Movement Speed=15
-
-> Number=One to several
-
-> Frequency=Very rare
-
-> Intellect=Human
-
-> Reaction=Adversarial, or command-based
-
-> Attack Points=Weapon: 12 (5)/Tail: 12 (5)
-
-> Strike Points=13/13
-
-> Evasion Points=12 (5) Defense Points=9
-
-> Life Points/Resistance=22/14 (7)
-
-> Mental Points/Resistance=20/14 (7)
-
-> Special Abilities=5th level ancient magic (magic intensity/magic power=14/7)
-
-> Habitat=Underground labyrinths, secluded ruins
-
-> Languages=Low ancient
-
-> Perception=Five senses (Darkvision)
-
-### Technical frame 6: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09308))_
-
-> The target will be unable to move, and the grunel can attack with the weapon in its right hand.
-
-### Technical frame 7: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
+### Technical frame 2: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09308))_
 
@@ -237,43 +97,79 @@ What [[sword-world-rpg-complete-edition]] covers about underworld creature:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09310, source-range-0b9dec90-09311, source-range-0b9dec90-09312, source-range-0b9dec90-09313, source-range-0b9dec90-09314, source-range-0b9dec90-09315, source-range-0b9dec90-09316, source-range-0b9dec90-09317, source-range-0b9dec90-09318, source-range-0b9dec90-09319, source-range-0b9dec90-09320, source-range-0b9dec90-09321, source-range-0b9dec90-09322, source-range-0b9dec90-09323, source-range-0b9dec90-09325, source-range-0b9dec90-09327, source-range-0b9dec90-09328, source-range-0b9dec90-09329))_
 
+<a id="atom-technical-atom-f7a516632fd21b21"></a>
+
 > Monster Level=5
+
+<a id="atom-technical-atom-b1eade2a5400f65e"></a>
 
 > Rarity=13
 
+<a id="atom-technical-atom-9f3f537c0e4dbf9c"></a>
+
 > Agility=14
+
+<a id="atom-technical-atom-d5c9be850e8bb512"></a>
 
 > Movement Speed=15/17 (air)
 
+<a id="atom-technical-atom-f1970b8ae07056fc"></a>
+
 > Number=One to several
+
+<a id="atom-technical-atom-4dea87d1ace4c0a5"></a>
 
 > Frequency=Very rare
 
+<a id="atom-technical-atom-564171dc63ff6ddb"></a>
+
 > Intellect=Human
+
+<a id="atom-technical-atom-f309c52956433e75"></a>
 
 > Reaction=Adversarial, or command-based
 
+<a id="atom-technical-atom-f5ff4cb6c264b7b4"></a>
+
 > Attack Points=Claws: 13 (6)
+
+<a id="atom-technical-atom-4a9705ecdaa55647"></a>
 
 > Strike Points=14
 
+<a id="atom-technical-atom-8b9ee83a89905e00"></a>
+
 > Evasion Points=12 (5) Defense Points=9
+
+<a id="atom-technical-atom-25413b3cf6d12948"></a>
 
 > Life Points/Resistance=25/15 (8)
 
+<a id="atom-technical-atom-dec4012215e60123"></a>
+
 > Mental Points/Resistance=18/14 (7)
+
+<a id="atom-technical-atom-5e9d5ac3583995a3"></a>
 
 > Special Abilities=3rd level dark magic (magic intensity/magic power=12/5)
 
+<a id="atom-technical-atom-e91f9623a7eb4667"></a>
+
 > one person (Resist target score=12, strike power 10, bonus damage 5)
+
+<a id="atom-technical-atom-0ea03dfe666840ae"></a>
 
 > Habitat=Underground labyrinths, secluded ruins
 
+<a id="atom-technical-atom-2373566b5812c1c8"></a>
+
 > Languages=Low ancient
+
+<a id="atom-technical-atom-91aa1a3ec524ff57"></a>
 
 > Perception=Five senses (Darkvision)
 
-### Technical frame 8: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
+### Technical frame 3: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09330))_
 
@@ -281,39 +177,71 @@ What [[sword-world-rpg-complete-edition]] covers about underworld creature:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09332, source-range-0b9dec90-09333, source-range-0b9dec90-09334, source-range-0b9dec90-09335, source-range-0b9dec90-09336, source-range-0b9dec90-09337, source-range-0b9dec90-09338, source-range-0b9dec90-09339, source-range-0b9dec90-09340, source-range-0b9dec90-09341, source-range-0b9dec90-09342, source-range-0b9dec90-09343, source-range-0b9dec90-09344, source-range-0b9dec90-09345, source-range-0b9dec90-09346, source-range-0b9dec90-09347))_
 
+<a id="atom-technical-atom-65f5aae9ef232985"></a>
+
 > Monster Level=5
+
+<a id="atom-technical-atom-3588431f4436b4b9"></a>
 
 > Rarity=14
 
+<a id="atom-technical-atom-a69e07065918a60a"></a>
+
 > Agility=15 Movement Speed=12
+
+<a id="atom-technical-atom-44b0fa644e0d3554"></a>
 
 > Number=One to several
 
+<a id="atom-technical-atom-c9ff9bffacd01372"></a>
+
 > Frequency=Very rare
+
+<a id="atom-technical-atom-43363ab4ea99db66"></a>
 
 > Intellect=Human
 
+<a id="atom-technical-atom-90b81220174260ba"></a>
+
 > Reaction=Adversarial, or command-based
+
+<a id="atom-technical-atom-78cc9c4aef52c133"></a>
 
 > Attack Points=Claws:13 (6)
 
+<a id="atom-technical-atom-dede56a191a5676b"></a>
+
 > Strike Points=12
+
+<a id="atom-technical-atom-b7f49ade4f72c97b"></a>
 
 > Evasion Points=12 (5) Defense Points=9
 
+<a id="atom-technical-atom-14e6c29aeef5117f"></a>
+
 > Life Points/Resistance=20/14 (7)
+
+<a id="atom-technical-atom-d8a0f6b2d87924b6"></a>
 
 > Mental Points/Resistance=18/14 (7)
 
+<a id="atom-technical-atom-d9b7a147916a7401"></a>
+
 > Special Abilities=Shapeshift
+
+<a id="atom-technical-atom-d3395571fc15a878"></a>
 
 > Habitat=Underground labyrinths, secluded ruins
 
+<a id="atom-technical-atom-b30bc4aa51fcafd5"></a>
+
 > Languages=Low ancient, languages of the person it shapeshifts into
+
+<a id="atom-technical-atom-e695367bceb3ce9c"></a>
 
 > Perception=Five senses (Darkvision)
 
-### Technical frame 9: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
+### Technical frame 4: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09349))_
 
@@ -321,9 +249,11 @@ What [[sword-world-rpg-complete-edition]] covers about underworld creature:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09348))_
 
+<a id="atom-technical-atom-3fe51d33d801d10d"></a>
+
 > If it spends one minute to observe them, it can imitate their tone of speech and gestures exactly.
 
-### Technical frame 10: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
+### Technical frame 5: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09349))_
 
@@ -331,23 +261,39 @@ What [[sword-world-rpg-complete-edition]] covers about underworld creature:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09351, source-range-0b9dec90-09352, source-range-0b9dec90-09353, source-range-0b9dec90-09354, source-range-0b9dec90-09355, source-range-0b9dec90-09356, source-range-0b9dec90-09358, source-range-0b9dec90-09359))_
 
+<a id="atom-technical-atom-1d049a9de2af2c28"></a>
+
 > Monster Level=6 Rarity=13 Agility=10 Movement Speed=12/20 (air) Number=One
+
+<a id="atom-technical-atom-0fb3b9a97a5fb21b"></a>
 
 > Frequency=Very rare Intellect=Human Reaction=Adversarial, or command-based Attack Points=Fangs: 13 (6)/Claws: 14 (7) Strike Points=17+Poison/16
 
+<a id="atom-technical-atom-3be158c2b3491cec"></a>
+
 > Evasion Points=12 (5) Defense Points=10 Life Points/Resistance=30/17 (10)
+
+<a id="atom-technical-atom-3f449cf82727231e"></a>
 
 > Mental Points/Resistance=20/15 (8)
 
+<a id="atom-technical-atom-58c3291282b184e2"></a>
+
 > Special Abilities=3rd level dark magic (magic
+
+<a id="atom-technical-atom-86b09f8284975276"></a>
 
 > intensity/magic power=12/5)
 
+<a id="atom-technical-atom-28fe4044d5ec1512"></a>
+
 > Languages=Low ancient
+
+<a id="atom-technical-atom-5464cf849243ec6e"></a>
 
 > Perception=Five senses (Darkvision)
 
-### Technical frame 11: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
+### Technical frame 6: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09360))_
 
@@ -355,35 +301,63 @@ What [[sword-world-rpg-complete-edition]] covers about underworld creature:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09363, source-range-0b9dec90-09364, source-range-0b9dec90-09365, source-range-0b9dec90-09366, source-range-0b9dec90-09367, source-range-0b9dec90-09368, source-range-0b9dec90-09369, source-range-0b9dec90-09370, source-range-0b9dec90-09371, source-range-0b9dec90-09372, source-range-0b9dec90-09373, source-range-0b9dec90-09374, source-range-0b9dec90-09375, source-range-0b9dec90-09376))_
 
+<a id="atom-technical-atom-fde2cab1dc3722b7"></a>
+
 > Monster Level=7
+
+<a id="atom-technical-atom-beca42a9c739edcc"></a>
 
 > Rarity=15
 
+<a id="atom-technical-atom-a1e80476e769da56"></a>
+
 > Agility=14 Movement Speed=15/20 (air)
+
+<a id="atom-technical-atom-13ff2b8c7e3f346e"></a>
 
 > Number=One Frequency=Very rare
 
+<a id="atom-technical-atom-1dfb8787fc11471f"></a>
+
 > Intellect=High
+
+<a id="atom-technical-atom-45a9654c4573879f"></a>
 
 > Reaction=Adversarial, or command-based Attack Points=Needle x 2: 14 (7)
 
+<a id="atom-technical-atom-bc24c1765b7c3e99"></a>
+
 > Strike Points=16x2
+
+<a id="atom-technical-atom-58796aa00b25d664"></a>
 
 > Evasion Points=14 (7) Defense Points=9
 
+<a id="atom-technical-atom-f6f2bedd7df70c84"></a>
+
 > Life Points/Resistance=20/16 (9)
+
+<a id="atom-technical-atom-00c80a535bac5177"></a>
 
 > Mental Points/Resistance=25/17 (10)
 
+<a id="atom-technical-atom-dbc75566eb084177"></a>
+
 > Special Abilities=Illusion (Resist target score=17, mental damage=strike power 10, bonus damage 7)
+
+<a id="atom-technical-atom-9a3f83f825c01ea7"></a>
 
 > Habitat=Underground labyrinths, secluded ruins
 
+<a id="atom-technical-atom-de2d8f98aff9f426"></a>
+
 > Languages=Low ancient
+
+<a id="atom-technical-atom-c5213c082b38f852"></a>
 
 > Perception=Five senses (Darkvision)
 
-### Technical frame 12: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
+### Technical frame 7: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09379))_
 
@@ -391,9 +365,11 @@ What [[sword-world-rpg-complete-edition]] covers about underworld creature:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09378))_
 
+<a id="atom-technical-atom-f13f1e374cfa4b53"></a>
+
 > When a maligdorai uses this illusion ability, those being targeted must make a mental power resistance roll against target score 17 at the beginning of the round.
 
-### Technical frame 13: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
+### Technical frame 8: 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09380))_
 
@@ -401,43 +377,11 @@ What [[sword-world-rpg-complete-edition]] covers about underworld creature:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09381))_
 
+<a id="atom-technical-atom-9c552038ccddeb52"></a>
+
 > Conversely, while the maligdorai is performing an illusion, the target must make a resistance roll against the illusion each round.
 
-### Technical frame 14: 13.2.11 Daemons/Underworld Creatures / [ Greater Daemons ] Doppelganger
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09383, source-range-0b9dec90-09384, source-range-0b9dec90-09385, source-range-0b9dec90-09386, source-range-0b9dec90-09387, source-range-0b9dec90-09388, source-range-0b9dec90-09389, source-range-0b9dec90-09390, source-range-0b9dec90-09391, source-range-0b9dec90-09392, source-range-0b9dec90-09393, source-range-0b9dec90-09394, source-range-0b9dec90-09396, source-range-0b9dec90-09398, source-range-0b9dec90-09399))_
-
-> Monster Level=10
-
-> Rarity=16
-
-> Agility=14
-
-> Number=One Movement Speed=18
-
-> Frequency=Very rare
-
-> Intellect=High Reaction=Adversarial
-
-> Attack Points=Claws: 18 (11)
-
-> Strike Points=20
-
-> Evasion Points=16 (9) Defense Points=14
-
-> Life Points/Resistance=34/21 (14)
-
-> Mental Points/Resistance=28/20 (13)
-
-> Special Abilities=7th level ancient (magic intensity/magic power=16/9)
-
-> Habitat=Underground labyrinths, secluded
-
-> Languages=Low ancient, languages of the person it shapeshifts into
-
-> Perception=Five senses (Darkvision)
-
-### Technical frame 15: 13.2.11 Daemons/Underworld Creatures / [ Greater Daemons ] Doppelganger
+### Technical frame 9: 13.2.11 Daemons/Underworld Creatures / [ Greater Daemons ] Doppelganger
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09401))_
 
@@ -445,15 +389,19 @@ What [[sword-world-rpg-complete-edition]] covers about underworld creature:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09400))_
 
+<a id="atom-technical-atom-03d7fbbff1345def"></a>
+
 > If they observe them for one minute, they can imitate their tone of speech and gestures exactly.
 
-### Technical frame 16: 13.2.11 Daemons/Underworld Creatures / [ Greater Daemons ] Doppelganger
+### Technical frame 10: 13.2.11 Daemons/Underworld Creatures / [ Greater Daemons ] Doppelganger
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09402))_
 
 > If combat occurs without them shapeshifting, a doppelganger will fight primarily using ancient magic.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09401))_
+
+<a id="atom-technical-atom-25d475c845879ed2"></a>
 
 > A doppelganger who has copied the abilities and memories of an opponent can use all of their abilities.
 

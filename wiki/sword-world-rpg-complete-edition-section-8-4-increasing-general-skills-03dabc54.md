@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-8-4-increasing-general-skills-03dabc54
 page_kind: source
 page_family: section-reference
-summary: 8.4 Increasing General Skills: 19 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 8.4 Increasing General Skills: 19 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-8-4-increasing-general-skills-03dabc54@194ec98bff30e13692d149e4bf5f129d
+projection_coverage: section-sword-world-rpg-complete-edition-section-8-4-increasing-general-skills-03dabc54@60d0a099a377099dc0e3450dfdba8518
 ---
 
 # 8.4 Increasing General Skills
@@ -27,35 +27,3 @@ From [[sword-world-rpg-complete-edition]].
 - It's only acceptable to increase the level of a general skill if you've used that specific general skill for a long period of time. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05526))_
 - So the game master then decides to give the character 2 levels in the bartender skill. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05527))_
 - Doing something casually in your free time would probably only let you get to 3rd level. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05529))_
-
-## Technical atoms
-
-### Technical frame 1: 8.4 Increasing General Skills
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05529))_
-
-> 5th level signifies being sufficient at a general skill, so consider reaching levels beyond that to take a large amount of effort. Doing something casually in your free time would probably only let you get to 3rd level.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05528))_
-
-> If a character is suitable for this type of job, you can give them 3 levels, and if a character is unsuitable, you can give them only 1 level.
-
-### Technical frame 2: 8.4 Increasing General Skills
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05530))_
-
-> Though they may be general skills, you won't find many humans, etc. who reach 10th level.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05531))_
-
-> [Figure] (p.132)
-
-### Technical frame 3: 8.4 Increasing General Skills
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05530))_
-
-> Though they may be general skills, you won't find many humans, etc. who reach 10th level.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05533))_
-
-> [Figure] (p.133)

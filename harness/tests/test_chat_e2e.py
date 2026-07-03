@@ -94,7 +94,13 @@ class TestChatWorkflow:
     def test_read_only_by_construction(self, store: WikiStore) -> None:
         workflow = build_chat_workflow(store)
         assert "write_page" not in workflow.tools
-        assert set(workflow.tools) == {"search_wiki", "read_index", "read_page", "respond"}
+        assert set(workflow.tools) == {
+            "inspect_page",
+            "read_index",
+            "read_page",
+            "respond",
+            "search_wiki",
+        }
 
     def test_no_required_steps_grounding_is_provisioned(self, store: WikiStore) -> None:
         # The respond tool performs the evidence gate, so StepEnforcer still

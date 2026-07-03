@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-5-monster-level-and-adventurer-level-51176d89
 page_kind: source
 page_family: section-reference
-summary: 13.5 Monster Level and Adventurer Level: 20 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.5 Monster Level and Adventurer Level: 20 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-5-monster-level-and-adventurer-level-51176d89@3d22ada7360e8ae27512a0d6448ba642
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-5-monster-level-and-adventurer-level-51176d89@e571f55d73bba5641e9c6641886cb46f
 ---
 
 # 13.5 Monster Level and Adventurer Level
@@ -24,31 +24,3 @@ From [[sword-world-rpg-complete-edition]].
 - party. In particular, monsters that use magic are, without exception, more formidable enemies than their level suggests. Please consider this only as a guideline. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09804))_
 - The monster level of a monster can also be used as a scale to express the size of an event ( Table 13-3: Monster Level/Event Scale Comparisons ). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09806))_
 - In the case of NPCs as enemies, consider them to be two levels greater. A 3rd level dark priest is a level that would be too spicy for a novice adventurer . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09807))_
-
-## Technical atoms
-
-### Technical frame 1: 13.5 Monster Level and Adventurer Level
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09730))_
-
-> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the Note: A dark elf can add +4 to mental power resistance due to the blessings of the dark gods. A noble lizardman's entire body is covered in scales which adds +5 to defense power.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09731, source-range-0b9dec90-09732, source-range-0b9dec90-09734, source-range-0b9dec90-09736, source-range-0b9dec90-09738, source-range-0b9dec90-09740, source-range-0b9dec90-09742, source-range-0b9dec90-09744, source-range-0b9dec90-09746))_
-
-> Table 13-3: Monster Level/Event Scale Comparisons
-
-> Level 1-2
-
-> Level 2-4
-
-> Level 5-6
-
-> Level 7-8
-
-> Level 9-10
-
-> Level 11-13
-
-> Level 14-15
-
-> Table 13-2: Determining Monster Sub-Ability Scores

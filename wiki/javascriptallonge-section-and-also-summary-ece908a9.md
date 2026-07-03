@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-summary-ece908a9
 page_kind: source
-summary: And also: / Summary: 16 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: And also: / Summary: 16 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-summary-ece908a9@553e9e201856867735f594ae360eb0d3
+projection_coverage: section-javascriptallonge-section-and-also-summary-ece908a9@640ab9a084f466a4a5a8dede4c98dd85
 ---
 
 # And also: / Summary
@@ -16,14 +17,19 @@ From [[javascriptallonge]].
 
 ## Related pages
 
+### Source structure
+
 - [[javascriptallonge-section-and-also-3f50274e]] - broader source section: And also:
 - [[javascriptallonge-section-and-also-summary-functions-a3702d43]] - narrower source section: And also: / Summary / Functions
-- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-summary-7f12d5ad]] - same source heading: another source section with the same heading, Picking the Bean: Choice and Truthiness / summary
-- [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-summary-652fb6eb]] - same source heading: another source section with the same heading, Composing and Decomposing Data / Self-Similarity / summary
+
+### Other
+
 - [[javascriptallonge-section-composing-and-decomposing-data-garbage-garbage-everywhere-summary-71292497]] - same source heading: another source section with the same heading, Composing and Decomposing Data / Garbage, Garbage Everywhere / summary
+- [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-summary-652fb6eb]] - same source heading: another source section with the same heading, Composing and Decomposing Data / Self-Similarity / summary
 - [[javascriptallonge-section-like-this-summary-bc99b304]] - same source heading: another source section with the same heading, Like this: / summary
-- [[javascriptallonge-section-we-ll-keep-it-simple-summary-21c844cb]] - same source heading: another source section with the same heading, We'll keep it simple: / Summary
+- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-summary-7f12d5ad]] - same source heading: another source section with the same heading, Picking the Bean: Choice and Truthiness / summary
 - [[javascriptallonge-section-we-get-summary-db42c4cd]] - same source heading: another source section with the same heading, We get: / summary
+- [[javascriptallonge-section-we-ll-keep-it-simple-summary-21c844cb]] - same source heading: another source section with the same heading, We'll keep it simple: / Summary
 
 ## Statements by subsection
 
@@ -44,11 +50,3 @@ From [[javascriptallonge]].
 - - JavaScript uses const to bind values to names within block scope. _(javascriptallonge.pdf (source-range-7239e085-00646))_
 - - JavaScript uses function declarations to bind functions to names within function scope. _(javascriptallonge.pdf (source-range-7239e085-00647))_
 - - Blocks also create scopes if const statements are within them. _(javascriptallonge.pdf (source-range-7239e085-00649))_
-
-## Technical atoms
-
-### Technical frame 1: And also: / Summary
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00635))_
-
-> [Figure] (p.78)

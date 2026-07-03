@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑩ Climb [Agility] ] (Equipment restriction): 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-climb-agility-equipment-restriction-841490e2@5a5d50c187b345673e45b74f7c920a36
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-climb-agility-equipment-restriction-841490e2@62276c3fc812dd198a5c05eb6ae27dc6
 ---
 
 # Chapter 6: / 6.1 Precautions When Using Skills / [ ⑩ Climb [Agility] ] (Equipment restriction)
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-82cdd945]] - broader source section: Chapter 6: / 6.1 Precautions When Using Skills
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-climb-agility-equipment-restriction-06765066]] - same source heading: another source section with the same heading, Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ⑥ Climb [Agility] ] (Equipment restriction)
 
 ## Statements

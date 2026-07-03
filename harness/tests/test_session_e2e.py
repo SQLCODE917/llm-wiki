@@ -66,7 +66,8 @@ class TestIngest:
 
         assert result.output.startswith("Claim-ledger ingest of raw/moon.md")
         body = store.read_page("moon")
-        assert "giant impact" in body
+        assert "page_family: source-manifest" in body
+        assert "## Page Families" in body
         assert "projection_coverage:" in body
         assert "- [[moon]] — Claim-ledger projection" in store.read_index()
         log = paths.log_path.read_text(encoding="utf-8")

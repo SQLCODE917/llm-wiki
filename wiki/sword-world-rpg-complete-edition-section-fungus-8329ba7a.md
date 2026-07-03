@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-fungus-8329ba7a
 page_kind: source
 page_family: section-reference
-summary: [ Fungus ]: 16 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Fungus ]: 16 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fungus-8329ba7a@b5acad163346f01309a05b3ab0f2e98c
+projection_coverage: section-sword-world-rpg-complete-edition-section-fungus-8329ba7a@da87cdfa0d96e8ad9c04314c56e630bd
 ---
 
 # [ Fungus ]
@@ -28,30 +28,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: [ Fungus ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08548))_
-
-> A fungus is a mass of mushrooms shaped like a human, or rather, a human whose entire body is covered in mushrooms. They quietly lurk in forests, etc. killing animals and humans that pass by, and absorbing nutrients from the corpses. They cannot survive for long in dry or sunny areas.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08547))_
-
-> Perception=Pseudo
-
-### Technical frame 2: [ Fungus ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08550))_
-
-> If one week elapses without treatment, the character will turn into a fungus. Those who have completely become a fungus cannot be cured with the holy magic Cure Poison nor the spirit magic Restore Health . They can only be restored to their original state by using the holy magic Refresh .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08549))_
-
-> After combat, they must make a life force resistance roll against target score 16, and those who fail will then have mushrooms growing all over their bodies after 24 hours.
-
-### Technical frame 3: [ Fungus ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08550))_
 
 > If one week elapses without treatment, the character will turn into a fungus. Those who have completely become a fungus cannot be cured with the holy magic Cure Poison nor the spirit magic Restore Health . They can only be restored to their original state by using the holy magic Refresh .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08551))_
+
+<a id="atom-technical-atom-de2afe7c61d76219"></a>
 
 > [Figure] (p.214)

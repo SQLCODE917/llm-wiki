@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 1.2 Races: 39 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-2-races-56190ca1@ec9687a9714a50034c63ef5ecf969fa2
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-2-races-56190ca1@cfb589e8b178779995dcf44f101e8e91
 ---
 
 # 1.2 Races
@@ -17,9 +17,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-1-2-races-grassrunner-1b7187c6]] - narrower source section: 1.2 Races / 【 Grassrunner 】
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-1-2-races-elf-d52481b7]] - narrower source section: 1.2 Races / 【 Elf 】
+- [[sword-world-rpg-complete-edition-section-1-2-races-grassrunner-1b7187c6]] - narrower source section: 1.2 Races / 【 Grassrunner 】
 - [[sword-world-rpg-complete-edition-section-1-2-races-half-elf-8416755e]] - narrower source section: 1.2 Races / 【 Half-Elf 】
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-race-93a32d35]] - same source heading: another source section with the same heading, 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ② Race ]
 
 ## Statements by subsection
@@ -58,20 +63,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical atom 1
 
+<a id="atom-technical-atom-52ab9b884be6ed5d"></a>
+
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00211))_
+
+```text
+Races
+2. Among the craftsman general skill, has  any  one  of  the  following  at  level  5: carpentry, smithing, woodworking, stonemasonry, gem crafting (details are explained under 7.3: Craftsman Skill, see p. 126).
+3. Unable  to  learn  ancient  magic  or spirit magic.
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
 
 | entry | content |
 | --- | --- |
 | 2 | Among the craftsman general skill, has any one of the following at level 5: carpentry, smithing, woodworking, stonemasonry, gem crafting (details are explained under 7.3: Craftsman Skill, see p. 126). |
 | 3 | Unable to learn ancient magic or spirit magic. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Races
-2. Among the craftsman general skill, has  any  one  of  the  following  at  level  5: carpentry, smithing, woodworking, stonemasonry, gem crafting (details are explained under 7.3: Craftsman Skill, see p. 126).
-3. Unable  to  learn  ancient  magic  or spirit magic.
-```
 
 </details>

@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-we-ll-keep-it-simple-interactive-generators-representing-naughts-and-crosses-as-a-stateless-func-df9810de
 page_kind: source
-summary: We'll keep it simple: / Interactive Generators / representing naughts and crosses as a stateless function: 4 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: We'll keep it simple: / Interactive Generators / representing naughts and crosses as a stateless function: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-we-ll-keep-it-simple-interactive-generators-representing-naughts-and-crosses-as-a-stateless-func-df9810de@078630f5be052a786ee93e96c51d4b2a
+projection_coverage: section-javascriptallonge-section-we-ll-keep-it-simple-interactive-generators-representing-naughts-and-crosses-as-a-stateless-func-df9810de@8678cc7a79f4f07ac3cf2859120f38f5
 ---
 
 # We'll keep it simple: / Interactive Generators / representing naughts and crosses as a stateless function
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-we-ll-keep-it-simple-inte
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-we-ll-keep-it-simple-interactive-generators-1f19e24c]] - broader source section: We'll keep it simple: / Interactive Generators
 
@@ -32,24 +35,6 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01896))_
 
-> [Figure] (p.275)
-
-### Technical frame 2: We'll keep it simple: / Interactive Generators / representing naughts and crosses as a stateless function
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01895))_
-
-> We could plays naughts and crosses as a stateless function. We encode each position of the board in some fashion, and then we build a dictionary from positions to moves. For example, the entry for:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01898))_
+<a id="atom-technical-atom-cb10e6f0eeb92ddf"></a>
 
 > [Figure] (p.275)
-
-### Technical frame 3: We'll keep it simple: / Interactive Generators / representing naughts and crosses as a stateless function
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01895))_
-
-> We could plays naughts and crosses as a stateless function. We encode each position of the board in some fashion, and then we build a dictionary from positions to moves. For example, the entry for:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01900))_
-
-> [Figure] (p.276)

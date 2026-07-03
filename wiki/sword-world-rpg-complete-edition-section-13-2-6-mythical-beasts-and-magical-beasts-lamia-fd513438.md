@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-lamia-fd513438
 page_kind: source
 page_family: section-reference
-summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Lamia ]: 16 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Lamia ]: 16 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-lamia-fd513438@4c0cd62de76a6ccc8cc037fda274356d
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-lamia-fd513438@dcdcb8a33f4055bbdd6f4705ea23bac1
 ---
 
 # 13.2.6 Mythical Beasts and Magical Beasts / [ Lamia ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-myt
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] - broader source section: 13.2.6 Mythical Beasts and Magical Beasts
 
@@ -33,20 +35,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 13.2.6 Mythical Beasts and Magical Beasts / [ Lamia ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07539))_
-
-> A lamia is a large snake with the upper body of a beautiful woman and a rainbow-colored lower body, 7 to 8 meters long. Although she is well versed in ancient magic, she doesn't really like to use spells that attack her enemies directly, mainly using illusions and transformations to bewitch them.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07538))_
-
-> Perception=Five senses
-
-### Technical frame 2: 13.2.6 Mythical Beasts and Magical Beasts / [ Lamia ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07541))_
 
 > Lamia are not necessarily wicked, and some of them seem to be kindhearted. Since they cannot survive without depending on humans, they usually live quietly in villages and towns, and you're unlikely to encounter them outdoors or in labyrinths.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07540))_
+
+<a id="atom-technical-atom-5f568ba634aa3974"></a>
 
 > Whenever they suck blood, they must return to their original form.

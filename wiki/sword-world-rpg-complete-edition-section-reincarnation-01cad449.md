@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-reincarnation-01cad449
 page_kind: source
 page_family: section-reference
-summary: [ Reincarnation: 18 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Reincarnation: 18 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-reincarnation-01cad449@8018c631016cf8bbeabf0e74e4e15b46
+projection_coverage: section-sword-world-rpg-complete-edition-section-reincarnation-01cad449@158ac3a3a107e4abb924518162a87289
 ---
 
 # [ Reincarnation
@@ -31,30 +31,8 @@ From [[sword-world-rpg-complete-edition]].
 
 > This spell is cast immediately after an individual's death. The soul of the target of this spell will be reborn as a baby in another location within one week. Reborn babies have their ability scores preserved (they have the same ability scores after becoming adults). As the baby grows up, at a certain moment it'll remember its former personality. At that stage they will be able to use all their previous memories and skills. When they remember their previous personality depends on the final score
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04632, source-range-0b9dec90-04633, source-range-0b9dec90-04634, source-range-0b9dec90-04635, source-range-0b9dec90-04636, source-range-0b9dec90-04637, source-range-0b9dec90-04638, source-range-0b9dec90-04639))_
-
-> Base Mental Power Cost=50
-
-> Distance=Touch
-
-> Area=One
-
-> Duration=Until reincarnated
-
-> Effect=Reincarnate a soul into a new body
-
-> Type=Ritual
-
-> Expansion=Final score
-
-> Resist=None
-
-### Technical frame 2: [ Reincarnation
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04640))_
-
-> This spell is cast immediately after an individual's death. The soul of the target of this spell will be reborn as a baby in another location within one week. Reborn babies have their ability scores preserved (they have the same ability scores after becoming adults). As the baby grows up, at a certain moment it'll remember its former personality. At that stage they will be able to use all their previous memories and skills. When they remember their previous personality depends on the final score
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04641))_
+
+<a id="atom-technical-atom-18ff2bc08595dff4"></a>
 
 > Even before a person regains their personality, if someone who knew them well before reincarnation can identify their body after reincarnation, they can try to restore the person's old memories.

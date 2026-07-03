@@ -1,19 +1,33 @@
 ---
 page_id: javascriptallonge-object
 page_kind: concept
-summary: Object: 17 statement(s) and 25 atom(s) from raw/javascriptallonge.pdf.
+page_family: broad-topic
+summary: Object: 16 statement(s) and 25 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-object@3ce32eefb1ca4bd7166d5f8710ac7dd0
+projection_coverage: topic-javascriptallonge-object@ec088e04dbe905bbae282e717dcc500c
 ---
 
 # Object
 
 What [[javascriptallonge]] covers about object:
 
-## Statements
+
+## Related pages
+
+### Shared technical atoms
+
+- [[javascriptallonge-iterator]] - shared statements and technical atoms: Iterator shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object w ... [truncated]; Iterator shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (5 shared statement(s), 6 shared atom(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Iteration for functions and objects has been around for many, many decades. For simple linear collections like arrays, linked lists, stacks, and queues, functional i ... [truncated]; Function shares technical record from Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators: const Stack1 = () => ({ array:[], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array[ ... [truncated] (2 shared statement(s), 7 shared atom(s))
+- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from Composing and Decomposing Data / Plain Old JavaScript Objects: In JavaScript, an object is a map from string keys to values.; Javascript shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / literal object syntax: { year: 2012, month: 6, day: 14 } (2 shared statement(s), 6 shared atom(s))
+- [[javascriptallonge-symbol]] - shared statements and technical atoms: Symbol shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Symbol shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared statement(s), 5 shared atom(s))
+- [[javascriptallonge-method]] - shared statements and technical atoms: Method shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Method shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-instead]] - shared statements and technical atoms: Instead shares source evidence from We'll keep it simple: / Summary: A generator is a function that is defined with function * and uses yield (or yield * ) to generate values. Using a generator instead of writing an iterator object th ... [truncated]; Instead shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } }. We can then perform th ... [truncated] (1 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-value]] - shared technical atoms: Value shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / literal object syntax: { year: 2012, month: 6, day: 14 } (4 shared atom(s))
+- [[javascriptallonge-expression]] - shared statements and technical atoms: Expression shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Expression shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / literal object syntax: const SecretDecoderRing = { encode (plaintext) { return plaintext .split('') .map( char => char.charCodeAt() ) .map( code => code + 1 ) .map( code => String.fromChar ... [truncated] (1 shared statement(s), 3 shared atom(s))
+## Statements by source section
 
 ### Composing and Decomposing Data / Plain Old JavaScript Objects
 
@@ -61,8 +75,6 @@ What [[javascriptallonge]] covers about object:
 
 ### We'll keep it simple: / Lazy and Eager Collections
 
-- in the older style of object-oriented programming, we built 'fat' objects. Each collection knew how to map itself ( .map ), how to fold itself ( .reduce ), how to filter itself ( .filter ) and how to find one element within itself ( .find ). If we wanted to flatten collections to arrays, we wrote a .toArray method for each type of collection. _(javascriptallonge.pdf (source-range-7239e085-01764))_
-
 - This 'fat object' style springs from a misunderstanding: When we say a collection should know how to perform a map over itself, we don't need for the collection to handle every single detail. That would be like saying that when we ask a bank teller for some cash, they personally print every bank note. _(javascriptallonge.pdf (source-range-7239e085-01767))_
 
 ### We'll keep it simple: / Lazy and Eager Collections / implementing methods with iteration
@@ -84,6 +96,8 @@ What [[javascriptallonge]] covers about object:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01074))_
 
+<a id="atom-technical-atom-e11086561fe47bd6"></a>
+
 ```
 { year: 2012, month: 6, day: 14 }
 ```
@@ -95,6 +109,8 @@ What [[javascriptallonge]] covers about object:
 > Values contained within an object work just like values contained within an array, we access them by reference to the original:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01076))_
+
+<a id="atom-technical-atom-62711a4904a25492"></a>
 
 ```
 { year: 2012, month: 6, day: 14 } === { year: 2012, month: 6, day: 14 }
@@ -111,6 +127,8 @@ Objects use [] to access the values by name, using a string:
 > Names needn't be alphanumeric strings. For anything else, enclose the label in quotes:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01078))_
+
+<a id="atom-technical-atom-c5b0e41f7a0c2c27"></a>
 
 ```
 const unique = () => [],
@@ -129,6 +147,8 @@ o['a'] === x && o['b'] === y && o['c'] === z
 > It is very common to associate named function expressions with keys in objects, and there is a 'compact method syntax' for binding named function expressions to keywords:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01092))_
+
+<a id="atom-technical-atom-0957bb8ccf7dbe58"></a>
 
 ```
 const SecretDecoderRing = {
@@ -158,6 +178,8 @@ return cyphertext
 > Terrible grammar and capitalization, but let's move on. It is very common to write things like title: title when destructuring objects. When the label is a valid variable name, it's often the most obvious variable name as well. So JavaScript supports a further syntactic optimization:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01096))_
+
+<a id="atom-technical-atom-e83b3741e99adebe"></a>
 
 ```
 const user = {
@@ -192,6 +214,8 @@ title
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01101))_
 
+<a id="atom-technical-atom-f52ea4d07eb5b43e"></a>
+
 ```
 const description = ({name: { first }, occupation: { title } }) =>
 `${first} is a ${title}`;
@@ -209,6 +233,8 @@ const abbrev = ({name: { first, last }, occupation: { title } }) => {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01102))_
 
+<a id="atom-technical-atom-74bb588b6178e93c"></a>
+
 ```
 const abbrev = ({name: { first, last }, occupation: { title } }) =>
 return { first, last, title};
@@ -225,6 +251,8 @@ abbrev(user)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01107))_
 
+<a id="atom-technical-atom-062563c07b0a708d"></a>
+
 ```
 In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first:
 2, rest: { first: 3, rest: EMPTY } } }.
@@ -238,6 +266,8 @@ We can then perform the equivalent of [first, ...rest] with direct property acce
 > What about mapping? Well, let's start with the simplest possible thing, making a copy of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn't fast is naïvely copying a list:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01108))_
+
+<a id="atom-technical-atom-ec445a36f29378b5"></a>
 
 ```
 const EMPTY = {};
@@ -266,6 +296,8 @@ length(OneTwoThree)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01122))_
 
+<a id="atom-technical-atom-a96fb43e925c4354"></a>
+
 ```
 const oneTwoThree = [1, 2, 3];
 oneTwoThree[0] = 'one';
@@ -280,6 +312,8 @@ oneTwoThree
 > Wehave established that JavaScript's semantics allow for two different bindings to refer to the same value. For example:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01126))_
+
+<a id="atom-technical-atom-0d82f5135a3b317b"></a>
 
 ```
 const name = {firstName: 'Leonard', lastName: 'Braithwaite'};
@@ -299,6 +333,8 @@ middleName: 'Austin' }
 > We could save a step and write collectionSum , a function that folds over any object, provided that the object implements an .iterator method:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01533))_
+
+<a id="atom-technical-atom-0494f9669763f688"></a>
 
 ```
 const Stack1 = () =>
@@ -348,6 +384,8 @@ stack.push("you!")
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01534))_
 
+<a id="atom-technical-atom-977c2f6172e80243"></a>
+
 ```
 const iter = stack.iterator();
 iter().value
@@ -363,6 +401,8 @@ iter().value
 > If we write a program with the presumption that 'everything is an object,' we can write maps, folds, and filters that work on objects. We just ask the object for an iterator, and work on the iterator. Our functions don't need to know anything about how an object implements iteration, and we get the benefit of lazily traversing our objects.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01542))_
+
+<a id="atom-technical-atom-bc96f54b184676fd"></a>
 
 ```
 const collectionSum = (collection) => {
@@ -385,6 +425,8 @@ collectionSum(stack)
 > The for...of loop works directly with any object that is iterable , meaning it works with any object that has a Symbol.iterator method that returns an object iterator. Here's another linked list, this one is iterable:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01560))_
+
+<a id="atom-technical-atom-47f6d9ee5b266831"></a>
 
 ```
 const Stack3 = () =>
@@ -433,6 +475,8 @@ const stack = Stack3();
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01561))_
 
+<a id="atom-technical-atom-1433f8f324b5f87c"></a>
+
 ```
 stack.push(2000);
 stack.push(10);
@@ -469,6 +513,8 @@ iterableSum(stack)
 > As we can see, we can use for...of with linked lists just as easily as with stacks. And there's one more thing: You recall that the spread operator ( ... ) can spread the elements of an array in an array literal or as parameters in a function invocation.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01563))_
+
+<a id="atom-technical-atom-8e85f2ecd1e2c116"></a>
 
 ```
 const EMPTY = {
@@ -515,6 +561,8 @@ iterableSum(someSquares)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01627))_
 
+<a id="atom-technical-atom-c448193e912cee6f"></a>
+
 > Iterators have to arrange its own state such that when you call them, they compute and return the next item.
 
 ### Technical frame 19: We'll keep it simple: / generators and iterables
@@ -525,6 +573,8 @@ iterableSum(someSquares)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01709))_
 
+<a id="atom-technical-atom-f851858a3f0a60d5"></a>
+
 > If we call our generator function more than once, we get new iterators.
 
 ### Technical frame 20: We'll keep it simple: / generators and iterables
@@ -534,6 +584,8 @@ iterableSum(someSquares)
 > This object declares a [Symbol.iterator] function that makes it iterable. Because it's declared *[Symbol.iterator] , it's a generator instead of an iterator.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01713))_
+
+<a id="atom-technical-atom-08b3d4cd0486cddf"></a>
 
 ```
 const ThreeNumbers = {
@@ -552,6 +604,8 @@ yield 3
 > To use LazyCollection , we mix it into an any iterable object. For simplicity, we'll show how to mix it into Numbers and Pair . But it can also be mixed into prototypes (a/k/a 'classes'), traits, or other OO constructs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01777))_
+
+<a id="atom-technical-atom-f8b7820b12c59402"></a>
 
 ```
 const Numbers = Object.assign({
@@ -575,6 +629,8 @@ isEmpty: () => true
 > To use LazyCollection , we mix it into an any iterable object. For simplicity, we'll show how to mix it into Numbers and Pair . But it can also be mixed into prototypes (a/k/a 'classes'), traits, or other OO constructs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01778))_
+
+<a id="atom-technical-atom-d0d3cda77a4b76f7"></a>
 
 ```
 };
@@ -621,6 +677,8 @@ push: function (value) {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01779))_
 
+<a id="atom-technical-atom-692b026c4c1cf015"></a>
+
 ```
 return this.array[this.index += 1] = value;
 },
@@ -663,29 +721,7 @@ return stack;
 
 ### Technical atom 24
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00091))_
-
-| entry | content |
-| --- | --- |
-| 5 | http://www.fogus.me Like JavaScript itself, this book gives you a gentle start before showing you its full depth, and like a Cafe Allongé, it's over too soon. Enjoy! -Matthew Knox, mattknox.com 6 |
-| 6 | http://mattknox.com |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-matthew knox
-A different kind of language requires a different kind of book.
-JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor strictly dynamic, and it supports procedural, object-oriented (in several flavors!), and functional programming. Many books try to hide most of those capabilities away, giving you recipes for writing JavaScript in a way that approximates class-centric programming in other languages. Not JavaScript Allongé. It starts with the fundamentals of values, functions, and objects, and then guides you through JavaScript from the inside with exploratory bits of code that illustrate scoping, combinators, context, state, prototypes, and constructors.
-5 http://www.fogus.me
-Like JavaScript itself, this book gives you a gentle start before showing you its full depth, and like a Cafe Allongé, it's over too soon. Enjoy!
--Matthew Knox, mattknox.com 6
-6 http://mattknox.com
-```
-
-</details>
-
-### Technical atom 25
+<a id="atom-technical-atom-40032b1d8caeb152"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00612))_
 
@@ -693,58 +729,21 @@ Like JavaScript itself, this book gives you a gentle start before showing you it
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00613))_
 
+```text
+42 You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times.
+43 We'll look at arrays and plain old javascript objects in depth later.
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 42 | You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times. |
 | 43 | We'll look at arrays and plain old javascript objects in depth later. |
 
-<details>
-<summary>Raw table text</summary>
-
-```
-42 You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times.
-43 We'll look at arrays and plain old javascript objects in depth later.
-```
-
 </details>
 
-
-## Related pages
-
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Iteration for functions and objects has been around for many, many decades. For simple linear collections like arrays, linked lists, stacks, and queues, functional i ... [truncated]; Function shares technical record from Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators: const Stack1 = () => ({ array:[], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array[ ... [truncated] (3 shared statement(s), 8 shared atom(s))
-- [[javascriptallonge-iterator]] - shared statements and technical atoms: Iterator shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object w ... [truncated]; Iterator shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (5 shared statement(s), 6 shared atom(s))
-- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from Composing and Decomposing Data / Plain Old JavaScript Objects: In JavaScript, an object is a map from string keys to values.; Javascript shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / literal object syntax: { year: 2012, month: 6, day: 14 } (2 shared statement(s), 6 shared atom(s))
-- [[javascriptallonge-symbol]] - shared statements and technical atoms: Symbol shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Symbol shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared statement(s), 5 shared atom(s))
-- [[javascriptallonge-method]] - shared statements and technical atoms: Method shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Method shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-instead]] - shared statements and technical atoms: Instead shares source evidence from We'll keep it simple: / Summary: A generator is a function that is defined with function * and uses yield (or yield * ) to generate values. Using a generator instead of writing an iterator object th ... [truncated]; Instead shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } }. We can then perform th ... [truncated] (1 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-expression]] - shared statements and technical atoms: Expression shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Expression shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / literal object syntax: const SecretDecoderRing = { encode (plaintext) { return plaintext .split('') .map( char => char.charCodeAt() ) .map( code => code + 1 ) .map( code => String.fromChar ... [truncated] (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-functional-iterator]] - shared statements and technical atoms: Functional Iterators shares source evidence from Like this: / Generating Iterables: Let's consider how they work. Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly unt ... [truncated]; Functional Iterators shares technical record from Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators: const Stack1 = () => ({ array:[], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array[ ... [truncated] (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-functional]] - shared statements and technical atoms: Functional shares source evidence from Like this: / Generating Iterables: Let's consider how they work. Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly unt ... [truncated]; Functional shares technical record from Like this: / Generating Iterables: Iterators have to arrange its own state such that when you call them, they compute and return the next item. (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-iterable]] - shared statements and technical atoms: Iterable shares source evidence from We'll keep it simple: / generators and iterables: This object declares a [Symbol.iterator] function that makes it iterable. Because it's declared *[Symbol.iterator] , it's a generator instead of an iterator.; Iterable shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-collection]] - shared statements and technical atoms: Collection shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: In programs involving large collections of objects, it can be handy to implement iterators as objects, rather than functions. The mechanics of iterating can then be ... [truncated]; Collection shares technical record from Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators: const collectionSum = (collection) => { const iterator = collection.iterator(); let eachIteration, sum = 0; while ((eachIteration = iterator(), !eachIteration.done)) ... [truncated] (2 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-program]] - shared statements and technical atoms: Program shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: In programs involving large collections of objects, it can be handy to implement iterators as objects, rather than functions. The mechanics of iterating can then be ... [truncated]; Program shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-writing]] - shared statements and technical atoms: Writing shares source evidence from We'll keep it simple: / Summary: A generator is a function that is defined with function * and uses yield (or yield * ) to generate values. Using a generator instead of writing an iterator object th ... [truncated]; Writing shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-value]] - shared technical atoms: Value shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / literal object syntax: { year: 2012, month: 6, day: 14 } (4 shared atom(s))
-- [[javascriptallonge-lazy]] - shared technical atoms: Lazy shares technical record from We'll keep it simple: / Lazy and Eager Collections / implementing methods with iteration: const Numbers = Object.assign({ [Symbol.iterator]: () => { let n = 0; return { next: () => ({done: false, value: n++}) } } }, LazyCollection); // Pair, a/k/a linked ... [truncated] (3 shared atom(s))
-- [[javascriptallonge-bind]] - shared technical atoms: Bind shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / literal object syntax: const SecretDecoderRing = { encode (plaintext) { return plaintext .split('') .map( char => char.charCodeAt() ) .map( code => code + 1 ) .map( code => String.fromChar ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-binding]] - shared technical atoms: Binding shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / literal object syntax: const SecretDecoderRing = { encode (plaintext) { return plaintext .split('') .map( char => char.charCodeAt() ) .map( code => code + 1 ) .map( code => String.fromChar ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-copy]] - shared technical atoms: Copy shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } }. We can then perform th ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-generator]] - shared technical atoms: Generator shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (2 shared atom(s))
-- [[javascriptallonge-list]] - shared technical atoms: List shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } }. We can then perform th ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-write]] - shared technical atoms: Write shares technical record from Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators: const collectionSum = (collection) => { const iterator = collection.iterator(); let eachIteration, sum = 0; while ((eachIteration = iterator(), !eachIteration.done)) ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-allong]] - shared technical atoms: Allong shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-code]] - shared technical atoms: Code shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-different]] - shared technical atoms: Different shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-ecmascript]] - shared technical atoms: Ecmascript shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-feature]] - shared technical atoms: Feature shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-function-keyword]] - shared technical atoms: the function keyword shares technical table: 42 You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times. 43 W ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-language]] - shared technical atoms: Language shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-pattern]] - shared technical atoms: Pattern shares technical record from We'll keep it simple: / generators and iterables: const ThreeNumbers = { *[Symbol.iterator] () { yield 1; yield 2; yield 3 } } (1 shared atom(s))
-- [[javascriptallonge-programming]] - shared technical atoms: Programming shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-recipe]] - shared technical atoms: Recipe shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-rule]] - shared technical atoms: Rule shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-type]] - shared technical atoms: Type shares technical record from Composing and Decomposing Data / Mutation: const oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree //=> [ 'one', 2, 3 ] (1 shared atom(s))
-- [[javascriptallonge-evaluate]] - shared statements: Evaluate shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object. (1 shared statement(s))
 
 ## Source
 

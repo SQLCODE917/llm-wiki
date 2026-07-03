@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-5-character-growth-via-starting-experience-points-d2891546
 page_kind: source
 page_family: section-reference
-summary: 1.4 Character Creation / 1.4.5 Character Growth via Starting Experience Points: 38 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 1.4 Character Creation / 1.4.5 Character Growth via Starting Experience Points: 38 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-5-character-growth-via-starting-experience-points-d2891546@7584dac8ad71ce9fb0079fefc7013236
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-5-character-growth-via-starting-experience-points-d2891546@da7612125d7f1482cec2782fab804a4e
 ---
 
 # 1.4 Character Creation / 1.4.5 Character Growth via Starting Experience Points
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-charac
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1e239ef6]] - broader source section: 1.4 Character Creation
 
@@ -47,70 +49,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 1.4 Character Creation / 1.4.5 Character Growth via Starting Experience Points
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00616))_
-
-> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00615))_
-
-> The experience points required to increase a skill are shown in Table 1-7: Experience Points by Skill (at Character Creation).
-
-### Technical frame 2: 1.4 Character Creation / 1.4.5 Character Growth via Starting Experience Points
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00617))_
-
-> This should be understood as purchasing skills with experience points .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00616))_
-
-> Characters can spend their starting experience points to gain skill levels.
-
-### Technical frame 3: 1.4 Character Creation / 1.4.5 Character Growth via Starting Experience Points
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00620))_
 
 > Only adventurer skills can be acquired or increased using experience points. General skills cannot be acquired or increased with experience points.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00618))_
 
+<a id="atom-technical-atom-b170f6071285f840"></a>
+
 > For example, if you do not have the ranger skill and you want to acquire 2 levels in ranger at once, you must spend 500 + 1000 for a total of 1500 experience points.
-
-### Technical frame 4: 1.4 Character Creation / 1.4.5 Character Growth via Starting Experience Points
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00620))_
-
-> Only adventurer skills can be acquired or increased using experience points. General skills cannot be acquired or increased with experience points.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00619))_
-
-> If you have enough experience points, you can acquire multiple skills.
-
-### Technical frame 5: 1.4 Character Creation / 1.4.5 Character Growth via Starting Experience Points
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00624))_
-
-> Here, we'll increase fighter to 2nd level and also acquire 1 level in ranger. This leaves us 500 points, which we'll save for future use.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00625))_
-
-> Table 1-7: Experience Points by Skill (at Character Creation)
-
-### Technical frame 6: 1.4 Character Creation / 1.4.5 Character Growth via Starting Experience Points
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00655))_
-
-> If a character has 1 level in the sage skill (so if they're a human or half-elf, and if merchant/scholar or noble was rolled on Table 1-5: Backgrounds), they can acquire 1 level in the sorcerer skill for 1500 points. Of course, having the sage skill does not mean that you're required to have the sorcerer skill. The sage skill is useful enough on its own.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00654))_
-
-> If a character has neither the sorcerer nor sage skill, they can acquire 1 level in both the sorcerer and sage skills by spending 2000 experience points.
-
-### Technical frame 7: 1.4 Character Creation / 1.4.5 Character Growth via Starting Experience Points
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00656))_
-
-> It is important to note that it is against the rules for a character who has neither the sorcerer nor sage skills to acquire only the sorcerer skill for 1500 points.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00655))_
-
-> If a character has 1 level in the sage skill (so if they're a human or half-elf, and if merchant/scholar or noble was rolled on Table 1-5: Backgrounds), they can acquire 1 level in the sorcerer skill for 1500 points.

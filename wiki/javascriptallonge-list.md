@@ -1,19 +1,37 @@
 ---
 page_id: javascriptallonge-list
 page_kind: concept
-summary: List: 21 statement(s) and 35 atom(s) from raw/javascriptallonge.pdf.
+page_family: broad-topic
+summary: List: 20 statement(s) and 35 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-list@d579b9e49795d394cf8c1bbd3021a0a7
+projection_coverage: topic-javascriptallonge-list@60d88165f06a474023c78543f1f51e44
 ---
 
 # List
 
 What [[javascriptallonge]] covers about list:
 
-## Statements
+
+## Related pages
+
+### Shared technical atoms
+
+- [[javascriptallonge-copy]] - shared statements and technical atoms: Copy shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: Again, it's just extracting a reference from a cons cell, it's very fast. In Lisp, it's blazingly fast because it happens in hardware. There's no making copies of ar ... [truncated]; Copy shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (2 shared statement(s), 9 shared atom(s))
+- [[javascriptallonge-copy-write]] - shared statements and technical atoms: Copy on Write shares source evidence from Yes. Consider this variation: / Copy on Write: We've seen how to build lists with arrays and with linked lists. We've touched on an important difference between them:; Copy on Write shares technical record from Yes. Consider this variation: / Copy on Write: The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array. (3 shared statement(s), 8 shared atom(s))
+- [[javascriptallonge-element]] - shared statements and technical atoms: Element shares source evidence from Composing and Decomposing Data / Self-Similarity: Let's convert our rules to array literals. The first rule is simple: [] is a list. How about the second rule? We can express that using a spread. Given an element e ... [truncated]; Element shares technical record from Composing and Decomposing Data / Self-Similarity: [] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"] (3 shared statement(s), 6 shared atom(s))
+- [[javascriptallonge-rest]] - shared statements and technical atoms: Rest shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-read: So back to the problem of structure sharing. One strategy for avoiding problems is to be pessimistic . Whenever we take the rest of a list, make a copy.; Rest shares technical record from Composing and Decomposing Data / Self-Similarity: const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ...rest] = ["foo"]; first //=> "foo" rest //=> [] const [first, ...rest] = ["foo", "bar ... [truncated] (1 shared statement(s), 7 shared atom(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Composing and Decomposing Data / Self-Similarity / folding: With the exception of the length example at the beginning, our examples so far all involve rebuilding a solution using spreads. But they needn't. A function to compu ... [truncated]; Function shares technical record from Composing and Decomposing Data / Self-Similarity: const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest); Let’s try it! length([]) //=> 0 length(["foo"]) //=> 1 length(["foo", "bar", "baz"]) (1 shared statement(s), 5 shared atom(s))
+- [[javascriptallonge-length]] - shared statements and technical atoms: Length shares source evidence from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: Mind you, this is still much, much faster than making partial copies of arrays. For a list of length n , wecreated n superfluous nodes and copied n superfluous value ... [truncated]; Length shares technical record from Composing and Decomposing Data / Self-Similarity: const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest); Let’s try it! length([]) //=> 0 length(["foo"]) //=> 1 length(["foo", "bar", "baz"]) (1 shared statement(s), 5 shared atom(s))
+- [[javascriptallonge-reference]] - shared technical atoms: Reference shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: const node5 = [5,null], node4 = [4, node5], node3 = [3, node4], node2 = [2, node3], node1 = [1, node2]; const oneToFive = node1; (3 shared atom(s))
+- [[javascriptallonge-code]] - shared technical atoms: Code shares technical record from Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking: const length = (list) => list( () => 0, (aPair) => 1 + length(aPair(pairRest))) ); (2 shared atom(s))
+
+### Shared claims
+
+- [[javascriptallonge-seen]] - shared statements: Seen shares source evidence from Yes. Consider this variation: / Copy on Write: We've seen how to build lists with arrays and with linked lists. We've touched on an important difference between them: (1 shared statement(s))
+## Statements by source section
 
 ### Recipes with Basic Functions / Partial Application
 
@@ -69,10 +87,6 @@ What [[javascriptallonge]] covers about list:
 
 - So back to the problem of structure sharing. One strategy for avoiding problems is to be pessimistic . Whenever we take the rest of a list, make a copy. _(javascriptallonge.pdf (source-range-7239e085-01239))_
 
-### Yes. Consider this variation: / Copy on Write / copy-on-write
-
-- But our new parent and child lists are copies that contain the desired modifications, without interfering with each other: _(javascriptallonge.pdf (source-range-7239e085-01249))_
-
 ### Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking
 
 - We're passing list what we want done with an empty list, and what we want done with a list that has at least one element. We then ask list to do it, and provide a way for list to call the code we pass in. _(javascriptallonge.pdf (source-range-7239e085-01416))_
@@ -89,6 +103,8 @@ What [[javascriptallonge]] covers about list:
 > As noted above, our partial recipe allows us to create functions that are partial applications of functions that are context aware. We'd need a different recipe if we wish to create partial applications of object methods.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00661))_
+
+<a id="atom-technical-atom-de17f73437abe2ee"></a>
 
 ```
 const callFirst = (fn, larg) =>
@@ -117,6 +133,8 @@ sayHelloToCeline('Eartha')
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00891))_
 
+<a id="atom-technical-atom-9d3e365c447e4d34"></a>
+
 ```
 []
 //=> []
@@ -135,6 +153,8 @@ sayHelloToCeline('Eartha')
 > Armed with our definition of an empty list and with what we've already learned, we can build a great many functions that operate on arrays. We know that we can get the length of an array using its .length . But as an exercise, how would we write a length function using just what we have already?
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00895))_
+
+<a id="atom-technical-atom-ab90397824182d0e"></a>
 
 ```
 const [first, ...rest] = [];
@@ -169,6 +189,8 @@ const isEmpty = ([first, ...rest]) => first === undefined;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00902))_
 
+<a id="atom-technical-atom-dce776a77328aa08"></a>
+
 ```
 const length = ([first, ...rest]) =>
 first === undefined
@@ -190,6 +212,8 @@ length(["foo", "bar", "baz"])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00903))_
 
+<a id="atom-technical-atom-65ebfed4d2b01ae4"></a>
+
 ```
 //=> 3
 ```
@@ -201,6 +225,8 @@ length(["foo", "bar", "baz"])
 > This specific case of linear recursion is called 'mapping,' and it is not necessary to constantly write out the same pattern again and again. Functions can take functions as arguments, so let's 'extract' the thing to do to each element and separate it from the business of taking an array apart, doing the thing, and putting the array back together.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00927))_
+
+<a id="atom-technical-atom-c95c1b7319aa8094"></a>
 
 ```
 const squareAll = ([first, ...rest]) => first === undefined
@@ -219,6 +245,8 @@ squareAll([1, 2, 3, 4, 5])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00929))_
 
+<a id="atom-technical-atom-28f08e1ff8b916bb"></a>
+
 ```
 const truthyAll = ([first, ...rest]) => first === undefined
 ? []
@@ -229,11 +257,13 @@ truthyAll([null, true, 25, false, "foo"])
 
 ### Technical frame 8: Composing and Decomposing Data / Self-Similarity / folding
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00943))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00945))_
 
-> And now we supply a function that does slightly more than our mapping functions:
+> Our foldWith function is a generalization of our mapWith function. We can represent a map as a fold, we just need to supply the array rebuilding code:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00937))_
+
+<a id="atom-technical-atom-9feefbdde8f3ed2c"></a>
 
 ```
 const sumSquares = ([first, ...rest]) => first === undefined
@@ -251,6 +281,8 @@ sumSquares([1, 2, 3, 4, 5])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01038))_
 
+<a id="atom-technical-atom-112ab8de9b809982"></a>
+
 ```
 const oneToFive = cons(1, cons(2, cons(3, cons(4, cons(5, null)))));
 ```
@@ -262,6 +294,8 @@ const oneToFive = cons(1, cons(2, cons(3, cons(4, cons(5, null)))));
 > This is a Linked List 68 , it's just that those early Lispers used the names car and cdr after the hardware instructions, whereas today we use words like data and reference . But it works the same way: If we want the head of a list, we call car on it:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01039))_
+
+<a id="atom-technical-atom-a680fbb35be046e5"></a>
 
 ```
 oneToFive
@@ -276,6 +310,8 @@ oneToFive
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01041))_
 
+<a id="atom-technical-atom-dc8f81750b5113b4"></a>
+
 ```
 const node5 = [5,null],
 node4 = [4, node5],
@@ -287,11 +323,13 @@ const oneToFive = node1;
 
 ### Technical frame 12: Composing and Decomposing Data / Garbage, Garbage Everywhere / some history
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01044))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01047))_
 
-> car is very fast, it simply extracts the first element of the cons cell.
+> Again, it's just extracting a reference from a cons cell, it's very fast. In Lisp, it's blazingly fast because it happens in hardware. There's no making copies of arrays, the time to cdr a list with five elements is the same as the time to cdr a list with 5,000 elements, and no temporary arrays are needed. In JavaScript, it's still much, much, much faster to get all the elements except the head from a linked list than from an array. Getting one reference to a structure that already exists is fas
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01043))_
+
+<a id="atom-technical-atom-ea7807d3b9f4f476"></a>
 
 ```
 car(oneToFive)
@@ -306,6 +344,8 @@ car(oneToFive)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01046))_
 
+<a id="atom-technical-atom-507de994e6577937"></a>
+
 ```
 cdr(oneToFive)
 //=> [2,[3,[4,[5,null]]]]
@@ -319,6 +359,8 @@ cdr(oneToFive)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01055))_
 
+<a id="atom-technical-atom-a87d9f5009a86d7c"></a>
+
 > And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
 
 ### Technical frame 15: Composing and Decomposing Data / Garbage, Garbage Everywhere / so why arrays
@@ -329,6 +371,8 @@ cdr(oneToFive)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01056))_
 
+<a id="atom-technical-atom-e101f7e8ac776af8"></a>
+
 > We have avoided discussing rebinding and mutating values, but if we want to change elements of our lists, the naïve linked list implementation suffers as well: When we take the cdr of a linked list, we are sharing the elements.
 
 ### Technical frame 16: Composing and Decomposing Data / Plain Old JavaScript Objects
@@ -338,6 +382,8 @@ cdr(oneToFive)
 > Remembering that the name is the first item is error-prone, and being expected to look at user[0][1] and know that we are talking about a surname is unreasonable. So back when lists were the only things available, programmers would introduce constants to make things easier on themselves:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01063))_
+
+<a id="atom-technical-atom-ec9f18721bcacec2"></a>
 
 ```
 const remember = ["the milk", "the coffee beans", "the biscotti"];
@@ -352,6 +398,8 @@ And they can be used to store heterogeneous things in various levels of structur
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01064))_
 
+<a id="atom-technical-atom-f6ebb4324e207fe9"></a>
+
 ```
 const user = [["Reginald", "Braithwaite"],[ "author", ["JavaScript Allongé", "Ja\
 vaScript Spessore", "CoffeeScript Ristretto"]]];
@@ -364,6 +412,8 @@ vaScript Spessore", "CoffeeScript Ristretto"]]];
 > Now they could write user[NAME][LAST] or user[OCCUPATION][TITLE] instead of user[0][1] or user[1][0] . Over time, this need to build heterogeneous data structures with access to members by name evolved into the Dictionary 69 data type, a mapping from a unique set of objects to another set of objects.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01066))_
+
+<a id="atom-technical-atom-b92e48185da3a863"></a>
 
 ```
 const NAME = 0,
@@ -384,6 +434,8 @@ vaScript Spessore", "CoffeeScript Ristretto"]]];
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01105))_
 
+<a id="atom-technical-atom-149705c9033ce8b0"></a>
+
 ```
 const cons = (a, d) => [a, d],
 car
@@ -400,6 +452,8 @@ cdr
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01107))_
 
+<a id="atom-technical-atom-062563c07b0a708d"></a>
+
 ```
 In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first:
 2, rest: { first: 3, rest: EMPTY } } }.
@@ -413,6 +467,8 @@ We can then perform the equivalent of [first, ...rest] with direct property acce
 > What about mapping? Well, let's start with the simplest possible thing, making a copy of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn't fast is naïvely copying a list:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01108))_
+
+<a id="atom-technical-atom-ec445a36f29378b5"></a>
 
 ```
 const EMPTY = {};
@@ -441,6 +497,8 @@ length(OneTwoThree)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01110))_
 
+<a id="atom-technical-atom-1842111c7d649167"></a>
+
 ```
 const slowcopy = (node) =>
 node === EMPTY
@@ -457,6 +515,8 @@ slowcopy(OneTwoThree)
 > Our mapWith function takes twice as long as a straight iteration, because it iterates over the entire list twice, once to map, and once to reverse the list. Likewise, it takes twice as much memory, because it constructs a reverse of the desired result before throwing it away.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01115))_
+
+<a id="atom-technical-atom-660953808d5bb764"></a>
 
 ```
 const reverse = (node, delayed = EMPTY) =>
@@ -491,6 +551,8 @@ mapWith((x) => x * x, OneTwoThree)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01154))_
 
+<a id="atom-technical-atom-604319d8c5cc409f"></a>
+
 ```
 const reverse = (node, delayed = EMPTY) =>
 node === EMPTY
@@ -506,6 +568,8 @@ const copy = (node) => reverse(reverse(node));
 > This algorithm makes copies of nodes as it goes, and mutates the last node in the list so that it can splice the next one on. Adding a node to an existing list is risky, as we saw when considering the fact that OneToFive and ThreeToFive share the same nodes. But when we're in the midst of creating a brand new list, we aren't sharing any nodes with any other lists, and we can afford to be more liberal about using mutation to save space and/or time.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01156))_
+
+<a id="atom-technical-atom-2fb1be6c58720722"></a>
 
 ```
 const copy = (node, head = null, tail = null) => {
@@ -534,6 +598,8 @@ return copy(node.rest, head, newNode);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01228))_
 
+<a id="atom-technical-atom-bba78c8b3994a437"></a>
+
 > The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array.
 
 ### Technical frame 27: Yes. Consider this variation: / Copy on Write
@@ -544,6 +610,8 @@ return copy(node.rest, head, newNode);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01229))_
 
+<a id="atom-technical-atom-107209144ad81087"></a>
+
 > Whereas if you have a linked list, and you take it's 'rest,' your 'child' list shares its nodes with the 'parent' list.
 
 ### Technical frame 28: Yes. Consider this variation: / Copy on Write / a few utilities
@@ -553,6 +621,8 @@ return copy(node.rest, head, newNode);
 > Our new at and set functions behave similarly to array[index] and array[index] = value . The main difference is that array[index] = value evaluates to value , while set(index, value, list) evaluates to the modified list .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01235))_
+
+<a id="atom-technical-atom-64a7fceac62859bb"></a>
 
 ```
 const copy = (node, head = null, tail = null) => {
@@ -601,6 +671,8 @@ const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01236))_
 
+<a id="atom-technical-atom-cb1cad9bb1c97594"></a>
+
 ```
 const childList = rest(parentList);
 set(2, "three", parentList);
@@ -620,6 +692,8 @@ childList
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01240))_
 
+<a id="atom-technical-atom-05e2937fc47dd397"></a>
+
 ```
 const rest = ({first, rest}) => copy(rest);
 const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }\
@@ -636,11 +710,13 @@ childList
 
 ### Technical frame 31: Yes. Consider this variation: / Copy on Write / copy-on-write
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01249))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01252))_
 
-> But our new parent and child lists are copies that contain the desired modifications, without interfering with each other:
+> This strategy of waiting to copy until you are writing is called copy-on-write, or 'COW:'
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01246))_
+
+<a id="atom-technical-atom-e60d6ebf60601e8a"></a>
 
 ```
 const rest = ({first, rest}) => rest;
@@ -657,11 +733,13 @@ const newChildList = set(0, "two", childList);
 
 ### Technical frame 32: Yes. Consider this variation: / Copy on Write / copy-on-write
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01249))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01252))_
 
-> But our new parent and child lists are copies that contain the desired modifications, without interfering with each other:
+> This strategy of waiting to copy until you are writing is called copy-on-write, or 'COW:'
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01248))_
+
+<a id="atom-technical-atom-75b9035c0deba14b"></a>
 
 ```
 parentList
@@ -673,11 +751,13 @@ childList
 
 ### Technical frame 33: Yes. Consider this variation: / Copy on Write / copy-on-write
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01251))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01252))_
 
-> And now functions like mapWith that make copies without modifying anything, work at full speed.
+> This strategy of waiting to copy until you are writing is called copy-on-write, or 'COW:'
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01250))_
+
+<a id="atom-technical-atom-64e23430e7b317d4"></a>
 
 ```
 newParentList
@@ -695,6 +775,8 @@ newChildList
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01415))_
 
+<a id="atom-technical-atom-7584d0bd3f95e295"></a>
+
 ```
 const length = (list) => list(
 () => 0,
@@ -710,6 +792,8 @@ const length = (list) => list(
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01418))_
 
+<a id="atom-technical-atom-f6632ca1ca20da83"></a>
+
 ```
 const length = (node, delayed = 0) =>
 node === EMPTY
@@ -717,32 +801,6 @@ node === EMPTY
 : length(node.rest, delayed + 1);
 ```
 
-
-## Related pages
-
-- [[javascriptallonge-copy-write]] - shared statements and technical atoms: Copy on Write shares source evidence from Yes. Consider this variation: / Copy on Write: We've seen how to build lists with arrays and with linked lists. We've touched on an important difference between them:; Copy on Write shares technical record from Yes. Consider this variation: / Copy on Write: The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array. (4 shared statement(s), 8 shared atom(s))
-- [[javascriptallonge-copy]] - shared statements and technical atoms: Copy shares source evidence from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: The problem here is that linked lists are constructed back-to-front, but we iterate over them frontto-back. So to copy a list, we have to save all the bits on the ca ... [truncated]; Copy shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (1 shared statement(s), 9 shared atom(s))
-- [[javascriptallonge-element]] - shared statements and technical atoms: Element shares source evidence from Composing and Decomposing Data / Self-Similarity: Let's convert our rules to array literals. The first rule is simple: [] is a list. How about the second rule? We can express that using a spread. Given an element e ... [truncated]; Element shares technical record from Composing and Decomposing Data / Self-Similarity: [] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"] (3 shared statement(s), 6 shared atom(s))
-- [[javascriptallonge-rest]] - shared statements and technical atoms: Rest shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-read: So back to the problem of structure sharing. One strategy for avoiding problems is to be pessimistic . Whenever we take the rest of a list, make a copy.; Rest shares technical record from Composing and Decomposing Data / Self-Similarity: const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ...rest] = ["foo"]; first //=> "foo" rest //=> [] const [first, ...rest] = ["foo", "bar ... [truncated] (1 shared statement(s), 7 shared atom(s))
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Composing and Decomposing Data / Self-Similarity / folding: With the exception of the length example at the beginning, our examples so far all involve rebuilding a solution using spreads. But they needn't. A function to compu ... [truncated]; Function shares technical record from Composing and Decomposing Data / Self-Similarity: const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest); Let’s try it! length([]) //=> 0 length(["foo"]) //=> 1 length(["foo", "bar", "baz"]) (1 shared statement(s), 5 shared atom(s))
-- [[javascriptallonge-length]] - shared statements and technical atoms: Length shares source evidence from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: Mind you, this is still much, much faster than making partial copies of arrays. For a list of length n , wecreated n superfluous nodes and copied n superfluous value ... [truncated]; Length shares technical record from Composing and Decomposing Data / Self-Similarity: const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest); Let’s try it! length([]) //=> 0 length(["foo"]) //=> 1 length(["foo", "bar", "baz"]) (1 shared statement(s), 5 shared atom(s))
-- [[javascriptallonge-argument]] - shared statements and technical atoms: Argument shares source evidence from Recipes with Basic Functions / Partial Application: These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want ... [truncated]; Argument shares technical record from Recipes with Basic Functions / Partial Application: const callFirst = (fn, larg) => function (...rest) { return fn.call(this, larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call(this, ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-bind]] - shared statements and technical atoms: Bind shares source evidence from Recipes with Basic Functions / Partial Application: These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want ... [truncated]; Bind shares technical record from Recipes with Basic Functions / Partial Application: const callFirst = (fn, larg) => function (...rest) { return fn.call(this, larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call(this, ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-data]] - shared statements and technical atoms: Data shares source evidence from Composing and Decomposing Data / Self-Similarity: Let's be more specific. Some data structures, like lists, can obviously be seen as a collection of items. Some are empty, some have three items, some forty-two, some ... [truncated]; Data shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: car(oneToFive) //=> 1 (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-partial-application]] - shared statements and technical atoms: partial application shares source evidence from Recipes with Basic Functions / Partial Application: These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want ... [truncated]; partial application shares technical record from Recipes with Basic Functions / Partial Application: const callFirst = (fn, larg) => function (...rest) { return fn.call(this, larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call(this, ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-structure]] - shared statements and technical atoms: Structure shares source evidence from Composing and Decomposing Data / Self-Similarity: Let's be more specific. Some data structures, like lists, can obviously be seen as a collection of items. Some are empty, some have three items, some forty-two, some ... [truncated]; Structure shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-reference]] - shared technical atoms: Reference shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: const node5 = [5,null], node4 = [4, node5], node3 = [3, node4], node2 = [2, node3], node1 = [1, node2]; const oneToFive = node1; (3 shared atom(s))
-- [[javascriptallonge-code]] - shared technical atoms: Code shares technical record from Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking: const length = (list) => list( () => 0, (aPair) => 1 + length(aPair(pairRest))) ); (2 shared atom(s))
-- [[javascriptallonge-instead]] - shared technical atoms: Instead shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } }. We can then perform th ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: const node5 = [5,null], node4 = [4, node5], node3 = [3, node4], node2 = [2, node3], node1 = [1, node2]; const oneToFive = node1; (2 shared atom(s))
-- [[javascriptallonge-literal]] - shared technical atoms: Literal shares technical record from Composing and Decomposing Data / Self-Similarity: [] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"] (2 shared atom(s))
-- [[javascriptallonge-object]] - shared technical atoms: Object shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } }. We can then perform th ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-rule]] - shared technical atoms: Rule shares technical record from Composing and Decomposing Data / Self-Similarity: [] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"] (2 shared atom(s))
-- [[javascriptallonge-algorithm]] - shared technical atoms: Algorithm shares technical record from Composing and Decomposing Data / Mutation / building with mutation: const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed }); const copy = (node) => reverse(reverse(node)); (1 shared atom(s))
-- [[javascriptallonge-note]] - shared technical atoms: Note shares technical record from Composing and Decomposing Data / Mutation / building with mutation: const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed }); const copy = (node) => reverse(reverse(node)); (1 shared atom(s))
-- [[javascriptallonge-problem]] - shared technical atoms: Problem shares technical record from Yes. Consider this variation: / Copy on Write / copy-on-read: const rest = ({first, rest}) => copy(rest); const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }\ }}; const childList = rest(parentList); ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-recipe]] - shared technical atoms: Recipe shares technical record from Recipes with Basic Functions / Partial Application: const callFirst = (fn, larg) => function (...rest) { return fn.call(this, larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call(this, ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-seen]] - shared statements: Seen shares source evidence from Yes. Consider this variation: / Copy on Write: We've seen how to build lists with arrays and with linked lists. We've touched on an important difference between them: (1 shared statement(s))
 
 ## Source
 

@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Precious Metal: 2 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-precious-metal@48130703f114280cecbe0922fc51f077
+projection_coverage: topic-sword-world-rpg-complete-edition-precious-metal@711adc366e07811e9c84e9bc67548b20
 ---
 
 # Precious Metal
@@ -31,10 +31,14 @@ What [[sword-world-rpg-complete-edition]] covers about precious metal:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09975))_
 
+<a id="atom-technical-atom-22a8bf8dbdf4f434"></a>
+
 > If you spend enough time, you can determine a specific price.
 
 
 ## Related pages
+
+### Shared technical atoms
 
 - [[sword-world-rpg-complete-edition-gems]] - shared statements and technical atoms: Gems shares source evidence from Chapter 14: / 14.3 Treasure Types / Gems and Precious Metals: This refers to wares and handicrafts, etc., made from gems and precious metals. These include crowns, rings, brooches, earrings, necklaces, bracelets, etc., and othe ... [truncated]; Gems shares technical record from Chapter 14: / 14.3 Treasure Types / Gems and Precious Metals: If you spend enough time, you can determine a specific price. (2 shared statement(s), 1 shared atom(s))
 

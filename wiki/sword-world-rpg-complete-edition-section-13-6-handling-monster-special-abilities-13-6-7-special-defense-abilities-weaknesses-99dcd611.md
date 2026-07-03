@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 13.6 Handling Monster Special Abilities / 13.6.7 Special Defense Abilities: Weaknesses: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-13-6-7-special-defense-abilities-weaknesses-99dcd611@02b2cb260cd052268ba9fe67baf58778
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-13-6-7-special-defense-abilities-weaknesses-99dcd611@8298e4142558a0bd2df7716282668ee1
 ---
 
 # 13.6 Handling Monster Special Abilities / 13.6.7 Special Defense Abilities: Weaknesses
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handl
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-22341d2d]] - broader source section: 13.6 Handling Monster Special Abilities
 

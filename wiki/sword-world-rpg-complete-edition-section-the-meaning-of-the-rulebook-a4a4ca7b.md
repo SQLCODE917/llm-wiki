@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-the-meaning-of-the-rulebook-a4a4ca7b
 page_kind: source
 page_family: section-reference
-summary: The Meaning of the Rulebook: 29 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: The Meaning of the Rulebook: 29 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-the-meaning-of-the-rulebook-a4a4ca7b@ae669aa1e6f44d8f013a0da36fa20471
+projection_coverage: section-sword-world-rpg-complete-edition-section-the-meaning-of-the-rulebook-a4a4ca7b@f48e7ade090cfe9fd16ed46d5abfe695
 ---
 
 # The Meaning of the Rulebook
@@ -32,35 +32,3 @@ From [[sword-world-rpg-complete-edition]].
 - Because you're a hero doesn't mean you can do everything. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00075))_
 - Each has their own characteristics and limitations. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00075))_
 - Because it's magic does not mean something is all-powerful, and because they're monsters does not mean all monsters are equally strong or scary. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00075))_
-
-## Technical atoms
-
-### Technical frame 1: The Meaning of the Rulebook
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00077))_
-
-> To the average person, a tiger would be a terrifying creature. However, the heroes present in Sword World RPG are capable of fighting as well as or even better than a tiger.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00076))_
-
-> For example, some people may have spectacular muscle strength, while others may be less fortunate. A weapon wielded by someone with superior strength can do more damage than a weapon wielded by someone who is not blessed with such strength. However, with training and experience, even those with inferior talents should be able to fight admirably.
-
-### Technical frame 2: The Meaning of the Rulebook
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00084))_
-
-> This is neither possible nor realistic.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00083))_
-
-> For example, it was stated that Forcelia follows different laws than the real world. Indeed, they are different in many ways. Therefore, in order to be a complete rulebook, all of its laws would have to be written. That is to say, an apple that falls from a tree lands on the ground .
-
-### Technical frame 3: The Meaning of the Rulebook
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00087))_
-
-> It should be noted that, as a general principle of role-playing games, the game master makes the final decisions. In all cases, the word of the game master is absolute in the progress of the game. You may think of the rules as the law and the game master as the judge who applies it.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00088))_
-
-> [Figure] (p.6)

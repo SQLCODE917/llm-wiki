@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 5.1.14 Spirit Magic List / [ Brownie ] (Brownie/Building Spirit): 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-brownie-brownie-building-spirit-a64295f3@4698466c950e28d06fc72ae463c88d40
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-brownie-brownie-building-spirit-a64295f3@06781c9d37291d0105b1eb026f8a390e
 ---
 
 # 5.1.14 Spirit Magic List / [ Brownie ] (Brownie/Building Spirit)
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spi
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-55816c7f]] - broader source section: 5.1.14 Spirit Magic List
 
@@ -33,6 +35,10 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03752, source-range-0b9dec90-03753))_
 
+<a id="atom-technical-atom-c8efaa0c3f4b04fb"></a>
+
 > Base Mental Power Cost=3 Distance=Inside a building Area=Inside a building Duration=While the caster is asleep Effect=Do chores around the house Type=Expansion=-
+
+<a id="atom-technical-atom-cd44abbce406ab02"></a>
 
 > Resist=None

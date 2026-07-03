@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-we-ll-keep-it-simple-generators-and-iterables-4c3f39e4
 page_kind: source
+page_family: section-reference
 summary: We'll keep it simple: / generators and iterables: 11 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-we-ll-keep-it-simple-generators-and-iterables-4c3f39e4@07cce0617aef367d607f584ba9955fe1
+projection_coverage: section-javascriptallonge-section-we-ll-keep-it-simple-generators-and-iterables-4c3f39e4@34a7f79ecd13b3586827ab30a0f1a370
 ---
 
 # We'll keep it simple: / generators and iterables
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-we-ll-keep-it-simple-gene
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-we-ll-keep-it-simple-1104ef0d]] - broader source section: We'll keep it simple:
 
@@ -37,6 +40,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01709))_
 
+<a id="atom-technical-atom-f851858a3f0a60d5"></a>
+
 > If we call our generator function more than once, we get new iterators.
 
 ### Technical frame 2: We'll keep it simple: / generators and iterables
@@ -46,6 +51,8 @@ From [[javascriptallonge]].
 > This pattern is encouraged, so much so that JavaScript provides a concise syntax for writing generator methods for objects:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01710))_
+
+<a id="atom-technical-atom-df68b9aee54b4fac"></a>
 
 ```
 const ThreeNumbers = {
@@ -87,6 +94,8 @@ iterator.next()
 > This object declares a [Symbol.iterator] function that makes it iterable. Because it's declared *[Symbol.iterator] , it's a generator instead of an iterator.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01713))_
+
+<a id="atom-technical-atom-08b3d4cd0486cddf"></a>
 
 ```
 const ThreeNumbers = {

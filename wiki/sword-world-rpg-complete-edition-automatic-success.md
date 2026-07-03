@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Automatic Success: 2 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-automatic-success@c1da36c7010e50fedb99be921d87e97b
+projection_coverage: topic-sword-world-rpg-complete-edition-automatic-success@415e806dc2b6b97198d5cc4a123d3ad5
 ---
 
 # Automatic Success
@@ -33,10 +33,14 @@ What [[sword-world-rpg-complete-edition]] covers about automatic success:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01195))_
 
+<a id="atom-technical-atom-c243b62e0b8c5881"></a>
+
 > Conversely, if that player rolls a 2 , that is, if the two dice both roll a 1 ( double ones ), the action fails , no matter
 
 
 ## Related pages
+
+### Shared technical atoms
 
 - [[sword-world-rpg-complete-edition-automatic-failure]] - shared statements and technical atoms: Automatic Failure shares source evidence from 2.3.1 Automatic Success and Automatic Failure: Even the most difficult acts can succeed by a quirk of fate. On the other hand, no matter how simple something may seem, it may fail due to some misfortune. This is ... [truncated]; Automatic Failure shares technical record from 2.3.1 Automatic Success and Automatic Failure: Conversely, if that player rolls a 2 , that is, if the two dice both roll a 1 ( double ones ), the action fails , no matter (2 shared statement(s), 1 shared atom(s))
 

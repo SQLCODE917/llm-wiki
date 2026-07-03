@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-octopus-e5a870c3
 page_kind: source
 page_family: section-reference
-summary: [ Octopus ]: 26 source-backed entries and 17 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Octopus ]: 26 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-octopus-e5a870c3@27e46c88730b32b038ce45736ec293d0
+projection_coverage: section-sword-world-rpg-complete-edition-section-octopus-e5a870c3@1e1600592189e5c3aa04e7110e03bf19
 ---
 
 # [ Octopus ]
@@ -35,36 +35,70 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08410, source-range-0b9dec90-08411, source-range-0b9dec90-08412, source-range-0b9dec90-08413, source-range-0b9dec90-08414, source-range-0b9dec90-08415, source-range-0b9dec90-08416, source-range-0b9dec90-08417, source-range-0b9dec90-08418, source-range-0b9dec90-08419, source-range-0b9dec90-08420, source-range-0b9dec90-08421, source-range-0b9dec90-08422, source-range-0b9dec90-08423, source-range-0b9dec90-08424, source-range-0b9dec90-08425, source-range-0b9dec90-08426))_
 
+<a id="atom-technical-atom-cc3bada3b828c1a8"></a>
+
 > Monster Level=7
+
+<a id="atom-technical-atom-b43c4f703dc2103e"></a>
 
 > Rarity=12
 
+<a id="atom-technical-atom-327143a6ce40dc55"></a>
+
 > Agility=10
+
+<a id="atom-technical-atom-d70fe423c3a628eb"></a>
 
 > Movement Speed=5/20 (water)
 
+<a id="atom-technical-atom-6aeaa8eb35bde918"></a>
+
 > Number=One
+
+<a id="atom-technical-atom-66068c6b762d67af"></a>
 
 > Frequency=Very Rare
 
+<a id="atom-technical-atom-e63d3d5f313c5e36"></a>
+
 > Intellect=Animal
+
+<a id="atom-technical-atom-fddd8769042e6501"></a>
 
 > Reaction=Hunger-based
 
+<a id="atom-technical-atom-6ceb5fc46ab6ea56"></a>
+
 > Attack Points=Strangle (8 times):16 (9)
+
+<a id="atom-technical-atom-26b0b69f709e9edd"></a>
 
 > Strike Points=16
 
+<a id="atom-technical-atom-794f12ea3504771a"></a>
+
 > Evasion Points=12 (5) Defense Points=9
+
+<a id="atom-technical-atom-3c949e3fabde6111"></a>
 
 > Life Points/Resistance=50/21 (14)
 
+<a id="atom-technical-atom-60f33734827746e3"></a>
+
 > Mental Points/Resistance=10/14 (7)
+
+<a id="atom-technical-atom-f2b95031291e3c73"></a>
 
 > Special Abilities=Strangling
 
+<a id="atom-technical-atom-f6d66b7bcd6e01f6"></a>
+
 > Habitat=Seas
 
+<a id="atom-technical-atom-f0a080b357fe14d0"></a>
+
 > Languages=None
+
+<a id="atom-technical-atom-70d74caf3af9267d"></a>
 
 > Perception=Five senses

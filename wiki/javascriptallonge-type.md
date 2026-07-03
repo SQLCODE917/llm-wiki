@@ -1,19 +1,39 @@
 ---
 page_id: javascriptallonge-type
 page_kind: concept
+page_family: broad-topic
 summary: Type: 9 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-type@a08d15f693f275916be8e662c5a4462b
+projection_coverage: topic-javascriptallonge-type@0e0ed3ed9509187736ccab3e707b75b5
 ---
 
 # Type
 
 What [[javascriptallonge]] covers about type:
 
-## Statements
+
+## Related pages
+
+### Shared technical atoms
+
+- [[javascriptallonge-value]] - shared statements and technical atoms: Value shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions and identities: You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same cont ... [truncated]; Value shares technical record from Prelude: Values and Expressions over Coffee / values and identity / value types: 2 + 2 === 4 //=> true (2 + 2 === 4) === (2 !== 5) //=> true (4 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, ... [truncated]; Javascript shares technical record from Prelude: Values and Expressions over Coffee / values and identity / value types: 2 + 2 === 4 //=> true (2 + 2 === 4) === (2 !== 5) //=> true (2 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-identity]] - shared statements and technical atoms: Identity shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions and identities: You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same cont ... [truncated]; Identity shares technical record from Prelude: Values and Expressions over Coffee / values and identity / value types: 2 + 2 === 4 //=> true (2 + 2 === 4) === (2 !== 5) //=> true (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-string]] - shared statements and technical atoms: String shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. Now we can elaborate: When JavaScript binds a value-type to ... [truncated]; String shares technical record from Prelude: Values and Expressions over Coffee / values and identity / value types: 2 + 2 === 4 //=> true (2 + 2 === 4) === (2 !== 5) //=> true (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-note]] - shared technical atoms: Note shares technical record from Prelude: Values and Expressions over Coffee / values and identity / value types: 2 + 2 === 4 //=> true (2 + 2 === 4) === (2 !== 5) //=> true (2 shared atom(s))
+- [[javascriptallonge-reference]] - shared statements and technical atoms: Reference shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions and identities: You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same cont ... [truncated]; Reference shares technical record from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: (value) => ((ref1, ref2) => ref1 === ref2)(value, value) (2 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical record from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: (value) => ((ref1, ref2) => ref1 === ref2)(value, value) (1 shared atom(s))
+- [[javascriptallonge-code]] - shared technical atoms: Code shares technical table: 13 http://en.wikipedia.org/wiki/Double-precision_floating-point_format 14 Implementations of JavaScript are free to handle larger numbers. For example, if you type 9 ... [truncated] (1 shared atom(s))
+
+### Shared claims
+
+- [[javascriptallonge-data]] - shared statements: Data shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: Thus, CONS put two values together, CAR extracted one, and CDR extracted the other. Lisp's basic data type is often said to be the list, but in actuality it was the ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-environment]] - shared statements: Environment shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-third]] - shared statements: Third shares source evidence from Prelude: Values and Expressions over Coffee / values and identity / value types: Third, some types of cups have no distinguishing marks on them. If they are the same kind of cup, and they hold the same contents, we have no way to tell the differe ... [truncated] (1 shared statement(s))
+## Statements by source section
 
 ### Prelude: Values and Expressions over Coffee / values and identity / value types
 
@@ -56,6 +76,8 @@ What [[javascriptallonge]] covers about type:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00125))_
 
+<a id="atom-technical-atom-af344335a7478637"></a>
+
 ```
 2 + 2 === 4
 //=> true
@@ -71,6 +93,8 @@ What [[javascriptallonge]] covers about type:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00127))_
 
+<a id="atom-technical-atom-cb35e8520be9c9a9"></a>
+
 > So even if you have two cups of the same type, and their contents are the same, you can still distinguish between them.
 
 ### Technical frame 3: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing
@@ -80,6 +104,8 @@ What [[javascriptallonge]] covers about type:
 > 26 Unless the argument is NaN , which isn't equal to anything, including itself . NaN in JavaScript behaves a lot like NULL in SQL.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00327))_
+
+<a id="atom-technical-atom-352494efef5d9591"></a>
 
 ```
 (value) =>
@@ -94,6 +120,8 @@ What [[javascriptallonge]] covers about type:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01122))_
 
+<a id="atom-technical-atom-a96fb43e925c4354"></a>
+
 ```
 const oneTwoThree = [1, 2, 3];
 oneTwoThree[0] = 'one';
@@ -101,39 +129,6 @@ oneTwoThree
 //=> [ 'one', 2, 3 ]
 ```
 
-### Technical atom 5
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00152))_
-
-| entry | content |
-| --- | --- |
-| 13 | http://en.wikipedia.org/wiki/Double-precision_floating-point_format |
-| 14 | Implementations of JavaScript are free to handle larger numbers. For example, if you type 9007199254740991 + 9007199254740991 into node.js , it will happily report that the answer is 18014398509481982 . But code that depends upon numbers larger than 9007199254740991 may not be reliable when moved to other implementations. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-13 http://en.wikipedia.org/wiki/Double-precision_floating-point_format
-14 Implementations of JavaScript are free to handle larger numbers. For example, if you type 9007199254740991 + 9007199254740991 into node.js , it will happily report that the answer is 18014398509481982 . But code that depends upon numbers larger than 9007199254740991 may not be reliable when moved to other implementations.
-```
-
-</details>
-
-
-## Related pages
-
-- [[javascriptallonge-value]] - shared statements and technical atoms: Value shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions and identities: You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same cont ... [truncated]; Value shares technical record from Prelude: Values and Expressions over Coffee / values and identity / value types: 2 + 2 === 4 //=> true (2 + 2 === 4) === (2 !== 5) //=> true (4 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, ... [truncated]; Javascript shares technical record from Prelude: Values and Expressions over Coffee / values and identity / value types: 2 + 2 === 4 //=> true (2 + 2 === 4) === (2 !== 5) //=> true (2 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-string]] - shared statements and technical atoms: String shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. Now we can elaborate: When JavaScript binds a value-type to ... [truncated]; String shares technical record from Prelude: Values and Expressions over Coffee / values and identity / value types: 2 + 2 === 4 //=> true (2 + 2 === 4) === (2 !== 5) //=> true (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-reference]] - shared statements and technical atoms: Reference shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions and identities: You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same cont ... [truncated]; Reference shares technical record from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: (value) => ((ref1, ref2) => ref1 === ref2)(value, value) (2 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-note]] - shared technical atoms: Note shares technical record from Prelude: Values and Expressions over Coffee / values and identity / value types: 2 + 2 === 4 //=> true (2 + 2 === 4) === (2 !== 5) //=> true (2 shared atom(s))
-- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical record from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: (value) => ((ref1, ref2) => ref1 === ref2)(value, value) (1 shared atom(s))
-- [[javascriptallonge-code]] - shared technical atoms: Code shares technical table: 13 http://en.wikipedia.org/wiki/Double-precision_floating-point_format 14 Implementations of JavaScript are free to handle larger numbers. For example, if you type 9 ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-function]] - shared technical atoms: Function shares technical record from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: (value) => ((ref1, ref2) => ref1 === ref2)(value, value) (1 shared atom(s))
-- [[javascriptallonge-object]] - shared technical atoms: Object shares technical record from Composing and Decomposing Data / Mutation: const oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree //=> [ 'one', 2, 3 ] (1 shared atom(s))
-- [[javascriptallonge-data]] - shared statements: Data shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: Thus, CONS put two values together, CAR extracted one, and CDR extracted the other. Lisp's basic data type is often said to be the list, but in actuality it was the ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-environment]] - shared statements: Environment shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, ... [truncated] (1 shared statement(s))
 
 ## Source
 

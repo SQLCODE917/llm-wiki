@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 4.11.1 Magical Recovery: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-11-1-magical-recovery-9f79b121@387d78cc20b65513943238e51cdf1bc5
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-11-1-magical-recovery-9f79b121@baad676fc7e0f6808ad1cea34234b121
 ---
 
 # 4.11.1 Magical Recovery
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-4-11-1-mag
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Other
 
 - [[sword-world-rpg-complete-edition-section-magical-recovery-44d2e132]] - same source heading: another source section with the same heading, 《 Magical Recovery 》
 

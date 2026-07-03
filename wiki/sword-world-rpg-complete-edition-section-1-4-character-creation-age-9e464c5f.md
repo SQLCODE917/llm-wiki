@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 1.4 Character Creation / 《 Age 》: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-age-9e464c5f@ce1b68b4e9f67245d0536f565dd6f9a7
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-age-9e464c5f@510d77d71a46b0c3e06b901eb2d31f0e
 ---
 
 # 1.4 Character Creation / 《 Age 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-charac
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1e239ef6]] - broader source section: 1.4 Character Creation
 

@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-software
 page_kind: concept
+page_family: topic-concept
 summary: Software: 7 statement(s) and 1 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-software@d9a049da9c4335efc756cb5fe07e8de0
+projection_coverage: topic-javascriptallonge-software@ab410bd7cb44dc5d5e5f48d0a4cef7fe
 ---
 
 # Software
@@ -30,11 +31,13 @@ What [[javascriptallonge]] covers about software:
 
 ### Technical frame 1: A Pull of the Lever: Prefaces / What JavaScript Allongé is. And isn't.
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00059))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00062))_
 
-> Then it can be jarring to add new helpers written that place the verb first, like this:
+> Finally, choices in software development cannot ignore the tooling that is used to create and maintain software. The use of source-code control systems with integrated diffing rewards making certain types of focused changes. The use of linters 1 makes checking for certain types of undesirable code very cheap. Debuggers encourage the use of functions with explicit or implicit names. Continuous integration encourages the creation of software in tandem with and factored to facilitate the creation o
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00058))_
+
+<a id="atom-technical-atom-86e655121c91ba7a"></a>
 
 ```
 const mapWith = (iterable, fn) =>
@@ -50,7 +53,9 @@ yield fn(element);
 
 ## Related pages
 
-- [[javascriptallonge-code]] - shared technical atoms: Code shares technical record from A Pull of the Lever: Prefaces / What JavaScript Allongé is. And isn't.: const mapWith = (iterable, fn) => ({ [Symbol.iterator]: function* () { for (let element of iterable) { yield fn(element); } } }); (1 shared atom(s))
+### Shared technical atoms
+
+- [[javascriptallonge-javascript-allong]] - shared technical atoms: Javascript Allong shares technical record from A Pull of the Lever: Prefaces / What JavaScript Allongé is. And isn't.: const mapWith = (iterable, fn) => ({ [Symbol.iterator]: function* () { for (let element of iterable) { yield fn(element); } } }); (1 shared atom(s))
 
 ## Source
 

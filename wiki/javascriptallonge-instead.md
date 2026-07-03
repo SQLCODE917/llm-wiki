@@ -1,19 +1,43 @@
 ---
 page_id: javascriptallonge-instead
 page_kind: concept
-summary: Instead: 8 statement(s) and 6 atom(s) from raw/javascriptallonge.pdf.
+page_family: broad-topic
+summary: Instead: 7 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-instead@d8693c2c7d99c69368052216fa3326e6
+projection_coverage: topic-javascriptallonge-instead@ac38e3fc351e70350020355325d35958
 ---
 
 # Instead
 
 What [[javascriptallonge]] covers about instead:
 
-## Statements
+
+## Related pages
+
+### Shared technical atoms
+
+- [[javascriptallonge-object]] - shared statements and technical atoms: Object shares source evidence from We'll keep it simple: / Summary: A generator is a function that is defined with function * and uses yield (or yield * ) to generate values. Using a generator instead of writing an iterator object th ... [truncated]; Object shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } }. We can then perform th ... [truncated] (1 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-iterator]] - shared statements and technical atoms: Iterator shares source evidence from We'll keep it simple: / Summary: A generator is a function that is defined with function * and uses yield (or yield * ) to generate values. Using a generator instead of writing an iterator object th ... [truncated]; Iterator shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-copy]] - shared technical atoms: Copy shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } }. We can then perform th ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-expression]] - shared technical atoms: Expression shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-list]] - shared technical atoms: List shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } }. We can then perform th ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-method]] - shared technical atoms: Method shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-symbol]] - shared technical atoms: Symbol shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-value]] - shared statements and technical atoms: Value shares source evidence from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated]; Value shares technical record from Prelude: Values and Expressions over Coffee / values are expressions: And if we hand over the espresso, we get the espresso right back. (1 shared statement(s), 1 shared atom(s))
+
+### Shared claims
+
+- [[javascriptallonge-function]] - shared statements: Function shares source evidence from Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking: Instead of directly manipulating part of an entity, pass it a function and have it call our function with the part we want. (2 shared statement(s))
+- [[javascriptallonge-bind]] - shared statements: Bind shares source evidence from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-binding]] - shared statements: Binding shares source evidence from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-code]] - shared statements: Code shares source evidence from Like this: / iterables: So, when a standard way to write iterators was added to the JavaScript language, it didn't make sense to use a method like .iterator() for it: That would conflict wi ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-element]] - shared statements: Element shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object w ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-environment]] - shared statements: Environment shares source evidence from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-language]] - shared statements: Language shares source evidence from Like this: / iterables: So, when a standard way to write iterators was added to the JavaScript language, it didn't make sense to use a method like .iterator() for it: That would conflict wi ... [truncated] (1 shared statement(s))
+## Statements by source section
 
 ### ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus
 
@@ -26,10 +50,6 @@ What [[javascriptallonge]] covers about instead:
 ### And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
 
 - We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different values to the same name, but one environment will be completely enclosed by the other. _(javascriptallonge.pdf (source-range-7239e085-00466))_
-
-### And also: / Combinators and Function Decorators / function decorators
-
-- So instead of writing !someFunction(42) , we can write not(someFunction)(42) . Hardly progress. But like compose , we could write either: _(javascriptallonge.pdf (source-range-7239e085-00572))_
 
 ### Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking
 
@@ -58,18 +78,24 @@ What [[javascriptallonge]] covers about instead:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00109))_
 
+<a id="atom-technical-atom-eec8b1329c6317b1"></a>
+
 > And if we hand over the espresso, we get the espresso right back.
 
-### Technical frame 2: And also: / Combinators and Function Decorators / function decorators
+### Technical frame 2: Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00578))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01109))_
 
-> not is a function decorator because it modifies a function while remaining strongly related to the original function's semantics. You'll see other function decorators in the recipes, like once and maybe. Function decorators aren't strict about being pure functions, so there's more latitude for making decorators than combinators.
+> What about mapping? Well, let's start with the simplest possible thing, making a copy of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn't fast is naïvely copying a list:
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00573))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01107))_
+
+<a id="atom-technical-atom-062563c07b0a708d"></a>
 
 ```
-const something = (x) => x != null;
+In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first:
+2, rest: { first: 3, rest: EMPTY } } }.
+We can then perform the equivalent of [first, ...rest] with direct property accessors:
 ```
 
 ### Technical frame 3: Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists
@@ -78,21 +104,9 @@ const something = (x) => x != null;
 
 > What about mapping? Well, let's start with the simplest possible thing, making a copy of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn't fast is naïvely copying a list:
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01107))_
-
-```
-In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first:
-2, rest: { first: 3, rest: EMPTY } } }.
-We can then perform the equivalent of [first, ...rest] with direct property accessors:
-```
-
-### Technical frame 4: Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01109))_
-
-> What about mapping? Well, let's start with the simplest possible thing, making a copy of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn't fast is naïvely copying a list:
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01108))_
+
+<a id="atom-technical-atom-ec445a36f29378b5"></a>
 
 ```
 const EMPTY = {};
@@ -113,13 +127,15 @@ length(OneTwoThree)
 //=> 3
 ```
 
-### Technical frame 5: Like this: / iterables
+### Technical frame 4: Like this: / iterables
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01562))_
 
 > The for...of loop works directly with any object that is iterable , meaning it works with any object that has a Symbol.iterator method that returns an object iterator. Here's another linked list, this one is iterable:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01560))_
+
+<a id="atom-technical-atom-47f6d9ee5b266831"></a>
 
 ```
 const Stack3 = () =>
@@ -160,13 +176,15 @@ return {done: false, value: this.array[iterationIndex--]}
 const stack = Stack3();
 ```
 
-### Technical frame 6: Like this: / iterables
+### Technical frame 5: Like this: / iterables
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01562))_
 
 > The for...of loop works directly with any object that is iterable , meaning it works with any object that has a Symbol.iterator method that returns an object iterator. Here's another linked list, this one is iterable:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01561))_
+
+<a id="atom-technical-atom-1433f8f324b5f87c"></a>
 
 ```
 stack.push(2000);
@@ -197,28 +215,6 @@ iterableSum(stack)
 //=> 2015
 ```
 
-
-## Related pages
-
-- [[javascriptallonge-object]] - shared statements and technical atoms: Object shares source evidence from We'll keep it simple: / Summary: A generator is a function that is defined with function * and uses yield (or yield * ) to generate values. Using a generator instead of writing an iterator object th ... [truncated]; Object shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } }. We can then perform th ... [truncated] (1 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-iterator]] - shared statements and technical atoms: Iterator shares source evidence from We'll keep it simple: / Summary: A generator is a function that is defined with function * and uses yield (or yield * ) to generate values. Using a generator instead of writing an iterator object th ... [truncated]; Iterator shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-writing]] - shared statements and technical atoms: Writing shares source evidence from And also: / Combinators and Function Decorators / function decorators: So instead of writing !someFunction(42) , we can write not(someFunction)(42) . Hardly progress. But like compose , we could write either:; Writing shares technical record from And also: / Combinators and Function Decorators / function decorators: const something = (x) => x != null; (2 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-value]] - shared statements and technical atoms: Value shares source evidence from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated]; Value shares technical record from Prelude: Values and Expressions over Coffee / values are expressions: And if we hand over the espresso, we get the espresso right back. (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-copy]] - shared technical atoms: Copy shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } }. We can then perform th ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-expression]] - shared technical atoms: Expression shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-list]] - shared technical atoms: List shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } }. We can then perform th ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-method]] - shared technical atoms: Method shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-symbol]] - shared technical atoms: Symbol shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-coffee]] - shared technical atoms: Coffee shares technical record from Prelude: Values and Expressions over Coffee / values are expressions: And if we hand over the espresso, we get the espresso right back. (1 shared atom(s))
-- [[javascriptallonge-expression-coffee]] - shared technical atoms: Expression Coffee shares technical record from Prelude: Values and Expressions over Coffee / values are expressions: And if we hand over the espresso, we get the espresso right back. (1 shared atom(s))
-- [[javascriptallonge-function]] - shared statements: Function shares source evidence from Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking: Instead of directly manipulating part of an entity, pass it a function and have it call our function with the part we want. (2 shared statement(s))
-- [[javascriptallonge-bind]] - shared statements: Bind shares source evidence from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-binding]] - shared statements: Binding shares source evidence from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-code]] - shared statements: Code shares source evidence from Like this: / iterables: So, when a standard way to write iterators was added to the JavaScript language, it didn't make sense to use a method like .iterator() for it: That would conflict wi ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-different]] - shared statements: Different shares source evidence from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-element]] - shared statements: Element shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object w ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-environment]] - shared statements: Environment shares source evidence from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different valu ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-language]] - shared statements: Language shares source evidence from Like this: / iterables: So, when a standard way to write iterators was added to the JavaScript language, it didn't make sense to use a method like .iterator() for it: That would conflict wi ... [truncated] (1 shared statement(s))
 
 ## Source
 

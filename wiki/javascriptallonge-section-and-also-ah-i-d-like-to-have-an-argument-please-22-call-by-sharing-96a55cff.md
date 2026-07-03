@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-call-by-sharing-96a55cff
 page_kind: source
-summary: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: 17 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: 17 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-call-by-sharing-96a55cff@eab2fbc3dc7adfb8595577f3537b710e
+projection_coverage: section-javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-call-by-sharing-96a55cff@ac00d5985f2b61c5b66fc262ca382454
 ---
 
 # And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-and-also-ah-i-d-like-to-h
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-f00edd2f]] - broader source section: And also: / Ah. I'd Like to Have an Argument, Please. 22
 
@@ -29,28 +32,3 @@ From [[javascriptallonge]].
 - We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. _(javascriptallonge.pdf (source-range-7239e085-00322))_
 - Because many references can share the same value, and because JavaScript passes references as arguments, JavaScript can be said to implement 'call by sharing' semantics. _(javascriptallonge.pdf (source-range-7239e085-00325))_
 - 26 Unless the argument is NaN , which isn't equal to anything, including itself . _(javascriptallonge.pdf (source-range-7239e085-00328))_
-
-## Technical atoms
-
-### Technical frame 1: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00324))_
-
-> Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, and when the value needs to be used, JavaScript uses the reference to obtain the original.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00322))_
-
-> So JavaScript can make as many copies of strings, numbers, or booleans as it wishes.
-
-### Technical frame 2: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00328))_
-
-> 26 Unless the argument is NaN , which isn't equal to anything, including itself . NaN in JavaScript behaves a lot like NULL in SQL.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00327))_
-
-```
-(value) =>
-((ref1, ref2) => ref1 === ref2)(value, value)
-```

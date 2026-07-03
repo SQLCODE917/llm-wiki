@@ -9,7 +9,9 @@ from typing import Any
 import pymupdf
 
 from llmwiki.pdf.document import DocumentModel
+from llmwiki.pdf.heading_table_recovery import heading_numbered_table_candidates
 from llmwiki.pdf.layout_lines import TextLine, layout_text, page_lines
+from llmwiki.pdf.markdown_table import pipe_table
 from llmwiki.pdf.table_candidate_dedupe import dedupe_table_candidates
 from llmwiki.pdf.table_candidate_model import TableCandidate
 from llmwiki.pdf.table_forward_repair import forward_table_text, is_forward_table_cue
@@ -28,6 +30,7 @@ def table_candidates(pdf_path: Path, model: DocumentModel) -> tuple[TableCandida
         candidates = list(_find_tables_candidates(doc))
         candidates.extend(_caption_layout_candidates(doc, lines_by_page))
         candidates.extend(_forward_cue_layout_candidates(lines_by_page))
+        candidates.extend(heading_numbered_table_candidates(doc, lines_by_page))
     return dedupe_table_candidates(tuple(candidates), model)
 
 
@@ -53,7 +56,7 @@ def _find_tables_candidates(doc: Any) -> tuple[TableCandidate, ...]:
                 caption, rows = _remove_caption_row(rows)
                 if len(rows) < 2:
                     continue
-                raw_text = _pipe_table(rows)
+                raw_text = pipe_table(rows)
             if caption:
                 raw_text = f"{caption}\n{raw_text}"
             candidates.append(
@@ -285,15 +288,3 @@ def _table_like_count(lines: tuple[TextLine, ...]) -> int:
 
 def _near_page_bottom(page: Any, line: TextLine) -> bool:
     return line.y1 >= float(page.rect.height) * 0.88
-
-
-def _pipe_table(rows: tuple[tuple[str, ...], ...]) -> str:
-    width = max(len(row) for row in rows)
-    padded = [tuple((*row, *("" for _ in range(width - len(row))))) for row in rows]
-    header = padded[0]
-    lines = [
-        "| " + " | ".join(header) + " |",
-        "| " + " | ".join("---" for _ in header) + " |",
-    ]
-    lines.extend("| " + " | ".join(row) + " |" for row in padded[1:])
-    return "\n".join(lines)

@@ -1,19 +1,43 @@
 ---
 page_id: javascriptallonge-function
 page_kind: concept
-summary: Function: 109 statement(s) and 168 atom(s) from raw/javascriptallonge.pdf.
+page_family: broad-topic
+summary: Function: 101 statement(s) and 164 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-function@c1ac1fed113675aec71408f17c093320
+projection_coverage: topic-javascriptallonge-function@7847cc5e5516845e832b39aabdecabae
 ---
 
 # Function
 
 What [[javascriptallonge]] covers about function:
 
-## Statements
+
+## Related pages
+
+### Source structure
+
+- [[javascriptallonge-section-and-also-summary-functions-a3702d43]] - source section: And also: / Summary / Functions shares source evidence from And also: / Summary / Functions: Functions are values that can be part of expressions, returned from other functions, and so forth.; And also: / Summary / Functions shares technical table: combinators The word 'combinator' has a precise technical meaning in mathematics: 'A combinator is a higher-order function that uses only function application and ea ... [truncated] (12 shared statement(s), 7 shared atom(s))
+
+### Shared technical atoms
+
+- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from A Pull of the Lever: Prefaces / About JavaScript Allongé: It also provides recipes for using functions to write software that is simpler, cleaner, and less complicated than alternative approaches that are object-centric or ... [truncated]; Javascript shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less: () => 0 (4 shared statement(s), 22 shared atom(s))
+- [[javascriptallonge-argument]] - shared statements and technical atoms: Argument shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings: How does the value get put in the environment? Well for arguments, that is very simple. When you apply the function to the arguments, an entry is placed in the dicti ... [truncated]; Argument shares technical record from And also: / Ah. I'd Like to Have an Argument, Please. 22: (room) => {} (4 shared statement(s), 21 shared atom(s))
+- [[javascriptallonge-expression]] - shared statements and technical atoms: Expression shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings: The expression 'x' (the right side of the function) is evaluated within the environment we just created.; Expression shares technical record from Or even: / back on the block: () => { 2 + 2 } () => { 1 + 1; 2 + 2 } (2 shared statement(s), 17 shared atom(s))
+- [[javascriptallonge-bind]] - shared statements and technical atoms: Bind shares source evidence from And also: / Naming Functions: It doesn't name the function 'repeat' for the same reason that const answer = 42 doesn't name the number 42 . This syntax binds an anonymous function to a name in an ... [truncated]; Bind shares technical record from And also: / That Constant Coffee Craving: ((PI) => // ???? )(3.14159265) (1 shared statement(s), 14 shared atom(s))
+- [[javascriptallonge-return]] - shared statements and technical atoms: Return shares source evidence from Or even: / back on the block: We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21; Return shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (6 shared statement(s), 11 shared atom(s))
+- [[javascriptallonge-length]] - shared statements and technical atoms: Length shares source evidence from Composing and Decomposing Data / Self-Similarity: Our length function is recursive , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to c ... [truncated]; Length shares technical record from Composing and Decomposing Data / Self-Similarity: const length = ([first, ...rest]) => first === undefined ? 0 : // ??? (3 shared statement(s), 12 shared atom(s))
+- [[javascriptallonge-write]] - shared statements and technical atoms: Write shares source evidence from And also: / That Constant Coffee Craving / const: Another way to write our 'circumference' function would be to pass PI along with the diameter argument, something like this:; Write shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (2 shared statement(s), 9 shared atom(s))
+- [[javascriptallonge-functional-iterator]] - shared statements and technical atoms: Functional Iterators shares source evidence from Yes. Consider this variation: / Functional Iterators: What we've done is turn an array into a function that folds an array with const foldArray = (array) => callRight(foldArrayWith, array); . The sumFoldable function do ... [truncated]; Functional Iterators shares technical record from Yes. Consider this variation: / Functional Iterators / unfolding and laziness: const NumberIterator = (number = 0) => () => ({ done: false, value: number++ }) fromOne = NumberIterator(1); fromOne().value; //=> 1 fromOne().value; //=> 2 fromOne( ... [truncated] (5 shared statement(s), 7 shared atom(s))
+
+### Topics
+
+- [[javascriptallonge-function-keyword]] - narrower topic: the function keyword shares source evidence from And also: / Naming Functions / the function keyword: In this expression, double is the name in the environment, but repeat is the function's actual name. This is a named function expression . That may seem confusing, b ... [truncated]; the function keyword shares technical record from And also: / Naming Functions / the function keyword: (str) => str + str (4 shared statement(s), 14 shared atom(s))
+- [[javascriptallonge-function-return-value]] - narrower topic: Function Return Value shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: Yes we can! Functions can return the value of evaluating another function.; Function Return Value shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-function-decorator]] - narrower topic: Function Decorator shares source evidence from And also: / Combinators and Function Decorators / function decorators: not is a function decorator because it modifies a function while remaining strongly related to the original function's semantics. You'll see other function decorator ... [truncated]; Function Decorator shares technical record from And also: / Combinators and Function Decorators / function decorators: const nothing = not(something); (1 shared statement(s), 1 shared atom(s))
+## Statements by source section
 
 ### A Pull of the Lever: Prefaces / About JavaScript Allongé
 
@@ -22,10 +46,6 @@ What [[javascriptallonge]] covers about function:
 ### A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?
 
 - Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Ruby, we can write: _(javascriptallonge.pdf (source-range-7239e085-00028))_
-
-### ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus
-
-- As a staunch advocate of functional programming, much of what Reg has written rings true to me. While not exclusively a book about functional programming, JavaScript Allongé will provide a solid foundation for functional techniques. However, you'll not be beaten about the head and neck with dogma. Instead, every section is motivated by relevant dialog and fortified with compelling source examples. As an author of programming books I admire what Reg has managed to accomplish and I envy the fine reader who finds JavaScript Allongé via some darkened channel in the Internet sprawl and reads it for the first time. _(javascriptallonge.pdf (source-range-7239e085-00087))_
 
 ### The first sip: Basic Functions / As Little As Possible About Functions, But No Less
 
@@ -68,12 +88,6 @@ What [[javascriptallonge]] covers about function:
 - Functions containing one or more free variables are called closures . _(javascriptallonge.pdf (source-range-7239e085-00346))_
 
 - Pure functions are easiest to understand. They always mean the same thing wherever you use them. Here are some pure functions we've already seen: _(javascriptallonge.pdf (source-range-7239e085-00347))_
-
-- The first function doesn't have any variables, therefore doesn't have any free variables. The second doesn't have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ... , and it doesn't have a free variable: The only variable anywhere in its body is x , which is certainly bound within (x) => ... . _(javascriptallonge.pdf (source-range-7239e085-00348))_
-
-- From this, we learn something: A pure function can contain a closure. _(javascriptallonge.pdf (source-range-7239e085-00349))_
-
-- Pure functions always mean the same thing because all of their 'inputs' are fully defined by their arguments. Not so with a closure. If I present to you this pure function (x, y) => x + y , we know exactly what it does with (2, 2) . But what about this closure: (y) => x + y ? We can't say what it will do with argument (2) without understanding the magic for evaluating the free variable x . _(javascriptallonge.pdf (source-range-7239e085-00352))_
 
 ### And also: / Closures and Scope / it's always the environment
 
@@ -145,8 +159,6 @@ What [[javascriptallonge]] covers about function:
 
 - But sometimes, a function is a small-f function. It's a simple representation of an expression to be computed. In our example above, row is a Big-F function, but (column) => column * arguments[0] is a small-f function, it exists just to give mapWith something to apply. _(javascriptallonge.pdf (source-range-7239e085-00632))_
 
-- Having magic variables apply to Big-F functions but not to small-G functions makes it much easier to use small-F functions as syntax, treating them as expressions or blocks that can be passed to functions like mapWith . _(javascriptallonge.pdf (source-range-7239e085-00633))_
-
 ### And also: / Summary / Functions
 
 - Functions are values that can be part of expressions, returned from other functions, and so forth. _(javascriptallonge.pdf (source-range-7239e085-00637))_
@@ -154,208 +166,6 @@ What [[javascriptallonge]] covers about function:
 - Functions are reference values . _(javascriptallonge.pdf (source-range-7239e085-00638))_
 
 - Functions are applied to arguments. _(javascriptallonge.pdf (source-range-7239e085-00639))_
-
-- Fat arrow functions have expressions or blocks as their bodies. _(javascriptallonge.pdf (source-range-7239e085-00641))_
-
-- function keyword functions always have blocks as their bodies. _(javascriptallonge.pdf (source-range-7239e085-00642))_
-
-- Function bodies have zero or more statements. _(javascriptallonge.pdf (source-range-7239e085-00643))_
-
-### Recipes with Basic Functions / Unary
-
-- If you pass in a function taking only one argument, it simply ignores the additional arguments. But some functions have optional second or even third arguments. For example: _(javascriptallonge.pdf (source-range-7239e085-00674))_
-
-### Recipes with Basic Functions / Maybe
-
-- Alternately, the function may be intended to work with any value, but the code calling the function wishes to emulate the behaviour of doing nothing by design when given nothing: _(javascriptallonge.pdf (source-range-7239e085-00698))_
-
-- Naturally, there's a function decorator recipe for that, borrowed from Haskell's maybe monad 50 , Ruby's andand 51 , and CoffeeScript's existential method invocation: _(javascriptallonge.pdf (source-range-7239e085-00700))_
-
-### Recipes with Basic Functions / Once
-
-- once is an extremely helpful combinator. It ensures that a function can only be called, well, once . Here's the recipe: _(javascriptallonge.pdf (source-range-7239e085-00710))_
-
-### Recipes with Basic Functions / Left-Variadic Functions
-
-- A variadic function is a function that is designed to accept a variable number of arguments. 52 In JavaScript, you can make a variadic function by gathering parameters. For example: _(javascriptallonge.pdf (source-range-7239e085-00717))_
-
-### Recipes with Basic Functions / Left-Variadic Functions / overcoming limitations
-
-- That's a left-variadic function . All left-variadic functions have one or more fixed arguments, and the rest are gathered into the leftmost argument. JavaScript doesn't do this. But if we wanted to write left-variadic functions, could we make ourselves a leftVariadic decorator to turn a function with one or more arguments into a left-variadic function? _(javascriptallonge.pdf (source-range-7239e085-00735))_
-
-- Our leftVariadic function is a decorator that turns any function into a function that gathers parameters from the left , instead of from the right. _(javascriptallonge.pdf (source-range-7239e085-00739))_
-
-### Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring
-
-- Gathering arguments for functions is one of the ways JavaScript can destructure arrays. Another way is when assigning variables, like this: _(javascriptallonge.pdf (source-range-7239e085-00741))_
-
-### Picking the Bean: Choice and Truthiness / function parameters are eager
-
-- In contrast to the behaviour of the ternary operator, || , and && , function parameters are always eagerly evaluated : _(javascriptallonge.pdf (source-range-7239e085-00801))_
-
-### Picking the Bean: Choice and Truthiness / summary
-
-- Function invocation uses eager evaluation, so if we need to roll our own control-flow semantics, we pass it functions, not expressions. _(javascriptallonge.pdf (source-range-7239e085-00811))_
-
-### Composing and Decomposing Data / Self-Similarity
-
-- Our length function is recursive , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar. _(javascriptallonge.pdf (source-range-7239e085-00904))_
-
-### Composing and Decomposing Data / Self-Similarity / mapping
-
-- Wecanwrite it out using a ternary operator. Even in this small function, we can identify the terminal condition, the piece being broken off, and recomposing the solution. _(javascriptallonge.pdf (source-range-7239e085-00933))_
-
-### Composing and Decomposing Data / Self-Similarity / folding
-
-- With the exception of the length example at the beginning, our examples so far all involve rebuilding a solution using spreads. But they needn't. A function to compute the sum of the squares of a list of numbers might look like this: _(javascriptallonge.pdf (source-range-7239e085-00936))_
-
-- And now we supply a function that does slightly more than our mapping functions: _(javascriptallonge.pdf (source-range-7239e085-00943))_
-
-- Our foldWith function is a generalization of our mapWith function. We can represent a map as a fold, we just need to supply the array rebuilding code: _(javascriptallonge.pdf (source-range-7239e085-00945))_
-
-### Composing and Decomposing Data / Tail Calls (and Default Arguments)
-
-- The mapWith and foldWith functions we wrote in Self-Similarity are useful for illustrating the basic principles behind using recursion to work with self-similar data structures, but they are not 'production-ready' implementations. One of the reasons they are not production-ready is that they consume memory proportional to the size of the array being folded. _(javascriptallonge.pdf (source-range-7239e085-00954))_
-
-### Composing and Decomposing Data / Tail Calls (and Default Arguments) / tail-call optimization
-
-- The length function calls itself, but it is not a tail-call, because it returns 1 + length(rest) , not length(rest) . _(javascriptallonge.pdf (source-range-7239e085-00974))_
-
-### Composing and Decomposing Data / Tail Calls (and Default Arguments) / converting non-tail-calls to tail-calls
-
-- Brilliant! We can map over large arrays without incurring all the memory and performance overhead of non-tail-calls. And this basic transformation from a recursive function that does not make a tail call, into a recursive function that calls itself in tail position, is a bread-and-butter pattern for programmers using a language that incorporates tail-call optimization. _(javascriptallonge.pdf (source-range-7239e085-00986))_
-
-### Composing and Decomposing Data / Tail Calls (and Default Arguments) / factorials
-
-- Asbefore, we wrote a factorialWithDelayedWork function, then used partial application ( callLast ) to make a factorial function that took just the one argument and supplied the initial work value. _(javascriptallonge.pdf (source-range-7239e085-00999))_
-
-### Composing and Decomposing Data / Mutation / mutation and data structures
-
-- One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let's recall linked lists from Plain Old JavaScript Objects. While we're executing the mapWith function, we're constructing a new linked list. By this pattern, we would be happy to use mutation to construct the list while running mapWith . _(javascriptallonge.pdf (source-range-7239e085-01143))_
-
-### Composing and Decomposing Data / Reassignment / mixing let and const / var
-
-- But, again, it is unwise to expect consistency. A function declaration can appear anywhere within a function, but the declaration and the definition are hoisted. Note this example of a function that uses a helper: _(javascriptallonge.pdf (source-range-7239e085-01194))_
-
-- In that way, var is a little like const and let , we should always declare and bind names before using them. But it's not like const and let in that it's function scoped, not block scoped. _(javascriptallonge.pdf (source-range-7239e085-01200))_
-
-### Composing and Decomposing Data / Reassignment / why const and let were invented
-
-- const and let are recent additions to JavaScript. For nearly twenty years, variables were declared with var (not counting parameters and function declarations, of course). However, its functional scope was a problem. _(javascriptallonge.pdf (source-range-7239e085-01202))_
-
-### Yes. Consider this variation:
-
-- Now, at the time we created each function, i had a sensible value, like 0 , 1 , or 2 . But at the time we call one of the functions, i has the value 3 , which is why the loop terminated. So when the function is called, JavaScript looks i up in its enclosing environment (its closure, obviously), and gets the value 3 . That's not what we want at all. _(javascriptallonge.pdf (source-range-7239e085-01215))_
-
-### Yes. Consider this variation: / Copy on Write / copy-on-read
-
-- As we expected, making a copy lets us modify the copy without interfering with the original. This is, however, expensive. Sometimes we don't need to make a copy because we won't be modifying the list. Our mapWith function would be very expensive if we make a copy every time we call rest(node) . _(javascriptallonge.pdf (source-range-7239e085-01242))_
-
-### Yes. Consider this variation: / Copy on Write / copy-on-write
-
-- And now functions like mapWith that make copies without modifying anything, work at full speed. _(javascriptallonge.pdf (source-range-7239e085-01251))_
-
-- Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liberal with mutation. Once we're done with it and give it to someone else, we need to be conservative and use a strategy like copy-on-read or copy-on-write. _(javascriptallonge.pdf (source-range-7239e085-01255))_
-
-### Yes. Consider this variation: / Functional Iterators
-
-- What we've done is turn an array into a function that folds an array with const foldArray = (array) => callRight(foldArrayWith, array); . The sumFoldable function doesn't care what kind of data structure we have, as long as it's foldable. _(javascriptallonge.pdf (source-range-7239e085-01280))_
-
-### Yes. Consider this variation: / Functional Iterators / iterating
-
-- Now this is something else. The arrayIterator function takes an array and returns a function we can call repeatedly to obtain the elements of the array. The iteratorSum function iterates over the elements by calling the iterator function repeatedly until it returns { done: true } . _(javascriptallonge.pdf (source-range-7239e085-01294))_
-
-### Yes. Consider this variation: / Functional Iterators / unfolding and laziness
-
-- A function that starts with a seed and expands it into a data structure is called an unfold . It's the opposite of a fold. It's possible to write a generic unfold mechanism, but let's pass on to what we can do with unfolded iterators. _(javascriptallonge.pdf (source-range-7239e085-01303))_
-
-### Yes. Consider this variation: / Functional Iterators / caveat
-
-- For all intents and purposes, once you pass an iterator to a function, you can expect that you no longer 'own' that iterator, and that its state either has changed or will change. _(javascriptallonge.pdf (source-range-7239e085-01324))_
-
-### Yes. Consider this variation: / Making Data Out Of Functions
-
-- In our code so far, we have used arrays and objects to represent the structure of data, and we have extensively used the ternary operator to write algorithms that terminate when we reach a base case. For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list. _(javascriptallonge.pdf (source-range-7239e085-01328))_
-
-### Yes. Consider this variation: / Making Data Out Of Functions / the kestrel and the idiot
-
-- A constant function is a function that always returns the same thing, no matter what you give it. For example, (x) => 42 is a constant function that always evaluates to 42. The kestrel, or K , is a function that makes constant functions. You give it a value, and it returns a constant function that gives that value. _(javascriptallonge.pdf (source-range-7239e085-01338))_
-
-- The identity function is a function that evaluates to whatever parameter you pass it. So I(42) => 42 . Very simple, but useful. Now we'll take it one more step forward: Passing a value to K gets a function back, and passing a value to that function gets us a value. _(javascriptallonge.pdf (source-range-7239e085-01341))_
-
-### Yes. Consider this variation: / Making Data Out Of Functions / backwardness
-
-- Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of values as an array, we'd write them like this: _(javascriptallonge.pdf (source-range-7239e085-01354))_
-
-- In both cases, the functions first and second know how the data is represented, whether it be an array or an object. You pass the data to these functions, and they extract it. _(javascriptallonge.pdf (source-range-7239e085-01358))_
-
-### Yes. Consider this variation: / Making Data Out Of Functions / the vireo
-
-- As an aside, the Vireo is a little like JavaScript's .apply function. It says, 'take these two values and apply them to this function.' There are other, similar combinators that apply values to functions. One notable example is the 'thrush' or T combinator: It takes one value and applies it to a function. It is known to most programmers as .tap . _(javascriptallonge.pdf (source-range-7239e085-01374))_
-
-### Yes. Consider this variation: / Making Data Out Of Functions / functions are not the real point
-
-- Functions are a fundamental building block of computation. They are 'axioms' of combinatory logic, and can be used to compute anything that JavaScript can compute. _(javascriptallonge.pdf (source-range-7239e085-01403))_
-
-### Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking
-
-- Instead of directly manipulating part of an entity, pass it a function and have it call our function with the part we want. _(javascriptallonge.pdf (source-range-7239e085-01422))_
-
-### Recipes with Data / Flip / self-currying flip
-
-- Sometimes we'll want to flip a function, but retain the flexibility to call it in its curried form (pass one parameter) or non-curried form (pass both). We could make that into flip : _(javascriptallonge.pdf (source-range-7239e085-01466))_
-
-### Recipes with Data / Why?
-
-- What is this something and how does it work? Another friendly tip: Change some of the fat arrow functions inside of it into named function expressions to help you decipher stack traces. _(javascriptallonge.pdf (source-range-7239e085-01494))_
-
-### A Warm Cup: Basic Strings and Quasi-Literals / evaluation time
-
-- JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function's body is evaluated. Thus, name is not bound to "Harry" , it is bound to 'Arthur Dent' , the value of the parameter when the function is invoked. _(javascriptallonge.pdf (source-range-7239e085-01519))_
-
-### Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators
-
-- If we write a program with the presumption that 'everything is an object,' we can write maps, folds, and filters that work on objects. We just ask the object for an iterator, and work on the iterator. Our functions don't need to know anything about how an object implements iteration, and we get the benefit of lazily traversing our objects. _(javascriptallonge.pdf (source-range-7239e085-01543))_
-
-### Served by the Pot: Collections / Iteration and Iterables / iterator objects
-
-- Iteration for functions and objects has been around for many, many decades. For simple linear collections like arrays, linked lists, stacks, and queues, functional iterators are the simplest and easiest way to implement iterators. _(javascriptallonge.pdf (source-range-7239e085-01546))_
-
-- Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object with a .next() method. _(javascriptallonge.pdf (source-range-7239e085-01548))_
-
-### Like this: / from
-
-- We can do the same with our own collections. As you recall, functions are mutable objects. And we can assign properties to functions with a . or even [ and ] . And if we assign a function to a property, we've created a method. _(javascriptallonge.pdf (source-range-7239e085-01614))_
-
-### Like this: / summary
-
-- Separating concerns with iterators speaks to JavaScript's fundamental nature: It's a language that wants to compose functionality out of small, singe-responsibility pieces, whether those pieces are functions or objects built out of functions. _(javascriptallonge.pdf (source-range-7239e085-01621))_
-
-### Like this: / Generating Iterables
-
-- Let's consider how they work. Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it's done. _(javascriptallonge.pdf (source-range-7239e085-01626))_
-
-### We'll keep it simple: / javascript's generators
-
-- Generator functions can take an argument. Let's use that to illustrate yield : _(javascriptallonge.pdf (source-range-7239e085-01668))_
-
-### We'll keep it simple: / generators and iterables
-
-- Our generator function oneTwoThree is not an iterator. It's a function that returns an iterator when we invoke it. We write the function to yield values instead of return a single value, and JavaScript takes care of turning this into an object with a .next() function we can call. _(javascriptallonge.pdf (source-range-7239e085-01708))_
-
-- This object declares a [Symbol.iterator] function that makes it iterable. Because it's declared *[Symbol.iterator] , it's a generator instead of an iterator. _(javascriptallonge.pdf (source-range-7239e085-01714))_
-
-### We'll keep it simple: / more generators
-
-- We've writing a function that returns an iterator, but we used a generator to do it. And the generator's syntax allows us to use JavaScript's natural management of state instead of constantly rolling our own. _(javascriptallonge.pdf (source-range-7239e085-01725))_
-
-### We'll keep it simple: / yielding iterables
-
-- We've gone with the full iterable here, a TreeIterable(iterable) returns an iterable that treats iterable as a tree. It works, but as we've just seen, a function that returns an iterable can often be written much more simply as a generator, rather than a function that returns an iterable object: 93 _(javascriptallonge.pdf (source-range-7239e085-01731))_
-
-### We get: / interactive generators
-
-- But the generator function allows us to maintain state implicitly. And sometimes, we want to use implicit state instead of explicitly storing state in our data. _(javascriptallonge.pdf (source-range-7239e085-01943))_
 
 
 ## Technical atoms
@@ -367,6 +177,8 @@ What [[javascriptallonge]] covers about function:
 > Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into a parameter, so programmers would take advantage of an awkward work-around and write things like:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00029))_
+
+<a id="atom-technical-atom-4cdaf7d079e7fa51"></a>
 
 ```
 def foo (first, *rest)
@@ -382,6 +194,8 @@ end
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00169))_
 
+<a id="atom-technical-atom-4ba993180602fa06"></a>
+
 ```
 () => 0
 ```
@@ -393,6 +207,8 @@ end
 > What!? Why didn't it type back () => 0 for us? This seems to break our rule that if an expression is also a value, JavaScript will give the same value back to us. What's going on? The simplest and easiest answer is that although the JavaScript interpreter does indeed return that value, displaying it on the screen is a slightly different matter. [Function] is a choice made by the people who wrote Node.js, the JavaScript environment that hosts the JavaScript REPL. If you try the same thing in a br
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00171))_
+
+<a id="atom-technical-atom-4a550bf37c4d3c09"></a>
 
 ```
 (() => 0)
@@ -407,6 +223,8 @@ end
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00172))_
 
+<a id="atom-technical-atom-20ea58105aebcc81"></a>
+
 > If you try the same thing in a browser, you may see something else.
 
 ### Technical frame 5: The first sip: Basic Functions / As Little As Possible About Functions, But No Less
@@ -417,6 +235,8 @@ end
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00173))_
 
+<a id="atom-technical-atom-3bfee0f96693b040"></a>
+
 > 16 The simplest possible function is () => {} , we'll see that later.
 
 ### Technical frame 6: The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions and identities
@@ -426,6 +246,8 @@ end
 > You recall that we have two types of values with respect to identity: Value types and reference types. Value types share the same identity if they have the same contents. Reference types do not.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00178))_
+
+<a id="atom-technical-atom-103065528fb20d67"></a>
 
 ```
 (() => 0) === (() => 0)
@@ -440,6 +262,8 @@ end
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00183))_
 
+<a id="atom-technical-atom-a7a196f63e97d3c4"></a>
+
 ```
 fn_expr(args)
 ```
@@ -451,6 +275,8 @@ fn_expr(args)
 > Yes we can. We can put any expression to the right of the arrow. For example, (() => 0)() is an expression. Can we put it to the right of an arrow, like this: () => (() => 0)() ?
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00192))_
+
+<a id="atom-technical-atom-7673f47cd782cb73"></a>
 
 ```
 (() => 1 + 1)()
@@ -469,6 +295,8 @@ fn_expr(args)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00197))_
 
+<a id="atom-technical-atom-89adc0ecfdaf7a9b"></a>
+
 > When dealing with expressions that have a lot of the same characters (like parentheses), you may find it helpful to format the code to make things stand out.
 
 ### Technical frame 10: The first sip: Basic Functions / As Little As Possible About Functions, But No Less / commas
@@ -478,6 +306,8 @@ fn_expr(args)
 > This is useful when trying to do things that might involve side-effects , but we'll get to that later. In most cases, JavaScript does not care whether things are separated by spaces, tabs, or line breaks. So we can also write:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00204))_
+
+<a id="atom-technical-atom-ead6c5c59b062746"></a>
 
 ```
 (() => (1 + 1, 2 + 2))()
@@ -492,6 +322,8 @@ fn_expr(args)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00205))_
 
+<a id="atom-technical-atom-a037009faf63061c"></a>
+
 > This is useful when trying to do things that might involve side-effects , but we'll get to that later.
 
 ### Technical frame 12: Or even: / back on the block
@@ -502,6 +334,8 @@ fn_expr(args)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00235))_
 
+<a id="atom-technical-atom-b34f988478f326e7"></a>
+
 ```
 (() => {})()
 //=> undefined
@@ -509,11 +343,13 @@ fn_expr(args)
 
 ### Technical frame 13: Or even: / back on the block
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00241))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00246))_
 
-> As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
+> 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00240))_
+
+<a id="atom-technical-atom-f310a0c20a90f3f0"></a>
 
 ```
 () => { 2 + 2 }
@@ -522,11 +358,13 @@ fn_expr(args)
 
 ### Technical frame 14: Or even: / back on the block
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00243))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00246))_
 
-> But no matter how we arrange them, a block with one or more expressions still evaluates to undefined :
+> 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00242))_
+
+<a id="atom-technical-atom-1d9243789bdf2a74"></a>
 
 ```
 () => {
@@ -543,6 +381,8 @@ fn_expr(args)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00248))_
 
+<a id="atom-technical-atom-a3eff62ec638110d"></a>
+
 > So how do we get a function that evaluates a block to return a value when applied?
 
 ### Technical frame 16: Or even: / back on the block
@@ -552,6 +392,8 @@ fn_expr(args)
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00249))_
+
+<a id="atom-technical-atom-60713ed93e461b84"></a>
 
 ```
 (() => { return 0 })()
@@ -570,6 +412,8 @@ fn_expr(args)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00251))_
 
+<a id="atom-technical-atom-2a6a94a2285075d4"></a>
+
 ```
 (() => {
 1 + 1;
@@ -586,6 +430,8 @@ return 2 + 2
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00262))_
 
+<a id="atom-technical-atom-3ca4240b2cedb80a"></a>
+
 ```
 () => () => true
 ```
@@ -597,6 +443,8 @@ return 2 + 2
 > Well. We've been very clever, but so far this all seems very abstract. Diffraction of a crystal is beautiful and interesting in its own right, but you can't blame us for wanting to be shown a practical use for it, like being able to determine the composition of a star millions of light years away. So… In the next chapter, 'I'd Like to Have an Argument, Please,' we'll see how to make functions practical.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00264))_
+
+<a id="atom-technical-atom-7c3019347764a54f"></a>
 
 ```
 (() => () => true)()()
@@ -611,6 +459,8 @@ return 2 + 2
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00273))_
 
+<a id="atom-technical-atom-6a7b1c7102f82932"></a>
+
 ```
 (room) => {}
 ```
@@ -622,6 +472,8 @@ return 2 + 2
 > I'm sure you are perfectly comfortable with the idea that this function has two arguments, room , and board . What does one do with the arguments? Use them in the body, of course. What do you think this is?
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00275))_
+
+<a id="atom-technical-atom-e3d6fc001ce32d0d"></a>
 
 ```
 (room, board) => {}
@@ -635,6 +487,8 @@ return 2 + 2
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00277))_
 
+<a id="atom-technical-atom-8b0b88078e233caf"></a>
+
 ```
 (diameter) => diameter * 3.14159265
 ```
@@ -646,6 +500,8 @@ return 2 + 2
 > You won't be surprised to see how to write and apply a function to two arguments:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00280))_
+
+<a id="atom-technical-atom-8b01b9d30a77b780"></a>
 
 ```
 ((diameter) => diameter * 3.14159265)(2)
@@ -660,6 +516,8 @@ return 2 + 2
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00283))_
 
+<a id="atom-technical-atom-ec0274d1c7132fae"></a>
+
 ```
 ((room, board) => room + board)(800, 150)
 //=> 950
@@ -667,11 +525,13 @@ return 2 + 2
 
 ### Technical frame 25: And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00300))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00301))_
 
-> (x) => (y) => x just looks crazy, as if we are learning English as a second language and the teacher promises us that soon we will be using words like antidisestablishmentarianism . Besides a desire to use long words to sound impressive, this is not going to seem attractive until we find ourselves wanting to discuss the role of the Church of England in 19th century British politics.
+> But there's another reason for learning the word antidisestablishmentarianism : We might learn how prefixes and postfixes work in English grammar. It's the same thing with (x) => (y) => x . It has a certain important meaning in its own right, and it's also an excellent excuse to learn about functions that make functions, environments, variables, and more.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00299))_
+
+<a id="atom-technical-atom-3aa4f4b69198f2f9"></a>
 
 ```
 (x) => (y) => x
@@ -684,6 +544,8 @@ return 2 + 2
 > The value '2' is bound to the name 'x' in the environment.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00306))_
+
+<a id="atom-technical-atom-4a548db5b5a8be44"></a>
 
 ```
 ((x) => x)(2)
@@ -698,6 +560,8 @@ return 2 + 2
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00327))_
 
+<a id="atom-technical-atom-352494efef5d9591"></a>
+
 ```
 (value) =>
 ((ref1, ref2) => ref1 === ref2)(value, value)
@@ -711,6 +575,8 @@ return 2 + 2
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00351))_
 
+<a id="atom-technical-atom-022fdc90abb9f966"></a>
+
 > If pure functions can contain closures, can a closure contain a pure function?
 
 ### Technical frame 29: And also: / Closures and Scope / it's always the environment
@@ -721,6 +587,8 @@ return 2 + 2
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00356))_
 
+<a id="atom-technical-atom-634e3513bd1b5d02"></a>
+
 > So whenever a function is applied to arguments, its environment always has a reference to its parent environment.
 
 ### Technical frame 30: And also: / Closures and Scope / it's always the environment
@@ -730,6 +598,8 @@ return 2 + 2
 > Only you call it with (1)(2)(3) instead of (1, 2, 3) . The other big difference is that you can call it with (1) and get a function back that you can later call with (2)(3) .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00360))_
+
+<a id="atom-technical-atom-25dfc322e92bb80d"></a>
 
 ```
 bh
@@ -742,6 +612,8 @@ bh
 > Only you call it with (1)(2)(3) instead of (1, 2, 3) . The other big difference is that you can call it with (1) and get a function back that you can later call with (2)(3) .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00362))_
+
+<a id="atom-technical-atom-af55a2cd0e53b310"></a>
 
 ```
 (x) =>
@@ -757,6 +629,8 @@ bh
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00364))_
 
+<a id="atom-technical-atom-2bf197b4e3f33351"></a>
+
 ```
 (x, y, z) => x + y + z
 ```
@@ -769,6 +643,8 @@ bh
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00381))_
 
+<a id="atom-technical-atom-ac56068d50c46aef"></a>
+
 > If you don't want your code to operate directly within the global environment, what can you do?
 
 ### Technical frame 34: And also: / That Constant Coffee Craving
@@ -778,6 +654,8 @@ bh
 > This expression, when evaluated, returns a function that calculates circumferences. That sounds bad, but when we think about it, (diameter) => diameter * 3.14159265 is also an expression, that when evaluated, returns a function that calculates circumferences. All of our 'functions' are expressions. This one has a few more moving parts, that's all. But we can use it just like (diameter) => diameter * 3.14159265 .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00389))_
+
+<a id="atom-technical-atom-115c32a1871b07e7"></a>
 
 ```
 ((PI) =>
@@ -793,6 +671,8 @@ bh
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00391))_
 
+<a id="atom-technical-atom-cb937ee0cbf9e345"></a>
+
 ```
 ((PI) =>
 (diameter) => diameter * PI
@@ -807,6 +687,8 @@ bh
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00399))_
 
+<a id="atom-technical-atom-0b04a5eefd97d2db"></a>
+
 ```
 (diameter) =>
 ((PI) =>
@@ -820,6 +702,8 @@ diameter * PI)(3.14159265)
 > Which one is better? Well, the first one seems simplest, but a half-century of experience has taught us that names matter. A 'magic literal' like 3.14159265 is anathema to sustainable software development.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00401))_
+
+<a id="atom-technical-atom-bcfcee9cd8ad8fd7"></a>
 
 ```
 ((diameter) => diameter * 3.14159265)(2)
@@ -842,6 +726,8 @@ diameter * PI)(3.14159265))(2)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00405))_
 
+<a id="atom-technical-atom-ddeb9767d36d61f0"></a>
+
 ```
 (diameter) =>
 // ...
@@ -855,6 +741,8 @@ diameter * PI)(3.14159265))(2)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00416))_
 
+<a id="atom-technical-atom-9748fc02adddeb23"></a>
+
 ```
 (diameter, PI) => diameter * PI
 ```
@@ -866,6 +754,8 @@ diameter * PI)(3.14159265))(2)
 > Notice calc(d) ? This underscores what we've said: if we have an expression that evaluates to a function, we apply it with () . A name that's bound to a function is a valid expression evaluating to a function. 30
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00431))_
+
+<a id="atom-technical-atom-21fe35262939d1dc"></a>
 
 ```
 (d) => {
@@ -885,6 +775,8 @@ return "The circumference is " + calc(d)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00432))_
 
+<a id="atom-technical-atom-7cfbdf50ede10fea"></a>
+
 > This underscores what we've said: if we have an expression that evaluates to a function, we apply it with () .
 
 ### Technical frame 42: And also: / That Constant Coffee Craving / nested blocks
@@ -894,6 +786,8 @@ return "The circumference is " + calc(d)
 > The if statement is a statement, not an expression (an unfortunate design choice), and its clauses are statements or blocks. So we could also write something like:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00439))_
+
+<a id="atom-technical-atom-179dd365e9382c9f"></a>
 
 ```
 (n) => {
@@ -915,6 +809,8 @@ return even(n)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00451))_
 
+<a id="atom-technical-atom-59fe384c5a8d5e2d"></a>
+
 ```
 ((diameter_fn) =>
 // ...
@@ -927,11 +823,13 @@ return even(n)
 
 ### Technical frame 44: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00473))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00475))_
 
-> And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the 'outer' environment? Let's rewrite things slightly differently:
+> Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI . Does that binding 'overwrite' the outer one? Will our function return 6 or 6.2831853 ? This is a book, you've already scanned ahead, so you know that the answer is no , the inner binding does not overwrite the outer binding:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00472))_
+
+<a id="atom-technical-atom-cffdad27f95f7db7"></a>
 
 ```
 ((PI) =>
@@ -950,6 +848,8 @@ return even(n)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00474))_
 
+<a id="atom-technical-atom-bd9435d4a2d0ab5a"></a>
+
 ```
 ((PI) => {
 ((PI) => {})(3);
@@ -964,6 +864,8 @@ return (diameter) => diameter * PI;
 > We say that when we bind a variable using a parameter inside another binding, the inner binding shadows the outer binding. It has effect inside its own scope, but does not affect the binding in the enclosing scope.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00476))_
+
+<a id="atom-technical-atom-5ee3571022440691"></a>
 
 ```
 ((PI) => {
@@ -980,6 +882,8 @@ return (diameter) => diameter * PI;
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00482))_
+
+<a id="atom-technical-atom-2dde6743679c8a4b"></a>
 
 ```
 if (true) {
@@ -1010,6 +914,8 @@ return diameter * PI;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00483))_
 
+<a id="atom-technical-atom-bdd5dd7c22cb3cef"></a>
+
 ```
 })(2)
 //=> 6.2831853
@@ -1022,6 +928,8 @@ return diameter * PI;
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00486))_
+
+<a id="atom-technical-atom-d1848416f5b4149d"></a>
 
 ```
 ((diameter) => {
@@ -1042,6 +950,8 @@ return diameter * PI;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00487))_
 
+<a id="atom-technical-atom-cfed28fee17d44c4"></a>
+
 > If const always bound its value to the name defined in the function's environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents.
 
 ### Technical frame 51: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
@@ -1051,6 +961,8 @@ return diameter * PI;
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00488))_
+
+<a id="atom-technical-atom-0c5d98acca1d8c87"></a>
 
 ```
 ((diameter) => {
@@ -1070,6 +982,8 @@ return diameter * PI;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00500))_
 
+<a id="atom-technical-atom-c6844fc1ab0f403a"></a>
+
 ```
 const repeat = (str) => str + str
 ```
@@ -1081,6 +995,8 @@ const repeat = (str) => str + str
 > Something else we're about to discuss is optional.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00505))_
+
+<a id="atom-technical-atom-5678cd19e7fe129e"></a>
 
 ```
 (str) => str + str
@@ -1094,6 +1010,8 @@ const repeat = (str) => str + str
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00507))_
 
+<a id="atom-technical-atom-4892b44040deaa12"></a>
+
 ```
 function (str) { return str + str }
 ```
@@ -1106,6 +1024,8 @@ function (str) { return str + str }
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00515))_
 
+<a id="atom-technical-atom-263a35e1362152b8"></a>
+
 ```
 (n) => (1.618**n - -1.618**-n) / 2.236
 ```
@@ -1117,6 +1037,8 @@ function (str) { return str + str }
 > In this expression, double is the name in the environment, but repeat is the function's actual name. This is a named function expression . That may seem confusing, but think of the binding names as properties of the environment, not of the function. While the name of the function is a property of the function, not of the environment.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00517))_
+
+<a id="atom-technical-atom-4988f07d229ed38d"></a>
 
 ```
 function (n) {
@@ -1131,6 +1053,8 @@ return (1.618**n - -1.618**-n) / 2.236;
 > In this expression, double is the name in the environment, but repeat is the function's actual name. This is a named function expression . That may seem confusing, but think of the binding names as properties of the environment, not of the function. While the name of the function is a property of the function, not of the environment.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00520))_
+
+<a id="atom-technical-atom-3b77ebe4e9b354d7"></a>
 
 ```
 const repeat = function repeat (str) {
@@ -1149,6 +1073,8 @@ return (1.618**n - -1.618**-n) / 2.236;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00522))_
 
+<a id="atom-technical-atom-81cb3037dd7ae143"></a>
+
 ```
 const double = function repeat (str) {
 return str + str;
@@ -1163,6 +1089,8 @@ return str + str;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00528))_
 
+<a id="atom-technical-atom-8b9017e39b6579b1"></a>
+
 ```
 someBackboneView.on('click', function clickHandler () {
 //...
@@ -1176,6 +1104,8 @@ someBackboneView.on('click', function clickHandler () {
 > So 'actualName' isn't bound in the environment where we use the named function expression. Is it bound anywhere else? Yes it is. Here's a function that determines whether a positive integer is even or not. We'll use it in an IIFE so that we don't have to bind it to a name with const :
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00530))_
+
+<a id="atom-technical-atom-1b4e65ac7feab271"></a>
 
 ```
 const bindingName = function actualName () {
@@ -1194,6 +1124,8 @@ actualName
 > Clearly, the name even is bound to the function within the function's body . Is it bound to the function outside of the function's body?
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00532))_
+
+<a id="atom-technical-atom-8a664fe5bf8ee9c2"></a>
 
 ```
 (function even (n) {
@@ -1220,6 +1152,8 @@ else return !even(n - 1)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00534))_
 
+<a id="atom-technical-atom-1e163547ee6c3eac"></a>
+
 ```
 even
 //=> Can't find variable: even
@@ -1232,6 +1166,8 @@ even
 > In that it binds a name in the environment to a named function. However, there are two important differences. First, function declarations are hoisted to the top of the function in which they occur.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00538))_
+
+<a id="atom-technical-atom-642381d95ff4831d"></a>
 
 ```
 function someName () {
@@ -1251,6 +1187,8 @@ const someName = function someName ()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00539))_
 
+<a id="atom-technical-atom-93530060e3dbc4f9"></a>
+
 ```
 {
 ```
@@ -1262,6 +1200,8 @@ const someName = function someName ()
 > We haven't actually bound a function to the name fizzbuzz before we try to use it, so we get an error. But a function declaration works differently:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00542))_
+
+<a id="atom-technical-atom-1a6edd33946284bd"></a>
 
 ```
 (function () {
@@ -1280,6 +1220,8 @@ return "Fizz" + "Buzz";
 > The definition of the fizzbuzz is 'hoisted' to the top of its enclosing scope (an IIFE in this case). This behaviour is intentional on the part of JavaScript's design to facilitate a certain style of programming where you put the main logic up front, and the 'helper functions' at the bottom. It is not necessary to declare functions in this way in JavaScript, but understanding the syntax and its behaviour (especially the way it differs from const ) is essential for working with production code.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00544))_
+
+<a id="atom-technical-atom-66980774291bd9f4"></a>
 
 ```
 (function () {
@@ -1302,6 +1244,8 @@ const fizzbuzz = function fizzbuzz () {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00545))_
 
+<a id="atom-technical-atom-fe1368760c002c91"></a>
+
 ```
 const fizzbuzz = function fizzbuzz ()
 return "Fizz" + "Buzz";
@@ -1317,6 +1261,8 @@ return fizzbuzz();
 > Function declarations are not supposed to occur inside of blocks. The big trouble with expressions like this is that they may work just fine in your test environment but work a different way in production. Or it may work one way today and a different way when the JavaScript engine is updated, say with a new optimization.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00550))_
+
+<a id="atom-technical-atom-8efe555506c14cf1"></a>
 
 ```
 (function (camelCase) {
@@ -1343,6 +1289,8 @@ return "Fizz" + "Buzz";
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00551))_
 
+<a id="atom-technical-atom-8524e5547711bd2a"></a>
+
 > Or it may work one way today and a different way when the JavaScript engine is updated, say with a new optimization.
 
 ### Technical frame 70: And also: / Naming Functions / function declaration caveats 34
@@ -1352,6 +1300,8 @@ return "Fizz" + "Buzz";
 > The parentheses make this an expression, not a function declaration.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00553))_
+
+<a id="atom-technical-atom-29b2a5bf49007ce5"></a>
 
 ```
 function trueDat () { return true }
@@ -1366,6 +1316,8 @@ But this is not:
 > As we've seen, JavaScript functions take values as arguments and return values. JavaScript functions are values, so JavaScript functions can take functions as arguments, return functions, or both. Generally speaking, a function that either takes functions as arguments, or returns a function, or both, is referred to as a 'higher-order' function.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00559))_
+
+<a id="atom-technical-atom-7193eeef1bd53156"></a>
 
 ```
 const repeat = (num, fn) =>
@@ -1390,6 +1342,8 @@ undefined
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00577))_
 
+<a id="atom-technical-atom-16403f5e9983b595"></a>
+
 ```
 const nothing = not(something);
 ```
@@ -1401,6 +1355,8 @@ const nothing = not(something);
 > The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00593))_
+
+<a id="atom-technical-atom-d58c104eac1daf94"></a>
 
 ```
 _.map([1, 2, 3], (n) => n * n)
@@ -1415,6 +1371,8 @@ _.map([1, 2, 3], (n) => n * n)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00596))_
 
+<a id="atom-technical-atom-7e2e343bb8d0ba90"></a>
+
 ```
 const squareAll = (array) => map(array,
 (n) => n * n);
@@ -1428,6 +1386,8 @@ const squareAll = (array) => map(array,
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00598))_
 
+<a id="atom-technical-atom-d427b13c540a373d"></a>
+
 ```
 const mapWith = (fn) =>
 (array) => map(array, fn);
@@ -1438,11 +1398,13 @@ squareAll([1, 2, 3])
 
 ### Technical frame 76: And also: / Magic Names / the function keyword
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00612))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00617))_
 
-> arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:
+> The most common use of the arguments binding is to build functions that can take a variable number of arguments. We'll see it used in many of the recipes, starting off with partial application and ellipses.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00609))_
+
+<a id="atom-technical-atom-013351b465690d3d"></a>
 
 ```
 const plus = function (a, b) {
@@ -1454,11 +1416,13 @@ plus(2,3)
 
 ### Technical frame 77: And also: / Magic Names / the function keyword
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00612))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00617))_
 
-> arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:
+> The most common use of the arguments binding is to build functions that can take a variable number of arguments. We'll see it used in many of the recipes, starting off with partial application and ellipses.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00611))_
+
+<a id="atom-technical-atom-73008766944bbb48"></a>
 
 ```
 const args = function (a, b) {
@@ -1476,6 +1440,8 @@ args(2,3)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00614))_
 
+<a id="atom-technical-atom-8fe93a73e437ee03"></a>
+
 ```
 const plus = function () {
 return arguments[0] + arguments[1];
@@ -1486,11 +1452,13 @@ plus(2,3)
 
 ### Technical frame 79: And also: / Magic Names / magic names and fat arrows
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00622))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00625))_
 
-> But if we use a fat arrow, arguments will be defined in the outer environment, the one defined with function . And thus arguments[0] will refer to "outer" , not to "inner" :
+> To give a contrived example, this function takes a number and returns an array representing a row in a hypothetical multiplication table. It uses mapWith , which we discussed in Building Blocks. 44 We'll use arguments just to show the difference between using a fat arrow and the function keyword:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00621))_
+
+<a id="atom-technical-atom-243e812c5a716d94"></a>
 
 ```
 (function () {
@@ -1501,11 +1469,13 @@ return (function () { return arguments[0]; })('inner');
 
 ### Technical frame 80: And also: / Magic Names / magic names and fat arrows
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00624))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00625))_
 
-> Although it seems quixotic for the two syntaxes to have different semantics, it makes sense when you consider the design goal: Fat arrow functions are designed to be very lightweight and are often used with constructs like mapping or callbacks to emulate syntax.
+> To give a contrived example, this function takes a number and returns an array representing a row in a hypothetical multiplication table. It uses mapWith , which we discussed in Building Blocks. 44 We'll use arguments just to show the difference between using a fat arrow and the function keyword:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00623))_
+
+<a id="atom-technical-atom-733056f2f6551e51"></a>
 
 ```
 (function () {
@@ -1521,6 +1491,8 @@ return (() => arguments[0])('inner');
 > This works just fine, because arguments[0] refers to the 3 we passed to the function row . Our 'fat arrow' function (column) => column * arguments[0] doesn't bind arguments when it's invoked. But if we rewrite row to use the function keyword, it stops working:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00626))_
+
+<a id="atom-technical-atom-f66c3ed611303c0d"></a>
 
 ```
 const row = function () {
@@ -1541,6 +1513,8 @@ row(3)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00629))_
 
+<a id="atom-technical-atom-aeb7942534341524"></a>
+
 ```
 const row = function () {
 return mapWith(
@@ -1560,6 +1534,8 @@ row(3)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00670))_
 
+<a id="atom-technical-atom-234622016e944e78"></a>
+
 ```
 ['1', '2', '3'].map(parseFloat)
 //=> [1, 2, 3]
@@ -1573,6 +1549,8 @@ row(3)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00674))_
 
+<a id="atom-technical-atom-e63879039d2b786d"></a>
+
 > If you pass in a function taking only one argument, it simply ignores the additional arguments.
 
 ### Technical frame 85: Recipes with Basic Functions / Unary
@@ -1582,6 +1560,8 @@ row(3)
 > This doesn't work because parseInt is defined as parseInt(string[, radix]) . It takes an optional radix argument. And when you call parseInt with map , the index is interpreted as a radix. Not good! What we want is to convert parseInt into a function taking only one argument.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00675))_
+
+<a id="atom-technical-atom-39444c72b711b290"></a>
 
 ```
 ['1', '2', '3'].map(parseInt)
@@ -1596,6 +1576,8 @@ row(3)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00677))_
 
+<a id="atom-technical-atom-c6eb6eaeb3b33791"></a>
+
 > Wecould write ['1', '2', '3'].map((s) => parseInt(s)) , or we could come up with a decorator to do the job for us:
 
 ### Technical frame 87: Recipes with Basic Functions / Maybe
@@ -1605,6 +1587,8 @@ row(3)
 > Alternately, the function may be intended to work with any value, but the code calling the function wishes to emulate the behaviour of doing nothing by design when given nothing:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00697))_
+
+<a id="atom-technical-atom-0050ec8e3fdf9f53"></a>
 
 ```
 const isSomething = (value) =>
@@ -1624,6 +1608,8 @@ if (isSomething(value)) {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00699))_
 
+<a id="atom-technical-atom-6e43ace583e3f4ed"></a>
+
 ```
 var something =
 isSomething(value)
@@ -1638,6 +1624,8 @@ isSomething(value)
 > If some code ever tries to call model.setSomething with nothing, the operation will be skipped.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00701))_
+
+<a id="atom-technical-atom-8066787a4a683125"></a>
 
 ```
 const maybe = (fn) =>
@@ -1659,6 +1647,8 @@ if (arg == null) return;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00703))_
 
+<a id="atom-technical-atom-76ebbf2990753f8d"></a>
+
 ```
 return fn.apply(this, args)
 }
@@ -1672,6 +1662,8 @@ return fn.apply(this, args)
 > If some code ever tries to call model.setSomething with nothing, the operation will be skipped.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00705))_
+
+<a id="atom-technical-atom-e759bf9ba4f40ec3"></a>
 
 ```
 maybe((a, b, c) => a + b + c)(1, 2, 3)
@@ -1687,6 +1679,8 @@ maybe((a, b, c) => a + b + c)(1, null, 3)
 > once is an extremely helpful combinator. It ensures that a function can only be called, well, once . Here's the recipe:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00711))_
+
+<a id="atom-technical-atom-2388b6615c013cfa"></a>
 
 ```
 const once = (fn) => {
@@ -1704,6 +1698,8 @@ return done ? void 0 : ((done = true), fn.apply(this, arguments))
 > once is an extremely helpful combinator. It ensures that a function can only be called, well, once . Here's the recipe:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00713))_
+
+<a id="atom-technical-atom-4a54ace1417283a8"></a>
 
 ```
 const askedOnBlindDate = once(
@@ -1725,6 +1721,8 @@ askedOnBlindDate()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00718))_
 
+<a id="atom-technical-atom-2cf7e32d0c999fe7"></a>
+
 ```
 const abccc = (a, b, ...c) => {
 console.log(a);
@@ -1744,6 +1742,8 @@ abccc(1, 2, 3, 4, 5)
 > 52 English is about as inconsistent as JavaScript: Functions with a fixed number of arguments can be unary, binary, ternary, and so forth. But can they be 'variary?' No! They have to be 'variadic.'
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00720))_
+
+<a id="atom-technical-atom-f601b03ee56b156a"></a>
 
 ```
 function team(coach, captain, ...players) {
@@ -1772,6 +1772,8 @@ But we can’t go the other way around:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00722))_
 
+<a id="atom-technical-atom-99a0f4a090bc346d"></a>
+
 ```
 function team2(...players, captain, coach) {
 console.log(`${captain} (captain)`);
@@ -1785,11 +1787,13 @@ console.log(`squad coached by ${coach}`);
 
 ### Technical frame 97: Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00747))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00749))_
 
-> But we can write our own left-gathering function utility using the same principles without all the tedium:
+> With leftGather , we have to supply the length of the array we wish to use as the result, and it gathers excess arguments into it from the left, just like leftVariadic gathers excess parameters for a function.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00742))_
+
+<a id="atom-technical-atom-eb3ab57c56a2f7dd"></a>
 
 ```
 const [first, ...butFirst] = ['why', 'hello', 'there', 'little', 'droid'];
@@ -1806,6 +1810,8 @@ butFirst
 > With leftGather , we have to supply the length of the array we wish to use as the result, and it gathers excess arguments into it from the left, just like leftVariadic gathers excess parameters for a function.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00748))_
+
+<a id="atom-technical-atom-fcb9efdca6bc6168"></a>
 
 ```
 const leftGather = (outputArrayLength) => {
@@ -1832,6 +1838,8 @@ last
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00802))_
 
+<a id="atom-technical-atom-f6692ca904d56bf1"></a>
+
 ```
 const or = (a, b) => a || b
 const and = (a, b) => a && b
@@ -1848,6 +1856,8 @@ even(42)
 > Here we've passed functions that contain the expressions we want to evaluate, and now we can write our own functions that can delay evaluation.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00805))_
+
+<a id="atom-technical-atom-85184dcfdb4ac959"></a>
 
 ```
 const or = (a, b) => a() || b()
@@ -1866,6 +1876,8 @@ even(7)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00900))_
 
+<a id="atom-technical-atom-e298cdaa6ee5e32b"></a>
+
 ```
 const length = ([first, ...rest]) =>
 first === undefined
@@ -1880,6 +1892,8 @@ first === undefined
 > Our length function is recursive , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00902))_
+
+<a id="atom-technical-atom-dce776a77328aa08"></a>
 
 ```
 const length = ([first, ...rest]) =>
@@ -1902,6 +1916,8 @@ length(["foo", "bar", "baz"])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00903))_
 
+<a id="atom-technical-atom-65ebfed4d2b01ae4"></a>
+
 ```
 //=> 3
 ```
@@ -1913,6 +1929,8 @@ length(["foo", "bar", "baz"])
 > Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and composing a solution from the solved portions.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00922))_
+
+<a id="atom-technical-atom-e2cf71b057b0a93b"></a>
 
 ```
 const flatten = ([first, ...rest]) => {
@@ -1938,6 +1956,8 @@ flatten(["foo", [3, 4, []]])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00934))_
 
+<a id="atom-technical-atom-829e3201ad2e303b"></a>
+
 ```
 const mapWith = (fn, [first, ...rest]) =>
 first === undefined
@@ -1951,11 +1971,13 @@ mapWith((x) => !!x, [null, true, 25, false, "foo"])
 
 ### Technical frame 106: Composing and Decomposing Data / Self-Similarity / folding
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00943))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00945))_
 
-> And now we supply a function that does slightly more than our mapping functions:
+> Our foldWith function is a generalization of our mapWith function. We can represent a map as a fold, we just need to supply the array rebuilding code:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00937))_
+
+<a id="atom-technical-atom-9feefbdde8f3ed2c"></a>
 
 ```
 const sumSquares = ([first, ...rest]) => first === undefined
@@ -1973,6 +1995,8 @@ sumSquares([1, 2, 3, 4, 5])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00944))_
 
+<a id="atom-technical-atom-50945a3512f71e5d"></a>
+
 ```
 foldWith((number, rest) => number * number + rest, 0, [1, 2, 3, 4, 5])
 //=> 55
@@ -1980,11 +2004,13 @@ foldWith((number, rest) => number * number + rest, 0, [1, 2, 3, 4, 5])
 
 ### Technical frame 108: Composing and Decomposing Data / Self-Similarity / folding
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00949))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00945))_
 
-> And to return to our first example, our version of length can be written as a fold:
+> Our foldWith function is a generalization of our mapWith function. We can represent a map as a fold, we just need to supply the array rebuilding code:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00946))_
+
+<a id="atom-technical-atom-5f6feca38471ebf3"></a>
 
 ```
 const squareAll = (array) => foldWith((first, rest) => [first * first, ...rest],\
@@ -2000,6 +2026,8 @@ squareAll([1, 2, 3, 4, 5])
 > Let's step through its execution. First, mapWith((x) => x * x, [1, 2, 3, 4, 5]) is invoked. first is not undefined , so it evaluates [fn(first), …mapWith(fn, rest)]. To do that, it has to evaluate fn(first) and mapWith(fn, rest) , then evaluate [fn(first), ...mapWith(fn, rest)] .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00956))_
+
+<a id="atom-technical-atom-75e4f35af8eeaf3f"></a>
 
 ```
 const mapWith = (fn, [first, ...rest]) =>
@@ -2017,6 +2045,8 @@ mapWith((x) => x * x, [1, 2, 3, 4, 5])
 > There are three places it returns. The first two don't return anything, they don't matter. But the third is fn.apply(this, args) . This is a tail-call, because it invokes another function and returns its result. This is interesting, because after sorting out what to supply as arguments ( this , args ), JavaScript can throw away everything in its current stack frame. It isn't going to do any more work, so it can throw its existing stack frame away.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00969))_
+
+<a id="atom-technical-atom-a6d838fc3442cb2f"></a>
 
 ```
 const maybe = (fn) =>
@@ -2041,6 +2071,8 @@ return fn.apply(this, args);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00973))_
 
+<a id="atom-technical-atom-2634a0aa2029afd4"></a>
+
 ```
 const length = ([first, ...rest]) =>
 first === undefined
@@ -2055,6 +2087,8 @@ first === undefined
 > This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we've seen how it works, we can clean up the 0 + numberToBeAdded business. But while we're doing that, it's annoying to remember to call it with a zero. Let's fix that:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00979))_
+
+<a id="atom-technical-atom-d0492cb61af780f2"></a>
 
 ```
 const lengthDelaysWork = ([first, ...rest], numberToBeAdded) =>
@@ -2073,6 +2107,8 @@ lengthDelaysWork(["foo", "bar", "baz"], 0)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00981))_
 
+<a id="atom-technical-atom-04ddfbb646c44eec"></a>
+
 ```
 const lengthDelaysWork = ([first, ...rest], numberToBeAdded) =>
 first === undefined
@@ -2090,6 +2126,8 @@ lengthDelaysWork(n, 0);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00982))_
 
+<a id="atom-technical-atom-fb0a210bf03406d6"></a>
+
 ```
 Or we could use partial application:
 const callLast = (fn, ...args) =>
@@ -2102,11 +2140,13 @@ length(["foo", "bar", "baz"])
 
 ### Technical frame 115: Composing and Decomposing Data / Tail Calls (and Default Arguments) / factorials
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00993))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00994))_
 
-> While this is mathematically elegant, it is computational filigree 63 .
+> Once again, it is not tail-recursive, it needs to save the stack with each invocation so that it can take the result returned and compute n * factorial(n -1) . We can do the same conversion, pass in the work to be done:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00992))_
+
+<a id="atom-technical-atom-2b5a4752af84217f"></a>
 
 ```
 const factorial = (n) =>
@@ -2126,6 +2166,8 @@ factorial(5)
 > Now we don't need to use two functions. A default argument is concise and readable.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01008))_
+
+<a id="atom-technical-atom-e841272be520e519"></a>
 
 ```
 const length = ([first, ...rest], numberToBeAdded = 0) =>
@@ -2150,6 +2192,8 @@ mapWith((x) => x * x, [1, 2, 3, 4, 5])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01192))_
 
+<a id="atom-technical-atom-63d61c60ed87d9a8"></a>
+
 ```
 (() => {
 var age = 49;
@@ -2168,6 +2212,8 @@ return age;
 > In that way, var is a little like const and let , we should always declare and bind names before using them. But it's not like const and let in that it's function scoped, not block scoped.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01195))_
+
+<a id="atom-technical-atom-1a419a25617e5303"></a>
 
 ```
 const factorial = (n) => {
@@ -2193,6 +2239,8 @@ factorial(4)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01212))_
 
+<a id="atom-technical-atom-1a0a0e203beae22d"></a>
+
 ```
 introductions[1]('Raganwald')
 //=> 'Hello, Raganwald, my name is undefined'
@@ -2205,6 +2253,8 @@ introductions[1]('Raganwald')
 > A function that starts with a seed and expands it into a data structure is called an unfold . It's the opposite of a fold. It's possible to write a generic unfold mechanism, but let's pass on to what we can do with unfolded iterators.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01300))_
+
+<a id="atom-technical-atom-0ec5247e8a0095b9"></a>
 
 ```
 const NumberIterator = (number = 0) =>
@@ -2229,6 +2279,8 @@ fromOne().value;
 > How about the squares of the first five odd numbers? We'll need an iterator that produces odd numbers. We can write that directly:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01308))_
+
+<a id="atom-technical-atom-b6c7b5f8c2b10650"></a>
 
 ```
 const take = (iterator, numberToTake) => {
@@ -2263,6 +2315,8 @@ toArray(take(squares, 5))
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01313))_
 
+<a id="atom-technical-atom-4efea8fa4b4f428a"></a>
+
 ```
 const filterIteratorWith = (fn, iterator) =>
 () => {
@@ -2283,6 +2337,8 @@ toArray(take(squareOf(oddsOf(NumberIterator(1))), 5))
 > A very long time ago, mathematicians like Alonzo Church, Moses Schönfinkel, Alan Turning, and Haskell Curry and asked themselves if we really needed all these features to perform computations. They searched for a radically simpler set of tools that could accomplish all of the same things.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01329))_
+
+<a id="atom-technical-atom-8099f5b267d8f12e"></a>
 
 ```
 const EMPTY = {};
@@ -2310,6 +2366,8 @@ length(OneTwoThree)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01346))_
 
+<a id="atom-technical-atom-150ac9277cfd9a5b"></a>
+
 ```
 Therefore, K(I)(x)(y) => y:
 ```
@@ -2321,6 +2379,8 @@ Therefore, K(I)(x)(y) => y:
 > This is very interesting. Given two values, we can say that K always returns the first value, and given two values, K(I) always returns the second value.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01347))_
+
+<a id="atom-technical-atom-61793a1442767bc8"></a>
 
 ```
 K(I)(6)(7)
@@ -2336,6 +2396,8 @@ K(I)(12)(24)
 > This is very interesting. Given two values, we can say that K always returns the first value, and given two values, K(I) always returns the second value.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01351))_
+
+<a id="atom-technical-atom-18db0560e38997a6"></a>
 
 ```
 const first = K,
@@ -2353,6 +2415,8 @@ second("primus")("secundus")
 > In both cases, the functions first and second know how the data is represented, whether it be an array or an object. You pass the data to these functions, and they extract it.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01355))_
+
+<a id="atom-technical-atom-a507715e23aece58"></a>
 
 ```
 const first = ([first, second]) => first,
@@ -2372,6 +2436,8 @@ second(latin)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01366))_
 
+<a id="atom-technical-atom-33d508801ab09389"></a>
+
 ```
 (first, second) => (selector) => selector(first)(second)
 ```
@@ -2384,6 +2450,8 @@ second(latin)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01368))_
 
+<a id="atom-technical-atom-d239a09115d21f68"></a>
+
 ```
 (first) => (second) => (selector) => selector(first)(second)
 ```
@@ -2395,6 +2463,8 @@ second(latin)
 > As an aside, the Vireo is a little like JavaScript's .apply function. It says, 'take these two values and apply them to this function.' There are other, similar combinators that apply values to functions. One notable example is the 'thrush' or T combinator: It takes one value and applies it to a function. It is known to most programmers as .tap .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01370))_
+
+<a id="atom-technical-atom-f5a74a636a28bf0f"></a>
 
 ```
 const first = K,
@@ -2415,6 +2485,8 @@ latin(second)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01371))_
 
+<a id="atom-technical-atom-efdd17c1e988c898"></a>
+
 > If we change the names to x , y , and z , we get: (x) => (y) => (z) => z(x)(y) .
 
 ### Technical frame 132: Yes. Consider this variation: / Making Data Out Of Functions / the vireo
@@ -2424,6 +2496,8 @@ latin(second)
 > As an aside, the Vireo is a little like JavaScript's .apply function. It says, 'take these two values and apply them to this function.' There are other, similar combinators that apply values to functions. One notable example is the 'thrush' or T combinator: It takes one value and applies it to a function. It is known to most programmers as .tap .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01373))_
+
+<a id="atom-technical-atom-848abd9361a0c2c5"></a>
 
 ```
 const first = K,
@@ -2443,6 +2517,8 @@ latin(second)
 > Presto, we can use pure functions to represent a linked list . And with care, we can do amazing things like use functions to represent numbers, build more complex data structures like trees, and in fact, anything that can be computed can be computed using just functions and nothing else.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01380))_
+
+<a id="atom-technical-atom-0911e44845c5a8dc"></a>
 
 ```
 const length = (aPair) =>
@@ -2483,6 +2559,8 @@ const l123 = pair(1)(pair(2)(pair(3)(EMPTY)));
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01381))_
 
+<a id="atom-technical-atom-0231efcf9de2fb7c"></a>
+
 ```
 rest
 = K(I),
@@ -2502,6 +2580,8 @@ l123(rest)(first)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01382))_
 
+<a id="atom-technical-atom-ad481489b3763dce"></a>
+
 ```
 //=> 2
 return l123(rest)(rest)(first)
@@ -2516,6 +2596,8 @@ We write them in a backwards way, but they seem to work. How about
 > We can write reverse and mapWith as well. We aren't being super-strict about emulating combinatory logic, we'll use default parameters:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01395))_
+
+<a id="atom-technical-atom-f83abdf8e28a311c"></a>
 
 ```
 const pairFirst = K,
@@ -2536,6 +2618,8 @@ const rest = (list) => list(
 > We can write reverse and mapWith as well. We aren't being super-strict about emulating combinatory logic, we'll use default parameters:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01396))_
+
+<a id="atom-technical-atom-6a8000d81ef5c081"></a>
 
 ```
 () => "ERROR: Can't take first of an empty list",
@@ -2569,6 +2653,8 @@ print(l123)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01415))_
 
+<a id="atom-technical-atom-7584d0bd3f95e295"></a>
+
 ```
 const length = (list) => list(
 () => 0,
@@ -2584,6 +2670,8 @@ const length = (list) => list(
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01418))_
 
+<a id="atom-technical-atom-f6632ca1ca20da83"></a>
+
 ```
 const length = (node, delayed = 0) =>
 node === EMPTY
@@ -2598,6 +2686,8 @@ node === EMPTY
 > Sometimes we'll want to flip a function, but retain the flexibility to call it in its curried form (pass one parameter) or non-curried form (pass both). We could make that into flip :
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01467))_
+
+<a id="atom-technical-atom-c08628393adc0e69"></a>
 
 ```
 const flip = (fn) =>
@@ -2621,6 +2711,8 @@ return fn(second, first);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01468))_
 
+<a id="atom-technical-atom-b23695ce3f4989e7"></a>
+
 > Nowif we write mapWith = flip(map) , we can call mapWith(fn, list) or mapWith(fn)(list) , our choice.
 
 ### Technical frame 142: Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators
@@ -2630,6 +2722,8 @@ return fn(second, first);
 > We could save a step and write collectionSum , a function that folds over any object, provided that the object implements an .iterator method:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01533))_
+
+<a id="atom-technical-atom-0494f9669763f688"></a>
 
 ```
 const Stack1 = () =>
@@ -2679,6 +2773,8 @@ stack.push("you!")
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01534))_
 
+<a id="atom-technical-atom-977c2f6172e80243"></a>
+
 ```
 const iter = stack.iterator();
 iter().value
@@ -2694,6 +2790,8 @@ iter().value
 > We could save a step and write collectionSum , a function that folds over any object, provided that the object implements an .iterator method:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01538))_
+
+<a id="atom-technical-atom-ef867f51aa5d4e3b"></a>
 
 ```
 const iteratorSum = (iterator) => {
@@ -2713,6 +2811,8 @@ return sum
 > If we write a program with the presumption that 'everything is an object,' we can write maps, folds, and filters that work on objects. We just ask the object for an iterator, and work on the iterator. Our functions don't need to know anything about how an object implements iteration, and we get the benefit of lazily traversing our objects.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01542))_
+
+<a id="atom-technical-atom-bc96f54b184676fd"></a>
 
 ```
 const collectionSum = (collection) => {
@@ -2736,118 +2836,22 @@ collectionSum(stack)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01613))_
 
+<a id="atom-technical-atom-519518765b459b83"></a>
+
 ```
 Array.from(UpTo1000)
 //=> [1,81,121,361,441,841,961]
 ```
 
-### Technical frame 147: Like this: / Generating Iterables
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01630))_
-
-> Well, we've written our iterator as a server . It waits until given a request, and then it returns exactly one item. Then it waits for the next request. There is no concept of pushing numbers out from the iterator, just waiting until a number is pulled out of the iterator by whatever code consumes numbers.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01627))_
-
-> Iterators have to arrange its own state such that when you call them, they compute and return the next item.
-
-### Technical frame 148: Like this: / Generating Iterables / recursive iterators
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01643))_
-
-> If you peel off isIterable and ignore the way that the iteration version uses [Symbol.iterator] and .next , we're left with the fact that the generating version calls itself recursively, and the iteration version maintains an explicit stack. In essence, both the generation and iteration implementations have stacks, but the generation version's stack is implicit , while the iteration version's stack is explicit .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01642))_
-
-```
-const isIterable = (something) =>
-!!something[Symbol.iterator];
-const treeIterator = (iterable) => {
-const iterators = [ iterable[Symbol.iterator]() ];
-return () => {
-while (!!iterators[0]) {
-const iterationResult = iterators[0].next();
-if (iterationResult.done) {
-iterators.shift();
-}
-else if (isIterable(iterationResult.value)) {
-iterators.unshift(iterationResult.value[Symbol.iterator]());
-}
-else {
-return iterationResult.value;
-}
-}
-return;
-}
-}
-const i = treeIterator([1, [2, [3, 4], 5]]);
-let n;
-while (n = i()) {
-console.log(n)
-}
-//=>
-1
-2
-3
-4
-5
-```
-
-### Technical frame 149: Like this: / Generating Iterables / state machines
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01653))_
-
-> The thing to note here is that our fibonacci generator has three states: generating 0 , generating 1 , and generating everything after that. This isn't a good fit for an iterator, because iterators have one functional entry point and therefore, we'd have to represent our three states explicitly, perhaps using a state pattern 90 :
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01651))_
-
-```
-// Generation
-const fibonacci = () => {
-let a, b;
-console.log(a = 0);
-console.log(b = 1);
-while (true) {
-[a, b] = [b, a + b];
-console.log(b);
-}
-}
-fibonacci()
-//=>
-0
-1
-1
-2
-3
-5
-8
-13
-21
-34
-```
-
-### Technical frame 150: Like this: / Generating Iterables / state machines
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01653))_
-
-> The thing to note here is that our fibonacci generator has three states: generating 0 , generating 1 , and generating everything after that. This isn't a good fit for an iterator, because iterators have one functional entry point and therefore, we'd have to represent our three states explicitly, perhaps using a state pattern 90 :
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01652))_
-
-```
-55
-89
-144
-...
-```
-
-### Technical frame 151: We'll keep it simple: / javascript's generators
+### Technical frame 147: We'll keep it simple: / javascript's generators
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01671))_
 
 > Invoking only("you") returns an iterator that we can call with .next() , and it yields "you" . Invoking only more than once gives us fresh iterators each time:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01670))_
+
+<a id="atom-technical-atom-f8e039c42865fbe9"></a>
 
 ```
 function * only (something) {
@@ -2858,7 +2862,7 @@ only("you").next()
 {"done":false, value: "you"}
 ```
 
-### Technical frame 152: We'll keep it simple: / generators and iterables
+### Technical frame 148: We'll keep it simple: / generators and iterables
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01712))_
 
@@ -2866,15 +2870,19 @@ only("you").next()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01709))_
 
+<a id="atom-technical-atom-f851858a3f0a60d5"></a>
+
 > If we call our generator function more than once, we get new iterators.
 
-### Technical frame 153: We'll keep it simple: / generators and iterables
+### Technical frame 149: We'll keep it simple: / generators and iterables
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01712))_
 
 > This pattern is encouraged, so much so that JavaScript provides a concise syntax for writing generator methods for objects:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01710))_
+
+<a id="atom-technical-atom-df68b9aee54b4fac"></a>
 
 ```
 const ThreeNumbers = {
@@ -2909,13 +2917,15 @@ iterator.next()
 {"done":true}
 ```
 
-### Technical frame 154: We'll keep it simple: / generators and iterables
+### Technical frame 150: We'll keep it simple: / generators and iterables
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01714))_
 
 > This object declares a [Symbol.iterator] function that makes it iterable. Because it's declared *[Symbol.iterator] , it's a generator instead of an iterator.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01713))_
+
+<a id="atom-technical-atom-08b3d4cd0486cddf"></a>
 
 ```
 const ThreeNumbers = {
@@ -2927,13 +2937,15 @@ yield 3
 }
 ```
 
-### Technical frame 155: We'll keep it simple: / more generators
+### Technical frame 151: We'll keep it simple: / more generators
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01725))_
 
 > We've writing a function that returns an iterator, but we used a generator to do it. And the generator's syntax allows us to use JavaScript's natural management of state instead of constantly rolling our own.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01727))_
+
+<a id="atom-technical-atom-10237a444786ad38"></a>
 
 ```
 function * fibonacci () {
@@ -2965,13 +2977,15 @@ console.log(i);
 ...
 ```
 
-### Technical frame 156: We'll keep it simple: / yielding iterables
+### Technical frame 152: We'll keep it simple: / yielding iterables
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01731))_
 
 > We've gone with the full iterable here, a TreeIterable(iterable) returns an iterable that treats iterable as a tree. It works, but as we've just seen, a function that returns an iterable can often be written much more simply as a generator, rather than a function that returns an iterable object: 93
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01730))_
+
+<a id="atom-technical-atom-c3426fdb123a0599"></a>
 
 ```
 const isIterable = (something) =>
@@ -3002,7 +3016,7 @@ console.log(i);
 5
 ```
 
-### Technical frame 157: We'll keep it simple: / yielding iterables
+### Technical frame 153: We'll keep it simple: / yielding iterables
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01734))_
 
@@ -3010,15 +3024,19 @@ console.log(i);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01732))_
 
+<a id="atom-technical-atom-aa5a13c431df832a"></a>
+
 > But if you can write it as a simple generator, write it as a simple generator.
 
-### Technical frame 158: We'll keep it simple: / yielding iterables
+### Technical frame 154: We'll keep it simple: / yielding iterables
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01734))_
 
 > Wetake advantage of the for...of loop in a plain and direct way: For each element e , if it is iterable, treat it as a tree and iterate over it, yielding each of its elements. If e is not an iterable, yield e .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01733))_
+
+<a id="atom-technical-atom-79c4ba4c0edddbb5"></a>
 
 ```
 function * tree (iterable) {
@@ -3044,13 +3062,15 @@ console.log(i);
 5
 ```
 
-### Technical frame 159: We get: / interactive generators
+### Technical frame 155: We get: / interactive generators
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01941))_
 
 > Served by the Pot: Collections 260 } } break ; // ... } } const aNaughtsAndCrossesGame = generatorNaughtsAndCrosses(); We can then get the first move by calling .next() . Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn't started yet. If we wanted to pass some state to the generator before it begins, we'd do that with parameters.): aNaughtsAndCrossesGame.next().value //=> 0 aNaughtsAndCrossesGame.next(1)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01940))_
+
+<a id="atom-technical-atom-c587d1518ea98f21"></a>
 
 ```
 function* generatorNaughtsAndCrosses () {
@@ -3079,31 +3099,9 @@ yield 7;
 break;
 ```
 
-### Technical atom 160
+### Technical atom 156
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00091))_
-
-| entry | content |
-| --- | --- |
-| 5 | http://www.fogus.me Like JavaScript itself, this book gives you a gentle start before showing you its full depth, and like a Cafe Allongé, it's over too soon. Enjoy! -Matthew Knox, mattknox.com 6 |
-| 6 | http://mattknox.com |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-matthew knox
-A different kind of language requires a different kind of book.
-JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor strictly dynamic, and it supports procedural, object-oriented (in several flavors!), and functional programming. Many books try to hide most of those capabilities away, giving you recipes for writing JavaScript in a way that approximates class-centric programming in other languages. Not JavaScript Allongé. It starts with the fundamentals of values, functions, and objects, and then guides you through JavaScript from the inside with exploratory bits of code that illustrate scoping, combinators, context, state, prototypes, and constructors.
-5 http://www.fogus.me
-Like JavaScript itself, this book gives you a gentle start before showing you its full depth, and like a Cafe Allongé, it's over too soon. Enjoy!
--Matthew Knox, mattknox.com 6
-6 http://mattknox.com
-```
-
-</details>
-
-### Technical atom 161
+<a id="atom-technical-atom-6eea21698f698a20"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00236))_
 
@@ -3111,68 +3109,26 @@ Like JavaScript itself, this book gives you a gentle start before showing you it
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00234))_
 
-| entry | content |
-| --- | --- |
-| 19 | Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This was actually the preferred mechanism until void became commonplace. |
-| 20 | As an exercise for the reader, we suggest you ask your friendly neighbourhood programming language designer or human factors subjectmatter expert to explain why a keyword called void is used to generate an undefined value, instead of calling them both void or both undefined . We have no idea. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 back on the block
 Back to our function. We evaluated this:
 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This was actually the preferred mechanism until void became commonplace.
 20 As an exercise for the reader, we suggest you ask your friendly neighbourhood programming language designer or human factors subjectmatter expert to explain why a keyword called void is used to generate an undefined value, instead of calling them both void or both undefined . We have no idea.
 ```
 
-</details>
-
-### Technical atom 162
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00562))_
+<details>
+<summary>Parsed table preview (needs review)</summary>
 
 | entry | content |
 | --- | --- |
-| 35 | https://en.wikipedia.org/wiki/Combinatory_logic |
-| 36 | http://www.amazon.com/gp/product/B00A1P096Y/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A1P096Y& linkCode=as2&tag=raganwald001-20 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-combinators
-The word 'combinator' has a precise technical meaning in mathematics:
-'A combinator is a higher-order function that uses only function application and earlier defined combinators to define a result from its arguments.'-Wikipedia 35
-If we were learning Combinatorial Logic, we'd start with the most basic combinators like S , K , and I , and work up from there to practical combinators. We'd learn that the fundamental combinators are named after birds following the example of Raymond Smullyan's famous book To Mock a Mockingbird 36 .
-35 https://en.wikipedia.org/wiki/Combinatory_logic
-36 http://www.amazon.com/gp/product/B00A1P096Y/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A1P096Y& linkCode=as2&tag=raganwald001-20
-```
+| 19 | Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This was actually the preferred mechanism until void became commonplace. |
+| 20 | As an exercise for the reader, we suggest you ask your friendly neighbourhood programming language designer or human factors subjectmatter expert to explain why a keyword called void is used to generate an undefined value, instead of calling them both void or both undefined. We have no idea. |
 
 </details>
 
-### Technical atom 163
+### Technical atom 157
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00570))_
-
-| entry | content |
-| --- | --- |
-| 37 | As we'll discuss later, this implementation of the B Combinator is correct in languages like Scheme, but for truly general-purpose use in JavaScript, it needs to correctly manage the function context. |
-| 38 | We'll see later why an even more useful version would be written (fn) => (...args) => !fn(...args) |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-function decorators
-A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a variation of the argument function. Here's a ridiculously simple decorator: 38
-37 As we'll discuss later, this implementation of the B Combinator is correct in languages like Scheme, but for truly general-purpose use in JavaScript, it needs to correctly manage the function context.
-38 We'll see later why an even more useful version would be written (fn) => (...args) => !fn(...args)
-```
-
-</details>
-
-### Technical atom 164
+<a id="atom-technical-atom-40032b1d8caeb152"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00612))_
 
@@ -3180,42 +3136,24 @@ A function decorator is a higher-order function that takes one function as an ar
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00613))_
 
+```text
+42 You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times.
+43 We'll look at arrays and plain old javascript objects in depth later.
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 42 | You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times. |
 | 43 | We'll look at arrays and plain old javascript objects in depth later. |
 
-<details>
-<summary>Raw table text</summary>
-
-```
-42 You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times.
-43 We'll look at arrays and plain old javascript objects in depth later.
-```
-
 </details>
 
-### Technical atom 165
+### Technical atom 158
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00659))_
-
-| entry | content |
-| --- | --- |
-| 45 | from Michael Fogus, Functional JavaScript |
-| 46 | from Oliver Steele and the terse but handy node-ap |
-| 47 | from James Halliday. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Partial Application
-In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libraries provide some form of partial application. You'll find examples in Lemonad 45 from Michael Fogus, Functional JavaScript 46 from Oliver Steele and the terse but handy node-ap 47 from James Halliday.
-```
-
-</details>
-
-### Technical atom 166
+<a id="atom-technical-atom-5fc857e371a9ac51"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00660))_
 
@@ -3223,22 +3161,24 @@ In Building Blocks, we discussed partial application, but we didn't write a gene
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00663))_
 
+```text
+45 https://github.com/fogus/lemonad 46 http://osteele.com/sources/javascript/functional/ 47 https://github.com/substack/node-ap 48
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 45 | https://github.com/fogus/lemonad |
 | 46 | http://osteele.com/sources/javascript/functional/ |
 | 47 | https://github.com/substack/node-ap 48 |
 
-<details>
-<summary>Raw table text</summary>
-
-```
-45 https://github.com/fogus/lemonad 46 http://osteele.com/sources/javascript/functional/ 47 https://github.com/substack/node-ap 48
-```
-
 </details>
 
-### Technical atom 167
+### Technical atom 159
+
+<a id="atom-technical-atom-1f79a4f59b7f455a"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00700))_
 
@@ -3246,22 +3186,24 @@ In Building Blocks, we discussed partial application, but we didn't write a gene
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00702))_
 
+```text
+50 https://en.wikipedia.org/wiki/Monad_(functional_programming)#The_Maybe_monad
+51 https://github.com/raganwald/andand
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 50 | https://en.wikipedia.org/wiki/Monad_(functional_programming)#The_Maybe_monad |
 | 51 | https://github.com/raganwald/andand |
 
-<details>
-<summary>Raw table text</summary>
-
-```
-50 https://en.wikipedia.org/wiki/Monad_(functional_programming)#The_Maybe_monad
-51 https://github.com/raganwald/andand
-```
-
 </details>
 
-### Technical atom 168
+### Technical atom 160
+
+<a id="atom-technical-atom-281a1ae07258b1dc"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01333))_
 
@@ -3269,103 +3211,21 @@ In Building Blocks, we discussed partial application, but we didn't write a gene
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01335))_
 
+```text
+76 http://www.amazon.com/gp/product/0192801422/ref=as_li_ss_tl?ie=UTF8&tag=raganwald001-20&linkCode=as2&camp=1789&creative= 390957&creativeASIN=0192801422
+77 http://oscin.es
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 76 | http://www.amazon.com/gp/product/0192801422/ref=as_li_ss_tl?ie=UTF8&tag=raganwald001-20&linkCode=as2&camp=1789&creative= 390957&creativeASIN=0192801422 |
 | 77 | http://oscin.es |
 
-<details>
-<summary>Raw table text</summary>
-
-```
-76 http://www.amazon.com/gp/product/0192801422/ref=as_li_ss_tl?ie=UTF8&tag=raganwald001-20&linkCode=as2&camp=1789&creative= 390957&creativeASIN=0192801422
-77 http://oscin.es
-```
-
 </details>
 
-
-## Related pages
-
-- [[javascriptallonge-function-keyword]] - narrower topic: the function keyword shares source evidence from And also: / Naming Functions / the function keyword: In this expression, double is the name in the environment, but repeat is the function's actual name. This is a named function expression . That may seem confusing, b ... [truncated]; the function keyword shares technical record from And also: / Naming Functions / the function keyword: (str) => str + str (4 shared statement(s), 14 shared atom(s))
-- [[javascriptallonge-function-return-value]] - narrower topic: Function Return Value shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: Yes we can! Functions can return the value of evaluating another function.; Function Return Value shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-function-decorator]] - narrower topic: Function Decorator shares source evidence from And also: / Combinators and Function Decorators / function decorators: not is a function decorator because it modifies a function while remaining strongly related to the original function's semantics. You'll see other function decorator ... [truncated]; Function Decorator shares technical record from And also: / Combinators and Function Decorators / function decorators: const nothing = not(something); (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-argument]] - shared statements and technical atoms: Argument shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings: How does the value get put in the environment? Well for arguments, that is very simple. When you apply the function to the arguments, an entry is placed in the dicti ... [truncated]; Argument shares technical record from And also: / Ah. I'd Like to Have an Argument, Please. 22: (room) => {} (4 shared statement(s), 24 shared atom(s))
-- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from A Pull of the Lever: Prefaces / About JavaScript Allongé: It also provides recipes for using functions to write software that is simpler, cleaner, and less complicated than alternative approaches that are object-centric or ... [truncated]; Javascript shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less: () => 0 (6 shared statement(s), 22 shared atom(s))
-- [[javascriptallonge-expression]] - shared statements and technical atoms: Expression shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings: The expression 'x' (the right side of the function) is evaluated within the environment we just created.; Expression shares technical record from Or even: / back on the block: () => { 2 + 2 } () => { 1 + 1; 2 + 2 } (2 shared statement(s), 17 shared atom(s))
-- [[javascriptallonge-bind]] - shared statements and technical atoms: Bind shares source evidence from And also: / Naming Functions: It doesn't name the function 'repeat' for the same reason that const answer = 42 doesn't name the number 42 . This syntax binds an anonymous function to a name in an ... [truncated]; Bind shares technical record from And also: / That Constant Coffee Craving: ((PI) => // ???? )(3.14159265) (1 shared statement(s), 15 shared atom(s))
-- [[javascriptallonge-length]] - shared statements and technical atoms: Length shares source evidence from Composing and Decomposing Data / Self-Similarity: Our length function is recursive , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to c ... [truncated]; Length shares technical record from Composing and Decomposing Data / Self-Similarity: const length = ([first, ...rest]) => first === undefined ? 0 : // ??? (3 shared statement(s), 14 shared atom(s))
-- [[javascriptallonge-return]] - shared statements and technical atoms: Return shares source evidence from Or even: / back on the block: We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21; Return shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (6 shared statement(s), 11 shared atom(s))
-- [[javascriptallonge-iterator]] - shared statements and technical atoms: Iterator shares source evidence from Yes. Consider this variation: / Functional Iterators / caveat: For all intents and purposes, once you pass an iterator to a function, you can expect that you no longer 'own' that iterator, and that its state either has changed or will change.; Iterator shares technical record from Yes. Consider this variation: / Functional Iterators / unfolding and laziness: const NumberIterator = (number = 0) => () => ({ done: false, value: number++ }) fromOne = NumberIterator(1); fromOne().value; //=> 1 fromOne().value; //=> 2 fromOne( ... [truncated] (5 shared statement(s), 10 shared atom(s))
-- [[javascriptallonge-functional]] - shared statements and technical atoms: Functional shares source evidence from ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus: As a staunch advocate of functional programming, much of what Reg has written rings true to me. While not exclusively a book about functional programming, JavaScript ... [truncated]; Functional shares technical record from Like this: / Generating Iterables: Iterators have to arrange its own state such that when you call them, they compute and return the next item. (5 shared statement(s), 8 shared atom(s))
-- [[javascriptallonge-functional-iterator]] - shared statements and technical atoms: Functional Iterators shares source evidence from Yes. Consider this variation: / Functional Iterators: What we've done is turn an array into a function that folds an array with const foldArray = (array) => callRight(foldArrayWith, array); . The sumFoldable function do ... [truncated]; Functional Iterators shares technical record from Yes. Consider this variation: / Functional Iterators / unfolding and laziness: const NumberIterator = (number = 0) => () => ({ done: false, value: number++ }) fromOne = NumberIterator(1); fromOne().value; //=> 1 fromOne().value; //=> 2 fromOne( ... [truncated] (7 shared statement(s), 7 shared atom(s))
-- [[javascriptallonge-bound]] - shared statements and technical atoms: Bound shares source evidence from And also: / That Constant Coffee Craving / const: Notice calc(d) ? This underscores what we've said: if we have an expression that evaluates to a function, we apply it with () . A name that's bound to a function is ... [truncated]; Bound shares technical record from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: if (true) { // an immediately invoked block statement (IIBS) } Let’s try it: ((diameter) => { const PI = 3; if (true) { const PI = 3.14159265; return diameter * PI; ... [truncated] (2 shared statement(s), 9 shared atom(s))
-- [[javascriptallonge-write]] - shared statements and technical atoms: Write shares source evidence from And also: / That Constant Coffee Craving / const: Another way to write our 'circumference' function would be to pass PI along with the diameter argument, something like this:; Write shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (2 shared statement(s), 9 shared atom(s))
-- [[javascriptallonge-object]] - shared statements and technical atoms: Object shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Iteration for functions and objects has been around for many, many decades. For simple linear collections like arrays, linked lists, stacks, and queues, functional i ... [truncated]; Object shares technical record from Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators: const Stack1 = () => ({ array:[], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array[ ... [truncated] (3 shared statement(s), 8 shared atom(s))
-- [[javascriptallonge-declaration]] - shared statements and technical atoms: Declaration shares source evidence from And also: / Naming Functions / function declarations: In that it binds a name in the environment to a named function. However, there are two important differences. First, function declarations are hoisted to the top of ... [truncated]; Declaration shares technical record from And also: / Naming Functions / function declarations: function someName () { // ... } This behaves a little like: const someName = function someName () // ... } (4 shared statement(s), 7 shared atom(s))
-- [[javascriptallonge-code]] - shared statements and technical atoms: Code shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated]; Code shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared statement(s), 8 shared atom(s))
-- [[javascriptallonge-environment]] - shared statements and technical atoms: Environment shares source evidence from And also: / Naming Functions: It doesn't name the function 'repeat' for the same reason that const answer = 42 doesn't name the number 42 . This syntax binds an anonymous function to a name in an ... [truncated]; Environment shares technical record from And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings: ((x) => x)(2) //=> 2 (1 shared statement(s), 8 shared atom(s))
-- [[javascriptallonge-program]] - shared statements and technical atoms: Program shares source evidence from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Rub ... [truncated]; Program shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: def foo (first, *rest) # ... end (4 shared statement(s), 6 shared atom(s))
-- [[javascriptallonge-parameter]] - shared statements and technical atoms: Parameter shares source evidence from Picking the Bean: Choice and Truthiness / function parameters are eager: In contrast to the behaviour of the ternary operator, || , and && , function parameters are always eagerly evaluated :; Parameter shares technical record from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: if (true) { // an immediately invoked block statement (IIBS) } Let’s try it: ((diameter) => { const PI = 3; if (true) { const PI = 3.14159265; return diameter * PI; ... [truncated] (1 shared statement(s), 7 shared atom(s))
-- [[javascriptallonge-recipe]] - shared statements and technical atoms: Recipe shares source evidence from Recipes with Basic Functions / Maybe: Naturally, there's a function decorator recipe for that, borrowed from Haskell's maybe monad 50 , Ruby's andand 51 , and CoffeeScript's existential method invocation:; Recipe shares technical record from Recipes with Basic Functions / Maybe: const isSomething = (value) => value !== null && value !== void 0; const checksForSomething = (value) => { if (isSomething(value)) { // function's true logic } } (1 shared statement(s), 7 shared atom(s))
-- [[javascriptallonge-value]] - shared statements and technical atoms: Value shares source evidence from Yes. Consider this variation: / Making Data Out Of Functions / the vireo: As an aside, the Vireo is a little like JavaScript's .apply function. It says, 'take these two values and apply them to this function.' There are other, similar comb ... [truncated]; Value shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared statement(s), 7 shared atom(s))
-- [[javascriptallonge-result]] - shared statements and technical atoms: Result shares source evidence from Or even: / back on the block: We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21; Result shares technical record from Or even: / back on the block: (() => {})() //=> undefined (2 shared statement(s), 6 shared atom(s))
-- [[javascriptallonge-block]] - shared statements and technical atoms: Block shares source evidence from Or even: / back on the block: We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21; Block shares technical record from Or even: / back on the block: (() => {})() //=> undefined (1 shared statement(s), 6 shared atom(s))
-- [[javascriptallonge-language]] - shared statements and technical atoms: Language shares source evidence from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Rub ... [truncated]; Language shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: def foo (first, *rest) # ... end (3 shared statement(s), 5 shared atom(s))
-- [[javascriptallonge-partial-application]] - shared statements and technical atoms: partial application shares source evidence from And also: / Building Blocks / partial application: The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one funct ... [truncated]; partial application shares technical record from And also: / Building Blocks / partial application: _.map([1, 2, 3], (n) => n * n) //=> [1, 4, 9] (3 shared statement(s), 5 shared atom(s))
-- [[javascriptallonge-seen]] - shared statements and technical atoms: Seen shares source evidence from We'll keep it simple: / yielding iterables: We've gone with the full iterable here, a TreeIterable(iterable) returns an iterable that treats iterable as a tree. It works, but as we've just seen, a function tha ... [truncated]; Seen shares technical record from And also: / That Constant Coffee Craving / nested blocks: (n) => { const even = (x) => { if (x === 0) return true; else return !even(x - 1); } return even(n) } (1 shared statement(s), 6 shared atom(s))
-- [[javascriptallonge-list]] - shared statements and technical atoms: List shares source evidence from Composing and Decomposing Data / Self-Similarity / folding: With the exception of the length example at the beginning, our examples so far all involve rebuilding a solution using spreads. But they needn't. A function to compu ... [truncated]; List shares technical record from Composing and Decomposing Data / Self-Similarity: const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest); Let’s try it! length([]) //=> 0 length(["foo"]) //=> 1 length(["foo", "bar", "baz"]) (1 shared statement(s), 5 shared atom(s))
-- [[javascriptallonge-alway]] - shared statements and technical atoms: Alway shares source evidence from And also: / Closures and Scope / if functions without free variables are pure, are closures impure?: Pure functions always mean the same thing because all of their 'inputs' are fully defined by their arguments. Not so with a closure. If I present to you this pure fu ... [truncated]; Alway shares technical record from And also: / Closures and Scope / if functions without free variables are pure, are closures impure?: If pure functions can contain closures, can a closure contain a pure function? (2 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-evaluate]] - shared statements and technical atoms: Evaluate shares source evidence from And also: / Closures and Scope / it's always the environment: The first function is the result of currying a the second function. Calling a curried function with only some of its arguments is sometimes called partial applicatio ... [truncated]; Evaluate shares technical record from Or even: / back on the block: (() => { return 0 })() //=> 0 (() => { return 1 })() //=> 1 (() => { return 'Hello ' + 'World' })() // 'Hello World' (2 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-programming]] - shared statements and technical atoms: Programming shares source evidence from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Rub ... [truncated]; Programming shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: def foo (first, *rest) # ... end (4 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-evaluating]] - shared statements and technical atoms: Evaluating shares source evidence from Or even: / back on the block: We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21; Evaluating shares technical record from Or even: / back on the block: (() => {})() //=> undefined (1 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-mapwith]] - shared statements and technical atoms: Mapwith shares source evidence from And also: / Building Blocks / partial application: The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one funct ... [truncated]; Mapwith shares technical record from And also: / Building Blocks / partial application: const mapWith = (fn) => (array) => map(array, fn); const squareAll = mapWith((n) => n * n); squareAll([1, 2, 3]) //=> [1, 4, 9] (5 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-data]] - shared statements and technical atoms: Data shares source evidence from Yes. Consider this variation: / Functional Iterators: What we've done is turn an array into a function that folds an array with const foldArray = (array) => callRight(foldArrayWith, array); . The sumFoldable function do ... [truncated]; Data shares technical record from Yes. Consider this variation: / Functional Iterators / unfolding and laziness: const NumberIterator = (number = 0) => () => ({ done: false, value: number++ }) fromOne = NumberIterator(1); fromOne().value; //=> 1 fromOne().value; //=> 2 fromOne( ... [truncated] (2 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-closure]] - shared statements and technical atoms: Closure shares source evidence from And also: / Closures and Scope / if functions without free variables are pure, are closures impure?: Functions containing one or more free variables are called closures .; Closure shares technical record from And also: / Closures and Scope / if functions without free variables are pure, are closures impure?: If pure functions can contain closures, can a closure contain a pure function? (3 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-gathering]] - shared statements and technical atoms: Gathering shares source evidence from Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring: Gathering arguments for functions is one of the ways JavaScript can destructure arrays. Another way is when assigning variables, like this:; Gathering shares technical record from Recipes with Basic Functions / Left-Variadic Functions: const abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); }; abccc(1, 2, 3, 4, 5) 1 2 [3,4,5] (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-generator]] - shared statements and technical atoms: Generator shares source evidence from We'll keep it simple: / generators and iterables: Our generator function oneTwoThree is not an iterator. It's a function that returns an iterator when we invoke it. We write the function to yield values instead of r ... [truncated]; Generator shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-iterable]] - shared statements and technical atoms: Iterable shares source evidence from We'll keep it simple: / generators and iterables: This object declares a [Symbol.iterator] function that makes it iterable. Because it's declared *[Symbol.iterator] , it's a generator instead of an iterator.; Iterable shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-pattern]] - shared statements and technical atoms: Pattern shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated]; Pattern shares technical record from And also: / That Constant Coffee Craving / inside-out: (diameter) => // ... (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-symbol]] - shared statements and technical atoms: Symbol shares source evidence from We'll keep it simple: / generators and iterables: This object declares a [Symbol.iterator] function that makes it iterable. Because it's declared *[Symbol.iterator] , it's a generator instead of an iterator.; Symbol shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-second]] - shared statements and technical atoms: Second shares source evidence from Yes. Consider this variation: / Making Data Out Of Functions / backwardness: Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of va ... [truncated]; Second shares technical record from And also: / Magic Names / the function keyword: const plus = function (a, b) { return arguments[0] + arguments[1]; } plus(2,3) //=> 5 (2 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-idea]] - shared statements and technical atoms: Idea shares source evidence from And also: / That Constant Coffee Craving / const: Amazing how such an important idea-naming functions-can be explained en passant in just a few words. That emphasizes one of the things JavaScript gets really, really ... [truncated]; Idea shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-purpose]] - shared statements and technical atoms: Purpose shares source evidence from Yes. Consider this variation: / Functional Iterators / caveat: For all intents and purposes, once you pass an iterator to a function, you can expect that you no longer 'own' that iterator, and that its state either has changed or will change.; Purpose shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-behaviour]] - shared statements and technical atoms: Behaviour shares source evidence from And also: / Closures and Scope / which came first, the chicken or the egg?: This behaviour of pure functions and closures has many, many consequences that can be exploited to write software. We are going to explore them in some detail as wel ... [truncated]; Behaviour shares technical record from Picking the Bean: Choice and Truthiness / function parameters are eager: const or = (a, b) => a || b const and = (a, b) => a && b const even = (n) => or(n === 0, and(n !== 1, even(n - 2))) even(42) //=> Maximum call stack size exceeded. (2 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-allong]] - shared statements and technical atoms: Allong shares source evidence from ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus: As a staunch advocate of functional programming, much of what Reg has written rings true to me. While not exclusively a book about functional programming, JavaScript ... [truncated]; Allong shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-combinator]] - shared statements and technical atoms: Combinator shares source evidence from And also: / Combinators and Function Decorators / function decorators: not is a function decorator because it modifies a function while remaining strongly related to the original function's semantics. You'll see other function decorator ... [truncated]; Combinator shares technical record from And also: / Combinators and Function Decorators / function decorators: const nothing = not(something); (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-follow]] - shared statements and technical atoms: Follow shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated]; Follow shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-method]] - shared statements and technical atoms: Method shares source evidence from Like this: / Generating Iterables: Let's consider how they work. Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly unt ... [truncated]; Method shares technical record from Like this: / Generating Iterables: Iterators have to arrange its own state such that when you call them, they compute and return the next item. (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-writing]] - shared statements and technical atoms: Writing shares source evidence from We'll keep it simple: / more generators: We've writing a function that returns an iterator, but we used a generator to do it. And the generator's syntax allows us to use JavaScript's natural management of s ... [truncated]; Writing shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-statement]] - shared technical atoms: Statement shares technical record from And also: / That Constant Coffee Craving / nested blocks: (n) => { const even = (x) => { if (x === 0) return true; else return !even(x - 1); } return even(n) } (5 shared atom(s))
-- [[javascriptallonge-binding]] - shared technical atoms: Binding shares technical record from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265) (3 shared atom(s))
-- [[javascriptallonge-doesn-t-work-because-parseint]] - shared technical atoms: Doesn'T Work Because Parseint shares technical record from Recipes with Basic Functions / Unary: If you pass in a function taking only one argument, it simply ignores the additional arguments. (3 shared atom(s))
-- [[javascriptallonge-ecmascript]] - shared technical atoms: Ecmascript shares technical record from Recipes with Basic Functions / Left-Variadic Functions: function team(coach, captain, ...players) { console.log(`${captain} (captain)`); for (let player of players) { console.log(player); } console.log(`squad coached by $ ... [truncated] (3 shared atom(s))
-- [[javascriptallonge-programmer]] - shared technical atoms: Programmer shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (3 shared atom(s))
-- [[javascriptallonge-works-just-fine-because-arguments]] - shared technical atoms: Works Just Fine, Because Arguments[0 shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (3 shared atom(s))
-- [[javascriptallonge-collection]] - shared technical atoms: Collection shares technical record from Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators: const collectionSum = (collection) => { const iterator = collection.iterator(); let eachIteration, sum = 0; while ((eachIteration = iterator(), !eachIteration.done)) ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-different]] - shared technical atoms: Different shares technical record from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265) (2 shared atom(s))
-- [[javascriptallonge-fat-arrow]] - shared technical atoms: Fat Arrow shares technical record from And also: / Magic Names / magic names and fat arrows: (function () { return (() => arguments[0])('inner'); })('outer') //=> "outer" (2 shared atom(s))
-- [[javascriptallonge-feature]] - shared technical atoms: Feature shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (2 shared atom(s))
-- [[javascriptallonge-note]] - shared technical atoms: Note shares technical record from Like this: / Generating Iterables / state machines: // Generation const fibonacci = () => { let a, b; console.log(a = 0); console.log(b = 1); while (true) { [a, b] = [b, a + b]; console.log(b); } } fibonacci() //=> 0 ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-rule]] - shared technical atoms: Rule shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (2 shared atom(s))
-- [[javascriptallonge-discussing]] - shared technical atoms: Discussing shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-reference]] - shared technical atoms: Reference shares technical record from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: (value) => ((ref1, ref2) => ref1 === ref2)(value, value) (1 shared atom(s))
-- [[javascriptallonge-rest]] - shared technical atoms: Rest shares technical record from Composing and Decomposing Data / Tail Calls (and Default Arguments) / tail-call optimization: const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest); (1 shared atom(s))
-- [[javascriptallonge-string]] - shared technical atoms: String shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less: () => 0 (1 shared atom(s))
-- [[javascriptallonge-type]] - shared technical atoms: Type shares technical record from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: (value) => ((ref1, ref2) => ref1 === ref2)(value, value) (1 shared atom(s))
-- [[javascriptallonge-version]] - shared technical atoms: Version shares technical record from Like this: / Generating Iterables / recursive iterators: const isIterable = (something) => !!something[Symbol.iterator]; const treeIterator = (iterable) => { const iterators = [ iterable[Symbol.iterator]() ]; return () => ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-copy-write]] - shared statements: Copy on Write shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-read: As we expected, making a copy lets us modify the copy without interfering with the original. This is, however, expensive. Sometimes we don't need to make a copy beca ... [truncated] (3 shared statement(s))
-- [[javascriptallonge-instead]] - shared statements: Instead shares source evidence from Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking: Instead of directly manipulating part of an entity, pass it a function and have it call our function with the part we want. (2 shared statement(s))
-- [[javascriptallonge-const]] - shared statements: Const shares source evidence from Composing and Decomposing Data / Reassignment / mixing let and const / var: In that way, var is a little like const and let , we should always declare and bind names before using them. But it's not like const and let in that it's function sc ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-copy]] - shared statements: Copy shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-element]] - shared statements: Element shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object w ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-important]] - shared statements: Important shares source evidence from And also: / That Constant Coffee Craving / const: Amazing how such an important idea-naming functions-can be explained en passant in just a few words. That emphasizes one of the things JavaScript gets really, really ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-learn]] - shared statements: Learn shares source evidence from And also: / Closures and Scope / if functions without free variables are pure, are closures impure?: From this, we learn something: A pure function can contain a closure. (1 shared statement(s))
-- [[javascriptallonge-literal]] - shared statements: Literal shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals / evaluation time: JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function's body is evaluated. Thus, name is not bound to "Harry" ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-quasi]] - shared statements: Quasi shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals / evaluation time: JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function's body is evaluated. Thus, name is not bound to "Harry" ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-quasi-literal]] - shared statements: Quasi Literal shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals / evaluation time: JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function's body is evaluated. Thus, name is not bound to "Harry" ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-structure]] - shared statements: Structure shares source evidence from Yes. Consider this variation: / Functional Iterators: What we've done is turn an array into a function that folds an array with const foldArray = (array) => callRight(foldArrayWith, array); . The sumFoldable function do ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-section-and-also-summary-functions-a3702d43]] - source section: And also: / Summary / Functions shares source evidence from And also: / Summary / Functions: Functions are values that can be part of expressions, returned from other functions, and so forth.; And also: / Summary / Functions shares technical table: combinators The word 'combinator' has a precise technical meaning in mathematics: 'A combinator is a higher-order function that uses only function application and ea ... [truncated] (12 shared statement(s), 7 shared atom(s))
 
 ## Source
 

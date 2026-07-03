@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-illusion-5ce13208
 page_kind: source
 page_family: section-reference
-summary: 5.1.12 Ancient Magic List / [ Illusion ]: 10 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 5.1.12 Ancient Magic List / [ Illusion ]: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-illusion-5ce13208@0dbc5bd02f2d12bbb21c62d52d443dd4
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-illusion-5ce13208@f821baafc396ce6695710c5e19fd77e5
 ---
 
 # 5.1.12 Ancient Magic List / [ Illusion ]
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-19f66f88]] - broader source section: 5.1.12 Ancient Magic List
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-illusion-5758c43e]] - same source heading: another source section with the same heading, 《 Illusion 》
 
 ## Technical atoms
@@ -26,30 +31,34 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03180, source-range-0b9dec90-03181, source-range-0b9dec90-03182, source-range-0b9dec90-03183, source-range-0b9dec90-03184, source-range-0b9dec90-03185, source-range-0b9dec90-03186, source-range-0b9dec90-03187))_
 
+<a id="atom-technical-atom-621b8290c55c2cab"></a>
+
 > Base Mental Power Cost=20
+
+<a id="atom-technical-atom-4ffbb80e7b4947bf"></a>
 
 > Distance=30 meters
 
+<a id="atom-technical-atom-1e220c6a699a54b2"></a>
+
 > Area=A space with a 5 meter radius
+
+<a id="atom-technical-atom-259d38b38e85cedb"></a>
 
 > Duration=Permanent, until focus ends
 
+<a id="atom-technical-atom-97393c787449581b"></a>
+
 > Effect=Can create illusions using images and sounds
+
+<a id="atom-technical-atom-ce0961464e121361"></a>
 
 > Type=(Focus), illusion
 
+<a id="atom-technical-atom-7d9cf02da5816c5f"></a>
+
 > Expansion=Final score, distance, target volume
 
+<a id="atom-technical-atom-1a01639334e4ed8c"></a>
+
 > Resist=Negated effect
-
-### Technical frame 2: 5.1.12 Ancient Magic List / [ Illusion ]
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03188))_
-
-> For example, you can create a wall of fire via illusion, but you won't feel any heat even if you approach it, and you won't burn to death even if you jump into it.
-
-### Technical frame 3: 5.1.12 Ancient Magic List / [ Illusion ]
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03188))_
-
-> This spell creates illusions that affect the senses of hearing and vision. The illusion can be anything within its area of effect, but it cannot cause any realistic effects. For example, you can create a wall of fire via illusion, but you won't feel any heat even if you approach it, and you won't burn to death even if you jump into it. However, the illusions created by this spell are so realistic that they cannot be discovered just by looking at them normally. The spell's effect continues even if you touch it. If an illusion of a stone wall is in a passage, you can't see beyond it, but you're completely free to pass through it (if you try). However, this result will not destroy the illusion of the stone wall. As long as the caster maintains focus, they can freely change the illusion, but if they lose focus, only static or simple repeating illusions can remain. The caster can freely cancel the spell's effect, but a Dispel Magic spell is required if someone else attempts to remove it.

@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 13.2.1 《 Humans 》 / 《 Evasion Points 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-evasion-points-4a108a5f@fb683a406431940b2e79a386f98ec0a3
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-evasion-points-4a108a5f@3eb099ba62cc44d6f284d6dee40d41b5
 ---
 
 # 13.2.1 《 Humans 》 / 《 Evasion Points 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-hum
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-2-1-humans-6e762209]] - broader source section: 13.2.1 《 Humans 》
 

@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-yes-consider-this-variation-functional-iterators-caveat-c90295dd
 page_kind: source
+page_family: section-reference
 summary: Yes. Consider this variation: / Functional Iterators / caveat: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-yes-consider-this-variation-functional-iterators-caveat-c90295dd@413322c10e15acbee52e1bb233edd692
+projection_coverage: section-javascriptallonge-section-yes-consider-this-variation-functional-iterators-caveat-c90295dd@a8625d3df309b0f16b6574fdbafc33d0
 ---
 
 # Yes. Consider this variation: / Functional Iterators / caveat
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-yes-consider-this-variati
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-yes-consider-this-variation-functional-iterators-53aff37b]] - broader source section: Yes. Consider this variation: / Functional Iterators
 

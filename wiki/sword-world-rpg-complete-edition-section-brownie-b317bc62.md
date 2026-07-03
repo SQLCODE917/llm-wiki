@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-brownie-b317bc62
 page_kind: source
 page_family: section-reference
-summary: [ Brownie ]: 21 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Brownie ]: 21 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-brownie-b317bc62@9c40b1258edec472d7ea8ec896447bdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-brownie-b317bc62@0df78808741c6337eb2e9d385521bbc8
 ---
 
 # [ Brownie ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-brownie-b3
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Topics
 
 - [[sword-world-rpg-complete-edition-brownie]] - topic hub: opens the topic page for Brownie
 
@@ -34,17 +36,3 @@ From [[sword-world-rpg-complete-edition]].
 - Also, they are fully aware of everything happening inside the mansion with their magic senses. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07137))_
 - However, these abilities can only be manifested within the mansion, and the brownie cannot leave the mansion. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07138))_
 - Mad Brownies are often influenced by the actions of those who lived there, and in some cases continue to faithfully reproduce those actions through illusions (and telekinesis) after the residents have left. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07139))_
-
-## Technical atoms
-
-### Technical frame 1: [ Brownie ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07134))_
-
-> Brownie is a spirit that appears in old mansions where people have lived for over 50 years. If the humans living in the mansion disappear or die, the brownie may turn into a mad spirit.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07132, source-range-0b9dec90-07133))_
-
-> Languages=Silent spirit, mansion residents' language
-
-> Perception=Magic

@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-7389665c
 page_kind: source
-summary: Prelude: Values and Expressions over Coffee / values and identity: 29 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Prelude: Values and Expressions over Coffee / values and identity: 29 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-7389665c@2fe172317503e484a4891e3b62223ac0
+projection_coverage: section-javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-7389665c@ddc3b7a469e95410dc8579e79708365a
 ---
 
 # Prelude: Values and Expressions over Coffee / values and identity
@@ -16,9 +17,11 @@ From [[javascriptallonge]].
 
 ## Related pages
 
+### Source structure
+
 - [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-3ba31fb1]] - broader source section: Prelude: Values and Expressions over Coffee
-- [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-value-types-eb382c99]] - narrower source section: Prelude: Values and Expressions over Coffee / values and identity / value types
 - [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-reference-types-00ce938b]] - narrower source section: Prelude: Values and Expressions over Coffee / values and identity / reference types
+- [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-value-types-eb382c99]] - narrower source section: Prelude: Values and Expressions over Coffee / values and identity / value types
 
 ## Statements
 
@@ -53,6 +56,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00116))_
 
+<a id="atom-technical-atom-01aacee1aae7ab09"></a>
+
 ```
 2 === 2
 //=> true
@@ -60,45 +65,15 @@ From [[javascriptallonge]].
 //=> true
 ```
 
-### Technical frame 2: Prelude: Values and Expressions over Coffee / values and identity
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00120))_
-
-> Second, sometimes, the cups are of the same type-perhaps two espresso cups-but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different 'content.' For example, the number 5 is not the same thing as the number 2 .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00119))_
-
-```
-2 === '2'
-//=> false
-true !== 'true'
-//=> true
-```
-
-### Technical frame 3: Prelude: Values and Expressions over Coffee / values and identity
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00120))_
-
-> Second, sometimes, the cups are of the same type-perhaps two espresso cups-but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different 'content.' For example, the number 5 is not the same thing as the number 2 .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00121))_
-
-```
-true === false
-//=> false
-2 !== 5
-//=> true
-'two' === 'five'
-//=> false
-```
-
-### Technical frame 4: Prelude: Values and Expressions over Coffee / values and identity / value types
+### Technical frame 2: Prelude: Values and Expressions over Coffee / values and identity / value types
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00126))_
 
 > Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same 'content.' Strings, numbers, and booleans are examples of what JavaScript calls 'value' or 'primitive' types. We'll use both terms interchangeably.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00125))_
+
+<a id="atom-technical-atom-af344335a7478637"></a>
 
 ```
 2 + 2 === 4
@@ -107,7 +82,7 @@ true === false
 //=> true
 ```
 
-### Technical frame 5: Prelude: Values and Expressions over Coffee / values and identity / value types
+### Technical frame 3: Prelude: Values and Expressions over Coffee / values and identity / value types
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00129))_
 
@@ -115,9 +90,11 @@ true === false
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00127))_
 
+<a id="atom-technical-atom-cb35e8520be9c9a9"></a>
+
 > So even if you have two cups of the same type, and their contents are the same, you can still distinguish between them.
 
-### Technical frame 6: Prelude: Values and Expressions over Coffee / values and identity / value types
+### Technical frame 4: Prelude: Values and Expressions over Coffee / values and identity / value types
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00129))_
 
@@ -125,31 +102,6 @@ true === false
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00128))_
 
+<a id="atom-technical-atom-4738eb9ff674c3cd"></a>
+
 > [Figure] (p.22)
-
-### Technical frame 7: Prelude: Values and Expressions over Coffee / values and identity / reference types
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00134))_
-
-> Notice that you are always generating arrays with the same contents. But are they identical the same way that every value of 42 is identical to every other value of 42 ? Try these for yourself:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00133))_
-
-```
-[2-1, 2, 2+1]
-[1, 1+1, 1+1+1]
-```
-
-### Technical frame 8: Prelude: Values and Expressions over Coffee / values and identity / reference types
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00136))_
-
-> How about that! When you type [1, 2, 3] or any of its variations, you are typing an expression that generates its own unique array that is not identical to any other array, even if that other array also looks like [1, 2, 3] . It's as if JavaScript is generating new cups of coffee with serial numbers on the bottom.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00135))_
-
-```
-[2-1, 2, 2+1] === [1,2,3]
-[1,2,3] === [1, 2, 3]
-[1, 2, 3] === [1, 2, 3]
-```

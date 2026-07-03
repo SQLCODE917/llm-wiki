@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 1.4 Character Creation / 1.4.3 Starting Skills and Starting / Experience Points: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-3-starting-skills-and-starting-experience-points-f1b4a429@ef9928ec062693e958becf84e0495868
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-3-starting-skills-and-starting-experience-points-f1b4a429@1d0c5efd50769dda51f519206248a639
 ---
 
 # 1.4 Character Creation / 1.4.3 Starting Skills and Starting / Experience Points
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-3-starting-skills-and-starting-476b4502]] - broader source section: 1.4 Character Creation / 1.4.3 Starting Skills and Starting
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-8-1-experience-points-47afbb05]] - same source heading: another source section with the same heading, 8.1 Experience Points
 
 ## Statements

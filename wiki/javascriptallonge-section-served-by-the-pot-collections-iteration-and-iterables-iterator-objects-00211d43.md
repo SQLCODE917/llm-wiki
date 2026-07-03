@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-served-by-the-pot-collections-iteration-and-iterables-iterator-objects-00211d43
 page_kind: source
+page_family: section-reference
 summary: Served by the Pot: Collections / Iteration and Iterables / iterator objects: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-served-by-the-pot-collections-iteration-and-iterables-iterator-objects-00211d43@a8379794acf5bec3faf14b7376ca0baa
+projection_coverage: section-javascriptallonge-section-served-by-the-pot-collections-iteration-and-iterables-iterator-objects-00211d43@55d5079a4ec2b92449007e61b63a75c4
 ---
 
 # Served by the Pot: Collections / Iteration and Iterables / iterator objects
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-served-by-the-pot-collect
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-served-by-the-pot-collections-iteration-and-iterables-4469b582]] - broader source section: Served by the Pot: Collections / Iteration and Iterables
 

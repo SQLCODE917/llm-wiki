@@ -4,10 +4,10 @@ page_kind: concept
 page_family: broad-topic
 summary: 【 Bonus Damage 】: 56 statement(s) and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-bonus-damage@198a6c7006f8f0e1cd2c56ea3ccc43e9
+projection_coverage: topic-sword-world-rpg-complete-edition-bonus-damage@5604c513e86db1c68f15d107b462190c
 ---
 
 # 【 Bonus Damage 】
@@ -17,8 +17,17 @@ What [[sword-world-rpg-complete-edition]] covers about 【 bonus damage 】:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-damage]] - broader topic: Damage shares source evidence from [Centauri Blood (Touch/Damage)]: What's more, this poison is completely harmless at room temperature, and only becomes toxic when warmed by body heat. Those wearing cloth soaked with centauri blood ... [truncated] (1 shared statement(s))
+### Source structure
+
+- [[sword-world-rpg-complete-edition-section-4-5-3-bonus-damage-62cc15ec]] - source section: 4.5.3 Bonus Damage shares source evidence from 4.5.3 Bonus Damage: Once you've determined base damage, you must then add your character's bonus damage. This will be the total amount of damage the character deals the monster.; 4.5.3 Bonus Damage shares technical record from 4.5.3 Bonus Damage: Once you've determined base damage, you must then add your character's bonus damage. (3 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-bonus-damage-da6ab1ae]] - source section: 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】: Characters with deep experience in combat can handle weapons effectively. In addition, characters with high strength can wield weapons more powerfully. These charact ... [truncated]; 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】 shares technical record from 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】: These characters can deal more damage to their foes, even when using the same sized weapon. (4 shared statement(s), 2 shared atom(s))
+
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-target-score]] - shared statements and technical atoms: Target Scores shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]: Elder dragons also have the ability to breathe fire. Elder-species' fire spreads in a 30-meter forward radius, and those who fail a mental power resistance roll agai ... [truncated]; Target Scores shares technical record from [ Ash ] Monster Level=2 Rarity=11 Agility=9 Movement Speed=8 Number=Several Frequency=Moderate Intellect=Almost none Reaction=Violent Attack Points=- Strike Points=Evasion Points=- Defense Points=Life Points/Resistance=7/9 (2) Mental Points/Resistance=-/10 (3) Special Abilities=Wrap (Evasion target score=10, strike power 10, bonus damage 2) Mental attack immunity Weapon immunity Fire immunity Not affected by poison and illness Damage from healing magic Habitat=Ruins Languages=None Perception=Magic: If you cast the spirit magic Missile Protection , you can protect yourself from being enwrapped by the ash. (1 shared statement(s), 1 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-mythical-beast-and-magical]] - shared statements: 《 Mythical Beasts and Magical Beasts 》 shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Ceiling Hanger ]: Strangling has strike power 0 and bonus damage 6 when making a damage check. Non-metal armor and ring mail have no effect against this damage, and points can only be ... [truncated] (6 shared statement(s))
 - [[sword-world-rpg-complete-edition-daemon-underworld-creature]] - shared statements: 《 Daemons/Underworld Creatures 》 shares source evidence from 13.2.11 Daemons/Underworld Creatures / [ Hellhound ]: At first glance, the hellhound looks like a large black dog. However, in reality, it' s a terrifying beast from the underworld, also known as the watchdog of Hell. H ... [truncated] (5 shared statement(s))
 - [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements: 【 Ranger Skill 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (5 shared statement(s))
@@ -27,12 +36,10 @@ What [[sword-world-rpg-complete-edition]] covers about 【 bonus damage 】:
 - [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements: 【 Damage Reduction 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (3 shared statement(s))
 - [[sword-world-rpg-complete-edition-critical-target-variation]] - shared statements: Critical Target Variation shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (2 shared statement(s))
 - [[sword-world-rpg-complete-edition-magical-weapon]] - shared statements: Magical Weapon shares source evidence from 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Weapons 】: Magical weapons have exceptional attack power and bonus damage . If you use a +1 magical weapon, you receive a +1 bonus to attack power and bonus damage. If +2, thos ... [truncated] (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-ability-score]] - shared statements: Ability Scores shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Wyvern ]: Monster Level=7 Rarity=10 Agility=18 Movement Speed=8/35 (air) Number=One Frequency=Rare Intellect=Animal Reaction=Neutral Attack Points=Fangs:14 (7)/Talon:15 (8)/ T ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: 1.4.9 Filling Out the Character Sheet shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-fire-breath]] - shared statements: [ Fire Breath ] shares source evidence from Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Fire Breath ]: The caster breathes fire from their mouth like a dragon. The fire's area of effect is a semicircle with a 10 meter forward radius. The fire's strike power is 20, and ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-weapon-critical]] - shared statements: 《 Weapons Cannot Critical 》 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-bonus-damage-da6ab1ae]] - source section: 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】: Characters with deep experience in combat can handle weapons effectively. In addition, characters with high strength can wield weapons more powerfully. These charact ... [truncated]; 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】 shares technical record from 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】: These characters can deal more damage to their foes, even when using the same sized weapon. (4 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-4-5-3-bonus-damage-62cc15ec]] - source section: 4.5.3 Bonus Damage shares source evidence from 4.5.3 Bonus Damage: Once you've determined base damage, you must then add your character's bonus damage. This will be the total amount of damage the character deals the monster.; 4.5.3 Bonus Damage shares technical record from 4.5.3 Bonus Damage: Once you've determined base damage, you must then add your character's bonus damage. (3 shared statement(s), 5 shared atom(s))
+
+### Topics
+
+- [[sword-world-rpg-complete-edition-damage]] - broader topic: Damage shares source evidence from [Centauri Blood (Touch/Damage)]: What's more, this poison is completely harmless at room temperature, and only becomes toxic when warmed by body heat. Those wearing cloth soaked with centauri blood ... [truncated] (1 shared statement(s))
 ## Statements by source section
 
 ### 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat
@@ -150,6 +157,8 @@ What [[sword-world-rpg-complete-edition]] covers about 【 bonus damage 】:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01448))_
 
+<a id="atom-technical-atom-46d63dbd8a5d931f"></a>
+
 > These characters can deal more damage to their foes, even when using the same sized weapon.
 
 ### Technical frame 2: 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】
@@ -159,6 +168,8 @@ What [[sword-world-rpg-complete-edition]] covers about 【 bonus damage 】:
 > If fighter (or thief, ranger) skill level is 0 , bonus damage is 0 regardless of the character's strength bonus.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01450))_
+
+<a id="atom-technical-atom-0d197de47c15ce6d"></a>
 
 > bonus damage = fighter (thief/ranger) skill level + strength bonus
 
@@ -170,6 +181,8 @@ What [[sword-world-rpg-complete-edition]] covers about 【 bonus damage 】:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02172))_
 
+<a id="atom-technical-atom-1f38e71b6a93f6a9"></a>
+
 > Once you've determined base damage, you must then add your character's bonus damage.
 
 ### Technical frame 4: 4.5.3 Bonus Damage
@@ -180,9 +193,15 @@ What [[sword-world-rpg-complete-edition]] covers about 【 bonus damage 】:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02175, source-range-0b9dec90-02176, source-range-0b9dec90-02177))_
 
+<a id="atom-technical-atom-e4b95ba1b83456e3"></a>
+
 > If base damage is 4, the total damage is 4+4= 8 ,
 
+<a id="atom-technical-atom-b0f14a4aed497ead"></a>
+
 > If base damage is 18, the total damage is 18+4= 22 ,
+
+<a id="atom-technical-atom-fc6863f3a04fe470"></a>
 
 > If base damage is 14, the total damage is 14+4= 18 .
 
@@ -194,6 +213,8 @@ What [[sword-world-rpg-complete-edition]] covers about 【 bonus damage 】:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02178))_
 
+<a id="atom-technical-atom-a43164f2a652126b"></a>
+
 > When determining base damage (strike roll), if you suddenly roll double ones, the damage will always be 0 .
 
 ### Technical frame 6: [ Ash ] Monster Level=2 Rarity=11 Agility=9 Movement Speed=8 Number=Several Frequency=Moderate Intellect=Almost none Reaction=Violent Attack Points=- Strike Points=Evasion Points=- Defense Points=Life Points/Resistance=7/9 (2) Mental Points/Resistance=-/10 (3) Special Abilities=Wrap (Evasion target score=10, strike power 10, bonus damage 2) Mental attack immunity Weapon immunity Fire immunity Not affected by poison and illness Damage from healing magic Habitat=Ruins Languages=None Perception=Magic
@@ -203,6 +224,8 @@ What [[sword-world-rpg-complete-edition]] covers about 【 bonus damage 】:
 > An ash's attacks also do not deal direct damage. The Ash wraps itself around the target creature and attacks it. The target of the attack must make a success roll using adventurer level + agility bonus as the baseline score, and if they fail, they will inhale a portion of the ash. Every round thereafter, they must make a life force resistance roll against target score 10. As long as you continue to fail, you will suffer strike power 10 damage and 2 plus bonus damage 2 every round. This damage ca
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08605))_
+
+<a id="atom-technical-atom-16f03bdf78a3991c"></a>
 
 > If you cast the spirit magic Missile Protection , you can protect yourself from being enwrapped by the ash.
 

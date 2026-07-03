@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-surprise-attack-intelligence-no-equipment-restriction-33b0b1ba
 page_kind: source
 page_family: section-reference
-summary: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction): 14 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction): 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-surprise-attack-intelligence-no-equipment-restriction-33b0b1ba@c3312da4344179c54019b17292521da5
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-surprise-attack-intelligence-no-equipment-restriction-33b0b1ba@4b313563065a5ed810cb5e8598b3cbda
 ---
 
 # Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-f81328c3]] - broader source section: Chapter 6: / 6.3 Ranger Skill
 
@@ -28,35 +30,3 @@ From [[sword-world-rpg-complete-edition]].
 - Sages have a wide range of knowledge. This includes knowledge of the various monsters that live in Alecrast. When a sage sees a monster or hears its name, this ability may allow them to discover its true identity. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05057))_
 - Each monster has a score called rarity . Using sage skill level + intelligence bonus as the baseline score, make a success roll with this rarity as the target score, and if you succeed, you know the monster. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05058))_
 - If the check fails, the character has no knowledge of the monster. Even if the player knows, they must treat it as if they had no prior knowledge. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05059))_
-
-## Technical atoms
-
-### Technical frame 1: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05044))_
-
-> This also follows the thief skill. It's the ability to remove traps set outdoors and create traps using natural objects. Indoor mechanical traps cannot be removed or set .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05047))_
-
-> There is no requirement that you have to have the sage skill and the sorcerer skill at the same time, but if you do acquire the sage skill and the sorcerer skill at the same time, you will receive a bonus on experience points consumed.
-
-### Technical frame 2: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05058))_
-
-> Each monster has a score called rarity . Using sage skill level + intelligence bonus as the baseline score, make a success roll with this rarity as the target score, and if you succeed, you know the monster.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05057))_
-
-> When a sage sees a monster or hears its name, this ability may allow them to discover its true identity.
-
-### Technical frame 3: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05058))_
-
-> Each monster has a score called rarity . Using sage skill level + intelligence bonus as the baseline score, make a success roll with this rarity as the target score, and if you succeed, you know the monster.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05059))_
-
-> Even if the player knows, they must treat it as if they had no prior knowledge.

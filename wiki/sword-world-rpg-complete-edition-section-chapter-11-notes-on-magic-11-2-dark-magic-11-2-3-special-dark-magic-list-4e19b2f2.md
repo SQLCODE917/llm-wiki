@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-4e19b2f2
 page_kind: source
 page_family: section-reference
-summary: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List: 94 source-backed entries and 50 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List: 94 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-4e19b2f2@6053cb5b94b86a184926c4716c388c58
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-4e19b2f2@0163c19c58c594ff7c62a364ee199461
 ---
 
 # Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List
@@ -17,14 +17,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-32ef8b3e]] - broader source section: Chapter 11: Notes on Magic / 11.2 Dark Magic
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-berserk-spell-level-3-955c9172]] - narrower source section: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Berserk ] (Spell Level=3)
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-create-ghost-ship-spell-da6670a7]] - narrower source section: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Create Ghost Ship ] (Spell Level=6)
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-kardis-special-dark-mag-ea9da9f8]] - narrower source section: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / Kardis Special Dark Magic List
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-lunatic-dance-spell-lev-a2989595]] - narrower source section: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Lunatic Dance ] (Spell Level=5)
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-lunatic-seed-spell-leve-eabdf87e]] - narrower source section: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Lunatic Seed ] (Spell Level=4)
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-phalaris-special-dark-m-cbb04f43]] - narrower source section: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / Phalaris Special Dark Magic List ]
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-the-nameless-god-of-mad-c2d655f5]] - narrower source section: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / The Nameless God of Madness Special Dark Magic List
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-berserk-spell-level-3-955c9172]] - narrower source section: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Berserk ] (Spell Level=3)
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-lunatic-seed-spell-leve-eabdf87e]] - narrower source section: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Lunatic Seed ] (Spell Level=4)
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-lunatic-dance-spell-lev-a2989595]] - narrower source section: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Lunatic Dance ] (Spell Level=5)
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-kardis-special-dark-mag-ea9da9f8]] - narrower source section: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / Kardis Special Dark Magic List
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-3-special-dark-magic-list-create-ghost-ship-spell-da6670a7]] - narrower source section: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Create Ghost Ship ] (Spell Level=6)
 
 ## Statements
 
@@ -72,153 +74,3 @@ From [[sword-world-rpg-complete-edition]].
 
 - When this spell is cast on a ship, it will never sink, no matter how much it rots, as long as it only carries as much weight as the original ship could support. However, this does not stop the ship itself from decaying, so over many years it will rot to pieces. This spell is effective even on ships that have already sunk or are shipwrecked and partially destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06065))_
 - The priests of Mirleaf often load zombie and skeleton sailors onto the ships they create, and use them as ghost ships to wreak havoc on the seas. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06066))_
-
-## Technical atoms
-
-### Technical frame 1: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / Phalaris Special Dark Magic List ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05991, source-range-0b9dec90-05992, source-range-0b9dec90-05993, source-range-0b9dec90-05994, source-range-0b9dec90-05995, source-range-0b9dec90-05996, source-range-0b9dec90-05997, source-range-0b9dec90-05998))_
-
-> [ Evil Impulse (Spell Level=4)
-
-> Base Mental Power Cost=20
-
-> Distance=30 meters
-
-> Area=One
-
-> Duration=18 rounds
-
-> Effect=Cause the target to impulsively commit evil acts
-
-> Type=Mind
-
-> Expansion=Final score, duration, distance,
-
-### Technical frame 2: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / The Nameless God of Madness Special Dark Magic List
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06003, source-range-0b9dec90-06004, source-range-0b9dec90-06005, source-range-0b9dec90-06006, source-range-0b9dec90-06007, source-range-0b9dec90-06008, source-range-0b9dec90-06009, source-range-0b9dec90-06010, source-range-0b9dec90-06012))_
-
-> [ Insanity ] (Spell Level=1)
-
-> Base Mental Power Cost=3
-
-> Distance=10 meters
-
-> Area=One
-
-> Duration=18 rounds
-
-> Effect=Take away the target's sanity
-
-> Type=Mind
-
-> Expansion=Final score, duration, distance,
-
-> Resist=Negated effect
-
-### Technical frame 3: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Berserk ] (Spell Level=3)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06016))_
-
-> Base Mental Power Cost=15 Distance=Touch Area=One Duration=18 rounds Effect=Make the target go berserk Type=Mind Expansion=Final score, duration Resist=Negated effect Those who have this spell cast on them and fail to resist will go berserk and feel an urge to destroy everything nearby. Even the caster is not safe from the target. As a result, they will destroy property within sight and blindly attack creatures, regardless of friend or foe. At this time, their attack power and bonus damage will 
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06017))_
-
-> The first time it becomes 0 or less, and each time you receive a new wound, you must make a death check, and if you fail, you will die.
-
-### Technical frame 4: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Lunatic Seed ] (Spell Level=4)
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06019, source-range-0b9dec90-06020, source-range-0b9dec90-06021, source-range-0b9dec90-06022, source-range-0b9dec90-06023, source-range-0b9dec90-06025, source-range-0b9dec90-06026, source-range-0b9dec90-06027))_
-
-> Base Mental Power Cost=20
-
-> Distance=Touch
-
-> Area=One
-
-> Duration=Permanent
-
-> Effect=Plant the seeds of madness in the
-
-> Type=Mind, curse
-
-> Expansion=Final score
-
-> Resist=Negated effect
-
-### Technical frame 5: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Lunatic Dance ] (Spell Level=5)
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06030, source-range-0b9dec90-06031, source-range-0b9dec90-06032, source-range-0b9dec90-06033, source-range-0b9dec90-06034, source-range-0b9dec90-06035, source-range-0b9dec90-06036, source-range-0b9dec90-06038))_
-
-> Base Mental Power Cost=25
-
-> Distance=Caster
-
-> Area=Anyone within the caster's view
-
-> Duration=12 hours + until focus and dancing ends
-
-> Effect=Causes 12 hours of madness to anyone who watches the dance
-
-> Type=Focus, mind
-
-> Expansion=Final score, effect time (see
-
-> Resist=Negated effect
-
-### Technical frame 6: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / Kardis Special Dark Magic List
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06044, source-range-0b9dec90-06045, source-range-0b9dec90-06046, source-range-0b9dec90-06047, source-range-0b9dec90-06048, source-range-0b9dec90-06049, source-range-0b9dec90-06051, source-range-0b9dec90-06052))_
-
-> (Spell Level=9)
-
-> Base Mental Power Cost=45
-
-> Distance=10 meters
-
-> Area=One
-
-> Duration=Instant
-
-> Effect=Instantly kill the target
-
-> Expansion=Final score, targets
-
-> Resist=Negated effect
-
-### Technical frame 7: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Create Ghost Ship ] (Spell Level=6)
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06056, source-range-0b9dec90-06057, source-range-0b9dec90-06058, source-range-0b9dec90-06059, source-range-0b9dec90-06060, source-range-0b9dec90-06061))_
-
-> Base Mental Power Cost=30
-
-> Distance=Touch
-
-> Area=One ship
-
-> Duration=Permanent
-
-> Effect=Makes a ship into a ghost ship
-
-> Type=Non-removable
-
-### Technical frame 8: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Create Ghost Ship ] (Spell Level=6)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06065))_
-
-> When this spell is cast on a ship, it will never sink, no matter how much it rots, as long as it only carries as much weight as the original ship could support. However, this does not stop the ship itself from decaying, so over many years it will rot to pieces. This spell is effective even on ships that have already sunk or are shipwrecked and partially destroyed.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06064))_
-
-> Resist=None
-
-### Technical frame 9: Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.3 Special Dark Magic List / [ Create Ghost Ship ] (Spell Level=6)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06066))_
-
-> The priests of Mirleaf often load zombie and skeleton sailors onto the ships they create, and use them as ghost ships to wreak havoc on the seas.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06065))_
-
-> When this spell is cast on a ship, it will never sink, no matter how much it rots, as long as it only carries as much weight as the original ship could support.

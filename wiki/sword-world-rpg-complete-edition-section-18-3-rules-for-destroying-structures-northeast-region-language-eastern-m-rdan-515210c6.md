@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-northeast-region-language-eastern-m-rdan-515210c6
 page_kind: source
 page_family: section-reference
-summary: 18.3 Rules for Destroying Structures / Northeast Region (Language = Eastern/Mārdan): 22 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 18.3 Rules for Destroying Structures / Northeast Region (Language = Eastern/Mārdan): 22 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-northeast-region-language-eastern-m-rdan-515210c6@f2c8f3b481fb915272a23449ec9bb6dd
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-northeast-region-language-eastern-m-rdan-515210c6@15b479db36e41f4f07a38bcacaa23394
 ---
 
 # 18.3 Rules for Destroying Structures / Northeast Region (Language = Eastern/Mārdan)
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-5e113017]] - broader source section: 18.3 Rules for Destroying Structures
 
@@ -32,15 +34,3 @@ From [[sword-world-rpg-complete-edition]].
 - Queen June V has banned the use of magic within the country. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11950))_
 - This is because the maritime tribes generate profit through trade and piracy using galley ships called free merchant vessels, wielding incomparable power to the plains people who engage in farming. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11951))_
 - Plysis has been under invasion from Lodorille, but has continued to repel these attacks through its sturdy fortifications, large weaponry such as catapults, and the strategic brilliance of the talented military advisor Lukial, known as "The Chess Player." However, there was an incident where military advisor Lukial accepted an invitation from the great western nation of Lomar and departed, leading to rumors that the city's survival is now in jeopardy. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11955))_
-
-## Technical atoms
-
-### Technical frame 1: 18.3 Rules for Destroying Structures / Northeast Region (Language = Eastern/Mārdan)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11954))_
-
-> Plysis is the largest fortified city in Alecrast and has become a city-state in its own right. It has a population of 40,000. The economy is sustained by well-developed commerce, professional guilds, and trade with neighboring villages and towns.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11953))_
-
-> If you can gain favor with the powerful tribes, Baikal can become a hospitable country for travelers.

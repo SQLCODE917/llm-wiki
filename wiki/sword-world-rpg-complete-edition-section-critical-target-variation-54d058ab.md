@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Critical Target Variation: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-critical-target-variation-54d058ab@1f967c9737846f431a517c1f0edf196a
+projection_coverage: section-sword-world-rpg-complete-edition-section-critical-target-variation-54d058ab@89bcc9f8ea9adaa879af82ebaa8328c9
 ---
 
 # Critical Target Variation
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Topics
+
 - [[sword-world-rpg-complete-edition-critical-target-variation]] - topic hub: opens the topic page for Critical Target Variation
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-chapter-16-16-2-weapon-and-armor-modifiers-critical-target-variation-49197cfc]] - same source heading: another source section with the same heading, Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation
 
 ## Statements

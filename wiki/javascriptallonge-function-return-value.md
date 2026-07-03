@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-function-return-value
 page_kind: concept
+page_family: topic-concept
 summary: Function Return Value: 2 statement(s) and 2 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-function-return-value@04f48fa2d2664f38579dcdd9ac797768
+projection_coverage: topic-javascriptallonge-function-return-value@ce27146269e60f9469633a5757b31ffe
 ---
 
 # Function Return Value
@@ -32,6 +33,8 @@ What [[javascriptallonge]] covers about function return value:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00192))_
 
+<a id="atom-technical-atom-7673f47cd782cb73"></a>
+
 ```
 (() => 1 + 1)()
 //=> 2
@@ -49,15 +52,22 @@ What [[javascriptallonge]] covers about function return value:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00197))_
 
+<a id="atom-technical-atom-89adc0ecfdaf7a9b"></a>
+
 > When dealing with expressions that have a lot of the same characters (like parentheses), you may find it helpful to format the code to make things stand out.
 
 
 ## Related pages
 
+### Shared technical atoms
+
+- [[javascriptallonge-idea]] - shared statements and technical atoms: Idea shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: Well, the last one's a doozy, but still, the general idea is this: We can make a function that returns a value by putting the value to the right of the arrow.; Idea shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared statement(s), 1 shared atom(s))
+
+### Topics
+
 - [[javascriptallonge-function]] - broader topic: Function shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: Yes we can! Functions can return the value of evaluating another function.; Function shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared statement(s), 2 shared atom(s))
 - [[javascriptallonge-return]] - broader topic: Return shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (2 shared atom(s))
 - [[javascriptallonge-value]] - broader topic: Value shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (2 shared atom(s))
-- [[javascriptallonge-idea]] - shared statements and technical atoms: Idea shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: Well, the last one's a doozy, but still, the general idea is this: We can make a function that returns a value by putting the value to the right of the arrow.; Idea shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared statement(s), 1 shared atom(s))
 
 ## Source
 

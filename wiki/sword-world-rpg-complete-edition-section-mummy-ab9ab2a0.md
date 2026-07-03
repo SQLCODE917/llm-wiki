@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-mummy-ab9ab2a0
 page_kind: source
 page_family: section-reference
-summary: [ Mummy ]: 57 source-backed entries and 37 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Mummy ]: 57 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-mummy-ab9ab2a0@b3960d26fe27e126bd3669e1e684e77f
+projection_coverage: section-sword-world-rpg-complete-edition-section-mummy-ab9ab2a0@66125aee1318efdbae471b9c08c1f4e2
 ---
 
 # [ Mummy ]
@@ -31,110 +31,68 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: [ Mummy ]
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08823, source-range-0b9dec90-08824, source-range-0b9dec90-08825, source-range-0b9dec90-08826, source-range-0b9dec90-08827, source-range-0b9dec90-08828, source-range-0b9dec90-08829, source-range-0b9dec90-08830, source-range-0b9dec90-08831, source-range-0b9dec90-08832, source-range-0b9dec90-08833, source-range-0b9dec90-08834, source-range-0b9dec90-08835, source-range-0b9dec90-08836, source-range-0b9dec90-08838, source-range-0b9dec90-08839, source-range-0b9dec90-08840))_
-
-> Monster Level=6
-
-> Rarity=14
-
-> Agility=10
-
-> Movement Speed=14
-
-> Number=One to several Frequency=Rare
-
-> Intellect=Obeys commands
-
-> Reaction=Violent
-
-> Attack Points=Arms:14 (7)
-
-> Strike Points=8+curse
-
-> Evasion Points=13 (6) Defense Points=8
-
-> Life Points/Resistance=7/13 (6)
-
-> Mental Points/Resistance=-/14 (7)
-
-> Special Abilities=Curse (Resist target
-
-> score=13)
-
-> Habitat=Tombs
-
-> Languages=None
-
-> Perception=Pseudo
-
-### Technical frame 2: [ Mummy ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08842))_
-
-> Also, mental magic doesn't work on a mummy. Since a mummy is dry, it's weak to fire, so fire attacks receive a +10 bonus to strike power.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08841))_
-
-> If a mummy's attack hits, in addition to physical damage, a curse will befall you.
-
-### Technical frame 3: [ Mummy ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08842))_
 
 > Also, mental magic doesn't work on a mummy. Since a mummy is dry, it's weak to fire, so fire attacks receive a +10 bonus to strike power.
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08844, source-range-0b9dec90-08845, source-range-0b9dec90-08846, source-range-0b9dec90-08847, source-range-0b9dec90-08848, source-range-0b9dec90-08849, source-range-0b9dec90-08850, source-range-0b9dec90-08851, source-range-0b9dec90-08852, source-range-0b9dec90-08853, source-range-0b9dec90-08854, source-range-0b9dec90-08855, source-range-0b9dec90-08856, source-range-0b9dec90-08857, source-range-0b9dec90-08859))_
 
+<a id="atom-technical-atom-11f83abf10d9d43c"></a>
+
 > Monster Level=9
+
+<a id="atom-technical-atom-4879378540f5aab5"></a>
 
 > Rarity=15
 
+<a id="atom-technical-atom-5bc4cd5a68e63627"></a>
+
 > Agility=14
+
+<a id="atom-technical-atom-11fbeaa9bf8d83e6"></a>
 
 > Movement Speed=14
 
+<a id="atom-technical-atom-3f16031e444d3fef"></a>
+
 > Number=One
+
+<a id="atom-technical-atom-62a79a96482634dd"></a>
 
 > Frequency=Very rare
 
+<a id="atom-technical-atom-5edef51a61302831"></a>
+
 > Intellect=High
+
+<a id="atom-technical-atom-46aeee3d35be9044"></a>
 
 > Reaction=Adversarial
 
+<a id="atom-technical-atom-7250296ab8c96ceb"></a>
+
 > Attack Points=Arms:17 (10)
+
+<a id="atom-technical-atom-f8c8036f89efd332"></a>
 
 > Strike Points=16+curse
 
+<a id="atom-technical-atom-c15c2e025cfb252c"></a>
+
 > Evasion Points=17 (10) Defense Points=11
+
+<a id="atom-technical-atom-0708322b473fa68d"></a>
 
 > Life Points/Resistance=21/18 (11)
 
+<a id="atom-technical-atom-1e70c5be80599340"></a>
+
 > Mental Points/Resistance=21/18 (11)
+
+<a id="atom-technical-atom-1d099879f6b54a5a"></a>
 
 > Special Abilities=7th level ancient magic (Magic intensity/magic power=17/10)
 
+<a id="atom-technical-atom-26a28e6e4d0646f0"></a>
+
 > Curse (Resist target score=16)
-
-### Technical frame 4: [ Mummy ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08867))_
-
-> A Master Mummy is an ancient member of a royal family or noble who followed a ritual in ancient and sleeps in a tomb as an undead. When a graverobber, etc. places their hands on its coffin, the master mummy rises and begins to act.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08864, source-range-0b9dec90-08865, source-range-0b9dec90-08866))_
-
-> Habitat=Tombs
-
-> Languages=Low ancient
-
-> Perception=Pseudo
-
-### Technical frame 5: [ Mummy ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08869))_
-
-> It is common for 10 or more mummies to be buried together in a master mummy's coffin chamber, furthermore, the master mummy has the ability to either make an individual mummy rise, or summon new mummies from nearby. This regeneration or summoning can only be done once per round. A master mummy can use this ability while taking other actions.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08868))_
-
-> If a master mummy's attack hits, in addition to physical damage, a curse will befall you.

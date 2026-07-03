@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 18.3 Rules for Destroying Structures / Islands of Azarn (Language = Eastern/Mārdan): 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-islands-of-azarn-language-eastern-m-rdan-1d74e7cd@a1178ce14484eae83d4e42b5828fd8a0
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-islands-of-azarn-language-eastern-m-rdan-1d74e7cd@d52c23ceb991c9ec05e1f3d4f69f8641
 ---
 
 # 18.3 Rules for Destroying Structures / Islands of Azarn (Language = Eastern/Mārdan)
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-5e113017]] - broader source section: 18.3 Rules for Destroying Structures
 

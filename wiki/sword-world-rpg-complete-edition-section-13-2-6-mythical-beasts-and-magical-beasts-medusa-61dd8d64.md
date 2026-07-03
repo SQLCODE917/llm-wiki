@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-medusa-61dd8d64
 page_kind: source
 page_family: section-reference
-summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Medusa ]: 20 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Medusa ]: 20 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-medusa-61dd8d64@2c7d22a3ee377880292bc5255879ebb0
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-medusa-61dd8d64@2bc78fd142e57f48c07ee0ece2496f59
 ---
 
 # 13.2.6 Mythical Beasts and Magical Beasts / [ Medusa ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-myt
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] - broader source section: 13.2.6 Mythical Beasts and Magical Beasts
 
@@ -27,15 +29,3 @@ From [[sword-world-rpg-complete-edition]].
 - In this case, the penalty to attack power and evasion speed is only -2. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07448))_
 - Therefore, you can fight while looking at a medusa's reflection in a mirror. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07448))_
 - It is possible to put the severed head of a Medusa in a bag, then show it to an enemy in combat to turn them to stone, but it must be used carefully, as there is a risk of it turning your allies to stone as well. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07450))_
-
-## Technical atoms
-
-### Technical frame 1: 13.2.6 Mythical Beasts and Magical Beasts / [ Medusa ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07449))_
-
-> A medusa uses the snakes on her head to attack. A medusa has countless snakes (hair), and anyone who engages with a medusa in melee is exposed to these snakes' attacks. The snakes are poisonous, and anyone dealt damage by the snakes' attacks must immediately make a life force resistance roll against target score 10. If you fail, you immediately suffer damage resulting from a strike power 10 strike roll plus bonus damage 3. This damage can be reduced by adventurer level. If the resistance roll is
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07448))_
-
-> Also, you cannot cast magic on the medusa in these states.

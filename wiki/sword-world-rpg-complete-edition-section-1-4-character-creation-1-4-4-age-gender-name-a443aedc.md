@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 1.4 Character Creation / 1.4.4 Age, Gender, Name: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-4-age-gender-name-a443aedc@1b4cbdd7dede3f25cea2d2c6f6901083
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-4-age-gender-name-a443aedc@426f3ebe1ed9fb4b160bbe95c1ccf5ce
 ---
 
 # 1.4 Character Creation / 1.4.4 Age, Gender, Name
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-charac
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1e239ef6]] - broader source section: 1.4 Character Creation
 

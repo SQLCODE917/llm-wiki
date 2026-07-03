@@ -4,10 +4,10 @@ page_kind: concept
 page_family: broad-topic
 summary: 4.5.1 Hit Checks: 31 statement(s) and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-hit-check@c81de3131d9cec7cfc1dc0ccfabed51d
+projection_coverage: topic-sword-world-rpg-complete-edition-hit-check@8c8d26aa7cbfe0a5e2eabc9e3dd2747a
 ---
 
 # 4.5.1 Hit Checks
@@ -17,12 +17,17 @@ What [[sword-world-rpg-complete-edition]] covers about 4.5.1 hit checks:
 
 ## Related pages
 
+### Source structure
+
+- [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-4-7-1-hit-checks-62d20d3a]] - source section: 4.7 Attacks From Characters Against Characters / 4.7.1 Hit Checks shares source evidence from 4.7 Attacks From Characters Against Characters / 4.7.1 Hit Checks: To make a hit check, both sides must roll the dice (2D). The attacker adds their roll to their attack power , and the defender adds their roll to their evasion speed .; 4.7 Attacks From Characters Against Characters / 4.7.1 Hit Checks shares technical record from 4.7 Attacks From Characters Against Characters / 4.7.1 Hit Checks: To make a hit check, both sides must roll the dice (2D). (7 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-4-5-1-hit-checks-426c8706]] - source section: 4.5.1 Hit Checks shares source evidence from 4.5.1 Hit Checks: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score.; 4.5.1 Hit Checks shares technical record from 4.5.1 Hit Checks: When a character attacks a monster, they must make a success roll hit check, using attack power as the baseline score. (7 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-10-5-attacks-against-the-sleeping-hit-checks-f105c38c]] - source section: 10.5 Attacks Against the Sleeping / 《 Hit Checks 》 shares source evidence from 10.5 Attacks Against the Sleeping / 《 Hit Checks 》: The spirit magic Sleep is still an exception. Unless the magic itself is broken by Dispel Magic or other magic belonging to mind , they'll never wake up.; 10.5 Attacks Against the Sleeping / 《 Hit Checks 》 shares technical record from 10.5 Attacks Against the Sleeping / 《 Hit Checks 》: Unless the magic itself is broken by Dispel Magic or other magic belonging to mind , they'll never wake up. (1 shared statement(s), 1 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-target-score]] - shared statements: Target Scores shares source evidence from 4.5.1 Hit Checks: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score. (2 shared statement(s))
 - [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: 1.4.9 Filling Out the Character Sheet shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: Have you learned each of these terms? Now, let's get into the actual description of the combat procedure. Combat consists of two checks: one is made to determine if ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements: 【 Ranger Skill 】 shares source evidence from 4.5.1 Hit Checks: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score. (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-4-5-1-hit-checks-426c8706]] - source section: 4.5.1 Hit Checks shares source evidence from 4.5.1 Hit Checks: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score.; 4.5.1 Hit Checks shares technical record from 4.5.1 Hit Checks: When a character attacks a monster, they must make a success roll hit check, using attack power as the baseline score. (7 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-4-7-1-hit-checks-62d20d3a]] - source section: 4.7 Attacks From Characters Against Characters / 4.7.1 Hit Checks shares source evidence from 4.7 Attacks From Characters Against Characters / 4.7.1 Hit Checks: To make a hit check, both sides must roll the dice (2D). The attacker adds their roll to their attack power , and the defender adds their roll to their evasion speed .; 4.7 Attacks From Characters Against Characters / 4.7.1 Hit Checks shares technical record from 4.7 Attacks From Characters Against Characters / 4.7.1 Hit Checks: To make a hit check, both sides must roll the dice (2D). (7 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-10-5-attacks-against-the-sleeping-hit-checks-f105c38c]] - source section: 10.5 Attacks Against the Sleeping / 《 Hit Checks 》 shares source evidence from 10.5 Attacks Against the Sleeping / 《 Hit Checks 》: The spirit magic Sleep is still an exception. Unless the magic itself is broken by Dispel Magic or other magic belonging to mind , they'll never wake up.; 10.5 Attacks Against the Sleeping / 《 Hit Checks 》 shares technical record from 10.5 Attacks Against the Sleeping / 《 Hit Checks 》: Unless the magic itself is broken by Dispel Magic or other magic belonging to mind , they'll never wake up. (1 shared statement(s), 1 shared atom(s))
 ## Statements by source section
 
 ### Chapter 3: / 3.2 Action Order
@@ -112,6 +117,8 @@ What [[sword-world-rpg-complete-edition]] covers about 4.5.1 hit checks:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01483))_
 
+<a id="atom-technical-atom-4c81519b2964b8c7"></a>
+
 > When a character attacks a monster, they must make a success roll hit check, using attack power as the baseline score.
 
 ### Technical frame 2: 4.5.1 Hit Checks
@@ -121,6 +128,8 @@ What [[sword-world-rpg-complete-edition]] covers about 4.5.1 hit checks:
 > Since a hit check is also a type of success roll, double ones is an automatic failure and double sixes is an automatic success .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01486))_
+
+<a id="atom-technical-atom-63b3930cf9543626"></a>
 
 > character's attack power + 2D ≥ monster's evasion points → attack hits
 
@@ -132,6 +141,8 @@ What [[sword-world-rpg-complete-edition]] covers about 4.5.1 hit checks:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01492))_
 
+<a id="atom-technical-atom-7d0c225ad68d54e7"></a>
+
 > Table 4-1: Rating Table
 
 ### Technical frame 4: 4.7 Attacks From Characters Against Characters / 4.7.1 Hit Checks
@@ -141,6 +152,8 @@ What [[sword-world-rpg-complete-edition]] covers about 4.5.1 hit checks:
 > If the attacker's final score exceeds that of the defender, the attack hits . If there is a tie or the defender's is greater, the attack fails .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02240))_
+
+<a id="atom-technical-atom-4f3d979ccb251ef6"></a>
 
 > To make a hit check, both sides must roll the dice (2D).
 
@@ -152,7 +165,11 @@ What [[sword-world-rpg-complete-edition]] covers about 4.5.1 hit checks:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02241, source-range-0b9dec90-02242))_
 
+<a id="atom-technical-atom-640f50d3ffe6d1a6"></a>
+
 > attacker's final score = attack power + 2D
+
+<a id="atom-technical-atom-4bebde79c36032d8"></a>
 
 > defender's final score = evasion speed + 2D
 
@@ -164,6 +181,8 @@ What [[sword-world-rpg-complete-edition]] covers about 4.5.1 hit checks:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02246))_
 
+<a id="atom-technical-atom-d332d1e51e19ebdd"></a>
+
 > attacker's attack power + 2D ≤ defender's evasion speed +2D → attack fails
 
 ### Technical frame 7: 4.7 Attacks From Characters Against Characters / 4.7.1 Hit Checks
@@ -174,9 +193,17 @@ What [[sword-world-rpg-complete-edition]] covers about 4.5.1 hit checks:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02250))_
 
+<a id="atom-technical-atom-bb199bf703e86efc"></a>
+
 > Ducard II's final score is 4+7= 11 , while Bucky's final score is 5+6= 11 . It's a tie.
 
-### Technical frame 8: 10.5 Attacks Against the Sleeping / 《 Hit Checks 》
+### Technical atom 8
+
+<a id="atom-technical-atom-cdea43c6a2331207"></a>
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05731))_
+
+> Add a 2D roll to the attacking monster's attack points - 7 (marked in brackets). If it's equal to or greater than the evasion points of the defending monster, it's a hit.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05732))_
 

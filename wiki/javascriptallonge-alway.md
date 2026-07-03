@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-alway
 page_kind: concept
-summary: Alway: 9 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
+page_family: topic-concept
+summary: Alway: 8 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-alway@67db0d8467aa57b80a827e849d4c21b0
+projection_coverage: topic-javascriptallonge-alway@35dff53f5a7bc7b8ec8e5039a2b0ea99
 ---
 
 # Alway
@@ -33,10 +34,6 @@ What [[javascriptallonge]] covers about alway:
 
 - We always use a block, we cannot write function (str) str + str . This means that if we want our functions to return a value, we always need to use the return keyword _(javascriptallonge.pdf (source-range-7239e085-00513))_
 
-### And also: / Magic Names / the function keyword
-
-- arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this: _(javascriptallonge.pdf (source-range-7239e085-00612))_
-
 ### And also: / Summary / Functions
 
 - function keyword functions always have blocks as their bodies. _(javascriptallonge.pdf (source-range-7239e085-00642))_
@@ -60,6 +57,8 @@ What [[javascriptallonge]] covers about alway:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00351))_
 
+<a id="atom-technical-atom-022fdc90abb9f966"></a>
+
 > If pure functions can contain closures, can a closure contain a pure function?
 
 ### Technical frame 2: And also: / Closures and Scope / which came first, the chicken or the egg?
@@ -70,47 +69,19 @@ What [[javascriptallonge]] covers about alway:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00381))_
 
+<a id="atom-technical-atom-ac56068d50c46aef"></a>
+
 > If you don't want your code to operate directly within the global environment, what can you do?
 
-### Technical frame 3: And also: / Magic Names / the function keyword
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00612))_
-
-> arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00611))_
-
-```
-const args = function (a, b) {
-return arguments;
-}
-args(2,3)
-//=> { '0': 2, '1': 3 }
-```
-
-### Technical frame 4: And also: / Magic Names / the function keyword
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00617))_
-
-> The most common use of the arguments binding is to build functions that can take a variable number of arguments. We'll see it used in many of the recipes, starting off with partial application and ellipses.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00614))_
-
-```
-const plus = function () {
-return arguments[0] + arguments[1];
-}
-plus(2,3)
-//=> 5
-```
-
-### Technical frame 5: Picking the Bean: Choice and Truthiness / truthiness and operators
+### Technical frame 3: Picking the Bean: Choice and Truthiness / truthiness and operators
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00779))_
 
 > Programmers often take advantage of this behaviour to observe that !!(someExpression) will always evaluate to true is someExpression is truthy, and to false if it is not. So in JavaScript (and other languages with similar semantics), when you see something like !!currentUser() , this is an idiom that means 'true if currentUser is truthy.' Thus, a function like currentUser() is free to return null , or undefined , or false if there is no current user.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00778))_
+
+<a id="atom-technical-atom-e4e2b300bef7f5ba"></a>
 
 ```
 !5
@@ -122,15 +93,20 @@ plus(2,3)
 
 ## Related pages
 
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from And also: / Closures and Scope / if functions without free variables are pure, are closures impure?: Pure functions always mean the same thing because all of their 'inputs' are fully defined by their arguments. Not so with a closure. If I present to you this pure fu ... [truncated]; Function shares technical record from And also: / Closures and Scope / if functions without free variables are pure, are closures impure?: If pure functions can contain closures, can a closure contain a pure function? (2 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-argument]] - shared statements and technical atoms: Argument shares source evidence from And also: / Magic Names / the function keyword: arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:; Argument shares technical record from And also: / Magic Names / the function keyword: const args = function (a, b) { return arguments; } args(2,3) //=> { '0': 2, '1': 3 } (2 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-function-keyword]] - shared statements and technical atoms: the function keyword shares source evidence from And also: / Naming Functions / the function keyword: We always use a block, we cannot write function (str) str + str . This means that if we want our functions to return a value, we always need to use the return keyword; the function keyword shares technical record from And also: / Magic Names / the function keyword: const args = function (a, b) { return arguments; } args(2,3) //=> { '0': 2, '1': 3 } (3 shared statement(s), 2 shared atom(s))
+### Shared technical atoms
+
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from And also: / Closures and Scope / if functions without free variables are pure, are closures impure?: Pure functions always mean the same thing because all of their 'inputs' are fully defined by their arguments. Not so with a closure. If I present to you this pure fu ... [truncated]; Function shares technical record from And also: / Closures and Scope / if functions without free variables are pure, are closures impure?: If pure functions can contain closures, can a closure contain a pure function? (2 shared statement(s), 2 shared atom(s))
 - [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by value: We'll see below that while JavaScript always calls by value, the notion of a 'value' has additional subtlety. But before we do, let's look at variables.; Javascript shares technical record from And also: / Closures and Scope / which came first, the chicken or the egg?: If you don't want your code to operate directly within the global environment, what can you do? (2 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-scope]] - shared technical atoms: Scope shares technical record from And also: / Closures and Scope / if functions without free variables are pure, are closures impure?: If pure functions can contain closures, can a closure contain a pure function? (2 shared atom(s))
+- [[javascriptallonge-argument]] - shared statements and technical atoms: Argument shares source evidence from Picking the Bean: Choice and Truthiness / truthiness and operators: Our logical operators ! , && , and || are a little more subtle than our examples above implied. ! is the simplest. It always returns false if its argument is truthy, ... [truncated]; Argument shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared statement(s), 1 shared atom(s))
 - [[javascriptallonge-return]] - shared statements and technical atoms: Return shares source evidence from Picking the Bean: Choice and Truthiness / truthiness and operators: Our logical operators ! , && , and || are a little more subtle than our examples above implied. ! is the simplest. It always returns false if its argument is truthy, ... [truncated]; Return shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared statement(s), 1 shared atom(s))
 - [[javascriptallonge-behaviour]] - shared technical atoms: Behaviour shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared atom(s))
 - [[javascriptallonge-closure]] - shared technical atoms: Closure shares technical record from And also: / Closures and Scope / if functions without free variables are pure, are closures impure?: If pure functions can contain closures, can a closure contain a pure function? (1 shared atom(s))
-- [[javascriptallonge-program]] - shared technical atoms: Program shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared atom(s))
 - [[javascriptallonge-programmer]] - shared technical atoms: Programmer shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared atom(s))
+
+### Shared claims
+
+- [[javascriptallonge-function-keyword]] - shared statements: the function keyword shares source evidence from And also: / Naming Functions / the function keyword: We always use a block, we cannot write function (str) str + str . This means that if we want our functions to return a value, we always need to use the return keyword (2 shared statement(s))
 - [[javascriptallonge-needn]] - shared statements: Needn shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere: 64 It needn't always be so: Programmers have developed specialized data structures that make operations like this cheap, often by arranging for structures to share c ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-value]] - shared statements: Value shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by value: We'll see below that while JavaScript always calls by value, the notion of a 'value' has additional subtlety. But before we do, let's look at variables. (1 shared statement(s))
 

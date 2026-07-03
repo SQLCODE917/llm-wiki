@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-1-4-character-creation-weight-limits-5a76b5c1
 page_kind: source
 page_family: section-reference
-summary: 1.4 Character Creation / [ Weight Limits ]: 27 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 1.4 Character Creation / [ Weight Limits ]: 27 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-weight-limits-5a76b5c1@0a87539a9b8afd56aa85b33c056f2784
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-weight-limits-5a76b5c1@7e558456fc08a14cee4be8d82ea3b795
 ---
 
 # 1.4 Character Creation / [ Weight Limits ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-charac
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1e239ef6]] - broader source section: 1.4 Character Creation
 
@@ -31,25 +33,3 @@ From [[sword-world-rpg-complete-edition]].
 - So far, 277 gamels have been spent on purchases, with 303 gamels remaining. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01029))_
 - We won't buy preserved food yet. There's still no adventure in store for Ducard II. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01030))_
 - Many games set some kind of weight on weapons, armor and equipment, limiting the amount of goods a character can carry. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01020))_
-
-## Technical atoms
-
-### Technical frame 1: 1.4 Character Creation / [ Weight Limits ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01030))_
-
-> We won't buy preserved food yet. There's still no adventure in store for Ducard II.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01031))_
-
-> [Figure] (p.25)
-
-### Technical frame 2: 1.4 Character Creation / [ Weight Limits ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01030))_
-
-> We won't buy preserved food yet. There's still no adventure in store for Ducard II.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01032))_
-
-> Table 1-11: Equipment

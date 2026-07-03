@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-like-this-generating-iterables-recursive-iterators-7e4e68e5
 page_kind: source
-summary: Like this: / Generating Iterables / recursive iterators: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Like this: / Generating Iterables / recursive iterators: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-like-this-generating-iterables-recursive-iterators-7e4e68e5@8e07f07268bbf69a8d571965052d157f
+projection_coverage: section-javascriptallonge-section-like-this-generating-iterables-recursive-iterators-7e4e68e5@72ad11cbb5415279c3e42b857d583355
 ---
 
 # Like this: / Generating Iterables / recursive iterators
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-like-this-generating-iter
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-like-this-generating-iterables-283d51ed]] - broader source section: Like this: / Generating Iterables
 
@@ -30,52 +33,13 @@ From [[javascriptallonge]].
 
 ### Technical frame 1: Like this: / Generating Iterables / recursive iterators
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01638))_
-
-> For example, iterating over a tree. Given an array that might contain arrays, let's say we want to generate all the 'leaf' elements, i.e. elements that are not, themselves, iterable.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01637))_
-
-> One of those cases is when we have to recursively enumerate something.
-
-### Technical frame 2: Like this: / Generating Iterables / recursive iterators
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01643))_
-
-> If you peel off isIterable and ignore the way that the iteration version uses [Symbol.iterator] and .next , we're left with the fact that the generating version calls itself recursively, and the iteration version maintains an explicit stack. In essence, both the generation and iteration implementations have stacks, but the generation version's stack is implicit , while the iteration version's stack is explicit .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01639))_
-
-```
-// Generation
-const isIterable = (something) =>
-!!something[Symbol.iterator];
-const generate = (iterable) => {
-for (let element of iterable) {
-if (isIterable(element)) {
-generate(element)
-}
-else {
-console.log(element)
-}
-}
-}
-generate([1, [2, [3, 4], 5]])
-//=>
-1
-2
-3
-4
-5
-```
-
-### Technical frame 3: Like this: / Generating Iterables / recursive iterators
-
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01643))_
 
 > If you peel off isIterable and ignore the way that the iteration version uses [Symbol.iterator] and .next , we're left with the fact that the generating version calls itself recursively, and the iteration version maintains an explicit stack. In essence, both the generation and iteration implementations have stacks, but the generation version's stack is implicit , while the iteration version's stack is explicit .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01642))_
+
+<a id="atom-technical-atom-83d9e3adc3013b32"></a>
 
 ```
 const isIterable = (something) =>

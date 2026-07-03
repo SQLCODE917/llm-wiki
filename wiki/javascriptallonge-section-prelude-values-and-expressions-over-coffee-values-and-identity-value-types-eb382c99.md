@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-value-types-eb382c99
 page_kind: source
+page_family: section-reference
 summary: Prelude: Values and Expressions over Coffee / values and identity / value types: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-value-types-eb382c99@8a3e43ae74eea3fa05a581c34c736112
+projection_coverage: section-javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-value-types-eb382c99@b2d08d9cc88c93db5e133435cd1e6b94
 ---
 
 # Prelude: Values and Expressions over Coffee / values and identity / value types
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-prelude-values-and-expres
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-7389665c]] - broader source section: Prelude: Values and Expressions over Coffee / values and identity
 
@@ -35,6 +38,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00125))_
 
+<a id="atom-technical-atom-af344335a7478637"></a>
+
 ```
 2 + 2 === 4
 //=> true
@@ -50,6 +55,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00127))_
 
+<a id="atom-technical-atom-cb35e8520be9c9a9"></a>
+
 > So even if you have two cups of the same type, and their contents are the same, you can still distinguish between them.
 
 ### Technical frame 3: Prelude: Values and Expressions over Coffee / values and identity / value types
@@ -59,5 +66,7 @@ From [[javascriptallonge]].
 > Cafe Macchiato is also a fine drink, especially when following up on the fortunes of the Azzurri or the standings in the Giro d'Italia
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00128))_
+
+<a id="atom-technical-atom-4738eb9ff674c3cd"></a>
 
 > [Figure] (p.22)

@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-a-pull-of-the-lever-prefaces-about-javascript-allong-that-s-nice-is-that-the-only-reason-1523be9c
 page_kind: source
+page_family: section-reference
 summary: A Pull of the Lever: Prefaces / About JavaScript Allongé / that's nice. is that the only reason?: 12 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-a-pull-of-the-lever-prefaces-about-javascript-allong-that-s-nice-is-that-the-only-reason-1523be9c@6efc6b7df53863021f9268531c8d837c
+projection_coverage: section-javascriptallonge-section-a-pull-of-the-lever-prefaces-about-javascript-allong-that-s-nice-is-that-the-only-reason-1523be9c@ca4cb1fd38cc8864ea094fd3de885383
 ---
 
 # A Pull of the Lever: Prefaces / About JavaScript Allongé / that's nice. is that the only reason?
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-a-pull-of-the-lever-prefa
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-a-pull-of-the-lever-prefaces-about-javascript-allong-21ea31b9]] - broader source section: A Pull of the Lever: Prefaces / About JavaScript Allongé
 

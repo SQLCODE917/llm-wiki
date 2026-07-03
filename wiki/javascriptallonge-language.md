@@ -1,19 +1,33 @@
 ---
 page_id: javascriptallonge-language
 page_kind: concept
+page_family: broad-topic
 summary: Language: 13 statement(s) and 11 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-language@06c62d96e3ae1270ac4048e52c66897c
+projection_coverage: topic-javascriptallonge-language@cd3726265ebf35b1d4a208cf7ff63ae8
 ---
 
 # Language
 
 What [[javascriptallonge]] covers about language:
 
-## Statements
+
+## Related pages
+
+### Shared technical atoms
+
+- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from Or even: / back on the block: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Javascript shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ... })(i) } (6 shared statement(s), 7 shared atom(s))
+- [[javascriptallonge-programming]] - shared statements and technical atoms: Programming shares source evidence from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Rub ... [truncated]; Programming shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ... })(i) } (6 shared statement(s), 5 shared atom(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Rub ... [truncated]; Function shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: def foo (first, *rest) # ... end (2 shared statement(s), 5 shared atom(s))
+- [[javascriptallonge-programmer]] - shared statements and technical atoms: Programmer shares source evidence from Or even: / back on the block: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Programmer shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ... })(i) } (2 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-code]] - shared statements and technical atoms: Code shares source evidence from Or even: / back on the block: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Code shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-feature]] - shared technical atoms: Feature shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (3 shared atom(s))
+- [[javascriptallonge-rule]] - shared technical atoms: Rule shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (3 shared atom(s))
+- [[javascriptallonge-write]] - shared statements and technical atoms: Write shares source evidence from Or even: / back on the block: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Write shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (1 shared statement(s), 2 shared atom(s))
+## Statements by source section
 
 ### A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?
 
@@ -78,6 +92,8 @@ What [[javascriptallonge]] covers about language:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00024))_
 
+<a id="atom-technical-atom-da2e3d2bcbad5b58"></a>
+
 ```
 for (int i = 0; i < array.length; ++i) {
 // ...
@@ -91,6 +107,8 @@ for (int i = 0; i < array.length; ++i) {
 > Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Ruby, we can write:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00026))_
+
+<a id="atom-technical-atom-4cc33f6651c07c8e"></a>
 
 ```
 var i;
@@ -109,6 +127,8 @@ for (i = 0; i < array.length; ++i) {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00029))_
 
+<a id="atom-technical-atom-4cdaf7d079e7fa51"></a>
+
 ```
 def foo (first, *rest)
 # ...
@@ -123,6 +143,8 @@ end
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00144))_
 
+<a id="atom-technical-atom-a93f6fecaab38822"></a>
+
 > The machine's representation of a number almost never lines up perfectly with our understanding of how a number behaves, and thus there will be places where the computer's behaviour surprises us if we don't know a little about what it's doing 'under the hood.'
 
 ### Technical frame 5: Or even: / back on the block
@@ -132,6 +154,8 @@ end
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00247))_
+
+<a id="atom-technical-atom-34f7076e15332e82"></a>
 
 ```
 (() => 2 + 2)()
@@ -152,6 +176,8 @@ end
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00248))_
 
+<a id="atom-technical-atom-a3eff62ec638110d"></a>
+
 > So how do we get a function that evaluates a block to return a value when applied?
 
 ### Technical frame 7: And also: / Closures and Scope / it's always the environment
@@ -161,6 +187,8 @@ end
 > Only you call it with (1)(2)(3) instead of (1, 2, 3) . The other big difference is that you can call it with (1) and get a function back that you can later call with (2)(3) .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00364))_
+
+<a id="atom-technical-atom-2bf197b4e3f33351"></a>
 
 ```
 (x, y, z) => x + y + z
@@ -174,6 +202,8 @@ end
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01318))_
 
+<a id="atom-technical-atom-c5cd3037853933e3"></a>
+
 ```
 const firstInIteration = (fn, iterator) =>
 take(filterIteratorWith(fn, iterator), 1);
@@ -181,29 +211,7 @@ take(filterIteratorWith(fn, iterator), 1);
 
 ### Technical atom 9
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00091))_
-
-| entry | content |
-| --- | --- |
-| 5 | http://www.fogus.me Like JavaScript itself, this book gives you a gentle start before showing you its full depth, and like a Cafe Allongé, it's over too soon. Enjoy! -Matthew Knox, mattknox.com 6 |
-| 6 | http://mattknox.com |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-matthew knox
-A different kind of language requires a different kind of book.
-JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor strictly dynamic, and it supports procedural, object-oriented (in several flavors!), and functional programming. Many books try to hide most of those capabilities away, giving you recipes for writing JavaScript in a way that approximates class-centric programming in other languages. Not JavaScript Allongé. It starts with the fundamentals of values, functions, and objects, and then guides you through JavaScript from the inside with exploratory bits of code that illustrate scoping, combinators, context, state, prototypes, and constructors.
-5 http://www.fogus.me
-Like JavaScript itself, this book gives you a gentle start before showing you its full depth, and like a Cafe Allongé, it's over too soon. Enjoy!
--Matthew Knox, mattknox.com 6
-6 http://mattknox.com
-```
-
-</details>
-
-### Technical atom 10
+<a id="atom-technical-atom-08860569e8259d48"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00110))_
 
@@ -211,80 +219,21 @@ Like JavaScript itself, this book gives you a gentle start before showing you it
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00112))_
 
+```text
+10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' and so does the computer.
+11 In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values.
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 10 | Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' and so does the computer. |
 | 11 | In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values. |
 
-<details>
-<summary>Raw table text</summary>
-
-```
-10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' and so does the computer.
-11 In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values.
-```
-
 </details>
 
-### Technical atom 11
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00570))_
-
-| entry | content |
-| --- | --- |
-| 37 | As we'll discuss later, this implementation of the B Combinator is correct in languages like Scheme, but for truly general-purpose use in JavaScript, it needs to correctly manage the function context. |
-| 38 | We'll see later why an even more useful version would be written (fn) => (...args) => !fn(...args) |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-function decorators
-A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a variation of the argument function. Here's a ridiculously simple decorator: 38
-37 As we'll discuss later, this implementation of the B Combinator is correct in languages like Scheme, but for truly general-purpose use in JavaScript, it needs to correctly manage the function context.
-38 We'll see later why an even more useful version would be written (fn) => (...args) => !fn(...args)
-```
-
-</details>
-
-
-## Related pages
-
-- [[javascriptallonge-program]] - shared statements and technical atoms: Program shares source evidence from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Rub ... [truncated]; Program shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ... })(i) } (8 shared statement(s), 8 shared atom(s))
-- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from Or even: / back on the block: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Javascript shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ... })(i) } (6 shared statement(s), 7 shared atom(s))
-- [[javascriptallonge-programming]] - shared statements and technical atoms: Programming shares source evidence from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Rub ... [truncated]; Programming shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ... })(i) } (6 shared statement(s), 5 shared atom(s))
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Rub ... [truncated]; Function shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: def foo (first, *rest) # ... end (3 shared statement(s), 5 shared atom(s))
-- [[javascriptallonge-programmer]] - shared statements and technical atoms: Programmer shares source evidence from Or even: / back on the block: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Programmer shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ... })(i) } (2 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-code]] - shared statements and technical atoms: Code shares source evidence from Or even: / back on the block: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Code shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-write]] - shared statements and technical atoms: Write shares source evidence from Or even: / back on the block: 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basical ... [truncated]; Write shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-functional-iterator]] - shared statements and technical atoms: Functional Iterators shares source evidence from Yes. Consider this variation: / Functional Iterators / bonus: Many programmers coming to JavaScript from other languages are familiar with three 'canonical' operations on collections: folding, filtering, and finding. In Smallta ... [truncated]; Functional Iterators shares technical record from Yes. Consider this variation: / Functional Iterators / bonus: const firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator), 1); (2 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-different]] - shared statements and technical atoms: Different shares source evidence from And also: / That Constant Coffee Craving: Up to now, all we've really seen are anonymous functions , functions that don't have a name. This feels very different from programming in most other languages, wher ... [truncated]; Different shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-evaluate]] - shared statements and technical atoms: Evaluate shares source evidence from And also: / Closures and Scope / it's always the environment: The first function is the result of currying a the second function. Calling a curried function with only some of its arguments is sometimes called partial applicatio ... [truncated]; Evaluate shares technical record from And also: / Closures and Scope / it's always the environment: (x, y, z) => x + y + z (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-functional]] - shared statements and technical atoms: Functional shares source evidence from Like this: / summary: Separating concerns with iterators speaks to JavaScript's fundamental nature: It's a language that wants to compose functionality out of small, singe-responsibility ... [truncated]; Functional shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-feature]] - shared technical atoms: Feature shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (3 shared atom(s))
-- [[javascriptallonge-rule]] - shared technical atoms: Rule shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (3 shared atom(s))
-- [[javascriptallonge-block]] - shared technical atoms: Block shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: for (int i = 0; i < array.length; ++i) { // ... } (2 shared atom(s))
-- [[javascriptallonge-ecmascript]] - shared technical atoms: Ecmascript shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ... })(i) } (2 shared atom(s))
-- [[javascriptallonge-expression]] - shared technical atoms: Expression shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (2 shared atom(s))
-- [[javascriptallonge-follow]] - shared technical atoms: Follow shares technical record from Or even: / back on the block: (() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared atom(s))
-- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (2 shared atom(s))
-- [[javascriptallonge-value]] - shared technical atoms: Value shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-allong]] - shared technical atoms: Allong shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-coffee]] - shared technical atoms: Coffee shares technical table: 10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-evaluating]] - shared technical atoms: Evaluating shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared atom(s))
-- [[javascriptallonge-literal]] - shared technical atoms: Literal shares technical record from A Rich Aroma: Basic Numbers: The machine's representation of a number almost never lines up perfectly with our understanding of how a number behaves, and thus there will be places where the comp ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-needn]] - shared technical atoms: Needn shares technical table: 10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-object]] - shared technical atoms: Object shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-operation]] - shared technical atoms: Operation shares technical record from Yes. Consider this variation: / Functional Iterators / bonus: const firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator), 1); (1 shared atom(s))
-- [[javascriptallonge-purpose]] - shared technical atoms: Purpose shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-recipe]] - shared technical atoms: Recipe shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-result]] - shared technical atoms: Result shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared atom(s))
-- [[javascriptallonge-works-just-fine-because-arguments]] - shared technical atoms: Works Just Fine, Because Arguments[0 shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-writing]] - shared technical atoms: Writing shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-algorithm]] - shared statements: Algorithm shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: Having these instructions be very fast was important to those early designers: They were working on one of the first high-level languages (COBOL and FORTRAN being th ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-instead]] - shared statements: Instead shares source evidence from Like this: / iterables: So, when a standard way to write iterators was added to the JavaScript language, it didn't make sense to use a method like .iterator() for it: That would conflict wi ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-iterator]] - shared statements: Iterator shares source evidence from Like this: / summary: Separating concerns with iterators speaks to JavaScript's fundamental nature: It's a language that wants to compose functionality out of small, singe-responsibility ... [truncated] (1 shared statement(s))
 
 ## Source
 

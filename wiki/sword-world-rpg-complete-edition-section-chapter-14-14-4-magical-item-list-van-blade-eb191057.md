@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 14: / 14.4 Magical Item List / 《 Van Blade 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-van-blade-eb191057@55ac184f8e3c10915dbe0200c4802003
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-van-blade-eb191057@921910d4043fd39f4089625efd8bc434
 ---
 
 # Chapter 14: / 14.4 Magical Item List / 《 Van Blade 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-e871a62e]] - broader source section: Chapter 14: / 14.4 Magical Item List
 

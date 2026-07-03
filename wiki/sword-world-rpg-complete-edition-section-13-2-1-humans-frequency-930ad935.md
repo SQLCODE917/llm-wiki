@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 13.2.1 《 Humans 》 / 《 Frequency 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-frequency-930ad935@f4d3693c08c3253f3e503e22ce13e234
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-frequency-930ad935@a3cb13bd5989bb1dd0db1c44834d3910
 ---
 
 # 13.2.1 《 Humans 》 / 《 Frequency 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-hum
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-2-1-humans-6e762209]] - broader source section: 13.2.1 《 Humans 》
 

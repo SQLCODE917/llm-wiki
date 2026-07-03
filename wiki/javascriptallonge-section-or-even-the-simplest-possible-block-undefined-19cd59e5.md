@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-or-even-the-simplest-possible-block-undefined-19cd59e5
 page_kind: source
+page_family: section-reference
 summary: Or even: / the simplest possible block / undefined: 15 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-or-even-the-simplest-possible-block-undefined-19cd59e5@7d50f04e15eba94734252e5c8aa61c96
+projection_coverage: section-javascriptallonge-section-or-even-the-simplest-possible-block-undefined-19cd59e5@8ae791c6de2146af044d19e6f437f596
 ---
 
 # Or even: / the simplest possible block / undefined
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-or-even-the-simplest-poss
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-or-even-the-simplest-possible-block-528c8472]] - broader source section: Or even: / the simplest possible block
 
@@ -39,6 +42,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00218))_
 
+<a id="atom-technical-atom-19e8d9573a10150a"></a>
+
 ```
 undefined
 ```
@@ -51,6 +56,8 @@ undefined
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00219))_
 
+<a id="atom-technical-atom-93fa6a3bba5cbb20"></a>
+
 ```
 //=> undefined
 ```
@@ -62,6 +69,8 @@ undefined
 > No matter how you evaluate undefined , you get an identical value back. undefined is a value that means 'I don't have a value.' But it's still a value :-)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00221))_
+
+<a id="atom-technical-atom-be928e28bfd7dbb2"></a>
 
 ```
 undefined === undefined

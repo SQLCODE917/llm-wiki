@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-composing-and-decomposing-data-plain-old-javascript-objects-revisiting-linked-lists-e7d9bd1d
 page_kind: source
-summary: Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: 21 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: 21 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-composing-and-decomposing-data-plain-old-javascript-objects-revisiting-linked-lists-e7d9bd1d@87e41d3e3ada3ab053122bf5b52ed479
+projection_coverage: section-javascriptallonge-section-composing-and-decomposing-data-plain-old-javascript-objects-revisiting-linked-lists-e7d9bd1d@d0bcffc6e077ee5841c1a9cda59772a3
 ---
 
 # Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-composing-and-decomposing
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-composing-and-decomposing-data-plain-old-javascript-objects-bce9b969]] - broader source section: Composing and Decomposing Data / Plain Old JavaScript Objects
 
@@ -41,6 +44,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01105))_
 
+<a id="atom-technical-atom-149705c9033ce8b0"></a>
+
 ```
 const cons = (a, d) => [a, d],
 car
@@ -57,6 +62,8 @@ cdr
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01107))_
 
+<a id="atom-technical-atom-062563c07b0a708d"></a>
+
 ```
 In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first:
 2, rest: { first: 3, rest: EMPTY } } }.
@@ -70,6 +77,8 @@ We can then perform the equivalent of [first, ...rest] with direct property acce
 > What about mapping? Well, let's start with the simplest possible thing, making a copy of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn't fast is naïvely copying a list:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01108))_
+
+<a id="atom-technical-atom-ec445a36f29378b5"></a>
 
 ```
 const EMPTY = {};
@@ -98,6 +107,8 @@ length(OneTwoThree)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01110))_
 
+<a id="atom-technical-atom-1842111c7d649167"></a>
+
 ```
 const slowcopy = (node) =>
 node === EMPTY
@@ -109,28 +120,13 @@ slowcopy(OneTwoThree)
 
 ### Technical frame 5: Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01114))_
-
-> Well, well, well. We have unwittingly reversed the list. This makes sense, if lists are constructed from back to front, and we make a linked list out of items as we iterate through it, we're going to get a backwards copy of the list. This isn't a bad thing by any stretch of the imagination. Let's call it what it is:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01113))_
-
-```
-const copy2 = (node, delayed = EMPTY) =>
-node === EMPTY
-? delayed
-: copy2(node.rest, { first: node.first, rest: delayed });
-copy2(OneTwoThree)
-//=> {"first":3,"rest":{"first":2,"rest":{"first":1,"rest":{}}}}
-```
-
-### Technical frame 6: Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists
-
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01116))_
 
 > Our mapWith function takes twice as long as a straight iteration, because it iterates over the entire list twice, once to map, and once to reverse the list. Likewise, it takes twice as much memory, because it constructs a reverse of the desired result before throwing it away.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01115))_
+
+<a id="atom-technical-atom-660953808d5bb764"></a>
 
 ```
 const reverse = (node, delayed = EMPTY) =>

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-2-1-baseline-scores-checks-f64ba73a
 page_kind: source
 page_family: section-reference
-summary: 2.1 Baseline Scores / Checks: 16 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 2.1 Baseline Scores / Checks: 16 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-1-baseline-scores-checks-f64ba73a@7b302b1255958e0486df198ba5c890a7
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-1-baseline-scores-checks-f64ba73a@a303f6ea145a806389b2c81fb27cafe4
 ---
 
 # 2.1 Baseline Scores / Checks
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-2-1-baseline-scores-d8b4105b]] - broader source section: 2.1 Baseline Scores
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-19369d81]] - same source heading: another source section with the same heading, Chapter 12: Various Checks
 
 ## Statements
@@ -32,39 +37,3 @@ From [[sword-world-rpg-complete-edition]].
 - The game master declares the target score of this action to be 10 . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01191))_
 - This is because it is the game master who sets the target scores, not the players. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01180))_
 - This means that Ducard II does not have a skill associated with picking locks. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01188))_
-
-## Technical atoms
-
-### Technical frame 1: 2.1 Baseline Scores / Checks
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01185))_
-
-> Skills Other Than Combat and Magic to see which skills can be used for the baseline score of any given action. It also lists the ability scores associated with those actions.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01184))_
-
-> If the roll is 6 or greater, it's a hit , and if the roll is 5 or lower, it's a miss .
-
-### Technical atom 2
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01237))_
-
-> The game master does not say whether the result is the action succeeded or the action failed , because a difficulty check is made when the success or failure of the action is not known to the characters. They must only answer as much as the character can tell from their successes and failures. Let's show how the game master's answer would be for the case of the door and the traps:
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01238))_
-
-| entry | content |
-| --- | --- |
-| 1 | There is a trap, the find trap check is successful → There is a trap at the door |
-| 2 | There is a trap, the find trap check is a failure → You don't find any traps |
-| 3 | There is no trap, the find trap check is successful → You don't find any traps |
-| 4 | There is no trap, the find trap check is a failure → You don't find any traps |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-1. There is a  trap, the find trap check is successful → There is a trap at the door 2. There is a trap, the find trap check is a failure → You don't find any traps 3. There is no trap, the find trap check is successful → You don't find any traps 4. There is no trap, the find trap check is a failure → You don't find any traps
-```
-
-</details>

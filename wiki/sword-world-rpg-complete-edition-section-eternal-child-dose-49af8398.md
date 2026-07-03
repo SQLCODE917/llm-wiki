@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-eternal-child-dose-49af8398
 page_kind: source
 page_family: section-reference
-summary: [ Eternal Child (Dose) ]: 14 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Eternal Child (Dose) ]: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-eternal-child-dose-49af8398@fd8321175cc7dc6fc57545405c39f893
+projection_coverage: section-sword-world-rpg-complete-edition-section-eternal-child-dose-49af8398@3ca3fd9a5744f78faf309536cf745aae
 ---
 
 # [ Eternal Child (Dose) ]
@@ -20,51 +20,3 @@ From [[sword-world-rpg-complete-edition]].
 - This is a sweet-smelling liquid that is mixed into sweets, etc. Those who fail to resist become young children. Their ability scores are all divided by 6 (rounded up). If you are detoxed, you will recover (grow) within a few days, but unless you are detoxed, you will have to act with the same physique and mentality as a child. This poison does not have the effect of reversing a character's age, and may cause them to die of old age while remaining a child. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06561))_
 - This is a hallucinogenic poison. Those who fail to resist will be attacked by hallucinations starting on the next round. Enemies may appear to have multiple parts, allies may appear to be monsters, or the surrounding scenery may appear to have changed. The victim suffers a -4 penalty on all checks while this condition lasts. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06565))_
 - This is so named because its effect is similar to the Forget magic used by gremlins. Those who fail to resist will have no memory of their past, and will be unable to use any abilities related to intelligence (those that use intelligence bonus to calculate a baseline score). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06569))_
-
-## Technical atoms
-
-### Technical frame 1: [ Eternal Child (Dose) ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06561))_
-
-> This is a sweet-smelling liquid that is mixed into sweets, etc. Those who fail to resist become young children. Their ability scores are all divided by 6 (rounded up). If you are detoxed, you will recover (grow) within a few days, but unless you are detoxed, you will have to act with the same physique and mentality as a child. This poison does not have the effect of reversing a character's age, and may cause them to die of old age while remaining a child.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06559, source-range-0b9dec90-06560))_
-
-> Effect=Make the person who took it into a child
-
-> Toxicity Score=14 Rarity=16 Effect Start Time=1 hour later Effect Duration=Permanent
-
-### Technical frame 2: [ Eternal Child (Dose) ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06565))_
-
-> This is a hallucinogenic poison. Those who fail to resist will be attacked by hallucinations starting on the next round. Enemies may appear to have multiple parts, allies may appear to be monsters, or the surrounding scenery may appear to have changed. The victim suffers a -4 penalty on all checks while this condition lasts.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06561))_
-
-> If you are detoxed, you will recover (grow) within a few days, but unless you are detoxed, you will have to act with the same physique and mentality as a child.
-
-### Technical frame 3: [ Eternal Child (Dose) ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06565))_
-
-> This is a hallucinogenic poison. Those who fail to resist will be attacked by hallucinations starting on the next round. Enemies may appear to have multiple parts, allies may appear to be monsters, or the surrounding scenery may appear to have changed. The victim suffers a -4 penalty on all checks while this condition lasts.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06563, source-range-0b9dec90-06564))_
-
-> Effect=Causes illusions
-
-> Toxicity Score=11 Rarity=14 Effect Start Time=1 round later Effect Duration=1 hour
-
-### Technical frame 4: [ Eternal Child (Dose) ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06569))_
-
-> This is so named because its effect is similar to the Forget magic used by gremlins. Those who fail to resist will have no memory of their past, and will be unable to use any abilities related to intelligence (those that use intelligence bonus to calculate a baseline score).
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06567, source-range-0b9dec90-06568))_
-
-> Effect=Cause memory loss
-
-> Toxicity Score=13 Rarity=13 Effect Start Time=1 round later Effect Duration=Permanent

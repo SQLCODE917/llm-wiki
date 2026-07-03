@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 1.2 Races / 【 Elf 】: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-2-races-elf-d52481b7@d3cf1c32f534bccc34497afcaf77c415
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-2-races-elf-d52481b7@885f8389661d851feec6025a31ee83da
 ---
 
 # 1.2 Races / 【 Elf 】
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-1-2-races-56190ca1]] - broader source section: 1.2 Races
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-1-2-races-half-elf-8416755e]] - same source heading: another source section with the same heading, 1.2 Races / 【 Half-Elf 】
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-elf-9eb88fdb]] - same source heading: another source section with the same heading, 1.4 Character Creation / 【 Elf 】
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-half-elf-52b3ae5e]] - same source heading: another source section with the same heading, 1.4 Character Creation / 【 Half-Elf 】

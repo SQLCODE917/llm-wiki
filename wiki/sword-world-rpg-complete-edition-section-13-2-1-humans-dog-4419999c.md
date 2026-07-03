@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 13.2.1 《 Humans 》 / [ Dog ]: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-dog-4419999c@fcf154d2cd1705526861d1aa34aee1f7
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-dog-4419999c@d4fc05502e110e3a205e609c78965af7
 ---
 
 # 13.2.1 《 Humans 》 / [ Dog ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-hum
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-2-1-humans-6e762209]] - broader source section: 13.2.1 《 Humans 》
 

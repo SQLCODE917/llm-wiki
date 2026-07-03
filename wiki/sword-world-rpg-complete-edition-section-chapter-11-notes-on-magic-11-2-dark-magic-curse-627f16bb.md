@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-curse-627f16bb
 page_kind: source
 page_family: section-reference
-summary: Chapter 11: Notes on Magic / 11.2 Dark Magic / Curse: 53 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 11: Notes on Magic / 11.2 Dark Magic / Curse: 53 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-curse-627f16bb@2ccbdce2efe02be2b05234765051f938
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-curse-627f16bb@1df3cd0c13867ab19bb74ca445c2cd00
 ---
 
 # Chapter 11: Notes on Magic / 11.2 Dark Magic / Curse
@@ -17,9 +17,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-32ef8b3e]] - broader source section: Chapter 11: Notes on Magic / 11.2 Dark Magic
-- [[sword-world-rpg-complete-edition-section-curse-619a1678]] - same source heading: another source section with the same heading, 《 Curse 》
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-curse-57a5df07]] - same source heading: another source section with the same heading, 13.6 Handling Monster Special Abilities / 《 Curse 》
+- [[sword-world-rpg-complete-edition-section-curse-619a1678]] - same source heading: another source section with the same heading, 《 Curse 》
 
 ## Statements
 
@@ -58,25 +63,3 @@ From [[sword-world-rpg-complete-edition]].
 - according to the caster's commands, but due to their low intellect, they can only understand simple commands such as kill anyone who enters this room or dig a hole . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05873))_
 - Since then, all the water he's drank has turned into alcohol. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05892))_
 - He then walked up to the black table. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05900))_
-
-## Technical atoms
-
-### Technical frame 1: Chapter 11: Notes on Magic / 11.2 Dark Magic / Curse
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05875))_
-
-> Each game master is responsible for determining the details for non-human zombies.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05874))_
-
-> If you wish, you can turn non-human animals, fae, youma, titans, mythical beasts, magical beasts, etc.
-
-### Technical frame 2: Chapter 11: Notes on Magic / 11.2 Dark Magic / Curse
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05892))_
-
-> Since then, all the water he's drank has turned into alcohol. But it's not just any alcohol. It's the strong kind that violently burns one's throat as soon as they take a sip. It's even stronger than the hard liquor that the dwarves are said to treasure.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05891))_
-
-> [Figure] (p.145)

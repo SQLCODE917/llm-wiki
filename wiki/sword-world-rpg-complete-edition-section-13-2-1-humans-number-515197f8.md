@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 13.2.1 《 Humans 》 / 《 Number 》: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-number-515197f8@ddd0d9ee768d5b3ee4e329f063065560
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-number-515197f8@ae40697d7eaf06cab902f74a5945480b
 ---
 
 # 13.2.1 《 Humans 》 / 《 Number 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-hum
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-2-1-humans-6e762209]] - broader source section: 13.2.1 《 Humans 》
 

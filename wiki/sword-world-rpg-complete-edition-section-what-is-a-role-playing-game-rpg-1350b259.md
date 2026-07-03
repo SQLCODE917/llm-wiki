@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-what-is-a-role-playing-game-rpg-1350b259
 page_kind: source
 page_family: section-reference
-summary: What is a Role-Playing Game (RPG)?: 40 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: What is a Role-Playing Game (RPG)?: 40 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-what-is-a-role-playing-game-rpg-1350b259@ede6af937089adf07d161969a3fd2079
+projection_coverage: section-sword-world-rpg-complete-edition-section-what-is-a-role-playing-game-rpg-1350b259@19a5e88152d5e845706bf18dd2ccebae
 ---
 
 # What is a Role-Playing Game (RPG)?
@@ -54,14 +54,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00038))_
 
+<a id="atom-technical-atom-3029be673ad4029c"></a>
+
 > The players must make their characters act based on their abilities and characteristics.
-
-### Technical frame 2: What is a Role-Playing Game (RPG)?
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00068))_
-
-> In this way, due to two types of randomness, player's choice and random numbers (dice) , the actual game can display a wide degree of fluctuation, sometimes the "story" will evolve beyond the expectations of the game master.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00070))_
-
-> If you enjoy the story in this way, you can say that you've experienced the best part of a role-playing game.

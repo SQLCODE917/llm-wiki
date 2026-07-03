@@ -85,6 +85,10 @@ INDEX = """# Index
 - [[bravo]] — concept b
 - [[delta]] — concept d
 
+## Procedures
+
+## Recipes
+
 ## Syntheses
 """
 
@@ -337,6 +341,13 @@ class TestIndex:
             PageMetadata(page_id="ada", page_kind="entity", summary="a person"),
         )
         assert ("ada", "entity") in [(e.page_id, e.page_kind) for e in parse_index(updated)]
+
+    def test_upsert_recipe_uses_recipe_heading(self) -> None:
+        updated = upsert_index_entry(
+            INDEX,
+            PageMetadata(page_id="once", page_kind="recipe", summary="Invoke once."),
+        )
+        assert ("once", "recipe") in [(e.page_id, e.page_kind) for e in parse_index(updated)]
 
 
 class TestSharedObjectBoundaryLanguage:

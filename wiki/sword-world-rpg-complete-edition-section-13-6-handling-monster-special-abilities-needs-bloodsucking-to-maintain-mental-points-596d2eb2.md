@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 13.6 Handling Monster Special Abilities / 《 Needs Bloodsucking to Maintain Mental Points 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-needs-bloodsucking-to-maintain-mental-points-596d2eb2@66224eab75ef5a6bb9faae7833d1f94e
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-needs-bloodsucking-to-maintain-mental-points-596d2eb2@b37959f4c1dbe8b6b5575e4a27cfd997
 ---
 
 # 13.6 Handling Monster Special Abilities / 《 Needs Bloodsucking to Maintain Mental Points 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handl
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-22341d2d]] - broader source section: 13.6 Handling Monster Special Abilities
 

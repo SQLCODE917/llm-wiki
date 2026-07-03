@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-a-pull-of-the-lever-prefaces-foreword-to-the-six-edition-a789e1b1
 page_kind: source
+page_family: section-reference
 summary: A Pull of the Lever: Prefaces / Foreword to the 'Six' edition: 9 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-a-pull-of-the-lever-prefaces-foreword-to-the-six-edition-a789e1b1@41c3fe871ec988915686fa7a3789acf4
+projection_coverage: section-javascriptallonge-section-a-pull-of-the-lever-prefaces-foreword-to-the-six-edition-a789e1b1@fb80c88fd3fc4caef818a77599f28f48
 ---
 
 # A Pull of the Lever: Prefaces / Foreword to the 'Six' edition
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-a-pull-of-the-lever-prefa
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-a-pull-of-the-lever-prefaces-9a15e9b7]] - broader source section: A Pull of the Lever: Prefaces
 

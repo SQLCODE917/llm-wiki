@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-or-even-the-simplest-possible-block-528c8472
 page_kind: source
-summary: Or even: / the simplest possible block: 20 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Or even: / the simplest possible block: 20 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-or-even-the-simplest-possible-block-528c8472@ab8f279f5ae0017ece9f50e43a467965
+projection_coverage: section-javascriptallonge-section-or-even-the-simplest-possible-block-528c8472@402a8ec0e44d68a60eb2174509eb72cd
 ---
 
 # Or even: / the simplest possible block
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-or-even-the-simplest-poss
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-or-even-6221c0af]] - broader source section: Or even:
 - [[javascriptallonge-section-or-even-the-simplest-possible-block-undefined-19cd59e5]] - narrower source section: Or even: / the simplest possible block / undefined
@@ -36,71 +39,3 @@ From [[javascriptallonge]].
 - In JavaScript, the absence of a value is written undefined , and it means there is no value. _(javascriptallonge.pdf (source-range-7239e085-00217))_
 - This works because JavaScript has a feature that can infer where the semi-colons should be most of the time. _(javascriptallonge.pdf (source-range-7239e085-00223))_
 - In SQL, two things that are NULL are not equal to nor share the same identity, because two unknowns can't be equal. _(javascriptallonge.pdf (source-range-7239e085-00224))_
-
-## Technical atoms
-
-### Technical frame 1: Or even: / the simplest possible block
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00213))_
-
-> It returns the result of evaluating a block that has no statements. What would that be? Let's try it:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00212))_
-
-```
-() => {}
-```
-
-### Technical frame 2: Or even: / the simplest possible block
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00213))_
-
-> It returns the result of evaluating a block that has no statements. What would that be? Let's try it:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00214))_
-
-```
-(() => {})()
-//=> undefined
-```
-
-### Technical frame 3: Or even: / the simplest possible block / undefined
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00220))_
-
-> Like numbers, booleans and strings, JavaScript can print out the value undefined .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00218))_
-
-```
-undefined
-```
-
-### Technical frame 4: Or even: / the simplest possible block / undefined
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00220))_
-
-> Like numbers, booleans and strings, JavaScript can print out the value undefined .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00219))_
-
-```
-//=> undefined
-```
-
-### Technical frame 5: Or even: / the simplest possible block / undefined
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00222))_
-
-> No matter how you evaluate undefined , you get an identical value back. undefined is a value that means 'I don't have a value.' But it's still a value :-)
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00221))_
-
-```
-undefined === undefined
-//=> true
-(() => {})() === (() => {})()
-//=> true
-(() => {})() === undefined
-//=> true
-```

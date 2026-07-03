@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-magic-list-recall-spirit-fac21fd1
 page_kind: source
 page_family: section-reference
-summary: Magic List [ Recall Spirit ]: 14 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Magic List [ Recall Spirit ]: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-magic-list-recall-spirit-fac21fd1@590b0f3392de8254a7a09869d4b6896e
+projection_coverage: section-sword-world-rpg-complete-edition-section-magic-list-recall-spirit-fac21fd1@2f00c4f2487baca2d4629f581da37aa8
 ---
 
 # Magic List [ Recall Spirit ]
@@ -21,76 +21,3 @@ From [[sword-world-rpg-complete-edition]].
 - Priests who have given their bodies to others cannot be resurrected using Resurrection , because they have lost their soul containers (although they can have another priest cast Recall Spirit on them...). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04587))_
 - Only those that the caster knows well (or at least is acquainted with) can be resurrected. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04586))_
 - Priests who have given their bodies to others cannot be resurrected using Resurrection , because they have lost their soul containers (although they can have another priest cast Recall Spirit on them...). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04587))_
-
-## Technical atoms
-
-### Technical frame 1: Magic List [ Recall Spirit ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04586))_
-
-> This is a precious spell of selfsacrifice. If this spell is used, the priest's soul will be called to their god. However, in return, they can use their body to bring the dead back to life. Only those that the caster knows well (or at least is acquainted with) can be resurrected. Also, those who have lost their souls and are destroyed, or those who have become undead, cannot be resurrected.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04578, source-range-0b9dec90-04579, source-range-0b9dec90-04580, source-range-0b9dec90-04581, source-range-0b9dec90-04582))_
-
-> Base Mental Power Cost=45
-
-> Distance=Caster
-
-> Area=Caster
-
-> Duration=Instant
-
-> Effect=Give the caster's body to a soul of the dead
-
-### Technical frame 2: Magic List [ Recall Spirit ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04586))_
-
-> This is a precious spell of selfsacrifice. If this spell is used, the priest's soul will be called to their god. However, in return, they can use their body to bring the dead back to life. Only those that the caster knows well (or at least is acquainted with) can be resurrected. Also, those who have lost their souls and are destroyed, or those who have become undead, cannot be resurrected.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04585))_
-
-> Resist=None
-
-### Technical atom 3
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03969))_
-
-> cannot use magic, etc.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03972))_
-
-| entry | content |
-| --- | --- |
-| 4 | Target is struck by panic and is prevented from taking action. Take a -1 penalty on all success rolls |
-| 5 | Same as above, but penalty is -2 |
-| 6 | Same as above, but penalty is -3 |
-| 7 | Target runs away. They go berserk if that's not possible. |
-| 8 | Target runs away. If that's not possible, they act with a -3 penalty |
-| 9 | Target runs away. If that's not possible, they freeze in fear and become unable to act |
-| 10 | Target freezes in fear. They become unable to act |
-| 11 | Same as above |
-| 12 | Target loses consciousness from fear. It takes 1 hour to regain consciousness naturally |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-4 Target is struck by panic and is prevented from taking action. Take a -1 penalty on all success rolls
-5
-Same as above, but penalty is -2
-6
-Same as above, but penalty is -3
-7 Target runs away. They go berserk if that's not possible.
-8
-Target runs away. If that's not possible, they act with a -3 penalty
-9
-Target runs away. If that's not possible, they freeze in fear and become unable to act
-10
-Target freezes in fear. They become unable to act
-11
-Same as above
-12 Target loses consciousness from fear. It takes 1 hour to regain consciousness naturally
-```
-
-</details>

@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-operation
 page_kind: concept
-summary: Operation: 4 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
+page_family: topic-concept
+summary: Operation: 3 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-operation@352186bdd84904ed90fa8a78eab21892
+projection_coverage: topic-javascriptallonge-operation@39134c1f3dee7e3b6f6e5f4d4d598e1c
 ---
 
 # Operation
@@ -27,8 +28,6 @@ What [[javascriptallonge]] covers about operation:
 
 - Many operations on ordered collections return another ordered collection. They do so by taking care to iterate over a result freshly every time we get an iterator for them. Consider this example for mapWith : _(javascriptallonge.pdf (source-range-7239e085-01591))_
 
-- like our other operations, rest preserves the ordered collection semantics of its argument. _(javascriptallonge.pdf (source-range-7239e085-01609))_
-
 
 ## Technical atoms
 
@@ -39,6 +38,8 @@ What [[javascriptallonge]] covers about operation:
 > This is interesting, because it is lazy: It doesn't apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01318))_
+
+<a id="atom-technical-atom-c5cd3037853933e3"></a>
 
 ```
 const firstInIteration = (fn, iterator) =>
@@ -52,6 +53,8 @@ take(filterIteratorWith(fn, iterator), 1);
 > This illustrates the general pattern of working with ordered collections: We make them iterables , meaning that they have a [Symbol.iterator] method, that returns an iterator . An iterator is also an object, but with a .next() method that is invoked repeatedly to obtain the elements in order.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01589))_
+
+<a id="atom-technical-atom-54c71ac655b9bf50"></a>
 
 ```
 const mapWith = (fn, collection) =>
@@ -75,6 +78,8 @@ return ({done, value: done ? undefined : fn(value)});
 > Numbers is an ordered collection. We invoke mapWith((x) => 2 * x, Numbers) and get Evens . Evens works just as if we'd written this:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01592))_
+
+<a id="atom-technical-atom-0394bbb3ce97162b"></a>
 
 ```
 const Evens = mapWith((x) => 2 * x, Numbers);
@@ -103,6 +108,8 @@ console.log(i)
 > Like mapWith , they preserve the ordered collection semantics of whatever you give them.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01602))_
+
+<a id="atom-technical-atom-3362c712cd3a3047"></a>
 
 ```
 const filterWith = (fn, iterable) =>
@@ -136,11 +143,13 @@ return ({done, value: done ? undefined : value});
 
 ### Technical frame 5: Like this: / operations on ordered collections
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01606))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01607))_
 
-> As we expect from an ordered collection, each time we iterate over UpTo1000 , we begin at the beginning.
+> For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest] :
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01605))_
+
+<a id="atom-technical-atom-2b1a958763a34fb2"></a>
 
 ```
 const Squares = mapWith((x) => x * x, Numbers);
@@ -157,6 +166,8 @@ const UpTo1000 = untilWith((x) => (x > 1000), EndWithOne);
 
 ## Related pages
 
+### Shared technical atoms
+
 - [[javascriptallonge-iterator]] - shared technical atoms: Iterator shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (2 shared atom(s))
 - [[javascriptallonge-mapwith]] - shared technical atoms: Mapwith shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (2 shared atom(s))
 - [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (2 shared atom(s))
@@ -165,12 +176,11 @@ const UpTo1000 = untilWith((x) => (x > 1000), EndWithOne);
 - [[javascriptallonge-idea]] - shared technical atoms: Idea shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (1 shared atom(s))
 - [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from Yes. Consider this variation: / Functional Iterators / bonus: const firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator), 1); (1 shared atom(s))
 - [[javascriptallonge-language]] - shared technical atoms: Language shares technical record from Yes. Consider this variation: / Functional Iterators / bonus: const firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator), 1); (1 shared atom(s))
-- [[javascriptallonge-program]] - shared technical atoms: Program shares technical record from Yes. Consider this variation: / Functional Iterators / bonus: const firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator), 1); (1 shared atom(s))
-- [[javascriptallonge-programmer]] - shared technical atoms: Programmer shares technical record from Yes. Consider this variation: / Functional Iterators / bonus: const firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator), 1); (1 shared atom(s))
-- [[javascriptallonge-purpose]] - shared technical atoms: Purpose shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (1 shared atom(s))
+
+### Shared claims
+
 - [[javascriptallonge-code]] - shared statements: Code shares source evidence from Recipes with Basic Functions / Maybe: If some code ever tries to call model.setSomething with nothing, the operation will be skipped. (1 shared statement(s))
 - [[javascriptallonge-gathering]] - shared statements: Gathering shares source evidence from Composing and Decomposing Data / Mutation / mutation and data structures: The gathering operation [a, b, ...ThreeToFive] is slower, but 'safer. ' (1 shared statement(s))
-- [[javascriptallonge-rest]] - shared statements: Rest shares source evidence from Like this: / operations on ordered collections: like our other operations, rest preserves the ordered collection semantics of its argument. (1 shared statement(s))
 
 ## Source
 

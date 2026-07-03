@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-combinators-and-function-decorators-higher-order-functions-21afd32c
 page_kind: source
+page_family: section-reference
 summary: And also: / Combinators and Function Decorators / higher-order functions: 3 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-combinators-and-function-decorators-higher-order-functions-21afd32c@eb8e8cc478b12f3d4a1e22be49b525c0
+projection_coverage: section-javascriptallonge-section-and-also-combinators-and-function-decorators-higher-order-functions-21afd32c@47f3b2b67fb0c59a9455fc0c7bc7cb0b
 ---
 
 # And also: / Combinators and Function Decorators / higher-order functions
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-and-also-combinators-and-
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-and-also-combinators-and-function-decorators-c48f42db]] - broader source section: And also: / Combinators and Function Decorators
 
@@ -31,6 +34,8 @@ From [[javascriptallonge]].
 > As we've seen, JavaScript functions take values as arguments and return values. JavaScript functions are values, so JavaScript functions can take functions as arguments, return functions, or both. Generally speaking, a function that either takes functions as arguments, or returns a function, or both, is referred to as a 'higher-order' function.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00559))_
+
+<a id="atom-technical-atom-7193eeef1bd53156"></a>
 
 ```
 const repeat = (num, fn) =>

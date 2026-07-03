@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-like-this-iterables-ed92ad54
 page_kind: source
-summary: Like this: / iterables: 22 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Like this: / iterables: 22 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-like-this-iterables-ed92ad54@16225f799185ac2b72500e981e6bd9b2
+projection_coverage: section-javascriptallonge-section-like-this-iterables-ed92ad54@69043ca8344b05e99ab21a7e10ea2dd2
 ---
 
 # Like this: / iterables
@@ -16,7 +17,12 @@ From [[javascriptallonge]].
 
 ## Related pages
 
+### Source structure
+
 - [[javascriptallonge-section-like-this-66cb3108]] - broader source section: Like this:
+
+### Topics
+
 - [[javascriptallonge-iterable]] - topic hub: opens the topic page for Iterable
 
 ## Statements
@@ -38,95 +44,13 @@ From [[javascriptallonge]].
 
 ### Technical frame 1: Like this: / iterables
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01562))_
-
-> The for...of loop works directly with any object that is iterable , meaning it works with any object that has a Symbol.iterator method that returns an object iterator. Here's another linked list, this one is iterable:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01560))_
-
-```
-const Stack3 = () =>
-({
-array: [],
-index: -1,
-push (value) {
-return this.array[this.index += 1] = value;
-},
-pop () {
-const value = this.array[this.index];
-this.array[this.index] = undefined;
-if (this.index >= 0) {
-this.index -= 1
-}
-return value
-},
-isEmpty () {
-return this.index < 0
-},
-[Symbol.iterator] () {
-let iterationIndex = this.index;
-return {
-next () {
-if (iterationIndex > this.index) {
-iterationIndex = this.index;
-}
-if (iterationIndex < 0) {
-return {done: true};
-}
-else {
-return {done: false, value: this.array[iterationIndex--]}
-}
-}
-}
-}
-});
-const stack = Stack3();
-```
-
-### Technical frame 2: Like this: / iterables
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01562))_
-
-> The for...of loop works directly with any object that is iterable , meaning it works with any object that has a Symbol.iterator method that returns an object iterator. Here's another linked list, this one is iterable:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01561))_
-
-```
-stack.push(2000);
-stack.push(10);
-stack.push(5)
-const collectionSum = (collection) => {
-const iterator = collection[Symbol.iterator]();
-let eachIteration,
-sum = 0;
-while ((eachIteration = iterator.next(), !eachIteration.done)) {
-sum += eachIteration.value;
-}
-return sum
-}
-collectionSum(stack)
-//=> 2015
-Using [Symbol.iterator] instead of .iterator seems like adding an extra moving part for nothing.
-Do we get anything in return?
-Indeed we do. Behold the for...of loop:
-const iterableSum = (iterable) => {
-let sum = 0;
-for (const num of iterable) {
-sum += num;
-}
-return sum
-}
-iterableSum(stack)
-//=> 2015
-```
-
-### Technical frame 3: Like this: / iterables
-
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01564))_
 
 > As we can see, we can use for...of with linked lists just as easily as with stacks. And there's one more thing: You recall that the spread operator ( ... ) can spread the elements of an array in an array literal or as parameters in a function invocation.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01563))_
+
+<a id="atom-technical-atom-8e85f2ecd1e2c116"></a>
 
 ```
 const EMPTY = {
@@ -165,7 +89,7 @@ iterableSum(someSquares)
 //=> 55
 ```
 
-### Technical frame 4: Like this: / iterables
+### Technical frame 2: Like this: / iterables
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01570))_
 
@@ -173,22 +97,9 @@ iterableSum(someSquares)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01566))_
 
+<a id="atom-technical-atom-df54c8166a1c51e0"></a>
+
 ```
 ['some squares', ...someSquares]
 //=> ["some squares", 1, 4, 9, 16, 25]
-```
-
-### Technical frame 5: Like this: / iterables
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01570))_
-
-> One caveat of spreading iterables: JavaScript creates an array out of the elements of the iterable. That might be very wasteful for extremely large collections. For example, if we spread a large collection just to find an element in the collection, it might have been wiser to iterate over the element using its iterator directly.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01568))_
-
-```
-const firstAndSecondElement = (first, second) =>
-({first, second})
-firstAndSecondElement(...stack)
-//=> {"first":5,"second":10}
 ```

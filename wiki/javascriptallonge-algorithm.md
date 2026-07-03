@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-algorithm
 page_kind: concept
+page_family: topic-concept
 summary: Algorithm: 6 statement(s) and 2 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-algorithm@29adbe012388ac5a6cdfb634a8bc035c
+projection_coverage: topic-javascriptallonge-algorithm@a76810d6b2a9befa1526d60e54dcd78f
 ---
 
 # Algorithm
@@ -48,6 +49,8 @@ What [[javascriptallonge]] covers about algorithm:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01154))_
 
+<a id="atom-technical-atom-604319d8c5cc409f"></a>
+
 ```
 const reverse = (node, delayed = EMPTY) =>
 node === EMPTY
@@ -63,6 +66,8 @@ const copy = (node) => reverse(reverse(node));
 > Years later, I came across a discussion of this algorithm, The Tale of the Teleporting Turtle 75 . It seems to be faster under certain circumstances, depending on the size of the loop and the relative costs of certain operations.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01267))_
+
+<a id="atom-technical-atom-e01a24a4c542e7a1"></a>
 
 ```
 const teleportingTurtle = (list) => {
@@ -95,11 +100,14 @@ teleportingTurtle(aList);
 
 ## Related pages
 
+### Shared technical atoms
+
 - [[javascriptallonge-copy]] - shared technical atoms: Copy shares technical record from Composing and Decomposing Data / Mutation / building with mutation: const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed }); const copy = (node) => reverse(reverse(node)); (1 shared atom(s))
 - [[javascriptallonge-list]] - shared technical atoms: List shares technical record from Composing and Decomposing Data / Mutation / building with mutation: const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed }); const copy = (node) => reverse(reverse(node)); (1 shared atom(s))
-- [[javascriptallonge-note]] - shared technical atoms: Note shares technical record from Composing and Decomposing Data / Mutation / building with mutation: const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed }); const copy = (node) => reverse(reverse(node)); (1 shared atom(s))
+
+### Shared claims
+
 - [[javascriptallonge-language]] - shared statements: Language shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: Having these instructions be very fast was important to those early designers: They were working on one of the first high-level languages (COBOL and FORTRAN being th ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-program]] - shared statements: Program shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: Having these instructions be very fast was important to those early designers: They were working on one of the first high-level languages (COBOL and FORTRAN being th ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-programming]] - shared statements: Programming shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: Having these instructions be very fast was important to those early designers: They were working on one of the first high-level languages (COBOL and FORTRAN being th ... [truncated] (1 shared statement(s))
 
 ## Source

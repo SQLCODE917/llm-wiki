@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-like-this-ordered-collections-a2e8339c
 page_kind: source
+page_family: section-reference
 summary: Like this: / ordered collections: 12 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-like-this-ordered-collections-a2e8339c@97f793825b059bd880d45609a06d47ec
+projection_coverage: section-javascriptallonge-section-like-this-ordered-collections-a2e8339c@8fb7ebe88c6de904abcd123b8c1f3806
 ---
 
 # Like this: / ordered collections
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-like-this-ordered-collect
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-like-this-66cb3108]] - broader source section: Like this:
 
@@ -36,6 +39,8 @@ From [[javascriptallonge]].
 > This is accomplished with our own collections by returning a brand new iterator every time we call [Symbol.iterator] , and ensuring that our iterators start at the beginning and work forward.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01580))_
+
+<a id="atom-technical-atom-0d14fd4d91090b51"></a>
 
 ```
 const abc = ["a", "b", "c"];
@@ -62,6 +67,8 @@ c
 > Whether you work with the same iterator over and over, or get a fresh iterable every time, you are always going to get fresh random numbers. Therefore, RandomNumbers is not an ordered collection.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01583))_
+
+<a id="atom-technical-atom-abc21aecdd5f4a68"></a>
 
 ```
 const RandomNumbers = {

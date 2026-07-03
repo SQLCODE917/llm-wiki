@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 1.4 Character Creation / 《 Name 》: 18 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-name-9087c0c4@9843f4e390b7a1ff69b0478e3238c7cc
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-name-9087c0c4@e006fbc8219c66afbb5da647245c8658
 ---
 
 # 1.4 Character Creation / 《 Name 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-charac
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1e239ef6]] - broader source section: 1.4 Character Creation
 

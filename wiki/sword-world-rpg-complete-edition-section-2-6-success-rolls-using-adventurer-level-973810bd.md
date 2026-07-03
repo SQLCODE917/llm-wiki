@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-2-6-success-rolls-using-adventurer-level-973810bd
 page_kind: source
 page_family: section-reference
-summary: 2.6 Success Rolls Using Adventurer Level: 27 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 2.6 Success Rolls Using Adventurer Level: 27 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-6-success-rolls-using-adventurer-level-973810bd@8c79be7f9aba2d2a0ec0c605abf1b389
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-6-success-rolls-using-adventurer-level-973810bd@ff591fc46cd06dc729a2ca3523744a2e
 ---
 
 # 2.6 Success Rolls Using Adventurer Level
@@ -17,8 +17,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-2-6-success-rolls-using-adventurer-level-resistance-rolls-24267942]] - narrower source section: 2.6 Success Rolls Using Adventurer Level / Resistance Rolls
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-2-6-success-rolls-using-adventurer-level-filling-out-the-character-sheet-0e2bccaf]] - narrower source section: 2.6 Success Rolls Using Adventurer Level / Filling Out the Character Sheet
+- [[sword-world-rpg-complete-edition-section-2-6-success-rolls-using-adventurer-level-resistance-rolls-24267942]] - narrower source section: 2.6 Success Rolls Using Adventurer Level / Resistance Rolls
 
 ## Statements
 
@@ -44,25 +46,3 @@ From [[sword-world-rpg-complete-edition]].
 
 - The two resistance rolls are frequently performed. Therefore, it' s advisable to make a note of the baseline score ( resistance ) so that it is readily available. The Character Sheet provides a field for this purpose. Look at the life force and mental power fields under ability scores. To the right of each of these is a field to write down the bonus, and further to the right of that should be a field labeled resistance . Write the baseline scores of each resistance roll here . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01277))_
 - Therefore, it' s advisable to make a note of the baseline score ( resistance ) so that it is readily available. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01277))_
-
-## Technical atoms
-
-### Technical frame 1: 2.6 Success Rolls Using Adventurer Level / Resistance Rolls
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01267))_
-
-> Since Ducard II has an adventurer level of 2 and a +3 life force bonus, the baseline score of his life force resistance roll (life force resistance power) is 5 . During the adventure, he is attacked and wounded by a ghoul. Paralyzing poison is a special ability of ghouls. The game master asks us to make a life force resistance roll to see if Ducard II is poisoned by the ghoul. The toxicity score of ghoul poison is 10, which is the target score. Our 2D roll is 5, so with 5+5= 10 , he escapes para
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01265))_
-
-> In particular, all checks against magic, even if it causes physical damage, are made with mental power resistance rolls.
-
-### Technical frame 2: 2.6 Success Rolls Using Adventurer Level / Resistance Rolls
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01274))_
-
-> When a character with adventurer level 0 (a character with no adventurer skills) makes these checks, the baseline score is 0 regardless of their ability scores.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01272))_
-
-> [Figure] (p.33)

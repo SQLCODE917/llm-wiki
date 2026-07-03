@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-giant-c9f18cee
 page_kind: source
 page_family: section-reference
-summary: [ Giant ]: 45 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Giant ]: 45 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-c9f18cee@96bcc8bc65bfeb3343d2335635d27ef9
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-c9f18cee@ba99c070625cda68990212219bba6c91
 ---
 
 # [ Giant ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-giant-c9f1
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Other
 
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-giant-bba55fe3]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Giant ]
 
@@ -46,45 +48,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07343))_
 
+<a id="atom-technical-atom-f0adbe92ba4e189b"></a>
+
 > Perception=Five senses
 
 ### Technical frame 2: [ Giant ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07347))_
-
-> This giant makes the forest its home, and has darker hair on its head and body than a hill giant. It's about 5 meters tall. They have a very ferocious personality and will attack any animal that comes into view, in an attempt to eat them. Of course, humans are no exception.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07349, source-range-0b9dec90-07350, source-range-0b9dec90-07351, source-range-0b9dec90-07352, source-range-0b9dec90-07353, source-range-0b9dec90-07354, source-range-0b9dec90-07355, source-range-0b9dec90-07356, source-range-0b9dec90-07357, source-range-0b9dec90-07358, source-range-0b9dec90-07359, source-range-0b9dec90-07361, source-range-0b9dec90-07362, source-range-0b9dec90-07363))_
-
-> Monster Level=11
-
-> Rarity=12
-
-> Agility=9 Movement Speed=20
-
-> Number=One to several Frequency=Rare
-
-> Intellect=Human Reaction=Adversarial
-
-> Attack Points=Arm:19 (12)
-
-> Strike Points=21
-
-> Evasion Points=16 (9) Defense Points=15
-
-> Life Points/Resistance=45/24 (17)
-
-> Mental Points/Resistance=15/19 (12)
-
-> Special Abilities=7th level spirit magic (Magic Intensity/Magic Power=16/9, fire spirits only)
-
-> Habitat=Mountains near human villages, hills
-
-> Languages=Giant, silent spirit
-
-> Perception=Five senses (infravision)
-
-### Technical frame 3: [ Giant ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07371))_
 
@@ -92,16 +60,10 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07369, source-range-0b9dec90-07370))_
 
+<a id="atom-technical-atom-cfeeb0116c55df89"></a>
+
 > Special Abilities=8th level spirit (Magic Intensity/Magic Power=17/10, spirits only)
 
+<a id="atom-technical-atom-be5c7bcbd8976f43"></a>
+
 > Cold immunity Snow adaptation Habitat=Cold regions Languages=Giant, silent spirit Perception=Five senses (infravision)
-
-### Technical frame 4: [ Giant ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07372))_
-
-> Frost giants have a deep connection with the spirit power of ice, and can use spirit magic sourced from the power of ice spirits (frau, fenrir) up to 8th level. Also, they will not suffer any damage at all from cold-type attacks.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07371))_
-
-> If you can't communicate, they may threaten you.

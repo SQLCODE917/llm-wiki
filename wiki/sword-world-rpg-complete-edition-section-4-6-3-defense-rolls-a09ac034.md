@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-4-6-3-defense-rolls-a09ac034
 page_kind: source
 page_family: section-reference
-summary: 4.6.3 Defense Rolls: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 4.6.3 Defense Rolls: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-6-3-defense-rolls-a09ac034@29e9dc2758aa09f8d1e71ddb602fae8b
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-6-3-defense-rolls-a09ac034@ca68b990c375d9c36f9480202d31481e
 ---
 
 # 4.6.3 Defense Rolls
@@ -30,9 +30,11 @@ From [[sword-world-rpg-complete-edition]].
 
 > Roll 2D and follow the row next to the result. Then, look for the number under the appropriate column. This process is specifically called a defense roll .
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02211))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02212))_
 
-> Characters can reduce the damage they receive from monsters by means of armor.
+<a id="atom-technical-atom-cc163d456b75d44d"></a>
+
+> Table 4-3: Rating Table, Key Number Column 7
 
 ### Technical frame 2: 4.6.3 Defense Rolls
 
@@ -40,16 +42,8 @@ From [[sword-world-rpg-complete-edition]].
 
 > Roll 2D and follow the row next to the result. Then, look for the number under the appropriate column. This process is specifically called a defense roll .
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02212))_
-
-> Table 4-3: Rating Table, Key Number Column 7
-
-### Technical frame 3: 4.6.3 Defense Rolls
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02214))_
-
-> Roll 2D and follow the row next to the result. Then, look for the number under the appropriate column. This process is specifically called a defense roll .
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02213))_
+
+<a id="atom-technical-atom-6db02fe5ae5075c2"></a>
 
 > [Figure] (p.47)

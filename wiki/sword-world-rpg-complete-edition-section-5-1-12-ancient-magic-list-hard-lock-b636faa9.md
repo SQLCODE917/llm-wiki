@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 5.1.12 Ancient Magic List / [ Hard Lock ]: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-hard-lock-b636faa9@34e4f5e16bb6345b5095a9f3f840ce37
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-hard-lock-b636faa9@ef413871651aa89aadd71ed4503dff6c
 ---
 
 # 5.1.12 Ancient Magic List / [ Hard Lock ]
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-19f66f88]] - broader source section: 5.1.12 Ancient Magic List
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-lock-b999e794]] - same source heading: another source section with the same heading, 5.1.12 Ancient Magic List / [ Lock ]
 
 ## Statements
@@ -35,6 +40,10 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03005, source-range-0b9dec90-03006))_
 
+<a id="atom-technical-atom-6d12a61e117fd3c1"></a>
+
 > Countered (Overpowered) By: Unlock Expansion=Final score
+
+<a id="atom-technical-atom-a5a04facec9948f5"></a>
 
 > Resist=None

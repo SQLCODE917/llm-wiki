@@ -18,8 +18,8 @@ from forge.core.messages import Message, MessageMeta, MessageRole, MessageType
 from forge.core.runner import WorkflowRunner
 
 from llmwiki.config import StrictEvidenceMode
+from llmwiki.domain.chat_evidence_scope import ChatEvidenceScope
 from llmwiki.domain.chat_grounding import (
-    ChatEvidenceScope,
     ChatTaskMode,
     plan_chat_grounding,
     render_grounded_user_message,

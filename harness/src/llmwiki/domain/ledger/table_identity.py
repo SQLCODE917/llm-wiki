@@ -43,6 +43,7 @@ def table_identity_names_by_atom_id(
     node_headings = _structure_node_headings(structure)
     atom_node_ids = _table_atom_node_ids(ledger)
     inferred_names = _table_names_from_forward_cues(ledger, structure)
+    forward_targets = _table_forward_targets_by_atom_id(ledger, structure)
     names_by_atom: dict[str, tuple[str, ...]] = {}
     for atom in ledger.technical_atoms:
         if atom.technical_atom_kind != "table" or not isinstance(atom.payload, TablePayload):
@@ -58,11 +59,25 @@ def table_identity_names_by_atom_id(
                 *raw_table_caption_lines(atom.payload),
                 *heading_names,
                 *inferred_names.get(atom.source_range_id, ()),
+                *_target_node_names(forward_targets.get(atom.technical_atom_id, ())),
             )
         )
         if names:
             names_by_atom[atom.technical_atom_id] = names
     return names_by_atom
+
+
+def table_structure_node_ids_by_atom_id(ledger: ClaimLedger) -> dict[str, tuple[str, ...]]:
+    return _table_atom_node_ids(ledger)
+
+
+def table_forward_target_node_ids_by_atom_id(
+    ledger: ClaimLedger, structure: DocumentStructure | None
+) -> dict[str, tuple[str, ...]]:
+    return {
+        atom_id: tuple(node.structure_node_id for node in nodes)
+        for atom_id, nodes in _table_forward_targets_by_atom_id(ledger, structure).items()
+    }
 
 
 def raw_table_caption_lines(payload: TablePayload) -> tuple[str, ...]:
@@ -207,6 +222,44 @@ def _table_names_from_forward_cues(
     return inferred
 
 
+def _table_forward_targets_by_atom_id(
+    ledger: ClaimLedger, structure: DocumentStructure | None
+) -> dict[str, tuple[StructureNode, ...]]:
+    if structure is None:
+        return {}
+    table_atom_count = sum(
+        1
+        for atom in ledger.technical_atoms
+        if atom.technical_atom_kind == "table" and isinstance(atom.payload, TablePayload)
+    )
+    if (
+        len(structure.structure_nodes) > _MAX_FORWARD_CUE_NODES
+        or table_atom_count > _MAX_FORWARD_CUE_TABLE_ATOMS
+    ):
+        return {}
+    source_order = _source_order(structure)
+    nodes = tuple(
+        sorted(
+            (node for node in structure.structure_nodes if _node_source_order(node) is not None),
+            key=lambda node: _node_source_order(node) or 0,
+        )
+    )
+    targets: dict[str, tuple[StructureNode, ...]] = {}
+    for atom in ledger.technical_atoms:
+        if atom.technical_atom_kind != "table" or not isinstance(atom.payload, TablePayload):
+            continue
+        table_order = source_order.get(atom.source_range_id)
+        if table_order is None:
+            continue
+        cue = _nearest_forward_table_cue(nodes, table_order)
+        if cue is None:
+            continue
+        target_nodes = _cue_section_nodes(nodes, cue, structure)
+        if target_nodes:
+            targets[atom.technical_atom_id] = target_nodes
+    return targets
+
+
 def _nearest_forward_table_cue(
     nodes: tuple[StructureNode, ...], table_order: int
 ) -> StructureNode | None:
@@ -242,6 +295,37 @@ def _cue_section_names(
         if name := _named_heading(node.heading_text):
             names.extend(name)
             break
+    return tuple(dict.fromkeys(names))
+
+
+def _cue_section_nodes(
+    nodes: tuple[StructureNode, ...], cue: StructureNode, structure: DocumentStructure
+) -> tuple[StructureNode, ...]:
+    targets: list[StructureNode] = []
+    parent = structure.node(cue.parent_structure_node_id) if cue.parent_structure_node_id else None
+    if parent is not None and _named_heading(parent.heading_text):
+        targets.append(parent)
+    for node in sorted(
+        (
+            node
+            for node in nodes
+            if (node_order := _node_source_order(node)) is not None
+            and (cue_order := _node_source_order(cue)) is not None
+            and node_order < cue_order
+        ),
+        key=lambda node: _node_source_order(node) or 0,
+        reverse=True,
+    ):
+        if _named_heading(node.heading_text):
+            targets.append(node)
+            break
+    return tuple(dict.fromkeys(targets))
+
+
+def _target_node_names(nodes: tuple[StructureNode, ...]) -> tuple[str, ...]:
+    names: list[str] = []
+    for node in nodes:
+        names.extend(_named_heading(node.heading_text))
     return tuple(dict.fromkeys(names))
 
 

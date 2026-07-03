@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 1. Replay Collections: 13 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-replay-collections-6afdd52a@f875ff25ae6bfd82885941f3befeaf53
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-replay-collections-6afdd52a@3a3f9b51356cb5729d86f510991decab
 ---
 
 # 1. Replay Collections
@@ -34,5 +34,7 @@ From [[sword-world-rpg-complete-edition]].
 > Finally, these replays are based on actual play and reproduction of the situations, but have been cut or edited for redundancy and other aspects in order to prioritize readability. Some rule errors that occurred during the game have been corrected and dealt with, especially in areas where they do not have a major impact. In actual play, things do not go as smoothly as this. A replay should not be considered a complete manual, but merely a reference.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00126))_
+
+<a id="atom-technical-atom-f2417bc482ca7893"></a>
 
 > [Figure] (p.8)

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-8242b170
 page_kind: source
 page_family: section-reference
-summary: Chapter 7: / 7.5 [ ② Treatment [Intelligence]]: 63 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 7: / 7.5 [ ② Treatment [Intelligence]]: 63 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-8242b170@0348fc03f38fc8f4eef9b3dce3fc1aa2
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-8242b170@d579aa43cc1654f6192555576a31d4d6
 ---
 
 # Chapter 7: / 7.5 [ ② Treatment [Intelligence]]
@@ -17,16 +17,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-7-22223c91]] - broader source section: Chapter 7:
-- [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-hunter-skill-c04f32ac]] - narrower source section: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / Hunter Skill
+- [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-climb-agility-equipment-restriction-06765066]] - narrower source section: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ⑥ Climb [Agility] ] (Equipment restriction)
 - [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-herbs-intelligence-not-retriable-75c34635]] - narrower source section: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ③ Herbs [Intelligence] ] (Not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-hunter-skill-c04f32ac]] - narrower source section: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / Hunter Skill
 - [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-large-ship-steering-intelligence-73228ba6]] - narrower source section: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ① Large Ship Steering [Intelligence] ]
+- [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-ropework-dexterity-6679d0f5]] - narrower source section: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ⑦ Ropework [Dexterity] ]
 - [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-seamanship-intelligence-fbe57d72]] - narrower source section: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ② Seamanship [Intelligence] ]
 - [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-small-ship-steering-dexterity-7bd7b97b]] - narrower source section: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ③ Small Ship Steering [Dexterity] ]
-- [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-swim-agility-equipment-restriction-315b6e61]] - narrower source section: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ④ Swim [Agility] ] (Equipment restriction)
-- [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-weather-prediction-intelligence-not-retriable-8e12071e]] - narrower source section: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ⑤ Weather Prediction [Intelligence] ] (Not retriable)
-- [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-climb-agility-equipment-restriction-06765066]] - narrower source section: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ⑥ Climb [Agility] ] (Equipment restriction)
-- [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-ropework-dexterity-6679d0f5]] - narrower source section: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ⑦ Ropework [Dexterity] ]
 
 ## Statements
 
@@ -92,57 +92,3 @@ From [[sword-world-rpg-complete-edition]].
 
 - Sailors have the ability to tie ropes at will so that they do not unravel or, conversely, quickly unravel. A sailor can untie a knot by succeeding on a success roll using sailor skill level + dexterity bonus as the baseline score. At this time, the game master should decide the difficulty or target score, taking into consideration the tightness of the knot and the time it'll take. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05399))_
 - A rope that a sailor tied to keep it from coming undone should have a difficulty equal to the sailor's skill level if someone attempts to untie it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05400))_
-
-## Technical atoms
-
-### Technical frame 1: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / Hunter Skill / [ ⑨ Pre-processing [Dexterity]]
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05363))_
-
-> You can also use it to take apart and smoke meat.
-
-### Technical frame 2: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ③ Herbs [Intelligence] ] (Not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05371))_
-
-> Hunters can see how much their prey and pre-processed products are worth. For prey and pre-processed items, set a difficulty and have them make a success roll.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05370))_
-
-> Therefore, it's no good if you cannot determine the price of the game you've hunted.
-
-### Technical frame 3: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ③ Herbs [Intelligence] ] (Not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05374))_
-
-> The sailor skill is the skill needed to operate a ship. Owners of this skill are called sailors, and people called sailors own this skill. Also, even if you are not a professional sailor, those who sail as a hobby or a side job still possess this skill.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05372))_
-
-> Game masters should not set a very high difficulty level for using this ability unless you're trying to catch an extremely difficult animal.
-
-### Technical frame 4: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ③ Herbs [Intelligence] ] (Not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05376))_
-
-> The abilities of the sailor skill are as follows.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05375))_
-
-> At that time, you can only wear armor up to cloth or soft leather.
-
-### Technical frame 5: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ③ Small Ship Steering [Dexterity] ]
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05391))_
-
-> If you're just going straight through calm water, you don't need a success roll.
-
-### Technical frame 6: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ⑦ Ropework [Dexterity] ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05400))_
-
-> A rope that a sailor tied to keep it from coming undone should have a difficulty equal to the sailor's skill level if someone attempts to untie it.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05404))_
-
-> [Figure] (p.129)

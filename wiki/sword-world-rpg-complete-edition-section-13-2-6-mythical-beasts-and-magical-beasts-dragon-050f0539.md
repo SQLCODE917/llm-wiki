@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-dragon-050f0539
 page_kind: source
 page_family: section-reference
-summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]: 49 source-backed entries and 22 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]: 49 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-dragon-050f0539@faa6db9068eb9981bcad0f54cfb438e3
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-dragon-050f0539@66f9fd361f3b74d8a266e1e86de3a275
 ---
 
 # 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-myt
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] - broader source section: 13.2.6 Mythical Beasts and Magical Beasts
 
@@ -40,67 +42,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07804))_
-
-> The 30 meter long drake, feared as a god slayer monster, and also a master of a variety of magic, is nowhere to be seen in Forcelia today. It is said that there is no way for a human to ever take on a drake. Even the elder and lesser species, which are weaker than drakes, are far too powerful enemies for humans to face, and those who defeat these dragons are hailed as dragon slayer heroes.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07806, source-range-0b9dec90-07807, source-range-0b9dec90-07808, source-range-0b9dec90-07809, source-range-0b9dec90-07810, source-range-0b9dec90-07811, source-range-0b9dec90-07812, source-range-0b9dec90-07813, source-range-0b9dec90-07814))_
-
-> Monster Level=10
-
-> Rarity=10
-
-> Agility=10
-
-> Movement Speed=10/30 (air)
-
-> Number=One
-
-> Frequency=Very Rare
-
-> Intellect=Low
-
-> Reaction=Neutral
-
-> Attack Points=Fangs:17 (10)/Talon:18 (11)/
-
-### Technical frame 2: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07817, source-range-0b9dec90-07818, source-range-0b9dec90-07819, source-range-0b9dec90-07820))_
-
-> Evasion Points=15 (8) Defense Points=15
-
-> Life Points/Resistance=50/24 (17)
-
-> Mental Points/Resistance=20/19 (12)
-
-> Special Abilities=Fire breath in a 20 meter forward radius (Resist target score=17, strike power 20, bonus damage 10)
-
-### Technical frame 3: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07827))_
-
-> Lesser dragons are about 15 meters long. They have low intellect, and do not use magic. There is an outlook that they are like giant beasts, living according to instinct rather than thought.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07824, source-range-0b9dec90-07825, source-range-0b9dec90-07826))_
-
-> Habitat=Mountains, caves, other
-
-> Languages=Lizardman
-
-> Perception=Five senses (darkvision)
-
-### Technical frame 4: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07829))_
 
 > A dragon's roar also brings intense fear to those who hear it. Anyone who hears the dragon's roar must make a mental power resistance roll against target score 17. If you fail, determine the effect using Table 5-5: Fears (see p. 89). Treat this the same as magic that belongs to mind . A dragon cannot breathe fire or attack with their fangs or claws on the same round in which it roars.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07828))_
 
+<a id="atom-technical-atom-750bd72e57a479da"></a>
+
 > Those within range must make a mental power resistance roll against target score 17.
 
-### Technical frame 5: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
+### Technical frame 2: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07832))_
 
@@ -108,9 +60,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07829))_
 
+<a id="atom-technical-atom-3402ee171791bcfc"></a>
+
 > Anyone who hears the dragon's roar must make a mental power resistance roll against target score 17.
 
-### Technical frame 6: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
+### Technical frame 3: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07832))_
 
@@ -118,34 +72,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07830))_
 
+<a id="atom-technical-atom-ef58c8bd43e7b56d"></a>
+
 > Dragons may take long periods of rest called dormant season , but they do not require sleep in the normal sense of the word and cannot be put to sleep by magic.
-
-### Technical frame 7: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07838))_
-
-> Elder dragons are about 20 meters long. Unlike lesser dragons, they have high intellect and sometimes use ancient magic. Some sages claim that this is based on the lost dragon roar, and should not be called ancient magic, although the results are the same. Furthermore, they can also use dragon roar magic that uses the lost dragon roar (though they possess most of their abilities without using magic).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07833))_
-
-> (Magic Intensity/Magic Power=20/13)
-
-### Technical frame 8: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07838))_
-
-> Elder dragons are about 20 meters long. Unlike lesser dragons, they have high intellect and sometimes use ancient magic. Some sages claim that this is based on the lost dragon roar, and should not be called ancient magic, although the results are the same. Furthermore, they can also use dragon roar magic that uses the lost dragon roar (though they possess most of their abilities without using magic).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07836))_
-
-> [Figure] (p.198)
-
-### Technical frame 9: 13.2.6 Mythical Beasts and Magical Beasts / [ Dragon ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07839))_
-
-> Elder dragons also have the ability to breathe fire. Elder-species' fire spreads in a 30-meter forward radius, and those who fail a mental power resistance roll against target score 22 will suffer damage resulting from a strike power 30 strike roll plus bonus damage 15. They also have the roar ability which causes fear. The target score to resist is 22.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07838))_
-
-> Furthermore, they can also use dragon roar magic that uses the lost dragon roar (though they possess most of their abilities without using magic).

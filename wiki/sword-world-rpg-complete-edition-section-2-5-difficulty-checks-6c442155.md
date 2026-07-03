@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-2-5-difficulty-checks-6c442155
 page_kind: source
 page_family: section-reference
-summary: 2.5 Difficulty Checks: 66 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 2.5 Difficulty Checks: 66 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-difficulty-checks-6c442155@f9e107eb579941e2d85c6b6ccf87e9b9
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-difficulty-checks-6c442155@f54de583db17e8cadbc2ed4012f28eb7
 ---
 
 # 2.5 Difficulty Checks
@@ -17,9 +17,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-2-5-difficulty-checks-2-5-1-difficulty-b2b0e076]] - narrower source section: 2.5 Difficulty Checks / 2.5.1 Difficulty
 - [[sword-world-rpg-complete-edition-section-2-5-difficulty-checks-2-5-2-how-to-make-a-difficulty-check-778f9a94]] - narrower source section: 2.5 Difficulty Checks / 2.5.2 How to Make a Difficulty Check
 - [[sword-world-rpg-complete-edition-section-2-5-difficulty-checks-2-5-3-analogy-of-success-and-failure-211ef947]] - narrower source section: 2.5 Difficulty Checks / 2.5.3 Analogy of Success and Failure
+
+### Topics
+
 - [[sword-world-rpg-complete-edition-difficulty-check]] - topic hub: opens the topic page for Difficulty Check
 
 ## Statements
@@ -78,27 +83,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical frame 1: 2.5 Difficulty Checks
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01215))_
-
-> So, confident that there are no traps, you open the door and move forward.......
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01213))_
-
-> You (the player) roll the dice. The roll is 8 . 4+8= 12 , so it's a success, although just barely.
-
-### Technical frame 2: 2.5 Difficulty Checks
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01225))_
-
-> Can you answer this question? Can you answer the question from your character's point of view? I landed the success roll is not an answer. That's an answer from the player's perspective, not the character's.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01223))_
-
-> Even if a bonus or penalty is applied, the roll is still an automatic success if the roll comes up double sixes , and an automatic failure if the roll if it's double ones .
-
-### Technical frame 3: 2.5 Difficulty Checks / 2.5.2 How to Make a Difficulty Check
+### Technical frame 1: 2.5 Difficulty Checks / 2.5.2 How to Make a Difficulty Check
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01237))_
 
@@ -106,9 +91,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01235))_
 
+<a id="atom-technical-atom-18d5aa9d15a1d2b7"></a>
+
 > final score ≥ target score (difficulty + 2D) → action succeeds
 
-### Technical frame 4: 2.5 Difficulty Checks / 2.5.3 Analogy of Success and Failure
+### Technical frame 2: 2.5 Difficulty Checks / 2.5.3 Analogy of Success and Failure
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01245))_
 
@@ -116,19 +103,13 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01244))_
 
+<a id="atom-technical-atom-1549ecd11deb50d7"></a>
+
 > If the roll is as high as 10 or 11, the success roll is considered to have a very high chance of success.
 
-### Technical frame 5: 2.5 Difficulty Checks / 2.5.3 Analogy of Success and Failure
+### Technical atom 3
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01246))_
-
-> In particular, when a player rolls either of the two extremes, double sixes or double ones , it means automatic success or automatic failure , so that the player can clearly see whether the success roll is successful or not.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01245))_
-
-> If the roll is low, such as 3 or 4, then there's a high chance that the success roll has failed.
-
-### Technical atom 6
+<a id="atom-technical-atom-e884d09fa546986f"></a>
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01237))_
 
@@ -136,18 +117,18 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01238))_
 
+```text
+1. There is a  trap, the find trap check is successful → There is a trap at the door 2. There is a trap, the find trap check is a failure → You don't find any traps 3. There is no trap, the find trap check is successful → You don't find any traps 4. There is no trap, the find trap check is a failure → You don't find any traps
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 1 | There is a trap, the find trap check is successful → There is a trap at the door |
 | 2 | There is a trap, the find trap check is a failure → You don't find any traps |
 | 3 | There is no trap, the find trap check is successful → You don't find any traps |
 | 4 | There is no trap, the find trap check is a failure → You don't find any traps |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-1. There is a  trap, the find trap check is successful → There is a trap at the door 2. There is a trap, the find trap check is a failure → You don't find any traps 3. There is no trap, the find trap check is successful → You don't find any traps 4. There is no trap, the find trap check is a failure → You don't find any traps
-```
 
 </details>

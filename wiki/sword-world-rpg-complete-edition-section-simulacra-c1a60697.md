@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-simulacra-c1a60697
 page_kind: source
 page_family: section-reference
-summary: [ Simulacra ]: 18 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Simulacra ]: 18 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-simulacra-c1a60697@e0395ce69980f73e6550e956534cccc4
+projection_coverage: section-sword-world-rpg-complete-edition-section-simulacra-c1a60697@bca144580ddf429c18c7fffa6cd5b2c5
 ---
 
 # [ Simulacra ]
@@ -25,29 +25,3 @@ From [[sword-world-rpg-complete-edition]].
 - They were often used to watch over people who did not use magic, such as slaves and savages, and to guard the places where they worked. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08944))_
 - A simulacra's replication is only superficial, and is limited to weapon combat capability. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08945))_
 - The only way to attack a simulacra is to attack directly with a weapon. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08946))_
-
-## Technical atoms
-
-### Technical frame 1: [ Simulacra ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08937))_
-
-> Rarity=14 Agility=Based on original Movement Speed=Based on original Number=One to several Frequency=Rare Intellect=None Reaction=Violent Attack Points/Strike Points/Evasion Points/ Defense Points=Based on original Life Points/Resistance=Based on original/based on original Mental Points/Resistance=-/Based on original
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08936, source-range-0b9dec90-08938))_
-
-> Monster Level=Based on original
-
-> Special Abilities=Duplication
-
-### Technical frame 2: [ Simulacra ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08943))_
-
-> A simulacra is a kind of golem built during the ancient kingdom period. A simulacra duplicates the appearance and abilities of an enemy human creature and makes them its own.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08941, source-range-0b9dec90-08942))_
-
-> Languages=None
-
-> Perception=Pseudo

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-target-score-2ca82818
 page_kind: source
 page_family: section-reference
-summary: 《 Target Score 》: 13 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 《 Target Score 》: 13 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-target-score-2ca82818@2e3b986b616ae5957e2092ca5fc03f66
+projection_coverage: section-sword-world-rpg-complete-edition-section-target-score-2ca82818@6a61323279ac019d6b95a20ff9a027f0
 ---
 
 # 《 Target Score 》
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Topics
+
 - [[sword-world-rpg-complete-edition-target-score]] - topic hub: opens the topic page for Target Score
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-2-1-baseline-scores-target-scores-ebc660b1]] - same source heading: another source section with the same heading, 2.1 Baseline Scores / Target Scores
 
 ## Statements
@@ -40,6 +45,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02647))_
 
+<a id="atom-technical-atom-952b868f3f54c96d"></a>
+
 > When casting any magic, no matter what kind of magic it is, you must roll 2D to check whether an automatic failure (double ones) will occur or not.
 
 ### Technical frame 2: 《 Target Score 》
@@ -49,6 +56,8 @@ From [[sword-world-rpg-complete-edition]].
 > If this final score is greater than or equal to the target score originally set for that first magic that was cast, then that first magic can be nullified.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02649))_
+
+<a id="atom-technical-atom-e12a19a79da619f5"></a>
 
 > However, if you feel this is cumbersome, or if you forget to make a note, then when it becomes necessary (nullifying magic has been used), you can roll 2D on the spot to determine a final score = target score .
 
@@ -60,6 +69,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02650))_
 
+<a id="atom-technical-atom-9cb3d1c84cb58241"></a>
+
 > When you use magic that nullifies other magic, if your roll is double sixes , the magic will automatically be nullified, no matter what the target score is.
 
 ### Technical frame 4: 《 Target Score 》
@@ -70,31 +81,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02651))_
 
+<a id="atom-technical-atom-c70e300c6dcfb3ec"></a>
+
 > Conversely, if the dice roll double sixes when determining the target score (the success score of the first magic), you must roll another double sixes in order to nullify that magic.
-
-### Technical atom 5
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01174))_
-
-> The player must roll two dice and add their baseline score to the roll. The result is called the fi nal score . This final score should be equal to or greater than the target score.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01172))_
-
-| entry | content |
-| --- | --- |
-| 2 | 2 Target Scores The baseline score is a number that represents a character's ability. However, the success of an action is not only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned warrior, than when he is an amateur with no fighting experience. |
-| 2 | 3 |
-| 2 | 3 Checks |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Target Scores
-2.2 Target Scores
-The baseline score is  a number that represents a character's ability. However, the  success  of  an  action  is  not  only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned  warrior,  than  when  he  is  an amateur with no fighting experience.
-2.3
-2.3 Checks
-```
-
-</details>

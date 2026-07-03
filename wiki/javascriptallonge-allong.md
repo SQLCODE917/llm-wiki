@@ -1,19 +1,37 @@
 ---
 page_id: javascriptallonge-allong
 page_kind: concept
+page_family: broad-topic
 summary: Allong: 11 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-allong@d094a49982a0b64ec9b8046a76a9b1a9
+projection_coverage: topic-javascriptallonge-allong@e9bf2dd3117938223db251d892bb05fa
 ---
 
 # Allong
 
 What [[javascriptallonge]] covers about allong:
 
-## Statements
+
+## Related pages
+
+### Shared technical atoms
+
+- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from A Pull of the Lever: Prefaces / About JavaScript Allongé: JavaScript Allongé is a first and foremost, a book about programming with functions . It's written in JavaScript, because JavaScript hits the perfect sweet spot of b ... [truncated]; Javascript shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: function foo (first, ...rest) { // ... } (11 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-feature]] - shared technical atoms: Feature shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: function foo (first, ...rest) { // ... } (2 shared atom(s))
+- [[javascriptallonge-recipe]] - shared technical atoms: Recipe shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-functional]] - shared statements and technical atoms: Functional shares source evidence from ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus: As a staunch advocate of functional programming, much of what Reg has written rings true to me. While not exclusively a book about functional programming, JavaScript ... [truncated]; Functional shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-programming]] - shared statements and technical atoms: Programming shares source evidence from ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus: As a staunch advocate of functional programming, much of what Reg has written rings true to me. While not exclusively a book about functional programming, JavaScript ... [truncated]; Programming shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-code]] - shared technical atoms: Code shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-data]] - shared technical atoms: Data shares technical table: 84 https://github.com/raganwald/allong.es 85 http://underscorejs.org (1 shared atom(s))
+- [[javascriptallonge-ecmascript]] - shared technical atoms: Ecmascript shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
+
+### Topics
+
+- [[javascriptallonge-javascript-allong]] - narrower topic: Javascript Allong shares source evidence from A Pull of the Lever: Prefaces / What JavaScript Allongé is. And isn't.: JavaScript Allongé is a book about programming with functions. From functions flow many ideas, from decorators to methods to delegation to mixins, and onwards in so ... [truncated] (3 shared statement(s))
+## Statements by source section
 
 ### A Pull of the Lever: Prefaces / About JavaScript Allongé
 
@@ -64,6 +82,8 @@ What [[javascriptallonge]] covers about allong:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00037))_
 
+<a id="atom-technical-atom-5da90e9e76850cfa"></a>
+
 ```
 function foo (first, ...rest) {
 // ...
@@ -72,29 +92,7 @@ function foo (first, ...rest) {
 
 ### Technical atom 2
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00091))_
-
-| entry | content |
-| --- | --- |
-| 5 | http://www.fogus.me Like JavaScript itself, this book gives you a gentle start before showing you its full depth, and like a Cafe Allongé, it's over too soon. Enjoy! -Matthew Knox, mattknox.com 6 |
-| 6 | http://mattknox.com |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-matthew knox
-A different kind of language requires a different kind of book.
-JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor strictly dynamic, and it supports procedural, object-oriented (in several flavors!), and functional programming. Many books try to hide most of those capabilities away, giving you recipes for writing JavaScript in a way that approximates class-centric programming in other languages. Not JavaScript Allongé. It starts with the fundamentals of values, functions, and objects, and then guides you through JavaScript from the inside with exploratory bits of code that illustrate scoping, combinators, context, state, prototypes, and constructors.
-5 http://www.fogus.me
-Like JavaScript itself, this book gives you a gentle start before showing you its full depth, and like a Cafe Allongé, it's over too soon. Enjoy!
--Matthew Knox, mattknox.com 6
-6 http://mattknox.com
-```
-
-</details>
-
-### Technical atom 3
+<a id="atom-technical-atom-f0038b4fa2ed7051"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01462))_
 
@@ -102,40 +100,21 @@ Like JavaScript itself, this book gives you a gentle start before showing you it
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01463))_
 
+```text
+84 https://github.com/raganwald/allong.es
+85 http://underscorejs.org
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 84 | https://github.com/raganwald/allong.es |
 | 85 | http://underscorejs.org |
 
-<details>
-<summary>Raw table text</summary>
-
-```
-84 https://github.com/raganwald/allong.es
-85 http://underscorejs.org
-```
-
 </details>
 
-
-## Related pages
-
-- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from A Pull of the Lever: Prefaces / About JavaScript Allongé: JavaScript Allongé is a first and foremost, a book about programming with functions . It's written in JavaScript, because JavaScript hits the perfect sweet spot of b ... [truncated]; Javascript shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: function foo (first, ...rest) { // ... } (11 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus: As a staunch advocate of functional programming, much of what Reg has written rings true to me. While not exclusively a book about functional programming, JavaScript ... [truncated]; Function shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-functional]] - shared statements and technical atoms: Functional shares source evidence from ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus: As a staunch advocate of functional programming, much of what Reg has written rings true to me. While not exclusively a book about functional programming, JavaScript ... [truncated]; Functional shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-program]] - shared statements and technical atoms: Program shares source evidence from ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus: As a staunch advocate of functional programming, much of what Reg has written rings true to me. While not exclusively a book about functional programming, JavaScript ... [truncated]; Program shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-programming]] - shared statements and technical atoms: Programming shares source evidence from ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus: As a staunch advocate of functional programming, much of what Reg has written rings true to me. While not exclusively a book about functional programming, JavaScript ... [truncated]; Programming shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-feature]] - shared technical atoms: Feature shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: function foo (first, ...rest) { // ... } (2 shared atom(s))
-- [[javascriptallonge-recipe]] - shared technical atoms: Recipe shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-code]] - shared technical atoms: Code shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-data]] - shared technical atoms: Data shares technical table: 84 https://github.com/raganwald/allong.es 85 http://underscorejs.org (1 shared atom(s))
-- [[javascriptallonge-different]] - shared technical atoms: Different shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-ecmascript]] - shared technical atoms: Ecmascript shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-language]] - shared technical atoms: Language shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-object]] - shared technical atoms: Object shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-rule]] - shared technical atoms: Rule shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-value]] - shared technical atoms: Value shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-writing]] - shared technical atoms: Writing shares technical table: matthew knox A different kind of language requires a different kind of book. JavaScript holds surprising depths-its scoping rules are neither strictly lexical nor st ... [truncated] (1 shared atom(s))
 
 ## Source
 

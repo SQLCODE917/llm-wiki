@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-8th-level-spirit-magic-list-ice-coffin-13186096
 page_kind: source
 page_family: section-reference
-summary: 5.1.14 Spirit Magic List / 8th Level Spirit Magic List [ Ice Coffin ]: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 5.1.14 Spirit Magic List / 8th Level Spirit Magic List [ Ice Coffin ]: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-8th-level-spirit-magic-list-ice-coffin-13186096@81cb300a8485fb208953307bfd075c06
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-8th-level-spirit-magic-list-ice-coffin-13186096@b314648289b869088ff9e74b69209456
 ---
 
 # 5.1.14 Spirit Magic List / 8th Level Spirit Magic List [ Ice Coffin ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spi
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-55816c7f]] - broader source section: 5.1.14 Spirit Magic List
 
@@ -26,58 +28,3 @@ From [[sword-world-rpg-complete-edition]].
 - Even if your friends are trapped in an ice pillar, it is extremely dangerous to attempt to destroy it. This is because there is a risk that your friends who are packed in the ice will also be destroyed. Damage dealt to the ice by weapons etc. will also be applied to whatever's inside the ice. For details on destruction, please refer to 18.3: Rules for Destroying Structures (see p. 277). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04176))_
 - If the opponent successfully resists, the ice pillar will vanish before it's completed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04173))_
 - This is because there is a risk that your friends who are packed in the ice will also be destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04176))_
-
-## Technical atoms
-
-### Technical frame 1: 5.1.14 Spirit Magic List / 8th Level Spirit Magic List [ Ice Coffin ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04175))_
-
-> Once the ice pillar completely melts or breaks, the target will be free. Although they're in a state of suspended animation and their life force (points) is 0, they're not dead. The time it takes for an ice pillar to naturally melt varies depending on temperature, etc. If the temperature is below freezing, it will not melt permanently.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04174))_
-
-> If the target fails to resist, they become trapped in ice, unable to take any action, will lose consciousness and enter a state of suspended animation.
-
-### Technical atom 2
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03969))_
-
-> cannot use magic, etc.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03972))_
-
-| entry | content |
-| --- | --- |
-| 4 | Target is struck by panic and is prevented from taking action. Take a -1 penalty on all success rolls |
-| 5 | Same as above, but penalty is -2 |
-| 6 | Same as above, but penalty is -3 |
-| 7 | Target runs away. They go berserk if that's not possible. |
-| 8 | Target runs away. If that's not possible, they act with a -3 penalty |
-| 9 | Target runs away. If that's not possible, they freeze in fear and become unable to act |
-| 10 | Target freezes in fear. They become unable to act |
-| 11 | Same as above |
-| 12 | Target loses consciousness from fear. It takes 1 hour to regain consciousness naturally |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-4 Target is struck by panic and is prevented from taking action. Take a -1 penalty on all success rolls
-5
-Same as above, but penalty is -2
-6
-Same as above, but penalty is -3
-7 Target runs away. They go berserk if that's not possible.
-8
-Target runs away. If that's not possible, they act with a -3 penalty
-9
-Target runs away. If that's not possible, they freeze in fear and become unable to act
-10
-Target freezes in fear. They become unable to act
-11
-Same as above
-12 Target loses consciousness from fear. It takes 1 hour to regain consciousness naturally
-```
-
-</details>

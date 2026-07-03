@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-prelude-values-and-expressions-over-coffee-3ba31fb1
 page_kind: source
-summary: Prelude: Values and Expressions over Coffee: 47 source-backed entries and 15 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Prelude: Values and Expressions over Coffee: 47 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-prelude-values-and-expressions-over-coffee-3ba31fb1@5515f5bacd0d1a2de477cf94c812162f
+projection_coverage: section-javascriptallonge-section-prelude-values-and-expressions-over-coffee-3ba31fb1@bd1828008ccb9ed7b701462bc26e755a
 ---
 
 # Prelude: Values and Expressions over Coffee
@@ -16,8 +17,10 @@ From [[javascriptallonge]].
 
 ## Related pages
 
-- [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-are-expressions-439d7791]] - narrower source section: Prelude: Values and Expressions over Coffee / values are expressions
+### Source structure
+
 - [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-7389665c]] - narrower source section: Prelude: Values and Expressions over Coffee / values and identity
+- [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-are-expressions-439d7791]] - narrower source section: Prelude: Values and Expressions over Coffee / values are expressions
 
 ## Statements by subsection
 
@@ -59,24 +62,16 @@ From [[javascriptallonge]].
 
 > All values are expressions. That's easy! Are there any other kinds of expressions? Sure! let's go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let's hand over some ground coffee plus some boiling water.
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00105))_
-
-> 10 The way you can tell that it's both is very easy: When you type it into JavaScript, you get the same thing back, just like our café Cubano:
-
-### Technical frame 2: Prelude: Values and Expressions over Coffee / values are expressions
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00107))_
-
-> All values are expressions. That's easy! Are there any other kinds of expressions? Sure! let's go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let's hand over some ground coffee plus some boiling water.
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00106))_
+
+<a id="atom-technical-atom-51c8d8435d99be90"></a>
 
 ```
 42
 //=> 42
 ```
 
-### Technical frame 3: Prelude: Values and Expressions over Coffee / values are expressions
+### Technical frame 2: Prelude: Values and Expressions over Coffee / values are expressions
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00108))_
 
@@ -84,85 +79,19 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00109))_
 
+<a id="atom-technical-atom-eec8b1329c6317b1"></a>
+
 > And if we hand over the espresso, we get the espresso right back.
 
-### Technical frame 4: Prelude: Values and Expressions over Coffee / values are expressions
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00109))_
-
-> Now the barista gives us back an espresso. And if we hand over the espresso, we get the espresso right back. So, boiling water plus ground coffee is an expression, but it isn't a value. 11 Boiling water is a value. Ground coffee is a value. Espresso is a value. Boiling water plus ground coffee is an expression.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00111))_
-
-```
-"JavaScript" + " " + "Allonge"
-//=> "JavaScript Allonge"
-```
-
-### Technical frame 5: Prelude: Values and Expressions over Coffee / values are expressions
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00109))_
-
-> Now the barista gives us back an espresso. And if we hand over the espresso, we get the espresso right back. So, boiling water plus ground coffee is an expression, but it isn't a value. 11 Boiling water is a value. Ground coffee is a value. Espresso is a value. Boiling water plus ground coffee is an expression.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00113))_
-
-> Nowwesee that 'strings' are values, and you can make an expression out of strings and an operator + . Since strings are values, they are also expressions by themselves. But strings with operators are not values, they are expressions. Now we know what was missing with our 'coffee grounds plus hot water' example. The coffee grounds were a value, the boiling hot water was a value, and the 'plus' operator between them made the whole thing an expression that was not a value.
-
-### Technical frame 6: Prelude: Values and Expressions over Coffee / values and identity
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00118))_
-
-> First, sometimes, the cups are of different kinds. One is a demitasse, the other a mug. This corresponds to comparing two things in JavaScript that have different types . For example, the string "2" is not the same thing as the number 2 . Strings and numbers are different types, so strings and numbers are never identical:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00116))_
-
-```
-2 === 2
-//=> true
-'hello' !== 'goodbye'
-//=> true
-```
-
-### Technical frame 7: Prelude: Values and Expressions over Coffee / values and identity
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00120))_
-
-> Second, sometimes, the cups are of the same type-perhaps two espresso cups-but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different 'content.' For example, the number 5 is not the same thing as the number 2 .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00119))_
-
-```
-2 === '2'
-//=> false
-true !== 'true'
-//=> true
-```
-
-### Technical frame 8: Prelude: Values and Expressions over Coffee / values and identity
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00120))_
-
-> Second, sometimes, the cups are of the same type-perhaps two espresso cups-but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different 'content.' For example, the number 5 is not the same thing as the number 2 .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00121))_
-
-```
-true === false
-//=> false
-2 !== 5
-//=> true
-'two' === 'five'
-//=> false
-```
-
-### Technical frame 9: Prelude: Values and Expressions over Coffee / values and identity / value types
+### Technical frame 3: Prelude: Values and Expressions over Coffee / values and identity / value types
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00126))_
 
 > Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same 'content.' Strings, numbers, and booleans are examples of what JavaScript calls 'value' or 'primitive' types. We'll use both terms interchangeably.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00125))_
+
+<a id="atom-technical-atom-af344335a7478637"></a>
 
 ```
 2 + 2 === 4
@@ -171,7 +100,7 @@ true === false
 //=> true
 ```
 
-### Technical frame 10: Prelude: Values and Expressions over Coffee / values and identity / value types
+### Technical frame 4: Prelude: Values and Expressions over Coffee / values and identity / value types
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00129))_
 
@@ -179,9 +108,11 @@ true === false
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00127))_
 
+<a id="atom-technical-atom-cb35e8520be9c9a9"></a>
+
 > So even if you have two cups of the same type, and their contents are the same, you can still distinguish between them.
 
-### Technical frame 11: Prelude: Values and Expressions over Coffee / values and identity / value types
+### Technical frame 5: Prelude: Values and Expressions over Coffee / values and identity / value types
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00129))_
 
@@ -189,48 +120,17 @@ true === false
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00128))_
 
+<a id="atom-technical-atom-4738eb9ff674c3cd"></a>
+
 > [Figure] (p.22)
 
-### Technical frame 12: Prelude: Values and Expressions over Coffee / values and identity / reference types
+### Technical atom 6
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00134))_
-
-> Notice that you are always generating arrays with the same contents. But are they identical the same way that every value of 42 is identical to every other value of 42 ? Try these for yourself:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00133))_
-
-```
-[2-1, 2, 2+1]
-[1, 1+1, 1+1+1]
-```
-
-### Technical frame 13: Prelude: Values and Expressions over Coffee / values and identity / reference types
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00136))_
-
-> How about that! When you type [1, 2, 3] or any of its variations, you are typing an expression that generates its own unique array that is not identical to any other array, even if that other array also looks like [1, 2, 3] . It's as if JavaScript is generating new cups of coffee with serial numbers on the bottom.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00135))_
-
-```
-[2-1, 2, 2+1] === [1,2,3]
-[1,2,3] === [1, 2, 3]
-[1, 2, 3] === [1, 2, 3]
-```
-
-### Technical atom 14
+<a id="atom-technical-atom-0f636362d664d880"></a>
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00099))_
 
-| entry | content |
-| --- | --- |
-| 8 | https://en.wikipedia.org/wiki/Expression_ |
-| 9 | https://en.wikipedia.org/wiki/Value_ |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 Prelude: Values and Expressions over Coffee
 The following material is extremely basic, however like most stories, the best way to begin is to start at the very beginning.
 Imagine we are visiting our favourite coffee shop. They will make for you just about any drink you desire, from a short, intense espresso ristretto through a dry cappuccino, up to those coffee-flavoured desert concoctions featuring various concentrated syrups and milks. (You tolerate the existence of sugary drinks because they provide a sufficient profit margin to the establishment to finance your hanging out there all day using their WiFi and ordering a $3 drink every few hours.)
@@ -239,9 +139,19 @@ You express your order at one end of their counter, the folks behind the counter
 9 https://en.wikipedia.org/wiki/Value_
 ```
 
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
+| entry | content |
+| --- | --- |
+| 8 | https://en.wikipedia.org/wiki/Expression_ |
+| 9 | https://en.wikipedia.org/wiki/Value_ |
+
 </details>
 
-### Technical atom 15
+### Technical atom 7
+
+<a id="atom-technical-atom-08860569e8259d48"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00110))_
 
@@ -249,17 +159,17 @@ You express your order at one end of their counter, the folks behind the counter
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00112))_
 
+```text
+10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' and so does the computer.
+11 In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values.
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 10 | Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' and so does the computer. |
 | 11 | In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' and so does the computer.
-11 In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values.
-```
 
 </details>

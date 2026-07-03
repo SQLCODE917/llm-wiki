@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 13.1 Types of Monsters / 《 Magical Creatures 》: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-1-types-of-monsters-magical-creatures-4da68207@6cea74237ce72af36403d39a4a40df18
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-1-types-of-monsters-magical-creatures-4da68207@287811dd254a0cf13a7b9c3b507e9162
 ---
 
 # 13.1 Types of Monsters / 《 Magical Creatures 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-1-types
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-1cd4c9c3]] - broader source section: 13.1 Types of Monsters
 

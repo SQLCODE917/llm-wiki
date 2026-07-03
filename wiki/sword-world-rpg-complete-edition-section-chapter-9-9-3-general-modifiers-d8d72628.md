@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 9: / 9.3 General Modifiers: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-9-9-3-general-modifiers-d8d72628@37fc0e09e6431881e06ad5e9df6d3d92
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-9-9-3-general-modifiers-d8d72628@30261eae9bfeafdcb669ab176842ad85
 ---
 
 # Chapter 9: / 9.3 General Modifiers
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-9-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-9-6031114c]] - broader source section: Chapter 9:
 
@@ -37,5 +39,7 @@ From [[sword-world-rpg-complete-edition]].
 > In this case, instead of the game master looking at the Determining Target Scores or Difficulties table for each , it's easier to deal with it by setting one target score, assuming there is complete light, and applying -4 to the human because they can't see, -2 to the elf (shaman) because they can use infravision, and no modifier to the dwarf because they have full darkvision. Also, since the modifiers are reflected in the final score, the advantage is that you can also see who did the best sear
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05626))_
+
+<a id="atom-technical-atom-c159930e73717a46"></a>
 
 > In Sword World RPG , the only guidelines for general success roll modifiers are as follows (Table 9-2: Success Roll Modifiers).

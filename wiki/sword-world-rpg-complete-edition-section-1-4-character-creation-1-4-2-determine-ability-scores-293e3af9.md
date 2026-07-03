@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-2-determine-ability-scores-293e3af9
 page_kind: source
 page_family: section-reference
-summary: 1.4 Character Creation / 1.4.2 Determine Ability Scores: 29 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 1.4 Character Creation / 1.4.2 Determine Ability Scores: 29 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-2-determine-ability-scores-293e3af9@2b4209d7303356c4fa2cab067d1c6bed
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-2-determine-ability-scores-293e3af9@9f01d2a1e73330f41f4e50c2d74a5a73
 ---
 
 # 1.4 Character Creation / 1.4.2 Determine Ability Scores
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-charac
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1e239ef6]] - broader source section: 1.4 Character Creation
 
@@ -45,58 +47,8 @@ From [[sword-world-rpg-complete-edition]].
 
 > A character's six ability scores are each the totals of two of these eight subability scores.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00324))_
-
-> Once you've chosen a race, you can determine your ability scores.
-
-### Technical frame 2: 1.4 Character Creation / 1.4.2 Determine Ability Scores
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00326))_
-
-> A character's six ability scores are each the totals of two of these eight subability scores.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00325))_
 
+<a id="atom-technical-atom-d192d7d516d65eef"></a>
+
 > Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
-
-### Technical frame 3: 1.4 Character Creation / 1.4.2 Determine Ability Scores
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00358))_
-
-> Table 1-3: Determining Sub-Ability Scores
-
-### Technical frame 4: 1.4 Character Creation / 1.4.2 Determine Ability Scores
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00413))_
-
-> On the table, "D" stands for dice . 1D stands for one die , 2D stands for two dice , and 1/2D stands for half the result of one dice (rounded up) . In addition, a notation such as 1D+6 means to roll one dice and add 6 to the result .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00414))_
-
-> Table 1-4: Average Ability Scores by Race
-
-### Technical frame 5: 1.4 Character Creation / 1.4.2 Determine Ability Scores
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00437))_
-
-> Table 1-5: Backgrounds
-
-### Technical frame 6: 1.4 Character Creation / 1.4.2 Determine Ability Scores
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00502))_
-
-> Our rolls are 9, 7, 5, 8, 6, 8, 10, and 4. These can be considered average, with neither extremely high nor low rolls.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00505, source-range-0b9dec90-00507, source-range-0b9dec90-00509, source-range-0b9dec90-00511, source-range-0b9dec90-00513, source-range-0b9dec90-00515))_
-
-> 9+7= 16
-
-> 7+5= 12
-
-> 5+8= 13
-
-> 6+8= 14
-
-> 8+10= 18
-
-> 10+4=

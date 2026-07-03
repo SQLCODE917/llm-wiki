@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-f00edd2f
 page_kind: source
-summary: And also: / Ah. I'd Like to Have an Argument, Please. 22: 64 source-backed entries and 12 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: And also: / Ah. I'd Like to Have an Argument, Please. 22: 64 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-f00edd2f@d4ddd48919a6fa165d2715e09ad7007f
+projection_coverage: section-javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-f00edd2f@6476459164341fcfd68cd344f23bebfb
 ---
 
 # And also: / Ah. I'd Like to Have an Argument, Please. 22
@@ -16,11 +17,13 @@ From [[javascriptallonge]].
 
 ## Related pages
 
+### Source structure
+
 - [[javascriptallonge-section-and-also-3f50274e]] - broader source section: And also:
 - [[javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-a-quick-summary-of-functions-and-bodies-7798619d]] - narrower source section: And also: / Ah. I'd Like to Have an Argument, Please. 22 / a quick summary of functions and bodies
+- [[javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-call-by-sharing-96a55cff]] - narrower source section: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing
 - [[javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-call-by-value-ae929990]] - narrower source section: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by value
 - [[javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-variables-and-bindings-4f74d027]] - narrower source section: And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings
-- [[javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-call-by-sharing-96a55cff]] - narrower source section: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing
 
 ## Statements
 
@@ -50,8 +53,7 @@ From [[javascriptallonge]].
 
 ### And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings
 
-- Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we're going to work our way up from (diameter) => diameter * 3.14159265 to functions like: _(javascriptallonge.pdf (source-range-7239e085-00298))_
-- (x) => (y) => x just looks crazy, as if we are learning English as a second language and the teacher promises us that soon we will be using words like antidisestablishmentarianism . Besides a desire to use long words to sound impressive, this is not going to seem attractive until we find ourselves wanting to discuss the role of the Church of England in 19th century British politics. _(javascriptallonge.pdf (source-range-7239e085-00300))_
+- Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we're going to work our way up from (diameter) => diameter * 3.14159265 to functions like: (x) => (y) => x just looks crazy, as if we are learning English as a second language and the teacher promises us that soon we will be using words like antidisestablishmentarianism . Besides a desire to use long words to sound impressive, this is not going to seem attractive until we find ourselves wanting to discuss the role of the Church of England in 19th century British politics. _(javascriptallonge.pdf (source-range-7239e085-00298, source-range-7239e085-00300))_
 - But there's another reason for learning the word antidisestablishmentarianism : We might learn how prefixes and postfixes work in English grammar. It's the same thing with (x) => (y) => x . It has a certain important meaning in its own right, and it's also an excellent excuse to learn about functions that make functions, environments, variables, and more. _(javascriptallonge.pdf (source-range-7239e085-00301))_
 - In order to talk about how this works, we should agree on a few terms (you may already know them, but let's check-in together and 'synchronize our dictionaries'). The first x , the one in (x) => ... , is an argument . The y in function (y) ... is another argument. The second x , the one in => x , is not an argument, it's an expression referring to a variable . Arguments and variables work the same way whether we're talking about (x) => (y) => x or just plain (x) => x . _(javascriptallonge.pdf (source-range-7239e085-00302))_
 - Every time a function is invoked ('invoked' means 'applied to zero or more arguments'), a new environment is created. An environment is a (possibly empty) dictionary that maps variables to values by name. The x in the expression that we call a 'variable' is itself an expression that is evaluated by looking up the value in the environment. _(javascriptallonge.pdf (source-range-7239e085-00303))_
@@ -75,148 +77,3 @@ From [[javascriptallonge]].
 - We said that JavaScript binds names to values, but we didn't say what it means to bind a name to a value. _(javascriptallonge.pdf (source-range-7239e085-00322))_
 - Because many references can share the same value, and because JavaScript passes references as arguments, JavaScript can be said to implement 'call by sharing' semantics. _(javascriptallonge.pdf (source-range-7239e085-00325))_
 - 26 Unless the argument is NaN , which isn't equal to anything, including itself . _(javascriptallonge.pdf (source-range-7239e085-00328))_
-
-## Technical atoms
-
-### Technical frame 1: And also: / Ah. I'd Like to Have an Argument, Please. 22
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00274))_
-
-> This function has one argument, room , and an empty body. Here's a function with two arguments and an empty body:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00273))_
-
-```
-(room) => {}
-```
-
-### Technical frame 2: And also: / Ah. I'd Like to Have an Argument, Please. 22
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00276))_
-
-> I'm sure you are perfectly comfortable with the idea that this function has two arguments, room , and board . What does one do with the arguments? Use them in the body, of course. What do you think this is?
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00275))_
-
-```
-(room, board) => {}
-```
-
-### Technical frame 3: And also: / Ah. I'd Like to Have an Argument, Please. 22
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00278))_
-
-> It's a function for calculating the circumference of a circle given the diameter. I read that aloud as 'When applied to a value representing the diameter, this function returns the diameter times 3.14159265.'
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00277))_
-
-```
-(diameter) => diameter * 3.14159265
-```
-
-### Technical frame 4: And also: / Ah. I'd Like to Have an Argument, Please. 22
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00281))_
-
-> You won't be surprised to see how to write and apply a function to two arguments:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00280))_
-
-```
-((diameter) => diameter * 3.14159265)(2)
-//=> 6.2831853
-```
-
-### Technical frame 5: And also: / Ah. I'd Like to Have an Argument, Please. 22
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00281))_
-
-> You won't be surprised to see how to write and apply a function to two arguments:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00283))_
-
-```
-((room, board) => room + board)(800, 150)
-//=> 950
-```
-
-### Technical frame 6: And also: / Ah. I'd Like to Have an Argument, Please. 22
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00281))_
-
-> You won't be surprised to see how to write and apply a function to two arguments:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00284))_
-
-> [Figure] (p.40)
-
-### Technical frame 7: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by value
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00295))_
-
-> What happened internally is that the expression 1 + 1 was evaluated first, resulting in 2 . Then our circumference function was applied to 2 . 24
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00294))_
-
-```
-((diameter) => diameter * 3.14159265)(1 + 1)
-//=> 6.2831853
-```
-
-### Technical frame 8: And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00300))_
-
-> (x) => (y) => x just looks crazy, as if we are learning English as a second language and the teacher promises us that soon we will be using words like antidisestablishmentarianism . Besides a desire to use long words to sound impressive, this is not going to seem attractive until we find ourselves wanting to discuss the role of the Church of England in 19th century British politics.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00299))_
-
-```
-(x) => (y) => x
-```
-
-### Technical frame 9: And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00314))_
-
-> The value '2' is bound to the name 'x' in the environment.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00306))_
-
-```
-((x) => x)(2)
-//=> 2
-```
-
-### Technical frame 10: And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00314))_
-
-> The value '2' is bound to the name 'x' in the environment.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00310))_
-
-> - One sub-expression, (x) => x evaluates to a function.
-
-### Technical frame 11: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00324))_
-
-> Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, and when the value needs to be used, JavaScript uses the reference to obtain the original.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00322))_
-
-> So JavaScript can make as many copies of strings, numbers, or booleans as it wishes.
-
-### Technical frame 12: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00328))_
-
-> 26 Unless the argument is NaN , which isn't equal to anything, including itself . NaN in JavaScript behaves a lot like NULL in SQL.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00327))_
-
-```
-(value) =>
-((ref1, ref2) => ref1 === ref2)(value, value)
-```

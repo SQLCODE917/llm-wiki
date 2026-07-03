@@ -9,12 +9,20 @@ from llmwiki.domain.ledger.coverage import clean_statement
 from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.projection_context import ProjectionContext
+from llmwiki.domain.ledger.related_link_policy import (
+    MAX_VISIBLE_PAGE_LINKS,
+    budget_related_links,
+    group_related_links,
+)
 from llmwiki.domain.ledger.topic_relations import RelatedTopicLink
 
 _STRUCTURAL_RELATIONS = frozenset(
     {
         "broader source section",
         "narrower source section",
+        "previous source section",
+        "next source section",
+        "source section",
         "topic hub",
         "same source heading",
     }
@@ -100,7 +108,18 @@ def audit_related_links(
             continue
         explanation = explain_relation(link, support, projection_context)
         accepted.append(replace(link, explanation=explanation))
-    return WalkabilityReport(page_id, tuple(accepted), tuple(rejected), tuple(findings))
+    visible = budget_related_links(tuple(accepted))
+    overflow = tuple(link for link in accepted if link not in set(visible))
+    for link in overflow:
+        findings.append(
+            WalkabilityFinding(
+                page_id,
+                link.page_id,
+                "link-budget-overflow",
+                f"Related link exceeds visible page budget {MAX_VISIBLE_PAGE_LINKS}.",
+            )
+        )
+    return WalkabilityReport(page_id, visible, (*rejected, *overflow), tuple(findings))
 
 
 def related_link_markdown(link: RelatedTopicLink) -> str:
@@ -108,6 +127,18 @@ def related_link_markdown(link: RelatedTopicLink) -> str:
     if link.explanation:
         detail = f"{detail}: {link.explanation}"
     return f"- [[{link.page_id}]] - {detail}{_evidence_note(link)}"
+
+
+def related_links_markdown(links: tuple[RelatedTopicLink, ...]) -> str:
+    lines: list[str] = []
+    for group in group_related_links(links):
+        lines.extend((f"### {group.title}", ""))
+        for link in group.visible_links:
+            lines.append(related_link_markdown(link))
+        if group.overflow_count:
+            lines.append(f"- {group.overflow_count} additional related page(s) hidden by budget.")
+        lines.append("")
+    return "\n".join(lines).strip()
 
 
 def explain_relation(

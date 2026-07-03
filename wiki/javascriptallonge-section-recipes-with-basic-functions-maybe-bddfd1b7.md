@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-recipes-with-basic-functions-maybe-bddfd1b7
 page_kind: source
+page_family: section-reference
 summary: Recipes with Basic Functions / Maybe: 12 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-recipes-with-basic-functions-maybe-bddfd1b7@ec95904b0b29c64f6cfbabbf4c56ebe2
+projection_coverage: section-javascriptallonge-section-recipes-with-basic-functions-maybe-bddfd1b7@9379972b45d00806c1a79f7f33af430d
 ---
 
 # Recipes with Basic Functions / Maybe
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-recipes-with-basic-functi
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-recipes-with-basic-functions-c9137465]] - broader source section: Recipes with Basic Functions
 
@@ -36,6 +39,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00697))_
 
+<a id="atom-technical-atom-0050ec8e3fdf9f53"></a>
+
 ```
 const isSomething = (value) =>
 value !== null && value !== void 0;
@@ -54,6 +59,8 @@ if (isSomething(value)) {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00699))_
 
+<a id="atom-technical-atom-6e43ace583e3f4ed"></a>
+
 ```
 var something =
 isSomething(value)
@@ -68,6 +75,8 @@ isSomething(value)
 > If some code ever tries to call model.setSomething with nothing, the operation will be skipped.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00701))_
+
+<a id="atom-technical-atom-8066787a4a683125"></a>
 
 ```
 const maybe = (fn) =>
@@ -89,6 +98,8 @@ if (arg == null) return;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00703))_
 
+<a id="atom-technical-atom-76ebbf2990753f8d"></a>
+
 ```
 return fn.apply(this, args)
 }
@@ -102,6 +113,8 @@ return fn.apply(this, args)
 > If some code ever tries to call model.setSomething with nothing, the operation will be skipped.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00705))_
+
+<a id="atom-technical-atom-e759bf9ba4f40ec3"></a>
 
 ```
 maybe((a, b, c) => a + b + c)(1, 2, 3)
@@ -118,6 +131,8 @@ maybe((a, b, c) => a + b + c)(1, null, 3)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00707))_
 
+<a id="atom-technical-atom-28d0acc7e289f8d4"></a>
+
 ```
 function Model () {};
 Model.prototype.setSomething = maybe(function (value) {
@@ -127,23 +142,25 @@ this.something = value;
 
 ### Technical atom 7
 
+<a id="atom-technical-atom-1f79a4f59b7f455a"></a>
+
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00700))_
 
 > Naturally, there's a function decorator recipe for that, borrowed from Haskell's maybe monad 50 , Ruby's andand 51 , and CoffeeScript's existential method invocation:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00702))_
 
+```text
+50 https://en.wikipedia.org/wiki/Monad_(functional_programming)#The_Maybe_monad
+51 https://github.com/raganwald/andand
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 50 | https://en.wikipedia.org/wiki/Monad_(functional_programming)#The_Maybe_monad |
 | 51 | https://github.com/raganwald/andand |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-50 https://en.wikipedia.org/wiki/Monad_(functional_programming)#The_Maybe_monad
-51 https://github.com/raganwald/andand
-```
 
 </details>

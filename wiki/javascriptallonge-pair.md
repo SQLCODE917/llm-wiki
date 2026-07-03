@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-pair
 page_kind: concept
+page_family: topic-concept
 summary: Pair: 4 statement(s) and 6 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-pair@727bee92866645d4ca8186f5c12060b6
+projection_coverage: topic-javascriptallonge-pair@6e8161438ad9b11156998d5dfb0d930f
 ---
 
 # Pair
@@ -38,6 +39,8 @@ What [[javascriptallonge]] covers about pair:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01204))_
 
+<a id="atom-technical-atom-24edaf9c79cdd5f6"></a>
+
 ```
 var sum = 0;
 for (var i = 1; i <= 100; i++) {
@@ -54,6 +57,8 @@ sum
 > This is a little gratuitous, but it makes the point: The code that uses the data doesn't reach in and touch it: The code that uses the data provides some code and asks the data to do something with it.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01412))_
+
+<a id="atom-technical-atom-319f2c3bcd6ed6c5"></a>
 
 ```
 const first = K,
@@ -76,6 +81,8 @@ latin(second)
 > Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01804))_
+
+<a id="atom-technical-atom-a84a9a6634bcef5c"></a>
 
 ```
 const EagerCollection = (gatherable) =>
@@ -124,6 +131,8 @@ until(fn) {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01805))_
 
+<a id="atom-technical-atom-42f03cd992a4e79f"></a>
+
 ```
 const original = this;
 return gatherable.from(
@@ -171,6 +180,8 @@ yield element;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01807))_
 
+<a id="atom-technical-atom-6e8c82aa1db29bdf"></a>
+
 ```
 const EMPTY = {
 isEmpty: () => true
@@ -214,6 +225,8 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01808))_
 
+<a id="atom-technical-atom-2b2f858d8e7ab9b6"></a>
+
 ```
 {"car": 2,
 "cdr": {"car": 4,
@@ -231,9 +244,11 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 
 ## Related pages
 
-- [[javascriptallonge-eager-collection]] - shared statements and technical atoms: Eager Collection shares source evidence from We'll keep it simple: / Lazy and Eager Collections / eager collections: Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection me ... [truncated]; Eager Collection shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const EagerCollection = (gatherable) => ({ map(fn) { const original = this; return gatherable.from( (function* () { for (let element of original) { yield fn(element) ... [truncated] (1 shared statement(s), 4 shared atom(s))
+### Shared technical atoms
+
 - [[javascriptallonge-collection]] - shared technical atoms: Collection shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const EagerCollection = (gatherable) => ({ map(fn) { const original = this; return gatherable.from( (function* () { for (let element of original) { yield fn(element) ... [truncated] (4 shared atom(s))
 - [[javascriptallonge-method]] - shared technical atoms: Method shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const EagerCollection = (gatherable) => ({ map(fn) { const original = this; return gatherable.from( (function* () { for (let element of original) { yield fn(element) ... [truncated] (4 shared atom(s))
+- [[javascriptallonge-eager-collection]] - shared technical atoms: Eager Collection shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const EagerCollection = (gatherable) => ({ map(fn) { const original = this; return gatherable.from( (function* () { for (let element of original) { yield fn(element) ... [truncated] (2 shared atom(s))
 - [[javascriptallonge-code]] - shared technical atoms: Code shares technical record from Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking: const first = K, second = K(I), pair = (first) => (second) => { const pojo = {first, second}; return (selector) => selector(pojo.first)(pojo.second); }; const latin ... [truncated] (1 shared atom(s))
 - [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from Composing and Decomposing Data / Reassignment / why const and let were invented: var sum = 0; for (var i = 1; i <= 100; i++) { sum = sum + i } sum #=> 5050 (1 shared atom(s))
 

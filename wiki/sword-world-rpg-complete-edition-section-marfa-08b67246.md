@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 《 Marfa 》: 28 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-marfa-08b67246@a8b2d92246d09f5dbee7c7a74e2ea089
+projection_coverage: section-sword-world-rpg-complete-edition-section-marfa-08b67246@62707075be0571c8528a3f4a567e48fb
 ---
 
 # 《 Marfa 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-marfa-08b6
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-marfa-phalaris-wicked-god-c475b510]] - narrower source section: 《 Marfa 》 / 《 Phalaris (Wicked God) 》
 

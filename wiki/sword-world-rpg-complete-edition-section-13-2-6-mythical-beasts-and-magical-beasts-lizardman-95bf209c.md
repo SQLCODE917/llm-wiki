@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-lizardman-95bf209c
 page_kind: source
 page_family: section-reference
-summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]: 48 source-backed entries and 34 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]: 48 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-lizardman-95bf209c@f03f9891d9e9321eca4bd51d83900d06
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-lizardman-95bf209c@ea496d64e9aee05de4b3d500fc0bc791
 ---
 
 # 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] - broader source section: 13.2.6 Mythical Beasts and Magical Beasts
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-lizardman-bd9dbc95]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Lizardman ]
 - [[sword-world-rpg-complete-edition-section-lizardman-dea9f237]] - same source heading: another source section with the same heading, [ Lizardman ]
 
@@ -43,78 +48,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07544))_
 
+<a id="atom-technical-atom-a41d90f3ca85a039"></a>
+
 > Slaves have low intellect and cannot use magic.
-
-### Technical frame 2: 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07546))_
-
-> The magic used by noble lizardmen is said to be dragon roar magic. Although the Witch of Orphan Laverna assumed that the lizardman family was closely related to dragons and avoided premature classification, it was precisely because of this reason that later sages classified them as a type of mythical or magical beast.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07548, source-range-0b9dec90-07549, source-range-0b9dec90-07550, source-range-0b9dec90-07551, source-range-0b9dec90-07552, source-range-0b9dec90-07553, source-range-0b9dec90-07554, source-range-0b9dec90-07555, source-range-0b9dec90-07556, source-range-0b9dec90-07557, source-range-0b9dec90-07558, source-range-0b9dec90-07559, source-range-0b9dec90-07560, source-range-0b9dec90-07561, source-range-0b9dec90-07562, source-range-0b9dec90-07563, source-range-0b9dec90-07565, source-range-0b9dec90-07566, source-range-0b9dec90-07567, source-range-0b9dec90-07568, source-range-0b9dec90-07569, source-range-0b9dec90-07570, source-range-0b9dec90-07571, source-range-0b9dec90-07572, source-range-0b9dec90-07573, source-range-0b9dec90-07574, source-range-0b9dec90-07575, source-range-0b9dec90-07576, source-range-0b9dec90-07577, source-range-0b9dec90-07578, source-range-0b9dec90-07580, source-range-0b9dec90-07581, source-range-0b9dec90-07582))_
-
-> Monster Level=8
-
-> Rarity=10
-
-> Agility=18
-
-> Movement Speed=10/10 (water)
-
-> Number=Several to dozens
-
-> Frequency=Rare
-
-> Intellect=Low Reaction=Neutral
-
-> Attack Points=Weapon: 10 (3)
-
-> Strike Points=7
-
-> Evasion Points=10 (3) Defense Points=6
-
-> Life Points/Resistance=16/10 (3)
-
-> Mental Points/Resistance=10/9 (2)
-
-> Special Abilities=Water adaptation
-
-> Habitat=Lakes, river coasts
-
-> Languages=Lizardman
-
-> Perception=Five senses (illumination)
-
-> Monster Level=5
-
-> Rarity=15
-
-> Agility=14
-
-> Movement Speed=10/10 (water)
-
-> Number=One to several
-
-> Frequency=Very Rare
-
-> Intellect=Human Reaction=Neutral
-
-> Attack Points=Weapon: 13 (6)
-
-> Strike Points=10
-
-> Evasion Points=14 (7) Defense Points=10
-
-> Life Points/Resistance=20/14 (7)
-
-> Mental Points/Resistance=14/13 (6)
-
-> Special Abilities=5th level dragon roar magic
-
-> (Magic Intensity/Magic Power=14/7)
-
-> Habitat=Swamps
-
-> Languages=Lizardman
-
-> Perception=Five senses (darkvision)

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-2-3-1-automatic-success-and-automatic-failure-82c7f07c
 page_kind: source
 page_family: section-reference
-summary: 2.3.1 Automatic Success and Automatic Failure: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 2.3.1 Automatic Success and Automatic Failure: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-3-1-automatic-success-and-automatic-failure-82c7f07c@78c11a2461c6e0882e4f1fa81dfb39ea
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-3-1-automatic-success-and-automatic-failure-82c7f07c@a8d7835bbac4769a4edbbc45d26140f8
 ---
 
 # 2.3.1 Automatic Success and Automatic Failure
@@ -21,15 +21,3 @@ From [[sword-world-rpg-complete-edition]].
 - On a success roll, if a player rolls a 12 , i.e., both dice roll 6 ( double sixes ), the action is a success , no matter how low the baseline score nor how high the target score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01194))_
 - Basically, automatic success and automatic failure are not definitive success or definitive failure. It simply means that you succeeded or failed, not that you succeeded very well or failed very badly . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01198))_
 - It simply means that you succeeded or failed, not that you succeeded very well or failed very badly . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01198))_
-
-## Technical atoms
-
-### Technical frame 1: 2.3.1 Automatic Success and Automatic Failure
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01198))_
-
-> Basically, automatic success and automatic failure are not definitive success or definitive failure. It simply means that you succeeded or failed, not that you succeeded very well or failed very badly .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01195))_
-
-> Conversely, if that player rolls a 2 , that is, if the two dice both roll a 1 ( double ones ), the action fails , no matter

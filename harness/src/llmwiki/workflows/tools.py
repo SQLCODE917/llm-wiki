@@ -14,7 +14,7 @@ from llmwiki.domain.ingest_route_plan import IngestRoutePlanError, IngestRoutePl
 from llmwiki.domain.naming import singular_plural_collision
 from llmwiki.domain.objects import PlannedPageWrite, SourceSummaryDraft
 from llmwiki.domain.pages import PageMetadata, WikiPage
-from llmwiki.domain.search import render_hits, search_pages
+from llmwiki.domain.retrieval import render_context_pack, retrieve_wiki_context
 from llmwiki.store import WikiStore, WikiStoreError
 from llmwiki.workflows.claim_bullet_rescue import rescue_claim_bullet
 from llmwiki.workflows.planned_write_tools import (
@@ -81,9 +81,9 @@ class WritePageParams(BaseModel):
     page_id: str = Field(
         description="WikiPage page_id as a kebab-case slug. Reuse an existing page_id to update."
     )
-    page_kind: Literal["source", "entity", "concept", "synthesis"] = Field(
+    page_kind: Literal["source", "entity", "concept", "procedure", "recipe", "synthesis"] = Field(
         description="WikiPage page_kind: source (summary of one raw source), entity, "
-        "concept, or synthesis (cross-source analysis)."
+        "concept, procedure, recipe, or synthesis (cross-source analysis)."
     )
     summary: str = Field(description="One-line summary of the page, used in the wiki index.")
     page_body: str | None = Field(
@@ -150,8 +150,12 @@ def read_source_tool(store: WikiStore) -> ToolDef:
 def search_wiki_tool(store: WikiStore) -> ToolDef:
     def _search_wiki(**kwargs: object) -> str:
         params = SearchWikiParams(**kwargs)  # type: ignore[arg-type]
-        hits = search_pages(store.page_texts(), params.query)
-        return render_hits(hits)
+        pack = retrieve_wiki_context(
+            query=params.query,
+            index_text=store.read_index(),
+            page_texts=store.page_texts(),
+        )
+        return render_context_pack(pack)
 
     return ToolDef(
         spec=ToolSpec(

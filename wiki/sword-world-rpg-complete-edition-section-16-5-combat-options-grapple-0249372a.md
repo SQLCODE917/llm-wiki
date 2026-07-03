@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-16-5-combat-options-grapple-0249372a
 page_kind: source
 page_family: section-reference
-summary: 16.5 Combat Options / Grapple: 32 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 16.5 Combat Options / Grapple: 32 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-5-combat-options-grapple-0249372a@e9d8679455af08b5e341e7e4b9683776
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-5-combat-options-grapple-0249372a@a8057758551cab514bb0d0fb228352e1
 ---
 
 # 16.5 Combat Options / Grapple
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-16-5-comba
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-16-5-combat-options-891a5b60]] - broader source section: 16.5 Combat Options
 
@@ -40,65 +42,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 16.5 Combat Options / Grapple
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11500))_
-
-> Once you've entered a grapple, the only weapons you can use are daggers and garrotes (described below). Large weapons must be kept out of hand. When grappling, both sides automatically become prone .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11499))_
-
-> Anyone who attempts to grapple will suffer a -2 penalty to his or her attack power, then must make a hit check for their attack.
-
-### Technical frame 2: 16.5 Combat Options / Grapple
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11501))_
-
-> Actions that characters in a grapple can take are limited to the following.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11500))_
-
-> Once you've entered a grapple, the only weapons you can use are daggers and garrotes (described below).
-
-### Technical frame 3: 16.5 Combat Options / Grapple
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11505))_
 
 > It' s fine for the game master to have certain monsters attempt to grapple. Wolves, tigers, etc. perform such attacks. For adventurers who rely on weapons, this may pose a threat. Of course, a monster that does not have hands cannot strangle .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11504))_
 
+<a id="atom-technical-atom-1d976ad80ad68c25"></a>
+
 > Those being strangled or pinned down cannot attempt to escape from a grapple unless they fi rst escape from those conditions.
 
-### Technical frame 4: 16.5 Combat Options / Grapple
+### Technical atom 2
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11508))_
-
-> If you roll 4~5, you cannot attack. This is because both your enemies and allies are fervently moving around. However, if your enemy is being strangled or pinned down , you can attack them.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11507))_
-
-> When attacking a target who is grappling from outside with a melee weapon, roll 1D.
-
-### Technical frame 5: 16.5 Combat Options / Grapple
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11509))_
-
-> If you roll a 6, you will unfortunately attack your ally by accident. This is an automatic hit. Please make a damage check immediately.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11508))_
-
-> If you roll 4~5, you cannot attack.
-
-### Technical frame 6: 16.5 Combat Options / Grapple
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11509))_
-
-> If you roll a 6, you will unfortunately attack your ally by accident. This is an automatic hit. Please make a damage check immediately.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11510))_
-
-> When attacking a grappler with a projectile or casting (shooting-type) single-target magic, you must decide who your target will be completely at random .
-
-### Technical atom 7
+<a id="atom-technical-atom-90b0fe75cc8489ad"></a>
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11501))_
 
@@ -106,21 +62,7 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11502))_
 
-| Attack | with | a | dagger, | barehanded (claws, talons), | cestus, etc. If | a monster has | fangs, | it | can | also | bite. | Opponents have a -2 penalty to evasion. |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Strangle your opponent barehanded or with a garrote. Opponents have a -2 penalty to evasion. Once strangling, the strangler can automatically deal damage every round. If you're barehanded, strike power | is | 0 | (critical | target | 12), | and | if you're using a garrote, strike power is 10 (critical target 10). Only adventurer level can reduce strangling damage. |  |  |  |  |  |
-| If | you're | being | strangled, | the only thing you can do in the rounds onward is attempt to break free. To resolve breaking | free, | the | one | being | strangled must make a success roll using adventurer level + strength bonus as | the baseline score, while the strangler must make one using fi ghter/thief skill level + strength | bonus . | If |
-| Also, | even | if | your | character | doesn't suffer damage, if or she remains strangled for a number of rounds equal to his or her life force , life force will immediately fall to 0, he or she will fall unconscious , | and | you'll | need | to | make | a death check . |  |
-| However, you cannot attack monsters that don't breathe (undead, etc.), monsters that are much larger than your character (ogres, etc.), or those that wear metal armor , | by | strangling. | Y ou | cannot deal damage | to | these, nor can you suffocate them. |  |  |  |  |  |  |
-| Use your strength and weight to pin down your opponent. To resolve this, the one attempting to pin down must make a success roll using fi ghter/thief skill level + | strength | bonus as | the | baseline | score, while | the | one | resisting | must | make | one using adventurer level + strength bonus . If the pinner's is greater, the pin | is successful. |
-| Once pinning, the pinner will automatically continue in that state and can perform normal attacks (of course, weapons | are | restricted). | However, | the one being pinned can attempt to break free. At this time, please make the same check. |  |  |  |  |  |  |  |  |
-| Even | while | grappling, | you | can | use holy magic so long as you can speak. It's not possible while being strangled , but if you're | merely | being pinned | down , | you can use | holy | magic. | Common |
-| Ancient magic, spirit magic, | and spellsongs cannot be used. |  |  |  |  |  |  |  |  |  |  |  |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 1. Normal Attack
 Attack  with  a  dagger,  barehanded (claws, talons),  cestus, etc. If  a monster has  fangs,  it  can  also  bite.  Opponents have a -2 penalty to evasion.
 2. Strangle/Continue to Strangle/Escape
@@ -137,5 +79,19 @@ Even  while  grappling,  you  can  use holy magic so long as you can speak. It's
 Ancient magic, spirit magic,  and spellsongs cannot be used.
 5. Escape from Grapple
 ```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
+| Attack | with | a | dagger, | barehanded (claws, talons), | cestus, etc. If | a monster has | fangs, | it | can | also | bite. | Opponents have a -2 penalty to evasion. |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Strangle your opponent barehanded or with a garrote. Opponents have a -2 penalty to evasion. Once strangling, the strangler can automatically deal damage every round. If you're barehanded, strike power | is | 0 | (critical | target | 12), | and | if you're using a garrote, strike power is 10 (critical target 10). Only adventurer level can reduce strangling damage. |  |  |  |  |  |
+| If | you're | being | strangled, | the only thing you can do in the rounds onward is attempt to break free. To resolve breaking | free, | the | one | being | strangled must make a success roll using adventurer level + strength bonus as | the baseline score, while the strangler must make one using fi ghter/thief skill level + strength | bonus. | If |
+| Also, | even | if | your | character | doesn't suffer damage, if or she remains strangled for a number of rounds equal to his or her life force, life force will immediately fall to 0, he or she will fall unconscious, | and | you'll | need | to | make | a death check. |  |
+| However, you cannot attack monsters that don't breathe (undead, etc.), monsters that are much larger than your character (ogres, etc.), or those that wear metal armor, | by | strangling. | Y ou | cannot deal damage | to | these, nor can you suffocate them. |  |  |  |  |  |  |
+| Use your strength and weight to pin down your opponent. To resolve this, the one attempting to pin down must make a success roll using fi ghter/thief skill level + | strength | bonus as | the | baseline | score, while | the | one | resisting | must | make | one using adventurer level + strength bonus. If the pinner's is greater, the pin | is successful. |
+| Once pinning, the pinner will automatically continue in that state and can perform normal attacks (of course, weapons | are | restricted). | However, | the one being pinned can attempt to break free. At this time, please make the same check. |  |  |  |  |  |  |  |  |
+| Even | while | grappling, | you | can | use holy magic so long as you can speak. It's not possible while being strangled, but if you're | merely | being pinned | down, | you can use | holy | magic. | Common |
+| Ancient magic, spirit magic, | and spellsongs cannot be used. |  |  |  |  |  |  |  |  |  |  |  |
 
 </details>

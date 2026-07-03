@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-centauri-blood-touch-damage-548de0b6
 page_kind: source
 page_family: section-reference
-summary: [Centauri Blood (Touch/Damage)]: 23 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [Centauri Blood (Touch/Damage)]: 23 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-centauri-blood-touch-damage-548de0b6@0a4d270792441f49c76b96c0498e43cf
+projection_coverage: section-sword-world-rpg-complete-edition-section-centauri-blood-touch-damage-548de0b6@33372c0b4b7656e688f6af7bd0bc76b7
 ---
 
 # [Centauri Blood (Touch/Damage)]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-centauri-b
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-centauri-blood-touch-damage-sandman-s-sand-inhaled-mind-7b1f2e9c]] - narrower source section: [Centauri Blood (Touch/Damage)] / [Sandman's Sand (Inhaled/Mind)]
 
@@ -35,31 +37,3 @@ From [[sword-world-rpg-complete-edition]].
 ### [Centauri Blood (Touch/Damage)] / [Sandman's Sand (Inhaled/Mind)]
 
 - It has this name because its effect is similar to the spirit magic Sleep , but it's also called black lotus because it's made from black lotus seeds. The strong flower-scented gas will put anyone who fails to resist into a state of sleep. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06579))_
-
-## Technical atoms
-
-### Technical frame 1: [Centauri Blood (Touch/Damage)]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06574))_
-
-> A poison said to have been invented by a wise centaur. There is a myth that it's made from the blood of centaurs, but it's actually made from the fruit of certain plants. It' s used in assassinations by soaking it into items that are close to the body, such as underwear, etc. It's naturally a red liquid, but if you soak it in a cloth and then wash it, it becomes colorless. Even if you wash it, only the color will come off, and the poisonous ingredients will remain on the cloth.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06571, source-range-0b9dec90-06572, source-range-0b9dec90-06573))_
-
-> Effect=Deals strike power 30 damage plus 12 bonus damage every hour. Resist reduces effect
-
-> Toxicity Score=14 Rarity=14 Effect Start Time=1 hour later
-
-> Effect Duration=Permanent
-
-### Technical frame 2: [Centauri Blood (Touch/Damage)] / [Sandman's Sand (Inhaled/Mind)]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06579))_
-
-> It has this name because its effect is similar to the spirit magic Sleep , but it's also called black lotus because it's made from black lotus seeds. The strong flower-scented gas will put anyone who fails to resist into a state of sleep.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06577, source-range-0b9dec90-06578))_
-
-> Effect=Put to sleep
-
-> Toxicity Score=10 Rarity=14 Effect Start Time=1 round later Effect Duration=1 hour

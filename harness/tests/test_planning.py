@@ -707,8 +707,10 @@ async def test_fake_pdf_ingest_persists_page_plan_before_writes(paths: WikiPaths
     await session.ingest("book.pdf")
 
     assert store.write_checks == [BOOK_HUB]
-    assert "projection_coverage:" in store.read_page(BOOK_HUB)
-    assert "functions are values" in store.read_page(BOOK_HUB)
+    hub_page = store.read_page(BOOK_HUB)
+    assert "projection_coverage:" in hub_page
+    assert "page_family: source-manifest" in hub_page
+    assert "## Page Families" in hub_page
     ledger_dir = store.page_plan_artifact_dir("book.pdf") / "ledger"
     assert (ledger_dir / "claim-ledger.json").is_file()
     assert (ledger_dir / "projection-coverage.json").is_file()

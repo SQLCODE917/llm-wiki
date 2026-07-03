@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-4-mithril-silver-weapons-and-armor-fbfde28b
 page_kind: source
 page_family: section-reference
-summary: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor: 61 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor: 61 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-4-mithril-silver-weapons-and-armor-fbfde28b@aeb2eb4d6e71d99d9ad05af74f6f9e6d
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-4-mithril-silver-weapons-and-armor-fbfde28b@2fd4855d53ae3ffc53f2ff453de180e1
 ---
 
 # 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excel
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-3d37b0b9]] - broader source section: 4.10 Excellent Weapons and Armor
 - [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-4-mithril-silver-weapons-and-armor-forger-of-colors-9d2768c8]] - narrower source section: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor / Forger of Colors
@@ -62,25 +64,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02389))_
-
-> If a character ever sees them, mithril silver weapons and armor are definitely a legacy from the era of the magical kingdom.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02388))_
-
-> Mithril silver is itself a mineral imbued with magic, and when processed, it gains power.
-
-### Technical frame 2: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02395))_
 
 > Mithril silver, like regular silver, is a metal that exists in the spirit world. Therefore, a shaman can wear mithril silver armor and still use spirit magic.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02394))_
 
+<a id="atom-technical-atom-7e7f48dc0228d3eb"></a>
+
 > Mithril silver weapons can deal damage to monsters that normal weapons cannot harm.
 
-### Technical frame 3: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor
+### Technical frame 2: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02398))_
 
@@ -88,9 +82,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02397))_
 
+<a id="atom-technical-atom-395e54fddde974a3"></a>
+
 > Mithril silver weapons and armor are never , if ever, placed in shops or traded for money.
 
-### Technical frame 4: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor / Forger of Colors
+### Technical frame 3: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor / Forger of Colors
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02405))_
 
@@ -98,54 +94,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02404))_
 
+<a id="atom-technical-atom-ede0293a780dab2c"></a>
+
 > [Figure] (p.53)
-
-### Technical frame 5: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor / Forger of Colors
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02410))_
-
-> I think I saw in this anecdote the rebellious spirit of the dwarves. And, in fact, I also felt that the dwarves might have an exceptional sense of humor. But like Somska, the dwarves will not reveal that smile behind their beards.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02409))_
-
-> Was this crown not to display all the colors of the world?!" It is said that Somska answered without changing the expression beneath his beard at all, "If you mix all colors together, you will only get black."
-
-### Technical atom 6
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02356))_
-
-> It is important to note that such weapons and armor cannot exceed the limits of the weapon or armor itself. For example, if you want a high-quality broadsword, its required strength (size) is naturally limited to 8-16 . Since there is no such broadsword with a natural required strength of 17, that means there is no such thing as a broadsword with required strength 16 and strike power 17 .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02359))_
-
-| entry | content |
-| --- | --- |
-| 1 | required strength lower than usual. |
-| 2 | lower will be 40% more expensive, |
-| 3 | lower will be 60% more expensive, |
-| 4 | lower will be 80% more expensive, and |
-| 5 | lower will be twice the original price. |
-| 5 | Table 4-5: Guideline for Obtaining High-Quality Weapons and Armor less Required Strength |
-| 4 | Royal city level in a large country less Required Strength |
-| 3 | Large city in a large country, royal city level in a small country less Required Strength |
-| 2 | Reasonable city less Required Strength |
-| 1 | Town of about 1000 people less Required Strength |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-These high-quality weapons and armor  can  be  expensive.  Their  price increases  by 20% for  every 1 required strength lower than usual. 2 lower will be 40% more expensive, 3 lower will be 60% more  expensive, 4 lower  will  be 80% more expensive, and 5 lower will be twice the original price.
-Table 4-5: Guideline for Obtaining High-Quality Weapons and Armor
-5 less Required Strength
-Royal city level in a large country
-4 less Required Strength
-Large city in a large country, royal city level in a small country
-3 less Required Strength
-Reasonable city
-2 less Required Strength
-Town of about 1000 people
-1 less Required Strength
-```
-
-</details>

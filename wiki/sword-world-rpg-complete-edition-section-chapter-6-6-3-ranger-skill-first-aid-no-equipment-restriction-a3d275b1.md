@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 6: / 6.3 Ranger Skill / [ ② First-Aid [-] ] (No equipment restriction): 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-first-aid-no-equipment-restriction-a3d275b1@926ed35743c2eae3767c5b65d1d143b2
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-first-aid-no-equipment-restriction-a3d275b1@a10acf2add18e8eeb885b564c9561797
 ---
 
 # Chapter 6: / 6.3 Ranger Skill / [ ② First-Aid [-] ] (No equipment restriction)
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-f81328c3]] - broader source section: Chapter 6: / 6.3 Ranger Skill
 

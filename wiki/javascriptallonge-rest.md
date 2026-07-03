@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-rest
 page_kind: concept
-summary: Rest: 11 statement(s) and 10 atom(s) from raw/javascriptallonge.pdf.
+page_family: topic-concept
+summary: Rest: 9 statement(s) and 9 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-rest@42fd8a6774968286ccdabaecbfea5dd6
+projection_coverage: topic-javascriptallonge-rest@fecef91c87b67f2aba993bccd6fac66d
 ---
 
 # Rest
@@ -14,10 +15,6 @@ projection_coverage: topic-javascriptallonge-rest@42fd8a6774968286ccdabaecbfea5d
 What [[javascriptallonge]] covers about rest:
 
 ## Statements
-
-### And also: / Building Blocks
-
-- When you look at functions within functions in JavaScript, there's a bit of a 'spaghetti code' look to it. The strength of JavaScript is that you can do anything. The weakness is that you will. There are ifs, fors, returns, everything thrown higgledy piggledy together. Although you needn't restrict yourself to a small number of simple patterns, it can be helpful to understand the patterns so that you can structure your code around some basic building blocks. _(javascriptallonge.pdf (source-range-7239e085-00580))_
 
 ### Composing and Decomposing Data / Self-Similarity
 
@@ -41,17 +38,9 @@ What [[javascriptallonge]] covers about rest:
 
 - So back to the problem of structure sharing. One strategy for avoiding problems is to be pessimistic . Whenever we take the rest of a list, make a copy. _(javascriptallonge.pdf (source-range-7239e085-01239))_
 
-### Like this: / operations on ordered collections
-
-- like our other operations, rest preserves the ordered collection semantics of its argument. _(javascriptallonge.pdf (source-range-7239e085-01609))_
-
 ### We'll keep it simple: / generators are coroutines
 
 - The rest of the program continues along its way until it makes another call to iterator.next() . _(javascriptallonge.pdf (source-range-7239e085-01686))_
-
-- The rest of the program continues along its way until it makes another call to iterator.next() . _(javascriptallonge.pdf (source-range-7239e085-01691))_
-
-- The rest of the program continues along its way until it makes another call to iterator.next() . _(javascriptallonge.pdf (source-range-7239e085-01696))_
 
 
 ## Technical atoms
@@ -63,6 +52,8 @@ What [[javascriptallonge]] covers about rest:
 > Armed with our definition of an empty list and with what we've already learned, we can build a great many functions that operate on arrays. We know that we can get the length of an array using its .length . But as an exercise, how would we write a length function using just what we have already?
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00895))_
+
+<a id="atom-technical-atom-ab90397824182d0e"></a>
 
 ```
 const [first, ...rest] = [];
@@ -97,6 +88,8 @@ const isEmpty = ([first, ...rest]) => first === undefined;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00959))_
 
+<a id="atom-technical-atom-f2ca5cb343939e2b"></a>
+
 ```
 const mapWith = function (fn, [first, ...rest]) {
 if (first === undefined) {
@@ -119,6 +112,8 @@ return _temp3;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00973))_
 
+<a id="atom-technical-atom-2634a0aa2029afd4"></a>
+
 ```
 const length = ([first, ...rest]) =>
 first === undefined
@@ -134,6 +129,8 @@ first === undefined
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01046))_
 
+<a id="atom-technical-atom-507de994e6577937"></a>
+
 ```
 cdr(oneToFive)
 //=> [2,[3,[4,[5,null]]]]
@@ -147,6 +144,8 @@ cdr(oneToFive)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01055))_
 
+<a id="atom-technical-atom-a87d9f5009a86d7c"></a>
+
 > And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
 
 ### Technical frame 6: Yes. Consider this variation: / Copy on Write
@@ -156,6 +155,8 @@ cdr(oneToFive)
 > This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunch of bookkeeping to track references? We'll end up reinventing reference counting and garbage collection.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01228))_
+
+<a id="atom-technical-atom-bba78c8b3994a437"></a>
 
 > The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array.
 
@@ -167,6 +168,8 @@ cdr(oneToFive)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01229))_
 
+<a id="atom-technical-atom-107209144ad81087"></a>
+
 > Whereas if you have a linked list, and you take it's 'rest,' your 'child' list shares its nodes with the 'parent' list.
 
 ### Technical frame 8: Yes. Consider this variation: / Copy on Write / copy-on-read
@@ -176,6 +179,8 @@ cdr(oneToFive)
 > This strategy is called 'copy-on-read', because when we attempt the parent to 'read' the value of a child of the list, we make a copy and read the copy of the child. Thereafter, we can write to the parent or the copy of the child freely.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01240))_
+
+<a id="atom-technical-atom-05e2937fc47dd397"></a>
 
 ```
 const rest = ({first, rest}) => copy(rest);
@@ -193,11 +198,13 @@ childList
 
 ### Technical frame 9: Yes. Consider this variation: / Copy on Write / copy-on-write
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01249))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01252))_
 
-> But our new parent and child lists are copies that contain the desired modifications, without interfering with each other:
+> This strategy of waiting to copy until you are writing is called copy-on-write, or 'COW:'
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01246))_
+
+<a id="atom-technical-atom-e60d6ebf60601e8a"></a>
 
 ```
 const rest = ({first, rest}) => rest;
@@ -212,48 +219,19 @@ const newParentList = set(2, "three", parentList);
 const newChildList = set(0, "two", childList);
 ```
 
-### Technical frame 10: Like this: / operations on ordered collections
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01609))_
-
-> like our other operations, rest preserves the ordered collection semantics of its argument.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01608))_
-
-```
-const first = (iterable) =>
-iterable[Symbol.iterator]().next().value;
-const rest = (iterable) =>
-({
-[Symbol.iterator] () {
-const iterator = iterable[Symbol.iterator]();
-iterator.next();
-return iterator;
-}
-});
-```
-
 
 ## Related pages
 
+### Shared technical atoms
+
 - [[javascriptallonge-list]] - shared statements and technical atoms: List shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-read: So back to the problem of structure sharing. One strategy for avoiding problems is to be pessimistic . Whenever we take the rest of a list, make a copy.; List shares technical record from Composing and Decomposing Data / Self-Similarity: const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ...rest] = ["foo"]; first //=> "foo" rest //=> [] const [first, ...rest] = ["foo", "bar ... [truncated] (1 shared statement(s), 7 shared atom(s))
 - [[javascriptallonge-copy-write]] - shared statements and technical atoms: Copy on Write shares source evidence from Yes. Consider this variation: / Copy on Write: When you take the rest of an array with destructuring ( [first, ...rest] ), you are given a copy of the elements of the array.; Copy on Write shares technical record from Yes. Consider this variation: / Copy on Write: The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array. (3 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-element]] - shared technical atoms: Element shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (3 shared atom(s))
 - [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from Composing and Decomposing Data / Tail Calls (and Default Arguments): Next, JavaScript invokes mapWith(fn, rest) , which is semantically equivalent to mapWith((x) => x * x, [2, 3, 4, 5]) . And the same thing happens: JavaScript has to ... [truncated]; Javascript shares technical record from Composing and Decomposing Data / Tail Calls (and Default Arguments): const mapWith = function (fn, [first, ...rest]) { if (first === undefined) { return []; } else { const _temp1 = fn(first), _temp2 = mapWith(fn, rest), _temp3 = [_tem ... [truncated] (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-copy]] - shared technical atoms: Copy shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (2 shared atom(s))
 - [[javascriptallonge-literal]] - shared statements and technical atoms: Literal shares source evidence from Composing and Decomposing Data / Self-Similarity: Thanks to the parallel between array literals + spreads with destructuring + rests, we can also use the same rules to decompose lists:; Literal shares technical record from Composing and Decomposing Data / Self-Similarity: const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ...rest] = ["foo"]; first //=> "foo" rest //=> [] const [first, ...rest] = ["foo", "bar ... [truncated] (1 shared statement(s), 1 shared atom(s))
 - [[javascriptallonge-mapwith]] - shared statements and technical atoms: Mapwith shares source evidence from Composing and Decomposing Data / Tail Calls (and Default Arguments): Next, JavaScript invokes mapWith(fn, rest) , which is semantically equivalent to mapWith((x) => x * x, [2, 3, 4, 5]) . And the same thing happens: JavaScript has to ... [truncated]; Mapwith shares technical record from Composing and Decomposing Data / Tail Calls (and Default Arguments): const mapWith = function (fn, [first, ...rest]) { if (first === undefined) { return []; } else { const _temp1 = fn(first), _temp2 = mapWith(fn, rest), _temp3 = [_tem ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-element]] - shared technical atoms: Element shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (4 shared atom(s))
-- [[javascriptallonge-copy]] - shared technical atoms: Copy shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (2 shared atom(s))
 - [[javascriptallonge-function]] - shared technical atoms: Function shares technical record from Composing and Decomposing Data / Tail Calls (and Default Arguments) / tail-call optimization: const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest); (1 shared atom(s))
-- [[javascriptallonge-length]] - shared technical atoms: Length shares technical record from Composing and Decomposing Data / Tail Calls (and Default Arguments) / tail-call optimization: const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest); (1 shared atom(s))
-- [[javascriptallonge-problem]] - shared technical atoms: Problem shares technical record from Yes. Consider this variation: / Copy on Write / copy-on-read: const rest = ({first, rest}) => copy(rest); const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }\ }}; const childList = rest(parentList); ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-reference]] - shared technical atoms: Reference shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (1 shared atom(s))
-- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from Like this: / operations on ordered collections: const first = (iterable) => iterable[Symbol.iterator]().next().value; const rest = (iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator] ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-rule]] - shared technical atoms: Rule shares technical record from Composing and Decomposing Data / Self-Similarity: const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ...rest] = ["foo"]; first //=> "foo" rest //=> [] const [first, ...rest] = ["foo", "bar ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-structure]] - shared technical atoms: Structure shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (1 shared atom(s))
-- [[javascriptallonge-program]] - shared statements: Program shares source evidence from We'll keep it simple: / generators are coroutines: The rest of the program continues along its way until it makes another call to iterator.next() . (3 shared statement(s))
-- [[javascriptallonge-needn]] - shared statements: Needn shares source evidence from And also: / Building Blocks: When you look at functions within functions in JavaScript, there's a bit of a 'spaghetti code' look to it. The strength of JavaScript is that you can do anything. Th ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-operation]] - shared statements: Operation shares source evidence from Like this: / operations on ordered collections: like our other operations, rest preserves the ordered collection semantics of its argument. (1 shared statement(s))
-- [[javascriptallonge-pattern]] - shared statements: Pattern shares source evidence from And also: / Building Blocks: When you look at functions within functions in JavaScript, there's a bit of a 'spaghetti code' look to it. The strength of JavaScript is that you can do anything. Th ... [truncated] (1 shared statement(s))
 
 ## Source
 

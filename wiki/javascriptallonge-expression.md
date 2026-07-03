@@ -1,19 +1,33 @@
 ---
 page_id: javascriptallonge-expression
 page_kind: concept
-summary: Expression: 20 statement(s) and 41 atom(s) from raw/javascriptallonge.pdf.
+page_family: broad-topic
+summary: Expression: 19 statement(s) and 41 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-expression@d8a6b9b74c7468733bfd4d12127ef0bf
+projection_coverage: topic-javascriptallonge-expression@ffd0c752cfc26346ebffafbbd1b46b52
 ---
 
 # Expression
 
 What [[javascriptallonge]] covers about expression:
 
-## Statements
+
+## Related pages
+
+### Shared technical atoms
+
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings: The expression 'x' (the right side of the function) is evaluated within the environment we just created.; Function shares technical record from Or even: / back on the block: () => { 2 + 2 } () => { 1 + 1; 2 + 2 } (2 shared statement(s), 17 shared atom(s))
+- [[javascriptallonge-bind]] - shared technical atoms: Bind shares technical record from And also: / That Constant Coffee Craving: ((PI) => // ???? )(3.14159265) (8 shared atom(s))
+- [[javascriptallonge-result]] - shared statements and technical atoms: Result shares source evidence from The Golden Crema: Appendices and Afterwords / How to run the examples: Both tools offer an online area where you can type ECMAScript code into a web browser and see the ECMAScript-5 equivalent, and you can run the code as well. To see t ... [truncated]; Result shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared statement(s), 5 shared atom(s))
+- [[javascriptallonge-block]] - shared technical atoms: Block shares technical record from Or even: / back on the block: (() => { 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (5 shared atom(s))
+- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from A Rich Aroma: Basic Numbers / operations on numbers: 2 * 5 + 1 //=> 11 1 + 5 * 2 //=> 11 (5 shared atom(s))
+- [[javascriptallonge-literal]] - shared statements and technical atoms: Literal shares source evidence from Composing and Decomposing Data / Self-Similarity: We saw that the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment.; Literal shares technical record from A Warm Cup: Basic Strings and Quasi-Literals / quasi-literals: `foobar` //=> 'foobar' `fizz` + `buzz` //=> 'fizzbuzz' (1 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from Or even: / back on the block: () => { 2 + 2 } () => { 1 + 1; 2 + 2 } (4 shared atom(s))
+- [[javascriptallonge-object]] - shared statements and technical atoms: Object shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Object shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / literal object syntax: const SecretDecoderRing = { encode (plaintext) { return plaintext .split('') .map( char => char.charCodeAt() ) .map( code => code + 1 ) .map( code => String.fromChar ... [truncated] (1 shared statement(s), 3 shared atom(s))
+## Statements by source section
 
 ### Prelude: Values and Expressions over Coffee / values and identity / reference types
 
@@ -26,8 +40,6 @@ What [[javascriptallonge]] covers about expression:
 ### Or even: / back on the block
 
 - There are many kinds of JavaScript statements, but the first kind is one we've already met. An expression is a JavaScript statement. Although they aren't very practical, these are valid JavaScript functions, and they return undefined when applied: _(javascriptallonge.pdf (source-range-7239e085-00239))_
-
-- But no matter how we arrange them, a block with one or more expressions still evaluates to undefined : _(javascriptallonge.pdf (source-range-7239e085-00243))_
 
 ### And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings
 
@@ -100,6 +112,8 @@ What [[javascriptallonge]] covers about expression:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00133))_
 
+<a id="atom-technical-atom-4a0fe9f0a2a815ee"></a>
+
 ```
 [2-1, 2, 2+1]
 [1, 1+1, 1+1+1]
@@ -113,6 +127,8 @@ What [[javascriptallonge]] covers about expression:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00159))_
 
+<a id="atom-technical-atom-0356e5bde9f4860d"></a>
+
 ```
 2 * 5 + 1
 //=> 11
@@ -122,11 +138,13 @@ What [[javascriptallonge]] covers about expression:
 
 ### Technical frame 3: Or even: / back on the block
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00241))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00246))_
 
-> As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
+> 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00240))_
+
+<a id="atom-technical-atom-f310a0c20a90f3f0"></a>
 
 ```
 () => { 2 + 2 }
@@ -140,6 +158,8 @@ What [[javascriptallonge]] covers about expression:
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00244))_
+
+<a id="atom-technical-atom-80cf36acb939ff9e"></a>
 
 ```
 (() => { 2 + 2 })()
@@ -161,6 +181,8 @@ What [[javascriptallonge]] covers about expression:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00248))_
 
+<a id="atom-technical-atom-a3eff62ec638110d"></a>
+
 > So how do we get a function that evaluates a block to return a value when applied?
 
 ### Technical frame 6: Or even: / back on the block
@@ -170,6 +192,8 @@ What [[javascriptallonge]] covers about expression:
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00249))_
+
+<a id="atom-technical-atom-60713ed93e461b84"></a>
 
 ```
 (() => { return 0 })()
@@ -188,6 +212,8 @@ What [[javascriptallonge]] covers about expression:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00251))_
 
+<a id="atom-technical-atom-2a6a94a2285075d4"></a>
+
 ```
 (() => {
 1 + 1;
@@ -204,6 +230,8 @@ return 2 + 2
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00389))_
 
+<a id="atom-technical-atom-115c32a1871b07e7"></a>
+
 ```
 ((PI) =>
 // ????
@@ -218,6 +246,8 @@ return 2 + 2
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00399))_
 
+<a id="atom-technical-atom-0b04a5eefd97d2db"></a>
+
 ```
 (diameter) =>
 ((PI) =>
@@ -231,6 +261,8 @@ diameter * PI)(3.14159265)
 > Which one is better? Well, the first one seems simplest, but a half-century of experience has taught us that names matter. A 'magic literal' like 3.14159265 is anathema to sustainable software development.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00401))_
+
+<a id="atom-technical-atom-bcfcee9cd8ad8fd7"></a>
 
 ```
 ((diameter) => diameter * 3.14159265)(2)
@@ -253,6 +285,8 @@ diameter * PI)(3.14159265))(2)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00405))_
 
+<a id="atom-technical-atom-ddeb9767d36d61f0"></a>
+
 ```
 (diameter) =>
 // ...
@@ -265,6 +299,8 @@ diameter * PI)(3.14159265))(2)
 > Notice calc(d) ? This underscores what we've said: if we have an expression that evaluates to a function, we apply it with () . A name that's bound to a function is a valid expression evaluating to a function. 30
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00431))_
+
+<a id="atom-technical-atom-21fe35262939d1dc"></a>
 
 ```
 (d) => {
@@ -284,6 +320,8 @@ return "The circumference is " + calc(d)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00432))_
 
+<a id="atom-technical-atom-7cfbdf50ede10fea"></a>
+
 > This underscores what we've said: if we have an expression that evaluates to a function, we apply it with () .
 
 ### Technical frame 14: And also: / That Constant Coffee Craving / nested blocks
@@ -293,6 +331,8 @@ return "The circumference is " + calc(d)
 > We've used a block as the else clause, and since it's a block, we've placed a const statement inside it.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00443))_
+
+<a id="atom-technical-atom-208e7e2794c15225"></a>
 
 ```
 (n) => {
@@ -312,6 +352,8 @@ return odd(x - 1);
 > We've used a block as the else clause, and since it's a block, we've placed a const statement inside it.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00444))_
+
+<a id="atom-technical-atom-a4ff91c073865533"></a>
 
 ```
 }
@@ -339,6 +381,8 @@ return even(n)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00445))_
 
+<a id="atom-technical-atom-4bfc4e7c5cb8ba29"></a>
+
 ```
 //=> true
 ```
@@ -350,6 +394,8 @@ return even(n)
 > We know this from the chapter on closures, but even though PI is not bound when we invoke diameter_fn by evaluating diameter_fn(2) , PI is bound when we evaluated (diameter) => diameter * PI , and thus the expression diameter * PI is able to access values for PI and diameter when we evaluate diameter_fn .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00453))_
+
+<a id="atom-technical-atom-43d2854580922cbe"></a>
 
 ```
 ((diameter_fn) =>
@@ -370,6 +416,8 @@ diameter_fn(2)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00474))_
 
+<a id="atom-technical-atom-bd9435d4a2d0ab5a"></a>
+
 ```
 ((PI) => {
 ((PI) => {})(3);
@@ -384,6 +432,8 @@ return (diameter) => diameter * PI;
 > Clearly, the name even is bound to the function within the function's body . Is it bound to the function outside of the function's body?
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00532))_
+
+<a id="atom-technical-atom-8a664fe5bf8ee9c2"></a>
 
 ```
 (function even (n) {
@@ -410,6 +460,8 @@ else return !even(n - 1)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00534))_
 
+<a id="atom-technical-atom-1e163547ee6c3eac"></a>
+
 ```
 even
 //=> Can't find variable: even
@@ -422,6 +474,8 @@ even
 > Function declarations are not supposed to occur inside of blocks. The big trouble with expressions like this is that they may work just fine in your test environment but work a different way in production. Or it may work one way today and a different way when the JavaScript engine is updated, say with a new optimization.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00550))_
+
+<a id="atom-technical-atom-8efe555506c14cf1"></a>
 
 ```
 (function (camelCase) {
@@ -448,6 +502,8 @@ return "Fizz" + "Buzz";
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00551))_
 
+<a id="atom-technical-atom-8524e5547711bd2a"></a>
+
 > Or it may work one way today and a different way when the JavaScript engine is updated, say with a new optimization.
 
 ### Technical frame 23: And also: / Naming Functions / function declaration caveats 34
@@ -458,6 +514,8 @@ return "Fizz" + "Buzz";
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00553))_
 
+<a id="atom-technical-atom-29b2a5bf49007ce5"></a>
+
 ```
 function trueDat () { return true }
 But this is not:
@@ -466,11 +524,13 @@ But this is not:
 
 ### Technical frame 24: And also: / Magic Names / magic names and fat arrows
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00622))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00625))_
 
-> But if we use a fat arrow, arguments will be defined in the outer environment, the one defined with function . And thus arguments[0] will refer to "outer" , not to "inner" :
+> To give a contrived example, this function takes a number and returns an array representing a row in a hypothetical multiplication table. It uses mapWith , which we discussed in Building Blocks. 44 We'll use arguments just to show the difference between using a fat arrow and the function keyword:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00621))_
+
+<a id="atom-technical-atom-243e812c5a716d94"></a>
 
 ```
 (function () {
@@ -487,6 +547,8 @@ return (function () { return arguments[0]; })('inner');
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00774))_
 
+<a id="atom-technical-atom-146014ea05c20f9f"></a>
+
 ```
 const status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\
 den';
@@ -499,6 +561,8 @@ den';
 > It is very common to associate named function expressions with keys in objects, and there is a 'compact method syntax' for binding named function expressions to keywords:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01084))_
+
+<a id="atom-technical-atom-867c8dd5009dad6f"></a>
 
 ```
 {
@@ -514,6 +578,8 @@ den';
 > It is very common to associate named function expressions with keys in objects, and there is a 'compact method syntax' for binding named function expressions to keywords:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01090))_
+
+<a id="atom-technical-atom-e3a987e329b43b50"></a>
 
 ```
 const SecretDecoderRing = {
@@ -544,6 +610,8 @@ return cyphertext
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01092))_
 
+<a id="atom-technical-atom-0957bb8ccf7dbe58"></a>
+
 ```
 const SecretDecoderRing = {
 encode (plaintext) {
@@ -573,6 +641,8 @@ return cyphertext
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01506))_
 
+<a id="atom-technical-atom-d1c1badbce303be3"></a>
+
 ```
 `foobar`
 //=> 'foobar'
@@ -588,6 +658,8 @@ return cyphertext
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01509))_
 
+<a id="atom-technical-atom-a2109321f385f002"></a>
+
 ```
 `A popular number for nerds is ${40 + 2}`
 //=> 'A popular number for nerds is 42'
@@ -600,6 +672,8 @@ return cyphertext
 > However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They're easier to read and it's easier to avid errors like the following:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01512))_
+
+<a id="atom-technical-atom-53001ff2df5804aa"></a>
 
 ```
 'A popular number for nerds is ' + (40 + 2)
@@ -614,6 +688,8 @@ return cyphertext
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01514))_
 
+<a id="atom-technical-atom-9826aa7ca28708d6"></a>
+
 ```
 'A popular number for nerds is' + (40 + 2)
 //=> 'A popular number for nerds is42'
@@ -626,6 +702,8 @@ return cyphertext
 > The for...of loop works directly with any object that is iterable , meaning it works with any object that has a Symbol.iterator method that returns an object iterator. Here's another linked list, this one is iterable:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01560))_
+
+<a id="atom-technical-atom-47f6d9ee5b266831"></a>
 
 ```
 const Stack3 = () =>
@@ -674,6 +752,8 @@ const stack = Stack3();
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01561))_
 
+<a id="atom-technical-atom-1433f8f324b5f87c"></a>
+
 ```
 stack.push(2000);
 stack.push(10);
@@ -711,6 +791,8 @@ iterableSum(stack)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01785))_
 
+<a id="atom-technical-atom-8470d296d51b52a8"></a>
+
 ```
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 .map((x) => x * x)
@@ -730,6 +812,8 @@ Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01788))_
 
+<a id="atom-technical-atom-97184db350f67860"></a>
+
 > When working with very large collections and many operations, this can be important.
 
 ### Technical frame 37: We'll keep it simple: / Lazy and Eager Collections / lazy collection operations
@@ -740,6 +824,8 @@ Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01789))_
 
+<a id="atom-technical-atom-5e62d943d738ba1c"></a>
+
 > The effect is even more pronounced when we use methods like first , until , or take :
 
 ### Technical frame 38: The Golden Crema: Appendices and Afterwords / How to run the examples
@@ -749,6 +835,8 @@ Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 > Both tools offer an online area where you can type ECMAScript code into a web browser and see the ECMAScript-5 equivalent, and you can run the code as well. To see the result of your expressions, you may have to use the console in your web browser.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01974))_
+
+<a id="atom-technical-atom-28bd31255cf4ec33"></a>
 
 ```
 100https://github.com
@@ -762,6 +850,8 @@ Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 > Both tools offer an online area where you can type ECMAScript code into a web browser and see the ECMAScript-5 equivalent, and you can run the code as well. To see the result of your expressions, you may have to use the console in your web browser.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01975))_
+
+<a id="atom-technical-atom-82f887f007702446"></a>
 
 ```
 const before = (decoration) =>
@@ -787,28 +877,7 @@ return method.apply(this, args);
 
 ### Technical atom 40
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00099))_
-
-| entry | content |
-| --- | --- |
-| 8 | https://en.wikipedia.org/wiki/Expression_ |
-| 9 | https://en.wikipedia.org/wiki/Value_ |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Prelude: Values and Expressions over Coffee
-The following material is extremely basic, however like most stories, the best way to begin is to start at the very beginning.
-Imagine we are visiting our favourite coffee shop. They will make for you just about any drink you desire, from a short, intense espresso ristretto through a dry cappuccino, up to those coffee-flavoured desert concoctions featuring various concentrated syrups and milks. (You tolerate the existence of sugary drinks because they provide a sufficient profit margin to the establishment to finance your hanging out there all day using their WiFi and ordering a $3 drink every few hours.)
-You express your order at one end of their counter, the folks behind the counter perform their magic, and deliver the coffee you value at the other end. This is exactly how the JavaScript environment works for the purpose of this book. We are going to dispense with web servers, browsers and other complexities and deal with this simple model: You give the computer an expression 8 , and it returns a value 9 , just as you express your wishes to a barista and receive a coffee in return.
-8 https://en.wikipedia.org/wiki/Expression_
-9 https://en.wikipedia.org/wiki/Value_
-```
-
-</details>
-
-### Technical atom 41
+<a id="atom-technical-atom-08860569e8259d48"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00110))_
 
@@ -816,65 +885,21 @@ You express your order at one end of their counter, the folks behind the counter
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00112))_
 
+```text
+10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' and so does the computer.
+11 In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values.
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 10 | Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' and so does the computer. |
 | 11 | In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values. |
 
-<details>
-<summary>Raw table text</summary>
-
-```
-10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' and so does the computer.
-11 In some languages, expressions are a kind of value unto themselves and can be manipulated. The grandfather of such languages is Lisp. JavaScript is not such a language, expressions in and of themselves are not values.
-```
-
 </details>
 
-
-## Related pages
-
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings: The expression 'x' (the right side of the function) is evaluated within the environment we just created.; Function shares technical record from Or even: / back on the block: () => { 2 + 2 } () => { 1 + 1; 2 + 2 } (2 shared statement(s), 17 shared atom(s))
-- [[javascriptallonge-block]] - shared statements and technical atoms: Block shares source evidence from Or even: / back on the block: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined :; Block shares technical record from Or even: / back on the block: (() => { 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (1 shared statement(s), 5 shared atom(s))
-- [[javascriptallonge-result]] - shared statements and technical atoms: Result shares source evidence from The Golden Crema: Appendices and Afterwords / How to run the examples: Both tools offer an online area where you can type ECMAScript code into a web browser and see the ECMAScript-5 equivalent, and you can run the code as well. To see t ... [truncated]; Result shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared statement(s), 5 shared atom(s))
-- [[javascriptallonge-evaluate]] - shared statements and technical atoms: Evaluate shares source evidence from Prelude: Values and Expressions over Coffee / values and identity / reference types: They look the same, but if you examine them with === , you see that they are different. Every time you evaluate an expression (including typing something in) to crea ... [truncated]; Evaluate shares technical record from Or even: / back on the block: (() => { 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (3 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-literal]] - shared statements and technical atoms: Literal shares source evidence from Composing and Decomposing Data / Self-Similarity: We saw that the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment.; Literal shares technical record from A Warm Cup: Basic Strings and Quasi-Literals / quasi-literals: `foobar` //=> 'foobar' `fizz` + `buzz` //=> 'fizzbuzz' (1 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-object]] - shared statements and technical atoms: Object shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Object shares technical record from Composing and Decomposing Data / Plain Old JavaScript Objects / literal object syntax: const SecretDecoderRing = { encode (plaintext) { return plaintext .split('') .map( char => char.charCodeAt() ) .map( code => code + 1 ) .map( code => String.fromChar ... [truncated] (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-coffee]] - shared statements and technical atoms: Coffee shares source evidence from A Warm Cup: Basic Strings and Quasi-Literals: Coffee and a Book An expression is any valid unit of code that resolves to a value.-Mozilla Development Network: Expressions and operators 87; Coffee shares technical table: Prelude: Values and Expressions over Coffee The following material is extremely basic, however like most stories, the best way to begin is to start at the very begin ... [truncated] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-function-keyword]] - shared statements and technical atoms: the function keyword shares source evidence from And also: / Naming Functions / the function keyword: In this expression, double is the name in the environment, but repeat is the function's actual name. This is a named function expression . That may seem confusing, b ... [truncated]; the function keyword shares technical record from And also: / Naming Functions / the function keyword: (function even (n) { if (n === 0) { return true } else return !even(n - 1) })(5) //=> false (function even (n) { if (n === 0) { return true } else return !even(n - 1 ... [truncated] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-iterator]] - shared statements and technical atoms: Iterator shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Iterator shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-method]] - shared statements and technical atoms: Method shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Method shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-symbol]] - shared statements and technical atoms: Symbol shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Symbol shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-value]] - shared statements and technical atoms: Value shares source evidence from Prelude: Values and Expressions over Coffee / values and identity / reference types: They look the same, but if you examine them with === , you see that they are different. Every time you evaluate an expression (including typing something in) to crea ... [truncated]; Value shares technical table: Prelude: Values and Expressions over Coffee The following material is extremely basic, however like most stories, the best way to begin is to start at the very begin ... [truncated] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-matter]] - shared statements and technical atoms: Matter shares source evidence from Or even: / back on the block: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined :; Matter shares technical record from Or even: / back on the block: (() => { 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-second]] - shared statements and technical atoms: Second shares source evidence from Picking the Bean: Choice and Truthiness / truthiness and the ternary operator: The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example:; Second shares technical record from Picking the Bean: Choice and Truthiness / truthiness and the ternary operator: const status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\ den'; (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-bind]] - shared technical atoms: Bind shares technical record from And also: / That Constant Coffee Craving: ((PI) => // ???? )(3.14159265) (9 shared atom(s))
-- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from A Rich Aroma: Basic Numbers / operations on numbers: 2 * 5 + 1 //=> 11 1 + 5 * 2 //=> 11 (5 shared atom(s))
-- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from Or even: / back on the block: () => { 2 + 2 } () => { 1 + 1; 2 + 2 } (4 shared atom(s))
-- [[javascriptallonge-environment]] - shared technical atoms: Environment shares technical record from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265) (3 shared atom(s))
-- [[javascriptallonge-evaluating]] - shared technical atoms: Evaluating shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (3 shared atom(s))
-- [[javascriptallonge-program]] - shared technical atoms: Program shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (3 shared atom(s))
-- [[javascriptallonge-quasi]] - shared technical atoms: Quasi shares technical record from A Warm Cup: Basic Strings and Quasi-Literals / quasi-literals: `foobar` //=> 'foobar' `fizz` + `buzz` //=> 'fizzbuzz' (3 shared atom(s))
-- [[javascriptallonge-quasi-literal]] - shared technical atoms: Quasi Literal shares technical record from A Warm Cup: Basic Strings and Quasi-Literals / quasi-literals: `foobar` //=> 'foobar' `fizz` + `buzz` //=> 'fizzbuzz' (3 shared atom(s))
-- [[javascriptallonge-statement]] - shared technical atoms: Statement shares technical record from And also: / That Constant Coffee Craving / nested blocks: (n) => { const even = (x) => { if (x === 0) return true; else { const odd = (y) => !even(y); return odd(x - 1); } (3 shared atom(s))
-- [[javascriptallonge-binding]] - shared technical atoms: Binding shares technical record from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265) (2 shared atom(s))
-- [[javascriptallonge-bound]] - shared technical atoms: Bound shares technical record from And also: / Naming Functions / the function keyword: (function even (n) { if (n === 0) { return true } else return !even(n - 1) })(5) //=> false (function even (n) { if (n === 0) { return true } else return !even(n - 1 ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-follow]] - shared technical atoms: Follow shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (2 shared atom(s))
-- [[javascriptallonge-instead]] - shared technical atoms: Instead shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-language]] - shared technical atoms: Language shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (2 shared atom(s))
-- [[javascriptallonge-programmer]] - shared technical atoms: Programmer shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (2 shared atom(s))
-- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical record from And also: / Magic Names / magic names and fat arrows: (function () { return (function () { return arguments[0]; })('inner'); })('outer') //=> "inner" (1 shared atom(s))
-- [[javascriptallonge-code]] - shared technical atoms: Code shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared atom(s))
-- [[javascriptallonge-declaration]] - shared technical atoms: Declaration shares technical record from And also: / Naming Functions / function declaration caveats 34: function trueDat () { return true } But this is not: (function trueDat () { return true }) (1 shared atom(s))
-- [[javascriptallonge-different]] - shared technical atoms: Different shares technical record from And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: ((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265) (1 shared atom(s))
-- [[javascriptallonge-feature]] - shared technical atoms: Feature shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared atom(s))
-- [[javascriptallonge-needn]] - shared technical atoms: Needn shares technical table: 10 Technically, it's a representation of a value using Base10 notation, but we needn't worry about that in this book. You and I both understand that this means '42,' ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-pattern]] - shared technical atoms: Pattern shares technical record from And also: / That Constant Coffee Craving / inside-out: (diameter) => // ... (1 shared atom(s))
-- [[javascriptallonge-rule]] - shared technical atoms: Rule shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared atom(s))
-- [[javascriptallonge-string]] - shared technical atoms: String shares technical record from A Warm Cup: Basic Strings and Quasi-Literals / quasi-literals: `foobar` //=> 'foobar' `fizz` + `buzz` //=> 'fizzbuzz' (1 shared atom(s))
-- [[javascriptallonge-write]] - shared technical atoms: Write shares technical record from Or even: / back on the block: So how do we get a function that evaluates a block to return a value when applied? (1 shared atom(s))
-- [[javascriptallonge-idea]] - shared statements: Idea shares source evidence from Composing and Decomposing Data / Self-Similarity: We saw that the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment. (1 shared statement(s))
-- [[javascriptallonge-variable]] - shared statements: Variable shares source evidence from And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings: Every time a function is invoked ('invoked' means 'applied to zero or more arguments'), a new environment is created. An environment is a (possibly empty) dictionary ... [truncated] (1 shared statement(s))
 
 ## Source
 

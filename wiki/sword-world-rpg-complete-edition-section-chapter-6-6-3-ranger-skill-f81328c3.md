@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-f81328c3
 page_kind: source
 page_family: section-reference
-summary: Chapter 6: / 6.3 Ranger Skill: 68 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 6: / 6.3 Ranger Skill: 68 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-f81328c3@b120ea41b0f9b8ade40b5d1820d21dfc
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-f81328c3@e5041feb181dee0867613f4cddae62da
 ---
 
 # Chapter 6: / 6.3 Ranger Skill
@@ -17,21 +17,23 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-6-644c319b]] - broader source section: Chapter 6:
-- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-first-aid-no-equipment-restriction-a3d275b1]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ② First-Aid [-] ] (No equipment restriction)
-- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-footprint-tracking-intelligence-no-equipment-restriction-not-retriabl-d096aebd]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ① Footprint Tracking [Intelligence] ] (No equipment restriction, not retriable)
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-camouflage-intelligence-equipment-restriction-c28ced68]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ③ Camouflage [Intelligence] ] (Equipment restriction)
-- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-listen-intelligence-equipment-restriction-d589cb59]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ④ Listen [Intelligence] ] (Equipment restriction)
-- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-stealthy-step-agility-equipment-restriction-07057e90]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction)
-- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-survivalism-life-force-no-equipment-restriction-6fd8e42c]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ⑦ Survivalism [Life Force] ] (No equipment restriction)
-- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-search-intelligence-no-equipment-restriction-not-retriable-91bd2582]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable)
-- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-map-creation-intelligence-no-equipment-restriction-not-retriable-c796fb8e]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ⑨ Map Creation [Intelligence]] (No equipment restriction, not retriable)
-- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-weather-prediction-intelligence-no-equipment-restriction-not-retriabl-8c702ebe]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ⑩ Weather Prediction [Intelligence] ] (No equipment restriction, not retriable)
-- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-plant-and-animal-check-intelligence-no-equipment-restriction-not-retr-62cf2529]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ⑪ Plant and Animal Check [Intelligence] ] (No equipment restriction, not retriable)
-- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-projectile-use-dexterity-strength-no-equipment-restriction-8bc6cf23]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ⑫ Projectile Use [Dexterity, Strength] ] (No equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-first-aid-no-equipment-restriction-a3d275b1]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ② First-Aid [-] ] (No equipment restriction)
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-follow-agility-equipment-restriction-7d822fc8]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ⑬ Follow [Agility] ] (Equipment restriction)
-- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-surprise-attack-intelligence-no-equipment-restriction-33b0b1ba]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-footprint-tracking-intelligence-no-equipment-restriction-not-retriabl-d096aebd]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ① Footprint Tracking [Intelligence] ] (No equipment restriction, not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-listen-intelligence-equipment-restriction-d589cb59]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ④ Listen [Intelligence] ] (Equipment restriction)
+- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-map-creation-intelligence-no-equipment-restriction-not-retriable-c796fb8e]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ⑨ Map Creation [Intelligence]] (No equipment restriction, not retriable)
+- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-plant-and-animal-check-intelligence-no-equipment-restriction-not-retr-62cf2529]] - narrower source section: Chapter 6: / 6.3 Ranger Skill / [ ⑪ Plant and Animal Check [Intelligence] ] (No equipment restriction, not retriable)
+
+### Topics
+
 - [[sword-world-rpg-complete-edition-ranger-skill]] - topic hub: opens the topic page for Ranger Skill
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-ranger-skill-e2cd921c]] - same source heading: another source section with the same heading, 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】
 
 ## Statements
@@ -109,45 +111,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical frame 1: Chapter 6: / 6.3 Ranger Skill / [ ④ Listen [Intelligence] ] (Equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05017))_
-
-> Rangers can listen to even the smallest sounds and can choose the sound they want to hear from a wide range of sounds. This is handed the same way as the thief's ability.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05019))_
-
-> For example, when you walk through a ravine and see a pebble fall, you may feel like a landslide is about to occur, or you may feel an arrow flying from the darkness.
-
-### Technical frame 2: Chapter 6: / 6.3 Ranger Skill / [ ⑦ Survivalism [Life Force] ] (No equipment restriction)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05023))_
-
-> When an adventurer's survival is in danger, the game master should set a target score and have them make a success roll to overcome the situation.
-
-### Technical frame 3: Chapter 6: / 6.3 Ranger Skill / [ ⑦ Survivalism [Life Force] ] (No equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05023))_
-
-> Rangers have acquired the ability to endure difficult situations brought about by disaster, such as surviving with only a small amount of water or avoiding freezing to death in winter mountains, and either survive until help arrives or escape from a predicament on their own. When an adventurer's survival is in danger, the game master should set a target score and have them make a success roll to overcome the situation.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05024))_
-
-> [Figure] (p.116)
-
-### Technical frame 4: Chapter 6: / 6.3 Ranger Skill / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05026))_
-
-> The game master should determine the difficulty depending on what's hidden.
-
-### Technical frame 5: Chapter 6: / 6.3 Ranger Skill / [ ⑨ Map Creation [Intelligence]] (No equipment restriction, not retriable)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05028))_
-
-> You can also determine direction from the position of the sun or stars.
-
-### Technical frame 6: Chapter 6: / 6.3 Ranger Skill / [ ⑩ Weather Prediction [Intelligence] ] (No equipment restriction, not retriable)
+### Technical frame 1: Chapter 6: / 6.3 Ranger Skill / [ ⑩ Weather Prediction [Intelligence] ] (No equipment restriction, not retriable)
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05030))_
 
@@ -155,52 +119,14 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05031))_
 
+<a id="atom-technical-atom-a1b912151373debf"></a>
+
 > If you attempt to use this ability and fail the success roll, you simply cannot predict the weather; it does not predict the opposite.
 
-### Technical frame 7: Chapter 6: / 6.3 Ranger Skill / [ ⑪ Plant and Animal Check [Intelligence] ] (No equipment restriction, not retriable)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05033))_
-
-> Rangers can determine what animals and plants they see.
-
-### Technical frame 8: Chapter 6: / 6.3 Ranger Skill / [ ⑪ Plant and Animal Check [Intelligence] ] (No equipment restriction, not retriable)
+### Technical frame 2: Chapter 6: / 6.3 Ranger Skill / [ ⑪ Plant and Animal Check [Intelligence] ] (No equipment restriction, not retriable)
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05034))_
 
+<a id="atom-technical-atom-0c4c7b6a346e9e62"></a>
+
 > In other cases (such as searching for herbs), the game master should determine a target score for the check.
-
-### Technical frame 9: Chapter 6: / 6.3 Ranger Skill / [ ⑫ Projectile Use [Dexterity, Strength] ] (No equipment restriction)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05036))_
-
-> You can use any projectile as long as your strength allows it.
-
-### Technical frame 10: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05044))_
-
-> This also follows the thief skill. It's the ability to remove traps set outdoors and create traps using natural objects. Indoor mechanical traps cannot be removed or set .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05047))_
-
-> There is no requirement that you have to have the sage skill and the sorcerer skill at the same time, but if you do acquire the sage skill and the sorcerer skill at the same time, you will receive a bonus on experience points consumed.
-
-### Technical frame 11: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05058))_
-
-> Each monster has a score called rarity . Using sage skill level + intelligence bonus as the baseline score, make a success roll with this rarity as the target score, and if you succeed, you know the monster.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05057))_
-
-> When a sage sees a monster or hears its name, this ability may allow them to discover its true identity.
-
-### Technical frame 12: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05058))_
-
-> Each monster has a score called rarity . Using sage skill level + intelligence bonus as the baseline score, make a success roll with this rarity as the target score, and if you succeed, you know the monster.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05059))_
-
-> Even if the player knows, they must treat it as if they had no prior knowledge.

@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Death Check: 4 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-death-check@8b76c8c685a9b7c5ec3b66f2bb56e48c
+projection_coverage: topic-sword-world-rpg-complete-edition-death-check@8aa5be8ca670ccabbcc60e61f663aa31
 ---
 
 # Death Check
@@ -43,10 +43,14 @@ What [[sword-world-rpg-complete-edition]] covers about death check:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02326))_
 
+<a id="atom-technical-atom-ddc7ec8b2e3e82b2"></a>
+
 > Ducard II, with a life force of -4 , must make a death check .
 
 
 ## Related pages
+
+### Shared technical atoms
 
 - [[sword-world-rpg-complete-edition-unconscious]] - shared statements and technical atoms: Unconscious shares source evidence from 4.9 Unconscious and Death Checks / 4.9.2 Death Checks Every Hour: Characters with 0 or negative life force remain unconscious, even if they successfully survived a death check. If they're given treatment by magic, etc. and have the ... [truncated]; Unconscious shares technical record from 4.9 Unconscious and Death Checks / 4.9.1 Adventurer Death Checks: Ducard II, with a life force of -4 , must make a death check . (1 shared statement(s), 1 shared atom(s))
 

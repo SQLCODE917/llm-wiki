@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-16-9-special-weapons-62330b63
 page_kind: source
 page_family: section-reference
-summary: 16.9 Special Weapons: 117 source-backed entries and 22 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 16.9 Special Weapons: 117 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-9-special-weapons-62330b63@917f36ff3b899aaeba653cc3413337ea
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-9-special-weapons-62330b63@130ec0992d66af89fec0c37e18909e1a
 ---
 
 # 16.9 Special Weapons
@@ -17,18 +17,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-16-9-special-weapons-pole-weapons-271d7733]] - narrower source section: 16.9 Special Weapons / Pole Weapons
-- [[sword-world-rpg-complete-edition-section-16-9-special-weapons-main-gauche-sword-breaker-505a2835]] - narrower source section: 16.9 Special Weapons / Main-gauche/Sword Breaker
-- [[sword-world-rpg-complete-edition-section-16-9-special-weapons-whip-net-bola-24010dda]] - narrower source section: 16.9 Special Weapons / Whip, Net, Bola
-- [[sword-world-rpg-complete-edition-section-16-9-special-weapons-shield-attack-065c5ec5]] - narrower source section: 16.9 Special Weapons / Shield Attack
-- [[sword-world-rpg-complete-edition-section-16-9-special-weapons-cranequin-crossbow-3f94641d]] - narrower source section: 16.9 Special Weapons / Cranequin Crossbow
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-16-9-special-weapons-ballista-31d303ec]] - narrower source section: 16.9 Special Weapons / Ballista
-- [[sword-world-rpg-complete-edition-section-16-9-special-weapons-lance-2928667e]] - narrower source section: 16.9 Special Weapons / Lance
 - [[sword-world-rpg-complete-edition-section-16-9-special-weapons-boomerang-68bee79b]] - narrower source section: 16.9 Special Weapons / Boomerang
-- [[sword-world-rpg-complete-edition-section-16-9-special-weapons-shotel-5b6d754c]] - narrower source section: 16.9 Special Weapons / Shotel
 - [[sword-world-rpg-complete-edition-section-16-9-special-weapons-cestus-81a4b352]] - narrower source section: 16.9 Special Weapons / Cestus
-- [[sword-world-rpg-complete-edition-section-16-9-special-weapons-sap-blackjack-a8c5dc7f]] - narrower source section: 16.9 Special Weapons / Sap (Blackjack)
+- [[sword-world-rpg-complete-edition-section-16-9-special-weapons-cranequin-crossbow-3f94641d]] - narrower source section: 16.9 Special Weapons / Cranequin Crossbow
 - [[sword-world-rpg-complete-edition-section-16-9-special-weapons-garrote-a7742e23]] - narrower source section: 16.9 Special Weapons / Garrote
+- [[sword-world-rpg-complete-edition-section-16-9-special-weapons-lance-2928667e]] - narrower source section: 16.9 Special Weapons / Lance
+- [[sword-world-rpg-complete-edition-section-16-9-special-weapons-main-gauche-sword-breaker-505a2835]] - narrower source section: 16.9 Special Weapons / Main-gauche/Sword Breaker
+- [[sword-world-rpg-complete-edition-section-16-9-special-weapons-pole-weapons-271d7733]] - narrower source section: 16.9 Special Weapons / Pole Weapons
 
 ## Statements by subsection
 
@@ -117,217 +115,3 @@ From [[sword-world-rpg-complete-edition]].
 
 - Garrotes may only be used during a grapple . They're completely ineffective against things that don't breathe , are huge , or wear metal armor . For detailed rules, see Grapple (see p. 265). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11642))_
 - Garrotes may only be used during a grapple . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11642))_
-
-## Technical atoms
-
-### Technical frame 1: 16.9 Special Weapons / Pole Weapons
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11585))_
-
-> Below are some typical pole weapons and how to use them.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11584))_
-
-> For those with multiple attack methods, you must declare which attack method you will use each round.
-
-### Technical frame 2: 16.9 Special Weapons / Pole Weapons
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11593))_
-
-> The glaive is a weapon with a knifelike blade attached to the end of a long handle. This weapon can be used in two ways: thrust and cut .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11596))_
-
-> If you don't have a space with this radius, you cannot use attack methods other than thrust .
-
-### Technical frame 3: 16.9 Special Weapons / Main-gauche/Sword Breaker
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11600))_
-
-> Main-gauche and sword breaker have the same attack scores as a dagger . When attacking with both hands, you'll still suffer a -2 ／ -4 penalty. Also, if you use it for an attack, you'll lose the evasion bonus.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11599))_
-
-> When you roll 2D for evasion, if you get double sixes , you can break your opponent's weapon.
-
-### Technical frame 4: 16.9 Special Weapons / Main-gauche/Sword Breaker
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11599))_
-
-> A sword breaker is a type of maingauche with serrated blades lined up along the back. It has a similar bonus to evasion speed, and moreover, if used skillfully, can break or drop an opponent's weapon. When you roll 2D for evasion, if you get double sixes , you can break your opponent's weapon. If you roll an 11 , and you evade your opponent's attack, you can make your opponent drop his or her weapon. Of course, your opponent's weapons are limited to daggers , rapiers , and short swords .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11600))_
-
-> Also, if you use it for an attack, you'll lose the evasion bonus.
-
-### Technical frame 5: 16.9 Special Weapons / Whip, Net, Bola
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11603))_
-
-> If he or she fails, they'll be entangled and fall prone .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11602))_
-
-> These weapons can perform attacks that entangle opponents.
-
-### Technical frame 6: 16.9 Special Weapons / Whip, Net, Bola
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11605))_
-
-> Once entangled, an escape check is required every round. Make a success roll using adventurer level + strength bonus ( attack power -7 for monsters ) as the baseline score, and attacker's final score when entangling (attack power + 2D roll at that time) as the target score. If the entangled target has hands or similar organs, the target score will decrease by 1 each round. While entangled, there is always a -4 penalty evading your opponent's attacks. To escape, you must first release any armamen
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11604))_
-
-> If the opponent is of a larger race than him or her, the attacker must release the whip or net.
-
-### Technical frame 7: 16.9 Special Weapons / Whip, Net, Bola
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11609))_
-
-> Even if this hits, it cannot deal damage. It's used in melee, but you can also use it by throwing it. However, its range is limited to 5 meters.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11607))_
-
-> The attacker may choose , even if it hits , to return the whip to his or her hand instead of letting it entangle the opponent.
-
-### Technical frame 8: 16.9 Special Weapons / Whip, Net, Bola
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11607))_
-
-> If the attack hits and the opponent is not entangled, the whip will return to the attacker's hand. The attacker may choose , even if it hits , to return the whip to his or her hand instead of letting it entangle the opponent. At this time, roll 2D, and it'll only entangle the opponent if you roll double ones .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11609))_
-
-> Even if this hits, it cannot deal damage.
-
-### Technical frame 9: 16.9 Special Weapons / Shield Attack
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11614))_
-
-> The strike power is the same as the shield's required strength (strike power modifier ±0), and the critical target is 12. Since you're probably not holding it in your dominant hand, you'll still suffer a 2/-4 penalty. Even if it's a magic shield, the only bonus damage you get is the usual (fi ghter/thief skill level + strength bonus ).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11613))_
-
-> Adventurers may use shields for attacks.
-
-### Technical frame 10: 16.9 Special Weapons / Shield Attack
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11615))_
-
-> If you're a fighter , you can also perform a shield attack as a ram . In this case, the adventurer cannot use the weapon in their dominant hand, but there will be no penalty for using the opposite hand. You can use the shield's strike power for a damage check while at the same time making a prone check. Please refer to the process for ram (see p. 266).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11614))_
-
-> Even if it's a magic shield, the only bonus damage you get is the usual (fi ghter/thief skill level + strength bonus ).
-
-### Technical frame 11: 16.9 Special Weapons / Shield Attack
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11614))_
-
-> The strike power is the same as the shield's required strength (strike power modifier ±0), and the critical target is 12. Since you're probably not holding it in your dominant hand, you'll still suffer a 2/-4 penalty. Even if it's a magic shield, the only bonus damage you get is the usual (fi ghter/thief skill level + strength bonus ).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11615))_
-
-> If you're a fighter , you can also perform a shield attack as a ram .
-
-### Technical frame 12: 16.9 Special Weapons / Cranequin Crossbow
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11617))_
-
-> A hoist is attached to a crossbow so that the string can be tightened strongly with a small amount of force. However, it takes time to wind up, so there are significant restrictions on continuous firing.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11619))_
-
-> If you've tightened the strings and prepared them in advance, you can fire the first shot immediately , but after that, you'll only be able to fire once every four rounds.
-
-### Technical frame 13: 16.9 Special Weapons / Ballista
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11622))_
-
-> When using a ballista, the strike power can often exceed 50, but even in that case, the damage check should still be made on column 50 of the Rating Table . Even so, the bonus damage will be shooter's skill level + (ballista's required strength ÷ 3) , so a ballista with a greater required strength will be more powerful.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11621))_
-
-> With 2~3 characters, when the total strength of the characters reaches the required strength , it can be wound up in three rounds.
-
-### Technical frame 14: 16.9 Special Weapons / Lance
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11628))_
-
-> If you both have lances, or if your opponent is using a spear or a pike , follow the rules for charging each other.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11625))_
-
-> When performing a lance charge, the movement distance must be within lance length (required strength x 15 cm) x 2 and 90 meters (horse's full movement distance) .
-
-### Technical frame 15: 16.9 Special Weapons / Lance
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11628))_
-
-> If you both have lances, or if your opponent is using a spear or a pike , follow the rules for charging each other.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11626))_
-
-> If lance charge hits, add +10 to strike power (since it's a charge) during the damage check.
-
-### Technical frame 16: 16.9 Special Weapons / Lance
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11628))_
-
-> If you both have lances, or if your opponent is using a spear or a pike , follow the rules for charging each other.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11627))_
-
-> If you're brought into melee while using a lance, you can evade as usual, but you cannot attack.
-
-### Technical frame 17: 16.9 Special Weapons / Boomerang
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11631))_
-
-> When this weapon is thrown at an enemy and misses, it returns to the user's hand at the end of the round. However, it will not return if you roll double ones on your hit check or if the boomerang hits the enemy.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11632))_
-
-> The boomerang cannot be used if there's not enough space for the boomerang to follow an arc.
-
-### Technical frame 18: 16.9 Special Weapons / Boomerang
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11631))_
-
-> When this weapon is thrown at an enemy and misses, it returns to the user's hand at the end of the round. However, it will not return if you roll double ones on your hit check or if the boomerang hits the enemy.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11632))_
-
-> The boomerang cannot be used if there's not enough space for the boomerang to follow an arc. You should also consider carefully before using it when there are allies nearby.
-
-### Technical frame 19: 16.9 Special Weapons / Shotel
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11634))_
-
-> Therefore, you can attack through an enemy's shield.
-
-### Technical frame 20: 16.9 Special Weapons / Cestus
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11636))_
-
-> Although you cannot add the strike power of a cestus to another weapon, nor can you make two attacks, it can be useful when your weapon is knocked away.
-
-### Technical frame 21: 16.9 Special Weapons / Sap (Blackjack)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11640))_
-
-> The attacked opponent gains a +4 bonus to his or her resistance roll if he or she is wearing metal armor.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11639))_
-
-> When struck by such an attack, the target must make a life force resistance roll.
-
-### Technical frame 22: 16.9 Special Weapons / Garrote
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11642))_
-
-> Garrotes may only be used during a grapple . They're completely ineffective against things that don't breathe , are huge , or wear metal armor . For detailed rules, see Grapple (see p. 265).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11643))_
-
-> [Figure] (p.271)

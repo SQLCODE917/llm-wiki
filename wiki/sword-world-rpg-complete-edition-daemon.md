@@ -4,10 +4,10 @@ page_kind: concept
 page_family: broad-topic
 summary: Daemon: 8 statement(s) and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-daemon@cb0987073a5c2f9881a0a9d3222892bd
+projection_coverage: topic-sword-world-rpg-complete-edition-daemon@7f0b35cd3d450c1dd550b00b2a40cc13
 ---
 
 # Daemon
@@ -17,8 +17,13 @@ What [[sword-world-rpg-complete-edition]] covers about daemon:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-daemon-underworld-creature]] - narrower topic: 《 Daemons/Underworld Creatures 》 shares source evidence from 13.1 Types of Monsters / 《 Daemons/Underworld Creatures 》: Daemons are underworld monsters that live in a material world different from ours. In the age of the gods, they were known as terrifying slaughterers who followed th ... [truncated]; 《 Daemons/Underworld Creatures 》 shares technical record from 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel: Monster Level=5 (8 shared statement(s), 7 shared atom(s))
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-underworld-creature]] - shared statements and technical atoms: Underworld Creature shares source evidence from 13.1 Types of Monsters / 《 Daemons/Underworld Creatures 》: Daemons are underworld monsters that live in a material world different from ours. In the age of the gods, they were known as terrifying slaughterers who followed th ... [truncated]; Underworld Creature shares technical record from 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel: Monster Level=5 (8 shared statement(s), 7 shared atom(s))
+
+### Topics
+
+- [[sword-world-rpg-complete-edition-daemon-underworld-creature]] - narrower topic: 《 Daemons/Underworld Creatures 》 shares source evidence from 13.1 Types of Monsters / 《 Daemons/Underworld Creatures 》: Daemons are underworld monsters that live in a material world different from ours. In the age of the gods, they were known as terrifying slaughterers who followed th ... [truncated]; 《 Daemons/Underworld Creatures 》 shares technical record from 13.2.11 Daemons/Underworld Creatures / [ Lesser Daemon ] Grunel: Monster Level=5 (8 shared statement(s), 7 shared atom(s))
 ## Statements by source section
 
 ### 13.1 Types of Monsters / 《 Daemons/Underworld Creatures 》
@@ -44,39 +49,75 @@ What [[sword-world-rpg-complete-edition]] covers about daemon:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09310, source-range-0b9dec90-09311, source-range-0b9dec90-09312, source-range-0b9dec90-09313, source-range-0b9dec90-09314, source-range-0b9dec90-09315, source-range-0b9dec90-09316, source-range-0b9dec90-09317, source-range-0b9dec90-09318, source-range-0b9dec90-09319, source-range-0b9dec90-09320, source-range-0b9dec90-09321, source-range-0b9dec90-09322, source-range-0b9dec90-09323, source-range-0b9dec90-09325, source-range-0b9dec90-09327, source-range-0b9dec90-09328, source-range-0b9dec90-09329))_
 
+<a id="atom-technical-atom-f7a516632fd21b21"></a>
+
 > Monster Level=5
+
+<a id="atom-technical-atom-b1eade2a5400f65e"></a>
 
 > Rarity=13
 
+<a id="atom-technical-atom-9f3f537c0e4dbf9c"></a>
+
 > Agility=14
+
+<a id="atom-technical-atom-d5c9be850e8bb512"></a>
 
 > Movement Speed=15/17 (air)
 
+<a id="atom-technical-atom-f1970b8ae07056fc"></a>
+
 > Number=One to several
+
+<a id="atom-technical-atom-4dea87d1ace4c0a5"></a>
 
 > Frequency=Very rare
 
+<a id="atom-technical-atom-564171dc63ff6ddb"></a>
+
 > Intellect=Human
+
+<a id="atom-technical-atom-f309c52956433e75"></a>
 
 > Reaction=Adversarial, or command-based
 
+<a id="atom-technical-atom-f5ff4cb6c264b7b4"></a>
+
 > Attack Points=Claws: 13 (6)
+
+<a id="atom-technical-atom-4a9705ecdaa55647"></a>
 
 > Strike Points=14
 
+<a id="atom-technical-atom-8b9ee83a89905e00"></a>
+
 > Evasion Points=12 (5) Defense Points=9
+
+<a id="atom-technical-atom-25413b3cf6d12948"></a>
 
 > Life Points/Resistance=25/15 (8)
 
+<a id="atom-technical-atom-dec4012215e60123"></a>
+
 > Mental Points/Resistance=18/14 (7)
+
+<a id="atom-technical-atom-5e9d5ac3583995a3"></a>
 
 > Special Abilities=3rd level dark magic (magic intensity/magic power=12/5)
 
+<a id="atom-technical-atom-e91f9623a7eb4667"></a>
+
 > one person (Resist target score=12, strike power 10, bonus damage 5)
+
+<a id="atom-technical-atom-0ea03dfe666840ae"></a>
 
 > Habitat=Underground labyrinths, secluded ruins
 
+<a id="atom-technical-atom-2373566b5812c1c8"></a>
+
 > Languages=Low ancient
+
+<a id="atom-technical-atom-91aa1a3ec524ff57"></a>
 
 > Perception=Five senses (Darkvision)
 
@@ -88,35 +129,67 @@ What [[sword-world-rpg-complete-edition]] covers about daemon:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09332, source-range-0b9dec90-09333, source-range-0b9dec90-09334, source-range-0b9dec90-09335, source-range-0b9dec90-09336, source-range-0b9dec90-09337, source-range-0b9dec90-09338, source-range-0b9dec90-09339, source-range-0b9dec90-09340, source-range-0b9dec90-09341, source-range-0b9dec90-09342, source-range-0b9dec90-09343, source-range-0b9dec90-09344, source-range-0b9dec90-09345, source-range-0b9dec90-09346, source-range-0b9dec90-09347))_
 
+<a id="atom-technical-atom-65f5aae9ef232985"></a>
+
 > Monster Level=5
+
+<a id="atom-technical-atom-3588431f4436b4b9"></a>
 
 > Rarity=14
 
+<a id="atom-technical-atom-a69e07065918a60a"></a>
+
 > Agility=15 Movement Speed=12
+
+<a id="atom-technical-atom-44b0fa644e0d3554"></a>
 
 > Number=One to several
 
+<a id="atom-technical-atom-c9ff9bffacd01372"></a>
+
 > Frequency=Very rare
+
+<a id="atom-technical-atom-43363ab4ea99db66"></a>
 
 > Intellect=Human
 
+<a id="atom-technical-atom-90b81220174260ba"></a>
+
 > Reaction=Adversarial, or command-based
+
+<a id="atom-technical-atom-78cc9c4aef52c133"></a>
 
 > Attack Points=Claws:13 (6)
 
+<a id="atom-technical-atom-dede56a191a5676b"></a>
+
 > Strike Points=12
+
+<a id="atom-technical-atom-b7f49ade4f72c97b"></a>
 
 > Evasion Points=12 (5) Defense Points=9
 
+<a id="atom-technical-atom-14e6c29aeef5117f"></a>
+
 > Life Points/Resistance=20/14 (7)
+
+<a id="atom-technical-atom-d8a0f6b2d87924b6"></a>
 
 > Mental Points/Resistance=18/14 (7)
 
+<a id="atom-technical-atom-d9b7a147916a7401"></a>
+
 > Special Abilities=Shapeshift
+
+<a id="atom-technical-atom-d3395571fc15a878"></a>
 
 > Habitat=Underground labyrinths, secluded ruins
 
+<a id="atom-technical-atom-b30bc4aa51fcafd5"></a>
+
 > Languages=Low ancient, languages of the person it shapeshifts into
+
+<a id="atom-technical-atom-e695367bceb3ce9c"></a>
 
 > Perception=Five senses (Darkvision)
 
@@ -128,31 +201,59 @@ What [[sword-world-rpg-complete-edition]] covers about daemon:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09363, source-range-0b9dec90-09364, source-range-0b9dec90-09365, source-range-0b9dec90-09366, source-range-0b9dec90-09367, source-range-0b9dec90-09368, source-range-0b9dec90-09369, source-range-0b9dec90-09370, source-range-0b9dec90-09371, source-range-0b9dec90-09372, source-range-0b9dec90-09373, source-range-0b9dec90-09374, source-range-0b9dec90-09375, source-range-0b9dec90-09376))_
 
+<a id="atom-technical-atom-fde2cab1dc3722b7"></a>
+
 > Monster Level=7
+
+<a id="atom-technical-atom-beca42a9c739edcc"></a>
 
 > Rarity=15
 
+<a id="atom-technical-atom-a1e80476e769da56"></a>
+
 > Agility=14 Movement Speed=15/20 (air)
+
+<a id="atom-technical-atom-13ff2b8c7e3f346e"></a>
 
 > Number=One Frequency=Very rare
 
+<a id="atom-technical-atom-1dfb8787fc11471f"></a>
+
 > Intellect=High
+
+<a id="atom-technical-atom-45a9654c4573879f"></a>
 
 > Reaction=Adversarial, or command-based Attack Points=Needle x 2: 14 (7)
 
+<a id="atom-technical-atom-bc24c1765b7c3e99"></a>
+
 > Strike Points=16x2
+
+<a id="atom-technical-atom-58796aa00b25d664"></a>
 
 > Evasion Points=14 (7) Defense Points=9
 
+<a id="atom-technical-atom-f6f2bedd7df70c84"></a>
+
 > Life Points/Resistance=20/16 (9)
+
+<a id="atom-technical-atom-00c80a535bac5177"></a>
 
 > Mental Points/Resistance=25/17 (10)
 
+<a id="atom-technical-atom-dbc75566eb084177"></a>
+
 > Special Abilities=Illusion (Resist target score=17, mental damage=strike power 10, bonus damage 7)
+
+<a id="atom-technical-atom-9a3f83f825c01ea7"></a>
 
 > Habitat=Underground labyrinths, secluded ruins
 
+<a id="atom-technical-atom-de2d8f98aff9f426"></a>
+
 > Languages=Low ancient
+
+<a id="atom-technical-atom-c5213c082b38f852"></a>
 
 > Perception=Five senses (Darkvision)
 

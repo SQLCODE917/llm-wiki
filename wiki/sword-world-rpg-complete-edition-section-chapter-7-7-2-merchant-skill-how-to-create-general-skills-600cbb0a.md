@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-7-7-2-merchant-skill-how-to-create-general-skills-600cbb0a
 page_kind: source
 page_family: section-reference
-summary: Chapter 7: / 7.2 Merchant Skill / How to Create General Skills: 21 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 7: / 7.2 Merchant Skill / How to Create General Skills: 21 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-7-2-merchant-skill-how-to-create-general-skills-600cbb0a@881ee295158e09bfd2ca92c57bdc3753
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-7-2-merchant-skill-how-to-create-general-skills-600cbb0a@c0fcf904879e859d9ede12c9a84189db
 ---
 
 # Chapter 7: / 7.2 Merchant Skill / How to Create General Skills
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-7-7-2-merchant-skill-9063d5cf]] - broader source section: Chapter 7: / 7.2 Merchant Skill
 
@@ -30,25 +32,3 @@ From [[sword-world-rpg-complete-edition]].
 - However, you can only make a check for items that the merchant deals with. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05310))_
 - Therefore, a merchant who sells art can tell you the value of the art, and a merchant who sells weapons and armor can tell you the value of the weapons and armor. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05310))_
 - Then, each side makes a success roll using merchant level + mental strength bonus as the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05315))_
-
-## Technical atoms
-
-### Technical frame 1: Chapter 7: / 7.2 Merchant Skill / How to Create General Skills
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05315))_
-
-> To use this ability, you must know the correct price of the item you are dealing with. Then, each side makes a success roll using merchant level + mental strength bonus as the baseline score. This ability is a common ability for merchants, so it can also be applied to products outside of your specialty.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05312))_
-
-> Of course, if you take the stock at a lower price or sell it at a higher price than the regular price, your profit will increase, so this ability is important.
-
-### Technical frame 2: Chapter 7: / 7.2 Merchant Skill / How to Create General Skills
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05315))_
-
-> To use this ability, you must know the correct price of the item you are dealing with. Then, each side makes a success roll using merchant level + mental strength bonus as the baseline score. This ability is a common ability for merchants, so it can also be applied to products outside of your specialty.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05314))_
-
-> is a market price for ordinary items, so if you get too greedy, you may end up ruining a precious negotiation.

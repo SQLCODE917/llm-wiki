@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-blood-protection-ea3b2001
 page_kind: source
 page_family: section-reference
-summary: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Blood Protection ]: 25 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Blood Protection ]: 25 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-blood-protection-ea3b2001@ce2b2f944427752200efec605bf0aebf
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-blood-protection-ea3b2001@ce0f97863ef73be2ade1898698e3190a
 ---
 
 # Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Blood Protection ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-4a413d46]] - broader source section: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic
 
@@ -28,35 +30,3 @@ From [[sword-world-rpg-complete-edition]].
 - At this point, the target is no longer able to remove the blood by normal means such as wiping or washing. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06257))_
 - For example, a 6th level caster can consume 8 points of mental power and 2 points of life force at the same time to provide 2 points of defense effect. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06259))_
 - If an 8th level caster were to do the same thing, the mental power consumed would only be 18 points, but the life force consumed would still be 6 points. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06259))_
-
-## Technical atoms
-
-### Technical frame 1: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Blood Protection ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06248, source-range-0b9dec90-06249, source-range-0b9dec90-06250, source-range-0b9dec90-06251, source-range-0b9dec90-06252, source-range-0b9dec90-06253, source-range-0b9dec90-06254, source-range-0b9dec90-06256))_
-
-> Base Mental Power Cost=24
-
-> Distance=10 meters
-
-> Area=One
-
-> Duration=Permanent
-
-> Effect=Gives magical protection in exchange for life force
-
-> Type=Target score, curse
-
-> Expansion=Final score, targets, effect (see
-
-> Resist=None
-
-### Technical frame 2: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Blood Protection ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06258))_
-
-> While the spell is in effect, the caster cannot regain the life force they've consumed (think of it as their starting life force being lowered).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06257))_
-
-> When using this spell, the caster must pour their own blood on another person.

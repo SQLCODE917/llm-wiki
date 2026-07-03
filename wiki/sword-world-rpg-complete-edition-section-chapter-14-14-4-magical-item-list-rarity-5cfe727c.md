@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 14: / 14.4 Magical Item List / 《 Rarity 》: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-rarity-5cfe727c@52887fc6b36ffebc687060ef04f8624a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-rarity-5cfe727c@60f9fe78678d86fe33fbae6469a2ede1
 ---
 
 # Chapter 14: / 14.4 Magical Item List / 《 Rarity 》
@@ -17,10 +17,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-e871a62e]] - broader source section: Chapter 14: / 14.4 Magical Item List
-- [[sword-world-rpg-complete-edition-section-rarity-14cc16c1]] - same source heading: another source section with the same heading, 《 Rarity 》
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-rarity-bad75e7e]] - same source heading: another source section with the same heading, 12.2.2 Illnesses / 《 Rarity 》
 - [[sword-world-rpg-complete-edition-section-13-2-1-humans-rarity-a5c8f0b8]] - same source heading: another source section with the same heading, 13.2.1 《 Humans 》 / 《 Rarity 》
+- [[sword-world-rpg-complete-edition-section-rarity-14cc16c1]] - same source heading: another source section with the same heading, 《 Rarity 》
 
 ## Statements
 

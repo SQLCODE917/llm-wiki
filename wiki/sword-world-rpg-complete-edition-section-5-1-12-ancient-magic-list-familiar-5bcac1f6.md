@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-familiar-5bcac1f6
 page_kind: source
 page_family: section-reference
-summary: 5.1.12 Ancient Magic List / [ Familiar ]: 29 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 5.1.12 Ancient Magic List / [ Familiar ]: 29 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-familiar-5bcac1f6@fc7a66e32e0e03bce2bf0c5c9f1c4efd
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-familiar-5bcac1f6@f107dbcb0583b038eb4432bc9c6b2733
 ---
 
 # 5.1.12 Ancient Magic List / [ Familiar ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-anc
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-19f66f88]] - broader source section: 5.1.12 Ancient Magic List
 
@@ -42,7 +44,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03009, source-range-0b9dec90-03010))_
 
+<a id="atom-technical-atom-51195c340cbfa634"></a>
+
 > Base Mental Power Cost=15 Distance=1 kilometer Area=1 specific animal Duration=Permanent Effect=You can turn a small animal into your familiar Type=Target score, Non-removable Expansion=Final score
+
+<a id="atom-technical-atom-1554560c39bcd336"></a>
 
 > Resist=None
 
@@ -54,6 +60,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03013))_
 
+<a id="atom-technical-atom-6c35be94ae1c4aa9"></a>
+
 > The caster can use their familiar's sensory organs to see and hear, and vice versa.
 
 ### Technical frame 3: 5.1.12 Ancient Magic List / [ Familiar ]
@@ -63,6 +71,8 @@ From [[sword-world-rpg-complete-edition]].
 > The summoned familiar and the sorcerer are always in mental contact, so they can communicate in a way similar to telepathy and can also share sensory organs. The caster can use their familiar's sensory organs to see and hear, and vice versa. Also, when you give a command to your familiar, the familiar will try to execute it, but there are natural limits to what it can actually do depending on the familiar's physical abilities. Abilities of each familiar are listed on the table, but you can find 
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03014))_
+
+<a id="atom-technical-atom-0cee39b733110cb6"></a>
 
 > Of course, you cannot make a substitution that would cause mental points to become negative, and a familiar whose mental points reach 0 will lose consciousness.
 
@@ -74,24 +84,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03015))_
 
+<a id="atom-technical-atom-ed275900c7b6fa6c"></a>
+
 > Table 5-2: Familiars
-
-### Technical frame 5: 5.1.12 Ancient Magic List / [ Familiar ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03041))_
-
-> When a familiar is involved in magic, etc. the caster can use their adventurer level as the baseline score for the resistance roll. When a familiar takes damage, the caster can also use their adventurer level to reduce the damage. If a caster and their familiar are separated by more than 1 kilometer, contact between them will be temporarily interrupted. Until they're both within 1 kilometer of each other again, they cannot share senses, nor can the caster borrow mental points from their familiar
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03040))_
-
-> Even if the familiar receives damage that would cause a negative result, the caster will not lose any extra points.
-
-### Technical frame 6: 5.1.12 Ancient Magic List / [ Familiar ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03040))_
-
-> If the familiar loses life points or mental points due to an attack from another, etc., the caster will suffer the same pain that the familiar felt, so they will lose the same amount of points in life force and mental power (this damage cannot be reduced by adventurer level). However, the number of points lost cannot go beyond the familiar's maximum life points or mental points. Even if the familiar receives damage that would cause a negative result, the caster will not lose any extra points.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03041))_
-
-> the caster can use their adventurer level as the baseline score for the resistance roll.

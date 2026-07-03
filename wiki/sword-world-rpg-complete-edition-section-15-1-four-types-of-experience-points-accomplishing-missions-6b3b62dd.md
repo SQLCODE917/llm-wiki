@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-accomplishing-missions-6b3b62dd
 page_kind: source
 page_family: section-reference
-summary: 15.1 Four Types of Experience Points / Accomplishing Missions: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 15.1 Four Types of Experience Points / Accomplishing Missions: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-accomplishing-missions-6b3b62dd@10900485ef0e837f492c6ab0f5629182
+projection_coverage: section-sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-accomplishing-missions-6b3b62dd@35b19d34e250cfc752ac5c6ee0882982
 ---
 
 # 15.1 Four Types of Experience Points / Accomplishing Missions
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-15-1-four-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-ae6a9777]] - broader source section: 15.1 Four Types of Experience Points
 
@@ -27,25 +29,3 @@ From [[sword-world-rpg-complete-edition]].
 - If you were to become one of the thieves' transport partners without realizing they're stolen goods, your mission would not be accomplished. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11145))_
 - If each character achieves the goal (mission) set by the game master, they will each receive 1000 experience points. If they cannot achieve it, they will only get 500 points. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11146))_
 - At this time, the mission will only be accomplished if it's returned to its rightful owner. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11144))_
-
-## Technical atoms
-
-### Technical frame 1: 15.1 Four Types of Experience Points / Accomplishing Missions
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11145))_
-
-> If you were to become one of the thieves' transport partners without realizing they're stolen goods, your mission would not be accomplished.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11146))_
-
-> If they cannot achieve it, they will only get 500 points.
-
-### Technical frame 2: 15.1 Four Types of Experience Points / Accomplishing Missions
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11146))_
-
-> If each character achieves the goal (mission) set by the game master, they will each receive 1000 experience points. If they cannot achieve it, they will only get 500 points.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11147))_
-
-> If the game master deems it to be an incomplete success, but not exactly a failure, he or she may decide to award experience points somewhere in between, such as 700 or 800.

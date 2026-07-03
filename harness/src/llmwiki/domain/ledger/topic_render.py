@@ -8,6 +8,7 @@ entry; internal ids never appear in the body.
 
 from __future__ import annotations
 
+from llmwiki.domain.ledger.atom_addressing import technical_atom_anchor
 from llmwiki.domain.ledger.atom_context import best_atom_context
 from llmwiki.domain.ledger.canonical import deterministic_id, short_digest
 from llmwiki.domain.ledger.coverage import (
@@ -34,7 +35,7 @@ from llmwiki.domain.ledger.renderer import atom_block, atom_context_block
 from llmwiki.domain.ledger.topic_relations import RelatedTopicLink
 from llmwiki.domain.ledger.topic_terms import topic_matcher
 from llmwiki.domain.ledger.topics import SourceTopic
-from llmwiki.domain.ledger.walkability import related_link_markdown
+from llmwiki.domain.ledger.walkability import related_links_markdown
 
 
 def render_topic_page(
@@ -97,18 +98,27 @@ def render_topic_page(
             )
 
     rendered_atom_ids: set[str] = set()
-    atom_frames = (
+    all_atom_frames = (
         projection_context.frames_for_atoms(topic.atom_ids)
         if projection_context is not None
         else ()
     )
+    atom_frames = tuple(
+        frame
+        for frame in all_atom_frames
+        if projection_context is not None
+        and projection_context.evidence_block(frame.context_block_id) is not None
+    )
+    frame_atom_ids = {atom_id for frame in atom_frames for atom_id in frame.atom_ids}
+    matcher = topic_matcher(topic.match_terms)
     rendered_atoms = [
         atom
         for atom in (ledger.atom(a) for a in topic.atom_ids)
-        if atom is not None and atom.technical_atom_id not in rendered_atom_ids
+        if atom is not None
+        and atom.technical_atom_id not in frame_atom_ids
+        and best_atom_context(ledger.atom_contexts(atom.technical_atom_id), matcher) is not None
     ]
     if atom_frames or rendered_atoms:
-        matcher = topic_matcher(topic.match_terms)
         body.add("\n## Technical atoms\n\n")
         for index, frame in enumerate(atom_frames, start=1):
             selected_atoms = tuple(
@@ -130,21 +140,26 @@ def render_topic_page(
         rendered_atoms = [
             atom
             for atom in (ledger.atom(a) for a in topic.atom_ids)
-            if atom is not None and atom.technical_atom_id not in rendered_atom_ids
+            if atom is not None
+            and atom.technical_atom_id not in rendered_atom_ids
+            and best_atom_context(ledger.atom_contexts(atom.technical_atom_id), matcher)
+            is not None
         ]
         for index, atom in enumerate(rendered_atoms, start=len(atom_frames) + 1):
-            body.add(f"### Technical atom {index}\n\n")
             context = best_atom_context(ledger.atom_contexts(atom.technical_atom_id), matcher)
-            if context is not None:
-                span = body.add(atom_context_block(context, atom.source_locator))
-                entries.append(
-                    _coverage(
-                        wiki_page_locator,
-                        "technical-atom-context",
-                        span,
-                        atom_id=atom.technical_atom_id,
-                    )
+            if context is None:
+                continue
+            body.add(f"### Technical atom {index}\n\n")
+            body.add(f"{technical_atom_anchor(atom.technical_atom_id)}\n\n")
+            span = body.add(atom_context_block(context, atom.source_locator))
+            entries.append(
+                _coverage(
+                    wiki_page_locator,
+                    "technical-atom-context",
+                    span,
+                    atom_id=atom.technical_atom_id,
                 )
+            )
             rendered = atom_block(atom.technical_atom_kind, atom.payload)
             citation = f"{atom.source_locator} ({atom.source_range_id})"
             span = body.add(f"**Atom:** _({citation})_\n\n{rendered}\n\n")
@@ -172,17 +187,8 @@ def _render_related_pages(
     related_pages: tuple[RelatedTopicLink, ...],
 ) -> None:
     body.add("\n## Related pages\n\n")
-    for link in related_pages:
-        span = body.add(f"{related_link_markdown(link)}\n")
-        entries.append(
-            _coverage(
-                wiki_page_locator,
-                "related-page-link",
-                span,
-                selected=link.shared_entry_ids,
-                atom_id=link.shared_atom_ids[0] if link.shared_atom_ids else "",
-            )
-        )
+    span = body.add(f"{related_links_markdown(related_pages)}\n")
+    entries.append(_coverage(wiki_page_locator, "related-page-link", span))
 
 
 def _coverage(

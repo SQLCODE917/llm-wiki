@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 《 Divination 》: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-divination-aad63245@b4f0bff68cd9309b110253dda5fa2561
+projection_coverage: section-sword-world-rpg-complete-edition-section-divination-aad63245@fa2e2ac52412b69b81789faa54f2b90e
 ---
 
 # 《 Divination 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-divination
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Other
 
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-2-dark-magic-11-2-1-basic-abilities-of-the-dark-priest-skill-divina-9611e70f]] - same source heading: another source section with the same heading, Chapter 11: Notes on Magic / 11.2 Dark Magic / 11.2.1 Basic Abilities of the Dark Priest Skill / 《 Divination 》
 

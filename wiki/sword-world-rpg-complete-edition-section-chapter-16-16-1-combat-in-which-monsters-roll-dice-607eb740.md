@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-16-16-1-combat-in-which-monsters-roll-dice-607eb740
 page_kind: source
 page_family: section-reference
-summary: Chapter 16: / 16.1 Combat in Which Monsters Roll Dice: 25 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 16: / 16.1 Combat in Which Monsters Roll Dice: 25 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-16-1-combat-in-which-monsters-roll-dice-607eb740@bac1655fed83063231cc7330e0c6fd61
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-16-1-combat-in-which-monsters-roll-dice-607eb740@dddba73a18bfb612bd0492277a398e67
 ---
 
 # Chapter 16: / 16.1 Combat in Which Monsters Roll Dice
@@ -17,9 +17,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-16-5b2e0380]] - broader source section: Chapter 16:
-- [[sword-world-rpg-complete-edition-section-chapter-16-16-1-combat-in-which-monsters-roll-dice-attacks-from-monsters-against-characters-c8b9582e]] - narrower source section: Chapter 16: / 16.1 Combat in Which Monsters Roll Dice / Attacks From Monsters Against Characters
 - [[sword-world-rpg-complete-edition-section-chapter-16-16-1-combat-in-which-monsters-roll-dice-attacks-from-characters-against-monsters-2de2975f]] - narrower source section: Chapter 16: / 16.1 Combat in Which Monsters Roll Dice / Attacks From Characters Against Monsters
+- [[sword-world-rpg-complete-edition-section-chapter-16-16-1-combat-in-which-monsters-roll-dice-attacks-from-monsters-against-characters-c8b9582e]] - narrower source section: Chapter 16: / 16.1 Combat in Which Monsters Roll Dice / Attacks From Monsters Against Characters
 
 ## Statements
 
@@ -56,6 +58,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11167))_
 
+<a id="atom-technical-atom-85e237fdc639322d"></a>
+
 > When both sides roll the dice, the range of numbers will expand and the enjoyment can increase.
 
 ### Technical frame 2: Chapter 16: / 16.1 Combat in Which Monsters Roll Dice / Attacks From Monsters Against Characters
@@ -65,6 +69,8 @@ From [[sword-world-rpg-complete-edition]].
 > As you can see from the way the dice are rolled, this is the process for a success roll with monster's attack points -7 as the difficulty . Therefore, a tie would result in character's evasion success = monster's attack failure . Also, if the game master rolls double ones or double sixes, that does not automatically result in failure/success (but for a character , it still does ).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11172))_
+
+<a id="atom-technical-atom-92e111ebf00f3fa0"></a>
 
 > The game master should roll 2D and add it to the number in parenthesis.
 
@@ -76,14 +82,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11176))_
 
+<a id="atom-technical-atom-992596a361de452f"></a>
+
 > The game master should roll 2D and add it to the number in parenthesis.
-
-### Technical frame 4: Chapter 16: / 16.1 Combat in Which Monsters Roll Dice / Attacks From Characters Against Monsters
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11178))_
-
-> Once the attack hits, it's the same. A monster's defense points are fixed, and the difference is based on the character's strike roll.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11179))_
-
-> [Figure] (p.261)

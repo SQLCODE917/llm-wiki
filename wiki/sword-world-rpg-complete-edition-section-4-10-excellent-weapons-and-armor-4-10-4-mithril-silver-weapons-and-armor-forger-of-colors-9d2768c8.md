@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-4-mithril-silver-weapons-and-armor-forger-of-colors-9d2768c8
 page_kind: source
 page_family: section-reference
-summary: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor / Forger of Colors: 39 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor / Forger of Colors: 39 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-4-mithril-silver-weapons-and-armor-forger-of-colors-9d2768c8@f833778868ac6f7db049bc216fd5b5d3
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-4-mithril-silver-weapons-and-armor-forger-of-colors-9d2768c8@09bd3e70dd47b8a155e755ee657efd09
 ---
 
 # 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor / Forger of Colors
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excel
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-4-mithril-silver-weapons-and-armor-fbfde28b]] - broader source section: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor
 - [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-4-mithril-silver-weapons-and-armor-forger-of-colors-damage-fa8ab320]] - narrower source section: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor / Forger of Colors / Damage Recovery
@@ -42,25 +44,3 @@ From [[sword-world-rpg-complete-edition]].
 ### 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor / Forger of Colors / Damage Recovery
 
 - Damage dealt to a character's life force can be recovered in a variety of ways. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02414))_
-
-## Technical atoms
-
-### Technical frame 1: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor / Forger of Colors
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02405))_
-
-> It's been said that no one could surpass the dwarves when it comes to the processing of mithril silver. Among the dwarves, the one who is said to have been the most skilled in the processing of mithril silver in the ancient kingdom, was Somska, an enchanter called the "Forger of Colors". The quality and quantity of Somska's mithril work was said to be outstanding, and countless legends have been passed down. The following anecdote is one of them.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02404))_
-
-> [Figure] (p.53)
-
-### Technical frame 2: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor / Forger of Colors
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02410))_
-
-> I think I saw in this anecdote the rebellious spirit of the dwarves. And, in fact, I also felt that the dwarves might have an exceptional sense of humor. But like Somska, the dwarves will not reveal that smile behind their beards.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02409))_
-
-> Was this crown not to display all the colors of the world?!" It is said that Somska answered without changing the expression beneath his beard at all, "If you mix all colors together, you will only get black."

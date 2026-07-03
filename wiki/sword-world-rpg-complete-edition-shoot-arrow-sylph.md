@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Shoot Arrow Sylph: 1 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-shoot-arrow-sylph@acb95389f90369fa9f30f4adbe2f3af4
+projection_coverage: topic-sword-world-rpg-complete-edition-shoot-arrow-sylph@0cdc64755fbfef9680cec4cf18923a46
 ---
 
 # Shoot Arrow Sylph
@@ -30,6 +30,8 @@ What [[sword-world-rpg-complete-edition]] covers about shoot arrow sylph:
 > This magic is a counter spell to the spirit magic Missile Protection , so when the target of the arrow is under the influence of Missile Protection , the wind spirit powers of the same nature will interfere with each other, nullifying both.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04013))_
+
+<a id="atom-technical-atom-05a489a35d62f7bd"></a>
 
 > Note that this spell cannot deal damage to monsters that can only be wounded by silver or magical weapons, such as werewolves, etc.
 

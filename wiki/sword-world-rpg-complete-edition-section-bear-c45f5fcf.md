@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: [ Bear ]: 20 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-bear-c45f5fcf@96260d0cc2223cdd4022dab17ea2918d
+projection_coverage: section-sword-world-rpg-complete-edition-section-bear-c45f5fcf@cef6cb0eb3d1582104d43a663ce0e57a
 ---
 
 # [ Bear ]
@@ -35,5 +35,7 @@ From [[sword-world-rpg-complete-edition]].
 > A bear's special attack is a bear hug . This is a technique in which it holds its opponent in its thick arms, squeezing them. Treat this as strangling (see p. 236). Bears use this attack depending on the situation. When surrounded by multiple opponents, it'll choose to swing its arms around and try to mow down anything it happens to hit, but if there are fewer opponents, it'll approach for a bear hug. If a bear hug attack hits, the adventurer will be held by the bear.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08050))_
+
+<a id="atom-technical-atom-9a87860543a689a3"></a>
 
 > In this state, the bear cannot attack other opponents.

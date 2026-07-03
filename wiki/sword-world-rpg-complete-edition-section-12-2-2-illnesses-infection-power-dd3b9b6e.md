@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 12.2.2 Illnesses / 《 Infection Power 》: 9 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-2-illnesses-infection-power-dd3b9b6e@c123f2f9d7f651e3ce6fe0d2b94a0a98
+projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-2-illnesses-infection-power-dd3b9b6e@d8208990ab1f889cc14c1c6272e4f6ee
 ---
 
 # 12.2.2 Illnesses / 《 Infection Power 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-2-ill
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-b9c7f5f9]] - broader source section: 12.2.2 Illnesses
 

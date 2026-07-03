@@ -1,27 +1,34 @@
 ---
 page_id: javascriptallonge-version
 page_kind: concept
-summary: Version: 5 statement(s) and 4 atom(s) from raw/javascriptallonge.pdf.
+page_family: broad-topic
+summary: Version: 4 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-version@42dd6b233fffd15c313ddf9d45beafb3
+projection_coverage: topic-javascriptallonge-version@90a3e0e56f16e44342dcc015fedeb51b
 ---
 
 # Version
 
 What [[javascriptallonge]] covers about version:
 
-## Statements
+
+## Related pages
+
+### Shared technical atoms
+
+- [[javascriptallonge-length]] - shared statements and technical atoms: Length shares source evidence from Composing and Decomposing Data / Tail Calls (and Default Arguments) / converting non-tail-calls to tail-calls: This version of length calls uses lengthDelaysWork , and JavaScript optimizes that not to take up memory proportional to the length of the string. We can use this te ... [truncated]; Length shares technical record from Composing and Decomposing Data / Tail Calls (and Default Arguments) / converting non-tail-calls to tail-calls: const mapWithDelaysWork = (fn, [first, ...rest], prepend) => first === undefined ? prepend : mapWithDelaysWork(fn, rest, [...prepend, fn(first)]); const mapWith = ca ... [truncated] (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from Composing and Decomposing Data / Tail Calls (and Default Arguments) / converting non-tail-calls to tail-calls: const mapWithDelaysWork = (fn, [first, ...rest], prepend) => first === undefined ? prepend : mapWithDelaysWork(fn, rest, [...prepend, fn(first)]); const mapWith = ca ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-mapwith]] - shared technical atoms: Mapwith shares technical record from Composing and Decomposing Data / Tail Calls (and Default Arguments) / converting non-tail-calls to tail-calls: const mapWithDelaysWork = (fn, [first, ...rest], prepend) => first === undefined ? prepend : mapWithDelaysWork(fn, rest, [...prepend, fn(first)]); const mapWith = ca ... [truncated] (2 shared atom(s))
+- [[javascriptallonge-functional]] - shared technical atoms: Functional shares technical record from Like this: / Generating Iterables / recursive iterators: const isIterable = (something) => !!something[Symbol.iterator]; const treeIterator = (iterable) => { const iterators = [ iterable[Symbol.iterator]() ]; return () => ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-iterator]] - shared technical atoms: Iterator shares technical record from Like this: / Generating Iterables / recursive iterators: const isIterable = (something) => !!something[Symbol.iterator]; const treeIterator = (iterable) => { const iterators = [ iterable[Symbol.iterator]() ]; return () => ... [truncated] (1 shared atom(s))
+## Statements by source section
 
 ### A Pull of the Lever: Prefaces / Foreword to the 'Six' edition
 
 - ECMAScript 6 (short name: ES6; official name: ECMAScript 2015) was ratified as a standard on June 17. Getting there took a while - in a way, the origins of ES6 date back to the year 2000: After ECMAScript 3 was finished, TC39 (the committee evolving JavaScript) started to work on ECMAScript 4. That version was planned to have numerous new features (interfaces, namespaces, packages, multimethods, etc.), which would have turned JavaScript into a completely new language. After internal conflict, a settlement was reached in July 2008 and a new plan was made - to abandon ECMAScript 4 and to replace it with two upgrades: _(javascriptallonge.pdf (source-range-7239e085-00069))_
-
-### Composing and Decomposing Data / Self-Similarity / folding
-
-- And to return to our first example, our version of length can be written as a fold: _(javascriptallonge.pdf (source-range-7239e085-00949))_
 
 ### Composing and Decomposing Data / Tail Calls (and Default Arguments) / converting non-tail-calls to tail-calls
 
@@ -38,27 +45,15 @@ What [[javascriptallonge]] covers about version:
 
 ## Technical atoms
 
-### Technical frame 1: Composing and Decomposing Data / Self-Similarity / folding
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00949))_
-
-> And to return to our first example, our version of length can be written as a fold:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00950))_
-
-```
-const length = (array) => foldWith((first, rest) => 1 + rest, 0, array);
-length([1, 2, 3, 4, 5])
-//=> 5
-```
-
-### Technical frame 2: Composing and Decomposing Data / Tail Calls (and Default Arguments) / converting non-tail-calls to tail-calls
+### Technical frame 1: Composing and Decomposing Data / Tail Calls (and Default Arguments) / converting non-tail-calls to tail-calls
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00986))_
 
 > Brilliant! We can map over large arrays without incurring all the memory and performance overhead of non-tail-calls. And this basic transformation from a recursive function that does not make a tail call, into a recursive function that calls itself in tail position, is a bread-and-butter pattern for programmers using a language that incorporates tail-call optimization.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00984))_
+
+<a id="atom-technical-atom-6dcf576313bfb287"></a>
 
 ```
 const mapWithDelaysWork = (fn, [first, ...rest], prepend) =>
@@ -71,13 +66,15 @@ mapWith((x) => x * x, [1, 2, 3, 4, 5])
 We can use it with ridiculously large arrays:
 ```
 
-### Technical frame 3: Composing and Decomposing Data / Tail Calls (and Default Arguments) / converting non-tail-calls to tail-calls
+### Technical frame 2: Composing and Decomposing Data / Tail Calls (and Default Arguments) / converting non-tail-calls to tail-calls
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00986))_
 
 > Brilliant! We can map over large arrays without incurring all the memory and performance overhead of non-tail-calls. And this basic transformation from a recursive function that does not make a tail call, into a recursive function that calls itself in tail position, is a bread-and-butter pattern for programmers using a language that incorporates tail-call optimization.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00985))_
+
+<a id="atom-technical-atom-9b78a5d7d303ca68"></a>
 
 ```
 mapWith((x) => x * x, [
@@ -187,13 +184,15 @@ mapWith((x) => x * x, [
 //=> [0,1,4,9,16,25,36,49,64,81,100,121,144,169,196, ...
 ```
 
-### Technical frame 4: Like this: / Generating Iterables / recursive iterators
+### Technical frame 3: Like this: / Generating Iterables / recursive iterators
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01643))_
 
 > If you peel off isIterable and ignore the way that the iteration version uses [Symbol.iterator] and .next , we're left with the fact that the generating version calls itself recursively, and the iteration version maintains an explicit stack. In essence, both the generation and iteration implementations have stacks, but the generation version's stack is implicit , while the iteration version's stack is explicit .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01642))_
+
+<a id="atom-technical-atom-83d9e3adc3013b32"></a>
 
 ```
 const isIterable = (something) =>
@@ -229,16 +228,6 @@ console.log(n)
 5
 ```
 
-
-## Related pages
-
-- [[javascriptallonge-length]] - shared statements and technical atoms: Length shares source evidence from Composing and Decomposing Data / Self-Similarity / folding: And to return to our first example, our version of length can be written as a fold:; Length shares technical record from Composing and Decomposing Data / Self-Similarity / folding: const length = (array) => foldWith((first, rest) => 1 + rest, 0, array); length([1, 2, 3, 4, 5]) //=> 5 (2 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-return]] - shared statements and technical atoms: Return shares source evidence from Composing and Decomposing Data / Self-Similarity / folding: And to return to our first example, our version of length can be written as a fold:; Return shares technical record from Composing and Decomposing Data / Self-Similarity / folding: const length = (array) => foldWith((first, rest) => 1 + rest, 0, array); length([1, 2, 3, 4, 5]) //=> 5 (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from Composing and Decomposing Data / Tail Calls (and Default Arguments) / converting non-tail-calls to tail-calls: const mapWithDelaysWork = (fn, [first, ...rest], prepend) => first === undefined ? prepend : mapWithDelaysWork(fn, rest, [...prepend, fn(first)]); const mapWith = ca ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-mapwith]] - shared technical atoms: Mapwith shares technical record from Composing and Decomposing Data / Tail Calls (and Default Arguments) / converting non-tail-calls to tail-calls: const mapWithDelaysWork = (fn, [first, ...rest], prepend) => first === undefined ? prepend : mapWithDelaysWork(fn, rest, [...prepend, fn(first)]); const mapWith = ca ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-function]] - shared technical atoms: Function shares technical record from Like this: / Generating Iterables / recursive iterators: const isIterable = (something) => !!something[Symbol.iterator]; const treeIterator = (iterable) => { const iterators = [ iterable[Symbol.iterator]() ]; return () => ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-functional]] - shared technical atoms: Functional shares technical record from Like this: / Generating Iterables / recursive iterators: const isIterable = (something) => !!something[Symbol.iterator]; const treeIterator = (iterable) => { const iterators = [ iterable[Symbol.iterator]() ]; return () => ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-iterator]] - shared technical atoms: Iterator shares technical record from Like this: / Generating Iterables / recursive iterators: const isIterable = (something) => !!something[Symbol.iterator]; const treeIterator = (iterable) => { const iterators = [ iterable[Symbol.iterator]() ]; return () => ... [truncated] (1 shared atom(s))
 
 ## Source
 

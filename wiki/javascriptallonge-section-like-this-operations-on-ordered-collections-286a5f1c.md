@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-like-this-operations-on-ordered-collections-286a5f1c
 page_kind: source
-summary: Like this: / operations on ordered collections: 28 source-backed entries and 9 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Like this: / operations on ordered collections: 26 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-like-this-operations-on-ordered-collections-286a5f1c@1b0a146d0e522486faf9284fa909a9b9
+projection_coverage: section-javascriptallonge-section-like-this-operations-on-ordered-collections-286a5f1c@f65ff0ee6ce1c4789181c0083a72b6f7
 ---
 
 # Like this: / operations on ordered collections
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-like-this-operations-on-o
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-like-this-66cb3108]] - broader source section: Like this:
 
@@ -28,9 +31,7 @@ From [[javascriptallonge]].
 - So, Evens is also an ordered collection, because it starts at the beginning each time we get a fresh iterator over it. Thus, mapWith has the property of preserving the collection semantics of the iterable we give it. So we call it a collection operation . _(javascriptallonge.pdf (source-range-7239e085-01596))_
 - Like mapWith , they preserve the ordered collection semantics of whatever you give them. _(javascriptallonge.pdf (source-range-7239e085-01603))_
 - Andhere's a computation performed using operations on ordered collections: We'll create an ordered collection of square numbers that end in one and are less than 1,000: _(javascriptallonge.pdf (source-range-7239e085-01604))_
-- As we expect from an ordered collection, each time we iterate over UpTo1000 , we begin at the beginning. _(javascriptallonge.pdf (source-range-7239e085-01606))_
 - For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest] : _(javascriptallonge.pdf (source-range-7239e085-01607))_
-- like our other operations, rest preserves the ordered collection semantics of its argument. _(javascriptallonge.pdf (source-range-7239e085-01609))_
 - So, Evens is also an ordered collection, because it starts at the beginning each time we get a fresh iterator over it. _(javascriptallonge.pdf (source-range-7239e085-01596))_
 - Thus, mapWith has the property of preserving the collection semantics of the iterable we give it. _(javascriptallonge.pdf (source-range-7239e085-01596))_
 
@@ -43,6 +44,8 @@ From [[javascriptallonge]].
 > This illustrates the general pattern of working with ordered collections: We make them iterables , meaning that they have a [Symbol.iterator] method, that returns an iterator . An iterator is also an object, but with a .next() method that is invoked repeatedly to obtain the elements in order.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01589))_
+
+<a id="atom-technical-atom-54c71ac655b9bf50"></a>
 
 ```
 const mapWith = (fn, collection) =>
@@ -66,6 +69,8 @@ return ({done, value: done ? undefined : fn(value)});
 > Numbers is an ordered collection. We invoke mapWith((x) => 2 * x, Numbers) and get Evens . Evens works just as if we'd written this:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01592))_
+
+<a id="atom-technical-atom-0394bbb3ce97162b"></a>
 
 ```
 const Evens = mapWith((x) => 2 * x, Numbers);
@@ -95,6 +100,8 @@ console.log(i)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01594))_
 
+<a id="atom-technical-atom-0cd71c1b5babb6ac"></a>
+
 ```
 const Evens =
 {
@@ -116,56 +123,9 @@ return ({done, value: done ? undefined : 2 *value});
 
 > Like mapWith , they preserve the ordered collection semantics of whatever you give them.
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01598))_
-
-```
-const ZeroesToNines = mapWith((n) => Math.floor(10 * limit), RandomNumbers);
-for (const i of ZeroesToNines) {
-console.log(i)
-}
-//=>
-5
-1
-9
-...
-for (const i of ZeroesToNines) {
-console.log(i)
-}
-//=>
-3
-```
-
-### Technical frame 5: Like this: / operations on ordered collections
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01603))_
-
-> Like mapWith , they preserve the ordered collection semantics of whatever you give them.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01599))_
-
-```
-6
-1
-...
-```
-
-### Technical frame 6: Like this: / operations on ordered collections
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01603))_
-
-> Like mapWith , they preserve the ordered collection semantics of whatever you give them.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01600))_
-
-> mapWith can get a new iterator from RandomNumbers each time we iterate over ZeroesToNines , but if RandomNumbers doesn't behave like an ordered collection, that's not mapWith 's fault.
-
-### Technical frame 7: Like this: / operations on ordered collections
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01603))_
-
-> Like mapWith , they preserve the ordered collection semantics of whatever you give them.
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01602))_
+
+<a id="atom-technical-atom-3362c712cd3a3047"></a>
 
 ```
 const filterWith = (fn, iterable) =>
@@ -197,13 +157,15 @@ return ({done, value: done ? undefined : value});
 });
 ```
 
-### Technical frame 8: Like this: / operations on ordered collections
+### Technical frame 5: Like this: / operations on ordered collections
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01606))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01607))_
 
-> As we expect from an ordered collection, each time we iterate over UpTo1000 , we begin at the beginning.
+> For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest] :
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01605))_
+
+<a id="atom-technical-atom-2b1a958763a34fb2"></a>
 
 ```
 const Squares = mapWith((x) => x * x, Numbers);
@@ -215,25 +177,4 @@ const UpTo1000 = untilWith((x) => (x > 1000), EndWithOne);
 [...UpTo1000]
 //=>
 [1,81,121,361,441,841,961]
-```
-
-### Technical frame 9: Like this: / operations on ordered collections
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01609))_
-
-> like our other operations, rest preserves the ordered collection semantics of its argument.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01608))_
-
-```
-const first = (iterable) =>
-iterable[Symbol.iterator]().next().value;
-const rest = (iterable) =>
-({
-[Symbol.iterator] () {
-const iterator = iterable[Symbol.iterator]();
-iterator.next();
-return iterator;
-}
-});
 ```

@@ -4,7 +4,7 @@ page_kind: concept
 page_family: topic-concept
 summary: Ancient Magic: 4 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
 projection_coverage: topic-sword-world-rpg-complete-edition-ancient-magic@ae4a49611f488efbcc0b8a0f72f01de7

@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 1.2 Races / 【 Grassrunner 】: 19 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-2-races-grassrunner-1b7187c6@280821bdf03fbbd85760f1f412ec95d5
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-2-races-grassrunner-1b7187c6@276157aa19dc49d65fcdb3906214a90f
 ---
 
 # 1.2 Races / 【 Grassrunner 】
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-1-2-races-56190ca1]] - broader source section: 1.2 Races
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-grassrunner-24a71cb8]] - same source heading: another source section with the same heading, 1.4 Character Creation / 【 Grassrunner 】
 
 ## Statements

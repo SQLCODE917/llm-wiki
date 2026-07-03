@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-salamander-66954bdd
 page_kind: source
 page_family: section-reference
-summary: [ Salamander ]: 18 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Salamander ]: 18 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-salamander-66954bdd@f957b61a8ed0c5036eeac21b99ff8a53
+projection_coverage: section-sword-world-rpg-complete-edition-section-salamander-66954bdd@9578c62a572e0d683293a12a6b49226c
 ---
 
 # [ Salamander ]
@@ -29,28 +29,8 @@ From [[sword-world-rpg-complete-edition]].
 
 > Salamanders, which are spirits of fire, look like quadrupedal beasts with a body length of about 1 meter, as they are called by the name fi re lizard . However, its entire body is not covered in animal skin but in flames, making it extremely dangerous as it ignites flammable materials around it. A mad salamander, as befitting of a spirit of fire, a symbol of destruction, acts with the sole purpose of burning everything to ash. Salamanders shower you in a breath of fire, which has the same effect
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07164))_
-
-> Special Abilities=Fire (Strike power 10, bonus damage 5, Magic Intensity/Magic Power=12/5)
-
-### Technical frame 2: [ Salamander ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07169))_
-
-> Salamanders, which are spirits of fire, look like quadrupedal beasts with a body length of about 1 meter, as they are called by the name fi re lizard . However, its entire body is not covered in animal skin but in flames, making it extremely dangerous as it ignites flammable materials around it. A mad salamander, as befitting of a spirit of fire, a symbol of destruction, acts with the sole purpose of burning everything to ash. Salamanders shower you in a breath of fire, which has the same effect
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07167, source-range-0b9dec90-07168))_
-
-> Habitat=Anywhere, provided there's fire Languages=Silent spirit
-
-> Perception=Magic
-
-### Technical frame 3: [ Salamander ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07169))_
-
-> Salamanders, which are spirits of fire, look like quadrupedal beasts with a body length of about 1 meter, as they are called by the name fi re lizard . However, its entire body is not covered in animal skin but in flames, making it extremely dangerous as it ignites flammable materials around it. A mad salamander, as befitting of a spirit of fire, a symbol of destruction, acts with the sole purpose of burning everything to ash. Salamanders shower you in a breath of fire, which has the same effect
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07170))_
+
+<a id="atom-technical-atom-ca4747d9976805d1"></a>
 
 > Also, when a person using the spirit magic Water Screen is attacked by a salamander, after the normal effect, 2 points of damage will be dealt to the salamander (the salamander cannot reduce this damage), then the magic's effect will vanish.

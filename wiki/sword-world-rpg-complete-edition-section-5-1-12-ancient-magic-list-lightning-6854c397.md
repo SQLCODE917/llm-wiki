@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 5.1.12 Ancient Magic List / [ Lightning ]: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-lightning-6854c397@c8641848f7a40f92aadb13d8433730c9
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-lightning-6854c397@88e05832ddd0df8a10706e797079570c
 ---
 
 # 5.1.12 Ancient Magic List / [ Lightning ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-anc
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-19f66f88]] - broader source section: 5.1.12 Ancient Magic List
 

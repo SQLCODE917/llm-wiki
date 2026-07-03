@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-the-first-sip-basic-functions-as-little-as-possible-about-functions-but-no-less-commas-613f6e9a
 page_kind: source
-summary: The first sip: Basic Functions / As Little As Possible About Functions, But No Less / commas: 6 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: The first sip: Basic Functions / As Little As Possible About Functions, But No Less / commas: 6 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-the-first-sip-basic-functions-as-little-as-possible-about-functions-but-no-less-commas-613f6e9a@a41ab490e83fd4cd60546edb8225ff91
+projection_coverage: section-javascriptallonge-section-the-first-sip-basic-functions-as-little-as-possible-about-functions-but-no-less-commas-613f6e9a@6216400c716e7bc54b58fdb771cab0e7
 ---
 
 # The first sip: Basic Functions / As Little As Possible About Functions, But No Less / commas
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-the-first-sip-basic-funct
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-the-first-sip-basic-functions-as-little-as-possible-about-functions-but-no-less-0ed59777]] - broader source section: The first sip: Basic Functions / As Little As Possible About Functions, But No Less
 
@@ -33,6 +36,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00202))_
 
+<a id="atom-technical-atom-44cc1745b220be9f"></a>
+
 ```
 //=> 2
 (1 + 1, 2 + 2)
@@ -45,6 +50,8 @@ From [[javascriptallonge]].
 > This is useful when trying to do things that might involve side-effects , but we'll get to that later. In most cases, JavaScript does not care whether things are separated by spaces, tabs, or line breaks. So we can also write:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00204))_
+
+<a id="atom-technical-atom-ead6c5c59b062746"></a>
 
 ```
 (() => (1 + 1, 2 + 2))()
@@ -59,17 +66,6 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00205))_
 
+<a id="atom-technical-atom-a037009faf63061c"></a>
+
 > This is useful when trying to do things that might involve side-effects , but we'll get to that later.
-
-### Technical frame 4: The first sip: Basic Functions / As Little As Possible About Functions, But No Less / commas
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00205))_
-
-> This is useful when trying to do things that might involve side-effects , but we'll get to that later. In most cases, JavaScript does not care whether things are separated by spaces, tabs, or line breaks. So we can also write:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00206))_
-
-```
-() =>
-(1 + 1, 2 + 2)
-```

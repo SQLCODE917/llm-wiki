@@ -4,12 +4,12 @@ page_kind: procedure
 page_family: procedure-guide
 summary: Complete Attacks From Characters Against Characters: 2 ordered step(s), 3 decision point(s), and 14 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
 aliases: complete-attacks-from-characters-against-characters, attacks-from-characters-against-characters
-projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-attacks-from-characters-against-characters@f6ed8181cae4f87df4e5802b3da9b80e
+projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-attacks-from-characters-against-characters@b06a0df5820d3fda68b7030efa870f43
 ---
 
 # Attacks From Characters Against Characters
@@ -39,18 +39,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Tables And Formulas
 
-- `rule`: Sometimes, especially when the mastermind behind an incident is a dark priest, you'll have to fight against someone whos _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02237))_
-- `formula`: attacker's final score = attack power + 2D _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02241))_
-- `formula`: defender's final score = evasion speed + 2D _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02242))_
-- `rule`: The defender doesn't even have to roll the dice. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02254))_
-- `rule`: If the defender's roll is double sixes , the attack will always fail. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02257))_
-- `formula`: Please refer to Table 4-4: Attack Checks. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02258))_
-- `rule`: The attacker must make a strike roll to determine their base damage, then add their bonus damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02261))_
-- `formula`: As a result, the damage that Ducard II suffers is 21-5= 16 points . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02268))_
-- `formula`: Table 4-4: Attack Checks _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02269))_
-- `rule`: To make a hit check, both sides must roll the dice (2D). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02240))_
-- `formula`: attacker's attack power + 2D ≤ defender's evasion speed +2D → attack fails _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02246))_
-- `formula`: Ducard II's final score is 4+7= 11 , while Bucky's final score is 5+6= 11 . It's a tie. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02250))_
+- `rule`: [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-f02400ef]]#atom-technical-atom-2ef74990f1b02c96 Sometimes, especially when the mastermind behind an incident is a dark priest, you'll have to fight against someone whos _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02237))_
+- `formula`: [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-f02400ef]]#atom-technical-atom-640f50d3ffe6d1a6 attacker's final score = attack power + 2D _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02241))_
+- `formula`: [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-f02400ef]]#atom-technical-atom-4bebde79c36032d8 defender's final score = evasion speed + 2D _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02242))_
+- `rule`: [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-f02400ef]]#atom-technical-atom-944d47b4812f0cfe The defender doesn't even have to roll the dice. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02254))_
+- `rule`: [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-f02400ef]]#atom-technical-atom-7efa5db289eceb42 If the defender's roll is double sixes , the attack will always fail. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02257))_
+- `formula`: [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-f02400ef]]#atom-technical-atom-9f73101c59836bac Please refer to Table 4-4: Attack Checks. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02258))_
+- `rule`: [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-f02400ef]]#atom-technical-atom-f7f4ab33f656196b The attacker must make a strike roll to determine their base damage, then add their bonus damage. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02261))_
+- `formula`: [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-f02400ef]]#atom-technical-atom-b5b6be441a92e9bb As a result, the damage that Ducard II suffers is 21-5= 16 points . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02268))_
+- `formula`: [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-f02400ef]]#atom-technical-atom-38f5f15a42187fdb Table 4-4: Attack Checks _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02269))_
+- `rule`: [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-f02400ef]]#atom-technical-atom-4f3d979ccb251ef6 To make a hit check, both sides must roll the dice (2D). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02240))_
+- `formula`: [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-f02400ef]]#atom-technical-atom-d332d1e51e19ebdd attacker's attack power + 2D ≤ defender's evasion speed +2D → attack fails _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02246))_
+- `formula`: [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-f02400ef]]#atom-technical-atom-bb199bf703e86efc Ducard II's final score is 4+7= 11 , while Bucky's final score is 5+6= 11 . It's a tie. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02250))_
 
 ## Completion Check
 

@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-that-constant-coffee-craving-rebinding-c21c4915
 page_kind: source
-summary: And also: / That Constant Coffee Craving / rebinding: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: And also: / That Constant Coffee Craving / rebinding: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-that-constant-coffee-craving-rebinding-c21c4915@5325bc8b2cd52f90d8a787170c4e3eb0
+projection_coverage: section-javascriptallonge-section-and-also-that-constant-coffee-craving-rebinding-c21c4915@fc4c4fe57d03afe0cc1e0c1ac98406ea
 ---
 
 # And also: / That Constant Coffee Craving / rebinding
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-and-also-that-constant-co
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-and-also-that-constant-coffee-craving-7d1b2fd1]] - broader source section: And also: / That Constant Coffee Craving
 
@@ -31,32 +34,9 @@ From [[javascriptallonge]].
 
 > JavaScript does not permit us to rebind a name that has been bound with const . We can shadow it by using const to declare a new binding with a new function or block scope, but we cannot rebind a name that was bound with const in an existing scope.
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00493))_
-
-```
-const evenStevens = (n) => {
-if (n === 0) {
-return true;
-}
-else if (n == 1) {
-return false;
-}
-else {
-n = n - 2;
-return evenStevens(n);
-}
-}
-evenStevens(42)
-//=> true
-```
-
-### Technical frame 2: And also: / That Constant Coffee Craving / rebinding
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00496))_
-
-> JavaScript does not permit us to rebind a name that has been bound with const . We can shadow it by using const to declare a new binding with a new function or block scope, but we cannot rebind a name that was bound with const in an existing scope.
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00495))_
+
+<a id="atom-technical-atom-381b7cb3b61758cd"></a>
 
 ```
 evenStevens = (n) => {

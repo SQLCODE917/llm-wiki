@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-97baced0
 page_kind: source
 page_family: section-reference
-summary: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels: 37 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels: 37 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-97baced0@f6bccae26f33c663569814abd08f089f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-97baced0@9f5fa216546c4b0d5524a402fed229ce
 ---
 
 # Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels
@@ -17,11 +17,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-b7944607]] - broader source section: Chapter 11: Notes on Magic
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-sorcerer-skill-3a970128]] - narrower source section: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Sorcerer Skill 》
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-shaman-skill-9e9e7c2b]] - narrower source section: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Shaman Skill 》
-- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-priest-skill-c4404cc7]] - narrower source section: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Priest Skill 》
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-dark-priest-sk-15c7b308]] - narrower source section: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Dark Priest Skill 》
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-priest-skill-c4404cc7]] - narrower source section: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Priest Skill 》
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-shaman-skill-9e9e7c2b]] - narrower source section: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Shaman Skill 》
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-sorcerer-skill-3a970128]] - narrower source section: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Sorcerer Skill 》
 
 ## Statements
 
@@ -56,25 +58,3 @@ From [[sword-world-rpg-complete-edition]].
 ### Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Dark Priest Skill 》
 
 - The method of acquiring and increasing the dark priest skill is almost the same as the priest skill. However, many of the dark gods that dark priests believe in have no temples, and most dark priests will be those who have awakened to faith by some occurrence. Many such awakenings could be things like a longtime believer of a god of light being betrayed by their god. There are also cases such as a friend who was a priest of Faris who, in order to maintain order, turned in his own brother, who was plotting a rebellion, and after grief about his actions, awoke to the teachings of The Nameless God of Madness (though usually you'd just say they went mad about things like this...) _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06318, source-range-0b9dec90-06320))_
-
-## Technical atoms
-
-### Technical frame 1: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Priest Skill 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06314))_
-
-> However, the surest way to awaken to faith is to work in a temple, constantly see other priests, and receive their teachings. This is because it is the best way to experience the nature of faith firsthand.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06313))_
-
-> When you awaken to faith and recognize the existence of the gods, you can acquire the 1st level priest skill.
-
-### Technical frame 2: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Priest Skill 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06315))_
-
-> The priest skill is increased by spending experience points. As your priest skill increases, your magic power increases and at the same time you also immediately gain access to higher level spells. This is because your relationship with your god becomes stronger.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06316))_
-
-> In rare cases, if a character who had the priest skill believes that their previous teachings are wrong and awakens to the teachings of another god, they may lose any previous priest skill levels they had and acquire 1st level in a new god's priest skill level instead.

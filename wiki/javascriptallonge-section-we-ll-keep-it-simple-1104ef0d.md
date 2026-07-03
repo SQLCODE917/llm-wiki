@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-we-ll-keep-it-simple-1104ef0d
 page_kind: source
-summary: We'll keep it simple:: 225 source-backed entries and 81 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: We'll keep it simple:: 219 source-backed entries and 81 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-we-ll-keep-it-simple-1104ef0d@a2d9bbb146596a3fafd0af325dd73b24
+projection_coverage: section-javascriptallonge-section-we-ll-keep-it-simple-1104ef0d@83bea6ce5c1562aa3da6f75cadbb4e57
 ---
 
 # We'll keep it simple:
@@ -16,16 +17,16 @@ From [[javascriptallonge]].
 
 ## Related pages
 
-- [[javascriptallonge-section-we-ll-keep-it-simple-javascript-s-generators-a7436505]] - narrower source section: We'll keep it simple: / javascript's generators
-- [[javascriptallonge-section-we-ll-keep-it-simple-generators-are-coroutines-a23babe6]] - narrower source section: We'll keep it simple: / generators are coroutines
+### Source structure
+
 - [[javascriptallonge-section-we-ll-keep-it-simple-generators-and-iterables-4c3f39e4]] - narrower source section: We'll keep it simple: / generators and iterables
-- [[javascriptallonge-section-we-ll-keep-it-simple-more-generators-6ce23867]] - narrower source section: We'll keep it simple: / more generators
-- [[javascriptallonge-section-we-ll-keep-it-simple-yielding-iterables-d9572ca8]] - narrower source section: We'll keep it simple: / yielding iterables
-- [[javascriptallonge-section-we-ll-keep-it-simple-rewriting-iterable-operations-9606b732]] - narrower source section: We'll keep it simple: / rewriting iterable operations
-- [[javascriptallonge-section-we-ll-keep-it-simple-summary-21c844cb]] - narrower source section: We'll keep it simple: / Summary
-- [[javascriptallonge-section-we-ll-keep-it-simple-lazy-and-eager-collections-b2c43c7f]] - narrower source section: We'll keep it simple: / Lazy and Eager Collections
-- [[javascriptallonge-section-we-ll-keep-it-simple-interlude-the-carpenter-interviews-for-a-job-196a6679]] - narrower source section: We'll keep it simple: / Interlude: The Carpenter Interviews for a Job
+- [[javascriptallonge-section-we-ll-keep-it-simple-generators-are-coroutines-a23babe6]] - narrower source section: We'll keep it simple: / generators are coroutines
 - [[javascriptallonge-section-we-ll-keep-it-simple-interactive-generators-1f19e24c]] - narrower source section: We'll keep it simple: / Interactive Generators
+- [[javascriptallonge-section-we-ll-keep-it-simple-interlude-the-carpenter-interviews-for-a-job-196a6679]] - narrower source section: We'll keep it simple: / Interlude: The Carpenter Interviews for a Job
+- [[javascriptallonge-section-we-ll-keep-it-simple-javascript-s-generators-a7436505]] - narrower source section: We'll keep it simple: / javascript's generators
+- [[javascriptallonge-section-we-ll-keep-it-simple-lazy-and-eager-collections-b2c43c7f]] - narrower source section: We'll keep it simple: / Lazy and Eager Collections
+- [[javascriptallonge-section-we-ll-keep-it-simple-more-generators-6ce23867]] - narrower source section: We'll keep it simple: / more generators
+- [[javascriptallonge-section-we-ll-keep-it-simple-rewriting-iterable-operations-9606b732]] - narrower source section: We'll keep it simple: / rewriting iterable operations
 
 ## Statements
 
@@ -54,10 +55,6 @@ From [[javascriptallonge]].
 - When we call interator.next() , the body of our generator begins to be evaluated. _(javascriptallonge.pdf (source-range-7239e085-01682))_
 - The rest of the program continues along its way until it makes another call to iterator.next() . _(javascriptallonge.pdf (source-range-7239e085-01686))_
 - The iterator resumes execution from the point where it yielded the last value. _(javascriptallonge.pdf (source-range-7239e085-01687))_
-- The rest of the program continues along its way until it makes another call to iterator.next() . _(javascriptallonge.pdf (source-range-7239e085-01691))_
-- The iterator resumes execution from the point where it yielded the last value. _(javascriptallonge.pdf (source-range-7239e085-01692))_
-- The rest of the program continues along its way until it makes another call to iterator.next() . _(javascriptallonge.pdf (source-range-7239e085-01696))_
-- The iterator resumes execution from the point where it yielded the last value. _(javascriptallonge.pdf (source-range-7239e085-01697))_
 - The body of our generator runs until it returns, ends, or encounters the next yield statement. There are no more lines of code, so it ends. _(javascriptallonge.pdf (source-range-7239e085-01698))_
 - This behaviour is not unique to JavaScript, generators are called coroutines 92 in other languages: _(javascriptallonge.pdf (source-range-7239e085-01700))_
 - Coroutines are computer program components that generalize subroutines for nonpreemptive multitasking, by allowing multiple entry points for suspending and resuming execution at certain locations. Coroutines are well-suited for implementing more familiar program components such as cooperative tasks, exceptions, event loop, iterators, infinite lists and pipes. _(javascriptallonge.pdf (source-range-7239e085-01701))_
@@ -88,7 +85,6 @@ From [[javascriptallonge]].
 - 93 There are more complex cases where you want an iterable object, because you want to maintain state in properties or declare helper methods for the generator function, and so forth. But if you can write it as a simple generator, write it as a simple generator. _(javascriptallonge.pdf (source-range-7239e085-01732))_
 - Wetake advantage of the for...of loop in a plain and direct way: For each element e , if it is iterable, treat it as a tree and iterate over it, yielding each of its elements. If e is not an iterable, yield e . _(javascriptallonge.pdf (source-range-7239e085-01734))_
 - JavaScript handles the recursion for us using its own execution stack. This is clearly simpler than trying to maintain our own stack and remembering whether we are shifting and unshifting, or pushing and popping. _(javascriptallonge.pdf (source-range-7239e085-01735))_
-- yield* is handy when writing generator functions that operate on or create iterables. _(javascriptallonge.pdf (source-range-7239e085-01746))_
 - 93 There are more complex cases where you want an iterable object, because you want to maintain state in properties or declare helper methods for the generator function, and so forth. _(javascriptallonge.pdf (source-range-7239e085-01732))_
 
 ### We'll keep it simple: / rewriting iterable operations
@@ -96,7 +92,6 @@ From [[javascriptallonge]].
 - Now that we know about iterables, we can rewrite our iterable operations as generators. Instead of: _(javascriptallonge.pdf (source-range-7239e085-01748))_
 - No need to explicitly construct an object that has a [Symbol.iterator] method. No need to return an object with a .next() method. No need to fool around with {done} or {value} , just yield values until we're done. _(javascriptallonge.pdf (source-range-7239e085-01752))_
 - We can do the same thing with our other operations like filterWith and untilWith . Here're our iterable methods rewritten as generators: _(javascriptallonge.pdf (source-range-7239e085-01753))_
-- first works directly with iterators and remains unchanged, but rest can be rewritten as a generator: _(javascriptallonge.pdf (source-range-7239e085-01756))_
 
 ### We'll keep it simple: / Summary
 
@@ -105,7 +100,6 @@ From [[javascriptallonge]].
 
 ### We'll keep it simple: / Lazy and Eager Collections
 
-- Composing an iterable with a mapIterable method cleaves the responsibility for knowing how to map from the fiddly bits of how a linked list differs from a stack _(javascriptallonge.pdf (source-range-7239e085-01763))_
 - in the older style of object-oriented programming, we built 'fat' objects. Each collection knew how to map itself ( .map ), how to fold itself ( .reduce ), how to filter itself ( .filter ) and how to find one element within itself ( .find ). If we wanted to flatten collections to arrays, we wrote a .toArray method for each type of collection. _(javascriptallonge.pdf (source-range-7239e085-01764))_
 - Over time, this informal 'interface' for collections grows by accretion. Some methods are only added to a few collections, some are added to all. But our objects grow fatter and fatter. We tell ourselves that, well, a collection ought to know how to map itself. _(javascriptallonge.pdf (source-range-7239e085-01765))_
 - But we end up recreating the same bits of code in each .map method we create, in each .reduce method we create, in each .filter method we create, and in each .find method. Each one has its own variation, but the overall form is identical. That's a sign that we should work at a higher level of abstraction, and working with iterables is that higher level of abstraction. _(javascriptallonge.pdf (source-range-7239e085-01766))_
@@ -186,7 +180,6 @@ From [[javascriptallonge]].
 - We used generators to build iterators that maintain implicit state. We saw how to use them for recursive unfolds and state machines. But there are other times we want to build functions that maintain implicit state. Let's start by looking at a very simple example of a function that can be written statefully. _(javascriptallonge.pdf (source-range-7239e085-01873))_
 - Consider, for example, the moves in a game. The moves a player makes are a stream of values, just like the contents of an array can be consider a stream of values. But of course, iterating over a stream of moves requires us to wait for the game to be over so we know what moves were made. _(javascriptallonge.pdf (source-range-7239e085-01876))_
 - The first player will always be o , and they will always place their chequer in the top-left corner, coincidentally numbered o : _(javascriptallonge.pdf (source-range-7239e085-01878))_
-- x has six possible moves, but they are really just two choices: 3 and anything else: _(javascriptallonge.pdf (source-range-7239e085-01887))_
 
 ### We'll keep it simple: / Interactive Generators / representing naughts and crosses as a stateless function
 
@@ -201,6 +194,8 @@ From [[javascriptallonge]].
 > Again, this is not particularly horrendous, but like the recursive example, we're explicitly greenspunning the natural linear state. In a generator, we write 'do this, then this, then this.' In an iterator, we have to wrap that up and explicitly keep track of what step we're on.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01655))_
+
+<a id="atom-technical-atom-0e2cb567c84a635d"></a>
 
 ```
 // Iteration
@@ -240,6 +235,8 @@ console.log(fibonacci());
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01657))_
 
+<a id="atom-technical-atom-df1f6445054717c1"></a>
+
 ```
 21
 34
@@ -257,6 +254,8 @@ console.log(fibonacci());
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01659))_
 
+<a id="atom-technical-atom-eb63ca0b19d59058"></a>
+
 > Whereas the iteration version must make that state explicit.
 
 ### Technical frame 4: We'll keep it simple: / javascript's generators
@@ -266,6 +265,8 @@ console.log(fibonacci());
 > When we invoke empty , we get an iterator with no elements. This makes sense, because empty never yields anything. We call its .next() method, but it's done immediately.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01666))_
+
+<a id="atom-technical-atom-1f3e69e493538b6d"></a>
 
 ```
 function * empty () {};
@@ -282,6 +283,8 @@ empty().next()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01667))_
 
+<a id="atom-technical-atom-b57e443f0d262b22"></a>
+
 > When we invoke empty , we get an iterator with no elements.
 
 ### Technical frame 6: We'll keep it simple: / javascript's generators
@@ -291,6 +294,8 @@ empty().next()
 > Invoking only("you") returns an iterator that we can call with .next() , and it yields "you" . Invoking only more than once gives us fresh iterators each time:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01670))_
+
+<a id="atom-technical-atom-f8e039c42865fbe9"></a>
 
 ```
 function * only (something) {
@@ -309,6 +314,8 @@ only("you").next()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01672))_
 
+<a id="atom-technical-atom-879df662b6da097f"></a>
+
 ```
 only("you").next()
 //=>
@@ -325,6 +332,8 @@ only("the lonely").next()
 > Invoking only("you") returns an iterator that we can call with .next() , and it yields "you" . Invoking only more than once gives us fresh iterators each time:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01674))_
+
+<a id="atom-technical-atom-35869ebc98c52393"></a>
 
 ```
 const sixteen = only("sixteen");
@@ -343,6 +352,8 @@ sixteen.next()
 > This is where generators behave very, very differently from ordinary functions. What happens semantically ?
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01678))_
+
+<a id="atom-technical-atom-5f287b47dc681f91"></a>
 
 ```
 const oneTwoThree = function * () {
@@ -382,6 +393,8 @@ iterator.next()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01705))_
 
+<a id="atom-technical-atom-e0bca2d9e767995c"></a>
+
 ```
 const oneTwoThree = function () {
 let state = 'newborn';
@@ -413,6 +426,8 @@ return {done: true};
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01709))_
 
+<a id="atom-technical-atom-f851858a3f0a60d5"></a>
+
 > If we call our generator function more than once, we get new iterators.
 
 ### Technical frame 12: We'll keep it simple: / generators and iterables
@@ -422,6 +437,8 @@ return {done: true};
 > This pattern is encouraged, so much so that JavaScript provides a concise syntax for writing generator methods for objects:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01710))_
+
+<a id="atom-technical-atom-df68b9aee54b4fac"></a>
 
 ```
 const ThreeNumbers = {
@@ -464,6 +481,8 @@ iterator.next()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01713))_
 
+<a id="atom-technical-atom-08b3d4cd0486cddf"></a>
+
 ```
 const ThreeNumbers = {
 *[Symbol.iterator] () {
@@ -481,6 +500,8 @@ yield 3
 > Our OneTwoThree example used implicit state to output the numbers in sequence. Recall that we wrote Fibonacci using explicit state:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01718))_
+
+<a id="atom-technical-atom-2e01e3085500fe57"></a>
 
 ```
 const Numbers = {
@@ -513,6 +534,8 @@ console.log(i);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01719))_
 
+<a id="atom-technical-atom-5b9d980be748a7cb"></a>
+
 ```
 8
 9
@@ -527,6 +550,8 @@ console.log(i);
 > We've writing a function that returns an iterator, but we used a generator to do it. And the generator's syntax allows us to use JavaScript's natural management of state instead of constantly rolling our own.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01721))_
+
+<a id="atom-technical-atom-ddfe8aff90ea154b"></a>
 
 ```
 const Fibonacci = {
@@ -571,6 +596,8 @@ console.log(n)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01722))_
 
+<a id="atom-technical-atom-888b3a037f1c0912"></a>
+
 ```
 21
 34
@@ -587,6 +614,8 @@ console.log(n)
 > We've writing a function that returns an iterator, but we used a generator to do it. And the generator's syntax allows us to use JavaScript's natural management of state instead of constantly rolling our own.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01724))_
+
+<a id="atom-technical-atom-f4b0f57efe02590e"></a>
 
 ```
 const Fibonacci = {
@@ -628,6 +657,8 @@ console.log(i);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01727))_
 
+<a id="atom-technical-atom-10237a444786ad38"></a>
+
 ```
 function * fibonacci () {
 let a, b;
@@ -666,6 +697,8 @@ console.log(i);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01730))_
 
+<a id="atom-technical-atom-c3426fdb123a0599"></a>
+
 ```
 const isIterable = (something) =>
 !!something[Symbol.iterator];
@@ -703,6 +736,8 @@ console.log(i);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01732))_
 
+<a id="atom-technical-atom-aa5a13c431df832a"></a>
+
 > But if you can write it as a simple generator, write it as a simple generator.
 
 ### Technical frame 22: We'll keep it simple: / yielding iterables
@@ -712,6 +747,8 @@ console.log(i);
 > Wetake advantage of the for...of loop in a plain and direct way: For each element e , if it is iterable, treat it as a tree and iterate over it, yielding each of its elements. If e is not an iterable, yield e .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01733))_
+
+<a id="atom-technical-atom-79c4ba4c0edddbb5"></a>
 
 ```
 function * tree (iterable) {
@@ -745,6 +782,8 @@ console.log(i);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01737))_
 
+<a id="atom-technical-atom-0e0a00ee8196b6aa"></a>
+
 ```
 for (const ee of tree(e)) {
 yield ee;
@@ -753,11 +792,13 @@ yield ee;
 
 ### Technical frame 24: We'll keep it simple: / yielding iterables
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01746))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01735))_
 
-> yield* is handy when writing generator functions that operate on or create iterables.
+> JavaScript handles the recursion for us using its own execution stack. This is clearly simpler than trying to maintain our own stack and remembering whether we are shifting and unshifting, or pushing and popping.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01739))_
+
+<a id="atom-technical-atom-06bb02d698b5a335"></a>
 
 ```
 function * append (...iterables) {
@@ -786,11 +827,13 @@ me
 
 ### Technical frame 25: We'll keep it simple: / yielding iterables
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01746))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01735))_
 
-> yield* is handy when writing generator functions that operate on or create iterables.
+> JavaScript handles the recursion for us using its own execution stack. This is clearly simpler than trying to maintain our own stack and remembering whether we are shifting and unshifting, or pushing and popping.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01742))_
+
+<a id="atom-technical-atom-3f887d1daf7a5385"></a>
 
 ```
 function * append (...iterables) {
@@ -807,11 +850,13 @@ console.log(word);
 
 ### Technical frame 26: We'll keep it simple: / yielding iterables
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01746))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01735))_
 
-> yield* is handy when writing generator functions that operate on or create iterables.
+> JavaScript handles the recursion for us using its own execution stack. This is clearly simpler than trying to maintain our own stack and remembering whether we are shifting and unshifting, or pushing and popping.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01743))_
+
+<a id="atom-technical-atom-a08bb83e790e552c"></a>
 
 ```
 //=>
@@ -827,11 +872,9 @@ re
 
 ### Technical frame 27: We'll keep it simple: / yielding iterables
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01746))_
-
-> yield* is handy when writing generator functions that operate on or create iterables.
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01744))_
+
+<a id="atom-technical-atom-aba6cb6873b1bd9a"></a>
 
 ```
 const isIterable = (something) =>
@@ -859,11 +902,9 @@ console.log(i);
 
 ### Technical frame 28: We'll keep it simple: / yielding iterables
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01746))_
-
-> yield* is handy when writing generator functions that operate on or create iterables.
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01745))_
+
+<a id="atom-technical-atom-aa4f6a748680983d"></a>
 
 ```
 three
@@ -894,6 +935,8 @@ for (const i of tree([1, [2, [3, 4], 5]])) {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01749))_
 
+<a id="atom-technical-atom-d3cb2e708d5fc1d6"></a>
+
 ```
 const mapWith = (fn, iterable) =>
 ({
@@ -917,6 +960,8 @@ return ({done, value: done ? undefined : fn(value)});
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01751))_
 
+<a id="atom-technical-atom-ce5b6b7f5a1c9bc5"></a>
+
 ```
 function * mapWith (fn, iterable) {
 for (const element of iterable) {
@@ -927,11 +972,13 @@ yield fn(element);
 
 ### Technical frame 31: We'll keep it simple: / rewriting iterable operations
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01756))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01753))_
 
-> first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
+> We can do the same thing with our other operations like filterWith and untilWith . Here're our iterable methods rewritten as generators:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01754))_
+
+<a id="atom-technical-atom-f9a92001c0ddb2e7"></a>
 
 ```
 function * mapWith(fn, iterable) {
@@ -948,11 +995,13 @@ if (!!fn(element)) yield element;
 
 ### Technical frame 32: We'll keep it simple: / rewriting iterable operations
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01756))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01753))_
 
-> first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
+> We can do the same thing with our other operations like filterWith and untilWith . Here're our iterable methods rewritten as generators:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01755))_
+
+<a id="atom-technical-atom-2a19fa1bd258aa5f"></a>
 
 ```
 function * untilWith (fn, iterable) {
@@ -965,11 +1014,13 @@ yield fn(element);
 
 ### Technical frame 33: We'll keep it simple: / rewriting iterable operations
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01756))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01753))_
 
-> first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
+> We can do the same thing with our other operations like filterWith and untilWith . Here're our iterable methods rewritten as generators:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01757))_
+
+<a id="atom-technical-atom-8476727d2baa72ac"></a>
 
 ```
 const first = (iterable) =>
@@ -988,6 +1039,8 @@ yield * iterator;
 > To use LazyCollection , we mix it into an any iterable object. For simplicity, we'll show how to mix it into Numbers and Pair . But it can also be mixed into prototypes (a/k/a 'classes'), traits, or other OO constructs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01772))_
+
+<a id="atom-technical-atom-a76b12e0a5829382"></a>
 
 ```
 const extend = function (consumer, ...providers) {
@@ -1037,6 +1090,8 @@ return accumulator;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01773))_
 
+<a id="atom-technical-atom-1dd93a5412bdd436"></a>
+
 ```
 },
 filter(fn) {
@@ -1084,6 +1139,8 @@ done, value: done ? undefined : value
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01774))_
 
+<a id="atom-technical-atom-f8a7f12c9c5c68d8"></a>
+
 ```
 }, LazyCollection)
 },
@@ -1129,6 +1186,8 @@ return Object.assign({
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01775))_
 
+<a id="atom-technical-atom-e5fc2652767abdb9"></a>
+
 ```
 [Symbol.iterator]: () => {
 const iterator = this[Symbol.iterator]();
@@ -1158,6 +1217,8 @@ done, value: done ? undefined : value
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01777))_
 
+<a id="atom-technical-atom-f8b7820b12c59402"></a>
+
 ```
 const Numbers = Object.assign({
 [Symbol.iterator]: () => {
@@ -1180,6 +1241,8 @@ isEmpty: () => true
 > To use LazyCollection , we mix it into an any iterable object. For simplicity, we'll show how to mix it into Numbers and Pair . But it can also be mixed into prototypes (a/k/a 'classes'), traits, or other OO constructs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01778))_
+
+<a id="atom-technical-atom-d0d3cda77a4b76f7"></a>
 
 ```
 };
@@ -1225,6 +1288,8 @@ push: function (value) {
 > To use LazyCollection , we mix it into an any iterable object. For simplicity, we'll show how to mix it into Numbers and Pair . But it can also be mixed into prototypes (a/k/a 'classes'), traits, or other OO constructs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01779))_
+
+<a id="atom-technical-atom-692b026c4c1cf015"></a>
 
 ```
 return this.array[this.index += 1] = value;
@@ -1274,6 +1339,8 @@ return stack;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01780))_
 
+<a id="atom-technical-atom-81195c6e18dcad00"></a>
+
 ```
 // Pair and Stack in action
 Stack.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
@@ -1295,6 +1362,8 @@ Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01785))_
 
+<a id="atom-technical-atom-8470d296d51b52a8"></a>
+
 ```
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 .map((x) => x * x)
@@ -1314,6 +1383,8 @@ Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01788))_
 
+<a id="atom-technical-atom-97184db350f67860"></a>
+
 > When working with very large collections and many operations, this can be important.
 
 ### Technical frame 44: We'll keep it simple: / Lazy and Eager Collections / lazy collection operations
@@ -1324,6 +1395,8 @@ Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01789))_
 
+<a id="atom-technical-atom-5e62d943d738ba1c"></a>
+
 > The effect is even more pronounced when we use methods like first , until , or take :
 
 ### Technical frame 45: We'll keep it simple: / Lazy and Eager Collections / lazy collection operations
@@ -1333,6 +1406,8 @@ Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 > This expression begins with a stack containing 30 elements. The top two are 29 and 28 . It maps to the squares of all 30 numbers, but our code for mapping an iteration returns an iterable that can iterate over the squares of our numbers, not an array or stack of the squares. Same with .filter , we get an iterable that can iterate over the even squares, but not an actual stack or array.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01790))_
+
+<a id="atom-technical-atom-e10108dd925b5dd3"></a>
 
 ```
 Stack.from([ 0,
@@ -1359,6 +1434,8 @@ Stack.from([ 0,
 > Balanced against their flexibility, our 'lazy collections' use structure sharing. If we mutate a collection after taking an iterable, we might get an unexpected result. This is why 'pure' functional languages like Haskell combine lazy semantics with immutable collections, and why even 'impure' languages like Clojure emphasize the use of immutable collections.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01794))_
+
+<a id="atom-technical-atom-f96696a48fc95366"></a>
 
 ```
 Stack.from([ 0,
@@ -1398,6 +1475,8 @@ filtering 784
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01795))_
 
+<a id="atom-technical-atom-3773064a93e8ab4d"></a>
+
 > If we write the almost identical thing with an array, we get a different behaviour:
 
 ### Technical frame 48: We'll keep it simple: / Lazy and Eager Collections / lazy collection operations
@@ -1407,6 +1486,8 @@ filtering 784
 > Balanced against their flexibility, our 'lazy collections' use structure sharing. If we mutate a collection after taking an iterable, we might get an unexpected result. This is why 'pure' functional languages like Haskell combine lazy semantics with immutable collections, and why even 'impure' languages like Clojure emphasize the use of immutable collections.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01796))_
+
+<a id="atom-technical-atom-08552cca31bbad29"></a>
 
 ```
 [ 0,
@@ -1455,6 +1536,8 @@ filtering 841
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01799))_
 
+<a id="atom-technical-atom-8672457350f9a8ff"></a>
+
 ```
 const Numbers = Object.assign({
 [Symbol.iterator]: () => {
@@ -1481,6 +1564,8 @@ Numbers
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01803))_
 
+<a id="atom-technical-atom-260d903a41c4e031"></a>
+
 ```
 const extend = function (consumer, ...providers) {
 for (let i = 0; i < providers.length; ++i) {
@@ -1502,6 +1587,8 @@ return consumer
 > Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01804))_
+
+<a id="atom-technical-atom-a84a9a6634bcef5c"></a>
 
 ```
 const EagerCollection = (gatherable) =>
@@ -1550,6 +1637,8 @@ until(fn) {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01805))_
 
+<a id="atom-technical-atom-42f03cd992a4e79f"></a>
+
 ```
 const original = this;
 return gatherable.from(
@@ -1597,6 +1686,8 @@ yield element;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01807))_
 
+<a id="atom-technical-atom-6e8c82aa1db29bdf"></a>
+
 ```
 const EMPTY = {
 isEmpty: () => true
@@ -1640,6 +1731,8 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01808))_
 
+<a id="atom-technical-atom-2b2f858d8e7ab9b6"></a>
+
 ```
 {"car": 2,
 "cdr": {"car": 4,
@@ -1662,6 +1755,8 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01816))_
 
+<a id="atom-technical-atom-852b5f4ff7a52b7c"></a>
+
 > [Figure] (p.262)
 
 ### Technical frame 56: We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the problem
@@ -1671,6 +1766,8 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 > The problem is this: The game board is hidden from us. A player moves the chequer, following the rules. As the player moves the chequer, they calls out the direction of movement, e.g. '↑, →, ↑, ↓, ↑, →…' Write an algorithm that will determine whether the game halts, strictly from the called out directions, in finite time and space.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01818))_
+
+<a id="atom-technical-atom-a590a5517057cd75"></a>
 
 > If the arrow should cause the chequer to move off the edge of the board, the game halts.
 
@@ -1682,6 +1779,8 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01821))_
 
+<a id="atom-technical-atom-da06962e386b539d"></a>
+
 > You may use babeljs.io 95 , or ES6Fiddle 96 to check your work.
 
 ### Technical frame 58: We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the problem
@@ -1691,6 +1790,8 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 > Christine interrupted. 'To save time, we have written a template of the solution for you in ECMASCript 2015 notation. Fill in the blanks. Your code should not presume anything about the game-board's size or contents, only that it is given an arrow every time though the while loop. You may use babeljs.io 95 , or ES6Fiddle 96 to check your work. '
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01824))_
+
+<a id="atom-technical-atom-0699eed645a4372c"></a>
 
 ```
 const Game = (size = 8) => {
@@ -1732,6 +1833,8 @@ const arrow = board[x][y];
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01832))_
 
+<a id="atom-technical-atom-5e67bf82132459fa"></a>
+
 ```
 const MOVE = {
 "￿": ([x, y]) => [x - 1, y],
@@ -1759,6 +1862,8 @@ const position = [
 > 'Now that we have an iterable, we can transform the iterable of arrows into an iterable of positions.' The Carpenter sketched quickly. 'We want to take the arrows and convert them to positions. For that, we'll map the Game iterable to positions. A statefulMap is a lazy map that preserves state from iteration to iteration. That's what we need, because we need to know the current position to map each move to the next position.'
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01833))_
+
+<a id="atom-technical-atom-6081e6678c7d1d5f"></a>
 
 ```
 Math.floor(Math.random() * size),
@@ -1789,6 +1894,8 @@ yield direction;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01836))_
 
+<a id="atom-technical-atom-f42f65b6b3c55d2b"></a>
+
 ```
 const statefulMapWith = (fn, seed, iterable) =>
 ({
@@ -1808,6 +1915,8 @@ yield value;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01837))_
 
+<a id="atom-technical-atom-5cac2ca7f0313153"></a>
+
 ```
 }
 }
@@ -1821,6 +1930,8 @@ yield value;
 > 'We could draw positions as nodes in a graph, connected by arcs representing the arrows. Detecting whether the game terminates is equivalent to detecting whether the graph contains a cycle.'
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01839))_
+
+<a id="atom-technical-atom-65983b25668fd849"></a>
 
 ```
 const positionsOf = (game) =>
@@ -1843,6 +1954,8 @@ game);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01842))_
 
+<a id="atom-technical-atom-6e3131abf4d34290"></a>
+
 > [Figure] (p.267)
 
 ### Technical frame 65: We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the carpenter's solution
@@ -1852,6 +1965,8 @@ game);
 > 'A long time ago,' The Carpenter explained, 'Someone asked me a question in an interview. I have never forgotten the question, or the general form of the solution. The question was, Given a linked list, detect whether it contains a cycle. Use constant space. '
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01845))_
+
+<a id="atom-technical-atom-fbdc0186dc160d97"></a>
 
 ```
 const tortoiseAndHare = (iterable) => {
@@ -1885,6 +2000,8 @@ return false;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01850))_
 
+<a id="atom-technical-atom-23f05dfe5a02c060"></a>
+
 ```
 const terminates = (game) =>
 tortoiseAndHare(positionsOf(game))
@@ -1912,6 +2029,8 @@ terminates(Game({board: test, position: [3, 3]}))
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01861))_
 
+<a id="atom-technical-atom-e18d743db306f0a5"></a>
+
 > [Figure] (p.270)
 
 ### Technical frame 68: We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / after another drink
@@ -1921,6 +2040,8 @@ terminates(Game({board: test, position: [3, 3]}))
 > Kidu shrugged. 'You know, the requirement asked for a finite space algorithm, not a constant state algorithm. Doesn't it make sense to go with a faster finite space algorithm? There's no benefit to constant space if finite space is sufficient. '
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01868))_
+
+<a id="atom-technical-atom-1f7039bb05bad07c"></a>
 
 ```
 // implements Teleporting Tortoise
@@ -1952,6 +2073,8 @@ return false;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01870))_
 
+<a id="atom-technical-atom-6e1e8c30721fce75"></a>
+
 ```
 const hasCycle = (orderedCollection) => {
 const visited = new Set();
@@ -1973,75 +2096,79 @@ return false;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01874))_
 
+<a id="atom-technical-atom-baf41efc12d55afa"></a>
+
 > [Figure] (p.273)
 
 ### Technical frame 71: We'll keep it simple: / Interactive Generators
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01887))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01878))_
 
-> x has six possible moves, but they are really just two choices: 3 and anything else:
+> The first player will always be o , and they will always place their chequer in the top-left corner, coincidentally numbered o :
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01880))_
+
+<a id="atom-technical-atom-7eee6429dcf3e259"></a>
 
 > [Figure] (p.274)
 
 ### Technical frame 72: We'll keep it simple: / Interactive Generators
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01887))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01878))_
 
-> x has six possible moves, but they are really just two choices: 3 and anything else:
+> The first player will always be o , and they will always place their chequer in the top-left corner, coincidentally numbered o :
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01882))_
+
+<a id="atom-technical-atom-477d1a02b417eb59"></a>
 
 > [Figure] (p.274)
 
 ### Technical frame 73: We'll keep it simple: / Interactive Generators
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01887))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01878))_
 
-> x has six possible moves, but they are really just two choices: 3 and anything else:
+> The first player will always be o , and they will always place their chequer in the top-left corner, coincidentally numbered o :
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01884))_
+
+<a id="atom-technical-atom-89edf54c56661718"></a>
 
 > [Figure] (p.274)
 
 ### Technical frame 74: We'll keep it simple: / Interactive Generators
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01887))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01878))_
 
-> x has six possible moves, but they are really just two choices: 3 and anything else:
+> The first player will always be o , and they will always place their chequer in the top-left corner, coincidentally numbered o :
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01886))_
+
+<a id="atom-technical-atom-b28fbd22556115af"></a>
 
 > [Figure] (p.274)
 
 ### Technical frame 75: We'll keep it simple: / Interactive Generators
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01887))_
-
-> x has six possible moves, but they are really just two choices: 3 and anything else:
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01888))_
+
+<a id="atom-technical-atom-9edb61b96f5ecd84"></a>
 
 > [Figure] (p.274)
 
 ### Technical frame 76: We'll keep it simple: / Interactive Generators
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01887))_
-
-> x has six possible moves, but they are really just two choices: 3 and anything else:
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01890))_
+
+<a id="atom-technical-atom-0053b0b9f9573ac1"></a>
 
 > [Figure] (p.275)
 
 ### Technical frame 77: We'll keep it simple: / Interactive Generators
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01887))_
-
-> x has six possible moves, but they are really just two choices: 3 and anything else:
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01892))_
+
+<a id="atom-technical-atom-dbb0427d28303838"></a>
 
 > [Figure] (p.275)
 
@@ -2053,6 +2180,8 @@ return false;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01896))_
 
+<a id="atom-technical-atom-cb10e6f0eeb92ddf"></a>
+
 > [Figure] (p.275)
 
 ### Technical frame 79: We'll keep it simple: / Interactive Generators / representing naughts and crosses as a stateless function
@@ -2062,6 +2191,8 @@ return false;
 > We could plays naughts and crosses as a stateless function. We encode each position of the board in some fashion, and then we build a dictionary from positions to moves. For example, the entry for:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01898))_
+
+<a id="atom-technical-atom-ed96a88e635bb392"></a>
 
 > [Figure] (p.275)
 
@@ -2073,9 +2204,13 @@ return false;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01900))_
 
+<a id="atom-technical-atom-c92f013bd6aab97d"></a>
+
 > [Figure] (p.276)
 
 ### Technical atom 81
+
+<a id="atom-technical-atom-e477122c10f17b08"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01823))_
 
@@ -2083,17 +2218,17 @@ return false;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01825))_
 
+```text
+95 http://babeljs.io
+96 http://www.es6fiddle.net
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 95 | http://babeljs.io |
 | 96 | http://www.es6fiddle.net |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-95 http://babeljs.io
-96 http://www.es6fiddle.net
-```
 
 </details>

@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 6: / 6.3 Ranger Skill / [ ① Footprint Tracking [Intelligence] ] (No equipment restriction, not retriable): 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-footprint-tracking-intelligence-no-equipment-restriction-not-retriabl-d096aebd@4d0d114327214f7734a9ae958b1a2371
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-footprint-tracking-intelligence-no-equipment-restriction-not-retriabl-d096aebd@4dc513b9df37b27a16ea185144f8cf69
 ---
 
 # Chapter 6: / 6.3 Ranger Skill / [ ① Footprint Tracking [Intelligence] ] (No equipment restriction, not retriable)
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-f81328c3]] - broader source section: Chapter 6: / 6.3 Ranger Skill
 

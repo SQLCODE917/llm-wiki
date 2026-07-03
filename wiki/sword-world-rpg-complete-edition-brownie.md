@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Brownie: 1 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-brownie@024882fd257fc2e461ae4e565bc9f250
+projection_coverage: topic-sword-world-rpg-complete-edition-brownie@5bf1071dc31d277c98eb96c6d0d2b017
 ---
 
 # Brownie
@@ -31,12 +31,18 @@ What [[sword-world-rpg-complete-edition]] covers about brownie:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03752, source-range-0b9dec90-03753))_
 
+<a id="atom-technical-atom-c8efaa0c3f4b04fb"></a>
+
 > Base Mental Power Cost=3 Distance=Inside a building Area=Inside a building Duration=While the caster is asleep Effect=Do chores around the house Type=Expansion=-
+
+<a id="atom-technical-atom-cd44abbce406ab02"></a>
 
 > Resist=None
 
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-brownie-b317bc62]] - source section: [ Brownie ] shares source evidence from [ Brownie ]: Brownie is a spirit that appears in old mansions where people have lived for over 50 years. If the humans living in the mansion disappear or die, the brownie may tur ... [truncated]; [ Brownie ] shares technical record from [ Brownie ]: Languages=Silent spirit, mansion residents' language (13 shared statement(s), 2 shared atom(s))
 

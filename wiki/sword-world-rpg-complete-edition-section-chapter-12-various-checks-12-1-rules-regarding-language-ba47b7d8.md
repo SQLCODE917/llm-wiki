@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8
 page_kind: source
 page_family: section-reference
-summary: Chapter 12: Various Checks / 12.1 Rules Regarding Language: 107 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 12: Various Checks / 12.1 Rules Regarding Language: 107 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8@1c849ba18da0b5ce34487539456b2bb9
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8@2bdf9560a6970d0b9dbfc4130a6ff66d
 ---
 
 # Chapter 12: Various Checks / 12.1 Rules Regarding Language
@@ -17,32 +17,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-19369d81]] - broader source section: Chapter 12: Various Checks
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-and-runes-e9d35e0c]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / and Runes
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-normal-languages-c1caef74]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Normal Languages 》
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-runes-9d27818d]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Runes 》
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-forcelia-1f5595d6]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / Forcelia
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-common-05c48873]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Common 》
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-regional-ea5ed158]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Regional 》
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-m-rdan-2cbf30ea]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Mārdan ]
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-gundar-156d9902]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Gundar ]
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-low-ancient-f237b444]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-racial-3943705e]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Racial 》
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-elven-7bc6f0d0]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Elven ]
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-dwarven-c8bdf000]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Dwarven ]
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-impish-2f205422]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Impish ]
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-centaurian-21a594aa]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Centaurian ]
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-goblin-5346906a]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Goblin ]
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-giant-bba55fe3]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Giant ]
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-harpy-33c9b8e2]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Harpy ]
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-fairy-6e86c21b]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Fairy ]
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-merman-9684a4dd]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Merman ]
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-minotaur-9bd9bc9b]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Minotaur ]
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-lizardman-bd9dbc95]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Lizardman ]
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-12-1-3-adventurer-languages-c429aed9]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 12.1.3 Adventurer Languages
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-starting-adventurer-languages-6f11169b]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / Starting Adventurer Languages
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-languages-0f917e8e]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / Languages
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-ability-b62fb394]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / Ability
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-and-runes-e9d35e0c]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / and Runes
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-centaurian-21a594aa]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Centaurian ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-common-05c48873]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Common 》
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-dwarven-c8bdf000]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Dwarven ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-elven-7bc6f0d0]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Elven ]
 
 ## Statements
 
@@ -176,39 +160,3 @@ From [[sword-world-rpg-complete-edition]].
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / Ability
 
 - Some intelligent monsters have the ability to speak and read using a certain language. Of course, there are monsters with multiple language abilities. The table below lists the languages used by monsters. Monster details also have an entry called Language . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06470, source-range-0b9dec90-06472))_
-
-## Technical atoms
-
-### Technical frame 1: Chapter 12: Various Checks / 12.1 Rules Regarding Language
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06359))_
-
-> If you have a written language, you can not only have conversations with it, but also read it, but with a language that only has spoken words, you cannot read it, and can only have conversations with it.
-
-### Technical frame 2: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06380))_
-
-> This is because you cannot begin to understand the great civilization of the ancient kingdom unless you know low ancient.
-
-### Technical frame 3: Chapter 12: Various Checks / 12.1 Rules Regarding Language / Languages
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06418))_
-
-> If an adventurer who has learned low ancient through the sage skill acquires the sorcerer skill, they will not be able to learn another language because it would just be low ancient again . When acquiring these two skills, it is better to acquire them in the order of sorcerer → sage, which gives you a one language advantage.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06417))_
-
-> An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common).
-
-### Technical frame 4: Chapter 12: Various Checks / 12.1 Rules Regarding Language / Languages
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06418))_
-
-> If an adventurer who has learned low ancient through the sage skill acquires the sorcerer skill, they will not be able to learn another language because it would just be low ancient again . When acquiring these two skills, it is better to acquire them in the order of sorcerer → sage, which gives you a one language advantage.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06419, source-range-0b9dec90-06420))_
-
-> The languages that adventurers can learn are shown on Table 12-1: Languages.
-
-> Table 12-1: Languages

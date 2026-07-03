@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-like-this-from-28c3e8e3
 page_kind: source
+page_family: section-reference
 summary: Like this: / from: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-like-this-from-28c3e8e3@d520a5c57ffea134733e531f11961d99
+projection_coverage: section-javascriptallonge-section-like-this-from-28c3e8e3@b861e995bc3ad5fa8749743366306b00
 ---
 
 # Like this: / from
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-like-this-from-28c3e8e3@d
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-like-this-66cb3108]] - broader source section: Like this:
 
@@ -35,6 +38,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01613))_
 
+<a id="atom-technical-atom-519518765b459b83"></a>
+
 ```
 Array.from(UpTo1000)
 //=> [1,81,121,361,441,841,961]
@@ -47,6 +52,8 @@ Array.from(UpTo1000)
 > Nowwecan go 'end to end,' If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01616))_
+
+<a id="atom-technical-atom-295ceb0e30c2bc4e"></a>
 
 ```
 Stack3.from = function (iterable) {
@@ -70,6 +77,8 @@ return done ? EMPTY : Pair1(value, iterationToList(iteration));
 > Nowwecan go 'end to end,' If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01618))_
+
+<a id="atom-technical-atom-b248cb0bc23a448f"></a>
 
 ```
 const numberList = Pair1.from(untilWith((x) => x > 10, Numbers));

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-2-1-humans-intellect-0bd82034
 page_kind: source
 page_family: section-reference
-summary: 13.2.1 《 Humans 》 / 《 Intellect 》: 44 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.2.1 《 Humans 》 / 《 Intellect 》: 44 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-intellect-0bd82034@78b9e693a0b4e72347a2fcd84556be49
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-intellect-0bd82034@3b45b26eb61180bcc8513a248b2058e0
 ---
 
 # 13.2.1 《 Humans 》 / 《 Intellect 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-hum
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-2-1-humans-6e762209]] - broader source section: 13.2.1 《 Humans 》
 
@@ -50,6 +52,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06908))_
 
+<a id="atom-technical-atom-129e29139562230b"></a>
+
 > If given a command-- the only ones who can give commands are those who directly created the monster or those who used magic to give the command -they will faithfully carry it out, but they cannot make their own decisions.
 
 ### Technical frame 2: 13.2.1 《 Humans 》 / 《 Intellect 》
@@ -60,14 +64,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06909))_
 
+<a id="atom-technical-atom-58b9bcc7cabfecfe"></a>
+
 > They can distinguish their master and will follow their commands (if they're trained).
-
-### Technical frame 3: 13.2.1 《 Humans 》 / 《 Intellect 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06911))_
-
-> If it says human , it means an intellect that's almost the same as that of a human. They can handle tools, words, text, etc. freely. If you were to convert it to intelligence, it would be 10 to 15 .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06910))_
-
-> They can also use primitive tools, words, and a very limited number of written characters.

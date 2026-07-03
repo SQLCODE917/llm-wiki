@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 18.3 Rules for Destroying Structures / Climate: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-climate-8e19ea14@77e899fa98ae778975ef4f5d02abd937
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-climate-8e19ea14@8b6eb9bd0a9779110a052039d83cb9bc
 ---
 
 # 18.3 Rules for Destroying Structures / Climate
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-5e113017]] - broader source section: 18.3 Rules for Destroying Structures
 

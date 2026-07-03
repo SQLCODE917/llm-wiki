@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-imitator-835c887b
 page_kind: source
 page_family: section-reference
-summary: [ Imitator ]: 104 source-backed entries and 66 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Imitator ]: 104 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-imitator-835c887b@980d2df9baf0df43f11016794304c804
+projection_coverage: section-sword-world-rpg-complete-edition-section-imitator-835c887b@2b6f3de0899f7cb9fe0d1fcba0539983
 ---
 
 # [ Imitator ]
@@ -47,111 +47,61 @@ From [[sword-world-rpg-complete-edition]].
 
 > If you're caught by surprise, the imitator or thing will be given the first attack. At this time, a -4 penalty will be imposed on the character's evasion speed. Normal combat is possible from the 2nd round onwards.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08992))_
-
-> To avoid being surprised, a character must make a success roll against target score 16 using ranger skill level + intelligence bonus as the baseline score.
-
-### Technical frame 2: [ Imitator ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08993))_
-
-> If you're caught by surprise, the imitator or thing will be given the first attack. At this time, a -4 penalty will be imposed on the character's evasion speed. Normal combat is possible from the 2nd round onwards.
-
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08995, source-range-0b9dec90-08996, source-range-0b9dec90-08997, source-range-0b9dec90-08998, source-range-0b9dec90-08999, source-range-0b9dec90-09000, source-range-0b9dec90-09001, source-range-0b9dec90-09002, source-range-0b9dec90-09003, source-range-0b9dec90-09004, source-range-0b9dec90-09005, source-range-0b9dec90-09006, source-range-0b9dec90-09007))_
+
+<a id="atom-technical-atom-276619090581f83b"></a>
 
 > Monster Level=2
 
+<a id="atom-technical-atom-c991af899a00dc8f"></a>
+
 > Rarity=13
 
+<a id="atom-technical-atom-40fb6e2e2801251e"></a>
+
 > Agility=10
+
+<a id="atom-technical-atom-3ceafb813642c2dd"></a>
 
 > Number=One Movement Speed=10
 
+<a id="atom-technical-atom-aba905fb0694d84c"></a>
+
 > Frequency=Moderate
+
+<a id="atom-technical-atom-d29275d55036e32c"></a>
 
 > Intellect= Almost none Reaction=Violent
 
+<a id="atom-technical-atom-d40645b34ae94f66"></a>
+
 > Attack Points=Arms:10 (3)
+
+<a id="atom-technical-atom-e6740e1e7f6acb6e"></a>
 
 > Strike Points=4
 
+<a id="atom-technical-atom-afb9603433d31359"></a>
+
 > Evasion Points=10 (3) Defense Points=6
+
+<a id="atom-technical-atom-a07bc76b8c4d72b0"></a>
 
 > Life Points/Resistance=8/9 (2)
 
+<a id="atom-technical-atom-4603ab5a4d829ecf"></a>
+
 > Mental Points/Resistance=-/10 (3)
+
+<a id="atom-technical-atom-825fc09963019c31"></a>
 
 > Special Abilities=Camouflage (Sense target
 
+<a id="atom-technical-atom-658bcfb0fecd6edd"></a>
+
 > score=16)
 
-### Technical frame 3: [ Imitator ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09012))_
-
-> This is an imitator in the shape of a treasure chest. As soon as a thief touches it to examine it, it'll attack. Chest imitators can actually be used as treasure chests, so you may find treasure inside after defeating them.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09010, source-range-0b9dec90-09011))_
-
-> Languages=None
-
-> Perception=Magic
-
-### Technical frame 4: [ Imitator ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09012))_
-
-> This is an imitator in the shape of a treasure chest. As soon as a thief touches it to examine it, it'll attack. Chest imitators can actually be used as treasure chests, so you may find treasure inside after defeating them.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09014, source-range-0b9dec90-09015, source-range-0b9dec90-09016, source-range-0b9dec90-09017, source-range-0b9dec90-09018, source-range-0b9dec90-09019, source-range-0b9dec90-09020, source-range-0b9dec90-09021, source-range-0b9dec90-09022, source-range-0b9dec90-09023, source-range-0b9dec90-09024, source-range-0b9dec90-09025, source-range-0b9dec90-09026))_
-
-> Monster Level=3
-
-> Rarity=13
-
-> Agility=10
-
-> Movement Speed=10
-
-> Number=One
-
-> Frequency=Rare
-
-> Intellect=Almost none Reaction=Violent
-
-> Attack Points=Barehanded:10 (3)
-
-> Strike Points=5
-
-> Evasion Points=10 (3) Defense Points=7
-
-> Life Points/Resistance=16/11 (4)
-
-> Mental Points/Resistance=-/11 (4)
-
-> Special Abilities=Camouflage (Sense target score=16)
-
-### Technical frame 5: [ Imitator ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09033))_
-
-> This is an imitator in the shape of a door. As soon as you touch the knob, it'll attack. Anyone hit by a door imitator's attack on the first round will have one arm grabbed and will suffer a -4 penalty to evasion on subsequent rounds. Y ou can only use your other arm in combat, and your movement is restricted, so you cannot use ancient magic. The method of shaking your arm free is the same as strangling (see p. 236), but you will not suffer any damage from being grabbed, and you'll still be able
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09030, source-range-0b9dec90-09031, source-range-0b9dec90-09032))_
-
-> Habitat=Underground labyrinths, ruins
-
-> Languages=None
-
-> Perception=Magic
-
-### Technical frame 6: [ Imitator ]
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09033))_
-
-> Y ou can only use your other arm in combat, and your movement is restricted, so you cannot use ancient magic.
-
-### Technical frame 7: [ Imitator ]
+### Technical frame 2: [ Imitator ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09033))_
 
@@ -159,104 +109,54 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09035, source-range-0b9dec90-09036, source-range-0b9dec90-09037, source-range-0b9dec90-09038, source-range-0b9dec90-09039, source-range-0b9dec90-09040, source-range-0b9dec90-09041, source-range-0b9dec90-09042, source-range-0b9dec90-09043, source-range-0b9dec90-09044, source-range-0b9dec90-09045, source-range-0b9dec90-09046, source-range-0b9dec90-09047))_
 
+<a id="atom-technical-atom-987b77a5a28951cc"></a>
+
 > Monster Level=5
+
+<a id="atom-technical-atom-7cc1a400ab347332"></a>
 
 > Rarity=13
 
+<a id="atom-technical-atom-87ff057c906c0b1f"></a>
+
 > Agility=10
+
+<a id="atom-technical-atom-92011bb6e410d9b0"></a>
 
 > Movement Speed=10
 
+<a id="atom-technical-atom-f838eb57606179a2"></a>
+
 > Number=One
+
+<a id="atom-technical-atom-b192c5cbea07f12e"></a>
 
 > Frequency=Rare
 
+<a id="atom-technical-atom-dcd1d949bbbded2c"></a>
+
 > Intellect=Almost none Reaction=Violent
+
+<a id="atom-technical-atom-64d77019e051a10d"></a>
 
 > Attack Points=Arms:13 (6)
 
+<a id="atom-technical-atom-796c1452cad353d3"></a>
+
 > Strike Points=13
+
+<a id="atom-technical-atom-6a5e0c2d37aac989"></a>
 
 > Strike Points=11 (4) Defense Points=9
 
+<a id="atom-technical-atom-5bc128bb22362b82"></a>
+
 > Life Points/Resistance=24/15 (8)
+
+<a id="atom-technical-atom-8a6326286372a61e"></a>
 
 > Mental Points/Resistance=-/13 (6)
 
+<a id="atom-technical-atom-8bbb182ba8e1b99b"></a>
+
 > Special Abilities=Camouflage (Sense target score=16)
-
-### Technical frame 8: [ Imitator ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09054))_
-
-> This is the most dangerous type of imitator. The entire floor of one room is an imitator which attacks anyone who enters the room. Anyone standing on a floor imitator that's begun to move must suffer a -2 penalty to attack and evasion due to unstable footing. A floor imitator can attack anyone standing on top of it. Anyone hit by a floor imitator's attack will be enwrapped in its amorphous body and strangled (see p. 236).
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09051, source-range-0b9dec90-09052, source-range-0b9dec90-09053))_
-
-> Habitat=Underground labyrinths, ruins
-
-> Languages=None
-
-> Perception=Magic
-
-### Technical frame 9: [ Imitator ]
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09054))_
-
-> A floor imitator can attack anyone standing on top of it.
-
-### Technical frame 10: [ Imitator ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09054))_
-
-> This is the most dangerous type of imitator. The entire floor of one room is an imitator which attacks anyone who enters the room. Anyone standing on a floor imitator that's begun to move must suffer a -2 penalty to attack and evasion due to unstable footing. A floor imitator can attack anyone standing on top of it. Anyone hit by a floor imitator's attack will be enwrapped in its amorphous body and strangled (see p. 236).
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09056, source-range-0b9dec90-09057, source-range-0b9dec90-09058, source-range-0b9dec90-09059, source-range-0b9dec90-09060, source-range-0b9dec90-09061, source-range-0b9dec90-09062, source-range-0b9dec90-09063, source-range-0b9dec90-09064, source-range-0b9dec90-09065, source-range-0b9dec90-09066, source-range-0b9dec90-09067, source-range-0b9dec90-09068))_
-
-> Monster Level=3
-
-> Rarity=16
-
-> Agility=12
-
-> Movement Speed=12
-
-> Number=One
-
-> Frequency=Very rare
-
-> Intellect=Human
-
-> Reaction=Neutral to adversarial
-
-> Attack Points=Tentacles:10 (3)
-
-> Strike Points=7
-
-> Evasion Points=11 (4) Defense Points=7
-
-> Life Points/Resistance=16/11 (4) Mental Points/Resistance=12/11 (4) score=16)
-
-> Special Abilities=Camouflage (Sense target
-
-### Technical frame 11: [ Imitator ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09073))_
-
-> Like an imitator, a thing is an amorphous creature, and according to one theory it's said to be an imitator that's turned feral. The difference is that they have intellect and can transform into any creature so long as it's close to human size. Although it is nearly impossible to see through its clever transformation, in contrast to an imitator, it's not very good at transforming into inanimate objects.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09071, source-range-0b9dec90-09072))_
-
-> Habitat=Underground labyrinths, ruins Languages=Regional
-
-> Perception=Magic
-
-### Technical frame 12: [ Imitator ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09074))_
-
-> Things often eat humans. They approach their prey in the form of a human or elf, catch their opponent off guard, then aim to attack when they're alone. They target humans because they're easier to deceive than animals. Animals have a keen sense of smell, so no matter how closely a thing resembles the real deal, they'll be able to tell by the difference in smell.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09075))_
-
-> During combat, a thing can attack up to 6 times by transforming its body so as to produce numerous arms and tentacles.

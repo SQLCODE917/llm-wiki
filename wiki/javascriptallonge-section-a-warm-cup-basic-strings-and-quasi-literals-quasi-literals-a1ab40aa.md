@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-quasi-literals-a1ab40aa
 page_kind: source
-summary: A Warm Cup: Basic Strings and Quasi-Literals / quasi-literals: 11 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: A Warm Cup: Basic Strings and Quasi-Literals / quasi-literals: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-quasi-literals-a1ab40aa@ba6633154466648925f56a91cd1e3e6e
+projection_coverage: section-javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-quasi-literals-a1ab40aa@4bccd8559a31a51222bf45b75157ee6b
 ---
 
 # A Warm Cup: Basic Strings and Quasi-Literals / quasi-literals
@@ -16,7 +17,12 @@ From [[javascriptallonge]].
 
 ## Related pages
 
+### Source structure
+
 - [[javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-d5c66d04]] - broader source section: A Warm Cup: Basic Strings and Quasi-Literals
+
+### Topics
+
 - [[javascriptallonge-quasi-literal]] - topic hub: opens the topic page for Quasi Literal
 
 ## Statements
@@ -37,6 +43,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01506))_
 
+<a id="atom-technical-atom-d1c1badbce303be3"></a>
+
 ```
 `foobar`
 //=> 'foobar'
@@ -46,14 +54,16 @@ From [[javascriptallonge]].
 
 ### Technical frame 2: A Warm Cup: Basic Strings and Quasi-Literals / quasi-literals
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01510))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01513))_
 
-> Aquasi-literal is computationally equivalent to an expression using + . So the above expression could also be written:
+> However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They're easier to read and it's easier to avid errors like the following:
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01509))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01512))_
+
+<a id="atom-technical-atom-53001ff2df5804aa"></a>
 
 ```
-`A popular number for nerds is ${40 + 2}`
+'A popular number for nerds is ' + (40 + 2)
 //=> 'A popular number for nerds is 42'
 ```
 
@@ -63,20 +73,9 @@ From [[javascriptallonge]].
 
 > However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They're easier to read and it's easier to avid errors like the following:
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01512))_
-
-```
-'A popular number for nerds is ' + (40 + 2)
-//=> 'A popular number for nerds is 42'
-```
-
-### Technical frame 4: A Warm Cup: Basic Strings and Quasi-Literals / quasi-literals
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01513))_
-
-> However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They're easier to read and it's easier to avid errors like the following:
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01514))_
+
+<a id="atom-technical-atom-9826aa7ca28708d6"></a>
 
 ```
 'A popular number for nerds is' + (40 + 2)

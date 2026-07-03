@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-3f50274e
 page_kind: source
-summary: And also:: 429 source-backed entries and 130 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: And also:: 413 source-backed entries and 49 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-3f50274e@10c3d42a37c2c3eb768bbfbedfa52610
+projection_coverage: section-javascriptallonge-section-and-also-3f50274e@b9b664b5f30419e6d2a5026bd0f6037c
 ---
 
 # And also:
@@ -16,14 +17,15 @@ From [[javascriptallonge]].
 
 ## Related pages
 
-- [[javascriptallonge-section-and-also-functions-that-evaluate-to-functions-0eac2f2e]] - narrower source section: And also: / functions that evaluate to functions
+### Source structure
+
 - [[javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-f00edd2f]] - narrower source section: And also: / Ah. I'd Like to Have an Argument, Please. 22
-- [[javascriptallonge-section-and-also-closures-and-scope-d1679ec0]] - narrower source section: And also: / Closures and Scope
-- [[javascriptallonge-section-and-also-that-constant-coffee-craving-7d1b2fd1]] - narrower source section: And also: / That Constant Coffee Craving
-- [[javascriptallonge-section-and-also-naming-functions-37c9be8d]] - narrower source section: And also: / Naming Functions
-- [[javascriptallonge-section-and-also-combinators-and-function-decorators-c48f42db]] - narrower source section: And also: / Combinators and Function Decorators
 - [[javascriptallonge-section-and-also-building-blocks-96359378]] - narrower source section: And also: / Building Blocks
+- [[javascriptallonge-section-and-also-closures-and-scope-d1679ec0]] - narrower source section: And also: / Closures and Scope
+- [[javascriptallonge-section-and-also-combinators-and-function-decorators-c48f42db]] - narrower source section: And also: / Combinators and Function Decorators
+- [[javascriptallonge-section-and-also-functions-that-evaluate-to-functions-0eac2f2e]] - narrower source section: And also: / functions that evaluate to functions
 - [[javascriptallonge-section-and-also-magic-names-ced4852f]] - narrower source section: And also: / Magic Names
+- [[javascriptallonge-section-and-also-naming-functions-37c9be8d]] - narrower source section: And also: / Naming Functions
 - [[javascriptallonge-section-and-also-summary-ece908a9]] - narrower source section: And also: / Summary
 
 ## Statements by subsection
@@ -59,8 +61,7 @@ From [[javascriptallonge]].
 
 ### And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings
 
-- Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we're going to work our way up from (diameter) => diameter * 3.14159265 to functions like: _(javascriptallonge.pdf (source-range-7239e085-00298))_
-- (x) => (y) => x just looks crazy, as if we are learning English as a second language and the teacher promises us that soon we will be using words like antidisestablishmentarianism . Besides a desire to use long words to sound impressive, this is not going to seem attractive until we find ourselves wanting to discuss the role of the Church of England in 19th century British politics. _(javascriptallonge.pdf (source-range-7239e085-00300))_
+- Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we're going to work our way up from (diameter) => diameter * 3.14159265 to functions like: (x) => (y) => x just looks crazy, as if we are learning English as a second language and the teacher promises us that soon we will be using words like antidisestablishmentarianism . Besides a desire to use long words to sound impressive, this is not going to seem attractive until we find ourselves wanting to discuss the role of the Church of England in 19th century British politics. _(javascriptallonge.pdf (source-range-7239e085-00298, source-range-7239e085-00300))_
 - But there's another reason for learning the word antidisestablishmentarianism : We might learn how prefixes and postfixes work in English grammar. It's the same thing with (x) => (y) => x . It has a certain important meaning in its own right, and it's also an excellent excuse to learn about functions that make functions, environments, variables, and more. _(javascriptallonge.pdf (source-range-7239e085-00301))_
 - In order to talk about how this works, we should agree on a few terms (you may already know them, but let's check-in together and 'synchronize our dictionaries'). The first x , the one in (x) => ... , is an argument . The y in function (y) ... is another argument. The second x , the one in => x , is not an argument, it's an expression referring to a variable . Arguments and variables work the same way whether we're talking about (x) => (y) => x or just plain (x) => x . _(javascriptallonge.pdf (source-range-7239e085-00302))_
 - Every time a function is invoked ('invoked' means 'applied to zero or more arguments'), a new environment is created. An environment is a (possibly empty) dictionary that maps variables to values by name. The x in the expression that we call a 'variable' is itself an expression that is evaluated by looking up the value in the environment. _(javascriptallonge.pdf (source-range-7239e085-00303))_
@@ -88,7 +89,6 @@ From [[javascriptallonge]].
 ### And also: / Closures and Scope
 
 - The environment belonging to the function with signature (x) => ... becomes {x: 1, ...} , and the result of applying the function is another function value. It makes sense that the result value is a function, because the expression for (x) => ... 's body is: _(javascriptallonge.pdf (source-range-7239e085-00334))_
-- So now we have a value representing that function. Then we're going to take the value of that function and apply it to the argument 2 , something like this: _(javascriptallonge.pdf (source-range-7239e085-00336))_
 - So we seem to get a new environment {y: 2, ...} . How is the expression x going to be evaluated in that function's environment? There is no x in its environment, it must come from somewhere else. _(javascriptallonge.pdf (source-range-7239e085-00338))_
 - This, by the way, is one of the great defining characteristics of JavaScript and languages in the same family: Whether they allow things like functions to nest inside each other, and if so, how they handle variables from 'outside' of a function that are referenced inside a function. For example, here's the equivalent code in Ruby: _(javascriptallonge.pdf (source-range-7239e085-00339))_
 - It makes sense that the result value is a function, because the expression for (x) => ... _(javascriptallonge.pdf (source-range-7239e085-00334))_
@@ -152,12 +152,10 @@ From [[javascriptallonge]].
 - 29 JavaScript programmers regularly use the idea of writing an expression that denotes a function and then immediately applying it to arguments. Explaining the pattern, Ben Alman coined the term [Immediately Invoked Function Expression][iife] for it, often abbreviated 'IIFE.' _(javascriptallonge.pdf (source-range-7239e085-00404))_
 - Everything else is encapsulated in its body. That's how it should be, naming PI is its concern, not ours. The other formulation: _(javascriptallonge.pdf (source-range-7239e085-00406))_
 - Well, the wrinkle with this is that typically, invoking functions is considerably more expensive than evaluating expressions. Every time we invoke the outer function, we'll invoke the inner function. We could get around this by writing _(javascriptallonge.pdf (source-range-7239e085-00410))_
-- But then we've obfuscated our code, and we don't want to do that unless we absolutely have to. _(javascriptallonge.pdf (source-range-7239e085-00412))_
 - What would be very nice is if the language gave us a way to bind names inside of blocks without incurring the cost of a function invocation. And JavaScript does. _(javascriptallonge.pdf (source-range-7239e085-00413))_
 - We can turn things inside-out by putting the binding inside our diameter calculating function, like this: _(javascriptallonge.pdf (source-range-7239e085-00398))_
 - There's another way we can make a function that binds 3.14159265 to the name PI and then uses that in its expression. _(javascriptallonge.pdf (source-range-7239e085-00398))_
 - 29 JavaScript programmers regularly use the idea of writing an expression that denotes a function and then immediately applying it to arguments. _(javascriptallonge.pdf (source-range-7239e085-00404))_
-- But then we've obfuscated our code, and we don't want to do that unless we absolutely have to. _(javascriptallonge.pdf (source-range-7239e085-00412))_
 - What would be very nice is if the language gave us a way to bind names inside of blocks without incurring the cost of a function invocation. _(javascriptallonge.pdf (source-range-7239e085-00413))_
 
 ### And also: / That Constant Coffee Craving / const
@@ -187,7 +185,6 @@ From [[javascriptallonge]].
 - It's more than a bit convoluted, but it binds ((PI) => (diameter) => diameter * PI)(3.14159265) to diameter_fn and evaluates the expression that we've elided. We can use any expression in there, and that expression can invoke diameter_fn . For example: _(javascriptallonge.pdf (source-range-7239e085-00452))_
 - We know this from the chapter on closures, but even though PI is not bound when we invoke diameter_fn by evaluating diameter_fn(2) , PI is bound when we evaluated (diameter) => diameter * PI , and thus the expression diameter * PI is able to access values for PI and diameter when we evaluate diameter_fn . _(javascriptallonge.pdf (source-range-7239e085-00454))_
 - This is called lexical scoping 31 , because we can discover where a name is bound by looking at the source code for the program. We can see that PI is bound in an environment surrounding (diameter) => diameter * PI , we don't need to know where diameter_fn is invoked. _(javascriptallonge.pdf (source-range-7239e085-00455))_
-- Although we have bound 3 to PI in the environment surrounding diameter_fn(2) , the value that counts is 3.14159265 , the value we bound to PI in the environment surrounding (diameter) ⇒ diameter * PI. _(javascriptallonge.pdf (source-range-7239e085-00458))_
 - That much we can carefully work out from the way closures work. Does const work the same way? Let's find out: _(javascriptallonge.pdf (source-range-7239e085-00459))_
 - Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. _(javascriptallonge.pdf (source-range-7239e085-00462))_
 - We know this from the chapter on closures, but even though PI is not bound when we invoke diameter_fn by evaluating diameter_fn(2) , PI is bound when we evaluated (diameter) => diameter * PI , and thus the expression diameter * PI is able to access values for PI and diameter when we evaluate diameter_fn . _(javascriptallonge.pdf (source-range-7239e085-00454))_
@@ -198,7 +195,6 @@ From [[javascriptallonge]].
 - We just saw that values bound with const use lexical scope, just like values bound with parameters. They are looked up in the environment where they are declared. And we know that functions create environments. Parameters are declared when we create functions, so it makes sense that parameters are bound to environments created when we invoke functions. _(javascriptallonge.pdf (source-range-7239e085-00464))_
 - But const statements can appear inside blocks, and we saw that blocks can appear inside of other blocks, including function bodies. So where are const variables bound? In the function environment? Or in an environment corresponding to the block? _(javascriptallonge.pdf (source-range-7239e085-00465))_
 - We can test this by creating another conflict. But instead of binding two different variables to the same name in two different places, we'll bind two different values to the same name, but one environment will be completely enclosed by the other. _(javascriptallonge.pdf (source-range-7239e085-00466))_
-- And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the 'outer' environment? Let's rewrite things slightly differently: _(javascriptallonge.pdf (source-range-7239e085-00473))_
 - Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI . Does that binding 'overwrite' the outer one? Will our function return 6 or 6.2831853 ? This is a book, you've already scanned ahead, so you know that the answer is no , the inner binding does not overwrite the outer binding: _(javascriptallonge.pdf (source-range-7239e085-00475))_
 - We say that when we bind a variable using a parameter inside another binding, the inner binding shadows the outer binding. It has effect inside its own scope, but does not affect the binding in the enclosing scope. _(javascriptallonge.pdf (source-range-7239e085-00477))_
 - Parameters are only bound when we invoke a function. That's why we made all these IIFEs. But const statements can appear inside blocks. What happens when we use a const inside of a block? We'll need a gratuitous block. We've seen if statements, what could be more gratuitous than: _(javascriptallonge.pdf (source-range-7239e085-00481))_
@@ -233,7 +229,6 @@ From [[javascriptallonge]].
 - even is bound within the function itself, but not outside it. This is useful for making recursive functions as we see above, and it speaks to the principle of least privilege: If you don't need to name it anywhere else, you needn't. _(javascriptallonge.pdf (source-range-7239e085-00535))_
 - This means that if we want our functions to return a value, we always need to use the return keyword _(javascriptallonge.pdf (source-range-7239e085-00513))_
 - Clearly, the name even is bound to the function within the function's body . _(javascriptallonge.pdf (source-range-7239e085-00533))_
-- even is bound within the function itself, but not outside it. _(javascriptallonge.pdf (source-range-7239e085-00535))_
 
 ### And also: / Naming Functions / function declarations
 
@@ -271,9 +266,7 @@ From [[javascriptallonge]].
 
 ### And also: / Combinators and Function Decorators / function decorators
 
-- So instead of writing !someFunction(42) , we can write not(someFunction)(42) . Hardly progress. But like compose , we could write either: _(javascriptallonge.pdf (source-range-7239e085-00572))_
 - not is a function decorator because it modifies a function while remaining strongly related to the original function's semantics. You'll see other function decorators in the recipes, like once and maybe. Function decorators aren't strict about being pure functions, so there's more latitude for making decorators than combinators. _(javascriptallonge.pdf (source-range-7239e085-00578))_
-- not is a function decorator because it modifies a function while remaining strongly related to the original function's semantics. _(javascriptallonge.pdf (source-range-7239e085-00578))_
 
 ### And also: / Building Blocks
 
@@ -303,14 +296,11 @@ From [[javascriptallonge]].
 
 - There are two separate rules for these 'magic' names, one for when you invoke a function using the function keyword, and another for functions defined with 'fat arrows.' We'll begin with how things work for functions defined with the function keyword. _(javascriptallonge.pdf (source-range-7239e085-00607))_
 - The first magic name is this , and it is bound to something called the function's context. We will explore this in more detail when we start discussing objects and classes. The second magic name is very interesting, it's called arguments , and the most interesting thing about it is that it contains a list of arguments passed to a function: _(javascriptallonge.pdf (source-range-7239e085-00608))_
-- arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this: _(javascriptallonge.pdf (source-range-7239e085-00612))_
 - The most common use of the arguments binding is to build functions that can take a variable number of arguments. We'll see it used in many of the recipes, starting off with partial application and ellipses. _(javascriptallonge.pdf (source-range-7239e085-00617))_
 
 ### And also: / Magic Names / magic names and fat arrows
 
 - For example, when this expression's inner function is defined with function , arguments[0] refers to its only argument, "inner" : _(javascriptallonge.pdf (source-range-7239e085-00620))_
-- But if we use a fat arrow, arguments will be defined in the outer environment, the one defined with function . And thus arguments[0] will refer to "outer" , not to "inner" : _(javascriptallonge.pdf (source-range-7239e085-00622))_
-- Although it seems quixotic for the two syntaxes to have different semantics, it makes sense when you consider the design goal: Fat arrow functions are designed to be very lightweight and are often used with constructs like mapping or callbacks to emulate syntax. _(javascriptallonge.pdf (source-range-7239e085-00624))_
 - To give a contrived example, this function takes a number and returns an array representing a row in a hypothetical multiplication table. It uses mapWith , which we discussed in Building Blocks. 44 We'll use arguments just to show the difference between using a fat arrow and the function keyword: _(javascriptallonge.pdf (source-range-7239e085-00625))_
 - This works just fine, because arguments[0] refers to the 3 we passed to the function row . Our 'fat arrow' function (column) => column * arguments[0] doesn't bind arguments when it's invoked. But if we rewrite row to use the function keyword, it stops working: _(javascriptallonge.pdf (source-range-7239e085-00627))_
 - 44 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It's the same idea, after all. _(javascriptallonge.pdf (source-range-7239e085-00628))_
@@ -345,6 +335,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00253))_
 
+<a id="atom-technical-atom-b38cccfaace6b84f"></a>
+
 ```
 (() => {
 return 1 + 1;
@@ -355,91 +347,16 @@ return 1 + 1;
 
 ### Technical frame 2: And also:
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00254))_
-
-> The return statement is the first statement we've seen, and it behaves differently than an expression. For example, you can't use one as the expression in a simple function, because it isn't an expression:
-
-### Technical frame 3: And also:
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00255))_
+
+<a id="atom-technical-atom-983f55989e03a074"></a>
 
 ```
 (() => return 0)()
 //=> ERROR
 ```
 
-### Technical frame 4: And also: / functions that evaluate to functions
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00261))_
-
-> That's a function! It's a function that when applied, evaluates to a function that when applied, evaluates to 0 . So we have a function, that returns a function, that returns zero . Likewise:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00258))_
-
-> If an expression that evaluates to a function is, well, an expression, and if a return statement can have any expression on its right side… Can we put an expression that evaluates to a function on the right side of a function expression?
-
-### Technical frame 5: And also: / functions that evaluate to functions
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00261))_
-
-> That's a function! It's a function that when applied, evaluates to a function that when applied, evaluates to 0 . So we have a function, that returns a function, that returns zero . Likewise:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00260))_
-
-```
-() => () => 0
-```
-
-### Technical frame 6: And also: / functions that evaluate to functions
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00268))_
-
-> Well. We've been very clever, but so far this all seems very abstract. Diffraction of a crystal is beautiful and interesting in its own right, but you can't blame us for wanting to be shown a practical use for it, like being able to determine the composition of a star millions of light years away. So… In the next chapter, 'I'd Like to Have an Argument, Please,' we'll see how to make functions practical.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00262))_
-
-```
-() => () => true
-```
-
-### Technical frame 7: And also: / functions that evaluate to functions
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00268))_
-
-> Well. We've been very clever, but so far this all seems very abstract. Diffraction of a crystal is beautiful and interesting in its own right, but you can't blame us for wanting to be shown a practical use for it, like being able to determine the composition of a star millions of light years away. So… In the next chapter, 'I'd Like to Have an Argument, Please,' we'll see how to make functions practical.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00264))_
-
-```
-(() => () => true)()()
-//=> true
-```
-
-### Technical frame 8: And also: / functions that evaluate to functions
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00268))_
-
-> Well. We've been very clever, but so far this all seems very abstract. Diffraction of a crystal is beautiful and interesting in its own right, but you can't blame us for wanting to be shown a practical use for it, like being able to determine the composition of a star millions of light years away. So… In the next chapter, 'I'd Like to Have an Argument, Please,' we'll see how to make functions practical.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00266))_
-
-```
-() => () => { return true; }
-```
-
-### Technical frame 9: And also: / Ah. I'd Like to Have an Argument, Please. 22
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00274))_
-
-> This function has one argument, room , and an empty body. Here's a function with two arguments and an empty body:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00273))_
-
-```
-(room) => {}
-```
-
-### Technical frame 10: And also: / Ah. I'd Like to Have an Argument, Please. 22
+### Technical frame 3: And also: / Ah. I'd Like to Have an Argument, Please. 22
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00276))_
 
@@ -447,11 +364,13 @@ return 1 + 1;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00275))_
 
+<a id="atom-technical-atom-e3d6fc001ce32d0d"></a>
+
 ```
 (room, board) => {}
 ```
 
-### Technical frame 11: And also: / Ah. I'd Like to Have an Argument, Please. 22
+### Technical frame 4: And also: / Ah. I'd Like to Have an Argument, Please. 22
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00278))_
 
@@ -459,24 +378,13 @@ return 1 + 1;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00277))_
 
+<a id="atom-technical-atom-8b0b88078e233caf"></a>
+
 ```
 (diameter) => diameter * 3.14159265
 ```
 
-### Technical frame 12: And also: / Ah. I'd Like to Have an Argument, Please. 22
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00281))_
-
-> You won't be surprised to see how to write and apply a function to two arguments:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00280))_
-
-```
-((diameter) => diameter * 3.14159265)(2)
-//=> 6.2831853
-```
-
-### Technical frame 13: And also: / Ah. I'd Like to Have an Argument, Please. 22
+### Technical frame 5: And also: / Ah. I'd Like to Have an Argument, Please. 22
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00281))_
 
@@ -484,12 +392,14 @@ return 1 + 1;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00283))_
 
+<a id="atom-technical-atom-ec0274d1c7132fae"></a>
+
 ```
 ((room, board) => room + board)(800, 150)
 //=> 950
 ```
 
-### Technical frame 14: And also: / Ah. I'd Like to Have an Argument, Please. 22
+### Technical frame 6: And also: / Ah. I'd Like to Have an Argument, Please. 22
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00281))_
 
@@ -497,67 +407,25 @@ return 1 + 1;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00284))_
 
+<a id="atom-technical-atom-0d11bf428e4f69e1"></a>
+
 > [Figure] (p.40)
 
-### Technical frame 15: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by value
+### Technical frame 7: And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00295))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00301))_
 
-> What happened internally is that the expression 1 + 1 was evaluated first, resulting in 2 . Then our circumference function was applied to 2 . 24
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00294))_
-
-```
-((diameter) => diameter * 3.14159265)(1 + 1)
-//=> 6.2831853
-```
-
-### Technical frame 16: And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00300))_
-
-> (x) => (y) => x just looks crazy, as if we are learning English as a second language and the teacher promises us that soon we will be using words like antidisestablishmentarianism . Besides a desire to use long words to sound impressive, this is not going to seem attractive until we find ourselves wanting to discuss the role of the Church of England in 19th century British politics.
+> But there's another reason for learning the word antidisestablishmentarianism : We might learn how prefixes and postfixes work in English grammar. It's the same thing with (x) => (y) => x . It has a certain important meaning in its own right, and it's also an excellent excuse to learn about functions that make functions, environments, variables, and more.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00299))_
+
+<a id="atom-technical-atom-3aa4f4b69198f2f9"></a>
 
 ```
 (x) => (y) => x
 ```
 
-### Technical frame 17: And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00314))_
-
-> The value '2' is bound to the name 'x' in the environment.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00306))_
-
-```
-((x) => x)(2)
-//=> 2
-```
-
-### Technical frame 18: And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00314))_
-
-> The value '2' is bound to the name 'x' in the environment.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00310))_
-
-> - One sub-expression, (x) => x evaluates to a function.
-
-### Technical frame 19: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00324))_
-
-> Whatabout reference types? JavaScript does not place copies of reference values in any environment. JavaScript places references to reference types in environments, and when the value needs to be used, JavaScript uses the reference to obtain the original.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00322))_
-
-> So JavaScript can make as many copies of strings, numbers, or booleans as it wishes.
-
-### Technical frame 20: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing
+### Technical frame 8: And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00328))_
 
@@ -565,12 +433,14 @@ return 1 + 1;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00327))_
 
+<a id="atom-technical-atom-352494efef5d9591"></a>
+
 ```
 (value) =>
 ((ref1, ref2) => ref1 === ref2)(value, value)
 ```
 
-### Technical frame 21: And also: / Closures and Scope
+### Technical frame 9: And also: / Closures and Scope
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00334))_
 
@@ -578,12 +448,14 @@ return 1 + 1;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00331))_
 
+<a id="atom-technical-atom-f9a48554ab45582a"></a>
+
 ```
 ((x) => (y) => x)(1)(2)
 //=> 1
 ```
 
-### Technical frame 22: And also: / Closures and Scope
+### Technical frame 10: And also: / Closures and Scope
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00334))_
 
@@ -591,24 +463,28 @@ return 1 + 1;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00333))_
 
+<a id="atom-technical-atom-4d31ee93c2de0bd2"></a>
+
 ```
 ((x) => (y) => x)(1)
 //=> [Function]
 ```
 
-### Technical frame 23: And also: / Closures and Scope
+### Technical frame 11: And also: / Closures and Scope
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00336))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00338))_
 
-> So now we have a value representing that function. Then we're going to take the value of that function and apply it to the argument 2 , something like this:
+> So we seem to get a new environment {y: 2, ...} . How is the expression x going to be evaluated in that function's environment? There is no x in its environment, it must come from somewhere else.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00335))_
+
+<a id="atom-technical-atom-025ba0651eab0fd2"></a>
 
 ```
 (y) => x
 ```
 
-### Technical frame 24: And also: / Closures and Scope
+### Technical frame 12: And also: / Closures and Scope
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00338))_
 
@@ -616,17 +492,21 @@ return 1 + 1;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00337))_
 
+<a id="atom-technical-atom-b77c7e931dde1312"></a>
+
 ```
 ((y) => x)(2)
 ```
 
-### Technical frame 25: And also: / Closures and Scope
+### Technical frame 13: And also: / Closures and Scope
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00339))_
 
 > This, by the way, is one of the great defining characteristics of JavaScript and languages in the same family: Whether they allow things like functions to nest inside each other, and if so, how they handle variables from 'outside' of a function that are referenced inside a function. For example, here's the equivalent code in Ruby:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00340))_
+
+<a id="atom-technical-atom-40f6f8e50dccfc7c"></a>
 
 ```
 lambda { |x|
@@ -635,27 +515,7 @@ lambda { |y| x }
 #=> 1
 ```
 
-### Technical frame 26: And also: / Closures and Scope / if functions without free variables are pure, are closures impure?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00351))_
-
-> If pure functions can contain closures, can a closure contain a pure function? Using only what we've learned so far, attempt to compose a closure that contains a pure function. If you can't, give your reasoning for why it's impossible.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00350))_
-
-> [Figure] (p.45)
-
-### Technical frame 27: And also: / Closures and Scope / if functions without free variables are pure, are closures impure?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00352))_
-
-> Pure functions always mean the same thing because all of their 'inputs' are fully defined by their arguments. Not so with a closure. If I present to you this pure function (x, y) => x + y , we know exactly what it does with (2, 2) . But what about this closure: (y) => x + y ? We can't say what it will do with argument (2) without understanding the magic for evaluating the free variable x .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00351))_
-
-> If pure functions can contain closures, can a closure contain a pure function?
-
-### Technical frame 28: And also: / Closures and Scope / it's always the environment
+### Technical frame 14: And also: / Closures and Scope / it's always the environment
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00358))_
 
@@ -663,35 +523,11 @@ lambda { |y| x }
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00356))_
 
+<a id="atom-technical-atom-634e3513bd1b5d02"></a>
+
 > So whenever a function is applied to arguments, its environment always has a reference to its parent environment.
 
-### Technical frame 29: And also: / Closures and Scope / it's always the environment
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00365))_
-
-> Only you call it with (1)(2)(3) instead of (1, 2, 3) . The other big difference is that you can call it with (1) and get a function back that you can later call with (2)(3) .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00360))_
-
-```
-bh
-```
-
-### Technical frame 30: And also: / Closures and Scope / it's always the environment
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00365))_
-
-> Only you call it with (1)(2)(3) instead of (1, 2, 3) . The other big difference is that you can call it with (1) and get a function back that you can later call with (2)(3) .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00362))_
-
-```
-(x) =>
-(y) =>
-(z) => x + y + z
-```
-
-### Technical frame 31: And also: / Closures and Scope / it's always the environment
+### Technical frame 15: And also: / Closures and Scope / it's always the environment
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00365))_
 
@@ -699,24 +535,13 @@ bh
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00364))_
 
+<a id="atom-technical-atom-2bf197b4e3f33351"></a>
+
 ```
 (x, y, z) => x + y + z
 ```
 
-### Technical frame 32: And also: / Closures and Scope / it's always the environment
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00366))_
-
-> The first function is the result of currying a the second function. Calling a curried function with only some of its arguments is sometimes called partial application b . Some programming languages automatically curry and partially evaluate functions without the need to manually nest them.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00367))_
-
-```
-ah
-bh
-```
-
-### Technical frame 33: And also: / Closures and Scope / shadowy variables from a shadowy planet
+### Technical frame 16: And also: / Closures and Scope / shadowy variables from a shadowy planet
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00373))_
 
@@ -724,18 +549,22 @@ bh
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00372))_
 
+<a id="atom-technical-atom-28028bea365e6179"></a>
+
 ```
 (x) =>
 (x, y) => x + y
 ```
 
-### Technical frame 34: And also: / Closures and Scope / shadowy variables from a shadowy planet
+### Technical frame 17: And also: / Closures and Scope / shadowy variables from a shadowy planet
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00375))_
 
 > When evaluating x + y + z , JavaScript will find x and y in the great-grandparent scope and z in the parent scope. The x in the great-great-grandparent scope is ignored, as are both w s. When a variable has the same name as an ancestor environment's binding, it is said to shadow the ancestor.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00374))_
+
+<a id="atom-technical-atom-d2b62258197a898f"></a>
 
 ```
 (x) =>
@@ -745,88 +574,7 @@ bh
 x + y + z
 ```
 
-### Technical frame 35: And also: / Closures and Scope / which came first, the chicken or the egg?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00383))_
-
-> The effect is to insert a new, empty environment in between the global environment and your own functions: {x: 1, '..': {'..': global environment }} . As we'll see when we discuss mutable state, this helps to prevent programmers from accidentally changing the global state that is shared by all code in the program.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00381))_
-
-> If you don't want your code to operate directly within the global environment, what can you do?
-
-### Technical frame 36: And also: / Closures and Scope / which came first, the chicken or the egg?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00383))_
-
-> The effect is to insert a new, empty environment in between the global environment and your own functions: {x: 1, '..': {'..': global environment }} . As we'll see when we discuss mutable state, this helps to prevent programmers from accidentally changing the global state that is shared by all code in the program.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00382))_
-
-```
-// top of the file
-(() => {
-// ... lots of JavaScript ...
-})();
-// bottom of the file
-```
-
-### Technical frame 37: And also: / That Constant Coffee Craving
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00388))_
-
-> In order to bind 3.14159265 to the name PI , we'll need a function with a parameter of PI applied to an argument of 3.14159265 . If we put our function expression in parentheses, we can apply it to the argument of 3.14159265 :
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00386))_
-
-> There are other ways to name things in JavaScript, but before we learn some of those, let's see how to use what we already have to name things. Let's revisit a very simple example:
-
-### Technical frame 38: And also: / That Constant Coffee Craving
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00392))_
-
-> This expression, when evaluated, returns a function that calculates circumferences. That sounds bad, but when we think about it, (diameter) => diameter * 3.14159265 is also an expression, that when evaluated, returns a function that calculates circumferences. All of our 'functions' are expressions. This one has a few more moving parts, that's all. But we can use it just like (diameter) => diameter * 3.14159265 .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00389))_
-
-```
-((PI) =>
-// ????
-)(3.14159265)
-```
-
-### Technical frame 39: And also: / That Constant Coffee Craving
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00392))_
-
-> This expression, when evaluated, returns a function that calculates circumferences. That sounds bad, but when we think about it, (diameter) => diameter * 3.14159265 is also an expression, that when evaluated, returns a function that calculates circumferences. All of our 'functions' are expressions. This one has a few more moving parts, that's all. But we can use it just like (diameter) => diameter * 3.14159265 .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00391))_
-
-```
-((PI) =>
-(diameter) => diameter * PI
-)(3.14159265)
-```
-
-### Technical frame 40: And also: / That Constant Coffee Craving
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00396))_
-
-> That works! We can bind anything we want in an expression by wrapping it in a function that is immediately invoked with the value we want to bind. 29
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00395))_
-
-```
-((diameter) => diameter * 3.14159265)(2)
-//=> 6.2831853
-((PI) =>
-(diameter) => diameter * PI
-)(3.14159265)(2)
-//=> 6.2831853
-```
-
-### Technical frame 41: And also: / That Constant Coffee Craving / inside-out
+### Technical frame 18: And also: / That Constant Coffee Craving / inside-out
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00402))_
 
@@ -834,34 +582,15 @@ x + y + z
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00399))_
 
+<a id="atom-technical-atom-0b04a5eefd97d2db"></a>
+
 ```
 (diameter) =>
 ((PI) =>
 diameter * PI)(3.14159265)
 ```
 
-### Technical frame 42: And also: / That Constant Coffee Craving / inside-out
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00402))_
-
-> Which one is better? Well, the first one seems simplest, but a half-century of experience has taught us that names matter. A 'magic literal' like 3.14159265 is anathema to sustainable software development.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00401))_
-
-```
-((diameter) => diameter * 3.14159265)(2)
-//=> 6.2831853
-((PI) =>
-(diameter) => diameter * PI
-)(3.14159265)(2)
-//=> 6.2831853
-((diameter) =>
-((PI) =>
-diameter * PI)(3.14159265))(2)
-//=> 6.2831853
-```
-
-### Technical frame 43: And also: / That Constant Coffee Craving / inside-out
+### Technical frame 19: And also: / That Constant Coffee Craving / inside-out
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00406))_
 
@@ -869,66 +598,14 @@ diameter * PI)(3.14159265))(2)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00405))_
 
+<a id="atom-technical-atom-ddeb9767d36d61f0"></a>
+
 ```
 (diameter) =>
 // ...
 ```
 
-### Technical frame 44: And also: / That Constant Coffee Craving / inside-out
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00410))_
-
-> Well, the wrinkle with this is that typically, invoking functions is considerably more expensive than evaluating expressions. Every time we invoke the outer function, we'll invoke the inner function. We could get around this by writing
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00407))_
-
-```
-((PI) =>
-// ...
-)(3.14159265)
-```
-
-### Technical frame 45: And also: / That Constant Coffee Craving / inside-out
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00410))_
-
-> Well, the wrinkle with this is that typically, invoking functions is considerably more expensive than evaluating expressions. Every time we invoke the outer function, we'll invoke the inner function. We could get around this by writing
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00409))_
-
-```
-(diameter) =>
-((PI) =>
-diameter * PI)(3.14159265)
-```
-
-### Technical frame 46: And also: / That Constant Coffee Craving / inside-out
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00412))_
-
-> But then we've obfuscated our code, and we don't want to do that unless we absolutely have to.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00411))_
-
-```
-((PI) =>
-(diameter) => diameter * PI
-)(3.14159265)
-```
-
-### Technical frame 47: And also: / That Constant Coffee Craving / const
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00419))_
-
-> This differs from our example above in that there is only one environment, rather than two. We have one binding in the environment representing our regular argument, and another our 'constant.' That's more efficient, and it's almost what we wanted all along: A way to bind 3.14159265 to a readable name.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00416))_
-
-```
-(diameter, PI) => diameter * PI
-```
-
-### Technical frame 48: And also: / That Constant Coffee Craving / const
+### Technical frame 20: And also: / That Constant Coffee Craving / const
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00419))_
 
@@ -936,163 +613,22 @@ diameter * PI)(3.14159265)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00418))_
 
+<a id="atom-technical-atom-c20bac58bed68d0d"></a>
+
 ```
 ((diameter, PI) => diameter * PI)(2, 3.14159265)
 //=> 6.2831853
 ```
 
-### Technical frame 49: And also: / That Constant Coffee Craving / const
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00422))_
-
-> The const keyword introduces one or more bindings in the block that encloses it. It doesn't incur the cost of a function invocation. That's great. Even better, it puts the symbol (like PI ) close to the value ( 3.14159265 ). That's much better than what we were writing.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00421))_
-
-```
-(diameter) => {
-const PI = 3.14159265;
-return diameter * PI
-}
-```
-
-### Technical frame 50: And also: / That Constant Coffee Craving / const
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00430))_
-
-> We can bind any expression. Functions are expressions, so we can bind helper functions:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00425))_
-
-```
-((diameter) =>
-((PI) =>
-```
-
-### Technical frame 51: And also: / That Constant Coffee Craving / const
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00430))_
-
-> We can bind any expression. Functions are expressions, so we can bind helper functions:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00426))_
-
-```
-diameter * PI)(3.14159265))(2)
-Or:
-((diameter, PI) => diameter * PI)(2, 3.14159265)
-```
-
-### Technical frame 52: And also: / That Constant Coffee Craving / const
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00430))_
-
-> We can bind any expression. Functions are expressions, so we can bind helper functions:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00427))_
-
-```
-//=> 6.2831853
-```
-
-### Technical frame 53: And also: / That Constant Coffee Craving / const
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00430))_
-
-> We can bind any expression. Functions are expressions, so we can bind helper functions:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00429))_
-
-```
-((diameter) => {
-const PI = 3.14159265;
-return diameter * PI
-})(2)
-//=> 6.2831853
-```
-
-### Technical frame 54: And also: / That Constant Coffee Craving / const
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00432))_
-
-> Notice calc(d) ? This underscores what we've said: if we have an expression that evaluates to a function, we apply it with () . A name that's bound to a function is a valid expression evaluating to a function. 30
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00431))_
-
-```
-(d) => {
-const calc = (diameter) => {
-const PI = 3.14159265;
-return diameter * PI
-};
-return "The circumference is " + calc(d)
-}
-```
-
-### Technical frame 55: And also: / That Constant Coffee Craving / const
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00433))_
-
-> Amazing how such an important idea-naming functions-can be explained en passant in just a few words. That emphasizes one of the things JavaScript gets really, really right: Functions as 'first class entities. ' Functions are values that can be bound to names like any other value, passed as arguments, returned from other functions, and so forth.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00432))_
-
-> This underscores what we've said: if we have an expression that evaluates to a function, we apply it with () .
-
-### Technical frame 56: And also: / That Constant Coffee Craving / const
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00436))_
-
-> 30 We're into the second chapter and we've finally named a function. Sheesh.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00435))_
-
-```
-(d) => {
-const PI
-= 3.14159265,
-calc = (diameter) => diameter * PI;
-return "The circumference is " + calc(d)
-}
-```
-
-### Technical frame 57: And also: / That Constant Coffee Craving / nested blocks
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00442))_
-
-> The if statement is a statement, not an expression (an unfortunate design choice), and its clauses are statements or blocks. So we could also write something like:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00438))_
-
-> One of the places you can find blocks is in an if statement.
-
-### Technical frame 58: And also: / That Constant Coffee Craving / nested blocks
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00442))_
-
-> The if statement is a statement, not an expression (an unfortunate design choice), and its clauses are statements or blocks. So we could also write something like:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00439))_
-
-```
-(n) => {
-const even = (x) => {
-if (x === 0)
-return true;
-else
-return !even(x - 1);
-}
-return even(n)
-}
-```
-
-### Technical frame 59: And also: / That Constant Coffee Craving / nested blocks
+### Technical frame 21: And also: / That Constant Coffee Craving / nested blocks
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00442))_
 
 > The if statement is a statement, not an expression (an unfortunate design choice), and its clauses are statements or blocks. So we could also write something like:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00441))_
+
+<a id="atom-technical-atom-ca91560a0fb799a6"></a>
 
 ```
 ((n) => {
@@ -1107,13 +643,15 @@ return even(n)
 //=> false
 ```
 
-### Technical frame 60: And also: / That Constant Coffee Craving / nested blocks
+### Technical frame 22: And also: / That Constant Coffee Craving / nested blocks
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00446))_
 
 > We've used a block as the else clause, and since it's a block, we've placed a const statement inside it.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00443))_
+
+<a id="atom-technical-atom-208e7e2794c15225"></a>
 
 ```
 (n) => {
@@ -1126,13 +664,15 @@ return odd(x - 1);
 }
 ```
 
-### Technical frame 61: And also: / That Constant Coffee Craving / nested blocks
+### Technical frame 23: And also: / That Constant Coffee Craving / nested blocks
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00446))_
 
 > We've used a block as the else clause, and since it's a block, we've placed a const statement inside it.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00444))_
+
+<a id="atom-technical-atom-a4ff91c073865533"></a>
 
 ```
 }
@@ -1152,7 +692,7 @@ return even(n)
 })(42)
 ```
 
-### Technical frame 62: And also: / That Constant Coffee Craving / nested blocks
+### Technical frame 24: And also: / That Constant Coffee Craving / nested blocks
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00446))_
 
@@ -1160,29 +700,13 @@ return even(n)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00445))_
 
+<a id="atom-technical-atom-4bfc4e7c5cb8ba29"></a>
+
 ```
 //=> true
 ```
 
-### Technical frame 63: And also: / That Constant Coffee Craving / const and lexical scope
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00452))_
-
-> It's more than a bit convoluted, but it binds ((PI) => (diameter) => diameter * PI)(3.14159265) to diameter_fn and evaluates the expression that we've elided. We can use any expression in there, and that expression can invoke diameter_fn . For example:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00451))_
-
-```
-((diameter_fn) =>
-// ...
-)(
-((PI) =>
-(diameter) => diameter * PI
-)(3.14159265)
-)
-```
-
-### Technical frame 64: And also: / That Constant Coffee Craving / const and lexical scope
+### Technical frame 25: And also: / That Constant Coffee Craving / const and lexical scope
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00454))_
 
@@ -1190,6 +714,8 @@ return even(n)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00453))_
 
+<a id="atom-technical-atom-43d2854580922cbe"></a>
+
 ```
 ((diameter_fn) =>
 diameter_fn(2)
@@ -1201,70 +727,16 @@ diameter_fn(2)
 //=> 6.2831853
 ```
 
-### Technical frame 65: And also: / That Constant Coffee Craving / const and lexical scope
+### Technical frame 26: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00458))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00475))_
 
-> Although we have bound 3 to PI in the environment surrounding diameter_fn(2) , the value that counts is 3.14159265 , the value we bound to PI in the environment surrounding (diameter) ⇒ diameter * PI.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00457))_
-
-```
-((diameter_fn) =>
-((PI) =>
-diameter_fn(2)
-)(3)
-)(
-((PI) =>
-(diameter) => diameter * PI
-)(3.14159265)
-)
-//=> 6.2831853
-```
-
-### Technical frame 66: And also: / That Constant Coffee Craving / const and lexical scope
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00462))_
-
-> Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00461))_
-
-```
-((diameter_fn) => {
-const PI = 3;
-return diameter_fn(2)
-})(
-(() => {
-const PI = 3.14159265;
-return (diameter) => diameter * PI
-})()
-)
-//=> 6.2831853
-```
-
-### Technical frame 67: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00473))_
-
-> And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the 'outer' environment? Let's rewrite things slightly differently:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00468))_
-
-```
-((PI) =>
-(diameter) => diameter * PI
-)(3.14159265)
-```
-
-### Technical frame 68: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00473))_
-
-> And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the 'outer' environment? Let's rewrite things slightly differently:
+> Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI . Does that binding 'overwrite' the outer one? Will our function return 6 or 6.2831853 ? This is a book, you've already scanned ahead, so you know that the answer is no , the inner binding does not overwrite the outer binding:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00470))_
 
+<a id="atom-technical-atom-04ac3da4f75eb5af"></a>
+
 ```
 ((PI) =>
 ((PI) =>
@@ -1273,30 +745,15 @@ return (diameter) => diameter * PI
 )(3)
 ```
 
-### Technical frame 69: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00473))_
-
-> And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the 'outer' environment? Let's rewrite things slightly differently:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00472))_
-
-```
-((PI) =>
-((PI) =>
-(diameter) => diameter * PI
-)(3.14159265)
-)(3)(2)
-//=> 6.2831853
-```
-
-### Technical frame 70: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
+### Technical frame 27: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00475))_
 
 > Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI . Does that binding 'overwrite' the outer one? Will our function return 6 or 6.2831853 ? This is a book, you've already scanned ahead, so you know that the answer is no , the inner binding does not overwrite the outer binding:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00474))_
+
+<a id="atom-technical-atom-bd9435d4a2d0ab5a"></a>
 
 ```
 ((PI) => {
@@ -1305,90 +762,15 @@ return (diameter) => diameter * PI;
 })(3.14159265)
 ```
 
-### Technical frame 71: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00477))_
-
-> We say that when we bind a variable using a parameter inside another binding, the inner binding shadows the outer binding. It has effect inside its own scope, but does not affect the binding in the enclosing scope.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00476))_
-
-```
-((PI) => {
-((PI) => {})(3);
-return (diameter) => diameter * PI;
-})(3.14159265)(2)
-//=> 6.2831853
-```
-
-### Technical frame 72: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00481))_
-
-> Parameters are only bound when we invoke a function. That's why we made all these IIFEs. But const statements can appear inside blocks. What happens when we use a const inside of a block? We'll need a gratuitous block. We've seen if statements, what could be more gratuitous than:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00479))_
-
-```
-((diameter) => {
-const PI = 3.14159265;
-(() => {
-const PI = 3;
-})();
-return diameter * PI;
-})(2)
-//=> 6.2831853
-```
-
-### Technical frame 73: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00489))_
-
-> Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00482))_
-
-```
-if (true) {
-// an immediately invoked block statement (IIBS)
-}
-Let’s try it:
-((diameter) => {
-const PI = 3;
-if (true) {
-const PI = 3.14159265;
-return diameter * PI;
-}
-})(2)
-//=> 6.2831853
-((diameter) => {
-const PI = 3.14159265;
-if (true) {
-const PI = 3;
-}
-return diameter * PI;
-```
-
-### Technical frame 74: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00489))_
-
-> Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00483))_
-
-```
-})(2)
-//=> 6.2831853
-```
-
-### Technical frame 75: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
+### Technical frame 28: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00489))_
 
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00486))_
+
+<a id="atom-technical-atom-d1848416f5b4149d"></a>
 
 ```
 ((diameter) => {
@@ -1401,23 +783,15 @@ return diameter * PI;
 //=> would return 6 if const had function scope
 ```
 
-### Technical frame 76: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00489))_
-
-> Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00487))_
-
-> If const always bound its value to the name defined in the function's environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents.
-
-### Technical frame 77: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
+### Technical frame 29: And also: / That Constant Coffee Craving / are consts also from a shadowy planet?
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00489))_
 
 > Again, confusing. Typically, we want to bind our names as close to where we need them as possible. This design rule is called the Principle of Least Privilege 32 , and it has both quality and security implications. Being able to bind a name inside of a block means that if the name is only needed in the block, we are not 'leaking' its binding to other parts of the code that do not need to interact with it.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00488))_
+
+<a id="atom-technical-atom-0c5d98acca1d8c87"></a>
 
 ```
 ((diameter) => {
@@ -1429,79 +803,7 @@ return diameter * PI;
 //=> would return 6.2831853 if const had function scope
 ```
 
-### Technical frame 78: And also: / That Constant Coffee Craving / rebinding
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00496))_
-
-> JavaScript does not permit us to rebind a name that has been bound with const . We can shadow it by using const to declare a new binding with a new function or block scope, but we cannot rebind a name that was bound with const in an existing scope.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00493))_
-
-```
-const evenStevens = (n) => {
-if (n === 0) {
-return true;
-}
-else if (n == 1) {
-return false;
-}
-else {
-n = n - 2;
-return evenStevens(n);
-}
-}
-evenStevens(42)
-//=> true
-```
-
-### Technical frame 79: And also: / That Constant Coffee Craving / rebinding
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00496))_
-
-> JavaScript does not permit us to rebind a name that has been bound with const . We can shadow it by using const to declare a new binding with a new function or block scope, but we cannot rebind a name that was bound with const in an existing scope.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00495))_
-
-```
-evenStevens = (n) => {
-if (n === 0) {
-return true;
-}
-else if (n == 1) {
-return false;
-}
-else {
-return evenStevens(n - 2);
-}
-}
-//=> ERROR, evenStevens is read-only
-```
-
-### Technical frame 80: And also: / Naming Functions
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00501))_
-
-> It doesn't name the function 'repeat' for the same reason that const answer = 42 doesn't name the number 42 . This syntax binds an anonymous function to a name in an environment, but the function itself remains anonymous.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00500))_
-
-```
-const repeat = (str) => str + str
-```
-
-### Technical frame 81: And also: / Naming Functions / the function keyword
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00510))_
-
-> Something else we're about to discuss is optional.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00505))_
-
-```
-(str) => str + str
-```
-
-### Technical frame 82: And also: / Naming Functions / the function keyword
+### Technical frame 30: And also: / Naming Functions / the function keyword
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00510))_
 
@@ -1509,74 +811,13 @@ const repeat = (str) => str + str
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00507))_
 
+<a id="atom-technical-atom-4892b44040deaa12"></a>
+
 ```
 function (str) { return str + str }
 ```
 
-### Technical frame 83: And also: / Naming Functions / the function keyword
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00513))_
-
-> We always use a block, we cannot write function (str) str + str . This means that if we want our functions to return a value, we always need to use the return keyword
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00514))_
-
-> If we leave out the 'something optional' that comes after the function keyword, we can translate all of the fat arrow functions that we've seen into function keyword functions, e.g.
-
-### Technical frame 84: And also: / Naming Functions / the function keyword
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00523))_
-
-> In this expression, double is the name in the environment, but repeat is the function's actual name. This is a named function expression . That may seem confusing, but think of the binding names as properties of the environment, not of the function. While the name of the function is a property of the function, not of the environment.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00515))_
-
-```
-(n) => (1.618**n - -1.618**-n) / 2.236
-```
-
-### Technical frame 85: And also: / Naming Functions / the function keyword
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00523))_
-
-> In this expression, double is the name in the environment, but repeat is the function's actual name. This is a named function expression . That may seem confusing, but think of the binding names as properties of the environment, not of the function. While the name of the function is a property of the function, not of the environment.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00517))_
-
-```
-function (n) {
-return (1.618**n - -1.618**-n) / 2.236;
-}
-```
-
-### Technical frame 86: And also: / Naming Functions / the function keyword
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00523))_
-
-> In this expression, double is the name in the environment, but repeat is the function's actual name. This is a named function expression . That may seem confusing, but think of the binding names as properties of the environment, not of the function. While the name of the function is a property of the function, not of the environment.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00520))_
-
-```
-const repeat = function repeat (str) {
-return str + str;
-};
-const fib = function fib (n) {
-return (1.618**n - -1.618**-n) / 2.236;
-};
-```
-
-### Technical frame 87: And also: / Naming Functions / the function keyword
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00523))_
-
-> In this expression, double is the name in the environment, but repeat is the function's actual name. This is a named function expression . That may seem confusing, but think of the binding names as properties of the environment, not of the function. While the name of the function is a property of the function, not of the environment.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00521))_
-
-> Placing a name between the function keyword and the argument list names the function. Confusingly, the name of the function is not exactly the same thing as the name we may choose to bind to the value of the function. For example, we can write:
-
-### Technical frame 88: And also: / Naming Functions / the function keyword
+### Technical frame 31: And also: / Naming Functions / the function keyword
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00523))_
 
@@ -1584,13 +825,15 @@ return (1.618**n - -1.618**-n) / 2.236;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00522))_
 
+<a id="atom-technical-atom-81cb3037dd7ae143"></a>
+
 ```
 const double = function repeat (str) {
 return str + str;
 }
 ```
 
-### Technical frame 89: And also: / Naming Functions / the function keyword
+### Technical frame 32: And also: / Naming Functions / the function keyword
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00527))_
 
@@ -1598,69 +841,14 @@ return str + str;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00525))_
 
+<a id="atom-technical-atom-692b6ed0b0637163"></a>
+
 ```
 double.name
 //=> 'repeat'
 ```
 
-### Technical frame 90: And also: / Naming Functions / the function keyword
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00529))_
-
-> Now, the function's actual name has no effect on the environment in which it is used. To whit:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00528))_
-
-```
-someBackboneView.on('click', function clickHandler () {
-//...
-});
-```
-
-### Technical frame 91: And also: / Naming Functions / the function keyword
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00531))_
-
-> So 'actualName' isn't bound in the environment where we use the named function expression. Is it bound anywhere else? Yes it is. Here's a function that determines whether a positive integer is even or not. We'll use it in an IIFE so that we don't have to bind it to a name with const :
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00530))_
-
-```
-const bindingName = function actualName () {
-//...
-};
-bindingName
-//=> [Function: actualName]
-actualName
-//=> ReferenceError: actualName is not defined
-```
-
-### Technical frame 92: And also: / Naming Functions / the function keyword
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00533))_
-
-> Clearly, the name even is bound to the function within the function's body . Is it bound to the function outside of the function's body?
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00532))_
-
-```
-(function even (n) {
-if (n === 0) {
-return true
-}
-else return !even(n - 1)
-})(5)
-//=> false
-(function even (n) {
-if (n === 0) {
-return true
-}
-else return !even(n - 1)
-})(2)
-//=> true
-```
-
-### Technical frame 93: And also: / Naming Functions / the function keyword
+### Technical frame 33: And also: / Naming Functions / the function keyword
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00535))_
 
@@ -1668,18 +856,22 @@ else return !even(n - 1)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00534))_
 
+<a id="atom-technical-atom-1e163547ee6c3eac"></a>
+
 ```
 even
 //=> Can't find variable: even
 ```
 
-### Technical frame 94: And also: / Naming Functions / function declarations
+### Technical frame 34: And also: / Naming Functions / function declarations
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00540))_
 
 > In that it binds a name in the environment to a named function. However, there are two important differences. First, function declarations are hoisted to the top of the function in which they occur.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00538))_
+
+<a id="atom-technical-atom-642381d95ff4831d"></a>
 
 ```
 function someName () {
@@ -1691,7 +883,7 @@ const someName = function someName ()
 }
 ```
 
-### Technical frame 95: And also: / Naming Functions / function declarations
+### Technical frame 35: And also: / Naming Functions / function declarations
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00540))_
 
@@ -1699,192 +891,13 @@ const someName = function someName ()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00539))_
 
+<a id="atom-technical-atom-93530060e3dbc4f9"></a>
+
 ```
 {
 ```
 
-### Technical frame 96: And also: / Naming Functions / function declarations
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00543))_
-
-> We haven't actually bound a function to the name fizzbuzz before we try to use it, so we get an error. But a function declaration works differently:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00541))_
-
-> Consider this example where we try to use the variable fizzbuzz as a function before we bind a function to it with const :
-
-### Technical frame 97: And also: / Naming Functions / function declarations
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00543))_
-
-> We haven't actually bound a function to the name fizzbuzz before we try to use it, so we get an error. But a function declaration works differently:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00542))_
-
-```
-(function () {
-return fizzbuzz();
-const fizzbuzz = function fizzbuzz () {
-return "Fizz" + "Buzz";
-}
-})()
-//=> undefined is not a function (evaluating 'fizzbuzz()')
-```
-
-### Technical frame 98: And also: / Naming Functions / function declarations
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00546))_
-
-> The definition of the fizzbuzz is 'hoisted' to the top of its enclosing scope (an IIFE in this case). This behaviour is intentional on the part of JavaScript's design to facilitate a certain style of programming where you put the main logic up front, and the 'helper functions' at the bottom. It is not necessary to declare functions in this way in JavaScript, but understanding the syntax and its behaviour (especially the way it differs from const ) is essential for working with production code.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00544))_
-
-```
-(function () {
-return fizzbuzz();
-function fizzbuzz () {
-return "Fizz" + "Buzz";
-}
-})()
-//=> 'FizzBuzz'
-Although fizzbuzz is declared later in the function, JavaScript behaves as if we’d written:
-(function () {
-const fizzbuzz = function fizzbuzz () {
-```
-
-### Technical frame 99: And also: / Naming Functions / function declarations
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00546))_
-
-> The definition of the fizzbuzz is 'hoisted' to the top of its enclosing scope (an IIFE in this case). This behaviour is intentional on the part of JavaScript's design to facilitate a certain style of programming where you put the main logic up front, and the 'helper functions' at the bottom. It is not necessary to declare functions in this way in JavaScript, but understanding the syntax and its behaviour (especially the way it differs from const ) is essential for working with production code.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00545))_
-
-```
-const fizzbuzz = function fizzbuzz ()
-return "Fizz" + "Buzz";
-}
-return fizzbuzz();
-})()
-```
-
-### Technical frame 100: And also: / Naming Functions / function declaration caveats 34
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00551))_
-
-> Function declarations are not supposed to occur inside of blocks. The big trouble with expressions like this is that they may work just fine in your test environment but work a different way in production. Or it may work one way today and a different way when the JavaScript engine is updated, say with a new optimization.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00550))_
-
-```
-(function (camelCase) {
-return fizzbuzz();
-if (camelCase) {
-function fizzbuzz () {
-return "Fizz" + "Buzz";
-}
-}
-else {
-function fizzbuzz () {
-return "Fizz" + "Buzz";
-}
-}
-})(true)
-//=> 'FizzBuzz'? Or ERROR: Can't find variable: fizzbuzz?
-```
-
-### Technical frame 101: And also: / Naming Functions / function declaration caveats 34
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00552))_
-
-> Another caveat is that a function declaration cannot exist inside of any expression, otherwise it's a function expression. So this is a function declaration:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00551))_
-
-> Or it may work one way today and a different way when the JavaScript engine is updated, say with a new optimization.
-
-### Technical frame 102: And also: / Naming Functions / function declaration caveats 34
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00554))_
-
-> The parentheses make this an expression, not a function declaration.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00553))_
-
-```
-function trueDat () { return true }
-But this is not:
-(function trueDat () { return true })
-```
-
-### Technical frame 103: And also: / Combinators and Function Decorators / higher-order functions
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00557))_
-
-> As we've seen, JavaScript functions take values as arguments and return values. JavaScript functions are values, so JavaScript functions can take functions as arguments, return functions, or both. Generally speaking, a function that either takes functions as arguments, or returns a function, or both, is referred to as a 'higher-order' function.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00559))_
-
-```
-const repeat = (num, fn) =>
-(num > 0)
-? (repeat(num - 1, fn), fn(num))
-: undefined
-repeat(3, function (n) {
-console.log(`Hello ${n}`)
-})
-//=>
-'Hello 1'
-'Hello 2'
-'Hello 3'
-undefined
-```
-
-### Technical frame 104: And also: / Combinators and Function Decorators / combinators
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00566))_
-
-> This is, of course, just one example of many. You'll find lots more perusing the recipes in this book. While some programmers believe 'There Should Only Be One Way To Do It,' having combinators available as well as explicitly writing things out with lots of symbols and keywords has some advantages when used judiciously.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00565))_
-
-```
-const compose = (a, b) =>
-(c) => a(b(c))
-Let’s say we have:
-const addOne = (number) => number + 1;
-const doubleOf = (number) => number * 2;
-With compose, anywhere you would write
-const doubleOfAddOne = (number) => doubleOf(addOne(number));
-You could also write:
-const doubleOfAddOne = compose(doubleOf, addOne);
-```
-
-### Technical frame 105: And also: / Combinators and Function Decorators / function decorators
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00572))_
-
-> So instead of writing !someFunction(42) , we can write not(someFunction)(42) . Hardly progress. But like compose , we could write either:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00571))_
-
-```
-const not = (fn) => (x) => !fn(x)
-```
-
-### Technical frame 106: And also: / Combinators and Function Decorators / function decorators
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00578))_
-
-> not is a function decorator because it modifies a function while remaining strongly related to the original function's semantics. You'll see other function decorators in the recipes, like once and maybe. Function decorators aren't strict about being pure functions, so there's more latitude for making decorators than combinators.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00573))_
-
-```
-const something = (x) => x != null;
-```
-
-### Technical frame 107: And also: / Combinators and Function Decorators / function decorators
+### Technical frame 36: And also: / Combinators and Function Decorators / function decorators
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00578))_
 
@@ -1892,11 +905,13 @@ const something = (x) => x != null;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00575))_
 
+<a id="atom-technical-atom-012b17acb6918ff6"></a>
+
 ```
 const nothing = (x) => !something(x);
 ```
 
-### Technical frame 108: And also: / Combinators and Function Decorators / function decorators
+### Technical frame 37: And also: / Combinators and Function Decorators / function decorators
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00578))_
 
@@ -1904,23 +919,13 @@ const nothing = (x) => !something(x);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00577))_
 
+<a id="atom-technical-atom-16403f5e9983b595"></a>
+
 ```
 const nothing = not(something);
 ```
 
-### Technical frame 109: And also: / Building Blocks / composition
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00584))_
-
-> It's really that simple: Whenever you are chaining two or more functions together, you're composing them. You can compose them with explicit JavaScript code as we've just done. You can also generalize composition with the B Combinator or 'compose' that we saw in Combinators and Decorators:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00583))_
-
-```
-const cookAndEat = (food) => eat(cook(food));
-```
-
-### Technical frame 110: And also: / Building Blocks / composition
+### Technical frame 38: And also: / Building Blocks / composition
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00586))_
 
@@ -1928,12 +933,14 @@ const cookAndEat = (food) => eat(cook(food));
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00585))_
 
+<a id="atom-technical-atom-1c1fd91f2db9fd92"></a>
+
 ```
 const compose = (a, b) => (c) => a(b(c));
 const cookAndEat = compose(eat, cook);
 ```
 
-### Technical frame 111: And also: / Building Blocks / composition
+### Technical frame 39: And also: / Building Blocks / composition
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00587))_
 
@@ -1941,19 +948,11 @@ const cookAndEat = compose(eat, cook);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00586))_
 
+<a id="atom-technical-atom-c7fa8b34dc595368"></a>
+
 > The other 80% comes from organizing your code such that you can use it: Writing functions that can be composed in various ways.
 
-### Technical frame 112: And also: / Building Blocks / composition
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00587))_
-
-> In the recipes, we'll look at a decorator called once: It ensures that a function can only be executed once. Thereafter, it does nothing. Once is useful for ensuring that certain side effects are not repeated. We'll also look at maybe: It ensures that a function does nothing if it is given nothing (like null or undefined ) as an argument.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00588))_
-
-> Of course, you needn't use combinators to implement either of these ideas, you can use if statements.
-
-### Technical frame 113: And also: / Building Blocks / composition
+### Technical frame 40: And also: / Building Blocks / composition
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00588))_
 
@@ -1961,45 +960,23 @@ const cookAndEat = compose(eat, cook);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00589))_
 
+<a id="atom-technical-atom-4a47a493fe1f06cd"></a>
+
 ```
 const actuallyTransfer= (from, to, amount) =>
 // do something
 const invokeTransfer = once(maybe(actuallyTransfer(...)));
 ```
 
-### Technical frame 114: And also: / Building Blocks / partial application
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00597))_
-
-> The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00593))_
-
-```
-_.map([1, 2, 3], (n) => n * n)
-//=> [1, 4, 9]
-```
-
-### Technical frame 115: And also: / Building Blocks / partial application
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00597))_
-
-> The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00596))_
-
-```
-const squareAll = (array) => map(array,
-(n) => n * n);
-```
-
-### Technical frame 116: And also: / Building Blocks / partial application
+### Technical frame 41: And also: / Building Blocks / partial application
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00599))_
 
 > We'll discuss mapWith again. The important thing to see is that partial application is orthogonal to composition, and that they both work together nicely:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00598))_
+
+<a id="atom-technical-atom-d427b13c540a373d"></a>
 
 ```
 const mapWith = (fn) =>
@@ -2009,7 +986,7 @@ squareAll([1, 2, 3])
 //=> [1, 4, 9]
 ```
 
-### Technical frame 117: And also: / Building Blocks / partial application
+### Technical frame 42: And also: / Building Blocks / partial application
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00603))_
 
@@ -2017,11 +994,13 @@ squareAll([1, 2, 3])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00601))_
 
+<a id="atom-technical-atom-330729474fe641db"></a>
+
 ```
 const safeSquareAll = mapWith(maybe((n) => n * n));
 ```
 
-### Technical frame 118: And also: / Building Blocks / partial application
+### Technical frame 43: And also: / Building Blocks / partial application
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00603))_
 
@@ -2029,18 +1008,22 @@ const safeSquareAll = mapWith(maybe((n) => n * n));
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00602))_
 
+<a id="atom-technical-atom-10a4f14311565237"></a>
+
 ```
 safeSquareAll([1, null, 2, 3])
 //=> [1, null, 4, 9]
 ```
 
-### Technical frame 119: And also: / Magic Names / the function keyword
+### Technical frame 44: And also: / Magic Names / the function keyword
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00612))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00617))_
 
-> arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:
+> The most common use of the arguments binding is to build functions that can take a variable number of arguments. We'll see it used in many of the recipes, starting off with partial application and ellipses.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00609))_
+
+<a id="atom-technical-atom-013351b465690d3d"></a>
 
 ```
 const plus = function (a, b) {
@@ -2050,80 +1033,15 @@ plus(2,3)
 //=> 5
 ```
 
-### Technical frame 120: And also: / Magic Names / the function keyword
+### Technical frame 45: And also: / Magic Names / magic names and fat arrows
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00612))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00625))_
 
-> arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00611))_
-
-```
-const args = function (a, b) {
-return arguments;
-}
-args(2,3)
-//=> { '0': 2, '1': 3 }
-```
-
-### Technical frame 121: And also: / Magic Names / the function keyword
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00617))_
-
-> The most common use of the arguments binding is to build functions that can take a variable number of arguments. We'll see it used in many of the recipes, starting off with partial application and ellipses.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00614))_
-
-```
-const plus = function () {
-return arguments[0] + arguments[1];
-}
-plus(2,3)
-//=> 5
-```
-
-### Technical frame 122: And also: / Magic Names / the function keyword
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00617))_
-
-> The most common use of the arguments binding is to build functions that can take a variable number of arguments. We'll see it used in many of the recipes, starting off with partial application and ellipses.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00616))_
-
-```
-const howMany = function () {
-return arguments['length'];
-}
-howMany()
-//=> 0
-howMany('hello')
-//=> 1
-howMany('sharks', 'are', 'apex', 'predators')
-//=> 4
-```
-
-### Technical frame 123: And also: / Magic Names / magic names and fat arrows
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00622))_
-
-> But if we use a fat arrow, arguments will be defined in the outer environment, the one defined with function . And thus arguments[0] will refer to "outer" , not to "inner" :
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00621))_
-
-```
-(function () {
-return (function () { return arguments[0]; })('inner');
-})('outer')
-//=> "inner"
-```
-
-### Technical frame 124: And also: / Magic Names / magic names and fat arrows
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00624))_
-
-> Although it seems quixotic for the two syntaxes to have different semantics, it makes sense when you consider the design goal: Fat arrow functions are designed to be very lightweight and are often used with constructs like mapping or callbacks to emulate syntax.
+> To give a contrived example, this function takes a number and returns an array representing a row in a hypothetical multiplication table. It uses mapWith , which we discussed in Building Blocks. 44 We'll use arguments just to show the difference between using a fat arrow and the function keyword:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00623))_
+
+<a id="atom-technical-atom-733056f2f6551e51"></a>
 
 ```
 (function () {
@@ -2132,13 +1050,15 @@ return (() => arguments[0])('inner');
 //=> "outer"
 ```
 
-### Technical frame 125: And also: / Magic Names / magic names and fat arrows
+### Technical frame 46: And also: / Magic Names / magic names and fat arrows
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00627))_
 
 > This works just fine, because arguments[0] refers to the 3 we passed to the function row . Our 'fat arrow' function (column) => column * arguments[0] doesn't bind arguments when it's invoked. But if we rewrite row to use the function keyword, it stops working:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00626))_
+
+<a id="atom-technical-atom-f66c3ed611303c0d"></a>
 
 ```
 const row = function () {
@@ -2151,44 +1071,13 @@ row(3)
 //=> [3,6,9,12,15,18,21,24,27,30,33,36]
 ```
 
-### Technical frame 126: And also: / Magic Names / magic names and fat arrows
+### Technical atom 47
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00631))_
-
-> Although this example is clearly unrealistic, there is a general design principle that deserves attention. Sometimes, a function is meant to be used as a Big-F function. It has a name, it is called by different pieces of code, it's a first-class entity in the code.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00629))_
-
-```
-const row = function () {
-return mapWith(
-function (column) { return column * arguments[0] },
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-)
-}
-row(3)
-//=> [1,4,9,16,25,36,49,64,81,100,121,144]
-```
-
-### Technical frame 127: And also: / Summary
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00635))_
-
-> [Figure] (p.78)
-
-### Technical atom 128
+<a id="atom-technical-atom-a34604b044af311f"></a>
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00562))_
 
-| entry | content |
-| --- | --- |
-| 35 | https://en.wikipedia.org/wiki/Combinatory_logic |
-| 36 | http://www.amazon.com/gp/product/B00A1P096Y/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A1P096Y& linkCode=as2&tag=raganwald001-20 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 combinators
 The word 'combinator' has a precise technical meaning in mathematics:
 'A combinator is a higher-order function that uses only function application and earlier defined combinators to define a result from its arguments.'-Wikipedia 35
@@ -2197,30 +1086,42 @@ If we were learning Combinatorial Logic, we'd start with the most basic combinat
 36 http://www.amazon.com/gp/product/B00A1P096Y/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A1P096Y& linkCode=as2&tag=raganwald001-20
 ```
 
-</details>
-
-### Technical atom 129
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00570))_
+<details>
+<summary>Parsed table preview (needs review)</summary>
 
 | entry | content |
 | --- | --- |
-| 37 | As we'll discuss later, this implementation of the B Combinator is correct in languages like Scheme, but for truly general-purpose use in JavaScript, it needs to correctly manage the function context. |
-| 38 | We'll see later why an even more useful version would be written (fn) => (...args) => !fn(...args) |
+| 35 | https://en.wikipedia.org/wiki/Combinatory_logic |
+| 36 | http://www.amazon.com/gp/product/B00A1P096Y/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A1P096Y& linkCode=as2&tag=raganwald001-20 |
 
-<details>
-<summary>Raw table text</summary>
+</details>
 
-```
+### Technical atom 48
+
+<a id="atom-technical-atom-004428297e1534ac"></a>
+
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00570))_
+
+```text
 function decorators
 A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a variation of the argument function. Here's a ridiculously simple decorator: 38
 37 As we'll discuss later, this implementation of the B Combinator is correct in languages like Scheme, but for truly general-purpose use in JavaScript, it needs to correctly manage the function context.
 38 We'll see later why an even more useful version would be written (fn) => (...args) => !fn(...args)
 ```
 
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
+| entry | content |
+| --- | --- |
+| 37 | As we'll discuss later, this implementation of the B Combinator is correct in languages like Scheme, but for truly general-purpose use in JavaScript, it needs to correctly manage the function context. |
+| 38 | We'll see later why an even more useful version would be written (fn) => (...args) =>!fn(...args) |
+
 </details>
 
-### Technical atom 130
+### Technical atom 49
+
+<a id="atom-technical-atom-40032b1d8caeb152"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00612))_
 
@@ -2228,17 +1129,17 @@ A function decorator is a higher-order function that takes one function as an ar
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00613))_
 
+```text
+42 You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times.
+43 We'll look at arrays and plain old javascript objects in depth later.
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 42 | You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times. |
 | 43 | We'll look at arrays and plain old javascript objects in depth later. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-42 You should never attempt to define your own bindings against 'magic' names that JavaScript binds for you. It is wise to treat them as read-only at all times.
-43 We'll look at arrays and plain old javascript objects in depth later.
-```
 
 </details>

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-head-displacer-a7a1e8d0
 page_kind: source
 page_family: section-reference
-summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]: 13 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]: 13 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-head-displacer-a7a1e8d0@c10bee0f374653a9c9af8f91966adc87
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-head-displacer-a7a1e8d0@8f10e1fe452d5b2c9bdc9ec70eaaead5
 ---
 
 # 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-myt
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] - broader source section: 13.2.6 Mythical Beasts and Magical Beasts
 
@@ -32,13 +34,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07531))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07535))_
 
-> Head displacers have the ability to devour large numbers of humans without being noticed. It is said among the sages that they may have been created primarily for attacking castles during war.
+> A head displacer may use dark magic on very rare occasions. Its magic intensity is 14 (magic power 7).
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07530))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07533))_
 
-> Perception=Five senses (darkvision)
+<a id="atom-technical-atom-86e5970a68366d55"></a>
+
+> If the tentacles are not clear, those with the sage skill cannot use the monster check ability.
 
 ### Technical frame 2: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]
 
@@ -46,26 +50,8 @@ From [[sword-world-rpg-complete-edition]].
 
 > If a character is in danger of a surprise attack by a head displacer, a character with the ranger skill may be able to notice it due to their sense danger ability. Make a success roll against target score 15 using ranger skill level + intelligence bonus as the baseline score, and if you succeed, you'll be able to sense it, but if you fail, you'll be hit by the surprise attack. If the tentacles are not clear, those with the sage skill cannot use the monster check ability.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07532))_
-
-> A head displacer itself has the ability to speak low ancient, but cannot use any of its host's (?) skills.
-
-### Technical frame 3: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07535))_
-
-> A head displacer may use dark magic on very rare occasions. Its magic intensity is 14 (magic power 7).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07533))_
-
-> If the tentacles are not clear, those with the sage skill cannot use the monster check ability.
-
-### Technical frame 4: 13.2.6 Mythical Beasts and Magical Beasts / [ Head Displacer ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07533))_
-
-> If a character is in danger of a surprise attack by a head displacer, a character with the ranger skill may be able to notice it due to their sense danger ability. Make a success roll against target score 15 using ranger skill level + intelligence bonus as the baseline score, and if you succeed, you'll be able to sense it, but if you fail, you'll be hit by the surprise attack. If the tentacles are not clear, those with the sage skill cannot use the monster check ability.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07535))_
+
+<a id="atom-technical-atom-563c95be31eabbc3"></a>
 
 > A head displacer may use dark magic on very rare occasions.

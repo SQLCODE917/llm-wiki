@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 17: / 17.2 Lost Spells: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-17-2-lost-spells-aa6883cc@98d47eb4d0085b9717a362f7cf6f25c1
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-17-2-lost-spells-aa6883cc@c783562207bf5a7804a212bd6e364f73
 ---
 
 # Chapter 17: / 17.2 Lost Spells
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-17-f9e51e76]] - broader source section: Chapter 17:
 

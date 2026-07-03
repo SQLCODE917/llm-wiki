@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 5.1.14 Spirit Magic List / [ Ice Storm ] (Fenrir/Greater Ice Spirit): 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-ice-storm-fenrir-greater-ice-spirit-de66250d@50036ba3b97d183286397a3732d45fba
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-ice-storm-fenrir-greater-ice-spirit-de66250d@eeb3dc37cbc10d2ea4f68703cbcaf28f
 ---
 
 # 5.1.14 Spirit Magic List / [ Ice Storm ] (Fenrir/Greater Ice Spirit)
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spi
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-55816c7f]] - broader source section: 5.1.14 Spirit Magic List
 

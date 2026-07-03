@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-when-an-adventurer-casts-magic-on-a-mix-of-adventurers-and-monsters-c5c60dc3
 page_kind: source
 page_family: section-reference
-summary: When an Adventurer Casts Magic on a Mix of Adventurers and Monsters: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: When an Adventurer Casts Magic on a Mix of Adventurers and Monsters: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-when-an-adventurer-casts-magic-on-a-mix-of-adventurers-and-monsters-c5c60dc3@de5615f0988851c4c9b9ad57208da687
+projection_coverage: section-sword-world-rpg-complete-edition-section-when-an-adventurer-casts-magic-on-a-mix-of-adventurers-and-monsters-c5c60dc3@460c1d63684861784b1673888555cec5
 ---
 
 # When an Adventurer Casts Magic on a Mix of Adventurers and Monsters
@@ -30,26 +30,8 @@ From [[sword-world-rpg-complete-edition]].
 
 > Some magic can also have secondary effects. For example, the spirit magic Fanaticism increases attack power, but conversely decreases evasion speed. With such magic, the one on whom it is cast can choose whether or not to resist.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02546))_
-
-> At this time, the monsters must also roll the dice to make resist checks.
-
-### Technical frame 2: When an Adventurer Casts Magic on a Mix of Adventurers and Monsters
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02549))_
-
-> Some magic can also have secondary effects. For example, the spirit magic Fanaticism increases attack power, but conversely decreases evasion speed. With such magic, the one on whom it is cast can choose whether or not to resist.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02547))_
 
+<a id="atom-technical-atom-b2ae5c32c71d4104"></a>
+
 > [Figure] (p.60)
-
-### Technical frame 3: When an Adventurer Casts Magic on a Mix of Adventurers and Monsters
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02549))_
-
-> Some magic can also have secondary effects. For example, the spirit magic Fanaticism increases attack power, but conversely decreases evasion speed. With such magic, the one on whom it is cast can choose whether or not to resist.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02550))_
-
-> If the one on whom the magic is being cast chooses not to resist the magic, it will definitely take effect so long as the one casting the magic does not roll double ones.

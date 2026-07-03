@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-symbol
 page_kind: concept
+page_family: topic-concept
 summary: Symbol: 4 statement(s) and 6 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-symbol@7a8fdf122ea0cc2ac1c9112e90e027a2
+projection_coverage: topic-javascriptallonge-symbol@eb3ca36881694258bb5844e9ed1d32dd
 ---
 
 # Symbol
@@ -35,6 +36,8 @@ What [[javascriptallonge]] covers about symbol:
 > The for...of loop works directly with any object that is iterable , meaning it works with any object that has a Symbol.iterator method that returns an object iterator. Here's another linked list, this one is iterable:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01560))_
+
+<a id="atom-technical-atom-47f6d9ee5b266831"></a>
 
 ```
 const Stack3 = () =>
@@ -83,6 +86,8 @@ const stack = Stack3();
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01561))_
 
+<a id="atom-technical-atom-1433f8f324b5f87c"></a>
+
 ```
 stack.push(2000);
 stack.push(10);
@@ -119,6 +124,8 @@ iterableSum(stack)
 > As we can see, we can use for...of with linked lists just as easily as with stacks. And there's one more thing: You recall that the spread operator ( ... ) can spread the elements of an array in an array literal or as parameters in a function invocation.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01563))_
+
+<a id="atom-technical-atom-8e85f2ecd1e2c116"></a>
 
 ```
 const EMPTY = {
@@ -165,6 +172,8 @@ iterableSum(someSquares)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01709))_
 
+<a id="atom-technical-atom-f851858a3f0a60d5"></a>
+
 > If we call our generator function more than once, we get new iterators.
 
 ### Technical frame 5: We'll keep it simple: / generators and iterables
@@ -174,6 +183,8 @@ iterableSum(someSquares)
 > This pattern is encouraged, so much so that JavaScript provides a concise syntax for writing generator methods for objects:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01710))_
+
+<a id="atom-technical-atom-df68b9aee54b4fac"></a>
 
 ```
 const ThreeNumbers = {
@@ -216,6 +227,8 @@ iterator.next()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01713))_
 
+<a id="atom-technical-atom-08b3d4cd0486cddf"></a>
+
 ```
 const ThreeNumbers = {
 *[Symbol.iterator] () {
@@ -229,16 +242,19 @@ yield 3
 
 ## Related pages
 
+### Shared technical atoms
+
 - [[javascriptallonge-iterator]] - shared statements and technical atoms: Iterator shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Iterator shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared statement(s), 6 shared atom(s))
 - [[javascriptallonge-object]] - shared statements and technical atoms: Object shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Object shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared statement(s), 5 shared atom(s))
 - [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from We'll keep it simple: / generators and iterables: This object declares a [Symbol.iterator] function that makes it iterable. Because it's declared *[Symbol.iterator] , it's a generator instead of an iterator.; Function shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (1 shared statement(s), 3 shared atom(s))
 - [[javascriptallonge-iterable]] - shared statements and technical atoms: Iterable shares source evidence from We'll keep it simple: / generators and iterables: This object declares a [Symbol.iterator] function that makes it iterable. Because it's declared *[Symbol.iterator] , it's a generator instead of an iterator.; Iterable shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (1 shared statement(s), 3 shared atom(s))
 - [[javascriptallonge-method]] - shared statements and technical atoms: Method shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Method shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-expression]] - shared statements and technical atoms: Expression shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Expression shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 2 shared atom(s))
 - [[javascriptallonge-generator]] - shared technical atoms: Generator shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (3 shared atom(s))
+- [[javascriptallonge-expression]] - shared statements and technical atoms: Expression shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Expression shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 2 shared atom(s))
 - [[javascriptallonge-instead]] - shared technical atoms: Instead shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-pattern]] - shared technical atoms: Pattern shares technical record from We'll keep it simple: / generators and iterables: const ThreeNumbers = { *[Symbol.iterator] () { yield 1; yield 2; yield 3 } } (1 shared atom(s))
-- [[javascriptallonge-write]] - shared technical atoms: Write shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (1 shared atom(s))
+
+### Shared claims
+
 - [[javascriptallonge-evaluate]] - shared statements: Evaluate shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object. (1 shared statement(s))
 
 ## Source

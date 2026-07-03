@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 3.4.4 Actions You Can Take While Standing Still / 【 Attack Power 】: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-attack-power-9f22a241@300a89291acb5a52909efeb89aa84081
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-attack-power-9f22a241@6fd22441d37d96b1b2b42b899b9db6b7
 ---
 
 # 3.4.4 Actions You Can Take While Standing Still / 【 Attack Power 】
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-acti
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-519dd7f4]] - broader source section: 3.4.4 Actions You Can Take While Standing Still
 
@@ -34,5 +36,7 @@ From [[sword-world-rpg-complete-edition]].
 > If fighter (or thief, ranger) skill level is 0 , then attack power is 0 regardless of the character's dexterity bonus.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01440))_
+
+<a id="atom-technical-atom-8028265c90c78d95"></a>
 
 > attack power = fighter (thief/ranger) skill level + dexterity bonus

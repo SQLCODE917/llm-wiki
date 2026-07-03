@@ -4,10 +4,10 @@ page_kind: concept
 page_family: broad-topic
 summary: 《 Low Ancient 》: 20 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-low-ancient@917307423af39f05869f8d176ae6a996
+projection_coverage: topic-sword-world-rpg-complete-edition-low-ancient@32bd98a03a3d7279055eccad6af741e5
 ---
 
 # 《 Low Ancient 》
@@ -17,11 +17,19 @@ What [[sword-world-rpg-complete-edition]] covers about 《 low ancient 》:
 
 ## Related pages
 
+### Source structure
+
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-low-ancient-f237b444]] - source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》 shares source evidence from Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》: Low ancient is the normal language used in the ancient kingdom of Kastuul, which once flourished throughout Alecrast. Although it is now a dead language, its words a ... [truncated]; Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》 shares technical record from Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》: This is because you cannot begin to understand the great civilization of the ancient kingdom unless you know low ancient. (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-low-ancient-fa46dad7]] - source section: 《 Low Ancient 》 shares source evidence from 《 Low Ancient 》: This was an everyday language of the ancient kingdom, called low ancient , and was the language used by citizens and slaves. Sorcerers can speak, read and write in t ... [truncated] (3 shared statement(s))
+
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-sage-skill]] - shared statements and technical atoms: Sage Skill shares source evidence from [ ② Languages [Intelligence]] / Sage Skill: There are limitations to learning languages through the sage skill. Characters who cannot read common must fi rst learn how to read common before learning other lang ... [truncated]; Sage Skill shares technical record from Chapter 12: Various Checks / 12.1 Rules Regarding Language / Languages: An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common). (3 shared statement(s), 1 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-acquiring-rune-master-skill]] - shared statements: Acquiring Rune Master Skill shares source evidence from Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Sorcerer Skill 》: Then, you'll be given basic knowledge as a sorcerer, such as speaking and reading in high and low ancient, thus a sorcerer who can use 1st level spells is born. In t ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-mythical-beast-and-magical]] - shared statements: 《 Mythical Beasts and Magical Beasts 》 shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Lamia ]: Monster Level=5 Rarity=15 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Strangle:13 (6) Strike Points=11 Evasi ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-low-ancient-fa46dad7]] - source section: 《 Low Ancient 》 shares source evidence from 《 Low Ancient 》: This was an everyday language of the ancient kingdom, called low ancient , and was the language used by citizens and slaves. Sorcerers can speak, read and write in t ... [truncated] (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-low-ancient-f237b444]] - source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》 shares source evidence from Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》: Low ancient is the normal language used in the ancient kingdom of Kastuul, which once flourished throughout Alecrast. Although it is now a dead language, its words a ... [truncated]; Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》 shares technical record from Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》: This is because you cannot begin to understand the great civilization of the ancient kingdom unless you know low ancient. (3 shared statement(s), 1 shared atom(s))
 ## Statements by source section
 
 ### 《 Low Ancient 》
@@ -85,19 +93,15 @@ What [[sword-world-rpg-complete-edition]] covers about 《 low ancient 》:
 
 ## Technical atoms
 
-### Technical frame 1: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06380))_
-
-> This is because you cannot begin to understand the great civilization of the ancient kingdom unless you know low ancient.
-
-### Technical frame 2: Chapter 12: Various Checks / 12.1 Rules Regarding Language / Languages
+### Technical frame 1: Chapter 12: Various Checks / 12.1 Rules Regarding Language / Languages
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06418))_
 
 > If an adventurer who has learned low ancient through the sage skill acquires the sorcerer skill, they will not be able to learn another language because it would just be low ancient again . When acquiring these two skills, it is better to acquire them in the order of sorcerer → sage, which gives you a one language advantage.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06417))_
+
+<a id="atom-technical-atom-ddc765c4f26f6459"></a>
 
 > An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common).
 

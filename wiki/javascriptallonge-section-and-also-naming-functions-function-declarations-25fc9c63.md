@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-naming-functions-function-declarations-25fc9c63
 page_kind: source
-summary: And also: / Naming Functions / function declarations: 15 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: And also: / Naming Functions / function declarations: 14 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-naming-functions-function-declarations-25fc9c63@157a97eff81eed6cdd19e04fb6c7c0b4
+projection_coverage: section-javascriptallonge-section-and-also-naming-functions-function-declarations-25fc9c63@fdfb96c2805eaa7f899409b919d79515
 ---
 
 # And also: / Naming Functions / function declarations
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-and-also-naming-functions
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-and-also-naming-functions-37c9be8d]] - broader source section: And also: / Naming Functions
 
@@ -36,6 +39,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00538))_
 
+<a id="atom-technical-atom-642381d95ff4831d"></a>
+
 ```
 function someName () {
 // ...
@@ -54,45 +59,21 @@ const someName = function someName ()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00539))_
 
+<a id="atom-technical-atom-93530060e3dbc4f9"></a>
+
 ```
 {
 ```
 
 ### Technical frame 3: And also: / Naming Functions / function declarations
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00543))_
-
-> We haven't actually bound a function to the name fizzbuzz before we try to use it, so we get an error. But a function declaration works differently:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00541))_
-
-> Consider this example where we try to use the variable fizzbuzz as a function before we bind a function to it with const :
-
-### Technical frame 4: And also: / Naming Functions / function declarations
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00543))_
-
-> We haven't actually bound a function to the name fizzbuzz before we try to use it, so we get an error. But a function declaration works differently:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00542))_
-
-```
-(function () {
-return fizzbuzz();
-const fizzbuzz = function fizzbuzz () {
-return "Fizz" + "Buzz";
-}
-})()
-//=> undefined is not a function (evaluating 'fizzbuzz()')
-```
-
-### Technical frame 5: And also: / Naming Functions / function declarations
-
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00546))_
 
 > The definition of the fizzbuzz is 'hoisted' to the top of its enclosing scope (an IIFE in this case). This behaviour is intentional on the part of JavaScript's design to facilitate a certain style of programming where you put the main logic up front, and the 'helper functions' at the bottom. It is not necessary to declare functions in this way in JavaScript, but understanding the syntax and its behaviour (especially the way it differs from const ) is essential for working with production code.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00544))_
+
+<a id="atom-technical-atom-66980774291bd9f4"></a>
 
 ```
 (function () {
@@ -107,13 +88,15 @@ Although fizzbuzz is declared later in the function, JavaScript behaves as if we
 const fizzbuzz = function fizzbuzz () {
 ```
 
-### Technical frame 6: And also: / Naming Functions / function declarations
+### Technical frame 4: And also: / Naming Functions / function declarations
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00546))_
 
 > The definition of the fizzbuzz is 'hoisted' to the top of its enclosing scope (an IIFE in this case). This behaviour is intentional on the part of JavaScript's design to facilitate a certain style of programming where you put the main logic up front, and the 'helper functions' at the bottom. It is not necessary to declare functions in this way in JavaScript, but understanding the syntax and its behaviour (especially the way it differs from const ) is essential for working with production code.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00545))_
+
+<a id="atom-technical-atom-fe1368760c002c91"></a>
 
 ```
 const fizzbuzz = function fizzbuzz ()

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from llmwiki.domain.ledger.atom_addressing import technical_atom_anchor
 from llmwiki.domain.ledger.atom_frames import TechnicalAtomFrame
 from llmwiki.domain.ledger.coverage import clean_statement
 from llmwiki.domain.ledger.evidence_blocks import EvidenceBlock
@@ -40,5 +41,12 @@ def atom_frame_markdown(
         atom = ledger.atom(atom_id)
         if atom is None:
             continue
-        lines.extend((atom_block(atom.technical_atom_kind, atom.payload), ""))
+        lines.extend(
+            (
+                technical_atom_anchor(atom.technical_atom_id),
+                "",
+                atom_block(atom.technical_atom_kind, atom.payload),
+                "",
+            )
+        )
     return "\n".join(lines).strip() + "\n"

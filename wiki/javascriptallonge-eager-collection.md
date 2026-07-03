@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-eager-collection
 page_kind: concept
-summary: Eager Collection: 2 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
+page_family: topic-concept
+summary: Eager Collection: 1 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-eager-collection@ef58f08453398118577c5039a3487adb
+projection_coverage: topic-javascriptallonge-eager-collection@e2203eb40e54ead05cc98acf76b14622
 ---
 
 # Eager Collection
@@ -19,8 +20,6 @@ What [[javascriptallonge]] covers about eager collection:
 
 - An eager collection, like an array, returns a collection of its own type from each of the methods. We can make an eager collection out of any collection that is gatherable , meaning it has a .from method: _(javascriptallonge.pdf (source-range-7239e085-01802))_
 
-- Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs: _(javascriptallonge.pdf (source-range-7239e085-01806))_
-
 
 ## Technical atoms
 
@@ -31,6 +30,8 @@ What [[javascriptallonge]] covers about eager collection:
 > Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01803))_
+
+<a id="atom-technical-atom-260d903a41c4e031"></a>
 
 ```
 const extend = function (consumer, ...providers) {
@@ -53,6 +54,8 @@ return consumer
 > Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01804))_
+
+<a id="atom-technical-atom-a84a9a6634bcef5c"></a>
 
 ```
 const EagerCollection = (gatherable) =>
@@ -101,6 +104,8 @@ until(fn) {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01805))_
 
+<a id="atom-technical-atom-42f03cd992a4e79f"></a>
+
 ```
 const original = this;
 return gatherable.from(
@@ -140,78 +145,21 @@ yield element;
 });
 ```
 
-### Technical frame 4: We'll keep it simple: / Lazy and Eager Collections / eager collections
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01806))_
-
-> Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01807))_
-
-```
-const EMPTY = {
-isEmpty: () => true
-};
-const isEmpty = (node) => node === EMPTY;
-const Pair = (car, cdr = EMPTY) =>
-Object.assign({
-car,
-cdr,
-isEmpty: () => false,
-[Symbol.iterator]: function () {
-let currentPair = this;
-return {
-next: () => {
-if (currentPair.isEmpty()) {
-return {done: true}
-}
-else {
-const value = currentPair.car;
-currentPair = currentPair.cdr;
-return {done: false, value}
-}
-}
-}
-}
-}, EagerCollection(Pair));
-Pair.from = (iterable) =>
-(function iterationToList (iteration) {
-const {done, value} = iteration.next();
-return done ? EMPTY : Pair(value, iterationToList(iteration));
-})(iterable[Symbol.iterator]());
-Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
-//=>
-```
-
-### Technical frame 5: We'll keep it simple: / Lazy and Eager Collections / eager collections
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01806))_
-
-> Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01808))_
-
-```
-{"car": 2,
-"cdr": {"car": 4,
-"cdr": {"car": 6,
-"cdr": {"car": 8,
-"cdr": {"car": 10,
-"cdr": {}
-}
-}
-}
-}
-}
-```
-
 
 ## Related pages
 
-- [[javascriptallonge-collection]] - broader topic: Collection shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const extend = function (consumer, ...providers) { for (let i = 0; i < providers.length; ++i) { const provider = providers[i]; for (let key in provider) { if (provid ... [truncated] (5 shared atom(s))
-- [[javascriptallonge-pair]] - shared statements and technical atoms: Pair shares source evidence from We'll keep it simple: / Lazy and Eager Collections / eager collections: Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection me ... [truncated]; Pair shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const EagerCollection = (gatherable) => ({ map(fn) { const original = this; return gatherable.from( (function* () { for (let element of original) { yield fn(element) ... [truncated] (1 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-method]] - shared technical atoms: Method shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const extend = function (consumer, ...providers) { for (let i = 0; i < providers.length; ++i) { const provider = providers[i]; for (let key in provider) { if (provid ... [truncated] (5 shared atom(s))
+### Source structure
+
 - [[javascriptallonge-section-we-ll-keep-it-simple-lazy-and-eager-collections-eager-collections-3cb2ca80]] - source section: We'll keep it simple: / Lazy and Eager Collections / eager collections shares source evidence from We'll keep it simple: / Lazy and Eager Collections / eager collections: An eager collection, like an array, returns a collection of its own type from each of the methods. We can make an eager collection out of any collection that is gath ... [truncated]; We'll keep it simple: / Lazy and Eager Collections / eager collections shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const extend = function (consumer, ...providers) { for (let i = 0; i < providers.length; ++i) { const provider = providers[i]; for (let key in provider) { if (provid ... [truncated] (4 shared statement(s), 5 shared atom(s))
+
+### Shared technical atoms
+
+- [[javascriptallonge-method]] - shared technical atoms: Method shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const extend = function (consumer, ...providers) { for (let i = 0; i < providers.length; ++i) { const provider = providers[i]; for (let key in provider) { if (provid ... [truncated] (3 shared atom(s))
+- [[javascriptallonge-pair]] - shared technical atoms: Pair shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const EagerCollection = (gatherable) => ({ map(fn) { const original = this; return gatherable.from( (function* () { for (let element of original) { yield fn(element) ... [truncated] (2 shared atom(s))
+
+### Topics
+
+- [[javascriptallonge-collection]] - broader topic: Collection shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const extend = function (consumer, ...providers) { for (let i = 0; i < providers.length; ++i) { const provider = providers[i]; for (let key in provider) { if (provid ... [truncated] (3 shared atom(s))
 
 ## Source
 

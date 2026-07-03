@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-toad-4761d9e3
 page_kind: source
 page_family: section-reference
-summary: [ Toad ]: 45 source-backed entries and 21 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Toad ]: 45 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-toad-4761d9e3@5d07056956e20aa280bcd91657ec0b27
+projection_coverage: section-sword-world-rpg-complete-edition-section-toad-4761d9e3@642f12dd97298beb34e07472e77f6905
 ---
 
 # [ Toad ]
@@ -38,83 +38,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: [ Toad ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08070))_
-
-> There are many types of frogs in Alecrast, but most are small and harmless. However, there are some that are dangerous, such as the following two types.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08072, source-range-0b9dec90-08073, source-range-0b9dec90-08074, source-range-0b9dec90-08075, source-range-0b9dec90-08076, source-range-0b9dec90-08077, source-range-0b9dec90-08078, source-range-0b9dec90-08079, source-range-0b9dec90-08080, source-range-0b9dec90-08081, source-range-0b9dec90-08082, source-range-0b9dec90-08084, source-range-0b9dec90-08085, source-range-0b9dec90-08086))_
-
-> Monster Level=1
-
-> Rarity=7
-
-> Agility=8 Movement Speed=8/10 (water)
-
-> Number=Several to around ten
-
-> Frequency=Moderate
-
-> Intellect=Animal Reaction=Neutral
-
-> Attack Points=Strike Points=-
-
-> Evasion Points=9 (2) Defense Points=3
-
-> Life Points/Resistance=7/8 (1)
-
-> Mental Points/Resistance=2/7 (0)
-
-> Special Abilities=Poison body surface
-
-> Habitat=Lakes
-
-> Languages=None
-
-> Perception=Five senses
-
-### Technical frame 2: [ Toad ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08090))_
 
 > Monster Level=4 Rarity=11 Agility=8 Movement Speed=10/16 (water) Number=One Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Tongue: 10 (3) Strike Points=7 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=21/13 (6) Mental Points/Resistance=6/11 (4) Special Abilities=Wrap tongue around (strangling) and swallow whole Habitat=Wetlands such as lakes, riverbanks, etc.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08088))_
 
+<a id="atom-technical-atom-8513bd5954b3a73b"></a>
+
 > Anyone within 3 meters of a poison toad when it spews its venom must succeed on a life force resistance roll against target score 9.
 
-### Technical frame 3: [ Toad ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08093))_
-
-> This is a huge toad with a body length of 3 meters. It extends its 5 meter long tongue and entangles its prey, and if it's a human-sized animal, it will swallow it whole.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08091, source-range-0b9dec90-08092))_
-
-> Languages=None
-
-> Perception=Five senses
-
-### Technical frame 4: [ Toad ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08096))_
-
-> Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08095))_
-
-> If someone becomes entangled in a Toad's tongue, the other party members can attempt to sever it with a bladed weapon.
-
-### Technical frame 5: [ Toad ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08098))_
-
-> Alternatively, someone else could kill the toad, then cut its belly open and rescue the victim before they're digested. In that case, if you deal more damage than the toad's remaining life points, that same damage (before it's reduced by the toad's defense points) is also dealt to the victim inside its belly at the same time.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08096))_
-
-> If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape.
-
-### Technical frame 6: [ Toad ]
+### Technical frame 2: [ Toad ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08098))_
 
@@ -122,14 +56,18 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08097))_
 
+<a id="atom-technical-atom-e24604779eb2f9f6"></a>
+
 > penalty, and if you hit, the damage check is made as normal, and if the toad dies, you can escape.
 
-### Technical frame 7: [ Toad ]
+### Technical frame 3: [ Toad ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08096))_
 
 > Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08098))_
+
+<a id="atom-technical-atom-8edf7f42de98f3a7"></a>
 
 > In that case, if you deal more damage than the toad's remaining life points, that same damage (before it's reduced by the toad's defense points) is also dealt to the victim inside its belly at the same time.

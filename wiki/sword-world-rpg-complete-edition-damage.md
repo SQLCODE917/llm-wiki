@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Damage: 3 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-damage@057229793c15fb08b2cbbad9e20bd8b3
+projection_coverage: topic-sword-world-rpg-complete-edition-damage@72416085abe20a5db93e8031e8b9aaac
 ---
 
 # Damage
@@ -31,9 +31,15 @@ What [[sword-world-rpg-complete-edition]] covers about damage:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06571, source-range-0b9dec90-06572, source-range-0b9dec90-06573))_
 
+<a id="atom-technical-atom-7cff070781c78eba"></a>
+
 > Effect=Deals strike power 30 damage plus 12 bonus damage every hour. Resist reduces effect
 
+<a id="atom-technical-atom-3bb4e7900042fb6c"></a>
+
 > Toxicity Score=14 Rarity=14 Effect Start Time=1 hour later
+
+<a id="atom-technical-atom-78e1b82b4a8dec16"></a>
 
 > Effect Duration=Permanent
 
@@ -45,17 +51,26 @@ What [[sword-world-rpg-complete-edition]] covers about damage:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06577, source-range-0b9dec90-06578))_
 
+<a id="atom-technical-atom-ee671147f6ebddae"></a>
+
 > Effect=Put to sleep
+
+<a id="atom-technical-atom-987f877a01430050"></a>
 
 > Toxicity Score=10 Rarity=14 Effect Start Time=1 round later Effect Duration=1 hour
 
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-bonus-damage]] - narrower topic: 【 Bonus Damage 】 shares source evidence from [Centauri Blood (Touch/Damage)]: What's more, this poison is completely harmless at room temperature, and only becomes toxic when warmed by body heat. Those wearing cloth soaked with centauri blood ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-4-5-2-determining-base-damage-strike-roll-0-damage-bd8aa671]] - source section: 4.5.2 Determining Base Damage (Strike Roll) / 【 0 Damage! 】 shares source evidence from 4.5.2 Determining Base Damage (Strike Roll) / 【 0 Damage! 】: roll is 2 (double ones), the result is ＊＊ regardless of the key number. This means your attack hit the target, but failed to deal any damage!; 4.5.2 Determining Base Damage (Strike Roll) / 【 0 Damage! 】 shares technical table: 4 (base damage) +4 (bonus damage) -4 (goblin's defense points) = 4 18 (base damage) +4 (bonus damage) -4 (goblin's defense points) = 18 14 (base damage) +4 (bonus da ... [truncated] (2 shared statement(s), 1 shared atom(s))
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-damage-9e33ce2f]] - source section: 《 Damage 》 shares source evidence from 《 Damage 》: A spell that deals damage to the target's life force or mental power. Spells of the damage type always have a clearly defined strike power . If you manage to break t ... [truncated]; 《 Damage 》 shares technical record from 《 Damage 》: 4 (base damage) +4 (bonus damage) -4 (goblin's defense points) = 4 18 (base damage) +4 (bonus damage) -4 (goblin's defense points) = 18 14 (base damage) +4 (bonus da ... [truncated] (9 shared statement(s), 5 shared atom(s))
 - [[sword-world-rpg-complete-edition-section-10-5-attacks-against-the-sleeping-damage-f88e83a5]] - source section: 10.5 Attacks Against the Sleeping / 《 Damage 》 shares source evidence from 10.5 Attacks Against the Sleeping / 《 Damage 》: If the attack hits, roll 2D. If it's double ones, the damage will be equal to the strike points of the attacking monster. Otherwise, the damage equals the attacking ... [truncated]; 10.5 Attacks Against the Sleeping / 《 Damage 》 shares technical record from 10.5 Attacks Against the Sleeping / 《 Damage 》: 4 (base damage) +4 (bonus damage) -4 (goblin's defense points) = 4 18 (base damage) +4 (bonus damage) -4 (goblin's defense points) = 18 14 (base damage) +4 (bonus da ... [truncated] (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-4-5-2-determining-base-damage-strike-roll-0-damage-bd8aa671]] - source section: 4.5.2 Determining Base Damage (Strike Roll) / 【 0 Damage! 】 shares source evidence from 4.5.2 Determining Base Damage (Strike Roll) / 【 0 Damage! 】: roll is 2 (double ones), the result is ＊＊ regardless of the key number. This means your attack hit the target, but failed to deal any damage!; 4.5.2 Determining Base Damage (Strike Roll) / 【 0 Damage! 】 shares technical table: 4 (base damage) +4 (bonus damage) -4 (goblin's defense points) = 4 18 (base damage) +4 (bonus damage) -4 (goblin's defense points) = 18 14 (base damage) +4 (bonus da ... [truncated] (2 shared statement(s), 1 shared atom(s))
+
+### Topics
+
+- [[sword-world-rpg-complete-edition-bonus-damage]] - narrower topic: 【 Bonus Damage 】 shares source evidence from [Centauri Blood (Touch/Damage)]: What's more, this poison is completely harmless at room temperature, and only becomes toxic when warmed by body heat. Those wearing cloth soaked with centauri blood ... [truncated] (1 shared statement(s))
 
 ## Source
 

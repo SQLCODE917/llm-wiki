@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 5.1.12 Ancient Magic List / [ Falling Control ]: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-falling-control-6e78fe94@0917f16abc0e6cd5af08ad5f9a4bec64
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-falling-control-6e78fe94@0191c6275b4ced1afd421779a6798784
 ---
 
 # 5.1.12 Ancient Magic List / [ Falling Control ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-anc
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-19f66f88]] - broader source section: 5.1.12 Ancient Magic List
 

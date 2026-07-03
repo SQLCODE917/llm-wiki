@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-block
 page_kind: concept
-summary: Block: 10 statement(s) and 18 atom(s) from raw/javascriptallonge.pdf.
+page_family: topic-concept
+summary: Block: 9 statement(s) and 18 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-block@17ac927af9b4944a7cb9579eb4aab01e
+projection_coverage: topic-javascriptallonge-block@11b20f99ea180e7183e7ad95608008b9
 ---
 
 # Block
@@ -28,8 +29,6 @@ What [[javascriptallonge]] covers about block:
 ### Or even: / back on the block
 
 - We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21 _(javascriptallonge.pdf (source-range-7239e085-00236))_
-
-- But no matter how we arrange them, a block with one or more expressions still evaluates to undefined : _(javascriptallonge.pdf (source-range-7239e085-00243))_
 
 ### And also: / That Constant Coffee Craving / nested blocks
 
@@ -60,6 +59,8 @@ What [[javascriptallonge]] covers about block:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00024))_
 
+<a id="atom-technical-atom-da2e3d2bcbad5b58"></a>
+
 ```
 for (int i = 0; i < array.length; ++i) {
 // ...
@@ -73,6 +74,8 @@ for (int i = 0; i < array.length; ++i) {
 > Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Ruby, we can write:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00026))_
+
+<a id="atom-technical-atom-4cc33f6651c07c8e"></a>
 
 ```
 var i;
@@ -91,6 +94,8 @@ for (i = 0; i < array.length; ++i) {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00212))_
 
+<a id="atom-technical-atom-0588a4560ce14aad"></a>
+
 ```
 () => {}
 ```
@@ -102,6 +107,8 @@ for (i = 0; i < array.length; ++i) {
 > It returns the result of evaluating a block that has no statements. What would that be? Let's try it:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00214))_
+
+<a id="atom-technical-atom-312e25b71fa23527"></a>
 
 ```
 (() => {})()
@@ -116,6 +123,8 @@ for (i = 0; i < array.length; ++i) {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00235))_
 
+<a id="atom-technical-atom-b34f988478f326e7"></a>
+
 ```
 (() => {})()
 //=> undefined
@@ -128,6 +137,8 @@ for (i = 0; i < array.length; ++i) {
 > 21 You can also separate statements with line breaks. Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. Basically, there's a step where JavaScript looks at your code and follows some rules to guess where you meant to put semicolons in should you leave them out. This feature was originally created as a kind of helpful error-correction. Some programmers argue that since it's part of the language's definition, it's fair game to write code that e
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00244))_
+
+<a id="atom-technical-atom-80cf36acb939ff9e"></a>
 
 ```
 (() => { 2 + 2 })()
@@ -149,6 +160,8 @@ for (i = 0; i < array.length; ++i) {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00249))_
 
+<a id="atom-technical-atom-60713ed93e461b84"></a>
+
 ```
 (() => { return 0 })()
 //=> 0
@@ -165,6 +178,8 @@ for (i = 0; i < array.length; ++i) {
 > The if statement is a statement, not an expression (an unfortunate design choice), and its clauses are statements or blocks. So we could also write something like:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00439))_
+
+<a id="atom-technical-atom-179dd365e9382c9f"></a>
 
 ```
 (n) => {
@@ -186,6 +201,8 @@ return even(n)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00443))_
 
+<a id="atom-technical-atom-208e7e2794c15225"></a>
+
 ```
 (n) => {
 const even = (x) => {
@@ -204,6 +221,8 @@ return odd(x - 1);
 > We've used a block as the else clause, and since it's a block, we've placed a const statement inside it.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00444))_
+
+<a id="atom-technical-atom-a4ff91c073865533"></a>
 
 ```
 }
@@ -231,6 +250,8 @@ return even(n)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00445))_
 
+<a id="atom-technical-atom-4bfc4e7c5cb8ba29"></a>
+
 ```
 //=> true
 ```
@@ -242,6 +263,8 @@ return even(n)
 > Using let to bind 50 to age within the block does not change the binding of age in the outer environment because the binding of age in the block shadows the binding of age in the outer environment, just like const . We go from:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01172))_
+
+<a id="atom-technical-atom-6b4d9e3cefa8e5a5"></a>
 
 ```
 (() => {
@@ -262,6 +285,8 @@ return age;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01174))_
 
+<a id="atom-technical-atom-a1d928b604590680"></a>
+
 ```
 {age: 49, '..': global-environment}
 To:
@@ -277,6 +302,8 @@ Then back to:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01175))_
 
+<a id="atom-technical-atom-1ac4c7c1fddc41a9"></a>
+
 ```
 {age: 49, '..': global-environment}
 ```
@@ -288,6 +315,8 @@ Then back to:
 > Like evaluating variable labels, when a binding is rebound, JavaScript searches for the binding in the current environment and then each ancestor in turn until it finds one. It then rebinds the name in that environment.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01177))_
+
+<a id="atom-technical-atom-78cd5deb1d5738fa"></a>
 
 ```
 (() => {
@@ -308,6 +337,8 @@ return age;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01192))_
 
+<a id="atom-technical-atom-63d61c60ed87d9a8"></a>
+
 ```
 (() => {
 var age = 49;
@@ -321,78 +352,53 @@ return age;
 
 ### Technical atom 17
 
+<a id="atom-technical-atom-6eea21698f698a20"></a>
+
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00236))_
 
 > We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00234))_
 
-| entry | content |
-| --- | --- |
-| 19 | Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This was actually the preferred mechanism until void became commonplace. |
-| 20 | As an exercise for the reader, we suggest you ask your friendly neighbourhood programming language designer or human factors subjectmatter expert to explain why a keyword called void is used to generate an undefined value, instead of calling them both void or both undefined . We have no idea. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 back on the block
 Back to our function. We evaluated this:
 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This was actually the preferred mechanism until void became commonplace.
 20 As an exercise for the reader, we suggest you ask your friendly neighbourhood programming language designer or human factors subjectmatter expert to explain why a keyword called void is used to generate an undefined value, instead of calling them both void or both undefined . We have no idea.
 ```
 
-</details>
-
-### Technical atom 18
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00659))_
+<details>
+<summary>Parsed table preview (needs review)</summary>
 
 | entry | content |
 | --- | --- |
-| 45 | from Michael Fogus, Functional JavaScript |
-| 46 | from Oliver Steele and the terse but handy node-ap |
-| 47 | from James Halliday. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Partial Application
-In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libraries provide some form of partial application. You'll find examples in Lemonad 45 from Michael Fogus, Functional JavaScript 46 from Oliver Steele and the terse but handy node-ap 47 from James Halliday.
-```
+| 19 | Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This was actually the preferred mechanism until void became commonplace. |
+| 20 | As an exercise for the reader, we suggest you ask your friendly neighbourhood programming language designer or human factors subjectmatter expert to explain why a keyword called void is used to generate an undefined value, instead of calling them both void or both undefined. We have no idea. |
 
 </details>
 
 
 ## Related pages
 
+### Source structure
+
+- [[javascriptallonge-section-or-even-back-on-the-block-b9587c98]] - source section: Or even: / back on the block shares source evidence from Or even: / back on the block: We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21; Or even: / back on the block shares technical record from Or even: / back on the block: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (9 shared statement(s), 9 shared atom(s))
+
+### Shared technical atoms
+
 - [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Or even: / back on the block: We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21; Function shares technical record from Or even: / back on the block: (() => {})() //=> undefined (1 shared statement(s), 6 shared atom(s))
-- [[javascriptallonge-expression]] - shared statements and technical atoms: Expression shares source evidence from Or even: / back on the block: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined :; Expression shares technical record from Or even: / back on the block: (() => { 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (1 shared statement(s), 5 shared atom(s))
 - [[javascriptallonge-evaluating]] - shared statements and technical atoms: Evaluating shares source evidence from Or even: / the simplest possible block: It returns the result of evaluating a block that has no statements. What would that be? Let's try it:; Evaluating shares technical record from Or even: / the simplest possible block: () => {} (2 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-expression]] - shared technical atoms: Expression shares technical record from Or even: / back on the block: (() => { 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (5 shared atom(s))
 - [[javascriptallonge-result]] - shared statements and technical atoms: Result shares source evidence from Or even: / the simplest possible block: It returns the result of evaluating a block that has no statements. What would that be? Let's try it:; Result shares technical record from Or even: / the simplest possible block: () => {} (2 shared statement(s), 4 shared atom(s))
 - [[javascriptallonge-return]] - shared statements and technical atoms: Return shares source evidence from Or even: / the simplest possible block: It returns the result of evaluating a block that has no statements. What would that be? Let's try it:; Return shares technical record from Or even: / the simplest possible block: () => {} (2 shared statement(s), 4 shared atom(s))
 - [[javascriptallonge-statement]] - shared statements and technical atoms: Statement shares source evidence from And also: / Summary / Functions: Blocks also create scopes if const statements are within them.; Statement shares technical record from And also: / That Constant Coffee Craving / nested blocks: (n) => { const even = (x) => { if (x === 0) return true; else return !even(x - 1); } return even(n) } (1 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-evaluate]] - shared statements and technical atoms: Evaluate shares source evidence from Or even: / back on the block: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined :; Evaluate shares technical record from Or even: / back on the block: (() => { 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (2 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-bind]] - shared statements and technical atoms: Bind shares source evidence from Composing and Decomposing Data / Reassignment: Using let to bind 50 to age within the block does not change the binding of age in the outer environment because the binding of age in the block shadows the binding ... [truncated]; Bind shares technical record from Composing and Decomposing Data / Reassignment: (() => { let age = 49; if (true) { let age = 50; } return age; })() //=> 49 (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-matter]] - shared statements and technical atoms: Matter shares source evidence from Or even: / back on the block: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined :; Matter shares technical record from Or even: / back on the block: (() => { 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-partial-application]] - shared statements and technical atoms: partial application shares source evidence from And also: / Building Blocks / partial application: Another basic building block is partial application . When a function takes multiple arguments, we 'apply' the function to the arguments by evaluating it with all of ... [truncated]; partial application shares technical table: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-seen]] - shared statements and technical atoms: Seen shares source evidence from And also: / That Constant Coffee Craving / nested blocks: Up to now, we've only ever seen blocks we use as the body of functions. But there are other kinds of blocks. One of the places you can find blocks is in an if statem ... [truncated]; Seen shares technical record from And also: / That Constant Coffee Craving / nested blocks: (n) => { const even = (x) => { if (x === 0) return true; else return !even(x - 1); } return even(n) } (1 shared statement(s), 1 shared atom(s))
 - [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ... })(i) } (4 shared atom(s))
-- [[javascriptallonge-binding]] - shared technical atoms: Binding shares technical record from Composing and Decomposing Data / Reassignment: (() => { let age = 49; if (true) { let age = 50; } return age; })() //=> 49 (3 shared atom(s))
-- [[javascriptallonge-language]] - shared technical atoms: Language shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: for (int i = 0; i < array.length; ++i) { // ... } (2 shared atom(s))
-- [[javascriptallonge-program]] - shared technical atoms: Program shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ... })(i) } (2 shared atom(s))
-- [[javascriptallonge-programmer]] - shared technical atoms: Programmer shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ... })(i) } (2 shared atom(s))
-- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-declaration]] - shared technical atoms: Declaration shares technical record from Composing and Decomposing Data / Reassignment / mixing let and const / var: (() => { var age = 49; if (true) { var age = 50; } return age; })() //=> 50 (1 shared atom(s))
-- [[javascriptallonge-ecmascript]] - shared technical atoms: Ecmascript shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ... })(i) } (1 shared atom(s))
-- [[javascriptallonge-functional]] - shared technical atoms: Functional shares technical table: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-programming]] - shared technical atoms: Programming shares technical record from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ... })(i) } (1 shared atom(s))
-- [[javascriptallonge-recipe]] - shared technical atoms: Recipe shares technical table: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-works-just-fine-because-arguments]] - shared technical atoms: Works Just Fine, Because Arguments[0 shares technical table: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-write]] - shared technical atoms: Write shares technical table: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-bind]] - shared statements and technical atoms: Bind shares source evidence from Composing and Decomposing Data / Reassignment: Using let to bind 50 to age within the block does not change the binding of age in the outer environment because the binding of age in the block shadows the binding ... [truncated]; Bind shares technical record from Composing and Decomposing Data / Reassignment: (() => { let age = 49; if (true) { let age = 50; } return age; })() //=> 49 (1 shared statement(s), 3 shared atom(s))
+
+### Shared claims
+
+- [[javascriptallonge-evaluate]] - shared statements: Evaluate shares source evidence from And also: / Summary / Functions: Block bodies evaluate to whatever is returned with the return keyword, or to undefined . (1 shared statement(s))
 - [[javascriptallonge-feature]] - shared statements: Feature shares source evidence from A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: ECMAScript 2015 (formerly called ECMAScript 6 or 'ES6'), is ushering in a very large number of improvements to the way programmers can write small, powerful componen ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-section-or-even-back-on-the-block-b9587c98]] - source section: Or even: / back on the block shares source evidence from Or even: / back on the block: We said that the function returns the result of evaluating a block , and we said that a block is a (possibly empty) list of JavaScript statements separated by semicolons. 21; Or even: / back on the block shares technical record from Or even: / back on the block: back on the block Back to our function. We evaluated this: 19 Experienced JavaScript programmers are aware that there's a fourth way, using a function argument. This ... [truncated] (12 shared statement(s), 9 shared atom(s))
 
 ## Source
 

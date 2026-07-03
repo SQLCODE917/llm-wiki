@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-adventurers-9781d3d7
 page_kind: source
 page_family: section-reference
-summary: 18.3 Rules for Destroying Structures / Adventurers: 13 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 18.3 Rules for Destroying Structures / Adventurers: 13 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-adventurers-9781d3d7@c1853b8d8571ca3e356df34683a1ba49
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-adventurers-9781d3d7@6a5a3c8e162ac8fc7aef6afa7b58c711
 ---
 
 # 18.3 Rules for Destroying Structures / Adventurers
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-5e113017]] - broader source section: 18.3 Rules for Destroying Structures
 
@@ -29,25 +31,3 @@ From [[sword-world-rpg-complete-edition]].
 - This summarizes the basic political and social structure of Sword World. Travel between countries is relatively unrestricted, requiring only a passage tax. While breaking through checkpoints is considered a crime, it isn't punished too severely during peacetime. However, since conditions vary between countries, don't assume things will always work exactly this way. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11918))_
 - These people possess various abilities, including combat skills and a strong sense of independence, unbound by power structures or social constraints, and are often employed as problemsolvers for hire. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11914))_
 - Travel between countries is relatively unrestricted, requiring only a passage tax. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11918))_
-
-## Technical atoms
-
-### Technical frame 1: 18.3 Rules for Destroying Structures / Adventurers
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11918))_
-
-> This summarizes the basic political and social structure of Sword World. Travel between countries is relatively unrestricted, requiring only a passage tax. While breaking through checkpoints is considered a crime, it isn't punished too severely during peacetime. However, since conditions vary between countries, don't assume things will always work exactly this way.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11917))_
-
-> When misfortune befalls them, these adventurers have few other people they can rely on.
-
-### Technical frame 2: 18.3 Rules for Destroying Structures / Adventurers
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11918))_
-
-> This summarizes the basic political and social structure of Sword World. Travel between countries is relatively unrestricted, requiring only a passage tax. While breaking through checkpoints is considered a crime, it isn't punished too severely during peacetime. However, since conditions vary between countries, don't assume things will always work exactly this way.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11919))_
-
-> [Figure] (p.283)

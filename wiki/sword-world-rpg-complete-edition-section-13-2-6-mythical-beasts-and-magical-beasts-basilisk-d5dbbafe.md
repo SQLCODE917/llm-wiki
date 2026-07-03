@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-basilisk-d5dbbafe
 page_kind: source
 page_family: section-reference
-summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]: 37 source-backed entries and 24 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]: 37 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-basilisk-d5dbbafe@dfe2772d9ae4c9517670cedd67daff8a
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-basilisk-d5dbbafe@944d973c2571f5b97be898448f60557c
 ---
 
 # 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-myt
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] - broader source section: 13.2.6 Mythical Beasts and Magical Beasts
 
@@ -33,57 +35,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07686, source-range-0b9dec90-07687, source-range-0b9dec90-07688, source-range-0b9dec90-07689, source-range-0b9dec90-07690, source-range-0b9dec90-07691, source-range-0b9dec90-07692, source-range-0b9dec90-07693, source-range-0b9dec90-07694, source-range-0b9dec90-07695, source-range-0b9dec90-07696, source-range-0b9dec90-07698))_
-
-> Monster Level=8
-
-> Rarity=9
-
-> Agility=12 Movement Speed=10
-
-> Number=Solo Frequency=Very Rare
-
-> Intellect=Animal Reaction=Adversarial
-
-> Attack Points=Fangs:15 (8)
-
-> Strike Points=18
-
-> Evasion Points=14 (7) Defense Points=12
-
-> Life Points/Resistance=25/18 (11)
-
-> Mental Points/Resistance=12/16 (9)
-
-> Special Abilities=Gaze
-
-> score=15, petrifying, once every 2 rounds)
-
-### Technical frame 2: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07704))_
-
-> A basilisk is a large lizard, about 10 meters long, with a chicken's comb on its head and eight legs. In normal combat, it'll try to bite its enemy to death with its fangs, but if it realizes that it's at a disadvantage, it'll attack with its petrifying gaze.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07701, source-range-0b9dec90-07702, source-range-0b9dec90-07703))_
-
-> Habitat=Deserts
-
-> Languages=None
-
-> Perception=Five senses
-
-### Technical frame 3: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07706))_
 
 > You can attempt to use a large mirror (at least the size of a small shield) to catch the basilisk's gaze and reflect it back to turn the basilisk into stone. In that case, if a character attains a final score of 19 or greater on a resistance roll against petrification, they will be able to reflect it back at the basilisk. If this happens, the basilisk will automatically be petrified.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07707))_
 
+<a id="atom-technical-atom-7da82e206d3ce4b9"></a>
+
 > Anyone holding a weapon with basilisk blood on it must make a life force resistance roll against target score 15 each round, and if they fail, they will suffer damage resulting from a strike power 10 strike roll plus bonus damage 8.
 
-### Technical frame 4: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
+### Technical frame 2: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07707))_
 
@@ -91,26 +53,22 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07709, source-range-0b9dec90-07710, source-range-0b9dec90-07711, source-range-0b9dec90-07712, source-range-0b9dec90-07713))_
 
+<a id="atom-technical-atom-7cc8f49212ec1561"></a>
+
 > Monster Level=5 Rarity=10 Agility=12 Movement Speed=7 Number=One Frequency=Very Rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs:12 (5) Strike Points=13
+
+<a id="atom-technical-atom-25fc1d73d41c132f"></a>
 
 > Evasion Points=13 (6) Defense Points=9
 
+<a id="atom-technical-atom-3d1255eb2421e44e"></a>
+
 > Life Points/Resistance=19/14 (7)
+
+<a id="atom-technical-atom-42182795a0242cf9"></a>
 
 > Mental Points/Resistance=9/12 (5)
 
+<a id="atom-technical-atom-b570b63c245d9b91"></a>
+
 > Special Ability=Gaze (Resist target score=15, petrifying, once every 2 rounds)
-
-### Technical frame 5: 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07719))_
-
-> This is a small species of basilisk. Although they're small, their petrifying gaze and poisonous blood are just as powerful as those of the larger species.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07716, source-range-0b9dec90-07717, source-range-0b9dec90-07718))_
-
-> Habitat=Deserts
-
-> Languages=None
-
-> Perception=Five senses

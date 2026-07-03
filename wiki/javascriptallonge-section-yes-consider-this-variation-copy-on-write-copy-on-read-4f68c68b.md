@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-yes-consider-this-variation-copy-on-write-copy-on-read-4f68c68b
 page_kind: source
+page_family: section-reference
 summary: Yes. Consider this variation: / Copy on Write / copy-on-read: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-yes-consider-this-variation-copy-on-write-copy-on-read-4f68c68b@82322c7e3f5c00794075540cbaa7d817
+projection_coverage: section-javascriptallonge-section-yes-consider-this-variation-copy-on-write-copy-on-read-4f68c68b@1ee9fe7e0af58395aa89ab55d27ecc62
 ---
 
 # Yes. Consider this variation: / Copy on Write / copy-on-read
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-yes-consider-this-variati
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-yes-consider-this-variation-copy-on-write-c844813d]] - broader source section: Yes. Consider this variation: / Copy on Write
 
@@ -35,6 +38,8 @@ From [[javascriptallonge]].
 > This strategy is called 'copy-on-read', because when we attempt the parent to 'read' the value of a child of the list, we make a copy and read the copy of the child. Thereafter, we can write to the parent or the copy of the child freely.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01240))_
+
+<a id="atom-technical-atom-05e2937fc47dd397"></a>
 
 ```
 const rest = ({first, rest}) => copy(rest);

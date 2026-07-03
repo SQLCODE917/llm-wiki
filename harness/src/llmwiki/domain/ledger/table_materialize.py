@@ -7,6 +7,7 @@ import re
 from llmwiki.domain.ledger.atoms import TableCell, TableColumn, TablePayload, TableRow
 from llmwiki.domain.ledger.common import ReviewReason
 from llmwiki.domain.ledger.segments import SourceSegment
+from llmwiki.domain.ledger.table_cell_normalize import normalize_table_cell_text
 from llmwiki.domain.ledger.tabular import inline_row_marker_spans, range_value_entries
 
 _ENUMERATED_LINE = re.compile(r"^\s*(?:[-*]\s*)?(\d+)[\s.)]+(.*)$")
@@ -55,7 +56,10 @@ def _parse_pipe_table(
     raw: str,
 ) -> tuple[tuple[TableColumn, ...], tuple[TableRow, ...], tuple[TableCell, ...], str]:
     rows = [line for line in raw.splitlines() if line.strip().startswith("|") or "|" in line]
-    grid = [tuple(cell.strip() for cell in line.strip().strip("|").split("|")) for line in rows]
+    grid = [
+        tuple(normalize_table_cell_text(cell) for cell in line.strip().strip("|").split("|"))
+        for line in rows
+    ]
     grid = [row for row in grid if any(cell for cell in row)]
     if len(grid) < 2 or not _is_separator(grid[1]):
         return (), (), (), "failed"
@@ -97,7 +101,11 @@ def _parse_spaced_table(
 
 
 def _split_spaced_row(line: str) -> tuple[str, ...]:
-    return tuple(cell.strip() for cell in re.split(r"\s{2,}", line.strip()) if cell.strip())
+    return tuple(
+        normalize_table_cell_text(cell)
+        for cell in re.split(r"\s{2,}", line.strip())
+        if cell.strip()
+    )
 
 
 def _header_like(row: tuple[str, ...]) -> bool:
@@ -174,8 +182,8 @@ def _line_enumerated_entries(lines: list[str]) -> tuple[tuple[str, str], ...]:
         if current_key:
             if (
                 current_parts
-                and _looks_like_next_row_prefix(line)
-                and _next_marker_soon(lines, index)
+                and _looks_like_next_row_prefix(line, current_parts)
+                and _next_marker_after_prefix(lines, index)
             ):
                 _flush_entry(line_entries, current_key, current_parts)
                 current_key, current_parts = "", []
@@ -211,22 +219,22 @@ def _inline_entries(text: str, *, minimum: int) -> tuple[tuple[str, str], ...]:
 
 
 def _clean_line(line: str) -> str:
-    return " ".join(line.strip().split())
+    return normalize_table_cell_text(line)
 
 
 def _punctuation_only(line: str) -> bool:
     return bool(line) and not any(char.isalnum() for char in line)
 
 
-def _next_marker_soon(lines: list[str], index: int) -> bool:
-    return any(
-        _ENUMERATED_LINE.match(line) or _NUMERIC_MARKER_LINE.match(line)
-        for line in lines[index + 1 : index + 4]
-        if not _punctuation_only(line)
-    )
+def _next_marker_after_prefix(lines: list[str], index: int) -> bool:
+    for line in lines[index + 1 : index + 4]:
+        if _punctuation_only(line):
+            continue
+        return bool(_ENUMERATED_LINE.match(line) or _NUMERIC_MARKER_LINE.match(line))
+    return False
 
 
-def _looks_like_next_row_prefix(line: str) -> bool:
+def _looks_like_next_row_prefix(line: str, current_parts: list[str] | None = None) -> bool:
     if not line[:1].isalnum():
         return False
     if line[:1].islower():
@@ -236,7 +244,13 @@ def _looks_like_next_row_prefix(line: str) -> bool:
         return False
     if ":" in line:
         return True
-    return not line.endswith((".", "!", "?"))
+    if not line.endswith((".", "!", "?")):
+        return True
+    return _parts_end_sentence(current_parts or [])
+
+
+def _parts_end_sentence(parts: list[str]) -> bool:
+    return bool(parts) and parts[-1].rstrip().endswith((".", "!", "?"))
 
 
 def _table_caption(raw: str) -> str:

@@ -4,7 +4,7 @@ page_kind: concept
 page_family: topic-concept
 summary: Adventure Treasure: 1 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
 projection_coverage: topic-sword-world-rpg-complete-edition-adventure-treasure@ea965c0591c814b2b79294c0860b1224

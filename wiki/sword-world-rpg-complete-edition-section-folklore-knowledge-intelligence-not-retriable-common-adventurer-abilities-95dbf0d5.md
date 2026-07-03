@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: [ ⑤ Folklore Knowledge [Intelligence] ] (Not retriable) / Common Adventurer Abilities: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-folklore-knowledge-intelligence-not-retriable-common-adventurer-abilities-95dbf0d5@5175aff663eee1b4d523370004ebde66
+projection_coverage: section-sword-world-rpg-complete-edition-section-folklore-knowledge-intelligence-not-retriable-common-adventurer-abilities-95dbf0d5@be20664e0876d58f66ed4a4830023ea9
 ---
 
 # [ ⑤ Folklore Knowledge [Intelligence] ] (Not retriable) / Common Adventurer Abilities
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-folklore-k
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-folklore-knowledge-intelligence-not-retriable-d3c60d4a]] - broader source section: [ ⑤ Folklore Knowledge [Intelligence] ] (Not retriable)
 

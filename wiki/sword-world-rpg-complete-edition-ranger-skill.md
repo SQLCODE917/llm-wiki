@@ -4,10 +4,10 @@ page_kind: concept
 page_family: broad-topic
 summary: 【 Ranger Skill 】: 75 statement(s) and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-ranger-skill@c8cb920180fc0729787dd01762e435ec
+projection_coverage: topic-sword-world-rpg-complete-edition-ranger-skill@fde7f0b5dd5e2c58fe3f1aba5594e607
 ---
 
 # 【 Ranger Skill 】
@@ -17,8 +17,18 @@ What [[sword-world-rpg-complete-edition]] covers about 【 ranger skill 】:
 
 ## Related pages
 
+### Source structure
+
+- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-f81328c3]] - source section: Chapter 6: / 6.3 Ranger Skill shares source evidence from Chapter 6: / 6.3 Ranger Skill: Owners of the ranger skill demonstrate a variety of abilities in outdoor activities, as explained below.; Chapter 6: / 6.3 Ranger Skill shares technical record from Chapter 6: / 6.3 Ranger Skill / [ ④ Listen [Intelligence] ] (Equipment restriction): For example, when you walk through a ravine and see a pebble fall, you may feel like a landslide is about to occur, or you may feel an arrow flying from the darkness. (46 shared statement(s), 11 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-ranger-skill-e2cd921c]] - source section: 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】: The ranger skill is proficient with projectiles, and only when using a weapon that is designated as suchthrowable , made for throwing , or shooting on Table 1-8: Wea ... [truncated]; 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 shares technical record from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】: Weapons that can be used for both melee and throwing, as indicated by throwable on the Weapons table, are useful only when used for throwing, not for melee. (5 shared statement(s), 1 shared atom(s))
+
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction]] - shared statements and technical atoms: [ ⑤ Listen [Intelligence] ] (Equipment restriction) shares source evidence from Chapter 6: / 6.3 Ranger Skill / [ ④ Listen [Intelligence] ] (Equipment restriction): Rangers can listen to even the smallest sounds and can choose the sound they want to hear from a wide range of sounds. This is handed the same way as the thief's ability.; [ ⑤ Listen [Intelligence] ] (Equipment restriction) shares technical record from Chapter 6: / 6.3 Ranger Skill / [ ④ Listen [Intelligence] ] (Equipment restriction): For example, when you walk through a ravine and see a pebble fall, you may feel like a landslide is about to occur, or you may feel an arrow flying from the darkness. (4 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable]] - shared statements and technical atoms: [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable) shares source evidence from Chapter 6: / 6.3 Ranger Skill / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable): This is the ability to search for hidden things. The game master should determine the difficulty depending on what's hidden. Since it's an ability that relies on fee ... [truncated]; [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable) shares technical record from Chapter 6: / 6.3 Ranger Skill / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable): The game master should determine the difficulty depending on what's hidden. (2 shared statement(s), 1 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-target-score]] - shared statements: Target Scores shares source evidence from 4.5.1 Hit Checks: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score. (8 shared statement(s))
 - [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (5 shared statement(s))
 - [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements: 1.3.3 Adventurer Level shares source evidence from 10.3 Surprise Attacks: When encountering a monster, one of you may notice the other without them noticing you, allowing you to perform a surprise attack . This should also be determined by ... [truncated] (3 shared statement(s))
@@ -27,9 +37,6 @@ What [[sword-world-rpg-complete-edition]] covers about 【 ranger skill 】:
 - [[sword-world-rpg-complete-edition-critical-target-variation]] - shared statements: Critical Target Variation shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements: 【 Damage Reduction 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-hit-check]] - shared statements: 4.5.1 Hit Checks shares source evidence from 4.5.1 Hit Checks: In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score. (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-mithril-silver-weapon]] - shared statements: Mithril Silver Weapon shares source evidence from 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor: Chain mail made of mithril silver does not inhibit bodily movement as much as that made of steel (but splint armor, lamellar armor, and plate armor still do ). Mithr ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-ranger-skill-e2cd921c]] - source section: 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】: The ranger skill is proficient with projectiles, and only when using a weapon that is designated as suchthrowable , made for throwing , or shooting on Table 1-8: Wea ... [truncated]; 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 shares technical record from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】: Weapons that can be used for both melee and throwing, as indicated by throwable on the Weapons table, are useful only when used for throwing, not for melee. (5 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-f81328c3]] - source section: Chapter 6: / 6.3 Ranger Skill shares source evidence from Chapter 6: / 6.3 Ranger Skill: Owners of the ranger skill demonstrate a variety of abilities in outdoor activities, as explained below.; Chapter 6: / 6.3 Ranger Skill shares technical record from Chapter 6: / 6.3 Ranger Skill / [ ④ Listen [Intelligence] ] (Equipment restriction): For example, when you walk through a ravine and see a pebble fall, you may feel like a landslide is about to occur, or you may feel an arrow flying from the darkness. (46 shared statement(s), 11 shared atom(s))
 ## Statements by source section
 
 ### 1.2 Races / 【 Grassrunner 】
@@ -155,6 +162,8 @@ What [[sword-world-rpg-complete-edition]] covers about 【 ranger skill 】:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01429))_
 
+<a id="atom-technical-atom-158d039f237cb6c2"></a>
+
 > Weapons that can be used for both melee and throwing, as indicated by throwable on the Weapons table, are useful only when used for throwing, not for melee.
 
 ### Technical frame 2: Chapter 6: / 6.3 Ranger Skill / [ ④ Listen [Intelligence] ] (Equipment restriction)
@@ -165,27 +174,11 @@ What [[sword-world-rpg-complete-edition]] covers about 【 ranger skill 】:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05019))_
 
+<a id="atom-technical-atom-2f81d790163ffe4b"></a>
+
 > For example, when you walk through a ravine and see a pebble fall, you may feel like a landslide is about to occur, or you may feel an arrow flying from the darkness.
 
-### Technical frame 3: Chapter 6: / 6.3 Ranger Skill / [ ⑦ Survivalism [Life Force] ] (No equipment restriction)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05023))_
-
-> When an adventurer's survival is in danger, the game master should set a target score and have them make a success roll to overcome the situation.
-
-### Technical frame 4: Chapter 6: / 6.3 Ranger Skill / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05026))_
-
-> The game master should determine the difficulty depending on what's hidden.
-
-### Technical frame 5: Chapter 6: / 6.3 Ranger Skill / [ ⑨ Map Creation [Intelligence]] (No equipment restriction, not retriable)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05028))_
-
-> You can also determine direction from the position of the sun or stars.
-
-### Technical frame 6: Chapter 6: / 6.3 Ranger Skill / [ ⑩ Weather Prediction [Intelligence] ] (No equipment restriction, not retriable)
+### Technical frame 3: Chapter 6: / 6.3 Ranger Skill / [ ⑩ Weather Prediction [Intelligence] ] (No equipment restriction, not retriable)
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05030))_
 
@@ -193,27 +186,11 @@ What [[sword-world-rpg-complete-edition]] covers about 【 ranger skill 】:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05031))_
 
+<a id="atom-technical-atom-a1b912151373debf"></a>
+
 > If you attempt to use this ability and fail the success roll, you simply cannot predict the weather; it does not predict the opposite.
 
-### Technical frame 7: Chapter 6: / 6.3 Ranger Skill / [ ⑪ Plant and Animal Check [Intelligence] ] (No equipment restriction, not retriable)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05033))_
-
-> Rangers can determine what animals and plants they see.
-
-### Technical frame 8: Chapter 6: / 6.3 Ranger Skill / [ ⑪ Plant and Animal Check [Intelligence] ] (No equipment restriction, not retriable)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05034))_
-
-> In other cases (such as searching for herbs), the game master should determine a target score for the check.
-
-### Technical frame 9: Chapter 6: / 6.3 Ranger Skill / [ ⑫ Projectile Use [Dexterity, Strength] ] (No equipment restriction)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05036))_
-
-> You can use any projectile as long as your strength allows it.
-
-### Technical frame 10: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
+### Technical frame 4: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05044))_
 
@@ -221,9 +198,11 @@ What [[sword-world-rpg-complete-edition]] covers about 【 ranger skill 】:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05047))_
 
+<a id="atom-technical-atom-688e095a365d4c6e"></a>
+
 > There is no requirement that you have to have the sage skill and the sorcerer skill at the same time, but if you do acquire the sage skill and the sorcerer skill at the same time, you will receive a bonus on experience points consumed.
 
-### Technical frame 11: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
+### Technical frame 5: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05058))_
 
@@ -231,9 +210,11 @@ What [[sword-world-rpg-complete-edition]] covers about 【 ranger skill 】:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05057))_
 
+<a id="atom-technical-atom-1ef364bd9c95a4ee"></a>
+
 > When a sage sees a monster or hears its name, this ability may allow them to discover its true identity.
 
-### Technical frame 12: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
+### Technical frame 6: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05058))_
 
@@ -241,7 +222,21 @@ What [[sword-world-rpg-complete-edition]] covers about 【 ranger skill 】:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05059))_
 
+<a id="atom-technical-atom-740c6a7ba43e9265"></a>
+
 > Even if the player knows, they must treat it as if they had no prior knowledge.
+
+### Technical atom 7
+
+<a id="atom-technical-atom-0c4c7b6a346e9e62"></a>
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05033))_
+
+> Rangers can determine what animals and plants they see. When an animal or plant appears as a monster, you can make a success roll using its rarity as the target score, similar to the sage skill's monster check ability (the sage skill's abilities are explained later on page 118).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05034))_
+
+> In other cases (such as searching for herbs), the game master should determine a target score for the check.
 
 
 ## Source

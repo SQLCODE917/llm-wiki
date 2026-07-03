@@ -1,4 +1,5 @@
 from llmwiki.domain.ledger.artifacts import build_projection_context_artifact
+from llmwiki.domain.ledger.atom_addressing import technical_atom_anchor_id
 from llmwiki.domain.ledger.atoms import FormulaPayload, TechnicalAtom
 from llmwiki.domain.ledger.canonical import canonical_json
 from llmwiki.domain.ledger.common import ConfidenceBasis, SpatialScope
@@ -122,6 +123,8 @@ def test_topic_projection_renders_source_blocks_and_atom_frames() -> None:
     assert "### Skeleton Warrior" in body
     assert "### Technical frame 1: Skeleton Warrior" in body
     assert "**Context:** _(source.pdf (range-description))_" in body
+    assert technical_atom_anchor_id("atom-cost") in body
+    assert technical_atom_anchor_id("atom-distance") in body
     assert "Base Mental Power Cost=20" in body
     assert "Distance=Touch" in body
 

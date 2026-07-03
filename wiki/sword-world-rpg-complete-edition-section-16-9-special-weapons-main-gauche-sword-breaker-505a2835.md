@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-16-9-special-weapons-main-gauche-sword-breaker-505a2835
 page_kind: source
 page_family: section-reference
-summary: 16.9 Special Weapons / Main-gauche/Sword Breaker: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 16.9 Special Weapons / Main-gauche/Sword Breaker: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-9-special-weapons-main-gauche-sword-breaker-505a2835@ae2353264dcdc79e34c3c57ab38303ce
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-9-special-weapons-main-gauche-sword-breaker-505a2835@c04ae337198470cf6fe15fa4bd2aa6f6
 ---
 
 # 16.9 Special Weapons / Main-gauche/Sword Breaker
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-16-9-speci
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-16-9-special-weapons-62330b63]] - broader source section: 16.9 Special Weapons
 
@@ -31,20 +33,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 16.9 Special Weapons / Main-gauche/Sword Breaker
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11600))_
-
-> Main-gauche and sword breaker have the same attack scores as a dagger . When attacking with both hands, you'll still suffer a -2 ／ -4 penalty. Also, if you use it for an attack, you'll lose the evasion bonus.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11599))_
-
-> When you roll 2D for evasion, if you get double sixes , you can break your opponent's weapon.
-
-### Technical frame 2: 16.9 Special Weapons / Main-gauche/Sword Breaker
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11599))_
 
 > A sword breaker is a type of maingauche with serrated blades lined up along the back. It has a similar bonus to evasion speed, and moreover, if used skillfully, can break or drop an opponent's weapon. When you roll 2D for evasion, if you get double sixes , you can break your opponent's weapon. If you roll an 11 , and you evade your opponent's attack, you can make your opponent drop his or her weapon. Of course, your opponent's weapons are limited to daggers , rapiers , and short swords .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11600))_
+
+<a id="atom-technical-atom-99013274dc280482"></a>
 
 > Also, if you use it for an attack, you'll lose the evasion bonus.

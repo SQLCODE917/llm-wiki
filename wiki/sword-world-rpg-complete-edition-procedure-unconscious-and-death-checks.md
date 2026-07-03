@@ -4,12 +4,12 @@ page_kind: procedure
 page_family: procedure-guide
 summary: Complete Unconscious and Death Checks: 4 ordered step(s), 4 decision point(s), and 9 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
 aliases: complete-unconscious-and-death-checks, unconscious-and-death-checks
-projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-unconscious-and-death-checks@cd507e5093e0bb434f50fb92d273bbbd
+projection_coverage: procedure-sword-world-rpg-complete-edition-procedure-unconscious-and-death-checks@d21e0d3ee896287e66cbc60fa461443f
 ---
 
 # Unconscious and Death Checks
@@ -48,15 +48,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Tables And Formulas
 
-- `formula`: life force resistance + 2D - (damage applied beyond life force) ≥ 7 → survival _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02323))_
-- `rule`: Ducard II, with a life force of -4 , must make a death check . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02326))_
-- `rule`: Characters with 0 or negative life force must make a death check every hour . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02330))_
-- `rule`: In one hour , they must make another death check. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02335))_
-- `rule`: If left untreated, they must make another death check after 1 hour , and _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02347))_
-- `rule`: You must roll the dice to determine if your character survives. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02321))_
-- `rule`: Monsters with 0 or negative life points must also make a check to see if they live or die. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02338))_
-- `rule`: If a character does not want to kill their opponent, they can declare mercy . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02343))_
-- `rule`: You must declare mercy before you make a hit check for your attack. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02345))_
+- `formula`: [[sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-8bd45d4a]]#atom-technical-atom-5daa9a6fbb07e1b0 life force resistance + 2D - (damage applied beyond life force) ≥ 7 → survival _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02323))_
+- `rule`: [[sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-8bd45d4a]]#atom-technical-atom-ddc7ec8b2e3e82b2 Ducard II, with a life force of -4 , must make a death check . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02326))_
+- `rule`: [[sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-8bd45d4a]]#atom-technical-atom-0d9250aadfcecea8 Characters with 0 or negative life force must make a death check every hour . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02330))_
+- `rule`: [[sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-8bd45d4a]]#atom-technical-atom-15be6ea1b9d70d50 In one hour , they must make another death check. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02335))_
+- `rule`: [[sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-8bd45d4a]]#atom-technical-atom-10858a86e9560a4e If left untreated, they must make another death check after 1 hour , and _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02347))_
+- `rule`: [[sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-8bd45d4a]]#atom-technical-atom-ca632b014f6e765c You must roll the dice to determine if your character survives. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02321))_
+- `rule`: [[sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-8bd45d4a]]#atom-technical-atom-82f55625f7e4c7cc Monsters with 0 or negative life points must also make a check to see if they live or die. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02338))_
+- `rule`: [[sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-8bd45d4a]]#atom-technical-atom-b71b118a122ffd10 If a character does not want to kill their opponent, they can declare mercy . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02343))_
+- `rule`: [[sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-8bd45d4a]]#atom-technical-atom-b2eb249027108721 You must declare mercy before you make a hit check for your attack. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02345))_
 
 ## Completion Check
 

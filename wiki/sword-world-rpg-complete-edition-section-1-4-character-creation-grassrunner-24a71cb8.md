@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 1.4 Character Creation / 【 Grassrunner 】: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-grassrunner-24a71cb8@c231c7c7843ed3b2e2a7ea957eb7f8a5
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-grassrunner-24a71cb8@1845a8396b85811adf3143f26d0c128a
 ---
 
 # 1.4 Character Creation / 【 Grassrunner 】
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1e239ef6]] - broader source section: 1.4 Character Creation
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-1-2-races-grassrunner-1b7187c6]] - same source heading: another source section with the same heading, 1.2 Races / 【 Grassrunner 】
 
 ## Statements

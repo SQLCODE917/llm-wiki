@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-ritual-721caaeb
 page_kind: source
 page_family: section-reference
-summary: 《 Ritual 》: 21 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 《 Ritual 》: 21 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ritual-721caaeb@8815b404e60d86f848f8d54a55554304
+projection_coverage: section-sword-world-rpg-complete-edition-section-ritual-721caaeb@e3fd5ce45932820a471575da000da2e9
 ---
 
 # 《 Ritual 》
@@ -32,30 +32,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 《 Ritual 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02711))_
-
-> These bonuses are stacked in the form of days x participants . For example, suppose a priest performs a Remove Curse ritual. If the ritual takes two days (+2), one extra priest who can also use Remove Curse participates (+1), and 30 believers participate (+3), the final score bonus will be 2 x (1 + 3) = +8 . Fractions of the number of days must be rounded down , so if you can't spend a full day, the final score bonus will be 0 , regardless of how many participants there are.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02710))_
-
-> With these spells, you can add +1 to your final score for each day you perform the ritual.
-
-### Technical frame 2: 《 Ritual 》
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02712))_
 
 > Unlike magic expansion, there is no limit to the increase in final score through rituals.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02711))_
 
+<a id="atom-technical-atom-8d14618aa4c8f557"></a>
+
 > If the ritual takes two days (+2), one extra priest who can also use Remove Curse participates (+1), and 30 believers participate (+3), the final score bonus will be 2 x (1 + 3) = +8 .
 
-### Technical frame 3: 《 Ritual 》
+### Technical frame 2: 《 Ritual 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02714))_
 
 > The person who makes the success roll is the one who takes the center role in performing the ritual.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02715))_
+
+<a id="atom-technical-atom-928faf9353e9164b"></a>
 
 > The game master may also use a ritual to perform other expansions (targets, area, volume, etc.) that the magic would allow.

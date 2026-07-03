@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-5-1-13-spirit-magic-and-the-shaman-skill-b873e1d0
 page_kind: source
 page_family: section-reference
-summary: 5.1.13 Spirit Magic and the Shaman Skill: 24 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 5.1.13 Spirit Magic and the Shaman Skill: 24 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-13-spirit-magic-and-the-shaman-skill-b873e1d0@46e72e7507cc06747b848d6e2b3c9e09
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-13-spirit-magic-and-the-shaman-skill-b873e1d0@563b98e2d96eb21434174c1eb64478be
 ---
 
 # 5.1.13 Spirit Magic and the Shaman Skill
@@ -33,34 +33,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical frame 1: 5.1.13 Spirit Magic and the Shaman Skill
+### Technical atom 1
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03672))_
-
-> It must be in a place where the wind blows in its natural state. The spirit power of wind does not work inside buildings, deep caves, or even underground passages.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03669))_
-
-> Therefore, you must not wear clothing or armor that severely restricts movement of your arms, and your fingers must be completely free.
-
-### Technical atom 2
+<a id="atom-technical-atom-073b5a3fcdb5a55c"></a>
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03662))_
 
-| entry | content |
-| --- | --- |
-| 5 | 1.13 Spirit Magic and the Shaman Skill |
-| 5 | 1.13 Spirit Magic and the Shaman Skil Silent spirit are runes used to communicate with spirits and draw out the power controlled by those spirits. The skill for using spirit magic is called the shaman skill , and those who have this skill are called shamans . The shaman skill allows you to use all basic abilities and spirit magic up to the caster's skill level. |
-| 5 | 1.13.1 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 5.1.13 Spirit Magic and the Shaman Skill
 5.1.13 Spirit Magic  and the Shaman Skil
 Silent spirit are runes used to communicate with spirits and draw out the  power  controlled  by  those  spirits. The skill for using spirit magic is called the shaman skill , and those who have this skill  are  called shamans .  The  shaman skill  allows you to use all basic abilities and spirit  magic  up  to  the  caster's  skill level.
 5.1.13.1
 ```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
+| entry | content |
+| --- | --- |
+| 5 | 1.13 Spirit Magic and the Shaman Skill |
+| 5 | 1.13 Spirit Magic and the Shaman Skil Silent spirit are runes used to communicate with spirits and draw out the power controlled by those spirits. The skill for using spirit magic is called the shaman skill, and those who have this skill are called shamans. The shaman skill allows you to use all basic abilities and spirit magic up to the caster's skill level. |
+| 5 | 1.13.1 |
 
 </details>

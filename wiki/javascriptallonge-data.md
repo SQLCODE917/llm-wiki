@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-data
 page_kind: concept
+page_family: topic-concept
 summary: Data: 5 statement(s) and 8 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-data@0e5202ec0ee872faeadcffe41715cc60
+projection_coverage: topic-javascriptallonge-data@b80523b98d5a6f5d1569c2aada9c623c
 ---
 
 # Data
@@ -38,11 +39,13 @@ What [[javascriptallonge]] covers about data:
 
 ### Technical frame 1: Composing and Decomposing Data / Garbage, Garbage Everywhere / some history
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01044))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01047))_
 
-> car is very fast, it simply extracts the first element of the cons cell.
+> Again, it's just extracting a reference from a cons cell, it's very fast. In Lisp, it's blazingly fast because it happens in hardware. There's no making copies of arrays, the time to cdr a list with five elements is the same as the time to cdr a list with 5,000 elements, and no temporary arrays are needed. In JavaScript, it's still much, much, much faster to get all the elements except the head from a linked list than from an array. Getting one reference to a structure that already exists is fas
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01043))_
+
+<a id="atom-technical-atom-ea7807d3b9f4f476"></a>
 
 ```
 car(oneToFive)
@@ -56,6 +59,8 @@ car(oneToFive)
 > We can write a different iterator for a different data structure. Here's one for linked lists:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01296))_
+
+<a id="atom-technical-atom-d751402c7f5049a7"></a>
 
 ```
 const EMPTY = null;
@@ -90,6 +95,8 @@ aPair = aPair.rest;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01297))_
 
+<a id="atom-technical-atom-cfd0ca71b216e058"></a>
+
 ```
 return { done, value: first }
 }
@@ -115,6 +122,8 @@ iteratorSum(aListIterator)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01300))_
 
+<a id="atom-technical-atom-0ec5247e8a0095b9"></a>
+
 ```
 const NumberIterator = (number = 0) =>
 () => ({ done: false, value: number++ })
@@ -139,6 +148,8 @@ fromOne().value;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01355))_
 
+<a id="atom-technical-atom-a507715e23aece58"></a>
+
 ```
 const first = ([first, second]) => first,
 second = ([first, second]) => second;
@@ -151,28 +162,32 @@ second(latin)
 
 ### Technical atom 6
 
+<a id="atom-technical-atom-178bb2d7be7ec9fc"></a>
+
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00856))_
 
 > Alas, the ... notation does not provide a universal patten-matching capability. For example, we cannot write
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00857))_
 
+```text
+57 https://en.wikipedia.org/wiki/CAR_and_CDR
+58 Kyle Simpson is the author of You Don't Know JS, available here
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 57 | https://en.wikipedia.org/wiki/CAR_and_CDR |
 | 58 | Kyle Simpson is the author of You Don't Know JS, available here |
 
-<details>
-<summary>Raw table text</summary>
-
-```
-57 https://en.wikipedia.org/wiki/CAR_and_CDR
-58 Kyle Simpson is the author of You Don't Know JS, available here
-```
-
 </details>
 
 ### Technical atom 7
+
+<a id="atom-technical-atom-281a1ae07258b1dc"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01333))_
 
@@ -180,22 +195,24 @@ second(latin)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01335))_
 
+```text
+76 http://www.amazon.com/gp/product/0192801422/ref=as_li_ss_tl?ie=UTF8&tag=raganwald001-20&linkCode=as2&camp=1789&creative= 390957&creativeASIN=0192801422
+77 http://oscin.es
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 76 | http://www.amazon.com/gp/product/0192801422/ref=as_li_ss_tl?ie=UTF8&tag=raganwald001-20&linkCode=as2&camp=1789&creative= 390957&creativeASIN=0192801422 |
 | 77 | http://oscin.es |
 
-<details>
-<summary>Raw table text</summary>
-
-```
-76 http://www.amazon.com/gp/product/0192801422/ref=as_li_ss_tl?ie=UTF8&tag=raganwald001-20&linkCode=as2&camp=1789&creative= 390957&creativeASIN=0192801422
-77 http://oscin.es
-```
-
 </details>
 
 ### Technical atom 8
+
+<a id="atom-technical-atom-f0038b4fa2ed7051"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01462))_
 
@@ -203,23 +220,25 @@ second(latin)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01463))_
 
+```text
+84 https://github.com/raganwald/allong.es
+85 http://underscorejs.org
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 84 | https://github.com/raganwald/allong.es |
 | 85 | http://underscorejs.org |
 
-<details>
-<summary>Raw table text</summary>
-
-```
-84 https://github.com/raganwald/allong.es
-85 http://underscorejs.org
-```
-
 </details>
 
 
 ## Related pages
+
+### Shared technical atoms
 
 - [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Yes. Consider this variation: / Functional Iterators: What we've done is turn an array into a function that folds an array with const foldArray = (array) => callRight(foldArrayWith, array); . The sumFoldable function do ... [truncated]; Function shares technical record from Yes. Consider this variation: / Functional Iterators / unfolding and laziness: const NumberIterator = (number = 0) => () => ({ done: false, value: number++ }) fromOne = NumberIterator(1); fromOne().value; //=> 1 fromOne().value; //=> 2 fromOne( ... [truncated] (2 shared statement(s), 3 shared atom(s))
 - [[javascriptallonge-functional-iterator]] - shared statements and technical atoms: Functional Iterators shares source evidence from Yes. Consider this variation: / Functional Iterators: What we've done is turn an array into a function that folds an array with const foldArray = (array) => callRight(foldArrayWith, array); . The sumFoldable function do ... [truncated]; Functional Iterators shares technical record from Yes. Consider this variation: / Functional Iterators / iterating: const EMPTY = null; const isEmpty = (node) => node === EMPTY; const pair = (first, rest = EMPTY) => ({first, rest}); const list = (...elements) => { const [first, .. ... [truncated] (1 shared statement(s), 3 shared atom(s))
@@ -229,10 +248,9 @@ second(latin)
 - [[javascriptallonge-allong]] - shared technical atoms: Allong shares technical table: 84 https://github.com/raganwald/allong.es 85 http://underscorejs.org (1 shared atom(s))
 - [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical table: 57 https://en.wikipedia.org/wiki/CAR_and_CDR 58 Kyle Simpson is the author of You Don't Know JS, available here (1 shared atom(s))
 - [[javascriptallonge-gathering]] - shared technical atoms: Gathering shares technical table: 57 https://en.wikipedia.org/wiki/CAR_and_CDR 58 Kyle Simpson is the author of You Don't Know JS, available here (1 shared atom(s))
-- [[javascriptallonge-iterator]] - shared technical atoms: Iterator shares technical record from Yes. Consider this variation: / Functional Iterators / unfolding and laziness: const NumberIterator = (number = 0) => () => ({ done: false, value: number++ }) fromOne = NumberIterator(1); fromOne().value; //=> 1 fromOne().value; //=> 2 fromOne( ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-recipe]] - shared technical atoms: Recipe shares technical table: 84 https://github.com/raganwald/allong.es 85 http://underscorejs.org (1 shared atom(s))
-- [[javascriptallonge-reference]] - shared technical atoms: Reference shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: car(oneToFive) //=> 1 (1 shared atom(s))
-- [[javascriptallonge-works-just-fine-because-arguments]] - shared technical atoms: Works Just Fine, Because Arguments[0 shares technical table: 57 https://en.wikipedia.org/wiki/CAR_and_CDR 58 Kyle Simpson is the author of You Don't Know JS, available here (1 shared atom(s))
+
+### Shared claims
+
 - [[javascriptallonge-type]] - shared statements: Type shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: Thus, CONS put two values together, CAR extracted one, and CDR extracted the other. Lisp's basic data type is often said to be the list, but in actuality it was the ... [truncated] (1 shared statement(s))
 
 ## Source

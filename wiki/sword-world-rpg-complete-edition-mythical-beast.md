@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Mythical Beast: 13 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-mythical-beast@ad9f5ccf39c96f1d8211182970078678
+projection_coverage: topic-sword-world-rpg-complete-edition-mythical-beast@20180d3ee8cf1872e3121547a03e6e13
 ---
 
 # Mythical Beast
@@ -57,6 +57,8 @@ What [[sword-world-rpg-complete-edition]] covers about mythical beast:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07513))_
 
+<a id="atom-technical-atom-fc3829bb00a778db"></a>
+
 > Perception=Five senses infravision)
 
 ### Technical frame 2: 13.2.6 Mythical Beasts and Magical Beasts / [ Twintail Cat ]
@@ -66,6 +68,8 @@ What [[sword-world-rpg-complete-edition]] covers about mythical beast:
 > Twintail cats are the rulers and protectors of the cats of Kaios Island (the Islands of Azarn). All cats follow their commands. However, they rarely give commands, as they value the spirit of self-reliance that is characteristic of the cat family. When a situation beyond their control arises, they skillfully guide and encourage other races to act voluntarily in accordance with their goals. Also, magical beasts do not follow their orders.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07515))_
+
+<a id="atom-technical-atom-2e65f4323fe1dd7c"></a>
 
 > They can use ancient magic and spirit magic, but they are especially fond of illusions and magic that affects the mind.
 
@@ -77,13 +81,20 @@ What [[sword-world-rpg-complete-edition]] covers about mythical beast:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07544))_
 
+<a id="atom-technical-atom-a41d90f3ca85a039"></a>
+
 > Slaves have low intellect and cannot use magic.
 
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-mythical-beast-and-magical]] - narrower topic: 《 Mythical Beasts and Magical Beasts 》 shares source evidence from 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: Mythical beast and magical beast are general terms for monsters that have living bodies, unlike spirits or undead. These include three types: things that have existe ... [truncated]; 《 Mythical Beasts and Magical Beasts 》 shares technical record from 13.2.6 Mythical Beasts and Magical Beasts / [ Twintail Cat ]: Perception=Five senses infravision) (13 shared statement(s), 3 shared atom(s))
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-magical-beast]] - shared statements and technical atoms: Magical Beast shares source evidence from 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: Mythical beast and magical beast are general terms for monsters that have living bodies, unlike spirits or undead. These include three types: things that have existe ... [truncated]; Magical Beast shares technical record from 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]: Slaves have low intellect and cannot use magic. (8 shared statement(s), 1 shared atom(s))
+
+### Topics
+
+- [[sword-world-rpg-complete-edition-mythical-beast-and-magical]] - narrower topic: 《 Mythical Beasts and Magical Beasts 》 shares source evidence from 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: Mythical beast and magical beast are general terms for monsters that have living bodies, unlike spirits or undead. These include three types: things that have existe ... [truncated]; 《 Mythical Beasts and Magical Beasts 》 shares technical record from 13.2.6 Mythical Beasts and Magical Beasts / [ Twintail Cat ]: Perception=Five senses infravision) (13 shared statement(s), 3 shared atom(s))
 
 ## Source
 

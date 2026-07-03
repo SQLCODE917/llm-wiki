@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-partial-application
 page_kind: concept
-summary: partial application: 18 statement(s) and 9 atom(s) from raw/javascriptallonge.pdf.
+page_family: topic-concept
+summary: partial application: 16 statement(s) and 9 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-partial-application@d4635e277966d68cdee2ade66257a1c8
+projection_coverage: topic-javascriptallonge-partial-application@59ea12e2f8ff0a5869cbb1426c4293af
 ---
 
 # partial application
@@ -41,8 +42,6 @@ What [[javascriptallonge]] covers about partial application:
 
 - As noted above, our partial recipe allows us to create functions that are partial applications of functions that are context aware. We'd need a different recipe if we wish to create partial applications of object methods. _(javascriptallonge.pdf (source-range-7239e085-00662))_
 
-- callFirst and callLast were inspired by Michael Fogus' Lemonad. Thanks! _(javascriptallonge.pdf (source-range-7239e085-00664))_
-
 - We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument: _(javascriptallonge.pdf (source-range-7239e085-00665))_
 
 ### Composing and Decomposing Data / Tail Calls (and Default Arguments) / factorials
@@ -60,6 +59,8 @@ What [[javascriptallonge]] covers about partial application:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00593))_
 
+<a id="atom-technical-atom-d58c104eac1daf94"></a>
+
 ```
 _.map([1, 2, 3], (n) => n * n)
 //=> [1, 4, 9]
@@ -73,6 +74,8 @@ _.map([1, 2, 3], (n) => n * n)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00596))_
 
+<a id="atom-technical-atom-7e2e343bb8d0ba90"></a>
+
 ```
 const squareAll = (array) => map(array,
 (n) => n * n);
@@ -85,6 +88,8 @@ const squareAll = (array) => map(array,
 > We'll discuss mapWith again. The important thing to see is that partial application is orthogonal to composition, and that they both work together nicely:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00598))_
+
+<a id="atom-technical-atom-d427b13c540a373d"></a>
 
 ```
 const mapWith = (fn) =>
@@ -102,6 +107,8 @@ squareAll([1, 2, 3])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00601))_
 
+<a id="atom-technical-atom-330729474fe641db"></a>
+
 ```
 const safeSquareAll = mapWith(maybe((n) => n * n));
 ```
@@ -113,6 +120,8 @@ const safeSquareAll = mapWith(maybe((n) => n * n));
 > Wegeneralized composition with the compose combinator. Partial application also has a combinator, which we'll see in the partial recipe.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00602))_
+
+<a id="atom-technical-atom-10a4f14311565237"></a>
 
 ```
 safeSquareAll([1, null, 2, 3])
@@ -126,6 +135,8 @@ safeSquareAll([1, null, 2, 3])
 > As noted above, our partial recipe allows us to create functions that are partial applications of functions that are context aware. We'd need a different recipe if we wish to create partial applications of object methods.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00661))_
+
+<a id="atom-technical-atom-de17f73437abe2ee"></a>
 
 ```
 const callFirst = (fn, larg) =>
@@ -154,6 +165,8 @@ sayHelloToCeline('Eartha')
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00666))_
 
+<a id="atom-technical-atom-b54fb52e2a86915d"></a>
+
 ```
 const callLeft = (fn, ...args) =>
 (...remainingArgs) =>
@@ -165,25 +178,7 @@ fn(...remainingArgs, ...args);
 
 ### Technical atom 8
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00659))_
-
-| entry | content |
-| --- | --- |
-| 45 | from Michael Fogus, Functional JavaScript |
-| 46 | from Oliver Steele and the terse but handy node-ap |
-| 47 | from James Halliday. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Partial Application
-In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libraries provide some form of partial application. You'll find examples in Lemonad 45 from Michael Fogus, Functional JavaScript 46 from Oliver Steele and the terse but handy node-ap 47 from James Halliday.
-```
-
-</details>
-
-### Technical atom 9
+<a id="atom-technical-atom-5fc857e371a9ac51"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00660))_
 
@@ -191,41 +186,43 @@ In Building Blocks, we discussed partial application, but we didn't write a gene
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00663))_
 
+```text
+45 https://github.com/fogus/lemonad 46 http://osteele.com/sources/javascript/functional/ 47 https://github.com/substack/node-ap 48
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 45 | https://github.com/fogus/lemonad |
 | 46 | http://osteele.com/sources/javascript/functional/ |
 | 47 | https://github.com/substack/node-ap 48 |
 
-<details>
-<summary>Raw table text</summary>
-
-```
-45 https://github.com/fogus/lemonad 46 http://osteele.com/sources/javascript/functional/ 47 https://github.com/substack/node-ap 48
-```
-
 </details>
 
 
 ## Related pages
 
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from And also: / Building Blocks / partial application: The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one funct ... [truncated]; Function shares technical record from And also: / Building Blocks / partial application: _.map([1, 2, 3], (n) => n * n) //=> [1, 4, 9] (3 shared statement(s), 5 shared atom(s))
+### Source structure
+
+- [[javascriptallonge-section-and-also-building-blocks-partial-application-a5e51d71]] - source section: And also: / Building Blocks / partial application shares source evidence from And also: / Building Blocks / partial application: Another basic building block is partial application . When a function takes multiple arguments, we 'apply' the function to the arguments by evaluating it with all of ... [truncated]; And also: / Building Blocks / partial application shares technical record from And also: / Building Blocks / partial application: _.map([1, 2, 3], (n) => n * n) //=> [1, 4, 9] (9 shared statement(s), 7 shared atom(s))
+- [[javascriptallonge-section-recipes-with-basic-functions-partial-application-583028a8]] - source section: Recipes with Basic Functions / Partial Application shares source evidence from Recipes with Basic Functions / Partial Application: These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want ... [truncated]; Recipes with Basic Functions / Partial Application shares technical record from Recipes with Basic Functions / Partial Application: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (4 shared statement(s), 4 shared atom(s))
+
+### Shared technical atoms
+
 - [[javascriptallonge-argument]] - shared statements and technical atoms: Argument shares source evidence from And also: / Building Blocks / partial application: The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one funct ... [truncated]; Argument shares technical record from And also: / Building Blocks / partial application: _.map([1, 2, 3], (n) => n * n) //=> [1, 4, 9] (2 shared statement(s), 5 shared atom(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from And also: / Building Blocks / partial application: The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one funct ... [truncated]; Function shares technical record from And also: / Building Blocks / partial application: _.map([1, 2, 3], (n) => n * n) //=> [1, 4, 9] (2 shared statement(s), 5 shared atom(s))
 - [[javascriptallonge-mapwith]] - shared statements and technical atoms: Mapwith shares source evidence from And also: / Building Blocks / partial application: The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one funct ... [truncated]; Mapwith shares technical record from And also: / Building Blocks / partial application: const mapWith = (fn) => (array) => map(array, fn); const squareAll = mapWith((n) => n * n); squareAll([1, 2, 3]) //=> [1, 4, 9] (1 shared statement(s), 3 shared atom(s))
 - [[javascriptallonge-recipe]] - shared statements and technical atoms: Recipe shares source evidence from Recipes with Basic Functions / Partial Application: These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want ... [truncated]; Recipe shares technical record from Recipes with Basic Functions / Partial Application: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (1 shared statement(s), 3 shared atom(s))
 - [[javascriptallonge-code]] - shared statements and technical atoms: Code shares source evidence from And also: / Building Blocks / partial application: Code is easier than words for this. The Underscore 39 library provides a higher-order function called map . 40 It applies another function to each element of an array, like this:; Code shares technical record from And also: / Building Blocks / partial application: _.map([1, 2, 3], (n) => n * n) //=> [1, 4, 9] (1 shared statement(s), 2 shared atom(s))
 - [[javascriptallonge-important]] - shared statements and technical atoms: Important shares source evidence from And also: / Building Blocks / partial application: We'll discuss mapWith again. The important thing to see is that partial application is orthogonal to composition, and that they both work together nicely:; Important shares technical record from And also: / Building Blocks / partial application: const safeSquareAll = mapWith(maybe((n) => n * n)); (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-bind]] - shared statements and technical atoms: Bind shares source evidence from Recipes with Basic Functions / Partial Application: These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want ... [truncated]; Bind shares technical record from Recipes with Basic Functions / Partial Application: const callFirst = (fn, larg) => function (...rest) { return fn.call(this, larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call(this, ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-block]] - shared statements and technical atoms: Block shares source evidence from And also: / Building Blocks / partial application: Another basic building block is partial application . When a function takes multiple arguments, we 'apply' the function to the arguments by evaluating it with all of ... [truncated]; Block shares technical table: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-list]] - shared statements and technical atoms: List shares source evidence from Recipes with Basic Functions / Partial Application: These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want ... [truncated]; List shares technical record from Recipes with Basic Functions / Partial Application: const callFirst = (fn, larg) => function (...rest) { return fn.call(this, larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call(this, ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-result]] - shared statements and technical atoms: Result shares source evidence from And also: / Building Blocks / partial application: The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one funct ... [truncated]; Result shares technical record from And also: / Building Blocks / partial application: const mapWith = (fn) => (array) => map(array, fn); const squareAll = mapWith((n) => n * n); squareAll([1, 2, 3]) //=> [1, 4, 9] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-return]] - shared statements and technical atoms: Return shares source evidence from And also: / Building Blocks / partial application: The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one funct ... [truncated]; Return shares technical record from And also: / Building Blocks / partial application: const mapWith = (fn) => (array) => map(array, fn); const squareAll = mapWith((n) => n * n); squareAll([1, 2, 3]) //=> [1, 4, 9] (1 shared statement(s), 1 shared atom(s))
 - [[javascriptallonge-functional]] - shared technical atoms: Functional shares technical table: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (2 shared atom(s))
 - [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical table: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-write]] - shared technical atoms: Write shares technical table: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (1 shared atom(s))
+
+### Shared claims
+
 - [[javascriptallonge-function-keyword]] - shared statements: the function keyword shares source evidence from And also: / Magic Names / the function keyword: The most common use of the arguments binding is to build functions that can take a variable number of arguments. We'll see it used in many of the recipes, starting o ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-section-and-also-building-blocks-partial-application-a5e51d71]] - source section: And also: / Building Blocks / partial application shares source evidence from And also: / Building Blocks / partial application: Another basic building block is partial application . When a function takes multiple arguments, we 'apply' the function to the arguments by evaluating it with all of ... [truncated]; And also: / Building Blocks / partial application shares technical record from And also: / Building Blocks / partial application: _.map([1, 2, 3], (n) => n * n) //=> [1, 4, 9] (9 shared statement(s), 7 shared atom(s))
-- [[javascriptallonge-section-recipes-with-basic-functions-partial-application-583028a8]] - source section: Recipes with Basic Functions / Partial Application shares source evidence from Recipes with Basic Functions / Partial Application: These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want ... [truncated]; Recipes with Basic Functions / Partial Application shares technical record from Recipes with Basic Functions / Partial Application: Partial Application In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libra ... [truncated] (6 shared statement(s), 4 shared atom(s))
 
 ## Source
 

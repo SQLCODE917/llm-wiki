@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-farland-languages-87ba1dad
 page_kind: source
 page_family: section-reference
-summary: 18.3 Rules for Destroying Structures / Farland (Languages = ?): 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 18.3 Rules for Destroying Structures / Farland (Languages = ?): 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-farland-languages-87ba1dad@5b1dce07b4df758011f1ca5e66295167
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-farland-languages-87ba1dad@5522460f32dbce45829a57efbeed642c
 ---
 
 # 18.3 Rules for Destroying Structures / Farland (Languages = ?)
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-5e113017]] - broader source section: 18.3 Rules for Destroying Structures
 
@@ -25,15 +27,3 @@ From [[sword-world-rpg-complete-edition]].
 - One of the joys of roleplaying games is that game masters and their gaming companions can create their own world from scratch through gameplay. "Sword World RPG" has a common background world called the Alecrast continent, which prevents it from offering this enjoyment. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12009))_
 - Farland was created to address this dilemma. Farland is a region for which we, the creators, will never release official settings. Therefore, you can create your own world however you like. This will never conflict with official announcements. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12010))_
 - Of course, even for the Alecrast continent, you may ignore some or all of our official announcements. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12011))_
-
-## Technical atoms
-
-### Technical frame 1: 18.3 Rules for Destroying Structures / Farland (Languages = ?)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12011))_
-
-> Of course, even for the Alecrast continent, you may ignore some or all of our official announcements.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-12010))_
-
-> Therefore, you can create your own world however you like.

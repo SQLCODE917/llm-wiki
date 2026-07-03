@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ① Large Ship Steering [Intelligence] ]: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-large-ship-steering-intelligence-73228ba6@a60ecc9a56eb1061381e36e62748e344
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-large-ship-steering-intelligence-73228ba6@f1f409ebd890fe3849a10c3ad9951bdc
 ---
 
 # Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ① Large Ship Steering [Intelligence] ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-7-7-5-treatment-intelligence-8242b170]] - broader source section: Chapter 7: / 7.5 [ ② Treatment [Intelligence]]
 

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-final-score-increase-96bffd83
 page_kind: source
 page_family: section-reference
-summary: 《 Final Score Increase 》: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 《 Final Score Increase 》: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-final-score-increase-96bffd83@765eff2d380b047db52b7e2e24a0ce00
+projection_coverage: section-sword-world-rpg-complete-edition-section-final-score-increase-96bffd83@4d69326da9c43b9091a973f636ce2de6
 ---
 
 # 《 Final Score Increase 》
@@ -31,16 +31,8 @@ From [[sword-world-rpg-complete-edition]].
 
 > For spells that can perform this expansion, fi nal score is written in the expansion section of the magic details.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02609))_
-
-> There's some magic whose effects are negated or reduced if they're resisted by the target, but will also let you increase the magic's final score (resist target score) in order to prevent this.
-
-### Technical frame 2: 《 Final Score Increase 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02611))_
-
-> For spells that can perform this expansion, fi nal score is written in the expansion section of the magic details.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02610))_
+
+<a id="atom-technical-atom-ec3698f3ab83203a"></a>
 
 > you can add a +1 or +2 bonus to your final score.

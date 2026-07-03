@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 16: / 16.1 Combat in Which Monsters Roll Dice / Attacks From Characters Against Monsters: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-16-1-combat-in-which-monsters-roll-dice-attacks-from-characters-against-monsters-2de2975f@75a07619dcf16efd235089a97ca2a827
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-16-1-combat-in-which-monsters-roll-dice-attacks-from-characters-against-monsters-2de2975f@d323dd77fc105ae085185869179417e0
 ---
 
 # Chapter 16: / 16.1 Combat in Which Monsters Roll Dice / Attacks From Characters Against Monsters
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-16-16-1-combat-in-which-monsters-roll-dice-607eb740]] - broader source section: Chapter 16: / 16.1 Combat in Which Monsters Roll Dice
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-filling-out-the-character-sheet-attacks-from-cha-459b5909]] - same source heading: another source section with the same heading, 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet / Attacks From Characters Against Monsters
 
 ## Statements
@@ -37,6 +42,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11176))_
 
+<a id="atom-technical-atom-992596a361de452f"></a>
+
 > The game master should roll 2D and add it to the number in parenthesis.
 
 ### Technical frame 2: Chapter 16: / 16.1 Combat in Which Monsters Roll Dice / Attacks From Characters Against Monsters
@@ -46,5 +53,7 @@ From [[sword-world-rpg-complete-edition]].
 > Once the attack hits, it's the same. A monster's defense points are fixed, and the difference is based on the character's strike roll.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11179))_
+
+<a id="atom-technical-atom-21c0dc91bdcc49ad"></a>
 
 > [Figure] (p.261)

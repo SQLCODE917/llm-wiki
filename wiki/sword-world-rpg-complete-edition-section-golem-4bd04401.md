@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-golem-4bd04401
 page_kind: source
 page_family: section-reference
-summary: [ Golem ]: 48 source-backed entries and 19 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Golem ]: 48 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-golem-4bd04401@cbf853d484ddf156d4fe53a2d43c81a6
+projection_coverage: section-sword-world-rpg-complete-edition-section-golem-4bd04401@36b6210b060a0400f3326894fb391b94
 ---
 
 # [ Golem ]
@@ -38,70 +38,64 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: [ Golem ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09200))_
-
-> Languages=None Perception=Pseudo An iron golem is a golem made of iron, and is the slowest of all golems. However, in terms of hardness of body and size of life force, they're also terrifying beings that rival lesser dragons and titans.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
-
-> Against an iron golem, weapons cannot deal additional critical damage.
-
-### Technical frame 2: [ Golem ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09201))_
 
 > Against an iron golem, weapons cannot deal additional critical damage. Also, damage spells such as cold-type , electric-type , stone-type , poison gas-type , and wind cutter-type are completely useless. Fire-type damage magic is effective, but a critical cannot occur. Earthquake-type , explosion-type , and pure energy-type damage magic is effective, and a critical can occur.
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09203, source-range-0b9dec90-09204, source-range-0b9dec90-09205, source-range-0b9dec90-09206, source-range-0b9dec90-09207, source-range-0b9dec90-09208, source-range-0b9dec90-09209, source-range-0b9dec90-09210, source-range-0b9dec90-09211, source-range-0b9dec90-09212, source-range-0b9dec90-09213, source-range-0b9dec90-09214, source-range-0b9dec90-09215, source-range-0b9dec90-09216))_
 
+<a id="atom-technical-atom-ca2f61a2530d84a5"></a>
+
 > Monster Level=13
+
+<a id="atom-technical-atom-11647a322cd8e8ea"></a>
 
 > Rarity=16
 
+<a id="atom-technical-atom-c816498f0c27fd8e"></a>
+
 > Agility=12
+
+<a id="atom-technical-atom-0988b14dae39d3ac"></a>
 
 > Movement Speed=15
 
+<a id="atom-technical-atom-13145ab91a655333"></a>
+
 > Number=One
+
+<a id="atom-technical-atom-3dc606044c750f73"></a>
 
 > Frequency=Very rare
 
+<a id="atom-technical-atom-553f8104f691e69e"></a>
+
 > Intellect=Obeys commands
+
+<a id="atom-technical-atom-6999958793822740"></a>
 
 > Reaction=Command-based
 
+<a id="atom-technical-atom-881826ad71f0b61f"></a>
+
 > Attack Points=Arms:21 (14)
+
+<a id="atom-technical-atom-67b5143555a781ed"></a>
 
 > Strike Points=25
 
+<a id="atom-technical-atom-ccbc72cfffc5d772"></a>
+
 > Evasion Points=19 (12) Defense Points=19
+
+<a id="atom-technical-atom-5d218bcf4047685c"></a>
 
 > Life Points/Resistance=75/31 (24)
 
+<a id="atom-technical-atom-c7d2b4fa72844dd7"></a>
+
 > Mental Points/Resistance=-/21 (14)
 
+<a id="atom-technical-atom-6ccea21b6577e226"></a>
+
 > Special Abilities=Weapons cannot critical
-
-### Technical frame 3: [ Golem ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09223))_
-
-> Mithril Golems are extremely rare, and only one has been confirmed to exist to date. Since they're formed from mithril silver, which is hard but lightweight, they can make relatively agile movements, and they also have exceptionally hard bodies and large amounts of life force.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09220, source-range-0b9dec90-09221, source-range-0b9dec90-09222))_
-
-> Habitat=Ruins
-
-> Languages=None
-
-> Perception=Pseudo
-
-### Technical frame 4: [ Golem ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09223))_
-
-> Mithril Golems are extremely rare, and only one has been confirmed to exist to date. Since they're formed from mithril silver, which is hard but lightweight, they can make relatively agile movements, and they also have exceptionally hard bodies and large amounts of life force.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09224))_
-
-> Against a mithril golem, weapons cannot deal additional critical damage.

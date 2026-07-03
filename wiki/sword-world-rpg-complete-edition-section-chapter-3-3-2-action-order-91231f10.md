@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-3-3-2-action-order-91231f10
 page_kind: source
 page_family: section-reference
-summary: Chapter 3: / 3.2 Action Order: 18 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 3: / 3.2 Action Order: 18 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-3-2-action-order-91231f10@14b1ef63bd2aaaa5ad859214a0c3ce6e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-3-2-action-order-91231f10@a23edd0c2e01045c377ca2c6d2aec893
 ---
 
 # Chapter 3: / 3.2 Action Order
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-3-6d32210f]] - broader source section: Chapter 3:
 
@@ -38,20 +40,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: Chapter 3: / 3.2 Action Order
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01316))_
-
-> Ducard II is fighting a goblin. He has an agility of 12. On the other hand, the goblin's agility is 13, better than Ducard
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01314))_
-
-> For convenience, they are resolved in order, but even if you're attacked by an enemy of the same agility and fall down, you can still perform your intended actions.
-
-### Technical frame 2: Chapter 3: / 3.2 Action Order
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01320))_
 
 > Suppose that, as in the first example, IIDash is still hit badly enough to fall down as a result of the goblin's attack check. However, IIDash's action order = agility is the same as the goblin's, so he would've been slashing at the goblin at the same time . In other words,
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01319))_
+
+<a id="atom-technical-atom-7cab1ff8900d62cd"></a>
 
 > Suppose that Ducard II has an agility of 13, which is equal to that of a goblin (let's call him IIDash from now on, since he is a bit faster). In this case, both attacks are considered to be carried out simultaneously. During the course of the game, each attack check is made in the order of goblin → IIDash (or vice versa). Otherwise, it would be difficult to progress the game.

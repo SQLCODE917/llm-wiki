@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-9-setting-target-scores-and-difficulties-ae9c232d
 page_kind: source
 page_family: section-reference
-summary: Chapter 9: / Setting Target Scores and Difficulties: 66 source-backed entries and 13 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 9: / Setting Target Scores and Difficulties: 66 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-9-setting-target-scores-and-difficulties-ae9c232d@563a29c68843cdbcbf132911528e5727
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-9-setting-target-scores-and-difficulties-ae9c232d@3f5c4febebca9242e9272de8605eef34
 ---
 
 # Chapter 9: / Setting Target Scores and Difficulties
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-9-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-9-6031114c]] - broader source section: Chapter 9:
 - [[sword-world-rpg-complete-edition-section-chapter-9-setting-target-scores-and-difficulties-should-you-use-a-target-score-check-or-a-diffic-ec2b043c]] - narrower source section: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?
@@ -73,81 +75,15 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05543, source-range-0b9dec90-05544))_
 
+<a id="atom-technical-atom-3075f35755c5a579"></a>
+
 > To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+
+<a id="atom-technical-atom-aa1d9c653e8096dd"></a>
 
 > Table 9-1: Determining Target Scores or Difficulties
 
-### Technical frame 2: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05560))_
-
-> If you have the skill, there is a high probability of success. For amateurs, the risk of failure is greater.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05557))_
-
-> If you have the skill, you can expect success.
-
-### Technical frame 3: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05560))_
-
-> If you have the skill, there is a high probability of success. For amateurs, the risk of failure is greater.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05557))_
-
-> If you have the skill, you can expect success. For amateurs, it's 50-50.
-
-### Technical frame 4: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05569))_
-
-> If you're a pro in that field, you'll most likely succeed, but if you only have the skill, there's a greater risk of failure.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05566))_
-
-> It's 50-50 if you have the skill. Success is not guaranteed to amateurs.
-
-### Technical frame 5: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05576))_
-
-> It's possible with a little luck if you're someone who's only dabbled. Even pros can fail due to a little bad luck.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05573))_
-
-> If you're a pro in that field, you can expect success, but you should expect to fail if you're just dabbling.
-
-### Technical frame 6: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05585))_
-
-> Even if you're a master, there is no guarantee that you'll succeed.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05582))_
-
-> If you're a master, you'll never fail, but if you're a pro, success is 50-50.
-
-### Technical frame 7: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05585))_
-
-> Even if you're a master, there is no guarantee that you'll succeed.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05582))_
-
-> If you're a master, you'll never fail, but if you're a pro, success is 50-50.
-
-### Technical frame 8: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05600))_
-
-> Even if you're a master, the probability of failure is high.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05597))_
-
-> 50-50 for masters. Otherwise, it's best not to touch it at all.
-
-### Technical frame 9: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?
+### Technical frame 2: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05609))_
 
@@ -155,9 +91,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05608))_
 
+<a id="atom-technical-atom-c5f6009e94dc6a1d"></a>
+
 > The standard for deciding is whether the character can tell if the action succeeded or failed .
 
-### Technical frame 10: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?
+### Technical frame 3: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05614))_
 
@@ -165,41 +103,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05613))_
 
+<a id="atom-technical-atom-4e59e0aa4e54ade4"></a>
+
 > If the difficulty is clear, let's say it's 3, players can infer that they can only fail when the game master rolls an 11 or 12.
-
-### Technical frame 11: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05617))_
-
-> That alone will make players wary. In such cases, it is better to keep the difficulty low. A technique for creating scenarios is to keep the difficulty consistent for success rolls that are likely to be made frequently in one scenario, such as finding traps.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05616))_
-
-> The time when you should not reveal the difficulty is when revealing the difficulty itself would indicate that something is wrong .
-
-### Technical atom 12
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01174))_
-
-> The player must roll two dice and add their baseline score to the roll. The result is called the fi nal score . This final score should be equal to or greater than the target score.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01172))_
-
-| entry | content |
-| --- | --- |
-| 2 | 2 Target Scores The baseline score is a number that represents a character's ability. However, the success of an action is not only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned warrior, than when he is an amateur with no fighting experience. |
-| 2 | 3 |
-| 2 | 3 Checks |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Target Scores
-2.2 Target Scores
-The baseline score is  a number that represents a character's ability. However, the  success  of  an  action  is  not  only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned  warrior,  than  when  he  is  an amateur with no fighting experience.
-2.3
-2.3 Checks
-```
-
-</details>

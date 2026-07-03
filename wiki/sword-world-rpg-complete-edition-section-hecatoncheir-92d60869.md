@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: [ Hecatoncheir ]: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hecatoncheir-92d60869@e42c21769add1d6573d2219705e81979
+projection_coverage: section-sword-world-rpg-complete-edition-section-hecatoncheir-92d60869@cf805e46362117f8c0e95636851362e0
 ---
 
 # [ Hecatoncheir ]
@@ -31,5 +31,7 @@ From [[sword-world-rpg-complete-edition]].
 > Hecatoncheir are a subspecies of titans, reaching nearly 4 meters tall. Although they're called the hundredhanded titan , they actually have only 12 arms. Six of these are used in combat. They can aim at different targets in one round, or focus on hitting one target. Some of them carry weapons, but even without such things, their thick arms are enough to pose a threat to humans (and fae).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07336))_
+
+<a id="atom-technical-atom-a91928916aa678c0"></a>
 
 > Perception=Five senses (darkvision)

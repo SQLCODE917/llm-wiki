@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-444977ff
 page_kind: source
 page_family: section-reference
-summary: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor: 23 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor: 23 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-444977ff@ac5995f1a7b8b9321a7f31013c47758c
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-444977ff@1359fc38e45b50ec123dcb46e40ca6d5
 ---
 
 # 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor
@@ -17,10 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-3d37b0b9]] - broader source section: 4.10 Excellent Weapons and Armor
-- [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-magical-weapons-3e1c99bf]] - narrower source section: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Weapons 】
-- [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-magical-shields-c51549eb]] - narrower source section: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Shields 】
 - [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-magical-armor-4b57d940]] - narrower source section: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Armor 】
+- [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-magical-shields-c51549eb]] - narrower source section: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Shields 】
+- [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-magical-weapons-3e1c99bf]] - narrower source section: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Weapons 】
 
 ## Statements
 
@@ -58,64 +60,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02378))_
 
+<a id="atom-technical-atom-f497180b1c1b4b0e"></a>
+
 > Magical weapons can deal damage to monsters that normal weapons cannot harm.
-
-### Technical frame 2: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Armor 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02384))_
-
-> Magical weapons and armor are not usually traded, but if you are very lucky you may be able to buy them if they're +1. A guide to prices can be found in Chapter 14: Treasure (see p. 240). Also, they offer basically no bonus to strike power or defense power, same as required strength.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02382))_
-
-> If you wear +1 magical armor, you gain +1 to evasion speed and damage reduction.
-
-### Technical frame 3: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Armor 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02384))_
-
-> Magical weapons and armor are not usually traded, but if you are very lucky you may be able to buy them if they're +1. A guide to prices can be found in Chapter 14: Treasure (see p. 240). Also, they offer basically no bonus to strike power or defense power, same as required strength.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02383))_
-
-> Even if it is magical, if it is metal armor, a shaman cannot wear it.
-
-### Technical atom 4
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02356))_
-
-> It is important to note that such weapons and armor cannot exceed the limits of the weapon or armor itself. For example, if you want a high-quality broadsword, its required strength (size) is naturally limited to 8-16 . Since there is no such broadsword with a natural required strength of 17, that means there is no such thing as a broadsword with required strength 16 and strike power 17 .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02359))_
-
-| entry | content |
-| --- | --- |
-| 1 | required strength lower than usual. |
-| 2 | lower will be 40% more expensive, |
-| 3 | lower will be 60% more expensive, |
-| 4 | lower will be 80% more expensive, and |
-| 5 | lower will be twice the original price. |
-| 5 | Table 4-5: Guideline for Obtaining High-Quality Weapons and Armor less Required Strength |
-| 4 | Royal city level in a large country less Required Strength |
-| 3 | Large city in a large country, royal city level in a small country less Required Strength |
-| 2 | Reasonable city less Required Strength |
-| 1 | Town of about 1000 people less Required Strength |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-These high-quality weapons and armor  can  be  expensive.  Their  price increases  by 20% for  every 1 required strength lower than usual. 2 lower will be 40% more expensive, 3 lower will be 60% more  expensive, 4 lower  will  be 80% more expensive, and 5 lower will be twice the original price.
-Table 4-5: Guideline for Obtaining High-Quality Weapons and Armor
-5 less Required Strength
-Royal city level in a large country
-4 less Required Strength
-Large city in a large country, royal city level in a small country
-3 less Required Strength
-Reasonable city
-2 less Required Strength
-Town of about 1000 people
-1 less Required Strength
-```
-
-</details>

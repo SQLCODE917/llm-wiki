@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Mithril Silver Weapon: 20 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-mithril-silver-weapon@410447ff92dc5dc3002bcf5b259d19c5
+projection_coverage: topic-sword-world-rpg-complete-edition-mithril-silver-weapon@8d41c3e2a6144f9e115aba4033f79645
 ---
 
 # Mithril Silver Weapon
@@ -59,6 +59,8 @@ What [[sword-world-rpg-complete-edition]] covers about mithril silver weapon:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02394))_
 
+<a id="atom-technical-atom-7e7f48dc0228d3eb"></a>
+
 > Mithril silver weapons can deal damage to monsters that normal weapons cannot harm.
 
 ### Technical frame 2: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor
@@ -69,12 +71,19 @@ What [[sword-world-rpg-complete-edition]] covers about mithril silver weapon:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02397))_
 
+<a id="atom-technical-atom-395e54fddde974a3"></a>
+
 > Mithril silver weapons and armor are never , if ever, placed in shops or traded for money.
 
 
 ## Related pages
 
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-armor]] - shared statements and technical atoms: Armor shares source evidence from 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor: If a character ever sees them, mithril silver weapons and armor are definitely a legacy from the era of the magical kingdom.; Armor shares technical record from 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor: Mithril silver weapons can deal damage to monsters that normal weapons cannot harm. (4 shared statement(s), 2 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-magic-armor]] - shared statements: 《 Magic Armor (+1) 》 shares source evidence from 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor: Mithril silver, like regular silver, is a metal that exists in the spirit world. Therefore, a shaman can wear mithril silver armor and still use spirit magic. (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements: 【 Ranger Skill 】 shares source evidence from 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor: Chain mail made of mithril silver does not inhibit bodily movement as much as that made of steel (but splint armor, lamellar armor, and plate armor still do ). Mithr ... [truncated] (1 shared statement(s))
 

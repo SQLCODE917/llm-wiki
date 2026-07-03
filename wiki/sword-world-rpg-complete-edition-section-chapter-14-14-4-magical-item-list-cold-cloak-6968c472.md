@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-cold-cloak-6968c472
 page_kind: source
 page_family: section-reference
-summary: Chapter 14: / 14.4 Magical Item List / 《 Cold Cloak 》: 6 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 14: / 14.4 Magical Item List / 《 Cold Cloak 》: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-cold-cloak-6968c472@21bfa145ae4068c5dbc7f9b27fd0ac5f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-cold-cloak-6968c472@c7cdb668220b1b7b94730f13bb7c035f
 ---
 
 # Chapter 14: / 14.4 Magical Item List / 《 Cold Cloak 》
@@ -17,22 +17,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-e871a62e]] - broader source section: Chapter 14: / 14.4 Magical Item List
-
-## Technical atoms
-
-### Technical frame 1: Chapter 14: / 14.4 Magical Item List / 《 Cold Cloak 》
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10612, source-range-0b9dec90-10613, source-range-0b9dec90-10614, source-range-0b9dec90-10615, source-range-0b9dec90-10616, source-range-0b9dec90-10617))_
-
-> Rarity=18
-
-> Enchanter=Many
-
-> Form=Cloth armor
-
-> Required Strength=3 (Defense power 3)
-
-> Base Trade Price=250,000 gamels
-
-> Powers=+3 to evasion speed and damage reduction. Also gives +3 to resistance to firetype attacks.

@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 18.3 Rules for Destroying Structures / Southern Central Region (Language = Western/Gundar): 35 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-southern-central-region-language-western-gundar-6cf22396@deceb19c43e41964a18e1952f4e33d81
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-southern-central-region-language-western-gundar-6cf22396@7df615e51ccd1a93ad9a8d6275e4da8c
 ---
 
 # 18.3 Rules for Destroying Structures / Southern Central Region (Language = Western/Gundar)
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-5e113017]] - broader source section: 18.3 Rules for Destroying Structures
 

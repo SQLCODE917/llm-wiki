@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 13.6 Handling Monster Special Abilities / 《 Darkness/Invisible 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-darkness-invisible-2d99f331@9f4309c431d6f825ee7175ef3e20a84a
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-darkness-invisible-2d99f331@3a6592eabda030d5c982068648d864fb
 ---
 
 # 13.6 Handling Monster Special Abilities / 《 Darkness/Invisible 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handl
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-22341d2d]] - broader source section: 13.6 Handling Monster Special Abilities
 

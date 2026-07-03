@@ -12,7 +12,7 @@ from __future__ import annotations
 
 from forge.core.workflow import Workflow
 
-from llmwiki.domain.chat_grounding import ChatEvidenceScope
+from llmwiki.domain.chat_evidence_scope import ChatEvidenceScope
 from llmwiki.domain.claim_support import (
     ClaimSupportCandidate,
     ClaimSupportFinding,
@@ -32,7 +32,6 @@ from llmwiki.domain.task_evidence import TaskEvidencePack
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.chat_file_tools import chat_file_write_page_tool
-from llmwiki.workflows.chat_tools import chat_read_page_tool
 from llmwiki.workflows.claim_support_tools import record_claim_support_verdict_tool
 from llmwiki.workflows.contradiction_tools import record_contradiction_tool
 from llmwiki.workflows.graph_tools import link_orphan_tool
@@ -52,6 +51,15 @@ from llmwiki.workflows.tools import (
     read_source_tool,
     search_wiki_tool,
     write_page_tool,
+)
+from llmwiki.workflows.wiki_read_tools import (
+    inspect_page_tool as inspect_chat_page_tool,
+)
+from llmwiki.workflows.wiki_read_tools import (
+    read_page_tool as read_chat_page_tool,
+)
+from llmwiki.workflows.wiki_read_tools import (
+    search_wiki_tool as search_chat_wiki_tool,
 )
 
 
@@ -162,6 +170,7 @@ def build_chat_workflow(
     a 14B).
     """
     seen: set[str] = set(task_evidence_pack.page_ids if task_evidence_pack is not None else ())
+    missing_focus_reports: set[str] = set()
     procedure_execution_state = ProcedureExecutionState()
     procedure_execution_required = require_procedure_execution and task_evidence_pack is not None
     if task_evidence_pack is not None and procedure_execution_required:
@@ -175,9 +184,10 @@ def build_chat_workflow(
         ]
     else:
         tools = [
-            search_wiki_tool(store),
+            search_chat_wiki_tool(store),
             read_index_tool(store, read_tracker=seen),
-            chat_read_page_tool(store, evidence_scope=evidence_scope, read_tracker=seen),
+            inspect_chat_page_tool(store, missing_focus_reports=missing_focus_reports),
+            read_chat_page_tool(store, evidence_scope=evidence_scope, read_tracker=seen),
         ]
     tools.append(
         respond_after_wiki_read_tool(
@@ -187,6 +197,7 @@ def build_chat_workflow(
             require_read_page_citation=True,
             procedure_execution_state=procedure_execution_state,
             require_procedure_execution=procedure_execution_required,
+            missing_focus_reports=missing_focus_reports,
         )
     )
     return Workflow(

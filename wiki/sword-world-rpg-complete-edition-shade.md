@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Shade: 6 statement(s) and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-shade@6e430cbf310ee4c503410f2b33fd006b
+projection_coverage: topic-sword-world-rpg-complete-edition-shade@0a481c306af4ca44647af154d60e13c9
 ---
 
 # Shade
@@ -27,37 +27,28 @@ What [[sword-world-rpg-complete-edition]] covers about shade:
 
 ### Technical frame 1: 5.1.14 Spirit Magic List / [ Shade ] (Shade/Dark Spirit)
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03788, source-range-0b9dec90-03789, source-range-0b9dec90-03790, source-range-0b9dec90-03791, source-range-0b9dec90-03792, source-range-0b9dec90-03793))_
-
-> Base Mental Power Cost=6
-
-> Distance=20 meters
-
-> Area=A space with a 5 meter radius
-
-> Duration=1 hour
-
-> Effect=Negates natural light within the area of effect, closing it in darkness
-
-> Type=Damage (Mind-type)
-
-### Technical frame 2: 5.1.14 Spirit Magic List / [ Shade ] (Shade/Dark Spirit)
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03798))_
 
 > If a shade itself comes into contact with a will-o-wisp's body or enters the area of effect of the ancient magic Light , it'll vanish without emitting any energy.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03797))_
 
+<a id="atom-technical-atom-4ef330f936f9b165"></a>
+
 > The shade will fly freely in the air according to the caster's commands, but can no longer be controlled if it moves more than 20 meters away from the caster.
 
 
 ## Related pages
 
+### Source structure
+
+- [[sword-world-rpg-complete-edition-section-shade-c73983c5]] - source section: [ Shade ] shares source evidence from [ Shade ]: Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darknes ... [truncated]; [ Shade ] shares technical record from [ Shade ]: Monster Level=2 (5 shared statement(s), 14 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-control-spirit-lesser]] - shared statements: [ Control Spirit ] (Various lesser spirits) shares source evidence from 5.1.14 Spirit Magic List / [ Shade ] (Shade/Dark Spirit): Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect Shade is the spirit of darkness that opposes will-o-wisp, and is also the ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-final-damage]] - shared statements: 4.5.5 Final Damage shares source evidence from 5.1.14 Spirit Magic List / [ Shade ] (Shade/Dark Spirit): Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect Shade is the spirit of darkness that opposes will-o-wisp, and is also the ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-target-score]] - shared statements: Target Scores shares source evidence from 5.1.14 Spirit Magic List / [ Shade ] (Shade/Dark Spirit): Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect Shade is the spirit of darkness that opposes will-o-wisp, and is also the ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-shade-c73983c5]] - source section: [ Shade ] shares source evidence from [ Shade ]: Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darknes ... [truncated]; [ Shade ] shares technical record from [ Shade ]: Monster Level=2 (5 shared statement(s), 14 shared atom(s))
 
 ## Source
 

@@ -4,10 +4,10 @@ page_kind: concept
 page_family: broad-topic
 summary: 《 Weapons Cannot Critical 》: 15 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-weapon-critical@f744564a9ffc4b632aec04a9c10db281
+projection_coverage: topic-sword-world-rpg-complete-edition-weapon-critical@8bbdb2de4c775a76395bbd6f4451b187
 ---
 
 # 《 Weapons Cannot Critical 》
@@ -17,13 +17,24 @@ What [[sword-world-rpg-complete-edition]] covers about 《 weapons cannot critic
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-weapon]] - broader topic: Weapon shares source evidence from Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation: Under the basic rules, when using the Rating Table to determine damage, a 10 or greater is considered a critical , but with this rule, the chance of a critical is di ... [truncated]; Weapon shares technical record from Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation: Table 16-1 Weapon Optional Rules (2 shared statement(s), 1 shared atom(s))
+### Source structure
+
+- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-certain-weapons-cannot-critical-a85dd114]] - source section: 13.6 Handling Monster Special Abilities / 《 Certain Weapons Cannot Critical 》 shares source evidence from 13.6 Handling Monster Special Abilities / 《 Certain Weapons Cannot Critical 》: There are weapons that cannot deliver effective strikes due to their form, etc. Attacks with the indicated weapon, no matter how powerful or magical it is, will neve ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-weapons-cannot-critical-491f8ce9]] - source section: 13.6 Handling Monster Special Abilities / 《 Weapons Cannot Critical 》 shares source evidence from 13.6 Handling Monster Special Abilities / 《 Weapons Cannot Critical 》: Weapons do not deal additional damage from criticals. (1 shared statement(s))
+
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-critical-target-variation]] - shared statements and technical atoms: Critical Target Variation shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated]; Critical Target Variation shares technical record from Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation: Table 16-1 Weapon Optional Rules (9 shared statement(s), 1 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements: 【 Damage Reduction 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: 1.4.9 Filling Out the Character Sheet shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-weapons-cannot-critical-491f8ce9]] - source section: 13.6 Handling Monster Special Abilities / 《 Weapons Cannot Critical 》 shares source evidence from 13.6 Handling Monster Special Abilities / 《 Weapons Cannot Critical 》: Weapons do not deal additional damage from criticals. (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-certain-weapons-cannot-critical-a85dd114]] - source section: 13.6 Handling Monster Special Abilities / 《 Certain Weapons Cannot Critical 》 shares source evidence from 13.6 Handling Monster Special Abilities / 《 Certain Weapons Cannot Critical 》: There are weapons that cannot deliver effective strikes due to their form, etc. Attacks with the indicated weapon, no matter how powerful or magical it is, will neve ... [truncated] (2 shared statement(s))
+
+### Topics
+
+- [[sword-world-rpg-complete-edition-weapon]] - broader topic: Weapon shares source evidence from Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation: Under the basic rules, when using the Rating Table to determine damage, a 10 or greater is considered a critical , but with this rule, the chance of a critical is di ... [truncated]; Weapon shares technical record from Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation: Table 16-1 Weapon Optional Rules (2 shared statement(s), 1 shared atom(s))
 ## Statements by source section
 
 ### 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet
@@ -90,6 +101,8 @@ What [[sword-world-rpg-complete-edition]] covers about 《 weapons cannot critic
 > Under the basic rules, when using the Rating Table to determine damage, a 10 or greater is considered a critical , but with this rule, the chance of a critical is different for each weapon . This is indicated by the critical target . Axes, maces, etc. do not critical even if you roll a 10, but rather require an 11 or 12 . One can say that the lower this score, the more
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11193))_
+
+<a id="atom-technical-atom-1e8fed7baf024168"></a>
 
 > Table 16-1 Weapon Optional Rules
 

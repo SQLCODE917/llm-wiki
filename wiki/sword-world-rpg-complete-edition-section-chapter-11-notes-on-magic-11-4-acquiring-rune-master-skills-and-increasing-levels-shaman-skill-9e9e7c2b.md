@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Shaman Skill 》: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-shaman-skill-9e9e7c2b@47842ffb3b295fe725b3e87534925ee1
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-shaman-skill-9e9e7c2b@8ab9428ed2f1bbd0bd4e42da9ce0d344
 ---
 
 # Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Shaman Skill 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-97baced0]] - broader source section: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels
 

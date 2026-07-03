@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-kardis-wicked-god-54c75168
 page_kind: source
 page_family: section-reference
-summary: 《 Kardis (Wicked God) 》: 15 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 《 Kardis (Wicked God) 》: 15 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-kardis-wicked-god-54c75168@c8bde9b0351d3932654a54ed985acbf3
+projection_coverage: section-sword-world-rpg-complete-edition-section-kardis-wicked-god-54c75168@2d8350c45de4b0d7497428cff2fbd32b
 ---
 
 # 《 Kardis (Wicked God) 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-kardis-wic
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-kardis-wicked-god-mirleaf-wicked-god-7e06b0e6]] - narrower source section: 《 Kardis (Wicked God) 》 / 《 Mirleaf (Wicked God) 》
 
@@ -34,15 +36,3 @@ From [[sword-world-rpg-complete-edition]].
 - Priests can use the following abilities. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04319))_
 - He is the god of the dead of the sea, and teaches that life is pain and sin, and that death is the only way to be saved from it. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04314))_
 - Mirleaf believers believe that new challenges and efforts to survive (as exemplified by voyages) create and prolong suffering, and that a prompt death is the only mercy for those who do such things. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04314))_
-
-## Technical atoms
-
-### Technical frame 1: 《 Kardis (Wicked God) 》 / 《 Mirleaf (Wicked God) 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04319))_
-
-> Priests can use the following abilities.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04317))_
-
-> [Figure] (p.98)

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-1-types-of-monsters-1cd4c9c3
 page_kind: source
 page_family: section-reference
-summary: 13.1 Types of Monsters: 90 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.1 Types of Monsters: 90 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-1-types-of-monsters-1cd4c9c3@e18f73f3949aeb5b39943eb5b5912df6
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-1-types-of-monsters-1cd4c9c3@63cf7affc3798c068f82b2309bda021b
 ---
 
 # 13.1 Types of Monsters
@@ -17,16 +17,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
+- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-animals-19584a47]] - narrower source section: 13.1 Types of Monsters / 《 Animals 》
+- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-daemons-underworld-creatures-35179f35]] - narrower source section: 13.1 Types of Monsters / 《 Daemons/Underworld Creatures 》
 - [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-fae-a53503c1]] - narrower source section: 13.1 Types of Monsters / 《 Fae 》
-- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-youma-bee091ea]] - narrower source section: 13.1 Types of Monsters / 《 Youma 》
+- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-magical-creatures-4da68207]] - narrower source section: 13.1 Types of Monsters / 《 Magical Creatures 》
+- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-mythical-beasts-and-magical-beasts-6af041c8]] - narrower source section: 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》
+- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-plants-0bfd9dcf]] - narrower source section: 13.1 Types of Monsters / 《 Plants 》
 - [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-spirits-eebe351c]] - narrower source section: 13.1 Types of Monsters / 《 Spirits 》
 - [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-titans-fa9ff5b7]] - narrower source section: 13.1 Types of Monsters / 《 Titans 》
-- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-mythical-beasts-and-magical-beasts-6af041c8]] - narrower source section: 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》
-- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-animals-19584a47]] - narrower source section: 13.1 Types of Monsters / 《 Animals 》
-- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-plants-0bfd9dcf]] - narrower source section: 13.1 Types of Monsters / 《 Plants 》
-- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-undead-1164c28c]] - narrower source section: 13.1 Types of Monsters / 《 Undead 》
-- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-magical-creatures-4da68207]] - narrower source section: 13.1 Types of Monsters / 《 Magical Creatures 》
-- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-daemons-underworld-creatures-35179f35]] - narrower source section: 13.1 Types of Monsters / 《 Daemons/Underworld Creatures 》
 
 ## Statements
 
@@ -102,55 +102,3 @@ From [[sword-world-rpg-complete-edition]].
 - With the discovery of two similar daemons (lesser daemons and greater daemons) called doubleburg and doppelgänger, it's become an established theory among sages that daemons are born as lower rank daemons and grow to become higher rank. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06869))_
 - In the underworld where daemons live, there are also animal-like creatures with low intellect. Sages say that they are comparable to the animals in our world, and claim that this is proof that there are multiple material worlds. These underworld creatures are far more dangerous than the animals of the material world, just as daemons are far more dangerous than humans. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06870))_
 - Many of them seem to have a humanoid appearance, but there are many different types, such as those with horns, tails, wings, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06867))_
-
-## Technical atoms
-
-### Technical frame 1: 13.1 Types of Monsters / 《 Youma 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06836))_
-
-> Typical examples of youma include goblins and gremlins.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06835))_
-
-> They may also use spirit magic or dark magic.
-
-### Technical frame 2: 13.1 Types of Monsters / 《 Spirits 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06839))_
-
-> Spirits can use an unlimited amount of spirit magic depending on their power. No matter how much they use it, it will not consume their mental points. However, they cannot expand the power of their spells.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06838))_
-
-> In addition, spirits may reside in natural creatures and objects, and above all, it seems Spirits that appear in the material world in response to a shaman's summoning usually return to the spirit world after fulfilling their role (when you use spirit magic).
-
-### Technical frame 3: 13.1 Types of Monsters / 《 Spirits 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06840))_
-
-> Regardless of a spirit's rarity (a score related to how well-known the monster is, which will be explained later), a shaman knows all spirits. When encountering a spirit, a shaman can recognize a spirit without the need for a success roll.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06839))_
-
-> Spirits can use an unlimited amount of spirit magic depending on their power.
-
-### Technical frame 4: 13.1 Types of Monsters / 《 Spirits 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06841))_
-
-> Typical spirits include sylph, undine, and will-o-wisp.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06840))_
-
-> When encountering a spirit, a shaman can recognize a spirit without the need for a success roll.
-
-### Technical frame 5: 13.1 Types of Monsters / 《 Undead 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06859))_
-
-> They despise creatures with positive life force and also target them both as prey and for the expansion of their species. If you meet them, there is a high probability that you'll fight.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06858))_
-
-> If the source of our life is called positive life force, then the undead's source can be called negative life force.

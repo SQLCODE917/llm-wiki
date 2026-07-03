@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-gathering
 page_kind: concept
+page_family: topic-concept
 summary: Gathering: 4 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-gathering@7577d065d9cb5f4115ddd0635bdd3d25
+projection_coverage: topic-javascriptallonge-gathering@ca4d41d2e1688182e0b28fa311bfdd1e
 ---
 
 # Gathering
@@ -42,6 +43,8 @@ What [[javascriptallonge]] covers about gathering:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00718))_
 
+<a id="atom-technical-atom-2cf7e32d0c999fe7"></a>
+
 ```
 const abccc = (a, b, ...c) => {
 console.log(a);
@@ -56,11 +59,13 @@ abccc(1, 2, 3, 4, 5)
 
 ### Technical frame 2: Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00747))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00749))_
 
-> But we can write our own left-gathering function utility using the same principles without all the tedium:
+> With leftGather , we have to supply the length of the array we wish to use as the result, and it gathers excess arguments into it from the left, just like leftVariadic gathers excess parameters for a function.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00742))_
+
+<a id="atom-technical-atom-eb3ab57c56a2f7dd"></a>
 
 ```
 const [first, ...butFirst] = ['why', 'hello', 'there', 'little', 'droid'];
@@ -77,6 +82,8 @@ butFirst
 > With leftGather , we have to supply the length of the array we wish to use as the result, and it gathers excess arguments into it from the left, just like leftVariadic gathers excess parameters for a function.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00748))_
+
+<a id="atom-technical-atom-fcb9efdca6bc6168"></a>
 
 ```
 const leftGather = (outputArrayLength) => {
@@ -103,6 +110,8 @@ last
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00879))_
 
+<a id="atom-technical-atom-1e73af49742977f4"></a>
+
 ```
 const numbers = (...nums) => nums;
 numbers(1, 2, 3, 4, 5)
@@ -114,39 +123,49 @@ headAndTail(1, 2, 3, 4, 5)
 
 ### Technical atom 5
 
+<a id="atom-technical-atom-178bb2d7be7ec9fc"></a>
+
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00856))_
 
 > Alas, the ... notation does not provide a universal patten-matching capability. For example, we cannot write
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00857))_
 
+```text
+57 https://en.wikipedia.org/wiki/CAR_and_CDR
+58 Kyle Simpson is the author of You Don't Know JS, available here
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 57 | https://en.wikipedia.org/wiki/CAR_and_CDR |
 | 58 | Kyle Simpson is the author of You Don't Know JS, available here |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-57 https://en.wikipedia.org/wiki/CAR_and_CDR
-58 Kyle Simpson is the author of You Don't Know JS, available here
-```
 
 </details>
 
 
 ## Related pages
 
+### Source structure
+
+- [[javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-gathering-91ed37bf]] - source section: Composing and Decomposing Data / Arrays and Destructuring Arguments / gathering shares source evidence from Composing and Decomposing Data / Arrays and Destructuring Arguments / gathering: Sometimes we need to extract arrays from arrays. Here is the most common pattern: Extracting the head and gathering everything but the head from an array:; Composing and Decomposing Data / Arrays and Destructuring Arguments / gathering shares technical record from Composing and Decomposing Data / Arrays and Destructuring Arguments / gathering: const [car, ...cdr] = [1, 2, 3, 4, 5]; car //=> 1 cdr //=> [2, 3, 4, 5] (3 shared statement(s), 4 shared atom(s))
+
+### Shared technical atoms
+
 - [[javascriptallonge-argument]] - shared statements and technical atoms: Argument shares source evidence from Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring: Gathering arguments for functions is one of the ways JavaScript can destructure arrays. Another way is when assigning variables, like this:; Argument shares technical record from Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring: const [first, ...butFirst] = ['why', 'hello', 'there', 'little', 'droid']; first //=> 'why' butFirst //=> ["hello","there","little","droid"] (1 shared statement(s), 3 shared atom(s))
 - [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring: Gathering arguments for functions is one of the ways JavaScript can destructure arrays. Another way is when assigning variables, like this:; Function shares technical record from Recipes with Basic Functions / Left-Variadic Functions: const abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); }; abccc(1, 2, 3, 4, 5) 1 2 [3,4,5] (1 shared statement(s), 3 shared atom(s))
 - [[javascriptallonge-parameter]] - shared statements and technical atoms: Parameter shares source evidence from Recipes with Basic Functions / Left-Variadic Functions: ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do?; Parameter shares technical record from Recipes with Basic Functions / Left-Variadic Functions: const abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); }; abccc(1, 2, 3, 4, 5) 1 2 [3,4,5] (1 shared statement(s), 2 shared atom(s))
 - [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from Recipes with Basic Functions / Left-Variadic Functions: const abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); }; abccc(1, 2, 3, 4, 5) 1 2 [3,4,5] (2 shared atom(s))
 - [[javascriptallonge-data]] - shared technical atoms: Data shares technical table: 57 https://en.wikipedia.org/wiki/CAR_and_CDR 58 Kyle Simpson is the author of You Don't Know JS, available here (1 shared atom(s))
-- [[javascriptallonge-works-just-fine-because-arguments]] - shared technical atoms: Works Just Fine, Because Arguments[0 shares technical table: 57 https://en.wikipedia.org/wiki/CAR_and_CDR 58 Kyle Simpson is the author of You Don't Know JS, available here (1 shared atom(s))
+
+### Shared claims
+
+- [[javascriptallonge-copy]] - shared statements: Copy shares source evidence from ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus: The act of writing is an iterative process with (very often) tight revision loops. However, the process of soliciting feedback, gathering responses, sending out copi ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-ecmascript]] - shared statements: Ecmascript shares source evidence from Recipes with Basic Functions / Left-Variadic Functions: ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do? (1 shared statement(s))
 - [[javascriptallonge-operation]] - shared statements: Operation shares source evidence from Composing and Decomposing Data / Mutation / mutation and data structures: The gathering operation [a, b, ...ThreeToFive] is slower, but 'safer. ' (1 shared statement(s))
-- [[javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-gathering-91ed37bf]] - source section: Composing and Decomposing Data / Arrays and Destructuring Arguments / gathering shares source evidence from Composing and Decomposing Data / Arrays and Destructuring Arguments / gathering: Sometimes we need to extract arrays from arrays. Here is the most common pattern: Extracting the head and gathering everything but the head from an array:; Composing and Decomposing Data / Arrays and Destructuring Arguments / gathering shares technical record from Composing and Decomposing Data / Arrays and Destructuring Arguments / gathering: const [car, ...cdr] = [1, 2, 3, 4, 5]; car //=> 1 cdr //=> [2, 3, 4, 5] (4 shared statement(s), 4 shared atom(s))
 
 ## Source
 

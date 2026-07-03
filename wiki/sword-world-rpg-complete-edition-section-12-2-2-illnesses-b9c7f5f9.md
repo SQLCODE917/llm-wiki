@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-12-2-2-illnesses-b9c7f5f9
 page_kind: source
 page_family: section-reference
-summary: 12.2.2 Illnesses: 185 source-backed entries and 56 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 12.2.2 Illnesses: 185 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-2-illnesses-b9c7f5f9@f8b9f6e1614e435b8297a769a4155c22
+projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-2-illnesses-b9c7f5f9@4286434806f9901538b64a60d8ce5b27
 ---
 
 # 12.2.2 Illnesses
@@ -17,25 +17,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
+- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-balloon-burst-7b55666f]] - narrower source section: 12.2.2 Illnesses / [ Balloon Burst ]
+- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-bat-fever-c93a729e]] - narrower source section: 12.2.2 Illnesses / [ Bat Fever ]
 - [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-common-cold-6682e932]] - narrower source section: 12.2.2 Illnesses / [ Common Cold ]
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-symptoms-9f26a2ca]] - narrower source section: 12.2.2 Illnesses / 《 Symptoms 》
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-rarity-bad75e7e]] - narrower source section: 12.2.2 Illnesses / 《 Rarity 》
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-fatal-depth-83159a45]] - narrower source section: 12.2.2 Illnesses / 《 Fatal Depth 》
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-infection-power-dd3b9b6e]] - narrower source section: 12.2.2 Illnesses / 《 Infection Power 》
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-description-fa8e47b0]] - narrower source section: 12.2.2 Illnesses / 《 Description 》
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-green-slime-rot-b07097cf]] - narrower source section: 12.2.2 Illnesses / [ Green Slime Rot ]
 - [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-cotton-weaver-367160cd]] - narrower source section: 12.2.2 Illnesses / [ Cotton Weaver ]
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-stone-skin-a6565926]] - narrower source section: 12.2.2 Illnesses / [ Stone Skin ]
 - [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-dance-macabre-1fa96134]] - narrower source section: 12.2.2 Illnesses / [ Dance Macabre ]
 - [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-deep-sleep-8da860bf]] - narrower source section: 12.2.2 Illnesses / [ Deep Sleep ]
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-bat-fever-c93a729e]] - narrower source section: 12.2.2 Illnesses / [ Bat Fever ]
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-balloon-burst-7b55666f]] - narrower source section: 12.2.2 Illnesses / [ Balloon Burst ]
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-vampire-skin-8bf3beaf]] - narrower source section: 12.2.2 Illnesses / [ Vampire Skin ]
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-humbaba-curse-7624b4c6]] - narrower source section: 12.2.2 Illnesses / [ Humbaba Curse ]
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-lycanthropy-2f8c313b]] - narrower source section: 12.2.2 Illnesses / [ Lycanthropy ]
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-rat-disease-96669d9c]] - narrower source section: 12.2.2 Illnesses / [ Rat Disease ]
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-red-cap-15325526]] - narrower source section: 12.2.2 Illnesses / [ Red Cap ]
-- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-lockjaw-c1d847b1]] - narrower source section: 12.2.2 Illnesses / [ Lockjaw ]
+- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-description-fa8e47b0]] - narrower source section: 12.2.2 Illnesses / 《 Description 》
+- [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-fatal-depth-83159a45]] - narrower source section: 12.2.2 Illnesses / 《 Fatal Depth 》
+
+### Topics
+
 - [[sword-world-rpg-complete-edition-illness]] - topic hub: opens the topic page for Illness
 
 ## Statements
@@ -160,23 +154,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical frame 1: 12.2.2 Illnesses / [ Common Cold ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06676))_
-
-> This is what they call a cold. It's accompanied by a slight fever, cough, sneezing, runny nose, etc. Some people may experience diarrhea symptoms or joint pain. You suffer a -1 penalty on all success rolls while you have a cold. As the cold progresses, you may develop a high fever and also have difficulty breathing.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06671, source-range-0b9dec90-06672, source-range-0b9dec90-06674, source-range-0b9dec90-06675))_
-
-> Symptoms=Fever, cough, sneezing, runny nose, diarrhea, arthritis
-
-> Rarity=5
-
-> Fatal Depth=5
-
-> Infection Power=Moderate
-
-### Technical frame 2: 12.2.2 Illnesses / 《 Rarity 》
+### Technical frame 1: 12.2.2 Illnesses / 《 Rarity 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06682))_
 
@@ -184,9 +162,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06680))_
 
+<a id="atom-technical-atom-54939968f358130b"></a>
+
 > If a disease can be identified, owners of the healer skill can provide appropriate treatment.
 
-### Technical frame 3: 12.2.2 Illnesses / 《 Rarity 》
+### Technical frame 2: 12.2.2 Illnesses / 《 Rarity 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06683))_
 
@@ -194,9 +174,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06682))_
 
+<a id="atom-technical-atom-c2f5f720419c6675"></a>
+
 > If the roll is less than the progression intensity , the disease gets worse and the depth increases by 1.
 
-### Technical frame 4: 12.2.2 Illnesses / 《 Rarity 》
+### Technical frame 3: 12.2.2 Illnesses / 《 Rarity 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06684))_
 
@@ -204,19 +186,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06683))_
 
+<a id="atom-technical-atom-9ffcc4428a68150b"></a>
+
 > Even if a shaman cannot use the spell Restore Health , they can still work with one type of spirit to alleviate symptoms.
 
-### Technical frame 5: 12.2.2 Illnesses / 《 Rarity 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06686))_
-
-> If a healer who knows the true nature of an illness cares for the patient for more than one hour per day, they can make a similar check using that healer's healer skill level + intelligence bonus as the baseline score. However, this must be at each progression speed of the illness (i.e. immediately after the illness's progression check), and you can only make one success roll. However, even if they fail, the same healer can continue to care for the patient. If after some time has passed, an illn
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06685))_
-
-> When the holy magic Cure Disease or Refresh , or the spirit magic Restore Health are cast, the caster must make a success roll using their magic power as the baseline score.
-
-### Technical frame 6: 12.2.2 Illnesses / 《 Rarity 》
+### Technical frame 4: 12.2.2 Illnesses / 《 Rarity 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06685))_
 
@@ -224,195 +198,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06686))_
 
+<a id="atom-technical-atom-28bde196d69cf5dd"></a>
+
 > immediately after the illness's progression check), and you can only make one success roll.
 
-### Technical frame 7: 12.2.2 Illnesses / 《 Description 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06695))_
-
-> Here are some examples of illnesses seen in Sword World . Most of the illnesses listed here are incurable diseases that are difficult to heal and have a high mortality rate. The game master may also create any other illnesses they desire.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06693))_
-
-> [Figure] (p.165)
-
-### Technical frame 8: 12.2.2 Illnesses / 《 Description 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06692))_
-
-> A detailed description and data on the illness is included at the end.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06695))_
-
-> The game master may also create any other illnesses they desire.
-
-### Technical frame 9: 12.2.2 Illnesses / [ Green Slime Rot ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06701))_
-
-> This is said to be an illness that occurs when the power of gnome in the body weakens and the power of undine becomes stronger. Immediately after infection, itchy green spots about 3 cm in diameter appear all over the body, but at depth 2, the spots emit a putrid odor and a dirty pus begins to flow out. In this state, it's almost impossible to take action. When the lethal depth of 3 is reached, the entire body rots, dissolves and washes away. The chance of being infected by a character before de
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06697, source-range-0b9dec90-06699, source-range-0b9dec90-06700))_
-
-> Symptoms=Green spots appear on the body, which eventually rots away from there Rarity=15
-
-> Fatal Depth=3
-
-> Infection Power=Moderate
-
-### Technical frame 10: 12.2.2 Illnesses / [ Cotton Weaver ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06705))_
-
-> Progression Speed/Progression Intensity/ Healing Score=1 week/5/10 (20) Fatal Depth=3
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06703, source-range-0b9dec90-06704, source-range-0b9dec90-06706))_
-
-> Symptoms=Cotton-like tissue peels off from the wound
-
-> Rarity=14
-
-> Infection Power=Weak
-
-### Technical frame 11: 12.2.2 Illnesses / [ Stone Skin ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06714))_
-
-> This is a terrifying illness in which the power of gnome becomes so strong that the surface of the body turns to stone beginning with the feet. At depth 1, your ankles will become stiff and you won't be able to walk. At depth 2, your knees become stiff. At depth 3, your body will become stiff up to the waist, and at depth 4, your chest will become stiff, at which point your character will be unable to breathe and will die of suffocation. However, the disease will continue to progress, and eventu
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06709, source-range-0b9dec90-06710, source-range-0b9dec90-06712, source-range-0b9dec90-06713))_
-
-> Symptoms=The surface of the body gradually becomes hard like stone
-
-> Rarity=14
-
-> Fatal Depth=4
-
-> Infection Power=Weak
-
-### Technical frame 12: 12.2.2 Illnesses / [ Dance Macabre ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06721))_
-
-> When a person contracts this illness, their body begins to dance on its own, regardless of their consciousness. Since the person him or herself feels festive while suffering from the illness, it's believed that this is an abnormal manifestation of the power of leprechaun, which is a mind spirit. While suffering from this illness, you'll suffer a -4 penalty to your attack power and evasion speed, and you will not be able to cast ancient magic or spirit magic. As the depth of the illness increases
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06716, source-range-0b9dec90-06717, source-range-0b9dec90-06719, source-range-0b9dec90-06720))_
-
-> Symptoms=The body keeps dancing separate from the person's will
-
-> Rarity=13
-
-> Fatal Depth=4
-
-> Infection Power=Strong
-
-### Technical frame 13: 12.2.2 Illnesses / [ Deep Sleep ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06725))_
-
-> It' s believed that this illness is caused by the power of the mind spirit sandman becoming too strong. As the illness progresses, the patient will begin to complain of extreme fatigue with even the slightest amount of exercise, and the amount of time spent sleeping each day will increase (use depth x 3 + 9 as a standard). The patient will then die when it reaches the fatal depth of 5. The reason for the outbreak of the disease is unknown, but there are many known cases where excessive use of th
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06724))_
-
-> Infection Power=Weak
-
-### Technical frame 14: 12.2.2 Illnesses / [ Bat Fever ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06732))_
-
-> This is an illness caused by bat bites. While you have this illness, you suffer a 1 penalty on all success rolls due to fever. Infections are not often caused except by bat bites.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06727, source-range-0b9dec90-06728, source-range-0b9dec90-06730, source-range-0b9dec90-06731))_
-
-> Symptoms=Fever
-
-> Rarity=10
-
-> Fatal Depth=6
-
-> Infection Power=Weak
-
-### Technical frame 15: 12.2.2 Illnesses / [ Balloon Burst ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06739))_
-
-> This illness causes difficulty breathing, along with body swelling, then you become unable to move, and eventually your body ruptures and you die.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06734, source-range-0b9dec90-06735, source-range-0b9dec90-06737, source-range-0b9dec90-06738))_
-
-> Symptoms=Shortness of breath, body swelling, inability to move, pain throughout the body
-
-> Rarity=12
-
-> Fatal Depth=3
-
-> Infection Power=Weak
-
-### Technical frame 16: 12.2.2 Illnesses / [ Vampire Skin ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06748))_
-
-> This is an illness in which the power of dark spirits becomes unnecessarily strong, causing a hypersensitivity to light. At depth 1, painful blisters resembling burns accompany areas exposed to sunlight. At depth 2, vision is weakened and most success rolls suffer a -2 penalty. At depth 3 you lose your vision, and at depth 4 you fall into a coma.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06743, source-range-0b9dec90-06744, source-range-0b9dec90-06746, source-range-0b9dec90-06747))_
-
-> Symptoms=Become extremely weak against sunlight
-
-> Rarity=15
-
-> Fatal Depth=5
-
-> Infection Power=Weak
-
-### Technical frame 17: 12.2.2 Illnesses / [ Humbaba Curse ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06753))_
-
-> Characters affected by this illness brought on by the fire of the magical beast humbaba will suffer from severe fever and vomiting, making almost no activity possible. This disease is extremely contagious, classed as a plague.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06750, source-range-0b9dec90-06752))_
-
-> Symptoms=Extreme fever, vomiting, diarrhea, shortness of breath Rarity=16 Intensity/
-
-> Infection Power=Very strong
-
-### Technical frame 18: 12.2.2 Illnesses / [ Lycanthropy ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06757))_
-
-> Progression Speed/Progression Healing Score=Special/7/- (16) Fatal Depth=None
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06755, source-range-0b9dec90-06756, source-range-0b9dec90-06758))_
-
-> Symptoms=Become a lycanthrope
-
-> Rarity=8 Intensity/
-
-> Infection Power=Very weak
-
-### Technical frame 19: 12.2.2 Illnesses / [ Lycanthropy ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06761))_
-
-> The progression of lycanthropy differs from the rules of normal illnesses. Those infected with lycanthropy will have swollen wounds and a high fever. This fever continues endlessly. Every night from that day onwards, compare 2D + 3 with the number of days since the new moon (if it's 16 days or more, then 30 - the number of days ). Once the score is equal to or less than the number of days, the character becomes a full lycanthrope and transforms into a beast form. This cannot heal naturally.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06760))_
-
-> Anyone wounded by a lycanthrope must roll 2D.
-
-### Technical frame 20: 12.2.2 Illnesses / [ Rat Disease ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06765))_
-
-> Rarity=7 Progression Speed/Progression Intensity/ Healing Score=1 day/5/7 (14) Fatal Depth=5
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06764, source-range-0b9dec90-06766))_
-
-> Symptoms=Fever, swelling of joints
-
-> Infection Power=Weak
-
-### Technical frame 21: 12.2.2 Illnesses / [ Red Cap ]
+### Technical frame 5: 12.2.2 Illnesses / [ Red Cap ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
 
@@ -420,15 +210,23 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06769, source-range-0b9dec90-06770, source-range-0b9dec90-06772, source-range-0b9dec90-06773))_
 
+<a id="atom-technical-atom-f68d5bc4c6bce3d2"></a>
+
 > Symptoms=Going berserk, change in body shape
+
+<a id="atom-technical-atom-3fb81f12ca775e31"></a>
 
 > Rarity=12
 
+<a id="atom-technical-atom-230e16ddf2fd673d"></a>
+
 > Fatal Depth=5
+
+<a id="atom-technical-atom-84ee2c9785a61941"></a>
 
 > Infection Power=Very strong (Infection through gaze)
 
-### Technical frame 22: 12.2.2 Illnesses / [ Red Cap ]
+### Technical frame 6: 12.2.2 Illnesses / [ Red Cap ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06774))_
 
@@ -436,30 +234,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06775))_
 
+<a id="atom-technical-atom-9602fe2c82b23df6"></a>
+
 > If you make eye contact with someone who has the illness, a progression check must be made immediately.
-
-### Technical frame 23: 12.2.2 Illnesses / [ Lockjaw ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06782))_
-
-> A wound can greatly disturb the balance of spirit power within the body, and the power of salamander in particular may become stronger. This results in lockjaw, a disease that causes a severe fever. A character will be unable to do much while suffering from lockjaw due to a high fever. It's not very contagious, but if you leave a wound with mud, etc. the chance of infection is fairly high. It is said that this is because undine and gnome create illusions due to the mud.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06777, source-range-0b9dec90-06778, source-range-0b9dec90-06780, source-range-0b9dec90-06781))_
-
-> Symptoms=Extreme fever, shortness of breath
-
-> Rarity=7
-
-> Fatal Depth=4
-
-> Infection Power=Very weak
-
-### Technical frame 24: 12.2.2 Illnesses / [ Lockjaw ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06782))_
-
-> A wound can greatly disturb the balance of spirit power within the body, and the power of salamander in particular may become stronger. This results in lockjaw, a disease that causes a severe fever. A character will be unable to do much while suffering from lockjaw due to a high fever. It's not very contagious, but if you leave a wound with mud, etc. the chance of infection is fairly high. It is said that this is because undine and gnome create illusions due to the mud.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06783))_
-
-> [Figure] (p.167)

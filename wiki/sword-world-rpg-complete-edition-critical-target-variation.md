@@ -4,10 +4,10 @@ page_kind: concept
 page_family: broad-topic
 summary: Critical Target Variation: 36 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-critical-target-variation@809ed26d39de5229461a635edca031c7
+projection_coverage: topic-sword-world-rpg-complete-edition-critical-target-variation@d7d6d00f85a9bff622326d6bd07c313c
 ---
 
 # Critical Target Variation
@@ -17,15 +17,23 @@ What [[sword-world-rpg-complete-edition]] covers about critical target variation
 
 ## Related pages
 
+### Source structure
+
+- [[sword-world-rpg-complete-edition-section-chapter-16-16-2-weapon-and-armor-modifiers-critical-target-variation-49197cfc]] - source section: Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation shares source evidence from Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation: Under the basic rules, when using the Rating Table to determine damage, a 10 or greater is considered a critical , but with this rule, the chance of a critical is di ... [truncated]; Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation shares technical record from Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation: Table 16-1 Weapon Optional Rules (4 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-critical-target-variation-54d058ab]] - source section: Critical Target Variation shares source evidence from Critical Target Variation: Critical target variation indicates that the armor reduces the chance of being dealt a strong blow from some weapons while wearing it. If this field says yes , the o ... [truncated] (2 shared statement(s))
+
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-weapon-critical]] - shared statements and technical atoms: 《 Weapons Cannot Critical 》 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated]; 《 Weapons Cannot Critical 》 shares technical record from Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation: Table 16-1 Weapon Optional Rules (9 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-weapon]] - shared statements and technical atoms: Weapon shares source evidence from Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation: Under the basic rules, when using the Rating Table to determine damage, a 10 or greater is considered a critical , but with this rule, the chance of a critical is di ... [truncated]; Weapon shares technical record from Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation: Table 16-1 Weapon Optional Rules (3 shared statement(s), 1 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (2 shared statement(s))
 - [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements: 【 Damage Reduction 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (2 shared statement(s))
 - [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: 1.4.9 Filling Out the Character Sheet shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements: 【 Ranger Skill 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-target-score]] - shared statements: Target Scores shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Critical Target 】: The critical target is a lower is better score, which is rare in Sword World RPG . Therefore, an attack using the thief skill is more likely to result in a critical ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-16-16-2-weapon-and-armor-modifiers-critical-target-variation-49197cfc]] - source section: Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation shares source evidence from Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation: Under the basic rules, when using the Rating Table to determine damage, a 10 or greater is considered a critical , but with this rule, the chance of a critical is di ... [truncated]; Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation shares technical record from Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation: Table 16-1 Weapon Optional Rules (4 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-critical-target-variation-54d058ab]] - source section: Critical Target Variation shares source evidence from Critical Target Variation: Critical target variation indicates that the armor reduces the chance of being dealt a strong blow from some weapons while wearing it. If this field says yes , the o ... [truncated] (2 shared statement(s))
 ## Statements by source section
 
 ### 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat
@@ -141,6 +149,8 @@ What [[sword-world-rpg-complete-edition]] covers about critical target variation
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01457))_
 
+<a id="atom-technical-atom-a3f4190cb8cde886"></a>
+
 > critical target = 10 (9 if using thief skill)
 
 ### Technical frame 2: Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation
@@ -151,6 +161,8 @@ What [[sword-world-rpg-complete-edition]] covers about critical target variation
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11193))_
 
+<a id="atom-technical-atom-1e8fed7baf024168"></a>
+
 > Table 16-1 Weapon Optional Rules
 
 ### Technical frame 3: Chapter 16: / 16.2 Weapon and Armor Modifiers / Critical Target Variation
@@ -160,6 +172,8 @@ What [[sword-world-rpg-complete-edition]] covers about critical target variation
 > likely you are to deliver a powerful strike. Weapons classified as swords , axes , spears , bows , and crossbows suffer +1 to this critical target against metal armor .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11342))_
+
+<a id="atom-technical-atom-6ab944bdcafcea7d"></a>
 
 > - △△ Calculate using required strength x 2 + 10
 

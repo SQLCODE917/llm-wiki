@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-we-ll-keep-it-simple-more-generators-6ce23867
 page_kind: source
-summary: We'll keep it simple: / more generators: 9 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: We'll keep it simple: / more generators: 9 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-we-ll-keep-it-simple-more-generators-6ce23867@ba5cfa1281665bdd3d9f52142421ce03
+projection_coverage: section-javascriptallonge-section-we-ll-keep-it-simple-more-generators-6ce23867@03b21b51ab6cc0bb832a7ad9f6300dbd
 ---
 
 # We'll keep it simple: / more generators
@@ -16,7 +17,12 @@ From [[javascriptallonge]].
 
 ## Related pages
 
+### Source structure
+
 - [[javascriptallonge-section-we-ll-keep-it-simple-1104ef0d]] - broader source section: We'll keep it simple:
+
+### Topics
+
 - [[javascriptallonge-generator]] - topic hub: opens the topic page for Generator
 
 ## Statements
@@ -33,6 +39,8 @@ From [[javascriptallonge]].
 > Our OneTwoThree example used implicit state to output the numbers in sequence. Recall that we wrote Fibonacci using explicit state:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01718))_
+
+<a id="atom-technical-atom-2e01e3085500fe57"></a>
 
 ```
 const Numbers = {
@@ -65,6 +73,8 @@ console.log(i);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01719))_
 
+<a id="atom-technical-atom-5b9d980be748a7cb"></a>
+
 ```
 8
 9
@@ -78,67 +88,9 @@ console.log(i);
 
 > We've writing a function that returns an iterator, but we used a generator to do it. And the generator's syntax allows us to use JavaScript's natural management of state instead of constantly rolling our own.
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01721))_
-
-```
-const Fibonacci = {
-[Symbol.iterator]: () => {
-let a = 0, b = 1, state = 0;
-return {
-next: () => {
-switch (state) {
-case 0:
-state = 1;
-return {value: a};
-case 1:
-state = 2;
-return {value: b};
-case 2:
-[a, b] = [b, a + b];
-return {value: b};
-}
-}
-}
-}
-};
-for (let n of Fibonacci) {
-console.log(n)
-}
-//=>
-0
-1
-1
-2
-3
-5
-8
-13
-```
-
-### Technical frame 4: We'll keep it simple: / more generators
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01725))_
-
-> We've writing a function that returns an iterator, but we used a generator to do it. And the generator's syntax allows us to use JavaScript's natural management of state instead of constantly rolling our own.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01722))_
-
-```
-21
-34
-55
-89
-144
-...
-```
-
-### Technical frame 5: We'll keep it simple: / more generators
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01725))_
-
-> We've writing a function that returns an iterator, but we used a generator to do it. And the generator's syntax allows us to use JavaScript's natural management of state instead of constantly rolling our own.
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01724))_
+
+<a id="atom-technical-atom-f4b0f57efe02590e"></a>
 
 ```
 const Fibonacci = {
@@ -172,13 +124,15 @@ console.log(i);
 ...
 ```
 
-### Technical frame 6: We'll keep it simple: / more generators
+### Technical frame 4: We'll keep it simple: / more generators
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01725))_
 
 > We've writing a function that returns an iterator, but we used a generator to do it. And the generator's syntax allows us to use JavaScript's natural management of state instead of constantly rolling our own.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01727))_
+
+<a id="atom-technical-atom-10237a444786ad38"></a>
 
 ```
 function * fibonacci () {

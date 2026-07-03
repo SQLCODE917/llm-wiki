@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-buckbaird-852e8591
 page_kind: source
 page_family: section-reference
-summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Buckbaird ]: 23 source-backed entries and 13 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Buckbaird ]: 23 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-buckbaird-852e8591@72f2f3d5c3d6a657e9b8b0bfb9b925c6
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-buckbaird-852e8591@3f5071893ecfe5c58d25125f1d44e0c9
 ---
 
 # 13.2.6 Mythical Beasts and Magical Beasts / [ Buckbaird ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-6-myt
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] - broader source section: 13.2.6 Mythical Beasts and Magical Beasts
 
@@ -29,43 +31,9 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical frame 1: 13.2.6 Mythical Beasts and Magical Beasts / [ Buckbaird ]
+### Technical atom 1
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07734, source-range-0b9dec90-07735, source-range-0b9dec90-07736, source-range-0b9dec90-07737, source-range-0b9dec90-07738, source-range-0b9dec90-07739, source-range-0b9dec90-07740, source-range-0b9dec90-07741, source-range-0b9dec90-07742, source-range-0b9dec90-07743, source-range-0b9dec90-07744))_
-
-> Monster Level=9
-
-> Rarity=15
-
-> Agility=11 Movement Speed=15 (air)
-
-> Number=One Frequency=Very Rare
-
-> Intellect=Human Reaction=Neutral
-
-> Attack Points=Ram:17 (10)
-
-> Strike Points=18
-
-> Evasion Points=16 (9) Defense Points=12
-
-> Life Points/Resistance=27/19 (12)
-
-> Mental Points/Resistance=17/17 (10)
-
-> Special Abilities=Ray (Resist target
-
-### Technical frame 2: 13.2.6 Mythical Beasts and Magical Beasts / [ Buckbaird ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07751))_
-
-> It will attack without firing a ray.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07749))_
-
-> The game master should roll 1D to determine which ray the buckbaird fires (or if it attempts to ram).
-
-### Technical atom 3
+<a id="atom-technical-atom-8afe7398d62a3875"></a>
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07749))_
 
@@ -73,19 +41,7 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07750))_
 
-| entry | content |
-| --- | --- |
-| 1 | Paralysis Ray You will be paralyzed for 6 rounds. |
-| 2 | Hypnosis Ray You will fall asleep. This is considered natural sleep. |
-| 3 | Freeze Ray You will freeze instantly and enter a state of suspended animation. Treat this the same way as the spirit magic Ice Coffin (see p. 94). |
-| 4 | Brainwashing Ray You will think the buckbaird is your ally and attack your allies. This effect lasts 18 rounds. Treat this the same way as magic that belongs to mind . |
-| 5 | Metal Destruction Ray Destroys metal weapons and armor you are wearing. Magical weapons and armor are not affected. This ray cannot be resisted. |
-| 6 | No firing |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 1. Paralysis Ray
 You will be paralyzed for 6 rounds.
 2. Hypnosis Ray
@@ -98,5 +54,17 @@ You  will  think  the  buckbaird  is your ally and attack your allies. This effe
 Destroys metal weapons and armor you are wearing. Magical weapons and armor are not affected. This ray cannot be resisted.
 6. No firing
 ```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
+| entry | content |
+| --- | --- |
+| 1 | Paralysis Ray You will be paralyzed for 6 rounds. |
+| 2 | Hypnosis Ray You will fall asleep. This is considered natural sleep. |
+| 3 | Freeze Ray You will freeze instantly and enter a state of suspended animation. Treat this the same way as the spirit magic Ice Coffin (see p. 94). |
+| 4 | Brainwashing Ray You will think the buckbaird is your ally and attack your allies. This effect lasts 18 rounds. Treat this the same way as magic that belongs to mind. |
+| 5 | Metal Destruction Ray Destroys metal weapons and armor you are wearing. Magical weapons and armor are not affected. This ray cannot be resisted. |
+| 6 | No firing |
 
 </details>

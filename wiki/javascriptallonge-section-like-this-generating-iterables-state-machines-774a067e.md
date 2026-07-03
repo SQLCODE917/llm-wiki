@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-like-this-generating-iterables-state-machines-774a067e
 page_kind: source
-summary: Like this: / Generating Iterables / state machines: 10 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Like this: / Generating Iterables / state machines: 10 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-like-this-generating-iterables-state-machines-774a067e@a1d7674f54552a3ecdd519e8660e67d0
+projection_coverage: section-javascriptallonge-section-like-this-generating-iterables-state-machines-774a067e@8755e23a6cc43b400dd43af717a514a1
 ---
 
 # Like this: / Generating Iterables / state machines
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-like-this-generating-iter
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-like-this-generating-iterables-283d51ed]] - broader source section: Like this: / Generating Iterables
 
@@ -27,53 +30,3 @@ From [[javascriptallonge]].
 - The thing to note here is that our fibonacci generator has three states: generating 0 , generating 1 , and generating everything after that. This isn't a good fit for an iterator, because iterators have one functional entry point and therefore, we'd have to represent our three states explicitly, perhaps using a state pattern 90 : _(javascriptallonge.pdf (source-range-7239e085-01653))_
 - This isn't a good fit for an iterator, because iterators have one functional entry point and therefore, we'd have to represent our three states explicitly, perhaps using a state pattern 90 : _(javascriptallonge.pdf (source-range-7239e085-01653))_
 - The thing to note here is that our fibonacci generator has three states: generating 0 , generating 1 , and generating everything after that. _(javascriptallonge.pdf (source-range-7239e085-01653))_
-
-## Technical atoms
-
-### Technical frame 1: Like this: / Generating Iterables / state machines
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01653))_
-
-> The thing to note here is that our fibonacci generator has three states: generating 0 , generating 1 , and generating everything after that. This isn't a good fit for an iterator, because iterators have one functional entry point and therefore, we'd have to represent our three states explicitly, perhaps using a state pattern 90 :
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01651))_
-
-```
-// Generation
-const fibonacci = () => {
-let a, b;
-console.log(a = 0);
-console.log(b = 1);
-while (true) {
-[a, b] = [b, a + b];
-console.log(b);
-}
-}
-fibonacci()
-//=>
-0
-1
-1
-2
-3
-5
-8
-13
-21
-34
-```
-
-### Technical frame 2: Like this: / Generating Iterables / state machines
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01653))_
-
-> The thing to note here is that our fibonacci generator has three states: generating 0 , generating 1 , and generating everything after that. This isn't a good fit for an iterator, because iterators have one functional entry point and therefore, we'd have to represent our three states explicitly, perhaps using a state pattern 90 :
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01652))_
-
-```
-55
-89
-144
-...
-```

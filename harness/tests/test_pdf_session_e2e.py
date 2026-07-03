@@ -156,7 +156,8 @@ async def test_pdf_ingest_writes_ledger_projection(store: WikiStore, paths: Wiki
     assert store.list_pages() == ["book"]
     book = store.read_page("book")
     assert "projection_coverage:" in book
-    assert "functions are values" in book
+    assert "page_family: source-manifest" in book
+    assert "## Page Families" in book
     ledger_dir = store.page_plan_artifact_dir("book.pdf") / "ledger"
     assert (ledger_dir / "claim-ledger.json").is_file()
     assert (ledger_dir / "projection-coverage.json").is_file()

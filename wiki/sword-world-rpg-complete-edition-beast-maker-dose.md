@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Beast Maker Dose: 3 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-beast-maker-dose@f4c7dab5d79f830049e8b08fef1bd051
+projection_coverage: topic-sword-world-rpg-complete-edition-beast-maker-dose@076120932aaba7471e72c2d727b0863b
 ---
 
 # Beast Maker Dose
@@ -31,10 +31,14 @@ What [[sword-world-rpg-complete-edition]] covers about beast maker dose:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06614))_
 
+<a id="atom-technical-atom-d3216cf8d094dc2c"></a>
+
 > Effect=Turn into an animal Toxicity Score=13 Rarity=15 Effect Start Time= 12 rounds later Effect Duration=Permanent
 
 
 ## Related pages
+
+### Shared claims
 
 - [[sword-world-rpg-complete-edition-magic]] - shared statements: Magic shares source evidence from [ Bad Joke (Inhaled) ] / [Beast Maker (Dose/Magic)]: This is a liquid with a slight odor, used by mixing into cooking, etc. It has an effect similar to the ancient magic Shape Change , and those who drink it and fail t ... [truncated] (3 shared statement(s))
 

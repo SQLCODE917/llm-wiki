@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Acquiring Rune Master Skill: 28 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-acquiring-rune-master-skill@d009de50b2bc41c6f7b6740076571530
+projection_coverage: topic-sword-world-rpg-complete-edition-acquiring-rune-master-skill@cc931af2e9bd8fa75ef8a064f1a3b767
 ---
 
 # Acquiring Rune Master Skill
@@ -57,6 +57,8 @@ What [[sword-world-rpg-complete-edition]] covers about acquiring rune master ski
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06313))_
 
+<a id="atom-technical-atom-2290b40375490277"></a>
+
 > When you awaken to faith and recognize the existence of the gods, you can acquire the 1st level priest skill.
 
 ### Technical frame 2: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Priest Skill 》
@@ -67,12 +69,19 @@ What [[sword-world-rpg-complete-edition]] covers about acquiring rune master ski
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06316))_
 
+<a id="atom-technical-atom-387332cf5a2a0c0d"></a>
+
 > In rare cases, if a character who had the priest skill believes that their previous teachings are wrong and awakens to the teachings of another god, they may lose any previous priest skill levels they had and acquire 1st level in a new god's priest skill level instead.
 
 
 ## Related pages
 
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-priest-skill]] - shared statements and technical atoms: Priest Skill shares source evidence from Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Priest Skill 》: To acquire the priest skill, it is necessary to awaken to faith . When you awaken to faith and recognize the existence of the gods, you can acquire the 1st level pri ... [truncated]; Priest Skill shares technical record from Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Priest Skill 》: When you awaken to faith and recognize the existence of the gods, you can acquire the 1st level priest skill. (11 shared statement(s), 2 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-dragon-priest-skill]] - shared statements: Dragon Priest Skill shares source evidence from Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Priest Skill 》: To acquire the priest skill, it is necessary to awaken to faith . When you awaken to faith and recognize the existence of the gods, you can acquire the 1st level pri ... [truncated] (6 shared statement(s))
 - [[sword-world-rpg-complete-edition-low-ancient]] - shared statements: 《 Low Ancient 》 shares source evidence from Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Sorcerer Skill 》: Then, you'll be given basic knowledge as a sorcerer, such as speaking and reading in high and low ancient, thus a sorcerer who can use 1st level spells is born. In t ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-sage-skill]] - shared statements: Sage Skill shares source evidence from Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Sorcerer Skill 》: Then, you'll be given basic knowledge as a sorcerer, such as speaking and reading in high and low ancient, thus a sorcerer who can use 1st level spells is born. In t ... [truncated] (1 shared statement(s))

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-2-1-humans-6e762209
 page_kind: source
 page_family: section-reference
-summary: 13.2.1 《 Humans 》: 224 source-backed entries and 32 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.2.1 《 Humans 》: 224 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-6e762209@8be671d830580250b8a9e7909dca75ed
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-1-humans-6e762209@cdd413e0ffb5024d09e61fe35bb00850
 ---
 
 # 13.2.1 《 Humans 》
@@ -17,28 +17,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-monster-catalog-8f0a6e1a]] - narrower source section: 13.2.1 《 Humans 》 / Monster Catalog
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-how-to-read-the-monster-catalog-70dc7bf9]] - narrower source section: 13.2.1 《 Humans 》 / How to Read the Monster Catalog
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-monster-level-2a0224d4]] - narrower source section: 13.2.1 《 Humans 》 / 《 Monster Level 》
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-dog-4419999c]] - narrower source section: 13.2.1 《 Humans 》 / [ Dog ]
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-other-de5c3439]] - narrower source section: 13.2.1 《 Humans 》 / 《 Other 》
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-rarity-a5c8f0b8]] - narrower source section: 13.2.1 《 Humans 》 / 《 Rarity 》
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-13-2-1-humans-agility-27086478]] - narrower source section: 13.2.1 《 Humans 》 / 《 Agility 》
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-movement-speed-795c253f]] - narrower source section: 13.2.1 《 Humans 》 / 《 Movement Speed 》
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-number-515197f8]] - narrower source section: 13.2.1 《 Humans 》 / 《 Number 》
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-frequency-930ad935]] - narrower source section: 13.2.1 《 Humans 》 / 《 Frequency 》
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-intellect-0bd82034]] - narrower source section: 13.2.1 《 Humans 》 / 《 Intellect 》
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-reaction-0aea7a99]] - narrower source section: 13.2.1 《 Humans 》 / 《 Reaction 》
 - [[sword-world-rpg-complete-edition-section-13-2-1-humans-attack-points-19aa3e95]] - narrower source section: 13.2.1 《 Humans 》 / 《 Attack Points 》
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-strike-points-96f602e8]] - narrower source section: 13.2.1 《 Humans 》 / 《 Strike Points
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-evasion-points-4a108a5f]] - narrower source section: 13.2.1 《 Humans 》 / 《 Evasion Points 》
 - [[sword-world-rpg-complete-edition-section-13-2-1-humans-defense-points-865bd439]] - narrower source section: 13.2.1 《 Humans 》 / 《 Defense Points 》
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-life-points-resistance-50d5f433]] - narrower source section: 13.2.1 《 Humans 》 / 《 Life Points/Resistance 》
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-special-abilities-49dba153]] - narrower source section: 13.2.1 《 Humans 》 / 《 Special Abilities 》
+- [[sword-world-rpg-complete-edition-section-13-2-1-humans-dog-4419999c]] - narrower source section: 13.2.1 《 Humans 》 / [ Dog ]
+- [[sword-world-rpg-complete-edition-section-13-2-1-humans-evasion-points-4a108a5f]] - narrower source section: 13.2.1 《 Humans 》 / 《 Evasion Points 》
+- [[sword-world-rpg-complete-edition-section-13-2-1-humans-frequency-930ad935]] - narrower source section: 13.2.1 《 Humans 》 / 《 Frequency 》
 - [[sword-world-rpg-complete-edition-section-13-2-1-humans-habitat-1d576bfa]] - narrower source section: 13.2.1 《 Humans 》 / 《 Habitat 》
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-perception-2e7c860d]] - narrower source section: 13.2.1 《 Humans 》 / 《 Perception 》
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-languages-473c0ed7]] - narrower source section: 13.2.1 《 Humans 》 / 《 Languages 》
-- [[sword-world-rpg-complete-edition-section-13-2-1-humans-pixie-c4686d1a]] - narrower source section: 13.2.1 《 Humans 》 / [ Pixie ]
+- [[sword-world-rpg-complete-edition-section-13-2-1-humans-how-to-read-the-monster-catalog-70dc7bf9]] - narrower source section: 13.2.1 《 Humans 》 / How to Read the Monster Catalog
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-human-06c90783]] - same source heading: another source section with the same heading, 1.4 Character Creation / 【 Human 】
 - [[sword-world-rpg-complete-edition-section-13-2-12-humans-e4eada41]] - same source heading: another source section with the same heading, 13.2.12 Humans
 
@@ -208,205 +199,3 @@ From [[sword-world-rpg-complete-edition]].
 - Pixies look similar to elves, but are only about 30 cm tall. They have wings on their backs reminiscent of insects. Most of them have the appearance of women, but there are also individuals that have the appearance of men. Also, for some reason, they seem to be wearing something that looks like clothes. Although they are relatively friendly towards humans, they do not actively interact with humans and rarely appear in public. Moreover, they seem to have a very close relationship with the small spirits called sprites, and have as a basic ability the power of the Invisibility spell that the sprites provide to shamans, which makes them all the more difficult to witness. They can use this ability without any restrictions, and they do not consume mental points by using this ability. However, in order to remain invisible, they need focus, and if they cannot do this, you will not be able to use Invisibility , and even if they do use it, if they lose their concentration (such as when attacking or using other magic, etc.) they will appear instantly. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06982))_
 - They sometimes play pranks on humans. They'll whisper in your ear while remaining hidden from view, and thrust a weapon in their hand (it appears to be a needle-thin dagger) into your butt. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06983))_
 - However, in order to remain invisible, they need focus, and if they cannot do this, you will not be able to use Invisibility , and even if they do use it, if they lose their concentration (such as when attacking or using other magic, etc.) they will appear instantly. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06982))_
-
-## Technical atoms
-
-### Technical frame 1: 13.2.1 《 Humans 》 / How to Read the Monster Catalog
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06879))_
-
-> A few lines of game data are shown first, followed by a detailed explanation. The meaning of each game detail is as follows.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06878))_
-
-> Dogs have a habit of following their leaders, and humans have taken advantage of this habit to use dogs for various purposes. Dogs react to humans in a variety of ways. If they are domesticated, they will not attack humans because they consider humans to be their masters. However, special guard dogs, military dogs, etc. that have been trained to treat all but specific people as enemies will attack even humans larger than themselves. Dogs are especially aggressive towards intruders-they also have a strong sense of territory. If it's a wild dog that's not owned by humans, it will act according to its own instincts. If they're hungry and think their opponent is weak, they may attack.
-
-### Technical frame 2: 13.2.1 《 Humans 》 / How to Read the Monster Catalog
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06879))_
-
-> A few lines of game data are shown first, followed by a detailed explanation. The meaning of each game detail is as follows.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06878))_
-
-> If they're hungry and think their opponent is weak, they may attack.
-
-### Technical frame 3: 13.2.1 《 Humans 》 / 《 Intellect 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06909))_
-
-> If it says animal , it means literally the same degree as an animal. They can distinguish their master and will follow their commands (if they're trained). Also, they have enough judgment ability to quickly run away if their life is in danger. If you were to convert it to intelligence, it would be around 3 to 5 . However, they can sometimes display surprising judgment, although this is something that has been learned as an instinct. There are known stories of parent birds feigning injury to keep
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06908))_
-
-> If given a command-- the only ones who can give commands are those who directly created the monster or those who used magic to give the command -they will faithfully carry it out, but they cannot make their own decisions.
-
-### Technical frame 4: 13.2.1 《 Humans 》 / 《 Intellect 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06910))_
-
-> If it says low , it means that while the intellect is not as high as that of humans, it is still quite high. They can also use primitive tools, words, and a very limited number of written characters. Although they're somewhat slow, they're able to make accurate judgments in normal activities. However, they're not good enough to fight using advanced tactics, and are easily fooled by simple words and tricks. If you were to convert it to intelligence, it would be around 6 to 8 .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06909))_
-
-> They can distinguish their master and will follow their commands (if they're trained).
-
-### Technical frame 5: 13.2.1 《 Humans 》 / 《 Intellect 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06911))_
-
-> If it says human , it means an intellect that's almost the same as that of a human. They can handle tools, words, text, etc. freely. If you were to convert it to intelligence, it would be 10 to 15 .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06910))_
-
-> They can also use primitive tools, words, and a very limited number of written characters.
-
-### Technical frame 6: 13.2.1 《 Humans 》 / 《 Reaction 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06918))_
-
-> If it says neutral , it means the monster holds no special feelings of hostility nor allyship towards the adventurers. Depending on the situation, they can be your enemy or your ally. Sometimes they simply avoid interaction and disappear.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06917))_
-
-> If it says adversarial , it means they consider adventurers (human or fae) to be their enemies. The specific actions they'll take will vary depending on the power dynamic (difference in number) between the adventurers and monsters, as well as the intelligence of the monsters. Even if the monster is adversarial, if the adventurers have the superior numbers, it will not attack immediately and may try to use trickery.
-
-### Technical frame 7: 13.2.1 《 Humans 》 / 《 Attack Points 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06925))_
-
-> Some monsters have multiple attack methods. Multiple attack points are also listed for these cases. In this case, if they're written on one line separated by a slash (/), it means that they can attack that number of times in one round. For example, Horn ： 12 (5)/Hoof ： 12 (5) means that two attacks can be made with horn and hoof. Each targeted character must make a success roll to determine whether they're able to avoid the attack.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06924))_
-
-> A character must make a success roll using their evasion speed as the baseline score and these attack points as the target score.
-
-### Technical frame 8: 13.2.1 《 Humans 》 / 《 Attack Points 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06926))_
-
-> If there are multiple attack methods, but they are written on two (or more) lines, the monster may have multiple attack methods, but can only use one of them during a round.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06925))_
-
-> In this case, if they're written on one line separated by a slash (/), it means that they can attack that number of times in one round.
-
-### Technical frame 9: 13.2.1 《 Humans 》 / 《 Strike Points
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06931))_
-
-> Monsters that have multiple attack methods also have multiple strike points written next to them. The arrangement of attack points also carries over to strike points.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06930))_
-
-> If a character fails to evade their attack, these strike points become damage and reduce the character's life force.
-
-### Technical frame 10: 13.2.1 《 Humans 》 / 《 Strike Points
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06931))_
-
-> Monsters that have multiple attack methods also have multiple strike points written next to them. The arrangement of attack points also carries over to strike points.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06932))_
-
-> If Attack Points=Horn:12 (5)/Hoof:12 (5) is written as Strike Points=17/16 , then if the horn attack hits, it'll deal 17 points of damage, and the hoof attack hits, it'll deal 16 points.
-
-### Technical frame 11: 13.2.1 《 Humans 》 / 《 Defense Points 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06937))_
-
-> Defense points are only effective against attacks such as weapons, etc. When struck by magic or similar attacks, defense points cannot reduce damage, monster level reduces damage instead. Whether or not a character can reduce damage through armor is the standard for deciding whether to use defense points or monster level.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06936))_
-
-> Just as characters can reduce damage through armor, monsters also have thick skin, shells, scales, etc.
-
-### Technical frame 12: 13.2.1 《 Humans 》 / 《 Defense Points 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06938))_
-
-> Monster level, like adventurer level, prevents all damage, but a monster's defense points already include damage reduction due to monster level. Therefore, only defense points should be applied when reducing damage from weapon attacks. Monster level may not be further subtracted from it.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06937))_
-
-> When struck by magic or similar attacks, defense points cannot reduce damage, monster level reduces damage instead.
-
-### Technical frame 13: 13.2.1 《 Humans 》 / 《 Life Points/Resistance 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06942))_
-
-> (Life point) resistance is a substitute for a character's life force resistance roll . When a character is poisoned, etc. a life force resistance roll determines whether they can avoid or reduce the effects of the poison. In the case of monsters, life point resistance is used instead. When a monster is poisoned, etc. compare its resistance score with the strength of the poison (toxicity score). If the life point resistance is greater, the monster will be safe from the effects of the poison. Wher
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06941))_
-
-> When a monster suffers damage, it will lose life points.
-
-### Technical frame 14: 13.2.1 《 Humans 》 / 《 Life Points/Resistance 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06945))_
-
-> Mental points have the same meaning as a character's mental power. When a monster uses magic, it consumes mental points, just like a character. Monsters whose mental points are reduced to 0 (or less) by Shade magic, etc. will fall unconscious. Mental point resistance is a score that's a substitute for a character's mental power resistance roll , so when a character casts magic on a monster, this mental point resistance becomes the target score.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06946))_
-
-> When a character casts a spell on a monster, they must make a success roll using their magic power as the baseline score.
-
-### Technical frame 15: 13.2.1 《 Humans 》 / 《 Perception 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06961))_
-
-> Those whose sensory abilities are magic perceive their surroundings with magical senses. These senses cannot be blocked or deceived by any means. Illusions are ineffective on monsters whose perception is magic .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06960))_
-
-> Those whose sensory abilities are pseudo have five pseudo-senses through magical means. After all, one part may be missing, or they may have special senses. In such cases, there is an organ that captures the sensation in a pseudo manner. If those organs are destroyed, the pseudo-senses will no longer be usable. For example, skeletons can use their empty eye sockets for pseudo vision. Therefore, if they're blindfolded, they won't be able to see, and they won't be able to see anything approaching from behind. Monsters whose perception is pseudo can experience illusions.
-
-### Technical frame 16: 13.2.1 《 Humans 》 / 《 Languages 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06963))_
-
-> If it says none , then the monster does not use language (those with obeys commands intellect may not speak themselves, but may understand what others are saying).
-
-### Technical frame 17: 13.2.1 《 Humans 》 / [ Pixie ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06966, source-range-0b9dec90-06967, source-range-0b9dec90-06968, source-range-0b9dec90-06969, source-range-0b9dec90-06970, source-range-0b9dec90-06971, source-range-0b9dec90-06972, source-range-0b9dec90-06973, source-range-0b9dec90-06974, source-range-0b9dec90-06975, source-range-0b9dec90-06976, source-range-0b9dec90-06977, source-range-0b9dec90-06978, source-range-0b9dec90-06980, source-range-0b9dec90-06981))_
-
-> Monster Level=1
-
-> Rarity=12
-
-> Agility=14 Movement Speed=4/7 (air)
-
-> Number=One
-
-> Frequency=Rare
-
-> Intellect=Human
-
-> Reaction=Friendly
-
-> Attack Points=Weapon: 8 (1)
-
-> Strike Points=2
-
-> Evasion Points=10 (3) Defense Points=3
-
-> Life Points/Resistance=7/8 (1)
-
-> Mental Points/Resistance=15/9 (2)
-
-> Special Abilities=2nd level spirit magic (Magic Intensity/Magic Power=11/4)
-
-> Habitat=Forests, meadows Languages=Fairy, silent spirit
-
-> Perception=Five senses (infravision)
-
-### Technical frame 18: 13.2.1 《 Humans 》 / [ Pixie ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06983))_
-
-> They sometimes play pranks on humans. They'll whisper in your ear while remaining hidden from view, and thrust a weapon in their hand (it appears to be a needle-thin dagger) into your butt.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06982))_
-
-> They can use this ability without any restrictions, and they do not consume mental points by using this ability.

@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-composing-and-decomposing-data-plain-old-javascript-objects-destructuring-objects-b7f3e8d1
 page_kind: source
-summary: Composing and Decomposing Data / Plain Old JavaScript Objects / destructuring objects: 7 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Composing and Decomposing Data / Plain Old JavaScript Objects / destructuring objects: 7 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-composing-and-decomposing-data-plain-old-javascript-objects-destructuring-objects-b7f3e8d1@e7bfb09d19d2f8446ce7e52a14e156a2
+projection_coverage: section-javascriptallonge-section-composing-and-decomposing-data-plain-old-javascript-objects-destructuring-objects-b7f3e8d1@f7f777d1c03388927174f25eedee7a3c
 ---
 
 # Composing and Decomposing Data / Plain Old JavaScript Objects / destructuring objects
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-composing-and-decomposing
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-composing-and-decomposing-data-plain-old-javascript-objects-bce9b969]] - broader source section: Composing and Decomposing Data / Plain Old JavaScript Objects
 
@@ -31,6 +34,8 @@ From [[javascriptallonge]].
 > Terrible grammar and capitalization, but let's move on. It is very common to write things like title: title when destructuring objects. When the label is a valid variable name, it's often the most obvious variable name as well. So JavaScript supports a further syntactic optimization:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01096))_
+
+<a id="atom-technical-atom-e83b3741e99adebe"></a>
 
 ```
 const user = {
@@ -63,34 +68,9 @@ title
 
 > Terrible grammar and capitalization, but let's move on. It is very common to write things like title: title when destructuring objects. When the label is a valid variable name, it's often the most obvious variable name as well. So JavaScript supports a further syntactic optimization:
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01098))_
-
-```
-} = us\
-```
-
-### Technical frame 3: Composing and Decomposing Data / Plain Old JavaScript Objects / destructuring objects
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01100))_
-
-> Terrible grammar and capitalization, but let's move on. It is very common to write things like title: title when destructuring objects. When the label is a valid variable name, it's often the most obvious variable name as well. So JavaScript supports a further syntactic optimization:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01099))_
-
-```
-const description = ({name: { first: given }, occupation: { title: title } }) =>
-`${given} is a ${title}`;
-description(user)
-//=> "Reginald is a Author"
-```
-
-### Technical frame 4: Composing and Decomposing Data / Plain Old JavaScript Objects / destructuring objects
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01100))_
-
-> Terrible grammar and capitalization, but let's move on. It is very common to write things like title: title when destructuring objects. When the label is a valid variable name, it's often the most obvious variable name as well. So JavaScript supports a further syntactic optimization:
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01101))_
+
+<a id="atom-technical-atom-f52ea4d07eb5b43e"></a>
 
 ```
 const description = ({name: { first }, occupation: { title } }) =>
@@ -101,13 +81,15 @@ And that same syntax works for literals:
 const abbrev = ({name: { first, last }, occupation: { title } }) => {
 ```
 
-### Technical frame 5: Composing and Decomposing Data / Plain Old JavaScript Objects / destructuring objects
+### Technical frame 3: Composing and Decomposing Data / Plain Old JavaScript Objects / destructuring objects
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01100))_
 
 > Terrible grammar and capitalization, but let's move on. It is very common to write things like title: title when destructuring objects. When the label is a valid variable name, it's often the most obvious variable name as well. So JavaScript supports a further syntactic optimization:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01102))_
+
+<a id="atom-technical-atom-74bb588b6178e93c"></a>
 
 ```
 const abbrev = ({name: { first, last }, occupation: { title } }) =>

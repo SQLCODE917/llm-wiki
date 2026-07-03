@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-22341d2d
 page_kind: source
 page_family: section-reference
-summary: 13.6 Handling Monster Special Abilities: 178 source-backed entries and 27 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.6 Handling Monster Special Abilities: 178 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-22341d2d@6f3453d573b60a0d86a4c6b3a5cdbd52
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-22341d2d@784a42e5cdc7249382d0bb75c178c81a
 ---
 
 # 13.6 Handling Monster Special Abilities
@@ -17,56 +17,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-magic-b5e46694]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Magic 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-hypnotism-0fc05e79]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Hypnotism 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-gaze-ray-7bfc94c9]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Gaze/Ray 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-possess-11958c95]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Possess 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-curse-57a5df07]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Curse 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-scream-3dbbba46]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Scream 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-roar-33521522]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Roar 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-fire-breath-5177ee7e]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Fire Breath 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-stone-wind-cutter-614bee8b]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Stone/Wind Cutter 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-disintegrate-36f7d539]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Disintegrate 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-poison-c136aceb]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Poison 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-parasitism-e16ab4a8]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Parasitism 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-disease-fbaff14d]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Disease 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-strangling-f8a8180a]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Strangling 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-capture-c2090e70]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Capture 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-entangling-21b4ac56]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Entangling 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-swallow-whole-d762b217]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Swallow Whole 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-bloodsuck-0fe137ea]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Bloodsuck 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-acid-3da5beb8]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Acid 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-corrosion-c41e798a]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Corrosion 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-steal-mental-power-0404e582]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Steal Mental Power 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-iron-corrosion-d2ce0f5e]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Iron Corrosion 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-weapon-immunity-c4f6a103]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Weapon Immunity 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-complete-immunity-to-certain-weapons-1d4cc3b0]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Complete Immunity to Certain Weapons 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-weapons-cannot-critical-491f8ce9]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Weapons Cannot Critical 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-certain-weapons-cannot-critical-a85dd114]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Certain Weapons Cannot Critical 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-darkness-invisible-2d99f331]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Darkness/Invisible 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-water-adaptation-da60739b]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Water Adaptation 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-ice-adaptation-b4296d86]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Ice Adaptation 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-snow-adaptation-5243973d]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Snow Adaptation 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-mental-attack-immunity-2bd6cf8f]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Mental Attack Immunity 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-sleepless-397b8dd0]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Sleepless 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-certain-magic-resistant-d328b12e]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Certain Magic Resistant 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-fire-immunity-30c3e1a1]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Fire Immunity 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-strong-to-fire-3c8fc0f5]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Strong to Fire 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-cold-immunity-862b6548]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Cold Immunity 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-strong-to-cold-49f47a0a]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Strong to Cold 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-life-point-regenerate-ee0de958]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Life Point Regenerate 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-regenerate-98dc56d0]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Regenerate 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-not-affected-by-poison-and-illness-6997764a]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Not Affected by Poison and Illness 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-camouflage-1a1ba84d]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Camouflage 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-shapeshift-cdbaffdd]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Shapeshift 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-clairvoyance-1da04658]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Clairvoyance 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-summon-fcfa58fc]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Summon 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-web-d3f62647]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Web 》
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-13-6-7-special-defense-abilities-weaknesses-99dcd611]] - narrower source section: 13.6 Handling Monster Special Abilities / 13.6.7 Special Defense Abilities: Weaknesses
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-needs-bloodsucking-to-maintain-life-points-fd5124c6]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Needs Bloodsucking to Maintain Life Points 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-needs-bloodsucking-to-maintain-mental-points-596d2eb2]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Needs Bloodsucking to Maintain Mental Points 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-damage-from-healing-magic-d9acb700]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Damage From Healing Magic 》
-- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-weak-to-fire-920d3af9]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Weak to Fire 》
+- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-acid-3da5beb8]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Acid 》
+- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-bloodsuck-0fe137ea]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Bloodsuck 》
+- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-camouflage-1a1ba84d]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Camouflage 》
+- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-capture-c2090e70]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Capture 》
+- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-certain-magic-resistant-d328b12e]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Certain Magic Resistant 》
+- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-certain-weapons-cannot-critical-a85dd114]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Certain Weapons Cannot Critical 》
+- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-clairvoyance-1da04658]] - narrower source section: 13.6 Handling Monster Special Abilities / 《 Clairvoyance 》
 
 ## Statements
 
@@ -309,211 +269,3 @@ From [[sword-world-rpg-complete-edition]].
 
 - This is a weakness seen in plant-type monsters, dry monsters, and monsters that live in cold regions. They're weak to fire, so checks are made at +10 to strike power when using fire attacks. In the case of Fire Bolt , make a strike power 20 damage check (10 if the monster successfully resists), and in the case of Fire Weapon , add a +20 strike power bonus to the weapon. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09945))_
 - In addition, for any other Weak to XX , checks against damage magic are made at +10 to strike power. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09946))_
-
-## Technical atoms
-
-### Technical frame 1: 13.6 Handling Monster Special Abilities / 《 Hypnotism 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09816))_
-
-> The targeted character must make a mental power resistance roll against the indicated target score.
-
-### Technical frame 2: 13.6 Handling Monster Special Abilities / 《 Gaze/Ray 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09819))_
-
-> In some cases, the gaze or ray can be reflected off a mirror, etc. but if this is not specified, it cannot be reflected.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09818))_
-
-> The targeted character must make a mental power resistance roll against the indicated target score.
-
-### Technical frame 3: 13.6 Handling Monster Special Abilities / 《 Gaze/Ray 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09818))_
-
-> This attacks opponents with a gaze or a ray. The targeted character must make a mental power resistance roll against the indicated target score. If you fail, you'll suffer the effects as indicated.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09819))_
-
-> but if this is not specified, it cannot be reflected.
-
-### Technical frame 4: 13.6 Handling Monster Special Abilities / 《 Possess 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09821))_
-
-> The targeted character must make a mental power resistance roll against the indicated target score.
-
-### Technical frame 5: 13.6 Handling Monster Special Abilities / 《 Scream 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09826))_
-
-> In the case of mandrake and alraune, you cannot attack or cast spells for one full round, and you will suffer a -4 penalty to evasion. At this time, if you roll double ones on the resistance roll, you will immediately go mad and become disabled. Furthermore, those who fail the resistance roll must make another one, this time a life force resistance roll, and if he or she fails, he or she will lose his or her hearing. At this time, if you roll double ones on the resistance roll, your life force w
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09825))_
-
-> A character who hears this at point-blank range without first wearing earplugs must make a mental power resistance roll against the indicated target score, and will suffer the effects on a failure.
-
-### Technical frame 6: 13.6 Handling Monster Special Abilities / 《 Scream 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09826))_
-
-> In the case of mandrake and alraune, you cannot attack or cast spells for one full round, and you will suffer a -4 penalty to evasion.
-
-### Technical frame 7: 13.6 Handling Monster Special Abilities / 《 Fire Breath 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09830))_
-
-> You must also make a mental power resistance roll against the indicated target score, which if successful will result in a smaller amount of damage.
-
-### Technical frame 8: 13.6 Handling Monster Special Abilities / 《 Poison 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09838))_
-
-> When attacked by these monsters, you must make a life force resistance roll, using the indicated toxicity score as the target score.
-
-### Technical frame 9: 13.6 Handling Monster Special Abilities / 《 Poison 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09838))_
-
-> Among monsters, there are some that carry a variety of poisons. When attacked by these monsters, you must make a life force resistance roll, using the indicated toxicity score as the target score. If you fail, you'll suffer an effect depending on the poison. Unless it's a poison that applies immediately (mainly damage), it can be treated with the holy magic Cure Poison or Refresh , or the spirit magic Restore Health .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09840))_
-
-> In the case of a poison that deals damage, if the resist is successful, then unless it's specified that no damage will be dealt, the effect will not be completely removed, it will merely reduce the strike power by 10 (and prevent criticals).
-
-### Technical frame 10: 13.6 Handling Monster Special Abilities / 《 Parasitism 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09842))_
-
-> If you're attacked by a monster with this ability, you must make a life force resistance roll against the indicated target score.
-
-### Technical frame 11: 13.6 Handling Monster Special Abilities / 《 Disease 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09845))_
-
-> Some monsters bring about disease. The spirit power of a monster is balanced differently than that of a human, and can always cause illness. However, in most cases the infection power of this information imbalance is weak, so it doesn't pose much of a problem, but if a character is bitten by a bat or rat, it's highly contagious, so there's a high chance he or she will become ill.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09846))_
-
-> When you're dealt damage by a monster with this ability, roll 2D and compare it with the progression intensity of each illness.
-
-### Technical frame 12: 13.6 Handling Monster Special Abilities / 《 Strangling 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09851))_
-
-> While being strangled, a character suffers a -4 penalty to evasion and is normally unable to make sound. Depending on the monster, the penalty may be smaller, or it might be possible to still make sound, but if this is the case it'll be specified in the description . Unless otherwise noted, the evasion penalty is 4 and magic is also considered not possible.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09850))_
-
-> If you succeed, you can break free, but if you fail, you'll automatically suffer damage at the end of the round.
-
-### Technical frame 13: 13.6 Handling Monster Special Abilities / 《 Capture 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09854))_
-
-> To escape, you must make the same check as for strangling .
-
-### Technical frame 14: 13.6 Handling Monster Special Abilities / 《 Entangling 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09857))_
-
-> The character must make a success roll using adventurer level + strength bonus as the baseline score in order to escape.
-
-### Technical frame 15: 13.6 Handling Monster Special Abilities / 《 Swallow Whole 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09859))_
-
-> A swallowed character can also attack from inside, if he or she has a dagger, shortsword, or similar small bladed weapon.
-
-### Technical frame 16: 13.6 Handling Monster Special Abilities / 《 Swallow Whole 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09859))_
-
-> Swallow a character whole, digesting them. A swallowed character cannot escape until the monster is dead. Thus, during this time he or she will continue to suffer the set amount of damage (which can only be reduced by adventurer level) each round. A swallowed character can also attack from inside, if he or she has a dagger, shortsword, or similar small bladed weapon. In this case, make a hit check with a penalty of attack power -4 , and if it hits, make a damage check as normal.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09860))_
-
-> If you make an attack from outside to rescue a character inside, and kill the monster, (the same amount of) damage will be dealt to the character inside.
-
-### Technical frame 17: 13.6 Handling Monster Special Abilities / 《 Acid 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09864))_
-
-> If it hits, you cannot make a resistance roll.
-
-### Technical frame 18: 13.6 Handling Monster Special Abilities / 《 Weapon Immunity 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09878))_
-
-> Attacks with weapons, no matter how powerful they are, or even if they're magical weapons, will have no effect at all. Even in combat between monsters, it' s not possible for monsters that only have attack methods similar to weapons, such as fangs or claws, etc. to fight against them.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09880))_
-
-> Normal weapons, no matter how powerful, cannot deal damage.
-
-### Technical frame 19: 13.6 Handling Monster Special Abilities / 《 Complete Immunity to Certain Weapons 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09882))_
-
-> Even in combat between monsters, if an opponent monster's attack method is equivalent to an ineffective weapon, it will not deal damage.
-
-### Technical frame 20: 13.6 Handling Monster Special Abilities / 《 Mental Attack Immunity 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09901))_
-
-> If they do not have mental points (expressed as -), magic that deals damage to mental points ( Shade , etc.) is likewise ineffective.
-
-### Technical frame 21: 13.6 Handling Monster Special Abilities / 《 Fire Immunity 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09909))_
-
-> If one of these monsters also has the ability normal weapon immunity , it cannot be wounded by a weapon that had Fire Weapon cast on it.
-
-### Technical frame 22: 13.6 Handling Monster Special Abilities / 《 Strong to Fire 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09911))_
-
-> Even if one of these monsters has the ability normal weapon immunity , it can still be wounded by a weapon that had Fire Weapon cast on it.
-
-### Technical frame 23: 13.6 Handling Monster Special Abilities / 《 Strong to Fire 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09911))_
-
-> Resistant to fire attacks, so for magic that deals damage with fire ( Fire Bolt and Fireball ), checks are made at -10 to strike power (the strike power bonus of Fire Weapon is completely ineffective). Even if one of these monsters has the ability normal weapon immunity , it can still be wounded by a weapon that had Fire Weapon cast on it. However, strike power will be 0.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09912))_
-
-> If you cast magic with a strike power of 10 on one of these monsters, such as Fire Bolt , and they resist it, you cannot make a strike roll and the damage dealt will only be magic power .
-
-### Technical frame 24: 13.6 Handling Monster Special Abilities / 《 Camouflage 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09927))_
-
-> If you fail, you'll suffer a surprise attack , with a -4 penalty to your evasion speed for one round, and you cannot counterattack or use magic.
-
-### Technical frame 25: 13.6 Handling Monster Special Abilities / 《 Web 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09935))_
-
-> If a character inadvertently steps into it, he or she must make a resistance roll using adventurer level + agility bonus as the baseline score, and if he or she fails they'll be caught in the web.
-
-### Technical frame 26: 13.6 Handling Monster Special Abilities / 《 Weak to Fire 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09946))_
-
-> In addition, for any other Weak to XX , checks against damage magic are made at +10 to strike power.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09945))_
-
-> In the case of Fire Bolt , make a strike power 20 damage check (10 if the monster successfully resists), and in the case of Fire Weapon , add a +20 strike power bonus to the weapon.
-
-### Technical frame 27: 13.6 Handling Monster Special Abilities / 《 Weak to Fire 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09946))_
-
-> In addition, for any other Weak to XX , checks against damage magic are made at +10 to strike power.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09947))_
-
-> [Figure] (p.239)

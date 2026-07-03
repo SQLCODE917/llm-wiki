@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-16-5-combat-options-ram-8f1880ff
 page_kind: source
 page_family: section-reference
-summary: 16.5 Combat Options / Ram: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 16.5 Combat Options / Ram: 9 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-5-combat-options-ram-8f1880ff@940525cc5a5e71fccb5f2347cb30da0a
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-5-combat-options-ram-8f1880ff@489d1c3e49c360f453f0540137af27ae
 ---
 
 # 16.5 Combat Options / Ram
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-16-5-comba
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-16-5-combat-options-891a5b60]] - broader source section: 16.5 Combat Options
 
@@ -25,15 +27,3 @@ From [[sword-world-rpg-complete-edition]].
 - If you use this optional rule, then if successfully hit by a monster whose attack method is ram , a character must determine whether he or she has fallen prone . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11514))_
 - This can only be performed with the fi ghter skill , it cannot be used with the thief skill . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11512))_
 - If you use this optional rule, then if successfully hit by a monster whose attack method is ram , a character must determine whether he or she has fallen prone . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11514))_
-
-## Technical atoms
-
-### Technical frame 1: 16.5 Combat Options / Ram
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11514))_
-
-> If you use this optional rule, then if successfully hit by a monster whose attack method is ram , a character must determine whether he or she has fallen prone .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11512))_
-
-> At the same time, the opponent must determine whether he or she fell prone .

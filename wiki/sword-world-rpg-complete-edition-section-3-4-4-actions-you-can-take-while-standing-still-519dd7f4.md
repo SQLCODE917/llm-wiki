@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-519dd7f4
 page_kind: source
 page_family: section-reference
-summary: 3.4.4 Actions You Can Take While Standing Still: 96 source-backed entries and 20 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 3.4.4 Actions You Can Take While Standing Still: 96 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-519dd7f4@afdd9908e1a75640aeb85b9bfe8de696
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-519dd7f4@825fd83e0b95dfd929eccda5aa25458c
 ---
 
 # 3.4.4 Actions You Can Take While Standing Still
@@ -17,18 +17,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-use-magic-and-projectiles-b60f9249]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / Use Magic and Projectiles
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-d9d2f676]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-fighter-skill-9b509a7e]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / 【 Fighter Skill 】
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-thief-skill-311f79df]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / 【 Thief Skill 】
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-ranger-skill-e2cd921c]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-attack-power-9f22a241]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / 【 Attack Power 】
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-strike-power-43741924]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / 【 Strike Power 】
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-bonus-damage-da6ab1ae]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-critical-target-1394a3c4]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / 【 Critical Target 】
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-evasion-speed-0cb5b546]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / 【 Evasion Speed 】
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-defense-power-a29968e1]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / 【 Defense Power 】
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-damage-reduction-d28d54d3]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / 【 Damage Reduction 】
+- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-defense-power-a29968e1]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / 【 Defense Power 】
+- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-evasion-speed-0cb5b546]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / 【 Evasion Speed 】
+- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-fighter-skill-9b509a7e]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / 【 Fighter Skill 】
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-filling-out-the-character-sheet-33788635]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet
 
 ## Statements
@@ -145,25 +142,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 3.4.4 Actions You Can Take While Standing Still / Use Magic and Projectiles
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01398))_
-
-> If you want to attack with a projectile, please follow the process of actions you can take during normal movement . If you chose stand still , then attack with that weapon can be read as attack with that projectile . However, when you're engaged (being attacked by a melee weapon), you cannot use projectiles.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01397))_
-
-> Conversely, if you are not standing still , you cannot use magic or projectiles.
-
-### Technical frame 2: 3.4.4 Actions You Can Take While Standing Still / Use Magic and Projectiles
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01397))_
 
 > Above all, the advantage of standing still is the ability to use magic and attack with projectiles. Conversely, if you are not standing still , you cannot use magic or projectiles.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01398))_
 
+<a id="atom-technical-atom-b75d156b879526c1"></a>
+
 > If you want to attack with a projectile, please follow the process of actions you can take during normal movement .
 
-### Technical frame 3: 3.4.4 Actions You Can Take While Standing Still / Use Magic and Projectiles
+### Technical frame 2: 3.4.4 Actions You Can Take While Standing Still / Use Magic and Projectiles
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01398))_
 
@@ -171,178 +160,30 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01399))_
 
+<a id="atom-technical-atom-c55dab54de903ee3"></a>
+
 > If you choose to stand still , in addition to magic and projectiles, you can also take the following special action:
 
-### Technical frame 4: 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself
+### Technical atom 3
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01401))_
-
-> From a state of falling down, stand up and ready yourself. You can only ready one weapon, etc. that you're wearing. You cannot pick up any items on the ground.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01405))_
-
-> [Figure] (p.39)
-
-### Technical frame 5: 3.4.4 Actions You Can Take While Standing Still / 【 Thief Skill 】
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01420))_
-
-> Specifically, you can only fight if the weapon or armor you're using requires up to half (rounded up) of your character's strength.
-
-### Technical frame 6: 3.4.4 Actions You Can Take While Standing Still / 【 Thief Skill 】 / Projectile Restrictions
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01427))_
-
-> Again, movement is also restricted when using projectiles. A character must choose stand still as their movement weapon + shield + armor or two-handed weapon + armor. Of course, one-handed weapon + armor, two-handed weapon without armor, etc. are also possible, and it is acceptable to carry a spare weapon on your waist or back, as long as it is within the bounds of common sense. However, you may not hold two weapons in both hands or hold a shield in each hand-- it is fine to do so, but a shield 
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01426))_
-
-> When there's an enemy in front of you, you can never use a projectile marked shooting or made for throwing .
-
-### Technical frame 7: 3.4.4 Actions You Can Take While Standing Still / 【 Thief Skill 】 / Projectile Restrictions
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01426))_
-
-> In addition, projectiles cannot be used in melee. When there's an enemy in front of you, you can never use a projectile marked shooting or made for throwing . Weapons marked as throwable can also be used as melee weapons, but not as projectiles.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01427))_
-
-> A character must choose stand still as their movement weapon + shield + armor or two-handed weapon + armor.
-
-### Technical frame 8: 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01430))_
-
-> The ranger skill cannot be used for defense.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01429))_
-
-> Weapons that can be used for both melee and throwing, as indicated by throwable on the Weapons table, are useful only when used for throwing, not for melee.
-
-### Technical frame 9: 3.4.4 Actions You Can Take While Standing Still / 【 Attack Power 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01441))_
-
-> If fighter (or thief, ranger) skill level is 0 , then attack power is 0 regardless of the character's dexterity bonus.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01440))_
-
-> attack power = fighter (thief/ranger) skill level + dexterity bonus
-
-### Technical frame 10: 3.4.4 Actions You Can Take While Standing Still / 【 Strike Power 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01444))_
-
-> Strike power is the same number as the required strength of the weapon used. However, if the weapon is a two-handed weapon, it's instead required strength + 5 .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01445))_
-
-> strike power = required strength of weapon (+5 if a two-handed weapon)
-
-### Technical frame 11: 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01451))_
-
-> If fighter (or thief, ranger) skill level is 0 , bonus damage is 0 regardless of the character's strength bonus.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01448))_
-
-> These characters can deal more damage to their foes, even when using the same sized weapon.
-
-### Technical frame 12: 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01451))_
-
-> If fighter (or thief, ranger) skill level is 0 , bonus damage is 0 regardless of the character's strength bonus.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01450))_
-
-> bonus damage = fighter (thief/ranger) skill level + strength bonus
-
-### Technical frame 13: 3.4.4 Actions You Can Take While Standing Still / 【 Critical Target 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01454))_
-
-> In Sword World RPG , this is resolved with a process called a critical . The critical target is the number needed to determine whether a critical occurs.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01453))_
-
-> If a weapon hits, it'll sometimes deal more damage than normal.
-
-### Technical frame 14: 3.4.4 Actions You Can Take While Standing Still / 【 Critical Target 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01456))_
-
-> The critical target is a lower is better score, which is rare in Sword World RPG . Therefore, an attack using the thief skill is more likely to result in a critical than an attack using the regular fighter skill.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01457))_
-
-> critical target = 10 (9 if using thief skill)
-
-### Technical frame 15: 3.4.4 Actions You Can Take While Standing Still / 【 Defense Power 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01466))_
-
-> Defense power is the same number as the required strength of the armor worn by the character.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01465))_
-
-> If by a stroke of bad luck, an opponent's attack hits, a character can still reduce the damage by means of armor.
-
-### Technical frame 16: 3.4.4 Actions You Can Take While Standing Still / 【 Defense Power 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01468))_
-
-> If a character is not wearing any armor (just clothes or nothing at all), then defense power is 0 .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01467))_
-
-> defense power = required strength of armor
-
-### Technical frame 17: 3.4.4 Actions You Can Take While Standing Still / 【 Damage Reduction 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01471))_
-
-> Damage reduction is a score that reduces the damage a character would have taken. It' s exactly equal to a character's adventurer level.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01472))_
-
-> damage reduction = adventurer level
-
-### Technical frame 18: 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01477))_
-
-> These procedures differ when the attacker and defender are character against monster , monster against character , or character against character . There is one other case, monster against monster , but since only the game master should know how to handle this case, we won't explain it here.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01478))_
-
-> [Figure] (p.42)
-
-### Technical frame 19: 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet / Attacks From Characters Against Monsters
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01481))_
-
-> [Figure] (p.43)
-
-### Technical atom 20
+<a id="atom-technical-atom-b666f073a3eee7a6"></a>
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01409))_
 
-| entry | content |
-| --- | --- |
-| 4 | 1 Weapon and Armor Restrictions A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword... All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters may not use weapons or armor with a required strength greater than their own strength. |
-| 4 | 2 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 Weapon and Armor Restrictions
 4.1 Weapon and Armor Restrictions
 A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword...
 All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters  may  not  use  weapons  or armor  with  a  required  strength  greater than their own strength.
 4.2
 ```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
+| entry | content |
+| --- | --- |
+| 4 | 1 Weapon and Armor Restrictions A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword... All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters may not use weapons or armor with a required strength greater than their own strength. |
+| 4 | 2 |
 
 </details>

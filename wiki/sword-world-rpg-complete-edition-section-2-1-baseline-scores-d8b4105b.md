@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-2-1-baseline-scores-d8b4105b
 page_kind: source
 page_family: section-reference
-summary: 2.1 Baseline Scores: 28 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 2.1 Baseline Scores: 28 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-1-baseline-scores-d8b4105b@f249154a8bac6685bda930bf5d829361
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-1-baseline-scores-d8b4105b@6fdcdd78b0f2f8641fac623579add661
 ---
 
 # 2.1 Baseline Scores
@@ -17,8 +17,10 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-2-1-baseline-scores-target-scores-ebc660b1]] - narrower source section: 2.1 Baseline Scores / Target Scores
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-2-1-baseline-scores-checks-f64ba73a]] - narrower source section: 2.1 Baseline Scores / Checks
+- [[sword-world-rpg-complete-edition-section-2-1-baseline-scores-target-scores-ebc660b1]] - narrower source section: 2.1 Baseline Scores / Target Scores
 
 ## Statements
 
@@ -50,17 +52,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical frame 1: 2.1 Baseline Scores
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01169))_
-
-> Fighter is only useful in combat. The sorcerer, shaman, and priest rune master skills are also of little use for anything other than casting magic.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01167))_
-
-> 2+2= 4
-
-### Technical frame 2: 2.1 Baseline Scores / Target Scores
+### Technical frame 1: 2.1 Baseline Scores / Target Scores
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01173))_
 
@@ -68,9 +60,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01174))_
 
+<a id="atom-technical-atom-82338d3a60a6722b"></a>
+
 > The player must roll two dice and add their baseline score to the roll.
 
-### Technical frame 3: 2.1 Baseline Scores / Target Scores
+### Technical frame 2: 2.1 Baseline Scores / Target Scores
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01174))_
 
@@ -78,9 +72,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01175))_
 
+<a id="atom-technical-atom-9edfcd249be16d10"></a>
+
 > final score (baseline score + 2D) ≥ target score → action is successful
 
-### Technical frame 4: 2.1 Baseline Scores / Checks
+### Technical frame 3: 2.1 Baseline Scores / Checks
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01185))_
 
@@ -88,22 +84,17 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01184))_
 
+<a id="atom-technical-atom-e8b1bd1277e91fb7"></a>
+
 > If the roll is 6 or greater, it's a hit , and if the roll is 5 or lower, it's a miss .
 
-### Technical atom 5
+### Technical atom 4
+
+<a id="atom-technical-atom-aa01a40a13c67997"></a>
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01163))_
 
-| A baseline | score is | a | number | that indicates | how | competent | or | skilled | a character is at a given activity. |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| skill | level , | and | their | dexterity | bonus | is used for ability bonus . |  |  |  |
-| For | example, | if | you | want | to | hit | an enemy with your sword, it is important to | have | dexterity |
-| For | example, | if | the | player | wields | a sword, their fighter skill level is used for |  |  |  |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 Baseline Scores
 2.1 Baseline Scores
 A baseline  score is  a  number  that indicates  how  competent  or  skilled  a character is at a given activity.
@@ -115,9 +106,20 @@ For  example,  if  the  player  wields  a sword, their fighter skill level is us
 2.2
 ```
 
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
+| A baseline | score is | a | number | that indicates | how | competent | or | skilled | a character is at a given activity. |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| skill | level, | and | their | dexterity | bonus | is used for ability bonus. |  |  |  |
+| For | example, | if | you | want | to | hit | an enemy with your sword, it is important to | have | dexterity |
+| For | example, | if | the | player | wields | a sword, their fighter skill level is used for |  |  |  |
+
 </details>
 
-### Technical atom 6
+### Technical atom 5
+
+<a id="atom-technical-atom-ab934f07c44ab749"></a>
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01174))_
 
@@ -125,21 +127,21 @@ For  example,  if  the  player  wields  a sword, their fighter skill level is us
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01172))_
 
-| entry | content |
-| --- | --- |
-| 2 | 2 Target Scores The baseline score is a number that represents a character's ability. However, the success of an action is not only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned warrior, than when he is an amateur with no fighting experience. |
-| 2 | 3 |
-| 2 | 3 Checks |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 Target Scores
 2.2 Target Scores
 The baseline score is  a number that represents a character's ability. However, the  success  of  an  action  is  not  only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned  warrior,  than  when  he  is  an amateur with no fighting experience.
 2.3
 2.3 Checks
 ```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
+| entry | content |
+| --- | --- |
+| 2 | 2 Target Scores The baseline score is a number that represents a character's ability. However, the success of an action is not only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned warrior, than when he is an amateur with no fighting experience. |
+| 2 | 3 |
+| 2 | 3 Checks |
 
 </details>

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-9-6031114c
 page_kind: source
 page_family: section-reference
-summary: Chapter 9:: 100 source-backed entries and 19 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 9:: 100 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-9-6031114c@d323d3799a3ec4d43166c8278adff645
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-9-6031114c@709d0d6d9dcf3100d28eef3e4cbe9808
 ---
 
 # Chapter 9:
@@ -17,9 +17,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-9-setting-target-scores-and-difficulties-ae9c232d]] - narrower source section: Chapter 9: / Setting Target Scores and Difficulties
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-9-9-3-general-modifiers-d8d72628]] - narrower source section: Chapter 9: / 9.3 General Modifiers
 - [[sword-world-rpg-complete-edition-section-chapter-9-9-4-automatic-success-restrictions-c551036d]] - narrower source section: Chapter 9: / 9.4 Automatic Success Restrictions
+- [[sword-world-rpg-complete-edition-section-chapter-9-setting-target-scores-and-difficulties-ae9c232d]] - narrower source section: Chapter 9: / Setting Target Scores and Difficulties
 
 ## Statements by subsection
 
@@ -92,159 +94,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical frame 1: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05545))_
-
-> This table is written in a somewhat abstract format to accommodate all success rolls. As a game master, don't think too much about it, trust your own judgment and intuition when deciding on the target score or difficulty. It's not a good idea in an RPG to worry about situations like this and stall the game.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05543, source-range-0b9dec90-05544))_
-
-> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
-
-> Table 9-1: Determining Target Scores or Difficulties
-
-### Technical frame 2: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05560))_
-
-> If you have the skill, there is a high probability of success. For amateurs, the risk of failure is greater.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05557))_
-
-> If you have the skill, you can expect success.
-
-### Technical frame 3: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05560))_
-
-> If you have the skill, there is a high probability of success. For amateurs, the risk of failure is greater.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05557))_
-
-> If you have the skill, you can expect success. For amateurs, it's 50-50.
-
-### Technical frame 4: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05569))_
-
-> If you're a pro in that field, you'll most likely succeed, but if you only have the skill, there's a greater risk of failure.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05566))_
-
-> It's 50-50 if you have the skill. Success is not guaranteed to amateurs.
-
-### Technical frame 5: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05576))_
-
-> It's possible with a little luck if you're someone who's only dabbled. Even pros can fail due to a little bad luck.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05573))_
-
-> If you're a pro in that field, you can expect success, but you should expect to fail if you're just dabbling.
-
-### Technical frame 6: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05585))_
-
-> Even if you're a master, there is no guarantee that you'll succeed.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05582))_
-
-> If you're a master, you'll never fail, but if you're a pro, success is 50-50.
-
-### Technical frame 7: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05585))_
-
-> Even if you're a master, there is no guarantee that you'll succeed.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05582))_
-
-> If you're a master, you'll never fail, but if you're a pro, success is 50-50.
-
-### Technical frame 8: Chapter 9: / Setting Target Scores and Difficulties
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05600))_
-
-> Even if you're a master, the probability of failure is high.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05597))_
-
-> 50-50 for masters. Otherwise, it's best not to touch it at all.
-
-### Technical frame 9: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05609))_
-
-> An example of something where success or failure cannot be determined is finding a trap. When a trap is not found, a character has no way of knowing whether there really are no traps or if it's because they couldn't find it. The same goes for when you're sneaking up on a sleeping monster. Even though it looks like it's a success, the monster may actually be pretending to be asleep.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05608))_
-
-> The standard for deciding is whether the character can tell if the action succeeded or failed .
-
-### Technical frame 10: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05614))_
-
-> However, this is not possible without knowing the difficulty.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05613))_
-
-> If the difficulty is clear, let's say it's 3, players can infer that they can only fail when the game master rolls an 11 or 12.
-
-### Technical frame 11: Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05617))_
-
-> That alone will make players wary. In such cases, it is better to keep the difficulty low. A technique for creating scenarios is to keep the difficulty consistent for success rolls that are likely to be made frequently in one scenario, such as finding traps.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05616))_
-
-> The time when you should not reveal the difficulty is when revealing the difficulty itself would indicate that something is wrong .
-
-### Technical frame 12: Chapter 9: / 9.3 General Modifiers
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05625))_
-
-> In this case, instead of the game master looking at the Determining Target Scores or Difficulties table for each , it's easier to deal with it by setting one target score, assuming there is complete light, and applying -4 to the human because they can't see, -2 to the elf (shaman) because they can use infravision, and no modifier to the dwarf because they have full darkvision. Also, since the modifiers are reflected in the final score, the advantage is that you can also see who did the best sear
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05626))_
-
-> In Sword World RPG , the only guidelines for general success roll modifiers are as follows (Table 9-2: Success Roll Modifiers).
-
-### Technical frame 13: Chapter 9: / 9.4 Automatic Success Restrictions
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05634))_
-
-> Modifiers are applied to the final score of a success roll. Therefore, the greater the negative number, the more difficult it is.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05633))_
-
-> Of course, even if that's the case, stay true to the roll of your dice.
-
-### Technical frame 14: Chapter 9: / 9.4 Automatic Success Restrictions
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05643))_
-
-> farther, but 20 meters is still a ridiculous number. Game masters should not allow a success roll itself for such actions.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05635))_
-
-> Of course, game masters may set other modifiers (such as -3) at their discretion.
-
-### Technical frame 15: Chapter 9: / 9.4 Automatic Success Restrictions
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05643))_
-
-> farther, but 20 meters is still a ridiculous number. Game masters should not allow a success roll itself for such actions.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05636))_
-
-> Table 9-2: Success Roll Modifiers
-
-### Technical frame 16: Chapter 9: / 9.4 Automatic Success Restrictions
+### Technical frame 1: Chapter 9: / 9.4 Automatic Success Restrictions
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05644))_
 
@@ -252,48 +102,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05648))_
 
+<a id="atom-technical-atom-508688d4afff2d96"></a>
+
 > [Figure] (p.137)
-
-### Technical atom 17
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01344))_
-
-| entry | content |
-| --- | --- |
-| 3 | 4 Movement and Actions |
-| 1 | round lasts 10 seconds . Therefore, a character can also move during this time. However, when movement is made, actions are restricted. You cannot wield weapons or cast spells while running at full speed. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Movement and Actions
-3.4 Movement and Actions
-1 round lasts 10 seconds . Therefore, a character can also move during this time. However,  when movement is made, actions are restricted. You cannot wield weapons or cast spells while running at full speed.
-```
-
-</details>
-
-### Technical atom 18
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04906))_
-
-| entry | content |
-| --- | --- |
-| 6 | 1 Precautions When Using Skills The abilities associated with these skills, including the thief skill , are mostly determined by success rolls. If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target |
-| 6 | 2 |
-| 6 | 2 Thief Skill |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Precautions When Using Skills
-6.1 Precautions When Using Skills
-The  abilities  associated  with  these skills, including the thief skill , are mostly determined by success rolls.
-If the rules for determining the target score  or  difficulty  are  clearly  indicated, the  game  master  should  follow  those rules,  otherwise  the  game  master  must follow the rules under 9.1: Setting Target
-6.2
-6.2 Thief Skill
-```
-
-</details>

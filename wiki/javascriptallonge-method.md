@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-method
 page_kind: concept
-summary: Method: 10 statement(s) and 12 atom(s) from raw/javascriptallonge.pdf.
+page_family: topic-concept
+summary: Method: 9 statement(s) and 12 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-method@cda6840ada1c03cb17ce142d910139b2
+projection_coverage: topic-javascriptallonge-method@53e55dda71b8d88786425fcb1eeed180
 ---
 
 # Method
@@ -39,8 +40,6 @@ What [[javascriptallonge]] covers about method:
 
 ### We'll keep it simple: / Lazy and Eager Collections
 
-- Composing an iterable with a mapIterable method cleaves the responsibility for knowing how to map from the fiddly bits of how a linked list differs from a stack _(javascriptallonge.pdf (source-range-7239e085-01763))_
-
 - Over time, this informal 'interface' for collections grows by accretion. Some methods are only added to a few collections, some are added to all. But our objects grow fatter and fatter. We tell ourselves that, well, a collection ought to know how to map itself. _(javascriptallonge.pdf (source-range-7239e085-01765))_
 
 ### We'll keep it simple: / Lazy and Eager Collections / implementing methods with iteration
@@ -57,6 +56,8 @@ What [[javascriptallonge]] covers about method:
 > Is there a better way? Yes. In fact, there are several better ways. Making algorithms faster is a very highly studied field of computer science. The one we're going to look at here is called tail-call optimization , or 'TCO.'
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00965))_
+
+<a id="atom-technical-atom-56fe446a000943ef"></a>
 
 ```
 mapWith((x) => x * x, [
@@ -110,6 +111,8 @@ mapWith((x) => x * x, [
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01471))_
 
+<a id="atom-technical-atom-05c3cf12d69dbffc"></a>
+
 ```
 const flipAndCurry = (fn) =>
 (first) =>
@@ -140,6 +143,8 @@ return fn.call(this, second, first);
 > The for...of loop works directly with any object that is iterable , meaning it works with any object that has a Symbol.iterator method that returns an object iterator. Here's another linked list, this one is iterable:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01560))_
+
+<a id="atom-technical-atom-47f6d9ee5b266831"></a>
 
 ```
 const Stack3 = () =>
@@ -188,6 +193,8 @@ const stack = Stack3();
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01561))_
 
+<a id="atom-technical-atom-1433f8f324b5f87c"></a>
+
 ```
 stack.push(2000);
 stack.push(10);
@@ -224,6 +231,8 @@ iterableSum(stack)
 > As we can see, we can use for...of with linked lists just as easily as with stacks. And there's one more thing: You recall that the spread operator ( ... ) can spread the elements of an array in an array literal or as parameters in a function invocation.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01563))_
+
+<a id="atom-technical-atom-8e85f2ecd1e2c116"></a>
 
 ```
 const EMPTY = {
@@ -270,6 +279,8 @@ iterableSum(someSquares)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01627))_
 
+<a id="atom-technical-atom-c448193e912cee6f"></a>
+
 > Iterators have to arrange its own state such that when you call them, they compute and return the next item.
 
 ### Technical frame 7: We'll keep it simple: / Lazy and Eager Collections / lazy collection operations
@@ -279,6 +290,8 @@ iterableSum(someSquares)
 > This expression begins with a stack containing 30 elements. The top two are 29 and 28 . It maps to the squares of all 30 numbers, but our code for mapping an iteration returns an iterable that can iterate over the squares of our numbers, not an array or stack of the squares. Same with .filter , we get an iterable that can iterate over the even squares, but not an actual stack or array.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01790))_
+
+<a id="atom-technical-atom-e10108dd925b5dd3"></a>
 
 ```
 Stack.from([ 0,
@@ -306,6 +319,8 @@ Stack.from([ 0,
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01803))_
 
+<a id="atom-technical-atom-260d903a41c4e031"></a>
+
 ```
 const extend = function (consumer, ...providers) {
 for (let i = 0; i < providers.length; ++i) {
@@ -327,6 +342,8 @@ return consumer
 > Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01804))_
+
+<a id="atom-technical-atom-a84a9a6634bcef5c"></a>
 
 ```
 const EagerCollection = (gatherable) =>
@@ -375,6 +392,8 @@ until(fn) {
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01805))_
 
+<a id="atom-technical-atom-42f03cd992a4e79f"></a>
+
 ```
 const original = this;
 return gatherable.from(
@@ -422,6 +441,8 @@ yield element;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01807))_
 
+<a id="atom-technical-atom-6e8c82aa1db29bdf"></a>
+
 ```
 const EMPTY = {
 isEmpty: () => true
@@ -465,6 +486,8 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01808))_
 
+<a id="atom-technical-atom-2b2f858d8e7ab9b6"></a>
+
 ```
 {"car": 2,
 "cdr": {"car": 4,
@@ -482,19 +505,19 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 
 ## Related pages
 
+### Shared technical atoms
+
 - [[javascriptallonge-iterator]] - shared statements and technical atoms: Iterator shares source evidence from Like this:: Now our .iterator() method is returning an iterator object. When working with objects, we do things the object way. But having started by building functional iterato ... [truncated]; Iterator shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (3 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-object]] - shared statements and technical atoms: Object shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Object shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-symbol]] - shared statements and technical atoms: Symbol shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Symbol shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-expression]] - shared statements and technical atoms: Expression shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Expression shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Like this: / Generating Iterables: Let's consider how they work. Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly unt ... [truncated]; Function shares technical record from Like this: / Generating Iterables: Iterators have to arrange its own state such that when you call them, they compute and return the next item. (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-functional]] - shared statements and technical atoms: Functional shares source evidence from Like this: / Generating Iterables: Let's consider how they work. Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly unt ... [truncated]; Functional shares technical record from Like this: / Generating Iterables: Iterators have to arrange its own state such that when you call them, they compute and return the next item. (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-learn]] - shared statements and technical atoms: Learn shares source evidence from Recipes with Data / Flip / flipping methods: When we learn about context and methods, we'll see that flip throws the current context away, so it can't be used to flip methods. A small alteration gets the job done:; Learn shares technical record from Recipes with Data / Flip / flipping methods: const flipAndCurry = (fn) => (first) => function (second) { return fn.call(this, second, first); } const flip = (fn) => function (first, second) { return fn.call(thi ... [truncated] (1 shared statement(s), 1 shared atom(s))
 - [[javascriptallonge-collection]] - shared technical atoms: Collection shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const extend = function (consumer, ...providers) { for (let i = 0; i < providers.length; ++i) { const provider = providers[i]; for (let key in provider) { if (provid ... [truncated] (5 shared atom(s))
-- [[javascriptallonge-eager-collection]] - shared technical atoms: Eager Collection shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const extend = function (consumer, ...providers) { for (let i = 0; i < providers.length; ++i) { const provider = providers[i]; for (let key in provider) { if (provid ... [truncated] (5 shared atom(s))
+- [[javascriptallonge-object]] - shared statements and technical atoms: Object shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Object shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared statement(s), 4 shared atom(s))
 - [[javascriptallonge-pair]] - shared technical atoms: Pair shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const EagerCollection = (gatherable) => ({ map(fn) { const original = this; return gatherable.from( (function* () { for (let element of original) { yield fn(element) ... [truncated] (4 shared atom(s))
+- [[javascriptallonge-symbol]] - shared statements and technical atoms: Symbol shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Symbol shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-eager-collection]] - shared technical atoms: Eager Collection shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const extend = function (consumer, ...providers) { for (let i = 0; i < providers.length; ++i) { const provider = providers[i]; for (let key in provider) { if (provid ... [truncated] (3 shared atom(s))
+- [[javascriptallonge-expression]] - shared statements and technical atoms: Expression shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Expression shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 2 shared atom(s))
 - [[javascriptallonge-instead]] - shared technical atoms: Instead shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-element]] - shared technical atoms: Element shares technical record from We'll keep it simple: / Lazy and Eager Collections / lazy collection operations: Stack.from([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]) .map((x) => x * x) .filter((x) => x % 2 == 0) .first() (1 shared atom(s))
-- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from We'll keep it simple: / Lazy and Eager Collections / lazy collection operations: Stack.from([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]) .map((x) => x * x) .filter((x) => x % 2 == 0) .first() (1 shared atom(s))
+
+### Shared claims
+
 - [[javascriptallonge-evaluate]] - shared statements: Evaluate shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object. (1 shared statement(s))
 - [[javascriptallonge-functional-iterator]] - shared statements: Functional Iterators shares source evidence from Like this: / Generating Iterables: Let's consider how they work. Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly unt ... [truncated] (1 shared statement(s))
 

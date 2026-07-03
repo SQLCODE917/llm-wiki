@@ -4,10 +4,10 @@ page_kind: concept
 page_family: broad-topic
 summary: Ability Scores: 61 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-ability-score@35994c9c0a0d38743f76e6b7dca490d8
+projection_coverage: topic-sword-world-rpg-complete-edition-ability-score@8963534f60273ab5255f73c256f30ebd
 ---
 
 # Ability Scores
@@ -17,7 +17,13 @@ What [[sword-world-rpg-complete-edition]] covers about ability scores:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-loss-ability-score]] - narrower topic: Loss Ability Score shares source evidence from Loss of Ability Scores and Its Impact: While adventuring, adventurers often suffer physical and mental injuries and fatigue. In Sword World RPG , this is represented by a loss of life force and mental pow ... [truncated] (1 shared statement(s))
+### Source structure
+
+- [[sword-world-rpg-complete-edition-section-8-game-master-screen-ability-scores-84e85573]] - source section: 8. Game Master Screen / Ability Scores shares source evidence from 8. Game Master Screen / Ability Scores: Just as there are many different kinds of people in the real world, strong (or weak), smart (or dumb), etc., there are many different kinds of people in Forcelia. In ... [truncated] (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-ability-scores-6613349a]] - source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ④ Ability Scores ] shares source evidence from 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ④ Ability Scores ]: Once sub-ability scores are determined, ability scores are calculated by addition. Please calculate and write down the six ability scores. (1 shared statement(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-ability-bonuse]] - shared statements: 【 Ability Bonuses 】 shares source evidence from 【 Ability Bonuses 】: An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in Sword World RPG , success or failure is determin ... [truncated] (6 shared statement(s))
 - [[sword-world-rpg-complete-edition-target-score]] - shared statements: Target Scores shares source evidence from Chapter 9: / Setting Target Scores and Difficulties: To make a success roll, you must decide on the skill to be used , the relevant ability score , and the target score or difficulty . Of these, skill and ability score ... [truncated] (6 shared statement(s))
 - [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements: 1.4.9 Filling Out the Character Sheet shares source evidence from 1.4 Character Creation / 1.4.2 Determine Ability Scores: Once the ability scores have been determined, also find the ability bonuses and write them down on the Character Sheet. (5 shared statement(s))
@@ -26,9 +32,10 @@ What [[sword-world-rpg-complete-edition]] covers about ability scores:
 - [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from 13.2.6 Mythical Beasts and Magical Beasts / [ Wyvern ]: Monster Level=7 Rarity=10 Agility=18 Movement Speed=8/35 (air) Number=One Frequency=Rare Intellect=Animal Reaction=Neutral Attack Points=Fangs:14 (7)/Talon:15 (8)/ T ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-difficulty]] - shared statements: Difficulty shares source evidence from Chapter 9: / Setting Target Scores and Difficulties: To make a success roll, you must decide on the skill to be used , the relevant ability score , and the target score or difficulty . Of these, skill and ability score ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-sage-skill]] - shared statements: Sage Skill shares source evidence from Chapter 14: / 14.4 Magical Item List / 《 Rarity 》: This score is the target score for a success roll when using the sage skill's treasure appraisal ability. If the success roll results in a final score greater than o ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-setting-target-score]] - shared statements: Setting Target Score shares source evidence from Chapter 9: / Setting Target Scores and Difficulties: To make a success roll, you must decide on the skill to be used , the relevant ability score , and the target score or difficulty . Of these, skill and ability score ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-8-game-master-screen-ability-scores-84e85573]] - source section: 8. Game Master Screen / Ability Scores shares source evidence from 8. Game Master Screen / Ability Scores: Just as there are many different kinds of people in the real world, strong (or weak), smart (or dumb), etc., there are many different kinds of people in Forcelia. In ... [truncated] (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-ability-scores-6613349a]] - source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ④ Ability Scores ] shares source evidence from 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ④ Ability Scores ]: Once sub-ability scores are determined, ability scores are calculated by addition. Please calculate and write down the six ability scores. (1 shared statement(s))
+
+### Topics
+
+- [[sword-world-rpg-complete-edition-loss-ability-score]] - narrower topic: Loss Ability Score shares source evidence from Loss of Ability Scores and Its Impact: While adventuring, adventurers often suffer physical and mental injuries and fatigue. In Sword World RPG , this is represented by a loss of life force and mental pow ... [truncated] (1 shared statement(s))
 ## Statements by source section
 
 ### 8. Game Master Screen / Ability Scores
@@ -151,6 +158,8 @@ What [[sword-world-rpg-complete-edition]] covers about ability scores:
 > A character's six ability scores are each the totals of two of these eight subability scores.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00325))_
+
+<a id="atom-technical-atom-d192d7d516d65eef"></a>
 
 > Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
 

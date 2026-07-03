@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-important
 page_kind: concept
+page_family: topic-concept
 summary: Important: 5 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-important@0f2ebfff2ea5ee7d882d632cbb0cb8fe
+projection_coverage: topic-javascriptallonge-important@317b25566c88f8224a67dfc1373c0357
 ---
 
 # Important
@@ -44,6 +45,8 @@ What [[javascriptallonge]] covers about important:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00421))_
 
+<a id="atom-technical-atom-96b703ac20909c60"></a>
+
 ```
 (diameter) => {
 const PI = 3.14159265;
@@ -59,6 +62,8 @@ return diameter * PI
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00601))_
 
+<a id="atom-technical-atom-330729474fe641db"></a>
+
 ```
 const safeSquareAll = mapWith(maybe((n) => n * n));
 ```
@@ -71,6 +76,8 @@ const safeSquareAll = mapWith(maybe((n) => n * n));
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00602))_
 
+<a id="atom-technical-atom-10a4f14311565237"></a>
+
 ```
 safeSquareAll([1, null, 2, 3])
 //=> [1, null, 4, 9]
@@ -79,10 +86,15 @@ safeSquareAll([1, null, 2, 3])
 
 ## Related pages
 
+### Shared technical atoms
+
 - [[javascriptallonge-partial-application]] - shared statements and technical atoms: partial application shares source evidence from And also: / Building Blocks / partial application: We'll discuss mapWith again. The important thing to see is that partial application is orthogonal to composition, and that they both work together nicely:; partial application shares technical record from And also: / Building Blocks / partial application: const safeSquareAll = mapWith(maybe((n) => n * n)); (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-learn]] - shared statements and technical atoms: Learn shares source evidence from And also: / That Constant Coffee Craving / const: JavaScript gives us a way to do that, the const keyword. We'll learn a lot more about const in future chapters, but here's the most important thing we can do with const :; Learn shares technical record from And also: / That Constant Coffee Craving / const: (diameter) => { const PI = 3.14159265; return diameter * PI } (1 shared statement(s), 1 shared atom(s))
 - [[javascriptallonge-mapwith]] - shared technical atoms: Mapwith shares technical record from And also: / Building Blocks / partial application: const safeSquareAll = mapWith(maybe((n) => n * n)); (2 shared atom(s))
+- [[javascriptallonge-learn]] - shared statements and technical atoms: Learn shares source evidence from And also: / That Constant Coffee Craving / const: JavaScript gives us a way to do that, the const keyword. We'll learn a lot more about const in future chapters, but here's the most important thing we can do with const :; Learn shares technical record from And also: / That Constant Coffee Craving / const: (diameter) => { const PI = 3.14159265; return diameter * PI } (1 shared statement(s), 1 shared atom(s))
 - [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from And also: / That Constant Coffee Craving / const: (diameter) => { const PI = 3.14159265; return diameter * PI } (1 shared atom(s))
+
+### Shared claims
+
 - [[javascriptallonge-element]] - shared statements: Element shares source evidence from Composing and Decomposing Data / Self-Similarity / linear recursion: Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and com ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-function]] - shared statements: Function shares source evidence from And also: / That Constant Coffee Craving / const: Amazing how such an important idea-naming functions-can be explained en passant in just a few words. That emphasizes one of the things JavaScript gets really, really ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-idea]] - shared statements: Idea shares source evidence from And also: / That Constant Coffee Craving / const: Amazing how such an important idea-naming functions-can be explained en passant in just a few words. That emphasizes one of the things JavaScript gets really, really ... [truncated] (1 shared statement(s))

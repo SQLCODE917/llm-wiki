@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-yes-consider-this-variation-copy-on-write-a-few-utilities-cdb2bac1
 page_kind: source
+page_family: section-reference
 summary: Yes. Consider this variation: / Copy on Write / a few utilities: 3 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-yes-consider-this-variation-copy-on-write-a-few-utilities-cdb2bac1@9a60934fa51588610a535227c5532a9c
+projection_coverage: section-javascriptallonge-section-yes-consider-this-variation-copy-on-write-a-few-utilities-cdb2bac1@77c9174105010bc3001cb20f055acf78
 ---
 
 # Yes. Consider this variation: / Copy on Write / a few utilities
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-yes-consider-this-variati
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-yes-consider-this-variation-copy-on-write-c844813d]] - broader source section: Yes. Consider this variation: / Copy on Write
 
@@ -31,6 +34,8 @@ From [[javascriptallonge]].
 > Our new at and set functions behave similarly to array[index] and array[index] = value . The main difference is that array[index] = value evaluates to value , while set(index, value, list) evaluates to the modified list .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01235))_
+
+<a id="atom-technical-atom-64a7fceac62859bb"></a>
 
 ```
 const copy = (node, head = null, tail = null) => {
@@ -78,6 +83,8 @@ const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }
 > Our new at and set functions behave similarly to array[index] and array[index] = value . The main difference is that array[index] = value evaluates to value , while set(index, value, list) evaluates to the modified list .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01236))_
+
+<a id="atom-technical-atom-cb1cad9bb1c97594"></a>
 
 ```
 const childList = rest(parentList);

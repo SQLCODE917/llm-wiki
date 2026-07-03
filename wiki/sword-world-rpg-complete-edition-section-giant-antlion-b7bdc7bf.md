@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-giant-antlion-b7bdc7bf
 page_kind: source
 page_family: section-reference
-summary: [ Giant Antlion ]: 38 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Giant Antlion ]: 38 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-giant-antlion-b7bdc7bf@e189877679d03249a6f2ec98671accb7
+projection_coverage: section-sword-world-rpg-complete-edition-section-giant-antlion-b7bdc7bf@d4cf2ee0abbab8b6c1b4363c92e5f792
 ---
 
 # [ Giant Antlion ]
@@ -31,49 +31,29 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: [ Giant Antlion ]
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08234, source-range-0b9dec90-08235, source-range-0b9dec90-08236, source-range-0b9dec90-08237, source-range-0b9dec90-08238, source-range-0b9dec90-08239, source-range-0b9dec90-08240, source-range-0b9dec90-08241, source-range-0b9dec90-08242, source-range-0b9dec90-08243, source-range-0b9dec90-08244, source-range-0b9dec90-08245))_
-
-> Monster Level=5
-
-> Rarity=14
-
-> Agility=7
-
-> Movement Speed=10/10 (underground)
-
-> Number=One Frequency=Very Rare
-
-> Intellect=Almost none Reaction=Violent
-
-> Attack Points=Large jaws:12 (5)
-
-> Strike Points=14
-
-> Evasion Points=11 (4) Defense Points=8
-
-> Life Points/Resistance=20/14 (7)
-
-> Mental Points/Resistance=10/12 (5)
-
-> Special Abilities=Capture with large jaws
-
-### Technical frame 2: [ Giant Antlion ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08253))_
 
 > The giant antlion is a creature about 3 meters long total, with most of the front half of its body occupied by its large jaws, a cone-shaped tail on the back half of its body, and three pairs of spatulashaped legs that bend forward at the joints, making it suitable for burrowing underground. This creature usually lurks in shallow underground areas. When a creature passes directly above it, the giant antlion will sense its footsteps and suddenly dive further underground (with its tail). As a resu
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08248, source-range-0b9dec90-08250, source-range-0b9dec90-08251, source-range-0b9dec90-08252))_
 
+<a id="atom-technical-atom-8fab98d871a125da"></a>
+
 > Surprise attack (Sense target score=16)
+
+<a id="atom-technical-atom-ce9812fea5577d12"></a>
 
 > Habitat=Deserts (Khan Desert only)
 
+<a id="atom-technical-atom-82aa783baf954eb7"></a>
+
 > Languages=None
+
+<a id="atom-technical-atom-d45306c0a098c73d"></a>
 
 > Perception=Five senses
 
-### Technical frame 3: [ Giant Antlion ]
+### Technical frame 2: [ Giant Antlion ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08261))_
 
@@ -81,6 +61,10 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08259, source-range-0b9dec90-08260))_
 
+<a id="atom-technical-atom-d86c68727b8d7430"></a>
+
 > Languages=None
+
+<a id="atom-technical-atom-fa79f103f233f24c"></a>
 
 > Perception=Five senses

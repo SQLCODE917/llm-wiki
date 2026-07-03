@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-research-intelligence-not-retriable-8102af89
 page_kind: source
 page_family: section-reference
-summary: [ ⑤ Research [Intelligence] ] (Not retriable): 12 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ ⑤ Research [Intelligence] ] (Not retriable): 12 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-research-intelligence-not-retriable-8102af89@348125f750f89d508b0e3d7251a72c7c
+projection_coverage: section-sword-world-rpg-complete-edition-section-research-intelligence-not-retriable-8102af89@ce7110d1b3a27fbe6c61531c4dab9370
 ---
 
 # [ ⑤ Research [Intelligence] ] (Not retriable)
@@ -25,15 +25,3 @@ From [[sword-world-rpg-complete-edition]].
 - The bard skill includes the following abilities. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05082))_
 - When a sage fails a success roll on a check such as monster check , treasure appraisal (described below), or knowledge and is unable to figure it out, the sage can later find out by researching literature. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05075))_
 - Bards are free to choose any instrument, but only one type. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05081))_
-
-## Technical atoms
-
-### Technical frame 1: [ ⑤ Research [Intelligence] ] (Not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05080))_
-
-> Those with the bard skill are knowledgeable about ancient folklore and poetry, and make a living by performing them. Bards don't just play instruments and sing songs, they also know information about strange lands and local legends and folklore.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05077))_
-
-> If the research is successful, the sage may make another success roll.

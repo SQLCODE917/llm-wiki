@@ -4,10 +4,10 @@ page_kind: concept
 page_family: broad-topic
 summary: [ Shape Change: 15 statement(s) and 17 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-shape-change@4abe6be9282f84d93947a553f231e4f8
+projection_coverage: topic-sword-world-rpg-complete-edition-shape-change@ceb8cf369a36b2a9bf74d8b6bdcd5c00
 ---
 
 # [ Shape Change
@@ -17,10 +17,15 @@ What [[sword-world-rpg-complete-edition]] covers about [ shape change:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-mythical-beast-and-magical]] - shared statements: 《 Mythical Beasts and Magical Beasts 》 shares source evidence from 5.1.12 Ancient Magic List / [ Shape Change: This is a spell that allows the caster to change their form into another living creature at will. However, the creatures they can change into are limited to about 10 ... [truncated] (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-sage-skill]] - shared statements: Sage Skill shares source evidence from 5.1.12 Ancient Magic List / [ Shape Change: This is a spell that allows the caster to change their form into another living creature at will. However, the creatures they can change into are limited to about 10 ... [truncated] (1 shared statement(s))
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-shape-change-db790ca4]] - source section: 5.1.12 Ancient Magic List / [ Shape Change shares source evidence from 5.1.12 Ancient Magic List / [ Shape Change: This is a spell that allows the caster to change their form into another living creature at will. However, the creatures they can change into are limited to about 10 ... [truncated]; 5.1.12 Ancient Magic List / [ Shape Change shares technical record from 5.1.12 Ancient Magic List / [ Shape Change: Base Mental Power Cost=20 (9 shared statement(s), 9 shared atom(s))
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-shape-change-47b4475b]] - source section: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Shape Change shares source evidence from Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Shape Change: Transform into a lesser dragon. Life force and mental power will be taken from the caster's current scores ( not their maximum scores), but other details such as att ... [truncated]; Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Shape Change shares technical record from Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Shape Change: Base Mental Power Cost=35 (2 shared statement(s), 8 shared atom(s))
+
+### Shared claims
+
+- [[sword-world-rpg-complete-edition-mythical-beast-and-magical]] - shared statements: 《 Mythical Beasts and Magical Beasts 》 shares source evidence from 5.1.12 Ancient Magic List / [ Shape Change: This is a spell that allows the caster to change their form into another living creature at will. However, the creatures they can change into are limited to about 10 ... [truncated] (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-sage-skill]] - shared statements: Sage Skill shares source evidence from 5.1.12 Ancient Magic List / [ Shape Change: This is a spell that allows the caster to change their form into another living creature at will. However, the creatures they can change into are limited to about 10 ... [truncated] (1 shared statement(s))
 ## Statements by source section
 
 ### 5.1.12 Ancient Magic List / [ Disguise ]
@@ -62,19 +67,35 @@ What [[sword-world-rpg-complete-edition]] covers about [ shape change:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03112, source-range-0b9dec90-03113, source-range-0b9dec90-03114, source-range-0b9dec90-03115, source-range-0b9dec90-03116, source-range-0b9dec90-03117, source-range-0b9dec90-03118, source-range-0b9dec90-03119))_
 
+<a id="atom-technical-atom-386e6c5f44289f4b"></a>
+
 > Base Mental Power Cost=20
+
+<a id="atom-technical-atom-eec22396ed30ec52"></a>
 
 > Distance=Caster
 
+<a id="atom-technical-atom-f955695cfd1d26cc"></a>
+
 > Area=Caster
+
+<a id="atom-technical-atom-89135396da179392"></a>
 
 > Duration=Depends on caster's intention
 
+<a id="atom-technical-atom-00885a93beaf80d5"></a>
+
 > Effect=Change the caster's appearance
+
+<a id="atom-technical-atom-b0ad2c8b8628f6a0"></a>
 
 > Type=Target score
 
+<a id="atom-technical-atom-57987e4892a24ff2"></a>
+
 > Expansion=Final score
+
+<a id="atom-technical-atom-02bdc114a5e58c76"></a>
 
 > Resist=None
 
@@ -86,6 +107,8 @@ What [[sword-world-rpg-complete-edition]] covers about [ shape change:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03120))_
 
+<a id="atom-technical-atom-13bf75b3b1d9195c"></a>
+
 > The caster can cancel the spell's effect at any time, but once it's canceled, you cannot take on that form again unless you cast the spell again.
 
 ### Technical frame 3: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Shape Change
@@ -96,19 +119,35 @@ What [[sword-world-rpg-complete-edition]] covers about [ shape change:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06267, source-range-0b9dec90-06268, source-range-0b9dec90-06269, source-range-0b9dec90-06270, source-range-0b9dec90-06271, source-range-0b9dec90-06272, source-range-0b9dec90-06273, source-range-0b9dec90-06274))_
 
+<a id="atom-technical-atom-708fcfe04c24113c"></a>
+
 > Base Mental Power Cost=35
+
+<a id="atom-technical-atom-8d0b5c7510e9bc9d"></a>
 
 > Distance=Caster
 
+<a id="atom-technical-atom-b4c7c5aa59b95861"></a>
+
 > Area=Caster
+
+<a id="atom-technical-atom-6fe00898112c08d6"></a>
 
 > Duration=18 rounds
 
+<a id="atom-technical-atom-da9ea9f730785ac6"></a>
+
 > Effect=Transform into a lesser dragon
+
+<a id="atom-technical-atom-9c257e6537643d00"></a>
 
 > Type=Target score
 
+<a id="atom-technical-atom-e52b866e18ff0288"></a>
+
 > Expansion=Final score, duration
+
+<a id="atom-technical-atom-13db574268fb287c"></a>
 
 > Resist=None
 

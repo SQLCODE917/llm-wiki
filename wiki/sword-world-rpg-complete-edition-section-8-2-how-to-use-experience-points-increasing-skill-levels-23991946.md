@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-8-2-how-to-use-experience-points-increasing-skill-levels-23991946
 page_kind: source
 page_family: section-reference
-summary: 8.2 How to Use Experience Points: Increasing Skill Levels: 42 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 8.2 How to Use Experience Points: Increasing Skill Levels: 42 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-8-2-how-to-use-experience-points-increasing-skill-levels-23991946@5f3b60eba46a4a0cce58585ba3f40fa8
+projection_coverage: section-sword-world-rpg-complete-edition-section-8-2-how-to-use-experience-points-increasing-skill-levels-23991946@dfc8c14b39066534605afa5c373bb0cd
 ---
 
 # 8.2 How to Use Experience Points: Increasing Skill Levels
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-8-2-how-to
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-8-2-how-to-use-experience-points-increasing-skill-levels-sage-skill-8c2e6cd5]] - narrower source section: 8.2 How to Use Experience Points: Increasing Skill Levels / Sage Skill
 
@@ -58,34 +60,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05419))_
 
+<a id="atom-technical-atom-d110ab1ef03381bb"></a>
+
 > If he gains 5000 experience points again on his next adventure, he can now use his 5500 experience points to advance.
-
-### Technical frame 2: 8.2 How to Use Experience Points: Increasing Skill Levels
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05420))_
-
-> Experience points cannot be negative. This is because you can't grow from experiences you haven't had. You also cannot sell your skill levels for experience points.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05421))_
-
-> Table 8-1: Experience Points by Skill
-
-### Technical frame 3: 8.2 How to Use Experience Points: Increasing Skill Levels / Sage Skill
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05506))_
-
-> Suppose a character has a 3rd level sorcerer skill and a 1st level sage skill and increases his sage skill to 2nd level. At this time, the newly acquired sage skill level 2 is lower than the already acquired sorcerer skill level 3 , so he can acquire it for fewer experience points. The reduction on the 2 levels row is 500 points , so the experience points spent are 1000 points (experience points originally
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05504))_
-
-> Please see the rightmost column of Table 8-1: Experience Points by Skill.
-
-### Technical frame 4: 8.2 How to Use Experience Points: Increasing Skill Levels / Sage Skill
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05513))_
-
-> A character with a 3rd level sorcerer skill or a 3rd level sage skill will not receive any experience point reductions regardless of whether they reach 4th level.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05515))_
-
-> If you acquire the 1st level sorcerer skill first, the experience points will be reduced when you acquire the 1st level sage skill, and as a result, the required experience points will be 500 500 = 0 points.

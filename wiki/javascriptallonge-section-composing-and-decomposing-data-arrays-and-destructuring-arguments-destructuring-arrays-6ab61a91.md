@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-destructuring-arrays-6ab61a91
 page_kind: source
-summary: Composing and Decomposing Data / Arrays and Destructuring Arguments / destructuring arrays: 11 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Composing and Decomposing Data / Arrays and Destructuring Arguments / destructuring arrays: 11 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-destructuring-arrays-6ab61a91@b8b32266376b30c3d59fc3d0f8cb5531
+projection_coverage: section-javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-destructuring-arrays-6ab61a91@ed8fa15387c806c4bbd08aa3b7421061
 ---
 
 # Composing and Decomposing Data / Arrays and Destructuring Arguments / destructuring arrays
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-composing-and-decomposing
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-c1f61fb6]] - broader source section: Composing and Decomposing Data / Arrays and Destructuring Arguments
 
@@ -37,6 +40,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00842))_
 
+<a id="atom-technical-atom-e8f13ea170d1b3ff"></a>
+
 ```
 const wrap = (something) => [something];
 Let’s expand it to use a block and an extra name:
@@ -52,6 +57,8 @@ const wrapped = [something];
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00843))_
 
+<a id="atom-technical-atom-e130aa90fd3ff7f6"></a>
+
 ```
 const wrap = (something) => {
 const wrapped = [something]
@@ -60,77 +67,3 @@ return wrapped;
 wrap("package")
 //=> ["package"]
 ```
-
-### Technical frame 3: Composing and Decomposing Data / Arrays and Destructuring Arguments / destructuring arrays
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00847))_
-
-> The statement const [something] = wrapped; destructures the array represented by wrapped , binding the value of its single element to the name something . We can do the same thing with more than one element:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00846))_
-
-```
-const unwrap = (wrapped) => {
-const [something] = wrapped;
-return something;
-}
-unwrap(["present"])
-//=> "present"
-```
-
-### Technical frame 4: Composing and Decomposing Data / Arrays and Destructuring Arguments / destructuring arrays
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00849))_
-
-> We could do the same thing with (name) => name[1] , but destructuring is code that resembles the data it consumes, a valuable coding style.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00848))_
-
-```
-const surname = (name) => {
-const [first, last] = name;
-return last;
-}
-surname(["Reginald", "Braithwaite"])
-//=> "Braithwaite"
-```
-
-### Technical frame 5: Composing and Decomposing Data / Arrays and Destructuring Arguments / destructuring arrays
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00849))_
-
-> We could do the same thing with (name) => name[1] , but destructuring is code that resembles the data it consumes, a valuable coding style.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00851))_
-
-```
-const description = (nameAndOccupation) => {
-const [[first, last], occupation] = nameAndOccupation;
-return `${first} is a ${occupation}`;
-}
-description([["Reginald", "Braithwaite"], "programmer"])
-//=> "Reginald is a programmer"
-```
-
-### Technical atom 6
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00856))_
-
-> Alas, the ... notation does not provide a universal patten-matching capability. For example, we cannot write
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00857))_
-
-| entry | content |
-| --- | --- |
-| 57 | https://en.wikipedia.org/wiki/CAR_and_CDR |
-| 58 | Kyle Simpson is the author of You Don't Know JS, available here |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-57 https://en.wikipedia.org/wiki/CAR_and_CDR
-58 Kyle Simpson is the author of You Don't Know JS, available here
-```
-
-</details>

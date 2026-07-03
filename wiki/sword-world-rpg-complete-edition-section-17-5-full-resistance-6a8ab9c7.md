@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-17-5-full-resistance-6a8ab9c7
 page_kind: source
 page_family: section-reference
-summary: 17.5 Full Resistance: 20 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 17.5 Full Resistance: 20 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-17-5-full-resistance-6a8ab9c7@5173f369cf1be2e5cab9d1b80e2a9615
+projection_coverage: section-sword-world-rpg-complete-edition-section-17-5-full-resistance-6a8ab9c7@023d600bcaa2f735530fc0c3438ff81d
 ---
 
 # 17.5 Full Resistance
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Topics
+
 - [[sword-world-rpg-complete-edition-resistance]] - topic hub: opens the topic page for Resistance
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-resistance-7078c5ed]] - same source heading: another source section with the same heading, Resistance
 
 ## Statements
@@ -45,14 +50,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11705))_
 
+<a id="atom-technical-atom-cd428403df14b082"></a>
+
 > One is that the character cannot take any other actions (wielding a weapon, casting spells, etc.) during that round.
-
-### Technical frame 2: 17.5 Full Resistance
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11708))_
-
-> behind the curtain on the left, as well as the ceiling, behind me, and under my feet are all dangerous, so I'll full resist anything that might come from those places!"), he or she can add restrictions or refuse the player's declaration. If you try to pay attention to what's behind you, which you can't see, you usually neglect what's in front of you.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11709))_
-
-> When danger comes from an unexpected direction or location, you receive no bonus to resistance rolls and must make a check normally.

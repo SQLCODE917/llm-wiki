@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 7: / 7.1 Notes on General Skills / The Difference Between General Skills and Adventurer Skills: 23 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-7-1-notes-on-general-skills-the-difference-between-general-skills-and-adventurer-skill-496f4af4@28ddba2059fd0a70368cc99f72c532ad
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-7-1-notes-on-general-skills-the-difference-between-general-skills-and-adventurer-skill-496f4af4@81ac20e89586af9440e36edd8244ec87
 ---
 
 # Chapter 7: / 7.1 Notes on General Skills / The Difference Between General Skills and Adventurer Skills
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-7-7-1-notes-on-general-skills-297ffcb5]] - broader source section: Chapter 7: / 7.1 Notes on General Skills
 

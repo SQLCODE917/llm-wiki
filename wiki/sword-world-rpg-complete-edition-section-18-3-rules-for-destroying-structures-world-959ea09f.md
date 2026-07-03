@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 18.3 Rules for Destroying Structures / World: 13 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-world-959ea09f@25fb0f1d2f3d9c80fc9f153b75b59aa9
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-world-959ea09f@ac092280189e96bca441220516898174
 ---
 
 # 18.3 Rules for Destroying Structures / World
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-5e113017]] - broader source section: 18.3 Rules for Destroying Structures
 

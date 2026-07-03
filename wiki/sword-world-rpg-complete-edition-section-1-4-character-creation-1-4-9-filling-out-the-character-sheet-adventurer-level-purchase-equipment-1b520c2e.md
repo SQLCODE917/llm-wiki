@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑭ Adventurer Level ] / [ ⑮ Purchase Equipment]: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-adventurer-level-purchase-equipment-1b520c2e@c57c304a12eb917695afb9e0ef282f0e
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-adventurer-level-purchase-equipment-1b520c2e@4184e253a170ae914ceb1a2b9099bdd8
 ---
 
 # 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑭ Adventurer Level ] / [ ⑮ Purchase Equipment]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-charac
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-adventurer-level-ed80716f]] - broader source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑭ Adventurer Level ]
 
@@ -33,5 +35,7 @@ From [[sword-world-rpg-complete-edition]].
 > Use your money to purchase equipment. Write down the items you purchased then rewrite your money, reducing by the amount of money you spent (Table 1-11: Equipment).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01151))_
+
+<a id="atom-technical-atom-cc22e5432a2012b0"></a>
 
 > When you purchase weapons, shields, and armor, write them in the appropriate fields (Table 1-8: Weapons, Table 1-9: Armor, and Table 1-10: Shields).

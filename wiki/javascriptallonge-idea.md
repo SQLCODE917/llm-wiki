@@ -1,19 +1,39 @@
 ---
 page_id: javascriptallonge-idea
 page_kind: concept
+page_family: broad-topic
 summary: Idea: 9 statement(s) and 4 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-idea@0c334af11a320cb1716b4bd2d9d06aeb
+projection_coverage: topic-javascriptallonge-idea@2be7a7c675f845c84d3d066a28d535c8
 ---
 
 # Idea
 
 What [[javascriptallonge]] covers about idea:
 
-## Statements
+
+## Related pages
+
+### Shared technical atoms
+
+- [[javascriptallonge-discussing]] - shared statements and technical atoms: Discussing shares source evidence from And also: / Magic Names / magic names and fat arrows: 44 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the t ... [truncated]; Discussing shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (3 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-purpose]] - shared statements and technical atoms: Purpose shares source evidence from And also: / Magic Names / magic names and fat arrows: 44 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the t ... [truncated]; Purpose shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (3 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from And also: / That Constant Coffee Craving / const: Amazing how such an important idea-naming functions-can be explained en passant in just a few words. That emphasizes one of the things JavaScript gets really, really ... [truncated]; Function shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-mapwith]] - shared technical atoms: Mapwith shares technical record from Recipes with Data / mapWith: const squaresOf = mapWith(n => n * n); squaresOf([1, 2, 3, 4, 5]) //=> [1, 4, 9, 16, 25] (2 shared atom(s))
+- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (2 shared atom(s))
+- [[javascriptallonge-function-return-value]] - shared statements and technical atoms: Function Return Value shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: Well, the last one's a doozy, but still, the general idea is this: We can make a function that returns a value by putting the value to the right of the arrow.; Function Return Value shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-iterator]] - shared technical atoms: Iterator shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (1 shared atom(s))
+
+### Shared claims
+
+- [[javascriptallonge-expression]] - shared statements: Expression shares source evidence from Composing and Decomposing Data / Self-Similarity: We saw that the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment. (1 shared statement(s))
+- [[javascriptallonge-important]] - shared statements: Important shares source evidence from And also: / That Constant Coffee Craving / const: Amazing how such an important idea-naming functions-can be explained en passant in just a few words. That emphasizes one of the things JavaScript gets really, really ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-literal]] - shared statements: Literal shares source evidence from Composing and Decomposing Data / Self-Similarity: We saw that the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment. (1 shared statement(s))
+## Statements by source section
 
 ### A Pull of the Lever: Prefaces / About JavaScript Allongé / that's nice. is that the only reason?
 
@@ -58,6 +78,8 @@ What [[javascriptallonge]] covers about idea:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00192))_
 
+<a id="atom-technical-atom-7673f47cd782cb73"></a>
+
 ```
 (() => 1 + 1)()
 //=> 2
@@ -74,6 +96,8 @@ What [[javascriptallonge]] covers about idea:
 > Although this example is clearly unrealistic, there is a general design principle that deserves attention. Sometimes, a function is meant to be used as a Big-F function. It has a name, it is called by different pieces of code, it's a first-class entity in the code.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00629))_
+
+<a id="atom-technical-atom-aeb7942534341524"></a>
 
 ```
 const row = function () {
@@ -94,6 +118,8 @@ row(3)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01441))_
 
+<a id="atom-technical-atom-b020d8626cf2b008"></a>
+
 ```
 const squaresOf = mapWith(n => n * n);
 squaresOf([1, 2, 3, 4, 5])
@@ -107,6 +133,8 @@ squaresOf([1, 2, 3, 4, 5])
 > This illustrates the general pattern of working with ordered collections: We make them iterables , meaning that they have a [Symbol.iterator] method, that returns an iterator . An iterator is also an object, but with a .next() method that is invoked repeatedly to obtain the elements in order.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01589))_
+
+<a id="atom-technical-atom-54c71ac655b9bf50"></a>
 
 ```
 const mapWith = (fn, collection) =>
@@ -123,22 +151,6 @@ return ({done, value: done ? undefined : fn(value)});
 });
 ```
 
-
-## Related pages
-
-- [[javascriptallonge-discussing]] - shared statements and technical atoms: Discussing shares source evidence from And also: / Magic Names / magic names and fat arrows: 44 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the t ... [truncated]; Discussing shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (3 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-purpose]] - shared statements and technical atoms: Purpose shares source evidence from And also: / Magic Names / magic names and fat arrows: 44 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the t ... [truncated]; Purpose shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (3 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from And also: / That Constant Coffee Craving / const: Amazing how such an important idea-naming functions-can be explained en passant in just a few words. That emphasizes one of the things JavaScript gets really, really ... [truncated]; Function shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-function-return-value]] - shared statements and technical atoms: Function Return Value shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: Well, the last one's a doozy, but still, the general idea is this: We can make a function that returns a value by putting the value to the right of the arrow.; Function Return Value shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-mapwith]] - shared technical atoms: Mapwith shares technical record from Recipes with Data / mapWith: const squaresOf = mapWith(n => n * n); squaresOf([1, 2, 3, 4, 5]) //=> [1, 4, 9, 16, 25] (2 shared atom(s))
-- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (2 shared atom(s))
-- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-iterator]] - shared technical atoms: Iterator shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-operation]] - shared technical atoms: Operation shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-value]] - shared technical atoms: Value shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared atom(s))
-- [[javascriptallonge-expression]] - shared statements: Expression shares source evidence from Composing and Decomposing Data / Self-Similarity: We saw that the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment. (1 shared statement(s))
-- [[javascriptallonge-important]] - shared statements: Important shares source evidence from And also: / That Constant Coffee Craving / const: Amazing how such an important idea-naming functions-can be explained en passant in just a few words. That emphasizes one of the things JavaScript gets really, really ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-literal]] - shared statements: Literal shares source evidence from Composing and Decomposing Data / Self-Similarity: We saw that the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment. (1 shared statement(s))
 
 ## Source
 

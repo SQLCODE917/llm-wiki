@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-counters-negates-acc6a6c6
 page_kind: source
 page_family: section-reference
-summary: 《 Counters (Negates) 》: 27 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 《 Counters (Negates) 》: 27 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-counters-negates-acc6a6c6@61078575423b4d6d2dc535ffaaa6b151
+projection_coverage: section-sword-world-rpg-complete-edition-section-counters-negates-acc6a6c6@9988a0f7c340c0f01f725142ebdf0c8f
 ---
 
 # 《 Counters (Negates) 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-counters-n
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-counters-negates-counters-overpowers-6cac089e]] - narrower source section: 《 Counters (Negates) 》 / 《 Counters (Overpowers) 》
 
@@ -46,55 +48,3 @@ From [[sword-world-rpg-complete-edition]].
 - In this case, according to the definition of magic with a target score , the magic cast after will not take effect unless its final score is greater than or equal to the determined target score . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02662))_
 - If the magic cast prior has a target score and the magic cast after is resistible , please follow the procedure below to make a check. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02663))_
 - Therefore, if certain magic takes effect, and you cast that same magic on the same target multiple times, the effect will not be cumulative. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02670))_
-
-## Technical atoms
-
-### Technical frame 1: 《 Counters (Negates) 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02655))_
-
-> Such magic, that is, magic that negates the effect of other magic, but at the same time is negated by that other magic without taking its own effect, is called counters (negates): type.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02653))_
-
-> When magic is cast against other magic, their effects may completely cancel each other out.
-
-### Technical frame 2: 《 Counters (Negates) 》 / 《 Counters (Overpowers) 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02659))_
-
-> For example, the ancient magic Darkness can nullify the effects of the spirit magic Will-O-Wisp and still close the surrounding area in darkness, which means Darkness itself is more effective.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02658))_
-
-> When certain magic is cast against other magic, it can cancel the effect of the prior magic but still take its own effect afterwards.
-
-### Technical frame 3: 《 Counters (Negates) 》 / 《 Counters (Overpowers) 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02662))_
-
-> The other, is when the prior magic has a target score . In this case, according to the definition of magic with a target score , the magic cast after will not take effect unless its final score is greater than or equal to the determined target score .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02661))_
-
-> In the case of magic that does not take effect if resisted, if the target does resist it, the magic will not take its effect, and the effect of the prior magic will continue.
-
-### Technical frame 4: 《 Counters (Negates) 》 / 《 Counters (Overpowers) 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02665))_
-
-> ② Next, the one casting the magic must roll 2D to find their final score (by adding their magic power).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02664))_
-
-> ① First, confirm the target score (= final score) of the magic cast prior (if you forgot, determine it now).
-
-### Technical frame 5: 《 Counters (Negates) 》 / 《 Counters (Overpowers) 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02669))_
-
-> Counters (overpowers): magic does not mean that certain magic is definitely stronger than other magic. It's possible for magic A to counter (overpower) magic B, and at the same time for magic B to counter (overpower) magic A.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02668))_
-
-> - ⑤ If the target successfully resisted in ④ , the new magic cast will not take effect.

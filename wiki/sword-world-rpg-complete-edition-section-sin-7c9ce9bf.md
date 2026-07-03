@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-sin-7c9ce9bf
 page_kind: source
 page_family: section-reference
-summary: [ Sin ]: 24 source-backed entries and 16 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Sin ]: 24 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sin-7c9ce9bf@b1a19f76013452560e2305ec8b5b0f81
+projection_coverage: section-sword-world-rpg-complete-edition-section-sin-7c9ce9bf@c9b63dbb7290e2ef79eca0a6b58916f2
 ---
 
 # [ Sin ]
@@ -21,41 +21,3 @@ From [[sword-world-rpg-complete-edition]].
 - A sin usually refuses to leave the side of whatever it's attached to, and will attack anything that tries to take it away. Sin have no intelligence. They are driven only by an insatiable desire for possession, and are, so to speak, the dead who have fallen into madness and cannot be saved. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08643))_
 - They remain in this world, trying to monopolize what they were attached to even after death. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08642))_
 - They are driven only by an insatiable desire for possession, and are, so to speak, the dead who have fallen into madness and cannot be saved. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08643))_
-
-## Technical atoms
-
-### Technical frame 1: [ Sin ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08625, source-range-0b9dec90-08626, source-range-0b9dec90-08627, source-range-0b9dec90-08628, source-range-0b9dec90-08629, source-range-0b9dec90-08630, source-range-0b9dec90-08631, source-range-0b9dec90-08632, source-range-0b9dec90-08633, source-range-0b9dec90-08634, source-range-0b9dec90-08635, source-range-0b9dec90-08636, source-range-0b9dec90-08637, source-range-0b9dec90-08639, source-range-0b9dec90-08640, source-range-0b9dec90-08641))_
-
-> Monster Level=4
-
-> Rarity=14
-
-> Agility=14
-
-> Movement Speed=14
-
-> Number=One to several
-
-> Frequency=Very Rare
-
-> Intellect=Low Reaction=Adversarial
-
-> Attack Points=Weapon:11 (4)
-
-> Strike Points=10
-
-> Evasion Points=12 (5) Defense Points=6
-
-> Life Points/Resistance=16/12 (5)
-
-> Mental Points/Resistance=20/13 (6)
-
-> Special Abilities=Life point regenerate (3 points per round)
-
-> Damage from healing magic Habitat=Various
-
-> Languages=Those previous
-
-> Perception=Pseudo

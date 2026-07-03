@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any
 
+from llmwiki.domain.ledger.atom_addressing import technical_atom_anchor
 from llmwiki.domain.ledger.canonical import deterministic_id, short_digest
 from llmwiki.domain.ledger.coverage import (
     PageBodyBuilder,
@@ -117,7 +118,10 @@ def render_canonical_concept_page(
                 )
             rendered = _atom_block(atom.technical_atom_kind, atom.payload)
             citation = f"{atom.source_locator} ({atom.source_range_id})"
-            span = body.add(f"**Atom:** _({citation})_\n\n{rendered}\n\n")
+            span = body.add(
+                f"{technical_atom_anchor(atom.technical_atom_id)}\n\n"
+                f"**Atom:** _({citation})_\n\n{rendered}\n\n"
+            )
             entries.append(
                 _coverage(
                     wiki_page_locator,

@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Armor Based Skill: 3 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-armor-based-skill@f3253fd85e8c5ee5b26f1c3e90cf9466
+projection_coverage: topic-sword-world-rpg-complete-edition-armor-based-skill@4a5ff70f944b31091c6fbee0bf6bf742
 ---
 
 # Armor Based Skill
@@ -33,6 +33,8 @@ What [[sword-world-rpg-complete-edition]] covers about armor based skill:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00948))_
 
+<a id="atom-technical-atom-e29c06a5bbadba4a"></a>
+
 > If the equipment has both unrestricted and restricted skills, please understand that your equipment must conform to the restricted skill if you want to take full advantage of both skills.
 
 ### Technical frame 2: 1.4 Character Creation / 1.4.7 Restrictions on Weapons and Armor Based on Skill
@@ -43,10 +45,14 @@ What [[sword-world-rpg-complete-edition]] covers about armor based skill:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00949))_
 
+<a id="atom-technical-atom-9314b49a13b59ab8"></a>
+
 > Table 1-9: Armor
 
 
 ## Related pages
+
+### Shared claims
 
 - [[sword-world-rpg-complete-edition-magic-armor]] - shared statements: 《 Magic Armor (+1) 》 shares source evidence from 1.4 Character Creation / 1.4.7 Restrictions on Weapons and Armor Based on Skill: The general rule is to choose one whose required strength equals the character's strength , but a character may be substantially limited by the skills they have. For ... [truncated] (1 shared statement(s))
 

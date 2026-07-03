@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-a-return-to-backward-thinking-b86dc74c
 page_kind: source
-summary: Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking: 22 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking: 22 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-a-return-to-backward-thinking-b86dc74c@b4ebe22acedfe391da7316213e346fd6
+projection_coverage: section-javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-a-return-to-backward-thinking-b86dc74c@cd2ec2bf8d77e9450c744a659a360ebe
 ---
 
 # Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-yes-consider-this-variati
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-f095c99b]] - broader source section: Yes. Consider this variation: / Making Data Out Of Functions
 
@@ -31,57 +34,3 @@ From [[javascriptallonge]].
 - There are many tools for hiding implementation information, and we have now seen two particularly powerful patterns: _(javascriptallonge.pdf (source-range-7239e085-01421))_
 - Instead of directly manipulating part of an entity, pass it a function and have it call our function with the part we want. _(javascriptallonge.pdf (source-range-7239e085-01422))_
 - We then ask list to do it, and provide a way for list to call the code we pass in. _(javascriptallonge.pdf (source-range-7239e085-01416))_
-
-## Technical atoms
-
-### Technical frame 1: Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01413))_
-
-> This is a little gratuitous, but it makes the point: The code that uses the data doesn't reach in and touch it: The code that uses the data provides some code and asks the data to do something with it.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01412))_
-
-```
-const first = K,
-second = K(I),
-pair = (first) => (second) => {
-const pojo = {first, second};
-return (selector) => selector(pojo.first)(pojo.second);
-};
-const latin = pair("primus")("secundus");
-latin(first)
-//=> "primus"
-latin(second)
-//=> "secundus"
-```
-
-### Technical frame 2: Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01416))_
-
-> We're passing list what we want done with an empty list, and what we want done with a list that has at least one element. We then ask list to do it, and provide a way for list to call the code we pass in.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01415))_
-
-```
-const length = (list) => list(
-() => 0,
-(aPair) => 1 + length(aPair(pairRest)))
-);
-```
-
-### Technical frame 3: Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01419))_
-
-> The line node === EMPTY presumes a lot of things. It presumes there is one canonical empty list value. It presumes you can compare these things with the === operator. We can fix this with an isEmpty function, but now we're pushing even more knowledge about the structure of lists into the code that uses them.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01418))_
-
-```
-const length = (node, delayed = 0) =>
-node === EMPTY
-? delayed
-: length(node.rest, delayed + 1);
-```

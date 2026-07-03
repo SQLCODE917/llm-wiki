@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-copy-write
 page_kind: concept
-summary: Copy on Write: 20 statement(s) and 9 atom(s) from raw/javascriptallonge.pdf.
+page_family: topic-concept
+summary: Copy on Write: 18 statement(s) and 9 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-copy-write@c9c18aa72207088d40fd977969b0a706
+projection_coverage: topic-javascriptallonge-copy-write@973fb568984da95937bf16db5604bf5a
 ---
 
 # Copy on Write
@@ -41,10 +42,6 @@ What [[javascriptallonge]] covers about copy on write:
 
 ### Yes. Consider this variation: / Copy on Write / copy-on-write
 
-- But our new parent and child lists are copies that contain the desired modifications, without interfering with each other: _(javascriptallonge.pdf (source-range-7239e085-01249))_
-
-- And now functions like mapWith that make copies without modifying anything, work at full speed. _(javascriptallonge.pdf (source-range-7239e085-01251))_
-
 - This strategy of waiting to copy until you are writing is called copy-on-write, or 'COW:' _(javascriptallonge.pdf (source-range-7239e085-01252))_
 
 - Copy-on-write is the name given to the policy that whenever a task attempts to make a change to the shared information, it should first create a separate (private) copy of that information to prevent its changes from becoming visible to all the other tasks.Wikipedia 73 _(javascriptallonge.pdf (source-range-7239e085-01253))_
@@ -62,6 +59,8 @@ What [[javascriptallonge]] covers about copy on write:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01228))_
 
+<a id="atom-technical-atom-bba78c8b3994a437"></a>
+
 > The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array.
 
 ### Technical frame 2: Yes. Consider this variation: / Copy on Write
@@ -72,6 +71,8 @@ What [[javascriptallonge]] covers about copy on write:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01229))_
 
+<a id="atom-technical-atom-107209144ad81087"></a>
+
 > Whereas if you have a linked list, and you take it's 'rest,' your 'child' list shares its nodes with the 'parent' list.
 
 ### Technical frame 3: Yes. Consider this variation: / Copy on Write
@@ -81,6 +82,8 @@ What [[javascriptallonge]] covers about copy on write:
 > This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunch of bookkeeping to track references? We'll end up reinventing reference counting and garbage collection.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01231))_
+
+<a id="atom-technical-atom-0dba4e36fbe27ea3"></a>
 
 ```
 const parentArray = [1, 2, 3];
@@ -111,6 +114,8 @@ childList
 > Our new at and set functions behave similarly to array[index] and array[index] = value . The main difference is that array[index] = value evaluates to value , while set(index, value, list) evaluates to the modified list .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01235))_
+
+<a id="atom-technical-atom-64a7fceac62859bb"></a>
 
 ```
 const copy = (node, head = null, tail = null) => {
@@ -159,6 +164,8 @@ const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01236))_
 
+<a id="atom-technical-atom-cb1cad9bb1c97594"></a>
+
 ```
 const childList = rest(parentList);
 set(2, "three", parentList);
@@ -178,6 +185,8 @@ childList
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01240))_
 
+<a id="atom-technical-atom-05e2937fc47dd397"></a>
+
 ```
 const rest = ({first, rest}) => copy(rest);
 const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }\
@@ -194,11 +203,13 @@ childList
 
 ### Technical frame 7: Yes. Consider this variation: / Copy on Write / copy-on-write
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01249))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01252))_
 
-> But our new parent and child lists are copies that contain the desired modifications, without interfering with each other:
+> This strategy of waiting to copy until you are writing is called copy-on-write, or 'COW:'
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01246))_
+
+<a id="atom-technical-atom-e60d6ebf60601e8a"></a>
 
 ```
 const rest = ({first, rest}) => rest;
@@ -215,11 +226,13 @@ const newChildList = set(0, "two", childList);
 
 ### Technical frame 8: Yes. Consider this variation: / Copy on Write / copy-on-write
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01249))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01252))_
 
-> But our new parent and child lists are copies that contain the desired modifications, without interfering with each other:
+> This strategy of waiting to copy until you are writing is called copy-on-write, or 'COW:'
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01248))_
+
+<a id="atom-technical-atom-75b9035c0deba14b"></a>
 
 ```
 parentList
@@ -231,11 +244,13 @@ childList
 
 ### Technical frame 9: Yes. Consider this variation: / Copy on Write / copy-on-write
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01251))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01252))_
 
-> And now functions like mapWith that make copies without modifying anything, work at full speed.
+> This strategy of waiting to copy until you are writing is called copy-on-write, or 'COW:'
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01250))_
+
+<a id="atom-technical-atom-64e23430e7b317d4"></a>
 
 ```
 newParentList
@@ -248,20 +263,31 @@ newChildList
 
 ## Related pages
 
-- [[javascriptallonge-copy]] - broader topic: Copy shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: This strategy of waiting to copy until you are writing is called copy-on-write, or 'COW:'; Copy shares technical record from Yes. Consider this variation: / Copy on Write / copy-on-write: const rest = ({first, rest}) => rest; const set = (index, value, list) => index === 0 ? { first: value, rest: list.rest } : { first: list.first, rest: set(index - 1, ... [truncated] (3 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-write]] - broader topic: Write shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: Copy-on-write is the name given to the policy that whenever a task attempts to make a change to the shared information, it should first create a separate (private) c ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-list]] - shared statements and technical atoms: List shares source evidence from Yes. Consider this variation: / Copy on Write: We've seen how to build lists with arrays and with linked lists. We've touched on an important difference between them:; List shares technical record from Yes. Consider this variation: / Copy on Write: The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array. (4 shared statement(s), 8 shared atom(s))
+### Source structure
+
+- [[javascriptallonge-section-yes-consider-this-variation-copy-on-write-c844813d]] - source section: Yes. Consider this variation: / Copy on Write shares source evidence from Yes. Consider this variation: / Copy on Write: We've seen how to build lists with arrays and with linked lists. We've touched on an important difference between them:; Yes. Consider this variation: / Copy on Write shares technical record from Yes. Consider this variation: / Copy on Write: The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array. (18 shared statement(s), 9 shared atom(s))
+- [[javascriptallonge-section-yes-consider-this-variation-copy-on-write-copy-on-write-d1a59880]] - source section: Yes. Consider this variation: / Copy on Write / copy-on-write shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: This strategy of waiting to copy until you are writing is called copy-on-write, or 'COW:'; Yes. Consider this variation: / Copy on Write / copy-on-write shares technical record from Yes. Consider this variation: / Copy on Write / copy-on-write: const rest = ({first, rest}) => rest; const set = (index, value, list) => index === 0 ? { first: value, rest: list.rest } : { first: list.first, rest: set(index - 1, ... [truncated] (4 shared statement(s), 3 shared atom(s))
+
+### Shared technical atoms
+
+- [[javascriptallonge-list]] - shared statements and technical atoms: List shares source evidence from Yes. Consider this variation: / Copy on Write: We've seen how to build lists with arrays and with linked lists. We've touched on an important difference between them:; List shares technical record from Yes. Consider this variation: / Copy on Write: The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array. (3 shared statement(s), 8 shared atom(s))
 - [[javascriptallonge-rest]] - shared statements and technical atoms: Rest shares source evidence from Yes. Consider this variation: / Copy on Write: When you take the rest of an array with destructuring ( [first, ...rest] ), you are given a copy of the elements of the array.; Rest shares technical record from Yes. Consider this variation: / Copy on Write: The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array. (3 shared statement(s), 4 shared atom(s))
 - [[javascriptallonge-element]] - shared statements and technical atoms: Element shares source evidence from Yes. Consider this variation: / Copy on Write: This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunc ... [truncated]; Element shares technical record from Yes. Consider this variation: / Copy on Write: The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array. (1 shared statement(s), 2 shared atom(s))
 - [[javascriptallonge-problem]] - shared statements and technical atoms: Problem shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-read: So back to the problem of structure sharing. One strategy for avoiding problems is to be pessimistic . Whenever we take the rest of a list, make a copy.; Problem shares technical record from Yes. Consider this variation: / Copy on Write / copy-on-read: const rest = ({first, rest}) => copy(rest); const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }\ }}; const childList = rest(parentList); ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-function]] - shared statements: Function shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-read: As we expected, making a copy lets us modify the copy without interfering with the original. This is, however, expensive. Sometimes we don't need to make a copy beca ... [truncated] (3 shared statement(s))
-- [[javascriptallonge-mapwith]] - shared statements: Mapwith shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-read: As we expected, making a copy lets us modify the copy without interfering with the original. This is, however, expensive. Sometimes we don't need to make a copy beca ... [truncated] (2 shared statement(s))
+
+### Shared claims
+
+- [[javascriptallonge-function]] - shared statements: Function shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-read: As we expected, making a copy lets us modify the copy without interfering with the original. This is, however, expensive. Sometimes we don't need to make a copy beca ... [truncated] (2 shared statement(s))
 - [[javascriptallonge-code]] - shared statements: Code shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-follow]] - shared statements: Follow shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-mapwith]] - shared statements: Mapwith shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-read: As we expected, making a copy lets us modify the copy without interfering with the original. This is, however, expensive. Sometimes we don't need to make a copy beca ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-pattern]] - shared statements: Pattern shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: Looking at the code again, you see that the copy function doesn't copy on write: It follows the pattern that while constructing something, we own it and can be liber ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-seen]] - shared statements: Seen shares source evidence from Yes. Consider this variation: / Copy on Write: We've seen how to build lists with arrays and with linked lists. We've touched on an important difference between them: (1 shared statement(s))
-- [[javascriptallonge-section-yes-consider-this-variation-copy-on-write-c844813d]] - source section: Yes. Consider this variation: / Copy on Write shares source evidence from Yes. Consider this variation: / Copy on Write: We've seen how to build lists with arrays and with linked lists. We've touched on an important difference between them:; Yes. Consider this variation: / Copy on Write shares technical record from Yes. Consider this variation: / Copy on Write: The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array. (20 shared statement(s), 9 shared atom(s))
-- [[javascriptallonge-section-yes-consider-this-variation-copy-on-write-copy-on-write-d1a59880]] - source section: Yes. Consider this variation: / Copy on Write / copy-on-write shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: But our new parent and child lists are copies that contain the desired modifications, without interfering with each other:; Yes. Consider this variation: / Copy on Write / copy-on-write shares technical record from Yes. Consider this variation: / Copy on Write / copy-on-write: const rest = ({first, rest}) => rest; const set = (index, value, list) => index === 0 ? { first: value, rest: list.rest } : { first: list.first, rest: set(index - 1, ... [truncated] (6 shared statement(s), 3 shared atom(s))
+
+### Topics
+
+- [[javascriptallonge-copy]] - broader topic: Copy shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: This strategy of waiting to copy until you are writing is called copy-on-write, or 'COW:'; Copy shares technical record from Yes. Consider this variation: / Copy on Write / copy-on-write: const rest = ({first, rest}) => rest; const set = (index, value, list) => index === 0 ? { first: value, rest: list.rest } : { first: list.first, rest: set(index - 1, ... [truncated] (3 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-write]] - broader topic: Write shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-write: Copy-on-write is the name given to the policy that whenever a task attempts to make a change to the shared information, it should first create a separate (private) c ... [truncated] (2 shared statement(s))
 
 ## Source
 

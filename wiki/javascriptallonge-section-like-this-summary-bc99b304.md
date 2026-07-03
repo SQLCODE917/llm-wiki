@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-like-this-summary-bc99b304
 page_kind: source
+page_family: section-reference
 summary: Like this: / summary: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-like-this-summary-bc99b304@b82315af6b3facf51d4ac76840536a4e
+projection_coverage: section-javascriptallonge-section-like-this-summary-bc99b304@d5d1eacf5ef8aa8b87ae62fdfad8adcd
 ---
 
 # Like this: / summary
@@ -16,13 +17,18 @@ From [[javascriptallonge]].
 
 ## Related pages
 
+### Source structure
+
 - [[javascriptallonge-section-like-this-66cb3108]] - broader source section: Like this:
+
+### Other
+
 - [[javascriptallonge-section-and-also-summary-ece908a9]] - same source heading: another source section with the same heading, And also: / Summary
-- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-summary-7f12d5ad]] - same source heading: another source section with the same heading, Picking the Bean: Choice and Truthiness / summary
-- [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-summary-652fb6eb]] - same source heading: another source section with the same heading, Composing and Decomposing Data / Self-Similarity / summary
 - [[javascriptallonge-section-composing-and-decomposing-data-garbage-garbage-everywhere-summary-71292497]] - same source heading: another source section with the same heading, Composing and Decomposing Data / Garbage, Garbage Everywhere / summary
-- [[javascriptallonge-section-we-ll-keep-it-simple-summary-21c844cb]] - same source heading: another source section with the same heading, We'll keep it simple: / Summary
+- [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-summary-652fb6eb]] - same source heading: another source section with the same heading, Composing and Decomposing Data / Self-Similarity / summary
+- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-summary-7f12d5ad]] - same source heading: another source section with the same heading, Picking the Bean: Choice and Truthiness / summary
 - [[javascriptallonge-section-we-get-summary-db42c4cd]] - same source heading: another source section with the same heading, We get: / summary
+- [[javascriptallonge-section-we-ll-keep-it-simple-summary-21c844cb]] - same source heading: another source section with the same heading, We'll keep it simple: / Summary
 
 ## Statements
 

@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-a-pull-of-the-lever-prefaces-about-javascript-allong-21ea31b9
 page_kind: source
-summary: A Pull of the Lever: Prefaces / About JavaScript Allongé: 47 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: A Pull of the Lever: Prefaces / About JavaScript Allongé: 44 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-a-pull-of-the-lever-prefaces-about-javascript-allong-21ea31b9@3174837dc53f92d4e1b7f2ff91dbab80
+projection_coverage: section-javascriptallonge-section-a-pull-of-the-lever-prefaces-about-javascript-allong-21ea31b9@bd9e2e23f47f6bf24ebbbc4498db61b6
 ---
 
 # A Pull of the Lever: Prefaces / About JavaScript Allongé
@@ -16,9 +17,15 @@ From [[javascriptallonge]].
 
 ## Related pages
 
+### Source structure
+
 - [[javascriptallonge-section-a-pull-of-the-lever-prefaces-9a15e9b7]] - broader source section: A Pull of the Lever: Prefaces
-- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-about-javascript-allong-why-the-six-edition-60c91bde]] - narrower source section: A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?
 - [[javascriptallonge-section-a-pull-of-the-lever-prefaces-about-javascript-allong-that-s-nice-is-that-the-only-reason-1523be9c]] - narrower source section: A Pull of the Lever: Prefaces / About JavaScript Allongé / that's nice. is that the only reason?
+- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-about-javascript-allong-why-the-six-edition-60c91bde]] - narrower source section: A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?
+
+### Topics
+
+- [[javascriptallonge-javascript-allong]] - topic hub: opens the topic page for Javascript Allong
 
 ## Statements
 
@@ -39,12 +46,10 @@ From [[javascriptallonge]].
 - The first edition of JavaScript Allongé explained these and many other patterns for writing flexible and composable programs in JavaScript, but the intention wasn't to explain how to work around JavaScript's missing features: The intention was to explain why the style of programming exemplified by the missing features is important. _(javascriptallonge.pdf (source-range-7239e085-00032))_
 - Working around the missing features was a necessary evil. _(javascriptallonge.pdf (source-range-7239e085-00033))_
 - But now, JavaScript is gaining many important features, in part because the governing body behind JavaScript has observed that programmers are constantly working around the same set of limitations. With ECMASCript 2015, we can write: _(javascriptallonge.pdf (source-range-7239e085-00034))_
-- And i is scoped to the for loop. We can also write: _(javascriptallonge.pdf (source-range-7239e085-00036))_
 - And presto, rest collects the rest of the arguments without a lot of malarky involving slicing arguments . Not having to work around these kinds of missing features makes JavaScript Allongé a better book , because it can focus on the why to do something and when to do it, instead of on the how to make it work _(javascriptallonge.pdf (source-range-7239e085-00038))_
 - JavaScript Allongé, The 'Six' Edition packs all the goodness of JavaScript Allongé into a new, updated package that is relevant for programmers working with (or planning to work with) the latest version of JavaScript. _(javascriptallonge.pdf (source-range-7239e085-00039))_
 - For example, JavaScript did not include block-structured variables. _(javascriptallonge.pdf (source-range-7239e085-00022))_
 - Prior to ECMAScript 2015, JavaScript did not include many features that programmers have discovered are vital to writing great software. _(javascriptallonge.pdf (source-range-7239e085-00022))_
-- And the variable i is scoped locally to the code within the braces. _(javascriptallonge.pdf (source-range-7239e085-00025))_
 - Prior to ECMAScript 2015, JavaScript did not support block-structuring, so programmers borrowed a trick from the Scheme programming language, and would write: _(javascriptallonge.pdf (source-range-7239e085-00025))_
 - Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into a parameter, so programmers would take advantage of an awkward work-around and write things like: _(javascriptallonge.pdf (source-range-7239e085-00030))_
 - But now, JavaScript is gaining many important features, in part because the governing body behind JavaScript has observed that programmers are constantly working around the same set of limitations. _(javascriptallonge.pdf (source-range-7239e085-00034))_
@@ -63,99 +68,15 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-### Technical frame 1: A Pull of the Lever: Prefaces / About JavaScript Allongé
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00017))_
-
-> JavaScript Allongé begins at the beginning, with values and expressions, and builds from there to discuss types, identity, functions, closures, scopes, collections, iterators, and many more subjects up to working with classes and instances.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00016))_
-
-> If those terms seem unfamiliar, don't worry: JavaScript Allongé takes great delight in explaining what they mean and why they matter.
-
-### Technical frame 2: A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00025))_
-
-> And the variable i is scoped locally to the code within the braces. Prior to ECMAScript 2015, JavaScript did not support block-structuring, so programmers borrowed a trick from the Scheme programming language, and would write:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00024))_
-
-```
-for (int i = 0; i < array.length; ++i) {
-// ...
-}
-```
-
-### Technical frame 3: A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00028))_
-
-> Likewise, many programming languages permit functions to have a variable number of arguments, and to collect the arguments into a single variable as an array. In Ruby, we can write:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00026))_
-
-```
-var i;
-for (i = 0; i < array.length; ++i) {
-(function (i) {
-// ...
-})(i)
-}
-```
-
-### Technical frame 4: A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00030))_
-
-> Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into a parameter, so programmers would take advantage of an awkward work-around and write things like:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00029))_
-
-```
-def foo (first, *rest)
-# ...
-end
-```
-
-### Technical frame 5: A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00032))_
-
-> The first edition of JavaScript Allongé explained these and many other patterns for writing flexible and composable programs in JavaScript, but the intention wasn't to explain how to work around JavaScript's missing features: The intention was to explain why the style of programming exemplified by the missing features is important.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00031))_
-
-```
-function foo () {
-var first = arguments[0],
-rest
-= [].slice.call(arguments, 1);
-// ...
-}
-```
-
-### Technical frame 6: A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00036))_
-
-> And i is scoped to the for loop. We can also write:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00035))_
-
-```
-for (let i = 0; i < array.length; ++i) {
-// ...
-}
-```
-
-### Technical frame 7: A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?
+### Technical frame 1: A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-00038))_
 
 > And presto, rest collects the rest of the arguments without a lot of malarky involving slicing arguments . Not having to work around these kinds of missing features makes JavaScript Allongé a better book , because it can focus on the why to do something and when to do it, instead of on the how to make it work
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00037))_
+
+<a id="atom-technical-atom-5da90e9e76850cfa"></a>
 
 ```
 function foo (first, ...rest) {

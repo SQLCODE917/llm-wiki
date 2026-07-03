@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: [ Lizardman ]: 16 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lizardman-dea9f237@85d1f4cf9b913ef6863356eb84c924f5
+projection_coverage: section-sword-world-rpg-complete-edition-section-lizardman-dea9f237@719dec9e20985de4a848a9583a54a8ef
 ---
 
 # [ Lizardman ]
@@ -17,9 +17,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-lizardman-rules-for-poison-illness-and-infection-c04e0de1]] - narrower source section: [ Lizardman ] / Rules for Poison, Illness and Infection
-- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-lizardman-bd9dbc95]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Lizardman ]
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-lizardman-95bf209c]] - same source heading: another source section with the same heading, 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]
+- [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-lizardman-bd9dbc95]] - same source heading: another source section with the same heading, Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Lizardman ]
 
 ## Statements by subsection
 

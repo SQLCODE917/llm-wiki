@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-spriggan-a5d16c9c
 page_kind: source
 page_family: section-reference
-summary: [ Spriggan ]: 20 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Spriggan ]: 20 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-spriggan-a5d16c9c@a1eb13c599168d1eed00ad9c6d2d8904
+projection_coverage: section-sword-world-rpg-complete-edition-section-spriggan-a5d16c9c@4bd5cf6307bec50b28b31e165cc63ad2
 ---
 
 # [ Spriggan ]
@@ -36,9 +36,15 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07322, source-range-0b9dec90-07323, source-range-0b9dec90-07324))_
 
+<a id="atom-technical-atom-ec7484f9a5ceb07b"></a>
+
 > Evasion Points=13 (6) Defense Points=8
 
+<a id="atom-technical-atom-047d5e95ed015a6a"></a>
+
 > Life Points/Resistance=22/14 (7) Mental Points/Resistance=18/14 (7)
+
+<a id="atom-technical-atom-38cd197674485b2d"></a>
 
 > Special Abilities=Shapeshift (Human Child)
 
@@ -50,6 +56,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07326))_
 
+<a id="atom-technical-atom-2ac58f4a2f1b073d"></a>
+
 > The form that a Spriggan can take after transforming is fixed for each individual (its apparent age cannot be changed either).
 
 ### Technical frame 3: [ Spriggan ]
@@ -60,6 +68,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07327))_
 
+<a id="atom-technical-atom-79a9791c6f030ecb"></a>
+
 > The target may not take any actions for one round and will suffer a -4 penalty to evasion.
 
 ### Technical frame 4: [ Spriggan ]
@@ -69,5 +79,7 @@ From [[sword-world-rpg-complete-edition]].
 > Spriggans are apostles of the dark gods and can use up to 2nd level dark magic.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07328))_
+
+<a id="atom-technical-atom-c08a5faf6ce4f247"></a>
 
 > A spriggan can use its considerable strength even in its child form.

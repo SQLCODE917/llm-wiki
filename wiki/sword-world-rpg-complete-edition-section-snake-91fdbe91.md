@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-snake-91fdbe91
 page_kind: source
 page_family: section-reference
-summary: [ Snake ]: 36 source-backed entries and 19 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Snake ]: 36 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-snake-91fdbe91@fa2561bd965753516bbe9ff6a5a82754
+projection_coverage: section-sword-world-rpg-complete-edition-section-snake-91fdbe91@7a7c8d61c01f3c439c20a28fc3e89d44
 ---
 
 # [ Snake ]
@@ -33,78 +33,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: [ Snake ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08339))_
-
-> A viper is a poisonous snake about 2 meters long. They attack indiscriminately if they are hungry, making them the most feared among travelers in Alecrast. Its fangs are poisonous, and those bitten must succeed on a life force resistance roll against target score 9 or die from the poison after one hour.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08338))_
-
-> Perception=Five senses
-
-### Technical frame 2: [ Snake ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08342))_
 
 > Monster Level=4 Rarity=8 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Strangle: 12 (5) Strike Points=10 Evasion Points=9 (2) Defense Points=8 Life Points/Resistance=20/13 (6) Mental Points/Resistance=8/11 (4) Special Abilities=Strangling Habitat=Forests, meadows
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08340))_
 
+<a id="atom-technical-atom-33720a27256eddf1"></a>
+
 > [Figure] (p.209)
-
-### Technical frame 3: [ Snake ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08345))_
-
-> A python is a giant snake that can reach up to 10 meters in length. When it attacks its prey, it entangles it with its body and tries to strangle it to death. This attack resolves as strangling (see p.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08343, source-range-0b9dec90-08344))_
-
-> Languages=None
-
-> Perception=Five senses
-
-### Technical frame 4: [ Snake ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08346))_
-
-> 236). They are not poisonous.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08348, source-range-0b9dec90-08349, source-range-0b9dec90-08350, source-range-0b9dec90-08351, source-range-0b9dec90-08352, source-range-0b9dec90-08353, source-range-0b9dec90-08354, source-range-0b9dec90-08355, source-range-0b9dec90-08356, source-range-0b9dec90-08357, source-range-0b9dec90-08358, source-range-0b9dec90-08359, source-range-0b9dec90-08360, source-range-0b9dec90-08361))_
-
-> Monster Level=4
-
-> Rarity=12
-
-> Agility=9 Movement Speed=12
-
-> Number=One Frequency=Rare
-
-> Intellect=Animal Reaction=Hunger-based
-
-> Attack Points=Fangs: 11 (4)
-
-> Strike Points=8
-
-> Evasion Points=9 (2) Defense Points=7
-
-> Life Points/Resistance=18/13 (6)
-
-> Mental Points/Resistance=10/11 (4)
-
-> Special Abilities=Hypnotism (Resist target score=11)
-
-> Habitat=Meadows, underground labyrinths, caves
-
-> Languages=None
-
-> Perception=Five senses
-
-### Technical frame 5: [ Snake ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08363))_
-
-> Treat hypnotism the same as magic that belongs to mind . You can also stop it by blindfolding the target to prevent them from seeing the dance, or by forcing the hypnopython to stop dancing. If the python takes damage, it'll stop dancing for one round, allowing those affected by the dance to return to their senses. However, starting on the next round, they will begin dancing again.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08362))_
-
-> A python can attack and evade without penalty while dancing.

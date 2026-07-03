@@ -1,19 +1,43 @@
 ---
 page_id: javascriptallonge-element
 page_kind: concept
+page_family: broad-topic
 summary: Element: 21 statement(s) and 18 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-element@43687ee288dfb63662bde7da2db576cb
+projection_coverage: topic-javascriptallonge-element@12965a12028dd8a35d2b644c174f433c
 ---
 
 # Element
 
 What [[javascriptallonge]] covers about element:
 
-## Statements
+
+## Related pages
+
+### Shared technical atoms
+
+- [[javascriptallonge-list]] - shared statements and technical atoms: List shares source evidence from Composing and Decomposing Data / Self-Similarity: Let's convert our rules to array literals. The first rule is simple: [] is a list. How about the second rule? We can express that using a spread. Given an element e ... [truncated]; List shares technical record from Composing and Decomposing Data / Self-Similarity: [] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"] (3 shared statement(s), 6 shared atom(s))
+- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: Here's the scheme in JavaScript, using two-element arrays to represent cons cells:; Javascript shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: const cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d; (2 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-rest]] - shared technical atoms: Rest shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (3 shared atom(s))
+- [[javascriptallonge-copy-write]] - shared statements and technical atoms: Copy on Write shares source evidence from Yes. Consider this variation: / Copy on Write: This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunc ... [truncated]; Copy on Write shares technical record from Yes. Consider this variation: / Copy on Write: The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array. (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-return]] - shared statements and technical atoms: Return shares source evidence from Like this: / operations on ordered collections: For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that itera ... [truncated]; Return shares technical record from Like this: / operations on ordered collections: const first = (iterable) => iterable[Symbol.iterator]().next().value; const rest = (iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator] ... [truncated] (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-array]] - shared statements and technical atoms: Array shares source evidence from Composing and Decomposing Data / Arrays and Destructuring Arguments / element references: Array elements can be extracted using [ and ] as postfix operators. We pass an integer as an index of the element to extract:; Array shares technical record from Composing and Decomposing Data / Arrays and Destructuring Arguments / element references: const oneTwoThree = ["one", "two", "three"]; oneTwoThree[0] //=> 'one' oneTwoThree[1] //=> 'two' oneTwoThree[2] //=> 'three' (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-copy]] - shared statements and technical atoms: Copy shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: Again, it's just extracting a reference from a cons cell, it's very fast. In Lisp, it's blazingly fast because it happens in hardware. There's no making copies of ar ... [truncated]; Copy shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-functional-iterator]] - shared statements and technical atoms: Functional Iterators shares source evidence from Yes. Consider this variation: / Functional Iterators / iterating: Once again, we're mixing the code for iterating over an array with the code for calculating a sum. And worst of all, we're getting really low-level with details like ... [truncated]; Functional Iterators shares technical record from Yes. Consider this variation: / Functional Iterators / iterating: const arraySum = (array) => { let sum = 0; for (let i = 0; i < array.length; ++i) { sum += array[i]; } return sum } arraySum([1, 4, 9, 16, 25]) //=> 55 (1 shared statement(s), 1 shared atom(s))
+
+### Shared claims
+
+- [[javascriptallonge-collection]] - shared statements: Collection shares source evidence from Served by the Pot: Collections / Iteration and Iterables: All of these actions involve going through the contents one by one. Acting on the elements of a collection one at a time is called iterating over the contents , and ... [truncated] (2 shared statement(s))
+- [[javascriptallonge-problem]] - shared statements: Problem shares source evidence from Composing and Decomposing Data / Self-Similarity / linear recursion: Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and com ... [truncated] (2 shared statement(s))
+- [[javascriptallonge-function]] - shared statements: Function shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object w ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-important]] - shared statements: Important shares source evidence from Composing and Decomposing Data / Self-Similarity / linear recursion: Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and com ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-instead]] - shared statements: Instead shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object w ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-mapwith]] - shared statements: Mapwith shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere: The array we had in prepend is no longer used. In GC environments, it is marked as no longer being used, and eventually the garbage collector recycles the memory it ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-second]] - shared statements: Second shares source evidence from Like this: / Generating Iterables / state machines: The second element of the fibonacci sequence is one. (1 shared statement(s))
+## Statements by source section
 
 ### Composing and Decomposing Data / Arrays and Destructuring Arguments / element references
 
@@ -92,11 +116,13 @@ What [[javascriptallonge]] covers about element:
 
 ### Technical frame 1: Composing and Decomposing Data / Arrays and Destructuring Arguments / element references
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00836))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00837))_
 
-> As we can see, JavaScript Arrays are zero-based 56 .
+> We know that every array is its own unique entity, with its own unique reference. What about the contents of an array? Does it store references to the things we give it? Or copies of some kind?
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00835))_
+
+<a id="atom-technical-atom-6a9b189a9c39fb74"></a>
 
 ```
 const oneTwoThree = ["one", "two", "three"];
@@ -115,6 +141,8 @@ oneTwoThree[2]
 > Thanks to the parallel between array literals + spreads with destructuring + rests, we can also use the same rules to decompose lists:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00891))_
+
+<a id="atom-technical-atom-9d3e365c447e4d34"></a>
 
 ```
 []
@@ -135,6 +163,8 @@ oneTwoThree[2]
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00929))_
 
+<a id="atom-technical-atom-28f08e1ff8b916bb"></a>
+
 ```
 const truthyAll = ([first, ...rest]) => first === undefined
 ? []
@@ -150,6 +180,8 @@ truthyAll([null, true, 25, false, "foo"])
 > This is a Linked List 68 , it's just that those early Lispers used the names car and cdr after the hardware instructions, whereas today we use words like data and reference . But it works the same way: If we want the head of a list, we call car on it:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01036))_
+
+<a id="atom-technical-atom-9ce8c8bbddbd25dd"></a>
 
 ```
 const cons = (a, d) => [a, d],
@@ -167,6 +199,8 @@ cdr
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01046))_
 
+<a id="atom-technical-atom-507de994e6577937"></a>
+
 ```
 cdr(oneToFive)
 //=> [2,[3,[4,[5,null]]]]
@@ -180,6 +214,8 @@ cdr(oneToFive)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01056))_
 
+<a id="atom-technical-atom-e101f7e8ac776af8"></a>
+
 > We have avoided discussing rebinding and mutating values, but if we want to change elements of our lists, the naïve linked list implementation suffers as well: When we take the cdr of a linked list, we are sharing the elements.
 
 ### Technical frame 7: Yes. Consider this variation: / Copy on Write
@@ -189,6 +225,8 @@ cdr(oneToFive)
 > This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunch of bookkeeping to track references? We'll end up reinventing reference counting and garbage collection.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01228))_
+
+<a id="atom-technical-atom-bba78c8b3994a437"></a>
 
 > The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array.
 
@@ -200,6 +238,8 @@ cdr(oneToFive)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01229))_
 
+<a id="atom-technical-atom-107209144ad81087"></a>
+
 > Whereas if you have a linked list, and you take it's 'rest,' your 'child' list shares its nodes with the 'parent' list.
 
 ### Technical frame 9: Yes. Consider this variation: / Functional Iterators / iterating
@@ -209,6 +249,8 @@ cdr(oneToFive)
 > Once again, we're mixing the code for iterating over an array with the code for calculating a sum. And worst of all, we're getting really low-level with details like knowing that the elements of an array are indexed with consecutive integers that begin with 0 .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01287))_
+
+<a id="atom-technical-atom-61ae9b6a12610202"></a>
 
 ```
 const arraySum = (array) => {
@@ -230,6 +272,8 @@ arraySum([1, 4, 9, 16, 25])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01566))_
 
+<a id="atom-technical-atom-df54c8166a1c51e0"></a>
+
 ```
 ['some squares', ...someSquares]
 //=> ["some squares", 1, 4, 9, 16, 25]
@@ -243,6 +287,8 @@ arraySum([1, 4, 9, 16, 25])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01568))_
 
+<a id="atom-technical-atom-bc5647c8475105f4"></a>
+
 ```
 const firstAndSecondElement = (first, second) =>
 ({first, second})
@@ -252,11 +298,13 @@ firstAndSecondElement(...stack)
 
 ### Technical frame 12: Like this: / operations on ordered collections
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01609))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01607))_
 
-> like our other operations, rest preserves the ordered collection semantics of its argument.
+> For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest] :
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01608))_
+
+<a id="atom-technical-atom-d81d89fc363898dc"></a>
 
 ```
 const first = (iterable) =>
@@ -278,6 +326,8 @@ return iterator;
 > If you peel off isIterable and ignore the way that the iteration version uses [Symbol.iterator] and .next , we're left with the fact that the generating version calls itself recursively, and the iteration version maintains an explicit stack. In essence, both the generation and iteration implementations have stacks, but the generation version's stack is implicit , while the iteration version's stack is explicit .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01639))_
+
+<a id="atom-technical-atom-d14c6a73cd2e1891"></a>
 
 ```
 // Generation
@@ -304,11 +354,13 @@ generate([1, [2, [3, 4], 5]])
 
 ### Technical frame 14: We'll keep it simple: / yielding iterables
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01746))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01735))_
 
-> yield* is handy when writing generator functions that operate on or create iterables.
+> JavaScript handles the recursion for us using its own execution stack. This is clearly simpler than trying to maintain our own stack and remembering whether we are shifting and unshifting, or pushing and popping.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01739))_
+
+<a id="atom-technical-atom-06bb02d698b5a335"></a>
 
 ```
 function * append (...iterables) {
@@ -337,11 +389,13 @@ me
 
 ### Technical frame 15: We'll keep it simple: / yielding iterables
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01746))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01735))_
 
-> yield* is handy when writing generator functions that operate on or create iterables.
+> JavaScript handles the recursion for us using its own execution stack. This is clearly simpler than trying to maintain our own stack and remembering whether we are shifting and unshifting, or pushing and popping.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01742))_
+
+<a id="atom-technical-atom-3f887d1daf7a5385"></a>
 
 ```
 function * append (...iterables) {
@@ -358,11 +412,13 @@ console.log(word);
 
 ### Technical frame 16: We'll keep it simple: / yielding iterables
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01746))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01735))_
 
-> yield* is handy when writing generator functions that operate on or create iterables.
+> JavaScript handles the recursion for us using its own execution stack. This is clearly simpler than trying to maintain our own stack and remembering whether we are shifting and unshifting, or pushing and popping.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01743))_
+
+<a id="atom-technical-atom-a08bb83e790e552c"></a>
 
 ```
 //=>
@@ -376,11 +432,41 @@ do
 re
 ```
 
-### Technical frame 17: We'll keep it simple: / yielding iterables
+### Technical frame 17: We'll keep it simple: / Lazy and Eager Collections / lazy collection operations
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01746))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01791))_
 
-> yield* is handy when writing generator functions that operate on or create iterables.
+> This expression begins with a stack containing 30 elements. The top two are 29 and 28 . It maps to the squares of all 30 numbers, but our code for mapping an iteration returns an iterable that can iterate over the squares of our numbers, not an array or stack of the squares. Same with .filter , we get an iterable that can iterate over the even squares, but not an actual stack or array.
+
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01790))_
+
+<a id="atom-technical-atom-e10108dd925b5dd3"></a>
+
+```
+Stack.from([ 0,
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+20, 21, 22, 23, 24, 25, 26, 27, 28, 29])
+.map((x) => x * x)
+.filter((x) => x % 2 == 0)
+.first()
+```
+
+### Technical atom 18
+
+<a id="atom-technical-atom-aba6cb6873b1bd9a"></a>
+
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01741))_
+
+> Tucked inside of it is the same three-line idiom for yielding each element of an iterable. There is an abbreviation for this, we can use yield * to yield all the elements of an iterable:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01744))_
 
@@ -408,56 +494,6 @@ console.log(i);
 5
 ```
 
-### Technical frame 18: We'll keep it simple: / Lazy and Eager Collections / lazy collection operations
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01791))_
-
-> This expression begins with a stack containing 30 elements. The top two are 29 and 28 . It maps to the squares of all 30 numbers, but our code for mapping an iteration returns an iterable that can iterate over the squares of our numbers, not an array or stack of the squares. Same with .filter , we get an iterable that can iterate over the even squares, but not an actual stack or array.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01790))_
-
-```
-Stack.from([ 0,
-1,
-2,
-3,
-4,
-5,
-6,
-7,
-8,
-9,
-10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
-20, 21, 22, 23, 24, 25, 26, 27, 28, 29])
-.map((x) => x * x)
-.filter((x) => x % 2 == 0)
-.first()
-```
-
-
-## Related pages
-
-- [[javascriptallonge-list]] - shared statements and technical atoms: List shares source evidence from Composing and Decomposing Data / Self-Similarity: Let's convert our rules to array literals. The first rule is simple: [] is a list. How about the second rule? We can express that using a spread. Given an element e ... [truncated]; List shares technical record from Composing and Decomposing Data / Self-Similarity: [] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"] (3 shared statement(s), 6 shared atom(s))
-- [[javascriptallonge-javascript]] - shared statements and technical atoms: Javascript shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: Here's the scheme in JavaScript, using two-element arrays to represent cons cells:; Javascript shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: const cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d; (2 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-copy-write]] - shared statements and technical atoms: Copy on Write shares source evidence from Yes. Consider this variation: / Copy on Write: This is remarkably unsafe. If we know that a list doesn't share any elements with another list, we can safely modify it. But how do we keep track of that? Add a bunc ... [truncated]; Copy on Write shares technical record from Yes. Consider this variation: / Copy on Write: The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array. (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-return]] - shared statements and technical atoms: Return shares source evidence from Like this: / operations on ordered collections: For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that itera ... [truncated]; Return shares technical record from Like this: / operations on ordered collections: const first = (iterable) => iterable[Symbol.iterator]().next().value; const rest = (iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator] ... [truncated] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-copy]] - shared statements and technical atoms: Copy shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere: The array we had in prepend is no longer used. In GC environments, it is marked as no longer being used, and eventually the garbage collector recycles the memory it ... [truncated]; Copy shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (2 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-array]] - shared statements and technical atoms: Array shares source evidence from Composing and Decomposing Data / Arrays and Destructuring Arguments / element references: Array elements can be extracted using [ and ] as postfix operators. We pass an integer as an index of the element to extract:; Array shares technical record from Composing and Decomposing Data / Arrays and Destructuring Arguments / element references: const oneTwoThree = ["one", "two", "three"]; oneTwoThree[0] //=> 'one' oneTwoThree[1] //=> 'two' oneTwoThree[2] //=> 'three' (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-functional-iterator]] - shared statements and technical atoms: Functional Iterators shares source evidence from Yes. Consider this variation: / Functional Iterators / iterating: Once again, we're mixing the code for iterating over an array with the code for calculating a sum. And worst of all, we're getting really low-level with details like ... [truncated]; Functional Iterators shares technical record from Yes. Consider this variation: / Functional Iterators / iterating: const arraySum = (array) => { let sum = 0; for (let i = 0; i < array.length; ++i) { sum += array[i]; } return sum } arraySum([1, 4, 9, 16, 25]) //=> 55 (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-reference]] - shared statements and technical atoms: Reference shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / so why arrays: Arrays avoid this problem by pessimistically copying all the references whenever we extract an element or sequence of elements from them (We'll see this explained la ... [truncated]; Reference shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-rest]] - shared technical atoms: Rest shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (4 shared atom(s))
-- [[javascriptallonge-literal]] - shared technical atoms: Literal shares technical record from Composing and Decomposing Data / Self-Similarity: [] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"] (1 shared atom(s))
-- [[javascriptallonge-method]] - shared technical atoms: Method shares technical record from We'll keep it simple: / Lazy and Eager Collections / lazy collection operations: Stack.from([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]) .map((x) => x * x) .filter((x) => x % 2 == 0) .first() (1 shared atom(s))
-- [[javascriptallonge-note]] - shared technical atoms: Note shares technical record from Like this: / iterables: ['some squares', ...someSquares] //=> ["some squares", 1, 4, 9, 16, 25] (1 shared atom(s))
-- [[javascriptallonge-rule]] - shared technical atoms: Rule shares technical record from Composing and Decomposing Data / Self-Similarity: [] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"] (1 shared atom(s))
-- [[javascriptallonge-structure]] - shared technical atoms: Structure shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (1 shared atom(s))
-- [[javascriptallonge-collection]] - shared statements: Collection shares source evidence from Served by the Pot: Collections / Iteration and Iterables: All of these actions involve going through the contents one by one. Acting on the elements of a collection one at a time is called iterating over the contents , and ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-problem]] - shared statements: Problem shares source evidence from Composing and Decomposing Data / Self-Similarity / linear recursion: Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and com ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-function]] - shared statements: Function shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object w ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-important]] - shared statements: Important shares source evidence from Composing and Decomposing Data / Self-Similarity / linear recursion: Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and com ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-instead]] - shared statements: Instead shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object w ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-mapwith]] - shared statements: Mapwith shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere: The array we had in prepend is no longer used. In GC environments, it is marked as no longer being used, and eventually the garbage collector recycles the memory it ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-second]] - shared statements: Second shares source evidence from Like this: / Generating Iterables / state machines: The second element of the fibonacci sequence is one. (1 shared statement(s))
 
 ## Source
 

@@ -1,19 +1,42 @@
 ---
 page_id: javascriptallonge-iterator
 page_kind: concept
-summary: Iterator: 26 statement(s) and 27 atom(s) from raw/javascriptallonge.pdf.
+page_family: broad-topic
+summary: Iterator: 25 statement(s) and 26 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-iterator@43f6b2edf4fab1d60a9e34c02bb9c859
+projection_coverage: topic-javascriptallonge-iterator@f8a7b54c77aa56ef158768442d6fee25
 ---
 
 # Iterator
 
 What [[javascriptallonge]] covers about iterator:
 
-## Statements
+
+## Related pages
+
+### Shared technical atoms
+
+- [[javascriptallonge-object]] - shared statements and technical atoms: Object shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object w ... [truncated]; Object shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (5 shared statement(s), 6 shared atom(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Yes. Consider this variation: / Functional Iterators / caveat: For all intents and purposes, once you pass an iterator to a function, you can expect that you no longer 'own' that iterator, and that its state either has changed or will change.; Function shares technical record from Yes. Consider this variation: / Functional Iterators / unfolding and laziness: const NumberIterator = (number = 0) => () => ({ done: false, value: number++ }) fromOne = NumberIterator(1); fromOne().value; //=> 1 fromOne().value; //=> 2 fromOne( ... [truncated] (3 shared statement(s), 6 shared atom(s))
+- [[javascriptallonge-symbol]] - shared statements and technical atoms: Symbol shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Symbol shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared statement(s), 6 shared atom(s))
+- [[javascriptallonge-method]] - shared statements and technical atoms: Method shares source evidence from Like this:: Now our .iterator() method is returning an iterator object. When working with objects, we do things the object way. But having started by building functional iterato ... [truncated]; Method shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (3 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-return]] - shared statements and technical atoms: Return shares source evidence from We'll keep it simple: / javascript's generators: Invoking only("you") returns an iterator that we can call with .next() , and it yields "you" . Invoking only more than once gives us fresh iterators each time:; Return shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (2 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-functional]] - shared statements and technical atoms: Functional shares source evidence from Like this: / Generating Iterables: Let's consider how they work. Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly unt ... [truncated]; Functional shares technical record from Like this: / Generating Iterables: Iterators have to arrange its own state such that when you call them, they compute and return the next item. (1 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-iterable]] - shared statements and technical atoms: Iterable shares source evidence from We'll keep it simple: / generators and iterables: This object declares a [Symbol.iterator] function that makes it iterable. Because it's declared *[Symbol.iterator] , it's a generator instead of an iterator.; Iterable shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (1 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-generator]] - shared technical atoms: Generator shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (3 shared atom(s))
+
+### Shared claims
+
+- [[javascriptallonge-evaluate]] - shared statements: Evaluate shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object. (1 shared statement(s))
+- [[javascriptallonge-javascript]] - shared statements: Javascript shares source evidence from Like this: / summary: Separating concerns with iterators speaks to JavaScript's fundamental nature: It's a language that wants to compose functionality out of small, singe-responsibility ... [truncated] (1 shared statement(s))
+
+### Topics
+
+- [[javascriptallonge-functional-iterator]] - narrower topic: Functional Iterators shares source evidence from Yes. Consider this variation: / Functional Iterators / unfolding and laziness: Mapping and filtering iterators allows us to compose the parts we already have, rather than writing a tricky bit of code with ifs and whiles and boundary conditions.; Functional Iterators shares technical record from Yes. Consider this variation: / Functional Iterators / unfolding and laziness: const NumberIterator = (number = 0) => () => ({ done: false, value: number++ }) fromOne = NumberIterator(1); fromOne().value; //=> 1 fromOne().value; //=> 2 fromOne( ... [truncated] (4 shared statement(s), 7 shared atom(s))
+## Statements by source section
 
 ### Yes. Consider this variation: / Functional Iterators / unfolding and laziness
 
@@ -77,10 +100,6 @@ What [[javascriptallonge]] covers about iterator:
 
 - The iterator resumes execution from the point where it yielded the last value. _(javascriptallonge.pdf (source-range-7239e085-01687))_
 
-- The iterator resumes execution from the point where it yielded the last value. _(javascriptallonge.pdf (source-range-7239e085-01692))_
-
-- The iterator resumes execution from the point where it yielded the last value. _(javascriptallonge.pdf (source-range-7239e085-01697))_
-
 - Instead of thinking of there being on execution context, we can imagine that there are two execution contexts. With an iterator, we can call them the producer and the consumer . The iterator is the producer, and the code that iterates over it is the consumer. When the consumer calls .next() , it 'suspends' and the producer starts running. When the producer yields a value, the producer suspends and the consumer starts running, taking the value from the result of calling .next() . _(javascriptallonge.pdf (source-range-7239e085-01702))_
 
 ### We'll keep it simple: / generators and iterables
@@ -90,10 +109,6 @@ What [[javascriptallonge]] covers about iterator:
 ### We'll keep it simple: / more generators
 
 - We've writing a function that returns an iterator, but we used a generator to do it. And the generator's syntax allows us to use JavaScript's natural management of state instead of constantly rolling our own. _(javascriptallonge.pdf (source-range-7239e085-01725))_
-
-### We'll keep it simple: / rewriting iterable operations
-
-- first works directly with iterators and remains unchanged, but rest can be rewritten as a generator: _(javascriptallonge.pdf (source-range-7239e085-01756))_
 
 ### We'll keep it simple: / Summary
 
@@ -109,6 +124,8 @@ What [[javascriptallonge]] covers about iterator:
 > A function that starts with a seed and expands it into a data structure is called an unfold . It's the opposite of a fold. It's possible to write a generic unfold mechanism, but let's pass on to what we can do with unfolded iterators.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01300))_
+
+<a id="atom-technical-atom-0ec5247e8a0095b9"></a>
 
 ```
 const NumberIterator = (number = 0) =>
@@ -134,6 +151,8 @@ fromOne().value;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01305))_
 
+<a id="atom-technical-atom-341fb48fed0de0da"></a>
+
 ```
 const mapIteratorWith = (fn, iterator) =>
 () => {
@@ -154,6 +173,8 @@ squares().value
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01306))_
 
+<a id="atom-technical-atom-977030f55e7c3609"></a>
+
 ```
 //=> 4
 squares().value
@@ -167,6 +188,8 @@ squares().value
 > How about the squares of the first five odd numbers? We'll need an iterator that produces odd numbers. We can write that directly:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01308))_
+
+<a id="atom-technical-atom-b6c7b5f8c2b10650"></a>
 
 ```
 const take = (iterator, numberToTake) => {
@@ -201,6 +224,8 @@ toArray(take(squares, 5))
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01310))_
 
+<a id="atom-technical-atom-94d949bc4f3d92c7"></a>
+
 ```
 const odds = () => {
 ```
@@ -212,6 +237,8 @@ const odds = () => {
 > We could also write a filter for iterators to accompany our mapping function:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01311))_
+
+<a id="atom-technical-atom-3f2274499b4e19f1"></a>
 
 ```
 let number = 1;
@@ -234,6 +261,8 @@ toArray(take(squareOf(odds()), 5))
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01313))_
 
+<a id="atom-technical-atom-4efea8fa4b4f428a"></a>
+
 ```
 const filterIteratorWith = (fn, iterator) =>
 () => {
@@ -254,6 +283,8 @@ toArray(take(squareOf(oddsOf(NumberIterator(1))), 5))
 > The for...of loop works directly with any object that is iterable , meaning it works with any object that has a Symbol.iterator method that returns an object iterator. Here's another linked list, this one is iterable:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01560))_
+
+<a id="atom-technical-atom-47f6d9ee5b266831"></a>
 
 ```
 const Stack3 = () =>
@@ -302,6 +333,8 @@ const stack = Stack3();
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01561))_
 
+<a id="atom-technical-atom-1433f8f324b5f87c"></a>
+
 ```
 stack.push(2000);
 stack.push(10);
@@ -338,6 +371,8 @@ iterableSum(stack)
 > As we can see, we can use for...of with linked lists just as easily as with stacks. And there's one more thing: You recall that the spread operator ( ... ) can spread the elements of an array in an array literal or as parameters in a function invocation.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01563))_
+
+<a id="atom-technical-atom-8e85f2ecd1e2c116"></a>
 
 ```
 const EMPTY = {
@@ -384,6 +419,8 @@ iterableSum(someSquares)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01583))_
 
+<a id="atom-technical-atom-abc21aecdd5f4a68"></a>
+
 ```
 const RandomNumbers = {
 [Symbol.iterator]: () =>
@@ -419,6 +456,8 @@ console.log(i)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01589))_
 
+<a id="atom-technical-atom-54c71ac655b9bf50"></a>
+
 ```
 const mapWith = (fn, collection) =>
 ({
@@ -441,6 +480,8 @@ return ({done, value: done ? undefined : fn(value)});
 > Numbers is an ordered collection. We invoke mapWith((x) => 2 * x, Numbers) and get Evens . Evens works just as if we'd written this:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01592))_
+
+<a id="atom-technical-atom-0394bbb3ce97162b"></a>
 
 ```
 const Evens = mapWith((x) => 2 * x, Numbers);
@@ -470,6 +511,8 @@ console.log(i)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01594))_
 
+<a id="atom-technical-atom-0cd71c1b5babb6ac"></a>
+
 ```
 const Evens =
 {
@@ -493,6 +536,8 @@ return ({done, value: done ? undefined : 2 *value});
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01627))_
 
+<a id="atom-technical-atom-c448193e912cee6f"></a>
+
 > Iterators have to arrange its own state such that when you call them, they compute and return the next item.
 
 ### Technical frame 16: Like this: / Generating Iterables
@@ -502,6 +547,8 @@ return ({done, value: done ? undefined : 2 *value});
 > Well, we've written our iterator as a server . It waits until given a request, and then it returns exactly one item. Then it waits for the next request. There is no concept of pushing numbers out from the iterator, just waiting until a number is pulled out of the iterator by whatever code consumes numbers.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01628))_
+
+<a id="atom-technical-atom-9a284935f06cd502"></a>
 
 ```
 const Numbers = {
@@ -523,6 +570,8 @@ next: () =>
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01634))_
 
+<a id="atom-technical-atom-d376d8f41d8e39ca"></a>
+
 ```
 // Iteration
 let n = 0;
@@ -542,6 +591,8 @@ console.log(n++)
 > If you peel off isIterable and ignore the way that the iteration version uses [Symbol.iterator] and .next , we're left with the fact that the generating version calls itself recursively, and the iteration version maintains an explicit stack. In essence, both the generation and iteration implementations have stacks, but the generation version's stack is implicit , while the iteration version's stack is explicit .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01642))_
+
+<a id="atom-technical-atom-83d9e3adc3013b32"></a>
 
 ```
 const isIterable = (something) =>
@@ -585,6 +636,8 @@ console.log(n)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01651))_
 
+<a id="atom-technical-atom-c78775f73f3b3038"></a>
+
 ```
 // Generation
 const fibonacci = () => {
@@ -618,6 +671,8 @@ fibonacci()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01652))_
 
+<a id="atom-technical-atom-8e86bfb8a3fabe45"></a>
+
 ```
 55
 89
@@ -633,6 +688,8 @@ fibonacci()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01666))_
 
+<a id="atom-technical-atom-1f3e69e493538b6d"></a>
+
 ```
 function * empty () {};
 empty().next()
@@ -647,6 +704,8 @@ empty().next()
 > Invoking only("you") returns an iterator that we can call with .next() , and it yields "you" . Invoking only more than once gives us fresh iterators each time:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01672))_
+
+<a id="atom-technical-atom-879df662b6da097f"></a>
 
 ```
 only("you").next()
@@ -664,6 +723,8 @@ only("the lonely").next()
 > Invoking only("you") returns an iterator that we can call with .next() , and it yields "you" . Invoking only more than once gives us fresh iterators each time:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01674))_
+
+<a id="atom-technical-atom-35869ebc98c52393"></a>
 
 ```
 const sixteen = only("sixteen");
@@ -683,6 +744,8 @@ sixteen.next()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01709))_
 
+<a id="atom-technical-atom-f851858a3f0a60d5"></a>
+
 > If we call our generator function more than once, we get new iterators.
 
 ### Technical frame 25: We'll keep it simple: / generators and iterables
@@ -692,6 +755,8 @@ sixteen.next()
 > This pattern is encouraged, so much so that JavaScript provides a concise syntax for writing generator methods for objects:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01710))_
+
+<a id="atom-technical-atom-df68b9aee54b4fac"></a>
 
 ```
 const ThreeNumbers = {
@@ -734,6 +799,8 @@ iterator.next()
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01713))_
 
+<a id="atom-technical-atom-08b3d4cd0486cddf"></a>
+
 ```
 const ThreeNumbers = {
 *[Symbol.iterator] () {
@@ -744,53 +811,6 @@ yield 3
 }
 ```
 
-### Technical frame 27: We'll keep it simple: / rewriting iterable operations
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01756))_
-
-> first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01757))_
-
-```
-const first = (iterable) =>
-iterable[Symbol.iterator]().next().value;
-function * rest (iterable) {
-const iterator = iterable[Symbol.iterator]();
-iterator.next();
-yield * iterator;
-}
-```
-
-
-## Related pages
-
-- [[javascriptallonge-functional-iterator]] - narrower topic: Functional Iterators shares source evidence from Yes. Consider this variation: / Functional Iterators / unfolding and laziness: Mapping and filtering iterators allows us to compose the parts we already have, rather than writing a tricky bit of code with ifs and whiles and boundary conditions.; Functional Iterators shares technical record from Yes. Consider this variation: / Functional Iterators / unfolding and laziness: const NumberIterator = (number = 0) => () => ({ done: false, value: number++ }) fromOne = NumberIterator(1); fromOne().value; //=> 1 fromOne().value; //=> 2 fromOne( ... [truncated] (5 shared statement(s), 7 shared atom(s))
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Yes. Consider this variation: / Functional Iterators / caveat: For all intents and purposes, once you pass an iterator to a function, you can expect that you no longer 'own' that iterator, and that its state either has changed or will change.; Function shares technical record from Yes. Consider this variation: / Functional Iterators / unfolding and laziness: const NumberIterator = (number = 0) => () => ({ done: false, value: number++ }) fromOne = NumberIterator(1); fromOne().value; //=> 1 fromOne().value; //=> 2 fromOne( ... [truncated] (5 shared statement(s), 10 shared atom(s))
-- [[javascriptallonge-object]] - shared statements and technical atoms: Object shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: Fortunately, an iterator object is almost as simple as an iterator function. Instead of having a function that you call to get the next element, you have an object w ... [truncated]; Object shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (5 shared statement(s), 6 shared atom(s))
-- [[javascriptallonge-symbol]] - shared statements and technical atoms: Symbol shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Symbol shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (2 shared statement(s), 6 shared atom(s))
-- [[javascriptallonge-method]] - shared statements and technical atoms: Method shares source evidence from Like this:: Now our .iterator() method is returning an iterator object. When working with objects, we do things the object way. But having started by building functional iterato ... [truncated]; Method shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (3 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-functional]] - shared statements and technical atoms: Functional shares source evidence from Like this: / summary: Separating concerns with iterators speaks to JavaScript's fundamental nature: It's a language that wants to compose functionality out of small, singe-responsibility ... [truncated]; Functional shares technical record from Like this: / Generating Iterables: Iterators have to arrange its own state such that when you call them, they compute and return the next item. (2 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-return]] - shared statements and technical atoms: Return shares source evidence from We'll keep it simple: / javascript's generators: Invoking only("you") returns an iterator that we can call with .next() , and it yields "you" . Invoking only more than once gives us fresh iterators each time:; Return shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (2 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-iterable]] - shared statements and technical atoms: Iterable shares source evidence from We'll keep it simple: / generators and iterables: This object declares a [Symbol.iterator] function that makes it iterable. Because it's declared *[Symbol.iterator] , it's a generator instead of an iterator.; Iterable shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-expression]] - shared statements and technical atoms: Expression shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.; Expression shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-instead]] - shared statements and technical atoms: Instead shares source evidence from We'll keep it simple: / Summary: A generator is a function that is defined with function * and uses yield (or yield * ) to generate values. Using a generator instead of writing an iterator object th ... [truncated]; Instead shares technical record from Like this: / iterables: const Stack3 = () => ({ array: [], index: -1, push (value) { return this.array[this.index += 1] = value; }, pop () { const value = this.array[this.index]; this.array ... [truncated] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-purpose]] - shared statements and technical atoms: Purpose shares source evidence from Yes. Consider this variation: / Functional Iterators / caveat: For all intents and purposes, once you pass an iterator to a function, you can expect that you no longer 'own' that iterator, and that its state either has changed or will change.; Purpose shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-write]] - shared statements and technical atoms: Write shares source evidence from Like this: / iterables: So, when a standard way to write iterators was added to the JavaScript language, it didn't make sense to use a method like .iterator() for it: That would conflict wi ... [truncated]; Write shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-generator]] - shared technical atoms: Generator shares technical record from We'll keep it simple: / generators and iterables: If we call our generator function more than once, we get new iterators. (3 shared atom(s))
-- [[javascriptallonge-mapwith]] - shared technical atoms: Mapwith shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (3 shared atom(s))
-- [[javascriptallonge-note]] - shared technical atoms: Note shares technical record from Like this: / Generating Iterables / state machines: // Generation const fibonacci = () => { let a, b; console.log(a = 0); console.log(b = 1); while (true) { [a, b] = [b, a + b]; console.log(b); } } fibonacci() //=> 0 ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-operation]] - shared technical atoms: Operation shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-data]] - shared technical atoms: Data shares technical record from Yes. Consider this variation: / Functional Iterators / unfolding and laziness: const NumberIterator = (number = 0) => () => ({ done: false, value: number++ }) fromOne = NumberIterator(1); fromOne().value; //=> 1 fromOne().value; //=> 2 fromOne( ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-discussing]] - shared technical atoms: Discussing shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-idea]] - shared technical atoms: Idea shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-needn]] - shared technical atoms: Needn shares technical record from Like this: / ordered collections: const RandomNumbers = { [Symbol.iterator]: () => ({ next () { return {value: Math.random()}; } }) } for (const i of RandomNumbers) { console.log(i) } //=> 0.49405212 ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-pattern]] - shared technical atoms: Pattern shares technical record from We'll keep it simple: / generators and iterables: const ThreeNumbers = { *[Symbol.iterator] () { yield 1; yield 2; yield 3 } } (1 shared atom(s))
-- [[javascriptallonge-version]] - shared technical atoms: Version shares technical record from Like this: / Generating Iterables / recursive iterators: const isIterable = (something) => !!something[Symbol.iterator]; const treeIterator = (iterable) => { const iterators = [ iterable[Symbol.iterator]() ]; return () => ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-writing]] - shared statements: Writing shares source evidence from We'll keep it simple: / more generators: We've writing a function that returns an iterator, but we used a generator to do it. And the generator's syntax allows us to use JavaScript's natural management of s ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-evaluate]] - shared statements: Evaluate shares source evidence from Like this: / iterables: The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object. (1 shared statement(s))
-- [[javascriptallonge-javascript]] - shared statements: Javascript shares source evidence from Like this: / summary: Separating concerns with iterators speaks to JavaScript's fundamental nature: It's a language that wants to compose functionality out of small, singe-responsibility ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-language]] - shared statements: Language shares source evidence from Like this: / summary: Separating concerns with iterators speaks to JavaScript's fundamental nature: It's a language that wants to compose functionality out of small, singe-responsibility ... [truncated] (1 shared statement(s))
 
 ## Source
 

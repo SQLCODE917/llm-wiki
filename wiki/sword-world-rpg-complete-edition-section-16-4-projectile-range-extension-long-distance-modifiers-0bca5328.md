@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 16.4 Projectile Range Extension / Long Distance Modifiers: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-4-projectile-range-extension-long-distance-modifiers-0bca5328@2114324669d7670d5ef7ffaf3b962314
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-4-projectile-range-extension-long-distance-modifiers-0bca5328@a33e23d694f4248ef849c0783ce3b853
 ---
 
 # 16.4 Projectile Range Extension / Long Distance Modifiers
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-16-4-proje
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-16-4-projectile-range-extension-f528d0dd]] - broader source section: 16.4 Projectile Range Extension
 

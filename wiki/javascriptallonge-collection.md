@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-collection
 page_kind: concept
-summary: Collection: 7 statement(s) and 11 atom(s) from raw/javascriptallonge.pdf.
+page_family: topic-concept
+summary: Collection: 7 statement(s) and 10 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-collection@7ce227fd70e8da1999d515f7181685f4
+projection_coverage: topic-javascriptallonge-collection@881d1d8a79f4f6bbf5ba1133aeb9229e
 ---
 
 # Collection
@@ -44,35 +45,15 @@ What [[javascriptallonge]] covers about collection:
 
 ## Technical atoms
 
-### Technical frame 1: Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01543))_
-
-> If we write a program with the presumption that 'everything is an object,' we can write maps, folds, and filters that work on objects. We just ask the object for an iterator, and work on the iterator. Our functions don't need to know anything about how an object implements iteration, and we get the benefit of lazily traversing our objects.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01542))_
-
-```
-const collectionSum = (collection) => {
-const iterator = collection.iterator();
-let eachIteration,
-sum = 0;
-while ((eachIteration = iterator(), !eachIteration.done)) {
-sum += eachIteration.value;
-}
-return sum
-}
-collectionSum(stack)
-//=> 6
-```
-
-### Technical frame 2: We'll keep it simple: / Lazy and Eager Collections / implementing methods with iteration
+### Technical frame 1: We'll keep it simple: / Lazy and Eager Collections / implementing methods with iteration
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01776))_
 
 > To use LazyCollection , we mix it into an any iterable object. For simplicity, we'll show how to mix it into Numbers and Pair . But it can also be mixed into prototypes (a/k/a 'classes'), traits, or other OO constructs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01772))_
+
+<a id="atom-technical-atom-a76b12e0a5829382"></a>
 
 ```
 const extend = function (consumer, ...providers) {
@@ -114,13 +95,15 @@ accumulator = fn(accumulator, iterationResult.value);
 return accumulator;
 ```
 
-### Technical frame 3: We'll keep it simple: / Lazy and Eager Collections / implementing methods with iteration
+### Technical frame 2: We'll keep it simple: / Lazy and Eager Collections / implementing methods with iteration
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01776))_
 
 > To use LazyCollection , we mix it into an any iterable object. For simplicity, we'll show how to mix it into Numbers and Pair . But it can also be mixed into prototypes (a/k/a 'classes'), traits, or other OO constructs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01773))_
+
+<a id="atom-technical-atom-1dd93a5412bdd436"></a>
 
 ```
 },
@@ -161,13 +144,15 @@ done, value: done ? undefined : value
 }
 ```
 
-### Technical frame 4: We'll keep it simple: / Lazy and Eager Collections / implementing methods with iteration
+### Technical frame 3: We'll keep it simple: / Lazy and Eager Collections / implementing methods with iteration
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01776))_
 
 > To use LazyCollection , we mix it into an any iterable object. For simplicity, we'll show how to mix it into Numbers and Pair . But it can also be mixed into prototypes (a/k/a 'classes'), traits, or other OO constructs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01774))_
+
+<a id="atom-technical-atom-f8a7f12c9c5c68d8"></a>
 
 ```
 }, LazyCollection)
@@ -206,13 +191,15 @@ take(numberToTake) {
 return Object.assign({
 ```
 
-### Technical frame 5: We'll keep it simple: / Lazy and Eager Collections / lazy collection operations
+### Technical frame 4: We'll keep it simple: / Lazy and Eager Collections / lazy collection operations
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01800))_
 
 > Balanced against their flexibility, our 'lazy collections' use structure sharing. If we mutate a collection after taking an iterable, we might get an unexpected result. This is why 'pure' functional languages like Haskell combine lazy semantics with immutable collections, and why even 'impure' languages like Clojure emphasize the use of immutable collections.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01799))_
+
+<a id="atom-technical-atom-8672457350f9a8ff"></a>
 
 ```
 const Numbers = Object.assign({
@@ -232,13 +219,15 @@ Numbers
 //=> 1331
 ```
 
-### Technical frame 6: We'll keep it simple: / Lazy and Eager Collections / eager collections
+### Technical frame 5: We'll keep it simple: / Lazy and Eager Collections / eager collections
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01806))_
 
 > Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01803))_
+
+<a id="atom-technical-atom-260d903a41c4e031"></a>
 
 ```
 const extend = function (consumer, ...providers) {
@@ -254,13 +243,15 @@ return consumer
 };
 ```
 
-### Technical frame 7: We'll keep it simple: / Lazy and Eager Collections / eager collections
+### Technical frame 6: We'll keep it simple: / Lazy and Eager Collections / eager collections
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01806))_
 
 > Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01804))_
+
+<a id="atom-technical-atom-a84a9a6634bcef5c"></a>
 
 ```
 const EagerCollection = (gatherable) =>
@@ -301,13 +292,15 @@ if (fn(element)) return element;
 until(fn) {
 ```
 
-### Technical frame 8: We'll keep it simple: / Lazy and Eager Collections / eager collections
+### Technical frame 7: We'll keep it simple: / Lazy and Eager Collections / eager collections
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01806))_
 
 > Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01805))_
+
+<a id="atom-technical-atom-42f03cd992a4e79f"></a>
 
 ```
 const original = this;
@@ -348,13 +341,15 @@ yield element;
 });
 ```
 
-### Technical frame 9: We'll keep it simple: / Lazy and Eager Collections / eager collections
+### Technical frame 8: We'll keep it simple: / Lazy and Eager Collections / eager collections
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01806))_
 
 > Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01807))_
+
+<a id="atom-technical-atom-6e8c82aa1db29bdf"></a>
 
 ```
 const EMPTY = {
@@ -391,13 +386,15 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 //=>
 ```
 
-### Technical frame 10: We'll keep it simple: / Lazy and Eager Collections / eager collections
+### Technical frame 9: We'll keep it simple: / Lazy and Eager Collections / eager collections
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01806))_
 
 > Here is our Pair implementation. Pair is gatherable, because it implements .from() . We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01808))_
+
+<a id="atom-technical-atom-2b2f858d8e7ab9b6"></a>
 
 ```
 {"car": 2,
@@ -413,13 +410,15 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 }
 ```
 
-### Technical frame 11: We get: / interactive generators
+### Technical frame 10: We get: / interactive generators
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01941))_
 
 > Served by the Pot: Collections 260 } } break ; // ... } } const aNaughtsAndCrossesGame = generatorNaughtsAndCrosses(); We can then get the first move by calling .next() . Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn't started yet. If we wanted to pass some state to the generator before it begins, we'd do that with parameters.): aNaughtsAndCrossesGame.next().value //=> 0 aNaughtsAndCrossesGame.next(1)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01940))_
+
+<a id="atom-technical-atom-c587d1518ea98f21"></a>
 
 ```
 function* generatorNaughtsAndCrosses () {
@@ -451,16 +450,22 @@ break;
 
 ## Related pages
 
-- [[javascriptallonge-eager-collection]] - narrower topic: Eager Collection shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const extend = function (consumer, ...providers) { for (let i = 0; i < providers.length; ++i) { const provider = providers[i]; for (let key in provider) { if (provid ... [truncated] (5 shared atom(s))
-- [[javascriptallonge-object]] - shared statements and technical atoms: Object shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: In programs involving large collections of objects, it can be handy to implement iterators as objects, rather than functions. The mechanics of iterating can then be ... [truncated]; Object shares technical record from Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators: const collectionSum = (collection) => { const iterator = collection.iterator(); let eachIteration, sum = 0; while ((eachIteration = iterator(), !eachIteration.done)) ... [truncated] (2 shared statement(s), 1 shared atom(s))
+### Shared technical atoms
+
 - [[javascriptallonge-method]] - shared technical atoms: Method shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const extend = function (consumer, ...providers) { for (let i = 0; i < providers.length; ++i) { const provider = providers[i]; for (let key in provider) { if (provid ... [truncated] (5 shared atom(s))
-- [[javascriptallonge-lazy]] - shared technical atoms: Lazy shares technical record from We'll keep it simple: / Lazy and Eager Collections / implementing methods with iteration: const extend = function (consumer, ...providers) { for (let i = 0; i < providers.length; ++i) { const provider = providers[i]; for (let key in provider) { if (provid ... [truncated] (4 shared atom(s))
 - [[javascriptallonge-pair]] - shared technical atoms: Pair shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const EagerCollection = (gatherable) => ({ map(fn) { const original = this; return gatherable.from( (function* () { for (let element of original) { yield fn(element) ... [truncated] (4 shared atom(s))
-- [[javascriptallonge-function]] - shared technical atoms: Function shares technical record from Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators: const collectionSum = (collection) => { const iterator = collection.iterator(); let eachIteration, sum = 0; while ((eachIteration = iterator(), !eachIteration.done)) ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-write]] - shared technical atoms: Write shares technical record from Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators: const collectionSum = (collection) => { const iterator = collection.iterator(); let eachIteration, sum = 0; while ((eachIteration = iterator(), !eachIteration.done)) ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-functional-iterator]] - shared technical atoms: Functional Iterators shares technical record from Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators: const collectionSum = (collection) => { const iterator = collection.iterator(); let eachIteration, sum = 0; while ((eachIteration = iterator(), !eachIteration.done)) ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-function]] - shared technical atoms: Function shares technical record from We get: / interactive generators: function* generatorNaughtsAndCrosses () { const x1 = yield 0; switch (x1) { case 1: const x2 = yield 6; switch (x2) { case 2: case 4: case 5: case 7: case 8: yield 3 ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-lazy]] - shared technical atoms: Lazy shares technical record from We'll keep it simple: / Lazy and Eager Collections / lazy collection operations: const Numbers = Object.assign({ [Symbol.iterator]: () => { let n = 0; return { next: () => ({done: false, value: n++}) } } }, LazyCollection); const firstCubeOver123 ... [truncated] (1 shared atom(s))
+- [[javascriptallonge-write]] - shared technical atoms: Write shares technical record from We'll keep it simple: / Lazy and Eager Collections / lazy collection operations: const Numbers = Object.assign({ [Symbol.iterator]: () => { let n = 0; return { next: () => ({done: false, value: n++}) } } }, LazyCollection); const firstCubeOver123 ... [truncated] (1 shared atom(s))
+
+### Shared claims
+
 - [[javascriptallonge-element]] - shared statements: Element shares source evidence from Served by the Pot: Collections / Iteration and Iterables: All of these actions involve going through the contents one by one. Acting on the elements of a collection one at a time is called iterating over the contents , and ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-program]] - shared statements: Program shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: In programs involving large collections of objects, it can be handy to implement iterators as objects, rather than functions. The mechanics of iterating can then be ... [truncated] (1 shared statement(s))
+- [[javascriptallonge-object]] - shared statements: Object shares source evidence from Served by the Pot: Collections / Iteration and Iterables / iterator objects: In programs involving large collections of objects, it can be handy to implement iterators as objects, rather than functions. The mechanics of iterating can then be ... [truncated] (2 shared statement(s))
+
+### Topics
+
+- [[javascriptallonge-eager-collection]] - narrower topic: Eager Collection shares technical record from We'll keep it simple: / Lazy and Eager Collections / eager collections: const extend = function (consumer, ...providers) { for (let i = 0; i < providers.length; ++i) { const provider = providers[i]; for (let key in provider) { if (provid ... [truncated] (3 shared atom(s))
 
 ## Source
 

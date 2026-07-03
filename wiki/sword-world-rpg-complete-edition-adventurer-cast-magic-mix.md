@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Adventurer Cast Magic Mix: 6 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-adventurer-cast-magic-mix@23f5c1dc776d9fdfd6e4ff3da38965d2
+projection_coverage: topic-sword-world-rpg-complete-edition-adventurer-cast-magic-mix@0bceff2786bb1cbef83ef4ee65034fe7
 ---
 
 # Adventurer Cast Magic Mix
@@ -35,6 +35,8 @@ What [[sword-world-rpg-complete-edition]] covers about adventurer cast magic mix
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02546))_
 
+<a id="atom-technical-atom-45ff279c889fcea0"></a>
+
 > At this time, the monsters must also roll the dice to make resist checks.
 
 ### Technical frame 2: When an Adventurer Casts Magic on a Mix of Adventurers and Monsters
@@ -45,10 +47,14 @@ What [[sword-world-rpg-complete-edition]] covers about adventurer cast magic mix
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02550))_
 
+<a id="atom-technical-atom-b2dad739bea076f7"></a>
+
 > If the one on whom the magic is being cast chooses not to resist the magic, it will definitely take effect so long as the one casting the magic does not roll double ones.
 
 
 ## Related pages
+
+### Shared claims
 
 - [[sword-world-rpg-complete-edition-monster]] - shared statements: Monster shares source evidence from When an Adventurer Casts Magic on a Mix of Adventurers and Monsters: Sometimes enemies written in the same data format as a character may also be accompanied by monsters. For example, a sorcerer who leads undead monsters to attack vil ... [truncated] (1 shared statement(s))
 

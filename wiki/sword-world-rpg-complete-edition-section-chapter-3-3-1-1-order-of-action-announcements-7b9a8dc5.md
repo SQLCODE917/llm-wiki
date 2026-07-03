@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-3-3-1-1-order-of-action-announcements-7b9a8dc5
 page_kind: source
 page_family: section-reference
-summary: Chapter 3: / 3.1.1 Order of Action Announcements: 21 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 3: / 3.1.1 Order of Action Announcements: 21 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-3-1-1-order-of-action-announcements-7b9a8dc5@ba88976e8aaa278cb511f93216b84b4e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-3-1-1-order-of-action-announcements-7b9a8dc5@4fbc5f868d2e75246ffa0550b4204189
 ---
 
 # Chapter 3: / 3.1.1 Order of Action Announcements
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-3-6d32210f]] - broader source section: Chapter 3:
 
@@ -41,24 +43,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01292))_
 
+<a id="atom-technical-atom-ed79879a6856222b"></a>
+
 > If a settlement cannot be reached, the game master gets to announce their group's actions first (NPCs and monsters) and then the players follow.
-
-### Technical frame 2: Chapter 3: / 3.1.1 Order of Action Announcements
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01294))_
-
-> If there are three or more groups instead of two, the order of action announcements is determined in the same way. The groups with the higher intelligence can decide on their actions later than the others.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01293))_
-
-> The order in which action announcements are made within the same group (e.g., a1, a2, a3 within group A) may be determined freely and can also be changed from round to round.
-
-### Technical frame 3: Chapter 3: / 3.1.1 Order of Action Announcements
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01294))_
-
-> If there are three or more groups instead of two, the order of action announcements is determined in the same way. The groups with the higher intelligence can decide on their actions later than the others.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01295))_
-
-> In an action announcement, you cannot declare something impossible.

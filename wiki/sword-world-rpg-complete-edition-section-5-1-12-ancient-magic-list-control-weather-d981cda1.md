@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-control-weather-d981cda1
 page_kind: source
 page_family: section-reference
-summary: 5.1.12 Ancient Magic List / [ Control Weather ]: 36 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 5.1.12 Ancient Magic List / [ Control Weather ]: 36 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-control-weather-d981cda1@469c6bc63921c6144a97972a9f888185
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-control-weather-d981cda1@188589eb3162bae176de36cd35c76dc1
 ---
 
 # 5.1.12 Ancient Magic List / [ Control Weather ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-anc
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-19f66f88]] - broader source section: 5.1.12 Ancient Magic List
 
@@ -36,37 +38,3 @@ From [[sword-world-rpg-complete-edition]].
 - Sunny ： The sky within the area of effect will be completely clear of clouds. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03573))_
 - Cloudy ： The sky within the area of effect is covered by clouds, hiding the sun. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03574))_
 - Foggy ： Visibility within the area of effect is 5 meters or less for fog. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03576))_
-
-## Technical atoms
-
-### Technical frame 1: 5.1.12 Ancient Magic List / [ Control Weather ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03570))_
-
-> This is a spell that can change the weather within its area of effect. Weather changes begin on the round you cast the spell, and the spell is completed in 10 rounds. Even if someone is within the area of effect, they cannot resist this spell. This spell is non-removable , but if two Control Weather spells are cast within the same area of effect, the one with the higher final score will take effect, and the one with the lower final score will be negated.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03562, source-range-0b9dec90-03563, source-range-0b9dec90-03564, source-range-0b9dec90-03566, source-range-0b9dec90-03567, source-range-0b9dec90-03568, source-range-0b9dec90-03569))_
-
-> Base Mental Power Cost=45
-
-> Distance=Caster
-
-> Area=An area within a 10 kilometer radius of
-
-> Duration=Until focus ends
-
-> Effect=Change the weather within the area of effect
-
-> Type=Focus, Target score, non-removable Expansion=Final score, area
-
-> Resist=None
-
-### Technical frame 2: 5.1.12 Ancient Magic List / [ Control Weather ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03571))_
-
-> Weather you can change to includes sunny, cloudy, rainy, foggy, or snowy. It has nothing to do with the weather, season, etc. before the spell was cast. As the spell ends, the weather will return to its natural state. However, effects caused by this spell will remain and cannot be removed.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03570))_
-
-> Even if someone is within the area of effect, they cannot resist this spell.

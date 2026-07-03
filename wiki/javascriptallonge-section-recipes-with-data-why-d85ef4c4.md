@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-recipes-with-data-why-d85ef4c4
 page_kind: source
+page_family: section-reference
 summary: Recipes with Data / Why?: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-recipes-with-data-why-d85ef4c4@94b8ad95e495186203097b155004294d
+projection_coverage: section-javascriptallonge-section-recipes-with-data-why-d85ef4c4@d30683b32ef6fd157af49921f38f5f7c
 ---
 
 # Recipes with Data / Why?
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-recipes-with-data-why-d85
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-recipes-with-data-178f0a89]] - broader source section: Recipes with Data
 
@@ -37,6 +40,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01487))_
 
+<a id="atom-technical-atom-cf15dbfe1a5d6c6d"></a>
+
 ```
 This is the canonical Y Combinator86:
 const Y = (f) =>
@@ -57,6 +62,8 @@ return (n == 0 ? 1 : n * fac(n - 1));
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01488))_
 
+<a id="atom-technical-atom-3bd74a484f1de867"></a>
+
 ```
 return function (n) {
 return (n == 0 ? 1
@@ -73,6 +80,8 @@ factorial(5)
 > What is this something and how does it work? Another friendly tip: Change some of the fat arrow functions inside of it into named function expressions to help you decipher stack traces.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01493))_
+
+<a id="atom-technical-atom-69274e86b4fc6a55"></a>
 
 ```
 const Y = (f) => {

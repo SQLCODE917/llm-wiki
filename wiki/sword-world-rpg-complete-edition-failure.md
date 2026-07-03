@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Failure: 5 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-failure@dd789869c3c9b88009e448f54b3fc76a
+projection_coverage: topic-sword-world-rpg-complete-edition-failure@7b554e3add93e531b829033c2e9efbf4
 ---
 
 # Failure
@@ -39,10 +39,14 @@ What [[sword-world-rpg-complete-edition]] covers about failure:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01244))_
 
+<a id="atom-technical-atom-1549ecd11deb50d7"></a>
+
 > If the roll is as high as 10 or 11, the success roll is considered to have a very high chance of success.
 
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-failure-c3b9b54c]] - source section: 【 Failure! 】 shares source evidence from 【 Failure! 】: When making a defense roll, if your roll is double ones, that means that you've been hit extremely hard. Maybe the monster's attack hit a gap in your character's arm ... [truncated]; 【 Failure! 】 shares technical record from 【 Failure! 】: When making a defense roll, if your roll is double ones, that means that you've been hit extremely hard. (1 shared statement(s), 1 shared atom(s))
 

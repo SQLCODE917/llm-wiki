@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 5.3.1 Spellsong List: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-3-1-spellsong-list-c75bbd3b@df76f058d8725c3ce633acb7639d71f8
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-3-1-spellsong-list-c75bbd3b@2b059c081045a2350abfbee17f0f3f2b
 ---
 
 # 5.3.1 Spellsong List
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-5-3-1-spel
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-5-3-7bfa67b3]] - broader source section: 5.3
 

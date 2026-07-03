@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-3-converting-character-data-to-monster-data-37181414
 page_kind: source
 page_family: section-reference
-summary: 13.3 Converting Character Data to Monster Data: 82 source-backed entries and 62 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.3 Converting Character Data to Monster Data: 82 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-3-converting-character-data-to-monster-data-37181414@946e5da9641cd9258b664314e495b2d2
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-3-converting-character-data-to-monster-data-37181414@b5d9ec89a7645116a21f06c4a544154c
 ---
 
 # 13.3 Converting Character Data to Monster Data
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-3-conve
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-3-converting-character-data-to-monster-data-redcap-0ebb307d]] - narrower source section: 13.3 Converting Character Data to Monster Data / [ Redcap ]
 
@@ -53,148 +55,8 @@ From [[sword-world-rpg-complete-edition]].
 
 > Rarity seems unnecessary, so we'll omit it.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09625))_
-
-> If an enemy's strike roll is a critical, resulting in heavy damage or even death, the player may feel frustrated that they've been killed by a roll of the dice .
-
-### Technical frame 2: 13.3 Converting Character Data to Monster Data
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09629))_
-
-> Rarity seems unnecessary, so we'll omit it.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09626))_
 
+<a id="atom-technical-atom-4fd7bce37bdee84c"></a>
+
 > Table 13-1: Key Number = Expected Equivalents
-
-### Technical frame 3: 13.3 Converting Character Data to Monster Data
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09632))_
-
-> For strike points , apply strike power to Table 13-1: Key Number = Expected Equivalents , then add bonus damage to the result. Critical target is normally 10,
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09634, source-range-0b9dec90-09635, source-range-0b9dec90-09636, source-range-0b9dec90-09637, source-range-0b9dec90-09638, source-range-0b9dec90-09639, source-range-0b9dec90-09640, source-range-0b9dec90-09641, source-range-0b9dec90-09642, source-range-0b9dec90-09644, source-range-0b9dec90-09645, source-range-0b9dec90-09646, source-range-0b9dec90-09647, source-range-0b9dec90-09648, source-range-0b9dec90-09649, source-range-0b9dec90-09650, source-range-0b9dec90-09651, source-range-0b9dec90-09652, source-range-0b9dec90-09654, source-range-0b9dec90-09655, source-range-0b9dec90-09656, source-range-0b9dec90-09657, source-range-0b9dec90-09658, source-range-0b9dec90-09659, source-range-0b9dec90-09660, source-range-0b9dec90-09661, source-range-0b9dec90-09662, source-range-0b9dec90-09664, source-range-0b9dec90-09665, source-range-0b9dec90-09666, source-range-0b9dec90-09667, source-range-0b9dec90-09668, source-range-0b9dec90-09669, source-range-0b9dec90-09670, source-range-0b9dec90-09671, source-range-0b9dec90-09672, source-range-0b9dec90-09674, source-range-0b9dec90-09675, source-range-0b9dec90-09676, source-range-0b9dec90-09677, source-range-0b9dec90-09678, source-range-0b9dec90-09679, source-range-0b9dec90-09680, source-range-0b9dec90-09681, source-range-0b9dec90-09682))_
-
-> 0-1
-
-> 2-5
-
-> 6-9
-
-> 10-13
-
-> 14-18
-
-> 19-22
-
-> 23-26
-
-> 27-31
-
-> 32-35
-
-> 0-2
-
-> 3-7
-
-> 8-12
-
-> 13-17
-
-> 18-22
-
-> 23-27
-
-> 28-32
-
-> 33-37
-
-> 38-42
-
-> 0-3
-
-> 4-9
-
-> 10-14
-
-> 15-20
-
-> 21-25
-
-> 26-31
-
-> 32-36
-
-> 37-42
-
-> 43-47
-
-> 0-4
-
-> 5-10
-
-> 11-16
-
-> 17-22
-
-> 23-27
-
-> 28-33
-
-> 34-39
-
-> 40-45
-
-> 46-50
-
-> 0-5
-
-> 6-11
-
-> 12-17
-
-> 18-23
-
-> 24-29
-
-> 30-35
-
-> 36-41
-
-> 42-47
-
-> 48-50
-
-### Technical frame 4: 13.3 Converting Character Data to Monster Data / [ Redcap ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09695, source-range-0b9dec90-09696, source-range-0b9dec90-09697, source-range-0b9dec90-09698, source-range-0b9dec90-09699, source-range-0b9dec90-09700, source-range-0b9dec90-09701, source-range-0b9dec90-09702, source-range-0b9dec90-09703, source-range-0b9dec90-09704, source-range-0b9dec90-09705, source-range-0b9dec90-09706, source-range-0b9dec90-09707, source-range-0b9dec90-09708, source-range-0b9dec90-09709))_
-
-> Monster Level=3
-
-> Rarity=12
-
-> Agility=14
-
-> Movement Speed=14
-
-> Number=One to several Frequency=Rare
-
-> Intellect=Low Reaction=Adversarial
-
-> Attack Points=Weapon:10 (3)
-
-> Strike Points=9
-
-> Evasion Points=11 (4) Defense Points=6
-
-> Life Points/Resistance=15/11 (4)
-
-> Mental Points/Resistance=15/11 (4)
-
-> Special Abilities=Infection by gaze (Intensity 5)
-
-> Habitat=Uncertain
-
-> Languages=Regional
-
-> Perception=Five senses

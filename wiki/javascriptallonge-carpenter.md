@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-carpenter
 page_kind: concept
+page_family: topic-concept
 summary: Carpenter: 8 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-carpenter@ad143801f397602b457ad502f0c7fd4e
+projection_coverage: topic-javascriptallonge-carpenter@203659016144439a74f66e94e7451832
 ---
 
 # Carpenter
@@ -50,6 +51,8 @@ What [[javascriptallonge]] covers about carpenter:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01832))_
 
+<a id="atom-technical-atom-5e67bf82132459fa"></a>
+
 ```
 const MOVE = {
 "￿": ([x, y]) => [x - 1, y],
@@ -78,6 +81,8 @@ const position = [
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01833))_
 
+<a id="atom-technical-atom-6081e6678c7d1d5f"></a>
+
 ```
 Math.floor(Math.random() * size),
 Math.floor(Math.random() * size)
@@ -101,29 +106,33 @@ yield direction;
 
 ### Technical atom 3
 
+<a id="atom-technical-atom-e477122c10f17b08"></a>
+
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01823))_
 
 > Christine quickly scribbled on the whiteboard:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01825))_
 
+```text
+95 http://babeljs.io
+96 http://www.es6fiddle.net
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 95 | http://babeljs.io |
 | 96 | http://www.es6fiddle.net |
 
-<details>
-<summary>Raw table text</summary>
-
-```
-95 http://babeljs.io
-96 http://www.es6fiddle.net
-```
-
 </details>
 
 
 ## Related pages
+
+### Shared technical atoms
 
 - [[javascriptallonge-problem]] - shared technical atoms: Problem shares technical table: 95 http://babeljs.io 96 http://www.es6fiddle.net (1 shared atom(s))
 

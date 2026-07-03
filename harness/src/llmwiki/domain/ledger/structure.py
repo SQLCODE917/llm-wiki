@@ -8,7 +8,9 @@ extracted unit. Structurally flat sources get a root-only structure.
 
 from __future__ import annotations
 
+from collections import defaultdict
 from dataclasses import dataclass
+from functools import cached_property
 
 
 @dataclass(frozen=True)
@@ -38,11 +40,23 @@ class DocumentStructure:
     structure_nodes: tuple[StructureNode, ...]
     dispositions: tuple[ExtractedUnitDispositionRecord, ...] = ()
 
+    @cached_property
+    def _nodes_by_id(self) -> dict[str, StructureNode]:
+        return {node.structure_node_id: node for node in self.structure_nodes}
+
+    @cached_property
+    def _children_by_parent_id(self) -> dict[str, tuple[StructureNode, ...]]:
+        grouped: dict[str, list[StructureNode]] = defaultdict(list)
+        for node in self.structure_nodes:
+            if node.parent_structure_node_id:
+                grouped[node.parent_structure_node_id].append(node)
+        return {
+            parent_id: tuple(sorted(children, key=lambda item: item.source_order))
+            for parent_id, children in grouped.items()
+        }
+
     def node(self, node_id: str) -> StructureNode | None:
-        for candidate in self.structure_nodes:
-            if candidate.structure_node_id == node_id:
-                return candidate
-        return None
+        return self._nodes_by_id.get(node_id)
 
     def parent(self, node_id: str) -> StructureNode | None:
         node = self.node(node_id)
@@ -51,19 +65,15 @@ class DocumentStructure:
         return self.node(node.parent_structure_node_id)
 
     def children(self, node_id: str) -> tuple[StructureNode, ...]:
-        return tuple(
-            node
-            for node in sorted(self.structure_nodes, key=lambda item: item.source_order)
-            if node.parent_structure_node_id == node_id
-        )
+        return self._children_by_parent_id.get(node_id, ())
 
     def descendants(self, node_id: str) -> tuple[StructureNode, ...]:
         descendants: list[StructureNode] = []
-        pending = list(self.children(node_id))
+        pending = list(reversed(self.children(node_id)))
         while pending:
-            current = pending.pop(0)
+            current = pending.pop()
             descendants.append(current)
-            pending[0:0] = list(self.children(current.structure_node_id))
+            pending.extend(reversed(self.children(current.structure_node_id)))
         return tuple(sorted(descendants, key=lambda item: item.source_order))
 
     def label_path(self, node_id: str, *, include_root: bool = False) -> tuple[str, ...]:

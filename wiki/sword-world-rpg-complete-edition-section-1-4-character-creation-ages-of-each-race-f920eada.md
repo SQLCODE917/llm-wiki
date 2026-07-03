@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-1-4-character-creation-ages-of-each-race-f920eada
 page_kind: source
 page_family: section-reference
-summary: 1.4 Character Creation / 《 Ages of Each Race 》: 14 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 1.4 Character Creation / 《 Ages of Each Race 》: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-ages-of-each-race-f920eada@a9724fa3b4694a84dc232f099571332a
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-ages-of-each-race-f920eada@1d40db86d6fa6742de7822355c746621
 ---
 
 # 1.4 Character Creation / 《 Ages of Each Race 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-charac
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1e239ef6]] - broader source section: 1.4 Character Creation
 
@@ -28,35 +30,3 @@ From [[sword-world-rpg-complete-edition]].
 - Whether or not a person is recognized as an adult is not only a matter of physical growth, but also a matter of social judgment. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00594))_
 - However, because they are clearly known to have a shorter lifespan than elves and because they are essentially detested, they are not made to wait until they are 100 years old and are forced out of society at around age 30. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00597))_
 - This is because it' s considered common sense in human society. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00597))_
-
-## Technical atoms
-
-### Technical frame 1: 1.4 Character Creation / 《 Ages of Each Race 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00594))_
-
-> However, it is one thing to be physically mature and another to be socially recognized as an adult. In Japan, where we live, we are considered adults at the age of 20, but there are some actions that are recognized as adult at the age of 18. There was a time when the socially accepted age of adulthood was about 15 years old, and even younger. Whether or not a person is recognized as an adult is not only a matter of physical growth, but also a matter of social judgment.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00593))_
-
-> For races other than humans, consider age as follows. Even for different races with long life spans, the rate of growth to adulthood is not much different from that of humans. Therefore, once they reach around 20 years of age, they are physically fit enough to embark on an adventure.
-
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00211))_
-
-| entry | content |
-| --- | --- |
-| 2 | Among the craftsman general skill, has any one of the following at level 5: carpentry, smithing, woodworking, stonemasonry, gem crafting (details are explained under 7.3: Craftsman Skill, see p. 126). |
-| 3 | Unable to learn ancient magic or spirit magic. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Races
-2. Among the craftsman general skill, has  any  one  of  the  following  at  level  5: carpentry, smithing, woodworking, stonemasonry, gem crafting (details are explained under 7.3: Craftsman Skill, see p. 126).
-3. Unable  to  learn  ancient  magic  or spirit magic.
-```
-
-</details>

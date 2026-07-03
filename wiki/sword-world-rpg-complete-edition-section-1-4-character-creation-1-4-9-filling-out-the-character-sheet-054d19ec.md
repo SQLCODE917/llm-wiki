@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-054d19ec
 page_kind: source
 page_family: section-reference
-summary: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet: 28 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet: 28 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-054d19ec@d74d98381d7919b68602fcd818b40fc4
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-054d19ec@59adc261ceea6a71494c4e6a8ff6adc4
 ---
 
 # 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet
@@ -17,24 +17,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1e239ef6]] - broader source section: 1.4 Character Creation
-- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-player-name-c236ed38]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ① Player Name ]
-- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-race-93a32d35]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ② Race ]
-- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-sub-ability-scores-e0a18469]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ③ Sub-Ability Scores]
-- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-ability-scores-6613349a]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ④ Ability Scores ]
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-ability-bonuses-b2f8cd3d]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑤ Ability Bonuses ]
-- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-origin-290d7074]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑥ Origin ]
-- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-money-960fa2dd]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑨ Money ]
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-ability-scores-6613349a]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ④ Ability Scores ]
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-adventurer-level-ed80716f]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑭ Adventurer Level ]
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-gender-635acbe5]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑩ Gender ]
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-increase-skills-d4bb6b67]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑬ Increase Skills ]
-- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-adventurer-level-ed80716f]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑭ Adventurer Level ]
-- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-other-sections-b0cbc18e]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / ⑯ Other Sections ]
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-money-960fa2dd]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑨ Money ]
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-origin-290d7074]] - narrower source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑥ Origin ]
+
+### Topics
+
 - [[sword-world-rpg-complete-edition-filling-character-sheet]] - topic hub: opens the topic page for Filling Character Sheet
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-2-6-success-rolls-using-adventurer-level-filling-out-the-character-sheet-0e2bccaf]] - same source heading: another source section with the same heading, 2.6 Success Rolls Using Adventurer Level / Filling Out the Character Sheet
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-filling-out-the-character-sheet-33788635]] - same source heading: another source section with the same heading, 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-bcd5385d]] - same source heading: another source section with the same heading, Filling out the Character Sheet
 - [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-3d07a24d]] - same source heading: another source section with the same heading, Filling out the Character Sheet
 - [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-94debb40]] - same source heading: another source section with the same heading, Filling out the Character Sheet
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-bcd5385d]] - same source heading: another source section with the same heading, Filling out the Character Sheet
 
 ## Statements
 
@@ -88,57 +92,3 @@ From [[sword-world-rpg-complete-edition]].
 
 - The character sheet is not completely filled out yet. However, to fill in anything other than what's explained here, you must understand the rules a bit more in detail. So for now, this is the end of the instructions for filling out the sheet. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01154))_
 - The other sections will be explained as necessary in the coming rules. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01155))_
-
-## Technical atoms
-
-### Technical frame 1: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑥ Origin ]
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01128))_
-
-> If the character is a human or a halfelf raised by a human, Table 1-5: Backgrounds must be used to determine their origin.
-
-### Technical frame 2: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑥ Origin ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01128))_
-
-> If the character is a human or a halfelf raised by a human, Table 1-5: Backgrounds must be used to determine their origin. Once it's been decided, write it in the origin field. If the character was not raised in a human society, there is no need to write anything in this field.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01130))_
-
-> Please write down starting experience points as determined by Table 1-5: Backgrounds or Table 1-6: Starting Experience by Race in the experience points field.
-
-### Technical frame 3: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑬ Increase Skills ]
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01144))_
-
-> Starting experience points can be used to acquire new adventurer skills or to increase any skills already acquired (Table 1-7: Experience Points by Skill).
-
-### Technical frame 4: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑭ Adventurer Level ] / [ ⑮ Purchase Equipment]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01150))_
-
-> Use your money to purchase equipment. Write down the items you purchased then rewrite your money, reducing by the amount of money you spent (Table 1-11: Equipment).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01151))_
-
-> When you purchase weapons, shields, and armor, write them in the appropriate fields (Table 1-8: Weapons, Table 1-9: Armor, and Table 1-10: Shields).
-
-### Technical frame 5: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / ⑯ Other Sections ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01155))_
-
-> The other sections will be explained as necessary in the coming rules.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01156))_
-
-> [Figure] (p.27)
-
-### Technical frame 6: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / ⑯ Other Sections ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01155))_
-
-> The other sections will be explained as necessary in the coming rules.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01159))_
-
-> [Figure] (p.29)

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-1-types-of-monsters-mythical-beasts-and-magical-beasts-6af041c8
 page_kind: source
 page_family: section-reference
-summary: 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: 24 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: 24 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-1-types-of-monsters-mythical-beasts-and-magical-beasts-6af041c8@83fd231f7feb1fa98bbfd62b8f5cac75
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-1-types-of-monsters-mythical-beasts-and-magical-beasts-6af041c8@e18e27c24b2d96a7515f524067dc8d73
 ---
 
 # 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》
@@ -17,8 +17,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-1cd4c9c3]] - broader source section: 13.1 Types of Monsters
+
+### Topics
+
 - [[sword-world-rpg-complete-edition-mythical-beast-and-magical]] - topic hub: opens the topic page for Mythical Beast And Magical
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] - same source heading: another source section with the same heading, 13.2.6 Mythical Beasts and Magical Beasts
 
 ## Statements
@@ -34,41 +42,3 @@ From [[sword-world-rpg-complete-edition]].
 - Many of them are unable to reproduce on their own and can only produce offspring with the help of humans. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06848))_
 - Magic that causes sleep (such as " Sleep Cloud " or " Sleep ") has no effect on such things. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06849))_
 - There are also things such as dragons that are called both mythical and magical beasts. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06850))_
-
-## Technical atoms
-
-### Technical atom 1
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07749))_
-
-> In combat, a buckbaird uses five different types of rays. The game master should roll 1D to determine which ray the buckbaird fires (or if it attempts to ram). The ray can only affect one target. Those targeted by the ray will be unaffected if they succeed on a mental power resistance roll against target score 16, but will be seriously affected if they fail. This ray cannot affect the buckbaird itself, even if it's reflected using a mirror, etc.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07750))_
-
-| entry | content |
-| --- | --- |
-| 1 | Paralysis Ray You will be paralyzed for 6 rounds. |
-| 2 | Hypnosis Ray You will fall asleep. This is considered natural sleep. |
-| 3 | Freeze Ray You will freeze instantly and enter a state of suspended animation. Treat this the same way as the spirit magic Ice Coffin (see p. 94). |
-| 4 | Brainwashing Ray You will think the buckbaird is your ally and attack your allies. This effect lasts 18 rounds. Treat this the same way as magic that belongs to mind . |
-| 5 | Metal Destruction Ray Destroys metal weapons and armor you are wearing. Magical weapons and armor are not affected. This ray cannot be resisted. |
-| 6 | No firing |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-1. Paralysis Ray
-You will be paralyzed for 6 rounds.
-2. Hypnosis Ray
-You will fall asleep. This is considered natural sleep.
-3. Freeze Ray
-You will freeze instantly and enter a state of suspended animation. Treat this the same way as the spirit magic Ice Coffin (see p. 94).
-4. Brainwashing Ray
-You  will  think  the  buckbaird  is your ally and attack your allies. This effect lasts 18 rounds. Treat this the same  way  as  magic  that  belongs  to mind .
-5. Metal Destruction Ray
-Destroys metal weapons and armor you are wearing. Magical weapons and armor are not affected. This ray cannot be resisted.
-6. No firing
-```
-
-</details>

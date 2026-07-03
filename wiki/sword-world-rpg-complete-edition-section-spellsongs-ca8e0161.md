@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-spellsongs-ca8e0161
 page_kind: source
 page_family: section-reference
-summary: Spellsongs: 20 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Spellsongs: 20 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-spellsongs-ca8e0161@e94443665f71d3c71dc93605e0ae8885
+projection_coverage: section-sword-world-rpg-complete-edition-section-spellsongs-ca8e0161@693aef4209c281cdc1516f30b8d23033
 ---
 
 # Spellsongs
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-spellsongs
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-5-3-7bfa67b3]] - broader source section: 5.3
 
@@ -34,30 +36,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: Spellsongs
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04828))_
-
-> To use a spellsong, you must play an instrument. This instrument must be unique to each bard, and the spellsong cannot be used when playing another instrument. Furthermore, you must sing the lyrics in high ancient at the same time. However, it doesn't matter if you don't know the meaning, as long as you know the lyrics by heart. Also, if you choose a fl ute as your instrument, you can use the spellsong without having to sing the lyrics.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04827))_
-
-> On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
-
-### Technical frame 2: Spellsongs
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04829))_
 
 > Basically, the spellsong takes effect on everyone who hears the bard's performance. In other words, it affects both friends and enemies. However, it has no effect on those who are unable to hear. Y ou can learn one spellsong per bard level. A bard chooses which spellsong they want to learn. Every time your level goes up, you have to learn a new spellsong.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04828))_
 
+<a id="atom-technical-atom-62bff38c7b7873cc"></a>
+
 > Also, if you choose a fl ute as your instrument, you can use the spellsong without having to sing the lyrics.
 
-### Technical frame 3: Spellsongs
+### Technical frame 2: Spellsongs
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04830))_
 
 > When a bard uses the ability of a spellsong, you resolve the effect in the Using spellsongs does not consume a bard's mental power. Also, the effect of a spellsong cannot be expanded.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04831))_
+
+<a id="atom-technical-atom-54a1cf2618c25966"></a>
 
 > As long as a bard is singing a spellsong, they cannot take any other actions and cannot move more than 3 meters in one round.

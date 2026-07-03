@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-6-644c319b
 page_kind: source
 page_family: section-reference
-summary: Chapter 6:: 185 source-backed entries and 38 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 6:: 185 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-644c319b@4618d2394c8ece32aa9563a83aa3eee8
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-644c319b@f21b1f05a44fdb72bea3298a999cb4cc
 ---
 
 # Chapter 6:
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-82cdd945]] - narrower source section: Chapter 6: / 6.1 Precautions When Using Skills
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-f81328c3]] - narrower source section: Chapter 6: / 6.3 Ranger Skill
@@ -189,149 +191,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical frame 1: Chapter 6:
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04903))_
-
-> [Figure] (p.112)
-
-### Technical frame 2: Chapter 6: / 6.1 Precautions When Using Skills
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04908))_
-
-> The thief skill is taught at the thieves' guild . People who aren't in the guild usually can't learn it. Each year, guild members must give 10% of their (annual) income or 500 silver coins (whichever is higher) to their guild. Even those who have not joined a guild can directly learn the thief skill from those who have a higher thief skill level than themselves, but if the guild finds out that such outsider thieves (including those who have not paid the prescribed amount) used this skill to do b
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04907))_
-
-> It is true that the thief skill includes the abilities necessary for theft, such as pickpocketing and lockpicking, but if anything, you can say they're specialized craftsmen who are familiar with the techniques needed behind the scenes of society.
-
-### Technical frame 3: Chapter 6: / 6.1 Precautions When Using Skills
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04909))_
-
-> Also, it is of course illegal to use this skill to commit theft, and if caught, punishment awaits.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04908))_
-
-> Even those who have not joined a guild can directly learn the thief skill from those who have a higher thief skill level than themselves, but if the guild finds out that such outsider thieves (including those who have not paid the prescribed amount) used this skill to do business , they'll send an assassin.
-
-### Technical frame 4: Chapter 6: / 6.1 Precautions When Using Skills
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04911))_
-
-> Some abilities say not retriable . Once you fail such an ability, you cannot attempt it again on the same target. For example, the thief skill's lockpicking ability cannot be retried. If a thief
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04910))_
-
-> Some of these abilities cannot be used unless you're wearing light equipment.
-
-### Technical frame 5: Chapter 6: / 6.1 Precautions When Using Skills / [ ① Tumble [Agility] ] (Equipment restriction)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04925))_
-
-> Even if a thief falls from a high place, they can reduce the damage by being skillful at taking a defensive tumble.
-
-### Technical frame 6: Chapter 6: / 6.1 Precautions When Using Skills / [ ① Tumble [Agility] ] (Equipment restriction)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04938))_
-
-> These can be attempted again if the baseline score for a success roll increases (that is, if the skill level increases or the ability bonus of the relevant ability score increases).
-
-### Technical frame 7: Chapter 6: / 6.1 Precautions When Using Skills / [ ② Lockpicking [Dexterity]] (No equipment restriction, not retriable)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04940))_
-
-> Even if you don't have these tools, you can try using wire, etc.
-
-### Technical frame 8: Chapter 6: / 6.1 Precautions When Using Skills / [ ② Lockpicking [Dexterity]] (No equipment restriction, not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04940))_
-
-> The ability to open locks on doors, treasure chests, etc. The thieves' guild sells lockpicking tools (sold under the name thieves' tools ) to guild members for 100 silver coins. Even if you don't have these tools, you can try using wire, etc. if you have it. However, the probability of success will be lower (impose a -2 modifier on success rolls). The game master should set the lock's target score depending on the difficulty. You can attempt to pick a lock normally even if you are equipped with 
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04941))_
-
-> [Figure] (p.113)
-
-### Technical frame 9: Chapter 6: / 6.1 Precautions When Using Skills / [ ③ Acrobatics [Agility] ] (Equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04946))_
-
-> This is the ability to remember what you witness. For example, even if a book is written in a language you don't know, by using this ability you can memorize the shape of each letter exactly as it is, even if you don't know the meaning, and can write it down later. Thieves do this habitually all the time. A success roll should be made when recalling something, not when trying to memorize something. The game master should determine the target score based on the contents being recalled and the tim
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04944))_
-
-> Each time a character performs such an action, the game master must set a target score and ask for a success roll check.
-
-### Technical frame 10: Chapter 6: / 6.1 Precautions When Using Skills / [ ③ Acrobatics [Agility] ] (Equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04943))_
-
-> Thieves are skilled at activities that require physical balance and agility, such as tightrope walking and jumping from branch to branch.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04946))_
-
-> For example, even if a book is written in a language you don't know, by using this ability you can memorize the shape of each letter exactly as it is, even if you don't know the meaning, and can write it down later.
-
-### Technical frame 11: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑤ Listen [Intelligence] ] (Equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04949))_
-
-> If you are wearing metal armor or heavy armor, the noise it makes will interfere with your hearing. Also, a helmet will clearly interfere with this ability.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04948))_
-
-> You can also choose and listen to a specific sound from a mixture of various sounds.
-
-### Technical frame 12: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04953))_
-
-> In particular, if they're not paying attention to the sound, impose a -4 penalty on the listener and make the same check.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04952))_
-
-> If the thief's final score is greater, the sound will never be heard.
-
-### Technical frame 13: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑥ Stealthy Step [Agility] ] (Equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04953))_
-
-> In particular, if they're not paying attention to the sound, impose a -4 penalty on the listener and make the same check.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04954))_
-
-> If the person hearing the sound also has the thief skill, they may make a check using thief skill level + intelligence bonus (this is the listen ability from the previous section).
-
-### Technical frame 14: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑦ Pickpocket [Dexterity] ] (Equipment restriction)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04956))_
-
-> The person trying to pickpocket must make a success roll using thief skill level + dexterity bonus and the person being pickpocketed must make one using adventurer level + intelligence bonus as the baseline score.
-
-### Technical frame 15: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑦ Pickpocket [Dexterity] ] (Equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04956))_
-
-> This is the ability to see an opening on an opponent and pickpocket their wallet, small items, etc. The person trying to pickpocket must make a success roll using thief skill level + dexterity bonus and the person being pickpocketed must make one using adventurer level + intelligence bonus as the baseline score. It's a success if the final score on the thief's side is greater, but it is a failure if it's a tie or if the side being pickpocketed's is greater. If you fail, it will definitely be exp
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04957))_
-
-> The game master may add modifiers depending on the surroundings and the opponent's situation.
-
-### Technical frame 16: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑧ Hide [Agility] ] (Equipment restriction)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04959))_
-
-> A success roll must be made when the thief is hiding and someone attempts to search for them or approaches them.
-
-### Technical frame 17: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04961))_
-
-> The game master should determine the difficulty depending on what is hidden.
-
-### Technical frame 18: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑪ Special Combat [Dexterity, Agility, Strength]] (Equipment restriction)
+### Technical frame 1: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑪ Special Combat [Dexterity, Agility, Strength]] (Equipment restriction)
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04966))_
 
@@ -339,198 +199,17 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04967))_
 
+<a id="atom-technical-atom-fb99e8551e04e335"></a>
+
 > If one adventurer has acquired both the thief skill and the fighter skill, the player must choose which skill to fight with.
 
-### Technical frame 19: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑬ Follow [Agility] ] (Equipment restriction)
+### Technical atom 2
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04972))_
-
-> If you fail, your opponent will realize that they are being followed. What action the person takes after that is up to them.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04971))_
-
-> The side that's following must use thief skill level + agility bonus as their baseline score, while the side being followed must use adventurer level + intelligence bonus , and success or failure is determined by comparing the final scores of their success rolls.
-
-### Technical frame 20: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑭ Disguise [Dexterity] ] (No equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04974))_
-
-> This is the ability to change one's face and appearance using special makeup. It's easy to just act like a completely different person, but it's difficult to disguise yourself as someone specific. Things like height and physique can be changed to a certain extent, but there are still limits.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04975))_
-
-> If the thief is disguised as a specific person and they encounter an acquaintance of that person, they must make a success roll to determine success or failure.
-
-### Technical frame 21: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑮ Treasure Appraisal [Intelligence] ] (No equipment restriction, not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04980))_
-
-> The fi nd ability is used by the thief to actively identify a location and determine if a trap is set there. This check (success roll) is based on difficulty . In the case of a success, please accurately tell them of the presence of the trap and the difficulty to disarm it, and in the case of a failure, or if a trap is not present in the first place, make sure to tell them that it cannot be found. Never say no , even when there are no traps.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04977))_
-
-> If you take your time, you can determine specific prices for items such as jewelry, gold and silver, as well as works of art.
-
-### Technical frame 22: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑮ Treasure Appraisal [Intelligence] ] (No equipment restriction, not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04980))_
-
-> The fi nd ability is used by the thief to actively identify a location and determine if a trap is set there. This check (success roll) is based on difficulty . In the case of a success, please accurately tell them of the presence of the trap and the difficulty to disarm it, and in the case of a failure, or if a trap is not present in the first place, make sure to tell them that it cannot be found. Never say no , even when there are no traps.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04981))_
-
-> If successful, the presence of a trap will be sensed at a perilous point, and the game master must inform the player of the type of trap.
-
-### Technical frame 23: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04985))_
-
-> For set , you can set traps up to a difficulty equal to your thief skill level without failing (you cannot set traps of a higher level). If a third party attempts to sense , find , or remove a trap set by a player, the game master must attempt a success roll on their behalf.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04984))_
-
-> If you fail, the trap will be activated if the dice roll was 6 or more beneath the target score.
-
-### Technical frame 24: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04984))_
-
-> Unless the game master has specifically set traps that are easy to find but difficult to remove , or conversely, difficult to find but easy to remove , the difficulty of finding and removing should be the same. If you fail, the trap will be activated if the dice roll was 6 or more beneath the target score. The effect of an activated trap depends on the type of trap. Traps that you fail to find cannot be removed.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04985))_
-
-> For set , you can set traps up to a difficulty equal to your thief skill level without failing (you cannot set traps of a higher level).
-
-### Technical frame 25: Chapter 6: / 6.3 Ranger Skill / [ ④ Listen [Intelligence] ] (Equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05017))_
-
-> Rangers can listen to even the smallest sounds and can choose the sound they want to hear from a wide range of sounds. This is handed the same way as the thief's ability.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05019))_
-
-> For example, when you walk through a ravine and see a pebble fall, you may feel like a landslide is about to occur, or you may feel an arrow flying from the darkness.
-
-### Technical frame 26: Chapter 6: / 6.3 Ranger Skill / [ ⑦ Survivalism [Life Force] ] (No equipment restriction)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05023))_
-
-> When an adventurer's survival is in danger, the game master should set a target score and have them make a success roll to overcome the situation.
-
-### Technical frame 27: Chapter 6: / 6.3 Ranger Skill / [ ⑦ Survivalism [Life Force] ] (No equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05023))_
-
-> Rangers have acquired the ability to endure difficult situations brought about by disaster, such as surviving with only a small amount of water or avoiding freezing to death in winter mountains, and either survive until help arrives or escape from a predicament on their own. When an adventurer's survival is in danger, the game master should set a target score and have them make a success roll to overcome the situation.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05024))_
-
-> [Figure] (p.116)
-
-### Technical frame 28: Chapter 6: / 6.3 Ranger Skill / [ ⑧ Search [Intelligence] ] (No equipment restriction, not retriable)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05026))_
-
-> The game master should determine the difficulty depending on what's hidden.
-
-### Technical frame 29: Chapter 6: / 6.3 Ranger Skill / [ ⑨ Map Creation [Intelligence]] (No equipment restriction, not retriable)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05028))_
-
-> You can also determine direction from the position of the sun or stars.
-
-### Technical frame 30: Chapter 6: / 6.3 Ranger Skill / [ ⑩ Weather Prediction [Intelligence] ] (No equipment restriction, not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05030))_
-
-> Rangers have the ability to predict the weather. Rangers can measure the humidity using their own senses, and they also use small knowledge such as birds that eat small insects such as flies fly close to the ground = no updraft = thick clouds = rain . From these combinations, you can roughly predict the weather. If a ranger succeeds on a success roll against a set target score using ranger skill level + intelligence bonus as the baseline score, the ranger can roughly predict the weather (sunny, 
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05031))_
-
-> If you attempt to use this ability and fail the success roll, you simply cannot predict the weather; it does not predict the opposite.
-
-### Technical frame 31: Chapter 6: / 6.3 Ranger Skill / [ ⑪ Plant and Animal Check [Intelligence] ] (No equipment restriction, not retriable)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05033))_
-
-> Rangers can determine what animals and plants they see.
-
-### Technical frame 32: Chapter 6: / 6.3 Ranger Skill / [ ⑪ Plant and Animal Check [Intelligence] ] (No equipment restriction, not retriable)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05034))_
-
-> In other cases (such as searching for herbs), the game master should determine a target score for the check.
-
-### Technical frame 33: Chapter 6: / 6.3 Ranger Skill / [ ⑫ Projectile Use [Dexterity, Strength] ] (No equipment restriction)
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05036))_
-
-> You can use any projectile as long as your strength allows it.
-
-### Technical frame 34: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05044))_
-
-> This also follows the thief skill. It's the ability to remove traps set outdoors and create traps using natural objects. Indoor mechanical traps cannot be removed or set .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05047))_
-
-> There is no requirement that you have to have the sage skill and the sorcerer skill at the same time, but if you do acquire the sage skill and the sorcerer skill at the same time, you will receive a bonus on experience points consumed.
-
-### Technical frame 35: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05058))_
-
-> Each monster has a score called rarity . Using sage skill level + intelligence bonus as the baseline score, make a success roll with this rarity as the target score, and if you succeed, you know the monster.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05057))_
-
-> When a sage sees a monster or hears its name, this ability may allow them to discover its true identity.
-
-### Technical frame 36: Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05058))_
-
-> Each monster has a score called rarity . Using sage skill level + intelligence bonus as the baseline score, make a success roll with this rarity as the target score, and if you succeed, you know the monster.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05059))_
-
-> Even if the player knows, they must treat it as if they had no prior knowledge.
-
-### Technical atom 37
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01344))_
-
-| entry | content |
-| --- | --- |
-| 3 | 4 Movement and Actions |
-| 1 | round lasts 10 seconds . Therefore, a character can also move during this time. However, when movement is made, actions are restricted. You cannot wield weapons or cast spells while running at full speed. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Movement and Actions
-3.4 Movement and Actions
-1 round lasts 10 seconds . Therefore, a character can also move during this time. However,  when movement is made, actions are restricted. You cannot wield weapons or cast spells while running at full speed.
-```
-
-</details>
-
-### Technical atom 38
+<a id="atom-technical-atom-28dbf995af07acde"></a>
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04906))_
 
-| entry | content |
-| --- | --- |
-| 6 | 1 Precautions When Using Skills The abilities associated with these skills, including the thief skill , are mostly determined by success rolls. If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target |
-| 6 | 2 |
-| 6 | 2 Thief Skill |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 Precautions When Using Skills
 6.1 Precautions When Using Skills
 The  abilities  associated  with  these skills, including the thief skill , are mostly determined by success rolls.
@@ -538,5 +217,14 @@ If the rules for determining the target score  or  difficulty  are  clearly  ind
 6.2
 6.2 Thief Skill
 ```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
+| entry | content |
+| --- | --- |
+| 6 | 1 Precautions When Using Skills The abilities associated with these skills, including the thief skill, are mostly determined by success rolls. If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target |
+| 6 | 2 |
+| 6 | 2 Thief Skill |
 
 </details>

@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Setting Target Score: 4 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-setting-target-score@de0f9dc74934a9e1781d1a307d63424b
+projection_coverage: topic-sword-world-rpg-complete-edition-setting-target-score@47050c3ffc414a4e88a115eb3c87faaf
 ---
 
 # Setting Target Score
@@ -37,7 +37,11 @@ What [[sword-world-rpg-complete-edition]] covers about setting target score:
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05543, source-range-0b9dec90-05544))_
 
+<a id="atom-technical-atom-3075f35755c5a579"></a>
+
 > To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+
+<a id="atom-technical-atom-aa1d9c653e8096dd"></a>
 
 > Table 9-1: Determining Target Scores or Difficulties
 
@@ -49,9 +53,13 @@ What [[sword-world-rpg-complete-edition]] covers about setting target score:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05608))_
 
+<a id="atom-technical-atom-c5f6009e94dc6a1d"></a>
+
 > The standard for deciding is whether the character can tell if the action succeeded or failed .
 
 ### Technical atom 3
+
+<a id="atom-technical-atom-ab934f07c44ab749"></a>
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01174))_
 
@@ -59,16 +67,7 @@ What [[sword-world-rpg-complete-edition]] covers about setting target score:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01172))_
 
-| entry | content |
-| --- | --- |
-| 2 | 2 Target Scores The baseline score is a number that represents a character's ability. However, the success of an action is not only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned warrior, than when he is an amateur with no fighting experience. |
-| 2 | 3 |
-| 2 | 3 Checks |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 Target Scores
 2.2 Target Scores
 The baseline score is  a number that represents a character's ability. However, the  success  of  an  action  is  not  only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned  warrior,  than  when  he  is  an amateur with no fighting experience.
@@ -76,16 +75,33 @@ The baseline score is  a number that represents a character's ability. However, 
 2.3 Checks
 ```
 
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
+| entry | content |
+| --- | --- |
+| 2 | 2 Target Scores The baseline score is a number that represents a character's ability. However, the success of an action is not only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned warrior, than when he is an amateur with no fighting experience. |
+| 2 | 3 |
+| 2 | 3 Checks |
+
 </details>
 
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-target-score]] - broader topic: Target Scores shares source evidence from Chapter 9: / Setting Target Scores and Difficulties: To make a success roll, you must decide on the skill to be used , the relevant ability score , and the target score or difficulty . Of these, skill and ability score ... [truncated]; Target Scores shares technical record from Chapter 9: / Setting Target Scores and Difficulties: Target Scores 2.2 Target Scores The baseline score is  a number that represents a character's ability. However, the  success  of  an  action  is  not  only related t ... [truncated] (4 shared statement(s), 4 shared atom(s))
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-difficulty]] - shared statements and technical atoms: Difficulty shares source evidence from Chapter 9: / Setting Target Scores and Difficulties: To make a success roll, you must decide on the skill to be used , the relevant ability score , and the target score or difficulty . Of these, skill and ability score ... [truncated]; Difficulty shares technical record from Chapter 9: / Setting Target Scores and Difficulties: To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties. (3 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-should-you-target-score-check]] - shared statements and technical atoms: Should You Target Score Check shares source evidence from Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: There are two types of success rolls: those that use a target score for the check and those that use a difficulty for the check. The game master must decide which of ... [truncated]; Should You Target Score Check shares technical record from Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: Target Scores 2.2 Target Scores The baseline score is  a number that represents a character's ability. However, the  success  of  an  action  is  not  only related t ... [truncated] (2 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-difficulty-check]] - shared statements and technical atoms: Difficulty Check shares source evidence from Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: There are two types of success rolls: those that use a target score for the check and those that use a difficulty for the check. The game master must decide which of ... [truncated]; Difficulty Check shares technical record from Chapter 9: / Setting Target Scores and Difficulties / Should You Use a Target Score Check or a Difficulty Check?: The standard for deciding is whether the character can tell if the action succeeded or failed . (1 shared statement(s), 1 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-ability-score]] - shared statements: Ability Scores shares source evidence from Chapter 9: / Setting Target Scores and Difficulties: To make a success roll, you must decide on the skill to be used , the relevant ability score , and the target score or difficulty . Of these, skill and ability score ... [truncated] (1 shared statement(s))
+
+### Topics
+
+- [[sword-world-rpg-complete-edition-target-score]] - broader topic: Target Scores shares source evidence from Chapter 9: / Setting Target Scores and Difficulties: To make a success roll, you must decide on the skill to be used , the relevant ability score , and the target score or difficulty . Of these, skill and ability score ... [truncated]; Target Scores shares technical record from Chapter 9: / Setting Target Scores and Difficulties: Target Scores 2.2 Target Scores The baseline score is  a number that represents a character's ability. However, the  success  of  an  action  is  not  only related t ... [truncated] (4 shared statement(s), 4 shared atom(s))
 
 ## Source
 

@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-recipes-with-data-mapwith-588e9415
 page_kind: source
-summary: Recipes with Data / mapWith: 14 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Recipes with Data / mapWith: 14 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-recipes-with-data-mapwith-588e9415@c217a3257e00780e06bbe32ada2df071
+projection_coverage: section-javascriptallonge-section-recipes-with-data-mapwith-588e9415@23fb6786c0c640cd2c37ce295faa6ea3
 ---
 
 # Recipes with Data / mapWith
@@ -16,7 +17,12 @@ From [[javascriptallonge]].
 
 ## Related pages
 
+### Source structure
+
 - [[javascriptallonge-section-recipes-with-data-178f0a89]] - broader source section: Recipes with Data
+
+### Topics
+
 - [[javascriptallonge-mapwith]] - topic hub: opens the topic page for Mapwith
 
 ## Statements
@@ -35,55 +41,23 @@ From [[javascriptallonge]].
 
 > That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. For example, we might need a function to return the squares of an array. Instead of writing a a wrapper around .map :
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01430))_
-
-> In JavaScript, arrays have a .map method. Map takes a function as an argument, and applies it to each of the elements of the array, then returns the results in another array. For example:
-
-### Technical frame 2: Recipes with Data / mapWith
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01437))_
-
-> That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. For example, we might need a function to return the squares of an array. Instead of writing a a wrapper around .map :
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01431))_
-
-```
-[1, 2, 3, 4, 5].map(x => x * x)
-//=> [1, 4, 9, 16, 25]
-```
-
-### Technical frame 3: Recipes with Data / mapWith
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01437))_
-
-> That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. For example, we might need a function to return the squares of an array. Instead of writing a a wrapper around .map :
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01433))_
-
-```
-const map = (list, fn) =>
-list.map(fn);
-```
-
-### Technical frame 4: Recipes with Data / mapWith
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01437))_
-
-> That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. For example, we might need a function to return the squares of an array. Instead of writing a a wrapper around .map :
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01435))_
+
+<a id="atom-technical-atom-92d9e96e2e180c9e"></a>
 
 ```
 const mapWith = (fn) => (list) => list.map(fn);
 ```
 
-### Technical frame 5: Recipes with Data / mapWith
+### Technical frame 2: Recipes with Data / mapWith
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01440))_
 
 > 82 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It's the same idea, after all.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01438))_
+
+<a id="atom-technical-atom-119fde11eb201f8c"></a>
 
 ```
 const squaresOf = (list) =>
@@ -92,7 +66,7 @@ squaresOf([1, 2, 3, 4, 5])
 //=> [1, 4, 9, 16, 25]
 ```
 
-### Technical frame 6: Recipes with Data / mapWith
+### Technical frame 3: Recipes with Data / mapWith
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01442))_
 
@@ -100,19 +74,23 @@ squaresOf([1, 2, 3, 4, 5])
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01441))_
 
+<a id="atom-technical-atom-b020d8626cf2b008"></a>
+
 ```
 const squaresOf = mapWith(n => n * n);
 squaresOf([1, 2, 3, 4, 5])
 //=> [1, 4, 9, 16, 25]
 ```
 
-### Technical frame 7: Recipes with Data / mapWith
+### Technical frame 4: Recipes with Data / mapWith
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01444))_
 
 > Both patterns take us to the same destination: Composing functions out of common pieces, rather than building them entirely from scratch. mapWith is a very convenient abstraction for a very common pattern.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01443))_
+
+<a id="atom-technical-atom-f371fc3e501b7ae0"></a>
 
 ```
 const squaresOf = callRight(map, (n => n * n);

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-d9d2f676
 page_kind: source
 page_family: section-reference
-summary: 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-d9d2f676@5cd873537a9a0366fc35a30a7fb7a3b8
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-d9d2f676@48130d8c3084e7277366708fc73245bc
 ---
 
 # 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-acti
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-519dd7f4]] - broader source section: 3.4.4 Actions You Can Take While Standing Still
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-weapon-and-armor-res-6991c734]] - narrower source section: 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself / Weapon and Armor Restrictions
@@ -38,34 +40,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical frame 1: 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself
+### Technical atom 1
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01401))_
-
-> From a state of falling down, stand up and ready yourself. You can only ready one weapon, etc. that you're wearing. You cannot pick up any items on the ground.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01405))_
-
-> [Figure] (p.39)
-
-### Technical atom 2
+<a id="atom-technical-atom-b666f073a3eee7a6"></a>
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01409))_
 
-| entry | content |
-| --- | --- |
-| 4 | 1 Weapon and Armor Restrictions A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword... All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters may not use weapons or armor with a required strength greater than their own strength. |
-| 4 | 2 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 Weapon and Armor Restrictions
 4.1 Weapon and Armor Restrictions
 A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword...
 All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters  may  not  use  weapons  or armor  with  a  required  strength  greater than their own strength.
 4.2
 ```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
+| entry | content |
+| --- | --- |
+| 4 | 1 Weapon and Armor Restrictions A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword... All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters may not use weapons or armor with a required strength greater than their own strength. |
+| 4 | 2 |
 
 </details>

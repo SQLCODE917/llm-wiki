@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-4-5-1-hit-checks-426c8706
 page_kind: source
 page_family: section-reference
-summary: 4.5.1 Hit Checks: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 4.5.1 Hit Checks: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-1-hit-checks-426c8706@bb412e1a94445adc7760b81e88a5f58a
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-1-hit-checks-426c8706@9bf5254d446d9dc61f40db63cacf3fb7
 ---
 
 # 4.5.1 Hit Checks
@@ -17,9 +17,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Topics
+
 - [[sword-world-rpg-complete-edition-hit-check]] - topic hub: opens the topic page for Hit Check
-- [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-4-7-1-hit-checks-62d20d3a]] - same source heading: another source section with the same heading, 4.7 Attacks From Characters Against Characters / 4.7.1 Hit Checks
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-10-5-attacks-against-the-sleeping-hit-checks-f105c38c]] - same source heading: another source section with the same heading, 10.5 Attacks Against the Sleeping / 《 Hit Checks 》
+- [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-4-7-1-hit-checks-62d20d3a]] - same source heading: another source section with the same heading, 4.7 Attacks From Characters Against Characters / 4.7.1 Hit Checks
 
 ## Statements
 
@@ -33,30 +38,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 4.5.1 Hit Checks
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01484))_
-
-> In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01483))_
-
-> When a character attacks a monster, they must make a success roll hit check, using attack power as the baseline score.
-
-### Technical frame 2: 4.5.1 Hit Checks
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01488))_
-
-> Since a hit check is also a type of success roll, double ones is an automatic failure and double sixes is an automatic success .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01486))_
-
-> character's attack power + 2D ≥ monster's evasion points → attack hits
-
-### Technical frame 3: 4.5.1 Hit Checks
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01491))_
 
 > His player rolls the dice to make a hit check. The roll is 8. 4+8= 12 , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01492))_
+
+<a id="atom-technical-atom-7d0c225ad68d54e7"></a>
 
 > Table 4-1: Rating Table

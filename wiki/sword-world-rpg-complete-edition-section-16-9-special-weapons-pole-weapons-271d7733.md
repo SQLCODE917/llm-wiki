@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-16-9-special-weapons-pole-weapons-271d7733
 page_kind: source
 page_family: section-reference
-summary: 16.9 Special Weapons / Pole Weapons: 32 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 16.9 Special Weapons / Pole Weapons: 32 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-9-special-weapons-pole-weapons-271d7733@e5941c2d1b5e52df087138c1995cd0ac
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-9-special-weapons-pole-weapons-271d7733@e4921dd585a0b4347e1d23d53a99dcc4
 ---
 
 # 16.9 Special Weapons / Pole Weapons
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-16-9-speci
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-16-9-special-weapons-62330b63]] - broader source section: 16.9 Special Weapons
 
@@ -38,25 +40,3 @@ From [[sword-world-rpg-complete-edition]].
 - Pole weapons cannot reach their full power in tight spaces. The length of a pole weapon is required strength x 15 centimeters. If you don't have a space with this radius, you cannot use attack methods other than thrust . It would not be a good idea to bring them into underground labyrinths, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11596))_
 - This attack cannot target anything that's not bipedal, and it cannot knock anything larger than the adventurer, such as an ogre, giant, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11572))_
 - If the attack is successful, the opponent suffers damage and at the same time must make a success roll using adventurer level + dexterity bonus ( evasion points -7 for monsters) as the baseline score and the attacker's final Players should examine which attack methods they can use with each pole weapon (for example, a halberd can be used in four ways: thrust , cut , stab , and sweep ) and arm themselves accordingly. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11584))_
-
-## Technical atoms
-
-### Technical frame 1: 16.9 Special Weapons / Pole Weapons
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11585))_
-
-> Below are some typical pole weapons and how to use them.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11584))_
-
-> For those with multiple attack methods, you must declare which attack method you will use each round.
-
-### Technical frame 2: 16.9 Special Weapons / Pole Weapons
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11593))_
-
-> The glaive is a weapon with a knifelike blade attached to the end of a long handle. This weapon can be used in two ways: thrust and cut .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11596))_
-
-> If you don't have a space with this radius, you cannot use attack methods other than thrust .

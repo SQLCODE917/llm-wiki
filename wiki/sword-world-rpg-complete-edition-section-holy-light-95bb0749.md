@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-holy-light-95bb0749
 page_kind: source
 page_family: section-reference
-summary: [ Holy Light ]: 18 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Holy Light ]: 18 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-holy-light-95bb0749@8f4f4f272ba0ad863b638220ca33f528
+projection_coverage: section-sword-world-rpg-complete-edition-section-holy-light-95bb0749@f5ad6feb3ff3b1251d04a9b25d95d4cf
 ---
 
 # [ Holy Light ]
@@ -23,25 +23,3 @@ From [[sword-world-rpg-complete-edition]].
 - As a result, you can deal damage to undead within 10 meters of the caster. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04438))_
 - This means that undead will suffer damage and lose vision for one round. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04439))_
 - This spell cannot take effect within the area of effect of Darkness . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04440))_
-
-## Technical atoms
-
-### Technical frame 1: [ Holy Light ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04429, source-range-0b9dec90-04430, source-range-0b9dec90-04431, source-range-0b9dec90-04432, source-range-0b9dec90-04433, source-range-0b9dec90-04434, source-range-0b9dec90-04436, source-range-0b9dec90-04437))_
-
-> Base Mental Power Cost=12
-
-> Distance=Caster
-
-> Area=A space within a 10 meter radius from the caster
-
-> Duration=Instant
-
-> Effect=Emits holy light, dealing strike power 20 damage to undead within range
-
-> Type=Damage (Special)
-
-> Expansion=Final score, area, damage certainty
-
-> Resist=Reduced effect

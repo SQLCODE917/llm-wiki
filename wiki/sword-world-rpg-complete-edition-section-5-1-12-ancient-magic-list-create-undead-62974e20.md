@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-create-undead-62974e20
 page_kind: source
 page_family: section-reference
-summary: 5.1.12 Ancient Magic List / Create Undead ]: 19 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 5.1.12 Ancient Magic List / Create Undead ]: 19 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-create-undead-62974e20@37560ec9bf40fe471c8d9a659937f1cd
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-create-undead-62974e20@4f3b65021136a832d29016760e235481
 ---
 
 # 5.1.12 Ancient Magic List / Create Undead ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-12-anc
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-19f66f88]] - broader source section: 5.1.12 Ancient Magic List
 
@@ -31,22 +33,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 5.1.12 Ancient Magic List / Create Undead ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03290))_
-
-> Create Undead is a spell that creates undead monsters such as skeletons and zombies. To use this spell, of course, you'll need a corpse (usually a human corpse is used). Depending on the state of decomposition of the corpse, it will determine whether it'll become a skeleton or a zombie. If you use this spell on a mummified or severely decomposed corpse, the corpse will be completely skeletonized and a skeleton will be born. If it's still a corpse before that happens, then a zombie will be born. 
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03288, source-range-0b9dec90-03289))_
-
-> Base Mental Power Cost=24 Distance=Touch Area=One corpse Duration=Permanent Effect=Turns a corpse into undead Type=Non-removable, lost, ritual Expansion=Target volume
-
-> Resist=None
-
-### Technical frame 2: 5.1.12 Ancient Magic List / Create Undead ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03292))_
 
 > Details for non-human skeletons and zombies should be decided by the game master. A rough guideline is to set life scores to 1/2 for skeletons, and 3/2 for zombies. Other scores may not need to be changed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03291))_
+
+<a id="atom-technical-atom-4da1c7d4cdbf1221"></a>
 
 > If you wish, you can turn non-human animals, fae, youma, titans, mythical beasts, magical beasts, etc.

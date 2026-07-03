@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 13.6 Handling Monster Special Abilities / 《 Water Adaptation 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-water-adaptation-da60739b@4d64ad7271ae158100126373908ce843
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-water-adaptation-da60739b@2a4970ea1fc0cb392c28578c7e0e5aea
 ---
 
 # 13.6 Handling Monster Special Abilities / 《 Water Adaptation 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handl
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-22341d2d]] - broader source section: 13.6 Handling Monster Special Abilities
 

@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Elven ]: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-elven-7bc6f0d0@f4a732a854a623fd1cb865bcff6bafa0
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-elven-7bc6f0d0@98b83ac296c09e481a4010294d5aa482
 ---
 
 # Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Elven ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8]] - broader source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language
 

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-destruction-points-f09f0546
 page_kind: source
 page_family: section-reference
-summary: 18.3 Rules for Destroying Structures / Destruction Points: 33 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 18.3 Rules for Destroying Structures / Destruction Points: 33 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-destruction-points-f09f0546@e244d72dc8a656c0dcc8b7d0169232b6
+projection_coverage: section-sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-destruction-points-f09f0546@49f79dec9fccf9752260f8063568d5dc
 ---
 
 # 18.3 Rules for Destroying Structures / Destruction Points
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-5e113017]] - broader source section: 18.3 Rules for Destroying Structures
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-destruction-d9738c5e]] - same source heading: another source section with the same heading, 5.1.14 Spirit Magic List / [ Destruction ]
 
 ## Statements
@@ -50,6 +55,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11753))_
 
+<a id="atom-technical-atom-dbeb0e28bd1b7488"></a>
+
 > As expected, it indicates the strength of the material, and the game master must determine a specific score depending on the thickness.
 
 ### Technical frame 2: 18.3 Rules for Destroying Structures / Destruction Points
@@ -59,6 +66,8 @@ From [[sword-world-rpg-complete-edition]].
 > Consider trying to destroy a wooden wall (!) that's 20 cm thick. The game master considers this to have maximum strength for a wooden wall, and sets its defense points and destruction points to their maximums of 7 and 15 , respectively (see details below).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11755))_
+
+<a id="atom-technical-atom-6c6882f264f8a644"></a>
 
 > If the result is greater than 1 but less than the destruction points, the defense points are reduced by 1 point.
 
@@ -70,6 +79,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11756))_
 
+<a id="atom-technical-atom-5627aaaf322538c8"></a>
+
 > Table 18-2 Types of Magic
 
 ### Technical frame 4: 18.3 Rules for Destroying Structures / Destruction Points
@@ -80,34 +91,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11783))_
 
+<a id="atom-technical-atom-360bec2f26eb8190"></a>
+
 > If it says complete immunity , it can never be destroyed by that weapon or magic.
-
-### Technical frame 5: 18.3 Rules for Destroying Structures / Destruction Points
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11786))_
-
-> Otherwise, such attacks reduce defense points by 1 point (unless you roll double ones on a strike roll).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11784))_
-
-> If it says no criticals , bonus damage cannot be dealt by a critical .
-
-### Technical frame 6: 18.3 Rules for Destroying Structures / Destruction Points
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11786))_
-
-> Otherwise, such attacks reduce defense points by 1 point (unless you roll double ones on a strike roll).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11785))_
-
-> If it says ignores defense points , the defense points are not taken into consideration, and if the damage exceeds the destruction points, it'll be destroyed in one blow .
-
-### Technical frame 7: 18.3 Rules for Destroying Structures / Destruction Points
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11788))_
-
-> Crack is classified as earthquaketype, but given the way the magic is applied, it's unlikely that it'll be effective. Also, most walls don't move, so Blade Net won't deal any damage.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11787))_
-
-> Beyond this, game masters should also use common sense.

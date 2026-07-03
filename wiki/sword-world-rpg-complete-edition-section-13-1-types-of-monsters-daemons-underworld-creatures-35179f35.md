@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 13.1 Types of Monsters / 《 Daemons/Underworld Creatures 》: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-1-types-of-monsters-daemons-underworld-creatures-35179f35@79fff713299c1ea1a2284528ae93b5a1
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-1-types-of-monsters-daemons-underworld-creatures-35179f35@ad680c0f205eac45ca8d1b6fd529300f
 ---
 
 # 13.1 Types of Monsters / 《 Daemons/Underworld Creatures 》
@@ -17,8 +17,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-1cd4c9c3]] - broader source section: 13.1 Types of Monsters
+
+### Topics
+
 - [[sword-world-rpg-complete-edition-daemon-underworld-creature]] - topic hub: opens the topic page for Daemon Underworld Creature
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-13-2-11-daemons-underworld-creatures-5f686ba2]] - same source heading: another source section with the same heading, 13.2.11 Daemons/Underworld Creatures
 
 ## Statements

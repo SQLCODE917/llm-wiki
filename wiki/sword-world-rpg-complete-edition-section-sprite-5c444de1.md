@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-sprite-5c444de1
 page_kind: source
 page_family: section-reference
-summary: [ Sprite ]: 14 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Sprite ]: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-sprite-5c444de1@66e3c72a8d20dd6cb8ca64211108c1da
+projection_coverage: section-sword-world-rpg-complete-edition-section-sprite-5c444de1@97c8c575ee85355729151ce5673cbc35
 ---
 
 # [ Sprite ]
@@ -22,25 +22,3 @@ From [[sword-world-rpg-complete-edition]].
 - To harm a sprite, it must be a silver or magic weapon. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07201))_
 - Because it's invisible, its appearance cannot be identified, but it is said to resemble a leprechaun, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07199))_
 - This invisibility cannot be removed unless you use Dispel Magic , etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07200))_
-
-## Technical atoms
-
-### Technical frame 1: [ Sprite ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07200))_
-
-> Mad sprites have the ability to make others invisible. When a mad sprite performs this attack, the target must make a mental power resistance roll (target score 13). If you fail, you will become invisible. Those who have become invisible cannot see themselves either. For this reason, a -2 modifier will be imposed on all physical action checks. This invisibility cannot be removed unless you use Dispel Magic , etc. or defeat the mad sprite.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07199))_
-
-> Also, you cannot cast magic on mad sprites.
-
-### Technical frame 2: [ Sprite ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07201))_
-
-> To harm a sprite, it must be a silver or magic weapon.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07200))_
-
-> When a mad sprite performs this attack, the target must make a mental power resistance roll (target score 13).

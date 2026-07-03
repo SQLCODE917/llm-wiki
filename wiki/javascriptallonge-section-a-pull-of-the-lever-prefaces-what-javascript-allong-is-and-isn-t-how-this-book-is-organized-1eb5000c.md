@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-a-pull-of-the-lever-prefaces-what-javascript-allong-is-and-isn-t-how-this-book-is-organized-1eb5000c
 page_kind: source
+page_family: section-reference
 summary: A Pull of the Lever: Prefaces / What JavaScript Allongé is. And isn't. / how this book is organized: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-a-pull-of-the-lever-prefaces-what-javascript-allong-is-and-isn-t-how-this-book-is-organized-1eb5000c@7c7431b04a3c8648a318073adfdcaee3
+projection_coverage: section-javascriptallonge-section-a-pull-of-the-lever-prefaces-what-javascript-allong-is-and-isn-t-how-this-book-is-organized-1eb5000c@b2d916b4fa6b0c327633b0da4db9c7e6
 ---
 
 # A Pull of the Lever: Prefaces / What JavaScript Allongé is. And isn't. / how this book is organized
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-a-pull-of-the-lever-prefa
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-a-pull-of-the-lever-prefaces-what-javascript-allong-is-and-isn-t-fff532da]] - broader source section: A Pull of the Lever: Prefaces / What JavaScript Allongé is. And isn't.
 

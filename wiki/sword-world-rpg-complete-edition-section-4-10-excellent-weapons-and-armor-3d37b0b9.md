@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-3d37b0b9
 page_kind: source
 page_family: section-reference
-summary: 4.10 Excellent Weapons and Armor: 125 source-backed entries and 13 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 4.10 Excellent Weapons and Armor: 125 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-3d37b0b9@f6b7d90d3c543d224b9fde9e2d1c5d64
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-3d37b0b9@b5e632409e44b4a14cc1f8a098328676
 ---
 
 # 4.10 Excellent Weapons and Armor
@@ -17,11 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-1-high-quality-weapons-c28fa6fc]] - narrower source section: 4.10 Excellent Weapons and Armor / 4.10.1 High-Quality Weapons
-- [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-and-armor-8906bbe1]] - narrower source section: 4.10 Excellent Weapons and Armor / and Armor
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-2-silver-weapons-and-armor-dbb0cb19]] - narrower source section: 4.10 Excellent Weapons and Armor / 4.10.2 Silver Weapons and Armor
 - [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-444977ff]] - narrower source section: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor
 - [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-4-mithril-silver-weapons-and-armor-fbfde28b]] - narrower source section: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor
+- [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-and-armor-8906bbe1]] - narrower source section: 4.10 Excellent Weapons and Armor / and Armor
 
 ## Statements
 
@@ -129,6 +130,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02357))_
 
+<a id="atom-technical-atom-b2b24ba20eca44f8"></a>
+
 > Also, even if you search all over Alecrast, you will usually only find one with a required strength up to 5 lower than usual .
 
 ### Technical frame 2: 4.10 Excellent Weapons and Armor / and Armor
@@ -139,115 +142,36 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02358))_
 
+<a id="atom-technical-atom-b3da874e11489f23"></a>
+
 > However, if you want one of higher quality, you must go to a larger town.
 
-### Technical frame 3: 4.10 Excellent Weapons and Armor / and Armor
+### Technical atom 3
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02362))_
-
-> Whenever an adventurer declares that their attack on a monster is a mercy, that monster will always remain alive. If left alone, it will always regain consciousness.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02361))_
-
-> If they fail, then unless they roll double ones, they will continue to remain unconscious.
-
-### Technical frame 4: 4.10 Excellent Weapons and Armor / and Armor
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02363))_
-
-> In addition, no matter how high quality it is, nothing can affect its attack power or evasion speed. It'll also have no effect on monsters that can only be wounded by magic or magical weapons (such as spirits, beastmen, etc.).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02362))_
-
-> Whenever an adventurer declares that their attack on a monster is a mercy, that monster will always remain alive.
-
-### Technical frame 5: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Weapons 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02377))_
-
-> Magical weapons have exceptional attack power and bonus damage . If you use a +1 magical weapon, you receive a +1 bonus to attack power and bonus damage. If +2, those bonuses are +2, and if +3, they're +3.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02378))_
-
-> Magical weapons can deal damage to monsters that normal weapons cannot harm.
-
-### Technical frame 6: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Armor 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02384))_
-
-> Magical weapons and armor are not usually traded, but if you are very lucky you may be able to buy them if they're +1. A guide to prices can be found in Chapter 14: Treasure (see p. 240). Also, they offer basically no bonus to strike power or defense power, same as required strength.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02382))_
-
-> If you wear +1 magical armor, you gain +1 to evasion speed and damage reduction.
-
-### Technical frame 7: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Armor 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02384))_
-
-> Magical weapons and armor are not usually traded, but if you are very lucky you may be able to buy them if they're +1. A guide to prices can be found in Chapter 14: Treasure (see p. 240). Also, they offer basically no bonus to strike power or defense power, same as required strength.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02383))_
-
-> Even if it is magical, if it is metal armor, a shaman cannot wear it.
-
-### Technical frame 8: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02389))_
-
-> If a character ever sees them, mithril silver weapons and armor are definitely a legacy from the era of the magical kingdom.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02388))_
-
-> Mithril silver is itself a mineral imbued with magic, and when processed, it gains power.
-
-### Technical frame 9: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02395))_
-
-> Mithril silver, like regular silver, is a metal that exists in the spirit world. Therefore, a shaman can wear mithril silver armor and still use spirit magic.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02394))_
-
-> Mithril silver weapons can deal damage to monsters that normal weapons cannot harm.
-
-### Technical frame 10: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02398))_
-
-> It should be noted that, although this does not affect the numeric aspects of the game, mithril silver can be made to emit a variety of colors depending on how it's processed, and these colors will never fade.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02397))_
-
-> Mithril silver weapons and armor are never , if ever, placed in shops or traded for money.
-
-### Technical frame 11: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor / Forger of Colors
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02405))_
-
-> It's been said that no one could surpass the dwarves when it comes to the processing of mithril silver. Among the dwarves, the one who is said to have been the most skilled in the processing of mithril silver in the ancient kingdom, was Somska, an enchanter called the "Forger of Colors". The quality and quantity of Somska's mithril work was said to be outstanding, and countless legends have been passed down. The following anecdote is one of them.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02404))_
-
-> [Figure] (p.53)
-
-### Technical frame 12: 4.10 Excellent Weapons and Armor / 4.10.4 Mithril Silver Weapons and Armor / Forger of Colors
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02410))_
-
-> I think I saw in this anecdote the rebellious spirit of the dwarves. And, in fact, I also felt that the dwarves might have an exceptional sense of humor. But like Somska, the dwarves will not reveal that smile behind their beards.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02409))_
-
-> Was this crown not to display all the colors of the world?!" It is said that Somska answered without changing the expression beneath his beard at all, "If you mix all colors together, you will only get black."
-
-### Technical atom 13
+<a id="atom-technical-atom-0d6d657b228f142a"></a>
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02356))_
 
 > It is important to note that such weapons and armor cannot exceed the limits of the weapon or armor itself. For example, if you want a high-quality broadsword, its required strength (size) is naturally limited to 8-16 . Since there is no such broadsword with a natural required strength of 17, that means there is no such thing as a broadsword with required strength 16 and strike power 17 .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02359))_
+
+```text
+These high-quality weapons and armor  can  be  expensive.  Their  price increases  by 20% for  every 1 required strength lower than usual. 2 lower will be 40% more expensive, 3 lower will be 60% more  expensive, 4 lower  will  be 80% more expensive, and 5 lower will be twice the original price.
+Table 4-5: Guideline for Obtaining High-Quality Weapons and Armor
+5 less Required Strength
+Royal city level in a large country
+4 less Required Strength
+Large city in a large country, royal city level in a small country
+3 less Required Strength
+Reasonable city
+2 less Required Strength
+Town of about 1000 people
+1 less Required Strength
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
 
 | entry | content |
 | --- | --- |
@@ -261,22 +185,5 @@ From [[sword-world-rpg-complete-edition]].
 | 3 | Large city in a large country, royal city level in a small country less Required Strength |
 | 2 | Reasonable city less Required Strength |
 | 1 | Town of about 1000 people less Required Strength |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-These high-quality weapons and armor  can  be  expensive.  Their  price increases  by 20% for  every 1 required strength lower than usual. 2 lower will be 40% more expensive, 3 lower will be 60% more  expensive, 4 lower  will  be 80% more expensive, and 5 lower will be twice the original price.
-Table 4-5: Guideline for Obtaining High-Quality Weapons and Armor
-5 less Required Strength
-Royal city level in a large country
-4 less Required Strength
-Large city in a large country, royal city level in a small country
-3 less Required Strength
-Reasonable city
-2 less Required Strength
-Town of about 1000 people
-1 less Required Strength
-```
 
 </details>

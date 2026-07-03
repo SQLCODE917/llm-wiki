@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-ae6a9777
 page_kind: source
 page_family: section-reference
-summary: 15.1 Four Types of Experience Points: 31 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 15.1 Four Types of Experience Points: 31 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-ae6a9777@728c49251289523eae59c29a45ed2fc2
+projection_coverage: section-sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-ae6a9777@d5961e0319a1973802e940f1ec2c3b2b
 ---
 
 # 15.1 Four Types of Experience Points
@@ -17,10 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-accomplishing-missions-6b3b62dd]] - narrower source section: 15.1 Four Types of Experience Points / Accomplishing Missions
 - [[sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-fighting-monsters-1d481d44]] - narrower source section: 15.1 Four Types of Experience Points / Fighting Monsters
-- [[sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-success-rolls-153c43f4]] - narrower source section: 15.1 Four Types of Experience Points / Success Rolls
 - [[sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-special-bonuses-72b85894]] - narrower source section: 15.1 Four Types of Experience Points / Special Bonuses
+- [[sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-success-rolls-153c43f4]] - narrower source section: 15.1 Four Types of Experience Points / Success Rolls
 
 ## Statements
 
@@ -52,35 +54,3 @@ From [[sword-world-rpg-complete-edition]].
 ### 15.1 Four Types of Experience Points / Special Bonuses
 
 - The game master is free to award bonus experience for particularly outstanding play. However, this should be done as sparingly as possible. Giving away a large amount of experience points is harmful to the enjoyment of the game. It'd be most appropriate to keep it to about 1/10th of the experience points earned from accomplishing a mission. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11154))_
-
-## Technical atoms
-
-### Technical frame 1: 15.1 Four Types of Experience Points / Accomplishing Missions
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11145))_
-
-> If you were to become one of the thieves' transport partners without realizing they're stolen goods, your mission would not be accomplished.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11146))_
-
-> If they cannot achieve it, they will only get 500 points.
-
-### Technical frame 2: 15.1 Four Types of Experience Points / Accomplishing Missions
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11146))_
-
-> If each character achieves the goal (mission) set by the game master, they will each receive 1000 experience points. If they cannot achieve it, they will only get 500 points.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11147))_
-
-> If the game master deems it to be an incomplete success, but not exactly a failure, he or she may decide to award experience points somewhere in between, such as 700 or 800.
-
-### Technical frame 3: 15.1 Four Types of Experience Points / Special Bonuses
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11154))_
-
-> The game master is free to award bonus experience for particularly outstanding play. However, this should be done as sparingly as possible. Giving away a large amount of experience points is harmful to the enjoyment of the game. It'd be most appropriate to keep it to about 1/10th of the experience points earned from accomplishing a mission.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11156))_
-
-> [Figure] (p.259)

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-7-22223c91
 page_kind: source
 page_family: section-reference
-summary: Chapter 7:: 145 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 7:: 145 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-22223c91@5643dc7f4bcfccad20a8e2f0981daa3c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-22223c91@9594338e8a53830c9c13181e016f6e56
 ---
 
 # Chapter 7:
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-7-7-1-notes-on-general-skills-297ffcb5]] - narrower source section: Chapter 7: / 7.1 Notes on General Skills
 - [[sword-world-rpg-complete-edition-section-chapter-7-7-2-merchant-skill-9063d5cf]] - narrower source section: Chapter 7: / 7.2 Merchant Skill
@@ -142,89 +144,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical frame 1: Chapter 7: / 7.2 Merchant Skill
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05296))_
-
-> Even though they're all called merchants, there are many different types of merchants
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05297))_
-
-> For example, some merchants may sell arts and crafts, while others might sell fresh produce, etc. Therefore, merchants are well versed in the art of trading one type of item, and are no different from ordinary people when it
-
-### Technical frame 2: Chapter 7: / 7.2 Merchant Skill / How to Create General Skills
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05315))_
-
-> To use this ability, you must know the correct price of the item you are dealing with. Then, each side makes a success roll using merchant level + mental strength bonus as the baseline score. This ability is a common ability for merchants, so it can also be applied to products outside of your specialty.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05312))_
-
-> Of course, if you take the stock at a lower price or sell it at a higher price than the regular price, your profit will increase, so this ability is important.
-
-### Technical frame 3: Chapter 7: / 7.2 Merchant Skill / How to Create General Skills
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05315))_
-
-> To use this ability, you must know the correct price of the item you are dealing with. Then, each side makes a success roll using merchant level + mental strength bonus as the baseline score. This ability is a common ability for merchants, so it can also be applied to products outside of your specialty.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05314))_
-
-> is a market price for ordinary items, so if you get too greedy, you may end up ruining a precious negotiation.
-
-### Technical frame 4: Chapter 7: / 7.3 Craftsman Skill / [ ① Craft [Dexterity] ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05328))_
-
-> Ducard II is trying to sell an ancient kingdom vase (price: 100 gamels) that he found on his adventure to an antique dealer. Ducard II has no merchant skill, so his baseline score for a success roll is 0 . The antique dealer, on the other hand, has a merchant level of 5 and a mental power bonus of +2 . Ducard II rolls 2D, and his final score is 8 . On the other hand, the antique dealer's 2D roll is 9, and his final score is 9+5+2= 16 . Since the difference between the two is 16-8= 8 , the antiqu
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05329))_
-
-> However, you cannot create weapons or armor with a required strength of 6 or lower.
-
-### Technical frame 5: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / Hunter Skill / [ ⑨ Pre-processing [Dexterity]]
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05363))_
-
-> You can also use it to take apart and smoke meat.
-
-### Technical frame 6: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ③ Herbs [Intelligence] ] (Not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05371))_
-
-> Hunters can see how much their prey and pre-processed products are worth. For prey and pre-processed items, set a difficulty and have them make a success roll.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05370))_
-
-> Therefore, it's no good if you cannot determine the price of the game you've hunted.
-
-### Technical frame 7: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ③ Herbs [Intelligence] ] (Not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05374))_
-
-> The sailor skill is the skill needed to operate a ship. Owners of this skill are called sailors, and people called sailors own this skill. Also, even if you are not a professional sailor, those who sail as a hobby or a side job still possess this skill.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05372))_
-
-> Game masters should not set a very high difficulty level for using this ability unless you're trying to catch an extremely difficult animal.
-
-### Technical frame 8: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ③ Herbs [Intelligence] ] (Not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05376))_
-
-> The abilities of the sailor skill are as follows.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05375))_
-
-> At that time, you can only wear armor up to cloth or soft leather.
-
-### Technical frame 9: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ③ Small Ship Steering [Dexterity] ]
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05391))_
-
-> If you're just going straight through calm water, you don't need a success roll.
-
-### Technical frame 10: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ⑦ Ropework [Dexterity] ]
+### Technical frame 1: Chapter 7: / 7.5 [ ② Treatment [Intelligence]] / [ ⑦ Ropework [Dexterity] ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05400))_
 
@@ -232,48 +152,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05404))_
 
+<a id="atom-technical-atom-cb4208edb2c439c6"></a>
+
 > [Figure] (p.129)
-
-### Technical atom 11
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01344))_
-
-| entry | content |
-| --- | --- |
-| 3 | 4 Movement and Actions |
-| 1 | round lasts 10 seconds . Therefore, a character can also move during this time. However, when movement is made, actions are restricted. You cannot wield weapons or cast spells while running at full speed. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Movement and Actions
-3.4 Movement and Actions
-1 round lasts 10 seconds . Therefore, a character can also move during this time. However,  when movement is made, actions are restricted. You cannot wield weapons or cast spells while running at full speed.
-```
-
-</details>
-
-### Technical atom 12
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04906))_
-
-| entry | content |
-| --- | --- |
-| 6 | 1 Precautions When Using Skills The abilities associated with these skills, including the thief skill , are mostly determined by success rolls. If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target |
-| 6 | 2 |
-| 6 | 2 Thief Skill |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Precautions When Using Skills
-6.1 Precautions When Using Skills
-The  abilities  associated  with  these skills, including the thief skill , are mostly determined by success rolls.
-If the rules for determining the target score  or  difficulty  are  clearly  indicated, the  game  master  should  follow  those rules,  otherwise  the  game  master  must follow the rules under 9.1: Setting Target
-6.2
-6.2 Thief Skill
-```
-
-</details>

@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-we-get-2605e005
 page_kind: source
+page_family: section-reference
 summary: We get:: 35 source-backed entries and 14 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-we-get-2605e005@d5374372e523d67ca171202ac6553358
+projection_coverage: section-javascriptallonge-section-we-get-2605e005@1a717b5dc1cf6ddbb3a90ff859a30cc2
 ---
 
 # We get:
@@ -16,11 +17,13 @@ From [[javascriptallonge]].
 
 ## Related pages
 
-- [[javascriptallonge-section-we-get-representing-naughts-and-crosses-as-a-stateful-function-fe9d0cf3]] - narrower source section: We get: / representing naughts and crosses as a stateful function
-- [[javascriptallonge-section-we-get-this-seems-familiar-0d4230cb]] - narrower source section: We get: / this seems familiar
-- [[javascriptallonge-section-we-get-interactive-generators-6808178d]] - narrower source section: We get: / interactive generators
-- [[javascriptallonge-section-we-get-summary-db42c4cd]] - narrower source section: We get: / summary
+### Source structure
+
 - [[javascriptallonge-section-we-get-basic-operations-on-iterables-50055b98]] - narrower source section: We get: / Basic Operations on Iterables
+- [[javascriptallonge-section-we-get-interactive-generators-6808178d]] - narrower source section: We get: / interactive generators
+- [[javascriptallonge-section-we-get-representing-naughts-and-crosses-as-a-stateful-function-fe9d0cf3]] - narrower source section: We get: / representing naughts and crosses as a stateful function
+- [[javascriptallonge-section-we-get-summary-db42c4cd]] - narrower source section: We get: / summary
+- [[javascriptallonge-section-we-get-this-seems-familiar-0d4230cb]] - narrower source section: We get: / this seems familiar
 
 ## Statements by subsection
 
@@ -62,6 +65,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01916))_
 
+<a id="atom-technical-atom-121f85a7bde122c7"></a>
+
 ```
 {
 "o,x, , , , , , , ":6,
@@ -78,6 +83,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01918))_
 
+<a id="atom-technical-atom-14941c59730aa3ec"></a>
+
 ```
 moveLookupTable[[
 'o', 'x', ' ',
@@ -90,6 +97,8 @@ moveLookupTable[[
 ### Technical frame 3: We get:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01920))_
+
+<a id="atom-technical-atom-9aac9e5767a4e13f"></a>
 
 ```
 statelessNaughtsAndCrosses([
@@ -107,6 +116,8 @@ statelessNaughtsAndCrosses([
 > Let's recap what we have: We have a stateful function, but we built it by wrapping a stateless function in a function that updates state based on the moves we provide. The state is encoded entirely in data.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01924))_
+
+<a id="atom-technical-atom-c8c1d58d890c1966"></a>
 
 ```
 const aNaughtsAndCrossesGame = statefulNaughtsAndCrosses();
@@ -129,6 +140,8 @@ aNaughtsAndCrossesGame(4)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01926))_
 
+<a id="atom-technical-atom-57d421821810c7f8"></a>
+
 ```
 const statefulNaughtsAndCrosses = () => {
 const state = [
@@ -147,6 +160,8 @@ if (x) {
 > Let's recap what we have: We have a stateful function, but we built it by wrapping a stateless function in a function that updates state based on the moves we provide. The state is encoded entirely in data.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01927))_
+
+<a id="atom-technical-atom-54f95aa60d77ef56"></a>
 
 ```
 if (state[x] === ' ') {
@@ -178,6 +193,8 @@ aNaughtsAndCrossesGame(4)
 > Naughts and crosses is simple enough that the lookup function seems substantially simpler, in part because linear code doesn't represent trees particularly well. But we can clearly see that if we wanted to, we could represent the state of the program implicitly in a decision tree.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01933))_
+
+<a id="atom-technical-atom-7529af049469d955"></a>
 
 ```
 function browserNaughtsAndCrosses () {
@@ -220,6 +237,8 @@ break;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01940))_
 
+<a id="atom-technical-atom-c587d1518ea98f21"></a>
+
 ```
 function* generatorNaughtsAndCrosses () {
 const x1 = yield 0;
@@ -250,6 +269,8 @@ break;
 ### Technical frame 9: We get: / Basic Operations on Iterables / operations that transform one iterable into another
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01950))_
+
+<a id="atom-technical-atom-bb936ac8e7312a4f"></a>
 
 ```
 function * mapWith(fn, iterable) {
@@ -287,6 +308,8 @@ iterator.next();
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01951))_
 
+<a id="atom-technical-atom-e838432a1d138fb2"></a>
+
 ```
 yield * iterator;
 }
@@ -302,6 +325,8 @@ if (!done) yield value;
 ### Technical frame 11: We get: / Basic Operations on Iterables / operations that compose two or more iterables into an iterable
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01953))_
+
+<a id="atom-technical-atom-3c37d3098e2aa04b"></a>
 
 ```
 function * zip (...iterables) {
@@ -330,6 +355,8 @@ yield zipper(...values);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01955))_
 
+<a id="atom-technical-atom-4549015fa4bf0a16"></a>
+
 ```
 const zip = callFirst(zipWith, (...values) => values);
 ```
@@ -337,6 +364,8 @@ const zip = callFirst(zipWith, (...values) => values);
 ### Technical frame 13: We get: / Basic Operations on Iterables / operations that transform an iterable into a value
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01957))_
+
+<a id="atom-technical-atom-cf749ba6f306eaf9"></a>
 
 ```
 const reduceWith = (fn, seed, iterable) => {
@@ -353,6 +382,8 @@ iterable[Symbol.iterator]().next().value;
 ### Technical frame 14: We get: / Basic Operations on Iterables / memoizing an iterable
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01959))_
+
+<a id="atom-technical-atom-b7b6fc2b2208dc48"></a>
 
 ```
 function memoize (generator) {

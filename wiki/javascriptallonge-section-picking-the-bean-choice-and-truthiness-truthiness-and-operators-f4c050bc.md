@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-picking-the-bean-choice-and-truthiness-truthiness-and-operators-f4c050bc
 page_kind: source
-summary: Picking the Bean: Choice and Truthiness / truthiness and operators: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Picking the Bean: Choice and Truthiness / truthiness and operators: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-picking-the-bean-choice-and-truthiness-truthiness-and-operators-f4c050bc@ca6069cfcba41a426ecd7438e7ba9b3f
+projection_coverage: section-javascriptallonge-section-picking-the-bean-choice-and-truthiness-truthiness-and-operators-f4c050bc@a38ae44c1ff00ab9b67c0cf6105b5c22
 ---
 
 # Picking the Bean: Choice and Truthiness / truthiness and operators
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-picking-the-bean-choice-a
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-d45c6f89]] - broader source section: Picking the Bean: Choice and Truthiness
 
@@ -37,36 +40,11 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00778))_
 
+<a id="atom-technical-atom-e4e2b300bef7f5ba"></a>
+
 ```
 !5
 //=> false
 !undefined
 //=> true
-```
-
-### Technical frame 2: Picking the Bean: Choice and Truthiness / truthiness and operators
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00790))_
-
-> In JavaScript, && and || aren't boolean logical operators in the logical sense. They don't operate strictly on logical values, and they don't commute: a || b is not always equal to b || a , and the same goes for && .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00788))_
-
-> But when we pass other values, we no longer get true or false :
-
-### Technical frame 3: Picking the Bean: Choice and Truthiness / truthiness and operators
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00790))_
-
-> In JavaScript, && and || aren't boolean logical operators in the logical sense. They don't operate strictly on logical values, and they don't commute: a || b is not always equal to b || a , and the same goes for && .
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00789))_
-
-```
-1 || 2
-//=> 1
-null && undefined
-//=> null
-undefined && null
-//=> undefined
 ```

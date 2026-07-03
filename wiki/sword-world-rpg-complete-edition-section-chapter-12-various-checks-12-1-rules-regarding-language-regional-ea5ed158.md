@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Regional 》: 9 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-regional-ea5ed158@14f7a2ebf6337fca497cd4af3921d17b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-regional-ea5ed158@230386bb9489ff310f6f33ecf904b834
 ---
 
 # Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Regional 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8]] - broader source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language
 

@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-structure
 page_kind: concept
+page_family: topic-concept
 summary: Structure: 4 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-structure@28b3900b7b98d6f00f5ac3a95cb52e1e
+projection_coverage: topic-javascriptallonge-structure@2ce636cbcc91e9aeebee6527d97a3fbd
 ---
 
 # Structure
@@ -42,6 +43,8 @@ What [[javascriptallonge]] covers about structure:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01046))_
 
+<a id="atom-technical-atom-507de994e6577937"></a>
+
 ```
 cdr(oneToFive)
 //=> [2,[3,[4,[5,null]]]]
@@ -54,6 +57,8 @@ cdr(oneToFive)
 > We can write a different iterator for a different data structure. Here's one for linked lists:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01296))_
+
+<a id="atom-technical-atom-d751402c7f5049a7"></a>
 
 ```
 const EMPTY = null;
@@ -88,6 +93,8 @@ aPair = aPair.rest;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01297))_
 
+<a id="atom-technical-atom-cfd0ca71b216e058"></a>
+
 ```
 return { done, value: first }
 }
@@ -108,6 +115,8 @@ iteratorSum(aListIterator)
 
 ## Related pages
 
+### Shared technical atoms
+
 - [[javascriptallonge-data]] - shared statements and technical atoms: Data shares source evidence from Composing and Decomposing Data / Self-Similarity: Let's be more specific. Some data structures, like lists, can obviously be seen as a collection of items. Some are empty, some have three items, some forty-two, some ... [truncated]; Data shares technical record from Yes. Consider this variation: / Functional Iterators / iterating: const EMPTY = null; const isEmpty = (node) => node === EMPTY; const pair = (first, rest = EMPTY) => ({first, rest}); const list = (...elements) => { const [first, .. ... [truncated] (3 shared statement(s), 2 shared atom(s))
 - [[javascriptallonge-functional-iterator]] - shared statements and technical atoms: Functional Iterators shares source evidence from Yes. Consider this variation: / Functional Iterators: What we've done is turn an array into a function that folds an array with const foldArray = (array) => callRight(foldArrayWith, array); . The sumFoldable function do ... [truncated]; Functional Iterators shares technical record from Yes. Consider this variation: / Functional Iterators / iterating: const EMPTY = null; const isEmpty = (node) => node === EMPTY; const pair = (first, rest = EMPTY) => ({first, rest}); const list = (...elements) => { const [first, .. ... [truncated] (1 shared statement(s), 2 shared atom(s))
 - [[javascriptallonge-list]] - shared statements and technical atoms: List shares source evidence from Composing and Decomposing Data / Self-Similarity: Let's be more specific. Some data structures, like lists, can obviously be seen as a collection of items. Some are empty, some have three items, some forty-two, some ... [truncated]; List shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (1 shared statement(s), 1 shared atom(s))
@@ -116,6 +125,9 @@ iteratorSum(aListIterator)
 - [[javascriptallonge-element]] - shared technical atoms: Element shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (1 shared atom(s))
 - [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (1 shared atom(s))
 - [[javascriptallonge-rest]] - shared technical atoms: Rest shares technical record from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: cdr(oneToFive) //=> [2,[3,[4,[5,null]]]] (1 shared atom(s))
+
+### Shared claims
+
 - [[javascriptallonge-function]] - shared statements: Function shares source evidence from Yes. Consider this variation: / Functional Iterators: What we've done is turn an array into a function that folds an array with const foldArray = (array) => callRight(foldArrayWith, array); . The sumFoldable function do ... [truncated] (1 shared statement(s))
 
 ## Source

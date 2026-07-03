@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-building-blocks-96359378
 page_kind: source
-summary: And also: / Building Blocks: 31 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: And also: / Building Blocks: 31 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-building-blocks-96359378@a46dcb603f7e7aa1c0b1a585da4fe03a
+projection_coverage: section-javascriptallonge-section-and-also-building-blocks-96359378@25975f73ee7b5c9ac731bb576c8f1190
 ---
 
 # And also: / Building Blocks
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-and-also-building-blocks-
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-and-also-3f50274e]] - broader source section: And also:
 - [[javascriptallonge-section-and-also-building-blocks-composition-b915cf07]] - narrower source section: And also: / Building Blocks / composition
@@ -52,120 +55,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00583))_
 
+<a id="atom-technical-atom-57f260a15bac532f"></a>
+
 ```
 const cookAndEat = (food) => eat(cook(food));
-```
-
-### Technical frame 2: And also: / Building Blocks / composition
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00586))_
-
-> If that was all there was to it, composition wouldn't matter much. But like many patterns, using it when it applies is only 20% of the benefit. The other 80% comes from organizing your code such that you can use it: Writing functions that can be composed in various ways.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00585))_
-
-```
-const compose = (a, b) => (c) => a(b(c));
-const cookAndEat = compose(eat, cook);
-```
-
-### Technical frame 3: And also: / Building Blocks / composition
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00587))_
-
-> In the recipes, we'll look at a decorator called once: It ensures that a function can only be executed once. Thereafter, it does nothing. Once is useful for ensuring that certain side effects are not repeated. We'll also look at maybe: It ensures that a function does nothing if it is given nothing (like null or undefined ) as an argument.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00586))_
-
-> The other 80% comes from organizing your code such that you can use it: Writing functions that can be composed in various ways.
-
-### Technical frame 4: And also: / Building Blocks / composition
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00587))_
-
-> In the recipes, we'll look at a decorator called once: It ensures that a function can only be executed once. Thereafter, it does nothing. Once is useful for ensuring that certain side effects are not repeated. We'll also look at maybe: It ensures that a function does nothing if it is given nothing (like null or undefined ) as an argument.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00588))_
-
-> Of course, you needn't use combinators to implement either of these ideas, you can use if statements.
-
-### Technical frame 5: And also: / Building Blocks / composition
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00588))_
-
-> Of course, you needn't use combinators to implement either of these ideas, you can use if statements. But once and maybe compose, so you can chain them together as you see fit:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00589))_
-
-```
-const actuallyTransfer= (from, to, amount) =>
-// do something
-const invokeTransfer = once(maybe(actuallyTransfer(...)));
-```
-
-### Technical frame 6: And also: / Building Blocks / partial application
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00597))_
-
-> The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00593))_
-
-```
-_.map([1, 2, 3], (n) => n * n)
-//=> [1, 4, 9]
-```
-
-### Technical frame 7: And also: / Building Blocks / partial application
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00597))_
-
-> The resulting functionsquareAll -is still the map function, it's just that we've applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00596))_
-
-```
-const squareAll = (array) => map(array,
-(n) => n * n);
-```
-
-### Technical frame 8: And also: / Building Blocks / partial application
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00599))_
-
-> We'll discuss mapWith again. The important thing to see is that partial application is orthogonal to composition, and that they both work together nicely:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00598))_
-
-```
-const mapWith = (fn) =>
-(array) => map(array, fn);
-const squareAll = mapWith((n) => n * n);
-squareAll([1, 2, 3])
-//=> [1, 4, 9]
-```
-
-### Technical frame 9: And also: / Building Blocks / partial application
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00603))_
-
-> Wegeneralized composition with the compose combinator. Partial application also has a combinator, which we'll see in the partial recipe.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00601))_
-
-```
-const safeSquareAll = mapWith(maybe((n) => n * n));
-```
-
-### Technical frame 10: And also: / Building Blocks / partial application
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00603))_
-
-> Wegeneralized composition with the compose combinator. Partial application also has a combinator, which we'll see in the partial recipe.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00602))_
-
-```
-safeSquareAll([1, null, 2, 3])
-//=> [1, null, 4, 9]
 ```

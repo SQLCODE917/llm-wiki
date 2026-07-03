@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-12-various-checks-19369d81
 page_kind: source
 page_family: section-reference
-summary: Chapter 12: Various Checks: 107 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 12: Various Checks: 107 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-19369d81@6509c284df25dd4614d349a999d85d6f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-19369d81@d49aff5d8db43d2d3863e11fc76d4663
 ---
 
 # Chapter 12: Various Checks
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8]] - narrower source section: Chapter 12: Various Checks / 12.1 Rules Regarding Language
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-2-1-baseline-scores-checks-f64ba73a]] - same source heading: another source section with the same heading, 2.1 Baseline Scores / Checks
 
 ## Statements by subsection
@@ -152,83 +157,3 @@ From [[sword-world-rpg-complete-edition]].
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / Ability
 
 - Some intelligent monsters have the ability to speak and read using a certain language. Of course, there are monsters with multiple language abilities. The table below lists the languages used by monsters. Monster details also have an entry called Language . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06470, source-range-0b9dec90-06472))_
-
-## Technical atoms
-
-### Technical frame 1: Chapter 12: Various Checks / 12.1 Rules Regarding Language
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06359))_
-
-> If you have a written language, you can not only have conversations with it, but also read it, but with a language that only has spoken words, you cannot read it, and can only have conversations with it.
-
-### Technical frame 2: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06380))_
-
-> This is because you cannot begin to understand the great civilization of the ancient kingdom unless you know low ancient.
-
-### Technical frame 3: Chapter 12: Various Checks / 12.1 Rules Regarding Language / Languages
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06418))_
-
-> If an adventurer who has learned low ancient through the sage skill acquires the sorcerer skill, they will not be able to learn another language because it would just be low ancient again . When acquiring these two skills, it is better to acquire them in the order of sorcerer → sage, which gives you a one language advantage.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06417))_
-
-> An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common).
-
-### Technical frame 4: Chapter 12: Various Checks / 12.1 Rules Regarding Language / Languages
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06418))_
-
-> If an adventurer who has learned low ancient through the sage skill acquires the sorcerer skill, they will not be able to learn another language because it would just be low ancient again . When acquiring these two skills, it is better to acquire them in the order of sorcerer → sage, which gives you a one language advantage.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06419, source-range-0b9dec90-06420))_
-
-> The languages that adventurers can learn are shown on Table 12-1: Languages.
-
-> Table 12-1: Languages
-
-### Technical atom 5
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01344))_
-
-| entry | content |
-| --- | --- |
-| 3 | 4 Movement and Actions |
-| 1 | round lasts 10 seconds . Therefore, a character can also move during this time. However, when movement is made, actions are restricted. You cannot wield weapons or cast spells while running at full speed. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Movement and Actions
-3.4 Movement and Actions
-1 round lasts 10 seconds . Therefore, a character can also move during this time. However,  when movement is made, actions are restricted. You cannot wield weapons or cast spells while running at full speed.
-```
-
-</details>
-
-### Technical atom 6
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04906))_
-
-| entry | content |
-| --- | --- |
-| 6 | 1 Precautions When Using Skills The abilities associated with these skills, including the thief skill , are mostly determined by success rolls. If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target |
-| 6 | 2 |
-| 6 | 2 Thief Skill |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Precautions When Using Skills
-6.1 Precautions When Using Skills
-The  abilities  associated  with  these skills, including the thief skill , are mostly determined by success rolls.
-If the rules for determining the target score  or  difficulty  are  clearly  indicated, the  game  master  should  follow  those rules,  otherwise  the  game  master  must follow the rules under 9.1: Setting Target
-6.2
-6.2 Thief Skill
-```
-
-</details>

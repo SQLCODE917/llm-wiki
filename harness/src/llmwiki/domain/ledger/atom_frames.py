@@ -1,22 +1,25 @@
 """Technical atom frames for readable page projection.
 
-Technical atoms are exact source-equivalent payloads. Frames group adjacent
-atoms that form one source record, such as a spell stat block or table record,
-and attach the closest prose evidence block as projection context.
+Technical atoms are exact source-equivalent payloads. Frames attach a readable
+section label and the closest prose evidence block so page projections can show
+why a table, code block, formula, rule, or example belongs on the page.
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass
 
+from llmwiki.domain.ledger.atoms import TablePayload, TechnicalAtom, atom_raw_text
 from llmwiki.domain.ledger.canonical import deterministic_id
 from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.evidence_blocks import EvidenceBlock
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.section_navigation import section_title
 from llmwiki.domain.ledger.structure import DocumentStructure
+from llmwiki.domain.ledger.table_authority import accepted_table_atom_ids
+from llmwiki.domain.ledger.topic_terms import source_label_terms
 
-_FRAMEABLE_ATOM_KINDS = {"formula"}
+_ADJACENT_GROUP_ATOM_KINDS = {"formula"}
 _CONTEXT_WINDOW = 8
 
 
@@ -58,10 +61,14 @@ def build_atom_frames(
 
 
 def _technical_atom_entries(ledger: ClaimLedger) -> tuple[LedgerEntry, ...]:
+    accepted_tables = accepted_table_atom_ids(ledger.technical_atoms)
     return tuple(
         entry
         for entry in ledger.usable_entries
         if entry.ledger_entry_kind == "technical-atom" and entry.technical_atom_id
+        and (
+            entry.technical_atom_kind != "table" or entry.technical_atom_id in accepted_tables
+        )
     )
 
 
@@ -70,7 +77,7 @@ def _can_join(
     right: LedgerEntry,
     source_order_by_range: dict[str, int],
 ) -> bool:
-    if left.technical_atom_kind not in _FRAMEABLE_ATOM_KINDS:
+    if left.technical_atom_kind not in _ADJACENT_GROUP_ATOM_KINDS:
         return False
     if left.technical_atom_kind != right.technical_atom_kind:
         return False
@@ -97,8 +104,8 @@ def _frame(
     first = entries[0]
     node_ids = first.structure_node_ids
     node_id = _nearest_node(first)
-    label = _frame_label(structure, node_id)
     source_order = _source_order(source_order_by_range, first)
+    label = _frame_label(structure, node_id, atoms)
     frame_id = deterministic_id(
         "technical-atom-frame",
         ledger.source_hash,
@@ -114,11 +121,18 @@ def _frame(
         technical_atom_kind=first.technical_atom_kind,
         structure_node_ids=node_ids,
         source_order=source_order,
-        context_block_id=_nearest_context_block_id(evidence_blocks, node_id, source_order),
+        context_block_id=_nearest_context_block_id(
+            evidence_blocks, node_id, source_order, first.technical_atom_kind, label
+        ),
     )
 
 
-def _frame_label(structure: DocumentStructure, node_id: str) -> str:
+def _frame_label(
+    structure: DocumentStructure, node_id: str, atoms: tuple[TechnicalAtom, ...]
+) -> str:
+    table_label = _table_label(atoms[0]) if atoms else ""
+    if table_label:
+        return table_label
     node = structure.node(node_id)
     if node is None:
         return "Source record"
@@ -126,13 +140,19 @@ def _frame_label(structure: DocumentStructure, node_id: str) -> str:
 
 
 def _nearest_context_block_id(
-    evidence_blocks: tuple[EvidenceBlock, ...], node_id: str, source_order: int
+    evidence_blocks: tuple[EvidenceBlock, ...],
+    node_id: str,
+    source_order: int,
+    atom_kind: str,
+    label: str,
 ) -> str:
     same_node = [
         block
         for block in evidence_blocks
         if block.structure_node_ids and block.structure_node_ids[0] == node_id
     ]
+    if atom_kind == "table" and label:
+        same_node = [block for block in same_node if _context_mentions_label(block, label)]
     following = [
         block for block in same_node if 0 < block.source_order - source_order <= _CONTEXT_WINDOW
     ]
@@ -144,6 +164,27 @@ def _nearest_context_block_id(
     if previous:
         return max(previous, key=lambda block: block.source_order).evidence_block_id
     return ""
+
+
+def _table_label(atom: TechnicalAtom) -> str:
+    payload = atom.payload
+    if isinstance(payload, TablePayload) and payload.caption.strip():
+        return payload.caption.strip()
+    first_line = next(
+        (line.strip() for line in atom_raw_text(payload).splitlines() if line.strip()),
+        "",
+    )
+    if first_line.lower().startswith("table-"):
+        return first_line[6:].strip() or "Table"
+    return ""
+
+
+def _context_mentions_label(block: EvidenceBlock, label: str) -> bool:
+    label_terms = set(source_label_terms(label))
+    if not label_terms:
+        return False
+    context_terms = set(source_label_terms(block.source_text))
+    return bool(label_terms.intersection(context_terms))
 
 
 def _nearest_node(entry: LedgerEntry) -> str:

@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: When an Adventurer Casts Magic on Adventurers: 14 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-when-an-adventurer-casts-magic-on-adventurers-1530b634@cfeed7d4473897edc90a72fc702c811e
+projection_coverage: section-sword-world-rpg-complete-edition-section-when-an-adventurer-casts-magic-on-adventurers-1530b634@c2239a50957286c857fbae2c3eb15049
 ---
 
 # When an Adventurer Casts Magic on Adventurers
@@ -35,6 +35,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02541))_
 
+<a id="atom-technical-atom-a202fb904456e820"></a>
+
 > Each resisting side must then make a mental power resistance roll, using that determined final score as the target score.
 
 ### Technical frame 2: When an Adventurer Casts Magic on Adventurers
@@ -44,5 +46,7 @@ From [[sword-world-rpg-complete-edition]].
 > The evil sorcerer Gorman (magic power 5) unleashes Lightning on the three adventurers. First, Gorman rolls 2D and adds his own magic power. If we assume his 2D roll is 8 , each of the three adventurers must make a mental power resistance roll, with a target score of 5 (magic power) + 8 (roll) = 13 . Suppose that the baseline score of all three of their mental power resistance rolls is 4 . If their rolls are each 2 (double ones!), 6 , and 9 , then only the last one is able to resist the Lightning
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02544))_
+
+<a id="atom-technical-atom-e3d5f96c10632dcb"></a>
 
 > If the side casting the magic rolls double sixes, no one can resist, except for those who also roll double sixes.

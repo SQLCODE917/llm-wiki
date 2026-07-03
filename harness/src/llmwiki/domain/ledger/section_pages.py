@@ -8,8 +8,9 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from llmwiki.domain.ledger.atom_addressing import technical_atom_anchor
 from llmwiki.domain.ledger.atom_context import best_atom_context
-from llmwiki.domain.ledger.atoms import TechnicalAtom, atom_raw_text
+from llmwiki.domain.ledger.atoms import TechnicalAtom
 from llmwiki.domain.ledger.canonical import short_digest
 from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.ledger import ClaimLedger
@@ -30,15 +31,11 @@ from llmwiki.domain.ledger.section_navigation import (
     section_page_id,
     section_title,
 )
+from llmwiki.domain.ledger.section_page_atoms import atoms_for_section_entries
 from llmwiki.domain.ledger.structure import DocumentStructure, StructureNode
-from llmwiki.domain.ledger.table_identity import (
-    has_matching_table_name,
-    normalize_table_name,
-    table_identity_names_by_atom_id,
-)
 from llmwiki.domain.ledger.topic_models import SourceTopic
 from llmwiki.domain.ledger.topic_relations import RelatedTopicLink
-from llmwiki.domain.ledger.walkability import audit_related_links, related_link_markdown
+from llmwiki.domain.ledger.walkability import audit_related_links, related_links_markdown
 from llmwiki.domain.pages import PageMetadata, WikiPage, slugify
 
 _SECTION_NODE_KINDS = {"chapter", "section", "heading"}
@@ -56,12 +53,6 @@ class _SectionProjection:
     @property
     def page_ref(self) -> SectionPageRef:
         return SectionPageRef(self.node, self.page_id, self.title)
-
-
-@dataclass(frozen=True)
-class _SectionEntryIndex:
-    direct_by_node: dict[str, tuple[LedgerEntry, ...]]
-    rollup_by_node: dict[str, tuple[LedgerEntry, ...]]
 
 
 def build_section_pages(
@@ -129,8 +120,7 @@ def _body(
     lines = [f"# {projection.title}", "", f"From [[{source_page_id}]].", ""]
     if related_links:
         lines.extend(("## Related pages", ""))
-        for link in related_links:
-            lines.append(related_link_markdown(link))
+        lines.extend(related_links_markdown(related_links).splitlines())
         lines.append("")
     direct_claims = _claim_entries(projection.direct_entries)
     if direct_claims:
@@ -154,11 +144,9 @@ def _section_projections(
     ledger: ClaimLedger, structure: DocumentStructure, source_page_id: str
 ) -> tuple[_SectionProjection, ...]:
     projections: list[_SectionProjection] = []
-    table_names_by_atom_id = table_identity_names_by_atom_id(ledger, structure)
-    entry_index = _section_entry_index(ledger)
     for node in _section_nodes(structure):
-        rollup_entries = entry_index.rollup_by_node.get(node.structure_node_id, ())
-        atoms = _atoms_for_entries(ledger, rollup_entries, table_names_by_atom_id, node)
+        rollup_entries = _entries_for_node(ledger, node.structure_node_id)
+        atoms = atoms_for_section_entries(ledger, rollup_entries, structure, node)
         if not rollup_entries and not atoms:
             continue
         projections.append(
@@ -166,7 +154,7 @@ def _section_projections(
                 node=node,
                 page_id=section_page_id(source_page_id, structure, node),
                 title=section_title(structure, node),
-                direct_entries=entry_index.direct_by_node.get(node.structure_node_id, ()),
+                direct_entries=_direct_entries_for_node(ledger, node.structure_node_id),
                 rollup_entries=rollup_entries,
                 atoms=atoms,
             )
@@ -234,6 +222,7 @@ def _append_atoms(
             continue
         lines.extend((f"### Technical atom {next_index}", ""))
         next_index += 1
+        lines.extend((technical_atom_anchor(atom.technical_atom_id), ""))
         context = best_atom_context(ledger.atom_contexts(atom.technical_atom_id))
         if context is not None:
             lines.extend(atom_context_block(context, atom.source_locator).strip().splitlines())
@@ -260,40 +249,19 @@ def _group_descendant_claims(
     return tuple(result)
 
 
-def _section_entry_index(ledger: ClaimLedger) -> _SectionEntryIndex:
-    direct: dict[str, list[LedgerEntry]] = {}
-    rollup: dict[str, list[LedgerEntry]] = {}
-    for entry in ledger.usable_entries:
-        if not (entry.normalized_text or entry.source_text or entry.technical_atom_id):
-            continue
-        if entry.structure_node_ids:
-            direct.setdefault(entry.structure_node_ids[0], []).append(entry)
-        for node_id in entry.structure_node_ids:
-            rollup.setdefault(node_id, []).append(entry)
-    return _SectionEntryIndex(
-        direct_by_node={node_id: tuple(entries) for node_id, entries in direct.items()},
-        rollup_by_node={node_id: tuple(entries) for node_id, entries in rollup.items()},
+def _direct_entries_for_node(ledger: ClaimLedger, node_id: str) -> tuple[LedgerEntry, ...]:
+    return tuple(
+        entry
+        for entry in ledger.usable_entries
+        if entry.structure_node_ids[:1] == (node_id,)
+        and (entry.normalized_text or entry.source_text or entry.technical_atom_id)
     )
 
 
-def _atoms_for_entries(
-    ledger: ClaimLedger,
-    entries: tuple[LedgerEntry, ...],
-    table_names_by_atom_id: dict[str, tuple[str, ...]],
-    node: StructureNode,
-) -> tuple[TechnicalAtom, ...]:
-    atom_ids = {
-        entry.technical_atom_id
-        for entry in entries
-        if entry.ledger_entry_kind == "technical-atom" and entry.technical_atom_id
-    }
-    section_name = normalize_table_name(node.heading_text)
-    if section_name:
-        for atom_id, names in table_names_by_atom_id.items():
-            if has_matching_table_name(section_name, names):
-                atom_ids.add(atom_id)
+def _entries_for_node(ledger: ClaimLedger, node_id: str) -> tuple[LedgerEntry, ...]:
     return tuple(
-        atom
-        for atom in ledger.technical_atoms
-        if atom.technical_atom_id in atom_ids and atom_raw_text(atom.payload).strip()
+        entry
+        for entry in ledger.usable_entries
+        if node_id in entry.structure_node_ids
+        and (entry.normalized_text or entry.source_text or entry.technical_atom_id)
     )

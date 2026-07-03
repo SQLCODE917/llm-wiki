@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Sorcerer Skill 》: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-sorcerer-skill-3a970128@90f2db2b2bc9b9de2d2dc18610fd2937
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-sorcerer-skill-3a970128@ceb460e0333886a1a34db82cbeeaa15c
 ---
 
 # Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Sorcerer Skill 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-97baced0]] - broader source section: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels
 

@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-like-this-66cb3108
 page_kind: source
-summary: Like this:: 118 source-backed entries and 33 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: Like this:: 115 source-backed entries and 33 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-like-this-66cb3108@b686f5e0d4115ff56bf89badcb243e95
+projection_coverage: section-javascriptallonge-section-like-this-66cb3108@6d86a00e769e80398251d7883f305329
 ---
 
 # Like this:
@@ -16,13 +17,15 @@ From [[javascriptallonge]].
 
 ## Related pages
 
+### Source structure
+
+- [[javascriptallonge-section-like-this-from-28c3e8e3]] - narrower source section: Like this: / from
+- [[javascriptallonge-section-like-this-generating-iterables-283d51ed]] - narrower source section: Like this: / Generating Iterables
 - [[javascriptallonge-section-like-this-iterables-ed92ad54]] - narrower source section: Like this: / iterables
 - [[javascriptallonge-section-like-this-iterables-out-to-infinity-7f1f5ba0]] - narrower source section: Like this: / iterables out to infinity
-- [[javascriptallonge-section-like-this-ordered-collections-a2e8339c]] - narrower source section: Like this: / ordered collections
 - [[javascriptallonge-section-like-this-operations-on-ordered-collections-286a5f1c]] - narrower source section: Like this: / operations on ordered collections
-- [[javascriptallonge-section-like-this-from-28c3e8e3]] - narrower source section: Like this: / from
+- [[javascriptallonge-section-like-this-ordered-collections-a2e8339c]] - narrower source section: Like this: / ordered collections
 - [[javascriptallonge-section-like-this-summary-bc99b304]] - narrower source section: Like this: / summary
-- [[javascriptallonge-section-like-this-generating-iterables-283d51ed]] - narrower source section: Like this: / Generating Iterables
 
 ## Statements
 
@@ -69,9 +72,7 @@ From [[javascriptallonge]].
 - So, Evens is also an ordered collection, because it starts at the beginning each time we get a fresh iterator over it. Thus, mapWith has the property of preserving the collection semantics of the iterable we give it. So we call it a collection operation . _(javascriptallonge.pdf (source-range-7239e085-01596))_
 - Like mapWith , they preserve the ordered collection semantics of whatever you give them. _(javascriptallonge.pdf (source-range-7239e085-01603))_
 - Andhere's a computation performed using operations on ordered collections: We'll create an ordered collection of square numbers that end in one and are less than 1,000: _(javascriptallonge.pdf (source-range-7239e085-01604))_
-- As we expect from an ordered collection, each time we iterate over UpTo1000 , we begin at the beginning. _(javascriptallonge.pdf (source-range-7239e085-01606))_
 - For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest] : _(javascriptallonge.pdf (source-range-7239e085-01607))_
-- like our other operations, rest preserves the ordered collection semantics of its argument. _(javascriptallonge.pdf (source-range-7239e085-01609))_
 - So, Evens is also an ordered collection, because it starts at the beginning each time we get a fresh iterator over it. _(javascriptallonge.pdf (source-range-7239e085-01596))_
 - Thus, mapWith has the property of preserving the collection semantics of the iterable we give it. _(javascriptallonge.pdf (source-range-7239e085-01596))_
 
@@ -126,6 +127,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01550))_
 
+<a id="atom-technical-atom-5bb9af7657dddac7"></a>
+
 ```
 const Stack2 = () =>
 ({
@@ -172,6 +175,8 @@ return {done: false, value: this.array[iterationIndex--]}
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01551))_
 
+<a id="atom-technical-atom-f06df4f35ec2e31c"></a>
+
 ```
 const stack = Stack2();
 stack.push(2000);
@@ -197,6 +202,8 @@ collectionSum(stack)
 > The for...of loop works directly with any object that is iterable , meaning it works with any object that has a Symbol.iterator method that returns an object iterator. Here's another linked list, this one is iterable:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01560))_
+
+<a id="atom-technical-atom-47f6d9ee5b266831"></a>
 
 ```
 const Stack3 = () =>
@@ -245,6 +252,8 @@ const stack = Stack3();
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01561))_
 
+<a id="atom-technical-atom-1433f8f324b5f87c"></a>
+
 ```
 stack.push(2000);
 stack.push(10);
@@ -281,6 +290,8 @@ iterableSum(stack)
 > As we can see, we can use for...of with linked lists just as easily as with stacks. And there's one more thing: You recall that the spread operator ( ... ) can spread the elements of an array in an array literal or as parameters in a function invocation.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01563))_
+
+<a id="atom-technical-atom-8e85f2ecd1e2c116"></a>
 
 ```
 const EMPTY = {
@@ -327,6 +338,8 @@ iterableSum(someSquares)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01566))_
 
+<a id="atom-technical-atom-df54c8166a1c51e0"></a>
+
 ```
 ['some squares', ...someSquares]
 //=> ["some squares", 1, 4, 9, 16, 25]
@@ -339,6 +352,8 @@ iterableSum(someSquares)
 > One caveat of spreading iterables: JavaScript creates an array out of the elements of the iterable. That might be very wasteful for extremely large collections. For example, if we spread a large collection just to find an element in the collection, it might have been wiser to iterate over the element using its iterator directly.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01568))_
+
+<a id="atom-technical-atom-bc5647c8475105f4"></a>
 
 ```
 const firstAndSecondElement = (first, second) =>
@@ -354,6 +369,8 @@ firstAndSecondElement(...stack)
 > There are useful things we can do with iterables representing an infinitely large collection. But let's point out what we can't do with them:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01574))_
+
+<a id="atom-technical-atom-ebf4ed35d0cf4ca7"></a>
 
 ```
 const Numbers = {
@@ -375,6 +392,8 @@ next: () =>
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01576))_
 
+<a id="atom-technical-atom-489e2cccd24536ab"></a>
+
 ```
 ['all the numbers', ...Numbers]
 //=> infinite loop!
@@ -389,6 +408,8 @@ firstAndSecondElement(...Numbers)
 > This is accomplished with our own collections by returning a brand new iterator every time we call [Symbol.iterator] , and ensuring that our iterators start at the beginning and work forward.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01580))_
+
+<a id="atom-technical-atom-0d14fd4d91090b51"></a>
 
 ```
 const abc = ["a", "b", "c"];
@@ -415,6 +436,8 @@ c
 > Whether you work with the same iterator over and over, or get a fresh iterable every time, you are always going to get fresh random numbers. Therefore, RandomNumbers is not an ordered collection.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01583))_
+
+<a id="atom-technical-atom-abc21aecdd5f4a68"></a>
 
 ```
 const RandomNumbers = {
@@ -451,6 +474,8 @@ console.log(i)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01589))_
 
+<a id="atom-technical-atom-54c71ac655b9bf50"></a>
+
 ```
 const mapWith = (fn, collection) =>
 ({
@@ -473,6 +498,8 @@ return ({done, value: done ? undefined : fn(value)});
 > Numbers is an ordered collection. We invoke mapWith((x) => 2 * x, Numbers) and get Evens . Evens works just as if we'd written this:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01592))_
+
+<a id="atom-technical-atom-0394bbb3ce97162b"></a>
 
 ```
 const Evens = mapWith((x) => 2 * x, Numbers);
@@ -502,6 +529,8 @@ console.log(i)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01594))_
 
+<a id="atom-technical-atom-0cd71c1b5babb6ac"></a>
+
 ```
 const Evens =
 {
@@ -524,6 +553,8 @@ return ({done, value: done ? undefined : 2 *value});
 > Like mapWith , they preserve the ordered collection semantics of whatever you give them.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01598))_
+
+<a id="atom-technical-atom-9fac340219c1e1f6"></a>
 
 ```
 const ZeroesToNines = mapWith((n) => Math.floor(10 * limit), RandomNumbers);
@@ -550,6 +581,8 @@ console.log(i)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01599))_
 
+<a id="atom-technical-atom-4b33bac5b496869f"></a>
+
 ```
 6
 1
@@ -564,6 +597,8 @@ console.log(i)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01600))_
 
+<a id="atom-technical-atom-73eb0a390f661dfe"></a>
+
 > mapWith can get a new iterator from RandomNumbers each time we iterate over ZeroesToNines , but if RandomNumbers doesn't behave like an ordered collection, that's not mapWith 's fault.
 
 ### Technical frame 18: Like this: / operations on ordered collections
@@ -573,6 +608,8 @@ console.log(i)
 > Like mapWith , they preserve the ordered collection semantics of whatever you give them.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01602))_
+
+<a id="atom-technical-atom-3362c712cd3a3047"></a>
 
 ```
 const filterWith = (fn, iterable) =>
@@ -606,11 +643,13 @@ return ({done, value: done ? undefined : value});
 
 ### Technical frame 19: Like this: / operations on ordered collections
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01606))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01607))_
 
-> As we expect from an ordered collection, each time we iterate over UpTo1000 , we begin at the beginning.
+> For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest] :
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01605))_
+
+<a id="atom-technical-atom-2b1a958763a34fb2"></a>
 
 ```
 const Squares = mapWith((x) => x * x, Numbers);
@@ -626,11 +665,13 @@ const UpTo1000 = untilWith((x) => (x > 1000), EndWithOne);
 
 ### Technical frame 20: Like this: / operations on ordered collections
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01609))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01607))_
 
-> like our other operations, rest preserves the ordered collection semantics of its argument.
+> For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest] :
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01608))_
+
+<a id="atom-technical-atom-d81d89fc363898dc"></a>
 
 ```
 const first = (iterable) =>
@@ -653,6 +694,8 @@ return iterator;
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01613))_
 
+<a id="atom-technical-atom-519518765b459b83"></a>
+
 ```
 Array.from(UpTo1000)
 //=> [1,81,121,361,441,841,961]
@@ -665,6 +708,8 @@ Array.from(UpTo1000)
 > Nowwecan go 'end to end,' If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01616))_
+
+<a id="atom-technical-atom-295ceb0e30c2bc4e"></a>
 
 ```
 Stack3.from = function (iterable) {
@@ -689,6 +734,8 @@ return done ? EMPTY : Pair1(value, iterationToList(iteration));
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01618))_
 
+<a id="atom-technical-atom-b248cb0bc23a448f"></a>
+
 ```
 const numberList = Pair1.from(untilWith((x) => x > 10, Numbers));
 Pair1.from(Squares)
@@ -706,6 +753,8 @@ Pair1.from(Squares)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01623))_
 
+<a id="atom-technical-atom-3046c5e24c9bc9b6"></a>
+
 > [Figure] (p.224)
 
 ### Technical frame 25: Like this: / Generating Iterables
@@ -716,6 +765,8 @@ Pair1.from(Squares)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01627))_
 
+<a id="atom-technical-atom-c448193e912cee6f"></a>
+
 > Iterators have to arrange its own state such that when you call them, they compute and return the next item.
 
 ### Technical frame 26: Like this: / Generating Iterables
@@ -725,6 +776,8 @@ Pair1.from(Squares)
 > Well, we've written our iterator as a server . It waits until given a request, and then it returns exactly one item. Then it waits for the next request. There is no concept of pushing numbers out from the iterator, just waiting until a number is pulled out of the iterator by whatever code consumes numbers.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01628))_
+
+<a id="atom-technical-atom-9a284935f06cd502"></a>
 
 ```
 const Numbers = {
@@ -746,6 +799,8 @@ next: () =>
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01632))_
 
+<a id="atom-technical-atom-086a3ae1f434623a"></a>
+
 ```
 let n = 0;
 while (true) {
@@ -760,6 +815,8 @@ console.log(n++)
 > They're of approximately equal complexity. So why bring up generation? Well, there are some collections that are much easier to generate than to iterate over. Let's look at one:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01634))_
+
+<a id="atom-technical-atom-d376d8f41d8e39ca"></a>
 
 ```
 // Iteration
@@ -781,6 +838,8 @@ console.log(n++)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01637))_
 
+<a id="atom-technical-atom-6eb498653d317da7"></a>
+
 > One of those cases is when we have to recursively enumerate something.
 
 ### Technical frame 30: Like this: / Generating Iterables / recursive iterators
@@ -790,6 +849,8 @@ console.log(n++)
 > If you peel off isIterable and ignore the way that the iteration version uses [Symbol.iterator] and .next , we're left with the fact that the generating version calls itself recursively, and the iteration version maintains an explicit stack. In essence, both the generation and iteration implementations have stacks, but the generation version's stack is implicit , while the iteration version's stack is explicit .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01639))_
+
+<a id="atom-technical-atom-d14c6a73cd2e1891"></a>
 
 ```
 // Generation
@@ -821,6 +882,8 @@ generate([1, [2, [3, 4], 5]])
 > If you peel off isIterable and ignore the way that the iteration version uses [Symbol.iterator] and .next , we're left with the fact that the generating version calls itself recursively, and the iteration version maintains an explicit stack. In essence, both the generation and iteration implementations have stacks, but the generation version's stack is implicit , while the iteration version's stack is explicit .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01642))_
+
+<a id="atom-technical-atom-83d9e3adc3013b32"></a>
 
 ```
 const isIterable = (something) =>
@@ -864,6 +927,8 @@ console.log(n)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01651))_
 
+<a id="atom-technical-atom-c78775f73f3b3038"></a>
+
 ```
 // Generation
 const fibonacci = () => {
@@ -896,6 +961,8 @@ fibonacci()
 > The thing to note here is that our fibonacci generator has three states: generating 0 , generating 1 , and generating everything after that. This isn't a good fit for an iterator, because iterators have one functional entry point and therefore, we'd have to represent our three states explicitly, perhaps using a state pattern 90 :
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01652))_
+
+<a id="atom-technical-atom-8e86bfb8a3fabe45"></a>
 
 ```
 55

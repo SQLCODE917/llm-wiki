@@ -5,7 +5,11 @@ from __future__ import annotations
 from forge.core.workflow import ToolDef
 from forge.tools.respond import respond_tool
 
-from llmwiki.domain.chat_grounding import ChatResponseCitationPolicy
+from llmwiki.domain.chat_response_gate import (
+    ChatResponseEvidenceState,
+    ChatResponseGateConfig,
+    decide_chat_response,
+)
 from llmwiki.store import WikiStoreError
 from llmwiki.workflows.procedure_execution_tools import ProcedureExecutionState
 
@@ -18,45 +22,33 @@ def respond_after_wiki_read_tool(
     require_read_page_citation: bool = False,
     procedure_execution_state: ProcedureExecutionState | None = None,
     require_procedure_execution: bool = False,
+    missing_focus_reports: set[str] | None = None,
 ) -> ToolDef:
     """Return respond, gated on reading wiki evidence first."""
 
     base = respond_tool()
 
     def _respond(message: str) -> str:
-        if (
-            require_procedure_execution
-            and procedure_execution_state is not None
-            and not procedure_execution_state.has_valid_execution
-        ):
-            raise WikiStoreError(
-                "Call submit_procedure_execution with a valid ProcedureExecution "
-                "before respond. A procedure execution answer must be validated "
-                "against the deterministic task evidence pack first."
-            )
-        if not require_wiki_read:
-            return str(base.callable(message=message))
-        page_reads = read_tracker - {"index.md"}
-        if page_reads:
-            if require_read_page_citation:
-                citation_decision = ChatResponseCitationPolicy(
-                    frozenset(page_reads)
-                ).response_decision(message)
-                if not citation_decision.allowed:
-                    raise WikiStoreError(citation_decision.message)
-            return str(base.callable(message=message))
-        if allow_index_response and "index.md" in read_tracker:
-            return str(base.callable(message=message))
-        if allow_index_response:
-            raise WikiStoreError(
-                "Call read_page for a relevant wiki page, or read_index for a "
-                "wiki coverage/catalog question, before respond. Search snippets "
-                "alone are not enough evidence for an answer."
-            )
-        raise WikiStoreError(
-            "Call read_page for a relevant wiki page before respond. The index "
-            "and search snippets are discovery aids, not enough evidence for a "
-            "substantive content answer."
+        decision = decide_chat_response(
+            message,
+            config=ChatResponseGateConfig(
+                allow_index_response=allow_index_response,
+                require_wiki_read=require_wiki_read,
+                require_read_page_citation=require_read_page_citation,
+                require_procedure_execution=require_procedure_execution,
+            ),
+            evidence=ChatResponseEvidenceState(
+                missing_focus_reports=frozenset(missing_focus_reports or ()),
+                read_page_ids=frozenset(read_tracker - {"index.md"}),
+                index_was_read="index.md" in read_tracker,
+                procedure_execution_satisfied=(
+                    procedure_execution_state is not None
+                    and procedure_execution_state.has_valid_execution
+                ),
+            ),
         )
+        if not decision.allowed:
+            raise WikiStoreError(decision.message)
+        return str(base.callable(message=message))
 
     return ToolDef(spec=base.spec, callable=_respond, prerequisites=base.prerequisites)

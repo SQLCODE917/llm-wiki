@@ -4,10 +4,10 @@ page_kind: concept
 page_family: broad-topic
 summary: 1.4.9 Filling Out the Character Sheet: 69 statement(s) and 21 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-filling-character-sheet@3345183cae469b12ac297563bbc766aa
+projection_coverage: topic-sword-world-rpg-complete-edition-filling-character-sheet@3a78b8dc7e6a4a08cb882440d258e48b
 ---
 
 # 1.4.9 Filling Out the Character Sheet
@@ -17,7 +17,21 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 ## Related pages
 
+### Source structure
+
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-bcd5385d]] - source section: Filling out the Character Sheet shares source evidence from Filling out the Character Sheet: On the Character Sheet, there is a magic field. Characters with rune master skills must write their runes , skill level , and magic power in this field.; Filling out the Character Sheet shares technical record from Filling out the Character Sheet: Magic that is resistible can be rendered ineffective or less effective if the target chooses to resist . (33 shared statement(s), 16 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-054d19ec]] - source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet shares source evidence from 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet: The Character Sheet that accompanies this book is designed to record and list various character details. This will help keep the game running smoothly.; 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet shares technical record from 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑥ Origin ]: If the character is a human or a halfelf raised by a human, Table 1-5: Backgrounds must be used to determine their origin. (21 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-filling-out-the-character-sheet-33788635]] - source section: 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: Please write these scores in the designated fields on the Character Sheet. This will make the game run more smoothly. (6 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-2-6-success-rolls-using-adventurer-level-filling-out-the-character-sheet-0e2bccaf]] - source section: 2.6 Success Rolls Using Adventurer Level / Filling Out the Character Sheet shares source evidence from 2.6 Success Rolls Using Adventurer Level / Filling Out the Character Sheet: The two resistance rolls are frequently performed. Therefore, it' s advisable to make a note of the baseline score ( resistance ) so that it is readily available. Th ... [truncated] (4 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-3d07a24d]] - source section: Filling out the Character Sheet shares technical record from Filling out the Character Sheet: In other words, each one counters (overpowers): and cannot take an effect at the same time as magic or other spellsongs that also belong to mind . (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-94debb40]] - source section: Filling out the Character Sheet shares source evidence from Filling out the Character Sheet: Characters with the bard skill write the names of the spellsongs they have learned in the designated field ( Spellsongs ) on their character sheet. (1 shared statement(s))
+
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements and technical atoms: 1.3.3 Adventurer Level shares source evidence from 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑭ Adventurer Level ]: Once you've acquired your final skills (starting skill and growth via starting experience points), you can determine your adventurer level.; 1.3.3 Adventurer Level shares technical record from 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑭ Adventurer Level ] / [ ⑮ Purchase Equipment]: When you purchase weapons, shields, and armor, write them in the appropriate fields (Table 1-8: Weapons, Table 1-9: Armor, and Table 1-10: Shields). (3 shared statement(s), 1 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-ability-score]] - shared statements: Ability Scores shares source evidence from 1.4 Character Creation / 1.4.2 Determine Ability Scores: Once the ability scores have been determined, also find the ability bonuses and write them down on the Character Sheet. (5 shared statement(s))
 - [[sword-world-rpg-complete-edition-ability-bonuse]] - shared statements: 【 Ability Bonuses 】 shares source evidence from 1.4 Character Creation / 1.4.2 Determine Ability Scores: Once the ability scores have been determined, also find the ability bonuses and write them down on the Character Sheet. (3 shared statement(s))
 - [[sword-world-rpg-complete-edition-target-score]] - shared statements: Target Scores shares source evidence from Filling out the Character Sheet: When attempting to cast resistible magic on a monster, the caster must determine whether their opponent can resist it. Y ou must make a success roll using caster's m ... [truncated] (3 shared statement(s))
@@ -26,12 +40,6 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 - [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements: 【 Damage Reduction 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-hit-check]] - shared statements: 4.5.1 Hit Checks shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: Have you learned each of these terms? Now, let's get into the actual description of the combat procedure. Combat consists of two checks: one is made to determine if ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-weapon-critical]] - shared statements: 《 Weapons Cannot Critical 》 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-054d19ec]] - source section: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet shares source evidence from 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet: The Character Sheet that accompanies this book is designed to record and list various character details. This will help keep the game running smoothly.; 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet shares technical record from 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑥ Origin ]: If the character is a human or a halfelf raised by a human, Table 1-5: Backgrounds must be used to determine their origin. (21 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-2-6-success-rolls-using-adventurer-level-filling-out-the-character-sheet-0e2bccaf]] - source section: 2.6 Success Rolls Using Adventurer Level / Filling Out the Character Sheet shares source evidence from 2.6 Success Rolls Using Adventurer Level / Filling Out the Character Sheet: The two resistance rolls are frequently performed. Therefore, it' s advisable to make a note of the baseline score ( resistance ) so that it is readily available. Th ... [truncated] (4 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-filling-out-the-character-sheet-33788635]] - source section: 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: Please write these scores in the designated fields on the Character Sheet. This will make the game run more smoothly. (6 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-bcd5385d]] - source section: Filling out the Character Sheet shares source evidence from Filling out the Character Sheet: On the Character Sheet, there is a magic field. Characters with rune master skills must write their runes , skill level , and magic power in this field.; Filling out the Character Sheet shares technical record from Filling out the Character Sheet: Magic that is resistible can be rendered ineffective or less effective if the target chooses to resist . (33 shared statement(s), 16 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-3d07a24d]] - source section: Filling out the Character Sheet shares technical record from Filling out the Character Sheet: In other words, each one counters (overpowers): and cannot take an effect at the same time as magic or other spellsongs that also belong to mind . (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-94debb40]] - source section: Filling out the Character Sheet shares source evidence from Filling out the Character Sheet: Characters with the bard skill write the names of the spellsongs they have learned in the designated field ( Spellsongs ) on their character sheet. (1 shared statement(s))
 ## Statements by source section
 
 ### What You'll Need to Play Sword World RPG
@@ -123,27 +131,17 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 ### Technical frame 1: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑥ Origin ]
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01128))_
-
-> If the character is a human or a halfelf raised by a human, Table 1-5: Backgrounds must be used to determine their origin.
-
-### Technical frame 2: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑥ Origin ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01128))_
 
 > If the character is a human or a halfelf raised by a human, Table 1-5: Backgrounds must be used to determine their origin. Once it's been decided, write it in the origin field. If the character was not raised in a human society, there is no need to write anything in this field.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01130))_
 
+<a id="atom-technical-atom-5db2d273b9a566bf"></a>
+
 > Please write down starting experience points as determined by Table 1-5: Backgrounds or Table 1-6: Starting Experience by Race in the experience points field.
 
-### Technical frame 3: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑬ Increase Skills ]
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01144))_
-
-> Starting experience points can be used to acquire new adventurer skills or to increase any skills already acquired (Table 1-7: Experience Points by Skill).
-
-### Technical frame 4: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑭ Adventurer Level ] / [ ⑮ Purchase Equipment]
+### Technical frame 2: 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑭ Adventurer Level ] / [ ⑮ Purchase Equipment]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01150))_
 
@@ -151,9 +149,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01151))_
 
+<a id="atom-technical-atom-cc22e5432a2012b0"></a>
+
 > When you purchase weapons, shields, and armor, write them in the appropriate fields (Table 1-8: Weapons, Table 1-9: Armor, and Table 1-10: Shields).
 
-### Technical frame 5: Filling out the Character Sheet
+### Technical frame 3: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02470))_
 
@@ -161,9 +161,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02469))_
 
+<a id="atom-technical-atom-57ba321b2805104f"></a>
+
 > Magic that is resistible can be rendered ineffective or less effective if the target chooses to resist .
 
-### Technical frame 6: Filling out the Character Sheet
+### Technical frame 4: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02479))_
 
@@ -171,9 +173,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02476))_
 
+<a id="atom-technical-atom-ff70b476a7def6a3"></a>
+
 > If the result is anything other than double ones, the magic takes effect.
 
-### Technical frame 7: Filling out the Character Sheet
+### Technical frame 5: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02480))_
 
@@ -181,9 +185,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02479))_
 
+<a id="atom-technical-atom-6ff0be559d240f17"></a>
+
 > When attempting to cast resistible magic on a monster, the caster must determine whether their opponent can resist it.
 
-### Technical frame 8: Filling out the Character Sheet
+### Technical frame 6: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02484))_
 
@@ -191,9 +197,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02483))_
 
+<a id="atom-technical-atom-7eeaee140623d0f2"></a>
+
 > Fire Bolt is resistible magic, so if it's resisted by the opponent, its effect will be reduced.
 
-### Technical frame 9: Filling out the Character Sheet
+### Technical frame 7: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02480))_
 
@@ -201,9 +209,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02484))_
 
+<a id="atom-technical-atom-9a48ca7dd9f30959"></a>
+
 > In this case, the adventurer (the player controlling them) must make a success roll.
 
-### Technical frame 10: Filling out the Character Sheet
+### Technical frame 8: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02484))_
 
@@ -211,11 +221,15 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02487, source-range-0b9dec90-02489))_
 
+<a id="atom-technical-atom-384819749dc16a81"></a>
+
 > Roll of 3-4: Fire Bolt takes an incomplete effect.
+
+<a id="atom-technical-atom-c5938626eb887631"></a>
 
 > magic power + 2D ≥ monster's mental point resistance → magic takes
 
-### Technical frame 11: Filling out the Character Sheet
+### Technical frame 9: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02496))_
 
@@ -223,9 +237,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02492))_
 
+<a id="atom-technical-atom-eae1712039cc8dd8"></a>
+
 > When the 2D roll is double sixes , the magic will automatically take its full effect.
 
-### Technical frame 12: Filling out the Character Sheet
+### Technical frame 10: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02496))_
 
@@ -233,9 +249,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02493))_
 
+<a id="atom-technical-atom-8b1b9390574a5a3b"></a>
+
 > When the 2D roll is double ones , the magic unconditionally takes no effect at all.
 
-### Technical frame 13: Filling out the Character Sheet
+### Technical frame 11: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02499))_
 
@@ -243,9 +261,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02498))_
 
+<a id="atom-technical-atom-67a9a19107557ced"></a>
+
 > If the adventurer's final score ( mental power resistance + 2D ) is equal to or greater than the monster's magic intensity , the monster's magic will only take an incomplete effect (some magic will take no effect at all).
 
-### Technical frame 14: Filling out the Character Sheet
+### Technical frame 12: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02503))_
 
@@ -253,9 +273,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02501))_
 
+<a id="atom-technical-atom-35cf259dcbaa912c"></a>
+
 > *In this way, when making a resistible magic check, you can also call it a successful resist or failed resist from the perspective of the one being affected by the magic.
 
-### Technical frame 15: Filling out the Character Sheet
+### Technical frame 13: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02499))_
 
@@ -263,9 +285,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02503))_
 
+<a id="atom-technical-atom-4ede1ef5f0caa324"></a>
+
 > If the dark elf casts a Fire Bolt on Ducard II, Ducard II must make a mental power resistance roll (baseline score 4, target score 13).
 
-### Technical frame 16: Filling out the Character Sheet
+### Technical frame 14: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02513))_
 
@@ -273,9 +297,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02506))_
 
+<a id="atom-technical-atom-ae488b4f42f2e97b"></a>
+
 > mental power resistance + 2D ≥ monster's magic intensity → magic takes an incomplete effect (some take no effect at all)
 
-### Technical frame 17: Filling out the Character Sheet
+### Technical frame 15: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02515))_
 
@@ -283,9 +309,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02514))_
 
+<a id="atom-technical-atom-b08f0c5b95881e48"></a>
+
 > If the score of the one casting the magic is greater, the magic will take full effect, but if there is a tie or if the score of the one on whom the magic is being cast is greater, the magic is resisted and will only take an incomplete effect.
 
-### Technical frame 18: Filling out the Character Sheet
+### Technical frame 16: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02521))_
 
@@ -293,9 +321,11 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02516))_
 
+<a id="atom-technical-atom-2b6d2206c5254e23"></a>
+
 > When the one casting the magic rolls double ones , the magic takes no effect at all.
 
-### Technical frame 19: Filling out the Character Sheet
+### Technical frame 17: Filling out the Character Sheet
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02521))_
 
@@ -303,13 +333,9 @@ What [[sword-world-rpg-complete-edition]] covers about 1.4.9 filling out the cha
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02517))_
 
+<a id="atom-technical-atom-aac0be3123c2a324"></a>
+
 > When the resisting side rolls double ones , the resist fails , unless the side casting the magic also rolls double ones.
-
-### Technical frame 20: Filling out the Character Sheet
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04837))_
-
-> In other words, each one counters (overpowers): and cannot take an effect at the same time as magic or other spellsongs that also belong to mind .
 
 
 ## Source

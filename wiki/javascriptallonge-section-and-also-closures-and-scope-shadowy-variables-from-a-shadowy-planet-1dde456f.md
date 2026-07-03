@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-closures-and-scope-shadowy-variables-from-a-shadowy-planet-1dde456f
 page_kind: source
-summary: And also: / Closures and Scope / shadowy variables from a shadowy planet: 8 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: And also: / Closures and Scope / shadowy variables from a shadowy planet: 8 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-closures-and-scope-shadowy-variables-from-a-shadowy-planet-1dde456f@250a107a3408654a14f87706661dcc2d
+projection_coverage: section-javascriptallonge-section-and-also-closures-and-scope-shadowy-variables-from-a-shadowy-planet-1dde456f@08d9b8d9ea6d77705c0df0861c86786b
 ---
 
 # And also: / Closures and Scope / shadowy variables from a shadowy planet
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-and-also-closures-and-sco
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-and-also-closures-and-scope-d1679ec0]] - broader source section: And also: / Closures and Scope
 
@@ -24,34 +27,3 @@ From [[javascriptallonge]].
 - The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x , it is ignored when evaluating x + y . JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of: _(javascriptallonge.pdf (source-range-7239e085-00373))_
 - When evaluating x + y + z , JavaScript will find x and y in the great-grandparent scope and z in the parent scope. The x in the great-great-grandparent scope is ignored, as are both w s. When a variable has the same name as an ancestor environment's binding, it is said to shadow the ancestor. _(javascriptallonge.pdf (source-range-7239e085-00375))_
 - This is often a good thing. _(javascriptallonge.pdf (source-range-7239e085-00376))_
-
-## Technical atoms
-
-### Technical frame 1: And also: / Closures and Scope / shadowy variables from a shadowy planet
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00373))_
-
-> The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x , it is ignored when evaluating x + y . JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00372))_
-
-```
-(x) =>
-(x, y) => x + y
-```
-
-### Technical frame 2: And also: / Closures and Scope / shadowy variables from a shadowy planet
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00375))_
-
-> When evaluating x + y + z , JavaScript will find x and y in the great-grandparent scope and z in the parent scope. The x in the great-great-grandparent scope is ignored, as are both w s. When a variable has the same name as an ancestor environment's binding, it is said to shadow the ancestor.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00374))_
-
-```
-(x) =>
-(x, y) =>
-(w, z) =>
-(w) =>
-x + y + z
-```

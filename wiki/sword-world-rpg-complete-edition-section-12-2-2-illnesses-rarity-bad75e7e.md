@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-12-2-2-illnesses-rarity-bad75e7e
 page_kind: source
 page_family: section-reference
-summary: 12.2.2 Illnesses / 《 Rarity 》: 33 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 12.2.2 Illnesses / 《 Rarity 》: 33 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-2-illnesses-rarity-bad75e7e@3cc494d7ee8145ea12a07937f3866ce5
+projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-2-illnesses-rarity-bad75e7e@17666d180e4d76fe8910d0e026eaeeca
 ---
 
 # 12.2.2 Illnesses / 《 Rarity 》
@@ -17,10 +17,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-b9c7f5f9]] - broader source section: 12.2.2 Illnesses
-- [[sword-world-rpg-complete-edition-section-rarity-14cc16c1]] - same source heading: another source section with the same heading, 《 Rarity 》
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-13-2-1-humans-rarity-a5c8f0b8]] - same source heading: another source section with the same heading, 13.2.1 《 Humans 》 / 《 Rarity 》
 - [[sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-rarity-5cfe727c]] - same source heading: another source section with the same heading, Chapter 14: / 14.4 Magical Item List / 《 Rarity 》
+- [[sword-world-rpg-complete-edition-section-rarity-14cc16c1]] - same source heading: another source section with the same heading, 《 Rarity 》
 
 ## Statements
 
@@ -41,50 +46,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: 12.2.2 Illnesses / 《 Rarity 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06682))_
-
-> After a certain period of time has elapsed after becoming ill, the illness either progresses further or gets better. The degree of progression of an illness is indicated by a score called depth . Immediately after contracting an illness, the depth is 1. After the time indicated by progression speed has elapsed since you contracted the illness, roll two dice and look at the result. If the roll is less than the progression intensity , the disease gets worse and the depth increases by 1. If the rol
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06680))_
-
-> If a disease can be identified, owners of the healer skill can provide appropriate treatment.
-
-### Technical frame 2: 12.2.2 Illnesses / 《 Rarity 》
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06683))_
 
 > Even if a shaman cannot use the spell Restore Health , they can still work with one type of spirit to alleviate symptoms. For example, by working with salamander, fever, which is the main symptom of a cold, can be alleviated. When a shaman performs such a treatment, they gain a +1 bonus on progression/healing checks.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06682))_
 
+<a id="atom-technical-atom-c2f5f720419c6675"></a>
+
 > If the roll is less than the progression intensity , the disease gets worse and the depth increases by 1.
-
-### Technical frame 3: 12.2.2 Illnesses / 《 Rarity 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06684))_
-
-> In addition to these, depending on the illness, there are herbs and special medicines that can provide bonuses to progression/healing checks.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06683))_
-
-> Even if a shaman cannot use the spell Restore Health , they can still work with one type of spirit to alleviate symptoms.
-
-### Technical frame 4: 12.2.2 Illnesses / 《 Rarity 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06686))_
-
-> If a healer who knows the true nature of an illness cares for the patient for more than one hour per day, they can make a similar check using that healer's healer skill level + intelligence bonus as the baseline score. However, this must be at each progression speed of the illness (i.e. immediately after the illness's progression check), and you can only make one success roll. However, even if they fail, the same healer can continue to care for the patient. If after some time has passed, an illn
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06685))_
-
-> When the holy magic Cure Disease or Refresh , or the spirit magic Restore Health are cast, the caster must make a success roll using their magic power as the baseline score.
-
-### Technical frame 5: 12.2.2 Illnesses / 《 Rarity 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06685))_
-
-> When the holy magic Cure Disease or Refresh , or the spirit magic Restore Health are cast, the caster must make a success roll using their magic power as the baseline score. The target score is double the healing score (added in parentheses). If you succeed, the depth of the illness is reduced by 1 and you can make an additional success roll. You can continue to make this check until you fail or until the illness is completely cured. If this does not completely cure the illness, it'll be useless
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06686))_
-
-> immediately after the illness's progression check), and you can only make one success roll.

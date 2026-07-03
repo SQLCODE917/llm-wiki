@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 2.5 Difficulty Checks / 2.5.2 How to Make a Difficulty Check: 16 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-difficulty-checks-2-5-2-how-to-make-a-difficulty-check-778f9a94@4f9cfcef2ee2fd38bb7de697f2d3a528
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-difficulty-checks-2-5-2-how-to-make-a-difficulty-check-778f9a94@3a575d203022e24ac63a19019c83c581
 ---
 
 # 2.5 Difficulty Checks / 2.5.2 How to Make a Difficulty Check
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-diffic
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-2-5-difficulty-checks-6c442155]] - broader source section: 2.5 Difficulty Checks
 
@@ -41,9 +43,13 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01235))_
 
+<a id="atom-technical-atom-18d5aa9d15a1d2b7"></a>
+
 > final score ≥ target score (difficulty + 2D) → action succeeds
 
 ### Technical atom 2
+
+<a id="atom-technical-atom-e884d09fa546986f"></a>
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01237))_
 
@@ -51,18 +57,18 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01238))_
 
+```text
+1. There is a  trap, the find trap check is successful → There is a trap at the door 2. There is a trap, the find trap check is a failure → You don't find any traps 3. There is no trap, the find trap check is successful → You don't find any traps 4. There is no trap, the find trap check is a failure → You don't find any traps
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 1 | There is a trap, the find trap check is successful → There is a trap at the door |
 | 2 | There is a trap, the find trap check is a failure → You don't find any traps |
 | 3 | There is no trap, the find trap check is successful → You don't find any traps |
 | 4 | There is no trap, the find trap check is a failure → You don't find any traps |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-1. There is a  trap, the find trap check is successful → There is a trap at the door 2. There is a trap, the find trap check is a failure → You don't find any traps 3. There is no trap, the find trap check is successful → You don't find any traps 4. There is no trap, the find trap check is a failure → You don't find any traps
-```
 
 </details>

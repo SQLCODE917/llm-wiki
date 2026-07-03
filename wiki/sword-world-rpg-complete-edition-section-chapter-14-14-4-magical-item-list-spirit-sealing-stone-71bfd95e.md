@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-spirit-sealing-stone-71bfd95e
 page_kind: source
 page_family: section-reference
-summary: Chapter 14: / 14.4 Magical Item List / [ Spirit Sealing Stone ]: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 14: / 14.4 Magical Item List / [ Spirit Sealing Stone ]: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-spirit-sealing-stone-71bfd95e@b73a487821b5fb0187cdf22b14a88eea
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-spirit-sealing-stone-71bfd95e@66e9491be29a3a429c724aa0d3c6fe52
 ---
 
 # Chapter 14: / 14.4 Magical Item List / [ Spirit Sealing Stone ]
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-14-14-4-magical-item-list-e871a62e]] - broader source section: Chapter 14: / 14.4 Magical Item List
 
@@ -36,8 +38,14 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-10961, source-range-0b9dec90-10962, source-range-0b9dec90-10963))_
 
+<a id="atom-technical-atom-c0a53fecc260fb3e"></a>
+
 > Rarity=16 Enchanter=Unknown Form=White gem
 
+<a id="atom-technical-atom-1545e0b3d81c05d5"></a>
+
 > Base Trade Price=45,000 gamels
+
+<a id="atom-technical-atom-f3bb93e1f3511aa4"></a>
 
 > Powers=Seals a spirit

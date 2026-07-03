@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Monster Action Announcement: 2 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-monster-action-announcement@997a4d1a8e69cd1ae1bf942e51a7bd0d
+projection_coverage: topic-sword-world-rpg-complete-edition-monster-action-announcement@b983ab327ae3feff5b2fe3a6ed5fbe4d
 ---
 
 # Monster Action Announcement
@@ -33,10 +33,14 @@ What [[sword-world-rpg-complete-edition]] covers about monster action announceme
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01305))_
 
+<a id="atom-technical-atom-5dc5a70fbc95d1ca"></a>
+
 > If it's something the character should know, the game master should tell you when they announce the action.
 
 
 ## Related pages
+
+### Topics
 
 - [[sword-world-rpg-complete-edition-npc-and-monster-action-announcement]] - narrower topic: 3.1.3 NPC and Monster Action Announcements shares source evidence from Chapter 3: / 3.1.3 NPC and Monster Action Announcements: When NPCs, monsters, etc. announce their actions, it's done by the game master who manages them. Specific action announcements may not be made at this time.; 3.1.3 NPC and Monster Action Announcements shares technical record from Chapter 3: / 3.1.3 NPC and Monster Action Announcements: If it's something the character should know, the game master should tell you when they announce the action. (2 shared statement(s), 1 shared atom(s))
 

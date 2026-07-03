@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-problem
 page_kind: concept
+page_family: topic-concept
 summary: Problem: 9 statement(s) and 4 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-problem@01c73396b9c197a871b193cbae482dce
+projection_coverage: topic-javascriptallonge-problem@46ec5bb4bbb7b49e86bd70d0ba0c216c
 ---
 
 # Problem
@@ -60,6 +61,8 @@ What [[javascriptallonge]] covers about problem:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00918))_
 
+<a id="atom-technical-atom-3a7e323375207c31"></a>
+
 ```
 Array.isArray("foo")
 //=> false
@@ -74,6 +77,8 @@ Array.isArray(["foo"])
 > This strategy is called 'copy-on-read', because when we attempt the parent to 'read' the value of a child of the list, we make a copy and read the copy of the child. Thereafter, we can write to the parent or the copy of the child freely.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01240))_
+
+<a id="atom-technical-atom-05e2937fc47dd397"></a>
 
 ```
 const rest = ({first, rest}) => copy(rest);
@@ -97,9 +102,13 @@ childList
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01821))_
 
+<a id="atom-technical-atom-da06962e386b539d"></a>
+
 > You may use babeljs.io 95 , or ES6Fiddle 96 to check your work.
 
 ### Technical atom 4
+
+<a id="atom-technical-atom-e477122c10f17b08"></a>
 
 **Context:** _(javascriptallonge.pdf (source-range-7239e085-01823))_
 
@@ -107,36 +116,42 @@ childList
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01825))_
 
+```text
+95 http://babeljs.io
+96 http://www.es6fiddle.net
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
+
 | entry | content |
 | --- | --- |
 | 95 | http://babeljs.io |
 | 96 | http://www.es6fiddle.net |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-95 http://babeljs.io
-96 http://www.es6fiddle.net
-```
 
 </details>
 
 
 ## Related pages
 
+### Source structure
+
+- [[javascriptallonge-section-we-ll-keep-it-simple-interlude-the-carpenter-interviews-for-a-job-the-problem-69f83674]] - source section: We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the problem shares source evidence from We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the problem: After some small talk, Christine explained that they liked to ask candidates to whiteboard some code. Despite his experience and industry longevity, the Carpenter di ... [truncated]; We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the problem shares technical record from We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the problem: If the arrow should cause the chequer to move off the edge of the board, the game halts. (7 shared statement(s), 4 shared atom(s))
+
+### Shared technical atoms
+
 - [[javascriptallonge-copy-write]] - shared statements and technical atoms: Copy on Write shares source evidence from Yes. Consider this variation: / Copy on Write / copy-on-read: So back to the problem of structure sharing. One strategy for avoiding problems is to be pessimistic . Whenever we take the rest of a list, make a copy.; Copy on Write shares technical record from Yes. Consider this variation: / Copy on Write / copy-on-read: const rest = ({first, rest}) => copy(rest); const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }\ }}; const childList = rest(parentList); ... [truncated] (1 shared statement(s), 1 shared atom(s))
 - [[javascriptallonge-carpenter]] - shared technical atoms: Carpenter shares technical table: 95 http://babeljs.io 96 http://www.es6fiddle.net (1 shared atom(s))
 - [[javascriptallonge-list]] - shared technical atoms: List shares technical record from Yes. Consider this variation: / Copy on Write / copy-on-read: const rest = ({first, rest}) => copy(rest); const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }\ }}; const childList = rest(parentList); ... [truncated] (1 shared atom(s))
 - [[javascriptallonge-rest]] - shared technical atoms: Rest shares technical record from Yes. Consider this variation: / Copy on Write / copy-on-read: const rest = ({first, rest}) => copy(rest); const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }\ }}; const childList = rest(parentList); ... [truncated] (1 shared atom(s))
 - [[javascriptallonge-write]] - shared technical atoms: Write shares technical record from We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the problem: You may use babeljs.io 95 , or ES6Fiddle 96 to check your work. (1 shared atom(s))
+
+### Shared claims
+
 - [[javascriptallonge-element]] - shared statements: Element shares source evidence from Composing and Decomposing Data / Self-Similarity / linear recursion: Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and com ... [truncated] (2 shared statement(s))
-- [[javascriptallonge-copy]] - shared statements: Copy shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / so why arrays: Arrays avoid this problem by pessimistically copying all the references whenever we extract an element or sequence of elements from them (We'll see this explained la ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-important]] - shared statements: Important shares source evidence from Composing and Decomposing Data / Self-Similarity / linear recursion: Once again, the solution directly displays the important elements: Dividing a problem into subproblems, detecting terminal cases, solving the terminal cases, and com ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-program]] - shared statements: Program shares source evidence from Recipes with Basic Functions / Maybe: A common problem in programming is checking for null or undefined (hereafter called 'nothing,' while all other values including 0 , [] and false will be called 'some ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-programming]] - shared statements: Programming shares source evidence from Recipes with Basic Functions / Maybe: A common problem in programming is checking for null or undefined (hereafter called 'nothing,' while all other values including 0 , [] and false will be called 'some ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-reference]] - shared statements: Reference shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / so why arrays: Arrays avoid this problem by pessimistically copying all the references whenever we extract an element or sequence of elements from them (We'll see this explained la ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-section-we-ll-keep-it-simple-interlude-the-carpenter-interviews-for-a-job-the-problem-69f83674]] - source section: We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the problem shares source evidence from We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the problem: After some small talk, Christine explained that they liked to ask candidates to whiteboard some code. Despite his experience and industry longevity, the Carpenter di ... [truncated]; We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the problem shares technical record from We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the problem: If the arrow should cause the chequer to move off the edge of the board, the game halts. (7 shared statement(s), 4 shared atom(s))
 
 ## Source
 

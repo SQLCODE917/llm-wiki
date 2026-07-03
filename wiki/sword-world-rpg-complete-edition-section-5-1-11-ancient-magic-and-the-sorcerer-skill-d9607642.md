@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 5.1.11 Ancient Magic and the Sorcerer Skill: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-11-ancient-magic-and-the-sorcerer-skill-d9607642@e0ace74dc282190feaa3ec414b5ac2ed
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-11-ancient-magic-and-the-sorcerer-skill-d9607642@a812618f4cf03fb2f268a32ba7cb6a53
 ---
 
 # 5.1.11 Ancient Magic and the Sorcerer Skill
@@ -34,5 +34,7 @@ From [[sword-world-rpg-complete-edition]].
 > Ancient magic has powerful effects because it draws its source of power (which is sometimes called mana ) directly from matter, but it is subject to the following two restrictions in order to cast the spells correctly:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02756))_
+
+<a id="atom-technical-atom-0119439b8381d381"></a>
 
 > [Figure] (p.66)

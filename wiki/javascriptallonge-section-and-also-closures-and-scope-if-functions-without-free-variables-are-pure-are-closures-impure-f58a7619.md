@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-closures-and-scope-if-functions-without-free-variables-are-pure-are-closures-impure-f58a7619
 page_kind: source
+page_family: section-reference
 summary: And also: / Closures and Scope / if functions without free variables are pure, are closures impure?: 26 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-closures-and-scope-if-functions-without-free-variables-are-pure-are-closures-impure-f58a7619@d9391ae769ba4e0932131a597ee44b07
+projection_coverage: section-javascriptallonge-section-and-also-closures-and-scope-if-functions-without-free-variables-are-pure-are-closures-impure-f58a7619@e6a3cdb15ff5d7532da7111455ec4ad7
 ---
 
 # And also: / Closures and Scope / if functions without free variables are pure, are closures impure?
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-and-also-closures-and-sco
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-and-also-closures-and-scope-d1679ec0]] - broader source section: And also: / Closures and Scope
 
@@ -48,6 +51,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00350))_
 
+<a id="atom-technical-atom-2474ba66ebcfc7e9"></a>
+
 > [Figure] (p.45)
 
 ### Technical frame 2: And also: / Closures and Scope / if functions without free variables are pure, are closures impure?
@@ -57,5 +62,7 @@ From [[javascriptallonge]].
 > Pure functions always mean the same thing because all of their 'inputs' are fully defined by their arguments. Not so with a closure. If I present to you this pure function (x, y) => x + y , we know exactly what it does with (2, 2) . But what about this closure: (y) => x + y ? We can't say what it will do with argument (2) without understanding the magic for evaluating the free variable x .
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00351))_
+
+<a id="atom-technical-atom-022fdc90abb9f966"></a>
 
 > If pure functions can contain closures, can a closure contain a pure function?

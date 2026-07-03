@@ -10,6 +10,7 @@ source-facing labels; internal support ids never appear in the body.
 
 from __future__ import annotations
 
+from llmwiki.domain.ledger.atom_addressing import technical_atom_anchor
 from llmwiki.domain.ledger.atom_context import TechnicalAtomContext, best_atom_context
 from llmwiki.domain.ledger.atoms import AtomPayload, TablePayload, atom_raw_text
 from llmwiki.domain.ledger.canonical import deterministic_id, short_digest
@@ -67,7 +68,8 @@ def _render_atom(
         return body.add(f"> _(missing atom {atom_id})_\n\n")
     rendered = atom_block(atom.technical_atom_kind, atom.payload)
     context = _atom_context_line(ledger, atom_id, atom.source_locator)
-    return body.add(f"{context}**Atom:** _({citation})_\n\n{rendered}\n\n")
+    anchor = technical_atom_anchor(atom_id)
+    return body.add(f"{anchor}\n{context}**Atom:** _({citation})_\n\n{rendered}\n\n")
 
 
 def atom_block(kind: str, payload: AtomPayload) -> str:
@@ -96,10 +98,20 @@ def atom_context_block(context: TechnicalAtomContext, source_locator: str) -> st
 def _table_block(payload: TablePayload) -> str:
     logical = _markdown_table(payload)
     raw = payload.raw_table_text
+    if payload.parse_status != "parsed":
+        preview = f"\n\n{_preview_table_block(logical)}" if logical else ""
+        return f"```text\n{raw}\n```{preview}"
     if not logical:
         return f"```\n{raw}\n```"
-    raw_block = f"<details>\n<summary>Raw table text</summary>\n\n```\n{raw}\n```\n\n</details>"
+    raw_block = f"<details>\n<summary>Raw table text</summary>\n\n```text\n{raw}\n```\n\n</details>"
     return f"{logical}\n\n{raw_block}"
+
+
+def _preview_table_block(logical: str) -> str:
+    return (
+        "<details>\n<summary>Parsed table preview (needs review)</summary>\n\n"
+        f"{logical}\n\n</details>"
+    )
 
 
 def _markdown_table(payload: TablePayload) -> str:

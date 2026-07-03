@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 6: / 6.1 Precautions When Using Skills / Thief Skill: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-thief-skill-295360f5@24213044c47398748f3d5c7012a3ff58
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-thief-skill-295360f5@7a60620b661b2be2f21148008e2750dd
 ---
 
 # Chapter 6: / 6.1 Precautions When Using Skills / Thief Skill
@@ -17,7 +17,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-82cdd945]] - broader source section: Chapter 6: / 6.1 Precautions When Using Skills
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-thief-skill-311f79df]] - same source heading: another source section with the same heading, 3.4.4 Actions You Can Take While Standing Still / 【 Thief Skill 】
 
 ## Statements

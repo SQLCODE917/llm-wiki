@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-climb-agility-47866255
 page_kind: source
 page_family: section-reference
-summary: [ ④ Climb [Agility] ]: 45 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ ④ Climb [Agility] ]: 45 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-climb-agility-47866255@accddce3e0f8b8226b78f6ae1cf9b61d
+projection_coverage: section-sword-world-rpg-complete-edition-section-climb-agility-47866255@8a147c01c7ec2ce01fb06a8460430737
 ---
 
 # [ ④ Climb [Agility] ]
@@ -42,82 +42,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: [ ④ Climb [Agility] ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05144))_
-
-> Climbing is both a common adventurer ability and a thief skill ability. The latter allows for more advanced climbing challenges.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05145))_
-
-> Climbing with the thief skill does not require rope assistance, and if you do have a rope, you can almost certainly climb.
-
-### Technical frame 2: [ ④ Climb [Agility] ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05145))_
-
-> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it's not possible to climb using adventurer level as a baseline score calculation. Climbing with the thief skill does not require rope assistance, and if you do have a rope, you can almost certainly climb. As a formality, a success roll should still be made, but a failure only occurs on double ones. For details, please refer to Table 6-1: Climb by Skill.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05146))_
-
-> Table 6-1: Climb by Skill
-
-### Technical frame 3: [ ④ Climb [Agility] ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05164))_
 
 > A check must be made every 10 meters. If you fail on the way, add 2D-2 meters to the height you climbed and height you descended up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to determine 
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05163))_
 
+<a id="atom-technical-atom-6821cfa91bb5fe6c"></a>
+
 > If this adventurer is a thief, he can remove and discard the heavy armor he is wearing, and he can use his thief skill to attempt the climb more safely.
-
-### Technical frame 4: [ ④ Climb [Agility] ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05166))_
-
-> An adventurer tries to climb a 22 meter cliff. In this case, a success roll is attempted three times. The first and second attempts are successful, but the third attempt fails. Now he rolls 2D and gets a 5. 5 - 2 = 3 meters is added to the 20 meters from the two attempts, which means he has climbed 23 meters . Therefore, he climbs the cliff.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05164))_
-
-> If you fail on the way, add 2D-2 meters to the height you climbed and height you descended up to that point to determine the final height you climbed and descended.
-
-### Technical frame 5: [ ④ Climb [Agility] ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05171))_
-
-> First, fall height x 3 is the base damage. The adventurer will suffer this damage to their life force.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05172))_
-
-> Just like when reducing damage in weapon combat, make a defense roll using the armor's defense power as the key number, and add your adventurer level to the result to determine the damage reduced.
-
-### Technical frame 6: [ ④ Climb [Agility] ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05172))_
-
-> However, an adventurer can reduce this damage depending on their adventurer level and armor. Just like when reducing damage in weapon combat, make a defense roll using the armor's defense power as the key number, and add your adventurer level to the result to determine the damage reduced. If the defense roll comes up double ones , all damage reduction is lost, including adventurer level.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05173, source-range-0b9dec90-05174))_
-
-> Table 6-2: Determining Climb Target Scores
-
-> Base Target Score = 10
-
-### Technical frame 7: [ ④ Climb [Agility] ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05204))_
-
-> Base falling damage (fall height x 3) is for falling on normal ground. If you fall on soft grass or on the water surface, calculate by reducing factors, such as fall height x 2 , fall height x 1 , etc. On the other hand, if you have something like spikes sticking out, etc. increase the factor to increase the damage. This decision should be made by the game master.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05203))_
-
-> Falling damage = fall height x 3 (defense roll result + adventurer level)
-
-### Technical frame 8: [ ④ Climb [Agility] ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05207))_
-
-> A thief with thief skill level 3 and dexterity bonus +2 can fall from a height of 5 meters or less without suffering any damage. If you fall from a height of 6
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05205))_
-
-> If an owner of the thief skill falls, the height can be calculated by subtracting thief skill level + agility bonus meters from the height of the fall.

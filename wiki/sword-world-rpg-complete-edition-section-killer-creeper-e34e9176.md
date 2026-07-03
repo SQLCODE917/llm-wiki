@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-killer-creeper-e34e9176
 page_kind: source
 page_family: section-reference
-summary: [ Killer Creeper ]: 35 source-backed entries and 13 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Killer Creeper ]: 35 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-killer-creeper-e34e9176@c3e41eec473068a0dca2936c7b3e6ec1
+projection_coverage: section-sword-world-rpg-complete-edition-section-killer-creeper-e34e9176@bf4679eab8c88a1d850b3a8333a9ea26
 ---
 
 # [ Killer Creeper ]
@@ -32,46 +32,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: [ Killer Creeper ]
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08478, source-range-0b9dec90-08479, source-range-0b9dec90-08480, source-range-0b9dec90-08481, source-range-0b9dec90-08482, source-range-0b9dec90-08483, source-range-0b9dec90-08484, source-range-0b9dec90-08485, source-range-0b9dec90-08486, source-range-0b9dec90-08487, source-range-0b9dec90-08488))_
-
-> Monster Level=3
-
-> Rarity=12
-
-> Agility=5 Movement Speed=0
-
-> Number=One Frequency=Rare
-
-> Intellect=None Reaction=Violent
-
-> Attack Points=Vine:10 (3)
-
-> Strike Points=7
-
-> Evasion Points=9 (2) Defense Points=6
-
-> Life Points/Resistance=30/14 (7)
-
-> Mental Points/Resistance=-/11 (4)
-
-> Special Abilities=Strangling
-
-### Technical frame 2: [ Killer Creeper ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08495))_
 
 > A character entangled in vines can also attempt to pull the entangled vines off instead of making a normal attack. Make a success roll using adventurer level + strength bonus as the baseline score and the killer creeper's attack points (10, or the final score from when the attack hit) as the target score. If successful, you can pull off the vines. If entangled in multiple vines, you must make separate checks for each. When you pull the vines off, 1 point of damage per vine is dealt to the killer
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08494))_
 
+<a id="atom-technical-atom-b2ab367c40c8e38c"></a>
+
 > A character entangled in two or more vines cannot use ancient magic or spirit magic, because they're unable to move.
-
-### Technical frame 3: [ Killer Creeper ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08494))_
-
-> A character entangled in two or more vines cannot use ancient magic or spirit magic, because they're unable to move. However, holy magic can be used freely.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08495))_
-
-> If successful, you can pull off the vines.

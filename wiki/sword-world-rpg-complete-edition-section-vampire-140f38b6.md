@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-vampire-140f38b6
 page_kind: source
 page_family: section-reference
-summary: [ Vampire ]: 88 source-backed entries and 27 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Vampire ]: 88 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-vampire-140f38b6@82256e937d97aca504f755536decfa16
+projection_coverage: section-sword-world-rpg-complete-edition-section-vampire-140f38b6@912ee64a498c886da55b2d8f5cf9fdc3
 ---
 
 # [ Vampire ]
@@ -51,6 +51,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08874))_
 
+<a id="atom-technical-atom-ae3aaf8faad49810"></a>
+
 > Also, if a vampire's attack hits a character, in addition to normal damage, mental power will also be damaged.
 
 ### Technical frame 2: [ Vampire ]
@@ -61,71 +63,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08876))_
 
+<a id="atom-technical-atom-30dffd728ceeefa7"></a>
+
 > If they cannot steal mental power for one full day, they will automatically lose 1 mental point.
 
 ### Technical frame 3: [ Vampire ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08878))_
-
-> Vampires hate sunlight. When exposed to sunlight, a vampire suffers 1 point of damage to both their life points and mental points each round. Life points do not regenerate under the sun.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08881, source-range-0b9dec90-08882))_
-
-> Special Abilities=Steal mental power (Strike power 10, bonus damage 3)
-
-> Gaze (Resist target score=10, paralysis by fear)
-
-### Technical frame 4: [ Vampire ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08890))_
-
-> A lesser vampire is a monster created by the transformation of a victim whose blood has been sucked by another vampire. They will always follow the commands of the vampire that transformed them (their parents, so to speak). They have emaciated, unhealthy pale skin, and their glowing red eyes cause intense fear in those who see them. A character who makes eye contact with a lesser vampire must first resist the gaze against target score 10. If you fail, you'll be paralyzed by fear and unable to ac
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08887, source-range-0b9dec90-08888, source-range-0b9dec90-08889))_
-
-> Habitat=Various
-
-> Languages=Those previous
-
-> Perception=Pseudo
-
-### Technical frame 5: [ Vampire ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08891))_
-
-> A lesser vampire cannot be wounded by normal weapons. You will need a silver or magic weapon to defeat them. In addition to normal damage, a character hit by a lesser vampire's attack will also suffer damage to their mental power
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08893, source-range-0b9dec90-08894, source-range-0b9dec90-08895, source-range-0b9dec90-08896, source-range-0b9dec90-08897, source-range-0b9dec90-08898, source-range-0b9dec90-08900))_
-
-> Monster Level=10 Rarity=13 Agility=20 Movement Speed=20/20 (air) Number=One to several Frequency=Very rare Intellect=High Reaction=Adversarial Attack Points=Barehanded:17 (10)
-
-> Strike Points=14+mental damage
-
-> Evasion Points=19 (12) Defense Points=12
-
-> Life Points/Resistance=26/20 (13)
-
-> Mental Points/Resistance=26/20 (13)
-
-> Special Abilities=8th level dark magic (Magic intensity/magic power=18/11)
-
-> Gaze (Resist target score=17, paralysis by fear)
-
-### Technical frame 6: [ Vampire ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08908))_
-
-> Vampires are servants of the dark gods or those who seem to be particularly favored by the dark gods, and are resurrected as undead after death. Most abilities they had previously are retained. Additionally, they gain the power to use dark magic up to 8th level. They'll no longer be able to use holy magic, but if they had a holy magic skill of 9th level or greater, they'll be able to use dark magic at the same skill level. The scores given here are for an average vampire and will vary depending 
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08905, source-range-0b9dec90-08906, source-range-0b9dec90-08907))_
-
-> Habitat=Places with unholy soil
-
-> Languages=Those previous
-
-> Perception=Pseudo
-
-### Technical frame 7: [ Vampire ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08914))_
 
@@ -133,9 +75,11 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08913))_
 
+<a id="atom-technical-atom-ddb6756ce3a306f0"></a>
+
 > You cannot attempt this success roll if you do not know about vampires.
 
-### Technical frame 8: [ Vampire ]
+### Technical frame 4: [ Vampire ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08915))_
 
@@ -143,44 +87,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08914))_
 
+<a id="atom-technical-atom-e96bd49885d4dec6"></a>
+
 > If someone with the shaman skill looks at the soil , they can immediately tell that it's something out of the ordinary.
-
-### Technical frame 9: [ Vampire ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08915))_
-
-> You can defeat a vampire by reducing its mental points to 0, or by removing the soil from its original location and reducing its life points to 0. However, cautious vampires usually keep soil in several locations.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08917, source-range-0b9dec90-08918, source-range-0b9dec90-08919, source-range-0b9dec90-08920))_
-
-> Monster Level=15 Rarity=13 Agility=20 Movement Speed=20/20 (air) Number=One Frequency=Very rare Intellect=Very high Reaction=Adversarial Attack Points=Barehanded:22 (15) Strike Points=19+mental damage Evasion Points=24 (17) Defense Points=17
-
-> Life Points/Resistance=26/25 (18)
-
-> Mental Points/Resistance=32/26 (19)
-
-> Special Abilities=10th level ancient magic (Magic intensity/magic power=22/15)
-
-### Technical frame 10: [ Vampire ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08931))_
-
-> The Undead King , is the name of the ultimate undead, the king of all without life, a powerful necromancer from the ancient kingdom that gained eternal negative power through a lost spell. They are usually dressed in black robes and a hood. The scores given here are for an average undead king, and will vary depending on the abilities they had previously. If you take that into account, its dexterity and agility will be previous +6 , its strength, intelligence, and life will be previous +12 , and 
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08923))_
-
-> Gaze (Resist target score=22, paralysis by fear)
-
-### Technical frame 11: [ Vampire ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08931))_
-
-> The Undead King , is the name of the ultimate undead, the king of all without life, a powerful necromancer from the ancient kingdom that gained eternal negative power through a lost spell. They are usually dressed in black robes and a hood. The scores given here are for an average undead king, and will vary depending on the abilities they had previously. If you take that into account, its dexterity and agility will be previous +6 , its strength, intelligence, and life will be previous +12 , and 
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-08928, source-range-0b9dec90-08929, source-range-0b9dec90-08930))_
-
-> Habitat=Places with unholy soil
-
-> Languages=Low ancient
-
-> Perception=Pseudo

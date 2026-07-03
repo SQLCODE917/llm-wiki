@@ -4,10 +4,10 @@ page_kind: concept
 page_family: broad-topic
 summary: 【 Damage Reduction 】: 25 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-damage-reduction@51762bbf3f36e1ddb08c8336341071f7
+projection_coverage: topic-sword-world-rpg-complete-edition-damage-reduction@6b0ab68bdd75c8a22e2cffb195c2c13c
 ---
 
 # 【 Damage Reduction 】
@@ -17,8 +17,18 @@ What [[sword-world-rpg-complete-edition]] covers about 【 damage reduction 】:
 
 ## Related pages
 
+### Source structure
+
+- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-damage-reduction-d28d54d3]] - source section: 3.4.4 Actions You Can Take While Standing Still / 【 Damage Reduction 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Damage Reduction 】: Those who are called heroes do not die from just a few injuries. In Sword World RPG , a character with a high adventurer level, that is, a character who has a high l ... [truncated]; 3.4.4 Actions You Can Take While Standing Still / 【 Damage Reduction 】 shares technical record from 3.4.4 Actions You Can Take While Standing Still / 【 Damage Reduction 】: damage reduction = adventurer level (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-4-6-4-damage-reduction-df39d6f0]] - source section: 4.6.4 Damage Reduction shares source evidence from 4.6.4 Damage Reduction: Characters can also reduce damage using their adventurer level . The result of your defense roll plus this damage reduction equals the fi nal amount of damage your c ... [truncated] (4 shared statement(s))
+
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements and technical atoms: 1.3.3 Adventurer Level shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Damage Reduction 】: Those who are called heroes do not die from just a few injuries. In Sword World RPG , a character with a high adventurer level, that is, a character who has a high l ... [truncated]; 1.3.3 Adventurer Level shares technical record from 3.4.4 Actions You Can Take While Standing Still / 【 Damage Reduction 】: damage reduction = adventurer level (6 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-final-damage]] - shared statements and technical atoms: 4.5.5 Final Damage shares source evidence from 4.6.5 Final Damage: The final damage your character suffers from a monster equals the monster's strike points minus the result of your defense roll plus your character's damage reduction .; 4.5.5 Final Damage shares technical record from 4.6.5 Final Damage: Final damage = monster's strike points - (defense roll result + damage reduction) (2 shared statement(s), 1 shared atom(s))
+
+### Shared claims
+
 - [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (3 shared statement(s))
 - [[sword-world-rpg-complete-edition-critical-target-variation]] - shared statements: Critical Target Variation shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (2 shared statement(s))
 - [[sword-world-rpg-complete-edition-armor]] - shared statements: Armor shares source evidence from 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Armor 】: Magical armor increases evasion speed and damage reduction . If you wear +1 magical armor, you gain +1 to evasion speed and damage reduction. +2 means +2, and +3 mea ... [truncated] (1 shared statement(s))
@@ -26,8 +36,6 @@ What [[sword-world-rpg-complete-edition]] covers about 【 damage reduction 】:
 - [[sword-world-rpg-complete-edition-magic-armor]] - shared statements: 《 Magic Armor (+1) 》 shares source evidence from Chapter 14: / 14.4 Magical Item List / 《 Magic Armor (+3) 》: Chain mail, splint, lamellar, plate armor Rarity=16 Enchanter=Many Form=Metal Armor Required Strength/Base Trade Price=See description Magic Power=+3 to evasion spee ... [truncated] (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements: 【 Ranger Skill 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat: Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-weapon-critical]] - shared statements: 《 Weapons Cannot Critical 》 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet: The entry fields may seem complicated, but this is to assist you when using Chapter 16: Optional Rules for Combat (see p. 260). Now, don't worry about it too much. I ... [truncated] (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-damage-reduction-d28d54d3]] - source section: 3.4.4 Actions You Can Take While Standing Still / 【 Damage Reduction 】 shares source evidence from 3.4.4 Actions You Can Take While Standing Still / 【 Damage Reduction 】: Those who are called heroes do not die from just a few injuries. In Sword World RPG , a character with a high adventurer level, that is, a character who has a high l ... [truncated]; 3.4.4 Actions You Can Take While Standing Still / 【 Damage Reduction 】 shares technical record from 3.4.4 Actions You Can Take While Standing Still / 【 Damage Reduction 】: damage reduction = adventurer level (3 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-4-6-4-damage-reduction-df39d6f0]] - source section: 4.6.4 Damage Reduction shares source evidence from 4.6.4 Damage Reduction: Characters can also reduce damage using their adventurer level . The result of your defense roll plus this damage reduction equals the fi nal amount of damage your c ... [truncated] (4 shared statement(s))
 ## Statements by source section
 
 ### 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat
@@ -123,6 +131,8 @@ What [[sword-world-rpg-complete-edition]] covers about 【 damage reduction 】:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01472))_
 
+<a id="atom-technical-atom-453c763ff1887efc"></a>
+
 > damage reduction = adventurer level
 
 ### Technical frame 2: 4.6.5 Final Damage
@@ -132,6 +142,8 @@ What [[sword-world-rpg-complete-edition]] covers about 【 damage reduction 】:
 > If the result of Ducard II's defense roll is 0 (roll 3) or 6 (roll 12), respectively, the final damage he will suffer is calculated to be:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02228))_
+
+<a id="atom-technical-atom-53fcf83d83c9e864"></a>
 
 > Final damage = monster's strike points - (defense roll result + damage reduction)
 

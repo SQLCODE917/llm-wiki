@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-building-blocks-partial-application-a5e51d71
 page_kind: source
-summary: And also: / Building Blocks / partial application: 14 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: And also: / Building Blocks / partial application: 14 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-building-blocks-partial-application-a5e51d71@1718752464615f370005e9e0dc9eed33
+projection_coverage: section-javascriptallonge-section-and-also-building-blocks-partial-application-a5e51d71@f1b7b06f1116b4f3764776b0ff5b9451
 ---
 
 # And also: / Building Blocks / partial application
@@ -16,8 +17,16 @@ From [[javascriptallonge]].
 
 ## Related pages
 
+### Source structure
+
 - [[javascriptallonge-section-and-also-building-blocks-96359378]] - broader source section: And also: / Building Blocks
+
+### Topics
+
 - [[javascriptallonge-partial-application]] - topic hub: opens the topic page for Partial Application
+
+### Other
+
 - [[javascriptallonge-section-recipes-with-basic-functions-partial-application-583028a8]] - same source heading: another source section with the same heading, Recipes with Basic Functions / Partial Application
 
 ## Statements
@@ -38,6 +47,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00593))_
 
+<a id="atom-technical-atom-d58c104eac1daf94"></a>
+
 ```
 _.map([1, 2, 3], (n) => n * n)
 //=> [1, 4, 9]
@@ -51,6 +62,8 @@ _.map([1, 2, 3], (n) => n * n)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00596))_
 
+<a id="atom-technical-atom-7e2e343bb8d0ba90"></a>
+
 ```
 const squareAll = (array) => map(array,
 (n) => n * n);
@@ -58,18 +71,16 @@ const squareAll = (array) => map(array,
 
 ### Technical frame 3: And also: / Building Blocks / partial application
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00599))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-00603))_
 
-> We'll discuss mapWith again. The important thing to see is that partial application is orthogonal to composition, and that they both work together nicely:
+> Wegeneralized composition with the compose combinator. Partial application also has a combinator, which we'll see in the partial recipe.
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00598))_
+**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00601))_
+
+<a id="atom-technical-atom-330729474fe641db"></a>
 
 ```
-const mapWith = (fn) =>
-(array) => map(array, fn);
-const squareAll = mapWith((n) => n * n);
-squareAll([1, 2, 3])
-//=> [1, 4, 9]
+const safeSquareAll = mapWith(maybe((n) => n * n));
 ```
 
 ### Technical frame 4: And also: / Building Blocks / partial application
@@ -78,64 +89,11 @@ squareAll([1, 2, 3])
 
 > Wegeneralized composition with the compose combinator. Partial application also has a combinator, which we'll see in the partial recipe.
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00601))_
-
-```
-const safeSquareAll = mapWith(maybe((n) => n * n));
-```
-
-### Technical frame 5: And also: / Building Blocks / partial application
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00603))_
-
-> Wegeneralized composition with the compose combinator. Partial application also has a combinator, which we'll see in the partial recipe.
-
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00602))_
+
+<a id="atom-technical-atom-10a4f14311565237"></a>
 
 ```
 safeSquareAll([1, null, 2, 3])
 //=> [1, null, 4, 9]
 ```
-
-### Technical atom 6
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00659))_
-
-| entry | content |
-| --- | --- |
-| 45 | from Michael Fogus, Functional JavaScript |
-| 46 | from Oliver Steele and the terse but handy node-ap |
-| 47 | from James Halliday. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Partial Application
-In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it. This is such a common tool that many libraries provide some form of partial application. You'll find examples in Lemonad 45 from Michael Fogus, Functional JavaScript 46 from Oliver Steele and the terse but handy node-ap 47 from James Halliday.
-```
-
-</details>
-
-### Technical atom 7
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00660))_
-
-> These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost. 48 If you want to bind more than one argument, or you want to leave a 'hole' in the argument list, you will need to either use a generalized partial recipe, or you will need to repeatedly apply arguments. They are context-agnostic.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00663))_
-
-| entry | content |
-| --- | --- |
-| 45 | https://github.com/fogus/lemonad |
-| 46 | http://osteele.com/sources/javascript/functional/ |
-| 47 | https://github.com/substack/node-ap 48 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-45 https://github.com/fogus/lemonad 46 http://osteele.com/sources/javascript/functional/ 47 https://github.com/substack/node-ap 48
-```
-
-</details>

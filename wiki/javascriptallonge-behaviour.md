@@ -1,19 +1,36 @@
 ---
 page_id: javascriptallonge-behaviour
 page_kind: concept
+page_family: broad-topic
 summary: Behaviour: 5 statement(s) and 2 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-behaviour@467233522ee706e65c316b034f774b80
+projection_coverage: topic-javascriptallonge-behaviour@2f0a28fd11c4a45c4313ef17d276f637
 ---
 
 # Behaviour
 
 What [[javascriptallonge]] covers about behaviour:
 
-## Statements
+
+## Related pages
+
+### Shared technical atoms
+
+- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from And also: / Closures and Scope / which came first, the chicken or the egg?: This behaviour of pure functions and closures has many, many consequences that can be exploited to write software. We are going to explore them in some detail as wel ... [truncated]; Function shares technical record from Picking the Bean: Choice and Truthiness / function parameters are eager: const or = (a, b) => a || b const and = (a, b) => a && b const even = (n) => or(n === 0, and(n !== 1, even(n - 2))) even(42) //=> Maximum call stack size exceeded. (2 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-truthiness]] - shared technical atoms: Truthiness shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (2 shared atom(s))
+- [[javascriptallonge-parameter]] - shared statements and technical atoms: Parameter shares source evidence from Picking the Bean: Choice and Truthiness / function parameters are eager: In contrast to the behaviour of the ternary operator, || , and && , function parameters are always eagerly evaluated :; Parameter shares technical record from Picking the Bean: Choice and Truthiness / function parameters are eager: const or = (a, b) => a || b const and = (a, b) => a && b const even = (n) => or(n === 0, and(n !== 1, even(n - 2))) even(42) //=> Maximum call stack size exceeded. (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-programmer]] - shared statements and technical atoms: Programmer shares source evidence from Picking the Bean: Choice and Truthiness / truthiness and operators: Programmers often take advantage of this behaviour to observe that !!(someExpression) will always evaluate to true is someExpression is truthy, and to false if it is ... [truncated]; Programmer shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-alway]] - shared technical atoms: Alway shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared atom(s))
+- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared atom(s))
+- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared atom(s))
+
+### Shared claims
+
+- [[javascriptallonge-closure]] - shared statements: Closure shares source evidence from And also: / Closures and Scope / which came first, the chicken or the egg?: This behaviour of pure functions and closures has many, many consequences that can be exploited to write software. We are going to explore them in some detail as wel ... [truncated] (1 shared statement(s))
+## Statements by source section
 
 ### And also: / Closures and Scope / which came first, the chicken or the egg?
 
@@ -46,6 +63,8 @@ What [[javascriptallonge]] covers about behaviour:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00778))_
 
+<a id="atom-technical-atom-e4e2b300bef7f5ba"></a>
+
 ```
 !5
 //=> false
@@ -61,6 +80,8 @@ What [[javascriptallonge]] covers about behaviour:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00802))_
 
+<a id="atom-technical-atom-f6692ca904d56bf1"></a>
+
 ```
 const or = (a, b) => a || b
 const and = (a, b) => a && b
@@ -70,17 +91,6 @@ even(42)
 //=> Maximum call stack size exceeded.
 ```
 
-
-## Related pages
-
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from And also: / Closures and Scope / which came first, the chicken or the egg?: This behaviour of pure functions and closures has many, many consequences that can be exploited to write software. We are going to explore them in some detail as wel ... [truncated]; Function shares technical record from Picking the Bean: Choice and Truthiness / function parameters are eager: const or = (a, b) => a || b const and = (a, b) => a && b const even = (n) => or(n === 0, and(n !== 1, even(n - 2))) even(42) //=> Maximum call stack size exceeded. (2 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-parameter]] - shared statements and technical atoms: Parameter shares source evidence from Picking the Bean: Choice and Truthiness / function parameters are eager: In contrast to the behaviour of the ternary operator, || , and && , function parameters are always eagerly evaluated :; Parameter shares technical record from Picking the Bean: Choice and Truthiness / function parameters are eager: const or = (a, b) => a || b const and = (a, b) => a && b const even = (n) => or(n === 0, and(n !== 1, even(n - 2))) even(42) //=> Maximum call stack size exceeded. (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-program]] - shared statements and technical atoms: Program shares source evidence from Picking the Bean: Choice and Truthiness / truthiness and operators: Programmers often take advantage of this behaviour to observe that !!(someExpression) will always evaluate to true is someExpression is truthy, and to false if it is ... [truncated]; Program shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-programmer]] - shared statements and technical atoms: Programmer shares source evidence from Picking the Bean: Choice and Truthiness / truthiness and operators: Programmers often take advantage of this behaviour to observe that !!(someExpression) will always evaluate to true is someExpression is truthy, and to false if it is ... [truncated]; Programmer shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-alway]] - shared technical atoms: Alway shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared atom(s))
-- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared atom(s))
-- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from Picking the Bean: Choice and Truthiness / truthiness and operators: !5 //=> false !undefined //=> true (1 shared atom(s))
-- [[javascriptallonge-closure]] - shared statements: Closure shares source evidence from And also: / Closures and Scope / which came first, the chicken or the egg?: This behaviour of pure functions and closures has many, many consequences that can be exploited to write software. We are going to explore them in some detail as wel ... [truncated] (1 shared statement(s))
 
 ## Source
 

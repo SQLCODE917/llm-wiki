@@ -4,10 +4,10 @@ page_kind: concept
 page_family: topic-concept
 summary: Magical Beast: 12 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-magical-beast@e611dae5d73cc6f80db8cec132d6da37
+projection_coverage: topic-sword-world-rpg-complete-edition-magical-beast@6d236118acc0b6c350ba1a0f16fb11a4
 ---
 
 # Magical Beast
@@ -57,13 +57,20 @@ What [[sword-world-rpg-complete-edition]] covers about magical beast:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07544))_
 
+<a id="atom-technical-atom-a41d90f3ca85a039"></a>
+
 > Slaves have low intellect and cannot use magic.
 
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-mythical-beast-and-magical]] - narrower topic: 《 Mythical Beasts and Magical Beasts 》 shares source evidence from 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: Mythical beast and magical beast are general terms for monsters that have living bodies, unlike spirits or undead. These include three types: things that have existe ... [truncated]; 《 Mythical Beasts and Magical Beasts 》 shares technical record from 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]: Slaves have low intellect and cannot use magic. (12 shared statement(s), 1 shared atom(s))
+### Shared technical atoms
+
 - [[sword-world-rpg-complete-edition-mythical-beast]] - shared statements and technical atoms: Mythical Beast shares source evidence from 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: Mythical beast and magical beast are general terms for monsters that have living bodies, unlike spirits or undead. These include three types: things that have existe ... [truncated]; Mythical Beast shares technical record from 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]: Slaves have low intellect and cannot use magic. (8 shared statement(s), 1 shared atom(s))
+
+### Topics
+
+- [[sword-world-rpg-complete-edition-mythical-beast-and-magical]] - narrower topic: 《 Mythical Beasts and Magical Beasts 》 shares source evidence from 13.1 Types of Monsters / 《 Mythical Beasts and Magical Beasts 》: Mythical beast and magical beast are general terms for monsters that have living bodies, unlike spirits or undead. These include three types: things that have existe ... [truncated]; 《 Mythical Beasts and Magical Beasts 》 shares technical record from 13.2.6 Mythical Beasts and Magical Beasts / [ Lizardman ]: Slaves have low intellect and cannot use magic. (12 shared statement(s), 1 shared atom(s))
 
 ## Source
 

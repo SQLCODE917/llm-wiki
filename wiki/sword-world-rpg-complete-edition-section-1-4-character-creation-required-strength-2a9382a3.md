@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 1.4 Character Creation / Required Strength: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-required-strength-2a9382a3@2b539671b6d8eba64371c454032bae5a
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-required-strength-2a9382a3@129966ed880c96013edb53d4ab878444
 ---
 
 # 1.4 Character Creation / Required Strength
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-charac
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-1e239ef6]] - broader source section: 1.4 Character Creation
 
@@ -38,6 +40,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00803))_
 
+<a id="atom-technical-atom-d3d157dccb6f44cb"></a>
+
 > When buying weapons and armor, one must be aware of their required strength .
 
 ### Technical frame 2: 1.4 Character Creation / Required Strength
@@ -47,5 +51,7 @@ From [[sword-world-rpg-complete-edition]].
 > Basically, the most suitable weapon is one whose required strength equals the character's strength . As long as you choose that, you are guaranteed the same attack capability, even if you use a different type of weapon. Think of a sword, ax, or spear with a required strength of 14 as the same in terms of game value. Therefore, it's a good idea to choose one based on the image of your character.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00806))_
+
+<a id="atom-technical-atom-0f6c6f5cb6460ade"></a>
 
 > Therefore, if the required strength of the weapon you're buying on Table 1-8: Weapons does not match your character's strength, you should not buy that weapon.

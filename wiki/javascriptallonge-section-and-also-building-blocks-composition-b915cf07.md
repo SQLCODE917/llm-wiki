@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-building-blocks-composition-b915cf07
 page_kind: source
-summary: And also: / Building Blocks / composition: 13 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: And also: / Building Blocks / composition: 13 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-building-blocks-composition-b915cf07@75c246961972434f8bb55572d74fbf16
+projection_coverage: section-javascriptallonge-section-and-also-building-blocks-composition-b915cf07@a6d284653b3310625c0d5ce4bfe98839
 ---
 
 # And also: / Building Blocks / composition
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-and-also-building-blocks-
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-and-also-building-blocks-96359378]] - broader source section: And also: / Building Blocks
 
@@ -36,6 +39,8 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00583))_
 
+<a id="atom-technical-atom-57f260a15bac532f"></a>
+
 ```
 const cookAndEat = (food) => eat(cook(food));
 ```
@@ -47,6 +52,8 @@ const cookAndEat = (food) => eat(cook(food));
 > If that was all there was to it, composition wouldn't matter much. But like many patterns, using it when it applies is only 20% of the benefit. The other 80% comes from organizing your code such that you can use it: Writing functions that can be composed in various ways.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00585))_
+
+<a id="atom-technical-atom-1c1fd91f2db9fd92"></a>
 
 ```
 const compose = (a, b) => (c) => a(b(c));
@@ -61,6 +68,8 @@ const cookAndEat = compose(eat, cook);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00586))_
 
+<a id="atom-technical-atom-c7fa8b34dc595368"></a>
+
 > The other 80% comes from organizing your code such that you can use it: Writing functions that can be composed in various ways.
 
 ### Technical frame 4: And also: / Building Blocks / composition
@@ -71,18 +80,6 @@ const cookAndEat = compose(eat, cook);
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00588))_
 
+<a id="atom-technical-atom-036210fddaad3323"></a>
+
 > Of course, you needn't use combinators to implement either of these ideas, you can use if statements.
-
-### Technical frame 5: And also: / Building Blocks / composition
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00588))_
-
-> Of course, you needn't use combinators to implement either of these ideas, you can use if statements. But once and maybe compose, so you can chain them together as you see fit:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00589))_
-
-```
-const actuallyTransfer= (from, to, amount) =>
-// do something
-const invokeTransfer = once(maybe(actuallyTransfer(...)));
-```

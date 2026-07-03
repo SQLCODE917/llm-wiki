@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-const
 page_kind: concept
-summary: Const: 6 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
+page_family: topic-concept
+summary: Const: 5 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-const@98879454140f33934aeedfe9d11ffed3
+projection_coverage: topic-javascriptallonge-const@612cdaf6f86466126b521d5c1c7574ad
 ---
 
 # Const
@@ -25,8 +26,6 @@ What [[javascriptallonge]] covers about const:
 
 - Shadowing a let with a const does not change our ability to rebind the variable in its original scope. And: _(javascriptallonge.pdf (source-range-7239e085-01183))_
 
-- Shadowing a const with a let does not permit it to be rebound in its original scope. _(javascriptallonge.pdf (source-range-7239e085-01185))_
-
 ### Composing and Decomposing Data / Reassignment / mixing let and const / var
 
 - In that way, var is a little like const and let , we should always declare and bind names before using them. But it's not like const and let in that it's function scoped, not block scoped. _(javascriptallonge.pdf (source-range-7239e085-01200))_
@@ -41,6 +40,8 @@ What [[javascriptallonge]] covers about const:
 > Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00461))_
+
+<a id="atom-technical-atom-066edcfc8d35d4a0"></a>
 
 ```
 ((diameter_fn) => {
@@ -63,6 +64,8 @@ return (diameter) => diameter * PI
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01182))_
 
+<a id="atom-technical-atom-903c080c8c808ee9"></a>
+
 ```
 (() => {
 let age = 49;
@@ -77,11 +80,13 @@ return age;
 
 ### Technical frame 3: Composing and Decomposing Data / Reassignment / mixing let and const
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01185))_
+**Context:** _(javascriptallonge.pdf (source-range-7239e085-01183))_
 
-> Shadowing a const with a let does not permit it to be rebound in its original scope.
+> Shadowing a let with a const does not change our ability to rebind the variable in its original scope. And:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01184))_
+
+<a id="atom-technical-atom-3df1cddbc62de02b"></a>
 
 ```
 (() => {
@@ -98,12 +103,16 @@ return age;
 
 ## Related pages
 
-- [[javascriptallonge-bind]] - shared statements: Bind shares source evidence from And also: / That Constant Coffee Craving / const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. (1 shared statement(s))
+### Source structure
+
+- [[javascriptallonge-section-and-also-that-constant-coffee-craving-const-1d605a7f]] - source section: And also: / That Constant Coffee Craving / const shares source evidence from And also: / That Constant Coffee Craving / const: Another way to write our 'circumference' function would be to pass PI along with the diameter argument, something like this:; And also: / That Constant Coffee Craving / const shares technical record from And also: / That Constant Coffee Craving / const: (diameter, PI) => diameter * PI (11 shared statement(s), 10 shared atom(s))
+
+### Shared claims
+
 - [[javascriptallonge-binding]] - shared statements: Binding shares source evidence from And also: / That Constant Coffee Craving / const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. (1 shared statement(s))
 - [[javascriptallonge-function]] - shared statements: Function shares source evidence from Composing and Decomposing Data / Reassignment / mixing let and const / var: In that way, var is a little like const and let , we should always declare and bind names before using them. But it's not like const and let in that it's function sc ... [truncated] (1 shared statement(s))
 - [[javascriptallonge-parameter]] - shared statements: Parameter shares source evidence from And also: / That Constant Coffee Craving / const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. (1 shared statement(s))
 - [[javascriptallonge-value]] - shared statements: Value shares source evidence from And also: / That Constant Coffee Craving / const and lexical scope: Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. (1 shared statement(s))
-- [[javascriptallonge-section-and-also-that-constant-coffee-craving-const-1d605a7f]] - source section: And also: / That Constant Coffee Craving / const shares source evidence from And also: / That Constant Coffee Craving / const: Another way to write our 'circumference' function would be to pass PI along with the diameter argument, something like this:; And also: / That Constant Coffee Craving / const shares technical record from And also: / That Constant Coffee Craving / const: (diameter, PI) => diameter * PI (11 shared statement(s), 10 shared atom(s))
 
 ## Source
 

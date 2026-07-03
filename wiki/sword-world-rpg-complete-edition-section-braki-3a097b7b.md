@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 《 Braki 》: 12 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-braki-3a097b7b@2c5474edf13c39c48ba2af2ac8a6fbaa
+projection_coverage: section-sword-world-rpg-complete-edition-section-braki-3a097b7b@68a7f9b4ca499fae396ea764947fde6f
 ---
 
 # 《 Braki 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-braki-3a09
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-braki-the-nameless-god-of-madness-wicked-god-b120b597]] - narrower source section: 《 Braki 》 / The Nameless God of Madness (Wicked God)
 

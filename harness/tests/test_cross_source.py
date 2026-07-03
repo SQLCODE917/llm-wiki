@@ -8,6 +8,7 @@ from forge.context import ContextManager, NoCompact
 
 from llmwiki.cli import _build_parser
 from llmwiki.config import WikiPaths
+from llmwiki.domain.ledger.atom_addressing import technical_atom_anchor_id
 from llmwiki.domain.ledger.canonical_concept import (
     CanonicalConceptPage,
     ConceptAtomBlock,
@@ -134,6 +135,7 @@ def test_canonical_concept_page_pairs_atom_context_and_payload() -> None:
 
     assert "##### Technical atom 1" in rendered.page_body
     assert rendered.page_body.index("**Context:**") < rendered.page_body.index("**Atom:**")
+    assert technical_atom_anchor_id("atom-code") in rendered.page_body
     assert "**Atom:** _(alpha.pdf (source-range-code))_" in rendered.page_body
 
 

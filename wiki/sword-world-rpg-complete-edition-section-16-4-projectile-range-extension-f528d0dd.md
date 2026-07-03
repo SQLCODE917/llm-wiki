@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-16-4-projectile-range-extension-f528d0dd
 page_kind: source
 page_family: section-reference
-summary: 16.4 Projectile Range Extension: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 16.4 Projectile Range Extension: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-4-projectile-range-extension-f528d0dd@eaa973d8c305700541b689c0e97e4057
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-4-projectile-range-extension-f528d0dd@d20a788d06310e9a64addea7e8f8e509
 ---
 
 # 16.4 Projectile Range Extension
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-16-4-proje
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-16-4-projectile-range-extension-long-distance-modifiers-0bca5328]] - narrower source section: 16.4 Projectile Range Extension / Long Distance Modifiers
 - [[sword-world-rpg-complete-edition-section-16-4-projectile-range-extension-maximum-range-defa1196]] - narrower source section: 16.4 Projectile Range Extension / Maximum Range
@@ -34,11 +36,3 @@ From [[sword-world-rpg-complete-edition]].
 ### 16.4 Projectile Range Extension / Maximum Range
 
 - There's no such thing as a bow with infinite reach. Each throwing or shooting weapon has a maximum range , and they will never hit a target farther away than this ( Table 16-4: Maximum Ranges ). _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11451))_
-
-## Technical atoms
-
-### Technical frame 1: 16.4 Projectile Range Extension
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-11447))_
-
-> If you follow these optional rules, you can extend these even further.

@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-and-also-naming-functions-function-declaration-caveats-34-01e57464
 page_kind: source
+page_family: section-reference
 summary: And also: / Naming Functions / function declaration caveats 34: 13 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-and-also-naming-functions-function-declaration-caveats-34-01e57464@6b72f0361bf1ffcc696c7b6a4b253023
+projection_coverage: section-javascriptallonge-section-and-also-naming-functions-function-declaration-caveats-34-01e57464@42f932ecc08e2a3c6532dd8c03f13069
 ---
 
 # And also: / Naming Functions / function declaration caveats 34
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-and-also-naming-functions
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-and-also-naming-functions-37c9be8d]] - broader source section: And also: / Naming Functions
 
@@ -38,6 +41,8 @@ From [[javascriptallonge]].
 > Function declarations are not supposed to occur inside of blocks. The big trouble with expressions like this is that they may work just fine in your test environment but work a different way in production. Or it may work one way today and a different way when the JavaScript engine is updated, say with a new optimization.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00550))_
+
+<a id="atom-technical-atom-8efe555506c14cf1"></a>
 
 ```
 (function (camelCase) {
@@ -64,6 +69,8 @@ return "Fizz" + "Buzz";
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00551))_
 
+<a id="atom-technical-atom-8524e5547711bd2a"></a>
+
 > Or it may work one way today and a different way when the JavaScript engine is updated, say with a new optimization.
 
 ### Technical frame 3: And also: / Naming Functions / function declaration caveats 34
@@ -73,6 +80,8 @@ return "Fizz" + "Buzz";
 > The parentheses make this an expression, not a function declaration.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00553))_
+
+<a id="atom-technical-atom-29b2a5bf49007ce5"></a>
 
 ```
 function trueDat () { return true }

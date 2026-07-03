@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: 《 Physical Ability 》: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-physical-ability-c8f215da@22478446fed0adc56d62ea0edd318e47
+projection_coverage: section-sword-world-rpg-complete-edition-section-physical-ability-c8f215da@294cf51ab56d00ec1ee320939e7586f8
 ---
 
 # 《 Physical Ability 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-physical-a
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-physical-ability-weapon-enhancement-4d0c4ec3]] - narrower source section: 《 Physical Ability 》 / 《 Weapon Enhancement 》
 

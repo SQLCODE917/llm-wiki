@@ -92,20 +92,22 @@ def test_section_pages_roll_up_descendants_and_link_repeated_topic_contexts() ->
     )
 
 
-def test_section_pages_build_table_identity_once(monkeypatch) -> None:
-    calls = 0
+def test_section_pages_delegate_technical_atom_selection(monkeypatch) -> None:
+    calls: list[str] = []
 
-    def fake_table_identity_names_by_atom_id(
-        ledger: ClaimLedger, structure: DocumentStructure
-    ) -> dict[str, frozenset[str]]:
-        nonlocal calls
-        calls += 1
-        return {}
+    def fake_atoms_for_section_entries(
+        ledger: ClaimLedger,
+        entries: tuple[LedgerEntry, ...],
+        structure: DocumentStructure,
+        node: StructureNode,
+    ) -> tuple[object, ...]:
+        calls.append(node.structure_node_id)
+        return ()
 
     monkeypatch.setattr(
         section_pages,
-        "table_identity_names_by_atom_id",
-        fake_table_identity_names_by_atom_id,
+        "atoms_for_section_entries",
+        fake_atoms_for_section_entries,
     )
 
     pages = build_section_pages(
@@ -119,7 +121,7 @@ def test_section_pages_build_table_identity_once(monkeypatch) -> None:
         today="2026-06-27",
     )
 
-    assert calls == 1
+    assert calls == ["chapter", "combat-sheet", "magic-sheet"]
     assert len(pages) == 3
 
 

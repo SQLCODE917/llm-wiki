@@ -1,12 +1,13 @@
 ---
 page_id: javascriptallonge-discussing
 page_kind: concept
+page_family: topic-concept
 summary: Discussing: 4 statement(s) and 4 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-discussing@d13792cf9408737f0831b1a4408604f7
+projection_coverage: topic-javascriptallonge-discussing@83bd82c3b6e4f75737239f40be68297b
 ---
 
 # Discussing
@@ -42,6 +43,8 @@ What [[javascriptallonge]] covers about discussing:
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00629))_
 
+<a id="atom-technical-atom-aeb7942534341524"></a>
+
 ```
 const row = function () {
 return mapWith(
@@ -61,6 +64,8 @@ row(3)
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01441))_
 
+<a id="atom-technical-atom-b020d8626cf2b008"></a>
+
 ```
 const squaresOf = mapWith(n => n * n);
 squaresOf([1, 2, 3, 4, 5])
@@ -74,6 +79,8 @@ squaresOf([1, 2, 3, 4, 5])
 > This is accomplished with our own collections by returning a brand new iterator every time we call [Symbol.iterator] , and ensuring that our iterators start at the beginning and work forward.
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01580))_
+
+<a id="atom-technical-atom-0d14fd4d91090b51"></a>
 
 ```
 const abc = ["a", "b", "c"];
@@ -101,6 +108,8 @@ c
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-01589))_
 
+<a id="atom-technical-atom-54c71ac655b9bf50"></a>
+
 ```
 const mapWith = (fn, collection) =>
 ({
@@ -118,6 +127,8 @@ return ({done, value: done ? undefined : fn(value)});
 
 
 ## Related pages
+
+### Shared technical atoms
 
 - [[javascriptallonge-idea]] - shared statements and technical atoms: Idea shares source evidence from And also: / Magic Names / magic names and fat arrows: 44 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the t ... [truncated]; Idea shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (3 shared statement(s), 3 shared atom(s))
 - [[javascriptallonge-purpose]] - shared statements and technical atoms: Purpose shares source evidence from And also: / Magic Names / magic names and fat arrows: 44 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the t ... [truncated]; Purpose shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (3 shared statement(s), 3 shared atom(s))

@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-ecmascript-6-has-three-major-groups-of-features-forewords-to-the-first-edition-michael-fogus-9049a54c
 page_kind: source
+page_family: section-reference
 summary: ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus: 16 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-ecmascript-6-has-three-major-groups-of-features-forewords-to-the-first-edition-michael-fogus-9049a54c@47d5c5cb0bc9ea4775d3089214306d06
+projection_coverage: section-javascriptallonge-section-ecmascript-6-has-three-major-groups-of-features-forewords-to-the-first-edition-michael-fogus-9049a54c@ef028bc2f7469cdd160e663c525a9e97
 ---
 
 # ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-ecmascript-6-has-three-ma
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-ecmascript-6-has-three-major-groups-of-features-forewords-to-the-first-edition-bad64bc9]] - broader source section: ECMAScript 6 has three major groups of features: / Forewords to the First Edition
 

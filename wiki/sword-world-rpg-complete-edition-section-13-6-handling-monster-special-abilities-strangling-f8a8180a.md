@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-strangling-f8a8180a
 page_kind: source
 page_family: section-reference
-summary: 13.6 Handling Monster Special Abilities / 《 Strangling 》: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 13.6 Handling Monster Special Abilities / 《 Strangling 》: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-strangling-f8a8180a@01e938c119ac5de8472ddf81693f3552
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-strangling-f8a8180a@ab28b04fdab9e94b7850a57bbc557947
 ---
 
 # 13.6 Handling Monster Special Abilities / 《 Strangling 》
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handl
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-22341d2d]] - broader source section: 13.6 Handling Monster Special Abilities
 
@@ -26,15 +28,3 @@ From [[sword-world-rpg-complete-edition]].
 - While being strangled, a character suffers a -4 penalty to evasion and is normally unable to make sound. Depending on the monster, the penalty may be smaller, or it might be possible to still make sound, but if this is the case it'll be specified in the description . Unless otherwise noted, the evasion penalty is 4 and magic is also considered not possible. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09851))_
 - If an attack with this ability is successful, then in subsequent rounds, the character will remain strangled, and the only thing he or she can do is try to escape. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09849))_
 - Unless otherwise noted, the evasion penalty is 4 and magic is also considered not possible. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09851))_
-
-## Technical atoms
-
-### Technical frame 1: 13.6 Handling Monster Special Abilities / 《 Strangling 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09851))_
-
-> While being strangled, a character suffers a -4 penalty to evasion and is normally unable to make sound. Depending on the monster, the penalty may be smaller, or it might be possible to still make sound, but if this is the case it'll be specified in the description . Unless otherwise noted, the evasion penalty is 4 and magic is also considered not possible.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09850))_
-
-> If you succeed, you can break free, but if you fail, you'll automatically suffer damage at the end of the round.

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-3-6d32210f
 page_kind: source
 page_family: section-reference
-summary: Chapter 3:: 88 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 3:: 88 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-6d32210f@14bdbebd9c95ac27d6355a979bd34c0b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-6d32210f@74893a4de9ff33610d0b1ff6f3210941
 ---
 
 # Chapter 3:
@@ -17,13 +17,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-section-chapter-3-action-announcements-71ec41a7]] - narrower source section: Chapter 3: / Action Announcements
+### Source structure
+
 - [[sword-world-rpg-complete-edition-section-chapter-3-3-1-1-order-of-action-announcements-7b9a8dc5]] - narrower source section: Chapter 3: / 3.1.1 Order of Action Announcements
 - [[sword-world-rpg-complete-edition-section-chapter-3-3-1-2-player-action-announcements-b10493a2]] - narrower source section: Chapter 3: / 3.1.2 Player Action Announcements
 - [[sword-world-rpg-complete-edition-section-chapter-3-3-1-3-npc-and-monster-action-announcements-0f1f8fa3]] - narrower source section: Chapter 3: / 3.1.3 NPC and Monster Action Announcements
+- [[sword-world-rpg-complete-edition-section-chapter-3-3-2-1-delaying-an-action-30273104]] - narrower source section: Chapter 3: / 3.2.1 Delaying an Action
 - [[sword-world-rpg-complete-edition-section-chapter-3-3-2-action-order-91231f10]] - narrower source section: Chapter 3: / 3.2 Action Order
 - [[sword-world-rpg-complete-edition-section-chapter-3-3-3-action-canceling-b3932e7e]] - narrower source section: Chapter 3: / 3.3 Action Canceling
-- [[sword-world-rpg-complete-edition-section-chapter-3-3-2-1-delaying-an-action-30273104]] - narrower source section: Chapter 3: / 3.2.1 Delaying an Action
 - [[sword-world-rpg-complete-edition-section-chapter-3-movement-and-actions-d724a2ed]] - narrower source section: Chapter 3: / Movement and Actions
 
 ## Statements by subsection
@@ -102,176 +103,24 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical frame 1: Chapter 3: / 3.1.1 Order of Action Announcements
+### Technical atom 1
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01294))_
-
-> If there are three or more groups instead of two, the order of action announcements is determined in the same way. The groups with the higher intelligence can decide on their actions later than the others.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01292))_
-
-> If a settlement cannot be reached, the game master gets to announce their group's actions first (NPCs and monsters) and then the players follow.
-
-### Technical frame 2: Chapter 3: / 3.1.1 Order of Action Announcements
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01294))_
-
-> If there are three or more groups instead of two, the order of action announcements is determined in the same way. The groups with the higher intelligence can decide on their actions later than the others.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01293))_
-
-> The order in which action announcements are made within the same group (e.g., a1, a2, a3 within group A) may be determined freely and can also be changed from round to round.
-
-### Technical frame 3: Chapter 3: / 3.1.1 Order of Action Announcements
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01294))_
-
-> If there are three or more groups instead of two, the order of action announcements is determined in the same way. The groups with the higher intelligence can decide on their actions later than the others.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01295))_
-
-> In an action announcement, you cannot declare something impossible.
-
-### Technical frame 4: Chapter 3: / 3.1.2 Player Action Announcements
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01298))_
-
-> Instead of attack with my weapon , they should say attack the rightmost goblin with my sword .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01297))_
-
-> A player must be specific when announcing their action.
-
-### Technical frame 5: Chapter 3: / 3.1.3 NPC and Monster Action Announcements
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01305))_
-
-> Of course, if a character has a wealth of knowledge, or if they're an advanced spellcaster, they might know such things. If it's something the character should know, the game master should tell you when they announce the action.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01304))_
-
-> You may only declare, I'm preparing to cast a spell , and not give out the specific name of the spell.
-
-### Technical frame 6: Chapter 3: / 3.1.3 NPC and Monster Action Announcements
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01304))_
-
-> You may only declare, I'm preparing to cast a spell , and not give out the specific name of the spell. This is the difference in position between the players and the game master. The game master, as the person who manages the game, must know the actions of all the characters and monsters that appear. However, the players should only act from their characters' point of view. So, if a character cannot predict something, the player cannot know it either. When you see it for the first time, you won'
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01305))_
-
-> If it's something the character should know, the game master should tell you when they announce the action.
-
-### Technical frame 7: Chapter 3: / 3.2 Action Order
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01316))_
-
-> Ducard II is fighting a goblin. He has an agility of 12. On the other hand, the goblin's agility is 13, better than Ducard
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01314))_
-
-> For convenience, they are resolved in order, but even if you're attacked by an enemy of the same agility and fall down, you can still perform your intended actions.
-
-### Technical frame 8: Chapter 3: / 3.2 Action Order
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01320))_
-
-> Suppose that, as in the first example, IIDash is still hit badly enough to fall down as a result of the goblin's attack check. However, IIDash's action order = agility is the same as the goblin's, so he would've been slashing at the goblin at the same time . In other words,
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01319))_
-
-> Suppose that Ducard II has an agility of 13, which is equal to that of a goblin (let's call him IIDash from now on, since he is a bit faster). In this case, both attacks are considered to be carried out simultaneously. During the course of the game, each attack check is made in the order of goblin → IIDash (or vice versa). Otherwise, it would be difficult to progress the game.
-
-### Technical frame 9: Chapter 3: / 3.3 Action Canceling
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01327))_
-
-> The choice is basically this: either continue with the announced action or cancel it.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01326))_
-
-> Just because a companion has knocked down an enemy in front of you does not mean that you can attack a different enemy.
-
-### Technical frame 10: Chapter 3: / 3.2.1 Delaying an Action
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01336))_
-
-> In such a case, a character may lower their action order to 0 . In other words, they will act only at the very end of the round.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01335))_
-
-> For example, suppose you know that a fellow wizard can use magic to increase the attack power of your sword. But what if your agility is higher than theirs? The support magic will be applied after you swing your sword, and the magic will be wasted.
-
-### Technical frame 11: Chapter 3: / 3.2.1 Delaying an Action
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01338))_
-
-> In this case, an intended attack on an enemy that is about to withdraw can be changed to another target that you're engaged with.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01337))_
-
-> If you want to delay an action, you must mention it in the action announcement phase, along with the action you intend to take.
-
-### Technical frame 12: Chapter 3: / 3.2.1 Delaying an Action
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01340))_
-
-> If your agility is higher than that of the enemy who is trying to withdraw, you can attack them before they escape. However, even at this time, it' s still acceptable to switch attack targets. As we'll see later, if all the enemies you're engaged with attempt to withdraw (flee), even if they have high agility, you can still
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01339))_
-
-> If the enemy that's trying to withdraw has a higher agility than you, you must switch to a different target, because according to your action order, the enemy will have escaped.
-
-### Technical frame 13: Chapter 3: / 3.2.1 Delaying an Action
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01339))_
-
-> If the enemy that's trying to withdraw has a higher agility than you, you must switch to a different target, because according to your action order, the enemy will have escaped. At this time, an attacker can choose any new target to switch to (from among those they're engaged with).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01340))_
-
-> If your agility is higher than that of the enemy who is trying to withdraw, you can attack them before they escape.
-
-### Technical atom 14
+<a id="atom-technical-atom-922dcdf214dfc1a2"></a>
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01344))_
 
-| entry | content |
-| --- | --- |
-| 3 | 4 Movement and Actions |
-| 1 | round lasts 10 seconds . Therefore, a character can also move during this time. However, when movement is made, actions are restricted. You cannot wield weapons or cast spells while running at full speed. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
+```text
 Movement and Actions
 3.4 Movement and Actions
 1 round lasts 10 seconds . Therefore, a character can also move during this time. However,  when movement is made, actions are restricted. You cannot wield weapons or cast spells while running at full speed.
 ```
 
-</details>
-
-### Technical atom 15
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04906))_
+<details>
+<summary>Parsed table preview (needs review)</summary>
 
 | entry | content |
 | --- | --- |
-| 6 | 1 Precautions When Using Skills The abilities associated with these skills, including the thief skill , are mostly determined by success rolls. If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target |
-| 6 | 2 |
-| 6 | 2 Thief Skill |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-Precautions When Using Skills
-6.1 Precautions When Using Skills
-The  abilities  associated  with  these skills, including the thief skill , are mostly determined by success rolls.
-If the rules for determining the target score  or  difficulty  are  clearly  indicated, the  game  master  should  follow  those rules,  otherwise  the  game  master  must follow the rules under 9.1: Setting Target
-6.2
-6.2 Thief Skill
-```
+| 3 | 4 Movement and Actions |
+| 1 | round lasts 10 seconds. Therefore, a character can also move during this time. However, when movement is made, actions are restricted. You cannot wield weapons or cast spells while running at full speed. |
 
 </details>

@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-a-rich-aroma-basic-numbers-663a3fb7
 page_kind: source
-summary: A Rich Aroma: Basic Numbers: 34 source-backed entries and 9 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: A Rich Aroma: Basic Numbers: 33 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-a-rich-aroma-basic-numbers-663a3fb7@ff2943c5b3c6b0a6ec45057315a16657
+projection_coverage: section-javascriptallonge-section-a-rich-aroma-basic-numbers-663a3fb7@5e45dd0af39d6637ca4e6f3a9d13154d
 ---
 
 # A Rich Aroma: Basic Numbers
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-a-rich-aroma-basic-number
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-a-rich-aroma-basic-numbers-floating-ebe9399e]] - narrower source section: A Rich Aroma: Basic Numbers / floating
 - [[javascriptallonge-section-a-rich-aroma-basic-numbers-operations-on-numbers-57cbae24]] - narrower source section: A Rich Aroma: Basic Numbers / operations on numbers
@@ -47,120 +50,23 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-### Technical frame 1: A Rich Aroma: Basic Numbers
+### Technical atom 1
 
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00141))_
-
-> In computer science, a literal is a notation for representing a fixed value in source code. Almost all programming languages have notations for atomic values such as integers, floating-point numbers, and strings, and usually for booleans and characters; some also have notations for elements of enumerated types and compound values such as arrays, records, and objects. An anonymous function is a literal for the function type.Wikipedia 12
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00139))_
-
-> [Figure] (p.24)
-
-### Technical frame 2: A Rich Aroma: Basic Numbers
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00145))_
-
-> For example, the largest integer JavaScript can safely 14 handle is 9007199254740991 , or 2 '53' - 1 . Like most programming languages, JavaScript does not allow us to use commas to separate groups of digits.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00144))_
-
-> The machine's representation of a number almost never lines up perfectly with our understanding of how a number behaves, and thus there will be places where the computer's behaviour surprises us if we don't know a little about what it's doing 'under the hood.'
-
-### Technical frame 3: A Rich Aroma: Basic Numbers / floating
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00155))_
-
-> But as a rule, if you need to work with real numbers, you should have more than a nodding acquaintance with the IEEE Standard for Floating-Point Arithmetic 15 . Professional programmers almost never use floating point numbers to represent monetary amounts. For example, '$43.21' will nearly always be presented as two numbers: 43 for dollars and 21 for cents, not 43.21 . In this book, we need not think about such details, but outside of this book, we must.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00150))_
-
-```
-1.0
-//=> 1
-1.0 + 1.0
-//=> 2
-1.0 + 1.0 + 1.0
-//=> 3
-```
-
-### Technical frame 4: A Rich Aroma: Basic Numbers / floating
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00155))_
-
-> But as a rule, if you need to work with real numbers, you should have more than a nodding acquaintance with the IEEE Standard for Floating-Point Arithmetic 15 . Professional programmers almost never use floating point numbers to represent monetary amounts. For example, '$43.21' will nearly always be presented as two numbers: 43 for dollars and 21 for cents, not 43.21 . In this book, we need not think about such details, but outside of this book, we must.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00153))_
-
-```
-0.1
-//=> 0.1
-0.1 + 0.1
-//=> 0.2
-0.1 + 0.1 + 0.1
-//=> 0.30000000000000004
-```
-
-### Technical frame 5: A Rich Aroma: Basic Numbers / floating
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00155))_
-
-> But as a rule, if you need to work with real numbers, you should have more than a nodding acquaintance with the IEEE Standard for Floating-Point Arithmetic 15 . Professional programmers almost never use floating point numbers to represent monetary amounts. For example, '$43.21' will nearly always be presented as two numbers: 43 for dollars and 21 for cents, not 43.21 . In this book, we need not think about such details, but outside of this book, we must.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00154))_
-
-> This kind of 'inexactitude' can be ignored when performing calculations that have an acceptable deviation. For example, when centering some text on a page, as long as the difference between what you might calculate longhand and JavaScript's calculation is less than a pixel, there is no observable error.
-
-### Technical frame 6: A Rich Aroma: Basic Numbers / floating
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00148))_
-
-> It's tempting to think we now have everything we need to do things like handle amounts of money, but as the late John Belushi would say, 'Nooooooooooooooooooooo.' A computer's internal representation for a floating point number is binary, while our literal number was in base ten. This makes no meaningful difference for integers, but it does for fractions, because some fractions base 10 do not have exact representations base 2.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00155))_
-
-> Professional programmers almost never use floating point numbers to represent monetary amounts.
-
-### Technical frame 7: A Rich Aroma: Basic Numbers / operations on numbers
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00160))_
-
-> JavaScript treats the expressions as if we had written (2 * 5) + 1 and 1 + (5 * 2) , because the * operator has a higher precedence than the + operator. JavaScript has many more operators. In a sense, they behave like little functions. If we write 1 + 2 , this is conceptually similar to writing plus(1, 2) (assuming we have a function that adds two numbers bound to the name plus , of course).
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00159))_
-
-```
-2 * 5 + 1
-//=> 11
-1 + 5 * 2
-//=> 11
-```
-
-### Technical frame 8: A Rich Aroma: Basic Numbers / operations on numbers
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00160))_
-
-> JavaScript treats the expressions as if we had written (2 * 5) + 1 and 1 + (5 * 2) , because the * operator has a higher precedence than the + operator. JavaScript has many more operators. In a sense, they behave like little functions. If we write 1 + 2 , this is conceptually similar to writing plus(1, 2) (assuming we have a function that adds two numbers bound to the name plus , of course).
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00163))_
-
-> [Figure] (p.27)
-
-### Technical atom 9
+<a id="atom-technical-atom-22beebdf7dbbbd52"></a>
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-00152))_
+
+```text
+13 http://en.wikipedia.org/wiki/Double-precision_floating-point_format
+14 Implementations of JavaScript are free to handle larger numbers. For example, if you type 9007199254740991 + 9007199254740991 into node.js , it will happily report that the answer is 18014398509481982 . But code that depends upon numbers larger than 9007199254740991 may not be reliable when moved to other implementations.
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
 
 | entry | content |
 | --- | --- |
 | 13 | http://en.wikipedia.org/wiki/Double-precision_floating-point_format |
-| 14 | Implementations of JavaScript are free to handle larger numbers. For example, if you type 9007199254740991 + 9007199254740991 into node.js , it will happily report that the answer is 18014398509481982 . But code that depends upon numbers larger than 9007199254740991 may not be reliable when moved to other implementations. |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-13 http://en.wikipedia.org/wiki/Double-precision_floating-point_format
-14 Implementations of JavaScript are free to handle larger numbers. For example, if you type 9007199254740991 + 9007199254740991 into node.js , it will happily report that the answer is 18014398509481982 . But code that depends upon numbers larger than 9007199254740991 may not be reliable when moved to other implementations.
-```
+| 14 | Implementations of JavaScript are free to handle larger numbers. For example, if you type 9007199254740991 + 9007199254740991 into node.js, it will happily report that the answer is 18014398509481982. But code that depends upon numbers larger than 9007199254740991 may not be reliable when moved to other implementations. |
 
 </details>

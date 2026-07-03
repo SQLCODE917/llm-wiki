@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-dryad-011283a1
 page_kind: source
 page_family: section-reference
-summary: [ Dryad ]: 15 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Dryad ]: 15 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-dryad-011283a1@cb5e100c7dc3afcfc632cdcc0ceaf32a
+projection_coverage: section-sword-world-rpg-complete-edition-section-dryad-011283a1@1e966b77d57ce55f16d67d0ecfdbdda5
 ---
 
 # [ Dryad ]
@@ -25,30 +25,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: [ Dryad ]
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07241, source-range-0b9dec90-07242, source-range-0b9dec90-07243, source-range-0b9dec90-07244, source-range-0b9dec90-07245, source-range-0b9dec90-07246, source-range-0b9dec90-07247, source-range-0b9dec90-07248))_
-
-> Monster Level=5
-
-> Rarity=12 (However, a shaman always knows)
-
-> Agility=19 Movement Speed=19
-
-> Number=One Frequency=Very Rare
-
-> Intellect=Human Reaction=Violent
-
-> Attack Points=Barehanded: 12 (5)
-
-> Strike Points=6
-
-> Evasion Points=14 (7) Defense Points=7 Life Points/Resistance=10/12 (5)
-
-### Technical frame 2: [ Dryad ]
-
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07253))_
 
 > To harm a dryad, it must be a magical or silver weapon.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-07252))_
+
+<a id="atom-technical-atom-26c8130859af1374"></a>
 
 > If magic cannot be cast on the target, the dryad will attack barehanded.

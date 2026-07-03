@@ -4,11 +4,11 @@ page_kind: source
 page_family: section-reference
 summary: Chapter 14: / 14.2 Adventure Treasure and Reward Amounts / 14.2.1 Negotiations With Adventurers: 12 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-2-adventure-treasure-and-reward-amounts-14-2-1-negotiations-with-adventurers-1b566606@5e4fb3aea6a5e3ba9fc1deeea2e57592
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-14-2-adventure-treasure-and-reward-amounts-14-2-1-negotiations-with-adventurers-1b566606@363fedf95e5ea2a00d907b6ce69ab94d
 ---
 
 # Chapter 14: / 14.2 Adventure Treasure and Reward Amounts / 14.2.1 Negotiations With Adventurers
@@ -16,6 +16,8 @@ projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14
 From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
+
+### Source structure
 
 - [[sword-world-rpg-complete-edition-section-chapter-14-14-2-adventure-treasure-and-reward-amounts-2b879303]] - broader source section: Chapter 14: / 14.2 Adventure Treasure and Reward Amounts
 

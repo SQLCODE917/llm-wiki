@@ -1,13 +1,14 @@
 ---
 page_id: javascriptallonge-section-the-golden-crema-appendices-and-afterwords-about-the-author-a9b179d5
 page_kind: source
-summary: The Golden Crema: Appendices and Afterwords / About The Author: 3 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+page_family: section-reference
+summary: The Golden Crema: Appendices and Afterwords / About The Author: 3 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-29
+updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-the-golden-crema-appendices-and-afterwords-about-the-author-a9b179d5@d9a791239cb93e0dcd11b9c0cd0dd235
+projection_coverage: section-javascriptallonge-section-the-golden-crema-appendices-and-afterwords-about-the-author-a9b179d5@25ecfa0ddc14c158e05cad9452ee98f6
 ---
 
 # The Golden Crema: Appendices and Afterwords / About The Author
@@ -15,6 +16,8 @@ projection_coverage: section-javascriptallonge-section-the-golden-crema-appendic
 From [[javascriptallonge]].
 
 ## Related pages
+
+### Source structure
 
 - [[javascriptallonge-section-the-golden-crema-appendices-and-afterwords-733effc6]] - broader source section: The Golden Crema: Appendices and Afterwords
 - [[javascriptallonge-section-the-golden-crema-appendices-and-afterwords-about-the-author-contact-851ee73d]] - narrower source section: The Golden Crema: Appendices and Afterwords / About The Author / contact
@@ -26,15 +29,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-### Technical frame 1: The Golden Crema: Appendices and Afterwords / About The Author / contact
+### Technical atom 1
 
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-02063))_
-
-> [Figure] (p.297)
-
-### Technical atom 2
+<a id="atom-technical-atom-7d9d6cce205bd849"></a>
 
 **Atom:** _(javascriptallonge.pdf (source-range-7239e085-02065))_
+
+```text
+221 http://github.com/raganwald
+223 http://braythwayt.com
+222 http://raganwald
+224 https://twitter.com/raganwald
+225 mailto:reg@braythwayt.com
+```
+
+<details>
+<summary>Parsed table preview (needs review)</summary>
 
 | entry | content |
 | --- | --- |
@@ -43,16 +53,5 @@ From [[javascriptallonge]].
 | 222 | http://raganwald |
 | 224 | https://twitter.com/raganwald |
 | 225 | mailto:reg@braythwayt.com |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-221 http://github.com/raganwald
-223 http://braythwayt.com
-222 http://raganwald
-224 https://twitter.com/raganwald
-225 mailto:reg@braythwayt.com
-```
 
 </details>

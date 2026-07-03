@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-damage-9e33ce2f
 page_kind: source
 page_family: section-reference
-summary: 《 Damage 》: 14 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 《 Damage 》: 14 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-damage-9e33ce2f@7cab6bfc16daf6326eee1d59ed95da04
+projection_coverage: section-sword-world-rpg-complete-edition-section-damage-9e33ce2f@ed5a9655ec1edea5a5e7152715f35e78
 ---
 
 # 《 Damage 》
@@ -17,9 +17,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Related pages
 
+### Topics
+
 - [[sword-world-rpg-complete-edition-damage]] - topic hub: opens the topic page for Damage
-- [[sword-world-rpg-complete-edition-section-4-5-2-determining-base-damage-strike-roll-0-damage-bd8aa671]] - same source heading: another source section with the same heading, 4.5.2 Determining Base Damage (Strike Roll) / 【 0 Damage! 】
+
+### Other
+
 - [[sword-world-rpg-complete-edition-section-10-5-attacks-against-the-sleeping-damage-f88e83a5]] - same source heading: another source section with the same heading, 10.5 Attacks Against the Sleeping / 《 Damage 》
+- [[sword-world-rpg-complete-edition-section-4-5-2-determining-base-damage-strike-roll-0-damage-bd8aa671]] - same source heading: another source section with the same heading, 4.5.2 Determining Base Damage (Strike Roll) / 【 0 Damage! 】
 
 ## Statements
 
@@ -39,6 +44,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02639))_
 
+<a id="atom-technical-atom-e2235a5c9f5c7262"></a>
+
 > If you roll 10 or greater during the strike roll, a critical will occur and deal even more damage, same as in weapon combat.
 
 ### Technical frame 2: 《 Damage 》
@@ -48,6 +55,8 @@ From [[sword-world-rpg-complete-edition]].
 > In either case, the caster's magic power can be added as bonus damage to the result of the strike roll. Also, the target's adventurer level (or the monster's monster level) is subtracted from the damage. However, there's an exception if you roll double ones during your strike roll. In this case, no matter how much magic power your character (monster) has, they cannot deal damage to the target at all.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02640))_
+
+<a id="atom-technical-atom-a49949642c391645"></a>
 
 > Most magic of the damage type can still deal damage even if it's resisted by the target, only with a reduced effect.
 
@@ -59,6 +68,8 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02641))_
 
+<a id="atom-technical-atom-9dd59dc05434b592"></a>
+
 > In this case, no matter how much magic power your character (monster) has, they cannot deal damage to the target at all.
 
 ### Technical frame 4: 《 Damage 》
@@ -69,34 +80,6 @@ From [[sword-world-rpg-complete-edition]].
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02642))_
 
+<a id="atom-technical-atom-da5ecb48e55ebfb5"></a>
+
 > Also, even magic of the damage type may in rare cases take no effect if resisted.
-
-### Technical atom 5
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02188))_
-
-> If the base damage dealt by Ducard II is 4, 18 , or 14 , respectively, the final damage he could deal to the goblin would be:
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02189))_
-
-| entry | content |
-| --- | --- |
-| 4 | (base damage) +4 (bonus damage) -4 (goblin's defense points) = 4 |
-| 18 | (base damage) +4 (bonus damage) |
-| 4 | (goblin's defense points) = 18 |
-| 14 | (base damage) +4 (bonus damage) -4 (goblin's defense points) = 14 If final damage is 0 or negative , it means that no damage was dealt. The attack was prevented by thick skin or hard scales. |
-| 4 | 6 |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-4 (base damage) +4 (bonus damage) -4 (goblin's defense points) = 4
-18 (base damage) +4 (bonus damage)
--4 (goblin's defense points) = 18
-14 (base damage) +4 (bonus damage) -4 (goblin's defense points) = 14
-If  final  damage  is 0  or  negative ,  it means  that no  damage was  dealt.  The attack  was  prevented  by  thick  skin  or hard scales.
-4.6
-```
-
-</details>

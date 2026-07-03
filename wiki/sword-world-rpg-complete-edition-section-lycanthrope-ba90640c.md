@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-lycanthrope-ba90640c
 page_kind: source
 page_family: section-reference
-summary: [ Lycanthrope ]: 46 source-backed entries and 38 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Lycanthrope ]: 46 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-30
+updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lycanthrope-ba90640c@c4551f27077118b0112543fe95929083
+projection_coverage: section-sword-world-rpg-complete-edition-section-lycanthrope-ba90640c@b3bb488d6199f83aea74e0dca87a5b76
 ---
 
 # [ Lycanthrope ]
@@ -26,13 +26,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical frame 1: [ Lycanthrope ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09566))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09568))_
 
-> Shapeshifting is affected by the waxing and waning of the moon. Compare the number of days since the new moon with 2D + 3 at nighttime or 2D + 9 in the daytime. When the number of days is 16 or more, compare it with 30 - the number of days (the waxing and waning of the moon in Forcelia is one cycle every 30 days). When the score is equal to or less than this, the lycanthrope will always enter beast form (the lycanthrope will always enter beast form on nights when the moon is full = 15 days).
+> Lycanthropes have the ability to summon and control other beasts of their kind in their surroundings (wolves for werewolves, bears for werebears, etc.). Their habitat depends on the type of beast they shapeshift into. There may be some hiding their true identity and living among humans in towns and villages, but when their time comes, they're likely to take odd actions to hide their transformations.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09565))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09566))_
 
-> When in human form, they may acquire and use various skills, including magic, just like an adventurer.
+<a id="atom-technical-atom-f67be717215f07df"></a>
+
+> When the score is equal to or less than this, the lycanthrope will always enter beast form (the lycanthrope will always enter beast form on nights when the moon is full = 15 days).
 
 ### Technical frame 2: [ Lycanthrope ]
 
@@ -40,114 +42,8 @@ From [[sword-world-rpg-complete-edition]].
 
 > Lycanthropes have the ability to summon and control other beasts of their kind in their surroundings (wolves for werewolves, bears for werebears, etc.). Their habitat depends on the type of beast they shapeshift into. There may be some hiding their true identity and living among humans in towns and villages, but when their time comes, they're likely to take odd actions to hide their transformations.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09566))_
-
-> When the score is equal to or less than this, the lycanthrope will always enter beast form (the lycanthrope will always enter beast form on nights when the moon is full = 15 days).
-
-### Technical frame 3: [ Lycanthrope ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09568))_
-
-> Lycanthropes have the ability to summon and control other beasts of their kind in their surroundings (wolves for werewolves, bears for werebears, etc.). Their habitat depends on the type of beast they shapeshift into. There may be some hiding their true identity and living among humans in towns and villages, but when their time comes, they're likely to take odd actions to hide their transformations.
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09567))_
 
+<a id="atom-technical-atom-4c0f985068f43ba5"></a>
+
 > Even when it's not, a lycanthrope can transform into a beast at their own will.
-
-### Technical frame 4: [ Lycanthrope ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09569))_
-
-> Lycanthropy is a type of infectious illness, and those who are wounded by a lycanthrope in beast form are at risk of becoming a lycanthrope of the same species. See p. 166 for details on this illness.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09572, source-range-0b9dec90-09573, source-range-0b9dec90-09574))_
-
-> Habitat=Human villages, forests
-
-> Languages=Regional
-
-> Perception=Five senses (Illumination)
-
-### Technical frame 5: [ Lycanthrope ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09569))_
-
-> Lycanthropy is a type of infectious illness, and those who are wounded by a lycanthrope in beast form are at risk of becoming a lycanthrope of the same species. See p. 166 for details on this illness.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09577, source-range-0b9dec90-09578, source-range-0b9dec90-09579, source-range-0b9dec90-09580, source-range-0b9dec90-09581, source-range-0b9dec90-09582, source-range-0b9dec90-09583, source-range-0b9dec90-09584, source-range-0b9dec90-09586, source-range-0b9dec90-09587, source-range-0b9dec90-09588, source-range-0b9dec90-09589, source-range-0b9dec90-09590, source-range-0b9dec90-09591))_
-
-> Monster Level=5
-
-> Rarity=10
-
-> Agility=14
-
-> Movement Speed=21
-
-> Number=One to several Frequency=Rare
-
-> Intellect=Animal/Human
-
-> Reaction=Adversarial
-
-> Attack Points=Fangs:12 (5)/Claw:13 (6)/
-
-> Attack Points=Fangs:12 (5)/Strangle:14 (7)
-
-> Strike Points=15/13
-
-> Evasion Points=13 (6) Defense Points=9
-
-> Life Points/Resistance=26/15 (8)
-
-> Mental Points/Resistance=14/13 (6)
-
-> Special Abilities=Normal weapon immunity
-
-### Technical frame 6: [ Lycanthrope ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09594, source-range-0b9dec90-09595, source-range-0b9dec90-09597))_
-
-> Habitat=Human villages, forests
-
-> Languages=Regional
-
-> Perception=Five senses (Illumination)
-
-### Technical frame 7: [ Lycanthrope ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09600, source-range-0b9dec90-09601, source-range-0b9dec90-09602, source-range-0b9dec90-09603, source-range-0b9dec90-09604, source-range-0b9dec90-09605, source-range-0b9dec90-09606, source-range-0b9dec90-09607, source-range-0b9dec90-09609, source-range-0b9dec90-09610, source-range-0b9dec90-09611, source-range-0b9dec90-09612))_
-
-> Monster Level=5
-
-> Rarity=11
-
-> Agility=21
-
-> Movement Speed=25
-
-> Number=One to several Frequency=Rare
-
-> Intellect=Animal/Human
-
-> Reaction=Adversarial
-
-> Attack Points=Fangs:12 (5)/Claw:13 (6)/
-
-> Evasion Points=14 (7) Defense Points=9
-
-> Life Points/Resistance=24/15 (8)
-
-> Mental Points/Resistance=14/13 (6)
-
-> Special Abilities=Normal weapon immunity
-
-### Technical frame 8: [ Lycanthrope ]
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-09615, source-range-0b9dec90-09616, source-range-0b9dec90-09617))_
-
-> Habitat=Human villages, forests
-
-> Languages=Regional
-
-> Perception=Five senses (Illumination)
