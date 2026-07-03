@@ -2,61 +2,37 @@
 page_id: javascriptallonge-recipe-values-are-expressions
 page_kind: recipe
 page_family: recipe-pattern
-summary: values are expressions: reusable source-backed pattern with 11 statement(s) and 3 technical atom(s) from raw/javascriptallonge.pdf.
+summary: values are expressions: synthesized recipe pattern from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-07-02
 domain: javascriptallonge
 category_path: recipes/javascriptallonge
 source_id: javascriptallonge.pdf
 aliases: values-are-expressions
-projection_coverage: recipe-javascriptallonge-recipe-values-are-expressions@3b32545d0327b626b7fa57dca3bcb2ad
+projection_coverage: page-synthesis-javascriptallonge-recipe-values-are-expressions@401719133d0506ecbd67118007318d6d
 ---
 
 # values are expressions
 
-From [[javascriptallonge]].
-
 ## Pattern
 
-- Use the source-backed pattern described in [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-are-expressions-439d7791]].
-- Evidence roles: decision, constraint, explanation, structured-state, example.
+- All values are expressions. _(raw/javascriptallonge.pdf (source-range-7239e085-00101))_
+- Yup you hand over a cup infused through partially caramelized sugar. _(raw/javascriptallonge.pdf (source-range-7239e085-00101))_
 
 ## Applicability And Rationale
 
-- All values are expressions. _(javascriptallonge.pdf (source-range-7239e085-00101))_
-- Yup, you hand over a cup with some coffee infused through partially caramelized sugar. _(javascriptallonge.pdf (source-range-7239e085-00101))_
-- Thus, a café Cubano is an expression (you can use it to place an order) and a value (you get it back from the barista). _(javascriptallonge.pdf (source-range-7239e085-00101))_
-- You say, 'I want one of these.' The barista is no fool, she gives it straight back to you, and you get exactly what you want. _(javascriptallonge.pdf (source-range-7239e085-00101))_
-- The answer is, this is both an expression and a value. _(javascriptallonge.pdf (source-range-7239e085-00105))_
-- Instead of handing over the finished coffee, we can hand over the ingredients. _(javascriptallonge.pdf (source-range-7239e085-00107))_
+- Thus a café Cubano is an expression (you can use it. _(raw/javascriptallonge.pdf (source-range-7239e085-00101))_
+- You say 'I want one of is no fool she gives it straight. _(raw/javascriptallonge.pdf (source-range-7239e085-00101))_
+- The answer is this is both an expression and. _(raw/javascriptallonge.pdf (source-range-7239e085-00105))_
+- Instead of handing over the finished coffee we can hand over the. _(raw/javascriptallonge.pdf (source-range-7239e085-00107))_
+- Astute readers will realize we're omitting something. _(raw/javascriptallonge.pdf (source-range-7239e085-00108))_
+- So boiling water plus ground coffee is an expression but it isn't a. _(raw/javascriptallonge.pdf (source-range-7239e085-00109))_
 
 ## Technical Atoms
 
-### Atom 1: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-00106)_
-
-```
-42
-//=> 42
-```
-
-### Atom 2: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-00111)_
-
-```
-"JavaScript" + " " + "Allonge"
-//=> "JavaScript Allonge"
-```
-
-### Atom 3: `worked-example`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-00113)_
-
-```
-Nowwesee that 'strings' are values, and you can make an expression out of strings and an operator + . Since strings are values, they are also expressions by themselves. But strings with operators are not values, they are expressions. Now we know what was missing with our 'coffee grounds plus hot water' example. The coffee grounds were a value, the boiling hot water was a value, and the 'plus' operator between them made the whole thing an expression that was not a value.
-```
+- Values are expressions includes a code block at #atom-technical-atom-51c8d8435d99be90. _(raw/javascriptallonge.pdf (source-range-7239e085-00106))_
+- Values are expressions includes a code block at #atom-technical-atom-c910755e76e840ed. _(raw/javascriptallonge.pdf (source-range-7239e085-00111))_
+- Values are expressions includes a worked example at #atom-technical-atom-1c4d430b061ffde1. _(raw/javascriptallonge.pdf (source-range-7239e085-00113))_
 
 ## Source Trail
 

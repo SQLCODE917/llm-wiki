@@ -2,171 +2,46 @@
 page_id: javascriptallonge-gathering
 page_kind: concept
 page_family: topic-concept
-summary: Gathering: 4 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
+summary: Gathering: synthesized source-backed topic page from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-gathering@ca4d41d2e1688182e0b28fa311bfdd1e
+projection_coverage: page-synthesis-javascriptallonge-gathering@a2604c703a4be1deea7ba2e46e68b249
 ---
 
 # Gathering
 
-What [[javascriptallonge]] covers about gathering:
+## Source-Backed View
 
-## Statements
+- However the process of soliciting feedback do ) receiving feedback and then ultimately. _(raw/javascriptallonge.pdf (source-range-7239e085-00085))_
+- ECMAScript 2015 only permits gathering parameters end of the parameter list. _(raw/javascriptallonge.pdf (source-range-7239e085-00723))_
+- Gathering arguments for functions is one of the ways JavaScript can. _(raw/javascriptallonge.pdf (source-range-7239e085-00741))_
+- The gathering operation [a b ThreeToFive] is slower but 'safer. _(raw/javascriptallonge.pdf (source-range-7239e085-01150))_
 
-### ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus
+## Technical Evidence
 
-- The act of writing is an iterative process with (very often) tight revision loops. However, the process of soliciting feedback, gathering responses, sending out copies, waiting for people to actually read it (if they ever do), receiving feedback and then ultimately making sense out of how to use it takes weeks and sometimes months. On more than one occasion I've found myself attempting to reify feedback with content that either no longer existed or was changed beyond recognition. However, with the Leanpub model the read-feedback-change process is extremely efficient, leaving in its wake a quality book that continues to get better as others likewise read and comment into infinitude. _(javascriptallonge.pdf (source-range-7239e085-00085))_
-
-### Recipes with Basic Functions / Left-Variadic Functions
-
-- ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do? _(javascriptallonge.pdf (source-range-7239e085-00723))_
-
-### Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring
-
-- Gathering arguments for functions is one of the ways JavaScript can destructure arrays. Another way is when assigning variables, like this: _(javascriptallonge.pdf (source-range-7239e085-00741))_
-
-### Composing and Decomposing Data / Mutation / mutation and data structures
-
-- The gathering operation [a, b, ...ThreeToFive] is slower, but 'safer. ' _(javascriptallonge.pdf (source-range-7239e085-01150))_
-
-
-## Technical atoms
-
-### Technical frame 1: Recipes with Basic Functions / Left-Variadic Functions
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00719))_
-
-> This can be useful when writing certain kinds of destructuring algorithms. For example, we might want to have a function that builds some kind of team record. It accepts a coach, a captain, and an arbitrary number of players. Easy in ECMAScript 2015:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00718))_
-
-<a id="atom-technical-atom-2cf7e32d0c999fe7"></a>
-
-```
-const abccc = (a, b, ...c) => {
-console.log(a);
-console.log(b);
-console.log(c);
-};
-abccc(1, 2, 3, 4, 5)
-1
-2
-[3,4,5]
-```
-
-### Technical frame 2: Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00749))_
-
-> With leftGather , we have to supply the length of the array we wish to use as the result, and it gathers excess arguments into it from the left, just like leftVariadic gathers excess parameters for a function.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00742))_
-
-<a id="atom-technical-atom-eb3ab57c56a2f7dd"></a>
-
-```
-const [first, ...butFirst] = ['why', 'hello', 'there', 'little', 'droid'];
-first
-//=> 'why'
-butFirst
-//=> ["hello","there","little","droid"]
-```
-
-### Technical frame 3: Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00749))_
-
-> With leftGather , we have to supply the length of the array we wish to use as the result, and it gathers excess arguments into it from the left, just like leftVariadic gathers excess parameters for a function.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00748))_
-
-<a id="atom-technical-atom-fcb9efdca6bc6168"></a>
-
-```
-const leftGather = (outputArrayLength) => {
-return function (inputArray) {
-return [inputArray.slice(0, inputArray.length - outputArrayLength + 1)].conc\
-at(
-inputArray.slice(inputArray.length - outputArrayLength + 1)
-)
-}
-};
-const [butLast, last] = leftGather(2)(['why', 'hello', 'there', 'little', 'droid\
-']);
-butLast
-//=> ['why', 'hello', 'there', 'little']
-last
-//=> 'droid'
-```
-
-### Technical frame 4: Composing and Decomposing Data / Arrays and Destructuring Arguments / destructuring parameters
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00880))_
-
-> Gathering works with parameters! This is very useful indeed, and we'll see more of it in a moment. 59
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00879))_
-
-<a id="atom-technical-atom-1e73af49742977f4"></a>
-
-```
-const numbers = (...nums) => nums;
-numbers(1, 2, 3, 4, 5)
-//=> [1,2,3,4,5]
-const headAndTail = (head, ...tail) => [head, tail];
-headAndTail(1, 2, 3, 4, 5)
-//=> [1,[2,3,4,5]]
-```
-
-### Technical atom 5
-
-<a id="atom-technical-atom-178bb2d7be7ec9fc"></a>
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00856))_
-
-> Alas, the ... notation does not provide a universal patten-matching capability. For example, we cannot write
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00857))_
-
-```text
-57 https://en.wikipedia.org/wiki/CAR_and_CDR
-58 Kyle Simpson is the author of You Don't Know JS, available here
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| entry | content |
-| --- | --- |
-| 57 | https://en.wikipedia.org/wiki/CAR_and_CDR |
-| 58 | Kyle Simpson is the author of You Don't Know JS, available here |
-
-</details>
-
+- Gathering uses a code block technical record at #atom-technical-atom-2cf7e32d0c999fe7. _(raw/javascriptallonge.pdf (source-range-7239e085-00718))_
+- Gathering uses a code block technical record at #atom-technical-atom-eb3ab57c56a2f7dd. _(raw/javascriptallonge.pdf (source-range-7239e085-00742))_
+- Gathering uses a code block technical record at #atom-technical-atom-fcb9efdca6bc6168. _(raw/javascriptallonge.pdf (source-range-7239e085-00748))_
+- Gathering uses a code block technical record at #atom-technical-atom-1e73af49742977f4. _(raw/javascriptallonge.pdf (source-range-7239e085-00879))_
 
 ## Related pages
 
-### Source structure
+- [[javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-gathering-91ed37bf]] - source section
+- [[javascriptallonge-argument]] - shared statements and technical atoms
+- [[javascriptallonge-function]] - shared statements and technical atoms
+- [[javascriptallonge-parameter]] - shared statements and technical atoms
+- [[javascriptallonge-javascript]] - shared technical atoms
+- [[javascriptallonge-data]] - shared technical atoms
+- [[javascriptallonge-copy]] - shared statements
+- [[javascriptallonge-ecmascript]] - shared statements
+- [[javascriptallonge-operation]] - shared statements
 
-- [[javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-gathering-91ed37bf]] - source section: Composing and Decomposing Data / Arrays and Destructuring Arguments / gathering shares source evidence from Composing and Decomposing Data / Arrays and Destructuring Arguments / gathering: Sometimes we need to extract arrays from arrays. Here is the most common pattern: Extracting the head and gathering everything but the head from an array:; Composing and Decomposing Data / Arrays and Destructuring Arguments / gathering shares technical record from Composing and Decomposing Data / Arrays and Destructuring Arguments / gathering: const [car, ...cdr] = [1, 2, 3, 4, 5]; car //=> 1 cdr //=> [2, 3, 4, 5] (3 shared statement(s), 4 shared atom(s))
+## Source Trail
 
-### Shared technical atoms
-
-- [[javascriptallonge-argument]] - shared statements and technical atoms: Argument shares source evidence from Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring: Gathering arguments for functions is one of the ways JavaScript can destructure arrays. Another way is when assigning variables, like this:; Argument shares technical record from Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring: const [first, ...butFirst] = ['why', 'hello', 'there', 'little', 'droid']; first //=> 'why' butFirst //=> ["hello","there","little","droid"] (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring: Gathering arguments for functions is one of the ways JavaScript can destructure arrays. Another way is when assigning variables, like this:; Function shares technical record from Recipes with Basic Functions / Left-Variadic Functions: const abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); }; abccc(1, 2, 3, 4, 5) 1 2 [3,4,5] (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-parameter]] - shared statements and technical atoms: Parameter shares source evidence from Recipes with Basic Functions / Left-Variadic Functions: ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do?; Parameter shares technical record from Recipes with Basic Functions / Left-Variadic Functions: const abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); }; abccc(1, 2, 3, 4, 5) 1 2 [3,4,5] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from Recipes with Basic Functions / Left-Variadic Functions: const abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); }; abccc(1, 2, 3, 4, 5) 1 2 [3,4,5] (2 shared atom(s))
-- [[javascriptallonge-data]] - shared technical atoms: Data shares technical table: 57 https://en.wikipedia.org/wiki/CAR_and_CDR 58 Kyle Simpson is the author of You Don't Know JS, available here (1 shared atom(s))
-
-### Shared claims
-
-- [[javascriptallonge-copy]] - shared statements: Copy shares source evidence from ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus: The act of writing is an iterative process with (very often) tight revision loops. However, the process of soliciting feedback, gathering responses, sending out copi ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-ecmascript]] - shared statements: Ecmascript shares source evidence from Recipes with Basic Functions / Left-Variadic Functions: ECMAScript 2015 only permits gathering parameters from the end of the parameter list. Not the beginning. What to do? (1 shared statement(s))
-- [[javascriptallonge-operation]] - shared statements: Operation shares source evidence from Composing and Decomposing Data / Mutation / mutation and data structures: The gathering operation [a, b, ...ThreeToFive] is slower, but 'safer. ' (1 shared statement(s))
-
-## Source
-
-- [[javascriptallonge]]
+- Source manifest: [[javascriptallonge]]
+- Source section: [[javascriptallonge-section-ecmascript-6-has-three-major-groups-of-features-forewords-to-the-first-edition-michael-fogus-9049a54c]]
+- Source section: [[javascriptallonge-section-recipes-with-basic-functions-left-variadic-functions-d00f2bc0]]
+- Source section: [[javascriptallonge-section-recipes-with-basic-functions-left-variadic-functions-left-variadic-destructuring-81ee3116]]
+- Source section: [[javascriptallonge-section-composing-and-decomposing-data-mutation-mutation-and-data-structures-5828e27e]]

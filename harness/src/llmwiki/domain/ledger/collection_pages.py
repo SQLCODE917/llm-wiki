@@ -32,6 +32,8 @@ class CollectionMember:
     section_page_id: str
     entry_count: int
     atom_count: int
+    entry_ids: tuple[str, ...] = ()
+    atom_ids: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -174,6 +176,8 @@ def _members(
                 section_page_id=section_page_id(source_page_id, structure, child),
                 entry_count=len(entries),
                 atom_count=len(atoms),
+                entry_ids=tuple(entry.ledger_entry_id for entry in entries),
+                atom_ids=tuple(atom.technical_atom_id for atom in atoms),
             )
         )
     return tuple(members)

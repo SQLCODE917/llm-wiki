@@ -2,73 +2,34 @@
 page_id: javascriptallonge-function-return-value
 page_kind: concept
 page_family: topic-concept
-summary: Function Return Value: 2 statement(s) and 2 atom(s) from raw/javascriptallonge.pdf.
+summary: Function Return Value: synthesized source-backed topic page from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-function-return-value@ce27146269e60f9469633a5757b31ffe
+projection_coverage: page-synthesis-javascriptallonge-function-return-value@5b38a8d6e68351180ad6c937f1ae0e30
 ---
 
 # Function Return Value
 
-What [[javascriptallonge]] covers about function return value:
+## Source-Backed View
 
-## Statements
+- Well the last one's a doozy is this We can make a function. _(raw/javascriptallonge.pdf (source-range-7239e085-00190))_
+- Functions can return the value of evaluating another. _(raw/javascriptallonge.pdf (source-range-7239e085-00196))_
 
-### The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions
+## Technical Evidence
 
-- Well, the last one's a doozy, but still, the general idea is this: We can make a function that returns a value by putting the value to the right of the arrow. _(javascriptallonge.pdf (source-range-7239e085-00190))_
-
-- Yes we can! Functions can return the value of evaluating another function. _(javascriptallonge.pdf (source-range-7239e085-00196))_
-
-
-## Technical atoms
-
-### Technical frame 1: The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00193))_
-
-> Yes we can. We can put any expression to the right of the arrow. For example, (() => 0)() is an expression. Can we put it to the right of an arrow, like this: () => (() => 0)() ?
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00192))_
-
-<a id="atom-technical-atom-7673f47cd782cb73"></a>
-
-```
-(() => 1 + 1)()
-//=> 2
-(() => "Hello, " + "JavaScript")()
-//=> "Hello, JavaScript"
-(() => Infinity * Infinity)()
-//=> Infinity
-```
-
-### Technical frame 2: The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00196))_
-
-> Yes we can! Functions can return the value of evaluating another function.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00197))_
-
-<a id="atom-technical-atom-89adc0ecfdaf7a9b"></a>
-
-> When dealing with expressions that have a lot of the same characters (like parentheses), you may find it helpful to format the code to make things stand out.
-
+- Function Return Value uses a code block technical record at #atom-technical-atom-7673f47cd782cb73. _(raw/javascriptallonge.pdf (source-range-7239e085-00192))_
+- Function Return Value uses a rule technical record at #atom-technical-atom-89adc0ecfdaf7a9b. _(raw/javascriptallonge.pdf (source-range-7239e085-00197))_
 
 ## Related pages
 
-### Shared technical atoms
+- [[javascriptallonge-idea]] - shared statements and technical atoms
+- [[javascriptallonge-function]] - broader topic
+- [[javascriptallonge-return]] - broader topic
+- [[javascriptallonge-value]] - broader topic
 
-- [[javascriptallonge-idea]] - shared statements and technical atoms: Idea shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: Well, the last one's a doozy, but still, the general idea is this: We can make a function that returns a value by putting the value to the right of the arrow.; Idea shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared statement(s), 1 shared atom(s))
+## Source Trail
 
-### Topics
-
-- [[javascriptallonge-function]] - broader topic: Function shares source evidence from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: Yes we can! Functions can return the value of evaluating another function.; Function shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-return]] - broader topic: Return shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (2 shared atom(s))
-- [[javascriptallonge-value]] - broader topic: Value shares technical record from The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: (() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity (2 shared atom(s))
-
-## Source
-
-- [[javascriptallonge]]
+- Source manifest: [[javascriptallonge]]
+- Source section: [[javascriptallonge-section-the-first-sip-basic-functions-as-little-as-possible-about-functions-but-no-less-functions-that-r-953101e3]]

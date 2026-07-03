@@ -2,29 +2,24 @@
 page_id: javascriptallonge-collection-or-even-6221c0af
 page_kind: source
 page_family: collection-page
-summary: Or even:: 3 collection member(s) from raw/javascriptallonge.pdf.
+summary: Or even:: synthesized collection page from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/collections
 source_id: javascriptallonge.pdf
-projection_coverage: collection-javascriptallonge-collection-or-even-6221c0af@47fe4d96e75aad0a63f1bc790a92619e
+projection_coverage: page-synthesis-javascriptallonge-collection-or-even-6221c0af@acbb35c0146f9d427f2384d65397a08b
 ---
 
 # Or even:
 
-From [[javascriptallonge]].
-Broader source section: [[javascriptallonge-section-or-even-6221c0af]].
-
 ## Collection Signals
 
-- sibling structure
-- structured technical atoms
+- Or even: / the simplest possible block is a collection member with 15 statement(s) and 27 technical atom(s). _(raw/javascriptallonge.pdf (source-range-7239e085-00210))_
+- Or even: / void is a collection member with 4 statement(s) and 4 technical atom(s). _(raw/javascriptallonge.pdf (source-range-7239e085-00226))_
+- Or even: / back on the block is a collection member with 9 statement(s) and 38 technical atom(s). _(raw/javascriptallonge.pdf (source-range-7239e085-00236))_
 
-## Members
+## Source Trail
 
-| Member | Source section | Evidence |
-| --- | --- | --- |
-| Or even: / the simplest possible block | [[javascriptallonge-section-or-even-the-simplest-possible-block-528c8472]] | 15 statement(s), 27 atom(s) |
-| Or even: / void | [[javascriptallonge-section-or-even-void-8a19170f]] | 4 statement(s), 4 atom(s) |
-| Or even: / back on the block | [[javascriptallonge-section-or-even-back-on-the-block-b9587c98]] | 9 statement(s), 38 atom(s) |
+- Source manifest: [[javascriptallonge]]
+- Source section: [[javascriptallonge-section-or-even-6221c0af]]

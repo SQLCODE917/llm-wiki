@@ -8,7 +8,7 @@ updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-ability-bonuses-b2f8cd3d@4f67737d7810c7b39aa5a41321b0677d
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-4-character-creation-1-4-9-filling-out-the-character-sheet-ability-bonuses-b2f8cd3d@4553c44355dcd4caf7131f487a4e66c4
 ---
 
 # 1.4 Character Creation / 1.4.9 Filling Out the Character Sheet / [ ⑤ Ability Bonuses ]
@@ -23,7 +23,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Topics
 
-- [[sword-world-rpg-complete-edition-ability-bonuse]] - topic hub: opens the topic page for Ability Bonuse
+- [[sword-world-rpg-complete-edition-ability-bonus]] - topic hub: opens the topic page for Ability Bonus
 
 ### Other
 

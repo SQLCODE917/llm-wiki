@@ -2,35 +2,33 @@
 page_id: sword-world-rpg-complete-edition-action
 page_kind: concept
 page_family: topic-concept
-summary: Action: 5 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Action: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-action@ab609ce14612735b457d12c699e3c703
+projection_coverage: page-synthesis-sword-world-rpg-complete-edition-action@249d99edc5e9a09ff8c25e465155e7cb
 ---
 
 # Action
 
-What [[sword-world-rpg-complete-edition]] covers about action:
+## Source-Backed View
 
-## Statements
+- Each has different distances that can be traveled. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01345))_
+- Below are some guidelines on how movement works. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01346))_
+- For any other actions please use common sense based on the time. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01346))_
+- They do not prevent other actions at all. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01349))_
+- The following actions can be taken at any time regardless. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01349))_
 
-### Chapter 3: / Movement and Actions
+## Technical Evidence
 
-- Characters have three options for movement: full movement , normal movement , or stand still . Each has different distances that can be traveled and different restrictions on actions that can be taken. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01345))_
-
-- Below are some guidelines on how movement works and which actions can be taken. For any other actions, please use common sense based on the time frame of 1 round = 10 seconds. Final decisions are to be made by the game master. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01346))_
-
-- The following actions can be taken at any time , regardless of the movement method. They do not prevent other actions at all. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01349))_
-
+- Action uses a table technical record at #atom-technical-atom-922dcdf214dfc1a2. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01344))_
 
 ## Related pages
 
-### Shared technical atoms
+- [[sword-world-rpg-complete-edition-movement]] - shared statements and technical atoms
 
-- [[sword-world-rpg-complete-edition-movement]] - shared statements and technical atoms: Movement shares source evidence from Chapter 3: / Movement and Actions: Below are some guidelines on how movement works and which actions can be taken. For any other actions, please use common sense based on the time frame of 1 round = 1 ... [truncated]; Movement shares technical table: Movement and Actions 3.4 Movement and Actions 1 round lasts 10 seconds . Therefore, a character can also move during this time. However,  when movement is made, acti ... [truncated] (2 shared statement(s), 1 shared atom(s))
+## Source Trail
 
-## Source
-
-- [[sword-world-rpg-complete-edition]]
+- Source manifest: [[sword-world-rpg-complete-edition]]
+- Source section: [[sword-world-rpg-complete-edition-section-chapter-3-movement-and-actions-d724a2ed]]

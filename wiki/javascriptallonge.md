@@ -2,13 +2,13 @@
 page_id: javascriptallonge
 page_kind: source
 page_family: source-manifest
-summary: Claim-ledger projection (coding): 1931 usable entries, 654 technical atoms, 471 needs-review, 440 linked page(s); write decision write-with-review-work.
+summary: Claim-ledger projection (coding): 1931 usable entries, 654 technical atoms, 471 needs-review, 421 linked page(s); write decision write-with-review-work.
 sources: raw/javascriptallonge.pdf
 updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources
 source_id: javascriptallonge.pdf
-projection_coverage: projection-coverage-88c18964e22f1c5c@b17547493a5d13f2
+projection_coverage: projection-coverage-f550583b94c61d96@dde42b9723babf70
 ---
 
 # A Pull of the Lever: Prefaces
@@ -16,75 +16,65 @@ projection_coverage: projection-coverage-88c18964e22f1c5c@b17547493a5d13f2
 ## Source
 
 - Raw source: `raw/javascriptallonge.pdf`
-- Claim-ledger projection (coding): 1931 usable entries, 654 technical atoms, 471 needs-review, 440 linked page(s); write decision write-with-review-work.
+- Claim-ledger projection (coding): 1931 usable entries, 654 technical atoms, 471 needs-review, 421 linked page(s); write decision write-with-review-work.
 
 ## Page Families
 
 - broad-topic: 30 page(s) - broad concept overview pages
-- collection-page: 29 page(s) - list and catalog pages
-- recipe-pattern: 110 page(s) - reusable example pattern pages
+- collection-page: 19 page(s) - list and catalog pages
+- recipe-pattern: 104 page(s) - reusable example pattern pages
 - section-reference: 205 page(s) - source-order reference pages
 - source-manifest: 1 page(s) - source entry point
-- topic-concept: 66 page(s) - focused concept pages
+- topic-concept: 63 page(s) - focused concept pages
 
 ## Collections
 
-- [[javascriptallonge-collection-the-first-sip-basic-functions-as-little-as-possible-about-functions-but-no-less-0ed59777]] - collection: The first sip: Basic Functions / As Little As Possible About Functions, But No Less: 4 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-or-even-6221c0af]] - collection: Or even:: 3 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-and-also-3f50274e]] - collection: And also:: 9 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-and-also-ah-i-d-like-to-have-an-argument-please-22-f00edd2f]] - collection: And also: / Ah. I'd Like to Have an Argument, Please. 22: 3 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-and-also-closures-and-scope-d1679ec0]] - collection: And also: / Closures and Scope: 4 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-and-also-that-constant-coffee-craving-7d1b2fd1]] - collection: And also: / That Constant Coffee Craving: 6 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-and-also-naming-functions-37c9be8d]] - collection: And also: / Naming Functions: 3 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-and-also-combinators-and-function-decorators-c48f42db]] - collection: And also: / Combinators and Function Decorators: 3 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-recipes-with-basic-functions-c9137465]] - collection: Recipes with Basic Functions: 6 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-recipes-with-basic-functions-left-variadic-functions-d00f2bc0]] - collection: Recipes with Basic Functions / Left-Variadic Functions: 3 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-picking-the-bean-choice-and-truthiness-d45c6f89]] - collection: Picking the Bean: Choice and Truthiness: 4 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-composing-and-decomposing-data-6f7d7870]] - collection: Composing and Decomposing Data: 7 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-composing-and-decomposing-data-arrays-and-destructuring-arguments-c1f61fb6]] - collection: Composing and Decomposing Data / Arrays and Destructuring Arguments: 7 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-composing-and-decomposing-data-self-similarity-f4d3bc3f]] - collection: Composing and Decomposing Data / Self-Similarity: 3 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-composing-and-decomposing-data-tail-calls-and-default-arguments-e2a54ac1]] - collection: Composing and Decomposing Data / Tail Calls (and Default Arguments): 5 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-composing-and-decomposing-data-garbage-garbage-everywhere-83116d81]] - collection: Composing and Decomposing Data / Garbage, Garbage Everywhere: 3 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-composing-and-decomposing-data-plain-old-javascript-objects-bce9b969]] - collection: Composing and Decomposing Data / Plain Old JavaScript Objects: 3 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-yes-consider-this-variation-b8b28d41]] - collection: Yes. Consider this variation:: 4 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-yes-consider-this-variation-copy-on-write-c844813d]] - collection: Yes. Consider this variation: / Copy on Write: 3 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-yes-consider-this-variation-functional-iterators-53aff37b]] - collection: Yes. Consider this variation: / Functional Iterators: 3 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-yes-consider-this-variation-making-data-out-of-functions-f095c99b]] - collection: Yes. Consider this variation: / Making Data Out Of Functions: 6 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-recipes-with-data-178f0a89]] - collection: Recipes with Data: 4 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-like-this-66cb3108]] - collection: Like this:: 6 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-we-ll-keep-it-simple-1104ef0d]] - collection: We'll keep it simple:: 9 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-we-ll-keep-it-simple-lazy-and-eager-collections-b2c43c7f]] - collection: We'll keep it simple: / Lazy and Eager Collections: 3 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-we-ll-keep-it-simple-interlude-the-carpenter-interviews-for-a-job-196a6679]] - collection: We'll keep it simple: / Interlude: The Carpenter Interviews for a Job: 4 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-we-get-2605e005]] - collection: We get:: 4 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-we-get-basic-operations-on-iterables-50055b98]] - collection: We get: / Basic Operations on Iterables: 4 collection member(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-the-golden-crema-appendices-and-afterwords-733effc6]] - collection: The Golden Crema: Appendices and Afterwords: 4 collection member(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-the-first-sip-basic-functions-as-little-as-possible-about-functions-but-no-less-0ed59777]] - collection: The first sip: Basic Functions / As Little As Possible About Functions, But No Less: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-or-even-6221c0af]] - collection: Or even:: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-and-also-naming-functions-37c9be8d]] - collection: And also: / Naming Functions: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-and-also-combinators-and-function-decorators-c48f42db]] - collection: And also: / Combinators and Function Decorators: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-recipes-with-basic-functions-c9137465]] - collection: Recipes with Basic Functions: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-recipes-with-basic-functions-left-variadic-functions-d00f2bc0]] - collection: Recipes with Basic Functions / Left-Variadic Functions: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-picking-the-bean-choice-and-truthiness-d45c6f89]] - collection: Picking the Bean: Choice and Truthiness: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-composing-and-decomposing-data-6f7d7870]] - collection: Composing and Decomposing Data: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-composing-and-decomposing-data-arrays-and-destructuring-arguments-c1f61fb6]] - collection: Composing and Decomposing Data / Arrays and Destructuring Arguments: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-composing-and-decomposing-data-self-similarity-f4d3bc3f]] - collection: Composing and Decomposing Data / Self-Similarity: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-composing-and-decomposing-data-tail-calls-and-default-arguments-e2a54ac1]] - collection: Composing and Decomposing Data / Tail Calls (and Default Arguments): synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-composing-and-decomposing-data-garbage-garbage-everywhere-83116d81]] - collection: Composing and Decomposing Data / Garbage, Garbage Everywhere: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-composing-and-decomposing-data-plain-old-javascript-objects-bce9b969]] - collection: Composing and Decomposing Data / Plain Old JavaScript Objects: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-like-this-66cb3108]] - collection: Like this:: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-we-ll-keep-it-simple-1104ef0d]] - collection: We'll keep it simple:: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-we-ll-keep-it-simple-lazy-and-eager-collections-b2c43c7f]] - collection: We'll keep it simple: / Lazy and Eager Collections: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-we-ll-keep-it-simple-interlude-the-carpenter-interviews-for-a-job-196a6679]] - collection: We'll keep it simple: / Interlude: The Carpenter Interviews for a Job: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-we-get-2605e005]] - collection: We get:: synthesized collection page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection-we-get-basic-operations-on-iterables-50055b98]] - collection: We get: / Basic Operations on Iterables: synthesized collection page from raw/javascriptallonge.pdf.
 
 ## Concept Entry Points
 
-- [[javascriptallonge-algorithm]] - concept: Algorithm: 6 statement(s) and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-allong]] - concept: Allong: 11 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-alway]] - concept: Alway: 8 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-argument]] - concept: Argument: 13 statement(s) and 26 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-array]] - concept: Array: 13 statement(s) and 14 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-behaviour]] - concept: Behaviour: 5 statement(s) and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-bind]] - concept: Bind: 8 statement(s) and 28 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-binding]] - concept: Binding: 3 statement(s) and 8 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-block]] - concept: Block: 9 statement(s) and 18 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-carpenter]] - concept: Carpenter: 8 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-closure]] - concept: Closure: 5 statement(s) and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-code]] - concept: Code: 14 statement(s) and 13 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-coffee]] - concept: Coffee: 5 statement(s) and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection]] - concept: Collection: 7 statement(s) and 10 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-combinator]] - concept: Combinator: 5 statement(s) and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-const]] - concept: Const: 5 statement(s) and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-copy]] - concept: Copy: 8 statement(s) and 11 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-copy-write]] - concept: Copy on Write: 18 statement(s) and 9 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-data]] - concept: Data: 5 statement(s) and 8 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-declaration]] - concept: Declaration: 4 statement(s) and 8 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-default]] - concept: Default: 2 statement(s) and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-destructuring]] - concept: Destructuring: 1 statement(s) and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-discussing]] - concept: Discussing: 4 statement(s) and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-doesn-t-work-because-parseint]] - concept: Doesn'T Work Because Parseint: 1 statement(s) and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-algorithm]] - concept: Algorithm: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-allong]] - concept: Allong: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-argument]] - concept: Argument: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-array]] - concept: Array: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-behaviour]] - concept: Behaviour: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-bind]] - concept: Bind: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-binding]] - concept: Binding: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-block]] - concept: Block: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-carpenter]] - concept: Carpenter: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-closure]] - concept: Closure: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-code]] - concept: Code: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-coffee]] - concept: Coffee: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-collection]] - concept: Collection: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-combinator]] - concept: Combinator: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-const]] - concept: Const: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-copy]] - concept: Copy: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-copy-write]] - concept: Copy on Write: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-data]] - concept: Data: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-declaration]] - concept: Declaration: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-destructuring]] - concept: Destructuring: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-discussing]] - concept: Discussing: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-doesn-t-work-because-parseint]] - concept: Doesn'T Work Because Parseint: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-eager-collection]] - concept: Eager Collection: synthesized source-backed topic page from raw/javascriptallonge.pdf.
+- [[javascriptallonge-ecmascript]] - concept: Ecmascript: synthesized source-backed topic page from raw/javascriptallonge.pdf.
 
 ## Source Section Index
 

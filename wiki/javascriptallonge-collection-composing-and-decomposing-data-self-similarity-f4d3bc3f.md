@@ -2,29 +2,24 @@
 page_id: javascriptallonge-collection-composing-and-decomposing-data-self-similarity-f4d3bc3f
 page_kind: source
 page_family: collection-page
-summary: Composing and Decomposing Data / Self-Similarity: 3 collection member(s) from raw/javascriptallonge.pdf.
+summary: Composing and Decomposing Data / Self-Similarity: synthesized collection page from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/collections
 source_id: javascriptallonge.pdf
-projection_coverage: collection-javascriptallonge-collection-composing-and-decomposing-data-self-similarity-f4d3bc3f@f9532083ada64be3fc9ef82762b69fff
+projection_coverage: page-synthesis-javascriptallonge-collection-composing-and-decomposing-data-self-similarity-f4d3bc3f@f596d10daca65ab126f0350cb67c1acc
 ---
 
 # Composing and Decomposing Data / Self-Similarity
 
-From [[javascriptallonge]].
-Broader source section: [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-f4d3bc3f]].
-
 ## Collection Signals
 
-- sibling structure
-- structured technical atoms
+- Composing and Decomposing Data / Self-Similarity / linear recursion is a collection member with 15 statement(s) and 6 technical atom(s). _(raw/javascriptallonge.pdf (source-range-7239e085-00910))_
+- Composing and Decomposing Data / Self-Similarity / mapping is a collection member with 4 statement(s) and 11 technical atom(s). _(raw/javascriptallonge.pdf (source-range-7239e085-00925))_
+- Composing and Decomposing Data / Self-Similarity / folding is a collection member with 3 statement(s) and 20 technical atom(s). _(raw/javascriptallonge.pdf (source-range-7239e085-00936))_
 
-## Members
+## Source Trail
 
-| Member | Source section | Evidence |
-| --- | --- | --- |
-| Composing and Decomposing Data / Self-Similarity / linear recursion | [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-linear-recursion-4c0b6367]] | 15 statement(s), 6 atom(s) |
-| Composing and Decomposing Data / Self-Similarity / mapping | [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-mapping-d1acef31]] | 4 statement(s), 11 atom(s) |
-| Composing and Decomposing Data / Self-Similarity / folding | [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-folding-6afcd1fe]] | 3 statement(s), 20 atom(s) |
+- Source manifest: [[javascriptallonge]]
+- Source section: [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-f4d3bc3f]]

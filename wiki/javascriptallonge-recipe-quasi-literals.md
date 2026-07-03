@@ -2,72 +2,35 @@
 page_id: javascriptallonge-recipe-quasi-literals
 page_kind: recipe
 page_family: recipe-pattern
-summary: quasi-literals: reusable source-backed pattern with 5 statement(s) and 4 technical atom(s) from raw/javascriptallonge.pdf.
+summary: quasi-literals: synthesized recipe pattern from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-07-02
 domain: javascriptallonge
 category_path: recipes/javascriptallonge
 source_id: javascriptallonge.pdf
 aliases: quasi-literals
-projection_coverage: recipe-javascriptallonge-recipe-quasi-literals@48694591d94dc5304788e8673c640686
+projection_coverage: page-synthesis-javascriptallonge-recipe-quasi-literals@7b7abb6ceab1e9ec873e86ca86c2a2c9
 ---
 
 # quasi-literals
 
-From [[javascriptallonge]].
-
 ## Pattern
 
-- Use the source-backed pattern described in [[javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-quasi-literals-a1ab40aa]].
-- Evidence roles: decision, constraint, procedure, explanation, example.
+- Quasi-literal strings are denoted with back quotes and most. _(raw/javascriptallonge.pdf (source-range-7239e085-01505))_
+- The expression is evaluated and the result is coerced. _(raw/javascriptallonge.pdf (source-range-7239e085-01507))_
 
 ## Applicability And Rationale
 
-- Quasi-literal strings are denoted with back quotes, and most strings that can be expressed as literals have the exact same meaning as quasi-literals, e.g. _(javascriptallonge.pdf (source-range-7239e085-01505))_
-- The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string. _(javascriptallonge.pdf (source-range-7239e085-01507))_
-- A quasi-literal can contain an expression to be evaluated. _(javascriptallonge.pdf (source-range-7239e085-01507))_
-- Aquasi-literal is computationally equivalent to an expression using + . _(javascriptallonge.pdf (source-range-7239e085-01510))_
-- Quasi-literals are expressions that resemble their result. _(javascriptallonge.pdf (source-range-7239e085-01513))_
+- A quasi-literal can contain an expression to be evaluated. _(raw/javascriptallonge.pdf (source-range-7239e085-01507))_
+- Aquasi-literal is computationally equivalent to an expression using. _(raw/javascriptallonge.pdf (source-range-7239e085-01510))_
+- Quasi-literals are expressions that resemble their result. _(raw/javascriptallonge.pdf (source-range-7239e085-01513))_
 
 ## Technical Atoms
 
-### Atom 1: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-01506)_
-
-```
-`foobar`
-//=> 'foobar'
-`fizz` + `buzz`
-//=> 'fizzbuzz'
-```
-
-### Atom 2: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-01509)_
-
-```
-`A popular number for nerds is ${40 + 2}`
-//=> 'A popular number for nerds is 42'
-```
-
-### Atom 3: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-01512)_
-
-```
-'A popular number for nerds is ' + (40 + 2)
-//=> 'A popular number for nerds is 42'
-```
-
-### Atom 4: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-01514)_
-
-```
-'A popular number for nerds is' + (40 + 2)
-//=> 'A popular number for nerds is42'
-```
+- Quasi-literals includes a code block at #atom-technical-atom-d1c1badbce303be3. _(raw/javascriptallonge.pdf (source-range-7239e085-01506))_
+- Quasi-literals includes a code block at #atom-technical-atom-a2109321f385f002. _(raw/javascriptallonge.pdf (source-range-7239e085-01509))_
+- Quasi-literals includes a code block at #atom-technical-atom-53001ff2df5804aa. _(raw/javascriptallonge.pdf (source-range-7239e085-01512))_
+- Quasi-literals includes a code block at #atom-technical-atom-9826aa7ca28708d6. _(raw/javascriptallonge.pdf (source-range-7239e085-01514))_
 
 ## Source Trail
 

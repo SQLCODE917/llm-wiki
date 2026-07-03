@@ -35,6 +35,11 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `PageBodyContract` | `page_body_contract` |
 | `ResolvedPageBodyContract` | `resolved_page_body_contract` |
 | `PageBodyFinding` | `page_body_finding` |
+| `PageSynthesisPlan` | `page_synthesis_plan` |
+| `PageDraft` | `page_draft` |
+| `DraftClaim` | `draft_claim` |
+| `DraftEvidenceRef` | `draft_evidence_ref` |
+| `PageSynthesisFinding` | `page_synthesis_finding` |
 | `PageMetadata` | `page_metadata` |
 | `DomainFrontmatter` | `domain_frontmatter` |
 | `GeneratedWikiState` | `generated_wiki_state` |
@@ -137,6 +142,11 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | PageBodyContract | Exists | `llmwiki.domain.page_body_contracts`; owned by `Schema` |
 | ResolvedPageBodyContract | Exists | `llmwiki.domain.page_body_contracts`; bound to one `PlannedPageWrite` |
 | PageBodyFinding | Exists | `llmwiki.domain.page_body_contracts`; returned by body validation |
+| PageSynthesisPlan | Exists | `llmwiki.domain.ledger.page_synthesis`; selected evidence and outline for one generated projection page |
+| PageDraft | Exists | `llmwiki.domain.ledger.page_synthesis`; structured draft validated before markdown rendering |
+| DraftClaim | Exists | `llmwiki.domain.ledger.page_synthesis`; one factual sentence with selected evidence support |
+| DraftEvidenceRef | Exists | `llmwiki.domain.ledger.page_synthesis`; ledger, atom, or stable atom-anchor support reference |
+| PageSynthesisFinding | Exists | `llmwiki.domain.ledger.page_synthesis`; rejection or warning emitted by synthesis validation |
 | SourcePlanContractSelection | Exists | `llmwiki.domain.page_body_contracts`; selected through `SourcePlan` |
 | ClaimRoleTag | Exists | `llmwiki.domain.source_summary`; default vocabulary owned by `Schema` |
 | SourceClaim | Exists | `llmwiki.domain.source_summary`; built by `llmwiki.domain.source_claims` |

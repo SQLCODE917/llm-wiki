@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition
 page_kind: source
 page_family: source-manifest
-summary: Claim-ledger projection (history): 12343 usable entries, 4708 technical atoms, 1304 needs-review, 1275 linked page(s); write decision write-with-review-work.
+summary: Claim-ledger projection (history): 12343 usable entries, 4708 technical atoms, 1304 needs-review, 1267 linked page(s); write decision write-with-review-work.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: projection-coverage-cfd9a67911f18575@3ba3e690efc4395d
+projection_coverage: projection-coverage-46213e3296389018@e95d28b61a640c40
 ---
 
 # What is a Role-Playing Game (RPG)?
@@ -16,83 +16,83 @@ projection_coverage: projection-coverage-cfd9a67911f18575@3ba3e690efc4395d
 ## Source
 
 - Raw source: `raw/Sword World RPG - Complete Edition.pdf`
-- Claim-ledger projection (history): 12343 usable entries, 4708 technical atoms, 1304 needs-review, 1275 linked page(s); write decision write-with-review-work.
+- Claim-ledger projection (history): 12343 usable entries, 4708 technical atoms, 1304 needs-review, 1267 linked page(s); write decision write-with-review-work.
 
 ## Page Families
 
-- broad-topic: 27 page(s) - broad concept overview pages
+- broad-topic: 28 page(s) - broad concept overview pages
 - collection-page: 29 page(s) - list and catalog pages
 - procedure-guide: 5 page(s) - ordered task pages
 - section-reference: 1145 page(s) - source-order reference pages
 - source-manifest: 1 page(s) - source entry point
-- topic-concept: 69 page(s) - focused concept pages
+- topic-concept: 60 page(s) - focused concept pages
 
 ## Procedure Guides
 
-- [[sword-world-rpg-complete-edition-procedure-attacks-from-characters-against-characters]] - procedure: Complete Attacks From Characters Against Characters: 2 ordered step(s), 3 decision point(s), and 14 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-create-character]] - procedure: Create Character: 9 ordered step(s), 3 decision point(s), and 55 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-difficulty-checks]] - procedure: Complete Difficulty Checks: 3 ordered step(s), 4 decision point(s), and 7 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor]] - procedure: Complete Excellent Weapons and Armor: 4 ordered step(s), 4 decision point(s), and 14 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-unconscious-and-death-checks]] - procedure: Complete Unconscious and Death Checks: 4 ordered step(s), 4 decision point(s), and 9 table/formula/example reference(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-procedure-attacks-from-characters-against-characters]] - procedure: Attacks From Characters Against Characters: synthesized procedure guide from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-procedure-create-character]] - procedure: Create Character: synthesized procedure guide from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-procedure-difficulty-checks]] - procedure: Difficulty Checks: synthesized procedure guide from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor]] - procedure: Excellent Weapons and Armor: synthesized procedure guide from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-procedure-unconscious-and-death-checks]] - procedure: Unconscious and Death Checks: synthesized procedure guide from raw/Sword World RPG - Complete Edition.pdf.
 
 ## Collections
 
-- [[sword-world-rpg-complete-edition-collection-chapter-3-6d32210f]] - collection: Chapter 3:: 7 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-3-4-4-actions-you-can-take-while-standing-still-519dd7f4]] - collection: 3.4.4 Actions You Can Take While Standing Still: 11 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-5-1-12-ancient-magic-list-19f66f88]] - collection: 5.1.12 Ancient Magic List: 76 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-5-1-14-spirit-magic-list-55816c7f]] - collection: 5.1.14 Spirit Magic List: 50 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-5-1-17-special-holy-magic-list-b40a33a3]] - collection: 5.1.17 Special Holy Magic List: 13 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-6-644c319b]] - collection: Chapter 6:: 3 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-6-6-1-precautions-when-using-skills-82cdd945]] - collection: Chapter 6: / 6.1 Precautions When Using Skills: 13 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-6-6-3-ranger-skill-f81328c3]] - collection: Chapter 6: / 6.3 Ranger Skill: 8 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-7-22223c91]] - collection: Chapter 7:: 3 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-7-7-5-treatment-intelligence-8242b170]] - collection: Chapter 7: / 7.5 [ ② Treatment [Intelligence]]: 4 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-9-6031114c]] - collection: Chapter 9:: 3 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-10-5-attacks-against-the-sleeping-5adabf46]] - collection: 10.5 Attacks Against the Sleeping: 4 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-11-notes-on-magic-b7944607]] - collection: Chapter 11: Notes on Magic: 4 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-11-notes-on-magic-11-3-dragon-roar-magic-4a413d46]] - collection: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic: 20 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8]] - collection: Chapter 12: Various Checks / 12.1 Rules Regarding Language: 3 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-12-2-2-illnesses-b9c7f5f9]] - collection: 12.2.2 Illnesses: 17 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-1-types-of-monsters-1cd4c9c3]] - collection: 13.1 Types of Monsters: 3 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-2-1-humans-6e762209]] - collection: 13.2.1 《 Humans 》: 11 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-2-3-youma-cdc09e8d]] - collection: 13.2.3 Youma: 5 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] - collection: 13.2.6 Mythical Beasts and Magical Beasts: 33 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-2-11-daemons-underworld-creatures-5f686ba2]] - collection: 13.2.11 Daemons/Underworld Creatures: 5 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-2-12-humans-e4eada41]] - collection: 13.2.12 Humans: 3 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-6-handling-monster-special-abilities-22341d2d]] - collection: 13.6 Handling Monster Special Abilities: 22 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-14-b6f5d768]] - collection: Chapter 14:: 3 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-14-14-4-magical-item-list-e871a62e]] - collection: Chapter 14: / 14.4 Magical Item List: 93 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-16-16-2-weapon-and-armor-modifiers-ad25522c]] - collection: Chapter 16: / 16.2 Weapon and Armor Modifiers: 5 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-16-5-combat-options-891a5b60]] - collection: 16.5 Combat Options: 8 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-16-9-special-weapons-62330b63]] - collection: 16.9 Special Weapons: 12 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-18-3-rules-for-destroying-structures-5e113017]] - collection: 18.3 Rules for Destroying Structures: 19 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-chapter-3-6d32210f]] - collection: Chapter 3:: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-3-4-4-actions-you-can-take-while-standing-still-519dd7f4]] - collection: 3.4.4 Actions You Can Take While Standing Still: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-5-1-12-ancient-magic-list-19f66f88]] - collection: 5.1.12 Ancient Magic List: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-5-1-14-spirit-magic-list-55816c7f]] - collection: 5.1.14 Spirit Magic List: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-5-1-17-special-holy-magic-list-b40a33a3]] - collection: 5.1.17 Special Holy Magic List: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-chapter-6-644c319b]] - collection: Chapter 6:: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-chapter-6-6-1-precautions-when-using-skills-82cdd945]] - collection: Chapter 6: / 6.1 Precautions When Using Skills: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-chapter-6-6-3-ranger-skill-f81328c3]] - collection: Chapter 6: / 6.3 Ranger Skill: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-chapter-7-22223c91]] - collection: Chapter 7:: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-chapter-7-7-5-treatment-intelligence-8242b170]] - collection: Chapter 7: / 7.5 [ ② Treatment [Intelligence]]: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-chapter-9-6031114c]] - collection: Chapter 9:: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-10-5-attacks-against-the-sleeping-5adabf46]] - collection: 10.5 Attacks Against the Sleeping: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-chapter-11-notes-on-magic-b7944607]] - collection: Chapter 11: Notes on Magic: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-chapter-11-notes-on-magic-11-3-dragon-roar-magic-4a413d46]] - collection: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8]] - collection: Chapter 12: Various Checks / 12.1 Rules Regarding Language: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-12-2-2-illnesses-b9c7f5f9]] - collection: 12.2.2 Illnesses: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-13-1-types-of-monsters-1cd4c9c3]] - collection: 13.1 Types of Monsters: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-13-2-1-humans-6e762209]] - collection: 13.2.1 《 Humans 》: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-13-2-3-youma-cdc09e8d]] - collection: 13.2.3 Youma: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] - collection: 13.2.6 Mythical Beasts and Magical Beasts: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-13-2-11-daemons-underworld-creatures-5f686ba2]] - collection: 13.2.11 Daemons/Underworld Creatures: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-13-2-12-humans-e4eada41]] - collection: 13.2.12 Humans: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-13-6-handling-monster-special-abilities-22341d2d]] - collection: 13.6 Handling Monster Special Abilities: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-chapter-14-b6f5d768]] - collection: Chapter 14:: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-chapter-14-14-4-magical-item-list-e871a62e]] - collection: Chapter 14: / 14.4 Magical Item List: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-chapter-16-16-2-weapon-and-armor-modifiers-ad25522c]] - collection: Chapter 16: / 16.2 Weapon and Armor Modifiers: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-16-5-combat-options-891a5b60]] - collection: 16.5 Combat Options: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-16-9-special-weapons-62330b63]] - collection: 16.9 Special Weapons: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-collection-18-3-rules-for-destroying-structures-5e113017]] - collection: 18.3 Rules for Destroying Structures: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
 
 ## Concept Entry Points
 
-- [[sword-world-rpg-complete-edition-ability-bonuse]] - concept: 【 Ability Bonuses 】: 10 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-ability-score]] - concept: Ability Scores: 61 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-acquiring-rune-master-skill]] - concept: Acquiring Rune Master Skill: 28 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-action]] - concept: Action: 5 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-adventure-treasure]] - concept: Adventure Treasure: 1 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-adventurer-cast-magic-mix]] - concept: Adventurer Cast Magic Mix: 6 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-adventurer-level]] - concept: 1.3.3 Adventurer Level: 99 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-alecrast]] - concept: Alecrast: 2 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-ancient-magic]] - concept: Ancient Magic: 4 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-armor]] - concept: Armor: 23 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-armor-based-skill]] - concept: Armor Based Skill: 3 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-attack]] - concept: Attack: 0 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-automatic-failure]] - concept: Automatic Failure: 2 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-automatic-success]] - concept: Automatic Success: 2 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-beast-maker-dose]] - concept: Beast Maker Dose: 3 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-bonus-damage]] - concept: 【 Bonus Damage 】: 56 statement(s) and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-bonuse]] - concept: Bonuse: 1 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-brownie]] - concept: Brownie: 1 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-calendar]] - concept: Calendar: 3 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-centauri-blood-touch]] - concept: Centauri Blood Touch: 1 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-charm-dryad]] - concept: Charm Dryad: 1 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-control-spirit-lesser]] - concept: [ Control Spirit ] (Various lesser spirits): 27 statement(s) and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-critical-target-variation]] - concept: Critical Target Variation: 36 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-daemon]] - concept: Daemon: 8 statement(s) and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-ability-bonus]] - concept: 【 Ability Bonuses 】: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-ability-score]] - concept: Ability Scores: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-acquiring-rune-master-skill]] - concept: Acquiring Rune Master Skill: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-action]] - concept: Action: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-adventure-treasure]] - concept: Adventure Treasure: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-adventurer-cast-magic-mix]] - concept: Adventurer Cast Magic Mix: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-adventurer-level]] - concept: 1.3.3 Adventurer Level: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-alecrast]] - concept: Alecrast: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-ancient-magic]] - concept: Ancient Magic: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-armor]] - concept: Armor: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-armor-based-skill]] - concept: Armor Based Skill: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-attack]] - concept: Attack: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-automatic-failure]] - concept: Automatic Failure: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-automatic-success]] - concept: Automatic Success: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-beast-maker-dose]] - concept: Beast Maker Dose: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-bonus]] - concept: Bonus: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-bonus-damage]] - concept: 【 Bonus Damage 】: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-brownie]] - concept: Brownie: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-calendar]] - concept: Calendar: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-control-spirit-lesser]] - concept: [ Control Spirit ] (Various lesser spirits): synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-critical-target-variation]] - concept: Critical Target Variation: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-daemon]] - concept: Daemon: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-daemon-underworld-creature]] - concept: 《 Daemons/Underworld Creatures 》: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-damage]] - concept: Damage: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
 
 ## Source Section Index
 

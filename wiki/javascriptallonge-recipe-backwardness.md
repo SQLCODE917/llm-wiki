@@ -2,75 +2,33 @@
 page_id: javascriptallonge-recipe-backwardness
 page_kind: recipe
 page_family: recipe-pattern
-summary: backwardness: reusable source-backed pattern with 4 statement(s) and 3 technical atom(s) from raw/javascriptallonge.pdf.
+summary: backwardness: synthesized recipe pattern from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-07-02
 domain: javascriptallonge
 category_path: recipes/javascriptallonge
 source_id: javascriptallonge.pdf
 aliases: backwardness
-projection_coverage: recipe-javascriptallonge-recipe-backwardness@098c3d73d80ad830ff039b97e09a52b8
+projection_coverage: page-synthesis-javascriptallonge-recipe-backwardness@70b629d086067dbf9cc4a719e344e9d7
 ---
 
 # backwardness
 
-From [[javascriptallonge]].
-
 ## Pattern
 
-- Use the source-backed pattern described in [[javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-backwardness-d9db07eb]].
-- Evidence roles: decision, procedure, example.
+- Our first and second functions are a little different than what most. _(raw/javascriptallonge.pdf (source-range-7239e085-01354))_
+- In both cases the functions first is represented whether it be an array. _(raw/javascriptallonge.pdf (source-range-7239e085-01358))_
 
 ## Applicability And Rationale
 
-- Our first and second functions are a little different than what most people are used to when we talk about functions that access data. _(javascriptallonge.pdf (source-range-7239e085-01354))_
-- In both cases, the functions first and second know how the data is represented, whether it be an array or an object. _(javascriptallonge.pdf (source-range-7239e085-01358))_
-- So if we wanted to use them with a two-element array, we'd need to have a piece of code that calls some code. _(javascriptallonge.pdf (source-range-7239e085-01359))_
-- Our latin data structure is no longer a dumb data structure, it's a function. _(javascriptallonge.pdf (source-range-7239e085-01362))_
+- So if we wanted to use them with a two-element. _(raw/javascriptallonge.pdf (source-range-7239e085-01359))_
+- Our latin data structure is no longer a dumb data structure. _(raw/javascriptallonge.pdf (source-range-7239e085-01362))_
 
 ## Technical Atoms
 
-### Atom 1: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-01355)_
-
-```
-const first = ([first, second]) => first,
-second = ([first, second]) => second;
-const latin = ["primus", "secundus"];
-first(latin)
-//=> "primus"
-second(latin)
-//=> "secundus"
-```
-
-### Atom 2: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-01357)_
-
-```
-const first = ({first, second}) => first,
-second = ({first, second}) => second;
-const latin = {first: "primus", second: "secundus"};
-first(latin)
-//=> "primus"
-second(latin)
-//=> "secundus"
-```
-
-### Atom 3: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-01361)_
-
-```
-const first = K,
-second = K(I);
-const latin = (selector) => selector("primus")("secundus");
-latin(first)
-//=> "primus"
-latin(second)
-//=> "secundus"
-```
+- Backwardness includes a code block at #atom-technical-atom-a507715e23aece58. _(raw/javascriptallonge.pdf (source-range-7239e085-01355))_
+- Backwardness includes a code block at #atom-technical-atom-c3d9df18652e1cb5. _(raw/javascriptallonge.pdf (source-range-7239e085-01357))_
+- Backwardness includes a code block at #atom-technical-atom-34e32a4256543c38. _(raw/javascriptallonge.pdf (source-range-7239e085-01361))_
 
 ## Source Trail
 

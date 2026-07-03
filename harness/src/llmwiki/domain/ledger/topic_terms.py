@@ -159,6 +159,8 @@ def single_term_topic_candidate_allowed(term: str) -> bool:
 
 
 def singular(token: str) -> str:
+    if token in {"always", "bonuses"}:
+        return {"always": "always", "bonuses": "bonus"}[token]
     if token in {"series", "species"}:
         return token
     if token.endswith("us"):

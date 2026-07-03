@@ -112,6 +112,16 @@ def default_page_body_contracts() -> tuple[PageBodyContract, ...]:
             required_uncertainty_policy="preserve-source-uncertainty",
         ),
         PageBodyContract(
+            contract_id="synthesized-prose",
+            match_page_kinds=("concept", "procedure", "recipe", "source"),
+            required_markdown_shape="synthesized-prose",
+            max_words=900,
+            max_copied_ngram_ratio=0.50,
+            required_link_policy="planned-related-pages",
+            required_citation_policy="all-raw-sources",
+            required_uncertainty_policy="preserve-source-uncertainty",
+        ),
+        PageBodyContract(
             contract_id="synthesis-page",
             match_page_kinds=("synthesis",),
             required_markdown_shape="prose",

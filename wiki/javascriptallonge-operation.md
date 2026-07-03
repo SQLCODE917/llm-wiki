@@ -2,186 +2,45 @@
 page_id: javascriptallonge-operation
 page_kind: concept
 page_family: topic-concept
-summary: Operation: 3 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
+summary: Operation: synthesized source-backed topic page from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-operation@39134c1f3dee7e3b6f6e5f4d4d598e1c
+projection_coverage: page-synthesis-javascriptallonge-operation@e94b75c011fab2df0e27c93805023b31
 ---
 
 # Operation
 
-What [[javascriptallonge]] covers about operation:
+## Source-Backed View
 
-## Statements
+- If some code ever tries to will be skipped. _(raw/javascriptallonge.pdf (source-range-7239e085-00708))_
+- The gathering operation [a b ThreeToFive] is slower but 'safer. _(raw/javascriptallonge.pdf (source-range-7239e085-01150))_
+- Many operations on ordered collections return another ordered collection. _(raw/javascriptallonge.pdf (source-range-7239e085-01591))_
 
-### Recipes with Basic Functions / Maybe
+## Technical Evidence
 
-- If some code ever tries to call model.setSomething with nothing, the operation will be skipped. _(javascriptallonge.pdf (source-range-7239e085-00708))_
-
-### Composing and Decomposing Data / Mutation / mutation and data structures
-
-- The gathering operation [a, b, ...ThreeToFive] is slower, but 'safer. ' _(javascriptallonge.pdf (source-range-7239e085-01150))_
-
-### Like this: / operations on ordered collections
-
-- Many operations on ordered collections return another ordered collection. They do so by taking care to iterate over a result freshly every time we get an iterator for them. Consider this example for mapWith : _(javascriptallonge.pdf (source-range-7239e085-01591))_
-
-
-## Technical atoms
-
-### Technical frame 1: Yes. Consider this variation: / Functional Iterators / bonus
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01319))_
-
-> This is interesting, because it is lazy: It doesn't apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01318))_
-
-<a id="atom-technical-atom-c5cd3037853933e3"></a>
-
-```
-const firstInIteration = (fn, iterator) =>
-take(filterIteratorWith(fn, iterator), 1);
-```
-
-### Technical frame 2: Like this: / operations on ordered collections
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01590))_
-
-> This illustrates the general pattern of working with ordered collections: We make them iterables , meaning that they have a [Symbol.iterator] method, that returns an iterator . An iterator is also an object, but with a .next() method that is invoked repeatedly to obtain the elements in order.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01589))_
-
-<a id="atom-technical-atom-54c71ac655b9bf50"></a>
-
-```
-const mapWith = (fn, collection) =>
-({
-[Symbol.iterator] () {
-const iterator = collection[Symbol.iterator]();
-return {
-next () {
-const {done, value} = iterator.next();
-return ({done, value: done ? undefined : fn(value)});
-}
-}
-}
-});
-```
-
-### Technical frame 3: Like this: / operations on ordered collections
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01593))_
-
-> Numbers is an ordered collection. We invoke mapWith((x) => 2 * x, Numbers) and get Evens . Evens works just as if we'd written this:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01592))_
-
-<a id="atom-technical-atom-0394bbb3ce97162b"></a>
-
-```
-const Evens = mapWith((x) => 2 * x, Numbers);
-for (const i of Evens) {
-console.log(i)
-}
-//=>
-0
-2
-4
-...
-for (const i of Evens) {
-console.log(i)
-}
-//=>
-0
-2
-4
-...
-```
-
-### Technical frame 4: Like this: / operations on ordered collections
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01603))_
-
-> Like mapWith , they preserve the ordered collection semantics of whatever you give them.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01602))_
-
-<a id="atom-technical-atom-3362c712cd3a3047"></a>
-
-```
-const filterWith = (fn, iterable) =>
-({
-[Symbol.iterator] () {
-const iterator = iterable[Symbol.iterator]();
-return {
-next () {
-do {
-const {done, value} = iterator.next();
-} while (!done && !fn(value));
-return {done, value};
-}
-}
-}
-});
-const untilWith = (fn, iterable) =>
-({
-[Symbol.iterator] () {
-const iterator = iterable[Symbol.iterator]();
-return {
-next () {
-let {done, value} = iterator.next();
-done = done || fn(value);
-return ({done, value: done ? undefined : value});
-}
-}
-}
-});
-```
-
-### Technical frame 5: Like this: / operations on ordered collections
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01607))_
-
-> For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest] :
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01605))_
-
-<a id="atom-technical-atom-2b1a958763a34fb2"></a>
-
-```
-const Squares = mapWith((x) => x * x, Numbers);
-const EndWithOne = filterWith((x) => x % 10 === 1, Squares);
-const UpTo1000 = untilWith((x) => (x > 1000), EndWithOne);
-[...UpTo1000]
-//=>
-[1,81,121,361,441,841,961]
-[...UpTo1000]
-//=>
-[1,81,121,361,441,841,961]
-```
-
+- Operation uses a code block technical record at #atom-technical-atom-c5cd3037853933e3. _(raw/javascriptallonge.pdf (source-range-7239e085-01318))_
+- Operation uses a code block technical record at #atom-technical-atom-54c71ac655b9bf50. _(raw/javascriptallonge.pdf (source-range-7239e085-01589))_
+- Operation uses a code block technical record at #atom-technical-atom-0394bbb3ce97162b. _(raw/javascriptallonge.pdf (source-range-7239e085-01592))_
+- Operation uses a code block technical record at #atom-technical-atom-3362c712cd3a3047. _(raw/javascriptallonge.pdf (source-range-7239e085-01602))_
 
 ## Related pages
 
-### Shared technical atoms
+- [[javascriptallonge-iterator]] - shared technical atoms
+- [[javascriptallonge-mapwith]] - shared technical atoms
+- [[javascriptallonge-return]] - shared technical atoms
+- [[javascriptallonge-discussing]] - shared technical atoms
+- [[javascriptallonge-functional-iterator]] - shared technical atoms
+- [[javascriptallonge-idea]] - shared technical atoms
+- [[javascriptallonge-javascript]] - shared technical atoms
+- [[javascriptallonge-language]] - shared technical atoms
+- [[javascriptallonge-code]] - shared statements
+- [[javascriptallonge-gathering]] - shared statements
 
-- [[javascriptallonge-iterator]] - shared technical atoms: Iterator shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-mapwith]] - shared technical atoms: Mapwith shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-discussing]] - shared technical atoms: Discussing shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-functional-iterator]] - shared technical atoms: Functional Iterators shares technical record from Yes. Consider this variation: / Functional Iterators / bonus: const firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator), 1); (1 shared atom(s))
-- [[javascriptallonge-idea]] - shared technical atoms: Idea shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (1 shared atom(s))
-- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical record from Yes. Consider this variation: / Functional Iterators / bonus: const firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator), 1); (1 shared atom(s))
-- [[javascriptallonge-language]] - shared technical atoms: Language shares technical record from Yes. Consider this variation: / Functional Iterators / bonus: const firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator), 1); (1 shared atom(s))
+## Source Trail
 
-### Shared claims
-
-- [[javascriptallonge-code]] - shared statements: Code shares source evidence from Recipes with Basic Functions / Maybe: If some code ever tries to call model.setSomething with nothing, the operation will be skipped. (1 shared statement(s))
-- [[javascriptallonge-gathering]] - shared statements: Gathering shares source evidence from Composing and Decomposing Data / Mutation / mutation and data structures: The gathering operation [a, b, ...ThreeToFive] is slower, but 'safer. ' (1 shared statement(s))
-
-## Source
-
-- [[javascriptallonge]]
+- Source manifest: [[javascriptallonge]]
+- Source section: [[javascriptallonge-section-recipes-with-basic-functions-maybe-bddfd1b7]]
+- Source section: [[javascriptallonge-section-composing-and-decomposing-data-mutation-mutation-and-data-structures-5828e27e]]
+- Source section: [[javascriptallonge-section-like-this-operations-on-ordered-collections-286a5f1c]]

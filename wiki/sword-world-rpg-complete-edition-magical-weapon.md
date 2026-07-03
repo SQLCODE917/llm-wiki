@@ -2,61 +2,39 @@
 page_id: sword-world-rpg-complete-edition-magical-weapon
 page_kind: concept
 page_family: topic-concept
-summary: Magical Weapon: 7 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Magical Weapon: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-magical-weapon@2e0ed7b95ac6b7bfadd95cacd21250a5
+projection_coverage: page-synthesis-sword-world-rpg-complete-edition-magical-weapon@b92cf16f912594a2d683acd704134edf
 ---
 
 # Magical Weapon
 
-What [[sword-world-rpg-complete-edition]] covers about magical weapon:
+## Source-Backed View
 
-## Statements
+- In Forcelia there are magical weapons and armor that were. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02373))_
+- These magical weapons and armor are seldom found and are usually rarely. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02373))_
+- Characters may obtain these magical weapons and armor. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02374))_
+- The power of magical weapons and is represented by a +1 or +2. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02374))_
+- If you use a +1 magical weapon you receive. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02377))_
+- Magical weapons have exceptional attack power and bonus damage. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02377))_
+- Magical weapons and armor are not usually traded but if you. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02384))_
 
-### 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor
+## Technical Evidence
 
-- In Forcelia, there are magical weapons and armor that were once created during the age of the magical kingdom (Kastuul). These magical weapons and armor are seldom found, and are usually rarely traded. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02373))_
-
-- Characters may obtain these magical weapons and armor through their adventures. The power of magical weapons and armor is represented by a +1 or +2 score. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02374))_
-
-### 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Weapons 】
-
-- Magical weapons have exceptional attack power and bonus damage . If you use a +1 magical weapon, you receive a +1 bonus to attack power and bonus damage. If +2, those bonuses are +2, and if +3, they're +3. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02377))_
-
-### 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Armor 】
-
-- Magical weapons and armor are not usually traded, but if you are very lucky you may be able to buy them if they're +1. A guide to prices can be found in Chapter 14: Treasure (see p. 240). Also, they offer basically no bonus to strike power or defense power, same as required strength. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02384))_
-
-
-## Technical atoms
-
-### Technical frame 1: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Weapons 】
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02377))_
-
-> Magical weapons have exceptional attack power and bonus damage . If you use a +1 magical weapon, you receive a +1 bonus to attack power and bonus damage. If +2, those bonuses are +2, and if +3, they're +3.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02378))_
-
-<a id="atom-technical-atom-f497180b1c1b4b0e"></a>
-
-> Magical weapons can deal damage to monsters that normal weapons cannot harm.
-
+- Magical Weapon uses a rule technical record at #atom-technical-atom-f497180b1c1b4b0e. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02378))_
 
 ## Related pages
 
-### Source structure
+- [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-magical-weapons-3e1c99bf]] - source section
+- [[sword-world-rpg-complete-edition-armor]] - shared statements
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements
 
-- [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-magical-weapons-3e1c99bf]] - source section: 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Weapons 】 shares source evidence from 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Weapons 】: Magical weapons have exceptional attack power and bonus damage . If you use a +1 magical weapon, you receive a +1 bonus to attack power and bonus damage. If +2, thos ... [truncated]; 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Weapons 】 shares technical record from 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Weapons 】: Magical weapons can deal damage to monsters that normal weapons cannot harm. (3 shared statement(s), 1 shared atom(s))
+## Source Trail
 
-### Shared claims
-
-- [[sword-world-rpg-complete-edition-armor]] - shared statements: Armor shares source evidence from 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor: In Forcelia, there are magical weapons and armor that were once created during the age of the magical kingdom (Kastuul). These magical weapons and armor are seldom f ... [truncated] (5 shared statement(s))
-- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements: 【 Bonus Damage 】 shares source evidence from 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Weapons 】: Magical weapons have exceptional attack power and bonus damage . If you use a +1 magical weapon, you receive a +1 bonus to attack power and bonus damage. If +2, thos ... [truncated] (2 shared statement(s))
-
-## Source
-
-- [[sword-world-rpg-complete-edition]]
+- Source manifest: [[sword-world-rpg-complete-edition]]
+- Source section: [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-444977ff]]
+- Source section: [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-magical-weapons-3e1c99bf]]
+- Source section: [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-magical-armor-4b57d940]]

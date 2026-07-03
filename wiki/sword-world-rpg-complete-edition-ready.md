@@ -2,25 +2,21 @@
 page_id: sword-world-rpg-complete-edition-ready
 page_kind: concept
 page_family: topic-concept
-summary: Ready: 1 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Ready: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-ready@60af84bb550755d7cfae84579c1b12c6
+projection_coverage: page-synthesis-sword-world-rpg-complete-edition-ready@c155adb7efd2932718cea876420acf20
 ---
 
 # Ready
 
-What [[sword-world-rpg-complete-edition]] covers about ready:
+## Source-Backed View
 
-## Statements
+- You can only ready one weapon etc. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01401))_
 
-### 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself
+## Source Trail
 
-- From a state of falling down, stand up and ready yourself. You can only ready one weapon, etc. that you're wearing. You cannot pick up any items on the ground. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01401))_
-
-
-## Source
-
-- [[sword-world-rpg-complete-edition]]
+- Source manifest: [[sword-world-rpg-complete-edition]]
+- Source section: [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-d9d2f676]]

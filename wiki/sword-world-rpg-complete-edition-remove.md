@@ -2,56 +2,28 @@
 page_id: sword-world-rpg-complete-edition-remove
 page_kind: concept
 page_family: topic-concept
-summary: Remove: 3 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Remove: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-remove@26bf871216ccde5038610a3d6fd25ef6
+projection_coverage: page-synthesis-sword-world-rpg-complete-edition-remove@606f8dbc51370e7fe2ce40ee6baaed75
 ---
 
 # Remove
 
-What [[sword-world-rpg-complete-edition]] covers about remove:
+## Source-Backed View
 
-## Statements
+- You can attempt to remove traps discovered through. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04983))_
+- Unless the game master has specifically set traps that are easy. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04984))_
+- If a third party attempts to must attempt a success roll on their. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04985))_
 
-### Chapter 6: / 6.1 Precautions When Using Skills / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable)
+## Technical Evidence
 
-- You can attempt to remove traps discovered through fi nd . Removal also involves attempting a success roll against the trap's difficulty. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04983))_
+- Remove uses a rule technical record at #atom-technical-atom-d2b8ab741ba9d8ba. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04984))_
+- Remove uses a rule technical record at #atom-technical-atom-6222be0d3144f175. _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04985))_
 
-- Unless the game master has specifically set traps that are easy to find but difficult to remove , or conversely, difficult to find but easy to remove , the difficulty of finding and removing should be the same. If you fail, the trap will be activated if the dice roll was 6 or more beneath the target score. The effect of an activated trap depends on the type of trap. Traps that you fail to find cannot be removed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04984))_
+## Source Trail
 
-- For set , you can set traps up to a difficulty equal to your thief skill level without failing (you cannot set traps of a higher level). If a third party attempts to sense , find , or remove a trap set by a player, the game master must attempt a success roll on their behalf. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04985))_
-
-
-## Technical atoms
-
-### Technical frame 1: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04985))_
-
-> For set , you can set traps up to a difficulty equal to your thief skill level without failing (you cannot set traps of a higher level). If a third party attempts to sense , find , or remove a trap set by a player, the game master must attempt a success roll on their behalf.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04984))_
-
-<a id="atom-technical-atom-d2b8ab741ba9d8ba"></a>
-
-> If you fail, the trap will be activated if the dice roll was 6 or more beneath the target score.
-
-### Technical frame 2: Chapter 6: / 6.1 Precautions When Using Skills / [ ⑰ Remove/Set Trap [Dexterity] ] (Equipment restriction, not retriable)
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04984))_
-
-> Unless the game master has specifically set traps that are easy to find but difficult to remove , or conversely, difficult to find but easy to remove , the difficulty of finding and removing should be the same. If you fail, the trap will be activated if the dice roll was 6 or more beneath the target score. The effect of an activated trap depends on the type of trap. Traps that you fail to find cannot be removed.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04985))_
-
-<a id="atom-technical-atom-6222be0d3144f175"></a>
-
-> For set , you can set traps up to a difficulty equal to your thief skill level without failing (you cannot set traps of a higher level).
-
-
-## Source
-
-- [[sword-world-rpg-complete-edition]]
+- Source manifest: [[sword-world-rpg-complete-edition]]
+- Source section: [[sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-remove-set-trap-dexterity-equipment-restriction-not-54c61838]]

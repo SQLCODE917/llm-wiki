@@ -7,6 +7,9 @@ from llmwiki.domain.ledger.artifacts import (
     build_claim_ledger_artifact,
     build_document_structure_artifact,
     build_ledger_quality_report_artifact,
+    build_page_draft_artifact,
+    build_page_synthesis_findings_artifact,
+    build_page_synthesis_plan_artifact,
     build_projection_context_artifact,
     build_projection_coverage_artifact,
     build_quality_check_catalog_artifact,
@@ -194,6 +197,13 @@ def build_source_ledger(
     )
 
     decision = page_write_decision(ledger_report, projection_report)
+    page_synthesis_plan_artifact = build_page_synthesis_plan_artifact(
+        source_hash=source_hash, plans=()
+    )
+    page_draft_artifact = build_page_draft_artifact(source_hash=source_hash, draft_records=())
+    page_synthesis_findings_artifact = build_page_synthesis_findings_artifact(
+        source_hash=source_hash, findings=()
+    )
     blocked = None
     wiki_page: WikiPage | None = None
     topic_pages: tuple[WikiPage, ...] = ()
@@ -227,6 +237,9 @@ def build_source_ledger(
         wiki_page = linked_projection.source_page
         topic_pages = linked_projection.linked_pages
         coverage_artifact = linked_projection.coverage_artifact
+        page_synthesis_plan_artifact = linked_projection.page_synthesis_plan_artifact
+        page_draft_artifact = linked_projection.page_draft_artifact
+        page_synthesis_findings_artifact = linked_projection.page_synthesis_findings_artifact
         staged_pages = (wiki_page, *topic_pages)
     staged_page_set = build_staged_page_set(source_plan, staged_pages)
     lint_run = build_lint_run(
@@ -248,6 +261,9 @@ def build_source_ledger(
         projection_report_artifact=projection_report_artifact,
         coverage_artifact=coverage_artifact,
         projection_context_artifact=projection_context_artifact,
+        page_synthesis_plan_artifact=page_synthesis_plan_artifact,
+        page_draft_artifact=page_draft_artifact,
+        page_synthesis_findings_artifact=page_synthesis_findings_artifact,
         section_plan=section_plan,
         knowledge_shape_catalog=shape_catalog,
         topic_index=topic_index,

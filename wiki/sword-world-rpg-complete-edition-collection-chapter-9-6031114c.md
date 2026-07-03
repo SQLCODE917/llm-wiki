@@ -2,30 +2,24 @@
 page_id: sword-world-rpg-complete-edition-collection-chapter-9-6031114c
 page_kind: source
 page_family: collection-page
-summary: Chapter 9:: 3 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 9:: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/collections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: collection-sword-world-rpg-complete-edition-collection-chapter-9-6031114c@9a4d1bf450840cf6ba25f1f5dc75bc8a
+projection_coverage: page-synthesis-sword-world-rpg-complete-edition-collection-chapter-9-6031114c@884a83120bb3290c2a86c82c745bd0f7
 ---
 
 # Chapter 9:
 
-From [[sword-world-rpg-complete-edition]].
-Broader source section: [[sword-world-rpg-complete-edition-section-chapter-9-6031114c]].
-
 ## Collection Signals
 
-- sibling structure
-- repeated peer shape
-- structured technical atoms
+- Chapter 9: / Setting Target Scores and Difficulties is a collection member with 54 statement(s) and 57 technical atom(s). _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05542))_
+- Chapter 9: / 9.3 General Modifiers is a collection member with 9 statement(s) and 5 technical atom(s). _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05621))_
+- Chapter 9: / 9.4 Automatic Success Restrictions is a collection member with 20 statement(s) and 23 technical atom(s). _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05629))_
 
-## Members
+## Source Trail
 
-| Member | Source section | Evidence |
-| --- | --- | --- |
-| Chapter 9: / Setting Target Scores and Difficulties | [[sword-world-rpg-complete-edition-section-chapter-9-setting-target-scores-and-difficulties-ae9c232d]] | 54 statement(s), 57 atom(s) |
-| Chapter 9: / 9.3 General Modifiers | [[sword-world-rpg-complete-edition-section-chapter-9-9-3-general-modifiers-d8d72628]] | 9 statement(s), 5 atom(s) |
-| Chapter 9: / 9.4 Automatic Success Restrictions | [[sword-world-rpg-complete-edition-section-chapter-9-9-4-automatic-success-restrictions-c551036d]] | 20 statement(s), 23 atom(s) |
+- Source manifest: [[sword-world-rpg-complete-edition]]
+- Source section: [[sword-world-rpg-complete-edition-section-chapter-9-6031114c]]

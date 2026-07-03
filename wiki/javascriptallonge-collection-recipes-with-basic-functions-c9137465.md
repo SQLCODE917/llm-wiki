@@ -2,32 +2,27 @@
 page_id: javascriptallonge-collection-recipes-with-basic-functions-c9137465
 page_kind: source
 page_family: collection-page
-summary: Recipes with Basic Functions: 6 collection member(s) from raw/javascriptallonge.pdf.
+summary: Recipes with Basic Functions: synthesized collection page from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-07-02
 domain: javascriptallonge
 category_path: sources/javascriptallonge/collections
 source_id: javascriptallonge.pdf
-projection_coverage: collection-javascriptallonge-collection-recipes-with-basic-functions-c9137465@1a96672caec4cc8192527ffb8d6634d8
+projection_coverage: page-synthesis-javascriptallonge-collection-recipes-with-basic-functions-c9137465@dcd771a90fc4756c43e20b12a764fc5b
 ---
 
 # Recipes with Basic Functions
 
-From [[javascriptallonge]].
-Broader source section: [[javascriptallonge-section-recipes-with-basic-functions-c9137465]].
-
 ## Collection Signals
 
-- sibling structure
-- structured technical atoms
+- Recipes with Basic Functions / Partial Application is a collection member with 4 statement(s) and 12 technical atom(s). _(raw/javascriptallonge.pdf (source-range-7239e085-00660))_
+- Recipes with Basic Functions / Unary is a collection member with 8 statement(s) and 35 technical atom(s). _(raw/javascriptallonge.pdf (source-range-7239e085-00669))_
+- Recipes with Basic Functions / Tap is a collection member with 3 statement(s) and 8 technical atom(s). _(raw/javascriptallonge.pdf (source-range-7239e085-00685))_
+- Recipes with Basic Functions / Maybe is a collection member with 6 statement(s) and 20 technical atom(s). _(raw/javascriptallonge.pdf (source-range-7239e085-00695))_
+- Recipes with Basic Functions / Once is a collection member with 3 statement(s) and 8 technical atom(s). _(raw/javascriptallonge.pdf (source-range-7239e085-00710))_
+- Recipes with Basic Functions / Left-Variadic Functions is a collection member with 15 statement(s) and 50 technical atom(s). _(raw/javascriptallonge.pdf (source-range-7239e085-00717))_
 
-## Members
+## Source Trail
 
-| Member | Source section | Evidence |
-| --- | --- | --- |
-| Recipes with Basic Functions / Partial Application | [[javascriptallonge-section-recipes-with-basic-functions-partial-application-583028a8]] | 4 statement(s), 12 atom(s) |
-| Recipes with Basic Functions / Unary | [[javascriptallonge-section-recipes-with-basic-functions-unary-5deba4e9]] | 8 statement(s), 35 atom(s) |
-| Recipes with Basic Functions / Tap | [[javascriptallonge-section-recipes-with-basic-functions-tap-904019d9]] | 3 statement(s), 8 atom(s) |
-| Recipes with Basic Functions / Maybe | [[javascriptallonge-section-recipes-with-basic-functions-maybe-bddfd1b7]] | 6 statement(s), 20 atom(s) |
-| Recipes with Basic Functions / Once | [[javascriptallonge-section-recipes-with-basic-functions-once-99d6b11d]] | 3 statement(s), 8 atom(s) |
-| Recipes with Basic Functions / Left-Variadic Functions | [[javascriptallonge-section-recipes-with-basic-functions-left-variadic-functions-d00f2bc0]] | 15 statement(s), 50 atom(s) |
+- Source manifest: [[javascriptallonge]]
+- Source section: [[javascriptallonge-section-recipes-with-basic-functions-c9137465]]

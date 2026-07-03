@@ -155,8 +155,12 @@ as source evidence or as existing wiki coverage.
    atoms, repeated peer shapes, and table/formula dependencies, not
    source-specific trigger-word lists.
 5. Project source-local wiki pages from those artifacts: the source hub,
-   section pages, topic pages, procedure pages, recipe pages, collection pages,
-   source coverage, and projection coverage. Dense navigation comes from
+   section pages, source coverage, and projection coverage. High-value generated
+   pages in the `topic-concept`, `broad-topic`, `procedure-guide`,
+   `recipe-pattern`, and `collection-page` families are first drafted from a
+   `PageSynthesisPlan`, validated against selected ledger or atom evidence, and
+   rendered only after evidence validation accepts the `PageDraft`. Do not publish
+   extractive fallback markdown when synthesis fails. Dense navigation comes from
    `category_path`, `domain`, source-backed links, explicit
    `From [[source-page]]` backlinks, grouped related-page reasons, and stable
    technical-atom anchors.

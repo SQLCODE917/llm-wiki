@@ -2,30 +2,24 @@
 page_id: sword-world-rpg-complete-edition-collection-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8
 page_kind: source
 page_family: collection-page
-summary: Chapter 12: Various Checks / 12.1 Rules Regarding Language: 3 collection member(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 12: Various Checks / 12.1 Rules Regarding Language: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-07-02
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/collections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: collection-sword-world-rpg-complete-edition-collection-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8@4125e31de80c614f13c3f22b710ab529
+projection_coverage: page-synthesis-sword-world-rpg-complete-edition-collection-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8@7fdea897fb591b9dcc0d4dcc4e4a3877
 ---
 
 # Chapter 12: Various Checks / 12.1 Rules Regarding Language
 
-From [[sword-world-rpg-complete-edition]].
-Broader source section: [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8]].
-
 ## Collection Signals
 
-- sibling structure
-- repeated peer shape
-- structured technical atoms
+- Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Common 》 is a collection member with 10 statement(s) and 0 technical atom(s). _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06372))_
+- Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》 is a collection member with 4 statement(s) and 2 technical atom(s). _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06380))_
+- Chapter 12: Various Checks / 12.1 Rules Regarding Language / Languages is a collection member with 15 statement(s) and 16 technical atom(s). _(raw/Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06415))_
 
-## Members
+## Source Trail
 
-| Member | Source section | Evidence |
-| --- | --- | --- |
-| Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Common 》 | [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-common-05c48873]] | 10 statement(s), 0 atom(s) |
-| Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》 | [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-low-ancient-f237b444]] | 4 statement(s), 2 atom(s) |
-| Chapter 12: Various Checks / 12.1 Rules Regarding Language / Languages | [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-languages-0f917e8e]] | 15 statement(s), 16 atom(s) |
+- Source manifest: [[sword-world-rpg-complete-edition]]
+- Source section: [[sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8]]

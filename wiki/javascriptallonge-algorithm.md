@@ -2,114 +2,41 @@
 page_id: javascriptallonge-algorithm
 page_kind: concept
 page_family: topic-concept
-summary: Algorithm: 6 statement(s) and 2 atom(s) from raw/javascriptallonge.pdf.
+summary: Algorithm: synthesized source-backed topic page from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-algorithm@a76810d6b2a9befa1526d60e54dcd78f
+projection_coverage: page-synthesis-javascriptallonge-algorithm@5cce11e72b80bcb00adfdea738f14a0d
 ---
 
 # Algorithm
 
-What [[javascriptallonge]] covers about algorithm:
+## Source-Backed View
 
-## Statements
+- Making algorithms faster is a very highly studied field of. _(raw/javascriptallonge.pdf (source-range-7239e085-00966))_
+- Thus the design of programming languages was driven by what could be accomplished. _(raw/javascriptallonge.pdf (source-range-7239e085-01034))_
+- Whereas our naïve array algorithm created 2 n superfluous arrays and copied. _(raw/javascriptallonge.pdf (source-range-7239e085-01117))_
+- This algorithm makes copies of nodes as it goes. _(raw/javascriptallonge.pdf (source-range-7239e085-01157))_
+- This algorithm is called 'The Tortoise and the Hare,'. _(raw/javascriptallonge.pdf (source-range-7239e085-01265))_
+- What's interesting about these two algorithms is that they both tangle two separate. _(raw/javascriptallonge.pdf (source-range-7239e085-01269))_
 
-### Composing and Decomposing Data / Tail Calls (and Default Arguments)
+## Technical Evidence
 
-- Is there a better way? Yes. In fact, there are several better ways. Making algorithms faster is a very highly studied field of computer science. The one we're going to look at here is called tail-call optimization , or 'TCO.' _(javascriptallonge.pdf (source-range-7239e085-00966))_
-
-### Composing and Decomposing Data / Garbage, Garbage Everywhere / some history
-
-- Having these instructions be very fast was important to those early designers: They were working on one of the first high-level languages (COBOL and FORTRAN being the others), and computers in the late 1950s were extremely small and slow by today's standards. Although the 704 used core memory, it still used vacuum tubes for its logic. Thus, the design of programming languages and algorithms was driven by what could be accomplished with limited memory and performance. _(javascriptallonge.pdf (source-range-7239e085-01034))_
-
-### Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists
-
-- Mind you, this is still much, much faster than making partial copies of arrays. For a list of length n , wecreated n superfluous nodes and copied n superfluous values. Whereas our naïve array algorithm created 2 n superfluous arrays and copied n 2 superfluous values. _(javascriptallonge.pdf (source-range-7239e085-01117))_
-
-### Composing and Decomposing Data / Mutation / building with mutation
-
-- This algorithm makes copies of nodes as it goes, and mutates the last node in the list so that it can splice the next one on. Adding a node to an existing list is risky, as we saw when considering the fact that OneToFive and ThreeToFive share the same nodes. But when we're in the midst of creating a brand new list, we aren't sharing any nodes with any other lists, and we can afford to be more liberal about using mutation to save space and/or time. _(javascriptallonge.pdf (source-range-7239e085-01157))_
-
-### Yes. Consider this variation: / Tortoises, Hares, and Teleporting Turtles
-
-- This algorithm is called 'The Tortoise and the Hare,' and was discovered by Robert Floyd in the 1960s. You have two node references, and one traverses the list at twice the speed of the other. No matter how large it is, you will eventually have the fast reference equal to the slow reference, and thus you'll detect the loop. _(javascriptallonge.pdf (source-range-7239e085-01265))_
-
-- What's interesting about these two algorithms is that they both tangle two separate concerns: How to traverse a data structure, and what to do with the elements that you encounter. In Functional Iterators, we'll investigate one pattern for separating these concerns. _(javascriptallonge.pdf (source-range-7239e085-01269))_
-
-
-## Technical atoms
-
-### Technical frame 1: Composing and Decomposing Data / Mutation / building with mutation
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01155))_
-
-> If we want to make a copy of a linked list without iterating over it twice and making a copy we discard later, we can use mutation:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01154))_
-
-<a id="atom-technical-atom-604319d8c5cc409f"></a>
-
-```
-const reverse = (node, delayed = EMPTY) =>
-node === EMPTY
-? delayed
-: reverse(node.rest, { first: node.first, rest: delayed });
-const copy = (node) => reverse(reverse(node));
-```
-
-### Technical frame 2: Yes. Consider this variation: / Tortoises, Hares, and Teleporting Turtles
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01268))_
-
-> Years later, I came across a discussion of this algorithm, The Tale of the Teleporting Turtle 75 . It seems to be faster under certain circumstances, depending on the size of the loop and the relative costs of certain operations.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01267))_
-
-<a id="atom-technical-atom-e01a24a4c542e7a1"></a>
-
-```
-const teleportingTurtle = (list) => {
-let speed = 1,
-rabbit = list,
-turtle = rabbit;
-while (true) {
-for (let i = 0; i <= speed; i += 1) {
-rabbit = rabbit.rest;
-if (rabbit == null) {
-return false;
-}
-if (rabbit === turtle) {
-return true;
-}
-}
-turtle = rabbit;
-speed *= 2;
-}
-return false;
-};
-const aList = list(1, 2, 3, 4, 5);
-teleportingTurtle(aList)
-//=> false
-forceAppend(aList, aList.rest.rest);
-teleportingTurtle(aList);
-//=> true
-```
-
+- Algorithm uses a code block technical record at #atom-technical-atom-604319d8c5cc409f. _(raw/javascriptallonge.pdf (source-range-7239e085-01154))_
+- Algorithm uses a code block technical record at #atom-technical-atom-e01a24a4c542e7a1. _(raw/javascriptallonge.pdf (source-range-7239e085-01267))_
 
 ## Related pages
 
-### Shared technical atoms
+- [[javascriptallonge-copy]] - shared technical atoms
+- [[javascriptallonge-list]] - shared technical atoms
+- [[javascriptallonge-language]] - shared statements
+- [[javascriptallonge-programming]] - shared statements
 
-- [[javascriptallonge-copy]] - shared technical atoms: Copy shares technical record from Composing and Decomposing Data / Mutation / building with mutation: const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed }); const copy = (node) => reverse(reverse(node)); (1 shared atom(s))
-- [[javascriptallonge-list]] - shared technical atoms: List shares technical record from Composing and Decomposing Data / Mutation / building with mutation: const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed }); const copy = (node) => reverse(reverse(node)); (1 shared atom(s))
+## Source Trail
 
-### Shared claims
-
-- [[javascriptallonge-language]] - shared statements: Language shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: Having these instructions be very fast was important to those early designers: They were working on one of the first high-level languages (COBOL and FORTRAN being th ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-programming]] - shared statements: Programming shares source evidence from Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: Having these instructions be very fast was important to those early designers: They were working on one of the first high-level languages (COBOL and FORTRAN being th ... [truncated] (1 shared statement(s))
-
-## Source
-
-- [[javascriptallonge]]
+- Source manifest: [[javascriptallonge]]
+- Source section: [[javascriptallonge-section-composing-and-decomposing-data-tail-calls-and-default-arguments-e2a54ac1]]
+- Source section: [[javascriptallonge-section-composing-and-decomposing-data-garbage-garbage-everywhere-some-history-1c77955f]]
+- Source section: [[javascriptallonge-section-composing-and-decomposing-data-plain-old-javascript-objects-revisiting-linked-lists-e7d9bd1d]]
+- Source section: [[javascriptallonge-section-composing-and-decomposing-data-mutation-building-with-mutation-bd1adba2]]

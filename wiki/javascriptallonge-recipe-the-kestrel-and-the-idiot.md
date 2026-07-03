@@ -2,102 +2,35 @@
 page_id: javascriptallonge-recipe-the-kestrel-and-the-idiot
 page_kind: recipe
 page_family: recipe-pattern
-summary: the kestrel and the idiot: reusable source-backed pattern with 6 statement(s) and 6 technical atom(s) from raw/javascriptallonge.pdf.
+summary: the kestrel and the idiot: synthesized recipe pattern from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-07-02
 domain: javascriptallonge
 category_path: recipes/javascriptallonge
 source_id: javascriptallonge.pdf
 aliases: the-kestrel-and-the-idiot
-projection_coverage: recipe-javascriptallonge-recipe-the-kestrel-and-the-idiot@cedc725b02921377cf20dd41dee12110
+projection_coverage: page-synthesis-javascriptallonge-recipe-the-kestrel-and-the-idiot@dad05865553ab8057bd5ab5e25111e58
 ---
 
 # the kestrel and the idiot
 
-From [[javascriptallonge]].
-
 ## Pattern
 
-- Use the source-backed pattern described in [[javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-the-kestrel-and-the-idiot-868e3ae2]].
-- Evidence roles: decision, constraint, example.
+- You give it a value and it returns. _(raw/javascriptallonge.pdf (source-range-7239e085-01338))_
+- A constant function is a function that always returns the. _(raw/javascriptallonge.pdf (source-range-7239e085-01338))_
 
 ## Applicability And Rationale
 
-- You give it a value, and it returns a constant function that gives that value. _(javascriptallonge.pdf (source-range-7239e085-01338))_
-- A constant function is a function that always returns the same thing, no matter what you give it. _(javascriptallonge.pdf (source-range-7239e085-01338))_
-- The kestrel, or K , is a function that makes constant functions. _(javascriptallonge.pdf (source-range-7239e085-01338))_
-- The identity function is a function that evaluates to whatever parameter you pass it. _(javascriptallonge.pdf (source-range-7239e085-01341))_
-- Given two values, we can say that K always returns the first value: K(x)(y) => x (that's not valid JavaScript, but it's essentially how it works). _(javascriptallonge.pdf (source-range-7239e085-01344))_
-- Given two values, we can say that K always returns the first value, and given two values, K(I) always returns the second value. _(javascriptallonge.pdf (source-range-7239e085-01352))_
+- The kestrel or K is a function that makes constant functions. _(raw/javascriptallonge.pdf (source-range-7239e085-01338))_
+- The identity function is a function that evaluates to whatever. _(raw/javascriptallonge.pdf (source-range-7239e085-01341))_
+- Given two values we can say that K always returns the. _(raw/javascriptallonge.pdf (source-range-7239e085-01344))_
 
 ## Technical Atoms
 
-### Atom 1: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-01340)_
-
-```
-const K = (x) => (y) => x;
-const fortyTwo = K(42);
-fortyTwo(6)
-//=> 42
-fortyTwo("Hello")
-//=> 42
-```
-
-### Atom 2: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-01343)_
-
-```
-K(6)(7)
-//=> 6
-K(12)(24)
-//=> 12
-```
-
-### Atom 3: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-01346)_
-
-```
-Therefore, K(I)(x)(y) => y:
-```
-
-### Atom 4: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-01347)_
-
-```
-K(I)(6)(7)
-//=> 7
-K(I)(12)(24)
-//=> 24
-```
-
-### Atom 5: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-01349)_
-
-```
-K("primus")("secundus")
-//=> "primus"
-K(I)("primus")("secundus")
-//=> "secundus"
-```
-
-### Atom 6: `code-block`
-
-_Source: javascriptallonge.pdf (source-range-7239e085-01351)_
-
-```
-const first = K,
-second = K(I);
-first("primus")("secundus")
-//=> "primus"
-second("primus")("secundus")
-//=> "secundus"
-```
+- The kestrel and the idiot includes a code block at #atom-technical-atom-e8e94e0d966070bc. _(raw/javascriptallonge.pdf (source-range-7239e085-01340))_
+- The kestrel and the idiot includes a code block at #atom-technical-atom-5e7df27522a16203. _(raw/javascriptallonge.pdf (source-range-7239e085-01343))_
+- The kestrel and the idiot includes a code block at #atom-technical-atom-150ac9277cfd9a5b. _(raw/javascriptallonge.pdf (source-range-7239e085-01346))_
+- The kestrel and the idiot includes a code block at #atom-technical-atom-61793a1442767bc8. _(raw/javascriptallonge.pdf (source-range-7239e085-01347))_
 
 ## Source Trail
 

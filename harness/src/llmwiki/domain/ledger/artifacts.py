@@ -21,6 +21,11 @@ from llmwiki.domain.ledger.canonical import (
 )
 from llmwiki.domain.ledger.coverage import ProjectionCoverage
 from llmwiki.domain.ledger.ledger import ClaimLedger
+from llmwiki.domain.ledger.page_synthesis import (
+    PageDraftRecord,
+    PageSynthesisFinding,
+    PageSynthesisPlan,
+)
 from llmwiki.domain.ledger.pointers import PortableArtifactPointer
 from llmwiki.domain.ledger.projection import ProjectionSourceSupport
 from llmwiki.domain.ledger.projection_context import ProjectionContext
@@ -99,6 +104,30 @@ class SourceCoverageArtifact:
     source_coverage_fingerprint: str
     artifact_format: str
     source_coverage: SourceCoverage
+
+
+@dataclass(frozen=True)
+class PageSynthesisPlanArtifact:
+    page_synthesis_plan_artifact_id: str
+    page_synthesis_plan_fingerprint: str
+    artifact_format: str
+    plans: tuple[PageSynthesisPlan, ...]
+
+
+@dataclass(frozen=True)
+class PageDraftArtifact:
+    page_draft_artifact_id: str
+    page_draft_fingerprint: str
+    artifact_format: str
+    draft_records: tuple[PageDraftRecord, ...]
+
+
+@dataclass(frozen=True)
+class PageSynthesisFindingsArtifact:
+    page_synthesis_findings_artifact_id: str
+    page_synthesis_findings_fingerprint: str
+    artifact_format: str
+    findings: tuple[PageSynthesisFinding, ...]
 
 
 @dataclass(frozen=True)
@@ -358,6 +387,75 @@ def build_source_coverage_artifact(coverage: SourceCoverage) -> SourceCoverageAr
     )
     fingerprint = artifact_fingerprint(draft, exclude=("source_coverage_fingerprint",))
     return replace(draft, source_coverage_fingerprint=fingerprint)
+
+
+def build_page_synthesis_plan_artifact(
+    *, source_hash: str, plans: tuple[PageSynthesisPlan, ...]
+) -> PageSynthesisPlanArtifact:
+    draft = PageSynthesisPlanArtifact(
+        page_synthesis_plan_artifact_id=deterministic_id("page-synthesis-plan", source_hash),
+        page_synthesis_plan_fingerprint="",
+        artifact_format=ARTIFACT_FORMAT,
+        plans=plans,
+    )
+    fingerprint = artifact_fingerprint(
+        draft,
+        exclude=("page_synthesis_plan_artifact_id", "page_synthesis_plan_fingerprint"),
+    )
+    return replace(
+        draft,
+        page_synthesis_plan_artifact_id=deterministic_id(
+            "page-synthesis-plan", source_hash, fingerprint
+        ),
+        page_synthesis_plan_fingerprint=fingerprint,
+    )
+
+
+def build_page_draft_artifact(
+    *, source_hash: str, draft_records: tuple[PageDraftRecord, ...]
+) -> PageDraftArtifact:
+    draft = PageDraftArtifact(
+        page_draft_artifact_id=deterministic_id("page-draft", source_hash),
+        page_draft_fingerprint="",
+        artifact_format=ARTIFACT_FORMAT,
+        draft_records=draft_records,
+    )
+    fingerprint = artifact_fingerprint(
+        draft,
+        exclude=("page_draft_artifact_id", "page_draft_fingerprint"),
+    )
+    return replace(
+        draft,
+        page_draft_artifact_id=deterministic_id("page-draft", source_hash, fingerprint),
+        page_draft_fingerprint=fingerprint,
+    )
+
+
+def build_page_synthesis_findings_artifact(
+    *, source_hash: str, findings: tuple[PageSynthesisFinding, ...]
+) -> PageSynthesisFindingsArtifact:
+    draft = PageSynthesisFindingsArtifact(
+        page_synthesis_findings_artifact_id=deterministic_id(
+            "page-synthesis-findings", source_hash
+        ),
+        page_synthesis_findings_fingerprint="",
+        artifact_format=ARTIFACT_FORMAT,
+        findings=findings,
+    )
+    fingerprint = artifact_fingerprint(
+        draft,
+        exclude=(
+            "page_synthesis_findings_artifact_id",
+            "page_synthesis_findings_fingerprint",
+        ),
+    )
+    return replace(
+        draft,
+        page_synthesis_findings_artifact_id=deterministic_id(
+            "page-synthesis-findings", source_hash, fingerprint
+        ),
+        page_synthesis_findings_fingerprint=fingerprint,
+    )
 
 
 def build_projection_context_artifact(

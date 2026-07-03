@@ -35,6 +35,8 @@ class ProjectionCoverageEntry:
     page_text_range: PageTextRange
     selected_ledger_entry_ids: tuple[str, ...] = ()
     technical_atom_id: str = ""
+    draft_claim_id: str = ""
+    draft_support_refs: tuple[str, ...] = ()
     ledger_entry_id: str = ""
     extracted_unit_disposition: str = ""
     cross_source_relationship_id: str = ""

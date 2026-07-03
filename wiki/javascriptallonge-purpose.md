@@ -2,124 +2,46 @@
 page_id: javascriptallonge-purpose
 page_kind: concept
 page_family: topic-concept
-summary: Purpose: 5 statement(s) and 4 atom(s) from raw/javascriptallonge.pdf.
+summary: Purpose: synthesized source-backed topic page from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-07-02
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-purpose@21075c8dd8a863fc1e5009e8cc1023d3
+projection_coverage: page-synthesis-javascriptallonge-purpose@a6c0208ecfbb6b7dd941e23fc1a9fe2f
 ---
 
 # Purpose
 
-What [[javascriptallonge]] covers about purpose:
+## Source-Backed View
 
-## Statements
+- But for the purposes of discussing can use the same name twice in. _(raw/javascriptallonge.pdf (source-range-7239e085-00628))_
+- The purpose of your own code is to get things done. _(raw/javascriptallonge.pdf (source-range-7239e085-01221))_
+- For all intents and purposes once can expect that you no longer 'own'. _(raw/javascriptallonge.pdf (source-range-7239e085-01324))_
 
-### And also: / Magic Names / magic names and fat arrows
+## Technical Evidence
 
-- 44 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It's the same idea, after all. _(javascriptallonge.pdf (source-range-7239e085-00628))_
-
-### Yes. Consider this variation:
-
-- In this book, we will use function declarations sparingly, and not use var at all. That does not mean that you should follow the exact same practice in your own code: The purpose of this book is to illustrate certain principles of programming. The purpose of your own code is to get things done. The two goals are often, but not always, aligned. _(javascriptallonge.pdf (source-range-7239e085-01221))_
-
-### Yes. Consider this variation: / Functional Iterators / caveat
-
-- For all intents and purposes, once you pass an iterator to a function, you can expect that you no longer 'own' that iterator, and that its state either has changed or will change. _(javascriptallonge.pdf (source-range-7239e085-01324))_
-
-### Recipes with Data / mapWith
-
-- 82 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It's the same idea, after all. _(javascriptallonge.pdf (source-range-7239e085-01440))_
-
-### Like this: / operations on ordered collections
-
-- 89 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It's the same idea, after all. _(javascriptallonge.pdf (source-range-7239e085-01588))_
-
-
-## Technical atoms
-
-### Technical frame 1: And also: / Magic Names / magic names and fat arrows
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-00631))_
-
-> Although this example is clearly unrealistic, there is a general design principle that deserves attention. Sometimes, a function is meant to be used as a Big-F function. It has a name, it is called by different pieces of code, it's a first-class entity in the code.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-00629))_
-
-<a id="atom-technical-atom-aeb7942534341524"></a>
-
-```
-const row = function () {
-return mapWith(
-function (column) { return column * arguments[0] },
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-)
-}
-row(3)
-//=> [1,4,9,16,25,36,49,64,81,100,121,144]
-```
-
-### Technical frame 2: Recipes with Data / mapWith
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01442))_
-
-> If we didn't use mapWith , we'd could have also used callRight with map to accomplish the same result:
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01441))_
-
-<a id="atom-technical-atom-b020d8626cf2b008"></a>
-
-```
-const squaresOf = mapWith(n => n * n);
-squaresOf([1, 2, 3, 4, 5])
-//=> [1, 4, 9, 16, 25]
-```
-
-### Technical frame 3: Like this: / operations on ordered collections
-
-**Context:** _(javascriptallonge.pdf (source-range-7239e085-01590))_
-
-> This illustrates the general pattern of working with ordered collections: We make them iterables , meaning that they have a [Symbol.iterator] method, that returns an iterator . An iterator is also an object, but with a .next() method that is invoked repeatedly to obtain the elements in order.
-
-**Atom:** _(javascriptallonge.pdf (source-range-7239e085-01589))_
-
-<a id="atom-technical-atom-54c71ac655b9bf50"></a>
-
-```
-const mapWith = (fn, collection) =>
-({
-[Symbol.iterator] () {
-const iterator = collection[Symbol.iterator]();
-return {
-next () {
-const {done, value} = iterator.next();
-return ({done, value: done ? undefined : fn(value)});
-}
-}
-}
-});
-```
-
+- Purpose uses a code block technical record at #atom-technical-atom-aeb7942534341524. _(raw/javascriptallonge.pdf (source-range-7239e085-00629))_
+- Purpose uses a code block technical record at #atom-technical-atom-b020d8626cf2b008. _(raw/javascriptallonge.pdf (source-range-7239e085-01441))_
+- Purpose uses a code block technical record at #atom-technical-atom-54c71ac655b9bf50. _(raw/javascriptallonge.pdf (source-range-7239e085-01589))_
+- Purpose uses a table technical record at #atom-technical-atom-004428297e1534ac. _(raw/javascriptallonge.pdf (source-range-7239e085-00570))_
 
 ## Related pages
 
-### Shared technical atoms
+- [[javascriptallonge-discussing]] - shared statements and technical atoms
+- [[javascriptallonge-idea]] - shared statements and technical atoms
+- [[javascriptallonge-function]] - shared statements and technical atoms
+- [[javascriptallonge-argument]] - shared technical atoms
+- [[javascriptallonge-mapwith]] - shared technical atoms
+- [[javascriptallonge-return]] - shared technical atoms
+- [[javascriptallonge-iterator]] - shared statements and technical atoms
+- [[javascriptallonge-javascript]] - shared technical atoms
+- [[javascriptallonge-code]] - shared statements
+- [[javascriptallonge-functional-iterator]] - shared statements
 
-- [[javascriptallonge-discussing]] - shared statements and technical atoms: Discussing shares source evidence from And also: / Magic Names / magic names and fat arrows: 44 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the t ... [truncated]; Discussing shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (3 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-idea]] - shared statements and technical atoms: Idea shares source evidence from And also: / Magic Names / magic names and fat arrows: 44 Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the t ... [truncated]; Idea shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (3 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-function]] - shared statements and technical atoms: Function shares source evidence from Yes. Consider this variation: / Functional Iterators / caveat: For all intents and purposes, once you pass an iterator to a function, you can expect that you no longer 'own' that iterator, and that its state either has changed or will change.; Function shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (1 shared statement(s), 2 shared atom(s))
-- [[javascriptallonge-argument]] - shared technical atoms: Argument shares technical record from And also: / Magic Names / magic names and fat arrows: const row = function () { return mapWith( function (column) { return column * arguments[0] }, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] ) } row(3) //=> [1,4,9,16,25,36 ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-mapwith]] - shared technical atoms: Mapwith shares technical record from Recipes with Data / mapWith: const squaresOf = mapWith(n => n * n); squaresOf([1, 2, 3, 4, 5]) //=> [1, 4, 9, 16, 25] (2 shared atom(s))
-- [[javascriptallonge-return]] - shared technical atoms: Return shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (2 shared atom(s))
-- [[javascriptallonge-iterator]] - shared statements and technical atoms: Iterator shares source evidence from Yes. Consider this variation: / Functional Iterators / caveat: For all intents and purposes, once you pass an iterator to a function, you can expect that you no longer 'own' that iterator, and that its state either has changed or will change.; Iterator shares technical record from Like this: / operations on ordered collections: const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next( ... [truncated] (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-javascript]] - shared technical atoms: Javascript shares technical table: function decorators A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a ... [truncated] (1 shared atom(s))
+## Source Trail
 
-### Shared claims
-
-- [[javascriptallonge-code]] - shared statements: Code shares source evidence from Yes. Consider this variation:: In this book, we will use function declarations sparingly, and not use var at all. That does not mean that you should follow the exact same practice in your own code ... [truncated] (1 shared statement(s))
-- [[javascriptallonge-functional-iterator]] - shared statements: Functional Iterators shares source evidence from Yes. Consider this variation: / Functional Iterators / caveat: For all intents and purposes, once you pass an iterator to a function, you can expect that you no longer 'own' that iterator, and that its state either has changed or will change. (1 shared statement(s))
-
-## Source
-
-- [[javascriptallonge]]
+- Source manifest: [[javascriptallonge]]
+- Source section: [[javascriptallonge-section-and-also-magic-names-magic-names-and-fat-arrows-a644f644]]
+- Source section: [[javascriptallonge-section-yes-consider-this-variation-b8b28d41]]
+- Source section: [[javascriptallonge-section-yes-consider-this-variation-functional-iterators-caveat-c90295dd]]
+- Source section: [[javascriptallonge-section-recipes-with-data-mapwith-588e9415]]
