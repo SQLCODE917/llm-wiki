@@ -6,6 +6,7 @@ from dataclasses import dataclass
 
 from llmwiki.domain.ledger.artifacts import BlockedWriteDiagnosticArtifact, PortableArtifactSet
 from llmwiki.domain.ledger.evidence_pack import EvidencePackSet
+from llmwiki.domain.ledger.human_article import HumanArticleOutput
 from llmwiki.domain.ledger.page_publication import (
     PagePublicationPlan,
     PublicationWalkabilityReport,
@@ -41,3 +42,4 @@ class SourceLedgerResult:
     page_publication_plan: PagePublicationPlan | None = None
     publication_walkability_report: PublicationWalkabilityReport | None = None
     evidence_pack_set: EvidencePackSet | None = None
+    human_article_output: HumanArticleOutput | None = None

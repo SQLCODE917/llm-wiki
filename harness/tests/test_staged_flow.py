@@ -88,6 +88,8 @@ def test_source_ledger_persists_stage_artifacts_from_real_pipeline() -> None:
         "publish-run.json",
         "page-publication-plan.json",
         "evidence-pack-set.json",
+        "human-article.json",
+        "human-article-findings.json",
         "publication-walkability-report.md",
     ):
         assert filename in result.artifact_files

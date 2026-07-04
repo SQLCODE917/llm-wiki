@@ -125,10 +125,10 @@ from llmwiki.pdf.pipeline import (
     save_manifest,
 )
 from llmwiki.runtime.cross_source_pipeline import build_cross_source_pages
+from llmwiki.runtime.human_article_forge import ForgeHumanArticleWriter
 from llmwiki.runtime.ledger_pipeline import build_source_ledger
 from llmwiki.runtime.ledger_result import SourceLedgerResult
 from llmwiki.runtime.ledger_segmentation import ChunkText
-from llmwiki.runtime.page_synthesis_forge import ForgePageDraftProducer
 from llmwiki.runtime.pdf_source_units import (
     extracted_units_from_pdf_cache,
     extracted_units_from_source_map,
@@ -305,7 +305,7 @@ class Session:
     on_chunk_note: Callable[[str], None] | None = None  # per-chunk supervision
     strict_evidence: StrictEvidenceMode = "off"
     ingest_profiles: tuple[IngestProfile, ...] = ()
-    draft_synthesized_pages: bool = False
+    write_human_articles: bool = False
 
     def _evidence_policy(self) -> EvidencePolicy:
         return EvidencePolicy(mode=self.strict_evidence)
@@ -403,11 +403,11 @@ class Session:
     ) -> OperationResult:
         registry = build_evidence_registry(page_plan, (source_text,))
         registry_hash = short_digest(registry_to_json(registry), 32)
-        draft_producer = None
-        if self.draft_synthesized_pages:
+        article_writer = None
+        if self.write_human_articles:
             if self.client is None:
-                raise RuntimeError("Page synthesis drafting requires a configured Forge client.")
-            draft_producer = ForgePageDraftProducer(
+                raise RuntimeError("Human article writing requires a configured Forge client.")
+            article_writer = ForgeHumanArticleWriter(
                 client=self.client,
                 context_manager=self.context_manager,
                 schema_text=self.store.read_schema(),
@@ -427,7 +427,7 @@ class Session:
             source_claims=page_plan.source_claims,
             today=self.today,
             schema=ingest_run.schema,
-            draft_producer=draft_producer,
+            article_writer=article_writer,
             evidence_record_set=evidence_record_set,
             source_profile_kind=source_profile_kind,
         )
@@ -450,6 +450,7 @@ class Session:
         typed_evidence_line = _typed_evidence_report_line(evidence_record_set)
         publication_line = _publication_budget_report_line(ledger)
         evidence_pack_line = _evidence_pack_report_line(ledger)
+        human_article_line = _human_article_report_line(ledger)
         report = (
             f"Claim-ledger ingest of raw/{source_locator} ({len(chunks)} source unit(s)).\n"
             f"{ledger.summary}\n"
@@ -457,6 +458,7 @@ class Session:
             f"{typed_evidence_line}"
             f"{publication_line}"
             f"{evidence_pack_line}"
+            f"{human_article_line}"
             f"Source page: {written}; linked pages: {len(ledger.topic_pages)}. "
             f"Ledger artifacts: {self.store.page_plan_artifact_dir(source_locator)}/ledger."
         )
@@ -1343,6 +1345,18 @@ def _evidence_pack_report_line(ledger: SourceLedgerResult) -> str:
         "Evidence packs: "
         f"{len(pack_set.packs)} valid, "
         f"{pack_set.missing_pack_count} missing/invalid candidate(s).\n"
+    )
+
+
+def _human_article_report_line(ledger: SourceLedgerResult) -> str:
+    output = ledger.human_article_output
+    if output is None:
+        return ""
+    failed_page_ids = {finding.page_id for finding in output.findings}
+    return (
+        "Human articles: "
+        f"{len(output.records)} accepted, "
+        f"{len(failed_page_ids)} rejected page(s).\n"
     )
 
 

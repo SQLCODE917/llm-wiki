@@ -67,6 +67,14 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `EvidencePackItem` | `evidence_pack_item` |
 | `EvidencePackCoverage` | `evidence_pack_coverage` |
 | `SupportRef` | `support_ref` |
+| `HumanArticle` | `human_article` |
+| `ArticleSection` | `article_section` |
+| `ArticleBlock` | `article_block` |
+| `ArticleClaim` | `article_claim` |
+| `ArticleCitation` | `article_citation` |
+| `ArticleRelatedLink` | `article_related_link` |
+| `ArticleFinding` | `article_finding` |
+| `ArticleRenderer` | `article_renderer` |
 | `Schema` | `schema` |
 | `WikiStructure` | `wiki_structure` |
 | `IngestRun` | `ingest_run` |
@@ -186,6 +194,14 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | EvidencePackItem | Exists | `llmwiki.domain.ledger.evidence_pack`; one full-text or payload support item in an `EvidencePack` |
 | EvidencePackCoverage | Exists | `llmwiki.domain.ledger.evidence_pack`; coverage relationship between a page purpose and selected support |
 | SupportRef | Exists | `llmwiki.domain.ledger.evidence_pack`; stable support reference that article claims can cite |
+| HumanArticle | Exists | `llmwiki.domain.ledger.human_article`; structured article content for one public generated page |
+| ArticleSection | Exists | `llmwiki.domain.ledger.human_article`; one headed section inside a `HumanArticle` |
+| ArticleBlock | Exists | `llmwiki.domain.ledger.human_article`; structured prose, list, table, or code block inside an article section |
+| ArticleClaim | Exists | `llmwiki.domain.ledger.human_article`; one factual article sentence with evidence-pack support refs |
+| ArticleCitation | Exists | `llmwiki.domain.ledger.human_article`; one resolved citation from an article claim to pack support |
+| ArticleRelatedLink | Exists | `llmwiki.domain.ledger.human_article`; navigation-only related-page preview for a rendered article |
+| ArticleFinding | Exists | `llmwiki.domain.ledger.human_article`; validation or write finding for article generation |
+| ArticleRenderer | Exists | `llmwiki.domain.ledger.human_article_rendering`; harness-owned renderer from accepted `HumanArticle` to wiki markdown |
 | ClaimRoleTag | Exists | `llmwiki.domain.source_summary`; default vocabulary owned by `Schema` |
 | SourceClaim | Exists | `llmwiki.domain.source_summary`; built by `llmwiki.domain.source_claims` |
 | SourceClaimGroup | Exists | `llmwiki.domain.source_summary`; groups `SourceClaim` records for coverage planning |

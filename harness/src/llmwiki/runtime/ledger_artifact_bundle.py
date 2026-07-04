@@ -9,7 +9,6 @@ from llmwiki.domain.ledger.artifacts import (
     ClaimLedgerArtifact,
     DocumentStructureArtifact,
     LedgerQualityReportArtifact,
-    PageDraftArtifact,
     PageSynthesisFindingsArtifact,
     PageSynthesisPlanArtifact,
     PortableArtifactMember,
@@ -23,6 +22,10 @@ from llmwiki.domain.ledger.artifacts import (
 )
 from llmwiki.domain.ledger.canonical import canonical_json
 from llmwiki.domain.ledger.evidence_pack import EvidencePackSet
+from llmwiki.domain.ledger.human_article_artifacts import (
+    HumanArticleArtifact,
+    HumanArticleFindingsArtifact,
+)
 from llmwiki.domain.ledger.knowledge_shapes import KnowledgeShapeCatalog
 from llmwiki.domain.ledger.page_publication import (
     PagePublicationPlan,
@@ -56,8 +59,9 @@ def build_serialized_artifact_bundle(
     coverage_artifact: ProjectionCoverageArtifact,
     projection_context_artifact: ProjectionContextArtifact,
     page_synthesis_plan_artifact: PageSynthesisPlanArtifact,
-    page_draft_artifact: PageDraftArtifact,
     page_synthesis_findings_artifact: PageSynthesisFindingsArtifact,
+    human_article_artifact: HumanArticleArtifact,
+    human_article_findings_artifact: HumanArticleFindingsArtifact,
     page_publication_plan: PagePublicationPlan,
     publication_walkability_report: PublicationWalkabilityReport,
     evidence_pack_set: EvidencePackSet,
@@ -81,8 +85,9 @@ def build_serialized_artifact_bundle(
         coverage_artifact,
         projection_context_artifact,
         page_synthesis_plan_artifact,
-        page_draft_artifact,
         page_synthesis_findings_artifact,
+        human_article_artifact,
+        human_article_findings_artifact,
         page_publication_plan,
         evidence_pack_set,
         section_plan,
@@ -104,8 +109,9 @@ def build_serialized_artifact_bundle(
         coverage_artifact,
         projection_context_artifact,
         page_synthesis_plan_artifact,
-        page_draft_artifact,
         page_synthesis_findings_artifact,
+        human_article_artifact,
+        human_article_findings_artifact,
         page_publication_plan,
         publication_walkability_report,
         evidence_pack_set,
@@ -134,8 +140,9 @@ def _artifact_members(
     coverage_artifact: ProjectionCoverageArtifact,
     projection_context_artifact: ProjectionContextArtifact,
     page_synthesis_plan_artifact: PageSynthesisPlanArtifact,
-    page_draft_artifact: PageDraftArtifact,
     page_synthesis_findings_artifact: PageSynthesisFindingsArtifact,
+    human_article_artifact: HumanArticleArtifact,
+    human_article_findings_artifact: HumanArticleFindingsArtifact,
     page_publication_plan: PagePublicationPlan,
     evidence_pack_set: EvidencePackSet,
     section_plan: SectionGroundedPlan,
@@ -190,14 +197,19 @@ def _artifact_members(
             page_synthesis_plan_artifact.page_synthesis_plan_fingerprint,
         ),
         _member(
-            "page-draft-artifact",
-            page_draft_artifact.page_draft_artifact_id,
-            page_draft_artifact.page_draft_fingerprint,
-        ),
-        _member(
             "page-synthesis-findings-artifact",
             page_synthesis_findings_artifact.page_synthesis_findings_artifact_id,
             page_synthesis_findings_artifact.page_synthesis_findings_fingerprint,
+        ),
+        _member(
+            "human-article-artifact",
+            human_article_artifact.human_article_artifact_id,
+            human_article_artifact.human_article_fingerprint,
+        ),
+        _member(
+            "human-article-findings-artifact",
+            human_article_findings_artifact.human_article_findings_artifact_id,
+            human_article_findings_artifact.human_article_findings_fingerprint,
         ),
         _member(
             "page-publication-plan-artifact",
@@ -273,8 +285,9 @@ def _artifact_files(
     coverage_artifact: ProjectionCoverageArtifact,
     projection_context_artifact: ProjectionContextArtifact,
     page_synthesis_plan_artifact: PageSynthesisPlanArtifact,
-    page_draft_artifact: PageDraftArtifact,
     page_synthesis_findings_artifact: PageSynthesisFindingsArtifact,
+    human_article_artifact: HumanArticleArtifact,
+    human_article_findings_artifact: HumanArticleFindingsArtifact,
     page_publication_plan: PagePublicationPlan,
     publication_walkability_report: PublicationWalkabilityReport,
     evidence_pack_set: EvidencePackSet,
@@ -302,9 +315,12 @@ def _artifact_files(
         "projection-coverage.json": canonical_json(coverage_artifact, indent=2),
         "projection-context.json": canonical_json(projection_context_artifact, indent=2),
         "page-synthesis-plan.json": canonical_json(page_synthesis_plan_artifact, indent=2),
-        "page-draft.json": canonical_json(page_draft_artifact, indent=2),
         "page-synthesis-findings.json": canonical_json(
             page_synthesis_findings_artifact, indent=2
+        ),
+        "human-article.json": canonical_json(human_article_artifact, indent=2),
+        "human-article-findings.json": canonical_json(
+            human_article_findings_artifact, indent=2
         ),
         "page-publication-plan.json": canonical_json(page_publication_plan, indent=2),
         "evidence-pack-set.json": canonical_json(evidence_pack_set, indent=2),

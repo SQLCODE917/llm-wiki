@@ -126,11 +126,11 @@ def _build_parser() -> argparse.ArgumentParser:
         "(rebuilds the hub with current salience).",
     )
     ingest.add_argument(
-        "--draft-synthesized-pages",
+        "--write-human-articles",
         action="store_true",
-        help="Use the configured Forge/Ollama runtime to draft high-value synthesized "
-        "pages from PageEvidenceSet evidence. By default, synthesized pages are "
-        "rejected instead of publishing fallback prose.",
+        help="Use the configured Forge/Ollama runtime to write structured human "
+        "articles from EvidencePack support. By default, generated public "
+        "articles are rejected instead of publishing fallback prose.",
     )
     _add_pdf_extractor_arg(ingest)
 
@@ -396,7 +396,7 @@ async def _run(args: argparse.Namespace) -> OperationResult:
             print(f"[strict-evidence: {strict_evidence}]", file=sys.stderr)
             print(f"[ingest-profiles: {profile_summary(ingest_profiles)}]", file=sys.stderr)
             print(f"[pdf-extractor: {args.pdf_extractor}]", file=sys.stderr)
-        if args.op == "ingest" and args.draft_synthesized_pages:
+        if args.op == "ingest" and args.write_human_articles:
             backend_config = load_backend_config(args.runtime)
             backend = await start_backend(backend_config)
             try:
@@ -414,7 +414,7 @@ async def _run(args: argparse.Namespace) -> OperationResult:
                     on_chunk_note=lambda note: print(note, flush=True),
                     strict_evidence=strict_evidence,
                     ingest_profiles=ingest_profiles,
-                    draft_synthesized_pages=True,
+                    write_human_articles=True,
                 )
                 return await session.ingest(
                     args.source, reextract=args.reextract, reintegrate=args.reintegrate

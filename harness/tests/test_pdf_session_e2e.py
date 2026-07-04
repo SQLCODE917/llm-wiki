@@ -230,6 +230,8 @@ async def test_pdf_ingest_writes_ledger_projection(store: WikiStore, paths: Wiki
     assert (ledger_dir / "topics.json").is_file()
     assert (ledger_dir / "page-publication-plan.json").is_file()
     assert (ledger_dir / "evidence-pack-set.json").is_file()
+    assert (ledger_dir / "human-article.json").is_file()
+    assert (ledger_dir / "human-article-findings.json").is_file()
     assert (ledger_dir / "publication-walkability-report.md").is_file()
     source_profile = store.read_source_profile_artifact("book.pdf")
     extraction_plan = store.read_evidence_extraction_plan_artifact("book.pdf")
@@ -248,6 +250,7 @@ async def test_pdf_ingest_writes_ledger_projection(store: WikiStore, paths: Wiki
     assert "Source profile:" in result.output
     assert "Typed evidence records:" in result.output
     assert "Publication budget:" in result.output
+    assert "Human articles:" in result.output
     assert "Evidence packs:" in result.output
     saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
     assert saved.integrated

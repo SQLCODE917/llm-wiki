@@ -165,8 +165,8 @@ Example: a topic page shows `Distance=20 meters`, not only an atom id.
 - A draft with navigation summary prose is rejected.
 - Related links include readable previews.
 - Atom evidence renders payload text.
-- `uv run llmwiki ingest --draft-synthesized-pages <source>` uses the
-  Forge/Ollama draft producer instead of the rejection-only producer.
+- `uv run llmwiki ingest --write-human-articles <source>` uses the
+  Forge/Ollama article writer instead of the rejection-only writer.
 - `uv run pytest --cov=llmwiki` passes.
 - `uv run ruff check` passes.
 - `uv run mypy harness/src/llmwiki` passes.

@@ -7,7 +7,6 @@ from llmwiki.domain.ledger.artifacts import (
     build_claim_ledger_artifact,
     build_document_structure_artifact,
     build_ledger_quality_report_artifact,
-    build_page_draft_artifact,
     build_page_synthesis_findings_artifact,
     build_page_synthesis_plan_artifact,
     build_projection_context_artifact,
@@ -18,6 +17,11 @@ from llmwiki.domain.ledger.artifacts import (
 from llmwiki.domain.ledger.builder import build_claim_ledger, default_schema_bundle
 from llmwiki.domain.ledger.canonical import deterministic_id
 from llmwiki.domain.ledger.evidence_pack import empty_evidence_pack_set
+from llmwiki.domain.ledger.human_article import ArticleWriter, HumanArticleOutput
+from llmwiki.domain.ledger.human_article_artifacts import (
+    build_human_article_artifact,
+    build_human_article_findings_artifact,
+)
 from llmwiki.domain.ledger.knowledge_shapes import build_knowledge_shape_catalog
 from llmwiki.domain.ledger.page_publication_planning import (
     empty_publication_plan,
@@ -25,7 +29,6 @@ from llmwiki.domain.ledger.page_publication_planning import (
 from llmwiki.domain.ledger.page_publication_planning import (
     publication_walkability_report as build_publication_walkability_report,
 )
-from llmwiki.domain.ledger.page_synthesis_drafting import PageDraftProducer
 from llmwiki.domain.ledger.pointers import (
     claim_ledger_pointer,
     document_structure_pointer,
@@ -81,7 +84,7 @@ def build_source_ledger(
     source_claims: tuple[SourceClaim, ...] = (),
     today: str,
     schema: Schema | None = None,
-    draft_producer: PageDraftProducer | None = None,
+    article_writer: ArticleWriter | None = None,
     evidence_record_set: EvidenceRecordSet | None = None,
     source_profile_kind: str = "general-prose",
 ) -> SourceLedgerResult:
@@ -214,8 +217,11 @@ def build_source_ledger(
     page_synthesis_plan_artifact = build_page_synthesis_plan_artifact(
         source_hash=source_hash, plans=()
     )
-    page_draft_artifact = build_page_draft_artifact(source_hash=source_hash, draft_records=())
     page_synthesis_findings_artifact = build_page_synthesis_findings_artifact(
+        source_hash=source_hash, findings=()
+    )
+    human_article_artifact = build_human_article_artifact(source_hash=source_hash, records=())
+    human_article_findings_artifact = build_human_article_findings_artifact(
         source_hash=source_hash, findings=()
     )
     page_publication_plan = empty_publication_plan(
@@ -229,6 +235,7 @@ def build_source_ledger(
         source_hash=source_hash,
         source_profile_kind=source_profile_kind,
     )
+    human_article_output = HumanArticleOutput((), ())
     blocked = None
     wiki_page: WikiPage | None = None
     topic_pages: tuple[WikiPage, ...] = ()
@@ -258,7 +265,7 @@ def build_source_ledger(
             rendered=rendered,
             support=support,
             projection_report_artifact=projection_report_artifact,
-            draft_producer=draft_producer,
+            article_writer=article_writer,
             evidence_record_set=evidence_record_set,
             source_profile_kind=source_profile_kind,
             source_map=source_map,
@@ -267,11 +274,13 @@ def build_source_ledger(
         topic_pages = linked_projection.linked_pages
         coverage_artifact = linked_projection.coverage_artifact
         page_synthesis_plan_artifact = linked_projection.page_synthesis_plan_artifact
-        page_draft_artifact = linked_projection.page_draft_artifact
         page_synthesis_findings_artifact = linked_projection.page_synthesis_findings_artifact
+        human_article_artifact = linked_projection.human_article_artifact
+        human_article_findings_artifact = linked_projection.human_article_findings_artifact
         page_publication_plan = linked_projection.page_publication_plan
         publication_walkability_report = linked_projection.publication_walkability_report
         evidence_pack_set = linked_projection.evidence_pack_set
+        human_article_output = linked_projection.human_article_output
         staged_pages = (wiki_page, *topic_pages)
     staged_page_set = build_staged_page_set(source_plan, staged_pages)
     lint_run = build_lint_run(
@@ -294,8 +303,9 @@ def build_source_ledger(
         coverage_artifact=coverage_artifact,
         projection_context_artifact=projection_context_artifact,
         page_synthesis_plan_artifact=page_synthesis_plan_artifact,
-        page_draft_artifact=page_draft_artifact,
         page_synthesis_findings_artifact=page_synthesis_findings_artifact,
+        human_article_artifact=human_article_artifact,
+        human_article_findings_artifact=human_article_findings_artifact,
         page_publication_plan=page_publication_plan,
         publication_walkability_report=publication_walkability_report,
         evidence_pack_set=evidence_pack_set,
@@ -330,4 +340,5 @@ def build_source_ledger(
         page_publication_plan=page_publication_plan,
         publication_walkability_report=publication_walkability_report,
         evidence_pack_set=evidence_pack_set,
+        human_article_output=human_article_output,
     )
