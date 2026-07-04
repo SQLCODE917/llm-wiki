@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from llmwiki.domain.ledger.article_lint_artifacts import build_article_lint_artifact
 from llmwiki.domain.ledger.artifacts import (
     build_blocked_write_diagnostic_artifact,
     build_claim_ledger_artifact,
@@ -224,6 +225,7 @@ def build_source_ledger(
     human_article_findings_artifact = build_human_article_findings_artifact(
         source_hash=source_hash, findings=()
     )
+    article_lint_artifact = build_article_lint_artifact(source_hash=source_hash, runs=())
     page_publication_plan = empty_publication_plan(
         source_id=page_id,
         source_hash=source_hash,
@@ -277,6 +279,7 @@ def build_source_ledger(
         page_synthesis_findings_artifact = linked_projection.page_synthesis_findings_artifact
         human_article_artifact = linked_projection.human_article_artifact
         human_article_findings_artifact = linked_projection.human_article_findings_artifact
+        article_lint_artifact = linked_projection.article_lint_artifact
         page_publication_plan = linked_projection.page_publication_plan
         publication_walkability_report = linked_projection.publication_walkability_report
         evidence_pack_set = linked_projection.evidence_pack_set
@@ -306,6 +309,7 @@ def build_source_ledger(
         page_synthesis_findings_artifact=page_synthesis_findings_artifact,
         human_article_artifact=human_article_artifact,
         human_article_findings_artifact=human_article_findings_artifact,
+        article_lint_artifact=article_lint_artifact,
         page_publication_plan=page_publication_plan,
         publication_walkability_report=publication_walkability_report,
         evidence_pack_set=evidence_pack_set,
@@ -341,4 +345,5 @@ def build_source_ledger(
         publication_walkability_report=publication_walkability_report,
         evidence_pack_set=evidence_pack_set,
         human_article_output=human_article_output,
+        article_lint_artifact=article_lint_artifact,
     )

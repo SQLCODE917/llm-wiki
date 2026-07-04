@@ -75,6 +75,12 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `ArticleRelatedLink` | `article_related_link` |
 | `ArticleFinding` | `article_finding` |
 | `ArticleRenderer` | `article_renderer` |
+| `ArticleLintRun` | `article_lint_run` |
+| `ArticleLintFinding` | `article_lint_finding` |
+| `ArticleAuthorityMetrics` | `article_authority_metrics` |
+| `ArticleCoherenceMetrics` | `article_coherence_metrics` |
+| `PublicationGate` | `publication_gate` |
+| `ArticleLintArtifact` | `article_lint_artifact` |
 | `Schema` | `schema` |
 | `WikiStructure` | `wiki_structure` |
 | `IngestRun` | `ingest_run` |
@@ -202,6 +208,12 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | ArticleRelatedLink | Exists | `llmwiki.domain.ledger.human_article`; navigation-only related-page preview for a rendered article |
 | ArticleFinding | Exists | `llmwiki.domain.ledger.human_article`; validation or write finding for article generation |
 | ArticleRenderer | Exists | `llmwiki.domain.ledger.human_article_rendering`; harness-owned renderer from accepted `HumanArticle` to wiki markdown |
+| ArticleLintRun | Exists | `llmwiki.domain.ledger.article_lint_contracts`; deterministic per-page lint run after article rendering |
+| ArticleLintFinding | Exists | `llmwiki.domain.ledger.article_lint_contracts`; one citation, authority, coherence, or title lint finding |
+| ArticleAuthorityMetrics | Exists | `llmwiki.domain.ledger.article_lint_contracts`; measured citation coverage for rendered factual article prose |
+| ArticleCoherenceMetrics | Exists | `llmwiki.domain.ledger.article_lint_contracts`; measured clipped, copied, unreadable, and missing-navigation-preview counts |
+| PublicationGate | Exists | `llmwiki.domain.ledger.article_lint_contracts`; deterministic accept/block decision for one generated article page |
+| ArticleLintArtifact | Exists | `llmwiki.domain.ledger.article_lint_artifacts`; source-scoped artifact containing article lint runs |
 | ClaimRoleTag | Exists | `llmwiki.domain.source_summary`; default vocabulary owned by `Schema` |
 | SourceClaim | Exists | `llmwiki.domain.source_summary`; built by `llmwiki.domain.source_claims` |
 | SourceClaimGroup | Exists | `llmwiki.domain.source_summary`; groups `SourceClaim` records for coverage planning |

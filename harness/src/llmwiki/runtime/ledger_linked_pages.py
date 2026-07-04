@@ -4,6 +4,10 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from llmwiki.domain.ledger.article_lint_artifacts import (
+    ArticleLintArtifact,
+    build_article_lint_artifact,
+)
 from llmwiki.domain.ledger.artifacts import (
     LedgerQualityReportArtifact,
     PageSynthesisFindingsArtifact,
@@ -67,6 +71,7 @@ class LinkedPageProjection:
     page_synthesis_findings_artifact: PageSynthesisFindingsArtifact
     human_article_artifact: HumanArticleArtifact
     human_article_findings_artifact: HumanArticleFindingsArtifact
+    article_lint_artifact: ArticleLintArtifact
     page_publication_plan: PagePublicationPlan
     publication_walkability_report: PublicationWalkabilityReport
     evidence_pack_set: EvidencePackSet
@@ -138,6 +143,10 @@ def build_linked_page_projection(
         today=today,
         article_writer=article_writer,
         collection_plans=publication_inputs.collection_plans,
+        title_findings_by_page_id={
+            candidate.page_id: candidate.title_findings
+            for candidate in publication_plan.accepted_candidates
+        },
     )
     linked_pages = (*human_articles.pages, *section_pages)
     page_synthesis_plan_artifact = build_page_synthesis_plan_artifact(
@@ -151,6 +160,10 @@ def build_linked_page_projection(
     )
     human_article_findings_artifact = build_human_article_findings_artifact(
         source_hash=ledger.source_hash, findings=human_articles.article_output.findings
+    )
+    article_lint_artifact = build_article_lint_artifact(
+        source_hash=ledger.source_hash,
+        runs=human_articles.article_lint_runs,
     )
     navigation = build_source_navigation_plan(
         source_page_id=page_id,
@@ -193,6 +206,7 @@ def build_linked_page_projection(
         page_synthesis_findings_artifact,
         human_article_artifact,
         human_article_findings_artifact,
+        article_lint_artifact,
         publication_plan,
         publication_report,
         evidence_pack_set,

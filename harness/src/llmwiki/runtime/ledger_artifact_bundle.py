@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from llmwiki.domain.ledger.article_lint_artifacts import ArticleLintArtifact
 from llmwiki.domain.ledger.artifacts import (
     BlockedWriteDiagnosticArtifact,
     ClaimLedgerArtifact,
@@ -62,6 +63,7 @@ def build_serialized_artifact_bundle(
     page_synthesis_findings_artifact: PageSynthesisFindingsArtifact,
     human_article_artifact: HumanArticleArtifact,
     human_article_findings_artifact: HumanArticleFindingsArtifact,
+    article_lint_artifact: ArticleLintArtifact,
     page_publication_plan: PagePublicationPlan,
     publication_walkability_report: PublicationWalkabilityReport,
     evidence_pack_set: EvidencePackSet,
@@ -88,6 +90,7 @@ def build_serialized_artifact_bundle(
         page_synthesis_findings_artifact,
         human_article_artifact,
         human_article_findings_artifact,
+        article_lint_artifact,
         page_publication_plan,
         evidence_pack_set,
         section_plan,
@@ -112,6 +115,7 @@ def build_serialized_artifact_bundle(
         page_synthesis_findings_artifact,
         human_article_artifact,
         human_article_findings_artifact,
+        article_lint_artifact,
         page_publication_plan,
         publication_walkability_report,
         evidence_pack_set,
@@ -143,6 +147,7 @@ def _artifact_members(
     page_synthesis_findings_artifact: PageSynthesisFindingsArtifact,
     human_article_artifact: HumanArticleArtifact,
     human_article_findings_artifact: HumanArticleFindingsArtifact,
+    article_lint_artifact: ArticleLintArtifact,
     page_publication_plan: PagePublicationPlan,
     evidence_pack_set: EvidencePackSet,
     section_plan: SectionGroundedPlan,
@@ -210,6 +215,11 @@ def _artifact_members(
             "human-article-findings-artifact",
             human_article_findings_artifact.human_article_findings_artifact_id,
             human_article_findings_artifact.human_article_findings_fingerprint,
+        ),
+        _member(
+            "article-lint-artifact",
+            article_lint_artifact.article_lint_artifact_id,
+            article_lint_artifact.article_lint_fingerprint,
         ),
         _member(
             "page-publication-plan-artifact",
@@ -288,6 +298,7 @@ def _artifact_files(
     page_synthesis_findings_artifact: PageSynthesisFindingsArtifact,
     human_article_artifact: HumanArticleArtifact,
     human_article_findings_artifact: HumanArticleFindingsArtifact,
+    article_lint_artifact: ArticleLintArtifact,
     page_publication_plan: PagePublicationPlan,
     publication_walkability_report: PublicationWalkabilityReport,
     evidence_pack_set: EvidencePackSet,
@@ -322,6 +333,7 @@ def _artifact_files(
         "human-article-findings.json": canonical_json(
             human_article_findings_artifact, indent=2
         ),
+        "article-lint-runs.json": canonical_json(article_lint_artifact, indent=2),
         "page-publication-plan.json": canonical_json(page_publication_plan, indent=2),
         "evidence-pack-set.json": canonical_json(evidence_pack_set, indent=2),
         "publication-walkability-report.md": render_publication_walkability_report(

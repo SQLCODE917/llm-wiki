@@ -451,6 +451,7 @@ class Session:
         publication_line = _publication_budget_report_line(ledger)
         evidence_pack_line = _evidence_pack_report_line(ledger)
         human_article_line = _human_article_report_line(ledger)
+        article_lint_line = _article_lint_report_line(ledger)
         report = (
             f"Claim-ledger ingest of raw/{source_locator} ({len(chunks)} source unit(s)).\n"
             f"{ledger.summary}\n"
@@ -459,6 +460,7 @@ class Session:
             f"{publication_line}"
             f"{evidence_pack_line}"
             f"{human_article_line}"
+            f"{article_lint_line}"
             f"Source page: {written}; linked pages: {len(ledger.topic_pages)}. "
             f"Ledger artifacts: {self.store.page_plan_artifact_dir(source_locator)}/ledger."
         )
@@ -1357,6 +1359,22 @@ def _human_article_report_line(ledger: SourceLedgerResult) -> str:
         "Human articles: "
         f"{len(output.records)} accepted, "
         f"{len(failed_page_ids)} rejected page(s).\n"
+    )
+
+
+def _article_lint_report_line(ledger: SourceLedgerResult) -> str:
+    artifact = ledger.article_lint_artifact
+    if artifact is None:
+        return ""
+    top_codes = ", ".join(
+        f"{code}={count}" for code, count in artifact.top_blocking_codes
+    )
+    suffix = f" Top blocking codes: {top_codes}." if top_codes else ""
+    return (
+        "Article lint gates: "
+        f"{artifact.accepted_count} accepted, "
+        f"{artifact.blocked_count} blocked."
+        f"{suffix}\n"
     )
 
 

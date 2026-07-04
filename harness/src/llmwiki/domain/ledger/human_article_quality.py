@@ -2,14 +2,34 @@
 
 from __future__ import annotations
 
+import re
 from collections import Counter
 
 from llmwiki.domain.ledger.evidence_pack import EvidencePack
 from llmwiki.domain.ledger.human_article import ArticleBlock, ArticleFinding, HumanArticle
 from llmwiki.domain.ledger.page_synthesis_text import ngrams, words
+from llmwiki.domain.prose_flow import structural_incompleteness_reason
 
 _COPIED_NGRAM_SIZE = 8
 _MAX_COPIED_NGRAM_RATIO = 0.50
+_MODAL_ADVERB_TERMINAL = re.compile(
+    r"\b(?:will|would|can|could|may|might|must|should|shall)\s+"
+    r"(?:easily|also|only|then|again|therefore)[.!?]?$",
+    re.IGNORECASE,
+)
+_DETERMINER_MODAL_JAM = re.compile(
+    r"\b(?:a|an|the)\s+(?:will|can|may|must|should|shall)\s+\w+",
+    re.IGNORECASE,
+)
+_CONJUNCTION_MODAL_JAM = re.compile(
+    r"\b(?:destroys?|enters?|creates?|takes?)\s+(?:a|an|the)\s+"
+    r"(?:will|can|may|must|should|shall)\b",
+    re.IGNORECASE,
+)
+_CLIPPED_WILL_O_WISP = re.compile(
+    r"\bcomes?\s+into\s+will\s*-\s*o\s*-\s*wisp",
+    re.IGNORECASE,
+)
 
 
 def clipped_fragment_findings(
@@ -18,6 +38,16 @@ def clipped_fragment_findings(
     item_by_ref = {item.support_ref.code: item for item in pack.items}
     findings: list[ArticleFinding] = []
     for claim in article.claims:
+        if _is_structurally_clipped(claim.sentence):
+            findings.append(
+                _finding(
+                    pack,
+                    "clipped-evidence-fragment",
+                    "article claim appears to be a clipped source fragment",
+                    claim.claim_id,
+                )
+            )
+            continue
         claim_words = words(claim.sentence)
         if len(claim_words) < 5:
             continue
@@ -91,6 +121,17 @@ def _looks_like_clipped_fragment(
         return True
     return _is_ordered_subsequence(claim_words, source_words) and (
         len(source_words) - len(claim_words) >= 3
+    )
+
+
+def _is_structurally_clipped(text: str) -> bool:
+    cleaned = " ".join(text.split()).strip()
+    return (
+        structural_incompleteness_reason(cleaned) is not None
+        or _MODAL_ADVERB_TERMINAL.search(cleaned) is not None
+        or _CONJUNCTION_MODAL_JAM.search(cleaned) is not None
+        or _DETERMINER_MODAL_JAM.search(cleaned) is not None
+        or _CLIPPED_WILL_O_WISP.search(cleaned) is not None
     )
 
 

@@ -217,6 +217,7 @@ async def test_pdf_ingest_writes_ledger_projection(store: WikiStore, paths: Wiki
     result = await session.ingest("book.pdf")
 
     assert result.output.startswith("Claim-ledger ingest of raw/book.pdf")
+    assert "Article lint gates:" in result.output
     assert store.list_pages() == ["book"]
     book = store.read_page("book")
     assert "projection_coverage:" in book
@@ -232,6 +233,7 @@ async def test_pdf_ingest_writes_ledger_projection(store: WikiStore, paths: Wiki
     assert (ledger_dir / "evidence-pack-set.json").is_file()
     assert (ledger_dir / "human-article.json").is_file()
     assert (ledger_dir / "human-article-findings.json").is_file()
+    assert (ledger_dir / "article-lint-runs.json").is_file()
     assert (ledger_dir / "publication-walkability-report.md").is_file()
     source_profile = store.read_source_profile_artifact("book.pdf")
     extraction_plan = store.read_evidence_extraction_plan_artifact("book.pdf")

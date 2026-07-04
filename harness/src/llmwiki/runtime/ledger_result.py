@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from llmwiki.domain.ledger.article_lint_artifacts import ArticleLintArtifact
 from llmwiki.domain.ledger.artifacts import BlockedWriteDiagnosticArtifact, PortableArtifactSet
 from llmwiki.domain.ledger.evidence_pack import EvidencePackSet
 from llmwiki.domain.ledger.human_article import HumanArticleOutput
@@ -43,3 +44,4 @@ class SourceLedgerResult:
     publication_walkability_report: PublicationWalkabilityReport | None = None
     evidence_pack_set: EvidencePackSet | None = None
     human_article_output: HumanArticleOutput | None = None
+    article_lint_artifact: ArticleLintArtifact | None = None

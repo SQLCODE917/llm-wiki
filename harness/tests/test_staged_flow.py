@@ -90,6 +90,7 @@ def test_source_ledger_persists_stage_artifacts_from_real_pipeline() -> None:
         "evidence-pack-set.json",
         "human-article.json",
         "human-article-findings.json",
+        "article-lint-runs.json",
         "publication-walkability-report.md",
     ):
         assert filename in result.artifact_files
@@ -97,6 +98,7 @@ def test_source_ledger_persists_stage_artifacts_from_real_pipeline() -> None:
         member.portable_artifact_kind for member in result.portable_artifact_set.members
     }
     assert "source-plan-artifact" in member_kinds
+    assert "article-lint-artifact" in member_kinds
     assert "publish-run-artifact" in member_kinds
 
 

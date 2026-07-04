@@ -5,6 +5,8 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 
+from llmwiki.domain.ledger.article_lint import lint_human_article
+from llmwiki.domain.ledger.article_lint_contracts import ArticleLintRun
 from llmwiki.domain.ledger.collection_pages import CollectionPlan
 from llmwiki.domain.ledger.coverage import RenderedPage
 from llmwiki.domain.ledger.evidence_pack import EvidencePack, EvidencePackSet
@@ -17,6 +19,7 @@ from llmwiki.domain.ledger.human_article import (
 )
 from llmwiki.domain.ledger.human_article_rendering import render_human_article
 from llmwiki.domain.ledger.human_article_validation import validate_human_article
+from llmwiki.domain.ledger.page_title_lint import PageTitleFinding
 from llmwiki.domain.pages import PageMetadata, WikiPage
 
 _MAX_ARTICLE_ATTEMPTS = 2
@@ -27,6 +30,7 @@ class HumanArticleLinkedPages:
     pages: tuple[WikiPage, ...]
     collection_plans: tuple[CollectionPlan, ...]
     article_output: HumanArticleOutput
+    article_lint_runs: tuple[ArticleLintRun, ...]
 
 
 @dataclass(frozen=True)
@@ -34,6 +38,7 @@ class HumanArticleAttempt:
     page: WikiPage | None
     record: HumanArticleRecord | None
     findings: tuple[ArticleFinding, ...]
+    lint_run: ArticleLintRun | None = None
 
 
 def build_human_article_linked_pages(
@@ -43,15 +48,25 @@ def build_human_article_linked_pages(
     today: str,
     article_writer: ArticleWriter | None = None,
     collection_plans: tuple[CollectionPlan, ...] = (),
+    title_findings_by_page_id: dict[str, tuple[PageTitleFinding, ...]] | None = None,
 ) -> HumanArticleLinkedPages:
     writer = article_writer or RejectingArticleWriter()
     records: list[HumanArticleRecord] = []
     findings: list[ArticleFinding] = []
+    lint_runs: list[ArticleLintRun] = []
     pages: list[WikiPage] = []
+    title_findings = title_findings_by_page_id or {}
 
     for pack in evidence_pack_set.packs:
         metadata = article_metadata(pack, source_locator, today)
-        attempt = write_human_article_page(pack, metadata, writer)
+        attempt = write_human_article_page(
+            pack,
+            metadata,
+            writer,
+            title_findings=title_findings.get(pack.page_id, ()),
+        )
+        if attempt.lint_run is not None:
+            lint_runs.append(attempt.lint_run)
         if attempt.page is None or attempt.record is None:
             findings.extend(attempt.findings)
             continue
@@ -66,6 +81,7 @@ def build_human_article_linked_pages(
         pages=tuple(pages),
         collection_plans=accepted_collections,
         article_output=HumanArticleOutput(tuple(records), tuple(findings)),
+        article_lint_runs=tuple(lint_runs),
     )
 
 
@@ -75,6 +91,7 @@ def write_human_article_page(
     writer: ArticleWriter,
     *,
     max_attempts: int = _MAX_ARTICLE_ATTEMPTS,
+    title_findings: tuple[PageTitleFinding, ...] = (),
 ) -> HumanArticleAttempt:
     current_findings: tuple[ArticleFinding, ...] = ()
     for _ in range(max_attempts):
@@ -82,13 +99,36 @@ def write_human_article_page(
         result = validate_human_article(pack, article)
         if result.accepted:
             rendered = render_human_article(pack, article)
+            lint_run = lint_human_article(
+                article=article,
+                rendered=rendered,
+                pack=pack,
+                title_findings=title_findings,
+            )
+            if lint_run.publication_gate.decision != "accepted":
+                return HumanArticleAttempt(None, None, _lint_findings(lint_run), lint_run)
             record = HumanArticleRecord(article, rendered.page_body_hash, rendered.coverage)
             page = WikiPage.from_metadata(
                 with_article_coverage(metadata, pack, rendered), rendered.page_body
             )
-            return HumanArticleAttempt(page, record, ())
+            return HumanArticleAttempt(page, record, (), lint_run)
         current_findings = result.findings
     return HumanArticleAttempt(None, None, current_findings)
+
+
+def _lint_findings(lint_run: ArticleLintRun) -> tuple[ArticleFinding, ...]:
+    return tuple(
+        ArticleFinding(
+            finding.severity,
+            finding.finding_code,
+            finding.page_id,
+            finding.message,
+            finding.article_claim_id,
+            finding.support_ref,
+        )
+        for finding in lint_run.findings
+        if finding.severity == "blocking"
+    )
 
 
 def article_metadata(pack: EvidencePack, source_locator: str, today: str) -> PageMetadata:

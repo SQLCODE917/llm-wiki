@@ -22,6 +22,7 @@ from llmwiki.domain.ledger.human_article import (
 )
 from llmwiki.domain.ledger.human_article_rendering import render_human_article
 from llmwiki.domain.ledger.human_article_validation import validate_human_article
+from llmwiki.domain.ledger.page_title_lint import PageTitleFinding
 from llmwiki.domain.pages import PageMetadata, render_page
 from llmwiki.domain.source_map import SourceAnchor
 from llmwiki.runtime.human_article_forge import ForgeHumanArticleWriter
@@ -140,6 +141,38 @@ def test_rejecting_article_writer_publishes_no_fallback_page() -> None:
     assert attempt.page is None
     assert attempt.record is None
     assert _finding_types(attempt.findings) >= {"empty-article"}
+
+
+def test_write_human_article_page_omits_page_when_lint_blocks() -> None:
+    pack = _pack()
+    article = _article("Shade creates darkness around the target.", pack=pack)
+    attempt = write_human_article_page(
+        pack,
+        PageMetadata(
+            "shade",
+            "concept",
+            "Shade summary.",
+            page_family="topic-concept",
+            sources=("raw/sword.pdf",),
+        ),
+        _Writer(article),
+        max_attempts=1,
+        title_findings=(
+            PageTitleFinding(
+                "finding-title",
+                "blocking",
+                "planning-title-failed",
+                "Shade",
+                "planner supplied a blocking title finding",
+            ),
+        ),
+    )
+
+    assert attempt.page is None
+    assert attempt.record is None
+    assert attempt.lint_run is not None
+    assert attempt.lint_run.publication_gate.decision == "blocked"
+    assert _finding_types(attempt.findings) >= {"title-lint-failed"}
 
 
 def test_forge_human_article_writer_uses_structured_tool_with_full_evidence() -> None:
