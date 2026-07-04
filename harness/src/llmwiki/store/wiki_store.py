@@ -49,6 +49,11 @@ from llmwiki.domain.pages import (
     render_page,
     validate_page_id,
 )
+from llmwiki.domain.source_profile_io import (
+    evidence_extraction_plan_from_json,
+    source_profile_artifact_from_json,
+)
+from llmwiki.domain.source_profiles import EvidenceExtractionPlan, SourceProfileArtifact
 from llmwiki.domain.source_summary import (
     SourceSummaryDraftArtifact,
     source_summary_draft_from_json,
@@ -405,6 +410,38 @@ class WikiStore:
         if not locator_path.is_file():
             return None
         return evidence_locator_index_from_json(locator_path.read_text(encoding="utf-8"))
+
+    def write_source_profile_artifact(
+        self, source_locator: str, source_profile_json: str
+    ) -> Path:
+        artifact_dir = self.page_plan_artifact_dir(source_locator)
+        artifact_dir.mkdir(parents=True, exist_ok=True)
+        source_profile_path = artifact_dir / "source-profile.json"
+        source_profile_path.write_text(source_profile_json, encoding="utf-8")
+        return source_profile_path
+
+    def read_source_profile_artifact(self, source_locator: str) -> SourceProfileArtifact | None:
+        source_profile_path = self.page_plan_artifact_dir(source_locator) / "source-profile.json"
+        if not source_profile_path.is_file():
+            return None
+        return source_profile_artifact_from_json(source_profile_path.read_text(encoding="utf-8"))
+
+    def write_evidence_extraction_plan_artifact(
+        self, source_locator: str, evidence_extraction_plan_json: str
+    ) -> Path:
+        artifact_dir = self.page_plan_artifact_dir(source_locator)
+        artifact_dir.mkdir(parents=True, exist_ok=True)
+        plan_path = artifact_dir / "evidence-extraction-plan.json"
+        plan_path.write_text(evidence_extraction_plan_json, encoding="utf-8")
+        return plan_path
+
+    def read_evidence_extraction_plan_artifact(
+        self, source_locator: str
+    ) -> EvidenceExtractionPlan | None:
+        plan_path = self.page_plan_artifact_dir(source_locator) / "evidence-extraction-plan.json"
+        if not plan_path.is_file():
+            return None
+        return evidence_extraction_plan_from_json(plan_path.read_text(encoding="utf-8"))
 
     def write_technical_atom_catalog_artifact(
         self, source_locator: str, technical_atom_catalog_json: str

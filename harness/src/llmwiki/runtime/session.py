@@ -85,6 +85,15 @@ from llmwiki.domain.semantic_lint import (
     SemanticLintSelection,
 )
 from llmwiki.domain.source_page_groups import source_page_group_label
+from llmwiki.domain.source_profile_io import (
+    evidence_extraction_plan_to_json,
+    source_profile_artifact_to_json,
+)
+from llmwiki.domain.source_profile_selector import select_source_profile
+from llmwiki.domain.source_profiles import (
+    SourceProfileArtifact,
+    build_evidence_extraction_plan,
+)
 from llmwiki.domain.system_pages import (
     CLAIM_SUPPORT_PAGE,
     CONTRADICTIONS_PAGE,
@@ -105,6 +114,7 @@ from llmwiki.pdf.pipeline import (
     ExtractionResult,
     chunk_file,
     read_document_model,
+    read_source_map,
     read_source_text,
     save_manifest,
 )
@@ -325,6 +335,7 @@ class Session:
         result = self.extract_pdf(
             self.store.raw_source_path(source_locator), source_locator, reextract
         )
+        source_profile_artifact = self._persist_source_profile_artifacts(source_locator, result)
         page_plan = self._pdf_page_plan(
             ingest_run,
             source_locator,
@@ -354,6 +365,7 @@ class Session:
             document_model=read_document_model(result.cache_dir),
             source_text=source_text,
             ingest_run=ingest_run,
+            source_profile_artifact=source_profile_artifact,
         )
 
     def _finish_ledger_ingest(
@@ -365,6 +377,7 @@ class Session:
         document_model: DocumentModel | None,
         source_text: SourceText,
         ingest_run: IngestRun,
+        source_profile_artifact: SourceProfileArtifact | None = None,
     ) -> OperationResult:
         registry = build_evidence_registry(page_plan, (source_text,))
         registry_hash = short_digest(registry_to_json(registry), 32)
@@ -403,9 +416,11 @@ class Session:
             self.store.delete_source_pages_not_in(source_locator, keep_page_ids)
         if self.on_chunk_note is not None:
             self.on_chunk_note(ledger.summary)
+        source_profile_line = _source_profile_report_line(source_profile_artifact)
         report = (
             f"Claim-ledger ingest of raw/{source_locator} ({len(chunks)} source unit(s)).\n"
             f"{ledger.summary}\n"
+            f"{source_profile_line}"
             f"Source page: {written}; linked pages: {len(ledger.topic_pages)}. "
             f"Ledger artifacts: {self.store.page_plan_artifact_dir(source_locator)}/ledger."
         )
@@ -487,6 +502,30 @@ class Session:
             source_plan=_source_plan_for(ingest_run, raw_source),
             new_page_prefix=self._pdf_page_prefix(source_locator),
         )
+
+    def _persist_source_profile_artifacts(
+        self, source_locator: str, result: ExtractionResult
+    ) -> SourceProfileArtifact:
+        source_map = read_source_map(result.cache_dir)
+        if source_map is None:
+            raise PdfError(
+                "PDF cache is missing normalized source map for source profile selection."
+            )
+        artifact = select_source_profile(source_map)
+        plan = build_evidence_extraction_plan(
+            source_map,
+            artifact.source_profile,
+            artifact.evidence_vocabulary,
+        )
+        self.store.write_source_profile_artifact(
+            source_locator,
+            source_profile_artifact_to_json(artifact),
+        )
+        self.store.write_evidence_extraction_plan_artifact(
+            source_locator,
+            evidence_extraction_plan_to_json(plan),
+        )
+        return artifact
 
     def _cached_pdf_page_plan(
         self, source_locator: str, cache_dir: Path, raw_source: RawSource
@@ -1146,6 +1185,13 @@ def _expected_page_plan_writes(page_plan: PagePlan) -> tuple[str, ...]:
 
 def _single_raw_source(ingest_run: IngestRun) -> RawSource:
     return ingest_run.source_bundle.raw_sources[0]
+
+
+def _source_profile_report_line(artifact: SourceProfileArtifact | None) -> str:
+    if artifact is None:
+        return ""
+    profile = artifact.source_profile
+    return f"Source profile: {profile.profile_id} (confidence {profile.confidence:.2f}).\n"
 
 
 def _chunks_from_page_plan(page_plan: PagePlan) -> tuple[ChunkText, ...]:

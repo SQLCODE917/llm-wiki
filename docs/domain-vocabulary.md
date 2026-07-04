@@ -53,6 +53,11 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `SourceAnchor` | `source_anchor` |
 | `SourceMapFinding` | `source_map_finding` |
 | `PromptWindow` | `prompt_window` |
+| `SourceProfile` | `source_profile` |
+| `EvidenceRecordType` | `evidence_record_type` |
+| `EvidenceVocabulary` | `evidence_vocabulary` |
+| `EvidenceExtractionPlan` | `evidence_extraction_plan` |
+| `EvidenceExtractionFinding` | `evidence_extraction_finding` |
 | `Schema` | `schema` |
 | `WikiStructure` | `wiki_structure` |
 | `IngestRun` | `ingest_run` |
@@ -158,6 +163,11 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | SourceAnchor | Exists | `llmwiki.domain.source_map`; stable locator for one `SourceBlock` or source span |
 | SourceMapFinding | Exists | `llmwiki.domain.source_map`; one source map quality issue |
 | PromptWindow | Exists | `llmwiki.domain.source_map`; derived model prompt window from source blocks |
+| SourceProfile | Exists | `llmwiki.domain.source_profiles`; source-purpose classification that selects typed evidence vocabulary, distinct from runtime `IngestProfile` overlays |
+| EvidenceRecordType | Exists | `llmwiki.domain.source_profiles`; allowed typed-evidence record label selected by `SourceProfile` |
+| EvidenceVocabulary | Exists | `llmwiki.domain.source_profiles`; profile-owned set of allowed `EvidenceRecordType` values |
+| EvidenceExtractionPlan | Exists | `llmwiki.domain.source_profiles`; source-block plan and allowed record types for future typed extraction |
+| EvidenceExtractionFinding | Exists | `llmwiki.domain.source_profiles`; blocking or warning finding for source-profile evidence extraction contracts |
 | ClaimRoleTag | Exists | `llmwiki.domain.source_summary`; default vocabulary owned by `Schema` |
 | SourceClaim | Exists | `llmwiki.domain.source_summary`; built by `llmwiki.domain.source_claims` |
 | SourceClaimGroup | Exists | `llmwiki.domain.source_summary`; groups `SourceClaim` records for coverage planning |

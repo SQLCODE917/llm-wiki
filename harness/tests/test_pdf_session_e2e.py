@@ -204,6 +204,17 @@ async def test_pdf_ingest_writes_ledger_projection(store: WikiStore, paths: Wiki
     assert (ledger_dir / "projection-coverage.json").is_file()
     assert (ledger_dir / "section-plan.json").is_file()
     assert (ledger_dir / "topics.json").is_file()
+    source_profile = store.read_source_profile_artifact("book.pdf")
+    extraction_plan = store.read_evidence_extraction_plan_artifact("book.pdf")
+    assert source_profile is not None
+    assert extraction_plan is not None
+    assert source_profile.source_profile.selection_reason
+    assert source_profile.source_profile.confidence > 0
+    assert (
+        extraction_plan.allowed_record_types
+        == source_profile.evidence_vocabulary.allowed_record_types
+    )
+    assert "Source profile:" in result.output
     saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
     assert saved.integrated
     assert not saved.all_done
