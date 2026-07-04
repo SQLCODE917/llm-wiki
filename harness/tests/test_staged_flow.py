@@ -87,6 +87,7 @@ def test_source_ledger_persists_stage_artifacts_from_real_pipeline() -> None:
         "lint-run.json",
         "publish-run.json",
         "page-publication-plan.json",
+        "evidence-pack-set.json",
         "publication-walkability-report.md",
     ):
         assert filename in result.artifact_files

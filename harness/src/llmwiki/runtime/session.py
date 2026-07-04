@@ -381,6 +381,7 @@ class Session:
             page_plan=page_plan,
             chunks=_chunks_from_page_plan(page_plan),
             document_model=read_document_model(result.cache_dir),
+            source_map=read_source_map(result.cache_dir),
             source_text=source_text,
             ingest_run=ingest_run,
             source_profile_artifact=source_profile_artifact,
@@ -396,6 +397,7 @@ class Session:
         document_model: DocumentModel | None,
         source_text: SourceText,
         ingest_run: IngestRun,
+        source_map: NormalizedSourceMap | None = None,
         source_profile_artifact: SourceProfileArtifact | None = None,
         evidence_record_set: EvidenceRecordSet | None = None,
     ) -> OperationResult:
@@ -421,6 +423,7 @@ class Session:
             evidence_registry_hash=registry_hash,
             chunks=chunks,
             document_model=document_model,
+            source_map=source_map,
             source_claims=page_plan.source_claims,
             today=self.today,
             schema=ingest_run.schema,
@@ -446,12 +449,14 @@ class Session:
         source_profile_line = _source_profile_report_line(source_profile_artifact)
         typed_evidence_line = _typed_evidence_report_line(evidence_record_set)
         publication_line = _publication_budget_report_line(ledger)
+        evidence_pack_line = _evidence_pack_report_line(ledger)
         report = (
             f"Claim-ledger ingest of raw/{source_locator} ({len(chunks)} source unit(s)).\n"
             f"{ledger.summary}\n"
             f"{source_profile_line}"
             f"{typed_evidence_line}"
             f"{publication_line}"
+            f"{evidence_pack_line}"
             f"Source page: {written}; linked pages: {len(ledger.topic_pages)}. "
             f"Ledger artifacts: {self.store.page_plan_artifact_dir(source_locator)}/ledger."
         )
@@ -1327,6 +1332,17 @@ def _publication_budget_report_line(ledger: SourceLedgerResult) -> str:
         "Publication budget: "
         f"{len(plan.accepted_candidates)} accepted, "
         f"{len(plan.rejected_candidates)} rejected candidate(s).\n"
+    )
+
+
+def _evidence_pack_report_line(ledger: SourceLedgerResult) -> str:
+    pack_set = ledger.evidence_pack_set
+    if pack_set is None:
+        return ""
+    return (
+        "Evidence packs: "
+        f"{len(pack_set.packs)} valid, "
+        f"{pack_set.missing_pack_count} missing/invalid candidate(s).\n"
     )
 
 

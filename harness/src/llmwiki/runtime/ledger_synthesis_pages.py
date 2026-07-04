@@ -5,6 +5,10 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from llmwiki.domain.ledger.collection_pages import CollectionPlan
+from llmwiki.domain.ledger.evidence_pack import EvidencePack
+from llmwiki.domain.ledger.evidence_pack_synthesis_adapter import (
+    apply_evidence_pack_to_synthesis_plan,
+)
 from llmwiki.domain.ledger.knowledge_shapes import KnowledgeShapeCatalog
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.page_synthesis import (
@@ -76,6 +80,7 @@ def build_synthesized_linked_pages(
     procedure_guides: tuple[ProcedureGuide, ...] | None = None,
     collection_plans: tuple[CollectionPlan, ...] | None = None,
     recipe_patterns: tuple[RecipePattern, ...] | None = None,
+    evidence_packs_by_page_id: dict[str, EvidencePack] | None = None,
 ) -> SynthesizedLinkedPages:
     producer = draft_producer or RejectingPageDraftProducer()
     plans: list[PageSynthesisPlan] = []
@@ -103,6 +108,7 @@ def build_synthesized_linked_pages(
         )
         if not _accepted_for_publication(plan.page_id, accepted_page_ids):
             continue
+        plan = _apply_evidence_pack(plan, evidence_packs_by_page_id)
         _record_attempt(
             plan,
             synthesize_page(plan, topic_metadata(plan, topic, source_locator, today), producer),
@@ -125,6 +131,7 @@ def build_synthesized_linked_pages(
         )
         if not _accepted_for_publication(plan.page_id, accepted_page_ids):
             continue
+        plan = _apply_evidence_pack(plan, evidence_packs_by_page_id)
         _record_attempt(
             plan,
             synthesize_page(
@@ -152,6 +159,7 @@ def build_synthesized_linked_pages(
         plan = collection_synthesis_plan(
             collection, ledger, source_page_id=source_page_id, source_locator=source_locator
         )
+        plan = _apply_evidence_pack(plan, evidence_packs_by_page_id)
         _record_attempt(
             plan,
             synthesize_page(
@@ -176,6 +184,7 @@ def build_synthesized_linked_pages(
         )
         if not _accepted_for_publication(plan.page_id, accepted_page_ids):
             continue
+        plan = _apply_evidence_pack(plan, evidence_packs_by_page_id)
         _record_attempt(
             plan,
             synthesize_page(
@@ -235,6 +244,16 @@ def collection_plans_for_source(
 
 def _accepted_for_publication(page_id: str, accepted_page_ids: frozenset[str] | None) -> bool:
     return accepted_page_ids is None or page_id in accepted_page_ids
+
+
+def _apply_evidence_pack(
+    plan: PageSynthesisPlan,
+    evidence_packs_by_page_id: dict[str, EvidencePack] | None,
+) -> PageSynthesisPlan:
+    if evidence_packs_by_page_id is None:
+        return plan
+    pack = evidence_packs_by_page_id.get(plan.page_id)
+    return apply_evidence_pack_to_synthesis_plan(plan, pack) if pack is not None else plan
 
 
 def _record_attempt(

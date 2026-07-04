@@ -17,6 +17,7 @@ from llmwiki.domain.ledger.artifacts import (
 )
 from llmwiki.domain.ledger.canonical import short_digest
 from llmwiki.domain.ledger.coverage import ProjectionCoverage, RenderedPage
+from llmwiki.domain.ledger.evidence_pack import EvidencePackSet, build_evidence_pack_set
 from llmwiki.domain.ledger.knowledge_shapes import KnowledgeShapeCatalog
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.page_publication import (
@@ -44,6 +45,7 @@ from llmwiki.domain.ledger.source_manifest_navigation import (
 from llmwiki.domain.ledger.structure import DocumentStructure
 from llmwiki.domain.ledger.topic_models import SourceTopic
 from llmwiki.domain.pages import WikiPage
+from llmwiki.domain.source_map import NormalizedSourceMap
 from llmwiki.domain.typed_evidence import EvidenceRecordSet
 from llmwiki.runtime.ledger_pages import (
     build_source_wiki_page,
@@ -63,6 +65,7 @@ class LinkedPageProjection:
     page_synthesis_findings_artifact: PageSynthesisFindingsArtifact
     page_publication_plan: PagePublicationPlan
     publication_walkability_report: PublicationWalkabilityReport
+    evidence_pack_set: EvidencePackSet
 
 
 def build_linked_page_projection(
@@ -84,6 +87,7 @@ def build_linked_page_projection(
     draft_producer: PageDraftProducer | None = None,
     evidence_record_set: EvidenceRecordSet | None = None,
     source_profile_kind: str = "general-prose",
+    source_map: NormalizedSourceMap | None = None,
 ) -> LinkedPageProjection:
     related = section_links_by_topic(section_plan, structure, source_page_id=page_id)
     publication_inputs = build_publication_candidate_inputs(
@@ -108,7 +112,13 @@ def build_linked_page_projection(
         candidates=supported_candidates,
     )
     publication_report = publication_walkability_report(publication_plan)
-    accepted_page_ids = frozenset(publication_plan.accepted_page_ids)
+    evidence_pack_set = build_evidence_pack_set(
+        publication_plan=publication_plan,
+        evidence_record_set=evidence_record_set,
+        source_map=source_map,
+    )
+    accepted_page_ids = frozenset(evidence_pack_set.valid_page_ids)
+    evidence_packs_by_page_id = {pack.page_id: pack for pack in evidence_pack_set.packs}
     section_pages = build_section_pages(
         ledger,
         structure,
@@ -134,6 +144,7 @@ def build_linked_page_projection(
         procedure_guides=publication_inputs.procedure_guides,
         collection_plans=publication_inputs.collection_plans,
         recipe_patterns=publication_inputs.recipe_patterns,
+        evidence_packs_by_page_id=evidence_packs_by_page_id,
     )
     linked_pages = (*synthesized.pages, *section_pages)
     page_synthesis_plan_artifact = build_page_synthesis_plan_artifact(
@@ -190,4 +201,5 @@ def build_linked_page_projection(
         page_synthesis_findings_artifact,
         publication_plan,
         publication_report,
+        evidence_pack_set,
     )

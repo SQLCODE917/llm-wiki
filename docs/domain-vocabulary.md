@@ -63,6 +63,10 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `EvidenceRecordStatus` | `evidence_record_status` |
 | `EvidenceRecordFinding` | `evidence_record_finding` |
 | `StructuredEvidencePayload` | `structured_evidence_payload` |
+| `EvidencePack` | `evidence_pack` |
+| `EvidencePackItem` | `evidence_pack_item` |
+| `EvidencePackCoverage` | `evidence_pack_coverage` |
+| `SupportRef` | `support_ref` |
 | `Schema` | `schema` |
 | `WikiStructure` | `wiki_structure` |
 | `IngestRun` | `ingest_run` |
@@ -178,6 +182,10 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | EvidenceRecordStatus | Exists | `llmwiki.domain.typed_evidence`; accepted, fragmentary, rejected, or needs-review status for typed evidence |
 | EvidenceRecordFinding | Exists | `llmwiki.domain.typed_evidence`; validation finding for one typed evidence record |
 | StructuredEvidencePayload | Exists | `llmwiki.domain.typed_evidence`; non-lossy payload text and normalized fields for typed evidence |
+| EvidencePack | Exists | `llmwiki.domain.ledger.evidence_pack`; selected non-lossy support for one accepted public page candidate |
+| EvidencePackItem | Exists | `llmwiki.domain.ledger.evidence_pack`; one full-text or payload support item in an `EvidencePack` |
+| EvidencePackCoverage | Exists | `llmwiki.domain.ledger.evidence_pack`; coverage relationship between a page purpose and selected support |
+| SupportRef | Exists | `llmwiki.domain.ledger.evidence_pack`; stable support reference that article claims can cite |
 | ClaimRoleTag | Exists | `llmwiki.domain.source_summary`; default vocabulary owned by `Schema` |
 | SourceClaim | Exists | `llmwiki.domain.source_summary`; built by `llmwiki.domain.source_claims` |
 | SourceClaimGroup | Exists | `llmwiki.domain.source_summary`; groups `SourceClaim` records for coverage planning |

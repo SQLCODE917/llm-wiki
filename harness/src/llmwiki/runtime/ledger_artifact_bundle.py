@@ -22,6 +22,7 @@ from llmwiki.domain.ledger.artifacts import (
     claim_ledger_artifact_to_json,
 )
 from llmwiki.domain.ledger.canonical import canonical_json
+from llmwiki.domain.ledger.evidence_pack import EvidencePackSet
 from llmwiki.domain.ledger.knowledge_shapes import KnowledgeShapeCatalog
 from llmwiki.domain.ledger.page_publication import (
     PagePublicationPlan,
@@ -59,6 +60,7 @@ def build_serialized_artifact_bundle(
     page_synthesis_findings_artifact: PageSynthesisFindingsArtifact,
     page_publication_plan: PagePublicationPlan,
     publication_walkability_report: PublicationWalkabilityReport,
+    evidence_pack_set: EvidencePackSet,
     section_plan: SectionGroundedPlan,
     knowledge_shape_catalog: KnowledgeShapeCatalog,
     topic_index: TopicIndex,
@@ -82,6 +84,7 @@ def build_serialized_artifact_bundle(
         page_draft_artifact,
         page_synthesis_findings_artifact,
         page_publication_plan,
+        evidence_pack_set,
         section_plan,
         knowledge_shape_catalog,
         source_coverage_artifact,
@@ -105,6 +108,7 @@ def build_serialized_artifact_bundle(
         page_synthesis_findings_artifact,
         page_publication_plan,
         publication_walkability_report,
+        evidence_pack_set,
         section_plan,
         knowledge_shape_catalog,
         topic_index,
@@ -133,6 +137,7 @@ def _artifact_members(
     page_draft_artifact: PageDraftArtifact,
     page_synthesis_findings_artifact: PageSynthesisFindingsArtifact,
     page_publication_plan: PagePublicationPlan,
+    evidence_pack_set: EvidencePackSet,
     section_plan: SectionGroundedPlan,
     knowledge_shape_catalog: KnowledgeShapeCatalog,
     source_coverage_artifact: SourceCoverageArtifact | None,
@@ -198,6 +203,11 @@ def _artifact_members(
             "page-publication-plan-artifact",
             page_publication_plan.page_publication_plan_id,
             page_publication_plan.page_publication_plan_fingerprint,
+        ),
+        _member(
+            "evidence-pack-set-artifact",
+            evidence_pack_set.evidence_pack_set_id,
+            evidence_pack_set.evidence_pack_set_fingerprint,
         ),
         _member(
             "section-grounded-plan-artifact",
@@ -267,6 +277,7 @@ def _artifact_files(
     page_synthesis_findings_artifact: PageSynthesisFindingsArtifact,
     page_publication_plan: PagePublicationPlan,
     publication_walkability_report: PublicationWalkabilityReport,
+    evidence_pack_set: EvidencePackSet,
     section_plan: SectionGroundedPlan,
     knowledge_shape_catalog: KnowledgeShapeCatalog,
     topic_index: TopicIndex,
@@ -296,6 +307,7 @@ def _artifact_files(
             page_synthesis_findings_artifact, indent=2
         ),
         "page-publication-plan.json": canonical_json(page_publication_plan, indent=2),
+        "evidence-pack-set.json": canonical_json(evidence_pack_set, indent=2),
         "publication-walkability-report.md": render_publication_walkability_report(
             publication_walkability_report
         ),
