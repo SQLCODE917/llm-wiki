@@ -8,6 +8,7 @@ from pathlib import Path
 import pymupdf
 import pytest
 
+from llmwiki.domain.source_map import normalized_source_map_to_json
 from llmwiki.pdf import ScannedPdfError
 from llmwiki.pdf.document import DocumentElement, DocumentModel
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, to_json
@@ -16,9 +17,12 @@ from llmwiki.pdf.pipeline import (
     chunk_file,
     document_extractor_by_name,
     ensure_extracted,
+    read_source_map,
     save_manifest,
+    source_map_file,
 )
 from llmwiki.pdf.recognizer import NullRecognizer
+from llmwiki.pdf.source_map_builder import build_normalized_source_map
 
 _PAGE_PROSE = "Functions are first-class values. " * 40
 
@@ -106,6 +110,28 @@ class FakeDocumentExtractor:
         )
 
 
+def _minimal_source_map_text(source_hash: str) -> str:
+    model = DocumentModel(
+        source_locator="cached.pdf",
+        source_hash=source_hash,
+        extractor_name="test",
+        extractor_version="test",
+        elements=(
+            DocumentElement(
+                element_id="element-000001",
+                element_kind="paragraph",
+                body_state="body",
+                heading_path="Cached",
+                page_start=1,
+                page_end=1,
+                text="Cached text.",
+                markdown="Cached text.",
+            ),
+        ),
+    )
+    return normalized_source_map_to_json(build_normalized_source_map(model))
+
+
 class TestEnsureExtracted:
     def test_extracts_chunks_and_manifest(self, tmp_path: Path) -> None:
         pdf = tmp_path / "book.pdf"
@@ -130,6 +156,12 @@ class TestEnsureExtracted:
         assert (first.start_page, manifest.chunks[-1].end_page) == (1, 6)
         assert (result.cache_dir / "document_model.json").is_file()
         assert (result.cache_dir / "source_sections.json").is_file()
+        assert source_map_file(result.cache_dir).is_file()
+        source_map = read_source_map(result.cache_dir)
+        assert source_map is not None
+        assert any(
+            "Functions are values" in block.source_text for block in source_map.source_blocks
+        )
         assert document_extractor.calls == 1
 
     def test_cache_hit_skips_reextraction(self, tmp_path: Path) -> None:
@@ -240,6 +272,9 @@ class TestEnsureExtracted:
         (cache_dir / "manifest.json").write_text(to_json(manifest), encoding="utf-8")
         (cache_dir / "document_model.json").write_text("{}", encoding="utf-8")
         (cache_dir / "source_sections.json").write_text("[]", encoding="utf-8")
+        source_map_file(cache_dir).write_text(
+            _minimal_source_map_text(source_hash), encoding="utf-8"
+        )
         sys.modules.pop("llmwiki.pdf.extractor", None)
         sys.modules.pop("llmwiki.pdf.pymupdf_document_extractor", None)
 
@@ -282,6 +317,31 @@ class TestEnsureExtracted:
         assert (again.cache_dir / "source_sections.json").is_file()
         assert document_extractor.calls == 2
 
+    def test_missing_source_map_rebuilds_from_document_model(self, tmp_path: Path) -> None:
+        pdf = tmp_path / "book.pdf"
+        _make_pdf(pdf)
+        document_extractor = FakeDocumentExtractor()
+        first = ensure_extracted(
+            pdf,
+            "book.pdf",
+            tmp_path / "cache",
+            NullRecognizer(),
+            document_extractor=document_extractor,
+        )
+        source_map_file(first.cache_dir).unlink()
+
+        rebuilt = ensure_extracted(
+            pdf,
+            "book.pdf",
+            tmp_path / "cache",
+            NullRecognizer(),
+            document_extractor=document_extractor,
+        )
+
+        assert rebuilt.cache_dir == first.cache_dir
+        assert source_map_file(rebuilt.cache_dir).is_file()
+        assert document_extractor.calls == 1
+
     def test_reextract_rebuilds_pending_manifest(self, tmp_path: Path) -> None:
         pdf = tmp_path / "book.pdf"
         _make_pdf(pdf)
@@ -305,6 +365,7 @@ class TestEnsureExtracted:
             document_extractor=document_extractor,
         )
         assert redone.manifest.pending == redone.manifest.chunks
+        assert read_source_map(redone.cache_dir) is not None
         assert document_extractor.calls == 2
 
     def test_scanned_pdf_is_refused_cleanly(self, tmp_path: Path) -> None:
@@ -344,6 +405,9 @@ class TestEnsureExtracted:
         )
         assert '"element_kind": "table"' in model
         assert model.count('"element_kind": "table"') == 1
+        source_map = read_source_map(result.cache_dir)
+        assert source_map is not None
+        assert any(block.block_type == "table" for block in source_map.source_blocks)
         assert chunk.count("Table- Sample Matrix") == 1
         assert "Label" in chunk
         assert "Alpha" in chunk

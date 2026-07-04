@@ -1,12 +1,17 @@
 """PDF manifest behavior around ledger-first ingest."""
 
+from pathlib import Path
+
 from fakes import FakeClient
 from forge.context import ContextManager, NoCompact
 
 from llmwiki.config import WikiPaths
 from llmwiki.domain.pages import PageMetadata, WikiPage
+from llmwiki.domain.source_map import normalized_source_map_to_json
+from llmwiki.pdf.document import DocumentElement, DocumentModel
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, from_json
-from llmwiki.pdf.pipeline import ExtractionResult
+from llmwiki.pdf.pipeline import ExtractionResult, source_map_file
+from llmwiki.pdf.source_map_builder import build_normalized_source_map
 from llmwiki.runtime.session import Session
 from llmwiki.store import WikiStore
 
@@ -19,25 +24,79 @@ def _extraction_with_stale_done_chunk(paths: WikiPaths) -> ExtractionResult:
     chunks_dir.mkdir(parents=True, exist_ok=True)
     (chunks_dir / "0001.md").write_text("Chunk one: functions are values.", encoding="utf-8")
     (chunks_dir / "0002.md").write_text("Chunk two: closures capture scope.", encoding="utf-8")
-    return ExtractionResult(
-        manifest=Manifest(
-            source="book.pdf",
-            sha256="deadbeef" * 8,
-            chunks=(
-                ChunkRecord(
-                    1,
-                    "Functions",
-                    1,
-                    10,
-                    4000,
-                    status="done",
-                    notes="done in a cleared wiki",
-                    pages_written=("book-functions",),
-                ),
-                ChunkRecord(2, "Closures", 11, 20, 3800),
+    manifest = Manifest(
+        source="book.pdf",
+        sha256="deadbeef" * 8,
+        chunks=(
+            ChunkRecord(
+                1,
+                "Functions",
+                1,
+                10,
+                4000,
+                status="done",
+                notes="done in a cleared wiki",
+                pages_written=("book-functions",),
+            ),
+            ChunkRecord(2, "Closures", 11, 20, 3800),
+        ),
+    )
+    _write_source_map(cache_dir, manifest.sha256)
+    return ExtractionResult(manifest=manifest, cache_dir=cache_dir)
+
+
+def _write_source_map(cache_dir: Path, source_hash: str) -> None:
+    model = DocumentModel(
+        source_locator="book.pdf",
+        source_hash=source_hash,
+        extractor_name="docling",
+        extractor_version="test",
+        elements=(
+            DocumentElement(
+                element_id="element-000001",
+                element_kind="heading",
+                body_state="body",
+                heading_path="Functions",
+                page_start=1,
+                page_end=1,
+                text="Functions",
+                markdown="# Functions",
+            ),
+            DocumentElement(
+                element_id="element-000002",
+                element_kind="paragraph",
+                body_state="body",
+                heading_path="Functions",
+                page_start=1,
+                page_end=10,
+                text="Chunk one: functions are values.",
+                markdown="Chunk one: functions are values.",
+            ),
+            DocumentElement(
+                element_id="element-000003",
+                element_kind="heading",
+                body_state="body",
+                heading_path="Closures",
+                page_start=11,
+                page_end=11,
+                text="Closures",
+                markdown="# Closures",
+            ),
+            DocumentElement(
+                element_id="element-000004",
+                element_kind="paragraph",
+                body_state="body",
+                heading_path="Closures",
+                page_start=11,
+                page_end=20,
+                text="Chunk two: closures capture scope.",
+                markdown="Chunk two: closures capture scope.",
             ),
         ),
-        cache_dir=cache_dir,
+    )
+    source_map_file(cache_dir).write_text(
+        normalized_source_map_to_json(build_normalized_source_map(model)),
+        encoding="utf-8",
     )
 
 

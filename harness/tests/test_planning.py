@@ -27,8 +27,11 @@ from llmwiki.domain.planning_analysis import (
     embedding,
     same_section_identity,
 )
+from llmwiki.domain.source_map import normalized_source_map_to_json
+from llmwiki.pdf.document import DocumentElement, DocumentModel
 from llmwiki.pdf.manifest import ChunkRecord, Manifest
-from llmwiki.pdf.pipeline import ExtractionResult
+from llmwiki.pdf.pipeline import ExtractionResult, source_map_file
+from llmwiki.pdf.source_map_builder import build_normalized_source_map
 from llmwiki.runtime.session import Session
 from llmwiki.store import WikiStore
 
@@ -599,6 +602,58 @@ def _fake_extraction(paths: WikiPaths) -> ExtractionResult:
             ChunkRecord(1, "Functions", 1, 10, 4000),
             ChunkRecord(2, "Closures", 11, 20, 3800),
         ),
+    )
+    model = DocumentModel(
+        source_locator="book.pdf",
+        source_hash=manifest.sha256,
+        extractor_name="docling",
+        extractor_version="test",
+        elements=(
+            DocumentElement(
+                element_id="element-000001",
+                element_kind="heading",
+                body_state="body",
+                heading_path="Functions",
+                page_start=1,
+                page_end=1,
+                text="Functions",
+                markdown="# Functions",
+            ),
+            DocumentElement(
+                element_id="element-000002",
+                element_kind="paragraph",
+                body_state="body",
+                heading_path="Functions",
+                page_start=1,
+                page_end=10,
+                text="Chunk one: functions are values.",
+                markdown="Chunk one: functions are values.",
+            ),
+            DocumentElement(
+                element_id="element-000003",
+                element_kind="heading",
+                body_state="body",
+                heading_path="Closures",
+                page_start=11,
+                page_end=11,
+                text="Closures",
+                markdown="# Closures",
+            ),
+            DocumentElement(
+                element_id="element-000004",
+                element_kind="paragraph",
+                body_state="body",
+                heading_path="Closures",
+                page_start=11,
+                page_end=20,
+                text="Chunk two: closures capture scope.",
+                markdown="Chunk two: closures capture scope.",
+            ),
+        ),
+    )
+    source_map_file(cache_dir).write_text(
+        normalized_source_map_to_json(build_normalized_source_map(model)),
+        encoding="utf-8",
     )
     return ExtractionResult(manifest=manifest, cache_dir=cache_dir)
 

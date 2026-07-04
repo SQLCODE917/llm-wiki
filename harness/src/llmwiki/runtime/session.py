@@ -60,6 +60,7 @@ from llmwiki.domain.ledger.canonical import short_digest
 from llmwiki.domain.ledger.current_artifacts import build_current_ledger_artifacts
 from llmwiki.domain.links import compute_findings, extract_links
 from llmwiki.domain.objects import (
+    ExtractedUnit,
     IngestRun,
     LintRun,
     PagePlan,
@@ -76,7 +77,6 @@ from llmwiki.domain.planning import (
     page_plan_from_json,
     page_plan_to_json,
 )
-from llmwiki.domain.planning_analysis import build_extracted_unit
 from llmwiki.domain.salience import SalienceReport, compute_salience, reconcile_key_lists
 from llmwiki.domain.search import render_hits, search_pages
 from llmwiki.domain.semantic_lint import (
@@ -112,6 +112,7 @@ from llmwiki.runtime.cross_source_pipeline import build_cross_source_pages
 from llmwiki.runtime.ledger_pipeline import build_source_ledger
 from llmwiki.runtime.ledger_segmentation import ChunkText
 from llmwiki.runtime.page_synthesis_forge import ForgePageDraftProducer
+from llmwiki.runtime.pdf_source_units import extracted_units_from_pdf_cache
 from llmwiki.runtime.source_summary_replay import replay_source_summary_work_unit
 from llmwiki.runtime.transcript import TranscriptWriter
 from llmwiki.store import WikiStore
@@ -330,11 +331,10 @@ class Session:
             result,
             reuse_persisted=not reextract,
         )
-        cached_plan_is_current = (
-            not reextract
-            and self._cached_pdf_page_plan(source_locator, result.manifest, result.cache_dir)
-            is not None
-        )
+        raw_source = _single_raw_source(ingest_run)
+        cached_plan_is_current = not reextract and self._cached_pdf_page_plan(
+            source_locator, result.cache_dir, raw_source
+        ) is not None
         self._persist_page_plan(
             source_locator,
             page_plan,
@@ -466,23 +466,15 @@ class Session:
         *,
         reuse_persisted: bool = True,
     ) -> PagePlan:
+        raw_source = _single_raw_source(ingest_run)
         if reuse_persisted and _manifest_has_progress(result.manifest):
-            cached_plan = self._cached_pdf_page_plan(
-                source_locator, result.manifest, result.cache_dir
-            )
+            cached_plan = self._cached_pdf_page_plan(source_locator, result.cache_dir, raw_source)
             if cached_plan is not None:
                 return cached_plan
-        raw_source = _single_raw_source(ingest_run)
-        units = tuple(
-            build_extracted_unit(
-                unit_id=f"unit-{record.chunk_id:04d}",
-                raw_source=raw_source,
-                locator=f"p.{record.start_page}-{record.end_page}",
-                heading_path=record.heading,
-                text=chunk_file(result.cache_dir, record.chunk_id).read_text(encoding="utf-8"),
-            )
-            for record in result.manifest.chunks
-        )
+        try:
+            units = extracted_units_from_pdf_cache(raw_source, result.cache_dir)
+        except ValueError as exc:
+            raise PdfError(str(exc)) from exc
         return build_page_plan(
             plan_id=self._page_plan_id(source_locator, "pdf"),
             source_bundle=ingest_run.source_bundle,
@@ -497,7 +489,7 @@ class Session:
         )
 
     def _cached_pdf_page_plan(
-        self, source_locator: str, manifest: Manifest, cache_dir: Path
+        self, source_locator: str, cache_dir: Path, raw_source: RawSource
     ) -> PagePlan | None:
         cached = self.store.read_page_plan_artifact(source_locator)
         if cached is None:
@@ -506,9 +498,11 @@ class Session:
             plan = page_plan_from_json(cached)
         except Exception:
             return None
-        if not _pdf_page_plan_matches_manifest(plan, source_locator, manifest):
+        try:
+            units = extracted_units_from_pdf_cache(raw_source, cache_dir)
+        except ValueError:
             return None
-        if not _pdf_page_plan_matches_cache_text(plan, manifest, cache_dir):
+        if not _pdf_page_plan_matches_source_units(plan, source_locator, units):
             return None
         return plan
 
@@ -1176,43 +1170,17 @@ def _has_matching_technical_catalog(
     return reuse_enabled and catalog is not None and catalog.artifact_fingerprint == page_plan_id
 
 
-def _pdf_page_plan_matches_manifest(
-    page_plan: PagePlan, source_locator: str, manifest: Manifest
+def _pdf_page_plan_matches_source_units(
+    page_plan: PagePlan, source_locator: str, units: tuple[ExtractedUnit, ...]
 ) -> bool:
     if not page_plan.plan_id.endswith(f"-pdf-{slugify(Path(source_locator).stem)}"):
         return False
     if not _page_plan_sources_match_source(page_plan, source_locator):
         return False
-    return _page_plan_unit_map(page_plan) == _manifest_unit_map(manifest)
-
-
-def _pdf_page_plan_matches_cache_text(
-    page_plan: PagePlan, manifest: Manifest, cache_dir: Path
-) -> bool:
-    units_by_id = {unit.unit_id: unit for unit in page_plan.extracted_units}
-    for record in manifest.chunks:
-        unit = units_by_id.get(f"unit-{record.chunk_id:04d}")
-        if unit is None:
-            return False
-        chunk_path = chunk_file(cache_dir, record.chunk_id)
-        if not chunk_path.is_file():
-            return False
-        if unit.text != chunk_path.read_text(encoding="utf-8"):
-            return False
-    return True
-
-
-def _page_plan_unit_map(page_plan: PagePlan) -> tuple[tuple[str, str, str], ...]:
     return tuple(
-        (unit.unit_id, unit.locator, unit.heading_path) for unit in page_plan.extracted_units
-    )
-
-
-def _manifest_unit_map(manifest: Manifest) -> tuple[tuple[str, str, str], ...]:
-    return tuple(
-        (f"unit-{record.chunk_id:04d}", f"p.{record.start_page}-{record.end_page}", record.heading)
-        for record in manifest.chunks
-    )
+        (unit.unit_id, unit.locator, unit.heading_path, unit.text)
+        for unit in page_plan.extracted_units
+    ) == tuple((unit.unit_id, unit.locator, unit.heading_path, unit.text) for unit in units)
 
 
 def _source_plan_for(ingest_run: IngestRun, raw_source: RawSource) -> SourcePlan | None:

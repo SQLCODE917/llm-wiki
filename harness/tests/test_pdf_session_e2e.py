@@ -1,14 +1,20 @@
 """End-to-end PDF ingest for ledger-first projection."""
 
+import pytest
 from fakes import FakeClient
 from forge.context import ContextManager, NoCompact
 
 from llmwiki.config import WikiPaths
-from llmwiki.domain.objects import ExtractedUnit, PagePlan, RawSource, SourceBundle
+from llmwiki.domain.objects import PagePlan, RawSource, SourceBundle
 from llmwiki.domain.pages import PageMetadata, WikiPage
 from llmwiki.domain.planning import page_plan_to_json
+from llmwiki.domain.source_map import normalized_source_map_to_json
+from llmwiki.pdf import PdfError
+from llmwiki.pdf.document import DocumentElement, DocumentModel
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, from_json
-from llmwiki.pdf.pipeline import ExtractionResult
+from llmwiki.pdf.pipeline import ExtractionResult, source_map_file
+from llmwiki.pdf.source_map_builder import build_normalized_source_map
+from llmwiki.runtime.pdf_source_units import extracted_units_from_pdf_cache
 from llmwiki.runtime.session import Session
 from llmwiki.store import WikiStore
 
@@ -39,6 +45,58 @@ def _fake_extraction(
             ChunkRecord(2, "Closures", 11, 20, 3800, status=statuses[1]),
         ),
     )
+    model = DocumentModel(
+        source_locator="book.pdf",
+        source_hash=manifest.sha256,
+        extractor_name="docling",
+        extractor_version="test",
+        elements=(
+            DocumentElement(
+                element_id="element-000001",
+                element_kind="heading",
+                body_state="body",
+                heading_path="Functions",
+                page_start=1,
+                page_end=1,
+                text="Functions",
+                markdown="# Functions",
+            ),
+            DocumentElement(
+                element_id="element-000002",
+                element_kind="paragraph",
+                body_state="body",
+                heading_path="Functions",
+                page_start=1,
+                page_end=10,
+                text="Chunk one: functions are values.",
+                markdown="Chunk one: functions are values.",
+            ),
+            DocumentElement(
+                element_id="element-000003",
+                element_kind="heading",
+                body_state="body",
+                heading_path="Closures",
+                page_start=11,
+                page_end=11,
+                text="Closures",
+                markdown="# Closures",
+            ),
+            DocumentElement(
+                element_id="element-000004",
+                element_kind="paragraph",
+                body_state="body",
+                heading_path="Closures",
+                page_start=11,
+                page_end=20,
+                text="Chunk two: closures capture scope.",
+                markdown="Chunk two: closures capture scope.",
+            ),
+        ),
+    )
+    source_map_file(cache_dir).write_text(
+        normalized_source_map_to_json(build_normalized_source_map(model)),
+        encoding="utf-8",
+    )
     return ExtractionResult(manifest=manifest, cache_dir=cache_dir)
 
 
@@ -58,29 +116,12 @@ def _session(store: WikiStore, paths: WikiPaths, extraction: ExtractionResult) -
     return session
 
 
-def _persisted_plan() -> PagePlan:
+def _persisted_plan(extraction: ExtractionResult) -> PagePlan:
     raw_source = RawSource.from_locator("book.pdf")
     return PagePlan(
         plan_id="previous-run-pdf-book",
         source_bundle=SourceBundle.one(raw_source),
-        extracted_units=(
-            ExtractedUnit(
-                unit_id="unit-0001",
-                raw_source=raw_source,
-                locator="p.1-10",
-                heading_path="Functions",
-                text="Chunk one: functions are values.",
-                extraction_status="ok",
-            ),
-            ExtractedUnit(
-                unit_id="unit-0002",
-                raw_source=raw_source,
-                locator="p.11-20",
-                heading_path="Closures",
-                text="Chunk two: closures capture scope.",
-                extraction_status="ok",
-            ),
-        ),
+        extracted_units=extracted_units_from_pdf_cache(raw_source, extraction.cache_dir),
         source_claims=(),
         source_claim_groups=(),
         candidate_claims=(),
@@ -99,7 +140,7 @@ def test_partial_resume_reuses_matching_persisted_page_plan(
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
     extraction = _fake_extraction(paths, statuses=("done", "pending"))
     session = _session(store, paths, extraction)
-    plan = _persisted_plan()
+    plan = _persisted_plan(extraction)
     store.write_page_plan_artifacts("book.pdf", page_plan_to_json(plan), "persisted")
 
     def fail_build_page_plan(**_kwargs: object) -> PagePlan:
@@ -116,11 +157,11 @@ async def test_pdf_ingest_consults_extraction_cache_before_persisted_page_plan(
     store: WikiStore, paths: WikiPaths
 ) -> None:
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
-    stale_plan_json = page_plan_to_json(_persisted_plan()).replace(
+    extraction = _fake_extraction(paths)
+    stale_plan_json = page_plan_to_json(_persisted_plan(extraction)).replace(
         "Chunk one: functions are values.", "Stale cached text."
     )
     store.write_page_plan_artifacts("book.pdf", stale_plan_json, "persisted")
-    extraction = _fake_extraction(paths)
     extraction_calls: list[bool] = []
     session = Session(
         store=store,
@@ -172,6 +213,31 @@ async def test_pdf_ingest_writes_ledger_projection(store: WikiStore, paths: Wiki
         "1 needs-review, 0 linked page(s); write decision write-with-review-work."
     ]
     assert paths.log_path.read_text(encoding="utf-8").count("ingest | book.pdf") == 1
+
+
+def test_pdf_page_plan_uses_source_map_when_chunk_files_are_missing(
+    store: WikiStore, paths: WikiPaths
+) -> None:
+    (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
+    extraction = _fake_extraction(paths)
+    for chunk_path in (extraction.cache_dir / "chunks").glob("*.md"):
+        chunk_path.unlink()
+    session = _session(store, paths, extraction)
+
+    plan = session._pdf_page_plan(session._ingest_run("book.pdf"), "book.pdf", extraction)
+
+    assert any("functions are values" in unit.text for unit in plan.extracted_units)
+    assert any(unit.unit_id.startswith("prompt-window-") for unit in plan.extracted_units)
+
+
+def test_pdf_page_plan_fails_without_source_map(store: WikiStore, paths: WikiPaths) -> None:
+    (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
+    extraction = _fake_extraction(paths)
+    source_map_file(extraction.cache_dir).unlink()
+    session = _session(store, paths, extraction)
+
+    with pytest.raises(PdfError, match="missing normalized source map"):
+        session._pdf_page_plan(session._ingest_run("book.pdf"), "book.pdf", extraction)
 
 
 async def test_reintegrate_refreshes_ledger_projection_with_pending_manifest(

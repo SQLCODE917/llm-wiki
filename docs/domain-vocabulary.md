@@ -48,6 +48,11 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `SourceRange` | `source_range` |
 | `RawSource` | `raw_source` |
 | `SourceBundle` | `source_bundle` |
+| `NormalizedSourceMap` | `normalized_source_map` |
+| `SourceBlock` | `source_block` |
+| `SourceAnchor` | `source_anchor` |
+| `SourceMapFinding` | `source_map_finding` |
+| `PromptWindow` | `prompt_window` |
 | `Schema` | `schema` |
 | `WikiStructure` | `wiki_structure` |
 | `IngestRun` | `ingest_run` |
@@ -148,6 +153,11 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | DraftEvidenceRef | Exists | `llmwiki.domain.ledger.page_synthesis`; ledger, atom, or stable atom-anchor support reference |
 | PageSynthesisFinding | Exists | `llmwiki.domain.ledger.page_synthesis`; rejection or warning emitted by synthesis validation |
 | SourcePlanContractSelection | Exists | `llmwiki.domain.page_body_contracts`; selected through `SourcePlan` |
+| NormalizedSourceMap | Exists | `llmwiki.domain.source_map`; durable source model for one `RawSource` |
+| SourceBlock | Exists | `llmwiki.domain.source_map`; one coherent source unit in a `NormalizedSourceMap` |
+| SourceAnchor | Exists | `llmwiki.domain.source_map`; stable locator for one `SourceBlock` or source span |
+| SourceMapFinding | Exists | `llmwiki.domain.source_map`; one source map quality issue |
+| PromptWindow | Exists | `llmwiki.domain.source_map`; derived model prompt window from source blocks |
 | ClaimRoleTag | Exists | `llmwiki.domain.source_summary`; default vocabulary owned by `Schema` |
 | SourceClaim | Exists | `llmwiki.domain.source_summary`; built by `llmwiki.domain.source_claims` |
 | SourceClaimGroup | Exists | `llmwiki.domain.source_summary`; groups `SourceClaim` records for coverage planning |

@@ -13,7 +13,16 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Literal
 
+from llmwiki.domain.source_map import (
+    NormalizedSourceMap,
+    PromptWindow,
+    build_prompt_windows,
+    normalized_source_map_from_json,
+    normalized_source_map_to_json,
+    source_map_text,
+)
 from llmwiki.pdf import ScannedPdfError
+from llmwiki.pdf.chunking import CHUNK_TOKEN_BUDGET, estimate_tokens
 from llmwiki.pdf.classify import PdfKind, classify_pdf
 from llmwiki.pdf.document import (
     DocumentModel,
@@ -27,11 +36,13 @@ from llmwiki.pdf.document import (
 )
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, from_json, to_json
 from llmwiki.pdf.recognizer import TextRecognizer
+from llmwiki.pdf.source_map_builder import build_normalized_source_map
 from llmwiki.pdf.table_extractor import enrich_document_model_with_tables
 
 _MANIFEST_FILE = "manifest.json"
 _DOCUMENT_MODEL_FILE = "document_model.json"
 _SOURCE_SECTIONS_FILE = "source_sections.json"
+_SOURCE_MAP_FILE = "normalized_source_map.json"
 _CHUNK_DIR = "chunks"
 
 DocumentExtractFn = Callable[[Path, str, str], DocumentModel]
@@ -49,8 +60,15 @@ def chunk_file(cache_dir: Path, chunk_id: int) -> Path:
     return cache_dir / _CHUNK_DIR / f"{chunk_id:04d}.md"
 
 
+def source_map_file(cache_dir: Path) -> Path:
+    return cache_dir / _SOURCE_MAP_FILE
+
+
 def read_source_text(cache_dir: Path) -> str:
-    """The whole extracted source (all chunks) — salience's mention corpus."""
+    """The whole extracted source, preferably from the normalized source map."""
+    source_map = read_source_map(cache_dir)
+    if source_map is not None:
+        return source_map_text(source_map)
     chunk_dir = cache_dir / _CHUNK_DIR
     if not chunk_dir.is_dir():
         return ""
@@ -68,11 +86,32 @@ def read_document_model(cache_dir: Path) -> DocumentModel | None:
     return document_model_from_json(path.read_text(encoding="utf-8"))
 
 
+def read_source_map(cache_dir: Path) -> NormalizedSourceMap | None:
+    path = source_map_file(cache_dir)
+    if not path.is_file():
+        return None
+    return normalized_source_map_from_json(path.read_text(encoding="utf-8"))
+
+
+def read_prompt_windows(
+    cache_dir: Path, budget_tokens: int = CHUNK_TOKEN_BUDGET
+) -> tuple[PromptWindow, ...]:
+    source_map = read_source_map(cache_dir)
+    if source_map is None:
+        return ()
+    return build_prompt_windows(
+        source_map,
+        budget_tokens=budget_tokens,
+        estimate_tokens=estimate_tokens,
+    )
+
+
 def cache_has_current_pdf_artifacts(cache_dir: Path) -> bool:
     return (
         (cache_dir / _MANIFEST_FILE).is_file()
         and (cache_dir / _DOCUMENT_MODEL_FILE).is_file()
         and (cache_dir / _SOURCE_SECTIONS_FILE).is_file()
+        and source_map_file(cache_dir).is_file()
     )
 
 
@@ -112,6 +151,15 @@ def ensure_extracted(
             manifest=manifest,
             cache_dir=cache_dir,
         )
+    if not reextract and manifest_path.is_file() and (cache_dir / _DOCUMENT_MODEL_FILE).is_file():
+        try:
+            cached_document_model = document_model_from_json(
+                (cache_dir / _DOCUMENT_MODEL_FILE).read_text(encoding="utf-8")
+            )
+        except Exception:
+            cached_document_model = None
+        if cached_document_model is not None:
+            return _write_derived_artifacts(cache_dir, source_rel, cached_document_model)
 
     from llmwiki.pdf.extractor import read_page_char_counts
 
@@ -134,6 +182,7 @@ def _write_derived_artifacts(
     source_rel: str,
     document_model: DocumentModel,
 ) -> ExtractionResult:
+    normalized_source_map = build_normalized_source_map(document_model)
     source_sections = build_source_sections(document_model)
     source_chunks = build_source_chunks(document_model, source_sections)
 
@@ -142,6 +191,9 @@ def _write_derived_artifacts(
     )
     (cache_dir / _SOURCE_SECTIONS_FILE).write_text(
         source_sections_to_json(source_sections), encoding="utf-8"
+    )
+    source_map_file(cache_dir).write_text(
+        normalized_source_map_to_json(normalized_source_map), encoding="utf-8"
     )
 
     chunk_dir = cache_dir / _CHUNK_DIR

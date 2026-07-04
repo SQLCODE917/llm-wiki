@@ -12,18 +12,15 @@ from llmwiki.domain.evidence_registry import (
 )
 from llmwiki.domain.ingest_profiles import IngestProfile, required_new_page_prefix
 from llmwiki.domain.objects import (
-    ExtractedUnit,
     PagePlan,
-    RawSource,
     Schema,
     SourceBundle,
     SourcePlan,
 )
 from llmwiki.domain.pages import slugify
 from llmwiki.domain.planning import build_markdown_page_plan, build_page_plan
-from llmwiki.domain.planning_analysis import build_extracted_unit
-from llmwiki.pdf.manifest import ChunkRecord
-from llmwiki.pdf.pipeline import ExtractionResult, chunk_file, read_source_text
+from llmwiki.pdf.pipeline import ExtractionResult, read_source_text
+from llmwiki.runtime.pdf_source_units import extracted_units_from_pdf_cache
 from llmwiki.store import WikiStore
 
 
@@ -39,9 +36,10 @@ def build_current_page_plan(
     if source_locator.lower().endswith(".pdf"):
         if pdf_result is None:
             return None
-        units = tuple(
-            _unit_from_chunk(raw_source, pdf_result, chunk) for chunk in pdf_result.manifest.chunks
-        )
+        try:
+            units = extracted_units_from_pdf_cache(raw_source, pdf_result.cache_dir)
+        except ValueError:
+            return None
         return build_page_plan(
             plan_id=f"{today}-confidence-pdf-{slugify(Path(source_locator).stem)}",
             source_bundle=SourceBundle.one(raw_source),
@@ -78,18 +76,6 @@ def build_current_registry(
     if source_text is None:
         return None
     return build_evidence_registry(plan, (source_text,))
-
-
-def _unit_from_chunk(
-    raw_source: RawSource, result: ExtractionResult, chunk: ChunkRecord
-) -> ExtractedUnit:
-    return build_extracted_unit(
-        unit_id=f"unit-{chunk.chunk_id:04d}",
-        raw_source=raw_source,
-        locator=f"p.{chunk.start_page}-{chunk.end_page}",
-        heading_path=chunk.heading,
-        text=chunk_file(result.cache_dir, chunk.chunk_id).read_text(encoding="utf-8"),
-    )
 
 
 def _source_text_for_registry(
