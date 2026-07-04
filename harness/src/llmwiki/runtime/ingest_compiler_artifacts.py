@@ -92,8 +92,32 @@ _STAGE_ORDER = (
     ("evidence-records", ("evidence-extraction-plan",), ("evidence-record-set",)),
     ("page-plan", ("evidence-record-set",), ("page-publication-plan",)),
     ("evidence-packs", ("page-publication-plan",), ("evidence-pack-set",)),
-    ("human-articles", ("evidence-pack-set",), ("human-article", "human-article-findings")),
-    ("article-lint", ("human-article",), ("article-lint-runs",)),
-    ("diagnostics", ("evidence-pack-set",), ("diagnostic-question-set",)),
+    (
+        "human-articles",
+        ("evidence-pack-set",),
+        ("human-article-initial", "human-article-findings-initial"),
+    ),
+    ("article-lint", ("human-article-initial",), ("article-lint-runs-initial",)),
+    (
+        "diagnostics",
+        ("evidence-pack-set", "article-lint-runs-initial"),
+        (
+            "diagnostic-question-set",
+            "diagnostic-answer-set",
+            "diagnostic-finding-set",
+            "diagnostics-report",
+        ),
+    ),
+    (
+        "repair",
+        ("diagnostic-finding-set",),
+        (
+            "repair-task-set",
+            "repair-run",
+            "human-article",
+            "human-article-findings",
+            "article-lint-runs",
+        ),
+    ),
     ("staged-publish", ("article-lint-runs",), ("staged-pages", "lint-run", "publish-run")),
 )

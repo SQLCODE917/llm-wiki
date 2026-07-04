@@ -2,7 +2,12 @@
 
 from __future__ import annotations
 
-from llmwiki.domain.ingest_compiler import CompilerFinding, DiagnosticQuestionSet
+from llmwiki.domain.diagnostic_contracts import (
+    DiagnosticQuestionSet,
+    DiagnosticReport,
+    RepairRun,
+)
+from llmwiki.domain.ingest_compiler import CompilerFinding
 from llmwiki.domain.ledger.article_lint_artifacts import ArticleLintArtifact
 from llmwiki.domain.ledger.evidence_pack import EvidencePackSet
 from llmwiki.domain.ledger.page_publication import PagePublicationPlan
@@ -24,6 +29,8 @@ def build_compiler_source_manifest(
     evidence_pack_set: EvidencePackSet,
     article_lint_artifact: ArticleLintArtifact,
     diagnostics: DiagnosticQuestionSet,
+    diagnostic_report: DiagnosticReport,
+    repair_run: RepairRun,
     linked_pages: tuple[WikiPage, ...],
     compiler_findings: tuple[CompilerFinding, ...],
 ) -> WikiPage:
@@ -50,6 +57,8 @@ def build_compiler_source_manifest(
         evidence_pack_set,
         article_lint_artifact,
         diagnostics,
+        diagnostic_report,
+        repair_run,
         linked_pages,
         compiler_findings,
     )
@@ -66,6 +75,8 @@ def _body(
     evidence_pack_set: EvidencePackSet,
     article_lint_artifact: ArticleLintArtifact,
     diagnostics: DiagnosticQuestionSet,
+    diagnostic_report: DiagnosticReport,
+    repair_run: RepairRun,
     linked_pages: tuple[WikiPage, ...],
     compiler_findings: tuple[CompilerFinding, ...],
 ) -> str:
@@ -86,7 +97,10 @@ def _body(
         f"{evidence_pack_set.missing_pack_count} missing/invalid",
         f"- Article lint gates: {article_lint_artifact.accepted_count} accepted, "
         f"{article_lint_artifact.blocked_count} blocked",
-        f"- Diagnostic questions: {len(diagnostics.questions)}",
+        f"- Diagnostic questions: {len(diagnostics.questions)}; "
+        f"{diagnostic_report.missing_count} missing, "
+        f"{diagnostic_report.unsupported_count} unsupported",
+        f"- Repair run: {repair_run.status}; {len(repair_run.changed_page_ids)} page(s) changed",
         f"- Compiler findings: {len(compiler_findings)}",
         "",
         "## Accepted Pages",

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from collections import Counter
 
+from llmwiki.domain.diagnostic_contracts import DiagnosticFinding, DiagnosticReport, RepairRun
 from llmwiki.domain.ingest_compiler import CompilerFinding, IngestArtifactSet
 from llmwiki.domain.ledger.article_lint_artifacts import ArticleLintArtifact
 from llmwiki.domain.ledger.canonical import deterministic_id
@@ -17,8 +18,12 @@ def compiler_findings(
     pack_set: EvidencePackSet,
     human_articles: HumanArticleLinkedPages,
     article_lint: ArticleLintArtifact,
+    *,
+    diagnostic_findings: tuple[DiagnosticFinding, ...] = (),
+    repair_run: RepairRun | None = None,
 ) -> tuple[CompilerFinding, ...]:
     findings: list[CompilerFinding] = []
+    repaired_page_ids = set(repair_run.changed_page_ids if repair_run is not None else ())
     for rejected in publication_plan.rejected_candidates:
         findings.append(
             _finding(
@@ -63,6 +68,31 @@ def compiler_findings(
             for lint_finding in run.findings
             if lint_finding.severity == "blocking"
         )
+    for finding in diagnostic_findings:
+        if finding.severity != "blocking":
+            continue
+        if finding.page_id in repaired_page_ids:
+            continue
+        findings.append(
+            _finding(
+                "diagnostics",
+                "blocking",
+                finding.finding_code,
+                finding.page_id,
+                finding.message,
+            )
+        )
+    if repair_run is not None:
+        findings.extend(
+            _finding(
+                "repair",
+                "blocking",
+                "repair-rejected-page",
+                page_id,
+                "diagnostic repair did not produce an accepted article page",
+            )
+            for page_id in repair_run.rejected_page_ids
+        )
     return tuple(findings)
 
 
@@ -74,16 +104,27 @@ def compiler_report(
     source_locator: str,
     artifact_set: IngestArtifactSet,
     findings: tuple[CompilerFinding, ...],
+    *,
+    diagnostic_report: DiagnosticReport | None = None,
+    repair_run: RepairRun | None = None,
 ) -> str:
     top_codes = ", ".join(
         f"{code}={count}"
         for code, count in Counter(f.finding_code for f in findings).most_common(5)
     )
     suffix = f" Top compiler findings: {top_codes}." if top_codes else ""
+    diagnostic = ""
+    if diagnostic_report is not None and repair_run is not None:
+        diagnostic = (
+            f" Diagnostics: answered {diagnostic_report.answered_count}/"
+            f"{diagnostic_report.question_count}, missing {diagnostic_report.missing_count}, "
+            f"unsupported {diagnostic_report.unsupported_count}; "
+            f"repair {repair_run.status}, changed {len(repair_run.changed_page_ids)}."
+        )
     return (
         f"Ingest compiler run {artifact_set.ingest_artifact_set_id} for raw/{source_locator}.\n"
         f"Accepted pages: {len(artifact_set.accepted_page_ids)}; "
-        f"rejected pages: {len(artifact_set.rejected_page_ids)}.{suffix}"
+        f"rejected pages: {len(artifact_set.rejected_page_ids)}.{diagnostic}{suffix}"
     )
 
 

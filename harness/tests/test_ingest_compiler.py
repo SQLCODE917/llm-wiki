@@ -123,10 +123,18 @@ def test_compiler_stage_order_and_artifact_manifest(
         "human-articles",
         "article-lint",
         "diagnostics",
+        "repair",
         "staged-publish",
     )
     assert "ingest-artifact-set.json" in compilation.artifact_files
     assert "diagnostic-question-set.json" in compilation.artifact_files
+    assert "diagnostic-answer-set.json" in compilation.artifact_files
+    assert "diagnostic-finding-set.json" in compilation.artifact_files
+    assert "diagnostics-report.md" in compilation.artifact_files
+    assert "repair-task-set.json" in compilation.artifact_files
+    assert "repair-run.json" in compilation.artifact_files
+    assert "human-article-initial.json" in compilation.artifact_files
+    assert "article-lint-runs-initial.json" in compilation.artifact_files
     assert "normalized-source-map.json" in compilation.artifact_files
     assert "claim-ledger.json" not in compilation.artifact_files
     assert "page-synthesis-plan.json" not in compilation.artifact_files
@@ -177,6 +185,7 @@ def test_javascript_recipe_publishes_code_payload_context(
     assert "## Evidence Details" in recipe.page_body
     assert "values.map" in recipe.page_body
     assert "diagnostic-question-set.json" in compilation.artifact_files
+    assert "repair-run.json" in compilation.artifact_files
 
 
 async def test_session_ingest_calls_injected_compiler(

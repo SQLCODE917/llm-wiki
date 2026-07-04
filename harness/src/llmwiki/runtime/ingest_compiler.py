@@ -7,22 +7,19 @@ from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 
+from llmwiki.domain.diagnostic_contracts import DiagnosticAnswerer, DiagnosticJudge
+from llmwiki.domain.diagnostics import render_diagnostic_report
 from llmwiki.domain.ingest_compiler import (
     CompilerFinding,
     CompilerStage,
     IngestCompilation,
     IngestCompilerInput,
-    build_diagnostic_question_set,
     build_ingest_artifact_set,
 )
 from llmwiki.domain.ledger.article_lint_artifacts import build_article_lint_artifact
 from llmwiki.domain.ledger.canonical import canonical_json, deterministic_id, short_digest
 from llmwiki.domain.ledger.evidence_pack import build_evidence_pack_set
 from llmwiki.domain.ledger.human_article import ArticleWriter
-from llmwiki.domain.ledger.human_article_artifacts import (
-    build_human_article_artifact,
-    build_human_article_findings_artifact,
-)
 from llmwiki.domain.ledger.page_publication import conservative_publication_budget
 from llmwiki.domain.ledger.page_publication_planning import (
     plan_publication,
@@ -49,6 +46,10 @@ from llmwiki.domain.typed_evidence_producer import DeterministicTypedEvidencePro
 from llmwiki.pdf.pipeline import ExtractionResult, read_source_map, save_manifest
 from llmwiki.runtime.compiler_page_candidates import build_compiler_page_candidates
 from llmwiki.runtime.compiler_source_manifest import build_compiler_source_manifest
+from llmwiki.runtime.diagnostic_repair_loop import (
+    diagnostic_article_artifacts,
+    run_diagnostic_repair_loop,
+)
 from llmwiki.runtime.ingest_compiler_artifacts import compiler_artifact_files
 from llmwiki.runtime.ingest_compiler_reporting import (
     compiler_findings,
@@ -67,6 +68,8 @@ class IngestCompiler:
     run_id: str
     extract_pdf: Callable[[Path, str, bool], ExtractionResult] | None = None
     article_writer: ArticleWriter | None = None
+    diagnostic_answerer: DiagnosticAnswerer | None = None
+    diagnostic_judge: DiagnosticJudge | None = None
 
     def compile(self, compiler_input: IngestCompilerInput) -> IngestCompilation:
         source_locator = compiler_input.source_locator
@@ -105,23 +108,38 @@ class IngestCompiler:
             evidence_record_set=record_set,
             source_map=source_map,
         )
-        human_articles = build_human_article_linked_pages(
+        initial_human_articles = build_human_article_linked_pages(
             evidence_pack_set=pack_set,
             source_locator=source_locator,
             today=self.today,
             article_writer=self.article_writer,
         )
-        article_lint = build_article_lint_artifact(
+        initial_article_lint = build_article_lint_artifact(
             source_hash=source_map.source_hash,
-            runs=human_articles.article_lint_runs,
+            runs=initial_human_articles.article_lint_runs,
         )
-        diagnostics = build_diagnostic_question_set(
+        diagnostic_loop = run_diagnostic_repair_loop(
+            source_locator=source_locator,
             source_id=source_page_id,
             source_hash=source_map.source_hash,
-            packs=pack_set.packs,
+            today=self.today,
+            publication_plan=publication_plan,
+            pack_set=pack_set,
+            initial_human_articles=initial_human_articles,
+            initial_article_lint=initial_article_lint,
+            article_writer=self.article_writer,
+            diagnostic_answerer=self.diagnostic_answerer,
+            diagnostic_judge=self.diagnostic_judge,
         )
-        findings = compiler_findings(publication_plan, pack_set, human_articles, article_lint)
-        linked_pages = human_articles.pages
+        findings = compiler_findings(
+            publication_plan,
+            pack_set,
+            diagnostic_loop.final_human_articles,
+            diagnostic_loop.final_article_lint,
+            diagnostic_findings=diagnostic_loop.finding_set.findings,
+            repair_run=diagnostic_loop.repair_run,
+        )
+        linked_pages = diagnostic_loop.final_human_articles.pages
         source_page = build_compiler_source_manifest(
             page_id=source_page_id,
             source_locator=source_locator,
@@ -131,8 +149,10 @@ class IngestCompiler:
             record_set=record_set,
             publication_plan=publication_plan,
             evidence_pack_set=pack_set,
-            article_lint_artifact=article_lint,
-            diagnostics=diagnostics,
+            article_lint_artifact=diagnostic_loop.final_article_lint,
+            diagnostics=diagnostic_loop.question_set,
+            diagnostic_report=diagnostic_loop.report,
+            repair_run=diagnostic_loop.repair_run,
             linked_pages=linked_pages,
             compiler_findings=findings,
         )
@@ -149,6 +169,9 @@ class IngestCompiler:
         )
         publish_run = build_publish_run(source_plan, staged, lint_run)
         published = accepted_pages(staged, publish_run)
+        article_artifacts = diagnostic_article_artifacts(
+            diagnostic_loop, source_map.source_hash
+        )
         artifact_files, artifact_set = compiler_artifact_files(
             source_locator=source_locator,
             source_page_id=source_page_id,
@@ -166,22 +189,36 @@ class IngestCompiler:
                     publication_report
                 ),
                 "evidence-pack-set.json": canonical_json(pack_set, indent=2),
+                "human-article-initial.json": canonical_json(
+                    article_artifacts["human-article-initial"], indent=2
+                ),
+                "human-article-findings-initial.json": canonical_json(
+                    article_artifacts["human-article-findings-initial"], indent=2
+                ),
+                "article-lint-runs-initial.json": canonical_json(
+                    article_artifacts["article-lint-runs-initial"], indent=2
+                ),
                 "human-article.json": canonical_json(
-                    build_human_article_artifact(
-                        source_hash=source_map.source_hash,
-                        records=human_articles.article_output.records,
-                    ),
-                    indent=2,
+                    article_artifacts["human-article"], indent=2
                 ),
                 "human-article-findings.json": canonical_json(
-                    build_human_article_findings_artifact(
-                        source_hash=source_map.source_hash,
-                        findings=human_articles.article_output.findings,
-                    ),
-                    indent=2,
+                    article_artifacts["human-article-findings"], indent=2
                 ),
-                "article-lint-runs.json": canonical_json(article_lint, indent=2),
-                "diagnostic-question-set.json": canonical_json(diagnostics, indent=2),
+                "article-lint-runs.json": canonical_json(
+                    article_artifacts["article-lint-runs"], indent=2
+                ),
+                "diagnostic-question-set.json": canonical_json(
+                    diagnostic_loop.question_set, indent=2
+                ),
+                "diagnostic-answer-set.json": canonical_json(
+                    diagnostic_loop.answer_set, indent=2
+                ),
+                "diagnostic-finding-set.json": canonical_json(
+                    diagnostic_loop.finding_set, indent=2
+                ),
+                "diagnostics-report.md": render_diagnostic_report(diagnostic_loop.report),
+                "repair-task-set.json": canonical_json(diagnostic_loop.task_set, indent=2),
+                "repair-run.json": canonical_json(diagnostic_loop.repair_run, indent=2),
                 "source-plan.json": canonical_json(source_plan, indent=2),
                 "staged-pages.json": canonical_json(staged, indent=2),
                 "lint-run.json": canonical_json(lint_run, indent=2),
@@ -200,7 +237,13 @@ class IngestCompiler:
             accepted_pages=published,
             artifact_files=artifact_files,
             artifact_set=artifact_set,
-            report=compiler_report(source_locator, artifact_set, findings),
+            report=compiler_report(
+                source_locator,
+                artifact_set,
+                findings,
+                diagnostic_report=diagnostic_loop.report,
+                repair_run=diagnostic_loop.repair_run,
+            ),
         )
 
     def _source_map(

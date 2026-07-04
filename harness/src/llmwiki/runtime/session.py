@@ -126,6 +126,7 @@ from llmwiki.pdf.pipeline import (
     save_manifest,
 )
 from llmwiki.runtime.cross_source_pipeline import build_cross_source_pages
+from llmwiki.runtime.diagnostic_forge import ForgeDiagnosticAnswerer, ForgeDiagnosticJudge
 from llmwiki.runtime.human_article_forge import ForgeHumanArticleWriter
 from llmwiki.runtime.ingest_compiler import IngestCompiler
 from llmwiki.runtime.ledger_pipeline import build_source_ledger
@@ -325,11 +326,24 @@ class Session:
 
     def _default_ingest_compiler(self) -> IngestCompiler:
         article_writer = None
+        diagnostic_answerer = None
+        diagnostic_judge = None
         if self.client is not None:
+            schema_text = self.store.read_schema()
             article_writer = ForgeHumanArticleWriter(
                 client=self.client,
                 context_manager=self.context_manager,
-                schema_text=self.store.read_schema(),
+                schema_text=schema_text,
+            )
+            diagnostic_answerer = ForgeDiagnosticAnswerer(
+                client=self.client,
+                context_manager=self.context_manager,
+                schema_text=schema_text,
+            )
+            diagnostic_judge = ForgeDiagnosticJudge(
+                client=self.client,
+                context_manager=self.context_manager,
+                schema_text=schema_text,
             )
         return IngestCompiler(
             store=self.store,
@@ -337,6 +351,8 @@ class Session:
             run_id=self.run_id or self.today,
             extract_pdf=self.extract_pdf,
             article_writer=article_writer,
+            diagnostic_answerer=diagnostic_answerer,
+            diagnostic_judge=diagnostic_judge,
         )
 
     def _publish_ingest_compilation(self, compilation: IngestCompilation) -> OperationResult:

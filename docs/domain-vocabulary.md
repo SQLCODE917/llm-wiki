@@ -89,6 +89,15 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `CompilerFinding` | `compiler_finding` |
 | `DiagnosticQuestionSet` | `diagnostic_question_set` |
 | `DiagnosticQuestion` | `diagnostic_question` |
+| `DiagnosticAnswer` | `diagnostic_answer` |
+| `DiagnosticAnswerSet` | `diagnostic_answer_set` |
+| `DiagnosticFinding` | `diagnostic_finding` |
+| `DiagnosticFindingSet` | `diagnostic_finding_set` |
+| `DiagnosticReport` | `diagnostic_report` |
+| `RepairTask` | `repair_task` |
+| `RepairTaskSet` | `repair_task_set` |
+| `RepairRun` | `repair_run` |
+| `DiagnosticAnswerCorpus` | `diagnostic_answer_corpus` |
 | `Schema` | `schema` |
 | `WikiStructure` | `wiki_structure` |
 | `IngestRun` | `ingest_run` |
@@ -228,8 +237,17 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | IngestArtifactSet | Exists | `llmwiki.domain.ingest_compiler`; source-scoped manifest for ordered compiler stage outputs, accepted pages, rejected pages, and findings |
 | CompilerStage | Exists | `llmwiki.domain.ingest_compiler`; one ordered compiler stage with input/output artifact ids, status, timing, and finding count |
 | CompilerFinding | Exists | `llmwiki.domain.ingest_compiler`; one source compiler blocking or diagnostic finding |
-| DiagnosticQuestionSet | Exists | `llmwiki.domain.ingest_compiler`; deterministic source-grounded questions generated from accepted evidence packs |
-| DiagnosticQuestion | Exists | `llmwiki.domain.ingest_compiler`; one planned diagnostic question with expected support refs and source anchors |
+| DiagnosticQuestionSet | Exists | `llmwiki.domain.diagnostic_contracts`; deterministic source-grounded questions generated from accepted evidence packs |
+| DiagnosticQuestion | Exists | `llmwiki.domain.diagnostic_contracts`; one planned diagnostic question with expected support refs and source anchors |
+| DiagnosticAnswer | Exists | `llmwiki.domain.diagnostic_contracts`; one wiki-only answer to a diagnostic question |
+| DiagnosticAnswerSet | Exists | `llmwiki.domain.diagnostic_contracts`; source-scoped artifact containing all wiki-only diagnostic answers |
+| DiagnosticFinding | Exists | `llmwiki.domain.diagnostic_contracts`; one evidence-backed issue found while judging a diagnostic answer |
+| DiagnosticFindingSet | Exists | `llmwiki.domain.diagnostic_contracts`; source-scoped artifact containing diagnostic answer findings |
+| DiagnosticReport | Exists | `llmwiki.domain.diagnostic_contracts`; generated report summarizing diagnostic coverage, missing answers, unsupported answers, and repairs |
+| RepairTask | Exists | `llmwiki.domain.diagnostic_contracts`; one bounded article-rewrite task derived from blocking diagnostic findings |
+| RepairTaskSet | Exists | `llmwiki.domain.diagnostic_contracts`; source-scoped artifact containing planned diagnostic repair tasks |
+| RepairRun | Exists | `llmwiki.domain.diagnostic_contracts`; one bounded repair attempt and its changed, accepted, or rejected article pages |
+| DiagnosticAnswerCorpus | Exists | `llmwiki.domain.diagnostic_contracts`; in-memory staged-wiki snapshot available to diagnostic answerers |
 | ClaimRoleTag | Exists | `llmwiki.domain.source_summary`; default vocabulary owned by `Schema` |
 | SourceClaim | Exists | `llmwiki.domain.source_summary`; built by `llmwiki.domain.source_claims` |
 | SourceClaimGroup | Exists | `llmwiki.domain.source_summary`; groups `SourceClaim` records for coverage planning |
@@ -320,6 +338,11 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | compiler normalized source map JSON | `cache/ingest-compiler/*/normalized-source-map.json` | `NormalizedSourceMap` |
 | compiler evidence pack set JSON | `cache/ingest-compiler/*/evidence-pack-set.json` | `EvidencePackSet` |
 | diagnostic question set JSON | `cache/ingest-compiler/*/diagnostic-question-set.json` | `DiagnosticQuestionSet` |
+| diagnostic answer set JSON | `cache/ingest-compiler/*/diagnostic-answer-set.json` | `DiagnosticAnswerSet` |
+| diagnostic finding set JSON | `cache/ingest-compiler/*/diagnostic-finding-set.json` | `DiagnosticFindingSet` |
+| diagnostics report markdown | `cache/ingest-compiler/*/diagnostics-report.md` | `DiagnosticReport` |
+| repair task set JSON | `cache/ingest-compiler/*/repair-task-set.json` | `RepairTaskSet` |
+| repair run JSON | `cache/ingest-compiler/*/repair-run.json` | `RepairRun` |
 | graph JSON | `wiki/wiki-graph.json` from `llmwiki.domain.graph.WikiGraph.to_payload` | `WikiGraph` |
 | candidate JSON | `wiki/wiki-candidates.json` from `CandidateBacklog.to_json_text` | `CandidateBacklog` |
 | chat SQLite rows | `llmwiki.store.chat_store` | `ChatSession` concept |

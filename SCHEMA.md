@@ -14,7 +14,8 @@ The index and log formats below are also enforced in harness code
 - `harness/cache/ingest-compiler/<source-run>/` — generated ingest compiler
   artifacts: normalized source map, source profile, typed evidence records,
   publication plan, evidence packs, human articles, article lint, diagnostic
-  questions, staged page set, publish run, and the ordered
+  questions, diagnostic answers, diagnostic findings, repair tasks, repair runs,
+  staged page set, publish run, and the ordered
   `ingest-artifact-set.json` manifest that explains how a raw source became
   wiki pages. These artifacts are rebuildable from `raw/` and never count as
   cited source evidence.
@@ -150,19 +151,27 @@ as source evidence or as existing wiki coverage.
 4. Build an `EvidencePackSet` only for accepted publication candidates. Each
    pack carries full source text, payload text, source anchors, and stable
    `SupportRef` values. Do not use lossy summaries as factual article input.
-5. Write structured `HumanArticle` content from exactly one `EvidencePack`,
-   validate every factual sentence against article claims and support refs,
-   render markdown through the harness, then run deterministic article lint for
-   citation coverage, coherence, readable technical evidence, related-link
-   previews, and title findings. Blocking lint omits that generated article
-   page; there is no extractive fallback.
-6. Build deterministic `DiagnosticQuestionSet` artifacts from accepted evidence
-   packs and planned pages. Diagnostic answers, judging, repair tasks, and
-   repair runs are separate follow-up workflows.
-7. Stage only compiler-accepted pages: the source manifest plus generated
-   article pages whose lint gates passed. Write pages, index entries, generated
-   graph/candidate artifacts, compiler artifacts, and log entries through the
-   harness.
+5. Write provisional structured `HumanArticle` content from exactly one
+   `EvidencePack`, validate every factual sentence against article claims and
+   support refs, render markdown through the harness, then run deterministic
+   article lint for citation coverage, coherence, readable technical evidence,
+   related-link previews, and title findings. Blocking lint omits that
+   generated article page; there is no extractive fallback.
+6. Build diagnostic questions from accepted evidence packs and planned pages,
+   answer them from the provisional staged wiki snapshot only, and judge those
+   answers against evidence packs. Answerers may read staged wiki page text, but
+   not raw sources, source maps, evidence packs, or store APIs. Judges may read
+   evidence packs because judging authority is source-backed.
+7. Convert blocking diagnostic findings into bounded article repair tasks.
+   Repair rewrites only targeted human articles through the article writer,
+   feeds diagnostic findings back as article-writer feedback, re-runs article
+   validation and article lint, and keeps the previous accepted article when a
+   repair attempt fails. Missing pages may be recorded as repair tasks, but
+   ordinary v1 repair does not expand the publication budget automatically.
+8. Stage only compiler-accepted pages after repair: the source manifest plus
+   generated article pages whose final lint gates passed. Write pages, index
+   entries, generated graph/candidate artifacts, compiler artifacts, and log
+   entries through the harness.
 
 When an ingest profile is active, follow its additional source-type guidance
 inside the same workflow. If profile guidance and this schema conflict, this

@@ -92,8 +92,9 @@ def write_human_article_page(
     *,
     max_attempts: int = _MAX_ARTICLE_ATTEMPTS,
     title_findings: tuple[PageTitleFinding, ...] = (),
+    initial_findings: tuple[ArticleFinding, ...] = (),
 ) -> HumanArticleAttempt:
-    current_findings: tuple[ArticleFinding, ...] = ()
+    current_findings: tuple[ArticleFinding, ...] = initial_findings
     for _ in range(max_attempts):
         article = writer.write_article(pack, current_findings)
         result = validate_human_article(pack, article)
