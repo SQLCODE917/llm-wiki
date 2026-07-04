@@ -9,6 +9,7 @@ from pathlib import Path
 from pydantic import PydanticUserError, TypeAdapter
 
 from llmwiki.domain.objects import (
+    CandidateClaim,
     Evidence,
     ExtractedUnit,
     PagePlan,
@@ -95,11 +96,21 @@ def build_page_plan(
     schema: Schema | None = None,
     source_plan: SourcePlan | None = None,
     new_page_prefix: str | None = None,
+    source_claim_items: tuple[SourceClaim, ...] | None = None,
 ) -> PagePlan:
     active_schema = schema or Schema()
-    source_claim_items = source_claims(extracted_units, active_schema)
+    uses_supplied_source_claims = source_claim_items is not None
+    source_claim_items = (
+        source_claim_items
+        if source_claim_items is not None
+        else source_claims(extracted_units, active_schema)
+    )
     source_claim_group_items = source_claim_groups(source_claim_items)
-    claims = candidate_claims(extracted_units)
+    claims = (
+        _candidate_claims_from_source_claims(source_claim_items)
+        if uses_supplied_source_claims
+        else candidate_claims(extracted_units)
+    )
     topics = candidate_topics(extracted_units, claims)
     entities = candidate_entities(extracted_units, claims)
     clusters = topic_clusters(extracted_units, claims, topics, source_claim_group_items)
@@ -266,6 +277,20 @@ def _unique_write_ids(writes: tuple[PlannedPageWrite, ...]) -> tuple[PlannedPage
         suffix = "-".join(write.extracted_units) or str(seen[write.write_id])
         unique.append(replace(write, write_id=f"{write.write_id}-{suffix}"))
     return tuple(unique)
+
+
+def _candidate_claims_from_source_claims(
+    claims: tuple[SourceClaim, ...],
+) -> tuple[CandidateClaim, ...]:
+    return tuple(
+        CandidateClaim(
+            claim_id=f"claim-{claim.source_claim_id.removeprefix('source-claim-')}",
+            statement=claim.statement,
+            evidence=claim.evidence,
+            confidence=claim.claim_salience or 0.7,
+        )
+        for claim in claims
+    )
 
 
 def _document_title(source_text: str, source_locator: str) -> str:

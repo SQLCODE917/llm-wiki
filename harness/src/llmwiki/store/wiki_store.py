@@ -60,6 +60,8 @@ from llmwiki.domain.source_summary import (
 )
 from llmwiki.domain.technical_atom_io import technical_atom_catalog_from_json
 from llmwiki.domain.technical_atoms import TechnicalAtomCatalog
+from llmwiki.domain.typed_evidence import EvidenceRecordSet
+from llmwiki.domain.typed_evidence_io import evidence_record_set_from_json
 from llmwiki.store.source_resolver import FileSourceTextResolver
 
 _RESERVED_PAGE_IDS = frozenset({"index", "log"})
@@ -442,6 +444,23 @@ class WikiStore:
         if not plan_path.is_file():
             return None
         return evidence_extraction_plan_from_json(plan_path.read_text(encoding="utf-8"))
+
+    def write_evidence_record_set_artifact(
+        self, source_locator: str, evidence_record_set_json: str
+    ) -> Path:
+        artifact_dir = self.page_plan_artifact_dir(source_locator)
+        artifact_dir.mkdir(parents=True, exist_ok=True)
+        record_set_path = artifact_dir / "evidence-record-set.json"
+        record_set_path.write_text(evidence_record_set_json, encoding="utf-8")
+        return record_set_path
+
+    def read_evidence_record_set_artifact(
+        self, source_locator: str
+    ) -> EvidenceRecordSet | None:
+        record_set_path = self.page_plan_artifact_dir(source_locator) / "evidence-record-set.json"
+        if not record_set_path.is_file():
+            return None
+        return evidence_record_set_from_json(record_set_path.read_text(encoding="utf-8"))
 
     def write_technical_atom_catalog_artifact(
         self, source_locator: str, technical_atom_catalog_json: str

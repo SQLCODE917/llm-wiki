@@ -58,6 +58,11 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `EvidenceVocabulary` | `evidence_vocabulary` |
 | `EvidenceExtractionPlan` | `evidence_extraction_plan` |
 | `EvidenceExtractionFinding` | `evidence_extraction_finding` |
+| `TypedEvidenceRecord` | `typed_evidence_record` |
+| `EvidenceRecordSet` | `evidence_record_set` |
+| `EvidenceRecordStatus` | `evidence_record_status` |
+| `EvidenceRecordFinding` | `evidence_record_finding` |
+| `StructuredEvidencePayload` | `structured_evidence_payload` |
 | `Schema` | `schema` |
 | `WikiStructure` | `wiki_structure` |
 | `IngestRun` | `ingest_run` |
@@ -166,8 +171,13 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | SourceProfile | Exists | `llmwiki.domain.source_profiles`; source-purpose classification that selects typed evidence vocabulary, distinct from runtime `IngestProfile` overlays |
 | EvidenceRecordType | Exists | `llmwiki.domain.source_profiles`; allowed typed-evidence record label selected by `SourceProfile` |
 | EvidenceVocabulary | Exists | `llmwiki.domain.source_profiles`; profile-owned set of allowed `EvidenceRecordType` values |
-| EvidenceExtractionPlan | Exists | `llmwiki.domain.source_profiles`; source-block plan and allowed record types for future typed extraction |
+| EvidenceExtractionPlan | Exists | `llmwiki.domain.source_profiles`; source-block plan and allowed record types for typed evidence extraction |
 | EvidenceExtractionFinding | Exists | `llmwiki.domain.source_profiles`; blocking or warning finding for source-profile evidence extraction contracts |
+| EvidenceRecordSet | Exists | `llmwiki.domain.typed_evidence`; source-scoped typed evidence artifact used by PDF page planning |
+| TypedEvidenceRecord | Exists | `llmwiki.domain.typed_evidence`; one source-anchored factual record with an allowed `EvidenceRecordType` |
+| EvidenceRecordStatus | Exists | `llmwiki.domain.typed_evidence`; accepted, fragmentary, rejected, or needs-review status for typed evidence |
+| EvidenceRecordFinding | Exists | `llmwiki.domain.typed_evidence`; validation finding for one typed evidence record |
+| StructuredEvidencePayload | Exists | `llmwiki.domain.typed_evidence`; non-lossy payload text and normalized fields for typed evidence |
 | ClaimRoleTag | Exists | `llmwiki.domain.source_summary`; default vocabulary owned by `Schema` |
 | SourceClaim | Exists | `llmwiki.domain.source_summary`; built by `llmwiki.domain.source_claims` |
 | SourceClaimGroup | Exists | `llmwiki.domain.source_summary`; groups `SourceClaim` records for coverage planning |
@@ -185,7 +195,7 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | Evidence | Exists | `llmwiki.domain.objects`; citation evidence policy remains separate |
 | SourceText | Exists | `llmwiki.domain.evidence_registry`; line-addressable generated source text |
 | SourceRange | Exists | `llmwiki.domain.evidence_registry`; page-scoped source span |
-| EvidenceRecord | Exists | `llmwiki.domain.evidence_registry`; stable generated evidence excerpt record |
+| EvidenceRecord | Exists | `llmwiki.domain.evidence_registry`; stable generated evidence excerpt record for citation/range audits, not the typed evidence authority |
 | EvidenceBank | Exists | `llmwiki.domain.evidence_registry`; bounded snippets derived from evidence records |
 | LocatorMatch | Exists | `llmwiki.domain.evidence_locators`; deterministic locator check result |
 | ClaimSupportCandidate | Exists | `llmwiki.domain.claim_support`; selected generated claim with source/evidence links |
@@ -258,6 +268,7 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | candidate JSON | `wiki/wiki-candidates.json` from `CandidateBacklog.to_json_text` | `CandidateBacklog` |
 | chat SQLite rows | `llmwiki.store.chat_store` | `ChatSession` concept |
 | accepted source summary draft JSON | `cache/page-plans/*/accepted-source-summaries/*.json` | `SourceSummaryDraft` |
+| evidence record set JSON | `cache/page-plans/*/evidence-record-set.json` | `EvidenceRecordSet` |
 | technical atom catalog JSON | `cache/page-plans/*/technical-atoms.json` | `TechnicalAtomCatalog` |
 | projection context JSON | `cache/page-plans/*/ledger/projection-context.json` | `ProjectionContext` |
 

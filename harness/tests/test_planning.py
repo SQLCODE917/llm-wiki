@@ -5,7 +5,7 @@ from forge.context import ContextManager, NoCompact
 from forge.core.workflow import ToolCall
 
 from llmwiki.config import WikiPaths
-from llmwiki.domain.objects import RawSource, SourceBundle
+from llmwiki.domain.objects import Evidence, RawSource, SourceBundle, SourceClaim
 from llmwiki.domain.pages import (
     LOCAL_FLAT_STRUCTURE,
     PageMetadata,
@@ -560,6 +560,50 @@ def test_candidate_claims_bounds_long_unpunctuated_units() -> None:
     assert claims
     assert all(len(claim.statement) <= 1800 for claim in claims)
     assert len(claims) <= 120
+
+
+def test_page_plan_can_use_supplied_typed_source_claims() -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    unit = build_extracted_unit(
+        unit_id="prompt-window-0001",
+        raw_source=raw_source,
+        locator="p.1",
+        heading_path="Functions",
+        text="Raw prompt-window prose should not become a claim. Another raw sentence appears.",
+    )
+    evidence = Evidence(
+        raw_source=raw_source,
+        locator="book.pdf p.1 typed-evidence:record-1",
+        claim="Functions are values.",
+    )
+    typed_claim = SourceClaim(
+        source_claim_id="source-claim-typed-evidence-record-1",
+        statement="Functions are values.",
+        evidence=evidence,
+        extracted_unit_id=unit.unit_id,
+        source_span=evidence.locator,
+        claim_role_tags=("definition",),
+        claim_salience=0.91,
+        claim_certainty="supported",
+        subject_terms=("functions", "values"),
+        claim_eligibility="eligible",
+        claim_centrality=1.0,
+    )
+
+    plan = build_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        extracted_units=(unit,),
+        existing_pages={},
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+        source_claim_items=(typed_claim,),
+    )
+
+    assert plan.source_claims == (typed_claim,)
+    assert [claim.statement for claim in plan.candidate_claims] == ["Functions are values."]
+    assert all("Raw prompt-window prose" not in claim.statement for claim in plan.source_claims)
 
 
 def test_cosine_uses_explicit_bounded_loop_for_large_embeddings() -> None:

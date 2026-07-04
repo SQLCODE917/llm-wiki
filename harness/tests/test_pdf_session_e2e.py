@@ -8,14 +8,19 @@ from llmwiki.config import WikiPaths
 from llmwiki.domain.objects import PagePlan, RawSource, SourceBundle
 from llmwiki.domain.pages import PageMetadata, WikiPage
 from llmwiki.domain.planning import page_plan_to_json
+from llmwiki.domain.source_claims import source_claim_groups
 from llmwiki.domain.source_map import normalized_source_map_to_json
+from llmwiki.domain.source_profile_selector import select_source_profile
+from llmwiki.domain.source_profiles import build_evidence_extraction_plan
+from llmwiki.domain.typed_evidence_producer import DeterministicTypedEvidenceProducer
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.document import DocumentElement, DocumentModel
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, from_json
-from llmwiki.pdf.pipeline import ExtractionResult, source_map_file
+from llmwiki.pdf.pipeline import ExtractionResult, read_source_map, source_map_file
 from llmwiki.pdf.source_map_builder import build_normalized_source_map
 from llmwiki.runtime.pdf_source_units import extracted_units_from_pdf_cache
 from llmwiki.runtime.session import Session
+from llmwiki.runtime.typed_evidence_source_claims import source_claims_from_typed_evidence
 from llmwiki.store import WikiStore
 
 TODAY = "2026-06-11"
@@ -118,12 +123,30 @@ def _session(store: WikiStore, paths: WikiPaths, extraction: ExtractionResult) -
 
 def _persisted_plan(extraction: ExtractionResult) -> PagePlan:
     raw_source = RawSource.from_locator("book.pdf")
+    source_map = read_source_map(extraction.cache_dir)
+    assert source_map is not None
+    profile_artifact = select_source_profile(source_map)
+    extraction_plan = build_evidence_extraction_plan(
+        source_map,
+        profile_artifact.source_profile,
+        profile_artifact.evidence_vocabulary,
+    )
+    record_set = DeterministicTypedEvidenceProducer().build_record_set(
+        source_map,
+        profile_artifact,
+        extraction_plan,
+    )
+    source_claims = source_claims_from_typed_evidence(
+        raw_source=raw_source,
+        source_map=source_map,
+        record_set=record_set,
+    )
     return PagePlan(
         plan_id="previous-run-pdf-book",
         source_bundle=SourceBundle.one(raw_source),
         extracted_units=extracted_units_from_pdf_cache(raw_source, extraction.cache_dir),
-        source_claims=(),
-        source_claim_groups=(),
+        source_claims=source_claims,
+        source_claim_groups=source_claim_groups(source_claims),
         candidate_claims=(),
         candidate_topics=(),
         candidate_entities=(),
@@ -206,15 +229,20 @@ async def test_pdf_ingest_writes_ledger_projection(store: WikiStore, paths: Wiki
     assert (ledger_dir / "topics.json").is_file()
     source_profile = store.read_source_profile_artifact("book.pdf")
     extraction_plan = store.read_evidence_extraction_plan_artifact("book.pdf")
+    evidence_record_set = store.read_evidence_record_set_artifact("book.pdf")
     assert source_profile is not None
     assert extraction_plan is not None
+    assert evidence_record_set is not None
     assert source_profile.source_profile.selection_reason
     assert source_profile.source_profile.confidence > 0
     assert (
         extraction_plan.allowed_record_types
         == source_profile.evidence_vocabulary.allowed_record_types
     )
+    assert evidence_record_set.accepted_records
+    assert all(record.source_anchors for record in evidence_record_set.records)
     assert "Source profile:" in result.output
+    assert "Typed evidence records:" in result.output
     saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
     assert saved.integrated
     assert not saved.all_done

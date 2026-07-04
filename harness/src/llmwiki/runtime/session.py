@@ -67,6 +67,7 @@ from llmwiki.domain.objects import (
     PlannedPageWrite,
     RawSource,
     SourceBundle,
+    SourceClaim,
     SourcePlan,
 )
 from llmwiki.domain.pages import PageMetadata, WikiPage, parse_page, slugify
@@ -84,6 +85,7 @@ from llmwiki.domain.semantic_lint import (
     SemanticLintReport,
     SemanticLintSelection,
 )
+from llmwiki.domain.source_map import NormalizedSourceMap
 from llmwiki.domain.source_page_groups import source_page_group_label
 from llmwiki.domain.source_profile_io import (
     evidence_extraction_plan_to_json,
@@ -91,6 +93,7 @@ from llmwiki.domain.source_profile_io import (
 )
 from llmwiki.domain.source_profile_selector import select_source_profile
 from llmwiki.domain.source_profiles import (
+    EvidenceExtractionPlan,
     SourceProfileArtifact,
     build_evidence_extraction_plan,
 )
@@ -107,6 +110,9 @@ from llmwiki.domain.technical_atom_builder import build_technical_atom_catalog
 from llmwiki.domain.technical_atom_io import technical_atom_catalog_to_json
 from llmwiki.domain.technical_atoms import TechnicalAtomCatalog
 from llmwiki.domain.topic_navigation import reconcile_topic_links
+from llmwiki.domain.typed_evidence import EvidenceRecordSet
+from llmwiki.domain.typed_evidence_io import evidence_record_set_to_json
+from llmwiki.domain.typed_evidence_producer import DeterministicTypedEvidenceProducer
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.document import DocumentModel
 from llmwiki.pdf.manifest import ChunkRecord, Manifest
@@ -122,9 +128,13 @@ from llmwiki.runtime.cross_source_pipeline import build_cross_source_pages
 from llmwiki.runtime.ledger_pipeline import build_source_ledger
 from llmwiki.runtime.ledger_segmentation import ChunkText
 from llmwiki.runtime.page_synthesis_forge import ForgePageDraftProducer
-from llmwiki.runtime.pdf_source_units import extracted_units_from_pdf_cache
+from llmwiki.runtime.pdf_source_units import (
+    extracted_units_from_pdf_cache,
+    extracted_units_from_source_map,
+)
 from llmwiki.runtime.source_summary_replay import replay_source_summary_work_unit
 from llmwiki.runtime.transcript import TranscriptWriter
+from llmwiki.runtime.typed_evidence_source_claims import source_claims_from_typed_evidence
 from llmwiki.store import WikiStore
 from llmwiki.workflows import (
     build_chat_file_workflow,
@@ -335,17 +345,24 @@ class Session:
         result = self.extract_pdf(
             self.store.raw_source_path(source_locator), source_locator, reextract
         )
-        source_profile_artifact = self._persist_source_profile_artifacts(source_locator, result)
+        source_profile_artifact, evidence_extraction_plan = self._persist_source_profile_artifacts(
+            source_locator,
+            result,
+        )
+        evidence_record_set = self._persist_typed_evidence_artifact(
+            source_locator,
+            result,
+            source_profile_artifact,
+            evidence_extraction_plan,
+        )
         page_plan = self._pdf_page_plan(
             ingest_run,
             source_locator,
             result,
             reuse_persisted=not reextract,
+            typed_evidence_record_set=evidence_record_set,
         )
-        raw_source = _single_raw_source(ingest_run)
-        cached_plan_is_current = not reextract and self._cached_pdf_page_plan(
-            source_locator, result.cache_dir, raw_source
-        ) is not None
+        cached_plan_is_current = False
         self._persist_page_plan(
             source_locator,
             page_plan,
@@ -366,6 +383,7 @@ class Session:
             source_text=source_text,
             ingest_run=ingest_run,
             source_profile_artifact=source_profile_artifact,
+            evidence_record_set=evidence_record_set,
         )
 
     def _finish_ledger_ingest(
@@ -378,6 +396,7 @@ class Session:
         source_text: SourceText,
         ingest_run: IngestRun,
         source_profile_artifact: SourceProfileArtifact | None = None,
+        evidence_record_set: EvidenceRecordSet | None = None,
     ) -> OperationResult:
         registry = build_evidence_registry(page_plan, (source_text,))
         registry_hash = short_digest(registry_to_json(registry), 32)
@@ -417,10 +436,12 @@ class Session:
         if self.on_chunk_note is not None:
             self.on_chunk_note(ledger.summary)
         source_profile_line = _source_profile_report_line(source_profile_artifact)
+        typed_evidence_line = _typed_evidence_report_line(evidence_record_set)
         report = (
             f"Claim-ledger ingest of raw/{source_locator} ({len(chunks)} source unit(s)).\n"
             f"{ledger.summary}\n"
             f"{source_profile_line}"
+            f"{typed_evidence_line}"
             f"Source page: {written}; linked pages: {len(ledger.topic_pages)}. "
             f"Ledger artifacts: {self.store.page_plan_artifact_dir(source_locator)}/ledger."
         )
@@ -480,16 +501,31 @@ class Session:
         result: ExtractionResult,
         *,
         reuse_persisted: bool = True,
+        typed_evidence_record_set: EvidenceRecordSet | None = None,
     ) -> PagePlan:
         raw_source = _single_raw_source(ingest_run)
+        source_map = read_source_map(result.cache_dir)
+        if source_map is None:
+            raise PdfError(f"missing normalized source map in {result.cache_dir}")
+        units = extracted_units_from_source_map(raw_source, source_map)
+        typed_evidence_record_set = (
+            typed_evidence_record_set
+            or self._typed_evidence_record_set_from_source_map(source_locator, source_map)
+        )
+        typed_source_claims = source_claims_from_typed_evidence(
+            raw_source=raw_source,
+            source_map=source_map,
+            record_set=typed_evidence_record_set,
+        )
         if reuse_persisted and _manifest_has_progress(result.manifest):
-            cached_plan = self._cached_pdf_page_plan(source_locator, result.cache_dir, raw_source)
+            cached_plan = self._cached_pdf_page_plan(
+                source_locator,
+                result.cache_dir,
+                raw_source,
+                expected_source_claims=typed_source_claims,
+            )
             if cached_plan is not None:
                 return cached_plan
-        try:
-            units = extracted_units_from_pdf_cache(raw_source, result.cache_dir)
-        except ValueError as exc:
-            raise PdfError(str(exc)) from exc
         return build_page_plan(
             plan_id=self._page_plan_id(source_locator, "pdf"),
             source_bundle=ingest_run.source_bundle,
@@ -501,11 +537,12 @@ class Session:
             schema=ingest_run.schema,
             source_plan=_source_plan_for(ingest_run, raw_source),
             new_page_prefix=self._pdf_page_prefix(source_locator),
+            source_claim_items=typed_source_claims,
         )
 
     def _persist_source_profile_artifacts(
         self, source_locator: str, result: ExtractionResult
-    ) -> SourceProfileArtifact:
+    ) -> tuple[SourceProfileArtifact, EvidenceExtractionPlan]:
         source_map = read_source_map(result.cache_dir)
         if source_map is None:
             raise PdfError(
@@ -525,10 +562,77 @@ class Session:
             source_locator,
             evidence_extraction_plan_to_json(plan),
         )
-        return artifact
+        return artifact, plan
+
+    def _persist_typed_evidence_artifact(
+        self,
+        source_locator: str,
+        result: ExtractionResult,
+        source_profile_artifact: SourceProfileArtifact,
+        plan: EvidenceExtractionPlan,
+    ) -> EvidenceRecordSet:
+        source_map = read_source_map(result.cache_dir)
+        if source_map is None:
+            raise PdfError("PDF cache is missing normalized source map for typed evidence.")
+        record_set = self._typed_evidence_record_set_from_source_map(
+            source_locator,
+            source_map,
+            source_profile_artifact=source_profile_artifact,
+            plan=plan,
+            reuse_cached=False,
+        )
+        self.store.write_evidence_record_set_artifact(
+            source_locator,
+            evidence_record_set_to_json(record_set),
+        )
+        return record_set
+
+    def _typed_evidence_record_set_from_source_map(
+        self,
+        source_locator: str,
+        source_map: NormalizedSourceMap,
+        *,
+        source_profile_artifact: SourceProfileArtifact | None = None,
+        plan: EvidenceExtractionPlan | None = None,
+        reuse_cached: bool = True,
+    ) -> EvidenceRecordSet:
+        if source_profile_artifact is None:
+            source_profile_artifact = self.store.read_source_profile_artifact(source_locator)
+        if (
+            source_profile_artifact is None
+            or source_profile_artifact.source_profile.source_hash != source_map.source_hash
+        ):
+            source_profile_artifact = select_source_profile(source_map)
+        if plan is None:
+            plan = self.store.read_evidence_extraction_plan_artifact(source_locator)
+        if plan is None or plan.source_hash != source_map.source_hash:
+            plan = build_evidence_extraction_plan(
+                source_map,
+                source_profile_artifact.source_profile,
+                source_profile_artifact.evidence_vocabulary,
+            )
+        cached = self.store.read_evidence_record_set_artifact(source_locator)
+        if (
+            reuse_cached
+            and cached is not None
+            and cached.source_hash == source_map.source_hash
+            and cached.source_profile_id == source_profile_artifact.source_profile.source_profile_id
+            and cached.evidence_extraction_plan_id == plan.evidence_extraction_plan_id
+        ):
+            return cached
+        return DeterministicTypedEvidenceProducer().build_record_set(
+            source_map,
+            source_profile_artifact,
+            plan,
+        )
 
     def _cached_pdf_page_plan(
-        self, source_locator: str, cache_dir: Path, raw_source: RawSource
+        self,
+        source_locator: str,
+        cache_dir: Path,
+        raw_source: RawSource,
+        *,
+        expected_source_claims: tuple[SourceClaim, ...] | None = None,
     ) -> PagePlan | None:
         cached = self.store.read_page_plan_artifact(source_locator)
         if cached is None:
@@ -542,6 +646,11 @@ class Session:
         except ValueError:
             return None
         if not _pdf_page_plan_matches_source_units(plan, source_locator, units):
+            return None
+        if expected_source_claims is not None and not _source_claims_match(
+            plan.source_claims,
+            expected_source_claims,
+        ):
             return None
         return plan
 
@@ -1194,6 +1303,12 @@ def _source_profile_report_line(artifact: SourceProfileArtifact | None) -> str:
     return f"Source profile: {profile.profile_id} (confidence {profile.confidence:.2f}).\n"
 
 
+def _typed_evidence_report_line(record_set: EvidenceRecordSet | None) -> str:
+    if record_set is None:
+        return ""
+    return f"{record_set.render_status_counts()}\n"
+
+
 def _chunks_from_page_plan(page_plan: PagePlan) -> tuple[ChunkText, ...]:
     return tuple(
         ChunkText(unit.unit_id, unit.locator, unit.heading_path, unit.text)
@@ -1227,6 +1342,24 @@ def _pdf_page_plan_matches_source_units(
         (unit.unit_id, unit.locator, unit.heading_path, unit.text)
         for unit in page_plan.extracted_units
     ) == tuple((unit.unit_id, unit.locator, unit.heading_path, unit.text) for unit in units)
+
+
+def _source_claims_match(
+    actual: tuple[SourceClaim, ...],
+    expected: tuple[SourceClaim, ...],
+) -> bool:
+    return tuple(_source_claim_key(claim) for claim in actual) == tuple(
+        _source_claim_key(claim) for claim in expected
+    )
+
+
+def _source_claim_key(claim: SourceClaim) -> tuple[str, str, str, tuple[str, ...]]:
+    return (
+        claim.source_claim_id,
+        claim.statement,
+        claim.source_span,
+        claim.claim_role_tags,
+    )
 
 
 def _source_plan_for(ingest_run: IngestRun, raw_source: RawSource) -> SourcePlan | None:
