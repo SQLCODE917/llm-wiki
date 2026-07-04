@@ -1,4 +1,4 @@
-"""PDF manifest behavior around ledger-first ingest."""
+"""PDF manifest behavior around compiler ingest."""
 
 from pathlib import Path
 
@@ -112,7 +112,7 @@ def _session(store: WikiStore, paths: WikiPaths, extraction: ExtractionResult) -
     )
 
 
-async def test_plain_pdf_ingest_uses_ledger_projection_despite_stale_done_chunks(
+async def test_plain_pdf_ingest_uses_compiler_despite_stale_done_chunks(
     store: WikiStore, paths: WikiPaths
 ) -> None:
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
@@ -138,7 +138,10 @@ async def test_plain_pdf_ingest_uses_ledger_projection_despite_stale_done_chunks
     assert saved.chunks[0].status == "done"
     assert saved.chunks[0].notes == "done in a cleared wiki"
     assert store.list_pages() == ["book"]
-    assert store.read_claim_ledger_artifact("book.pdf") is not None
+    artifact_dir = store.ingest_compiler_artifact_dir("book.pdf")
+    assert (artifact_dir / "ingest-artifact-set.json").is_file()
+    assert (artifact_dir / "normalized-source-map.json").is_file()
+    assert not (artifact_dir / "claim-ledger.json").exists()
 
 
 def test_manifest_requeues_planned_done_chunk_without_recorded_writes() -> None:

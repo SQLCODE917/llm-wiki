@@ -45,6 +45,7 @@ from llmwiki.domain.evidence_registry import (
 )
 from llmwiki.domain.evidence_registry_io import registry_to_json
 from llmwiki.domain.grounding import GroundingAuditReport, GroundingSelection, GroundingVerdict
+from llmwiki.domain.ingest_compiler import IngestCompilation, IngestCompilerInput
 from llmwiki.domain.ingest_profiles import (
     IngestProfile,
     prevents_singular_plural_siblings,
@@ -126,6 +127,7 @@ from llmwiki.pdf.pipeline import (
 )
 from llmwiki.runtime.cross_source_pipeline import build_cross_source_pages
 from llmwiki.runtime.human_article_forge import ForgeHumanArticleWriter
+from llmwiki.runtime.ingest_compiler import IngestCompiler
 from llmwiki.runtime.ledger_pipeline import build_source_ledger
 from llmwiki.runtime.ledger_result import SourceLedgerResult
 from llmwiki.runtime.ledger_segmentation import ChunkText
@@ -305,7 +307,7 @@ class Session:
     on_chunk_note: Callable[[str], None] | None = None  # per-chunk supervision
     strict_evidence: StrictEvidenceMode = "off"
     ingest_profiles: tuple[IngestProfile, ...] = ()
-    write_human_articles: bool = False
+    ingest_compiler: Any | None = None
 
     def _evidence_policy(self) -> EvidencePolicy:
         return EvidencePolicy(mode=self.strict_evidence)
@@ -315,21 +317,46 @@ class Session:
     ) -> OperationResult:
         ingest_run = self._ingest_run(source_locator)
         source_locator = _single_source_locator(ingest_run)
-        if source_locator.lower().endswith(".pdf"):
-            return await self._ingest_pdf(source_locator, reextract, reintegrate, ingest_run)
         if reintegrate:
-            raise PdfError("--reintegrate applies to chunked (PDF) sources only.")
-        page_plan = self._markdown_page_plan(ingest_run, source_locator)
-        self._persist_page_plan(source_locator, page_plan)
-        source_text = source_text_from_text(source_locator, self.store.read_source(source_locator))
-        return self._finish_ledger_ingest(
-            source_locator=source_locator,
-            page_plan=page_plan,
-            chunks=_chunks_from_page_plan(page_plan),
-            document_model=None,
-            source_text=source_text,
-            ingest_run=ingest_run,
+            raise PdfError("--reintegrate was removed by the ingest compiler cutover.")
+        compiler = self.ingest_compiler or self._default_ingest_compiler()
+        compilation = compiler.compile(IngestCompilerInput(source_locator, reextract))
+        return self._publish_ingest_compilation(compilation)
+
+    def _default_ingest_compiler(self) -> IngestCompiler:
+        article_writer = None
+        if self.client is not None:
+            article_writer = ForgeHumanArticleWriter(
+                client=self.client,
+                context_manager=self.context_manager,
+                schema_text=self.store.read_schema(),
+            )
+        return IngestCompiler(
+            store=self.store,
+            today=self.today,
+            run_id=self.run_id or self.today,
+            extract_pdf=self.extract_pdf,
+            article_writer=article_writer,
         )
+
+    def _publish_ingest_compilation(self, compilation: IngestCompilation) -> OperationResult:
+        self.store.write_ingest_compiler_artifacts(
+            compilation.source_locator,
+            compilation.artifact_files,
+        )
+        for page in compilation.accepted_pages:
+            self.store.write_page(page)
+        if compilation.accepted_pages:
+            self.store.delete_source_pages_not_in(
+                compilation.source_locator,
+                {page.page_id for page in compilation.accepted_pages},
+            )
+        if self.on_chunk_note is not None:
+            self.on_chunk_note(compilation.report)
+        artifact_dir = self.store.ingest_compiler_artifact_dir(compilation.source_locator)
+        report = f"{compilation.report}\nCompiler artifacts: {artifact_dir}."
+        self.store.append_log(self.today, "ingest", compilation.source_locator, report)
+        return OperationResult("ingest", compilation.source_locator, report, None)
 
     async def _ingest_pdf(
         self,
@@ -404,14 +431,6 @@ class Session:
         registry = build_evidence_registry(page_plan, (source_text,))
         registry_hash = short_digest(registry_to_json(registry), 32)
         article_writer = None
-        if self.write_human_articles:
-            if self.client is None:
-                raise RuntimeError("Human article writing requires a configured Forge client.")
-            article_writer = ForgeHumanArticleWriter(
-                client=self.client,
-                context_manager=self.context_manager,
-                schema_text=self.store.read_schema(),
-            )
         source_profile_kind = (
             source_profile_artifact.source_profile.profile_id
             if source_profile_artifact is not None

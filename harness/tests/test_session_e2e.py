@@ -64,12 +64,12 @@ class TestIngest:
         session = _session(store, [], paths)
         result = await session.ingest(source)
 
-        assert result.output.startswith("Claim-ledger ingest of raw/moon.md")
+        assert result.output.startswith("Ingest compiler run ")
         body = store.read_page("moon")
         assert "page_family: source-manifest" in body
-        assert "## Page Families" in body
+        assert "## Compiler Summary" in body
         assert "projection_coverage:" in body
-        assert "- [[moon]] — Claim-ledger projection" in store.read_index()
+        assert "- [[moon]] — Moon: compiler source manifest from raw/moon.md." in store.read_index()
         log = paths.log_path.read_text(encoding="utf-8")
         assert f"## [{TODAY}] ingest | moon.md" in log
         assert result.transcript_path is None
@@ -81,11 +81,14 @@ class TestIngest:
     ) -> None:
         await _session(store, [], paths).ingest(source)
 
-        ledger_dir = store.page_plan_artifact_dir("moon.md") / "ledger"
-        assert (ledger_dir / "claim-ledger.json").is_file()
-        assert (ledger_dir / "projection-coverage.json").is_file()
-        assert (ledger_dir / "section-plan.json").is_file()
-        assert (ledger_dir / "topics.json").is_file()
+        artifact_dir = store.ingest_compiler_artifact_dir("moon.md")
+        assert (artifact_dir / "ingest-artifact-set.json").is_file()
+        assert (artifact_dir / "normalized-source-map.json").is_file()
+        assert (artifact_dir / "source-profile.json").is_file()
+        assert (artifact_dir / "evidence-record-set.json").is_file()
+        assert (artifact_dir / "page-publication-plan.json").is_file()
+        assert (artifact_dir / "evidence-pack-set.json").is_file()
+        assert not (artifact_dir / "claim-ledger.json").exists()
 
     async def test_markdown_ingest_removes_stale_generated_source_pages(
         self, store: WikiStore, paths: WikiPaths, source: str

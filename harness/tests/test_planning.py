@@ -621,14 +621,14 @@ def test_embedding_counts_a_bounded_token_window() -> None:
     assert "term4096" not in vector
 
 
-class PagePlanSpyStore(WikiStore):
+class CompilerArtifactSpyStore(WikiStore):
     def __init__(self, paths: WikiPaths) -> None:
         super().__init__(paths)
         self.write_checks: list[str] = []
 
     def write_page(self, page: WikiPage) -> None:
-        plan_path = self.page_plan_artifact_dir("book.pdf") / "page-plan.json"
-        assert plan_path.exists()
+        artifact_path = self.ingest_compiler_artifact_dir("book.pdf") / "ingest-artifact-set.json"
+        assert artifact_path.exists()
         self.write_checks.append(page.page_id)
         super().write_page(page)
 
@@ -789,9 +789,11 @@ def _turns(page_id: str, finish_tool: str, report: str) -> list[list[ToolCall]]:
     return [*calls, [ToolCall(tool=finish_tool, args={"report": report})]]
 
 
-async def test_fake_pdf_ingest_persists_page_plan_before_writes(paths: WikiPaths) -> None:
+async def test_fake_pdf_ingest_persists_compiler_artifacts_before_writes(
+    paths: WikiPaths,
+) -> None:
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
-    store = PagePlanSpyStore(paths)
+    store = CompilerArtifactSpyStore(paths)
     extraction = _fake_extraction(paths)
     session = Session(
         store=store,
@@ -809,16 +811,9 @@ async def test_fake_pdf_ingest_persists_page_plan_before_writes(paths: WikiPaths
     hub_page = store.read_page(BOOK_HUB)
     assert "projection_coverage:" in hub_page
     assert "page_family: source-manifest" in hub_page
-    assert "## Page Families" in hub_page
-    ledger_dir = store.page_plan_artifact_dir("book.pdf") / "ledger"
-    assert (ledger_dir / "claim-ledger.json").is_file()
-    assert (ledger_dir / "projection-coverage.json").is_file()
-    assert (ledger_dir / "projection-context.json").is_file()
-    assert (ledger_dir / "section-plan.json").is_file()
-    assert (ledger_dir / "topics.json").is_file()
-    plan_json = (store.page_plan_artifact_dir("book.pdf") / "page-plan.json").read_text(
-        encoding="utf-8"
-    )
-    assert '"planned_writes"' in plan_json
-    assert '"source_claims"' in plan_json
-    assert '"source_summary_plan"' in plan_json
+    assert "## Compiler Summary" in hub_page
+    artifact_dir = store.ingest_compiler_artifact_dir("book.pdf")
+    assert (artifact_dir / "ingest-artifact-set.json").is_file()
+    assert (artifact_dir / "page-publication-plan.json").is_file()
+    assert (artifact_dir / "evidence-pack-set.json").is_file()
+    assert (artifact_dir / "article-lint-runs.json").is_file()

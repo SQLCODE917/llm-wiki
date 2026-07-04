@@ -81,6 +81,14 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `ArticleCoherenceMetrics` | `article_coherence_metrics` |
 | `PublicationGate` | `publication_gate` |
 | `ArticleLintArtifact` | `article_lint_artifact` |
+| `IngestCompiler` | `ingest_compiler` |
+| `IngestCompilerInput` | `ingest_compiler_input` |
+| `IngestCompilation` | `ingest_compilation` |
+| `IngestArtifactSet` | `ingest_artifact_set` |
+| `CompilerStage` | `compiler_stage` |
+| `CompilerFinding` | `compiler_finding` |
+| `DiagnosticQuestionSet` | `diagnostic_question_set` |
+| `DiagnosticQuestion` | `diagnostic_question` |
 | `Schema` | `schema` |
 | `WikiStructure` | `wiki_structure` |
 | `IngestRun` | `ingest_run` |
@@ -149,6 +157,7 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | WikiPage | Exists | `llmwiki.domain.pages` |
 | WikiStructure | Exists | `llmwiki.domain.pages`; local flat value is `LOCAL_FLAT_STRUCTURE` |
 | IngestRun | Exists | `llmwiki.domain.objects` |
+| IngestCompiler | Exists | `llmwiki.runtime.ingest_compiler`; orchestrates one source compiler path from source map through staged publish |
 | PagePlan | Exists | `llmwiki.domain.objects`; built by `llmwiki.domain.planning` |
 | WikiGraph | Exists | `llmwiki.domain.graph` |
 | CandidateBacklog | Exists | `llmwiki.domain.candidates` |
@@ -214,6 +223,13 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | ArticleCoherenceMetrics | Exists | `llmwiki.domain.ledger.article_lint_contracts`; measured clipped, copied, unreadable, and missing-navigation-preview counts |
 | PublicationGate | Exists | `llmwiki.domain.ledger.article_lint_contracts`; deterministic accept/block decision for one generated article page |
 | ArticleLintArtifact | Exists | `llmwiki.domain.ledger.article_lint_artifacts`; source-scoped artifact containing article lint runs |
+| IngestCompilerInput | Exists | `llmwiki.domain.ingest_compiler`; explicit source locator and extraction options for one compiler run |
+| IngestCompilation | Exists | `llmwiki.domain.ingest_compiler`; compiler output containing accepted pages, artifacts, stage manifest, and report text |
+| IngestArtifactSet | Exists | `llmwiki.domain.ingest_compiler`; source-scoped manifest for ordered compiler stage outputs, accepted pages, rejected pages, and findings |
+| CompilerStage | Exists | `llmwiki.domain.ingest_compiler`; one ordered compiler stage with input/output artifact ids, status, timing, and finding count |
+| CompilerFinding | Exists | `llmwiki.domain.ingest_compiler`; one source compiler blocking or diagnostic finding |
+| DiagnosticQuestionSet | Exists | `llmwiki.domain.ingest_compiler`; deterministic source-grounded questions generated from accepted evidence packs |
+| DiagnosticQuestion | Exists | `llmwiki.domain.ingest_compiler`; one planned diagnostic question with expected support refs and source anchors |
 | ClaimRoleTag | Exists | `llmwiki.domain.source_summary`; default vocabulary owned by `Schema` |
 | SourceClaim | Exists | `llmwiki.domain.source_summary`; built by `llmwiki.domain.source_claims` |
 | SourceClaimGroup | Exists | `llmwiki.domain.source_summary`; groups `SourceClaim` records for coverage planning |
@@ -300,6 +316,10 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | IngestRoutePlanRecord | `llmwiki.domain.ingest_route_history` JSONL | `IngestRoutePlan` summary and page write history |
 | Manifest | `llmwiki.pdf.manifest.Manifest` JSON | `PdfIngestManifest` concept |
 | ChunkRecord | `llmwiki.pdf.manifest.ChunkRecord` JSON | PDF chunk ingest state |
+| ingest artifact set JSON | `cache/ingest-compiler/*/ingest-artifact-set.json` | `IngestArtifactSet` |
+| compiler normalized source map JSON | `cache/ingest-compiler/*/normalized-source-map.json` | `NormalizedSourceMap` |
+| compiler evidence pack set JSON | `cache/ingest-compiler/*/evidence-pack-set.json` | `EvidencePackSet` |
+| diagnostic question set JSON | `cache/ingest-compiler/*/diagnostic-question-set.json` | `DiagnosticQuestionSet` |
 | graph JSON | `wiki/wiki-graph.json` from `llmwiki.domain.graph.WikiGraph.to_payload` | `WikiGraph` |
 | candidate JSON | `wiki/wiki-candidates.json` from `CandidateBacklog.to_json_text` | `CandidateBacklog` |
 | chat SQLite rows | `llmwiki.store.chat_store` | `ChatSession` concept |

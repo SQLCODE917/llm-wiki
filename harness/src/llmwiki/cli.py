@@ -119,19 +119,6 @@ def _build_parser() -> argparse.ArgumentParser:
         help="PDF only: discard the cached extraction/manifest and start over "
         "(default resumes a partial ingest).",
     )
-    ingest.add_argument(
-        "--reintegrate",
-        action="store_true",
-        help="PDF only: rerun just the integrate pass of a completed ingest "
-        "(rebuilds the hub with current salience).",
-    )
-    ingest.add_argument(
-        "--write-human-articles",
-        action="store_true",
-        help="Use the configured Forge/Ollama runtime to write structured human "
-        "articles from EvidencePack support. By default, generated public "
-        "articles are rejected instead of publishing fallback prose.",
-    )
     _add_pdf_extractor_arg(ingest)
 
     sub.add_parser(
@@ -396,7 +383,7 @@ async def _run(args: argparse.Namespace) -> OperationResult:
             print(f"[strict-evidence: {strict_evidence}]", file=sys.stderr)
             print(f"[ingest-profiles: {profile_summary(ingest_profiles)}]", file=sys.stderr)
             print(f"[pdf-extractor: {args.pdf_extractor}]", file=sys.stderr)
-        if args.op == "ingest" and args.write_human_articles:
+        if args.op == "ingest":
             backend_config = load_backend_config(args.runtime)
             backend = await start_backend(backend_config)
             try:
@@ -414,11 +401,8 @@ async def _run(args: argparse.Namespace) -> OperationResult:
                     on_chunk_note=lambda note: print(note, flush=True),
                     strict_evidence=strict_evidence,
                     ingest_profiles=ingest_profiles,
-                    write_human_articles=True,
                 )
-                return await session.ingest(
-                    args.source, reextract=args.reextract, reintegrate=args.reintegrate
-                )
+                return await session.ingest(args.source, reextract=args.reextract)
             finally:
                 await backend.aclose()
         store = WikiStore(paths)
@@ -437,9 +421,7 @@ async def _run(args: argparse.Namespace) -> OperationResult:
         )
         if args.op == "synthesize":
             return await session.synthesize()
-        return await session.ingest(
-            args.source, reextract=args.reextract, reintegrate=args.reintegrate
-        )
+        raise AssertionError(f"Unhandled operation {args.op!r}")
     backend_config = load_backend_config(args.runtime)
     backend = await start_backend(backend_config)
     try:

@@ -1,4 +1,4 @@
-"""End-to-end PDF ingest for ledger-first projection."""
+"""End-to-end PDF ingest for the source compiler path."""
 
 import pytest
 from fakes import FakeClient
@@ -176,7 +176,7 @@ def test_partial_resume_reuses_matching_persisted_page_plan(
     assert loaded == plan
 
 
-async def test_pdf_ingest_consults_extraction_cache_before_persisted_page_plan(
+async def test_pdf_ingest_ignores_stale_page_plan_cache(
     store: WikiStore, paths: WikiPaths
 ) -> None:
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
@@ -198,70 +198,60 @@ async def test_pdf_ingest_consults_extraction_cache_before_persisted_page_plan(
 
     result = await session.ingest("book.pdf")
 
-    assert result.output.startswith("Claim-ledger ingest of raw/book.pdf")
+    assert result.output.startswith("Ingest compiler run ")
     assert extraction_calls == [True]
     page_plan_json = store.read_page_plan_artifact("book.pdf")
     assert page_plan_json is not None
-    assert "Chunk one: functions are values." in page_plan_json
-    assert "Stale cached text." not in page_plan_json
+    assert "Stale cached text." in page_plan_json
+    artifact_dir = store.ingest_compiler_artifact_dir("book.pdf")
+    assert (artifact_dir / "normalized-source-map.json").is_file()
+    assert (artifact_dir / "ingest-artifact-set.json").is_file()
     assert store.list_pages() == ["book"]
-    assert "closures capture scope" in store.read_page("book")
+    assert "## Compiler Summary" in store.read_page("book")
     assert not session.client.sent
 
 
-async def test_pdf_ingest_writes_ledger_projection(store: WikiStore, paths: WikiPaths) -> None:
+async def test_pdf_ingest_writes_compiler_artifacts(store: WikiStore, paths: WikiPaths) -> None:
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
     extraction = _fake_extraction(paths)
     session = _session(store, paths, extraction)
 
     result = await session.ingest("book.pdf")
 
-    assert result.output.startswith("Claim-ledger ingest of raw/book.pdf")
-    assert "Article lint gates:" in result.output
+    assert result.output.startswith("Ingest compiler run ")
     assert store.list_pages() == ["book"]
     book = store.read_page("book")
     assert "projection_coverage:" in book
     assert "page_family: source-manifest" in book
-    assert "## Page Families" in book
-    assert "## Publication Budget" in book
-    ledger_dir = store.page_plan_artifact_dir("book.pdf") / "ledger"
-    assert (ledger_dir / "claim-ledger.json").is_file()
-    assert (ledger_dir / "projection-coverage.json").is_file()
-    assert (ledger_dir / "section-plan.json").is_file()
-    assert (ledger_dir / "topics.json").is_file()
-    assert (ledger_dir / "page-publication-plan.json").is_file()
-    assert (ledger_dir / "evidence-pack-set.json").is_file()
-    assert (ledger_dir / "human-article.json").is_file()
-    assert (ledger_dir / "human-article-findings.json").is_file()
-    assert (ledger_dir / "article-lint-runs.json").is_file()
-    assert (ledger_dir / "publication-walkability-report.md").is_file()
-    source_profile = store.read_source_profile_artifact("book.pdf")
-    extraction_plan = store.read_evidence_extraction_plan_artifact("book.pdf")
-    evidence_record_set = store.read_evidence_record_set_artifact("book.pdf")
-    assert source_profile is not None
-    assert extraction_plan is not None
-    assert evidence_record_set is not None
-    assert source_profile.source_profile.selection_reason
-    assert source_profile.source_profile.confidence > 0
-    assert (
-        extraction_plan.allowed_record_types
-        == source_profile.evidence_vocabulary.allowed_record_types
-    )
-    assert evidence_record_set.accepted_records
-    assert all(record.source_anchors for record in evidence_record_set.records)
-    assert "Source profile:" in result.output
-    assert "Typed evidence records:" in result.output
-    assert "Publication budget:" in result.output
-    assert "Human articles:" in result.output
-    assert "Evidence packs:" in result.output
+    assert "## Compiler Summary" in book
+    assert "Publication budget:" in book
+    assert "Evidence packs:" in book
+    artifact_dir = store.ingest_compiler_artifact_dir("book.pdf")
+    expected = {
+        "ingest-artifact-set.json",
+        "normalized-source-map.json",
+        "source-profile.json",
+        "evidence-extraction-plan.json",
+        "evidence-record-set.json",
+        "page-publication-plan.json",
+        "publication-walkability-report.md",
+        "evidence-pack-set.json",
+        "human-article.json",
+        "human-article-findings.json",
+        "article-lint-runs.json",
+        "diagnostic-question-set.json",
+        "staged-pages.json",
+        "lint-run.json",
+        "publish-run.json",
+    }
+    assert expected.issubset({path.name for path in artifact_dir.iterdir()})
+    assert not (artifact_dir / "claim-ledger.json").exists()
     saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
     assert saved.integrated
     assert not saved.all_done
     assert not session.client.sent
-    assert session._notes_seen == [  # type: ignore[attr-defined]
-        "Claim-ledger projection (general-prose): 1 usable entries, 0 technical atoms, "
-        "1 needs-review, 0 linked page(s); write decision write-with-review-work."
-    ]
+    assert session._notes_seen  # type: ignore[attr-defined]
+    assert session._notes_seen[0].startswith("Ingest compiler run ")  # type: ignore[attr-defined]
     assert paths.log_path.read_text(encoding="utf-8").count("ingest | book.pdf") == 1
 
 
@@ -290,19 +280,15 @@ def test_pdf_page_plan_fails_without_source_map(store: WikiStore, paths: WikiPat
         session._pdf_page_plan(session._ingest_run("book.pdf"), "book.pdf", extraction)
 
 
-async def test_reintegrate_refreshes_ledger_projection_with_pending_manifest(
+async def test_reintegrate_is_removed(
     store: WikiStore, paths: WikiPaths
 ) -> None:
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
     extraction = _fake_extraction(paths)
     session = _session(store, paths, extraction)
 
-    result = await session.ingest("book.pdf", reintegrate=True)
-
-    assert result.output.startswith("Claim-ledger ingest of raw/book.pdf")
-    saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
-    assert saved.integrated
-    assert store.read_claim_ledger_artifact("book.pdf") is not None
+    with pytest.raises(PdfError, match="removed"):
+        await session.ingest("book.pdf", reintegrate=True)
 
 
 async def test_pdf_ingest_removes_stale_generated_source_pages(

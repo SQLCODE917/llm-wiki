@@ -364,6 +364,22 @@ class WikiStore:
         stem = re.sub(r"[^a-z0-9]+", "-", Path(source_locator).stem.lower()).strip("-")
         return self._paths.cache_dir / "page-plans" / f"{stem or 'source'}-{digest}"
 
+    def ingest_compiler_artifact_dir(self, source_locator: str) -> Path:
+        digest = hashlib.sha256(source_locator.encode("utf-8")).hexdigest()[:12]
+        stem = re.sub(r"[^a-z0-9]+", "-", Path(source_locator).stem.lower()).strip("-")
+        return self._paths.cache_dir / "ingest-compiler" / f"{stem or 'source'}-{digest}"
+
+    def write_ingest_compiler_artifacts(
+        self, source_locator: str, files: dict[str, str]
+    ) -> Path:
+        artifact_dir = self.ingest_compiler_artifact_dir(source_locator)
+        artifact_dir.mkdir(parents=True, exist_ok=True)
+        for filename, text in files.items():
+            path = artifact_dir / filename
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(text, encoding="utf-8")
+        return artifact_dir
+
     def write_page_plan_artifacts(
         self, source_locator: str, page_plan_json: str, observation_report: str
     ) -> tuple[Path, Path]:
