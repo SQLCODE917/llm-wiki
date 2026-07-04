@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-55816c7f
 page_kind: source
 page_family: section-reference
-summary: 5.1.14 Spirit Magic List: 741 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 5.1.14 Spirit Magic List: 741 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-55816c7f@3353bea440dc557d8388bb4ce42f3ccb
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-55816c7f@3c9a63f396064112217c4d0341596fb7
 ---
 
 # 5.1.14 Spirit Magic List
@@ -448,48 +448,3 @@ From [[sword-world-rpg-complete-edition]].
 <a id="atom-technical-atom-f3a5393953f4e4b5"></a>
 
 > Type=Target score Expansion=Final score, duration, distance, target volume Resist=None
-
-### Technical atom 4
-
-<a id="atom-technical-atom-5983cfd9c1f8f7fc"></a>
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03969))_
-
-> cannot use magic, etc.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03972))_
-
-```text
-4 Target is struck by panic and is prevented from taking action. Take a -1 penalty on all success rolls
-5
-Same as above, but penalty is -2
-6
-Same as above, but penalty is -3
-7 Target runs away. They go berserk if that's not possible.
-8
-Target runs away. If that's not possible, they act with a -3 penalty
-9
-Target runs away. If that's not possible, they freeze in fear and become unable to act
-10
-Target freezes in fear. They become unable to act
-11
-Same as above
-12 Target loses consciousness from fear. It takes 1 hour to regain consciousness naturally
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| entry | content |
-| --- | --- |
-| 4 | Target is struck by panic and is prevented from taking action. Take a -1 penalty on all success rolls |
-| 5 | Same as above, but penalty is -2 |
-| 6 | Same as above, but penalty is -3 |
-| 7 | Target runs away. They go berserk if that's not possible. |
-| 8 | Target runs away. If that's not possible, they act with a -3 penalty |
-| 9 | Target runs away. If that's not possible, they freeze in fear and become unable to act |
-| 10 | Target freezes in fear. They become unable to act |
-| 11 | Same as above |
-| 12 | Target loses consciousness from fear. It takes 1 hour to regain consciousness naturally |
-
-</details>

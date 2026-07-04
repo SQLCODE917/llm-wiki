@@ -17,6 +17,7 @@ _TABLE_REFERENCE_BOUNDARIES = frozenset(
 )
 _MAX_FORWARD_CUE_NODES = 256
 _MAX_FORWARD_CUE_TABLE_ATOMS = 64
+_MAX_STRUCTURE_HEADING_NAME_NODES = 512
 _MAX_TABLE_NAME_CHARS = 240
 _MAX_TABLE_NAME_TOKENS = 32
 _MAX_TABLE_REFERENCE_CHARS = 2_000
@@ -159,6 +160,8 @@ def _source_order(structure: DocumentStructure | None) -> dict[str, int]:
 
 def _structure_node_headings(structure: DocumentStructure | None) -> dict[str, str]:
     if structure is None:
+        return {}
+    if len(structure.structure_nodes) > _MAX_STRUCTURE_HEADING_NAME_NODES:
         return {}
     headings: dict[str, str] = {}
     for node in structure.structure_nodes:

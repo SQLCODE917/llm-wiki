@@ -5,7 +5,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from llmwiki.domain.ledger.collection_pages import CollectionPlan
-from llmwiki.domain.ledger.coverage import RenderedPage
 from llmwiki.domain.ledger.knowledge_shapes import KnowledgeShapeCatalog
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.page_synthesis import (
@@ -16,8 +15,8 @@ from llmwiki.domain.ledger.page_synthesis import (
     PageSynthesisPlan,
 )
 from llmwiki.domain.ledger.page_synthesis_drafting import (
-    DeterministicPageDraftProducer,
     PageDraftProducer,
+    RejectingPageDraftProducer,
 )
 from llmwiki.domain.ledger.page_synthesis_planning import (
     collection_synthesis_plan,
@@ -27,11 +26,7 @@ from llmwiki.domain.ledger.page_synthesis_planning import (
 )
 from llmwiki.domain.ledger.page_synthesis_rendering import render_page_draft
 from llmwiki.domain.ledger.page_synthesis_validation import validate_page_draft
-from llmwiki.domain.ledger.procedures import (
-    ProcedureGuide,
-    plan_procedure_guides,
-    procedure_aliases,
-)
+from llmwiki.domain.ledger.procedures import plan_procedure_guides
 from llmwiki.domain.ledger.projection_context import ProjectionContext
 from llmwiki.domain.ledger.projection_policy import topic_projection_policy
 from llmwiki.domain.ledger.recipe_pages import plan_recipe_patterns
@@ -40,6 +35,13 @@ from llmwiki.domain.ledger.topic_models import SourceTopic
 from llmwiki.domain.ledger.topic_relations import RelatedTopicLink, related_topic_links
 from llmwiki.domain.ledger.walkability import audit_related_links
 from llmwiki.domain.pages import PageMetadata, WikiPage, slugify
+from llmwiki.runtime.ledger_synthesis_metadata import (
+    collection_metadata,
+    procedure_metadata,
+    recipe_metadata,
+    topic_metadata,
+    with_synthesis_coverage,
+)
 
 _MAX_DRAFT_ATTEMPTS = 2
 
@@ -71,7 +73,7 @@ def build_synthesized_linked_pages(
     related_pages_by_topic: dict[str, tuple[RelatedTopicLink, ...]] | None = None,
     draft_producer: PageDraftProducer | None = None,
 ) -> SynthesizedLinkedPages:
-    producer = draft_producer or DeterministicPageDraftProducer()
+    producer = draft_producer or RejectingPageDraftProducer()
     plans: list[PageSynthesisPlan] = []
     records: list[PageDraftRecord] = []
     findings: list[PageSynthesisFinding] = []
@@ -97,7 +99,7 @@ def build_synthesized_linked_pages(
         )
         _record_attempt(
             plan,
-            synthesize_page(plan, _topic_metadata(plan, topic, source_locator, today), producer),
+            synthesize_page(plan, topic_metadata(plan, topic, source_locator, today), producer),
             plans,
             records,
             findings,
@@ -116,7 +118,7 @@ def build_synthesized_linked_pages(
             plan,
             synthesize_page(
                 plan,
-                _procedure_metadata(plan, guide, source_locator, today),
+                procedure_metadata(plan, guide, source_locator, today),
                 producer,
             ),
             plans,
@@ -134,7 +136,7 @@ def build_synthesized_linked_pages(
             plan,
             synthesize_page(
                 plan,
-                _collection_metadata(plan, collection, source_locator, today),
+                collection_metadata(plan, collection, source_locator, today),
                 producer,
             ),
             plans,
@@ -153,7 +155,7 @@ def build_synthesized_linked_pages(
             plan,
             synthesize_page(
                 plan,
-                _recipe_metadata(plan, pattern.title, source_locator, today),
+                recipe_metadata(plan, pattern.title, source_locator, today),
                 producer,
             ),
             plans,
@@ -187,7 +189,7 @@ def synthesize_page(
                 PageDraftCoverage(plan.page_id, rendered.page_body_hash, rendered.coverage),
             )
             page = WikiPage.from_metadata(
-                _with_coverage(metadata, plan, rendered),
+                with_synthesis_coverage(metadata, plan, rendered),
                 rendered.page_body,
             )
             return SynthesizedPageAttempt(page, record, ())
@@ -239,88 +241,3 @@ def _topic_related_pages(
         ledger,
         projection_context=projection_context,
     ).accepted_links
-
-
-def _with_coverage(
-    metadata: PageMetadata, plan: PageSynthesisPlan, rendered: RenderedPage
-) -> PageMetadata:
-    return PageMetadata(
-        page_id=metadata.page_id,
-        page_kind=metadata.page_kind,
-        summary=metadata.summary,
-        page_family=metadata.page_family,
-        sources=metadata.sources,
-        updated=metadata.updated,
-        domain=metadata.domain,
-        category_path=metadata.category_path,
-        project_id=metadata.project_id,
-        source_id=metadata.source_id,
-        tags=metadata.tags,
-        aliases=metadata.aliases,
-        projection_coverage_pointer=f"page-synthesis-{plan.page_id}@{rendered.page_body_hash}",
-    )
-
-
-def _topic_metadata(
-    plan: PageSynthesisPlan, topic: SourceTopic, source_locator: str, today: str
-) -> PageMetadata:
-    return PageMetadata(
-        page_id=plan.page_id,
-        page_kind=plan.page_kind,
-        page_family=plan.page_family,
-        summary=f"{topic.label}: synthesized source-backed topic page from raw/{source_locator}.",
-        sources=(f"raw/{source_locator}",),
-        updated=today,
-        domain=plan.source_page_id,
-        category_path=f"{topic.page_kind}s",
-    )
-
-
-def _procedure_metadata(
-    plan: PageSynthesisPlan, guide: ProcedureGuide, source_locator: str, today: str
-) -> PageMetadata:
-    return PageMetadata(
-        page_id=plan.page_id,
-        page_kind="procedure",
-        page_family=plan.page_family,
-        summary=f"{plan.title}: synthesized procedure guide from raw/{source_locator}.",
-        sources=(f"raw/{source_locator}",),
-        updated=today,
-        domain=plan.source_page_id,
-        category_path=f"procedures/{plan.source_page_id}",
-        source_id=source_locator,
-        aliases=procedure_aliases(guide),
-    )
-
-
-def _recipe_metadata(
-    plan: PageSynthesisPlan, title: str, source_locator: str, today: str
-) -> PageMetadata:
-    return PageMetadata(
-        page_id=plan.page_id,
-        page_kind="recipe",
-        page_family=plan.page_family,
-        summary=f"{title}: synthesized recipe pattern from raw/{source_locator}.",
-        sources=(f"raw/{source_locator}",),
-        updated=today,
-        domain=plan.source_page_id,
-        category_path=f"recipes/{plan.source_page_id}",
-        source_id=source_locator,
-        aliases=(slugify(title),),
-    )
-
-
-def _collection_metadata(
-    plan: PageSynthesisPlan, collection: CollectionPlan, source_locator: str, today: str
-) -> PageMetadata:
-    return PageMetadata(
-        page_id=plan.page_id,
-        page_kind="source",
-        page_family=plan.page_family,
-        summary=f"{collection.title}: synthesized collection page from raw/{source_locator}.",
-        sources=(f"raw/{source_locator}",),
-        updated=today,
-        domain=plan.source_page_id,
-        category_path=f"sources/{plan.source_page_id}/collections",
-        source_id=source_locator,
-    )

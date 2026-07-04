@@ -1,9 +1,11 @@
 from llmwiki.domain.ledger.artifacts import build_projection_context_artifact
 from llmwiki.domain.ledger.atom_addressing import technical_atom_anchor_id
+from llmwiki.domain.ledger.atom_frames import build_atom_frames
 from llmwiki.domain.ledger.atoms import FormulaPayload, TechnicalAtom
 from llmwiki.domain.ledger.canonical import canonical_json
 from llmwiki.domain.ledger.common import ConfidenceBasis, SpatialScope
 from llmwiki.domain.ledger.entries import LedgerEntry, SourceStatement
+from llmwiki.domain.ledger.evidence_blocks import EvidenceBlock
 from llmwiki.domain.ledger.ledger import (
     ClaimLedger,
     FamilyLabelScore,
@@ -127,6 +129,30 @@ def test_topic_projection_renders_source_blocks_and_atom_frames() -> None:
     assert technical_atom_anchor_id("atom-distance") in body
     assert "Base Mental Power Cost=20" in body
     assert "Distance=Touch" in body
+
+
+def test_atom_frames_accept_single_evidence_block_context() -> None:
+    ledger = _ledger(
+        entries=(_atom_entry("entry-cost", "atom-cost", "range-cost"),),
+        atoms=(_formula("atom-cost", "range-cost", "Base Mental Power Cost=20"),),
+        statements=(),
+    )
+    block = EvidenceBlock(
+        evidence_block_id="block-context",
+        source_statement_id="statement-context",
+        source_range_id="range-description",
+        source_range_ids=("range-description",),
+        source_locator="source.pdf",
+        source_text="The spell context explains the cost.",
+        entry_ids=(),
+        structure_node_ids=("node-skeleton-warrior",),
+        source_order=4,
+        section_label="Skeleton Warrior",
+    )
+
+    frames = build_atom_frames(ledger, _structure(), block)
+
+    assert frames[0].context_block_id == "block-context"
 
 
 def test_topic_projection_groups_ambiguous_claims_by_source_section() -> None:

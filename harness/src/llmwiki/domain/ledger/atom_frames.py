@@ -39,8 +39,9 @@ class TechnicalAtomFrame:
 def build_atom_frames(
     ledger: ClaimLedger,
     structure: DocumentStructure,
-    evidence_blocks: tuple[EvidenceBlock, ...],
+    evidence_blocks: tuple[EvidenceBlock, ...] | EvidenceBlock,
 ) -> tuple[TechnicalAtomFrame, ...]:
+    evidence_block_set = _evidence_block_tuple(evidence_blocks)
     entries = _technical_atom_entries(ledger)
     source_order_by_range = _source_order_by_range(structure)
     ordered = sorted(
@@ -54,10 +55,18 @@ def build_atom_frames(
         else:
             groups.append([entry])
     return tuple(
-        _frame(ledger, structure, tuple(group), evidence_blocks, source_order_by_range)
+        _frame(ledger, structure, tuple(group), evidence_block_set, source_order_by_range)
         for group in groups
         if group
     )
+
+
+def _evidence_block_tuple(
+    evidence_blocks: tuple[EvidenceBlock, ...] | EvidenceBlock,
+) -> tuple[EvidenceBlock, ...]:
+    if isinstance(evidence_blocks, EvidenceBlock):
+        return (evidence_blocks,)
+    return evidence_blocks
 
 
 def _technical_atom_entries(ledger: ClaimLedger) -> tuple[LedgerEntry, ...]:

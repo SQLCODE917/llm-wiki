@@ -101,6 +101,8 @@ def ensure_extracted(
 
     if cache_has_current_pdf_artifacts(cache_dir) and not reextract:
         manifest = from_json(manifest_path.read_text(encoding="utf-8"))
+        if manifest.integrated:
+            return ExtractionResult(manifest=manifest, cache_dir=cache_dir)
         if _requires_derived_artifact_rebuild(cache_dir, manifest):
             document_model = document_model_from_json(
                 (cache_dir / _DOCUMENT_MODEL_FILE).read_text(encoding="utf-8")

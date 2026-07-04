@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-10-1-npc-and-monster-action-announcement-cbd8789a
 page_kind: source
 page_family: section-reference
-summary: 10.1 NPC and Monster Action Announcement: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 10.1 NPC and Monster Action Announcement: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-10-1-npc-and-monster-action-announcement-cbd8789a@3a7ceff743592557e62b866e02d8ea44
+projection_coverage: section-sword-world-rpg-complete-edition-section-10-1-npc-and-monster-action-announcement-cbd8789a@1186a9d0ece54dbd353887bc4b60b56f
 ---
 
 # 10.1 NPC and Monster Action Announcement
@@ -40,29 +40,3 @@ From [[sword-world-rpg-complete-edition]].
 
 - Combat often occurs in unusual locations, such as in the dark, on poor footing, etc. In such cases, a penalty (sometimes a bonus) is given to an adventurer's attack power or evasion speed, depending on the situation. If the same conditions apply to monsters, the same penalty (bonus) will be given to the monster's attack and evasion points. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05657))_
 - Combat often occurs in unusual locations, such as in the dark, on poor footing, etc. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05657))_
-
-## Technical atoms
-
-### Technical atom 1
-
-<a id="atom-technical-atom-655eeda9a680c4cc"></a>
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-05652))_
-
-```text
-NPC and Monster Action Announcement
-10.1 NPC and Monster Action Announcement
-The  game  master  must  manage  the actions of NPCs and monsters. In combat,  the  planned  actions  of  NPCs and monsters must be announced at the beginning of the round.
-At  this  time,  the  game  master  does not need to make a specific announcement. All they have to do is tell you what you can understand from the character's perspective.
-10.2
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| entry | content |
-| --- | --- |
-| 10 | 1 NPC and Monster Action Announcement The game master must manage the actions of NPCs and monsters. In combat, the planned actions of NPCs and monsters must be announced at the beginning of the round. At this time, the game master does not need to make a specific announcement. All they have to do is tell you what you can understand from the character's perspective. |
-| 10 | 2 |
-
-</details>

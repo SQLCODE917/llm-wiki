@@ -48,7 +48,12 @@ def test_page_synthesis_plan_selection_for_topic_procedure_recipe_and_collection
         source_page_id="x",
         source_locator="x.pdf",
     )
-    assert topic_plan.selected_support_codes >= {"ledger:e1", "atom:a1"}
+    assert "atom:a1" in topic_plan.selected_support_codes
+    assert any(
+        "characters choose a race before rolling abilities" in item.evidence_text
+        for item in topic_plan.evidence_set.items
+    )
+    assert all(not hasattr(item, "summary") for item in topic_plan.evidence_set.items)
 
     guide = ProcedureGuide(
         "x-procedure-create-character",
@@ -71,9 +76,11 @@ def test_page_synthesis_plan_selection_for_topic_procedure_recipe_and_collection
         (atom,),
         ProcedureStateFlow(1, 0, 1, 0),
     )
-    assert (
-        procedure_synthesis_plan(guide, source_page_id="x", source_locator="x.pdf").page_family
-        == "procedure-guide"
+    procedure_plan = procedure_synthesis_plan(guide, source_page_id="x", source_locator="x.pdf")
+    assert procedure_plan.page_family == "procedure-guide"
+    assert any(
+        "characters choose a race before rolling abilities" in item.evidence_text
+        for item in procedure_plan.evidence_set.items
     )
 
     recipe = RecipePattern(
@@ -85,9 +92,11 @@ def test_page_synthesis_plan_selection_for_topic_procedure_recipe_and_collection
         (atom,),
         ("example",),
     )
-    assert (
-        recipe_synthesis_plan(recipe, source_page_id="x", source_locator="x.pdf").page_family
-        == "recipe-pattern"
+    recipe_plan = recipe_synthesis_plan(recipe, source_page_id="x", source_locator="x.pdf")
+    assert recipe_plan.page_family == "recipe-pattern"
+    assert any(
+        "characters choose a race before rolling abilities" in item.evidence_text
+        for item in recipe_plan.evidence_set.items
     )
 
     collection = CollectionPlan(
@@ -98,14 +107,16 @@ def test_page_synthesis_plan_selection_for_topic_procedure_recipe_and_collection
         (CollectionMember("node", "Human", "x-human", 1, 0, ("e1",), ()),),
         ("sibling-structure", "repeated-peer-shape"),
     )
-    assert (
-        collection_synthesis_plan(
-            collection,
-            ledger,
-            source_page_id="x",
-            source_locator="x.pdf",
-        ).page_family
-        == "collection-page"
+    collection_page_plan = collection_synthesis_plan(
+        collection,
+        ledger,
+        source_page_id="x",
+        source_locator="x.pdf",
+    )
+    assert collection_page_plan.page_family == "collection-page"
+    assert any(
+        "characters choose a race before rolling abilities" in item.evidence_text
+        for item in collection_page_plan.evidence_set.items
     )
 
 

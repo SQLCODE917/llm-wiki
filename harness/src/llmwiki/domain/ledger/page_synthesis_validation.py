@@ -6,15 +6,17 @@ import re
 from collections import Counter
 
 from llmwiki.domain.ledger.page_synthesis import (
-    DraftBlock,
     DraftValidationResult,
     PageDraft,
     PageSynthesisFinding,
     PageSynthesisPlan,
 )
+from llmwiki.domain.ledger.page_synthesis_text import block_texts, factual_sentences, ngrams, words
+from llmwiki.domain.ledger.page_synthesis_text_validation import (
+    clipped_fragment_findings,
+    navigation_text_findings,
+)
 
-_WORD_RE = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)?", re.IGNORECASE)
-_SENTENCE_END_RE = re.compile(r"(?<=[.!?])\s+")
 _COPIED_NGRAM_SIZE = 8
 _MAX_COPIED_NGRAM_RATIO = 0.50
 _MALFORMED_TOPIC_LABELS = frozenset({"alway", "bonuse"})
@@ -33,6 +35,8 @@ def validate_page_draft(plan: PageSynthesisPlan, draft: PageDraft) -> DraftValid
     findings.extend(_placeholder_findings(plan, draft))
     findings.extend(_claim_support_findings(plan, draft))
     findings.extend(_sentence_coverage_findings(plan, draft))
+    findings.extend(navigation_text_findings(plan, draft))
+    findings.extend(clipped_fragment_findings(plan, draft))
     findings.extend(_copied_phrase_findings(plan, draft))
     return DraftValidationResult(
         accepted=not any(finding.severity == "blocking" for finding in findings),
@@ -44,7 +48,7 @@ def _empty_draft_findings(
     plan: PageSynthesisPlan, draft: PageDraft
 ) -> tuple[PageSynthesisFinding, ...]:
     findings: list[PageSynthesisFinding] = []
-    if not plan.selected_evidence:
+    if not plan.evidence_set.items:
         findings.append(_finding(plan, "no-selected-evidence", "plan has no selected evidence"))
     if not draft.blocks or not draft.claims:
         findings.append(_finding(plan, "empty-draft", "draft has no factual prose claims"))
@@ -52,7 +56,7 @@ def _empty_draft_findings(
 
 
 def is_weak_topic_identity(label: str) -> bool:
-    tokens = tuple(part for token in _words(label) for part in token.split("-") if part)
+    tokens = tuple(part for token in words(label) for part in token.split("-") if part)
     if not tokens:
         return True
     return any(token in _MALFORMED_TOPIC_LABELS for token in tokens)
@@ -90,7 +94,7 @@ def _placeholder_findings(
 ) -> tuple[PageSynthesisFinding, ...]:
     findings: list[PageSynthesisFinding] = []
     for block in draft.blocks:
-        for text in _block_texts(block):
+        for text in block_texts(block):
             if "…" in text or any(pattern.search(text) for pattern in _PLACEHOLDER_PATTERNS):
                 findings.append(
                     _finding(
@@ -138,7 +142,7 @@ def _sentence_coverage_findings(
     claimed = {_normalize_sentence(claim.sentence): claim for claim in draft.claims}
     findings: list[PageSynthesisFinding] = []
     for block in draft.blocks:
-        for sentence in _factual_sentences(block):
+        for sentence in factual_sentences(block):
             if _normalize_sentence(sentence) not in claimed:
                 findings.append(
                     _finding(
@@ -154,13 +158,15 @@ def _sentence_coverage_findings(
 def _copied_phrase_findings(
     plan: PageSynthesisPlan, draft: PageDraft
 ) -> tuple[PageSynthesisFinding, ...]:
-    source_text = " ".join(card.exact_text for card in plan.selected_evidence if card.exact_text)
-    source_ngrams = set(_ngrams(tuple(_words(source_text)), _COPIED_NGRAM_SIZE))
+    source_text = " ".join(
+        item.evidence_text for item in plan.evidence_set.items if item.evidence_text
+    )
+    source_ngrams = set(ngrams(tuple(words(source_text)), _COPIED_NGRAM_SIZE))
     if not source_ngrams:
         return ()
-    draft_text = " ".join(text for block in draft.blocks for text in _block_texts(block))
-    draft_words = tuple(_words(draft_text))
-    draft_ngrams = _ngrams(draft_words, _COPIED_NGRAM_SIZE)
+    draft_text = " ".join(text for block in draft.blocks for text in block_texts(block))
+    draft_words = tuple(words(draft_text))
+    draft_ngrams = ngrams(draft_words, _COPIED_NGRAM_SIZE)
     if not draft_ngrams:
         return ()
     copied = sum(count for ngram, count in Counter(draft_ngrams).items() if ngram in source_ngrams)
@@ -176,47 +182,8 @@ def _copied_phrase_findings(
     )
 
 
-def _factual_sentences(block: DraftBlock) -> tuple[str, ...]:
-    if block.block_kind not in {"paragraph", "bullet-list", "numbered-list"}:
-        return ()
-    return tuple(
-        sentence
-        for text in _block_texts(block)
-        for sentence in _split_sentences(text)
-        if sentence.strip()
-    )
-
-
-def _block_texts(block: DraftBlock) -> tuple[str, ...]:
-    if block.block_kind == "table":
-        return tuple(cell for row in block.table_rows for cell in row)
-    if block.items:
-        return block.items
-    if block.text:
-        return (block.text,)
-    return ()
-
-
-def _split_sentences(text: str) -> tuple[str, ...]:
-    cleaned = " ".join(text.split()).strip()
-    if not cleaned:
-        return ()
-    sentences = tuple(part.strip() for part in _SENTENCE_END_RE.split(cleaned) if part.strip())
-    return sentences or (cleaned,)
-
-
 def _normalize_sentence(text: str) -> str:
     return " ".join(text.split()).strip()
-
-
-def _words(text: str) -> tuple[str, ...]:
-    return tuple(match.group(0).lower() for match in _WORD_RE.finditer(text))
-
-
-def _ngrams(words: tuple[str, ...], size: int) -> tuple[tuple[str, ...], ...]:
-    if len(words) < size:
-        return ()
-    return tuple(tuple(words[index : index + size]) for index in range(len(words) - size + 1))
 
 
 def _finding(

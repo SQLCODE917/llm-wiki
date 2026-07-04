@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-2-5-difficulty-checks-6c442155
 page_kind: source
 page_family: section-reference
-summary: 2.5 Difficulty Checks: 66 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 2.5 Difficulty Checks: 66 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-difficulty-checks-6c442155@f54de583db17e8cadbc2ed4012f28eb7
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-5-difficulty-checks-6c442155@0e6aa0902ec64645cd856d3536c98f4a
 ---
 
 # 2.5 Difficulty Checks
@@ -106,29 +106,3 @@ From [[sword-world-rpg-complete-edition]].
 <a id="atom-technical-atom-1549ecd11deb50d7"></a>
 
 > If the roll is as high as 10 or 11, the success roll is considered to have a very high chance of success.
-
-### Technical atom 3
-
-<a id="atom-technical-atom-e884d09fa546986f"></a>
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01237))_
-
-> The game master does not say whether the result is the action succeeded or the action failed , because a difficulty check is made when the success or failure of the action is not known to the characters. They must only answer as much as the character can tell from their successes and failures. Let's show how the game master's answer would be for the case of the door and the traps:
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01238))_
-
-```text
-1. There is a  trap, the find trap check is successful → There is a trap at the door 2. There is a trap, the find trap check is a failure → You don't find any traps 3. There is no trap, the find trap check is successful → You don't find any traps 4. There is no trap, the find trap check is a failure → You don't find any traps
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| entry | content |
-| --- | --- |
-| 1 | There is a trap, the find trap check is successful → There is a trap at the door |
-| 2 | There is a trap, the find trap check is a failure → You don't find any traps |
-| 3 | There is no trap, the find trap check is successful → You don't find any traps |
-| 4 | There is no trap, the find trap check is a failure → You don't find any traps |
-
-</details>

@@ -27,10 +27,10 @@ from llmwiki.domain.planning_topic_index import (
     source_claim_group_ids_by_unit,
 )
 
-_TOKEN_RE = re.compile(r"[a-z][a-z0-9-]{2,}")
 _MATCH_THRESHOLD = 0.12
 _EMBEDDING_TOKEN_LIMIT = 4096
 _TOKEN_RESULT_LIMIT = 12000
+_TOKEN_SCAN_CHAR_LIMIT = 400_000
 _WIKI_MATCH_CANDIDATE_LIMIT = 80
 _WIKI_MATCHES_PER_UNIT_LIMIT = 24
 _CLAIM_PARAGRAPH_CHAR_LIMIT = 12_000
@@ -336,14 +336,48 @@ def _lexical_match_score(unit_terms: frozenset[str], page_terms: frozenset[str])
 
 def tokens(text: str, *, limit: int = _TOKEN_RESULT_LIMIT) -> tuple[str, ...]:
     result: list[str] = []
-    for match in _TOKEN_RE.finditer(text.lower()):
-        token = match.group(0)
-        if token in _STOP_WORDS:
-            continue
-        result.append(token)
-        if len(result) >= limit:
-            break
+    for part in text[:_TOKEN_SCAN_CHAR_LIMIT].split():
+        for token in _part_tokens(part):
+            if token in _STOP_WORDS:
+                continue
+            result.append(token)
+            if len(result) >= limit:
+                return tuple(result)
     return tuple(result)
+
+
+def _part_tokens(part: str) -> tuple[str, ...]:
+    result: list[str] = []
+    current: list[str] = []
+    for char in part:
+        normalized = _ascii_token_char(char)
+        if normalized and (current or normalized.isalpha()):
+            current.append(normalized)
+            continue
+        _append_token(result, current)
+        current = []
+    _append_token(result, current)
+    return tuple(result)
+
+
+def _append_token(result: list[str], current: list[str]) -> None:
+    if len(current) < 3:
+        return
+    token = "".join(current)
+    if token in _STOP_WORDS:
+        return
+    result.append(token)
+
+
+def _ascii_token_char(char: str) -> str:
+    codepoint = ord(char)
+    if 48 <= codepoint <= 57 or codepoint == 45:
+        return char
+    if 65 <= codepoint <= 90:
+        return chr(codepoint + 32)
+    if 97 <= codepoint <= 122:
+        return char
+    return ""
 
 
 def top_terms(text: str, limit: int) -> tuple[str, ...]:

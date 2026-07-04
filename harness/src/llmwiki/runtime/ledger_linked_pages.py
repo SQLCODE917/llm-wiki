@@ -19,6 +19,7 @@ from llmwiki.domain.ledger.canonical import short_digest
 from llmwiki.domain.ledger.coverage import ProjectionCoverage, RenderedPage
 from llmwiki.domain.ledger.knowledge_shapes import KnowledgeShapeCatalog
 from llmwiki.domain.ledger.ledger import ClaimLedger
+from llmwiki.domain.ledger.page_synthesis_drafting import PageDraftProducer
 from llmwiki.domain.ledger.pointers import ledger_quality_report_pointer
 from llmwiki.domain.ledger.projection import ProjectionSourceSupport
 from llmwiki.domain.ledger.projection_context import ProjectionContext
@@ -66,7 +67,8 @@ def build_linked_page_projection(
     rendered: RenderedPage,
     support: ProjectionSourceSupport,
     projection_report_artifact: LedgerQualityReportArtifact,
-    ) -> LinkedPageProjection:
+    draft_producer: PageDraftProducer | None = None,
+) -> LinkedPageProjection:
     related = section_links_by_topic(section_plan, structure, source_page_id=page_id)
     section_pages = build_section_pages(
         ledger,
@@ -87,6 +89,7 @@ def build_linked_page_projection(
         source_locator=source_locator,
         today=today,
         related_pages_by_topic=related,
+        draft_producer=draft_producer,
     )
     linked_pages = (*synthesized.pages, *section_pages)
     page_synthesis_plan_artifact = build_page_synthesis_plan_artifact(

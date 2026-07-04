@@ -125,6 +125,13 @@ def _build_parser() -> argparse.ArgumentParser:
         help="PDF only: rerun just the integrate pass of a completed ingest "
         "(rebuilds the hub with current salience).",
     )
+    ingest.add_argument(
+        "--draft-synthesized-pages",
+        action="store_true",
+        help="Use the configured Forge/Ollama runtime to draft high-value synthesized "
+        "pages from PageEvidenceSet evidence. By default, synthesized pages are "
+        "rejected instead of publishing fallback prose.",
+    )
     _add_pdf_extractor_arg(ingest)
 
     sub.add_parser(
@@ -389,6 +396,31 @@ async def _run(args: argparse.Namespace) -> OperationResult:
             print(f"[strict-evidence: {strict_evidence}]", file=sys.stderr)
             print(f"[ingest-profiles: {profile_summary(ingest_profiles)}]", file=sys.stderr)
             print(f"[pdf-extractor: {args.pdf_extractor}]", file=sys.stderr)
+        if args.op == "ingest" and args.draft_synthesized_pages:
+            backend_config = load_backend_config(args.runtime)
+            backend = await start_backend(backend_config)
+            try:
+                print(f"[runtime: {backend.summary}]", file=sys.stderr)
+                store = WikiStore(paths)
+                store.ensure_navigation_files()
+                session = Session(
+                    store=store,
+                    client=backend.client,
+                    context_manager=backend.context_manager,
+                    today=now.date().isoformat(),
+                    runs_dir=paths.runs_dir,
+                    run_id=now.strftime("%Y-%m-%d-%H%M%S"),
+                    extract_pdf=_pdf_extractor(paths, getattr(args, "pdf_extractor", "docling")),
+                    on_chunk_note=lambda note: print(note, flush=True),
+                    strict_evidence=strict_evidence,
+                    ingest_profiles=ingest_profiles,
+                    draft_synthesized_pages=True,
+                )
+                return await session.ingest(
+                    args.source, reextract=args.reextract, reintegrate=args.reintegrate
+                )
+            finally:
+                await backend.aclose()
         store = WikiStore(paths)
         store.ensure_navigation_files()
         session = Session(

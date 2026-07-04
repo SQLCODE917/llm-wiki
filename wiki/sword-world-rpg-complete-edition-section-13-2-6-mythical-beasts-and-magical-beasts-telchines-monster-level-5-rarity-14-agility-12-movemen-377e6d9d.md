@@ -4,7 +4,7 @@ page_kind: source
 page_family: section-reference
 summary: 13.2.6 Mythical Beasts and Magical Beasts / [ Telchines ] Monster Level=5 Rarity=14 Agility=12 Movement Speed=10/10 (water) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Weapon:11 (4)/Tail:12 (5) Strike Points=12/11 Evasion Points=12 (5) Defense Points=8 Life Points/Resistance=16/13 (6) Mental Points/Resistance=20/14 (7) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) Water adaptation Habitat=Secluded coasts Languages=Merman, low ancient Perception=Five senses (illumination): 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf

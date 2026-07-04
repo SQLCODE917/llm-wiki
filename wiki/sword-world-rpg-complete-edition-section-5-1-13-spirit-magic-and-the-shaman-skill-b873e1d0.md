@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-5-1-13-spirit-magic-and-the-shaman-skill-b873e1d0
 page_kind: source
 page_family: section-reference
-summary: 5.1.13 Spirit Magic and the Shaman Skill: 24 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 5.1.13 Spirit Magic and the Shaman Skill: 24 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-13-spirit-magic-and-the-shaman-skill-b873e1d0@563b98e2d96eb21434174c1eb64478be
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-1-13-spirit-magic-and-the-shaman-skill-b873e1d0@9470d46c474831994db901a133b8faf4
 ---
 
 # 5.1.13 Spirit Magic and the Shaman Skill
@@ -30,29 +30,3 @@ From [[sword-world-rpg-complete-edition]].
 - The spirit power of wind does not work inside buildings, deep caves, or even underground passages. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03672))_
 - The spirit power of water is at work wherever there is water, such as the ocean or a lake. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03676))_
 - It's said that if one emotion has too much of an outburst, it can cause phenomena such as alienation or complete loss of functions of other spirits, which can lead to mental disorders. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03682))_
-
-## Technical atoms
-
-### Technical atom 1
-
-<a id="atom-technical-atom-073b5a3fcdb5a55c"></a>
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-03662))_
-
-```text
-5.1.13 Spirit Magic and the Shaman Skill
-5.1.13 Spirit Magic  and the Shaman Skil
-Silent spirit are runes used to communicate with spirits and draw out the  power  controlled  by  those  spirits. The skill for using spirit magic is called the shaman skill , and those who have this skill  are  called shamans .  The  shaman skill  allows you to use all basic abilities and spirit  magic  up  to  the  caster's  skill level.
-5.1.13.1
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| entry | content |
-| --- | --- |
-| 5 | 1.13 Spirit Magic and the Shaman Skill |
-| 5 | 1.13 Spirit Magic and the Shaman Skil Silent spirit are runes used to communicate with spirits and draw out the power controlled by those spirits. The skill for using spirit magic is called the shaman skill, and those who have this skill are called shamans. The shaman skill allows you to use all basic abilities and spirit magic up to the caster's skill level. |
-| 5 | 1.13.1 |
-
-</details>

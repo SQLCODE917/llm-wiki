@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-2-1-baseline-scores-target-scores-ebc660b1
 page_kind: source
 page_family: section-reference
-summary: 2.1 Baseline Scores / Target Scores: 6 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 2.1 Baseline Scores / Target Scores: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-1-baseline-scores-target-scores-ebc660b1@0bbe7b00946056d4f540ba8f4bd8ea84
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-1-baseline-scores-target-scores-ebc660b1@fa06a0739921f60c325fd9cba6f6e505
 ---
 
 # 2.1 Baseline Scores / Target Scores
@@ -60,32 +60,3 @@ From [[sword-world-rpg-complete-edition]].
 <a id="atom-technical-atom-9edfcd249be16d10"></a>
 
 > final score (baseline score + 2D) ≥ target score → action is successful
-
-### Technical atom 3
-
-<a id="atom-technical-atom-ab934f07c44ab749"></a>
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01174))_
-
-> The player must roll two dice and add their baseline score to the roll. The result is called the fi nal score . This final score should be equal to or greater than the target score.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01172))_
-
-```text
-Target Scores
-2.2 Target Scores
-The baseline score is  a number that represents a character's ability. However, the  success  of  an  action  is  not  only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned  warrior,  than  when  he  is  an amateur with no fighting experience.
-2.3
-2.3 Checks
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| entry | content |
-| --- | --- |
-| 2 | 2 Target Scores The baseline score is a number that represents a character's ability. However, the success of an action is not only related to the ability of the person attempting it, but also to the difficulty of the action itself. The difficulty of hitting a target with the same weapon is much greater when your opponent is a seasoned warrior, than when he is an amateur with no fighting experience. |
-| 2 | 3 |
-| 2 | 3 Checks |
-
-</details>

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-effect-contraction-dc07102e
 page_kind: source
 page_family: section-reference
-summary: 《 Effect Contraction 》: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 《 Effect Contraction 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-effect-contraction-dc07102e@f512e5dcda2aff99d481c2afd7c87b4d
+projection_coverage: section-sword-world-rpg-complete-edition-section-effect-contraction-dc07102e@75f9a47eaf631f4bc8fedf335fc1524d
 ---
 
 # 《 Effect Contraction 》
@@ -18,30 +18,3 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - These characteristics are presented here as magic types . _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02637))_
-
-## Technical atoms
-
-### Technical atom 1
-
-<a id="atom-technical-atom-102b5bdd5cdb9091"></a>
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02635))_
-
-```text
-《 Effect Contraction 》
-All  magic  that  can  expand  their effects can also contract their effects.
-5.1.8.2
-Combined Expansion and Contraction
-Although  it's not  often  done,  it's possible  to  perform  magic  expansion and contraction  at  the  same  time.  For example,  you  could extend the  area  of effect  while reducing magic  power.  The mental  power  required  at  this  time  is decided by expansion . It cannot be reduced by contraction. For example, if you double the  area and reduce  magic power by -4 , the mental power consumed will still be double .
-5.1.9 Magic  Types
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| All | magic | that | can | expand | their effects can also contract their effects. |
-| --- | --- | --- | --- | --- | --- |
-| Although | it's not | often | done, | it's possible | to |
-| 5.1.9 Magic | Types |  |  |  |  |
-
-</details>

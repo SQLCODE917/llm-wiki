@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-12-2-1-poisons-794f074e
 page_kind: source
 page_family: section-reference
-summary: 12.2.1 Poisons: 13 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 12.2.1 Poisons: 13 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-1-poisons-794f074e@42175ced33fdd59bd8921f978af82c06
+projection_coverage: section-sword-world-rpg-complete-edition-section-12-2-1-poisons-794f074e@690f831a278ef57bdcce43f1bb9a84ea
 ---
 
 # 12.2.1 Poisons
@@ -80,30 +80,3 @@ From [[sword-world-rpg-complete-edition]].
 <a id="atom-technical-atom-134235a8503eb339"></a>
 
 > The spirit magic Purification can make liquid poison harmless if the final score when casting the magic is greater than or equal to than the toxicity score.
-
-### Technical atom 5
-
-<a id="atom-technical-atom-2d589c2550ae90ca"></a>
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06515))_
-
-> To remove a poison with magic, the caster's final score (magic power + 2D roll) must be greater than or equal to the poison's toxicity score . Once a detox fails, the same caster cannot attempt detox magic until their magic power increases (and even if they try, they will always fail).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-06518))_
-
-```text
-12.2.1.2 Resistance to Poison
-Poisons are not effective against everything. It has no effect on monsters that have no life such as undead, golems, etc.  Some  mythical  and  magical  beasts have  strong  life  force  that  makes  them immune to poison. Some poison effects may or may not affect specific monsters.
-Monsters that use poison as weapons are  immune  to  their own poisons  (but are still affected by other poisons).
-12.2.1.3
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| entry | content |
-| --- | --- |
-| 12 | 2.1.2 Resistance to Poison Poisons are not effective against everything. It has no effect on monsters that have no life such as undead, golems, etc. Some mythical and magical beasts have strong life force that makes them immune to poison. Some poison effects may or may not affect specific monsters. Monsters that use poison as weapons are immune to their own poisons (but are still affected by other poisons). |
-| 12 | 2.1.3 |
-
-</details>

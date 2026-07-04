@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-d9d2f676
 page_kind: source
 page_family: section-reference
-summary: 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-d9d2f676@48130d8c3084e7277366708fc73245bc
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-d9d2f676@70d33603ae79e9edb298c302172faeec
 ---
 
 # 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself
@@ -37,29 +37,3 @@ From [[sword-world-rpg-complete-edition]].
 ### 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself / Weapon Combat Skills
 
 - To be good at weapon combat, a character must have skills. The skills that can be used for this purpose are limited to the following three: _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01414))_
-
-## Technical atoms
-
-### Technical atom 1
-
-<a id="atom-technical-atom-b666f073a3eee7a6"></a>
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-01409))_
-
-```text
-Weapon and Armor Restrictions
-4.1 Weapon and Armor Restrictions
-A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword...
-All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters  may  not  use  weapons  or armor  with  a  required  strength  greater than their own strength.
-4.2
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| entry | content |
-| --- | --- |
-| 4 | 1 Weapon and Armor Restrictions A very frail man, all skin and bones, dressed in heavy plate armor and wielding a long greatsword... All joking aside, however, if we want to be realistic, weapons and armor used should be limited by a character's strength. All weapons and armor have a required strength to use them. Characters may not use weapons or armor with a required strength greater than their own strength. |
-| 4 | 2 |
-
-</details>

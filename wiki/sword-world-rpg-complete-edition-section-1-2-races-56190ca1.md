@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-1-2-races-56190ca1
 page_kind: source
 page_family: section-reference
-summary: 1.2 Races: 39 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 1.2 Races: 39 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-1-2-races-56190ca1@cfb589e8b178779995dcf44f101e8e91
+projection_coverage: section-sword-world-rpg-complete-edition-section-1-2-races-56190ca1@a1c395ff207fa8603e87d470d81bc5ef
 ---
 
 # 1.2 Races
@@ -58,27 +58,3 @@ From [[sword-world-rpg-complete-edition]].
 ### 1.2 Races / 【 Half-Elf 】 / Skills
 
 - In addition to ability scores, Sword World RPG also uses numeric values called skills to describe the characteristics of characters. Skills have a greater impact on a character's actions than ability scores. This chapter explains the basics of skills. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00236))_
-
-## Technical atoms
-
-### Technical atom 1
-
-<a id="atom-technical-atom-52ab9b884be6ed5d"></a>
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-00211))_
-
-```text
-Races
-2. Among the craftsman general skill, has  any  one  of  the  following  at  level  5: carpentry, smithing, woodworking, stonemasonry, gem crafting (details are explained under 7.3: Craftsman Skill, see p. 126).
-3. Unable  to  learn  ancient  magic  or spirit magic.
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| entry | content |
-| --- | --- |
-| 2 | Among the craftsman general skill, has any one of the following at level 5: carpentry, smithing, woodworking, stonemasonry, gem crafting (details are explained under 7.3: Craftsman Skill, see p. 126). |
-| 3 | Unable to learn ancient magic or spirit magic. |
-
-</details>

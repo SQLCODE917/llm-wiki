@@ -158,9 +158,13 @@ as source evidence or as existing wiki coverage.
    section pages, source coverage, and projection coverage. High-value generated
    pages in the `topic-concept`, `broad-topic`, `procedure-guide`,
    `recipe-pattern`, and `collection-page` families are first drafted from a
-   `PageSynthesisPlan`, validated against selected ledger or atom evidence, and
-   rendered only after evidence validation accepts the `PageDraft`. Do not publish
-   extractive fallback markdown when synthesis fails. Dense navigation comes from
+   `PageSynthesisPlan` and its `PageEvidenceSet`: full evidence blocks, exact
+   ledger text, atom payload text, source ranges, and stable support refs. Do
+   not use lossy summaries as factual drafting input. Lossy summaries are
+   navigation-only previews derived after accepted pages, or related-link
+   previews marked with shared support refs. Render final markdown only after
+   evidence validation accepts the `PageDraft`. Do not publish extractive
+   fallback markdown when synthesis fails. Dense navigation comes from
    `category_path`, `domain`, source-backed links, explicit
    `From [[source-page]]` backlinks, grouped related-page reasons, and stable
    technical-atom anchors.

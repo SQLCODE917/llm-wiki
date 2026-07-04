@@ -1,4 +1,6 @@
 from llmwiki.domain.ledger.atoms import TablePayload, TechnicalAtom
+from llmwiki.domain.ledger.common import ConfidenceBasis
+from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.ledger import (
     ClaimLedger,
     FamilyLabelScore,
@@ -93,6 +95,39 @@ def test_table_identity_skips_forward_cues_for_table_heavy_ledgers() -> None:
     assert names["atom-table-0"] == ("reaction",)
 
 
+def test_table_identity_skips_structure_heading_names_for_large_sources() -> None:
+    ledger = _ledger_with_table_heading_entry()
+    structure = DocumentStructure(
+        root_node_id="node-root",
+        structure_nodes=(
+            StructureNode("node-root", "root", "rules.pdf", "source-range-root", "rules.pdf", 0),
+            StructureNode(
+                "node-table",
+                "section",
+                "Reaction Result Table",
+                "source-range-section",
+                "rules.pdf",
+                1,
+            ),
+            *(
+                StructureNode(
+                    f"node-extra-{index}",
+                    "section",
+                    f"Extra {index}",
+                    f"source-range-extra-{index}",
+                    "rules.pdf",
+                    index + 2,
+                )
+                for index in range(520)
+            ),
+        ),
+    )
+
+    names = table_identity_names_by_atom_id(ledger, structure)
+
+    assert names["atom-table-0"] == ("dice",)
+
+
 def test_table_name_matching_bounds_pathological_names() -> None:
     reference = "reaction " + ("2d d6 42 noise " * 10_000)
     table_names = ("reaction table", "other " + ("d20 noise " * 10_000))
@@ -132,7 +167,41 @@ def _ledger_with_table() -> ClaimLedger:
     return _ledger_with_tables(1)
 
 
-def _ledger_with_tables(count: int) -> ClaimLedger:
+def _ledger_with_table_heading_entry() -> ClaimLedger:
+    ledger = _ledger_with_tables(1, caption="Dice table")
+    entry = LedgerEntry(
+        ledger_entry_id="entry-table-0",
+        source_statement_id="statement-table-0",
+        ledger_entry_kind="technical-atom",
+        ledger_entry_status="usable",
+        extraction_confidence="high",
+        confidence_basis=ConfidenceBasis("test"),
+        source_locator="rules.pdf",
+        source_hash="source-hash",
+        source_range_id="source-range-table-0",
+        evidence_ids=("evidence-table",),
+        source_text="",
+        structure_node_ids=("node-table", "node-root"),
+        technical_atom_kind="table",
+        technical_atom_id="atom-table-0",
+    )
+    return ClaimLedger(
+        claim_ledger_id=ledger.claim_ledger_id,
+        source_locator=ledger.source_locator,
+        source_hash=ledger.source_hash,
+        evidence_registry_hash=ledger.evidence_registry_hash,
+        source_profile=ledger.source_profile,
+        source_family_assignment=ledger.source_family_assignment,
+        entries=(entry,),
+        technical_atoms=ledger.technical_atoms,
+        technical_atom_contexts=ledger.technical_atom_contexts,
+        source_statements=ledger.source_statements,
+        extractor_decisions=ledger.extractor_decisions,
+        rejected_candidates=ledger.rejected_candidates,
+    )
+
+
+def _ledger_with_tables(count: int, *, caption: str = "Reaction table") -> ClaimLedger:
     return ClaimLedger(
         claim_ledger_id="claim-ledger-test",
         source_locator="rules.pdf",
@@ -162,7 +231,7 @@ def _ledger_with_tables(count: int) -> ClaimLedger:
                     raw_table_text="| Roll | Reaction |\n| 2 | Hostile |",
                     parse_status="parsed",
                     source_locator="rules.pdf",
-                    caption="Reaction table",
+                    caption=caption,
                 ),
                 source_locator="rules.pdf",
                 source_range_id=f"source-range-table-{index}",

@@ -4,7 +4,7 @@ page_kind: source
 page_family: section-reference
 summary: [ Tiger ] Monster Level=3 Rarity=6 Agility=21 Movement Speed=25 Number=One to several Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Fang:10 (3)/Claw:11 (4)/ Claw:11 (4) Strike Points=11/10/10 Evasion Points=11 (4) Defense Points=7 Life Points/Resistance=20/12 (5) Mental Points/Resistance=7/10 (3) Special Abilities=None in particular Habitat=Deep in forests Languages=None: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf

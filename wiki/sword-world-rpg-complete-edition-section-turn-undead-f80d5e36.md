@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-turn-undead-f80d5e36
 page_kind: source
 page_family: section-reference
-summary: [ Turn Undead ]: 16 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Turn Undead ]: 16 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-turn-undead-f80d5e36@c6fa3ab785123db5fcc2e8809e9f3f71
+projection_coverage: section-sword-world-rpg-complete-edition-section-turn-undead-f80d5e36@1b0dcca97452208ac9ddc3ea7f118eee
 ---
 
 # [ Turn Undead ]
@@ -90,42 +90,3 @@ From [[sword-world-rpg-complete-edition]].
 <a id="atom-technical-atom-32d65870c6f2915f"></a>
 
 > Table 5-6: Turn Undead
-
-### Technical atom 5
-
-<a id="atom-technical-atom-9ea1059294372d7d"></a>
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04360))_
-
-```text
-2 The undead go berserk from a state of panic. Attack points +2, evasion points -4. Even those with intelligence can no longer act rationally and cannot use magic, etc.
-3 Same as above
-4 Undead are struck by panic and are prevented from taking action. Suffer a -1 penalty to attack points, evasion points, and magic intensity.
-5 Same as above, but penalty is -2
-6 Same as above, but penalty is -3
-7 Undead run away. They go berserk if that's not possible.
-8 Undead run away. If that's not possible, they act with a -3 penalty
-9 Undead run away. If that's not possible, they freeze in fear and become unable to act
-10 Undead freeze in fear. They become unable to act
-11 Same as above
-12 Undead crumble away
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| entry | content |
-| --- | --- |
-| 2 | The undead go berserk from a state of panic. Attack points +2, evasion points -4. Even those with intelligence can no longer act rationally and cannot use magic, etc. |
-| 3 | Same as above |
-| 4 | Undead are struck by panic and are prevented from taking action. Suffer a -1 penalty to attack points, evasion points, and magic intensity. |
-| 5 | Same as above, but penalty is -2 |
-| 6 | Same as above, but penalty is -3 |
-| 7 | Undead run away. They go berserk if that's not possible. |
-| 8 | Undead run away. If that's not possible, they act with a -3 penalty |
-| 9 | Undead run away. If that's not possible, they freeze in fear and become unable to act |
-| 10 | Undead freeze in fear. They become unable to act |
-| 11 | Same as above |
-| 12 | Undead crumble away |
-
-</details>

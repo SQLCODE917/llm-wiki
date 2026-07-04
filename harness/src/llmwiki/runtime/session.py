@@ -111,6 +111,7 @@ from llmwiki.pdf.pipeline import (
 from llmwiki.runtime.cross_source_pipeline import build_cross_source_pages
 from llmwiki.runtime.ledger_pipeline import build_source_ledger
 from llmwiki.runtime.ledger_segmentation import ChunkText
+from llmwiki.runtime.page_synthesis_forge import ForgePageDraftProducer
 from llmwiki.runtime.source_summary_replay import replay_source_summary_work_unit
 from llmwiki.runtime.transcript import TranscriptWriter
 from llmwiki.store import WikiStore
@@ -282,6 +283,7 @@ class Session:
     on_chunk_note: Callable[[str], None] | None = None  # per-chunk supervision
     strict_evidence: StrictEvidenceMode = "off"
     ingest_profiles: tuple[IngestProfile, ...] = ()
+    draft_synthesized_pages: bool = False
 
     def _evidence_policy(self) -> EvidencePolicy:
         return EvidencePolicy(mode=self.strict_evidence)
@@ -366,6 +368,15 @@ class Session:
     ) -> OperationResult:
         registry = build_evidence_registry(page_plan, (source_text,))
         registry_hash = short_digest(registry_to_json(registry), 32)
+        draft_producer = None
+        if self.draft_synthesized_pages:
+            if self.client is None:
+                raise RuntimeError("Page synthesis drafting requires a configured Forge client.")
+            draft_producer = ForgePageDraftProducer(
+                client=self.client,
+                context_manager=self.context_manager,
+                schema_text=self.store.read_schema(),
+            )
         ledger = build_source_ledger(
             source_locator=source_locator,
             source_hash=source_text.source_hash,
@@ -375,6 +386,7 @@ class Session:
             source_claims=page_plan.source_claims,
             today=self.today,
             schema=ingest_run.schema,
+            draft_producer=draft_producer,
         )
         self.store.write_ledger_artifacts(source_locator, ledger.artifact_files)
         written = "none (authoritative write blocked; see blocked-write-diagnostic.json)"

@@ -5,19 +5,18 @@ from __future__ import annotations
 from llmwiki.domain.ledger.collection_pages import CollectionPlan
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.page_synthesis import (
-    DraftEvidenceCard,
+    PageEvidenceItem,
+    PageEvidenceSet,
     PageOutlineSection,
     PageSynthesisPlan,
 )
 from llmwiki.domain.ledger.page_synthesis_evidence import (
-    atom_card,
+    atom_item,
     atom_section_label,
-    atom_summary,
     citation,
-    entry_card,
+    entry_item,
     entry_section_label,
-    entry_summary,
-    recipe_claim_summary,
+    evidence_block_items_for_entries,
     related_links,
     section_page_ids_for_entries,
     step_support,
@@ -45,21 +44,25 @@ def topic_synthesis_plan(
     source_locator: str,
     related_pages: tuple[RelatedTopicLink, ...] = (),
 ) -> PageSynthesisPlan:
-    entry_cards = tuple(
-        entry_card(entry, entry_summary(entry, topic.label), entry_section_label(structure, entry))
-        for entry_id in topic.entry_ids[:_MAX_TOPIC_EVIDENCE]
-        if (entry := ledger.entry(entry_id)) is not None
-    )
-    atom_cards = tuple(
-        atom_card(
+    entry_items = evidence_block_items_for_entries(ledger, structure, topic.entry_ids)[
+        :_MAX_TOPIC_EVIDENCE
+    ]
+    if not entry_items:
+        entry_items = tuple(
+            entry_item(entry, entry_section_label(structure, entry))
+            for entry_id in topic.entry_ids[:_MAX_TOPIC_EVIDENCE]
+            if (entry := ledger.entry(entry_id)) is not None
+        )
+    atom_items = tuple(
+        atom_item(
             atom,
-            atom_summary(atom, topic.label),
             atom_section_label(structure, ledger, atom),
         )
         for atom_id in topic.atom_ids[:4]
         if (atom := ledger.atom(atom_id)) is not None
     )
-    evidence = (*entry_cards, *atom_cards)
+    evidence = (*entry_items, *atom_items)
+    evidence_set = PageEvidenceSet(page_id, evidence)
     section_ids = section_page_ids_for_entries(
         structure,
         source_page_id,
@@ -80,18 +83,18 @@ def topic_synthesis_plan(
         outline=(
             PageOutlineSection(
                 "Source-Backed View",
-                "Summarize selected statements about this topic.",
-                tuple(card.evidence_ref for card in entry_cards),
+                "Draft readable source-backed statements about this topic.",
+                tuple(item.support_ref for item in entry_items),
                 "bullet-list",
             ),
             PageOutlineSection(
                 "Technical Evidence",
-                "Summarize selected technical atoms for this topic.",
-                tuple(card.evidence_ref for card in atom_cards),
+                "List selected technical atom payloads for this topic.",
+                tuple(item.support_ref for item in atom_items),
                 "bullet-list",
             ),
         ),
-        selected_evidence=evidence,
+        evidence_set=evidence_set,
         related_links=related_links(related_pages, evidence),
     )
 
@@ -102,33 +105,31 @@ def procedure_synthesis_plan(
     source_page_id: str,
     source_locator: str,
 ) -> PageSynthesisPlan:
-    step_cards: list[DraftEvidenceCard] = []
+    step_items: list[PageEvidenceItem] = []
     for step in guide.steps[:_MAX_PROCEDURE_STEPS]:
         ref, locator, range_id, exact = step_support(step.claims, step.technical_atoms)
         if ref is None:
             continue
-        step_cards.append(
-            DraftEvidenceCard(
-                evidence_ref=ref,
+        step_items.append(
+            PageEvidenceItem(
+                support_ref=ref,
+                evidence_kind=ref.support_kind,
                 source_locator=locator,
-                source_range_id=range_id,
-                summary=(
-                    f"Step {step.sequence} uses the {step.action_type.replace('-', ' ')} "
-                    f"action {step.title.lower()}"
-                ),
-                exact_text=exact,
+                source_range_ids=(range_id,),
+                evidence_text=exact,
                 section_label=step.section_page_id,
                 citation=citation(locator, range_id),
+                ledger_entry_ids=(ref.support_id,) if ref.support_kind == "ledger" else (),
+                technical_atom_id=ref.support_id if ref.support_kind == "atom" else "",
             )
         )
-    atom_cards = tuple(
-        atom_card(
+    atom_items = tuple(
+        atom_item(
             atom,
-            f"{guide.title} uses a {atom.technical_atom_kind.replace('-', ' ')} reference",
         )
         for atom in guide.technical_atoms[:6]
     )
-    evidence = (*step_cards, *atom_cards)
+    evidence = (*step_items, *atom_items)
     return PageSynthesisPlan(
         page_id=guide.procedure_id,
         page_kind="procedure",
@@ -141,23 +142,23 @@ def procedure_synthesis_plan(
             PageOutlineSection(
                 "Goal",
                 "Describe the procedure goal.",
-                tuple(card.evidence_ref for card in step_cards[:1]),
+                tuple(item.support_ref for item in step_items[:1]),
                 "paragraph",
             ),
             PageOutlineSection(
                 "Procedure Steps",
                 "Render ordered source-backed steps.",
-                tuple(card.evidence_ref for card in step_cards),
+                tuple(item.support_ref for item in step_items),
                 "numbered-list",
             ),
             PageOutlineSection(
                 "Tables And Formulas",
                 "List technical references needed by the procedure.",
-                tuple(card.evidence_ref for card in atom_cards),
+                tuple(item.support_ref for item in atom_items),
                 "bullet-list",
             ),
         ),
-        selected_evidence=evidence,
+        evidence_set=PageEvidenceSet(guide.procedure_id, evidence),
     )
 
 
@@ -167,15 +168,15 @@ def recipe_synthesis_plan(
     source_page_id: str,
     source_locator: str,
 ) -> PageSynthesisPlan:
-    claim_cards = tuple(
-        entry_card(claim, recipe_claim_summary(pattern, claim), pattern.source_node.heading_text)
+    claim_items = tuple(
+        entry_item(claim, pattern.source_node.heading_text)
         for claim in pattern.claims[:_MAX_RECIPE_EVIDENCE]
     )
-    atom_cards = tuple(
-        atom_card(atom, f"{pattern.title} includes a {atom.technical_atom_kind.replace('-', ' ')}")
+    atom_items = tuple(
+        atom_item(atom)
         for atom in pattern.technical_atoms[:4]
     )
-    evidence = (*claim_cards, *atom_cards)
+    evidence = (*claim_items, *atom_items)
     return PageSynthesisPlan(
         page_id=pattern.recipe_id,
         page_kind="recipe",
@@ -188,23 +189,23 @@ def recipe_synthesis_plan(
             PageOutlineSection(
                 "Pattern",
                 "Explain the reusable source-backed pattern.",
-                tuple(card.evidence_ref for card in claim_cards[:2] or atom_cards[:1]),
+                tuple(item.support_ref for item in claim_items[:2] or atom_items[:1]),
                 "bullet-list",
             ),
             PageOutlineSection(
                 "Applicability And Rationale",
                 "Summarize why the pattern applies.",
-                tuple(card.evidence_ref for card in claim_cards),
+                tuple(item.support_ref for item in claim_items),
                 "bullet-list",
             ),
             PageOutlineSection(
                 "Technical Atoms",
-                "Preserve technical references as source-backed summaries.",
-                tuple(card.evidence_ref for card in atom_cards),
+                "Preserve technical references as source-backed payloads.",
+                tuple(item.support_ref for item in atom_items),
                 "bullet-list",
             ),
         ),
-        selected_evidence=evidence,
+        evidence_set=PageEvidenceSet(pattern.recipe_id, evidence),
     )
 
 
@@ -215,7 +216,7 @@ def collection_synthesis_plan(
     source_page_id: str,
     source_locator: str,
 ) -> PageSynthesisPlan:
-    cards: list[DraftEvidenceCard] = []
+    items: list[PageEvidenceItem] = []
     for member in plan.members[:_MAX_COLLECTION_MEMBERS]:
         entry = next(
             (
@@ -230,24 +231,16 @@ def collection_synthesis_plan(
             None,
         )
         if entry is not None:
-            cards.append(
-                entry_card(
+            items.append(
+                entry_item(
                     entry,
-                    (
-                        f"{member.title} is a collection member with {member.entry_count} "
-                        f"statement(s) and {member.atom_count} technical atom(s)"
-                    ),
                     member.section_page_id,
                 )
             )
         elif atom is not None:
-            cards.append(
-                atom_card(
+            items.append(
+                atom_item(
                     atom,
-                    (
-                        f"{member.title} is a collection member with {member.entry_count} "
-                        f"statement(s) and {member.atom_count} technical atom(s)"
-                    ),
                     member.section_page_id,
                 )
             )
@@ -263,9 +256,9 @@ def collection_synthesis_plan(
             PageOutlineSection(
                 "Collection Signals",
                 "Describe the source-backed collection members.",
-                tuple(card.evidence_ref for card in cards),
+                tuple(item.support_ref for item in items),
                 "bullet-list",
             ),
         ),
-        selected_evidence=tuple(cards),
+        evidence_set=PageEvidenceSet(plan.collection_page_id, tuple(items)),
     )

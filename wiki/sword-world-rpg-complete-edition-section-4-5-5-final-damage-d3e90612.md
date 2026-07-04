@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-4-5-5-final-damage-d3e90612
 page_kind: source
 page_family: section-reference
-summary: 4.5.5 Final Damage: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 4.5.5 Final Damage: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-5-final-damage-d3e90612@6b16d2e4a054209382b6d693fb74d369
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-5-5-final-damage-d3e90612@08d0d04e378278abd6b07ad75a65886b
 ---
 
 # 4.5.5 Final Damage
@@ -32,37 +32,3 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - If the base damage dealt by Ducard II is 4, 18 , or 14 , respectively, the final damage he could deal to the goblin would be: _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02188))_
-
-## Technical atoms
-
-### Technical atom 1
-
-<a id="atom-technical-atom-35ed0c8491342a92"></a>
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02188))_
-
-> If the base damage dealt by Ducard II is 4, 18 , or 14 , respectively, the final damage he could deal to the goblin would be:
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-02189))_
-
-```text
-4 (base damage) +4 (bonus damage) -4 (goblin's defense points) = 4
-18 (base damage) +4 (bonus damage)
--4 (goblin's defense points) = 18
-14 (base damage) +4 (bonus damage) -4 (goblin's defense points) = 14
-If  final  damage  is 0  or  negative ,  it means  that no  damage was  dealt.  The attack  was  prevented  by  thick  skin  or hard scales.
-4.6
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| entry | content |
-| --- | --- |
-| 4 | (base damage) +4 (bonus damage) -4 (goblin's defense points) = 4 |
-| 18 | (base damage) +4 (bonus damage) |
-| 4 | (goblin's defense points) = 18 |
-| 14 | (base damage) +4 (bonus damage) -4 (goblin's defense points) = 14 If final damage is 0 or negative, it means that no damage was dealt. The attack was prevented by thick skin or hard scales. |
-| 4 | 6 |
-
-</details>

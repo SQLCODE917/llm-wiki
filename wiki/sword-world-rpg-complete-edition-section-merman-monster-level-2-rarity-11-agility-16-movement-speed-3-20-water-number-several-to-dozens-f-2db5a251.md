@@ -4,7 +4,7 @@ page_kind: source
 page_family: section-reference
 summary: [ Merman ] Monster Level=2 Rarity=11 Agility=16 Movement Speed=3/20 (water) Number=Several to dozens Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Weapon: 9 (2) Strike Points=5 Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=14/10 (3) Mental Points/Resistance=16/10 (3) Special Abilities=Water adaptation Habitat=Seas Languages=Merman Perception=Five senses (illumination): 26 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf

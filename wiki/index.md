@@ -3,264 +3,66 @@
 ## Sources
 - [[1776thomaspaine]] — Hub page for the source '1776' by Thomas Paine, linking chapter pages.
 - [[1776thomaspaine-document]] — Document from raw/1776ThomasPaine.pdf.
-- [[javascriptallonge]] — Claim-ledger projection (coding): 1931 usable entries, 654 technical atoms, 471 needs-review, 421 linked page(s); write decision write-with-review-work.
-- [[javascriptallonge-collection-and-also-combinators-and-function-decorators-c48f42db]] — And also: / Combinators and Function Decorators: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-and-also-naming-functions-37c9be8d]] — And also: / Naming Functions: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-composing-and-decomposing-data-6f7d7870]] — Composing and Decomposing Data: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-composing-and-decomposing-data-arrays-and-destructuring-arguments-c1f61fb6]] — Composing and Decomposing Data / Arrays and Destructuring Arguments: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-composing-and-decomposing-data-garbage-garbage-everywhere-83116d81]] — Composing and Decomposing Data / Garbage, Garbage Everywhere: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-composing-and-decomposing-data-plain-old-javascript-objects-bce9b969]] — Composing and Decomposing Data / Plain Old JavaScript Objects: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-composing-and-decomposing-data-self-similarity-f4d3bc3f]] — Composing and Decomposing Data / Self-Similarity: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-composing-and-decomposing-data-tail-calls-and-default-arguments-e2a54ac1]] — Composing and Decomposing Data / Tail Calls (and Default Arguments): synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-like-this-66cb3108]] — Like this:: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-or-even-6221c0af]] — Or even:: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-picking-the-bean-choice-and-truthiness-d45c6f89]] — Picking the Bean: Choice and Truthiness: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-recipes-with-basic-functions-c9137465]] — Recipes with Basic Functions: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-recipes-with-basic-functions-left-variadic-functions-d00f2bc0]] — Recipes with Basic Functions / Left-Variadic Functions: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-the-first-sip-basic-functions-as-little-as-possible-about-functions-but-no-less-0ed59777]] — The first sip: Basic Functions / As Little As Possible About Functions, But No Less: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-we-get-2605e005]] — We get:: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-we-get-basic-operations-on-iterables-50055b98]] — We get: / Basic Operations on Iterables: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-we-ll-keep-it-simple-1104ef0d]] — We'll keep it simple:: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-we-ll-keep-it-simple-interlude-the-carpenter-interviews-for-a-job-196a6679]] — We'll keep it simple: / Interlude: The Carpenter Interviews for a Job: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection-we-ll-keep-it-simple-lazy-and-eager-collections-b2c43c7f]] — We'll keep it simple: / Lazy and Eager Collections: synthesized collection page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-9a15e9b7]] — A Pull of the Lever: Prefaces: 83 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-about-javascript-allong-21ea31b9]] — A Pull of the Lever: Prefaces / About JavaScript Allongé: 44 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-about-javascript-allong-that-s-nice-is-that-the-only-reason-1523be9c]] — A Pull of the Lever: Prefaces / About JavaScript Allongé / that's nice. is that the only reason?: 12 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-about-javascript-allong-why-the-six-edition-60c91bde]] — A Pull of the Lever: Prefaces / About JavaScript Allongé / why the 'six' edition?: 25 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-foreword-to-the-six-edition-a789e1b1]] — A Pull of the Lever: Prefaces / Foreword to the 'Six' edition: 9 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-what-javascript-allong-is-and-isn-t-fff532da]] — A Pull of the Lever: Prefaces / What JavaScript Allongé is. And isn't.: 28 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-what-javascript-allong-is-and-isn-t-how-this-book-is-organized-1eb5000c]] — A Pull of the Lever: Prefaces / What JavaScript Allongé is. And isn't. / how this book is organized: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-rich-aroma-basic-numbers-663a3fb7]] — A Rich Aroma: Basic Numbers: 33 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-rich-aroma-basic-numbers-floating-ebe9399e]] — A Rich Aroma: Basic Numbers / floating: 14 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-rich-aroma-basic-numbers-operations-on-numbers-57cbae24]] — A Rich Aroma: Basic Numbers / operations on numbers: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-d5c66d04]] — A Warm Cup: Basic Strings and Quasi-Literals: 24 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-evaluation-time-a314598a]] — A Warm Cup: Basic Strings and Quasi-Literals / evaluation time: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-quasi-literals-a1ab40aa]] — A Warm Cup: Basic Strings and Quasi-Literals / quasi-literals: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-3f50274e]] — And also:: 413 source-backed entries and 49 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-a-quick-summary-of-functions-and-bodies-7798619d]] — And also: / Ah. I'd Like to Have an Argument, Please. 22 / a quick summary of functions and bodies: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-call-by-sharing-96a55cff]] — And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by sharing: 17 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-call-by-value-ae929990]] — And also: / Ah. I'd Like to Have an Argument, Please. 22 / call by value: 7 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-f00edd2f]] — And also: / Ah. I'd Like to Have an Argument, Please. 22: 64 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-ah-i-d-like-to-have-an-argument-please-22-variables-and-bindings-4f74d027]] — And also: / Ah. I'd Like to Have an Argument, Please. 22 / variables and bindings: 22 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-building-blocks-96359378]] — And also: / Building Blocks: 31 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-building-blocks-composition-b915cf07]] — And also: / Building Blocks / composition: 13 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-building-blocks-partial-application-a5e51d71]] — And also: / Building Blocks / partial application: 14 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-closures-and-scope-d1679ec0]] — And also: / Closures and Scope: 65 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-closures-and-scope-if-functions-without-free-variables-are-pure-are-closures-impure-f58a7619]] — And also: / Closures and Scope / if functions without free variables are pure, are closures impure?: 26 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-closures-and-scope-it-s-always-the-environment-47a785c5]] — And also: / Closures and Scope / it's always the environment: 15 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-closures-and-scope-shadowy-variables-from-a-shadowy-planet-1dde456f]] — And also: / Closures and Scope / shadowy variables from a shadowy planet: 8 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-closures-and-scope-which-came-first-the-chicken-or-the-egg-48a59db6]] — And also: / Closures and Scope / which came first, the chicken or the egg?: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-combinators-and-function-decorators-a-balanced-statement-about-combinators-6d1004f5]] — And also: / Combinators and Function Decorators / a balanced statement about combinators: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-combinators-and-function-decorators-c48f42db]] — And also: / Combinators and Function Decorators: 16 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-combinators-and-function-decorators-combinators-7988daff]] — And also: / Combinators and Function Decorators / combinators: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-combinators-and-function-decorators-function-decorators-913f90c6]] — And also: / Combinators and Function Decorators / function decorators: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-combinators-and-function-decorators-higher-order-functions-21afd32c]] — And also: / Combinators and Function Decorators / higher-order functions: 3 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-functions-that-evaluate-to-functions-0eac2f2e]] — And also: / functions that evaluate to functions: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-magic-names-ced4852f]] — And also: / Magic Names: 33 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-magic-names-magic-names-and-fat-arrows-a644f644]] — And also: / Magic Names / magic names and fat arrows: 22 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-magic-names-the-function-keyword-b8eb1a25]] — And also: / Magic Names / the function keyword: 9 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-naming-functions-37c9be8d]] — And also: / Naming Functions: 60 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-naming-functions-function-declaration-caveats-34-01e57464]] — And also: / Naming Functions / function declaration caveats 34: 13 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-naming-functions-function-declarations-25fc9c63]] — And also: / Naming Functions / function declarations: 14 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-naming-functions-the-function-keyword-5d8f2243]] — And also: / Naming Functions / the function keyword: 31 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-summary-ece908a9]] — And also: / Summary: 16 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-summary-functions-a3702d43]] — And also: / Summary / Functions: 15 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-that-constant-coffee-craving-7d1b2fd1]] — And also: / That Constant Coffee Craving: 115 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-that-constant-coffee-craving-are-consts-also-from-a-shadowy-planet-0a0a1685]] — And also: / That Constant Coffee Craving / are consts also from a shadowy planet?: 29 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-that-constant-coffee-craving-const-1d605a7f]] — And also: / That Constant Coffee Craving / const: 22 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-that-constant-coffee-craving-const-and-lexical-scope-518692ba]] — And also: / That Constant Coffee Craving / const and lexical scope: 14 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-that-constant-coffee-craving-inside-out-96a0dd3a]] — And also: / That Constant Coffee Craving / inside-out: 21 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-that-constant-coffee-craving-nested-blocks-e1d3b152]] — And also: / That Constant Coffee Craving / nested blocks: 12 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-and-also-that-constant-coffee-craving-rebinding-c21c4915]] — And also: / That Constant Coffee Craving / rebinding: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-6f7d7870]] — Composing and Decomposing Data: 405 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-array-literals-2857d963]] — Composing and Decomposing Data / Arrays and Destructuring Arguments / array literals: 13 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-c1f61fb6]] — Composing and Decomposing Data / Arrays and Destructuring Arguments: 58 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-destructuring-and-return-value-ec61c56d]] — Composing and Decomposing Data / Arrays and Destructuring Arguments / destructuring and return values: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-destructuring-arrays-6ab61a91]] — Composing and Decomposing Data / Arrays and Destructuring Arguments / destructuring arrays: 11 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-destructuring-is-not-pattern-m-d5383046]] — Composing and Decomposing Data / Arrays and Destructuring Arguments / destructuring is not pattern matching: 10 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-destructuring-parameters-6cd226a5]] — Composing and Decomposing Data / Arrays and Destructuring Arguments / destructuring parameters: 7 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-element-references-a8dcb708]] — Composing and Decomposing Data / Arrays and Destructuring Arguments / element references: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-arrays-and-destructuring-arguments-gathering-91ed37bf]] — Composing and Decomposing Data / Arrays and Destructuring Arguments / gathering: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-garbage-garbage-everywhere-83116d81]] — Composing and Decomposing Data / Garbage, Garbage Everywhere: 56 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-garbage-garbage-everywhere-so-why-arrays-ecae5c27]] — Composing and Decomposing Data / Garbage, Garbage Everywhere / so why arrays: 7 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-garbage-garbage-everywhere-some-history-1c77955f]] — Composing and Decomposing Data / Garbage, Garbage Everywhere / some history: 29 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-garbage-garbage-everywhere-summary-71292497]] — Composing and Decomposing Data / Garbage, Garbage Everywhere / summary: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-mutation-building-with-mutation-bd1adba2]] — Composing and Decomposing Data / Mutation / building with mutation: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-mutation-d77e57e8]] — Composing and Decomposing Data / Mutation: 49 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-mutation-mutation-and-data-structures-5828e27e]] — Composing and Decomposing Data / Mutation / mutation and data structures: 12 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-plain-old-javascript-objects-bce9b969]] — Composing and Decomposing Data / Plain Old JavaScript Objects: 59 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-plain-old-javascript-objects-destructuring-objects-b7f3e8d1]] — Composing and Decomposing Data / Plain Old JavaScript Objects / destructuring objects: 7 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-plain-old-javascript-objects-literal-object-syntax-205c8f77]] — Composing and Decomposing Data / Plain Old JavaScript Objects / literal object syntax: 17 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-plain-old-javascript-objects-revisiting-linked-lists-e7d9bd1d]] — Composing and Decomposing Data / Plain Old JavaScript Objects / revisiting linked lists: 21 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-reassignment-5040fcae]] — Composing and Decomposing Data / Reassignment: 47 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-reassignment-mixing-let-and-const-ca678af6]] — Composing and Decomposing Data / Reassignment / mixing let and const: 20 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-reassignment-mixing-let-and-const-var-1276f47e]] — Composing and Decomposing Data / Reassignment / mixing let and const / var: 15 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-reassignment-why-const-and-let-were-invented-d21b490b]] — Composing and Decomposing Data / Reassignment / why const and let were invented: 12 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-f4d3bc3f]] — Composing and Decomposing Data / Self-Similarity: 65 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-folding-6afcd1fe]] — Composing and Decomposing Data / Self-Similarity / folding: 9 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-linear-recursion-4c0b6367]] — Composing and Decomposing Data / Self-Similarity / linear recursion: 17 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-mapping-d1acef31]] — Composing and Decomposing Data / Self-Similarity / mapping: 8 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-self-similarity-summary-652fb6eb]] — Composing and Decomposing Data / Self-Similarity / summary: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-tail-calls-and-default-arguments-converting-non-tail-calls-to-tai-dc131bb9]] — Composing and Decomposing Data / Tail Calls (and Default Arguments) / converting non-tail-calls to tail-calls: 12 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-tail-calls-and-default-arguments-default-arguments-ec839e44]] — Composing and Decomposing Data / Tail Calls (and Default Arguments) / default arguments: 9 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-tail-calls-and-default-arguments-defaults-and-destructuring-483fccd5]] — Composing and Decomposing Data / Tail Calls (and Default Arguments) / defaults and destructuring: 3 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-tail-calls-and-default-arguments-e2a54ac1]] — Composing and Decomposing Data / Tail Calls (and Default Arguments): 69 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-tail-calls-and-default-arguments-factorials-ca237dca]] — Composing and Decomposing Data / Tail Calls (and Default Arguments) / factorials: 9 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-composing-and-decomposing-data-tail-calls-and-default-arguments-tail-call-optimization-755a53cb]] — Composing and Decomposing Data / Tail Calls (and Default Arguments) / tail-call optimization: 16 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-ecmascript-6-has-three-major-groups-of-features-about-the-sample-pdf-6dd89e8d]] — ECMAScript 6 has three major groups of features: / About The Sample PDF: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-ecmascript-6-has-three-major-groups-of-features-e8239e2d]] — ECMAScript 6 has three major groups of features:: 24 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-ecmascript-6-has-three-major-groups-of-features-forewords-to-the-first-edition-bad64bc9]] — ECMAScript 6 has three major groups of features: / Forewords to the First Edition: 16 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-ecmascript-6-has-three-major-groups-of-features-forewords-to-the-first-edition-matthew-knox-5cf9672b]] — ECMAScript 6 has three major groups of features: / Forewords to the First Edition / matthew knox: 0 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-ecmascript-6-has-three-major-groups-of-features-forewords-to-the-first-edition-michael-fogus-9049a54c]] — ECMAScript 6 has three major groups of features: / Forewords to the First Edition / michael fogus: 16 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-javascript-allong-the-six-edition-53256a94]] — JavaScript Allongé, the 'Six' Edition: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-javascript-allong-the-six-edition-reg-raganwald-braithwaite-99ad4379]] — JavaScript Allongé, the 'Six' Edition / Reg 'raganwald' Braithwaite: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-like-this-66cb3108]] — Like this:: 115 source-backed entries and 33 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-like-this-from-28c3e8e3]] — Like this: / from: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-like-this-generating-iterables-283d51ed]] — Like this: / Generating Iterables: 33 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-like-this-generating-iterables-recursive-iterators-7e4e68e5]] — Like this: / Generating Iterables / recursive iterators: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-like-this-generating-iterables-state-machines-774a067e]] — Like this: / Generating Iterables / state machines: 10 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-like-this-iterables-ed92ad54]] — Like this: / iterables: 22 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-like-this-iterables-out-to-infinity-7f1f5ba0]] — Like this: / iterables out to infinity: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-like-this-operations-on-ordered-collections-286a5f1c]] — Like this: / operations on ordered collections: 26 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-like-this-ordered-collections-a2e8339c]] — Like this: / ordered collections: 12 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-like-this-summary-bc99b304]] — Like this: / summary: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-or-even-6221c0af]] — Or even:: 43 source-backed entries and 16 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-or-even-back-on-the-block-b9587c98]] — Or even: / back on the block: 17 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-or-even-the-simplest-possible-block-528c8472]] — Or even: / the simplest possible block: 20 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-or-even-the-simplest-possible-block-undefined-19cd59e5]] — Or even: / the simplest possible block / undefined: 15 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-or-even-void-8a19170f]] — Or even: / void: 5 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-and-are-control-flow-operators-f37352da]] — Picking the Bean: Choice and Truthiness / || and && are control-flow operators: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-d45c6f89]] — Picking the Bean: Choice and Truthiness: 45 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-function-parameters-are-eager-77511990]] — Picking the Bean: Choice and Truthiness / function parameters are eager: 6 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-summary-7f12d5ad]] — Picking the Bean: Choice and Truthiness / summary: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-truthiness-and-operators-f4c050bc]] — Picking the Bean: Choice and Truthiness / truthiness and operators: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-truthiness-and-the-ternary-operator-d8796156]] — Picking the Bean: Choice and Truthiness / truthiness and the ternary operator: 15 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-3ba31fb1]] — Prelude: Values and Expressions over Coffee: 47 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-7389665c]] — Prelude: Values and Expressions over Coffee / values and identity: 29 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-reference-types-00ce938b]] — Prelude: Values and Expressions over Coffee / values and identity / reference types: 8 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-and-identity-value-types-eb382c99]] — Prelude: Values and Expressions over Coffee / values and identity / value types: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-prelude-values-and-expressions-over-coffee-values-are-expressions-439d7791]] — Prelude: Values and Expressions over Coffee / values are expressions: 18 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-basic-functions-c9137465]] — Recipes with Basic Functions: 80 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-basic-functions-disclaimer-d5150889]] — Recipes with Basic Functions / Disclaimer: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-basic-functions-left-variadic-functions-a-history-lesson-7dceb2fe]] — Recipes with Basic Functions / Left-Variadic Functions / a history lesson: 5 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-basic-functions-left-variadic-functions-d00f2bc0]] — Recipes with Basic Functions / Left-Variadic Functions: 28 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-basic-functions-left-variadic-functions-left-variadic-destructuring-81ee3116]] — Recipes with Basic Functions / Left-Variadic Functions / left-variadic destructuring: 6 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-basic-functions-left-variadic-functions-overcoming-limitations-96b730f4]] — Recipes with Basic Functions / Left-Variadic Functions / overcoming limitations: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-basic-functions-maybe-bddfd1b7]] — Recipes with Basic Functions / Maybe: 12 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-basic-functions-once-99d6b11d]] — Recipes with Basic Functions / Once: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-basic-functions-partial-application-583028a8]] — Recipes with Basic Functions / Partial Application: 6 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-basic-functions-tap-904019d9]] — Recipes with Basic Functions / Tap: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-basic-functions-unary-5deba4e9]] — Recipes with Basic Functions / Unary: 15 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-data-178f0a89]] — Recipes with Data: 53 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-data-disclaimer-92143eef]] — Recipes with Data / Disclaimer: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-data-flip-2cae94c7]] — Recipes with Data / Flip: 16 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-data-flip-flipping-methods-79368074]] — Recipes with Data / Flip / flipping methods: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-data-flip-self-currying-flip-3aa1de4b]] — Recipes with Data / Flip / self-currying flip: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-data-mapwith-588e9415]] — Recipes with Data / mapWith: 14 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-data-object-assign-c62f7bb5]] — Recipes with Data / Object.assign: 8 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-recipes-with-data-why-d85ef4c4]] — Recipes with Data / Why?: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-served-by-the-pot-collections-bdfa40aa]] — Served by the Pot: Collections: 23 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-served-by-the-pot-collections-iteration-and-iterables-4469b582]] — Served by the Pot: Collections / Iteration and Iterables: 21 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-served-by-the-pot-collections-iteration-and-iterables-a-look-back-at-functional-iterators-4c177971]] — Served by the Pot: Collections / Iteration and Iterables / a look back at functional iterators: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-served-by-the-pot-collections-iteration-and-iterables-iterator-objects-00211d43]] — Served by the Pot: Collections / Iteration and Iterables / iterator objects: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-first-sip-basic-functions-310a8867]] — The first sip: Basic Functions: 42 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-first-sip-basic-functions-as-little-as-possible-about-functions-but-no-less-0ed59777]] — The first sip: Basic Functions / As Little As Possible About Functions, But No Less: 41 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-first-sip-basic-functions-as-little-as-possible-about-functions-but-no-less-applying-functio-9dc686e6]] — The first sip: Basic Functions / As Little As Possible About Functions, But No Less / applying functions: 5 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-first-sip-basic-functions-as-little-as-possible-about-functions-but-no-less-commas-613f6e9a]] — The first sip: Basic Functions / As Little As Possible About Functions, But No Less / commas: 6 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-first-sip-basic-functions-as-little-as-possible-about-functions-but-no-less-functions-and-id-04ebbc48]] — The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions and identities: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-first-sip-basic-functions-as-little-as-possible-about-functions-but-no-less-functions-that-r-953101e3]] — The first sip: Basic Functions / As Little As Possible About Functions, But No Less / functions that return values and evaluate expressions: 13 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-golden-crema-appendices-and-afterwords-733effc6]] — The Golden Crema: Appendices and Afterwords: 27 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-golden-crema-appendices-and-afterwords-about-the-author-a9b179d5]] — The Golden Crema: Appendices and Afterwords / About The Author: 3 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-golden-crema-appendices-and-afterwords-about-the-author-contact-851ee73d]] — The Golden Crema: Appendices and Afterwords / About The Author / contact: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-golden-crema-appendices-and-afterwords-copyright-notice-c27f07a1]] — The Golden Crema: Appendices and Afterwords / Copyright Notice: 2 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-golden-crema-appendices-and-afterwords-copyright-notice-images-2adc56a0]] — The Golden Crema: Appendices and Afterwords / Copyright Notice / images: 1 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-golden-crema-appendices-and-afterwords-how-to-run-the-examples-64b1941d]] — The Golden Crema: Appendices and Afterwords / How to run the examples: 15 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-golden-crema-appendices-and-afterwords-thanks-81bd2dc9]] — The Golden Crema: Appendices and Afterwords / Thanks!: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-golden-crema-appendices-and-afterwords-thanks-daniel-friedman-and-matthias-felleisen-a20fb3dc]] — The Golden Crema: Appendices and Afterwords / Thanks! / Daniel Friedman and Matthias Felleisen: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-the-golden-crema-appendices-and-afterwords-thanks-richard-feynman-6d3e3f4e]] — The Golden Crema: Appendices and Afterwords / Thanks! / Richard Feynman: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-get-2605e005]] — We get:: 35 source-backed entries and 14 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-get-basic-operations-on-iterables-50055b98]] — We get: / Basic Operations on Iterables: 7 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-get-basic-operations-on-iterables-memoizing-an-iterable-b731679a]] — We get: / Basic Operations on Iterables / memoizing an iterable: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-get-basic-operations-on-iterables-operations-that-compose-two-or-more-iterables-into-an-itera-31eb9626]] — We get: / Basic Operations on Iterables / operations that compose two or more iterables into an iterable: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-get-basic-operations-on-iterables-operations-that-transform-an-iterable-into-a-value-7603882e]] — We get: / Basic Operations on Iterables / operations that transform an iterable into a value: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-get-basic-operations-on-iterables-operations-that-transform-one-iterable-into-another-51605abc]] — We get: / Basic Operations on Iterables / operations that transform one iterable into another: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-get-interactive-generators-6808178d]] — We get: / interactive generators: 8 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-get-representing-naughts-and-crosses-as-a-stateful-function-fe9d0cf3]] — We get: / representing naughts and crosses as a stateful function: 5 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-get-summary-db42c4cd]] — We get: / summary: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-get-this-seems-familiar-0d4230cb]] — We get: / this seems familiar: 10 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-1104ef0d]] — We'll keep it simple:: 219 source-backed entries and 81 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-generators-and-iterables-4c3f39e4]] — We'll keep it simple: / generators and iterables: 11 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-generators-are-coroutines-a23babe6]] — We'll keep it simple: / generators are coroutines: 24 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-interactive-generators-1f19e24c]] — We'll keep it simple: / Interactive Generators: 18 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-interactive-generators-representing-naughts-and-crosses-as-a-stateless-func-df9810de]] — We'll keep it simple: / Interactive Generators / representing naughts and crosses as a stateless function: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-interlude-the-carpenter-interviews-for-a-job-196a6679]] — We'll keep it simple: / Interlude: The Carpenter Interviews for a Job: 51 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-interlude-the-carpenter-interviews-for-a-job-after-another-drink-b1c5a752]] — We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / after another drink: 8 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-interlude-the-carpenter-interviews-for-a-job-the-aftermath-0085c9b6]] — We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the aftermath: 5 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-interlude-the-carpenter-interviews-for-a-job-the-carpenter-s-solution-9074fc35]] — We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the carpenter's solution: 24 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-interlude-the-carpenter-interviews-for-a-job-the-problem-69f83674]] — We'll keep it simple: / Interlude: The Carpenter Interviews for a Job / the problem: 13 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-javascript-s-generators-a7436505]] — We'll keep it simple: / javascript's generators: 17 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-lazy-and-eager-collections-b2c43c7f]] — We'll keep it simple: / Lazy and Eager Collections: 55 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-lazy-and-eager-collections-eager-collections-3cb2ca80]] — We'll keep it simple: / Lazy and Eager Collections / eager collections: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-lazy-and-eager-collections-implementing-methods-with-iteration-c0f99451]] — We'll keep it simple: / Lazy and Eager Collections / implementing methods with iteration: 14 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-lazy-and-eager-collections-lazy-collection-operations-547c7c28]] — We'll keep it simple: / Lazy and Eager Collections / lazy collection operations: 22 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-more-generators-6ce23867]] — We'll keep it simple: / more generators: 9 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-rewriting-iterable-operations-9606b732]] — We'll keep it simple: / rewriting iterable operations: 9 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-summary-21c844cb]] — We'll keep it simple: / Summary: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-we-ll-keep-it-simple-yielding-iterables-d9572ca8]] — We'll keep it simple: / yielding iterables: 15 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-will-be-represented-as-4332c18a]] — Will be represented as:: 5 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-would-be-3-producing-b9b6c8fd]] — Would be 3 , producing:: 5 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-b8b28d41]] — Yes. Consider this variation:: 208 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-copy-on-write-a-few-utilities-cdb2bac1]] — Yes. Consider this variation: / Copy on Write / a few utilities: 3 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-copy-on-write-c844813d]] — Yes. Consider this variation: / Copy on Write: 32 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-copy-on-write-copy-on-read-4f68c68b]] — Yes. Consider this variation: / Copy on Write / copy-on-read: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-copy-on-write-copy-on-write-d1a59880]] — Yes. Consider this variation: / Copy on Write / copy-on-write: 8 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-functional-iterators-53aff37b]] — Yes. Consider this variation: / Functional Iterators: 57 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-functional-iterators-bonus-6b4a06d7]] — Yes. Consider this variation: / Functional Iterators / bonus: 10 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-functional-iterators-caveat-c90295dd]] — Yes. Consider this variation: / Functional Iterators / caveat: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-functional-iterators-iterating-c8ddd51e]] — Yes. Consider this variation: / Functional Iterators / iterating: 16 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-functional-iterators-unfolding-and-laziness-bcf7ec6a]] — Yes. Consider this variation: / Functional Iterators / unfolding and laziness: 17 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-a-return-to-backward-thinking-b86dc74c]] — Yes. Consider this variation: / Making Data Out Of Functions / a return to backward thinking: 22 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-backwardness-d9db07eb]] — Yes. Consider this variation: / Making Data Out Of Functions / backwardness: 7 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-f095c99b]] — Yes. Consider this variation: / Making Data Out Of Functions: 90 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-functions-are-not-the-real-point-4469615c]] — Yes. Consider this variation: / Making Data Out Of Functions / functions are not the real point: 7 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-lists-with-functions-as-data-6f298a2f]] — Yes. Consider this variation: / Making Data Out Of Functions / lists with functions as data: 9 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-say-please-4edc5a79]] — Yes. Consider this variation: / Making Data Out Of Functions / say 'please': 11 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-the-kestrel-and-the-idiot-868e3ae2]] — Yes. Consider this variation: / Making Data Out Of Functions / the kestrel and the idiot: 12 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-making-data-out-of-functions-the-vireo-6fe9a149]] — Yes. Consider this variation: / Making Data Out Of Functions / the vireo: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
-- [[javascriptallonge-section-yes-consider-this-variation-tortoises-hares-and-teleporting-turtles-091ad917]] — Yes. Consider this variation: / Tortoises, Hares, and Teleporting Turtles: 13 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge]] — Claim-ledger projection (general-prose): 1074 usable entries, 20 technical atoms, 291 needs-review, 55 linked page(s); write decision write-with-review-work.
+- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-31f51ee2]] — A Pull of the Lever: Prefaces: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-rich-aroma-basic-numbers-04c712a3]] — A Rich Aroma: Basic Numbers: 32 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-52f111b3]] — A Warm Cup: Basic Strings and Quasi-Literals: 15 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-about-javascript-allong-df55f62b]] — About JavaScript Allongé: 31 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-about-the-author-f96bfa10]] — About The Author: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-about-the-sample-pdf-af0b0711]] — About The Sample PDF: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-ah-i-d-like-to-have-an-argument-please-428fd20a]] — Ah. I'd Like to Have an Argument, Please.: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-arrays-and-destructuring-arguments-6da6afc8]] — Arrays and Destructuring Arguments: 29 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-as-little-as-possible-about-functions-but-no-less-e6b12881]] — As Little As Possible About Functions, But No Less: 57 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-basic-operations-on-iterables-a156cdc3]] — Basic Operations on Iterables: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-building-blocks-18fa4ba0]] — Building Blocks: 27 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-closures-and-scope-272ef698]] — Closures and Scope: 49 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-combinators-and-function-decorators-3abdb82f]] — Combinators and Function Decorators: 16 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-copy-on-write-f1b0201e]] — Copy on Write: 23 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-document-0737ee8c]] — Document: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-flip-8bfdd55b]] — Flip: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-foreword-to-the-six-edition-ab5c4adf]] — Foreword to the Six'' edition: 13 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-forewords-to-the-first-edition-553de330]] — Forewords to the First Edition: 18 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functional-iterators-f09b7c39]] — Functional Iterators: 38 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-garbage-garbage-everywhere-7635f108]] — Garbage, Garbage Everywhere: 49 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-generating-iterables-a786d150]] — Generating Iterables: 23 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-how-to-run-the-examples-2a5f8086]] — How to run the examples: 9 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-interactive-generators-dd4aba99]] — Interactive Generators: 33 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-interlude-the-carpenter-interviews-for-a-job-e2535841]] — Interlude: The Carpenter Interviews for a Job: 31 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-iteration-and-iterables-8f5e9b29]] — Iteration and Iterables: 64 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-lazy-and-eager-collections-f7a5233b]] — Lazy and Eager Collections: 39 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-left-variadic-functions-93903312]] — Left-Variadic Functions: 11 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-magic-names-0c70b6e4]] — Magic Names: 18 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-making-data-out-of-functions-999b30b2]] — Making Data Out Of Functions: 49 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mapwith-9607afb9]] — mapWith: 8 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-maybe-f587fcc2]] — Maybe: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mutation-5433831f]] — Mutation: 33 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-naming-functions-3c1fa48f]] — Naming Functions: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-object-assign-2201e514]] — Object.assign: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-once-1c119d4e]] — Once: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-partial-application-1103ebb5]] — Partial Application: 6 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-40b2cef8]] — Picking the Bean: Choice and Truthiness: 8 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-plain-old-javascript-objects-707d8631]] — Plain Old JavaScript Objects: 37 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-reassignment-283c794b]] — Reassignment: 35 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-recipes-with-basic-functions-38a3a777]] — Recipes with Basic Functions: 7 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-recipes-with-data-8090a4a2]] — Recipes with Data: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-self-similarity-b04bd026]] — Self-Similarity: 5 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-served-by-the-pot-collections-e6b41c36]] — Served by the Pot: Collections: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-11e31bb8]] — Summary: 14 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-table-of-contents-5d01b92b]] — Table of Contents: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tail-calls-and-default-arguments-18829f5c]] — Tail Calls (and Default Arguments): 44 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tap-ab5bb031]] — Tap: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-thanks-54b581dc]] — Thanks!: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-that-constant-coffee-craving-2d5b9903]] — That Constant Coffee Craving: 63 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tortoises-hares-and-teleporting-turtles-f2bb6b76]] — Tortoises, Hares, and Teleporting Turtles: 10 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-unary-887ceeb9]] — Unary: 8 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-values-and-identity-c02e71e9]] — values and identity: 22 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-values-are-expressions-9fbbef26]] — values are expressions: 22 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-what-javascript-allong-is-and-isn-t-48af7f54]] — What JavaScript Allongé is. And isn't.: 25 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-why-8c811a5f]] — Why?: 7 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
 - [[mit8-01scs22-chapter2]] — MIT 8.01SC Physics I: Classical Mechanics, Chapter 2
 - [[mit8-01scs22-chapter2-document]] — Document from raw/mit8_01scs22_chapter2.pdf.
-- [[sword-world-rpg-complete-edition]] — Claim-ledger projection (history): 12343 usable entries, 4708 technical atoms, 1304 needs-review, 1267 linked page(s); write decision write-with-review-work.
-- [[sword-world-rpg-complete-edition-collection-10-5-attacks-against-the-sleeping-5adabf46]] — 10.5 Attacks Against the Sleeping: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-12-2-2-illnesses-b9c7f5f9]] — 12.2.2 Illnesses: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-1-types-of-monsters-1cd4c9c3]] — 13.1 Types of Monsters: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-2-1-humans-6e762209]] — 13.2.1 《 Humans 》: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-2-11-daemons-underworld-creatures-5f686ba2]] — 13.2.11 Daemons/Underworld Creatures: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-2-12-humans-e4eada41]] — 13.2.12 Humans: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-2-3-youma-cdc09e8d]] — 13.2.3 Youma: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] — 13.2.6 Mythical Beasts and Magical Beasts: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-13-6-handling-monster-special-abilities-22341d2d]] — 13.6 Handling Monster Special Abilities: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-16-5-combat-options-891a5b60]] — 16.5 Combat Options: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-16-9-special-weapons-62330b63]] — 16.9 Special Weapons: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-18-3-rules-for-destroying-structures-5e113017]] — 18.3 Rules for Destroying Structures: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-3-4-4-actions-you-can-take-while-standing-still-519dd7f4]] — 3.4.4 Actions You Can Take While Standing Still: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-5-1-12-ancient-magic-list-19f66f88]] — 5.1.12 Ancient Magic List: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-5-1-14-spirit-magic-list-55816c7f]] — 5.1.14 Spirit Magic List: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-5-1-17-special-holy-magic-list-b40a33a3]] — 5.1.17 Special Holy Magic List: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-11-notes-on-magic-11-3-dragon-roar-magic-4a413d46]] — Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-11-notes-on-magic-b7944607]] — Chapter 11: Notes on Magic: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-12-various-checks-12-1-rules-regarding-language-ba47b7d8]] — Chapter 12: Various Checks / 12.1 Rules Regarding Language: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-14-14-4-magical-item-list-e871a62e]] — Chapter 14: / 14.4 Magical Item List: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-14-b6f5d768]] — Chapter 14:: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-16-16-2-weapon-and-armor-modifiers-ad25522c]] — Chapter 16: / 16.2 Weapon and Armor Modifiers: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-3-6d32210f]] — Chapter 3:: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-6-6-1-precautions-when-using-skills-82cdd945]] — Chapter 6: / 6.1 Precautions When Using Skills: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-6-6-3-ranger-skill-f81328c3]] — Chapter 6: / 6.3 Ranger Skill: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-6-644c319b]] — Chapter 6:: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-7-22223c91]] — Chapter 7:: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-7-7-5-treatment-intelligence-8242b170]] — Chapter 7: / 7.5 [ ② Treatment [Intelligence]]: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-collection-chapter-9-6031114c]] — Chapter 9:: synthesized collection page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-1-2-races-56190ca1]] — 1.2 Races: 39 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition]] — Claim-ledger projection (history): 12343 usable entries, 4708 technical atoms, 1304 needs-review, 1145 linked page(s); write decision write-with-review-work.
+- [[sword-world-rpg-complete-edition-section-1-2-races-56190ca1]] — 1.2 Races: 39 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-1-2-races-elf-d52481b7]] — 1.2 Races / 【 Elf 】: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-1-2-races-grassrunner-1b7187c6]] — 1.2 Races / 【 Grassrunner 】: 19 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-1-2-races-half-elf-8416755e]] — 1.2 Races / 【 Half-Elf 】: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -318,7 +120,7 @@
 - [[sword-world-rpg-complete-edition-section-1-4-character-creation-weight-limits-5a76b5c1]] — 1.4 Character Creation / [ Weight Limits ]: 27 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-1-obtain-spellbooks-or-scrolls-containing-lost-spell-04ac495f]] — 1. Obtain Spellbooks or Scrolls Containing Lost Spell: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-1-replay-collections-6afdd52a]] — 1. Replay Collections: 13 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-10-1-npc-and-monster-action-announcement-cbd8789a]] — 10.1 NPC and Monster Action Announcement: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-10-1-npc-and-monster-action-announcement-cbd8789a]] — 10.1 NPC and Monster Action Announcement: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-10-1-npc-and-monster-action-announcement-combat-in-special-situations-449633e6]] — 10.1 NPC and Monster Action Announcement / Combat in Special Situations: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-10-3-surprise-attacks-ec20e9a3]] — 10.3 Surprise Attacks: 12 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-10-4-water-combat-0ba0451d]] — 10.4 Water Combat: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -330,7 +132,7 @@
 - [[sword-world-rpg-complete-edition-section-10-5-attacks-against-the-sleeping-rules-for-sleeping-monsters-7b799ff5]] — 10.5 Attacks Against the Sleeping / Rules for Sleeping Monsters: 27 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-10th-level-basic-holy-magic-list-call-god-d353f13c]] — 10th Level Basic Holy Magic List [ Call God ]: 13 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-10th-level-dragon-roar-magic-list-reborn-dragon-f974005a]] — 10th Level Dragon Roar Magic List [ Reborn Dragon ]: 16 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-12-2-1-poisons-794f074e]] — 12.2.1 Poisons: 13 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-12-2-1-poisons-794f074e]] — 12.2.1 Poisons: 13 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-b9c7f5f9]] — 12.2.2 Illnesses: 185 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-balloon-burst-7b55666f]] — 12.2.2 Illnesses / [ Balloon Burst ]: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-12-2-2-illnesses-bat-fever-c93a729e]] — 12.2.2 Illnesses / [ Bat Fever ]: 9 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -407,8 +209,8 @@
 - [[sword-world-rpg-complete-edition-section-13-2-4-spirits-4ce53b91]] — 13.2.4 Spirits: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-androscorpio-d1fea7e7]] — 13.2.6 Mythical Beasts and Magical Beasts / [ Androscorpio ]: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-basilisk-d5dbbafe]] — 13.2.6 Mythical Beasts and Magical Beasts / [ Basilisk ]: 37 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] — 13.2.6 Mythical Beasts and Magical Beasts: 597 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-buckbaird-852e8591]] — 13.2.6 Mythical Beasts and Magical Beasts / [ Buckbaird ]: 23 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-bb36054a]] — 13.2.6 Mythical Beasts and Magical Beasts: 597 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-buckbaird-852e8591]] — 13.2.6 Mythical Beasts and Magical Beasts / [ Buckbaird ]: 23 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-ceiling-hanger-7a6fa718]] — 13.2.6 Mythical Beasts and Magical Beasts / [ Ceiling Hanger ]: 30 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-centaur-5258ebe0]] — 13.2.6 Mythical Beasts and Magical Beasts / [ Centaur ]: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-chimera-443b8706]] — 13.2.6 Mythical Beasts and Magical Beasts / [ Chimera ]: 22 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -504,17 +306,17 @@
 - [[sword-world-rpg-complete-edition-section-16-4-projectile-range-extension-f528d0dd]] — 16.4 Projectile Range Extension: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-16-4-projectile-range-extension-long-distance-modifiers-0bca5328]] — 16.4 Projectile Range Extension / Long Distance Modifiers: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-16-4-projectile-range-extension-maximum-range-defa1196]] — 16.4 Projectile Range Extension / Maximum Range: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-16-5-combat-options-891a5b60]] — 16.5 Combat Options: 135 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-5-combat-options-891a5b60]] — 16.5 Combat Options: 135 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-16-5-combat-options-area-aim-daa02030]] — 16.5 Combat Options / Area Aim: 28 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-16-5-combat-options-charge-0d7d1fe6]] — 16.5 Combat Options / Charge: 20 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-16-5-combat-options-full-defense-e1760636]] — 16.5 Combat Options / Full Defense: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-16-5-combat-options-grapple-0249372a]] — 16.5 Combat Options / Grapple: 32 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-5-combat-options-grapple-0249372a]] — 16.5 Combat Options / Grapple: 32 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-16-5-combat-options-mow-down-4a809f1f]] — 16.5 Combat Options / Mow Down: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-16-5-combat-options-ram-8f1880ff]] — 16.5 Combat Options / Ram: 9 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-16-5-combat-options-snipe-d5f9712a]] — 16.5 Combat Options / Snipe: 22 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-16-5-combat-options-strong-blow-e79e22fc]] — 16.5 Combat Options / Strong Blow: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-16-6-2-two-handed-attacks-d092f78c]] — 16.6.2 Two-Handed Attacks: 25 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-16-6-2-two-handed-attacks-throwing-multiple-darts-or-daggers-e93e500c]] — 16.6.2 Two-Handed Attacks / Throwing Multiple Darts or Daggers: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-6-2-two-handed-attacks-d092f78c]] — 16.6.2 Two-Handed Attacks: 25 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-6-2-two-handed-attacks-throwing-multiple-darts-or-daggers-e93e500c]] — 16.6.2 Two-Handed Attacks / Throwing Multiple Darts or Daggers: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-16-6-2-two-handed-attacks-weapons-and-armor-that-are-too-heavy-2120b919]] — 16.6.2 Two-Handed Attacks / Weapons and Armor That Are Too Heavy: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-16-6-holding-weapons-in-both-hands-5fa56eae]] — 16.6 Holding Weapons in Both Hands: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-16-6-holding-weapons-in-both-hands-hand-9654cd4e]] — 16.6 Holding Weapons in Both Hands / Hand: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -582,21 +384,21 @@
 - [[sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-world-959ea09f]] — 18.3 Rules for Destroying Structures / World: 13 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-1st-level-ancient-magic-list-unlock-6e3ac820]] — 1st Level Ancient Magic List [ Unlock ]: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-2-1-baseline-scores-checks-f64ba73a]] — 2.1 Baseline Scores / Checks: 16 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-2-1-baseline-scores-d8b4105b]] — 2.1 Baseline Scores: 28 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-2-1-baseline-scores-target-scores-ebc660b1]] — 2.1 Baseline Scores / Target Scores: 6 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-1-baseline-scores-d8b4105b]] — 2.1 Baseline Scores: 28 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-1-baseline-scores-target-scores-ebc660b1]] — 2.1 Baseline Scores / Target Scores: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-2-3-1-automatic-success-and-automatic-failure-82c7f07c]] — 2.3.1 Automatic Success and Automatic Failure: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-2-4-bonuses-and-penalties-76c3ae5e]] — 2.4 Bonuses and Penalties: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-2-5-difficulty-checks-2-5-1-difficulty-b2b0e076]] — 2.5 Difficulty Checks / 2.5.1 Difficulty: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-2-5-difficulty-checks-2-5-2-how-to-make-a-difficulty-check-778f9a94]] — 2.5 Difficulty Checks / 2.5.2 How to Make a Difficulty Check: 16 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-5-difficulty-checks-2-5-2-how-to-make-a-difficulty-check-778f9a94]] — 2.5 Difficulty Checks / 2.5.2 How to Make a Difficulty Check: 16 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-2-5-difficulty-checks-2-5-3-analogy-of-success-and-failure-211ef947]] — 2.5 Difficulty Checks / 2.5.3 Analogy of Success and Failure: 23 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-2-5-difficulty-checks-6c442155]] — 2.5 Difficulty Checks: 66 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-5-difficulty-checks-6c442155]] — 2.5 Difficulty Checks: 66 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-2-6-success-rolls-using-adventurer-level-973810bd]] — 2.6 Success Rolls Using Adventurer Level: 27 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-2-6-success-rolls-using-adventurer-level-filling-out-the-character-sheet-0e2bccaf]] — 2.6 Success Rolls Using Adventurer Level / Filling Out the Character Sheet: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-2-6-success-rolls-using-adventurer-level-resistance-rolls-24267942]] — 2.6 Success Rolls Using Adventurer Level / Resistance Rolls: 21 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-2-learn-from-a-sorcerer-who-knows-lost-spell-c09f2989]] — 2. Learn From a Sorcerer Who Knows Lost Spell: 15 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-2nd-level-basic-holy-magic-list-cure-deafness-91bb9c1d]] — 2nd Level Basic Holy Magic List [ Cure Deafness ]: 9 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-3-4-2-actions-you-can-take-4af3fc3f]] — 3.4.2 Actions You Can Take: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-519dd7f4]] — 3.4.4 Actions You Can Take While Standing Still: 96 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-519dd7f4]] — 3.4.4 Actions You Can Take While Standing Still: 96 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-attack-power-9f22a241]] — 3.4.4 Actions You Can Take While Standing Still / 【 Attack Power 】: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-bonus-damage-da6ab1ae]] — 3.4.4 Actions You Can Take While Standing Still / 【 Bonus Damage 】: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-critical-target-1394a3c4]] — 3.4.4 Actions You Can Take While Standing Still / 【 Critical Target 】: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -608,8 +410,8 @@
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-filling-out-the-character-sheet-attacks-from-cha-459b5909]] — 3.4.4 Actions You Can Take While Standing Still / Filling out the Character Sheet / Attacks From Characters Against Monsters: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-ranger-skill-e2cd921c]] — 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-ranger-skill-scores-used-in-weapon-combat-04b28899]] — 3.4.4 Actions You Can Take While Standing Still / 【 Ranger Skill 】 / Scores Used in Weapon Combat: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-d9d2f676]] — 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-weapon-and-armor-res-6991c734]] — 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself / Weapon and Armor Restrictions: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-d9d2f676]] — 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-weapon-and-armor-res-6991c734]] — 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself / Weapon and Armor Restrictions: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-stand-up-and-ready-yourself-weapon-combat-skills-14dd53ae]] — 3.4.4 Actions You Can Take While Standing Still / Stand Up and Ready Yourself / Weapon Combat Skills: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-strike-power-43741924]] — 3.4.4 Actions You Can Take While Standing Still / 【 Strike Power 】: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-thief-skill-311f79df]] — 3.4.4 Actions You Can Take While Standing Still / 【 Thief Skill 】: 17 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -617,7 +419,7 @@
 - [[sword-world-rpg-complete-edition-section-3-4-4-actions-you-can-take-while-standing-still-use-magic-and-projectiles-b60f9249]] — 3.4.4 Actions You Can Take While Standing Still / Use Magic and Projectiles: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-3-world-guide-26372c79]] — 3. World Guide: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-3rd-level-basic-holy-magic-list-cure-poison-e3d47609]] — 3rd Level Basic Holy Magic List [ Cure Poison ]: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-3d37b0b9]] — 4.10 Excellent Weapons and Armor: 125 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-3d37b0b9]] — 4.10 Excellent Weapons and Armor: 125 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-2-silver-weapons-and-armor-dbb0cb19]] — 4.10 Excellent Weapons and Armor / 4.10.2 Silver Weapons and Armor: 12 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-444977ff]] — 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor: 23 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-4-10-3-magical-weapons-and-armor-magical-armor-4b57d940]] — 4.10 Excellent Weapons and Armor / 4.10.3 Magical Weapons and Armor / 【 Magical Armor 】: 9 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -637,7 +439,7 @@
 - [[sword-world-rpg-complete-edition-section-4-5-3-bonus-damage-62cc15ec]] — 4.5.3 Bonus Damage: 9 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-4-5-4-monster-defense-points-20a9e175]] — 4.5.4 Monster Defense Points: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-4-5-5-final-damage-attacks-from-monsters-against-characters-73f0a7a2]] — 4.5.5 Final Damage / Attacks From Monsters Against Characters: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-4-5-5-final-damage-d3e90612]] — 4.5.5 Final Damage: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-5-5-final-damage-d3e90612]] — 4.5.5 Final Damage: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-4-6-1-hit-evasion-checks-909492de]] — 4.6.1 Hit (Evasion) Checks: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-4-6-3-defense-rolls-a09ac034]] — 4.6.3 Defense Rolls: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-4-6-4-damage-reduction-df39d6f0]] — 4.6.4 Damage Reduction: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -735,12 +537,12 @@
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-translate-863a22bd]] — 5.1.12 Ancient Magic List / [ Translate ]: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-vision-c0e9d70b]] — 5.1.12 Ancient Magic List / [ Vision ]: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-wraith-form-1f362ede]] — 5.1.12 Ancient Magic List / [ Wraith Form ]: 18 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-5-1-13-spirit-magic-and-the-shaman-skill-b873e1d0]] — 5.1.13 Spirit Magic and the Shaman Skill: 24 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-13-spirit-magic-and-the-shaman-skill-b873e1d0]] — 5.1.13 Spirit Magic and the Shaman Skill: 24 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-10th-level-spirit-magic-list-661bc740]] — 5.1.14 Spirit Magic List / 10th Level Spirit Magic List ]: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-2nd-level-spirit-magic-list-will-o-wisp-will-o-wisp-light-spirit-bf2e754f]] — 5.1.14 Spirit Magic List / 2nd Level Spirit Magic List [ Will-O-Wisp ] (Will-O-Wisp/Light Spirit): 15 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-3rd-level-spirit-magic-list-invisibility-sprite-mind-spirit-ea7bb168]] — 5.1.14 Spirit Magic List / 3rd Level Spirit Magic List [ Invisibility ] (Sprite/Mind Spirit): 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-4th-level-spirit-magic-list-water-walking-undine-water-spirit-4aa530f6]] — 5.1.14 Spirit Magic List / 4th Level Spirit Magic List [ Water Walking ] (Undine/Water Spirit): 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-55816c7f]] — 5.1.14 Spirit Magic List: 741 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-55816c7f]] — 5.1.14 Spirit Magic List: 741 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-5th-level-spirit-magic-list-control-plant-78d56975]] — 5.1.14 Spirit Magic List / 5th Level Spirit Magic List [ Control Plant ]: 12 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-6th-level-spirit-magic-list-73ac7276]] — 5.1.14 Spirit Magic List / 6th Level Spirit Magic List: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-8th-level-spirit-magic-list-ice-coffin-13186096]] — 5.1.14 Spirit Magic List / 8th Level Spirit Magic List [ Ice Coffin ]: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -782,7 +584,7 @@
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-spirit-wall-b51692fa]] — 5.1.14 Spirit Magic List / [ Spirit Wall ]: 88 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-stone-blast-gnome-earth-spirit-6a955c53]] — 5.1.14 Spirit Magic List / [ Stone Blast ] (Gnome/Earth Spirit): 12 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-suffocate-djinn-wind-spirit-fa5ecf3d]] — 5.1.14 Spirit Magic List / [ Suffocate ] (Djinn/Wind Spirit): 13 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-tunnel-gnome-earth-spirit-764bab0b]] — 5.1.14 Spirit Magic List / [ Tunnel ] (Gnome/Earth Spirit): 21 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-tunnel-gnome-earth-spirit-764bab0b]] — 5.1.14 Spirit Magic List / [ Tunnel ] (Gnome/Earth Spirit): 21 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-valkyrie-blessing-valkyrie-mind-spirit-b79de8ae]] — 5.1.14 Spirit Magic List / [ Valkyrie Blessing ] (Valkyrie/Mind Spirit): 16 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-valkyrie-javelin-valkyrie-mind-spirit-0881023a]] — 5.1.14 Spirit Magic List / [ Valkyrie Javelin ] (Valkyrie/Mind Spirit): 13 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-water-breathing-undine-water-spirit-36d07d39]] — 5.1.14 Spirit Magic List / [ Water Breathing ] (Undine/Water Spirit): 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -807,7 +609,7 @@
 - [[sword-world-rpg-complete-edition-section-5-1-3-learning-magic-f6e0c6bd]] — 5.1.3 Learning Magic: 12 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-4-how-to-use-magic-860368f8]] — 5.1.4 How to Use Magic: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-5-consuming-mental-power-1dd688c6]] — 5.1.5 Consuming Mental Power: 13 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-5-1-7-magic-expansion-72dc4019]] — 5.1.7 Magic Expansion: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-7-magic-expansion-72dc4019]] — 5.1.7 Magic Expansion: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-1-8-magic-contraction-a9603565]] — 5.1.8 Magic Contraction: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-2-common-runes-319758c7]] — 5.2 Common Runes: 27 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-5-3-1-spellsong-list-c75bbd3b]] — 5.3.1 Spellsong List: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -1082,9 +884,9 @@
 - [[sword-world-rpg-complete-edition-section-chapter-3-3-3-action-canceling-3-3-1-when-it-s-possible-to-360fdad5]] — Chapter 3: / 3.3 Action Canceling / 3.3.1 When It's Possible to: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-chapter-3-3-3-action-canceling-3-3-1-when-it-s-possible-to-change-attack-targets-4b2ab060]] — Chapter 3: / 3.3 Action Canceling / 3.3.1 When It's Possible to / Change Attack Targets: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-chapter-3-3-3-action-canceling-b3932e7e]] — Chapter 3: / 3.3 Action Canceling: 16 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-chapter-3-6d32210f]] — Chapter 3:: 88 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-chapter-3-movement-and-actions-d724a2ed]] — Chapter 3: / Movement and Actions: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-82cdd945]] — Chapter 6: / 6.1 Precautions When Using Skills: 116 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-chapter-3-6d32210f]] — Chapter 3:: 88 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-chapter-3-movement-and-actions-d724a2ed]] — Chapter 3: / Movement and Actions: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-82cdd945]] — Chapter 6: / 6.1 Precautions When Using Skills: 116 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-acrobatics-agility-equipment-restriction-f0ef6fd5]] — Chapter 6: / 6.1 Precautions When Using Skills / [ ③ Acrobatics [Agility] ] (Equipment restriction): 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-climb-agility-equipment-restriction-841490e2]] — Chapter 6: / 6.1 Precautions When Using Skills / [ ⑩ Climb [Agility] ] (Equipment restriction): 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-disguise-dexterity-no-equipment-restriction-66110177]] — Chapter 6: / 6.1 Precautions When Using Skills / [ ⑭ Disguise [Dexterity] ] (No equipment restriction): 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -1115,7 +917,7 @@
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-surprise-attack-intelligence-no-equipment-restriction-33b0b1ba]] — Chapter 6: / 6.3 Ranger Skill / [ ⑭ Surprise Attack [Intelligence]] (No equipment restriction): 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-survivalism-life-force-no-equipment-restriction-6fd8e42c]] — Chapter 6: / 6.3 Ranger Skill / [ ⑦ Survivalism [Life Force] ] (No equipment restriction): 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-chapter-6-6-3-ranger-skill-weather-prediction-intelligence-no-equipment-restriction-not-retriabl-8c702ebe]] — Chapter 6: / 6.3 Ranger Skill / [ ⑩ Weather Prediction [Intelligence] ] (No equipment restriction, not retriable): 9 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-chapter-6-644c319b]] — Chapter 6:: 185 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-chapter-6-644c319b]] — Chapter 6:: 185 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-chapter-7-22223c91]] — Chapter 7:: 145 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-chapter-7-7-1-notes-on-general-skills-297ffcb5]] — Chapter 7: / 7.1 Notes on General Skills: 23 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-chapter-7-7-1-notes-on-general-skills-the-difference-between-general-skills-and-adventurer-skill-496f4af4]] — Chapter 7: / 7.1 Notes on General Skills / The Difference Between General Skills and Adventurer Skills: 23 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -1179,7 +981,7 @@
 - [[sword-world-rpg-complete-edition-section-eagle-1d966b1a]] — [ Eagle ]: 20 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-early-bird-mind-e6745d5b]] — Early Bird (Mind): 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-effect-519bb37d]] — 《 Effect 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-effect-contraction-dc07102e]] — 《 Effect Contraction 》: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-effect-contraction-dc07102e]] — 《 Effect Contraction 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-effect-duration-b45ae269]] — 《 Effect Duration 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-effect-expansion-0161d2a5]] — 《 Effect Expansion 》: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-effect-start-time-7e27d373]] — 《 Effect Start Time 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -1300,7 +1102,7 @@
 - [[sword-world-rpg-complete-edition-section-power-link-7c7187a7]] — [ Power Link ]: 15 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-preservation-c886429a]] — [ Preservation ]: 12 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-priest-3805e046]] — 【 Priest 】: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-priest-skill-48ce4d00]] — Priest Skill: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-priest-skill-48ce4d00]] — Priest Skill: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-protective-circle-4b914687]] — [ Protective Circle ]: 16 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-puppet-golem-e67656ca]] — [ Puppet Golem ]: 27 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-rahda-7f8f3069]] — 《 Rahda 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -1371,7 +1173,7 @@
 - [[sword-world-rpg-complete-edition-section-transfer-mental-power-be565a6b]] — [ Transfer Mental Power: 14 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-treasure-appraisal-intelligence-not-retriable-fa8fe585]] — [ ⑥ Treasure Appraisal [Intelligence] ] (Not retriable): 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-troll-monster-level-6-rarity-11-agility-12-movement-speed-24-number-one-to-several-frequency-rar-abe55c64]] — [ Troll ] Monster Level=6 Rarity=11 Agility=12 Movement Speed=24 Number=One to several Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Arm:14 (7) Strike Points=13 Evasion Points=13 (6) Defense Points=11 Life Points/Resistance=21/15 (8) Mental Points/Resistance=14/14 (7) Special Abilities=Camouflage (Sense target score=13) Habitat=Caves, hills Languages=Giant Perception=Five senses (darkvision): 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-section-turn-undead-f80d5e36]] — [ Turn Undead ]: 16 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-turn-undead-f80d5e36]] — [ Turn Undead ]: 16 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-type-12bffab1]] — 《 Type 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-types-of-poison-b38e1a04]] — 《 Types of Poison 》: 19 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-section-undead-knight-580bb813]] — [ Undead Knight ]: 23 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
@@ -1409,300 +1211,10 @@
 ## Entities
 
 ## Concepts
-- [[javascriptallonge-algorithm]] — Algorithm: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-allong]] — Allong: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-argument]] — Argument: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-array]] — Array: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-behaviour]] — Behaviour: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-bind]] — Bind: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-binding]] — Binding: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-block]] — Block: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-carpenter]] — Carpenter: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-closure]] — Closure: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-code]] — Code: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-coffee]] — Coffee: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-collection]] — Collection: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-combinator]] — Combinator: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-const]] — Const: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-copy]] — Copy: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-copy-write]] — Copy on Write: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-data]] — Data: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-declaration]] — Declaration: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-destructuring]] — Destructuring: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-discussing]] — Discussing: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-doesn-t-work-because-parseint]] — Doesn'T Work Because Parseint: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-eager-collection]] — Eager Collection: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-ecmascript]] — Ecmascript: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-element]] — Element: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-environment]] — Environment: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-evaluate]] — Evaluate: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-evaluating]] — Evaluating: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-expression]] — Expression: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-expression-coffee]] — Expression Coffee: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-fat-arrow]] — Fat Arrow: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-feature]] — Feature: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-follow]] — Follow: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-function]] — Function: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-function-decorator]] — Function Decorator: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-function-keyword]] — the function keyword: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-function-return-value]] — Function Return Value: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-functional]] — Functional: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-functional-iterator]] — Functional Iterators: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-gathering]] — Gathering: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-generator]] — Generator: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-idea]] — Idea: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-identity]] — Identity: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-important]] — Important: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-instead]] — Instead: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-iterable]] — Iterable: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-iteration]] — Iteration: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-iterator]] — Iterator: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-javascript]] — Javascript: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-language]] — Language: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-lazy]] — Lazy: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-learn]] — Learn: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-length]] — Length: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-list]] — List: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-literal]] — Literal: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-mapwith]] — Mapwith: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-method]] — Method: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-mutation]] — Mutation: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-needn]] — Needn: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-note]] — Note: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-object]] — Object: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-operation]] — Operation: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-pair]] — Pair: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-parameter]] — Parameter: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-partial-application]] — partial application: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-pattern]] — Pattern: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-problem]] — Problem: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-programmer]] — Programmer: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-programming]] — Programming: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-purpose]] — Purpose: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-quasi]] — Quasi: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-quasi-literal]] — Quasi Literal: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe]] — Recipe: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-reference]] — Reference: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-rest]] — Rest: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-result]] — Result: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-return]] — Return: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-rule]] — Rule: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-scope]] — Scope: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-second]] — Second: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-seen]] — Seen: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-statement]] — Statement: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-string]] — String: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-structure]] — Structure: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-symbol]] — Symbol: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-ternary-operator]] — Ternary Operator: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-third]] — Third: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-truthiness]] — Truthiness: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-type]] — Type: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-value]] — Value: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-variable]] — Variable: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-version]] — Version: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[javascriptallonge-write]] — Write: synthesized source-backed topic page from raw/javascriptallonge.pdf.
-- [[sword-world-rpg-complete-edition-ability-bonus]] — 【 Ability Bonuses 】: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-ability-score]] — Ability Scores: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-acquiring-rune-master-skill]] — Acquiring Rune Master Skill: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-action]] — Action: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-adventure-treasure]] — Adventure Treasure: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-adventurer-cast-magic-mix]] — Adventurer Cast Magic Mix: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-adventurer-level]] — 1.3.3 Adventurer Level: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-alecrast]] — Alecrast: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-ancient-magic]] — Ancient Magic: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-armor]] — Armor: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-armor-based-skill]] — Armor Based Skill: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-attack]] — Attack: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-automatic-failure]] — Automatic Failure: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-automatic-success]] — Automatic Success: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-beast-maker-dose]] — Beast Maker Dose: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-bonus]] — Bonus: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-bonus-damage]] — 【 Bonus Damage 】: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-brownie]] — Brownie: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-calendar]] — Calendar: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-control-spirit-lesser]] — [ Control Spirit ] (Various lesser spirits): synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-critical-target-variation]] — Critical Target Variation: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-daemon]] — Daemon: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-daemon-underworld-creature]] — 《 Daemons/Underworld Creatures 》: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-damage]] — Damage: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-damage-reduction]] — 【 Damage Reduction 】: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-death-check]] — Death Check: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-difficulty]] — Difficulty: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-difficulty-check]] — Difficulty Check: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-double-ones]] — Double Ones: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-double-sixe]] — Double Sixe: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-dragon-priest-skill]] — Dragon Priest Skill: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-dream-spirit]] — Dream Spirit: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-failure]] — Failure: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-filling-character-sheet]] — 1.4.9 Filling Out the Character Sheet: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-final-damage]] — 4.5.5 Final Damage: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-fire-breath]] — [ Fire Breath ]: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-gauche]] — Gauche: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-gaze]] — Gaze: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-gems]] — Gems: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-halfelve-raised-human]] — Halfelve Raised Human: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-handed]] — Handed: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-hit-check]] — 4.5.1 Hit Checks: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-illness]] — Illness: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-jump]] — Jump: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-life]] — Life: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-listen-intelligence-equipment-restriction]] — [ ⑤ Listen [Intelligence] ] (Equipment restriction): synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-loss-ability-score]] — Loss Ability Score: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-low-ancient]] — 《 Low Ancient 》: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-magic]] — Magic: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-magic-armor]] — 《 Magic Armor (+1) 》: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-magic-sword]] — 《 Magic Sword (+1) 》: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-magical-beast]] — Magical Beast: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-magical-weapon]] — Magical Weapon: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-mithril-silver-weapon]] — Mithril Silver Weapon: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-monster]] — Monster: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-monster-action-announcement]] — Monster Action Announcement: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-monster-level]] — Monster Level: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-movement]] — Movement: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-mythical-beast]] — Mythical Beast: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-mythical-beast-and-magical]] — 《 Mythical Beasts and Magical Beasts 》: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-npc-and-monster-action-announcement]] — 3.1.3 NPC and Monster Action Announcements: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-penalty]] — Penalty: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-precious-metal]] — Precious Metal: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-preserve-sound-sylph]] — Preserve Sound Sylph: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-priest-skill]] — Priest Skill: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-projectile]] — Projectile: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-ranger-skill]] — 【 Ranger Skill 】: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-ray]] — Ray: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-ready]] — Ready: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-remove]] — Remove: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-resistance]] — Resistance: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-sage-skill]] — Sage Skill: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-search-intelligence-equipment-restriction-not-retriable]] — [ ⑨ Search [Intelligence] ] (No equipment restriction, not retriable): synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-setting-target-score]] — Setting Target Score: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-shade]] — Shade: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-shape-change]] — [ Shape Change: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-ship-steering-dexterity]] — [ ③ Ship Steering [Dexterity]]: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-shoot-arrow-sylph]] — Shoot Arrow Sylph: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-should-you-target-score-check]] — Should You Target Score Check: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-silver-weapon]] — Silver Weapon: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-sorcerer-guild-academy]] — Sorcerer Guild Academy: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-switch-weapon-hand]] — Switch Weapon Hand: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-sword-breaker]] — Sword Breaker: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-target-score]] — Target Scores: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-unconscious]] — Unconscious: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-underworld-creature]] — Underworld Creature: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-weapon]] — Weapon: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-weapon-critical]] — 《 Weapons Cannot Critical 》: synthesized source-backed topic page from raw/Sword World RPG - Complete Edition.pdf.
 
 ## Procedures
-- [[sword-world-rpg-complete-edition-procedure-attacks-from-characters-against-characters]] — Attacks From Characters Against Characters: synthesized procedure guide from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-create-character]] — Create Character: synthesized procedure guide from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-difficulty-checks]] — Difficulty Checks: synthesized procedure guide from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-excellent-weapons-and-armor]] — Excellent Weapons and Armor: synthesized procedure guide from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-procedure-unconscious-and-death-checks]] — Unconscious and Death Checks: synthesized procedure guide from raw/Sword World RPG - Complete Edition.pdf.
 
 ## Recipes
-- [[javascriptallonge-recipe-a-few-utilities]] — a few utilities: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-a-history-lesson]] — a history lesson: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-a-look-back-at-functional-iterators]] — a look back at functional iterators: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-a-return-to-backward-thinking]] — a return to backward thinking: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-after-another-drink]] — after another drink: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-applying-functions]] — applying functions: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-array-literals]] — array literals: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-back-on-the-block]] — back on the block: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-backwardness]] — backwardness: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-bonus]] — bonus: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-building-with-mutation]] — building with mutation: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-call-by-sharing]] — call by sharing: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-call-by-value]] — call by value: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-combinators]] — combinators: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-commas]] — commas: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-composition]] — composition: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-const]] — const: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-const-and-lexical-scope]] — const and lexical scope: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-converting-non-tail-calls-to-tail-calls]] — converting non-tail-calls to tail-calls: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-copy-on-read]] — copy-on-read: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-copy-on-write]] — copy-on-write: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-default-arguments]] — default arguments: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-destructuring-arrays]] — destructuring arrays: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-destructuring-is-not-pattern-matching]] — destructuring is not pattern matching: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-destructuring-objects]] — destructuring objects: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-destructuring-parameters]] — destructuring parameters: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-eager-collections]] — eager collections: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-element-references]] — element references: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-evaluation-time]] — evaluation time: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-factorials]] — factorials: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-flipping-methods]] — flipping methods: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-floating]] — floating: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-folding]] — folding: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-from]] — from: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-function-declaration-caveats-34]] — function declaration caveats 34: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-function-declarations]] — function declarations: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-function-decorators]] — function decorators: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-function-parameters-are-eager]] — function parameters are eager: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-functions-and-identities]] — functions and identities: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-functions-that-return-values-and-evaluate-expressions]] — functions that return values and evaluate expressions: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-gathering]] — gathering: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-generators-and-iterables]] — generators and iterables: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-generators-are-coroutines]] — generators are coroutines: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-higher-order-functions]] — higher-order functions: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-how-to-run-the-examples]] — How to run the examples: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-implementing-methods-with-iteration]] — implementing methods with iteration: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-inside-out]] — inside-out: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-it-s-always-the-environment]] — it's always the environment: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-iterables]] — iterables: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-iterables-out-to-infinity]] — iterables out to infinity: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-iterating]] — iterating: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-javascript-s-generators]] — javascript's generators: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-lazy-collection-operations]] — lazy collection operations: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-left-variadic-destructuring]] — left-variadic destructuring: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-linear-recursion]] — linear recursion: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-lists-with-functions-as-data]] — lists with functions as data: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-literal-object-syntax]] — literal object syntax: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-magic-names-and-fat-arrows]] — magic names and fat arrows: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-mapping]] — mapping: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-mapwith]] — mapWith: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-maybe]] — Maybe: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-more-generators]] — more generators: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-mutation-and-data-structures]] — mutation and data structures: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-nested-blocks]] — nested blocks: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-object-assign]] — Object.assign: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-once]] — Once: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-operations-on-numbers]] — operations on numbers: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-operations-on-ordered-collections]] — operations on ordered collections: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-ordered-collections]] — ordered collections: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-overcoming-limitations]] — overcoming limitations: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-partial-application]] — partial application: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-partial-application-583028a8]] — Partial Application: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-quasi-literals]] — quasi-literals: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-rebinding]] — rebinding: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-recursive-iterators]] — recursive iterators: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-reference-types]] — reference types: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-representing-naughts-and-crosses-as-a-stateful-function]] — representing naughts and crosses as a stateful function: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-revisiting-linked-lists]] — revisiting linked lists: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-rewriting-iterable-operations]] — rewriting iterable operations: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-say-please]] — say 'please': synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-self-currying-flip]] — self-currying flip: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-shadowy-variables-from-a-shadowy-planet]] — shadowy variables from a shadowy planet: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-some-history]] — some history: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-state-machines]] — state machines: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-tail-call-optimization]] — tail-call optimization: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-tap]] — Tap: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-the-carpenter-s-solution]] — the carpenter's solution: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-the-function-keyword]] — the function keyword: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-the-function-keyword-5d8f2243]] — the function keyword: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-the-kestrel-and-the-idiot]] — the kestrel and the idiot: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-the-problem]] — the problem: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-the-vireo]] — the vireo: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-this-seems-familiar]] — this seems familiar: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-tortoises-hares-and-teleporting-turtles]] — Tortoises, Hares, and Teleporting Turtles: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-truthiness-and-operators]] — truthiness and operators: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-truthiness-and-the-ternary-operator]] — truthiness and the ternary operator: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-unary]] — Unary: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-undefined]] — undefined: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-unfolding-and-laziness]] — unfolding and laziness: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-values-are-expressions]] — values are expressions: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-var]] — var: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-variables-and-bindings]] — variables and bindings: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-why-const-and-let-were-invented]] — why const and let were invented: synthesized recipe pattern from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recipe-yielding-iterables]] — yielding iterables: synthesized recipe pattern from raw/javascriptallonge.pdf.
 
 ## Syntheses
 - [[cross-source-synthesis]] — Cross-source synthesis index: 0 shared topics.

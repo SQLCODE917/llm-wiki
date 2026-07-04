@@ -24,7 +24,7 @@ SYNTHESIZED_PAGE_FAMILIES = frozenset(
 
 
 @dataclass(frozen=True)
-class DraftEvidenceRef:
+class EvidenceSupportRef:
     support_kind: str
     support_id: str
 
@@ -34,30 +34,69 @@ class DraftEvidenceRef:
 
 
 @dataclass(frozen=True)
-class DraftEvidenceCard:
-    evidence_ref: DraftEvidenceRef
+class PageEvidenceItem:
+    support_ref: EvidenceSupportRef
+    evidence_kind: str
     source_locator: str
-    source_range_id: str
-    summary: str
-    exact_text: str = ""
+    source_range_ids: tuple[str, ...]
+    evidence_text: str
     section_label: str = ""
     citation: str = ""
+    ledger_entry_ids: tuple[str, ...] = ()
+    technical_atom_id: str = ""
+    evidence_block_id: str = ""
+
+    @property
+    def source_range_id(self) -> str:
+        return self.source_range_ids[0] if self.source_range_ids else ""
+
+
+@dataclass(frozen=True)
+class NavigationSummary:
+    target_page_id: str
+    summary_text: str
+    summary_kind: str
+    page_body_hash: str = ""
+
+
+@dataclass(frozen=True)
+class PromptContextDigest:
+    digest_text: str
+    support_refs: tuple[EvidenceSupportRef, ...]
+    renderable: bool = False
+
+
+@dataclass(frozen=True)
+class PageEvidenceSet:
+    page_id: str
+    items: tuple[PageEvidenceItem, ...]
+    navigation_summaries: tuple[NavigationSummary, ...] = ()
+    prompt_context_digests: tuple[PromptContextDigest, ...] = ()
+
+    @property
+    def selected_support_codes(self) -> frozenset[str]:
+        return frozenset(item.support_ref.code for item in self.items)
+
+    @property
+    def support_text_by_code(self) -> dict[str, str]:
+        return {item.support_ref.code: item.evidence_text for item in self.items}
 
 
 @dataclass(frozen=True)
 class PageOutlineSection:
     heading: str
     purpose: str
-    support_refs: tuple[DraftEvidenceRef, ...]
+    support_refs: tuple[EvidenceSupportRef, ...]
     block_kind: str = "bullet-list"
 
 
 @dataclass(frozen=True)
-class PageSynthesisRelatedLink:
+class RelatedLinkPreview:
     page_id: str
     label: str
     relation: str
-    support_refs: tuple[DraftEvidenceRef, ...] = ()
+    preview_text: str = ""
+    support_refs: tuple[EvidenceSupportRef, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -70,19 +109,19 @@ class PageSynthesisPlan:
     source_locator: str
     source_section_page_ids: tuple[str, ...]
     outline: tuple[PageOutlineSection, ...]
-    selected_evidence: tuple[DraftEvidenceCard, ...]
-    related_links: tuple[PageSynthesisRelatedLink, ...] = ()
+    evidence_set: PageEvidenceSet
+    related_links: tuple[RelatedLinkPreview, ...] = ()
 
     @property
     def selected_support_codes(self) -> frozenset[str]:
-        return frozenset(card.evidence_ref.code for card in self.selected_evidence)
+        return self.evidence_set.selected_support_codes
 
 
 @dataclass(frozen=True)
 class DraftClaim:
     claim_id: str
     sentence: str
-    support_refs: tuple[DraftEvidenceRef, ...]
+    support_refs: tuple[EvidenceSupportRef, ...]
 
 
 @dataclass(frozen=True)
@@ -140,13 +179,17 @@ class PageSynthesisOutput:
     findings: tuple[PageSynthesisFinding, ...]
 
 
-def ledger_ref(ledger_entry_id: str) -> DraftEvidenceRef:
-    return DraftEvidenceRef("ledger", ledger_entry_id)
+def ledger_ref(ledger_entry_id: str) -> EvidenceSupportRef:
+    return EvidenceSupportRef("ledger", ledger_entry_id)
 
 
-def atom_ref(technical_atom_id: str) -> DraftEvidenceRef:
-    return DraftEvidenceRef("atom", technical_atom_id)
+def atom_ref(technical_atom_id: str) -> EvidenceSupportRef:
+    return EvidenceSupportRef("atom", technical_atom_id)
 
 
-def anchor_ref(stable_atom_anchor: str) -> DraftEvidenceRef:
-    return DraftEvidenceRef("anchor", stable_atom_anchor)
+def anchor_ref(stable_atom_anchor: str) -> EvidenceSupportRef:
+    return EvidenceSupportRef("anchor", stable_atom_anchor)
+
+
+def evidence_block_ref(evidence_block_id: str) -> EvidenceSupportRef:
+    return EvidenceSupportRef("evidence-block", evidence_block_id)

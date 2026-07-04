@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-82cdd945
 page_kind: source
 page_family: section-reference
-summary: Chapter 6: / 6.1 Precautions When Using Skills: 116 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 6: / 6.1 Precautions When Using Skills: 116 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-82cdd945@348b7a6a0ac4bcd632dbe785001e4fe5
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-6-1-precautions-when-using-skills-82cdd945@5fd093b161992e0e6b28620377df97a5
 ---
 
 # Chapter 6: / 6.1 Precautions When Using Skills
@@ -123,31 +123,3 @@ From [[sword-world-rpg-complete-edition]].
 - Unless the game master has specifically set traps that are easy to find but difficult to remove , or conversely, difficult to find but easy to remove , the difficulty of finding and removing should be the same. If you fail, the trap will be activated if the dice roll was 6 or more beneath the target score. The effect of an activated trap depends on the type of trap. Traps that you fail to find cannot be removed. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04984))_
 - For set , you can set traps up to a difficulty equal to your thief skill level without failing (you cannot set traps of a higher level). If a third party attempts to sense , find , or remove a trap set by a player, the game master must attempt a success roll on their behalf. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04985))_
 - Unless the game master has specifically set traps that are easy to find but difficult to remove , or conversely, difficult to find but easy to remove , the difficulty of finding and removing should be the same. _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04984))_
-
-## Technical atoms
-
-### Technical atom 1
-
-<a id="atom-technical-atom-28dbf995af07acde"></a>
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04906))_
-
-```text
-Precautions When Using Skills
-6.1 Precautions When Using Skills
-The  abilities  associated  with  these skills, including the thief skill , are mostly determined by success rolls.
-If the rules for determining the target score  or  difficulty  are  clearly  indicated, the  game  master  should  follow  those rules,  otherwise  the  game  master  must follow the rules under 9.1: Setting Target
-6.2
-6.2 Thief Skill
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| entry | content |
-| --- | --- |
-| 6 | 1 Precautions When Using Skills The abilities associated with these skills, including the thief skill, are mostly determined by success rolls. If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target |
-| 6 | 2 |
-| 6 | 2 Thief Skill |
-
-</details>

@@ -2,13 +2,13 @@
 page_id: sword-world-rpg-complete-edition-section-chapter-6-644c319b
 page_kind: source
 page_family: section-reference
-summary: Chapter 6:: 185 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Chapter 6:: 185 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-644c319b@f21b1f05a44fdb72bea3298a999cb4cc
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-644c319b@9d03729428122213669a60d7e85ba328
 ---
 
 # Chapter 6:
@@ -202,29 +202,3 @@ From [[sword-world-rpg-complete-edition]].
 <a id="atom-technical-atom-fb99e8551e04e335"></a>
 
 > If one adventurer has acquired both the thief skill and the fighter skill, the player must choose which skill to fight with.
-
-### Technical atom 2
-
-<a id="atom-technical-atom-28dbf995af07acde"></a>
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-0b9dec90-04906))_
-
-```text
-Precautions When Using Skills
-6.1 Precautions When Using Skills
-The  abilities  associated  with  these skills, including the thief skill , are mostly determined by success rolls.
-If the rules for determining the target score  or  difficulty  are  clearly  indicated, the  game  master  should  follow  those rules,  otherwise  the  game  master  must follow the rules under 9.1: Setting Target
-6.2
-6.2 Thief Skill
-```
-
-<details>
-<summary>Parsed table preview (needs review)</summary>
-
-| entry | content |
-| --- | --- |
-| 6 | 1 Precautions When Using Skills The abilities associated with these skills, including the thief skill, are mostly determined by success rolls. If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target |
-| 6 | 2 |
-| 6 | 2 Thief Skill |
-
-</details>

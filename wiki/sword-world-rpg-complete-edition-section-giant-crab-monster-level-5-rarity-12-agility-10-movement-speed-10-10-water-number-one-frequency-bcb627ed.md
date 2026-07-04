@@ -4,7 +4,7 @@ page_kind: source
 page_family: section-reference
 summary: [ Giant Crab ] Monster Level=5 Rarity=12 Agility=10 Movement Speed=10/10 (water) Number=One Frequency=Rare Intellect=Almost none Reaction=Hunger-based Attack Points=Large pincer:13 (6)/Pincer:13 (6) Strike Points=13/12 Evasion Points=11 (4) Defense Points=10 Life Points/Resistance=20/14 (7) Mental Points/Resistance=7/12 (5) Special Abilities=Right pincer strangling Water Adaptation Habitat=Warm coastal areas Languages=None: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf

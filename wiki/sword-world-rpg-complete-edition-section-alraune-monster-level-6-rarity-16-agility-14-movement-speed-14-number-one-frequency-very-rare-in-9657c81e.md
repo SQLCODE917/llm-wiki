@@ -4,7 +4,7 @@ page_kind: source
 page_family: section-reference
 summary: [ Alraune ] Monster Level=6 Rarity=16 Agility=14 Movement Speed=14 Number=One Frequency=Very Rare Intellect=Human Reaction=Neutral Attack Points=Barehanded:13 (6) Strike Points=8 Evasion Points=14 (7) Defense Points=8 Life Points/Resistance=14/14 (7) Mental Points/Resistance=18/15 (8) magic (Magic Intensity/Magic Power=13/6, gnome,: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-02
+updated: 2026-07-03
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf

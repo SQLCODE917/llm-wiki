@@ -343,7 +343,14 @@ def _has_digit(words: tuple[str, ...]) -> bool:
 
 
 def _ascii_digits(word: str) -> bool:
-    return bool(word) and all(_ascii_digit(character) for character in word)
+    if not word:
+        return False
+    character_index = 0
+    while character_index < len(word):
+        if not _ascii_digit(word[character_index]):
+            return False
+        character_index += 1
+    return True
 
 
 def _ascii_digit(character: str) -> bool:

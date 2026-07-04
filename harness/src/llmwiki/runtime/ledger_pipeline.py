@@ -18,6 +18,7 @@ from llmwiki.domain.ledger.artifacts import (
 from llmwiki.domain.ledger.builder import build_claim_ledger, default_schema_bundle
 from llmwiki.domain.ledger.canonical import deterministic_id
 from llmwiki.domain.ledger.knowledge_shapes import build_knowledge_shape_catalog
+from llmwiki.domain.ledger.page_synthesis_drafting import PageDraftProducer
 from llmwiki.domain.ledger.pointers import (
     claim_ledger_pointer,
     document_structure_pointer,
@@ -70,6 +71,7 @@ def build_source_ledger(
     source_claims: tuple[SourceClaim, ...] = (),
     today: str,
     schema: Schema | None = None,
+    draft_producer: PageDraftProducer | None = None,
 ) -> SourceLedgerResult:
     resolved_schema = schema or Schema()
     bundle = default_schema_bundle()
@@ -233,6 +235,7 @@ def build_source_ledger(
             rendered=rendered,
             support=support,
             projection_report_artifact=projection_report_artifact,
+            draft_producer=draft_producer,
         )
         wiki_page = linked_projection.source_page
         topic_pages = linked_projection.linked_pages

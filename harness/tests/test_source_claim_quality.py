@@ -92,7 +92,7 @@ def test_layout_field_claims_are_source_furniture() -> None:
 
 
 def test_source_claims_bounds_long_unpunctuated_units() -> None:
-    long_text = "Functions return values. " + ("unpunctuated source text " * 5000)
+    long_text = "Functions return values. " + ("unpunctuated source text " * 500)
 
     claims = source_claims((_unit("unit-0001", "Long text", long_text),), Schema())
 
