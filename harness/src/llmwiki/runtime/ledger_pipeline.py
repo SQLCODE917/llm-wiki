@@ -1,4 +1,9 @@
-"""Claim-ledger ingest pipeline adapter/orchestrator."""
+"""Superseded claim-ledger ingest pipeline adapter/orchestrator.
+
+Do not call this from production ingest. `IngestCompiler` is the source-ingest
+authority now. This module is retained only for validation comparisons and is
+scheduled for removal after the compiler/evidence-pack paradigm is validated.
+"""
 
 from __future__ import annotations
 
@@ -89,6 +94,12 @@ def build_source_ledger(
     evidence_record_set: EvidenceRecordSet | None = None,
     source_profile_kind: str = "general-prose",
 ) -> SourceLedgerResult:
+    """Superseded PagePlan/claim-ledger ingest path.
+
+    Do not call this from production ingest. It is retained only for validation
+    comparisons while `IngestCompiler` proves the evidence-pack pipeline, and is
+    scheduled for removal after that validation.
+    """
     resolved_schema = schema or Schema()
     bundle = default_schema_bundle()
     inputs, profiles = source_ledger_segments(

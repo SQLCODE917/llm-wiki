@@ -1,4 +1,10 @@
-"""Serialize claim-ledger ingest artifacts and their portable manifest."""
+"""Serialize superseded claim-ledger ingest artifacts.
+
+Do not use this bundle from production ingest. `IngestCompiler` writes the
+current source-scoped artifact set. This module is retained only for validation
+comparisons and is scheduled for removal after compiler/evidence-pack
+validation.
+"""
 
 from __future__ import annotations
 

@@ -381,6 +381,12 @@ class Session:
         reintegrate: bool = False,
         ingest_run: IngestRun | None = None,
     ) -> OperationResult:
+        """Superseded PagePlan/claim-ledger ingest path.
+
+        Do not call this from production ingest. It is retained only for
+        validation comparisons while `IngestCompiler` proves the evidence-pack
+        pipeline, and is scheduled for removal after that validation.
+        """
         if ingest_run is None:
             ingest_run = self._ingest_run(source_locator)
         source_locator = _single_source_locator(ingest_run)
@@ -444,6 +450,12 @@ class Session:
         source_profile_artifact: SourceProfileArtifact | None = None,
         evidence_record_set: EvidenceRecordSet | None = None,
     ) -> OperationResult:
+        """Superseded PagePlan/claim-ledger ingest path.
+
+        Do not call this from production ingest. It is retained only for
+        validation comparisons while `IngestCompiler` proves the evidence-pack
+        pipeline, and is scheduled for removal after that validation.
+        """
         registry = build_evidence_registry(page_plan, (source_text,))
         registry_hash = short_digest(registry_to_json(registry), 32)
         article_writer = None
@@ -557,6 +569,12 @@ class Session:
         reuse_persisted: bool = True,
         typed_evidence_record_set: EvidenceRecordSet | None = None,
     ) -> PagePlan:
+        """Superseded PagePlan/claim-ledger ingest path.
+
+        Do not call this from production ingest. It is retained only for
+        validation comparisons while `IngestCompiler` proves the evidence-pack
+        pipeline, and is scheduled for removal after that validation.
+        """
         raw_source = _single_raw_source(ingest_run)
         source_map = read_source_map(result.cache_dir)
         if source_map is None:
@@ -688,6 +706,12 @@ class Session:
         *,
         expected_source_claims: tuple[SourceClaim, ...] | None = None,
     ) -> PagePlan | None:
+        """Superseded PagePlan/claim-ledger ingest path.
+
+        Do not call this from production ingest. It is retained only for
+        validation comparisons while `IngestCompiler` proves the evidence-pack
+        pipeline, and is scheduled for removal after that validation.
+        """
         cached = self.store.read_page_plan_artifact(source_locator)
         if cached is None:
             return None
@@ -716,6 +740,12 @@ class Session:
         reuse_technical_catalog: bool = False,
         skip_existing_artifacts: bool = False,
     ) -> str:
+        """Superseded PagePlan/claim-ledger ingest path.
+
+        Do not call this from production ingest. It is retained only for
+        validation comparisons while `IngestCompiler` proves the evidence-pack
+        pipeline, and is scheduled for removal after that validation.
+        """
         report = observation_report(page_plan)
         has_page_plan_artifact = self.store.read_page_plan_artifact(source_locator) is not None
         if skip_existing_artifacts and has_page_plan_artifact:

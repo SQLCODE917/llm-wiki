@@ -27,6 +27,7 @@ from llmwiki.domain.ledger.human_article import (
 )
 from llmwiki.domain.pages import PageMetadata, WikiPage
 from llmwiki.runtime.ingest_compiler import IngestCompiler
+from llmwiki.runtime.ledger_pipeline import build_source_ledger
 from llmwiki.runtime.session import Session
 from llmwiki.store import WikiStore
 
@@ -216,6 +217,24 @@ def test_session_ingest_method_is_compiler_only() -> None:
     assert "_finish_ledger_ingest" not in source
     assert "_persist_page_plan" not in source
     assert "_pdf_page_plan" not in source
+
+
+def test_superseded_ledger_page_plan_surfaces_are_marked_for_removal() -> None:
+    marker = "Superseded PagePlan/claim-ledger ingest path"
+    surfaces = (
+        Session._ingest_pdf,
+        Session._finish_ledger_ingest,
+        Session._pdf_page_plan,
+        Session._cached_pdf_page_plan,
+        Session._persist_page_plan,
+        build_source_ledger,
+    )
+
+    for surface in surfaces:
+        doc = inspect.getdoc(surface) or ""
+        assert marker in doc
+        assert "Do not call this from production ingest" in doc
+        assert "scheduled for removal" in doc
 
 
 def test_cli_ingest_removed_old_flow_flags() -> None:

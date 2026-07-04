@@ -77,6 +77,10 @@ The index and log formats below are also enforced in harness code
   publication, index entries, and log entries. The model may write structured
   `HumanArticle` content from one `EvidencePack`; it does not choose final page
   IDs, write final markdown, author frontmatter, or bypass article lint.
+- Superseded PagePlan/claim-ledger ingest surfaces are retained only for
+  validation comparisons. They are not ordinary ingest, must not be reactivated
+  through `Session.ingest`, and are scheduled for removal after the
+  compiler/evidence-pack paradigm is validated.
 - Model-authored `write_page` remains for query filing, maintenance, chat
   filing, and curator-directed synthesis. It is not the ordinary source ingest
   mechanism.
