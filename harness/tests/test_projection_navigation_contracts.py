@@ -11,6 +11,7 @@ from llmwiki.domain.ledger.ledger import (
     SourceFamilyAssignment,
     SourceProfile,
 )
+from llmwiki.domain.ledger.page_publication import PublicationWalkabilityReport
 from llmwiki.domain.ledger.related_link_policy import budget_related_links, group_related_links
 from llmwiki.domain.ledger.source_manifest_navigation import (
     build_source_navigation_plan,
@@ -49,6 +50,36 @@ def test_source_manifest_is_navigation_first_without_source_transcript() -> None
     assert "[[x-procedure-build-vel]]" in body
     assert "```" not in body
     assert "| --- |" not in body
+
+
+def test_source_manifest_reports_publication_budget_without_rejected_links() -> None:
+    structure = _structure(
+        StructureNode("chapter", "chapter", "1. Vel", "r1", "x.pdf", 1)
+    )
+    accepted = (_page("x-vel", "concept", "topic-concept"),)
+
+    plan = build_source_navigation_plan(
+        source_page_id="x",
+        title="X",
+        source_locator="x.pdf",
+        ledger_summary="Claim-ledger projection.",
+        linked_pages=accepted,
+        structure=structure,
+        publication_report=PublicationWalkabilityReport(
+            source_id="x",
+            source_profile_kind="rpg-rules",
+            accepted_count=1,
+            rejected_count=4,
+            family_counts=(("topic-concept", 1),),
+            budget_rejection_count=2,
+        ),
+    )
+    body = render_source_manifest(plan)
+
+    assert "## Publication Budget" in body
+    assert "Rejected candidates: 4" in body
+    assert "[[x-vel]]" in body
+    assert "x-rejected" not in body
 
 
 def test_collection_plans_use_repeated_peer_shape_not_domain_nouns() -> None:

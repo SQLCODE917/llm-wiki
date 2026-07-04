@@ -222,11 +222,14 @@ async def test_pdf_ingest_writes_ledger_projection(store: WikiStore, paths: Wiki
     assert "projection_coverage:" in book
     assert "page_family: source-manifest" in book
     assert "## Page Families" in book
+    assert "## Publication Budget" in book
     ledger_dir = store.page_plan_artifact_dir("book.pdf") / "ledger"
     assert (ledger_dir / "claim-ledger.json").is_file()
     assert (ledger_dir / "projection-coverage.json").is_file()
     assert (ledger_dir / "section-plan.json").is_file()
     assert (ledger_dir / "topics.json").is_file()
+    assert (ledger_dir / "page-publication-plan.json").is_file()
+    assert (ledger_dir / "publication-walkability-report.md").is_file()
     source_profile = store.read_source_profile_artifact("book.pdf")
     extraction_plan = store.read_evidence_extraction_plan_artifact("book.pdf")
     evidence_record_set = store.read_evidence_record_set_artifact("book.pdf")
@@ -243,6 +246,7 @@ async def test_pdf_ingest_writes_ledger_projection(store: WikiStore, paths: Wiki
     assert all(record.source_anchors for record in evidence_record_set.records)
     assert "Source profile:" in result.output
     assert "Typed evidence records:" in result.output
+    assert "Publication budget:" in result.output
     saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
     assert saved.integrated
     assert not saved.all_done

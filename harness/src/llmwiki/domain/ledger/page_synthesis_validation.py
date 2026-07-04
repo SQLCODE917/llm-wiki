@@ -16,10 +16,10 @@ from llmwiki.domain.ledger.page_synthesis_text_validation import (
     clipped_fragment_findings,
     navigation_text_findings,
 )
+from llmwiki.domain.ledger.page_title_lint import is_weak_topic_identity
 
 _COPIED_NGRAM_SIZE = 8
 _MAX_COPIED_NGRAM_RATIO = 0.50
-_MALFORMED_TOPIC_LABELS = frozenset({"alway", "bonuse"})
 _PLACEHOLDER_PATTERNS = (
     re.compile(r"\.\.\.(?![A-Za-z_$])"),
     re.compile(r"\[[^\]]*(?:todo|tbd|placeholder|truncated)[^\]]*]", re.IGNORECASE),
@@ -53,13 +53,6 @@ def _empty_draft_findings(
     if not draft.blocks or not draft.claims:
         findings.append(_finding(plan, "empty-draft", "draft has no factual prose claims"))
     return tuple(findings)
-
-
-def is_weak_topic_identity(label: str) -> bool:
-    tokens = tuple(part for token in words(label) for part in token.split("-") if part)
-    if not tokens:
-        return True
-    return any(token in _MALFORMED_TOPIC_LABELS for token in tokens)
 
 
 def _identity_findings(

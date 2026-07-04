@@ -19,6 +19,16 @@ from llmwiki.domain.ledger.canonical import short_digest
 from llmwiki.domain.ledger.coverage import ProjectionCoverage, RenderedPage
 from llmwiki.domain.ledger.knowledge_shapes import KnowledgeShapeCatalog
 from llmwiki.domain.ledger.ledger import ClaimLedger
+from llmwiki.domain.ledger.page_publication import (
+    PagePublicationPlan,
+    PublicationWalkabilityReport,
+    conservative_publication_budget,
+)
+from llmwiki.domain.ledger.page_publication_planning import (
+    attach_typed_evidence_support,
+    plan_publication,
+    publication_walkability_report,
+)
 from llmwiki.domain.ledger.page_synthesis_drafting import PageDraftProducer
 from llmwiki.domain.ledger.pointers import ledger_quality_report_pointer
 from llmwiki.domain.ledger.projection import ProjectionSourceSupport
@@ -34,10 +44,12 @@ from llmwiki.domain.ledger.source_manifest_navigation import (
 from llmwiki.domain.ledger.structure import DocumentStructure
 from llmwiki.domain.ledger.topic_models import SourceTopic
 from llmwiki.domain.pages import WikiPage
+from llmwiki.domain.typed_evidence import EvidenceRecordSet
 from llmwiki.runtime.ledger_pages import (
     build_source_wiki_page,
     ledger_summary,
 )
+from llmwiki.runtime.ledger_publication_candidates import build_publication_candidate_inputs
 from llmwiki.runtime.ledger_synthesis_pages import build_synthesized_linked_pages
 
 
@@ -49,6 +61,8 @@ class LinkedPageProjection:
     page_synthesis_plan_artifact: PageSynthesisPlanArtifact
     page_draft_artifact: PageDraftArtifact
     page_synthesis_findings_artifact: PageSynthesisFindingsArtifact
+    page_publication_plan: PagePublicationPlan
+    publication_walkability_report: PublicationWalkabilityReport
 
 
 def build_linked_page_projection(
@@ -68,8 +82,33 @@ def build_linked_page_projection(
     support: ProjectionSourceSupport,
     projection_report_artifact: LedgerQualityReportArtifact,
     draft_producer: PageDraftProducer | None = None,
+    evidence_record_set: EvidenceRecordSet | None = None,
+    source_profile_kind: str = "general-prose",
 ) -> LinkedPageProjection:
     related = section_links_by_topic(section_plan, structure, source_page_id=page_id)
+    publication_inputs = build_publication_candidate_inputs(
+        ledger=ledger,
+        structure=structure,
+        section_plan=section_plan,
+        shape_catalog=shape_catalog,
+        projection_context=projection_context,
+        topics=topics,
+        source_page_id=page_id,
+        source_profile_kind=source_profile_kind,
+    )
+    supported_candidates = attach_typed_evidence_support(
+        publication_inputs.candidates, evidence_record_set
+    )
+    budget = conservative_publication_budget(source_profile_kind)
+    publication_plan = plan_publication(
+        source_id=page_id,
+        source_hash=ledger.source_hash,
+        source_profile_kind=budget.source_profile_kind,
+        budget=budget,
+        candidates=supported_candidates,
+    )
+    publication_report = publication_walkability_report(publication_plan)
+    accepted_page_ids = frozenset(publication_plan.accepted_page_ids)
     section_pages = build_section_pages(
         ledger,
         structure,
@@ -78,6 +117,7 @@ def build_linked_page_projection(
         today=today,
         topics=topics,
         projection_context=projection_context,
+        accepted_page_ids=accepted_page_ids,
     )
     synthesized = build_synthesized_linked_pages(
         ledger=ledger,
@@ -90,6 +130,10 @@ def build_linked_page_projection(
         today=today,
         related_pages_by_topic=related,
         draft_producer=draft_producer,
+        accepted_page_ids=accepted_page_ids,
+        procedure_guides=publication_inputs.procedure_guides,
+        collection_plans=publication_inputs.collection_plans,
+        recipe_patterns=publication_inputs.recipe_patterns,
     )
     linked_pages = (*synthesized.pages, *section_pages)
     page_synthesis_plan_artifact = build_page_synthesis_plan_artifact(
@@ -112,6 +156,7 @@ def build_linked_page_projection(
         linked_pages=linked_pages,
         structure=structure,
         collection_plans=synthesized.collection_plans,
+        publication_report=publication_report,
     )
     source_body = render_source_manifest(navigation)
     review = source_review_section(rendered.page_body)
@@ -143,4 +188,6 @@ def build_linked_page_projection(
         page_synthesis_plan_artifact,
         page_draft_artifact,
         page_synthesis_findings_artifact,
+        publication_plan,
+        publication_report,
     )

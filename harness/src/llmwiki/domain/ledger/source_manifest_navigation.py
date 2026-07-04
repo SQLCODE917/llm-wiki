@@ -6,6 +6,7 @@ from dataclasses import dataclass
 
 from llmwiki.domain.ledger.canonical import short_digest
 from llmwiki.domain.ledger.collection_pages import CollectionPlan
+from llmwiki.domain.ledger.page_publication import PublicationWalkabilityReport
 from llmwiki.domain.ledger.projection_policy import (
     PAGE_FAMILY_COLLECTION_PAGE,
     PAGE_FAMILY_PROCEDURE_GUIDE,
@@ -45,6 +46,7 @@ class SourceNavigationPlan:
     collections: tuple[SourceEntryPoint, ...]
     concepts: tuple[SourceEntryPoint, ...]
     sections: tuple[SourceEntryPoint, ...]
+    publication_report: PublicationWalkabilityReport | None = None
 
 
 def build_source_navigation_plan(
@@ -56,6 +58,7 @@ def build_source_navigation_plan(
     linked_pages: tuple[WikiPage, ...],
     structure: DocumentStructure,
     collection_plans: tuple[CollectionPlan, ...] = (),
+    publication_report: PublicationWalkabilityReport | None = None,
 ) -> SourceNavigationPlan:
     pages = tuple(sorted(linked_pages, key=lambda page: page.page_id))
     page_by_id = {page.page_id: page for page in pages}
@@ -80,6 +83,7 @@ def build_source_navigation_plan(
         collections=collections,
         concepts=concepts,
         sections=sections,
+        publication_report=publication_report,
     )
 
 
@@ -97,6 +101,7 @@ def render_source_manifest(plan: SourceNavigationPlan) -> str:
     ]
     for summary in plan.page_family_summaries:
         lines.append(f"- {summary.page_family}: {summary.count} page(s) - {summary.purpose}")
+    _append_publication_budget(lines, plan.publication_report)
     _append_group(lines, "Procedure Guides", plan.procedures)
     _append_group(lines, "Collections", plan.collections)
     _append_group(lines, "Concept Entry Points", plan.concepts)
@@ -174,6 +179,20 @@ def _append_group(lines: list[str], heading: str, entries: tuple[SourceEntryPoin
     lines.extend(("", f"## {heading}", ""))
     for entry in entries:
         lines.append(f"- [[{entry.page_id}]] - {entry.relation_kind}: {entry.summary}")
+
+
+def _append_publication_budget(
+    lines: list[str], report: PublicationWalkabilityReport | None
+) -> None:
+    if report is None:
+        return
+    lines.extend(("", "## Publication Budget", ""))
+    lines.append(f"- Accepted candidates: {report.accepted_count}")
+    lines.append(f"- Rejected candidates: {report.rejected_count}")
+    lines.append(f"- Budget rejections: {report.budget_rejection_count}")
+    if report.family_counts:
+        families = ", ".join(f"{family}={count}" for family, count in report.family_counts)
+        lines.append(f"- Accepted family counts: {families}")
 
 
 def _is_procedure(page: WikiPage) -> bool:

@@ -64,6 +64,7 @@ def build_section_pages(
     today: str,
     topics: tuple[SourceTopic, ...] = (),
     projection_context: ProjectionContext | None = None,
+    accepted_page_ids: frozenset[str] | None = None,
 ) -> tuple[WikiPage, ...]:
     projections = _section_projections(ledger, structure, source_page_id)
     by_node = {projection.node.structure_node_id: projection.page_ref for projection in projections}
@@ -73,6 +74,8 @@ def build_section_pages(
     }
     pages: list[WikiPage] = []
     for projection in projections:
+        if accepted_page_ids is not None and projection.page_id not in accepted_page_ids:
+            continue
         related = related_section_links(
             projection.page_ref, structure, by_node, same_topic, topic_page_ids
         )

@@ -5,6 +5,10 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from llmwiki.domain.ledger.artifacts import BlockedWriteDiagnosticArtifact, PortableArtifactSet
+from llmwiki.domain.ledger.page_publication import (
+    PagePublicationPlan,
+    PublicationWalkabilityReport,
+)
 from llmwiki.domain.ledger.quality import LedgerQualityReport
 from llmwiki.domain.ledger.staged_contracts import (
     LedgerExtractionResult,
@@ -33,3 +37,5 @@ class SourceLedgerResult:
     lint_run: ProjectionLintRun
     publish_run: PublishRun
     summary: str
+    page_publication_plan: PagePublicationPlan | None = None
+    publication_walkability_report: PublicationWalkabilityReport | None = None

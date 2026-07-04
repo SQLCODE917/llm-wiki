@@ -126,6 +126,7 @@ from llmwiki.pdf.pipeline import (
 )
 from llmwiki.runtime.cross_source_pipeline import build_cross_source_pages
 from llmwiki.runtime.ledger_pipeline import build_source_ledger
+from llmwiki.runtime.ledger_result import SourceLedgerResult
 from llmwiki.runtime.ledger_segmentation import ChunkText
 from llmwiki.runtime.page_synthesis_forge import ForgePageDraftProducer
 from llmwiki.runtime.pdf_source_units import (
@@ -409,6 +410,11 @@ class Session:
                 context_manager=self.context_manager,
                 schema_text=self.store.read_schema(),
             )
+        source_profile_kind = (
+            source_profile_artifact.source_profile.profile_id
+            if source_profile_artifact is not None
+            else "general-prose"
+        )
         ledger = build_source_ledger(
             source_locator=source_locator,
             source_hash=source_text.source_hash,
@@ -419,6 +425,8 @@ class Session:
             today=self.today,
             schema=ingest_run.schema,
             draft_producer=draft_producer,
+            evidence_record_set=evidence_record_set,
+            source_profile_kind=source_profile_kind,
         )
         self.store.write_ledger_artifacts(source_locator, ledger.artifact_files)
         written = "none (authoritative write blocked; see blocked-write-diagnostic.json)"
@@ -437,11 +445,13 @@ class Session:
             self.on_chunk_note(ledger.summary)
         source_profile_line = _source_profile_report_line(source_profile_artifact)
         typed_evidence_line = _typed_evidence_report_line(evidence_record_set)
+        publication_line = _publication_budget_report_line(ledger)
         report = (
             f"Claim-ledger ingest of raw/{source_locator} ({len(chunks)} source unit(s)).\n"
             f"{ledger.summary}\n"
             f"{source_profile_line}"
             f"{typed_evidence_line}"
+            f"{publication_line}"
             f"Source page: {written}; linked pages: {len(ledger.topic_pages)}. "
             f"Ledger artifacts: {self.store.page_plan_artifact_dir(source_locator)}/ledger."
         )
@@ -1307,6 +1317,17 @@ def _typed_evidence_report_line(record_set: EvidenceRecordSet | None) -> str:
     if record_set is None:
         return ""
     return f"{record_set.render_status_counts()}\n"
+
+
+def _publication_budget_report_line(ledger: SourceLedgerResult) -> str:
+    plan = ledger.page_publication_plan
+    if plan is None:
+        return ""
+    return (
+        "Publication budget: "
+        f"{len(plan.accepted_candidates)} accepted, "
+        f"{len(plan.rejected_candidates)} rejected candidate(s).\n"
+    )
 
 
 def _chunks_from_page_plan(page_plan: PagePlan) -> tuple[ChunkText, ...]:

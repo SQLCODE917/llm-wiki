@@ -26,10 +26,10 @@ from llmwiki.domain.ledger.page_synthesis_planning import (
 )
 from llmwiki.domain.ledger.page_synthesis_rendering import render_page_draft
 from llmwiki.domain.ledger.page_synthesis_validation import validate_page_draft
-from llmwiki.domain.ledger.procedures import plan_procedure_guides
+from llmwiki.domain.ledger.procedures import ProcedureGuide, plan_procedure_guides
 from llmwiki.domain.ledger.projection_context import ProjectionContext
 from llmwiki.domain.ledger.projection_policy import topic_projection_policy
-from llmwiki.domain.ledger.recipe_pages import plan_recipe_patterns
+from llmwiki.domain.ledger.recipe_pages import RecipePattern, plan_recipe_patterns
 from llmwiki.domain.ledger.structure import DocumentStructure
 from llmwiki.domain.ledger.topic_models import SourceTopic
 from llmwiki.domain.ledger.topic_relations import RelatedTopicLink, related_topic_links
@@ -72,6 +72,10 @@ def build_synthesized_linked_pages(
     today: str,
     related_pages_by_topic: dict[str, tuple[RelatedTopicLink, ...]] | None = None,
     draft_producer: PageDraftProducer | None = None,
+    accepted_page_ids: frozenset[str] | None = None,
+    procedure_guides: tuple[ProcedureGuide, ...] | None = None,
+    collection_plans: tuple[CollectionPlan, ...] | None = None,
+    recipe_patterns: tuple[RecipePattern, ...] | None = None,
 ) -> SynthesizedLinkedPages:
     producer = draft_producer or RejectingPageDraftProducer()
     plans: list[PageSynthesisPlan] = []
@@ -97,6 +101,8 @@ def build_synthesized_linked_pages(
             source_locator=source_locator,
             related_pages=related_pages,
         )
+        if not _accepted_for_publication(plan.page_id, accepted_page_ids):
+            continue
         _record_attempt(
             plan,
             synthesize_page(plan, topic_metadata(plan, topic, source_locator, today), producer),
@@ -106,14 +112,19 @@ def build_synthesized_linked_pages(
             pages,
         )
 
-    for guide in plan_procedure_guides(
-        ledger, structure, source_page_id=source_page_id, shape_catalog=shape_catalog
-    ):
+    guides = procedure_guides
+    if guides is None:
+        guides = plan_procedure_guides(
+            ledger, structure, source_page_id=source_page_id, shape_catalog=shape_catalog
+        )
+    for guide in guides:
         plan = procedure_synthesis_plan(
             guide,
             source_page_id=source_page_id,
             source_locator=source_locator,
         )
+        if not _accepted_for_publication(plan.page_id, accepted_page_ids):
+            continue
         _record_attempt(
             plan,
             synthesize_page(
@@ -127,8 +138,17 @@ def build_synthesized_linked_pages(
             pages,
         )
 
-    collection_plans = collection_plans_for_source(ledger, structure, source_page_id, shape_catalog)
-    for collection in collection_plans:
+    planned_collections = collection_plans
+    if planned_collections is None:
+        planned_collections = collection_plans_for_source(
+            ledger, structure, source_page_id, shape_catalog
+        )
+    accepted_collections = tuple(
+        collection
+        for collection in planned_collections
+        if _accepted_for_publication(collection.collection_page_id, accepted_page_ids)
+    )
+    for collection in accepted_collections:
         plan = collection_synthesis_plan(
             collection, ledger, source_page_id=source_page_id, source_locator=source_locator
         )
@@ -145,12 +165,17 @@ def build_synthesized_linked_pages(
             pages,
         )
 
-    for pattern in plan_recipe_patterns(ledger, structure, source_page_id, shape_catalog):
+    patterns = recipe_patterns
+    if patterns is None:
+        patterns = plan_recipe_patterns(ledger, structure, source_page_id, shape_catalog)
+    for pattern in patterns:
         plan = recipe_synthesis_plan(
             pattern,
             source_page_id=source_page_id,
             source_locator=source_locator,
         )
+        if not _accepted_for_publication(plan.page_id, accepted_page_ids):
+            continue
         _record_attempt(
             plan,
             synthesize_page(
@@ -166,7 +191,7 @@ def build_synthesized_linked_pages(
 
     return SynthesizedLinkedPages(
         pages=tuple(pages),
-        collection_plans=collection_plans,
+        collection_plans=accepted_collections,
         synthesis_output=PageSynthesisOutput(tuple(plans), tuple(records), tuple(findings)),
     )
 
@@ -206,6 +231,10 @@ def collection_plans_for_source(
     from llmwiki.domain.ledger.collection_pages import collection_plans
 
     return collection_plans(ledger, structure, source_page_id, shape_catalog)
+
+
+def _accepted_for_publication(page_id: str, accepted_page_ids: frozenset[str] | None) -> bool:
+    return accepted_page_ids is None or page_id in accepted_page_ids
 
 
 def _record_attempt(
