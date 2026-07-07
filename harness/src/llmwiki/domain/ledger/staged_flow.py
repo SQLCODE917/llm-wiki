@@ -7,6 +7,9 @@ from dataclasses import replace
 
 from llmwiki.domain.ledger.canonical import artifact_fingerprint, deterministic_id
 from llmwiki.domain.ledger.ledger import ClaimLedger
+from llmwiki.domain.ledger.projection_navigation_closure import (
+    generated_page_navigation_findings,
+)
 from llmwiki.domain.ledger.staged_contracts import (
     ARTIFACT_FORMAT,
     LedgerExtractionResult,
@@ -107,11 +110,26 @@ def build_lint_run(
     upstream_write_decision: str,
 ) -> ProjectionLintRun:
     findings = _lint_findings(source_plan, staged_page_set, upstream_write_decision)
-    blocking = any(finding.severity == "blocking" for finding in findings)
     page_ids = tuple(page.page_id for page in staged_page_set.pages)
-    accepted = () if blocking else page_ids
-    rejected = page_ids if blocking else ()
-    status = "blocked" if blocking else _accepted_status(findings)
+    blocking_page_ids = {
+        finding.page_id
+        for finding in findings
+        if finding.severity == "blocking" and finding.page_id
+    }
+    global_blocking = any(
+        finding.severity == "blocking" and not finding.page_id for finding in findings
+    )
+    accepted = (
+        ()
+        if global_blocking
+        else tuple(page_id for page_id in page_ids if page_id not in blocking_page_ids)
+    )
+    rejected = (
+        page_ids
+        if global_blocking
+        else tuple(page_id for page_id in page_ids if page_id in blocking_page_ids)
+    )
+    status = _lint_status(findings, accepted, rejected, global_blocking)
     draft = ProjectionLintRun(
         lint_run_id=deterministic_id(
             "projection-lint-run", source_plan.source_plan_id, upstream_write_decision
@@ -139,7 +157,7 @@ def build_publish_run(
         for page in staged_page_set.pages
         if page.page_id in set(lint_run.accepted_page_ids)
     )
-    status = "blocked" if lint_run.status == "blocked" else "published"
+    status = "published" if accepted else "blocked"
     draft = PublishRun(
         publish_run_id=deterministic_id(
             "publish-run", source_plan.source_plan_id, lint_run.lint_run_id
@@ -211,6 +229,7 @@ def _lint_findings(
     for page in staged_page_set.pages:
         findings.extend(_page_findings(source_plan, page, seen))
         seen.add(page.page_id)
+    findings.extend(_navigation_closure_findings(source_plan, staged_page_set))
     return findings
 
 
@@ -247,6 +266,21 @@ def _page_findings(
         )
     findings.extend(_body_contract_findings(page))
     return tuple(findings)
+
+
+def _navigation_closure_findings(
+    source_plan: SourcePlan, staged_page_set: StagedWikiPageSet
+) -> tuple[ProjectionLintFinding, ...]:
+    page_bodies = {page.page_id: page.page.page_body for page in staged_page_set.pages}
+    page_families = {page.page_id: page.page_family for page in staged_page_set.pages}
+    return tuple(
+        _finding("blocking", finding.finding_type, finding.page_id, finding.message)
+        for finding in generated_page_navigation_findings(
+            source_page_id=source_plan.source_page_id,
+            page_bodies=page_bodies,
+            page_families=page_families,
+        )
+    )
 
 
 def _body_contract_findings(page: StagedWikiPage) -> tuple[ProjectionLintFinding, ...]:
@@ -286,6 +320,19 @@ def _accepted_status(
     if any(f.severity == "warning" for f in findings):
         return "accepted-with-warnings"
     return "accepted"
+
+
+def _lint_status(
+    findings: tuple[ProjectionLintFinding, ...] | list[ProjectionLintFinding],
+    accepted_page_ids: tuple[str, ...],
+    rejected_page_ids: tuple[str, ...],
+    global_blocking: bool,
+) -> str:
+    if global_blocking or (rejected_page_ids and not accepted_page_ids):
+        return "blocked"
+    if rejected_page_ids:
+        return "accepted-with-rejections"
+    return _accepted_status(findings)
 
 
 def _blocked_reason(lint_run: ProjectionLintRun) -> str:

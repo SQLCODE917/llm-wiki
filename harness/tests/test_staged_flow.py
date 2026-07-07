@@ -58,6 +58,41 @@ def test_staged_pages_block_unplanned_page_family_before_publish() -> None:
     assert accepted_pages(staged, publish_run) == ()
 
 
+def test_generated_pages_need_inbound_navigation_route() -> None:
+    source_plan = build_source_plan(
+        source_locator="src.pdf",
+        source_hash=_HASH,
+        source_page_id="src",
+    )
+    source_page = WikiPage.from_metadata(
+        PageMetadata(
+            page_id="src",
+            page_kind="source",
+            page_family="source-manifest",
+            summary="source summary.",
+            sources=("raw/src.pdf",),
+            projection_coverage_pointer="src@abc",
+        ),
+        "# Source\n\nNo route to the topic yet.\n",
+    )
+    topic = _page("src-topic", "concept", "topic-concept")
+    staged = build_staged_page_set(source_plan, (source_page, topic))
+
+    lint_run = build_lint_run(
+        source_plan=source_plan,
+        staged_page_set=staged,
+        upstream_write_decision="write-authoritative-page",
+    )
+    publish_run = build_publish_run(source_plan, staged, lint_run)
+
+    assert any(
+        finding.finding_type == "generated-page-has-no-inbound-route"
+        and finding.page_id == "src-topic"
+        for finding in lint_run.findings
+    )
+    assert publish_run.accepted_page_ids == ("src",)
+
+
 def test_source_ledger_persists_stage_artifacts_from_real_pipeline() -> None:
     result = build_source_ledger(
         source_locator="src.pdf",

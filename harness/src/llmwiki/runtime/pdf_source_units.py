@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from llmwiki.domain.model_profile import DEFAULT_MODEL_PROFILE
 from llmwiki.domain.objects import ExtractedUnit, RawSource
 from llmwiki.domain.planning_analysis import build_extracted_unit
 from llmwiki.domain.source_map import (
@@ -12,7 +13,6 @@ from llmwiki.domain.source_map import (
     SourceBlock,
     build_prompt_windows,
 )
-from llmwiki.pdf.chunking import CHUNK_TOKEN_BUDGET, estimate_tokens
 from llmwiki.pdf.pipeline import read_source_map
 
 
@@ -29,12 +29,12 @@ def extracted_units_from_source_map(
     raw_source: RawSource,
     source_map: NormalizedSourceMap,
     *,
-    budget_tokens: int = CHUNK_TOKEN_BUDGET,
+    budget_tokens: int = DEFAULT_MODEL_PROFILE.source_chunk_tokens,
 ) -> tuple[ExtractedUnit, ...]:
     windows = build_prompt_windows(
         source_map,
         budget_tokens=budget_tokens,
-        estimate_tokens=estimate_tokens,
+        estimate_tokens=DEFAULT_MODEL_PROFILE.estimate_tokens,
     )
     blocks_by_id = source_map.source_blocks_by_id
     return tuple(

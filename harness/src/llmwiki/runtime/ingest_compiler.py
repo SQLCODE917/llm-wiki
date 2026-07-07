@@ -7,6 +7,10 @@ from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 
+from llmwiki.domain.compiler_candidate_admission import (
+    CandidateAdmissionFinding,
+    admit_compiler_page_candidates,
+)
 from llmwiki.domain.diagnostic_contracts import DiagnosticAnswerer, DiagnosticJudge
 from llmwiki.domain.diagnostics import render_diagnostic_report
 from llmwiki.domain.ingest_compiler import (
@@ -41,6 +45,8 @@ from llmwiki.domain.source_profile_io import (
 )
 from llmwiki.domain.source_profile_selector import select_source_profile
 from llmwiki.domain.source_profiles import build_evidence_extraction_plan
+from llmwiki.domain.source_records import build_source_record_plan
+from llmwiki.domain.source_structure_integrity import build_source_structure_integrity_report
 from llmwiki.domain.typed_evidence_io import evidence_record_set_to_json
 from llmwiki.domain.typed_evidence_producer import DeterministicTypedEvidenceProducer
 from llmwiki.pdf.pipeline import ExtractionResult, read_source_map, save_manifest
@@ -77,6 +83,8 @@ class IngestCompiler:
         source_map = self._source_map(source_locator, compiler_input.reextract)
         if source_map is None:
             return self._blocked_missing_source_map(source_locator, source_page_id)
+        structure_report = build_source_structure_integrity_report(source_map)
+        source_record_plan = build_source_record_plan(source_map)
         source_profile = select_source_profile(source_map)
         evidence_plan = build_evidence_extraction_plan(
             source_map,
@@ -94,13 +102,21 @@ class IngestCompiler:
             record_set=record_set,
             source_profile_kind=source_profile.source_profile.profile_id,
         )
+        admission = admit_compiler_page_candidates(
+            source_id=source_page_id,
+            source_hash=source_map.source_hash,
+            candidates=candidate_inputs.candidates,
+            record_set=record_set,
+            structure_report=structure_report,
+            record_plan=source_record_plan,
+        )
         budget = conservative_publication_budget(source_profile.source_profile.profile_id)
         publication_plan = plan_publication(
             source_id=source_page_id,
             source_hash=source_map.source_hash,
             source_profile_kind=budget.source_profile_kind,
             budget=budget,
-            candidates=candidate_inputs.candidates,
+            candidates=admission.accepted_candidates,
         )
         publication_report = publication_walkability_report(publication_plan)
         pack_set = build_evidence_pack_set(
@@ -139,14 +155,18 @@ class IngestCompiler:
             diagnostic_findings=diagnostic_loop.finding_set.findings,
             repair_run=diagnostic_loop.repair_run,
         )
+        findings = (*_candidate_admission_findings(admission.report.findings), *findings)
         linked_pages = diagnostic_loop.final_human_articles.pages
         source_page = build_compiler_source_manifest(
             page_id=source_page_id,
             source_locator=source_locator,
             today=self.today,
             source_map=source_map,
+            structure_report=structure_report,
+            source_record_plan=source_record_plan,
             source_profile=source_profile,
             record_set=record_set,
+            candidate_admission=admission.report,
             publication_plan=publication_plan,
             evidence_pack_set=pack_set,
             article_lint_artifact=diagnostic_loop.final_article_lint,
@@ -180,10 +200,17 @@ class IngestCompiler:
             source_map=source_map,
             payloads={
                 "source-profile.json": source_profile_artifact_to_json(source_profile),
+                "source-structure-integrity.json": canonical_json(
+                    structure_report, indent=2
+                ),
+                "source-record-plan.json": canonical_json(source_record_plan, indent=2),
                 "evidence-extraction-plan.json": evidence_extraction_plan_to_json(
                     evidence_plan
                 ),
                 "evidence-record-set.json": evidence_record_set_to_json(record_set),
+                "candidate-admission-report.json": canonical_json(
+                    admission.report, indent=2
+                ),
                 "page-publication-plan.json": canonical_json(publication_plan, indent=2),
                 "publication-walkability-report.md": render_publication_walkability_report(
                     publication_report
@@ -298,6 +325,30 @@ class IngestCompiler:
             artifact_set,
             compiler_report(source_locator, artifact_set, (finding,)),
         )
+
+
+def _candidate_admission_findings(
+    findings: tuple[CandidateAdmissionFinding, ...],
+) -> tuple[CompilerFinding, ...]:
+    converted: list[CompilerFinding] = []
+    for finding in findings:
+        converted.append(
+            CompilerFinding(
+                finding_id=deterministic_id(
+                    "compiler-finding",
+                    "page-plan",
+                    finding.finding_code,
+                    finding.page_id,
+                ),
+                stage_name="page-plan",
+                severity=finding.severity,
+                finding_code=finding.finding_code,
+                page_id=finding.page_id,
+                source_anchor="",
+                message=finding.message,
+            )
+        )
+    return tuple(converted)
 
 
 def _raw_hash(path: Path) -> str:

@@ -223,6 +223,45 @@ def test_structured_payload_round_trips_and_preserves_table_text() -> None:
     assert "Distance=20 meters" in restored.accepted_records[0].payload_text
 
 
+def test_modality_gate_emits_formula_from_formula_like_prose() -> None:
+    source_map = _source_map(
+        "reference.pdf",
+        (
+            _element("e1", "heading", "Damage", "Damage", 44),
+            _element("e2", "paragraph", "Damage", "Final Damage = Power + Bonus", 44),
+            _element("e3", "table", "Damage", "Name | Value\nDamage | 2d6", 44),
+        ),
+    )
+    artifact, plan = _artifact_and_plan(source_map)
+
+    record_set = DeterministicTypedEvidenceProducer().build_record_set(source_map, artifact, plan)
+
+    assert any(record.evidence_record_type == "formula" for record in record_set.records)
+
+
+def test_trust_gate_blocks_contaminated_code_payloads_from_accepted_support() -> None:
+    source_map = _source_map(
+        "javascriptallonge.pdf",
+        (
+            _element("e1", "heading", "Examples", "Examples", 44),
+            _element(
+                "e2",
+                "code_block",
+                "Examples",
+                "const x = 1;\nThis sentence is prose inside code and should be reviewed.",
+                44,
+            ),
+        ),
+    )
+    artifact, plan = _artifact_and_plan(source_map)
+
+    record_set = DeterministicTypedEvidenceProducer().build_record_set(source_map, artifact, plan)
+
+    assert record_set.records[0].status == "needs_review"
+    assert record_set.records[0].findings[-1].finding_code == "typed-evidence-trust"
+    assert not record_set.accepted_records
+
+
 def test_page_planning_adapter_uses_only_accepted_typed_records() -> None:
     source_map = _source_map(
         "Sword World RPG - Complete Edition.pdf",

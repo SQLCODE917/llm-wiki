@@ -5,6 +5,8 @@ from __future__ import annotations
 import re
 from typing import Protocol
 
+from llmwiki.domain.evidence_modality import allowed_record_types_for_source_block
+from llmwiki.domain.notation import standalone_formula_candidate_line
 from llmwiki.domain.source_claim_sentences import claim_sentences
 from llmwiki.domain.source_map import NormalizedSourceMap, SourceBlock
 from llmwiki.domain.source_profiles import EvidenceExtractionPlan, SourceProfileArtifact
@@ -21,6 +23,7 @@ from llmwiki.domain.typed_evidence import (
     stable_id,
     validate_typed_evidence_record,
 )
+from llmwiki.domain.typed_evidence_trust import apply_typed_evidence_trust
 
 _DEONTIC_RE = re.compile(
     r"\b(?:must|shall|should|may|can(?:not)?|can't|cannot|always|never|if|unless|when)\b",
@@ -61,7 +64,8 @@ class DeterministicTypedEvidenceProducer:
             if block.source_block_id not in selected:
                 continue
             for record in _records_for_block(source_map, block, allowed, profile_id):
-                records.append(validate_typed_evidence_record(record, plan))
+                validated = validate_typed_evidence_record(record, plan)
+                records.append(apply_typed_evidence_trust(validated))
         return evidence_record_set(
             source_id=source_map.source_id,
             source_locator=source_map.source_locator,
@@ -83,18 +87,30 @@ def _records_for_block(
     text = block.source_text.strip()
     if not text:
         return ()
+    block_allowed = allowed & allowed_record_types_for_source_block(block)
+    if not block_allowed:
+        return ()
     if block.block_type == "code":
-        return _single_record(source_map, block, allowed, "code_example", text, "code")
+        return _single_record(source_map, block, block_allowed, "code_example", text, "code")
     if block.block_type == "table":
-        return _single_record(source_map, block, allowed, "table_fact", text, "table")
+        return _single_record(source_map, block, block_allowed, "table_fact", text, "table")
     records: list[TypedEvidenceRecord] = []
+    formula = standalone_formula_candidate_line(text)
+    if formula is not None:
+        records.extend(
+            _single_record(source_map, block, block_allowed, "formula", formula, "formula")
+        )
     for step in _procedure_steps(text):
-        records.extend(_single_record(source_map, block, allowed, "procedure_step", step, "text"))
+        records.extend(
+            _single_record(source_map, block, block_allowed, "procedure_step", step, "text")
+        )
     for statement in claim_sentences(text):
-        record_type = _record_type_for_statement(statement, profile_id, allowed)
+        record_type = _record_type_for_statement(statement, profile_id, block_allowed)
         if record_type is None:
             continue
-        records.extend(_single_record(source_map, block, allowed, record_type, statement, "text"))
+        records.extend(
+            _single_record(source_map, block, block_allowed, record_type, statement, "text")
+        )
     return tuple(records)
 
 

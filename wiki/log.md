@@ -563,3 +563,13 @@ Source page: [[javascriptallonge]]; linked pages: 55. Ledger artifacts: /home/se
 Claim-ledger ingest of raw/Sword World RPG - Complete Edition.pdf (1316 source unit(s)).
 Claim-ledger projection (history): 12343 usable entries, 4708 technical atoms, 1304 needs-review, 1145 linked page(s); write decision write-with-review-work.
 Source page: [[sword-world-rpg-complete-edition]]; linked pages: 1145. Ledger artifacts: /home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/ledger.
+
+## [2026-07-07] ingest | javascriptallonge.pdf
+Ingest compiler run ingest-artifact-set-811e0c97d983173e for raw/javascriptallonge.pdf.
+Accepted pages: 1; rejected pages: 194. Diagnostics: answered 0/11, missing 11, unsupported 0; repair blocked, changed 0. Top compiler findings: publication-budget-exceeded=105, section-reference-not-explicitly-accepted=60, procedure-evidence-closure-missing=18, empty-article=15, missing-answer=11.
+Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/javascriptallonge-5873116c6496.
+
+## [2026-07-07] ingest | Sword World RPG - Complete Edition.pdf
+Ingest compiler run ingest-artifact-set-a50963112f4b88bd for raw/Sword World RPG - Complete Edition.pdf.
+Accepted pages: 1; rejected pages: 3230. Diagnostics: answered 0/23, missing 23, unsupported 0; repair blocked, changed 0. Top compiler findings: source-structure-cannot-drive-page=1796, publication-budget-exceeded=898, section-reference-not-explicitly-accepted=507, empty-article=27, missing-answer=23.
+Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/sword-world-rpg-complete-edition-8e67d04d99d8.

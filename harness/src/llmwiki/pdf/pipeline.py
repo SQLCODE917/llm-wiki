@@ -13,6 +13,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Literal
 
+from llmwiki.domain.model_profile import DEFAULT_MODEL_PROFILE
 from llmwiki.domain.source_map import (
     NormalizedSourceMap,
     PromptWindow,
@@ -22,7 +23,6 @@ from llmwiki.domain.source_map import (
     source_map_text,
 )
 from llmwiki.pdf import ScannedPdfError
-from llmwiki.pdf.chunking import CHUNK_TOKEN_BUDGET, estimate_tokens
 from llmwiki.pdf.classify import PdfKind, classify_pdf
 from llmwiki.pdf.document import (
     DocumentModel,
@@ -94,7 +94,7 @@ def read_source_map(cache_dir: Path) -> NormalizedSourceMap | None:
 
 
 def read_prompt_windows(
-    cache_dir: Path, budget_tokens: int = CHUNK_TOKEN_BUDGET
+    cache_dir: Path, budget_tokens: int = DEFAULT_MODEL_PROFILE.source_chunk_tokens
 ) -> tuple[PromptWindow, ...]:
     source_map = read_source_map(cache_dir)
     if source_map is None:
@@ -102,7 +102,7 @@ def read_prompt_windows(
     return build_prompt_windows(
         source_map,
         budget_tokens=budget_tokens,
-        estimate_tokens=estimate_tokens,
+        estimate_tokens=DEFAULT_MODEL_PROFILE.estimate_tokens,
     )
 
 

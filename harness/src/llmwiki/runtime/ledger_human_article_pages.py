@@ -96,7 +96,21 @@ def write_human_article_page(
 ) -> HumanArticleAttempt:
     current_findings: tuple[ArticleFinding, ...] = initial_findings
     for _ in range(max_attempts):
-        article = writer.write_article(pack, current_findings)
+        try:
+            article = writer.write_article(pack, current_findings)
+        except Exception as exc:
+            return HumanArticleAttempt(
+                None,
+                None,
+                (
+                    ArticleFinding(
+                        "blocking",
+                        "article-writer-error",
+                        pack.page_id,
+                        f"Article writer failed: {exc}",
+                    ),
+                ),
+            )
         result = validate_human_article(pack, article)
         if result.accepted:
             rendered = render_human_article(pack, article)

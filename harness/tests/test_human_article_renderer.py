@@ -175,6 +175,25 @@ def test_write_human_article_page_omits_page_when_lint_blocks() -> None:
     assert _finding_types(attempt.findings) >= {"title-lint-failed"}
 
 
+def test_write_human_article_page_records_writer_errors_without_crashing() -> None:
+    attempt = write_human_article_page(
+        _pack(),
+        PageMetadata(
+            "shade",
+            "concept",
+            "Shade summary.",
+            page_family="topic-concept",
+            sources=("raw/sword.pdf",),
+        ),
+        _ExplodingWriter(),
+        max_attempts=1,
+    )
+
+    assert attempt.page is None
+    assert attempt.record is None
+    assert _finding_types(attempt.findings) == {"article-writer-error"}
+
+
 def test_forge_human_article_writer_uses_structured_tool_with_full_evidence() -> None:
     client = FakeClient(
         [
@@ -299,6 +318,11 @@ class _Writer:
 
     def write_article(self, pack: EvidencePack, findings=()) -> HumanArticle:  # type: ignore[no-untyped-def]
         return self.article
+
+
+class _ExplodingWriter:
+    def write_article(self, pack: EvidencePack, findings=()) -> HumanArticle:  # type: ignore[no-untyped-def]
+        raise ValueError("Support ref must be formatted as kind:id, got 'support-1'.")
 
 
 def _types(result) -> set[str]:  # type: ignore[no-untyped-def]

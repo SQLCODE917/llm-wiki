@@ -117,6 +117,7 @@ def test_compiler_stage_order_and_artifact_manifest(
 
     assert tuple(stage.stage_name for stage in compilation.artifact_set.stages) == (
         "source-map",
+        "source-structure",
         "source-profile",
         "evidence-records",
         "page-plan",
@@ -137,6 +138,9 @@ def test_compiler_stage_order_and_artifact_manifest(
     assert "human-article-initial.json" in compilation.artifact_files
     assert "article-lint-runs-initial.json" in compilation.artifact_files
     assert "normalized-source-map.json" in compilation.artifact_files
+    assert "source-structure-integrity.json" in compilation.artifact_files
+    assert "source-record-plan.json" in compilation.artifact_files
+    assert "candidate-admission-report.json" in compilation.artifact_files
     assert "claim-ledger.json" not in compilation.artifact_files
     assert "page-synthesis-plan.json" not in compilation.artifact_files
     assert set(compilation.artifact_set.accepted_page_ids) >= {"shade", "shade-shade"}

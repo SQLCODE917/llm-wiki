@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from llmwiki.domain.model_profile import DEFAULT_MODEL_PROFILE
 from llmwiki.domain.objects import Evidence, RawSource, SourceClaim
 from llmwiki.domain.planning_analysis import top_terms
 from llmwiki.domain.source_claim_quality import (
@@ -12,7 +13,6 @@ from llmwiki.domain.source_claim_quality import (
 )
 from llmwiki.domain.source_map import NormalizedSourceMap, SourceBlock, build_prompt_windows
 from llmwiki.domain.typed_evidence import EvidenceRecordSet, TypedEvidenceRecord
-from llmwiki.pdf.chunking import CHUNK_TOKEN_BUDGET, estimate_tokens
 
 
 def source_claims_from_typed_evidence(
@@ -60,8 +60,8 @@ def source_claims_from_typed_evidence(
 def _block_unit_ids(source_map: NormalizedSourceMap) -> dict[str, str]:
     windows = build_prompt_windows(
         source_map,
-        budget_tokens=CHUNK_TOKEN_BUDGET,
-        estimate_tokens=estimate_tokens,
+        budget_tokens=DEFAULT_MODEL_PROFILE.source_chunk_tokens,
+        estimate_tokens=DEFAULT_MODEL_PROFILE.estimate_tokens,
     )
     return {
         block_id: window.prompt_window_id

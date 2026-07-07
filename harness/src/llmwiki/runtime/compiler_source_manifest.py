@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from llmwiki.domain.compiler_candidate_admission import CandidateAdmissionReport
 from llmwiki.domain.diagnostic_contracts import (
     DiagnosticQuestionSet,
     DiagnosticReport,
@@ -14,6 +15,8 @@ from llmwiki.domain.ledger.page_publication import PagePublicationPlan
 from llmwiki.domain.pages import PageMetadata, WikiPage
 from llmwiki.domain.source_map import NormalizedSourceMap
 from llmwiki.domain.source_profiles import SourceProfileArtifact
+from llmwiki.domain.source_records import SourceRecordPlan
+from llmwiki.domain.source_structure_integrity import SourceStructureIntegrityReport
 from llmwiki.domain.typed_evidence import EvidenceRecordSet
 
 
@@ -23,8 +26,11 @@ def build_compiler_source_manifest(
     source_locator: str,
     today: str,
     source_map: NormalizedSourceMap,
+    structure_report: SourceStructureIntegrityReport,
+    source_record_plan: SourceRecordPlan,
     source_profile: SourceProfileArtifact,
     record_set: EvidenceRecordSet,
+    candidate_admission: CandidateAdmissionReport,
     publication_plan: PagePublicationPlan,
     evidence_pack_set: EvidencePackSet,
     article_lint_artifact: ArticleLintArtifact,
@@ -51,8 +57,11 @@ def build_compiler_source_manifest(
         title,
         source_locator,
         source_map,
+        structure_report,
+        source_record_plan,
         source_profile,
         record_set,
+        candidate_admission,
         publication_plan,
         evidence_pack_set,
         article_lint_artifact,
@@ -69,8 +78,11 @@ def _body(
     title: str,
     source_locator: str,
     source_map: NormalizedSourceMap,
+    structure_report: SourceStructureIntegrityReport,
+    source_record_plan: SourceRecordPlan,
     source_profile: SourceProfileArtifact,
     record_set: EvidenceRecordSet,
+    candidate_admission: CandidateAdmissionReport,
     publication_plan: PagePublicationPlan,
     evidence_pack_set: EvidencePackSet,
     article_lint_artifact: ArticleLintArtifact,
@@ -88,9 +100,13 @@ def _body(
         "## Compiler Summary",
         "",
         f"- Source blocks: {len(source_map.source_blocks)}",
+        f"- Source structure findings: {len(structure_report.findings)}",
+        f"- Source records: {source_record_plan.record_count}",
         f"- Source profile: {source_profile.source_profile.profile_id} "
         f"({source_profile.source_profile.confidence:.2f})",
         f"- Typed evidence: {len(record_set.accepted_records)} accepted records",
+        f"- Candidate admission: {len(candidate_admission.accepted_candidate_ids)} accepted, "
+        f"{len(candidate_admission.rejected_candidate_ids)} rejected",
         f"- Publication budget: {len(publication_plan.accepted_candidates)} accepted, "
         f"{len(publication_plan.rejected_candidates)} rejected candidates",
         f"- Evidence packs: {len(evidence_pack_set.packs)} valid, "

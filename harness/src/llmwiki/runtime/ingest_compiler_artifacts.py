@@ -88,9 +88,18 @@ def _stage(
 
 _STAGE_ORDER = (
     ("source-map", (), ("normalized-source-map",)),
+    (
+        "source-structure",
+        ("normalized-source-map",),
+        ("source-structure-integrity", "source-record-plan"),
+    ),
     ("source-profile", ("normalized-source-map",), ("source-profile", "evidence-extraction-plan")),
     ("evidence-records", ("evidence-extraction-plan",), ("evidence-record-set",)),
-    ("page-plan", ("evidence-record-set",), ("page-publication-plan",)),
+    (
+        "page-plan",
+        ("source-structure-integrity", "source-record-plan", "evidence-record-set"),
+        ("candidate-admission-report", "page-publication-plan"),
+    ),
     ("evidence-packs", ("page-publication-plan",), ("evidence-pack-set",)),
     (
         "human-articles",
