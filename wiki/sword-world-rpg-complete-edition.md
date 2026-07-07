@@ -26,9 +26,9 @@ Source: raw/Sword World RPG - Complete Edition.pdf
 - Publication budget: 23 accepted, 1408 rejected candidates
 - Evidence packs: 23 valid, 0 missing/invalid
 - Article lint gates: 0 accepted, 0 blocked
-- Diagnostic questions: 23; 23 missing, 0 unsupported
-- Repair run: blocked; 0 page(s) changed
-- Compiler findings: 3261
+- Diagnostic questions: 0; 0 missing, 0 unsupported
+- Repair run: skipped; 0 page(s) changed
+- Compiler findings: 3276
 
 ## Accepted Pages
 

@@ -26,9 +26,9 @@ Source: raw/javascriptallonge.pdf
 - Publication budget: 11 accepted, 165 rejected candidates
 - Evidence packs: 11 valid, 0 missing/invalid
 - Article lint gates: 0 accepted, 0 blocked
-- Diagnostic questions: 11; 11 missing, 0 unsupported
-- Repair run: blocked; 0 page(s) changed
-- Compiler findings: 213
+- Diagnostic questions: 0; 0 missing, 0 unsupported
+- Repair run: skipped; 0 page(s) changed
+- Compiler findings: 224
 
 ## Accepted Pages
 

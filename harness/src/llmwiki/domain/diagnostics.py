@@ -40,8 +40,11 @@ def build_diagnostic_question_set(
     source_hash: str,
     pack_set: EvidencePackSet,
     publication_plan: PagePublicationPlan,
+    page_ids: frozenset[str] | None = None,
 ) -> DiagnosticQuestionSet:
     accepted = set(publication_plan.accepted_page_ids)
+    if page_ids is not None:
+        accepted &= page_ids
     questions = tuple(
         _question_for_pack(source_id, source_hash, pack)
         for pack in pack_set.packs
@@ -66,16 +69,19 @@ def answer_diagnostic_questions(
     corpus: DiagnosticAnswerCorpus,
     answerer: DiagnosticAnswerer,
 ) -> DiagnosticAnswerSet:
+    answers: list[DiagnosticAnswer] = []
+    for question in question_set.questions:
+        try:
+            answers.append(answerer.answer_diagnostic_question(question, corpus))
+        except Exception:
+            answers.append(_missing_answer(question))
     draft = DiagnosticAnswerSet(
         deterministic_id("diagnostic-answer-set", question_set.source_hash, question_set.source_id),
         "",
         ARTIFACT_FORMAT,
         question_set.source_id,
         question_set.source_hash,
-        tuple(
-            answerer.answer_diagnostic_question(question, corpus)
-            for question in question_set.questions
-        ),
+        tuple(answers),
     )
     fingerprint = artifact_fingerprint(draft, exclude=("diagnostic_answer_set_fingerprint",))
     return replace(draft, diagnostic_answer_set_fingerprint=fingerprint)
@@ -89,15 +95,24 @@ def judge_diagnostic_answers(
 ) -> DiagnosticFindingSet:
     answers = {answer.diagnostic_question_id: answer for answer in answer_set.answers}
     packs = {pack.page_id: pack for pack in pack_set.packs}
-    findings = tuple(
-        finding
-        for question in question_set.questions
-        for finding in judge.judge_diagnostic_answer(
-            question,
-            answers.get(question.diagnostic_question_id, _missing_answer(question)),
-            _pack(question, packs),
-        )
-    )
+    findings: list[DiagnosticFinding] = []
+    for question in question_set.questions:
+        try:
+            findings.extend(
+                judge.judge_diagnostic_answer(
+                    question,
+                    answers.get(question.diagnostic_question_id, _missing_answer(question)),
+                    _pack(question, packs),
+                )
+            )
+        except Exception as exc:
+            findings.append(
+                diagnostic_finding(
+                    question,
+                    "diagnostic-judge-error",
+                    f"Diagnostic judge failed: {exc}",
+                )
+            )
     finding_set_id = deterministic_id(
         "diagnostic-finding-set",
         question_set.source_hash,
@@ -109,7 +124,7 @@ def judge_diagnostic_answers(
         ARTIFACT_FORMAT,
         question_set.source_id,
         question_set.source_hash,
-        findings,
+        tuple(findings),
     )
     fingerprint = artifact_fingerprint(
         draft, exclude=("diagnostic_finding_set_fingerprint",)

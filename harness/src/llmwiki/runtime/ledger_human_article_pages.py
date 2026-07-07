@@ -49,6 +49,8 @@ def build_human_article_linked_pages(
     article_writer: ArticleWriter | None = None,
     collection_plans: tuple[CollectionPlan, ...] = (),
     title_findings_by_page_id: dict[str, tuple[PageTitleFinding, ...]] | None = None,
+    max_article_packs: int | None = None,
+    max_attempts_per_pack: int = _MAX_ARTICLE_ATTEMPTS,
 ) -> HumanArticleLinkedPages:
     writer = article_writer or RejectingArticleWriter()
     records: list[HumanArticleRecord] = []
@@ -57,12 +59,26 @@ def build_human_article_linked_pages(
     pages: list[WikiPage] = []
     title_findings = title_findings_by_page_id or {}
 
+    attempted = 0
     for pack in evidence_pack_set.packs:
+        if max_article_packs is not None and attempted >= max_article_packs:
+            findings.append(
+                ArticleFinding(
+                    "blocking",
+                    "article-attempt-budget-exceeded",
+                    pack.page_id,
+                    "Article writing skipped because the ingest article attempt budget "
+                    "was exhausted.",
+                )
+            )
+            continue
+        attempted += 1
         metadata = article_metadata(pack, source_locator, today)
         attempt = write_human_article_page(
             pack,
             metadata,
             writer,
+            max_attempts=max_attempts_per_pack,
             title_findings=title_findings.get(pack.page_id, ()),
         )
         if attempt.lint_run is not None:
@@ -99,6 +115,7 @@ def write_human_article_page(
         try:
             article = writer.write_article(pack, current_findings)
         except Exception as exc:
+            message = str(exc) or exc.__class__.__name__
             return HumanArticleAttempt(
                 None,
                 None,
@@ -107,7 +124,7 @@ def write_human_article_page(
                         "blocking",
                         "article-writer-error",
                         pack.page_id,
-                        f"Article writer failed: {exc}",
+                        f"Article writer failed: {message}",
                     ),
                 ),
             )

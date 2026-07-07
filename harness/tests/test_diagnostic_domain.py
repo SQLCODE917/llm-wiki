@@ -16,6 +16,7 @@ from llmwiki.domain.diagnostics import (
     build_repair_task_set,
     diagnostic_answer_corpus_from_pages,
     diagnostic_finding,
+    judge_diagnostic_answers,
 )
 from llmwiki.domain.ledger.evidence_pack import (
     EvidencePack,
@@ -48,6 +49,23 @@ def test_diagnostic_builder_creates_pack_questions_and_shade_interaction() -> No
     assert len(question_set.questions) == 1
     assert question_set.questions[0].question_text == "How does Shade interact with will-o-wisp?"
     assert question_set.questions[0].expected_support_refs == (pack.items[0].support_ref.code,)
+
+
+def test_diagnostic_builder_filters_to_existing_page_ids() -> None:
+    shade = _pack(page_id="sword-shade", title="Shade")
+    brownie = _pack(page_id="sword-brownie", title="Brownie")
+
+    question_set = build_diagnostic_question_set(
+        source_id="sword",
+        source_hash=_HASH,
+        pack_set=_pack_set((shade, brownie)),
+        publication_plan=_publication_plan((shade, brownie)),
+        page_ids=frozenset({"sword-shade"}),
+    )
+
+    assert [question.page_ids for question in question_set.questions] == [
+        ("sword-shade",)
+    ]
 
 
 def test_answerer_uses_wiki_corpus_only() -> None:
@@ -91,6 +109,37 @@ def test_default_judge_records_missing_and_unsupported_answers() -> None:
     assert unsupported[0].finding_code == "unsupported-answer"
 
 
+def test_answerer_failure_becomes_missing_answer() -> None:
+    question = _question()
+    answer_set = answer_diagnostic_questions(
+        _question_set((question,)),
+        diagnostic_answer_corpus_from_pages(()),
+        _ExplodingAnswerer(),
+    )
+
+    assert len(answer_set.answers) == 1
+    assert answer_set.answers[0].answer_text == ""
+    assert answer_set.answered_count == 0
+
+
+def test_judge_failure_becomes_blocking_diagnostic_finding() -> None:
+    question = _question()
+    finding_set = judge_diagnostic_answers(
+        _question_set((question,)),
+        answer_diagnostic_questions(
+            _question_set((question,)),
+            diagnostic_answer_corpus_from_pages(()),
+            CorpusDiagnosticAnswerer(),
+        ),
+        _pack_set((_pack(),)),
+        _ExplodingJudge(),
+    )
+
+    assert len(finding_set.findings) == 1
+    assert finding_set.findings[0].finding_code == "diagnostic-judge-error"
+    assert finding_set.findings[0].severity == "blocking"
+
+
 def test_repair_planner_creates_tasks_from_blocking_findings() -> None:
     question = _question()
     finding_set = _finding_set((diagnostic_finding(question, "unsupported-answer", "unsupported"),))
@@ -100,6 +149,16 @@ def test_repair_planner_creates_tasks_from_blocking_findings() -> None:
     assert len(task_set.tasks) == 1
     assert task_set.tasks[0].repair_kind == "rewrite-human-article"
     assert task_set.tasks[0].target_page_id == "sword-shade"
+
+
+class _ExplodingAnswerer:
+    def answer_diagnostic_question(self, question, corpus):  # type: ignore[no-untyped-def]
+        raise RuntimeError("answerer unavailable")
+
+
+class _ExplodingJudge:
+    def judge_diagnostic_answer(self, question, answer, pack):  # type: ignore[no-untyped-def]
+        raise RuntimeError("judge unavailable")
 
 
 def _question() -> DiagnosticQuestion:

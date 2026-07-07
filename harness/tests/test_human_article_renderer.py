@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 
+import pytest
 from fakes import FakeClient
 from forge.context import ContextManager, NoCompact
 from forge.core.workflow import ToolCall
@@ -10,6 +11,7 @@ from llmwiki.domain.ledger.evidence_pack import (
     EvidencePack,
     EvidencePackCoverage,
     EvidencePackItem,
+    EvidencePackSet,
     SupportRef,
 )
 from llmwiki.domain.ledger.human_article import (
@@ -26,10 +28,76 @@ from llmwiki.domain.ledger.page_title_lint import PageTitleFinding
 from llmwiki.domain.pages import PageMetadata, render_page
 from llmwiki.domain.source_map import SourceAnchor
 from llmwiki.runtime.human_article_forge import ForgeHumanArticleWriter
-from llmwiki.runtime.ledger_human_article_pages import write_human_article_page
+from llmwiki.runtime.ledger_human_article_pages import (
+    build_human_article_linked_pages,
+    write_human_article_page,
+)
+from llmwiki.workflows.human_article_write import (
+    article_prompt_evidence_items,
+    article_support_aliases,
+    human_article_to_json,
+)
 
 _HASH = "d" * 64
 _SUPPORT = SupportRef("typed-evidence-record", "record-shade")
+_SECOND_SUPPORT = SupportRef("typed-evidence-record", "record-wisp")
+
+
+def test_article_support_aliases_are_deterministic_and_canonicalize() -> None:
+    aliases = article_support_aliases(_pack_with_two_items())
+
+    assert aliases.allowed_aliases == ("S1", "S2")
+    assert aliases.support_ref_for("S1") == _SUPPORT
+    assert aliases.support_ref_for("S2") == _SECOND_SUPPORT
+    with pytest.raises(ValueError, match="Unknown support alias 'support-1'"):
+        aliases.support_ref_for("support-1")
+    assert "S1, S2" in aliases.allowed_aliases_text
+
+
+def test_human_article_json_keeps_canonical_support_refs_not_aliases() -> None:
+    article = _article("Shade creates darkness around the target.")
+    payload = human_article_to_json(article)
+
+    assert "typed-evidence-record:record-shade" in payload
+    assert '"S1"' not in payload
+
+
+def test_article_prompt_evidence_items_bound_large_source_text() -> None:
+    pack = _pack(source_text="source " * 20_000, payload="payload " * 20_000)
+    prompt_items = article_prompt_evidence_items(pack)
+
+    assert len(prompt_items) == 1
+    assert prompt_items[0].alias == "S1"
+    assert len(prompt_items[0].source_text) <= 1_600
+    assert len(prompt_items[0].payload_text) <= 1_200
+    assert prompt_items[0].source_text_omitted_chars > 0
+    assert prompt_items[0].payload_text_omitted_chars > 0
+    assert prompt_items[0].item.support_ref == _SUPPORT
+
+
+def test_human_article_linked_pages_records_article_attempt_budget() -> None:
+    result = build_human_article_linked_pages(
+        evidence_pack_set=EvidencePackSet(
+            evidence_pack_set_id="pack-set",
+            evidence_pack_set_fingerprint="fingerprint",
+            source_id="sword",
+            source_hash=_HASH,
+            source_profile_kind="rpg-rules",
+            packs=(_pack(page_id="shade-a"), _pack(page_id="shade-b")),
+            findings=(),
+        ),
+        source_locator="sword.pdf",
+        today="2026-07-07",
+        article_writer=RejectingArticleWriter(),
+        max_article_packs=1,
+        max_attempts_per_pack=1,
+    )
+
+    assert result.pages == ()
+    assert "empty-article" in _finding_types(result.article_output.findings)
+    assert "article-attempt-budget-exceeded" in _finding_types(
+        result.article_output.findings
+    )
 
 
 def test_article_validator_rejects_contract_violations() -> None:
@@ -220,7 +288,7 @@ def test_forge_human_article_writer_uses_structured_tool_with_full_evidence() ->
                             {
                                 "claim_id": "c1",
                                 "sentence": "Shade creates darkness around the target.",
-                                "support_refs": ["typed-evidence-record:record-shade"],
+                                "support_refs": ["S1"],
                             }
                         ],
                     },
@@ -239,8 +307,88 @@ def test_forge_human_article_writer_uses_structured_tool_with_full_evidence() ->
     assert article.claims[0].support_refs[0].code == "typed-evidence-record:record-shade"
     sent = json.dumps(client.sent)
     assert "Full Shade evidence text." in sent
+    assert "support_alias" in sent
+    assert "S1" in sent
     assert "source_text" in sent
+    assert "typed-evidence-record:record-shade" not in sent
     assert '"summary"' not in sent
+
+
+def test_forge_human_article_writer_rejects_unknown_support_alias() -> None:
+    client = FakeClient(
+        [
+            [
+                ToolCall(
+                    tool="write_article",
+                    args={
+                        "page_id": "shade",
+                        "title": "Shade",
+                        "sections": [
+                            {
+                                "section_id": "overview",
+                                "heading": "Overview",
+                                "blocks": [
+                                    {
+                                        "block_id": "b1",
+                                        "block_kind": "paragraph",
+                                        "text": "Shade creates darkness around the target.",
+                                    }
+                                ],
+                            }
+                        ],
+                        "claims": [
+                            {
+                                "claim_id": "c1",
+                                "sentence": "Shade creates darkness around the target.",
+                                "support_refs": ["support-1"],
+                            }
+                        ],
+                    },
+                )
+            ]
+        ]
+    )
+    writer = ForgeHumanArticleWriter(
+        client=client,
+        context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
+        schema_text="schema",
+        max_iterations=1,
+    )
+
+    attempt = write_human_article_page(
+        _pack(),
+        PageMetadata(
+            "shade",
+            "concept",
+            "Shade summary.",
+            page_family="topic-concept",
+            sources=("raw/sword.pdf",),
+        ),
+        writer,
+        max_attempts=1,
+    )
+
+    assert attempt.page is None
+    assert attempt.record is None
+    assert _finding_types(attempt.findings) == {"article-writer-error"}
+
+
+def test_write_human_article_page_includes_exception_type_for_blank_errors() -> None:
+    attempt = write_human_article_page(
+        _pack(),
+        PageMetadata(
+            "shade",
+            "concept",
+            "Shade summary.",
+            page_family="topic-concept",
+            sources=("raw/sword.pdf",),
+        ),
+        _BlankErrorWriter(),
+        max_attempts=1,
+    )
+
+    assert attempt.page is None
+    assert attempt.findings[0].message == "Article writer failed: TimeoutError"
 
 
 def _article(
@@ -302,6 +450,49 @@ def _pack(
     )
 
 
+def _pack_with_two_items() -> EvidencePack:
+    first = _pack().items[0]
+    second = EvidencePackItem(
+        support_ref=_SECOND_SUPPORT,
+        typed_evidence_record_id="record-wisp",
+        evidence_record_type="rule",
+        source_anchors=(_anchor(),),
+        source_block_ids=("block-wisp",),
+        source_text="Will-o-wisp creates light.",
+        payload_text="Will-o-wisp creates light.",
+        citation_label="raw/sword.pdf (p. 59)",
+        section_path="Spirit Magic List / Will-o-wisp",
+    )
+    return EvidencePack(
+        page_id="shade",
+        source_id="source",
+        source_hash=_HASH,
+        source_profile_kind="rpg-rules",
+        page_kind="concept",
+        page_family="topic-concept",
+        title="Shade",
+        items=(first, second),
+        coverage=(
+            EvidencePackCoverage(
+                "shade",
+                "topic-concept",
+                "topic-concept",
+                _SUPPORT,
+                "page-purpose-support",
+                "covered",
+            ),
+            EvidencePackCoverage(
+                "shade",
+                "topic-concept",
+                "topic-concept",
+                _SECOND_SUPPORT,
+                "page-purpose-support",
+                "covered",
+            ),
+        ),
+    )
+
+
 def _anchor() -> SourceAnchor:
     return SourceAnchor(
         source_locator="sword.pdf",
@@ -323,6 +514,11 @@ class _Writer:
 class _ExplodingWriter:
     def write_article(self, pack: EvidencePack, findings=()) -> HumanArticle:  # type: ignore[no-untyped-def]
         raise ValueError("Support ref must be formatted as kind:id, got 'support-1'.")
+
+
+class _BlankErrorWriter:
+    def write_article(self, pack: EvidencePack, findings=()) -> HumanArticle:  # type: ignore[no-untyped-def]
+        raise TimeoutError()
 
 
 def _types(result) -> set[str]:  # type: ignore[no-untyped-def]

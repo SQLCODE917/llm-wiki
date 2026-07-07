@@ -84,6 +84,7 @@ def run_diagnostic_repair_loop(
         source_hash=source_hash,
         pack_set=pack_set,
         publication_plan=publication_plan,
+        page_ids=frozenset(page.page_id for page in initial_human_articles.pages),
     )
     corpus = diagnostic_answer_corpus_from_pages(initial_human_articles.pages)
     answer_set = answer_diagnostic_questions(question_set, corpus, answerer)

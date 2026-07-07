@@ -66,6 +66,8 @@ from llmwiki.runtime.ledger_human_article_pages import build_human_article_linke
 from llmwiki.runtime.markdown_source_map import markdown_source_map
 from llmwiki.store import WikiStore
 
+_INITIAL_ARTICLE_PACK_BUDGET = 3
+
 
 @dataclass(frozen=True)
 class IngestCompiler:
@@ -129,6 +131,8 @@ class IngestCompiler:
             source_locator=source_locator,
             today=self.today,
             article_writer=self.article_writer,
+            max_article_packs=_INITIAL_ARTICLE_PACK_BUDGET,
+            max_attempts_per_pack=1,
         )
         initial_article_lint = build_article_lint_artifact(
             source_hash=source_map.source_hash,

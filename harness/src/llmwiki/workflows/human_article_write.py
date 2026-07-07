@@ -3,12 +3,13 @@
 from __future__ import annotations
 
 import json
+from dataclasses import dataclass
 from typing import Any
 
 from forge.core.workflow import ToolDef, ToolSpec, Workflow
 from pydantic import BaseModel, Field, model_validator
 
-from llmwiki.domain.ledger.evidence_pack import EvidencePack, SupportRef
+from llmwiki.domain.ledger.evidence_pack import EvidencePack, EvidencePackItem, SupportRef
 from llmwiki.domain.ledger.human_article import (
     ArticleBlock,
     ArticleClaim,
@@ -17,6 +18,12 @@ from llmwiki.domain.ledger.human_article import (
     ArticleSection,
     HumanArticle,
 )
+from llmwiki.domain.model_profile import DEFAULT_MODEL_PROFILE, ModelProfile
+
+_PROMPT_EVIDENCE_ITEM_LIMIT = 24
+_PROMPT_SOURCE_TEXT_CHARS = 1_600
+_PROMPT_PAYLOAD_TEXT_CHARS = 1_200
+_PROMPT_JSON_OVERHEAD_CHARS = 450
 
 
 class ArticleBlockParams(BaseModel):
@@ -37,7 +44,9 @@ class ArticleSectionParams(BaseModel):
 class ArticleClaimParams(BaseModel):
     claim_id: str
     sentence: str
-    support_refs: list[str]
+    support_refs: list[str] = Field(
+        description="Evidence support aliases from this prompt, such as S1 or S2."
+    )
     claim_role: str = "fact"
 
 
@@ -46,7 +55,10 @@ class ArticleRelatedLinkParams(BaseModel):
     label: str
     relation: str
     preview_text: str
-    shared_support_refs: list[str] = Field(default_factory=list)
+    shared_support_refs: list[str] = Field(
+        default_factory=list,
+        description="Shared evidence support aliases from this prompt, such as S1 or S2.",
+    )
 
 
 class WriteArticleParams(BaseModel):
@@ -69,14 +81,107 @@ class WriteArticleParams(BaseModel):
         return data
 
 
+@dataclass(frozen=True)
+class ArticleSupportAlias:
+    alias: str
+    support_ref: SupportRef
+
+
+@dataclass(frozen=True)
+class ArticlePromptEvidenceItem:
+    alias: str
+    item: EvidencePackItem
+    source_text: str
+    payload_text: str
+    source_text_omitted_chars: int
+    payload_text_omitted_chars: int
+
+
+@dataclass(frozen=True)
+class ArticleSupportAliases:
+    entries: tuple[ArticleSupportAlias, ...]
+
+    @property
+    def allowed_aliases(self) -> tuple[str, ...]:
+        return tuple(entry.alias for entry in self.entries)
+
+    @property
+    def allowed_aliases_text(self) -> str:
+        return ", ".join(self.allowed_aliases)
+
+    def support_ref_for(self, alias: str) -> SupportRef:
+        for entry in self.entries:
+            if entry.alias == alias:
+                return entry.support_ref
+        raise ValueError(
+            f"Unknown support alias {alias!r}; allowed aliases: {self.allowed_aliases_text}."
+        )
+
+
+def article_support_aliases(pack: EvidencePack) -> ArticleSupportAliases:
+    return ArticleSupportAliases(
+        tuple(
+            ArticleSupportAlias(f"S{index}", item.support_ref)
+            for index, item in enumerate(pack.items, start=1)
+        )
+    )
+
+
+def article_prompt_evidence_items(
+    pack: EvidencePack,
+    model_profile: ModelProfile = DEFAULT_MODEL_PROFILE,
+) -> tuple[ArticlePromptEvidenceItem, ...]:
+    budget_chars = model_profile.chars_for_tokens(model_profile.evidence_pack_prompt_tokens)
+    budget_chars = max(4_000, budget_chars - 4_000)
+    selected: list[ArticlePromptEvidenceItem] = []
+    used_chars = 0
+    for item in pack.items:
+        alias = f"S{len(selected) + 1}"
+        prompt_item = ArticlePromptEvidenceItem(
+            alias=alias,
+            item=item,
+            source_text=_exact_prefix(item.source_text, _PROMPT_SOURCE_TEXT_CHARS),
+            payload_text=_exact_prefix(item.payload_text, _PROMPT_PAYLOAD_TEXT_CHARS),
+            source_text_omitted_chars=_omitted_chars(
+                item.source_text, _PROMPT_SOURCE_TEXT_CHARS
+            ),
+            payload_text_omitted_chars=_omitted_chars(
+                item.payload_text, _PROMPT_PAYLOAD_TEXT_CHARS
+            ),
+        )
+        item_chars = (
+            len(prompt_item.source_text)
+            + len(prompt_item.payload_text)
+            + _PROMPT_JSON_OVERHEAD_CHARS
+        )
+        if selected and (
+            len(selected) >= _PROMPT_EVIDENCE_ITEM_LIMIT
+            or used_chars + item_chars > budget_chars
+        ):
+            break
+        selected.append(prompt_item)
+        used_chars += item_chars
+    return tuple(selected)
+
+
+def article_prompt_support_aliases(pack: EvidencePack) -> ArticleSupportAliases:
+    return ArticleSupportAliases(
+        tuple(
+            ArticleSupportAlias(item.alias, item.item.support_ref)
+            for item in article_prompt_evidence_items(pack)
+        )
+    )
+
+
 _SYSTEM_PROMPT = """Write one structured HumanArticle from one EvidencePack.
 
 Use only EvidencePack items as factual support. Do not write markdown headings,
 frontmatter, citations, source trails, or final wiki markdown. The harness will
 render markdown after validation. Every factual sentence in article blocks must
-appear verbatim as one ArticleClaim.sentence and cite selected support_refs from
-the pack. If the evidence is too weak, call write_article with empty sections
-and claims rather than inventing or clipping text.
+appear verbatim as one ArticleClaim.sentence and cite selected support_refs using
+only support_alias values from the prompt, such as S1 or S2. If the evidence is too
+weak, call write_article with empty sections and claims rather than inventing or
+clipping text.
 
 Schema:
 {schema}
@@ -96,9 +201,11 @@ def build_human_article_workflow(pack: EvidencePack) -> Workflow:
 
 
 def write_article_tool(pack: EvidencePack) -> ToolDef:
+    aliases = article_prompt_support_aliases(pack)
+
     def _write_article(**kwargs: object) -> str:
         params = WriteArticleParams(**kwargs)  # type: ignore[arg-type]
-        article = human_article_from_params(params)
+        article = human_article_from_params(params, aliases)
         if article.page_id != pack.page_id:
             raise ValueError(
                 f"Article page_id {article.page_id!r} does not match {pack.page_id!r}."
@@ -110,7 +217,8 @@ def write_article_tool(pack: EvidencePack) -> ToolDef:
             name="write_article",
             description=(
                 f"Submit the structured HumanArticle for [[{pack.page_id}]]. "
-                "Use only support_refs listed in the evidence pack."
+                f"Use only support aliases listed in the evidence pack: "
+                f"{aliases.allowed_aliases_text}."
             ),
             parameters=WriteArticleParams,
         ),
@@ -121,6 +229,7 @@ def write_article_tool(pack: EvidencePack) -> ToolDef:
 def render_human_article_prompt(
     pack: EvidencePack, findings: tuple[ArticleFinding, ...] = ()
 ) -> str:
+    prompt_items = article_prompt_evidence_items(pack)
     payload = {
         "page": {
             "page_id": pack.page_id,
@@ -130,18 +239,21 @@ def render_human_article_prompt(
             "source_id": pack.source_id,
             "source_profile_kind": pack.source_profile_kind,
         },
+        "instructions": {
+            "support_refs": "Use only support_alias values like S1 in support_refs.",
+        },
         "evidence_items": [
             {
-                "support_ref": item.support_ref.code,
-                "typed_evidence_record_id": item.typed_evidence_record_id,
-                "evidence_record_type": item.evidence_record_type,
-                "source_block_ids": list(item.source_block_ids),
-                "source_text": item.source_text,
-                "payload_text": item.payload_text,
-                "citation_label": item.citation_label,
-                "section_path": item.section_path,
+                "support_alias": prompt_item.alias,
+                "evidence_record_type": prompt_item.item.evidence_record_type,
+                "source_text": prompt_item.source_text,
+                "payload_text": prompt_item.payload_text,
+                "source_text_omitted_chars": prompt_item.source_text_omitted_chars,
+                "payload_text_omitted_chars": prompt_item.payload_text_omitted_chars,
+                "citation_label": prompt_item.item.citation_label,
+                "section_path": prompt_item.item.section_path,
             }
-            for item in pack.items
+            for prompt_item in prompt_items
         ],
         "previous_validation_findings": [
             {
@@ -159,7 +271,12 @@ def render_human_article_prompt(
     return json.dumps(payload, ensure_ascii=True, indent=2)
 
 
-def human_article_from_params(params: WriteArticleParams) -> HumanArticle:
+def human_article_from_params(
+    params: WriteArticleParams, support_aliases: ArticleSupportAliases | None = None
+) -> HumanArticle:
+    support_ref_from_code = (
+        support_aliases.support_ref_for if support_aliases is not None else _support_ref_from_code
+    )
     return HumanArticle(
         params.page_id,
         params.title,
@@ -185,7 +302,7 @@ def human_article_from_params(params: WriteArticleParams) -> HumanArticle:
             ArticleClaim(
                 claim.claim_id,
                 claim.sentence,
-                tuple(_support_ref_from_code(ref) for ref in claim.support_refs),
+                tuple(support_ref_from_code(ref) for ref in claim.support_refs),
                 claim.claim_role,
             )
             for claim in params.claims
@@ -196,7 +313,7 @@ def human_article_from_params(params: WriteArticleParams) -> HumanArticle:
                 link.label,
                 link.relation,
                 link.preview_text,
-                tuple(_support_ref_from_code(ref) for ref in link.shared_support_refs),
+                tuple(support_ref_from_code(ref) for ref in link.shared_support_refs),
             )
             for link in params.related_links
         ),
@@ -262,3 +379,13 @@ def _support_ref_from_code(code: str) -> SupportRef:
     if not separator or not support_kind or not support_id:
         raise ValueError(f"Support ref must be formatted as kind:id, got {code!r}.")
     return SupportRef(support_kind, support_id)
+
+
+def _exact_prefix(text: str, max_chars: int) -> str:
+    if len(text) <= max_chars:
+        return text
+    return text[:max_chars].rstrip()
+
+
+def _omitted_chars(text: str, max_chars: int) -> int:
+    return max(0, len(text) - max_chars)

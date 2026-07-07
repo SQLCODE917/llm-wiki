@@ -3,8 +3,7 @@
 from __future__ import annotations
 
 import asyncio
-from collections.abc import Callable, Coroutine
-from concurrent.futures import ThreadPoolExecutor
+from collections.abc import Callable
 from typing import Any, Protocol
 
 from forge.context import ContextManager
@@ -18,6 +17,8 @@ from llmwiki.domain.diagnostic_contracts import (
     DiagnosticQuestion,
 )
 from llmwiki.domain.ledger.evidence_pack import EvidencePack
+from llmwiki.runtime.async_thread import run_coroutine_in_daemon_thread
+from llmwiki.runtime.ollama_client_scope import loop_local_ollama_client
 from llmwiki.workflows.diagnostic_answer import (
     build_diagnostic_answer_workflow,
     diagnostic_answer_from_json,
@@ -28,6 +29,8 @@ from llmwiki.workflows.diagnostic_judge import (
     diagnostic_findings_from_json,
     render_diagnostic_judge_prompt,
 )
+
+_DIAGNOSTIC_MODEL_TIMEOUT_SECONDS = 30.0
 
 
 class _ForgeDiagnosticAdapter(Protocol):
@@ -56,17 +59,29 @@ class ForgeDiagnosticAnswerer:
     def answer_diagnostic_question(
         self, question: DiagnosticQuestion, corpus: DiagnosticAnswerCorpus
     ) -> DiagnosticAnswer:
-        return _run_answer(self._answer_async(question, corpus))
+        return run_coroutine_in_daemon_thread(
+            self._answer_async(question, corpus),
+            timeout_seconds=_DIAGNOSTIC_MODEL_TIMEOUT_SECONDS + 5.0,
+            label="diagnostic-answer",
+        )
 
     async def _answer_async(
         self, question: DiagnosticQuestion, corpus: DiagnosticAnswerCorpus
     ) -> DiagnosticAnswer:
-        runner = _runner(self, "Reply with exactly one record_diagnostic_answer tool call.")
-        result = await runner.run(
-            build_diagnostic_answer_workflow(question, corpus),
-            render_diagnostic_answer_prompt(question, corpus),
-            prompt_vars={"schema": self.schema_text},
-        )
+        async with loop_local_ollama_client(self.client) as client:
+            runner = _runner(
+                self,
+                "Reply with exactly one record_diagnostic_answer tool call.",
+                client=client,
+            )
+            result = await asyncio.wait_for(
+                runner.run(
+                    build_diagnostic_answer_workflow(question, corpus),
+                    render_diagnostic_answer_prompt(question, corpus),
+                    prompt_vars={"schema": self.schema_text},
+                ),
+                timeout=_DIAGNOSTIC_MODEL_TIMEOUT_SECONDS,
+            )
         return diagnostic_answer_from_json(str(result))
 
 
@@ -92,7 +107,11 @@ class ForgeDiagnosticJudge:
         answer: DiagnosticAnswer,
         pack: EvidencePack | None,
     ) -> tuple[DiagnosticFinding, ...]:
-        return _run_findings(self._judge_async(question, answer, pack))
+        return run_coroutine_in_daemon_thread(
+            self._judge_async(question, answer, pack),
+            timeout_seconds=_DIAGNOSTIC_MODEL_TIMEOUT_SECONDS + 5.0,
+            label="diagnostic-judge",
+        )
 
     async def _judge_async(
         self,
@@ -100,36 +119,34 @@ class ForgeDiagnosticJudge:
         answer: DiagnosticAnswer,
         pack: EvidencePack | None,
     ) -> tuple[DiagnosticFinding, ...]:
-        runner = _runner(self, "Reply with exactly one record_diagnostic_judgment tool call.")
-        result = await runner.run(
-            build_diagnostic_judge_workflow(question, answer, pack),
-            render_diagnostic_judge_prompt(question, answer, pack),
-            prompt_vars={"schema": self.schema_text},
-        )
+        async with loop_local_ollama_client(self.client) as client:
+            runner = _runner(
+                self,
+                "Reply with exactly one record_diagnostic_judgment tool call.",
+                client=client,
+            )
+            result = await asyncio.wait_for(
+                runner.run(
+                    build_diagnostic_judge_workflow(question, answer, pack),
+                    render_diagnostic_judge_prompt(question, answer, pack),
+                    prompt_vars={"schema": self.schema_text},
+                ),
+                timeout=_DIAGNOSTIC_MODEL_TIMEOUT_SECONDS,
+            )
         return diagnostic_findings_from_json(str(result))
 
 
-def _runner(adapter: _ForgeDiagnosticAdapter, retry_nudge: str) -> WorkflowRunner:
+def _runner(
+    adapter: _ForgeDiagnosticAdapter, retry_nudge: str, *, client: Any | None = None
+) -> WorkflowRunner:
     return WorkflowRunner(
-        client=adapter.client,
+        client=client or adapter.client,
         context_manager=adapter.context_manager,
         max_iterations=adapter.max_iterations,
         max_tool_errors=1,
         on_message=_message_writer(adapter.on_message),
         retry_nudge=retry_nudge,
     )
-
-
-def _run_answer(coro: Coroutine[Any, Any, DiagnosticAnswer]) -> DiagnosticAnswer:
-    with ThreadPoolExecutor(max_workers=1) as executor:
-        return executor.submit(lambda: asyncio.run(coro)).result()
-
-
-def _run_findings(
-    coro: Coroutine[Any, Any, tuple[DiagnosticFinding, ...]]
-) -> tuple[DiagnosticFinding, ...]:
-    with ThreadPoolExecutor(max_workers=1) as executor:
-        return executor.submit(lambda: asyncio.run(coro)).result()
 
 
 def _message_writer(
