@@ -42,6 +42,22 @@ def test_rejects_pack_item_without_source_text_or_payload_text() -> None:
     pack_set = build_evidence_pack_set(
         publication_plan=_plan(_candidate("shade", ("record-shade",))),
         evidence_record_set=_record_set(
+            _record("record-shade", "rule", "Shade creates darkness.", block_ids=("empty",))
+        ),
+        source_map=_source_map(_block("empty", "")),
+    )
+
+    assert pack_set.packs == ()
+    assert {finding.finding_code for finding in pack_set.findings} == {
+        "missing-support-text",
+        "no-valid-evidence-pack-items",
+    }
+
+
+def test_missing_source_block_ref_blocks_pack_item() -> None:
+    pack_set = build_evidence_pack_set(
+        publication_plan=_plan(_candidate("shade", ("record-shade",))),
+        evidence_record_set=_record_set(
             _record("record-shade", "rule", "Shade creates darkness.", block_ids=("missing",))
         ),
         source_map=_source_map(),
@@ -49,7 +65,7 @@ def test_rejects_pack_item_without_source_text_or_payload_text() -> None:
 
     assert pack_set.packs == ()
     assert {finding.finding_code for finding in pack_set.findings} == {
-        "missing-support-text",
+        "missing-source-block-ref",
         "no-valid-evidence-pack-items",
     }
 

@@ -7,7 +7,10 @@ from fakes import FakeClient
 from forge.context import ContextManager, NoCompact
 from forge.core.workflow import ToolCall
 
-from llmwiki.domain.article_write_queue import ArticleWriteQueuePolicy
+from llmwiki.domain.article_write_queue import (
+    ArticleWriteQueuePolicy,
+    article_write_queue_policy_for_source,
+)
 from llmwiki.domain.ledger.evidence_pack import (
     EvidencePack,
     EvidencePackCoverage,
@@ -36,6 +39,7 @@ from llmwiki.runtime.ledger_human_article_pages import (
 from llmwiki.workflows.human_article_write import (
     article_prompt_evidence_items,
     article_support_aliases,
+    human_article_from_json,
     human_article_to_json,
 )
 
@@ -61,6 +65,22 @@ def test_human_article_json_keeps_canonical_support_refs_not_aliases() -> None:
 
     assert "typed-evidence-record:record-shade" in payload
     assert '"S1"' not in payload
+    assert human_article_from_json(payload) == article
+
+
+def test_human_article_json_rejects_aliases_and_model_rescue_shapes() -> None:
+    article = _article("Shade creates darkness around the target.")
+    payload = json.loads(human_article_to_json(article))
+    payload["claims"][0]["support_refs"] = ["S1"]
+
+    with pytest.raises(ValueError, match="Support ref must be formatted"):
+        human_article_from_json(json.dumps(payload))
+
+    payload = json.loads(human_article_to_json(article))
+    payload["sections"] = payload["sections"][0]
+
+    with pytest.raises(ValueError):
+        human_article_from_json(json.dumps(payload))
 
 
 def test_article_prompt_evidence_items_bound_large_source_text() -> None:
@@ -85,7 +105,13 @@ def test_article_queue_continues_after_writer_failure() -> None:
         source_locator="sword.pdf",
         today="2026-07-07",
         article_writer=_FailsPageWriter("bad"),
-        queue_policy=ArticleWriteQueuePolicy("rpg-rules", 1, 2, 1),
+        queue_policy=ArticleWriteQueuePolicy(
+            source_profile_kind="rpg-rules",
+            target_accepted_articles=1,
+            max_public_articles=2,
+            max_attempted_packs=2,
+            max_attempts_per_pack=1,
+        ),
     )
 
     assert [page.page_id for page in result.pages] == ["good"]
@@ -96,7 +122,7 @@ def test_article_queue_continues_after_writer_failure() -> None:
     }
 
 
-def test_article_queue_stops_after_target_and_skips_nonblocking() -> None:
+def test_article_queue_continues_after_soft_target_until_public_budget() -> None:
     result = build_human_article_linked_pages(
         evidence_pack_set=_pack_set(
             _pack(page_id="first", title="First"),
@@ -105,15 +131,18 @@ def test_article_queue_stops_after_target_and_skips_nonblocking() -> None:
         source_locator="sword.pdf",
         today="2026-07-07",
         article_writer=_PackCoherentWriter(),
-        queue_policy=ArticleWriteQueuePolicy("rpg-rules", 1, 8, 1),
+        queue_policy=ArticleWriteQueuePolicy(
+            source_profile_kind="rpg-rules",
+            target_accepted_articles=1,
+            max_public_articles=2,
+            max_attempted_packs=8,
+            max_attempts_per_pack=1,
+        ),
     )
 
-    assert [page.page_id for page in result.pages] == ["first"]
-    assert result.article_write_queue_run.exhausted_reason == "target-reached"
-    assert result.article_write_queue_run.skipped_page_ids == ("second",)
-    assert {
-        finding.severity for finding in result.article_write_queue_run.findings
-    } == {"info"}
+    assert [page.page_id for page in result.pages] == ["first", "second"]
+    assert result.article_write_queue_run.exhausted_reason == "pack-list-exhausted"
+    assert result.article_write_queue_run.skipped_page_ids == ()
 
 
 def test_article_queue_stops_after_max_attempted_packs() -> None:
@@ -125,7 +154,13 @@ def test_article_queue_stops_after_max_attempted_packs() -> None:
         source_locator="sword.pdf",
         today="2026-07-07",
         article_writer=RejectingArticleWriter(),
-        queue_policy=ArticleWriteQueuePolicy("rpg-rules", 2, 1, 1),
+        queue_policy=ArticleWriteQueuePolicy(
+            source_profile_kind="rpg-rules",
+            target_accepted_articles=2,
+            max_public_articles=2,
+            max_attempted_packs=1,
+            max_attempts_per_pack=1,
+        ),
     )
 
     assert result.pages == ()
@@ -151,7 +186,12 @@ def test_article_queue_prefers_programming_recipe_then_topic() -> None:
         today="2026-07-07",
         article_writer=_PackCoherentWriter(),
         queue_policy=ArticleWriteQueuePolicy(
-            "programming-prose", 2, 2, 1, ("recipe-pattern", "topic-concept")
+            source_profile_kind="programming-prose",
+            target_accepted_articles=2,
+            max_public_articles=2,
+            max_attempted_packs=2,
+            max_attempts_per_pack=1,
+            family_targets=(("recipe-pattern", 1), ("topic-concept", 1)),
         ),
     )
 
@@ -173,11 +213,134 @@ def test_article_queue_prefers_rpg_procedure_then_topic() -> None:
         today="2026-07-07",
         article_writer=_PackCoherentWriter(),
         queue_policy=ArticleWriteQueuePolicy(
-            "rpg-rules", 2, 2, 1, ("procedure-guide", "topic-concept")
+            source_profile_kind="rpg-rules",
+            target_accepted_articles=2,
+            max_public_articles=2,
+            max_attempted_packs=2,
+            max_attempts_per_pack=1,
+            family_targets=(("procedure-guide", 1), ("topic-concept", 1)),
         ),
     )
 
     assert result.article_write_queue_run.attempted_page_ids == ("procedure", "topic")
+
+
+def test_article_queue_policy_scales_from_valid_pack_count() -> None:
+    allonge = article_write_queue_policy_for_source("programming-prose", 14)
+    sword = article_write_queue_policy_for_source("rpg-rules", 21)
+
+    assert allonge.max_public_articles == 14
+    assert allonge.max_attempted_packs == 14
+    assert allonge.target_accepted_articles == 3
+    assert dict(allonge.family_targets) == {"recipe-pattern": 6, "topic-concept": 4}
+    assert sword.max_public_articles == 21
+    assert sword.max_attempted_packs == 21
+    assert dict(sword.family_targets) == {"procedure-guide": 8, "topic-concept": 8}
+
+
+def test_rpg_scaled_policy_accepts_more_than_three_articles() -> None:
+    packs = tuple(
+        _pack(
+            page_id=f"procedure-{index}",
+            title=f"Procedure {index}",
+            family="procedure-guide",
+        )
+        for index in range(5)
+    )
+
+    result = build_human_article_linked_pages(
+        evidence_pack_set=_pack_set(*packs),
+        source_locator="sword.pdf",
+        today="2026-07-07",
+        article_writer=_PackCoherentWriter(),
+    )
+
+    assert len(result.pages) == 5
+    assert result.article_write_queue_run.policy.max_public_articles == 5
+    assert result.article_write_queue_run.acceptance_rate == 1.0
+
+
+def test_article_queue_stops_after_public_article_budget() -> None:
+    result = build_human_article_linked_pages(
+        evidence_pack_set=_pack_set(
+            _pack(page_id="first", title="First"),
+            _pack(page_id="second", title="Second"),
+            _pack(page_id="third", title="Third"),
+        ),
+        source_locator="sword.pdf",
+        today="2026-07-07",
+        article_writer=_PackCoherentWriter(),
+        queue_policy=ArticleWriteQueuePolicy(
+            source_profile_kind="rpg-rules",
+            target_accepted_articles=1,
+            max_public_articles=2,
+            max_attempted_packs=8,
+            max_attempts_per_pack=1,
+        ),
+    )
+
+    assert [page.page_id for page in result.pages] == ["first", "second"]
+    assert result.article_write_queue_run.skipped_page_ids == ("third",)
+    assert result.article_write_queue_run.exhausted_reason == "source-page-budget-reached"
+    assert "source-page-budget-reached" in {
+        finding.finding_code for finding in result.article_write_queue_run.findings
+    }
+
+
+def test_article_queue_stops_after_low_acceptance_rate() -> None:
+    packs = tuple(_pack(page_id=f"bad-{index}", title=f"Bad {index}") for index in range(9))
+
+    result = build_human_article_linked_pages(
+        evidence_pack_set=_pack_set(*packs),
+        source_locator="sword.pdf",
+        today="2026-07-07",
+        article_writer=RejectingArticleWriter(),
+        queue_policy=ArticleWriteQueuePolicy(
+            source_profile_kind="rpg-rules",
+            target_accepted_articles=3,
+            max_public_articles=9,
+            max_attempted_packs=9,
+            max_attempts_per_pack=1,
+            min_attempts_before_rate_gate=8,
+            min_acceptance_rate=0.25,
+            acceptance_rate_window=8,
+        ),
+    )
+
+    assert len(result.article_write_queue_run.attempted_page_ids) == 8
+    assert result.article_write_queue_run.skipped_page_ids == ("bad-8",)
+    assert result.article_write_queue_run.exhausted_reason == "low-acceptance-rate"
+    assert result.article_write_queue_run.rolling_acceptance_rate == 0.0
+
+
+def test_article_queue_family_caps_limit_one_family() -> None:
+    result = build_human_article_linked_pages(
+        evidence_pack_set=_pack_set(
+            _pack(page_id="recipe-a", title="Recipe A", family="recipe-pattern"),
+            _pack(page_id="recipe-b", title="Recipe B", family="recipe-pattern"),
+            _pack(page_id="topic", title="Topic", family="topic-concept"),
+            profile="programming-prose",
+        ),
+        source_locator="javascript.pdf",
+        today="2026-07-07",
+        article_writer=_PackCoherentWriter(),
+        queue_policy=ArticleWriteQueuePolicy(
+            source_profile_kind="programming-prose",
+            target_accepted_articles=3,
+            max_public_articles=3,
+            max_attempted_packs=3,
+            max_attempts_per_pack=1,
+            family_targets=(("recipe-pattern", 2), ("topic-concept", 1)),
+            family_caps=(("recipe-pattern", 1), ("topic-concept", 2)),
+        ),
+    )
+
+    assert result.article_write_queue_run.attempted_page_ids == ("recipe-a", "topic")
+    assert result.article_write_queue_run.skipped_page_ids == ("recipe-b",)
+    assert result.article_write_queue_run.family_counts == (
+        ("recipe-pattern", 1),
+        ("topic-concept", 1),
+    )
 
 
 def test_article_validator_rejects_contract_violations() -> None:
@@ -362,6 +525,7 @@ def test_forge_human_article_writer_uses_structured_tool_with_full_evidence() ->
                                         "text": "Shade creates darkness around the target.",
                                     }
                                 ],
+                                "article_claim_ids": ["c1"],
                             }
                         ],
                         "claims": [
@@ -396,7 +560,7 @@ def test_forge_human_article_writer_uses_structured_tool_with_full_evidence() ->
     assert '"summary"' not in sent
 
 
-def test_forge_human_article_writer_drops_unclaimed_block_prose() -> None:
+def test_forge_human_article_writer_rejects_unclaimed_block_prose() -> None:
     client = FakeClient(
         [
             [
@@ -438,15 +602,21 @@ def test_forge_human_article_writer_drops_unclaimed_block_prose() -> None:
         client=client,
         context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
         schema_text="schema",
+        max_iterations=1,
     )
 
-    article = writer.write_article(_pack(source_text="Full Shade evidence text."))
+    attempt = write_human_article_page(
+        _pack(source_text="Full Shade evidence text."),
+        PageMetadata("shade", "concept", "Shade summary.", page_family="topic-concept"),
+        writer,
+        max_attempts=1,
+    )
 
-    assert article.sections[0].blocks[0].text == "Shade creates darkness around the target."
-    assert validate_human_article(_pack(source_text="Full Shade evidence text."), article).accepted
+    assert attempt.page is None
+    assert _finding_types(attempt.findings) == {"article-writer-error"}
 
 
-def test_forge_human_article_writer_splits_multi_sentence_claims() -> None:
+def test_forge_human_article_writer_rejects_multi_sentence_claims() -> None:
     client = FakeClient(
         [
             [
@@ -459,7 +629,13 @@ def test_forge_human_article_writer_splits_multi_sentence_claims() -> None:
                             {
                                 "section_id": "overview",
                                 "heading": "Overview",
-                                "blocks": [],
+                                "blocks": [
+                                    {
+                                        "block_id": "b1",
+                                        "block_kind": "paragraph",
+                                        "text": "Shade can darken an area with magic.",
+                                    }
+                                ],
                                 "article_claim_ids": ["c1"],
                             }
                         ],
@@ -482,16 +658,22 @@ def test_forge_human_article_writer_splits_multi_sentence_claims() -> None:
         client=client,
         context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
         schema_text="schema",
+        max_iterations=1,
     )
     pack = _pack(source_text="Full Shade evidence text.")
 
-    article = writer.write_article(pack)
+    attempt = write_human_article_page(
+        pack,
+        PageMetadata("shade", "concept", "Shade summary.", page_family="topic-concept"),
+        writer,
+        max_attempts=1,
+    )
 
-    assert [claim.claim_id for claim in article.claims] == ["c1-1", "c1-2"]
-    assert validate_human_article(pack, article).accepted
+    assert attempt.page is None
+    assert _finding_types(attempt.findings) == {"article-writer-error"}
 
 
-def test_forge_human_article_writer_punctuates_short_claim_facts() -> None:
+def test_forge_human_article_writer_rejects_unrendered_claims() -> None:
     client = FakeClient(
         [
             [
@@ -529,17 +711,19 @@ def test_forge_human_article_writer_punctuates_short_claim_facts() -> None:
         client=client,
         context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
         schema_text="schema",
+        max_iterations=1,
     )
     pack = _pack(source_text="Full combat option evidence text.")
 
-    article = writer.write_article(pack)
+    attempt = write_human_article_page(
+        pack,
+        PageMetadata("shade", "concept", "Shade summary.", page_family="topic-concept"),
+        writer,
+        max_attempts=1,
+    )
 
-    assert article.sections[0].blocks[0].text == "Bonus Damage +2. Critical Target -1."
-    assert [claim.sentence for claim in article.claims] == [
-        "Bonus Damage +2.",
-        "Critical Target -1.",
-    ]
-    assert validate_human_article(pack, article).accepted
+    assert attempt.page is None
+    assert _finding_types(attempt.findings) == {"article-writer-error"}
 
 
 def test_forge_human_article_writer_rescues_json_string_blocks() -> None:
@@ -558,7 +742,7 @@ def test_forge_human_article_writer_rescues_json_string_blocks() -> None:
                                 "blocks": [
                                     (
                                         '{"block_id":"b1","block_kind":"paragraph",'
-                                        '"text":"Unclaimed text."}'
+                                        '"text":"Shade creates darkness around the target."}'
                                     )
                                 ],
                                 "article_claim_ids": ["c1"],
@@ -602,7 +786,13 @@ def test_forge_human_article_writer_repairs_after_tool_validation_error() -> Non
                             {
                                 "section_id": "overview",
                                 "heading": "Overview",
-                                "blocks": [],
+                                "blocks": [
+                                    {
+                                        "block_id": "b1",
+                                        "block_kind": "paragraph",
+                                        "text": "Shade can darken an area with magic.",
+                                    }
+                                ],
                                 "article_claim_ids": ["c1"],
                             }
                         ],
@@ -626,7 +816,13 @@ def test_forge_human_article_writer_repairs_after_tool_validation_error() -> Non
                             {
                                 "section_id": "overview",
                                 "heading": "Overview",
-                                "blocks": [],
+                                "blocks": [
+                                    {
+                                        "block_id": "b1",
+                                        "block_kind": "paragraph",
+                                        "text": "Shade can darken an area with magic.",
+                                    }
+                                ],
                                 "article_claim_ids": ["c1"],
                             }
                         ],
@@ -748,7 +944,14 @@ def _article(
     return HumanArticle(
         selected.page_id,
         selected.title,
-        (ArticleSection("s1", "Overview", (ArticleBlock("b1", "paragraph", sentence),)),),
+        (
+            ArticleSection(
+                "s1",
+                "Overview",
+                (ArticleBlock("b1", "paragraph", sentence),),
+                ("c1",),
+            ),
+        ),
         (ArticleClaim("c1", sentence, support_refs),),
         related,
     )

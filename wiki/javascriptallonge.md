@@ -4,7 +4,7 @@ page_kind: source
 page_family: source-manifest
 summary: Javascriptallonge: compiler source manifest from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
-updated: 2026-07-07
+updated: 2026-07-08
 domain: javascriptallonge
 category_path: sources/javascriptallonge
 source_id: javascriptallonge.pdf
@@ -26,17 +26,16 @@ Source: raw/javascriptallonge.pdf
 - Article viability: 186 accepted, 484 rejected
 - Publication budget: 14 accepted, 172 rejected candidates
 - Evidence packs: 14 valid, 0 missing/invalid
-- Article write queue: 3/3 accepted after 5 attempt(s); 9 skipped (target-reached)
-- Article lint gates: 3 accepted, 0 blocked
-- Diagnostic questions: 3; 2 missing, 0 unsupported
-- Repair run: completed; 2 page(s) changed
-- Compiler findings: 699
+- Article production: 2/14 accepted after 9 attempt(s); acceptance rate 0.22; stop low-acceptance-rate; 5 skipped; skip reasons low-acceptance-rate=5; families recipe-pattern=2
+- Article lint gates: 2 accepted, 0 blocked
+- Diagnostic questions: 2; 1 missing, 1 unsupported
+- Repair run: completed; 1 page(s) changed
+- Compiler findings: 704
 
 ## Accepted Pages
 
-- [[javascriptallonge-recipe-reassignment-mixing-let-and-const]] - Reassignment > mixing let and const: Mixing let and const declarations in JavaScript allows for variable shadowing, where a const declaration inside a block scope can shadow a let...
-- [[javascriptallonge-recipe-closures-and-scope-shadowy-variables-from-a-shadowy-planet]] - Closures and Scope > shadowy variables from a shadowy planet: JavaScript resolves variable bindings by searching a function's own environment first, then each parent environment...
-- [[javascriptallonge-recipe-or-even-the-simplest-possible-block]] - Or even: > the simplest possible block: The simplest possible block in JavaScript is an empty block, which contains zero statements separated by semicolons.
+- [[javascriptallonge-recipe-once]] - Once: The once pattern ensures that a function can only be called once. Once the function is invoked, it will return undefined on subsequent calls.
+- [[javascriptallonge-recipe-reassignment-mixing-let-and-const]] - Reassignment > mixing let and const: A let variable can still be reassigned even after being shadowed by a const in a nested scope.
 
 ## Rejected Candidates
 

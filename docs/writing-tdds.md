@@ -54,6 +54,9 @@ Stop and propose a split into multiple TDDs instead of writing one.
 9. **APIs / Interfaces** — endpoint/interface names, methods, and purpose.
    No request/response schemas or signatures UNLESS the type itself is a contract decision — i.e. if the implementer chose a different shape, the PR would be rejected.
    Those types must be pinned here exactly.
+   Identify each DeterministicBoundary and ModelOutputBoundary that the design touches.
+   Name the BoundaryDTO or domain object that parses each structured value.
+   State the BoundaryRecovery path for each ModelOutputBoundary.
 
 10. **Behavior & Domain Rules** — each business rule stated once in prose, then anchored with 1–3 concrete worked examples (inputs → expected outcome), always including the ugliest edge case.
     Examples are normative: if prose and example conflict, the example wins and the doc must be fixed.

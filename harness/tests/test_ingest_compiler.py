@@ -237,7 +237,32 @@ def test_compiler_article_queue_continues_after_failed_article_attempts(
     assert generated
     assert len(writer.seen) >= 3
     assert "article-write-queue-run.json" in compilation.artifact_files
-    assert "Article write queue:" in compilation.accepted_pages[0].page_body
+    assert "Article production:" in compilation.accepted_pages[0].page_body
+
+
+def test_compiler_scaled_article_policy_publishes_more_than_three_articles(
+    store: WikiStore, paths: WikiPaths
+) -> None:
+    (paths.raw_dir / "javascriptallonge.md").write_text(
+        _javascript_multi_recipe_source(),
+        encoding="utf-8",
+    )
+
+    compilation = IngestCompiler(
+        store=store,
+        today=TODAY,
+        run_id="compiler-test",
+        article_writer=CoherentArticleWriter(),
+    ).compile(IngestCompilerInput("javascriptallonge.md"))
+
+    generated = tuple(
+        page.page_id
+        for page in compilation.accepted_pages
+        if page.page_metadata.page_family != "source-manifest"
+    )
+    assert len(generated) > 3
+    assert "Article production:" in compilation.accepted_pages[0].page_body
+    assert "acceptance rate" in compilation.accepted_pages[0].page_body
 
 
 async def test_session_ingest_calls_injected_compiler(
@@ -353,4 +378,24 @@ const odds = values.filter(value => value % 2);
 ```
 
 Filter returns a new array with matching values.
+
+## Reduce Transform
+
+Reduce combines all values into one result.
+
+```js
+const total = values.reduce((sum, value) => sum + value, 0);
+```
+
+Reduce passes the accumulated value to each step.
+
+## Object Destructuring
+
+Destructuring binds object properties to local names.
+
+```js
+const { name, age } = person;
+```
+
+Destructuring can make property access explicit.
 """

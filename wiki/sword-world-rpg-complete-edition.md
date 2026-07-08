@@ -4,7 +4,7 @@ page_kind: source
 page_family: source-manifest
 summary: Sword World Rpg Complete Edition: compiler source manifest from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-07
+updated: 2026-07-08
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
@@ -26,17 +26,18 @@ Source: raw/Sword World RPG - Complete Edition.pdf
 - Article viability: 505 accepted, 926 rejected
 - Publication budget: 21 accepted, 484 rejected candidates
 - Evidence packs: 21 valid, 0 missing/invalid
-- Article write queue: 3/3 accepted after 4 attempt(s); 17 skipped (target-reached)
-- Article lint gates: 3 accepted, 0 blocked
-- Diagnostic questions: 3; 0 missing, 1 unsupported
-- Repair run: blocked; 0 page(s) changed
-- Compiler findings: 3247
+- Article production: 4/21 accepted after 18 attempt(s); acceptance rate 0.22; stop low-acceptance-rate; 3 skipped; skip reasons low-acceptance-rate=3; families procedure-guide=2, topic-concept=2
+- Article lint gates: 4 accepted, 0 blocked
+- Diagnostic questions: 4; 1 missing, 0 unsupported
+- Repair run: completed; 2 page(s) changed
+- Compiler findings: 3254
 
 ## Accepted Pages
 
-- [[sword-world-rpg-complete-edition-brownie-brownie-building-spirit]] - [ Brownie ] (Brownie/Building Spirit): Brownies are spirits that inhabit old houses and castles constructed over fifty years ago.
-- [[sword-world-rpg-complete-edition-procedure-starting-adventurer-languages]] - Starting Adventurer Languages: Every adventurer begins with the ability to speak common and their racial language.
-- [[sword-world-rpg-complete-edition-procedure-7-3-craftsman-skill]] - 7.3 > Craftsman Skill: The process of creating items as a craftsman involves two main steps: Craft and Value Check. Additionally, craftsmen must belong to a guild to legally...
+- [[sword-world-rpg-complete-edition-procedure-starting-adventurer-languages]] - Starting Adventurer Languages: All adventurers can speak common and racial languages.
+- [[sword-world-rpg-complete-edition-procedure-5-1-11-ancient-magic-and-the-sorcerer-skill]] - 5.1.11 Ancient Magic and the Sorcerer Skill: Ancient magic requires a mage's staff as a magical catalyst to function.
+- [[sword-world-rpg-complete-edition-2-1-target-scores]] - 2.1 > Target Scores: A character's baseline score represents their ability, but the success of an action depends on both the character's ability and the difficulty of the action...
+- [[sword-world-rpg-complete-edition-5th-level-ancient-magic-list-apport]] - 5th Level Ancient Magic List [ Apport ]: The Apport spell allows a caster to teleport their possessions into the palm of their hand.
 
 ## Rejected Candidates
 

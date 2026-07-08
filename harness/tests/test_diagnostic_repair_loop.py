@@ -160,7 +160,14 @@ def _article(pack: EvidencePack, sentence: str) -> HumanArticle:
     return HumanArticle(
         pack.page_id,
         pack.title,
-        (ArticleSection("s1", "Overview", (ArticleBlock("b1", "paragraph", sentence),)),),
+        (
+            ArticleSection(
+                "s1",
+                "Overview",
+                (ArticleBlock("b1", "paragraph", sentence),),
+                ("c1",),
+            ),
+        ),
         (ArticleClaim("c1", sentence, (pack.items[0].support_ref,)),),
     )
 

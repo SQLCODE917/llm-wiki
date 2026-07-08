@@ -11,16 +11,16 @@
 ## Entities
 
 ## Concepts
-- [[sword-world-rpg-complete-edition-brownie-brownie-building-spirit]] — [ Brownie ] (Brownie/Building Spirit): Brownies are spirits that inhabit old houses and castles constructed over fifty years ago.
+- [[sword-world-rpg-complete-edition-2-1-target-scores]] — 2.1 > Target Scores: A character's baseline score represents their ability, but the success of an action depends on both the character's ability and the difficulty of the action...
+- [[sword-world-rpg-complete-edition-5th-level-ancient-magic-list-apport]] — 5th Level Ancient Magic List [ Apport ]: The Apport spell allows a caster to teleport their possessions into the palm of their hand.
 
 ## Procedures
-- [[sword-world-rpg-complete-edition-procedure-7-3-craftsman-skill]] — 7.3 > Craftsman Skill: The process of creating items as a craftsman involves two main steps: Craft and Value Check. Additionally, craftsmen must belong to a guild to legally...
-- [[sword-world-rpg-complete-edition-procedure-starting-adventurer-languages]] — Starting Adventurer Languages: Every adventurer begins with the ability to speak common and their racial language.
+- [[sword-world-rpg-complete-edition-procedure-5-1-11-ancient-magic-and-the-sorcerer-skill]] — 5.1.11 Ancient Magic and the Sorcerer Skill: Ancient magic requires a mage's staff as a magical catalyst to function.
+- [[sword-world-rpg-complete-edition-procedure-starting-adventurer-languages]] — Starting Adventurer Languages: All adventurers can speak common and racial languages.
 
 ## Recipes
-- [[javascriptallonge-recipe-closures-and-scope-shadowy-variables-from-a-shadowy-planet]] — Closures and Scope > shadowy variables from a shadowy planet: JavaScript resolves variable bindings by searching a function's own environment first, then each parent environment...
-- [[javascriptallonge-recipe-or-even-the-simplest-possible-block]] — Or even: > the simplest possible block: The simplest possible block in JavaScript is an empty block, which contains zero statements separated by semicolons.
-- [[javascriptallonge-recipe-reassignment-mixing-let-and-const]] — Reassignment > mixing let and const: Mixing let and const declarations in JavaScript allows for variable shadowing, where a const declaration inside a block scope can shadow a let...
+- [[javascriptallonge-recipe-once]] — Once: The once pattern ensures that a function can only be called once. Once the function is invoked, it will return undefined on subsequent calls.
+- [[javascriptallonge-recipe-reassignment-mixing-let-and-const]] — Reassignment > mixing let and const: A let variable can still be reassigned even after being shadowed by a const in a nested scope.
 
 ## Syntheses
 - [[cross-source-synthesis]] — Cross-source synthesis index: 0 shared topics.

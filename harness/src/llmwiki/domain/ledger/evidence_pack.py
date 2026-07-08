@@ -207,6 +207,20 @@ def _pack_for_candidate(
                 )
             )
             continue
+        missing_block_ids = tuple(
+            block_id for block_id in record.source_block_ids if block_id not in block_by_id
+        )
+        if missing_block_ids:
+            findings.append(
+                _finding(
+                    candidate,
+                    "missing-source-block-ref",
+                    "typed evidence references missing source block(s): "
+                    + ", ".join(missing_block_ids),
+                    support_ref,
+                )
+            )
+            continue
         item = _item_for_record(record, block_by_id)
         if not item.source_text.strip() and not item.payload_text.strip():
             findings.append(

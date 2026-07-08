@@ -152,14 +152,10 @@ def ensure_extracted(
             cache_dir=cache_dir,
         )
     if not reextract and manifest_path.is_file() and (cache_dir / _DOCUMENT_MODEL_FILE).is_file():
-        try:
-            cached_document_model = document_model_from_json(
-                (cache_dir / _DOCUMENT_MODEL_FILE).read_text(encoding="utf-8")
-            )
-        except Exception:
-            cached_document_model = None
-        if cached_document_model is not None:
-            return _write_derived_artifacts(cache_dir, source_rel, cached_document_model)
+        cached_document_model = document_model_from_json(
+            (cache_dir / _DOCUMENT_MODEL_FILE).read_text(encoding="utf-8")
+        )
+        return _write_derived_artifacts(cache_dir, source_rel, cached_document_model)
 
     from llmwiki.pdf.extractor import read_page_char_counts
 

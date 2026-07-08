@@ -15,6 +15,8 @@ from llmwiki.workflows.ingest_route_tools import plan_pages_tool
 ROOT = Path(__file__).resolve().parents[2]
 VOCABULARY_PATH = ROOT / "docs" / "domain-vocabulary.md"
 WRITING_TDDS_PATH = ROOT / "docs" / "writing-tdds.md"
+AGENTS_PATH = ROOT / "AGENTS.md"
+SCHEMA_PATH = ROOT / "SCHEMA.md"
 
 
 def test_domain_vocabulary_contains_required_headings_and_classifications() -> None:
@@ -32,6 +34,9 @@ def test_domain_vocabulary_contains_required_headings_and_classifications() -> N
         "first-level domain object",
         "second-level domain object",
         "boundary DTO",
+        "deterministic boundary",
+        "model output boundary",
+        "boundary recovery",
         "persistence model",
         "view model",
     ):
@@ -87,6 +92,24 @@ def test_writing_tdds_references_domain_vocabulary() -> None:
     text = WRITING_TDDS_PATH.read_text(encoding="utf-8")
 
     assert "docs/domain-vocabulary.md" in text
+    assert "DeterministicBoundary" in text
+    assert "ModelOutputBoundary" in text
+    assert "BoundaryRecovery" in text
+
+
+def test_agent_guidance_contains_deterministic_boundary_rule() -> None:
+    text = AGENTS_PATH.read_text(encoding="utf-8")
+
+    assert "### Boundary validation" in text
+    assert "Deterministic project-owned boundaries must fail fast" in text
+    assert "Invalid model output must not become accepted state directly" in text
+
+
+def test_schema_describes_strict_compiler_artifacts() -> None:
+    text = SCHEMA_PATH.read_text(encoding="utf-8")
+
+    assert "schema-owned generated state" in text
+    assert "strict compiler contracts" in text
 
 
 def test_page_metadata_rejects_invalid_page_id() -> None:

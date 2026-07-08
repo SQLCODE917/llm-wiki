@@ -49,12 +49,17 @@ def admit_compiler_page_candidates(
     structure_report: SourceStructureIntegrityReport,
     record_plan: SourceRecordPlan,
 ) -> CandidateAdmissionResult:
+    all_records_by_id = {record.typed_evidence_record_id: record for record in record_set.records}
     records_by_id = {
         record.typed_evidence_record_id: record for record in record_set.accepted_records
     }
     accepted: list[PageCandidate] = []
     findings: list[CandidateAdmissionFinding] = []
     for candidate in candidates:
+        support_finding = _support_reference_finding(candidate, all_records_by_id, records_by_id)
+        if support_finding is not None:
+            findings.append(support_finding)
+            continue
         finding = _candidate_finding(candidate, records_by_id, structure_report, record_plan)
         if finding is not None:
             findings.append(finding)
@@ -68,6 +73,28 @@ def admit_compiler_page_candidates(
         tuple(findings),
     )
     return CandidateAdmissionResult(tuple(accepted), report)
+
+
+def _support_reference_finding(
+    candidate: PageCandidate,
+    all_records_by_id: dict[str, TypedEvidenceRecord],
+    accepted_records_by_id: dict[str, TypedEvidenceRecord],
+) -> CandidateAdmissionFinding | None:
+    for record_id in candidate.supporting_evidence_record_ids:
+        record = all_records_by_id.get(record_id)
+        if record is None:
+            return _finding(
+                candidate,
+                "unknown-support-ref",
+                f"candidate references missing typed evidence record {record_id!r}",
+            )
+        if record_id not in accepted_records_by_id:
+            return _finding(
+                candidate,
+                "supporting-evidence-not-accepted",
+                f"candidate references {record.status} typed evidence record {record_id!r}",
+            )
+    return None
 
 
 def _candidate_finding(

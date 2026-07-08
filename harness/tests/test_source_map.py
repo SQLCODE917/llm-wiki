@@ -1,3 +1,7 @@
+import json
+
+import pytest
+
 from llmwiki.domain.source_map import (
     build_prompt_windows,
     normalized_source_map_from_json,
@@ -88,6 +92,34 @@ def test_source_map_builds_blocks_findings_and_roundtrips() -> None:
         "table-block-candidate",
     }
     assert expected_findings.issubset({finding.finding_code for finding in source_map.findings})
+
+
+def test_source_map_json_rejects_numeric_strings_and_unknown_block_types() -> None:
+    source_map = build_normalized_source_map(
+        _model((_element("e1", "paragraph", "Shade", "Shade creates darkness.", 10),))
+    )
+    payload = json.loads(normalized_source_map_to_json(source_map))
+    payload["source_blocks"][0]["page_span"][0] = "10"
+
+    with pytest.raises(ValueError, match="page_span"):
+        normalized_source_map_from_json(json.dumps(payload))
+
+    payload = json.loads(normalized_source_map_to_json(source_map))
+    payload["source_blocks"][0]["block_type"] = "mystery"
+
+    with pytest.raises(ValueError, match="block_type"):
+        normalized_source_map_from_json(json.dumps(payload))
+
+
+def test_source_map_json_rejects_malformed_anchors() -> None:
+    source_map = build_normalized_source_map(
+        _model((_element("e1", "paragraph", "Shade", "Shade creates darkness.", 10),))
+    )
+    payload = json.loads(normalized_source_map_to_json(source_map))
+    payload["source_blocks"][0]["source_anchor"] = "not-an-object"
+
+    with pytest.raises(ValueError, match="source anchor"):
+        normalized_source_map_from_json(json.dumps(payload))
 
 
 def test_source_block_ids_are_stable() -> None:

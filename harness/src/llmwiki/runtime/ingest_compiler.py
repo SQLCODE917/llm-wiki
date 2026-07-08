@@ -139,7 +139,7 @@ class IngestCompiler:
             source_map=source_map,
         )
         queue_policy = default_article_write_queue_policy(
-            source_profile.source_profile.profile_id
+            source_profile.source_profile.profile_id, len(pack_set.packs)
         )
         initial_human_articles = build_human_article_linked_pages(
             evidence_pack_set=pack_set,

@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from typing import Any
 
 from forge.core.workflow import ToolDef, ToolSpec, Workflow
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 from llmwiki.domain.ledger.evidence_pack import EvidencePack, EvidencePackItem, SupportRef
 from llmwiki.domain.ledger.human_article import (
@@ -96,6 +96,55 @@ class WriteArticleParams(BaseModel):
                 _json_object_or_original(section) for section in data["sections"]
             )
         return data
+
+
+class ArticleBlockArtifactParams(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    block_id: str
+    block_kind: str
+    text: str = ""
+    items: list[str] = Field(default_factory=list)
+    table_rows: list[list[str]] = Field(default_factory=list)
+
+
+class ArticleSectionArtifactParams(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    section_id: str
+    heading: str
+    blocks: list[ArticleBlockArtifactParams]
+    article_claim_ids: list[str] = Field(default_factory=list)
+
+
+class ArticleClaimArtifactParams(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    claim_id: str
+    sentence: str
+    support_refs: list[str]
+    claim_role: str = "fact"
+
+
+class ArticleRelatedLinkArtifactParams(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    page_id: str
+    label: str
+    relation: str
+    preview_text: str
+    shared_support_refs: list[str] = Field(default_factory=list)
+
+
+class HumanArticleArtifactParams(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    page_id: str
+    title: str
+    sections: list[ArticleSectionArtifactParams]
+    claims: list[ArticleClaimArtifactParams]
+    related_links: list[ArticleRelatedLinkArtifactParams] = Field(default_factory=list)
+    source_trail_items: list[str] = Field(default_factory=list)
 
 
 @dataclass(frozen=True)
@@ -232,6 +281,9 @@ def write_article_tool(pack: EvidencePack) -> ToolDef:
             raise ValueError(
                 f"Article page_id {article.page_id!r} does not match {pack.page_id!r}."
             )
+        authored_findings = _model_authored_shape_findings(article)
+        if authored_findings:
+            raise ValueError(_tool_validation_message(authored_findings))
         result = validate_human_article(pack, article)
         actionable_findings = tuple(
             finding
@@ -239,6 +291,9 @@ def write_article_tool(pack: EvidencePack) -> ToolDef:
             if finding.finding_type
             in {
                 "unmapped-factual-sentence",
+                "unrendered-article-claim",
+                "unmapped-article-claim",
+                "unknown-section-claim-id",
                 "placeholder-text",
                 "clipped-evidence-fragment",
                 "copied-source-phrases",
@@ -356,9 +411,7 @@ def human_article_from_params(
         ),
         tuple(params.source_trail_items),
     )
-    if support_aliases is None:
-        return article
-    return _claim_authored_article(article)
+    return article
 
 
 def human_article_to_json(article: HumanArticle) -> str:
@@ -366,7 +419,49 @@ def human_article_to_json(article: HumanArticle) -> str:
 
 
 def human_article_from_json(text: str) -> HumanArticle:
-    return human_article_from_params(WriteArticleParams(**json.loads(text)))
+    params = HumanArticleArtifactParams(**json.loads(text))
+    return HumanArticle(
+        params.page_id,
+        params.title,
+        tuple(
+            ArticleSection(
+                section.section_id,
+                section.heading,
+                tuple(
+                    ArticleBlock(
+                        block.block_id,
+                        block.block_kind,
+                        block.text,
+                        tuple(block.items),
+                        tuple(tuple(row) for row in block.table_rows),
+                    )
+                    for block in section.blocks
+                ),
+                tuple(section.article_claim_ids),
+            )
+            for section in params.sections
+        ),
+        tuple(
+            ArticleClaim(
+                claim.claim_id,
+                claim.sentence,
+                tuple(_support_ref_from_code(ref) for ref in claim.support_refs),
+                claim.claim_role,
+            )
+            for claim in params.claims
+        ),
+        tuple(
+            ArticleRelatedLink(
+                link.page_id,
+                link.label,
+                link.relation,
+                link.preview_text,
+                tuple(_support_ref_from_code(ref) for ref in link.shared_support_refs),
+            )
+            for link in params.related_links
+        ),
+        tuple(params.source_trail_items),
+    )
 
 
 def _human_article_json(article: HumanArticle) -> dict[str, object]:
@@ -421,101 +516,6 @@ def _support_ref_from_code(code: str) -> SupportRef:
     return SupportRef(support_kind, support_id)
 
 
-def _claim_authored_article(article: HumanArticle) -> HumanArticle:
-    """Use supported claim sentences as the only factual prose from tool output."""
-
-    claims, claim_id_map = _split_multi_sentence_claims(article.claims)
-    claims_by_id = {claim.claim_id: claim for claim in claims}
-    used_claim_ids: set[str] = set()
-    sections: list[ArticleSection] = []
-    for section_index, section in enumerate(article.sections, start=1):
-        section_claim_ids = tuple(
-            expanded_claim_id
-            for claim_id in section.article_claim_ids
-            for expanded_claim_id in claim_id_map.get(claim_id, ())
-            if expanded_claim_id in claims_by_id
-        )
-        if not section_claim_ids and len(article.sections) == 1:
-            section_claim_ids = tuple(claim.claim_id for claim in claims)
-        used_claim_ids.update(section_claim_ids)
-        blocks = _blocks_from_claims(section.section_id, section_claim_ids, claims_by_id)
-        sections.append(
-            ArticleSection(
-                section.section_id or f"section-{section_index}",
-                section.heading,
-                blocks,
-                section_claim_ids,
-            )
-        )
-
-    remaining_claim_ids = tuple(
-        claim.claim_id for claim in claims if claim.claim_id not in used_claim_ids
-    )
-    if remaining_claim_ids:
-        if sections:
-            first = sections[0]
-            claim_ids = first.article_claim_ids + remaining_claim_ids
-            sections[0] = ArticleSection(
-                first.section_id,
-                first.heading,
-                _blocks_from_claims(first.section_id, claim_ids, claims_by_id),
-                claim_ids,
-            )
-        else:
-            sections.append(
-                ArticleSection(
-                    "overview",
-                    "Overview",
-                    _blocks_from_claims("overview", remaining_claim_ids, claims_by_id),
-                    remaining_claim_ids,
-                )
-            )
-
-    return HumanArticle(
-        article.page_id,
-        article.title,
-        tuple(sections),
-        claims,
-        article.related_links,
-        article.source_trail_items,
-        article.findings,
-    )
-
-
-def _split_multi_sentence_claims(
-    claims: tuple[ArticleClaim, ...],
-) -> tuple[tuple[ArticleClaim, ...], dict[str, tuple[str, ...]]]:
-    normalized_claims: list[ArticleClaim] = []
-    claim_id_map: dict[str, tuple[str, ...]] = {}
-    for claim in claims:
-        sentences = tuple(sentence for sentence in split_sentences(claim.sentence) if sentence)
-        if len(sentences) <= 1:
-            normalized_claims.append(
-                ArticleClaim(
-                    claim.claim_id,
-                    _complete_sentence(claim.sentence),
-                    claim.support_refs,
-                    claim.claim_role,
-                )
-            )
-            claim_id_map[claim.claim_id] = (claim.claim_id,)
-            continue
-        expanded_ids: list[str] = []
-        for index, sentence in enumerate(sentences, start=1):
-            claim_id = f"{claim.claim_id}-{index}"
-            expanded_ids.append(claim_id)
-            normalized_claims.append(
-                ArticleClaim(
-                    claim_id,
-                    _complete_sentence(sentence),
-                    claim.support_refs,
-                    claim.claim_role,
-                )
-            )
-        claim_id_map[claim.claim_id] = tuple(expanded_ids)
-    return tuple(normalized_claims), claim_id_map
-
-
 def _json_object_or_original(value: object) -> object:
     if not isinstance(value, str):
         return value
@@ -529,38 +529,57 @@ def _json_object_or_original(value: object) -> object:
     return decoded if isinstance(decoded, dict) else value
 
 
-def _complete_sentence(text: str) -> str:
-    cleaned = " ".join(text.split()).strip()
-    if not cleaned or cleaned[-1] in ".!?":
-        return cleaned
-    return f"{cleaned}."
+def _model_authored_shape_findings(article: HumanArticle) -> tuple[ArticleFinding, ...]:
+    findings: list[ArticleFinding] = []
+    claim_ids = {claim.claim_id for claim in article.claims}
+    mapped_ids = {
+        claim_id
+        for section in article.sections
+        for claim_id in section.article_claim_ids
+    }
+    for claim in article.claims:
+        sentences = tuple(sentence for sentence in split_sentences(claim.sentence) if sentence)
+        if len(sentences) != 1:
+            findings.append(
+                ArticleFinding(
+                    "blocking",
+                    "multi-sentence-claim",
+                    article.page_id,
+                    "each ArticleClaim.sentence must contain exactly one sentence",
+                    claim.claim_id,
+                )
+            )
+        if claim.claim_id not in mapped_ids:
+            findings.append(
+                ArticleFinding(
+                    "blocking",
+                    "unmapped-article-claim",
+                    article.page_id,
+                    "each ArticleClaim must be listed in an ArticleSection.article_claim_ids",
+                    claim.claim_id,
+                )
+            )
+    for section in article.sections:
+        for claim_id in section.article_claim_ids:
+            if claim_id not in claim_ids:
+                findings.append(
+                    ArticleFinding(
+                        "blocking",
+                        "unknown-section-claim-id",
+                        article.page_id,
+                        "ArticleSection.article_claim_ids references an unknown ArticleClaim",
+                        claim_id,
+                    )
+                )
+    return tuple(findings)
 
 
 def _tool_validation_message(findings: tuple[ArticleFinding, ...]) -> str:
     messages = tuple(dict.fromkeys(finding.message for finding in findings))[:4]
     return (
-        "Article validation failed. Rewrite with complete single-sentence claims "
-        "in your own words and cite support aliases. Findings: "
+        "Article validation failed. Rewrite with complete mapped single-sentence "
+        "claims in your own words and cite support aliases. Findings: "
         + " | ".join(messages)
-    )
-
-
-def _blocks_from_claims(
-    section_id: str, claim_ids: tuple[str, ...], claims_by_id: dict[str, ArticleClaim]
-) -> tuple[ArticleBlock, ...]:
-    sentences = tuple(
-        claims_by_id[claim_id].sentence.strip()
-        for claim_id in claim_ids
-        if claims_by_id[claim_id].sentence.strip()
-    )
-    if not sentences:
-        return ()
-    return (
-        ArticleBlock(
-            f"{section_id or 'section'}-claims",
-            "paragraph",
-            " ".join(sentences),
-        ),
     )
 
 

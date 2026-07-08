@@ -1,3 +1,7 @@
+import json
+
+import pytest
+
 from llmwiki.pdf.document import (
     DocumentElement,
     DocumentModel,
@@ -161,6 +165,20 @@ class TestSourceSections:
 
         assert source_sections_from_json(source_sections_to_json(sections)) == sections
         assert document_model_from_json(document_model_to_json(model)) == model
+
+    def test_document_model_json_rejects_malformed_element_shape(self) -> None:
+        model = _model((_element("e1", "heading", "Object.assign", "Object.assign", 198),))
+        payload = json.loads(document_model_to_json(model))
+        payload["elements"][0]["page_start"] = "198"
+
+        with pytest.raises(ValueError, match="page_start"):
+            document_model_from_json(json.dumps(payload))
+
+        payload = json.loads(document_model_to_json(model))
+        payload["elements"][0]["element_id"] = 42
+
+        with pytest.raises(ValueError, match="element_id"):
+            document_model_from_json(json.dumps(payload))
 
 
 class TestSourceChunks:

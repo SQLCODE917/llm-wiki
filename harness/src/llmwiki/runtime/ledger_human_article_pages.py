@@ -9,8 +9,11 @@ from llmwiki.domain.article_write_queue import (
     ArticleWriteQueueFinding,
     ArticleWriteQueuePolicy,
     ArticleWriteQueueRun,
+    acceptance_rate_gate_reached,
+    all_available_family_caps_reached,
     build_article_write_queue_run,
     default_article_write_queue_policy,
+    family_cap_reached,
     ordered_article_write_packs,
     queue_finding,
 )
@@ -63,7 +66,7 @@ def build_human_article_linked_pages(
 ) -> HumanArticleLinkedPages:
     writer = article_writer or RejectingArticleWriter()
     policy = queue_policy or default_article_write_queue_policy(
-        evidence_pack_set.source_profile_kind
+        evidence_pack_set.source_profile_kind, len(evidence_pack_set.packs)
     )
     records: list[HumanArticleRecord] = []
     findings: list[ArticleFinding] = []
@@ -78,16 +81,18 @@ def build_human_article_linked_pages(
     skipped_page_ids: list[str] = []
     exhausted_reason = "pack-list-exhausted"
     for index, pack in enumerate(ordered_packs):
-        if len(records) >= policy.target_accepted_articles:
-            exhausted_reason = "target-reached"
+        accepted_page_ids = tuple(record.article.page_id for record in records)
+        attempted_ids = tuple(attempted_page_ids)
+        if len(records) >= policy.max_public_articles:
+            exhausted_reason = "source-page-budget-reached"
             skipped = tuple(item.page_id for item in ordered_packs[index:])
             skipped_page_ids.extend(skipped)
             queue_findings.extend(
                 queue_finding(
                     "info",
-                    "skipped-after-target",
+                    "source-page-budget-reached",
                     page_id,
-                    "article queue target was reached before this pack was attempted",
+                    "source article page budget was reached before this pack was attempted",
                 )
                 for page_id in skipped
             )
@@ -106,6 +111,45 @@ def build_human_article_linked_pages(
                 for page_id in skipped
             )
             break
+        if acceptance_rate_gate_reached(policy, attempted_ids, accepted_page_ids):
+            exhausted_reason = "low-acceptance-rate"
+            skipped = tuple(item.page_id for item in ordered_packs[index:])
+            skipped_page_ids.extend(skipped)
+            queue_findings.extend(
+                queue_finding(
+                    "warning",
+                    "low-acceptance-rate",
+                    page_id,
+                    "article write queue stopped because recent acceptance rate was too low",
+                )
+                for page_id in skipped
+            )
+            break
+        if all_available_family_caps_reached(policy, accepted_page_ids, packs_by_page_id):
+            exhausted_reason = "family-caps-reached"
+            skipped = tuple(item.page_id for item in ordered_packs[index:])
+            skipped_page_ids.extend(skipped)
+            queue_findings.extend(
+                queue_finding(
+                    "info",
+                    "family-cap-reached",
+                    page_id,
+                    "all available article family caps were reached before this pack was attempted",
+                )
+                for page_id in skipped
+            )
+            break
+        if family_cap_reached(policy, accepted_page_ids, pack, packs_by_page_id):
+            skipped_page_ids.append(pack.page_id)
+            queue_findings.append(
+                queue_finding(
+                    "info",
+                    "family-cap-reached",
+                    pack.page_id,
+                    f"article family cap for {pack.page_family!r} was reached",
+                )
+            )
+            continue
         attempted_page_ids.append(pack.page_id)
         metadata = article_metadata(pack, source_locator, today)
         attempt = write_human_article_page(
@@ -123,12 +167,6 @@ def build_human_article_linked_pages(
             continue
         pages.append(attempt.page)
         records.append(attempt.record)
-
-    if (
-        exhausted_reason == "pack-list-exhausted"
-        and len(records) >= policy.target_accepted_articles
-    ):
-        exhausted_reason = "target-reached"
 
     accepted_collection_ids = {page.page_id for page in pages}
     accepted_collections = tuple(

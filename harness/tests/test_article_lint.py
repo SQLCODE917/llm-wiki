@@ -205,7 +205,14 @@ def _article(
     return HumanArticle(
         selected.page_id,
         selected.title,
-        (ArticleSection("s1", "Overview", (ArticleBlock("b1", "paragraph", sentence),)),),
+        (
+            ArticleSection(
+                "s1",
+                "Overview",
+                (ArticleBlock("b1", "paragraph", sentence),),
+                ("c1",),
+            ),
+        ),
         (ArticleClaim("c1", sentence, (support,)),),
         related,
     )

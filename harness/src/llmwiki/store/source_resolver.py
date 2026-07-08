@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from llmwiki.domain.evidence_registry import SourceText, source_text_from_text
+from llmwiki.domain.source_map import normalized_source_map_from_json, source_map_text
 
 
 class FileSourceTextResolver:
@@ -58,37 +59,21 @@ class FileSourceTextResolver:
             return None
 
     def _load_cached_pdf_text(self, source_rel: str) -> tuple[str, ...] | None:
-        for manifest_path in sorted(self._cache_dir.glob("*/manifest.json")):
-            try:
-                data: dict[str, Any] = json.loads(manifest_path.read_text(encoding="utf-8"))
-            except (OSError, json.JSONDecodeError):
-                continue
-            if data.get("source") != source_rel:
-                continue
-            chunks_dir = manifest_path.parent / "chunks"
-            chunk_texts = [
-                path.read_text(encoding="utf-8")
-                for path in sorted(chunks_dir.glob("*.md"))
-                if path.is_file()
-            ]
-            return tuple("\n\n".join(chunk_texts).splitlines()) if chunk_texts else None
-        return None
+        text = self._load_cached_pdf_joined_text(source_rel)
+        return tuple(text.splitlines()) if text is not None else None
 
     def _load_cached_pdf_joined_text(self, source_rel: str) -> str | None:
         for manifest_path in sorted(self._cache_dir.glob("*/manifest.json")):
-            try:
-                data: dict[str, Any] = json.loads(manifest_path.read_text(encoding="utf-8"))
-            except (OSError, json.JSONDecodeError):
-                continue
+            data: dict[str, Any] = json.loads(manifest_path.read_text(encoding="utf-8"))
             if data.get("source") != source_rel:
                 continue
-            chunks_dir = manifest_path.parent / "chunks"
-            chunk_texts = [
-                path.read_text(encoding="utf-8")
-                for path in sorted(chunks_dir.glob("*.md"))
-                if path.is_file()
-            ]
-            return "\n\n".join(chunk_texts) if chunk_texts else None
+            source_map_path = manifest_path.parent / "normalized_source_map.json"
+            if not source_map_path.is_file():
+                return None
+            source_map = normalized_source_map_from_json(
+                source_map_path.read_text(encoding="utf-8")
+            )
+            return source_map_text(source_map)
         return None
 
 

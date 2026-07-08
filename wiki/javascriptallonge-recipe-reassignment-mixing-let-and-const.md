@@ -2,24 +2,24 @@
 page_id: javascriptallonge-recipe-reassignment-mixing-let-and-const
 page_kind: recipe
 page_family: recipe-pattern
-summary: Reassignment > mixing let and const: Mixing let and const declarations in JavaScript allows for variable shadowing, where a const declaration inside a block scope can shadow a let...
+summary: Reassignment > mixing let and const: A let variable can still be reassigned even after being shadowed by a const in a nested scope.
 sources: raw/javascriptallonge.pdf
-updated: 2026-07-07
+updated: 2026-07-08
 domain: javascriptallonge
 category_path: recipes/javascriptallonge
 source_id: javascriptallonge.pdf
-projection_coverage: human-article-javascriptallonge-recipe-reassignment-mixing-let-and-const@37a702083ceafde74bc3674b1599b981
+projection_coverage: human-article-javascriptallonge-recipe-reassignment-mixing-let-and-const@aa5b9ab7da2a71e7af534b7c0a55662a
 ---
 
 # Reassignment > mixing let and const
 
 ## Variable Shadowing and Reassignment
 
-Mixing let and const declarations in JavaScript allows for variable shadowing, where a const declaration inside a block scope can shadow a let declaration in an outer scope without affecting the reassignment capability of the outer variable. _(raw/javascriptallonge.pdf (p. 150))_ 
+A let variable can still be reassigned even after being shadowed by a const in a nested scope. _(raw/javascriptallonge.pdf (p. 150))_ 
 
-## Impact of Shadowing on Variable Reassignment
+## Const and Let Mixing
 
-Shadowing a let with a const does not change the ability to rebind the variable in its original scope, but shadowing a const with a let does not permit reassignment in the original scope. _(raw/javascriptallonge.pdf (p. 150); raw/javascriptallonge.pdf (p. 151))_ 
+A const variable cannot be reassigned if it is shadowed by a let in a nested scope. _(raw/javascriptallonge.pdf (p. 151))_ 
 
 ## Evidence Details
 

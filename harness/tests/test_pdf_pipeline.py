@@ -187,6 +187,50 @@ class TestEnsureExtracted:
         assert again.manifest.chunks[0].status == "done"
         assert document_extractor.calls == 1
 
+    def test_corrupt_document_model_blocks_cache_without_reextract(
+        self, tmp_path: Path
+    ) -> None:
+        pdf = tmp_path / "book.pdf"
+        _make_pdf(pdf)
+        document_extractor = FakeDocumentExtractor()
+        first = ensure_extracted(
+            pdf,
+            "book.pdf",
+            tmp_path / "cache",
+            NullRecognizer(),
+            document_extractor=document_extractor,
+        )
+        source_map_file(first.cache_dir).unlink()
+        (first.cache_dir / "document_model.json").write_text(
+            (
+                '{"source_locator":"book.pdf","source_hash":"bad",'
+                '"extractor_name":"fake","extractor_version":"1",'
+                '"elements":"broken"}'
+            ),
+            encoding="utf-8",
+        )
+
+        with pytest.raises(ValueError, match="elements"):
+            ensure_extracted(
+                pdf,
+                "book.pdf",
+                tmp_path / "cache",
+                NullRecognizer(),
+                document_extractor=document_extractor,
+            )
+
+        rebuilt = ensure_extracted(
+            pdf,
+            "book.pdf",
+            tmp_path / "cache",
+            NullRecognizer(),
+            reextract=True,
+            document_extractor=document_extractor,
+        )
+
+        assert source_map_file(rebuilt.cache_dir).is_file()
+        assert document_extractor.calls == 2
+
     def test_cache_hit_rebuilds_nonlexical_unintegrated_chunks_from_document_model(
         self, tmp_path: Path
     ) -> None:

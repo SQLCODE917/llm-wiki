@@ -35,6 +35,8 @@ def validate_human_article(
     findings.extend(_weak_topic_findings(pack))
     findings.extend(_claim_support_findings(pack, article))
     findings.extend(_sentence_coverage_findings(pack, article))
+    findings.extend(_claim_rendering_findings(pack, article))
+    findings.extend(_claim_mapping_findings(pack, article))
     findings.extend(_placeholder_findings(pack, article))
     findings.extend(_raw_markdown_findings(pack, article))
     findings.extend(_navigation_text_findings(pack, article))
@@ -141,6 +143,67 @@ def _sentence_coverage_findings(
                             section_id=section.section_id,
                         )
                     )
+    return tuple(findings)
+
+
+def _claim_rendering_findings(
+    pack: EvidencePack, article: HumanArticle
+) -> tuple[ArticleFinding, ...]:
+    rendered = {
+        _normalize(sentence)
+        for section in article.sections
+        for block in section.blocks
+        for sentence in article_factual_sentences(block)
+    }
+    findings: list[ArticleFinding] = []
+    for claim in article.claims:
+        if _normalize(claim.sentence) not in rendered:
+            findings.append(
+                _finding(
+                    pack,
+                    "unrendered-article-claim",
+                    f"article claim does not appear in article prose: {claim.sentence}",
+                    claim,
+                )
+            )
+    return tuple(findings)
+
+
+def _claim_mapping_findings(
+    pack: EvidencePack, article: HumanArticle
+) -> tuple[ArticleFinding, ...]:
+    claim_ids = {claim.claim_id for claim in article.claims}
+    mapped_ids = {
+        claim_id
+        for section in article.sections
+        for claim_id in section.article_claim_ids
+    }
+    findings: list[ArticleFinding] = []
+    for claim in article.claims:
+        if claim.claim_id not in mapped_ids:
+            findings.append(
+                _finding(
+                    pack,
+                    "unmapped-article-claim",
+                    "article claim is not listed in any ArticleSection.article_claim_ids",
+                    claim,
+                )
+            )
+    for section in article.sections:
+        for claim_id in section.article_claim_ids:
+            if claim_id not in claim_ids:
+                findings.append(
+                    ArticleFinding(
+                        "blocking",
+                        "unknown-section-claim-id",
+                        pack.page_id,
+                        f"section references unknown article claim id: {claim_id}",
+                        claim_id,
+                        "",
+                        "",
+                        section.section_id,
+                    )
+                )
     return tuple(findings)
 
 

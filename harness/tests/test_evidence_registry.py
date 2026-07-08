@@ -47,7 +47,7 @@ def test_source_evidence_registry_builds_stable_records_for_markdown() -> None:
     assert registry_from_json(registry_to_json(first)) == first
 
 
-def test_pdf_source_text_reads_extraction_cache(paths: WikiPaths) -> None:
+def test_pdf_source_text_requires_normalized_source_map_cache(paths: WikiPaths) -> None:
     cache_dir = paths.cache_dir / "deadbeef"
     chunks_dir = cache_dir / "chunks"
     chunks_dir.mkdir(parents=True)
@@ -60,9 +60,7 @@ def test_pdf_source_text_reads_extraction_cache(paths: WikiPaths) -> None:
 
     source_text = WikiStore(paths).source_resolver().source_text("book.pdf")
 
-    assert source_text is not None
-    assert source_text.source_text_kind == "pdf-cache"
-    assert source_text.lines == ("Chunk one.", "", "Chunk two.")
+    assert source_text is None
 
 
 def test_page_plan_cache_is_explicit_source_text_kind() -> None:

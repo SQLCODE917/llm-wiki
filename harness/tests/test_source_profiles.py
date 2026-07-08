@@ -1,3 +1,7 @@
+import json
+
+import pytest
+
 from llmwiki.domain.source_profile_io import (
     evidence_extraction_plan_from_json,
     evidence_extraction_plan_to_json,
@@ -155,6 +159,49 @@ def test_evidence_extraction_plan_and_json_roundtrip() -> None:
     assert plan.allowed_record_types == artifact.evidence_vocabulary.allowed_record_types
     assert evidence_extraction_plan_from_json(evidence_extraction_plan_to_json(plan)) == plan
     assert source_profile_artifact_from_json(source_profile_artifact_to_json(artifact)) == artifact
+
+
+def test_source_profile_json_rejects_invalid_shape() -> None:
+    source_map = _source_map(
+        "javascriptallonge.pdf",
+        (
+            _element("e1", "heading", "Functions", "Functions", 10),
+            _element("e2", "code_block", "Functions", "function id(x) { return x; }", 10),
+        ),
+    )
+    artifact = select_source_profile(source_map)
+    payload = json.loads(source_profile_artifact_to_json(artifact))
+    payload["source_profile"]["confidence"] = "0.9"
+
+    with pytest.raises(ValueError, match="confidence"):
+        source_profile_artifact_from_json(json.dumps(payload))
+
+    payload = json.loads(source_profile_artifact_to_json(artifact))
+    payload["evidence_vocabulary"]["profile_id"] = "not-a-profile"
+
+    with pytest.raises(ValueError, match="Unknown source profile"):
+        source_profile_artifact_from_json(json.dumps(payload))
+
+
+def test_evidence_extraction_plan_json_rejects_wrong_record_type_shape() -> None:
+    source_map = _source_map(
+        "javascriptallonge.pdf",
+        (
+            _element("e1", "heading", "Functions", "Functions", 10),
+            _element("e2", "code_block", "Functions", "function id(x) { return x; }", 10),
+        ),
+    )
+    artifact = select_source_profile(source_map)
+    plan = build_evidence_extraction_plan(
+        source_map,
+        artifact.source_profile,
+        artifact.evidence_vocabulary,
+    )
+    payload = json.loads(evidence_extraction_plan_to_json(plan))
+    payload["allowed_record_types"] = "code_example"
+
+    with pytest.raises(ValueError, match="allowed_record_types"):
+        evidence_extraction_plan_from_json(json.dumps(payload))
 
 
 def test_unknown_or_disallowed_record_types_are_blocking_findings() -> None:

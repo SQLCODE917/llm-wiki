@@ -13,6 +13,9 @@ interlinked, and maintained.
 | first-level domain object | Durable LLM-Wiki noun that can anchor a feature, workflow, or lifecycle. |
 | second-level domain object | Meaningful part of a first-level domain object or domain service. |
 | boundary DTO | Inbound or outbound transport shape, such as CLI args, Pydantic tool params, or forge payloads. |
+| deterministic boundary | Project-owned boundary whose structured values come from deterministic code or persisted generated artifacts. |
+| model output boundary | Boundary whose structured values come from non-deterministic model output. |
+| boundary recovery | Visible rejection, retry feedback, quarantine, validation error, finding, or proposed change for invalid model output. |
 | persistence model | On-disk or database storage shape, such as JSON, JSONL, SQLite rows, or PDF manifest data. |
 | view model | Rendered or render-ready shape for reports, prompts, transcripts, or CLI output. |
 | domain service | Pure domain operation that enforces rules requiring context or multiple domain objects. |
@@ -28,6 +31,10 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | DomainTerm | CodeName |
 |---|---|
 | `PageId` | `page_id` |
+| `DeterministicBoundary` | `deterministic_boundary` |
+| `ModelOutputBoundary` | `model_output_boundary` |
+| `BoundaryDTO` | `boundary_dto` |
+| `BoundaryRecovery` | `boundary_recovery` |
 | `PageKind` | `page_kind` |
 | `PageFamily` | `page_family` |
 | `PagePath` | `page_path` |

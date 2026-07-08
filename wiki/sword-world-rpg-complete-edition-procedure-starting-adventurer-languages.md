@@ -2,24 +2,22 @@
 page_id: sword-world-rpg-complete-edition-procedure-starting-adventurer-languages
 page_kind: procedure
 page_family: procedure-guide
-summary: Starting Adventurer Languages: Every adventurer begins with the ability to speak common and their racial language.
+summary: Starting Adventurer Languages: All adventurers can speak common and racial languages.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-07-07
+updated: 2026-07-08
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: human-article-sword-world-rpg-complete-edition-procedure-starting-adventurer-languages@2583ea097a926771834ce39d2e39078e
+projection_coverage: human-article-sword-world-rpg-complete-edition-procedure-starting-adventurer-languages@b7f856c2f93746e327f62636f36322a5
 ---
 
 # Starting Adventurer Languages
 
 ## Language Abilities
 
-Every adventurer begins with the ability to speak common and their racial language. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
+All adventurers can speak common and racial languages. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
 
-## Reading Abilities
-
-Adventurers with an intelligence of 6 or higher can read their mother tongue, and those with an intelligence of 12 or higher can additionally read common. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
+Adventurers with an intelligence of 6 or greater can read their mother tongue. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
 
 ## Evidence Details
 
@@ -36,7 +34,6 @@ Adventurers with an intelligence of 6 or higher can read their mother tongue, an
 ## Source Trail
 
 - Source manifest: [[sword-world-rpg-complete-edition]]
-- raw/Sword World RPG - Complete Edition.pdf (p. 158)
 - raw/Sword World RPG - Complete Edition.pdf (p. 158) - Starting Adventurer Languages
 - raw/Sword World RPG - Complete Edition.pdf (p. 158) - Starting Adventurer Languages
 - raw/Sword World RPG - Complete Edition.pdf (p. 158) - Starting Adventurer Languages

@@ -6,6 +6,9 @@ import pytest
 
 from llmwiki.config import SOURCE_READ_BUDGET_CHARS, WikiPaths
 from llmwiki.domain.pages import PageMetadata, WikiPage
+from llmwiki.domain.source_map import normalized_source_map_to_json
+from llmwiki.pdf.document import DocumentElement, DocumentModel
+from llmwiki.pdf.source_map_builder import build_normalized_source_map
 from llmwiki.store import PageNotFoundError, SourceNotFoundError, WikiStore, WikiStoreError
 
 
@@ -62,7 +65,47 @@ class TestRawLayer:
         assert "[TRUNCATED" in text
         assert len(text) < SOURCE_READ_BUDGET_CHARS + 200
 
-    def test_source_resolver_reads_cached_pdf_chunks(
+    def test_source_resolver_reads_cached_pdf_source_map(
+        self, paths: WikiPaths, store: WikiStore
+    ) -> None:
+        (paths.raw_dir / "book.pdf").write_bytes(b"%PDF")
+        cache_dir = paths.cache_dir / "abc123"
+        cache_dir.mkdir(parents=True)
+        (cache_dir / "manifest.json").write_text(
+            json.dumps({"source": "book.pdf"}),
+            encoding="utf-8",
+        )
+        source_map = build_normalized_source_map(
+            DocumentModel(
+                source_locator="book.pdf",
+                source_hash="ab" * 32,
+                extractor_name="test",
+                extractor_version="test",
+                elements=(
+                    DocumentElement(
+                        "e1",
+                        "paragraph",
+                        "body",
+                        "Chapter",
+                        1,
+                        1,
+                        "Line one.\nLine two.",
+                        "Line one.\nLine two.",
+                    ),
+                ),
+            )
+        )
+        (cache_dir / "normalized_source_map.json").write_text(
+            normalized_source_map_to_json(source_map),
+            encoding="utf-8",
+        )
+
+        assert store.source_resolver().source_lines("raw/book.pdf") == (
+            "Line one.",
+            "Line two.",
+        )
+
+    def test_source_resolver_does_not_use_chunk_only_pdf_cache(
         self, paths: WikiPaths, store: WikiStore
     ) -> None:
         (paths.raw_dir / "book.pdf").write_bytes(b"%PDF")
@@ -75,10 +118,7 @@ class TestRawLayer:
         )
         (chunks_dir / "0001.md").write_text("Line one.\nLine two.", encoding="utf-8")
 
-        assert store.source_resolver().source_lines("raw/book.pdf") == (
-            "Line one.",
-            "Line two.",
-        )
+        assert store.source_resolver().source_lines("raw/book.pdf") is None
 
     def test_raw_source_uses_source_locator(self, paths: WikiPaths, store: WikiStore) -> None:
         (paths.raw_dir / "article.md").write_text("Source text.", encoding="utf-8")

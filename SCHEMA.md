@@ -17,8 +17,9 @@ The index and log formats below are also enforced in harness code
   questions, diagnostic answers, diagnostic findings, repair tasks, repair runs,
   staged page set, publish run, and the ordered
   `ingest-artifact-set.json` manifest that explains how a raw source became
-  wiki pages. These artifacts are rebuildable from `raw/` and never count as
-  cited source evidence.
+  wiki pages. These artifacts are schema-owned generated state. The harness
+  parses them through strict compiler contracts. These artifacts are rebuildable
+  from `raw/` and never count as cited source evidence.
 - `wiki/wiki-candidates.json` — harness-owned bookkeeping for missing page
   candidates. It is not wiki knowledge and is never cited as evidence.
 - `wiki/wiki-graph.json` — harness-owned graph export derived from current
@@ -142,7 +143,8 @@ as source evidence or as existing wiki coverage.
 1. Read the immutable raw source and build a `NormalizedSourceMap`. PDF sources
    use the extraction cache and document model; markdown sources use the
    deterministic markdown source-map builder. Publication is blocked if no
-   source map can be built or loaded.
+   source map can be built or loaded. Existing deterministic artifacts must
+   parse through their compiler contracts before they can drive ingest.
 2. Select a `SourceProfile`, build an `EvidenceExtractionPlan`, and extract an
    `EvidenceRecordSet` from source blocks. Typed evidence records are the
    factual authority for compiler page planning.

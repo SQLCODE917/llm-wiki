@@ -75,6 +75,70 @@ def test_candidate_admission_accepts_recipe_with_code_and_context() -> None:
     assert not result.report.findings
 
 
+def test_candidate_admission_rejects_unknown_support_id() -> None:
+    source_map = _source_map(
+        (
+            _element("h1", "heading", "Partial Application", "Partial Application", 1),
+            _element("c1", "code_block", "Partial Application", "const add = a => b => a + b;", 1),
+            _element(
+                "p1",
+                "paragraph",
+                "Partial Application",
+                "JavaScript can use functions to delay arguments.",
+                1,
+            ),
+        ),
+        locator="javascriptallonge.pdf",
+    )
+    record_set = _record_set(source_map)
+    support = tuple(record.typed_evidence_record_id for record in record_set.accepted_records)
+    candidate = _candidate("recipe", PAGE_FAMILY_RECIPE_PATTERN, (*support, "missing-record"))
+
+    result = admit_compiler_page_candidates(
+        source_id=source_map.source_id,
+        source_hash=source_map.source_hash,
+        candidates=(candidate,),
+        record_set=record_set,
+        structure_report=build_source_structure_integrity_report(source_map),
+        record_plan=build_source_record_plan(source_map),
+    )
+
+    assert result.accepted_candidates == ()
+    assert result.report.findings[0].finding_code == "unknown-support-ref"
+
+
+def test_candidate_admission_rejects_non_accepted_support_id() -> None:
+    source_map = _source_map(
+        (
+            _element("h1", "heading", "Examples", "Examples", 1),
+            _element(
+                "c1",
+                "code_block",
+                "Examples",
+                "const x = 1;\nThis prose sentence contaminates the code block.",
+                1,
+            ),
+            _element("p1", "paragraph", "Examples", "Code examples need context.", 1),
+        ),
+        locator="javascriptallonge.pdf",
+    )
+    record_set = _record_set(source_map)
+    support = tuple(record.typed_evidence_record_id for record in record_set.records)
+    candidate = _candidate("recipe", PAGE_FAMILY_RECIPE_PATTERN, support)
+
+    result = admit_compiler_page_candidates(
+        source_id=source_map.source_id,
+        source_hash=source_map.source_hash,
+        candidates=(candidate,),
+        record_set=record_set,
+        structure_report=build_source_structure_integrity_report(source_map),
+        record_plan=build_source_record_plan(source_map),
+    )
+
+    assert result.accepted_candidates == ()
+    assert result.report.findings[0].finding_code == "supporting-evidence-not-accepted"
+
+
 def _record_set(source_map):
     artifact = select_source_profile(source_map)
     plan = build_evidence_extraction_plan(

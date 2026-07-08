@@ -1,3 +1,7 @@
+import json
+
+import pytest
+
 from llmwiki.domain.objects import RawSource
 from llmwiki.domain.source_profile_selector import select_source_profile
 from llmwiki.domain.source_profiles import build_evidence_extraction_plan
@@ -252,6 +256,46 @@ def test_structured_payload_round_trips_and_preserves_table_text() -> None:
 
     assert restored == record_set
     assert "Distance=20 meters" in restored.accepted_records[0].payload_text
+
+
+def test_evidence_record_set_json_rejects_unknown_status_and_wrong_types() -> None:
+    source_map = _source_map(
+        "reference.pdf",
+        (
+            _element("e1", "heading", "Spell Table", "Spell Table", 59),
+            _element("e2", "table", "Spell Table", "Name | Value\nDistance=20 meters | 5", 59),
+        ),
+    )
+    artifact, plan = _artifact_and_plan(source_map)
+    record_set = DeterministicTypedEvidenceProducer().build_record_set(source_map, artifact, plan)
+    payload = json.loads(evidence_record_set_to_json(record_set))
+    payload["records"][0]["status"] = "maybe"
+
+    with pytest.raises(ValueError, match="status"):
+        evidence_record_set_from_json(json.dumps(payload))
+
+    payload = json.loads(evidence_record_set_to_json(record_set))
+    payload["records"][0]["confidence"] = "1.0"
+
+    with pytest.raises(ValueError, match="confidence"):
+        evidence_record_set_from_json(json.dumps(payload))
+
+
+def test_evidence_record_set_json_rejects_wrong_nested_payload_shape() -> None:
+    source_map = _source_map(
+        "reference.pdf",
+        (
+            _element("e1", "heading", "Spell Table", "Spell Table", 59),
+            _element("e2", "table", "Spell Table", "Name | Value\nDistance=20 meters | 5", 59),
+        ),
+    )
+    artifact, plan = _artifact_and_plan(source_map)
+    record_set = DeterministicTypedEvidenceProducer().build_record_set(source_map, artifact, plan)
+    payload = json.loads(evidence_record_set_to_json(record_set))
+    payload["records"][0]["structured_payload"]["normalized_fields"] = {"Distance": "20 meters"}
+
+    with pytest.raises(ValueError, match="normalized_fields"):
+        evidence_record_set_from_json(json.dumps(payload))
 
 
 def test_modality_gate_emits_formula_from_formula_like_prose() -> None:

@@ -6,6 +6,13 @@ import json
 import re
 from dataclasses import asdict, dataclass
 
+from llmwiki.domain.strict_json import (
+    expect_array,
+    expect_float,
+    expect_int,
+    expect_object,
+    expect_str,
+)
 from llmwiki.pdf.chunking import CHUNK_TOKEN_BUDGET, estimate_tokens
 
 
@@ -60,13 +67,16 @@ def document_model_to_json(model: DocumentModel) -> str:
 
 
 def document_model_from_json(text: str) -> DocumentModel:
-    data = json.loads(text)
+    data = expect_object(json.loads(text), "document model")
     return DocumentModel(
-        source_locator=data["source_locator"],
-        source_hash=data["source_hash"],
-        extractor_name=data["extractor_name"],
-        extractor_version=data["extractor_version"],
-        elements=tuple(DocumentElement(**element) for element in data["elements"]),
+        source_locator=expect_str(data["source_locator"], "source_locator"),
+        source_hash=expect_str(data["source_hash"], "source_hash"),
+        extractor_name=expect_str(data["extractor_name"], "extractor_name"),
+        extractor_version=expect_str(data["extractor_version"], "extractor_version"),
+        elements=tuple(
+            _document_element_from_data(element)
+            for element in expect_array(data["elements"], "elements")
+        ),
     )
 
 
@@ -75,17 +85,48 @@ def source_sections_to_json(sections: tuple[SourceSection, ...]) -> str:
 
 
 def source_sections_from_json(text: str) -> tuple[SourceSection, ...]:
-    data = json.loads(text)
+    data = expect_array(json.loads(text), "source sections")
     return tuple(
         SourceSection(
-            section_id=section["section_id"],
-            heading_path=section["heading_path"],
-            page_start=section["page_start"],
-            page_end=section["page_end"],
-            element_ids=tuple(section["element_ids"]),
-            text=section["text"],
+            section_id=expect_str(
+                expect_object(section, "source section")["section_id"], "section_id"
+            ),
+            heading_path=expect_str(
+                expect_object(section, "source section")["heading_path"], "heading_path"
+            ),
+            page_start=expect_int(
+                expect_object(section, "source section")["page_start"], "page_start"
+            ),
+            page_end=expect_int(
+                expect_object(section, "source section")["page_end"], "page_end"
+            ),
+            element_ids=tuple(
+                expect_str(item, "element_id")
+                for item in expect_array(
+                    expect_object(section, "source section")["element_ids"], "element_ids"
+                )
+            ),
+            text=expect_str(expect_object(section, "source section")["text"], "text"),
         )
         for section in data
+    )
+
+
+def _document_element_from_data(raw: object) -> DocumentElement:
+    data = expect_object(raw, "document element")
+    return DocumentElement(
+        element_id=expect_str(data["element_id"], "element_id"),
+        element_kind=expect_str(data["element_kind"], "element_kind"),
+        body_state=expect_str(data["body_state"], "body_state"),
+        heading_path=expect_str(data["heading_path"], "heading_path"),
+        page_start=expect_int(data["page_start"], "page_start"),
+        page_end=expect_int(data["page_end"], "page_end"),
+        text=expect_str(data["text"], "text"),
+        markdown=expect_str(data["markdown"], "markdown"),
+        heading_level=expect_int(data.get("heading_level", 0), "heading_level"),
+        layout_font_size=expect_float(data.get("layout_font_size", 0.0), "layout_font_size"),
+        layout_x0=expect_float(data.get("layout_x0", 0.0), "layout_x0"),
+        layout_y0=expect_float(data.get("layout_y0", 0.0), "layout_y0"),
     )
 
 

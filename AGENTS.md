@@ -262,6 +262,22 @@ sizing gate, the required section structure, and the style constraints.
 - Map explicitly between DTOs, domain models, persistence models, and view models.
 - Use linting and static type checking to ensure code correctness
 
+### Boundary validation
+
+- Domain objects and Application DTOs are the source of truth for boundary
+  shape.
+- Parse inbound structured values through the declared domain object or DTO.
+- Serialize outbound structured values from the declared domain object or DTO.
+- Deterministic project-owned boundaries must fail fast on invalid shape,
+  missing references, or impossible state.
+- Do not silently drop, repair, coerce, skip, or clean invalid deterministic
+  values.
+- Accepted compiler artifacts must validate domain object shape and
+  cross-record references before they can drive public wiki pages.
+- Only non-deterministic model output can enter explicit recovery paths.
+- Recovery must be visible as rejection, retry feedback, quarantine, validation
+  errors, findings, or reviewable proposed changes.
+- Invalid model output must not become accepted state directly.
 
 ### Server
 

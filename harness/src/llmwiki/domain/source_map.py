@@ -8,8 +8,27 @@ from collections.abc import Callable, Sequence
 from dataclasses import asdict, dataclass
 from typing import Literal
 
+from llmwiki.domain.strict_json import (
+    expect_array,
+    expect_float,
+    expect_int,
+    expect_literal,
+    expect_object,
+    expect_str,
+)
+
 SourceBlockType = Literal["heading", "paragraph", "list", "code", "table", "figure", "unknown"]
 SourceMapSeverity = Literal["blocker", "warning", "info"]
+SOURCE_BLOCK_TYPES: tuple[SourceBlockType, ...] = (
+    "heading",
+    "paragraph",
+    "list",
+    "code",
+    "table",
+    "figure",
+    "unknown",
+)
+SOURCE_MAP_SEVERITIES: tuple[SourceMapSeverity, ...] = ("blocker", "warning", "info")
 
 
 @dataclass(frozen=True)
@@ -77,15 +96,21 @@ def normalized_source_map_to_json(source_map: NormalizedSourceMap) -> str:
 
 
 def normalized_source_map_from_json(text: str) -> NormalizedSourceMap:
-    data = json.loads(text)
+    data = expect_object(json.loads(text), "normalized source map")
     return NormalizedSourceMap(
-        source_id=data["source_id"],
-        source_locator=data["source_locator"],
-        source_hash=data["source_hash"],
-        extractor_name=data["extractor_name"],
-        extractor_version=data["extractor_version"],
-        source_blocks=tuple(_source_block_from_data(item) for item in data["source_blocks"]),
-        findings=tuple(_finding_from_data(item) for item in data.get("findings", ())),
+        source_id=expect_str(data["source_id"], "source_id"),
+        source_locator=expect_str(data["source_locator"], "source_locator"),
+        source_hash=expect_str(data["source_hash"], "source_hash"),
+        extractor_name=expect_str(data["extractor_name"], "extractor_name"),
+        extractor_version=expect_str(data["extractor_version"], "extractor_version"),
+        source_blocks=tuple(
+            _source_block_from_data(item)
+            for item in expect_array(data["source_blocks"], "source_blocks")
+        ),
+        findings=tuple(
+            _finding_from_data(item)
+            for item in expect_array(data.get("findings", []), "findings")
+        ),
     )
 
 
@@ -94,13 +119,25 @@ def prompt_windows_to_json(windows: tuple[PromptWindow, ...]) -> str:
 
 
 def prompt_windows_from_json(text: str) -> tuple[PromptWindow, ...]:
-    data = json.loads(text)
+    data = expect_array(json.loads(text), "prompt windows")
     return tuple(
         PromptWindow(
-            prompt_window_id=item["prompt_window_id"],
-            source_block_ids=tuple(item["source_block_ids"]),
-            token_estimate=item["token_estimate"],
-            text=item["text"],
+            prompt_window_id=expect_str(
+                expect_object(item, "prompt window")["prompt_window_id"],
+                "prompt_window_id",
+            ),
+            source_block_ids=tuple(
+                expect_str(block_id, "source_block_id")
+                for block_id in expect_array(
+                    expect_object(item, "prompt window")["source_block_ids"],
+                    "source_block_ids",
+                )
+            ),
+            token_estimate=expect_int(
+                expect_object(item, "prompt window")["token_estimate"],
+                "token_estimate",
+            ),
+            text=expect_str(expect_object(item, "prompt window")["text"], "text"),
         )
         for item in data
     )
@@ -181,84 +218,69 @@ def _append_window(
     )
 
 
-def _source_block_from_data(data: dict[str, object]) -> SourceBlock:
+def _source_block_from_data(raw: object) -> SourceBlock:
+    data = expect_object(raw, "source block")
     return SourceBlock(
-        source_block_id=str(data["source_block_id"]),
+        source_block_id=expect_str(data["source_block_id"], "source_block_id"),
         source_anchor=_anchor_from_data(data["source_anchor"]),
-        block_type=data["block_type"],  # type: ignore[arg-type]
-        source_text=str(data["source_text"]),
+        block_type=expect_literal(data["block_type"], SOURCE_BLOCK_TYPES, "block_type"),
+        source_text=expect_str(data["source_text"], "source_text"),
         page_span=_page_span_from_data(data["page_span"]),
-        section_path=str(data["section_path"]),
-        parent_block_id=str(data["parent_block_id"]),
+        section_path=expect_str(data["section_path"], "section_path"),
+        parent_block_id=expect_str(data["parent_block_id"], "parent_block_id"),
         child_block_ids=_string_tuple_from_data(data["child_block_ids"]),
-        confidence=_float_from_data(data["confidence"]),
-        source_order=_int_from_data(data["source_order"]),
+        confidence=expect_float(data["confidence"], "confidence"),
+        source_order=expect_int(data["source_order"], "source_order"),
     )
 
 
-def _finding_from_data(data: dict[str, object]) -> SourceMapFinding:
+def _finding_from_data(raw: object) -> SourceMapFinding:
+    data = expect_object(raw, "source map finding")
     return SourceMapFinding(
-        finding_id=str(data["finding_id"]),
-        severity=data["severity"],  # type: ignore[arg-type]
-        finding_code=str(data["finding_code"]),
+        finding_id=expect_str(data["finding_id"], "finding_id"),
+        severity=expect_literal(data["severity"], SOURCE_MAP_SEVERITIES, "severity"),
+        finding_code=expect_str(data["finding_code"], "finding_code"),
         source_anchor=_anchor_from_data(data["source_anchor"]),
-        message=str(data["message"]),
+        message=expect_str(data["message"], "message"),
     )
 
 
 def _anchor_from_data(data: object) -> SourceAnchor:
-    if not isinstance(data, dict):
-        raise ValueError("source anchor must be an object")
+    data = expect_object(data, "source anchor")
     return SourceAnchor(
-        source_locator=str(data["source_locator"]),
-        source_hash=str(data["source_hash"]),
+        source_locator=expect_str(data["source_locator"], "source_locator"),
+        source_hash=expect_str(data["source_hash"], "source_hash"),
         page_span=_page_span_from_data(data["page_span"]),
         element_path=_string_tuple_from_data(data["element_path"]),
-        text_fingerprint=str(data["text_fingerprint"]),
-        bounding_boxes=_bounding_boxes_from_data(data.get("bounding_boxes", ())),
+        text_fingerprint=expect_str(data["text_fingerprint"], "text_fingerprint"),
+        bounding_boxes=_bounding_boxes_from_data(data.get("bounding_boxes", [])),
     )
 
 
 def _page_span_from_data(data: object) -> tuple[int, int]:
-    if not isinstance(data, list | tuple) or len(data) != 2:
+    if not isinstance(data, list) or len(data) != 2:
         raise ValueError("page span must contain exactly two values")
-    return (_int_from_data(data[0]), _int_from_data(data[1]))
+    return (expect_int(data[0], "page_span[0]"), expect_int(data[1], "page_span[1]"))
 
 
 def _string_tuple_from_data(data: object) -> tuple[str, ...]:
-    if not isinstance(data, list | tuple):
-        raise ValueError("expected a sequence of strings")
-    return tuple(str(item) for item in data)
+    return tuple(expect_str(item, "string sequence item") for item in expect_array(data))
 
 
 def _bounding_boxes_from_data(data: object) -> tuple[tuple[float, float, float, float], ...]:
-    if not isinstance(data, list | tuple):
-        raise ValueError("expected a sequence of bounding boxes")
     boxes: list[tuple[float, float, float, float]] = []
-    for box in data:
-        if not isinstance(box, list | tuple) or len(box) != 4:
+    for box in expect_array(data, "bounding_boxes"):
+        if not isinstance(box, list) or len(box) != 4:
             raise ValueError("bounding box must contain exactly four values")
         boxes.append(
             (
-                _float_from_data(box[0]),
-                _float_from_data(box[1]),
-                _float_from_data(box[2]),
-                _float_from_data(box[3]),
+                expect_float(box[0], "bounding_box[0]"),
+                expect_float(box[1], "bounding_box[1]"),
+                expect_float(box[2], "bounding_box[2]"),
+                expect_float(box[3], "bounding_box[3]"),
             )
         )
     return tuple(boxes)
-
-
-def _float_from_data(data: object) -> float:
-    if isinstance(data, int | float | str):
-        return float(data)
-    raise ValueError("expected a numeric value")
-
-
-def _int_from_data(data: object) -> int:
-    if isinstance(data, int | str):
-        return int(data)
-    raise ValueError("expected an integer value")
 
 
 def _join_blocks(blocks: Sequence[SourceBlock]) -> str:
