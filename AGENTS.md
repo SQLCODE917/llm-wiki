@@ -261,6 +261,9 @@ sizing gate, the required section structure, and the style constraints.
 - Every boundary must have a clear input contract and output contract.
 - Map explicitly between DTOs, domain models, persistence models, and view models.
 - Use linting and static type checking to ensure code correctness
+- Use `CHECK_PLAN.md` as the agent-runnable contract for compiler artifacts,
+  CLI surfaces, forbidden patterns, agent workflows, and validation passes.
+  Update it before changing those surfaces.
 
 ### Boundary validation
 
@@ -307,6 +310,7 @@ sizing gate, the required section structure, and the style constraints.
 - Typecheck passes.
 - Relevant tests pass.
 - New behavior is covered by tests.
+- Contract surfaces changed by the work are reflected in `CHECK_PLAN.md`.
 - The diff has been self-reviewed for duplication, dead code, accidental coupling, and naming drift.
 
 ## Plan tool

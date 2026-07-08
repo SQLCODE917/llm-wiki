@@ -25,6 +25,8 @@ The index and log formats below are also enforced in harness code
 - `wiki/wiki-graph.json` — harness-owned graph export derived from current
   pages and links. It is not wiki knowledge and is never edited by the model.
 - `SCHEMA.md` — this file. Conventions and workflows. Revisions are logged.
+- `CHECK_PLAN.md` — harness/operator contract checks for agents. It is not
+  wiki evidence and is never cited as a source.
 
 ## Page conventions
 

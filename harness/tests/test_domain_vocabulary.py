@@ -37,6 +37,10 @@ def test_domain_vocabulary_contains_required_headings_and_classifications() -> N
         "deterministic boundary",
         "model output boundary",
         "boundary recovery",
+        "check plan",
+        "contract source of truth",
+        "forbidden pattern",
+        "agent workflow",
         "persistence model",
         "view model",
     ):

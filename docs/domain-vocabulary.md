@@ -16,6 +16,10 @@ interlinked, and maintained.
 | deterministic boundary | Project-owned boundary whose structured values come from deterministic code or persisted generated artifacts. |
 | model output boundary | Boundary whose structured values come from non-deterministic model output. |
 | boundary recovery | Visible rejection, retry feedback, quarantine, validation error, finding, or proposed change for invalid model output. |
+| check plan | Agent-runnable contract document for source-of-truth maps, forbidden patterns, workflows, and validation passes. |
+| contract source of truth | Canonical code or document that owns one contract surface. |
+| forbidden pattern | Named implementation or documentation shape that active production code must not use. |
+| agent workflow | Repeatable agent-facing procedure with a trigger, command, artifacts, and acceptance signal. |
 | persistence model | On-disk or database storage shape, such as JSON, JSONL, SQLite rows, or PDF manifest data. |
 | view model | Rendered or render-ready shape for reports, prompts, transcripts, or CLI output. |
 | domain service | Pure domain operation that enforces rules requiring context or multiple domain objects. |
@@ -35,6 +39,10 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `ModelOutputBoundary` | `model_output_boundary` |
 | `BoundaryDTO` | `boundary_dto` |
 | `BoundaryRecovery` | `boundary_recovery` |
+| `CheckPlan` | `check_plan` |
+| `ContractSourceOfTruth` | `contract_source_of_truth` |
+| `ForbiddenPattern` | `forbidden_pattern` |
+| `AgentWorkflow` | `agent_workflow` |
 | `PageKind` | `page_kind` |
 | `PageFamily` | `page_family` |
 | `PagePath` | `page_path` |

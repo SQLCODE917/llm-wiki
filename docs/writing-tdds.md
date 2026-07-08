@@ -18,6 +18,8 @@ You are to use language in the style of Simplified Technical English:
 - Noun clusters max 3 words. Break up "source-plan-bound extraction result contract."
 - One term per concept, every time — see the glossary below. Never vary a defined term for style.
 - Before defining domain terms, consult `docs/domain-vocabulary.md`.
+- If a TDD changes compiler contracts, CLI surfaces, artifact names, page
+  families, or generated wiki workflows, require an update to `CHECK_PLAN.md`.
 
 You are to avoid elements of style in your language - what's a virtue in prose is a defect in a TDD.
 

@@ -320,6 +320,8 @@ def test_cli_ingest_removed_old_flow_flags() -> None:
         parser.parse_args(["ingest", "book.pdf", "--write-human-articles"])
     with pytest.raises(SystemExit):
         parser.parse_args(["ingest", "book.pdf", "--reintegrate"])
+    with pytest.raises(SystemExit):
+        parser.parse_args(["ingest", "book.pdf", "--ingest-flow"])
 
 
 def _shade_source() -> str:
