@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import re
-from dataclasses import dataclass, replace
+from dataclasses import dataclass
 from typing import Literal
 
 from llmwiki.domain.prose_flow import structural_incompleteness_reason
@@ -194,7 +194,20 @@ def validate_typed_evidence_record(
             )
         )
         status = "needs_review"
-    return replace(record, status=status, findings=tuple(findings))
+    return TypedEvidenceRecord(
+        typed_evidence_record_id=record.typed_evidence_record_id,
+        source_id=record.source_id,
+        source_locator=record.source_locator,
+        source_hash=record.source_hash,
+        evidence_record_type=record.evidence_record_type,
+        status=status,
+        canonical_text=record.canonical_text,
+        structured_payload=record.structured_payload,
+        source_anchors=record.source_anchors,
+        source_block_ids=record.source_block_ids,
+        confidence=record.confidence,
+        findings=tuple(findings),
+    )
 
 
 def fragmentary_record_reason(text: str) -> str | None:

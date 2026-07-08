@@ -97,7 +97,13 @@ def compiler_findings(
 
 
 def rejected_page_ids(findings: tuple[CompilerFinding, ...]) -> tuple[str, ...]:
-    return tuple(dict.fromkeys(finding.page_id for finding in findings if finding.page_id))
+    return tuple(
+        dict.fromkeys(
+            finding.page_id
+            for finding in findings
+            if finding.page_id and finding.severity in {"blocking", "blocker"}
+        )
+    )
 
 
 def compiler_report(

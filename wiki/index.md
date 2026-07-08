@@ -11,10 +11,13 @@
 ## Entities
 
 ## Concepts
+- [[sword-world-rpg-complete-edition-brownie-brownie-building-spirit]] — [ Brownie ] (Brownie/Building Spirit): Brownies are spirits that inhabit old houses and castles constructed over fifty years ago.
 
 ## Procedures
+- [[sword-world-rpg-complete-edition-procedure-starting-adventurer-languages]] — Starting Adventurer Languages: All adventurers can speak common and racial languages immediately after creation.
 
 ## Recipes
+- [[javascriptallonge-recipe-once]] — Once: The Once recipe is an extremely helpful combinator that ensures a function can only be called once.
 
 ## Syntheses
 - [[cross-source-synthesis]] — Cross-source synthesis index: 0 shared topics.

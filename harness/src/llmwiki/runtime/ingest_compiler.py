@@ -7,6 +7,10 @@ from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 
+from llmwiki.domain.article_viability import (
+    ArticleViabilityFinding,
+    select_article_viable_candidates,
+)
 from llmwiki.domain.compiler_candidate_admission import (
     CandidateAdmissionFinding,
     admit_compiler_page_candidates,
@@ -112,13 +116,19 @@ class IngestCompiler:
             structure_report=structure_report,
             record_plan=source_record_plan,
         )
+        viability = select_article_viable_candidates(
+            source_id=source_page_id,
+            source_hash=source_map.source_hash,
+            candidates=admission.accepted_candidates,
+            record_set=record_set,
+        )
         budget = conservative_publication_budget(source_profile.source_profile.profile_id)
         publication_plan = plan_publication(
             source_id=source_page_id,
             source_hash=source_map.source_hash,
             source_profile_kind=budget.source_profile_kind,
             budget=budget,
-            candidates=admission.accepted_candidates,
+            candidates=viability.candidates,
         )
         publication_report = publication_walkability_report(publication_plan)
         pack_set = build_evidence_pack_set(
@@ -159,7 +169,11 @@ class IngestCompiler:
             diagnostic_findings=diagnostic_loop.finding_set.findings,
             repair_run=diagnostic_loop.repair_run,
         )
-        findings = (*_candidate_admission_findings(admission.report.findings), *findings)
+        findings = (
+            *_candidate_admission_findings(admission.report.findings),
+            *_article_viability_findings(viability.report.findings),
+            *findings,
+        )
         linked_pages = diagnostic_loop.final_human_articles.pages
         source_page = build_compiler_source_manifest(
             page_id=source_page_id,
@@ -171,6 +185,7 @@ class IngestCompiler:
             source_profile=source_profile,
             record_set=record_set,
             candidate_admission=admission.report,
+            article_viability=viability.report,
             publication_plan=publication_plan,
             evidence_pack_set=pack_set,
             article_lint_artifact=diagnostic_loop.final_article_lint,
@@ -214,6 +229,9 @@ class IngestCompiler:
                 "evidence-record-set.json": evidence_record_set_to_json(record_set),
                 "candidate-admission-report.json": canonical_json(
                     admission.report, indent=2
+                ),
+                "article-viability-report.json": canonical_json(
+                    viability.report, indent=2
                 ),
                 "page-publication-plan.json": canonical_json(publication_plan, indent=2),
                 "publication-walkability-report.md": render_publication_walkability_report(
@@ -333,6 +351,30 @@ class IngestCompiler:
 
 def _candidate_admission_findings(
     findings: tuple[CandidateAdmissionFinding, ...],
+) -> tuple[CompilerFinding, ...]:
+    converted: list[CompilerFinding] = []
+    for finding in findings:
+        converted.append(
+            CompilerFinding(
+                finding_id=deterministic_id(
+                    "compiler-finding",
+                    "page-plan",
+                    finding.finding_code,
+                    finding.page_id,
+                ),
+                stage_name="page-plan",
+                severity=finding.severity,
+                finding_code=finding.finding_code,
+                page_id=finding.page_id,
+                source_anchor="",
+                message=finding.message,
+            )
+        )
+    return tuple(converted)
+
+
+def _article_viability_findings(
+    findings: tuple[ArticleViabilityFinding, ...],
 ) -> tuple[CompilerFinding, ...]:
     converted: list[CompilerFinding] = []
     for finding in findings:

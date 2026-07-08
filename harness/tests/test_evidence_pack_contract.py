@@ -148,6 +148,168 @@ def test_structured_payload_text_is_available_for_diagnostics() -> None:
     assert pack_set.packs[0].items[0].payload_text == "Distance=20 meters"
 
 
+def test_oversized_pack_is_shaped_and_records_trim_finding() -> None:
+    records = tuple(
+        _record(
+            f"record-{index}",
+            "definition",
+            f"Definition {index}.",
+            block_ids=(f"block-{index}",),
+        )
+        for index in range(20)
+    )
+    pack_set = build_evidence_pack_set(
+        publication_plan=_plan(
+            _candidate(
+                "topic", tuple(record.typed_evidence_record_id for record in records)
+            )
+        ),
+        evidence_record_set=_record_set(*records),
+        source_map=_source_map(
+            *(
+                _block(f"block-{index}", f"Definition {index}.")
+                for index in range(20)
+            )
+        ),
+    )
+
+    assert len(pack_set.packs[0].items) == 3
+    assert "evidence-pack-trimmed" in {
+        finding.finding_code for finding in pack_set.findings
+    }
+
+
+def test_recipe_pack_contains_code_and_explanatory_context() -> None:
+    pack_set = build_evidence_pack_set(
+        publication_plan=_plan(
+            _candidate("map", ("code", "argument", "definition"), family="recipe-pattern")
+        ),
+        evidence_record_set=_record_set(
+            _record(
+                "code",
+                "code_example",
+                "Code example.",
+                payload="values.map(fn)",
+                block_ids=("block-code",),
+            ),
+            _record(
+                "argument",
+                "argument",
+                "Map transforms each value.",
+                block_ids=("block-argument",),
+            ),
+            _record(
+                "definition",
+                "definition",
+                "Map returns a new collection.",
+                block_ids=("block-definition",),
+            ),
+        ),
+        source_map=_source_map(
+            _block("block-code", "values.map(fn)"),
+            _block("block-argument", "Map transforms each value."),
+            _block("block-definition", "Map returns a new collection."),
+        ),
+    )
+
+    assert [item.evidence_record_type for item in pack_set.packs[0].items] == [
+        "code_example",
+        "argument",
+        "definition",
+    ]
+    assert pack_set.packs[0].items[0].support_ref.code == "typed-evidence-record:code"
+
+
+def test_procedure_pack_contains_steps_and_rule_closure() -> None:
+    pack_set = build_evidence_pack_set(
+        publication_plan=_plan(
+            _candidate("grapple", ("step-1", "step-2", "rule"), family="procedure-guide")
+        ),
+        evidence_record_set=_record_set(
+            _record(
+                "step-1", "procedure_step", "Choose a target.", block_ids=("block-step-1",)
+            ),
+            _record(
+                "step-2",
+                "procedure_step",
+                "Make an attack check.",
+                block_ids=("block-step-2",),
+            ),
+            _record("rule", "rule", "You must have an empty hand.", block_ids=("block-rule",)),
+        ),
+        source_map=_source_map(
+            _block("block-step-1", "Choose a target."),
+            _block("block-step-2", "Make an attack check."),
+            _block("block-rule", "You must have an empty hand."),
+        ),
+    )
+
+    assert [item.evidence_record_type for item in pack_set.packs[0].items] == [
+        "procedure_step",
+        "procedure_step",
+        "rule",
+    ]
+
+
+def test_topic_pack_prefers_definitions_and_rules_over_repetitive_arguments() -> None:
+    pack_set = build_evidence_pack_set(
+        publication_plan=_plan(
+            _candidate("shade", ("argument", "definition", "rule"), family="topic-concept")
+        ),
+        evidence_record_set=_record_set(
+            _record(
+                "argument",
+                "argument",
+                "Shade appears in the spell list.",
+                block_ids=("block-argument",),
+            ),
+            _record(
+                "definition",
+                "definition",
+                "Shade is a dark spirit.",
+                block_ids=("block-definition",),
+            ),
+            _record("rule", "rule", "Shade creates darkness.", block_ids=("block-rule",)),
+        ),
+        source_map=_source_map(
+            _block("block-argument", "Shade appears in the spell list."),
+            _block("block-definition", "Shade is a dark spirit."),
+            _block("block-rule", "Shade creates darkness."),
+        ),
+    )
+
+    assert [item.evidence_record_type for item in pack_set.packs[0].items] == [
+        "definition",
+        "rule",
+        "argument",
+    ]
+
+
+def test_evidence_packs_are_ordered_by_article_viability_rank() -> None:
+    lower = _candidate("procedure", ("record-procedure",), family="procedure-guide", rank=10)
+    higher = _candidate("topic", ("record-topic",), family="topic-concept", rank=30)
+    pack_set = build_evidence_pack_set(
+        publication_plan=PagePublicationPlan(
+            page_publication_plan_id="publication-plan",
+            page_publication_plan_fingerprint="fingerprint",
+            source_id="source",
+            source_hash=_HASH,
+            source_profile_kind="rpg-rules",
+            publication_budget_id="budget",
+            accepted_candidates=(lower, higher),
+            rejected_candidates=(),
+            public_counts=(("procedure-guide", 1), ("topic-concept", 1)),
+        ),
+        evidence_record_set=_record_set(
+            _record("record-procedure", "rule", "Procedure evidence."),
+            _record("record-topic", "definition", "Topic evidence."),
+        ),
+        source_map=_source_map(_block("block-shade", "Shared source evidence.")),
+    )
+
+    assert [pack.page_id for pack in pack_set.packs] == ["topic", "procedure"]
+
+
 def test_pack_adapter_keeps_support_refs_for_current_synthesis_plan() -> None:
     pack_set = build_evidence_pack_set(
         publication_plan=_plan(_candidate("shade", ("record-shade",))),
@@ -186,7 +348,13 @@ def _plan(candidate: PageCandidate) -> PagePublicationPlan:
     )
 
 
-def _candidate(page_id: str, support: tuple[str, ...]) -> PageCandidate:
+def _candidate(
+    page_id: str,
+    support: tuple[str, ...],
+    *,
+    family: str = "topic-concept",
+    rank: float = 1,
+) -> PageCandidate:
     return PageCandidate(
         page_candidate_id=f"candidate-{page_id}",
         source_id="source",
@@ -195,9 +363,9 @@ def _candidate(page_id: str, support: tuple[str, ...]) -> PageCandidate:
         page_id=page_id,
         title=page_id.title(),
         page_kind="concept",
-        page_family="topic-concept",
+        page_family=family,
         origin="test",
-        rank_score=1,
+        rank_score=rank,
         source_order=1,
         supporting_evidence_record_ids=support,
     )

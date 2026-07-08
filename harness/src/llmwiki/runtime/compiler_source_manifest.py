@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from llmwiki.domain.article_viability import ArticleViabilityReport
 from llmwiki.domain.compiler_candidate_admission import CandidateAdmissionReport
 from llmwiki.domain.diagnostic_contracts import (
     DiagnosticQuestionSet,
@@ -31,6 +32,7 @@ def build_compiler_source_manifest(
     source_profile: SourceProfileArtifact,
     record_set: EvidenceRecordSet,
     candidate_admission: CandidateAdmissionReport,
+    article_viability: ArticleViabilityReport,
     publication_plan: PagePublicationPlan,
     evidence_pack_set: EvidencePackSet,
     article_lint_artifact: ArticleLintArtifact,
@@ -62,6 +64,7 @@ def build_compiler_source_manifest(
         source_profile,
         record_set,
         candidate_admission,
+        article_viability,
         publication_plan,
         evidence_pack_set,
         article_lint_artifact,
@@ -83,6 +86,7 @@ def _body(
     source_profile: SourceProfileArtifact,
     record_set: EvidenceRecordSet,
     candidate_admission: CandidateAdmissionReport,
+    article_viability: ArticleViabilityReport,
     publication_plan: PagePublicationPlan,
     evidence_pack_set: EvidencePackSet,
     article_lint_artifact: ArticleLintArtifact,
@@ -107,6 +111,8 @@ def _body(
         f"- Typed evidence: {len(record_set.accepted_records)} accepted records",
         f"- Candidate admission: {len(candidate_admission.accepted_candidate_ids)} accepted, "
         f"{len(candidate_admission.rejected_candidate_ids)} rejected",
+        f"- Article viability: {len(article_viability.accepted_candidate_ids)} accepted, "
+        f"{len(article_viability.rejected_candidate_ids)} rejected",
         f"- Publication budget: {len(publication_plan.accepted_candidates)} accepted, "
         f"{len(publication_plan.rejected_candidates)} rejected candidates",
         f"- Evidence packs: {len(evidence_pack_set.packs)} valid, "

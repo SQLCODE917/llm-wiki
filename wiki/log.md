@@ -608,3 +608,58 @@ Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/java
 Ingest compiler run ingest-artifact-set-7b07e552d2e79ff9 for raw/Sword World RPG - Complete Edition.pdf.
 Accepted pages: 1; rejected pages: 3230. Diagnostics: answered 0/0, missing 0, unsupported 0; repair skipped, changed 0. Top compiler findings: source-structure-cannot-drive-page=1796, publication-budget-exceeded=898, section-reference-not-explicitly-accepted=507, clipped-evidence-fragment=37, article-attempt-budget-exceeded=20.
 Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/sword-world-rpg-complete-edition-8e67d04d99d8.
+
+## [2026-07-07] ingest | javascriptallonge.pdf
+Ingest compiler run ingest-artifact-set-7276455318d78d56 for raw/javascriptallonge.pdf.
+Accepted pages: 1; rejected pages: 517. Diagnostics: answered 0/0, missing 0, unsupported 0; repair skipped, changed 0. Top compiler findings: duplicate-article-candidate=473, publication-budget-exceeded=172, procedure-evidence-closure-missing=18, unmapped-factual-sentence=12, article-attempt-budget-exceeded=11.
+Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/javascriptallonge-5873116c6496.
+
+## [2026-07-07] ingest | javascriptallonge.pdf
+Ingest compiler run ingest-artifact-set-b976fbd218947357 for raw/javascriptallonge.pdf.
+Accepted pages: 1; rejected pages: 517. Diagnostics: answered 0/0, missing 0, unsupported 0; repair skipped, changed 0. Top compiler findings: duplicate-article-candidate=473, publication-budget-exceeded=172, procedure-evidence-closure-missing=18, article-attempt-budget-exceeded=11, unmapped-factual-sentence=9.
+Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/javascriptallonge-5873116c6496.
+
+## [2026-07-07] ingest | javascriptallonge.pdf
+Ingest compiler run ingest-artifact-set-a16e3461468b61e8 for raw/javascriptallonge.pdf.
+Accepted pages: 1; rejected pages: 517. Diagnostics: answered 0/0, missing 0, unsupported 0; repair skipped, changed 0. Top compiler findings: duplicate-article-candidate=473, publication-budget-exceeded=172, procedure-evidence-closure-missing=18, clipped-evidence-fragment=13, article-attempt-budget-exceeded=11.
+Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/javascriptallonge-5873116c6496.
+
+## [2026-07-07] ingest | javascriptallonge.pdf
+Ingest compiler run ingest-artifact-set-ce76d1399d73f3cd for raw/javascriptallonge.pdf.
+Accepted pages: 1; rejected pages: 517. Diagnostics: answered 0/0, missing 0, unsupported 0; repair skipped, changed 0. Top compiler findings: duplicate-article-candidate=473, publication-budget-exceeded=172, procedure-evidence-closure-missing=18, clipped-evidence-fragment=13, article-attempt-budget-exceeded=11.
+Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/javascriptallonge-5873116c6496.
+
+## [2026-07-07] ingest | javascriptallonge.pdf
+Ingest compiler run ingest-artifact-set-fd794d9b609b5a0e for raw/javascriptallonge.pdf.
+Accepted pages: 3; rejected pages: 517. Diagnostics: answered 2/2, missing 1, unsupported 0; repair blocked, changed 0. Top compiler findings: duplicate-article-candidate=473, publication-budget-exceeded=172, procedure-evidence-closure-missing=18, article-attempt-budget-exceeded=11, low-value-article-candidate=6.
+Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/javascriptallonge-5873116c6496.
+
+## [2026-07-07] ingest | javascriptallonge.pdf
+Ingest compiler run ingest-artifact-set-e9305f639bb85185 for raw/javascriptallonge.pdf.
+Accepted pages: 2; rejected pages: 521. Diagnostics: answered 1/1, missing 1, unsupported 0; repair blocked, changed 0. Top compiler findings: duplicate-article-candidate=463, publication-budget-exceeded=168, procedure-evidence-closure-missing=18, weak-reader-title=11, article-attempt-budget-exceeded=11.
+Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/javascriptallonge-5873116c6496.
+
+## [2026-07-07] ingest | Sword World RPG - Complete Edition.pdf
+Ingest compiler run ingest-artifact-set-e02d98ffe99096b2 for raw/Sword World RPG - Complete Edition.pdf.
+Accepted pages: 1; rejected pages: 2745. Diagnostics: answered 0/0, missing 0, unsupported 0; repair skipped, changed 0. Top compiler findings: source-structure-cannot-drive-page=1796, duplicate-article-candidate=918, publication-budget-exceeded=454, section-reference-not-explicitly-accepted=30, article-attempt-budget-exceeded=17.
+Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/sword-world-rpg-complete-edition-8e67d04d99d8.
+
+## [2026-07-07] ingest | Sword World RPG - Complete Edition.pdf
+Ingest compiler run ingest-artifact-set-fd750511d8688755 for raw/Sword World RPG - Complete Edition.pdf.
+Accepted pages: 1; rejected pages: 2745. Diagnostics: answered 0/0, missing 0, unsupported 0; repair skipped, changed 0. Top compiler findings: source-structure-cannot-drive-page=1796, duplicate-article-candidate=918, publication-budget-exceeded=454, section-reference-not-explicitly-accepted=30, article-attempt-budget-exceeded=17.
+Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/sword-world-rpg-complete-edition-8e67d04d99d8.
+
+## [2026-07-07] ingest | Sword World RPG - Complete Edition.pdf
+Ingest compiler run ingest-artifact-set-c5eae08861c957ac for raw/Sword World RPG - Complete Edition.pdf.
+Accepted pages: 1; rejected pages: 2746. Diagnostics: answered 0/0, missing 0, unsupported 0; repair skipped, changed 0. Top compiler findings: source-structure-cannot-drive-page=1796, duplicate-article-candidate=917, publication-budget-exceeded=453, section-reference-not-explicitly-accepted=30, article-attempt-budget-exceeded=18.
+Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/sword-world-rpg-complete-edition-8e67d04d99d8.
+
+## [2026-07-07] ingest | Sword World RPG - Complete Edition.pdf
+Ingest compiler run ingest-artifact-set-93ad245a30f7479e for raw/Sword World RPG - Complete Edition.pdf.
+Accepted pages: 3; rejected pages: 2746. Diagnostics: answered 2/2, missing 1, unsupported 0; repair blocked, changed 0. Top compiler findings: source-structure-cannot-drive-page=1796, duplicate-article-candidate=917, publication-budget-exceeded=453, section-reference-not-explicitly-accepted=30, article-attempt-budget-exceeded=18.
+Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/sword-world-rpg-complete-edition-8e67d04d99d8.
+
+## [2026-07-07] ingest | javascriptallonge.pdf
+Ingest compiler run ingest-artifact-set-654f953bab177db8 for raw/javascriptallonge.pdf.
+Accepted pages: 2; rejected pages: 520. Diagnostics: answered 1/1, missing 1, unsupported 0; repair completed, changed 1. Top compiler findings: duplicate-article-candidate=463, publication-budget-exceeded=168, procedure-evidence-closure-missing=18, weak-reader-title=11, article-attempt-budget-exceeded=11.
+Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/javascriptallonge-5873116c6496.

@@ -67,7 +67,9 @@ class ForgeHumanArticleWriter:
                 retry_nudge=(
                     "Reply with exactly one write_article tool call. Every factual sentence "
                     "must have an ArticleClaim with support_refs using evidence aliases from "
-                    "the prompt, such as S1 or S2."
+                    "the prompt, such as S1 or S2. Each ArticleClaim.sentence must be one "
+                    "complete sentence in your own words, not copied source text, not a "
+                    "colon-ended fragment, and not a semicolon-joined list."
                 ),
             )
             result = await asyncio.wait_for(

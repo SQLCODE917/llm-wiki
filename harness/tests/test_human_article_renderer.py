@@ -314,6 +314,269 @@ def test_forge_human_article_writer_uses_structured_tool_with_full_evidence() ->
     assert '"summary"' not in sent
 
 
+def test_forge_human_article_writer_drops_unclaimed_block_prose() -> None:
+    client = FakeClient(
+        [
+            [
+                ToolCall(
+                    tool="write_article",
+                    args={
+                        "page_id": "shade",
+                        "title": "Shade",
+                        "sections": [
+                            {
+                                "section_id": "overview",
+                                "heading": "Overview",
+                                "blocks": [
+                                    {
+                                        "block_id": "b1",
+                                        "block_kind": "paragraph",
+                                        "text": (
+                                            "Unsupported model prose. "
+                                            "Shade creates darkness around the target."
+                                        ),
+                                    }
+                                ],
+                                "article_claim_ids": ["c1"],
+                            }
+                        ],
+                        "claims": [
+                            {
+                                "claim_id": "c1",
+                                "sentence": "Shade creates darkness around the target.",
+                                "support_refs": ["S1"],
+                            }
+                        ],
+                    },
+                )
+            ]
+        ]
+    )
+    writer = ForgeHumanArticleWriter(
+        client=client,
+        context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
+        schema_text="schema",
+    )
+
+    article = writer.write_article(_pack(source_text="Full Shade evidence text."))
+
+    assert article.sections[0].blocks[0].text == "Shade creates darkness around the target."
+    assert validate_human_article(_pack(source_text="Full Shade evidence text."), article).accepted
+
+
+def test_forge_human_article_writer_splits_multi_sentence_claims() -> None:
+    client = FakeClient(
+        [
+            [
+                ToolCall(
+                    tool="write_article",
+                    args={
+                        "page_id": "shade",
+                        "title": "Shade",
+                        "sections": [
+                            {
+                                "section_id": "overview",
+                                "heading": "Overview",
+                                "blocks": [],
+                                "article_claim_ids": ["c1"],
+                            }
+                        ],
+                        "claims": [
+                            {
+                                "claim_id": "c1",
+                                "sentence": (
+                                    "Shade creates darkness around the target. "
+                                    "Shade interacts with will-o-wisp light."
+                                ),
+                                "support_refs": ["S1"],
+                            }
+                        ],
+                    },
+                )
+            ]
+        ]
+    )
+    writer = ForgeHumanArticleWriter(
+        client=client,
+        context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
+        schema_text="schema",
+    )
+    pack = _pack(source_text="Full Shade evidence text.")
+
+    article = writer.write_article(pack)
+
+    assert [claim.claim_id for claim in article.claims] == ["c1-1", "c1-2"]
+    assert validate_human_article(pack, article).accepted
+
+
+def test_forge_human_article_writer_punctuates_short_claim_facts() -> None:
+    client = FakeClient(
+        [
+            [
+                ToolCall(
+                    tool="write_article",
+                    args={
+                        "page_id": "shade",
+                        "title": "Shade",
+                        "sections": [
+                            {
+                                "section_id": "overview",
+                                "heading": "Overview",
+                                "blocks": [],
+                                "article_claim_ids": ["c1", "c2"],
+                            }
+                        ],
+                        "claims": [
+                            {
+                                "claim_id": "c1",
+                                "sentence": "Bonus Damage +2",
+                                "support_refs": ["S1"],
+                            },
+                            {
+                                "claim_id": "c2",
+                                "sentence": "Critical Target -1",
+                                "support_refs": ["S1"],
+                            },
+                        ],
+                    },
+                )
+            ]
+        ]
+    )
+    writer = ForgeHumanArticleWriter(
+        client=client,
+        context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
+        schema_text="schema",
+    )
+    pack = _pack(source_text="Full combat option evidence text.")
+
+    article = writer.write_article(pack)
+
+    assert article.sections[0].blocks[0].text == "Bonus Damage +2. Critical Target -1."
+    assert [claim.sentence for claim in article.claims] == [
+        "Bonus Damage +2.",
+        "Critical Target -1.",
+    ]
+    assert validate_human_article(pack, article).accepted
+
+
+def test_forge_human_article_writer_rescues_json_string_blocks() -> None:
+    client = FakeClient(
+        [
+            [
+                ToolCall(
+                    tool="write_article",
+                    args={
+                        "page_id": "shade",
+                        "title": "Shade",
+                        "sections": [
+                            {
+                                "section_id": "overview",
+                                "heading": "Overview",
+                                "blocks": [
+                                    (
+                                        '{"block_id":"b1","block_kind":"paragraph",'
+                                        '"text":"Unclaimed text."}'
+                                    )
+                                ],
+                                "article_claim_ids": ["c1"],
+                            }
+                        ],
+                        "claims": [
+                            {
+                                "claim_id": "c1",
+                                "sentence": "Shade creates darkness around the target.",
+                                "support_refs": ["S1"],
+                            }
+                        ],
+                    },
+                )
+            ]
+        ]
+    )
+    writer = ForgeHumanArticleWriter(
+        client=client,
+        context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
+        schema_text="schema",
+    )
+    pack = _pack(source_text="Full Shade evidence text.")
+
+    article = writer.write_article(pack)
+
+    assert article.sections[0].blocks[0].text == "Shade creates darkness around the target."
+    assert validate_human_article(pack, article).accepted
+
+
+def test_forge_human_article_writer_repairs_after_tool_validation_error() -> None:
+    client = FakeClient(
+        [
+            [
+                ToolCall(
+                    tool="write_article",
+                    args={
+                        "page_id": "shade",
+                        "title": "Shade",
+                        "sections": [
+                            {
+                                "section_id": "overview",
+                                "heading": "Overview",
+                                "blocks": [],
+                                "article_claim_ids": ["c1"],
+                            }
+                        ],
+                        "claims": [
+                            {
+                                "claim_id": "c1",
+                                "sentence": "Shade creates a region of magical darkness.",
+                                "support_refs": ["S1"],
+                            }
+                        ],
+                    },
+                )
+            ],
+            [
+                ToolCall(
+                    tool="write_article",
+                    args={
+                        "page_id": "shade",
+                        "title": "Shade",
+                        "sections": [
+                            {
+                                "section_id": "overview",
+                                "heading": "Overview",
+                                "blocks": [],
+                                "article_claim_ids": ["c1"],
+                            }
+                        ],
+                        "claims": [
+                            {
+                                "claim_id": "c1",
+                                "sentence": "Shade can darken an area with magic.",
+                                "support_refs": ["S1"],
+                            }
+                        ],
+                    },
+                )
+            ],
+        ]
+    )
+    writer = ForgeHumanArticleWriter(
+        client=client,
+        context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
+        schema_text="schema",
+    )
+    pack = _pack(
+        source_text=(
+            "Shade creates a region of magical darkness that affects light in the area."
+        )
+    )
+
+    article = writer.write_article(pack)
+
+    assert article.claims[0].sentence == "Shade can darken an area with magic."
+    assert len(client.sent) == 2
+
+
 def test_forge_human_article_writer_rejects_unknown_support_alias() -> None:
     client = FakeClient(
         [

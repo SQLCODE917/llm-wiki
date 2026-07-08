@@ -98,7 +98,7 @@ _STAGE_ORDER = (
     (
         "page-plan",
         ("source-structure-integrity", "source-record-plan", "evidence-record-set"),
-        ("candidate-admission-report", "page-publication-plan"),
+        ("candidate-admission-report", "article-viability-report", "page-publication-plan"),
     ),
     ("evidence-packs", ("page-publication-plan",), ("evidence-pack-set",)),
     (

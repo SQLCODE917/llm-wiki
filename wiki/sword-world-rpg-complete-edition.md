@@ -23,39 +23,41 @@ Source: raw/Sword World RPG - Complete Edition.pdf
 - Source profile: rpg-rules (0.85)
 - Typed evidence: 13762 accepted records
 - Candidate admission: 1431 accepted, 1799 rejected
-- Publication budget: 23 accepted, 1408 rejected candidates
-- Evidence packs: 23 valid, 0 missing/invalid
-- Article lint gates: 0 accepted, 0 blocked
-- Diagnostic questions: 0; 0 missing, 0 unsupported
-- Repair run: skipped; 0 page(s) changed
-- Compiler findings: 3276
+- Article viability: 505 accepted, 926 rejected
+- Publication budget: 21 accepted, 484 rejected candidates
+- Evidence packs: 21 valid, 0 missing/invalid
+- Article lint gates: 2 accepted, 0 blocked
+- Diagnostic questions: 2; 1 missing, 0 unsupported
+- Repair run: blocked; 0 page(s) changed
+- Compiler findings: 3246
 
 ## Accepted Pages
 
-- No generated article pages were accepted for publication.
+- [[sword-world-rpg-complete-edition-procedure-starting-adventurer-languages]] - Starting Adventurer Languages: All adventurers can speak common and racial languages immediately after creation.
+- [[sword-world-rpg-complete-edition-brownie-brownie-building-spirit]] - [ Brownie ] (Brownie/Building Spirit): Brownies are spirits that inhabit old houses and castles constructed over fifty years ago.
 
 ## Rejected Candidates
 
-- 1.2 > Races (collection-page): publication-budget-exceeded
-- 1.3.1 Skill Basics (collection-page): publication-budget-exceeded
-- 1.3.2 Skill Types (collection-page): publication-budget-exceeded
-- 1.3.3 Adventurer Level (collection-page): publication-budget-exceeded
-- 1.3.4 Explanation of Adventurer Skills (collection-page): publication-budget-exceeded
-- 1.4.1 Choose a Race (collection-page): publication-budget-exceeded
-- 1.4.2 Determine Ability Scores (collection-page): publication-budget-exceeded
-- 1.4.3 Starting Skills and Starting > Experience Points (collection-page): publication-budget-exceeded
-- 1.4.4 Age, Gender, Name (collection-page): publication-budget-exceeded
-- 1.4.5 Character Growth via Starting Experience Points (collection-page): publication-budget-exceeded
-- 1.4.6 Purchasing Weapons and Armor (collection-page): publication-budget-exceeded
-- 1.4.7 Restrictions on Weapons and Armor Based on Skill (collection-page): publication-budget-exceeded
-- 1.4 > Character Creation (collection-page): publication-budget-exceeded
-- 1. Replay Collections (collection-page): publication-budget-exceeded
-- 10.1 > Combat in Special Situations (collection-page): publication-budget-exceeded
-- 10.1 > NPC and Monster Action Announcement (collection-page): publication-budget-exceeded
-- 10.3 > Surprise Attacks (collection-page): publication-budget-exceeded
-- 10.4 > Water Combat (collection-page): publication-budget-exceeded
-- 10.5 (collection-page): publication-budget-exceeded
-- 10th Level Ancient Magic List [ Dimension Gate ] (collection-page): publication-budget-exceeded
+- 16.6.2 Two-Handed Attacks > Throwing Multiple Darts or Daggers (procedure-guide): publication-budget-exceeded
+- 5.1.13 Spirit Magic and the Shaman Skill (procedure-guide): publication-budget-exceeded
+- 6.4 (procedure-guide): publication-budget-exceeded
+- Area Aim (procedure-guide): publication-budget-exceeded
+- [ ② First-Aid [-] ] (No equipment restriction) (procedure-guide): publication-budget-exceeded
+- [ ⑤ Folklore Knowledge [Intelligence] ] (Not retriable) > Common Adventurer Abilities (procedure-guide): publication-budget-exceeded
+- Grapple (procedure-guide): publication-budget-exceeded
+- [ ③ Herbs [Intelligence] ] (Not retriable) (procedure-guide): publication-budget-exceeded
+- [ ② Treatment [Intelligence]] > Hunter Skill (procedure-guide): publication-budget-exceeded
+- [ ① Tumble [Agility] ] (Equipment restriction) (procedure-guide): publication-budget-exceeded
+- [ Tunnel ] (Gnome/Earth Spirit) (procedure-guide): publication-budget-exceeded
+- 1. Obtain Spellbooks or Scrolls Containing Lost Spell (section-reference): section-reference-not-explicitly-accepted
+- 10.5 > Attacks Against the Sleeping (section-reference): section-reference-not-explicitly-accepted
+- 11.4 (section-reference): section-reference-not-explicitly-accepted
+- 13.2.10 Magical Creatures (section-reference): section-reference-not-explicitly-accepted
+- 13.6.1 (section-reference): section-reference-not-explicitly-accepted
+- 13.6.2 (section-reference): section-reference-not-explicitly-accepted
+- 13.6.5 (section-reference): section-reference-not-explicitly-accepted
+- 13.6.6 (section-reference): section-reference-not-explicitly-accepted
+- 13.6.7 Special Defense Abilities: Weaknesses (section-reference): section-reference-not-explicitly-accepted
 
 ## Compiler Findings
 

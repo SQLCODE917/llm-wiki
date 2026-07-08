@@ -176,3 +176,34 @@ def test_javascript_code_example_stays_code_block() -> None:
 
     assert source_map.source_blocks[1].block_type == "code"
     assert "const counter" in source_map.source_blocks[1].source_text
+
+
+def test_javascript_embedded_paragraph_code_is_recovered_as_code_block() -> None:
+    source_map = build_normalized_source_map(
+        _model(
+            (
+                _element("e1", "heading", "Map", "Map", 42),
+                _element(
+                    "e2",
+                    "paragraph",
+                    "Map",
+                    (
+                        "Use map when transforming values.\n\n"
+                        "const doubled = values.map((value) => value * 2);\n"
+                        "return doubled;\n\n"
+                        "The result keeps the same order."
+                    ),
+                    42,
+                ),
+            )
+        )
+    )
+
+    assert [block.block_type for block in source_map.source_blocks] == [
+        "heading",
+        "paragraph",
+        "code",
+        "paragraph",
+    ]
+    assert "values.map" in source_map.source_blocks[2].source_text
+    assert source_map.source_blocks[2].source_anchor.element_path[-1] == "split-2"

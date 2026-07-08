@@ -18,6 +18,8 @@ from llmwiki.domain.ledger.human_article import (
     ArticleSection,
     HumanArticle,
 )
+from llmwiki.domain.ledger.human_article_validation import validate_human_article
+from llmwiki.domain.ledger.page_synthesis_text import split_sentences
 from llmwiki.domain.model_profile import DEFAULT_MODEL_PROFILE, ModelProfile
 
 _PROMPT_EVIDENCE_ITEM_LIMIT = 24
@@ -39,6 +41,17 @@ class ArticleSectionParams(BaseModel):
     heading: str
     blocks: list[ArticleBlockParams]
     article_claim_ids: list[str] = Field(default_factory=list)
+
+    @model_validator(mode="before")
+    @classmethod
+    def rescue_json_string_blocks(cls, value: object) -> object:
+        if not isinstance(value, dict):
+            return value
+        data: dict[str, Any] = {str(key): item for key, item in value.items()}
+        blocks = data.get("blocks")
+        if isinstance(blocks, list):
+            data["blocks"] = tuple(_json_object_or_original(block) for block in blocks)
+        return data
 
 
 class ArticleClaimParams(BaseModel):
@@ -78,6 +91,10 @@ class WriteArticleParams(BaseModel):
         for key in ("sections", "claims", "related_links", "source_trail_items"):
             if isinstance(data.get(key), dict):
                 data[key] = [data[key]]
+        if isinstance(data.get("sections"), list):
+            data["sections"] = tuple(
+                _json_object_or_original(section) for section in data["sections"]
+            )
         return data
 
 
@@ -179,9 +196,13 @@ Use only EvidencePack items as factual support. Do not write markdown headings,
 frontmatter, citations, source trails, or final wiki markdown. The harness will
 render markdown after validation. Every factual sentence in article blocks must
 appear verbatim as one ArticleClaim.sentence and cite selected support_refs using
-only support_alias values from the prompt, such as S1 or S2. If the evidence is too
-weak, call write_article with empty sections and claims rather than inventing or
-clipping text.
+only support_alias values from the prompt, such as S1 or S2. Prefer short,
+complete, single-sentence claims in your own words. Do not copy source sentences
+or sentence prefixes. Do not quote code as prose. Avoid ellipses, TODO text,
+colon-ended fragments, semicolon-joined facts, and clipped source fragments. Put
+claim ids in article_claim_ids for the section where those claim sentences should
+appear. If the evidence is too weak, call write_article with empty sections and
+claims rather than inventing or clipping text.
 
 Schema:
 {schema}
@@ -210,6 +231,21 @@ def write_article_tool(pack: EvidencePack) -> ToolDef:
             raise ValueError(
                 f"Article page_id {article.page_id!r} does not match {pack.page_id!r}."
             )
+        result = validate_human_article(pack, article)
+        actionable_findings = tuple(
+            finding
+            for finding in result.findings
+            if finding.finding_type
+            in {
+                "unmapped-factual-sentence",
+                "placeholder-text",
+                "clipped-evidence-fragment",
+                "copied-source-phrases",
+                "raw-markdown-prose",
+            }
+        )
+        if actionable_findings:
+            raise ValueError(_tool_validation_message(actionable_findings))
         return human_article_to_json(article)
 
     return ToolDef(
@@ -277,7 +313,7 @@ def human_article_from_params(
     support_ref_from_code = (
         support_aliases.support_ref_for if support_aliases is not None else _support_ref_from_code
     )
-    return HumanArticle(
+    article = HumanArticle(
         params.page_id,
         params.title,
         tuple(
@@ -319,6 +355,9 @@ def human_article_from_params(
         ),
         tuple(params.source_trail_items),
     )
+    if support_aliases is None:
+        return article
+    return _claim_authored_article(article)
 
 
 def human_article_to_json(article: HumanArticle) -> str:
@@ -379,6 +418,149 @@ def _support_ref_from_code(code: str) -> SupportRef:
     if not separator or not support_kind or not support_id:
         raise ValueError(f"Support ref must be formatted as kind:id, got {code!r}.")
     return SupportRef(support_kind, support_id)
+
+
+def _claim_authored_article(article: HumanArticle) -> HumanArticle:
+    """Use supported claim sentences as the only factual prose from tool output."""
+
+    claims, claim_id_map = _split_multi_sentence_claims(article.claims)
+    claims_by_id = {claim.claim_id: claim for claim in claims}
+    used_claim_ids: set[str] = set()
+    sections: list[ArticleSection] = []
+    for section_index, section in enumerate(article.sections, start=1):
+        section_claim_ids = tuple(
+            expanded_claim_id
+            for claim_id in section.article_claim_ids
+            for expanded_claim_id in claim_id_map.get(claim_id, ())
+            if expanded_claim_id in claims_by_id
+        )
+        if not section_claim_ids and len(article.sections) == 1:
+            section_claim_ids = tuple(claim.claim_id for claim in claims)
+        used_claim_ids.update(section_claim_ids)
+        blocks = _blocks_from_claims(section.section_id, section_claim_ids, claims_by_id)
+        sections.append(
+            ArticleSection(
+                section.section_id or f"section-{section_index}",
+                section.heading,
+                blocks,
+                section_claim_ids,
+            )
+        )
+
+    remaining_claim_ids = tuple(
+        claim.claim_id for claim in claims if claim.claim_id not in used_claim_ids
+    )
+    if remaining_claim_ids:
+        if sections:
+            first = sections[0]
+            claim_ids = first.article_claim_ids + remaining_claim_ids
+            sections[0] = ArticleSection(
+                first.section_id,
+                first.heading,
+                _blocks_from_claims(first.section_id, claim_ids, claims_by_id),
+                claim_ids,
+            )
+        else:
+            sections.append(
+                ArticleSection(
+                    "overview",
+                    "Overview",
+                    _blocks_from_claims("overview", remaining_claim_ids, claims_by_id),
+                    remaining_claim_ids,
+                )
+            )
+
+    return HumanArticle(
+        article.page_id,
+        article.title,
+        tuple(sections),
+        claims,
+        article.related_links,
+        article.source_trail_items,
+        article.findings,
+    )
+
+
+def _split_multi_sentence_claims(
+    claims: tuple[ArticleClaim, ...],
+) -> tuple[tuple[ArticleClaim, ...], dict[str, tuple[str, ...]]]:
+    normalized_claims: list[ArticleClaim] = []
+    claim_id_map: dict[str, tuple[str, ...]] = {}
+    for claim in claims:
+        sentences = tuple(sentence for sentence in split_sentences(claim.sentence) if sentence)
+        if len(sentences) <= 1:
+            normalized_claims.append(
+                ArticleClaim(
+                    claim.claim_id,
+                    _complete_sentence(claim.sentence),
+                    claim.support_refs,
+                    claim.claim_role,
+                )
+            )
+            claim_id_map[claim.claim_id] = (claim.claim_id,)
+            continue
+        expanded_ids: list[str] = []
+        for index, sentence in enumerate(sentences, start=1):
+            claim_id = f"{claim.claim_id}-{index}"
+            expanded_ids.append(claim_id)
+            normalized_claims.append(
+                ArticleClaim(
+                    claim_id,
+                    _complete_sentence(sentence),
+                    claim.support_refs,
+                    claim.claim_role,
+                )
+            )
+        claim_id_map[claim.claim_id] = tuple(expanded_ids)
+    return tuple(normalized_claims), claim_id_map
+
+
+def _json_object_or_original(value: object) -> object:
+    if not isinstance(value, str):
+        return value
+    stripped = value.strip()
+    if not stripped.startswith("{"):
+        return value
+    try:
+        decoded = json.loads(stripped)
+    except json.JSONDecodeError:
+        return value
+    return decoded if isinstance(decoded, dict) else value
+
+
+def _complete_sentence(text: str) -> str:
+    cleaned = " ".join(text.split()).strip()
+    if not cleaned or cleaned[-1] in ".!?":
+        return cleaned
+    return f"{cleaned}."
+
+
+def _tool_validation_message(findings: tuple[ArticleFinding, ...]) -> str:
+    messages = tuple(dict.fromkeys(finding.message for finding in findings))[:4]
+    return (
+        "Article validation failed. Rewrite with complete single-sentence claims "
+        "in your own words and cite support aliases. Findings: "
+        + " | ".join(messages)
+    )
+
+
+def _blocks_from_claims(
+    section_id: str, claim_ids: tuple[str, ...], claims_by_id: dict[str, ArticleClaim]
+) -> tuple[ArticleBlock, ...]:
+    sentences = tuple(
+        claims_by_id[claim_id].sentence.strip()
+        for claim_id in claim_ids
+        if claims_by_id[claim_id].sentence.strip()
+    )
+    if not sentences:
+        return ()
+    return (
+        ArticleBlock(
+            f"{section_id or 'section'}-claims",
+            "paragraph",
+            " ".join(sentences),
+        ),
+    )
 
 
 def _exact_prefix(text: str, max_chars: int) -> str:

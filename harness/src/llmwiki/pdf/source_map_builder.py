@@ -19,6 +19,9 @@ from llmwiki.pdf.document import DocumentElement, DocumentModel, _has_lexical_co
 _SHORT_FURNITURE_WORD_LIMIT = 5
 _HEADER_Y_MAX = 80.0
 _FOOTER_Y_MIN = 720.0
+_CODE_LINE_RE = re.compile(
+    r"(?:=>|^\s*(?:const|let|var|function|class|return|for|if)\b|[{};]\s*$)"
+)
 
 
 def build_normalized_source_map(model: DocumentModel) -> NormalizedSourceMap:
@@ -84,22 +87,26 @@ def build_normalized_source_map(model: DocumentModel) -> NormalizedSourceMap:
             anchor,
             parent_by_section.get(element.heading_path, ""),
         )
-        if block.block_type == "heading":
-            parent_by_section[element.heading_path] = block.source_block_id
-        elif block.parent_block_id:
-            child_ids_by_parent.setdefault(block.parent_block_id, []).append(block.source_block_id)
-        blocks.append(block)
-        if block.block_type in {"table", "code"}:
-            findings.append(
-                _finding(
-                    model,
-                    source_order,
-                    f"{block.block_type}-block-candidate",
-                    anchor,
-                    f"Element {element.element_id} is a {block.block_type} block.",
-                    severity="info",
+        split_blocks = _split_recovered_code_blocks(model, element, source_order, block)
+        for split_block in split_blocks:
+            if split_block.block_type == "heading":
+                parent_by_section[element.heading_path] = split_block.source_block_id
+            elif split_block.parent_block_id:
+                child_ids_by_parent.setdefault(split_block.parent_block_id, []).append(
+                    split_block.source_block_id
                 )
-            )
+            blocks.append(split_block)
+            if split_block.block_type in {"table", "code"}:
+                findings.append(
+                    _finding(
+                        model,
+                        source_order,
+                        f"{split_block.block_type}-block-candidate",
+                        split_block.source_anchor,
+                        f"Element {element.element_id} is a {split_block.block_type} block.",
+                        severity="info",
+                    )
+                )
 
     blocks_with_children = tuple(
         replace(block, child_block_ids=tuple(child_ids_by_parent.get(block.source_block_id, ())))
@@ -146,6 +153,84 @@ def _source_block(
         confidence=_confidence(element, source_text),
         source_order=source_order,
     )
+
+
+def _split_recovered_code_blocks(
+    model: DocumentModel,
+    element: DocumentElement,
+    source_order: int,
+    block: SourceBlock,
+) -> tuple[SourceBlock, ...]:
+    if block.block_type != "paragraph" or not _has_recoverable_code(block.source_text):
+        return (block,)
+    parts = _code_split_parts(block.source_text)
+    if len(parts) <= 1:
+        return (block,)
+    return tuple(
+        _split_block(model, element, source_order, block, index, part_type, text)
+        for index, (part_type, text) in enumerate(parts, start=1)
+        if text.strip()
+    )
+
+
+def _split_block(
+    model: DocumentModel,
+    element: DocumentElement,
+    source_order: int,
+    original: SourceBlock,
+    index: int,
+    block_type: SourceBlockType,
+    text: str,
+) -> SourceBlock:
+    anchor = SourceAnchor(
+        source_locator=original.source_anchor.source_locator,
+        source_hash=original.source_anchor.source_hash,
+        page_span=original.source_anchor.page_span,
+        element_path=(*original.source_anchor.element_path, f"split-{index}"),
+        text_fingerprint=_digest(canonicalize_evidence_text(text))[:16],
+        bounding_boxes=original.source_anchor.bounding_boxes,
+    )
+    identity = "|".join(
+        (
+            model.source_hash,
+            str(source_order),
+            element.element_id,
+            f"split-{index}",
+            block_type,
+            anchor.text_fingerprint,
+        )
+    )
+    return SourceBlock(
+        source_block_id=f"source-block-{_digest(identity)[:16]}",
+        source_anchor=anchor,
+        block_type=block_type,
+        source_text=text.strip(),
+        page_span=original.page_span,
+        section_path=original.section_path,
+        parent_block_id=original.parent_block_id,
+        child_block_ids=(),
+        confidence=min(original.confidence, 0.9) if block_type == "code" else original.confidence,
+        source_order=source_order,
+    )
+
+
+def _has_recoverable_code(text: str) -> bool:
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+    return sum(1 for line in lines if _CODE_LINE_RE.search(line)) >= 2
+
+
+def _code_split_parts(text: str) -> tuple[tuple[SourceBlockType, str], ...]:
+    parts: list[tuple[SourceBlockType, list[str]]] = []
+    current_type: SourceBlockType | None = None
+    for line in text.splitlines():
+        line_type: SourceBlockType = "code" if _CODE_LINE_RE.search(line.strip()) else "paragraph"
+        if not line.strip():
+            line_type = current_type or "paragraph"
+        if current_type != line_type:
+            parts.append((line_type, []))
+            current_type = line_type
+        parts[-1][1].append(line)
+    return tuple((part_type, "\n".join(lines).strip()) for part_type, lines in parts)
 
 
 def _source_anchor(

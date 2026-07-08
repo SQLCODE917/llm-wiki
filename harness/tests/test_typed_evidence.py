@@ -206,6 +206,37 @@ def test_javascript_producer_emits_code_examples_and_arguments() -> None:
     assert "const counter" in record_set.accepted_records[0].support_text
 
 
+def test_javascript_producer_emits_code_example_from_recovered_paragraph_code() -> None:
+    source_map = _source_map(
+        "javascriptallonge.pdf",
+        (
+            _element("e1", "heading", "Mapping", "Mapping", 42),
+            _element(
+                "e2",
+                "paragraph",
+                "Mapping",
+                (
+                    "Map transforms values.\n\n"
+                    "const doubled = values.map((value) => value * 2);\n"
+                    "return doubled;"
+                ),
+                42,
+            ),
+        ),
+    )
+    artifact, plan = _artifact_and_plan(source_map)
+
+    record_set = DeterministicTypedEvidenceProducer().build_record_set(source_map, artifact, plan)
+
+    code_records = [
+        record
+        for record in record_set.accepted_records
+        if record.evidence_record_type == "code_example"
+    ]
+    assert len(code_records) == 1
+    assert "values.map" in code_records[0].payload_text
+
+
 def test_structured_payload_round_trips_and_preserves_table_text() -> None:
     source_map = _source_map(
         "reference.pdf",

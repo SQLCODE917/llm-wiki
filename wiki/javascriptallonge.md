@@ -17,45 +17,46 @@ Source: raw/javascriptallonge.pdf
 
 ## Compiler Summary
 
-- Source blocks: 355
-- Source structure findings: 0
-- Source records: 26
-- Source profile: programming-prose (0.70)
-- Typed evidence: 2962 accepted records
-- Candidate admission: 176 accepted, 18 rejected
-- Publication budget: 11 accepted, 165 rejected candidates
-- Evidence packs: 11 valid, 0 missing/invalid
-- Article lint gates: 0 accepted, 0 blocked
-- Diagnostic questions: 0; 0 missing, 0 unsupported
-- Repair run: skipped; 0 page(s) changed
-- Compiler findings: 224
+- Source blocks: 2130
+- Source structure findings: 1
+- Source records: 5
+- Source profile: programming-prose (0.85)
+- Typed evidence: 2785 accepted records
+- Candidate admission: 670 accepted, 23 rejected
+- Article viability: 186 accepted, 484 rejected
+- Publication budget: 14 accepted, 172 rejected candidates
+- Evidence packs: 14 valid, 0 missing/invalid
+- Article lint gates: 1 accepted, 0 blocked
+- Diagnostic questions: 1; 1 missing, 0 unsupported
+- Repair run: completed; 1 page(s) changed
+- Compiler findings: 697
 
 ## Accepted Pages
 
-- No generated article pages were accepted for publication.
+- [[javascriptallonge-recipe-once]] - Once: The Once recipe is an extremely helpful combinator that ensures a function can only be called once.
 
 ## Rejected Candidates
 
-- A Pull of the Lever: Prefaces (collection-page): publication-budget-exceeded
-- A Rich Aroma: Basic Numbers (collection-page): publication-budget-exceeded
-- A Warm Cup: Basic Strings and Quasi-Literals (collection-page): publication-budget-exceeded
-- About JavaScript Allongé (collection-page): publication-budget-exceeded
-- About The Author (collection-page): publication-budget-exceeded
-- About The Sample PDF (collection-page): publication-budget-exceeded
-- Ah. I'd Like to Have an Argument, Please. (collection-page): publication-budget-exceeded
-- Arrays and Destructuring Arguments (collection-page): publication-budget-exceeded
-- As Little As Possible About Functions, But No Less (collection-page): publication-budget-exceeded
-- Basic Operations on Iterables (collection-page): publication-budget-exceeded
-- Building Blocks (collection-page): publication-budget-exceeded
-- Closures and Scope (collection-page): publication-budget-exceeded
-- Combinators and Function Decorators (collection-page): publication-budget-exceeded
-- Copy on Write (collection-page): publication-budget-exceeded
-- Document (collection-page): publication-budget-exceeded
-- Flip (collection-page): publication-budget-exceeded
-- Foreword to the ``Six'' edition (collection-page): publication-budget-exceeded
-- Forewords to the First Edition (collection-page): publication-budget-exceeded
-- Functional Iterators (collection-page): publication-budget-exceeded
-- Garbage, Garbage Everywhere (collection-page): publication-budget-exceeded
+- A Pull of the Lever: Prefaces > About JavaScript Allongé > why the 'six' edition? (recipe-pattern): publication-budget-exceeded
+- A Pull of the Lever: Prefaces > What JavaScript Allongé is. And isn't. (recipe-pattern): publication-budget-exceeded
+- A Rich Aroma: Basic Numbers > operations on numbers (recipe-pattern): publication-budget-exceeded
+- A Warm Cup: Basic Strings and Quasi-Literals > evaluation time (recipe-pattern): publication-budget-exceeded
+- A Warm Cup: Basic Strings and Quasi-Literals > quasi-literals (recipe-pattern): publication-budget-exceeded
+- And also: > Ah. I'd Like to Have an Argument, Please. 22 (recipe-pattern): publication-budget-exceeded
+- And also: > Ah. I'd Like to Have an Argument, Please. 22 > call by value (recipe-pattern): publication-budget-exceeded
+- And also: > functions that evaluate to functions (recipe-pattern): publication-budget-exceeded
+- Basic Operations on Iterables > operations that compose two or more iterables into an iterable (recipe-pattern): publication-budget-exceeded
+- Building Blocks > composition (recipe-pattern): publication-budget-exceeded
+- Building Blocks > partial application (recipe-pattern): publication-budget-exceeded
+- Closures and Scope (recipe-pattern): publication-budget-exceeded
+- Closures and Scope > it's always the environment (recipe-pattern): publication-budget-exceeded
+- Closures and Scope > which came first, the chicken or the egg? (recipe-pattern): publication-budget-exceeded
+- Combinators and Function Decorators > function decorators (recipe-pattern): publication-budget-exceeded
+- Combinators and Function Decorators > higher-order functions (recipe-pattern): publication-budget-exceeded
+- Composing and Decomposing Data > Arrays and Destructuring Arguments > array literals (recipe-pattern): publication-budget-exceeded
+- Composing and Decomposing Data > Arrays and Destructuring Arguments > destructuring arrays (recipe-pattern): publication-budget-exceeded
+- Composing and Decomposing Data > Arrays and Destructuring Arguments > destructuring is not pattern matching (recipe-pattern): publication-budget-exceeded
+- Composing and Decomposing Data > Arrays and Destructuring Arguments > destructuring parameters (recipe-pattern): publication-budget-exceeded
 
 ## Compiler Findings
 
@@ -67,6 +68,10 @@ Source: raw/javascriptallonge.pdf
 - page-plan: procedure-evidence-closure-missing - procedure has no rule, formula, or table evidence closure
 - page-plan: procedure-evidence-closure-missing - procedure has no rule, formula, or table evidence closure
 - page-plan: procedure-evidence-closure-missing - procedure has no rule, formula, or table evidence closure
+- page-plan: source-structure-cannot-drive-page - candidate title maps to a source section reserved for evidence only
+- page-plan: source-structure-cannot-drive-page - candidate title maps to a source section reserved for evidence only
+- page-plan: source-structure-cannot-drive-page - candidate title maps to a source section reserved for evidence only
+- page-plan: source-structure-cannot-drive-page - candidate title maps to a source section reserved for evidence only
 - page-plan: procedure-evidence-closure-missing - procedure has no rule, formula, or table evidence closure
 - page-plan: procedure-evidence-closure-missing - procedure has no rule, formula, or table evidence closure
 - page-plan: procedure-evidence-closure-missing - procedure has no rule, formula, or table evidence closure
@@ -75,7 +80,3 @@ Source: raw/javascriptallonge.pdf
 - page-plan: procedure-evidence-closure-missing - procedure has no rule, formula, or table evidence closure
 - page-plan: procedure-evidence-closure-missing - procedure has no rule, formula, or table evidence closure
 - page-plan: procedure-evidence-closure-missing - procedure has no rule, formula, or table evidence closure
-- page-plan: procedure-evidence-closure-missing - procedure has no rule, formula, or table evidence closure
-- page-plan: procedure-evidence-closure-missing - procedure has no rule, formula, or table evidence closure
-- page-plan: publication-budget-exceeded - candidate exceeded the source-profile publication budget
-- page-plan: publication-budget-exceeded - candidate exceeded the source-profile publication budget

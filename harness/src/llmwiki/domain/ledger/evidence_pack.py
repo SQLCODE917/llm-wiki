@@ -9,6 +9,10 @@ from llmwiki.domain.ledger.page_publication import PageCandidate, PagePublicatio
 from llmwiki.domain.source_map import NormalizedSourceMap, SourceAnchor, SourceBlock
 from llmwiki.domain.typed_evidence import EvidenceRecordSet, TypedEvidenceRecord
 
+_PREFERRED_PACK_ITEMS = 12
+_HARD_PACK_ITEMS = 16
+_MIN_PACK_ITEMS = 4
+
 
 @dataclass(frozen=True)
 class SupportRef:
@@ -102,7 +106,10 @@ def build_evidence_pack_set(
 ) -> EvidencePackSet:
     findings: list[EvidencePackFinding] = []
     packs: list[EvidencePack] = []
-    for candidate in publication_plan.accepted_candidates:
+    for candidate in sorted(
+        publication_plan.accepted_candidates,
+        key=lambda item: (-item.rank_score, item.source_order, item.page_id),
+    ):
         if source_map is None:
             findings.append(_finding(candidate, "source-map-missing", "source map is missing"))
             continue
@@ -212,6 +219,8 @@ def _pack_for_candidate(
             )
             continue
         items.append(item)
+    shaped_items, shape_findings = _shape_pack_items(candidate, tuple(items))
+    findings.extend(shape_findings)
     coverage = tuple(
         EvidencePackCoverage(
             page_id=candidate.page_id,
@@ -221,7 +230,7 @@ def _pack_for_candidate(
             coverage_kind="page-purpose-support",
             coverage_status="covered",
         )
-        for item in items
+        for item in shaped_items
     )
     return EvidencePack(
         page_id=candidate.page_id,
@@ -231,7 +240,7 @@ def _pack_for_candidate(
         page_kind=candidate.page_kind,
         page_family=candidate.page_family,
         title=candidate.title,
-        items=tuple(items),
+        items=shaped_items,
         coverage=coverage,
         findings=tuple(findings),
     )
@@ -263,6 +272,103 @@ def _item_for_record(
     )
 
 
+def _shape_pack_items(
+    candidate: PageCandidate, items: tuple[EvidencePackItem, ...]
+) -> tuple[tuple[EvidencePackItem, ...], tuple[EvidencePackFinding, ...]]:
+    unique = _dedupe_items(items)
+    if not unique:
+        return (), ()
+    if candidate.page_family == "recipe-pattern":
+        selected, unbalanced = _shape_recipe_items(unique)
+    elif candidate.page_family == "procedure-guide":
+        selected, unbalanced = _shape_procedure_items(unique)
+    elif candidate.page_family == "topic-concept":
+        selected, unbalanced = _shape_topic_items(unique)
+    else:
+        selected, unbalanced = (unique[:_PREFERRED_PACK_ITEMS], False)
+    selected = selected[:_HARD_PACK_ITEMS]
+    findings: list[EvidencePackFinding] = []
+    if len(unique) > len(selected):
+        findings.append(
+            _finding(
+                candidate,
+                "evidence-pack-trimmed",
+                f"evidence pack trimmed from {len(unique)} to {len(selected)} item(s)",
+                severity="warning",
+            )
+        )
+    if unbalanced:
+        findings.append(
+            _finding(
+                candidate,
+                "evidence-pack-unbalanced",
+                "evidence pack is missing expected record-type balance for its page family",
+                severity="warning",
+            )
+        )
+    if 0 < len(selected) < _MIN_PACK_ITEMS:
+        findings.append(
+            _finding(
+                candidate,
+                "evidence-pack-under-supported",
+                f"evidence pack has {len(selected)} item(s); {_MIN_PACK_ITEMS} preferred",
+                severity="warning",
+            )
+        )
+    return selected, tuple(findings)
+
+
+def _shape_recipe_items(
+    items: tuple[EvidencePackItem, ...],
+) -> tuple[tuple[EvidencePackItem, ...], bool]:
+    code = _items_of_type(items, {"code_example"})
+    context = _items_of_type(items, {"argument", "definition", "procedure_step"})
+    selected = (*code[:4], *context[: _PREFERRED_PACK_ITEMS - min(len(code), 4)])
+    return _ordered_unique(selected), not code or not context
+
+
+def _shape_procedure_items(
+    items: tuple[EvidencePackItem, ...],
+) -> tuple[tuple[EvidencePackItem, ...], bool]:
+    steps = _items_of_type(items, {"procedure_step"})
+    closure = _items_of_type(items, {"rule", "formula", "table_fact"})
+    context = _items_of_type(items, {"definition", "entity_fact"})
+    selected = (*steps[:8], *closure[:4], *context[:2])
+    return _ordered_unique(selected[:_PREFERRED_PACK_ITEMS]), not steps or not closure
+
+
+def _shape_topic_items(
+    items: tuple[EvidencePackItem, ...],
+) -> tuple[tuple[EvidencePackItem, ...], bool]:
+    definitions = _items_of_type(items, {"definition"})
+    support = _items_of_type(items, {"rule", "code_example", "table_fact", "formula"})
+    context = _items_of_type(items, {"argument", "entity_fact"})
+    selected = (*definitions[:3], *support[:6], *context[:5])
+    return _ordered_unique(selected[:_PREFERRED_PACK_ITEMS]), not (definitions or support)
+
+
+def _items_of_type(
+    items: tuple[EvidencePackItem, ...], record_types: set[str]
+) -> tuple[EvidencePackItem, ...]:
+    return tuple(item for item in items if item.evidence_record_type in record_types)
+
+
+def _ordered_unique(items: tuple[EvidencePackItem, ...]) -> tuple[EvidencePackItem, ...]:
+    return tuple(dict.fromkeys(items))
+
+
+def _dedupe_items(items: tuple[EvidencePackItem, ...]) -> tuple[EvidencePackItem, ...]:
+    seen: set[str] = set()
+    unique: list[EvidencePackItem] = []
+    for item in items:
+        key = " ".join((item.payload_text or item.source_text).casefold().split())[:160]
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(item)
+    return tuple(unique)
+
+
 def _citation_label(record: TypedEvidenceRecord, blocks: tuple[SourceBlock, ...]) -> str:
     anchors = record.source_anchors
     if anchors:
@@ -281,9 +387,11 @@ def _finding(
     code: str,
     message: str,
     support_ref: SupportRef | None = None,
+    *,
+    severity: str = "blocker",
 ) -> EvidencePackFinding:
     return EvidencePackFinding(
-        severity="blocker",
+        severity=severity,
         finding_code=code,
         page_id=candidate.page_id,
         support_ref=support_ref.code if support_ref is not None else "",
