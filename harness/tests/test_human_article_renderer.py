@@ -7,6 +7,7 @@ from fakes import FakeClient
 from forge.context import ContextManager, NoCompact
 from forge.core.workflow import ToolCall
 
+from llmwiki.domain.article_write_queue import ArticleWriteQueuePolicy
 from llmwiki.domain.ledger.evidence_pack import (
     EvidencePack,
     EvidencePackCoverage,
@@ -75,29 +76,108 @@ def test_article_prompt_evidence_items_bound_large_source_text() -> None:
     assert prompt_items[0].item.support_ref == _SUPPORT
 
 
-def test_human_article_linked_pages_records_article_attempt_budget() -> None:
+def test_article_queue_continues_after_writer_failure() -> None:
     result = build_human_article_linked_pages(
-        evidence_pack_set=EvidencePackSet(
-            evidence_pack_set_id="pack-set",
-            evidence_pack_set_fingerprint="fingerprint",
-            source_id="sword",
-            source_hash=_HASH,
-            source_profile_kind="rpg-rules",
-            packs=(_pack(page_id="shade-a"), _pack(page_id="shade-b")),
-            findings=(),
+        evidence_pack_set=_pack_set(
+            _pack(page_id="bad", title="Bad"),
+            _pack(page_id="good", title="Good"),
+        ),
+        source_locator="sword.pdf",
+        today="2026-07-07",
+        article_writer=_FailsPageWriter("bad"),
+        queue_policy=ArticleWriteQueuePolicy("rpg-rules", 1, 2, 1),
+    )
+
+    assert [page.page_id for page in result.pages] == ["good"]
+    assert result.article_write_queue_run.attempted_page_ids == ("bad", "good")
+    assert result.article_write_queue_run.accepted_page_ids == ("good",)
+    assert "writer-failed" in {
+        finding.finding_code for finding in result.article_write_queue_run.findings
+    }
+
+
+def test_article_queue_stops_after_target_and_skips_nonblocking() -> None:
+    result = build_human_article_linked_pages(
+        evidence_pack_set=_pack_set(
+            _pack(page_id="first", title="First"),
+            _pack(page_id="second", title="Second"),
+        ),
+        source_locator="sword.pdf",
+        today="2026-07-07",
+        article_writer=_PackCoherentWriter(),
+        queue_policy=ArticleWriteQueuePolicy("rpg-rules", 1, 8, 1),
+    )
+
+    assert [page.page_id for page in result.pages] == ["first"]
+    assert result.article_write_queue_run.exhausted_reason == "target-reached"
+    assert result.article_write_queue_run.skipped_page_ids == ("second",)
+    assert {
+        finding.severity for finding in result.article_write_queue_run.findings
+    } == {"info"}
+
+
+def test_article_queue_stops_after_max_attempted_packs() -> None:
+    result = build_human_article_linked_pages(
+        evidence_pack_set=_pack_set(
+            _pack(page_id="bad-a", title="Bad A"),
+            _pack(page_id="bad-b", title="Bad B"),
         ),
         source_locator="sword.pdf",
         today="2026-07-07",
         article_writer=RejectingArticleWriter(),
-        max_article_packs=1,
-        max_attempts_per_pack=1,
+        queue_policy=ArticleWriteQueuePolicy("rpg-rules", 2, 1, 1),
     )
 
     assert result.pages == ()
-    assert "empty-article" in _finding_types(result.article_output.findings)
-    assert "article-attempt-budget-exceeded" in _finding_types(
+    assert result.article_write_queue_run.attempted_page_ids == ("bad-a",)
+    assert result.article_write_queue_run.skipped_page_ids == ("bad-b",)
+    assert result.article_write_queue_run.exhausted_reason == "attempt-budget-exhausted"
+    assert "attempt-budget-exceeded" in {
+        finding.finding_code for finding in result.article_write_queue_run.findings
+    }
+    assert "article-attempt-budget-exceeded" not in _finding_types(
         result.article_output.findings
     )
+
+
+def test_article_queue_prefers_programming_recipe_then_topic() -> None:
+    result = build_human_article_linked_pages(
+        evidence_pack_set=_pack_set(
+            _pack(page_id="topic", title="Topic", family="topic-concept"),
+            _pack(page_id="recipe", title="Recipe", family="recipe-pattern"),
+            profile="programming-prose",
+        ),
+        source_locator="javascript.pdf",
+        today="2026-07-07",
+        article_writer=_PackCoherentWriter(),
+        queue_policy=ArticleWriteQueuePolicy(
+            "programming-prose", 2, 2, 1, ("recipe-pattern", "topic-concept")
+        ),
+    )
+
+    assert result.article_write_queue_run.attempted_page_ids == ("recipe", "topic")
+    assert result.article_write_queue_run.family_counts == (
+        ("recipe-pattern", 1),
+        ("topic-concept", 1),
+    )
+
+
+def test_article_queue_prefers_rpg_procedure_then_topic() -> None:
+    result = build_human_article_linked_pages(
+        evidence_pack_set=_pack_set(
+            _pack(page_id="topic", title="Topic", family="topic-concept"),
+            _pack(page_id="procedure", title="Procedure", family="procedure-guide"),
+            profile="rpg-rules",
+        ),
+        source_locator="sword.pdf",
+        today="2026-07-07",
+        article_writer=_PackCoherentWriter(),
+        queue_policy=ArticleWriteQueuePolicy(
+            "rpg-rules", 2, 2, 1, ("procedure-guide", "topic-concept")
+        ),
+    )
+
+    assert result.article_write_queue_run.attempted_page_ids == ("procedure", "topic")
 
 
 def test_article_validator_rejects_contract_violations() -> None:
@@ -299,7 +379,7 @@ def test_forge_human_article_writer_uses_structured_tool_with_full_evidence() ->
     writer = ForgeHumanArticleWriter(
         client=client,
         context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
-        schema_text="schema",
+        schema_text="FULL WIKI SCHEMA SHOULD NOT BE SENT",
     )
 
     article = writer.write_article(_pack(source_text="Full Shade evidence text."))
@@ -310,6 +390,8 @@ def test_forge_human_article_writer_uses_structured_tool_with_full_evidence() ->
     assert "support_alias" in sent
     assert "S1" in sent
     assert "source_text" in sent
+    assert "HumanArticle contract" in sent
+    assert "FULL WIKI SCHEMA SHOULD NOT BE SENT" not in sent
     assert "typed-evidence-record:record-shade" not in sent
     assert '"summary"' not in sent
 
@@ -679,6 +761,8 @@ def _pack(
     source_text: str = "one two three four five six seven eight nine ten",
     payload: str = "",
     record_type: str = "rule",
+    family: str = "topic-concept",
+    profile: str = "rpg-rules",
 ) -> EvidencePack:
     item = EvidencePackItem(
         support_ref=_SUPPORT,
@@ -695,21 +779,33 @@ def _pack(
         page_id=page_id,
         source_id="source",
         source_hash=_HASH,
-        source_profile_kind="rpg-rules",
+        source_profile_kind=profile,
         page_kind="concept",
-        page_family="topic-concept",
+        page_family=family,
         title=title,
         items=(item,),
         coverage=(
             EvidencePackCoverage(
                 page_id,
-                "topic-concept",
-                "topic-concept",
+                family,
+                family,
                 _SUPPORT,
                 "page-purpose-support",
                 "covered",
             ),
         ),
+    )
+
+
+def _pack_set(*packs: EvidencePack, profile: str = "rpg-rules") -> EvidencePackSet:
+    return EvidencePackSet(
+        evidence_pack_set_id="pack-set",
+        evidence_pack_set_fingerprint="fingerprint",
+        source_id="source",
+        source_hash=_HASH,
+        source_profile_kind=profile,
+        packs=packs,
+        findings=(),
     )
 
 
@@ -772,6 +868,25 @@ class _Writer:
 
     def write_article(self, pack: EvidencePack, findings=()) -> HumanArticle:  # type: ignore[no-untyped-def]
         return self.article
+
+
+class _PackCoherentWriter:
+    def write_article(self, pack: EvidencePack, findings=()) -> HumanArticle:  # type: ignore[no-untyped-def]
+        sentence = f"{pack.title} has source-backed evidence."
+        claim = ArticleClaim("claim-1", sentence, (pack.items[0].support_ref,))
+        block = ArticleBlock("block-1", "paragraph", sentence)
+        section = ArticleSection("section-1", "Overview", (block,), ("claim-1",))
+        return HumanArticle(pack.page_id, pack.title, (section,), (claim,))
+
+
+class _FailsPageWriter:
+    def __init__(self, page_id: str) -> None:
+        self.page_id = page_id
+
+    def write_article(self, pack: EvidencePack, findings=()) -> HumanArticle:  # type: ignore[no-untyped-def]
+        if pack.page_id == self.page_id:
+            raise ValueError("planned failure")
+        return _PackCoherentWriter().write_article(pack, findings)
 
 
 class _ExplodingWriter:

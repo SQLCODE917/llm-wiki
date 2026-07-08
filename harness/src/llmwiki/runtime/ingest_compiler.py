@@ -11,6 +11,10 @@ from llmwiki.domain.article_viability import (
     ArticleViabilityFinding,
     select_article_viable_candidates,
 )
+from llmwiki.domain.article_write_queue import (
+    ArticleWriteQueueFinding,
+    default_article_write_queue_policy,
+)
 from llmwiki.domain.compiler_candidate_admission import (
     CandidateAdmissionFinding,
     admit_compiler_page_candidates,
@@ -69,8 +73,6 @@ from llmwiki.runtime.ingest_compiler_reporting import (
 from llmwiki.runtime.ledger_human_article_pages import build_human_article_linked_pages
 from llmwiki.runtime.markdown_source_map import markdown_source_map
 from llmwiki.store import WikiStore
-
-_INITIAL_ARTICLE_PACK_BUDGET = 3
 
 
 @dataclass(frozen=True)
@@ -136,13 +138,15 @@ class IngestCompiler:
             evidence_record_set=record_set,
             source_map=source_map,
         )
+        queue_policy = default_article_write_queue_policy(
+            source_profile.source_profile.profile_id
+        )
         initial_human_articles = build_human_article_linked_pages(
             evidence_pack_set=pack_set,
             source_locator=source_locator,
             today=self.today,
             article_writer=self.article_writer,
-            max_article_packs=_INITIAL_ARTICLE_PACK_BUDGET,
-            max_attempts_per_pack=1,
+            queue_policy=queue_policy,
         )
         initial_article_lint = build_article_lint_artifact(
             source_hash=source_map.source_hash,
@@ -172,6 +176,9 @@ class IngestCompiler:
         findings = (
             *_candidate_admission_findings(admission.report.findings),
             *_article_viability_findings(viability.report.findings),
+            *_article_queue_findings(
+                diagnostic_loop.final_human_articles.article_write_queue_run.findings
+            ),
             *findings,
         )
         linked_pages = diagnostic_loop.final_human_articles.pages
@@ -192,6 +199,9 @@ class IngestCompiler:
             diagnostics=diagnostic_loop.question_set,
             diagnostic_report=diagnostic_loop.report,
             repair_run=diagnostic_loop.repair_run,
+            article_write_queue_run=(
+                diagnostic_loop.final_human_articles.article_write_queue_run
+            ),
             linked_pages=linked_pages,
             compiler_findings=findings,
         )
@@ -238,6 +248,10 @@ class IngestCompiler:
                     publication_report
                 ),
                 "evidence-pack-set.json": canonical_json(pack_set, indent=2),
+                "article-write-queue-run.json": canonical_json(
+                    diagnostic_loop.final_human_articles.article_write_queue_run,
+                    indent=2,
+                ),
                 "human-article-initial.json": canonical_json(
                     article_artifacts["human-article-initial"], indent=2
                 ),
@@ -387,6 +401,30 @@ def _article_viability_findings(
                     finding.page_id,
                 ),
                 stage_name="page-plan",
+                severity=finding.severity,
+                finding_code=finding.finding_code,
+                page_id=finding.page_id,
+                source_anchor="",
+                message=finding.message,
+            )
+        )
+    return tuple(converted)
+
+
+def _article_queue_findings(
+    findings: tuple[ArticleWriteQueueFinding, ...],
+) -> tuple[CompilerFinding, ...]:
+    converted: list[CompilerFinding] = []
+    for finding in findings:
+        converted.append(
+            CompilerFinding(
+                finding_id=deterministic_id(
+                    "compiler-finding",
+                    "article-write-queue",
+                    finding.finding_code,
+                    finding.page_id,
+                ),
+                stage_name="article-write-queue",
                 severity=finding.severity,
                 finding_code=finding.finding_code,
                 page_id=finding.page_id,

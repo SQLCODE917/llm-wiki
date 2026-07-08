@@ -196,13 +196,14 @@ Use only EvidencePack items as factual support. Do not write markdown headings,
 frontmatter, citations, source trails, or final wiki markdown. The harness will
 render markdown after validation. Every factual sentence in article blocks must
 appear verbatim as one ArticleClaim.sentence and cite selected support_refs using
-only support_alias values from the prompt, such as S1 or S2. Prefer short,
-complete, single-sentence claims in your own words. Do not copy source sentences
-or sentence prefixes. Do not quote code as prose. Avoid ellipses, TODO text,
-colon-ended fragments, semicolon-joined facts, and clipped source fragments. Put
-claim ids in article_claim_ids for the section where those claim sentences should
-appear. If the evidence is too weak, call write_article with empty sections and
-claims rather than inventing or clipping text.
+only support_alias values from the prompt, such as S1 or S2. Keep the article
+small: 1-2 sections, 2-5 factual sentences, and no more than 5 claims. Prefer
+short, complete, single-sentence claims in your own words. Do not copy source
+sentences or sentence prefixes. Do not quote code as prose. Avoid ellipses, TODO
+text, colon-ended fragments, semicolon-joined facts, and clipped source
+fragments. Put claim ids in article_claim_ids for the section where those claim
+sentences should appear. If the evidence is too weak, call write_article with
+empty sections and claims rather than inventing or clipping text.
 
 Schema:
 {schema}

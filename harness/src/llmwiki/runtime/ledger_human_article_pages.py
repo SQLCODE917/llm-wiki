@@ -5,6 +5,15 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 
+from llmwiki.domain.article_write_queue import (
+    ArticleWriteQueueFinding,
+    ArticleWriteQueuePolicy,
+    ArticleWriteQueueRun,
+    build_article_write_queue_run,
+    default_article_write_queue_policy,
+    ordered_article_write_packs,
+    queue_finding,
+)
 from llmwiki.domain.ledger.article_lint import lint_human_article
 from llmwiki.domain.ledger.article_lint_contracts import ArticleLintRun
 from llmwiki.domain.ledger.collection_pages import CollectionPlan
@@ -31,6 +40,7 @@ class HumanArticleLinkedPages:
     collection_plans: tuple[CollectionPlan, ...]
     article_output: HumanArticleOutput
     article_lint_runs: tuple[ArticleLintRun, ...]
+    article_write_queue_run: ArticleWriteQueueRun
 
 
 @dataclass(frozen=True)
@@ -49,55 +59,97 @@ def build_human_article_linked_pages(
     article_writer: ArticleWriter | None = None,
     collection_plans: tuple[CollectionPlan, ...] = (),
     title_findings_by_page_id: dict[str, tuple[PageTitleFinding, ...]] | None = None,
-    max_article_packs: int | None = None,
-    max_attempts_per_pack: int = _MAX_ARTICLE_ATTEMPTS,
+    queue_policy: ArticleWriteQueuePolicy | None = None,
 ) -> HumanArticleLinkedPages:
     writer = article_writer or RejectingArticleWriter()
+    policy = queue_policy or default_article_write_queue_policy(
+        evidence_pack_set.source_profile_kind
+    )
     records: list[HumanArticleRecord] = []
     findings: list[ArticleFinding] = []
     lint_runs: list[ArticleLintRun] = []
     pages: list[WikiPage] = []
+    queue_findings: list[ArticleWriteQueueFinding] = []
     title_findings = title_findings_by_page_id or {}
+    packs_by_page_id = {pack.page_id: pack for pack in evidence_pack_set.packs}
+    ordered_packs = ordered_article_write_packs(evidence_pack_set.packs, policy)
 
-    attempted = 0
-    for pack in evidence_pack_set.packs:
-        if max_article_packs is not None and attempted >= max_article_packs:
-            findings.append(
-                ArticleFinding(
-                    "blocking",
-                    "article-attempt-budget-exceeded",
-                    pack.page_id,
-                    "Article writing skipped because the ingest article attempt budget "
-                    "was exhausted.",
+    attempted_page_ids: list[str] = []
+    skipped_page_ids: list[str] = []
+    exhausted_reason = "pack-list-exhausted"
+    for index, pack in enumerate(ordered_packs):
+        if len(records) >= policy.target_accepted_articles:
+            exhausted_reason = "target-reached"
+            skipped = tuple(item.page_id for item in ordered_packs[index:])
+            skipped_page_ids.extend(skipped)
+            queue_findings.extend(
+                queue_finding(
+                    "info",
+                    "skipped-after-target",
+                    page_id,
+                    "article queue target was reached before this pack was attempted",
                 )
+                for page_id in skipped
             )
-            continue
-        attempted += 1
+            break
+        if len(attempted_page_ids) >= policy.max_attempted_packs:
+            exhausted_reason = "attempt-budget-exhausted"
+            skipped = tuple(item.page_id for item in ordered_packs[index:])
+            skipped_page_ids.extend(skipped)
+            queue_findings.extend(
+                queue_finding(
+                    "warning",
+                    "attempt-budget-exceeded",
+                    page_id,
+                    "article write queue attempt budget was exhausted",
+                )
+                for page_id in skipped
+            )
+            break
+        attempted_page_ids.append(pack.page_id)
         metadata = article_metadata(pack, source_locator, today)
         attempt = write_human_article_page(
             pack,
             metadata,
             writer,
-            max_attempts=max_attempts_per_pack,
+            max_attempts=policy.max_attempts_per_pack,
             title_findings=title_findings.get(pack.page_id, ()),
         )
         if attempt.lint_run is not None:
             lint_runs.append(attempt.lint_run)
         if attempt.page is None or attempt.record is None:
             findings.extend(attempt.findings)
+            queue_findings.append(_attempt_queue_finding(pack.page_id, attempt))
             continue
         pages.append(attempt.page)
         records.append(attempt.record)
 
+    if (
+        exhausted_reason == "pack-list-exhausted"
+        and len(records) >= policy.target_accepted_articles
+    ):
+        exhausted_reason = "target-reached"
+
     accepted_collection_ids = {page.page_id for page in pages}
     accepted_collections = tuple(
         plan for plan in collection_plans if plan.collection_page_id in accepted_collection_ids
+    )
+    queue_run = build_article_write_queue_run(
+        source_hash=evidence_pack_set.source_hash,
+        policy=policy,
+        attempted_page_ids=tuple(attempted_page_ids),
+        accepted_page_ids=tuple(record.article.page_id for record in records),
+        skipped_page_ids=tuple(dict.fromkeys(skipped_page_ids)),
+        exhausted_reason=exhausted_reason,
+        packs_by_page_id=packs_by_page_id,
+        findings=tuple(queue_findings),
     )
     return HumanArticleLinkedPages(
         pages=tuple(pages),
         collection_plans=accepted_collections,
         article_output=HumanArticleOutput(tuple(records), tuple(findings)),
         article_lint_runs=tuple(lint_runs),
+        article_write_queue_run=queue_run,
     )
 
 
@@ -160,6 +212,24 @@ def _lint_findings(lint_run: ArticleLintRun) -> tuple[ArticleFinding, ...]:
         )
         for finding in lint_run.findings
         if finding.severity == "blocking"
+    )
+
+
+def _attempt_queue_finding(
+    page_id: str, attempt: HumanArticleAttempt
+) -> ArticleWriteQueueFinding:
+    if attempt.lint_run is not None:
+        return queue_finding(
+            "warning",
+            "lint-blocked",
+            page_id,
+            "article attempt was blocked by article lint",
+        )
+    return queue_finding(
+        "warning",
+        "writer-failed",
+        page_id,
+        "article writer or article validation did not produce an accepted page",
     )
 
 

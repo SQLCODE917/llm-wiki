@@ -2,28 +2,24 @@
 page_id: sword-world-rpg-complete-edition-procedure-starting-adventurer-languages
 page_kind: procedure
 page_family: procedure-guide
-summary: Starting Adventurer Languages: All adventurers can speak common and racial languages immediately after creation.
+summary: Starting Adventurer Languages: Every adventurer begins with the ability to speak common and their racial language.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-07-07
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: human-article-sword-world-rpg-complete-edition-procedure-starting-adventurer-languages@88e7cd95dab6b8789729850b753c0a6d
+projection_coverage: human-article-sword-world-rpg-complete-edition-procedure-starting-adventurer-languages@2583ea097a926771834ce39d2e39078e
 ---
 
 # Starting Adventurer Languages
 
-## Overview
+## Language Abilities
 
-All adventurers can speak common and racial languages immediately after creation. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
+Every adventurer begins with the ability to speak common and their racial language. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
 
 ## Reading Abilities
 
-Adventurers with an intelligence of 6 or greater can read their mother tongue. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ Adventurers with an intelligence of 12 or above can additionally read common. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
-
-## Mother Tongue Definition
-
-For humans, grassrunners, and half-elves raised in human society, the mother tongue is the regional language of the region where the adventurer was born and raised. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ For elves, dwarves, or half-elves raised in an elven society, the mother tongue is the racial language of the race in which the adventurer was born and raised, either elven or dwarven. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
+Adventurers with an intelligence of 6 or higher can read their mother tongue, and those with an intelligence of 12 or higher can additionally read common. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
 
 ## Evidence Details
 

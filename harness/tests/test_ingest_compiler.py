@@ -63,6 +63,23 @@ class BadRelatedLinkWriter:
         return HumanArticle(pack.page_id, pack.title, (section,), (claim,), (link,))
 
 
+class FailsFirstTwoWriter:
+    def __init__(self) -> None:
+        self.seen: list[str] = []
+
+    def write_article(
+        self, pack: EvidencePack, findings: tuple[ArticleFinding, ...] = ()
+    ) -> HumanArticle:
+        self.seen.append(pack.page_id)
+        if len(self.seen) <= 2:
+            raise ValueError("planned article failure")
+        sentence = f"{pack.title} has source-backed evidence."
+        claim = ArticleClaim("claim-1", sentence, (pack.items[0].support_ref,))
+        block = ArticleBlock("block-1", "paragraph", sentence)
+        section = ArticleSection("section-1", "Overview", (block,), ("claim-1",))
+        return HumanArticle(pack.page_id, pack.title, (section,), (claim,))
+
+
 class FakeCompiler:
     def __init__(self) -> None:
         self.inputs: list[IngestCompilerInput] = []
@@ -122,6 +139,7 @@ def test_compiler_stage_order_and_artifact_manifest(
         "evidence-records",
         "page-plan",
         "evidence-packs",
+        "article-write-queue",
         "human-articles",
         "article-lint",
         "diagnostics",
@@ -142,6 +160,7 @@ def test_compiler_stage_order_and_artifact_manifest(
     assert "source-record-plan.json" in compilation.artifact_files
     assert "candidate-admission-report.json" in compilation.artifact_files
     assert "article-viability-report.json" in compilation.artifact_files
+    assert "article-write-queue-run.json" in compilation.artifact_files
     assert "claim-ledger.json" not in compilation.artifact_files
     assert "page-synthesis-plan.json" not in compilation.artifact_files
     assert set(compilation.artifact_set.accepted_page_ids) >= {"shade", "shade-shade"}
@@ -172,7 +191,7 @@ def test_javascript_recipe_publishes_code_payload_context(
     store: WikiStore, paths: WikiPaths
 ) -> None:
     (paths.raw_dir / "javascriptallonge.md").write_text(
-        _javascript_recipe_source(),
+        _javascript_multi_recipe_source(),
         encoding="utf-8",
     )
 
@@ -192,6 +211,33 @@ def test_javascript_recipe_publishes_code_payload_context(
     assert "values.map" in recipe.page_body
     assert "diagnostic-question-set.json" in compilation.artifact_files
     assert "repair-run.json" in compilation.artifact_files
+
+
+def test_compiler_article_queue_continues_after_failed_article_attempts(
+    store: WikiStore, paths: WikiPaths
+) -> None:
+    (paths.raw_dir / "javascriptallonge.md").write_text(
+        _javascript_multi_recipe_source(),
+        encoding="utf-8",
+    )
+    writer = FailsFirstTwoWriter()
+
+    compilation = IngestCompiler(
+        store=store,
+        today=TODAY,
+        run_id="compiler-test",
+        article_writer=writer,
+    ).compile(IngestCompilerInput("javascriptallonge.md"))
+
+    generated = tuple(
+        page.page_id
+        for page in compilation.accepted_pages
+        if page.page_metadata.page_family != "source-manifest"
+    )
+    assert generated
+    assert len(writer.seen) >= 3
+    assert "article-write-queue-run.json" in compilation.artifact_files
+    assert "Article write queue:" in compilation.accepted_pages[0].page_body
 
 
 async def test_session_ingest_calls_injected_compiler(
@@ -269,4 +315,42 @@ const doubled = values.map(value => value * 2);
 ```
 
 Map takes a function and returns a new array.
+"""
+
+
+def _javascript_multi_recipe_source() -> str:
+    return """# JavaScript Allonge
+
+## Once
+
+The once combinator allows a function to run one time.
+
+```js
+const once = fn => {
+  let done = false;
+  return () => done ? undefined : (done = true, fn());
+};
+```
+
+Once returns undefined after the first call.
+
+## Map Transform
+
+Map transforms each value with a function.
+
+```js
+const doubled = values.map(value => value * 2);
+```
+
+Map takes a function and returns a new array.
+
+## Filter Transform
+
+Filter keeps values that pass a predicate.
+
+```js
+const odds = values.filter(value => value % 2);
+```
+
+Filter returns a new array with matching values.
 """

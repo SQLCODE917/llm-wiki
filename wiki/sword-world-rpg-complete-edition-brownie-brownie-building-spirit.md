@@ -8,30 +8,18 @@ updated: 2026-07-07
 domain: sword-world-rpg-complete-edition
 category_path: concepts/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: human-article-sword-world-rpg-complete-edition-brownie-brownie-building-spirit@38924476c33e6c95cecc5030bbe7f58c
+projection_coverage: human-article-sword-world-rpg-complete-edition-brownie-brownie-building-spirit@c66c68568a07f2626497a074d7cf2ca7
 ---
 
 # [ Brownie ] (Brownie/Building Spirit)
 
-## Overview
+## Brownie Spirit Overview
 
 Brownies are spirits that inhabit old houses and castles constructed over fifty years ago. _(raw/Sword World RPG - Complete Edition.pdf (p. 85))_ 
 
-## Effects
+## Spell Effects and Limitations
 
-This spell enables the caster to command a brownie to perform household chores while the caster is asleep. _(raw/Sword World RPG - Complete Edition.pdf (p. 85))_ 
-
-## Duration
-
-The spell's effect continues as long as the caster remains asleep. _(raw/Sword World RPG - Complete Edition.pdf (p. 85))_ 
-
-## Limitations
-
-The chore requested must be simple in nature. _(raw/Sword World RPG - Complete Edition.pdf (p. 85))_ If a complex task is requested, the brownie cannot fulfill it and the caster should not expect a successful outcome. _(raw/Sword World RPG - Complete Edition.pdf (p. 85))_ 
-
-## Resistance
-
-This spell cannot be resisted by any means. _(raw/Sword World RPG - Complete Edition.pdf (p. 85))_ 
+The spell allows a caster to command a brownie to perform a simple chore while the family sleeps. _(raw/Sword World RPG - Complete Edition.pdf (p. 85))_ Brownies are capable of cleaning the house during the night while the family is asleep. _(raw/Sword World RPG - Complete Edition.pdf (p. 85))_ The chore requested must be simple, as complex tasks are beyond their abilities. _(raw/Sword World RPG - Complete Edition.pdf (p. 85))_ Attempting to assign a complicated task will result in no completion of the task. _(raw/Sword World RPG - Complete Edition.pdf (p. 85))_ 
 
 ## Evidence Details
 
@@ -46,7 +34,6 @@ This spell cannot be resisted by any means. _(raw/Sword World RPG - Complete Edi
 ## Source Trail
 
 - Source manifest: [[sword-world-rpg-complete-edition]]
-- raw/Sword World RPG - Complete Edition.pdf (p. 85)
 - raw/Sword World RPG - Complete Edition.pdf (p. 85) - [ Brownie ] (Brownie/Building Spirit)
 - raw/Sword World RPG - Complete Edition.pdf (p. 85) - [ Brownie ] (Brownie/Building Spirit)
 - raw/Sword World RPG - Complete Edition.pdf (p. 85) - [ Brownie ] (Brownie/Building Spirit)

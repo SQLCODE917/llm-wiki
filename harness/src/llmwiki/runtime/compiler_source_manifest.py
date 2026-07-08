@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from llmwiki.domain.article_viability import ArticleViabilityReport
+from llmwiki.domain.article_write_queue import ArticleWriteQueueRun
 from llmwiki.domain.compiler_candidate_admission import CandidateAdmissionReport
 from llmwiki.domain.diagnostic_contracts import (
     DiagnosticQuestionSet,
@@ -39,6 +40,7 @@ def build_compiler_source_manifest(
     diagnostics: DiagnosticQuestionSet,
     diagnostic_report: DiagnosticReport,
     repair_run: RepairRun,
+    article_write_queue_run: ArticleWriteQueueRun,
     linked_pages: tuple[WikiPage, ...],
     compiler_findings: tuple[CompilerFinding, ...],
 ) -> WikiPage:
@@ -71,6 +73,7 @@ def build_compiler_source_manifest(
         diagnostics,
         diagnostic_report,
         repair_run,
+        article_write_queue_run,
         linked_pages,
         compiler_findings,
     )
@@ -93,6 +96,7 @@ def _body(
     diagnostics: DiagnosticQuestionSet,
     diagnostic_report: DiagnosticReport,
     repair_run: RepairRun,
+    article_write_queue_run: ArticleWriteQueueRun,
     linked_pages: tuple[WikiPage, ...],
     compiler_findings: tuple[CompilerFinding, ...],
 ) -> str:
@@ -117,6 +121,11 @@ def _body(
         f"{len(publication_plan.rejected_candidates)} rejected candidates",
         f"- Evidence packs: {len(evidence_pack_set.packs)} valid, "
         f"{evidence_pack_set.missing_pack_count} missing/invalid",
+        f"- Article write queue: {len(article_write_queue_run.accepted_page_ids)}/"
+        f"{article_write_queue_run.policy.target_accepted_articles} accepted after "
+        f"{len(article_write_queue_run.attempted_page_ids)} attempt(s); "
+        f"{len(article_write_queue_run.skipped_page_ids)} skipped "
+        f"({article_write_queue_run.exhausted_reason})",
         f"- Article lint gates: {article_lint_artifact.accepted_count} accepted, "
         f"{article_lint_artifact.blocked_count} blocked",
         f"- Diagnostic questions: {len(diagnostics.questions)}; "

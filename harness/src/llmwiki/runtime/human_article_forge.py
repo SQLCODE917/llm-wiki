@@ -21,6 +21,17 @@ from llmwiki.workflows.human_article_write import (
 )
 
 _ARTICLE_MODEL_TIMEOUT_SECONDS = 90.0
+_ARTICLE_WRITER_SCHEMA = """HumanArticle contract:
+- Return exactly one write_article tool call.
+- The page_id and title must match the EvidencePack page.
+- Write short, readable article sections from the supplied evidence only.
+- Keep the article small: 1-2 sections, 2-5 factual sentences, and no more than 5 claims.
+- Every factual prose sentence must appear verbatim as one ArticleClaim.sentence.
+- Every ArticleClaim must cite support_refs using only evidence aliases from the prompt.
+- Use related_links only as navigation previews, not as factual support.
+- Do not write markdown, frontmatter, citations, or source trails; the harness renders them.
+- Prefer an empty article over unsupported, copied, clipped, or fragmentary prose.
+"""
 
 
 class ForgeHumanArticleWriter:
@@ -76,7 +87,7 @@ class ForgeHumanArticleWriter:
                 runner.run(
                     build_human_article_workflow(pack),
                     render_human_article_prompt(pack, findings),
-                    prompt_vars={"schema": self.schema_text},
+                    prompt_vars={"schema": _article_writer_schema(self.schema_text)},
                 ),
                 timeout=_ARTICLE_MODEL_TIMEOUT_SECONDS,
             )
@@ -93,3 +104,10 @@ def _message_writer(
         callback(message)
 
     return _write
+
+
+def _article_writer_schema(schema_text: str) -> str:
+    """Use the narrow article contract instead of the full wiki schema."""
+    if not schema_text.strip():
+        return _ARTICLE_WRITER_SCHEMA
+    return _ARTICLE_WRITER_SCHEMA

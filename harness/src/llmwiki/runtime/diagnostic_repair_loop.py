@@ -197,6 +197,7 @@ def _repair_articles(
         collection_plans=initial.collection_plans,
         article_output=HumanArticleOutput(tuple(records.values()), tuple(article_findings)),
         article_lint_runs=tuple(lint_runs.values()),
+        article_write_queue_run=initial.article_write_queue_run,
     )
     repair_run = build_repair_run(
         source_id=source_id,

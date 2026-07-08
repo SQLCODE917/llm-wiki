@@ -101,9 +101,10 @@ _STAGE_ORDER = (
         ("candidate-admission-report", "article-viability-report", "page-publication-plan"),
     ),
     ("evidence-packs", ("page-publication-plan",), ("evidence-pack-set",)),
+    ("article-write-queue", ("evidence-pack-set",), ("article-write-queue-run",)),
     (
         "human-articles",
-        ("evidence-pack-set",),
+        ("article-write-queue-run",),
         ("human-article-initial", "human-article-findings-initial"),
     ),
     ("article-lint", ("human-article-initial",), ("article-lint-runs-initial",)),

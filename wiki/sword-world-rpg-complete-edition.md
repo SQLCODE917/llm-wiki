@@ -26,15 +26,17 @@ Source: raw/Sword World RPG - Complete Edition.pdf
 - Article viability: 505 accepted, 926 rejected
 - Publication budget: 21 accepted, 484 rejected candidates
 - Evidence packs: 21 valid, 0 missing/invalid
-- Article lint gates: 2 accepted, 0 blocked
-- Diagnostic questions: 2; 1 missing, 0 unsupported
+- Article write queue: 3/3 accepted after 4 attempt(s); 17 skipped (target-reached)
+- Article lint gates: 3 accepted, 0 blocked
+- Diagnostic questions: 3; 0 missing, 1 unsupported
 - Repair run: blocked; 0 page(s) changed
-- Compiler findings: 3246
+- Compiler findings: 3247
 
 ## Accepted Pages
 
-- [[sword-world-rpg-complete-edition-procedure-starting-adventurer-languages]] - Starting Adventurer Languages: All adventurers can speak common and racial languages immediately after creation.
 - [[sword-world-rpg-complete-edition-brownie-brownie-building-spirit]] - [ Brownie ] (Brownie/Building Spirit): Brownies are spirits that inhabit old houses and castles constructed over fifty years ago.
+- [[sword-world-rpg-complete-edition-procedure-starting-adventurer-languages]] - Starting Adventurer Languages: Every adventurer begins with the ability to speak common and their racial language.
+- [[sword-world-rpg-complete-edition-procedure-7-3-craftsman-skill]] - 7.3 > Craftsman Skill: The process of creating items as a craftsman involves two main steps: Craft and Value Check. Additionally, craftsmen must belong to a guild to legally...
 
 ## Rejected Candidates
 
