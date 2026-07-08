@@ -9,6 +9,7 @@ from forge.context import ContextManager, NoCompact
 
 from llmwiki.cli import _build_parser
 from llmwiki.config import WikiPaths
+from llmwiki.domain.graph import build_wiki_graph, graph_status
 from llmwiki.domain.ingest_compiler import (
     CompilerStage,
     IngestCompilation,
@@ -284,6 +285,10 @@ async def test_session_ingest_calls_injected_compiler(
     assert result.output.startswith("fake compiler report\nCompiler artifacts: ")
     assert store.read_page("moon").startswith("---")
     assert (store.ingest_compiler_artifact_dir("moon.md") / "ingest-artifact-set.json").is_file()
+    assert graph_status(
+        build_wiki_graph(store.page_texts(), generated_date=TODAY),
+        store.read_graph_json(),
+    ).is_current
 
 
 def test_session_ingest_method_is_compiler_only() -> None:
@@ -322,6 +327,14 @@ def test_cli_ingest_removed_old_flow_flags() -> None:
         parser.parse_args(["ingest", "book.pdf", "--reintegrate"])
     with pytest.raises(SystemExit):
         parser.parse_args(["ingest", "book.pdf", "--ingest-flow"])
+
+
+def test_session_ingest_signature_removed_old_flow_controls() -> None:
+    assert tuple(inspect.signature(Session.ingest).parameters) == (
+        "self",
+        "source_locator",
+        "reextract",
+    )
 
 
 def _shade_source() -> str:

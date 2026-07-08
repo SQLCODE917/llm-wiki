@@ -66,6 +66,7 @@ from llmwiki.pdf import PdfError
 from llmwiki.pdf.pipeline import VALID_DOCUMENT_EXTRACTORS
 from llmwiki.runtime.backend import start_backend
 from llmwiki.runtime.chat_repl import ChatRepl
+from llmwiki.runtime.graph_publish import refresh_wiki_graph
 from llmwiki.runtime.ingest_confidence import (
     claim_support_gate_from_audit,
     file_ingest_confidence_report,
@@ -905,9 +906,8 @@ def _run_graph(args: argparse.Namespace, paths: WikiPaths, today: str) -> Operat
         if not status.is_current:
             raise ConfigError(status.render())
         return OperationResult("graph", "wiki graph", status.render(), None)
-    store.write_graph_json(graph.to_json_text())
+    status = refresh_wiki_graph(store, today=today)
     store.ensure_navigation_files()
-    status = graph_status(graph, store.read_graph_json())
     report = status.render()
     store.append_log(today, "graph", "wiki graph", report)
     return OperationResult("graph", "wiki graph", report, None)

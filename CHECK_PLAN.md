@@ -105,7 +105,7 @@ Active compiler, session, and source-resolution code must not point to it.
 | debug article writer failures | Generated pages fail before publication. | `uv run pytest harness/tests/test_human_article_renderer.py` | `human-article*.json`, writer findings | Failures are page-scoped writer or validation findings. |
 | review source-map quality | Source extraction looks clipped or noisy. | `jq` over `normalized-source-map.json` | source map, source-map findings | Source blocks contain coherent source text and anchors. |
 | compare reingests | A change may alter page count or quality. | `uv run llmwiki ingest <source>` | source manifest, log, compiler artifacts | Accepted/rejected counts and top findings are understood. |
-| review generated wiki walkability | Navigation or coverage seems weak. | `uv run llmwiki graph --check` | source manifests, index, graph | Accepted pages link from source manifests and index. |
+| review generated wiki walkability | Navigation or coverage seems weak. | `uv run llmwiki graph --check` | source manifests, index, graph | Accepted pages link from source manifests and index, and the graph is current. |
 
 ## Update Order
 

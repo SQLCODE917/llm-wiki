@@ -91,10 +91,9 @@ The index and log formats below are also enforced in harness code
   derived navigation maintained by the harness — like index.md entries,
   never write or edit key-entity/key-concept lists yourself; they are
   replaced from computed evidence after every ingest.
-- On book-scale hub source pages, the harness may add a `Page-Map Navigation`
-  section from the chunk manifest when model-authored prose under-links the
-  pages written during chunking. Treat that section as deterministic
-  navigation, like index.md entries and hub key lists.
+- Source manifest pages list accepted compiler pages from compiler artifacts.
+  Treat those links as deterministic navigation, like index.md entries and hub
+  key lists.
 - Generated compiler pages may include `domain`, `category_path`, `source_id`,
   and `projection_coverage` frontmatter. These fields are composed by the
   harness from `PageMetadata` and point back to coverage artifacts that

@@ -280,14 +280,14 @@ def test_pdf_page_plan_fails_without_source_map(store: WikiStore, paths: WikiPat
         session._pdf_page_plan(session._ingest_run("book.pdf"), "book.pdf", extraction)
 
 
-async def test_reintegrate_is_removed(
+async def test_reintegrate_is_not_an_active_ingest_argument(
     store: WikiStore, paths: WikiPaths
 ) -> None:
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
     extraction = _fake_extraction(paths)
     session = _session(store, paths, extraction)
 
-    with pytest.raises(PdfError, match="removed"):
+    with pytest.raises(TypeError, match="reintegrate"):
         await session.ingest("book.pdf", reintegrate=True)
 
 

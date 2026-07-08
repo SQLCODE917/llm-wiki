@@ -133,6 +133,19 @@ def test_ingest_parser_rejects_removed_old_flow_flags() -> None:
             parser.parse_args(["ingest", "book.pdf", flag])
 
 
+def test_session_ingest_signature_exposes_no_removed_old_flow_controls() -> None:
+    signature = inspect.signature(Session.ingest)
+
+    assert tuple(signature.parameters) == ("self", "source_locator", "reextract")
+
+
+def test_schema_has_no_current_chunk_manifest_navigation_guidance() -> None:
+    text = (REPO_ROOT / "SCHEMA.md").read_text(encoding="utf-8")
+
+    for phrase in ("chunk manifest", "chunking", "Page-Map Navigation"):
+        assert phrase not in text
+
+
 def _artifact_path(artifact_kind: str) -> str:
     suffix = ".md" if artifact_kind == "diagnostics-report" else ".json"
     return f"{artifact_kind}{suffix}"

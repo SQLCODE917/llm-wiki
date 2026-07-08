@@ -127,6 +127,7 @@ from llmwiki.pdf.pipeline import (
 )
 from llmwiki.runtime.cross_source_pipeline import build_cross_source_pages
 from llmwiki.runtime.diagnostic_forge import ForgeDiagnosticAnswerer, ForgeDiagnosticJudge
+from llmwiki.runtime.graph_publish import refresh_wiki_graph
 from llmwiki.runtime.human_article_forge import ForgeHumanArticleWriter
 from llmwiki.runtime.ingest_compiler import IngestCompiler
 from llmwiki.runtime.ledger_pipeline import build_source_ledger
@@ -313,13 +314,9 @@ class Session:
     def _evidence_policy(self) -> EvidencePolicy:
         return EvidencePolicy(mode=self.strict_evidence)
 
-    async def ingest(
-        self, source_locator: str, reextract: bool = False, reintegrate: bool = False
-    ) -> OperationResult:
+    async def ingest(self, source_locator: str, reextract: bool = False) -> OperationResult:
         ingest_run = self._ingest_run(source_locator)
         source_locator = _single_source_locator(ingest_run)
-        if reintegrate:
-            raise PdfError("--reintegrate was removed by the ingest compiler cutover.")
         compiler = self.ingest_compiler or self._default_ingest_compiler()
         compilation = compiler.compile(IngestCompilerInput(source_locator, reextract))
         return self._publish_ingest_compilation(compilation)
@@ -367,6 +364,7 @@ class Session:
                 compilation.source_locator,
                 {page.page_id for page in compilation.accepted_pages},
             )
+        refresh_wiki_graph(self.store, today=self.today)
         if self.on_chunk_note is not None:
             self.on_chunk_note(compilation.report)
         artifact_dir = self.store.ingest_compiler_artifact_dir(compilation.source_locator)

@@ -718,3 +718,10 @@ Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/java
 Ingest compiler run ingest-artifact-set-e1da02b49f5b9ec7 for raw/Sword World RPG - Complete Edition.pdf.
 Accepted pages: 5; rejected pages: 2741. Diagnostics: answered 4/4, missing 1, unsupported 0; repair completed, changed 2. Top compiler findings: source-structure-cannot-drive-page=1796, duplicate-article-candidate=917, publication-budget-exceeded=453, section-reference-not-explicitly-accepted=30, writer-failed=14.
 Compiler artifacts: /home/serdm/gits/llm-wiki/harness/cache/ingest-compiler/sword-world-rpg-complete-edition-8e67d04d99d8.
+
+## [2026-07-08] graph | wiki graph
+Graph export: current
+Nodes: 13
+Edges: 14
+Unresolved edges: 0
+wiki/wiki-graph.json matches the current wiki graph.
