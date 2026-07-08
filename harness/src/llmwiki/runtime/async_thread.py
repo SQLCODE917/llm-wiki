@@ -25,7 +25,7 @@ def run_coroutine_in_daemon_thread[T](
 
     def _target() -> None:
         try:
-            result_queue.put(_ThreadResult(value=asyncio.run(coro)))
+            result_queue.put(_ThreadResult(value=_run_without_executor_join(coro)))
         except BaseException as exc:  # noqa: BLE001
             result_queue.put(_ThreadResult(error=exc))
 
@@ -38,3 +38,18 @@ def run_coroutine_in_daemon_thread[T](
     if result.error is not None:
         raise result.error
     return cast(T, result.value)
+
+
+def _run_without_executor_join[T](coro: Coroutine[Any, Any, T]) -> T:
+    """Run a coroutine without asyncio.run's 300s default-executor shutdown wait."""
+
+    loop = asyncio.new_event_loop()
+    try:
+        asyncio.set_event_loop(loop)
+        return loop.run_until_complete(coro)
+    finally:
+        try:
+            loop.run_until_complete(loop.shutdown_asyncgens())
+        finally:
+            asyncio.set_event_loop(None)
+            loop.close()

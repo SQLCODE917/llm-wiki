@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import builtins
 from collections.abc import Iterable
 
 
@@ -32,7 +33,7 @@ def expect_int(value: object, field: str = "value") -> int:
 def expect_float(value: object, field: str = "value") -> float:
     if isinstance(value, bool) or not isinstance(value, int | float):
         raise ValueError(f"{field} must be a number")
-    return float(value)
+    return builtins.float(value)
 
 
 def expect_literal[T](value: object, allowed: Iterable[T], field: str = "value") -> T:

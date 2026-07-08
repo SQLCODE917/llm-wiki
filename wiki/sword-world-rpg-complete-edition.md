@@ -26,18 +26,17 @@ Source: raw/Sword World RPG - Complete Edition.pdf
 - Article viability: 505 accepted, 926 rejected
 - Publication budget: 21 accepted, 484 rejected candidates
 - Evidence packs: 21 valid, 0 missing/invalid
-- Article production: 4/21 accepted after 18 attempt(s); acceptance rate 0.22; stop low-acceptance-rate; 3 skipped; skip reasons low-acceptance-rate=3; families procedure-guide=2, topic-concept=2
-- Article lint gates: 4 accepted, 0 blocked
-- Diagnostic questions: 4; 1 missing, 0 unsupported
-- Repair run: completed; 2 page(s) changed
-- Compiler findings: 3254
+- Article production: 2/21 accepted after 10 attempt(s); acceptance rate 0.20; stop low-acceptance-rate; 11 skipped; skip reasons low-acceptance-rate=11; families procedure-guide=2
+- Article lint gates: 2 accepted, 0 blocked
+- Required evidence coverage: 11/11 (1.00); 0 uncovered
+- Diagnostic questions: 2; 0 missing, 0 unsupported
+- Repair run: completed; 1 page(s) changed
+- Compiler findings: 3250
 
 ## Accepted Pages
 
-- [[sword-world-rpg-complete-edition-procedure-starting-adventurer-languages]] - Starting Adventurer Languages: All adventurers can speak common and racial languages.
-- [[sword-world-rpg-complete-edition-procedure-5-1-11-ancient-magic-and-the-sorcerer-skill]] - 5.1.11 Ancient Magic and the Sorcerer Skill: Ancient magic requires a mage's staff as a magical catalyst to function.
-- [[sword-world-rpg-complete-edition-2-1-target-scores]] - 2.1 > Target Scores: A character's baseline score represents their ability, but the success of an action depends on both the character's ability and the difficulty of the action...
-- [[sword-world-rpg-complete-edition-5th-level-ancient-magic-list-apport]] - 5th Level Ancient Magic List [ Apport ]: The Apport spell allows a caster to teleport their possessions into the palm of their hand.
+- [[sword-world-rpg-complete-edition-procedure-starting-adventurer-languages]] - Starting Adventurer Languages: An adventurer's initial language capabilities are defined upon creation.
+- [[sword-world-rpg-complete-edition-procedure-7-3-craftsman-skill]] - 7.3 > Craftsman Skill: The first step in the craftsman skill procedure is to ① Craft an item.
 
 ## Rejected Candidates
 

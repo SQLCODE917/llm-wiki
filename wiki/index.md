@@ -11,16 +11,17 @@
 ## Entities
 
 ## Concepts
-- [[sword-world-rpg-complete-edition-2-1-target-scores]] — 2.1 > Target Scores: A character's baseline score represents their ability, but the success of an action depends on both the character's ability and the difficulty of the action...
-- [[sword-world-rpg-complete-edition-5th-level-ancient-magic-list-apport]] — 5th Level Ancient Magic List [ Apport ]: The Apport spell allows a caster to teleport their possessions into the palm of their hand.
+- [[javascriptallonge-building-blocks]] — Building Blocks: JavaScript code can become difficult to follow when functions are nested within other functions.
+- [[javascriptallonge-prelude-values-and-expressions-over-coffee]] — Prelude: Values and Expressions over Coffee: The introductory material in this section is considered basic, following the common approach of starting at the beginning of a story.
+- [[javascriptallonge-served-by-the-pot-collections-iteration-and-iterables]] — Served by the Pot: Collections > Iteration and Iterables: A collection in JavaScript can be thought of as a box that holds multiple items.
 
 ## Procedures
-- [[sword-world-rpg-complete-edition-procedure-5-1-11-ancient-magic-and-the-sorcerer-skill]] — 5.1.11 Ancient Magic and the Sorcerer Skill: Ancient magic requires a mage's staff as a magical catalyst to function.
-- [[sword-world-rpg-complete-edition-procedure-starting-adventurer-languages]] — Starting Adventurer Languages: All adventurers can speak common and racial languages.
+- [[sword-world-rpg-complete-edition-procedure-7-3-craftsman-skill]] — 7.3 > Craftsman Skill: The first step in the craftsman skill procedure is to ① Craft an item.
+- [[sword-world-rpg-complete-edition-procedure-starting-adventurer-languages]] — Starting Adventurer Languages: An adventurer's initial language capabilities are defined upon creation.
 
 ## Recipes
-- [[javascriptallonge-recipe-once]] — Once: The once pattern ensures that a function can only be called once. Once the function is invoked, it will return undefined on subsequent calls.
-- [[javascriptallonge-recipe-reassignment-mixing-let-and-const]] — Reassignment > mixing let and const: A let variable can still be reassigned even after being shadowed by a const in a nested scope.
+- [[javascriptallonge-recipe-a-warm-cup-basic-strings-and-quasi-literals]] — A Warm Cup: Basic Strings and Quasi-Literals: JavaScript supports string concatenation using the + operator, as demonstrated by the expression 'fu' + 'bar' which evaluates to...
+- [[javascriptallonge-recipe-or-even-the-simplest-possible-block]] — Or even: > the simplest possible block: A block can be the simplest possible construct with no statements inside.
 
 ## Syntheses
 - [[cross-source-synthesis]] — Cross-source synthesis index: 0 shared topics.

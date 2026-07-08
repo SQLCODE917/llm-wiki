@@ -131,6 +131,11 @@ def _body(
         f"families {_family_counts_text(article_write_queue_run.family_counts)}",
         f"- Article lint gates: {article_lint_artifact.accepted_count} accepted, "
         f"{article_lint_artifact.blocked_count} blocked",
+        f"- Required evidence coverage: "
+        f"{article_lint_artifact.covered_required_evidence_count}/"
+        f"{article_lint_artifact.required_evidence_count} "
+        f"({article_lint_artifact.required_evidence_coverage_ratio:.2f}); "
+        f"{article_lint_artifact.uncovered_required_evidence_count} uncovered",
         f"- Diagnostic questions: {len(diagnostics.questions)}; "
         f"{diagnostic_report.missing_count} missing, "
         f"{diagnostic_report.unsupported_count} unsupported",

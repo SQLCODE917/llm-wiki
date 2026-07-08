@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import re
 
+from llmwiki.domain.ledger.article_evidence_coverage import uncovered_required_evidence
 from llmwiki.domain.ledger.evidence_pack import EvidencePack
 from llmwiki.domain.ledger.human_article import (
     ArticleBlock,
@@ -34,6 +35,7 @@ def validate_human_article(
     findings.extend(_empty_findings(pack, article))
     findings.extend(_weak_topic_findings(pack))
     findings.extend(_claim_support_findings(pack, article))
+    findings.extend(_evidence_coverage_findings(pack, article))
     findings.extend(_sentence_coverage_findings(pack, article))
     findings.extend(_claim_rendering_findings(pack, article))
     findings.extend(_claim_mapping_findings(pack, article))
@@ -122,6 +124,25 @@ def _claim_support_findings(
                         support_ref.code,
                     )
                 )
+    return tuple(findings)
+
+
+def _evidence_coverage_findings(
+    pack: EvidencePack, article: HumanArticle
+) -> tuple[ArticleFinding, ...]:
+    findings: list[ArticleFinding] = []
+    for requirement in uncovered_required_evidence(pack, article):
+        refs = tuple(ref.code for ref in requirement.support_refs)
+        refs_text = ", ".join(refs)
+        findings.append(
+            _finding(
+                pack,
+                "uncovered-required-evidence",
+                "article omits required evidence "
+                f"{requirement.requirement_id}: {refs_text}",
+                support_ref=refs_text,
+            )
+        )
     return tuple(findings)
 
 

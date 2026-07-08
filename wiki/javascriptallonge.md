@@ -26,16 +26,20 @@ Source: raw/javascriptallonge.pdf
 - Article viability: 186 accepted, 484 rejected
 - Publication budget: 14 accepted, 172 rejected candidates
 - Evidence packs: 14 valid, 0 missing/invalid
-- Article production: 2/14 accepted after 9 attempt(s); acceptance rate 0.22; stop low-acceptance-rate; 5 skipped; skip reasons low-acceptance-rate=5; families recipe-pattern=2
-- Article lint gates: 2 accepted, 0 blocked
-- Diagnostic questions: 2; 1 missing, 1 unsupported
-- Repair run: completed; 1 page(s) changed
-- Compiler findings: 704
+- Article production: 5/14 accepted after 14 attempt(s); acceptance rate 0.36; stop pack-list-exhausted; 0 skipped; skip reasons none; families recipe-pattern=2, topic-concept=3
+- Article lint gates: 5 accepted, 0 blocked
+- Required evidence coverage: 20/20 (1.00); 0 uncovered
+- Diagnostic questions: 5; 2 missing, 1 unsupported
+- Repair run: partial; 3 page(s) changed
+- Compiler findings: 706
 
 ## Accepted Pages
 
-- [[javascriptallonge-recipe-once]] - Once: The once pattern ensures that a function can only be called once. Once the function is invoked, it will return undefined on subsequent calls.
-- [[javascriptallonge-recipe-reassignment-mixing-let-and-const]] - Reassignment > mixing let and const: A let variable can still be reassigned even after being shadowed by a const in a nested scope.
+- [[javascriptallonge-recipe-or-even-the-simplest-possible-block]] - Or even: > the simplest possible block: A block can be the simplest possible construct with no statements inside.
+- [[javascriptallonge-recipe-a-warm-cup-basic-strings-and-quasi-literals]] - A Warm Cup: Basic Strings and Quasi-Literals: JavaScript supports string concatenation using the + operator, as demonstrated by the expression 'fu' + 'bar' which evaluates to...
+- [[javascriptallonge-prelude-values-and-expressions-over-coffee]] - Prelude: Values and Expressions over Coffee: The introductory material in this section is considered basic, following the common approach of starting at the beginning of a story.
+- [[javascriptallonge-building-blocks]] - Building Blocks: JavaScript code can become difficult to follow when functions are nested within other functions.
+- [[javascriptallonge-served-by-the-pot-collections-iteration-and-iterables]] - Served by the Pot: Collections > Iteration and Iterables: A collection in JavaScript can be thought of as a box that holds multiple items.
 
 ## Rejected Candidates
 

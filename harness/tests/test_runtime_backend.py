@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+import time
 from typing import Any
 
 import pytest
@@ -140,3 +141,22 @@ def test_run_coroutine_in_daemon_thread_times_out() -> None:
         run_coroutine_in_daemon_thread(
             _slow(), timeout_seconds=0.01, label="test-timeout"
         )
+
+
+def test_run_coroutine_in_daemon_thread_does_not_wait_for_default_executor() -> None:
+    async def _returns_before_executor_work_finishes() -> str:
+        loop = asyncio.get_running_loop()
+        loop.run_in_executor(None, time.sleep, 2.0)
+        return "ok"
+
+    started = time.monotonic()
+
+    assert (
+        run_coroutine_in_daemon_thread(
+            _returns_before_executor_work_finishes(),
+            timeout_seconds=1.0,
+            label="test-executor-shutdown",
+        )
+        == "ok"
+    )
+    assert time.monotonic() - started < 1.0

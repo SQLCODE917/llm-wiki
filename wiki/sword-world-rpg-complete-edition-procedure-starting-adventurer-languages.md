@@ -2,22 +2,36 @@
 page_id: sword-world-rpg-complete-edition-procedure-starting-adventurer-languages
 page_kind: procedure
 page_family: procedure-guide
-summary: Starting Adventurer Languages: All adventurers can speak common and racial languages.
+summary: Starting Adventurer Languages: An adventurer's initial language capabilities are defined upon creation.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-07-08
 domain: sword-world-rpg-complete-edition
 category_path: procedures/sword-world-rpg-complete-edition
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: human-article-sword-world-rpg-complete-edition-procedure-starting-adventurer-languages@b7f856c2f93746e327f62636f36322a5
+projection_coverage: human-article-sword-world-rpg-complete-edition-procedure-starting-adventurer-languages@65925b5725e301d6e37d670010899efa
 ---
 
 # Starting Adventurer Languages
 
-## Language Abilities
+## Language Abilities at Creation
 
-All adventurers can speak common and racial languages. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
+An adventurer's initial language capabilities are defined upon creation. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
 
-Adventurers with an intelligence of 6 or greater can read their mother tongue. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
+## Speaking Languages
+
+Every adventurer is capable of speaking both common and their racial language. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
+
+## Reading Abilities
+
+Adventurers with an intelligence score of at least six can read their mother tongue. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
+
+Adventurers with an intelligence of twelve or higher can also read common. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
+
+## Mother Tongue Definitions
+
+For humans, grassrunners, and half-elves raised in human society, the mother tongue is the regional language of their birthplace. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
+
+For elves, dwarves, and half-elves raised in elven society, the mother tongue is the racial language of their upbringing. _(raw/Sword World RPG - Complete Edition.pdf (p. 158))_ 
 
 ## Evidence Details
 

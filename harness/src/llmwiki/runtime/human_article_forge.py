@@ -25,7 +25,8 @@ _ARTICLE_WRITER_SCHEMA = """HumanArticle contract:
 - Return exactly one write_article tool call.
 - The page_id and title must match the EvidencePack page.
 - Write short, readable article sections from the supplied evidence only.
-- Keep the article small: 1-2 sections, 2-5 factual sentences, and no more than 5 claims.
+- Cover every required evidence unit from the prompt, normally in 1-3 sections
+  and 4-10 factual claims.
 - Every factual prose sentence must appear verbatim as one ArticleClaim.sentence.
 - Every ArticleClaim must cite support_refs using only evidence aliases from the prompt.
 - Use related_links only as navigation previews, not as factual support.

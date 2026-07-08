@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from llmwiki.domain.ledger.article_evidence_coverage import ArticleEvidenceCoverageMetrics
+
 
 @dataclass(frozen=True)
 class ArticleLintFinding:
@@ -53,4 +55,5 @@ class ArticleLintRun:
     findings: tuple[ArticleLintFinding, ...]
     authority_metrics: ArticleAuthorityMetrics
     coherence_metrics: ArticleCoherenceMetrics
+    evidence_coverage_metrics: ArticleEvidenceCoverageMetrics
     publication_gate: PublicationGate

@@ -40,7 +40,9 @@ class CoherentArticleWriter:
         self, pack: EvidencePack, findings: tuple[ArticleFinding, ...] = ()
     ) -> HumanArticle:
         sentence = f"{pack.title} has source-backed evidence."
-        claim = ArticleClaim("claim-1", sentence, (pack.items[0].support_ref,))
+        claim = ArticleClaim(
+            "claim-1", sentence, tuple(item.support_ref for item in pack.items)
+        )
         block = ArticleBlock("block-1", "paragraph", sentence)
         section = ArticleSection("section-1", "Overview", (block,), ("claim-1",))
         return HumanArticle(pack.page_id, pack.title, (section,), (claim,))
@@ -51,7 +53,9 @@ class BadRelatedLinkWriter:
         self, pack: EvidencePack, findings: tuple[ArticleFinding, ...] = ()
     ) -> HumanArticle:
         sentence = f"{pack.title} has source-backed evidence."
-        claim = ArticleClaim("claim-1", sentence, (pack.items[0].support_ref,))
+        claim = ArticleClaim(
+            "claim-1", sentence, tuple(item.support_ref for item in pack.items)
+        )
         block = ArticleBlock("block-1", "paragraph", sentence)
         section = ArticleSection("section-1", "Overview", (block,), ("claim-1",))
         link = ArticleRelatedLink(
@@ -75,7 +79,9 @@ class FailsFirstTwoWriter:
         if len(self.seen) <= 2:
             raise ValueError("planned article failure")
         sentence = f"{pack.title} has source-backed evidence."
-        claim = ArticleClaim("claim-1", sentence, (pack.items[0].support_ref,))
+        claim = ArticleClaim(
+            "claim-1", sentence, tuple(item.support_ref for item in pack.items)
+        )
         block = ArticleBlock("block-1", "paragraph", sentence)
         section = ArticleSection("section-1", "Overview", (block,), ("claim-1",))
         return HumanArticle(pack.page_id, pack.title, (section,), (claim,))

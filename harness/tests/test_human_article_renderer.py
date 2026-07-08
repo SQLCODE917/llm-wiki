@@ -11,6 +11,11 @@ from llmwiki.domain.article_write_queue import (
     ArticleWriteQueuePolicy,
     article_write_queue_policy_for_source,
 )
+from llmwiki.domain.ledger.article_evidence_coverage import (
+    article_evidence_coverage_metrics,
+    build_article_coverage_requirements,
+)
+from llmwiki.domain.ledger.article_lint import lint_human_article
 from llmwiki.domain.ledger.evidence_pack import (
     EvidencePack,
     EvidencePackCoverage,
@@ -94,6 +99,155 @@ def test_article_prompt_evidence_items_bound_large_source_text() -> None:
     assert prompt_items[0].source_text_omitted_chars > 0
     assert prompt_items[0].payload_text_omitted_chars > 0
     assert prompt_items[0].item.support_ref == _SUPPORT
+
+
+def test_article_coverage_groups_duplicate_evidence_text() -> None:
+    pack = _pack_with_items(
+        page_id="languages",
+        title="Languages",
+        family="procedure-guide",
+        items=(
+            _item("step-common", "procedure_step", "All adventurers can speak common."),
+            _item("rule-common", "rule", "- All adventurers can speak common."),
+        ),
+    )
+
+    requirements = build_article_coverage_requirements(pack)
+
+    assert len(requirements) == 1
+    assert requirements[0].required
+    assert {ref.support_id for ref in requirements[0].support_refs} == {
+        "step-common",
+        "rule-common",
+    }
+
+
+def test_sword_languages_pack_requires_core_language_evidence() -> None:
+    pack = _starting_adventurer_languages_pack()
+
+    requirements = build_article_coverage_requirements(pack)
+    required_text = " | ".join(
+        requirement.representative_text
+        for requirement in requirements
+        if requirement.required
+    )
+
+    assert "All adventurers can speak common and racial" in required_text
+    assert "intelligence of 6 or greater" in required_text
+    assert "intelligence of 12 or above" in required_text
+    assert "mother tongue referred to here is the regional language" in required_text
+
+
+def test_javascript_once_pack_requires_code_and_core_context() -> None:
+    pack = _once_recipe_pack()
+
+    requirements = tuple(
+        requirement
+        for requirement in build_article_coverage_requirements(pack)
+        if requirement.required
+    )
+
+    assert {requirement.evidence_record_types[0] for requirement in requirements} >= {
+        "code_example",
+        "definition",
+        "argument",
+    }
+    assert any("askedOnBlindDate" in item.representative_text for item in requirements)
+    assert any("function can only be called" in item.representative_text for item in requirements)
+
+
+def test_article_validator_blocks_uncovered_required_evidence() -> None:
+    pack = _pack_with_items(
+        page_id="procedure",
+        title="Procedure",
+        family="procedure-guide",
+        items=(
+            _item("step-one", "procedure_step", "First, choose a class."),
+            _item("step-two", "procedure_step", "Second, choose a race."),
+            _item("step-three", "procedure_step", "Third, record languages."),
+        ),
+    )
+    article = _article_with_claims(
+        pack,
+        (
+            ("c1", "Choose a class first.", ("step-one",)),
+            ("c2", "Choose a race second.", ("step-two",)),
+        ),
+    )
+
+    result = validate_human_article(pack, article)
+
+    assert not result.accepted
+    assert _types(result) >= {"uncovered-required-evidence"}
+    assert "step-three" in " ".join(finding.support_ref for finding in result.findings)
+
+
+def test_article_validator_accepts_duplicate_requirement_covered_by_one_claim() -> None:
+    pack = _pack_with_items(
+        page_id="languages",
+        title="Languages",
+        family="procedure-guide",
+        items=(
+            _item("step-common", "procedure_step", "All adventurers can speak common."),
+            _item("rule-common", "rule", "- All adventurers can speak common."),
+        ),
+    )
+    article = _article_with_claims(
+        pack,
+        (("c1", "Adventurers know the common language.", ("step-common",)),),
+    )
+
+    result = validate_human_article(pack, article)
+
+    assert result.accepted
+
+
+def test_optional_evidence_can_be_omitted_without_blocking() -> None:
+    pack = _pack_with_items(
+        page_id="topic",
+        title="Topic",
+        family="topic-concept",
+        items=(
+            _item("definition", "definition", "A topic is a defined concept."),
+            _item("context", "entity_fact", "The source mentions extra context."),
+        ),
+    )
+    article = _article_with_claims(
+        pack,
+        (("c1", "This topic is a source-defined concept.", ("definition",)),),
+    )
+
+    result = validate_human_article(pack, article)
+
+    assert result.accepted
+    metrics = article_evidence_coverage_metrics(pack, article)
+    assert metrics.required_coverage_ratio == 1.0
+    assert metrics.total_used_support_count == 1
+
+
+def test_article_lint_records_required_evidence_coverage_metrics() -> None:
+    pack = _pack_with_items(
+        page_id="procedure",
+        title="Procedure",
+        family="procedure-guide",
+        items=(
+            _item("step-one", "procedure_step", "First, choose a class."),
+            _item("step-two", "procedure_step", "Second, choose a race."),
+        ),
+    )
+    article = _article_with_claims(
+        pack,
+        (("c1", "Choose a class first.", ("step-one",)),),
+    )
+    rendered = render_human_article(pack, article)
+
+    run = lint_human_article(article=article, rendered=rendered, pack=pack)
+
+    assert run.publication_gate.decision == "blocked"
+    assert run.evidence_coverage_metrics.required_evidence_count == 2
+    assert run.evidence_coverage_metrics.covered_required_evidence_count == 1
+    assert run.evidence_coverage_metrics.uncovered_required_evidence_count == 1
+    assert run.evidence_coverage_metrics.required_coverage_ratio == 0.5
 
 
 def test_article_queue_continues_after_writer_failure() -> None:
@@ -552,9 +706,12 @@ def test_forge_human_article_writer_uses_structured_tool_with_full_evidence() ->
     sent = json.dumps(client.sent)
     assert "Full Shade evidence text." in sent
     assert "support_alias" in sent
+    assert "required_coverage_units" in sent
     assert "S1" in sent
     assert "source_text" in sent
     assert "HumanArticle contract" in sent
+    assert "2-5 factual sentences" not in sent
+    assert "no more than 5 claims" not in sent
     assert "FULL WIKI SCHEMA SHOULD NOT BE SENT" not in sent
     assert "typed-evidence-record:record-shade" not in sent
     assert '"summary"' not in sent
@@ -614,6 +771,146 @@ def test_forge_human_article_writer_rejects_unclaimed_block_prose() -> None:
 
     assert attempt.page is None
     assert _finding_types(attempt.findings) == {"article-writer-error"}
+
+
+def test_forge_human_article_writer_rejects_uncovered_required_evidence() -> None:
+    client = FakeClient(
+        [
+            [
+                ToolCall(
+                    tool="write_article",
+                    args={
+                        "page_id": "shade",
+                        "title": "Shade",
+                        "sections": [
+                            {
+                                "section_id": "overview",
+                                "heading": "Overview",
+                                "blocks": [
+                                    {
+                                        "block_id": "b1",
+                                        "block_kind": "paragraph",
+                                        "text": "Shade creates darkness around the target.",
+                                    }
+                                ],
+                                "article_claim_ids": ["c1"],
+                            }
+                        ],
+                        "claims": [
+                            {
+                                "claim_id": "c1",
+                                "sentence": "Shade creates darkness around the target.",
+                                "support_refs": ["S1"],
+                            }
+                        ],
+                    },
+                )
+            ]
+        ]
+    )
+    writer = ForgeHumanArticleWriter(
+        client=client,
+        context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
+        schema_text="schema",
+        max_iterations=1,
+    )
+
+    attempt = write_human_article_page(
+        _pack_with_two_items(),
+        PageMetadata("shade", "concept", "Shade summary.", page_family="topic-concept"),
+        writer,
+        max_attempts=1,
+    )
+
+    assert attempt.page is None
+    assert _finding_types(attempt.findings) == {"article-writer-error"}
+    assert "S2" in json.dumps(client.sent)
+
+
+def test_write_human_article_page_retries_after_uncovered_required_evidence() -> None:
+    client = FakeClient(
+        [
+            [
+                ToolCall(
+                    tool="write_article",
+                    args={
+                        "page_id": "shade",
+                        "title": "Shade",
+                        "sections": [
+                            {
+                                "section_id": "overview",
+                                "heading": "Overview",
+                                "blocks": [
+                                    {
+                                        "block_id": "b1",
+                                        "block_kind": "paragraph",
+                                        "text": "Shade creates darkness around the target.",
+                                    }
+                                ],
+                                "article_claim_ids": ["c1"],
+                            }
+                        ],
+                        "claims": [
+                            {
+                                "claim_id": "c1",
+                                "sentence": "Shade creates darkness around the target.",
+                                "support_refs": ["S1"],
+                            }
+                        ],
+                    },
+                )
+            ],
+            [
+                ToolCall(
+                    tool="write_article",
+                    args={
+                        "page_id": "shade",
+                        "title": "Shade",
+                        "sections": [
+                            {
+                                "section_id": "overview",
+                                "heading": "Overview",
+                                "blocks": [
+                                    {
+                                        "block_id": "b1",
+                                        "block_kind": "paragraph",
+                                        "text": "Shade creates darkness near will-o-wisp light.",
+                                    }
+                                ],
+                                "article_claim_ids": ["c1"],
+                            }
+                        ],
+                        "claims": [
+                            {
+                                "claim_id": "c1",
+                                "sentence": "Shade creates darkness near will-o-wisp light.",
+                                "support_refs": ["S1", "S2"],
+                            }
+                        ],
+                    },
+                )
+            ],
+        ]
+    )
+    writer = ForgeHumanArticleWriter(
+        client=client,
+        context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
+        schema_text="schema",
+    )
+
+    attempt = write_human_article_page(
+        _pack_with_two_items(),
+        PageMetadata("shade", "concept", "Shade summary.", page_family="topic-concept"),
+        writer,
+        max_attempts=1,
+    )
+
+    assert attempt.page is not None
+    assert attempt.lint_run is not None
+    assert attempt.lint_run.evidence_coverage_metrics.required_coverage_ratio == 1.0
+    assert len(client.sent) == 2
+    assert "article omits required evidence" in json.dumps(client.sent)
+    assert "typed-evidence-record:record-wisp" in json.dumps(client.sent)
 
 
 def test_forge_human_article_writer_rejects_multi_sentence_claims() -> None:
@@ -1050,6 +1347,158 @@ def _pack_with_two_items() -> EvidencePack:
                 _SECOND_SUPPORT,
                 "page-purpose-support",
                 "covered",
+            ),
+        ),
+    )
+
+
+def _pack_with_items(
+    *,
+    page_id: str,
+    title: str,
+    family: str,
+    items: tuple[EvidencePackItem, ...],
+    profile: str = "rpg-rules",
+) -> EvidencePack:
+    return EvidencePack(
+        page_id=page_id,
+        source_id="source",
+        source_hash=_HASH,
+        source_profile_kind=profile,
+        page_kind="concept",
+        page_family=family,
+        title=title,
+        items=items,
+        coverage=tuple(
+            EvidencePackCoverage(
+                page_id,
+                family,
+                family,
+                item.support_ref,
+                "page-purpose-support",
+                "covered",
+            )
+            for item in items
+        ),
+    )
+
+
+def _item(record_id: str, record_type: str, text: str) -> EvidencePackItem:
+    support_ref = SupportRef("typed-evidence-record", record_id)
+    return EvidencePackItem(
+        support_ref=support_ref,
+        typed_evidence_record_id=record_id,
+        evidence_record_type=record_type,
+        source_anchors=(_anchor(),),
+        source_block_ids=(f"block-{record_id}",),
+        source_text=text,
+        payload_text=text,
+        citation_label="raw/sword.pdf (p. 59)",
+        section_path="Test Section",
+    )
+
+
+def _article_with_claims(
+    pack: EvidencePack, claims: tuple[tuple[str, str, tuple[str, ...]], ...]
+) -> HumanArticle:
+    article_claims = tuple(
+        ArticleClaim(
+            claim_id,
+            sentence,
+            tuple(SupportRef("typed-evidence-record", support_id) for support_id in support_ids),
+        )
+        for claim_id, sentence, support_ids in claims
+    )
+    text = " ".join(sentence for _, sentence, _ in claims)
+    return HumanArticle(
+        pack.page_id,
+        pack.title,
+        (
+            ArticleSection(
+                "section-1",
+                "Overview",
+                (ArticleBlock("block-1", "paragraph", text),),
+                tuple(claim.claim_id for claim in article_claims),
+            ),
+        ),
+        article_claims,
+    )
+
+
+def _starting_adventurer_languages_pack() -> EvidencePack:
+    return _pack_with_items(
+        page_id="sword-world-rpg-complete-edition-procedure-starting-adventurer-languages",
+        title="Starting Adventurer Languages",
+        family="procedure-guide",
+        items=(
+            _item(
+                "language-step-common",
+                "procedure_step",
+                "All adventurers can speak common and racial.",
+            ),
+            _item(
+                "language-step-int-6",
+                "procedure_step",
+                "Those with an intelligence of 6 or greater can also read their mother tongue.",
+            ),
+            _item(
+                "language-step-int-12",
+                "procedure_step",
+                "Those with an intelligence of 12 or above can additionally read common.",
+            ),
+            _item(
+                "language-rule-common",
+                "rule",
+                "- All adventurers can speak common and racial.",
+            ),
+            _item(
+                "language-rule-int-6",
+                "rule",
+                "- Those with an intelligence of 6 or greater can also read their mother tongue.",
+            ),
+            _item(
+                "language-rule-int-12",
+                "rule",
+                "- Those with an intelligence of 12 or above can additionally read common.",
+            ),
+            _item(
+                "language-mother-tongue",
+                "definition",
+                "The mother tongue referred to here is the regional language of "
+                "the region where the adventurer was born and raised.",
+            ),
+        ),
+    )
+
+
+def _once_recipe_pack() -> EvidencePack:
+    return _pack_with_items(
+        page_id="javascriptallonge-recipe-once",
+        title="Once",
+        family="recipe-pattern",
+        profile="programming-prose",
+        items=(
+            _item(
+                "once-code",
+                "code_example",
+                "const askedOnBlindDate = once(() => 'sure, why not?'); askedOnBlindDate();",
+            ),
+            _item("once-definition", "definition", "once is an extremely helpful combinator."),
+            _item(
+                "once-argument",
+                "argument",
+                "It ensures that a function can only be called once.",
+            ),
+            _item(
+                "once-input",
+                "argument",
+                "You pass it a function, and you get a function back.",
+            ),
+            _item(
+                "once-return",
+                "definition",
+                "That function will call your function once, and thereafter will "
+                "return undefined whenever it is called.",
             ),
         ),
     )

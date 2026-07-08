@@ -122,6 +122,22 @@ def test_source_map_json_rejects_malformed_anchors() -> None:
         normalized_source_map_from_json(json.dumps(payload))
 
 
+def test_source_map_json_accepts_numeric_bounding_boxes() -> None:
+    source_map = build_normalized_source_map(
+        _model((_element("e1", "paragraph", "Shade", "Shade creates darkness.", 10),))
+    )
+    payload = json.loads(normalized_source_map_to_json(source_map))
+    payload["source_blocks"][0]["source_anchor"]["bounding_boxes"] = [
+        [1, 2.5, 3, 4.25]
+    ]
+
+    parsed = normalized_source_map_from_json(json.dumps(payload))
+
+    assert parsed.source_blocks[0].source_anchor.bounding_boxes == (
+        (1.0, 2.5, 3.0, 4.25),
+    )
+
+
 def test_source_block_ids_are_stable() -> None:
     model = _model(
         (

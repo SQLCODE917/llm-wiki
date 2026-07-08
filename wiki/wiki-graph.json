@@ -8,21 +8,51 @@
     {
       "resolved": true,
       "source": "javascriptallonge",
-      "target": "javascriptallonge-recipe-once"
+      "target": "javascriptallonge-building-blocks"
     },
     {
       "resolved": true,
       "source": "javascriptallonge",
-      "target": "javascriptallonge-recipe-reassignment-mixing-let-and-const"
+      "target": "javascriptallonge-prelude-values-and-expressions-over-coffee"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge-recipe-once",
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-recipe-a-warm-cup-basic-strings-and-quasi-literals"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-recipe-or-even-the-simplest-possible-block"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-served-by-the-pot-collections-iteration-and-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-building-blocks",
       "target": "javascriptallonge"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge-recipe-reassignment-mixing-let-and-const",
+      "source": "javascriptallonge-prelude-values-and-expressions-over-coffee",
+      "target": "javascriptallonge"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-recipe-a-warm-cup-basic-strings-and-quasi-literals",
+      "target": "javascriptallonge"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-recipe-or-even-the-simplest-possible-block",
+      "target": "javascriptallonge"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-served-by-the-pot-collections-iteration-and-iterables",
       "target": "javascriptallonge"
     },
     {
@@ -33,17 +63,7 @@
     {
       "resolved": true,
       "source": "sword-world-rpg-complete-edition",
-      "target": "sword-world-rpg-complete-edition-2-1-target-scores"
-    },
-    {
-      "resolved": true,
-      "source": "sword-world-rpg-complete-edition",
-      "target": "sword-world-rpg-complete-edition-5th-level-ancient-magic-list-apport"
-    },
-    {
-      "resolved": true,
-      "source": "sword-world-rpg-complete-edition",
-      "target": "sword-world-rpg-complete-edition-procedure-5-1-11-ancient-magic-and-the-sorcerer-skill"
+      "target": "sword-world-rpg-complete-edition-procedure-7-3-craftsman-skill"
     },
     {
       "resolved": true,
@@ -52,17 +72,7 @@
     },
     {
       "resolved": true,
-      "source": "sword-world-rpg-complete-edition-2-1-target-scores",
-      "target": "sword-world-rpg-complete-edition"
-    },
-    {
-      "resolved": true,
-      "source": "sword-world-rpg-complete-edition-5th-level-ancient-magic-list-apport",
-      "target": "sword-world-rpg-complete-edition"
-    },
-    {
-      "resolved": true,
-      "source": "sword-world-rpg-complete-edition-procedure-5-1-11-ancient-magic-and-the-sorcerer-skill",
+      "source": "sword-world-rpg-complete-edition-procedure-7-3-craftsman-skill",
       "target": "sword-world-rpg-complete-edition"
     },
     {
@@ -109,8 +119,11 @@
       "category": "source",
       "name": "javascriptallonge",
       "outbound_links": [
-        "javascriptallonge-recipe-once",
-        "javascriptallonge-recipe-reassignment-mixing-let-and-const"
+        "javascriptallonge-building-blocks",
+        "javascriptallonge-prelude-values-and-expressions-over-coffee",
+        "javascriptallonge-recipe-a-warm-cup-basic-strings-and-quasi-literals",
+        "javascriptallonge-recipe-or-even-the-simplest-possible-block",
+        "javascriptallonge-served-by-the-pot-collections-iteration-and-iterables"
       ],
       "sources": [
         "raw/javascriptallonge.pdf"
@@ -118,26 +131,59 @@
       "summary": "Javascriptallonge: compiler source manifest from raw/javascriptallonge.pdf."
     },
     {
-      "category": "recipe",
-      "name": "javascriptallonge-recipe-once",
+      "category": "concept",
+      "name": "javascriptallonge-building-blocks",
       "outbound_links": [
         "javascriptallonge"
       ],
       "sources": [
         "raw/javascriptallonge.pdf"
       ],
-      "summary": "Once: The once pattern ensures that a function can only be called once. Once the function is invoked, it will return undefined on subsequent calls."
+      "summary": "Building Blocks: JavaScript code can become difficult to follow when functions are nested within other functions."
+    },
+    {
+      "category": "concept",
+      "name": "javascriptallonge-prelude-values-and-expressions-over-coffee",
+      "outbound_links": [
+        "javascriptallonge"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Prelude: Values and Expressions over Coffee: The introductory material in this section is considered basic, following the common approach of starting at the beginning of a story."
     },
     {
       "category": "recipe",
-      "name": "javascriptallonge-recipe-reassignment-mixing-let-and-const",
+      "name": "javascriptallonge-recipe-a-warm-cup-basic-strings-and-quasi-literals",
       "outbound_links": [
         "javascriptallonge"
       ],
       "sources": [
         "raw/javascriptallonge.pdf"
       ],
-      "summary": "Reassignment > mixing let and const: A let variable can still be reassigned even after being shadowed by a const in a nested scope."
+      "summary": "A Warm Cup: Basic Strings and Quasi-Literals: JavaScript supports string concatenation using the + operator, as demonstrated by the expression 'fu' + 'bar' which evaluates to..."
+    },
+    {
+      "category": "recipe",
+      "name": "javascriptallonge-recipe-or-even-the-simplest-possible-block",
+      "outbound_links": [
+        "javascriptallonge"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Or even: > the simplest possible block: A block can be the simplest possible construct with no statements inside."
+    },
+    {
+      "category": "concept",
+      "name": "javascriptallonge-served-by-the-pot-collections-iteration-and-iterables",
+      "outbound_links": [
+        "javascriptallonge"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Served by the Pot: Collections > Iteration and Iterables: A collection in JavaScript can be thought of as a box that holds multiple items."
     },
     {
       "category": "source",
@@ -163,9 +209,7 @@
       "category": "source",
       "name": "sword-world-rpg-complete-edition",
       "outbound_links": [
-        "sword-world-rpg-complete-edition-2-1-target-scores",
-        "sword-world-rpg-complete-edition-5th-level-ancient-magic-list-apport",
-        "sword-world-rpg-complete-edition-procedure-5-1-11-ancient-magic-and-the-sorcerer-skill",
+        "sword-world-rpg-complete-edition-procedure-7-3-craftsman-skill",
         "sword-world-rpg-complete-edition-procedure-starting-adventurer-languages"
       ],
       "sources": [
@@ -174,37 +218,15 @@
       "summary": "Sword World Rpg Complete Edition: compiler source manifest from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
-      "category": "concept",
-      "name": "sword-world-rpg-complete-edition-2-1-target-scores",
-      "outbound_links": [
-        "sword-world-rpg-complete-edition"
-      ],
-      "sources": [
-        "raw/Sword World RPG - Complete Edition.pdf"
-      ],
-      "summary": "2.1 > Target Scores: A character's baseline score represents their ability, but the success of an action depends on both the character's ability and the difficulty of the action..."
-    },
-    {
-      "category": "concept",
-      "name": "sword-world-rpg-complete-edition-5th-level-ancient-magic-list-apport",
-      "outbound_links": [
-        "sword-world-rpg-complete-edition"
-      ],
-      "sources": [
-        "raw/Sword World RPG - Complete Edition.pdf"
-      ],
-      "summary": "5th Level Ancient Magic List [ Apport ]: The Apport spell allows a caster to teleport their possessions into the palm of their hand."
-    },
-    {
       "category": "procedure",
-      "name": "sword-world-rpg-complete-edition-procedure-5-1-11-ancient-magic-and-the-sorcerer-skill",
+      "name": "sword-world-rpg-complete-edition-procedure-7-3-craftsman-skill",
       "outbound_links": [
         "sword-world-rpg-complete-edition"
       ],
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf"
       ],
-      "summary": "5.1.11 Ancient Magic and the Sorcerer Skill: Ancient magic requires a mage's staff as a magical catalyst to function."
+      "summary": "7.3 > Craftsman Skill: The first step in the craftsman skill procedure is to \u2460 Craft an item."
     },
     {
       "category": "procedure",
@@ -215,7 +237,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf"
       ],
-      "summary": "Starting Adventurer Languages: All adventurers can speak common and racial languages."
+      "summary": "Starting Adventurer Languages: An adventurer's initial language capabilities are defined upon creation."
     }
   ]
 }

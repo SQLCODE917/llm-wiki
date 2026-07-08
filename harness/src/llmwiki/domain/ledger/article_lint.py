@@ -5,6 +5,9 @@ from __future__ import annotations
 import re
 from dataclasses import replace
 
+from llmwiki.domain.ledger.article_evidence_coverage import (
+    article_evidence_coverage_metrics,
+)
 from llmwiki.domain.ledger.article_lint_contracts import (
     ArticleAuthorityMetrics,
     ArticleCoherenceMetrics,
@@ -43,6 +46,7 @@ def lint_human_article(
     findings.extend(_related_link_findings(pack, article))
     authority = _authority_metrics(pack, article, rendered, findings)
     coherence = _coherence_metrics(pack, findings)
+    evidence_coverage = article_evidence_coverage_metrics(pack, article)
     blocking_ids = tuple(f.finding_id for f in findings if f.severity == "blocking")
     gate = PublicationGate(
         page_id=pack.page_id,
@@ -58,6 +62,7 @@ def lint_human_article(
         findings=tuple(findings),
         authority_metrics=authority,
         coherence_metrics=coherence,
+        evidence_coverage_metrics=evidence_coverage,
         publication_gate=gate,
     )
     fingerprint = artifact_fingerprint(draft, exclude=("article_lint_run_fingerprint",))

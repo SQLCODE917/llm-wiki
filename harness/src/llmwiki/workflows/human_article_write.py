@@ -9,6 +9,10 @@ from typing import Any
 from forge.core.workflow import ToolDef, ToolSpec, Workflow
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
+from llmwiki.domain.ledger.article_evidence_coverage import (
+    ArticleCoverageRequirement,
+    build_article_coverage_requirements,
+)
 from llmwiki.domain.ledger.evidence_pack import EvidencePack, EvidencePackItem, SupportRef
 from llmwiki.domain.ledger.human_article import (
     ArticleBlock,
@@ -197,10 +201,7 @@ def article_prompt_evidence_items(
     pack: EvidencePack,
     model_profile: ModelProfile = DEFAULT_MODEL_PROFILE,
 ) -> tuple[ArticlePromptEvidenceItem, ...]:
-    budget_chars = model_profile.chars_for_tokens(model_profile.evidence_pack_prompt_tokens)
-    budget_chars = max(4_000, budget_chars - 4_000)
     selected: list[ArticlePromptEvidenceItem] = []
-    used_chars = 0
     for item in pack.items:
         alias = f"S{len(selected) + 1}"
         prompt_item = ArticlePromptEvidenceItem(
@@ -215,18 +216,9 @@ def article_prompt_evidence_items(
                 item.payload_text, _PROMPT_PAYLOAD_TEXT_CHARS
             ),
         )
-        item_chars = (
-            len(prompt_item.source_text)
-            + len(prompt_item.payload_text)
-            + _PROMPT_JSON_OVERHEAD_CHARS
-        )
-        if selected and (
-            len(selected) >= _PROMPT_EVIDENCE_ITEM_LIMIT
-            or used_chars + item_chars > budget_chars
-        ):
+        if selected and len(selected) >= _PROMPT_EVIDENCE_ITEM_LIMIT:
             break
         selected.append(prompt_item)
-        used_chars += item_chars
     return tuple(selected)
 
 
@@ -246,8 +238,9 @@ frontmatter, citations, source trails, or final wiki markdown. The harness will
 render markdown after validation. Every factual sentence in article blocks must
 appear verbatim as one ArticleClaim.sentence and cite selected support_refs using
 only support_alias values from the prompt, such as S1 or S2. Keep the article
-small: 1-2 sections, 2-5 factual sentences, and no more than 5 claims. Prefer
-short, complete, single-sentence claims in your own words. Do not copy source
+concise while covering every required_coverage_units entry, normally 1-3
+sections and 4-10 factual claims. Prefer short, complete, single-sentence
+claims in your own words. Do not copy source
 sentences or sentence prefixes. Do not quote code as prose. Avoid ellipses, TODO
 text, colon-ended fragments, semicolon-joined facts, and clipped source
 fragments. Put claim ids in article_claim_ids for the section where those claim
@@ -298,6 +291,7 @@ def write_article_tool(pack: EvidencePack) -> ToolDef:
                 "clipped-evidence-fragment",
                 "copied-source-phrases",
                 "raw-markdown-prose",
+                "uncovered-required-evidence",
             }
         )
         if actionable_findings:
@@ -333,6 +327,11 @@ def render_human_article_prompt(
         },
         "instructions": {
             "support_refs": "Use only support_alias values like S1 in support_refs.",
+            "coverage": (
+                "Cover every required_coverage_units entry. Each required unit is "
+                "covered when one ArticleClaim cites at least one listed "
+                "support_alias."
+            ),
         },
         "evidence_items": [
             {
@@ -347,6 +346,7 @@ def render_human_article_prompt(
             }
             for prompt_item in prompt_items
         ],
+        "required_coverage_units": _required_coverage_units(pack, prompt_items),
         "previous_validation_findings": [
             {
                 "severity": finding.severity,
@@ -361,6 +361,37 @@ def render_human_article_prompt(
         ],
     }
     return json.dumps(payload, ensure_ascii=True, indent=2)
+
+
+def _required_coverage_units(
+    pack: EvidencePack, prompt_items: tuple[ArticlePromptEvidenceItem, ...]
+) -> list[dict[str, object]]:
+    aliases_by_ref = {
+        prompt_item.item.support_ref.code: prompt_item.alias for prompt_item in prompt_items
+    }
+    return [
+        _coverage_unit_json(requirement, aliases_by_ref)
+        for requirement in build_article_coverage_requirements(pack)
+        if requirement.required
+    ]
+
+
+def _coverage_unit_json(
+    requirement: ArticleCoverageRequirement, aliases_by_ref: dict[str, str]
+) -> dict[str, object]:
+    aliases = tuple(
+        alias
+        for ref in requirement.support_refs
+        if (alias := aliases_by_ref.get(ref.code)) is not None
+    )
+    return {
+        "requirement_id": requirement.requirement_id,
+        "required": requirement.required,
+        "support_aliases": list(aliases),
+        "evidence_record_types": list(requirement.evidence_record_types),
+        "evidence_text": requirement.representative_text,
+        "reason": requirement.requirement_reason,
+    }
 
 
 def human_article_from_params(

@@ -38,6 +38,31 @@ class ArticleLintArtifact:
             )
         return tuple(counter.most_common(5))
 
+    @property
+    def required_evidence_count(self) -> int:
+        return sum(run.evidence_coverage_metrics.required_evidence_count for run in self.runs)
+
+    @property
+    def covered_required_evidence_count(self) -> int:
+        return sum(
+            run.evidence_coverage_metrics.covered_required_evidence_count
+            for run in self.runs
+        )
+
+    @property
+    def uncovered_required_evidence_count(self) -> int:
+        return sum(
+            run.evidence_coverage_metrics.uncovered_required_evidence_count
+            for run in self.runs
+        )
+
+    @property
+    def required_evidence_coverage_ratio(self) -> float:
+        required = self.required_evidence_count
+        if required == 0:
+            return 1.0
+        return self.covered_required_evidence_count / required
+
 
 def build_article_lint_artifact(
     *, source_hash: str, runs: tuple[ArticleLintRun, ...]

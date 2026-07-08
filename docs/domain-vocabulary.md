@@ -89,6 +89,9 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `ArticleCitation` | `article_citation` |
 | `ArticleRelatedLink` | `article_related_link` |
 | `ArticleFinding` | `article_finding` |
+| `ArticleCoverageRequirement` | `article_coverage_requirement` |
+| `ArticleEvidenceCoverage` | `article_evidence_coverage` |
+| `ArticleEvidenceCoverageMetrics` | `article_evidence_coverage_metrics` |
 | `ArticleRenderer` | `article_renderer` |
 | `ArticleLintRun` | `article_lint_run` |
 | `ArticleLintFinding` | `article_lint_finding` |
@@ -240,6 +243,9 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | ArticleCitation | Exists | `llmwiki.domain.ledger.human_article`; one resolved citation from an article claim to pack support |
 | ArticleRelatedLink | Exists | `llmwiki.domain.ledger.human_article`; navigation-only related-page preview for a rendered article |
 | ArticleFinding | Exists | `llmwiki.domain.ledger.human_article`; validation or write finding for article generation |
+| ArticleCoverageRequirement | Exists | `llmwiki.domain.ledger.article_evidence_coverage`; one required or optional evidence-pack unit an article can cover |
+| ArticleEvidenceCoverage | Exists | `llmwiki.domain.ledger.article_evidence_coverage`; maps one article coverage requirement to the claims that cited it |
+| ArticleEvidenceCoverageMetrics | Exists | `llmwiki.domain.ledger.article_evidence_coverage`; measured required evidence coverage for one generated article |
 | ArticleRenderer | Exists | `llmwiki.domain.ledger.human_article_rendering`; harness-owned renderer from accepted `HumanArticle` to wiki markdown |
 | ArticleLintRun | Exists | `llmwiki.domain.ledger.article_lint_contracts`; deterministic per-page lint run after article rendering |
 | ArticleLintFinding | Exists | `llmwiki.domain.ledger.article_lint_contracts`; one citation, authority, coherence, or title lint finding |
